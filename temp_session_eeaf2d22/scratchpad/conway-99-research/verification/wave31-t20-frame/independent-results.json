@@ -1,0 +1,280 @@
+{
+  "A4_U_transfer": {
+    "A_excess_units": 84,
+    "A_rows": 105,
+    "A_trace_A4": 756,
+    "U_excess_units": 0,
+    "U_rows": 126,
+    "U_trace_A4": 504,
+    "algebra": "A4_U=X_U*U*Q_U*U*X_U^T=X_U*U*X_U^T=M_U",
+    "diag_M_U": 4,
+    "global_excess_units_at_n3_708": 84,
+    "premises": [
+      "B_U=U*Q_U=I_24, so Q_U=U^-1",
+      "M_U=X_U*U*X_U^T",
+      "Q_U=X_U^T*(M_U o M_U)*X_U",
+      "A4_U=M_U*(M_U o M_U)*M_U"
+    ],
+    "transfer_verified": true
+  },
+  "T20_input": {
+    "determinant": 729,
+    "gram_sha256": "1890fe1973eed47850c307d0975ae393f2a8ab32a9d0b16b35ebcab7012445d6",
+    "matrix_identity": "T20*(21*T20^-1)=21I_20",
+    "positive_definite_from_exact_LDL": true,
+    "rank": 20,
+    "scaled_dual_21_inverse_integral": true,
+    "scaled_dual_sha256": "006011e5ea2fa29cc942bcaa3e72e6d300a549fbad6b6991f3edffb20371a024",
+    "symmetric_even_integral": true
+  },
+  "cap_one_coordinate_restriction": {
+    "available_lines": 1196,
+    "coordinate_zero_based": 1,
+    "maximum_from_105_cap_one_rows": 105,
+    "remaining_lines_not_excluded": 1342,
+    "target_diagonal": 266,
+    "verdict": "EXCLUDED_ONLY_IN_THIS_RESTRICTED_DOMAIN"
+  },
+  "claim_label": "VERIFIED",
+  "complete_shell": {
+    "antipodal_lines": 2538,
+    "canonical_lines_sha256": "25af9df21492a5b9022c1888424f4892e0e1cb56d82adee73b49197a536f569e",
+    "cap": 4,
+    "changed_basis_enumeration": {
+      "accepted_partial_nodes": 129932,
+      "cap": 4,
+      "dimension": 20,
+      "leaves": 5077,
+      "mapped_shell_equals_original": true,
+      "method": "independent exact Fraction LDL recursion with integer-square-root bounds",
+      "permutation": [
+        7,
+        1,
+        14,
+        0,
+        19,
+        3,
+        11,
+        6,
+        17,
+        8,
+        2,
+        15,
+        5,
+        13,
+        9,
+        18,
+        4,
+        12,
+        16,
+        10
+      ]
+    },
+    "coordinate_height_distribution": {
+      "1": 1196,
+      "2": 1019,
+      "3": 278,
+      "4": 36,
+      "5": 9
+    },
+    "distinct_residue_classes_mod_2": 2538,
+    "distinct_residue_classes_mod_3": 2538,
+    "full_ordered_line_list_equals_submission": true,
+    "no_automorphism_quotient": true,
+    "norm_counts_including_zero": {
+      "0": 1,
+      "4": 5076
+    },
+    "norm_four_vectors": 5076,
+    "original_basis_enumeration": {
+      "accepted_partial_nodes": 128154,
+      "cap": 4,
+      "dimension": 20,
+      "leaves": 5077,
+      "method": "independent exact Fraction LDL recursion with integer-square-root bounds"
+    }
+  },
+  "conditional_row_data": {
+    "aggregate_directed_counts": {
+      "minus_one": 648,
+      "minus_two": 1044,
+      "plus_one": 2316,
+      "sum_c_minus_two": 1044,
+      "sum_q_actual_graph_notation": 216,
+      "zero": 6912
+    },
+    "row_profile_count": 13,
+    "status": "NECESSARY_IF_A_FRAME_EXISTS",
+    "sum_c_derivation": "trace(B_A)=105*60-6*sum_i(c_i)",
+    "sum_c_minus_two": 1044,
+    "trace_B_A": 36
+  },
+  "frozen_submission": {
+    "all_exact": true,
+    "candidate_artifact_manifest_entries": 8,
+    "candidate_input_freeze_entries": 4,
+    "commit": "67a0e4585c9c378dcd658784a3876564557b70e3",
+    "commit_blob_sha256": {
+      "agents/2026-07-24-wave31-t20-construction.md": "d6599fdf81f81410eaccde36a35e6ffee567d90b3b5e7020cb64f7a7c4b1ca49",
+      "attempts/wave30-general-h729/exact-results.json": "cb0a58195506a51ca6a39aaab197a3592344f7aef8b5b0c2af51770c7069ad6c",
+      "attempts/wave30-h729-construction/exact-results.json": "0d3723ba4c185dc7865858d16bfc6ada99fd87b4e21da616ef1b1d1ad6b67e11",
+      "attempts/wave31-t20-frame/artifact-manifest.sha256": "972640b51dd31dc6037ae26b676d1f7c39626f25d038606a71bf18728e9ea3d4",
+      "attempts/wave31-t20-frame/exact-results.json": "d2592a71e8600a894aa7d87e6ed1c8230010b919488b10f9854710bb77944152",
+      "attempts/wave31-t20-frame/exact_check.py": "81acefd270caa81900cb319ca0cb9db68d952f80ce3511edee1f23386c982f8e",
+      "attempts/wave31-t20-frame/failure-ledger.md": "9c4ad5eb4cc9cd9234c49514a207304e6861799bfd308e2a34e03a629fcf4232",
+      "attempts/wave31-t20-frame/input-freeze.sha256": "2931d0c8de6e7000112b39aa72232338c5bf14cff54033452bede0842ef92086",
+      "attempts/wave31-t20-frame/run-report.yaml": "292403654e0caec8ddbb4a9e286c5f2ab30260d7ff808c758cab6eecd99e1c7c",
+      "attempts/wave31-t20-frame/solver_scout.py": "d362197857cbeddc446bedd7cb04945aff598783fbe2421b86a013212e967144",
+      "attempts/wave31-t20-frame/test_exact_check.py": "0c36af2f7cee4797b95c1d82b175274ed02f9674599181220900509777b4a365",
+      "verification/wave24-n3-708-index/independent-results.json": "726807402388c02909171a689f3a7fe2d8d1b74307c24e322ae013d0a9cd486a",
+      "verification/wave28-simultaneous-neighbor/independent_check.py": "2c8021769d47faebbcd544b364649a2cb93c066a369f76f725cffab1588982db"
+    },
+    "parent": "31bc516a581decb6394bf5e780f07fb05d567274",
+    "tree": "47ef723b915045c0ef83f15b49235b278dbfb6aa",
+    "worktree_sha256": {
+      "agents/2026-07-24-wave31-t20-construction.md": "d6599fdf81f81410eaccde36a35e6ffee567d90b3b5e7020cb64f7a7c4b1ca49",
+      "attempts/wave30-general-h729/exact-results.json": "cb0a58195506a51ca6a39aaab197a3592344f7aef8b5b0c2af51770c7069ad6c",
+      "attempts/wave30-h729-construction/exact-results.json": "0d3723ba4c185dc7865858d16bfc6ada99fd87b4e21da616ef1b1d1ad6b67e11",
+      "attempts/wave31-t20-frame/artifact-manifest.sha256": "972640b51dd31dc6037ae26b676d1f7c39626f25d038606a71bf18728e9ea3d4",
+      "attempts/wave31-t20-frame/exact-results.json": "d2592a71e8600a894aa7d87e6ed1c8230010b919488b10f9854710bb77944152",
+      "attempts/wave31-t20-frame/exact_check.py": "81acefd270caa81900cb319ca0cb9db68d952f80ce3511edee1f23386c982f8e",
+      "attempts/wave31-t20-frame/failure-ledger.md": "9c4ad5eb4cc9cd9234c49514a207304e6861799bfd308e2a34e03a629fcf4232",
+      "attempts/wave31-t20-frame/input-freeze.sha256": "2931d0c8de6e7000112b39aa72232338c5bf14cff54033452bede0842ef92086",
+      "attempts/wave31-t20-frame/run-report.yaml": "292403654e0caec8ddbb4a9e286c5f2ab30260d7ff808c758cab6eecd99e1c7c",
+      "attempts/wave31-t20-frame/solver_scout.py": "d362197857cbeddc446bedd7cb04945aff598783fbe2421b86a013212e967144",
+      "attempts/wave31-t20-frame/test_exact_check.py": "0c36af2f7cee4797b95c1d82b175274ed02f9674599181220900509777b4a365",
+      "verification/wave24-n3-708-index/independent-results.json": "726807402388c02909171a689f3a7fe2d8d1b74307c24e322ae013d0a9cd486a",
+      "verification/wave28-simultaneous-neighbor/independent_check.py": "2c8021769d47faebbcd544b364649a2cb93c066a369f76f725cffab1588982db"
+    }
+  },
+  "limitations": [
+    "The exact nonhit covers only the named radius-two support neighbourhood.",
+    "No unrestricted Boolean second-moment frame is found or excluded.",
+    "No orientation, zero-sum row set, Q_A, B_A, or A4_A is supplied.",
+    "No coupled T20 plus U24 endpoint is found or excluded by this package.",
+    "Rooted and integrally indecomposable forms are outside this lane.",
+    "n3=708, Conway-99, and novelty remain UNKNOWN.",
+    "Solver timeouts and no-incumbent telemetry were not used as evidence."
+  ],
+  "line_pair_geometry": {
+    "absolute_inner_product_counts": {
+      "0": 1382670,
+      "1": 1594134,
+      "2": 242649
+    },
+    "absolute_two_degree_distribution": {
+      "160": 108,
+      "178": 840,
+      "196": 1242,
+      "214": 330,
+      "232": 15,
+      "322": 3
+    },
+    "absolute_two_edges": 242649,
+    "degree_sum_equals_twice_edges": true,
+    "signed_inner_product_counts": {
+      "-1": 671126,
+      "-2": 80883,
+      "0": 1382670,
+      "1": 923008,
+      "2": 161766
+    },
+    "unordered_pairs": 3219453
+  },
+  "named_radius_two_neighbourhood": {
+    "frobenius_residual_score": 121,
+    "global_second_moment_frame": "UNKNOWN",
+    "injective_code": {
+      "base": 257,
+      "maximum_absolute_comparison_difference": 102,
+      "maximum_absolute_outer_feature_entry": 25,
+      "proof": "For any compared radius-two vectors, each coordinate of their difference has absolute value at most 4F+R=102<257. Equality of sum_e d_e*257^e then forces d_0=0 modulo 257 and inductively every d_e=0. The code is collision-free on this bounded domain."
+    },
+    "maximum_absolute_residual_entry": 2,
+    "near_frame_id": "W31-T20-NEAR-105-001",
+    "nonzero_upper_triangle_entries": 63,
+    "radius_one": {
+      "addition_choices": 2433,
+      "all_exchange_choices": 255465,
+      "exact_repairs": [],
+      "injective_code_candidates": 0,
+      "modulo_2_64_candidates": 0,
+      "modulo_2_64_exact_repairs_after_entrywise_checks": [],
+      "removal_choices": 105
+    },
+    "radius_two": {
+      "addition_pair_count": 2958528,
+      "all_pair_of_pair_choices": 16153562880,
+      "exact_repairs": [],
+      "injective_code_candidates": 0,
+      "modulo_2_64_candidates": 0,
+      "modulo_2_64_exact_repairs_after_entrywise_checks": [],
+      "removal_pair_count": 5460
+    },
+    "residual_sha256": "e7877387488d16a511f6f51390999e87ef7aa97cbcb24aeb5d9f6d1ce1d2f89b",
+    "selected_lines": 105,
+    "submitted_modulo_2_64_fingerprint": {
+      "coefficient_sha256": "09b7734bc7967f15ef7b2587564688af29a311bd763a5ad026454db9109b6080",
+      "linearity_checked_by_independent_replay": true,
+      "soundness": "Reduction modulo 2^64 is a homomorphism. Exact feature equality must produce equal fingerprints. The submitted algorithm enumerates every matching key and checks the full 210-entry vectors, so collisions can add candidates but cannot remove a repair."
+    },
+    "support_sha256": "fd23ed360485379c884d48d3bac892e7e46bec8a3875bc7c6eca4f185617e7fd",
+    "unselected_lines": 2433,
+    "verdict": "VERIFIED_NO_SECOND_MOMENT_SELECTION_WITHIN_TWO_EXCHANGES_OF_W31_T20_NEAR_105_001"
+  },
+  "rational_relaxation": {
+    "all_2538_weights_in_closed_unit_interval": true,
+    "maximum_fractional_weight": "10580278550697598610039691783/10603961297504408600788109573",
+    "minimum_fractional_weight": "4224879822682012573982774/10603961297504408600788109573",
+    "not_boolean": true,
+    "strictly_fractional_weights": 210,
+    "support_size": 243,
+    "unit_weights": 33,
+    "verdict": "EXACT_RATIONAL_BOX_RELAXATION_WITNESS_VERIFIED",
+    "verified_moment_entries": 210,
+    "weight_certificate_sha256": "2e7f5d482685db1c98f99fe239021f87e3f7c27f0506d92611e935a0617af161",
+    "weight_sum": "105",
+    "zero_weights": 2295
+  },
+  "role": "verifier",
+  "runtime": {
+    "dependencies": "Python standard library only",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "schema": "wave31-t20-frame-independent-verifier-v1",
+  "second_moment_formulation": {
+    "Boolean_line_variables": 2538,
+    "GF2": {
+      "augmented_rank": 210,
+      "coefficient_rank": 210,
+      "consistent": true,
+      "dependencies": 1,
+      "equations_including_cardinality": 211,
+      "variables": 2538
+    },
+    "cardinality_from_T20_trace": 105,
+    "line_repetition_excluded_by_endpoint_alphabet": true,
+    "selected_lines": 105,
+    "target": "21*T20^-1",
+    "upper_triangle_moment_equations": 210
+  },
+  "status_audit": {
+    "no_automorphism_restriction": true,
+    "rooted_and_integrally_indecomposable_forms": "OUT_OF_SCOPE",
+    "solver_telemetry_noncertifying": true,
+    "unknown_statuses_verified": [
+      "Conway_99",
+      "Q_A_B_A_A4_A_package",
+      "coupled_T20_U24_projector_Schur_package",
+      "global_105_row_second_moment_frame",
+      "n3_equals_708",
+      "novelty",
+      "oriented_zero_sum_alphabet_frame"
+    ],
+    "unrestricted_solver_search_complete": false,
+    "verdict": "NO_STATUS_INFLATION_DETECTED"
+  },
+  "verdict": "PASS_SCOPED_FINITE_EVIDENCE"
+}

@@ -1,0 +1,102 @@
+{
+  "source_commit": "be7b0ae3394721a4c3a1375008a1dbfca44981fc",
+  "source_file": "Conway99C3Orbits/Basic.lean",
+  "source_file_sha256": "0132b35679ff8da6db31747d2c4138a2b70f75b312f50821950772df61630627",
+  "imports": [
+    "Mathlib.Data.Matrix.Basic",
+    "Mathlib.LinearAlgebra.Matrix.Trace",
+    "Mathlib.Tactic"
+  ],
+  "formal_conjectures_imported": false,
+  "simple_graph_type_mentioned_in_lean_source": false,
+  "principal_matrix_theorem": {
+    "name": "Conway99C3Orbits.triangularOrbitCount_eq_six_or_twentySeven",
+    "input_boundary": [
+      "arbitrary rational 33 by 33 matrix B",
+      "arbitrary finite set of the 33 orbit indices",
+      "diagonal classification hypothesis",
+      "spectral trace certificate hypothesis",
+      "triangle-action congruence hypothesis"
+    ],
+    "conclusion": "The finite set cardinality is 6 or 27.",
+    "graph_or_automorphism_input": false,
+    "claim_label": "VERIFIED",
+    "verification_boundary": "Conditional theorem only; no graph-level bridge"
+  },
+  "clean_arithmetic_theorem": {
+    "name": "Conway99C3Orbits.count_eq_six_or_twentySeven_of_trace_eigenvalueMultiplicities_and_congruence",
+    "inputs": [
+      "natural numbers t and b",
+      "t <= 33",
+      "b <= 32",
+      "the stated rational trace equation",
+      "3 divides 231 - t"
+    ],
+    "conclusion": "t = 6 or t = 27"
+  },
+  "certificate_fields": [
+    {
+      "field": "B",
+      "kind": "data",
+      "mechanically_derived_from_graph_in_repository": false,
+      "consumed_by_packaged_endpoint": true,
+      "note": "Supplied rational quotient-matrix candidate; no graph construction exists."
+    },
+    {
+      "field": "triangularOrbits",
+      "kind": "data",
+      "mechanically_derived_from_graph_in_repository": false,
+      "consumed_by_packaged_endpoint": true,
+      "note": "Supplied finite set; no orbit construction or internal-triangle proof exists."
+    },
+    {
+      "field": "quotientIdentity",
+      "kind": "hypothesis",
+      "mechanically_derived_from_graph_in_repository": false,
+      "consumed_by_packaged_endpoint": false,
+      "note": "A separate lemma derives the two zero-sum eigenvalue possibilities from this identity, but the endpoint never uses this field."
+    },
+    {
+      "field": "regularity",
+      "kind": "hypothesis",
+      "mechanically_derived_from_graph_in_repository": false,
+      "consumed_by_packaged_endpoint": false,
+      "note": "The all-one eigenvector equality is stored but unused by the endpoint proof."
+    },
+    {
+      "field": "diagonal",
+      "kind": "hypothesis",
+      "mechanically_derived_from_graph_in_repository": false,
+      "consumed_by_packaged_endpoint": true,
+      "note": "Used to prove trace B = 2 times the supplied finite-set cardinality."
+    },
+    {
+      "field": "spectrum",
+      "kind": "hypothesis",
+      "mechanically_derived_from_graph_in_repository": false,
+      "consumed_by_packaged_endpoint": true,
+      "note": "Directly supplies multiplicity bounds and the trace equality; diagonalizability and graph-spectrum transfer are outside the formalization."
+    },
+    {
+      "field": "triangle_congruence",
+      "kind": "hypothesis",
+      "mechanically_derived_from_graph_in_repository": false,
+      "consumed_by_packaged_endpoint": true,
+      "note": "Directly assumes the orbit-counting congruence; fixed-triangle classification is not formalized."
+    }
+  ],
+  "trust_sensitive_scan": {
+    "sorry": 0,
+    "admit": 0,
+    "custom_axiom_declarations": 0,
+    "unsafe_declarations": 0,
+    "native_decide": 0,
+    "native_eval": 0,
+    "implemented_by": 0,
+    "run_tac": 0,
+    "note": "The audited Conway99C3Orbits/Basic.lean file contains #print axioms commands; those are queries, not axiom declarations."
+  },
+  "strongest_safe_statement": "At the pinned commit, Lean checks a conditional arithmetic/matrix restriction. The repository does not prove that a Conway 99-graph with a fixed-point-free order-three automorphism yields the supplied certificate, and it does not prove a graph-level 6-or-27 theorem.",
+  "target_status": "UNKNOWN",
+  "novelty_status": "UNKNOWN"
+}

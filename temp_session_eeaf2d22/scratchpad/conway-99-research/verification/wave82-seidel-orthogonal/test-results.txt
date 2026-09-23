@@ -1,0 +1,17 @@
+2026-07-28T00:10:50Z
+
+python -B verification/wave82-seidel-orthogonal/independent_verify.py --verify verification/wave82-seidel-orthogonal/independent-results.json
+PASS_WAVE82_INDEPENDENT_VERIFY
+
+python -B -m unittest -v verification/wave82-seidel-orthogonal/test_independent_verify.py
+Ran 10 tests
+OK
+
+python -B attempts/wave82-seidel-orthogonal/exact_check.py --verify attempts/wave82-seidel-orthogonal/exact-results.json
+PASS_WAVE82_SEIDEL_ORTHOGONAL
+
+python -B -m unittest discover -s attempts/wave82-seidel-orthogonal -p "test_*.py" -v
+Ran 6 tests
+OK
+
+Host free physical memory after verification: 53.53 percent.

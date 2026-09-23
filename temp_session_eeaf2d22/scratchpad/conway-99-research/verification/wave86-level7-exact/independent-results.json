@@ -1,0 +1,264 @@
+{
+  "claim_label": "VERIFIED",
+  "conditional_scope": "Wave 71 q=16 row for a hypothetical srg(99,14,1,2)",
+  "discovery_manifest_sha256": "c6066fd10258578c15e511f3802217e4ff613ffe3d3b3b8f11e804f0316ac75d",
+  "format": "wave86-level7-independent-verifier-v1",
+  "hostile_controls": {
+    "incomplete_basis_rank": 14,
+    "wrong_gauss_phase_sample": {
+      "correct_A3_A19_factor": "-282475249",
+      "omitted_phase_factor": "282475249"
+    },
+    "wrong_theta_power_7_squared_y0": "1/7",
+    "wrong_theta_sign_y0": "-1"
+  },
+  "modular_space": {
+    "basis_products": [
+      [
+        [
+          9,
+          "T"
+        ],
+        [
+          13,
+          "T"
+        ]
+      ],
+      [
+        [
+          9,
+          "T"
+        ],
+        [
+          13,
+          "C"
+        ]
+      ],
+      [
+        [
+          9,
+          "C"
+        ],
+        [
+          13,
+          "T"
+        ]
+      ],
+      [
+        [
+          9,
+          "C"
+        ],
+        [
+          13,
+          "C"
+        ]
+      ],
+      [
+        [
+          7,
+          "T"
+        ],
+        [
+          15,
+          "T"
+        ]
+      ],
+      [
+        [
+          7,
+          "T"
+        ],
+        [
+          15,
+          "C"
+        ]
+      ],
+      [
+        [
+          7,
+          "C"
+        ],
+        [
+          15,
+          "T"
+        ]
+      ],
+      [
+        [
+          7,
+          "C"
+        ],
+        [
+          15,
+          "C"
+        ]
+      ],
+      [
+        [
+          5,
+          "T"
+        ],
+        [
+          17,
+          "T"
+        ]
+      ],
+      [
+        [
+          5,
+          "T"
+        ],
+        [
+          17,
+          "C"
+        ]
+      ],
+      [
+        [
+          5,
+          "C"
+        ],
+        [
+          17,
+          "T"
+        ]
+      ],
+      [
+        [
+          5,
+          "C"
+        ],
+        [
+          17,
+          "C"
+        ]
+      ],
+      [
+        [
+          3,
+          "T"
+        ],
+        [
+          19,
+          "T"
+        ]
+      ],
+      [
+        [
+          3,
+          "T"
+        ],
+        [
+          19,
+          "C"
+        ]
+      ],
+      [
+        [
+          3,
+          "C"
+        ],
+        [
+          19,
+          "T"
+        ]
+      ]
+    ],
+    "basis_rank_through_q14": 15,
+    "cusp_dimension": 13,
+    "cusps": 2,
+    "dimension": 15,
+    "eisenstein_dimension": 2,
+    "elliptic_order_2": 0,
+    "elliptic_order_3": 2,
+    "fricke_square_is_identity": true,
+    "genus": 0,
+    "index": 8,
+    "rank_after_omitting_one_basis_product": 14,
+    "sturm_bound": 14
+  },
+  "normalizations": {
+    "character": "chi=(-7/.) modulo 7",
+    "gauss_sum": "tau(chi)=i*sqrt(7)",
+    "individual_W7_square": "chi(-1)=-1",
+    "individual_fricke": {
+      "E_k(1,chi)": "-i*7^((1-k)/2)*E_k(chi,1)",
+      "E_k(chi,1)": "-i*7^((k-1)/2)*E_k(1,chi)"
+    },
+    "norm_indexing": {
+      "q7": "norm 14, hence N14",
+      "q8": "norm 16, hence N16",
+      "q9": "norm 18, hence N18"
+    },
+    "poisson_transfer": "Theta_L=-7^3*(Theta_K|W7)",
+    "source_correction": "Printed arXiv Eq.(2.8) omits the normalization ratio; the stated factors follow from Eqs.(2.5) and (2.7).",
+    "theta_series": "Theta=sum_v q^((v,v)/2)",
+    "weight_22_product_W7_square": 1
+  },
+  "positive_identity": {
+    "all_multipliers_positive": true,
+    "forced_integer_lower_bound": 5868,
+    "left": "x7+x8+x9-1997236/341",
+    "multipliers": {
+      "x11": "1/2387",
+      "x8": "180/217",
+      "x9": "2344/2387",
+      "y1": "1118523/341",
+      "y2": "134113/341",
+      "y3": "9604/341",
+      "y4": "343/341"
+    },
+    "only_external_arithmetic_input": "Wave71: S=2 mod 14",
+    "rational_lower_bound": "1997236/341",
+    "short_vector_conclusion": "N14+N16+N18>=5868"
+  },
+  "scalar_control": {
+    "checked_through_q": 50,
+    "classification": "finite formal scalar null only",
+    "integral_even_nonnegative": true,
+    "not_a_lattice_or_graph": true,
+    "x0_to_x14": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5868,
+      0,
+      0,
+      28852082,
+      26264,
+      582557668,
+      2681235704,
+      12272379984
+    ],
+    "y0_to_y14": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      358916,
+      34393854,
+      600737200,
+      11946196274,
+      132636715536,
+      1237054839912,
+      9122211909000,
+      56682577580992,
+      304577760235536,
+      1443860798777424
+    ]
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "graph": "UNKNOWN",
+    "lattice_realized": false,
+    "novelty": "UNKNOWN",
+    "q16_excluded": false
+  },
+  "verdict": "VERIFIED_WITH_LITERATURE_CORRECTION"
+}

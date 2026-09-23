@@ -1,0 +1,58 @@
+role: proof_b
+date_utc: 2026-07-24T02:14:12Z
+git_commit: d76d030f6d74e2e1b7ca2b2f0f97536241b3a10b
+claim_label: DERIVED
+scope: >-
+  Exact generic theta/discriminant restrictions and an exact candidate
+  rootless h=729 bare S/G hostile control for the n3=708 endpoint. No full
+  S,Q,B frame/Schur package or target result is claimed.
+inputs:
+  agents/2026-07-24-wave28-orchestrator-brief.md: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  K12_catalogue_page: 163e03dfa9a4ab07675daa6e97a371bcfdb38f6195c311c63c699872b3e486c9
+  LAMBDA_F_catalogue_page: bb1db4504d7010dc093b24a8bcb00b042ea3879a220d669e8190d02abb6468ac
+method: >-
+  Smith and exact-level derivation; justified Poisson/Weil laws; determinant
+  modularity veto; scalar Sturm bounds; exact Cartan and published-Gram
+  arithmetic; reverse-LDL norm enumeration; finite-field discriminant-form
+  comparison; fresh ADE census; and frame-shell antipodal accounting.
+command: |-
+  cd attempts/wave28-theta-modular
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  agents/2026-07-24-wave28-theta-modular.md: 8783be7e730306637ed863b4d9fbe8f4193ad756e7ec86d697c7407688a5423a
+  attempts/wave28-theta-modular/exact_check.py: 8185f7c483dc5dfa7ca31dd60058ee48ef6cdf8b29074c4f02f9dfcccdb095e1
+  attempts/wave28-theta-modular/test_exact_check.py: 16dff2aa4c122e818c0898f604e12b2a67967591f528d048ccfe312f7bc4e1bc
+  attempts/wave28-theta-modular/exact-results.json: 9d7b1ffcc0cef2441aa6dd381228abaa1018f721594e930cdd7227c0647470d6
+  attempts/wave28-theta-modular/input-freeze.sha256: 42dda26e43b0512c9d929cae9877fbee9befb647450604d735d3ad5205cadcc8
+  attempts/wave28-theta-modular/source-freeze.sha256: cad0b503878708bbaf49041b0325e54abe7a5180e05e3387c6e98e5f51bb555a
+  attempts/wave28-theta-modular/failed-routes.md: 75e6bdbc7840f02c7a50497cf028144d76dd2e2a4f2b24d24fa83625477c49b9
+tests:
+  status: PASS
+  count: 14
+results:
+  exact_levels:
+    level_3: [9, 81, 729]
+    level_7: [49]
+    level_21: [21, 189, 441, 1029]
+  strongly_21_modular_shortcut: REFUTED_BY_DETERMINANT
+  scalar_sturm_bounds:
+    level_3: 7
+    level_7: 14
+    level_21: 58
+  bare_lattice_determinant_rows_with_controls: 8
+  fresh_ADE_controls: 17
+  rootless_h729_candidate:
+    determinant: 729
+    minimum: 4
+    root_count: 0
+    norm_four_count: 147636
+    scaled_dual_minimum_lower_bound: 14
+  same_Weil_rooted_comparator_root_count: 672
+  endpoint_result: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - The h=729 control supplies only S and G, not X, M, Q, B, or a Schur origin.
+  - General rank-44 lattices and mixed partial-dual cusp data are not classified.
+  - Ordinary elliptic theta series loses the selected 231-row Gram and cubic data.
+  - No primitive embedding, graph, endpoint exclusion, target resolution, or novelty result is supplied.

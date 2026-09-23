@@ -1,0 +1,39 @@
+role: proof_a
+date_utc: 2026-07-28T22:06:11Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint star-projector identity, trace-Gram rank
+  target, and forced cross-star dual relations for every pair of original
+  graph vertices.
+inputs:
+  - attempts/wave175-polar-cap-boundary/package-manifest.sha256
+  - verification/wave175-polar-cap-boundary/package-manifest.sha256
+  - attempts/wave171-pq-centered-code/package-manifest.sha256
+  - verification/wave171-pq-centered-code/package-manifest.sha256
+  - attempts/wave39-cross-base-rank/package-manifest.sha256
+method: >-
+  Orthogonal projectors onto the 99 labelled six-dimensional star
+  subspaces; a trace-zero symmetric-square rank bound; and exact F_3 Gram
+  analysis of the four cycle types forced on adjacent star pairs. No
+  graph, code, SAT, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave176-star-projector-circuits\exact_check.py --verify
+  attempts\wave176-star-projector-circuits\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave176-star-projector-circuits\test_exact_check.py
+outputs:
+  - attempts/wave176-star-projector-circuits/README.md
+  - attempts/wave176-star-projector-circuits/derivation.md
+  - attempts/wave176-star-projector-circuits/failed-routes.md
+  - attempts/wave176-star-projector-circuits/protocol.md
+  - attempts/wave176-star-projector-circuits/exact_check.py
+  - attempts/wave176-star-projector-circuits/exact-results.json
+  - attempts/wave176-star-projector-circuits/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The endpoint and rank k=11 branch both survive.
+  - Projector traces are not assumed to equal intersection dimensions.
+  - Global compatibility of pairwise cross-star relations is UNKNOWN.
+  - External novelty is UNKNOWN.

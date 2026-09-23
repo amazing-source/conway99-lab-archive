@@ -1,0 +1,13 @@
+command:
+  .\.venv\Scripts\python.exe -m unittest attempts\wave47-three-root-moment\test_three_root_moment.py -v
+result: PASS
+tests_run: 7
+elapsed_seconds: 0.810
+checks:
+  - exact ordered-root partition and embedding counts
+  - locally admissible rooted-flag census
+  - 8 families times 291 unrooted coefficient records
+  - exact Petersen and Clebsch direct-versus-expansion controls
+  - exact negative direction for every immutable source witness
+  - every retained primitive cut strictly separates its source
+  - endpoint and strict-bound status wall remains UNKNOWN / NOT_PROVED

@@ -1,0 +1,4454 @@
+{
+  "claim_label": "CANDIDATE",
+  "conditional_candidate_theorem": {
+    "assumptions": [
+      "n3=4158 (no triangular prism)",
+      "r3=rank_F3(M)=12",
+      "all 693 graph edges have local type 2+2+2"
+    ],
+    "derivation": [
+      "The verified quotient bridge gives rank_F3(2I+A_P)<=r3-1=11.",
+      "The complete all-222 quotient census has exactly eight rank-11 cases.",
+      "Those eight cases are one fibre-coloured isomorphism class.",
+      "Every triangle-free endpoint-pairing lift has rank_F7(K39)>=33.",
+      "A principal-block rank is at most the rank of the full matrix."
+    ],
+    "statement": "For every base graph triangle T, the 39-vertex principal block K[T union N(T)] has F7-rank at least 33. Therefore r7=rank_F7(M)>=33, and the existing parity condition sharpens this joint branch to even r7>=34.",
+    "status": "CANDIDATE_PENDING_INDEPENDENT_VERIFICATION"
+  },
+  "format": "wave41-allquotient-lifts-v1",
+  "git_commit": "4f1754a28723a8e0e4ea3025312cd264b1b117d2",
+  "invariant_search": {
+    "failed_to_force_a_prism": [
+      "All eight rank-eleven quotient cases have 37,378 triangle-free lifts.",
+      "Each case has 264 lifts attaining K39 rank 33.",
+      "A one-triangle quotient/lift relaxation does not enforce simultaneous 60-column B or 99-vertex compatibility."
+    ],
+    "successes": [
+      "The eight normalized rank-eleven records collapse to one exact fibre-coloured quotient isomorphism class.",
+      "The omitted 18 pairing bits never lower the local K39 rank below 33 in that class.",
+      "The complete 4,050-case census now records exact triangle-free pairing-mask counts, not only quotient ranks."
+    ]
+  },
+  "limitations": [
+    "Discovery cannot verify its own candidate theorem.",
+    "The 4,050 quotient normalization is complete only for three all-222 sides around one graph triangle.",
+    "The all-eight lift census is exact, but each lift is only a 36-vertex local core.",
+    "No simultaneous B, outside graph H, global triangle-star compatibility, or 99-vertex graph is constructed.",
+    "No endpoint exclusion, improved n3 upper bound, solution, or novelty claim is made."
+  ],
+  "normalized_all_222_quotients": {
+    "case_count": 4050,
+    "extended_triangle_free_lift_count_census": {
+      "by_quotient_rank": {
+        "11": {
+          "forms": 8,
+          "triangle_count_range": [
+            16,
+            16
+          ],
+          "triangle_free_mask_count_distribution": {
+            "37378": 8
+          },
+          "triangle_free_mask_count_range": [
+            37378,
+            37378
+          ]
+        },
+        "12": {
+          "forms": 1,
+          "triangle_count_range": [
+            24,
+            24
+          ],
+          "triangle_free_mask_count_distribution": {
+            "10648": 1
+          },
+          "triangle_free_mask_count_range": [
+            10648,
+            10648
+          ]
+        },
+        "13": {
+          "forms": 400,
+          "triangle_count_range": [
+            4,
+            16
+          ],
+          "triangle_free_mask_count_distribution": {
+            "117649": 64,
+            "164864": 48,
+            "31768": 32,
+            "54872": 80,
+            "74376": 176
+          },
+          "triangle_free_mask_count_range": [
+            31768,
+            164864
+          ]
+        },
+        "14": {
+          "forms": 46,
+          "triangle_count_range": [
+            0,
+            16
+          ],
+          "triangle_free_mask_count_distribution": {
+            "262144": 17,
+            "28512": 26,
+            "90112": 3
+          },
+          "triangle_free_mask_count_range": [
+            28512,
+            262144
+          ]
+        },
+        "15": {
+          "forms": 2616,
+          "triangle_count_range": [
+            4,
+            10
+          ],
+          "triangle_free_mask_count_distribution": {
+            "102528": 352,
+            "106512": 640,
+            "147456": 64,
+            "155648": 64,
+            "160000": 88,
+            "65664": 496,
+            "68400": 96,
+            "77216": 320,
+            "87552": 240,
+            "96768": 64,
+            "99856": 192
+          },
+          "triangle_free_mask_count_range": [
+            65664,
+            160000
+          ]
+        },
+        "16": {
+          "forms": 979,
+          "triangle_count_range": [
+            0,
+            12
+          ],
+          "triangle_free_mask_count_distribution": {
+            "110592": 160,
+            "147456": 300,
+            "262144": 2,
+            "46656": 34,
+            "62208": 128,
+            "70756": 176,
+            "82944": 51,
+            "92205": 128
+          },
+          "triangle_free_mask_count_range": [
+            46656,
+            262144
+          ]
+        }
+      },
+      "joint_distribution": [
+        {
+          "normalized_forms": 8,
+          "quotient_triangle_count": 16,
+          "rank_F3_2I_plus_A": 11,
+          "triangle_free_mask_count": 37378
+        },
+        {
+          "normalized_forms": 1,
+          "quotient_triangle_count": 24,
+          "rank_F3_2I_plus_A": 12,
+          "triangle_free_mask_count": 10648
+        },
+        {
+          "normalized_forms": 48,
+          "quotient_triangle_count": 4,
+          "rank_F3_2I_plus_A": 13,
+          "triangle_free_mask_count": 164864
+        },
+        {
+          "normalized_forms": 64,
+          "quotient_triangle_count": 6,
+          "rank_F3_2I_plus_A": 13,
+          "triangle_free_mask_count": 117649
+        },
+        {
+          "normalized_forms": 176,
+          "quotient_triangle_count": 10,
+          "rank_F3_2I_plus_A": 13,
+          "triangle_free_mask_count": 74376
+        },
+        {
+          "normalized_forms": 80,
+          "quotient_triangle_count": 12,
+          "rank_F3_2I_plus_A": 13,
+          "triangle_free_mask_count": 54872
+        },
+        {
+          "normalized_forms": 32,
+          "quotient_triangle_count": 16,
+          "rank_F3_2I_plus_A": 13,
+          "triangle_free_mask_count": 31768
+        },
+        {
+          "normalized_forms": 17,
+          "quotient_triangle_count": 0,
+          "rank_F3_2I_plus_A": 14,
+          "triangle_free_mask_count": 262144
+        },
+        {
+          "normalized_forms": 3,
+          "quotient_triangle_count": 8,
+          "rank_F3_2I_plus_A": 14,
+          "triangle_free_mask_count": 90112
+        },
+        {
+          "normalized_forms": 26,
+          "quotient_triangle_count": 16,
+          "rank_F3_2I_plus_A": 14,
+          "triangle_free_mask_count": 28512
+        },
+        {
+          "normalized_forms": 64,
+          "quotient_triangle_count": 4,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 147456
+        },
+        {
+          "normalized_forms": 64,
+          "quotient_triangle_count": 4,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 155648
+        },
+        {
+          "normalized_forms": 88,
+          "quotient_triangle_count": 4,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 160000
+        },
+        {
+          "normalized_forms": 64,
+          "quotient_triangle_count": 7,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 96768
+        },
+        {
+          "normalized_forms": 352,
+          "quotient_triangle_count": 7,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 102528
+        },
+        {
+          "normalized_forms": 640,
+          "quotient_triangle_count": 7,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 106512
+        },
+        {
+          "normalized_forms": 240,
+          "quotient_triangle_count": 8,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 87552
+        },
+        {
+          "normalized_forms": 192,
+          "quotient_triangle_count": 8,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 99856
+        },
+        {
+          "normalized_forms": 496,
+          "quotient_triangle_count": 10,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 65664
+        },
+        {
+          "normalized_forms": 96,
+          "quotient_triangle_count": 10,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 68400
+        },
+        {
+          "normalized_forms": 320,
+          "quotient_triangle_count": 10,
+          "rank_F3_2I_plus_A": 15,
+          "triangle_free_mask_count": 77216
+        },
+        {
+          "normalized_forms": 2,
+          "quotient_triangle_count": 0,
+          "rank_F3_2I_plus_A": 16,
+          "triangle_free_mask_count": 262144
+        },
+        {
+          "normalized_forms": 300,
+          "quotient_triangle_count": 4,
+          "rank_F3_2I_plus_A": 16,
+          "triangle_free_mask_count": 147456
+        },
+        {
+          "normalized_forms": 160,
+          "quotient_triangle_count": 6,
+          "rank_F3_2I_plus_A": 16,
+          "triangle_free_mask_count": 110592
+        },
+        {
+          "normalized_forms": 51,
+          "quotient_triangle_count": 8,
+          "rank_F3_2I_plus_A": 16,
+          "triangle_free_mask_count": 82944
+        },
+        {
+          "normalized_forms": 128,
+          "quotient_triangle_count": 9,
+          "rank_F3_2I_plus_A": 16,
+          "triangle_free_mask_count": 92205
+        },
+        {
+          "normalized_forms": 128,
+          "quotient_triangle_count": 10,
+          "rank_F3_2I_plus_A": 16,
+          "triangle_free_mask_count": 62208
+        },
+        {
+          "normalized_forms": 176,
+          "quotient_triangle_count": 10,
+          "rank_F3_2I_plus_A": 16,
+          "triangle_free_mask_count": 70756
+        },
+        {
+          "normalized_forms": 34,
+          "quotient_triangle_count": 12,
+          "rank_F3_2I_plus_A": 16,
+          "triangle_free_mask_count": 46656
+        }
+      ]
+    },
+    "rank_F3_2I_plus_A_distribution": {
+      "11": 8,
+      "12": 1,
+      "13": 400,
+      "14": 46,
+      "15": 2616,
+      "16": 979
+    }
+  },
+  "rank33_border_roadblock": {
+    "automatic_orthogonality": "For its matching fibre-star vector, an outside K-column has dot product (4+1+1)+(10-2)=14=0 mod 7.",
+    "consequence_at_local_rank_33": "The K39 kernel has dimension six, while three independent kernel vectors already annihilate every outside column. Therefore rank(H^T U)<=3 automatically for any balanced outside border U. The full-rank-at-most-44 requirement rank(H^T U)<=5 is vacuous and cannot force rank at least 45.",
+    "independence": "The three fibre-star vectors are F7-independent.",
+    "kernel_dimension_supplied": 3,
+    "outside_column_balance": "Every outside vertex is nonadjacent to all three vertices of T and adjacent to exactly two vertices in each 12-fibre.",
+    "status": "FAILED_ROUTE",
+    "structural_kernel_vectors": "For each fibre i, take T-coordinates (4,1,1) with 4 at the corresponding base vertex, put 1 on all twelve vertices of fibre i, and 0 on the other two fibres."
+  },
+  "rank_eleven_boundary": {
+    "all_cases": [
+      {
+        "affine_mask_transport_to_case_0": {
+          "constant_mask": 0,
+          "source_variable_to_target_variable": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        "block_permutation": [
+          0,
+          1,
+          2
+        ],
+        "canonical_minimum_witness": {
+          "degree_set": [
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              28
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              32
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              34
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              19
+            ],
+            [
+              7,
+              30
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              33
+            ],
+            [
+              9,
+              29
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              31
+            ],
+            [
+              11,
+              35
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              26
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              27
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              29
+            ],
+            [
+              17,
+              31
+            ],
+            [
+              18,
+              34
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              32
+            ],
+            [
+              20,
+              28
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              21,
+              30
+            ],
+            [
+              22,
+              35
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              33
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              34,
+              35
+            ]
+          ],
+          "mask": 51739,
+          "rank_F7_3I_minus_A": 32,
+          "rank_F7_K39": 33,
+          "sha256": "fca5636f52290f77f099485db2918d26f9cc980a7275bdf90f7e4934cdccfacb",
+          "structural_fibre_star_kernel_dimension": 3,
+          "triangle_count": 0
+        },
+        "case_number": 0,
+        "fibre0_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "fibre2_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "fibre_preserving_isomorphism_to_case_0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "mask_count": 262144,
+        "minimum_rank_F7_3I_minus_A": 32,
+        "minimum_rank_F7_K39": 33,
+        "normalized_index": 1446,
+        "quotient": {
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              14
+            ],
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              3,
+              17
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              5,
+              17
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              8,
+              15
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              17
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "rank_F3_2I_plus_A": 11,
+          "sha256": "3932c8be05d0f5ca94b44372dcc46c317cf020120bbe610aa3af3ba336e52a0f",
+          "triangle_count": 16
+        },
+        "rank_F7_3I_minus_A_distribution": {
+          "32": 264,
+          "33": 7348,
+          "34": 29766
+        },
+        "rank_F7_K39_distribution": {
+          "33": 264,
+          "34": 7348,
+          "35": 29766
+        },
+        "relative_orbit": "share_one_24",
+        "triangle_free_mask_count": 37378
+      },
+      {
+        "affine_mask_transport_to_case_0": {
+          "constant_mask": 3840,
+          "source_variable_to_target_variable": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            14,
+            17,
+            16
+          ]
+        },
+        "block_permutation": [
+          0,
+          2,
+          1
+        ],
+        "canonical_minimum_witness": {
+          "degree_set": [
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              30
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              34
+            ],
+            [
+              6,
+              32
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              19
+            ],
+            [
+              7,
+              28
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              35
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              9,
+              31
+            ],
+            [
+              10,
+              29
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              33
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              26
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              27
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              31
+            ],
+            [
+              17,
+              29
+            ],
+            [
+              18,
+              32
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              34
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              20,
+              30
+            ],
+            [
+              21,
+              28
+            ],
+            [
+              22,
+              33
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              35
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              34,
+              35
+            ]
+          ],
+          "mask": 50459,
+          "rank_F7_3I_minus_A": 32,
+          "rank_F7_K39": 33,
+          "sha256": "9c2ed15d8f394bfdddc7fbdf5cd135c95b23812a915046a2a66658083b01d7f6",
+          "structural_fibre_star_kernel_dimension": 3,
+          "triangle_count": 0
+        },
+        "case_number": 1,
+        "fibre0_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "fibre2_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "fibre_preserving_isomorphism_to_case_0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          14,
+          17,
+          16
+        ],
+        "mask_count": 262144,
+        "minimum_rank_F7_3I_minus_A": 32,
+        "minimum_rank_F7_K39": 33,
+        "normalized_index": 1447,
+        "quotient": {
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              15
+            ],
+            [
+              4,
+              17
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              8,
+              15
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              17
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "rank_F3_2I_plus_A": 11,
+          "sha256": "9164b4b794987af7956cc206dcbd1bdffea57806416c01df30f5d083bba67f8e",
+          "triangle_count": 16
+        },
+        "rank_F7_3I_minus_A_distribution": {
+          "32": 264,
+          "33": 7348,
+          "34": 29766
+        },
+        "rank_F7_K39_distribution": {
+          "33": 264,
+          "34": 7348,
+          "35": 29766
+        },
+        "relative_orbit": "share_one_24",
+        "triangle_free_mask_count": 37378
+      },
+      {
+        "affine_mask_transport_to_case_0": {
+          "constant_mask": 3072,
+          "source_variable_to_target_variable": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        "block_permutation": [
+          0,
+          1,
+          2
+        ],
+        "canonical_minimum_witness": {
+          "degree_set": [
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              32
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              28
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              30
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              34
+            ],
+            [
+              7,
+              19
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              35
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              9,
+              31
+            ],
+            [
+              10,
+              29
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              33
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              26
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              27
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              29
+            ],
+            [
+              17,
+              31
+            ],
+            [
+              18,
+              34
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              32
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              20,
+              30
+            ],
+            [
+              21,
+              28
+            ],
+            [
+              22,
+              33
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              35
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              34,
+              35
+            ]
+          ],
+          "mask": 50711,
+          "rank_F7_3I_minus_A": 32,
+          "rank_F7_K39": 33,
+          "sha256": "be2e3db94040822768df6d625e10e3098db15a5a1d95a871b414d1a67207a385",
+          "structural_fibre_star_kernel_dimension": 3,
+          "triangle_count": 0
+        },
+        "case_number": 2,
+        "fibre0_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "fibre2_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "fibre_preserving_isomorphism_to_case_0": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "mask_count": 262144,
+        "minimum_rank_F7_3I_minus_A": 32,
+        "minimum_rank_F7_K39": 33,
+        "normalized_index": 1452,
+        "quotient": {
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              14
+            ],
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              3,
+              17
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              15
+            ],
+            [
+              4,
+              17
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              8,
+              15
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              17
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "rank_F3_2I_plus_A": 11,
+          "sha256": "10dc3bf348b5ce9350cddae1fe6b8bcd7fe9f8633edefe0f4327adb451c238eb",
+          "triangle_count": 16
+        },
+        "rank_F7_3I_minus_A_distribution": {
+          "32": 264,
+          "33": 7348,
+          "34": 29766
+        },
+        "rank_F7_K39_distribution": {
+          "33": 264,
+          "34": 7348,
+          "35": 29766
+        },
+        "relative_orbit": "share_one_24",
+        "triangle_free_mask_count": 37378
+      },
+      {
+        "affine_mask_transport_to_case_0": {
+          "constant_mask": 768,
+          "source_variable_to_target_variable": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            14,
+            17,
+            16
+          ]
+        },
+        "block_permutation": [
+          0,
+          2,
+          1
+        ],
+        "canonical_minimum_witness": {
+          "degree_set": [
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              34
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              30
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              28
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              32
+            ],
+            [
+              7,
+              19
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              33
+            ],
+            [
+              9,
+              29
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              31
+            ],
+            [
+              11,
+              35
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              26
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              27
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              31
+            ],
+            [
+              17,
+              29
+            ],
+            [
+              18,
+              32
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              34
+            ],
+            [
+              20,
+              28
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              21,
+              30
+            ],
+            [
+              22,
+              35
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              33
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              34,
+              35
+            ]
+          ],
+          "mask": 51479,
+          "rank_F7_3I_minus_A": 32,
+          "rank_F7_K39": 33,
+          "sha256": "dd000fe92bf4e0cd70c7e28bbd1fa70c19e37274aa9e0565572fb4308e4348c7",
+          "structural_fibre_star_kernel_dimension": 3,
+          "triangle_count": 0
+        },
+        "case_number": 3,
+        "fibre0_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "fibre2_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "fibre_preserving_isomorphism_to_case_0": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          14,
+          17,
+          16
+        ],
+        "mask_count": 262144,
+        "minimum_rank_F7_3I_minus_A": 32,
+        "minimum_rank_F7_K39": 33,
+        "normalized_index": 1453,
+        "quotient": {
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              5,
+              17
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              8,
+              15
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              17
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "rank_F3_2I_plus_A": 11,
+          "sha256": "c858a8448110afdff7ff7a3ca003bc94bd8c9a26ac8a439d337a608d46d96b96",
+          "triangle_count": 16
+        },
+        "rank_F7_3I_minus_A_distribution": {
+          "32": 264,
+          "33": 7348,
+          "34": 29766
+        },
+        "rank_F7_K39_distribution": {
+          "33": 264,
+          "34": 7348,
+          "35": 29766
+        },
+        "relative_orbit": "share_one_24",
+        "triangle_free_mask_count": 37378
+      },
+      {
+        "affine_mask_transport_to_case_0": {
+          "constant_mask": 2560,
+          "source_variable_to_target_variable": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            16
+          ]
+        },
+        "block_permutation": [
+          0,
+          1,
+          2
+        ],
+        "canonical_minimum_witness": {
+          "degree_set": [
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              28
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              34
+            ],
+            [
+              6,
+              32
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              19
+            ],
+            [
+              7,
+              30
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              35
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              9,
+              29
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              31
+            ],
+            [
+              11,
+              33
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              26
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              27
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              29
+            ],
+            [
+              17,
+              31
+            ],
+            [
+              18,
+              32
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              34
+            ],
+            [
+              20,
+              28
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              21,
+              30
+            ],
+            [
+              22,
+              33
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              35
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              34,
+              35
+            ]
+          ],
+          "mask": 49179,
+          "rank_F7_3I_minus_A": 32,
+          "rank_F7_K39": 33,
+          "sha256": "809eb84d7b56c063345e0967e0985c879513d13a7fe69a4f470ab0952b865f51",
+          "structural_fibre_star_kernel_dimension": 3,
+          "triangle_count": 0
+        },
+        "case_number": 4,
+        "fibre0_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "fibre2_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "fibre_preserving_isomorphism_to_case_0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          16
+        ],
+        "mask_count": 262144,
+        "minimum_rank_F7_3I_minus_A": 32,
+        "minimum_rank_F7_K39": 33,
+        "normalized_index": 1536,
+        "quotient": {
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              14
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              17
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              8,
+              15
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              17
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "rank_F3_2I_plus_A": 11,
+          "sha256": "123de769be5b3c5bb689c147194bbe67cc4b7004f9ea701f8e6e3967055e7c8e",
+          "triangle_count": 16
+        },
+        "rank_F7_3I_minus_A_distribution": {
+          "32": 264,
+          "33": 7348,
+          "34": 29766
+        },
+        "rank_F7_K39_distribution": {
+          "33": 264,
+          "34": 7348,
+          "35": 29766
+        },
+        "relative_orbit": "share_one_24",
+        "triangle_free_mask_count": 37378
+      },
+      {
+        "affine_mask_transport_to_case_0": {
+          "constant_mask": 1280,
+          "source_variable_to_target_variable": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            14,
+            16,
+            17
+          ]
+        },
+        "block_permutation": [
+          0,
+          2,
+          1
+        ],
+        "canonical_minimum_witness": {
+          "degree_set": [
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              30
+            ],
+            [
+              5,
+              32
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              34
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              19
+            ],
+            [
+              7,
+              28
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              33
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              9,
+              31
+            ],
+            [
+              10,
+              29
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              35
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              26
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              27
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              31
+            ],
+            [
+              17,
+              29
+            ],
+            [
+              18,
+              34
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              32
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              20,
+              30
+            ],
+            [
+              21,
+              28
+            ],
+            [
+              22,
+              35
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              33
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              34,
+              35
+            ]
+          ],
+          "mask": 53019,
+          "rank_F7_3I_minus_A": 32,
+          "rank_F7_K39": 33,
+          "sha256": "cd918bbd3f2421e4bbd305d7e3ee3858a9bb9a2179d35a1c16d2ee1b2a3454f3",
+          "structural_fibre_star_kernel_dimension": 3,
+          "triangle_count": 0
+        },
+        "case_number": 5,
+        "fibre0_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "fibre2_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "fibre_preserving_isomorphism_to_case_0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          14,
+          16,
+          17
+        ],
+        "mask_count": 262144,
+        "minimum_rank_F7_3I_minus_A": 32,
+        "minimum_rank_F7_K39": 33,
+        "normalized_index": 1537,
+        "quotient": {
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              3,
+              17
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              17
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              8,
+              15
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              17
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "rank_F3_2I_plus_A": 11,
+          "sha256": "4fefedc8b8dbea0f25f5308a0777617a0c7d87b8b17e6109fa93f1e60bd6294a",
+          "triangle_count": 16
+        },
+        "rank_F7_3I_minus_A_distribution": {
+          "32": 264,
+          "33": 7348,
+          "34": 29766
+        },
+        "rank_F7_K39_distribution": {
+          "33": 264,
+          "34": 7348,
+          "35": 29766
+        },
+        "relative_orbit": "share_one_24",
+        "triangle_free_mask_count": 37378
+      },
+      {
+        "affine_mask_transport_to_case_0": {
+          "constant_mask": 1536,
+          "source_variable_to_target_variable": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            16
+          ]
+        },
+        "block_permutation": [
+          0,
+          1,
+          2
+        ],
+        "canonical_minimum_witness": {
+          "degree_set": [
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              34
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              28
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              30
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              32
+            ],
+            [
+              7,
+              19
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              8,
+              33
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              9,
+              31
+            ],
+            [
+              10,
+              29
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              35
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              26
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              27
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              29
+            ],
+            [
+              17,
+              31
+            ],
+            [
+              18,
+              32
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              34
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              20,
+              30
+            ],
+            [
+              21,
+              28
+            ],
+            [
+              22,
+              35
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              33
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              34,
+              35
+            ]
+          ],
+          "mask": 52247,
+          "rank_F7_3I_minus_A": 32,
+          "rank_F7_K39": 33,
+          "sha256": "dae5b1aa4258d75cf76daeef9a68b282f22e373d4a9dc872d4b219a9cb4e9ae2",
+          "structural_fibre_star_kernel_dimension": 3,
+          "triangle_count": 0
+        },
+        "case_number": 6,
+        "fibre0_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "fibre2_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "fibre_preserving_isomorphism_to_case_0": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          16
+        ],
+        "mask_count": 262144,
+        "minimum_rank_F7_3I_minus_A": 32,
+        "minimum_rank_F7_K39": 33,
+        "normalized_index": 1542,
+        "quotient": {
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              14
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              17
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              8,
+              15
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              17
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "rank_F3_2I_plus_A": 11,
+          "sha256": "4b56cf1bb5cb2ab3a34d514387e2f76d6d042fde1dcb86528784e9cc43bbc611",
+          "triangle_count": 16
+        },
+        "rank_F7_3I_minus_A_distribution": {
+          "32": 264,
+          "33": 7348,
+          "34": 29766
+        },
+        "rank_F7_K39_distribution": {
+          "33": 264,
+          "34": 7348,
+          "35": 29766
+        },
+        "relative_orbit": "share_one_24",
+        "triangle_free_mask_count": 37378
+      },
+      {
+        "affine_mask_transport_to_case_0": {
+          "constant_mask": 2304,
+          "source_variable_to_target_variable": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            14,
+            16,
+            17
+          ]
+        },
+        "block_permutation": [
+          0,
+          2,
+          1
+        ],
+        "canonical_minimum_witness": {
+          "degree_set": [
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              32
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              30
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              28
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              34
+            ],
+            [
+              7,
+              19
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              35
+            ],
+            [
+              8,
+              20
+            ],
+            [
+              9,
+              29
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              31
+            ],
+            [
+              11,
+              33
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              26
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              27
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              31
+            ],
+            [
+              17,
+              29
+            ],
+            [
+              18,
+              34
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              32
+            ],
+            [
+              20,
+              28
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              21,
+              30
+            ],
+            [
+              22,
+              33
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              35
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              34,
+              35
+            ]
+          ],
+          "mask": 49943,
+          "rank_F7_3I_minus_A": 32,
+          "rank_F7_K39": 33,
+          "sha256": "802c80a5457f6197adb45494089137bd30a0edaca0cdae9ef278fdc5555078d8",
+          "structural_fibre_star_kernel_dimension": 3,
+          "triangle_count": 0
+        },
+        "case_number": 7,
+        "fibre0_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "fibre2_pairing": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "fibre_preserving_isomorphism_to_case_0": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          14,
+          16,
+          17
+        ],
+        "mask_count": 262144,
+        "minimum_rank_F7_3I_minus_A": 32,
+        "minimum_rank_F7_K39": 33,
+        "normalized_index": 1543,
+        "quotient": {
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              3,
+              17
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              17
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              8,
+              15
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              17
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "rank_F3_2I_plus_A": 11,
+          "sha256": "d6bb066527ecc873ef688f1132a80cd5ef64be26be77b0da451fabd43cb0e890",
+          "triangle_count": 16
+        },
+        "rank_F7_3I_minus_A_distribution": {
+          "32": 264,
+          "33": 7348,
+          "34": 29766
+        },
+        "rank_F7_K39_distribution": {
+          "33": 264,
+          "34": 7348,
+          "35": 29766
+        },
+        "relative_orbit": "share_one_24",
+        "triangle_free_mask_count": 37378
+      }
+    ],
+    "canonical_case_metadata": {
+      "block_permutation": [
+        0,
+        1,
+        2
+      ],
+      "fibre0_pairing": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "fibre2_pairing": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "normalized_index": 1446,
+      "relative_orbit": "share_one_24"
+    },
+    "canonical_lift_census": {
+      "canonical_minimum_witness": {
+        "degree_set": [
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            24
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            2,
+            27
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            25
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            16
+          ],
+          [
+            4,
+            28
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            32
+          ],
+          [
+            5,
+            18
+          ],
+          [
+            6,
+            17
+          ],
+          [
+            6,
+            34
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            19
+          ],
+          [
+            7,
+            30
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            20
+          ],
+          [
+            8,
+            33
+          ],
+          [
+            9,
+            29
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            10,
+            21
+          ],
+          [
+            10,
+            31
+          ],
+          [
+            11,
+            35
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            12,
+            24
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            26
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            27
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            16,
+            29
+          ],
+          [
+            17,
+            31
+          ],
+          [
+            18,
+            34
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            32
+          ],
+          [
+            20,
+            28
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            30
+          ],
+          [
+            22,
+            35
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            33
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            30,
+            31
+          ],
+          [
+            32,
+            33
+          ],
+          [
+            34,
+            35
+          ]
+        ],
+        "mask": 51739,
+        "rank_F7_3I_minus_A": 32,
+        "rank_F7_K39": 33,
+        "sha256": "fca5636f52290f77f099485db2918d26f9cc980a7275bdf90f7e4934cdccfacb",
+        "structural_fibre_star_kernel_dimension": 3,
+        "triangle_count": 0
+      },
+      "mask_count": 262144,
+      "minimum_rank_F7_3I_minus_A": 32,
+      "minimum_rank_F7_K39": 33,
+      "rank_F7_3I_minus_A_distribution": {
+        "32": 264,
+        "33": 7348,
+        "34": 29766
+      },
+      "rank_F7_K39_distribution": {
+        "33": 264,
+        "34": 7348,
+        "35": 29766
+      },
+      "triangle_free_mask_count": 37378
+    },
+    "common_exact_conclusion": {
+      "minimum_rank_F7_K39": 33,
+      "quotient_triangle_count": 16,
+      "rank_F7_K39_distribution_per_case": {
+        "33": 264,
+        "34": 7348,
+        "35": 29766
+      },
+      "triangle_free_masks_per_case": 37378
+    },
+    "fibre_coloured_isomorphism_class_count": 1,
+    "normalized_case_count": 8
+  },
+  "role": "construction",
+  "scope": "All 4,050 normalized all-222 one-triangle quotients, with a complete endpoint-pairing lift census for all eight rank-eleven forms under the conditional prism-free local model.",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "general_upper_bound_below_4158": "NOT_PROVED",
+    "graph_or_counterexample": "NONE",
+    "novelty_or_priority": "UNKNOWN"
+  }
+}

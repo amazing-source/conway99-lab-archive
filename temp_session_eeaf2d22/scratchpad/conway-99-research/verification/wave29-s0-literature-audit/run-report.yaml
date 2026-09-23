@@ -1,0 +1,70 @@
+role: literature
+date_utc: 2026-07-24T03:54:27Z
+git_commit: 74b6f3adcee19ca2b0480258bb7bf51198bd085a
+claim_label: UNKNOWN
+scope: >-
+  Independent novelty and current-status audit for the exact exclusion of
+  S0=K12 orthogonal_sum LAMBDA(F) from the frozen full Wave-29
+  n3=708 projector/Schur endpoint equations. This does not audit any other
+  determinant-729 rank-44 form and does not assert n3>=709 or resolve
+  srg(99,14,1,2).
+inputs:
+  agents/2026-07-24-wave29-s0-frame-exclusion.md:
+    sha256: e6ae61331a54d53f2a98712296ebac855f45b46de32ff2ec4d85018f2d8a5045
+  attempts/wave29-s0-frame-exclusion/run-report.yaml:
+    sha256: 91fba9dad3bb9d906eb69c06ca97be82ff804296dcb010be3f6749e67beba286
+  attempts/wave29-s0-frame-exclusion/exact-results.json:
+    sha256: 7a85c5321b5e91365c246dff7bae9264cc82494da5c866b1b351511099f6638c
+  verification/wave29-s0-frame-exclusion/protocol-freeze.md:
+    sha256: 8ab139038fa6792cd9abad0030a0ee17f8cb5cd6eee749a312e2d13a0abd5e30
+  verification/wave29-s0-frame-exclusion/audit.md:
+    inspected_sha256: 4101a394252807fb9de8c39fb32b780bc88410d99e47dfe698da251b49f3e061
+    current_normalized_sha256: dbdcb88bf309cbfa47a42b9fb63dd7cf483e07cac8b92c475094c96be3723b7d
+    normalization_note: >-
+      The verifier audit later lost one extra terminal blank line during the
+      publication gate; its mathematical and prose content did not change.
+method: >-
+  Froze the exact statement and identifying proof signature before searching;
+  executed exact-object, alternate-identifier, numeric-fingerprint,
+  endpoint-language, final-obstruction, standard-ingredient, and current-status
+  searches; cross-checked web discovery with OpenAlex, Crossref, and arXiv API
+  queries; inspected primary or authoritative metadata; separated standard
+  ingredients from the exact combination; retained metadata only.
+search_summary:
+  search_date_utc: 2026-07-24
+  query_strings: 81
+  query_batches: 21
+  web_search_queries: 68
+  openalex_queries: 3
+  crossref_queries: 2
+  arxiv_api_queries: 8
+  retained_source_records: 16
+  exact_prior_art_matches: 0
+  raw_papers_or_responses_retained: 0
+command: >-
+  PowerShell: parse query-ledger.json and source-metadata.json with
+  ConvertFrom-Json; sum batches[].queries.Count; compare the sum with
+  counts.query_strings; compare sources.Count with source_count; recursively
+  reject retained extensions .pdf, .html, .htm, and .xml; compute SHA-256
+  with Get-FileHash -Algorithm SHA256.
+outputs:
+  verification/wave29-s0-literature-audit/protocol-freeze.md:
+    sha256: 0ac1e394645dcc5433d72aba8dd82492bac032f7dd6e9047c847fa53211c29d5
+  verification/wave29-s0-literature-audit/query-ledger.json:
+    sha256: 923837b13066fdfe6db9362f5209ba722993e231ce7f0efbbc299be7cb0af970
+  verification/wave29-s0-literature-audit/source-metadata.json:
+    sha256: c8f98b437cb14d8d87b66d3b3ebeb4f1fbd9c176c94314fcc5119f929df50e13
+  verification/wave29-s0-literature-audit/audit.md:
+    sha256: b6946969ac2337ff5e0f02afe78ec19ae96f62d1af0a7a9c5c57298a75fb863f
+verdict:
+  exact_prior_art: NO_EXACT_PRIOR_RESULT_FOUND_IN_SEARCHED_SOURCES
+  novelty: UNKNOWN
+  current_target_status: NO_RESOLUTION_FOUND_IN_SEARCHED_SOURCES
+  broader_conway_99_claim: UNKNOWN
+limitations:
+  - A finite literature search cannot prove novelty or certify that a problem is globally open.
+  - Terminology, indexing delays, unpublished work, language, and source access may hide relevant work.
+  - One Crossref query was rate-limited with HTTP 429.
+  - Google Scholar, MathSciNet, and zbMATH were not comprehensively machine-audited.
+  - The local mathematical verifier's result is not promoted by this literature role.
+  - No downloaded paper, raw HTML, raw API response, or copyrighted full text was retained.

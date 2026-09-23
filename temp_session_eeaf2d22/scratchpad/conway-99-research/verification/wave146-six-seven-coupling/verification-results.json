@@ -1,0 +1,103 @@
+{
+  "claim_label": "VERIFIED",
+  "classes_with_removed_weights": 16,
+  "conclusion": "The complete one-root six-to-seven rational aggregate relaxation is exactly feasible at n3=4158, so it gives no stricter bound.",
+  "discovery_manifest_entries_checked": 14,
+  "discovery_manifest_sha256": "6a4f1125d877f4bc1dfcfe522dea66e95216416bd09550fa36aadbcbeb1f2b17",
+  "equalities_replayed": 8981,
+  "fixed_repaired_profile_identity": {
+    "absolute_defect": 3076026288,
+    "defect_left_minus_right": 3076026288,
+    "equation": "R_(38,8) = 2 R_(37,12)",
+    "verdict": "EXACTLY_REFUTED_FIXED_PROFILE_ONLY"
+  },
+  "format": "wave146-independent-verification-v1",
+  "h11": 16632,
+  "integer_matrix_nonzeros_reconstructed": 110269,
+  "maximum_denominator": 4,
+  "positive_rational_coordinates_replayed": 2998,
+  "removed_weights_by_source": {
+    "10": [
+      62
+    ],
+    "11": [
+      60
+    ],
+    "15": [
+      58,
+      62
+    ],
+    "17": [
+      62
+    ],
+    "18": [
+      62
+    ],
+    "19": [
+      56,
+      60,
+      64
+    ],
+    "20": [
+      64
+    ],
+    "22": [
+      60
+    ],
+    "26": [
+      60,
+      64
+    ],
+    "28": [
+      64
+    ],
+    "29": [
+      64
+    ],
+    "30": [
+      54,
+      58,
+      62,
+      66,
+      74
+    ],
+    "31": [
+      62,
+      66
+    ],
+    "33": [
+      66
+    ],
+    "44": [
+      64
+    ],
+    "52": [
+      62
+    ]
+  },
+  "root_condition_derivation": "For each u, |N_H(u) intersect P| <= 1 when u in P and <= 2 otherwise; for each u,v in P the old pair residual is positive.",
+  "root_filter_vs_direct_seven_graph_checks": 3968,
+  "root_orbit_types_reconstructed": 944,
+  "semantics": {
+    "automorphism_handling": "Canonical pattern coordinates may depend on a chosen isomorphism, but root links sum complete Aut(H) orbits, making the double count invariant.",
+    "graph_realization": "NOT_ESTABLISHED",
+    "necessary_for_every_graph": true,
+    "order_eight_overlap_consistency": "NOT_ESTABLISHED"
+  },
+  "six_weight_cells": 343,
+  "superseded_partial_freeze_sha256": "a783701cd4b1dd1b20c60f16985444836950a56e33b5b39de336d27efe06c88b",
+  "support_sha256": "f0596655578f0d09807b31a0aa339658f8a51f5ae4f98a82157002a3ac4c21d0",
+  "total_removed_weight_cells": 25,
+  "upstream_hashes": {
+    "attempts/wave141-bivariate-graph-code/exact-results.json": "351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e",
+    "attempts/wave144-sixset-odd-profile/exact-results.json": "6dbb544494511906ce6452eaa6addb20c8e3f8861abfd67d1a026d94baf2234b",
+    "attempts/wave21-six-vertex-lp/exact-results.json": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b",
+    "attempts/wave22-full-seven-deck/exact-results.json": "ca5d9d116f6a9d6e355600429652e2bf4474b73dcf281bbcb564420d820acbd2",
+    "attempts/wave22-full-seven-deck/witness.json": "d74453faa91e42abbe2343d428296818ae051be579305277eff6f113fe66c47d"
+  },
+  "upstream_seven_classes_revalidated": 208,
+  "variables": 13973,
+  "verdict": "PASS_RATIONAL_RELAXATION",
+  "wave144_endpoint_positive_cells": 65,
+  "wave144_endpoint_unsupported_cells": 0
+}

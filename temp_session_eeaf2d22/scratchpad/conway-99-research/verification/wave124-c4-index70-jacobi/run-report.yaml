@@ -1,0 +1,67 @@
+role: verifier
+date_utc: 2026-07-28T05:05:47Z
+git_commit: 127acd31ff7980d3d629009167a2bf7f95150b18
+claim_label: VERIFIED
+scope: >-
+  Conditional on the frozen verified lattice and shell inputs,
+  independently verify the sealed Wave 124 primitive C4 scalar Jacobi
+  reduction, exact q7-through-q10 coefficient semantics, Fricke/residue
+  system, tight-frame moments, and full-level J_22,10 basis/null boundary.
+inputs:
+  - path: attempts/wave124-c4-index70-jacobi/package-manifest.sha256
+    sha256: fbdaa5071229c921fdf652a91eaa895f57ce1d31f726cb4f465f0356a6dfec55
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave86-level7-exact/package-manifest.sha256
+    sha256: cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2
+  - path: verification/wave96-norm16-norm18-upper/package-manifest.sha256
+    sha256: 8b3f9f90de931dc152ccf1b9e0705409492a6c5eb5246643ddce55aad8afe6e9
+  - path: verification/wave101-all-rank-level7-lp/package-manifest.sha256
+    sha256: 79fd0331a936761f2394d58f835df80e41ad855cdf88660a2ccfd5841c5d7aba
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+  - path: verification/wave116-c4-jacobi-theta/package-manifest.sha256
+    sha256: e44afa352f51c192d6c5ac8584ccd6334dd69a3d11856f4ac0254283829bbfb8
+method: >-
+  Preinspection inventory freeze; clean-room exact rational reconstruction
+  of the primitive marking, divisibility, Fricke transform, residue DFT,
+  C4 frame, moments, and finite null; independent q3 weak-Jacobi-ring
+  expansion and rational polar elimination; exact basis and q1-row
+  comparison against the sealed q10 discovery; postinspection inventory
+  replay and unit tests.
+command: >-
+  python verification/wave124-c4-index70-jacobi/independent_verify.py
+  --verify --output
+  verification/wave124-c4-index70-jacobi/independent-results.json;
+  python verification/wave124-c4-index70-jacobi/independent_jacobi_audit.py
+  --verify
+  verification/wave124-c4-index70-jacobi/independent-jacobi-results.json;
+  python verification/wave124-c4-index70-jacobi/compare_sealed.py;
+  python -m unittest discover -s
+  verification/wave124-c4-index70-jacobi -p "test_*.py" -v
+outputs:
+  - path: verification/wave124-c4-index70-jacobi/independent-results.json
+    sha256: b77944d53ee01cc9a4db586ce10a03da27ababf7fb18a5cbee01f08838ed9570
+  - path: verification/wave124-c4-index70-jacobi/independent-jacobi-results.json
+    sha256: 4f244de815d406649df9f026cd8f115abddcd958ae6120b4356235ebeaed50e9
+  - path: verification/wave124-c4-index70-jacobi/comparison.json
+    sha256: ff511f18dceca5230a22c47ecb93e3771afeb1a7aa5b4c30c20be590cda976fb
+verdict: VERIFIED_WITH_CLARIFICATIONS
+clarifications:
+  - >-
+    The full-level 18-dimensional basis is not a basis of the whole
+    Gamma0(7) Jacobi space.
+  - >-
+    The oldform null directions are signed and do not prove unboundedness
+    in the positive graph-compatible cone.
+  - >-
+    The q10 coefficient interpretation uses the independently verified
+    Wave96 norm-20 unit-coordinate classification.
+  - >-
+    The support-clean degree-eight threshold first isolated here is marked
+    CANDIDATE and requires a separate verifier.
+limitations:
+  - The cited weak-Jacobi-ring theorem is used, not reproved.
+  - No whole-level-seven basis or component Sturm bound is constructed.
+  - No positive feasibility solve or exact dual upper certificate is present.
+  - Rank 28, rank 30, Conway-99, and novelty remain UNKNOWN.

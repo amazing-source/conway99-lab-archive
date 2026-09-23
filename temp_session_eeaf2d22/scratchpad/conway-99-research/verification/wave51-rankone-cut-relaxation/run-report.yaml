@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-27T18:45:00Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: VERIFIED
+scope: >-
+  Exact rational feasibility of a fixed 174-cut relaxation containing every
+  Wave45 cut, one Wave47 direction per frozen source/family pair, and one
+  Wave49 direction per family.
+inputs:
+  manifest: verification/wave51-rankone-cut-relaxation/input-freeze.sha256
+method: >-
+  Reconstruct Wave49 cuts from independently verified tensors; use floating
+  HiGHS only for active-set selection; solve the selected rank-209 system by
+  exact sparse rational RREF; independently substitute the stored fractions
+  into all equations, cuts, nonnegativity constraints, and y bounds.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave51-rankone-cut-relaxation\probe.py --compute
+outputs:
+  result:
+    path: verification/wave51-rankone-cut-relaxation/exact-result.json
+    sha256: 527656f5d2d6a03d71234dc0fb110422ddfade1ac8b5a1d175168e857073edfc
+result:
+  status: EXACTLY_FEASIBLE_RATIONAL_RELAXATION
+  wave44_equations_checked: 170
+  rank_one_cuts_checked: 174
+  witness_support: 136
+  y_h11_over_4: 4158
+  tight_cuts: 66
+  strictly_positive_cuts: 108
+  minimum_positive_slack: 133056
+  maximum_denominator_digits: 272
+  wave49_reconstruction_checks: 5691
+limitations:
+  - The witness is rational, not integral.
+  - Only one finite direction bundle is tested.
+  - The full cut region and full PSD system remain UNKNOWN.
+  - Endpoint n3=4158, graph construction, and a strict upper bound remain UNKNOWN or NOT_PROVED.

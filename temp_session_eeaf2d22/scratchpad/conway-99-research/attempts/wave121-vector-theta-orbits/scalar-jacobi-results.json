@@ -1,0 +1,191 @@
+{
+  "Fricke_Poisson": {
+    "index_change": "70 on K to 10 on L",
+    "normalized_rank28_formula": "Phi_K||W_7=-7^-3*Phi_L",
+    "raw_rank28_formula": "Phi_K(-1/(7tau),z/(7tau)) = -7^8*tau^22*exp(20*pi*i*z^2/tau)*Phi_L(tau,z)",
+    "scalar_specialization": "at z=0 this is the verified q=16 scalar Fricke relation"
+  },
+  "alternating_vector": {
+    "cycle_gram_u": [
+      [
+        "28/9",
+        "-8/9",
+        "1/9",
+        "-8/9"
+      ],
+      [
+        "-8/9",
+        "28/9",
+        "-8/9",
+        "1/9"
+      ],
+      [
+        "1/9",
+        "-8/9",
+        "28/9",
+        "-8/9"
+      ],
+      [
+        "-8/9",
+        "1/9",
+        "-8/9",
+        "28/9"
+      ]
+    ],
+    "definition": "d_C=sum_(i in C) epsilon_i*u_i",
+    "divisibility_in_L": 1,
+    "divisibility_reason": "div_L(d_C) divides 20; if it exceeded one, d_C/s would give nontrivial order prime to 7 in the 7-elementary group L*/L, or contradict primitivity",
+    "epsilon": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "gram_times_epsilon": [
+      "5",
+      "-5",
+      "5",
+      "-5"
+    ],
+    "membership": "d_C in M because epsilon is integral and has coordinate sum zero; hence d_C in L",
+    "norm_d": 20,
+    "primitive_in_L": true,
+    "primitive_reason": "d_C=k*e in even L would make 20/k^2 an even integer; no integer k>1 does"
+  },
+  "basis_LP_assessment": {
+    "exact_reduction_achieved": "the modular problem is reduced from the Wave116 four-variable determinant 1023942465 to 20 Fourier components, or 11 after evenness",
+    "proof_producing_full_basis_constructed": false,
+    "remaining_requirements": [
+      "construct the weight-43/2 20-component K/L Fricke module",
+      "prove a coefficient truncation or Sturm/valence bound",
+      "impose componentwise lattice positivity on both sides",
+      "derive an exact dual upper certificate at most 51975"
+    ],
+    "upper_bound_proved": false
+  },
+  "boundary": {
+    "Conway_99": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rank28_excluded": false
+  },
+  "claim_label": "DERIVED",
+  "format": "wave121-scalar-c4-jacobi-v1",
+  "frozen_inputs": {
+    "attempts/wave116-c4-jacobi-theta/package-manifest.sha256": "9c474c8fc6c04e382b7fd506997c7ec81cb5ea5fa38453e6f284271eda933d98",
+    "verification/wave112-c4-short-vector-incidence/package-manifest.sha256": "56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024",
+    "verification/wave116-c4-jacobi-theta/package-manifest.sha256": "e44afa352f51c192d6c5ac8584ccd6334dd69a3d11856f4ac0254283829bbfb8",
+    "verification/wave66-spherical-code-shift/package-manifest.sha256": "a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486",
+    "verification/wave71-modular-theta-extension/package-manifest.sha256": "0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237",
+    "verification/wave86-level7-exact/package-manifest.sha256": "cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2"
+  },
+  "incidence_coefficient": {
+    "K_Fourier_exponent": 28,
+    "counts": "antipodal alternating C4 incidences",
+    "ell": "sum epsilon_i*t_i",
+    "equivalence": "ell=4 iff t_C=(1,-1,1,-1)",
+    "gap": 837,
+    "q10_warning": "the coefficient at q^10 is a valid Jacobi coefficient, but ell=4 is not proved to isolate the alternating unit pattern there under the frozen inputs",
+    "rank28_lower": 52812,
+    "short_coordinate_alphabet": "{0,+1,-1} at norms 14,16,18",
+    "sufficient_upper_for_contradiction": 51975,
+    "target": "[q^7 zeta^28]+[q^8 zeta^28]+[q^9 zeta^28]"
+  },
+  "limitations": [
+    "Discovery cannot verify itself.",
+    "The truncated coefficient control is not a Jacobi form.",
+    "No complete half-integral-weight component basis is constructed.",
+    "The q10 coefficient has no frozen exact incidence interpretation.",
+    "No automorphism is assumed by summing one marking per C4."
+  ],
+  "markings": {
+    "K": {
+      "divisibility": 7,
+      "membership_reason": "d_C in L subset L* and K=sqrt(7)L*",
+      "norm": 140,
+      "ordinary_scalar_Jacobi_index": 70,
+      "pairing": "for x=sqrt(7)y in K, <x,b_C>=7*sum epsilon_i*t_i",
+      "primitive": true,
+      "vector": "b_C=sqrt(7)*d_C in K"
+    },
+    "L_Fricke_partner": {
+      "divisibility": 1,
+      "norm": 20,
+      "ordinary_scalar_Jacobi_index": 10,
+      "primitive": true,
+      "vector": "d_C in L"
+    },
+    "comparison_to_wave116": {
+      "index_reduction_factor": 9,
+      "old_K_index": 630,
+      "old_L_index": 90,
+      "old_norm": 1260,
+      "old_vector": "h_C=sum epsilon_i*g_i=3*b_C"
+    }
+  },
+  "scope": "conditional one-variable C4 Jacobi reduction in the rank-28 q=16 row; exact arithmetic and a truncated coefficient-cone null control, not a complete Jacobi basis",
+  "support": {
+    "all_q7_through_q10_targets_permitted": true,
+    "condition": "4*70*n-r^2>=0",
+    "margins": {
+      "10": 2016,
+      "7": 1176,
+      "8": 1456,
+      "9": 1736
+    },
+    "target_r": 28
+  },
+  "theta_decomposition": {
+    "Fricke_component_equation_rank28": "sqrt(-i*tau/20)*sum_s exp(-pi*i*s*t/10)*H_s(-1/(7tau)) = -7^8*tau^22*G_t(tau)",
+    "K_basis_identity": "theta_(70,7s)(tau,z)=theta_(10,s)(7tau,7z)",
+    "K_live_residues": [
+      0,
+      7,
+      14,
+      21,
+      28,
+      35,
+      42,
+      49,
+      56,
+      63,
+      70,
+      77,
+      84,
+      91,
+      98,
+      105,
+      112,
+      119,
+      126,
+      133
+    ],
+    "K_naive_residue_count": 140,
+    "K_pairing_divisibility": 7,
+    "L_basis": "theta_(10,t)(tau,z), t mod 20",
+    "after_z_to_minus_z_symmetry": 11,
+    "component_weight": "43/2",
+    "reduced_component_count": 20,
+    "theta_S_formula": "theta_(10,s)(-1/tau,z/tau)=sqrt(-i*tau/20)*exp(20*pi*i*z^2/tau)*sum_t exp(-pi*i*s*t/10)*theta_(10,t)(tau,z)"
+  },
+  "truncated_coefficient_cone": {
+    "constraints_checked": [
+      "nonnegative integer coefficients",
+      "c(n,r)=c(n,-r)",
+      "r is divisible by 7",
+      "4*70*n-r^2>=0",
+      "sum_r c(n,r)=2079*x_n",
+      "x7=5868,x8=x9=0 from the verified scalar formal control"
+    ],
+    "exceeds_contradiction_threshold": true,
+    "explicit_control": {
+      "c(0,0)": 2079,
+      "c(7,-28)": 52812,
+      "c(7,0)": 12093948,
+      "c(7,28)": 52812
+    },
+    "interpretation": "elementary theta-decomposition support and positivity do not prove the needed upper bound",
+    "not_claimed": "this truncated table is not a Jacobi form, lattice, graph, or all-orders Fricke-compatible component vector",
+    "q7_row_total": 12199572,
+    "target_coefficient_sum": 52812
+  }
+}

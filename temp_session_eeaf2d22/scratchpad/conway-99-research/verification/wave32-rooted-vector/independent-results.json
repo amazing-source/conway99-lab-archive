@@ -1,0 +1,943 @@
+{
+  "claim_label": "VERIFIED",
+  "discovery_chronology": {
+    "v1": {
+      "defect": "partial-control metadata said remaining degrees 8,12,14; independent reconstruction gave 10,12,14",
+      "frozen_hashes": {
+        "agents/2026-07-24-wave32-rooted-proof.md": "ded47e87b82ec9a6c897b90b23e9dcac5c957678ecb0e01dcc92d16b4d4cc927",
+        "attempts/wave32-rooted-vector/artifact-manifest.sha256": "a2dd5896871dda4d0dc54b56d9cb081993079ad03241113e1a36bb0ab972d291",
+        "attempts/wave32-rooted-vector/exact-results.json": "6ff9844994c2605266feaad96b4a4ebaf193b5be437bd9e4b21dbf7b98860d99",
+        "attempts/wave32-rooted-vector/exact_check.py": "41e077321fa691a3916da50e992a09d43d4f2d252cae39030bc2d7663bd60e97",
+        "attempts/wave32-rooted-vector/failed-routes.md": "5a45f61c3033bdd19b6f9f651931efa0a1852fc96e97fc2a9e0525d90724a706",
+        "attempts/wave32-rooted-vector/input-freeze.sha256": "778473a5e3c872bf2c8d539b165d58d2d1329dd1224b515f6012fd628499b289",
+        "attempts/wave32-rooted-vector/run-report.yaml": "19d7aa1e6da04d6de618e14901121fd9543b081688ccc5f7aae85cf95634abcf",
+        "attempts/wave32-rooted-vector/test_exact_check.py": "38b7023a66c4b3305cfb080d27cbf39dd5330dab79eaa85eb7c0fcbd3104dd76"
+      },
+      "status": "SUPERSEDED_PREPUBLICATION_AFTER_NONBLOCKING_DEFECT"
+    },
+    "v2": {
+      "manifest_replay": {
+        "entries": {
+          "agents/2026-07-24-wave32-rooted-proof.md": "04990231e3b42cded363e39ffea771556e52ec66fe03a97164ae99f40ddbefe0",
+          "attempts/wave32-rooted-vector/correction-ledger.md": "dd95a3d5af1156bfbdac89f2eac0decd15426b2a2261ff334a115f72ab69a2ce",
+          "attempts/wave32-rooted-vector/exact-results.json": "9fa31703b5c4721476b1b88f217d7455615c0d92c0d6db7f150abadfc069c2a0",
+          "attempts/wave32-rooted-vector/exact_check.py": "c753cbda03f8db54f9ad618040c87084cdafa3ce151a5810f72428815a511642",
+          "attempts/wave32-rooted-vector/failed-routes.md": "444b36cb1bd3d1f604687b2a7d3d3c855fa1590689d0cc1ff18f9da288f17c19",
+          "attempts/wave32-rooted-vector/input-freeze.sha256": "778473a5e3c872bf2c8d539b165d58d2d1329dd1224b515f6012fd628499b289",
+          "attempts/wave32-rooted-vector/run-report.yaml": "6ca9ddcbc94b23cc64c0bf0ebb2a4a7ecab413a8db579680dc785ebceee3c137",
+          "attempts/wave32-rooted-vector/test_exact_check.py": "7f0528ab5485d78c33f24d05d9cd773ed5a5951c44052e4a3489075d33d7c7cc"
+        },
+        "entry_count": 8,
+        "manifest_sha256": "ba6c7099e06e24fe2feee4d19021dac9ddf49cbfe99acdd54f905a6c40728b8e",
+        "status": "PASS"
+      },
+      "repair_replay": {
+        "hostile_q3": {
+          "coordinate_bound_abs_values": [
+            0,
+            1,
+            2
+          ],
+          "eigenvalue_magnitude": 3,
+          "surviving_distribution_count": 3
+        },
+        "ledger_retained_v1_hashes": {
+          "attempts/wave32-rooted-vector/artifact-manifest.sha256": "a2dd5896871dda4d0dc54b56d9cb081993079ad03241113e1a36bb0ab972d291",
+          "attempts/wave32-rooted-vector/exact-results.json": "6ff9844994c2605266feaad96b4a4ebaf193b5be437bd9e4b21dbf7b98860d99",
+          "attempts/wave32-rooted-vector/exact_check.py": "41e077321fa691a3916da50e992a09d43d4f2d252cae39030bc2d7663bd60e97",
+          "attempts/wave32-rooted-vector/test_exact_check.py": "38b7023a66c4b3305cfb080d27cbf39dd5330dab79eaa85eb7c0fcbd3104dd76"
+        },
+        "remaining_degree_distribution": {
+          "10": 42,
+          "12": 28,
+          "14": 15
+        },
+        "status": "PASS"
+      },
+      "repairs": [
+        "remaining degree distribution is 10^42,12^28,14^15",
+        "hostile q=3 metadata is parameter-derived"
+      ],
+      "status": "CORRECTED_BYTES_VERIFIED"
+    }
+  },
+  "frozen_inputs": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "agents/2026-07-24-wave32-rooted-proof.md": "04990231e3b42cded363e39ffea771556e52ec66fe03a97164ae99f40ddbefe0",
+    "attempts/wave32-rooted-vector/artifact-manifest.sha256": "ba6c7099e06e24fe2feee4d19021dac9ddf49cbfe99acdd54f905a6c40728b8e",
+    "attempts/wave32-rooted-vector/correction-ledger.md": "dd95a3d5af1156bfbdac89f2eac0decd15426b2a2261ff334a115f72ab69a2ce",
+    "attempts/wave32-rooted-vector/exact-results.json": "9fa31703b5c4721476b1b88f217d7455615c0d92c0d6db7f150abadfc069c2a0",
+    "attempts/wave32-rooted-vector/exact_check.py": "c753cbda03f8db54f9ad618040c87084cdafa3ce151a5810f72428815a511642",
+    "attempts/wave32-rooted-vector/failed-routes.md": "444b36cb1bd3d1f604687b2a7d3d3c855fa1590689d0cc1ff18f9da288f17c19",
+    "attempts/wave32-rooted-vector/input-freeze.sha256": "778473a5e3c872bf2c8d539b165d58d2d1329dd1224b515f6012fd628499b289",
+    "attempts/wave32-rooted-vector/run-report.yaml": "6ca9ddcbc94b23cc64c0bf0ebb2a4a7ecab413a8db579680dc785ebceee3c137",
+    "attempts/wave32-rooted-vector/test_exact_check.py": "7f0528ab5485d78c33f24d05d9cd773ed5a5951c44052e4a3489075d33d7c7cc",
+    "verification/2026-07-22-n3-side-incidence-audit.md": "9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787",
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+    "verification/wave28-glue-discriminant/audit.md": "5c1dc7978d571a9471837b45a36663c7c457b6434800776501e4967146956b86",
+    "verification/wave31-sign-commutant/audit.md": "f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0"
+  },
+  "hostile_mu_3_design_count": {
+    "column_sums": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "complement": "the unique 2-(7,3,1) Fano-plane design",
+    "count_rows": [
+      {
+        "coarse_opposite_common_neighbor_lower": 42,
+        "lambda_mu_upper": 63,
+        "passes": true,
+        "same_sign_edges": 0
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 49,
+        "lambda_mu_upper": 61,
+        "passes": true,
+        "same_sign_edges": 1
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 56,
+        "lambda_mu_upper": 59,
+        "passes": true,
+        "same_sign_edges": 2
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 63,
+        "lambda_mu_upper": 57,
+        "passes": false,
+        "same_sign_edges": 3
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 70,
+        "lambda_mu_upper": 55,
+        "passes": false,
+        "same_sign_edges": 4
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 77,
+        "lambda_mu_upper": 53,
+        "passes": false,
+        "same_sign_edges": 5
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 84,
+        "lambda_mu_upper": 51,
+        "passes": false,
+        "same_sign_edges": 6
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 91,
+        "lambda_mu_upper": 49,
+        "passes": false,
+        "same_sign_edges": 7
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 98,
+        "lambda_mu_upper": 47,
+        "passes": false,
+        "same_sign_edges": 8
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 105,
+        "lambda_mu_upper": 45,
+        "passes": false,
+        "same_sign_edges": 9
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 112,
+        "lambda_mu_upper": 43,
+        "passes": false,
+        "same_sign_edges": 10
+      }
+    ],
+    "cross_matrix": [
+      [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "matrix_equation": "C C^T=2I+2J",
+    "mu": 3,
+    "passing_same_sign_edge_counts": [
+      0,
+      1,
+      2
+    ],
+    "row_sums": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "same_side_intersections": [
+      2
+    ]
+  },
+  "hostile_norm_198_residue_screen": {
+    "cases": [
+      {
+        "absolute_sum_lower_bound": 33,
+        "accepted_by_integer_norm_bound": true,
+        "norm_k_squared": 33,
+        "residue": -1,
+        "sum_k": 33
+      },
+      {
+        "absolute_sum_lower_bound": 0,
+        "accepted_by_integer_norm_bound": true,
+        "norm_k_squared": 22,
+        "residue": 0,
+        "sum_k": 0
+      },
+      {
+        "absolute_sum_lower_bound": 33,
+        "accepted_by_integer_norm_bound": true,
+        "norm_k_squared": 33,
+        "residue": 1,
+        "sum_k": -33
+      }
+    ],
+    "norm_z_squared": 198
+  },
+  "hostile_partial_control": {
+    "candidate_v1_correction": [
+      10,
+      12,
+      14
+    ],
+    "candidate_v1_stated_remaining_degrees": [
+      8,
+      12,
+      14
+    ],
+    "correct_remaining_degrees": {
+      "no_support_neighbor": 14,
+      "support_edge_completion": 12,
+      "support_nonedge_completion": 10
+    },
+    "current_degree_histogram": {
+      "0": 15,
+      "14": 14,
+      "2": 28,
+      "4": 42
+    },
+    "discovery_v2_remaining_degree_distribution": {
+      "10": 42,
+      "12": 28,
+      "14": 15
+    },
+    "edge_count": 210,
+    "outside_support_degree_histogram": {
+      "0": 15,
+      "2": 70
+    },
+    "singleton_triangle_matching_edges": 42,
+    "status": "PARTIAL_LOCAL_CONTROL_NOT_EXTENDIBILITY_EVIDENCE",
+    "support_degrees": [
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "support_pair_common_neighbors": {
+      "edge": [
+        1
+      ],
+      "nonedge": [
+        2
+      ]
+    },
+    "vertex_count": 99
+  },
+  "hostile_relaxed_extreme_alphabet": {
+    "pair_alphabet": [
+      -2,
+      -1,
+      0
+    ],
+    "psd_counts": {
+      "1": 1,
+      "2": 3,
+      "3": 11,
+      "4": 60
+    },
+    "size_four_survives": true,
+    "size_three_gram": [
+      [
+        2,
+        -2,
+        0
+      ],
+      [
+        -2,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  "integer_minus_four_amplitude": {
+    "minus_four_allowed_absolute_values": [
+      0,
+      1
+    ],
+    "minus_four_survivors": [
+      {
+        "-1": 7,
+        "0": 85,
+        "1": 7
+      }
+    ],
+    "minus_three_allowed_absolute_values": [
+      0,
+      1,
+      2
+    ],
+    "minus_three_hostile_witness": {
+      "-1": 6,
+      "0": 88,
+      "1": 4,
+      "2": 1
+    },
+    "minus_three_survivor_count": 3,
+    "necessary_inequalities": [
+      "14-a^2 >= (2q-1)|a| for eigenvalue -q",
+      "q*max_abs <= positive_mass <= 7"
+    ],
+    "raw_distribution_count": 12
+  },
+  "matrix_only_extreme_fibers": {
+    "pair_alphabet": [
+      -2,
+      -1
+    ],
+    "psd_counts": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 0
+    },
+    "size_four_survives": false,
+    "size_three_gram": [
+      [
+        2,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        2
+      ]
+    ]
+  },
+  "mod_3_residue_screen": {
+    "cases": [
+      {
+        "absolute_sum_lower_bound": 33,
+        "accepted_by_integer_norm_bound": false,
+        "norm_k_squared": 25,
+        "residue": -1,
+        "sum_k": 33
+      },
+      {
+        "absolute_sum_lower_bound": 0,
+        "accepted_by_integer_norm_bound": true,
+        "norm_k_squared": 14,
+        "residue": 0,
+        "sum_k": 0
+      },
+      {
+        "absolute_sum_lower_bound": 33,
+        "accepted_by_integer_norm_bound": false,
+        "norm_k_squared": 25,
+        "residue": 1,
+        "sum_k": -33
+      }
+    ],
+    "norm_z_squared": 126
+  },
+  "obligations": [
+    {
+      "id": "frozen_bytes",
+      "status": "PASS"
+    },
+    {
+      "id": "discovery_v2_manifest_replay",
+      "status": "PASS"
+    },
+    {
+      "id": "primitive_XT_surjectivity_and_y_in_MZ",
+      "status": "PASS"
+    },
+    {
+      "id": "NM_mod_3_transport",
+      "status": "PASS"
+    },
+    {
+      "id": "nonzero_residue_exclusion",
+      "status": "PASS"
+    },
+    {
+      "id": "minus_four_amplitude_and_7_plus_7",
+      "status": "PASS"
+    },
+    {
+      "id": "Fano_complement_support",
+      "status": "PASS"
+    },
+    {
+      "id": "outside_census_and_21_189_21_pattern",
+      "status": "PASS"
+    },
+    {
+      "id": "matrix_only_32_to_16",
+      "status": "PASS"
+    },
+    {
+      "id": "tensor_Schur_A4_constraints",
+      "status": "PASS"
+    },
+    {
+      "id": "root_reflection_scope",
+      "status": "PASS"
+    },
+    {
+      "correction": "8 must be 10; exact remaining degrees are 10,12,14",
+      "id": "candidate_v1_partial_control_remaining_degree_text",
+      "impact": "NONBLOCKING_HISTORICAL_REPAIRED_IN_V2",
+      "status": "FAIL"
+    },
+    {
+      "id": "discovery_v2_partial_control_remaining_degrees",
+      "status": "PASS"
+    },
+    {
+      "id": "discovery_v2_hostile_q3_metadata",
+      "status": "PASS"
+    },
+    {
+      "id": "partial_control_extendibility",
+      "status": "UNKNOWN"
+    },
+    {
+      "id": "root_exclusion",
+      "status": "UNKNOWN"
+    },
+    {
+      "id": "rooted_endpoint",
+      "status": "UNKNOWN"
+    },
+    {
+      "id": "n3_708",
+      "status": "UNKNOWN"
+    },
+    {
+      "id": "Conway_99",
+      "status": "UNKNOWN"
+    },
+    {
+      "id": "novelty",
+      "status": "UNKNOWN"
+    }
+  ],
+  "outside_and_triangle_census": {
+    "identity": "N^T k=y, so each triangle value is its signed support sum",
+    "outside_support_incidences": 140,
+    "outside_types": {
+      "no_support_neighbor": 15,
+      "support_edge_completion": 28,
+      "support_nonedge_completion": 42
+    },
+    "root_triangle_pattern": {
+      "minus_1": 21,
+      "plus_1": 21,
+      "zero": 189
+    },
+    "triangle_types": {
+      "disjoint_from_support": 161,
+      "one_negative_support": 21,
+      "one_positive_support": 21,
+      "two_opposite_support": 28
+    }
+  },
+  "overall_status": "VERIFIED_SCOPED_V2_WITH_V1_CORRECTION_RETAINED",
+  "primitive_image_bridge": {
+    "explicit_transpose_images": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "hostile_nonprimitive_maximal_minor_gcd": 2,
+    "hostile_target_has_integral_preimage": false,
+    "hostile_target_r": [
+      1,
+      0
+    ],
+    "primitive_maximal_minor_gcd": 1,
+    "root_image_consequence": "choose X^T c=r, then y=XSr=XSX^T c=Mc",
+    "theorem_bridge": "For a primitive column lattice, Smith invariants are all one; the same invariants govern X^T, hence X^T is onto."
+  },
+  "projector_incidence_transport": {
+    "J_over_3_times_incidence_column": 1,
+    "derived_identity": "NM=(9I-3A)N+J_(99x231)",
+    "incidence_column_sum": 3,
+    "mod_3_column": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "projector_values": {
+      "-4": "1",
+      "14": "0",
+      "3": "0"
+    },
+    "transported_root": {
+      "Az": "-4z",
+      "N_transpose_z": "3y",
+      "norm_z_squared": 126,
+      "sum_z": 0,
+      "z": "Ny"
+    }
+  },
+  "root_pattern_census": {
+    "counts": {
+      "extreme_fiber": 16,
+      "moment_only": 46,
+      "no_extreme_coordinates": 1,
+      "tensor_energy": 32
+    },
+    "final_pattern": {
+      "cube_sum": 0,
+      "minus_1": 21,
+      "minus_2": 0,
+      "plus_1": 21,
+      "plus_2": 0,
+      "zero": 189
+    }
+  },
+  "root_reflection": {
+    "commutant_identity": "y in im(E) => H_r E=E H_r and H_r M H_r=M",
+    "coordinate_involution_error": "0",
+    "coordinate_reflection": "I-yy^T/21",
+    "factorization_identity": "y^T X=21r^T => H_r X=X-y r^T",
+    "hostile_denominator_42_error": "-1/42",
+    "not_coordinate_permutation_witness": "off-diagonal support entries are +/-1/21",
+    "vertex_involution_error": "0",
+    "vertex_reflection": "I-zz^T/63=I-kk^T/7"
+  },
+  "schema_version": 1,
+  "support_design": {
+    "column_sums": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "complement": "the unique 2-(7,3,1) Fano-plane design",
+    "count_rows": [
+      {
+        "coarse_opposite_common_neighbor_lower": 42,
+        "lambda_mu_upper": 42,
+        "passes": true,
+        "same_sign_edges": 0
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 49,
+        "lambda_mu_upper": 41,
+        "passes": false,
+        "same_sign_edges": 1
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 56,
+        "lambda_mu_upper": 40,
+        "passes": false,
+        "same_sign_edges": 2
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 63,
+        "lambda_mu_upper": 39,
+        "passes": false,
+        "same_sign_edges": 3
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 70,
+        "lambda_mu_upper": 38,
+        "passes": false,
+        "same_sign_edges": 4
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 77,
+        "lambda_mu_upper": 37,
+        "passes": false,
+        "same_sign_edges": 5
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 84,
+        "lambda_mu_upper": 36,
+        "passes": false,
+        "same_sign_edges": 6
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 91,
+        "lambda_mu_upper": 35,
+        "passes": false,
+        "same_sign_edges": 7
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 98,
+        "lambda_mu_upper": 34,
+        "passes": false,
+        "same_sign_edges": 8
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 105,
+        "lambda_mu_upper": 33,
+        "passes": false,
+        "same_sign_edges": 9
+      },
+      {
+        "coarse_opposite_common_neighbor_lower": 112,
+        "lambda_mu_upper": 32,
+        "passes": false,
+        "same_sign_edges": 10
+      }
+    ],
+    "cross_matrix": [
+      [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "matrix_equation": "C C^T=2I+2J",
+    "mu": 2,
+    "passing_same_sign_edge_counts": [
+      0
+    ],
+    "row_sums": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "same_side_intersections": [
+      2
+    ]
+  },
+  "tensor_schur_A4": {
+    "A4_identity": "y^T(MWM)y=(My)^T W(My)=441 y^T W y",
+    "H2_mod_4": 2,
+    "corresponding_f": [
+      141,
+      140,
+      139,
+      138,
+      137,
+      136,
+      135,
+      134,
+      133,
+      132
+    ],
+    "double_contraction_bound": "23g2<=1800",
+    "first_contraction_bound": "23H2<=1800",
+    "hostile_odd_D_diagonal_changes_H2_mod_4_to": 0,
+    "incidence_constants": {
+      "fixed_Np_A_Np": 1512,
+      "g2_formula": "1134-8f",
+      "norm_Np_squared": 294,
+      "sum_Np": 126
+    },
+    "minimum_trace_lift_norm_factor": "1/15",
+    "orthogonal_dimension": 43,
+    "possible_H2": [
+      2,
+      6,
+      10,
+      14,
+      18,
+      22,
+      26,
+      30,
+      34,
+      38,
+      42,
+      46,
+      50,
+      54,
+      58,
+      62,
+      66,
+      70,
+      74,
+      78
+    ],
+    "possible_g2": [
+      6,
+      14,
+      22,
+      30,
+      38,
+      46,
+      54,
+      62,
+      70,
+      78
+    ],
+    "tensor_budget": "60 >= (46/15)w2+3A2"
+  }
+}

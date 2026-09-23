@@ -1,0 +1,3246 @@
+{
+  "scope": "Six triangular orbits in the free C3 branch; only the integral-Gram-kernel first-moment filter.",
+  "construction": "G0 = 6I + 6J - 5F - F^2; D = E - FE - EF over F3.",
+  "source": "Candidates generated from NetworkX atlas; completeness and nonisomorphism rechecked without NetworkX via all 6! vertex permutations.",
+  "cases": [
+    {
+      "atlas6_index": 0,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [],
+      "graph6": "E???",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mask": 0
+    },
+    {
+      "atlas6_index": 1,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "E??G",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mask": 16384
+    },
+    {
+      "atlas6_index": 2,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EC?G",
+      "nullspace": [
+        [
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mask": 16388
+    },
+    {
+      "atlas6_index": 3,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "graph6": "EI??",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "mask": 96
+    },
+    {
+      "atlas6_index": 4,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        -21600
+      ],
+      "mask": 608
+    },
+    {
+      "atlas6_index": 5,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "graph6": "ECa?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        3
+      ],
+      "mask": 28
+    },
+    {
+      "atlas6_index": 6,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "E?EG",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "mask": 20496
+    },
+    {
+      "atlas6_index": 7,
+      "status": "not_psd",
+      "witness": [
+        [
+          1,
+          3,
+          4,
+          5
+        ],
+        -600
+      ],
+      "mask": 6400
+    },
+    {
+      "atlas6_index": 8,
+      "status": "psd",
+      "nullity": 2,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EK?G",
+      "nullspace": [
+        [
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "constraints": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mask": 16420
+    },
+    {
+      "atlas6_index": 9,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        -23760
+      ],
+      "mask": 16412
+    },
+    {
+      "atlas6_index": 10,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EC_W",
+      "nullspace": [
+        [
+          3,
+          -4,
+          -4,
+          3,
+          3,
+          3
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mask": 24588
+    },
+    {
+      "atlas6_index": 11,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "E?Bo",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        4
+      ],
+      "mask": 10512
+    },
+    {
+      "atlas6_index": 12,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "graph6": "EBc?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        3
+      ],
+      "mask": 4680
+    },
+    {
+      "atlas6_index": 13,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "EY?O",
+      "nullspace": [
+        [
+          -1,
+          0,
+          -1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "mask": 8290
+    },
+    {
+      "atlas6_index": 14,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        -2400
+      ],
+      "mask": 624
+    },
+    {
+      "atlas6_index": 15,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        -1200
+      ],
+      "mask": 60
+    },
+    {
+      "atlas6_index": 16,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        -600
+      ],
+      "mask": 20528
+    },
+    {
+      "atlas6_index": 17,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        -1115
+      ],
+      "mask": 8266
+    },
+    {
+      "atlas6_index": 18,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        5,
+        -1
+      ],
+      "mask": 24604
+    },
+    {
+      "atlas6_index": 19,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EBCW",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        4
+      ],
+      "mask": 29248
+    },
+    {
+      "atlas6_index": 20,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "E@cW",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "mask": 29192
+    },
+    {
+      "atlas6_index": 21,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        -600
+      ],
+      "mask": 4712
+    },
+    {
+      "atlas6_index": 22,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "graph6": "EHs?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        1,
+        2,
+        2,
+        2,
+        3
+      ],
+      "mask": 4776
+    },
+    {
+      "atlas6_index": 23,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "graph6": "Ehc?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mask": 4649
+    },
+    {
+      "atlas6_index": 24,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "E?Bw",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        5
+      ],
+      "mask": 26896
+    },
+    {
+      "atlas6_index": 25,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "graph6": "EhP?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        4
+      ],
+      "mask": 929
+    },
+    {
+      "atlas6_index": 26,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "EsCO",
+      "nullspace": [
+        [
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        3,
+        3
+      ],
+      "mask": 12295
+    },
+    {
+      "atlas6_index": 27,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "EiGO",
+      "nullspace": [
+        [
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "mask": 9313
+    },
+    {
+      "atlas6_index": 28,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          3,
+          5
+        ],
+        -515
+      ],
+      "mask": 4696
+    },
+    {
+      "atlas6_index": 29,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        -1200
+      ],
+      "mask": 16993
+    },
+    {
+      "atlas6_index": 30,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        -1115
+      ],
+      "mask": 21009
+    },
+    {
+      "atlas6_index": 31,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          3,
+          5
+        ],
+        -2780
+      ],
+      "mask": 6412
+    },
+    {
+      "atlas6_index": 32,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        -1080
+      ],
+      "mask": 24620
+    },
+    {
+      "atlas6_index": 33,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        3,
+        -1
+      ],
+      "mask": 28700
+    },
+    {
+      "atlas6_index": 34,
+      "status": "negative_entry",
+      "witness": [
+        3,
+        4,
+        -1
+      ],
+      "mask": 5832
+    },
+    {
+      "atlas6_index": 35,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -1
+      ],
+      "mask": 1768
+    },
+    {
+      "atlas6_index": 36,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EOkW",
+      "nullspace": [
+        [
+          -1,
+          0,
+          -1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "mask": 29706
+    },
+    {
+      "atlas6_index": 37,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "graph6": "Elc?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "mask": 4653
+    },
+    {
+      "atlas6_index": 38,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "graph6": "ErW?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        0,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "mask": 1731
+    },
+    {
+      "atlas6_index": 39,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "E?Fw",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        5
+      ],
+      "mask": 30992
+    },
+    {
+      "atlas6_index": 40,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "EC{O",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mask": 13452
+    },
+    {
+      "atlas6_index": 41,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "E@dW",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        1,
+        3,
+        3,
+        3
+      ],
+      "mask": 29448
+    },
+    {
+      "atlas6_index": 42,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        -600
+      ],
+      "mask": 5304
+    },
+    {
+      "atlas6_index": 43,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "graph6": "E]a?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        4
+      ],
+      "mask": 126
+    },
+    {
+      "atlas6_index": 44,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          2,
+          3,
+          5
+        ],
+        -515
+      ],
+      "mask": 9442
+    },
+    {
+      "atlas6_index": 45,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "E]_O",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "mask": 8302
+    },
+    {
+      "atlas6_index": 46,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "EQKo",
+      "nullspace": [
+        [
+          -1,
+          1,
+          -1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "mask": 15426
+    },
+    {
+      "atlas6_index": 47,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        -980
+      ],
+      "mask": 28679
+    },
+    {
+      "atlas6_index": 48,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        5,
+        -1
+      ],
+      "mask": 24636
+    },
+    {
+      "atlas6_index": 49,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        -1100
+      ],
+      "mask": 4728
+    },
+    {
+      "atlas6_index": 50,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          3,
+          5
+        ],
+        -515
+      ],
+      "mask": 1752
+    },
+    {
+      "atlas6_index": 51,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "graph6": "Ehd?",
+      "nullspace": [
+        [
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "mask": 4905
+    },
+    {
+      "atlas6_index": 52,
+      "status": "psd",
+      "nullity": 2,
+      "constraint_rank": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EhEG",
+      "nullspace": [
+        [
+          -1,
+          -1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1,
+          0,
+          1
+        ]
+      ],
+      "constraints": [
+        [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "degrees": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mask": 21041
+    },
+    {
+      "atlas6_index": 53,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        -800
+      ],
+      "mask": 17016
+    },
+    {
+      "atlas6_index": 54,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 631
+    },
+    {
+      "atlas6_index": 55,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -2
+      ],
+      "mask": 1763
+    },
+    {
+      "atlas6_index": 56,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        3,
+        -1
+      ],
+      "mask": 4841
+    },
+    {
+      "atlas6_index": 57,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        3,
+        -1
+      ],
+      "mask": 2887
+    },
+    {
+      "atlas6_index": 58,
+      "status": "negative_entry",
+      "witness": [
+        3,
+        4,
+        -1
+      ],
+      "mask": 22216
+    },
+    {
+      "atlas6_index": 59,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -1
+      ],
+      "mask": 4001
+    },
+    {
+      "atlas6_index": 60,
+      "status": "negative_entry",
+      "witness": [
+        2,
+        3,
+        -1
+      ],
+      "mask": 8814
+    },
+    {
+      "atlas6_index": 61,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -1
+      ],
+      "mask": 18152
+    },
+    {
+      "atlas6_index": 62,
+      "status": "negative_entry",
+      "witness": [
+        4,
+        5,
+        -1
+      ],
+      "mask": 20353
+    },
+    {
+      "atlas6_index": 63,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 16999
+    },
+    {
+      "atlas6_index": 64,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EtaG",
+      "nullspace": [
+        [
+          0,
+          0,
+          -1,
+          -1,
+          1,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        5
+      ],
+      "mask": 16927
+    },
+    {
+      "atlas6_index": 65,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "graph6": "Eht?",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        2,
+        2,
+        2,
+        3,
+        4
+      ],
+      "mask": 5033
+    },
+    {
+      "atlas6_index": 66,
+      "status": "not_psd",
+      "witness": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        -500
+      ],
+      "mask": 8847
+    },
+    {
+      "atlas6_index": 67,
+      "status": "negative_entry",
+      "witness": [
+        3,
+        4,
+        -1
+      ],
+      "mask": 5848
+    },
+    {
+      "atlas6_index": 68,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EXSg",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        2,
+        2,
+        2,
+        3,
+        4
+      ],
+      "mask": 23202
+    },
+    {
+      "atlas6_index": 69,
+      "status": "not_psd",
+      "witness": [
+        [
+          1,
+          3,
+          4,
+          5
+        ],
+        -515
+      ],
+      "mask": 4909
+    },
+    {
+      "atlas6_index": 70,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -1
+      ],
+      "mask": 1784
+    },
+    {
+      "atlas6_index": 71,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "graph6": "Exd?",
+      "nullspace": [
+        [
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "mask": 4907
+    },
+    {
+      "atlas6_index": 72,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EYOw",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "mask": 26850
+    },
+    {
+      "atlas6_index": 73,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        -1100
+      ],
+      "mask": 13010
+    },
+    {
+      "atlas6_index": 74,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          3,
+          5
+        ],
+        -515
+      ],
+      "mask": 21106
+    },
+    {
+      "atlas6_index": 75,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "ElEG",
+      "nullspace": [
+        [
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "mask": 21045
+    },
+    {
+      "atlas6_index": 76,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "EheO",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "mask": 12857
+    },
+    {
+      "atlas6_index": 77,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        -2480
+      ],
+      "mask": 28711
+    },
+    {
+      "atlas6_index": 78,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 2919
+    },
+    {
+      "atlas6_index": 79,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        4,
+        -1
+      ],
+      "mask": 5805
+    },
+    {
+      "atlas6_index": 80,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 639
+    },
+    {
+      "atlas6_index": 81,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 8815
+    },
+    {
+      "atlas6_index": 82,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -2
+      ],
+      "mask": 3811
+    },
+    {
+      "atlas6_index": 83,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        3,
+        -1
+      ],
+      "mask": 5097
+    },
+    {
+      "atlas6_index": 84,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        3,
+        -1
+      ],
+      "mask": 21225
+    },
+    {
+      "atlas6_index": 85,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -2
+      ],
+      "mask": 2923
+    },
+    {
+      "atlas6_index": 86,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        3,
+        -1
+      ],
+      "mask": 4857
+    },
+    {
+      "atlas6_index": 87,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        3,
+        -1
+      ],
+      "mask": 2895
+    },
+    {
+      "atlas6_index": 88,
+      "status": "negative_entry",
+      "witness": [
+        3,
+        5,
+        -1
+      ],
+      "mask": 31394
+    },
+    {
+      "atlas6_index": 89,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 17015
+    },
+    {
+      "atlas6_index": 90,
+      "status": "negative_entry",
+      "witness": [
+        3,
+        5,
+        -1
+      ],
+      "mask": 11083
+    },
+    {
+      "atlas6_index": 91,
+      "status": "negative_entry",
+      "witness": [
+        3,
+        4,
+        -1
+      ],
+      "mask": 22232
+    },
+    {
+      "atlas6_index": 92,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        2,
+        -1
+      ],
+      "mask": 6715
+    },
+    {
+      "atlas6_index": 93,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "graph6": "E?~o",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        2,
+        2,
+        2,
+        2,
+        4,
+        4
+      ],
+      "mask": 15768
+    },
+    {
+      "atlas6_index": 94,
+      "status": "negative_entry",
+      "witness": [
+        2,
+        4,
+        -1
+      ],
+      "mask": 24113
+    },
+    {
+      "atlas6_index": 95,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EyUG",
+      "nullspace": [
+        [
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "mask": 20723
+    },
+    {
+      "atlas6_index": 96,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "graph6": "Ele_",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "mask": 6717
+    },
+    {
+      "atlas6_index": 97,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -1
+      ],
+      "mask": 18168
+    },
+    {
+      "atlas6_index": 98,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EhdW",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "mask": 29481
+    },
+    {
+      "atlas6_index": 99,
+      "status": "not_psd",
+      "witness": [
+        [
+          0,
+          1,
+          3,
+          4
+        ],
+        -915
+      ],
+      "mask": 22321
+    },
+    {
+      "atlas6_index": 100,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        5,
+        -1
+      ],
+      "mask": 6969
+    },
+    {
+      "atlas6_index": 101,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EhUg",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "mask": 23217
+    },
+    {
+      "atlas6_index": 102,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 5869
+    },
+    {
+      "atlas6_index": 103,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 3943
+    },
+    {
+      "atlas6_index": 104,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 2927
+    },
+    {
+      "atlas6_index": 105,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        4,
+        -1
+      ],
+      "mask": 22189
+    },
+    {
+      "atlas6_index": 106,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        3,
+        -1
+      ],
+      "mask": 31458
+    },
+    {
+      "atlas6_index": 107,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 19303
+    },
+    {
+      "atlas6_index": 108,
+      "status": "negative_entry",
+      "witness": [
+        4,
+        5,
+        -3
+      ],
+      "mask": 32152
+    },
+    {
+      "atlas6_index": 109,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        2,
+        -2
+      ],
+      "mask": 6719
+    },
+    {
+      "atlas6_index": 110,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 20731
+    },
+    {
+      "atlas6_index": 111,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 20979
+    },
+    {
+      "atlas6_index": 112,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 17023
+    },
+    {
+      "atlas6_index": 113,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        3,
+        -1
+      ],
+      "mask": 13117
+    },
+    {
+      "atlas6_index": 114,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        3,
+        -1
+      ],
+      "mask": 21118
+    },
+    {
+      "atlas6_index": 115,
+      "status": "negative_entry",
+      "witness": [
+        2,
+        3,
+        -2
+      ],
+      "mask": 22134
+    },
+    {
+      "atlas6_index": 116,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 6971
+    },
+    {
+      "atlas6_index": 117,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        2,
+        -1
+      ],
+      "mask": 15770
+    },
+    {
+      "atlas6_index": 118,
+      "status": "negative_entry",
+      "witness": [
+        3,
+        5,
+        -1
+      ],
+      "mask": 31289
+    },
+    {
+      "atlas6_index": 119,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        5,
+        -1
+      ],
+      "mask": 6973
+    },
+    {
+      "atlas6_index": 120,
+      "status": "negative_entry",
+      "witness": [
+        2,
+        4,
+        -1
+      ],
+      "mask": 24117
+    },
+    {
+      "atlas6_index": 121,
+      "status": "psd",
+      "nullity": 1,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "EtTg",
+      "nullspace": [
+        [
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          1
+        ]
+      ],
+      "constraints": [],
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "mask": 23431
+    },
+    {
+      "atlas6_index": 122,
+      "status": "psd",
+      "nullity": 0,
+      "constraint_rank": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "graph6": "ElUg",
+      "nullspace": [],
+      "constraints": [],
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "mask": 23221
+    },
+    {
+      "atlas6_index": 123,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 5871
+    },
+    {
+      "atlas6_index": 124,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 22253
+    },
+    {
+      "atlas6_index": 125,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 5885
+    },
+    {
+      "atlas6_index": 126,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 32153
+    },
+    {
+      "atlas6_index": 127,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        3,
+        -2
+      ],
+      "mask": 29673
+    },
+    {
+      "atlas6_index": 128,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        2,
+        -1
+      ],
+      "mask": 22142
+    },
+    {
+      "atlas6_index": 129,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        2,
+        -1
+      ],
+      "mask": 24182
+    },
+    {
+      "atlas6_index": 130,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 21497
+    },
+    {
+      "atlas6_index": 131,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        3,
+        -1
+      ],
+      "mask": 15165
+    },
+    {
+      "atlas6_index": 132,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 7099
+    },
+    {
+      "atlas6_index": 133,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        5,
+        -1
+      ],
+      "mask": 28611
+    },
+    {
+      "atlas6_index": 134,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        5,
+        -1
+      ],
+      "mask": 31545
+    },
+    {
+      "atlas6_index": 135,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 22387
+    },
+    {
+      "atlas6_index": 136,
+      "status": "negative_entry",
+      "witness": [
+        2,
+        3,
+        -2
+      ],
+      "mask": 22390
+    },
+    {
+      "atlas6_index": 137,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        2,
+        -1
+      ],
+      "mask": 30963
+    },
+    {
+      "atlas6_index": 138,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 6127
+    },
+    {
+      "atlas6_index": 139,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 12263
+    },
+    {
+      "atlas6_index": 140,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 22269
+    },
+    {
+      "atlas6_index": 141,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 26351
+    },
+    {
+      "atlas6_index": 142,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 31219
+    },
+    {
+      "atlas6_index": 143,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        2,
+        -1
+      ],
+      "mask": 24538
+    },
+    {
+      "atlas6_index": 144,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 22007
+    },
+    {
+      "atlas6_index": 145,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 16283
+    },
+    {
+      "atlas6_index": 146,
+      "status": "negative_entry",
+      "witness": [
+        1,
+        2,
+        -1
+      ],
+      "mask": 24501
+    },
+    {
+      "atlas6_index": 147,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 30447
+    },
+    {
+      "atlas6_index": 148,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -3
+      ],
+      "mask": 4095
+    },
+    {
+      "atlas6_index": 149,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 32667
+    },
+    {
+      "atlas6_index": 150,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 22519
+    },
+    {
+      "atlas6_index": 151,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -1
+      ],
+      "mask": 30587
+    },
+    {
+      "atlas6_index": 152,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -3
+      ],
+      "mask": 22527
+    },
+    {
+      "atlas6_index": 153,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 30591
+    },
+    {
+      "atlas6_index": 154,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -2
+      ],
+      "mask": 32763
+    },
+    {
+      "atlas6_index": 155,
+      "status": "negative_entry",
+      "witness": [
+        0,
+        1,
+        -3
+      ],
+      "mask": 32767
+    }
+  ]
+}

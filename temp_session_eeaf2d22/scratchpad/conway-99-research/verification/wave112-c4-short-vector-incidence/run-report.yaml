@@ -1,0 +1,33 @@
+role: verifier
+date_utc: 2026-07-28T04:08:33Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: VERIFIED
+scope: >-
+  Conditional on the frozen verified signed-unit support reductions and
+  rank-28 theta inequality, independently audit the Wave 112 four-cycle
+  incidence reduction and rooted partition.
+inputs:
+  - path: attempts/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: f343b7d7b0bfb1ca8c7226946bcbe8b1d8c6169249911fea8493611187081c28
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave74-short-vector-closure/package-manifest.sha256
+    sha256: eb19bd74e6e6017186f458bcd74390d231bafa9edfa92ad9f7f81e2a1d566612
+  - path: verification/wave78-short-vector-packing/package-manifest.sha256
+    sha256: f96134457f81fa7b66d3de73086323f640ec1259f49d134e77584d33056f766b
+  - path: verification/wave86-level7-exact/package-manifest.sha256
+    sha256: cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2
+method: >-
+  Clean-room double counts, exhaustive aggregate codegree histograms,
+  antipodal parity audit, and independent rooted-anchor incidence equations.
+command: >-
+  python -B -m unittest discover -s
+  verification/wave112-c4-short-vector-incidence -p "test_*.py" -v
+outputs:
+  - path: verification/wave112-c4-short-vector-incidence/independent-results.json
+  - path: verification/wave112-c4-short-vector-incidence/verification-report.md
+limitations:
+  - The universal cap of 25 antipodal extensions is not proved.
+  - Rank 28 is not excluded.
+  - Conway-99 remains UNKNOWN.
+  - Literature novelty remains UNKNOWN.

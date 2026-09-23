@@ -1,0 +1,45 @@
+role: verifier
+date_utc: 2026-07-29T04:37:01Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: independently verify the
+  integer-face exclusions Q0=7037,7038, the additive local four-fibre
+  loss 3s<=delta, and the resulting lower bound Q>=7039.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256: eb833bf4ad503fb2243882704492f6bf836525f4b619de8a1979ffc6f0f785c9
+  verification/wave198-orientation-lift-verifier/package-manifest.sha256: 9d76bf2a0f5fa1ec2d3d532446c7bd249fd780e96c47de159244ceda790d7432
+  attempts/wave200-two-face-gluing-proof-a/package-manifest.sha256: b909a16d3324f76e394322e6058f844bcf3bcc61409d567fdfd6f50ab53aced4
+  attempts/wave200-two-face-gluing-proof-b-audit/package-manifest.sha256: ca6e8763c085a1789a72390c6f6cf02a65c31c3235481d8b2bca833996aebeab
+method: >-
+  Independent exact symbolic incidence, coefficientwise slack
+  domination, simple 3-uniform pair capacity, four-vertex fibre loss,
+  two fixed Hilton--Milner equality formulas, and sealed source
+  comparison. No graph, configuration, cover, SAT, LP, enumeration,
+  isomorphism, or brute-force search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave200-two-face-gluing-verifier\independent_check.py
+  --verify
+  verification\wave200-two-face-gluing-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave200-two-face-gluing-verifier\test_independent_check.py
+outputs:
+  verification/wave200-two-face-gluing-verifier/audit.md: 23240794a0ffe9412542f5b7823e8dc6a3e951bc06cfe81fd738afba9e691978
+  verification/wave200-two-face-gluing-verifier/independent_check.py: 5a30c8ecb49d7e75ec8760a8e1530275ec80ceab127bb7f8990ad8498ac68902
+  verification/wave200-two-face-gluing-verifier/independent-result-freeze.sha256: 97da013bab054c925cae3932df1e740efba86f258960f3e4a30102863f9aba68
+  verification/wave200-two-face-gluing-verifier/independent-results.json: f5c367e9eb6d6905ce04e1d00031574d7874a491473b7d47b85a9be8a159bb03
+  verification/wave200-two-face-gluing-verifier/input-freeze.sha256: e2f8b11d4525189ae8d7e856611f0eaec09100182c73be0862c3c8a935fbe74e
+  verification/wave200-two-face-gluing-verifier/protocol.md: a69483ddb69aee4662bd82a68aa24275e9be7b0f0819cb831b3d5f959af15636
+  verification/wave200-two-face-gluing-verifier/README.md: 09b5ef6b4ce66ec97dbc4cea158f8bd22277631d66a0faaa5b0796ebada68a02
+  verification/wave200-two-face-gluing-verifier/test_independent_check.py: 9df73c5ed0ef43a78bec0584f97937e396a312248587ad6f98b4f73d512f652f
+limitations:
+  - Conditional on the frozen prism-free rank-11 endpoint.
+  - The proof-A distinct-fibre sentence requires the explicitly recorded
+    simple-family pair-degree-at-most-five justification.
+  - The coarse mechanism does not exclude Q0=7039.
+  - No graph, code, cover, endpoint contradiction, or strict original
+    n3 improvement is obtained.
+  - Rank 11, endpoint existence, external novelty, and Conway-99 remain
+    UNKNOWN.

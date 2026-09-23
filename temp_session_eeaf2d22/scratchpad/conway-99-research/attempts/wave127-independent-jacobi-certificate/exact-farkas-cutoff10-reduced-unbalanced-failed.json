@@ -1,0 +1,44 @@
+{
+  "attempts": [
+    {
+      "active": 126,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-06
+    },
+    {
+      "active": 126,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-07
+    },
+    {
+      "active": 126,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-08
+    },
+    {
+      "active": 126,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-09
+    },
+    {
+      "active": 126,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-10
+    }
+  ],
+  "classification": "EXACT_FARKAS_RECOVERY_FAILED",
+  "dual_diagnostic": {
+    "dual_affine_rank": 221,
+    "dual_free_dimension": 32,
+    "dual_multiplier_variables": 253,
+    "exact_reduction": {
+      "deduplicated_inequalities": 126,
+      "independent_equalities": 127,
+      "original_equalities": 282,
+      "original_inequalities": 320
+    },
+    "reduced_float_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "reduced_float_status": 0,
+    "reduced_float_success": true
+  }
+}

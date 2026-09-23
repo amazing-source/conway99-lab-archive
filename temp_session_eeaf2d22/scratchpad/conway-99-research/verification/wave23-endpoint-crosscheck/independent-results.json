@@ -1,0 +1,95 @@
+{
+  "claim_label": "VERIFIED",
+  "cofactor_parity_controls": {
+    "finite_cases_checked": 9,
+    "general_reason": "alternating forms have even rank"
+  },
+  "conclusion": {
+    "conditional_induced_C6_lower_bound": 209994,
+    "conditional_n3_lower_bound": 708,
+    "n3_705": "EXCLUDED_CONDITIONALLY",
+    "novelty": "NOT_ASSESSED",
+    "target_status": "UNKNOWN"
+  },
+  "determinant_index": {
+    "det_B_factorization": "h*det(Q)",
+    "det_Q_minimum": 5,
+    "det_Q_mod_4": 1,
+    "final_pairs": [],
+    "h_mod_4_survivors": [
+      1
+    ],
+    "h_one_excluded": true,
+    "h_upper": 8,
+    "smooth_h_at_most_8": [
+      1,
+      3,
+      7
+    ]
+  },
+  "hostile_controls": {
+    "admit_det_Q_three_with_det_B_mod_4_retained": {
+      "candidate_pair": [
+        9,
+        3,
+        27
+      ],
+      "status": "REJECTED_BY_det_B_mod_4"
+    },
+    "omit_det_Q_and_det_B_residues": {
+      "survivor": [
+        9,
+        3,
+        27
+      ]
+    },
+    "omit_h_one_obstruction_count": 10,
+    "omit_smoothness": [
+      5,
+      5,
+      25
+    ],
+    "trace_square_54": {
+      "det_B_cap": 45,
+      "survivor": [
+        9,
+        5,
+        45
+      ]
+    }
+  },
+  "pair_product_maclaurin": {
+    "derivation": "AM-GM on all 946 pair products",
+    "e2_upper": 1122,
+    "gap": 275207088848909643261540552061708906,
+    "integer_det_B_cap": 42,
+    "left_51_pow_22": 36859027642628666340203552228411828601,
+    "normalized": "51/43",
+    "pair_count": 946,
+    "right_43_pow_23": 37134234731477575983465092780473537507,
+    "strict_det_B_upper": 43
+  },
+  "scaled_dual": {
+    "determinant": "21^44/det(G)=h",
+    "determinant_mod_4": 1,
+    "even_diagonal": "odd principal cofactors of even G vanish modulo 2",
+    "h_one_excluded": true,
+    "integral_from_inclusion": "21L* subset L",
+    "matrix": "S=21*G^{-1}",
+    "symmetric_positive_definite": true
+  },
+  "scope": "conditional exclusion of n3=705 from frozen Wave20/Wave21 premises",
+  "trace_square": {
+    "cauchy_lower": {
+      "denominator": 11,
+      "numerator": 576
+    },
+    "minimum_trace_A4_squared": 26460,
+    "minimum_trace_B2": 60,
+    "rank": 44,
+    "trace_B": 48,
+    "trace_B2_mod_8": 4,
+    "trace_C": 2,
+    "trace_C2_mod_2": 0
+  }
+}

@@ -1,0 +1,52 @@
+role: construction
+date_utc: 2026-07-27T03:12:52Z
+git_commit: 6b28af70c67f062d687251494a047debe70a246f
+claim_label: CANDIDATE
+scope: >-
+  Universal three-fibre characteristic-seven rank consequence for a
+  hypothetical srg(99,14,1,2), plus a bounded fully specified local-block
+  scout.
+inputs:
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: verification/wave39-edge-local-rank/independent-results.json
+    sha256: 85b8d36d6ce5ebd638e957e1731864eff75f38405935f5e51ad5b629edea5966
+  - path: verification/wave39-edge-local-rank/README.md
+    sha256: ed749e5788c19a23629cee9f331cce0ef161500d9cb0d939eef3211085c0a405
+method: >-
+  Exhaust all 10,395 pulled-back perfect matchings, construct and validate
+  their partition conjugators, compute exact F_7 kernel projections for all
+  144 third-fibre signatures, enumerate every observed-line-spanned subspace
+  below the first permutation-supporting dimension, and check support by
+  exact bipartite matching. Separately restore the third-fibre matching in a
+  deterministic bounded local-block scout.
+command: |
+  .\.venv\Scripts\python.exe -B attempts\wave40-exact-coupling-model\exact_check.py --verify attempts\wave40-exact-coupling-model\exact-results.json --certificate attempts\wave40-exact-coupling-model\subspace-certificate.json
+  .\.venv\Scripts\python.exe -B attempts\wave40-exact-coupling-model\full_block_scout.py --verify attempts\wave40-exact-coupling-model\full-block-scout-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave40-exact-coupling-model -p "test_*.py" -v
+outputs:
+  - path: attempts/wave40-exact-coupling-model/exact-results.json
+    sha256: 8613c05c94a9a5f88c45eddbeccbf4c8906c3783aab25747e439f50423bde9ce
+  - path: attempts/wave40-exact-coupling-model/subspace-certificate.json
+    sha256: 90b8eb3f88424ffe6ae7618a3063620a2dedff604ad2fac10894fb6278f17c9a
+  - path: attempts/wave40-exact-coupling-model/exact_check.py
+    sha256: 21ccb29b78811fadb3d5c58f69c1d32d63cc32e8cef83a040f2a077e608632d8
+  - path: attempts/wave40-exact-coupling-model/test_exact_check.py
+    sha256: f5cf999c2df20d06080c092fc1fcf22aaaa104a36bb84b8b554864bba3b8a822
+  - path: attempts/wave40-exact-coupling-model/full_block_scout.py
+    sha256: cccdd9fc420103364ece17b2fa07eb223392d6b340175462fa16ac3f50969e50
+  - path: attempts/wave40-exact-coupling-model/full-block-scout-results.json
+    sha256: 9e03c6d3a465bbbebbe0837910732aeaedfe64a3a595da047f1255458d9ddcc3
+  - path: attempts/wave40-exact-coupling-model/test_full_block_scout.py
+    sha256: dc0c631f1b3b9e1d4611f7525f867eb0ba2b48c35f818708b951c439bbb7572c
+  - path: attempts/wave40-exact-coupling-model/README.md
+    sha256: 22ff6766dd594ff1b657066cb90fff3e397a8c498fac0f0fdfc920542d226233
+  - path: attempts/wave40-exact-coupling-model/failed-routes.md
+    sha256: 0242d0ba891e5754fe384c82932347f0d8ea3bc6417e46f19b9af833364a58e6
+  - path: attempts/wave40-exact-coupling-model/input-freeze.sha256
+    sha256: b1f4e05f25dc75546c45a4579728c2e7c5e1b37174c52414ce13199f62b8cca8
+limitations:
+  - Discovery cannot verify itself; clean-room verification is required.
+  - The candidate rank floor does not exclude the prism-free endpoint.
+  - The full-block sample is bounded and supplies no exhaustive rank bound.
+  - No graph, upper bound below n3=4158, Conway-99 resolution, or novelty claim is supplied.

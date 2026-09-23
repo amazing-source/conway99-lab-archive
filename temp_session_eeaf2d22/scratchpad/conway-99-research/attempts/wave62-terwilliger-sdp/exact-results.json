@@ -1,0 +1,298 @@
+{
+  "automorphism_policy": "C2 wreath S7 acts only to average universally valid certificates; no automorphism of a hypothetical completed graph is assumed.",
+  "bounded_hadamard_schur_scan": {
+    "averaged_matrices": 1949,
+    "endpoint_block_inequalities": 23388,
+    "interval_checked": "all rational h in [0,1] by affine endpoint checking",
+    "max_total_degree": 24,
+    "negative_eigenvalues": 0,
+    "negative_records": [],
+    "positive_eigenvalues": 23316,
+    "primitive_idempotent_multipliers": 6,
+    "smallest_positive": "2097151996002572622721189252991/9499526251094051785686150082270420436779008",
+    "smallest_positive_location": {
+      "block_multiplicity": 14,
+      "h_endpoint": 0,
+      "multiplier": 0,
+      "p3_power": 0,
+      "pm4_power": 24
+    },
+    "zero_eigenvalues": 72
+  },
+  "claim_label": "DERIVED",
+  "endpoint_orbit_parameter": {
+    "integer_range": [
+      0,
+      42
+    ],
+    "known_wave3_identity_recovered": "2*y + e_opposite_sign = 84",
+    "meaning": "number of selected residual edges joining the two opposite signed labels on one K7 support",
+    "name": "y",
+    "new_upper_bound_from_this_identity": false,
+    "relation_edge_counts": {
+      "disjoint_supports": "336+y",
+      "one_support_index_opposite_sign": "84-2*y",
+      "one_support_index_same_sign": "84",
+      "same_support_hamming_1": "0",
+      "same_support_hamming_2": "y"
+    }
+  },
+  "format": "wave62-rooted-terwilliger-sdp-v1",
+  "limitations": [
+    "This is discovery-agent work and is not independently verified.",
+    "The recovered orbit identity is already present in verified Wave 3 relation algebra.",
+    "The Schur scan is exhaustive only for the declared monomial family and degree cutoff.",
+    "Averaged feasibility is not a residual graph or a lift to the 99-vertex SRG.",
+    "No endpoint exclusion, strict upper bound, construction, novelty, or priority claim follows."
+  ],
+  "linear_spectral_projector_sdp": {
+    "endpoint_samples": {
+      "0": {
+        "b_bar_eigenvalues": [
+          "12",
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "p3_trace": "40",
+        "p3_weights": [
+          "0",
+          "0",
+          "0",
+          "4/7",
+          "4/7",
+          "4/7"
+        ],
+        "pm4_weights": [
+          "0",
+          "0",
+          "0",
+          "3/7",
+          "3/7",
+          "3/7"
+        ],
+        "variance_eigenvalues": [
+          "0",
+          "0",
+          "0",
+          "12",
+          "12",
+          "12"
+        ]
+      },
+      "21": {
+        "b_bar_eigenvalues": [
+          "12",
+          "-2",
+          "0",
+          "3/4",
+          "1/2",
+          "-3/5"
+        ],
+        "p3_trace": "40",
+        "p3_weights": [
+          "0",
+          "0",
+          "0",
+          "19/28",
+          "9/14",
+          "17/35"
+        ],
+        "pm4_weights": [
+          "0",
+          "0",
+          "0",
+          "9/28",
+          "5/14",
+          "18/35"
+        ],
+        "variance_eigenvalues": [
+          "0",
+          "0",
+          "0",
+          "171/16",
+          "45/4",
+          "306/25"
+        ]
+      },
+      "42": {
+        "b_bar_eigenvalues": [
+          "12",
+          "-2",
+          "0",
+          "3/2",
+          "1",
+          "-6/5"
+        ],
+        "p3_trace": "40",
+        "p3_weights": [
+          "0",
+          "0",
+          "0",
+          "11/14",
+          "5/7",
+          "2/5"
+        ],
+        "pm4_weights": [
+          "0",
+          "0",
+          "0",
+          "3/14",
+          "2/7",
+          "3/5"
+        ],
+        "variance_eigenvalues": [
+          "0",
+          "0",
+          "0",
+          "33/4",
+          "10",
+          "294/25"
+        ]
+      }
+    },
+    "exact_feasibility": "The invariant PSD constraints P3_bar>=0 and E_kernel-P3_bar>=0 hold for every real y in [0,42].",
+    "fixed_scaffold_eigenspaces": {
+      "multiplicity_6": "B eigenvalue -2",
+      "multiplicity_7": "B eigenvalue 0"
+    },
+    "p3_entry_table": {
+      "diagonal": "10/21",
+      "disjoint_supports": {
+        "edge": "13/105",
+        "nonedge": "-2/105"
+      },
+      "one_support_index_opposite_sign": {
+        "edge": "2/15",
+        "nonedge": "-1/105"
+      },
+      "one_support_index_same_sign": {
+        "edge": "3/35",
+        "nonedge": "-2/35"
+      },
+      "same_support_hamming_1": {
+        "edge": "2/21",
+        "nonedge": "-1/21"
+      },
+      "same_support_hamming_2": {
+        "edge": "1/7",
+        "nonedge": "0"
+      }
+    },
+    "p3_nonedge_or_diagonal_coefficients": [
+      "10/21",
+      "-1/21",
+      "0",
+      "-2/35",
+      "-1/105",
+      "-2/105"
+    ],
+    "pm4_nonedge_or_diagonal_coefficients": [
+      "5/14",
+      "-1/28",
+      "0",
+      "-1/56",
+      "1/56",
+      "1/28"
+    ],
+    "rank_40_projector_formula": "P3=(B+4I-16E_1-2E_6-4E_7)/7",
+    "residual_spectrum": [
+      12,
+      3,
+      0,
+      -2,
+      -4
+    ],
+    "strict_endpoint_exclusion": false
+  },
+  "result": {
+    "disposition": "EXACT_NULL_RESULT_FOR_THIS_RELAXATION",
+    "endpoint_n3_4158": "UNKNOWN",
+    "graph_constructed": false,
+    "next_missing_layer": "two-root stabilizer blocks coupling actual edge choices, or triangle-root flags retaining prism compatibility",
+    "proof_producing_reduction": "The one-point invariant SDP diagonalizes into six exact rational scalar blocks; every y=0,...,42 survives.",
+    "strict_n3_upper_bound": "NOT_OBTAINED"
+  },
+  "role": "proof_b",
+  "rooted_signed_edge_scheme": {
+    "eigenmatrix": [
+      [
+        1,
+        2,
+        1,
+        20,
+        20,
+        40
+      ],
+      [
+        1,
+        2,
+        1,
+        6,
+        6,
+        -16
+      ],
+      [
+        1,
+        0,
+        -1,
+        10,
+        -10,
+        0
+      ],
+      [
+        1,
+        2,
+        1,
+        -4,
+        -4,
+        4
+      ],
+      [
+        1,
+        -2,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        -2,
+        2,
+        0
+      ]
+    ],
+    "intersection_tensor_sha256": "44574bd2abfb7a909c85b2f52aacd72e9e73c84981d9d48da112a481e299b2ff",
+    "multiplicities": [
+      1,
+      6,
+      7,
+      14,
+      21,
+      35
+    ],
+    "order": 84,
+    "relation_names": [
+      "identity",
+      "same_support_hamming_1",
+      "same_support_hamming_2",
+      "one_support_index_same_sign",
+      "one_support_index_opposite_sign",
+      "disjoint_supports"
+    ],
+    "valencies": [
+      1,
+      2,
+      1,
+      20,
+      20,
+      40
+    ]
+  },
+  "scope": "Prism-free endpoint n3=4158: scaffold-symmetry averaging of residual spectral projectors and a bounded Schur/Terwilliger family."
+}

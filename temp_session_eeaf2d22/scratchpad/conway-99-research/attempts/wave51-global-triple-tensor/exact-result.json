@@ -1,0 +1,470 @@
+{
+  "associativity_diagnostic": {
+    "failure_count_over_625_ordered_index_tests": 100,
+    "first_failure": {
+      "indices_i_j_m_k": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "left_association": 81,
+      "right_association": 153
+    },
+    "interpretation": "The feasible tensor is an aggregate relaxation point, not the intersection algebra of an association scheme."
+  },
+  "checks": {
+    "K_spectral_arithmetic": true,
+    "S_spectral_arithmetic": true,
+    "free_physical_memory_at_start_at_least_percent": 20.0,
+    "global_balance_equations_checked": 125,
+    "identity_entries_checked": 25,
+    "local_tables_checked": 5,
+    "memory_floor_percent": 20.0,
+    "parameter_family_point": {
+      "a": 288,
+      "f": 0,
+      "i": 288
+    },
+    "slices_integral": true,
+    "tensor_nonnegative": true,
+    "triple_orientation_divisibility": true
+  },
+  "claim_boundary": {
+    "association_scheme_realization": "REFUTED_FOR_DISPLAYED_AVERAGES_ONLY",
+    "conway_99": "UNKNOWN",
+    "global_symmetric_triple_count_relaxation": "FEASIBLE_EXACT_CANDIDATE",
+    "novelty": "UNKNOWN",
+    "prism_free_endpoint": "UNKNOWN"
+  },
+  "endpoint_input": {
+    "K_spectrum": {
+      "-3": 132,
+      "0": 44,
+      "18": 1,
+      "7": 54
+    },
+    "M_identification": "M = 4I - S = 21E_0 (previous projector)",
+    "S_definition": "K^2 - 17I - 4K - J = B - D",
+    "S_polynomial": "S^2 + 13S - 68I = 0",
+    "S_spectrum": {
+      "-17": 44,
+      "4": 187
+    },
+    "fixed_row_disjoint_q_distribution": {
+      "0": 32,
+      "1": 144,
+      "2": 36
+    },
+    "graph_triangle_count": 231,
+    "prism_count": 0
+  },
+  "format": "wave51-global-triple-tensor-v1",
+  "limitations": [
+    "This is a discovery-agent certificate and is not independently verified.",
+    "The tensor records only averaged ordered-triple counts.",
+    "It does not assign local tables consistently to the 231 triangle vertices.",
+    "It does not satisfy association-scheme associativity.",
+    "Higher-order quadruple consistency, realizability, and graph adjacency are absent.",
+    "A feasible relaxation is not evidence that the endpoint graph exists.",
+    "No automorphism of a completed graph is assumed.",
+    "The prism-free endpoint and Conway-99 remain UNKNOWN."
+  ],
+  "local_average_tables_p_k_ij": {
+    "B": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        2,
+        8,
+        0,
+        8
+      ],
+      [
+        0,
+        8,
+        0,
+        16,
+        8
+      ],
+      [
+        0,
+        0,
+        16,
+        112,
+        16
+      ],
+      [
+        1,
+        8,
+        8,
+        16,
+        3
+      ]
+    ],
+    "C": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        24,
+        4
+      ],
+      [
+        1,
+        17,
+        24,
+        74,
+        28
+      ],
+      [
+        0,
+        0,
+        4,
+        28,
+        4
+      ]
+    ],
+    "D": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        9
+      ],
+      [
+        1,
+        9,
+        4,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        18,
+        108,
+        18
+      ],
+      [
+        0,
+        9,
+        0,
+        18,
+        9
+      ]
+    ],
+    "I": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        32,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        144,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        36
+      ]
+    ],
+    "K": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        5,
+        0,
+        8,
+        4
+      ],
+      [
+        0,
+        0,
+        16,
+        0,
+        16
+      ],
+      [
+        0,
+        8,
+        0,
+        136,
+        0
+      ],
+      [
+        0,
+        4,
+        16,
+        0,
+        16
+      ]
+    ]
+  },
+  "minimal_linear_system": {
+    "certificate_type": "one explicit integral point; no floating-point LP status used",
+    "constraints": [
+      "t is nonnegative and invariant under all index permutations",
+      "sum_j t_{ijk}=v_i v_k, with identity entries included",
+      "t_{11k}=v_k*(18,5,0,1,2)_k",
+      "t_{14k}-t_{12k}=4 v_k when k=K and zero otherwise",
+      "t_{44k}+t_{22k}-2t_{24k}=v_k*(68,0,13,0,-13)_k",
+      "the k=K slice has local row (1,5,0,8,4)"
+    ],
+    "variables": "symmetric t_{ijk}=v_k p^k_{ij}, 0<=i<=j<=k<=4 (35 variables before forced zeros)"
+  },
+  "normalized_symmetric_tensor_nonzero_entries": [
+    {
+      "relations": [
+        "I",
+        "I",
+        "I"
+      ],
+      "value": 1
+    },
+    {
+      "relations": [
+        "I",
+        "K",
+        "K"
+      ],
+      "value": 18
+    },
+    {
+      "relations": [
+        "I",
+        "D",
+        "D"
+      ],
+      "value": 32
+    },
+    {
+      "relations": [
+        "I",
+        "C",
+        "C"
+      ],
+      "value": 144
+    },
+    {
+      "relations": [
+        "I",
+        "B",
+        "B"
+      ],
+      "value": 36
+    },
+    {
+      "relations": [
+        "K",
+        "K",
+        "K"
+      ],
+      "value": 90
+    },
+    {
+      "relations": [
+        "K",
+        "K",
+        "C"
+      ],
+      "value": 144
+    },
+    {
+      "relations": [
+        "K",
+        "K",
+        "B"
+      ],
+      "value": 72
+    },
+    {
+      "relations": [
+        "K",
+        "D",
+        "D"
+      ],
+      "value": 288
+    },
+    {
+      "relations": [
+        "K",
+        "D",
+        "B"
+      ],
+      "value": 288
+    },
+    {
+      "relations": [
+        "K",
+        "C",
+        "C"
+      ],
+      "value": 2448
+    },
+    {
+      "relations": [
+        "K",
+        "B",
+        "B"
+      ],
+      "value": 288
+    },
+    {
+      "relations": [
+        "D",
+        "D",
+        "D"
+      ],
+      "value": 128
+    },
+    {
+      "relations": [
+        "D",
+        "D",
+        "C"
+      ],
+      "value": 576
+    },
+    {
+      "relations": [
+        "D",
+        "C",
+        "C"
+      ],
+      "value": 3456
+    },
+    {
+      "relations": [
+        "D",
+        "C",
+        "B"
+      ],
+      "value": 576
+    },
+    {
+      "relations": [
+        "D",
+        "B",
+        "B"
+      ],
+      "value": 288
+    },
+    {
+      "relations": [
+        "C",
+        "C",
+        "C"
+      ],
+      "value": 10656
+    },
+    {
+      "relations": [
+        "C",
+        "C",
+        "B"
+      ],
+      "value": 4032
+    },
+    {
+      "relations": [
+        "C",
+        "B",
+        "B"
+      ],
+      "value": 576
+    },
+    {
+      "relations": [
+        "B",
+        "B",
+        "B"
+      ],
+      "value": 108
+    }
+  ],
+  "relations": {
+    "meaning": {
+      "B": "disjoint triangles with two cross edges",
+      "C": "disjoint triangles with one cross edge",
+      "D": "disjoint triangles with zero cross edges",
+      "I": "equal triangles",
+      "K": "triangles sharing one graph vertex"
+    },
+    "order": [
+      "I",
+      "K",
+      "D",
+      "C",
+      "B"
+    ],
+    "valencies": [
+      1,
+      18,
+      32,
+      144,
+      36
+    ]
+  },
+  "result": {
+    "disposition": "NULL_RESULT_FOR_THIS_LINEAR_RELAXATION",
+    "exact_contradiction": false,
+    "positive_aggregate_control": true
+  }
+}

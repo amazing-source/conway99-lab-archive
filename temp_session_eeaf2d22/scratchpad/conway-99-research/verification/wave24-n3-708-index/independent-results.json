@@ -1,0 +1,685 @@
+{
+  "candidate_commit": "821b162f7ff31f92bd1982bc31164c6b767838f4",
+  "candidate_hashes": {
+    "agents/2026-07-23-wave24-n3-708-index-boundary.md": {
+      "actual": "461bbcff6399ae18c2764f68ea498b7eebba9780af0032b8e2e8fa18ca26af28",
+      "expected": "461bbcff6399ae18c2764f68ea498b7eebba9780af0032b8e2e8fa18ca26af28",
+      "matches": true
+    },
+    "attempts/wave24-n3-708-index/exact-results.json": {
+      "actual": "a4241cdeea64a8f6073037d564e72fb7ef545287d45aca4759cec6c31d26a463",
+      "expected": "a4241cdeea64a8f6073037d564e72fb7ef545287d45aca4759cec6c31d26a463",
+      "matches": true
+    },
+    "attempts/wave24-n3-708-index/exact_check.py": {
+      "actual": "60bec6067383de3d9b6ecf57a5ce2a532deaf4759cc65faf4c63a6b8ce98b709",
+      "expected": "60bec6067383de3d9b6ecf57a5ce2a532deaf4759cc65faf4c63a6b8ce98b709",
+      "matches": true
+    },
+    "attempts/wave24-n3-708-index/failed-routes.md": {
+      "actual": "2411d4012cc6bf3f1d2a82d63cdc1538a6ca815ad269604fc46cb72cd4d82efb",
+      "expected": "2411d4012cc6bf3f1d2a82d63cdc1538a6ca815ad269604fc46cb72cd4d82efb",
+      "matches": true
+    },
+    "attempts/wave24-n3-708-index/failed-runs.md": {
+      "actual": "c37aeaad4f3afdbb765fc0233a23f6735b93a904b504a8593c1fe5503a9b8715",
+      "expected": "c37aeaad4f3afdbb765fc0233a23f6735b93a904b504a8593c1fe5503a9b8715",
+      "matches": true
+    },
+    "attempts/wave24-n3-708-index/input-freeze.sha256": {
+      "actual": "4353375bbbfc58d382b048066aec388dec5d5ff84a41e426ea01dbb10ffbb7af",
+      "expected": "4353375bbbfc58d382b048066aec388dec5d5ff84a41e426ea01dbb10ffbb7af",
+      "matches": true
+    },
+    "attempts/wave24-n3-708-index/run-report.yaml": {
+      "actual": "7be3708665f8dc56fdd5fe32b8a0da07ef64c3147551043d75cf1631f2a12c13",
+      "expected": "7be3708665f8dc56fdd5fe32b8a0da07ef64c3147551043d75cf1631f2a12c13",
+      "matches": true
+    },
+    "attempts/wave24-n3-708-index/test_exact_check.py": {
+      "actual": "adfa00d30a5db9ec0dc30bbd4d028689edd03bbba154535e05c1b7e4df76ed75",
+      "expected": "adfa00d30a5db9ec0dc30bbd4d028689edd03bbba154535e05c1b7e4df76ed75",
+      "matches": true
+    }
+  },
+  "claim_label": "VERIFIED",
+  "determinant_index": {
+    "candidate_values": [
+      9,
+      21,
+      49,
+      81,
+      189,
+      441,
+      729,
+      1029
+    ],
+    "det_B_cap": 6561,
+    "det_Q_floor": 5,
+    "h_cap": 1312,
+    "rows": [
+      {
+        "detQ_max_one_mod_four": 729,
+        "detQ_min": 5,
+        "h": 9,
+        "rank_F3_M": 42,
+        "rank_F7_M": 44,
+        "v3_h": 2,
+        "v7_h": 0
+      },
+      {
+        "detQ_max_one_mod_four": 309,
+        "detQ_min": 5,
+        "h": 21,
+        "rank_F3_M": 43,
+        "rank_F7_M": 43,
+        "v3_h": 1,
+        "v7_h": 1
+      },
+      {
+        "detQ_max_one_mod_four": 133,
+        "detQ_min": 5,
+        "h": 49,
+        "rank_F3_M": 44,
+        "rank_F7_M": 42,
+        "v3_h": 0,
+        "v7_h": 2
+      },
+      {
+        "detQ_max_one_mod_four": 81,
+        "detQ_min": 5,
+        "h": 81,
+        "rank_F3_M": 40,
+        "rank_F7_M": 44,
+        "v3_h": 4,
+        "v7_h": 0
+      },
+      {
+        "detQ_max_one_mod_four": 33,
+        "detQ_min": 5,
+        "h": 189,
+        "rank_F3_M": 41,
+        "rank_F7_M": 43,
+        "v3_h": 3,
+        "v7_h": 1
+      },
+      {
+        "detQ_max_one_mod_four": 13,
+        "detQ_min": 5,
+        "h": 441,
+        "rank_F3_M": 42,
+        "rank_F7_M": 42,
+        "v3_h": 2,
+        "v7_h": 2
+      },
+      {
+        "detQ_max_one_mod_four": 9,
+        "detQ_min": 5,
+        "h": 729,
+        "rank_F3_M": 38,
+        "rank_F7_M": 44,
+        "v3_h": 6,
+        "v7_h": 0
+      },
+      {
+        "detQ_max_one_mod_four": 5,
+        "detQ_min": 5,
+        "h": 1029,
+        "rank_F3_M": 43,
+        "rank_F7_M": 41,
+        "v3_h": 1,
+        "v7_h": 3
+      }
+    ]
+  },
+  "endpoint_reconstruction": {
+    "delta": 15,
+    "diagonal_excess_units": 84,
+    "n3": 708,
+    "rank": 44,
+    "sum_q": 472,
+    "sum_q_minus_2": 10,
+    "trace_A4": 1260,
+    "trace_B": 60,
+    "trace_C": 8
+  },
+  "hostile_controls": {
+    "drop_h_congruence": {
+      "h_seven_reappears": true,
+      "h_three_reappears": true
+    },
+    "drop_h_not_one": {
+      "h_one_reappears": true
+    },
+    "drop_integrality": {
+      "det_B": "(15/11)^44",
+      "det_B_exceeds_6561": true,
+      "example": "C=(2/11)I_44",
+      "trace_C": "8/1",
+      "trace_C2": "16/11"
+    },
+    "drop_positive_form_self_adjointness": {
+      "det_B": 111537,
+      "det_B_exceeds_6561": true,
+      "example": "eight diagonal 1s plus one skew block [[0,-2],[2,0]]",
+      "integral_trace_C": 8,
+      "reason_rejected": "C has nonreal eigenvalues and is not self-adjoint"
+    },
+    "mutate_survivor_B_bridge": {
+      "GB_equals_21Q_after_B00_plus_two": false
+    },
+    "mutate_survivor_G_parity": {
+      "even_after_diagonal_plus_one": false
+    }
+  },
+  "local": {
+    "endpoint": {
+      "delta": 15,
+      "diagonal_excess_units": 84,
+      "n3": 708,
+      "rank": 44,
+      "sum_q": 472,
+      "sum_q_minus_2": 10,
+      "trace_A4": 1260,
+      "trace_B": 60,
+      "trace_C": 8
+    },
+    "harmonic_q12": {
+      "excluded": true,
+      "gap": 5520,
+      "lhs": 1904400,
+      "rhs": 1898880
+    },
+    "hostile_old_delta12_would_exclude_q11": true,
+    "local_diagonal_rows": [
+      {
+        "excess_units": 2,
+        "q": 0,
+        "rational_floor": "396/43",
+        "rounded_positive_multiple_of_four": 12
+      },
+      {
+        "excess_units": 0,
+        "q": 1,
+        "rational_floor": "99/43",
+        "rounded_positive_multiple_of_four": 4
+      },
+      {
+        "excess_units": 0,
+        "q": 2,
+        "rational_floor": "0/1",
+        "rounded_positive_multiple_of_four": 4
+      },
+      {
+        "excess_units": 0,
+        "q": 3,
+        "rational_floor": "99/43",
+        "rounded_positive_multiple_of_four": 4
+      },
+      {
+        "excess_units": 2,
+        "q": 4,
+        "rational_floor": "396/43",
+        "rounded_positive_multiple_of_four": 12
+      },
+      {
+        "excess_units": 5,
+        "q": 5,
+        "rational_floor": "891/43",
+        "rounded_positive_multiple_of_four": 24
+      },
+      {
+        "excess_units": 9,
+        "q": 6,
+        "rational_floor": "1584/43",
+        "rounded_positive_multiple_of_four": 40
+      },
+      {
+        "excess_units": 14,
+        "q": 7,
+        "rational_floor": "2475/43",
+        "rounded_positive_multiple_of_four": 60
+      },
+      {
+        "excess_units": 20,
+        "q": 8,
+        "rational_floor": "3564/43",
+        "rounded_positive_multiple_of_four": 84
+      },
+      {
+        "excess_units": 28,
+        "q": 9,
+        "rational_floor": "4851/43",
+        "rounded_positive_multiple_of_four": 116
+      },
+      {
+        "excess_units": 36,
+        "q": 10,
+        "rational_floor": "6336/43",
+        "rounded_positive_multiple_of_four": 148
+      },
+      {
+        "excess_units": 46,
+        "q": 11,
+        "rational_floor": "8019/43",
+        "rounded_positive_multiple_of_four": 188
+      },
+      {
+        "excess_units": 57,
+        "q": 12,
+        "rational_floor": "9900/43",
+        "rounded_positive_multiple_of_four": 232
+      }
+    ],
+    "q11_centered_diagonal": "1291/5",
+    "q11_pair_minor_determinants": {
+      "-1": "-5925231/5",
+      "-136": "-7526736/5",
+      "0": "-5914048/5",
+      "1": "-1180575/1"
+    },
+    "q11_single_allowed_by_cauchy": true,
+    "scalar_profile": {
+      "count": 231,
+      "minimum_excess_units": 0,
+      "multiplicities": {
+        "2": 221,
+        "3": 10
+      },
+      "sum_q": 472,
+      "sum_q_minus_2": 10
+    },
+    "two_q11_excluded": true
+  },
+  "log_inequality": {
+    "coefficient_match": true,
+    "direct_coefficients": [
+      [
+        "-1/1",
+        "2/3"
+      ],
+      [
+        "-1/1",
+        "-2/3"
+      ],
+      [
+        "2/1",
+        "0/1"
+      ]
+    ],
+    "factored_coefficients": [
+      [
+        "-1/1",
+        "2/3"
+      ],
+      [
+        "-1/1",
+        "-2/3"
+      ],
+      [
+        "2/1",
+        "0/1"
+      ]
+    ],
+    "log3_gt_2_over_3": true,
+    "log3_lower": "5323193128076860814623/4845379196126704435200",
+    "log3_lt_2": true,
+    "log3_upper": "2661596564061221372099/2422689598063352217600",
+    "negative_domain_sign": "g'(x)=log(3)-2/(1+2x)<log(3)-2<0 on -1/2<x<0",
+    "positive_domain_sign": "x(1+2x)F'(x)=(x-1)(2*log(3)*x+log(3)-2/3); the second factor is positive for x>0"
+  },
+  "premise_hashes": {
+    "verification/2026-07-23-wave20-global-schur-audit.md": {
+      "actual": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+      "expected": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+      "matches": true
+    },
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": {
+      "actual": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+      "expected": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+      "matches": true
+    },
+    "verification/wave23-endpoint-crosscheck/2026-07-23T200645Z-correction-audit.md": {
+      "actual": "791d74340c8a84a9993f9a5179c66baf0b2f7e431df5fb7eda2f593195f9bf53",
+      "expected": "791d74340c8a84a9993f9a5179c66baf0b2f7e431df5fb7eda2f593195f9bf53",
+      "matches": true
+    },
+    "verification/wave23-index-pranks/2026-07-23T192952Z-audit.md": {
+      "actual": "bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116",
+      "expected": "bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116",
+      "matches": true
+    }
+  },
+  "pseudodeterminant": {
+    "rank_rows": [
+      {
+        "cauchy_floor": "64/1",
+        "combined_floor": "64/1",
+        "nonzero_rank": 1,
+        "product_am_gm_floor": "1/1"
+      },
+      {
+        "cauchy_floor": "32/1",
+        "combined_floor": "32/1",
+        "nonzero_rank": 2,
+        "product_am_gm_floor": "2/1"
+      },
+      {
+        "cauchy_floor": "64/3",
+        "combined_floor": "64/3",
+        "nonzero_rank": 3,
+        "product_am_gm_floor": "3/1"
+      },
+      {
+        "cauchy_floor": "16/1",
+        "combined_floor": "16/1",
+        "nonzero_rank": 4,
+        "product_am_gm_floor": "4/1"
+      },
+      {
+        "cauchy_floor": "64/5",
+        "combined_floor": "64/5",
+        "nonzero_rank": 5,
+        "product_am_gm_floor": "5/1"
+      },
+      {
+        "cauchy_floor": "32/3",
+        "combined_floor": "32/3",
+        "nonzero_rank": 6,
+        "product_am_gm_floor": "6/1"
+      },
+      {
+        "cauchy_floor": "64/7",
+        "combined_floor": "64/7",
+        "nonzero_rank": 7,
+        "product_am_gm_floor": "7/1"
+      },
+      {
+        "cauchy_floor": "8/1",
+        "combined_floor": "8/1",
+        "nonzero_rank": 8,
+        "product_am_gm_floor": "8/1"
+      },
+      {
+        "cauchy_floor": "64/9",
+        "combined_floor": "9/1",
+        "nonzero_rank": 9,
+        "product_am_gm_floor": "9/1"
+      },
+      {
+        "cauchy_floor": "32/5",
+        "combined_floor": "10/1",
+        "nonzero_rank": 10,
+        "product_am_gm_floor": "10/1"
+      },
+      {
+        "cauchy_floor": "64/11",
+        "combined_floor": "11/1",
+        "nonzero_rank": 11,
+        "product_am_gm_floor": "11/1"
+      },
+      {
+        "cauchy_floor": "16/3",
+        "combined_floor": "12/1",
+        "nonzero_rank": 12,
+        "product_am_gm_floor": "12/1"
+      },
+      {
+        "cauchy_floor": "64/13",
+        "combined_floor": "13/1",
+        "nonzero_rank": 13,
+        "product_am_gm_floor": "13/1"
+      },
+      {
+        "cauchy_floor": "32/7",
+        "combined_floor": "14/1",
+        "nonzero_rank": 14,
+        "product_am_gm_floor": "14/1"
+      },
+      {
+        "cauchy_floor": "64/15",
+        "combined_floor": "15/1",
+        "nonzero_rank": 15,
+        "product_am_gm_floor": "15/1"
+      },
+      {
+        "cauchy_floor": "4/1",
+        "combined_floor": "16/1",
+        "nonzero_rank": 16,
+        "product_am_gm_floor": "16/1"
+      },
+      {
+        "cauchy_floor": "64/17",
+        "combined_floor": "17/1",
+        "nonzero_rank": 17,
+        "product_am_gm_floor": "17/1"
+      },
+      {
+        "cauchy_floor": "32/9",
+        "combined_floor": "18/1",
+        "nonzero_rank": 18,
+        "product_am_gm_floor": "18/1"
+      },
+      {
+        "cauchy_floor": "64/19",
+        "combined_floor": "19/1",
+        "nonzero_rank": 19,
+        "product_am_gm_floor": "19/1"
+      },
+      {
+        "cauchy_floor": "16/5",
+        "combined_floor": "20/1",
+        "nonzero_rank": 20,
+        "product_am_gm_floor": "20/1"
+      },
+      {
+        "cauchy_floor": "64/21",
+        "combined_floor": "21/1",
+        "nonzero_rank": 21,
+        "product_am_gm_floor": "21/1"
+      },
+      {
+        "cauchy_floor": "32/11",
+        "combined_floor": "22/1",
+        "nonzero_rank": 22,
+        "product_am_gm_floor": "22/1"
+      },
+      {
+        "cauchy_floor": "64/23",
+        "combined_floor": "23/1",
+        "nonzero_rank": 23,
+        "product_am_gm_floor": "23/1"
+      },
+      {
+        "cauchy_floor": "8/3",
+        "combined_floor": "24/1",
+        "nonzero_rank": 24,
+        "product_am_gm_floor": "24/1"
+      },
+      {
+        "cauchy_floor": "64/25",
+        "combined_floor": "25/1",
+        "nonzero_rank": 25,
+        "product_am_gm_floor": "25/1"
+      },
+      {
+        "cauchy_floor": "32/13",
+        "combined_floor": "26/1",
+        "nonzero_rank": 26,
+        "product_am_gm_floor": "26/1"
+      },
+      {
+        "cauchy_floor": "64/27",
+        "combined_floor": "27/1",
+        "nonzero_rank": 27,
+        "product_am_gm_floor": "27/1"
+      },
+      {
+        "cauchy_floor": "16/7",
+        "combined_floor": "28/1",
+        "nonzero_rank": 28,
+        "product_am_gm_floor": "28/1"
+      },
+      {
+        "cauchy_floor": "64/29",
+        "combined_floor": "29/1",
+        "nonzero_rank": 29,
+        "product_am_gm_floor": "29/1"
+      },
+      {
+        "cauchy_floor": "32/15",
+        "combined_floor": "30/1",
+        "nonzero_rank": 30,
+        "product_am_gm_floor": "30/1"
+      },
+      {
+        "cauchy_floor": "64/31",
+        "combined_floor": "31/1",
+        "nonzero_rank": 31,
+        "product_am_gm_floor": "31/1"
+      },
+      {
+        "cauchy_floor": "2/1",
+        "combined_floor": "32/1",
+        "nonzero_rank": 32,
+        "product_am_gm_floor": "32/1"
+      },
+      {
+        "cauchy_floor": "64/33",
+        "combined_floor": "33/1",
+        "nonzero_rank": 33,
+        "product_am_gm_floor": "33/1"
+      },
+      {
+        "cauchy_floor": "32/17",
+        "combined_floor": "34/1",
+        "nonzero_rank": 34,
+        "product_am_gm_floor": "34/1"
+      },
+      {
+        "cauchy_floor": "64/35",
+        "combined_floor": "35/1",
+        "nonzero_rank": 35,
+        "product_am_gm_floor": "35/1"
+      },
+      {
+        "cauchy_floor": "16/9",
+        "combined_floor": "36/1",
+        "nonzero_rank": 36,
+        "product_am_gm_floor": "36/1"
+      },
+      {
+        "cauchy_floor": "64/37",
+        "combined_floor": "37/1",
+        "nonzero_rank": 37,
+        "product_am_gm_floor": "37/1"
+      },
+      {
+        "cauchy_floor": "32/19",
+        "combined_floor": "38/1",
+        "nonzero_rank": 38,
+        "product_am_gm_floor": "38/1"
+      },
+      {
+        "cauchy_floor": "64/39",
+        "combined_floor": "39/1",
+        "nonzero_rank": 39,
+        "product_am_gm_floor": "39/1"
+      },
+      {
+        "cauchy_floor": "8/5",
+        "combined_floor": "40/1",
+        "nonzero_rank": 40,
+        "product_am_gm_floor": "40/1"
+      },
+      {
+        "cauchy_floor": "64/41",
+        "combined_floor": "41/1",
+        "nonzero_rank": 41,
+        "product_am_gm_floor": "41/1"
+      },
+      {
+        "cauchy_floor": "32/21",
+        "combined_floor": "42/1",
+        "nonzero_rank": 42,
+        "product_am_gm_floor": "42/1"
+      },
+      {
+        "cauchy_floor": "64/43",
+        "combined_floor": "43/1",
+        "nonzero_rank": 43,
+        "product_am_gm_floor": "43/1"
+      },
+      {
+        "cauchy_floor": "16/11",
+        "combined_floor": "44/1",
+        "nonzero_rank": 44,
+        "product_am_gm_floor": "44/1"
+      }
+    ],
+    "theorem_gate": "C is integral and diagonalizable over R by positive-form self-adjointness, so its nonzero characteristic coefficient is a nonzero integer.",
+    "trace_B2_floor": "108/1",
+    "trace_C2_floor": "8/1"
+  },
+  "role": "verifier",
+  "scope": "For a putative srg(99,14,1,2) at n3=708, the inherited projector-lattice premises force h to one of eight listed values. An exact abstract coordinate-lattice survivor shows this relaxation does not exclude n3=708.",
+  "status_boundary": {
+    "graph_realization": "NOT_PROVED",
+    "n3_708_excluded": false,
+    "novelty": "UNKNOWN",
+    "primitive_embedding": "NOT_PROVED",
+    "projector_or_Hadamard_origin": "NOT_PROVED",
+    "target_existence": "UNKNOWN"
+  },
+  "survivor": {
+    "construction": {
+      "B": "S*Q",
+      "C": "(B-I)/2",
+      "G": "21*S^-1",
+      "Q": "(E8^-1)^5 direct_sum A2^2",
+      "S": "E8^5 direct_sum A2^2"
+    },
+    "facts": {
+      "B_G_self_adjoint": true,
+      "B_congruent_I_mod_2": true,
+      "B_equals_S_times_Q": true,
+      "B_positive_for_G": true,
+      "G_even_integral_symmetric": true,
+      "G_minimum_lower_bound": 14,
+      "G_minimum_reason": "The 21*E8^-1 blocks are even integral positive definite, hence have nonzero norm at least 42; each remaining block is 14*(a^2+a*b+b^2), with nonzero minimum 14.",
+      "G_times_B_equals_21Q": true,
+      "Q_even_integral_symmetric": true,
+      "S_even_integral_symmetric": true,
+      "S_times_G_equals_21I": true,
+      "block_positive_definite": true,
+      "det_A2": 3,
+      "det_B": 81,
+      "det_E8": 1,
+      "det_G": 1672655330303207857805734110126756703013677578807846676809,
+      "det_Q": 9,
+      "det_S_h": 9,
+      "rank": 44,
+      "rank_C": 2,
+      "trace_B": 60,
+      "trace_C": 8,
+      "trace_C2": 32
+    },
+    "matrix_sha256": {
+      "A2": "7c27b20a1c557642fd9963af9a61de65ce7bcc013fb6bf66d804ec6fd657d0ec",
+      "B": "2f45a1db3953d775cca4ca8dc1898abc83838698ba0fbc7952ded4a4064aaa47",
+      "C": "c09a41e192b9693d480655c78a21b6c49d90d786978bdead4cd489220c69019b",
+      "E8": "05643d8ce484a8dbf8e2f0053088da734cc78510d263fcbb8411756c84adc0c2",
+      "G": "f25be14fcaf4c3c78e9bfaadcaf14eedf1eded71887f740429a647b970563ee6",
+      "Q": "df370e6bce784025212da1beec00c11f7d7aa23e7fb05b77519dae8a405c9231",
+      "S": "1798873a167fea2a1d86b61e75f4c3612c50e0e525debe0d212e1586c4287633"
+    },
+    "semantic_boundary": {
+      "231_projector_columns_proved": false,
+      "Schur_square_origin_proved": false,
+      "abstract_coordinate_lattice_package": true,
+      "graph_realization_proved": false,
+      "primitive_embedding_in_Z231_proved": false
+    }
+  },
+  "verdict": "PASS_SCOPED_CONDITIONAL_RESTRICTION"
+}

@@ -1,0 +1,60 @@
+{
+  "bounded_run": {
+    "conflict_budget": 5000000,
+    "solver_stats": {
+      "conflict_budget": 5000000,
+      "conflicts": 5000000,
+      "decisions": 21839078,
+      "elapsed_seconds": 616.882524,
+      "host_free_fraction_after_solve": 0.629708,
+      "host_free_fraction_before_solve": 0.644277,
+      "interrupt_reason": "conflict_budget",
+      "propagations": 2391245003,
+      "restarts": 163357,
+      "working_set_after_solve_bytes": 128065536,
+      "working_set_before_solve_bytes": 94810112
+    },
+    "status": "INTERRUPTED",
+    "timeout_seconds": 600.0,
+    "unsat_evidence": "NONE: this run did not request or check an UNSAT proof; an UNSAT solver status alone would remain non-evidence."
+  },
+  "candidate_enumeration": {
+    "filter_census": [
+      216000,
+      118718,
+      49736,
+      45032
+    ],
+    "retained_candidate_sha256": "f796334943793224fb28bc0bcfc40d427bf56892c16386887ca7866a3b9ac963"
+  },
+  "claim_label": "UNKNOWN",
+  "encoding": {
+    "cnf_clauses": 338528,
+    "cnf_variables_including_auxiliary": 82532,
+    "cross_cell_upper_bound_constraints": 412,
+    "illegal_triple_binary_clauses": 96408,
+    "legal_triple_ternary_clauses": 45032,
+    "logic": "The pairing model uses three perfect matchings of the three 60-pair inventories. The first two determine each triple; binary clauses forbid illegal triples and ternary clauses force the third matching. Every matching obeys upper bounds Q[u,v]. Its sixty pair-pairs contribute 240 cell incidences, equal to the Gram-block target sum, so all bounds are exact.",
+    "model_kind": "pairing",
+    "pairing_variables_01": 2881,
+    "pairing_variables_02": 2881,
+    "pairing_variables_12": 2694,
+    "perfect_matching_exactly_one_constraints": 360,
+    "semantic_pairing_variables": 8456,
+    "solver": "PySAT CaDiCaL 1.9.5 with sequential-counter CNF",
+    "variable_numbering_seed": 3
+  },
+  "format": "wave43-joint-completion-v1",
+  "input": {
+    "canonical_core_edges_sha256": "b0a9e7cc75d933597d43c9395e0192268b71ad88b93120a82dc662e64585b664",
+    "canonical_mask": 51739,
+    "verification/wave41-allquotient-lifts/independent-results.json": "062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b"
+  },
+  "scope": "Conditional on n3=4158, rank_F3(M)=12, every edge having local type 2+2+2, and occurrence of the canonical rank-33 mask-51739 core. No automorphism is assumed.",
+  "status_wall": {
+    "compatible_H": "NOT_CONSTRUCTED_OR_EXCLUDED",
+    "conway_99_resolved": false,
+    "endpoint_excluded": false,
+    "full_B": "NOT_CONSTRUCTED_OR_EXCLUDED"
+  }
+}

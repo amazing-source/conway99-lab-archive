@@ -1,0 +1,262 @@
+{
+  "claim_label": "VERIFIED",
+  "components": {
+    "codegree_closure": {
+      "Q_census": {
+        "0": 2562,
+        "1": 924
+      },
+      "assertions": {
+        "Q_domain": true,
+        "base_residual_identity": true,
+        "other_scaffold_pairs": true,
+        "pair_domain_exhaustive": true,
+        "pair_partition": true,
+        "residual_identity": true
+      },
+      "base_residual_class_census": {
+        "adjacent": 168,
+        "nonadjacent_mate_endpoint": 168,
+        "nonadjacent_unrelated": 840
+      },
+      "base_residual_profile": "sum_{q: s in label(q)} x_pq = 2 - [s in label(p)] - [mate(s) in label(p)]",
+      "closure_equation": "sum_{r != p,q} x_pr*x_qr = 2 - Q_pq - x_pq",
+      "closure_rhs_table": {
+        "Q=0,x=0": 2,
+        "Q=0,x=1": 1,
+        "Q=1,x=0": 1,
+        "Q=1,x=1": 0
+      },
+      "passed": true,
+      "residual_pair_partition": {
+        "disjoint": 2562,
+        "intersect_allowed": 840,
+        "intersect_forbidden": 84
+      },
+      "scope": "With binary transition/block variables, pair simplicity, and all closure rows, the 99-vertex rooted adjacency satisfies the full srg(99,14,1,2) degree and common-neighbor equations. The listed rows do not independently forbid prisms away from the chosen root."
+    },
+    "discovery_artifacts": {
+      "assertions": {
+        "census_artifact": true,
+        "discovery_checker_scoped": true,
+        "fixed_extension_not_promoted": true,
+        "manifest_complete": true,
+        "no_strong_witness_claimed": true,
+        "run_report_full_hash": true,
+        "run_report_schema": true,
+        "sat_nonhit_unknown": true
+      },
+      "bounded_solver_observations": {
+        "fixed_block_extension": "UNVERIFIED_NUMERICAL_INFEASIBLE",
+        "strong_sat_scout": "UNKNOWN"
+      },
+      "discovery_run_report_base_commit": "81c8d45426938ea8490af55d81f05b7c2ad99035",
+      "passed": true,
+      "sealed_manifest_file_count": 17,
+      "substantive_file_count_excluding_manifest": 17
+    },
+    "discovery_input_freeze": {
+      "entries": 8,
+      "failures": [],
+      "passed": true
+    },
+    "discovery_package_manifest": {
+      "entries": 17,
+      "failures": [],
+      "passed": true
+    },
+    "finite_census": {
+      "H_degree": 12,
+      "H_edge_labels": 84,
+      "allowed_transitions": 840,
+      "allowed_transitions_per_base": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "assertions": {
+        "H_degree_12": true,
+        "block_count": true,
+        "block_type_census": true,
+        "disjoint_pair_domain": true,
+        "labels_are_H_edges": true,
+        "local_matching_count": true,
+        "transition_count": true,
+        "transition_triangle_count": true
+      },
+      "block_type_census": {
+        "(0, 0, 3)": 6720,
+        "(0, 1, 2)": 20160,
+        "(0, 2, 1)": 6720,
+        "(0, 3, 0)": 280,
+        "(1, 0, 2)": 1680
+      },
+      "candidate_blocks": 35560,
+      "candidate_disjoint_pairs": 2562,
+      "inclusion_exclusion": 35560,
+      "local_perfect_matching_counts": [
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040,
+        6040
+      ],
+      "passed": true,
+      "transition_triangle_cuts": 280
+    },
+    "fractional_linear_master_control": {
+      "assertions": {
+        "artifact_assignment": true,
+        "endpoint_profile_rows": true,
+        "label_rows": true,
+        "local_rows": true,
+        "pair_rows": true,
+        "profile_domain": true,
+        "support_rows": true,
+        "transition_matching_rows": true,
+        "triangle_rows": true
+      },
+      "endpoint_profile_class_census": {
+        "mate_s_in_label": 168,
+        "s_in_label": 168,
+        "unrelated_s": 840
+      },
+      "endpoint_profile_residual_values": [
+        "0"
+      ],
+      "label_row_values": [
+        "5"
+      ],
+      "local_row_values": [
+        "2"
+      ],
+      "maximum_pair_load": "1/5",
+      "pair_load_census": {
+        "0": 42,
+        "1/10": 840,
+        "1/5": 1680
+      },
+      "passed": true,
+      "support_row_values": [
+        "12"
+      ],
+      "transition_degree_values": [
+        "1"
+      ],
+      "transition_triangle_lhs": "3/10"
+    },
+    "integral_block_witness": {
+      "assertions": {
+        "label_degree_5": true,
+        "local_dichotomy_2": true,
+        "pair_simplicity": true,
+        "relation_counts": true,
+        "restricted_search_disclosed": true,
+        "row_inventory": true,
+        "selected_block_count": true,
+        "support_occupancy_12": true,
+        "support_profiles_32_96_12": true
+      },
+      "label_degree_census": {
+        "5": 84
+      },
+      "local_dichotomy_census": {
+        "2": 84
+      },
+      "max_pair_load": 1,
+      "passed": true,
+      "relation_counts_support_union_2_3_4": [
+        5,
+        74,
+        341
+      ],
+      "selected_blocks": 140,
+      "support_occupancies": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "support_occupancy_profiles_n0_n1_n2": [
+        [
+          32,
+          96,
+          12
+        ],
+        [
+          32,
+          96,
+          12
+        ],
+        [
+          32,
+          96,
+          12
+        ],
+        [
+          32,
+          96,
+          12
+        ],
+        [
+          32,
+          96,
+          12
+        ],
+        [
+          32,
+          96,
+          12
+        ],
+        [
+          32,
+          96,
+          12
+        ]
+      ],
+      "used_disjoint_pairs": 420
+    },
+    "preinspection_hashes": {
+      "entries": 18,
+      "failures": [],
+      "passed": true
+    }
+  },
+  "conway_99": "UNKNOWN",
+  "endpoint_n3_4158": "UNKNOWN",
+  "format": "wave64-rooted-transition-design-independent-verifier-v1",
+  "limitations": [
+    "No full residual-codegree candidate was supplied.",
+    "No bounded solver nonhit or floating-point status was promoted.",
+    "No target-graph automorphism was assumed.",
+    "The 140-block witness is not a graph."
+  ],
+  "novelty": "UNKNOWN",
+  "passed": true,
+  "role": "verifier",
+  "scope": "Finite rooted H=K14-7K2 census; the explicit 140-block block-master witness; the exact rational stronger-linear-master control; and the algebraic residual-codegree closure formula.",
+  "scope_clarification": "The closure formula completes the strongly regular graph equations. It does not, by itself, impose prism-freeness away from the selected root. The block-only and stronger linear masters remain relaxations, and no integral stronger-master witness is present."
+}

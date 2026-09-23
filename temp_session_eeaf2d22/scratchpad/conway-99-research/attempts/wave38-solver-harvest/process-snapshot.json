@@ -1,0 +1,178 @@
+{
+  "capture_method": {
+    "activity_sample_seconds": 3,
+    "command": "Get-CimInstance Win32_Process and Get-Process for the four requested PIDs; Test-Path for both output targets",
+    "command_line_normalization": "The absolute repository prefix was replaced by a repository-relative path; argument spelling and order were preserved."
+  },
+  "captured_utc": "2026-07-27T00:53:21.788Z",
+  "claim_label": "UNKNOWN",
+  "evidentiary_value": "NONE",
+  "format": "wave38-live-solver-process-snapshot-v1",
+  "git_commit": "3014f3b1c010cdde1687b8878d4ec58d2bb90f03",
+  "limitations": [
+    "This is a point-in-time process observation, not a replayable solver result.",
+    "The scout writes its JSON only after every selected case returns, so no completed prefix can be recovered from a missing output.",
+    "Positive CPU activity establishes only that the workers were active during the sample.",
+    "No timeout, conflict-budget stop, runtime, or resource consumption constrains satisfiability.",
+    "The processes were neither attached to, stopped, signaled, nor modified."
+  ],
+  "runs": [
+    {
+      "activity_sample": {
+        "sample_ended_utc": "2026-07-27T00:51:49.459Z",
+        "sample_seconds": 3,
+        "worker_cpu_delta_seconds": 2.34375
+      },
+      "candidate_paths": [],
+      "command": ".venv/Scripts/python.exe -B attempts/wave36-rooted-branches/refined_branch_scout.py --conflict-budget 100000 --solver gluecard4 --output attempts/wave36-rooted-branches/refined-100k.json",
+      "configuration": {
+        "conflict_budget_per_case": 100000,
+        "fixed_triangle_prism_strengthening": true,
+        "fresh_solver_per_case": true,
+        "parents": [
+          4,
+          5,
+          8,
+          10,
+          12
+        ],
+        "refined_branches": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "solver": "gluecard4"
+      },
+      "output": {
+        "exists_at_capture": false,
+        "git_ignored_at_capture": true,
+        "path": "attempts/wave36-rooted-branches/refined-100k.json",
+        "write_point": "after all 33 selected cases return"
+      },
+      "process_tree": {
+        "launcher": {
+          "created_utc": "2026-07-26T22:39:16.249Z",
+          "name": "python.exe",
+          "parent_pid": 18296,
+          "pid": 25088
+        },
+        "worker": {
+          "created_utc": "2026-07-26T22:39:16.382Z",
+          "kernel_time_100ns_at_capture": 746562500,
+          "name": "python3.13.exe",
+          "parent_pid": 25088,
+          "pid": 27676,
+          "read_operation_count_at_capture": 275,
+          "user_time_100ns_at_capture": 69458281250,
+          "working_set_bytes_at_capture": 297742336,
+          "write_operation_count_at_capture": 0
+        }
+      },
+      "proof_paths": [],
+      "run_id": "full-33-gluecard4",
+      "status": "LIVE_NONTERMINAL_NO_OUTPUT",
+      "terminal_result": null
+    },
+    {
+      "activity_sample": {
+        "sample_ended_utc": "2026-07-27T00:51:49.459Z",
+        "sample_seconds": 3,
+        "worker_cpu_delta_seconds": 2.375
+      },
+      "candidate_paths": [],
+      "command": ".venv/Scripts/python.exe -B attempts/wave36-rooted-branches/refined_branch_scout.py --parents 4 --conflict-budget 100000 --solver minicard --output attempts/wave36-rooted-branches/refined-100k-minicard-parent4.json",
+      "configuration": {
+        "conflict_budget_per_case": 100000,
+        "fixed_triangle_prism_strengthening": true,
+        "fresh_solver_per_case": true,
+        "parents": [
+          4
+        ],
+        "refined_branches": [
+          15,
+          16,
+          17,
+          18
+        ],
+        "solver": "minicard"
+      },
+      "output": {
+        "exists_at_capture": false,
+        "git_ignored_at_capture": false,
+        "path": "attempts/wave36-rooted-branches/refined-100k-minicard-parent4.json",
+        "write_point": "after all four selected parent-4 cases return"
+      },
+      "process_tree": {
+        "launcher": {
+          "created_utc": "2026-07-26T23:48:41.835Z",
+          "name": "python.exe",
+          "parent_pid": 37616,
+          "pid": 42444
+        },
+        "worker": {
+          "created_utc": "2026-07-26T23:48:42.057Z",
+          "kernel_time_100ns_at_capture": 462187500,
+          "name": "python3.13.exe",
+          "parent_pid": 42444,
+          "pid": 20988,
+          "read_operation_count_at_capture": 276,
+          "user_time_100ns_at_capture": 31729375000,
+          "working_set_bytes_at_capture": 726876160,
+          "write_operation_count_at_capture": 0
+        }
+      },
+      "proof_paths": [],
+      "run_id": "parent4-minicard",
+      "status": "LIVE_NONTERMINAL_NO_OUTPUT",
+      "terminal_result": null
+    }
+  ],
+  "runtime": {
+    "pysat": {
+      "distribution_version": "1.9.dev7",
+      "native_extension_path": ".venv/Lib/site-packages/pysolvers.cp313-win_amd64.pyd",
+      "native_extension_sha256": "1019bacdbb9400cc54fa89aa39294fefe1c63d5a67fdab35f473364529ec72dd"
+    },
+    "python": {
+      "executable_path": ".venv/Scripts/python.exe",
+      "executable_sha256": "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b",
+      "version": "3.13.14"
+    },
+    "source": {
+      "path": "attempts/wave36-rooted-branches/refined_branch_scout.py",
+      "sha256": "f23cc9b1544b34d14d42455c1f6378195f7375f5bc377ceeb3318cf2e9bdb68d"
+    }
+  },
+  "scope": "read-only audit of the two requested live refined endpoint solver process trees",
+  "terminal_results": []
+}

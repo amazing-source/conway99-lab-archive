@@ -1,0 +1,55 @@
+role: verifier
+date_utc: 2026-07-24T04:41:37Z
+git_commit: ae8fd70baaeb35302f957653e20ad710e5e77281
+claim_label: VERIFIED
+scope: >-
+  Blind independent verification of the exact five-neighbor construction of
+  a rootless even rank-20 determinant-729 lattice T20 and the bare rank-44
+  S/G direct sum T20 orthogonal_sum LAMBDA24. No Q, B, X, M, W, tight frame,
+  Schur identity, graph, endpoint resolution, Conway-99 resolution, or novelty
+  claim is verified.
+inputs:
+  - path: agents/2026-07-24-wave30-h729-construction.md
+    sha256: 479ed105825ea2b2a0802c34fcc332b8dc1420b27966bec41053702f3212451f
+  - path: attempts/wave30-h729-construction/exact-results.json
+    sha256: 0d3723ba4c185dc7865858d16bfc6ada99fd87b4e21da616ef1b1d1ad6b67e11
+  - path: attempts/wave30-h729-construction/input-freeze.sha256
+    sha256: 895ce37d214acf92aa5c4f2bd1eaaadaa8ef625045e31479b25eb4f42caf17fe
+  - path: agents/2026-07-24-wave28-orchestrator-brief.md
+    sha256: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  - path: verification/wave28-simultaneous-neighbor/independent_check.py
+    sha256: 2c8021769d47faebbcd544b364649a2cb93c066a369f76f725cffab1588982db
+  - path: verification/wave28-theta-modular/independent_check.py
+    sha256: 513efd1a915bc14adc3003c41e6758839375d9a36a0055f08faa56417c942b18
+method: >-
+  Independently parse the submitted JSON without importing or executing
+  discovery code; reconstruct all six rank-20 forms backward and forward from
+  five rational neighbor bases and five integral unimodular transforms; prove
+  the two common index-two relations at each neighbor; use fraction-free
+  Bareiss determinants, exact rational LDL and Sylvester checks, fresh rational
+  inversion, and complete reverse-LDL enumeration with integer-square-root
+  bounds; then attack the result with changed bases, Cartesian cross-checks,
+  mutations, and deleted premises.
+command: |-
+  python -B verification/wave30-h729-construction/independent_check.py --output verification/wave30-h729-construction/independent-results.json
+  python -B -m unittest discover -s verification/wave30-h729-construction -p test_*.py -v
+outputs:
+  - path: verification/wave30-h729-construction/protocol-freeze.md
+    sha256: b0b35b7416769a175011b5ec93f5349bdbc8612d8b987a7db00c60c71331ecc3
+  - path: verification/wave30-h729-construction/independent_check.py
+    sha256: 156ef65fb98edce4266afd735d556a32164fc2460b437b757d59a86efa53abfd
+  - path: verification/wave30-h729-construction/test_independent_check.py
+    sha256: 50d2379fd4eb42b3b986bfc669c55407a819661c1322d5e2ecb11a533384f4c0
+  - path: verification/wave30-h729-construction/independent-results.json
+    sha256: d7e6f18f82045c3e589dfc003c474fa506b59e57b0a02ef277451f2f28ff03b5
+  - path: verification/wave30-h729-construction/audit.md
+    sha256: abba8583533a3ccafe774d7a5b5760a0f76eb23c6427642476a3496c1662fb5c
+  - path: verification/wave30-h729-construction/failure-ledger.md
+    sha256: 48de60b3ad8bf581e0fd39329adf3c149f726aaa17269a4ef15df2daaba1cdb2
+limitations:
+  - The five neighbors are a construction route, not a complete neighbor graph or isometry classification.
+  - The rank-44 candidate assumes the displayed orthogonal decomposition.
+  - No determinant-five Q or compatible B is supplied or verified.
+  - No tight-frame subset, orientation, X, M, W, or Schur identity is supplied or verified.
+  - No graph or n3=708 realization or exclusion is supplied or verified.
+  - Conway-99 and novelty remain UNKNOWN.

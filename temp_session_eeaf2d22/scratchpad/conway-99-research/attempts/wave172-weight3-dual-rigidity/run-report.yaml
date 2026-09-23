@@ -1,0 +1,29 @@
+role: proof_b
+date_utc: 2026-07-28T20:55:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Weight-three dual-word rigidity for the centered ternary block code at the
+  prism-free endpoint.
+inputs:
+  - attempts/wave171-pq-centered-code/package-manifest.sha256
+  - verification/wave171-pq-centered-code/package-manifest.sha256
+  - verification/wave35-n3-upper-spectral/audit.md
+  - verification/wave38-higher-order/audit.md
+method: >-
+  Symbolic finite-field elimination followed by exact integer row-sum and
+  row-norm arithmetic for the spectral reflection. No graph or code search.
+command: >-
+  Paper derivation plus exact integer arithmetic spot-checks and SHA-256
+  manifest verification.
+outputs:
+  - attempts/wave172-weight3-dual-rigidity/README.md
+  - attempts/wave172-weight3-dual-rigidity/derivation.md
+  - attempts/wave172-weight3-dual-rigidity/failed-routes.md
+  - attempts/wave172-weight3-dual-rigidity/protocol.md
+  - attempts/wave172-weight3-dual-rigidity/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The theorem does not determine B3 or exclude weight-three dual words.
+  - No endpoint exclusion, strict n3 bound, graph, or target resolution
+    follows.

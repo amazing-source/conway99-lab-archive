@@ -1,0 +1,89 @@
+role: verifier
+date_utc: "2026-07-27T20:21:00Z"
+git_commit: "a4a61658356253fb95cf68252c972a4f79df38fe"
+claim_label: VERIFIED
+scope: >-
+  Exact feasibility of the frozen ordinary weight-enumerator constraints for
+  the conditional centered projective self-orthogonal ternary [231,11] code.
+inputs:
+  - path: verification/wave54-centered-enumerator/input-freeze.sha256
+    sha256: e6940e868707ff08e1fc41711a0b9a23dba10e109ea05580733505f49c7f1c66
+  - path: attempts/wave54-centered-enumerator/exact-results.json
+    sha256: d7f8da8862c74da08e5d122e028f95125051d4e3032287f8e2e7f5490ded3cd8
+  - path: attempts/wave54-centered-enumerator/package-manifest.sha256
+    sha256: 4e6fa530dee3c30be6423d9b08f87e6389a59f20d972a5df999ca97541a2db23
+method: >-
+  Preinspection protocol freeze; provenance audit of integrated Wave39
+  centered-code inputs; direct q-ary Krawtchouk binomial sums with exact
+  integers; all-232-coefficient MacWilliams reconstruction; independent
+  generating-polynomial spot oracle over exhaustive small parameters; full
+  value comparison with discovery after the independent result existed;
+  manifest rehash; hostile mutation testing; and adversarial scope audit.
+command: |-
+  .\.venv\Scripts\python.exe -B verification\wave54-centered-enumerator\independent_check.py --verify verification\wave54-centered-enumerator\independent-results.json
+  .\.venv\Scripts\python.exe -B verification\wave54-centered-enumerator\audit_discovery.py --verify verification\wave54-centered-enumerator\discovery-audit.json
+  .\.venv\Scripts\python.exe -B -m unittest -v verification\wave54-centered-enumerator\test_independent_check.py
+  .\.venv\Scripts\python.exe -B attempts\wave54-centered-enumerator\exact_check.py --verify attempts\wave54-centered-enumerator\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave54-centered-enumerator -p "test_*.py" -v
+outputs:
+  - path: verification/wave54-centered-enumerator/protocol.md
+    sha256: 9e4027894196fcf127ddfd0b88929c805eeb77e747f0af5679b3c37ee7199fd1
+  - path: verification/wave54-centered-enumerator/protocol-corrections.md
+    sha256: 079ccfba688331b8dbee7d180db7d5520e7d0adfe706251f45cb7f6be163035e
+  - path: verification/wave54-centered-enumerator/independent_check.py
+    sha256: f394e818187c1294aab9b50ebd491daec404f061025507477b9269c0e1ce5191
+  - path: verification/wave54-centered-enumerator/independent-results.json
+    sha256: f1825306dc58c4e169fac35d32306adb7c2ff9a8a89a274b8c0f8a98fb9c92dc
+  - path: verification/wave54-centered-enumerator/audit_discovery.py
+    sha256: 32ff63fee774a3060bc1508699ec9097d2276f086445828128cb60edaa4935ef
+  - path: verification/wave54-centered-enumerator/discovery-audit.json
+    sha256: 7806a6f2c94656c73d8d604eb7795e8a62d5f73cd9dafd5fbe1353645d6fc13f
+  - path: verification/wave54-centered-enumerator/test_independent_check.py
+    sha256: aa3ebd5ef832783ef8d6c783f6899e7255cf06944aed374bc2ee3513520cc4bf
+  - path: verification/wave54-centered-enumerator/audit.md
+    sha256: 39f43bde94ed4478ecfa84bdd2fed2198acc0a1ef92f24c4d555ebf81062dfe9
+  - path: verification/wave54-centered-enumerator/README.md
+    sha256: bfec95071f0c83002b5c68c61227ad862d5cd92a780d706a1d98be61e33770d8
+tests:
+  independent:
+    passed: 22
+    failed: 0
+  discovery_replay:
+    passed: 6
+    failed: 0
+  memory:
+    required_free_percent: 15
+    observed_free_percent: 53.36
+result:
+  candidate_A:
+    0: 1
+    18: 2
+    144: 53316
+    153: 19798
+    159: 98496
+    162: 5072
+    198: 462
+  all_232_B_equal_discovery: true
+  dual_size: "3^220"
+  discovery_exact_results_sha256: d7f8da8862c74da08e5d122e028f95125051d4e3032287f8e2e7f5490ded3cd8
+  discovery_package_manifest_sha256: 4e6fa530dee3c30be6423d9b08f87e6389a59f20d972a5df999ca97541a2db23
+  listed_formal_enumerator_feasible: true
+corrections:
+  - >-
+    The first input list omitted the actual Wave39 simultaneous-B/H source
+    package; the correction was recorded before reading it.
+  - >-
+    Dual parity and B_231>=2 from the recorded all-one dual word were omitted
+    from the frozen Wave54 conditions; the candidate passes both.
+  - >-
+    "No ordinary obstruction" is verified only for the exact listed
+    constraints, not as an exhaustion theorem for every possible
+    one-variable code condition.
+limitations:
+  - >-
+    Wave39's simultaneous-B/H lane was integrated as DERIVED_INCONCLUSIVE;
+    this run freezes its conditional code consequences rather than
+    independently re-proving the graph-to-code derivation.
+  - The result is a formal ordinary enumerator, not a realized linear code.
+  - No complete or joint enumerator, generator matrix, or endpoint object is supplied.
+  - No graph, upper-bound improvement, Conway-99 resolution, or novelty claim follows.

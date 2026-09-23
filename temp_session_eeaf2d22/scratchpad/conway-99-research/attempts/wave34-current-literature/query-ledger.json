@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-07-24",
+  "scope": "Bounded current-source discovery for Wave 34, with emphasis on exact overlap with the unrestricted rooted six-block system, the rootless actual-incidence endpoint, and newly public Conway-99 proof or certificate packages.",
+  "frozen_inputs": {
+    "public_base_commit": "0fa5b8161baf8b2a5404a67051b7d61cbc906da3",
+    "continuation_protocol_sha256": "60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4",
+    "orchestrator_checkpoint_commit": "1be9b6f61136763ce77d3927984979205e7fb23a"
+  },
+  "limits": {
+    "coverage": "This is a bounded ranked-web, public-GitHub, and direct-source inspection. It is not a complete MathSciNet, zbMATH, Google Scholar, citation-network, language, thesis, proceedings, or unpublished-manuscript search.",
+    "negative_inference": "A query no-hit does not establish novelty, priority, nonexistence, or absence of prior art.",
+    "source_quality": "Search snippets were used for discovery only. Claims were bounded against the source itself, a maintained table, or repository files at a pinned public commit.",
+    "computation": "A public CI success or author-reported certificate result is not an independent replay by this repository."
+  },
+  "batches": [
+    {
+      "id": "B01",
+      "service": "web_search",
+      "queries": [
+        "\"six-block\" \"Conway 99\"",
+        "\"DB=2J-B\" graph",
+        "\"rootless\" \"Conway 99\" graph",
+        "\"2-(15,3,2)\" designs number"
+      ],
+      "disposition": "The first three exact Wave-33/Wave-34 phrases produced no relevant source in the returned windows. The design-count query located Brendan McKay's combinatorial-generation slides, which estimate about 1.5 x 10^21 nonisomorphic 2-(15,3,2) designs. The no-hits are not novelty evidence."
+    },
+    {
+      "id": "B02",
+      "service": "github_cli",
+      "command": "gh search repos '\"Conway 99\"' --limit 20 --json fullName,url,description,updatedAt,pushedAt,createdAt",
+      "disposition": "Eleven public repositories were returned on 2026-07-24. The newly posted Kuberwastaken Lean project was absent from the frozen repository ledger. Harrison Pedrero's certificate repository had only a one-line status mention and no local artifact audit. The other returned research repositories were already known or did not advertise a new resolution."
+    },
+    {
+      "id": "B03",
+      "service": "direct_source_inspection",
+      "urls": [
+        "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+        "https://github.com/Kuberwastaken/conway99-c3-orbit-restriction",
+        "https://github.com/harrisonpedrero/conway-99-graph",
+        "https://math.uchicago.edu/~may/REU2023/REUPapers/Selub.pdf",
+        "https://45acc.github.io/slides/McKay.pdf",
+        "https://www.math.uniri.hr/~sanjar/structures/0_README_the_content_of_folders_and_references.txt"
+      ],
+      "disposition": "The maintained SRG table still marks (99,14,1,2) with '?'. Kuber's project explicitly leaves the graph-to-matrix bridge as certificate fields. Harrison's repository explicitly keeps the global problem open and flags a k=13 evidence gap and no third-party clean-machine replay. Selub supplies a 2023 SAT framework and next steps, not a solver result. McKay's estimate rules out naive design-class enumeration as a practical unrestricted plan. The Rijeka 2-(15,3,2) files are only designs derived from a restricted order-six-automorphism corpus."
+    },
+    {
+      "id": "B04",
+      "service": "local_repository_search",
+      "command": "rg -n -i \"Selub|Kuberwastaken|c3-orbit-restriction|Harrison Pedrero|harrisonpedrero|McKay.*1\\.5|2-\\(15,3,2\\).*1\\.5\" . --glob '!attempts/wave34-current-literature/**'",
+      "disposition": "Selub, Kuber, and McKay's design estimate were absent from the frozen repository. Harrison appeared only in agents/2026-07-22-wave10-status-search.md as a current-status source whose earlier overclaim had been retracted."
+    }
+  ]
+}

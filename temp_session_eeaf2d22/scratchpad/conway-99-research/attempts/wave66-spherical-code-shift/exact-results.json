@@ -1,0 +1,601 @@
+{
+  "blichfeldt_cross_check": {
+    "bound": "det(M) <= 23!^2/pi^44",
+    "r_at_least": 18,
+    "rank_17_excluded_using_pi_gt_157_over_50": true,
+    "rank_18_survives_using_pi_lt_22_over_7": true,
+    "weaker_than_imported_r_at_least_28": true
+  },
+  "centering": {
+    "all_ones_direction_removed": true,
+    "centered_gram": "C=3I-A+J/9",
+    "difference_norms_after_halving": {
+      "adjacent_to_reference": 8,
+      "nonadjacent_to_reference": 6
+    },
+    "rank": 44,
+    "spectrum": {
+      "eigenvalue_3_space": "0",
+      "eigenvalue_minus4_space": "7",
+      "principal": "0"
+    }
+  },
+  "claim_label": "CANDIDATE",
+  "difference_lattice": {
+    "determinant_formula": "9*7^(44-r)",
+    "discriminant_group_formula": "Z/9 direct_sum (Z/7)^(44-r)",
+    "dual_denominator": "63 M* subset M",
+    "dual_minimum_lower_bound": "2",
+    "even": true,
+    "frame_operator": "sum_i u_i u_i^T = 7I",
+    "milgram_congruence": "r is even and r<=42",
+    "rank": 44,
+    "rank_mod_3": 43,
+    "rank_mod_7": "r",
+    "rank_parameter": "r=rank_F7(S)"
+  },
+  "dual_minimum_checks": {
+    "a11_integer_norm_15_equality_profile": {
+      "excluded_by_coordinate_equations": true,
+      "negative_ones": 13,
+      "positive_ones": 2
+    },
+    "allowed_fractional_numerators_mod_99": [
+      0,
+      11,
+      22,
+      33,
+      44,
+      55,
+      66,
+      77,
+      88
+    ],
+    "integral_norms_below_14_excluded": [
+      8,
+      10,
+      12
+    ],
+    "subset_edge_bounds": {
+      "10": {
+        "exact_edge_upper_bound": "185/9",
+        "integer_edge_ceiling": 20
+      },
+      "12": {
+        "exact_edge_upper_bound": "26",
+        "integer_edge_ceiling": 26
+      }
+    },
+    "ten_support_forced_model": "4-regular bipartite on 5+5; violates mu=2",
+    "twelve_support_forced_model": "4-regular bipartite on 6+6; 36 same-side common-neighbor incidences exceed 30",
+    "unconstrained_fractional_energy_minima": {
+      "11": "88/9",
+      "22": "154/9",
+      "33": "22",
+      "44": "220/9",
+      "55": "220/9",
+      "66": "22",
+      "77": "154/9",
+      "88": "88/9"
+    }
+  },
+  "endpoint": {
+    "all_determinant_rows_before_milgram": [
+      {
+        "determinant": 299096375126409,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^16",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 28,
+        "required_seven_determinant_sign": -1,
+        "seven_exponent": 16
+      },
+      {
+        "determinant": 42728053589487,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^15",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 29,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 15
+      },
+      {
+        "determinant": 6104007655641,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^14",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 30,
+        "required_seven_determinant_sign": 1,
+        "seven_exponent": 14
+      },
+      {
+        "determinant": 872001093663,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^13",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 31,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 13
+      },
+      {
+        "determinant": 124571584809,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^12",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 32,
+        "required_seven_determinant_sign": -1,
+        "seven_exponent": 12
+      },
+      {
+        "determinant": 17795940687,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^11",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 33,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 11
+      },
+      {
+        "determinant": 2542277241,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^10",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 34,
+        "required_seven_determinant_sign": 1,
+        "seven_exponent": 10
+      },
+      {
+        "determinant": 363182463,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^9",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 35,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 9
+      },
+      {
+        "determinant": 51883209,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^8",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 36,
+        "required_seven_determinant_sign": -1,
+        "seven_exponent": 8
+      },
+      {
+        "determinant": 7411887,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^7",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 37,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 7
+      },
+      {
+        "determinant": 1058841,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^6",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 38,
+        "required_seven_determinant_sign": 1,
+        "seven_exponent": 6
+      },
+      {
+        "determinant": 151263,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^5",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 39,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 5
+      },
+      {
+        "determinant": 21609,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^4",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 40,
+        "required_seven_determinant_sign": -1,
+        "seven_exponent": 4
+      },
+      {
+        "determinant": 3087,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^3",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 41,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 3
+      },
+      {
+        "determinant": 441,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^2",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 42,
+        "required_seven_determinant_sign": 1,
+        "seven_exponent": 2
+      },
+      {
+        "determinant": 63,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^1",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 43,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 1
+      },
+      {
+        "determinant": 9,
+        "discriminant_group": "Z/9",
+        "milgram_phase_possible": false,
+        "rank_F7_Seidel": 44,
+        "required_seven_determinant_sign": null,
+        "seven_exponent": 0
+      }
+    ],
+    "contradiction_found": false,
+    "graph_status": "UNKNOWN",
+    "imported_verified_rank_interval": [
+      28,
+      44
+    ],
+    "novelty": "UNKNOWN",
+    "surviving_rows": [
+      {
+        "determinant": 299096375126409,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^16",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 28,
+        "required_seven_determinant_sign": -1,
+        "seven_exponent": 16
+      },
+      {
+        "determinant": 6104007655641,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^14",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 30,
+        "required_seven_determinant_sign": 1,
+        "seven_exponent": 14
+      },
+      {
+        "determinant": 124571584809,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^12",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 32,
+        "required_seven_determinant_sign": -1,
+        "seven_exponent": 12
+      },
+      {
+        "determinant": 2542277241,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^10",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 34,
+        "required_seven_determinant_sign": 1,
+        "seven_exponent": 10
+      },
+      {
+        "determinant": 51883209,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^8",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 36,
+        "required_seven_determinant_sign": -1,
+        "seven_exponent": 8
+      },
+      {
+        "determinant": 1058841,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^6",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 38,
+        "required_seven_determinant_sign": 1,
+        "seven_exponent": 6
+      },
+      {
+        "determinant": 21609,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^4",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 40,
+        "required_seven_determinant_sign": -1,
+        "seven_exponent": 4
+      },
+      {
+        "determinant": 441,
+        "discriminant_group": "Z/9 direct_sum (Z/7)^2",
+        "milgram_phase_possible": true,
+        "rank_F7_Seidel": 42,
+        "required_seven_determinant_sign": 1,
+        "seven_exponent": 2
+      }
+    ],
+    "survivor_count": 8
+  },
+  "format": "wave66-spherical-code-shift-v1",
+  "integral_gram": {
+    "B": "6I + J - 2A = 7I - S",
+    "diagonal": 7,
+    "identity": "B^2 = 14B + 49J",
+    "nonzero_pseudodeterminant": 20707339077226758648095300250195804013151262271864832,
+    "off_diagonal": [
+      -1,
+      1
+    ],
+    "row_sum": 77,
+    "seidel_sign_convention": "S=2A-J+I; adjacent +1, nonadjacent -1, diagonal 0",
+    "seidel_spectrum": {
+      "eigenvalue_3_space": 7,
+      "eigenvalue_minus4_space": -7,
+      "principal": -70
+    },
+    "spectrum": {
+      "eigenvalue_3_space": 0,
+      "eigenvalue_minus4_space": 14,
+      "principal": 77
+    },
+    "two_adic_valuation": 44
+  },
+  "limitations": [
+    "This package is discovery work and is not independent verification.",
+    "No graph, equiangular configuration, or lattice is constructed.",
+    "A discriminant-group profile is not a lattice realization.",
+    "All 17 imported rank rows survive."
+  ],
+  "milgram": {
+    "Z9_normalized_gauss_phase": "+1",
+    "exact_discriminant_form_level_for_survivors": 63,
+    "necessary_and_sufficient_phase_condition_at_group_level": "44-r is positive and even",
+    "required_normalized_gauss_phase": "-1",
+    "required_seven_determinant_sign": "(-1)^((44-r)/2+1)",
+    "seven_dimension_phase_table": [
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+1"
+        ],
+        "seven_dimension": 0
+      },
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+i",
+          "-i"
+        ],
+        "seven_dimension": 1
+      },
+      {
+        "can_match_signature_phase_minus_one": true,
+        "possible_phase_types": [
+          "+1",
+          "-1"
+        ],
+        "seven_dimension": 2
+      },
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+i",
+          "-i"
+        ],
+        "seven_dimension": 3
+      },
+      {
+        "can_match_signature_phase_minus_one": true,
+        "possible_phase_types": [
+          "+1",
+          "-1"
+        ],
+        "seven_dimension": 4
+      },
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+i",
+          "-i"
+        ],
+        "seven_dimension": 5
+      },
+      {
+        "can_match_signature_phase_minus_one": true,
+        "possible_phase_types": [
+          "+1",
+          "-1"
+        ],
+        "seven_dimension": 6
+      },
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+i",
+          "-i"
+        ],
+        "seven_dimension": 7
+      },
+      {
+        "can_match_signature_phase_minus_one": true,
+        "possible_phase_types": [
+          "+1",
+          "-1"
+        ],
+        "seven_dimension": 8
+      },
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+i",
+          "-i"
+        ],
+        "seven_dimension": 9
+      },
+      {
+        "can_match_signature_phase_minus_one": true,
+        "possible_phase_types": [
+          "+1",
+          "-1"
+        ],
+        "seven_dimension": 10
+      },
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+i",
+          "-i"
+        ],
+        "seven_dimension": 11
+      },
+      {
+        "can_match_signature_phase_minus_one": true,
+        "possible_phase_types": [
+          "+1",
+          "-1"
+        ],
+        "seven_dimension": 12
+      },
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+i",
+          "-i"
+        ],
+        "seven_dimension": 13
+      },
+      {
+        "can_match_signature_phase_minus_one": true,
+        "possible_phase_types": [
+          "+1",
+          "-1"
+        ],
+        "seven_dimension": 14
+      },
+      {
+        "can_match_signature_phase_minus_one": false,
+        "possible_phase_types": [
+          "+i",
+          "-i"
+        ],
+        "seven_dimension": 15
+      },
+      {
+        "can_match_signature_phase_minus_one": true,
+        "possible_phase_types": [
+          "+1",
+          "-1"
+        ],
+        "seven_dimension": 16
+      }
+    ],
+    "seven_primary_phase": "delta*i^(44-r), delta in {+1,-1}",
+    "signature": 44,
+    "surviving_ranks_in_imported_interval": [
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42
+    ],
+    "z9_exact_cyclotomic_checks": {
+      "1": {
+        "coefficient_counts": [
+          3,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0
+        ],
+        "normalized_phase": "+1",
+        "sum_minus_3_quotient_by_Phi9": "2*x"
+      },
+      "2": {
+        "coefficient_counts": [
+          3,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        "normalized_phase": "+1",
+        "sum_minus_3_quotient_by_Phi9": "2*x^2"
+      },
+      "4": {
+        "coefficient_counts": [
+          3,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0
+        ],
+        "normalized_phase": "+1",
+        "sum_minus_3_quotient_by_Phi9": "2*x"
+      },
+      "5": {
+        "coefficient_counts": [
+          3,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        "normalized_phase": "+1",
+        "sum_minus_3_quotient_by_Phi9": "2*x^2"
+      },
+      "7": {
+        "coefficient_counts": [
+          3,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0
+        ],
+        "normalized_phase": "+1",
+        "sum_minus_3_quotient_by_Phi9": "2*x"
+      },
+      "8": {
+        "coefficient_counts": [
+          3,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        "normalized_phase": "+1",
+        "sum_minus_3_quotient_by_Phi9": "2*x^2"
+      }
+    }
+  },
+  "scope": "conditional consequences of a hypothetical srg(99,14,1,2)",
+  "spherical_embeddings": {
+    "equiangular_lift": {
+      "adjacent": "-1/7",
+      "common_absolute_inner_product": "1/7",
+      "dimension": 45,
+      "nonadjacent": "1/7"
+    },
+    "rank_44": {
+      "adjacent_inner_product": "-2/7",
+      "nonadjacent_inner_product": "1/28"
+    },
+    "rank_54": {
+      "adjacent_inner_product": "3/14",
+      "nonadjacent_inner_product": "-1/21"
+    }
+  },
+  "srg_parameters": {
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "restricted_eigenvalues": {
+      "-4": 44,
+      "3": 54
+    },
+    "v": 99
+  }
+}

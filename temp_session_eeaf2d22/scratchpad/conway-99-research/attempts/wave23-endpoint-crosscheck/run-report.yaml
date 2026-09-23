@@ -1,0 +1,91 @@
+role: proof_b
+date_utc: "2026-07-23T19:43:07Z"
+git_commit: "667463c93e9836085ba09428ca21bf57f2fd10c5"
+claim_label: DERIVED
+scope: >-
+  Conditional exclusion of n3=705 for a putative srg(99,14,1,2), using
+  only the audited Wave-20 global-Schur and Wave-21 projection-lattice
+  premises.
+inputs:
+  - path: verification/2026-07-23-wave20-global-schur-audit.md
+    sha256: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  - path: attempts/wave20-global-obstruction/independent-verifier/independent-results.json
+    sha256: 575939f9abe19e5578a2efd1155495877c2080944c75cc0db6702c21a9ce2637
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave21-lattice-extension/independent-results.json
+    sha256: 735ff677e7837f14ec2a52cbccd827d30abc5eee68ee5e4f8e2bd6a9e5bd21b1
+  - path: verification/wave21-lattice-extension/theorem-sources.md
+    sha256: 7f70a36ad124a94d983771274cb7b925a4f2560d835b0f607563045110107f8f
+method: >-
+  Freeze the audited inputs; derive that S=21G^{-1} is even integral
+  positive definite with determinant h; use B=I+2C, trace 48, and rank 44
+  to force trace(B^2)>=60; apply Newton and Maclaurin to obtain
+  det(B)<43; combine det(B)=h det(Q), det(Q)>=5, 3,7-smoothness, and the
+  scaled-dual signature obstruction; then replay exact hostile relaxations.
+command: >-
+  python -B attempts/wave23-endpoint-crosscheck/exact_check.py --output
+  attempts/wave23-endpoint-crosscheck/exact-results.json
+test_command: >-
+  python -B -m unittest discover -s attempts/wave23-endpoint-crosscheck -p
+  test_exact_check.py -v
+outputs:
+  - path: agents/2026-07-23-wave23-endpoint-crosscheck.md
+    sha256: 11b0af31813748c903d67304d019c474a3d8660997744484d33f5d4c9c48c072
+  - path: attempts/wave23-endpoint-crosscheck/input-freeze.sha256
+    sha256: 48d7f4a9340f20140e0c83cb49235f523ad87f6fb46057e9a387487293edbce0
+  - path: attempts/wave23-endpoint-crosscheck/exact_check.py
+    sha256: 92c480e4b4c45f528f41f825d522982cd273c952104a7fe134b1b4acc161b2da
+  - path: attempts/wave23-endpoint-crosscheck/test_exact_check.py
+    sha256: 24ae053c2508e8e30c9118d9a58e90b2cf445b536df0de6066ec43143e850bb6
+  - path: attempts/wave23-endpoint-crosscheck/exact-results.json
+    sha256: 1b31074d0fe4872c14caf1e25842377e4ddab9860f241d87d2814a350ac100a4
+  - path: attempts/wave23-endpoint-crosscheck/failed-runs.md
+    sha256: ca5f7078e352a1406c9260ead56f2f5cb9c775e1c9099e0ef5b2746190ecc8bb
+  - path: attempts/wave23-endpoint-crosscheck/failed-routes.md
+    sha256: 86e14750167d09ec330a801af5f81e5d1f3bc7f8ed4b56866de5d9ff5bb62abe
+limitations:
+  - The claim is DERIVED and still requires an independent verifier.
+  - The proof imports audited prose-to-lattice bridges rather than reconstructing a graph.
+  - The even-unimodular signature theorem remains an external mathematical premise.
+  - No adjacency matrix or graph construction is supplied.
+  - Target existence and literature novelty remain UNKNOWN.
+result:
+  n3_endpoint: 705
+  rank_B: 44
+  trace_B: 48
+  trace_B2_mod_8: 4
+  minimum_trace_B2: 60
+  minimum_trace_A4_squared: 26460
+  e2_upper: 1122
+  normalized_e2: "51/43"
+  strict_determinant_upper: 43
+  integer_determinant_cap: 42
+  determinant_index_pairs_after_all_constraints: []
+  endpoint_excluded: true
+  conditional_n3_lower_bound: 708
+  conditional_induced_C6_lower_bound: 209994
+  tests: "25/25 PASS"
+  graph_construction: false
+  target_status: UNKNOWN
+  novelty: NOT_ASSESSED
+correction:
+  date_utc: "2026-07-23T20:00:47Z"
+  frozen_discovery_commit: b3763368049422b5f10f949a8ac02b14ec0fb54f
+  verifier_commit: a6771108ec00bddfcc8ae5b41779760673fef22e
+  verifier_audit:
+    path: verification/wave23-endpoint-crosscheck/2026-07-23T195158Z-audit.md
+    sha256: 56cf0b8c14f9af50a58e60a8a6a273726a79d15782527ff8ea46194e9dea5d8c
+  superseded_invalid_control:
+    h: 9
+    det_Q: 3
+    det_B: 27
+    defect: violates the retained condition det(B)=1 mod 4
+  repaired_single_relaxation:
+    omitted_condition: even-unimodular signature obstruction at det(Q)=1
+    survivor:
+      h: 9
+      det_Q: 1
+      det_B: 9
+    retained_mod_4_residues: true
+  main_proof_changed: false

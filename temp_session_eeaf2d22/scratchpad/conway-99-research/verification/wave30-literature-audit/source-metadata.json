@@ -1,0 +1,480 @@
+{
+  "schema_version": 1,
+  "audit_date_utc": "2026-07-24",
+  "retention_policy": "Metadata and concise paraphrases only; no paper, raw HTML, XML feed, or raw API payload retained.",
+  "record_count": 21,
+  "records": [
+    {
+      "id": "S01",
+      "source_type": "journal_article",
+      "title": "Klassenzahlen definiter quadratischer Formen",
+      "authors": [
+        "Martin Kneser"
+      ],
+      "year": 1957,
+      "venue": "Archiv der Mathematik 8, 241-250",
+      "identifiers": {
+        "doi": "10.1007/BF01898782",
+        "url": "https://link.springer.com/article/10.1007/BF01898782"
+      },
+      "inspected": "Publisher metadata and bibliographic record.",
+      "supports": "Primary provenance for the neighboring method used to traverse classes of definite quadratic forms.",
+      "does_not_support": "Does not identify the five 2-neighbors from K12 orthogonal_sum E8, the root-count sequence, T20, either frozen signature, or novelty.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S02",
+      "source_type": "research_survey",
+      "title": "Kneser's Method of Neighbors",
+      "authors": [
+        "John Voight"
+      ],
+      "year": 2024,
+      "venue": "Author-hosted research survey",
+      "identifiers": {
+        "url": "https://jvoight.github.io/articles/kneser-033024.pdf"
+      },
+      "inspected": "Title, bibliographic metadata, definitions, and scope statements.",
+      "supports": "Modern account of p-neighbor definitions, construction, and stated connectivity results.",
+      "does_not_support": "Does not state or classify Signature B's five-step route and does not support Signature A.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "Voight2024Kneser"
+      }
+    },
+    {
+      "id": "S03",
+      "source_type": "journal_article",
+      "title": "Constructing integral lattices with prescribed minimum. II",
+      "authors": [
+        "Wilhelm Plesken",
+        "Michael Pohst"
+      ],
+      "year": 1993,
+      "venue": "Mathematics of Computation 60(202), 817-825",
+      "identifiers": {
+        "doi": "10.1090/S0025-5718-1993-1176715-1",
+        "url": "https://doi.org/10.1090/S0025-5718-1993-1176715-1"
+      },
+      "inspected": "Crossref metadata, catalogue citations, and available abstract-level description.",
+      "supports": "Nearby primary prior art on constructing integral laminated lattices of prescribed minimum four, including rank-20 catalogue entries.",
+      "does_not_support": "Its rank-20 catalogue descendants KAPPA20 and LAMBDA20 have determinants and kissing numbers different from T20; no exact Gram, five-neighbor route, or Signature A was found.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S04",
+      "source_type": "journal_article",
+      "title": "Classification of integral lattices with large class number",
+      "authors": [
+        "Rudolf Scharlau",
+        "Boris Hemkemeier"
+      ],
+      "year": 1998,
+      "venue": "Mathematics of Computation 67(222), 737-749",
+      "identifiers": {
+        "doi": "10.1090/S0025-5718-98-00938-7",
+        "url": "https://doi.org/10.1090/S0025-5718-98-00938-7"
+      },
+      "inspected": "Crossref metadata and bibliographic references.",
+      "supports": "Conceptual classification context for integral-lattice genera and class enumeration.",
+      "does_not_support": "No theorem, table, or metadata match to either frozen signature was found; it is not a complete classification of the relevant determinant-729 rank-20 genus.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S05",
+      "source_type": "author_maintained_catalogue",
+      "title": "A Catalogue of Lattices",
+      "authors": [
+        "Gabriele Nebe",
+        "Neil J. A. Sloane"
+      ],
+      "year": null,
+      "venue": "RWTH Aachen Catalogue of Lattices",
+      "identifiers": {
+        "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/"
+      },
+      "inspected": "Index, dimension-20 and dimension-24 listings, search result for 5076, catalogue size statement, and warning.",
+      "supports": "A broad author-maintained index reporting about 160,000 lattice entries and linking standard rank-20, K12, E8, and Leech records.",
+      "does_not_support": "The catalogue explicitly warns that not all entries have been checked and is not exhaustive novelty evidence; no 5076 index hit was found.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S06",
+      "source_type": "author_maintained_catalogue_entry",
+      "title": "The Lattice KAPPA20",
+      "authors": [
+        "Gabriele Nebe",
+        "Neil J. A. Sloane"
+      ],
+      "year": null,
+      "venue": "RWTH Aachen Catalogue of Lattices",
+      "identifiers": {
+        "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/KAPPA20.html"
+      },
+      "inspected": "Dimension, determinant, minimum, kissing number, Gram metadata, and references.",
+      "supports": "A nearby rank-20 minimum-four integral lattice from the Plesken-Pohst construction literature.",
+      "does_not_support": "KAPPA20 has determinant 81 and kissing number 15390, not determinant 729 and 5076; it is not T20.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S07",
+      "source_type": "author_maintained_catalogue_entry",
+      "title": "The Lattice LAMBDA20",
+      "authors": [
+        "Gabriele Nebe",
+        "Neil J. A. Sloane"
+      ],
+      "year": null,
+      "venue": "RWTH Aachen Catalogue of Lattices",
+      "identifiers": {
+        "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/LAMBDA20.html"
+      },
+      "inspected": "Dimension, determinant, minimum, kissing number, Gram metadata, and references.",
+      "supports": "A standard rank-20 minimum-four laminated lattice useful as a numeric near-match control.",
+      "does_not_support": "LAMBDA20 has determinant 64 and kissing number 17400, not determinant 729 and 5076; it is not T20.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S08",
+      "source_type": "author_maintained_catalogue_entry",
+      "title": "The Lattice K12 (The Coxeter-Todd Lattice)",
+      "authors": [
+        "Gabriele Nebe",
+        "Neil J. A. Sloane"
+      ],
+      "year": null,
+      "venue": "RWTH Aachen Catalogue of Lattices",
+      "identifiers": {
+        "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/K12.html"
+      },
+      "inspected": "Rank, determinant, minimum, kissing number, integrality, 3-modularity, and displayed matrices.",
+      "supports": "Standard metadata for the rank-12 determinant-729 minimum-four 3-modular starting block K12.",
+      "does_not_support": "Does not give the K12 orthogonal_sum E8 neighbor route, T20, the final 5076 shell, or Signature A.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "NebeSloaneK12"
+      }
+    },
+    {
+      "id": "S09",
+      "source_type": "author_maintained_catalogue_entry",
+      "title": "The Lattice E8",
+      "authors": [
+        "Gabriele Nebe",
+        "Neil J. A. Sloane"
+      ],
+      "year": null,
+      "venue": "RWTH Aachen Catalogue of Lattices",
+      "identifiers": {
+        "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/E8.html"
+      },
+      "inspected": "Rank, determinant, minimum, root count, and displayed matrices.",
+      "supports": "Standard metadata for the rank-8 determinant-one E8 starting block.",
+      "does_not_support": "Does not give the five-neighbor route, T20, or Signature A.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "NebeSloaneE8"
+      }
+    },
+    {
+      "id": "S10",
+      "source_type": "author_maintained_catalogue_entry",
+      "title": "The Leech Lattice LAMBDA24",
+      "authors": [
+        "Gabriele Nebe",
+        "Neil J. A. Sloane"
+      ],
+      "year": null,
+      "venue": "RWTH Aachen Catalogue of Lattices",
+      "identifiers": {
+        "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/Leech.html"
+      },
+      "inspected": "Catalogue index and linked standard Leech-lattice metadata.",
+      "supports": "Standard rank-24 rootless even-unimodular complement used in the bare direct sum.",
+      "does_not_support": "Does not identify T20, supply the 44-dimensional endpoint frame package, or prove Signature A.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S11",
+      "source_type": "journal_article_and_preprint",
+      "title": "On theta series attached to maximal lattices and their adjoints",
+      "authors": [
+        "Siegfried Boecherer",
+        "Gabriele Nebe"
+      ],
+      "year": 2010,
+      "venue": "Journal of the Ramanujan Mathematical Society 25, 265-284",
+      "identifiers": {
+        "arxiv": "0909.1184",
+        "url": "https://arxiv.org/abs/0909.1184"
+      },
+      "inspected": "Abstract and theorem/table-level statements, including the rank-20 3-elementary discussion.",
+      "supports": "Nearby primary prior art on theta series of maximal even exact-level-N determinant-N^2 lattices and dual-extremal 3-elementary examples.",
+      "does_not_support": "For N=3 its exact setting has determinant 9, not 729. Its unique rank-20 dual-extremal 3-elementary statement is in a different genus, and the displayed full-genus class number is not computed; it does not identify T20 or Signature A.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S12",
+      "source_type": "journal_article_and_preprint",
+      "title": "Frames over finite fields: Equiangular lines in orthogonal geometry",
+      "authors": [
+        "Gary R. W. Greaves",
+        "Joseph W. Iverson",
+        "John Jasper",
+        "Dustin G. Mixon"
+      ],
+      "year": 2022,
+      "venue": "Linear Algebra and its Applications 639, 50-80",
+      "identifiers": {
+        "doi": "10.1016/j.laa.2021.11.024",
+        "arxiv": "2012.13642",
+        "url": "https://arxiv.org/abs/2012.13642"
+      },
+      "inspected": "Abstract and Example 5.5 metadata/theorem context.",
+      "supports": "Related primary prior art connecting strongly regular graphs and equiangular tight frames over finite fields; a hypothetical Conway graph yields a (2,1,4)-ETF of 100 vectors in F5^45.",
+      "does_not_support": "The finite-field 100-by-45 ETF is categorically and numerically different from Signature A's real integral 231-row rank-44 endpoint, and it does not state either frozen signature.",
+      "bibtex_mapping": {
+        "status": "absent",
+        "key": null
+      }
+    },
+    {
+      "id": "S13",
+      "source_type": "journal_article",
+      "title": "Spherical Codes and Designs",
+      "authors": [
+        "Philippe Delsarte",
+        "Jean-Marie Goethals",
+        "Johan J. Seidel"
+      ],
+      "year": 1977,
+      "venue": "Geometriae Dedicata 6(3), 363-388",
+      "identifiers": {
+        "doi": "10.1007/BF03187604",
+        "url": "https://doi.org/10.1007/BF03187604"
+      },
+      "inspected": "Bibliographic metadata and theorem scope.",
+      "supports": "Foundational spherical-code and design terminology relevant to alternate searches for shells and Euclidean representations.",
+      "does_not_support": "Does not contain the exact decomposable h=729 classification, T20, or the numerical fingerprints.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "DelsarteGoethalsSeidel1977"
+      }
+    },
+    {
+      "id": "S14",
+      "source_type": "journal_article",
+      "title": "Finite Normalized Tight Frames",
+      "authors": [
+        "John J. Benedetto",
+        "Matthew Fickus"
+      ],
+      "year": 2003,
+      "venue": "Advances in Computational Mathematics 18, 357-385",
+      "identifiers": {
+        "doi": "10.1023/A:1021323312367",
+        "url": "https://doi.org/10.1023/A:1021323312367"
+      },
+      "inspected": "Bibliographic metadata and theorem scope.",
+      "supports": "Standard finite normalized tight-frame theory and terminology.",
+      "does_not_support": "Does not supply the 105/126 row split, traces 36/24, determinant allocation, fourteen exclusions, or T20.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "BenedettoFickus2003"
+      }
+    },
+    {
+      "id": "S15",
+      "source_type": "journal_article",
+      "title": "On the automorphism group of a putative Conway 99-graph",
+      "authors": [
+        "Patrick G. Cesarz",
+        "Andrew J. Woldar"
+      ],
+      "year": 2025,
+      "venue": "Algebraic Combinatorics 8(2), 379-398",
+      "identifiers": {
+        "doi": "10.5802/alco.418",
+        "url": "https://alco.centre-mersenne.org/articles/10.5802/alco.418/"
+      },
+      "inspected": "Publisher abstract, article metadata, and scope.",
+      "supports": "A current refereed primary source explicitly describing existence of the Conway 99-graph as an elusive open problem and proving conditional automorphism restrictions.",
+      "does_not_support": "Does not construct or exclude the graph and does not state either frozen signature.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "CesarzWoldar2025"
+      }
+    },
+    {
+      "id": "S16",
+      "source_type": "current_preprint",
+      "title": "Approaching the Conway-99 problem using SAT solvers",
+      "authors": [
+        "Ali Keramatipour"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint, version 2",
+      "identifiers": {
+        "arxiv": "2604.23037",
+        "url": "https://arxiv.org/abs/2604.23037"
+      },
+      "inspected": "Current arXiv metadata, version history, and abstract/full-text status language.",
+      "supports": "A current primary computational attempt reporting that the finite search remains too demanding for the attempted SAT approaches.",
+      "does_not_support": "Does not resolve Conway-99 and does not contain either frozen signature.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "Keramatipour2026"
+      }
+    },
+    {
+      "id": "S17",
+      "source_type": "journal_article",
+      "title": "Minimum 2-Percolating Sets in 2-Connected, Diameter 2 Graphs",
+      "authors": [
+        "Rayan Ibrahim",
+        "Hudson LaFayette",
+        "Kevin McCall"
+      ],
+      "year": 2025,
+      "venue": "Australasian Journal of Combinatorics 93(1), 60-89",
+      "identifiers": {
+        "url": "https://ajc.maths.uq.edu.au/pdf/93/ajc_v93_p060.pdf"
+      },
+      "inspected": "Relevant theorem and status discussion concerning the putative (99,14,1,2) graph.",
+      "supports": "A current primary article whose relevant discussion treats the Conway graph as unknown and gives conditional consequences.",
+      "does_not_support": "Does not construct or exclude the graph and does not state either frozen signature.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "IbrahimLaFayetteMcCall2025"
+      }
+    },
+    {
+      "id": "S18",
+      "source_type": "journal_article_and_preprint",
+      "title": "The Lower Bound for Number of Hexagons in Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "authors": [
+        "Reimbay Reimbayev"
+      ],
+      "year": 2024,
+      "venue": "e-Journal of Analysis and Applied Mathematics 2024, 1-14",
+      "identifiers": {
+        "doi": "10.62780/ejaam/2024-001",
+        "arxiv": "2409.10620",
+        "url": "https://arxiv.org/abs/2409.10620"
+      },
+      "inspected": "Abstract and target-problem framing.",
+      "supports": "Recent primary work treating the Conway parameter set as a longstanding question and deriving structural count bounds for the parameter family.",
+      "does_not_support": "Does not construct or exclude the target graph and does not state either frozen signature.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "Reimbayev2024"
+      }
+    },
+    {
+      "id": "S19",
+      "source_type": "institutional_notice",
+      "title": "Non-existence of the Strongly Regular Graph srg(85,14,3,2)",
+      "authors": [
+        "Hebei Normal University"
+      ],
+      "year": 2026,
+      "venue": "Institutional seminar notice for a lecture by Sergey Shpectorov",
+      "identifiers": {
+        "url": "https://www.hebtu.edu.cn/a/2026/06/24/AD3624B468444197AA2464C61CBDEE63.html"
+      },
+      "inspected": "Institutional notice and described lecture scope.",
+      "supports": "Corroborates that a June 2026 seminar proposed only a possible analogous approach to Conway-99 after a different nonexistence result.",
+      "does_not_support": "Not a primary theorem source for Conway-99 and does not announce a result for (99,14,1,2).",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "HebeiShpectorov2026"
+      }
+    },
+    {
+      "id": "S20",
+      "source_type": "journal_article",
+      "title": "The Coxeter-Todd Lattice, the Mitchell Group, and Related Sphere Packings",
+      "authors": [
+        "John H. Conway",
+        "Neil J. A. Sloane"
+      ],
+      "year": 1983,
+      "venue": "Mathematical Proceedings of the Cambridge Philosophical Society 93, 421-440",
+      "identifiers": {
+        "doi": "10.1017/S0305004100060746",
+        "url": "https://neilsloane.com/doc/Me107.pdf"
+      },
+      "inspected": "Title, abstract-level provenance, and catalogue cross-reference.",
+      "supports": "Primary provenance and constructions for the Coxeter-Todd lattice K12.",
+      "does_not_support": "Does not state the K12 orthogonal_sum E8 five-neighbor route, T20, or Signature A.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "ConwaySloane1983CoxeterTodd"
+      }
+    },
+    {
+      "id": "S21",
+      "source_type": "author_maintained_catalogue_page",
+      "title": "Modular Lattices, Together With a Table of the Best Such Lattices",
+      "authors": [
+        "Gabriele Nebe",
+        "Neil J. A. Sloane"
+      ],
+      "year": null,
+      "venue": "RWTH Aachen Catalogue of Lattices",
+      "identifiers": {
+        "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/modular.html"
+      },
+      "inspected": "Definitions, similarity convention, and dimension-20 table context.",
+      "supports": "Authoritative terminology for modular and strongly modular lattices used in alternate-name searches.",
+      "does_not_support": "The weaker containments 3*T20^(-1) and 21*T20^(-1) even integral do not establish a similarity to the dual; no exact T20 record was found.",
+      "bibtex_mapping": {
+        "status": "present",
+        "key": "NebeSloaneModularLattices"
+      }
+    }
+  ],
+  "source_quality_exclusions": [
+    {
+      "label": "Preprints.org Lyons lattice page",
+      "reason": "Self-published/generative presentation with statements inconsistent with elementary even-unimodular rank constraints; not used as evidence."
+    },
+    {
+      "label": "W33 Theory numerology page",
+      "reason": "Self-published, irrelevant numeric coincidence; not used as evidence."
+    },
+    {
+      "label": "Search snippets and generic numeric hits",
+      "reason": "Discovery aids only; not treated as evidence."
+    }
+  ],
+  "conclusion": {
+    "code": "NO_EXACT_PRIOR_RESULT_FOUND_IN_SEARCHED_SOURCES",
+    "novelty": "UNKNOWN",
+    "global_conway_99_status": "UNKNOWN"
+  }
+}

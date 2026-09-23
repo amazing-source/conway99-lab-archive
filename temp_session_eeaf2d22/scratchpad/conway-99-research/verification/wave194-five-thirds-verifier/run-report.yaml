@@ -1,0 +1,53 @@
+role: verifier
+date_utc: 2026-07-29T03:36:03Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: independently verify the
+  type-two exact-three residual, same-label double-residual separation,
+  complete residual-pool collision audit, split exact-one/exact-three
+  capacity, k-cancelled type-three label-union row, exact certificate
+  3Q>=5C, Q>=6930, and its arithmetic equality face.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  attempts/wave194-type2-residual-low-u-proof-a/package-manifest.sha256: 0ba610983dff7365f7debd42b8155c07edcc5e64e5afb4e4d6529e6d1c0ad5a4
+  attempts/wave194-five-thirds-proof-b-audit/package-manifest.sha256: 0e77b279efec786e3abab371b614061ea1624499c32549861c68fe9daba17918
+  verification/wave181-c4-conic-equality/package-manifest.sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  verification/wave188-affine-star-word-amplification-verifier/package-manifest.sha256: e58bd132b1e1579f5e4e6570d7e0b4318a6c5f970342d4b9493e0c35a3c0dc74
+  verification/wave189-degree7-star-orbit-verifier/package-manifest.sha256: fc17484bd8c32a5886ecdcc65d153903cef5f3b60a3de1c9905ed96697c273c4
+  verification/wave191-exact-three-residual-verifier/package-manifest.sha256: a14f43310fb5ead05c4bd50b376f3d9d90ec77a92bc00f8c3b7326013f975ab2
+  verification/wave193-global-low-target-verifier/package-manifest.sha256: 46d635ab7ca365a91a2db0fa76f34819475e41b55ff34743a335e9c93f014375
+method: >-
+  Clean-room F3 support geometry, minimal-circuit extraction, exact
+  multiplicity and companion-center collision analysis, private-label union
+  accounting, exact Fraction coefficient expansion, symbolic equality-face
+  reconstruction, and frozen-manifest validation. No graph, cover, code,
+  SAT, LP, configuration, enumeration, isomorphism, or brute-force search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave194-five-thirds-verifier\independent_check.py
+  --verify-math
+  verification\wave194-five-thirds-verifier\independent-math-result.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave194-five-thirds-verifier\independent_check.py --verify
+  verification\wave194-five-thirds-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave194-five-thirds-verifier\test_independent_check.py
+outputs:
+  verification/wave194-five-thirds-verifier/README.md: a8eac4becc7dbd599a8f0d840cc3ae33053008a83c2bdd7379a6f8883917f9a6
+  verification/wave194-five-thirds-verifier/audit.md: 35f5b6011a4373e87fa922e856a24fd6fb98216950dd9c6dce565cc2e5df7305
+  verification/wave194-five-thirds-verifier/protocol.md: d3530cabacf54860d948c4d260b026c28a764015f2182de49a1f81dae3f37363
+  verification/wave194-five-thirds-verifier/independent_check.py: 27411ae26912456f5053d32ddcdf022e48b26a9a503a36afbd265a463c78724e
+  verification/wave194-five-thirds-verifier/independent-math-result.json: de84e57eb8c2cafa8d8d0621c54ddcb1dd64b0f78886d9ed4656e02a5764c0d0
+  verification/wave194-five-thirds-verifier/independent-result-freeze.sha256: c9fd26bf1bb0a73904f985847bfeda9bc8bce96c8b80e41301eac754a47938da
+  verification/wave194-five-thirds-verifier/independent-results.json: ffd643a2591d8abe3d0e334cbaed0aebf6c4ea81ee01d95a43e2b6be6a57b274
+  verification/wave194-five-thirds-verifier/test_independent_check.py: c6cb96c1595e8a46b80c30c08320c5aba05560dfab0342d52090199b6fea97e6
+  verification/wave194-five-thirds-verifier/input-freeze.sha256: 56517ea5d2f3329c4839d087a83906425ebb61b27e6cca8cfd09ec7421db364f
+limitations:
+  - The result is conditional on the frozen prism-free rank-11 endpoint.
+  - Equality rows and five-circuit packets are arithmetic/accounting only.
+  - No globally compatible packet system, endpoint, cover, code, or graph
+    is constructed.
+  - The bound supplies no incompatible upper bound.
+  - Rank 11, endpoint existence, strict original n3 improvement, external
+    novelty, and Conway-99 remain UNKNOWN.

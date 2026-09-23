@@ -1,0 +1,62 @@
+{
+  "format": "conway-research-wave-v1",
+  "wave": 2,
+  "date_utc": "2026-07-22T20:50:00Z",
+  "source_commit": "b34f73e1e8a857d495be10325b45943c15b6380e",
+  "target_result": "UNKNOWN",
+  "evidence_status": "VERIFIED_INFRASTRUCTURE_AND_NECESSARY_CONDITIONS_WITH_NON_EVIDENTIARY_TARGET_SCOUT",
+  "command": ".venv\\Scripts\\python.exe code\\scout_branches.py --cardinality native --fresh-solvers --conflict-budget 10000 --output logs\\2026-07-22-native-10000.json",
+  "inputs": [
+    {
+      "path": "code/sat_model.py",
+      "sha256": "6e0adfbd3684f1948087e62f796b4302d6088173ee2d179213f13c3634e0b086"
+    },
+    {
+      "path": "code/scout_branches.py",
+      "sha256": "1e63870c23e05142f75b5ecfa247c384645eee2757bae9419a9c452cc41cba24"
+    },
+    {
+      "path": "requirements-search.txt",
+      "sha256": "262f4a1a62fab79ee790da44b9f923b14ed77bafe6e9a6732846953ee9c622ce"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "logs/2026-07-22-native-10000.json",
+      "sha256": "3b1f502902959ae3cd3e822f7d591f483a38378335a0f7edebee9ba40f1d5161"
+    }
+  ],
+  "environment": {
+    "python": "3.13.14",
+    "python_sat": "1.9.dev7",
+    "minicard": "1.2",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "encoding": {
+    "variables": 289338,
+    "ordinary_clauses": 285852,
+    "native_atmost_constraints": 5838,
+    "branch_count": 11,
+    "complete_branch_cover": true,
+    "completed_graph_automorphism_assumed": false
+  },
+  "result": {
+    "branches_run": 11,
+    "conflict_budget_per_branch": 10000,
+    "outcomes": {
+      "UNKNOWN": 11,
+      "SAT_MODEL": 0,
+      "UNSAT_VERIFIED": 0
+    }
+  },
+  "verification": [
+    "verification/2026-07-22-wave2-audit.md",
+    "verification/2026-07-22-lrat-calibration.md"
+  ],
+  "limitations": [
+    "The target cutoff is a branch-ranking experiment and has no mathematical evidentiary value.",
+    "MiniCard does not provide the accepted UNSAT proof path.",
+    "No target certificate or target UNSAT proof was produced.",
+    "Clean-clone replay of the full Wave 2 package remains pending."
+  ]
+}

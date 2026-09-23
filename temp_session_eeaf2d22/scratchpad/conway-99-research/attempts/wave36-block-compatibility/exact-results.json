@@ -1,0 +1,230 @@
+{
+  "claim_label": "DERIVED",
+  "format": "wave36-block-compatibility-v1",
+  "frozen_scope": {
+    "endpoint": "n3=4158, equivalently no induced triangular prisms",
+    "partition_sizes_T_X_Y": [
+      3,
+      36,
+      60
+    ],
+    "public_input_commit": "697cc02bcbe16b69aaf08822298e03c66329c64c"
+  },
+  "general_core_theorem": {
+    "complete_fixed_core_reduction": [
+      "Choose two permutations pairing the 60 allowed edges in fibre 0 with those in fibres 1 and 2.",
+      "Require the three cross-fibre concurrence matrices to equal the off-diagonal blocks of B B^T.",
+      "Require the per-column mixed-equation cut d(b)>=0.",
+      "Choose a simple symmetric 8-regular H and enforce the exact xy and yy equations above.",
+      "The resulting 3+36+60 block matrix satisfies A^2=12I-A+2J and is a full srg(99,14,1,2) certificate."
+    ],
+    "component_balance": {
+      "block_moments": "For z_y=|b_y intersect C|, sum_y z_y=30m and sum_y z_y^2=15m^2.",
+      "component_shape": "Every X component has m vertices in each fibre and 3m total.",
+      "disconnected_pattern_constraints": {
+        "12": {
+          "per_fibre_counts_z0_z1_z2": [
+            0,
+            0,
+            60
+          ],
+          "total_pattern_counts": {
+            "2_2_2": 60
+          }
+        },
+        "4": {
+          "orientation_counts": {
+            "1_1_0_with_each_zero_coordinate": 16,
+            "2_0_0_with_each_double_coordinate": 4
+          },
+          "per_fibre_counts_z0_z1_z2": [
+            24,
+            32,
+            4
+          ],
+          "total_pattern_counts": {
+            "permutations_of_1_1_0": 48,
+            "permutations_of_2_0_0": 12
+          }
+        },
+        "6": {
+          "orientation_constraints": "The 3-by-3 zero-diagonal count matrix indexed by (double coordinate, zero coordinate) has every row and column sum 12.",
+          "per_fibre_counts_z0_z1_z2": [
+            12,
+            36,
+            12
+          ],
+          "total_pattern_counts": {
+            "1_1_1": 24,
+            "permutations_of_2_1_0": 36
+          }
+        },
+        "8": {
+          "orientation_counts": {
+            "2_1_1_with_each_double_coordinate": 16,
+            "2_2_0_with_each_zero_coordinate": 4
+          },
+          "per_fibre_counts_z0_z1_z2": [
+            4,
+            32,
+            24
+          ],
+          "total_pattern_counts": {
+            "permutations_of_2_1_1": 48,
+            "permutations_of_2_2_0": 12
+          }
+        }
+      },
+      "equality_consequence": "All 60 blocks satisfy z_y=m/2; hence every component parameter m is even.",
+      "m_equals_2_exclusion": "A connected cubic triangle-free graph on six vertices is K_3,3, whose same-side nonedges have three common X-neighbors, contradicting mu=2.",
+      "partition_coupling": {
+        "4+4+4": "Per block the only component-pattern combinations are balanced AAA, aligned ABB, or balanced BBB, where A is a permutation of (2,0,0) and B of (1,1,0).",
+        "4+8": "The m=8 pattern is the coordinatewise complement 2-z of the m=4 pattern.",
+        "6+6": "The two m=6 patterns are coordinatewise complements."
+      },
+      "per_fibre_moments": "For z_iy=|b_y intersect (C cap X_i)|, sum_y z_iy=10m, sum_y z_iy^2=m^2+8m, and sum_y z_iy z_jy=2m(m-2) for i!=j.",
+      "surviving_component_partitions_of_12": [
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          12
+        ]
+      ]
+    },
+    "forced_equations": {
+      "xx": "B B^T = 12I - A_X + 2J - R R^T - A_X^2",
+      "xy": "B H = 2J - (I + A_X) B = (J/3 - I - A_X) B",
+      "yy": "B^T B + H^2 = 12I - H + 2J"
+    },
+    "hypotheses": [
+      "A_X is the cubic triangle-free 36-vertex core induced by a base triangle.",
+      "Its three 12-point fibres have quotient matrix J_3.",
+      "B is a binary 36-by-60 matrix with two ones per fibre in every column.",
+      "H is a simple symmetric 60-by-60 adjacency matrix completing the SRG block equations."
+    ],
+    "per_column_cut": {
+      "consequence": "Every coordinate of d(b) is nonnegative.",
+      "formula": "d(b)=2*1-(I+A_X)b=B h_y",
+      "inside_B": "A_X[B] has maximum degree at most one.",
+      "outside_B": "No outside X vertex has three neighbors in B.",
+      "sum": 48
+    },
+    "pointwise_triangle_transfer": {
+      "X-X-y_triangles": "e_y",
+      "X-Y-y_triangles": "6-2e_y",
+      "Y-Y-y_triangles": "1+e_y",
+      "definition": "e_y=number of A_X edges induced by block b_y",
+      "global_sum_e_y": 36
+    },
+    "spectral_transfer": {
+      "H_connected": "Yes: the displayed spectrum has exactly one eigenvalue 8.",
+      "H_four_cycle_count": "171+C4(A_X)",
+      "H_triangle_count": 32,
+      "characteristic_polynomial": "If chi_X(t)=(t-3)^c t^2 f(t), then chi_H(t)=(-1)^(34-c)(t-8)(t-3)^18(t+4)^(7+c)f(-1-t).",
+      "component_parameter": "c=number of connected components of A_X",
+      "gram_rank": "rank(B B^T)=35-c",
+      "kernel_action": "H on ker(B) has spectrum 3^18,(-4)^(7+c)",
+      "row_space_action": "H on im(B^T) has eigenvalue 8 and eigenvalues -1-lambda for every non-quotient, non-component-3 eigenvalue lambda of A_X"
+    }
+  },
+  "limitations": [
+    "The restricted core fixes one derangement and three within-fibre one-factors.",
+    "The 151712 survivors are individual columns, not a simultaneous 60-column design.",
+    "No compatible H, full graph, endpoint exclusion, or upper-bound improvement is supplied.",
+    "The spectral-transfer theorem is derived here but is not self-promoted to VERIFIED.",
+    "Conway-99 and n3=4158 remain UNKNOWN."
+  ],
+  "restricted_core": {
+    "adjacency_sha256_upper_triangle_bits": "f97aa806e08ddeb789be3f1fc604879a1630a6f1b8a21d899dbcd57772c998c5",
+    "connected_component_count": 1,
+    "degree_set": [
+      3
+    ],
+    "edge_count": 54,
+    "four_cycle_count": 0,
+    "gram_rational_rank": 34,
+    "individual_block_census": {
+      "allowed_pair_count_per_fibre": [
+        60,
+        60,
+        60
+      ],
+      "mixed_equation_survivor_count": 151712,
+      "old_by_internal_X_edges": {
+        "0": 68774,
+        "1": 90364,
+        "2": 24138,
+        "3": 704
+      },
+      "old_induced_matching_count": 183980,
+      "rejected_by_negative_entry_count": {
+        "1": 30940,
+        "2": 1316,
+        "3": 12
+      },
+      "removed_by_mixed_equation": 32268,
+      "survivors_by_internal_X_edges": {
+        "0": 52868,
+        "1": 76036,
+        "2": 22104,
+        "3": 704
+      },
+      "transfer_target_signature_n0_n1_n2": {
+        "0,24,12": 317,
+        "1,22,13": 3227,
+        "10,4,22": 7,
+        "11,2,23": 2,
+        "2,20,14": 12989,
+        "3,18,15": 29991,
+        "4,16,16": 40658,
+        "5,14,17": 35461,
+        "6,12,18": 20250,
+        "7,10,19": 7232,
+        "8,8,20": 1440,
+        "9,6,21": 138
+      }
+    },
+    "kernel_H_power_traces_1_to_4": {
+      "1": 22,
+      "2": 290,
+      "3": -26,
+      "4": 3506
+    },
+    "normalization": {
+      "cross_matching_X2X0_factor": 0,
+      "cross_matchings_X0X1_X1X2": "identity",
+      "within_fibre_factor_indices": [
+        1,
+        2,
+        3
+      ]
+    },
+    "required_H_four_cycle_count": 171,
+    "required_H_power_traces_1_to_4": {
+      "1": 0,
+      "2": 480,
+      "3": 192,
+      "4": 8568
+    },
+    "required_H_triangle_count": 32,
+    "transferred_H_power_traces_1_to_4": {
+      "1": -22,
+      "2": 190,
+      "3": 218,
+      "4": 5062
+    },
+    "triangle_count": 0,
+    "vertex_count": 36
+  }
+}

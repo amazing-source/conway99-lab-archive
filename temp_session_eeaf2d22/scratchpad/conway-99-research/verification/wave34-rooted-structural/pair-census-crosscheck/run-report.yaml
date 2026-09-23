@@ -1,0 +1,60 @@
+role: verifier
+date_utc: 2026-07-24T21:27:01Z
+git_commit: 0fa5b8161baf8b2a5404a67051b7d61cbc906da3
+claim_label: VERIFIED
+scope: >-
+  Independent cross-verification of only the verifier-authored Wave 34
+  Stage-1 rooted O-pair census and the duplicate-free single-Pb-column
+  consequence cited by Stage 2: the complete nine-state census, the g=2
+  duplicate-pair rule, the 6-regular 210-edge g=r=1 relation graph, and the
+  exact 448879368 column total. No compatible design, binary solution,
+  extension, endpoint, or exclusion claim is verified.
+inputs:
+  verification/wave34-rooted-structural/pair-census-crosscheck/input-freeze.sha256: ccd53384efd356dfc7a207ed12a0f23254d18c2a53c008b29a2e015217706f3f
+  verification/wave33-rooted-extension/independent-results.json: 66cef570dbbb4a86e2a35f780edcfc1873d0ac2c5266f1c2065c902a8f91e778
+  verification/wave34-rooted-structural/precomparison/artifact-manifest.sha256: 233a32ac6cb67bcb23b7b269cc6f3f889d943bd5d0714c4f54ead9cbf28c7681
+  verification/wave34-rooted-structural/comparison-artifact-manifest.sha256: ce4bb77f33e919c3086b09521acd80297a9dcfffbc6bb2b72b331c2ee650ae3c
+method: >-
+  Reconstructed the fixed 14x70 support incidence and its g profiles from
+  frozen Wave 33 JSON. Solved the nine row states by an explicit triangular
+  nine-pivot elimination using design marginals and the diagonal DT, DR,
+  and TR identities. Independently enumerated every Pb column through all
+  5040 relative permutations and exact 7x7 weighted permanents, dividing
+  each cycle class by its 2^k alternating decompositions. Neither Wave 34
+  structural verifier script was imported or executed.
+command: |-
+  python -B verification/wave34-rooted-structural/pair-census-crosscheck/crosscheck.py --output verification/wave34-rooted-structural/pair-census-crosscheck/exact-results.json
+  python -B -m unittest verification/wave34-rooted-structural/pair-census-crosscheck/test_crosscheck.py -v
+outputs:
+  verification/wave34-rooted-structural/pair-census-crosscheck/crosscheck.py: e87bf56f4ae106bad34dfc3b40b99d50fb920f2684ddddc405af7288da92ed40
+  verification/wave34-rooted-structural/pair-census-crosscheck/test_crosscheck.py: 6e70901f30ff02b62586b09fa149025d54bba0fbf50ae7c7fbe5ddf3c941156f
+  verification/wave34-rooted-structural/pair-census-crosscheck/exact-results.json: 9165ea2dedcc0f263245335440dcb9dae3a9d1b42425ffbbef3fe4090666f85b
+  verification/wave34-rooted-structural/pair-census-crosscheck/audit.md: 73dd60edd7f9188723800c0eb15d74625ed29c498a13ec497fc1f636dc7cb2b3
+  verification/wave34-rooted-structural/pair-census-crosscheck/failed-objections.md: d157c70916b0fb7058486abceae5b0f96f293df2161dd74c3b2276906cd33ffd
+tests:
+  total: 24
+  passed: 24
+  failed: 0
+runtime:
+  python: "CPython 3.13.14"
+  platform: "Windows-11-10.0.26200-SP0, AMD64"
+  dependencies: "Python standard library only"
+  seeds: "none; enumeration is exhaustive and deterministic"
+independence:
+  structural_exact_check_imported_or_executed: false
+  structural_static_compare_imported_or_executed: false
+  candidate_degree_state_dynamic_program_used: false
+  git_used: false
+coverage:
+  pair_domain: "all C(70,2)=2415 unordered O-pairs"
+  row_types: "all 28 support-edge and 42 support-nonedge-copy rows"
+  relative_permutations: "all 7!=5040"
+  cycle_types: "all 15 partitions realized by the capacity-bounded 2-factors"
+  automorphism_assumptions: "none"
+limitations:
+  - Git was not used; git_commit records the frozen Wave 34 discovery base.
+  - The 448879368 count is a necessary single-column domain, not a count of compatible 15-column designs.
+  - Other column intersections, D, D^2, projector constraints, and binary compatibility are not imposed by this count.
+  - No binary D,B solution or complete-domain exclusion is produced.
+  - Rooted graph extension or exclusion, the rooted endpoint, n3=708, Conway-99, and novelty remain UNKNOWN.
+verdict: PASS

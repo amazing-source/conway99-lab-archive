@@ -1,0 +1,30 @@
+role: verifier
+date_utc: 2026-07-29T00:10:18Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional Wave 184 support-intersection theorem, edge-root weight-four
+  circuit injection, and B4>=4182 under the Wave 181 equality face; endpoint
+  existence is excluded from the claim.
+inputs:
+  - path: attempts/wave184-root-support-intersections/package-manifest.sha256
+    sha256: 02eaa6c4aac3954eca2bf45a78c9c682fdb797e1352474931ae84fc995a1141a
+method: >-
+  Independent proof audit of nonedge-root uniqueness, triangle-free support
+  intersections, four-distinct-column circuit construction, same-edge root
+  recovery, Wave 178-179 edge/nonedge isolation, exact incidence counting,
+  modulo-five exclusion, and the ternary scalar factor.  No graph or code
+  enumeration.
+command: >-
+  python -B
+  verification/wave184-root-support-intersections-verifier/independent_check.py;
+  python -B -m unittest
+  verification.wave184-root-support-intersections-verifier.test_independent_check
+outputs:
+  - verification/wave184-root-support-intersections-verifier/audit.md
+  - verification/wave184-root-support-intersections-verifier/independent-results.json
+  - verification/wave184-root-support-intersections-verifier/package-manifest.sha256
+limitations: >-
+  Wave 181 equality and verified Waves 178-179 and 182-183 are premises.
+  The E=12 scalar witness is not geometric.  No incompatible B4 upper bound,
+  rank-11 exclusion, endpoint contradiction, or Conway-99 resolution follows.

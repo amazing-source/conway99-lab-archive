@@ -1,0 +1,57 @@
+role: verifier
+date_utc: 2026-07-28T12:19:31Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED
+scope: >-
+  Clean-room exact verification that the Wave150 x6/x7/x8 count
+  pseudowitness violates four-root centered covariance blocks for root masks
+  3 and 12. This scope does not include endpoint infeasibility.
+inputs:
+  - path: attempts/wave152-four-root-order8/four_root_scout.py
+    sha256: 84866de40a2c06b826da40cef7f2f212aca3a0fdfb56d38b7df8a0ec2cd4f766
+  - path: attempts/wave152-four-root-order8/four-root-scout.json
+    sha256: c3633fe3337c1910774e13c9a0841b17bb3f55df1d9800c673979016e877ce95
+  - path: attempts/wave150-order8-sdp-scout/exact-rank1-witness.json
+    sha256: e63afbe9ca36b4b1571b3dde75309d0cce45f3bc862d6e8c08bfe62f78dc130d
+  - path: verification/wave152-four-root-order8/input-freeze.sha256
+    sha256: 86b7c845573f5010f8af12c7fe1d4498655eef4e536d03f02e4bc2b965863cab
+method: >-
+  Independently enumerated nine locally admissible pointwise-four-root flag
+  universes modulo only the free-pair swap. Derived x6,x5,x4 from the exact
+  Wave150 x7 support through one-vertex deletion identities. Accumulated
+  order-6/7/8 first and second moments with exact integers at denominator
+  scale four. Reconstructed 4*(R*M-s*s^T), checked totals and symmetry, and
+  evaluated the stored sparse integer vectors exactly. The discovery program
+  was neither imported nor executed.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave152-four-root-order8\independent_verify.py --verify
+  verification\wave152-four-root-order8\independent-results.json
+test_command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave152-four-root-order8 -p "test_*.py" -v
+test_result: "PASS: 11 tests"
+outputs:
+  - path: verification/wave152-four-root-order8/independent-results.json
+    sha256: b61b480377e1e324c0df594492ce1f68ed1f0e84802114ba1b019418725e8226
+  - path: verification/wave152-four-root-order8/independent_verify.py
+    sha256: 32e4a14890cf169c092b74ca24bda815547a7bbbc56344657065047566fbd27d
+  - path: verification/wave152-four-root-order8/derivation.md
+    sha256: 85540c9c11b4909a74d40f7c85c8f148b003501352640ccea5322edda6c2a219
+  - path: verification/wave152-four-root-order8/test_independent_verify.py
+    sha256: 7880e982f4c51a0de70d45b7268f8878fe3356b8cf6ea6fa4fc0716f4520e252
+exact_results:
+  semantic_sha256: 2ae3dd5f58f5743aac81ea51fda148bcbe9a2ecc28bb737b18413321964b37e1
+  x6_sha256: f6c8adc240488d97b77bd92d136d0d79ecff0ddb7f6db693352563829d53b40a
+  root_mask_3_quadratic_value_scaled: -2293145527521819747490560
+  root_mask_12_quadratic_value_scaled: -8605517548253993047296
+resource_guard:
+  required_free_memory_percent: 15
+  minimum_observed_free_memory_percent: 32.11550520541465
+verdict: >-
+  VERIFIED: both exact negative vectors prove their respective
+  4*(R*M-s*s^T) blocks are non-PSD, refuting the Wave150 pseudowitness.
+limitations: >-
+  No universal endpoint certificate, graph result, strict upper bound,
+  Conway-99 resolution, or novelty claim follows. Root masks 15 and 30 are
+  exactly PSD-zero; masks 0,1,7,11,13 remain exact-sign UNKNOWN here.

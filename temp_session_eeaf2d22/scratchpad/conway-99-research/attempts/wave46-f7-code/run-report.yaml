@@ -1,0 +1,58 @@
+role: proof_a
+date_utc: 2026-07-27T17:17:29Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free endpoint n3=4158: exact ordinary and low-degree
+  complete weight-enumerator consequences of the F7 row code of the
+  231-by-231 integral triangle projector M=21E_0, plus generic separation
+  controls for every endpoint rank 28 through 44.
+inputs:
+  - path: attempts/wave35-n3-upper-spectral/exact-results.json
+    sha256: ca1df07bede11642fb1639a2ae554c1a31ce9a58424d5b3e5031c90ad550a194
+  - path: attempts/wave37-polar-strengthen/exact-results.json
+    sha256: 0d5daafca72b43d159db5e799689e8818fa61f25de2f2d06225a4619817cdff9
+  - path: verification/wave43-rank28/independent-results.json
+    sha256: 4e6bc6a04fb65b6dd2a873c9b446d305d65aaca46fecf8703da2886aa1859025
+method: >-
+  Exact finite-field algebra, residue dynamic programming, complete
+  weight-enumerator moments forced by orthogonal-array strength two,
+  entrywise-cube identities, and explicit projective self-orthogonal code
+  constructions from affine-line blocks and archived projection matrices.
+command:
+  - >-
+    .\.venv\Scripts\python.exe -B
+    attempts\wave46-f7-code\exact_check.py --verify
+    attempts\wave46-f7-code\exact-results.json
+  - >-
+    .\.venv\Scripts\python.exe -B -m unittest discover -s
+    attempts\wave46-f7-code -p "test_*.py" -v
+outputs:
+  - path: attempts/wave46-f7-code/exact_check.py
+    sha256: 2d1fc9d52529104777d0420fdf49be67b0d4ae8535f5960f884a5a8d50083e2e
+  - path: attempts/wave46-f7-code/test_exact_check.py
+    sha256: f289a6bf1eadde83484111555cb722b2b2e8b72eb57b00c2c787ca74dae4ab62
+  - path: attempts/wave46-f7-code/exact-results.json
+    sha256: 2fe86d07940b2d0e1c2d2812d632f2b43fafe25d7796072345c3753c3717ceb2
+  - path: attempts/wave46-f7-code/derivation.md
+    sha256: 476992f57a89f687cbefd382bf6e1876783913cd2f1fc9ab2943e38c9850910b
+  - path: attempts/wave46-f7-code/failed-routes.md
+    sha256: 3bc09bc5fccea5b0109aa87f45e1350c87033caa16cdb25bd57dbbf37b798730
+  - path: attempts/wave46-f7-code/verifier-request.md
+    sha256: e36bdca9e339340db49b5bd98e6897879e039f510767f5b38d5446ec03528859
+resource_bounds:
+  process_model: single foreground Python process
+  background_processes_started: 0
+  minimum_free_memory_percent: 20
+  observed_free_memory_before_percent: 56.49
+  observed_free_memory_after_percent: 55.44
+  exact_replay_seconds: 1.2
+  unit_test_seconds: 0.846
+limitations:
+  - Discovery cannot verify itself.
+  - The generic positive controls are not endpoint projector candidates and
+    do not match the six exact endpoint generator compositions.
+  - Complete-enumerator moments above degree two remain underdetermined.
+  - No endpoint exclusion, strict general n3 upper-bound improvement,
+    Conway graph, novelty, or priority result is claimed.
+  - The endpoint, Conway-99, and novelty remain UNKNOWN.

@@ -1,0 +1,75 @@
+role: verifier
+date_utc: "2026-07-27T21:25:54Z"
+git_commit: "4bb1989e9e286b2ec753a855db58ad584e31f63a"
+claim_label: VERIFIED
+scope: >-
+  Finite conditional consequences of a prism-free hypothetical
+  srg(99,14,1,2): N/L/K spectra; incidence girth, diameter, layers, and B/C
+  split; regular spectral-excess hypotheses and predistance polynomials;
+  K^2/K^3 tables; defect and projection norms; pair-neighborhood Gram
+  identity and bound; Ihara-Bass determinant, traces, and cycles; biregular
+  cage comparison; and frozen primary-source metadata. No endpoint promotion.
+inputs:
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: verification/wave59-incidence-spectral-excess/preinspection-freeze.sha256
+    sha256: 7db3db0562d05ba95b13194182bf743746e05122954fe1bae351fde6912a91e6
+  - path: attempts/wave59-incidence-spectral-excess/exact-result.json
+    sha256: 7954daa92f8cb4a400ae8f9f5bfb4d4edb10ad42361872178eb538d35edc1d81
+  - path: attempts/wave59-incidence-spectral-excess/source-metadata.json
+    sha256: 1772cf48f52b3945c5d3bb5dafd63bf94baad0741d231b6d094e4daf9c1b8cb9
+  - path: https://www.combinatorics.org/ojs/index.php/eljc/article/download/v20i3p21/pdf/
+    sha256: 1ba19437e449bbc75474242ce0f52f24d9934dc02912d67a46c16afb6151c038
+method: >-
+  Freeze every sealed Wave 59 artifact before inspection. Leave the
+  discovery Python implementation and tests unopened and unexecuted.
+  Reconstruct the incidence identities and relation counts from the SRG
+  parameters and prism-free hypothesis without transitivity. Perform exact
+  rational Gram-Schmidt, relation-table evaluation, norm and Weyl-bound
+  calculations, and a fresh truncated formal-log expansion of the
+  independently specialized Ihara-Bass determinant. Verify the cited theorem
+  and metadata against the EJC primary paper and DOI. Only after independent
+  computation, compare selected fields with the hash-gated sealed JSON.
+command: |-
+  .\.venv\Scripts\python.exe -B verification\wave59-incidence-spectral-excess\independent_verifier.py --compare-discovery attempts\wave59-incidence-spectral-excess\exact-result.json --output verification\wave59-incidence-spectral-excess\independent-result.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave59-incidence-spectral-excess -p "test_*.py" -v
+outputs:
+  - path: verification/wave59-incidence-spectral-excess/independent-result.json
+    sha256: e69206045fbf00ae51c894d5b250fc67373c24ccf5f23ecfee0d7dfbecfe5760
+  - path: verification/wave59-incidence-spectral-excess/independent_verifier.py
+    sha256: 78a95beb11378e6d6f864c587d42dd27e4e86a365f74ad0c2983103d98df7753
+  - path: verification/wave59-incidence-spectral-excess/test_independent_verifier.py
+    sha256: 674c3f06b157f25d7dd25cd6e6342e0e7350091d45f821d458e6d9d54266593f
+tests:
+  passed: 14
+  failed: 0
+  hostile_mutations_checked: 2
+  sealed_result_mismatches: 0
+  memory:
+    required_free_percent: 15
+    observed_free_percent_after_run: 37.70
+source_check:
+  doi: 10.37236/3305
+  pdf_bytes: 344242
+  pdf_hash_matches_frozen_metadata: true
+  theorem_case: "6(c)"
+corrections:
+  - >-
+    Metadata only: use the official author form Miquel Àngel Fiol rather than
+    the unaccented Miquel Angel Fiol.
+  - >-
+    Citation precision only: the Theorem 6 statement is on printed page 6;
+    its proof continues beyond page 7.
+result:
+  finite_conditional_claims: VERIFIED
+  mathematical_mismatches: 0
+  endpoint_excluded: false
+  strict_n3_upper_bound: NOT_OBTAINED
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - No graph was constructed or assumed beyond the explicit conditional hypothesis.
+  - Strict spectral-excess inequality proves non-distance-regularity, not nonexistence.
+  - No commutation or coherent-configuration property was assumed for B/C/D.
+  - The Gram and cycle constraints are exact but consistent.
+  - Discovery code and discovery tests remained unopened and unexecuted.

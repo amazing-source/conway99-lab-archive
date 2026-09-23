@@ -1,0 +1,801 @@
+{
+  "characteristic_seven_rank_eleven_cases": [
+    {
+      "common_orthogonal_neighbors_by_relation": [
+        20178004,
+        2883601,
+        2883601,
+        2881200,
+        2883601
+      ],
+      "determinant_class": "square",
+      "dimension": 11,
+      "excluded": false,
+      "is_strongly_regular": false,
+      "largest_nonprincipal_eigenvalue": "2401*(1+sqrt(2))",
+      "largest_nonprincipal_eigenvalue_strictly_above": 4802,
+      "orthogonality_characteristic_polynomial_low_first": [
+        -1341148411930262512808,
+        -837802179659641210,
+        581652412047623,
+        48418563599,
+        -20180405,
+        1
+      ],
+      "orthogonality_multiplication_matrix": [
+        [
+          0,
+          20178004,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2883601,
+          5764800,
+          5762400,
+          5767202
+        ],
+        [
+          0,
+          2883601,
+          5764801,
+          5764801,
+          5764801
+        ],
+        [
+          0,
+          2881200,
+          5762400,
+          5767202,
+          5767202
+        ],
+        [
+          0,
+          2883601,
+          5762400,
+          5767202,
+          5764801
+        ]
+      ],
+      "relation_order": [
+        "equal",
+        "orthogonal",
+        "nonorthogonal_t_squared_1_degenerate",
+        "nonorthogonal_t_squared_2",
+        "nonorthogonal_t_squared_4"
+      ],
+      "spectral_mixing_right_side_strictly_above": 4802,
+      "target_induced_degree": 162,
+      "valencies": [
+        1,
+        20178004,
+        40339200,
+        40356008,
+        40356008
+      ],
+      "vertex_count": 141229221
+    },
+    {
+      "common_orthogonal_neighbors_by_relation": [
+        20175603,
+        2881200,
+        2881200,
+        2883601,
+        2881200
+      ],
+      "determinant_class": "nonsquare",
+      "dimension": 11,
+      "excluded": false,
+      "is_strongly_regular": false,
+      "largest_nonprincipal_eigenvalue": "4802",
+      "largest_nonprincipal_eigenvalue_strictly_above": 4802,
+      "orthogonality_characteristic_polynomial_low_first": [
+        -1340988827397667288806,
+        837835412590210811,
+        581500157888412,
+        -48470446808,
+        -20173202,
+        1
+      ],
+      "orthogonality_multiplication_matrix": [
+        [
+          0,
+          20175603,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2881200,
+          5764800,
+          5767202,
+          5762400
+        ],
+        [
+          0,
+          2881200,
+          5764801,
+          5764801,
+          5764801
+        ],
+        [
+          0,
+          2883601,
+          5767202,
+          5762400,
+          5762400
+        ],
+        [
+          0,
+          2881200,
+          5767202,
+          5762400,
+          5764801
+        ]
+      ],
+      "relation_order": [
+        "equal",
+        "orthogonal",
+        "nonorthogonal_t_squared_1_degenerate",
+        "nonorthogonal_t_squared_2",
+        "nonorthogonal_t_squared_4"
+      ],
+      "spectral_mixing_right_side_strictly_above": 4802,
+      "target_induced_degree": 162,
+      "valencies": [
+        1,
+        20175603,
+        40368012,
+        40351206,
+        40351206
+      ],
+      "vertex_count": 141246028
+    }
+  ],
+  "claim_label": "DERIVED_INCONCLUSIVE_PENDING_INDEPENDENT_VERIFICATION",
+  "combined_rank_boundary": {
+    "if_r3_equals_12": {
+      "r7_minimum": 12,
+      "r7_parity": "even",
+      "ternary_determinant_class": "square"
+    },
+    "if_r7_equals_11": {
+      "r3_minimum": 13,
+      "r3_parity": "odd"
+    },
+    "surviving_pair_count_after_wave36_bounds_and_parity": 561
+  },
+  "conclusion": {
+    "endpoint_excluded": false,
+    "new_determinant_class_exclusion": false,
+    "new_rank_lower_bound": false,
+    "stronger_structural_restrictions": [
+      "projective self-orthogonal ternary [231,r3] code with 1 in its dual",
+      "A_69>=462 and both nonzero symbol counts divisible by three",
+      "rank_F3(I+B)<=r3(r3+1)/2",
+      "at least 31416 independent balanced degenerate ternary triples",
+      "at least 437 distinct rank-one degenerate three-spaces",
+      "231 distinct norm-one F_7 projective points at r7=11 survive both determinant classes"
+    ],
+    "strongest_general_upper_bound_on_n3": 4158,
+    "target_status": "UNKNOWN",
+    "upper_bound_improved_below_4158": false
+  },
+  "frozen_public_head": "efbf74e3edf4d11d853d0129634507b01ff7b577",
+  "limitations": [
+    "No endpoint reflection, finite-field configuration, or graph is constructed.",
+    "The real Delsarte control is not a formal weight enumerator or code.",
+    "The F_7 orthogonality graph is not strongly regular, so Evans's SRG polynomial does not apply.",
+    "The square r3=12 case and both r7=11 determinant classes survive the tested exact bounds.",
+    "The false collinearity inference is explicitly refuted.",
+    "No literature novelty or priority claim is made."
+  ],
+  "schema_version": 1,
+  "scope": "Conditional n3=4158 ternary code/design strengthening, signed degenerate-triple count, and characteristic-seven rank-eleven projective spectral test",
+  "signed_triangle_geometry": {
+    "balanced_minus_unbalanced_triangles": 34034,
+    "false_inference_refuted": "A singular 3x3 Gram matrix in a nondegenerate ambient space does not imply the three vectors are linearly dependent.",
+    "independent_balanced_triple_span": {
+      "dimension": 3,
+      "radical_dimension": 2,
+      "restricted_gram_rank": 1
+    },
+    "maximum_collinear_selected_triples": 2618,
+    "maximum_independent_triples_per_such_space": 72,
+    "maximum_norm_two_points_per_such_space": 9,
+    "minimum_distinct_degenerate_three_spaces": 437,
+    "minimum_linearly_independent_balanced_triples": 31416,
+    "support_graph_degree": 68,
+    "support_graph_edges": 7854,
+    "trace_S_cubed": 204204
+  },
+  "ternary_basic_delsarte_relaxation": {
+    "A_69": 462,
+    "A_distribution": {
+      "0": 1,
+      "141": 76965,
+      "153": 288015,
+      "162": 165998,
+      "69": 462
+    },
+    "B_1": 0,
+    "B_2": 0,
+    "all_real_B_at_least_A": true,
+    "all_real_B_nonnegative": true,
+    "interpretation": "The basic real Delsarte/MacWilliams inequalities do not exclude rank twelve. Integrality and realizability remain unproved.",
+    "is_code": false,
+    "is_formal_weight_enumerator": false,
+    "nonintegral_B_orders": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231
+    ],
+    "sum_A": 531441,
+    "weights_divisible_by_3": true
+  },
+  "ternary_code": {
+    "code": {
+      "all_one_vector_in_dual": true,
+      "definition": "U=col(V) <= F_3^231",
+      "dual_distance_lower_bound": 3,
+      "every_word_symbol_one_count_divisible_by_3": true,
+      "every_word_symbol_two_count_divisible_by_3": true,
+      "parameters": "[231,12]_3",
+      "projective": true,
+      "reason": "x.x=0 gives n1+n2=0 mod 3 and x.1=0 gives n1+2n2=0 mod 3",
+      "self_orthogonal": true
+    },
+    "distinguished_words": {
+      "composition_n1_n2": [
+        36,
+        33
+      ],
+      "nonzero_word_count_including_negatives": 462,
+      "projective_word_count": 231,
+      "weight": 69,
+      "weight_enumerator_constraint": "A_69>=462"
+    },
+    "factorization": "C=V H V^T over F_3, with V full column rank",
+    "schur_square": {
+      "matrix": "C^(o2)=I+B mod 3, B=S^(o2)",
+      "orthogonality_matrix": "J-I-B",
+      "orthogonality_matrix_rank_ceiling": 79,
+      "rank_ceiling": 78
+    },
+    "square_zero_frame": "V^T V=0",
+    "zero_sum_frame": "V^T 1=0"
+  },
+  "ternary_divisibility_refined_evans": {
+    "ambient_parameters": {
+      "k": 29403,
+      "lambda": 9882,
+      "mu": 9720,
+      "v": 88452
+    },
+    "divisibility_refined_polynomial": {
+      "root_pair": [
+        75,
+        78
+      ],
+      "sum": 5843880
+    },
+    "excluded": false,
+    "ordinary_consecutive_integer_polynomial": {
+      "root_pair": [
+        76,
+        77
+      ],
+      "sum": 6020322
+    },
+    "outside_count": 88221,
+    "outside_degree_square_sum": 523215693,
+    "outside_degree_sum": 6754671,
+    "outside_degrees_divisible_by_3": true,
+    "selected_degree": 162,
+    "selected_size": 231
+  },
+  "ternary_oriented_association_scheme": {
+    "delsarte_positivity": [
+      {
+        "denominator": 1,
+        "display": "231",
+        "numerator": 231
+      },
+      {
+        "denominator": 121,
+        "display": "249/121",
+        "numerator": 249
+      },
+      {
+        "denominator": 121,
+        "display": "123/121",
+        "numerator": 123
+      },
+      {
+        "denominator": 7381,
+        "display": "4767/7381",
+        "numerator": 4767
+      },
+      {
+        "denominator": 61,
+        "display": "60/61",
+        "numerator": 60
+      }
+    ],
+    "endpoint_inner_distribution": [
+      1,
+      0,
+      162,
+      36,
+      32
+    ],
+    "excluded": false,
+    "first_eigenmatrix": [
+      [
+        1,
+        1,
+        58806,
+        59048,
+        59048
+      ],
+      [
+        1,
+        1,
+        486,
+        -244,
+        -244
+      ],
+      [
+        1,
+        -1,
+        0,
+        244,
+        -244
+      ],
+      [
+        1,
+        1,
+        -162,
+        80,
+        80
+      ],
+      [
+        1,
+        -1,
+        0,
+        -242,
+        242
+      ]
+    ],
+    "intersection_matrices": [
+      [
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          58806,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          59048,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          59048
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          58806,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          59048
+        ],
+        [
+          0,
+          0,
+          0,
+          59048,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          19764,
+          19520,
+          19520
+        ],
+        [
+          0,
+          0,
+          19520,
+          19764,
+          19764
+        ],
+        [
+          0,
+          0,
+          19520,
+          19764,
+          19764
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          19440,
+          19683,
+          19683
+        ],
+        [
+          1,
+          0,
+          19683,
+          19683,
+          19681
+        ],
+        [
+          0,
+          1,
+          19683,
+          19681,
+          19683
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          19440,
+          19683,
+          19683
+        ],
+        [
+          0,
+          1,
+          19683,
+          19681,
+          19683
+        ],
+        [
+          1,
+          0,
+          19683,
+          19683,
+          19681
+        ]
+      ]
+    ],
+    "relation_order": [
+      "equal",
+      "antipodal",
+      "inner_0",
+      "inner_1_independent",
+      "inner_2_independent"
+    ],
+    "valencies": [
+      1,
+      1,
+      58806,
+      59048,
+      59048
+    ]
+  }
+}

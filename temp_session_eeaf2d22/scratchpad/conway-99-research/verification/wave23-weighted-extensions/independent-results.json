@@ -1,0 +1,123 @@
+{
+  "affine_certificate": {
+    "A_base_equals_rhs": true,
+    "A_delta_equals_zero": true,
+    "base_sha256": "13b6b1e41ebb1d58482ae60fc0d713544c2c3317030514c4a8e3f4a8b41c8a20",
+    "delta_sha256": "d0792453714a7d254c8d09c3ed014e245e804fd6c68e7f09322c7c4997e37bf3",
+    "minimum_at_z_max": 0,
+    "minimum_at_z_min": 2,
+    "minimum_over_all_allowed_z": 0,
+    "nonnegative_on_real_interval_by_affinity": true,
+    "plain_integer_coordinates": true,
+    "support_at_z_max": 207,
+    "support_at_z_min": 208,
+    "z_values_checked": 353
+  },
+  "candidate_commit": "c82f49be256f79fed45b7a4f1458d751d2ec0d9f",
+  "claim_label": "VERIFIED",
+  "frozen_inputs": {
+    "candidate_files": {
+      "agents/2026-07-23-wave23-weighted-extensions.md": "e4dea157445c467784219fa67fdd89477e17aa4e19628d37e76142f366ee8bc1",
+      "attempts/wave23-weighted-extensions/affine-witness.json": "16ade54a77589b91478b3426dc3dbe57ebb2a5e0f7d209602ca282e42ac3ec77",
+      "attempts/wave23-weighted-extensions/discover_affine.py": "dbb03710f09e6d83468af0eb37fcca147ad35b9a46e84014e407869ea35d34aa",
+      "attempts/wave23-weighted-extensions/exact-results.json": "83a41b78eac02d845650ccdcb5b9782aba80caff9bdb7be983ec3f9e91c65b4c",
+      "attempts/wave23-weighted-extensions/exact_check.py": "ab959ded2357af8e5d62e18fc9136af538e302a127838be590baeaa71528f37a",
+      "attempts/wave23-weighted-extensions/failed-routes.md": "400966fae98ccd206b8cadf14ae37b3e95dfebc3754da741409089b8a251daf5",
+      "attempts/wave23-weighted-extensions/failed-runs.md": "aae3c978dc0e7d148dc73079c9a8d9fc514ca24c55717952cbaa49942e8b504e",
+      "attempts/wave23-weighted-extensions/model.py": "8bc0f100772d95d06b60ec672ccc73817af4c30fd7fbf3276700554a87186abf",
+      "attempts/wave23-weighted-extensions/run-report.yaml": "14eec436830ccd36af9485278abe69a125631fbe0f7013ce0750386eb00523cd",
+      "attempts/wave23-weighted-extensions/test_exact_check.py": "2985bfe97dc3a88ed4285e2d0df31eb66246370e5a84cd65f4d7a10dbbdae580"
+    },
+    "privacy_scan": "PASS",
+    "wave21_result_sha256": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b",
+    "wave22_result_sha256": "ca5d9d116f6a9d6e355600429652e2bf4474b73dcf281bbcb564420d820acbd2",
+    "witness_sha256": "16ade54a77589b91478b3426dc3dbe57ebb2a5e0f7d209602ca282e42ac3ec77"
+  },
+  "hamiltonian_comparison": {
+    "H11_closes_rank_to_208_mod_5": true,
+    "H11_is_only_coordinate_needed": true,
+    "all_19_pinned_source_formulas_match_post_hoc": true,
+    "other_18_not_used_by_independent_replay": true,
+    "source_panel_alignment_remains_cited_input": true
+  },
+  "independent_census": {
+    "canonicalization": "least edge mask under all vertex relabelings",
+    "complete_labeled_enumeration": true,
+    "labeled_admissible_by_order": {
+      "1": 1,
+      "2": 2,
+      "3": 8,
+      "4": 57,
+      "5": 683,
+      "6": 13174,
+      "7": 394020
+    },
+    "unlabeled_classes_by_order": {
+      "1": 1,
+      "2": 2,
+      "3": 4,
+      "4": 9,
+      "5": 21,
+      "6": 62,
+      "7": 208
+    }
+  },
+  "lower_source_gate": {
+    "five_to_six_rank_mod_7": 61,
+    "five_to_six_rank_with_n3_mod_7": 62,
+    "five_to_six_rows": 171,
+    "lower_transition_full_column_ranks": {
+      "1->2_mod_3": 2,
+      "2->3_mod_2": 4,
+      "3->4_mod_5": 9,
+      "4->5_mod_3": 21
+    },
+    "n3_coordinate_mask": 5941,
+    "orders_1_through_5_exact": true,
+    "source_six_vector_exact_rows": "PASS"
+  },
+  "order_seven_system": {
+    "coefficient_partition_checks": 38688,
+    "h11_column": 202,
+    "isomorphism_choice_checks": 20408,
+    "matrix_sha256": "5dc63fa0bb0af2893695dd0a6bf1ff6572904aa2d7e823bf6979ddf805246509",
+    "pair_coefficient_semantics": "Each b_F,P coefficient is the number of pairs in orbit P whose vertices are both adjacent to the deleted root, summed over all roots with card F",
+    "rank_mod_5": 207,
+    "rank_upper_certificate": "nonzero integer delta with A*delta=0",
+    "rank_with_h11_coordinate_mod_5": 208,
+    "rational_rank": 207,
+    "rhs_sha256": "293bfd3d0725fe1be8b742b064de2ef98704e060e634fc449e43855564b32d70",
+    "rooted_upper_classes_checked": 1456,
+    "row_breakdown": {
+      "deletion": 62,
+      "edge_pair_orbit": 180,
+      "nonedge_pair_orbit": 263,
+      "vertex_orbit": 207
+    },
+    "shape": [
+      712,
+      208
+    ]
+  },
+  "parameters": {
+    "h11_max": 2820,
+    "h11_min": 1412,
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "n": 99,
+    "n3": 705,
+    "z_max": 705,
+    "z_min": 353
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "Exact feasibility of the encoded orbit-refined one-vertex extension relaxation through order seven at n3=705, for every h11=4z with integer z in 353,...,705",
+  "scope_wall": {
+    "bound_improvement": null,
+    "graph_constructed": false,
+    "overlap_consistency_encoded": false,
+    "relaxation_feasible": true,
+    "target_existence_status": "UNKNOWN"
+  }
+}

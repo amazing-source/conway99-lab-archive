@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-28T07:30:29Z
+git_commit: aef7b93124f8caeb1a7487f58289436bc4118880
+claim_label: VERIFIED
+scope: >-
+  Exact rational feasibility of the rank-28, discriminant-16, level-7
+  index-10/index-70 Jacobi necessary-condition relaxation through Fourier
+  cutoff 28 only.
+inputs:
+  - path: attempts/wave130-cdd-exact-lp/MANIFEST.sha256
+    sha256: 8b1da27e3acaa059934704a85aaa380e101e1db330925ced6e048330d318e3ae
+  - path: attempts/wave130-cdd-exact-lp/result-cutoff28-warm.json
+    sha256: 05ad8cf461cc7c79f85300d45492f1f30e3c1030a3c1943a9da3984d5add39a3
+method: >-
+  Replay every sealed discovery-manifest entry; independently reconstruct
+  phi_-2, phi_0, the eleven exact level-7 modular blocks, Fricke eigenbases,
+  and all 239 L/K Fourier columns without importing discovery code or reading
+  a serialized column cache; rebuild all unreduced rows; substitute the
+  frozen 239-coordinate rational primal with Fraction arithmetic.
+command: >-
+  python -B
+  verification/wave130-cdd-exact-lp/independent_no_cache_verify.py
+  --verify
+  verification/wave130-cdd-exact-lp/independent-results.json;
+  python -B -m unittest discover
+  -s verification/wave130-cdd-exact-lp -p "test_*.py" -v
+outputs:
+  - path: verification/wave130-cdd-exact-lp/independent-results.json
+    sha256: c83350540e053bbe22c24b2a70a908393a17eaa268a022138ce6d5cbcfd24c08
+  - path: verification/wave130-cdd-exact-lp/independent_no_cache_verify.py
+    sha256: 187f86bb98a9b6b4b3892d1da3fb2f01d22e9c12e8330624966ac38d60817cbc
+limitations:
+  - Verified finite necessary-condition feasibility only.
+  - No serialized discovery column cache was used.
+  - No graph or lattice is constructed.
+  - Rank 28 is neither realized nor excluded.
+  - No all-cutoff integral modular object is established.
+  - Conway-99 and literature novelty remain UNKNOWN.

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "role": "verifier",
+  "claim_label": "VERIFIED",
+  "scope": "Frozen candidate bytes, one fixed-design MILP encoding, timeout metadata, and exact hostile O-Q partial-object properties only.",
+  "manifests": {
+    "precomparison_manifest_sha256": "4ccbbad9c01eab764d9aa6fb207114e43f8c5a36bec3ec5bf0d161708ce0360d",
+    "precomparison_entry_count": 5,
+    "candidate_freeze_sha256": "441465c157f28e658afde31e6ca0cff49ccb5841a001150bd3e3af616c5bf63a",
+    "candidate_entry_count": 17,
+    "artifact_manifest_sha256": "0cd192c0182506b3c901806cc96abb9fe53f04dc906b0b5cd73bc9b602558ff4",
+    "artifact_entry_count": 16,
+    "input_freeze_sha256": "f2f62195ba324f091683732e382ee682abca0e070ed6ae712f7b196c0ac59a04",
+    "input_entry_count": 7,
+    "input_addendum_sha256": "67338e2a4b212660aa5439fc1cd28fb12464f906df9bd715051d61b0520ec107",
+    "input_addendum_entry_count": 1,
+    "status": "PASS"
+  },
+  "fixed_design": {
+    "block_count": 70,
+    "block_size": 3,
+    "simple": true,
+    "point_degree_histogram": {
+      "14": 15
+    },
+    "pair_intersection_histogram": {
+      "2": 105
+    },
+    "canonical_block_set_sha256": "40de3b43ac5ba73f2fcd75d156c0b59d9297dee331bd1106a1e56b5ee377ffd1",
+    "construction": "two block-disjoint STS(15) copies",
+    "restriction": "one fixed simple design; not without loss of generality"
+  },
+  "assignment_encoding": {
+    "binary_variable_count": 4900,
+    "vertex_equalities": 70,
+    "block_equalities": 70,
+    "support_point_equalities": 210,
+    "total_equalities": 350,
+    "row_width_histogram": {
+      "70": 140,
+      "140": 210
+    },
+    "nonzero_coefficient_count": 39200,
+    "row_system_sha256": "1a654646baa1a64e0ca460ef1fb8504ae05d20654a77e2366198ee36bedd0264",
+    "zero_objective": true,
+    "unbalanced_bijection_domain_size": "11978571669969891796072783721689098736458938142546425857555362864628009582789845319680000000000000000",
+    "semantics": "All block-to-O bijections of this one fixed design are encoded; no other nonisomorphic design is covered.",
+    "status": "PASS"
+  },
+  "milp_run": {
+    "engine": "SciPy 1.18.0 scipy.optimize.milp with bundled HiGHS",
+    "time_limit_seconds": 25,
+    "solver_status": 1,
+    "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+    "primal_point_returned": false,
+    "objective_value": null,
+    "mip_node_count": null,
+    "mip_gap": null,
+    "output_created": false,
+    "active_graph_phase_entered": false,
+    "interpretation": "UNKNOWN_NO_EVIDENCE",
+    "replay_exit_code": 1,
+    "replay_output_created": false,
+    "replay_message_matched": true
+  },
+  "hostile_partial": {
+    "certificate_sha256": "340e5df716ad63bceba25c745ab04c22ea1a3dca01e939072f09775a5fc5f634",
+    "row_degree_histogram": {
+      "3": 70
+    },
+    "column_degree_histogram": {
+      "14": 15
+    },
+    "Q_pair_intersection_histogram": {
+      "2": 105
+    },
+    "BF_count_histogram": {
+      "1": 5,
+      "2": 200,
+      "3": 5
+    },
+    "BF_defect_histogram": {
+      "-1": 5,
+      "1": 5
+    },
+    "BF_violation_count": 10,
+    "BF_squared_defect": 10,
+    "BF_exact_support_group_count": 9,
+    "BF_violations_sha256": "26fbfd01ba81b743fd77a800f57fb56e4325d2cf0776a977d950945149a007ed",
+    "O_O_layer_certificate_status": "UNSUPPLIED",
+    "empty_D_is_search_restriction": false,
+    "empty_D_control_degree_histogram": {
+      "5": 70,
+      "14": 29
+    },
+    "empty_D_control_identity_violation_count": 8282,
+    "classification": "EXACT_HOSTILE_PARTIAL_OBJECT_NOT_A_GRAPH",
+    "claim_label": "VERIFIED_SCOPED_FACTS"
+  },
+  "deterministic_hostile_search_reproduction": {
+    "method": "independent standard-library reimplementation",
+    "discovery_code_imported_or_executed": false,
+    "parallel_class_count_per_STS": 56,
+    "resolution_count_per_STS": 240,
+    "completed_restarts": 9,
+    "steps_per_restart": 200000,
+    "best_squared_defect": 10,
+    "best_restart_zero_based": 8,
+    "best_step_zero_based": 166762,
+    "certificate_sha256": "340e5df716ad63bceba25c745ab04c22ea1a3dca01e939072f09775a5fc5f634",
+    "byte_identical": true,
+    "status": "PASS"
+  },
+  "checker_replay": {
+    "initial_orchestrator_command_without_partial_flag_exit_code": 0,
+    "initial_orchestrator_command_output_sha256": "97f30719cc41bb48c3b562faf5bc7037112cd8cf35c737b3717614217a9c1ea1",
+    "initial_orchestrator_command_classification": "BASE_ONLY_INVOCATION_MISTAKE_NOT_CANDIDATE_DEFECT",
+    "correct_command_exit_code": 0,
+    "correct_command_output_sha256": "ba6640eacd041bc8349024a1d3f13e3d74bd67cdad64d2d78c9a94927319c496",
+    "correct_command_byte_identical": true
+  },
+  "nonblocking_checker_coverage_gaps": [
+    "The discovery checker does not bind scope, evidence_kind, restrictions, limitations, or discovery status metadata.",
+    "The discovery checker uses ordinary json.loads and does not reject duplicate keys.",
+    "Frozen candidate bytes are honestly scoped and pass the clean-room strict-loader and status gates."
+  ],
+  "status_wall": {
+    "complete_graph_extension": "UNKNOWN",
+    "complete_domain_UNSAT_certificate": "NONE",
+    "full_rooted_endpoint": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "Conway_99": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "timeout_negative_evidence": false
+  }
+}

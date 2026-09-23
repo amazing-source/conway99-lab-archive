@@ -1,0 +1,34 @@
+role: proof_a
+date_utc: 2026-07-28T14:51:56Z
+git_commit: 5447f0a2e2fd83073f906a065ddc71bcd88c9db2
+claim_label: DERIVED
+scope: >-
+  For every hypothetical srg(99,14,1,2), derive the unrestricted upper
+  bound 12*C8 <= 37422+3*P = 41580-n3, hence C8 <= 3465 generally
+  and C8 <= 3118 at the prism-free endpoint.
+inputs:
+  - path: verification/wave94-general-n3-norm14-bound/package-manifest.sha256
+    sha256: a579aa242fc11583ef38525718cc87954fd86a732032b456939d9904a90603e9
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+  - path: verification/wave158-general-cube-wagner/package-manifest.sha256
+    sha256: ec6b5b912f42301ae734a6ee45574c3e39cf3c57c088765b03afbafe07b37d0b
+method: >-
+  Fixed-C4 outside partition, exact nine-or-ten boundary matching lemma,
+  marked-square/prism bijection, injection of cube extensions through all
+  boundary matchings, and cube-face and prism-square double counts.
+command: none; paper derivation only
+outputs:
+  - path: attempts/wave165-general-cube-upper/README.md
+    sha256: b1f017c7d457daedebd0fed27aa9a0434b43879d7bec6ff55c53950e200da166
+  - path: attempts/wave165-general-cube-upper/derivation.md
+    sha256: caa7b8a8c996a64704d58a94b30eb00d44f2650a8199127a5b4949c5ba69ab1d
+  - path: attempts/wave165-general-cube-upper/protocol.md
+    sha256: 124710cd7f173229ba0a45eed954ea7ecc258aed5387e1336e929a752c681407
+  - path: attempts/wave165-general-cube-upper/failed-routes.md
+    sha256: 1c1043e11686f60c0a54685cf34214f30e377a9d4ebfc4f68e4c35306a1e5d16
+limitations:
+  - Repository-level independent verification is pending.
+  - The inequality does not by itself improve n3 <= 4158.
+  - No lower bound on W8-3*C8 is proved.
+  - Literature novelty and Conway-99 remain UNKNOWN.

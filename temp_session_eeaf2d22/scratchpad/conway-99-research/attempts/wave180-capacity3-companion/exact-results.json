@@ -1,0 +1,206 @@
+{
+  "conclusion": "capacity-three nonedge circuits occur in conic/complement pairs, forcing at least 2772 projective short circuits; the conditional endpoint remains unexcluded",
+  "dual_word_inequality": "B_4+B_5+B_6+B_7+B_8+B_9>=5544",
+  "dual_word_lower_bound": 5544,
+  "edge_projective_circuit_lower_bound": 693,
+  "field": 3,
+  "hostile_control_k6_6": {
+    "length": 36,
+    "projective_cycle_counts": {
+      "4": 225,
+      "6": 2400,
+      "8": 16200
+    },
+    "projective_cycles_weight_4_6_8": 18825,
+    "rank": 11
+  },
+  "local_profiles": [
+    {
+      "extended_gram_rank": 6,
+      "j_profile_counts": {
+        "0": 1,
+        "1": 6,
+        "2": 0
+      },
+      "kernel_dimension": 2,
+      "nonzero_h_entries": 6,
+      "projective_kernel_directions": 4,
+      "projective_supports": [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "projective_weights": [
+        2,
+        7,
+        7,
+        8
+      ],
+      "singularity_residue": 0,
+      "t": 0
+    },
+    {
+      "extended_gram_rank": 7,
+      "j_profile_counts": {
+        "0": 2,
+        "1": 4,
+        "2": 1
+      },
+      "kernel_dimension": 1,
+      "nonzero_h_entries": 5,
+      "projective_kernel_directions": 1,
+      "projective_supports": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "projective_weights": [
+        7
+      ],
+      "singularity_residue": 2,
+      "t": 1
+    },
+    {
+      "extended_gram_rank": 7,
+      "j_profile_counts": {
+        "0": 3,
+        "1": 2,
+        "2": 2
+      },
+      "kernel_dimension": 1,
+      "nonzero_h_entries": 4,
+      "projective_kernel_directions": 1,
+      "projective_supports": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "projective_weights": [
+        7
+      ],
+      "singularity_residue": 1,
+      "t": 2
+    },
+    {
+      "extended_gram_rank": 6,
+      "j_profile_counts": {
+        "0": 4,
+        "1": 0,
+        "2": 3
+      },
+      "kernel_dimension": 2,
+      "nonzero_h_entries": 3,
+      "projective_kernel_directions": 4,
+      "projective_supports": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "projective_weights": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "singularity_residue": 0,
+      "t": 3
+    }
+  ],
+  "minimal_cover": {
+    "companion_inequality": "Q>=N+a",
+    "inequality": "4158<=2*N+a",
+    "nonedge_projective_circuit_lower_bound": 2079
+  },
+  "pair_counts": {
+    "all_pairs": 4851,
+    "edges": 693,
+    "nonedges": 4158
+  },
+  "projective_circuit_lower_bound": 2772,
+  "projector_admissible_t": [
+    0,
+    3
+  ],
+  "retained_edge_inequality": "B_4+B_6+B_8>=1386",
+  "t0_consequence": "duplicate selected projective point; rejected",
+  "t3_circuit_pair": {
+    "pairing": "fixed-point-free involution",
+    "same_cross_realization_labels": 3,
+    "weight4_geometry": "Q(2,3) plane conic",
+    "weights": [
+      4,
+      5
+    ]
+  },
+  "ternary_nonzero_scalars_per_projective_class": 2
+}

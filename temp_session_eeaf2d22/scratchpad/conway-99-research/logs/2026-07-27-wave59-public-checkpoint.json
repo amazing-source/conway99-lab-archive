@@ -1,0 +1,57 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-27T21:30:29Z",
+  "format": "conway99-wave59-public-checkpoint-v1",
+  "git_base_commit": "4bb1989e9e286b2ec753a855db58ad584e31f63a",
+  "manifests": {
+    "wave59_discovery": "c3d29fb9c55dd28012238d042aa6d863b487e550448aad374e1bdcf55bcf413f",
+    "wave59_verification": "a660ede44009ed40c20bb1661d54b0b977f1817269b85983777f04aa4a78c574"
+  },
+  "prior_checkpoint": "logs/2026-07-27-wave58-public-checkpoint.json",
+  "results": {
+    "incidence_graph": {
+      "bidegrees": [7, 3],
+      "diameter": 6,
+      "distance_biregular": false,
+      "girth": 8,
+      "order": 330,
+      "spectrum": [
+        ["sqrt(21)", 1],
+        ["-sqrt(21)", 1],
+        ["sqrt(10)", 54],
+        ["-sqrt(10)", 54],
+        ["sqrt(3)", 44],
+        ["-sqrt(3)", 44],
+        ["0", 132]
+      ]
+    },
+    "pair_neighborhood_gram": {
+      "identity": "153I+10K+A_B",
+      "minimum_eigenvalue_lower_bound": 87,
+      "rank": 231
+    },
+    "short_cycle_counts": {
+      "C8": 2079,
+      "C10": 33264,
+      "C12": 250866,
+      "C14": 2494800
+    },
+    "triangle_graph": {
+      "actual_excess": 32,
+      "degree": 18,
+      "diameter": 3,
+      "distance_regular": false,
+      "order": 231,
+      "spectral_excess": 50,
+      "spectrum": [[18, 1], [7, 54], [0, 44], [-3, 132]]
+    }
+  },
+  "status": "VERIFIED_SCOPED",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

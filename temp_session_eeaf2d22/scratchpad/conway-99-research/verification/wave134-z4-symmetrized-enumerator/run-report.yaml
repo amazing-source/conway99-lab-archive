@@ -1,0 +1,51 @@
+role: verifier
+date_utc: 2026-07-28T08:07:18Z
+git_commit: aef7b93124f8caeb1a7487f58289436bc4118880
+claim_label: VERIFIED
+scope: >-
+  Independent verification of the sealed conditional Wave134 Z4
+  symmetrized-enumerator checkpoint, including the corrected forced tables,
+  structural-zero ranges, transform counts, stale-search invalidation, and
+  explicit UNKNOWN realization boundary.
+inputs:
+  - path: agents/2026-07-22-wave2-algebra-codes.md
+    sha256: 999cbb0366a984ab6ddf4a2ff084eb680beffaad47c0b8176752a5a6769cc0e9
+  - path: attempts/wave131-binary-lcd-enumerator/package-manifest.sha256
+    sha256: c305de05df2001d869db3dbfc14f7a2a8c7f305ce43471c56c66dc775e89d576
+  - path: attempts/wave132-distinguished-biweight/package-manifest.sha256
+    sha256: 0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c
+  - path: attempts/wave134-z4-symmetrized-enumerator/package-manifest.sha256
+    sha256: 581678d37091754f4bf1f197223a120d82f3051020a45b601e84889dfdad81e9
+  - path: attempts/wave134-z4-symmetrized-enumerator/exact-results.json
+    sha256: 8d3e39c4360341f7d3d6b8ac496853c0ae19e546ab8655cc6939b36edbddb1a2
+  - path: attempts/wave134-z4-symmetrized-enumerator/search-status.json
+    sha256: d5d85b9df1d2664cb808cb9eacfffb069ad6e401e73a6e4cf5e956cbcd02fddb
+method: >-
+  Clean-room standard-library reconstruction from frozen prior statements;
+  independent formula and Venn-atom enumeration; independent polynomial and
+  factored MacWilliams coefficient checks; pinned manifest replay followed
+  by strict JSON claim comparison. Discovery implementations are not
+  imported.
+command: >-
+  python -B
+  verification\wave134-z4-symmetrized-enumerator\independent_verify.py
+  --verify
+  verification\wave134-z4-symmetrized-enumerator\independent-results.json
+outputs:
+  - path: verification/wave134-z4-symmetrized-enumerator/independent_verify.py
+    sha256: a03a98d1f928416b856a69887cc0645163ea18b6124c5c7734a8fa7e2c56a6e4
+  - path: verification/wave134-z4-symmetrized-enumerator/test_independent_verify.py
+    sha256: f6c3e4348d28d76795af67e5ef95d083d437c24124183559929dd71346c3425c
+  - path: verification/wave134-z4-symmetrized-enumerator/independent-results.json
+    sha256: 954ee09e5d097fe5d46d1eeeec5caa60445b8080bbbbb3e5e5efb9bb0af7c62d
+  - path: verification/wave134-z4-symmetrized-enumerator/README.md
+    sha256: 44d6f4cb8965bb105f6004904709b52e7c1a73c481265592e234bdf73b6c5974
+  - path: verification/wave134-z4-symmetrized-enumerator/protocol.md
+    sha256: fc942beaa99dab4e4643aef146c08c8151d4a71bbd939ef6d249a78cdd1eb38b
+  - path: verification/wave134-z4-symmetrized-enumerator/verification-report.md
+    sha256: 0c87e2dd1e06a2f1c5909ad0cd8f58b11bcd31b266b28f98dcb810560096f75e
+limitations:
+  - The verified statements are conditional consequences of a hypothetical srg(99,14,1,2).
+  - Corrected exact rational and integral feasibility were not run and remain UNKNOWN.
+  - No rational witness, infeasibility certificate, Z4 code, adjacency matrix, or graph is produced.
+  - Conway-99 and novelty remain UNKNOWN.

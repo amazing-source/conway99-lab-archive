@@ -1,0 +1,33 @@
+role: proof_a
+date_utc: 2026-07-28T00:42:00Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: DERIVED
+scope: >-
+  Conditional on a hypothetical prism-free srg(99,14,1,2) and the verified
+  complementary-Fano norm-14 support theorem, count both signs and prove
+  N14 <= 5544.
+inputs:
+  - path: verification/wave64-rooted-transition-design/package-manifest.sha256
+    sha256: dd138310fcaa4e3e2d2989281f9c7487b498ad1d15901403b32919d7018bb905
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+method: >-
+  Root at each coordinate, inject norm-14 vectors into four-point seeds,
+  double count prism-free selected-transition incidences, and sum the
+  rooted bound over all 99 coordinates.
+command: >-
+  python -B attempts/wave90-short-vector-count-upper/exact_check.py ;
+  python -B attempts/wave90-short-vector-count-upper/exact_check.py
+  --verify attempts/wave90-short-vector-count-upper/exact-results.json ;
+  python -B -m unittest discover
+  -s attempts/wave90-short-vector-count-upper -p "test_*.py" -v
+outputs:
+  - path: attempts/wave90-short-vector-count-upper/exact-results.json
+  - path: attempts/wave90-short-vector-count-upper/test-results.txt
+  - path: attempts/wave90-short-vector-count-upper/package-manifest.sha256
+limitations:
+  - prism-freeness is essential and is not a consequence of r=28
+  - the proof does not bound N16 or N18
+  - discovery does not verify itself
+  - no contradiction, graph nonexistence, Conway-99 resolution, or novelty claim follows
+

@@ -1,0 +1,57 @@
+role: construction
+date_utc: 2026-07-28T08:58:57Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: CANDIDATE
+scope: >-
+  Exact rational Wave132 binary ordinary/distinguished-split branches under
+  both Arf signs, cumulative signed Krawtchouk identities through K5, and
+  all approved rational shadow bounds; plus non-evidentiary numerical scouts
+  of the separate Wave135 Z4 Arf slices.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: attempts/wave132-distinguished-biweight/package-manifest.sha256
+    sha256: 0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c
+  - path: attempts/wave135-z4-exact-face/package-manifest.sha256
+    sha256: 6f466d96036d7fe48a1ab3be6590683fa46648a6fae5582913f9e4721e541f1a
+  - path: attempts/wave136-alternative-spaces/strategy-memo.md
+    sha256: fffa6107edafdce21400d5a3d51bd65756573c848e798aaaf58ab8b45458ac70
+  - path: attempts/wave136-alternative-spaces/arf-results.json
+    sha256: 17659e6e03d7cd6681b16ca8c213462a12087e97124d93df603c8cdde2f3c9b9
+method: >-
+  Rebuild the exact Wave132 rational system in Z3; branch on the two
+  nondegenerate quadratic Gauss signs; add independently supplied standard
+  binary Krawtchouk identities cumulatively through degree five; reconstruct
+  every distinguished split table; independently replay all rational rows;
+  audit degrees 6 through 99 against exact shadow bounds; add only the
+  violated K6/K93 lower inequalities and resolve both signs.
+command: >-
+  python -B attempts/wave137-z4-arf-branches/binary_branch.py --sign 1
+  --max-moment 5 --shadow-lower 6 --shadow-lower 93 --output
+  attempts/wave137-z4-arf-branches/binary-shadow1-plus.json;
+  python -B attempts/wave137-z4-arf-branches/binary_branch.py --sign -1
+  --max-moment 5 --shadow-lower 6 --shadow-lower 93 --output
+  attempts/wave137-z4-arf-branches/binary-shadow1-minus.json;
+  python -B attempts/wave137-z4-arf-branches/shadow_bounds.py
+  attempts/wave137-z4-arf-branches/binary-shadow1-plus.json
+  attempts/wave137-z4-arf-branches/binary-shadow1-minus.json --output
+  attempts/wave137-z4-arf-branches/shadow-bound-audit-round1.json;
+  python -B -m unittest discover -s
+  attempts/wave137-z4-arf-branches -p "test_*.py" -v
+outputs:
+  - path: attempts/wave137-z4-arf-branches/binary-shadow1-plus.json
+    sha256: c3dbc0cee57a5505455202af51cbb5a31ff4c7cf075ddc8f3f8351efe7833092
+  - path: attempts/wave137-z4-arf-branches/binary-shadow1-minus.json
+    sha256: 9919a367ea393085d310199a4ac3ac23c68fd1bde511c4cf4e01f2d5e81a10bd
+  - path: attempts/wave137-z4-arf-branches/shadow-bound-audit.json
+    sha256: c452658d0e3abb4a442820945c18a7e41b930d81c1094ec6139fe72e9a051540
+  - path: attempts/wave137-z4-arf-branches/shadow-bound-audit-round1.json
+    sha256: 2b85617a6867148d278b76c1601e229e929834dfcee20a4e67596d09ac44bf07
+  - path: attempts/wave137-z4-arf-branches/search-status.json
+    sha256: c55f77589121cb134f2c8acd137f8a52eedaa2b702602edfe646d933f6a70308
+limitations:
+  - Every accepted witness is a formal rational projection, not a binary code.
+  - Integral divisibility and parity conditions are not imposed.
+  - The full genus-two transform remains unencoded.
+  - Z4 numerical statuses are non-evidentiary and exact Z4 branches were not run.
+  - No graph, adjacency matrix, Conway-99 resolution, or novelty claim is produced.

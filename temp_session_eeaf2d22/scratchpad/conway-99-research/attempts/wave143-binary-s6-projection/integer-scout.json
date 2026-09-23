@@ -1,0 +1,39 @@
+{
+  "claim_label": "UNKNOWN",
+  "format": "wave143-integral-scout-v1",
+  "hard_wall_seconds": 15,
+  "limitations": [
+    "UNKNOWN or timeout is not evidence of infeasibility.",
+    "A solver exit code is not an exact infeasibility certificate.",
+    "An integral formal enumerator would not construct a code or graph."
+  ],
+  "negative_inference_allowed": false,
+  "results": [
+    {
+      "elapsed_seconds": 15.013,
+      "mode": "target4158",
+      "sign": 1,
+      "status": "UNKNOWN_HARD_TIMEOUT"
+    },
+    {
+      "elapsed_seconds": 15.014,
+      "mode": "maximize",
+      "sign": 1,
+      "status": "UNKNOWN_HARD_TIMEOUT"
+    },
+    {
+      "elapsed_seconds": 15.026,
+      "mode": "target4158",
+      "sign": -1,
+      "status": "UNKNOWN_HARD_TIMEOUT"
+    },
+    {
+      "elapsed_seconds": 15.111,
+      "mode": "maximize",
+      "sign": -1,
+      "status": "UNKNOWN_HARD_TIMEOUT"
+    }
+  ],
+  "scope": "Integral image and dual ordinary enumerators with full MacWilliams divisibility, Wave137 Arf/K0..K5, all shadow bounds, and n3=3k through the exact S6 equation",
+  "solver_timeout_ms": 10000
+}

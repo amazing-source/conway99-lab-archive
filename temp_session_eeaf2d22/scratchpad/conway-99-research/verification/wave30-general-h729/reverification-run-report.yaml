@@ -1,0 +1,86 @@
+role: verifier
+date_utc: 2026-07-24T05:23:50Z
+git_commit: a7be6b8ae70d8b44e88db8dfd6804f8d946ca382
+claim_label: VERIFIED
+model: gpt-5.6-sol
+reasoning_effort: max
+audit_verdict: PASS_SCOPED_CONDITIONAL_THEOREM
+publication_gate: PASS_SCOPED_CONDITIONAL_THEOREM
+scope: >-
+  Independent re-verification of the repaired Wave 30 classification of
+  rootless, even, integral, positive-definite, integrally orthogonally
+  decomposable rank-44 determinant-729 S-forms carrying the frozen full
+  n3=708 endpoint package. Fourteen of fifteen aggregate types are excluded;
+  the rank-20 determinant-729 plus rank-24 even-unimodular type survives.
+inputs:
+  agents/2026-07-24-wave30-general-h729.md: fd1f11a2ab5c5dfd2732a4ba1fb8d063dea1ae0e96d417aaf9d45eade4f2281a
+  attempts/wave30-general-h729/artifact-manifest.sha256: e562654891c61a1ae50d34a6a38c6d9a39e985a03d7b0a253f60871539f1f006
+  attempts/wave30-general-h729/exact_check.py: b3c2b4c79b23f418cb63876560236d62e0be2c6cac69979106e03e5a8247d6a5
+  attempts/wave30-general-h729/test_exact_check.py: 9075d5fd77253850ba09c4655d9cbab135eb32fdd36638dc4aa9051fa49898a2
+  attempts/wave30-general-h729/exact-results.json: cb0a58195506a51ca6a39aaab197a3592344f7aef8b5b0c2af51770c7069ad6c
+  attempts/wave30-general-h729/input-freeze.sha256: 5996de9f71b0f3fca34040ac5c710c9e6d87885ad2bba94638c8cfeabd9ce245
+  attempts/wave30-general-h729/failed-routes.md: 397f74c75a8ae24bedd26fea41c0fb82d03c6611a87627e86aeb29244a586006
+  attempts/wave30-general-h729/run-report.yaml: 407bfb983f3df88335f8071d75127fdf554c59cf6ba41a3cdd7abdbc62dcc393
+  attempts/wave30-general-h729/repair-ledger.md: 1cf8aa09a65b552e7d81d2d9e46df6e59ce67222be6469094e9d788f99959cbd
+  verification/wave30-general-h729/independent_check.py: 2ad3594e975853143f7bacf7f97589e10ae18c50fa78747b67cee176e4895cbb
+  verification/wave30-general-h729/test_independent_check.py: 701c2c8af0eb746c735004cc3ff41dd9ab57d9da807e82205acebe97ef01df79
+  verification/wave30-general-h729/test_hostile_controls.py: d7aeea72cea60c345ecd979a5a5771d050c466c6972708b4f94c3e2a29a784dc
+  verification/wave30-general-h729/independent-results.json: 2b948591611e9c984985f7bacc5a77c714332fbe42ed5305b84039c621358416
+  original_discovery_commit: 091d0a458ab1f96e3b3f491b677c84824bbf8f44
+  original_verifier_veto_commit: 0bc6dc9b90dff6589cfaf9db1a84e2d8242b6321
+method: >-
+  Commit-object and byte freeze; exact repair-diff inspection; hermetic
+  repaired submitted replay; hermetic original-failure replay; hermetic
+  historical independent-verifier replay; independent no-import
+  micro-enumeration; adversarial theorem and scope-wall inspection; and
+  deterministic result, manifest, syntax, newline, privacy, and diff checks.
+command: |-
+  git archive --format=tar --output=<temporary-directory>/repo.tar a7be6b8ae70d8b44e88db8dfd6804f8d946ca382
+  cd <temporary-directory>/attempts/wave30-general-h729
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output <temporary-directory>/exact-regenerated.json
+  git archive --format=tar --output=<temporary-directory>/repo.tar 091d0a458ab1f96e3b3f491b677c84824bbf8f44
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output <temporary-directory>/original-regenerated.json
+  git archive --format=tar --output=<temporary-directory>/repo.tar 0bc6dc9b90dff6589cfaf9db1a84e2d8242b6321
+  cd <temporary-directory>/verification/wave30-general-h729
+  python -B -m unittest -v test_independent_check.py test_hostile_controls.py
+  python -B independent_check.py --output <temporary-directory>/independent-regenerated.json
+outputs:
+  verification/wave30-general-h729/reverification-freeze.md: 5361afc5d3e09bf0bb007e200feef40e4e9c0a6bdf9b756daa0360f449fbd8c1
+  verification/wave30-general-h729/reverification-audit.md: 523a84e2a490f3626a791fb16f43b77b7631b3f26f2de8dcecc83f5e03f4d2cc
+  repaired_exact_results_sha256: cb0a58195506a51ca6a39aaab197a3592344f7aef8b5b0c2af51770c7069ad6c
+  historical_independent_results_sha256: 2b948591611e9c984985f7bacc5a77c714332fbe42ed5305b84039c621358416
+limitations:
+  - The theorem is conditional on the frozen full endpoint package.
+  - The surviving rank-20 plus rank-24 type is neither constructed nor excluded.
+  - Rooted and integrally indecomposable determinant-729 forms remain untreated.
+  - Tensor counts are necessary, not an M, X, frame, lattice, or graph.
+  - The original submitted replay remains FAIL under V30-GEN-001.
+  - n3=708, Conway-99, and novelty remain UNKNOWN.
+tests:
+  repaired_submitted_unittest_count: 20
+  repaired_submitted_unittest_status: PASS
+  repaired_generator_status: PASS
+  repaired_json_bytes: 16125
+  repaired_json_sha256: cb0a58195506a51ca6a39aaab197a3592344f7aef8b5b0c2af51770c7069ad6c
+  repaired_json_byte_identical: PASS
+  repaired_manifest_entries: 8
+  repaired_manifest_status: PASS
+  repaired_input_freeze_entries: 5
+  repaired_input_freeze_status: PASS
+  original_submitted_unittest_count: 0
+  original_submitted_unittest_status: FAIL
+  original_generator_status: FAIL
+  original_generator_output_written: false
+  historical_independent_unittest_count: 32
+  historical_independent_unittest_status: PASS
+  historical_independent_generator_status: PASS
+  historical_independent_json_bytes: 22020
+  historical_independent_json_sha256: 2b948591611e9c984985f7bacc5a77c714332fbe42ed5305b84039c621358416
+  historical_independent_json_byte_identical: PASS
+dispositions:
+  V30-GEN-001: FAIL_ORIGINAL_REVISION_PRESERVED
+  V30-GEN-015: PASS_SCOPED_CONDITIONAL_THEOREM_REPAIRED_REVISION
+  V30-GEN-016: SELF_CORRECTION_POWERSHELL_PARSE_ERROR
+  V30-GEN-017: SELF_CORRECTION_UTC_PARAMETER

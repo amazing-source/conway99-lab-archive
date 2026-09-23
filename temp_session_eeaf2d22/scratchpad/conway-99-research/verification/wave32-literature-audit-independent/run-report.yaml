@@ -1,0 +1,106 @@
+role: verifier
+date_utc: "2026-07-24T09:15:37Z"
+git_commit: "NOT_USED_PER_NO_GIT_INSTRUCTION"
+claim_label: VERIFIED
+scope: >-
+  Corrected-byte replay of the frozen Wave 32 v2 statement/literature
+  package: all eight h branches; actual-incidence versus matrix-only scope;
+  root divisibility, index, and determinant; Petro-Phillips conditional
+  spectrum; modularity hypotheses; search accounting; v1 correction
+  chronology; source quality; and conservative current-status and novelty
+  labels.
+inputs:
+  - path: agents/2026-07-24-wave32-statement-literature.md
+    sha256: 9ae998d92296e9467041a431fc04121fe1411f8ac620d3b08c4016bfc3fc57ff
+  - path: verification/wave32-literature-audit/protocol-freeze.md
+    sha256: 3c645dcd4188c9c34ba9e04e2fbd966708d05080a33caa95c720a1fde46283d2
+  - path: verification/wave32-literature-audit/query-ledger.json
+    sha256: 7e7812a3dbf8c19a31eec58cc43c764aa1b61e7ad0fa1b8147b02fccfadef2c6
+  - path: verification/wave32-literature-audit/source-metadata.json
+    sha256: 6da7402bc6dbfa9f1b6a7c59d5f1ca74a841bb65e6ad3b0f5595afcf322f890e
+  - path: verification/wave32-literature-audit/audit.md
+    sha256: 71b6f184cf35bf3407529b42a20be4f0ccb957a39d0bbf294d19200b37bcb02f
+  - path: verification/wave32-literature-audit/correction-ledger.md
+    sha256: 3d2e10fe8ad8e2fbf24d9d449e69eecda950e40ba7b2f29c81867f2b5600cf4f
+  - path: verification/wave32-literature-audit/run-report.yaml
+    sha256: d411bcc7c9e92d4c06ee5c96a0b8496551ea73488c21b7e9becae169bbe9f025
+  - path: verification/wave32-literature-audit/artifact-manifest.sha256
+    sha256: 9bdf458203beb32c76b993af2cb6130641546b5a7816f8bed507661e640173c6
+  - path: verification/wave28-glue-discriminant/audit.md
+    sha256: 5c1dc7978d571a9471837b45a36663c7c457b6434800776501e4967146956b86
+  - path: verification/wave31-sign-commutant/audit.md
+    sha256: f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0
+  - path: verification/wave28-theta-modular/audit.md
+    sha256: adc90e404735ca147bc0a5418974d8af0bde71c4ddc2dc62a8c07dee670dbfeb
+  - path: verification/wave28-literature-audit/audit.md
+    sha256: ef18079970e410d114ab24752d4b738bc26ff4e6266a8cc775a4e14813fe1128
+  - path: SOURCES.bib
+    sha256: 3c93b322ee4b0a61cf1407fdf5b082dbb90801459300289c7097b56833914a8e
+method: >-
+  Froze and hashed all corrected v2 local inputs; verified that the correction
+  ledger retains all five v1 hashes and three independent objections;
+  inspected candidate prose and retained JSON without executing or importing
+  discovery code; independently replayed endpoint enumeration,
+  root-complement facts, incidence spectrum, modular determinant consequences,
+  source accounting, and deterministic standard-library unit tests.
+command: >-
+  python -B -m unittest -v test_independent_check.py && python -B
+  independent_check.py --output independent-results.json
+outputs:
+  - path: verification/wave32-literature-audit-independent/input-freeze.sha256
+    sha256: bd215eefbaa32ec1a07662fff7d5141aff91d960da8e57d77457da50861fe1da
+  - path: verification/wave32-literature-audit-independent/independent_check.py
+    sha256: 7ca5e1328f1bbc6aed83d2069b89195c08dc5e6ee67cc6499e2e9424ca7b01a1
+  - path: verification/wave32-literature-audit-independent/test_independent_check.py
+    sha256: 1963cffa05b26148f3d51ffd8871a893453546a964d330819aeed5026f95e8f5
+  - path: verification/wave32-literature-audit-independent/independent-results.json
+    sha256: f884699b464a8b1b46b63cc15546f01b72c492ae54530750fcf00226b13d913b
+  - path: verification/wave32-literature-audit-independent/audit.md
+    sha256: c52798833d4edf18542975495c39525c6c6d5537a9ab7c5489a4dd85b0b3592d
+verdict: PASS_CORRECTIONS_INTEGRATED
+checks:
+  tests_run: 17
+  tests_passed: 17
+  tests_failed: 0
+  candidate_manifest: PASS
+  all_eight_h: PASS
+  actual_vs_matrix_separation: PASS
+  rooted_div_index_determinant: PASS
+  petro_phillips_spectrum_and_hypotheses: PASS
+  modularity_wall: PASS
+  query_and_metadata_accounting: PASS
+  corrected_candidate_manifest: PASS
+  v1_correction_chronology: PASS
+  source_applicability: PASS_CORRECTIONS_INTEGRATED
+  current_status_language: PASS_CONSERVATIVE
+status_wall:
+  rooted_endpoint: UNKNOWN
+  rootless_decomposable_actual_incidence_endpoint: VERIFIED_IMPOSSIBLE_UPSTREAM
+  rootless_indecomposable_endpoint: UNKNOWN
+  matrix_only_realization: UNKNOWN
+  actual_incidence_realization: UNKNOWN
+  conway_99_global: UNKNOWN
+  novelty: UNKNOWN
+  exact_endpoint_prior_art: NOT_FOUND_IN_SEARCHED_SOURCES
+resolved_v1_findings:
+  - "S06 author order is corrected to Rudolf Scharlau, Britta Blaschke."
+  - >-
+    S10 now states the complete-generating-system input requirement; its
+    non-enumeration conclusion remains correct.
+  - >-
+    Keramatipour arXiv:2604.23037v2 is S15 with explicit post-audit
+    chronology and no-solution scope; the original 14-record chronology is
+    retained.
+  - >-
+    Integration status rows and the correction ledger retain the
+    actual-incidence qualifier on the rootless decomposable exclusion.
+limitations:
+  - >-
+    No complete literature database, private correspondence, unpublished
+    manuscript, or exhaustive classification was available.
+  - >-
+    Wave 32 retained no raw PDF, HTML, or API/search payload, so transient
+    search results cannot be replayed byte-for-byte.
+  - >-
+    Search no-hit, novelty, and global Conway-99 status remain UNKNOWN; no
+    access failure or solver limitation was used as mathematical evidence.

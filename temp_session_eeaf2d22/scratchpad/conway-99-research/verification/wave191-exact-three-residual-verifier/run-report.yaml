@@ -1,0 +1,63 @@
+role: verifier
+date_utc: 2026-07-29T03:03:59Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: exact-three type-three raw
+  exclusion, orbit-closed genuinely new residual capacity, joint exact-one
+  occupancy across type-three and type-two assignments, and the exact
+  coefficient certificate 12Q>=18C giving Q>=6237.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  attempts/wave191-exact-three-residual-proof-a/package-manifest.sha256: a0e2697b7e826f5543c2e007a1428633e37fb54e9e8449e73a731a7291f468c4
+  verification/wave180-capacity3-companion/package-manifest.sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  verification/wave181-c4-conic-equality/package-manifest.sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  verification/wave186-star-translation-cover-verifier/package-manifest.sha256: edb833cbed8706f164199d4ecab8ff26757c54dfc46915819e150e17d73fef76
+  verification/wave189-degree7-star-orbit-verifier/package-manifest.sha256: fc17484bd8c32a5886ecdcc65d153903cef5f3b60a3de1c9905ed96697c273c4
+  verification/wave190-residual-stability-verifier/package-manifest.sha256: 15686d17472fd60122072b3d679980d90d3cfe12fd87e5359344e52e216f1280
+method: >-
+  Clean-room reconstruction frozen before source inspection; local
+  common-neighbor pair-type analysis; exact F3 canonical-Gram kernel
+  comparison; orbit-closed new residual assignment capacity; joint
+  exact-one occupancy; selected exact-two uniqueness for both type-two raw
+  translates; and coefficientwise verification of
+  12Q>=9I+6(p2-n2)+p2+3(p3-n3)>=18C. No graph, cover, code, SAT,
+  configuration, LP, isomorphism, or enumeration search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave191-exact-three-residual-verifier\independent_check.py
+  --verify-math
+  verification\wave191-exact-three-residual-verifier\independent-math-result.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave191-exact-three-residual-verifier\independent_check.py
+  --verify
+  verification\wave191-exact-three-residual-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave191-exact-three-residual-verifier\test_independent_check.py
+outputs:
+  - verification/wave191-exact-three-residual-verifier/README.md
+  - verification/wave191-exact-three-residual-verifier/audit.md
+  - verification/wave191-exact-three-residual-verifier/protocol.md
+  - verification/wave191-exact-three-residual-verifier/independent_check.py
+  - verification/wave191-exact-three-residual-verifier/independent-math-result.json
+  - verification/wave191-exact-three-residual-verifier/independent-result-freeze.sha256
+  - verification/wave191-exact-three-residual-verifier/independent-results.json
+  - verification/wave191-exact-three-residual-verifier/test_independent_check.py
+  - verification/wave191-exact-three-residual-verifier/input-freeze.sha256
+limitations:
+  - The theorem is conditional on the prism-free rank-11 endpoint.
+  - The result supplies no incompatible upper bound and does not exclude
+    rank 11 or endpoint existence.
+  - No graph, code, cover, or circuit family attaining the lower bound is
+    constructed.
+  - The audited exact-two residual exclusion is recorded only as an unused
+    Wave192 lever.
+  - The source proof-agent boundary contains a stale Q=5891 label; the body,
+    theorem, derivation, and exact result correctly state Q>=6237.
+  - The source Q=6237 arithmetic row is a null only for the displayed weak
+    scalar inequalities, not for the separately audited exact-two residual
+    exclusion. Neither source-account issue affects the theorem.
+  - The circuit-only scalar bound 13860 is weaker than Wave188's 18018
+    all-short-word bound.
+  - Strict n3 improvement is not obtained.
+  - External novelty and Conway-99 remain UNKNOWN.

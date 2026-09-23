@@ -1,0 +1,85 @@
+{
+  "claim_label": "AUDIT_PASS_DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "consequence": {
+    "circuit_scalar_words": 15462,
+    "conditional_Q_lower_bound": 7038,
+    "edge_added_projective": 7731
+  },
+  "contradiction": {
+    "maximum_saturated_orientations": 7,
+    "required_saturated_orientations": 48,
+    "status": "CONTRADICTION"
+  },
+  "global_multiplicity": {
+    "S5_identity": "S5=5*delta+5*eta+epsilon",
+    "S5_reduced_vector": {
+      "delta": 5,
+      "epsilon": 1,
+      "eta": 5
+    },
+    "delta_plus_eta_max": 4,
+    "epsilon_max": 23,
+    "multiplicity_five_orientations_min": 48,
+    "q_identity": "4*q=297-3*SF-3*g-SH+epsilon+delta+eta",
+    "q_intermediate": "4*q=3*n3-H+a+epsilon+delta+eta",
+    "q_intermediate_vector": {
+      "H": -1,
+      "a": 1,
+      "delta": 1,
+      "epsilon": 1,
+      "eta": 1,
+      "three_n3": 1
+    },
+    "q_min": 71,
+    "q_numerator_min": 281,
+    "q_reduced_vector": {
+      "SF": -3,
+      "SH": -1,
+      "constant": 297,
+      "delta": 1,
+      "epsilon": 1,
+      "eta": 1,
+      "g": -3
+    }
+  },
+  "local_gluing": {
+    "c12_deficit_if_saturated": 4,
+    "c12_pair_incidence_total": 36,
+    "c12_saturated_orientation_cap": 7,
+    "c13_centers": "all 99, except possibly one c=12 center",
+    "c13_deficit_per_saturated_center": 3,
+    "c13_degree_five_pair_cap": 3,
+    "c13_global_saturated_cap": 3,
+    "full_flag_deficit_max": 1,
+    "global_saturated_orientation_cap": 7,
+    "proof_a_looser_cap": 12
+  },
+  "search_scope": "exact integer slack and incidence arithmetic only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search",
+  "wave198_face": {
+    "budget_identity": "32SI+48S2+8SE2+28RA+12SL+S5+3SH+13SF+4a1+24b3+8c2+9g+16W=23",
+    "budget_weights": {
+      "RA": 28,
+      "S2": 48,
+      "S5": 1,
+      "SE2": 8,
+      "SF": 13,
+      "SH": 3,
+      "SI": 32,
+      "SL": 12,
+      "W": 16,
+      "a1": 4,
+      "b3": 24,
+      "c2": 8,
+      "g": 9
+    },
+    "excluded_integer_value": 7037,
+    "immediate_caps": {
+      "S5": 23,
+      "SF": 1,
+      "SH": 7,
+      "g": 2
+    },
+    "scaled_budget": 23,
+    "target": "281457/40"
+  }
+}

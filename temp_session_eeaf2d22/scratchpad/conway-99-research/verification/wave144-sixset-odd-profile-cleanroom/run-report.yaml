@@ -1,0 +1,39 @@
+role: verifier
+date_utc: 2026-07-28T10:24:45Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification that the sealed Wave144 six-set odd-output marginal
+  relaxation has an exact integer feasible point at the imported endpoint
+  n3=4158; graph realization and overlap consistency are excluded.
+inputs:
+  - path: verification/wave144-sixset-odd-profile-cleanroom/discovery-manifest.frozen.sha256
+    sha256: b5369353ac6959b0662e3f424cf80e48094ac6bcdb79572bf604632c45509436
+  - path: attempts/wave144-sixset-odd-profile/exact-results.json
+    sha256: 6dbb544494511906ce6452eaa6addb20c8e3f8861abfd67d1a026d94baf2234b
+  - path: attempts/wave21-six-vertex-lp/exact_check.py
+    sha256: 0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  - path: attempts/wave141-bivariate-graph-code/exact-results.json
+    sha256: 351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e
+method: >-
+  Fresh graph census and deletion-deck alignment; exhaustive exact local
+  support regeneration; direct replay of 66 sparse local certificates;
+  independent exact replay of the 65-cell endpoint aggregate, all 62
+  marginals, t=0..3 reciprocity moments, and signed S6; same-author verifier
+  audited for integrity only.
+command: >-
+  python verification/wave144-sixset-odd-profile-cleanroom/cleanroom_verify.py
+  && python -m unittest
+  verification/wave144-sixset-odd-profile-cleanroom/test_cleanroom_verify.py -v
+outputs:
+  - path: verification/wave144-sixset-odd-profile-cleanroom/verification-results.json
+    sha256: f681ae2919b490d06082c1923394b5a56adca1ef59b089e2e09ef042145091b5
+  - path: verification/wave144-sixset-odd-profile-cleanroom/verification-report.md
+    sha256: 3d144e617d0c5e7be8d6606e0c5bdf5d555deb8be67aeac72bad6ed019ca6918
+limitations: >-
+  PASS_NULL_BOUNDARY is only an exact feasibility result for the stated
+  aggregate relaxation at the already known cap. The certificate does not
+  glue local z_P witnesses on overlapping six-subsets, establish a common
+  99-vertex graph, construct an SRG, or improve the n3 bound.

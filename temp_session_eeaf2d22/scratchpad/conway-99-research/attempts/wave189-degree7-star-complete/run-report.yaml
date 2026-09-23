@@ -1,0 +1,39 @@
+role: proof_b
+date_utc: 2026-07-29T02:18:14Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint: exact rational feasibility of the one-star
+  degree-seven complete-enumerator system and analytic companion-orbit plus
+  equality-face circuit bound Q>=4852.
+inputs:
+  - agents/2026-07-29-wave187-code-geometry-proof-b.md
+  - attempts/wave187-code-geometry-proof-b/exact_check.py
+  - agents/2026-07-29-wave187-multiplicity-one-star-translation-proof-a.md
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave186-star-translation-cover-verifier/package-manifest.sha256
+  - verification/wave188-affine-star-word-amplification-verifier/audit.md
+method: >-
+  Exact complete MacWilliams arithmetic, star-local convexity, rational
+  Gram moments, private-label companion closure, center-oriented support
+  packing, and checkerboard residual circuit extraction. No graph, code,
+  SAT, cover, configuration, isomorphism, or broad LP search.
+command: >-
+  python -B attempts/wave189-degree7-star-complete/exact_check.py;
+  python -B -m unittest -v
+  attempts/wave189-degree7-star-complete/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave189-degree7-star-complete-proof-b.md
+  - attempts/wave189-degree7-star-complete/README.md
+  - attempts/wave189-degree7-star-complete/derivation.md
+  - attempts/wave189-degree7-star-complete/protocol.md
+  - attempts/wave189-degree7-star-complete/exact_check.py
+  - attempts/wave189-degree7-star-complete/exact-results.json
+  - attempts/wave189-degree7-star-complete/test_exact_check.py
+  - attempts/wave189-degree7-star-complete/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The degree-seven control is rational and not a code or point set.
+  - The circuit theorem depends on the derived Wave187 singleton extraction.
+  - The sharp scalar row is not an asserted cover.
+  - Rank 11, endpoint existence, external novelty, and Conway-99 remain UNKNOWN.

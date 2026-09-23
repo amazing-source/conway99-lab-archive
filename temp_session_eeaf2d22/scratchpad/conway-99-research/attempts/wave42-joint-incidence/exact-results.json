@@ -1,0 +1,246 @@
+{
+  "bounded_solver_diagnostics_not_evidence": {
+    "generic_MILP": "No incumbent in a 45-second run; timeout is not evidence.",
+    "one_fixed_two_fibre_stage": "One exact first-stage SAT model had an UNSAT fixed third-fibre extension, but no proof was retained and other first-stage models were not exhausted. This is not evidence of global nonexistence."
+  },
+  "canonical_core": {
+    "component_fibre_balances": [
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        8,
+        8,
+        8
+      ]
+    ],
+    "component_sizes": [
+      12,
+      24
+    ],
+    "components": [
+      [
+        0,
+        1,
+        2,
+        3,
+        12,
+        13,
+        14,
+        15,
+        24,
+        25,
+        26,
+        27
+      ],
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    ],
+    "forced_gram_diagonal": 10,
+    "forced_gram_entry_distribution": {
+      "0": 76,
+      "1": 568,
+      "10": 36,
+      "2": 616
+    },
+    "forced_gram_row_sum": 60,
+    "four_cycle_count": 10
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "exhaustive_B_reduction": {
+    "candidate_census": {
+      "after_forced_component_equality": 49736,
+      "after_mixed_BH_nonnegativity": 45032,
+      "gram_support_legal": 118718,
+      "mixed_legal_by_component_pattern": {
+        "(0, 0, 2)": 2020,
+        "(0, 1, 1)": 13464,
+        "(0, 2, 0)": 2020,
+        "(1, 0, 1)": 12888,
+        "(1, 1, 0)": 12888,
+        "(2, 0, 0)": 1752
+      },
+      "raw_pair_triples": 216000
+    },
+    "complete_remaining_model": "Select 60 of the 45032 mixed-legal candidates so every one of the three fibres' 60 nonmatching pairs is used once and every cross-fibre point pair has its exact forced Gram multiplicity. This is an exhaustive three-way matching formulation, not a restricted symmetry model.",
+    "component_Cauchy_equality": {
+      "Cauchy_floor": 240,
+      "conclusion": "All 60 block intersections with the 12-vertex component equal 2.",
+      "sum_block_intersections": 120,
+      "sum_squared_block_intersections": 240
+    },
+    "nonmatching_pairs_per_fibre": [
+      60,
+      60,
+      60
+    ],
+    "pair_small_component_count_distribution_per_fibre": [
+      {
+        "0": 24,
+        "1": 32,
+        "2": 4
+      },
+      {
+        "0": 24,
+        "1": 32,
+        "2": 4
+      },
+      {
+        "0": 24,
+        "1": 32,
+        "2": 4
+      }
+    ],
+    "reason_each_pair_is_used_once": "Every B-column selects two vertices per fibre. Same-fibre matching pairs have Gram entry 0 and all other pairs have entry 1, so the 60 nonmatching pairs occur exactly once.",
+    "required_60_block_component_patterns": {
+      "(0, 0, 2)": 4,
+      "(0, 1, 1)": 16,
+      "(0, 2, 0)": 4,
+      "(1, 0, 1)": 16,
+      "(1, 1, 0)": 16,
+      "(2, 0, 0)": 4
+    },
+    "same_fibre_gram_distribution": {
+      "0": 18,
+      "1": 180
+    }
+  },
+  "forced_H_boundary_if_B_exists": {
+    "H_edges_by_block_overlap": {
+      "0": 96,
+      "1": 144,
+      "2": 0
+    },
+    "H_four_cycles": 181,
+    "H_triangles": 32,
+    "block_overlap_pair_counts_0_1_2": {
+      "0": 458,
+      "1": 1004,
+      "2": 308
+    },
+    "identities": {
+      "XX": "BB^T=12I-A_X+2J-RR^T-A_X^2",
+      "XY": "BH=(J/3-I-A_X)B",
+      "YY": "B^TB+H^2=12I-H+2J"
+    }
+  },
+  "format": "wave42-joint-incidence-v1",
+  "git_commit": "ef49b60aafd67f9007f6c218c39fd50392453a1b",
+  "input": {
+    "canonical_core_edges_sha256": "b0a9e7cc75d933597d43c9395e0192268b71ad88b93120a82dc662e64585b664",
+    "canonical_mask": 51739,
+    "verification/wave41-allquotient-lifts/independent-results.json": "062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b"
+  },
+  "scope": "Conditional on n3=4158, r3=12, all edges type 222, and the canonical Wave 41 rank-33 lift mask 51739: exact necessary simultaneous B/H reduction. No symmetry is assumed.",
+  "status_wall": {
+    "all_264_rank33_lifts": "NOT_CHECKED",
+    "all_37378_triangle_free_lifts": "NOT_CHECKED",
+    "canonical_full_B": "UNKNOWN",
+    "compatible_8_regular_H": "UNKNOWN",
+    "conway_99_resolved": false,
+    "endpoint_excluded": false,
+    "scoped_branch_excluded": false
+  },
+  "two_fibre_positive_control": {
+    "certificate": [
+      57,
+      53,
+      28,
+      8,
+      21,
+      45,
+      38,
+      30,
+      50,
+      55,
+      46,
+      40,
+      47,
+      39,
+      31,
+      52,
+      49,
+      16,
+      27,
+      14,
+      4,
+      25,
+      17,
+      41,
+      37,
+      22,
+      54,
+      44,
+      6,
+      35,
+      51,
+      56,
+      42,
+      43,
+      12,
+      7,
+      18,
+      26,
+      15,
+      59,
+      33,
+      23,
+      24,
+      19,
+      34,
+      13,
+      3,
+      48,
+      9,
+      58,
+      32,
+      2,
+      0,
+      1,
+      36,
+      11,
+      10,
+      29,
+      5,
+      20
+    ],
+    "certificate_sha256": "655ad9d0f26c46885212baef01ccc3a437eb324887c797e139c2f24a84b1f623",
+    "component_pattern_marginal": {
+      "(0, 0)": 4,
+      "(0, 1)": 16,
+      "(0, 2)": 4,
+      "(1, 0)": 16,
+      "(1, 1)": 16,
+      "(2, 0)": 4
+    },
+    "is_permutation": true,
+    "realizes_exact_Q01": true,
+    "scope": "Complete X0-X1 pair projection only. It does not select fibre-2 pairs or provide a 60-column B."
+  }
+}

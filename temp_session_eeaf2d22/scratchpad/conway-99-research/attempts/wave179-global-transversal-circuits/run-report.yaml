@@ -1,0 +1,39 @@
+role: proof_b
+date_utc: 2026-07-28T23:45:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint lower bound of 2079 distinct projective
+  dual circuits of sizes 4 through 9 from all 4851 vertex pairs.
+inputs:
+  - attempts/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - attempts/wave177-relation-averaging-conic/package-manifest.sha256
+  - verification/wave177-relation-averaging-conic/package-manifest.sha256
+  - attempts/wave178-edge-circuit-injection/package-manifest.sha256
+  - verification/wave178-edge-circuit-injection/package-manifest.sha256
+method: >-
+  Matroid cross-circuit extraction and exact two-transversal multiplicity
+  analysis using only three-uniform triangle blocks and lambda=1, followed
+  by balanced-edge global isolation. No graph, code, SAT, configuration, or
+  isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave179-global-transversal-circuits\exact_check.py --verify
+  attempts\wave179-global-transversal-circuits\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave179-global-transversal-circuits\test_exact_check.py
+outputs:
+  - attempts/wave179-global-transversal-circuits/README.md
+  - attempts/wave179-global-transversal-circuits/derivation.md
+  - attempts/wave179-global-transversal-circuits/failed-routes.md
+  - attempts/wave179-global-transversal-circuits/protocol.md
+  - attempts/wave179-global-transversal-circuits/exact_check.py
+  - attempts/wave179-global-transversal-circuits/exact-results.json
+  - attempts/wave179-global-transversal-circuits/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - Multiplicity-three nonedge stars are not excluded.
+  - Current code bounds do not contradict the dual-word lower bound.
+  - The endpoint and rank-11 branch survive.
+  - External novelty is UNKNOWN.

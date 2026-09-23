@@ -1,0 +1,239 @@
+{
+  "claim_label": "PENDING_DISCOVERY_COMPARISON",
+  "floor_sum": {
+    "direction": "UPPER",
+    "inequality": "sum_o floor(350+5*f_o/2)<=34650+15P",
+    "parity_defect": "the right side loses #odd(f_o)/2 from its maximum",
+    "root_count": 99,
+    "sum_f_identity": "sum_o f_o=6P"
+  },
+  "format": "wave100-general-pair-moment-independent-v1",
+  "global_bound": {
+    "P_form": "N14<=2*floor((34650+15P)/14)",
+    "coefficient_of_n3": -5,
+    "compatible_rows_checked": 1387,
+    "compatible_rows_sha256": "4b19c6d0be964364326fd92e3f63236862b6cf791459adba151459b76c28d302",
+    "endpoint_rows": {
+      "0": {
+        "P": 1386,
+        "even_N14_upper": 7920,
+        "integer_floor": 7920,
+        "n3": 0,
+        "numerator_mod_14": 0,
+        "rooted_numerator": 55440
+      },
+      "4155": {
+        "P": 1,
+        "even_N14_upper": 4952,
+        "integer_floor": 4952,
+        "n3": 4155,
+        "numerator_mod_14": 1,
+        "rooted_numerator": 34665
+      },
+      "4158": {
+        "P": 0,
+        "even_N14_upper": 4950,
+        "integer_floor": 4950,
+        "n3": 4158,
+        "numerator_mod_14": 0,
+        "rooted_numerator": 34650
+      },
+      "708": {
+        "P": 1150,
+        "even_N14_upper": 7414,
+        "integer_floor": 7414,
+        "n3": 708,
+        "numerator_mod_14": 2,
+        "rooted_numerator": 51900
+      }
+    },
+    "n3_form": "N14<=2*floor((55440-5*n3)/14)",
+    "rooted_incidence_inequality": "7*N14<=34650+15P=55440-5*n3",
+    "rows_tightened_by_antipodal_even_rounding": 693
+  },
+  "limitations": [
+    "The theorem bounds N14 as a function of n3; it does not bound n3.",
+    "The floor-sum relaxation ignores additional prism-incidence compatibility.",
+    "No graph existence or nonexistence conclusion follows.",
+    "Novelty and literature priority are not assessed."
+  ],
+  "local_applicability": {
+    "eligible_transition_seed_multiplicities": [
+      8
+    ],
+    "fourth_center_sum_of_maxima": 8,
+    "local_perfect_matching_count": 10395,
+    "mate_forbidden_candidate_count": 84,
+    "mate_transition_applicability": "mate transitions lie in zero seeds; every seed-eligible fixed transition retains cap 18 even when other local matching edges may be mate transitions",
+    "mate_transition_seed_multiplicities": [
+      0
+    ],
+    "original_center_max_with_lambda_guard": 10,
+    "original_center_max_without_lambda_guard": 16,
+    "original_center_profile_types": [
+      [
+        false,
+        0
+      ],
+      [
+        false,
+        1
+      ],
+      [
+        false,
+        2
+      ],
+      [
+        true,
+        8
+      ]
+    ],
+    "per_transition_coincidence_cap": 18,
+    "seed_count": 560,
+    "seed_eligible_candidate_count": 840,
+    "transition_candidate_count": 924
+  },
+  "precomparison_verdict": {
+    "all_1387_even_roundings": "INDEPENDENTLY_REPRODUCED",
+    "coefficient_minus_five": "INDEPENDENTLY_REPRODUCED",
+    "discovery_comparison": "NOT_YET_PERFORMED",
+    "floor_sum_direction": "INDEPENDENTLY_REPRODUCED",
+    "rootwise_ceiling_floor": "INDEPENDENTLY_REPRODUCED",
+    "six_root_prism_factor": "INDEPENDENTLY_REPRODUCED"
+  },
+  "prism_identity": {
+    "C4_counts_for_cross_matching_sizes_0_to_3": [
+      0,
+      0,
+      1,
+      3
+    ],
+    "graph_nonedges": 4158,
+    "induced_C4_count": 2079,
+    "n3_plus_3P": 4158,
+    "rooted_identity": "sum_o f_o=6P",
+    "rooted_prism_certificates": [
+      [
+        0,
+        3,
+        1,
+        2,
+        4,
+        5
+      ],
+      [
+        1,
+        4,
+        0,
+        2,
+        3,
+        5
+      ],
+      [
+        2,
+        5,
+        0,
+        1,
+        3,
+        4
+      ],
+      [
+        3,
+        0,
+        4,
+        5,
+        1,
+        2
+      ],
+      [
+        4,
+        1,
+        3,
+        5,
+        0,
+        2
+      ],
+      [
+        5,
+        2,
+        3,
+        4,
+        0,
+        1
+      ]
+    ],
+    "roots_per_prism": 6
+  },
+  "role": "verifier",
+  "rootwise_moment": {
+    "endpoint_rows": {
+      "0": {
+        "bad_seed_integer_lower": 210,
+        "bad_seed_rational_lower": "210",
+        "f_o": 0,
+        "first_moment": 672,
+        "root_bound_formula": "floor(350+5*f_o/2)",
+        "seed_eligible_transitions": 84,
+        "transition_free_seed_upper": 350,
+        "unordered_pair_moment_upper": 756
+      },
+      "1": {
+        "bad_seed_integer_lower": 208,
+        "bad_seed_rational_lower": "415/2",
+        "f_o": 1,
+        "first_moment": 664,
+        "root_bound_formula": "floor(350+5*f_o/2)",
+        "seed_eligible_transitions": 83,
+        "transition_free_seed_upper": 352,
+        "unordered_pair_moment_upper": 747
+      },
+      "2": {
+        "bad_seed_integer_lower": 205,
+        "bad_seed_rational_lower": "205",
+        "f_o": 2,
+        "first_moment": 656,
+        "root_bound_formula": "floor(350+5*f_o/2)",
+        "seed_eligible_transitions": 82,
+        "transition_free_seed_upper": 355,
+        "unordered_pair_moment_upper": 738
+      },
+      "83": {
+        "bad_seed_integer_lower": 3,
+        "bad_seed_rational_lower": "5/2",
+        "f_o": 83,
+        "first_moment": 8,
+        "root_bound_formula": "floor(350+5*f_o/2)",
+        "seed_eligible_transitions": 1,
+        "transition_free_seed_upper": 557,
+        "unordered_pair_moment_upper": 9
+      },
+      "84": {
+        "bad_seed_integer_lower": 0,
+        "bad_seed_rational_lower": "0",
+        "f_o": 84,
+        "first_moment": 0,
+        "root_bound_formula": "floor(350+5*f_o/2)",
+        "seed_eligible_transitions": 0,
+        "transition_free_seed_upper": 560,
+        "unordered_pair_moment_upper": 0
+      }
+    },
+    "pair_moment_factor_per_seed_eligible_transition": 9,
+    "per_transition_coincidence_cap": 18,
+    "rows_f_o_0_through_84_checked": 85,
+    "theorem": "a14(o)<=floor(350+5*f_o/2)"
+  },
+  "scope": {
+    "N14_counts_both_signs": true,
+    "hypothetical_graph": "srg(99,14,1,2)",
+    "requires_P0": false,
+    "requires_rank_28": false
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "general_N14_upper_bound": "DERIVED_PENDING_COMPARISON",
+    "graph_nonexistence": "NOT_PROVED",
+    "novelty": "UNKNOWN",
+    "strict_n3_upper_bound": "NOT_PROVED"
+  }
+}

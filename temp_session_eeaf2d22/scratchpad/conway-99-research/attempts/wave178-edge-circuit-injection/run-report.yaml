@@ -1,0 +1,39 @@
+role: proof_a
+date_utc: 2026-07-28T23:20:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint injection from 693 graph edges to distinct
+  projective dual circuits of sizes 4, 6, or 8, with balanced local
+  coefficient and two-star profiles.
+inputs:
+  - attempts/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - attempts/wave176-star-projector-circuits/package-manifest.sha256
+  - verification/wave176-star-projector-circuits/package-manifest.sha256
+  - attempts/wave177-relation-averaging-conic/package-manifest.sha256
+  - verification/wave177-relation-averaging-conic/package-manifest.sha256
+method: >-
+  Lambda-one triangle-incidence multiplicity proof, matroid
+  minimal-dependent-support reduction, and exact classification of four
+  already-derived local Gram kernels. No graph, code, SAT, configuration,
+  or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave178-edge-circuit-injection\exact_check.py --verify
+  attempts\wave178-edge-circuit-injection\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave178-edge-circuit-injection\test_exact_check.py
+outputs:
+  - attempts/wave178-edge-circuit-injection/README.md
+  - attempts/wave178-edge-circuit-injection/derivation.md
+  - attempts/wave178-edge-circuit-injection/failed-routes.md
+  - attempts/wave178-edge-circuit-injection/protocol.md
+  - attempts/wave178-edge-circuit-injection/exact_check.py
+  - attempts/wave178-edge-circuit-injection/exact-results.json
+  - attempts/wave178-edge-circuit-injection/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The endpoint and rank-11 branch both survive.
+  - The circuit lower bound alone does not violate standard code bounds.
+  - External novelty is UNKNOWN.

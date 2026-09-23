@@ -1,0 +1,252 @@
+{
+  "claim_label": "VERIFIED",
+  "gram_and_rank": {
+    "B_B_transpose": "12I-A_X+2J-blockdiag(J12,J12,J12)-A_X^2",
+    "B_transpose_B": "12I-A_Y+2J-A_Y^2",
+    "factor_on_within_fibre_zero": "(3I-A_X)(4I+A_X)",
+    "kernel_B_transpose_dimension": "kappa+1",
+    "rank_B": "35-kappa"
+  },
+  "independent_replay": {
+    "chronology": {
+      "component_partitions": [
+        [
+          12
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          4,
+          4,
+          4
+        ]
+      ],
+      "novel_in_wave58": false,
+      "rows_a_b_kappa_rankB": [
+        [
+          18,
+          8,
+          1,
+          34
+        ],
+        [
+          18,
+          9,
+          2,
+          33
+        ],
+        [
+          18,
+          10,
+          3,
+          32
+        ]
+      ],
+      "source_claim_label": "VERIFIED"
+    },
+    "component_censuses": {
+      "m4": {
+        "C4_distribution": {
+          "2": 6,
+          "4": 30,
+          "6": 14
+        },
+        "accepted": 50,
+        "normalization": "complete coordinate-normalized presentations; counts are not graph-isomorphism class counts",
+        "raw": 216,
+        "stored_witnesses_checked": 3
+      },
+      "m6": {
+        "C4_distribution": {
+          "0": 288,
+          "1": 576,
+          "2": 3744,
+          "3": 6744,
+          "4": 11520,
+          "5": 7128,
+          "6": 3648,
+          "7": 936,
+          "9": 56
+        },
+        "accepted": 34640,
+        "normalization": "complete coordinate-normalized presentations; counts are not graph-isomorphism class counts",
+        "raw": 162000,
+        "stored_witnesses_checked": 9
+      }
+    },
+    "component_specific_C4": {
+      "kappa_1": {
+        "bound": [
+          0,
+          27
+        ],
+        "exact_attainable_set_claimed": false
+      },
+      "kappa_2_4_plus_8": {
+        "bound": [
+          2,
+          24
+        ],
+        "m8_enumerated": false
+      },
+      "kappa_2_6_plus_6": {
+        "exact_local_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18
+        ]
+      },
+      "kappa_2_overall": {
+        "bound": [
+          0,
+          24
+        ],
+        "exact_attainable_set_claimed": false
+      },
+      "kappa_3": {
+        "exact_local_set": [
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18
+        ]
+      }
+    },
+    "controls": {
+      "kappa_2_A_X": {
+        "C4_X": 0,
+        "component_sizes": [
+          18,
+          18
+        ],
+        "degree_set": [
+          3
+        ],
+        "edge_list_sha256": "f7d840ce3edec825d39cd03be86b88fcbc836c484d0aedd678af9182e3b1af7f",
+        "maximum_nonedge_codegree": 1,
+        "triangles": 0,
+        "vertices": 36
+      },
+      "kappa_3_A_X": {
+        "C4_X": 12,
+        "component_sizes": [
+          12,
+          12,
+          12
+        ],
+        "degree_set": [
+          3
+        ],
+        "edge_list_sha256": "35ad33b474e31bb2ff51397926da4cf05888866dfd7926ae8dfd196bcf5d158e",
+        "maximum_nonedge_codegree": 2,
+        "triangles": 0,
+        "vertices": 36
+      },
+      "kappa_3_scalar": {
+        "a": 18,
+        "b": 10,
+        "counts": [
+          5,
+          6,
+          8,
+          1,
+          9,
+          2
+        ],
+        "graph_spectrum_claimed": false,
+        "power_sums": [
+          31,
+          -22,
+          94,
+          -166,
+          550
+        ],
+        "q": 12
+      },
+      "simultaneous_B_or_A_Y": false
+    },
+    "wave40_replay": {
+      "C4_distribution": {
+        "4": 1944,
+        "5": 4320,
+        "6": 7560,
+        "7": 7008,
+        "8": 8172,
+        "9": 3504,
+        "10": 3696,
+        "11": 480,
+        "12": 658,
+        "14": 36
+      },
+      "component_profiles": {
+        "12+24": 37378
+      },
+      "raw_masks": 262144,
+      "restriction": "one of eight normalized rank-11 quotients, under all-222 and r3=12; not all endpoint cores",
+      "triangle_free_masks": 37378
+    }
+  },
+  "limitations": [
+    "All mathematics is conditional on the prism-free n3=4158 endpoint.",
+    "Wave36 already proves the rank, component, and multiplicity identities.",
+    "The m=8 and m=12 component spaces are not enumerated.",
+    "Local A_X and scalar controls are separate and do not construct B or A_Y.",
+    "The Wave40 replay covers one restricted quotient, not all endpoint cores.",
+    "No graph, endpoint exclusion, or Conway-99 resolution is supplied."
+  ],
+  "resource_guard": {
+    "finish_free_physical_memory_percent": 36.87,
+    "minimum_free_physical_memory_percent": 20,
+    "start_free_physical_memory_percent": 37.41
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "conditional n3=4158 fixed-triangle cross-incidence synthesis; coordinate-normalized m=4/m=6 component censuses and one explicitly restricted Wave40 lift only",
+  "status_boundary": {
+    "conway_99_status": "UNKNOWN",
+    "endpoint_excluded": false,
+    "endpoint_graph_constructed": false,
+    "improved_general_n3_upper_bound": false,
+    "novelty": "UNKNOWN",
+    "simultaneous_B_or_A_Y_constructed": false
+  },
+  "universal_C4_bound": {
+    "C4_X_upper_bound": 27,
+    "four_wedges_per_C4": 4,
+    "type": "universal upper bound, not an attainment claim",
+    "wedge_count": 108
+  },
+  "wording_audit": {
+    "coordinate_normalization_uses_completed_graph_automorphism": false,
+    "kappa_1_0_to_27_is_bound_not_exact_set": true,
+    "kappa_2_0_to_24_is_bound_not_exact_set": true,
+    "kappa_2_4_plus_8_m8_component_enumerated": false,
+    "kappa_3_set_exact_for_local_component_class": true,
+    "normalized_component_counts_are_isomorphism_counts": false,
+    "stored_canonical_witness_means": "deterministic first normalized witness by C4, not canonical graph-isomorphism representative"
+  }
+}

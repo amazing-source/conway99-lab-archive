@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-27T01:11:20Z
+git_commit: 3014f3b1c010cdde1687b8878d4ec58d2bb90f03
+claim_label: VERIFIED
+scope: "Exact five-parent/33-case endpoint queue and orbit-weight reconstruction; discovery hash/schema/privacy audit; collision-safe artifact plan; read-only historical/live absence boundary; and proof coverage 0/33"
+inputs:
+  attempts/wave38-solver-harvest/coverage-plan.json: 2de85c3f73d4b12a579b281c10171a47c12e26a323ecdf9617c1a842a81d8bf2
+  attempts/wave38-solver-harvest/process-snapshot.json: b0515ac9169dcbb74cc7ca243aa6934b4b73eb13f93b9c8110d75af3a960527f
+  attempts/wave38-solver-harvest/input-freeze.sha256: c0c18edd31f12840fbdc16d9cee12493ed4bfc371c5d3b8455e421cc9e89a790
+  attempts/wave38-solver-harvest/run-report.yaml: 4c1b42a05c134954cd50ace427cc069da6ab6b9f069e2d7ae74d21e34bb9e1ba
+  attempts/wave35-n3-upper-triple-overlap/root-endpoint-reduction.json: 7551c7b9d956705e41f9feb42d76d3bb5ab60dab0b46416fa9c0e58e5346a46a
+  verification/n3-refined-cover/n3-refined-cover.json: fd9a14193365bf40d3d7bcbe53d56c6f1ffa8a93ca63d5b68506c3354f3b9f8a
+  verification/wave37-rooted-branches/independent_check.py: 2039681ef17eafea7ace392682317d1baf250585d35474fe7dafa35a3cbca3f3
+  verification/wave38-solver-harvest/live-observation.json: 62156d0909bb245decd91cca9a4c68cba20ab7e305c4f45fceacf82072cac677
+method: "Regenerate all parent/refined orbits from frozen independent mathematical definitions; derive endpoint survivors, every case endpoint/orbit/literal, and parent weights; strictly validate discovery schemas and all frozen/run-report hashes; normalize and case-fold all 231 planned paths; scan text for privacy-sensitive patterns; inspect live process scopes and outputs read-only; reject any proof promotion without independently checked certificates."
+command: |
+  Get-CimInstance Win32_Process -Filter "ProcessId=25088 OR ProcessId=27676 OR ProcessId=42444 OR ProcessId=20988"
+  Get-Process -Id 27676,20988
+  Test-Path attempts\wave36-rooted-branches\refined-100k.json
+  Test-Path attempts\wave36-rooted-branches\refined-100k-minicard-parent4.json
+  .\.venv\Scripts\python.exe -B verification\wave38-solver-harvest\independent_check.py --output verification\wave38-solver-harvest\independent-results.json
+  .\.venv\Scripts\python.exe -B -m unittest -v verification\wave38-solver-harvest\test_independent_check.py
+  .\.venv\Scripts\python.exe -B verification\wave38-solver-harvest\independent_check.py --verify verification\wave38-solver-harvest\independent-results.json
+outputs:
+  verification/wave38-solver-harvest/independent_check.py: 8e484a9a40dc673ebe758cacb1007b758d5971c23878f80559e83ca15a18ba78
+  verification/wave38-solver-harvest/test_independent_check.py: 1aedc08f80f7a0a9f4d0f15850e753ad108fda0ea94b93d3619e6006c1bdab7d
+  verification/wave38-solver-harvest/independent-results.json: 2aa691682aa434d1166a98bf4af820652187ffe664911b8aa112104831fe8f6c
+  verification/wave38-solver-harvest/live-observation.json: 62156d0909bb245decd91cca9a4c68cba20ab7e305c4f45fceacf82072cac677
+  verification/wave38-solver-harvest/input-freeze.sha256: 608ffdac8738c8a5aa037278ef33c01916448e60d2f205baca1594f3d5c2c2de
+  verification/wave38-solver-harvest/audit.md: 54b1d2ffde905c971668e1bdc38ad89aadacfcf82368c238d4af56043e336c85
+  tests: "12 passed"
+limitations:
+  - "The historical process snapshot and its original CPU sample are not replayable."
+  - "Positive CPU activity and missing terminal JSON reveal no completed case prefix."
+  - "No proof, proof-checker verdict, assignment, decoded graph, or terminal case result exists."
+  - "Branch 15 has a formula artifact only and contributes zero proof coverage."
+  - "The verified queue is conditional on the normalized n3=4158 endpoint setup."
+  - "Endpoint exclusion, graph construction, an improved upper bound, and novelty are not obtained."

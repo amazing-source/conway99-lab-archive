@@ -1,0 +1,526 @@
+{
+  "audit_verdict": "STATIC_CLEAN_ROOM_COMPARISON_PASS",
+  "candidate_result_comparison": {
+    "all_checks_pass": true,
+    "checks": {
+      "13_14_43_decomposition": true,
+      "L_diagonal_and_trace": true,
+      "coordinate_binding": true,
+      "dimension_counts": true,
+      "fixed_C_distributions": true,
+      "fixed_C_hash": true,
+      "fixed_action": true,
+      "full_cycle_census": true,
+      "labeled_two_factor_total": true,
+      "mod3": true,
+      "mod7": true,
+      "rank16_projector": true,
+      "raw_weight_14_columns": true,
+      "snf": true,
+      "status_wall": true,
+      "support_hashes": true,
+      "transfer_state_count": true,
+      "underlying_two_factor_total": true
+    },
+    "material_discrepancies": [],
+    "release_clarifications": [
+      "The exact Wave33 arrays are available to the verifier and are now bound by an explicit permutation; the candidate's permutation-equivalent limitation is discharged.",
+      "The 574,118,037 census is correctly scoped to one P-coupled column, not a complete six-block column or a 15-column tuple."
+    ]
+  },
+  "claim_label": "VERIFIED",
+  "coordinate_binding": {
+    "candidate_label_type_map": {
+      "incident": "support_cross_nonedge_completion",
+      "nonincident": "support_edge_completion"
+    },
+    "chosen_O_map_candidate_to_wave33": [
+      0,
+      1,
+      6,
+      8,
+      9,
+      4,
+      5,
+      7,
+      2,
+      3,
+      10,
+      11,
+      14,
+      15,
+      18,
+      19,
+      13,
+      16,
+      17,
+      12,
+      30,
+      34,
+      35,
+      37,
+      38,
+      39,
+      33,
+      36,
+      31,
+      32,
+      20,
+      21,
+      24,
+      26,
+      27,
+      28,
+      29,
+      23,
+      25,
+      22,
+      50,
+      54,
+      55,
+      57,
+      58,
+      59,
+      52,
+      53,
+      56,
+      51,
+      60,
+      64,
+      67,
+      68,
+      69,
+      62,
+      63,
+      65,
+      66,
+      61,
+      40,
+      44,
+      47,
+      48,
+      49,
+      43,
+      45,
+      46,
+      41,
+      42
+    ],
+    "chosen_line_map_candidate_to_wave33": [
+      0,
+      3,
+      5,
+      6,
+      2,
+      4,
+      1
+    ],
+    "chosen_point_map_candidate_to_wave33": [
+      0,
+      1,
+      3,
+      2,
+      5,
+      6,
+      4
+    ],
+    "chosen_support_map_candidate_to_wave33": [
+      0,
+      1,
+      3,
+      2,
+      5,
+      6,
+      4,
+      7,
+      10,
+      12,
+      13,
+      9,
+      11,
+      8
+    ],
+    "isomorphism_count": 168,
+    "mapping_sha256": "7975c51cc684af88f807c9a284a95962b322b2e29928346611934a97d6bf0262",
+    "support_adjacency_entrywise_match": true,
+    "support_to_O_entrywise_match": true
+  },
+  "fixed_action_and_integral_C": {
+    "C_binding_entrywise_match": true,
+    "C_diagonal_distribution": {
+      "51": 28,
+      "57": 42
+    },
+    "C_formula_candidate_symbols": "21(H_R+3I-3P_F)+21J/5",
+    "C_formula_stage1_symbols": "21T+63I-294P_F+21J/5",
+    "C_mod_7_rank": 5,
+    "C_mod_7_square_zero": true,
+    "C_off_diagonal_distribution": {
+      "-3": 84,
+      "-6": 21,
+      "0": 336,
+      "12": 252,
+      "3": 168,
+      "6": 714,
+      "9": 840
+    },
+    "C_wave33_sha256": "cd6f2f1eef9e4919022d56ef1ae3193661aef6506429a862a26e4daa087398b1",
+    "F_H_R_equals_C_SO": true,
+    "H_R_formula": "T-11P_F",
+    "P_F_diagonal": {
+      "support_cross_nonedge_completion": "87/490",
+      "support_edge_completion": "97/490"
+    },
+    "P_F_formula": "T(T^2-40T+498I)/1960",
+    "candidate_R_equals_P_F": true,
+    "candidate_order_hashes": {
+      "O_labels_sha256": "d663273e32a857a04df28546aa38e1a4056937edd0722dbdea4b76854724a0e8",
+      "fixed_C_sha256": "9bf08bdd279a7c1fc4267e70d4c448afa5063d78e245c0cf970f53ab3c0e9e69",
+      "support_adjacency_sha256": "44c8955608f377f4a22b084198d5da804bb151d5313b9eebd2822611a4e5fc4d",
+      "support_to_O_sha256": "7d33eb77427a4d4f5bd3a24c51ec982e9b795729fef62d80a16012b8c99f61f3"
+    },
+    "rank_P_F": 13,
+    "solution_L_diagonal": {
+      "support_cross_nonedge_completion": 36,
+      "support_edge_completion": 30
+    },
+    "trace_H_R": -3,
+    "trace_L": 2352
+  },
+  "git_used": false,
+  "input_integrity": {
+    "all_hashes_pass": true,
+    "candidate_inner_manifest": {
+      "entries": {
+        "agents/2026-07-24-wave34-rooted-structural.md": "535d237abcb841609835b1b8da11f2193cf17314c3dfe1dc427a3eec0a710246",
+        "attempts/wave34-rooted-structural/check_results.py": "9a4912cb4875d0ec7e54366491484fdf21c218ba2361858ea5d28a0e9af9ad1c",
+        "attempts/wave34-rooted-structural/reduction.py": "c3ad0a5b764e6e5045082ba28fc7c5ddfb2727859eac990f2845a8e5dd4c60e1",
+        "attempts/wave34-rooted-structural/results.json": "bd68070b172329e161f46d85e634aecf2348da16de785331e60e4b93a1f4dfc5",
+        "attempts/wave34-rooted-structural/test_reduction.py": "3e9f2f95d44fda18c0733267a58fd101fa904bc94e283baa75b7b1616dcede4f"
+      },
+      "entry_count": 5,
+      "manifest_sha256": "fd1372a3e0013eec265f828a33249f5bb0872e505f7e8479d2946a0e917f32de",
+      "self_hash_omitted": true
+    },
+    "candidate_release_hashes": {
+      "agents/2026-07-24-wave34-rooted-structural.md": "535d237abcb841609835b1b8da11f2193cf17314c3dfe1dc427a3eec0a710246",
+      "attempts/wave34-rooted-structural/artifact-manifest.sha256": "fd1372a3e0013eec265f828a33249f5bb0872e505f7e8479d2946a0e917f32de",
+      "attempts/wave34-rooted-structural/check_results.py": "9a4912cb4875d0ec7e54366491484fdf21c218ba2361858ea5d28a0e9af9ad1c",
+      "attempts/wave34-rooted-structural/reduction.py": "c3ad0a5b764e6e5045082ba28fc7c5ddfb2727859eac990f2845a8e5dd4c60e1",
+      "attempts/wave34-rooted-structural/results.json": "bd68070b172329e161f46d85e634aecf2348da16de785331e60e4b93a1f4dfc5",
+      "attempts/wave34-rooted-structural/test_reduction.py": "3e9f2f95d44fda18c0733267a58fd101fa904bc94e283baa75b7b1616dcede4f",
+      "verification/wave34-rooted-structural/candidate-release.md": "594ecaec43bb3fdea4dfdd3e866a9591951a01433834a09f2a726518785f5040"
+    },
+    "candidate_report_input_hashes": {
+      "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+      "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+      "STATUS.yaml": "feda17934162602804015e17130c029ffdba7bf0307cdf234f4a7d8979298864",
+      "verification/2026-07-24-wave33-clean-clone.md": "d83e18052114affaed873ddaa7bdc6a26c63afc6432345e1027aeef5bd66d052",
+      "verification/wave33-rooted-construction-chronology/audit.md": "1346992e11db72c4c94018293d3827214e2ee79e074490b8f905028e20fa30f1",
+      "verification/wave33-rooted-construction-chronology/chronology-results.json": "b2f0b872221a3fd9f41d6a88637be21034b70e8c8129fe57617115548b425957",
+      "verification/wave33-rooted-extension/comparison-audit.md": "fc7abcd53154d4551a5d3d97d38024840b4228195e143559c9e8b46c15644b8a",
+      "verification/wave33-rooted-extension/comparison-results.json": "2e36ecade28bca12d35a963a8c6b52777ac7d766a3c4b3267774000fe2e929fd",
+      "verification/wave34-continuation-protocol.md": "60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4"
+    },
+    "stage1_manifest": {
+      "all_entries_pass": true,
+      "entries": {
+        "verification/wave34-rooted-structural/precomparison/derivation.md": "7e84ada91985dd3c58d62991e6bdaf469e6111bb89d17e11d72cfbc195aab8ab",
+        "verification/wave34-rooted-structural/precomparison/exact-results.json": "9b4c2e00d50e142b4ae551741b8b5b9afda8ecaad0a3085c3cd549c07975ca60",
+        "verification/wave34-rooted-structural/precomparison/exact_check.py": "f6b3dc40e9f1666d787e8a4971050dcdc183588a810f5ea2a5ce56aa248a4c18",
+        "verification/wave34-rooted-structural/precomparison/input-freeze.sha256": "38a538d1015c1d62fbb60b1262851c769222a97c37bb2479835929602967d001",
+        "verification/wave34-rooted-structural/precomparison/limitations.md": "9e407b4c3f5a278996cb3a5c1849aaa2e74b215d41d7782e4712d22b95335055",
+        "verification/wave34-rooted-structural/precomparison/precomparison-freeze.md": "7c20503d4e00d16a4094979a8c92b40914f32096a18198f86b580bdca30d63db",
+        "verification/wave34-rooted-structural/precomparison/run-report.yaml": "19554b91ae5a281d1db600586b100e1c499106fe6a471bf66f53424f3441454d",
+        "verification/wave34-rooted-structural/precomparison/test_exact_check.py": "699cd82df4acf3076f22cd55709ae26706389940bcd8b280852af49a8339b862"
+      },
+      "entry_count": 8,
+      "manifest_sha256": "233a32ac6cb67bcb23b7b269cc6f3f889d943bd5d0714c4f54ead9cbf28c7681"
+    },
+    "verifier_additional_input_hashes": {
+      "verification/wave33-rooted-extension/independent-results.json": "66cef570dbbb4a86e2a35f780edcfc1873d0ac2c5266f1c2065c902a8f91e778",
+      "verification/wave34-rooted-structural/precomparison/artifact-manifest.sha256": "233a32ac6cb67bcb23b7b269cc6f3f889d943bd5d0714c4f54ead9cbf28c7681"
+    }
+  },
+  "limitations": [
+    "Candidate Python was parsed statically but never imported or executed.",
+    "The full census verifies individual P-coupled columns, not compatible labeled 15-tuples.",
+    "The exact projector equivalence does not enumerate integral rank-16 projectors.",
+    "No binary solution or complete exclusion is supplied.",
+    "The graph-only criterion does not complete the endpoint projector, lattice, tensor, or Schur obligations."
+  ],
+  "objections_and_corrections": {
+    "binary_solution_or_exclusion": "NOT_OBTAINED",
+    "binding_objection": "RESOLVED_BY_EXPLICIT_PERMUTATION",
+    "material_discrepancy": "NONE",
+    "modular_exclusion": "NOT_OBTAINED",
+    "single_column_scope_objection": "RESOLVED; count is Pb-only, with a stricter necessary duplicate-free refinement recorded"
+  },
+  "projector_equivalence": {
+    "continuous_symmetric_after_B": 946,
+    "continuous_symmetric_before_B": 1653,
+    "dimension_reconciliation": "13+14+43 = (13+15-1)+43 = 70",
+    "forward": {
+      "annihilators_follow_from_support": true,
+      "from_six_blocks_to_rank16_projector": true,
+      "numerator_identity": "C-7R_B-21H=147E_minus4",
+      "rank": 16
+    },
+    "grassmann_dimension": 432,
+    "notation_map": {
+      "candidate_E_W": "Stage1 P_B-P_0",
+      "candidate_H_R": "Stage1 T-11P_F",
+      "candidate_L": "147*Stage1 E_minus_4",
+      "candidate_Q_U": "Stage1 E (43-dimensional residual projector)",
+      "candidate_R": "Stage1 P_F",
+      "candidate_rank16_E": "Stage1 E_minus_4"
+    },
+    "operator_summands": [
+      {
+        "H": "9",
+        "J": "70",
+        "R_B": "42",
+        "T": "20",
+        "dimension": 1,
+        "space": "constant_in_R"
+      },
+      {
+        "dimension": 12,
+        "identity": "for a=+/-sqrt(2): T=10-a, H=-1-a, and T+H^2=12-H",
+        "space": "nonconstant_R_conjugate_pair"
+      },
+      {
+        "H": "-1",
+        "J": "0",
+        "R_B": "12",
+        "T": "0",
+        "dimension": 14,
+        "space": "E_W"
+      },
+      {
+        "H": "3",
+        "J": "0",
+        "R_B": "0",
+        "T": "0",
+        "dimension": 27,
+        "space": "Q_U_minus_E_minus4"
+      },
+      {
+        "H": "-4",
+        "J": "0",
+        "R_B": "0",
+        "T": "0",
+        "dimension": 16,
+        "space": "E_minus4"
+      }
+    ],
+    "reverse": {
+      "H_recovery_equals_projector_decomposition": true,
+      "P L=0 and B^T L=0_put_range_in_Q_U": true,
+      "all_six_blocks_reconstructed": true,
+      "hollow_recovery_forces_trace_L_2352_and_rank_16": true,
+      "symmetric_L_and_L_squared_147L_give_orthogonal_projector": true
+    }
+  },
+  "public_candidate_commit_supplied_by_orchestrator": "52c94e915927f791d30f680d12181a08567248fb",
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "Exact static comparison of the released Wave34 rooted cycle-space/rank-16-projector structural reduction in its unrestricted graph-only reparameterization scope.",
+  "scope_checks": {
+    "no_automorphism_quotient": true,
+    "no_fixed_O_Q_design": true,
+    "report_does_not_claim_exclusion": true,
+    "report_says_no_compatible_15_tuple_enumeration": true,
+    "report_says_unknown_binary_solution": true
+  },
+  "snf": {
+    "candidate_unit_minor_determinant": 1,
+    "candidate_unit_minor_mapped_wave33_determinant": 1,
+    "kernel_dimension": 57,
+    "left_kernel_dimension": 1,
+    "proof": "rank 13 plus an absolute-unit 13x13 minor forces the product of the 13 nonzero Smith factors to one",
+    "rank_over_Q_candidate_coordinates": 13,
+    "rank_over_Q_wave33_coordinates": 13,
+    "snf_nonzero_invariant_factors": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "snf_zero_rows": 1,
+    "verifier_unit_minor": {
+      "columns": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "deleted_row": 13,
+      "determinant": 1
+    }
+  },
+  "stage1_reconciliation": {
+    "Pb_only_columns_excluded_by_duplicate_pair_rule": 125238669,
+    "Stage1_duplicate_support_pairs": 21,
+    "Stage1_rule": "g=2 forces r=h=c=0, so the two copies of a doubled support label have disjoint B rows",
+    "candidate_574118037_scope": "all binary single columns satisfying P b=2*1 only",
+    "candidate_count_verified": 574118037,
+    "classification": "SCOPE_REFINEMENT_NOT_DISCREPANCY",
+    "does_not_enumerate_compatible_15_tuples": true,
+    "duplicate_free_Pb_columns_surviving_rule": 448879368,
+    "full_cycle_lengths": [
+      "14",
+      "10+4",
+      "8+6",
+      "6+4+4"
+    ],
+    "necessary_full_solution_single_column_types": [
+      "7",
+      "5+2",
+      "4+3",
+      "3+2+2"
+    ],
+    "remaining_compatibility_not_checked": "other columns, pair intersections, L, and H"
+  },
+  "static_candidate_review": {
+    "candidate_code_executed": false,
+    "candidate_code_imported": false,
+    "files": {
+      "check_results.py": {
+        "direct_eval_exec_compile_import_calls": [],
+        "exec_module_calls": 1,
+        "imports": [
+          "__future__",
+          "argparse",
+          "importlib.util",
+          "json",
+          "pathlib"
+        ],
+        "syntax_parse": "PASS",
+        "test_methods": []
+      },
+      "reduction.py": {
+        "direct_eval_exec_compile_import_calls": [],
+        "exec_module_calls": 0,
+        "imports": [
+          "__future__",
+          "argparse",
+          "collections",
+          "fractions",
+          "functools",
+          "hashlib",
+          "itertools",
+          "json",
+          "math",
+          "platform",
+          "typing"
+        ],
+        "syntax_parse": "PASS",
+        "test_methods": []
+      },
+      "test_reduction.py": {
+        "direct_eval_exec_compile_import_calls": [],
+        "exec_module_calls": 0,
+        "imports": [
+          "__future__",
+          "fractions",
+          "os",
+          "reduction",
+          "unittest"
+        ],
+        "syntax_parse": "PASS",
+        "test_methods": [
+          "test_01_fixed_support_and_ss_block",
+          "test_02_kernel_and_snf_witness",
+          "test_03_fixed_projectors_exactly",
+          "test_04_integral_C_and_modular_constraint",
+          "test_05_projector_diagonal_and_dimension_accounting",
+          "test_06_exact_two_factor_column_count",
+          "test_07_full_cycle_census"
+        ]
+      }
+    },
+    "mode": "AST_AND_TEXT_ONLY",
+    "static_test_method_count": 7
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "SNF_and_two_factor_census": "VERIFIED",
+    "binary_solution": "UNKNOWN",
+    "complete_exclusion": "UNKNOWN",
+    "coordinate_binding": "VERIFIED",
+    "integral_C_L_and_modular_claims": "VERIFIED",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rank16_projector_equivalence": "VERIFIED",
+    "released_structural_reparameterization": "VERIFIED",
+    "rooted_endpoint": "UNKNOWN",
+    "rooted_graph_extension": "UNKNOWN"
+  },
+  "two_factor_verification": {
+    "full_census_run": true,
+    "line_side_transfer": {
+      "cached_states": 1090,
+      "labeled_total": 574118037,
+      "underlying_total": 4946952
+    },
+    "matching_pair_census": {
+      "labeled_cycle_census": {
+        "1+1+1+1+1+1+1": 24,
+        "2+1+1+1+1+1": 4746,
+        "2+2+1+1+1": 227136,
+        "2+2+2+1": 2148384,
+        "3+1+1+1+1": 69972,
+        "3+2+1+1": 4004196,
+        "3+2+2": 18854388,
+        "3+3+1": 11738034,
+        "4+1+1+1": 920304,
+        "4+2+1": 26163837,
+        "4+3": 76574904,
+        "5+1+1": 9667812,
+        "5+2": 91117740,
+        "6+1": 70294224,
+        "7": 262332336
+      },
+      "labeled_total": 574118037,
+      "method": "ordered_pairs_of_perfect_matchings",
+      "underlying_cycle_census": {
+        "1+1+1+1+1+1+1": 24,
+        "2+1+1+1+1+1": 1050,
+        "2+2+1+1+1": 11592,
+        "2+2+2+1": 28350,
+        "3+1+1+1+1": 7308,
+        "3+2+1+1": 100800,
+        "3+2+2": 132300,
+        "3+3+1": 151200,
+        "4+1+1+1": 46368,
+        "4+2+1": 340200,
+        "4+3": 529200,
+        "5+1+1": 241920,
+        "5+2": 635040,
+        "6+1": 907200,
+        "7": 1814400
+      },
+      "underlying_total": 4946952
+    },
+    "raw_weight_14_columns": 193253756909160
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "active_cut_hashes": [
+      "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240",
+      "8fc952768230bd900febf656bddfa9dd6b4d4c89b5190e0b74e01e55639f525b",
+      "93c3dcebda9332946cf3391812a4d1f466f7cacc6da4246bc9d625a66879f113"
+    ],
+    "all_fifteen_cut_values_nonnegative": true,
+    "all_rows_passed": 10313,
+    "exact_negative_four_root_blocks": [
+      3,
+      12
+    ],
+    "fresh_cuts_negative_on_thirteen_cut_witness": true,
+    "frozen_hashes": 13,
+    "modular_rank": 887,
+    "modular_variables": 887,
+    "negative_quadratic_values_scaled": {
+      "12": -88438068438190522607991067007701768100527095926734078733792256,
+      "3": -27011041286703517116394938226429083495309284913470656030516224
+    },
+    "order7_integral": true,
+    "order7_total": "14887031544",
+    "order8_total": "171200862756",
+    "restricted_rows_passed": 10274,
+    "retained_cut_count": 15,
+    "support_size_x7": 204,
+    "support_size_x8": 887
+  },
+  "claim_label": "DERIVED",
+  "conclusion": {
+    "Conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "fifteen_cut_finite_relaxation": "EXACT_RATIONAL_FEASIBLE",
+    "fifteen_cut_witness_passes_all_four_root_blocks": false,
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  },
+  "format": "wave159-exact-replay-v1",
+  "limitations": [
+    "This same-lane replay is not independent verification.",
+    "The witness is a count pseudowitness, not a graph.",
+    "Stored all-row and rank claims are checked for consistency, not recomputed here.",
+    "HiGHS status and floating residuals are diagnostic, not certificates.",
+    "The inherited witness scope text says after two cuts and is stale metadata."
+  ]
+}

@@ -1,0 +1,41 @@
+role: literature
+date_utc: 2026-07-29T18:57:01Z
+git_commit: e6ac24b5728ae8f2dc13b5a6ee0f50e965843b71
+claim_label: REFUTED
+scope: >-
+  Refute the restricted lemma that 99-center degree/complement data,
+  local (7,3) Hilton--Milner families, four-point pair fibers, the
+  Wave201 equality row, and Wave203 five-slot capacity force a
+  bidirectional selected label; separately audit current primary
+  theorems proposed for a genuine global obstruction.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  README.md: 5e5565226b169d90776b7bf7a4daa3afddb09780ad20318564ce96ba8a136927
+  STATUS.yaml: 2028c90b928f51d79c8798f1120ae191d5e4d14ec0d638d02c937631847b9990
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/package-manifest.sha256: d08624de5a64c4a49ce5a9bd6a7c65cb36eeef17c736f83070a4d12f66473854
+  verification/wave203-two-center-incidence-verifier/package-manifest.sha256: ee0d994825ad9b687fb29eb7bcde02c86dacbd78042edff2111bd9fb4bc7d0ab
+  verification/wave203-two-center-incidence-verifier/independent-math-result.json: 4ada662af8ceb2f7477fbe9b601338b51c9710dc226ab4176fff1c84d798d8a6
+method: >-
+  Deterministic exact construction on a 14-regular circulant skeleton;
+  99 explicit Hilton--Milner local systems; exact four-point fibers,
+  selected multiplicity groups, Wave203 third-block slots, and a global
+  orientation of complement edges; exact replay and focused tests;
+  current primary-source theorem/hypothesis audit.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave204-literature-hostile-controls\build_countermodel.py
+  --verify
+  attempts\wave204-literature-hostile-controls\countermodel.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave204-literature-hostile-controls\test_countermodel.py
+outputs:
+  - attempts/wave204-literature-hostile-controls/
+  - agents/2026-07-29-wave204-literature-hostile-controls.md
+limitations:
+  - Discovery cannot self-promote the countermodel to VERIFIED.
+  - The circulant is not strongly regular.
+  - Declared local block and fiber types are not induced by the circulant adjacency.
+  - No ternary columns, canonical relations, rank-11 code, or circuit cover is supplied.
+  - The countermodel refutes only the displayed local-interface lemma.
+  - The primary-source search is focused, not exhaustive.
+  - The endpoint, original Conway 99 problem, and external novelty remain UNKNOWN.

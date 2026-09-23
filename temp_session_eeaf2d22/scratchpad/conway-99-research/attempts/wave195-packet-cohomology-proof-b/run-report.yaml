@@ -1,0 +1,42 @@
+role: proof_b
+date_utc: 2026-07-29T03:42:46Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free rank-11 endpoint: derive the fixed-center
+  oriented-label row SG>=0 for all canonical exact-three flags and combine
+  it exactly with the verified Wave194 slack system to prove Q>=6980.
+inputs:
+  - AGENTS.md
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave194-five-thirds-verifier/package-manifest.sha256
+method: >-
+  Exact ternary coefficient addition, injection into intersecting
+  three-subsets of a seven-block point star, the (7,3) Hilton-Milner
+  theorem, oriented private-label incidence, the degree-14 neighbor
+  budget, and an exact rational dual certificate. No graph, code, cover,
+  SAT, LP, configuration, enumeration, isomorphism, or brute-force search.
+command: >-
+  python -B attempts/wave195-packet-cohomology-proof-b/exact_check.py
+  --verify attempts/wave195-packet-cohomology-proof-b/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave195-packet-cohomology-proof-b/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave195-packet-cohomology-proof-b.md
+  - attempts/wave195-packet-cohomology-proof-b/README.md
+  - attempts/wave195-packet-cohomology-proof-b/derivation.md
+  - attempts/wave195-packet-cohomology-proof-b/protocol.md
+  - attempts/wave195-packet-cohomology-proof-b/failed-routes.md
+  - attempts/wave195-packet-cohomology-proof-b/exact_check.py
+  - attempts/wave195-packet-cohomology-proof-b/exact-results.json
+  - attempts/wave195-packet-cohomology-proof-b/test_exact_check.py
+  - attempts/wave195-packet-cohomology-proof-b/input-freeze.sha256
+limitations:
+  - This is a proof-B derivation, not verifier promotion.
+  - The theorem is conditional on the frozen prism-free rank-11 endpoint.
+  - No endpoint, cover, packet system, code, or graph is constructed.
+  - The exact rational relaxation remains feasible at a nonintegral row.
+  - The improvement supplies no incompatible upper bound.
+  - Rank 11, endpoint existence, strict original n3 improvement, external
+    novelty, and Conway-99 remain UNKNOWN.

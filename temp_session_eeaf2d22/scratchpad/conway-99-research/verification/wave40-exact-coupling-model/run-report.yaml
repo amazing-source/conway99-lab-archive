@@ -1,0 +1,54 @@
+role: verifier
+date_utc: "2026-07-27T03:31:20Z"
+git_commit: "6b28af70c67f062d687251494a047debe70a246f"
+claim_label: VERIFIED
+scope: >-
+  Universal theorem rank_F7(M)>=25 for every hypothetical
+  srg(99,14,1,2).
+inputs:
+  - path: verification/wave40-exact-coupling-model/input-freeze.sha256
+    sha256: cc82fd8f07be3ad03eb5ede6cfb721fe8085ed027979f48d4d4b5ce8b26a5b48
+method: >-
+  Clean-room reconstruction of all eleven positive-partition edge-local
+  blocks; exact F7 kernels; derivation that the twelve vertices in the third
+  fibre form two perfect matchings and hence one permutation X->Y; proof of
+  the arbitrary-W bordered symmetric rank inequality; complete enumeration
+  of every observed-signature subspace below and through the first
+  permutation-supporting dimension; exact bipartite matching; independent
+  endpoint rank-pair arithmetic; and hostile mutation tests. Discovery-side
+  Wave 40 coupling files were neither read, imported, nor executed.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave40-exact-coupling-model -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  verification\wave40-exact-coupling-model\independent_check.py --verify
+  verification\wave40-exact-coupling-model\independent-results.json
+outputs:
+  - path: verification/wave40-exact-coupling-model/independent_check.py
+    sha256: d87c7a5eb9377cc3095fff21eec7ff17d94445bef911e4adb092f2db6228bc6e
+  - path: verification/wave40-exact-coupling-model/test_independent_check.py
+    sha256: 395f796a3153965b0ae8464db195b1e7127fa8d14e37368220743a1c2cbad70e
+  - path: verification/wave40-exact-coupling-model/independent-results.json
+    sha256: ff7916d0f5c74c47c8d7787c5cbcc84785cbccd3644d8d03d73e47b73908c0f5
+  - path: verification/wave40-exact-coupling-model/README.md
+    sha256: 33201f7cac66df7c65f254d0c3b054cd17cfa67ae54b67cbc5032bee299b924e
+tests:
+  passed: 16
+  failed: 0
+result:
+  partitions_checked: 11
+  border_signatures_per_partition: 144
+  local_rank_formula: "25-2e, where e is the number of even parts"
+  minimum_projection_rank_formula: "e"
+  bordered_principal_rank_lower_bound_each_partition: 25
+  universal_rank_F7_M_lower_bound: 25
+  endpoint_rank_pair_count: 330
+  if_r3_equals_12_rank_F7_M_lower_bound: 26
+  endpoint_excluded: false
+  strongest_general_upper_bound: "n3<=4158"
+limitations:
+  - No hypothetical graph is constructed.
+  - The prism-free endpoint n3=4158 is not excluded.
+  - The general n3 upper bound remains 4158.
+  - The finite search concerns one edge and its forced third fibre.
+  - Literature novelty and priority remain UNKNOWN.

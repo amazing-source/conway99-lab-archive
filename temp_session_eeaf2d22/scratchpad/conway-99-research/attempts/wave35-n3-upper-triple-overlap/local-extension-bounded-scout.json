@@ -1,0 +1,59 @@
+{
+  "format": "wave35-n3-endpoint-local-extension-bounded-scout-v1",
+  "claim_label": "UNKNOWN",
+  "scope": "integer feasibility of the four exact 27-vertex one-extension systems under n3=4158 (P=0)",
+  "provenance": {
+    "record_kind": "console-output-transcription",
+    "raw_log_preserved": false,
+    "git_commit": "6d98cb5f73c1f56d227e97b1c3e70d363669bf87",
+    "warning": "The solver timings below were transcribed from bounded live-console scouts and are non-evidentiary."
+  },
+  "continuous_relaxation": {
+    "solver": "scipy.optimize.linprog HiGHS",
+    "status_by_partition": {
+      "2+2+2": "FEASIBLE_FRACTIONAL",
+      "2+4": "FEASIBLE_FRACTIONAL",
+      "3+3": "FEASIBLE_FRACTIONAL",
+      "6": "FEASIBLE_FRACTIONAL"
+    },
+    "maximum_reported_equality_residual": 5.235811784132238e-13,
+    "interpretation": "The ordinary LP relaxation cannot exclude any endpoint seed."
+  },
+  "first_integer_scout": {
+    "formulation": "5500 nonnegative integer type multiplicities and 379 equations",
+    "solver": "scipy.optimize.milp HiGHS",
+    "time_limit_seconds_per_partition": 60,
+    "results": {
+      "2+2+2": "TIMEOUT_UNKNOWN_NO_INCUMBENT",
+      "2+4": "TIMEOUT_UNKNOWN_NO_INCUMBENT",
+      "3+3": "TIMEOUT_UNKNOWN_NO_INCUMBENT",
+      "6": "TIMEOUT_UNKNOWN_NO_INCUMBENT"
+    }
+  },
+  "binary_reduction_scout": {
+    "partition": "2+2+2",
+    "formulation": "5184 binary variables and 380 equality rows after exact moment reduction",
+    "solver": "scipy.optimize.milp HiGHS 1.12.0",
+    "time_limit_seconds": 120,
+    "presolved_rows": 289,
+    "presolved_columns": 3744,
+    "nodes": 1354,
+    "lp_iterations": 315063,
+    "status": "TIMEOUT_UNKNOWN_NO_INCUMBENT"
+  },
+  "exploratory_native_cardinality_scout": {
+    "partition": "2+2+2",
+    "solver": "PySAT gluecard4",
+    "conflict_budget": 1000000,
+    "reported_conflicts": 1065890,
+    "wall_seconds": 31.83817560004536,
+    "status": "BUDGET_UNKNOWN",
+    "warning": "Gluecard was benchmarked only as an exploratory solver here; no control replay or proof was archived."
+  },
+  "limitations": [
+    "A fractional point is not an integer neighborhood multiset.",
+    "No integer candidate was found, but every integer run ended by budget or time.",
+    "No infeasibility certificate or checked proof exists.",
+    "The local system omits all adjacencies among the 72 outside vertices."
+  ]
+}

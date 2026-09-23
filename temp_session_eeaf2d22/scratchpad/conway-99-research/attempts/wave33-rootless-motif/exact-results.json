@@ -1,0 +1,819 @@
+{
+  "actual_incidence_board": {
+    "board": {
+      "base_pair": {
+        "cross_edges": [
+          [
+            "t0",
+            "u0"
+          ],
+          [
+            "t1",
+            "u1"
+          ]
+        ],
+        "relation": "R2 / exactly two independent cross edges",
+        "triangles": [
+          [
+            "t0",
+            "t1",
+            "t2"
+          ],
+          [
+            "u0",
+            "u1",
+            "u2"
+          ]
+        ]
+      },
+      "board_size": 8,
+      "board_vertices": [
+        {
+          "copy": 0,
+          "name": "b00_0",
+          "t_index": 0,
+          "u_index": 0
+        },
+        {
+          "copy": 0,
+          "name": "b02_0",
+          "t_index": 0,
+          "u_index": 2
+        },
+        {
+          "copy": 0,
+          "name": "b11_0",
+          "t_index": 1,
+          "u_index": 1
+        },
+        {
+          "copy": 0,
+          "name": "b12_0",
+          "t_index": 1,
+          "u_index": 2
+        },
+        {
+          "copy": 0,
+          "name": "b20_0",
+          "t_index": 2,
+          "u_index": 0
+        },
+        {
+          "copy": 0,
+          "name": "b21_0",
+          "t_index": 2,
+          "u_index": 1
+        },
+        {
+          "copy": 0,
+          "name": "b22_0",
+          "t_index": 2,
+          "u_index": 2
+        },
+        {
+          "copy": 1,
+          "name": "b22_1",
+          "t_index": 2,
+          "u_index": 2
+        }
+      ],
+      "both_side_common_neighbour_counts": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "cell_columns": [
+        "u0",
+        "u1",
+        "u2"
+      ],
+      "cell_rows": [
+        "t0",
+        "t1",
+        "t2"
+      ],
+      "column_only_counts": [
+        9,
+        9,
+        8
+      ],
+      "equivalence": "A triangle on one board vertex from every row and every column is exactly a triangle V that is R3 from both base triangles.",
+      "neither_side_count": 33,
+      "outside_vertex_total": 93,
+      "pair_indexed_candidates_at_n3_708": 2832,
+      "row_only_counts": [
+        9,
+        9,
+        8
+      ],
+      "transversal_candidate_count_per_R2_pair": 4,
+      "transversal_candidates": [
+        [
+          "b00_0",
+          "b11_0",
+          "b22_0"
+        ],
+        [
+          "b00_0",
+          "b11_0",
+          "b22_1"
+        ],
+        [
+          "b00_0",
+          "b12_0",
+          "b21_0"
+        ],
+        [
+          "b02_0",
+          "b11_0",
+          "b20_0"
+        ]
+      ]
+    },
+    "partial_controls": {
+      "motif_free": {
+        "all_base_pair_lambda_mu_counts_exact": true,
+        "all_present_pair_common_neighbour_caps_pass": true,
+        "base_vertex_degrees": {
+          "t0": 14,
+          "t1": 14,
+          "t2": 14,
+          "u0": 14,
+          "u1": 14,
+          "u2": 14
+        },
+        "closed_transversal_candidates": [],
+        "closed_transversal_count": 0,
+        "fixed_absent_board_edges": [
+          [
+            "b00_0",
+            "b02_0"
+          ],
+          [
+            "b00_0",
+            "b11_0"
+          ],
+          [
+            "b00_0",
+            "b12_0"
+          ],
+          [
+            "b00_0",
+            "b20_0"
+          ],
+          [
+            "b00_0",
+            "b21_0"
+          ],
+          [
+            "b00_0",
+            "b22_0"
+          ],
+          [
+            "b00_0",
+            "b22_1"
+          ],
+          [
+            "b02_0",
+            "b11_0"
+          ],
+          [
+            "b02_0",
+            "b12_0"
+          ],
+          [
+            "b02_0",
+            "b20_0"
+          ],
+          [
+            "b02_0",
+            "b21_0"
+          ],
+          [
+            "b02_0",
+            "b22_0"
+          ],
+          [
+            "b02_0",
+            "b22_1"
+          ],
+          [
+            "b11_0",
+            "b12_0"
+          ],
+          [
+            "b11_0",
+            "b20_0"
+          ],
+          [
+            "b11_0",
+            "b21_0"
+          ],
+          [
+            "b11_0",
+            "b22_0"
+          ],
+          [
+            "b11_0",
+            "b22_1"
+          ],
+          [
+            "b12_0",
+            "b20_0"
+          ],
+          [
+            "b12_0",
+            "b21_0"
+          ],
+          [
+            "b12_0",
+            "b22_0"
+          ],
+          [
+            "b12_0",
+            "b22_1"
+          ],
+          [
+            "b20_0",
+            "b21_0"
+          ],
+          [
+            "b20_0",
+            "b22_0"
+          ],
+          [
+            "b20_0",
+            "b22_1"
+          ],
+          [
+            "b21_0",
+            "b22_0"
+          ],
+          [
+            "b21_0",
+            "b22_1"
+          ],
+          [
+            "b22_0",
+            "b22_1"
+          ]
+        ],
+        "fixed_present_edge_count": 76,
+        "maximum_current_outside_degree": 2,
+        "mode": "motif_free",
+        "scope": "A partial 99-vertex edge assignment only. Most outside-outside adjacencies and all missing outside degrees and lambda/mu completions remain unspecified. This is not an SRG extension or a graph construction.",
+        "vertex_count": 99
+      },
+      "motif_one": {
+        "all_base_pair_lambda_mu_counts_exact": true,
+        "all_present_pair_common_neighbour_caps_pass": true,
+        "base_vertex_degrees": {
+          "t0": 14,
+          "t1": 14,
+          "t2": 14,
+          "u0": 14,
+          "u1": 14,
+          "u2": 14
+        },
+        "closed_transversal_candidates": [
+          [
+            "b00_0",
+            "b11_0",
+            "b22_0"
+          ]
+        ],
+        "closed_transversal_count": 1,
+        "fixed_absent_board_edges": [
+          [
+            "b00_0",
+            "b02_0"
+          ],
+          [
+            "b00_0",
+            "b12_0"
+          ],
+          [
+            "b00_0",
+            "b20_0"
+          ],
+          [
+            "b00_0",
+            "b21_0"
+          ],
+          [
+            "b00_0",
+            "b22_1"
+          ],
+          [
+            "b02_0",
+            "b11_0"
+          ],
+          [
+            "b02_0",
+            "b12_0"
+          ],
+          [
+            "b02_0",
+            "b20_0"
+          ],
+          [
+            "b02_0",
+            "b21_0"
+          ],
+          [
+            "b02_0",
+            "b22_0"
+          ],
+          [
+            "b02_0",
+            "b22_1"
+          ],
+          [
+            "b11_0",
+            "b12_0"
+          ],
+          [
+            "b11_0",
+            "b20_0"
+          ],
+          [
+            "b11_0",
+            "b21_0"
+          ],
+          [
+            "b11_0",
+            "b22_1"
+          ],
+          [
+            "b12_0",
+            "b20_0"
+          ],
+          [
+            "b12_0",
+            "b21_0"
+          ],
+          [
+            "b12_0",
+            "b22_0"
+          ],
+          [
+            "b12_0",
+            "b22_1"
+          ],
+          [
+            "b20_0",
+            "b21_0"
+          ],
+          [
+            "b20_0",
+            "b22_0"
+          ],
+          [
+            "b20_0",
+            "b22_1"
+          ],
+          [
+            "b21_0",
+            "b22_0"
+          ],
+          [
+            "b21_0",
+            "b22_1"
+          ],
+          [
+            "b22_0",
+            "b22_1"
+          ]
+        ],
+        "fixed_present_edge_count": 79,
+        "maximum_current_outside_degree": 4,
+        "mode": "one_closed_transversal",
+        "scope": "A partial 99-vertex edge assignment only. Most outside-outside adjacencies and all missing outside degrees and lambda/mu completions remain unspecified. This is not an SRG extension or a graph construction.",
+        "vertex_count": 99
+      }
+    },
+    "remaining_obligation": "Prove that the full SRG and projector/Schur compatibility cannot keep all 2832 pair-indexed candidates open, or construct a complete endpoint satisfying them.",
+    "rootless_clause": "For each of the 708 unordered R2 pairs, all four pair-indexed transversal candidates must fail to be graph triangles."
+  },
+  "constructs_global_graph_or_endpoint": false,
+  "inputs": {
+    "agents/2026-07-23-wave20-global-schur.md": "64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632",
+    "agents/2026-07-24-wave31-survivor-proof.md": "075566744e2622a4dfa402a125d394aef16dfcb3fc53b172176dce88bd951aaa",
+    "agents/2026-07-24-wave32-indecomposable-proof.md": "5e0e0ce6e33cd8f943d8026c2b9b01b74d9668234d4c9b2c46da6c0c9921b8ef",
+    "agents/2026-07-24-wave32-rooted-proof.md": "04990231e3b42cded363e39ffea771556e52ec66fe03a97164ae99f40ddbefe0",
+    "attempts/wave32-indecomposable/exact-results.json": "bccde9635d973e030e004800abc08c37089e036faca1edc2bb85ed70ee731472",
+    "attempts/wave32-indecomposable/exact_check.py": "52bb6a1f9972c981779e9aa9269bd82bb89866cde68a911498e00a4c679dbdae",
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave31-sign-commutant/audit.md": "f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0",
+    "verification/wave32-indecomposable/audit.md": "15285e618b3a38c91c5d2e373dcb859720a2062d9ca108cd79cae12506a53f44",
+    "verification/wave32-indecomposable/independent-results.json": "4b90ef54358a14abc92c925c8e0f94ed9510b4f80857fde5aa4e2abf4ba89e2a",
+    "verification/wave32-rooted-vector/audit.md": "36d83232d82e30205e0aefa30aedff0a517de1edb0adbaa54575ea68d04ce1a5",
+    "verification/wave33-continuation-protocol.md": "b98b6bb8228b54b67cd949ee1bf6eb05ebd6ebe74f1cbc9e49b041a55e2d2fe6"
+  },
+  "local_moment_controls": {
+    "interpretation": "For a fixed ordered R2 pair (T,U), entry (a,b) counts third triangles V with relation a from T and relation b to U.",
+    "motif_one": {
+      "base_pair_relation": "R2 / C=2 / M=-1",
+      "basis_contraction_matrix": [
+        [
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          231,
+          18,
+          216
+        ],
+        [
+          0,
+          18,
+          2,
+          16
+        ],
+        [
+          2,
+          216,
+          16,
+          188
+        ]
+      ],
+      "basis_order": [
+        "I",
+        "J",
+        "Gamma",
+        "C"
+      ],
+      "common_R3_neighbours": 1,
+      "projector_contraction_M_squared": -21,
+      "q_endpoint_values": [
+        2,
+        2
+      ],
+      "relation_order": [
+        "D",
+        "G",
+        "R0",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "row_and_column_margins": {
+        "D": 1,
+        "G": 18,
+        "R0": 22,
+        "R1": 174,
+        "R2": 6,
+        "R3": 10
+      },
+      "table": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          10,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          10,
+          3,
+          3,
+          1,
+          5
+        ],
+        [
+          0,
+          0,
+          3,
+          171,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          4,
+          5,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "motif_zero": {
+      "base_pair_relation": "R2 / C=2 / M=-1",
+      "basis_contraction_matrix": [
+        [
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          231,
+          18,
+          216
+        ],
+        [
+          0,
+          18,
+          2,
+          16
+        ],
+        [
+          2,
+          216,
+          16,
+          188
+        ]
+      ],
+      "basis_order": [
+        "I",
+        "J",
+        "Gamma",
+        "C"
+      ],
+      "common_R3_neighbours": 0,
+      "projector_contraction_M_squared": -21,
+      "q_endpoint_values": [
+        2,
+        2
+      ],
+      "relation_order": [
+        "D",
+        "G",
+        "R0",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "row_and_column_margins": {
+        "D": 1,
+        "G": 18,
+        "R0": 22,
+        "R1": 174,
+        "R2": 6,
+        "R3": 10
+      },
+      "table": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          9,
+          2,
+          1,
+          4
+        ],
+        [
+          0,
+          9,
+          7,
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          2,
+          0,
+          172,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          4,
+          6,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "null_trade_checks": {
+      "M_squared_contraction_zero": true,
+      "all_Q_Gamma_bilinear_contractions_zero": true,
+      "all_relation_margins_zero": true,
+      "change_in_common_R3_count": 1
+    },
+    "null_trade_one_minus_zero": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        -2,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        -4,
+        3,
+        1,
+        -1
+      ],
+      [
+        0,
+        -2,
+        3,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        -2,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "scope": "Exact local moment controls only. They are not globally compatible relation tensors, 231-by-231 matrices, projectors, frames, incidence structures, or graphs.",
+    "universal_blindness": "Bilinearity implies that both tables give the same (FG)[T,U] for every F,G in Q[Gamma]."
+  },
+  "mixed_trace": {
+    "actual_incidence_forces_positive_value": "UNKNOWN",
+    "identity": "tr(A_R2*A_R3^2)=sum_(ordered R2 pairs T,U) #{V: T R3 V and V R3 U}",
+    "rootless_required_value": 0,
+    "unordered_motif_multiplier": 2
+  },
+  "scope": "Exact tensor/adjacency-algebra and actual local-incidence reductions for the Wave 33 rootless mixed-motif branch.",
+  "spectral_and_incidence_algebra": {
+    "C_definition": "C=Gamma^2-5*Gamma-18*I",
+    "C_spectrum": [
+      216,
+      -4,
+      -18,
+      6
+    ],
+    "Gamma_spectrum": [
+      {
+        "eigenvalue": 18,
+        "multiplicity": 1
+      },
+      {
+        "eigenvalue": 7,
+        "multiplicity": 54
+      },
+      {
+        "eigenvalue": 0,
+        "multiplicity": 44
+      },
+      {
+        "eigenvalue": -3,
+        "multiplicity": 132
+      }
+    ],
+    "M_definition": "M=3*I+J-Gamma-C",
+    "M_spectrum": [
+      0,
+      0,
+      21,
+      0
+    ],
+    "basis": [
+      "I",
+      "J",
+      "Gamma",
+      "C"
+    ],
+    "incidence_reduction": {
+      "checked_exponents": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "conclusion": "Every fully contracted two-leg expression obtained from N, N^T, and a polynomial in A lies in Q[Gamma].",
+      "does_not_cover": "uncontracted vertex labels or genuine three-leg and higher incidence compatibility",
+      "identity": "N^T*A^k*N=(3I+Gamma)*(Gamma-4I)^k",
+      "spectral_values": {
+        "0": [
+          21,
+          10,
+          3,
+          0
+        ],
+        "1": [
+          294,
+          30,
+          -12,
+          0
+        ],
+        "2": [
+          4116,
+          90,
+          48,
+          0
+        ],
+        "3": [
+          57624,
+          270,
+          -192,
+          0
+        ],
+        "4": [
+          806736,
+          810,
+          768,
+          0
+        ],
+        "5": [
+          11294304,
+          2430,
+          -3072,
+          0
+        ]
+      }
+    },
+    "multiplication_identities": {
+      "C^2": "72*I+216*J-16*Gamma-14*C",
+      "Gamma*C": "-18*I+18*J-2*Gamma-C",
+      "Gamma^2": "18*I+5*Gamma+C"
+    }
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "Q_Gamma_two_leg_local_blindness": "DERIVED",
+    "actual_incidence_forces_positive_mixed_trace": "UNKNOWN",
+    "eight_vertex_board_and_four_candidates_per_R2_pair": "DERIVED",
+    "fully_contracted_two_leg_incidence_local_blindness": "DERIVED",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rootless_indecomposable_endpoint": "UNKNOWN"
+  },
+  "strongest_self_objection": {
+    "disposition": "VALID_AND_BLOCKING",
+    "effect": "The controls delimit failed moment routes but do not exclude the rootless endpoint or change any global status.",
+    "objection": "The null trade is local and the 99-vertex controls are partial. They do not prove that either table extends simultaneously across all triangle pairs, satisfies uncontracted three-leg incidence, realizes M^2=21M as a global matrix, or comes from an srg(99,14,1,2). A global compatibility theorem could still force the mixed trace positive."
+  },
+  "uses_automorphism": false
+}

@@ -1,0 +1,37 @@
+role: proof_a
+date_utc: 2026-07-28T23:57:12Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Under conditional Wave181 equality Q=2079, exclusion of global-root
+  support multiplicities 8, 9, and 10; exact remaining support shapes
+  5K1, 3K2, C7; and the root-count interval 297 through 415.
+inputs:
+  - attempts/wave181-c4-conic-equality/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+  - attempts/wave182-a6-root-gluing/package-manifest.sha256
+  - verification/wave182-a6-root-gluing-verifier/package-manifest.sha256
+method: >-
+  Canonical-C4 root orthogonality, exact nonedge label uniqueness, internal
+  two-path injection, the cubic triangle packing contradiction, and
+  elementary regular-graph classification. No graph, code, SAT,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave183-root-support-girth\exact_check.py --verify
+  attempts\wave183-root-support-girth\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave183-root-support-girth\test_exact_check.py
+outputs:
+  - attempts/wave183-root-support-girth/README.md
+  - attempts/wave183-root-support-girth/derivation.md
+  - attempts/wave183-root-support-girth/failed-routes.md
+  - attempts/wave183-root-support-girth/protocol.md
+  - attempts/wave183-root-support-girth/exact_check.py
+  - attempts/wave183-root-support-girth/exact-results.json
+  - attempts/wave183-root-support-girth/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - Wave181 equality Q=2079 is not excluded.
+  - The split root-frame identity has no proved rank contradiction.
+  - Rank 11, the endpoint, and Conway-99 remain UNKNOWN.

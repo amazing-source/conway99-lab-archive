@@ -1,0 +1,55 @@
+role: construction
+date_utc: 2026-07-24T04:14:28Z
+git_commit: ff6902812c46d33bd081e7580d09baa1d60a5494
+claim_label: CANDIDATE
+primary_status: FINITE_COMPUTATIONAL_EVIDENCE
+scope: >-
+  Exact five-neighbor construction of a rootless even rank-20
+  determinant-729 lattice T20 and the bare rank-44 S/G candidate
+  T20 orthogonal_sum LAMBDA24. No Q, frame, Schur certificate, graph,
+  endpoint realization, or target resolution is claimed.
+inputs:
+  - path: agents/2026-07-24-wave28-orchestrator-brief.md
+    sha256: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  - path: verification/wave28-simultaneous-neighbor/independent_check.py
+    sha256: 2c8021769d47faebbcd544b364649a2cb93c066a369f76f725cffab1588982db
+  - path: verification/wave28-theta-modular/independent_check.py
+    sha256: 513efd1a915bc14adc3003c41e6758839375d9a36a0055f08faa56417c942b18
+attributed_embedded_sources:
+  - name: K12 (Coxeter-Todd lattice)
+    url: https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/K12.html
+    access_date_utc: 2026-07-24
+    frozen_response_sha256: 163e03dfa9a4ab07675daa6e97a371bcfdb38f6195c311c63c699872b3e486c9
+  - name: LAMBDA24 (Leech lattice)
+    url: https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/Leech.html
+    access_date_utc: 2026-07-24
+    frozen_response_sha256: 0d5967713c09e2fda1ba06fc183ca376eccc73b9e4612e88d36c5fe70d13479c
+method: >-
+  Exact two-neighbor bases and contragredient scaled-dual transport;
+  deterministic unimodular exact LLL; complete reverse-LDL rational
+  ellipsoid enumeration after every step and through norm four at T20;
+  exact direct-sum assembly with an attributed embedded Leech Gram.
+command: |-
+  cd attempts/wave30-h729-construction
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-24-wave30-h729-construction.md
+    sha256: 479ed105825ea2b2a0802c34fcc332b8dc1420b27966bec41053702f3212451f
+  - path: attempts/wave30-h729-construction/exact_check.py
+    sha256: 6415f40948f5033fff47c1f090776f417ac0a8cd0adf589cb5d4aa66cbb7d852
+  - path: attempts/wave30-h729-construction/test_exact_check.py
+    sha256: 0bd86cadac900ddcfb34d6c76bfa827fe94cc001ef75d1c9c9e6b008d7373cd5
+  - path: attempts/wave30-h729-construction/exact-results.json
+    sha256: 0d3723ba4c185dc7865858d16bfc6ada99fd87b4e21da616ef1b1d1ad6b67e11
+  - path: attempts/wave30-h729-construction/input-freeze.sha256
+    sha256: 895ce37d214acf92aa5c4f2bd1eaaadaa8ef625045e31479b25eb4f42caf17fe
+  - path: attempts/wave30-h729-construction/failed-routes.md
+    sha256: 51d6a9681b5fdddc6dffe70baf1f80f03a2b652440ebd5506cfce0dced440115
+limitations:
+  - The five supports are a construction route, not a complete neighbor graph.
+  - The rank-44 object assumes the displayed orthogonal decomposition.
+  - The T20 shell count is not a 105-row tight-frame certificate.
+  - No determinant-five Q, compatible B, X, M, W, or Schur identity is supplied.
+  - No graph, n3=708 realization or exclusion, Conway-99 resolution, or novelty conclusion is supplied.
+  - A fresh independent verifier is required before any promotion.

@@ -1,0 +1,97 @@
+{
+  "allowed_multiplicities": [
+    5,
+    6,
+    7
+  ],
+  "cubic_case": {
+    "adjacent_endpoint_lower": 8,
+    "contradiction": true,
+    "degree": 3,
+    "multiplicity": 8,
+    "nonedge_endpoint_capacity": 16,
+    "triangle_edge_divisor": 3,
+    "triangle_lower": 3,
+    "triangles_vertex_disjoint": true,
+    "two_paths": 24,
+    "vertex_disjoint_triangle_upper": 2
+  },
+  "endpoint_status": "UNKNOWN",
+  "frame": {
+    "coefficient_mod3": {
+      "5": 2,
+      "6": 0,
+      "7": 1
+    },
+    "contradiction_obtained": false,
+    "split_identity": "sum_(m=7) r tensor r=sum_(m=5) r tensor r"
+  },
+  "global": {
+    "defect_equation": "7*R-2079=2*n5+n6",
+    "distinct_root_lower": 297,
+    "distinct_root_upper": 415,
+    "multiplicity_equation": "5*n5+6*n6+7*n7=2079",
+    "root_incidences": 2079
+  },
+  "pair_bound_survivors": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "pair_common_neighbor_rule": {
+    "adjacent_case": "lambda=1",
+    "maximum_inside_support": 1,
+    "nonadjacent_case": "canonical-C4 orthogonality plus exact nonedge-root uniqueness"
+  },
+  "support_rows": [
+    {
+      "induced_degree": 0,
+      "internal_pairs": 10,
+      "internal_two_paths": 0,
+      "multiplicity": 5,
+      "pair_bound_survives": true
+    },
+    {
+      "induced_degree": 1,
+      "internal_pairs": 15,
+      "internal_two_paths": 0,
+      "multiplicity": 6,
+      "pair_bound_survives": true
+    },
+    {
+      "induced_degree": 2,
+      "internal_pairs": 21,
+      "internal_two_paths": 7,
+      "multiplicity": 7,
+      "pair_bound_survives": true
+    },
+    {
+      "induced_degree": 3,
+      "internal_pairs": 28,
+      "internal_two_paths": 24,
+      "multiplicity": 8,
+      "pair_bound_survives": true
+    },
+    {
+      "induced_degree": 4,
+      "internal_pairs": 36,
+      "internal_two_paths": 54,
+      "multiplicity": 9,
+      "pair_bound_survives": false
+    },
+    {
+      "induced_degree": 5,
+      "internal_pairs": 45,
+      "internal_two_paths": 100,
+      "multiplicity": 10,
+      "pair_bound_survives": false
+    }
+  ],
+  "support_shapes": {
+    "5": "5K1",
+    "6": "3K2",
+    "7": "C7"
+  },
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

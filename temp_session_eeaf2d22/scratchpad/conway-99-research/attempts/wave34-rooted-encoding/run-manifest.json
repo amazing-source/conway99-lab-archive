@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-07-24T20:07:37Z",
+  "git_commit": "0fa5b8161baf8b2a5404a67051b7d61cbc906da3",
+  "claim_label": "CANDIDATE",
+  "scope": "Complete unrestricted labeled CNF encoding of the frozen rooted six-block binary graph-extension criterion; no automorphism and no fixed O-Q design.",
+  "status": {
+    "encoding": "CANDIDATE_COMPLETE_DOMAIN",
+    "SAT_witness": "NONE",
+    "UNSAT_certificate": "NONE",
+    "rooted_graph_extension": "UNKNOWN",
+    "Conway_99": "UNKNOWN"
+  },
+  "dependencies": {
+    "python": "3.13.14",
+    "python_modules": "standard library only",
+    "solver_executed": false,
+    "proof_checker_executed": false,
+    "commands_not_on_PATH": [
+      "cadical",
+      "kissat",
+      "cryptominisat5",
+      "drat-trim",
+      "lrat-check",
+      "veripb"
+    ],
+    "seed": null
+  },
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3"
+    },
+    {
+      "path": "CONJECTURE.md",
+      "sha256": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58"
+    },
+    {
+      "path": "STATUS.yaml",
+      "sha256": "feda17934162602804015e17130c029ffdba7bf0307cdf234f4a7d8979298864"
+    },
+    {
+      "path": "verification/wave34-continuation-protocol.md",
+      "sha256": "60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4"
+    },
+    {
+      "path": "verification/2026-07-24-wave33-clean-clone.md",
+      "sha256": "d83e18052114affaed873ddaa7bdc6a26c63afc6432345e1027aeef5bd66d052"
+    },
+    {
+      "path": "verification/wave33-rooted-extension/comparison-results.json",
+      "sha256": "2e36ecade28bca12d35a963a8c6b52777ac7d766a3c4b3267774000fe2e929fd"
+    },
+    {
+      "path": "verification/wave33-rooted-extension/comparison-audit.md",
+      "sha256": "fc7abcd53154d4551a5d3d97d38024840b4228195e143559c9e8b46c15644b8a"
+    },
+    {
+      "path": "verification/wave33-rooted-construction-chronology/chronology-results.json",
+      "sha256": "b2f0b872221a3fd9f41d6a88637be21034b70e8c8129fe57617115548b425957"
+    },
+    {
+      "path": "verification/wave33-rooted-construction-chronology/audit.md",
+      "sha256": "1346992e11db72c4c94018293d3827214e2ee79e074490b8f905028e20fa30f1"
+    }
+  ],
+  "commands": [
+    {
+      "purpose": "mandatory pre-search count audit",
+      "command": "python -B attempts/wave34-rooted-encoding/generate_cnf.py --audit-only --audit attempts/wave34-rooted-encoding/encoding-preflight.json --primary-map attempts/wave34-rooted-encoding/primary-map.json",
+      "exit_code": 0,
+      "wall_seconds_approx": 8.6
+    },
+    {
+      "purpose": "complete deterministic DIMACS emission",
+      "command": "python -B attempts/wave34-rooted-encoding/generate_cnf.py --output attempts/wave34-rooted-encoding/rooted-complete.cnf --audit attempts/wave34-rooted-encoding/encoding-audit.json --primary-map attempts/wave34-rooted-encoding/primary-map.json --spec attempts/wave34-rooted-encoding/criterion-spec.json",
+      "exit_code": 0,
+      "wall_seconds_approx": 20.9
+    },
+    {
+      "purpose": "independent streaming DIMACS and explicit-gate audit",
+      "command": "python -B attempts/wave34-rooted-encoding/audit_dimacs.py --cnf attempts/wave34-rooted-encoding/rooted-complete.cnf --output attempts/wave34-rooted-encoding/dimacs-audit.json",
+      "exit_code": 0,
+      "wall_seconds_approx": 11.5
+    },
+    {
+      "purpose": "deterministic ordinary-Git gzip package and exact decompression audit",
+      "command": "python -B attempts/wave34-rooted-encoding/package_cnf.py --source attempts/wave34-rooted-encoding/rooted-complete.cnf --output attempts/wave34-rooted-encoding/rooted-complete.cnf.gz --audit attempts/wave34-rooted-encoding/compression-audit.json",
+      "exit_code": 0,
+      "wall_seconds_approx": 34.0,
+      "repeat_run_byte_identical": true
+    },
+    {
+      "purpose": "final standard-library unit suite",
+      "command": "python -B -m unittest discover -s attempts/wave34-rooted-encoding -p \"test_*.py\" -v",
+      "exit_code": 0,
+      "tests": 10,
+      "wall_seconds": 43.387
+    }
+  ],
+  "count_audit": {
+    "semantic_independent_primary_bits": 3465,
+    "explicit_primary_variables": 5950,
+    "product_auxiliary_variables": 280245,
+    "cardinality_auxiliary_variables": 946806,
+    "total_variables": 1233001,
+    "clauses": 4323943,
+    "formula_bytes": 89546779,
+    "compressed_formula_bytes": 17402973
+  },
+  "outputs": [
+    {
+      "path": "attempts/wave34-rooted-encoding/rooted-complete.cnf",
+      "sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3"
+    },
+    {
+      "path": "attempts/wave34-rooted-encoding/rooted-complete.cnf.gz",
+      "sha256": "6b6beb5d49c7fe75b9b475162cc4bd97de2793389df150dfab9765ba497305f0"
+    },
+    {
+      "path": "attempts/wave34-rooted-encoding/compression-audit.json",
+      "sha256": "df6bcc6077480ff5348357a51b471862ad82c2d1088a561d1dabd1c96664746c"
+    },
+    {
+      "path": "attempts/wave34-rooted-encoding/criterion-spec.json",
+      "sha256": "3429a093c682877a3a14848620860f8ffb5e4cc0b0ca70f0fc5a2f85697d1d82"
+    },
+    {
+      "path": "attempts/wave34-rooted-encoding/encoding-audit.json",
+      "sha256": "00be08c4da5bccabc54004cd1b70705a6112847f10658fd2fb0976416cbaa826"
+    },
+    {
+      "path": "attempts/wave34-rooted-encoding/dimacs-audit.json",
+      "sha256": "da267da5708f50a0eb46f2c511318e99797ef8a6a9c5f4537db91fef5d5ff1ab"
+    },
+    {
+      "path": "attempts/wave34-rooted-encoding/primary-map.json",
+      "sha256": "d20ae9196012b2bbf512938abd5641b4281c10e05495b19342a3b46e4d9a264c"
+    },
+    {
+      "path": "attempts/wave34-rooted-encoding/test-results.txt",
+      "sha256": "98b747fc36cd3e9552af131445d6f596ebc0b7c82cfcca5672bcbdff80e7b99a"
+    }
+  ],
+  "publication_choice": {
+    "ordinary_git_include": [
+      "generate_cnf.py and the small exact checkers",
+      "criterion-spec.json, primary-map.json, count and syntax audits",
+      "rooted-complete.cnf.gz (17,402,973 bytes)"
+    ],
+    "ordinary_git_exclude": "rooted-complete.cnf (89,546,779 bytes), while retaining it locally and preserving its exact regeneration and decompression routes",
+    "raw_formula_sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3",
+    "compressed_formula_sha256": "6b6beb5d49c7fe75b9b475162cc4bd97de2793389df150dfab9765ba497305f0",
+    "round_trip_exact": true
+  },
+  "failed_routes": [
+    {
+      "kind": "test_expectation_error",
+      "detail": "The first suite run expected the F^T F overlap histogram with keys 0 and 2 reversed. Generated data and the fixed-block check were correct; only the test assertion changed. The failed run was 7 pass, 1 fail."
+    },
+    {
+      "kind": "solver_unavailable",
+      "detail": "No proof-producing SAT solver or independent proof checker was found on PATH. No large search was attempted."
+    }
+  ],
+  "strongest_objection": "The CNF has not yet been reconstructed by an independent semantic encoder, and the allowed frozen inputs did not expose raw Wave 33 support/incidence bytes for a byte-identity comparison. The explicit canonical signed-Fano labeling is isomorphic and complete-domain invariant, but an independent verifier must audit that relabeling and the full equation-to-CNF mapping before any UNSAT proof could be promoted.",
+  "limitations": [
+    "A complete encoding is not a witness or exclusion.",
+    "The DIMACS audit is syntactic plus explicit D-gate reconstruction; it is not an UNSAT proof check.",
+    "The negative fixed-skeleton checker control is not positive validation on a target witness because no witness exists in this run.",
+    "No timeout or nonhit is reported as evidence."
+  ]
+}

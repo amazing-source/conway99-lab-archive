@@ -1,0 +1,58 @@
+{
+  "boundary": {
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "graph_or_flag_family_constructed": false,
+    "rank_11_excluded": false,
+    "strict_original_n3_improvement": false
+  },
+  "claim": {
+    "all_projective_short_circuits": 7752,
+    "conditional_Q_lower": 7059,
+    "edge_isolated_projective": 693,
+    "nonzero_scalar_short_circuit_words": 15504,
+    "rational_target": "70587/10"
+  },
+  "controls": {
+    "integer_near_equality": {
+      "Q0": 7059,
+      "asserted_object": false,
+      "multiplicity_profile": {
+        "1": 1,
+        "2": 232,
+        "3": 4
+      },
+      "scaled_certificate_budget": 3
+    },
+    "rational_equality": {
+      "Q0": "70587/10",
+      "asserted_object": false
+    }
+  },
+  "format": "wave201-multiplicity-weighted-verification-v1",
+  "independent_result": {
+    "frozen_before_source": true,
+    "math_result_sha256": "b2f3bc49fd64d2297464a2a4a35ee3a6d0682dca85c86ae0af98eb638033828c",
+    "tests_passed": 11
+  },
+  "local_theorem": {
+    "deficient_centers": "proved for c_x<=12",
+    "global_slack": "SM=delta-3*q+epsilon>=0",
+    "multiplicity_one": "explicitly checked",
+    "multiple_selected_labels_one_fibre": "explicitly checked",
+    "selected_vs_full": "m_y<=n_y is used explicitly",
+    "statement": "delta_x>=sum_nonprivate_y(m_x(y)-2)",
+    "tight_centers": "proved for c_x=13 using exactly three Hilton-Milner degree-five baselines"
+  },
+  "source_comparison": {
+    "hostile_manifest_sha256": "d0c98bd36172d010596c2b428e5827438c633e4db9e0ed5783e18d69e2caf97c",
+    "hostile_replay": "PASS",
+    "hostile_tests_passed": 7,
+    "mathematical_repair_needed": false,
+    "primary_manifest_sha256": "36d95b7d1bee4739cc5f33c780d22168fe58bf974904031db86d25da77bce695",
+    "primary_replay": "PASS",
+    "primary_tests_passed": 6
+  },
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

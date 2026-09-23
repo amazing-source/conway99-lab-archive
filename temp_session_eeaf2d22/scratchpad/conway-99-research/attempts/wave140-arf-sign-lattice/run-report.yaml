@@ -1,0 +1,37 @@
+role: proof_b
+date_utc: 2026-07-28T09:21:21Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: DERIVED
+scope: >-
+  Conditional Arf-sign determination for R=im_F2(A) from the exact SRG
+  operator identities, spectrum, Smith form, and adjacency-lattice
+  two-primary data; exact opposite-sign binary and local two-adic controls.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: verification/2026-07-22-wave2-audit.md
+    sha256: b438e45544c1675530084a7a16396d2a45d4dab473a04696ddec6a9ce45641c8
+  - path: agents/2026-07-22-wave2-algebra-codes.md
+    sha256: 999cbb0366a984ab6ddf4a2ff084eb680beffaad47c0b8176752a5a6769cc0e9
+  - path: attempts/wave136-alternative-spaces/arf-results.json
+    sha256: 17659e6e03d7cd6681b16ca8c213462a12087e97124d93df603c8cdde2f3c9b9
+method: >-
+  Split the orthogonal complement of the all-one line over Z_2 into its
+  integral 3- and -4-eigenlattices; reduce even unimodular two-adic forms
+  into H and E planes; derive epsilon=(2/det(U)); independently reconstruct
+  the Smith factors; construct deterministic rank-54 symmetric idempotent
+  zero-diagonal binary projections and compatible local spectral controls
+  of both Arf signs; compare their adjacency-lattice discriminant groups
+  and determinant units.
+command: >-
+  python -B attempts/wave140-arf-sign-lattice/exact_check.py; python -B -m
+  unittest discover -s attempts/wave140-arf-sign-lattice -p "test_*.py" -v
+outputs:
+  - path: attempts/wave140-arf-sign-lattice/exact-results.json
+    sha256: 0fb5b5ace9a2b774ff532aa1aef6cc0a15969b75617147bb56b31bd7672d5067
+limitations:
+  - The controls are exact binary and local two-adic objects, not integral adjacency matrices.
+  - They refute sign determination only from the matched coarse invariants.
+  - A full target two-primary finite quadratic form has not been derived.
+  - The entrywise zero-one and exact zero-diagonal integral constraints may contain additional information.
+  - The target Arf sign, graph existence, Conway-99, and novelty remain UNKNOWN.

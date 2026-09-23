@@ -1,0 +1,2246 @@
+{
+  "ADE_component_screen": {
+    "accepted": [
+      {
+        "21_inverse_even_diagonal": true,
+        "21_inverse_integral": true,
+        "determinant": 3,
+        "rank": 2,
+        "type": "A2"
+      },
+      {
+        "21_inverse_even_diagonal": true,
+        "21_inverse_integral": true,
+        "determinant": 7,
+        "rank": 6,
+        "type": "A6"
+      },
+      {
+        "21_inverse_even_diagonal": true,
+        "21_inverse_integral": true,
+        "determinant": 21,
+        "rank": 20,
+        "type": "A20"
+      },
+      {
+        "21_inverse_even_diagonal": true,
+        "21_inverse_integral": true,
+        "determinant": 3,
+        "rank": 6,
+        "type": "E6"
+      },
+      {
+        "21_inverse_even_diagonal": true,
+        "21_inverse_integral": true,
+        "determinant": 1,
+        "rank": 8,
+        "type": "E8"
+      }
+    ],
+    "accepted_count": 5,
+    "candidate_count": 88,
+    "necessary_conditions": [
+      "21*R^-1 integral from the second moment",
+      "diag(21*R^-1) even from zero sum modulo 2"
+    ],
+    "rejected_count": 83,
+    "rejected_types": [
+      "A1",
+      "A3",
+      "A4",
+      "A5",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A17",
+      "A18",
+      "A19",
+      "A21",
+      "A22",
+      "A23",
+      "A24",
+      "A25",
+      "A26",
+      "A27",
+      "A28",
+      "A29",
+      "A30",
+      "A31",
+      "A32",
+      "A33",
+      "A34",
+      "A35",
+      "A36",
+      "A37",
+      "A38",
+      "A39",
+      "A40",
+      "A41",
+      "A42",
+      "A43",
+      "A44",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "D19",
+      "D20",
+      "D21",
+      "D22",
+      "D23",
+      "D24",
+      "D25",
+      "D26",
+      "D27",
+      "D28",
+      "D29",
+      "D30",
+      "D31",
+      "D32",
+      "D33",
+      "D34",
+      "D35",
+      "D36",
+      "D37",
+      "D38",
+      "D39",
+      "D40",
+      "D41",
+      "D42",
+      "D43",
+      "D44",
+      "E7"
+    ]
+  },
+  "algebra": {
+    "arbitrary_cross_Q_control": {
+      "Q": [
+        [
+          36,
+          13,
+          -7
+        ],
+        [
+          13,
+          22,
+          -5
+        ],
+        [
+          -7,
+          -5,
+          28
+        ]
+      ],
+      "complement_trace": 56,
+      "compression_slack": 72,
+      "cross_Q_column": [
+        -7,
+        -5
+      ],
+      "first_leg_tensor_norm": 90,
+      "global_trace": 146,
+      "local_trace": 90,
+      "pure_RRR_tensor_norm": 18
+    },
+    "canonical_gram_hashes": {
+      "A6": "f1877b7d31e982e0e7bafba7f410ad36d18bb81853efa237c770c2fa0341e7e2",
+      "E6": "9608fd7ce190259ba86afdb8561525dc698570533aaac5b92eefc382d5477f8b"
+    },
+    "complement_cap": {
+      "formula": "tau_R <= 60-(44-r)=r+16",
+      "principal_Q_CC_positive_integral_determinant": true,
+      "rank_6": 22,
+      "uses_Q_cross_block_zero": false
+    },
+    "compression_formula": "tr(R Q_RR)=||sum_i z_i tensor x_i tensor x_i||^2 >=||sum_i z_i tensor z_i tensor z_i||^2",
+    "projector_frame_control": {
+      "energy_mod_6": 0,
+      "expected_second_moment": [
+        [
+          14,
+          7
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "pairwise_cube_energy": 18,
+      "pure_cubic_energy": 18,
+      "row_count": 21,
+      "row_sum": [
+        0,
+        0
+      ],
+      "second_moment": [
+        [
+          14,
+          7
+        ],
+        [
+          7,
+          14
+        ]
+      ]
+    },
+    "repeated_index_parity": "P_aab = sum_i z_ia^2 z_ib = (21 R^-1)_ab mod 2"
+  },
+  "energy_divisibility": {
+    "all_k_cubed_congruent_k_mod_6": true,
+    "drop_zero_sum_counterexample_energy": 8,
+    "drop_zero_sum_counterexample_mod_6": 2,
+    "integer_residue_range_checked": [
+      -100,
+      100
+    ],
+    "zero_sum_frame_energy": 18,
+    "zero_sum_frame_energy_mod_6": 0
+  },
+  "frozen_addendum_submitted": {
+    "agents/2026-07-24-wave27-a20-trace-addendum.md": "97c7296752e0ef2126bd8da50cdf8b0abe07b3c72a939233d15aae6d7c413659",
+    "attempts/wave27-a20-trace-addendum/artifact-manifest.sha256": "8f8ef9538a4070d569cfd4415296206214af3d3b2d8fe136ec7536257ead9949",
+    "attempts/wave27-a20-trace-addendum/exact-results.json": "dc5716cbf2537cd214906f1bf2eae96d4886e4bd88008cd7508c6a64d78f089c",
+    "attempts/wave27-a20-trace-addendum/exact_check.py": "7762acf33bf519e3a91f442d4dcae6da34e770d98491b02d995a14550840de7c",
+    "attempts/wave27-a20-trace-addendum/failed-routes.md": "178c8578eebe32d10e6d8c5c8862ba05e5c0a2b661c62813310371db6c9b17b5",
+    "attempts/wave27-a20-trace-addendum/input-freeze.sha256": "c0a85ebaf10f53b9ab456147b77d021d0e2d4892123c8939c1a15413c09f9679",
+    "attempts/wave27-a20-trace-addendum/run-report.yaml": "5098a03cf12c4cd94891a354d92fb620f334372e7fc3330671a51da0bb2e4781",
+    "attempts/wave27-a20-trace-addendum/test_exact_check.py": "b5d55c15f01c4f7a5856ebce36646140f90994328b62852b8dfb1d121bed4f82"
+  },
+  "frozen_public_inputs": {
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+    "verification/wave26-a2-cubic-obstruction/2026-07-23T231001Z-audit.md": "883f48e70336b87955f5c2a115ac8b137169310c6f5ef91fe4581cb1b6c10465",
+    "verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md": "5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3"
+  },
+  "frozen_submitted": {
+    "agents/2026-07-23-wave27-general-root-tensor.md": "456a4ad6f27c1c9c09f84b2ff41796473f519b5aaabda36b71022a51bbbe7f38",
+    "attempts/wave27-general-root-tensor/artifact-manifest.sha256": "3ba7ee4683dfac361b6f2d1b09a90d485210e2debd87cbe9d4ecb62f607ebf32",
+    "attempts/wave27-general-root-tensor/exact-results.json": "98aba5a30b2f3a83b9f6ce6fd6a20458505b668249d97b0810907de50cae678d",
+    "attempts/wave27-general-root-tensor/exact_check.py": "107907f610b83ddbb526daddeaa1fe850a0bd73e2dfeeaa386ca578a875bf8d5",
+    "attempts/wave27-general-root-tensor/failed-routes.md": "e806127f2140212277651ffa47b24087f79d6ba59c91b5aa290f1d73ac51f1d4",
+    "attempts/wave27-general-root-tensor/input-freeze.sha256": "13c5327b27ad81311e7857460c777db85064141fbdd8b33b5a8906f456647eaa",
+    "attempts/wave27-general-root-tensor/run-report.yaml": "4073f21de51b09b04436d471a192017420a85e1286bd5c4d3b3d5e6471c43499",
+    "attempts/wave27-general-root-tensor/test_exact_check.py": "3d9197c959b4624755243d21ecdc10dda95012b083717199f055f19a8872123f"
+  },
+  "hostile_controls": {
+    "drop_zero_sum": "energy need not be divisible by 6; explicit energy 8",
+    "even_scale_A6_zero_tensor": {
+      "accepted_partial_nodes": 56,
+      "affine_ldl_sha256": "a23f3b453b852390103a4fea1bcebd5f17184adebd5e222a996524539d1f67cd",
+      "cap": 0,
+      "complete_leaves": 1,
+      "coordinate_order": "canonical Cartan coordinates",
+      "dimension": 56,
+      "enumeration": "affine CVP x=residue+modulus*y; centered integer y search",
+      "found": true,
+      "free_coordinates": 20,
+      "gram_sha256": "f1877b7d31e982e0e7bafba7f410ad36d18bb81853efa237c770c2fa0341e7e2",
+      "odd_repeated_coordinates": 0,
+      "scale": 14,
+      "second_moment": [
+        [
+          12,
+          10,
+          8,
+          6,
+          4,
+          2
+        ],
+        [
+          10,
+          20,
+          16,
+          12,
+          8,
+          4
+        ],
+        [
+          8,
+          16,
+          24,
+          18,
+          12,
+          6
+        ],
+        [
+          6,
+          12,
+          18,
+          24,
+          16,
+          8
+        ],
+        [
+          4,
+          8,
+          12,
+          16,
+          20,
+          10
+        ],
+        [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12
+        ]
+      ],
+      "triple_order": "lexicographic combinations_with_replacement",
+      "triples": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          2,
+          5
+        ],
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          5
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          4
+        ],
+        [
+          3,
+          3,
+          5
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          5
+        ],
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          5
+        ],
+        [
+          5,
+          5,
+          5
+        ]
+      ],
+      "visited_interval_integers": 56,
+      "witness": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "witness_norm": 0
+    },
+    "even_scale_E6_zero_tensor": {
+      "accepted_partial_nodes": 56,
+      "affine_ldl_sha256": "3657b0ce38c1044d912348eceed1fa467026dc2870b1c0fcdf6737128d4b8b15",
+      "cap": 0,
+      "complete_leaves": 1,
+      "coordinate_order": "canonical Cartan coordinates",
+      "dimension": 56,
+      "enumeration": "affine CVP x=residue+modulus*y; centered integer y search",
+      "found": true,
+      "free_coordinates": 20,
+      "gram_sha256": "9608fd7ce190259ba86afdb8561525dc698570533aaac5b92eefc382d5477f8b",
+      "odd_repeated_coordinates": 0,
+      "scale": 18,
+      "second_moment": [
+        [
+          24,
+          30,
+          36,
+          24,
+          12,
+          18
+        ],
+        [
+          30,
+          60,
+          72,
+          48,
+          24,
+          36
+        ],
+        [
+          36,
+          72,
+          108,
+          72,
+          36,
+          54
+        ],
+        [
+          24,
+          48,
+          72,
+          60,
+          30,
+          36
+        ],
+        [
+          12,
+          24,
+          36,
+          30,
+          24,
+          18
+        ],
+        [
+          18,
+          36,
+          54,
+          36,
+          18,
+          36
+        ]
+      ],
+      "triple_order": "lexicographic combinations_with_replacement",
+      "triples": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          2,
+          5
+        ],
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          5
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          4
+        ],
+        [
+          3,
+          3,
+          5
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          5
+        ],
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          5
+        ],
+        [
+          5,
+          5,
+          5
+        ]
+      ],
+      "visited_interval_integers": 56,
+      "witness": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "witness_norm": 0
+    },
+    "nonorthogonal_root_subsystem": "OUT_OF_SCOPE_NO_BLOCK_MOMENT",
+    "trace_14_E6_algebraic_block": {
+      "P_idempotent": true,
+      "Q": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          4,
+          6,
+          4,
+          2,
+          2
+        ],
+        [
+          0,
+          6,
+          12,
+          8,
+          4,
+          3
+        ],
+        [
+          0,
+          4,
+          8,
+          6,
+          3,
+          2
+        ],
+        [
+          0,
+          2,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          2,
+          1,
+          2
+        ]
+      ],
+      "Q_even_integral_PD": true,
+      "R_times_Q": [
+        [
+          3,
+          -2,
+          -6,
+          -4,
+          -2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          2,
+          7,
+          4,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          -2,
+          -6,
+          -4,
+          -2,
+          1
+        ]
+      ],
+      "det_Q": 3,
+      "det_RQ": 9,
+      "rank_one_spectrum_certificate": "B=I+8P, P^2=P, rank(P)=1",
+      "trace_RQ": 14,
+      "v_H_v": "4/3"
+    }
+  },
+  "orchestrator_addendum": {
+    "A20_local_floor": 42,
+    "conclusion": "A20 orthogonal_sum E8^3 is excluded by this stronger added lemma; this is not a defect in the narrower submitted screen",
+    "control": {
+      "identity_verified": true,
+      "n": 20,
+      "term_count": 21,
+      "terms": [
+        2,
+        2,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "trace_AQ": 118
+    },
+    "global_floor": 66,
+    "global_trace": 60,
+    "identity": "tr(A_n Q)=Q(e1)+Q(en)+sum_i Q(e_i-e_(i+1))",
+    "rank_24_complement_floor": 24,
+    "reason": "each of the n+1 displayed nonzero vectors has positive even Q-norm at least 2",
+    "status": "VERIFIED_ORCHESTRATOR_ADDENDUM"
+  },
+  "scope": {
+    "Conway_99": "UNKNOWN",
+    "general_even_rank_44_lattices": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "stronger_addendum_result": "EXCLUDED_BY_A20_TRACE_IDENTITY_PLUS_COMPLEMENT",
+    "submitted_A20_E8_cubed_survivor": "CORRECTLY_SURVIVES_THE_SUBMITTED_COMPONENT_SCREEN"
+  },
+  "searches": {
+    "A6_cap_60": {
+      "accepted_partial_nodes": 105185,
+      "affine_ldl_sha256": "a23f3b453b852390103a4fea1bcebd5f17184adebd5e222a996524539d1f67cd",
+      "cap": 60,
+      "complete_leaves": 0,
+      "coordinate_order": "canonical Cartan coordinates",
+      "dimension": 56,
+      "enumeration": "affine CVP x=residue+modulus*y; centered integer y search",
+      "found": false,
+      "free_coordinates": 20,
+      "gram_sha256": "f1877b7d31e982e0e7bafba7f410ad36d18bb81853efa237c770c2fa0341e7e2",
+      "odd_repeated_coordinates": 12,
+      "scale": 21,
+      "second_moment": [
+        [
+          18,
+          15,
+          12,
+          9,
+          6,
+          3
+        ],
+        [
+          15,
+          30,
+          24,
+          18,
+          12,
+          6
+        ],
+        [
+          12,
+          24,
+          36,
+          27,
+          18,
+          9
+        ],
+        [
+          9,
+          18,
+          27,
+          36,
+          24,
+          12
+        ],
+        [
+          6,
+          12,
+          18,
+          24,
+          30,
+          15
+        ],
+        [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18
+        ]
+      ],
+      "triple_order": "lexicographic combinations_with_replacement",
+      "triples": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          2,
+          5
+        ],
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          5
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          4
+        ],
+        [
+          3,
+          3,
+          5
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          5
+        ],
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          5
+        ],
+        [
+          5,
+          5,
+          5
+        ]
+      ],
+      "visited_interval_integers": 105185,
+      "witness": null,
+      "witness_norm": null
+    },
+    "E6_cap_18": {
+      "accepted_partial_nodes": 10011,
+      "affine_ldl_sha256": "3657b0ce38c1044d912348eceed1fa467026dc2870b1c0fcdf6737128d4b8b15",
+      "cap": 18,
+      "complete_leaves": 0,
+      "coordinate_order": "canonical Cartan coordinates",
+      "dimension": 56,
+      "enumeration": "affine CVP x=residue+modulus*y; centered integer y search",
+      "found": false,
+      "free_coordinates": 20,
+      "gram_sha256": "9608fd7ce190259ba86afdb8561525dc698570533aaac5b92eefc382d5477f8b",
+      "odd_repeated_coordinates": 10,
+      "scale": 21,
+      "second_moment": [
+        [
+          28,
+          35,
+          42,
+          28,
+          14,
+          21
+        ],
+        [
+          35,
+          70,
+          84,
+          56,
+          28,
+          42
+        ],
+        [
+          42,
+          84,
+          126,
+          84,
+          42,
+          63
+        ],
+        [
+          28,
+          56,
+          84,
+          70,
+          35,
+          42
+        ],
+        [
+          14,
+          28,
+          42,
+          35,
+          28,
+          21
+        ],
+        [
+          21,
+          42,
+          63,
+          42,
+          21,
+          42
+        ]
+      ],
+      "triple_order": "lexicographic combinations_with_replacement",
+      "triples": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          2,
+          5
+        ],
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          5
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          4
+        ],
+        [
+          3,
+          3,
+          5
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          5
+        ],
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          5
+        ],
+        [
+          5,
+          5,
+          5
+        ]
+      ],
+      "visited_interval_integers": 10011,
+      "witness": null,
+      "witness_norm": null
+    }
+  },
+  "submitted_scope_full_ADE_census": {
+    "classified": [
+      {
+        "components": {
+          "A2": 2,
+          "E8": 5
+        },
+        "h": 9,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "E6": 2,
+          "E8": 4
+        },
+        "h": 9,
+        "status": "EXCLUDED_BY_E6_TENSOR"
+      },
+      {
+        "components": {
+          "A20": 1,
+          "E8": 3
+        },
+        "h": 21,
+        "status": "SURVIVES_SUBMITTED_SCREEN"
+      },
+      {
+        "components": {
+          "A6": 1,
+          "E6": 1,
+          "E8": 4
+        },
+        "h": 21,
+        "status": "EXCLUDED_BY_A6_TENSOR"
+      },
+      {
+        "components": {
+          "A6": 2,
+          "E8": 4
+        },
+        "h": 49,
+        "status": "EXCLUDED_BY_A6_TENSOR"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "E6": 3,
+          "E8": 3
+        },
+        "h": 81,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 3,
+          "E6": 1,
+          "E8": 4
+        },
+        "h": 81,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A20": 1,
+          "E6": 1,
+          "E8": 2
+        },
+        "h": 189,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A6": 1,
+          "E6": 2,
+          "E8": 3
+        },
+        "h": 189,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 3,
+          "A6": 1,
+          "E8": 4
+        },
+        "h": 189,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A20": 1,
+          "A6": 1,
+          "E8": 2
+        },
+        "h": 441,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A6": 2,
+          "E6": 1,
+          "E8": 3
+        },
+        "h": 441,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 2,
+          "E6": 4,
+          "E8": 2
+        },
+        "h": 729,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 4,
+          "E6": 2,
+          "E8": 3
+        },
+        "h": 729,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "A2": 6,
+          "E8": 4
+        },
+        "h": 729,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      },
+      {
+        "components": {
+          "E6": 6,
+          "E8": 1
+        },
+        "h": 729,
+        "status": "EXCLUDED_BY_E6_TENSOR"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A6": 3,
+          "E8": 3
+        },
+        "h": 1029,
+        "status": "EXCLUDED_BY_PRIOR_VERIFIED_A2"
+      }
+    ],
+    "counts": {
+      "1029": 1,
+      "189": 3,
+      "21": 2,
+      "441": 2,
+      "49": 1,
+      "729": 4,
+      "81": 2,
+      "9": 2
+    },
+    "decompositions": {
+      "1029": [
+        {
+          "A2": 1,
+          "A6": 3,
+          "E8": 3
+        }
+      ],
+      "189": [
+        {
+          "A2": 1,
+          "A20": 1,
+          "E6": 1,
+          "E8": 2
+        },
+        {
+          "A2": 1,
+          "A6": 1,
+          "E6": 2,
+          "E8": 3
+        },
+        {
+          "A2": 3,
+          "A6": 1,
+          "E8": 4
+        }
+      ],
+      "21": [
+        {
+          "A20": 1,
+          "E8": 3
+        },
+        {
+          "A6": 1,
+          "E6": 1,
+          "E8": 4
+        }
+      ],
+      "441": [
+        {
+          "A2": 1,
+          "A20": 1,
+          "A6": 1,
+          "E8": 2
+        },
+        {
+          "A2": 1,
+          "A6": 2,
+          "E6": 1,
+          "E8": 3
+        }
+      ],
+      "49": [
+        {
+          "A6": 2,
+          "E8": 4
+        }
+      ],
+      "729": [
+        {
+          "A2": 2,
+          "E6": 4,
+          "E8": 2
+        },
+        {
+          "A2": 4,
+          "E6": 2,
+          "E8": 3
+        },
+        {
+          "A2": 6,
+          "E8": 4
+        },
+        {
+          "E6": 6,
+          "E8": 1
+        }
+      ],
+      "81": [
+        {
+          "A2": 1,
+          "E6": 3,
+          "E8": 3
+        },
+        {
+          "A2": 3,
+          "E6": 1,
+          "E8": 4
+        }
+      ],
+      "9": [
+        {
+          "A2": 2,
+          "E8": 5
+        },
+        {
+          "E6": 2,
+          "E8": 4
+        }
+      ]
+    },
+    "h_values": [
+      9,
+      21,
+      49,
+      81,
+      189,
+      441,
+      729,
+      1029
+    ],
+    "survivors": [
+      {
+        "components": {
+          "A20": 1,
+          "E8": 3
+        },
+        "h": 21,
+        "status": "SURVIVES_SUBMITTED_SCREEN"
+      }
+    ],
+    "total_cases": 17
+  },
+  "tensor_floors": {
+    "A6": {
+      "floor": 66,
+      "global_trace": 60,
+      "orthogonal_summand": "REFUTED",
+      "parity_ball_empty_through": 60,
+      "zero_sum_multiple": 6
+    },
+    "E6": {
+      "floor": 24,
+      "orthogonal_summand": "REFUTED",
+      "parity_ball_empty_through": 18,
+      "rank_complement_cap": 22,
+      "zero_sum_multiple": 6
+    }
+  },
+  "verifier": {
+    "cartan_permutation_invariance_controls": {
+      "A6": [
+        0,
+        2,
+        4,
+        5,
+        3,
+        1
+      ],
+      "E6": [
+        2,
+        5,
+        0,
+        4,
+        1,
+        3
+      ]
+    },
+    "implementation": "independent standard-library checker",
+    "imports_submitted_code": false,
+    "search_model": "affine CVP in unrestricted integer y coordinates",
+    "triple_order": "lexicographic"
+  }
+}

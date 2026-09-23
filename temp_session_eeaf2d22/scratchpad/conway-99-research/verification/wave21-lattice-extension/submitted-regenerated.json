@@ -1,0 +1,284 @@
+{
+  "claim_label": "UNKNOWN",
+  "conditional_implication": "if h>=21, then n3=705 is impossible; the audited data do not determine h",
+  "endpoint": {
+    "delta": 12,
+    "n3": 705,
+    "q_sum": 470,
+    "trace_A": 1008,
+    "trace_B": 48
+  },
+  "endpoint_with_even_unimodular_obstruction": {
+    "delta": 12,
+    "determinant_cap": 45,
+    "even_lattice_determinant_floor": 3,
+    "options": [
+      {
+        "det_b": 5,
+        "det_q": 5,
+        "h": 1
+      },
+      {
+        "det_b": 9,
+        "det_q": 9,
+        "h": 1
+      },
+      {
+        "det_b": 13,
+        "det_q": 13,
+        "h": 1
+      },
+      {
+        "det_b": 17,
+        "det_q": 17,
+        "h": 1
+      },
+      {
+        "det_b": 21,
+        "det_q": 21,
+        "h": 1
+      },
+      {
+        "det_b": 25,
+        "det_q": 25,
+        "h": 1
+      },
+      {
+        "det_b": 29,
+        "det_q": 29,
+        "h": 1
+      },
+      {
+        "det_b": 33,
+        "det_q": 33,
+        "h": 1
+      },
+      {
+        "det_b": 37,
+        "det_q": 37,
+        "h": 1
+      },
+      {
+        "det_b": 41,
+        "det_q": 41,
+        "h": 1
+      },
+      {
+        "det_b": 45,
+        "det_q": 45,
+        "h": 1
+      },
+      {
+        "det_b": 9,
+        "det_q": 3,
+        "h": 3
+      },
+      {
+        "det_b": 21,
+        "det_q": 7,
+        "h": 3
+      },
+      {
+        "det_b": 33,
+        "det_q": 11,
+        "h": 3
+      },
+      {
+        "det_b": 45,
+        "det_q": 15,
+        "h": 3
+      },
+      {
+        "det_b": 21,
+        "det_q": 3,
+        "h": 7
+      },
+      {
+        "det_b": 45,
+        "det_q": 5,
+        "h": 9
+      }
+    ],
+    "possible_h": [
+      1,
+      3,
+      7,
+      9
+    ],
+    "trace_b": 48
+  },
+  "endpoint_without_even_unimodular_obstruction": {
+    "delta": 12,
+    "determinant_cap": 45,
+    "even_lattice_determinant_floor": 1,
+    "options": [
+      {
+        "det_b": 1,
+        "det_q": 1,
+        "h": 1
+      },
+      {
+        "det_b": 5,
+        "det_q": 5,
+        "h": 1
+      },
+      {
+        "det_b": 9,
+        "det_q": 9,
+        "h": 1
+      },
+      {
+        "det_b": 13,
+        "det_q": 13,
+        "h": 1
+      },
+      {
+        "det_b": 17,
+        "det_q": 17,
+        "h": 1
+      },
+      {
+        "det_b": 21,
+        "det_q": 21,
+        "h": 1
+      },
+      {
+        "det_b": 25,
+        "det_q": 25,
+        "h": 1
+      },
+      {
+        "det_b": 29,
+        "det_q": 29,
+        "h": 1
+      },
+      {
+        "det_b": 33,
+        "det_q": 33,
+        "h": 1
+      },
+      {
+        "det_b": 37,
+        "det_q": 37,
+        "h": 1
+      },
+      {
+        "det_b": 41,
+        "det_q": 41,
+        "h": 1
+      },
+      {
+        "det_b": 45,
+        "det_q": 45,
+        "h": 1
+      },
+      {
+        "det_b": 9,
+        "det_q": 3,
+        "h": 3
+      },
+      {
+        "det_b": 21,
+        "det_q": 7,
+        "h": 3
+      },
+      {
+        "det_b": 33,
+        "det_q": 11,
+        "h": 3
+      },
+      {
+        "det_b": 45,
+        "det_q": 15,
+        "h": 3
+      },
+      {
+        "det_b": 21,
+        "det_q": 3,
+        "h": 7
+      },
+      {
+        "det_b": 9,
+        "det_q": 1,
+        "h": 9
+      },
+      {
+        "det_b": 45,
+        "det_q": 5,
+        "h": 9
+      },
+      {
+        "det_b": 21,
+        "det_q": 1,
+        "h": 21
+      }
+    ],
+    "possible_h": [
+      1,
+      3,
+      7,
+      9,
+      21
+    ],
+    "trace_b": 48
+  },
+  "harmonic_cubic": {
+    "cauchy_allowed_q": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "cauchy_rejected_q": [
+      11,
+      12
+    ],
+    "entries": {
+      "-1": 1,
+      "-2": -136,
+      "0": 0,
+      "1": -1,
+      "4": 1376
+    },
+    "kernel": "23*M_hadamard_3-24*M",
+    "row_sum": "138*(q-2)",
+    "total_sum": "92*delta=1104"
+  },
+  "projection_lattice": {
+    "B_mod_2": "identity",
+    "Q": "even positive-definite integral rank-44 Gram matrix",
+    "det_B_mod_4": 1,
+    "determinant_identity": "det(B)=h*det(Q)",
+    "h_definition": "[L:21L*]=21^44/det(L)",
+    "rank": 44
+  },
+  "scope": "stronger-than-705 conditional lattice obstruction",
+  "strongest_conclusion": "No unconditional improvement over n3>=705 was obtained.",
+  "traceless_contraction": {
+    "available_trace": 1008,
+    "local_floors": {
+      "0": 12,
+      "1": 4,
+      "10": 148,
+      "11": 188,
+      "12": 232,
+      "2": 4,
+      "3": 4,
+      "4": 12,
+      "5": 24,
+      "6": 40,
+      "7": 60,
+      "8": 84,
+      "9": 116
+    },
+    "minimum_total_at_q_sum_470": 924,
+    "result": "NO_CONTRADICTION"
+  }
+}

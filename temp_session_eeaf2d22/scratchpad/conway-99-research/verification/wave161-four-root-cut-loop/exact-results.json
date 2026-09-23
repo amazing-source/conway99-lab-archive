@@ -1,0 +1,353 @@
+{
+  "claim_label": "VERIFIED",
+  "format": "wave161-four-root-cut-loop-independent-v1",
+  "four_root_feedback": {
+    "independently_replayed_negative_certificates": [
+      {
+        "direction_sha256": "7d4599bb33266fa391fb3d7e84001bb5d93a3daf722820e4bd2c295e10204b9e",
+        "flag_count": 155,
+        "quadratic_value_scaled": "-27011041286703517116394938226429083495309284913470656030516224",
+        "root_embedding_count": 1014552,
+        "root_mask": 3,
+        "strictly_negative": true,
+        "support_size": 49
+      },
+      {
+        "direction_sha256": "b502748ff85828ee0b366ca5c7b66a0eee0f03cfb2e743aed590512a8a60e68f",
+        "flag_count": 178,
+        "quadratic_value_scaled": "-88438068438190522607991067007701768100527095926734078733792256",
+        "root_embedding_count": 1014552,
+        "root_mask": 12,
+        "strictly_negative": true,
+        "support_size": 50
+      }
+    ],
+    "remaining_blocks": [
+      0,
+      1,
+      7,
+      11,
+      13,
+      15,
+      30
+    ],
+    "remaining_blocks_proved_psd": false,
+    "stored_exact_negative_certificate_blocks": [
+      3,
+      12
+    ],
+    "witness_satisfies_all_four_root_blocks": false
+  },
+  "freeze": {
+    "preinspection": {
+      "all_entries_match": true,
+      "entries": 7,
+      "path": "verification/wave161-four-root-cut-loop/preinspection-freeze.sha256",
+      "sha256": "e9e68a4f76f5f674defef31e93f1f1f9feb0390375bcf40f84d21b8100884038"
+    },
+    "wave152_preservation": {
+      "after_sha256": "d235e6ba2ed2297f10cb3d5cedcca06c8bebfa5941ada38ee5e096ab98a24621",
+      "before_sha256": "d235e6ba2ed2297f10cb3d5cedcca06c8bebfa5941ada38ee5e096ab98a24621",
+      "current_files_match_frozen_hashes": true,
+      "entries": 42,
+      "inventories_byte_identical": true,
+      "wave152_package_manifest_matches_expected": true,
+      "wave152_package_manifest_sha256": "1fe84e8e8e52b091293a30e1b09c6772f092123803e1e62362726c6c73d1f38d"
+    },
+    "wave159_package": {
+      "all_entries_match": true,
+      "entries": 16,
+      "path": "attempts/wave159-four-root-cut-loop/package-manifest.sha256",
+      "sha256": "44b76ca9538f5a3ed9d9a1f44ef29373f0cb6e422b0886063153bdff3545ff8b"
+    }
+  },
+  "fresh_cuts": [
+    {
+      "coefficients_reconstructed_exactly": true,
+      "cut_sha256": "93c3dcebda9332946cf3391812a4d1f466f7cacc6da4246bc9d625a66879f113",
+      "direction_nonzeros": 53,
+      "flag_count": 155,
+      "order7_nonzeros": 155,
+      "order8_nonzeros": 842,
+      "primitive_divisor": 33264,
+      "root_embedding_count": 1014552,
+      "root_mask": 3,
+      "source_value": "-37637813778390780622112315870840472502091307674748763680/279086872388357069729719741111383736681",
+      "strictly_negative_on_thirteen_cut_witness": true
+    },
+    {
+      "coefficients_reconstructed_exactly": true,
+      "cut_sha256": "8fc952768230bd900febf656bddfa9dd6b4d4c89b5190e0b74e01e55639f525b",
+      "direction_nonzeros": 49,
+      "flag_count": 178,
+      "order7_nonzeros": 79,
+      "order8_nonzeros": 573,
+      "primitive_divisor": 133056,
+      "root_embedding_count": 1014552,
+      "root_mask": 12,
+      "source_value": "-70415093555974414436861545237003852145971220671420378908/3628129341048641906486356634447988576853",
+      "strictly_negative_on_thirteen_cut_witness": true
+    }
+  ],
+  "hostile_checks": {
+    "all_cut_values_recomputed": true,
+    "all_exact_rows_recomputed": true,
+    "fresh_cut_canonical_hashes_rebuilt": true,
+    "fresh_cut_coefficients_rebuilt": true,
+    "negative_certificate_flag_indices_replayed": true,
+    "package_manifest_exact_bytes": true,
+    "selected_modular_rows_reduced_independently": true,
+    "wave152_before_after_byte_identity": true
+  },
+  "limitations": [
+    "The exact nonnegative vector is a count pseudowitness, not a graph.",
+    "Finite relaxation feasibility does not establish endpoint graph feasibility.",
+    "The seven blocks without stored negative certificates are not proved PSD.",
+    "Numerical eigenvalues and solver statuses are not certificates.",
+    "No graph construction, endpoint exclusion, strict bound, or Conway-99 result follows."
+  ],
+  "metadata_audit": {
+    "active_cut_hashes": [
+      "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240",
+      "8fc952768230bd900febf656bddfa9dd6b4d4c89b5190e0b74e01e55639f525b",
+      "93c3dcebda9332946cf3391812a4d1f466f7cacc6da4246bc9d625a66879f113"
+    ],
+    "actual_retained_cut_count": 15,
+    "inherited_format": "wave152-exact-endpoint-witness-after-two-cuts-v1",
+    "inherited_scope": "Exact rational feasibility of the Wave150 zero-covariance endpoint system after both Wave152 four-root cuts, with the root-mask-12 inequality active and h11=16632.",
+    "stale_after_two_cuts_metadata_present": true
+  },
+  "resource_report": {
+    "elapsed_seconds": 21.698527336120605,
+    "floor_respected": true,
+    "format": "wave161-resource-report-v1",
+    "memory_floor_percent": 15.0,
+    "minimum_free_physical_memory_percent": 16.75781965829074,
+    "samples": [
+      {
+        "available_physical_gib": 10.72768783569336,
+        "free_physical_memory_percent": 16.985556171765214,
+        "label": "start",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.720195770263672,
+        "free_physical_memory_percent": 16.97369369961394,
+        "label": "freeze_verified",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.920337677001953,
+        "free_physical_memory_percent": 17.290585992836373,
+        "label": "classes_and_lower_counts",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.858535766601562,
+        "free_physical_memory_percent": 17.192732677498885,
+        "label": "root_3_order8_class_0",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.844947814941406,
+        "free_physical_memory_percent": 17.171218356825335,
+        "label": "root_3_order8_class_256",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.583854675292969,
+        "free_physical_memory_percent": 16.75781965829074,
+        "label": "root_3_order8_class_512",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 11.01235580444336,
+        "free_physical_memory_percent": 17.436281793871547,
+        "label": "root_3_order8_class_768",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.882282257080078,
+        "free_physical_memory_percent": 17.230331399057793,
+        "label": "root_3_complete",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.924076080322266,
+        "free_physical_memory_percent": 17.29650514900147,
+        "label": "root_12_order8_class_0",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.76654052734375,
+        "free_physical_memory_percent": 17.04707311619533,
+        "label": "root_12_order8_class_256",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 11.031482696533203,
+        "free_physical_memory_percent": 17.466566129597872,
+        "label": "root_12_order8_class_512",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.948921203613281,
+        "free_physical_memory_percent": 17.335843377678284,
+        "label": "root_12_order8_class_768",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.799449920654297,
+        "free_physical_memory_percent": 17.099179810314,
+        "label": "root_12_complete",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.961040496826172,
+        "free_physical_memory_percent": 17.355032315572682,
+        "label": "after_fifteen_complete",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 10.964855194091797,
+        "free_physical_memory_percent": 17.36107227084319,
+        "label": "complete",
+        "total_physical_gib": 63.15770721435547
+      }
+    ]
+  },
+  "scope": "Exact rational feasibility of the finite fifteen-cut pair-root-zero-face count relaxation and two exact separating directions for that pseudowitness",
+  "separation": {
+    "prior_cleanroom_verifier_imported": true,
+    "prior_cleanroom_verifier_sha256": "c8aecd00c7da53fa929b53503bf437c0d0714c79a2e85a451168ac2e85b75c88",
+    "solver_status_used_as_certificate": false,
+    "wave152_discovery_python_executed": false,
+    "wave152_discovery_python_imported": false,
+    "wave159_discovery_python_executed": false,
+    "wave159_discovery_python_imported": false
+  },
+  "verdict": {
+    "Conway_99": "UNKNOWN",
+    "displayed_root_3_and_12_directions": "EXACTLY_NEGATIVE",
+    "endpoint_n3_4158": "UNKNOWN",
+    "fifteen_cut_finite_relaxation": "EXACT_RATIONAL_FEASIBLE",
+    "full_four_root_covariance_feasibility": "REFUTED_FOR_THIS_PSEUDOWITNESS",
+    "graph_constructed": false,
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  },
+  "witness": {
+    "active_cut_equalities": 3,
+    "active_cut_hashes": [
+      "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240",
+      "93c3dcebda9332946cf3391812a4d1f466f7cacc6da4246bc9d625a66879f113",
+      "8fc952768230bd900febf656bddfa9dd6b4d4c89b5190e0b74e01e55639f525b"
+    ],
+    "all_equalities": 10313,
+    "base_nontrivial_equalities": 10310,
+    "claim_label": "VERIFIED",
+    "deletion_equalities": 208,
+    "denominator_statistics": {
+      "distinct": 16,
+      "integer_coordinates": 241,
+      "maximum": 33121404273704148365737112224522932266944
+    },
+    "exact_cut_values": {
+      "3162afd8c660f900ab5bd3d91a0f78bf50e2cfb12363b7a3fc2f39c4aad23723": {
+        "active": false,
+        "root_mask": 3,
+        "value": "1174461696995154450461200250925969152575231462064736360/8483966258633234724830202926363456011"
+      },
+      "38f04749daca036a2a5475154fed6f939e6ce4623d9a4e554e9a6e1aaf592295": {
+        "active": false,
+        "root_mask": 13,
+        "value": "27089458167533908048385152856921261884206584737850738309762553808823899670390477387568893919250347953709/16967932517266469449660405852726912022"
+      },
+      "41f1675d82d5e044e05bdc01d049889b6697ec6e08ac8ccafa5b7be43d88fa36": {
+        "active": false,
+        "root_mask": 12,
+        "value": "2802026409776089118006098311616864968875446849983679501282555540039775687991030307599022321589643441814227/67871730069065877798641623410907648088"
+      },
+      "5f2b60e66d1d38cb00f2ab34bc76eb5be873b360c1d8c5fbc909b10dd5784d62": {
+        "active": false,
+        "root_mask": 3,
+        "value": "2322532549647399502376541542392283404445515986191456313/8483966258633234724830202926363456011"
+      },
+      "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240": {
+        "active": true,
+        "root_mask": 12,
+        "value": "0"
+      },
+      "8fc952768230bd900febf656bddfa9dd6b4d4c89b5190e0b74e01e55639f525b": {
+        "active": true,
+        "root_mask": 12,
+        "value": "0"
+      },
+      "918de80c615922d33de273c5f5e81e18f0ff777f85b7f5badcb9dfa809f3604c": {
+        "active": false,
+        "root_mask": 12,
+        "value": "216669443365095299327109168929210825051322575335745130945437081722643752740920931057404198669230136271279/271486920276263511194566493643630592352"
+      },
+      "93c3dcebda9332946cf3391812a4d1f466f7cacc6da4246bc9d625a66879f113": {
+        "active": true,
+        "root_mask": 3,
+        "value": "0"
+      },
+      "ac9fb115cfbe68c4920658020470f82096f6e8043e5315a453fe78ddbc3ecd54": {
+        "active": false,
+        "root_mask": 13,
+        "value": "25954754924026472204065160782492167758567975574431848272/517521941776627318214642378508170816671"
+      },
+      "af86dcfacf59368e773b4818a89c606c2f76bc07661b5eba4f89fb27820ffd53": {
+        "active": false,
+        "root_mask": 12,
+        "value": "497343087335248185551298082722423004865388237/16560702136852074182868556112261466133472"
+      },
+      "d6e6a2437fa028e5bb8fdbe6603c16742da2b2b0b22f0730ecdea61a8ef20835": {
+        "active": false,
+        "root_mask": 12,
+        "value": "515911312330855975882097646015274824838622722541699229/38783845753751930170652356234804370336"
+      },
+      "e54575aa6912984359c16ed86861758259487a11be2dc45eac990756071b1452": {
+        "active": false,
+        "root_mask": 3,
+        "value": "507474885560640196532942786471359844082900557694270245235/16967932517266469449660405852726912022"
+      },
+      "ee2a2a08d011a1826a3c8645d801b0e0d2d4ffd3b26a0dcf39f84e43e502f25b": {
+        "active": false,
+        "root_mask": 12,
+        "value": "8373364584981479908517028942628391550102273/271486920276263511194566493643630592352"
+      },
+      "f7ee51fec3cef312ec8a56d79b0684765425339d4298be01a042ba91695d8430": {
+        "active": false,
+        "root_mask": 3,
+        "value": "3330618600722284999919017859271360651677339470677104361/8483966258633234724830202926363456011"
+      },
+      "f90dd570fec476b9aa3fe0b5b4c4a8a0d6bb9b3e04fe93476a463e1dc9213f62": {
+        "active": false,
+        "root_mask": 13,
+        "value": "20838126199442359706218318087596227119784306434610848215/517521941776627318214642378508170816671"
+      }
+    },
+    "marked_equalities": 5384,
+    "modular_rank": {
+      "full_column_rank": true,
+      "modulus": 1000003,
+      "rank": 887,
+      "rows_scanned": 10274,
+      "variables": 887
+    },
+    "nonnegative_coordinates": true,
+    "pair_root_upper_entries": {
+      "ordered_edge": 2211,
+      "ordered_nonedge": 3828
+    },
+    "restricted_equalities": 10274,
+    "scope": "exact feasibility of the retained finite linear relaxation",
+    "selected_row_indices_exact_match": true,
+    "wave44_equalities": 170,
+    "x7_support": 204,
+    "x7_total": 14887031544,
+    "x8_support": 887,
+    "x8_total": 171200862756
+  }
+}

@@ -1,0 +1,48 @@
+role: construction
+date_utc: 2026-07-28T08:35:17Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: DERIVED
+scope: >-
+  Exact rational rank and bounded rational-feasibility row generation for
+  the corrected Wave134 full-problem Z4 symmetrized enumerator, without
+  endpoint, automorphism, rooted-motif, or n3 assumptions.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: attempts/wave134-z4-symmetrized-enumerator/package-manifest.sha256
+    sha256: 581678d37091754f4bf1f197223a120d82f3051020a45b601e84889dfdad81e9
+  - path: attempts/wave134-z4-symmetrized-enumerator/exact-results.json
+    sha256: 8d3e39c4360341f7d3d6b8ac496853c0ae19e546ab8655cc6939b36edbddb1a2
+  - path: attempts/wave134-z4-symmetrized-enumerator/exact_check.py
+    sha256: ba72c95440c6801218a98322a35ee120573cc7ad3403d2ab1f6ef8482b42f354
+  - path: verification/wave135-z4-exact-face/preseal-results.json
+    sha256: 7f0383c08257fb0f7a8960aae0b503f679bc14d7baaa5782535f80bbc14750b5
+method: >-
+  Build the corrected 161 by 1119 integer forbidden-character matrix;
+  compute exact FLINT rational RREF and primitive left-kernel relations;
+  exhibit independent modular row bases; add normalization, A0, and the
+  independently derived torsion-shell equality; shift by all forced primal
+  lower bounds; then run bounded GMP-rational cutting planes with exact
+  replay of all omitted rows after every solve.
+command: >-
+  python -B attempts/wave135-z4-exact-face/face_rank.py &&
+  python -B attempts/wave135-z4-exact-face/row_generate.py
+  --wall-seconds 300 --batch-size 32 &&
+  python -B attempts/wave135-z4-exact-face/exact_check.py &&
+  python -B -m unittest discover -s
+  attempts/wave135-z4-exact-face -p "test_*.py" -v
+outputs:
+  - path: attempts/wave135-z4-exact-face/face-rank.json
+    sha256: 55cf42ef789b1a3d4c57a9018072e09e49a0b27d766738d8f820e253a0c99af2
+  - path: attempts/wave135-z4-exact-face/row-generation.json
+    sha256: 66d79880bd55aebb138e9d7daad0c16cfc33f5e6c308ce62c6e524d023e1b3b9
+  - path: attempts/wave135-z4-exact-face/row-generation-unshifted.json
+    sha256: 4a5de2e24c43cd8ea3044e5195e4360a18f224a8eb0fa6fdf9b278b14a33b87e
+  - path: attempts/wave135-z4-exact-face/search-status.json
+    sha256: 4b1e9603edf933edae664346bb5271e59964a0879c358ad7f2582bd37e1321f1
+limitations:
+  - Rational feasibility remains UNKNOWN_WALL; no exact primal or Farkas certificate was found.
+  - The two bounded traces are not evidence of infeasibility.
+  - Integral enumerator feasibility and Z4-code realizability remain UNKNOWN.
+  - No adjacency matrix, graph, or Conway-99 resolution is produced.
+  - Novelty remains UNKNOWN.

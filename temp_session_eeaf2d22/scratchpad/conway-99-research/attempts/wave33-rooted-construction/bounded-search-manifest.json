@@ -1,0 +1,90 @@
+{
+  "base_commit": "b2595baa40d50e9c259051751fe27090bee6a449",
+  "claim_label": "UNKNOWN",
+  "complete_graph_extension_domain": {
+    "complete_for": "the labeled support-to-srg(99,14,1,2) graph extension",
+    "complete_for_full_rooted_n3_708_endpoint": false,
+    "graph_automorphism_assumed": false,
+    "status": "NOT_DECIDED",
+    "unknown_variables": "a symmetric binary 85 by 85 D with zero diagonal",
+    "required_equations": [
+      "D 1 = 14 1 - B^T 1",
+      "A_S B + B D = -B + 2 J_(14x85)",
+      "B^T B + D^2 = 12 I_85 - D + 2 J_85"
+    ],
+    "unsat_certificate": null,
+    "witness": null
+  },
+  "reproducible_milp_run": {
+    "active_graph_phase": {
+      "encoded_if_reached": {
+        "active_edge_binary_variables": 2415,
+        "active_degree_equalities": 70,
+        "active_support_equalities": 980,
+        "active_zero_equalities_with_requested_flag": 1050,
+        "completeness": "all active graphs for the phase-1 assignment satisfying the named linear equalities"
+      },
+      "entered": false,
+      "reason": "phase 1 returned no primal point before its time limit"
+    },
+    "assignment_phase": {
+      "binary_variables": 4900,
+      "block_use_equalities": 70,
+      "completeness_of_encoding": "all 70! bijections of the frozen 70-block design to the 70 labeled active vertices",
+      "encoded_graph_automorphism": false,
+      "objective": "identically zero feasibility objective",
+      "primal_point_returned": false,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "solver_mip_gap": null,
+      "solver_mip_node_count": null,
+      "solver_objective_value": null,
+      "solver_status": 1,
+      "support_group_point_equalities": 210,
+      "vertex_assignment_equalities": 70
+    },
+    "command": ".\\.venv\\Scripts\\python.exe attempts/wave33-rooted-construction/search_relaxation.py --output attempts/wave33-rooted-construction/bounded-relaxation-certificate.json --time-limit 25 --seed 3301 --enforce-active-zero",
+    "engine": "SciPy 1.18.0 scipy.optimize.milp with bundled HiGHS",
+    "exit_code": 1,
+    "interpretation": "INCOMPLETE_NONHIT_WITH_NO_MATHEMATICAL_STATUS",
+    "output_created": false,
+    "time_limit_seconds_per_phase": 25
+  },
+  "restrictions_of_milp_domain": [
+    "The active-to-Z neighborhoods are restricted to one explicit simple 2-(15,3,2) design; this is not without loss of generality.",
+    "Phase 1 asks only for support-group balance within that design.",
+    "Even if phase 2 were reached, the active-active quadratic SRG block would remain omitted."
+  ],
+  "positive_partial_object": {
+    "certificate": "partial-design-certificate.json",
+    "classification": "EXACT_HOSTILE_PARTIAL_OBJECT_NOT_A_GRAPH",
+    "discovery_command": "python attempts/wave33-rooted-construction/search_partial_design.py --output attempts/wave33-rooted-construction/partial-design-certificate.json --restarts 9 --steps 200000 --seed 3301",
+    "discovery_complete": false,
+    "exact_checks": {
+      "active_degree_to_Z": 3,
+      "active_vertices": 70,
+      "active_zero_edges": 210,
+      "support_group_balance_exact_groups": 9,
+      "support_group_balance_squared_defect": 10,
+      "support_group_balance_violations": 10,
+      "zero_degree_from_active": 14,
+      "zero_vertices": 15,
+      "zero_zero_pairs_with_exactly_two_common_active_neighbors": 105
+    },
+    "missing_layers": [
+      "ten support-group point equalities already fail",
+      "no active-active edge set is supplied",
+      "the active-active quadratic SRG block is absent",
+      "the projector/lattice/tensor/Schur rooted endpoint layer is absent"
+    ],
+    "replay_command": "python attempts/wave33-rooted-construction/exact_check.py --partial-certificate attempts/wave33-rooted-construction/partial-design-certificate.json --output attempts/wave33-rooted-construction/exact-results.json"
+  },
+  "search_status_wall": {
+    "complete_domain_unsat_certificate": "NONE",
+    "complete_graph_extension": "UNKNOWN",
+    "full_rooted_endpoint": "UNKNOWN",
+    "milp_timeout_is_negative_evidence": false,
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,40 @@
+{
+  "ambient_gauss_sum": "-562949953421312",
+  "checks": {
+    "ambient_gauss_sum_is_minus_2pow49": true,
+    "ordinary_macwilliams_ratio": true,
+    "target_product_for_either_branch": true,
+    "wave131_witness_violates_arf_magnitude": true
+  },
+  "claim_label": "DERIVED",
+  "dimensions": {
+    "ambient_even": 98,
+    "even_dual": 44,
+    "image": 54
+  },
+  "forced_branches": {
+    "even_dual_gauss_sum": [
+      "4194304",
+      "-4194304"
+    ],
+    "image_gauss_sum": [
+      "-134217728",
+      "134217728"
+    ],
+    "sign_coupling": "G_E=-G_R/32"
+  },
+  "format": "wave136-arf-gauss-diagnostic-v1",
+  "scope": "Exact Arf/Gauss branch diagnostic on the sealed Wave131 formal rational witness.",
+  "status_wall": {
+    "binary_code": "NOT_CONSTRUCTED_OR_EXCLUDED",
+    "conway_99": "UNKNOWN",
+    "graph": "UNKNOWN",
+    "wave131_formal_witness": "REFUTED_BY_ARF_MAGNITUDE"
+  },
+  "witness": "attempts/wave131-binary-lcd-enumerator/rational-witness.json",
+  "witness_values": {
+    "G_E": "-7717654218690058855789679355654298504972000/452929323301482718880047428141",
+    "G_R": "246964934998081883385269739380937552159104000/452929323301482718880047428141",
+    "absolute_G_R_over_2pow27": "241176694334064339243427479864196828280375/59366352263771942929045576501297152"
+  }
+}

@@ -1,0 +1,76 @@
+role: verifier
+date_utc: "2026-07-27T20:54:28Z"
+git_commit: "4bb1989e9e286b2ec753a855db58ad584e31f63a"
+claim_label: VERIFIED
+scope: >-
+  Conditional independent verification of the cited 2-bootstrap closure
+  classification, target parameter arithmetic, n3/P/H/R/S identities and
+  inequalities, 64 four-tip graphs, 23 endpoint masks, 35 local profiles,
+  formal D4 label-orbits, and wave-size histograms for a hypothetical
+  srg(99,14,1,2).
+inputs:
+  - path: verification/wave56-percolation-closure/input-freeze.sha256
+    sha256: 7c131661e8138f6c4e8ff731a17f9bfd138581fc56cb28f3379339e2ff9c4581
+  - path: verification/wave56-percolation-closure/discovery-freeze.sha256
+    sha256: 439530db701e562323e8680bf966d897e31aa9b4654682472b3f85af99eba909
+  - path: attempts/wave56-percolation-closure/exact-results.json
+    sha256: 4326daa7222fe3de30fec122238603094285dbae7a48ed41252cceb62c9ccc5b
+  - path: "https://ajc.maths.uq.edu.au/pdf/93/ajc_v93_p060.pdf"
+    sha256: 3bcbb35f6bac46bf943970fa53918fa2b126684375a325efff308371e785fb0f
+method: >-
+  Freeze a clean-room protocol and upstream hashes before discovery
+  inspection; read the primary source; independently reconstruct the SRG
+  parameter/eigenvalue census, rooted graph, small control graphs, all 64
+  tip-edge masks, every allowed endpoint neighborhood mask, the exact
+  pair-deficit multicover, and all formal D4 relabelings; prove the incidence
+  identities by explicit multiplicity arguments; run hostile factor,
+  visible-cap, degree-cap, symmetry, and status-boundary tests; then compare
+  exact lists and orbit partitions with the discovery artifact.
+command: |-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave56-percolation-closure -p "test_*.py" -v
+  .\.venv\Scripts\python.exe -B verification\wave56-percolation-closure\independent_check.py --discovery attempts\wave56-percolation-closure\exact-results.json --verify-output verification\wave56-percolation-closure\independent-result.json
+  .\.venv\Scripts\python.exe -B attempts\wave56-percolation-closure\percolation_closure.py --verify attempts\wave56-percolation-closure\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave56-percolation-closure -p "test_*.py" -v
+outputs:
+  - path: verification/wave56-percolation-closure/protocol.md
+    sha256: b645d75d9e31e4b5dbe448f10886c1568c77ee57be8b12f5e9ac95a8866eb2c3
+  - path: verification/wave56-percolation-closure/independent_check.py
+    sha256: 06cdd1fff9919541d251381a3e30319e8c8e2e7ba6679c98dc44b437bb3cb964
+  - path: verification/wave56-percolation-closure/test_independent_check.py
+    sha256: d9973627daea64375f589b776d7cfe8f3cebca2517ea96840160f47a34a59498
+  - path: verification/wave56-percolation-closure/independent-result.json
+    sha256: 9948354c991cd3b557a6071f97658e879f2c93bf266e74ccef9fcfda1f238727
+  - path: verification/wave56-percolation-closure/audit.md
+    sha256: a9ce4177ac8aebc9fd896d8040153b40731c634c981a4bb4b4f7f65d43e80942
+  - path: verification/wave56-percolation-closure/test-results.txt
+    sha256: 2d8ed9274dc734f0b01d045f5bdddc374d1f19f20bc6f20170929e4d773d686f
+tests:
+  independent:
+    passed: 21
+    failed: 0
+  discovery_replay:
+    passed: 21
+    failed: 0
+  exact_discovery_comparisons:
+    passed: 23
+    failed: 0
+  memory:
+    required_free_percent: 15
+    observed_free_percent: 50.63
+result:
+  closure_dichotomy: VERIFIED
+  n3_plus_3P: VERIFIED
+  R_equals_18H: VERIFIED
+  sixH_le_P: VERIFIED
+  R_le_3P: VERIFIED
+  S_ge_n3: VERIFIED
+  all_tip_graphs_checked: 64
+  endpoint_masks: 23
+  endpoint_profiles: 35
+  formal_D4_orbits: 11
+  corrections: []
+limitations:
+  - The result is conditional on a hypothetical srg(99,14,1,2).
+  - The 35 profiles are local necessary multicovers, not graph completions.
+  - Formal D4 is label bookkeeping and not a target-graph automorphism.
+  - No graph, endpoint exclusion, strict n3 upper bound, or novelty claim follows.

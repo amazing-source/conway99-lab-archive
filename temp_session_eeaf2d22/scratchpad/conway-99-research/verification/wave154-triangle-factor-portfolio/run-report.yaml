@@ -1,0 +1,41 @@
+role: verifier
+date_utc: 2026-07-28T12:48:43Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification of the two displayed Wave151/Wave154 24x60 Q1
+  partial factors, their exact Gram blocks, the complete 384-element local
+  centralizer and Q1 orbit separation, and the joint exact-cover dimensions.
+inputs:
+  - path: attempts/wave149-terwilliger-triple/exact-results.json
+    sha256: 6fed4da32fbeefce54d1802136dc8c9a328f112bb0f295a86230f0e6175f5ee6
+  - path: attempts/wave151-triangle-root-factor/exact-results.json
+    sha256: 74bc48e2dd0434f3e36a183d724a1ae4a52d7ec9a1e109c92b14f64985da37a4
+  - path: attempts/wave154-triangle-factor-portfolio/exact-results.json
+    sha256: cca362e926901f626f50ed8a0868e94dd3da6cfdac1713be67a512156013a7fd
+  - path: attempts/wave154-triangle-factor-portfolio/package-manifest.sha256
+    sha256: 6107b22050b2f9b3a070cdb031482c67907f7a39f7fea3c08bb543572e8fb311
+method: >-
+  Freeze discovery hashes before inspection; independently generate K12-M,
+  derive the six target Gram blocks, reconstruct both binary incidence
+  matrices, derive and enumerate the entire centralizer, conjugate both Q1
+  permutations, enumerate all allowed triples and their group orbits, and run
+  hostile mutation controls. Discovery code was neither imported nor executed.
+command: >-
+  python verification/wave154-triangle-factor-portfolio/exact_check.py
+  --verify verification/wave154-triangle-factor-portfolio/exact-results.json
+  &&
+  python -m unittest discover -s
+  verification/wave154-triangle-factor-portfolio -p "test_*.py" -v
+outputs:
+  - path: verification/wave154-triangle-factor-portfolio/exact-results.json
+    sha256: 2a03b60924d1a31e0c67135fe84aeacd135c8ba4b6ab7d7a31cf1b91287e87af
+  - path: verification/wave154-triangle-factor-portfolio/exact_check.py
+    sha256: 05655614c0d0af7193d3c54cea0878487f9b8109047e6547526ea4c1b5b00082
+  - path: verification/wave154-triangle-factor-portfolio/test_exact_check.py
+    sha256: c7fedd5278352dba4c73ebc3a8eafce5d49e0d2db414fff4607c6330089af304
+limitations: >-
+  Solver-negative statuses have no checkable proof and remain diagnostics.
+  Two Q1 centralizer orbits do not exhaust all Q1 factors. The complete 36x60
+  C factor remains UNKNOWN, D remains NOT_REACHED, and no graph realization,
+  forced prism, Conway-99 resolution, or improved n3 bound is established.

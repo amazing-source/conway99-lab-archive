@@ -1,0 +1,578 @@
+{
+  "claim_label": "DERIVED_PRECOMPARISON",
+  "endpoint_global_overlap": {
+    "R0_wedge_lower": {
+      "R0_pair_count": 2546,
+      "R3_adjacency_trace_fourth_lower": 67848,
+      "R3_four_cycle_lower": 3041,
+      "codegree_cap": 5,
+      "forced_occupancy": {
+        "pairs_with_codegree_at_least_1": 1372,
+        "pairs_with_codegree_at_least_2": 1079,
+        "pairs_with_codegree_at_least_3": 590
+      },
+      "minimum_R0_centered_wedges": 6860,
+      "minimum_sum_binom_R0_codegree_2": 6082,
+      "minimum_total_R3_wedges": 10305,
+      "pointwise_values": [
+        {
+          "affine_floor": -40,
+          "b": 0,
+          "g": 0,
+          "passes": true
+        },
+        {
+          "affine_floor": -33,
+          "b": 1,
+          "g": 0,
+          "passes": true
+        },
+        {
+          "affine_floor": -26,
+          "b": 2,
+          "g": 0,
+          "passes": true
+        },
+        {
+          "affine_floor": -19,
+          "b": 3,
+          "g": 0,
+          "passes": true
+        },
+        {
+          "affine_floor": -12,
+          "b": 4,
+          "g": 0,
+          "passes": true
+        },
+        {
+          "affine_floor": -5,
+          "b": 5,
+          "g": 4,
+          "passes": true
+        },
+        {
+          "affine_floor": 2,
+          "b": 6,
+          "g": 6,
+          "passes": true
+        },
+        {
+          "affine_floor": 9,
+          "b": 7,
+          "g": 12,
+          "passes": true
+        },
+        {
+          "affine_floor": 16,
+          "b": 8,
+          "g": 16,
+          "passes": true
+        },
+        {
+          "affine_floor": 23,
+          "b": 9,
+          "g": 24,
+          "passes": true
+        },
+        {
+          "affine_floor": 30,
+          "b": 10,
+          "g": 30,
+          "passes": true
+        },
+        {
+          "affine_floor": 37,
+          "b": 11,
+          "g": 40,
+          "passes": true
+        },
+        {
+          "affine_floor": 44,
+          "b": 12,
+          "g": 48,
+          "passes": true
+        }
+      ],
+      "sharp_scalar_witness_b_counts": {
+        "10": 226,
+        "8": 5
+      },
+      "sum_b": 2300
+    },
+    "mixed_trace": "tr(A_R2 A_R3^2)=2 times the number of R2 pairs whose unique compatible closure is realized",
+    "pair_census": {
+      "ordered": {
+        "Gamma": 4158,
+        "R0": 5092,
+        "R1": 40164,
+        "R2": 1416,
+        "R3": 2300
+      },
+      "sum_R3_degrees": 2300,
+      "sum_q": 472,
+      "triangle_count": 231,
+      "unordered": {
+        "Gamma": 2079,
+        "R0": 2546,
+        "R1": 20082,
+        "R2": 708,
+        "R3": 1150
+      }
+    },
+    "q_distribution_consequence": "sum q=472 and q!=1 force at least one triangle with q>=3",
+    "rootless_R2_codegrees": "all zero",
+    "rootless_trace": 0,
+    "unrestricted_trace_cap_from_projector": 1416
+  },
+  "independence": {
+    "candidate_comparison_performed": false,
+    "git_used": false,
+    "wave34_discovery_code_imported_or_executed": false,
+    "wave34_discovery_files_inspected": false
+  },
+  "input_validation": {
+    "all_match": true,
+    "entry_count": 18,
+    "freeze_file_matches_expected": true,
+    "hashes": {
+      "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+      "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+      "agents/2026-07-24-wave31-survivor-proof.md": "075566744e2622a4dfa402a125d394aef16dfcb3fc53b172176dce88bd951aaa",
+      "agents/2026-07-24-wave32-indecomposable-proof.md": "5e0e0ce6e33cd8f943d8026c2b9b01b74d9668234d4c9b2c46da6c0c9921b8ef",
+      "agents/2026-07-24-wave33-rootless-motif.md": "a22b261b49c355296fd4299b3b97da215e16209f00eeae9a2d6d15addfd27c87",
+      "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+      "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+      "verification/wave31-sign-commutant/audit.md": "f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0",
+      "verification/wave32-indecomposable/audit.md": "15285e618b3a38c91c5d2e373dcb859720a2062d9ca108cd79cae12506a53f44",
+      "verification/wave32-indecomposable/independent-results.json": "4b90ef54358a14abc92c925c8e0f94ed9510b4f80857fde5aa4e2abf4ba89e2a",
+      "verification/wave33-rootless-motif/audit.md": "a761d48419664b3db8605ca2a7dd203c2a1ce6ccd1e96d1ac2c028b1c5209bc9",
+      "verification/wave33-rootless-motif/comparison-results.json": "8b7b27fd67f12bb82cb6eebf645d0c46324d7227e51bdeb0093fbcdf9d753872",
+      "verification/wave33-rootless-motif/independent-reconstruction.md": "6a4fd85e0f87ed98cafdd581523f468f17c7818c134dd8aaba5230bd15de1c2c",
+      "verification/wave33-rootless-motif/precomparison-results.json": "68911c124a039b32b2eb5fe4c1f9886c033e17129b8b97d7a428c4bda7968253",
+      "verification/wave33-rootless-motif/precomparison-run-report.yaml": "df0518ec5007ab546e634e52e4fce91ca82d957ffb69dec358d5a6a16ab62873",
+      "verification/wave33-rootless-motif/public-input-freeze.sha256": "cc1296bcd8816a9a6a15f295fec1edf1f60ac745fe9ac380325098ccd753a166",
+      "verification/wave33-rootless-motif/run-report.yaml": "112ad3f84429acc426742c34e338663a7f25c5958abba067f5dbd35d7245a1fd",
+      "verification/wave34-continuation-protocol.md": "60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4"
+    },
+    "mismatches": {}
+  },
+  "one_leg_incidence_transport": {
+    "column_census": {
+      "-2": 36,
+      "1": 60,
+      "4": 3
+    },
+    "column_gram": "K^T K=63M",
+    "definition": "K=N*M",
+    "entry_values": {
+      "outside_vertex_adjacent_to_triangle": -2,
+      "outside_vertex_nonadjacent_to_triangle": 1,
+      "vertex_in_triangle": 4
+    },
+    "exact_identity": "K=9N-3AN+J",
+    "row_gram": "K K^T=21(27I-9A+J)"
+  },
+  "projector_common_R3_caps": {
+    "R0_biclique_gram_determinants_m_0_through_6": {
+      "0": 15,
+      "1": 36,
+      "2": 81,
+      "3": 162,
+      "4": 243,
+      "5": 0,
+      "6": -2187
+    },
+    "R0_codegree_5_kernel": [
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "R0_codegree_5_kernel_identity": "2x+2y+z1+...+z5=0",
+    "actual_incidence_improvements": {
+      "Gamma": 0,
+      "R0": 5,
+      "R1": 1,
+      "R2": 1,
+      "R3": 1
+    },
+    "by_base_inner_product": {
+      "-1": {
+        "maximum_common_R3": 1,
+        "projection_squared_norm": "8/3",
+        "residual_diagonal": "4/3",
+        "residual_off_diagonal_upper_bound": "-5/3"
+      },
+      "-2": {
+        "maximum_common_R3": 1,
+        "projection_squared_norm": "4",
+        "residual_diagonal": "0",
+        "residual_off_diagonal_upper_bound": "-3"
+      },
+      "0": {
+        "maximum_common_R3": 3,
+        "projection_squared_norm": "2",
+        "residual_diagonal": "2",
+        "residual_off_diagonal_upper_bound": "-1"
+      },
+      "1": {
+        "maximum_common_R3": 5,
+        "projection_squared_norm": "8/5",
+        "residual_diagonal": "12/5",
+        "residual_off_diagonal_upper_bound": "-3/5"
+      }
+    },
+    "by_disjoint_relation_psd_only": {
+      "R0": 5,
+      "R1": 3,
+      "R2": 1,
+      "R3": 1
+    },
+    "closure": "if a pair has at least two common R3 triangles, the pair and every pair inside its common-neighbour set are necessarily R0",
+    "derivation": "Schur complement of two norm-four M-frame rows against common rows having inner product -2 to both"
+  },
+  "role": "clean_room_independent_verifier_precomparison",
+  "schema_version": 1,
+  "scope": "Necessary actual-incidence, fibre-overlap, and projector-PSD consequences under the frozen n3=708 rootless endpoint premises",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "R2_four_candidates_reduce_to_at_most_one": "DERIVED",
+    "actual_motif_forcing": "UNKNOWN",
+    "global_R0_wedge_lower_6860": "DERIVED",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "one_leg_transport": "DERIVED",
+    "projector_codegree_caps": "DERIVED",
+    "q_not_equal_1": "DERIVED",
+    "rootless_endpoint": "UNKNOWN",
+    "rootless_local_matching_normal_form": "DERIVED"
+  },
+  "triangle_centred_fibres": {
+    "R2_degree": "3q, where q is the number of moved points of pi",
+    "R2_pair_common_R3_compatible_index_cap": 1,
+    "R3_degree": "|Fix(pi)|=12-q",
+    "allowed_q_values_with_local_controls": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "compatible_index_cap_one_witness": {
+      "centered_root_motifs_before_Z_closure": 0,
+      "compatible_index_cap": 1,
+      "defect_index": 0,
+      "q": 2,
+      "relations_among_fixed_transversals": {
+        "R0": 33,
+        "R1": 12,
+        "R2": 0,
+        "R3": 0
+      },
+      "scope": "local matching-and-holonomy control, not a graph",
+      "unique_compatible_fixed_index": 2
+    },
+    "cross_fibre_graph": "one perfect matching for each fibre pair",
+    "fibre_sizes": [
+      12,
+      12,
+      12
+    ],
+    "forbidden_q_values": [
+      1
+    ],
+    "holonomy": "after two cross matchings are normalized, the third is a permutation pi on twelve labels",
+    "motif_normalization": "for a fixed centre T, two fixed labels form the forbidden R2 pair iff exactly two of the three same-fibre matchings pair those labels",
+    "rootless_local_profiles": [
+      {
+        "R2_degree": 0,
+        "R3_degree": 12,
+        "fixed_points": 12,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 3,
+        "q": 0,
+        "relations_among_R3_neighbours": {
+          "R0": 48,
+          "R1": 18,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 6,
+        "R3_degree": 10,
+        "fixed_points": 10,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 3,
+        "q": 2,
+        "relations_among_R3_neighbours": {
+          "R0": 32,
+          "R1": 13,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 9,
+        "R3_degree": 9,
+        "fixed_points": 9,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 3,
+        "q": 3,
+        "relations_among_R3_neighbours": {
+          "R0": 24,
+          "R1": 12,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 12,
+        "R3_degree": 8,
+        "fixed_points": 8,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 3,
+        "q": 4,
+        "relations_among_R3_neighbours": {
+          "R0": 16,
+          "R1": 12,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 15,
+        "R3_degree": 7,
+        "fixed_points": 7,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 3,
+        "q": 5,
+        "relations_among_R3_neighbours": {
+          "R0": 12,
+          "R1": 9,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 18,
+        "R3_degree": 6,
+        "fixed_points": 6,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 3,
+        "q": 6,
+        "relations_among_R3_neighbours": {
+          "R0": 8,
+          "R1": 7,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 21,
+        "R3_degree": 5,
+        "fixed_points": 5,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 3,
+        "q": 7,
+        "relations_among_R3_neighbours": {
+          "R0": 4,
+          "R1": 6,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 24,
+        "R3_degree": 4,
+        "fixed_points": 4,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 3,
+        "q": 8,
+        "relations_among_R3_neighbours": {
+          "R0": 0,
+          "R1": 6,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 27,
+        "R3_degree": 3,
+        "fixed_points": 3,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 2,
+        "q": 9,
+        "relations_among_R3_neighbours": {
+          "R0": 0,
+          "R1": 3,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 30,
+        "R3_degree": 2,
+        "fixed_points": 2,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 1,
+        "q": 10,
+        "relations_among_R3_neighbours": {
+          "R0": 0,
+          "R1": 1,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 33,
+        "R3_degree": 1,
+        "fixed_points": 1,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 0,
+        "q": 11,
+        "relations_among_R3_neighbours": {
+          "R0": 0,
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      },
+      {
+        "R2_degree": 36,
+        "R3_degree": 0,
+        "fixed_points": 0,
+        "laplacian_psd_decomposition": "3I-L_F=sum_{matching alpha}(I-A_alpha)[F]",
+        "maximum_weighted_relation_degree": 0,
+        "q": 12,
+        "relations_among_R3_neighbours": {
+          "R0": 0,
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "root_motif_count_centered_here": 0
+      }
+    ],
+    "same_fibre_graph": "three copies of 6K2",
+    "zero_closure_control_compatible_index_counts": {
+      "0": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    "zero_fibre_size": 60
+  },
+  "wave33_boards": {
+    "R0": {
+      "board": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "weighted_transversal_candidates": 48
+    },
+    "R1": {
+      "board": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "weighted_transversal_candidates": 16
+    },
+    "R2": {
+      "board": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "weighted_transversal_candidates": 4
+    },
+    "R3": {
+      "board": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "weighted_transversal_candidates": 1
+    }
+  }
+}

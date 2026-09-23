@@ -1,0 +1,76 @@
+{
+  "format": "conway99-wave40-public-checkpoint-v1",
+  "date_utc": "2026-07-27",
+  "research_base_commit": "6b28af70c67f062d687251494a047debe70a246f",
+  "branch": "codex/wave39-rank-proof-checkpoint",
+  "target": "existence of srg(99,14,1,2)",
+  "target_status": "UNKNOWN",
+  "publication_classification": "EXPLORATORY_VERIFIED_SCOPED_CHECKPOINT",
+  "verified_universal_result": {
+    "statement": "rank_F7(M)>=25 for M=21E0",
+    "previous_floor": 19,
+    "edge_partition_count": 11,
+    "endpoint_rank_pair_count": 330,
+    "previous_endpoint_rank_pair_count": 429,
+    "if_r3_equals_12": "r7 is even and at least 26"
+  },
+  "verified_scoped_results": {
+    "conditional_rank22_stepping_stone": true,
+    "edge_type_closed_complex": true,
+    "normalized_all222_quotients": 4050,
+    "rank11_quotients": 8,
+    "one_quotient_lift_masks": 262144,
+    "one_quotient_triangle_free_lifts": 37378,
+    "one_quotient_K39_rank_distribution": {
+      "33": 264,
+      "34": 7348,
+      "35": 29766
+    }
+  },
+  "validation": {
+    "discovery_tests_passed": 46,
+    "independent_tests_passed": 44,
+    "total_tests_passed": 90,
+    "package_manifests": 7,
+    "manifest_entries": 53,
+    "deterministic_replays": "PASS"
+  },
+  "primary_artifacts": [
+    {
+      "path": "attempts/wave40-exact-coupling-model/exact-results.json",
+      "sha256": "8613c05c94a9a5f88c45eddbeccbf4c8906c3783aab25747e439f50423bde9ce"
+    },
+    {
+      "path": "attempts/wave40-exact-coupling-model/subspace-certificate.json",
+      "sha256": "90b8eb3f88424ffe6ae7618a3063620a2dedff604ad2fac10894fb6278f17c9a"
+    },
+    {
+      "path": "verification/wave40-exact-coupling-model/independent-results.json",
+      "sha256": "ff7916d0f5c74c47c8d7787c5cbcc84785cbccd3644d8d03d73e47b73908c0f5"
+    },
+    {
+      "path": "attempts/wave40-edge-type-coupling/exact-results.json",
+      "sha256": "1be5ccadeb5b3273a7f37050e91fc6e37f89b3c7d548e8e02bd6cbbff9e4f062"
+    },
+    {
+      "path": "verification/wave40-edge-type-coupling/independent-results.json",
+      "sha256": "822f758e04bcf95576cf8c5adc5cff2131ffa13cd286a6924137149de0dc3a9e"
+    }
+  ],
+  "literature_boundary": {
+    "exact_rank25_prior_found": false,
+    "bounded_nonhit_only": true,
+    "local_scaffold_prior_art": "Gray Taylor 2020",
+    "novelty": "UNKNOWN",
+    "priority": "UNKNOWN"
+  },
+  "status_wall": {
+    "endpoint_n3_4158": "UNKNOWN",
+    "general_upper_bound": "n3<=4158",
+    "upper_bound_improved": false,
+    "rigorous_interval": "708<=n3<=4158",
+    "endpoint_proof_coverage": "0/33",
+    "graph_certificate": null,
+    "nonexistence_certificate": null
+  }
+}

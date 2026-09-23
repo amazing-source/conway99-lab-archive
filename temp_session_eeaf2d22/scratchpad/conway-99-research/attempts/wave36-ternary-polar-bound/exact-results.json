@@ -1,0 +1,327 @@
+{
+  "claim_label": "CANDIDATE_PENDING_INDEPENDENT_VERIFICATION",
+  "derived_rank_floor": 12,
+  "distinctness_norm_check": {
+    "congruent_or_antipodal_integer_combination_norm_squared": 450,
+    "distinct_projective_points": true,
+    "orthogonal_endpoint_row_combination_norm_squared": 882
+  },
+  "endpoint_excluded": false,
+  "endpoint_orthogonal_companions_per_point": 162,
+  "endpoint_projective_point_count": 231,
+  "field_order": 3,
+  "global_upper_bound_on_n3": 4158,
+  "limitations": [
+    "The endpoint matrix and graph are hypothetical; neither is constructed.",
+    "The calculation only sharpens a conditional modular-rank constraint.",
+    "The argument requires independent adversarial verification before promotion.",
+    "The surviving rank-twelve square-determinant case and all ranks 13 through 44 remain feasible under this test."
+  ],
+  "point_count_table": [
+    {
+      "dimension": 1,
+      "nonsquare_determinant": 1,
+      "square_determinant": 0
+    },
+    {
+      "dimension": 2,
+      "nonsquare_determinant": 1,
+      "square_determinant": 2
+    },
+    {
+      "dimension": 3,
+      "nonsquare_determinant": 3,
+      "square_determinant": 6
+    },
+    {
+      "dimension": 4,
+      "nonsquare_determinant": 15,
+      "square_determinant": 12
+    },
+    {
+      "dimension": 5,
+      "nonsquare_determinant": 45,
+      "square_determinant": 36
+    },
+    {
+      "dimension": 6,
+      "nonsquare_determinant": 117,
+      "square_determinant": 126
+    },
+    {
+      "dimension": 7,
+      "nonsquare_determinant": 351,
+      "square_determinant": 378
+    },
+    {
+      "dimension": 8,
+      "nonsquare_determinant": 1107,
+      "square_determinant": 1080
+    },
+    {
+      "dimension": 9,
+      "nonsquare_determinant": 3321,
+      "square_determinant": 3240
+    },
+    {
+      "dimension": 10,
+      "nonsquare_determinant": 9801,
+      "square_determinant": 9882
+    },
+    {
+      "dimension": 11,
+      "nonsquare_determinant": 29403,
+      "square_determinant": 29646
+    },
+    {
+      "dimension": 12,
+      "nonsquare_determinant": 88695,
+      "square_determinant": 88452
+    }
+  ],
+  "polar_graph_cases": [
+    {
+      "degree": 117,
+      "determinant_class": 1,
+      "dimension": 7,
+      "excluded": true,
+      "lambda": 36,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "75.000000000000",
+        "denominator": 1,
+        "display": "75",
+        "numerator": 75
+      },
+      "mu": 36,
+      "negative_eigenvalue": -9,
+      "negative_multiplicity": 195,
+      "positive_eigenvalue": 9,
+      "positive_multiplicity": 182,
+      "target_average_induced_degree": 162,
+      "vertex_count": 378
+    },
+    {
+      "degree": 126,
+      "determinant_class": 2,
+      "dimension": 7,
+      "excluded": true,
+      "lambda": 45,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "86.000000000000",
+        "denominator": 1,
+        "display": "86",
+        "numerator": 86
+      },
+      "mu": 45,
+      "negative_eigenvalue": -9,
+      "negative_multiplicity": 182,
+      "positive_eigenvalue": 9,
+      "positive_multiplicity": 168,
+      "target_average_induced_degree": 162,
+      "vertex_count": 351
+    },
+    {
+      "degree": 351,
+      "determinant_class": 1,
+      "dimension": 8,
+      "excluded": true,
+      "lambda": 126,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "96.300000000000",
+        "denominator": 10,
+        "display": "963/10",
+        "numerator": 963
+      },
+      "mu": 108,
+      "negative_eigenvalue": -9,
+      "negative_multiplicity": 819,
+      "positive_eigenvalue": 27,
+      "positive_multiplicity": 260,
+      "target_average_induced_degree": 162,
+      "vertex_count": 1080
+    },
+    {
+      "degree": 378,
+      "determinant_class": 2,
+      "dimension": 8,
+      "excluded": true,
+      "lambda": 117,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "86.000000000000",
+        "denominator": 1,
+        "display": "86",
+        "numerator": 86
+      },
+      "mu": 135,
+      "negative_eigenvalue": -27,
+      "negative_multiplicity": 287,
+      "positive_eigenvalue": 9,
+      "positive_multiplicity": 819,
+      "target_average_induced_degree": 162,
+      "vertex_count": 1107
+    },
+    {
+      "degree": 1107,
+      "determinant_class": 1,
+      "dimension": 9,
+      "excluded": true,
+      "lambda": 378,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "104.000000000000",
+        "denominator": 1,
+        "display": "104",
+        "numerator": 104
+      },
+      "mu": 378,
+      "negative_eigenvalue": -27,
+      "negative_multiplicity": 1640,
+      "positive_eigenvalue": 27,
+      "positive_multiplicity": 1599,
+      "target_average_induced_degree": 162,
+      "vertex_count": 3240
+    },
+    {
+      "degree": 1080,
+      "determinant_class": 2,
+      "dimension": 9,
+      "excluded": true,
+      "lambda": 351,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "100.243902439024",
+        "denominator": 41,
+        "display": "4110/41",
+        "numerator": 4110
+      },
+      "mu": 351,
+      "negative_eigenvalue": -27,
+      "negative_multiplicity": 1680,
+      "positive_eigenvalue": 27,
+      "positive_multiplicity": 1640,
+      "target_average_induced_degree": 162,
+      "vertex_count": 3321
+    },
+    {
+      "degree": 3321,
+      "determinant_class": 1,
+      "dimension": 10,
+      "excluded": true,
+      "lambda": 1080,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "104.000000000000",
+        "denominator": 1,
+        "display": "104",
+        "numerator": 104
+      },
+      "mu": 1134,
+      "negative_eigenvalue": -81,
+      "negative_multiplicity": 2501,
+      "positive_eigenvalue": 27,
+      "positive_multiplicity": 7380,
+      "target_average_induced_degree": 162,
+      "vertex_count": 9882
+    },
+    {
+      "degree": 3240,
+      "determinant_class": 2,
+      "dimension": 10,
+      "excluded": true,
+      "lambda": 1107,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "155.454545454545",
+        "denominator": 11,
+        "display": "1710/11",
+        "numerator": 1710
+      },
+      "mu": 1053,
+      "negative_eigenvalue": -27,
+      "negative_multiplicity": 7380,
+      "positive_eigenvalue": 81,
+      "positive_multiplicity": 2420,
+      "target_average_induced_degree": 162,
+      "vertex_count": 9801
+    },
+    {
+      "degree": 9801,
+      "determinant_class": 1,
+      "dimension": 11,
+      "excluded": true,
+      "lambda": 3240,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "156.737704918033",
+        "denominator": 61,
+        "display": "9561/61",
+        "numerator": 9561
+      },
+      "mu": 3240,
+      "negative_eigenvalue": -81,
+      "negative_multiplicity": 14883,
+      "positive_eigenvalue": 81,
+      "positive_multiplicity": 14762,
+      "target_average_induced_degree": 162,
+      "vertex_count": 29646
+    },
+    {
+      "degree": 9882,
+      "determinant_class": 2,
+      "dimension": 11,
+      "excluded": true,
+      "lambda": 3321,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "158.000000000000",
+        "denominator": 1,
+        "display": "158",
+        "numerator": 158
+      },
+      "mu": 3321,
+      "negative_eigenvalue": -81,
+      "negative_multiplicity": 14762,
+      "positive_eigenvalue": 81,
+      "positive_multiplicity": 14640,
+      "target_average_induced_degree": 162,
+      "vertex_count": 29403
+    },
+    {
+      "degree": 29403,
+      "determinant_class": 1,
+      "dimension": 12,
+      "excluded": false,
+      "lambda": 9882,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "319.153846153846",
+        "denominator": 13,
+        "display": "4149/13",
+        "numerator": 4149
+      },
+      "mu": 9720,
+      "negative_eigenvalue": -81,
+      "negative_multiplicity": 66429,
+      "positive_eigenvalue": 243,
+      "positive_multiplicity": 22022,
+      "target_average_induced_degree": 162,
+      "vertex_count": 88452
+    },
+    {
+      "degree": 29646,
+      "determinant_class": 2,
+      "dimension": 12,
+      "excluded": true,
+      "lambda": 9801,
+      "mixing_upper_average_induced_degree": {
+        "decimal_12": "158.000000000000",
+        "denominator": 1,
+        "display": "158",
+        "numerator": 158
+      },
+      "mu": 9963,
+      "negative_eigenvalue": -243,
+      "negative_multiplicity": 22265,
+      "positive_eigenvalue": 81,
+      "positive_multiplicity": 66429,
+      "target_average_induced_degree": 162,
+      "vertex_count": 88695
+    }
+  ],
+  "rank_twelve_surviving_determinant_classes": [
+    "square"
+  ]
+}

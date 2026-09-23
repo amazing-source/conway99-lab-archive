@@ -1,0 +1,48 @@
+role: verifier
+date_utc: "2026-07-27T02:30:37Z"
+git_commit: "019b78ac9a5170107d105ad4d8fcd27f55dde642"
+claim_label: VERIFIED
+scope: >-
+  Universal edge-local characteristic-seven rank consequence for a
+  hypothetical srg(99,14,1,2), with conditional prism-free endpoint
+  refinements.
+inputs:
+  - path: verification/wave39-edge-local-rank/input-freeze.sha256
+    sha256: b08c1eac407f8563d56cdd749cc6a520c575cb7e41bfbc0ec566c154caf34dce
+method: >-
+  Clean-room derivation of the edge-local three-matching geometry; exhaustive
+  enumeration of all 10,395 pulled-back perfect matchings on twelve labelled
+  points; independent construction and exact F7 elimination of every
+  corresponding 27 by 27 transported principal block; algebraic audit of
+  rank_F7(M)=rank_F7(NMN^T); independent endpoint and rank-pair arithmetic;
+  and hostile mutation tests.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave39-edge-local-rank -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  verification\wave39-edge-local-rank\independent_check.py --verify
+  verification\wave39-edge-local-rank\independent-results.json
+outputs:
+  - path: verification/wave39-edge-local-rank/independent_check.py
+    sha256: 68ce3b0bf1b2422aec78fb8360c685eb8fc1c47f761dc693c58a2c72548dbc09
+  - path: verification/wave39-edge-local-rank/test_independent_check.py
+    sha256: d6dd6fa81a928a21c01582ff9bf0fca6190a5378e39d1ede57bbca8dc0ecfa73
+  - path: verification/wave39-edge-local-rank/independent-results.json
+    sha256: 85b8d36d6ce5ebd638e957e1731864eff75f38405935f5e51ad5b629edea5966
+  - path: verification/wave39-edge-local-rank/README.md
+    sha256: ed749e5788c19a23629cee9f331cce0ef161500d9cb0d939eef3211085c0a405
+tests:
+  passed: 14
+  failed: 0
+result:
+  exhaustive_pulled_back_matchings: 10395
+  normal_forms: 11
+  universal_rank_F7_M_lower_bound: 19
+  endpoint_rank_pair_count: 429
+  endpoint_excluded: false
+  strongest_general_upper_bound: "n3<=4158"
+limitations:
+  - The result is a necessary rank condition, not a graph construction.
+  - No edge-type coupling theorem or endpoint contradiction is proved.
+  - The general n3 upper bound remains 4158.
+  - Literature novelty and priority remain UNKNOWN.

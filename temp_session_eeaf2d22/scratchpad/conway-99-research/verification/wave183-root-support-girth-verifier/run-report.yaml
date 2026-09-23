@@ -1,0 +1,28 @@
+role: verifier
+date_utc: 2026-07-29T00:02:07Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional Wave 183 root-support classification under Wave 181 equality
+  and the verified Wave 182 root identities; endpoint existence is excluded
+  from the claim.
+inputs:
+  - path: attempts/wave183-root-support-girth/package-manifest.sha256
+    sha256: df6b0333483e132e5bf33a09744240e003cb02da2fa5f54740872846c39696ae
+method: >-
+  Independent proof audit of the canonical-C4 common-neighbor obstruction,
+  unordered two-path injection, cubic triangle contradiction, low-degree
+  regular-graph classification, exact incidence bounds, and F_3 frame split;
+  exact arithmetic only, with no graph enumeration or brute-force search.
+command: >-
+  python verification/wave183-root-support-girth-verifier/independent_check.py;
+  python -m unittest
+  verification.wave183-root-support-girth-verifier.test_independent_check
+outputs:
+  - verification/wave183-root-support-girth-verifier/audit.md
+  - verification/wave183-root-support-girth-verifier/independent-results.json
+  - verification/wave183-root-support-girth-verifier/package-manifest.sha256
+limitations: >-
+  Wave 181 equality and Wave 182 are premises.  The surviving support types
+  are necessary conditions only.  The frame split yields no contradiction;
+  rank 11 and the original endpoint remain UNKNOWN.

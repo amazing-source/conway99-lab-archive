@@ -1,0 +1,52 @@
+role: verifier
+date_utc: 2026-07-28T00:09:14Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: VERIFIED
+scope: >-
+  Conditional verification of Wave81's exact labelled norm-16 support
+  census, deficiency coupling census, per-X2 marginal-flow result, outside
+  type moments, and Jacobi spectra. A separately labelled DERIVED extension
+  applies all six type-subgraph graphicality tests.
+inputs:
+  - path: verification/wave81-norm16-labeled-design/input-freeze.sha256
+    sha256: 46d0af6a8d3fff3548e3c145313f8955a2743e3d74a9b2d023159df32452a559
+  - path: attempts/wave81-norm16-labeled-design/package-manifest.sha256
+    sha256: 6c05ff8ef0f97b1c9af0a1fbe1106ec07f826e819869660262fe92b9478033bd
+  - path: attempts/wave81-norm16-labeled-design/exact-results.json
+    sha256: b9cde2a059c15c3efe5e0f7cd5508e5a68238869c675189ca479c5d206d33707
+method: >-
+  Freeze and audit every discovery file before inspection; independently
+  enumerate anchored supports and complete S8xS8 label orbits; reconstruct
+  pair deficiencies; enumerate coupling multisets with exact cell
+  capacities; solve local marginals by bounded-table dynamic programming;
+  reconstruct the Wave78 histogram and all six outside pair moments;
+  exhaust exact histograms; compute Jacobi residual factors by Newton
+  identities; attack the swapped spectral exponents; compare every finite
+  output to the frozen discovery JSON; and apply additional Havel-Hakimi and
+  Gale-Ryser controls under a separate DERIVED label.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave81-norm16-labeled-design\independent_check.py --verify
+  verification\wave81-norm16-labeled-design\independent-results.json ;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave81-norm16-labeled-design\test_independent_check.py
+outputs:
+  - path: verification/wave81-norm16-labeled-design/independent_check.py
+    sha256: ace0e99822168884399c45abbd21103f5ff0f647f4f171513dad74897eec6c65
+  - path: verification/wave81-norm16-labeled-design/independent-results.json
+    sha256: 348fa25953bcc4df6055cb028ce45aa5f63df2cd2d3a86f3d89bb109f702ea28
+  - path: verification/wave81-norm16-labeled-design/test_independent_check.py
+    sha256: 40bfe29be8bd9e8ee4309714b87ec958e56b2f8b4cd98492e5d743021689b961
+  - path: verification/wave81-norm16-labeled-design/derivation.md
+    sha256: 5042e4a7feed997d2a3edba255005034da12ac0c64b1692a813872dde3fcf366
+  - path: verification/wave81-norm16-labeled-design/hostile-controls.md
+    sha256: 4936f99fc838c56e7c4048d48b338248acde38623b9b56cb01f1d28ab1207fc4
+  - path: verification/wave81-norm16-labeled-design/verification-report.md
+    sha256: f50f97c089c92bc9ddd7bbcbe547cf338bd6bf2f46c88d0bb22b5009e0a2cff6
+limitations:
+  - Conditional on the frozen Wave78 signed-support branch.
+  - Per-X2 marginal flows are local and not simultaneous outside graphs.
+  - The 40+7 graphical refinement is verifier-derived and only DERIVED.
+  - No target automorphism is assumed.
+  - No 83-vertex outside graph is constructed.
+  - Conway-99 and novelty remain UNKNOWN.

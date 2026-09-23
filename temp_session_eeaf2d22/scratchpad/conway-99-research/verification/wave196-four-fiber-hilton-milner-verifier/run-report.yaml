@@ -1,0 +1,58 @@
+role: verifier
+date_utc: 2026-07-29T04:18:08Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: independently verify the
+  four-vertex two-star-block fibers, exact-three flag pair-fiber rule,
+  both k=3 Hilton--Milner equality templates, the common-block injection,
+  selected/old-h/new-g pool simplicity, J<=3564, S36>=0, and the exact
+  certificate Q>=7029.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave180-capacity3-companion/package-manifest.sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  verification/wave194-five-thirds-verifier/package-manifest.sha256: 236facbec2539a87e197fd0b2b8ca66bc0d53b12415fdf216acf410064d7ca64
+  verification/wave195-hilton-milner-verifier/package-manifest.sha256: dec34784c4a5f2226b33052348d7303698c172fafccc188852f6ce6d7f50118b
+  attempts/wave196-four-fiber-hilton-milner-proof-a/package-manifest.sha256: 83bd93ab0980305d59052dd25dc373f582b5a6fc998b122d64d506871e244b1c
+  attempts/wave196-four-fiber-proof-b-audit/package-manifest.sha256: 1eb6c6abdc6855af950459ac524653108f5582d9686fbe4e6a0df89e9c39c14a
+method: >-
+  Clean-room SRG intersection-number geometry, a 2-regular bipartite
+  incidence argument, extremal set theory with the full k=3
+  Hilton--Milner equality classification, exact fixed-template
+  evaluation, lambda/mu common-block reconstruction, inherited
+  companion-pool separation, oriented-label injection, exact Fraction
+  coefficient expansion, independent integer-null construction, sealed
+  source comparison, and a non-premise hostile proof-B cross-check.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave196-four-fiber-hilton-milner-verifier\independent_check.py
+  --verify-math
+  verification\wave196-four-fiber-hilton-milner-verifier\independent-math-result.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave196-four-fiber-hilton-milner-verifier\independent_check.py
+  --verify
+  verification\wave196-four-fiber-hilton-milner-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave196-four-fiber-hilton-milner-verifier\test_independent_check.py
+outputs:
+  verification/wave196-four-fiber-hilton-milner-verifier/audit.md: 99d7204bf1604e9401e5bafd22d0384d4f9c30e58e5b80c2123a0d20d5b83f84
+  verification/wave196-four-fiber-hilton-milner-verifier/independent_check.py: c1bb599cdd0db523931dd7572f73863ee44e1e627e33e5281d862a08ec2fec12
+  verification/wave196-four-fiber-hilton-milner-verifier/independent-math-result.json: 106444612745ed8e8b384460cc696c5d580a2201aa53f257e2a9d616ea5ce969
+  verification/wave196-four-fiber-hilton-milner-verifier/independent-result-freeze.sha256: 8804bec2b26fe659cb2e9095bbbc1dc334f7310901da26601bb9584a617e58c1
+  verification/wave196-four-fiber-hilton-milner-verifier/independent-results.json: 3e112432465c053f4bd6dc854e0b064096307fbb56a3612c70cbff106c674e6e
+  verification/wave196-four-fiber-hilton-milner-verifier/input-freeze.sha256: 97afbf126b3019137269b50dcb868ca6b5ea6685fb5184a7e04953d0d8fdaf2d
+  verification/wave196-four-fiber-hilton-milner-verifier/protocol.md: 06b1145ea42bba7a30b50fc400fa55a2a039dbcc73323d41946dbc1e224ab0ac
+  verification/wave196-four-fiber-hilton-milner-verifier/README.md: 6bfc5813d31313e43607dc27e7f44223bd6348713707c4f52554e7f42eb9ce04
+  verification/wave196-four-fiber-hilton-milner-verifier/test_independent_check.py: 5e64261a7bc96608f72e1ae66ff92c6dcf8ac4772c3283429803fc2d48faa9a7
+limitations:
+  - The theorem is conditional on the frozen prism-free rank-11 endpoint.
+  - The Hilton--Milner equality classification is cited from Theorem 11
+    of Hurlbert--Kamat; both classified formulas are independently checked.
+  - Fixed-template evaluation is not a search over candidate set families.
+  - Both integral null rows are arithmetic only.
+  - Unrelated candidate capacity and orientation-amplification rows remain
+    quarantined.
+  - No endpoint, cover, flag system, circuit system, code, or graph is
+    constructed, and no incompatible upper bound follows.
+  - Rank 11, endpoint existence, strict original n3 improvement, external
+    novelty, and Conway-99 remain UNKNOWN.

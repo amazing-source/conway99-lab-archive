@@ -1,0 +1,155 @@
+{
+  "claim_label": "DERIVED",
+  "hostile_partial": {
+    "BF": {
+      "defect_histogram": {
+        "-1": 54,
+        "-2": 27,
+        "1": 43,
+        "2": 12,
+        "3": 5,
+        "4": 2,
+        "5": 2,
+        "8": 1
+      },
+      "equation_count": 210,
+      "squared_defect": 444,
+      "status": "FAIL",
+      "violation_count": 146,
+      "violations_sha256": "df8945e87ccd94e9dd539e5fe531f8ad1689470744e5c76ac8e4255b120990f7"
+    },
+    "F_column_degree_histogram": {
+      "14": 15
+    },
+    "F_row_degree_histogram": {
+      "3": 70
+    },
+    "O_O_layer_certificate_status": "UNSUPPLIED",
+    "assigned_design": {
+      "block_count": 70,
+      "block_size": 3,
+      "canonical_block_set_sha256": "1fba3a9bf523a7fa7e8dce1cc48af7a3771ac446dbf711354452567a93619d9b",
+      "pair_intersection_histogram": {
+        "2": 105
+      },
+      "point_degree_histogram": {
+        "14": 15
+      },
+      "simple": true
+    },
+    "empty_D_control_edge_count": 0,
+    "empty_D_control_full_graph_check": {
+      "adjacent_common_neighbor_histogram": {
+        "0": 294,
+        "1": 84
+      },
+      "degree_histogram": {
+        "14": 29,
+        "5": 70
+      },
+      "identity_status": "FAIL",
+      "identity_violation_count": 8438,
+      "is_conway_graph": false,
+      "nonadjacent_common_neighbor_histogram": {
+        "0": 2106,
+        "1": 1656,
+        "10": 1,
+        "2": 583,
+        "3": 100,
+        "4": 18,
+        "5": 5,
+        "6": 2,
+        "7": 2
+      }
+    },
+    "fixed_design": {
+      "block_count": 70,
+      "block_size": 3,
+      "canonical_block_set_sha256": "1fba3a9bf523a7fa7e8dce1cc48af7a3771ac446dbf711354452567a93619d9b",
+      "pair_intersection_histogram": {
+        "2": 105
+      },
+      "point_degree_histogram": {
+        "14": 15
+      },
+      "simple": true
+    },
+    "status": "PARTIAL_CONTROL_NOT_CONWAY_GRAPH"
+  },
+  "input_sha256": "f0e4bbd6228c9df337b8a70d1761aeb81b77db9ede78f2a54e973348a9b4d973",
+  "public_base_commit": "b2595baa40d50e9c259051751fe27090bee6a449",
+  "public_support": {
+    "B_column_sums": {
+      "2": 70
+    },
+    "B_row_sums": {
+      "10": 14
+    },
+    "B_sha256": "446acdc0d22fe94fa06e178f51d740ae644275a5662ee8c5cfb3a6ab19b0cd7d",
+    "cross": {
+      "column_pair_intersections": {
+        "2": 21
+      },
+      "column_sums": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "row_pair_intersections": {
+        "2": 21
+      },
+      "row_sums": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "sha256": "425465fccd5ec698a3978d19cb2e5d46a769126501cb8205ebc2ee760815ee80"
+    },
+    "signed_vector_distribution": {
+      "-1": 7,
+      "0": 85,
+      "1": 7
+    },
+    "signed_vector_eigenvalue_on_public_partial": -4,
+    "support_block_identity": "PASS"
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "clean-room exact validation of one fixed-design assignment encoding and one hostile partial O-Q object",
+  "search_encoding": {
+    "active_O_O_layer_status": "UNSUPPLIED_NO_PRIMAL_FOR_F",
+    "active_graph_phase_entered": false,
+    "assignment_binary_count": 4900,
+    "bijection_equalities": 140,
+    "covers": "all block-to-O bijections of one fixed design",
+    "does_not_cover": "other nonisomorphic simple 2-(15,3,2) designs",
+    "encoded_block_to_O_bijection_count": "11978571669969891796072783721689098736458938142546425857555362864628009582789845319680000000000000000",
+    "evidentiary_conclusion": "UNKNOWN",
+    "fixed_design_count": 1,
+    "is_construction": false,
+    "is_exclusion": false,
+    "primal_found": false,
+    "scipy_status": 1,
+    "scope": "ONE_FIXED_SIMPLE_2_15_3_2_DESIGN_ALL_BLOCK_TO_O_BIJECTIONS",
+    "support_point_equalities": 210,
+    "termination": "TIME_LIMIT",
+    "total_equalities": 350
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "fixed_design_search": "UNKNOWN_TIMEOUT_NO_PRIMAL",
+    "full_graph_construction": "NOT_OBTAINED",
+    "n3_708": "UNKNOWN",
+    "root_exclusion": "NOT_OBTAINED",
+    "rooted_endpoint": "UNKNOWN",
+    "verifier_conclusion": "timeout is no exclusion; hostile F is a design but has BF defects, its O-O layer is unsupplied, and the separate empty-D control fails the graph certificate"
+  }
+}

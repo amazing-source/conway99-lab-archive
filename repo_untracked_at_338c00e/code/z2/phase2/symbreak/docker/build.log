@@ -1,0 +1,228 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 486B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/satbox:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/satbox:latest@sha256:c90feab9de794e6005cb4a518f410c6ed4325dc2412a32f3623da7720fb89057
+#4 resolve docker.io/library/satbox:latest@sha256:c90feab9de794e6005cb4a518f410c6ed4325dc2412a32f3623da7720fb89057 0.0s done
+#4 CACHED
+
+#5 [2/4] RUN apt-get update && apt-get install -y --no-install-recommends cmake git build-essential ca-certificates && rm -rf /var/lib/apt/lists/*
+#5 0.326 Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+#5 0.355 Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+#5 0.400 Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+#5 0.424 Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+#5 0.475 Get:5 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+#5 0.502 Get:6 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+#5 0.524 Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+#5 0.579 Get:8 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+#5 0.686 Get:9 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [50.0 kB]
+#5 0.731 Get:10 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1858 kB]
+#5 0.955 Get:11 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1268 kB]
+#5 1.012 Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1544 kB]
+#5 1.329 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1978 kB]
+#5 1.444 Get:14 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2159 kB]
+#5 1.525 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1591 kB]
+#5 1.575 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [56.2 kB]
+#5 1.576 Get:17 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+#5 1.580 Get:18 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+#5 1.581 Get:19 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [671 B]
+#5 2.071 Fetched 32.8 MB in 2s (18.1 MB/s)
+#5 2.071 Reading package lists...
+#5 3.014 Reading package lists...
+#5 3.873 Building dependency tree...
+#5 4.097 Reading state information...
+#5 4.276 git is already the newest version (1:2.43.0-1ubuntu7.3).
+#5 4.276 build-essential is already the newest version (12.10ubuntu1).
+#5 4.276 ca-certificates is already the newest version (20260601~24.04.1).
+#5 4.276 The following additional packages will be installed:
+#5 4.278   cmake-data libarchive13t64 libcurl4t64 libicu74 libjsoncpp25 librhash0
+#5 4.278   libuv1t64 libxml2
+#5 4.279 Suggested packages:
+#5 4.279   cmake-doc cmake-format elpa-cmake-mode ninja-build lrzip
+#5 4.327 The following NEW packages will be installed:
+#5 4.331   cmake cmake-data libarchive13t64 libcurl4t64 libicu74 libjsoncpp25 librhash0
+#5 4.331   libuv1t64 libxml2
+#5 4.432 0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+#5 4.432 Need to get 26.0 MB of archives.
+#5 4.432 After this operation, 90.2 MB of additional disk space will be used.
+#5 4.432 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libicu74 amd64 74.2-1ubuntu3.1 [10.9 MB]
+#5 4.935 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2 amd64 2.9.14+dfsg-1.3ubuntu3.9 [765 kB]
+#5 4.974 Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libuv1t64 amd64 1.48.0-1.1build1 [97.3 kB]
+#5 4.979 Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libarchive13t64 amd64 3.7.2-2ubuntu0.8 [383 kB]
+#5 4.994 Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.13 [343 kB]
+#5 5.003 Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libjsoncpp25 amd64 1.9.5-6build1 [82.8 kB]
+#5 5.006 Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 librhash0 amd64 1.4.3-3build1 [129 kB]
+#5 5.009 Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 cmake-data all 3.28.3-1build7 [2155 kB]
+#5 5.119 Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 cmake amd64 3.28.3-1build7 [11.2 MB]
+#5 5.839 debconf: delaying package configuration, since apt-utils is not installed
+#5 5.880 Fetched 26.0 MB in 1s (19.9 MB/s)
+#5 5.909 Selecting previously unselected package libicu74:amd64.
+#5 5.909 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11940 files and directories currently installed.)
+#5 5.962 Preparing to unpack .../0-libicu74_74.2-1ubuntu3.1_amd64.deb ...
+#5 5.970 Unpacking libicu74:amd64 (74.2-1ubuntu3.1) ...
+#5 6.159 Selecting previously unselected package libxml2:amd64.
+#5 6.160 Preparing to unpack .../1-libxml2_2.9.14+dfsg-1.3ubuntu3.9_amd64.deb ...
+#5 6.164 Unpacking libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.9) ...
+#5 6.207 Selecting previously unselected package libuv1t64:amd64.
+#5 6.209 Preparing to unpack .../2-libuv1t64_1.48.0-1.1build1_amd64.deb ...
+#5 6.213 Unpacking libuv1t64:amd64 (1.48.0-1.1build1) ...
+#5 6.248 Selecting previously unselected package libarchive13t64:amd64.
+#5 6.250 Preparing to unpack .../3-libarchive13t64_3.7.2-2ubuntu0.8_amd64.deb ...
+#5 6.254 Unpacking libarchive13t64:amd64 (3.7.2-2ubuntu0.8) ...
+#5 6.293 Selecting previously unselected package libcurl4t64:amd64.
+#5 6.295 Preparing to unpack .../4-libcurl4t64_8.5.0-2ubuntu10.13_amd64.deb ...
+#5 6.299 Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.13) ...
+#5 6.334 Selecting previously unselected package libjsoncpp25:amd64.
+#5 6.336 Preparing to unpack .../5-libjsoncpp25_1.9.5-6build1_amd64.deb ...
+#5 6.340 Unpacking libjsoncpp25:amd64 (1.9.5-6build1) ...
+#5 6.373 Selecting previously unselected package librhash0:amd64.
+#5 6.375 Preparing to unpack .../6-librhash0_1.4.3-3build1_amd64.deb ...
+#5 6.379 Unpacking librhash0:amd64 (1.4.3-3build1) ...
+#5 6.416 Selecting previously unselected package cmake-data.
+#5 6.418 Preparing to unpack .../7-cmake-data_3.28.3-1build7_all.deb ...
+#5 6.428 Unpacking cmake-data (3.28.3-1build7) ...
+#5 6.921 Selecting previously unselected package cmake.
+#5 6.924 Preparing to unpack .../8-cmake_3.28.3-1build7_amd64.deb ...
+#5 6.928 Unpacking cmake (3.28.3-1build7) ...
+#5 7.125 Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.13) ...
+#5 7.139 Setting up libuv1t64:amd64 (1.48.0-1.1build1) ...
+#5 7.150 Setting up libjsoncpp25:amd64 (1.9.5-6build1) ...
+#5 7.161 Setting up libicu74:amd64 (74.2-1ubuntu3.1) ...
+#5 7.172 Setting up librhash0:amd64 (1.4.3-3build1) ...
+#5 7.183 Setting up cmake-data (3.28.3-1build7) ...
+#5 7.199 Setting up libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.9) ...
+#5 7.209 Setting up libarchive13t64:amd64 (3.7.2-2ubuntu0.8) ...
+#5 7.221 Setting up cmake (3.28.3-1build7) ...
+#5 7.232 Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+#5 DONE 7.4s
+
+#6 [3/4] RUN git clone --depth 1 https://github.com/meelgroup/breakid /opt/breakid && cd /opt/breakid && mkdir build && cd build && cmake .. && make -j4 && (cp breakid /usr/local/bin/ 2>/dev/null || cp */breakid /usr/local/bin/ || find . -name breakid -type f -exec cp {} /usr/local/bin/ ;)
+#6 0.220 Cloning into '/opt/breakid'...
+#6 1.088 -- You can choose the type of build, options are:Debug;Release;RelWithDebInfo;MinSizeRel
+#6 1.088 -- Doing a RelWithDebInfo build
+#6 1.143 -- The C compiler identification is GNU 13.3.0
+#6 1.231 -- The CXX compiler identification is GNU 13.3.0
+#6 1.246 -- Detecting C compiler ABI info
+#6 1.341 -- Detecting C compiler ABI info - done
+#6 1.355 -- Check for working C compiler: /usr/bin/cc - skipped
+#6 1.356 -- Detecting C compile features
+#6 1.356 -- Detecting C compile features - done
+#6 1.366 -- Detecting CXX compiler ABI info
+#6 1.472 -- Detecting CXX compiler ABI info - done
+#6 1.480 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#6 1.480 -- Detecting CXX compile features
+#6 1.481 -- Detecting CXX compile features - done
+#6 1.483 -- LIB directory is 'lib'
+#6 1.483 -- BIN directory is 'bin'
+#6 1.484 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+#6 1.573 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+#6 1.574 -- Found Threads: TRUE  
+#6 1.576 -- Performing Test HAVE_FLAG_Wall
+#6 1.673 -- Performing Test HAVE_FLAG_Wall - Success
+#6 1.673 -- flag -Wall supported
+#6 1.674 -- Performing Test HAVE_FLAG_pedantic
+#6 1.763 -- Performing Test HAVE_FLAG_pedantic - Success
+#6 1.763 -- flag -pedantic supported
+#6 1.763 -- Performing Test HAVE_FLAG_Wunused
+#6 1.847 -- Performing Test HAVE_FLAG_Wunused - Success
+#6 1.847 -- flag -Wunused supported
+#6 1.848 -- Performing Test HAVE_FLAG_Wsign_compare
+#6 1.933 -- Performing Test HAVE_FLAG_Wsign_compare - Success
+#6 1.933 -- flag -Wsign-compare supported
+#6 1.933 -- Performing Test HAVE_FLAG_fno_omit_frame_pointer
+#6 2.019 -- Performing Test HAVE_FLAG_fno_omit_frame_pointer - Success
+#6 2.019 -- flag -fno-omit-frame-pointer supported
+#6 2.019 -- Performing Test HAVE_FLAG_Wtype_limits
+#6 2.104 -- Performing Test HAVE_FLAG_Wtype_limits - Success
+#6 2.104 -- flag -Wtype-limits supported
+#6 2.104 -- Performing Test HAVE_FLAG_Wuninitialized
+#6 2.191 -- Performing Test HAVE_FLAG_Wuninitialized - Success
+#6 2.192 -- flag -Wuninitialized supported
+#6 2.192 -- Performing Test HAVE_FLAG_Wno_deprecated
+#6 2.274 -- Performing Test HAVE_FLAG_Wno_deprecated - Success
+#6 2.274 -- flag -Wno-deprecated supported
+#6 2.275 -- Performing Test HAVE_FLAG_Wstrict_aliasing
+#6 2.358 -- Performing Test HAVE_FLAG_Wstrict_aliasing - Success
+#6 2.358 -- flag -Wstrict-aliasing supported
+#6 2.359 -- Performing Test HAVE_FLAG_Wpointer_arith
+#6 2.445 -- Performing Test HAVE_FLAG_Wpointer_arith - Success
+#6 2.445 -- flag -Wpointer-arith supported
+#6 2.445 -- Performing Test HAVE_FLAG_Wheader_guard
+#6 2.482 -- Performing Test HAVE_FLAG_Wheader_guard - Failed
+#6 2.482 -- flag -Wheader-guard NOT supported
+#6 2.482 -- flag -Wpointer-arith supported
+#6 2.483 -- Performing Test HAVE_FLAG_Wformat_nonliteral
+#6 2.567 -- Performing Test HAVE_FLAG_Wformat_nonliteral - Success
+#6 2.567 -- flag -Wformat-nonliteral supported
+#6 2.567 -- Performing Test HAVE_FLAG_Winit_self
+#6 2.650 -- Performing Test HAVE_FLAG_Winit_self - Success
+#6 2.650 -- flag -Winit-self supported
+#6 2.651 -- Performing Test HAVE_FLAG_Wparentheses
+#6 2.735 -- Performing Test HAVE_FLAG_Wparentheses - Success
+#6 2.735 -- flag -Wparentheses supported
+#6 2.736 -- Performing Test HAVE_FLAG_Wunreachable_code
+#6 2.815 -- Performing Test HAVE_FLAG_Wunreachable_code - Success
+#6 2.815 -- flag -Wunreachable-code supported
+#6 2.816 -- Performing Test HAVE_FLAG_ggdb3
+#6 2.906 -- Performing Test HAVE_FLAG_ggdb3 - Success
+#6 2.906 -- flag -ggdb3 supported
+#6 2.907 -- Performing Test HAVE_FLAG_Wno_unused_parameter
+#6 3.004 -- Performing Test HAVE_FLAG_Wno_unused_parameter - Success
+#6 3.004 -- flag -Wno-unused-parameter supported
+#6 3.004 -- build type is RelWithDebInfo
+#6 3.015 -- GIT hash found: 1a022d0f55a398f0bce4757f7365c9f7fafde94b
+#6 3.015 -- PROJECT_VERSION: 3.1.3
+#6 3.015 -- PROJECT_VERSION_MAJOR: 3
+#6 3.015 -- PROJECT_VERSION_MINOR: 1
+#6 3.015 -- PROJECT_VERSION_PATCH: 3
+#6 3.016 -- Cannot find help2man, not creating manpage
+#6 3.021 -- Configuring done (1.9s)
+#6 3.033 -- Generating done (0.0s)
+#6 3.035 -- Build files have been written to: /opt/breakid/build
+#6 3.085 [ 15%] Building CXX object src/CMakeFiles/breakid.dir/bliss/bliss_C.cc.o
+#6 3.085 [ 15%] Building CXX object src/CMakeFiles/breakid.dir/bliss/defs.cc.o
+#6 3.085 [ 15%] Building CXX object src/CMakeFiles/breakid.dir/bliss/heap.cc.o
+#6 3.085 [ 21%] Building CXX object src/CMakeFiles/breakid.dir/bliss/graph.cc.o
+#6 3.162 [ 26%] Building CXX object src/CMakeFiles/breakid.dir/bliss/orbit.cc.o
+#6 3.196 [ 31%] Building CXX object src/CMakeFiles/breakid.dir/bliss/partition.cc.o
+#6 3.245 [ 36%] Building CXX object src/CMakeFiles/breakid.dir/bliss/timer.cc.o
+#6 3.376 [ 42%] Building CXX object src/CMakeFiles/breakid.dir/bliss/uintseqhash.cc.o
+#6 3.420 [ 47%] Building CXX object src/CMakeFiles/breakid.dir/bliss/utils.cc.o
+#6 3.615 [ 52%] Building CXX object src/CMakeFiles/breakid.dir/Algebraic.cpp.o
+#6 3.644 [ 57%] Building CXX object src/CMakeFiles/breakid.dir/Breaking.cpp.o
+#6 3.844 [ 63%] Building CXX object src/CMakeFiles/breakid.dir/Graph.cpp.o
+#6 4.839 [ 68%] Building CXX object src/CMakeFiles/breakid.dir/Theory.cpp.o
+#6 4.951 [ 73%] Building CXX object src/CMakeFiles/breakid.dir/breakid.cpp.o
+#6 5.735 [ 78%] Building CXX object src/CMakeFiles/breakid.dir/GitSHA1.cpp.o
+#6 5.764 [ 84%] Building CXX object src/CMakeFiles/breakid.dir/breakid_c.cpp.o
+#6 7.158 [ 89%] Linking CXX shared library ../lib/libbreakid.so
+#6 7.307 [ 89%] Built target breakid
+#6 7.325 [ 94%] Building CXX object src/CMakeFiles/breakid-bin.dir/breakid-main.cpp.o
+#6 10.82 [100%] Linking CXX executable ../breakid
+#6 10.91 [100%] Built target breakid-bin
+#6 DONE 11.0s
+
+#7 [4/4] WORKDIR /work
+#7 DONE 0.0s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 2.9s done
+#8 exporting manifest sha256:ad1954cdd2f995828ed2bcaf5385da7a12127c97ddde69c701c2278128bc99b0 0.0s done
+#8 exporting config sha256:b30e232a9f7e2d7a78338690524fd601cd312328436f6f6325bdd4e4bf53eb23 0.0s done
+#8 exporting attestation manifest sha256:e3879bdb98fa1980f8f0e0143d99ee48a0f71ccd201c77078cc68986a45dbf36 0.0s done
+#8 exporting manifest list sha256:d32a7ce1c867522e18b5dfb0f7cbf3889461a0ebe3cff2d9abfabb7e32f20247 0.0s done
+#8 naming to docker.io/library/satbox-breakid:latest done
+#8 unpacking to docker.io/library/satbox-breakid:latest
+#8 unpacking to docker.io/library/satbox-breakid:latest 1.0s done
+#8 DONE 4.0s
+EXIT 0

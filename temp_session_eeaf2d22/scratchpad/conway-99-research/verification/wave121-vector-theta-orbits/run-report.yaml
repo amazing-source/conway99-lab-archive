@@ -1,0 +1,50 @@
+role: verifier
+date_utc: 2026-07-28T05:03:58Z
+git_commit: 127acd31ff7980d3d629009167a2bf7f95150b18
+claim_label: VERIFIED
+scope: >-
+  Independent verification of the sealed Wave121 q=14/r=30 exact-value
+  orbit aggregate theta cone and its disjoint rank-28 scalar C4
+  index-70/index-10 Jacobi reduction.
+inputs:
+  - path: attempts/wave121-vector-theta-orbits/package-manifest.sha256
+    sha256: ab3ede13ea60315885ac077cd8e0b3e7b124f34329d51e82fa2f4d08434cf803
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave80-f7-overlattice-code/package-manifest.sha256
+    sha256: 25129c86f97c8f9513eff04ada641c458b924f8edd583e6e6abc76d114c64077
+  - path: verification/wave86-level7-exact/package-manifest.sha256
+    sha256: cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2
+  - path: verification/wave97-f7-exterior-matroid/package-manifest.sha256
+    sha256: e7cdd56b40a385ffff42dcdf66f0a0f5b54f60af8472d6a9a9718f7209114992
+  - path: verification/wave101-all-rank-level7-lp/package-manifest.sha256
+    sha256: 79fd0331a936761f2394d58f835df80e41ad855cdf88660a2ccfd5841c5d7aba
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+  - path: verification/wave116-c4-jacobi-theta/package-manifest.sha256
+    sha256: e44afa352f51c192d6c5ac8584ccd6334dd69a3d11856f4ac0254283829bbfb8
+method: >-
+  Preinspection byte freeze; clean-room exact Eisenstein/Fricke expansion
+  through y77; exact finite-orthogonal orbit counts; rational optimizer and
+  identity replay; independent lattice marking, Poisson, unary-theta finite
+  Fourier, support, and truncated-null reconstruction; comparison only
+  after canonical independent results existed.
+command: >-
+  python -B verification/wave121-vector-theta-orbits/independent_verify.py
+  --verify verification/wave121-vector-theta-orbits/independent-results.json;
+  python -B verification/wave121-vector-theta-orbits/compare.py;
+  python -B -m unittest discover -s
+  verification/wave121-vector-theta-orbits -p "test_*.py" -v
+outputs:
+  - path: verification/wave121-vector-theta-orbits/independent-results.json
+  - path: verification/wave121-vector-theta-orbits/verification-report.md
+  - path: verification/wave121-vector-theta-orbits/comparison.json
+verdict: VERIFIED_SCOPED
+limitations:
+  - Orbit aggregates do not imply component equality or automorphism lifts.
+  - Formal rational or even-integral theta prefixes are not lattices.
+  - The truncated Jacobi table is not a Jacobi form.
+  - No full half-integral-weight module or exact upper dual is present.
+  - Rank 28, rank 30, Conway-99, and novelty remain UNKNOWN.

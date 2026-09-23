@@ -1,0 +1,3144 @@
+{
+  "boundary": {
+    "Conway_99": "UNKNOWN",
+    "all_rank_row_excluded": false,
+    "crucial_scalar_null": "Every q=2,4,...,14 row has an exact feasible first-15-coefficient scalar control with x7=x8=x9=0.",
+    "graph_constructed": false,
+    "lattice_realized": false,
+    "novelty": "UNKNOWN"
+  },
+  "claim_label": "VERIFIED",
+  "conditional_scope": "scalar theta cones attached to the Wave 71 level-7 lattice rows q=2,4,...,14 for a hypothetical srg(99,14,1,2)",
+  "dictionary_scope": {
+    "certified": {
+      "x7": "N14, norm-14 integer -4 eigenvectors",
+      "x8": "N16, norm-16 integer -4 eigenvectors",
+      "x9": "N18, norm-18 integer -4 eigenvectors"
+    },
+    "not_certified": "No signed-unit-support or integer-eigenvector dictionary is asserted for x10,x11,x12,x13,x14."
+  },
+  "discovery_manifest_sha256": "54d620a8644d7efe5d2e418869b035331127862c2125ef3da325272417307619",
+  "format": "wave101-independent-verifier-v1",
+  "mod2_lattice_upper_comparisons": {
+    "assessment": "These universal rank-44 lattice upper bounds are many orders of magnitude above the verified scalar LP lower bounds.",
+    "nonzero_cosets_of_2K": 17592186044415,
+    "prefix_x7_to_x13_upper": 35184372088830,
+    "prefix_x7_to_x14_upper": 1548112371908520,
+    "proof": "If u and v are non-antipodal representatives of one class modulo 2K, then (u+v)/2 and (u-v)/2 are nonzero lattice vectors and the parallelogram law forces ||u||^2+||v||^2 at least 4*min(K)=56. Thus below norm 28 each nonzero class has at most one antipodal pair. At norm 28, equality forces same-class representatives to be pairwise orthogonal, hence at most rank(K)=44 antipodal pairs. The same 44-pair cap bounds both the unweighted and weights-8-through-1 sums per nonzero mod-2 class.",
+    "triangular_weighted_upper": 1548112371908520
+  },
+  "mod7_scope": {
+    "rows": [
+      {
+        "affine_direction_rank_on_x7_x8_x9": 3,
+        "no_affine_relation_on_x7_x8_x9": true,
+        "objectives": {
+          "prefix10": {
+            "direction_residues_mod_7": [
+              0,
+              5,
+              6,
+              4,
+              0,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix11": {
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6,
+              2,
+              1,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix12": {
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2,
+              5,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix13": {
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2,
+              0,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix14": {
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3,
+              1,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          },
+          "prefix7": {
+            "direction_residues_mod_7": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix8": {
+            "direction_residues_mod_7": [
+              4,
+              5,
+              6,
+              0,
+              1,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix9": {
+            "direction_residues_mod_7": [
+              0,
+              0,
+              6,
+              4,
+              1,
+              4
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "triangular": {
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2,
+              1,
+              3
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          }
+        },
+        "q": 2,
+        "weight": 148
+      },
+      {
+        "affine_direction_rank_on_x7_x8_x9": 3,
+        "no_affine_relation_on_x7_x8_x9": true,
+        "objectives": {
+          "prefix10": {
+            "direction_residues_mod_7": [
+              0,
+              5,
+              6,
+              4,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix11": {
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6,
+              2,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix12": {
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2,
+              5
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix13": {
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix14": {
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          },
+          "prefix7": {
+            "direction_residues_mod_7": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix8": {
+            "direction_residues_mod_7": [
+              4,
+              5,
+              6,
+              0,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix9": {
+            "direction_residues_mod_7": [
+              0,
+              0,
+              6,
+              4,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "triangular": {
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          }
+        },
+        "q": 4,
+        "weight": 142
+      },
+      {
+        "affine_direction_rank_on_x7_x8_x9": 3,
+        "no_affine_relation_on_x7_x8_x9": true,
+        "objectives": {
+          "prefix10": {
+            "direction_residues_mod_7": [
+              0,
+              5,
+              6,
+              4,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix11": {
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6,
+              2,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix12": {
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2,
+              5
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix13": {
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix14": {
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          },
+          "prefix7": {
+            "direction_residues_mod_7": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix8": {
+            "direction_residues_mod_7": [
+              4,
+              5,
+              6,
+              0,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix9": {
+            "direction_residues_mod_7": [
+              0,
+              0,
+              6,
+              4,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "triangular": {
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2,
+              1
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          }
+        },
+        "q": 6,
+        "weight": 136
+      },
+      {
+        "affine_direction_rank_on_x7_x8_x9": 3,
+        "no_affine_relation_on_x7_x8_x9": true,
+        "objectives": {
+          "prefix10": {
+            "direction_residues_mod_7": [
+              0,
+              5,
+              6,
+              4
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix11": {
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix12": {
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix13": {
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix14": {
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          },
+          "prefix7": {
+            "direction_residues_mod_7": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix8": {
+            "direction_residues_mod_7": [
+              4,
+              5,
+              6,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix9": {
+            "direction_residues_mod_7": [
+              0,
+              0,
+              6,
+              4
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "triangular": {
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          }
+        },
+        "q": 8,
+        "weight": 130
+      },
+      {
+        "affine_direction_rank_on_x7_x8_x9": 3,
+        "no_affine_relation_on_x7_x8_x9": true,
+        "objectives": {
+          "prefix10": {
+            "direction_residues_mod_7": [
+              0,
+              5,
+              6,
+              4
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix11": {
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix12": {
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix13": {
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix14": {
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          },
+          "prefix7": {
+            "direction_residues_mod_7": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix8": {
+            "direction_residues_mod_7": [
+              4,
+              5,
+              6,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix9": {
+            "direction_residues_mod_7": [
+              0,
+              0,
+              6,
+              4
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "triangular": {
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          }
+        },
+        "q": 10,
+        "weight": 124
+      },
+      {
+        "affine_direction_rank_on_x7_x8_x9": 3,
+        "no_affine_relation_on_x7_x8_x9": true,
+        "objectives": {
+          "prefix10": {
+            "direction_residues_mod_7": [
+              0,
+              5,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix11": {
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix12": {
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix13": {
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix14": {
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          },
+          "prefix7": {
+            "direction_residues_mod_7": [
+              6,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix8": {
+            "direction_residues_mod_7": [
+              4,
+              5,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix9": {
+            "direction_residues_mod_7": [
+              0,
+              0,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "triangular": {
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          }
+        },
+        "q": 12,
+        "weight": 118
+      },
+      {
+        "affine_direction_rank_on_x7_x8_x9": 3,
+        "no_affine_relation_on_x7_x8_x9": true,
+        "objectives": {
+          "prefix10": {
+            "direction_residues_mod_7": [
+              0,
+              5,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix11": {
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix12": {
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix13": {
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix14": {
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          },
+          "prefix7": {
+            "direction_residues_mod_7": [
+              6,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix8": {
+            "direction_residues_mod_7": [
+              4,
+              5,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "prefix9": {
+            "direction_residues_mod_7": [
+              0,
+              0,
+              6
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 2
+          },
+          "triangular": {
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0
+            ],
+            "fixed_residue": false,
+            "particular_residue_mod_7": 6
+          }
+        },
+        "q": 14,
+        "weight": 112
+      }
+    ],
+    "scope": "For q=2,4,...,14 the level-one mod-7 congruence forces no affine relation among x7,x8,x9, and every tested prefix or triangular objective varies in an affine direction. Only antipodal evenness is used to round the rational LP bounds."
+  },
+  "modular_space": {
+    "basis_products": [
+      [
+        [
+          9,
+          "T"
+        ],
+        [
+          13,
+          "T"
+        ]
+      ],
+      [
+        [
+          9,
+          "T"
+        ],
+        [
+          13,
+          "C"
+        ]
+      ],
+      [
+        [
+          9,
+          "C"
+        ],
+        [
+          13,
+          "T"
+        ]
+      ],
+      [
+        [
+          9,
+          "C"
+        ],
+        [
+          13,
+          "C"
+        ]
+      ],
+      [
+        [
+          7,
+          "T"
+        ],
+        [
+          15,
+          "T"
+        ]
+      ],
+      [
+        [
+          7,
+          "T"
+        ],
+        [
+          15,
+          "C"
+        ]
+      ],
+      [
+        [
+          7,
+          "C"
+        ],
+        [
+          15,
+          "T"
+        ]
+      ],
+      [
+        [
+          7,
+          "C"
+        ],
+        [
+          15,
+          "C"
+        ]
+      ],
+      [
+        [
+          5,
+          "T"
+        ],
+        [
+          17,
+          "T"
+        ]
+      ],
+      [
+        [
+          5,
+          "T"
+        ],
+        [
+          17,
+          "C"
+        ]
+      ],
+      [
+        [
+          5,
+          "C"
+        ],
+        [
+          17,
+          "T"
+        ]
+      ],
+      [
+        [
+          5,
+          "C"
+        ],
+        [
+          17,
+          "C"
+        ]
+      ],
+      [
+        [
+          3,
+          "T"
+        ],
+        [
+          19,
+          "T"
+        ]
+      ],
+      [
+        [
+          3,
+          "T"
+        ],
+        [
+          19,
+          "C"
+        ]
+      ],
+      [
+        [
+          3,
+          "C"
+        ],
+        [
+          19,
+          "T"
+        ]
+      ]
+    ],
+    "basis_rank_through_q14": 15,
+    "cusp_dimension": 13,
+    "cusps": 2,
+    "dimension": 15,
+    "eisenstein_dimension": 2,
+    "elliptic_order_2": 0,
+    "elliptic_order_3": 2,
+    "fricke_square_is_identity": true,
+    "genus": 0,
+    "index": 8,
+    "sturm_bound": 14
+  },
+  "normalizations": {
+    "fricke_formulas": {
+      "E_k(1,chi)": "-i*7^((1-k)/2)*E_k(chi,1)",
+      "E_k(chi,1)": "-i*7^((k-1)/2)*E_k(1,chi)"
+    },
+    "poisson_formula": "Theta_L=-7^(11-q/2)*(Theta_K|_22 W_7)",
+    "theta_series": "Theta=sum_v q^((v,v)/2)",
+    "x": "Theta_K, with x_n counting vectors of norm 2n",
+    "y": "Theta_L"
+  },
+  "role": "verifier",
+  "rows": [
+    {
+      "poisson_factor": "-282475249",
+      "prefix_bounds": {
+        "prefix10": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix11": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x11": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix12": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x11": "1",
+            "x12": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix13": {
+          "active_constraints": [
+            "x7",
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "329/2",
+          "dual_multipliers": {
+            "x10": "23/16",
+            "x11": "9/8",
+            "x12": "17/16",
+            "x13": "15/16",
+            "x7": "23/16",
+            "x8": "7/8",
+            "y1": "49/16"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 166,
+          "primal_x14": "5619/2",
+          "primal_x7_to_x13": [
+            "0",
+            "0",
+            "329/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "5619/2",
+            "21704397/2",
+            "4460130954",
+            "484072054182",
+            "22268504225964",
+            "566987548308939",
+            "9362784812322192",
+            "111072816462806239",
+            "1015114953240051759",
+            "15024203005998158355/2",
+            "46700488342916150568",
+            "250798795541418965526",
+            "1189060644485696273568"
+          ]
+        },
+        "prefix14": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "x14",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "717848/3971",
+          "dual_multipliers": {
+            "x10": "6003/3971",
+            "x11": "4568/3971",
+            "x12": "4258/3971",
+            "x13": "337/361",
+            "x14": "3948/3971",
+            "x8": "4018/3971",
+            "y1": "18571/3971"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 182,
+          "primal_x14": "0",
+          "primal_x7_to_x13": [
+            "44952/3971",
+            "0",
+            "672896/3971",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "12946176/3971",
+            "43951323312/3971",
+            "17723571565320/3971",
+            "1922114589965352/3971",
+            "88427988568218144/3971",
+            "2251512431069330160/3971",
+            "102990612287921760/11",
+            "441070115883724324016/3971",
+            "4031021510836839132384/3971",
+            "29830555698187589110512/3971",
+            "185447637532271063993904/3971",
+            "995922017566698510987888/3971",
+            "4721759817848200356721920/3971"
+          ]
+        },
+        "prefix7": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix8": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix9": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        }
+      },
+      "q": 2,
+      "r": 42,
+      "triangular_weighted_bound": {
+        "active_constraints": [
+          "x8",
+          "x10",
+          "x11",
+          "x12",
+          "x13",
+          "x14",
+          "y1"
+        ],
+        "all_dual_multipliers_nonnegative": true,
+        "all_primal_forms_nonnegative": true,
+        "bound": "4396992/3971",
+        "dual_multipliers": {
+          "x10": "32457/3971",
+          "x11": "19606/3971",
+          "x12": "13689/3971",
+          "x13": "576/361",
+          "x14": "3801/3971",
+          "x8": "28835/3971",
+          "y1": "120344/3971"
+        },
+        "exact_strong_duality": true,
+        "parity_rounded_bound": 1108,
+        "primal_x14": "0",
+        "primal_x7_to_x13": [
+          "44952/3971",
+          "0",
+          "672896/3971",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primal_y1_to_y14": [
+          "0",
+          "12946176/3971",
+          "43951323312/3971",
+          "17723571565320/3971",
+          "1922114589965352/3971",
+          "88427988568218144/3971",
+          "2251512431069330160/3971",
+          "102990612287921760/11",
+          "441070115883724324016/3971",
+          "4031021510836839132384/3971",
+          "29830555698187589110512/3971",
+          "185447637532271063993904/3971",
+          "995922017566698510987888/3971",
+          "4721759817848200356721920/3971"
+        ]
+      },
+      "zero_prefix_control": {
+        "active_constraints": [
+          "x7",
+          "x8",
+          "x9",
+          "x10",
+          "x11",
+          "x12",
+          "y1"
+        ],
+        "all_22_coordinates_nonnegative": true,
+        "maximum_zero_prefix_end": 12,
+        "x7_to_x14": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2632",
+          "1000"
+        ],
+        "x7_x8_x9_are_zero": true,
+        "y1_to_y14": [
+          "0",
+          "1000",
+          "10648712",
+          "4464109880",
+          "484047985200",
+          "22268505853856",
+          "566988121891816",
+          "9362783288799520",
+          "111072807104806896",
+          "1015115025714338224",
+          "7512101317756240624",
+          "46700488441817122192",
+          "250798795932509980736",
+          "1189060644320504404992"
+        ]
+      }
+    },
+    {
+      "poisson_factor": "-40353607",
+      "prefix_bounds": {
+        "prefix10": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix11": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x11": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix12": {
+          "active_constraints": [
+            "x8",
+            "x9",
+            "x10",
+            "x11",
+            "x12",
+            "y1",
+            "y2"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "704/5",
+          "dual_multipliers": {
+            "x10": "27/35",
+            "x11": "32/35",
+            "x12": "34/35",
+            "x8": "2/7",
+            "x9": "24/35",
+            "y1": "43/5",
+            "y2": "1/5"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 142,
+          "primal_x14": "244368/5",
+          "primal_x7_to_x13": [
+            "704/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "87178/5"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "9582678/5",
+            "3215880668/5",
+            "345452663556/5",
+            "15905451632224/5",
+            "81000585630470",
+            "6687684355980474/5",
+            "79337631999637396/5",
+            "145016451026726608",
+            "1073157599397320388",
+            "33357488044678025844/5",
+            "179141998271110669872/5",
+            "169865805674139733008"
+          ]
+        },
+        "prefix13": {
+          "active_constraints": [
+            "x7",
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "8225/8",
+          "dual_multipliers": {
+            "x10": "23/16",
+            "x11": "9/8",
+            "x12": "17/16",
+            "x13": "15/16",
+            "x7": "23/16",
+            "x8": "7/8",
+            "y1": "343/16"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 1030,
+          "primal_x14": "766443/8",
+          "primal_x7_to_x13": [
+            "0",
+            "0",
+            "8225/8",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "7293/8",
+            "13804179/8",
+            "1267731855/2",
+            "138347916237/2",
+            "3181196943165",
+            "323991442673109/4",
+            "1337541648269910",
+            "63470209556910145/4",
+            "580065473344995297/4",
+            "8585259943207133325/8",
+            "6671498265934111806",
+            "71656798146067881621/2",
+            "169865806458928844520"
+          ]
+        },
+        "prefix14": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "x14",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "6286208/3971",
+          "dual_multipliers": {
+            "x10": "6003/3971",
+            "x11": "4568/3971",
+            "x12": "4258/3971",
+            "x13": "337/361",
+            "x14": "3948/3971",
+            "x8": "4018/3971",
+            "y1": "129997/3971"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 1584,
+          "primal_x14": "0",
+          "primal_x7_to_x13": [
+            "1532886/3971",
+            "0",
+            "4753322/3971",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "12338352/3971",
+            "11028109842/3971",
+            "2577447032004/3971",
+            "274029518121246/3971",
+            "12631355555766240/3971",
+            "321666261731029800/3971",
+            "14712857546055462/11",
+            "63009864007462048808/3971",
+            "575860152215848246608/3971",
+            "4261511472274813179078/3971",
+            "26492511442329973838700/3971",
+            "142274575017020750942316/3971",
+            "674537110606385458946928/3971"
+          ]
+        },
+        "prefix7": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix8": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix9": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        }
+      },
+      "q": 4,
+      "r": 40,
+      "triangular_weighted_bound": {
+        "active_constraints": [
+          "x8",
+          "x10",
+          "x11",
+          "x12",
+          "x13",
+          "x14",
+          "y1"
+        ],
+        "all_dual_multipliers_nonnegative": true,
+        "all_primal_forms_nonnegative": true,
+        "bound": "40783020/3971",
+        "dual_multipliers": {
+          "x10": "32457/3971",
+          "x11": "19606/3971",
+          "x12": "13689/3971",
+          "x13": "576/361",
+          "x14": "3801/3971",
+          "x8": "28835/3971",
+          "y1": "842408/3971"
+        },
+        "exact_strong_duality": true,
+        "parity_rounded_bound": 10272,
+        "primal_x14": "0",
+        "primal_x7_to_x13": [
+          "1532886/3971",
+          "0",
+          "4753322/3971",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primal_y1_to_y14": [
+          "0",
+          "12338352/3971",
+          "11028109842/3971",
+          "2577447032004/3971",
+          "274029518121246/3971",
+          "12631355555766240/3971",
+          "321666261731029800/3971",
+          "14712857546055462/11",
+          "63009864007462048808/3971",
+          "575860152215848246608/3971",
+          "4261511472274813179078/3971",
+          "26492511442329973838700/3971",
+          "142274575017020750942316/3971",
+          "674537110606385458946928/3971"
+        ]
+      },
+      "zero_prefix_control": {
+        "active_constraints": [
+          "x7",
+          "x8",
+          "x9",
+          "x10",
+          "x11",
+          "y1",
+          "y2"
+        ],
+        "all_22_coordinates_nonnegative": true,
+        "maximum_zero_prefix_end": 11,
+        "x7_to_x14": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "4928",
+          "21378",
+          "89424"
+        ],
+        "x7_x8_x9_are_zero": true,
+        "y1_to_y14": [
+          "0",
+          "0",
+          "1516382",
+          "637912044",
+          "69147099252",
+          "3181237251808",
+          "80998181052294",
+          "1337540905613682",
+          "15867543025854212",
+          "145016432031849168",
+          "1073157337334037060",
+          "6671498333567626020",
+          "35828399424880431600",
+          "169865806366658247696"
+        ]
+      }
+    },
+    {
+      "poisson_factor": "-5764801",
+      "prefix_bounds": {
+        "prefix10": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix11": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x11": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix12": {
+          "active_constraints": [
+            "x8",
+            "x9",
+            "x10",
+            "x11",
+            "x12",
+            "y1",
+            "y2"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "6632/5",
+          "dual_multipliers": {
+            "x10": "27/35",
+            "x11": "32/35",
+            "x12": "34/35",
+            "x8": "2/7",
+            "x9": "24/35",
+            "y1": "301/5",
+            "y2": "7/5"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 1328,
+          "primal_x14": "1666944/5",
+          "primal_x7_to_x13": [
+            "6632/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "612304/5"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "3723552/5",
+            "492483992/5",
+            "48991643064/5",
+            "2271473749216/5",
+            "11574243768992",
+            "955362019557456/5",
+            "11333842175998384/5",
+            "20716658291583520",
+            "153308551947470640",
+            "4765350979284830256/5",
+            "25591715450580173328/5",
+            "24266542881051847296"
+          ]
+        },
+        "prefix13": {
+          "active_constraints": [
+            "x7",
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "14147/2",
+          "dual_multipliers": {
+            "x10": "23/16",
+            "x11": "9/8",
+            "x12": "17/16",
+            "x13": "15/16",
+            "x7": "23/16",
+            "x8": "7/8",
+            "y1": "2401/16"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 7074,
+          "primal_x14": "1493553/2",
+          "primal_x7_to_x13": [
+            "0",
+            "0",
+            "14147/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "1281/2",
+            "843423/2",
+            "87256638",
+            "9902801538",
+            "454438759908",
+            "11570762433897",
+            "191078339119584",
+            "2266800378716293",
+            "20716570492848405",
+            "306616697202301185/2",
+            "953071112079534840",
+            "5118342434693222994",
+            "24266543883676354656"
+          ]
+        },
+        "prefix14": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "x14",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "45264728/3971",
+          "dual_multipliers": {
+            "x10": "6003/3971",
+            "x11": "4568/3971",
+            "x12": "4258/3971",
+            "x13": "337/361",
+            "x14": "3948/3971",
+            "x8": "4018/3971",
+            "y1": "909979/3971"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 11400,
+          "primal_x14": "0",
+          "primal_x7_to_x13": [
+            "11948424/3971",
+            "0",
+            "33316304/3971",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "12251520/3971",
+            "6324793632/3971",
+            "413714955816/3971",
+            "38588793572088/3971",
+            "1803265125415968/3971",
+            "45973951825558320/3971",
+            "2101749725788848/11",
+            "9001256596567438064/3971",
+            "82265672412849548640/3971",
+            "608790868572988046016/3971",
+            "3784636286624103816528/3971",
+            "20324940367066785221520/3971",
+            "96362438143269044979072/3971"
+          ]
+        },
+        "prefix7": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix8": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix9": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        }
+      },
+      "q": 6,
+      "r": 38,
+      "triangular_weighted_bound": {
+        "active_constraints": [
+          "x8",
+          "x10",
+          "x11",
+          "x12",
+          "x13",
+          "x14",
+          "y1"
+        ],
+        "all_dual_multipliers_nonnegative": true,
+        "all_primal_forms_nonnegative": true,
+        "bound": "295485216/3971",
+        "dual_multipliers": {
+          "x10": "32457/3971",
+          "x11": "19606/3971",
+          "x12": "13689/3971",
+          "x13": "576/361",
+          "x14": "3801/3971",
+          "x8": "28835/3971",
+          "y1": "5896856/3971"
+        },
+        "exact_strong_duality": true,
+        "parity_rounded_bound": 74412,
+        "primal_x14": "0",
+        "primal_x7_to_x13": [
+          "11948424/3971",
+          "0",
+          "33316304/3971",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primal_y1_to_y14": [
+          "0",
+          "12251520/3971",
+          "6324793632/3971",
+          "413714955816/3971",
+          "38588793572088/3971",
+          "1803265125415968/3971",
+          "45973951825558320/3971",
+          "2101749725788848/11",
+          "9001256596567438064/3971",
+          "82265672412849548640/3971",
+          "608790868572988046016/3971",
+          "3784636286624103816528/3971",
+          "20324940367066785221520/3971",
+          "96362438143269044979072/3971"
+        ]
+      },
+      "zero_prefix_control": {
+        "active_constraints": [
+          "x7",
+          "x8",
+          "x9",
+          "x10",
+          "x11",
+          "y1",
+          "y2"
+        ],
+        "all_22_coordinates_nonnegative": true,
+        "maximum_zero_prefix_end": 11,
+        "x7_to_x14": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "46424",
+          "159600",
+          "715392"
+        ],
+        "x7_x8_x9_are_zero": true,
+        "y1_to_y14": [
+          "0",
+          "0",
+          "206192",
+          "91412496",
+          "9874454688",
+          "454492478944",
+          "11571007737648",
+          "191077833346848",
+          "2266790810026400",
+          "20716632728672160",
+          "153308199268149408",
+          "953071171051682424",
+          "5118342781472737152",
+          "24266543813028874368"
+        ]
+      }
+    },
+    {
+      "poisson_factor": "-823543",
+      "prefix_bounds": {
+        "prefix10": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix11": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x11": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix12": {
+          "active_constraints": [
+            "x8",
+            "x9",
+            "x10",
+            "x11",
+            "x12",
+            "y1",
+            "y2"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "48128/5",
+          "dual_multipliers": {
+            "x10": "27/35",
+            "x11": "32/35",
+            "x12": "34/35",
+            "x8": "2/7",
+            "x9": "24/35",
+            "y1": "2107/5",
+            "y2": "49/5"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 9626,
+          "primal_x14": "11624976/5",
+          "primal_x7_to_x13": [
+            "48128/5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "4288186/5"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "2886534/5",
+            "103427324/5",
+            "6640068708/5",
+            "323762623072/5",
+            "1656194931638",
+            "136458828639882/5",
+            "1619015058335668/5",
+            "2959545043705936",
+            "21901545168920676",
+            "680759969942945172/5",
+            "3655960761932959536/5",
+            "3466648196325006480"
+          ]
+        },
+        "prefix13": {
+          "active_constraints": [
+            "x7",
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "395129/8",
+          "dual_multipliers": {
+            "x10": "23/16",
+            "x11": "9/8",
+            "x12": "17/16",
+            "x13": "15/16",
+            "x7": "23/16",
+            "x8": "7/8",
+            "y1": "16807/16"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 49392,
+          "primal_x14": "42428595/8",
+          "primal_x7_to_x13": [
+            "0",
+            "0",
+            "395129/8",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "33699/56",
+            "13185357/56",
+            "128374353/14",
+            "20096908371/14",
+            "454313136099/7",
+            "6610422173085/4",
+            "191085064686762/7",
+            "9067402562011231/28",
+            "82864782426153663/28",
+            "1226474367266504595/56",
+            "136152947243166702",
+            "1462382972717669469/2",
+            "3466649230068856104"
+          ]
+        },
+        "prefix14": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "x14",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "28919488/361",
+          "dual_multipliers": {
+            "x10": "6003/3971",
+            "x11": "4568/3971",
+            "x12": "4258/3971",
+            "x13": "337/361",
+            "x14": "3948/3971",
+            "x8": "4018/3971",
+            "y1": "6369853/3971"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 80110,
+          "primal_x14": "0",
+          "primal_x7_to_x13": [
+            "7714290/361",
+            "0",
+            "21205198/361",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "7788528/2527",
+            "3597294474/2527",
+            "66570237684/2527",
+            "3152802768678/2527",
+            "163160495232864/2527",
+            "599030556797880/361",
+            "191012750932302/7",
+            "818198978643405064/2527",
+            "7478657007904376592/2527",
+            "55346861482644653550/2527",
+            "49150374683933203812/361",
+            "263960362591084815972/361",
+            "1251459669347622089424/361"
+          ]
+        },
+        "prefix7": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix8": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix9": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        }
+      },
+      "q": 8,
+      "r": 36,
+      "triangular_weighted_bound": {
+        "active_constraints": [
+          "x8",
+          "x10",
+          "x11",
+          "x12",
+          "x13",
+          "x14",
+          "y1"
+        ],
+        "all_dual_multipliers_nonnegative": true,
+        "all_primal_forms_nonnegative": true,
+        "bound": "188945508/361",
+        "dual_multipliers": {
+          "x10": "32457/3971",
+          "x11": "19606/3971",
+          "x12": "13689/3971",
+          "x13": "576/361",
+          "x14": "3801/3971",
+          "x8": "28835/3971",
+          "y1": "41277992/3971"
+        },
+        "exact_strong_duality": true,
+        "parity_rounded_bound": 523396,
+        "primal_x14": "0",
+        "primal_x7_to_x13": [
+          "7714290/361",
+          "0",
+          "21205198/361",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primal_y1_to_y14": [
+          "0",
+          "7788528/2527",
+          "3597294474/2527",
+          "66570237684/2527",
+          "3152802768678/2527",
+          "163160495232864/2527",
+          "599030556797880/361",
+          "191012750932302/7",
+          "818198978643405064/2527",
+          "7478657007904376592/2527",
+          "55346861482644653550/2527",
+          "49150374683933203812/361",
+          "263960362591084815972/361",
+          "1251459669347622089424/361"
+        ]
+      },
+      "zero_prefix_control": {
+        "active_constraints": [
+          "x7",
+          "x8",
+          "x9",
+          "x10",
+          "x11",
+          "y1",
+          "y2"
+        ],
+        "all_22_coordinates_nonnegative": true,
+        "maximum_zero_prefix_end": 11,
+        "x7_to_x14": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "336896",
+          "1127154",
+          "5097168"
+        ],
+        "x7_x8_x9_are_zero": true,
+        "y1_to_y14": [
+          "0",
+          "0",
+          "19022",
+          "13341132",
+          "1406934036",
+          "64957511392",
+          "1652840121270",
+          "27297394451586",
+          "323826207765284",
+          "2959518542504016",
+          "21901179544451172",
+          "136153004977976196",
+          "731191832414495088",
+          "3466649162510392464"
+        ]
+      }
+    },
+    {
+      "poisson_factor": "-117649",
+      "prefix_bounds": {
+        "prefix10": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix11": {
+          "active_constraints": [
+            "x8",
+            "x9",
+            "x10",
+            "x11",
+            "y1",
+            "y2",
+            "y3"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "27008/29",
+          "dual_multipliers": {
+            "x10": "57/58",
+            "x11": "405/406",
+            "x8": "281/406",
+            "x9": "186/203",
+            "y1": "2863/29",
+            "y2": "273/58",
+            "y3": "7/58"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 932,
+          "primal_x14": "1029540096/29",
+          "primal_x7_to_x13": [
+            "27008/29",
+            "0",
+            "0",
+            "0",
+            "0",
+            "67790520/29",
+            "228344704/29"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "0",
+            "66398192/29",
+            "5689724544/29",
+            "269897941600/29",
+            "6844156691584/29",
+            "113103221764176/29",
+            "1341525946569088/29",
+            "12260861012552096/29",
+            "90733843060592256/29",
+            "564061479672291384/29",
+            "3029223622178218752/29",
+            "14361833201943057408/29"
+          ]
+        },
+        "prefix12": {
+          "active_constraints": [
+            "x8",
+            "x9",
+            "x10",
+            "x11",
+            "x12",
+            "y1",
+            "y2"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "67720",
+          "dual_multipliers": {
+            "x10": "27/35",
+            "x11": "32/35",
+            "x12": "34/35",
+            "x8": "2/7",
+            "x9": "24/35",
+            "y1": "14749/5",
+            "y2": "343/5"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 67720,
+          "primal_x14": "16266240",
+          "primal_x7_to_x13": [
+            "67720",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "6003872"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "553392",
+            "9569560",
+            "117968760",
+            "9103635296",
+            "239330812016",
+            "3894531701760",
+            "46236522591056",
+            "422814579723424",
+            "3129115629127824",
+            "19449393721678032",
+            "104456304139528656",
+            "495234669935457792"
+          ]
+        },
+        "prefix13": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "y1",
+            "y4"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "2778944218/7501",
+          "dual_multipliers": {
+            "x10": "1668880/1102647",
+            "x11": "59792/52507",
+            "x12": "1568299/1470196",
+            "x13": "1025039/1102647",
+            "x8": "98103/105014",
+            "y1": "189295183/22503",
+            "y4": "1127/90012"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 370478,
+          "primal_x14": "246848018790/7501",
+          "primal_x7_to_x13": [
+            "129732072/7501",
+            "0",
+            "2649212146/7501",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "509502/577",
+            "199765554/577",
+            "0",
+            "1531394643312/7501",
+            "69121841454864/7501",
+            "1774042489951740/7501",
+            "29249861110680000/7501",
+            "347021031266959756/7501",
+            "3170905216252803804/7501",
+            "23470609422253016982/7501",
+            "11222698157672837808/577",
+            "783522297126677008488/7501",
+            "3714761358429991217280/7501"
+          ]
+        },
+        "prefix14": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "x14",
+            "y1"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "2228061848/3971",
+          "dual_multipliers": {
+            "x10": "6003/3971",
+            "x11": "4568/3971",
+            "x12": "4258/3971",
+            "x13": "337/361",
+            "x14": "3948/3971",
+            "x8": "4018/3971",
+            "y1": "44588971/3971"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 561084,
+          "primal_x14": "0",
+          "primal_x7_to_x13": [
+            "595218552/3971",
+            "0",
+            "1632843296/3971",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "599629824/194579",
+            "272288358288/194579",
+            "2962176225480/194579",
+            "7325088639048/194579",
+            "1735267702580256/194579",
+            "6740737172655120/27797",
+            "2096874001520640/539",
+            "8992713944647579184/194579",
+            "82262109805638299616/194579",
+            "608987730461813190288/194579",
+            "540596685562018118928/27797",
+            "2903571540948678584016/27797",
+            "13766012759321698890240/27797"
+          ]
+        },
+        "prefix7": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix8": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix9": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        }
+      },
+      "q": 10,
+      "r": 34,
+      "triangular_weighted_bound": {
+        "active_constraints": [
+          "x8",
+          "x10",
+          "x11",
+          "x12",
+          "x13",
+          "x14",
+          "y1"
+        ],
+        "all_dual_multipliers_nonnegative": true,
+        "all_primal_forms_nonnegative": true,
+        "bound": "14558808192/3971",
+        "dual_multipliers": {
+          "x10": "32457/3971",
+          "x11": "19606/3971",
+          "x12": "13689/3971",
+          "x13": "576/361",
+          "x14": "3801/3971",
+          "x8": "28835/3971",
+          "y1": "288945944/3971"
+        },
+        "exact_strong_duality": true,
+        "parity_rounded_bound": 3666284,
+        "primal_x14": "0",
+        "primal_x7_to_x13": [
+          "595218552/3971",
+          "0",
+          "1632843296/3971",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primal_y1_to_y14": [
+          "0",
+          "599629824/194579",
+          "272288358288/194579",
+          "2962176225480/194579",
+          "7325088639048/194579",
+          "1735267702580256/194579",
+          "6740737172655120/27797",
+          "2096874001520640/539",
+          "8992713944647579184/194579",
+          "82262109805638299616/194579",
+          "608987730461813190288/194579",
+          "540596685562018118928/27797",
+          "2903571540948678584016/27797",
+          "13766012759321698890240/27797"
+        ]
+      },
+      "zero_prefix_control": {
+        "active_constraints": [
+          "x7",
+          "x8",
+          "x9",
+          "x10",
+          "y1",
+          "y2",
+          "y3"
+        ],
+        "all_22_coordinates_nonnegative": true,
+        "maximum_zero_prefix_end": 10,
+        "x7_to_x14": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "378112",
+          "1235864",
+          "7521920",
+          "35769600"
+        ],
+        "x7_x8_x9_are_zero": true,
+        "y1_to_y14": [
+          "0",
+          "0",
+          "0",
+          "1918000",
+          "201601792",
+          "9268544992",
+          "236214042752",
+          "3899153624464",
+          "46262304274816",
+          "422786607969824",
+          "3128736202042752",
+          "19450448048093720",
+          "104455954742621440",
+          "495235567565005824"
+        ]
+      }
+    },
+    {
+      "poisson_factor": "-16807",
+      "prefix_bounds": {
+        "prefix10": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x10": "1",
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix11": {
+          "active_constraints": [
+            "x8",
+            "x9",
+            "x10",
+            "x11",
+            "y1",
+            "y2",
+            "y3"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "282641/29",
+          "dual_multipliers": {
+            "x10": "57/58",
+            "x11": "405/406",
+            "x8": "281/406",
+            "x9": "186/203",
+            "y1": "20041/29",
+            "y2": "1911/58",
+            "y3": "49/58"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 9748,
+          "primal_x14": "7182421488/29",
+          "primal_x7_to_x13": [
+            "282641/29",
+            "0",
+            "0",
+            "0",
+            "0",
+            "471604077/29",
+            "1596081214/29"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "0",
+            "21649943/29",
+            "662675517/29",
+            "39316165168/29",
+            "974886412096/29",
+            "16170824758284/29",
+            "191603518204042/29",
+            "1751553793355072/29",
+            "12962414138155650/29",
+            "80579099152031781/29",
+            "432746593366854438/29",
+            "2051691278294407824/29"
+          ]
+        },
+        "prefix12": {
+          "active_constraints": [
+            "x9",
+            "x10",
+            "x11",
+            "x12",
+            "y1",
+            "y2",
+            "y5"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "101473489976/157205",
+          "dual_multipliers": {
+            "x10": "693783/1100435",
+            "x11": "135904/157205",
+            "x12": "1052596/1100435",
+            "x9": "75318/157205",
+            "y1": "5057199007/157205",
+            "y2": "118598179/157205",
+            "y5": "98/31441"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 645486,
+          "primal_x14": "37265456525328/157205",
+          "primal_x7_to_x13": [
+            "7328892884/157205",
+            "94144597092/157205",
+            "0",
+            "0",
+            "0",
+            "0",
+            "5947923410254/157205"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "41170696938/157205",
+            "28942197284/157205",
+            "0",
+            "235787327341888/157205",
+            "1057911349108538/31441",
+            "87265900706658534/157205",
+            "1039289783580791092/157205",
+            "1899913172865219568/31441",
+            "70245361763197982676/157205",
+            "436839271756769231364/157205",
+            "2345867935408502922312/157205",
+            "2224386807225080774544/31441"
+          ]
+        },
+        "prefix13": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "y1",
+            "y4"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "20499351895/7501",
+          "dual_multipliers": {
+            "x10": "1668880/1102647",
+            "x11": "59792/52507",
+            "x12": "1568299/1470196",
+            "x13": "1025039/1102647",
+            "x8": "98103/105014",
+            "y1": "1325066281/22503",
+            "y4": "7889/90012"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 2732884,
+          "primal_x14": "1547625125181/7501",
+          "primal_x7_to_x13": [
+            "1636936890/7501",
+            "0",
+            "18862415005/7501",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "641847/577",
+            "1828287897/4039",
+            "0",
+            "731201183442/52507",
+            "64804090555080/52507",
+            "260459255386206/7501",
+            "4170888535594890/7501",
+            "49551905156119750/7501",
+            "3168533369152291026/52507",
+            "3355215689586160245/7501",
+            "1602945496640619732/577",
+            "111930522315665515968/7501",
+            "530678170972509708240/7501"
+          ]
+        },
+        "prefix14": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x11",
+            "x12",
+            "x13",
+            "y1",
+            "y5"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "15580466396938/82045",
+          "dual_multipliers": {
+            "x10": "505872/114863",
+            "x11": "59629/16409",
+            "x12": "301597/114863",
+            "x13": "573382/574315",
+            "x8": "6556248/82045",
+            "y1": "65630943637/16409",
+            "y5": "112847/82045"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 189901474,
+          "primal_x14": "30694184012637/164090",
+          "primal_x7_to_x13": [
+            "24273336594/82045",
+            "0",
+            "418202108051/164090",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "1488928221/1148630",
+            "88729385697/164090",
+            "731201183442/574315",
+            "0",
+            "19844457652380/16409",
+            "2889980287540731/82045",
+            "318904766821943766/574315",
+            "3791688371522363209/574315",
+            "990253763882266971/16409",
+            "513859338990528981993/1148630",
+            "227912485690500643116/82045",
+            "1224286032678762168042/82045",
+            "5804479633253072746032/82045"
+          ]
+        },
+        "prefix7": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix8": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix9": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        }
+      },
+      "q": 12,
+      "r": 32,
+      "triangular_weighted_bound": {
+        "active_constraints": [
+          "x8",
+          "x10",
+          "x11",
+          "x12",
+          "x13",
+          "y1",
+          "y5"
+        ],
+        "all_dual_multipliers_nonnegative": true,
+        "all_primal_forms_nonnegative": true,
+        "bound": "33591770046447/164090",
+        "dual_multipliers": {
+          "x10": "5034783/459452",
+          "x11": "481007/65636",
+          "x12": "2270997/459452",
+          "x13": "3808881/2297260",
+          "x8": "13655937/164090",
+          "y1": "140606797765/32818",
+          "y5": "434581/328180"
+        },
+        "exact_strong_duality": true,
+        "parity_rounded_bound": 204715524,
+        "primal_x14": "30694184012637/164090",
+        "primal_x7_to_x13": [
+          "24273336594/82045",
+          "0",
+          "418202108051/164090",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primal_y1_to_y14": [
+          "0",
+          "1488928221/1148630",
+          "88729385697/164090",
+          "731201183442/574315",
+          "0",
+          "19844457652380/16409",
+          "2889980287540731/82045",
+          "318904766821943766/574315",
+          "3791688371522363209/574315",
+          "990253763882266971/16409",
+          "513859338990528981993/1148630",
+          "227912485690500643116/82045",
+          "1224286032678762168042/82045",
+          "5804479633253072746032/82045"
+        ]
+      },
+      "zero_prefix_control": {
+        "active_constraints": [
+          "x7",
+          "x8",
+          "x9",
+          "x10",
+          "x12",
+          "y1",
+          "y2"
+        ],
+        "all_22_coordinates_nonnegative": true,
+        "maximum_zero_prefix_end": 10,
+        "x7_to_x14": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "16603328/3",
+          "0",
+          "149327206/3",
+          "250476624"
+        ],
+        "x7_x8_x9_are_zero": true,
+        "y1_to_y14": [
+          "0",
+          "0",
+          "676058/147",
+          "631004/21",
+          "4924701980/147",
+          "62425816288/49",
+          "715694192158/21",
+          "1666698602294/3",
+          "138865825186132/21",
+          "8878074466282096/147",
+          "3128630737233564/7",
+          "58352499293764852/21",
+          "313366862922168176/21",
+          "495234890566781808/7"
+        ]
+      }
+    },
+    {
+      "poisson_factor": "-2401",
+      "prefix_bounds": {
+        "prefix10": {
+          "active_constraints": [
+            "x8",
+            "x9",
+            "x10",
+            "y1",
+            "y2",
+            "y3",
+            "y4"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "389888/57",
+          "dual_multipliers": {
+            "x10": "398/399",
+            "x8": "17/21",
+            "x9": "388/399",
+            "y1": "3311/3",
+            "y2": "4648/57",
+            "y3": "245/57",
+            "y4": "7/57"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 6842,
+          "primal_x14": "33277660800/19",
+          "primal_x7_to_x13": [
+            "389888/57",
+            "0",
+            "0",
+            "0",
+            "1495218928/57",
+            "2126104904/57",
+            "6854397536/19"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "327113584/57",
+            "9442616288/57",
+            "94990710944/19",
+            "236278593376/3",
+            "53940465703376/57",
+            "491682539612320/57",
+            "1213059398462688/19",
+            "22627684742708360/57",
+            "121508237014116400/57",
+            "192029139552053376/19"
+          ]
+        },
+        "prefix11": {
+          "active_constraints": [
+            "x7",
+            "x10",
+            "x11",
+            "y1",
+            "y2",
+            "y3",
+            "y5"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "4675706896/9307",
+          "dual_multipliers": {
+            "x10": "6066/9307",
+            "x11": "17285/18614",
+            "x7": "7113/18614",
+            "y1": "1646478547/18614",
+            "y2": "30619953/9307",
+            "y3": "349174/9307",
+            "y5": "4459/18614"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 502388,
+          "primal_x14": "1753425792",
+          "primal_x7_to_x13": [
+            "0",
+            "1219920912/9307",
+            "3455785984/9307",
+            "0",
+            "0",
+            "1013289561144/9307",
+            "3477251342208/9307"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "0",
+            "2149526976/9307",
+            "0",
+            "51609798432/227",
+            "43023653113728/9307",
+            "746152909331184/9307",
+            "8779193732185984/9307",
+            "80294870382261600/9307",
+            "594337373880147072/9307",
+            "3694252438147810680/9307",
+            "483908477009581056/227",
+            "94064967947504638080/9307"
+          ]
+        },
+        "prefix12": {
+          "active_constraints": [
+            "x8",
+            "x11",
+            "x12",
+            "y1",
+            "y2",
+            "y4",
+            "y5"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "39962533714/3709",
+          "dual_multipliers": {
+            "x11": "146872/233667",
+            "x12": "92933/103852",
+            "x8": "712871/467334",
+            "y1": "2116860501/3709",
+            "y2": "147557480/11127",
+            "y4": "62629/14836",
+            "y5": "16856/33381"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 10774478,
+          "primal_x14": "5861765749248/3709",
+          "primal_x7_to_x13": [
+            "2228092060/3709",
+            "0",
+            "17085896828/3709",
+            "20648544826/3709",
+            "0",
+            "0",
+            "891700733938/3709"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "634098822/3709",
+            "0",
+            "0",
+            "465688649146/3709",
+            "19867826602202/3709",
+            "293364586865448/3709",
+            "3486998148303516/3709",
+            "31981520468592296/3709",
+            "237204038973631464/3709",
+            "1471465403043328392/3709",
+            "7906739534941239608/3709",
+            "37485727903626495552/3709"
+          ]
+        },
+        "prefix13": {
+          "active_constraints": [
+            "x8",
+            "x10",
+            "x12",
+            "y1",
+            "y2",
+            "y4",
+            "y5"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "4809018153589/19876",
+          "dual_multipliers": {
+            "x10": "461789/278264",
+            "x12": "1741309/1113056",
+            "x8": "10824541/79504",
+            "y1": "43139204619/4969",
+            "y2": "2207851849/39752",
+            "y4": "36399013/159008",
+            "y5": "107359/4969"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 241951004,
+          "primal_x14": "7940844990648/4969",
+          "primal_x7_to_x13": [
+            "10721219025/19876",
+            "0",
+            "24972331384/4969",
+            "0",
+            "278755355151/19876",
+            "0",
+            "4419652253877/19876"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "3103383717/19876",
+            "0",
+            "0",
+            "662497858176/4969",
+            "106369943992983/19876",
+            "390151351735992/4969",
+            "18764114759060209/19876",
+            "42798103173321720/4969",
+            "635571156005121483/9938",
+            "1971583803537845112/4969",
+            "42369471603849557013/19876",
+            "50220169415655940872/4969"
+          ]
+        },
+        "prefix14": {
+          "active_constraints": [
+            "x8",
+            "x11",
+            "x12",
+            "y1",
+            "y2",
+            "y4",
+            "y5"
+          ],
+          "all_dual_multipliers_nonnegative": true,
+          "all_primal_forms_nonnegative": true,
+          "bound": "6793429016900/3709",
+          "dual_multipliers": {
+            "x11": "60133/100143",
+            "x12": "20421/7418",
+            "x8": "25836955/100143",
+            "y1": "436855858369/11127",
+            "y2": "3761042138/33381",
+            "y4": "6867791/22254",
+            "y5": "3938669/100143"
+          },
+          "exact_strong_duality": true,
+          "parity_rounded_bound": 1831606638,
+          "primal_x14": "5861765749248/3709",
+          "primal_x7_to_x13": [
+            "2228092060/3709",
+            "0",
+            "17085896828/3709",
+            "20648544826/3709",
+            "0",
+            "0",
+            "891700733938/3709"
+          ],
+          "primal_y1_to_y14": [
+            "0",
+            "0",
+            "634098822/3709",
+            "0",
+            "0",
+            "465688649146/3709",
+            "19867826602202/3709",
+            "293364586865448/3709",
+            "3486998148303516/3709",
+            "31981520468592296/3709",
+            "237204038973631464/3709",
+            "1471465403043328392/3709",
+            "7906739534941239608/3709",
+            "37485727903626495552/3709"
+          ]
+        },
+        "prefix7": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix8": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1"
+          },
+          "parity_rounded_bound": 0
+        },
+        "prefix9": {
+          "bound": "0",
+          "certificate_type": "direct nonnegative-coordinate lower bound, with the row zero control as a feasible primal witness",
+          "dual_multipliers": {
+            "x7": "1",
+            "x8": "1",
+            "x9": "1"
+          },
+          "parity_rounded_bound": 0
+        }
+      },
+      "q": 14,
+      "r": 30,
+      "triangular_weighted_bound": {
+        "active_constraints": [
+          "x8",
+          "x11",
+          "x12",
+          "y1",
+          "y2",
+          "y4",
+          "y5"
+        ],
+        "all_dual_multipliers_nonnegative": true,
+        "all_primal_forms_nonnegative": true,
+        "bound": "7868750058702/3709",
+        "dual_multipliers": {
+          "x11": "28178/33381",
+          "x12": "71637/14836",
+          "x8": "27054865/66762",
+          "y1": "187671295560/3709",
+          "y2": "2553391078/11127",
+          "y4": "8355431/14836",
+          "y5": "2129344/33381"
+        },
+        "exact_strong_duality": true,
+        "parity_rounded_bound": 2121528730,
+        "primal_x14": "5861765749248/3709",
+        "primal_x7_to_x13": [
+          "2228092060/3709",
+          "0",
+          "17085896828/3709",
+          "20648544826/3709",
+          "0",
+          "0",
+          "891700733938/3709"
+        ],
+        "primal_y1_to_y14": [
+          "0",
+          "0",
+          "634098822/3709",
+          "0",
+          "0",
+          "465688649146/3709",
+          "19867826602202/3709",
+          "293364586865448/3709",
+          "3486998148303516/3709",
+          "31981520468592296/3709",
+          "237204038973631464/3709",
+          "1471465403043328392/3709",
+          "7906739534941239608/3709",
+          "37485727903626495552/3709"
+        ]
+      },
+      "zero_prefix_control": {
+        "active_constraints": [
+          "x7",
+          "x8",
+          "x9",
+          "y1",
+          "y2",
+          "y3",
+          "y4"
+        ],
+        "all_22_coordinates_nonnegative": true,
+        "maximum_zero_prefix_end": 9,
+        "x7_to_x14": [
+          "0",
+          "0",
+          "0",
+          "2729216",
+          "9904496",
+          "64688008",
+          "374547488",
+          "1753425792"
+        ],
+        "x7_x8_x9_are_zero": true,
+        "y1_to_y14": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "4822256",
+          "184039392",
+          "4833500896",
+          "79633400096",
+          "943532149584",
+          "8630388552096",
+          "63848945365920",
+          "396944492429512",
+          "2131769641008816",
+          "10106844629468544"
+        ]
+      }
+    }
+  ],
+  "verdict": "VERIFIED_SCOPED"
+}

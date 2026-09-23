@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "role": "verifier",
+  "claim_label": "DERIVED",
+  "audit_verdict": "PASS_WITH_NONBLOCKING_DOCUMENTATION_DEFECT",
+  "scope": "conditional global lower bound for any putative srg(99,14,1,2)",
+  "obligations": {
+    "preinspection_hash_freeze": "PASS",
+    "independent_precomparison_reconstruction": "PASS",
+    "triangle_incidence_spectrum": "PASS",
+    "C_combinatorial_entries_and_spectrum": "PASS",
+    "fixed_triangle_a_r_counts": "PASS",
+    "ordered_unordered_pair_scaling": "PASS",
+    "q_n3_relation_and_divisibility": "PASS",
+    "exact_E0_projector": "PASS",
+    "M_squared_identity_entry_set_and_mod2_rows": "PASS",
+    "W_schur_psd": "PASS",
+    "A_MWM_psd_integral_and_mod2": "PASS",
+    "D_alternating_mod2": "PASS",
+    "A_diagonal_divisible_by_four": "PASS",
+    "PSD_zero_diagonal_lemma": "PASS",
+    "trace_A_equals_84_times_n3_minus_693": "PASS",
+    "small_delta_3_6_9_exclusions": "PASS",
+    "conditional_n3_lower_bound_705": "PASS",
+    "induced_C6_translation_209991": "PASS",
+    "algebraic_bound_vs_target_resolution_boundary": "PASS",
+    "optional_rank_F2_extension": "PASS_HUMAN_DERIVATION_NOT_NEEDED",
+    "submitted_18_test_replay": "PASS",
+    "submitted_JSON_byte_regeneration": "PASS",
+    "candidate_failed_route_endpoint_wording": "FAIL_NONBLOCKING_STALE_699_SHOULD_BE_705",
+    "candidate_git_commit_provenance": "UNKNOWN_NOT_CHECKED_PER_NO_GIT_INSTRUCTION",
+    "novelty_and_literature_status": "UNKNOWN_OUT_OF_SCOPE",
+    "Conway_99_existence_or_nonexistence": "UNKNOWN"
+  },
+  "independent_execution": {
+    "checker": "PASS",
+    "unit_tests": "16/16 PASS",
+    "hostile_mutations": {
+      "wrong_projector_scaling": "DETECTED",
+      "nonzero_D_diagonal_mod2": "DETECTED",
+      "missing_intersecting_zero_type": "DETECTED",
+      "intersecting_entry_mutated_to_one": "DETECTED",
+      "ordered_pair_total_not_halved": "DETECTED",
+      "Delta_3": "DETECTED",
+      "Delta_6": "DETECTED",
+      "Delta_9": "DETECTED"
+    }
+  },
+  "submitted_execution": {
+    "unit_tests": "18/18 PASS",
+    "regenerated_JSON": "PASS_BYTE_IDENTICAL",
+    "sha256": "6aea5c4688880a33d358ccc8992ef3aa63d40be70b5c450a8a39bf83b4878dc2"
+  },
+  "conclusions": {
+    "Schur_PSD_bound": 693,
+    "positive_mod4_diagonal_trace_floor": 924,
+    "first_permitted_delta_multiple_of_three": 12,
+    "conditional_n3_lower_bound": 705,
+    "conditional_induced_C6_lower_bound": 209991,
+    "target_status": "UNKNOWN",
+    "novelty": "UNKNOWN_OUT_OF_SCOPE"
+  },
+  "verifier_model_settings": {
+    "surfaced_identity": "Codex agent based on GPT-5",
+    "exact_deployment_model": "NOT_EXPOSED",
+    "reasoning_effort": "NOT_EXPOSED",
+    "service_tier": "NOT_EXPOSED",
+    "subagent_configuration": "inherited from parent; no override surfaced"
+  },
+  "runtime": {
+    "python": "3.13.14",
+    "powershell": "5.1.26100.8875",
+    "os": "Microsoft Windows NT 10.0.26200.0"
+  }
+}

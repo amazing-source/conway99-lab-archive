@@ -1,0 +1,51 @@
+{
+  "schema": "wave17-n3-54-algebra-search-runs-v1",
+  "claim_label": "UNKNOWN",
+  "scope": "Incomplete heuristic searches for the active all-size-two residual only",
+  "runs": [
+    {
+      "command": "python -B attempts/wave17-n3-54-algebra/search_active_relaxation.py --graphs 20 --restarts 10 --steps 3000 --output attempts/wave17-n3-54-algebra/active-search-best.json",
+      "result": "TIMEOUT_UNKNOWN",
+      "wall_timeout_seconds": 60,
+      "restrictions": [
+        "sampled labeled simple triangle-free cubic F on 18 labels",
+        "the then-current search code restricted R to one Hamiltonian cycle",
+        "randomized local search"
+      ],
+      "evidentiary_status": "NONE"
+    },
+    {
+      "command": "python -B attempts/wave17-n3-54-algebra/search_active_relaxation.py --graphs 5 --restarts 5 --steps 2000 --output attempts/wave17-n3-54-algebra/active-search-best.json",
+      "result": "NO_CONCLUSION",
+      "reported_best_score_at_process_exit": 56,
+      "restrictions": [
+        "five sampled labeled simple triangle-free cubic F graphs on 18 labels",
+        "general 2-factors reached by local 2-switches",
+        "randomized incomplete search"
+      ],
+      "evidentiary_status": "NONE"
+    },
+    {
+      "command": "python -B attempts/wave17-n3-54-algebra/search_active_relaxation.py --f-family three-k33 --graphs 1 --restarts 10 --steps 2000 --output attempts/wave17-n3-54-algebra/active-search-three-k33-best.json",
+      "result": "NO_CONCLUSION",
+      "best_score": 36,
+      "restrictions": [
+        "F fixed to the disconnected graph 3K3,3",
+        "general 2-factors reached by local 2-switches",
+        "randomized incomplete search"
+      ],
+      "evidentiary_status": "NONE"
+    },
+    {
+      "command": "python -B attempts/wave17-n3-54-algebra/search_mod2_support.py --seed 540173 --restarts 50 --steps 200000 --output attempts/wave17-n3-54-algebra/mod2-support-three-k33.json",
+      "result": "NO_CONCLUSION",
+      "best_mod2_parity_weight": 12,
+      "restrictions": [
+        "F fixed to the disconnected graph 3K3,3",
+        "randomized incomplete 2-switch search"
+      ],
+      "evidentiary_status": "NONE"
+    }
+  ],
+  "status_note": "No non-hit, score, timeout, or solver-style exit is used as evidence of nonexistence."
+}

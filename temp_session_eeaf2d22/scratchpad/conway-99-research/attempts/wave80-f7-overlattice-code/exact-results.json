@@ -1,0 +1,386 @@
+{
+  "claim_label": "DERIVED",
+  "dual_distance": {
+    "conclusion": "d(C_perp)>=d(row(S)_perp)>=6",
+    "five_support_exhaustion": {
+      "all_labelled_graphs": 1024,
+      "isomorphism_classes": [
+        {
+          "canonical_graph_bits": "0000001101",
+          "coefficient_multisets": [
+            [
+              1,
+              1,
+              1,
+              6,
+              6
+            ],
+            [
+              1,
+              1,
+              6,
+              6,
+              6
+            ]
+          ],
+          "degree_sequence": [
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "edge_count": 3,
+          "labelled_count": 60,
+          "outside_pattern_count": 0
+        },
+        {
+          "canonical_graph_bits": "0001010111",
+          "coefficient_multisets": [
+            [
+              1,
+              1,
+              1,
+              1,
+              6
+            ],
+            [
+              1,
+              6,
+              6,
+              6,
+              6
+            ]
+          ],
+          "degree_sequence": [
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "edge_count": 5,
+          "labelled_count": 60,
+          "outside_pattern_count": 0
+        },
+        {
+          "canonical_graph_bits": "0011101100",
+          "coefficient_multisets": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "degree_sequence": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "edge_count": 5,
+          "labelled_count": 12,
+          "outside_pattern_count": 0
+        }
+      ],
+      "locally_srg_admissible": 683,
+      "projective_full_support_relations": 132,
+      "relations_with_no_outside_pattern": 132,
+      "singular_with_full_support": 132
+    },
+    "six_support_positive_control": {
+      "canonical_graph_bits": "000000000001100",
+      "compatible_outside_pattern_count": 12,
+      "degree_sequence": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "edge_count": 2,
+      "interpretation": "local lambda/mu, principal-kernel, and one-vertex outside conditions alone do not exclude support six",
+      "labelled_graph_mask": 36,
+      "projective_kernel_vector": [
+        1,
+        1,
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    "small_principal_checks": {
+      "2": {
+        "determinants_mod_7": [
+          6
+        ],
+        "labelled_sign_patterns": 2,
+        "singular_mod_7": 0
+      },
+      "3": {
+        "determinants_mod_7": [
+          2,
+          5
+        ],
+        "labelled_sign_patterns": 8,
+        "singular_mod_7": 0
+      },
+      "4": {
+        "determinants_mod_7": [
+          4,
+          5
+        ],
+        "labelled_sign_patterns": 64,
+        "singular_mod_7": 0
+      }
+    }
+  },
+  "endpoint": {
+    "conway_status": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rank_28_excluded": false
+  },
+  "endpoint_rank_28": {
+    "ambient_one_perp_quotient": "O^-(42,7), Witt index 20",
+    "dual_complement": "O^+(26,7), Witt index 13",
+    "dual_hull_dimension": 28,
+    "dual_parameters": "[99,55]_7",
+    "hull_dimension": 28,
+    "parameters": "[99,44]_7",
+    "quotient": "O^-(16,7), Witt index 7"
+  },
+  "evaluation_code": {
+    "code_dot_form": "c(y).c(z)=2 beta(y,z)",
+    "coordinate_sum_zero": true,
+    "definition": "C={(<y,v_i>) mod 7 : y in L*/7L*}, v_i=3u_i",
+    "dimension": 44,
+    "domain_form": "beta(y,z)=7<y,z> mod 7",
+    "dual_distance_lower_bound": 6,
+    "evaluation_map_injective": true,
+    "field": "F7",
+    "gram_mod_7": "((<v_i,v_j>))=-S",
+    "hull": "C intersect C_perp=row_F7(S)",
+    "length": 99,
+    "orthogonal_array_strength": 5,
+    "radical_preimage": "L/7L*"
+  },
+  "format": "wave80-f7-overlattice-code-v1",
+  "geometry_rows": [
+    {
+      "ambient_W_dimension": 15,
+      "code_dimension": 44,
+      "dual_complement_in_W0_dimension": 12,
+      "dual_complement_orthogonal_type": "plus",
+      "dual_complement_witt_index": 6,
+      "hull_dimension": 42,
+      "nondegenerate_quotient_dimension": 2,
+      "one_perp_W0_dimension": 14,
+      "q_discriminant_length": 2,
+      "quotient_determinant_legendre_sign": 1,
+      "quotient_orthogonal_type": "minus",
+      "quotient_witt_index": 0,
+      "r_rank_F7_Seidel": 42
+    },
+    {
+      "ambient_W_dimension": 19,
+      "code_dimension": 44,
+      "dual_complement_in_W0_dimension": 14,
+      "dual_complement_orthogonal_type": "plus",
+      "dual_complement_witt_index": 7,
+      "hull_dimension": 40,
+      "nondegenerate_quotient_dimension": 4,
+      "one_perp_W0_dimension": 18,
+      "q_discriminant_length": 4,
+      "quotient_determinant_legendre_sign": -1,
+      "quotient_orthogonal_type": "minus",
+      "quotient_witt_index": 1,
+      "r_rank_F7_Seidel": 40
+    },
+    {
+      "ambient_W_dimension": 23,
+      "code_dimension": 44,
+      "dual_complement_in_W0_dimension": 16,
+      "dual_complement_orthogonal_type": "plus",
+      "dual_complement_witt_index": 8,
+      "hull_dimension": 38,
+      "nondegenerate_quotient_dimension": 6,
+      "one_perp_W0_dimension": 22,
+      "q_discriminant_length": 6,
+      "quotient_determinant_legendre_sign": 1,
+      "quotient_orthogonal_type": "minus",
+      "quotient_witt_index": 2,
+      "r_rank_F7_Seidel": 38
+    },
+    {
+      "ambient_W_dimension": 27,
+      "code_dimension": 44,
+      "dual_complement_in_W0_dimension": 18,
+      "dual_complement_orthogonal_type": "plus",
+      "dual_complement_witt_index": 9,
+      "hull_dimension": 36,
+      "nondegenerate_quotient_dimension": 8,
+      "one_perp_W0_dimension": 26,
+      "q_discriminant_length": 8,
+      "quotient_determinant_legendre_sign": -1,
+      "quotient_orthogonal_type": "minus",
+      "quotient_witt_index": 3,
+      "r_rank_F7_Seidel": 36
+    },
+    {
+      "ambient_W_dimension": 31,
+      "code_dimension": 44,
+      "dual_complement_in_W0_dimension": 20,
+      "dual_complement_orthogonal_type": "plus",
+      "dual_complement_witt_index": 10,
+      "hull_dimension": 34,
+      "nondegenerate_quotient_dimension": 10,
+      "one_perp_W0_dimension": 30,
+      "q_discriminant_length": 10,
+      "quotient_determinant_legendre_sign": 1,
+      "quotient_orthogonal_type": "minus",
+      "quotient_witt_index": 4,
+      "r_rank_F7_Seidel": 34
+    },
+    {
+      "ambient_W_dimension": 35,
+      "code_dimension": 44,
+      "dual_complement_in_W0_dimension": 22,
+      "dual_complement_orthogonal_type": "plus",
+      "dual_complement_witt_index": 11,
+      "hull_dimension": 32,
+      "nondegenerate_quotient_dimension": 12,
+      "one_perp_W0_dimension": 34,
+      "q_discriminant_length": 12,
+      "quotient_determinant_legendre_sign": -1,
+      "quotient_orthogonal_type": "minus",
+      "quotient_witt_index": 5,
+      "r_rank_F7_Seidel": 32
+    },
+    {
+      "ambient_W_dimension": 39,
+      "code_dimension": 44,
+      "dual_complement_in_W0_dimension": 24,
+      "dual_complement_orthogonal_type": "plus",
+      "dual_complement_witt_index": 12,
+      "hull_dimension": 30,
+      "nondegenerate_quotient_dimension": 14,
+      "one_perp_W0_dimension": 38,
+      "q_discriminant_length": 14,
+      "quotient_determinant_legendre_sign": 1,
+      "quotient_orthogonal_type": "minus",
+      "quotient_witt_index": 6,
+      "r_rank_F7_Seidel": 30
+    },
+    {
+      "ambient_W_dimension": 43,
+      "code_dimension": 44,
+      "dual_complement_in_W0_dimension": 26,
+      "dual_complement_orthogonal_type": "plus",
+      "dual_complement_witt_index": 13,
+      "hull_dimension": 28,
+      "nondegenerate_quotient_dimension": 16,
+      "one_perp_W0_dimension": 42,
+      "q_discriminant_length": 16,
+      "quotient_determinant_legendre_sign": -1,
+      "quotient_orthogonal_type": "minus",
+      "quotient_witt_index": 7,
+      "r_rank_F7_Seidel": 28
+    }
+  ],
+  "limitations": [
+    "Wave80 is discovery and does not verify Wave66 or Wave71.",
+    "The code and orthogonal-space profile are necessary conditions, not a graph construction.",
+    "Positive slack in low MacWilliams moments is not a formal weight enumerator.",
+    "No absence-of-code conclusion is inferred from a bounded search or LP."
+  ],
+  "macwilliams_control": {
+    "OA_strength_five_moments": [
+      {
+        "degree": 0,
+        "mandatory_known_contribution_upper_control": 601,
+        "required_OA_moment": 15286700631942576193765185769276826401,
+        "strict_slack": 15286700631942576193765185769276825800
+      },
+      {
+        "degree": 1,
+        "mandatory_known_contribution_upper_control": 58320,
+        "required_OA_moment": 1297185739339127179870931478135776411742,
+        "strict_slack": 1297185739339127179870931478135776353422
+      },
+      {
+        "degree": 2,
+        "mandatory_known_contribution_upper_control": 2824200,
+        "required_OA_moment": 54481801052243341554579122081702609293164,
+        "strict_slack": 54481801052243341554579122081702606468964
+      },
+      {
+        "degree": 3,
+        "mandatory_known_contribution_upper_control": 90349920,
+        "required_OA_moment": 1509924200590744037369764240550043743267688,
+        "strict_slack": 1509924200590744037369764240550043652917768
+      },
+      {
+        "degree": 4,
+        "mandatory_known_contribution_upper_control": 2145712680,
+        "required_OA_moment": 31061297840723877340178007234172328432935296,
+        "strict_slack": 31061297840723877340178007234172326287222616
+      },
+      {
+        "degree": 5,
+        "mandatory_known_contribution_upper_control": 40339104624,
+        "required_OA_moment": 505855421977503145254327546385092205907803392,
+        "strict_slack": 505855421977503145254327546385092165568698768
+      }
+    ],
+    "contradiction_from_mandatory_lower_counts": false,
+    "formal_full_weight_enumerator_constructed": false
+  },
+  "scope": "conditional finite-field consequences of the Wave66/Wave71 lattice package and a hypothetical srg(99,14,1,2)",
+  "short_vectors": {
+    "mandatory_scalar_closure_count_mod_42": 6,
+    "minimum_scalar_closed_codewords": 6,
+    "minimum_short_projective_lines": 1,
+    "orthogonal_type_excludes_these_norms": false,
+    "rows": [
+      {
+        "K_squared_norm": 14,
+        "code_hamming_weight": 14,
+        "code_self_dot_mod_7": 0,
+        "quotient_class": "isotropic_or_zero",
+        "symbol_composition": {
+          "0": 85,
+          "3": 7,
+          "4": 7
+        }
+      },
+      {
+        "K_squared_norm": 16,
+        "code_hamming_weight": 16,
+        "code_self_dot_mod_7": 4,
+        "quotient_class": "anisotropic",
+        "symbol_composition": {
+          "0": 83,
+          "3": 8,
+          "4": 8
+        }
+      },
+      {
+        "K_squared_norm": 18,
+        "code_hamming_weight": 18,
+        "code_self_dot_mod_7": 1,
+        "quotient_class": "anisotropic",
+        "symbol_composition": {
+          "0": 81,
+          "3": 9,
+          "4": 9
+        }
+      }
+    ],
+    "theta_count_relation": "N14+N16+N18=2 mod 14"
+  }
+}

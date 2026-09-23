@@ -1,0 +1,2623 @@
+schema_version: 1
+as_of: 2026-07-28
+obligations:
+  - id: O-STATEMENT
+    requirement: "Freeze the historical statement, definitions, and exact positive and negative certificate standards."
+    critical: true
+    status: PASS
+    evidence:
+      - "CONJECTURE.md"
+      - "verification/2026-07-22-first-wave-audit.md"
+
+  - id: O-LITERATURE
+    requirement: "Audit current primary literature under alternate terminology and state the search-date limitation."
+    critical: true
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-statement-literature.md"
+      - "agents/2026-07-22-wave8-status-search.md"
+      - "agents/2026-07-22-wave9-status-search.md"
+      - "agents/2026-07-22-wave10-status-search.md"
+      - "SOURCES.bib"
+
+  - id: O-POSITIVE-CERTIFICATE
+    requirement: "Produce a complete 99-vertex certificate and pass two independent exact validators."
+    critical: true
+    status: UNKNOWN
+    evidence: []
+
+  - id: O-NEGATIVE-CERTIFICATE
+    requirement: "Produce a complete proof or exact exhaustive encoding with a complete independently checked proof artifact."
+    critical: true
+    status: UNKNOWN
+    evidence: []
+
+  - id: O-UNSAT-PIPELINE
+    requirement: "Pin and calibrate a stable external proof-producing solver and mature independent proof checker."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/2026-07-22-lrat-calibration.md"
+      - "verification/2026-07-22-veripb-calibration.md"
+    note: "Both CaDiCaL/LRAT and Exact/VeriPB/CakePB pass small controls; no target proof exists."
+
+  - id: O-CLEAN-REPRODUCTION
+    requirement: "Reproduce decisive artifacts from a clean clone with pinned dependencies and recorded hashes."
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "REPRODUCING.md"
+      - "logs/2026-07-22-first-wave.json"
+      - "verification/2026-07-22-wave2-clean-clone.md"
+      - "verification/2026-07-22-wave3-clean-clone.md"
+      - "verification/2026-07-22-wave5-clean-clone.md"
+      - "verification/2026-07-22-wave6-clean-clone.md"
+      - "verification/2026-07-22-wave7-clean-clone.md"
+      - "verification/2026-07-22-wave8-clean-clone.md"
+      - "verification/2026-07-22-wave9-clean-clone.md"
+      - "verification/2026-07-22-wave10-clean-clone.md"
+      - "verification/2026-07-22-wave11-clean-clone.md"
+      - "verification/2026-07-24-wave27-clean-clone.md"
+    note: "Wave 2, Wave 3/N3, and Waves 5-11 infrastructure and conditional-bound replays pass from clean source trees, but no decisive target artifact exists."
+
+  - id: O-SYMMETRY-SAFETY
+    requirement: "Prove the frozen root normalization and legacy 11-branch cover complete without assuming a nontrivial solution automorphism."
+    critical: true
+    status: PASS
+    evidence:
+      - "attempts/2026-07-22-eleven-branch-cover.md"
+      - "verification/2026-07-22-first-wave-audit.md"
+
+  - id: O-WAVE2-STRUCTURAL
+    requirement: "Adversarially verify any Wave 2 structural lemma before using it as a search cut or proof step."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave2-structural.md"
+      - "verification/2026-07-22-wave2-audit.md"
+
+  - id: O-WAVE2-COMPUTATIONAL
+    requirement: "Calibrate and independently check any Wave 2 encoding improvement before target experiments."
+    critical: false
+    status: PASS
+    evidence:
+      - "attempts/2026-07-22-native-cardinality.md"
+      - "verification/2026-07-22-wave2-audit.md"
+
+  - id: O-WAVE2-ALGEBRA
+    requirement: "Independently reproduce finite-field, Smith-form, code, kernel-lattice, and conditional-design claims."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave2-algebra-codes.md"
+      - "verification/2026-07-22-wave2-audit.md"
+    note: "Individual residual 2-primary exponents and literature novelty remain unknown."
+
+  - id: O-WAVE3-LITERATURE
+    requirement: "Audit the adjacent-neighborhood prior art and source any theorem used to impose a new unrestricted search normalization."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave3-prior-art.md"
+      - "SOURCES.bib"
+    note: "Makhnev plus the six-vertex count yields the DERIVED universal N3 consequence; its conditional implementation and symmetry interaction pass the separate O-N3-NORMALIZATION audit."
+
+  - id: O-WAVE3-STRUCTURAL
+    requirement: "Adversarially verify the alpha-22 and mate-fiber Wave 3 identities with exact independent reconstruction."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave3-coclique-design.md"
+      - "agents/2026-07-22-wave3-fiber-coupling.md"
+      - "verification/2026-07-22-wave3-audit.md"
+    note: "Both lanes yield necessary conditions only; the cyclic design and target remain unresolved."
+
+  - id: O-WAVE3-OPB
+    requirement: "Independently verify native-to-OPB semantics and replay positive and negative controls through a mature checker and a separately verified checker."
+    critical: false
+    status: PASS
+    evidence:
+      - "attempts/2026-07-22-native-opb-proof-pipeline.md"
+      - "formal/opb-calibration"
+      - "verification/2026-07-22-veripb-calibration.md"
+      - "verification/2026-07-22-wave3-audit.md"
+      - "verification/2026-07-22-wave3-clean-clone.md"
+    note: "The full target scale run and its checked proof conclude NO CONCLUSION."
+
+  - id: O-N3-NORMALIZATION
+    requirement: "Implement and independently verify a symmetry-safe N3 normalization, including its interaction with the existing matching branch cover."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave3-prior-art.md"
+      - "agents/2026-07-22-wave4-n3-normalization.md"
+      - "verification/2026-07-22-n3-normalization-audit.md"
+      - "verification/2026-07-22-wave3-clean-clone.md"
+    note: "The safe unbranched --n3 formula is verified. The legacy 11 representatives remain incompatible; use the separately verified 12-branch N3 joint cover."
+
+  - id: O-N3-JOINT-COVER
+    requirement: "Derive and independently verify a complete matching branch cover under the exact stabilizer of the canonical N3 unit, without assuming a completed-graph automorphism."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave5-n3-joint-cover.md"
+      - "verification/n3-joint-cover/n3-joint-cover.json"
+      - "verification/n3-joint-cover/verify.py"
+      - "verification/2026-07-22-n3-joint-cover-audit.md"
+      - "verification/2026-07-22-wave5-clean-clone.md"
+    note: "The 12 branches cover the N3-normalized search only; universal N3 occurrence remains DERIVED and no target branch is resolved."
+
+  - id: O-N3-REFINED-COVER
+    requirement: "Derive and independently verify a complete oriented common-neighbor refinement under the exact stabilizer of the canonical N3 unit, without assuming a completed-graph automorphism."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave6-n3-refined-cover.md"
+      - "verification/n3-refined-cover/n3-refined-cover.json"
+      - "verification/n3-refined-cover/verify.py"
+      - "verification/2026-07-22-n3-refined-cover-audit.md"
+      - "verification/2026-07-22-wave6-clean-clone.md"
+    note: "The 78 branches refine the N3-normalized search only; all bounded scouts remain UNKNOWN."
+
+  - id: O-WAVE6-STRUCTURAL
+    requirement: "Adversarially verify the opposite-edge graph, the improved N3 count, every local branch bound, and the normalized six-vertex boundary profile."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave6-opposite-edge-graph.md"
+      - "verification/n3-count-bound/verify.py"
+      - "verification/2026-07-22-n3-count-bound-audit.md"
+    note: "The verified result is the conditional necessary bound n3>=24; target existence and nonexistence both remain UNKNOWN."
+
+  - id: O-WAVE7-STRUCTURAL
+    requirement: "Adversarially verify the triangle-partner identities, q-gap, support identity, and complete finite incidence exclusions of n3=24 and n3=27."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave7-triangle-side-incidence.md"
+      - "agents/2026-07-22-wave7-status-search.md"
+      - "verification/n3-side-incidence/verify.py"
+      - "verification/n3-side-incidence/audit_generic.py"
+      - "verification/2026-07-22-n3-side-incidence-audit.md"
+      - "verification/2026-07-22-wave7-clean-clone.md"
+    note: "The Wave 7 result is the conditional necessary bound n3>=30; its open equality case is superseded by the Wave 8 exclusion. Lou-Murin 2014 is credited for the upstream fixed-triangle profile and q-gap."
+
+  - id: O-WAVE8-STRUCTURAL
+    requirement: "Adversarially verify the fixed-original-point identity, point-clique resource count, size-four branch, overlapping-set crossing, and exclusion of n3=30."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave8-n3-equality.md"
+      - "agents/2026-07-22-wave8-status-search.md"
+      - "verification/n3-equality/verify.py"
+      - "verification/n3-equality/audit_exhaustive.py"
+      - "verification/n3-equality/n3-30-audit.json"
+      - "verification/2026-07-22-n3-equality-audit.md"
+      - "verification/2026-07-22-wave8-clean-clone.md"
+    note: "The verified result is the conditional necessary bound n3>=33. The upstream fixed-triangle profile/q-gap is credited to Lou-Murin 2014, novelty is not claimed, and Conway-99 remains UNKNOWN."
+
+  - id: O-WAVE9-STRUCTURAL
+    requirement: "Adversarially verify the active-q profiles, labeled crossing singleton lemma, point-clique budget, forced K5 components, residual complement-matching argument, and exclusion of n3=33."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave9-n3-33-equality.md"
+      - "agents/2026-07-22-wave9-status-search.md"
+      - "verification/n3-33-equality/verify.py"
+      - "verification/n3-33-equality/audit_exhaustive.py"
+      - "verification/n3-33-equality/verify_exhaustive.py"
+      - "verification/n3-33-equality/n3-33-census-manifest.json"
+      - "verification/test_n3_33_equality.py"
+      - "verification/test_n3_33_census.py"
+      - "verification/2026-07-22-n3-33-equality-audit.md"
+      - "verification/2026-07-22-wave9-clean-clone.md"
+    note: "The verified result is the conditional necessary bound n3>=36. The proof assumes no completed-graph automorphism, no novelty is claimed, and Conway-99 remains UNKNOWN."
+
+  - id: O-WAVE10-STRUCTURAL
+    requirement: "Adversarially verify the active-q profiles, singleton forcing, local point types, common-point rule, K6/rook saturation lemma, size-three line-graph-twin argument, all-size-two reduction, and exclusion of n3=36."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave10-n3-36-equality.md"
+      - "agents/2026-07-22-wave10-status-search.md"
+      - "verification/n3-36-equality/verify.py"
+      - "verification/n3-36-equality/audit_support.py"
+      - "verification/n3-36-equality/verify_support.py"
+      - "verification/n3-36-equality/n3-36-support.json"
+      - "verification/test_n3_36_equality.py"
+      - "verification/test_n3_36_support.py"
+      - "verification/2026-07-22-n3-36-equality-audit.md"
+      - "verification/2026-07-22-wave10-clean-clone.md"
+    note: "The initial closed-K5 shortcut was rejected and publicly repaired. The verified result is the conditional necessary bound n3>=39; no completed-graph automorphism or novelty is claimed, and Conway-99 remains UNKNOWN."
+
+  - id: O-WAVE11-STRUCTURAL
+    requirement: "Adversarially verify the n3=39 active profiles, explicit K-complement bridge, point-hypergraph expansion, size-four flower obstruction, F/U degree witnesses, size-three propagation, parity contradiction, and two-implementation replay."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave11-n3-39-equality.md"
+      - "agents/2026-07-22-wave11-status-search.md"
+      - "agents/2026-07-22-wave11-computational.md"
+      - "agents/2026-07-22-wave11-local-replay-audit.md"
+      - "verification/n3-39-equality/verify.py"
+      - "verification/n3-39-equality/audit_local.py"
+      - "verification/n3-39-equality/verify_local.py"
+      - "verification/n3-39-equality/n3-39-local.json"
+      - "verification/test_n3_39_equality.py"
+      - "verification/test_n3_39_local.py"
+      - "verification/2026-07-22-n3-39-equality-audit.md"
+      - "verification/2026-07-22-wave11-clean-clone.md"
+    note: "The initial exposition omitted the explicit K=complement(L) bridge, the first compact checker hid a six-profile overlap with weak mutation guards, and the first detached replay exposed platform-dependent newlines. All three failures are public and repaired. The verified result is the conditional necessary bound n3>=42; novelty and Conway-99 remain UNKNOWN."
+
+  - id: O-WAVE12-STRUCTURAL
+    requirement: "Adversarially verify the n3=42 active profiles, degree-three obstruction, point-size reductions, all-size-two support relaxation, complete cubic triangle-free catalog bridge, common-neighbor caps, and independent proof-certificate replay."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave12-n3-42-proof-a.md"
+      - "agents/2026-07-22-wave12-n3-42-computational.md"
+      - "agents/2026-07-22-wave12-status-search.md"
+      - "verification/2026-07-22-wave12-n3-42-premise-audit.md"
+      - "verification/n3-42-equality/verify_reduction.py"
+      - "verification/test_n3_42_reduction.py"
+      - "verification/n3-42-equality/build_support_certificate.py"
+      - "verification/n3-42-equality/verify_support_certificate.py"
+      - "verification/n3-42-equality/n3-42-support-certificate.json"
+      - "verification/2026-07-22-n3-42-support-audit.md"
+      - "verification/2026-07-22-wave12-integration-audit.md"
+      - "verification/2026-07-22-wave12-clean-clone.md"
+    note: "The proof-side checker explicitly requires the external support-exclusion premise. An official GENREG connected catalog and an independent nauty catalog were cross-matched, the two disconnected types were separately classified, and all four surviving support trees were replayed with mutations. The verified result is the conditional necessary bound n3>=45; novelty and Conway-99 remain UNKNOWN."
+
+  - id: O-WAVE13-STRUCTURAL
+    requirement: "Adversarially verify the n3=45 active-profile reductions, mixed-profile exclusions, order-fifteen flower bounds, four rooted local modes, elimination of types 223 and 111, and the final H-degree handshake contradiction; separately audit the auxiliary computation without treating solver negatives as proof."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave13-n3-45-proof-a.md"
+      - "agents/2026-07-22-wave13-status-search.md"
+      - "verification/n3-45-equality/verify.py"
+      - "verification/test_n3_45_audit.py"
+      - "verification/2026-07-22-wave13-n3-45-audit.md"
+      - "verification/n3-45-equality-b/audit_semantics.py"
+      - "verification/n3-45-equality-b/precomparison-verdict.md"
+      - "verification/2026-07-22-wave13-n3-45-audit-b.md"
+      - "verification/2026-07-22-wave13-status-audit.md"
+      - "verification/2026-07-22-wave13-computation-audit.md"
+      - "agents/2026-07-22-wave13-n3-45-computational-repair.md"
+      - "verification/n3-45-computation-repair/independent_repair_audit.py"
+      - "verification/n3-45-computation-repair/test_repair_regressions.py"
+      - "verification/2026-07-22-wave13-computation-repair-audit.md"
+      - "verification/2026-07-22-wave13-clean-clone.md"
+    note: "Two independent semantic verifiers pass the human conditional exclusion of n3=45, yielding n3>=48 and induced_C6_count>=209334. The initial computation bundle failed self-validation; that failure is preserved, its repair passed independent formula/provenance/mutation checks, and every solver-negative row remains UNSAT_UNVERIFIED. Novelty and Conway-99 remain UNKNOWN."
+
+  - id: O-WAVE14-STRUCTURAL
+    requirement: "Adversarially verify the n3=48 profile enumeration, both mixed-profile exclusions, r=16 point-size and local-mode reductions, zero-or-four H-degree conclusion, exact support residual, positive relaxation countermodels, and computation/provenance boundary without promoting unchecked solver negatives."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-22-wave14-n3-48-proof-a.md"
+      - "agents/2026-07-22-wave14-n3-48-computational.md"
+      - "verification/2026-07-22-wave14-n3-48-proof-audit.md"
+      - "verification/n3-48-proof/independent_reconstruction.py"
+      - "verification/n3-48-proof/audit_countermodel.py"
+      - "verification/2026-07-22-wave14-n3-48-computation-audit.md"
+      - "verification/n3-48-computation/independent_audit.py"
+      - "verification/n3-48-computation/independent-audit-results.json"
+      - "verification/2026-07-22-wave14-status-audit.md"
+    note: "The scoped reduction and positive relaxation objects pass independent reconstruction. Wave 14 does not exclude n3=48: seven negative rows remain UNSAT_UNVERIFIED and the remaining bounded rows are SAT_CANDIDATE, BUDGET_UNKNOWN, or TIMEOUT_UNKNOWN. The strongest verified bound remains n3>=48 and induced_C6_count>=209334; novelty and Conway-99 remain UNKNOWN."
+
+  - id: O-WAVE15-GLOBAL
+    requirement: "Adversarially verify the indexed active-point-to-original-vertex map, the active-set order bound, distinct active-triangle neighbors, the size-two support-neighbor separation, induced minimum degree six, the target spectral subset inequality, and the independent outside-degree second-moment contradiction; require two independent discovery and verification lanes plus exact public-byte provenance."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave15-global-lift.md"
+      - "attempts/wave15-global-lift/subset-moment-certificate.json"
+      - "attempts/wave15-global-lift/verify_subset_moment_certificate.py"
+      - "verification/2026-07-23-wave15-global-lift-audit.md"
+      - "verification/n3-48-global-lift/independent_check.py"
+      - "verification/n3-48-global-lift/regenerated-certificate.json"
+      - "agents/2026-07-23-wave15-algebraic.md"
+      - "attempts/wave15-algebraic/exact_checks.py"
+      - "attempts/wave15-algebraic/exact-checks.json"
+      - "verification/2026-07-23-wave15-algebraic-audit.md"
+      - "verification/n3-48-algebraic/independent_check.py"
+    note: "Two independent semantic audits pass the conditional exclusion of n3=48, yielding n3>=51 and induced_C6_count>=209337. The first algebraic JSON used an ambiguous moment key and the first global certificate had a Windows CRLF/public-LF hash mismatch; both failures, repairs, and re-audits are public. The proof is human with exact arithmetic companions, not a formal kernel proof. Novelty and Conway-99 remain UNKNOWN."
+
+  - id: O-WAVE16-STRUCTURAL
+    requirement: "Adversarially verify the sum-q=34 profile enumeration, d_K>=4 filter, indexed active-set bound, complete endpoint-local size-two crossing classification, fixed-point support counts, distinct actual-neighbor bridge, minimum degree six without a point-size cap, exact spectral threshold, divisibility consequence, and final public-input provenance."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave16-n3-51-structural.md"
+      - "attempts/wave16-n3-51-structural/exact_check.py"
+      - "attempts/wave16-n3-51-structural/exact-checks.json"
+      - "verification/2026-07-23-wave16-n3-51-structural-audit.md"
+      - "verification/n3-51-structural/independent_check.py"
+      - "verification/n3-51-structural/test_independent_check.py"
+    note: "The independent audit passes the conditional exclusion of n3=51 and yields n3>=54 and induced_C6_count>=209340. It explicitly rejects a hidden point-size-at-most-three assumption, a global H-degree zero-or-four assumption, and reuse of support multiplicities as vertices. Baseline 09c20e6 and repair 7530cae preserve and repair the transient Wave 15 provenance without changing the mathematics. Conway-99 and novelty remain UNKNOWN."
+
+  - id: O-WAVE16-COMPUTATION
+    requirement: "Independently reconstruct the sixteen-to-seven active-local branch cover, all seven exact CNF streams, raw positive relaxation candidate, deterministic provenance, solver-status boundary, and hostile mutations without treating proofless UNSAT, timeout, or budget outcomes as nonexistence evidence."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave16-n3-51-computational.md"
+      - "attempts/wave16-n3-51-computation/n3-51-profile-census.json"
+      - "attempts/wave16-n3-51-computation/n3-51-active-local-scan.json"
+      - "attempts/wave16-n3-51-computation/n3-51-r16-q2x14-q3x2-no-size3-active-local-candidate.json"
+      - "verification/2026-07-23-wave16-n3-51-computation-audit.md"
+      - "verification/n3-51-computation/independent_check.py"
+      - "verification/n3-51-computation/independent-audit.json"
+    note: "The audit verifies the scoped active-local archive, seven formula hashes, and positive candidate. The exact scan remains one SAT_CANDIDATE, five TIMEOUT_UNKNOWN, one UNSAT_UNVERIFIED, plus one historical BUDGET_UNKNOWN; none of the negative statuses is evidence for the structural exclusion or Conway-99."
+
+  - id: O-WAVE16-STATUS
+    requirement: "Search current primary and authoritative sources for a resolution of srg(99,14,1,2), exact prior statements of n3>=54 or induced_C6_count>=209340, alternate notation and terminology, corrections, citations, and later work; independently audit the closest six-vertex identity and keep search nonhits separate from proof or novelty claims."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave16-status-search.md"
+      - "verification/2026-07-23-wave16-status-audit.md"
+      - "SOURCES.bib"
+    note: "Two independent searches through 2026-07-23 found no target resolution or source for either exact Wave 16 bound. Reimbayev's published identity gives induced_C6_count=209286+n3, so 209340 is DERIVED from the separately verified n3>=54 bound. The June 2026 Shpectorov lecture notice announces only a possible similar approach. Target status and novelty remain UNKNOWN because non-discovery is not a certificate."
+
+  - id: O-WAVE17-STRUCTURAL
+    requirement: "Adversarially verify the sum-q=36 profile enumeration, dense-subset equality, equitable 27+72 cut, cubic point graph and 2-factor representation, exact rectangle matrix identity, no-codegree-two component reduction, 3K3,3 parity exclusion, binary restrictions, surface construction, outside moments, and strict status boundary."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave17-n3-54-structural.md"
+      - "attempts/wave17-n3-54-structural/exact_check.py"
+      - "verification/2026-07-23-wave17-n3-54-structural-audit.md"
+      - "verification/n3-54-structural/independent_check.py"
+      - "verification/n3-54-structural/test_independent_check.py"
+    note: "The independent audit passes 21 hostile tests and verifies the exact n3=54 residual while recording two nonblocking clarifications. It does not itself exclude n3=54. The raw restricted SAT outcomes and unrestricted timeout are non-evidentiary; Conway-99 and novelty remain UNKNOWN."
+
+  - id: O-WAVE17-CENSUS
+    requirement: "Independently validate the official 455+2 fixed-F universe, graph6 inputs and hashes, compatible-support construction, GF(2) parity relaxation, all connected-case kernels, mixed-component degree obstruction, certificate commitments, deterministic replay, and hostile mutations without using proofless solver UNSAT as evidence."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave17-n3-54-census.md"
+      - "attempts/wave17-n3-54-census/exact-certificate.json"
+      - "attempts/wave17-n3-54-census/verify_certificate.py"
+      - "attempts/wave17-n3-54-census/test_certificate.py"
+      - "verification/2026-07-23-wave17-n3-54-census-audit.md"
+      - "verification/n3-54-census/independent_verifier.py"
+      - "verification/n3-54-census/test_independent_verifier.py"
+      - "verification/n3-54-census/independent-result.json"
+    note: "A separately written verifier reconstructs all 457 cases, checks 262,647 kernel vectors including the trivial cases, passes 17 hostile tests, and verifies the conditional exclusion of n3=54. Catalog completeness remains an official external premise; every raw SAT UNSAT row is non-evidentiary. The combined necessary bounds are n3>=57 and induced_C6_count>=209343."
+
+  - id: O-WAVE17-STATUS
+    requirement: "Search current primary and authoritative sources for a Conway-99 resolution, prior n3>=57 or n3=54 exclusion, induced_C6_count>=209343, the exact positive intriguing (6,3) 27-set, and the F/R residual; independently audit theorem scope, parameter substitutions, official cubic-catalog provenance, and access limitations."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave17-status-search.md"
+      - "verification/2026-07-23-wave17-status-audit.md"
+      - "SOURCES.bib"
+    note: "The independent audit verifies the intriguing-set terminology and Reimbayev identity, rejects inapplicable near-matches, and confirms the official 455+2 counts with a JavaScript/indexed-page access qualification. It found no exact prior bound or target resolution through 2026-07-23, but those nonhits do not establish novelty. Target and novelty remain UNKNOWN."
+
+  - id: O-WAVE18-STRUCTURAL
+    requirement: "Adversarially reconstruct the sum-q=38 profile census, d_K>=4 premise, endpoint-local crossing and actual-neighbor semantics, incidence and exact spectral thresholds, every r=18 and r=19 point-size branch, independence from Wave 17 and forbidden assumptions, exact artifact replay, and hostile mutations."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave18-n3-57-structural.md"
+      - "attempts/wave18-n3-57-structural/exact_check.py"
+      - "attempts/wave18-n3-57-structural/exact-checks.json"
+      - "verification/2026-07-23-wave18-n3-57-structural-audit.md"
+      - "verification/n3-57-structural/independent_checker.py"
+      - "verification/n3-57-structural/test_independent_checker.py"
+      - "verification/n3-57-structural/checker-results.json"
+      - "verification/n3-57-structural/mutation-results.json"
+    note: "The independent audit passes 14 tests, detects all 24 frozen hostile mutations, replays all 10 submitted tests and the exact JSON, and verifies the conditional exclusion of n3=57 without importing Wave 17. Combined with the separately audited Wave 17 exclusion, the necessary bounds are n3>=60 and induced_C6_count>=209346. Conway-99 and novelty remain UNKNOWN."
+
+  - id: O-WAVE18-STATUS
+    requirement: "Search current primary and authoritative sources for a Conway-99 resolution, prior exclusion of n3=57, n3>=60, induced_C6_count>=209346, and the exact active-set endpoint argument; independently audit Reimbayev's identity, the generic spectral ingredient, Baker's 2026 abstract, and Ishihara's 2022 purported proof."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave18-status-search.md"
+      - "verification/2026-07-23-wave18-status-audit.md"
+      - "SOURCES.bib"
+    note: "Two source-first lanes found no authoritative target resolution or exact prior Wave 18 endpoint through 2026-07-23; those nonhits do not establish novelty. The generic Rayleigh subset-edge bound is standard. Baker's abstract gives no exact theorem. Ishihara's equation (88) premise is refuted by the exact residual-cut degree multiset 1^20,2^51 and corrected count 122=2(71)-20, but both target outcomes remain UNKNOWN."
+
+  - id: O-WAVE19-CLOSURE
+    requirement: "Adversarially reconstruct the n3=60 profile reduction, repaired m=27 prism/K3,3 exclusion, residual-B bridge, official connected and disconnected cubic catalogs, symmetric local-C6 choices, two-Petersen orbit, every allowed Z placement through three edges, exact PSD/Gram systems, final Farkas separator, release provenance, and hostile mutations."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave19-alternate-frontier.md"
+      - "attempts/wave19-alternate-frontier/manifest.json"
+      - "attempts/wave19-alternate-frontier/exact-results.json"
+      - "verification/n3-60-closure/2026-07-23T140227Z-preinspection-freeze.md"
+      - "verification/n3-60-closure/2026-07-23T143251Z-independent-baseline.md"
+      - "verification/n3-60-closure/2026-07-23-wave19-m27-human-proof-audit.md"
+      - "verification/n3-60-closure/2026-07-23-wave19-gram-theory-audit.md"
+      - "verification/n3-60-closure/independent_closure_verifier.py"
+      - "verification/n3-60-closure/test_independent_closure_verifier.py"
+      - "verification/n3-60-closure/2026-07-23T160756Z-independent-full.json"
+      - "verification/n3-60-closure/2026-07-23T161951Z-final-audit.md"
+    note: "The independent audit verifies the conditional exclusion of n3=60, subject to the audited structural framework and the official catalog completeness premise. It matches all 510,489 connected dispositions and 177 disconnected cases, checks all 748,825 nonempty labeled Z placements, and independently replays the sole exact Farkas obstruction. The prospective bounds are n3>=63 and induced_C6_count>=209349. Conway-99 and novelty remain UNKNOWN."
+
+  - id: O-WAVE20-GLOBAL-SCHUR
+    requirement: "Adversarially reconstruct the triangle-incidence spectrum, the cross-edge matrix entries, all fixed-triangle moments and ordered-pair factors, the rank-44 zero-eigenspace projector, Schur positivity, the integral MWM lift, its nonzero mod-two rows, alternating mod-two quadratic form, positive mod-four diagonals, trace identity, divisibility endpoint, exact artifact provenance, and hostile mutations without importing any automorphism, catalog, solver-negative, or floating-point premise."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave20-global-schur.md"
+      - "attempts/wave20-global-obstruction/exact_check.py"
+      - "attempts/wave20-global-obstruction/test_exact_check.py"
+      - "attempts/wave20-global-obstruction/exact-checks.json"
+      - "attempts/wave20-global-obstruction/failed-routes.md"
+      - "attempts/wave20-global-obstruction/orchestrator-notes.md"
+      - "verification/2026-07-23-wave20-global-schur-audit.md"
+      - "attempts/wave20-global-obstruction/independent-verifier/independent-reconstruction.md"
+      - "attempts/wave20-global-obstruction/independent-verifier/independent_check.py"
+      - "attempts/wave20-global-obstruction/independent-verifier/test_independent_check.py"
+      - "attempts/wave20-global-obstruction/independent-verifier/independent-results.json"
+      - "attempts/wave20-global-obstruction/independent-verifier/artifact-manifest.sha256"
+    note: "The independent verifier passes 16 separately written tests, replays all 18 submitted tests, regenerates both exact JSON artifacts byte-identically, and verifies the global conditional bound n3>=705 and induced_C6_count>=209991. The frozen failed-routes introduction retains the earlier 699 endpoint; all operative artifacts use 705 and the correction is public. This is a necessary bound, not a target resolution or formal-kernel proof. Conway-99 and novelty remain UNKNOWN."
+
+  - id: O-WAVE20-STATUS
+    requirement: "Without inspecting the candidate proof, freeze and independently search current primary and maintained sources for a Conway-99 resolution, exact or stronger n3>=705 and induced_C6_count>=209991 bounds, equivalent N3 terminology, the 231-vertex triangle-graph spectrum, and the exact Schur/Hadamard projector specialization; retain source byte sizes and SHA-256 commitments, versions, queries, access failures, and the distinction between method prior art and exact novelty."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/global-schur/2026-07-23T162526Z-status-preinspection-freeze.md"
+      - "verification/global-schur/2026-07-23T170612Z-status-literature-audit.md"
+      - "verification/global-schur/2026-07-23T170612Z-status-source-query-ledger.json"
+      - "verification/global-schur/2026-07-23T170612Z-status-hashes.sha256"
+      - "SOURCES.bib"
+    note: "The separated source-first audit searched seven query families and thirteen pinned primary, maintained, or official sources through 2026-07-23. It verified Reimbayev's C6 identity and Petro--Phillips's triangle-graph spectrum, found no accepted target resolution or exact endpoint, and retained three access failures. Generic Schur/Krein machinery is prior art; non-discovery cannot establish novelty. Target status and exact-specialization novelty remain UNKNOWN."
+
+  - id: O-WAVE20-N3-63-STRUCTURAL
+    requirement: "Materially independently audit the repaired complete 18-profile n3=63 structural census, every r=18,19,20,21 branch, imported H/L and indexed-point semantics, exact arithmetic, and the rejected first two-profile generator claim."
+    critical: false
+    status: UNKNOWN
+    evidence:
+      - "agents/2026-07-23-wave20-n3-63-structural.md"
+      - "attempts/wave20-n3-63-structural/exact_check.py"
+      - "attempts/wave20-n3-63-structural/test_exact_check.py"
+      - "attempts/wave20-n3-63-structural/exact-results.json"
+      - "attempts/wave20-n3-63-structural/failed-runs.md"
+      - "attempts/wave20-n3-63-structural/manifest.json"
+    note: "The discovery lane passes 14 tests and preserves the false first two-profile census as REJECTED, but it has no fresh independent proof audit and therefore is not promoted. Its numerical n3=63 exclusion is superseded by the separately verified global n3>=705 theorem; supersession does not certify this derivation."
+
+  - id: O-WAVE21-SIX-SEVEN-COUNT-SYSTEM
+    requirement: "Independently freeze and reconstruct the complete 9/21/62/19 locally admissible graph census, source-index alignment, four-to-five and five-to-six deletion decks, all 62 six-vertex and 19 Hamiltonian seven-vertex affine formulas, exact integrality and nonnegativity envelope, the raw printed m7 failure, every possible one-card repair, deterministic artifacts, hostile mutations, and the boundary between count-vector feasibility and global graph existence."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave21-six-vertex-lp.md"
+      - "attempts/wave21-six-vertex-lp/manifest.json"
+      - "attempts/wave21-six-vertex-lp/exact_check.py"
+      - "attempts/wave21-six-vertex-lp/exact-results.json"
+      - "verification/wave21-six-vertex-lp/2026-07-23T172537Z-preinspection-freeze.json"
+      - "verification/wave21-six-vertex-lp/2026-07-23T174137Z-audit.md"
+      - "verification/wave21-six-vertex-lp/artifact-manifest.json"
+      - "verification/wave21-six-vertex-lp/independent_check.py"
+      - "verification/wave21-six-vertex-lp/independent-raw-printed-results.json"
+      - "verification/wave21-six-vertex-lp/independent-corrected-results.json"
+      - "verification/wave21-six-vertex-lp/candidate-comparison.json"
+      - "verification/wave21-six-vertex-lp/2026-07-23T175223Z-orchestrator-replay.md"
+    note: "The independent verifier passes 19 separately written tests, replays the 16 submitted tests, reconstructs all local graph classes and source indices, preserves the raw equation as REFUTED_AS_PRINTED, uniquely verifies the +n23 correction, and reproduces all three exact JSON artifacts byte-identically. The corrected necessary-count system leaves n3=705,708,...,4158 and therefore gives no stronger bound, contradiction, construction, or target resolution. The seven-vertex source is Hamiltonian-only; Conway-99 and novelty remain UNKNOWN."
+
+  - id: O-WAVE21-SOURCE-STATUS
+    requirement: "Freeze and independently audit the current official version of arXiv:2508.03377, whether v1/v2 or any later source contains the +n23 repair, formal correction and publication status, later primary sources by the author, exact-prior-source hits, byte-level provenance, archive safety, and access failures without promoting search nonhits to novelty."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave21-six-vertex-lp/status/2026-07-23T182843Z-source-status-audit.md"
+      - "verification/wave21-six-vertex-lp/status/source-manifest.json"
+      - "SOURCES.bib"
+    note: "The source-first audit confirms that official v1 and the still-current v2 both omit +n23, the unversioned PDF matched v2 bytes at the cutoff, and the official Atom record had no journal reference or journal DOI. It located no v3, formal correction, corrected journal/author version, or exact primary source stating the repair. Every nonhit is explicitly bounded; correction novelty and Conway-99 remain UNKNOWN."
+
+  - id: O-WAVE21-LOCAL-DIAGONAL
+    requirement: "Independently freeze and reconstruct the endpoint tensor-Gram contraction, traceless norm and coefficient, local A4 diagonal floors, endpoint cap, harmonic-cubic and centered-minor constants, trace-square cyclic factors, ordered parity count, scalar-profile enumeration, spectral witness boundary, exact artifacts, and hostile mutations without silently importing q!=1."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave21-local-diagonal.md"
+      - "attempts/wave21-local-diagonal/exact_check.py"
+      - "attempts/wave21-local-diagonal/test_exact_check.py"
+      - "attempts/wave21-local-diagonal/exact-checks.json"
+      - "verification/wave21-local-diagonal/preinspection-freeze.tsv"
+      - "verification/wave21-local-diagonal/2026-07-23T185252Z-audit.md"
+      - "verification/wave21-local-diagonal/independent_check.py"
+      - "verification/wave21-local-diagonal/test_independent_check.py"
+      - "verification/wave21-local-diagonal/independent-checks.json"
+      - "verification/wave21-local-diagonal/artifact-manifest.json"
+    note: "The independent verifier passes 18 separately written tests, replays the submitted 15 tests, and regenerates both JSON results byte-identically. It verifies q(T)<=8 and tr(A4^2)>=26460 at n3=705 while retaining q=1 and 22,113 scalar profiles. The surviving scalar and spectral witnesses are relaxations only; the endpoint, target, and novelty remain UNKNOWN."
+
+  - id: O-WAVE21-LATTICE-EXTENSION
+    requirement: "Independently freeze and audit the primitive projector lattice, dual and index direction, evenness and minimum, binary-rank bridge, integral positive endomorphism, determinant factorization, even-unimodular theorem use, endpoint determinant cap, harmonic restriction, contraction dynamic program, exact artifacts, and hostile examples."
+    critical: false
+    status: PASS_WITH_NONBLOCKING_EXACT_STRENGTHENING
+    evidence:
+      - "agents/2026-07-23-wave21-lattice-extension.md"
+      - "attempts/wave21-lattice-extension/exact_check.py"
+      - "attempts/wave21-lattice-extension/test_exact_check.py"
+      - "attempts/wave21-lattice-extension/exact-results.json"
+      - "verification/wave21-lattice-extension/preinspection-freeze.sha256"
+      - "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md"
+      - "verification/wave21-lattice-extension/independent_check.py"
+      - "verification/wave21-lattice-extension/test_independent_check.py"
+      - "verification/wave21-lattice-extension/independent-results.json"
+      - "verification/wave21-lattice-extension/theorem-sources.md"
+      - "verification/wave21-lattice-extension/artifact-manifest.sha256"
+    note: "The independent verifier passes 16 tests, replays the submitted 12 tests, and regenerates both JSON results byte-identically. It confirms the submitted conditional reduction and independently proves det(Q)=1 mod 4 for the rank-44 even odd-determinant Gram matrix, sharpening n3=705 to h in {1,9}. Since h remains undetermined, the unconditional bound stays n3>=705 and Conway-99 remains UNKNOWN."
+
+  - id: O-WAVE22-FULL-SEVEN-DECK
+    requirement: "Independently freeze and reconstruct all locally admissible order-six and order-seven graph classes, the complete 62-by-208 deletion matrix and modular ranks, the pinned 19-class Hamiltonian alignment, exact published formula values at n3=705 and h11=2820, and strict replay of a complete nonnegative integer witness without confusing aggregate feasibility with a graph construction."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave22-full-seven-deck.md"
+      - "attempts/wave22-full-seven-deck/witness.json"
+      - "attempts/wave22-full-seven-deck/exact_check.py"
+      - "attempts/wave22-full-seven-deck/test_exact_check.py"
+      - "attempts/wave22-full-seven-deck/exact-results.json"
+      - "verification/wave22-full-seven-deck/preinspection-freeze.tsv"
+      - "verification/wave22-full-seven-deck/2026-07-23T191133Z-audit.md"
+      - "verification/wave22-full-seven-deck/independent_verify.py"
+      - "verification/wave22-full-seven-deck/test_independent_verify.py"
+      - "verification/wave22-full-seven-deck/independent-results.json"
+    note: "The independent verifier passes 26 hostile tests, replays the submitted 15 tests, reconstructs 394,020 labeled and 208 unlabeled admissible order-seven graphs, verifies all 62 deletion rows and 19 Hamiltonian counts, and regenerates both exact results byte-identically. The witness is an aggregate relaxation only. Wave 23 later excludes n3=705 by stronger lattice constraints; neither result constructs or excludes the target graph."
+
+  - id: O-WAVE23-INDEX-ENDPOINT
+    requirement: "Blindly freeze and independently reconstruct the n3=705 projector-index exclusion, including integral trace-square parity, positive-form self-adjointness, every compactness and KKT boundary case, exact rational determinant caps for all positive multiplicities, determinant/index enumeration, even-Gram congruence, h=1 rescaling, imported signature-theorem applicability, hostile mutations, and byte-identical submitted replay."
+    critical: true
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave23-index-pranks.md"
+      - "attempts/wave23-index-pranks/input-freeze.sha256"
+      - "attempts/wave23-index-pranks/exact_check.py"
+      - "attempts/wave23-index-pranks/test_exact_check.py"
+      - "attempts/wave23-index-pranks/exact-results.json"
+      - "verification/wave23-index-pranks/preinspection-freeze.sha256"
+      - "verification/wave23-index-pranks/2026-07-23T192952Z-audit.md"
+      - "verification/wave23-index-pranks/independent_check.py"
+      - "verification/wave23-index-pranks/test_independent_check.py"
+      - "verification/wave23-index-pranks/independent-results.json"
+      - "verification/wave23-index-pranks/theorem-applicability.md"
+      - "verification/wave23-index-pranks/artifact-manifest.sha256"
+    note: "The blind verifier passes 14 independently written hostile tests, replays all 15 submitted tests, regenerates the submitted JSON byte-for-byte, validates all 20 manifest entries, and verifies n3!=705, hence the conditional bounds n3>=708 and induced_C6_count>=209994. This remains a necessary bound only; target existence and novelty are UNKNOWN."
+
+  - id: O-WAVE23-ENDPOINT-CROSSCHECK
+    requirement: "Blindly freeze and independently reconstruct the structurally separate n3=705 endpoint proof through scaled-dual parity, the trace-square floor, Newton's identity, pair-product AM-GM, the exact 51^22<43^23 comparison, determinant/index exhaustion, even-unimodular theorem applicability, submitted replay, hostile controls, and transparent correction of any ancillary defect."
+    critical: false
+    status: PASS_AFTER_RECORDED_NONBLOCKING_CORRECTION
+    evidence:
+      - "agents/2026-07-23-wave23-endpoint-crosscheck.md"
+      - "attempts/wave23-endpoint-crosscheck/exact_check.py"
+      - "attempts/wave23-endpoint-crosscheck/test_exact_check.py"
+      - "attempts/wave23-endpoint-crosscheck/exact-results.json"
+      - "attempts/wave23-endpoint-crosscheck/failed-routes.md"
+      - "attempts/wave23-endpoint-crosscheck/failed-runs.md"
+      - "verification/wave23-endpoint-crosscheck/preinspection-freeze.sha256"
+      - "verification/wave23-endpoint-crosscheck/2026-07-23T195158Z-audit.md"
+      - "verification/wave23-endpoint-crosscheck/independent_check.py"
+      - "verification/wave23-endpoint-crosscheck/test_independent_check.py"
+      - "verification/wave23-endpoint-crosscheck/independent-results.json"
+      - "verification/wave23-endpoint-crosscheck/theorem-applicability.md"
+      - "verification/wave23-endpoint-crosscheck/2026-07-23T200645Z-correction-audit.md"
+      - "verification/wave23-endpoint-crosscheck/correction-artifact-manifest.sha256"
+    note: "The independent verifier passes 17 separately written tests and the corrected candidate passes 25 tests with byte-identical result hash 1b31074d0fe4872c14caf1e25842377e4ddab9860f241d87d2814a350ac100a4. The original audit correctly found that the discovery-side hostile control (9,3,27) violated the retained det(B)=1 mod 4 condition. The ledgers preserve and refute it, the corrected witness (9,1,9) survives exactly the stated single relaxation, and a separate correction addendum verifies that the main proof is unchanged. The scoped endpoint exclusion is VERIFIED; target existence and novelty remain UNKNOWN."
+
+  - id: O-WAVE23-LITERATURE-STATUS
+    requirement: "Freeze a source-first plan and independently audit current target status, the exact Wave 23 endpoint values and method, chronology and terminology, primary-source provenance, query coverage, access failures, and bounded non-discovery language without converting search nonhits into novelty."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave23-literature-audit/preinspection-query-plan.md"
+      - "verification/wave23-literature-audit/2026-07-23-wave23-literature-audit.md"
+      - "verification/wave23-literature-audit/source-query-ledger.json"
+      - "verification/wave23-literature-audit/run-report.yaml"
+      - "verification/wave23-literature-audit/publication-hashes.sha256"
+      - "SOURCES.bib"
+    note: "The frozen audit inspected 24 query/citation paths and current primary, maintained, or official sources through 2026-07-23. Those sources still treated the target as open, and no exact 708/209994 endpoint or complete Wave 23 method was located. These are source-specific status findings and bounded non-discovery only. Target existence and novelty remain UNKNOWN."
+
+  - id: O-WAVE23-WEIGHTED-EXTENSIONS
+    requirement: "Freeze and independently reconstruct the complete locally admissible graph census through order seven, all deletion and automorphism-orbit-refined one-vertex extension coefficients, isomorphism-choice invariance, the lower-order source-six gate, exact modular ranks, the affine integer witness for all allowed h11, post-hoc Hamiltonian comparisons, deterministic replay, hostile mutations, privacy, and the boundary between aggregate feasibility and graph construction."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-23-wave23-weighted-extensions.md"
+      - "attempts/wave23-weighted-extensions/affine-witness.json"
+      - "attempts/wave23-weighted-extensions/exact_check.py"
+      - "attempts/wave23-weighted-extensions/test_exact_check.py"
+      - "attempts/wave23-weighted-extensions/exact-results.json"
+      - "verification/wave23-weighted-extensions/preinspection-freeze.sha256"
+      - "verification/wave23-weighted-extensions/postinspection-candidate.sha256"
+      - "verification/wave23-weighted-extensions/2026-07-23T202156Z-audit.md"
+      - "verification/wave23-weighted-extensions/independent_verifier.py"
+      - "verification/wave23-weighted-extensions/test_independent_verifier.py"
+      - "verification/wave23-weighted-extensions/independent-results.json"
+      - "verification/wave23-weighted-extensions/artifact-manifest.sha256"
+      - "verification/wave23-weighted-extensions/verifier-failures.md"
+    note: "The discovery suite passes 18 tests and the separately implemented verifier passes 20 hostile tests. Both rebuild the 394,020 labeled and 208 unlabeled order-seven census; the verifier checks all 712 rows, 20,408 isomorphism choices, 38,688 coefficient partitions, the 171-row source gate, ranks 207 and 208, and all 353 affine parameter values. The exact results replay byte-identically. The relaxation is VERIFIED FEASIBLE at the historical endpoint only; no graph is constructed, the current n3>=708 bound is unchanged, and target existence and novelty remain UNKNOWN."
+
+  - id: O-WAVE24-N3-708-INDEX
+    requirement: "Blindly freeze and independently reconstruct the n3=708 endpoint specialization, integral characteristic-pseudodeterminant floor, positive- and negative-domain logarithmic inequality, determinant cap, complete 3,7-smooth index exhaustion, local harmonic restrictions, full E8/A2 coordinate-lattice survivor matrices, theorem applicability, active hostile premises, deterministic submitted replay, and the boundary between an abstract lattice package and the required projector/Schur-square/graph origin."
+    critical: true
+    status: PASS_SCOPED_CONDITIONAL_RESTRICTION
+    evidence:
+      - "agents/2026-07-23-wave24-n3-708-index-boundary.md"
+      - "attempts/wave24-n3-708-index/exact_check.py"
+      - "attempts/wave24-n3-708-index/test_exact_check.py"
+      - "attempts/wave24-n3-708-index/exact-results.json"
+      - "attempts/wave24-n3-708-index/failed-routes.md"
+      - "verification/wave24-n3-708-index/preinspection-freeze.sha256"
+      - "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md"
+      - "verification/wave24-n3-708-index/independent_check.py"
+      - "verification/wave24-n3-708-index/test_independent_check.py"
+      - "verification/wave24-n3-708-index/independent-results.json"
+      - "verification/wave24-n3-708-index/survivor-certificate.json"
+      - "verification/wave24-n3-708-index/theorem-applicability.md"
+      - "verification/wave24-n3-708-index/artifact-manifest.sha256"
+      - "verification/wave24-n3-708-index/verifier-failures.md"
+    note: "The independent verifier passes 17 tests, replays all 15 submitted tests, regenerates the submitted JSON byte-identically, emits and verifies every entry of the 44-by-44 survivor matrices, and validates all ten manifest entries. It verifies det(B)<=6561, the exact eight-value h list, q<=11 with at most one q=11, and the abstract h=9 survivor. It does not verify a primitive Z^231 embedding, projector/Hadamard origin, Schur-square origin, graph, or n3=708 exclusion. The current bound remains n3>=708; target existence and novelty remain UNKNOWN."
+
+  - id: O-WAVE24-LITERATURE-STATUS
+    requirement: "Freeze a source-first plan and audit current target status, every exact Wave 24 endpoint value and index template, the logarithmic characteristic-pseudodeterminant method, equivalent projector-lattice terminology, conceptual ingredient prior art, the located 2022 nonexistence claim, source provenance, access/tool failures, and bounded non-discovery language without promoting search nonhits to novelty."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave24-literature-audit/preinspection-query-plan.md"
+      - "verification/wave24-literature-audit/2026-07-23-wave24-literature-audit.md"
+      - "verification/wave24-literature-audit/source-query-ledger.json"
+      - "verification/wave24-literature-audit/run-report.yaml"
+      - "verification/wave24-literature-audit/publication-hashes.sha256"
+      - "SOURCES.bib"
+    note: "The proof-separated audit verifies that its inspected current specialized sources still treat the target as unresolved and records 40 individual h-template searches plus exact endpoint, determinant, inequality, and method queries. No exact Wave 24 match was located. Knill's pseudodeterminant work and Bacher--Venkov's rational-idempotent lattice construction are recorded as conceptual analogues. The 2022 Ishihara claim is retained with a concrete equation-(88) gap. Every nonhit is bounded; target status, novelty, and priority remain UNKNOWN."
+
+  - id: O-WAVE25-N3-708-STRICTNESS
+    requirement: "Blindly freeze and independently reconstruct the n3=708 equality-spectrum exclusion, integral self-adjoint idempotent split, equality-case kernel-block scaled-dual inverse identity, even positive-definite unimodular rank-36 contradiction, trace-square parity, strict logarithmic determinant bound, complete 3,7-smooth h/det(Q) enumeration, hostile premise relaxations, deterministic submitted replay, retained abstract survivor, and the boundary between this arithmetic restriction and a projector/Schur-square/graph realization."
+    critical: true
+    status: PASS_SCOPED_STRICTNESS
+    evidence:
+      - "agents/2026-07-23-wave25-n3-708-strictness.md"
+      - "attempts/wave25-n3-708-strictness/exact_check.py"
+      - "attempts/wave25-n3-708-strictness/test_exact_check.py"
+      - "attempts/wave25-n3-708-strictness/exact-results.json"
+      - "attempts/wave25-n3-708-strictness/input-freeze.sha256"
+      - "attempts/wave25-n3-708-strictness/failed-routes.md"
+      - "attempts/wave25-n3-708-strictness/run-report.yaml"
+      - "verification/wave25-n3-708-strictness/preinspection-freeze.sha256"
+      - "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md"
+      - "verification/wave25-n3-708-strictness/independent_check.py"
+      - "verification/wave25-n3-708-strictness/test_independent_check.py"
+      - "verification/wave25-n3-708-strictness/independent-results.json"
+      - "verification/wave25-n3-708-strictness/artifact-manifest.sha256"
+      - "verification/wave25-n3-708-strictness/run-report.yaml"
+    note: "The discovery suite passes 21 tests and the separately implemented verifier passes 18 hostile tests. Both exclude tr(C^2)=8, verify tr(C^2)>=10 and tr(B^2)>=116, enumerate all 323 allowed h/det(Q) factor pairs, and obtain the combined cap det(B)<=6525 with the same eight h values. In the hypothetical equality case, the verifier proves S0=Q0^-1 only on the ker(C) block and explicitly rejects the false global identity S=Q^-1. The h=9 abstract coordinate-lattice survivor remains, so n3=708 is not excluded; the current bound remains n3>=708, and target existence and novelty remain UNKNOWN."
+
+  - id: O-WAVE25-LITERATURE-STATUS
+    requirement: "Freeze a proof-separated source-first plan and audit current target status, the exact Wave 25 endpoint and determinant fingerprints, integral self-adjoint idempotent and kernel-splitting terminology, even-unimodular rank-36 prior theory, projector and graph-lattice analogues, source provenance, access failures, and bounded non-discovery language without promoting search nonhits to novelty."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave25-literature-audit/preinspection-query-plan.md"
+      - "verification/wave25-literature-audit/2026-07-23-wave25-literature-audit.md"
+      - "verification/wave25-literature-audit/source-query-ledger.json"
+      - "verification/wave25-literature-audit/run-report.yaml"
+      - "verification/wave25-literature-audit/publication-hashes.sha256"
+      - "SOURCES.bib"
+    note: "The audit froze 30 queries before inspecting proof artifacts and inspected ten primary or authoritative sources. It found no exact Wave 25 match. Bacher--Venkov, Berget et al., and the standard even-unimodular rank-divisibility theorem are recorded as conceptual or theorem-level prior art, not novel ingredients. Search coverage is bounded and subscription databases were unavailable; target status, novelty, and priority remain UNKNOWN."
+
+  - id: O-WAVE26-A2-FRAME-OBSTRUCTION
+    requirement: "Blindly freeze and independently reconstruct the basis-covariant projector-frame identities, exact A2 small-vector arithmetic, energy-42 incidence count, six oriented-root fibers, positive-semidefinite cap three, 18-versus-21 contradiction, exact application to the Wave 24 survivor, active +2 and missing-frame hostile controls, opposite-root edge case, deterministic submitted replay, scope wall, and the disposition of the proposed determinant strengthening."
+    critical: true
+    status: PASS_SCOPED_A2_FRAME_OBSTRUCTION
+    evidence:
+      - "agents/2026-07-23-wave26-a2-frame-obstruction.md"
+      - "attempts/wave26-a2-frame-obstruction/exact_check.py"
+      - "attempts/wave26-a2-frame-obstruction/test_exact_check.py"
+      - "attempts/wave26-a2-frame-obstruction/exact-results.json"
+      - "attempts/wave26-a2-frame-obstruction/input-freeze.sha256"
+      - "attempts/wave26-a2-frame-obstruction/failed-routes.md"
+      - "attempts/wave26-a2-frame-obstruction/run-report.yaml"
+      - "verification/wave26-a2-frame-obstruction/preinspection-freeze.sha256"
+      - "verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md"
+      - "verification/wave26-a2-frame-obstruction/independent_check.py"
+      - "verification/wave26-a2-frame-obstruction/test_independent_check.py"
+      - "verification/wave26-a2-frame-obstruction/independent-results.json"
+      - "verification/wave26-a2-frame-obstruction/artifact-manifest.sha256"
+      - "verification/wave26-a2-frame-obstruction/run-report.yaml"
+      - "verification/wave26-a2-frame-obstruction/determinant-scout-disposition.md"
+    note: "The discovery suite passes 15 tests and the independent verifier passes 14 separately written tests. Both obtain 21 forced A2-root rows versus capacity 18 and reject the required projector-frame origin of the exact E8^5 orthogonal-sum A2^2 survivor. The abstract coordinate package remains valid; all h=9 forms, arbitrary embeddings without the frame identities, n3=708, Conway-99, and novelty remain UNKNOWN. The proposed det(B)<=3645 strengthening remains UNKNOWN."
+
+  - id: O-WAVE26-A2-CUBIC-OBSTRUCTION
+    requirement: "Independently freeze and reconstruct the ordered-tensor Schur factorization, tight-frame gate, exact A2 root-line counts, odd signed-imbalance cubic floor, orthogonal compression inequality, mixed-block and normalized symmetric-square factors, basis covariance, row orientation, redundant M1=0 premise, exact Wave 24 block trace, hostile dropped-frame control, deterministic replay, and strict endpoint scope."
+    critical: true
+    status: PASS_SCOPED_A2_CUBIC_OBSTRUCTION
+    evidence:
+      - "agents/2026-07-23-wave26-a2-cubic-obstruction.md"
+      - "attempts/wave26-a2-cubic-obstruction/exact_check.py"
+      - "attempts/wave26-a2-cubic-obstruction/test_exact_check.py"
+      - "attempts/wave26-a2-cubic-obstruction/exact-results.json"
+      - "attempts/wave26-a2-cubic-obstruction/input-freeze.sha256"
+      - "attempts/wave26-a2-cubic-obstruction/failed-routes.md"
+      - "attempts/wave26-a2-cubic-obstruction/run-report.yaml"
+      - "verification/wave26-a2-cubic-obstruction/preinspection-freeze.md"
+      - "verification/wave26-a2-cubic-obstruction/precomparison-freeze.sha256"
+      - "verification/wave26-a2-cubic-obstruction/2026-07-23T231001Z-audit.md"
+      - "verification/wave26-a2-cubic-obstruction/independent_check.py"
+      - "verification/wave26-a2-cubic-obstruction/test_independent_check.py"
+      - "verification/wave26-a2-cubic-obstruction/independent-results.json"
+      - "verification/wave26-a2-cubic-obstruction/submitted-regenerated.json"
+      - "verification/wave26-a2-cubic-obstruction/artifact-manifest.sha256"
+      - "verification/wave26-a2-cubic-obstruction/run-report.yaml"
+      - "verification/wave26-a2-cubic-obstruction/verifier-failures.md"
+    note: "The independent suite passes 17 tests, the submitted suite passes 19 tests, and the submitted JSON replay is byte-identical. The verifier proves tr(A2 Q_AA)>=18 with cross-block normalization and basis conventions checked, while each explicit survivor block has trace 10. A procedurally contaminated auxiliary route is excluded from evidence, and the immutable discovery report's row/column terminology defect is recorded. The result does not classify all h=9 forms or exclude n3=708."
+
+  - id: O-WAVE26-LITERATURE-STATUS
+    requirement: "Freeze a proof-separated source-first plan and audit direct or near-direct prior art for the 231-row orthogonal-A2 exclusion, parameter-specific terms, tight-frame projector Grams, integer and rational lattice frames, strongly regular graph embeddings, eutaxy and spherical designs, Hadamard-Gram products, Schur-product versus Schur-complement terminology, source quality, service failures, and bounded non-discovery language."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave26-literature-audit/protocol-freeze.md"
+      - "verification/wave26-literature-audit/audit-report.md"
+      - "verification/wave26-literature-audit/sources.md"
+      - "verification/wave26-literature-audit/bibliography.bib"
+      - "verification/wave26-literature-audit/query-ledger.json"
+      - "verification/wave26-literature-audit/query-log.md"
+      - "verification/wave26-literature-audit/failures-limitations.md"
+      - "verification/wave26-literature-audit/run-report.yaml"
+      - "verification/wave26-literature-audit/manifest.sha256"
+      - "SOURCES.bib"
+    note: "The audit attempted all 28 frozen queries across five search surfaces, inspected 15 primary or authoritative sources, and found no direct or near-direct match. It records established general machinery and the important fact that generic A2 tightness, strong eutaxy, and antipodal odd-moment cancellation do not imply the target exclusion. Raw responses were reduced to a compact ledger. Every nonhit is bounded; proof validity, target status, novelty, and priority remain UNKNOWN."
+
+  - id: O-WAVE27-A2FREE-CONSTRUCTION
+    requirement: "Independently freeze and reconstruct the explicit E8^4 orthogonal-sum E6^2 rank-44 determinant-nine form, complete norm-two root-component census and no-orthogonal-A2 argument, exact E6 rank-one projector block, full S,Q,G,B,C matrices, parity, determinants, traces, self-adjointness, minima, discriminant data, bounded seed-scan restrictions, hostile mutations, deterministic submitted replay, and strict arithmetic-only scope wall."
+    critical: false
+    status: PASS_SCOPED_CANDIDATE
+    evidence:
+      - "agents/2026-07-23-wave27-a2free-construction.md"
+      - "attempts/wave27-a2free-construction/exact_check.py"
+      - "attempts/wave27-a2free-construction/test_exact_check.py"
+      - "attempts/wave27-a2free-construction/exact-results.json"
+      - "attempts/wave27-a2free-construction/input-freeze.sha256"
+      - "attempts/wave27-a2free-construction/failed-routes.md"
+      - "attempts/wave27-a2free-construction/run-report.yaml"
+      - "verification/wave27-a2free-construction/preinspection-freeze.sha256"
+      - "verification/wave27-a2free-construction/2026-07-24T001657Z-audit.md"
+      - "verification/wave27-a2free-construction/independent_check.py"
+      - "verification/wave27-a2free-construction/test_independent_check.py"
+      - "verification/wave27-a2free-construction/independent-results.json"
+      - "verification/wave27-a2free-construction/submitted-regenerated.json"
+      - "verification/wave27-a2free-construction/artifact-manifest.sha256"
+      - "verification/wave27-a2free-construction/run-report.yaml"
+      - "verification/wave27-a2free-construction/verifier-failures.md"
+    note: "The submitted suite passes 15 tests and the independently implemented verifier passes 16 hostile tests, reproduces the submitted result byte-for-byte, and validates all frozen package hashes. The explicit abstract h=9 arithmetic/lattice package is VERIFIED within that scope and has no orthogonal A2 direct summand, although embedded A2 root subsystems occur. Its full projector/Schur origin is impossible because it contains orthogonal E6 summands; it is not a graph or an endpoint realization. All h=9 forms, n3=708, Conway-99 existence, and novelty remain UNKNOWN."
+
+  - id: O-WAVE27-E6-TRACE
+    requirement: "Independently freeze and reconstruct the unrestricted theorem that even integral positive-definite Q with E6 Q=I mod 2 satisfies tr(E6 Q)>=14, including determinant congruence, trace parity, the trace-ten kernel obstruction, the characteristic-pseudodeterminant and product bounds, the explicit trace-14 equality witness, hostile controls, deterministic submitted replay, and transparent handling of any discovery-documentation gap."
+    critical: false
+    status: PASS_WITH_RECORDED_DOCUMENTATION_DEFECT
+    evidence:
+      - "agents/2026-07-23-wave27-h9-classification.md"
+      - "attempts/wave27-h9-classification/exact_check.py"
+      - "attempts/wave27-h9-classification/test_exact_check.py"
+      - "attempts/wave27-h9-classification/exact-results.json"
+      - "attempts/wave27-h9-classification/input-freeze.sha256"
+      - "attempts/wave27-h9-classification/failed-routes.md"
+      - "attempts/wave27-h9-classification/run-report.yaml"
+      - "verification/wave27-h9-classification/input-freeze.sha256"
+      - "verification/wave27-h9-classification/2026-07-24T002029Z-audit.md"
+      - "verification/wave27-h9-classification/independent_check.py"
+      - "verification/wave27-h9-classification/test_independent_check.py"
+      - "verification/wave27-h9-classification/independent-results.json"
+      - "verification/wave27-h9-classification/submitted-regenerated.json"
+      - "verification/wave27-h9-classification/artifact-manifest.sha256"
+      - "verification/wave27-h9-classification/run-report.yaml"
+      - "verification/wave27-h9-classification/verifier-failures.md"
+      - "verification/2026-07-24-wave27-orchestrator-corrections.md"
+    note: "The submitted suite passes 16 tests and the separately implemented verifier passes 21 hostile tests, with byte-identical submitted regeneration and all manifest entries checked. The theorem and equality witness are VERIFIED. The immutable discovery prose omitted the explicit parity bridge tr(C^2)=tr(C) mod 2 between excluding value two and using the next admissible value four; the verifier records and supplies the nonfatal bridge. This local algebraic minimum is 14, distinct from the frame/Schur cubic floor 24, and does not classify h=9 forms or resolve the endpoint."
+
+  - id: O-WAVE27-ROOT-TENSOR
+    requirement: "Blindly freeze and independently reconstruct the full endpoint projector-frame and cubic-tensor compression identities, arbitrary-cross-Q complement bound, repeated-index parity cosets, exact symmetric-cubic Gram and Fraction-LDL enumeration, zero-sum energy divisibility by six, orthogonal A6 and E6 exclusions, trace-14 hostile algebraic block, complete ADE component integrality screen, complete rank-44 determinant census, hostile controls, deterministic core replay, and the boundary retaining the core A20 orthogonal-sum E8^3 survivor."
+    critical: true
+    status: PASS_SCOPED_CORE_TENSOR_AND_ADE_SCREEN
+    evidence:
+      - "agents/2026-07-23-wave27-general-root-tensor.md"
+      - "attempts/wave27-general-root-tensor/exact_check.py"
+      - "attempts/wave27-general-root-tensor/test_exact_check.py"
+      - "attempts/wave27-general-root-tensor/exact-results.json"
+      - "attempts/wave27-general-root-tensor/input-freeze.sha256"
+      - "attempts/wave27-general-root-tensor/failed-routes.md"
+      - "attempts/wave27-general-root-tensor/run-report.yaml"
+      - "attempts/wave27-general-root-tensor/artifact-manifest.sha256"
+      - "verification/wave27-general-root-tensor/intake-freeze.json"
+      - "verification/wave27-general-root-tensor/2026-07-24T010548Z-audit.md"
+      - "verification/wave27-general-root-tensor/independent_check.py"
+      - "verification/wave27-general-root-tensor/test_independent_check.py"
+      - "verification/wave27-general-root-tensor/independent-results.json"
+      - "verification/wave27-general-root-tensor/submitted-regenerated.json"
+      - "verification/wave27-general-root-tensor/replay-summary.json"
+      - "verification/wave27-general-root-tensor/artifact-manifest.sha256"
+      - "verification/wave27-general-root-tensor/run-report.yaml"
+      - "verification/wave27-general-root-tensor/failed-runs.md"
+    note: "The submitted core suite passes 17 tests and the blind verifier passes 23 independently written tests. It reproduces exact E6 and A6 affine-sphere searches with 10,011 and 105,185 accepted partial nodes and zero leaves, verifies cubic floors 24 and 66, checks all 88 ADE components and all 17 rank-44 determinant-compatible decompositions, and regenerates the submitted JSON byte-identically. Orthogonal E6 and A6 summands are VERIFIED impossible under the endpoint identities. The core census intentionally leaves A20 orthogonal-sum E8^3; its later exclusion is a separate obligation."
+
+  - id: O-WAVE27-A20-TRACE
+    requirement: "Separately freeze and independently verify the A_n Cartan rank-one decomposition, the even positive-definite trace floor tr(A20 Q_AA)>=42, the rank-24 complement floor 24, the resulting contradiction with global trace 60, deterministic addendum replay, and the combined conditional exclusion of a full orthogonal ADE form after importing the separately verified A2, A6, and E6 component theorems."
+    critical: true
+    status: PASS_SCOPED_A20_AND_CONDITIONAL_FULL_ADE_EXCLUSION
+    evidence:
+      - "agents/2026-07-24-wave27-a20-trace-addendum.md"
+      - "attempts/wave27-a20-trace-addendum/exact_check.py"
+      - "attempts/wave27-a20-trace-addendum/test_exact_check.py"
+      - "attempts/wave27-a20-trace-addendum/exact-results.json"
+      - "attempts/wave27-a20-trace-addendum/input-freeze.sha256"
+      - "attempts/wave27-a20-trace-addendum/failed-routes.md"
+      - "attempts/wave27-a20-trace-addendum/run-report.yaml"
+      - "attempts/wave27-a20-trace-addendum/artifact-manifest.sha256"
+      - "verification/wave27-general-root-tensor/addendum-intake-freeze.json"
+      - "verification/wave27-general-root-tensor/2026-07-24T010548Z-audit.md"
+      - "verification/wave27-general-root-tensor/independent_check.py"
+      - "verification/wave27-general-root-tensor/test_independent_check.py"
+      - "verification/wave27-general-root-tensor/independent-results.json"
+      - "verification/wave27-general-root-tensor/addendum-submitted-regenerated.json"
+      - "verification/wave27-general-root-tensor/replay-summary.json"
+      - "verification/wave27-general-root-tensor/artifact-manifest.sha256"
+      - "verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md"
+      - "verification/2026-07-24-wave27-orchestrator-corrections.md"
+    note: "The submitted addendum suite passes eight tests and the independent verifier checks it separately from the frozen core package, regenerating its JSON byte-identically. The orthogonal A20 summand and, after composition with the separately verified A2, A6, and E6 exclusions, every full orthogonal ADE endpoint form are VERIFIED conditionally impossible. This does not exclude general even rank-44 scaled-dual forms, nonorthogonal root subsystems, n3=708, Conway-99, or any target outcome; novelty remains UNKNOWN."
+
+  - id: O-WAVE27-LITERATURE-STATUS
+    requirement: "Freeze a proof-separated source-first protocol and corrective protocol, then audit current Conway-99 status and direct or near-direct prior art for the Wave 27 E6 trace theorem and witness, E6/A6 scale-21 cubic parity, E8^4 orthogonal-sum E6^2 comparison, orthogonal-root screen, and separately frozen A20 trace addendum, while recording chronology, source quality, service failures, exact query counts, and bounded non-discovery language."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave27-literature-audit/protocol.md"
+      - "verification/wave27-literature-audit/protocol-correction.md"
+      - "verification/wave27-literature-audit/protocol-a20-addendum.md"
+      - "verification/wave27-literature-audit/audit.md"
+      - "verification/wave27-literature-audit/query-ledger.md"
+      - "verification/wave27-literature-audit/query-log.jsonl"
+      - "verification/wave27-literature-audit/sources.md"
+      - "verification/wave27-literature-audit/references.bib"
+      - "verification/wave27-literature-audit/failures.md"
+      - "verification/wave27-literature-audit/run-report.yaml"
+      - "verification/wave27-literature-audit/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave27-orchestrator-corrections.md"
+      - "SOURCES.bib"
+    note: "The audit executed 56 service-query pairs and inspected 303 returned records. It found current qualifying sources that still treat Conway-99 as open and no direct or near-direct Wave 27 match, while recording standard ADE data as conceptual prior art. The initial protocol's factor-2 reading of 21E6^-1 is preserved and corrected before five corrective pairs; the later A20 result has a separately frozen six-pair addendum. Ten zbMATH 404s are service failures rather than zero-result evidence. Bounded non-discovery does not establish openness, novelty, or priority, all of which remain UNKNOWN."
+
+  - id: O-WAVE28-GLUE
+    requirement: "Independently reconstruct the unrestricted endpoint discriminant groups and exact levels, complete Milgram-compatible formal-module census, scaled-dual local determinant signs, primitive-root index-two complement theorem, exact 46-to-32 root-image pattern census, and primitive root-closure/glue reduction, while adversarially checking the submitted prose and retaining every correction."
+    critical: true
+    status: PASS_WITH_CORRECTION
+    evidence:
+      - "agents/2026-07-24-wave28-orchestrator-brief.md"
+      - "agents/2026-07-24-wave28-glue-discriminant.md"
+      - "attempts/wave28-glue-discriminant/exact_check.py"
+      - "attempts/wave28-glue-discriminant/test_exact_check.py"
+      - "attempts/wave28-glue-discriminant/exact-results.json"
+      - "attempts/wave28-glue-discriminant/input-freeze.sha256"
+      - "attempts/wave28-glue-discriminant/failed-routes.md"
+      - "attempts/wave28-glue-discriminant/run-report.yaml"
+      - "attempts/wave28-glue-discriminant/artifact-manifest.sha256"
+      - "verification/wave28-glue-discriminant/audit.md"
+      - "verification/wave28-glue-discriminant/independent_check.py"
+      - "verification/wave28-glue-discriminant/test_independent_check.py"
+      - "verification/wave28-glue-discriminant/independent-results.json"
+      - "verification/wave28-glue-discriminant/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave28-orchestrator-corrections.md"
+    note: "The submitted 13-test and independent 16-test suites pass, both JSON files replay byte-identically, and the independent implementation confirms twelve formal modules, local signs, root complement/glue statements, and the 46-to-32 census. It rejects both the stale count eleven and the discovery sentence excluding cyclic order-21 invariant factors. The corrected statement permits Z/21 while keeping the p-primary parts elementary. No formal module is promoted to a rank-44 realization, no determinant row is excluded, and the endpoint and target remain UNKNOWN."
+
+  - id: O-WAVE28-THETA
+    requirement: "Independently verify every exact level and scalar character, Poisson and Weil convention, Sturm bound, modularity and strong-modularity veto, ADE shell control, the K12 and LAMBDA(F) source matrices, complete norm-four shells, exact scaled-dual minimum, explicit finite-discriminant-form isometry, rooted comparator, deterministic replay, and strict separation of bare lattice data from a marked endpoint frame."
+    critical: true
+    status: PASS_SCOPED_BARE_LATTICE_CONTROL
+    evidence:
+      - "agents/2026-07-24-wave28-orchestrator-brief.md"
+      - "agents/2026-07-24-wave28-theta-modular.md"
+      - "attempts/wave28-theta-modular/exact_check.py"
+      - "attempts/wave28-theta-modular/test_exact_check.py"
+      - "attempts/wave28-theta-modular/exact-results.json"
+      - "attempts/wave28-theta-modular/input-freeze.sha256"
+      - "attempts/wave28-theta-modular/source-freeze.sha256"
+      - "attempts/wave28-theta-modular/failed-routes.md"
+      - "attempts/wave28-theta-modular/run-report.yaml"
+      - "attempts/wave28-theta-modular/artifact-manifest.sha256"
+      - "verification/wave28-theta-modular/audit.md"
+      - "verification/wave28-theta-modular/independent_check.py"
+      - "verification/wave28-theta-modular/test_independent_check.py"
+      - "verification/wave28-theta-modular/independent-results.json"
+      - "verification/wave28-theta-modular/catalogue-data.json"
+      - "verification/wave28-theta-modular/source-manifest.json"
+      - "verification/wave28-theta-modular/theorem-source-manifest.json"
+      - "verification/wave28-theta-modular/full-run.stdout.log"
+      - "verification/wave28-theta-modular/full-run.stderr.log"
+      - "verification/wave28-theta-modular/run-report.yaml"
+      - "verification/wave28-theta-modular/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave28-orchestrator-corrections.md"
+    note: "The submitted 14-test and independent 20-test suites pass. A complete 15053011-node fraction-free enumeration finds exactly 146880 norm-four LAMBDA(F) vectors, and deterministic full replay preserves the independent JSON hash. The verifier strengthens min(21S0^-1)>=14 to exact value 28 and verifies the explicit F3 discriminant-form isometry. Raw source pages are hash-checked and discarded. The control has no X, M, Q, B, Schur-square origin, graph, or endpoint status."
+
+  - id: O-WAVE28-SIMULTANEOUS-NEIGHBOR
+    requirement: "Freeze and independently reconstruct both simultaneous even two-neighbors of the paired Wave 27 arithmetic package, including deterministic rational bases and inverses, every transformed matrix and endpoint invariant, complete roots in both cosets, ADE component identification, root spans, primitive closures, complements, H0/H1 glue indices, hostile mutations, freeze drift, and non-evidentiary timeout chronology."
+    critical: false
+    status: PASS_SCOPED_ABSTRACT_CONTROLS
+    evidence:
+      - "agents/2026-07-24-wave28-orchestrator-brief.md"
+      - "agents/2026-07-24-wave28-simultaneous-neighbor-freeze.md"
+      - "verification/wave28-simultaneous-neighbor/intake-freeze.json"
+      - "verification/wave28-simultaneous-neighbor/independent_check.py"
+      - "verification/wave28-simultaneous-neighbor/test_independent_check.py"
+      - "verification/wave28-simultaneous-neighbor/independent-results.json"
+      - "verification/wave28-simultaneous-neighbor/2026-07-24-wave28-simultaneous-neighbor-audit.md"
+      - "verification/wave28-simultaneous-neighbor/failed-runs.md"
+      - "verification/wave28-simultaneous-neighbor/run-report.yaml"
+      - "verification/wave28-simultaneous-neighbor/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave28-orchestrator-corrections.md"
+    note: "The independent suite passes all 25 tests and regenerates its complete matrix/root JSON byte-identically. It verifies the preferred rank-43 and retained initial rank-44 root systems and all glue data. The first proposed mutation remained valid and is retained as a positive control; a replacement mutation fails. The direct 44-dimensional timeout is non-evidentiary. Both objects remain abstract lattice/arithmetic controls with no endpoint frame, Schur certificate, or graph."
+
+  - id: O-WAVE28-LITERATURE-STATUS
+    requirement: "Freeze a candidate-independent source-first protocol, execute and account for all queries concerning current Conway-99 status, weak scaled-dual rank-44 lattices, discriminant forms and root glue, K12 and LAMBDA(F), modularity and theta laws, simultaneous neighbors, marked frames, Schur products, and root-image patterns, while retaining metadata only and separating standard ingredients, nearby results, service limitations, and bounded non-discovery."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave28-literature-audit/protocol-freeze.md"
+      - "verification/wave28-literature-audit/query-ledger.json"
+      - "verification/wave28-literature-audit/query-results.json"
+      - "verification/wave28-literature-audit/audit.md"
+      - "verification/wave28-literature-audit/sources/bibliography.json"
+      - "verification/wave28-literature-audit/sources/notes/target-status.md"
+      - "verification/wave28-literature-audit/sources/notes/lattice-discriminant.md"
+      - "verification/wave28-literature-audit/sources/notes/theta-controls.md"
+      - "verification/wave28-literature-audit/sources/notes/neighbor-frame-root-patterns.md"
+      - "verification/wave28-literature-audit/run-report.yaml"
+      - "verification/wave28-literature-audit/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave28-orchestrator-corrections.md"
+      - "SOURCES.bib"
+    note: "All 35 frozen query IDs have matched outcomes; the package retains 17 metadata-only records, two explicit access/service limitations, and no raw HTML or papers. A 2025 refereed source calls Conway-99 open and a 2026 SAT preprint reports no resolution. No exact combined Wave 28 hit was found, but bounded non-discovery does not prove openness after the cutoff, novelty, or priority. The audit verifies source scope rather than arithmetic."
+
+  - id: O-WAVE29-S0-EXCLUSION
+    requirement: "Blindly reconstruct the exclusion of only S0=K12 orthogonal-sum LAMBDA(F) from the full frozen endpoint package, including integral minimum-four row support, the 63/168 tight-frame split, induced M/W/Q/B blocks, determinant-five allocation and rank-12 even-unimodular veto, complete row-alphabet residue, exact AM-GM trace pair, the non-PSD C_K spectral boundary, characteristic-pseudodeterminant integrality, the logarithmic inequality on both positive and negative domains, active premise deletions, and the final 3645>729 contradiction."
+    critical: true
+    status: PASS
+    evidence:
+      - "agents/2026-07-24-wave29-s0-frame-exclusion.md"
+      - "attempts/wave29-s0-frame-exclusion/exact_check.py"
+      - "attempts/wave29-s0-frame-exclusion/test_exact_check.py"
+      - "attempts/wave29-s0-frame-exclusion/exact-results.json"
+      - "attempts/wave29-s0-frame-exclusion/failed-routes.md"
+      - "attempts/wave29-s0-frame-exclusion/run-report.yaml"
+      - "attempts/wave29-s0-frame-exclusion/artifact-manifest.sha256"
+      - "verification/wave29-s0-frame-exclusion/protocol-freeze.md"
+      - "verification/wave29-s0-frame-exclusion/independent_check.py"
+      - "verification/wave29-s0-frame-exclusion/test_independent_check.py"
+      - "verification/wave29-s0-frame-exclusion/independent-results.json"
+      - "verification/wave29-s0-frame-exclusion/audit.md"
+      - "verification/wave29-s0-frame-exclusion/failure-ledger.md"
+      - "verification/wave29-s0-frame-exclusion/run-report.yaml"
+      - "verification/wave29-s0-frame-exclusion/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave29-orchestrator-corrections.md"
+    note: "The discovery suite passes 18 tests and the clean-room verifier passes 27 hostile tests. Both JSON results replay byte-identically, and all 14 mathematical manifest entries match. The verifier corrects stale preinspection commit metadata and rejects a C_K positive-semidefinite shortcut while reproducing every exact implication. The conclusion excludes one S0 endpoint origin only; every other h=729 lattice, n3=708, Conway-99, and novelty remain UNKNOWN."
+
+  - id: O-WAVE29-LITERATURE-STATUS
+    requirement: "Freeze the exact single-lattice exclusion and its identifying proof signature before searching; query exact and alternate lattice names, numerical fingerprints, endpoint/frame language, determinant-log and pseudodeterminant terms, standard ingredients, and current target status; retain metadata only; account for service limits; and separate bounded non-discovery from novelty or global-openness claims."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave29-s0-literature-audit/protocol-freeze.md"
+      - "verification/wave29-s0-literature-audit/query-ledger.json"
+      - "verification/wave29-s0-literature-audit/source-metadata.json"
+      - "verification/wave29-s0-literature-audit/audit.md"
+      - "verification/wave29-s0-literature-audit/run-report.yaml"
+      - "verification/wave29-s0-literature-audit/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave29-orchestrator-corrections.md"
+      - "SOURCES.bib"
+    note: "The audit logs 81 query strings in 21 batches and retains 16 primary or authoritative records with zero raw source payloads. It finds standard ingredients but no exact combined proof match. One Crossref query was rate-limited; Google Scholar, MathSciNet, and zbMATH were not comprehensively machine-audited. Exact prior-art match is NONE_IN_BOUNDED_AUDIT, while novelty and broader target status remain UNKNOWN."
+
+  - id: O-WAVE30-GENERAL-H729
+    requirement: "Preserve the original failed Wave 30 submission and publication veto; repair only the stale frozen-input provenance; freeze and independently re-verify the exact repaired revision; hermetically replay the original failure and historical independent verifier; and reconstruct the conditional classification of every rootless integrally orthogonally decomposable h=729 endpoint S-form, including block-supported minimum-four rows, the complete fifteen-type census, determinant and trace allocations, both logarithmic caps, equality/idempotent signature vetoes, the unique 20+24 survivor, tensor-profile boundary, hostile premise deletions, and all graph/nonexistence scope walls."
+    critical: true
+    status: PASS_AFTER_RECORDED_REPAIR_AND_REVERIFICATION
+    evidence:
+      - "agents/2026-07-24-wave30-general-h729.md"
+      - "attempts/wave30-general-h729/exact_check.py"
+      - "attempts/wave30-general-h729/test_exact_check.py"
+      - "attempts/wave30-general-h729/exact-results.json"
+      - "attempts/wave30-general-h729/input-freeze.sha256"
+      - "attempts/wave30-general-h729/failed-routes.md"
+      - "attempts/wave30-general-h729/run-report.yaml"
+      - "attempts/wave30-general-h729/repair-ledger.md"
+      - "attempts/wave30-general-h729/artifact-manifest.sha256"
+      - "verification/wave30-general-h729/protocol-freeze.md"
+      - "verification/wave30-general-h729/independent_check.py"
+      - "verification/wave30-general-h729/test_independent_check.py"
+      - "verification/wave30-general-h729/test_hostile_controls.py"
+      - "verification/wave30-general-h729/independent-results.json"
+      - "verification/wave30-general-h729/audit.md"
+      - "verification/wave30-general-h729/failure-ledger.md"
+      - "verification/wave30-general-h729/run-report.yaml"
+      - "verification/wave30-general-h729/artifact-manifest.sha256"
+      - "verification/wave30-general-h729/reverification-freeze.md"
+      - "verification/wave30-general-h729/reverification-audit.md"
+      - "verification/wave30-general-h729/reverification-run-report.yaml"
+      - "verification/wave30-general-h729/reverification-artifact-manifest.sha256"
+      - "verification/2026-07-24-wave30-orchestrator-corrections.md"
+    note: "The original discovery commit 091d0a458ab1f96e3b3f491b677c84824bbf8f44 remains a zero-test/generator-failure submission under V30-GEN-001, and verifier-veto commit 0bc6dc9b90dff6589cfaf9db1a84e2d8242b6321 preserves that result. The provenance-only repair at a7be6b8ae70d8b44e88db8dfd6804f8d946ca382 passes 20 tests and regenerates its JSON byte-identically. The fresh re-verifier at 9d579856fdb1b903e42a70307b1d9ea45a8785d4 passes the repaired revision as V30-GEN-015 and hermetically replays the unchanged historical independent verifier with 32 tests and byte-identical JSON. The theorem excludes fourteen of fifteen aggregate types but leaves the 20+24 type open. Rooted and integrally indecomposable h=729 forms, n3=708, Conway-99, and novelty remain UNKNOWN."
+
+  - id: O-WAVE30-H729-CONSTRUCTION
+    requirement: "Blindly reconstruct the exact five-step 2-neighbor construction from K12 orthogonal-sum E8, prove every common index-two relation and unimodular reduction, independently enumerate all norm-two shells and the endpoint norm-four shell with exact integer bounds, verify the root-count chain and T20 Gram digest, recompute both scaled duals and exact level, assemble and verify the literal T20 orthogonal-sum LAMBDA24 rank-44 S/G package, attack mutations and deleted premises, and retain the boundary between a bare lattice control and a full endpoint realization."
+    critical: true
+    status: PASS_SCOPED_BARE_LATTICE_CONTROL
+    evidence:
+      - "agents/2026-07-24-wave30-h729-construction.md"
+      - "attempts/wave30-h729-construction/exact_check.py"
+      - "attempts/wave30-h729-construction/test_exact_check.py"
+      - "attempts/wave30-h729-construction/exact-results.json"
+      - "attempts/wave30-h729-construction/input-freeze.sha256"
+      - "attempts/wave30-h729-construction/failed-routes.md"
+      - "attempts/wave30-h729-construction/run-report.yaml"
+      - "attempts/wave30-h729-construction/artifact-manifest.sha256"
+      - "verification/wave30-h729-construction/protocol-freeze.md"
+      - "verification/wave30-h729-construction/independent_check.py"
+      - "verification/wave30-h729-construction/test_independent_check.py"
+      - "verification/wave30-h729-construction/independent-results.json"
+      - "verification/wave30-h729-construction/audit.md"
+      - "verification/wave30-h729-construction/failure-ledger.md"
+      - "verification/wave30-h729-construction/run-report.yaml"
+      - "verification/wave30-h729-construction/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave30-orchestrator-corrections.md"
+    note: "The submitted construction suite passes 16 tests and the independently implemented verifier passes 24 hostile tests; both deterministic JSON files regenerate byte-identically. The exact T20 and bare rank-44 S/G package are VERIFIED within scope. The route is not a classification, and no determinant-five Q, compatible B, 105/126 frame, X, M, W, Schur-square package, graph, n3=708 result, Conway-99 outcome, or novelty conclusion is supplied."
+
+  - id: O-WAVE30-LITERATURE-STATUS
+    requirement: "Freeze the exact conditional decomposition signature and exact T20/five-neighbor construction signature before searching; query numeric fingerprints and alternate lattice, modular, theta-series, neighbor, frame, design, projector, Schur-square, and target terminology across bounded web, arXiv, OpenAlex, and Crossref lanes; retain metadata only; record service limits and failures; distinguish near hits from exact matches; and separate bounded non-discovery from novelty, priority, or global-openness claims."
+    critical: false
+    status: PASS
+    evidence:
+      - "verification/wave30-literature-audit/protocol-freeze.md"
+      - "verification/wave30-literature-audit/query-ledger.json"
+      - "verification/wave30-literature-audit/source-metadata.json"
+      - "verification/wave30-literature-audit/audit.md"
+      - "verification/wave30-literature-audit/run-report.yaml"
+      - "verification/wave30-literature-audit/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave30-orchestrator-corrections.md"
+      - "SOURCES.bib"
+    note: "The audit records 96 exact queries in 24 batches and 21 retained metadata records with no raw source payload. It finds neither frozen signature in searched sources and records one Crossref HTTP 429 plus incomplete Google Scholar, MathSciNet, zbMATH, citation-network, language, and indexing coverage. The permissible conclusion is NO_EXACT_PRIOR_RESULT_FOUND_IN_SEARCHED_SOURCES; novelty, priority, global target status, the surviving 20+24 type, h=729, and n3=708 remain UNKNOWN."
+
+  - id: O-WAVE31-SIGN-COMMUTANT
+    requirement: "Freeze the exact actual-incidence conditional claim; independently reconstruct the target spectrum, incidence transport, integral basis change, one-block row support, coordinate projector block, diagonal-sign commutation, symmetric NDN-transpose transport, exact -4 spectral projector, every local commutator summand, adjacent unique-triangle cancellation, connectedness, signed-incidence double count, projector and lattice trace divisibility routes, all nonempty proper block and complement cases, hostile deleted-premise controls, status walls, and deterministic submitted replay; require a verifier distinct from discovery and retain a second skeptical audit."
+    critical: true
+    status: PASS_SCOPED_CONDITIONAL_THEOREM
+    evidence:
+      - "agents/2026-07-24-wave31-survivor-proof.md"
+      - "attempts/wave31-survivor-proof/exact_check.py"
+      - "attempts/wave31-survivor-proof/test_exact_check.py"
+      - "attempts/wave31-survivor-proof/exact-results.json"
+      - "attempts/wave31-survivor-proof/input-freeze.sha256"
+      - "attempts/wave31-survivor-proof/failed-routes.md"
+      - "attempts/wave31-survivor-proof/run-report.yaml"
+      - "attempts/wave31-survivor-proof/artifact-manifest.sha256"
+      - "verification/wave31-sign-commutant/independent_check.py"
+      - "verification/wave31-sign-commutant/test_independent_check.py"
+      - "verification/wave31-sign-commutant/independent-results.json"
+      - "verification/wave31-sign-commutant/submitted-regenerated.json"
+      - "verification/wave31-sign-commutant/input-freeze.sha256"
+      - "verification/wave31-sign-commutant/audit.md"
+      - "verification/wave31-sign-commutant/failed-objections.md"
+      - "verification/wave31-sign-commutant/run-report.yaml"
+      - "verification/wave31-sign-commutant/artifact-manifest.sha256"
+      - "verification/wave31-sign-commutant-skeptic/skeptic_check.py"
+      - "verification/wave31-sign-commutant-skeptic/results.json"
+      - "verification/wave31-sign-commutant-skeptic/input-freeze.sha256"
+      - "verification/wave31-sign-commutant-skeptic/audit.md"
+      - "verification/wave31-sign-commutant-skeptic/run-report.yaml"
+      - "verification/wave31-sign-commutant-skeptic/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave31-orchestrator-corrections.md"
+    note: "The submitted 15-test suite and independent 21-test suite pass, both accepted JSON outputs regenerate deterministically, the primary verifier returns PASS_SCOPED, and the secondary checker returns PASS_NO_FATAL_GAP. The verifier strengthens the submitted rank census with the projector-trace implication 21|b; together with the independently reconstructed signed double count 33|b this forces 231|b. The result excludes all nontrivial rootless integral orthogonal decompositions under actual target incidence, not merely h=729. Rooted and rootless indecomposable endpoints, n3=708, Conway-99, and novelty remain UNKNOWN."
+
+  - id: O-WAVE31-T20-FRAME
+    requirement: "Freeze the exact displayed T20 and all upstream inputs; independently verify determinant, positivity, scaled dual, complete norm-four shell in two bases without an automorphism quotient, the ordered antipodal-line list, every distinct-line inner product and degree, separate coefficient and augmented GF(2) ranks, every exact rational weight and moment, collision-safe exhaustive radius-one/two coverage around the named support, the submitted modular fingerprint replay, the cap-one-coordinate exclusion, the conditional U-block A4 transfer, deterministic output, hostile status mutation, and all unrestricted/global scope walls."
+    critical: true
+    status: PASS_SCOPED_FINITE_EVIDENCE
+    evidence:
+      - "agents/2026-07-24-wave31-t20-construction.md"
+      - "attempts/wave31-t20-frame/exact_check.py"
+      - "attempts/wave31-t20-frame/test_exact_check.py"
+      - "attempts/wave31-t20-frame/solver_scout.py"
+      - "attempts/wave31-t20-frame/exact-results.json"
+      - "attempts/wave31-t20-frame/input-freeze.sha256"
+      - "attempts/wave31-t20-frame/failure-ledger.md"
+      - "attempts/wave31-t20-frame/run-report.yaml"
+      - "attempts/wave31-t20-frame/artifact-manifest.sha256"
+      - "verification/wave31-t20-frame/protocol-freeze.md"
+      - "verification/wave31-t20-frame/independent_check.py"
+      - "verification/wave31-t20-frame/test_independent_check.py"
+      - "verification/wave31-t20-frame/independent-results.json"
+      - "verification/wave31-t20-frame/input-freeze.sha256"
+      - "verification/wave31-t20-frame/audit.md"
+      - "verification/wave31-t20-frame/failure-ledger.md"
+      - "verification/wave31-t20-frame/run-report.yaml"
+      - "verification/wave31-t20-frame/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave31-orchestrator-corrections.md"
+    note: "The discovery suite passes 10 tests and the independent verifier passes 11. The full 5,076-vector shell, 2,538 lines, 3,219,453 pair scan, 210/210 GF(2) ranks, 243-support rational witness, cap-one restriction, named radius-two nonhit, and conditional 84-unit A4 transfer are VERIFIED within their exact finite scopes. No unrestricted Boolean or oriented frame is found or excluded; timeouts are noncertifying. The separate sign-commutant theorem supersedes this construction as a decomposable endpoint route without inflating the finite-search conclusion."
+
+  - id: O-WAVE31-LITERATURE-STATUS
+    requirement: "Freeze the complete surviving matrix/Schur realization before searching and preserve the later sign-commutant signature as a chronological addendum; query exact numerical fingerprints and alternate incidence, projector, lattice-frame, eutactic-star, s-integrability, signed-graph, association-scheme, Leech, cubic-tensor, and target terminology; retain exact queries, source metadata, access failures, and no raw payload; distinguish projector-only from actual-graph implications; and separate bounded non-discovery from novelty, priority, nonexistence, or global openness."
+    critical: false
+    status: PASS
+    evidence:
+      - "agents/2026-07-24-wave31-statement-literature.md"
+      - "verification/wave31-literature-audit/protocol-freeze.md"
+      - "verification/wave31-literature-audit/protocol-addendum-sign-involution.md"
+      - "verification/wave31-literature-audit/query-ledger.json"
+      - "verification/wave31-literature-audit/source-metadata.json"
+      - "verification/wave31-literature-audit/audit.md"
+      - "verification/wave31-literature-audit/run-report.yaml"
+      - "verification/wave31-literature-audit/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave31-orchestrator-corrections.md"
+      - "SOURCES.bib"
+    note: "The audit records 80 exact web-search queries in 20 batches, four direct metadata or abstract open attempts, 14 retained metadata records, and zero retained raw payloads. It finds no exact prior result in the searched sources. The frozen pre-proof UNKNOWN sign-lemma status is preserved rather than silently rewritten. Coverage remains incomplete, so novelty, priority, global target status, n3=708, and Conway-99 remain UNKNOWN."
+
+  - id: O-WAVE32-ROOTED-REDUCTION
+    requirement: >-
+      Freeze the corrected rooted package; independently reconstruct the
+      primitive transpose-surjectivity bridge, modulo-three incidence
+      transport, residue exclusion, integer -4 amplitude bound,
+      seven-plus-seven support, Fano-complement saturation, outside census,
+      21/189/21 pattern, matrix-only 32-to-16 lemma, tensor/A4 constraints,
+      root reflection, adversarial mutations, and all nonexistence and
+      extendibility status walls.
+    critical: true
+    status: PASS_SCOPED_CONDITIONAL_REDUCTION_WITH_RECORDED_V1_CORRECTION
+    evidence:
+      - "agents/2026-07-24-wave32-rooted-proof.md"
+      - "attempts/wave32-rooted-vector/correction-ledger.md"
+      - "attempts/wave32-rooted-vector/artifact-manifest.sha256"
+      - "verification/wave32-rooted-vector/independent_check.py"
+      - "verification/wave32-rooted-vector/test_independent_check.py"
+      - "verification/wave32-rooted-vector/independent-results.json"
+      - "verification/wave32-rooted-vector/audit.md"
+      - "verification/wave32-rooted-vector/failed-objections.md"
+      - "verification/wave32-rooted-vector/run-report.yaml"
+      - "verification/wave32-rooted-vector/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave32-orchestrator-corrections.md"
+    note: >-
+      The clean-room verifier passes 19 tests and independently replays the
+      corrected v2 manifest. The historical v1 8-versus-10 residual-degree
+      defect is retained. The theorem is a necessary rooted reduction only;
+      extension, root exclusion, endpoint existence, n3=708, Conway-99, and
+      novelty remain UNKNOWN.
+
+  - id: O-WAVE32-INDECOMPOSABLE-REDUCTIONS
+    requirement: >-
+      Independently reconstruct primitive row generation, the minimum-four
+      connectivity/decomposition equivalence, the inherited actual-incidence
+      connectivity consequence, the unique switched endpoint-alphabet
+      {-2,-2,-1} norm-two motif, mixed-trace normalization, exact endpoint pair counts, corrected
+      odd-prime ranks, binary hostile controls, premise deletions, and the
+      boundary between verified reductions and unproved motif forcing.
+    critical: true
+    status: PASS_SCOPED_WITH_NONBLOCKING_COVERAGE_GAPS
+    evidence:
+      - "agents/2026-07-24-wave32-indecomposable-proof.md"
+      - "attempts/wave32-indecomposable/artifact-manifest.sha256"
+      - "verification/wave32-indecomposable/precomparison-freeze.sha256"
+      - "verification/wave32-indecomposable/input-freeze.sha256"
+      - "verification/wave32-indecomposable/independent_check.py"
+      - "verification/wave32-indecomposable/test_independent_check.py"
+      - "verification/wave32-indecomposable/independent-results.json"
+      - "verification/wave32-indecomposable/audit.md"
+      - "verification/wave32-indecomposable/failed-objections.md"
+      - "verification/wave32-indecomposable/run-report.yaml"
+      - "verification/wave32-indecomposable/artifact-manifest.sha256"
+      - "verification/wave31-sign-commutant/audit.md"
+      - "verification/2026-07-24-wave32-orchestrator-corrections.md"
+    note: >-
+      The clean-room verifier passes 19 tests. Candidate executable coverage
+      gaps are nonblocking because the independent verifier supplies the
+      omitted checks. Actual-incidence motif forcing, rootless
+      indecomposable endpoint existence, n3=708, Conway-99, and novelty
+      remain UNKNOWN.
+
+  - id: O-WAVE32-LITERATURE-STATUS
+    requirement: >-
+      Preserve the frozen actual-incidence versus matrix-only scope, execute
+      and account for all 68 queries and direct inspections, retain source
+      metadata and access limits without raw payload, preserve the original
+      14-record chronology plus the post-audit inherited source,
+      independently verify all three v1 corrections, distinguish exact prior
+      art from nearby methods, and keep bounded non-discovery separate from
+      novelty, priority, nonexistence, or global openness.
+    critical: false
+    status: PASS_CORRECTIONS_INTEGRATED
+    evidence:
+      - "agents/2026-07-24-wave32-statement-literature.md"
+      - "verification/wave32-literature-audit/protocol-freeze.md"
+      - "verification/wave32-literature-audit/query-ledger.json"
+      - "verification/wave32-literature-audit/source-metadata.json"
+      - "verification/wave32-literature-audit/correction-ledger.md"
+      - "verification/wave32-literature-audit/audit.md"
+      - "verification/wave32-literature-audit/run-report.yaml"
+      - "verification/wave32-literature-audit/artifact-manifest.sha256"
+      - "verification/wave32-literature-audit-independent/independent-results.json"
+      - "verification/wave32-literature-audit-independent/audit.md"
+      - "verification/wave32-literature-audit-independent/run-report.yaml"
+      - "verification/wave32-literature-audit-independent/artifact-manifest.sha256"
+      - "verification/2026-07-24-wave32-orchestrator-corrections.md"
+    note: >-
+      Seventeen independent tests pass. The only permitted no-hit statement
+      is that no exact prior result for either surviving endpoint was found
+      in the sources searched as of 2026-07-24. Novelty, priority, and global
+      target status remain UNKNOWN.
+
+  - id: O-WAVE32-CONTINUATION
+    requirement: >-
+      Produce a complete independently checked continuation certificate for
+      the exhaustive actual-incidence n3=708 endpoint split: either construct
+      a full valid target realization in one surviving branch, or exclude
+      both branches. The rooted continuation must either extend the canonical
+      signed Fano-complement support to a full target realization or
+      completely exclude all such extensions under every outside-only
+      strongly-regular, projector, tensor, A4, and Schur constraint. A
+      rootless exclusion must derive positive mixed motif trace from actual
+      incidence or supply another complete obstruction to every integrally
+      indecomposable marked endpoint. Matrix-only and actual-incidence
+      premises must remain separated.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave32-rooted-vector/audit.md"
+      - "verification/wave32-rooted-vector/failed-objections.md"
+      - "verification/wave32-rooted-vector/independent-results.json"
+      - "verification/wave32-indecomposable/audit.md"
+      - "verification/wave32-indecomposable/failed-objections.md"
+      - "verification/wave32-indecomposable/independent-results.json"
+      - "agents/2026-07-24-wave32-statement-literature.md"
+      - "verification/wave31-sign-commutant/audit.md"
+      - "verification/2026-07-24-wave32-orchestrator-corrections.md"
+    note: >-
+      The rooted partial control is not extendibility evidence, and exact
+      pair counts or finite-field hostile controls do not force the
+      indecomposable motif. No complete positive or negative continuation
+      certificate exists. Rooted endpoint, rootless indecomposable endpoint,
+      n3=708, Conway-99 existence/nonexistence, and novelty remain UNKNOWN.
+
+  - id: O-WAVE33-ROOTED-EXTENSION
+    requirement: >-
+      Conditional on the frozen Wave 32 signed Fano support, independently
+      reconstruct the 14+70+15 equitable partition, the O-Q
+      2-(15,3,2) design, all six blocks of the strongly regular equation,
+      the binary/symmetry/zero-diagonal sufficiency gates, the induced-O
+      spectrum and finite invariants, hostile premise mutations, manifest
+      chronology, and the boundary between graph extension and the full
+      projector/lattice/tensor/Schur endpoint.
+    critical: true
+    status: PASS_SCOPED_GRAPH_EXTENSION_CRITERION
+    evidence:
+      - "agents/2026-07-24-wave33-rooted-extension.md"
+      - "attempts/wave33-rooted-extension/artifact-manifest.sha256"
+      - "verification/wave33-rooted-extension/independent_check.py"
+      - "verification/wave33-rooted-extension/test_independent_check.py"
+      - "verification/wave33-rooted-extension/independent-results.json"
+      - "verification/wave33-rooted-extension/static_compare.py"
+      - "verification/wave33-rooted-extension/test_static_compare.py"
+      - "verification/wave33-rooted-extension/comparison-results.json"
+      - "verification/wave33-rooted-extension/audit.md"
+      - "verification/wave33-rooted-extension/comparison-audit.md"
+      - "verification/wave33-rooted-extension/artifact-manifest.sha256"
+      - "verification/wave33-rooted-extension/comparison-artifact-manifest.sha256"
+      - "verification/wave33-rooted-extension-candidate-freeze.sha256"
+      - "verification/2026-07-24-wave33-orchestrator-corrections.md"
+    note: >-
+      The discovery suite passes 15 tests and verifier-owned suites pass
+      33. The exact finite graph-extension criterion and its conditional
+      spectrum are VERIFIED. No binary solution, exhaustive infeasibility
+      proof, full endpoint, n3=708 outcome, Conway-99 outcome, or novelty
+      conclusion is supplied.
+
+  - id: O-WAVE33-ROOTED-CONSTRUCTION
+    requirement: >-
+      Freeze the hostile O-Q candidate before comparison; independently
+      verify its exact design and coupling counts, reproduce its
+      deterministic search, inspect the full MILP row system and search
+      metadata, distinguish one fixed design from all designs, verify that
+      no O-O layer or solver witness exists, preserve the timeout as
+      non-evidence, and adversarially gate duplicate JSON keys and
+      scope/status metadata omitted by the discovery checker.
+    critical: true
+    status: PASS_SCOPED_FINITE_EVIDENCE_WITH_NONBLOCKING_CHECKER_GAPS
+    evidence:
+      - "agents/2026-07-24-wave33-rooted-construction.md"
+      - "attempts/wave33-rooted-construction/partial-design-certificate.json"
+      - "attempts/wave33-rooted-construction/bounded-search-manifest.json"
+      - "attempts/wave33-rooted-construction/artifact-manifest.sha256"
+      - "verification/wave33-rooted-construction/precomparison-freeze.sha256"
+      - "verification/wave33-rooted-construction/precomparison-results.json"
+      - "verification/wave33-rooted-construction/independent_check.py"
+      - "verification/wave33-rooted-construction/test_independent_check.py"
+      - "verification/wave33-rooted-construction/candidate_comparison.py"
+      - "verification/wave33-rooted-construction/test_candidate_comparison.py"
+      - "verification/wave33-rooted-construction/candidate-comparison-results.json"
+      - "verification/wave33-rooted-construction/audit.md"
+      - "verification/wave33-rooted-construction/failed-objections.md"
+      - "verification/wave33-rooted-construction/artifact-manifest.sha256"
+      - "verification/wave33-rooted-construction-chronology/chronology_replay.py"
+      - "verification/wave33-rooted-construction-chronology/test_chronology_replay.py"
+      - "verification/wave33-rooted-construction-chronology/chronology-results.json"
+      - "verification/wave33-rooted-construction-chronology/audit.md"
+      - "verification/wave33-rooted-construction-chronology/artifact-manifest.sha256"
+      - "verification/wave33-rooted-construction-candidate-freeze.sha256"
+      - "verification/2026-07-24-wave33-orchestrator-corrections.md"
+    note: >-
+      The original local frozen-context verifier recorded 37/37 and the
+      deterministic hostile certificate replay was byte-identical. Chronology
+      v2 replays 36 unchanged verifier cases and separately passes the
+      portable source half of the sole omitted composite test. This verifies
+      the frozen finite facts only. The object violates ten fixed-label
+      coupling equations, supplies no O-O layer, and the one-fixed-design
+      timeout is neither a construction nor an exclusion. Twenty separate
+      chronology tests authenticate the historical input state and embed
+      14+36 unchanged portable cases. The solver-environment half depends on
+      ignored local files and is NOT_REPLAYED_NONBLOCKING. V2 opens zero such
+      files and observes zero environment hashes. The outer and embedded
+      counts are separate evidence layers.
+
+  - id: O-WAVE33-ROOTLESS-MOTIF
+    requirement: >-
+      Independently reconstruct the four-dimensional fused algebra and its
+      multiplication table, the q=2 R2-pair null trade, every audited
+      bilinear Q[Gamma] and N^T p(A) N contraction, the actual
+      lambda/mu-incidence board and weighted candidate count, the
+      mixed-trace factor, full-size partial hostile controls, candidate
+      provenance separation, and the exact boundary between local
+      contraction blindness and global realizability or motif forcing.
+    critical: true
+    status: PASS_SCOPED_WITH_NONBLOCKING_WORDING_QUALIFIER
+    evidence:
+      - "agents/2026-07-24-wave33-rootless-motif.md"
+      - "attempts/wave33-rootless-motif/artifact-manifest.sha256"
+      - "verification/wave33-rootless-motif/precomparison-results.json"
+      - "verification/wave33-rootless-motif/independent_check.py"
+      - "verification/wave33-rootless-motif/test_independent_check.py"
+      - "verification/wave33-rootless-motif/candidate_static_check.py"
+      - "verification/wave33-rootless-motif/test_candidate_static.py"
+      - "verification/wave33-rootless-motif/comparison-results.json"
+      - "verification/wave33-rootless-motif/audit.md"
+      - "verification/wave33-rootless-motif/failed-objections.md"
+      - "verification/wave33-rootless-motif/artifact-manifest.sha256"
+      - "verification/wave33-rootless-motif-candidate-freeze.sha256"
+      - "verification/2026-07-24-wave33-orchestrator-corrections.md"
+    note: >-
+      Forty-eight independent tests pass. The only publication-safe
+      blindness claim is restricted to bilinear Q[Gamma] contractions and
+      N^T p(A) N contractions at the formal q=2 R2 pair. Global table
+      realizability, actual motif forcing or avoidance, rootless endpoint
+      existence, n3=708, Conway-99, and novelty remain UNKNOWN.
+
+  - id: O-WAVE33-CONTINUATION
+    requirement: >-
+      Produce a complete independently verified continuation certificate
+      for the surviving endpoint split. The rooted lane must construct
+      binary D,B satisfying all six graph equations and every remaining
+      endpoint condition, or completely exclude the domain without an
+      automorphism restriction. The rootless lane must promote the local
+      fused-algebra and incidence-board reductions to a globally realizable
+      construction or a complete actual-incidence obstruction. Restricted
+      design searches, timeouts, local formal tables, and partial controls
+      cannot resolve this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave33-rooted-extension/comparison-audit.md"
+      - "verification/wave33-rooted-construction/audit.md"
+      - "verification/wave33-rootless-motif/audit.md"
+      - "verification/2026-07-24-wave33-orchestrator-corrections.md"
+    note: >-
+      No complete positive or negative continuation certificate exists.
+      Both endpoints, n3=708, Conway-99 existence and nonexistence, and
+      novelty remain UNKNOWN; the strongest conditional bound remains
+      n3>=708.
+
+  - id: O-WAVE34-ROOTED-STRUCTURAL
+    requirement: >-
+      Independently reconstruct the Wave 34 rooted structural candidate,
+      bind its coordinates to Wave 33, verify the SNF and projector
+      equivalence in both directions, reproduce the Pb-only census without
+      candidate code, and independently cross-check the stricter
+      duplicate-free necessary single-column domain.
+    critical: true
+    status: PASS_SCOPED_REPARAMETERIZATION_AND_PAIR_CENSUS
+    evidence:
+      - "agents/2026-07-24-wave34-rooted-structural.md"
+      - "verification/wave34-rooted-structural/comparison-audit.md"
+      - "verification/wave34-rooted-structural/comparison-results.json"
+      - "verification/wave34-rooted-structural/comparison-artifact-manifest.sha256"
+      - "verification/wave34-rooted-structural/pair-census-crosscheck/audit.md"
+      - "verification/wave34-rooted-structural/pair-census-crosscheck/exact-results.json"
+      - "verification/wave34-rooted-structural/pair-census-crosscheck/artifact-manifest.sha256"
+      - "verification/wave34-integration-chronology/audit.md"
+      - "verification/wave34-integration-chronology/artifact-manifest.sha256"
+    note: >-
+      The verified 448,879,368 count is a necessary single-column domain,
+      not a count of compatible 15-column designs or graph solutions. Binary
+      existence and exclusion remain UNKNOWN.
+
+  - id: O-WAVE34-ROOTED-ENCODING
+    requirement: >-
+      Independently reconstruct the unrestricted labeled rooted criterion as
+      a complete-domain exact formula, check every semantic family and
+      auxiliary gadget in both directions, match the complete emitted bytes,
+      and retain a graph-checker route for any future model without assuming
+      an automorphism or selected design.
+    critical: true
+    status: PASS_SCOPED_COMPLETE_DOMAIN_ENCODING_ONLY
+    evidence:
+      - "agents/2026-07-24-wave34-rooted-encoding.md"
+      - "attempts/wave34-rooted-encoding/publication-manifest.sha256"
+      - "verification/wave34-rooted-encoding/comparison-audit.md"
+      - "verification/wave34-rooted-encoding/comparison-results.json"
+      - "verification/wave34-rooted-encoding/correction-ledger.md"
+      - "verification/wave34-rooted-encoding/artifact-manifest.sha256"
+    note: >-
+      Formula equivalence passes. The formula has not been solved and no
+      model, graph, UNSAT proof, or proof-checker result exists. SAT and
+      UNSAT remain UNKNOWN.
+
+  - id: O-WAVE34-ROOTLESS-GLOBAL
+    requirement: >-
+      Independently replay the actual-incidence local-fibre lemmas,
+      relation-degree arithmetic, mixed-trace normalization, endpoint cap,
+      restricted factor scan, and partial-control construction; retain every
+      provenance or scope defect; and separate local moment consequences
+      from complete global motif forcing.
+    critical: true
+    status: PASS_SCOPED_WITH_NONBLOCKING_PROVENANCE_AND_SCOPE_QUALIFIERS
+    evidence:
+      - "agents/2026-07-24-wave34-rootless-global.md"
+      - "verification/wave34-rootless-global/precomparison/results.json"
+      - "verification/wave34-rootless-global/comparison-results.json"
+      - "verification/wave34-rootless-global/audit.md"
+      - "verification/wave34-rootless-global/failed-objections.md"
+      - "verification/wave34-rootless-global/artifact-manifest.sha256"
+    note: >-
+      The candidate provenance typo is retained, and the 45-vertex object is
+      partial. The Stage 1 wedge/four-cycle/moment bounds are
+      DERIVED_SCOPED. Global motif forcing, construction, and endpoint
+      resolution remain UNKNOWN.
+
+  - id: O-WAVE34-LITERATURE-AND-EXTERNAL-SOURCES
+    requirement: >-
+      Search bounded current sources, then independently audit the direct
+      status/design sources and pinned Kuber, Harrison, and Selub materials;
+      check source scope, build or formula evidence where available, retain
+      missing proof bodies, and import no graph-level result without its
+      bridge and certificate.
+    critical: true
+    status: PASS_SCOPED_CURRENT_SOURCE_AUDIT
+    evidence:
+      - "agents/2026-07-24-wave34-current-literature.md"
+      - "agents/2026-07-24-wave34-external-source-verifier.md"
+      - "attempts/wave34-current-literature/audit.md"
+      - "verification/wave34-external-source-audit/audit.md"
+      - "verification/wave34-external-source-audit/results.json"
+      - "verification/wave34-external-source-audit/artifact-manifest.sha256"
+    note: >-
+      Scoped source characterizations and conditional subclaims pass. No
+      graph-level external theorem is imported; bounded non-discovery cannot
+      establish openness, novelty, or priority.
+
+  - id: O-WAVE34-CONTINUATION
+    requirement: >-
+      Produce a complete independently verified certificate resolving one
+      surviving branch: a valid 99-vertex graph, a checked complete-domain
+      exclusion, a compatible rooted design/projector realization or
+      obstruction, or a complete actual-incidence rootless
+      construction/forcing theorem. Formula validation, necessary
+      single-column counts, partial controls, timeouts, and bounded source
+      searches do not discharge this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave34-rooted-structural/comparison-audit.md"
+      - "verification/wave34-rooted-encoding/comparison-audit.md"
+      - "verification/wave34-rootless-global/audit.md"
+      - "verification/wave34-external-source-audit/audit.md"
+      - "verification/2026-07-24-wave34-orchestrator-corrections.md"
+    note: >-
+      No complete positive or negative endpoint certificate exists.
+      Conway-99, n3=708, and novelty remain UNKNOWN; the strongest
+      conditional bound remains n3>=708.
+
+  - id: O-WAVE35-SPECTRAL-VERIFICATION
+    requirement: >-
+      Independently reconstruct the conditional n3=4158 endpoint profile,
+      signed-projector polynomial and Smith form, reflection identity, all
+      mixed-Schur values, compression and scalar calculations, local
+      controls, and the exact 45-principal-minor wording boundary without
+      importing discovery-side calculations.
+    critical: true
+    status: PASS_SCOPED_WITH_WORDING_QUALIFIER
+    evidence:
+      - "verification/wave35-n3-upper-spectral/independent_check.py"
+      - "verification/wave35-n3-upper-spectral/independent-results.json"
+      - "verification/wave35-n3-upper-spectral/test_independent_check.py"
+      - "verification/wave35-n3-upper-spectral/audit.md"
+      - "verification/wave35-n3-upper-spectral/run-report.yaml"
+    note: >-
+      Ten independent tests and fourteen submitted replay tests pass. The
+      principal condition is support degree sum_j |S_ij|<=3, and the
+      nonadjacent 7-by-7 object is only a relaxed witness. No endpoint
+      matrix, exclusion, or improved upper bound is obtained.
+
+  - id: O-WAVE35-COMBINATORIAL-AND-CONSTRUCTION-VERIFICATION
+    requirement: >-
+      Independently reconstruct the one-triangle block Gram reduction, the
+      84 rooted prism-forbidding units, their complete interaction with the
+      normalized 12-way N3 cover, and the four local OPB relaxations; then
+      distinguish exact necessary reductions from restricted controls and
+      non-evidentiary solver stops.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "agents/2026-07-26-wave35-n3-4158-combinatorial.md"
+      - "agents/2026-07-26-wave35-n3-upper-triple-overlap.md"
+      - "attempts/wave35-n3-4158-combinatorial/run-report.yaml"
+      - "attempts/wave35-n3-upper-triple-overlap/run-report.yaml"
+    note: >-
+      Discovery-side tests pass, but no separate verifier package currently
+      promotes these lanes to VERIFIED. The pairwise control, local OPB
+      models, timeouts, and conflict-budget stops do not resolve the
+      endpoint.
+
+  - id: O-WAVE35-CONTINUATION
+    requirement: >-
+      Produce a complete independently verified certificate that excludes
+      n3=4158, constructs the endpoint, or proves a stronger general upper
+      bound. Sufficient routes include a checked resolution of all five
+      surviving rooted branches, a global incompatibility proof for the
+      one-triangle block system, or a 45-index support-degree obstruction.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave35-n3-upper-spectral/audit.md"
+      - "attempts/wave35-n3-upper-triple-overlap/failed-routes.md"
+      - "attempts/wave35-n3-4158-combinatorial/failed-routes.md"
+    note: >-
+      No complete positive or negative endpoint certificate exists. The
+      general interval remains 708<=n3<=4158 and Conway-99 remains UNKNOWN.
+
+  - id: O-WAVE36-MODULAR-AND-POLAR-VERIFICATION
+    requirement: >-
+      Independently reconstruct the conditional endpoint reflection over
+      F_3 and F_7, its reciprocal Smith pairing and rank parity, the
+      symmetric-cube rank floor, the ternary projective distinctness
+      argument, both finite orthogonal determinant classes, the delicate
+      degenerate nonadjacent-pair count, and every exact spectral-mixing
+      inequality.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave36-modular-reflection/audit.md"
+      - "verification/wave36-modular-reflection/independent-results.json"
+      - "verification/wave36-modular-reflection/run-report.yaml"
+      - "verification/wave36-ternary-polar-bound/audit.md"
+      - "verification/wave36-ternary-polar-bound/independent-results.json"
+      - "verification/wave36-ternary-polar-bound/run-report.yaml"
+    note: >-
+      The verified endpoint necessities are rank_F3(M)>=12 and
+      rank_F7(M)>=11, with reciprocal Smith factors and the nonsquare
+      rank-twelve ternary class excluded. Surviving modular shapes are not
+      matrices or graphs, and the endpoint remains UNKNOWN.
+
+  - id: O-WAVE36-BLOCK-COMPATIBILITY-VERIFICATION
+    requirement: >-
+      Independently reconstruct all three one-triangle block equations, the
+      pointwise mixed-equation cut and restricted census, component balance
+      and pattern classification, characteristic-polynomial transfer, and
+      the resulting connectivity, triangle, and four-cycle requirements on
+      H without importing discovery code or promoting bounded solver
+      telemetry.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave36-block-compatibility/audit.md"
+      - "verification/wave36-block-compatibility/independent-results.json"
+      - "verification/wave36-block-compatibility/run-report.yaml"
+    note: >-
+      The necessary equations and counts pass. The 151712 census is
+      individual-column only, and no simultaneous B/H completion,
+      contradiction, graph, or checked UNSAT certificate exists.
+
+  - id: O-WAVE36-LITERATURE-ATTRIBUTION
+    requirement: >-
+      Audit target-specific and general prior art for the Wave 36 reflection,
+      modular ranks, ternary orthogonality argument, and reciprocal Smith
+      pairing, and prevent a bounded source nonhit from being promoted to a
+      novelty or priority claim.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "agents/2026-07-26-wave36-literature-audit.md"
+      - "attempts/wave36-literature-audit/source-query-metadata.json"
+    note: >-
+      Evans's 2023 general polynomial reproduces the ternary cutoff after the
+      Wave 36 substitution. Exact target-specific matches were not located,
+      but novelty and priority remain UNKNOWN.
+
+  - id: O-WAVE36-CONTINUATION
+    requirement: >-
+      Produce a complete independently verified certificate that excludes
+      n3=4158, constructs the endpoint, or proves a stronger general upper
+      bound. Arithmetic survivors, individual block censuses, and bounded
+      solver stops do not satisfy this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave36-modular-reflection/audit.md"
+      - "verification/wave36-ternary-polar-bound/audit.md"
+      - "verification/wave36-block-compatibility/audit.md"
+    note: >-
+      The endpoint and Conway-99 remain UNKNOWN, and the rigorous interval
+      remains 708<=n3<=4158.
+
+  - id: O-WAVE37-INDEPENDENT-VERIFICATION
+    requirement: >-
+      Independently reconstruct the five fixed-triangle prism catalogs and
+      exact normalized branch scope; the ternary code, signed-degenerate
+      triple, and characteristic-seven survivor calculations; and every
+      branch-15 OPB constraint, byte, metadata binding, gzip round trip, and
+      parser boundary without importing discovery implementations.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave37-rooted-branches/independent-results.json"
+      - "verification/wave37-rooted-branches/audit.md"
+      - "verification/wave37-polar-strengthen/independent-results.json"
+      - "verification/wave37-polar-strengthen/audit.md"
+      - "verification/wave37-proof-producing-endpoint/independent-results.json"
+      - "verification/wave37-proof-producing-endpoint/audit.md"
+    note: >-
+      Sixteen independent tests pass. All five clause hashes and all 574615
+      OPB constraints reproduce. The verifier retains the false collinearity
+      shortcut as refuted and promotes no solver result, endpoint exclusion,
+      upper-bound improvement, graph, or novelty claim.
+
+  - id: O-WAVE37-COMPLETE-ENDPOINT-CERTIFICATE
+    requirement: >-
+      Produce a complete independently checkable certificate for the
+      prism-free endpoint: either a valid 99-vertex graph or checked
+      exclusions covering all 33 refined endpoint cases and any remaining
+      exact endpoint formulations. Parser acceptance, one branch formula,
+      partial prism clauses, finite-field restrictions, BUDGET_UNKNOWN, and
+      nonterminal computation do not discharge this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave37-rooted-branches/audit.md"
+      - "verification/wave37-polar-strengthen/audit.md"
+      - "verification/wave37-proof-producing-endpoint/audit.md"
+    note: >-
+      Branch 15 satisfiability and the other 32 refined cases remain
+      UNKNOWN. The endpoint and Conway-99 remain UNKNOWN, with rigorous
+      interval 708<=n3<=4158.
+
+  - id: O-WAVE38-QUEUE-AND-ALL-PRISM-VERIFICATION
+    requirement: >-
+      Independently reconstruct the exact 33-case endpoint queue and orbit
+      weights; preserve the zero-result live-process boundary; reconstruct
+      the complete all-prism triangle inventory, clause factor, lambda-one
+      compression, decoded-candidate oracle, catalog and pool binding, and
+      guarded exporter without promoting a formula or validator to a target
+      result.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave38-solver-harvest/independent-results.json"
+      - "verification/wave38-solver-harvest/audit.md"
+      - "verification/wave38-complete-endpoint/independent-results.json"
+      - "verification/wave38-complete-endpoint/audit.md"
+    note: >-
+      The queue, construction mathematics, and oracle are verified in scope.
+      No target formula was generated or solved, and proof coverage remains
+      0/33.
+
+  - id: O-WAVE38-COCLIQUE-RANK-VERIFICATION
+    requirement: >-
+      Independently prove the 13-coclique construction, incidence-projector
+      transport, determinant and rank calculation modulo seven, endpoint
+      congruence, and parity consequence without importing discovery code or
+      inflating the rank lower bound to equality.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave38-coclique-rank/independent-results.json"
+      - "verification/wave38-coclique-rank/audit.md"
+      - "verification/wave38-coclique-rank/run-report.yaml"
+    note: >-
+      Ten hostile tests pass. The promoted result is rank_F7(M)>=13 and the
+      conditional r3=12 implies even r7>=14. No endpoint contradiction or
+      novelty result follows.
+
+  - id: O-WAVE38-HIGHER-ORDER-VERIFICATION
+    requirement: >-
+      Independently reconstruct the signed simple-four-cycle subtraction,
+      ternary vertex-clique centering, fixed-triangle rank bridge, and frozen
+      rank-ten local control, while separating one-triangle feasibility from
+      simultaneous global completion.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "agents/2026-07-27-wave38-higher-order.md"
+      - "attempts/wave38-higher-order/exact-results.json"
+      - "verification/wave38-higher-order/independent-results.json"
+      - "verification/wave38-higher-order/audit.md"
+      - "verification/wave38-higher-order/run-report.yaml"
+    note: >-
+      Nine discovery tests and eleven independent hostile tests pass. The
+      centered seven-row Gram has rank six while the uncentered Gram has rank
+      seven. No P>=1 theorem, simultaneous B/H completion, or upper-bound
+      improvement is promoted.
+
+  - id: O-WAVE38-COMPLETE-ENDPOINT-CERTIFICATE
+    requirement: >-
+      Produce a complete independently checkable endpoint certificate: either
+      a valid 99-vertex prism-free SRG or checked UNSAT proofs covering all
+      33 refined cases. Live processes, timeouts, partial cut pools, local
+      controls, and unchecked solver conclusions cannot discharge this
+      obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave38-solver-harvest/audit.md"
+      - "verification/wave38-complete-endpoint/audit.md"
+      - "verification/wave38-coclique-rank/audit.md"
+      - "verification/wave38-higher-order/audit.md"
+    note: >-
+      No graph or proof exists. The endpoint and Conway-99 remain UNKNOWN,
+      the rigorous interval is 708<=n3<=4158, and proof coverage is 0/33.
+
+  - id: O-WAVE39-EDGE-LOCAL-RANK-VERIFICATION
+    requirement: >-
+      Independently reconstruct the edge-local 27-vertex geometry, prove
+      completeness of the eleven normal forms, exhaust the 10,395 pulled-back
+      matchings, derive the characteristic-seven rank transport, recompute the
+      rank formula and endpoint arithmetic, and reject status inflation
+      without importing discovery code.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave39-edge-local-rank/independent-results.json"
+      - "verification/wave39-edge-local-rank/README.md"
+      - "verification/wave39-edge-local-rank/run-report.yaml"
+      - "verification/wave39-edge-local-rank/package-manifest.sha256"
+    note: >-
+      Fourteen independent tests pass. The universal necessity
+      rank_F7(M)>=19 and the 429 endpoint rank-pair census are verified. No
+      edge-type compatibility theorem, endpoint exclusion, graph, upper-bound
+      improvement, or novelty result follows.
+
+  - id: O-WAVE39-PROOF-SHARD-VERIFICATION
+    requirement: >-
+      Independently bind the branch-15 source constraints and OPB bytes,
+      reconstruct the generalized-unit derivation, verify raw and kernel
+      pseudo-Boolean proof hashes, and run fresh strict proof checking while
+      retaining the one-shard-only scope.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "attempts/wave39-proof-solver/package-manifest.sha256"
+      - "verification/wave39-proof-solver/exact-results.json"
+      - "verification/wave39-proof-solver/README.md"
+      - "verification/wave39-proof-solver/run-report.yaml"
+      - "verification/wave39-proof-solver/package-manifest.sha256"
+    note: >-
+      Fresh VeriPB 3.0.2 runs accept the raw and kernel proofs. CakePB supplied
+      no conclusion. Only branch15 AND x187=1 is closed; branch 15 is UNKNOWN
+      and endpoint proof coverage remains 0/33.
+
+  - id: O-WAVE39-COMPATIBILITY-SCOPE
+    requirement: >-
+      Retain cross-base projection and simultaneous B/H calculations with
+      exact inputs, tests, manifests, positive controls, and explicit
+      discovery-only labels; do not promote them to verified global
+      contradictions without an independent reconstruction.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "attempts/wave39-cross-base-rank/package-manifest.sha256"
+      - "attempts/wave39-simultaneous-bh/package-manifest.sha256"
+      - "verification/2026-07-27-wave39-integration-audit.md"
+    note: >-
+      Both ten-test packages replay exactly and remain
+      DERIVED_INCONCLUSIVE. Their controls show why the present restrictions
+      do not exclude the endpoint.
+
+  - id: O-WAVE39-COMPLETE-ENDPOINT-CERTIFICATE
+    requirement: >-
+      Produce a complete independently checkable endpoint certificate: either
+      a valid 99-vertex prism-free SRG or checked UNSAT proofs covering all 33
+      refined cases. Local rank floors, arithmetic survivor pairs, one
+      polarity shard, projection collisions, and conditional B/H equations do
+      not discharge this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/2026-07-27-wave39-integration-audit.md"
+      - "verification/2026-07-27-wave39-orchestrator.md"
+    note: >-
+      No graph or complete endpoint proof exists. The endpoint and Conway-99
+      remain UNKNOWN, the rigorous interval is 708<=n3<=4158, and proof
+      coverage is 0/33.
+
+  - id: O-WAVE40-UNIVERSAL-RANK-VERIFICATION
+    requirement: >-
+      Independently reconstruct all eleven edge-local forms, the third-fibre
+      perfect-matching bijections, the arbitrary-W symmetric border-rank
+      lemma, every projective syndrome subspace needed through the first
+      successful dimension, and the endpoint arithmetic without importing
+      discovery code or inflating the result to an endpoint contradiction.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave40-exact-coupling-model/independent-results.json"
+      - "verification/wave40-exact-coupling-model/README.md"
+      - "verification/wave40-exact-coupling-model/run-report.yaml"
+      - "verification/wave40-exact-coupling-model/package-manifest.sha256"
+    note: >-
+      Sixteen hostile tests and exact replay pass. The promoted universal
+      theorem is rank_F7(M)>=25; endpoint arithmetic has 330 survivors and
+      r3=12 forces even r7>=26. No endpoint exclusion follows.
+
+  - id: O-WAVE40-EDGE-COUPLING-VERIFICATION
+    requirement: >-
+      Independently reconstruct the endpoint edge-to-triangle bijection,
+      face and Euler identities, the 4,050-form all-222 quotient census, the
+      39-block cubic-core Laplacian identity, and the complete 2^18 lift
+      census for one explicit quotient, while preserving every local and
+      one-quotient scope boundary.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave40-edge-type-coupling/independent-results.json"
+      - "verification/wave40-edge-type-coupling/README.md"
+      - "verification/wave40-edge-type-coupling/run-report.yaml"
+      - "verification/wave40-edge-type-coupling/package-manifest.sha256"
+    note: >-
+      The scoped identities and census are verified. Negative Euler
+      characteristic and rank-33 one-quotient controls survive, so no
+      endpoint contradiction or universal rank-33 theorem is promoted.
+
+  - id: O-WAVE40-RANK25-LITERATURE-SCOPE
+    requirement: >-
+      Search current primary sources under exact and equivalent terminology
+      for the universal characteristic-seven rank-25 theorem, preserve source
+      and query metadata, and do not infer novelty or priority from bounded
+      non-discovery.
+    critical: false
+    status: PASS_SCOPED
+    evidence:
+      - "agents/2026-07-27-wave40-rank25-literature.md"
+      - "attempts/wave40-rank25-literature/query-log.json"
+      - "attempts/wave40-rank25-literature/source-ledger.json"
+      - "attempts/wave40-rank25-literature/README.md"
+    note: >-
+      The audit is bounded and cannot prove novelty, priority, openness, or
+      completeness. Novelty remains UNKNOWN unless an exact prior match is
+      located.
+
+  - id: O-WAVE40-COMPLETE-ENDPOINT-CERTIFICATE
+    requirement: >-
+      Produce a complete independently checkable endpoint certificate: either
+      a valid 99-vertex prism-free SRG or checked UNSAT proofs covering all
+      33 refined cases. Rank floors, arithmetic survivors, surface
+      identities, quotient censuses, one-quotient lifts, and local controls
+      do not discharge this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/2026-07-27-wave40-integration-audit.md"
+      - "verification/2026-07-27-wave40-orchestrator.md"
+    note: >-
+      No graph or complete endpoint proof exists. The endpoint and Conway-99
+      remain UNKNOWN, the rigorous interval is 708<=n3<=4158, and proof
+      coverage is 0/33.
+
+  - id: O-WAVE41-UNIVERSAL-RANK26-VERIFICATION
+    requirement: >-
+      Independently derive rank-25 equality in the complete 39-point block,
+      cover all four all-odd and seven even-part edge types, exhaust every
+      minimum-projection permutation and labelled third-fibre matching,
+      verify local-to-global rank transport, and retain exact positive and
+      hostile controls without importing discovery code before freeze.
+    critical: true
+    status: PASS
+    evidence:
+      - "verification/wave41-multiedge-rank-packing/independent-results.json"
+      - "verification/wave41-multiedge-rank-packing/package-manifest.sha256"
+      - "verification/wave41-evenpart-equality/independent-results.json"
+      - "verification/wave41-evenpart-equality/discovery-comparison.json"
+      - "verification/wave41-evenpart-equality/audit.md"
+      - "verification/wave41-evenpart-equality/package-manifest.sha256"
+      - "verification/wave41-rank26-secondary/secondary-results.json"
+      - "verification/wave41-rank26-secondary/comparison.json"
+      - "verification/wave41-rank26-secondary/package-manifest.sha256"
+    note: >-
+      The all-odd verifier passes 16 hostile tests. The even-part verifier
+      passes 25 verifier/composition tests, a clean byte-exact full replay,
+      all twelve discovery tests, and the all-odd composition replay. All
+      eleven types exclude rank 25, proving the universal necessary theorem
+      rank_F7(M)>=26. The theorem does not resolve Conway-99 or improve the
+      n3 upper bound.
+
+  - id: O-WAVE41-ALLQUOTIENT-VERIFICATION
+    requirement: >-
+      Independently reconstruct the complete rank-eleven all-222 quotient
+      class, all 2^18 endpoint-pairing masks, triangle-free filter, exact F7
+      rank distribution, conditional ternary bridge, parity sharpening, and
+      the compact-kernel veto against false rank-45 promotion.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave41-allquotient-lifts/independent-results.json"
+      - "verification/wave41-allquotient-lifts/discovery-comparison.json"
+      - "verification/wave41-allquotient-lifts/audit.md"
+      - "verification/wave41-allquotient-lifts/package-manifest.sha256"
+    note: >-
+      Fourteen hostile tests and exact regeneration pass. Conditional on
+      n3=4158, r3=12, and all edges type 222, the branch has even r7>=34.
+      The assumptions and endpoint remain unproved.
+
+  - id: O-WAVE41-DIAGNOSTIC-SCOPE
+    requirement: >-
+      Retain failed overlap, raw border-rank, shallow propagation, and static
+      all-prism routes with enough exact detail to prevent positive controls,
+      timeouts, fixed points, or individual-column relaxations from being
+      presented as endpoint evidence.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "attempts/wave41-multiedge-rank-packing/failed-routes.md"
+      - "attempts/wave41-allquotient-lifts/failed-routes.md"
+      - "attempts/wave41-overlap-compatibility/failed-routes.md"
+      - "attempts/wave41-proof-producing-search/failed-routes.md"
+    note: >-
+      The universal three-dimensional compact kernel blocks naive border
+      packing. The overlap control reaches only rank 35. Branch 15 retains
+      3,312 unfixed primary variables, and all 64 shallow polarity probes
+      remain noncontradictory. None of these is graph or UNSAT evidence.
+
+  - id: O-WAVE41-COMPLETE-ENDPOINT-CERTIFICATE
+    requirement: >-
+      Produce a complete independently checkable endpoint certificate:
+      either a valid 99-vertex prism-free SRG or checked UNSAT proofs covering
+      all 33 refined cases. Universal rank 26, conditional rank 34, local
+      overlap controls, and propagation profiles do not discharge this
+      obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave41-evenpart-equality/audit.md"
+      - "attempts/wave41-overlap-compatibility/README.md"
+      - "attempts/wave41-proof-producing-search/README.md"
+    note: >-
+      No graph or complete endpoint proof exists. The endpoint and Conway-99
+      remain UNKNOWN, the rigorous interval is 708<=n3<=4158, and proof
+      coverage is 0/33.
+
+  - id: O-WAVE42-UNIVERSAL-RANK27-VERIFICATION
+    requirement: >-
+      Independently derive rank-26 equality in the complete 39-point block;
+      cover all four all-odd and seven even-part edge types; regenerate every
+      minimum-F labelled permutation, all labelled third-fibre matchings, and
+      a complete all-odd pivot CSP; include rank-one and hostile controls;
+      replay deterministically; and compare only after a clean-room freeze.
+    critical: true
+    status: PASS
+    evidence:
+      - "verification/wave42-rank27/protocol-freeze.md"
+      - "verification/wave42-rank27/freeze-repair.md"
+      - "verification/wave42-rank27/independent-results.json"
+      - "verification/wave42-rank27/comparison.json"
+      - "verification/wave42-rank27/audit.md"
+      - "verification/wave42-rank27/package-manifest.sha256"
+    note: >-
+      The repaired deterministic full replay and 19 hostile/comparison tests
+      pass. Discovery contributes 10 passing tests and a 21-entry manifest.
+      All eleven types exclude rank 26, proving rank_F7(M)>=27. The first
+      freeze's nondeterministic elapsed-time defect is retained explicitly;
+      only timing metadata changed.
+
+  - id: O-WAVE42-JOINT-INCIDENCE-VERIFICATION
+    requirement: >-
+      Independently reconstruct canonical mask 51739, the forced Gram matrix,
+      component equality, exact once-only fibre-pair inventory, unrestricted
+      six-set filters, positive two-fibre certificate, and conditional
+      overlap and outside-graph counts before comparing discovery.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave42-joint-incidence/independent-results.json"
+      - "verification/wave42-joint-incidence/two-fibre-certificate.json"
+      - "verification/wave42-joint-incidence/comparison.json"
+      - "verification/wave42-joint-incidence/audit.md"
+      - "verification/wave42-joint-incidence/package-manifest.sha256"
+    note: >-
+      Fifteen verifier tests and nine discovery tests pass. The result is
+      conditional on one canonical rank-33 lift and does not construct or
+      exclude a full three-fibre B or compatible outside graph H.
+
+  - id: O-WAVE42-BRANCH15-DELTA-VERIFICATION
+    requirement: >-
+      Independently hash and parse the frozen branch-15 OPB, replay its
+      generalized-unit closure, derive the seventh fixed triangle, enumerate
+      every prism clause based at it, simplify with the independent closure,
+      and compare the complete normalized clause streams without promoting a
+      stronger formula to SAT or UNSAT.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave42-branch15-triangle-delta/independent-results.json"
+      - "verification/wave42-branch15-triangle-delta/comparison.json"
+      - "verification/wave42-branch15-triangle-delta/audit.md"
+      - "verification/wave42-branch15-triangle-delta/package-manifest.sha256"
+    note: >-
+      The exact 64,932-clause raw and 33,778-clause active sets match. No unit
+      or contradiction follows, branch 15 remains UNKNOWN, and endpoint
+      coverage remains 0/33.
+
+  - id: O-WAVE42-COMPLETE-ENDPOINT-CERTIFICATE
+    requirement: >-
+      Produce a complete independently checkable endpoint certificate:
+      either a valid 99-vertex prism-free SRG or checked UNSAT proofs covering
+      all 33 refined endpoint cases. Universal rank 27, one canonical
+      joint-incidence reduction, and one stronger branch-15 clause family do
+      not discharge this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/2026-07-27-wave42-integration-audit.md"
+      - "verification/2026-07-27-wave42-orchestrator.md"
+      - "verification/wave42-rank27/audit.md"
+      - "verification/wave42-joint-incidence/audit.md"
+      - "verification/wave42-branch15-triangle-delta/audit.md"
+    note: >-
+      No graph or complete endpoint proof exists. The endpoint and Conway-99
+      remain UNKNOWN, the rigorous interval is 708<=n3<=4158, and proof
+      coverage is 0/33.
+
+  - id: O-WAVE43-ENDPOINT-RANK28-VERIFICATION
+    requirement: >-
+      Independently derive both local-rank-27 mechanisms, exhaust the endpoint
+      types 222, 24, 33, and 6 without importing discovery code, include
+      nonvacuous planted rank-zero and rank-two controls, compare complete
+      streams and branch counts, and retain the conditional status wall.
+    critical: true
+    status: PASS
+    evidence:
+      - "verification/wave43-rank28/protocol-freeze.md"
+      - "verification/wave43-rank28/independent-results.json"
+      - "verification/wave43-rank28/comparison.json"
+      - "verification/wave43-rank28/audit.md"
+      - "verification/wave43-rank28/package-manifest.sha256"
+    note: >-
+      Sixteen verifier tests, fifteen discovery tests, a complete
+      deterministic replay, and 36/36 comparison fields pass. The result
+      proves only n3=4158 implies rank_F7(M)>=28; rank 28 remains compatible
+      with the endpoint ceiling 44.
+
+  - id: O-WAVE43-ALL-RANK33-VERIFICATION
+    requirement: >-
+      Independently reconstruct all 4050 quotient normal forms, all 262144
+      lift masks, the 37378 triangle-free masks, the exact 264 rank-33 mask
+      stream, every forced Gram matrix, kernel, component balance, and all
+      216000 six-set triples per retained mask before discovery comparison.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave43-all-rank33-lifts/independent-results.json"
+      - "verification/wave43-all-rank33-lifts/audit.md"
+      - "verification/wave43-all-rank33-lifts/package-manifest.sha256"
+    note: >-
+      All 264 complete per-mask records match and eight hostile/exact tests
+      pass. Every lift survives; no complete B or compatible H is supplied.
+
+  - id: O-WAVE43-BRANCH15-TWO-TRIANGLE-VERIFICATION
+    requirement: >-
+      Independently replay the frozen closure, enumerate all eligible
+      coordinate-triangle pairs and compatible matchings, compare both raw
+      and active clause streams, and replay every retained polarity probe
+      without promoting a propagation fixed point.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave43-branch15-two-triangle/independent-results.json"
+      - "verification/wave43-branch15-two-triangle/audit.md"
+      - "verification/wave43-branch15-two-triangle/package-manifest.sha256"
+    note: >-
+      The verifier reproduces 40800 raw and 34340 active cuts plus all 64
+      probe records. There is no contradiction, branch closure, or endpoint
+      case closure.
+
+  - id: O-WAVE43-SEVEN-DECK-VERIFICATION
+    requirement: >-
+      Independently enumerate the complete unlabeled graph catalogues on six
+      and seven vertices, derive local admissibility and all deletion rows,
+      recompute all nineteen formulas, and validate the exact nonnegative
+      support with prism-zero and hostile-mutation controls.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave43-seven-deck-endpoint/protocol-freeze.md"
+      - "verification/wave43-seven-deck-endpoint/independent-result.json"
+      - "verification/wave43-seven-deck-endpoint/comparison.json"
+      - "verification/wave43-seven-deck-endpoint/2026-07-27T162423Z-audit.md"
+      - "verification/wave43-seven-deck-endpoint/package-manifest.sha256"
+    note: >-
+      The complete 62-class and 208-class catalogues, 81 equations, and
+      99-support witness pass exact replay. This proves feasibility only of
+      the named unrooted count relaxation, not graph realizability.
+
+  - id: O-WAVE44-ROOTED-COUNT-VERIFICATION
+    requirement: >-
+      Before discovery inspection, independently derive all vertex-root and
+      ordered edge/nonedge-root equations, reconstruct the complete 170-row
+      system, validate an exact integer witness, compare every published
+      coefficient and right side, add hostile mutations, and explicitly
+      reject numerical solver status as certificate authority.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave44-rooted-flags/protocol-freeze.md"
+      - "verification/wave44-rooted-flags/independent-results.json"
+      - "verification/wave44-rooted-flags/comparison.json"
+      - "verification/wave44-rooted-flags/audit.md"
+      - "verification/wave44-rooted-flags/package-manifest.sha256"
+    note: >-
+      The verifier reproduces all 170 equations, the 81-to-93 rank
+      progression, and the exact 91-support witness. The free HiGHS MILP
+      false-infeasibility result is retained but refuted. Only feasibility of
+      the aggregate rooted relaxation is promoted.
+
+  - id: O-WAVE45-FLAG-MOMENT-VERIFICATION
+    requirement: >-
+      Before discovery inspection, independently enumerate every admissible
+      rooted four-vertex flag and its overlapping unions, reconstruct all
+      exact Gram coefficients, calibrate on explicit Petersen and Clebsch
+      graphs, attack both stored aggregate witnesses, and replay every cut and
+      intermediate witness from one immutable checkpoint without inspecting
+      mutable live search state.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave45-flag-moment/protocol-freeze.md"
+      - "verification/wave45-flag-moment/independent-results.json"
+      - "verification/wave45-flag-moment/comparison-results.json"
+      - "verification/wave45-flag-moment/verification-report.md"
+      - "verification/wave45-flag-moment/package-manifest.sha256"
+    note: >-
+      Fifteen verifier tests pass. All 484 class matrices, 16660 nonzero
+      ordered coefficients, six control matrices, twelve stored-witness
+      negative directions, 17 cuts, and 15 intermediate witnesses replay
+      exactly. The terminal timeout remains UNKNOWN and is not a certificate.
+
+  - id: O-WAVE45-COMPLETE-PSD-CERTIFICATE
+    requirement: >-
+      Produce a complete independently checkable certificate for the full
+      positive-semidefinite constrained endpoint count region: either an exact
+      feasible moment/count witness, or a finite exact separating family and
+      proof-producing infeasibility derivation. A finite sequence of rejected
+      witnesses and a timeout do not discharge this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "attempts/wave45-flag-moment/checkpoint-v1-seed0-17cuts-15witnesses.json"
+      - "verification/wave45-flag-moment/README.md"
+    note: >-
+      Checkpoint v1 is VERIFIED INCOMPLETE. Endpoint n3=4158, a strict upper
+      bound, and Conway-99 remain UNKNOWN.
+
+  - id: O-WAVE43-COMPLETE-ENDPOINT-CERTIFICATE
+    requirement: >-
+      Produce a complete independently checkable endpoint certificate:
+      either a valid 99-vertex prism-free SRG or checked UNSAT proofs covering
+      all 33 refined endpoint cases. Conditional rank 28, all-rank33
+      necessary reductions, branch-15 cuts, solver UNKNOWN records, and
+      feasible count relaxations do not discharge this obligation.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave43-rank28/audit.md"
+      - "verification/wave43-all-rank33-lifts/audit.md"
+      - "verification/wave43-branch15-two-triangle/audit.md"
+      - "verification/wave43-seven-deck-endpoint/2026-07-27T162423Z-audit.md"
+    note: >-
+      No graph or complete endpoint proof exists. The endpoint and Conway-99
+      remain UNKNOWN, the rigorous interval is 708<=n3<=4158, and proof
+      coverage is 0/33.
+
+  - id: O-WAVE55-CORRECTED-CHECKPOINT
+    requirement: >-
+      Independently verify the exact 33-case endpoint cover, the four
+      two-root CSP/WL templates, the fixed 174-to-177-cut rational sequence,
+      and the formal ordinary ternary enumerator; publish every material
+      correction and preserve all nonterminal solver statuses.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/2026-07-27-wave55-integration-audit.md"
+      - "verification/2026-07-27-wave55-orchestrator.md"
+      - "verification/wave53-proof-cover/package-manifest.sha256"
+      - "verification/wave53-multi-root-wl/package-manifest.sha256"
+      - "verification/wave53-exact-cut-loop/package-manifest.sha256"
+      - "verification/wave54-centered-enumerator/package-manifest.sha256"
+    note: >-
+      The finite claims pass with one material correction: only 120/128
+      tested matrices are indefinite. Complete endpoint proof coverage
+      remains 0/33 and the target remains UNKNOWN.
+
+  - id: O-WAVE55-COMPLETE-ENDPOINT-CERTIFICATE
+    requirement: >-
+      Produce either a valid 99-vertex prism-free SRG or checked terminal
+      proofs covering all 33 endpoint cases. In particular, close
+      branch15 AND x187=0 and independently replay its terminal certificate
+      before promoting branch 15.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave53-proof-cover/audit.md"
+      - "attempts/wave55-branch15-remainder-search/result.json"
+      - "verification/2026-07-27-wave55-orchestrator.md"
+    note: >-
+      The selected shard and all 33 complete cases remain open. Solver
+      UNKNOWN, local controls, rational aggregate witnesses, and a formal
+      weight enumerator do not discharge this obligation.
+
+  - id: O-WAVE58-ALTERNATIVE-SPACE-CHECKPOINT
+    requirement: >-
+      Independently verify the nonedge closure specialization, star-complement
+      projector core and prior-work chronology, both cross-incidence Gram
+      identities, the normalized m=4 and m=6 component censuses, and every
+      exact-set-versus-bound qualifier before publication.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/2026-07-27-wave58-integration-audit.md"
+      - "verification/2026-07-27-wave58-orchestrator.md"
+      - "verification/wave56-percolation-closure/package-manifest.sha256"
+      - "verification/wave57-star-complement/package-manifest.sha256"
+      - "verification/wave58-cross-incidence-rank/package-manifest.sha256"
+    note: >-
+      The finite conditional claims pass with a material Wave 57 correction.
+      All three component/multiplicity rows retain separate controls.
+
+  - id: O-WAVE58-SIMULTANEOUS-INCIDENCE
+    requirement: >-
+      Construct a complete 36-by-60 binary cross-incidence matrix B and a
+      compatible 60-vertex 8-regular A_Y, or produce an independently checked
+      impossibility certificate covering every surviving component lane.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave58-cross-incidence-rank/audit.md"
+      - "verification/2026-07-27-wave58-orchestrator.md"
+    note: >-
+      Local component graphs, scalar spectra, a bounded solver run, or a
+      restricted one-quotient replay do not discharge this obligation.
+
+  - id: O-WAVE59-INCIDENCE-SPECTRAL-CHECKPOINT
+    requirement: >-
+      Independently reconstruct the point-triangle incidence and triangle
+      graph spectra, rooted layers, spectral-excess hypotheses, predistance
+      defect, pair-neighborhood Gram matrix, Ihara short-cycle counts, and
+      cage comparison without opening or executing discovery code.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/wave59-incidence-spectral-excess/preinspection-freeze.sha256"
+      - "verification/wave59-incidence-spectral-excess/independent-result.json"
+      - "verification/wave59-incidence-spectral-excess/audit.md"
+      - "verification/wave59-incidence-spectral-excess/package-manifest.sha256"
+    note: >-
+      Fourteen verifier tests pass with zero mathematical mismatches.
+      Metadata-only author and page-location corrections do not affect the
+      result. Non-distance-regularity supplies no endpoint contradiction.
+
+  - id: O-WAVE59-SPECTRAL-TO-EXCLUSION
+    requirement: >-
+      Convert the verified incidence-spectrum, predistance defect, Gram, or
+      cycle constraints into an exact incompatibility with every surviving
+      endpoint lane, or construct a compatible object.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave59-incidence-spectral-excess/audit.md"
+      - "verification/2026-07-27-wave59-orchestrator.md"
+    note: >-
+      All current spectral and cycle constraints are exact but consistent.
+      The endpoint, strict upper bound below 4158, and Conway-99 remain
+      UNKNOWN.
+
+  - id: O-WAVE63-ALTERNATIVE-SPACE-CHECKPOINT
+    requirement: >-
+      Independently verify the kappa=3 component census and safe orbit
+      reduction, all finite-field and pair-span null results, the one-root
+      signed-edge invariant SDP, and every exact rational certificate in the
+      fixed 74-lane pair-cone subset, retaining all documentation corrections
+      and nonterminal solver statuses.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/2026-07-27-wave63-integration-audit.md"
+      - "verification/2026-07-27-wave63-orchestrator.md"
+      - "verification/wave60-c3-incidence-design/package-manifest.sha256"
+      - "verification/wave61-c3-finite-field/package-manifest.sha256"
+      - "verification/wave62-terwilliger-sdp/package-manifest.sha256"
+      - "verification/wave63-c3-integer-cone/package-manifest.sha256"
+    note: >-
+      The finite conditional claims pass. Wave 61 did not test integral
+      cubic-tensor feasibility, and Wave 62 omitted one tautological matrix
+      from its nontrivial census. Neither correction yields an endpoint
+      result.
+
+  - id: O-WAVE63-INTEGER-HIGHER-ORDER-COMPATIBILITY
+    requirement: >-
+      Construct a zero-one 36-by-60 incidence design in every surviving
+      component lane and a compatible 60-vertex A_Y, or produce exact
+      certificates excluding every lane. Pair-coordinate rational
+      feasibility, parity spans, and bounded MILP nonhits do not discharge
+      this obligation; triple and higher overlap compatibility must be
+      retained.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave61-c3-finite-field/audit.md"
+      - "verification/wave63-c3-integer-cone/verification-report.md"
+      - "verification/2026-07-27-wave63-orchestrator.md"
+    note: >-
+      All 74 tested rational pair polytopes are feasible with coefficients in
+      [0,1], while no integer design, compatible A_Y, endpoint graph, or
+      impossibility certificate is known.
+
+  - id: O-WAVE65-ALTERNATIVE-SPACE-CHECKPOINT
+    requirement: >-
+      Independently reconstruct the rooted K14-7K2 transition/design space,
+      all finite censuses, both exact relaxation controls, the complete
+      residual-codegree closure formula, the hypergraph Gram and trace
+      identities, every scalar coupling, all 258 averaged PSD lanes, and the
+      explicit local positive control before publication.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/2026-07-27-wave65-integration-audit.md"
+      - "verification/2026-07-27-wave65-orchestrator.md"
+      - "verification/wave64-rooted-transition-design/package-manifest.sha256"
+      - "verification/wave65-rooted-hypergraph-algebra/package-manifest.sha256"
+    note: >-
+      Both finite packages pass independent verification. The hidden-file
+      preinspection limitation in Wave 65 is public and the later manifest
+      audit covers it. No endpoint result follows.
+
+  - id: O-WAVE65-NONCOMMUTATIVE-CODEGREE-COMPATIBILITY
+    requirement: >-
+      Construct binary transition and block variables satisfying every
+      residual codegree equation, or produce an independently checked
+      impossibility certificate for the complete unrestricted rooted domain.
+      The proof must retain the entrywise placement of Z and T relative to Q
+      and, for the prism-free endpoint, separately enforce prisms away from
+      the chosen root.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave64-rooted-transition-design/verification-report.md"
+      - "verification/wave65-rooted-hypergraph-algebra/audit.md"
+      - "verification/2026-07-27-wave65-orchestrator.md"
+    note: >-
+      Block-only integrality, rational linear feasibility, scalar spectra,
+      averaged PSD feasibility, local controls, and bounded solver nonhits do
+      not discharge this obligation.
+
+  - id: O-WAVE133-ALTERNATIVE-SPACE-CHECKPOINT
+    requirement: >-
+      Independently reconstruct the exact cutoff-28 Jacobi point, the
+      distinguished binary split-enumerator identities and survivor, and the
+      rooted-triangle holonomy identity plus endpoint-scale surface control;
+      preserve every finite, rational, abstract-control, and UNKNOWN boundary.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/2026-07-28-wave133-integration-audit.md"
+      - "verification/2026-07-28-wave133-orchestrator.md"
+      - "verification/wave130-cdd-exact-lp/package-manifest.sha256"
+      - "verification/wave132-distinguished-biweight/MANIFEST.sha256"
+      - "verification/wave133-triangle-holonomy-topology/MANIFEST.sha256"
+    note: >-
+      All three scoped boundaries pass clean-room verification. They are
+      finite-relaxation or abstract-control results and do not improve the
+      rigorous interval 708<=n3<=4158.
+
+  - id: O-WAVE133-GLOBAL-COMPATIBILITY
+    requirement: >-
+      Supply a global ingredient beyond the surviving finite relaxations:
+      either graph-valued projector completion, an all-cutoff integral
+      modular obstruction, a realizable or impossible labelled joint code
+      enumerator, or a point-level theorem constraining the holonomy twist
+      class. Any exclusion must be independently certified on the complete
+      claimed domain.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "verification/wave130-cdd-exact-lp/verification-report.md"
+      - "verification/wave132-distinguished-biweight/README.md"
+      - "verification/wave133-triangle-holonomy-topology/README.md"
+      - "verification/2026-07-28-wave133-orchestrator.md"
+    note: >-
+      Exact finite primal points, rational split witnesses, local controls,
+      abstract surfaces, numerical solver failures, and bounded timeouts do
+      not discharge this obligation. Conway-99 and the prism-free endpoint
+      remain UNKNOWN.
+
+  - id: O-WAVE134-Z4-CHECKPOINT
+    requirement: >-
+      Independently reconstruct the quaternary code types, residue and
+      torsion restrictions, all size-three forced compositions, the sparse
+      symmetrized MacWilliams transform, the allowed and forbidden orbit
+      partition, and every invalidated provisional-search qualifier.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "attempts/wave134-z4-symmetrized-enumerator/package-manifest.sha256"
+      - "verification/wave134-z4-symmetrized-enumerator/independent-results.json"
+      - "verification/wave134-z4-symmetrized-enumerator/verification-report.md"
+      - "verification/wave134-z4-symmetrized-enumerator/package-manifest.sha256"
+    note: >-
+      The verifier twice vetoed incomplete prepublication models. The final
+      1119/1114/161 transform partition and 84/44 forced tables pass, but no
+      enumerator or code realization follows.
+
+  - id: O-WAVE134-EXACT-ENUMERATOR-FEASIBILITY
+    requirement: >-
+      For the corrected 1119-variable quaternary symmetrized MacWilliams
+      system, produce either an exact rational primal satisfying all 1114
+      allowed and 161 zero dual rows, or an exact Farkas certificate for
+      infeasibility; then separately decide integral feasibility before any
+      code-realization claim.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "attempts/wave134-z4-symmetrized-enumerator/search-status.json"
+      - "attempts/wave134-z4-symmetrized-enumerator/failed-routes.md"
+      - "verification/wave134-z4-symmetrized-enumerator/verification-report.md"
+    note: >-
+      Corrected rational and integral feasibility are UNKNOWN_NOT_RUN. All
+      earlier solver records used undercounted forced tables and are
+      explicitly invalidated.
+
+  - id: O-WAVE147-ALTERNATIVE-SPACE-CHECKPOINT
+    requirement: >-
+      Independently verify the binary S6 projection and its scope correction,
+      all six-set outside-profile supports and endpoint aggregate, the
+      corrected GF4 lower-bound merge and shadow rows, the one-root
+      six-to-seven rational endpoint witness, and the finite two-root
+      order-eight coefficient model before publication.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/2026-07-28-wave147-integration-audit.md"
+      - "verification/2026-07-28-wave147-orchestrator.md"
+      - "verification/wave143-binary-s6-projection/package-manifest.sha256"
+      - "verification/wave144-sixset-odd-profile-cleanroom/package-manifest.sha256"
+      - "verification/wave139-gf4-lower-aggregation/package-manifest.sha256"
+      - "verification/wave146-six-seven-coupling/package-manifest.sha256"
+      - "verification/wave147-pair-root-order8/package-manifest.sha256"
+    note: >-
+      The scoped exact identities, corrections, rational witness, and finite
+      coefficient model pass. They preserve the rigorous interval
+      708<=n3<=4158 and do not construct or exclude the target graph.
+
+  - id: O-WAVE147-TWO-ROOT-ENDPOINT-SDP
+    requirement: >-
+      Complete the marked degree/common-neighbor order-eight extension rows,
+      solve the unrestricted two-root endpoint moment problem, and supply an
+      independently checked exact rational dual certificate for any claimed
+      strict n3 upper bound; alternatively supply an exact feasible moment
+      witness and retain the null boundary.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "attempts/wave147-alternative-lane/exact-results.json"
+      - "attempts/wave147-alternative-lane/failed-routes.md"
+      - "verification/wave147-pair-root-order8/verification-report.md"
+    note: >-
+      Exact coefficient matrices, ordinary deletion rows, n3 carrier entries,
+      and a positive control do not discharge the endpoint SDP. No numerical
+      run, rational dual, strict upper bound, or target resolution exists.
+
+  - id: O-WAVE204-GLOBAL-COMPATIBILITY-CHECKPOINT
+    requirement: >-
+      Independently freeze and verify the relaxed b=0 certificate, the honest
+      triangle-block coboundary, the failure of center-walk and total-S5
+      implications, the conditional adjacent fourth-order detector, and the
+      failure of pair trace plus intersection dimension to determine fourth
+      trace; retain every blind/source discrepancy and target premise.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/2026-07-29-wave204-integration-audit.md"
+      - "verification/2026-07-29-wave204-orchestrator.md"
+      - "verification/wave204-global-compatibility-verifier/SOURCE_BLIND_FREEZE.sha256"
+      - "verification/wave204-global-compatibility-verifier/audit.md"
+      - "verification/wave204-global-compatibility-verifier/package-manifest.sha256"
+    note: >-
+      All 32 submitted entries match; submitted tests pass 8+10+10; the
+      source-blind suite passes 11 tests; and the post-source semantic suite
+      passes five tests. The optional global projector controls are not
+      independently promoted. The scoped results do not improve Q>=7059 or
+      708<=n3<=4158 and do not decide an endpoint or the target.
+
+  - id: O-WAVE204-FOURTH-TRACE-GLOBALIZATION
+    requirement: >-
+      Classify h_xy=tr(P_xP_yP_xP_y) for every nonadjacent pair in an actual
+      rank-11 endpoint realization and derive an exact graph-specific row,
+      moment, module, or rank identity for the full 99-by-99 fourth-trace
+      matrix that is incompatible with all possible 4+2 edge-type
+      distributions; alternatively construct a full endpoint-compatible
+      fourth-trace realization.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "attempts/wave204-projector-fourth-order-proof-b/derivation.md"
+      - "attempts/wave204-projector-fourth-order-proof-b/failed-routes.md"
+      - "verification/wave204-global-compatibility-verifier/audit.md"
+      - "verification/2026-07-29-wave204-orchestrator.md"
+    note: >-
+      Adjacent h detects type 4+2, but pair traces, intersection dimensions,
+      local slots, and repeated-direction relaxed projector systems do not
+      determine the global fourth tensor. Any completion must use actual SRG
+      common-neighbor geometry or the 231-column incidence frame and receive
+      independent verification before endpoint promotion.
+
+  - id: O-WAVE205-FOURTH-TRACE-INFLECTION-CHECKPOINT
+    requirement: >-
+      Independently freeze and verify the exact nonedge cross-Gram profiles,
+      the complete normalized t=6 and t=7 census, all full-rank local
+      certificates and Gram-radical guards, the full H=U K_D U^T
+      factorization, star-pair rank, row localizers, correct tensor
+      dimensions, generic first-moment countercontrol, and stronger
+      99-projector/231-column hostile control with every failed target premise
+      retained.
+    critical: true
+    status: PASS_SCOPED
+    evidence:
+      - "verification/2026-07-29-wave205-integration-audit.md"
+      - "verification/2026-07-29-wave205-orchestrator.md"
+      - "verification/wave205-fourth-trace-globalization-verifier/SOURCE_BLIND_FREEZE.sha256"
+      - "verification/wave205-fourth-trace-globalization-verifier/audit.md"
+      - "verification/wave205-fourth-trace-globalization-verifier/package-manifest.sha256"
+    note: >-
+      The source-blind and post-source suites pass 17 tests, submitted
+      Proof-A and Proof-B suites pass 13 and 12 tests, and all six hostile
+      tests pass. The result is an important route-selection inflection:
+      pair-local fourth-order data and generic moment/rank shortcuts are
+      insufficient. No endpoint or target status is promoted.
+
+  - id: O-WAVE205-SIMULTANEOUS-GLOBAL-EXTENSION
+    requirement: >-
+      Prove a simultaneous 99-center extension law that controls the
+      crossing kernel K_D on row(U), the Hadamard localizers
+      Q o (D S_x D), the norms and overlaps of w_TU, or an equivalent
+      three-center invariant; then use it to classify actual endpoint
+      nonedge fourth traces and derive a checked endpoint contradiction or
+      construct a compatible full endpoint object.
+    critical: true
+    status: UNKNOWN
+    evidence:
+      - "attempts/wave205-nonedge-fourth-trace-proof-a/failed-routes.md"
+      - "attempts/wave205-global-fourth-moment-proof-b/failed-routes.md"
+      - "verification/wave205-fourth-trace-globalization-verifier/audit.md"
+      - "verification/2026-07-29-wave205-orchestrator.md"
+    note: >-
+      The 28-vertex controls leave unsaturated pairs uncompleted, the generic
+      99-label projector control has no target incidence, and the stronger
+      99-by-231 control fails projective distinctness and lambda/mu. Pair-local
+      censuses, relaxed controls, or ambient coordinate counts do not
+      discharge this obligation. Actual nonedge h, rank 11, n3=4158, and
+      Conway-99 remain UNKNOWN.

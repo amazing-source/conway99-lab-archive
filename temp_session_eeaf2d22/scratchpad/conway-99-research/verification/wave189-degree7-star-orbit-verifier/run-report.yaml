@@ -1,0 +1,63 @@
+role: verifier
+date_utc: 2026-07-29T02:34:53Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: exact rational feasibility of
+  the one-star complete degree-seven relaxation, including star-pair rows,
+  all ordinary MacWilliams rows, typed moments and rational Gram census;
+  and the analytic orbit-closed private-label circuit theorem Q>=4852,
+  including the tight degree-27, least-eigenvalue -3 Hoffman null boundary.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  agents/2026-07-29-wave189-degree7-star-complete-proof-b.md: 38bf3fb863d6da04ad2f68afddf4584188fc6abacbc74c26ddcf610fff3e73d8
+  attempts/wave189-degree7-star-complete/package-manifest.sha256: dce4157a05fc20f9b3965ec9830a08f893eeefacdb347b084af13807fa417c90
+  attempts/wave189-orbit-closed-star-translations/package-manifest.sha256: d62ce505ebbaa7bd3799c05a6f0ac50ed920fdd519044e287bada2cb582e39d2
+  agents/2026-07-29-wave187-multiplicity-one-star-translation-proof-a.md: c171920d797056e883a365489f4bf218ea4fc50a8bdf1d6a8e632a2ae897257d
+  verification/wave174-no-weight3-dual/package-manifest.sha256: ac34c8a3b045bec70e3a2080cb4365c0ea43cc732b313ecb3cec355a28f23450
+  verification/wave176-star-projector-circuits/package-manifest.sha256: 2c2b2964d47e235bc1dc3faaf6f6cb870aed9a7595f61d41e8babbd863622c39
+  verification/wave178-edge-circuit-injection/package-manifest.sha256: d2294864035996770664d9c920b2e3c398fc902e81ea04d5b6705675e365b1ba
+  verification/wave179-global-transversal-circuits/package-manifest.sha256: 0f8dca5c3230861f22f15d7df74d6716623890de2080c5fa5dea29469ce4124c
+  verification/wave180-capacity3-companion/package-manifest.sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  verification/wave181-c4-conic-equality/package-manifest.sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  verification/wave186-star-translation-cover-verifier/package-manifest.sha256: edb833cbed8706f164199d4ecab8ff26757c54dfc46915819e150e17d73fef76
+  verification/wave188-affine-star-word-amplification-verifier/package-manifest.sha256: e58bd132b1e1579f5e4e6570d7e0b4318a6c5f970342d4b9493e0c35a3c0dc74
+  verification/2026-07-29-wave189-companion-pool-separation-memo.md: 437579dce0ae6fe40450b1e72a672e5f60d5d8ed293e9a3b677136f6c9102509
+  verification/2026-07-29-wave189-exact-three-orbit-verifier-memo.md: 1092f46fa18ea347e4f37f40c0757783ca3ab715b3ad92f451eb9147ad221557
+  verification/2026-07-29-wave189-equality-exclusion-verifier-memo.md: 0c15fef5d6778c07988932d9b0ce42b0e1eb5b87653a58464eca349e322bd182
+method: >-
+  Clean-room exact Fraction arithmetic; independent cyclotomic complete
+  transform through degree fourteen; all 232 ordinary ternary Krawtchouk
+  rows; explicit star-polygon barycentric lifts; five canonical quadratic
+  complement enumerations; rational triple-census incidence equations;
+  coefficient-majority singleton translation; private-label pool
+  separation; exact-three companion closure; center-oriented orbit
+  capacity; exact scalar identity; equality saturation; checkerboard
+  residual circuit extraction; and incidence/spectral Hoffman analysis.
+  Neither discovery checker was imported or executed during derivation.
+  No graph, cover, code, SAT, configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave189-degree7-star-orbit-verifier\independent_check.py
+  --verify
+  verification\wave189-degree7-star-orbit-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave189-degree7-star-orbit-verifier\test_independent_check.py
+outputs:
+  verification/wave189-degree7-star-orbit-verifier/README.md: 2d6257ce3fcd5cd104b8ae26ae3d68720f904386911fb2ae0278b29c90cf2d20
+  verification/wave189-degree7-star-orbit-verifier/audit.md: 2cfdf5b63f510a352b9d18d4f35672ebcdb25d243b37e66df6558dccca868a5b
+  verification/wave189-degree7-star-orbit-verifier/protocol.md: 4e41b8712efd8bc9898003fd22cfb45ddc4f2b84a88bbffb964dbd346b212438
+  verification/wave189-degree7-star-orbit-verifier/independent_check.py: a33c9dee9bc8378369eb10a0288bb5ab2a6e97dde79f9ac38c311df71829d6a9
+  verification/wave189-degree7-star-orbit-verifier/independent-results.json: db8d1203b2c0de88fd9d71366f9567436817d3f7318b7c857121382b077d338e
+  verification/wave189-degree7-star-orbit-verifier/test_independent_check.py: 18e6b8ee54959d55ff2f7d41be305c94717686dae4a88d8acfbec9990e8d26b5
+  verification/wave189-degree7-star-orbit-verifier/input-freeze.sha256: c65c0bea3ac98fd6f0292efc6f6da306b189f6232af299ec367635cd5199e295
+limitations:
+  - The degree-seven control is a rational relaxation point, not a linear
+    code, projective point set, graph, or endpoint construction.
+  - The rational three-point Gram census is not integral.
+  - The circuit theorem is conditional on the prism-free rank-11 endpoint.
+  - The 13,860-flag Hoffman row is a tight null boundary and does not prove
+    an integral flag decomposition.
+  - Q>=4852 supplies no incompatible upper bound and does not exclude rank
+    11 or the endpoint.
+  - External novelty and Conway-99 remain UNKNOWN.

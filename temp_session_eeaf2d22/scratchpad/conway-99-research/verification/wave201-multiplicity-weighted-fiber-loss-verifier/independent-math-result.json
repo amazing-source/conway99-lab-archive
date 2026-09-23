@@ -1,0 +1,230 @@
+{
+  "accounting_controls": {
+    "integer_near_equality": {
+      "asserted_object": false,
+      "evaluation": {
+        "Q0": "7059",
+        "RA": "0",
+        "S2": "0",
+        "SE2": "0",
+        "SF": "0",
+        "SH": "0",
+        "SI": "0",
+        "SL": "0",
+        "SM": "0",
+        "delta": "3",
+        "epsilon": "708",
+        "eta": "0",
+        "selected_nonprivate_incidence": "477"
+      },
+      "hidden": {
+        "J": "3561",
+        "T": "3360",
+        "delta": "3",
+        "epsilon": "708",
+        "eta": "0",
+        "q": "237"
+      },
+      "multiplicity_profile": {
+        "1": 1,
+        "2": 232,
+        "3": 4
+      },
+      "only_positive_certificate_term": "delta=3",
+      "profile_epsilon": 708,
+      "profile_incidence": 477,
+      "profile_q": 237,
+      "profile_weighted_loss": 3,
+      "row": {
+        "C": "4158",
+        "V": "99",
+        "a2": "60",
+        "a3": "201",
+        "b1": "714",
+        "c1": "3123",
+        "g": "20",
+        "h": "67",
+        "n1": "261",
+        "n2": "357",
+        "n3": "1200",
+        "p2": "357",
+        "p3": "3123",
+        "r1": "3837",
+        "r2": "30"
+      },
+      "scaled_certificate_budget": 3
+    },
+    "rational_equality": {
+      "asserted_object": false,
+      "evaluation": {
+        "Q0": "70587/10",
+        "RA": "0",
+        "S2": "0",
+        "SE2": "0",
+        "SF": "0",
+        "SH": "0",
+        "SI": "0",
+        "SL": "0",
+        "SM": "0",
+        "delta": "0",
+        "epsilon": "3564/5",
+        "eta": "0",
+        "selected_nonprivate_incidence": "2376/5"
+      },
+      "hidden": {
+        "J": "3564",
+        "T": "16812/5",
+        "delta": "0",
+        "epsilon": "3564/5",
+        "eta": "0",
+        "q": "1188/5"
+      },
+      "row": {
+        "C": "4158",
+        "V": "99",
+        "a2": "297/5",
+        "a3": "1008/5",
+        "b1": "3564/5",
+        "c1": "15624/5",
+        "g": "99/5",
+        "h": "336/5",
+        "n1": "261",
+        "n2": "1782/5",
+        "n3": "1200",
+        "p2": "1782/5",
+        "p3": "15624/5",
+        "r1": "19188/5",
+        "r2": "297/10"
+      }
+    }
+  },
+  "boundary": {
+    "code_or_cover_constructed": false,
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "flag_family_constructed": false,
+    "graph_constructed": false,
+    "rank_11_excluded": false,
+    "strict_original_n3_improvement": false
+  },
+  "certificate": {
+    "all_projective_short_circuits": 7752,
+    "edge_isolated_projective": 693,
+    "identity": "Q0-(19*C-85*V)/10=4*SI/5+6*S2/5+SE2/5+7*RA/10+3*SL/10+delta/10+eta/5+SM/10+SF/10+a1/10+3*b3/5+c2/5+2*W/5",
+    "integer_Q_lower": 7059,
+    "nonzero_scalar_short_circuit_words": 15504,
+    "reduced_difference": {},
+    "target": "70587/10",
+    "weighted_local_bundle_derivation": "delta+2*eta+SM+SF=85*V-p3-2*a3-2*b3-4*n3-h-g"
+  },
+  "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+  "format": "wave201-multiplicity-weighted-independent-v1",
+  "local_theorem": {
+    "deficient_center": {
+      "conclusion": "delta_x>=sum_nonprivate_y(m_x(y)-2)",
+      "identity": "delta_x=36-3*c_x+sum_P(d_P-u_P)",
+      "scope": "c_x<=12"
+    },
+    "fibre_consequence": "d-u>=sum_selected(m-2)+r>=sum_selected(m-2)",
+    "fibre_identity": "(d-u)-sum_selected(m-2)=sum_selected(n-m+1)+sum_unselected(n-1)",
+    "global": {
+      "new_slack": "SM=delta-3*q+epsilon>=0",
+      "weighted_identity": "sum_nonprivate(m-2)=3*q-epsilon"
+    },
+    "hostile_profiles": {
+      "four_distinct_full_labels": {
+        "d": 5,
+        "decomposition": 3,
+        "loss": 1,
+        "r": 2,
+        "u": 4,
+        "weighted": -2
+      },
+      "multiplicity_one": {
+        "d": 1,
+        "decomposition": 1,
+        "loss": 0,
+        "r": 1,
+        "u": 1,
+        "weighted": -1
+      },
+      "multiplicity_one_plus_four": {
+        "d": 5,
+        "decomposition": 2,
+        "loss": 3,
+        "r": 2,
+        "u": 2,
+        "weighted": 1
+      },
+      "selected_strictly_below_full": {
+        "d": 5,
+        "decomposition": 3,
+        "loss": 3,
+        "r": 1,
+        "u": 2,
+        "weighted": 0
+      },
+      "two_selected_labels_same_fibre": {
+        "d": 5,
+        "decomposition": 2,
+        "loss": 3,
+        "r": 2,
+        "u": 2,
+        "weighted": 1
+      }
+    },
+    "selected_vs_full_guard": "each selected occurrence is a full-pool occurrence of the same oriented label, so m_y<=n_y; unselected full labels remain in u_P and in the exact loss decomposition",
+    "tight_center": {
+      "baseline": "exactly three d_P=5 fibres, each with d_P-u_P>=1",
+      "conclusion": "delta_x=sum_P(d_P-u_P)-3>=sum_nonprivate_y(m_x(y)-2)",
+      "degree_five_selected_case": "if r_P>=1 then d_P-u_P>=weighted_P+r_P>=weighted_P+1",
+      "degree_five_unselected_case": "if r_P=0 then weighted_P=0 and d_P-u_P>=1",
+      "hilton_milner_templates": {
+        "exceptional_K": {
+          "degree_five_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "maximum_pair_degree": 5,
+          "members": 13,
+          "number_degree_five_pairs": 3,
+          "pair_occurrences": 39
+        },
+        "standard_H": {
+          "degree_five_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "maximum_pair_degree": 5,
+          "members": 13,
+          "number_degree_five_pairs": 3,
+          "pair_occurrences": 39
+        }
+      },
+      "scope": "c_x=13"
+    }
+  },
+  "search_scope": "symbolic fibre decomposition, two fixed Hilton-Milner formulas, exact rational coefficient algebra, and explicit accounting rows only; no graph, configuration, family, cover, SAT, LP, enumeration, isomorphism, or brute-force search",
+  "verdict": "INDEPENDENTLY_DERIVED_PRE_SOURCE"
+}

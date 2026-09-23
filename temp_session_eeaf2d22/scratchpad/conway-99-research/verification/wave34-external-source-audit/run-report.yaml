@@ -1,0 +1,43 @@
+role: verifier
+date_utc: "2026-07-24T23:40:00Z"
+git_commit: "37e8635298e1ce0f23726dd7f80526698c82be91"
+claim_label: VERIFIED
+scope: >-
+  Consolidated verification of current-source status/design claims, Kuber's
+  pinned conditional Lean formalization, Harrison's pinned rooted-source
+  package, and Selub's historical SAT framework. No graph-level theorem is
+  imported.
+inputs:
+  status_designs_manifest:
+    path: verification/wave34-external-source-audit/status-designs/manifest.json
+    sha256: 1af4bad56405fb24128285fa586e2d1e2b80c82f1bdffdafa7cbdb6053cd6812
+  harrison_manifest:
+    path: verification/wave34-external-source-audit/harrison/sha256-manifest.txt
+    sha256: 6052d3114a89af378cf412cc3126b60bab9dc9fe249a673188d3369a681db386
+  kuber_selub_manifest:
+    path: verification/wave34-external-source-audit/kuber-selub/artifact-manifest.sha256
+    sha256: 5053217d6432365b903b787cb53e923996e96feef404904caad89dd7ebd686bc
+method: >-
+  Read each independently authored verifier package, verify its retained
+  manifest boundary, compare claims against the frozen protocol, and import
+  only statements whose labels and limitations survive the comparison.
+  Preserve missing artifacts and unsupported implications as UNKNOWN.
+command: |-
+  python verification/wave34-external-source-audit/status-designs/validate_results.py
+  python -B -m unittest discover -s verification/wave34-external-source-audit/kuber-selub -p test_audit_sources.py -v
+  python <manifest-and-schema validation shown in REPRODUCING.md>
+outputs:
+  audit:
+    path: verification/wave34-external-source-audit/audit.md
+    sha256: f4432e58224a484cc56230b82dd84b07b53edcf19d34e775e45e41c20d9dc4c1
+  results:
+    path: verification/wave34-external-source-audit/results.json
+    sha256: 86d1c1ba7cead388a54a7e031086e95b71e3169999110c02e2d9645d1132271c
+limitations:
+  - Maintained-source status is not proof of global openness.
+  - The design count is approximate and the downloadable corpus is restricted.
+  - Kuber's formal endpoint lacks a graph-to-matrix bridge.
+  - Harrison's theorem-ladder proof bodies are absent or unpulled.
+  - Selub supplies no solver result or certificate.
+  - Conway-99, n3=708, novelty, and priority remain UNKNOWN.
+verdict: PASS_WITH_SCOPED_IMPORTS_AND_EXPLICIT_NON_IMPORTS

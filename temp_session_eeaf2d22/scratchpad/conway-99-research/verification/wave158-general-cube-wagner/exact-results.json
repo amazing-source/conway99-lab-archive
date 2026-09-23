@@ -1,0 +1,152 @@
+{
+  "claim_label": "VERIFIED",
+  "verdict": "VERIFIED_WITH_SCOPE: exact general cube/Wagner covariance inequality for every hypothetical srg(99,14,1,2)",
+  "discovery_freeze": {
+    "package_manifest_sha256": "c4082726ff1c4237824982550da6346204c58a91dc932b1f3a2d382b8801e405",
+    "exact_results_sha256": "c52eaca24a9b1fe5e7465dcb51895d90597f249a4decc513d3658af65ec66e0e",
+    "package_entries_verified": 8,
+    "frozen_inputs_verified": 2
+  },
+  "parameters": {
+    "n": 99,
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "root_mask": 12,
+    "plus_flag_mask": 21812,
+    "minus_flag_mask": 22708
+  },
+  "root_and_flags": {
+    "root_edges": [
+      [0, 3],
+      [1, 2]
+    ],
+    "plus_flag_edges": [
+      [0, 3],
+      [0, 5],
+      [1, 2],
+      [1, 5],
+      [2, 4],
+      [3, 4],
+      [4, 5]
+    ],
+    "minus_flag_edges": [
+      [0, 3],
+      [0, 5],
+      [1, 2],
+      [1, 4],
+      [2, 5],
+      [3, 4],
+      [4, 5]
+    ],
+    "plus_free_swap_orbit": [21812, 26796],
+    "minus_free_swap_orbit": [22708, 25900],
+    "common_unrooted_canonical_mask": 1884
+  },
+  "union_classes": {
+    "6": [1884],
+    "7": [],
+    "8": [2022000, 5683824]
+  },
+  "direct_coefficients": {
+    "N9_mask_1884": {
+      "first": 0,
+      "quadratic": 8,
+      "root_embeddings": 8,
+      "positive_products": 8,
+      "negative_products": 0,
+      "zero_products": 0
+    },
+    "cube_mask_2022000": {
+      "first": 0,
+      "quadratic": 96,
+      "root_embeddings": 48,
+      "positive_products": 96,
+      "negative_products": 0,
+      "zero_products": 192
+    },
+    "wagner_mask_5683824": {
+      "first": 0,
+      "quadratic": -32,
+      "root_embeddings": 16,
+      "positive_products": 0,
+      "negative_products": 32,
+      "zero_products": 64
+    }
+  },
+  "named_graph_isomorphisms": {
+    "cube": {
+      "definition": "vertices are three-bit strings; edges join Hamming-distance-one pairs",
+      "labelled_mask": 216081675,
+      "canonical_mask": 2022000,
+      "vertex_map_to_canonical": [0, 5, 6, 3, 7, 2, 1, 4]
+    },
+    "wagner_mobius_ladder": {
+      "definition": "8-cycle plus opposite chords i--i+4",
+      "labelled_mask": 174400713,
+      "canonical_mask": 5683824,
+      "vertex_map_to_canonical": [0, 5, 4, 1, 7, 2, 3, 6]
+    }
+  },
+  "root_embedding_derivation": {
+    "ordered_first_edges": 1386,
+    "common_nonneighbors_per_first_edge": 72,
+    "common_nonneighbors_adjacent_to_unique_common_neighbor": 12,
+    "remaining_common_nonneighbors": 60,
+    "internal_degree_if_adjacent": 11,
+    "internal_degree_if_not_adjacent": 10,
+    "ordered_second_edges_per_first_edge": 732,
+    "root_embedding_count": 1014552
+  },
+  "six_set_formula": {
+    "source_index_one_based": 9,
+    "canonical_mask": 1884,
+    "source_ast": "A(Q(b, 4), -1)",
+    "common": 16632,
+    "b": 166320,
+    "constant": 41580,
+    "n3_coefficient": -1,
+    "formula": "N9 = 41580 - n3"
+  },
+  "covariance_scaling": {
+    "first_moment": 0,
+    "before_division": "1014552 * (8*N9 + 96*cube8 - 32*wagner8) >= 0",
+    "raw_coefficient_gcd": 8116416,
+    "raw_coefficient_gcd_formula": "8*1014552",
+    "primitive_six_count_form": "N9 + 12*cube8 - 4*wagner8 >= 0",
+    "symbolic_form": "41580 - n3 + 12*cube8 - 4*wagner8 >= 0"
+  },
+  "endpoint_specialization": {
+    "n3": 4158,
+    "N9": 37422,
+    "integer_form": "37422 + 12*cube8 - 4*wagner8 >= 0",
+    "extra_gcd": 2,
+    "primitive_form": "18711 + 6*cube8 - 2*wagner8 >= 0",
+    "total_primitive_divisor": 16232832,
+    "stored_cut_matches": true
+  },
+  "strict_bound_analysis": {
+    "zero_assignment": {
+      "cube8": 0,
+      "wagner8": 0,
+      "lhs_at_n3_4158": 37422,
+      "satisfies_inequality": true
+    },
+    "theorem_alone_excludes_endpoint": false,
+    "sufficient_independent_comparison": "4*wagner8 - 12*cube8 >= 37424",
+    "resulting_upper_before_n3_mod_3": 4156,
+    "conditional_upper_using_n3_mod_3": 4155,
+    "comparison_proved_here": false
+  },
+  "hostile_tests": {
+    "passed": 10,
+    "total": 10
+  },
+  "scope_status": {
+    "novelty": "UNKNOWN",
+    "strict_n3_below_4158": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "graph": "UNKNOWN",
+    "Conway_99": "UNKNOWN"
+  }
+}

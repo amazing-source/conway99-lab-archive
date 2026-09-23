@@ -1,0 +1,20 @@
+role: construction
+date_utc: 2026-07-27T20:03:04Z
+git_commit: a4a61658356253fb95cf68252c972a4f79df38fe
+claim_label: CANDIDATE
+scope: three exact rank-one cut additions to the fixed Wave51 174-cut rational relaxation, with all 32 Wave45/Wave47/Wave49 moment matrices evaluated at each of four rational witnesses
+inputs:
+  - path: attempts/wave53-exact-cut-loop/input-freeze.sha256
+    sha256: 8f1d18daafe0aa9b3a37c0c3cfa833aa59f482f117a406d40b4c60fa12c36226
+method: numerical active-set and eigenvector proposals followed by exact rational reconstruction, exact matrix quadratics, exact lower-deck linearization, primitive integer cuts, and exact substitution
+command: .\.venv\Scripts\python.exe -B attempts\wave53-exact-cut-loop\exact_cut_loop.py --compute
+outputs:
+  - path: attempts/wave53-exact-cut-loop/exact-result.json
+    sha256: 092bc95cbc416185adbbffadd25b1435dc6e2ac38204e37c01d8cb0d2516d7ee
+  - path: attempts/wave53-exact-cut-loop/exact_cut_loop.py
+    sha256: 4e7a5a9e3b9cc4bc7fae6e64f220786862edbae4b3bdd90ea983e6509a183e3c
+limitations:
+  - Discovery output has not been independently verified.
+  - Three cuts do not exhaust any PSD cone; all 32 terminal matrices remain exactly indefinite.
+  - The witnesses are rational aggregate count vectors, not integer vectors or graphs.
+  - Endpoint n3=4158, a strict upper bound, Conway-99, and novelty remain UNKNOWN.

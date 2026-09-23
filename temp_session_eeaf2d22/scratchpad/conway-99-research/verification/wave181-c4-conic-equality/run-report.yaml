@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-28T23:33:39Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional rank-11 exclusion of shared-center multiplicity two,
+  canonical-C4 checkerboard conics, equality Q=2079 implications, signed
+  square-triangle Gram identity, and null first projector sum.
+inputs:
+  - attempts/wave181-c4-conic-equality/package-manifest.sha256
+method: >-
+  Direct Wave171 pairing-table reconstruction, lambda/mu incidence
+  arguments, exact four-column algebra, minimal-cover equality analysis, and
+  signed incidence double counting. No graph or code search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave181-c4-conic-equality\independent_check.py --verify
+  verification\wave181-c4-conic-equality\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave181-c4-conic-equality\test_independent_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave181-c4-conic-equality\exact_check.py --verify
+  attempts\wave181-c4-conic-equality\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave181-c4-conic-equality\test_exact_check.py
+outputs:
+  - verification/wave181-c4-conic-equality/README.md
+  - verification/wave181-c4-conic-equality/audit.md
+  - verification/wave181-c4-conic-equality/protocol.md
+  - verification/wave181-c4-conic-equality/independent_check.py
+  - verification/wave181-c4-conic-equality/independent-results.json
+  - verification/wave181-c4-conic-equality/test_independent_check.py
+  - verification/wave181-c4-conic-equality/input-freeze.sha256
+limitations:
+  - Equality Q=2079 is not excluded.
+  - No rank lower bound 221 for the signed matrix is proved.
+  - Rank 11, the endpoint, and global existence remain UNKNOWN.
+  - External novelty is UNKNOWN.

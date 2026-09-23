@@ -1,0 +1,41 @@
+role: proof_b
+date_utc: 2026-07-28T07:18:13Z
+git_commit: aef7b93124f8caeb1a7487f58289436bc4118880
+claim_label: CANDIDATE
+scope: >-
+  Conditional on the prism-free endpoint n3=4158, derive the exact
+  rooted-triangle holonomy sign identity and test whether local holonomy plus
+  the Wave 40 surface incidences force a parity contradiction.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: agents/2026-07-26-wave35-n3-4158-combinatorial.md
+    sha256: bced89beaafae8f3c8e2c80171aad57d91180e175dc6f47adca6724d00ef3a9d
+  - path: agents/2026-07-27-wave40-edge-type-coupling.md
+    sha256: e297d6499cb72cf198a249cb14eb4660a84ef6ea9491c4967152c745eaefeef7
+  - path: agents/2026-07-27-wave41-overlap-compatibility.md
+    sha256: 32ca71ee6c980389f16e633079f9e56f42ee510c21576f3ea17101b057f7c8a2
+method: >-
+  Direct lambda/mu derivation of three fibre matchings; exact permutation
+  cycle/sign identities; two explicit opposite-sign 39-vertex partial-star
+  controls; and a connected 693-sheet nonabelian regular cover followed by a
+  deterministically checked balanced quotient to an endpoint-scale abstract
+  all-222 surface incidence system.
+command: >-
+  python -B attempts/wave133-triangle-holonomy-topology/exact_check.py
+  --verify attempts/wave133-triangle-holonomy-topology/exact-results.json;
+  python -B -m unittest discover -s
+  attempts/wave133-triangle-holonomy-topology -p "test_*.py" -v
+outputs:
+  - path: attempts/wave133-triangle-holonomy-topology/exact-results.json
+    sha256: 15f37f5e52193b6ecf608df3944c15eaba891e16590867f4b71cbec2ef1f672a
+  - path: attempts/wave133-triangle-holonomy-topology/README.md
+    sha256: 585d0641b93e4f21802b18baf8176fc03871d3b3b1cf8583ed951f484f687905
+  - path: attempts/wave133-triangle-holonomy-topology/failed-routes.md
+    sha256: a3a2a48b1657c92e90d63b1ca1399dd8b87c64f8b705ff14996134e2efea0068
+limitations:
+  - Independent verification is required before promotion.
+  - The 39-vertex controls are partial triangle stars, not extensions.
+  - The surface control is an abstract incidence system, not a graph or SRG.
+  - The balanced quotient does not assert every true N3 intersection law.
+  - No B/H completion, 99-vertex adjacency matrix, endpoint exclusion, upper-bound improvement, or novelty claim is made.

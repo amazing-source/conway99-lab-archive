@@ -1,0 +1,26 @@
+role: verifier
+date_utc: 2026-07-27T00:26:00Z
+git_commit: a45592a91a34d2f2bb7ee4c266f3b979e86e399d
+claim_label: VERIFIED
+scope: "Conditional fixed-triangle prism lemma and catalogs for endpoint-compatible rooted parents 4,5,8,10,12; exact 33-case refinement scope; bounded-solver status boundary"
+inputs:
+  agents/2026-07-27-wave36-rooted-branches.md: 4b746544b778dfab85b7fe7d7073d13b16093fcc2a6f51979afeb078050e2b57
+  attempts/wave36-rooted-branches/derived-clause-catalog.json: e6cd8b32fee88fff300ce153c728b7fe82f6aca9c29526d852ff4a4b564f9092
+  attempts/wave36-rooted-branches/branch-04-prism-100k.json: 2da02b1b645dadb4c6cae84533549994cad5b1854fc2785cbbe6af580631f8c6
+  attempts/wave36-rooted-branches/run-report.yaml: 9a76868f23c2f0ef8e8568996a765cd81aacf3f28042b7831b4730a3d3c2c257
+method: "Independent standard-library reconstruction of labels, edge-variable order, parent and refined stabilizer orbits, endpoint units, all five clause catalogs, and six hostile off-matching lambda=1 cases; discovery implementation not imported"
+command: |
+  .\.venv\Scripts\python.exe -B verification\wave37-rooted-branches\independent_check.py --output verification\wave37-rooted-branches\independent-results.json
+  .\.venv\Scripts\python.exe -B -m unittest -v verification\wave37-rooted-branches\test_independent_check.py
+outputs:
+  verification/wave37-rooted-branches/independent_check.py: 2039681ef17eafea7ace392682317d1baf250585d35474fe7dafa35a3cbca3f3
+  verification/wave37-rooted-branches/test_independent_check.py: bfc6b9069709f8ea90a5050972b4b8e41180ab165f5dc910b2dbe6b2ee07192f
+  verification/wave37-rooted-branches/independent-results.json: d8df303cd0b71201550e7758bdbaaaded4c393201d5c4627e352c1c99d1c6bb9
+  verification/wave37-rooted-branches/audit.md: 3669852c62d079979bb377ab63a98e493bf7aed1bfe90eeb4aa17394cfbeaca7
+tests:
+  independent: "5 passed"
+limitations:
+  - "Only prisms meeting one of six fixed triangles per parent are encoded."
+  - "The branch cover is conditional on the previously audited N3 normalization."
+  - "BUDGET_UNKNOWN supplies no mathematical evidence."
+  - "No candidate graph, proof, endpoint exclusion, or upper-bound improvement is supplied."

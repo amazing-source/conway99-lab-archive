@@ -1,0 +1,26 @@
+{
+  "format": "wave147-resource-report-v1",
+  "date_utc": "2026-07-28T11:03:50Z",
+  "memory_policy": {
+    "minimum_free_physical_memory_percent": 15.0,
+    "enforced_by_checker": true,
+    "minimum_free_percent_in_recorded_samples": 38.0,
+    "minimum_free_gib_in_recorded_samples": 24.0,
+    "total_physical_gib": 63.2
+  },
+  "focused_test_replay": {
+    "command": ".\\.venv\\Scripts\\python.exe -B -m unittest attempts.wave147-alternative-lane.test_exact_check -v",
+    "tests": 5,
+    "result": "PASS",
+    "elapsed_seconds": 90.962
+  },
+  "largest_artifact": {
+    "path": "coefficients.json.gz",
+    "bytes": 583493
+  },
+  "limitations": [
+    "Memory samples were discrete, not continuous peak telemetry.",
+    "The host was shared with other processes, so memory changes are not attributed solely to this package.",
+    "No numerical SDP or unbounded search was run."
+  ]
+}

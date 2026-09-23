@@ -1,0 +1,30 @@
+Wave 80 independent verifier
+============================
+Command:
+  .\.venv\Scripts\python.exe -m unittest -v verification\wave80-f7-overlattice-code\test_independent_verify.py
+
+Result:
+  10 tests passed
+  Ran 10 tests in 0.085s
+  OK
+
+Discovery replay
+================
+Command:
+  .\.venv\Scripts\python.exe -m unittest -v attempts\wave80-f7-overlattice-code\test_exact_check.py
+
+Result:
+  8 tests passed
+  Ran 8 tests in 0.121s
+  OK
+
+Seal replay
+===========
+Discovery package-manifest SHA-256:
+  51d3e709308851ba9c9c63a8897dec4c761ce11e5126633e0cdf67f6e470cba7
+
+Manifest-listed payload mismatches:
+  0
+
+Independent/discovery selected-field comparison:
+  10 of 10 match

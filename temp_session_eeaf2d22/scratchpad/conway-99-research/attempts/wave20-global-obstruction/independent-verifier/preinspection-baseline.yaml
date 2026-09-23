@@ -1,0 +1,58 @@
+role: verifier
+date_utc: 2026-07-23T16:11:25Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+phase: preinspection
+claim_label: UNKNOWN
+scope: blind freeze of the seven submitted Wave 20 candidate artifacts named in the verifier assignment
+method: >
+  SHA-256, byte length, and filesystem last-write time were recorded with
+  PowerShell Get-FileHash/Get-Item before any candidate content was opened,
+  printed, imported, executed, or otherwise inspected by this verifier.
+candidate_content_inspected_before_freeze: false
+assignment_information_known_before_freeze:
+  - candidate artifact paths
+  - list of required verification obligations stated in the parent assignment
+files:
+  - path: agents/2026-07-23-wave20-global-schur.md
+    sha256: 64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632
+    bytes: 11786
+    last_write_utc: 2026-07-23T16:08:50.3333706Z
+  - path: attempts/wave20-global-obstruction/exact_check.py
+    sha256: a3cbe6dfe018965043903c368932f89f9fade30cf301ffe3454cd638966d00c8
+    bytes: 18876
+    last_write_utc: 2026-07-23T16:04:28.9939210Z
+  - path: attempts/wave20-global-obstruction/test_exact_check.py
+    sha256: 597781a740dcc621c448ed7ffaa194e2ed5e004d210630777db8449a8d877231
+    bytes: 4861
+    last_write_utc: 2026-07-23T16:04:49.0852452Z
+  - path: attempts/wave20-global-obstruction/exact-checks.json
+    sha256: 6aea5c4688880a33d358ccc8992ef3aa63d40be70b5c450a8a39bf83b4878dc2
+    bytes: 4625
+    last_write_utc: 2026-07-23T16:07:22.1807639Z
+  - path: attempts/wave20-global-obstruction/failed-routes.md
+    sha256: 23355b845f17dac5b4ef260544d1664c8943999634ee8d02f63d5a6b0ef048b2
+    bytes: 2824
+    last_write_utc: 2026-07-23T16:04:28.9959259Z
+  - path: attempts/wave20-global-obstruction/failed-runs.md
+    sha256: 7ff19bf3dfb9e144447cbd1021165f463b15c8e2c640c0f08110cd705008e610
+    bytes: 689
+    last_write_utc: 2026-07-23T16:06:51.9470327Z
+  - path: attempts/wave20-global-obstruction/run-report.yaml
+    sha256: 89f9ac63eae81913068b8391eaeb8559b2b5e2b8ce989402946079dffeb7eef2
+    bytes: 1998
+    last_write_utc: 2026-07-23T16:09:10.1549876Z
+command: |
+  $targets | ForEach-Object {
+    $item = Get-Item -LiteralPath $_ -ErrorAction Stop
+    $hash = Get-FileHash -Algorithm SHA256 -LiteralPath $item.FullName
+    [pscustomobject]@{
+      path = $_
+      sha256 = $hash.Hash.ToLowerInvariant()
+      bytes = $item.Length
+      last_write_utc = $item.LastWriteTimeUtc.ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ')
+    }
+  } | ConvertTo-Json -Depth 3
+limitations:
+  - The assignment itself necessarily disclosed filenames and required claim components.
+  - Filesystem metadata are not an authorship or chronology certificate.
+  - No Git command will be used in this audit.

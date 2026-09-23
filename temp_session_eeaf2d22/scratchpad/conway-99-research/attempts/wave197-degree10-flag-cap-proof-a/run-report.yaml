@@ -1,0 +1,43 @@
+role: proof_a
+date_utc: 2026-07-29T05:18:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free rank-11 endpoint: prove a degree-ten cap for
+  selected exact-three incidence at every nonedge, combine it with the
+  Wave196 flag and oriented-label caps, and derive Q>=7033 by an exact
+  rational certificate.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave194-five-thirds-verifier/package-manifest.sha256: 236facbec2539a87e197fd0b2b8ca66bc0d53b12415fdf216acf410064d7ca64
+  attempts/wave196-four-fiber-hilton-milner-proof-a/package-manifest.sha256: 83bd93ab0980305d59052dd25dc373f582b5a6fc998b122d64d506871e244b1c
+method: >-
+  SRG triangle incidence, minimal-cover privacy, exact-three flag
+  orientation, bounded-degree incidence counting, the Wave196
+  Hilton--Milner/four-fiber caps, and an exact rational dual certificate.
+  No graph, code, cover, SAT, LP, configuration, enumeration, or
+  isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave197-degree10-flag-cap-proof-a\exact_check.py --verify
+  attempts\wave197-degree10-flag-cap-proof-a\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave197-degree10-flag-cap-proof-a\test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave197-degree10-flag-cap-proof-a.md
+  - attempts/wave197-degree10-flag-cap-proof-a/README.md
+  - attempts/wave197-degree10-flag-cap-proof-a/derivation.md
+  - attempts/wave197-degree10-flag-cap-proof-a/failed-routes.md
+  - attempts/wave197-degree10-flag-cap-proof-a/protocol.md
+  - attempts/wave197-degree10-flag-cap-proof-a/exact_check.py
+  - attempts/wave197-degree10-flag-cap-proof-a/exact-results.json
+  - attempts/wave197-degree10-flag-cap-proof-a/test_exact_check.py
+  - attempts/wave197-degree10-flag-cap-proof-a/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The theorem is conditional on the prism-free rank-11 endpoint and the
+    sealed Wave196 derived theorem.
+  - No endpoint, cover, flag system, code, or graph is constructed.
+  - The rational null row is arithmetic only and is not an object.
+  - Rank 11, endpoint existence, strict original n3 improvement, external
+    novelty, and Conway-99 remain UNKNOWN.

@@ -1,0 +1,49 @@
+role: proof_a
+date_utc: 2026-07-28T08:30:00Z
+git_commit: e1484c6564ddfde580191cdcb4a66a8f6ad7f2a2
+claim_label: CANDIDATE
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2), strengthen the sealed
+  Wave131 ordinary binary MacWilliams system with exact pair
+  compositions of the 99 distinguished image and dual rows and exact
+  per-shell intersection row sums, first moments, parity counts, and
+  range constraints.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: attempts/wave131-binary-lcd-enumerator/package-manifest.sha256
+    sha256: c305de05df2001d869db3dbfc14f7a2a8c7f305ce43471c56c66dc775e89d576
+  - path: attempts/wave131-binary-lcd-enumerator/rational-witness.json
+    sha256: 5e01ddb62d379464470d4ef9797cd6b83f51a9704dc2d94c8c1fa080e87657dc
+method: >-
+  Independent exact pair-composition derivation; labelled-row parity and
+  first-moment identities; an exact high-weight support cut; exact
+  rational Z3 feasibility followed by standard-library Fraction replay;
+  and a hard-bounded integral child-process scout.
+command: >-
+  .venv/Scripts/python.exe -B
+  attempts/wave132-distinguished-biweight/discover_rational.py;
+  .venv/Scripts/python.exe -B
+  attempts/wave132-distinguished-biweight/integral_scout.py
+  --timeout-ms 10000 --wall-seconds 15;
+  python -B attempts/wave132-distinguished-biweight/exact_check.py --verify
+  attempts/wave132-distinguished-biweight/exact-results.json;
+  python -B -m unittest discover -s
+  attempts/wave132-distinguished-biweight -p "test_*.py" -v
+outputs:
+  - path: attempts/wave132-distinguished-biweight/joint-witness.json
+    sha256: 5c33563ac7b958822360487c24543a9dda5b7334f26366b12bb7bbf697c8f0db
+  - path: attempts/wave132-distinguished-biweight/integral-scout.json
+    sha256: 0284f474959f406c46fafa7651e28e8058c54dc7c54f043648b67eeba8073c2b
+  - path: attempts/wave132-distinguished-biweight/exact-results.json
+    sha256: e5d8d8d238f6e95455a49fbaf40a7de99646b351b665f7f60abab37bec6b97ce
+  - path: attempts/wave132-distinguished-biweight/derivation.md
+    sha256: 1b63752587cf115e51122cfe2b197025c44b356a28f77ab0c341f5fe143b35d6
+  - path: attempts/wave132-distinguished-biweight/failed-routes.md
+    sha256: 3579724ee43cc4bf93c7e77579bf42c8ad9eb33eb583b8c3003cf6704f784a6d
+limitations:
+  - Independent verification is required.
+  - The witness is rational and low-degree, not integral or full genus two.
+  - The integral scout ended UNKNOWN_HARD_TIMEOUT and proves no infeasibility.
+  - The 99 distinguished roots are not jointly realized.
+  - No code, graph, Conway-99 resolution, or novelty claim is made.

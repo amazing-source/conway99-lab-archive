@@ -1,0 +1,218 @@
+{
+  "aggregate_comparison": {
+    "canonical_right_kernels": {
+      "primary": 52,
+      "secondary": 52
+    },
+    "canonical_targets": {
+      "primary": 164278,
+      "secondary": 164278
+    },
+    "minimum_F_permutations": {
+      "primary": 164928,
+      "secondary": 164928
+    },
+    "rank_25_survivors": {
+      "primary": 0,
+      "secondary": 0
+    }
+  },
+  "all_odd_comparison": {
+    "agrees": true,
+    "note": "The secondary verifier independently covered the four all-odd types inside its own checker. The primary verifier composed a separate frozen all-odd package.",
+    "primary_composition_types": [
+      "1+1+1+1+1+1",
+      "3+1+1+1",
+      "3+3",
+      "5+1"
+    ],
+    "secondary_types": [
+      "1+1+1+1+1+1",
+      "3+1+1+1",
+      "3+3",
+      "5+1"
+    ]
+  },
+  "comparison_input_hashes": {
+    "attempts/wave41-evenpart-equality/exact-results.json": "8a9e58aaa1073ae4a87e183f904ce7f43eaa620bbac5a6f5d1f8445dd795dc85",
+    "verification/wave41-evenpart-equality/discovery-comparison.json": "6ece1335fa595e4feed57b45cf63e6229697d0f410b2ebae1c32cde9e1cdcc1c",
+    "verification/wave41-evenpart-equality/independent-results.json": "ec371dad71c794d57d4e27b21d17b08fac1d17e22167749ef797d950c18299e4",
+    "verification/wave41-multiedge-rank-packing/independent-results.json": "20cfac8928e1a9d52a586a833d8e52cc7f64f7998bdd641467ded5121e2da133"
+  },
+  "discovery_final_sha_verified": true,
+  "discrepancies": [],
+  "format": "wave41-rank26-secondary-comparison-v1",
+  "method_difference": "Discovery and primary group 164,928 permutations into 52 right kernels and perform 540,540 kernel-level matching scans. The secondary checker independently recovers the same 52 kernels and 164,278 targets; for rank-one F it partitions the 10,395 R universe into 11 pivot-mate branches of 945 and forces W entrywise, while for ranks two and three it vector-scans all 10,395 R for every minimum-F permutation.",
+  "partition_comparison": {
+    "2+1+1+1+1": {
+      "agrees": true,
+      "canonical_right_kernels": {
+        "discovery": 2,
+        "primary": 2,
+        "secondary": 2
+      },
+      "canonical_targets": {
+        "discovery": 80038,
+        "primary": 80038,
+        "secondary": 80038
+      },
+      "discovery_label": "1+1+1+1+2",
+      "minimum_F_permutations": {
+        "discovery": 80640,
+        "primary": 80640,
+        "secondary": 80640
+      },
+      "rank_25_survivors": {
+        "discovery": 0,
+        "primary": 0,
+        "secondary": 0
+      }
+    },
+    "2+2+1+1": {
+      "agrees": true,
+      "canonical_right_kernels": {
+        "discovery": 8,
+        "primary": 8,
+        "secondary": 8
+      },
+      "canonical_targets": {
+        "discovery": 184,
+        "primary": 184,
+        "secondary": 184
+      },
+      "discovery_label": "1+1+2+2",
+      "minimum_F_permutations": {
+        "discovery": 192,
+        "primary": 192,
+        "secondary": 192
+      },
+      "rank_25_survivors": {
+        "discovery": 0,
+        "primary": 0,
+        "secondary": 0
+      }
+    },
+    "2+2+2": {
+      "agrees": true,
+      "canonical_right_kernels": {
+        "discovery": 32,
+        "primary": 32,
+        "secondary": 32
+      },
+      "canonical_targets": {
+        "discovery": 32,
+        "primary": 32,
+        "secondary": 32
+      },
+      "discovery_label": "2+2+2",
+      "minimum_F_permutations": {
+        "discovery": 32,
+        "primary": 32,
+        "secondary": 32
+      },
+      "rank_25_survivors": {
+        "discovery": 0,
+        "primary": 0,
+        "secondary": 0
+      }
+    },
+    "3+2+1": {
+      "agrees": true,
+      "canonical_right_kernels": {
+        "discovery": 2,
+        "primary": 2,
+        "secondary": 2
+      },
+      "canonical_targets": {
+        "discovery": 80632,
+        "primary": 80632,
+        "secondary": 80632
+      },
+      "discovery_label": "1+2+3",
+      "minimum_F_permutations": {
+        "discovery": 80640,
+        "primary": 80640,
+        "secondary": 80640
+      },
+      "rank_25_survivors": {
+        "discovery": 0,
+        "primary": 0,
+        "secondary": 0
+      }
+    },
+    "4+1+1": {
+      "agrees": true,
+      "canonical_right_kernels": {
+        "discovery": 2,
+        "primary": 2,
+        "secondary": 2
+      },
+      "canonical_targets": {
+        "discovery": 736,
+        "primary": 736,
+        "secondary": 736
+      },
+      "discovery_label": "1+1+4",
+      "minimum_F_permutations": {
+        "discovery": 768,
+        "primary": 768,
+        "secondary": 768
+      },
+      "rank_25_survivors": {
+        "discovery": 0,
+        "primary": 0,
+        "secondary": 0
+      }
+    },
+    "4+2": {
+      "agrees": true,
+      "canonical_right_kernels": {
+        "discovery": 4,
+        "primary": 4,
+        "secondary": 4
+      },
+      "canonical_targets": {
+        "discovery": 64,
+        "primary": 64,
+        "secondary": 64
+      },
+      "discovery_label": "2+4",
+      "minimum_F_permutations": {
+        "discovery": 64,
+        "primary": 64,
+        "secondary": 64
+      },
+      "rank_25_survivors": {
+        "discovery": 0,
+        "primary": 0,
+        "secondary": 0
+      }
+    },
+    "6": {
+      "agrees": true,
+      "canonical_right_kernels": {
+        "discovery": 2,
+        "primary": 2,
+        "secondary": 2
+      },
+      "canonical_targets": {
+        "discovery": 2592,
+        "primary": 2592,
+        "secondary": 2592
+      },
+      "discovery_label": "6",
+      "minimum_F_permutations": {
+        "discovery": 2592,
+        "primary": 2592,
+        "secondary": 2592
+      },
+      "rank_25_survivors": {
+        "discovery": 0,
+        "primary": 0,
+        "secondary": 0
+      }
+    }
+  },
+  "primary_positive_control_note": "A transient primary-verifier positive-control lift bug reported during development is not present in the frozen primary result compared here and did not affect any legal-matching absence count or the rank-26 theorem.",
+  "verdict": "AGREES"
+}

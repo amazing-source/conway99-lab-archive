@@ -1,0 +1,281 @@
+{
+  "Fricke_Poisson": {
+    "normalized_formula": "Phi_K||W_7=-7^(q/2-11)*Phi_L",
+    "raw_formula": "Phi_K(-1/(7tau),z/(7tau))=-7^(q/2)*tau^22*exp(pi*i*z^T*G_L*z/tau)*Phi_L(tau,z)",
+    "scalar_control": "At z=0 this is equivalent to Theta_L=-7^(11-q/2)*(Theta_K|W_7).",
+    "warning": "Fricke couples the K index G_K/2 to the L index G_L/2; it is not a self-map of one fixed index."
+  },
+  "claim_label": "DERIVED",
+  "current_boundary": {
+    "Conway_99": "UNKNOWN",
+    "new_Jacobi_upper_bound": null,
+    "novelty": "UNKNOWN",
+    "rank28_excluded": false,
+    "reason": "No exact Jacobi basis, Sturm truncation, Fricke-positive cone, or dual upper certificate has been constructed."
+  },
+  "cycle_sum": {
+    "automorphism_assumption": false,
+    "constant_coefficient": 2079,
+    "cyclic_labeling": "Choose any cyclic labeling per C4; dihedral relabeling preserves the common index.",
+    "index": "G_K/2",
+    "induced_C4_count": 2079,
+    "level": 7,
+    "ordinary_Jacobi_object": "Phi_K=sum_C sum_xinK q^((x,x)/2) exp(2pi*i*sum_j z_j<x,g_Cj>)",
+    "weight": 22,
+    "z_zero_specialization": "Phi_K(tau,0)=2079*Theta_K(tau)"
+  },
+  "evaluation_lattices": {
+    "Fricke_L_marking": {
+      "determinant": 426465,
+      "eigenvalues": [
+        13,
+        45,
+        27,
+        27
+      ],
+      "gram": [
+        [
+          "28",
+          "-8",
+          "1",
+          "-8"
+        ],
+        [
+          "-8",
+          "28",
+          "-8",
+          "1"
+        ],
+        [
+          "1",
+          "-8",
+          "28",
+          "-8"
+        ],
+        [
+          "-8",
+          "1",
+          "-8",
+          "28"
+        ]
+      ],
+      "membership": "v_i in L",
+      "name": "v_i=3u_i",
+      "relation": "G_K=7G_L and g_i/sqrt(7)=v_i"
+    },
+    "coordinate_vector": {
+      "gram": "E_-4[C]",
+      "name": "p_i=u_i/sqrt(7)",
+      "warning": "p_i is not proved to lie in K*; E/2 is not a justified ordinary Jacobi index."
+    },
+    "dual_evaluation_vector": {
+      "four_classes_in_K_dual_mod_K": "(Z/7)^4",
+      "gram": [
+        [
+          "4",
+          "-8/7",
+          "1/7",
+          "-8/7"
+        ],
+        [
+          "-8/7",
+          "4",
+          "-8/7",
+          "1/7"
+        ],
+        [
+          "1/7",
+          "-8/7",
+          "4",
+          "-8/7"
+        ],
+        [
+          "-8/7",
+          "1/7",
+          "-8/7",
+          "4"
+        ]
+      ],
+      "membership": "a_i in K*",
+      "name": "a_i=3u_i/sqrt(7)",
+      "residue_determinant_mod_7": 4,
+      "residue_pairing_times_7_mod_7": [
+        [
+          0,
+          6,
+          1,
+          6
+        ],
+        [
+          6,
+          0,
+          6,
+          1
+        ],
+        [
+          1,
+          6,
+          0,
+          6
+        ],
+        [
+          6,
+          1,
+          6,
+          0
+        ]
+      ],
+      "seven_multiple": "7a_i=3sqrt(7)u_i in K",
+      "short_vector_coordinate": "<x,a_i>=3t_i"
+    },
+    "ordinary_K_Jacobi_marking": {
+      "determinant": 1023942465,
+      "eigenvalues": [
+        91,
+        315,
+        189,
+        189
+      ],
+      "gram": [
+        [
+          "196",
+          "-56",
+          "7",
+          "-56"
+        ],
+        [
+          "-56",
+          "196",
+          "-56",
+          "7"
+        ],
+        [
+          "7",
+          "-56",
+          "196",
+          "-56"
+        ],
+        [
+          "-56",
+          "7",
+          "-56",
+          "196"
+        ]
+      ],
+      "matrix_index": "G_K/2",
+      "membership": "g_i in K",
+      "name": "g_i=7a_i=3sqrt(7)u_i",
+      "short_vector_coordinate": "<x,g_i>=21t_i"
+    }
+  },
+  "finite_dimensional_routes": {
+    "exact_LP_blueprint": [
+      "construct an exact basis through a proved Jacobi Sturm bound",
+      "fix both constant terms at 2079 and impose the Fricke relation",
+      "impose nonnegative integral Fourier coefficients for both theta sums",
+      "maximize c(7,21a)+c(8,21a)+c(9,21a)",
+      "accept an upper bound only with an exact dual certificate"
+    ],
+    "harmonic_alternative": {
+      "description": "On norms at most 18, a degree-32 polynomial in four evaluations exactly isolates the alternating pattern; harmonic decomposition replaces the huge matrix index by weighted theta series, but loses coefficient positivity.",
+      "indicator_interpolation_degree_per_coordinate": 8,
+      "short_coordinate_range": "t_i in {-4,-3,...,4}",
+      "total_degree": 32
+    },
+    "matrix_index_theta_decomposition_component_count": 1023942465,
+    "unscaled_four_class_subgroup_size": 2401,
+    "unscaled_modular_closure_warning": "The four classes give a nondegenerate (Z/7)^4 sector, but modular transformations still retain the orthogonal discriminant complement unless additional orbit data are proved."
+  },
+  "format": "wave116-c4-jacobi-theta-v1",
+  "incidence_coefficient": {
+    "K_Fourier_pattern": [
+      21,
+      -21,
+      21,
+      -21
+    ],
+    "alternating_t_pattern": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "coefficient_sum_is_antipodal_incidence": true,
+    "gap": 837,
+    "interpretation": "For each C4 incidence exactly one vector in an antipodal pair has the chosen alternating pattern.",
+    "oriented_incidence_is_twice_coefficient_sum": true,
+    "projected_norm": "28/5",
+    "q_exponents": [
+      7,
+      8,
+      9
+    ],
+    "rank28_coefficient_sum_lower": 52812,
+    "rank28_oriented_incidence_lower": 105624,
+    "sufficient_coefficient_sum_upper_for_contradiction": 51975
+  },
+  "restricted_projector": {
+    "determinant": "65/2401",
+    "eigenvalues": [
+      "13/63",
+      "5/7",
+      "3/7",
+      "3/7"
+    ],
+    "eigenvectors": {
+      "alternating": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "constant": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "zero_mode_a": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "zero_mode_b": [
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    "formula": "E_-4[C]=(3I-H_C+J/9)/7",
+    "matrix": [
+      [
+        "4/9",
+        "-8/63",
+        "1/63",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "4/9",
+        "-8/63",
+        "1/63"
+      ],
+      [
+        "1/63",
+        "-8/63",
+        "4/9",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "1/63",
+        "-8/63",
+        "4/9"
+      ]
+    ],
+    "positive_definite": true
+  },
+  "scope": "Conditional exact C4 evaluation-lattice and Jacobi strategy assessment; no graph, rank, or novelty result."
+}

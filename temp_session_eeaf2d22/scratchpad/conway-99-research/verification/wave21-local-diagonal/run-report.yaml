@@ -1,0 +1,34 @@
+role: verifier
+date_utc: "2026-07-23T18:54:56Z"
+git_commit: 121a2fda5d9d36d8a16825f2a29d0765d1285eb1
+claim_label: VERIFIED
+scope: "Conditional local and scalar-relaxation consequences of n3=705 for A4=M(M o M)M, assuming the independently audited Wave 20 premises."
+inputs:
+  agents/2026-07-23-wave21-local-diagonal.md: e8b2c37967d4114a9fb0b28a8811c685ce5125cffe148138fe8f5687afcc4081
+  attempts/wave21-local-diagonal/exact_check.py: 04e435579cb21f66620038dc4ee9f3de8033329bf266097ad386aa63344c5105
+  attempts/wave21-local-diagonal/test_exact_check.py: 339c7efb672fe80eb555e9a9ed49f86c3d272f8d2265f56496d7bceec92e6071
+  attempts/wave21-local-diagonal/exact-checks.json: 2d51c827f822183c7c3cfea60e429ae550c2d95270c76f2a5f469371e71b4ce8
+  attempts/wave21-local-diagonal/failed-routes.md: 7acc56503114d69cca8c4287bfe5df3df39289ce5aeb7c75c859c00636b479de
+  attempts/wave21-local-diagonal/failed-runs.md: 5f27558d6cfd1449a1ae61dda0a0f1c104377a26093c5b9b6c5d826a770fe54a
+  attempts/wave21-local-diagonal/run-report.yaml: 3e9c4d62c961bd9c5a790d8c76d581cb16693bf0029faecf921e3dbbc8e2707d
+method: "Independent exact reconstruction of tensor Gram contractions, harmonic projection, centered PSD minors, cyclic trace factors, mod-eight parity, aggregate profile enumeration, and the spectral two-moment witness."
+command: |
+  cd verification/wave21-local-diagonal
+  python -m unittest -v test_independent_check.py
+  python independent_check.py
+  cd ../../attempts/wave21-local-diagonal
+  python -m unittest -v test_exact_check.py
+  python exact_check.py --output ../../verification/wave21-local-diagonal/candidate-replay.json
+outputs:
+  verification/wave21-local-diagonal/2026-07-23T185252Z-audit.md: 4683d18630695f257c5793a7cf99ce860129e9793df7f18d31d4b1bcab8a81f7
+  verification/wave21-local-diagonal/preinspection-freeze.tsv: 872788e06a287491908263a5e4f75fbf41fc850004a188629a1f6b282d3a521f
+  verification/wave21-local-diagonal/independent_check.py: 9cf786d79f688b37fbfab294003bee9d92ca866dc970ddcfc370adab0b6db26c
+  verification/wave21-local-diagonal/test_independent_check.py: 63b42a65c4f5d7e23d62fade13187370ed10ac4d293ef586e0bc1203b0917bf2
+  verification/wave21-local-diagonal/independent-checks.json: 5150e0047e09cca5b09c15eb7d5a740ff6e0f1bf4291a7a4de0db61120da25af
+  verification/wave21-local-diagonal/candidate-replay.json: 2d51c827f822183c7c3cfea60e429ae550c2d95270c76f2a5f469371e71b4ce8
+  verification/wave21-local-diagonal/failed-runs.md: 48a3ccc601be8b6e66db4e9ddb107cc08563562c6b4e2e019e495ca3b81b062c
+  verification/wave21-local-diagonal/artifact-manifest.json: c744146b9924771006ee52d3a6391fe82b3850327e0188910d309e3810020a7a
+limitations:
+  - "The verification is conditional on the audited Wave 20 matrix and row-profile premises."
+  - "Scalar and spectral witnesses are relaxation witnesses, not compatible matrix data, graph constructions, or nonexistence certificates."
+  - "The n3=705 endpoint, Conway-99 target, and literature novelty remain UNKNOWN."

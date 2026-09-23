@@ -1,0 +1,61 @@
+role: construction
+date_utc: "2026-07-23T18:46:39Z"
+git_commit: "121a2fda5d9d36d8a16825f2a29d0765d1285eb1"
+claim_label: DERIVED
+scope: >-
+  Complete order-seven vertex-deletion necessary-count system for
+  srg(99,14,1,2) at n3=705, with the 19 pinned published Hamiltonian-type
+  counts fixed at h11=2820.
+inputs:
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  - path: arxiv:2511.06572v1/source-archive
+    sha256: 10f8d9ea09dc72f4ca6bce4e9427ff1df32718d2978bb35a16db1af3c27cc39a
+  - path: arxiv:2511.06572v1/Hamiltonian_Subgraphs_of_Order_Seven.tex
+    sha256: 0b06fdc1c2951a344592c6af23abd133c4a8a68d717f199e7a0e2d7ceb909d0a
+  - path: arxiv:2511.06572v1/hamiltonian_7.jpg
+    sha256: e37f794e7765c947d3ea76104e9c4c61a00517b649d8b7bea9eb67644fe08a2e
+method: >-
+  Enumerate all 2^21 labeled seven-vertex masks, filter the lambda<=1/mu<=2
+  local conditions, canonicalize under S7, construct all exact six-vertex
+  deletion decks, use SciPy/HiGHS only to discover a nonnegative integral
+  point, and replay the frozen point with standard-library integer arithmetic.
+command: >-
+  python attempts/wave22-full-seven-deck/exact_check.py --output
+  attempts/wave22-full-seven-deck/exact-results.json
+test_command: >-
+  python -m unittest discover -s attempts/wave22-full-seven-deck -p
+  test_exact_check.py -v
+outputs:
+  - path: attempts/wave22-full-seven-deck/discover_milp.py
+    sha256: e225a535a5766d1bf2a325e7bdc649b5c686627fdf0ae02fe6d3c4acbeb549e6
+  - path: attempts/wave22-full-seven-deck/exact_check.py
+    sha256: e54f6ea9bac5fcc20d0583316051320dfe0dd7247657cf64e7515990a8438a5b
+  - path: attempts/wave22-full-seven-deck/test_exact_check.py
+    sha256: 5789a8707958fc3bfdde21f70ba1fdafadcd53a3b141cccff78fd5f569110f3a
+  - path: attempts/wave22-full-seven-deck/witness.json
+    sha256: d74453faa91e42abbe2343d428296818ae051be579305277eff6f113fe66c47d
+  - path: attempts/wave22-full-seven-deck/exact-results.json
+    sha256: ca5d9d116f6a9d6e355600429652e2bf4474b73dcf281bbcb564420d820acbd2
+  - path: attempts/wave22-full-seven-deck/failed-runs.md
+    sha256: 738379c5842290424dd81c5d16bddd0389cd43eaacde82a03fd834e0d08189b4
+  - path: attempts/wave22-full-seven-deck/failed-routes.md
+    sha256: f71baddb9d13a9f0ef8c58feedf9014c67ca36e937f63fa33e9452371abb3cf7
+limitations:
+  - Aggregate type counts do not enforce consistency on overlapping subsets.
+  - No 99-vertex adjacency matrix is constructed.
+  - The source-H panel transcription is a human reading tied to a pinned image hash.
+  - The source-N index alignment is inherited from the pinned Wave-21 exact artifact.
+  - Discovery and exact replay were produced by the same agent; independent verifier review is pending.
+result:
+  labeled_order_7_masks: 394020
+  unlabeled_order_7_classes: 208
+  deletion_matrix_shape: [62, 208]
+  deletion_matrix_rank_mod_11: 62
+  exact_deletion_rows_passed: 62
+  exact_hamiltonian_counts_passed: 19
+  witness_support_size: 105
+  witness_total: 14887031544
+  new_bound_beyond_n3_705: null
+  graph_construction: false
+  target_status: UNKNOWN

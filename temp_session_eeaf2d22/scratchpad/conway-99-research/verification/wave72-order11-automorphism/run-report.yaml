@@ -1,0 +1,48 @@
+role: verifier
+date_utc: 2026-07-27T23:16:44Z
+git_commit: 5f497b545c536de90a1a557c51b53f041fecf7db
+claim_label: VERIFIED
+scope: >-
+  Independently verify that every permutation-order-exactly-11 automorphism
+  of a hypothetical srg(99,14,1,2) is fixed-point-free; verify only the
+  conditional implication from a separately certified semiregular-C11
+  exclusion to no order-11 automorphism and no vertex-transitive realization.
+inputs:
+  - path: attempts/wave72-order11-automorphism/derivation.md
+    sha256: 018a5264f8608f677cdf882fa118541548dc60b91b45eb1e9dd5a521ef1cca73
+  - path: attempts/wave72-order11-automorphism/exact-results.json
+    sha256: 087791a5f2c30ed4534db8469decd569a4c98e5979285184d0db2fdc3a25923d
+  - path: attempts/wave72-order11-automorphism/package-manifest.sha256
+    sha256: cb3c16e26df0430103f74c8bc76d4ba2f97fbc214b5a379788b161b7257c3ece
+  - path: verification/wave72-order11-automorphism/discovery-inventory-preinspection.tsv
+    sha256: acd1dc6ab07c29707fe6e64e905b86674ab2797782812ecd49c2c5945b661c5e
+method: >-
+  Hash-freeze the complete discovery directory before inspection; reconstruct
+  prime-order orbit congruences, fixed degrees, common-neighbor closure, the
+  exact two-step row identity, and the f=11/f=22/f=99 eliminations without
+  importing discovery code; independently enumerate all necessary fixed-degree
+  models; attack identity scope and conditional group-theory implications;
+  compare selected discovery fields only after sealing the independent result.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave72-order11-automorphism\independent_verify.py --verify
+  --discovery-results
+  attempts\wave72-order11-automorphism\exact-results.json
+  --comparison-output
+  verification\wave72-order11-automorphism\comparison.json ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  verification\wave72-order11-automorphism\test_independent_verify.py
+outputs:
+  - path: verification/wave72-order11-automorphism/audit.md
+    sha256: 44a2baf2697c0e1a121027604db32d743f13bcff7baab917aca92db291ed1260
+  - path: verification/wave72-order11-automorphism/independent-results.json
+    sha256: 9976b5af57161c87dc7d63eb6f60c46057feed5731232b452fffa6b7beb4eefc
+  - path: verification/wave72-order11-automorphism/comparison.json
+    sha256: ed117fda5abab070a284e78e9ba37a3ef71b201d82aaa9475cc343cbe05660a4
+  - path: verification/wave72-order11-automorphism/test-results.txt
+    sha256: 63da29c030a06a1a32735da187da7085a54822974c887cd01a7f1967549b595f
+limitations: >-
+  Wave 69 is not verified here, so no-order-11 and non-vertex-transitive
+  conclusions remain conditional on its separate complete certification.
+  Automorphisms of other orders and asymmetric graphs remain in scope.
+  Conway-99, endpoint resolution, and novelty remain UNKNOWN.

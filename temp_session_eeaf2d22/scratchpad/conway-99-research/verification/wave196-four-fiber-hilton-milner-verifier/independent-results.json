@@ -1,0 +1,458 @@
+{
+  "boundary": {
+    "arithmetic_null_realized": false,
+    "code_constructed": false,
+    "conditional_theorem_verified": true,
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "graph_constructed": false,
+    "hostile_proof_b_compared": true,
+    "primary_source_compared": true,
+    "proof_b_used_as_mathematical_premise": false,
+    "rank_11_excluded": false,
+    "strict_n3_improvement": false
+  },
+  "external_theorem_check": {
+    "equality_classification_checked": "H, or the exceptional K when r=3",
+    "hypotheses_checked": "2<=r<n/2, intersecting, empty total intersection",
+    "source": "Hurlbert and Kamat, New injective proofs of the Erdos-Ko-Rado and Hilton-Milner theorems",
+    "specialization": "n=7,r=3 gives size 13 and exactly the two templates instantiated independently",
+    "theorem": 11,
+    "url": "https://arxiv.org/abs/1609.04714"
+  },
+  "format": "wave196-four-fiber-hilton-milner-verification-v1",
+  "hostile_proof_b_comparison": {
+    "both_equality_templates_match": true,
+    "common_block_injection_matches": true,
+    "exact_certificate_matches": true,
+    "four_fibre_geometry_matches": true,
+    "full_selected_old_h_new_g_pool_matches": true,
+    "global_rows_match": true,
+    "proof_b_exact_results_sha256": "08af4d5fad65b6092e59d81ae948f1099e6583f704fe8e3a3fb3519f492f213b",
+    "role": "secondary hostile cross-check",
+    "unknown_boundary_preserved": true,
+    "used_as_mathematical_premise": false,
+    "verdict": "ACCEPT"
+  },
+  "independent_math_result": {
+    "boundary": {
+      "arithmetic_null_realized": false,
+      "code_constructed": false,
+      "conditional_theorem_derived": true,
+      "conway_99": "UNKNOWN",
+      "endpoint_excluded": false,
+      "external_novelty": "UNKNOWN",
+      "graph_constructed": false,
+      "rank_11_excluded": false,
+      "source_compared": false,
+      "strict_n3_improvement": false
+    },
+    "bounds": {
+      "all_projective_short_circuits": 7722,
+      "edge_isolated_projective_short_circuits": 693,
+      "global_oriented_J": 3564,
+      "nonedge_projective_short_circuits_Q": 7029,
+      "scalar_short_circuit_words": 15444,
+      "universal_fixed_center_j_x": 36,
+      "wave188_all_short_word_bound_remains_stronger": 18018
+    },
+    "coefficient_certificate": {
+      "C": 4158,
+      "Q0": "n1+n2+2n3+r1+r2+2h+y+2g+W",
+      "RA": "3h+y+3g-(a2+a3+2b3+c2)",
+      "S2": "p2-n2",
+      "S36": "n1+2n2-a3-b3-C/7",
+      "SE2": "2r2-a2-c2",
+      "SI": "I-2C",
+      "SL": "n1+2n2+c1+2r2+y+2W-C",
+      "equivalent_target": "Q0-(11C-3564)/6",
+      "exact_nonedge_projective_lower": 7029,
+      "identity": "Q0-71C/42=(2/3)SI+(4/3)S2+SE2/6+(2/3)RA+SL/3+S36/6+a1/6+b3/2+c2/6+W/3",
+      "variable_order_after_split_substitution": [
+        "C",
+        "a1",
+        "a2",
+        "a3",
+        "b1",
+        "b3",
+        "c1",
+        "c2",
+        "n2",
+        "n3",
+        "r2",
+        "h",
+        "y",
+        "g",
+        "W"
+      ]
+    },
+    "common_block_family": {
+      "c_x_upper": 12,
+      "first_uniqueness": "q and a are nonadjacent; their two common neighbors are p and b, so mu=2 makes b the unique common neighbor other than p",
+      "flag_injection": "the p-neighbor a uniquely determines (a,b,c)=T",
+      "hypothesis": "one local block S_i={x,p,q} lies in every A_x(T)",
+      "j_x_upper": "j_x<=3c_x<=36",
+      "leaf_names": "each flag has a unique p-neighbor a, a distinct unique q-neighbor b, and a third leaf c",
+      "p_leaf_options": "deg(p)-2=12 after excluding known neighbors x,q",
+      "second_uniqueness": "a and b are adjacent and c is their common neighbor, so lambda=1 makes c unique"
+    },
+    "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+    "flag_leaf_types": {
+      "A": "A_x(T)={i: j(T,S_i)=2}, with |A_x(T)|=3",
+      "conclusion": "if A_x(T)={i,j,k}, the three leaves have types ij,ik,jk, one leaf of each type",
+      "flag": "(x,T), where T is a graph triangle anticomplete to x",
+      "incidence_graph": "the leaf--A incidence graph is simple and 2-regular on 3+3 vertices, hence a 6-cycle",
+      "model_leaf_types": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "simplicity": "one local-block endpoint cannot meet two leaves, by lambda=1 on their triangle edge; p_i and q_i cannot meet the same leaf, by lambda=1 on edge p_iq_i",
+      "six_cross_incidences": "each leaf y in T has exactly mu=2 neighbors in N(x), while the three A-blocks have exactly two T-incidences each"
+    },
+    "flag_pools_and_orientations": {
+      "J": "number of distinct oriented labels (center,leaf) across the union of all three flag pools",
+      "S36": "n1+2n2-a3-b3-C/7>=0",
+      "flag_pools": {
+        "new": "g orbit-closed residual exact-three pairs",
+        "old": "h orbit-closed raw exact-three pairs",
+        "selected": "n3 selected/companion exact-three pairs"
+      },
+      "lower": "J>=C-n1-2n2+a3+b3",
+      "old_a3_orientation": "each distinct type1 private label assigned exact3 supplies one additional orientation outside U",
+      "old_b3_orientation": "the two exact3 endpoint translates of a type2 private undirected label have opposite centers, hence contribute two orientations; b3 records their combined injection",
+      "orientation_directions_changed_from_wave195": false,
+      "selected_orientation": "each label in U supplies at least one oriented label in J",
+      "selected_union": "for the undirected selected type3 label union U, |U|>=C-n1-2n2",
+      "simplicity": "the three companion-pair pools are disjoint by the sealed Wave189/Wave194 separation used by Wave195, and one flag determines one pair",
+      "upper": "J=sum_x j_x<=99*36=3564=6C/7"
+    },
+    "format": "wave196-four-fiber-hilton-milner-clean-room-math-v1",
+    "hilton_milner_equality": {
+      "classification": "a nontrivial intersecting 3-uniform family on seven points of Hilton--Milner equality size 13 is isomorphic either to standard_H or to exceptional_k3_triangle_G",
+      "exceptional_G_formula": "{A: |A intersect B|>=2}, with |B|=3",
+      "family_search_performed": false,
+      "forbidden_search_space_not_enumerated": "2^C(7,3)=2^35 families",
+      "formula_instantiation_only": true,
+      "nonisomorphic_witness": "different element-degree sequences",
+      "standard_H_formula": "{B} union {A: a in A and A intersects B}, with a notin B",
+      "templates": [
+        {
+          "degree_five_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "element_degree_sequence": [
+            12,
+            6,
+            6,
+            6,
+            3,
+            3,
+            3
+          ],
+          "empty_total_intersection": true,
+          "members": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              1,
+              5
+            ],
+            [
+              0,
+              1,
+              6
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              0,
+              2,
+              5
+            ],
+            [
+              0,
+              2,
+              6
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              0,
+              3,
+              5
+            ],
+            [
+              0,
+              3,
+              6
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "name": "standard_H",
+          "pair_degree_histogram": {
+            "0": 3,
+            "1": 9,
+            "2": 3,
+            "3": 3,
+            "5": 3
+          },
+          "pairwise_intersecting": true,
+          "size": 13
+        },
+        {
+          "degree_five_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "element_degree_sequence": [
+            9,
+            9,
+            9,
+            3,
+            3,
+            3,
+            3
+          ],
+          "empty_total_intersection": true,
+          "members": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              1,
+              5
+            ],
+            [
+              0,
+              1,
+              6
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              0,
+              2,
+              5
+            ],
+            [
+              0,
+              2,
+              6
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              1,
+              2,
+              5
+            ],
+            [
+              1,
+              2,
+              6
+            ]
+          ],
+          "name": "exceptional_k3_triangle_G",
+          "pair_degree_histogram": {
+            "0": 6,
+            "2": 12,
+            "5": 3
+          },
+          "pairwise_intersecting": true,
+          "size": 13
+        }
+      ]
+    },
+    "inputs_scope": "sealed Wave180, Wave194, Wave195 verifier results plus srg(99,14,1,2)",
+    "integral_null": {
+      "Q0": 7029,
+      "asserted_to_be_graph_code_cover_or_flag_family": false,
+      "derived": {
+        "n1": 594,
+        "p2": 0,
+        "p3": 2970,
+        "r1": 2970
+      },
+      "integral_at_C_4158": true,
+      "row": {
+        "W": 0,
+        "a1": 0,
+        "a2": 594,
+        "a3": 0,
+        "b1": 0,
+        "b3": 0,
+        "c1": 2970,
+        "c2": 0,
+        "g": 0,
+        "h": 198,
+        "n2": 0,
+        "n3": 1386,
+        "r2": 297,
+        "y": 0
+      },
+      "zero_certificate_slacks": {
+        "RA": 0,
+        "S2": 0,
+        "S36": 0,
+        "SE2": 0,
+        "SI": 0,
+        "SL": 0
+      }
+    },
+    "local_two_star_types": {
+      "four_vertex_bijection": "for each {i,j}, every one of the four cross pairs (u,v) in {p_i,q_i}x{p_j,q_j} is a nonedge; its unique common neighbor besides x is a nonneighbor y of x of type {i,j}; mu=2 makes the cross-pair-to-y map injective and surjective",
+      "local_graph": "N(x) is 1-regular because every edge xy has lambda=1; hence the 14 neighbors split into seven edges {p_i,q_i}",
+      "pair_types": 21,
+      "parameters_used": {
+        "degree": 14,
+        "lambda": 1,
+        "mu": 2
+      },
+      "star_blocks": "S_i={x,p_i,q_i}, i=1,...,7",
+      "total_nonneighbors": 84,
+      "type_definition": "P_x(y)={i,j}, where the two common neighbors of the nonedge xy lie in the distinct blocks S_i and S_j",
+      "type_well_defined": "the two common neighbors cannot be p_i,q_i from one block, or edge p_iq_i would have common neighbors x and y",
+      "vertices_per_type": 4
+    },
+    "math_result_sha256": "e65998a74c052ccff11e563090495641168e2e5a3f73b33ea1dba24634df5b7e",
+    "nontrivial_family": {
+      "below_equality": "if c_x<=12, then j_x<=3c_x<=36",
+      "conclusion": "j_x<=39-3=36",
+      "empty_core_cap": "Hilton--Milner gives c_x<=13",
+      "equality_occurrences": "c_x=13 gives 3c_x=39 leaf occurrences",
+      "equality_repeats": "both classified equality templates have three distinct pair-fibres with d_P=5, forcing at least one repeat in each",
+      "family": "the distinct A_x(T) three-subsets from selected, old-h, and new-g exact-three flags with fixed center x",
+      "pair_fibre_rule": "a pair P contained in d_P flag sets supplies d_P leaves of type P, but the local type theorem provides only four distinct vertices of type P",
+      "verified_inputs": "fixed-center simplicity and pairwise intersection are inherited from sealed Wave180/Wave194/Wave195"
+    },
+    "quarantine": {
+      "reason": "Wave196 uses only the four-vertex pair-type cap, the two Hilton--Milner equality templates, common-block uniqueness, and the already verified Wave195 lower-bound orientations",
+      "rows": "all unrelated candidate capacity, support, owner, and orientation-amplification rows",
+      "status": "QUARANTINED_NOT_USED",
+      "used_in_certificate": false
+    },
+    "verdict": "INDEPENDENTLY_DERIVED_PRE_SOURCE"
+  },
+  "integrity": {
+    "all_hash_entries_checked": 67,
+    "direct_entries_checked": 6,
+    "failures": [],
+    "independent_result_sha256": "106444612745ed8e8b384460cc696c5d580a2201aa53f257e2a9d616ea5ce969",
+    "legacy_provenance_recursion": "not reopened; sealed verifier results retain their own recursive integrity audits",
+    "passed": true,
+    "primary_checker_imported_or_executed_before_independent_freeze": false,
+    "primary_manifest_sha256": "83bd93ab0980305d59052dd25dc373f582b5a6fc998b122d64d506871e244b1c",
+    "primary_opened_before_independent_freeze": false,
+    "sealed_manifests_checked": 7
+  },
+  "result_sha256": "53e72e66a7a6e14e25de01a59e76dc2e8b1e3f7c93dfbbbccc7f36ad531823a2",
+  "source_comparison": {
+    "S36_and_J_cap_match": true,
+    "all_null_rows_arithmetic_only": true,
+    "both_hilton_milner_equality_templates_match": true,
+    "bound_and_count_arithmetic_match": true,
+    "coefficient_identity_matches": true,
+    "common_block_uniqueness_and_cap_match": true,
+    "flag_pair_fibre_rule_matches": true,
+    "four_vertices_per_two_block_type_matches": true,
+    "oriented_label_lower_bound_directions_match": true,
+    "primary_exact_results_sha256": "15568af88fb214b99cb5b4052de6b63970ddadd7afbe31ada2e9cb7fc4d96492",
+    "selected_old_h_new_g_pool_scope_matches": true,
+    "source_and_independent_nulls_are_distinct": true,
+    "source_integer_null_replayed": true,
+    "three_degree_five_fibres_per_template_match": true,
+    "unrelated_candidate_rows_quarantined": true
+  },
+  "verdict": "VERIFIED_WITH_SCOPE",
+  "verified_claim": "conditionally, j_x<=36 for every center, J<=3564, S36>=0, and Q>=7029"
+}

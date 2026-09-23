@@ -1,0 +1,43 @@
+role: literature
+date_utc: "2026-07-28T08:29:57Z"
+git_commit: "0a15bfe548e301ea98c83e292ba8931322e39945"
+claim_label: DERIVED
+scope: >-
+  Conditional strategy assessment for structurally different exact
+  translations of a hypothetical srg(99,14,1,2), through the verified
+  Wave134 checkpoint and without relying on unfinished Wave135 output.
+inputs:
+  - path: attempts/wave134-z4-symmetrized-enumerator/exact-results.json
+    sha256: "8d3e39c4360341f7d3d6b8ac496853c0ae19e546ab8655cc6939b36edbddb1a2"
+  - path: attempts/wave132-distinguished-biweight/derivation.md
+    sha256: "1b63752587cf115e51122cfe2b197025c44b356a28f77ab0c341f5fe143b35d6"
+  - path: attempts/wave49-five-root-moment/README.md
+    sha256: "d30a94868a81462e38668f0e1e67624b0127fca1a22a53d5197116333142ac81"
+  - path: attempts/wave133-triangle-holonomy-topology/exact-results.json
+    sha256: "15f37f5e52193b6ecf608df3944c15eaba891e16590867f4b71cbec2ef1f672a"
+  - path: attempts/wave131-binary-lcd-enumerator/rational-witness.json
+    sha256: "5e01ddb62d379464470d4ef9797cd6b83f51a9704dc2d94c8c1fa080e87657dc"
+method: >-
+  Reconstruct the graph, binary-code, Z4-code, and triangle-holonomy maps;
+  compare candidate spaces by which exact compatibility constraints they
+  add beyond Wave134; check general-method claims against primary sources;
+  rank routes by certificate strength, state size, and missing bridges; and
+  exactly replay the Arf/Gauss diagnostic against the sealed Wave131 formal
+  rational witness.
+command: >-
+  python -B attempts/wave136-alternative-spaces/arf_check.py --verify
+  attempts/wave136-alternative-spaces/arf-results.json
+outputs:
+  - path: attempts/wave136-alternative-spaces/strategy-memo.md
+    sha256: "fffa6107edafdce21400d5a3d51bd65756573c848e798aaaf58ab8b45458ac70"
+  - path: attempts/wave136-alternative-spaces/arf_check.py
+    sha256: "e2368683a06627b223621a4f229e6ee6d804911f83a48bbe2e6329573d0c7292"
+  - path: attempts/wave136-alternative-spaces/arf-results.json
+    sha256: "17659e6e03d7cd6681b16ca8c213462a12087e97124d93df603c8cdde2f3c9b9"
+limitations:
+  - Route rankings are research judgments, not mathematical theorems.
+  - No rational feasibility point, Farkas certificate, code, adjacency matrix, graph, or upper bound is produced.
+  - A targeted literature no-hit is not evidence of novelty or open status.
+  - The current Wave135 working directory was not treated as a sealed input.
+  - The Arf derivation and graph-state identities require independent clean-room verification before promotion.
+  - Conway-99 remains UNKNOWN.

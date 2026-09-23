@@ -1,0 +1,37 @@
+role: verifier
+date_utc: 2026-07-27T16:20:48Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: VERIFIED
+scope: >-
+  Conditional on n3=4158, r3=12, every edge type 222, and the canonical
+  rank-33 lift lane: exact reconstruction of all 264 labelled masks and all
+  forced-Gram and six-set candidate-census records.
+inputs:
+  - path: attempts/wave41-allquotient-lifts/exact_check.py
+    sha256: 9a94a08dfec20a72c335168714a047f92e1aff09ac05bdd827a78ce2deb45e76
+  - path: attempts/wave41-allquotient-lifts/package-manifest.sha256
+    sha256: 7b3ec7e2745e15f9d18e0439ebde72e289a9264cb81af364dd9bf29c4bae23ac
+  - path: attempts/wave43-all-rank33-lifts/exact-results.json
+    sha256: 31e2e5d767c02f9e520f33a980584e2ae24df8a4fc1bbd7b381797209b97e198
+method: >-
+  Independent quotient and endpoint-lift generators; dense batched Gaussian
+  elimination over F7; integer forced-Gram reconstruction; modular rank over
+  1000003; vectorized exhaustive enumeration of 216000 pair triples per mask.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave43-all-rank33-lifts\independent_check.py --verify
+  verification\wave43-all-rank33-lifts\independent-results.json
+outputs:
+  - path: verification/wave43-all-rank33-lifts/independent-results.json
+    sha256: 8d8482f30e456b06104eee6c0844452461f42c72897cb89dcdd13d2ae9387667
+limitations:
+  - Every one of the 264 lifts survives the necessary filters.
+  - Five numerical census classes are not proved isomorphism classes.
+  - No simultaneous B, compatible H, endpoint exclusion, or graph is supplied.
+  - The endpoint, strict upper-bound problem, and Conway-99 remain UNKNOWN.
+result:
+  normalized_quotients: 4050
+  triangle_free_masks: 37378
+  rank33_masks: 264
+  complete_per_mask_matches: 264
+  excluded_masks: 0

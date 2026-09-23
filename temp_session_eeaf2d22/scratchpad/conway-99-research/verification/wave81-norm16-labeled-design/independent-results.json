@@ -1,0 +1,450 @@
+{
+  "claim_label": "VERIFIED",
+  "conditional_scope": "Wave78 norm-16 signed support branch; no upstream lattice theorem",
+  "couplings": {
+    "marginal_flow_null_control_rejected": true,
+    "per_orbit": [
+      90,
+      326,
+      681,
+      2068,
+      1820
+    ],
+    "per_orbit_passing_local_flow": [
+      90,
+      326,
+      681,
+      2068,
+      1820
+    ],
+    "total": 4985,
+    "total_passing_local_flow": 4985
+  },
+  "discovery_manifest_sha256": "6c05ff8ef0f97b1c9af0a1fbe1106ec07f826e819869660262fe92b9478033bd",
+  "endpoint": {
+    "conway_status": "UNKNOWN",
+    "norm16_excluded": false,
+    "novelty": "UNKNOWN"
+  },
+  "format": "wave81-independent-verification-v1",
+  "limitations": [
+    "Conditional on the frozen Wave78 signed-support input.",
+    "Couplings and histograms are necessary data, not outside graphs.",
+    "Per-X2 marginal flows are local and not simultaneous.",
+    "No automorphism of the hypothetical graph is assumed."
+  ],
+  "outside_histograms": {
+    "counts_by_t": {
+      "0": 43,
+      "1": 7,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    "local_type_equations": {
+      "b": "16-5*d-2*a",
+      "c": "a+3*d-2"
+    },
+    "six_pair_moments": [
+      "sum C(c,2)=105-t",
+      "sum c*b=1296+4*t",
+      "sum c*a=144-2*t",
+      "sum C(b,2)=3280-4*t",
+      "sum C(a,2)=40-t",
+      "sum a*b=720+4*t"
+    ],
+    "surviving_t": [
+      0,
+      1
+    ],
+    "type_edge_formulas": {
+      "e00": "5+t",
+      "e01": "112-4*t",
+      "e02": "32+2*t",
+      "e11": "304+4*t",
+      "e12": "48-4*t",
+      "e22": "t"
+    },
+    "verifier_derived_strengthening": {
+      "claim_label": "DERIVED",
+      "counts_after_all_type_graphical_tests": {
+        "0": 40,
+        "1": 7,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "note": "Three t=0 moment rows have nongraphical X0-induced degree sequences; independent verification is required before promotion.",
+      "rejections": [
+        {
+          "X0_induced_degrees": [
+            4,
+            3,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "failed_checks": [
+            "X0_induced"
+          ],
+          "histograms": {
+            "X0": [
+              6,
+              3,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            "X1": [
+              16,
+              48,
+              0,
+              0,
+              0,
+              0
+            ],
+            "X2": [
+              8,
+              0,
+              0,
+              0
+            ]
+          },
+          "t": 0
+        },
+        {
+          "X0_induced_degrees": [
+            4,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "failed_checks": [
+            "X0_induced"
+          ],
+          "histograms": {
+            "X0": [
+              7,
+              0,
+              3,
+              0,
+              1,
+              0,
+              0
+            ],
+            "X1": [
+              16,
+              48,
+              0,
+              0,
+              0,
+              0
+            ],
+            "X2": [
+              8,
+              0,
+              0,
+              0
+            ]
+          },
+          "t": 0
+        },
+        {
+          "X0_induced_degrees": [
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "failed_checks": [
+            "X0_induced"
+          ],
+          "histograms": {
+            "X0": [
+              7,
+              1,
+              0,
+              3,
+              0,
+              0,
+              0
+            ],
+            "X1": [
+              16,
+              48,
+              0,
+              0,
+              0,
+              0
+            ],
+            "X2": [
+              8,
+              0,
+              0,
+              0
+            ]
+          },
+          "t": 0
+        }
+      ]
+    }
+  },
+  "spectrum": {
+    "determinants_per_orbit": [
+      -898829477272202192722503661778827739136,
+      299609825757400730907501220592942579712,
+      0,
+      -99869941919133576969167073530980859904,
+      33289980639711192323055691176993619968
+    ],
+    "exponent_control": {
+      "correct_trace": 0,
+      "swapped_trace": -70
+    },
+    "four_cycles_per_orbit": [
+      1135,
+      1133,
+      1132,
+      1131,
+      1131
+    ],
+    "full_SRG_multiplicities": {
+      "-4": 44,
+      "3": 54
+    },
+    "orbits_eliminated": 0,
+    "principal_factor_exponents": {
+      "-4": 28,
+      "3": 38
+    },
+    "q_coefficients_descending_per_orbit": [
+      [
+        1,
+        11,
+        33,
+        -53,
+        -475,
+        -681,
+        821,
+        2791,
+        771,
+        -3679,
+        -3005,
+        1665,
+        2583,
+        189,
+        -729,
+        -243
+      ],
+      [
+        1,
+        11,
+        33,
+        -53,
+        -471,
+        -653,
+        833,
+        2491,
+        171,
+        -3271,
+        -1317,
+        1961,
+        939,
+        -567,
+        -189,
+        81
+      ],
+      [
+        1,
+        11,
+        33,
+        -53,
+        -469,
+        -639,
+        839,
+        2341,
+        -120,
+        -3040,
+        -572,
+        1812,
+        288,
+        -432,
+        0,
+        0
+      ],
+      [
+        1,
+        11,
+        33,
+        -53,
+        -467,
+        -625,
+        845,
+        2191,
+        -413,
+        -2815,
+        195,
+        1729,
+        -401,
+        -411,
+        207,
+        -27
+      ],
+      [
+        1,
+        11,
+        33,
+        -53,
+        -467,
+        -625,
+        845,
+        2191,
+        -409,
+        -2803,
+        151,
+        1597,
+        -309,
+        -199,
+        27,
+        9
+      ]
+    ],
+    "traces_1_to_4_per_orbit": [
+      [
+        0,
+        1002,
+        906,
+        32422
+      ],
+      [
+        0,
+        1002,
+        906,
+        32406
+      ],
+      [
+        0,
+        1002,
+        906,
+        32398
+      ],
+      [
+        0,
+        1002,
+        906,
+        32390
+      ],
+      [
+        0,
+        1002,
+        906,
+        32390
+      ]
+    ]
+  },
+  "support": {
+    "S8xS8_orbits": 5,
+    "anchored_supports": 1800,
+    "automorphism_assumed": false,
+    "representatives_hex": [
+      [
+        "0f",
+        "33",
+        "55",
+        "69",
+        "96",
+        "aa",
+        "cc",
+        "f0"
+      ],
+      [
+        "0f",
+        "33",
+        "55",
+        "69",
+        "96",
+        "aa",
+        "d8",
+        "e4"
+      ],
+      [
+        "0f",
+        "33",
+        "55",
+        "69",
+        "96",
+        "ac",
+        "d8",
+        "e2"
+      ],
+      [
+        "0f",
+        "33",
+        "55",
+        "6a",
+        "96",
+        "a9",
+        "d8",
+        "e4"
+      ],
+      [
+        "0f",
+        "33",
+        "55",
+        "6a",
+        "96",
+        "ac",
+        "d8",
+        "e1"
+      ]
+    ]
+  },
+  "wave78_histogram": {
+    "X0": 11,
+    "X1": 64,
+    "X2": 8,
+    "derivation": [
+      "n0+n1+n2=83",
+      "n1+2*n2=80 from 160 support-outside incidences",
+      "n2=8 from the eight deficiency-pair occurrences per side"
+    ]
+  }
+}

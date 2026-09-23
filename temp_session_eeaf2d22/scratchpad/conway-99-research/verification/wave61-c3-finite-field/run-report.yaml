@@ -1,0 +1,60 @@
+role: verifier
+date_utc: 2026-07-27T22:03:16Z
+git_commit: 81c8d45426938ea8490af55d81f05b7c2ad99035
+claim_label: VERIFIED
+verdict: VERIFIED_WITH_CORRECTION
+scope: >-
+  Conditional kappa=3 Wave 61 finite-field, quadratic, odd-prime,
+  21-pattern, 198-bit local-pair, 630-bit full-pair, and cubic-margin
+  relaxations for all 1,140 unordered triples with repetition of the 18
+  frozen fibre-preserving Wave 60 component types.
+inputs:
+  - path: attempts/wave60-c3-incidence-design/component-census.json
+    sha256: 16e124587df5b37b3f4735e14894982750c60a303043125985383101331eb4de
+  - path: attempts/wave61-c3-finite-field/exact-results.json
+    sha256: 936c76b7487d713421ef663aae4cc591f9bcf93f5d6a11f4aae3c0b5d4aa52f6
+  - path: attempts/wave61-c3-finite-field/package-manifest.sha256
+    sha256: 63343515a1abd1e053e4fed84de0ba88d9c53833994a8ac08d4325520b83c252
+  - path: verification/wave58-cross-incidence-rank/independent-results.json
+    sha256: 4d57b524ab869a73ce5629ac3fb5107e36402ce4929cfaf2ca5a55f5950b77be
+  - path: verification/wave61-c3-finite-field/preinspection-freeze.sha256
+    sha256: 0388a98de04c52b498dc36729b4fee8ff3afeb46d5e404c928770630cf1eec6b
+method: >-
+  Clean-room reconstruction from component edge lists; direct structural
+  validation and S4^3 fibre-preserving signature audit; least-pivot exact F2
+  elimination; leading-corner symmetric congruence elimination over odd
+  primes; complete enumeration of all 1,140 triples and every permitted
+  pair-profile generator; hostile data and RHS mutations; post-reconstruction
+  comparison to discovery summaries.
+determinism: >-
+  PASSED. A fresh exhaustive --verify replay reconstructed all 1,140 records
+  and exited cleanly against independent-results.json with SHA-256
+  a18c6f8343b480a6fd278dc53509aa6f4a85b193aae2400efe1fb151e93a15c1.
+command: >-
+  python -B verification/wave61-c3-finite-field/independent_check.py ;
+  python -B verification/wave61-c3-finite-field/independent_check.py
+  --verify verification/wave61-c3-finite-field/independent-results.json ;
+  python -m unittest
+  verification/wave61-c3-finite-field/test_independent_check.py -v
+outputs:
+  - path: verification/wave61-c3-finite-field/.gitattributes
+    sha256: 1572ab58ad20e360b5d39254fe6292d2d62ba3fbc9b7842966d9a5fc51faa24a
+  - path: verification/wave61-c3-finite-field/protocol.md
+    sha256: 7885e35b248fa701256c411252e107f3bbe829935fe3ab5fa4b3d92e340aaeb4
+  - path: verification/wave61-c3-finite-field/independent_check.py
+    sha256: 1be0df334924fd6a1534d52437799cccf51e0f7ccee4ca739d01511069fb8abd
+  - path: verification/wave61-c3-finite-field/test_independent_check.py
+    sha256: 0e4afacc994e7122baa7a7fff80adfa19abeb0d6dbdfa4e2ddf6ca5fc09a81af
+  - path: verification/wave61-c3-finite-field/independent-results.json
+    sha256: a18c6f8343b480a6fd278dc53509aa6f4a85b193aae2400efe1fb151e93a15c1
+  - path: verification/wave61-c3-finite-field/audit.md
+    sha256: 4f282febbb1f8f3eb1519d8927849e7ff1f3a2551a57a5a34fbf5781c1879614
+  - path: verification/wave61-c3-finite-field/failed-routes.md
+    sha256: b7949988375b234ea957eb0a8c259d7ff3da2623819cd5b6e0210a5d591ce435
+limitations: >-
+  Numerical finite-field and parity claims are verified, but these are
+  necessary relaxations only. The cubic check proves the displayed margin
+  identity and scalar totals, not existence of a nonnegative integral tensor.
+  No simultaneous integer B, compatible A_Y, endpoint graph, endpoint
+  exclusion, general n3 upper-bound improvement, novelty claim, or Conway-99
+  resolution follows. Endpoint status remains UNKNOWN.

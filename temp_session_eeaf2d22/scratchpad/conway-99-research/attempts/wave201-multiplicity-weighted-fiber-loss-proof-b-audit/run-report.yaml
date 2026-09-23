@@ -1,0 +1,32 @@
+role: proof_b
+date_utc: 2026-07-29T07:02:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Hostile audit of the multiplicity-weighted four-fiber lemma, global
+  delta>=3q-epsilon row, budget floor B>=891, and conditional Q>=7059.
+inputs:
+  - AGENTS.md
+  - verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256
+  - attempts/wave198-orientation-lift-proof-b/package-manifest.sha256
+  - attempts/wave198-orientation-lift-proof-a-audit/package-manifest.sha256
+  - attempts/wave200-two-face-gluing-proof-b-audit/package-manifest.sha256
+  - attempts/wave201-multiplicity-weighted-fiber-loss-proof-a/package-manifest.sha256
+method: >-
+  Per-leaf multiset repetition, exact Hilton--Milner baseline accounting,
+  symbolic elimination, and coefficientwise budget subtraction. No
+  graph, flag-family, configuration, or isomorphism search.
+command: >-
+  python -B
+  attempts/wave201-multiplicity-weighted-fiber-loss-proof-b-audit/exact_check.py
+  --verify
+  attempts/wave201-multiplicity-weighted-fiber-loss-proof-b-audit/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave201-multiplicity-weighted-fiber-loss-proof-b-audit/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave201-multiplicity-weighted-fiber-loss-proof-b-audit.md
+  - attempts/wave201-multiplicity-weighted-fiber-loss-proof-b-audit/
+limitations:
+  - Proof-B hostile audit, not clean-room verifier promotion.
+  - Conditional on the prism-free rank-11 endpoint.
+  - No endpoint contradiction or external novelty claim.

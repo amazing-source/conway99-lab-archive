@@ -1,0 +1,219 @@
+{
+  "claim_label": "DERIVED",
+  "conclusion": {
+    "endpoint_excluded": false,
+    "local_rank_bridge_raises_verified_r3_floor": false,
+    "new_exact_four_cycle_imbalance": 200277,
+    "new_ternary_centered_clique_structure": true,
+    "smallest_missing_lemma": "Use simultaneous 60-block B/H completion or cross-base-triangle compatibility to force rank_F3(P_T-I)>=12 for at least one base triangle; the one-triangle core axioms alone allow rank 10.",
+    "target_status": "UNKNOWN",
+    "upper_bound_improved_below_4158": false
+  },
+  "fixed_triangle_rank_bridge": {
+    "conditional_closing_lemma": "If every full endpoint forced some base triangle with rank_F3(P_T-I)>=12, then r3>=13 and the surviving rank-twelve ternary boundary would be excluded.",
+    "each_cross_block_degree": 2,
+    "global_ceiling": "rank_F3(P-I)<=rank_F3(C+J)=r3-1",
+    "identity": "rank_F3((C+J)[triangles meeting T])=rank_F3(P-I)",
+    "local_triangle_set_size": 19,
+    "matrix": "P-I over F_3",
+    "quotient_degree": 4,
+    "quotient_partition": [
+      6,
+      6,
+      6
+    ],
+    "quotient_vertices": 18
+  },
+  "format": "wave38-higher-order-v1",
+  "frozen_commit": "3014f3b1c010cdde1687b8878d4ec58d2bb90f03",
+  "frozen_local_positive_control": {
+    "adjacency_rows_hex": [
+      "800080002",
+      "80001001",
+      "1004008",
+      "100020004",
+      "200002020",
+      "2800010",
+      "40100080",
+      "400010040",
+      "4040200",
+      "10400100",
+      "20200800",
+      "8008400",
+      "2002002",
+      "400001010",
+      "200008004",
+      "20004800",
+      "1020080",
+      "800010008",
+      "8080100",
+      "40040001",
+      "80200040",
+      "4100400",
+      "100800200",
+      "10400020",
+      "2010004",
+      "1001020",
+      "8200100",
+      "4040800",
+      "20800200",
+      "10008400",
+      "80080040",
+      "40100002",
+      "200400008",
+      "100004010",
+      "800002080",
+      "400020001"
+    ],
+    "adjacency_sha256_upper_triangle_bits": "b5a5d573b5eb1beba106e5735d5f4e2f71c8b23b036e0e44a1014718f0570984",
+    "component_partition_in_fibre_units": [
+      12
+    ],
+    "connected": true,
+    "degree": 3,
+    "edges": 54,
+    "individual_block_census": {
+      "allowed_pairs_per_fibre": [
+        60,
+        60,
+        60
+      ],
+      "induced_matching_survivors": 183596,
+      "mixed_equation_survivors": 152399,
+      "mixed_survivors_by_internal_X_edges": {
+        "0": 52517,
+        "1": 76540,
+        "2": 22610,
+        "3": 732
+      }
+    },
+    "local_19_triangle_centered_gram_rank_F3": 10,
+    "pair_codegree_histogram": {
+      "cross_fibre_nonedge:0": 296,
+      "cross_fibre_nonedge:1": 92,
+      "cross_fibre_nonedge:2": 8,
+      "edge:0": 54,
+      "same_fibre_nonedge:0": 180
+    },
+    "quotient_P_degree": 4,
+    "quotient_P_minus_I_rank_F3": 10,
+    "quotient_bipartite_block_degree": 2,
+    "required_BBt_entry_minimum": 0,
+    "required_BBt_rational_rank": 34,
+    "triangle_free": true,
+    "vertices": 36,
+    "within_fibre_matchings": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ]
+    ]
+  },
+  "limitations": [
+    "The signed four-cycle imbalance is a necessary count, not an endpoint contradiction.",
+    "The ternary centering and local rank bridge are discovery-side derivations pending independent verification.",
+    "The frozen 36-vertex core is not a 60-column B, compatible H, 99-vertex graph, or endpoint construction.",
+    "The individual block census does not impose simultaneous column compatibility.",
+    "No endpoint exclusion or upper-bound improvement is claimed."
+  ],
+  "scope": "Conditional prism-free endpoint n3=4158; exact signed four-cycle count and characteristic-three vertex-clique/local rank consequences",
+  "signed_higher_order_counts": {
+    "balanced_minus_unbalanced_support_four_cycles": 200277,
+    "balanced_minus_unbalanced_support_triangles": 34034,
+    "nonsimple_closed_signed_walks_length_four": 2120580,
+    "trace_S_cubed": 204204,
+    "trace_S_fourth": 3722796
+  },
+  "ternary_vertex_clique_centering": {
+    "centered_gram": "D=C+J over F_3",
+    "centered_gram_rank": "rank_F3(D)=r3-1",
+    "centered_row_norm": 0,
+    "centered_rows": "z_T=v_T-w",
+    "centered_rows_orthogonal_to_w": true,
+    "common_inner_product_with_every_v_T": 2,
+    "common_vector_norm": 2,
+    "factorization": "C=V H V^T over F_3",
+    "reduced_MNt_values": {
+      "-2": 2,
+      "1": 2,
+      "4": 2
+    },
+    "seven_clique_gram_rank": 6,
+    "vertex_clique_relation": "sum_{T contains x} z_T=0 for every graph vertex x",
+    "vertex_clique_sum": "w_x=sum_{T contains x} v_T is independent of x"
+  }
+}

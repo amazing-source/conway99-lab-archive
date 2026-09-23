@@ -1,0 +1,149 @@
+{
+  "claim_label": "DERIVED_DISCOVERY_ONLY",
+  "conditional_scope": "hypothetical srg(99,14,1,2)",
+  "equivalent_integral_orthogonal_matrix": {
+    "adjacency_recovery": "A=(T+2J-9I)/18",
+    "definition": "T=9S+7J=18A-2J+9I",
+    "determinant": "63^99",
+    "diagonal": 7,
+    "off_diagonal_alphabet": [
+      -2,
+      16
+    ],
+    "order": 99,
+    "row_sum": 63,
+    "spectrum": {
+      "-63": 44,
+      "63": 55
+    },
+    "square": "T^2=3969I"
+  },
+  "smith_form": {
+    "closed_form": "diag(1,9^(r-1),63^(99-2r),441^(r-1),3969)",
+    "profiles": [
+      {
+        "factor_count": 99,
+        "invariant_factor_counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 27,
+          "63": 43,
+          "9": 27
+        },
+        "product": "63^99",
+        "rank_f7": 28,
+        "reciprocal_pairs_product": 3969
+      },
+      {
+        "factor_count": 99,
+        "invariant_factor_counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 29,
+          "63": 39,
+          "9": 29
+        },
+        "product": "63^99",
+        "rank_f7": 30,
+        "reciprocal_pairs_product": 3969
+      },
+      {
+        "factor_count": 99,
+        "invariant_factor_counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 31,
+          "63": 35,
+          "9": 31
+        },
+        "product": "63^99",
+        "rank_f7": 32,
+        "reciprocal_pairs_product": 3969
+      },
+      {
+        "factor_count": 99,
+        "invariant_factor_counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 33,
+          "63": 31,
+          "9": 33
+        },
+        "product": "63^99",
+        "rank_f7": 34,
+        "reciprocal_pairs_product": 3969
+      },
+      {
+        "factor_count": 99,
+        "invariant_factor_counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 35,
+          "63": 27,
+          "9": 35
+        },
+        "product": "63^99",
+        "rank_f7": 36,
+        "reciprocal_pairs_product": 3969
+      },
+      {
+        "factor_count": 99,
+        "invariant_factor_counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 37,
+          "63": 23,
+          "9": 37
+        },
+        "product": "63^99",
+        "rank_f7": 38,
+        "reciprocal_pairs_product": 3969
+      },
+      {
+        "factor_count": 99,
+        "invariant_factor_counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 39,
+          "63": 19,
+          "9": 39
+        },
+        "product": "63^99",
+        "rank_f7": 40,
+        "reciprocal_pairs_product": 3969
+      },
+      {
+        "factor_count": 99,
+        "invariant_factor_counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 41,
+          "63": 15,
+          "9": 41
+        },
+        "product": "63^99",
+        "rank_f7": 42,
+        "reciprocal_pairs_product": 3969
+      }
+    ],
+    "seven_primary_exponents": "0^r,1^(99-2r),2^r",
+    "three_primary_exponents": "0^1,2^97,4^1"
+  },
+  "status": {
+    "contradiction_found": false,
+    "matrix_constructed": false,
+    "novelty": "UNKNOWN",
+    "rank_rows_excluded": 0,
+    "resolution": "UNKNOWN",
+    "surviving_ranks": [
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42
+    ]
+  }
+}

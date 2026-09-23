@@ -1,0 +1,224 @@
+{
+  "claim_label": "VERIFIED_SCOPED_REDUCTION",
+  "delta": {
+    "active_clause_count": 33778,
+    "active_clause_stream_sha256": "fc8925756861e850b28bfb9e18844dd75c525b75f4061f70089df696843ad903",
+    "active_empty_count": 0,
+    "active_unit_count": 0,
+    "active_width_distribution": {
+      "3": 91,
+      "4": 580,
+      "5": 33107
+    },
+    "closure_satisfied_raw_clauses": 31154,
+    "first_active_clauses": [
+      [
+        13,
+        178,
+        335,
+        337,
+        1003
+      ],
+      [
+        13,
+        178,
+        413,
+        415,
+        1003
+      ],
+      [
+        13,
+        178,
+        490,
+        492,
+        1003
+      ],
+      [
+        13,
+        178,
+        566,
+        568,
+        1003
+      ],
+      [
+        13,
+        178,
+        641,
+        643,
+        1003
+      ],
+      [
+        13,
+        178,
+        715,
+        717,
+        1003
+      ],
+      [
+        13,
+        178,
+        788,
+        790,
+        1003
+      ],
+      [
+        13,
+        178,
+        860,
+        862,
+        1003
+      ],
+      [
+        13,
+        178,
+        1003
+      ],
+      [
+        13,
+        179,
+        256,
+        259,
+        1004
+      ]
+    ],
+    "last_active_clauses": [
+      [
+        245,
+        871,
+        929,
+        1774
+      ],
+      [
+        246,
+        267,
+        326,
+        1775
+      ],
+      [
+        246,
+        346,
+        405,
+        1775
+      ],
+      [
+        246,
+        424,
+        483,
+        1775
+      ],
+      [
+        246,
+        501,
+        560,
+        1775
+      ],
+      [
+        246,
+        577,
+        636,
+        1775
+      ],
+      [
+        246,
+        652,
+        711,
+        1775
+      ],
+      [
+        246,
+        726,
+        785,
+        1775
+      ],
+      [
+        246,
+        799,
+        858,
+        1775
+      ],
+      [
+        246,
+        871,
+        930,
+        1775
+      ]
+    ],
+    "raw_clause_count": 64932,
+    "raw_clause_stream_sha256": "e82aaa6b6f9cad3d27dbfb36069446a62aafbb2629fabc2a8492d243c1320635",
+    "raw_width_distribution": {
+      "3": 132,
+      "5": 64800
+    },
+    "triangle_closing_variable": 2,
+    "triangle_description": [
+      "root coordinate 0",
+      "residual label (0,2)",
+      "residual label (0,4)"
+    ],
+    "triangle_full_vertices_zero_based": [
+      1,
+      15,
+      17
+    ]
+  },
+  "format": "wave42-branch15-triangle-delta-independent-v1",
+  "limitations": [
+    "The independently checked delta strengthens only refined branch 15.",
+    "No active unit or empty clause is produced.",
+    "A stronger formula is not a SAT or UNSAT certificate.",
+    "The endpoint and Conway-99 remain UNKNOWN."
+  ],
+  "propagation": {
+    "assignment_stream_sha256": "6ebbac8634aae136a8a7d9ce4bd1c8c2423700ffdf44138294c6b6c8c32fec2e",
+    "forced_primary_variables": 174,
+    "forced_variables": 830,
+    "negative_primary_variables": 167,
+    "passes": [
+      {
+        "assignments_after": 747,
+        "assignments_before": 0,
+        "constraints_scanned": 574615,
+        "new_assignments": 747,
+        "pass": 1
+      },
+      {
+        "assignments_after": 830,
+        "assignments_before": 747,
+        "constraints_scanned": 574615,
+        "new_assignments": 83,
+        "pass": 2
+      },
+      {
+        "assignments_after": 830,
+        "assignments_before": 830,
+        "constraints_scanned": 574615,
+        "new_assignments": 0,
+        "pass": 3
+      }
+    ],
+    "positive_primary_variables": 7,
+    "x2_derivation": {
+      "source_bound": 1,
+      "source_line": 286004,
+      "source_line_sha256": "dbe041511085ba55c17be80495ef443dbbe3d3eee2ce42e1f07865d8041d7da5",
+      "source_term_count": 1,
+      "value": true
+    }
+  },
+  "result": {
+    "branch_15_closed": false,
+    "conway_99": "UNKNOWN",
+    "endpoint_cases_closed": 0,
+    "endpoint_cases_total": 33,
+    "endpoint_n3_4158": "UNKNOWN"
+  },
+  "role": "verifier",
+  "scope": "one additional fixed-triangle prism-clause family inside refined endpoint branch 15, conditional on n3=4158",
+  "source": {
+    "constraints": 574615,
+    "gzip_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+    "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb.gz",
+    "raw_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5",
+    "variables": 289338
+  }
+}

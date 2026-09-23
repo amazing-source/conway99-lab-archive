@@ -1,0 +1,25 @@
+role: verifier
+date_utc: 2026-07-27T22:35:24Z
+git_commit: 6dba25f93ba8b0375a6d7057eac4c83e58934fb4
+claim_label: VERIFIED
+scope: finite rooted transition/design census, explicit block-only integer witness, exact rational linear-master control, and residual-codegree closure formula
+inputs:
+  attempts/wave64-rooted-transition-design/package-manifest.sha256: b3ab03ee16ea80fbda0e4279090a48174797722843e17b890c2aba509b01ff74
+  attempts/wave64-rooted-transition-design/block-witness.json: e13eb2deb05f4ee001ed65c2b17cd92432f7c1841e59730b9409addf0e11626c
+  attempts/wave64-rooted-transition-design/fractional-control.json: 5578fc8fb3aec3766be20562ec8838f0a7a95f20c3bb6db1fddedee7b6e09198
+  attempts/wave64-rooted-transition-design/derivation.md: b5ee1b5ed14aaf41122870ad606b3f5b1d0e0363b9cd5f822bbbca7c875f2f4f
+  verification/wave64-rooted-transition-design/preinspection.sha256: 4ccde6a3e4882846ad7dbd0f76826b6d569ba53028fcfa648a75e4b02a14aa0c
+method: independent definition-first enumeration, exact integer witness checks, Fraction arithmetic, pair-class closure audit, manifest validation, mutation tests, and deterministic replay
+command: |
+  .venv\Scripts\python verification\wave64-rooted-transition-design\verify_wave64.py
+  .venv\Scripts\python -m unittest verification\wave64-rooted-transition-design\test_verifier.py -v
+outputs:
+  verification/wave64-rooted-transition-design/independent-result.json: 909d09ab806cebe90127675c3771e47b47b53abbf5553bf66648fe6c53dfcdc6
+  verification/wave64-rooted-transition-design/verification-report.md: dcb695a4360aa155c71d6bc443148001aed0f38a0e5a55f5388230eb2f9bd188
+  verification/wave64-rooted-transition-design/test-results.txt: 19bdf3e86843ea0f23be83bda697296f1fe10624508c1f430ad285cd28f6e211
+limitations:
+  - the explicit integral witness satisfies only the block master and is not a graph
+  - no integral stronger-master witness or complete residual-codegree candidate exists in the package
+  - the closure rows complete the strongly regular graph equations but do not independently forbid prisms away from the root
+  - numerical infeasibility and bounded nonhit solver statuses were not promoted
+  - endpoint n3=4158, Conway-99, and novelty remain UNKNOWN

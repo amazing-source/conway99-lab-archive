@@ -1,0 +1,34 @@
+role: proof_a
+date_utc: 2026-07-29T00:07:50Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Under conditional Wave181 equality, pairwise root-support intersections
+  at most two and the conditional weight-four dual bound B4>=4182.
+inputs:
+  - attempts/wave179-global-transversal-circuits/package-manifest.sha256
+  - verification/wave179-global-transversal-circuits/package-manifest.sha256
+  - attempts/wave183-root-support-girth/package-manifest.sha256
+  - verification/wave183-root-support-girth-verifier/package-manifest.sha256
+method: >-
+  Exact nonedge-root uniqueness, triangle-free support intersection,
+  edge-root circuit injection, and a modulo-five multiplicity argument.
+  No graph, code, SAT, configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave184-root-support-intersections\exact_check.py --verify
+  attempts\wave184-root-support-intersections\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave184-root-support-intersections\test_exact_check.py
+outputs:
+  - attempts/wave184-root-support-intersections/README.md
+  - attempts/wave184-root-support-intersections/derivation.md
+  - attempts/wave184-root-support-intersections/failed-routes.md
+  - attempts/wave184-root-support-intersections/protocol.md
+  - attempts/wave184-root-support-intersections/exact_check.py
+  - attempts/wave184-root-support-intersections/exact-results.json
+  - attempts/wave184-root-support-intersections/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - No incompatible upper bound on B4 is known.
+  - Equality Q=2079, rank 11, the endpoint, and Conway-99 remain UNKNOWN.

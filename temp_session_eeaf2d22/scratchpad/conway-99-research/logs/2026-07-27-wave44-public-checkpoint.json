@@ -1,0 +1,121 @@
+{
+  "branch": "codex/wave39-rank-proof-checkpoint",
+  "conditional_endpoint_rank": {
+    "arithmetic_rank_pairs": 281,
+    "equivalent_rank27_consequence": "an induced triangular prism exists, hence n3<=4155",
+    "previous_arithmetic_rank_pairs": 297,
+    "statement": "n3=4158 implies rank_F7(M)>=28",
+    "status": "VERIFIED"
+  },
+  "date_utc": "2026-07-27",
+  "format": "conway99-wave44-public-checkpoint-v1",
+  "primary_artifacts": [
+    {
+      "path": "attempts/wave43-rank28-motif/exact-results.json",
+      "sha256": "8878b40898ba9577ef01fb51ab5631632fb0e6bca3394c594b9c399d51385230"
+    },
+    {
+      "path": "attempts/wave43-type33-rank2/exact-results.json",
+      "sha256": "f9f023a7f5da0b51df1f825c83a2405de16a6e4d5245965332df4ace46e8bd8d"
+    },
+    {
+      "path": "verification/wave43-rank28/independent-results.json",
+      "sha256": "4e6bc6a04fb65b6dd2a873c9b446d305d65aaca46fecf8703da2886aa1859025"
+    },
+    {
+      "path": "verification/wave43-rank28/comparison.json",
+      "sha256": "3cc27ac01281d47c238748bda30602fc6fcbe38c19ae48ae073c0f47df5a1f43"
+    },
+    {
+      "path": "attempts/wave43-all-rank33-lifts/exact-results.json",
+      "sha256": "31e2e5d767c02f9e520f33a980584e2ae24df8a4fc1bbd7b381797209b97e198"
+    },
+    {
+      "path": "verification/wave43-all-rank33-lifts/independent-results.json",
+      "sha256": "8d8482f30e456b06104eee6c0844452461f42c72897cb89dcdd13d2ae9387667"
+    },
+    {
+      "path": "verification/wave43-branch15-two-triangle/independent-results.json",
+      "sha256": "564a8b390b083b0f69361506933c67a566245b3961eec8e2e0649724235be7bc"
+    },
+    {
+      "path": "attempts/wave43-seven-deck-endpoint/exact-results.json",
+      "sha256": "06b498a736a511a7d6f5912bd4686e5d4eb30f4041477e3ee9cbc1704f1757c8"
+    },
+    {
+      "path": "verification/wave43-seven-deck-endpoint/independent-result.json",
+      "sha256": "e38f369d338fada4a561d48019f306511961dd1fd7816e54a12a9ecb09e69f3b"
+    },
+    {
+      "path": "attempts/wave44-rooted-flags/row-system.json",
+      "sha256": "fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722"
+    },
+    {
+      "path": "attempts/wave44-rooted-flags/rooted-witness.json",
+      "sha256": "9be153b2487c3e07e20bffeb7ee6c890e69caa6e8d6b6e2936fbc5d8927bd5b9"
+    },
+    {
+      "path": "verification/wave44-rooted-flags/independent-results.json",
+      "sha256": "545ca76fed3f45aabc21ec2eeec291cc2eb93ab78346b8aaa213f751c6fa29c7"
+    },
+    {
+      "path": "verification/wave44-rooted-flags/comparison.json",
+      "sha256": "6d4b8370d51a8a8dac979087b4c7ee173d9852a8e255e46715baaf683afe910b"
+    }
+  ],
+  "publication_classification": "EXPLORATORY_VERIFIED_CONDITIONAL_THEOREM_CHECKPOINT",
+  "research_base_commit": "e28f90464d00b98d37672b0b2b23dba15399a6f2",
+  "scoped_results": {
+    "all_rank33_lifts": {
+      "excluded": 0,
+      "lift_count": 264,
+      "status": "VERIFIED_SCOPED"
+    },
+    "branch15_two_triangle": {
+      "active_clauses": 34340,
+      "endpoint_cases_closed": 0,
+      "raw_clauses": 40800,
+      "status": "VERIFIED_SCOPED"
+    },
+    "joint_completion": {
+      "cadical": "UNKNOWN",
+      "candidate_variables": 45032,
+      "milp": "UNKNOWN",
+      "status": "DERIVED_FORMULATION_ONLY"
+    },
+    "rooted_order_seven": {
+      "exact_rows": 170,
+      "h11": 16632,
+      "scipy_free_milp_status": "FALSE_INFEASIBLE_REFUTED",
+      "status": "VERIFIED_SCOPED_EXACT_FEASIBLE",
+      "support_size": 91,
+      "variables": 209
+    },
+    "unrooted_order_seven": {
+      "equations": 81,
+      "seven_classes": 208,
+      "status": "VERIFIED_SCOPED_EXACT_FEASIBLE",
+      "support_size": 99
+    }
+  },
+  "status_wall": {
+    "endpoint_n3_4158": "UNKNOWN",
+    "endpoint_proof_coverage": "0/33",
+    "general_upper_bound": "n3<=4158",
+    "graph_certificate": null,
+    "nonexistence_certificate": null,
+    "novelty": "UNKNOWN",
+    "priority": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "target": "UNKNOWN",
+    "upper_bound_improved_in_general": false
+  },
+  "target": "existence of srg(99,14,1,2)",
+  "validation": {
+    "discovery_tests_passed": 53,
+    "independent_tests_passed": 43,
+    "manifest_entries": 132,
+    "package_manifests": 12,
+    "total_tests_passed": 96
+  }
+}

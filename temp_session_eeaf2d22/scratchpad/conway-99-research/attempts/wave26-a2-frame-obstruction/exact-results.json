@@ -1,0 +1,297 @@
+{
+  "A2_arithmetic": {
+    "form": [
+      [
+        2,
+        -1
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "mod_3_values_of_a2_minus_ab_plus_b2": [
+      0,
+      1
+    ],
+    "norm_formula": "2*(a^2-a*b+b^2)",
+    "norm_four_absent_mod_3": true,
+    "norm_four_vectors": [],
+    "norm_two_vectors": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "oriented_root_count": 6,
+    "search_box_complete_because": "q(a,b)-(a^2+b^2)=(a-b)^2, so q<=4 implies |a|<=2 and |b|<=2"
+  },
+  "basis_invariance": {
+    "basis_change": {
+      "M_unchanged": true,
+      "Y_dimensions": [
+        21,
+        2
+      ],
+      "isometry_matrix_P": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "lattice_basis_matrix_A_equals_P_inverse_transpose": [
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "second_moment_covariant": true,
+      "transformed_T": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "general_identities": {
+      "H": "Y^T*Y",
+      "M": "Y*T*Y^T",
+      "T": "21*H^-1",
+      "second_moment": "Y^T*Y=21*T^-1"
+    }
+  },
+  "conclusion": {
+    "all_h9_lattices_excluded": false,
+    "general_necessary_result": "An actual projector frame cannot have a scaled-dual form with an orthogonal A2 summand.",
+    "h9_arithmetic_row_excluded": false,
+    "n3_708_excluded": false,
+    "novelty_status": "UNKNOWN",
+    "target_status": "UNKNOWN",
+    "wave24_exact_survivor_arbitrary_primitive_embedding": "UNKNOWN",
+    "wave24_exact_survivor_projector_origin": "REFUTED"
+  },
+  "frame_obstruction": {
+    "A2_block_energy": 42,
+    "A2_block_second_moment": "sum_i a_i*a_i^T=21*A2^-1",
+    "actual_projector_off_diagonals": [
+      -2,
+      -1,
+      0,
+      1
+    ],
+    "contradiction": true,
+    "contradiction_gap": 3,
+    "energy_trace_identity": "sum_i q_A2(a_i)=21*rank(A2)=42",
+    "fiber_capacity_per_oriented_root": 3,
+    "fiber_sum_norm_upper_bounds": {
+      "1": 2,
+      "2": 2,
+      "3": 0,
+      "4": -4,
+      "5": -10,
+      "6": -18,
+      "7": -28
+    },
+    "forced_A2_incident_rows": 21,
+    "frame_identity": "sum_i x_i*x_i^T=21*S^-1",
+    "oriented_A2_root_count": 6,
+    "possible_A2_component_norms_for_a_norm_four_row": [
+      0,
+      2
+    ],
+    "same_root_fiber_complement_inner_products": [
+      -2,
+      -1
+    ],
+    "total_A2_incident_row_capacity": 18
+  },
+  "frozen_inputs": {
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": {
+      "actual_sha256": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+      "expected_sha256": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+      "matches": true
+    },
+    "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md": {
+      "actual_sha256": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+      "expected_sha256": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+      "matches": true
+    },
+    "verification/wave24-n3-708-index/survivor-certificate.json": {
+      "actual_sha256": "a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2",
+      "expected_sha256": "a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2",
+      "matches": true
+    },
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": {
+      "actual_sha256": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+      "expected_sha256": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+      "matches": true
+    }
+  },
+  "frozen_survivor_structure": {
+    "A2_block_starts_zero_based": [
+      40,
+      42
+    ],
+    "orthogonal_A2_block_count": 2,
+    "rank": 44,
+    "scaled_dual_form": "E8^5 orthogonal_sum A2^2"
+  },
+  "hostile_controls": {
+    "allow_plus_two": {
+      "Gram": [
+        [
+          4,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          4,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          4
+        ]
+      ],
+      "construction": "One fixed A2 root plus four mutually orthogonal norm-two simple roots in four distinct E8 blocks.",
+      "diagonal": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "fiber_size": 4,
+      "off_diagonal_values": [
+        2
+      ],
+      "scope": "Local hostile control, not a complete projector frame.",
+      "valid_for_actual_off_diagonals": false,
+      "valid_if_plus_two_is_allowed": true
+    },
+    "omit_frame_identity": {
+      "all_local_row_constraints_hold": true,
+      "central_A2_energy": 36,
+      "central_A2_second_moment": [
+        [
+          12,
+          6
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "construction": "Each of the six oriented roots in the first A2 block is paired with a three-root, pairwise-inner-product-minus-one triple in one distinct orthogonal complement block.",
+      "diagonal": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "frame_identity_holds_on_central_A2": false,
+      "off_diagonal_values": [
+        -2,
+        -1,
+        1
+      ],
+      "required_frame_second_moment": [
+        [
+          14,
+          7
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "row_count": 18,
+      "scope": "Local 18-row hostile configuration only. It proves that the entry and norm constraints do not replace the frame identity."
+    }
+  },
+  "projector_package": {
+    "ambient_rows": 231,
+    "frame_constant": 21,
+    "lattice_rank": 44,
+    "off_diagonal_values": [
+      -2,
+      -1,
+      0,
+      1
+    ],
+    "row_norm": 4
+  },
+  "public_base_commit": "1f22323a2805e3e24f7848d53f2f4813e236fae9",
+  "row_meeting_both_A2_blocks": {
+    "counting_rule": "The row is counted once in each summand's separate energy identity; relative to either block, the other root is the norm-two complement vector.",
+    "first_A2_component": [
+      1,
+      0
+    ],
+    "first_A2_component_norm": 2,
+    "full_row_norm": 4,
+    "second_A2_component": [
+      1,
+      0
+    ],
+    "second_A2_component_norm": 2
+  },
+  "scope": "Necessary projector-frame obstruction for scaled-dual forms with an orthogonal A2 summand.",
+  "status": "DERIVED_EXACT_REPLAY_PENDING_INDEPENDENT_VERIFIER"
+}

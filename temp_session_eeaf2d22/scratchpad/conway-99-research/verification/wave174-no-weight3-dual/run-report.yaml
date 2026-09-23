@@ -1,0 +1,35 @@
+role: verifier
+date_utc: 2026-07-28T21:38:55Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Independent reconstruction of the claim that, at the prism-free endpoint
+  P=0, the dual of the centered ternary triangle-block code contains no
+  word of weight three.
+inputs:
+  - AGENTS.md
+  - attempts/wave174-no-weight3-dual/derivation.md
+  - attempts/wave174-no-weight3-dual/protocol.md
+  - verification/wave171-pq-centered-code/verification-report.md
+  - verification/wave172-weight3-dual-rigidity/verification-report.md
+method: >-
+  Clean-room finite-field incidence algebra, SRG double counting, exact
+  five-cell edge accounting, cell-constant spectral quadratic forms,
+  integer convexity, and equality-case graph analysis. Discovery code was
+  not imported or executed.
+command: >-
+  Read-only exact arithmetic using an independently written inline script
+  for the cell Gram forms and hand reconstruction of all combinatorial
+  steps.
+outputs:
+  - verification/wave174-no-weight3-dual/README.md
+  - verification/wave174-no-weight3-dual/verification-report.md
+  - verification/wave174-no-weight3-dual/protocol.md
+  - verification/wave174-no-weight3-dual/input-freeze.sha256
+limitations:
+  - The first draft omitted c=18; the repaired discovery package includes
+    the verifier's separate exact spectral exclusion.
+  - The theorem assumes an actual endpoint and the verified Wave172
+    classification.
+  - No endpoint exclusion, strict n3 improvement, graph, or Conway-99
+    resolution follows.

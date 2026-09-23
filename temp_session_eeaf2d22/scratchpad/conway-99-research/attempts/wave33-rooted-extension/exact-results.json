@@ -1,0 +1,326 @@
+{
+  "O_Q_design": {
+    "B_transpose_B": "12I_15+2J_15",
+    "column_weight": 14,
+    "design": "simple 2-(15,3,2) with 70 blocks",
+    "each_Q_neighborhood_label_graph": {
+      "bipartite": true,
+      "cycle_types": [
+        [
+          14
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          6,
+          4,
+          4
+        ]
+      ],
+      "degree": 2,
+      "simple": true,
+      "vertices": "P union R"
+    },
+    "matrix_dimensions": [
+      70,
+      15
+    ],
+    "pairwise_column_intersection": 2,
+    "rank_B": 15,
+    "row_weight": 3,
+    "scaled_centered_neighborhood_vectors": {
+      "conditional_D_action": "D*w_q=-w_q",
+      "definition": "w_q=5*1_{N_O(q)}-1_O",
+      "gram_diagonal": 280,
+      "gram_matrix": "300I_15-20J_15",
+      "gram_off_diagonal": -20,
+      "span_dimension": 14
+    },
+    "simple_block_argument": "two repeated O-neighborhood triples would give the two O vertices at least three common Q neighbors"
+  },
+  "claim_label": "DERIVED_VERIFICATION_PENDING",
+  "equitable_partition": {
+    "Q_is_independent": true,
+    "cell_names": [
+      "S_signed_support",
+      "O_support_adjacent",
+      "Q_support_free"
+    ],
+    "cell_sizes": [
+      14,
+      70,
+      15
+    ],
+    "hostile_mu_3": {
+      "available_total_degree": 14,
+      "implied_Q_to_O_degree": 21,
+      "passes": false
+    },
+    "quotient": [
+      [
+        4,
+        10,
+        0
+      ],
+      [
+        2,
+        9,
+        3
+      ],
+      [
+        0,
+        14,
+        0
+      ]
+    ],
+    "quotient_characteristic_polynomial": "(x-14)(x-3)(x+4)",
+    "quotient_spectrum": {
+      "-4": 1,
+      "14": 1,
+      "3": 1
+    },
+    "two_walk_arithmetic": {
+      "O_to_S": {
+        "contribution_per_O_neighbor": 2,
+        "degree_into_O": 9,
+        "degree_into_Q": 3,
+        "support_neighbor_contribution": 8,
+        "target": 26
+      },
+      "Q_to_S": {
+        "contribution_per_O_neighbor": 2,
+        "degree_into_O": 14,
+        "target": 28
+      }
+    }
+  },
+  "extension_criterion": {
+    "block_equations": [
+      "A_S^2+F F^T=12I-A_S+2J",
+      "A_S F+F D=2J-F",
+      "F B=2J",
+      "F^T F+D^2+B B^T=12I-D+2J",
+      "D B=2J-B",
+      "B^T B=12I+2J"
+    ],
+    "finite_search_space": {
+      "B_binary_variables": 1050,
+      "D_binary_upper_triangle_variables": 2415,
+      "automorphism_assumption": "none",
+      "total_raw_binary_variables": 3465
+    },
+    "fixed_matrices": {
+      "A_S_dimensions": [
+        14,
+        14
+      ],
+      "F_column_description": "one column per support cross-edge and two columns per support cross-nonedge",
+      "F_dimensions": [
+        14,
+        70
+      ]
+    },
+    "hostile_partial_control": {
+      "B_is_abstract_two_design": true,
+      "D_degree_histogram": {
+        "0": 28,
+        "2": 42
+      },
+      "D_edge_count": 42,
+      "criterion_diagnostics": {
+        "D_symmetric_zero_diagonal": true,
+        "all_blocks_pass": false,
+        "assembled_global_identity_passes": false,
+        "block_passes": {
+          "OO": false,
+          "OQ": false,
+          "QQ": true,
+          "SO": false,
+          "SQ": false,
+          "SS_fixed": true
+        },
+        "shape_and_binary": true
+      },
+      "status": "REJECTED_BY_COMPLETE_CRITERION"
+    },
+    "necessity": "Every rooted extension necessarily, after relabeling only the already-forced Fano support and its O labels, supplies D and B satisfying all six blocks.",
+    "sufficiency": "Binary D,B with D symmetric and zero-diagonal satisfying all six blocks assemble to a simple 99-vertex adjacency matrix with A^2=12I-A+2J; its diagonal gives degree 14 and its off-diagonal entries give lambda=1, mu=2.",
+    "unknown_binary_matrices": {
+      "B": "70x15 O-Q incidence",
+      "D": "70x70 symmetric zero-diagonal O adjacency"
+    }
+  },
+  "fixed_support": {
+    "O_label_sha256": "d81d492f9af982b0bdcbacce0ee1976fdc8fb177d9d86bb21c90d4e55bdafd73",
+    "O_label_types": {
+      "support_edge_completion": 28,
+      "support_nonedge_completion": 42
+    },
+    "fixed_SS_block_identity": true,
+    "rank_F": 13,
+    "rank_FFt": 13,
+    "signed_minus_four_vector_in_kernel_Ft": true,
+    "support_adjacency_sha256": "e5643d35086a2e05ceb0b5934bd673e0423d9f3b78bdfd6f62df22f7b9f75b88",
+    "support_spectrum": {
+      "-4": 1,
+      "-sqrt(2)": 6,
+      "4": 1,
+      "sqrt(2)": 6
+    },
+    "support_to_O_sha256": "10aecec0575d5a14157ca9158c5536e72e368c3100e623dbb881a9c0b4b0fb99"
+  },
+  "forced_O_graph_spectrum": {
+    "characteristic_polynomial": "(x-9)(x+1)^14(x^2+2x-1)^6(x-3)^27(x+4)^16",
+    "connected": true,
+    "derivation_decomposition": {
+      "centered_Q_neighborhood_space": {
+        "D_eigenvalue": "-1",
+        "dimension": 14
+      },
+      "constant_O_space": {
+        "D_eigenvalue": "9",
+        "dimension": 1
+      },
+      "joint_kernel_of_F_and_B_transpose": {
+        "D_eigenvalue_multiplicities": {
+          "-4": 16,
+          "3": 27
+        },
+        "dimension": 43,
+        "polynomial": "D^2+D-12I=0"
+      },
+      "nonconstant_support_incidence_space": {
+        "D_eigenvalues": [
+          "-1-sqrt(2)",
+          "-1+sqrt(2)"
+        ],
+        "dimensions": [
+          6,
+          6
+        ]
+      }
+    },
+    "determinant": "2^32*3^29",
+    "edge_count": 315,
+    "four_cycle_count": 294,
+    "spectral_moments": {
+      "0": 70,
+      "1": 0,
+      "2": 630,
+      "3": 336,
+      "4": 13062
+    },
+    "spectrum": {
+      "-1": 14,
+      "-1+sqrt(2)": 6,
+      "-1-sqrt(2)": 6,
+      "-4": 16,
+      "3": 27,
+      "9": 1
+    },
+    "triangle_count": 56
+  },
+  "frozen_inputs": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "agents/2026-07-24-wave32-rooted-proof.md": "04990231e3b42cded363e39ffea771556e52ec66fe03a97164ae99f40ddbefe0",
+    "attempts/wave32-rooted-vector/exact-results.json": "9fa31703b5c4721476b1b88f217d7455615c0d92c0d6db7f150abadfc069c2a0",
+    "verification/wave32-rooted-vector/audit.md": "36d83232d82e30205e0aefa30aedff0a517de1edb0adbaa54575ea68d04ce1a5",
+    "verification/wave32-rooted-vector/independent-results.json": "4ed239e997e4485abdab4e26a2e28e2a981b6fff069c4d926ccff3d2241dbe6f",
+    "verification/wave33-continuation-protocol.md": "b98b6bb8228b54b67cd949ee1bf6eb05ebd6ebe74f1cbc9e49b041a55e2d2fe6"
+  },
+  "hostile_design_only_control": {
+    "B_sha256": "dde3d4d8262a88e1de3078ae3fe3ef37087d2f3fed1ab251efe4c924292f81fb",
+    "B_transpose_B_passes": true,
+    "F_B_equals_2J": false,
+    "arbitrary_O_label_order_FB_histogram": {
+      "0": 17,
+      "1": 55,
+      "2": 75,
+      "3": 48,
+      "4": 9,
+      "5": 2,
+      "6": 3,
+      "7": 1
+    },
+    "arbitrary_O_label_order_FB_mismatch_count": 135,
+    "block_count": 70,
+    "blocks_are_distinct": true,
+    "column_weight_histogram": {
+      "14": 15
+    },
+    "construction": "two disjoint PG(3,2) Steiner triple systems",
+    "limitation": "This proves only that the abstract 2-(15,3,2) design condition is consistent; it deliberately fails the fixed support-label coupling and supplies no D.",
+    "pairwise_column_intersections": [
+      2
+    ],
+    "point_permutation": [
+      7,
+      4,
+      9,
+      10,
+      1,
+      14,
+      8,
+      6,
+      5,
+      12,
+      11,
+      2,
+      13,
+      0,
+      3
+    ],
+    "row_weight_histogram": {
+      "3": 70
+    },
+    "status": "HOSTILE_DESIGN_ONLY_NOT_AN_EXTENSION"
+  },
+  "limitations": [
+    "No D,B pair satisfying the criterion is constructed.",
+    "No complete search or infeasibility certificate is supplied.",
+    "The hostile 2-design deliberately fails fixed F-label coupling.",
+    "Projector, lattice, tensor, and Schur conditions beyond graph extension remain additional filters on any passing D,B pair.",
+    "No automorphism is assumed beyond relabeling the forced support."
+  ],
+  "schema_version": 1,
+  "scope": "necessary and sufficient finite block-matrix extension criterion, and necessary partition/design/spectral consequences, conditional on the verified Wave 32 actual-incidence rooted support",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "finite_extension_criterion": "DERIVED_VERIFICATION_PENDING",
+    "full_extension_found": false,
+    "n3_708": "UNKNOWN",
+    "necessary_partition_design_spectrum": "DERIVED_VERIFICATION_PENDING",
+    "novelty": "UNKNOWN",
+    "root_exclusion": "NOT_OBTAINED",
+    "rooted_endpoint": "UNKNOWN"
+  },
+  "triangle_and_edge_census": {
+    "D_edge_partition_by_unique_common_neighbor_cell": {
+      "O": 168,
+      "Q": 105,
+      "S": 42,
+      "total": 315
+    },
+    "explanations": {
+      "O_witnessed": "the remaining D edges have their unique common neighbor inside O and partition three-to-one into D triangles",
+      "Q_witnessed": "each of 15 Q-neighborhoods induces a seven-edge matching in D",
+      "S_witnessed": "the six nonedge-completion O-neighbors at each support vertex form a perfect matching"
+    },
+    "target_graph": {
+      "edge_count": 693,
+      "triangle_count": 231
+    },
+    "target_triangle_partition": {
+      "one_S_two_O": 42,
+      "three_O": 56,
+      "two_O_one_Q": 105,
+      "two_S_one_O": 28
+    }
+  }
+}

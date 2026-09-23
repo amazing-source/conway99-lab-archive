@@ -1,0 +1,48 @@
+role: verifier
+date_utc: 2026-07-29T02:12:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Exact rational Wave187 proof-B hostile relaxation: ordinary MacWilliams
+  nonnegativity and containment, 231 marked composition pairs, complete
+  ternary nonnegativity through total degree six, quadratic type moments
+  and integral triple Gram census, with first failure at complete degree
+  seven.
+inputs:
+  - agents/2026-07-29-wave187-code-geometry-proof-b.md
+  - attempts/wave187-code-geometry-proof-b/exact_check.py
+  - verification/wave171-pq-centered-code/verification-report.md
+  - verification/wave173-complete-enumerator-lift/verification-report.md
+  - verification/wave174-no-weight3-dual/verification-report.md
+  - verification/wave175-polar-cap-boundary/audit.md
+  - agents/2026-07-29-wave186-nonedge-relation-dimension-proof-a.md
+  - verification/wave188-affine-star-word-amplification-verifier/audit.md
+method: >-
+  Clean-room exact Fraction arithmetic, all 232 ordinary ternary
+  Krawtchouk rows, independent cyclotomic complete transform through
+  degree seven, direct projective enumeration of the parabolic quadratic
+  form for canonical complement types, typed factorial moments, and exact
+  triple-census incidence equations. The frozen discovery checker was not
+  imported or executed during derivation. No graph, code, point-set, SAT,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave187-code-geometry-proof-b-verifier\independent_check.py
+  --verify
+  verification\wave187-code-geometry-proof-b-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave187-code-geometry-proof-b-verifier\test_independent_check.py
+outputs:
+  - verification/wave187-code-geometry-proof-b-verifier/README.md
+  - verification/wave187-code-geometry-proof-b-verifier/audit.md
+  - verification/wave187-code-geometry-proof-b-verifier/protocol.md
+  - verification/wave187-code-geometry-proof-b-verifier/independent_check.py
+  - verification/wave187-code-geometry-proof-b-verifier/independent-results.json
+  - verification/wave187-code-geometry-proof-b-verifier/test_independent_check.py
+  - verification/wave187-code-geometry-proof-b-verifier/input-freeze.sha256
+limitations:
+  - The hostile control is rational and is not a linear code or point set.
+  - Complete MacWilliams nonnegativity is certified only through degree six.
+  - The specific sparse control fails at complete degree seven.
+  - No upper bound below 18018, endpoint exclusion, rank-11 exclusion,
+    strict n3 improvement, external novelty, or Conway-99 result follows.

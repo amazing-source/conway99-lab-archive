@@ -1,0 +1,44 @@
+role: verifier
+date_utc: 2026-07-27T19:18:35Z
+git_commit: 7a77446e8f1aa163170ff91e3b5068482603898b
+claim_label: VERIFIED
+scope: >-
+  Clean-room exact rational feasibility replay of the fixed Wave51 relaxation
+  with 170 Wave44 equations, 17 Wave45 cuts, 136 selected Wave47 cuts, and
+  21 selected Wave49 cuts.
+inputs:
+  manifest:
+    path: verification/wave51-rankone-cut-relaxation-independent/input-freeze.sha256
+method: >-
+  Freeze source bytes; replay nested manifests; reconstruct the ordered Wave44
+  equations and all selected cuts without importing the source probe; rebuild
+  the stored rational witness; substitute exactly into every equation, bound,
+  and inequality; and certify active coefficient rank 209 by exact modular
+  elimination.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave51-rankone-cut-relaxation-independent\verify.py --compute
+outputs:
+  result:
+    path: verification/wave51-rankone-cut-relaxation-independent/verification-result.json
+    sha256: 24cd2316c20beabe9ecd4e143eb310f8a200f45e49dda189e12d38bc46de1452
+result:
+  source_effective_preverification_label: CANDIDATE
+  independent_fixed_bundle_label: VERIFIED
+  source_separation_violation_recorded: true
+  wave44_equations_checked: 170
+  rank_one_cuts_checked: 174
+  wave49_reconstruction_checks: 5691
+  witness_support: 136
+  y_h11_over_4: 4158
+  tight_cuts: 66
+  strictly_positive_cuts: 108
+  minimum_positive_slack: 133056
+  maximum_denominator_digits: 272
+  active_constraint_rank: 209
+  fixed_bundle_farkas_contradiction: REFUTED
+limitations:
+  - The witness is rational and aggregate, not integral and not a graph.
+  - Only one fixed 174-cut selection is verified feasible.
+  - The full cut ledger and full PSD system remain UNKNOWN.
+  - Endpoint n3=4158, a strict upper bound, graph construction, and Conway-99 remain UNKNOWN.

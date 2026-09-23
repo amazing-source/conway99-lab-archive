@@ -1,0 +1,28 @@
+role: proof_b
+date_utc: 2026-07-29T05:07:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Audit the four-fiber fixed-center theorem, full exact-three flag pool,
+  global caps F<=1287 and J<=3564, and exact Q>=7029 certificate.
+inputs:
+  - AGENTS.md
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave194-five-thirds-verifier/package-manifest.sha256
+method: >-
+  SRG intersection numbers, local matching fibers, two fixed
+  Hilton--Milner equality templates, pool collision audit, and exact
+  rational coefficient expansion.
+command: >-
+  python -B attempts/wave196-four-fiber-proof-b-audit/exact_check.py
+  --verify attempts/wave196-four-fiber-proof-b-audit/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave196-four-fiber-proof-b-audit/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave196-four-fiber-proof-b-audit.md
+  - attempts/wave196-four-fiber-proof-b-audit/
+limitations:
+  - Proof-B derivation, not verifier promotion.
+  - Conditional on the prism-free rank-11 endpoint.
+  - No graph, code, cover, or flag system is constructed.

@@ -1,0 +1,27 @@
+role: proof_b
+date_utc: "2026-07-23T18:34:27Z"
+git_commit: 74af1fa495971d04c7363ec05aa77ef15857b04a
+claim_label: DERIVED
+scope: "conditional local consequences of n3=705 for A4=M(M o M)M"
+inputs:
+  agents/2026-07-23-wave20-global-schur.md: 64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632
+  attempts/wave20-global-obstruction/exact_check.py: a3cbe6dfe018965043903c368932f89f9fade30cf301ffe3454cd638966d00c8
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+method: "Exact Gram-tensor identities, harmonic cubic Schur kernels, centered PSD minors, endpoint trace congruences, and scalar-relaxation enumeration."
+command: |
+  cd attempts/wave21-local-diagonal
+  python -m unittest -v test_exact_check.py
+  python exact_check.py --output exact-checks.json
+outputs:
+  agents/2026-07-23-wave21-local-diagonal.md: e8b2c37967d4114a9fb0b28a8811c685ce5125cffe148138fe8f5687afcc4081
+  attempts/wave21-local-diagonal/exact_check.py: 04e435579cb21f66620038dc4ee9f3de8033329bf266097ad386aa63344c5105
+  attempts/wave21-local-diagonal/test_exact_check.py: 339c7efb672fe80eb555e9a9ed49f86c3d272f8d2265f56496d7bceec92e6071
+  attempts/wave21-local-diagonal/exact-checks.json: 2d51c827f822183c7c3cfea60e429ae550c2d95270c76f2a5f469371e71b4ce8
+  attempts/wave21-local-diagonal/failed-routes.md: 7acc56503114d69cca8c4287bfe5df3df39289ce5aeb7c75c859c00636b479de
+  attempts/wave21-local-diagonal/failed-runs.md: 5f27558d6cfd1449a1ae61dda0a0f1c104377a26093c5b9b6c5d826a770fe54a
+limitations:
+  - "Discovery-agent derivation; no independent Wave 21 verification."
+  - "The n3=705 endpoint survives."
+  - "Scalar witnesses are not matrix or graph constructions."
+  - "No automorphism, association scheme, or triangle-graph catalog is assumed."
+  - "Target status and literature novelty remain UNKNOWN."

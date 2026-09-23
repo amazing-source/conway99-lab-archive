@@ -1,0 +1,86 @@
+{
+  "center_sizes": {
+    "certificate_budget": 3,
+    "conclusion": "c_x is 12 or 13 at every center",
+    "costs": {
+      "10": {
+        "SF_contribution": 3,
+        "c_x": 10,
+        "combined_cost": 9,
+        "delta_contribution": 6
+      },
+      "11": {
+        "SF_contribution": 2,
+        "c_x": 11,
+        "combined_cost": 5,
+        "delta_contribution": 3
+      },
+      "12": {
+        "SF_contribution": 1,
+        "c_x": 12,
+        "combined_cost": 1,
+        "delta_contribution": 0
+      },
+      "13": {
+        "SF_contribution": 0,
+        "c_x": 13,
+        "combined_cost": 0,
+        "delta_contribution": 0
+      }
+    }
+  },
+  "format": "wave202-post-freeze-source-comparison-v1",
+  "multiplicity_one": {
+    "fibre_identity": "local_term-r=e+h off baseline; on a degree-five baseline it is e+h-1 when h>=1 and e-1 otherwise",
+    "global_conclusion": "r<=SM<=3",
+    "profiles": {
+      "baseline_m1": {
+        "baseline": 1,
+        "degree": 5,
+        "e": 1,
+        "higher_values": 0,
+        "local_term": 1,
+        "m1_values": 1,
+        "margin_over_m1": 0,
+        "selected_values": 1
+      },
+      "baseline_m1_and_m2": {
+        "baseline": 1,
+        "degree": 5,
+        "e": 0,
+        "higher_values": 1,
+        "local_term": 1,
+        "m1_values": 1,
+        "margin_over_m1": 0,
+        "selected_values": 2
+      },
+      "baseline_two_m1": {
+        "baseline": 1,
+        "degree": 5,
+        "e": 1,
+        "higher_values": 0,
+        "local_term": 2,
+        "m1_values": 2,
+        "margin_over_m1": 0,
+        "selected_values": 2
+      },
+      "nonbaseline_m1": {
+        "baseline": 0,
+        "degree": 3,
+        "e": 0,
+        "higher_values": 0,
+        "local_term": 1,
+        "m1_values": 1,
+        "margin_over_m1": 0,
+        "selected_values": 1
+      }
+    }
+  },
+  "two_center": {
+    "cross_center_fibre_multiset_coupling_available": false,
+    "m1_orientation_forces_opposite_occupied": true,
+    "opposite_multiplicity_forced_to_one": false,
+    "parity_obstruction": false
+  },
+  "verdict": "SOURCE_CLAIMS_CORROBORATED_NO_EXCLUSION"
+}

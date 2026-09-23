@@ -1,0 +1,48 @@
+role: proof_a
+date_utc: 2026-07-24T08:20:00Z
+git_commit: f0783b82d9b0260f5461cd68c647f62f646cdd81
+claim_label: DERIVED
+scope: >-
+  Necessary rooted-vector reduction under the full actual vertex-triangle
+  incidence and n3=708 endpoint package: every norm-two root has triangle
+  image (+1)^21,0^189,(-1)^21, transported from a signed seven-plus-seven
+  vertex support inducing the bipartite complement of the Fano incidence
+  graph. Root existence is not excluded.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/2026-07-22-n3-side-incidence-audit.md: 9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/wave28-glue-discriminant/audit.md: 5c1dc7978d571a9471837b45a36663c7c457b6434800776501e4967146956b86
+  verification/wave31-sign-commutant/audit.md: f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0
+method: >-
+  Exact primitive-lattice image, vertex-triangle incidence transport,
+  modulo-three residue elimination, integral minus-four eigenvector
+  amplitude bound, lambda/mu common-neighbor saturation, symmetric
+  2-(7,4,2) support design, harmonic-cubic contractions, A4 transport,
+  root reflection, and an explicit partial local hostile control.
+command: |-
+  python -B -m unittest discover -s attempts/wave32-rooted-vector -p test_*.py -v
+  python -B attempts/wave32-rooted-vector/exact_check.py --output attempts/wave32-rooted-vector/exact-results.json
+outputs:
+  agents/2026-07-24-wave32-rooted-proof.md: 04990231e3b42cded363e39ffea771556e52ec66fe03a97164ae99f40ddbefe0
+  attempts/wave32-rooted-vector/exact_check.py: c753cbda03f8db54f9ad618040c87084cdafa3ce151a5810f72428815a511642
+  attempts/wave32-rooted-vector/test_exact_check.py: 7f0528ab5485d78c33f24d05d9cd773ed5a5951c44052e4a3489075d33d7c7cc
+  attempts/wave32-rooted-vector/exact-results.json: 9fa31703b5c4721476b1b88f217d7455615c0d92c0d6db7f150abadfc069c2a0
+  attempts/wave32-rooted-vector/input-freeze.sha256: 778473a5e3c872bf2c8d539b165d58d2d1329dd1224b515f6012fd628499b289
+  attempts/wave32-rooted-vector/failed-routes.md: 444b36cb1bd3d1f604687b2a7d3d3c855fa1590689d0cc1ff18f9da288f17c19
+  attempts/wave32-rooted-vector/correction-ledger.md: dd95a3d5af1156bfbdac89f2eac0decd15426b2a2261ff334a115f72ab69a2ce
+limitations:
+  - The designated clean-room verifier is separate from this discovery package.
+  - A false v1 residual-degree list is preserved in correction-ledger.md;
+    the corrected discovery output does not replace the independent audit.
+  - The 32-to-1 step requires actual target incidence and primitive-lattice saturation.
+  - The Fano-complement support and partial control are necessary local data, not a graph.
+  - Outside-only completion and all global projector/Schur realization constraints remain open.
+  - Rooted endpoint existence, n3=708, Conway-99, and novelty remain UNKNOWN.
+tests:
+  unittest_count: 14
+  unittest_status: PASS
+  deterministic_json: PASS
+  exact_arithmetic: PASS
+  lf_only: PASS

@@ -1,0 +1,101 @@
+{
+  "agreement": {
+    "all_odd_type_set": true,
+    "compact_kernel_polynomial": {
+      "A": -7,
+      "I": -28,
+      "J": 14
+    },
+    "complete_assignment_checks": true,
+    "outside_column_integer_dot_product": 14,
+    "scoped_rank_26_implication": true,
+    "type_invariants": {
+      "1+5": {
+        "diagonal_allowed_degree_multiset_agrees": true,
+        "independent_matching_number": 10,
+        "independent_rank_25_candidate_permutations": 0,
+        "rank_25_excluded_by_both": true
+      },
+      "1^3+3": {
+        "diagonal_allowed_degree_multiset_agrees": true,
+        "independent_matching_number": 6,
+        "independent_rank_25_candidate_permutations": 0,
+        "rank_25_excluded_by_both": true
+      },
+      "1^6": {
+        "diagonal_allowed_degree_multiset_agrees": true,
+        "independent_matching_number": 0,
+        "independent_rank_25_candidate_permutations": 0,
+        "rank_25_excluded_by_both": true
+      },
+      "3+3": {
+        "diagonal_allowed_degree_multiset_agrees": true,
+        "independent_matching_number": 12,
+        "independent_rank_25_candidate_permutations": 1,
+        "rank_25_excluded_by_both": true
+      }
+    },
+    "universal_floor_remains_25": true
+  },
+  "discovery_hashes_at_comparison": {
+    "README.md": "249ae1cfc99b538709c36f5140470e14e79ba6197b62e508b85458593c7cef56",
+    "exact-results.json": "0c20f53b056e0b94f14094d46d957b1b4c5ccd5c6c1920de80ea8ce4e49fdac1",
+    "exact_check.py": "787cd80f79517fa455221c0222dfc709b10f15b8524804019e5cc72d1c5b76de",
+    "failed-routes.md": "074ecd2c65ac963c7a9e16d226e013ad382fdf264a8ece0f766c7b7799081a0b",
+    "input-freeze.sha256": "70f51fc83f0c22deaa94feb06c27b43ec0a684797c1e985f9154f4a2b7c607e3",
+    "package-manifest.sha256": "98ab286a8215031ff0b0304fb3cd5510816702fe652878716a5936889fe564f8",
+    "run-report.yaml": "4c84212031b2a0a35add50951b4793fa30b7bf8e519356465021a4c0a68c726d",
+    "test_exact_check.py": "a35fd813d29056f261a70be6cfda0adb3d4d5cd912cc6a4454f46843c0e9fd33"
+  },
+  "discrepancies": [
+    {
+      "correction": "There are seven, not five, positive partitions of six containing an even part.",
+      "discovery_text": "The five even-part edge types are not excluded from rank 25 by this package.",
+      "effect_on_main_claim": "none",
+      "path": "exact-results.json.limitations",
+      "severity": "REFUTED_FIELD"
+    }
+  ],
+  "format": "wave41-multiedge-rank-packing-comparison-v1",
+  "independent_artifact_hashes_before_comparison": {
+    "independent-results.json": "20cfac8928e1a9d52a586a833d8e52cc7f64f7998bdd641467ded5121e2da133",
+    "independent_check.py": "b0d71926dbb1bb6988b603a4adf7ea69489866702433e4250034bd8218103747",
+    "precomparison-method-addendum.md": "cab2abb752837fb7cae5e7e0c01a32421a8a053d1a40efa44529bb5184416ff8",
+    "protocol-freeze.md": "6e463acd4f994faf330cfa8d584cc91f70921e07ac352bbad4995d646aa516e7"
+  },
+  "low_rank_controls_replayed": {
+    "rank_28_generic": {
+      "K39_nullity": 11,
+      "core_component_sizes": [
+        12,
+        12,
+        12
+      ],
+      "core_triangle_count": 6,
+      "full_39_block_identity": true,
+      "rank_F7_3I_minus_A_core": 27,
+      "rank_F7_K39": 28,
+      "three_compact_kernel_vectors_checked": 3
+    },
+    "rank_29_triangle_free": {
+      "K39_nullity": 10,
+      "core_component_sizes": [
+        18,
+        18
+      ],
+      "core_triangle_count": 0,
+      "full_39_block_identity": true,
+      "rank_F7_3I_minus_A_core": 28,
+      "rank_F7_K39": 29,
+      "three_compact_kernel_vectors_checked": 3
+    }
+  },
+  "role": "verifier",
+  "verdict": {
+    "discovery_five_even_part_count": "REFUTED",
+    "main_all_odd_rank_26_claim": "VERIFIED_SCOPED",
+    "seven_even_part_types": "UNKNOWN",
+    "universal_rank_26_claim": "NOT_PROVED",
+    "universal_verified_floor": 25
+  }
+}

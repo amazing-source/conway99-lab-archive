@@ -1,0 +1,48 @@
+role: proof_a
+date_utc: 2026-07-24T06:38:48Z
+git_commit: 5652578111999645a9d5427d0716053de79e0902
+claim_label: DERIVED
+scope: >-
+  Conditional exclusion, under actual target-graph vertex-triangle
+  incidence semantics, of every nontrivial rootless integral orthogonal
+  decomposition of the rank-44 scaled-dual endpoint S-form. This
+  supersedes the surviving Wave 30 rank-20 plus rank-24 decomposable type
+  but does not exclude rooted or indecomposable endpoint forms.
+inputs:
+  agents/2026-07-23-wave20-global-schur.md: 64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/2026-07-22-n3-side-incidence-audit.md: 9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787
+  agents/2026-07-24-wave30-general-h729.md: fd1f11a2ab5c5dfd2732a4ba1fb8d063dea1ae0e96d417aaf9d45eade4f2281a
+  verification/wave30-general-h729/reverification-audit.md: 523a84e2a490f3626a791fb16f43b77b7631b3f26f2de8dcecc83f5e03f4d2cc
+method: >-
+  Rootless block support makes E=M/21 coordinate-block diagonal. A
+  diagonal block-sign involution D is transported by the vertex-triangle
+  incidence matrix N to K=NDN^T on the adjacency minus-four eigenspace.
+  Exact commutation with P_-4=(27I-9A+J)/63 and unique edge-triangle
+  incidence force constant signed triangle degree and hence 33-divisibility
+  of every block size. The block tight-frame trace 4b=21r then excludes
+  every proper rank r=4k, 1<=k<=10.
+command: |-
+  cd attempts/wave31-survivor-proof
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  agents/2026-07-24-wave31-survivor-proof.md: 075566744e2622a4dfa402a125d394aef16dfcb3fc53b172176dce88bd951aaa
+  attempts/wave31-survivor-proof/exact_check.py: 7613ecc5680bbb1539690e1308775014a2e32957e51036cf9de68ce2ae699956
+  attempts/wave31-survivor-proof/test_exact_check.py: 24e81f7136bcfa188d5cea93fce36600ba198cbdbf0561ae4c0f4090b92d313b
+  attempts/wave31-survivor-proof/exact-results.json: e5155e67a59168767639273ee70fc6d63e81b104e9b415e228ca09a0f9317587
+  attempts/wave31-survivor-proof/input-freeze.sha256: 28f3b2890db2629686dae23484443582fc883914aeb85e2edc87e0149d479174
+  attempts/wave31-survivor-proof/failed-routes.md: beaec0f3f988c2ed961e628d5d1c6ca73f1439b40f6e9b67536415f63d942c4f
+limitations:
+  - Discovery-agent derivation pending a fresh independent verifier.
+  - Actual graph incidence semantics are essential.
+  - Rootlessness and an integral orthogonal decomposition are essential.
+  - Rooted and rootless indecomposable endpoint forms remain untreated.
+  - No graph, frame, Schur package, or endpoint object is constructed.
+  - n3=708, Conway-99 existence, and novelty remain UNKNOWN.
+tests:
+  unittest_count: 15
+  unittest_status: PASS
+  deterministic_json: PASS
+  lf_only: PASS

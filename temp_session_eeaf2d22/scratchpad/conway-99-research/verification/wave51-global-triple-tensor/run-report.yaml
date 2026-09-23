@@ -1,0 +1,68 @@
+role: verifier
+date_utc: 2026-07-27T19:03:51Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: VERIFIED
+scope: >-
+  Exact arithmetic and positive-control interpretation of the aggregate
+  Wave 51 symmetric ordered-triple relaxation, conditional on a prism-free
+  putative srg(99,14,1,2). The endpoint and Conway-99 remain UNKNOWN.
+inputs:
+  - path: verification/wave51-global-triple-tensor/preinspection-freeze.sha256
+    sha256: 3b1f8815203f6914eb0bba73113436ad8e5640db674e8c87044cbabadce2e474
+  - path: attempts/wave51-global-triple-tensor/exact-result.json
+    sha256: 8d42c51b5e6b5137466a4adf95442f4d67cf2708c29ac134f7972b8cfbc16d1e
+method: >-
+  Freeze every discovery artifact before inspection; independently derive
+  the SRG triangle-incidence algebra and prism-free q moments; parse the
+  canonical tensor without importing discovery code; reconstruct the five
+  tables by exact division; verify all margins, identity entries, K^2, KS,
+  SK, S^2, local 3K6, divisibility, and 125 balance equations; evaluate all
+  625 association-algebra associativity equations; and attack the checker
+  with ten hostile mutations.
+command: |-
+  python -B verification\wave51-global-triple-tensor\independent_check.py --input attempts\wave51-global-triple-tensor\exact-result.json --output verification\wave51-global-triple-tensor\independent-result.json
+  python -B -m unittest discover -s verification\wave51-global-triple-tensor -p "test_*.py" -v
+outputs:
+  - path: verification/wave51-global-triple-tensor/independent_check.py
+    sha256: 27e9c4f5ba966028015425a7caf8b2711f1ab716509cf5dc8e464a8f0a4c1cc3
+  - path: verification/wave51-global-triple-tensor/test_independent_check.py
+    sha256: e606b9ff084120f8a76541911447a60f6102a9770f61e9fcfed6c3351336bc1c
+  - path: verification/wave51-global-triple-tensor/independent-result.json
+    sha256: e119fec0ff61e79539c3f34c2a17119511f9c4d78e399fe37df061d43529fb27
+  - path: verification/wave51-global-triple-tensor/README.md
+    sha256: fce002f8b72bf927fbdd6699e197efefdf44177274619b6fe8100bc1db4e0421
+  - path: verification/wave51-global-triple-tensor/audit.md
+    sha256: b68c3acd65ba1cb893cb9b3f429084b80036ba277ecffcf8d420c1f89aecb104
+  - path: agents/2026-07-27-wave51-global-triple-tensor-verifier.md
+    sha256: 95a2927959d853aa3767b72bed463f72bfedc0dbc7948e1f5145199e26bf7807
+result:
+  exact_tensor_arithmetic: VERIFIED
+  positive_aggregate_control: VERIFIED
+  association_scheme_for_displayed_averages: REFUTED
+  graph_realization: UNKNOWN
+  prism_free_endpoint: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+  canonical_nonzero_tensor_entries: 21
+  integral_local_tables: 5
+  identity_entries_checked: 25
+  global_balance_equations_checked: 125
+  association_checks: 625
+  association_failures: 100
+  first_association_failure: "81 != 153 at (i,j,m,k)=(1,1,2,2)"
+tests:
+  unit_tests: "PASS: 11 tests in 0.014 seconds"
+  exact_replay: >-
+    PASS_INDEPENDENT_VERIFY
+    sha256=e119fec0ff61e79539c3f34c2a17119511f9c4d78e399fe37df061d43529fb27
+  discovery_manifests: PASS
+  hostile_mutations_rejected: 10
+  free_physical_memory_percent_observed: 57.35
+limitations:
+  - "The certificate is an aggregate ordered-triple relaxation only."
+  - "It assigns no pair-local tables to 231 actual triangle vertices."
+  - "It supplies no graph adjacency matrix or association scheme."
+  - "Quadruple consistency and graph realizability are absent."
+  - "Feasibility is not evidence that the endpoint exists."
+  - "No automorphism of a completed graph is assumed."
+  - "The endpoint, Conway-99, and novelty remain UNKNOWN."

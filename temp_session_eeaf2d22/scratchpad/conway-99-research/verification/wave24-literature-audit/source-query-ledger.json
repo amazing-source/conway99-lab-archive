@@ -1,0 +1,623 @@
+{
+  "audit": {
+    "role": "literature",
+    "cutoff_date": "2026-07-23",
+    "retrieval_window_utc": {
+      "start": "2026-07-23T20:36:05Z",
+      "end": "2026-07-23T20:47:47Z"
+    },
+    "target": "existence of srg(99,14,1,2)",
+    "scope": "Source-first prior-art and current-status audit for the Wave 24 conditional n3=708 determinant/index restriction.",
+    "preinspection_query_plan": {
+      "path": "verification/wave24-literature-audit/preinspection-query-plan.md",
+      "sha256": "9e4d1cff10092aa1fd171ad0c94dc17e8d4cd08fd6463fbb83bdd2374329ddd1"
+    },
+    "proof_separation": "The query plan was written before the Wave 24 discovery report, exact-results JSON, checker, or proof notes were inspected. Exact notation and the eight h values were transcribed only after the plan was frozen.",
+    "cache_policy": "No third-party paper, page, API response, or search-result cache was written into the repository. Official source bytes were hashed in memory and discarded. Publication artifacts are the authored plan, report, ledger, run report, and hash manifest."
+  },
+  "verdict_vocabulary": {
+    "CONFIRMED": "Directly supported by an inspected primary, official, or maintained source within the stated scope.",
+    "CITED_CONCEPTUAL_ANALOGUE": "A primary source supports a general ingredient but not the exact target endpoint, numbers, hypotheses, and conclusion.",
+    "BOUNDED_NON_DISCOVERY": "Not located in the enumerated searches and inspected sources; not evidence of global absence.",
+    "UNKNOWN": "Not established by this audit, including target truth and global novelty."
+  },
+  "post_reveal_transcription": {
+    "source_report": {
+      "path": "agents/2026-07-23-wave24-n3-708-index-boundary.md",
+      "bytes": 12681,
+      "sha256": "461bbcff6399ae18c2764f68ea498b7eebba9780af0032b8e2e8fa18ca26af28"
+    },
+    "source_result_json": {
+      "path": "attempts/wave24-n3-708-index/exact-results.json",
+      "bytes": 14649,
+      "sha256": "a4241cdeea64a8f6073037d564e72fb7ef545287d45aca4759cec6c31d26a463"
+    },
+    "n3": 708,
+    "detB_cap": 6561,
+    "detB_cap_power_form": "3^8",
+    "h_values_in_report_order": [
+      9,
+      21,
+      49,
+      81,
+      189,
+      441,
+      729,
+      1029
+    ],
+    "exact_log_inequality": "log(1+2x) <= x log(3) - (log(3)-2/3) log|x| for x>-1/2 and x!=0",
+    "report_scope": "Conditional necessary restriction only; n3=708 is not excluded and target existence remains UNKNOWN."
+  },
+  "query_runs": [
+    {
+      "id": "A-current-status-web",
+      "surface": "general web search with site-qualified variants",
+      "retrieval_date_utc": "2026-07-23",
+      "queries": [
+        "\"srg(99,14,1,2)\"",
+        "\"Conway's 99-graph problem\"",
+        "\"Conway 99-graph problem\" solved OR proof OR counterexample",
+        "\"strongly regular graph\" \"99,14,1,2\"",
+        "site:arxiv.org \"99,14,1,2\"",
+        "site:mathscinet.ams.org \"99,14,1,2\"",
+        "site:zbmath.org \"99,14,1,2\"",
+        "\"Conway 99\" graph July 2026 mathematics",
+        "\"srg(99,14,1,2)\" 2026"
+      ],
+      "responsive_sources": [
+        "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+        "https://arxiv.org/abs/2604.23037v2",
+        "https://arxiv.org/abs/2605.22867v1",
+        "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+        "https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/AGI-021/2022_01/_article/-char/en"
+      ],
+      "outcome": "Current specialized sources treat the target as open. One 2022 JSAI technical report claiming nonexistence was located and separately assessed; its displayed proof does not establish the claim as written."
+    },
+    {
+      "id": "B-endpoint-web",
+      "surface": "general web search",
+      "retrieval_date_utc": "2026-07-23",
+      "queries": [
+        "\"n3=708\" \"99-graph\"",
+        "\"n_3 = 708\" \"strongly regular\"",
+        "\"n3\" 708 \"Conway graph\"",
+        "\"708\" \"srg(99,14,1,2)\"",
+        "\"209994\" graph",
+        "\"209,994\" \"6-cycles\" graph",
+        "\"induced 6-cycles\" \"99-graph\"",
+        "\"n3\" \"induced 6-cycles\" Reimbayev"
+      ],
+      "responsive_sources": [],
+      "outcome": "No responsive exact Conway-99 endpoint hit. Numeric and unrelated-Conway noise was rejected."
+    },
+    {
+      "id": "C-determinant-index-web",
+      "surface": "general web search",
+      "retrieval_date_utc": "2026-07-23",
+      "queries": [
+        "\"det(B)\" 6561 graph",
+        "\"det B\" \"3^8\" lattice",
+        "\"6561\" \"99-graph\"",
+        "\"6561\" \"srg(99,14,1,2)\"",
+        "\"3^8\" \"srg(99,14,1,2)\"",
+        "\"3^8\" \"Conway graph\" lattice",
+        "\"3^8\" \"99-graph\"",
+        "\"index\" 6561 \"strongly regular graph\"",
+        "\"index\" \"3^8\" \"projector lattice\" graph",
+        "\"determinant\" 6561 \"spectral projector\" graph",
+        "\"det(I+2C)\" graph lattice",
+        "\"I+2C\" determinant \"strongly regular\""
+      ],
+      "responsive_sources": [],
+      "outcome": "No responsive target-specific determinant or index-boundary hit."
+    },
+    {
+      "id": "D-complete-h-list-web",
+      "surface": "general web search",
+      "retrieval_date_utc": "2026-07-23",
+      "queries": [
+        "\"9, 21, 49, 81, 189, 441, 729, 1029\" graph",
+        "\"{9,21,49,81,189,441,729,1029}\" graph",
+        "\"9,21,49,81,189,441,729,1029\" \"99-graph\"",
+        "\"h=1029\" \"99-graph\""
+      ],
+      "responsive_sources": [],
+      "outcome": "No responsive occurrence of the complete ordered list."
+    },
+    {
+      "id": "D-individual-h-templates-web",
+      "surface": "general web search",
+      "retrieval_date_utc": "2026-07-23",
+      "queries_by_h": {
+        "9": [
+          "\"9\" \"srg(99,14,1,2)\"",
+          "\"h=9\" \"99-graph\"",
+          "\"index 9\" \"Conway graph\"",
+          "\"9\" \"projector lattice\" \"strongly regular graph\"",
+          "\"9\" pseudodeterminant graph lattice"
+        ],
+        "21": [
+          "\"21\" \"srg(99,14,1,2)\"",
+          "\"h=21\" \"99-graph\"",
+          "\"index 21\" \"Conway graph\"",
+          "\"21\" \"projector lattice\" \"strongly regular graph\"",
+          "\"21\" pseudodeterminant graph lattice"
+        ],
+        "49": [
+          "\"49\" \"srg(99,14,1,2)\"",
+          "\"h=49\" \"99-graph\"",
+          "\"index 49\" \"Conway graph\"",
+          "\"49\" \"projector lattice\" \"strongly regular graph\"",
+          "\"49\" pseudodeterminant graph lattice"
+        ],
+        "81": [
+          "\"81\" \"srg(99,14,1,2)\"",
+          "\"h=81\" \"99-graph\"",
+          "\"index 81\" \"Conway graph\"",
+          "\"81\" \"projector lattice\" \"strongly regular graph\"",
+          "\"81\" pseudodeterminant graph lattice"
+        ],
+        "189": [
+          "\"189\" \"srg(99,14,1,2)\"",
+          "\"h=189\" \"99-graph\"",
+          "\"index 189\" \"Conway graph\"",
+          "\"189\" \"projector lattice\" \"strongly regular graph\"",
+          "\"189\" pseudodeterminant graph lattice"
+        ],
+        "441": [
+          "\"441\" \"srg(99,14,1,2)\"",
+          "\"h=441\" \"99-graph\"",
+          "\"index 441\" \"Conway graph\"",
+          "\"441\" \"projector lattice\" \"strongly regular graph\"",
+          "\"441\" pseudodeterminant graph lattice"
+        ],
+        "729": [
+          "\"729\" \"srg(99,14,1,2)\"",
+          "\"h=729\" \"99-graph\"",
+          "\"index 729\" \"Conway graph\"",
+          "\"729\" \"projector lattice\" \"strongly regular graph\"",
+          "\"729\" pseudodeterminant graph lattice"
+        ],
+        "1029": [
+          "\"1029\" \"srg(99,14,1,2)\"",
+          "\"h=1029\" \"99-graph\"",
+          "\"index 1029\" \"Conway graph\"",
+          "\"1029\" \"projector lattice\" \"strongly regular graph\"",
+          "\"1029\" pseudodeterminant graph lattice"
+        ]
+      },
+      "responsive_sources": [],
+      "outcome": "All forty value-qualified templates were attempted. Common-number hits were unrelated to the target or mathematical role."
+    },
+    {
+      "id": "E-characteristic-pseudodeterminant-log-web",
+      "surface": "general web search",
+      "retrieval_date_utc": "2026-07-23",
+      "queries": [
+        "\"characteristic pseudodeterminant\" graph",
+        "\"characteristic pseudo-determinant\" graph",
+        "\"pseudodeterminant\" \"strongly regular graph\"",
+        "\"pseudo-determinant\" \"spectral projector\" graph",
+        "\"characteristic polynomial\" pseudodeterminant lattice graph",
+        "\"log determinant inequality\" spectral projector lattice",
+        "\"logarithmic inequality\" determinant \"strongly regular graph\"",
+        "\"sum log\" eigenvalues projector lattice determinant",
+        "\"log(1+2x)\" \"log(3)\" determinant",
+        "\"log(1+2x)\" \"2/3\" \"log(3)\"",
+        "\"x log(3)\" \"log|x|\"",
+        "\"det(I+2C)\" pseudodeterminant",
+        "\"determinant bound\" \"fixed trace\" \"characteristic polynomial\" graph",
+        "\"pseudo-determinant\" compression codimension-one lattice"
+      ],
+      "responsive_sources": [
+        "https://arxiv.org/abs/1306.0062"
+      ],
+      "outcome": "Knill is a responsive general pseudodeterminant/characteristic-coefficient analogue. No exact target, endpoint, determinant cap, or displayed logarithmic inequality was located."
+    },
+    {
+      "id": "F-projector-lattice-equivalents-web",
+      "surface": "general web search",
+      "retrieval_date_utc": "2026-07-23",
+      "queries": [
+        "\"spectral projector\" Gram lattice \"strongly regular graph\"",
+        "\"projector lattice\" \"Conway 99 graph\"",
+        "\"integral lattice\" spectral idempotent \"strongly regular graph\"",
+        "\"Smith normal form\" spectral projector \"strongly regular graph\"",
+        "\"index obstruction\" \"strongly regular graph\" lattice",
+        "\"rational idempotent\" integral lattice association scheme",
+        "\"determinant\" rational idempotent association scheme lattice"
+      ],
+      "responsive_sources": [
+        "https://www.numdam.org/item/AIF_1995__45_5_1163_0/"
+      ],
+      "outcome": "Bacher-Venkov is a responsive general rational-idempotent/integral-lattice analogue. No exact Wave 24 target-specific chain was located."
+    },
+    {
+      "id": "G-latest-date-web",
+      "surface": "general web search",
+      "retrieval_date_utc": "2026-07-23",
+      "queries": [
+        "\"Conway 99\" graph July 2026 mathematics",
+        "\"Conway-99\" graph June 2026 proof",
+        "\"srg(99,14,1,2)\" 2026",
+        "\"99,14,1,2\" graph \"2026\""
+      ],
+      "responsive_sources": [
+        "https://www.hebtu.edu.cn/a/2026/06/24/AD3624B468444197AA2464C61CBDEE63.html"
+      ],
+      "outcome": "The located June 2026 announcement concerns a different strongly regular graph and only suggests possible applicability to Conway-99; it is not a resolution."
+    }
+  ],
+  "machine_queries": [
+    {
+      "service": "arXiv API",
+      "query": "all:\"99,14,1,2\"",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%2299%2C14%2C1%2C2%22&start=0&max_results=100",
+      "retrieved_utc_date": "2026-07-23",
+      "http_status": 200,
+      "bytes": 3311,
+      "sha256": "a6a476a4347c353562ceff69745129c584b596d19ecea5572555c7df5977c486",
+      "reported_total_results": 2,
+      "titles": [
+        "The Lower Bound for Number of Hexagons in Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+        "On the automorphism group of a putative Conway 99-graph"
+      ],
+      "responsive_exact_wave24_match": false
+    },
+    {
+      "service": "arXiv API",
+      "query": "all:\"Conway 99\"",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22Conway%2099%22&start=0&max_results=100",
+      "retrieved_utc_date": "2026-07-23",
+      "http_status": 200,
+      "bytes": 7969,
+      "sha256": "0dd7d61aee2d23de3164be2560a2c1ee06481c65896f5be1662dc348950d36d3",
+      "reported_total_results": 5,
+      "titles": [
+        "Not Conway's 99-Graph Problem",
+        "Approaching the Conway-99 problem using SAT solvers",
+        "On the automorphism group of a putative Conway 99-graph",
+        "Critical group structure from the parameters of a strongly regular graph",
+        "On Clique Graphs and Clique Regular Graphs"
+      ],
+      "responsive_exact_wave24_match": false
+    },
+    {
+      "service": "OpenAlex API",
+      "query": "srg(99,14,1,2) n3 708 determinant 6561",
+      "url": "https://api.openalex.org/works?search=srg%2899%2C14%2C1%2C2%29%20n3%20708%20determinant%206561&per-page=25",
+      "retrieved_utc_date": "2026-07-23",
+      "http_status": 200,
+      "bytes": 483,
+      "sha256": "7bc23f45868b6c435af05c3a89eea0c0ccdc23ddccb4a47e9bc2d06850065e04",
+      "reported_count": 0
+    },
+    {
+      "service": "OpenAlex API",
+      "query": "\"9, 21, 49, 81, 189, 441, 729, 1029\" \"Conway 99\"",
+      "url": "https://api.openalex.org/works?search=%229%2C%2021%2C%2049%2C%2081%2C%20189%2C%20441%2C%20729%2C%201029%22%20%22Conway%2099%22&per-page=25",
+      "retrieved_utc_date": "2026-07-23",
+      "http_status": 200,
+      "bytes": 535,
+      "sha256": "52b65a4793e9822f951db0c8271d620e1b89d3eeac88ec51d337d46bf8210c5e",
+      "reported_count": 0
+    },
+    {
+      "service": "OpenAlex API",
+      "query": "\"log(1+2x)\" \"log(3)\" pseudodeterminant",
+      "url": "https://api.openalex.org/works?search=%22log%281%2B2x%29%22%20%22log%283%29%22%20pseudodeterminant&per-page=25",
+      "retrieved_utc_date": "2026-07-23",
+      "http_status": 200,
+      "bytes": 496,
+      "sha256": "83b9388fb41c89040d375e1df3e96819a17aa7e7002ee25107135d5a16e48ed0",
+      "reported_count": 0
+    },
+    {
+      "service": "OpenAlex API",
+      "query": "\"det(B)\" 6561 \"strongly regular graph\"",
+      "url": "https://api.openalex.org/works?search=%22det%28B%29%22%206561%20%22strongly%20regular%20graph%22&per-page=25",
+      "retrieved_utc_date": "2026-07-23",
+      "http_status": 200,
+      "bytes": 509,
+      "sha256": "4c247250fb96b8647bc6f9c68bcb3079209568266c807d02110a1969cc8f29d8",
+      "reported_count": 0
+    },
+    {
+      "service": "Crossref API",
+      "query": "\"n3=708\" \"srg(99,14,1,2)\" determinant",
+      "url": "https://api.crossref.org/works?query.bibliographic=%22n3%3D708%22%20%22srg%2899%2C14%2C1%2C2%29%22%20determinant&rows=20",
+      "retrieved_utc_date": "2026-07-23",
+      "http_status": 200,
+      "bytes": 45900,
+      "sha256": "3bb247b540682394a12245554ae1bb7335e7a51c961b58d0069004a0512339af",
+      "reported_total_results": 4415770,
+      "outcome": "Crossref treated the query as broad bibliographic terms; none of the first twenty returned titles was responsive. The large count is not used as target evidence."
+    }
+  ],
+  "source_byte_acquisitions": [
+    {
+      "id": "brouwer-srg-table",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+      "http_status": 200,
+      "bytes": 24003,
+      "sha256": "db88468cc47bb5aa9108d488596557de3a68ec80dcf5f7ffea9f2e16d3f60f89",
+      "content_type": "text/html",
+      "etag": "\"5dc3-62ca78dc62e80\"",
+      "last_modified_utc": "2025-01-27T03:20:10Z",
+      "retained": false
+    },
+    {
+      "id": "cesarz-woldar-2025-publisher-pdf",
+      "url": "https://alco.centre-mersenne.org/item/10.5802/alco.418.pdf",
+      "http_status": 200,
+      "bytes": 964747,
+      "sha256": "d88f3832337b949edbd21cadf0836bd0df77bf84bf5c225a1b834d9883ca65a8",
+      "content_type": "application/pdf",
+      "retained": false
+    },
+    {
+      "id": "arxiv-2604.23037v2-pdf",
+      "url": "https://arxiv.org/pdf/2604.23037v2",
+      "http_status": 200,
+      "bytes": 2763608,
+      "sha256": "8fadd666b4b8eaa538874b209c3b4f113704bfdc9d567efdb66e6c8296fe0cc8",
+      "content_type": "application/pdf",
+      "last_modified_utc": "2026-04-29",
+      "retained": false
+    },
+    {
+      "id": "arxiv-2605.22867v1-pdf",
+      "url": "https://arxiv.org/pdf/2605.22867v1",
+      "http_status": 200,
+      "bytes": 1059251,
+      "sha256": "12247e688b93fae41726ce7e5175d6c496a38b7537f2f5ce0f87f094031f86e9",
+      "content_type": "application/pdf",
+      "retained": false
+    },
+    {
+      "id": "arxiv-2508.03377v2-pdf",
+      "url": "https://arxiv.org/pdf/2508.03377v2",
+      "http_status": 200,
+      "bytes": 873456,
+      "sha256": "c25d3c989343a7af843ddfaa07187558ecc115c19b100f96d599b296ef203fe9",
+      "content_type": "application/pdf",
+      "retained": false
+    },
+    {
+      "id": "arxiv-2511.06572v1-pdf",
+      "url": "https://arxiv.org/pdf/2511.06572v1",
+      "http_status": 200,
+      "bytes": 467585,
+      "sha256": "d98d474ef277b6a32fc4125690c75d3808450225b0657dbd46290673b7a014f7",
+      "content_type": "application/pdf",
+      "retained": false
+    },
+    {
+      "id": "reimbayev-2024-publisher-pdf",
+      "url": "https://ejaam.org/articles/2024/10.62780-ejaam-2024-001.pdf",
+      "http_status": 200,
+      "bytes": 372641,
+      "sha256": "484ff4bbcf13ea26d478baa4c24b97f6996ac3fc35ef8459c15fb61b61b98521",
+      "content_type": "application/pdf",
+      "etag": "\"67990926-5afa1\"",
+      "last_modified_utc": "2025-01-28T16:43:18Z",
+      "retained": false
+    },
+    {
+      "id": "ishihara-jstage-2022-pdf",
+      "url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/AGI-021/2022_01/_pdf/-char/en",
+      "http_status": 200,
+      "bytes": 291964,
+      "sha256": "274818e17f4ae2df8cb74d157e2025d18d8b8ca3a6c910586187a1165f143c3b",
+      "content_type": "application/pdf",
+      "retained": false
+    },
+    {
+      "id": "bacher-venkov-1995-numdam-pdf",
+      "url": "https://www.numdam.org/item/10.5802/aif.1490.pdf",
+      "http_status": 200,
+      "bytes": 1228997,
+      "sha256": "540c563faa3046f4b23bf02c331e6fcc0535f46f0d4a946ad55193d39eb4509c",
+      "content_type": "application/pdf",
+      "retained": false
+    },
+    {
+      "id": "knill-arxiv-1306.0062v3-pdf",
+      "url": "https://arxiv.org/pdf/1306.0062",
+      "http_status": 200,
+      "bytes": 310221,
+      "sha256": "0a10d76bf619c39c911333e47f003f1efb1504c09a0bc648489488f6ee137e5a",
+      "content_type": "application/pdf",
+      "last_modified_utc": "2023-01-20T00:14:23Z",
+      "retained": false
+    }
+  ],
+  "primary_and_authoritative_sources": [
+    {
+      "id": "doi:10.5802/alco.418 / arXiv:2308.02978",
+      "title": "On the automorphism group of a putative Conway 99-graph",
+      "authors": "Patrick G. Cesarz and Andrew J. Woldar",
+      "publication": "Algebraic Combinatorics 8 (2025), 379-398",
+      "online_date": "2025-04-24",
+      "url": "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+      "inspection": "Calls existence an open problem and proves only automorphism-group restrictions.",
+      "classification": "CONFIRMED current-status evidence"
+    },
+    {
+      "id": "arXiv:2604.23037v2",
+      "title": "Approaching the Conway-99 problem using SAT solvers",
+      "author": "Ali Keramatipour",
+      "version_date": "2026-04-28",
+      "url": "https://arxiv.org/abs/2604.23037v2",
+      "inspection": "Explicitly calls Conway-99 open and reports that the studied SAT method does not settle it.",
+      "classification": "CONFIRMED current-status evidence"
+    },
+    {
+      "id": "arXiv:2605.22867v1",
+      "title": "A Comprehensive Study of Clique Graphs and Clique Regular Graphs",
+      "author": "Connor Phillips",
+      "version_date": "2026-05-19",
+      "url": "https://arxiv.org/abs/2605.22867v1",
+      "inspection": "Says the Conway bounty has yet to be claimed and again poses the existence question.",
+      "classification": "CONFIRMED current-status evidence"
+    },
+    {
+      "id": "brouwer-srg-table",
+      "title": "Strongly regular graphs with 51-100 vertices",
+      "maintainer": "A. E. Brouwer",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+      "inspection": "Marks the row 99,14,1,2 with '?' and lists restricted eigenvalues 3^54 and -4^44.",
+      "classification": "CONFIRMED maintained-status evidence"
+    },
+    {
+      "id": "arXiv:2508.03377v2",
+      "title": "The Subgraphs of Order Six of the Family of Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "author": "Reimbay Reimbayev",
+      "version_date": "2025-11-03",
+      "url": "https://arxiv.org/abs/2508.03377v2",
+      "inspection": "Leaves n3 free and contains no target occurrence of 708 or 6561.",
+      "classification": "CONFIRMED target-adjacent primary source; no exact Wave 24 result"
+    },
+    {
+      "id": "arXiv:2409.10620v1",
+      "title": "The Lower Bound for Number of Hexagons in Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "author": "Reimbay Reimbayev",
+      "version_date": "2024-09-16",
+      "url": "https://arxiv.org/abs/2409.10620v1",
+      "inspection": "Introduces the induced-six-vertex n3 parameter used by the project and obtains its published hexagon lower bound from n3>=0; it contains no Wave 24 endpoint, determinant cap, or index list.",
+      "classification": "CONFIRMED target-adjacent primary source; no exact Wave 24 result"
+    },
+    {
+      "id": "arXiv:2511.06572v1",
+      "title": "Hamiltonian Subgraphs of Order Seven in srg(n,k,1,2)",
+      "author": "Reimbay Reimbayev",
+      "version_date": "2025-11-09",
+      "url": "https://arxiv.org/abs/2511.06572v1",
+      "inspection": "Retains n3 as a parameter and contains no Wave 24 endpoint/determinant/index result.",
+      "classification": "CONFIRMED target-adjacent primary source; no exact Wave 24 result"
+    },
+    {
+      "id": "doi:10.11517/jsaisigtwo.2022.AGI-021_01",
+      "title": "Theory of the pain of humans etc.",
+      "author": "Hideto Ishihara",
+      "publication": "JSAI Technical Report, Type 2 SIG, Volume 2022, issue AGI-021",
+      "published_date": "2022-07-14",
+      "url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/AGI-021/2022_01/_article/-char/en",
+      "inspection": "Theorem 28 purports to prove nonexistence. The proof's equation (88) relies on an unproved assertion that every y in Hk2 has exactly two neighbors in Hk1; the two common neighbors guaranteed by mu=2 may include a shared first-layer neighbor.",
+      "classification": "CONFIRMED resolution claim; displayed proof not valid as written"
+    },
+    {
+      "id": "arXiv:1306.0062v3",
+      "title": "Cauchy-Binet for Pseudo-Determinants",
+      "author": "Oliver Knill",
+      "version_date": "2014-06-18",
+      "url": "https://arxiv.org/abs/1306.0062",
+      "inspection": "Defines the pseudodeterminant as the product of nonzero eigenvalues and, up to sign, the first nonzero characteristic-polynomial coefficient; includes graph-Laplacian applications.",
+      "classification": "CITED_CONCEPTUAL_ANALOGUE only"
+    },
+    {
+      "id": "doi:10.5802/aif.1490",
+      "title": "Lattices and association schemes: a unimodular example without roots in dimension 28",
+      "authors": "Roland Bacher and Boris Venkov",
+      "publication": "Annales de l'Institut Fourier 45 (1995), 1163-1176",
+      "url": "https://www.numdam.org/item/AIF_1995__45_5_1163_0/",
+      "inspection": "Proposition 2.1 turns a scaled rational minimal idempotent into an integral Gram lattice, restricts determinant prime divisors, and discusses finite-index questions.",
+      "classification": "CITED_CONCEPTUAL_ANALOGUE only"
+    }
+  ],
+  "resolution_claim_assessment": {
+    "source": "doi:10.11517/jsaisigtwo.2022.AGI-021_01",
+    "claimed_theorem": "No strongly regular graph with parameters (99,14,1,2) exists.",
+    "displayed_critical_equation": "10*s_k + 11*t_k = 2*b_k",
+    "paper_justification": "Every vertex of Hk2 is asserted to be adjacent to exactly two vertices of Hk1.",
+    "gap": "For y in Hk2, y and wk are nonadjacent, so mu=2 gives two common neighbors in the entire graph. Since each has two neighbors in the first layer L1=N(w0), a shared L1 neighbor can consume one of those two common neighbors. The paper supplies no argument excluding this case, so exactly two Hk1 neighbors and equation (88) do not follow.",
+    "status_effect": "The displayed proof does not substantiate the resolution claim as written. Later specialized sources continue to treat the target as open. Target truth remains UNKNOWN."
+  },
+  "claim_findings": [
+    {
+      "claim": "Current inspected specialized sources through 2026-07-23 treat srg(99,14,1,2) as unresolved.",
+      "verdict": "CONFIRMED",
+      "limitation": "A current-source status finding is not proof that no unindexed or private resolution exists."
+    },
+    {
+      "claim": "An inspected source contains a purported nonexistence proof.",
+      "verdict": "CONFIRMED",
+      "limitation": "The located 2022 JSAI proof has the concrete layer-counting gap recorded above."
+    },
+    {
+      "claim": "A source contains the Wave 24 conditional endpoint n3=708 and det(B)<=6561=3^8.",
+      "verdict": "BOUNDED_NON_DISCOVERY"
+    },
+    {
+      "claim": "A source contains the ordered h list 9,21,49,81,189,441,729,1029 in the Wave 24 target role.",
+      "verdict": "BOUNDED_NON_DISCOVERY"
+    },
+    {
+      "claim": "A source contains the exact Wave 24 logarithmic inequality and its target-specific determinant/index chain.",
+      "verdict": "BOUNDED_NON_DISCOVERY"
+    },
+    {
+      "claim": "The general pseudodeterminant equals a product of nonzero eigenvalues and a first nonzero characteristic-polynomial coefficient up to sign.",
+      "verdict": "CONFIRMED",
+      "classification": "CITED_CONCEPTUAL_ANALOGUE"
+    },
+    {
+      "claim": "Association-scheme rational idempotents can yield integral Gram lattices with determinant/index restrictions.",
+      "verdict": "CONFIRMED",
+      "classification": "CITED_CONCEPTUAL_ANALOGUE"
+    },
+    {
+      "claim": "The Wave 24 result or synthesis is novel.",
+      "verdict": "UNKNOWN"
+    },
+    {
+      "claim": "The Wave 24 mathematics is valid.",
+      "verdict": "UNKNOWN",
+      "limitation": "Not assessed by the literature role; independent verification is required."
+    },
+    {
+      "claim": "The target exists or does not exist.",
+      "verdict": "UNKNOWN"
+    }
+  ],
+  "access_and_tooling_events": [
+    {
+      "type": "local tooling retry",
+      "event": "The installed PowerShell/.NET runtime did not expose System.Convert.ToHexString during an initial in-memory hash pass.",
+      "mitigation": "Official bytes were reacquired and SHA-256 was formatted with System.BitConverter.",
+      "evidentiary_effect": "None; no failed hash or unverified byte count is used."
+    },
+    {
+      "type": "local tooling retry",
+      "event": "A later shell had not loaded the System.Net.Http assembly, so HttpClient construction failed before a request.",
+      "mitigation": "Loaded System.Net.Http explicitly and reran the requests.",
+      "evidentiary_effect": "Not a source-access failure."
+    },
+    {
+      "type": "local tooling retry",
+      "event": "The first Knill hash object attempted ToString on a nullable response header after a successful fetch.",
+      "mitigation": "Reran with null-safe metadata handling; the successful byte count and SHA-256 are recorded.",
+      "evidentiary_effect": "None."
+    },
+    {
+      "type": "index limitation",
+      "event": "Site-qualified MathSciNet and zbMATH web searches returned no responsive exact target result in the search surface.",
+      "mitigation": "Current status was triangulated from inspectable primary sources and Brouwer's maintained table.",
+      "evidentiary_effect": "No claim of complete index coverage."
+    },
+    {
+      "type": "query limitation",
+      "event": "Crossref expanded the endpoint query into millions of broad bibliographic matches.",
+      "mitigation": "The first twenty titles were checked only as a discovery aid and the result count was not used as target evidence.",
+      "evidentiary_effect": "None."
+    }
+  ],
+  "publication_boundary": {
+    "exact_match_status": "BOUNDED_NON_DISCOVERY",
+    "target_status": "UNKNOWN",
+    "wave24_validity_in_this_role": "NOT_ASSESSED",
+    "novelty_status": "UNKNOWN",
+    "third_party_cache_committed": false,
+    "strongest_wording": "No inspected source or enumerated exact query contained the Wave 24 endpoint, determinant cap, eight-value list, or complete method. General ingredients have older prior art; target truth and novelty remain UNKNOWN."
+  }
+}

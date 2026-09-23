@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1434, in <module>
+    main()
+    ~~~~^^
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1418, in main
+    result = build_results(
+        args.connected_dispositions,
+        args.disconnected_dispositions,
+    )
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1350, in build_results
+    zero = petersen_zero_census(petersen_f, base_l, base_r, group)
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1137, in petersen_zero_census
+    raise AssertionError(
+    ...<3 lines>...
+    )
+AssertionError: sole residual orbit changed: scout target canonicalizes to ((0, 15), (3, 23), (4, 28)), exact census retained ((0, 23), (1, 22), (2, 17))

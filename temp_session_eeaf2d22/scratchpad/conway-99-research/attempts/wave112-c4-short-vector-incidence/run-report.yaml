@@ -1,0 +1,31 @@
+role: proof_a
+date_utc: 2026-07-28T04:00:58Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: DERIVED
+scope: >-
+  Conditional on the verified rank-28 short-vector reduction, derive exact
+  alternating four-cycle lower bounds for every live norm-14, norm-16, and
+  norm-18 support and isolate a sufficient pointwise extension cap.
+inputs:
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave74-short-vector-closure/package-manifest.sha256
+    sha256: eb19bd74e6e6017186f458bcd74390d231bafa9edfa92ad9f7f81e2a1d566612
+  - path: verification/wave78-short-vector-packing/package-manifest.sha256
+    sha256: f96134457f81fa7b66d3de73086323f640ec1259f49d134e77584d33056f766b
+  - path: verification/wave86-level7-exact/package-manifest.sha256
+    sha256: cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2
+method: >-
+  Double-count target nonedges and support-side pair codegrees, retain
+  antipodal parity, and derive the exact rooted four-cycle partition.
+command: >-
+  python -B -m unittest discover -s
+  attempts/wave112-c4-short-vector-incidence -p "test_*.py" -v
+outputs:
+  - path: attempts/wave112-c4-short-vector-incidence/exact-results.json
+  - path: attempts/wave112-c4-short-vector-incidence/derivation.md
+limitations:
+  - Independent verification is required.
+  - The sufficient cap of 25 antipodal extensions is not proved.
+  - Rank 28 and Conway-99 remain UNKNOWN.
+  - Literature novelty remains UNKNOWN.

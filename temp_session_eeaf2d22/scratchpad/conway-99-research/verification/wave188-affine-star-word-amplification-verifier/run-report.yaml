@@ -1,0 +1,50 @@
+role: verifier
+date_utc: 2026-07-29T01:55:51Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional Wave188 lower bound of 8316 nonedge-realizing projective
+  dual words of weights four through nine, 9009 total projective short
+  dual words, and B4+...+B9>=18018.
+inputs:
+  - path: attempts/wave188-affine-star-word-amplification/package-manifest.sha256
+    sha256: 01badceb3f03fbbd9ce699488669619649c02b0af82ecf6dc888065d7c485279
+  - path: verification/wave174-no-weight3-dual/package-manifest.sha256
+    sha256: ac34c8a3b045bec70e3a2080cb4365c0ea43cc732b313ecb3cec355a28f23450
+  - path: verification/wave179-global-transversal-circuits/package-manifest.sha256
+    sha256: 0f8dca5c3230861f22f15d7df74d6716623890de2080c5fa5dea29469ce4124c
+  - path: verification/wave180-capacity3-companion/package-manifest.sha256
+    sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  - path: verification/wave181-c4-conic-equality/package-manifest.sha256
+    sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  - path: verification/wave186-star-translation-cover-verifier/package-manifest.sha256
+    sha256: edb833cbed8706f164199d4ecab8ff26757c54dfc46915819e150e17d73fef76
+method: >-
+  Clean-room coefficient-frequency enumeration, abstract projective
+  normalization, support-level two-transversal capacity, independent
+  one-block projector and local relation-plane reconstruction, exact
+  type-two and type-three translations over F3, exhaustive cross-family
+  collision audit, and private-label coefficient comparison. The discovery
+  checker was neither imported nor executed. No graph, code, SAT, cover,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave188-affine-star-word-amplification-verifier\independent_check.py
+  --verify
+  verification\wave188-affine-star-word-amplification-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave188-affine-star-word-amplification-verifier\test_independent_check.py
+outputs:
+  - verification/wave188-affine-star-word-amplification-verifier/README.md
+  - verification/wave188-affine-star-word-amplification-verifier/audit.md
+  - verification/wave188-affine-star-word-amplification-verifier/protocol.md
+  - verification/wave188-affine-star-word-amplification-verifier/independent_check.py
+  - verification/wave188-affine-star-word-amplification-verifier/independent-results.json
+  - verification/wave188-affine-star-word-amplification-verifier/test_independent_check.py
+  - verification/wave188-affine-star-word-amplification-verifier/input-freeze.sha256
+limitations:
+  - All conclusions are conditional on the prism-free rank-11 endpoint model.
+  - The result counts dual words, including noncircuits, not a circuit bound.
+  - No incompatible complete weight-enumerator upper bound is known.
+  - Rank 11, endpoint existence, strict n3 improvement, external novelty,
+    and Conway-99 remain UNKNOWN.

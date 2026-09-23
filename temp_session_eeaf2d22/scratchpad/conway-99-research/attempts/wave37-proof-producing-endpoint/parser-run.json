@@ -1,0 +1,28 @@
+{
+  "claim_label": "VERIFIED_SYNTAX_ONLY",
+  "command": "\"$EXACT\" --onlyparse \"$FORMULA\"",
+  "date_utc": "2026-07-27T00:14:03Z",
+  "exit_code": 0,
+  "formula": {
+    "bytes": 29827704,
+    "constraints": 574615,
+    "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb",
+    "sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5",
+    "variables": 289338
+  },
+  "format": "wave37-exact-onlyparse-run-v1",
+  "result": "PARSE_ACCEPTED",
+  "stderr": "An unrelated shell-profile warning was emitted and path-sanitized.",
+  "stdout": "c Exact - branch main commit b921cd1\nc Reading input file, expected format is opb",
+  "tool": {
+    "binary_sha256": "842ac70b4e938d24f537a56513ff64ea845206c714ce34da467ce146c5c928",
+    "identity": "Exact commit b921cd1c4e3b6a7b7ba16dfd9c38c419d5e53ee4",
+    "pinned_by": "verification/2026-07-22-veripb-calibration.md"
+  },
+  "limitations": [
+    "Only OPB parser acceptance is established.",
+    "Exact was not asked to solve the formula.",
+    "There is no SAT assignment, UNSAT conclusion, or proof artifact.",
+    "The shell-profile warning is unrelated to formula parsing."
+  ]
+}

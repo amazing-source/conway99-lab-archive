@@ -1,0 +1,88 @@
+{
+  "budget_domination": {
+    "all_nonnegative": true,
+    "budget_floor": 891,
+    "difference_coefficients": {
+      "RA": 28,
+      "S2": 48,
+      "SE2": 8,
+      "SF": 4,
+      "SI": 32,
+      "SL": 12,
+      "W": 16,
+      "a1": 4,
+      "b3": 24,
+      "c2": 8,
+      "delta": 4,
+      "eta": 8
+    }
+  },
+  "claim_label": "AUDIT_PASS_DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "consequence": {
+    "conditional_Q_lower_bound": 7059,
+    "edge_added_projective": 7752,
+    "improved_rational_target": "70587/10",
+    "scalar_words": 15504,
+    "wave198_target": "281457/40"
+  },
+  "fiber_lemma": {
+    "degree5_empty_residual": "rho-1>=0",
+    "degree5_nonempty_residual": "unused_repetition+(k-1)>=0",
+    "examples": {
+      "degree4_multiple_values": {
+        "available_after_baseline": 2,
+        "degree": 4,
+        "distinct": 2,
+        "residual": 2,
+        "rho": 2,
+        "selected_charge": 0,
+        "selected_values": 2,
+        "valid": true
+      },
+      "degree5_empty": {
+        "available_after_baseline": 0,
+        "degree": 5,
+        "distinct": 4,
+        "residual": 0,
+        "rho": 1,
+        "selected_charge": 0,
+        "selected_values": 0,
+        "valid": true
+      },
+      "degree5_multiple_values": {
+        "available_after_baseline": 2,
+        "degree": 5,
+        "distinct": 2,
+        "residual": 1,
+        "rho": 3,
+        "selected_charge": 1,
+        "selected_values": 2,
+        "valid": true
+      },
+      "degree5_single_saturated": {
+        "available_after_baseline": 3,
+        "degree": 5,
+        "distinct": 1,
+        "residual": 0,
+        "rho": 4,
+        "selected_charge": 3,
+        "selected_values": 1,
+        "valid": true
+      }
+    },
+    "identity": "rho-sum_selected(m_y-1)=sum_selected(r_y-m_y)+sum_unselected(r_z-1)>=0",
+    "nonbaseline_residual": "unused_repetition+k>=0"
+  },
+  "global_elimination": {
+    "derived_row": "9*SF+9*g+3*SH+delta+epsilon-3*eta>=891",
+    "floor": 891,
+    "q_identity": "4*q=297-3*SF-3*g-SH+epsilon+delta+eta"
+  },
+  "local_to_global": {
+    "deficient_center": "delta_x>=sum_selected_at_x(m_y-2)",
+    "global": "delta>=3*q-epsilon",
+    "tight_center": "delta_x>=sum_selected_at_x(m_y-2)",
+    "tight_center_degree_five_baselines": 3
+  },
+  "search_scope": "exact multiset identities and symbolic coefficient algebra only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search"
+}

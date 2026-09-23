@@ -1,0 +1,54 @@
+role: proof_b
+date_utc: 2026-07-28T13:18:51Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: DERIVED
+scope: >-
+  Exact symbolic four-root covariance inequality involving n3, the induced
+  order-eight cube count, and the induced Wagner/Mobius-ladder count for a
+  hypothetical srg(99,14,1,2). This is not an independently verified graph
+  theorem, a strict upper bound, or a Conway-99 resolution.
+inputs:
+  - path: attempts/wave152-four-root-order8/simplified-mask12-cut-2.json
+    sha256: 8bed853973bb5964a3a9d4f37c8b808e6149701c00fd62c7e607f5e543cdb965
+  - path: verification/wave43-seven-deck-endpoint/independent_check.py
+    sha256: 324a4b84c081c8d2ad8a6a11bae45e0327c03ee2158036156c27efa66fcf790b
+method: >-
+  Starting from the SRG parameters, independently counted the ordered
+  mask-12 roots; parsed but did not execute the frozen independent N9
+  six-set formula; exhaustively combined both orientations of flags 21812
+  and 22708 across every covering free-pair pattern and every unseen edge;
+  applied local lambda/mu caps; canonically identified the order-six and
+  order-eight unions; and expanded the exact Cauchy-Schwarz covariance
+  expression. The stored endpoint constant was compared only after the
+  symbolic derivation.
+command: >-
+  python attempts\wave157-general-cube-wagner\derive_symbolic_cut.py
+test_command: >-
+  python -m unittest
+  attempts\wave157-general-cube-wagner\test_derive_symbolic_cut.py -v
+outputs:
+  - path: attempts/wave157-general-cube-wagner/derive_symbolic_cut.py
+    sha256: 54c6aa736412cde15b1a36bb918542a0f7affc497c8d12db1abe3eb8b1f4a5ec
+  - path: attempts/wave157-general-cube-wagner/exact-results.json
+    sha256: c52eaca24a9b1fe5e7465dcb51895d90597f249a4decc513d3658af65ec66e0e
+  - path: attempts/wave157-general-cube-wagner/test_derive_symbolic_cut.py
+    sha256: 3d187efb59991f67e54ddef205b1f4338590792407eeff87cb4b587cd5df0a5b
+  - path: attempts/wave157-general-cube-wagner/derivation.md
+    sha256: 6875630d236709857335ca5db2887f6311b5d33e9c94456911a552246fa99086
+mathematical_certificate_sha256: 541ade20e3238a0e67a02defb22c7ca1912893b20bb7f3232bde5c9d7bf03dc9
+derived_inequality: 41580 - n3 + 12*cube8 - 4*wagner8 >= 0
+endpoint_specialization: 18711 + 6*cube8 - 2*wagner8 >= 0
+limitations:
+  - The discovery package cannot independently certify itself.
+  - The inequality is compatible with n3=4158 and cube8=wagner8=0.
+  - A new independent cube/Wagner comparison would be needed for a strict bound.
+  - No graph is constructed.
+  - endpoint_n3_4158 remains UNKNOWN.
+  - strict_upper_bound_below_4158 remains NOT_PROVED.
+  - Conway_99 remains UNKNOWN.
+resource_floor:
+  required_free_physical_memory_percent: 15.0
+  observed_minimum_free_physical_memory_percent: 18.08728025283736
+tests:
+  command_result: 5 passed
+  elapsed_seconds: 13.907

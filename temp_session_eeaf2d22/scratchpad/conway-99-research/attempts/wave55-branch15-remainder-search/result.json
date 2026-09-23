@@ -1,0 +1,48 @@
+{
+  "claim_label": "UNKNOWN",
+  "conclusion": {
+    "branch15_status": "UNKNOWN",
+    "complete_case_unsat_coverage": "0/33",
+    "complete_endpoint_cases_closed": 0,
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "mathematical_evidence": "NONE"
+  },
+  "formula": {
+    "path": "attempts/wave53-proof-cover/branch-15-x187-zero.opb",
+    "sha256": "b1681416ee2860c4b40ce854fb533062af8e1c7a9dc0c423ba0c5f0545677d08"
+  },
+  "format": "wave55-branch15-remainder-bounded-run-v1",
+  "partial_proof": {
+    "bytes": 488832021,
+    "publication_status": "EXCLUDED_NONTERMINAL",
+    "sha256": "faceba1de1f33eb3d719296663fe9ac889c7d71efaa7cc6dd343d176e570fbc3"
+  },
+  "resource_boundary": {
+    "continuous_host_monitor_transcript_retained": false,
+    "minimum_required_free_physical_memory_percent": 20,
+    "wsl_mem_available_kib_after": 29460580,
+    "wsl_mem_available_kib_before": 29453984,
+    "wsl_mem_total_kib": 32430252
+  },
+  "role": "proof_a",
+  "scope": "bounded proof-producing Exact run on branch15 AND x187=0",
+  "solver": {
+    "conflicts": 112215,
+    "cpu_seconds": 120.061,
+    "decisions": 807666,
+    "exit_code": 0,
+    "parse_seconds": 3.75835,
+    "propagations": 140931770,
+    "solutions": 0,
+    "solve_seconds": 116.3,
+    "status": "UNKNOWN",
+    "timeout_is_strict_process_wall": false,
+    "timeout_setting_seconds": 120,
+    "transcript_sha256": "c89ef24b102e9c2d0f3006f14f96e0e66321bf39b372d2105df12febce21eec5"
+  },
+  "tool": {
+    "identity": "Exact commit b921cd1",
+    "sha256": "842ac70b4e938d24f537a56513ff64ea845206c714ce34da467ce146c5c5c928"
+  }
+}

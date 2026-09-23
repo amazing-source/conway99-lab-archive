@@ -1,0 +1,34 @@
+role: proof_a
+date_utc: 2026-07-28T15:50:51Z
+git_commit: 43c97357471609ea133b1e35a555c54aa6c7517b
+claim_label: DERIVED
+scope: >-
+  Show that one-mark Wagner completion is an order-eight zero-or-one event,
+  test the pairwise failure-incompatibility route, retain a five-failure
+  local null gadget, and redirect to failure hypergraphs or lifted exact
+  moments.
+inputs:
+  - path: verification/wave167-nonedge-core-fringe/package-manifest.sha256
+    sha256: 100624255e4e0c68a7ccdd8c5c17fd400d848cb9f5cbf481a1dc382e3579c1c4
+  - path: verification/wave161-four-root-cut-loop/package-manifest.sha256
+    sha256: b0c5221a362fd83f9e10950b3ccfd94f1a8743fc621d6c2af6d6ed171cf36106
+method: >-
+  Forced common-neighbor completion, exact divisibility arithmetic,
+  candidate-correlation analysis, degree-saturated five-mark local gadget,
+  and fail-closed separation of local satisfiability from SRG extendability.
+command: none; paper derivation only
+outputs:
+  - path: attempts/wave169-failure-hypergraph/README.md
+    sha256: 927bdeb720928a8b397aac4584694e58056f2f914a651172650c45c06190b975
+  - path: attempts/wave169-failure-hypergraph/derivation.md
+    sha256: bcf5bd272100872019bb674fae5f332269ba1a4b606249f8b048791f4878edca
+  - path: attempts/wave169-failure-hypergraph/failed-routes.md
+    sha256: ec8d157e4c0ca60a0a043f4d59c4b9ba6f1040a7fe253aa4bfb3ae3b0bec174f
+  - path: attempts/wave169-failure-hypergraph/protocol.md
+    sha256: 764c9a6486424d2a139e9cf1b7bc85f5869de7117eee9108eb94a519313e96d3
+limitations:
+  - The five-mark gadget is not a full SRG or an extendability proof.
+  - Only insufficiency of the currently encoded local clauses is derived.
+  - No lifted hypergraph or conic certificate is supplied.
+  - No strict n3 bound or endpoint exclusion follows.
+  - Literature novelty and Conway-99 remain UNKNOWN.

@@ -1,0 +1,1302 @@
+{
+  "crossing_counts": {
+    "1x1": [
+      0
+    ],
+    "1x2": [
+      0
+    ],
+    "2x1": [
+      0
+    ],
+    "2x2": [
+      0,
+      4
+    ],
+    "2x3": [
+      0,
+      4
+    ],
+    "3x1": [
+      0
+    ],
+    "3x2": [
+      0,
+      4
+    ],
+    "3x3": [
+      0,
+      4,
+      6
+    ],
+    "4x2": [
+      0,
+      4
+    ]
+  },
+  "hostile_mutations": {
+    "Z_four_edge_counterpressure": "REJECTED: outside square <= 788 < integer minimum 796",
+    "abstract_R_cycle_on_meeting_points": "REJECTED by disjoint-endpoint semantics; cycle partition alone cannot detect this",
+    "degree_sequence_only_cubic_classifier": "REJECTED: 2-switch preserves 3^6 but changes K3,3 to prism class",
+    "double_count_one_positive_endpoint": "REJECTED: one original neighbor contributes four, not eight",
+    "drop_column_endpoint_rule": "REJECTED: adds a false two-edge crossing",
+    "histogram_correct_first_wrong_second": "REJECTED",
+    "histogram_correct_population_wrong_first": "REJECTED",
+    "impose_connected_complement": "REJECTED AS RESTRICTION: deletes the K3,3 class",
+    "locally_cubic_distinct_triangle_intersections": "REJECTED by no-Berge; adjacency matrix alone cannot detect this",
+    "loop_graph_impostor": "REJECTED by simple-graph validator",
+    "moment_collision_K1,3_vs_K3": "RETAINED: both have (T,U)=(6,12); moments do not identify topology",
+    "omit_one_of_two_positive_endpoints": "REJECTED: leaves fixed sum four instead of eight",
+    "parallel_graph_impostor": "REJECTED by simple-graph validator",
+    "r19_one_unit_transfer": "RETAINED: maps 2^18 4 to the genuine 2^17 3^2 profile",
+    "r20_one_unit_transfer": "REJECTED: creates forbidden active q=1",
+    "retain_common_label": "REJECTED: creates a false four-edge meeting crossing",
+    "swap_crossing_endpoints": "CONFIRMED: exact count set is symmetric"
+  },
+  "inputs_sha256": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "agents/2026-07-23-wave19-n3-60-structural.md": "b2f90af07f34a6525ea35cdf4d392d95aea10fc319633cd17037d00145690744",
+    "attempts/wave19-n3-60-structural/exact-checks.json": "fc884ea131b1b6c926d9e71ddb1f7925e15c39498f1d7b72819a6473b39ab8dd",
+    "attempts/wave19-n3-60-structural/exact_check.py": "c7564eef0f1c62165c91a36071ab34b494ead891877011e755407ad48adee460",
+    "attempts/wave19-n3-60-structural/failed-attempts.md": "62d43cdb66c599c8c1e1618ca54267c1bf08ba20ad175e04883349cf6f876a0e",
+    "attempts/wave19-n3-60-structural/residual-certificates.json": "3396b3b67b944b86bfd0d51e8beca25dfc9350815269c62cda4fa7c22a7a5c8b",
+    "attempts/wave19-n3-60-structural/test_exact_check.py": "1b1d2628d6c2d837dec24ec679d579676b5a0e66962e0266cee2642040bf6165",
+    "verification/2026-07-23-wave15-global-lift-audit.md": "edda3785d080db464028f10c22bcae5c0bf17f1e61432a8641bfa6ffdccab036",
+    "verification/2026-07-23-wave16-n3-51-structural-audit.md": "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6"
+  },
+  "r20_m29_exclusions": {
+    "size4": {
+      "T": 6,
+      "U": 36,
+      "sum": 226,
+      "sum_squares": 698,
+      "vertices": 70
+    },
+    "two_size3": [
+      {
+        "T": 4,
+        "integer_minimum_square": 756,
+        "minimum_U": 8,
+        "outside_square_upper": 752,
+        "outside_sum": 228
+      },
+      {
+        "T": 6,
+        "integer_minimum_square": 742,
+        "minimum_U": 10,
+        "outside_square_upper": 724,
+        "outside_sum": 226
+      }
+    ]
+  },
+  "r20_point_profiles": {
+    "r20_m27": [
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        8
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        7
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        6
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        6
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        5
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "r20_m28": [
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        6
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        5
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "r20_m29": [
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ]
+    ],
+    "r20_m30": [
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ]
+  },
+  "residual_A_m27": {
+    "compatibility_boundary": [
+      "J adjacency does not encode which active label realizes each meeting",
+      "the size-two cycle partition does not assign point endpoints or enforce disjointness",
+      "neither item is joined to a 20-label, 27-point linear incidence system"
+    ],
+    "cubic_classification": {
+      "complement_component_type_counts": {
+        "3+3": 10,
+        "6": 60
+      },
+      "isomorphism_types": [
+        "K3,3",
+        "triangular_prism"
+      ],
+      "labeled_cubic_graph_count": 70,
+      "triangle_counts": {
+        "K3,3": 0,
+        "triangular_prism": 2
+      }
+    },
+    "local_no_Berge_realizations": {
+      "K3,3": {
+        "label_occurrence_multiset": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "meeting_degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "meeting_triangle_count": 0,
+        "scope": "six size-three points only; no completion by size-two points"
+      },
+      "triangular_prism": {
+        "label_occurrence_multiset": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        "meeting_degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "meeting_triangle_count": 2,
+        "scope": "six size-three points only; no completion by size-two points"
+      }
+    },
+    "outside_histogram": [
+      [
+        3,
+        72
+      ]
+    ],
+    "outside_moments": {
+      "T": 0,
+      "U": 0,
+      "sum": 216,
+      "sum_squares": 648,
+      "vertices": 72
+    },
+    "size2_2factor_cycle_partition_count": 60
+  },
+  "residual_B_m30": {
+    "R_2factor_cycle_partition_count": 331,
+    "compatibility_boundary": [
+      "F, R, and Z are not instantiated on one common labeled point set",
+      "cycle partitions do not enforce that R endpoints are disjoint F-edges",
+      "Z topology types do not enforce disjoint endpoints or edge-disjointness from R",
+      "outside histograms solve only the first two moments, not vertex assignments or SRG extension constraints"
+    ],
+    "rejected_T_8_10": [
+      {
+        "T": 8,
+        "integer_minimum_square": 796,
+        "minimum_U": 8,
+        "outside_square_upper": 788,
+        "outside_sum": 232
+      },
+      {
+        "T": 10,
+        "integer_minimum_square": 782,
+        "minimum_U": 10,
+        "outside_square_upper": 760,
+        "outside_sum": 230
+      }
+    ],
+    "z_topologies": {
+      "2K2": {
+        "T": 4,
+        "U": 4,
+        "histograms_if_at_most_ten": null,
+        "outside_histogram_count": 69,
+        "outside_square_sum": 844,
+        "outside_sum": 236
+      },
+      "3K2": {
+        "T": 6,
+        "U": 6,
+        "histograms_if_at_most_ten": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              39
+            ],
+            [
+              4,
+              29
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              42
+            ],
+            [
+              4,
+              24
+            ],
+            [
+              5,
+              2
+            ]
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              39
+            ],
+            [
+              4,
+              27
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              36
+            ],
+            [
+              4,
+              30
+            ]
+          ],
+          [
+            [
+              3,
+              44
+            ],
+            [
+              4,
+              24
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              45
+            ],
+            [
+              4,
+              21
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "outside_histogram_count": 6,
+        "outside_square_sum": 816,
+        "outside_sum": 234
+      },
+      "K1,3": {
+        "T": 6,
+        "U": 12,
+        "histograms_if_at_most_ten": [
+          [
+            [
+              3,
+              42
+            ],
+            [
+              4,
+              27
+            ]
+          ]
+        ],
+        "outside_histogram_count": 1,
+        "outside_square_sum": 810,
+        "outside_sum": 234
+      },
+      "K2": {
+        "T": 2,
+        "U": 2,
+        "histograms_if_at_most_ten": null,
+        "outside_histogram_count": 354,
+        "outside_square_sum": 872,
+        "outside_sum": 238
+      },
+      "K3": {
+        "T": 6,
+        "U": 12,
+        "histograms_if_at_most_ten": [
+          [
+            [
+              3,
+              42
+            ],
+            [
+              4,
+              27
+            ]
+          ]
+        ],
+        "outside_histogram_count": 1,
+        "outside_square_sum": 810,
+        "outside_sum": 234
+      },
+      "P3": {
+        "T": 4,
+        "U": 6,
+        "histograms_if_at_most_ten": null,
+        "outside_histogram_count": 52,
+        "outside_square_sum": 842,
+        "outside_sum": 236
+      },
+      "P3_plus_K2": {
+        "T": 6,
+        "U": 8,
+        "histograms_if_at_most_ten": [
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              41
+            ],
+            [
+              4,
+              26
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              38
+            ],
+            [
+              4,
+              29
+            ]
+          ],
+          [
+            [
+              3,
+              44
+            ],
+            [
+              4,
+              23
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        ],
+        "outside_histogram_count": 3,
+        "outside_square_sum": 814,
+        "outside_sum": 234
+      },
+      "P4": {
+        "T": 6,
+        "U": 10,
+        "histograms_if_at_most_ten": [
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              40
+            ],
+            [
+              4,
+              28
+            ]
+          ],
+          [
+            [
+              3,
+              43
+            ],
+            [
+              4,
+              25
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        ],
+        "outside_histogram_count": 2,
+        "outside_square_sum": 812,
+        "outside_sum": 234
+      },
+      "empty": {
+        "T": 0,
+        "U": 0,
+        "histograms_if_at_most_ten": null,
+        "outside_histogram_count": 1297,
+        "outside_square_sum": 900,
+        "outside_sum": 240
+      }
+    }
+  },
+  "status_boundary": {
+    "conditional_n3_60": "UNKNOWN_FINITE_RESIDUAL",
+    "conway_99_target": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  },
+  "sum_q_40": {
+    "profile_count": 13,
+    "profiles": [
+      [
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "candidate_static_code_review": {
+    "candidate_code_executed": false,
+    "candidate_code_imported": false,
+    "exact_check": {
+      "dynamic_execution_calls": [],
+      "imports": [
+        "__future__",
+        "argparse",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "syntax_parse": "PASS"
+    },
+    "mode": "AST_AND_TEXT_ONLY",
+    "test_exact_check": {
+      "dynamic_execution_calls": [],
+      "imports": [
+        "__future__",
+        "exact_check",
+        "hashlib",
+        "json",
+        "pathlib",
+        "tempfile",
+        "unittest"
+      ],
+      "syntax_parse": "PASS"
+    },
+    "test_method_count": 15,
+    "test_methods": [
+      "test_design_and_two_factor_cycle_types",
+      "test_deterministic_json",
+      "test_equitable_partition",
+      "test_extension_criterion_schema",
+      "test_fixed_support_and_label_multiplicity",
+      "test_forced_O_graph_spectrum_and_cycles",
+      "test_forced_support_star_edges",
+      "test_frozen_inputs",
+      "test_hostile_abstract_design_is_exact_but_insufficient",
+      "test_hostile_partial_pair_is_rejected",
+      "test_mu_two_is_active",
+      "test_quadratic_exact_arithmetic",
+      "test_shape_mutation_is_rejected",
+      "test_status_wall",
+      "test_triangle_and_edge_partition"
+    ]
+  },
+  "comparison_mode": "STATIC_CLEAN_ROOM_NO_CANDIDATE_EXECUTION",
+  "hostile_PG_3_2_reconstruction": {
+    "B_sha256": "dde3d4d8262a88e1de3078ae3fe3ef37087d2f3fed1ab251efe4c924292f81fb",
+    "FB_histogram": {
+      "0": 17,
+      "1": 55,
+      "2": 75,
+      "3": 48,
+      "4": 9,
+      "5": 2,
+      "6": 3,
+      "7": 1
+    },
+    "FB_mismatch_count": 135,
+    "block_count": 70,
+    "checks": {
+      "70_distinct_blocks": true,
+      "FB_equals_2J": false,
+      "candidate_B_hash_matches": true,
+      "candidate_FB_histogram_matches": true,
+      "candidate_FB_mismatch_matches": true,
+      "candidate_O_label_hash_matches": true,
+      "candidate_support_adjacency_hash_matches": true,
+      "candidate_support_to_O_hash_matches": true,
+      "column_weight_14": true,
+      "pair_intersection_2": true,
+      "row_weight_3": true
+    },
+    "column_weight_set": [
+      14
+    ],
+    "construction": "two disjoint PG(3,2) line designs",
+    "pair_intersection_set": [
+      2
+    ],
+    "permutation": [
+      7,
+      4,
+      9,
+      10,
+      1,
+      14,
+      8,
+      6,
+      5,
+      12,
+      11,
+      2,
+      13,
+      0,
+      3
+    ],
+    "row_weight_set": [
+      3
+    ],
+    "verdict": "EXACT_ABSTRACT_DESIGN_BUT_NOT_FIXED_LABEL_COUPLING"
+  },
+  "input_integrity": {
+    "all_hashes_pass": true,
+    "candidate_inner_manifest_composition": "1 report + 7 other attempts files; self-hash intentionally omitted",
+    "candidate_inner_manifest_entries": 8,
+    "candidate_inner_manifest_sha256": "153860d39fe7274a2f55ee952bcad1135cf4134ccc36d9aec07f6da379c5ca04",
+    "candidate_input_freeze_entries": 6,
+    "candidate_release_inventory_composition": "1 report + 8 attempts files, including the inner manifest",
+    "candidate_release_inventory_entries": 9,
+    "candidate_release_inventory_sha256": "f10119fecdbd226ca5a89180e2c8663b88c8f7d929ed8a619015070e0f637566",
+    "precomparison_manifest_entries": 8,
+    "precomparison_manifest_sha256": "a0cd7d284a23aba5576f2da2a1282c9acb209953c3da5d01e706d793f61d3ea7"
+  },
+  "limitations": [
+    "Candidate Python was parsed statically but never imported or executed.",
+    "Verification certifies the structural reduction and conditional consequences, not existence of binary D,B matrices.",
+    "The finite criterion is graph-complete but does not itself satisfy the projector, lattice, tensor, or Schur endpoint filters.",
+    "No complete search or infeasibility certificate is present."
+  ],
+  "release_metadata_corrections": {
+    "inventory_count": {
+      "composition": "1 report + 8 attempts files, including the inner manifest",
+      "inner_manifest_entries": 8,
+      "inner_manifest_note": "self-hash omitted, so it lists the report plus 7 other attempts files",
+      "validated_total": 9
+    },
+    "manifest_hash": {
+      "superseded_release_note": "17f9...",
+      "validated_candidate_inner_manifest_sha256": "153860d39fe7274a2f55ee952bcad1135cf4134ccc36d9aec07f6da379c5ca04"
+    }
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope_review": {
+    "binary_solution_claimed": false,
+    "endpoint_solution_claimed": false,
+    "failed_routes_status_wall": "PASS",
+    "machine_readable_limitations": "PASS",
+    "report_graph_only_scope": "PASS"
+  },
+  "semantic_comparison": {
+    "block_scope": "necessary and sufficient for the 99-vertex SRG graph extension",
+    "checks": {
+      "conditional_induced_graph_spectrum": true,
+      "partition_quotient_Q_independence": true,
+      "raw_binary_space_and_no_automorphism": true,
+      "simple_2_design": true,
+      "six_block_equations_under_notation_map": true,
+      "status_wall": true
+    },
+    "endpoint_scope": "projector, lattice, tensor, and Schur filters remain additional",
+    "notation_map_candidate_to_cleanroom": {
+      "A_S": "F (support adjacency)",
+      "B": "B (O-Q incidence)",
+      "D": "H (induced O adjacency)",
+      "F": "D (support-to-O incidence)"
+    }
+  },
+  "spectral_reconstruction": {
+    "connected_reason": "the degree-9 eigenvalue has multiplicity one in a 9-regular graph",
+    "determinant": "2^32*3^29",
+    "edge_count": 315,
+    "four_cycle_count": 294,
+    "four_cycle_formula": "tr(H^4)=2|E|+4*n*binom(d,2)+8*C4",
+    "moments": {
+      "0": 70,
+      "1": 0,
+      "2": 630,
+      "3": 336,
+      "4": 13062
+    },
+    "spectrum": {
+      "-1": 14,
+      "-1+sqrt(2)": 6,
+      "-1-sqrt(2)": 6,
+      "-4": 16,
+      "3": 27,
+      "9": 1
+    },
+    "triangle_count": 56
+  },
+  "triangle_census_reconstruction": {
+    "D_edge_partition": {
+      "O": 168,
+      "Q": 105,
+      "S": 42
+    },
+    "D_triangle_count": 56,
+    "target_edge_count": 693,
+    "target_triangle_count": 231,
+    "target_triangle_partition": {
+      "one_S_two_O": 42,
+      "three_O": 56,
+      "two_O_one_Q": 105,
+      "two_S_one_O": 28
+    }
+  },
+  "verdict": {
+    "Conway_99": "UNKNOWN",
+    "binary_criterion_solution": "UNKNOWN",
+    "candidate_core_structural_claims": "VERIFIED",
+    "candidate_manifest_and_results_consistency": "VERIFIED",
+    "material_discrepancy": "NONE_FOUND",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rooted_endpoint": "UNKNOWN",
+    "rooted_graph_extension_or_exclusion": "UNKNOWN"
+  }
+}

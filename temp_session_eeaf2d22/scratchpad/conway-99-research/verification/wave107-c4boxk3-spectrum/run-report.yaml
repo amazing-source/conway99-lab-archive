@@ -1,0 +1,43 @@
+role: verifier
+date_utc: 2026-07-28T03:53:38Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: VERIFIED
+verdict: VERIFIED_SCOPED
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2) containing the induced
+  12-vertex C4 Cartesian K3 motif, independently verify the characteristic
+  polynomial and immediate exact graph invariants of the 87-vertex principal
+  complement.
+inputs:
+  - path: attempts/wave107-c4boxk3-spectrum/package-manifest.sha256
+    sha256: 7e899602825d3cdf989affade8a1e5a6256f17ba911f6351ea8bfe4a3b05d2b0
+  - path: attempts/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+method: >-
+  Validate the sealed discovery manifest; reconstruct the motif in a
+  different vertex order; obtain its characteristic polynomial from exact
+  traces and Newton identities; derive the SRG resolvent and apply Jacobi's
+  complementary-minor identity with the rank-one J action; independently
+  enumerate motif-neighborhood compatibility to force the degree census;
+  replay spectral moments, ranks, Perron connectedness, and interlacing; then
+  rerun discovery only after the independent result passes.
+command: >-
+  python -B verification/wave107-c4boxk3-spectrum/independent_check.py
+  --verify && python -B -m unittest discover -s
+  verification/wave107-c4boxk3-spectrum -p "test_*.py" -v &&
+  python -B attempts/wave107-c4boxk3-spectrum/exact_check.py --verify &&
+  python -B -m unittest discover -s
+  attempts/wave107-c4boxk3-spectrum -p "test_*.py" -v
+outputs:
+  - path: verification/wave107-c4boxk3-spectrum/exact-results.json
+    sha256: 23420de0104704fdc903c8ce80f556e1c4b1d392d468569a2ac55641c3431199
+  - path: verification/wave107-c4boxk3-spectrum/report.md
+    sha256: 9bfa212959914ea8cb857c8a69e4381871c91bd58b1c9adbecc384851d26023d
+limitations:
+  - The result is conditional on occurrence of the induced motif.
+  - The corrected spectrum passes interlacing and gives no obstruction.
+  - The motif is not excluded and a full extension remains UNKNOWN.
+  - Conway-99 remains UNKNOWN.
+  - Literature novelty remains UNKNOWN.

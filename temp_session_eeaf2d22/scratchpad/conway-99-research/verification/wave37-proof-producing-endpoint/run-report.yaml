@@ -1,0 +1,28 @@
+role: verifier
+date_utc: 2026-07-27T00:26:00Z
+git_commit: a45592a91a34d2f2bb7ee4c266f3b979e86e399d
+claim_label: VERIFIED
+scope: "Branch-15 OPB formula artifact identity, canonical syntax, full independent semantic reconstruction, metadata binding, deterministic gzip round trip, and pinned Exact parser acceptance"
+inputs:
+  attempts/wave37-proof-producing-endpoint/export_endpoint_opb.py: b9cb895625e89709bfef765156a7fa0dd7c842a1d6db41401b83df15e986d902
+  attempts/wave37-proof-producing-endpoint/branch-15-formula.json: 3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6
+  attempts/wave37-proof-producing-endpoint/branch-15.opb: 4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5
+  attempts/wave37-proof-producing-endpoint/branch-15.opb.gz: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  attempts/wave37-proof-producing-endpoint/compression-audit.json: 155edb45fb4a8d678b31f8ee05e3f87b0f55c39559147b149df6dc2d87c04845
+method: "Independent line-by-line reconstruction of all 574615 constraints from verifier-side rooted data, separate syntax census, gzip byte audit, and --onlyparse replay with the pinned Exact binary"
+command: |
+  .\.venv\Scripts\python.exe -B verification\wave37-proof-producing-endpoint\independent_check.py --output verification\wave37-proof-producing-endpoint\independent-results.json
+  .\.venv\Scripts\python.exe -B -m unittest -v verification\wave37-proof-producing-endpoint\test_independent_check.py
+  "$EXACT" --onlyparse "$FORMULA"
+outputs:
+  verification/wave37-proof-producing-endpoint/independent_check.py: 2f2fd92567e4b7f0cb2425cd6b55a1a883bb2abb480996d822756b6410f87e40
+  verification/wave37-proof-producing-endpoint/test_independent_check.py: b852f2f57ec952f201eed225b605f772235be279e579cd82fef675872604ced7
+  verification/wave37-proof-producing-endpoint/independent-results.json: 6ee9efc52b7123ab805efa47ff05ad131a2647af78122cf93a50b699d24d0f21
+  verification/wave37-proof-producing-endpoint/exact-parser-evidence.txt: 452e04f02476bce7d30dfac9b10c4d2c134e027630a6e5c45625cc2b9719d0dc
+  verification/wave37-proof-producing-endpoint/audit.md: b84a4197c70468c5be8ee29ad903ad855e155ffd00fb1efa90ef707373cb10dc
+tests:
+  independent: "5 passed"
+limitations:
+  - "The formula represents only refined branch 15, one of 33 endpoint-compatible cases."
+  - "Exact --onlyparse is syntax acceptance, not SAT, UNSAT, or proof checking."
+  - "No proof log, assignment, decoded graph, endpoint exclusion, or upper-bound improvement exists."

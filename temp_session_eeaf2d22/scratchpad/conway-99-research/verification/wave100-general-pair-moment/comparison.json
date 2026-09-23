@@ -1,0 +1,33 @@
+{
+  "agreement": {
+    "compatible_rows_checked": 1387,
+    "even_bound": "N14<=2*floor((55440-5*n3)/14)",
+    "floor_sum_upper": "34650+15P",
+    "n3_coefficient": -5,
+    "rootwise_bound": "a14(o)<=350+floor(5*f_o/2)",
+    "rows_strictly_improved_by_even_rounding": 693,
+    "sum_f_identity": "sum_o f_o=6P"
+  },
+  "attempt_manifest_entries_verified": 9,
+  "attempt_manifest_sha256": "0dedf60c7994f842887c084bae7f6585f8fc98be568c940efb5b5ea90320bc88",
+  "claim_label": "VERIFIED",
+  "clean_room_seal": {
+    "independent_result_claim_label": "PENDING_DISCOVERY_COMPARISON",
+    "precomparison_hashes": "precomparison.sha256"
+  },
+  "dependency_note": "Discovery correctly marked Wave99 unverified at creation time; the separated Wave99 verifier now independently certifies the local cap used here.",
+  "format": "wave100-general-pair-moment-comparison-v1",
+  "role": "verifier",
+  "scope_audit": {
+    "requires_P0": false,
+    "requires_rank_28": false,
+    "scope_mixing_found": false
+  },
+  "status_boundary": {
+    "Conway_99": "UNKNOWN",
+    "graph_nonexistence": "NOT_PROVED",
+    "novelty": "UNKNOWN",
+    "strict_n3_upper_bound": "NOT_PROVED"
+  },
+  "verdict": "VERIFIED SCOPED: every hypothetical srg(99,14,1,2) satisfies N14<=2*floor((55440-5*n3)/14)"
+}

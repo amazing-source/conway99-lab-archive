@@ -1,0 +1,125 @@
+{
+  "claim_label": "CANDIDATE",
+  "conclusion": {
+    "endpoint_n3_4158": "UNKNOWN",
+    "exact_rational_dual_certificate": "NOT_EXTRACTED",
+    "graph_constructed": false,
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  },
+  "exact_construction": {
+    "canonical_root_family_count": 21,
+    "class_streams": {
+      "5": {
+        "count": 21,
+        "sha256": "f9bd6d5818a81c1b026ac46e467609435576a54f933e6d5beac5c13b20259686"
+      },
+      "6": {
+        "count": 62,
+        "sha256": "5cd10b0861dfba894731a89a269255a7c0a495f8ee7420552aebb13bafb8b75f"
+      },
+      "7": {
+        "count": 208,
+        "sha256": "89c646b6cae3018cad44b2f73cd1ef2569f4e108132002f0bcc7653d7229314a"
+      }
+    },
+    "labelled_root_mask_count": 683,
+    "nonempty_root_class_records": 67054,
+    "nonzero_ordered_attachment_entries": 407194,
+    "ordered_root_embedding_visits": {
+      "6": 44640,
+      "7": 524160
+    },
+    "root_families": {
+      "0": 32,
+      "1": 32,
+      "3": 28,
+      "7": 22,
+      "15": 16,
+      "19": 16,
+      "20": 32,
+      "21": 26,
+      "23": 16,
+      "28": 28,
+      "29": 21,
+      "31": 13,
+      "54": 18,
+      "58": 24,
+      "59": 16,
+      "62": 16,
+      "184": 16,
+      "185": 15,
+      "207": 10,
+      "220": 21,
+      "221": 12
+    },
+    "sparse_labelled_tensor_sha256": "c239f2b4f31a26dc331f5ad28d664cd48e69417384279f78119978469ec30f80"
+  },
+  "format": "wave49-five-root-compact-handoff-v1",
+  "normalization": {
+    "matrix": "M_sigma/(N_sigma*Aut(sigma)*94^2)",
+    "order6": "same free vertex, diagonal contribution",
+    "order7": "ordered distinct free vertices",
+    "root_labels": "pointwise fixed; no automorphism division"
+  },
+  "outputs": {
+    "coefficients.json": {
+      "bytes": 1249312,
+      "sha256": "66aeb26175643030770c8060a0550d202c56b6a9636e245ef19866a4a9cf308d"
+    },
+    "combined-sdp-result.json": {
+      "bytes": 1154631,
+      "sha256": "1e41b1fd961714b24f69d1c31474f48b91dca88d938f5c97d5aa2424b8aac152"
+    },
+    "results.json": {
+      "bytes": 448044,
+      "sha256": "f8604031259a92776b29cda161344fd9b2bdf3ea395c3d8ce53facb82981f8c5"
+    }
+  },
+  "resource_guard": {
+    "minimum_free_memory_percent_required": 20.0,
+    "minimum_observed_free_memory_percent_exact_run": 61.82,
+    "status": "PASS"
+  },
+  "root_relabelling": {
+    "class_tensor_record_checks": 680400,
+    "mapping_checks": 2520,
+    "nonidentity_mapping_checks": 2499,
+    "permutations_per_root": 120,
+    "status": "PASS_EXACT",
+    "target_graph_automorphism_assumed": false,
+    "theorem": "M_{pi(sigma)} = P_pi M_sigma P_pi^T coefficientwise for every pi in S5"
+  },
+  "scope": "Exact candidate five-root one-free attachment moment layer and floating Wave48+Wave49 numerical scout at the n3=4158 endpoint.",
+  "verifier_boundary": {
+    "discovery_may_certify_itself": false,
+    "instructions": "Use verifier-protocol.md; do not import either discovery implementation.",
+    "permitted_scoped_labels": [
+      "VERIFIED_SCOPED",
+      "REFUTED",
+      "UNKNOWN"
+    ]
+  },
+  "witnesses_and_controls": {
+    "control_graph_family_pairs": 42,
+    "control_graphs": [
+      "Petersen",
+      "Clebsch"
+    ],
+    "control_status": "PASS_EXACT_DIRECT_EQUALS_EXPANSION",
+    "exactly_indefinite_matrices": 357,
+    "exactly_psd_matrices": 0,
+    "immutable_witness_count": 17,
+    "targets_refuted_by_at_least_one_family": 17
+  },
+  "wave48_wave49_numerical_scout": {
+    "candidate_and_float_duals_preserved": true,
+    "common_margin": -6.948173993109943e-06,
+    "exact_rational_certificate": false,
+    "interpretation": "NUMERICAL_BOUNDARY_DIAGNOSTIC_ONLY",
+    "minimum_wave49_full_eigenvalue": -5.630551168455903e-09,
+    "scaled_linear_max_abs_residual": 3.1086244689504383e-15,
+    "solver": "CLARABEL",
+    "solver_status": "optimal_inaccurate",
+    "used_as_proof": false
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "actual_incidence_spectrum": {
+    "gamma_spectrum": [
+      {
+        "eigenvalue": 18,
+        "multiplicity": 1
+      },
+      {
+        "eigenvalue": 7,
+        "multiplicity": 54
+      },
+      {
+        "eigenvalue": 0,
+        "multiplicity": 44
+      },
+      {
+        "eigenvalue": -3,
+        "multiplicity": 132
+      }
+    ],
+    "hypotheses": [
+      "putative srg(99,14,1,2)",
+      "lambda=1, hence every edge lies in a unique triangle",
+      "N*N^T=7I+A",
+      "N^T*N=3I+Gamma"
+    ],
+    "rank_N": 99,
+    "scope": "actual-incidence only",
+    "triangle_count": 231
+  },
+  "candidate_manifest": {
+    "audit.md": "71b6f184cf35bf3407529b42a20be4f0ccb957a39d0bbf294d19200b37bcb02f",
+    "correction-ledger.md": "3d2e10fe8ad8e2fbf24d9d449e69eecda950e40ba7b2f29c81867f2b5600cf4f",
+    "protocol-freeze.md": "3c645dcd4188c9c34ba9e04e2fbd966708d05080a33caa95c720a1fde46283d2",
+    "query-ledger.json": "7e7812a3dbf8c19a31eec58cc43c764aa1b61e7ad0fa1b8147b02fccfadef2c6",
+    "run-report.yaml": "d411bcc7c9e92d4c06ee5c96a0b8496551ea73488c21b7e9becae169bbe9f025",
+    "source-metadata.json": "6da7402bc6dbfa9f1b6a7c59d5f1ca74a841bb65e6ad3b0f5595afcf322f890e"
+  },
+  "candidate_version": "v2_corrected",
+  "claim_label": "INDEPENDENT_CORRECTED_BYTE_REPLAY",
+  "endpoint_arithmetic": {
+    "derived_endpoints": [
+      9,
+      21,
+      49,
+      81,
+      189,
+      441,
+      729,
+      1029
+    ],
+    "det_B_cap": 6525,
+    "det_Q_floor": 5,
+    "h_cap": 1305,
+    "rows": [
+      {
+        "exact_level": 3,
+        "h": 9,
+        "modular_determinant_required": 31381059609,
+        "modularity_veto": true,
+        "root_complement_determinant": 18,
+        "strong_21_modularity_veto": true,
+        "v3": 2,
+        "v7": 0
+      },
+      {
+        "exact_level": 21,
+        "h": 21,
+        "modular_determinant_required": 122694327386105632949003612841,
+        "modularity_veto": true,
+        "root_complement_determinant": 42,
+        "strong_21_modularity_veto": true,
+        "v3": 1,
+        "v7": 1
+      },
+      {
+        "exact_level": 7,
+        "h": 49,
+        "modular_determinant_required": 3909821048582988049,
+        "modularity_veto": true,
+        "root_complement_determinant": 98,
+        "strong_21_modularity_veto": true,
+        "v3": 0,
+        "v7": 2
+      },
+      {
+        "exact_level": 3,
+        "h": 81,
+        "modular_determinant_required": 31381059609,
+        "modularity_veto": true,
+        "root_complement_determinant": 162,
+        "strong_21_modularity_veto": true,
+        "v3": 4,
+        "v7": 0
+      },
+      {
+        "exact_level": 21,
+        "h": 189,
+        "modular_determinant_required": 122694327386105632949003612841,
+        "modularity_veto": true,
+        "root_complement_determinant": 378,
+        "strong_21_modularity_veto": true,
+        "v3": 3,
+        "v7": 1
+      },
+      {
+        "exact_level": 21,
+        "h": 441,
+        "modular_determinant_required": 122694327386105632949003612841,
+        "modularity_veto": true,
+        "root_complement_determinant": 882,
+        "strong_21_modularity_veto": true,
+        "v3": 2,
+        "v7": 2
+      },
+      {
+        "exact_level": 3,
+        "h": 729,
+        "modular_determinant_required": 31381059609,
+        "modularity_veto": true,
+        "root_complement_determinant": 1458,
+        "strong_21_modularity_veto": true,
+        "v3": 6,
+        "v7": 0
+      },
+      {
+        "exact_level": 21,
+        "h": 1029,
+        "modular_determinant_required": 122694327386105632949003612841,
+        "modularity_veto": true,
+        "root_complement_determinant": 2058,
+        "strong_21_modularity_veto": true,
+        "v3": 1,
+        "v7": 3
+      }
+    ]
+  },
+  "frozen_candidate": {
+    "agents/2026-07-24-wave32-statement-literature.md": "9ae998d92296e9467041a431fc04121fe1411f8ac620d3b08c4016bfc3fc57ff",
+    "verification/wave32-literature-audit/artifact-manifest.sha256": "9bdf458203beb32c76b993af2cb6130641546b5a7816f8bed507661e640173c6",
+    "verification/wave32-literature-audit/audit.md": "71b6f184cf35bf3407529b42a20be4f0ccb957a39d0bbf294d19200b37bcb02f",
+    "verification/wave32-literature-audit/correction-ledger.md": "3d2e10fe8ad8e2fbf24d9d449e69eecda950e40ba7b2f29c81867f2b5600cf4f",
+    "verification/wave32-literature-audit/protocol-freeze.md": "3c645dcd4188c9c34ba9e04e2fbd966708d05080a33caa95c720a1fde46283d2",
+    "verification/wave32-literature-audit/query-ledger.json": "7e7812a3dbf8c19a31eec58cc43c764aa1b61e7ad0fa1b8147b02fccfadef2c6",
+    "verification/wave32-literature-audit/run-report.yaml": "d411bcc7c9e92d4c06ee5c96a0b8496551ea73488c21b7e9becae169bbe9f025",
+    "verification/wave32-literature-audit/source-metadata.json": "6da7402bc6dbfa9f1b6a7c59d5f1ca74a841bb65e6ad3b0f5595afcf322f890e"
+  },
+  "query_accounting": {
+    "batch_count": 17,
+    "direct_inspection_event_count": 8,
+    "failed_access_used_as_evidence": false,
+    "failed_or_incomplete_access_count": 3,
+    "lane_count": 17,
+    "query_count": 68,
+    "unique_query_count": 68
+  },
+  "schema_version": 2,
+  "source_accounting": {
+    "chronology_counts": {
+      "LOCATED_AS_EXACT_HYPOTHESIS_CONTROL_WAVE32": 2,
+      "LOCATED_DURING_WAVE32": 5,
+      "PRE_WAVE32_REPOSITORY_PRIOR_ART": 4,
+      "PRE_WAVE32_REPOSITORY_PRIOR_ART_ADDED_AFTER_INDEPENDENT_AUDIT": 1,
+      "PRE_WAVE32_REPOSITORY_PRIOR_ART_REINSPECTED": 1,
+      "REUSED_FROM_WAVE28_AND_REINSPECTED_WAVE32": 1,
+      "REUSED_FROM_WAVE28_PRIMARY_SOURCE": 1
+    },
+    "global_conway_99_status": "UNKNOWN",
+    "keramatipour": {
+      "arxiv": "2604.23037",
+      "chronology": "PRE_WAVE32_REPOSITORY_PRIOR_ART_ADDED_AFTER_INDEPENDENT_AUDIT",
+      "scope": "no existence or nonexistence certificate"
+    },
+    "novelty": "UNKNOWN",
+    "originally_frozen_record_count": 14,
+    "petro_phillips": {
+      "arxiv": "2502.17845",
+      "authors": [
+        "Robert R. Petro",
+        "Connor M. Phillips"
+      ],
+      "chronology": "PRE_WAVE32_REPOSITORY_PRIOR_ART",
+      "doi": "10.1016/j.disc.2025.114862",
+      "title": "On Clique Graphs and Clique Regular Graphs"
+    },
+    "phillips_thesis": {
+      "arxiv": "2605.22867",
+      "submitted_utc": "2026-05-19T20:49:26Z"
+    },
+    "post_verifier_source_additions": 1,
+    "raw_retention_counts": {
+      "raw_api_or_search_payloads_retained": 0,
+      "raw_html_retained": 0,
+      "raw_pdfs_retained": 0
+    },
+    "record_count": 15,
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15"
+    ]
+  },
+  "source_quality": {
+    "candidate_version": "v2_corrected",
+    "fatal_source_or_applicability_defect": false,
+    "global_status_change": false,
+    "resolved_findings": [
+      {
+        "corrected": [
+          "Rudolf Scharlau",
+          "Britta Blaschke"
+        ],
+        "source_id": "S06",
+        "v1_finding": "published author order reversed",
+        "v2_status": "RESOLVED"
+      },
+      {
+        "corrected_scope": "complete generating system containing all lattice vectors through the required bound",
+        "source_id": "S10",
+        "v1_finding": "'supplied lattice' compresses the algorithm's complete-generating-system input requirement",
+        "v2_status": "RESOLVED"
+      },
+      {
+        "corrected_chronology": "PRE_WAVE32_REPOSITORY_PRIOR_ART_ADDED_AFTER_INDEPENDENT_AUDIT",
+        "source_id": "S15",
+        "v1_finding": "Wave 32 metadata omits Keramatipour arXiv:2604.23037v2",
+        "v2_status": "RESOLVED"
+      }
+    ],
+    "scope_hardening": "actual-incidence qualifier retained in integration",
+    "v1_frozen_hashes": {
+      "agent report": "8e0d7950eac55e5eb36db9c6b015e7761e80f42f890ed1146fbb4b04036b4c43",
+      "artifact manifest": "7c3c46499f38289690cfd4b51769d98f93c530eeab130b9a73a1d1317eb44572",
+      "audit.md": "24dd1de8c3c8a6a6a84abddf2edf65492576643a4e58ed3dd669e4f471b69fab",
+      "run-report.yaml": "b410a42a2ab7a019609954edc69990794070404206f5c4f04f591b24639c5bda",
+      "source-metadata.json": "9db780c7db0151ca90e44781608f6139145b482f65dfa1132ae7fbad580ea85c"
+    },
+    "v1_objections_preserved": true
+  },
+  "statement_scope": {
+    "actual_excluded_branch": "rootless_integrally_decomposable",
+    "actual_surviving_branches": [
+      "rooted",
+      "rootless_integrally_indecomposable"
+    ],
+    "all_eight_h_retained": true,
+    "automorphism_assumed": false,
+    "bounded_no_hit_only": true,
+    "h_729_assumed": false,
+    "novelty": "UNKNOWN",
+    "v1_scope_objection_preserved_and_resolved": true,
+    "weaker_matrix_package_decomposable_branch": "not excluded by Wave 31 alone"
+  },
+  "supporting_inputs": {
+    "SOURCES.bib": "3c93b322ee4b0a61cf1407fdf5b082dbb90801459300289c7097b56833914a8e",
+    "verification/wave28-glue-discriminant/audit.md": "5c1dc7978d571a9471837b45a36663c7c457b6434800776501e4967146956b86",
+    "verification/wave28-literature-audit/audit.md": "ef18079970e410d114ab24752d4b738bc26ff4e6266a8cc775a4e14813fe1128",
+    "verification/wave28-theta-modular/audit.md": "adc90e404735ca147bc0a5418974d8af0bde71c4ddc2dc62a8c07dee670dbfeb",
+    "verification/wave31-sign-commutant/audit.md": "f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0"
+  },
+  "verdict": {
+    "actual_vs_matrix_separation": "PASS",
+    "core_statement_boundary": "PASS",
+    "current_status_language": "PASS_CONSERVATIVE",
+    "exact_endpoint_prior_result": "NOT_FOUND_IN_SEARCHED_SOURCES",
+    "global_conway_99": "UNKNOWN",
+    "literature_search_accounting": "PASS",
+    "metadata_quality": "PASS_CORRECTIONS_INTEGRATED",
+    "modularity_wall": "PASS",
+    "novelty": "UNKNOWN",
+    "petro_phillips_spectrum_and_hypotheses": "PASS",
+    "root_divisibility_index_determinant": "PASS"
+  }
+}

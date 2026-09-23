@@ -1,0 +1,41 @@
+role: verifier
+date_utc: 2026-07-28T22:56:47Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional rank-11 endpoint cross-circuit extraction, exact
+  two-transversal multiplicity, globally isolated balanced edge circuits,
+  and the lower bounds of 2079 projective circuits and 4158 short dual
+  words.
+inputs:
+  - attempts/wave179-global-transversal-circuits/package-manifest.sha256
+method: >-
+  Independent matroid minimality argument, intersecting-two-set
+  classification, lambda-one disjoint-realization analysis including
+  diagonal repetitions, Wave178 side-balance isolation, and exact projective
+  counting. No graph, code, SAT, configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave179-global-transversal-circuits\independent_check.py
+  --verify
+  verification\wave179-global-transversal-circuits\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave179-global-transversal-circuits\test_independent_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave179-global-transversal-circuits\exact_check.py --verify
+  attempts\wave179-global-transversal-circuits\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave179-global-transversal-circuits\test_exact_check.py
+outputs:
+  - verification/wave179-global-transversal-circuits/README.md
+  - verification/wave179-global-transversal-circuits/audit.md
+  - verification/wave179-global-transversal-circuits/protocol.md
+  - verification/wave179-global-transversal-circuits/independent_check.py
+  - verification/wave179-global-transversal-circuits/independent-results.json
+  - verification/wave179-global-transversal-circuits/test_independent_check.py
+  - verification/wave179-global-transversal-circuits/input-freeze.sha256
+limitations:
+  - Multiplicity-three nonedge stars remain possible.
+  - The short-word lower bound does not exclude the endpoint.
+  - The rank-11 branch and global graph existence remain UNKNOWN.
+  - External novelty is UNKNOWN.

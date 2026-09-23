@@ -1,0 +1,1364 @@
+{
+  "claim_label": "VERIFIED",
+  "collision_proofs": {
+    "dual_2one_translates": "A translate collision would force a g(S) of weight at most 39 to equal the all-one word of weight 99.",
+    "dual_pairs_and_triples": "Modulo 2, q_u +/- q_v +2q_w has residue g({u,v}); injectivity of g on subsets of size at most 3 fixes the base pair. Dividing a remaining equality by 2 gives a g-image of a subset of at most 3 vertices, so the sign class and w are fixed.",
+    "primal_2one_translates": "A collision with the 2*1 translate would require zA=1 mod2 for wt(z)<=3. This is impossible because im(A mod2) is even.",
+    "q_plus_minus_separation": {
+      "edge_minus": [
+        75,
+        24,
+        0
+      ],
+      "edge_plus": [
+        72,
+        24,
+        3
+      ],
+      "nonedge_minus": [
+        73,
+        26,
+        0
+      ],
+      "nonedge_plus": [
+        71,
+        26,
+        2
+      ]
+    },
+    "signed_primal_rows": "If alpha A=beta A mod4 for alpha,beta in Z4^99 of support at most 3, reduction mod2 puts the odd part of alpha-beta in D with weight at most 6; d(D)>=8 removes it. The remaining difference is 2z with wt(z)<=6, and zA=0 mod2 again forces z=0."
+  },
+  "forced_dual": {
+    "expected_from_even_coefficient_sum_support_at_most_3_and_2one_translates": 4126784,
+    "nonzero_compositions": 44,
+    "rows": [
+      {
+        "composition": [
+          0,
+          0,
+          99
+        ],
+        "lower_bound": 1
+      },
+      {
+        "composition": [
+          0,
+          24,
+          75
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          0,
+          26,
+          73
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          2,
+          26,
+          71
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          3,
+          24,
+          72
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          10,
+          26,
+          63
+        ],
+        "lower_bound": 166320
+      },
+      {
+        "composition": [
+          11,
+          24,
+          64
+        ],
+        "lower_bound": 83160
+      },
+      {
+        "composition": [
+          11,
+          26,
+          62
+        ],
+        "lower_bound": 457380
+      },
+      {
+        "composition": [
+          12,
+          24,
+          63
+        ],
+        "lower_bound": 34650
+      },
+      {
+        "composition": [
+          12,
+          26,
+          61
+        ],
+        "lower_bound": 232848
+      },
+      {
+        "composition": [
+          13,
+          24,
+          62
+        ],
+        "lower_bound": 49896
+      },
+      {
+        "composition": [
+          13,
+          26,
+          60
+        ],
+        "lower_bound": 756756
+      },
+      {
+        "composition": [
+          14,
+          24,
+          61
+        ],
+        "lower_bound": 99792
+      },
+      {
+        "composition": [
+          15,
+          0,
+          84
+        ],
+        "lower_bound": 99
+      },
+      {
+        "composition": [
+          15,
+          24,
+          60
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          24,
+          0,
+          75
+        ],
+        "lower_bound": 693
+      },
+      {
+        "composition": [
+          26,
+          0,
+          73
+        ],
+        "lower_bound": 4158
+      },
+      {
+        "composition": [
+          31,
+          0,
+          68
+        ],
+        "lower_bound": 41580
+      },
+      {
+        "composition": [
+          33,
+          0,
+          66
+        ],
+        "lower_bound": 79002
+      },
+      {
+        "composition": [
+          35,
+          0,
+          64
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          37,
+          0,
+          62
+        ],
+        "lower_bound": 27720
+      },
+      {
+        "composition": [
+          39,
+          0,
+          60
+        ],
+        "lower_bound": 231
+      },
+      {
+        "composition": [
+          60,
+          0,
+          39
+        ],
+        "lower_bound": 231
+      },
+      {
+        "composition": [
+          60,
+          24,
+          15
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          60,
+          26,
+          13
+        ],
+        "lower_bound": 756756
+      },
+      {
+        "composition": [
+          61,
+          24,
+          14
+        ],
+        "lower_bound": 99792
+      },
+      {
+        "composition": [
+          61,
+          26,
+          12
+        ],
+        "lower_bound": 232848
+      },
+      {
+        "composition": [
+          62,
+          0,
+          37
+        ],
+        "lower_bound": 27720
+      },
+      {
+        "composition": [
+          62,
+          24,
+          13
+        ],
+        "lower_bound": 49896
+      },
+      {
+        "composition": [
+          62,
+          26,
+          11
+        ],
+        "lower_bound": 457380
+      },
+      {
+        "composition": [
+          63,
+          24,
+          12
+        ],
+        "lower_bound": 34650
+      },
+      {
+        "composition": [
+          63,
+          26,
+          10
+        ],
+        "lower_bound": 166320
+      },
+      {
+        "composition": [
+          64,
+          0,
+          35
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          64,
+          24,
+          11
+        ],
+        "lower_bound": 83160
+      },
+      {
+        "composition": [
+          66,
+          0,
+          33
+        ],
+        "lower_bound": 79002
+      },
+      {
+        "composition": [
+          68,
+          0,
+          31
+        ],
+        "lower_bound": 41580
+      },
+      {
+        "composition": [
+          71,
+          26,
+          2
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          72,
+          24,
+          3
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          73,
+          0,
+          26
+        ],
+        "lower_bound": 4158
+      },
+      {
+        "composition": [
+          73,
+          26,
+          0
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          75,
+          0,
+          24
+        ],
+        "lower_bound": 693
+      },
+      {
+        "composition": [
+          75,
+          24,
+          0
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          84,
+          0,
+          15
+        ],
+        "lower_bound": 99
+      },
+      {
+        "composition": [
+          99,
+          0,
+          0
+        ],
+        "lower_bound": 1
+      }
+    ],
+    "sum_of_forced_lower_bounds": 4126784
+  },
+  "forced_primal": {
+    "expected_from_all_Z4_coefficients_support_at_most_3_and_2one_translates": 8557760,
+    "nonzero_compositions": 84,
+    "rows": [
+      {
+        "composition": [
+          0,
+          0,
+          99
+        ],
+        "lower_bound": 1
+      },
+      {
+        "composition": [
+          0,
+          14,
+          85
+        ],
+        "lower_bound": 198
+      },
+      {
+        "composition": [
+          0,
+          24,
+          75
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          0,
+          26,
+          73
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          0,
+          36,
+          63
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          1,
+          26,
+          72
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          1,
+          32,
+          66
+        ],
+        "lower_bound": 83160
+      },
+      {
+        "composition": [
+          1,
+          34,
+          64
+        ],
+        "lower_bound": 199584
+      },
+      {
+        "composition": [
+          1,
+          36,
+          62
+        ],
+        "lower_bound": 34650
+      },
+      {
+        "composition": [
+          2,
+          24,
+          73
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          2,
+          30,
+          67
+        ],
+        "lower_bound": 424116
+      },
+      {
+        "composition": [
+          2,
+          32,
+          65
+        ],
+        "lower_bound": 166320
+      },
+      {
+        "composition": [
+          2,
+          34,
+          63
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          2,
+          36,
+          61
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          3,
+          34,
+          62
+        ],
+        "lower_bound": 55440
+      },
+      {
+        "composition": [
+          3,
+          36,
+          60
+        ],
+        "lower_bound": 462
+      },
+      {
+        "composition": [
+          4,
+          34,
+          61
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          5,
+          32,
+          62
+        ],
+        "lower_bound": 83160
+      },
+      {
+        "composition": [
+          6,
+          30,
+          63
+        ],
+        "lower_bound": 141372
+      },
+      {
+        "composition": [
+          10,
+          24,
+          65
+        ],
+        "lower_bound": 424116
+      },
+      {
+        "composition": [
+          10,
+          26,
+          63
+        ],
+        "lower_bound": 83160
+      },
+      {
+        "composition": [
+          11,
+          24,
+          64
+        ],
+        "lower_bound": 166320
+      },
+      {
+        "composition": [
+          11,
+          26,
+          62
+        ],
+        "lower_bound": 133056
+      },
+      {
+        "composition": [
+          12,
+          14,
+          73
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          12,
+          24,
+          63
+        ],
+        "lower_bound": 773388
+      },
+      {
+        "composition": [
+          12,
+          26,
+          61
+        ],
+        "lower_bound": 51282
+      },
+      {
+        "composition": [
+          13,
+          14,
+          72
+        ],
+        "lower_bound": 2772
+      },
+      {
+        "composition": [
+          13,
+          24,
+          62
+        ],
+        "lower_bound": 232848
+      },
+      {
+        "composition": [
+          13,
+          26,
+          60
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          14,
+          0,
+          85
+        ],
+        "lower_bound": 99
+      },
+      {
+        "composition": [
+          14,
+          24,
+          61
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          20,
+          14,
+          65
+        ],
+        "lower_bound": 424116
+      },
+      {
+        "composition": [
+          21,
+          14,
+          64
+        ],
+        "lower_bound": 166320
+      },
+      {
+        "composition": [
+          22,
+          14,
+          63
+        ],
+        "lower_bound": 266112
+      },
+      {
+        "composition": [
+          23,
+          14,
+          62
+        ],
+        "lower_bound": 66528
+      },
+      {
+        "composition": [
+          24,
+          0,
+          75
+        ],
+        "lower_bound": 4158
+      },
+      {
+        "composition": [
+          24,
+          14,
+          61
+        ],
+        "lower_bound": 18018
+      },
+      {
+        "composition": [
+          26,
+          0,
+          73
+        ],
+        "lower_bound": 693
+      },
+      {
+        "composition": [
+          30,
+          0,
+          69
+        ],
+        "lower_bound": 70686
+      },
+      {
+        "composition": [
+          32,
+          0,
+          67
+        ],
+        "lower_bound": 41580
+      },
+      {
+        "composition": [
+          34,
+          0,
+          65
+        ],
+        "lower_bound": 36036
+      },
+      {
+        "composition": [
+          36,
+          0,
+          63
+        ],
+        "lower_bound": 8547
+      },
+      {
+        "composition": [
+          60,
+          26,
+          13
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          60,
+          36,
+          3
+        ],
+        "lower_bound": 462
+      },
+      {
+        "composition": [
+          61,
+          14,
+          24
+        ],
+        "lower_bound": 18018
+      },
+      {
+        "composition": [
+          61,
+          24,
+          14
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          61,
+          26,
+          12
+        ],
+        "lower_bound": 51282
+      },
+      {
+        "composition": [
+          61,
+          34,
+          4
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          61,
+          36,
+          2
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          62,
+          14,
+          23
+        ],
+        "lower_bound": 66528
+      },
+      {
+        "composition": [
+          62,
+          24,
+          13
+        ],
+        "lower_bound": 232848
+      },
+      {
+        "composition": [
+          62,
+          26,
+          11
+        ],
+        "lower_bound": 133056
+      },
+      {
+        "composition": [
+          62,
+          32,
+          5
+        ],
+        "lower_bound": 83160
+      },
+      {
+        "composition": [
+          62,
+          34,
+          3
+        ],
+        "lower_bound": 55440
+      },
+      {
+        "composition": [
+          62,
+          36,
+          1
+        ],
+        "lower_bound": 34650
+      },
+      {
+        "composition": [
+          63,
+          0,
+          36
+        ],
+        "lower_bound": 8547
+      },
+      {
+        "composition": [
+          63,
+          14,
+          22
+        ],
+        "lower_bound": 266112
+      },
+      {
+        "composition": [
+          63,
+          24,
+          12
+        ],
+        "lower_bound": 773388
+      },
+      {
+        "composition": [
+          63,
+          26,
+          10
+        ],
+        "lower_bound": 83160
+      },
+      {
+        "composition": [
+          63,
+          30,
+          6
+        ],
+        "lower_bound": 141372
+      },
+      {
+        "composition": [
+          63,
+          34,
+          2
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          63,
+          36,
+          0
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          64,
+          14,
+          21
+        ],
+        "lower_bound": 166320
+      },
+      {
+        "composition": [
+          64,
+          24,
+          11
+        ],
+        "lower_bound": 166320
+      },
+      {
+        "composition": [
+          64,
+          34,
+          1
+        ],
+        "lower_bound": 199584
+      },
+      {
+        "composition": [
+          65,
+          0,
+          34
+        ],
+        "lower_bound": 36036
+      },
+      {
+        "composition": [
+          65,
+          14,
+          20
+        ],
+        "lower_bound": 424116
+      },
+      {
+        "composition": [
+          65,
+          24,
+          10
+        ],
+        "lower_bound": 424116
+      },
+      {
+        "composition": [
+          65,
+          32,
+          2
+        ],
+        "lower_bound": 166320
+      },
+      {
+        "composition": [
+          66,
+          32,
+          1
+        ],
+        "lower_bound": 83160
+      },
+      {
+        "composition": [
+          67,
+          0,
+          32
+        ],
+        "lower_bound": 41580
+      },
+      {
+        "composition": [
+          67,
+          30,
+          2
+        ],
+        "lower_bound": 424116
+      },
+      {
+        "composition": [
+          69,
+          0,
+          30
+        ],
+        "lower_bound": 70686
+      },
+      {
+        "composition": [
+          72,
+          14,
+          13
+        ],
+        "lower_bound": 2772
+      },
+      {
+        "composition": [
+          72,
+          26,
+          1
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          73,
+          0,
+          26
+        ],
+        "lower_bound": 693
+      },
+      {
+        "composition": [
+          73,
+          14,
+          12
+        ],
+        "lower_bound": 16632
+      },
+      {
+        "composition": [
+          73,
+          24,
+          2
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          73,
+          26,
+          0
+        ],
+        "lower_bound": 1386
+      },
+      {
+        "composition": [
+          75,
+          0,
+          24
+        ],
+        "lower_bound": 4158
+      },
+      {
+        "composition": [
+          75,
+          24,
+          0
+        ],
+        "lower_bound": 8316
+      },
+      {
+        "composition": [
+          85,
+          0,
+          14
+        ],
+        "lower_bound": 99
+      },
+      {
+        "composition": [
+          85,
+          14,
+          0
+        ],
+        "lower_bound": 198
+      },
+      {
+        "composition": [
+          99,
+          0,
+          0
+        ],
+        "lower_bound": 1
+      }
+    ],
+    "sum_of_forced_lower_bounds": 8557760
+  },
+  "format": "wave134-z4-independent-verification-v1",
+  "independent_composition_crosscheck": {
+    "dual_match": true,
+    "method": "formula tables equal direct Venn-atom enumeration",
+    "primal_match": true
+  },
+  "macwilliams": {
+    "dual_to_primal": "swe_C(x,y,z)=|Cperp|^-1 swe_Cperp(x+2y+z,x-z,x-2y+z)",
+    "expected_normalization_product": 401734511064747568885490523085290650630550748445698208825344,
+    "hostile_coefficients_compared": 28982,
+    "normalization_product": 401734511064747568885490523085290650630550748445698208825344,
+    "primal_to_dual": "swe_Cperp(x,y,z)=|C|^-1 swe_C(x+2y+z,x-z,x-2y+z)",
+    "substitution_matrix_square": [
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ]
+  },
+  "residue_and_torsion": {
+    "both_torsion_codes_contain_one": true,
+    "dual_residue": "T_perp=D intersect even, dimension 44",
+    "dual_torsion": "D=R_perp=ker_F2(A), dimension 45",
+    "dual_torsion_gap": {
+      "forced_zero_weights": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "minimum_weight_lower_bound": 8
+    },
+    "identity_for_extra_torsion": "A(A+I)=12I+2J, hence 2*1 is in C over Z4",
+    "primal_residue": "R=im_F2(A), dimension 54",
+    "primal_torsion": "T=R+<1>, dimension 55",
+    "primal_torsion_gap": {
+      "forced_zero_weights": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "reason": "R has minimum at least 8 and maximum at most 92; the coset 1+R can therefore first occur at weight 7.",
+      "weight_7_status": "ALLOWED_NOT_FORCED_ZERO"
+    },
+    "torsion_complement_symmetry": true
+  },
+  "sealed_discovery": {
+    "entries_checked": 13,
+    "manifest": "package-manifest.sha256",
+    "manifest_sha256": "581678d37091754f4bf1f197223a120d82f3051020a45b601e84889dfdad81e9"
+  },
+  "sealed_result_audit": {
+    "Conway_99": "UNKNOWN",
+    "Z4_code_present": false,
+    "corrected_integral_feasibility": "UNKNOWN_NOT_RUN",
+    "corrected_rational_feasibility": "UNKNOWN_NOT_RUN",
+    "forced_composition_tables_match": true,
+    "graph_present": false,
+    "rational_witness_present": false,
+    "results_schema": "wave134-z4-derived-checkpoint-v1",
+    "results_sha256": "8d3e39c4360341f7d3d6b8ac496853c0ae19e546ab8655cc6939b36edbddb1a2",
+    "smith_types_and_orders_match": true,
+    "stale_searches_invalidated": true,
+    "status_schema": "wave134-search-status-v1",
+    "status_sha256": "d5d85b9df1d2664cb808cb9eacfffb069ad6e401e73a6e4cf5e956cbcd02fddb",
+    "structural_state_counts_match": true
+  },
+  "smith_and_types": {
+    "dual_order_two_size": 35184372088832,
+    "dual_size": 618970019642690137449562112,
+    "dual_type": "Z4^44 x Z2",
+    "frozen_smith_multiplicities": {
+      "1": 45,
+      "12": 43,
+      "3": 9,
+      "6": 1,
+      "84": 1
+    },
+    "primal_order_two_size": 36028797018963968,
+    "primal_size": 649037107316853453566312041152512,
+    "primal_type": "Z4^54 x Z2"
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "Z4_code_constructed": false,
+    "discovery_seal_bound": true,
+    "finite_integral_feasibility": "UNKNOWN_NOT_RUN_CORRECTED_MODEL",
+    "finite_rational_feasibility": "UNKNOWN_NOT_RUN_CORRECTED_MODEL",
+    "graph_constructed": false
+  },
+  "structural_orbits": {
+    "dual_allowed_orbits": 1114,
+    "dual_forbidden_orbits": 161,
+    "dual_forbidden_orbits_by_odd_count": {
+      "0": 7,
+      "2": 49,
+      "4": 48,
+      "6": 47,
+      "92": 4,
+      "94": 3,
+      "96": 2,
+      "98": 1
+    },
+    "dual_weight_92_orbits_forced_zero": 4,
+    "dual_weight_92_reason": "Res(Cperp)=D intersect even, 1 is in D, and d(D)>=8; therefore wt(d)<=91 and even wt(d)<=90.",
+    "even_odd_symbol_orbits": 1275,
+    "primal_allowed_orbits": 1119,
+    "primal_forbidden_orbits": 156,
+    "primal_forbidden_orbits_by_odd_count": {
+      "0": 6,
+      "2": 49,
+      "4": 48,
+      "6": 47,
+      "94": 3,
+      "96": 2,
+      "98": 1
+    },
+    "raw_states": 5050
+  },
+  "structural_zeros": {
+    "dual_even_symbol_slice": {
+      "complement_symmetric": true,
+      "forbidden_two_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "size": 35184372088832
+    },
+    "dual_odd_symbol_forbidden_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55,
+      57,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      71,
+      73,
+      75,
+      77,
+      79,
+      81,
+      83,
+      85,
+      87,
+      89,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "odd_symbol_interpretation": "odd-symbol count equals binary residue weight",
+    "primal_even_symbol_slice": {
+      "complement_symmetric": true,
+      "forbidden_two_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "size": 36028797018963968,
+      "weight_7_allowed": true
+    },
+    "primal_odd_symbol_forbidden_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55,
+      57,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      71,
+      73,
+      75,
+      77,
+      79,
+      81,
+      83,
+      85,
+      87,
+      89,
+      91,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ]
+  }
+}

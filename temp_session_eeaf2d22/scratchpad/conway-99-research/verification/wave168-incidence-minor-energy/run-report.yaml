@@ -1,0 +1,29 @@
+role: verifier
+date_utc: 2026-07-28T15:43:19Z
+git_commit: 97fca7b5bd42d867e58e53d518a6bd2c39393004
+claim_label: VERIFIED
+scope: >-
+  Independently audit the point-triangle incidence matrices and spectra,
+  prism/block-codegree equivalence, cube and Wagner determinant energies,
+  global Cauchy-Binet identity, and rectangular neighborhood-triple Gram.
+inputs:
+  - path: attempts/wave168-incidence-minor-energy/package-manifest.sha256
+    sha256: 99dc88bf04570b8239e5cc771a0dae3b76c22ad3b57305b617a7e9dc9431a6f5
+method: >-
+  Clean-room incidence and multiplicity count, spectral transfer,
+  cross-edge bijection, exact motif eigenvalue products, principal-minor
+  summation, and direct row-intersection reconstruction.
+command: none; independent paper verification
+outputs:
+  - path: verification/wave168-incidence-minor-energy/README.md
+    sha256: 140a710756968ac7e8d26f6c276f678056ca9daaa1dd1c741186f3c81114150a
+  - path: verification/wave168-incidence-minor-energy/verification-report.md
+    sha256: 3390e75f224d01056273747753e4ddc92f2e4040659393d8673ecb8f54d636a4
+  - path: verification/wave168-incidence-minor-energy/protocol.md
+    sha256: 07cac4d27fbf4d167adc928ae020266d7b34c218daf1c0e638209f1772927c8f
+limitations:
+  - No signed bound for all other eight-point configurations is proved.
+  - The proposed incidence-minor classification remains unexecuted.
+  - The modular observations are only Gram-level statements.
+  - No strict n3 bound or endpoint exclusion follows.
+  - Literature novelty and Conway-99 remain UNKNOWN.

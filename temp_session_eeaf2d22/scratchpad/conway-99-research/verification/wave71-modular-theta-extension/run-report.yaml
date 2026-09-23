@@ -1,0 +1,59 @@
+role: verifier
+date_utc: 2026-07-27T23:36:52Z
+git_commit: 5f497b545c536de90a1a557c51b53f041fecf7db
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification, conditional on a hypothetical srg(99,14,1,2)
+  and the independently verified Wave66 package, of the Wave71 index-three
+  level-7 neighbor, Skoruppa mod-7 theta reduction, q=16 coefficient
+  congruence, integer -4 eigenvector dictionary through norm 18, and
+  low-norm signed-support structures.
+inputs:
+  - path: verification/wave66-spherical-code-shift/audit.md
+    sha256: cf96f813020e9ed34ffea698b64a571509bf6e13d9b0c0fdd3a989234c27be20
+  - path: verification/wave66-spherical-code-shift/independent-results.json
+    sha256: 3d6689b292fa5605e012da55f94e299926c1762c6ec77b8ef06007c62a65b61f
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: attempts/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: f0551b070edafc29d4adf5a380769c9bf4793721634e627ec1babd86b3117b39
+  - path: attempts/wave71-modular-theta-extension/literature-freeze.md
+    sha256: 6287a65bd832b06f2b81f7d5315479de0f5b5f573a7cda1cc29de368047b25f0
+method: >-
+  Freeze all discovery bytes before inspection; independently reconstruct
+  the marked Z/9 class, index-three isotropic overlattice L, scaled dual
+  K=sqrt(7)L*, exact level and elementary divisors; check every hypothesis
+  and the theta normalization of Skoruppa's arXiv:0807.4694v1 Main Theorem;
+  generate E4 and E6 and row-reduce every exact weight over F7 through q^14;
+  derive the q=16 mod-14 relation; prove the short-vector/integer-eigenvector
+  bijection; exhaust all low-norm magnitude, sign, and aggregate edge-count
+  profiles; and refine surviving supports with lambda=1 and mu=2. Compare
+  only after the independent canonical artifact exists.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave71-modular-theta-extension\independent_verify.py --verify ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  verification\wave71-modular-theta-extension\test_independent_verify.py ;
+  .\.venv\Scripts\python.exe
+  attempts\wave71-modular-theta-extension\exact_check.py --verify ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  attempts\wave71-modular-theta-extension\test_exact_check.py
+outputs:
+  - path: verification/wave71-modular-theta-extension/independent-results.json
+    sha256: 7f58e0f1d56f2ece262c196bb7395db1c6f6cd9705c1184f84fd324fbe734127
+  - path: verification/wave71-modular-theta-extension/audit.md
+    sha256: 0a6280aa008ea7d329c3609bb044f636d52600315e5aff78a27c4712a439cd73
+  - path: verification/wave71-modular-theta-extension/comparison.json
+    sha256: 75b825ff73f054e876ac5030ae57fac8f7791f47c729943e72c9b0d8f2e7e4cc
+verdict: VERIFIED_WITH_CORRECTION
+correction: >-
+  Discovery retains the norm-18 h=2 case. Opposite-side codegrees already
+  saturate its lambda/mu capacity, so outside vertices meet either sign side
+  at most once; 82 required incidences into 81 outside vertices are
+  impossible. The verified norm-18 survivors are h=0 or h=1.
+limitations: >-
+  The theorem is conditional on Wave66 and graph existence. Skoruppa's
+  primary theorem is cited rather than reproved. Scalar theta congruences
+  and discriminant data do not construct a lattice or the marked 99-vector
+  frame. Norm-14, norm-16, and norm-18 h=0/1 alternatives remain live.
+  Conway-99, endpoint resolution, and literature novelty remain UNKNOWN.

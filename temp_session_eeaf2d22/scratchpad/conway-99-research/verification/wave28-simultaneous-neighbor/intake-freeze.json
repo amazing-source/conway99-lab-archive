@@ -1,0 +1,27 @@
+{
+  "schema": "wave28-simultaneous-neighbor-intake-v1",
+  "date_utc": "2026-07-24",
+  "role": "verifier",
+  "inputs": [
+    {
+      "path": "agents/2026-07-24-wave28-simultaneous-neighbor-freeze.md",
+      "bytes": 5150,
+      "sha256": "7b8fce3763e2f6d4db2e0f7841e680d01486195d3ea4b6b04c5f59ace768d90a"
+    },
+    {
+      "path": "agents/2026-07-24-wave28-orchestrator-brief.md",
+      "bytes": 2617,
+      "sha256": "6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e"
+    },
+    {
+      "path": "attempts/wave27-a2free-construction/exact_check.py",
+      "bytes": 36630,
+      "sha256": "1bd20f820a5d4467f29860a03a93c4ef3192bb9df4b1c87901080ffa8b793f1e"
+    }
+  ],
+  "notes": [
+    "The final candidate freeze includes the preferred support, the retained initial support, and the preferred rank-one glue targets.",
+    "The checker reconstructs the Wave 27 forms and both neighbor bases independently; no submitted matrix inverse is imported.",
+    "Two earlier candidate-freeze hashes were superseded before final regeneration and are retained in failed-runs.md."
+  ]
+}

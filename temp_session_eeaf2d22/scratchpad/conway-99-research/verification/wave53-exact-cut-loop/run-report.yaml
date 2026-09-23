@@ -1,0 +1,69 @@
+role: verifier
+date_utc: 2026-07-27T20:28:34Z
+git_commit: a4a61658356253fb95cf68252c972a4f79df38fe
+claim_label: REFUTED
+scope: >-
+  Independent exact replay of the fixed Wave53 174-to-177-cut rational
+  relaxation, all four witnesses, all 32 Wave45/Wave47/Wave49 moment families
+  at each witness, three retained Wave49 cuts, duplicate normalization,
+  excluded fourth-cut Farkas boundary, manifests, and resource reserve.
+inputs:
+  - path: verification/wave53-exact-cut-loop/protocol-freeze.md
+    sha256: b52386ccdeb8025ece745e2a83b19549b47cb1e0e707fd84cba5043e9b7bad0a
+  - path: attempts/wave53-exact-cut-loop/exact-result.json
+    sha256: 092bc95cbc416185adbbffadd25b1435dc6e2ac38204e37c01d8cb0d2516d7ee
+  - path: attempts/wave53-exact-cut-loop/exact_cut_loop.py
+    sha256: 4e7a5a9e3b9cc4bc7fae6e64f220786862edbae4b3bdd90ea983e6509a183e3c
+  - path: attempts/wave44-rooted-flags/row-system.json
+    sha256: fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722
+  - path: attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json
+    sha256: ffcf9f9942446d66c3559d97954217af3ba17c1978ea9417c6e99920d4a45420
+  - path: verification/wave45-flag-moment/independent-results.json
+    sha256: 8d9a004392e3f642c0aacf272a33f7cce2bc21254e79fe4123bec5a065ae0bac
+  - path: attempts/wave47-three-root-moment/coefficients.json
+    sha256: 07b55f06ff8f7d5f2de53d92a3222366e122a7306028752ecd31c10962a824b3
+  - path: verification/wave49-five-root-moment/independent-coefficients.json
+    sha256: f3f1cd0bca98965a7893a8146ecee8dff755162f3b92eeb24e1dfbc003371d5f
+  - path: verification/wave51-rankone-cut-relaxation/exact-result.json
+    sha256: 527656f5d2d6a03d71234dc0fb110422ddfade1ac8b5a1d175168e857073edfc
+  - path: verification/wave51-rankone-cut-relaxation-independent/verification-result.json
+    sha256: 24cd2316c20beabe9ecd4e143eb310f8a200f45e49dda189e12d38bc46de1452
+method: >-
+  Preinspection-frozen clean-room reconstruction with Python integers and
+  Fraction arithmetic; independent graph canonicalization and deletion decks;
+  exact equation/cut/bound substitution; exact congruence sign witnesses;
+  primitive cut reconstruction; semantic row deduplication; then source
+  inspection and exact reproduction of the Wave45 full-stream
+  double-offdiagonal defect.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave53-exact-cut-loop\independent_check.py --output
+  verification\wave53-exact-cut-loop\independent-result.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave53-exact-cut-loop\postinspection_comparison.py --output
+  verification\wave53-exact-cut-loop\comparison-result.json;
+  .\.venv\Scripts\python.exe -B -m unittest
+  verification\wave53-exact-cut-loop\test_independent_check.py -v
+outputs:
+  - path: verification/wave53-exact-cut-loop/independent-result.json
+    sha256: a81c158f85f5aa0b18be6c72404c3b4877c0acccf9a185ef5aa44672c1cd3591
+  - path: verification/wave53-exact-cut-loop/comparison-result.json
+    sha256: 5ff960cbdbd3f3484f9f85432980693c95313fd46dc7221ea40e625346a69218
+  - path: verification/wave53-exact-cut-loop/audit.md
+    sha256: 566795db51a4e5e20000f87e3b5109484818aeaefe241f5c60d239ea1967954f
+  - path: verification/wave53-exact-cut-loop/test-results.txt
+    sha256: d7bc580a22b983feb02f4eb4ea5b00869d65a3af03659019d27cb57c1c89f58b
+  - path: verification/wave53-exact-cut-loop/preinspection-freeze.sha256
+    sha256: e8a7c0afb8e12edc5f48262f08fdc825072ed45e3eac8c4aee277bccce0fe607
+limitations:
+  - >-
+    REFUTED applies to the 128/128 indefinite claim and related Wave45
+    direction/candidate metadata; fixed 177-cut rational feasibility and the
+    three retained Wave49 cuts are independently verified.
+  - Rational aggregate witnesses are not integer count vectors or graphs.
+  - No full PSD cone or full stored-cut ledger was exhausted.
+  - The package contains no exact fourth-cut Farkas multiplier certificate.
+  - >-
+    Historical discovery RAM samples were not embedded; the independent run
+    verified at least 15 percent free physical memory at start and finish.
+  - Endpoint n3=4158, strict upper bound, Conway-99, and novelty remain UNKNOWN.

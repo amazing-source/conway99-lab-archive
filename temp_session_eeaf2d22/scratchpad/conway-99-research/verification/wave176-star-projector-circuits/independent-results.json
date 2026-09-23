@@ -1,0 +1,91 @@
+{
+  "ambient_dimension": 11,
+  "cycles": {
+    "2+2+2": {
+      "cross_quotient_dimension_lower": 1,
+      "gram_nullity": 4,
+      "gram_rank": 9,
+      "possible_span_ranks": [
+        9,
+        10
+      ],
+      "true_relation_dimension_lower": 3
+    },
+    "3+3": {
+      "cross_quotient_dimension_lower": 2,
+      "gram_nullity": 5,
+      "gram_rank": 8,
+      "possible_span_ranks": [
+        8,
+        9
+      ],
+      "true_relation_dimension_lower": 4
+    },
+    "4+2": {
+      "cross_quotient_dimension_lower": 1,
+      "gram_nullity": 3,
+      "gram_rank": 10,
+      "possible_span_ranks": [
+        10
+      ],
+      "support": {
+        "kernel_words": 27,
+        "minimum_support": 4,
+        "nonstar_words": 18,
+        "support_distribution": {
+          "11": 4,
+          "12": 2,
+          "4": 2,
+          "7": 4,
+          "8": 2,
+          "9": 4
+        }
+      },
+      "true_relation_dimension_lower": 3
+    },
+    "6": {
+      "cross_quotient_dimension_lower": 1,
+      "gram_nullity": 3,
+      "gram_rank": 10,
+      "possible_span_ranks": [
+        10
+      ],
+      "support": {
+        "kernel_words": 27,
+        "minimum_support": 8,
+        "nonstar_words": 18,
+        "support_distribution": {
+          "8": 6,
+          "9": 12
+        }
+      },
+      "true_relation_dimension_lower": 3
+    }
+  },
+  "field": 3,
+  "integer_BLBt": {
+    "diagonal": 0,
+    "edge_entry": 12,
+    "nonneighbor_average": 7,
+    "nonneighbor_sum": 588,
+    "row_sum": 756
+  },
+  "nonadjacent": {
+    "columns": 14,
+    "cross_quotient_dimension_lower": 1,
+    "true_relation_dimension_lower": 3
+  },
+  "scope": "conditional identities verified; endpoint not excluded",
+  "star": {
+    "coefficient_relation_dimension": 1,
+    "gram_rank": 6,
+    "projector_action_mod_relation": true,
+    "projector_rank": 6,
+    "projector_trace_mod_3": 0
+  },
+  "trace_space": {
+    "self_adjoint_dimension": 66,
+    "trace_gram_rank_cap": 65,
+    "trace_zero_dimension": 65
+  }
+}

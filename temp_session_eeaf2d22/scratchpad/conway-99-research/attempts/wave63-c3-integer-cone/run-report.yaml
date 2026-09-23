@@ -1,0 +1,28 @@
+role: construction
+date_utc: 2026-07-27T22:09:30Z
+git_commit: 81c8d45426938ea8490af55d81f05b7c2ad99035
+claim_label: DERIVED
+scope: conditional prism-free endpoint kappa=3; exact rational pair-cone witnesses for a fixed 74-triple subset and one bounded binary MILP probe
+inputs:
+  - path: attempts/wave60-c3-incidence-design/component-census.json
+    sha256: 16e124587df5b37b3f4735e14894982750c60a303043125985383101331eb4de
+  - path: attempts/wave60-c3-incidence-design/exact-results.json
+    sha256: 35b6436c7ba5619fcf7e3840cbdacd594461c01df8758686450f5d8eea8e36f3
+  - path: attempts/wave61-c3-finite-field/exact-results.json
+    sha256: 936c76b7487d713421ef663aae4cc591f9bcf93f5d6a11f4aae3c0b5d4aa52f6
+  - path: verification/wave36-block-compatibility/independent-results.json
+    sha256: b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4
+method: independently rebuild all 1,140 candidate counts; screen 74 fixed stress lanes with sequential floating LP; exactify each feasible basis over Q with FLINT/Dixon; replay all 630 pair equations and coefficient bounds with a separate standard-library checker; run one 30-second binary MILP probe
+command: .\.venv\Scripts\python.exe -B attempts\wave63-c3-integer-cone\integer_cone.py --lp-time-limit 60 --milp-time-limit 30 --milp-lane-count 1 --output attempts\wave63-c3-integer-cone\exact-results.json
+outputs:
+  - path: attempts/wave63-c3-integer-cone/exact-results.json
+    sha256: 1c2feed3bf7451540a511d80cfd333c917be7e050315811cd4781f9aaed9cb12
+  - path: attempts/wave63-c3-integer-cone/exact-check-results.json
+    sha256: 496e014ea3f3789b5af52a592e5199aeba6cb27d392001a2d71630c93adabb17
+  - path: attempts/wave63-c3-integer-cone/integer_cone.py
+    sha256: 7272ee4600c36fd7603c448cf43d47915df5b01411aa46ce391b8c9f8407c153
+  - path: attempts/wave63-c3-integer-cone/exact_check.py
+    sha256: 412a94026406c7e69291f2d016b5c5a126dc950d30241f8b454d2c491cb1d8a9
+  - path: attempts/wave63-c3-integer-cone/test_exact_check.py
+    sha256: a397540c36ffe2bc7da109c7b1c52876f5e26018a01f4948e9042edd3879a690
+limitations: 74 of 1,140 unordered triples tested; not all 275 safe coordinate orbits; rational witnesses are not integer designs; binary MILP timeout is UNKNOWN and not nonexistence evidence; no compatible Y graph or full SRG; no endpoint exclusion or Conway-99 resolution; discovery cannot verify itself

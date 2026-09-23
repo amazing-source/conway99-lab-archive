@@ -1,0 +1,458 @@
+{
+  "branches": [
+    4,
+    5,
+    8,
+    10,
+    12
+  ],
+  "claim_label": "UNKNOWN",
+  "conflict_budget_per_branch": 100000,
+  "derive_only": true,
+  "endpoint_edge_catalog_sha256": "b03c1a237ddeb06eb29def61cff55763df76e1686f657bd588422cb9d72ea758",
+  "endpoint_unit_count": 84,
+  "format": "wave36-prism-free-rooted-branch-scout-v1",
+  "git_commit": "697cc02bcbe16b69aaf08822298e03c66329c64c",
+  "limitations": [
+    "BUDGET_UNKNOWN has no mathematical evidentiary value.",
+    "UNSAT_UNVERIFIED needs a retained formula and independently checked proof.",
+    "SAT_CANDIDATE needs independent complete-SRG and prism-free validation.",
+    "The six fixed-triangle clause families are consequences of P=0 but do not encode every possible prism."
+  ],
+  "mode": "fixed-triangle-prisms",
+  "records": [
+    {
+      "branch": 4,
+      "candidate_path": null,
+      "candidate_sha256": null,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 568776,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "mode": "fixed-triangle-prisms",
+      "solver": null,
+      "status": "NOT_RUN",
+      "strengthening": {
+        "clause_catalog_sha256": "f675391a81dd817fe45f805a9bc9309dba02910988b42988238b66e6c2f5ae2e",
+        "clause_length_histogram": {
+          "3": 606,
+          "5": 282168
+        },
+        "deduplicated_active_clause_count": 282774,
+        "fixed_triangle_count": 6,
+        "per_triangle": [
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              15,
+              39
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              27,
+              40
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              41,
+              43
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              42,
+              44
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              45,
+              47
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              46,
+              48
+            ]
+          }
+        ]
+      },
+      "wall_seconds": 6.480701100081205
+    },
+    {
+      "branch": 5,
+      "candidate_path": null,
+      "candidate_sha256": null,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 568776,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "mode": "fixed-triangle-prisms",
+      "solver": null,
+      "status": "NOT_RUN",
+      "strengthening": {
+        "clause_catalog_sha256": "1215e64d0b8ebd5c898278acdd828cb657d8f1a1485fba4893e34316d94edaf5",
+        "clause_length_histogram": {
+          "3": 606,
+          "5": 282168
+        },
+        "deduplicated_active_clause_count": 282774,
+        "fixed_triangle_count": 6,
+        "per_triangle": [
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              15,
+              39
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              27,
+              40
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              41,
+              43
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              42,
+              45
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              44,
+              47
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              46,
+              48
+            ]
+          }
+        ]
+      },
+      "wall_seconds": 7.082983799977228
+    },
+    {
+      "branch": 8,
+      "candidate_path": null,
+      "candidate_sha256": null,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 568776,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "mode": "fixed-triangle-prisms",
+      "solver": null,
+      "status": "NOT_RUN",
+      "strengthening": {
+        "clause_catalog_sha256": "bb9aac4e06e0d5f9b885aa0705b31d576d8cca7221075cfab938ce70f5716a53",
+        "clause_length_histogram": {
+          "3": 606,
+          "5": 282168
+        },
+        "deduplicated_active_clause_count": 282774,
+        "fixed_triangle_count": 6,
+        "per_triangle": [
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              15,
+              39
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              27,
+              41
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              40,
+              42
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              43,
+              45
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              44,
+              47
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              46,
+              48
+            ]
+          }
+        ]
+      },
+      "wall_seconds": 6.308798699988984
+    },
+    {
+      "branch": 10,
+      "candidate_path": null,
+      "candidate_sha256": null,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 568776,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "mode": "fixed-triangle-prisms",
+      "solver": null,
+      "status": "NOT_RUN",
+      "strengthening": {
+        "clause_catalog_sha256": "eedd27d0322694661a4142a54fca80c95e416b09b2d59d6b21cf74beb4ef2af5",
+        "clause_length_histogram": {
+          "3": 606,
+          "5": 282168
+        },
+        "deduplicated_active_clause_count": 282774,
+        "fixed_triangle_count": 6,
+        "per_triangle": [
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              15,
+              39
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              27,
+              41
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              40,
+              43
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              42,
+              44
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              45,
+              47
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              46,
+              48
+            ]
+          }
+        ]
+      },
+      "wall_seconds": 6.236258500022814
+    },
+    {
+      "branch": 12,
+      "candidate_path": null,
+      "candidate_sha256": null,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 568776,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "mode": "fixed-triangle-prisms",
+      "solver": null,
+      "status": "NOT_RUN",
+      "strengthening": {
+        "clause_catalog_sha256": "ac1aea55f24f3fd23045daa2195cadbd8c2a799b3a27f4755e1ad99290f238d7",
+        "clause_length_histogram": {
+          "3": 606,
+          "5": 282168
+        },
+        "deduplicated_active_clause_count": 282774,
+        "fixed_triangle_count": 6,
+        "per_triangle": [
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              15,
+              39
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              27,
+              41
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              40,
+              43
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              42,
+              45
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              44,
+              47
+            ]
+          },
+          {
+            "active_after_fixed_units": 47129,
+            "raw_clause_count": 64932,
+            "triangle": [
+              3,
+              46,
+              48
+            ]
+          }
+        ]
+      },
+      "wall_seconds": 7.0704581999452785
+    }
+  ],
+  "role": "construction",
+  "scope": "five exact normalized rooted branches under n3=4158 (P=0), with no completed-graph automorphism assumption",
+  "wall_seconds": 36.37357190006878
+}

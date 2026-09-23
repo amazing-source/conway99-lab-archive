@@ -1,0 +1,91 @@
+{
+  "audit_verdict": "PASS",
+  "bound": {
+    "C": 4158,
+    "Q": 6930,
+    "edge_added_projective": 7623,
+    "scalar_short_circuit_words": 15246
+  },
+  "certificate": {
+    "identity": "Q0-5*C/3=sum(nonnegative multiplier*slack)",
+    "multipliers": [
+      "2/3",
+      "1",
+      "2/3",
+      "1/3",
+      "1/3",
+      "1/6",
+      "1/2",
+      "1/3",
+      "1/3"
+    ],
+    "reduced_difference": {}
+  },
+  "claim_label": "DERIVED",
+  "local_type2": {
+    "conic": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dual_distance": 4,
+    "parent_intersection": [
+      0,
+      8
+    ],
+    "parent_intersection_size": 2,
+    "parent_x_profile": [
+      6,
+      2
+    ],
+    "parent_x_support": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "parent_y_profile": [
+      2,
+      6
+    ],
+    "parent_y_support": [
+      0,
+      1,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "null_control": {
+    "Q0": 6930,
+    "all_other_split_variables": 0,
+    "asserted_object": false,
+    "c1": 4158,
+    "n3": 1386,
+    "p3": 4158,
+    "r1": 4158
+  },
+  "rows": {
+    "RA": "3*h+y+3*g>=a2+a3+2*b3+c2",
+    "SL": "n1+2*n2+c1+2*r2+y+2*W>=C"
+  },
+  "search_scope": "fixed F3 vectors and exact rational identities only; no graph, cover, code, SAT, LP, configuration, enumeration, or isomorphism search"
+}

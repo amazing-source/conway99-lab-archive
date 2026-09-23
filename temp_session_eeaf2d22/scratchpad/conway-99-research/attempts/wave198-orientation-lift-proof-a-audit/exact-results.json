@@ -1,0 +1,53 @@
+{
+  "certificate": {
+    "edge_added_projective": 7730,
+    "integer_Q_lower_bound": 7037,
+    "remainder": {
+      "W": "2/5",
+      "a1": "1/10",
+      "b3": "3/5",
+      "c2": "1/5",
+      "g": "9/40"
+    },
+    "scalar_words": 15460,
+    "target": "281457/40"
+  },
+  "orientation": {
+    "flags_per_fixed_orientation": 5,
+    "global_row": "180*V-3*n3-4*p3-5*a3-5*b3>=0",
+    "old_row_relation": "S10=2*S5+(3*n3-p3)",
+    "private_selected_multiplicity": 1,
+    "selected_row": "3*n3+4*p3<=5*T"
+  },
+  "rational_null": {
+    "asserted_object": false,
+    "row": {
+      "C": "4158",
+      "V": "99",
+      "a2": "297/20",
+      "b1": "6237/10",
+      "c1": "13959/4",
+      "n1": "297/20",
+      "n2": "6237/20",
+      "n3": "1287",
+      "p2": "6237/20",
+      "p3": "13959/4",
+      "r1": "82269/20",
+      "r2": "297/40",
+      "y": "297/20"
+    },
+    "slacks": {
+      "Q0": "281457/40",
+      "RA": "0",
+      "S2": "0",
+      "S5": "0",
+      "SE2": "0",
+      "SF": "0",
+      "SH": "0",
+      "SI": "0",
+      "SL": "0"
+    }
+  },
+  "search_scope": "oriented incidence and exact rational algebra only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search",
+  "verdict": "ACCEPTED_AS_DERIVED"
+}

@@ -1,0 +1,122 @@
+{
+  "candidate_count_histogram": {
+    "15936": 56,
+    "17472": 189,
+    "19008": 63,
+    "19072": 18,
+    "19136": 126,
+    "19168": 72,
+    "19200": 54,
+    "20736": 3,
+    "20800": 72,
+    "20864": 84,
+    "20928": 48,
+    "20976": 12,
+    "20992": 18,
+    "21008": 36,
+    "21040": 32,
+    "21088": 21,
+    "21184": 1,
+    "22592": 18,
+    "22656": 6,
+    "22720": 39,
+    "22784": 3,
+    "22816": 12,
+    "22848": 24,
+    "22880": 30,
+    "22912": 15,
+    "22944": 12,
+    "22976": 12,
+    "24640": 12,
+    "24832": 15,
+    "24896": 12,
+    "24960": 12,
+    "25024": 3,
+    "26688": 3,
+    "27072": 6,
+    "27200": 1
+  },
+  "candidate_count_maximum": 27200,
+  "candidate_count_minimum": 15936,
+  "claim_label": "VERIFIED",
+  "coefficient_bounds_checked": "0 < x_s <= 1 exactly",
+  "component_type_triples_recounted": 1140,
+  "component_types_checked": 18,
+  "conway_99_status": "UNKNOWN",
+  "endpoint_status": "UNKNOWN",
+  "free_physical_memory_percent_finish": 56.303,
+  "free_physical_memory_percent_start": 56.588,
+  "limitations": [
+    "Only the fixed 74-lane subset is covered, not all 1,140 triples or 275 safe coordinate orbits.",
+    "Exact rational coefficients are not binary incidence designs.",
+    "No compatible Y graph or full strongly regular graph is constructed.",
+    "The bounded MILP nonhit has no proof certificate and is not negative evidence."
+  ],
+  "mathematical_mismatches": 0,
+  "milp": {
+    "bounded_binary_milp_probes": 1,
+    "integer_candidates": 0,
+    "interpretation": "30-second nonhit is not negative evidence",
+    "proof_certificates": 0,
+    "status": "UNKNOWN"
+  },
+  "novelty": "UNKNOWN",
+  "pair_equations_checked_per_witness": 630,
+  "pair_equations_checked_total": 46620,
+  "rational_witnesses_checked": 74,
+  "reported_rank_histogram_on_selected_lanes": {
+    "438": 56,
+    "442": 1,
+    "446": 1,
+    "450": 10,
+    "454": 1,
+    "458": 1,
+    "462": 4
+  },
+  "scope": "conditional prism-free n3=4158, kappa=3 fixed-triangle lane; 74 selected rational pair-cone certificates only",
+  "sealed_inputs": {
+    "package_files_checked": 14,
+    "package_manifest_sha256": "c85f9dcf3d0bdba2a41299c4a3c4fdd8c9802903cff04ab237f40d9840df6018",
+    "upstream_files_checked": 4
+  },
+  "selection": {
+    "category_memberships_before_overlap_removal": 82,
+    "diagonal_lane_count": 18,
+    "first_rank_stratum_indices": [
+      0,
+      2,
+      4,
+      35,
+      37,
+      324,
+      326
+    ],
+    "maximum_support_lane_count": 1,
+    "minimum_support_lane_count": 56,
+    "overlap_memberships_removed": 8,
+    "rank_strata": [
+      438,
+      442,
+      446,
+      450,
+      454,
+      458,
+      462
+    ],
+    "selected_lane_count": 74
+  },
+  "support_size_equals_reported_full_pair_F2_rank_on_all_lanes": true,
+  "support_size_histogram": {
+    "438": 56,
+    "442": 1,
+    "446": 1,
+    "450": 10,
+    "454": 1,
+    "458": 1,
+    "462": 4
+  },
+  "support_size_range": [
+    438,
+    462
+  ]
+}

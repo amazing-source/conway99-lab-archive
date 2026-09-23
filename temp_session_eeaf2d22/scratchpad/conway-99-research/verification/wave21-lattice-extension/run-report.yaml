@@ -1,0 +1,49 @@
+role: verifier
+date_utc: 2026-07-23T18:49:26Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: VERIFIED
+audit_verdict: PASS_WITH_NONBLOCKING_EXACT_STRENGTHENING
+scope: >-
+  Independent adversarial verification of the frozen Wave 21
+  lattice-extension submission and its finite endpoint, harmonic-cubic,
+  and q-profile consequences.
+inputs:
+  agents/2026-07-23-wave21-lattice-extension.md: 264027dc534d57aefd8f4d9037d041af2ca8e462efeb9ef22d07de4c40141b3e
+  attempts/wave21-lattice-extension/exact_check.py: 70111579d83bbd024eadc22e747261a7fa81849b7578b8481cafa595d2f7a5a4
+  attempts/wave21-lattice-extension/test_exact_check.py: 4f2c4a90a007a964e29c8c5f34fdaac31eed0d11b480385c437349bfdf5495fa
+  attempts/wave21-lattice-extension/exact-results.json: 18235cf32229bcdf1616a7560aa2389c830e7e23fa25f0a0fc02377c174dc53b
+  attempts/wave21-lattice-extension/input-freeze.sha256: 55ad0e889fcce5031b70ecdb3f9af6794e9cd8b5b3cd8ca9971473f587e1de25
+  attempts/wave21-lattice-extension/failed-runs.md: 7e90910e77d07896a486f93f75b5f358b5d95c71d4d0c7f7231ef32224132b69
+  attempts/wave21-lattice-extension/run-report.yaml: b13faabe23b3c4a3052a05059799492c5a991e3e6ff882e9e1645e6ff9a34625
+  agents/2026-07-23-wave20-global-schur.md: 64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+method: >-
+  Preinspection SHA-256 and byte freeze; independent reconstruction of the
+  primitive projector lattice, dual/index convention, integral Schur
+  endomorphism, determinant factorization, even-unimodular obstruction,
+  harmonic cubic, and contraction DP; a separate standard-library checker
+  with sixteen tests; submitted test replay and byte-identical regeneration;
+  and an additional exact mod-four determinant audit.
+command: |-
+  cd verification/wave21-lattice-extension
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json
+  cd ../../attempts/wave21-lattice-extension
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output ../../verification/wave21-lattice-extension/submitted-regenerated.json
+outputs:
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/wave21-lattice-extension/preinspection-freeze.sha256: b3f407fe5c31d7300d03289cf1f63bc4a9f4cbf0dd13c588ae2d79cd2a02e4af
+  verification/wave21-lattice-extension/postinspection-candidate-check.sha256: b3f407fe5c31d7300d03289cf1f63bc4a9f4cbf0dd13c588ae2d79cd2a02e4af
+  verification/wave21-lattice-extension/independent_check.py: 1b4ccf337b28b6af2fa85c3ac33d883d1d9830e0d784d5b07f03d46d30f02489
+  verification/wave21-lattice-extension/test_independent_check.py: 6f796936c220c5a108644735bdf583737f5011d4cb07f996535d411eb3ea2e17
+  verification/wave21-lattice-extension/independent-results.json: 735ff677e7837f14ec2a52cbccd827d30abc5eee68ee5e4f8e2bd6a9e5bd21b1
+  verification/wave21-lattice-extension/submitted-regenerated.json: 18235cf32229bcdf1616a7560aa2389c830e7e23fa25f0a0fc02377c174dc53b
+  verification/wave21-lattice-extension/theorem-sources.md: 7f70a36ad124a94d983771274cb7b925a4f2560d835b0f607563045110107f8f
+  verification/wave21-lattice-extension/verifier-failures.md: a58cb2ef45f14475fc9ef13719a830741fa85026571c8211764027c07e38929b
+limitations:
+  - No actual projector matrix or Conway graph is instantiated.
+  - The lattice index h remains undetermined.
+  - The strengthened endpoint condition h in {1,9} is necessary only.
+  - No unconditional improvement, construction, nonexistence proof, formal
+    proof, target-resolution claim, or novelty assessment is made.

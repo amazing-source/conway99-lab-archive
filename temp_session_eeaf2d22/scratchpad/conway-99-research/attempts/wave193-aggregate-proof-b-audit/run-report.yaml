@@ -1,0 +1,36 @@
+role: proof_b
+date_utc: 2026-07-29T03:16:03Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Independent audit of the Wave193 aggregate low-target scheme, its SR and
+  SL collision rows, and the exact Q>=ceil(59C/39)=6291 certificate.
+inputs:
+  - attempts/wave192-c4-cohomology-proof-b/package-manifest.sha256
+  - attempts/wave191-exact-three-residual-proof-a/package-manifest.sha256
+  - verification/wave190-residual-stability-verifier/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+method: >-
+  Exact rational coefficient expansion, private-label continuation audit,
+  exact-three pair-label capacity, and exhaustive-by-type low-target
+  collision classification. No graph, cover, code, SAT, LP, configuration,
+  isomorphism, or exhaustive search.
+command: >-
+  python -B attempts/wave193-aggregate-proof-b-audit/exact_check.py --verify
+  attempts/wave193-aggregate-proof-b-audit/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave193-aggregate-proof-b-audit/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave193-aggregate-proof-b-audit.md
+  - attempts/wave193-aggregate-proof-b-audit/README.md
+  - attempts/wave193-aggregate-proof-b-audit/derivation.md
+  - attempts/wave193-aggregate-proof-b-audit/protocol.md
+  - attempts/wave193-aggregate-proof-b-audit/exact_check.py
+  - attempts/wave193-aggregate-proof-b-audit/exact-results.json
+  - attempts/wave193-aggregate-proof-b-audit/test_exact_check.py
+  - attempts/wave193-aggregate-proof-b-audit/input-freeze.sha256
+limitations:
+  - This proof-B audit is not verifier promotion.
+  - The theorem is conditional on the frozen rank-11 endpoint inputs.
+  - No actual equality object is asserted.
+  - Rank 11, endpoint existence, novelty, and Conway-99 remain UNKNOWN.

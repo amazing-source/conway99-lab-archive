@@ -1,0 +1,151 @@
+{
+  "claim_label": "VERIFIED_PORTFOLIO_NULL",
+  "conclusion": {
+    "checkable_UNSAT_proof": false,
+    "complete_C_factor": "UNKNOWN",
+    "complete_D_factor": "NOT_REACHED",
+    "conway_99": "UNKNOWN",
+    "forces_a_prism": false,
+    "graph_realization": false,
+    "strict_n3_upper_bound": "NOT_IMPROVED"
+  },
+  "format": "wave154-triangle-factor-portfolio-v1",
+  "frozen_inputs_sha256": {
+    "attempts/wave151-triangle-root-factor/exact-results.json": "74bc48e2dd0434f3e36a183d724a1ae4a52d7ec9a1e109c92b14f64985da37a4",
+    "attempts/wave151-triangle-root-factor/package-manifest.sha256": "0e9ea04bad3fb41fda4224684663d828d3d19baea02387303775dd599d34d490"
+  },
+  "joint_exact_cover": {
+    "complete_factor_status": "UNKNOWN",
+    "cross_gram_capacity_rows": 432,
+    "edge_capacity_rows": 180,
+    "integer_matrix_nonzeros": 1039050,
+    "primary_triple_variables": 69270,
+    "selected_columns_required": 60,
+    "triple_orbits_under_explicit_group": 292
+  },
+  "limitations": [
+    "Two Q1 symmetry orbits do not exhaust all Q1 factors.",
+    "No negative solver status is promoted.",
+    "No complete C or D witness was found.",
+    "The 384-element group is an explicit local-witness symmetry, not a graph automorphism assumption."
+  ],
+  "portfolio": [
+    {
+      "Q2_status": "UNSAT_WITHOUT_EXPORTED_PROOF",
+      "branch": "Wave151 Q1 orbit representative",
+      "certificate_authority": false,
+      "seconds": 40.46
+    },
+    {
+      "Q2_gluecard4_seconds": 180.03,
+      "Q2_gluecard4_status": "INTERRUPTED_UNKNOWN",
+      "Q2_z3_seconds": 57.59,
+      "Q2_z3_status": "UNSAT_WITHOUT_EXPORTED_PROOF",
+      "branch": "new disjoint Q1 orbit representative",
+      "certificate_authority": false
+    },
+    {
+      "branch": "unfixed joint 3D native-cardinality SAT",
+      "certificate_authority": false,
+      "engine": "Gluecard4",
+      "seconds": 67.66,
+      "status": "INTERRUPTED_UNKNOWN"
+    },
+    {
+      "branch": "unfixed joint 3D MILP",
+      "certificate_authority": false,
+      "engine": "HiGHS",
+      "seconds": 300.68,
+      "status": "TIME_LIMIT_NO_INCUMBENT"
+    },
+    {
+      "branch": "fixed-Q1 CNF proof export",
+      "certificate_authority": false,
+      "engine": "CaDiCaL195 through PySAT",
+      "seconds": 180,
+      "status": "TIME_LIMIT_NO_PROOF"
+    }
+  ],
+  "residual_D": {
+    "reason": "no complete 36x60 C certificate",
+    "status": "NOT_REACHED"
+  },
+  "role": "proof_b",
+  "scope": "symmetry-diverse Q1 representatives and joint exact-cover search for the fixed Wave149/Wave151 prism-free 36x60 factor",
+  "second_exact_Q1_representative": {
+    "G01_replayed": true,
+    "Q1": [
+      55,
+      50,
+      34,
+      6,
+      39,
+      45,
+      38,
+      23,
+      21,
+      35,
+      58,
+      19,
+      22,
+      29,
+      20,
+      59,
+      42,
+      40,
+      32,
+      52,
+      15,
+      4,
+      46,
+      44,
+      41,
+      7,
+      36,
+      10,
+      2,
+      17,
+      56,
+      28,
+      43,
+      47,
+      5,
+      48,
+      16,
+      57,
+      9,
+      30,
+      53,
+      25,
+      27,
+      31,
+      54,
+      18,
+      24,
+      49,
+      11,
+      51,
+      33,
+      3,
+      26,
+      0,
+      8,
+      12,
+      14,
+      1,
+      13,
+      37
+    ],
+    "binary_24x60_sha256": "3292d6e445c168973f76a8dac1bf7bede704b141ab84388f94585c21ffac0b11",
+    "diagonal_blocks_replayed": true,
+    "outside_Wave151_Q1_centralizer_orbit": true
+  },
+  "symmetry": {
+    "explicit_group": "centralizer of M and P on 12 coordinates",
+    "group_order": 384,
+    "new_Q1_orbit_size": 384,
+    "no_graph_automorphism_assumed": true,
+    "old_Q1_orbit_size": 384,
+    "orbits_disjoint": true
+  }
+}

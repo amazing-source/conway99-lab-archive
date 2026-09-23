@@ -1,0 +1,33 @@
+role: proof_b
+date_utc: "2026-07-27T02:17:28Z"
+git_commit: "019b78ac9a5170107d105ad4d8fcd27f55dde642"
+claim_label: DERIVED_INCONCLUSIVE
+scope: "Conditional n3=4158 and rank_F3(M)=12 square boundary; cross-star projection and local quotient controls"
+inputs:
+  - "attempts/wave39-cross-base-rank/input-freeze.sha256 | sha256 931273ef657b540468da95a59e79565ae157123358fd8dbe334dea68f2f1aaa9"
+  - "verification/wave36-ternary-polar-bound/independent-results.json | sha256 38ec002886c2a9b38f8d11824dc79e07147b16386dcc3449064633efb630beeb"
+  - "verification/wave38-higher-order/independent-results.json | sha256 c0d56150980fe874ce1fa60eab9423da037400b7dcc17b5593380b2f03b5a0cb"
+  - "verification/wave38-higher-order/audit.md | sha256 d52b331a966339a4102f69c04572ca65eaaffb3dd46570980fedeceb161ddce2"
+method: "Exact finite-field determinant and projection algebra, exhaustive F_3^5 norm census, pigeonhole collision count, short-relation replay, and explicit low-rank quotient controls"
+command:
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave39-cross-base-rank\\exact_check.py --output attempts\\wave39-cross-base-rank\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave39-cross-base-rank\\exact_check.py --verify attempts\\wave39-cross-base-rank\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest -v attempts\\wave39-cross-base-rank\\test_exact_check.py"
+outputs:
+  - "attempts/wave39-cross-base-rank/exact-results.json | sha256 3955106a57f3910813f1ac680bc9bab6cb28024b883af4b08d157541e973a11b"
+  - "attempts/wave39-cross-base-rank/exact_check.py | sha256 93f0730911a66d1c6ed11e262626408b96e98a66c39ff435085361b045b0bc0a"
+  - "attempts/wave39-cross-base-rank/test_exact_check.py | sha256 a69c7b42e641110f2e39c0f842bd0b8e1b2e97093a49e5ecfa0cd40a6a6a95c5"
+  - "attempts/wave39-cross-base-rank/README.md | sha256 419e79b6d196b65bb0a50f7960643b275d25631631f6f8fe345ab570c0c79c48"
+  - "attempts/wave39-cross-base-rank/failed-routes.md | sha256 733e3fa85fcffd224cf623bff7d71e5c64e0ed8e5a387511a3c139958598df50"
+limitations:
+  - "Discovery cannot verify itself; an independent verifier must reconstruct the result."
+  - "The at-least-twelve short dependencies per vertex are necessary, not contradictory."
+  - "The quotient and projection controls are finite relaxations, not endpoint graphs."
+  - "No endpoint exclusion, upper-bound improvement, or novelty claim is made."
+result:
+  forced_equal_projection_pairs_per_vertex_lower_bound: 12
+  forced_dependency_supports: [4, 6]
+  local_rank_twelve_shortcut: REFUTED
+  endpoint_excluded: false
+  strongest_general_upper_bound_on_n3: 4158
+  target_status: UNKNOWN

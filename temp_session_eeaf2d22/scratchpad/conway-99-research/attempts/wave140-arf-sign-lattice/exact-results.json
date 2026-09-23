@@ -1,0 +1,243 @@
+{
+  "ambient_even_hyperplane": {
+    "Arf": 1,
+    "E_plane_count": 25,
+    "H_plane_count": 24,
+    "determinant_unit_mod_8": 3,
+    "dimension": 98,
+    "epsilon": -1,
+    "expected_99_square_class_mod_8": 3,
+    "symplectic_plane_count": 49
+  },
+  "arf_determinant_bridge": {
+    "missing_target_datum": "det(U) square class in Z_2^x/(Z_2^x)^2, equivalently which 2-adic even plane type lies in the 3-eigenlattice",
+    "statement": "For the even unimodular Z_2 lift U of R, epsilon=(2/det(U)); H has (det,epsilon)=(7,+1), E has (det,epsilon)=(3,-1)."
+  },
+  "claim_labels": {
+    "arf_determinant_bridge": "DERIVED",
+    "binary_and_two_adic_invariants_force_sign": "REFUTED_BY_CONTROL",
+    "full_integral_zero_one_SRG_identities_force_sign": "UNKNOWN",
+    "full_two_primary_discriminant_form_would_detect_sign": "DERIVED"
+  },
+  "discriminant_boundary": {
+    "form_level": "The W determinant units differ (5 versus 1 mod 8), so the full finite quadratic form can distinguish the controls.",
+    "group_only": "Both controls give Z/4 + (Z/16)^44 for the 2-primary discriminant group of the adjacency row lattice.",
+    "verified_full_target_form_available": false
+  },
+  "format": "wave140-arf-sign-lattice-v1",
+  "frozen_target": {
+    "binary_image_rank": 54,
+    "matrix_identities": [
+      "A=A^T",
+      "diag(A)=0",
+      "A*1=14*1",
+      "A^2=12I-A+2J"
+    ],
+    "target_Arf_sign": "UNKNOWN"
+  },
+  "limitations": [
+    "The opposite-sign controls are exact binary and local 2-adic controls, not 99-by-99 integral adjacency matrices.",
+    "They refute sign determination from rank, spectrum, Smith factors, and discriminant-group structure alone.",
+    "They do not refute a possible use of the full entrywise 0/1 and zero-diagonal integral constraints.",
+    "No unproved lattice self-duality or Type II theorem is used."
+  ],
+  "opposite_sign_controls": [
+    {
+      "U": {
+        "Arf": 0,
+        "E_plane_count": 4,
+        "H_plane_count": 23,
+        "determinant_unit_mod_8": 7,
+        "epsilon": 1,
+        "kronecker_2_over_det": 1,
+        "rank": 54
+      },
+      "W": {
+        "Arf": 1,
+        "E_plane_count": 21,
+        "H_plane_count": 1,
+        "determinant_unit_mod_8": 5,
+        "epsilon": -1,
+        "rank": 44
+      },
+      "binary_projection_control": {
+        "idempotent": true,
+        "kills_all_one": true,
+        "packed_matrix_sha256": "032135b7bc1d86b8cae4efcb3d468edd5bed3b63abb73a04dc33707c4c2040e9",
+        "rank": 54,
+        "row_weight_distribution": {
+          "0": 6,
+          "10": 2,
+          "12": 2,
+          "14": 2,
+          "16": 2,
+          "18": 2,
+          "2": 2,
+          "20": 2,
+          "22": 2,
+          "24": 2,
+          "26": 2,
+          "28": 2,
+          "30": 2,
+          "32": 2,
+          "34": 2,
+          "36": 2,
+          "38": 2,
+          "4": 2,
+          "54": 17,
+          "56": 2,
+          "58": 2,
+          "6": 2,
+          "60": 2,
+          "62": 2,
+          "64": 2,
+          "66": 2,
+          "68": 2,
+          "70": 2,
+          "72": 2,
+          "74": 2,
+          "76": 2,
+          "78": 2,
+          "8": 2,
+          "80": 2,
+          "82": 2,
+          "84": 2,
+          "86": 2,
+          "88": 2,
+          "90": 2,
+          "92": 2
+        },
+        "symmetric": true,
+        "zero_diagonal": true
+      },
+      "name": "epsilon_plus",
+      "operator_scalars": {
+        "on_U": 3,
+        "on_W": -4,
+        "on_all_one_line": 14
+      },
+      "two_primary_adjacency_lattice_discriminant_group": "Z/4 + (Z/16)^44"
+    },
+    {
+      "U": {
+        "Arf": 1,
+        "E_plane_count": 3,
+        "H_plane_count": 24,
+        "determinant_unit_mod_8": 3,
+        "epsilon": -1,
+        "kronecker_2_over_det": -1,
+        "rank": 54
+      },
+      "W": {
+        "Arf": 0,
+        "E_plane_count": 22,
+        "H_plane_count": 0,
+        "determinant_unit_mod_8": 1,
+        "epsilon": 1,
+        "rank": 44
+      },
+      "binary_projection_control": {
+        "idempotent": true,
+        "kills_all_one": true,
+        "packed_matrix_sha256": "1897329cc50f14acba9fb363ef98f05530b3c00f70f463589135cbf6306f60e3",
+        "rank": 54,
+        "row_weight_distribution": {
+          "0": 2,
+          "10": 2,
+          "12": 2,
+          "14": 2,
+          "16": 2,
+          "18": 2,
+          "2": 2,
+          "20": 2,
+          "22": 2,
+          "24": 2,
+          "26": 2,
+          "28": 2,
+          "30": 2,
+          "32": 2,
+          "34": 2,
+          "36": 2,
+          "38": 2,
+          "4": 2,
+          "40": 2,
+          "42": 2,
+          "54": 13,
+          "56": 2,
+          "58": 2,
+          "6": 2,
+          "60": 2,
+          "62": 2,
+          "64": 2,
+          "66": 2,
+          "68": 2,
+          "70": 2,
+          "72": 2,
+          "74": 2,
+          "76": 2,
+          "78": 2,
+          "8": 2,
+          "80": 2,
+          "82": 2,
+          "84": 2,
+          "86": 2,
+          "88": 2,
+          "90": 2,
+          "92": 2,
+          "94": 2,
+          "96": 2
+        },
+        "symmetric": true,
+        "zero_diagonal": true
+      },
+      "name": "epsilon_minus",
+      "operator_scalars": {
+        "on_U": 3,
+        "on_W": -4,
+        "on_all_one_line": 14
+      },
+      "two_primary_adjacency_lattice_discriminant_group": "Z/4 + (Z/16)^44"
+    }
+  ],
+  "smith_reconstruction": {
+    "all_divide_84": true,
+    "invariant_factor_counts": {
+      "1": 45,
+      "12": 43,
+      "3": 9,
+      "6": 1,
+      "84": 1
+    },
+    "product_matches_spectrum": true,
+    "rank_mod_2": 54,
+    "rank_mod_3": 45,
+    "rank_mod_7": 98,
+    "two_primary_operator_factors": "1^54,2,4^44"
+  },
+  "spectral_operator_control": {
+    "entrywise_zero_one_zero_diagonal_integral_matrix_supplied": false,
+    "scalar_identity_checks": {
+      "U": true,
+      "W": true,
+      "all_one_line": true,
+      "trace_zero": true,
+      "two_adic_determinant_valuation": 89
+    },
+    "two_controls_share": [
+      "rank(U)=54",
+      "rank(W)=44",
+      "spectrum 14^1,3^54,(-4)^44",
+      "A*1=14*1",
+      "A^2=12I-A+2J on the orthogonal decomposition",
+      "2-primary Smith factors 1^54,2,4^44",
+      "ambient even-hyperplane determinant unit 3 and Arf sign -1"
+    ]
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "binary_code_constructed": false,
+    "graph_constructed": false,
+    "novelty": "UNKNOWN",
+    "target_epsilon": "UNKNOWN"
+  }
+}

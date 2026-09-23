@@ -1,0 +1,33 @@
+role: proof_b
+date_utc: 2026-07-28T12:17:47Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED_PARTIAL_CONSTRUCTION_UNKNOWN_FULL
+scope: >-
+  Binary 36x60 incidence factorization of the fixed Wave149 prism-free
+  triangle-root Gram matrix, followed conditionally by the exact residual
+  60-vertex adjacency block.
+inputs:
+  - path: attempts/wave149-terwilliger-triple/package-manifest.sha256
+    sha256: 84bea47182b6a59b69f5df29d4f7a8cdf71bff63cfbc47947b1e65013d09d70f
+  - path: attempts/wave149-terwilliger-triple/exact-results.json
+    sha256: 6fed4da32fbeefce54d1802136dc8c9a328f112bb0f295a86230f0e6175f5ee6
+method: >-
+  Reduce each 12-row binary incidence group to the 60 nonmatching edges of
+  K12; search exact edge permutations for prescribed cross-intersection
+  matrices; replay a complete two-group 24x60 binary factor; and encode the
+  fixed-Q1 third group with exact pseudo-Boolean constraints.
+command: >-
+  python attempts/wave151-triangle-root-factor/exact_check.py --verify
+  attempts/wave151-triangle-root-factor/exact-results.json &&
+  python -m unittest discover -s attempts/wave151-triangle-root-factor
+  -p "test_*.py" -v
+outputs:
+  - path: attempts/wave151-triangle-root-factor/exact-results.json
+    sha256: 74bc48e2dd0434f3e36a183d724a1ae4a52d7ec9a1e109c92b14f64985da37a4
+  - path: attempts/wave151-triangle-root-factor/fixed-q1-q2-scout.json
+    sha256: f8694a6c996afc55d75f35884029918eb9e8028092e8d1216e232f95f73e8c4d
+limitations: >-
+  Only two of three incidence groups are constructed. The fixed-Q1 Z3 UNSAT
+  status has no exported proof and is not generalized. The unrestricted
+  complete C factor remains UNKNOWN, D was not reached, and no graph or
+  stricter n3 bound is established.

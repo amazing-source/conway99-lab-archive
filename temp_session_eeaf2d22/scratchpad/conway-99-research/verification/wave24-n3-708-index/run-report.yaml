@@ -1,0 +1,69 @@
+role: verifier
+date_utc: 2026-07-23T20:42:22Z
+git_commit: 821b162f7ff31f92bd1982bc31164c6b767838f4
+claim_label: VERIFIED
+scope: >-
+  Conditional exact determinant/index restrictions at n3=708 and an exact
+  abstract E8^5 plus A2^2 coordinate-lattice survivor. This does not exclude
+  n3=708 or resolve the target.
+inputs:
+  - path: agents/2026-07-23-wave24-n3-708-index-boundary.md
+    sha256: 461bbcff6399ae18c2764f68ea498b7eebba9780af0032b8e2e8fa18ca26af28
+  - path: attempts/wave24-n3-708-index/exact_check.py
+    sha256: 60bec6067383de3d9b6ecf57a5ce2a532deaf4759cc65faf4c63a6b8ce98b709
+  - path: attempts/wave24-n3-708-index/exact-results.json
+    sha256: a4241cdeea64a8f6073037d564e72fb7ef545287d45aca4759cec6c31d26a463
+  - path: attempts/wave24-n3-708-index/failed-routes.md
+    sha256: 2411d4012cc6bf3f1d2a82d63cdc1538a6ca815ad269604fc46cb72cd4d82efb
+  - path: attempts/wave24-n3-708-index/failed-runs.md
+    sha256: c37aeaad4f3afdbb765fc0233a23f6735b93a904b504a8593c1fe5503a9b8715
+  - path: attempts/wave24-n3-708-index/input-freeze.sha256
+    sha256: 4353375bbbfc58d382b048066aec388dec5d5ff84a41e426ea01dbb10ffbb7af
+  - path: attempts/wave24-n3-708-index/run-report.yaml
+    sha256: 7be3708665f8dc56fdd5fe32b8a0da07ef64c3147551043d75cf1631f2a12c13
+  - path: attempts/wave24-n3-708-index/test_exact_check.py
+    sha256: adfa00d30a5db9ec0dc30bbd4d028689edd03bbba154535e05c1b7e4df76ed75
+  - path: verification/2026-07-23-wave20-global-schur-audit.md
+    sha256: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave23-index-pranks/2026-07-23T192952Z-audit.md
+    sha256: bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116
+  - path: verification/wave23-endpoint-crosscheck/2026-07-23T200645Z-correction-audit.md
+    sha256: 791d74340c8a84a9993f9a5179c66baf0b2f7e431df5fb7eda2f593195f9bf53
+method: >-
+  Blind preinspection freeze, independent exact reconstruction, seventeen
+  positive and hostile tests, theorem-applicability audit, full row-major
+  matrix certificate, submitted 15-test replay, and byte comparison.
+command: |-
+  cd verification/wave24-n3-708-index
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json --matrix-certificate survivor-certificate.json
+  cd ../../attempts/wave24-n3-708-index
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output ../../verification/wave24-n3-708-index/submitted-regenerated.json
+outputs:
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  - path: verification/wave24-n3-708-index/preinspection-freeze.sha256
+    sha256: 89e593063747b1a09a287d84d34dfd22c7bbe67e80d6656010d4bdbcde912036
+  - path: verification/wave24-n3-708-index/independent_check.py
+    sha256: 6b0ca0c1db48d60da0803ef67632d299c71b1f07a0121b809d6f86975d4c1308
+  - path: verification/wave24-n3-708-index/test_independent_check.py
+    sha256: 8bcc88999433044d66de1f5759a58f3c6489217d76cea04a318091a02e891571
+  - path: verification/wave24-n3-708-index/independent-results.json
+    sha256: 726807402388c02909171a689f3a7fe2d8d1b74307c24e322ae013d0a9cd486a
+  - path: verification/wave24-n3-708-index/survivor-certificate.json
+    sha256: a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2
+  - path: verification/wave24-n3-708-index/submitted-regenerated.json
+    sha256: a4241cdeea64a8f6073037d564e72fb7ef545287d45aca4759cec6c31d26a463
+  - path: verification/wave24-n3-708-index/theorem-applicability.md
+    sha256: bea67ef5cac84c34ed7ed336ee947532a25a27b05dda653a50693af52cc4b2d1
+  - path: verification/wave24-n3-708-index/verifier-failures.md
+    sha256: 56e91511cb9c6820987e7cd6b6da6c966b1ca6f8eb94691338a1c47fb4389282
+limitations:
+  - The survivor is an abstract coordinate-lattice package only.
+  - No primitive embedding in Z^231 is proved.
+  - No projector/Hadamard, Schur-square, or graph origin is proved.
+  - The modular rank pairs are not shown to occur.
+  - Target existence and novelty remain UNKNOWN.

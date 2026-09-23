@@ -1,0 +1,82 @@
+role: verifier
+date_utc: 2026-07-24T02:37:39Z
+git_commit: d76d030f6d74e2e1b7ca2b2f0f97536241b3a10b
+claim_label: VERIFIED
+scope: >-
+  Independent exact verification of the preferred all-six-block and retained
+  initial simultaneous two-neighbors of the Wave 27 arithmetic package,
+  including complete transformed matrices, both root cosets, checked Cartan
+  component types, the preferred rank-one H0/H1 glue realization, and the
+  initial full-rank index-32 root lattice. No endpoint origin is claimed.
+inputs:
+  - path: agents/2026-07-24-wave28-simultaneous-neighbor-freeze.md
+    sha256: 7b8fce3763e2f6d4db2e0f7841e680d01486195d3ea4b6b04c5f59ace768d90a
+  - path: agents/2026-07-24-wave28-orchestrator-brief.md
+    sha256: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  - path: attempts/wave27-a2free-construction/exact_check.py
+    sha256: 1bd20f820a5d4467f29860a03a93c4ef3192bb9df4b1c87901080ffa8b793f1e
+method: >-
+  Reconstruct all input forms from Cartan edge data with Fraction arithmetic;
+  build a deterministic parity-kernel neighbor basis and fresh inverse;
+  compute all transformed entries; enumerate H and v/2+H with exact
+  blockwise reverse-LDL bounds; identify simple-root Cartan diagrams; and
+  compute saturated root closures, complements, and indices from explicit
+  integer bases.
+command: |-
+  cd verification/wave28-simultaneous-neighbor
+  python -B independent_check.py --output independent-results.json
+  python -B -m unittest -v test_independent_check.py
+outputs:
+  - path: verification/wave28-simultaneous-neighbor/independent_check.py
+    sha256: 2c8021769d47faebbcd544b364649a2cb93c066a369f76f725cffab1588982db
+  - path: verification/wave28-simultaneous-neighbor/test_independent_check.py
+    sha256: 191206c2eb57e6a7f8fdad83115304604fe597cff42299395cf38cf9ea639e2b
+  - path: verification/wave28-simultaneous-neighbor/independent-results.json
+    sha256: d9f6829dc967fb3777f541b4fd16cd27acb3478d96479b8ad9c3e9fbad2afedd
+  - path: verification/wave28-simultaneous-neighbor/intake-freeze.json
+    sha256: 2ec7e5e1d9f019951ca2df08eb62c168df6b498907a560c033b12b211dabbc6a
+  - path: verification/wave28-simultaneous-neighbor/failed-runs.md
+    sha256: 8ee8af6f3e06697a3c4d17ed0e6aa98f655e3b0295511b65b5e8ee0c4d66419b
+  - path: verification/wave28-simultaneous-neighbor/2026-07-24-wave28-simultaneous-neighbor-audit.md
+    sha256: 79876274f467b4a13b3f95bf03961177cc56940d1ceecd206f6eff1647738aa3
+tests:
+  independent:
+    status: PASS
+    count: 25
+  deterministic_regeneration: PASS_BYTE_IDENTICAL
+results:
+  preferred:
+    support: [3, 6, 9, 18, 25, 33, 35, 41]
+    transformed_endpoint_invariants: PASS
+    root_count: 568
+    half_coset_root_count: 0
+    root_span_rank: 43
+    components: [A1, A1, A1, A1, A5, D5, D8, E7, E7, E7]
+    root_determinant: 12288
+    K: "<12>"
+    K_divisibility: 3
+    Rbar_determinant: 12
+    H0_order: 32
+    H1_order: 4
+    total_glue_index: 128
+  initial_cross_control:
+    support: [0, 3, 11, 14, 22, 28, 30, 42]
+    transformed_endpoint_invariants: PASS
+    root_count: 568
+    half_coset_root_count: 0
+    root_span_rank: 44
+    components: [A1, A1, A5, E6, D8, D8, D8, E7]
+    root_determinant: 9216
+    root_index: 32
+  defects: NONE_IN_FROZEN_CANDIDATES
+  direct_44d_timeout: NON_EVIDENTIARY
+  n3_708: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - The verified objects are abstract arithmetic/lattice packages only.
+  - Root components are not a projector frame or Schur-square certificate.
+  - No primitive Z^231 embedding, required M, graph, endpoint exclusion,
+    formal-kernel proof, or novelty result is supplied.
+  - A refuted hostile-test assumption and both superseded freeze hashes remain
+    recorded in failed-runs.md.

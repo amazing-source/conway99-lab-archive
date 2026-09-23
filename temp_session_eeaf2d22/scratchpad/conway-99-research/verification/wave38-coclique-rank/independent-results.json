@@ -1,0 +1,167 @@
+{
+  "attribution": {
+    "coclique_prior_public_attribution": "REPORTED_BY_DISCOVERY_NOT_REAUDITED_IN_THIS_VERIFIER",
+    "novelty_claimed": false,
+    "scope": "mathematical verification only, not literature priority"
+  },
+  "claim_label": "VERIFIED",
+  "coclique": {
+    "completed_graph_automorphism_assumed": false,
+    "construction": "one alternating color class from the induced 24-point three-matching union, together with the triangle mate z",
+    "cycle_argument": {
+      "all_cycle_lengths_divisible_by_four": true,
+      "alternating_color_class_size": 12,
+      "cross_matching_normalized_to_identity": true,
+      "cycle_partition_frequencies": {
+        "12+12": 640,
+        "12+4+4+4": 160,
+        "12+8+4": 960,
+        "16+4+4": 720,
+        "16+8": 1440,
+        "20+4": 2304,
+        "24": 3840,
+        "4+4+4+4+4+4": 1,
+        "8+4+4+4+4": 30,
+        "8+8+4+4": 180,
+        "8+8+8": 120
+      },
+      "pulled_back_second_local_matching_count": 10395
+    },
+    "local_derivation": {
+      "cross_degree_each_direction": 1,
+      "cross_relation": "perfect matching",
+      "induced_side_union_degree": 2,
+      "local_matching_edges_per_side": 6,
+      "neighborhood_internal_degree": 1,
+      "side_size": 12,
+      "triangle_mate_extra_neighbors_per_side": 0,
+      "two_side_sets_are_disjoint": true
+    },
+    "size": 13,
+    "triangle_mate_nonadjacent_to_all_24": true
+  },
+  "coclique_gram": {
+    "determinant": 6003785411879964840,
+    "determinant_factorization": "27^12*40",
+    "determinant_mod_7": 5,
+    "diagonal": 28,
+    "eigenvalues": {
+      "27": 12,
+      "40": 1
+    },
+    "gram": "27I_13 + J_13",
+    "off_diagonal": 1,
+    "rank_mod_7": 13,
+    "size": 13
+  },
+  "endpoint": {
+    "C_definition": "C=2M-21I",
+    "C_mod_7": "C=2M",
+    "admissible_rank_pair_count_after_update": 528,
+    "conditional_on": "n3=4158",
+    "if_r3_equals_12": {
+      "admissible_r7_values": [
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "r7_lower_bound": 14,
+      "r7_parity": "even"
+    },
+    "previously_verified_parity": "r3+r7 is even",
+    "previously_verified_r3_lower_bound": 12,
+    "r7_lower_bound": 13,
+    "rank_F7_C_equals_rank_F7_M": true,
+    "scalar_two_is_invertible_mod_7": true
+  },
+  "git_commit": "3014f3b1c010cdde1687b8878d4ec58d2bb90f03",
+  "incidence_projector": {
+    "M_definition": "M=21E0, E0=orthogonal projector onto ker(Gamma)",
+    "NE0Nt_eigenvalues": [
+      0,
+      0,
+      3
+    ],
+    "NMNt_eigenvalues": [
+      0,
+      0,
+      63
+    ],
+    "NNt_eigenvalues": [
+      21,
+      10,
+      3
+    ],
+    "N_shape": [
+      99,
+      231
+    ],
+    "adjacency_spectrum": [
+      {
+        "eigenvalue": 14,
+        "multiplicity": 1
+      },
+      {
+        "eigenvalue": 3,
+        "multiplicity": 54
+      },
+      {
+        "eigenvalue": -4,
+        "multiplicity": 44
+      }
+    ],
+    "identity": "N M N^T = 27I - 9A + J",
+    "integer_coefficients_I_A_J": [
+      27,
+      -9,
+      1
+    ],
+    "transport_reason": "E0 projects to the eigenvalue-3 space of N^T N=3I+Gamma; singular-value transport maps it through N to the eigenvalue-3 space of NN^T=7I+A, namely the A=-4 eigenspace",
+    "triangle_graph_identity": "N^T N = 3I + Gamma",
+    "triangle_incidence_identity": "N N^T = 7I + A"
+  },
+  "limitations": [
+    "The proof is a universal implication and does not construct a graph.",
+    "The rank conclusion is only rank_F7(M)>=13, not an exact rank.",
+    "The endpoint reflection and parity consequences remain compatible with many rank pairs.",
+    "No endpoint exclusion or improved n3 upper bound follows.",
+    "The reported public attribution was not independently researched; novelty remains UNKNOWN."
+  ],
+  "rank_transfer": {
+    "claim_type": "LOWER_BOUND_ONLY",
+    "factorization": "N_I M N_I^T",
+    "field": "F_7",
+    "inequality": "rank(N_I M N_I^T) <= rank(M)",
+    "rank_F7_M_exact": null,
+    "rank_F7_M_lower_bound": 13
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "universal 13-coclique implication for a putative srg(99,14,1,2), its characteristic-seven M-rank consequence, and the conditional n3=4158 reflection/parity update",
+  "status": {
+    "conway_99": "UNKNOWN",
+    "endpoint": "UNKNOWN",
+    "novelty_status": "UNKNOWN",
+    "strongest_general_upper_bound_on_n3": 4158,
+    "upper_bound_improved_below_4158": false
+  },
+  "target_parameters": {
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "v": 99
+  }
+}

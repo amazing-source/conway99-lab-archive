@@ -1,0 +1,365 @@
+{
+  "claim_label": "DERIVED_INCONCLUSIVE",
+  "conclusion": {
+    "endpoint_excluded": false,
+    "new_exact_cross_base_restriction": "For every original vertex x, the 84 adjacent graph triangles force at least 12 equal-projection pairs and therefore at least 12 explicit support-4-or-6 factor-row dependencies of the displayed star form.",
+    "next_exact_target": "Classify the forced support-4/6 dependencies against the full triangle-incidence relations, or prove that their required multiplicity across all 99 vertex stars is impossible.",
+    "strongest_general_upper_bound_on_n3": 4158,
+    "target_status": "UNKNOWN",
+    "universal_local_rank_twelve_claim": "REFUTED_BY_QUOTIENT_CONTROLS",
+    "upper_bound_improved_below_4158": false
+  },
+  "format": "wave39-cross-base-rank-v1",
+  "frozen_public_head": "019b78ac9a5170107d105ad4d8fcd27f55dde642",
+  "inputs": {
+    "verification/wave36-ternary-polar-bound/independent-results.json": "38ec002886c2a9b38f8d11824dc79e07147b16386dcc3449064633efb630beeb",
+    "verification/wave38-higher-order/audit.md": "d52b331a966339a4102f69c04572ca65eaaffb3dd46570980fedeceb161ddce2",
+    "verification/wave38-higher-order/independent-results.json": "c0d56150980fe874ce1fa60eab9423da037400b7dcc17b5593380b2f03b5a0cb"
+  },
+  "limitations": [
+    "All statements are conditional on the endpoint and r3=12 boundary.",
+    "The collision theorem is a necessary condition, not a contradiction.",
+    "Collision pairs counted at different vertex stars may overlap.",
+    "The quotient controls are not full one-triangle cores or graphs.",
+    "The projection positive control omits the global frame and incidence equations.",
+    "No endpoint matrix, Conway graph, upper-bound improvement, or novelty claim is supplied."
+  ],
+  "local_rank_controls": {
+    "controls": [
+      {
+        "bipartite_block_degree": 2,
+        "degree": 4,
+        "discriminant_class": "nonsquare",
+        "discriminant_representative": 2,
+        "name": "rank-ten-local-control",
+        "parts": [
+          6,
+          6,
+          6
+        ],
+        "permutations": [
+          [
+            5,
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            4,
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5,
+            0,
+            2,
+            1
+          ]
+        ],
+        "rank_F3_P_minus_I": 10,
+        "simple": true,
+        "vertices": 18,
+        "witness_principal_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "bipartite_block_degree": 2,
+        "degree": 4,
+        "discriminant_class": "nonsquare",
+        "discriminant_representative": 2,
+        "name": "rank-eleven-nonsquare-local-control",
+        "parts": [
+          6,
+          6,
+          6
+        ],
+        "permutations": [
+          [
+            3,
+            4,
+            5,
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            5,
+            4,
+            3,
+            2
+          ],
+          [
+            4,
+            3,
+            5,
+            0,
+            1,
+            2
+          ]
+        ],
+        "rank_F3_P_minus_I": 11,
+        "simple": true,
+        "vertices": 18,
+        "witness_principal_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          14
+        ]
+      }
+    ],
+    "determinant_compatible_rank_eleven_exists": true,
+    "refuted_local_claim": "Every simple tripartite four-regular P with two-regular bipartite blocks has rank_F3(P-I)>=12.",
+    "scope": "These are quotient matrices only, not 36-vertex cores, simultaneous B/H completions, endpoint matrices, or graphs."
+  },
+  "projection_collision_theorem": {
+    "adjacent_profile": {
+      "D_star_profile": {
+        "1": 5,
+        "2": 2
+      },
+      "M_star_profile": {
+        "-1": 2,
+        "0": 5
+      },
+      "count_derivation": "14 neighbors times 6 other triangles",
+      "projected_vector_norm": 1,
+      "triangles_adjacent_to_fixed_vertex": 84,
+      "two_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    "available_oriented_norm_one_vectors": 72,
+    "dependency": "q_U=q_V implies z_U-z_V+sum_i(d_Ui-d_Vi)z_Ti=0",
+    "factor_row_dependency": "The coefficient sum is zero, so the same relation holds after replacing every z by v=z+w.",
+    "forced_equal_projection_pairs_lower_bound": 12,
+    "pair_classification": {
+      "two-position_sets_are_disjoint": {
+        "dependency_support": 6,
+        "required_centered_inner_product_D_UV": 2
+      },
+      "two-position_sets_equal": {
+        "distinct_equal_projections": false,
+        "reason": "equal d and equal q determine equal z"
+      },
+      "two-position_sets_intersect_in_one": {
+        "dependency_support": 4,
+        "required_centered_inner_product_D_UV": 1
+      }
+    },
+    "projected_objects": 84,
+    "support_sizes": [
+      4,
+      6
+    ]
+  },
+  "projection_positive_control": {
+    "adjacent_isotropic_vectors": 84,
+    "ambient_centered_space": {
+      "determinant_representative": 2,
+      "dimension": 11
+    },
+    "collision_pattern_histogram": {
+      "disjoint": 2,
+      "overlap-one": 10
+    },
+    "combined_gram_rank": 11,
+    "combined_vector_rank": 11,
+    "distinct_adjacent_vectors": 84,
+    "distinct_projection_values_used": 72,
+    "equal_projection_pair_count": 12,
+    "interpretation": "Finite quadratic-space control for the projection theorem only; it omits the remaining 140 triangles, V^T V=0, the full D alphabet/incidence equations, every simultaneous base, and a graph.",
+    "maximum_projection_multiplicity": 2,
+    "norm_one_projection_values_available": 72,
+    "short_dependency_support_histogram": {
+      "4": 10,
+      "6": 2
+    },
+    "vertex_star_vectors": 7
+  },
+  "scope": "Conditional prism-free endpoint n3=4158 and the surviving rank_F3(M)=12 square determinant boundary",
+  "space_determinants": {
+    "centered_space": {
+      "determinant_class": "nonsquare",
+      "determinant_representative": 2,
+      "dimension": 11
+    },
+    "common_vector": {
+      "norm": 2
+    },
+    "full_factor_space": {
+      "determinant_class": "square",
+      "determinant_representative": 1,
+      "dimension": 12
+    },
+    "orthogonal_complement": {
+      "determinant_class": "nonsquare",
+      "determinant_representative": 2,
+      "dimension": 5
+    },
+    "vertex_star_space": {
+      "basis_gram": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "determinant_class": "square",
+      "determinant_representative": 1,
+      "dimension": 6
+    }
+  }
+}

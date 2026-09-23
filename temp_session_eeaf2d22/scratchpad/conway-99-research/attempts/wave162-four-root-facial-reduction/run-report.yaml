@@ -1,0 +1,33 @@
+role: proof_b
+date_utc: 2026-07-28T14:02:08Z
+git_commit: 81f1c18c1bb34f487c3e938fb12386ef928e5b7f
+claim_label: DERIVED
+scope: >-
+  Exact facial-reduction audit of all fifteen stored Wave152/Wave159 scalar
+  covariance cuts on six exact fixed-slice count pseudowitnesses, focused on
+  the persistent root-mask-3 and root-mask-12 blocks.
+inputs: >-
+  input-freeze.sha256 records paths and SHA256 hashes for eight cut packages,
+  six exact witnesses, and six four-root evaluations.
+method: >-
+  Replay every scalar cut with rational arithmetic; compare zero sets on the
+  common stored affine slice; derive conditional PSD faces from independent
+  active directions; certify direction ranks and newest-direction escape
+  using exact nonzero determinant minors. No optimizer or large solve.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave162-four-root-facial-reduction\analyze_facial_reduction.py;
+  .\.venv\Scripts\python.exe -B -m unittest
+  attempts\wave162-four-root-facial-reduction\test_wave162.py -v
+outputs: >-
+  package-manifest.sha256 records paths and SHA256 hashes for the sealed
+  Wave162 package. facial-reduction-audit.json contains all 90 exact cut
+  evaluations, three affine non-forcing certificates, conditional face ranks,
+  and exact determinant-minor certificates. resource-report.json records a
+  minimum 17.48 percent free physical-memory sample.
+limitations: >-
+  This discovery lane is not an independent verifier. It relies on stored
+  exact base-row replay counts rather than rebuilding every common row. No
+  unconditional forced face or conic-dual exposing vector was found. Every
+  stored object is a count pseudowitness, not a graph. Endpoint n3=4158, a
+  strict upper bound below 4158, and Conway-99 remain UNKNOWN.

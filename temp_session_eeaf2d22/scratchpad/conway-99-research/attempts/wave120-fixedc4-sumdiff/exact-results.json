@@ -1,0 +1,437 @@
+{
+  "claim_labels": {
+    "actual_extension_cap": "UNKNOWN",
+    "pairwise_cap_route": "REFUTED_AS_A_RELAXATION",
+    "projector_and_anchor_bounds": "DERIVED"
+  },
+  "formal_pairwise_witness": {
+    "anchor_eigen_equations_satisfied": true,
+    "binary_support_minimum_distance": 14,
+    "difference_norm_histogram": {
+      "14": 17,
+      "16": 62,
+      "18": 157,
+      "20": 222,
+      "22": 230,
+      "24": 92
+    },
+    "every_positive_subset_anchor_lower_satisfied": true,
+    "family_size": 40,
+    "fixed_C4_type_counts_per_record": {
+      "negative_from_each_P_anchor_only_fiber": 2,
+      "negative_from_type00": 2,
+      "positive_from_each_N_anchor_only_fiber": 2,
+      "positive_from_type00": 2,
+      "type11_used": 0
+    },
+    "fixed_anchor_profile": {
+      "negative_cycle_anchors": 2,
+      "negative_outside_units": 6,
+      "positive_cycle_anchors": 2,
+      "positive_outside_units": 6
+    },
+    "full_family_anchor_lower": 6720,
+    "full_family_sum_squared_norm": 9836,
+    "individual_norm": 16,
+    "inner_product_histogram": {
+      "4": 92,
+      "5": 230,
+      "6": 222,
+      "7": 157,
+      "8": 62,
+      "9": 17
+    },
+    "ldlt_minimum_pivot": "25385068817109730668145053377453025/8340859026712072186966579360826044",
+    "ldlt_positive_pivot_count": 40,
+    "maximum_pair_overlap": 5,
+    "minimum_pair_sum_norm": 40,
+    "normalized_residual_inner_products": [
+      "-2/13",
+      "-3/52",
+      "1/26",
+      "7/52",
+      "3/13",
+      "17/52"
+    ],
+    "opposite_sign_overlap_between_records": 0,
+    "outside_eigen_equations_encoded": false,
+    "overlap_histogram": {
+      "0": 92,
+      "1": 230,
+      "2": 222,
+      "3": 157,
+      "4": 62,
+      "5": 17
+    },
+    "residual_gram_diagonal": "52/5",
+    "residual_gram_positive_definite": true,
+    "residual_gram_rank": 40,
+    "residual_gram_size": 40,
+    "total_pair_inner_product": 4598,
+    "witness_sha256": "3569eaa48ec3e99ab988f943492c103f67889c8fadf9a2a15edeac9586220183"
+  },
+  "format": "wave120-fixedc4-sumdiff-v1",
+  "integer_anchor_sharpening": {
+    "attained_by_actual_integer_eigenvector": "UNKNOWN",
+    "local_relaxation_equality_profile": {
+      "cycle_coordinates": [
+        2,
+        -2,
+        2,
+        -2
+      ],
+      "other_coordinates": 0,
+      "outside_negative_units": 8,
+      "outside_positive_units": 8
+    },
+    "positive_r_fold_sum_lower": "4*r^2+8*r",
+    "proof": [
+      "the four anchors contribute squared norm 16",
+      "each positive anchor needs outside negative mass at least 4",
+      "the two positive anchors have disjoint outside neighborhoods",
+      "there is therefore at least 8 total outside negative mass",
+      "the negative anchors similarly force at least 8 positive mass",
+      "integer a satisfies a^2>=abs(a), so outside energy is at least 16"
+    ],
+    "sharp_for_anchor_equation_relaxation": true,
+    "universal_squared_norm_lower": 32
+  },
+  "limitations": [
+    "The size-40 object is a formal pairwise relaxation witness, not an eigenvector family.",
+    "Its individual signed supports satisfy only the fixed-anchor equations, not all 99 eigen-equations.",
+    "The PSD realization need not preserve the witness's integer coordinates away from the fixed C4.",
+    "The binary supports are a constant-weight code, not proved to lie in one target graph kernel.",
+    "Wave96 norm20 input remains discovery-level until independently verified.",
+    "Discovery cannot verify itself."
+  ],
+  "null_control": {
+    "binary_minimum_distance_or_constant_weight_Delsarte_can_prove_either_cap": false,
+    "derived_norm_profile_PSD_or_Gram_relaxation_can_prove_either_cap": false,
+    "not_refuted": "a stronger bound using simultaneous outside adjacency, the common graph parity code with its dual constraints, or three-point and higher compatibility",
+    "rank28_needed_cap": 25,
+    "rank30_needed_cap": 24,
+    "reason": "the explicit size-40 witness satisfies the fixed-C4 type counts, anchor equations, all derived pairwise norm/profile conditions, every positive subset-sum anchor inequality, a positive-definite rank-40 residual Gram, and binary support minimum distance 14",
+    "witness_size": 40
+  },
+  "pairwise_inner_products": {
+    "classified_differences_use_only_magnitude_profiles": true,
+    "definition": "k=<x,y> for distinct same-oriented extensions",
+    "difference_identity": "norm(x-y)=norm(x)+norm(y)-2k",
+    "full_support_graph_compatibility_encoded": false,
+    "rows": [
+      {
+        "classified_difference_rows": [
+          {
+            "difference_norm": 14,
+            "forced_difference_profile": "7 plus units and 7 minus units",
+            "inner_product": 9,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 16,
+            "forced_difference_profile": "8 plus units and 8 minus units",
+            "inner_product": 8,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 18,
+            "forced_difference_profile": "9 plus units and 9 minus units",
+            "inner_product": 7,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 20,
+            "forced_difference_profile": "10 plus units and 10 minus units",
+            "inner_product": 6,
+            "opposite_sign_overlap": 0
+          }
+        ],
+        "inner_product_interval": [
+          0,
+          9
+        ],
+        "lower_source": "norm(x+y)>=32",
+        "norm_pair": [
+          16,
+          16
+        ],
+        "upper_source": "nonzero norm(x-y)>=14"
+      },
+      {
+        "classified_difference_rows": [
+          {
+            "difference_norm": 14,
+            "forced_difference_profile": "7 plus units and 7 minus units",
+            "inner_product": 10,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 16,
+            "forced_difference_profile": "8 plus units and 8 minus units",
+            "inner_product": 9,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 18,
+            "forced_difference_profile": "9 plus units and 9 minus units",
+            "inner_product": 8,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 20,
+            "forced_difference_profile": "10 plus units and 10 minus units",
+            "inner_product": 7,
+            "opposite_sign_overlap": 0
+          }
+        ],
+        "inner_product_interval": [
+          -1,
+          10
+        ],
+        "lower_source": "norm(x+y)>=32",
+        "norm_pair": [
+          16,
+          18
+        ],
+        "upper_source": "nonzero norm(x-y)>=14"
+      },
+      {
+        "classified_difference_rows": [
+          {
+            "difference_norm": 14,
+            "forced_difference_profile": "7 plus units and 7 minus units",
+            "inner_product": 11,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 16,
+            "forced_difference_profile": "8 plus units and 8 minus units",
+            "inner_product": 10,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 18,
+            "forced_difference_profile": "9 plus units and 9 minus units",
+            "inner_product": 9,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 20,
+            "forced_difference_profile": "10 plus units and 10 minus units",
+            "inner_product": 8,
+            "opposite_sign_overlap": 0
+          }
+        ],
+        "inner_product_interval": [
+          -2,
+          11
+        ],
+        "lower_source": "norm(x+y)>=32",
+        "norm_pair": [
+          16,
+          20
+        ],
+        "upper_source": "nonzero norm(x-y)>=14"
+      },
+      {
+        "classified_difference_rows": [
+          {
+            "difference_norm": 14,
+            "forced_difference_profile": "7 plus units and 7 minus units",
+            "inner_product": 11,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 16,
+            "forced_difference_profile": "8 plus units and 8 minus units",
+            "inner_product": 10,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 18,
+            "forced_difference_profile": "9 plus units and 9 minus units",
+            "inner_product": 9,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 20,
+            "forced_difference_profile": "10 plus units and 10 minus units",
+            "inner_product": 8,
+            "opposite_sign_overlap": 0
+          }
+        ],
+        "inner_product_interval": [
+          -2,
+          11
+        ],
+        "lower_source": "norm(x+y)>=32",
+        "norm_pair": [
+          18,
+          18
+        ],
+        "upper_source": "nonzero norm(x-y)>=14"
+      },
+      {
+        "classified_difference_rows": [
+          {
+            "difference_norm": 14,
+            "forced_difference_profile": "7 plus units and 7 minus units",
+            "inner_product": 12,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 16,
+            "forced_difference_profile": "8 plus units and 8 minus units",
+            "inner_product": 11,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 18,
+            "forced_difference_profile": "9 plus units and 9 minus units",
+            "inner_product": 10,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 20,
+            "forced_difference_profile": "10 plus units and 10 minus units",
+            "inner_product": 9,
+            "opposite_sign_overlap": 0
+          }
+        ],
+        "inner_product_interval": [
+          -3,
+          12
+        ],
+        "lower_source": "norm(x+y)>=32",
+        "norm_pair": [
+          18,
+          20
+        ],
+        "upper_source": "nonzero norm(x-y)>=14"
+      },
+      {
+        "classified_difference_rows": [
+          {
+            "difference_norm": 14,
+            "forced_difference_profile": "7 plus units and 7 minus units",
+            "inner_product": 13,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 16,
+            "forced_difference_profile": "8 plus units and 8 minus units",
+            "inner_product": 12,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 18,
+            "forced_difference_profile": "9 plus units and 9 minus units",
+            "inner_product": 11,
+            "opposite_sign_overlap": 0
+          },
+          {
+            "difference_norm": 20,
+            "forced_difference_profile": "10 plus units and 10 minus units",
+            "inner_product": 10,
+            "opposite_sign_overlap": 0
+          }
+        ],
+        "inner_product_interval": [
+          -4,
+          13
+        ],
+        "lower_source": "norm(x+y)>=32",
+        "norm_pair": [
+          20,
+          20
+        ],
+        "upper_source": "nonzero norm(x-y)>=14"
+      }
+    ],
+    "sum_identity": "norm(x+y)=norm(x)+norm(y)+2k"
+  },
+  "projector_affine_slice": {
+    "C4_principal_gram": [
+      [
+        "4/9",
+        "-8/63",
+        "1/63",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "4/9",
+        "-8/63",
+        "1/63"
+      ],
+      [
+        "1/63",
+        "-8/63",
+        "4/9",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "1/63",
+        "-8/63",
+        "4/9"
+      ]
+    ],
+    "C4_principal_inverse": [
+      [
+        "532/195",
+        "56/65",
+        "77/195",
+        "56/65"
+      ],
+      [
+        "56/65",
+        "532/195",
+        "56/65",
+        "77/195"
+      ],
+      [
+        "77/195",
+        "56/65",
+        "532/195",
+        "56/65"
+      ],
+      [
+        "56/65",
+        "77/195",
+        "56/65",
+        "532/195"
+      ]
+    ],
+    "coordinate_kernel_dimension": 40,
+    "doubled_alternating_minimum_squared_norm": "112/5",
+    "doubled_minimum_is_exact_real_affine_minimum": true,
+    "doubled_minimum_is_not_an_integer_lattice_attainment_claim": true,
+    "projector_formula": "E=(27I-9A+J)/63",
+    "unit_alternating_minimum_squared_norm": "28/5"
+  },
+  "scope": {
+    "automorphism_assumed": false,
+    "family_norms": [
+      16,
+      18,
+      20
+    ],
+    "fixed_cycle_orientation": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "norm20_profile_source": "Wave96 DERIVED discovery; independent verification pending",
+    "target": "hypothetical srg(99,14,1,2)"
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "local_cap24_proved": false,
+    "local_cap25_proved": false,
+    "novelty": "UNKNOWN",
+    "rank28_excluded": false,
+    "rank30_excluded": false
+  }
+}

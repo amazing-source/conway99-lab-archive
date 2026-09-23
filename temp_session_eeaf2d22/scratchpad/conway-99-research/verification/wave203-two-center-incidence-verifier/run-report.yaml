@@ -1,0 +1,55 @@
+role: verifier
+date_utc: 2026-07-29T05:03:50Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: independently verify the
+  two-center five-slot theorem m_(x->y)+m_(y->x)<=5 for canonical
+  exact-three flags, derive its selected-incidence and bidirectional-loss
+  consequences, and determine whether it improves the current Q>=7059 bound.
+inputs:
+  - path: verification/wave203-two-center-incidence-verifier/independent-result-freeze.sha256
+    sha256: 43721bc8b667209600dea1aff80a5b930f03b63d02062eb69ff7adf8abe3e2d1
+  - path: attempts/wave203-two-center-incidence-proof-b/package-manifest.sha256
+    sha256: b412cce1a737b3b50718aabb399978ca2956cea0edbbe1c1f955f8083447d5b8
+  - path: attempts/wave203-two-center-incidence-proof-a-audit/package-manifest.sha256
+    sha256: 62019dec2c954b2354279afd4dc114daffafbef0bff3678ddca2fcb61cb1edb8
+method: >-
+  Source-blind two-center star-block incidence and exact ternary relation
+  algebra, followed by a Wave181 canonical-quadrilateral Gram check.  The
+  independent result was hash-frozen before either source was opened.
+  Both sealed sources were then replayed and compared.  No graph, code,
+  cover, flag-family, SAT, LP, configuration, enumeration, isomorphism,
+  or brute-force search was used.
+command:
+  - >-
+    .\.venv\Scripts\python.exe -B
+    verification\wave203-two-center-incidence-verifier\independent_check.py
+    --verify
+    verification\wave203-two-center-incidence-verifier\independent-math-result.json
+  - >-
+    .\.venv\Scripts\python.exe -B -m unittest -v
+    verification\wave203-two-center-incidence-verifier\test_independent_check.py
+  - >-
+    .\.venv\Scripts\python.exe -B
+    verification\wave203-two-center-incidence-verifier\source_comparison_check.py
+    --verify
+    verification\wave203-two-center-incidence-verifier\source-comparison-results.json
+  - >-
+    .\.venv\Scripts\python.exe -B -m unittest -v
+    verification\wave203-two-center-incidence-verifier\test_source_comparison_check.py
+outputs:
+  - path: verification/wave203-two-center-incidence-verifier/audit.md
+    sha256: 382d8553457557fe2ecbe0fd1733ecb06b01f5c60be879e65cab56c078edc3d7
+  - path: verification/wave203-two-center-incidence-verifier/independent-math-result.json
+    sha256: 4ada662af8ceb2f7477fbe9b601338b51c9710dc226ab4176fff1c84d798d8a6
+  - path: verification/wave203-two-center-incidence-verifier/source-comparison-results.json
+    sha256: b84718a4ba3e9d1c0e654ad8a2a10c2aa9ea2baea0adee964f59922c36496926
+  - path: verification/wave203-two-center-incidence-verifier/verification-results.json
+    sha256: ca744fd0ec911ac81a3e9d89c0df21467b9a29915d8b25782e4efb1696df1f31
+limitations:
+  - The theorem is conditional on the frozen prism-free rank-11 endpoint.
+  - No checked row forces a bidirectionally occupied selected label, so b may be zero.
+  - The verified consequences do not exclude Q0=7059 and do not prove Q>=7060.
+  - The b=0 control is arithmetic and local-equality data only, not an object or existence claim.
+  - Rank 11, endpoint existence, Conway-99, and external novelty remain UNKNOWN.

@@ -1,0 +1,36 @@
+role: proof_a
+date_utc: 2026-07-28T21:41:51Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Finite-polar and invariant-theory test of the endpoint k=11 centered
+  ternary factor configuration in Q(10,3), assuming Wave174 dual distance
+  at least four.
+inputs:
+  - attempts/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave37-polar-strengthen/audit.md
+method: >-
+  Exact parabolic-polar graph counts, eigenspace decomposition, quadratic
+  moment identities, mod-three frame divisibility, and degree-two Veronese
+  rank bounds. No graph, code, SAT, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave175-polar-cap-boundary\exact_check.py --verify
+  attempts\wave175-polar-cap-boundary\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave175-polar-cap-boundary\test_exact_check.py
+outputs:
+  - attempts/wave175-polar-cap-boundary/README.md
+  - attempts/wave175-polar-cap-boundary/derivation.md
+  - attempts/wave175-polar-cap-boundary/failed-routes.md
+  - attempts/wave175-polar-cap-boundary/protocol.md
+  - attempts/wave175-polar-cap-boundary/exact_check.py
+  - attempts/wave175-polar-cap-boundary/exact-results.json
+  - attempts/wave175-polar-cap-boundary/input-freeze.sha256
+limitations:
+  - Independent verification is recorded separately under verification/wave175-polar-cap-boundary.
+  - The polar spectrum and refined second moments survive.
+  - External novelty is UNKNOWN.
+  - No rank floor above k=11, endpoint contradiction, graph, or strict n3
+    bound follows.

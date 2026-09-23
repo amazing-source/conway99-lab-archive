@@ -1,0 +1,28 @@
+command:
+python -B -m unittest discover -s verification/wave34-rooted-encoding -p test_independent_compare.py -v
+
+environment:
+Python 3.13.14
+standard library only
+seed: none
+candidate generator imported: no
+candidate generator executed: no
+large solver executed: no
+proof checker executed: no
+
+result:
+Ran 9 tests in 33.117s
+OK
+
+coverage:
+- Stage-1 byte freeze unchanged
+- 16-entry publication and 18-entry local candidate manifests
+- exact gzip header and chunkwise decompression-to-raw round trip
+- explicit candidate-to-Wave33 support and O-label permutations
+- all AND and exact-threshold gadget directions
+- every semantic family, target distribution, auxiliary allocation, and clause
+- exact 89,546,779-byte DIMACS stream and all 4,323,943 clauses
+- ordered-D versus unordered-D count reconciliation
+- 13 signature models distinguishing all 5,950 primary decoder ids
+- candidate checker hostile-control block census against independent counting
+- correction ledger and UNKNOWN status wall

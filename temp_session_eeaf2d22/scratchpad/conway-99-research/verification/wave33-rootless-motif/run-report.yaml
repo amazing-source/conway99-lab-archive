@@ -1,0 +1,56 @@
+role: verifier
+date_utc: 2026-07-24T10:48:52Z
+git_commit: b2595baa40d50e9c259051751fe27090bee6a449
+claim_label: VERIFIED
+scope: >-
+  Clean-room adversarial comparison of the frozen Wave 33 rootless-motif
+  candidate: four-dimensional fused algebra, two formal q=2 R2 local tables,
+  N^T p(A) N transport, the actual lambda/mu multiplicity board, four weighted
+  transversals, partial-control arithmetic, trace normalization, provenance,
+  scope boundaries, and status wall. No global graph or endpoint claim is
+  verified.
+inputs:
+  verification/wave33-rootless-motif-candidate-freeze.sha256: 8cca06d858a401c6c4f054daae8e35fb4796fabb0f15877547a6c943971c32e0
+  verification/wave33-rootless-motif/precomparison-manifest.sha256: b76da4963b9588102b657e04dfd9195bb4a5d9bbe7a365ae255023b6385863e8
+  agents/2026-07-24-wave33-rootless-motif.md: a22b261b49c355296fd4299b3b97da215e16209f00eeae9a2d6d15addfd27c87
+  attempts/wave33-rootless-motif/exact-results.json: 2cfb576f2deba7bb82c60eb27c72a62c913d06f2d86f3eb626dcddd6ac75afeb
+  attempts/wave33-rootless-motif/artifact-manifest.sha256: 384081a967153059399b4e0724e901ef28183cedab8d7e253e45af560e16df95
+  verification/wave33-continuation-protocol.md: b98b6bb8228b54b67cd949ee1bf6eb05ebd6ebe74f1cbc9e49b041a55e2d2fe6
+method: >-
+  Preserved the six-file precomparison freeze, validated all released hashes,
+  read candidate code statically without importing or executing it, and
+  reproduced every scoped calculation with verifier-owned standard-library
+  code. Hostile mutations tested coefficient signs, exact integer types,
+  table constraints and contractions, transport shift and scope, board
+  derivation and transversal enumeration, partial-control metadata and prose,
+  trace factor two, input provenance, blocking objections, and status
+  inflation.
+command: |-
+  python -B verification/wave33-rootless-motif/candidate_static_check.py --output verification/wave33-rootless-motif/comparison-results.json
+  python -B -m unittest discover -s verification/wave33-rootless-motif -p "test_*.py" -v
+outputs:
+  verification/wave33-rootless-motif/candidate_static_check.py: 444e9793240fa632f47e9e1ffb00120aa716ef223ab6df2f70489d9cb40ff645
+  verification/wave33-rootless-motif/test_candidate_static.py: 2a789342c75db7b7873a7585292f1237bb0b8d8c79542e90b034cea5faadad36
+  verification/wave33-rootless-motif/comparison-results.json: 8b7b27fd67f12bb82cb6eebf645d0c46324d7227e51bdeb0093fbcdf9d753872
+  verification/wave33-rootless-motif/audit.md: a761d48419664b3db8605ca2a7dd203c2a1ce6ccd1e96d1ac2c028b1c5209bc9
+  verification/wave33-rootless-motif/failed-objections.md: 768e4c6d06606ac101991a852398c02a164f2d6dea780ba7d909db7f4a2c3ebf
+tests:
+  total: 48
+  passed: 48
+  failed: 0
+runtime:
+  python: "CPython 3.13.14"
+  platform: "Windows-11-10.0.26200-SP0, AMD64"
+  dependencies: "Python standard library only"
+  candidate_code_imported_or_executed: false
+limitations:
+  - The report phrase "all two-leg spectral/incidence contractions" is too
+    broad; only bilinear Q[Gamma] contractions and N^T p(A) N are verified.
+  - The two relation tables are formal local controls, not globally
+    realizable relation tensors.
+  - The formal q=2 R2 pair is permitted but is not proved to occur globally.
+  - The 99-vertex controls are partial edge assignments, not target graphs or
+    extension certificates.
+  - Global motif forcing and avoidance remain UNKNOWN.
+  - Rootless endpoint existence, n3=708, Conway-99, and novelty remain UNKNOWN.
+verdict: PASS_SCOPED_WITH_NONBLOCKING_WORDING_QUALIFIER

@@ -1,0 +1,53 @@
+{
+  "budget": {
+    "maxima_used": {
+      "S5": 23,
+      "SF": 1,
+      "SH": 7,
+      "g": 2
+    },
+    "multiplier": 40,
+    "target": "281457/40",
+    "value": 23,
+    "weights": {
+      "RA": 28,
+      "S2": 48,
+      "S5": 1,
+      "SE2": 8,
+      "SF": 13,
+      "SH": 3,
+      "SI": 32,
+      "SL": 12,
+      "W": 16,
+      "a1": 4,
+      "b3": 24,
+      "c2": 8,
+      "g": 9
+    }
+  },
+  "claim": {
+    "conditional_Q_lower_bound": 7038,
+    "edge_added_projective": 7731,
+    "excluded_face": "Q0=7037",
+    "scalar_words": 15462
+  },
+  "claim_label": "DERIVED_PENDING_HOSTILE_AUDIT",
+  "contradiction": "48<=s<=7",
+  "local_cap": {
+    "deficient_center_count_max": 1,
+    "deficient_center_pair_cap": 7,
+    "saturated_upper": 7,
+    "tight_center_pair_cap": 3,
+    "tight_center_deficit_min": 3,
+    "total_delta_max": 4
+  },
+  "orientation_deficits": {
+    "decomposition": "S5=5*delta+5*eta+epsilon",
+    "delta_max": 4,
+    "epsilon_max": 23,
+    "q_identity": "4*q=297-3*SF-3*g-SH+epsilon+delta+eta",
+    "q_lower": 71,
+    "saturated_lower": 48
+  },
+  "search_scope": "exact slack arithmetic and local extremal set geometry only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search"
+}

@@ -1,0 +1,78 @@
+{
+  "census": {
+    "labeled_order_seven": 394020,
+    "unlabeled_counts_by_order": {
+      "1": 1,
+      "2": 2,
+      "3": 4,
+      "4": 9,
+      "5": 21,
+      "6": 62,
+      "7": 208
+    }
+  },
+  "claim_label": "DERIVED_INCONCLUSIVE",
+  "conclusion": {
+    "conway_99_status": "UNKNOWN",
+    "full_allowed_interval": "EXACTLY_FEASIBLE",
+    "graph_construction": false,
+    "new_lower_bound_beyond_n3_705": null
+  },
+  "hamiltonian_formulas": {
+    "classification": "CITED_SOURCE_FORMULAS_COMPATIBLE",
+    "only_H11_used_to_parameterize": true,
+    "other_18_match_derived_affine_coordinates": true,
+    "panel_alignment_is_pinned_source_interpretation": true
+  },
+  "order_seven_system": {
+    "all_base_rows": "PASS",
+    "all_delta_rows": "PASS",
+    "columns": 208,
+    "h11_coordinate_closes_rank_mod_5": true,
+    "integer_values_for_all_integer_z": true,
+    "minimum_at_z_max": 0,
+    "minimum_at_z_min": 2,
+    "nonnegative_for_full_real_interval": true,
+    "rank_mod_5": 207,
+    "rational_rank": 207,
+    "rational_rank_reason": "rank mod 5 is 207 and the nonzero exact integer delta is a kernel vector",
+    "row_breakdown": {
+      "deletion": 62,
+      "edge_pair_orbit": 180,
+      "nonedge_pair_orbit": 263,
+      "vertex_orbit": 207
+    },
+    "rows": 712,
+    "support_at_z_max": 207,
+    "support_at_z_min": 208
+  },
+  "parameters": {
+    "h11_max": 2820,
+    "h11_min": 1412,
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "n": 99,
+    "n3": 705,
+    "z_max": 705,
+    "z_min": 353
+  },
+  "schema_version": 1,
+  "scope": "Exact feasibility of all orbit-refined one-vertex extension equations through order seven, at n3=705 for every h11=4z with z=353,...,705",
+  "source_independence_gate": {
+    "all_source_six_counts_pass": true,
+    "five_to_six_rank_mod_7": 61,
+    "five_to_six_rows": 171,
+    "lower_transition_ranks": {
+      "1->2_mod_3": 2,
+      "2->3_mod_2": 4,
+      "3->4_mod_5": 9,
+      "4->5_mod_3": 21
+    },
+    "n3_coordinate_closes_rank": true
+  },
+  "witness": {
+    "path": "attempts/wave23-weighted-extensions/affine-witness.json",
+    "sha256": "16ade54a77589b91478b3426dc3dbe57ebb2a5e0f7d209602ca282e42ac3ec77"
+  }
+}

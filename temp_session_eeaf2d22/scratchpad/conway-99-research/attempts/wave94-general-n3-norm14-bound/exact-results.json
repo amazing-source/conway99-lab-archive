@@ -1,0 +1,66 @@
+{
+  "bound": {
+    "P_form": "N14<=floor((38808+12P)/7)",
+    "global_inequality": "7*N14<=38808+12P",
+    "n3_form": "N14<=floor((55440-4*n3)/7)",
+    "oriented_root_inequality": "a14(o)<=392+2*f_o"
+  },
+  "boundary_rows": [
+    {
+      "N14_upper_bound": 5544,
+      "P": 0,
+      "n3": 4158
+    },
+    {
+      "N14_upper_bound": 5545,
+      "P": 1,
+      "n3": 4155
+    },
+    {
+      "N14_upper_bound": 7515,
+      "P": 1150,
+      "n3": 708
+    },
+    {
+      "N14_upper_bound": 7920,
+      "P": 1386,
+      "n3": 0
+    }
+  ],
+  "claim_label": "DERIVED",
+  "endpoint": {
+    "Conway_99": "UNKNOWN",
+    "N16_upper_bound": null,
+    "N18_upper_bound": null,
+    "novelty": "UNKNOWN",
+    "strict_n3_upper_bound": null
+  },
+  "finite_census": {
+    "candidate_transition_rows": 924,
+    "mate_forbidden_candidate_rows": 84,
+    "mate_transition_seed_multiplicity": 0,
+    "nonmate_candidate_rows": 840,
+    "nonmate_transition_seed_multiplicity": 8,
+    "seed_count": 560,
+    "selected_transitions_per_root": 84,
+    "selected_transitions_per_seed_cap": 4
+  },
+  "format": "wave94-general-n3-norm14-bound-v1",
+  "full_domain_rows_checked": 1387,
+  "limitations": [
+    "The finite checker does not replace the graph-theoretic prism bijection proof.",
+    "The theorem bounds N14 only.",
+    "Discovery requires an independent verifier.",
+    "No target resolution or novelty claim follows."
+  ],
+  "prism_multiplicity": {
+    "global_identity": "sum_o f_o=6P",
+    "rooted_forbidden_transitions": "f_o=number of prisms containing o"
+  },
+  "scope": {
+    "N14_counts_both_signs": true,
+    "requires_prism_free_endpoint": false,
+    "requires_rank_28": false,
+    "target": "hypothetical srg(99,14,1,2)"
+  }
+}

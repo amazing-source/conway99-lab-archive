@@ -1,0 +1,3263 @@
+{
+  "claim_label": "DERIVED",
+  "format": "wave101-all-rank-level7-lp-v1",
+  "frozen_inputs": {
+    "attempts/wave86-level7-exact/package-manifest.sha256": "c6066fd10258578c15e511f3802217e4ff613ffe3d3b3b8f11e804f0316ac75d",
+    "verification/wave66-spherical-code-shift/package-manifest.sha256": "a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486",
+    "verification/wave71-modular-theta-extension/package-manifest.sha256": "0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237",
+    "verification/wave86-level7-exact/package-manifest.sha256": "cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2"
+  },
+  "global_assessment": {
+    "any_rigorous_upper_bound_contradiction": false,
+    "conway_99": "UNKNOWN",
+    "mod7_outcome": "none of the reported objectives has a fixed residue in the Wave71 level-one affine family; parity is the only unconditional rounding used",
+    "novelty": "UNKNOWN",
+    "scalar_short_range_outcome": "for every q=2,...,14 the exact scalar LP allows x7=x8=x9=0",
+    "short_signed_unit_range": "only x7,x8,x9 (norms 14,16,18) have the verified signed-unit graph dictionary"
+  },
+  "limitations": [
+    "Discovery only; the new certificates have not been independently verified.",
+    "Every result is conditional on the verified Wave66/71 lattice transfer.",
+    "A rational formal scalar theta pair is not a lattice, marked frame, or graph.",
+    "Only coefficients through the Sturm bound enter the LP.",
+    "No signed-unit eigenvector interpretation is used beyond norm 18.",
+    "No surviving q row is excluded, so Conway-99 remains UNKNOWN."
+  ],
+  "modular_space": {
+    "basis_products": [
+      [
+        3,
+        "A",
+        19,
+        "A"
+      ],
+      [
+        3,
+        "A",
+        19,
+        "B"
+      ],
+      [
+        3,
+        "B",
+        19,
+        "A"
+      ],
+      [
+        3,
+        "B",
+        19,
+        "B"
+      ],
+      [
+        5,
+        "A",
+        17,
+        "A"
+      ],
+      [
+        5,
+        "A",
+        17,
+        "B"
+      ],
+      [
+        5,
+        "B",
+        17,
+        "A"
+      ],
+      [
+        5,
+        "B",
+        17,
+        "B"
+      ],
+      [
+        7,
+        "A",
+        15,
+        "A"
+      ],
+      [
+        7,
+        "A",
+        15,
+        "B"
+      ],
+      [
+        7,
+        "B",
+        15,
+        "A"
+      ],
+      [
+        7,
+        "B",
+        15,
+        "B"
+      ],
+      [
+        9,
+        "A",
+        13,
+        "A"
+      ],
+      [
+        9,
+        "A",
+        13,
+        "B"
+      ],
+      [
+        9,
+        "B",
+        13,
+        "A"
+      ]
+    ],
+    "dimension": 15,
+    "fricke_involution_exact": true,
+    "space": "complete M_22(Gamma0(7)) with trivial character",
+    "sturm_bound": 14
+  },
+  "rows": [
+    {
+      "certificates": [
+        {
+          "decimal_lp_optimum": "180.772601359858977587509",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "total_through_norm_28 - 717848/3971",
+            "nonnegative_terms": {
+              "x10": "6003/3971",
+              "x11": "4568/3971",
+              "x12": "4258/3971",
+              "x13": "337/361",
+              "x14": "3948/3971",
+              "x8": "4018/3971",
+              "y1": "18571/3971"
+            }
+          },
+          "even_integer_lower_bound": 182,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "44952/3971",
+              "x8": "0",
+              "x9": "672896/3971"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "4031021510836839132384/3971",
+              "y11": "29830555698187589110512/3971",
+              "y12": "185447637532271063993904/3971",
+              "y13": "995922017566698510987888/3971",
+              "y14": "4721759817848200356721920/3971",
+              "y2": "12946176/3971",
+              "y3": "43951323312/3971",
+              "y4": "17723571565320/3971",
+              "y5": "1922114589965352/3971",
+              "y6": "88427988568218144/3971",
+              "y7": "2251512431069330160/3971",
+              "y8": "102990612287921760/11",
+              "y9": "441070115883724324016/3971"
+            }
+          },
+          "name": "total_through_norm_28",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "717848/3971",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 1548112371908520
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3,
+              1,
+              2
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 148,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "decimal_lp_optimum": "164.5",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_26 - 329/2",
+            "nonnegative_terms": {
+              "x10": "23/16",
+              "x11": "9/8",
+              "x12": "17/16",
+              "x13": "15/16",
+              "x7": "23/16",
+              "x8": "7/8",
+              "y1": "49/16"
+            }
+          },
+          "even_integer_lower_bound": 166,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x7",
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "5619/2",
+              "x7": "0",
+              "x8": "0",
+              "x9": "329/2"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "1015114953240051759",
+              "y11": "15024203005998158355/2",
+              "y12": "46700488342916150568",
+              "y13": "250798795541418965526",
+              "y14": "1189060644485696273568",
+              "y2": "5619/2",
+              "y3": "21704397/2",
+              "y4": "4460130954",
+              "y5": "484072054182",
+              "y6": "22268504225964",
+              "y7": "566987548308939",
+              "y8": "9362784812322192",
+              "y9": "111072816462806239"
+            }
+          },
+          "name": "prefix_through_norm_26",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "329/2",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2,
+              0,
+              0
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 148,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "1107.27574918156635608159",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "triangular_low_shell_weight - 4396992/3971",
+            "nonnegative_terms": {
+              "x10": "32457/3971",
+              "x11": "19606/3971",
+              "x12": "13689/3971",
+              "x13": "576/361",
+              "x14": "3801/3971",
+              "x8": "28835/3971",
+              "y1": "120344/3971"
+            }
+          },
+          "even_integer_lower_bound": 1108,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "44952/3971",
+              "x8": "0",
+              "x9": "672896/3971"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "4031021510836839132384/3971",
+              "y11": "29830555698187589110512/3971",
+              "y12": "185447637532271063993904/3971",
+              "y13": "995922017566698510987888/3971",
+              "y14": "4721759817848200356721920/3971",
+              "y2": "12946176/3971",
+              "y3": "43951323312/3971",
+              "y4": "17723571565320/3971",
+              "y5": "1922114589965352/3971",
+              "y6": "88427988568218144/3971",
+              "y7": "2251512431069330160/3971",
+              "y8": "102990612287921760/11",
+              "y9": "441070115883724324016/3971"
+            }
+          },
+          "name": "triangular_low_shell_weight",
+          "objective": "8*x7 + 7*x8 + 6*x9 + 5*x10 + 4*x11 + 3*x12 + 2*x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "4396992/3971",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 12384898975268160
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2,
+              1,
+              3
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 148,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      "poisson_relation": "Theta_L=-7^10*(Theta_K|W_7)",
+      "q_discriminant_length_L": 2,
+      "r_rank_F7_Seidel": 42,
+      "x14_elimination": {
+        "coefficients_on_x7_to_x13": [
+          "-288",
+          "35",
+          "91",
+          "-27",
+          "-7",
+          "-4",
+          "5"
+        ],
+        "constant": "-12160"
+      },
+      "x_initial_gap": "x1=...=x6=0",
+      "zero_prefix_null_control": {
+        "conclusion": "scalar level-7 positivity alone cannot force a vector of squared norm at most 24",
+        "formal_scalar_control_not_a_lattice": true,
+        "integral_even_nonnegative_first_15_coefficients": true,
+        "last_prefix_with_exact_zero_lp_optimum": "x7+...+x12",
+        "x7_to_x14": {
+          "x10": "0",
+          "x11": "0",
+          "x12": "0",
+          "x13": "2632",
+          "x14": "1000",
+          "x7": "0",
+          "x8": "0",
+          "x9": "0"
+        },
+        "y1_to_y14": {
+          "y1": "0",
+          "y10": "1015115025714338224",
+          "y11": "7512101317756240624",
+          "y12": "46700488441817122192",
+          "y13": "250798795932509980736",
+          "y14": "1189060644320504404992",
+          "y2": "1000",
+          "y3": "10648712",
+          "y4": "4464109880",
+          "y5": "484047985200",
+          "y6": "22268505853856",
+          "y7": "566988121891816",
+          "y8": "9362783288799520",
+          "y9": "111072807104806896"
+        }
+      }
+    },
+    {
+      "certificates": [
+        {
+          "decimal_lp_optimum": "1583.02895995970788214556",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "total_through_norm_28 - 6286208/3971",
+            "nonnegative_terms": {
+              "x10": "6003/3971",
+              "x11": "4568/3971",
+              "x12": "4258/3971",
+              "x13": "337/361",
+              "x14": "3948/3971",
+              "x8": "4018/3971",
+              "y1": "129997/3971"
+            }
+          },
+          "even_integer_lower_bound": 1584,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "1532886/3971",
+              "x8": "0",
+              "x9": "4753322/3971"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "575860152215848246608/3971",
+              "y11": "4261511472274813179078/3971",
+              "y12": "26492511442329973838700/3971",
+              "y13": "142274575017020750942316/3971",
+              "y14": "674537110606385458946928/3971",
+              "y2": "12338352/3971",
+              "y3": "11028109842/3971",
+              "y4": "2577447032004/3971",
+              "y5": "274029518121246/3971",
+              "y6": "12631355555766240/3971",
+              "y7": "321666261731029800/3971",
+              "y8": "14712857546055462/11",
+              "y9": "63009864007462048808/3971"
+            }
+          },
+          "name": "total_through_norm_28",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "6286208/3971",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 1548112371908520
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3,
+              1
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 142,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "decimal_lp_optimum": "140.8",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_24 - 704/5",
+            "nonnegative_terms": {
+              "x10": "27/35",
+              "x11": "32/35",
+              "x12": "34/35",
+              "x8": "2/7",
+              "x9": "24/35",
+              "y1": "43/5",
+              "y2": "1/5"
+            }
+          },
+          "even_integer_lower_bound": 142,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x9",
+              "x10",
+              "x11",
+              "x12",
+              "y1",
+              "y2"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "87178/5",
+              "x14": "244368/5",
+              "x7": "704/5",
+              "x8": "0",
+              "x9": "0"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "145016451026726608",
+              "y11": "1073157599397320388",
+              "y12": "33357488044678025844/5",
+              "y13": "179141998271110669872/5",
+              "y14": "169865805674139733008",
+              "y2": "0",
+              "y3": "9582678/5",
+              "y4": "3215880668/5",
+              "y5": "345452663556/5",
+              "y6": "15905451632224/5",
+              "y7": "81000585630470",
+              "y8": "6687684355980474/5",
+              "y9": "79337631999637396/5"
+            }
+          },
+          "name": "prefix_through_norm_24",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "704/5",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2,
+              5
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 142,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "1028.125",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_26 - 8225/8",
+            "nonnegative_terms": {
+              "x10": "23/16",
+              "x11": "9/8",
+              "x12": "17/16",
+              "x13": "15/16",
+              "x7": "23/16",
+              "x8": "7/8",
+              "y1": "343/16"
+            }
+          },
+          "even_integer_lower_bound": 1030,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x7",
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "766443/8",
+              "x7": "0",
+              "x8": "0",
+              "x9": "8225/8"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "580065473344995297/4",
+              "y11": "8585259943207133325/8",
+              "y12": "6671498265934111806",
+              "y13": "71656798146067881621/2",
+              "y14": "169865806458928844520",
+              "y2": "7293/8",
+              "y3": "13804179/8",
+              "y4": "1267731855/2",
+              "y5": "138347916237/2",
+              "y6": "3181196943165",
+              "y7": "323991442673109/4",
+              "y8": "1337541648269910",
+              "y9": "63470209556910145/4"
+            }
+          },
+          "name": "prefix_through_norm_26",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "8225/8",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2,
+              0
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 142,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "10270.2140518761017375976",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "triangular_low_shell_weight - 40783020/3971",
+            "nonnegative_terms": {
+              "x10": "32457/3971",
+              "x11": "19606/3971",
+              "x12": "13689/3971",
+              "x13": "576/361",
+              "x14": "3801/3971",
+              "x8": "28835/3971",
+              "y1": "842408/3971"
+            }
+          },
+          "even_integer_lower_bound": 10272,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "1532886/3971",
+              "x8": "0",
+              "x9": "4753322/3971"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "575860152215848246608/3971",
+              "y11": "4261511472274813179078/3971",
+              "y12": "26492511442329973838700/3971",
+              "y13": "142274575017020750942316/3971",
+              "y14": "674537110606385458946928/3971",
+              "y2": "12338352/3971",
+              "y3": "11028109842/3971",
+              "y4": "2577447032004/3971",
+              "y5": "274029518121246/3971",
+              "y6": "12631355555766240/3971",
+              "y7": "321666261731029800/3971",
+              "y8": "14712857546055462/11",
+              "y9": "63009864007462048808/3971"
+            }
+          },
+          "name": "triangular_low_shell_weight",
+          "objective": "8*x7 + 7*x8 + 6*x9 + 5*x10 + 4*x11 + 3*x12 + 2*x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "40783020/3971",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 12384898975268160
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2,
+              1
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 142,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      "poisson_relation": "Theta_L=-7^9*(Theta_K|W_7)",
+      "q_discriminant_length_L": 4,
+      "r_rank_F7_Seidel": 40,
+      "x14_elimination": {
+        "coefficients_on_x7_to_x13": [
+          "-288",
+          "35",
+          "91",
+          "-27",
+          "-7",
+          "-4",
+          "5"
+        ],
+        "constant": "2246"
+      },
+      "x_initial_gap": "x1=...=x6=0",
+      "zero_prefix_null_control": {
+        "conclusion": "scalar level-7 positivity alone cannot force a vector of squared norm at most 22",
+        "formal_scalar_control_not_a_lattice": true,
+        "integral_even_nonnegative_first_15_coefficients": true,
+        "last_prefix_with_exact_zero_lp_optimum": "x7+...+x11",
+        "x7_to_x14": {
+          "x10": "0",
+          "x11": "0",
+          "x12": "4928",
+          "x13": "21378",
+          "x14": "89424",
+          "x7": "0",
+          "x8": "0",
+          "x9": "0"
+        },
+        "y1_to_y14": {
+          "y1": "0",
+          "y10": "145016432031849168",
+          "y11": "1073157337334037060",
+          "y12": "6671498333567626020",
+          "y13": "35828399424880431600",
+          "y14": "169865806366658247696",
+          "y2": "0",
+          "y3": "1516382",
+          "y4": "637912044",
+          "y5": "69147099252",
+          "y6": "3181237251808",
+          "y7": "80998181052294",
+          "y8": "1337540905613682",
+          "y9": "15867543025854212"
+        }
+      }
+    },
+    {
+      "certificates": [
+        {
+          "decimal_lp_optimum": "11398.8234701586502140519",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "total_through_norm_28 - 45264728/3971",
+            "nonnegative_terms": {
+              "x10": "6003/3971",
+              "x11": "4568/3971",
+              "x12": "4258/3971",
+              "x13": "337/361",
+              "x14": "3948/3971",
+              "x8": "4018/3971",
+              "y1": "909979/3971"
+            }
+          },
+          "even_integer_lower_bound": 11400,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "11948424/3971",
+              "x8": "0",
+              "x9": "33316304/3971"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "82265672412849548640/3971",
+              "y11": "608790868572988046016/3971",
+              "y12": "3784636286624103816528/3971",
+              "y13": "20324940367066785221520/3971",
+              "y14": "96362438143269044979072/3971",
+              "y2": "12251520/3971",
+              "y3": "6324793632/3971",
+              "y4": "413714955816/3971",
+              "y5": "38588793572088/3971",
+              "y6": "1803265125415968/3971",
+              "y7": "45973951825558320/3971",
+              "y8": "2101749725788848/11",
+              "y9": "9001256596567438064/3971"
+            }
+          },
+          "name": "total_through_norm_28",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "45264728/3971",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 1548112371908520
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3,
+              1
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 136,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "decimal_lp_optimum": "1326.4",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_24 - 6632/5",
+            "nonnegative_terms": {
+              "x10": "27/35",
+              "x11": "32/35",
+              "x12": "34/35",
+              "x8": "2/7",
+              "x9": "24/35",
+              "y1": "301/5",
+              "y2": "7/5"
+            }
+          },
+          "even_integer_lower_bound": 1328,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x9",
+              "x10",
+              "x11",
+              "x12",
+              "y1",
+              "y2"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "612304/5",
+              "x14": "1666944/5",
+              "x7": "6632/5",
+              "x8": "0",
+              "x9": "0"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "20716658291583520",
+              "y11": "153308551947470640",
+              "y12": "4765350979284830256/5",
+              "y13": "25591715450580173328/5",
+              "y14": "24266542881051847296",
+              "y2": "0",
+              "y3": "3723552/5",
+              "y4": "492483992/5",
+              "y5": "48991643064/5",
+              "y6": "2271473749216/5",
+              "y7": "11574243768992",
+              "y8": "955362019557456/5",
+              "y9": "11333842175998384/5"
+            }
+          },
+          "name": "prefix_through_norm_24",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "6632/5",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2,
+              5
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 136,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "7073.5",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_26 - 14147/2",
+            "nonnegative_terms": {
+              "x10": "23/16",
+              "x11": "9/8",
+              "x12": "17/16",
+              "x13": "15/16",
+              "x7": "23/16",
+              "x8": "7/8",
+              "y1": "2401/16"
+            }
+          },
+          "even_integer_lower_bound": 7074,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x7",
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "1493553/2",
+              "x7": "0",
+              "x8": "0",
+              "x9": "14147/2"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "20716570492848405",
+              "y11": "306616697202301185/2",
+              "y12": "953071112079534840",
+              "y13": "5118342434693222994",
+              "y14": "24266543883676354656",
+              "y2": "1281/2",
+              "y3": "843423/2",
+              "y4": "87256638",
+              "y5": "9902801538",
+              "y6": "454438759908",
+              "y7": "11570762433897",
+              "y8": "191078339119584",
+              "y9": "2266800378716293"
+            }
+          },
+          "name": "prefix_through_norm_26",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "14147/2",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2,
+              0
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 136,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "74410.7821707378494082095",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "triangular_low_shell_weight - 295485216/3971",
+            "nonnegative_terms": {
+              "x10": "32457/3971",
+              "x11": "19606/3971",
+              "x12": "13689/3971",
+              "x13": "576/361",
+              "x14": "3801/3971",
+              "x8": "28835/3971",
+              "y1": "5896856/3971"
+            }
+          },
+          "even_integer_lower_bound": 74412,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "11948424/3971",
+              "x8": "0",
+              "x9": "33316304/3971"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "82265672412849548640/3971",
+              "y11": "608790868572988046016/3971",
+              "y12": "3784636286624103816528/3971",
+              "y13": "20324940367066785221520/3971",
+              "y14": "96362438143269044979072/3971",
+              "y2": "12251520/3971",
+              "y3": "6324793632/3971",
+              "y4": "413714955816/3971",
+              "y5": "38588793572088/3971",
+              "y6": "1803265125415968/3971",
+              "y7": "45973951825558320/3971",
+              "y8": "2101749725788848/11",
+              "y9": "9001256596567438064/3971"
+            }
+          },
+          "name": "triangular_low_shell_weight",
+          "objective": "8*x7 + 7*x8 + 6*x9 + 5*x10 + 4*x11 + 3*x12 + 2*x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "295485216/3971",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 12384898975268160
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2,
+              1
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 136,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      "poisson_relation": "Theta_L=-7^8*(Theta_K|W_7)",
+      "q_discriminant_length_L": 6,
+      "r_rank_F7_Seidel": 38,
+      "x14_elimination": {
+        "coefficients_on_x7_to_x13": [
+          "-288",
+          "35",
+          "91",
+          "-27",
+          "-7",
+          "-4",
+          "5"
+        ],
+        "constant": "103088"
+      },
+      "x_initial_gap": "x1=...=x6=0",
+      "zero_prefix_null_control": {
+        "conclusion": "scalar level-7 positivity alone cannot force a vector of squared norm at most 22",
+        "formal_scalar_control_not_a_lattice": true,
+        "integral_even_nonnegative_first_15_coefficients": true,
+        "last_prefix_with_exact_zero_lp_optimum": "x7+...+x11",
+        "x7_to_x14": {
+          "x10": "0",
+          "x11": "0",
+          "x12": "46424",
+          "x13": "159600",
+          "x14": "715392",
+          "x7": "0",
+          "x8": "0",
+          "x9": "0"
+        },
+        "y1_to_y14": {
+          "y1": "0",
+          "y10": "20716632728672160",
+          "y11": "153308199268149408",
+          "y12": "953071171051682424",
+          "y13": "5118342781472737152",
+          "y14": "24266543813028874368",
+          "y2": "0",
+          "y3": "206192",
+          "y4": "91412496",
+          "y5": "9874454688",
+          "y6": "454492478944",
+          "y7": "11571007737648",
+          "y8": "191077833346848",
+          "y9": "2266790810026400"
+        }
+      }
+    },
+    {
+      "certificates": [
+        {
+          "decimal_lp_optimum": "80109.3850415512465373961",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "total_through_norm_28 - 28919488/361",
+            "nonnegative_terms": {
+              "x10": "6003/3971",
+              "x11": "4568/3971",
+              "x12": "4258/3971",
+              "x13": "337/361",
+              "x14": "3948/3971",
+              "x8": "4018/3971",
+              "y1": "6369853/3971"
+            }
+          },
+          "even_integer_lower_bound": 80110,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "7714290/361",
+              "x8": "0",
+              "x9": "21205198/361"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "7478657007904376592/2527",
+              "y11": "55346861482644653550/2527",
+              "y12": "49150374683933203812/361",
+              "y13": "263960362591084815972/361",
+              "y14": "1251459669347622089424/361",
+              "y2": "7788528/2527",
+              "y3": "3597294474/2527",
+              "y4": "66570237684/2527",
+              "y5": "3152802768678/2527",
+              "y6": "163160495232864/2527",
+              "y7": "599030556797880/361",
+              "y8": "191012750932302/7",
+              "y9": "818198978643405064/2527"
+            }
+          },
+          "name": "total_through_norm_28",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "28919488/361",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 1548112371908520
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 130,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "decimal_lp_optimum": "9625.6",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_24 - 48128/5",
+            "nonnegative_terms": {
+              "x10": "27/35",
+              "x11": "32/35",
+              "x12": "34/35",
+              "x8": "2/7",
+              "x9": "24/35",
+              "y1": "2107/5",
+              "y2": "49/5"
+            }
+          },
+          "even_integer_lower_bound": 9626,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x9",
+              "x10",
+              "x11",
+              "x12",
+              "y1",
+              "y2"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "4288186/5",
+              "x14": "11624976/5",
+              "x7": "48128/5",
+              "x8": "0",
+              "x9": "0"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "2959545043705936",
+              "y11": "21901545168920676",
+              "y12": "680759969942945172/5",
+              "y13": "3655960761932959536/5",
+              "y14": "3466648196325006480",
+              "y2": "0",
+              "y3": "2886534/5",
+              "y4": "103427324/5",
+              "y5": "6640068708/5",
+              "y6": "323762623072/5",
+              "y7": "1656194931638",
+              "y8": "136458828639882/5",
+              "y9": "1619015058335668/5"
+            }
+          },
+          "name": "prefix_through_norm_24",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "48128/5",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 130,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "49391.125",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_26 - 395129/8",
+            "nonnegative_terms": {
+              "x10": "23/16",
+              "x11": "9/8",
+              "x12": "17/16",
+              "x13": "15/16",
+              "x7": "23/16",
+              "x8": "7/8",
+              "y1": "16807/16"
+            }
+          },
+          "even_integer_lower_bound": 49392,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x7",
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "42428595/8",
+              "x7": "0",
+              "x8": "0",
+              "x9": "395129/8"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "82864782426153663/28",
+              "y11": "1226474367266504595/56",
+              "y12": "136152947243166702",
+              "y13": "1462382972717669469/2",
+              "y14": "3466649230068856104",
+              "y2": "33699/56",
+              "y3": "13185357/56",
+              "y4": "128374353/14",
+              "y5": "20096908371/14",
+              "y6": "454313136099/7",
+              "y7": "6610422173085/4",
+              "y8": "191085064686762/7",
+              "y9": "9067402562011231/28"
+            }
+          },
+          "name": "prefix_through_norm_26",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "395129/8",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 130,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "523394.759002770083102493",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "triangular_low_shell_weight - 188945508/361",
+            "nonnegative_terms": {
+              "x10": "32457/3971",
+              "x11": "19606/3971",
+              "x12": "13689/3971",
+              "x13": "576/361",
+              "x14": "3801/3971",
+              "x8": "28835/3971",
+              "y1": "41277992/3971"
+            }
+          },
+          "even_integer_lower_bound": 523396,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "7714290/361",
+              "x8": "0",
+              "x9": "21205198/361"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "7478657007904376592/2527",
+              "y11": "55346861482644653550/2527",
+              "y12": "49150374683933203812/361",
+              "y13": "263960362591084815972/361",
+              "y14": "1251459669347622089424/361",
+              "y2": "7788528/2527",
+              "y3": "3597294474/2527",
+              "y4": "66570237684/2527",
+              "y5": "3152802768678/2527",
+              "y6": "163160495232864/2527",
+              "y7": "599030556797880/361",
+              "y8": "191012750932302/7",
+              "y9": "818198978643405064/2527"
+            }
+          },
+          "name": "triangular_low_shell_weight",
+          "objective": "8*x7 + 7*x8 + 6*x9 + 5*x10 + 4*x11 + 3*x12 + 2*x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "188945508/361",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 12384898975268160
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 130,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      "poisson_relation": "Theta_L=-7^7*(Theta_K|W_7)",
+      "q_discriminant_length_L": 8,
+      "r_rank_F7_Seidel": 36,
+      "x14_elimination": {
+        "coefficients_on_x7_to_x13": [
+          "-288",
+          "35",
+          "91",
+          "-27",
+          "-7",
+          "-4",
+          "5"
+        ],
+        "constant": "808982"
+      },
+      "x_initial_gap": "x1=...=x6=0",
+      "zero_prefix_null_control": {
+        "conclusion": "scalar level-7 positivity alone cannot force a vector of squared norm at most 22",
+        "formal_scalar_control_not_a_lattice": true,
+        "integral_even_nonnegative_first_15_coefficients": true,
+        "last_prefix_with_exact_zero_lp_optimum": "x7+...+x11",
+        "x7_to_x14": {
+          "x10": "0",
+          "x11": "0",
+          "x12": "336896",
+          "x13": "1127154",
+          "x14": "5097168",
+          "x7": "0",
+          "x8": "0",
+          "x9": "0"
+        },
+        "y1_to_y14": {
+          "y1": "0",
+          "y10": "2959518542504016",
+          "y11": "21901179544451172",
+          "y12": "136153004977976196",
+          "y13": "731191832414495088",
+          "y14": "3466649162510392464",
+          "y2": "0",
+          "y3": "19022",
+          "y4": "13341132",
+          "y5": "1406934036",
+          "y6": "64957511392",
+          "y7": "1652840121270",
+          "y8": "27297394451586",
+          "y9": "323826207765284"
+        }
+      }
+    },
+    {
+      "certificates": [
+        {
+          "decimal_lp_optimum": "561083.316041299420800806",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "total_through_norm_28 - 2228061848/3971",
+            "nonnegative_terms": {
+              "x10": "6003/3971",
+              "x11": "4568/3971",
+              "x12": "4258/3971",
+              "x13": "337/361",
+              "x14": "3948/3971",
+              "x8": "4018/3971",
+              "y1": "44588971/3971"
+            }
+          },
+          "even_integer_lower_bound": 561084,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "595218552/3971",
+              "x8": "0",
+              "x9": "1632843296/3971"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "82262109805638299616/194579",
+              "y11": "608987730461813190288/194579",
+              "y12": "540596685562018118928/27797",
+              "y13": "2903571540948678584016/27797",
+              "y14": "13766012759321698890240/27797",
+              "y2": "599629824/194579",
+              "y3": "272288358288/194579",
+              "y4": "2962176225480/194579",
+              "y5": "7325088639048/194579",
+              "y6": "1735267702580256/194579",
+              "y7": "6740737172655120/27797",
+              "y8": "2096874001520640/539",
+              "y9": "8992713944647579184/194579"
+            }
+          },
+          "name": "total_through_norm_28",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "2228061848/3971",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 1548112371908520
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0,
+              3
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 124,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "decimal_lp_optimum": "931.310344827586206896552",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_22 - 27008/29",
+            "nonnegative_terms": {
+              "x10": "57/58",
+              "x11": "405/406",
+              "x8": "281/406",
+              "x9": "186/203",
+              "y1": "2863/29",
+              "y2": "273/58",
+              "y3": "7/58"
+            }
+          },
+          "even_integer_lower_bound": 932,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x9",
+              "x10",
+              "x11",
+              "y1",
+              "y2",
+              "y3"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "67790520/29",
+              "x13": "228344704/29",
+              "x14": "1029540096/29",
+              "x7": "27008/29",
+              "x8": "0",
+              "x9": "0"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "12260861012552096/29",
+              "y11": "90733843060592256/29",
+              "y12": "564061479672291384/29",
+              "y13": "3029223622178218752/29",
+              "y14": "14361833201943057408/29",
+              "y2": "0",
+              "y3": "0",
+              "y4": "66398192/29",
+              "y5": "5689724544/29",
+              "y6": "269897941600/29",
+              "y7": "6844156691584/29",
+              "y8": "113103221764176/29",
+              "y9": "1341525946569088/29"
+            }
+          },
+          "name": "prefix_through_norm_22",
+          "objective": "x7 + x8 + x9 + x10 + x11",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "27008/29",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 124,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "67720",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_24 - 67720",
+            "nonnegative_terms": {
+              "x10": "27/35",
+              "x11": "32/35",
+              "x12": "34/35",
+              "x8": "2/7",
+              "x9": "24/35",
+              "y1": "14749/5",
+              "y2": "343/5"
+            }
+          },
+          "even_integer_lower_bound": 67720,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x9",
+              "x10",
+              "x11",
+              "x12",
+              "y1",
+              "y2"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "6003872",
+              "x14": "16266240",
+              "x7": "67720",
+              "x8": "0",
+              "x9": "0"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "422814579723424",
+              "y11": "3129115629127824",
+              "y12": "19449393721678032",
+              "y13": "104456304139528656",
+              "y14": "495234669935457792",
+              "y2": "0",
+              "y3": "553392",
+              "y4": "9569560",
+              "y5": "117968760",
+              "y6": "9103635296",
+              "y7": "239330812016",
+              "y8": "3894531701760",
+              "y9": "46236522591056"
+            }
+          },
+          "name": "prefix_through_norm_24",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "67720",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 124,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "370476.498866817757632316",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_26 - 2778944218/7501",
+            "nonnegative_terms": {
+              "x10": "1668880/1102647",
+              "x11": "59792/52507",
+              "x12": "1568299/1470196",
+              "x13": "1025039/1102647",
+              "x8": "98103/105014",
+              "y1": "189295183/22503",
+              "y4": "1127/90012"
+            }
+          },
+          "even_integer_lower_bound": 370478,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "y1",
+              "y4"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "246848018790/7501",
+              "x7": "129732072/7501",
+              "x8": "0",
+              "x9": "2649212146/7501"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "3170905216252803804/7501",
+              "y11": "23470609422253016982/7501",
+              "y12": "11222698157672837808/577",
+              "y13": "783522297126677008488/7501",
+              "y14": "3714761358429991217280/7501",
+              "y2": "509502/577",
+              "y3": "199765554/577",
+              "y4": "0",
+              "y5": "1531394643312/7501",
+              "y6": "69121841454864/7501",
+              "y7": "1774042489951740/7501",
+              "y8": "29249861110680000/7501",
+              "y9": "347021031266959756/7501"
+            }
+          },
+          "name": "prefix_through_norm_26",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "2778944218/7501",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6,
+              2
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 124,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "3666282.59682699571896248",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "triangular_low_shell_weight - 14558808192/3971",
+            "nonnegative_terms": {
+              "x10": "32457/3971",
+              "x11": "19606/3971",
+              "x12": "13689/3971",
+              "x13": "576/361",
+              "x14": "3801/3971",
+              "x8": "28835/3971",
+              "y1": "288945944/3971"
+            }
+          },
+          "even_integer_lower_bound": 3666284,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "x14",
+              "y1"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "0",
+              "x7": "595218552/3971",
+              "x8": "0",
+              "x9": "1632843296/3971"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "82262109805638299616/194579",
+              "y11": "608987730461813190288/194579",
+              "y12": "540596685562018118928/27797",
+              "y13": "2903571540948678584016/27797",
+              "y14": "13766012759321698890240/27797",
+              "y2": "599629824/194579",
+              "y3": "272288358288/194579",
+              "y4": "2962176225480/194579",
+              "y5": "7325088639048/194579",
+              "y6": "1735267702580256/194579",
+              "y7": "6740737172655120/27797",
+              "y8": "2096874001520640/539",
+              "y9": "8992713944647579184/194579"
+            }
+          },
+          "name": "triangular_low_shell_weight",
+          "objective": "8*x7 + 7*x8 + 6*x9 + 5*x10 + 4*x11 + 3*x12 + 2*x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "14558808192/3971",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 12384898975268160
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0,
+              2
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 124,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      "poisson_relation": "Theta_L=-7^6*(Theta_K|W_7)",
+      "q_discriminant_length_L": 10,
+      "r_rank_F7_Seidel": 34,
+      "x14_elimination": {
+        "coefficients_on_x7_to_x13": [
+          "-288",
+          "35",
+          "91",
+          "-27",
+          "-7",
+          "-4",
+          "5"
+        ],
+        "constant": "5750240"
+      },
+      "x_initial_gap": "x1=...=x6=0",
+      "zero_prefix_null_control": {
+        "conclusion": "scalar level-7 positivity alone cannot force a vector of squared norm at most 20",
+        "formal_scalar_control_not_a_lattice": true,
+        "integral_even_nonnegative_first_15_coefficients": true,
+        "last_prefix_with_exact_zero_lp_optimum": "x7+...+x10",
+        "x7_to_x14": {
+          "x10": "0",
+          "x11": "378112",
+          "x12": "1235864",
+          "x13": "7521920",
+          "x14": "35769600",
+          "x7": "0",
+          "x8": "0",
+          "x9": "0"
+        },
+        "y1_to_y14": {
+          "y1": "0",
+          "y10": "422786607969824",
+          "y11": "3128736202042752",
+          "y12": "19450448048093720",
+          "y13": "104455954742621440",
+          "y14": "495235567565005824",
+          "y2": "0",
+          "y3": "0",
+          "y4": "1918000",
+          "y5": "201601792",
+          "y6": "9268544992",
+          "y7": "236214042752",
+          "y8": "3899153624464",
+          "y9": "46262304274816"
+        }
+      }
+    },
+    {
+      "certificates": [
+        {
+          "decimal_lp_optimum": "189901473.544250106648790",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "total_through_norm_28 - 15580466396938/82045",
+            "nonnegative_terms": {
+              "x10": "505872/114863",
+              "x11": "59629/16409",
+              "x12": "301597/114863",
+              "x13": "573382/574315",
+              "x8": "6556248/82045",
+              "y1": "65630943637/16409",
+              "y5": "112847/82045"
+            }
+          },
+          "even_integer_lower_bound": 189901474,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "y1",
+              "y5"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "30694184012637/164090",
+              "x7": "24273336594/82045",
+              "x8": "0",
+              "x9": "418202108051/164090"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "990253763882266971/16409",
+              "y11": "513859338990528981993/1148630",
+              "y12": "227912485690500643116/82045",
+              "y13": "1224286032678762168042/82045",
+              "y14": "5804479633253072746032/82045",
+              "y2": "1488928221/1148630",
+              "y3": "88729385697/164090",
+              "y4": "731201183442/574315",
+              "y5": "0",
+              "y6": "19844457652380/16409",
+              "y7": "2889980287540731/82045",
+              "y8": "318904766821943766/574315",
+              "y9": "3791688371522363209/574315"
+            }
+          },
+          "name": "total_through_norm_28",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "15580466396938/82045",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 1548112371908520
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 118,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "decimal_lp_optimum": "9746.24137931034482758621",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_22 - 282641/29",
+            "nonnegative_terms": {
+              "x10": "57/58",
+              "x11": "405/406",
+              "x8": "281/406",
+              "x9": "186/203",
+              "y1": "20041/29",
+              "y2": "1911/58",
+              "y3": "49/58"
+            }
+          },
+          "even_integer_lower_bound": 9748,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x9",
+              "x10",
+              "x11",
+              "y1",
+              "y2",
+              "y3"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "471604077/29",
+              "x13": "1596081214/29",
+              "x14": "7182421488/29",
+              "x7": "282641/29",
+              "x8": "0",
+              "x9": "0"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "1751553793355072/29",
+              "y11": "12962414138155650/29",
+              "y12": "80579099152031781/29",
+              "y13": "432746593366854438/29",
+              "y14": "2051691278294407824/29",
+              "y2": "0",
+              "y3": "0",
+              "y4": "21649943/29",
+              "y5": "662675517/29",
+              "y6": "39316165168/29",
+              "y7": "974886412096/29",
+              "y8": "16170824758284/29",
+              "y9": "191603518204042/29"
+            }
+          },
+          "name": "prefix_through_norm_22",
+          "objective": "x7 + x8 + x9 + x10 + x11",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "282641/29",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 118,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "645485.130727394166852199",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_24 - 101473489976/157205",
+            "nonnegative_terms": {
+              "x10": "693783/1100435",
+              "x11": "135904/157205",
+              "x12": "1052596/1100435",
+              "x9": "75318/157205",
+              "y1": "5057199007/157205",
+              "y2": "118598179/157205",
+              "y5": "98/31441"
+            }
+          },
+          "even_integer_lower_bound": 645486,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x9",
+              "x10",
+              "x11",
+              "x12",
+              "y1",
+              "y2",
+              "y5"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "5947923410254/157205",
+              "x14": "37265456525328/157205",
+              "x7": "7328892884/157205",
+              "x8": "94144597092/157205",
+              "x9": "0"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "1899913172865219568/31441",
+              "y11": "70245361763197982676/157205",
+              "y12": "436839271756769231364/157205",
+              "y13": "2345867935408502922312/157205",
+              "y14": "2224386807225080774544/31441",
+              "y2": "0",
+              "y3": "41170696938/157205",
+              "y4": "28942197284/157205",
+              "y5": "0",
+              "y6": "235787327341888/157205",
+              "y7": "1057911349108538/31441",
+              "y8": "87265900706658534/157205",
+              "y9": "1039289783580791092/157205"
+            }
+          },
+          "name": "prefix_through_norm_24",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "101473489976/157205",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 118,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "2732882.53499533395547260",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_26 - 20499351895/7501",
+            "nonnegative_terms": {
+              "x10": "1668880/1102647",
+              "x11": "59792/52507",
+              "x12": "1568299/1470196",
+              "x13": "1025039/1102647",
+              "x8": "98103/105014",
+              "y1": "1325066281/22503",
+              "y4": "7889/90012"
+            }
+          },
+          "even_integer_lower_bound": 2732884,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "y1",
+              "y4"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "1547625125181/7501",
+              "x7": "1636936890/7501",
+              "x8": "0",
+              "x9": "18862415005/7501"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "3168533369152291026/52507",
+              "y11": "3355215689586160245/7501",
+              "y12": "1602945496640619732/577",
+              "y13": "111930522315665515968/7501",
+              "y14": "530678170972509708240/7501",
+              "y2": "641847/577",
+              "y3": "1828287897/4039",
+              "y4": "0",
+              "y5": "731201183442/52507",
+              "y6": "64804090555080/52507",
+              "y7": "260459255386206/7501",
+              "y8": "4170888535594890/7501",
+              "y9": "49551905156119750/7501"
+            }
+          },
+          "name": "prefix_through_norm_26",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "20499351895/7501",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 118,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "204715522.252708879273569",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "triangular_low_shell_weight - 33591770046447/164090",
+            "nonnegative_terms": {
+              "x10": "5034783/459452",
+              "x11": "481007/65636",
+              "x12": "2270997/459452",
+              "x13": "3808881/2297260",
+              "x8": "13655937/164090",
+              "y1": "140606797765/32818",
+              "y5": "434581/328180"
+            }
+          },
+          "even_integer_lower_bound": 204715524,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x11",
+              "x12",
+              "x13",
+              "y1",
+              "y5"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "0",
+              "x13": "0",
+              "x14": "30694184012637/164090",
+              "x7": "24273336594/82045",
+              "x8": "0",
+              "x9": "418202108051/164090"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "990253763882266971/16409",
+              "y11": "513859338990528981993/1148630",
+              "y12": "227912485690500643116/82045",
+              "y13": "1224286032678762168042/82045",
+              "y14": "5804479633253072746032/82045",
+              "y2": "1488928221/1148630",
+              "y3": "88729385697/164090",
+              "y4": "731201183442/574315",
+              "y5": "0",
+              "y6": "19844457652380/16409",
+              "y7": "2889980287540731/82045",
+              "y8": "318904766821943766/574315",
+              "y9": "3791688371522363209/574315"
+            }
+          },
+          "name": "triangular_low_shell_weight",
+          "objective": "8*x7 + 7*x8 + 6*x9 + 5*x10 + 4*x11 + 3*x12 + 2*x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "33591770046447/164090",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 12384898975268160
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 118,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      "poisson_relation": "Theta_L=-7^5*(Theta_K|W_7)",
+      "q_discriminant_length_L": 12,
+      "r_rank_F7_Seidel": 32,
+      "x14_elimination": {
+        "coefficients_on_x7_to_x13": [
+          "-288",
+          "35",
+          "91",
+          "-27",
+          "-7",
+          "-4",
+          "5"
+        ],
+        "constant": "40339046"
+      },
+      "x_initial_gap": "x1=...=x6=0",
+      "zero_prefix_null_control": {
+        "conclusion": "scalar level-7 positivity alone cannot force a vector of squared norm at most 20",
+        "formal_scalar_control_not_a_lattice": true,
+        "integral_even_nonnegative_first_15_coefficients": true,
+        "last_prefix_with_exact_zero_lp_optimum": "x7+...+x10",
+        "x7_to_x14": {
+          "x10": "0",
+          "x11": "3956974",
+          "x12": "4732406",
+          "x13": "51353204",
+          "x14": "250476624",
+          "x7": "0",
+          "x8": "0",
+          "x9": "0"
+        },
+        "y1_to_y14": {
+          "y1": "0",
+          "y10": "60395860949168",
+          "y11": "446954372282268",
+          "y12": "2778667661562578",
+          "y13": "14922248140189594",
+          "y14": "70747885281012048",
+          "y2": "0",
+          "y3": "0",
+          "y4": "191014",
+          "y5": "30930514",
+          "y6": "1298499904",
+          "y7": "33928691540",
+          "y8": "556183216366",
+          "y9": "6611187272182"
+        }
+      }
+    },
+    {
+      "certificates": [
+        {
+          "decimal_lp_optimum": "1831606637.07198705850634",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "total_through_norm_28 - 6793429016900/3709",
+            "nonnegative_terms": {
+              "x11": "60133/100143",
+              "x12": "20421/7418",
+              "x8": "25836955/100143",
+              "y1": "436855858369/11127",
+              "y2": "3761042138/33381",
+              "y4": "6867791/22254",
+              "y5": "3938669/100143"
+            }
+          },
+          "even_integer_lower_bound": 1831606638,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x11",
+              "x12",
+              "y1",
+              "y2",
+              "y4",
+              "y5"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "20648544826/3709",
+              "x11": "0",
+              "x12": "0",
+              "x13": "891700733938/3709",
+              "x14": "5861765749248/3709",
+              "x7": "2228092060/3709",
+              "x8": "0",
+              "x9": "17085896828/3709"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "31981520468592296/3709",
+              "y11": "237204038973631464/3709",
+              "y12": "1471465403043328392/3709",
+              "y13": "7906739534941239608/3709",
+              "y14": "37485727903626495552/3709",
+              "y2": "0",
+              "y3": "634098822/3709",
+              "y4": "0",
+              "y5": "0",
+              "y6": "465688649146/3709",
+              "y7": "19867826602202/3709",
+              "y8": "293364586865448/3709",
+              "y9": "3486998148303516/3709"
+            }
+          },
+          "name": "total_through_norm_28",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "6793429016900/3709",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 1548112371908520
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              2,
+              4,
+              0
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 112,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "decimal_lp_optimum": "6840.14035087719298245614",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_20 - 389888/57",
+            "nonnegative_terms": {
+              "x10": "398/399",
+              "x8": "17/21",
+              "x9": "388/399",
+              "y1": "3311/3",
+              "y2": "4648/57",
+              "y3": "245/57",
+              "y4": "7/57"
+            }
+          },
+          "even_integer_lower_bound": 6842,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x9",
+              "x10",
+              "y1",
+              "y2",
+              "y3",
+              "y4"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "1495218928/57",
+              "x12": "2126104904/57",
+              "x13": "6854397536/19",
+              "x14": "33277660800/19",
+              "x7": "389888/57",
+              "x8": "0",
+              "x9": "0"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "491682539612320/57",
+              "y11": "1213059398462688/19",
+              "y12": "22627684742708360/57",
+              "y13": "121508237014116400/57",
+              "y14": "192029139552053376/19",
+              "y2": "0",
+              "y3": "0",
+              "y4": "0",
+              "y5": "327113584/57",
+              "y6": "9442616288/57",
+              "y7": "94990710944/19",
+              "y8": "236278593376/3",
+              "y9": "53940465703376/57"
+            }
+          },
+          "name": "prefix_through_norm_20",
+          "objective": "x7 + x8 + x9 + x10",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "389888/57",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              0,
+              5,
+              6
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 112,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "502386.042333727302030730",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_22 - 4675706896/9307",
+            "nonnegative_terms": {
+              "x10": "6066/9307",
+              "x11": "17285/18614",
+              "x7": "7113/18614",
+              "y1": "1646478547/18614",
+              "y2": "30619953/9307",
+              "y3": "349174/9307",
+              "y5": "4459/18614"
+            }
+          },
+          "even_integer_lower_bound": 502388,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x7",
+              "x10",
+              "x11",
+              "y1",
+              "y2",
+              "y3",
+              "y5"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "0",
+              "x12": "1013289561144/9307",
+              "x13": "3477251342208/9307",
+              "x14": "1753425792",
+              "x7": "0",
+              "x8": "1219920912/9307",
+              "x9": "3455785984/9307"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "80294870382261600/9307",
+              "y11": "594337373880147072/9307",
+              "y12": "3694252438147810680/9307",
+              "y13": "483908477009581056/227",
+              "y14": "94064967947504638080/9307",
+              "y2": "0",
+              "y3": "0",
+              "y4": "2149526976/9307",
+              "y5": "0",
+              "y6": "51609798432/227",
+              "y7": "43023653113728/9307",
+              "y8": "746152909331184/9307",
+              "y9": "8779193732185984/9307"
+            }
+          },
+          "name": "prefix_through_norm_22",
+          "objective": "x7 + x8 + x9 + x10 + x11",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "4675706896/9307",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              6,
+              6
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 112,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "10774476.6012402264761391",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_24 - 39962533714/3709",
+            "nonnegative_terms": {
+              "x11": "146872/233667",
+              "x12": "92933/103852",
+              "x8": "712871/467334",
+              "y1": "2116860501/3709",
+              "y2": "147557480/11127",
+              "y4": "62629/14836",
+              "y5": "16856/33381"
+            }
+          },
+          "even_integer_lower_bound": 10774478,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x11",
+              "x12",
+              "y1",
+              "y2",
+              "y4",
+              "y5"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "20648544826/3709",
+              "x11": "0",
+              "x12": "0",
+              "x13": "891700733938/3709",
+              "x14": "5861765749248/3709",
+              "x7": "2228092060/3709",
+              "x8": "0",
+              "x9": "17085896828/3709"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "31981520468592296/3709",
+              "y11": "237204038973631464/3709",
+              "y12": "1471465403043328392/3709",
+              "y13": "7906739534941239608/3709",
+              "y14": "37485727903626495552/3709",
+              "y2": "0",
+              "y3": "634098822/3709",
+              "y4": "0",
+              "y5": "0",
+              "y6": "465688649146/3709",
+              "y7": "19867826602202/3709",
+              "y8": "293364586865448/3709",
+              "y9": "3486998148303516/3709"
+            }
+          },
+          "name": "prefix_through_norm_24",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "39962533714/3709",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              1,
+              6
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 112,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "241951003.903652646407728",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "prefix_through_norm_26 - 4809018153589/19876",
+            "nonnegative_terms": {
+              "x10": "461789/278264",
+              "x12": "1741309/1113056",
+              "x8": "10824541/79504",
+              "y1": "43139204619/4969",
+              "y2": "2207851849/39752",
+              "y4": "36399013/159008",
+              "y5": "107359/4969"
+            }
+          },
+          "even_integer_lower_bound": 241951004,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x10",
+              "x12",
+              "y1",
+              "y2",
+              "y4",
+              "y5"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "0",
+              "x11": "278755355151/19876",
+              "x12": "0",
+              "x13": "4419652253877/19876",
+              "x14": "7940844990648/4969",
+              "x7": "10721219025/19876",
+              "x8": "0",
+              "x9": "24972331384/4969"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "42798103173321720/4969",
+              "y11": "635571156005121483/9938",
+              "y12": "1971583803537845112/4969",
+              "y13": "42369471603849557013/19876",
+              "y14": "50220169415655940872/4969",
+              "y2": "0",
+              "y3": "3103383717/19876",
+              "y4": "0",
+              "y5": "0",
+              "y6": "662497858176/4969",
+              "y7": "106369943992983/19876",
+              "y8": "390151351735992/4969",
+              "y9": "18764114759060209/19876"
+            }
+          },
+          "name": "prefix_through_norm_26",
+          "objective": "x7 + x8 + x9 + x10 + x11 + x12 + x13",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "4809018153589/19876",
+          "rigorous_upper_comparison": {
+            "argument": "mod-2 injection up to sign below twice the minimum",
+            "contradiction": false,
+            "count_upper": 35184372088830,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 35184372088830
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              3,
+              6
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 112,
+            "particular_residue_mod_7": 2
+          },
+          "weights_x7_to_x14": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "decimal_lp_optimum": "2121528729.76597465624157",
+          "dual_identity": {
+            "all_multipliers_nonnegative": true,
+            "left": "triangular_low_shell_weight - 7868750058702/3709",
+            "nonnegative_terms": {
+              "x11": "28178/33381",
+              "x12": "71637/14836",
+              "x8": "27054865/66762",
+              "y1": "187671295560/3709",
+              "y2": "2553391078/11127",
+              "y4": "8355431/14836",
+              "y5": "2129344/33381"
+            }
+          },
+          "even_integer_lower_bound": 2121528730,
+          "exact_primal_optimizer": {
+            "active_zero_forms": [
+              "x8",
+              "x11",
+              "x12",
+              "y1",
+              "y2",
+              "y4",
+              "y5"
+            ],
+            "all_required_coefficients_nonnegative": true,
+            "formal_scalar_pair_only": true,
+            "x7_to_x14": {
+              "x10": "20648544826/3709",
+              "x11": "0",
+              "x12": "0",
+              "x13": "891700733938/3709",
+              "x14": "5861765749248/3709",
+              "x7": "2228092060/3709",
+              "x8": "0",
+              "x9": "17085896828/3709"
+            },
+            "y1_to_y14": {
+              "y1": "0",
+              "y10": "31981520468592296/3709",
+              "y11": "237204038973631464/3709",
+              "y12": "1471465403043328392/3709",
+              "y13": "7906739534941239608/3709",
+              "y14": "37485727903626495552/3709",
+              "y2": "0",
+              "y3": "634098822/3709",
+              "y4": "0",
+              "y5": "0",
+              "y6": "465688649146/3709",
+              "y7": "19867826602202/3709",
+              "y8": "293364586865448/3709",
+              "y9": "3486998148303516/3709"
+            }
+          },
+          "name": "triangular_low_shell_weight",
+          "objective": "8*x7 + 7*x8 + 6*x9 + 5*x10 + 4*x11 + 3*x12 + 2*x13 + x14",
+          "parity_reason": "each nonzero theta coefficient counts vectors in pairs v,-v",
+          "rational_lp_optimum": "7868750058702/3709",
+          "rigorous_upper_comparison": {
+            "argument": "at most 44 orthogonal antipodal pairs per nonzero mod-2 coset",
+            "contradiction": false,
+            "count_upper": 1548112371908520,
+            "lower_bound_exceeds_upper": false,
+            "weighted_objective_upper": 12384898975268160
+          },
+          "wave71_mod7_check": {
+            "conclusion": "no objective residue follows from the Wave71 affine family",
+            "direction_residues_mod_7": [
+              1,
+              2,
+              0
+            ],
+            "fixed_residue": false,
+            "level_one_weight": 112,
+            "particular_residue_mod_7": 6
+          },
+          "weights_x7_to_x14": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      "poisson_relation": "Theta_L=-7^4*(Theta_K|W_7)",
+      "q_discriminant_length_L": 14,
+      "r_rank_F7_Seidel": 30,
+      "x14_elimination": {
+        "coefficients_on_x7_to_x13": [
+          "-288",
+          "35",
+          "91",
+          "-27",
+          "-7",
+          "-4",
+          "5"
+        ],
+        "constant": "282460688"
+      },
+      "x_initial_gap": "x1=...=x6=0",
+      "zero_prefix_null_control": {
+        "conclusion": "scalar level-7 positivity alone cannot force a vector of squared norm at most 18",
+        "formal_scalar_control_not_a_lattice": true,
+        "integral_even_nonnegative_first_15_coefficients": true,
+        "last_prefix_with_exact_zero_lp_optimum": "x7+...+x9",
+        "x7_to_x14": {
+          "x10": "2729216",
+          "x11": "9904496",
+          "x12": "64688008",
+          "x13": "374547488",
+          "x14": "1753425792",
+          "x7": "0",
+          "x8": "0",
+          "x9": "0"
+        },
+        "y1_to_y14": {
+          "y1": "0",
+          "y10": "8630388552096",
+          "y11": "63848945365920",
+          "y12": "396944492429512",
+          "y13": "2131769641008816",
+          "y14": "10106844629468544",
+          "y2": "0",
+          "y3": "0",
+          "y4": "0",
+          "y5": "4822256",
+          "y6": "184039392",
+          "y7": "4833500896",
+          "y8": "79633400096",
+          "y9": "943532149584"
+        }
+      }
+    }
+  ],
+  "scope": "conditional q=2,4,...,14 scalar theta consequences for a hypothetical srg(99,14,1,2)",
+  "theta_normalization": "Theta=sum_v q^((v,v)/2)",
+  "total_even_lower_bounds_by_q": {
+    "10": 561084,
+    "12": 189901474,
+    "14": 1831606638,
+    "2": 182,
+    "4": 1584,
+    "6": 11400,
+    "8": 80110
+  }
+}

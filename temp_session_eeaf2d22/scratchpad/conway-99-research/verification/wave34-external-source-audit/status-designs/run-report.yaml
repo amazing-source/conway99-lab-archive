@@ -1,0 +1,58 @@
+role: verifier
+date_utc: 2026-07-24T21:40:00Z
+git_commit: 1be9b6f61136763ce77d3927984979205e7fb23a
+git_commit_note: >-
+  Frozen commit recorded by the Wave 34 discovery report. Per assignment, this
+  verifier did not invoke workspace Git; the present output files are not
+  represented by this hash.
+claim_label: CITED
+scope: >-
+  Independent current-source audit of (1) Brouwer's maintained status marker
+  for strongly regular graph parameters (99,14,1,2), (2) the wording and
+  isomorphism context of McKay's approximate 2-(15,3,2) design count, and
+  (3) the exact parent restriction and derived scope of the University of
+  Rijeka design corpus.
+inputs:
+  attempts/wave34-current-literature/source-ledger.json: 5fa6f75abcfc8d3033c9715f3977722e99fcb238ca1b74d2db255e759a58b100
+  attempts/wave34-current-literature/audit.md: 1be6c6904314763031968c47dde8b4187caf1118ca4c2a1c9cf5f93d9496abc3
+  agents/2026-07-24-wave34-current-literature.md: b470c62d657686779f22154872e19d7db002f1abde1bc173ae747f9e2ad86b95
+method: >-
+  Freeze the three local claims, then inspect direct maintained, author,
+  publisher, and institutional sources without using discovery
+  interpretations as evidence. Fetch all eight response bodies only into
+  memory; record URL, access time, status, byte length, SHA-256, and available
+  HTTP validators; inspect exact page or section locators; count Rijeka matrix
+  links and test sequential numbering; perform a second in-memory fetch; retain
+  no third-party payload.
+command: >-
+  powershell -File
+  verification/wave34-external-source-audit/status-designs/recheck_live_sources.ps1
+  -CompareRecorded; python
+  verification/wave34-external-source-audit/status-designs/validate_results.py
+outputs:
+  verification/wave34-external-source-audit/status-designs/results.json: 802c6b2c0cf77f4e64cfb4232f21afc10cf3ffe15d5042d0b9ba6eabb51621d3
+  verification/wave34-external-source-audit/status-designs/audit.md: 998554196853a8608b4c4f07059dc30e9e0c3cbc28d43bd569bba6d3f233aac6
+  verification/wave34-external-source-audit/status-designs/validate_results.py: 866454c7dd34bf4463fa6f9cba71ba289ed97ed65d7e00d2837baf608e880f71
+  verification/wave34-external-source-audit/status-designs/recheck_live_sources.ps1: 7168f609d7e6555af2beea0306383507eb2ae6480cff27a319a5ed64015dc6e6
+limitations:
+  - >-
+    The maintained-table marker is current-source status, not a proof that no
+    unindexed, unpublished, or later result exists.
+  - >-
+    McKay's numerical line says designs; the nonisomorphic qualifier is
+    supported by the surrounding project and construction context, not
+    repeated on the numerical line.
+  - >-
+    McKay's about 1.5 x 10^21 value is approximate and is not accompanied in
+    the inspected deck by an exact count, derivation, error bar, or enumeration
+    certificate.
+  - >-
+    Rijeka states that the Folder 1 parents have an automorphism of order 6; it
+    does not state that every Folder 2 derived design inherits such an
+    automorphism.
+  - >-
+    Rijeka directory entries were counted but individual matrices were not
+    downloaded, parsed, deduplicated, or validated.
+  - >-
+    Conway-99 existence or nonexistence, n3=708, non-discovery, novelty, and
+    priority all remain UNKNOWN.

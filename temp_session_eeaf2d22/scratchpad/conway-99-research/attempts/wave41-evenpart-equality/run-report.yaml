@@ -1,0 +1,41 @@
+role: proof_b
+date_utc: 2026-07-27T05:25:43Z
+git_commit: 4f1754a28723a8e0e4ea3025312cd264b1b117d2
+claim_label: CANDIDATE
+scope: >
+  Exact K39 rank-25 equality compatibility for all seven edge-local
+  alternating partition types containing an even part.
+inputs:
+  CONJECTURE.md: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  attempts/wave40-exact-coupling-model/exact-results.json: 8613c05c94a9a5f88c45eddbeccbf4c8906c3783aab25747e439f50423bde9ce
+  attempts/wave41-multiedge-rank-packing/exact-results.json: 0c20f53b056e0b94f14094d46d957b1b4c5ccd5c6c1920de80ea8ce4e49fdac1
+method: >
+  Eliminate one matching fibre; enumerate every minimum-projection F through
+  the complete observed-subspace cover; reduce rank-25 equality to a
+  right-kernel bilinear equation; group identical kernels and targets; and
+  test all 10,395 labelled perfect matchings R for every distinct kernel.
+command: |
+  $types = @('1+1+1+1+2','1+1+2+2','1+1+4','1+2+3','2+2+2','2+4','6')
+  foreach ($type in $types) {
+    .\.venv\Scripts\python.exe -B attempts\wave41-evenpart-equality\exact_check.py --partition $type --verify "attempts\wave41-evenpart-equality\partial-$type.json"
+  }
+  .\.venv\Scripts\python.exe -B attempts\wave41-evenpart-equality\exact_check.py --verify attempts\wave41-evenpart-equality\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave41-evenpart-equality -p "test_*.py" -v
+outputs:
+  attempts/wave41-evenpart-equality/exact_check.py: c7ba6570d81c4be138272578c537d287c68793122a51650e90f03c75af300a3a
+  attempts/wave41-evenpart-equality/test_exact_check.py: 5f749c45c4c65cac82f24519d81310bad47683585f13ce01ece1f433ab5d2464
+  attempts/wave41-evenpart-equality/exact-results.json: 8a9e58aaa1073ae4a87e183f904ce7f43eaa620bbac5a6f5d1f8445dd795dc85
+  attempts/wave41-evenpart-equality/partial-1+1+1+1+2.json: 29882de4df0e8c1a671d71e525de505bfbbad0b7a74b6f3d49b6940eba788be8
+  attempts/wave41-evenpart-equality/partial-1+1+2+2.json: f9bf7c3488395d8c9d7b10de738ec94dfcb458233e158b94dd8c3a22ad8b88d9
+  attempts/wave41-evenpart-equality/partial-1+1+4.json: aa7304bfe54599bd6870d2be3de061e7b4dbad8d52c374b8f49d2c271aba4a7d
+  attempts/wave41-evenpart-equality/partial-1+2+3.json: 491dc56dc3ea23cd997f1f485f8fe2efeddac7d7937340d1cd35fa6133670f4c
+  attempts/wave41-evenpart-equality/partial-2+2+2.json: 29d55cee21d35e440800f4bf7df729aec3ba054ffb9663310283faf643f41d1e
+  attempts/wave41-evenpart-equality/partial-2+4.json: 8364fd97ec30cc181aa9e8f7194e070d30cf457f95b121ccd88f2b8ba6abcf2f
+  attempts/wave41-evenpart-equality/partial-6.json: f758b04c4d4a16364221bb3a990a5110106821a3b24f4599b541547f830839ea
+  attempts/wave41-evenpart-equality/README.md: 3b3268c162f3a8023409666dad5775b25d2aca145875f5efa1ada95041cbf0ef
+  attempts/wave41-evenpart-equality/failed-routes.md: 2dd58a9c0ec675f6ec72239b36790789b1914927afff3beb7c3c29aeab43ab79
+limitations:
+  - Discovery cannot verify itself.
+  - The universal rank-26 statement also uses the separate all-odd candidate.
+  - Rank at least 26 does not exclude the prism-free endpoint or solve Conway-99.
+  - No graph construction, general n3 upper-bound improvement, or novelty claim is made.

@@ -1,0 +1,93 @@
+role: verifier
+date_utc: 2026-07-24T06:58:48Z
+git_commit: a8b0c34040f6857b3c5ebcc44f108e03a4159088
+claim_label: VERIFIED
+audit_verdict: PASS_SCOPED
+scope: >-
+  Independent adversarial verification that, under the actual
+  vertex-triangle incidence and zero-projector semantics of a putative
+  srg(99,14,1,2), no nontrivial rootless integral orthogonal decomposition
+  of the rank-44 scaled-dual endpoint S-form can occur. This includes the
+  Wave 30 rank-20 plus rank-24 decomposable boundary. Rooted and
+  indecomposable endpoint forms, n3=708, Conway-99, and novelty remain
+  UNKNOWN.
+inputs:
+  agents/2026-07-24-wave31-survivor-proof.md: 075566744e2622a4dfa402a125d394aef16dfcb3fc53b172176dce88bd951aaa
+  attempts/wave31-survivor-proof/exact_check.py: 7613ecc5680bbb1539690e1308775014a2e32957e51036cf9de68ce2ae699956
+  attempts/wave31-survivor-proof/test_exact_check.py: 24e81f7136bcfa188d5cea93fce36600ba198cbdbf0561ae4c0f4090b92d313b
+  attempts/wave31-survivor-proof/exact-results.json: e5155e67a59168767639273ee70fc6d63e81b104e9b415e228ca09a0f9317587
+  attempts/wave31-survivor-proof/input-freeze.sha256: 28f3b2890db2629686dae23484443582fc883914aeb85e2edc87e0149d479174
+  attempts/wave31-survivor-proof/failed-routes.md: beaec0f3f988c2ed961e628d5d1c6ca73f1439b40f6e9b67536415f63d942c4f
+  attempts/wave31-survivor-proof/run-report.yaml: 3cd2e7fe95e810416185cb1d098586a2ec42fc5539557dd7da4f2c5a4ecee0c6
+  attempts/wave31-survivor-proof/artifact-manifest.sha256: c1d3b8d2a2ca25c4dcdb20fbc1d974f1561fa7c110524359443161d79bebd7f6
+  agents/2026-07-23-wave20-global-schur.md: 64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/2026-07-22-n3-side-incidence-audit.md: 9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787
+  agents/2026-07-24-wave30-general-h729.md: fd1f11a2ab5c5dfd2732a4ba1fb8d063dea1ae0e96d417aaf9d45eade4f2281a
+  verification/wave30-general-h729/reverification-audit.md: 523a84e2a490f3626a791fb16f43b77b7631b3f26f2de8dcecc83f5e03f4d2cc
+method: >-
+  Freeze exact candidate bytes and cited premises; reconstruct the target
+  spectrum, incidence transport, block support, spectral projector,
+  commutator, local edge cancellation, connectedness, double count, and
+  block trace independently; enumerate every proper rank; add exact hostile
+  countermodels; reproduce the candidate suite and certificate only after
+  the independent reconstruction.
+command: |-
+  cd verification/wave31-sign-commutant
+  python -B independent_check.py --output independent-results.json
+  python -B -m unittest -v test_independent_check.py
+  cd ../../attempts/wave31-survivor-proof
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output ../../verification/wave31-sign-commutant/submitted-regenerated.json
+  git diff --no-index --exit-code -- exact-results.json ../../verification/wave31-sign-commutant/submitted-regenerated.json
+outputs:
+  verification/wave31-sign-commutant/audit.md: f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0
+  verification/wave31-sign-commutant/independent_check.py: 4e7f0979f8da94e34b084a60a95e8ce75a618cc513a19e4eccd75814242d7b22
+  verification/wave31-sign-commutant/test_independent_check.py: 65f06e1a8355c28b77b52ceba6d2dbb095f5e9d37ebc7129fb35ae64ed1e3795
+  verification/wave31-sign-commutant/independent-results.json: 7143c403172403b21ea2cdc2851851a3a13cb08b0dd14e5d68432aafd25fc5c0
+  verification/wave31-sign-commutant/submitted-regenerated.json: e5155e67a59168767639273ee70fc6d63e81b104e9b415e228ca09a0f9317587
+  verification/wave31-sign-commutant/input-freeze.sha256: c224fd23fc5eff1abd79cc3dcb19ecf8d97261914dc6f9fd844c19998a7cf6e4
+  verification/wave31-sign-commutant/failed-objections.md: 5894f9d5ab3f377c88fe92692b7247a9b58fb5681307ef61a5afeefc908008ba
+limitations:
+  - This is a conditional endpoint theorem, not a graph existence or nonexistence result.
+  - Actual target-graph incidence semantics are essential.
+  - Rootlessness, integrality, and an integral orthogonal decomposition are needed to induce the coordinate projector block.
+  - Rooted and rootless indecomposable endpoint forms are untreated.
+  - No graph, frame, projector, lattice, Schur package, or endpoint object is constructed.
+  - The superseded rank-24 tensor route is not promoted by this audit.
+  - n3=708, Conway-99, and novelty remain UNKNOWN.
+tests:
+  candidate_paths_match_frozen_commit: PASS
+  candidate_manifest_entries: 7
+  candidate_manifest_status: PASS
+  candidate_input_freeze_entries: 6
+  candidate_input_freeze_status: PASS
+  independent_unittest_count: 21
+  independent_unittest_status: PASS
+  submitted_unittest_count: 15
+  submitted_unittest_status: PASS
+  submitted_regeneration_byte_identical: PASS
+  submitted_regeneration_sha256: e5155e67a59168767639273ee70fc6d63e81b104e9b415e228ca09a0f9317587
+strengthening:
+  status: VERIFIED_UNUSED_SIMPLIFICATION
+  statement: >-
+    Once E has a nonempty proper coordinate block I, that block is a
+    projector with rank equal to trace 4|I|/21, so 21 divides |I|.
+    Together with the commutator consequence 33 divides |I|, this forces
+    231 divides |I| and gives the contradiction directly.
+  new_assumptions: none
+verifier_qa_correction:
+  status: WORDING_ONLY
+  issue: >-
+    The original hostile [1,3] label did not isolate deletion of evenness
+    while retaining minimum at least four.
+  correction: >-
+    Minimum at least four alone forces one-block support. Evenness is an
+    inherited endpoint hypothesis but is unnecessary for that step. The
+    [1,3] control now represents deletion of the nonzero-component norm
+    floor, including the hostile case where integrality and evenness are
+    dropped together.
+  candidate_changed: false
+  theorem_changed: false
+  verdict_changed: false

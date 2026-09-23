@@ -1,0 +1,80 @@
+role: proof_b
+date_utc: 2026-07-27T21:10:13Z
+git_commit: 4bb1989e9e286b2ec753a855db58ad584e31f63a
+claim_label: DERIVED
+scope: >-
+  Conditional n3=4158 fixed-triangle cross-incidence synthesis: replay prior
+  verified Wave 36 rank/component identities, intersect them with Wave 57
+  multiplicity and moment rows, derive exact component-specific four-cycle
+  restrictions, and replay one explicitly restricted Wave 40 lift ledger.
+inputs:
+  - path: STRUCTURE.md
+    sha256: 71b0b404d09d3ca6f84966b0841a7a2f09e9d715e7833e3511174067f7f7c701
+  - path: attempts/wave57-star-complement/exact-results.json
+    sha256: 2b49b0bf3d52c0101cfcd59c3324279c1f153f4d48504c7ae67658e8786e6216
+  - path: verification/wave36-block-compatibility/independent-results.json
+    sha256: b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4
+  - path: verification/wave36-block-compatibility/audit.md
+    sha256: 1f3856bc91d4ba7da53fc55e2f90528848683626191b9f8f4091c9c46cea2c96
+  - path: verification/wave40-edge-type-coupling/independent-results.json
+    sha256: 822f758e04bcf95576cf8c5adc5cff2131ffa13cd286a6924137149de0dc3a9e
+  - path: attempts/wave58-cross-incidence-rank/input-freeze.sha256
+    sha256: d89107771682869c40f234da1d972744286cea143cc4cd4fff6b7b2463129d1d
+method: >-
+  Re-derive both Gram identities entrywise; decompose the fibre-constant and
+  within-fibre-zero spaces; replay Wave 36 component balance and spectral
+  transfer; intersect a=18,b=7+kappa,kappa in {1,2,3} with all 18 Wave 57
+  rows; prove the cubic wedge C4 bound; exhaust normalized connected
+  m=4 and m=6 component data with triangle and codegree checks; construct
+  separate local and residual-spectral controls; and independently enumerate
+  all 2^18 endpoint masks for one canonical verified Wave 40 rank-11 quotient.
+command: |-
+  python -B attempts\wave58-cross-incidence-rank\exact_check.py --output attempts\wave58-cross-incidence-rank\exact-results.json
+  python -B attempts\wave58-cross-incidence-rank\exact_check.py --verify attempts\wave58-cross-incidence-rank\exact-results.json
+  python -B -m unittest discover -s attempts\wave58-cross-incidence-rank -p "test_*.py" -v
+  python -B verification\wave36-block-compatibility\independent_check.py --verify verification\wave36-block-compatibility\independent-results.json
+  python -B -m unittest discover -s verification\wave36-block-compatibility -p "test_*.py" -v
+  python -B -m unittest discover -s attempts\wave57-star-complement -p "test_*.py" -v
+outputs:
+  - path: attempts/wave58-cross-incidence-rank/exact_check.py
+    sha256: 3889cc025b4bf879cddfe5658781ad5688042ee144c2a0708b708b2d10644267
+  - path: attempts/wave58-cross-incidence-rank/exact-results.json
+    sha256: ec03c32fc72ec75222049a49b194b10bcae6bf1122ac82d9d9943e5b2f63181a
+  - path: attempts/wave58-cross-incidence-rank/test_exact_check.py
+    sha256: 82c76502f6d80878740482b3f521fd6c75cb3f0c75011b8a1cdcda09a52486f6
+  - path: attempts/wave58-cross-incidence-rank/derivation.md
+    sha256: 0179d0341aa78df8c9def951d73e27332367386440945fa56d6575c459b02cd6
+  - path: attempts/wave58-cross-incidence-rank/failed-routes.md
+    sha256: c5256a95e49125527c136d8b70e7b8d5cd9c78c7753b275c110192afd589ca44
+  - path: attempts/wave58-cross-incidence-rank/README.md
+    sha256: d925829a4ee6a4cd7b6ef55dc5176a1dd1b6ecc75bc2af50689567dfd4b249dc
+result:
+  wave57_rows_before: 18
+  wave57_rows_after: 3
+  survivors:
+    - [18, 8, 1]
+    - [18, 9, 2]
+    - [18, 10, 3]
+  universal_C4_X_upper_bound: 27
+  component_specific_C4_X:
+    kappa_1: "0<=q<=27"
+    kappa_2: "0<=q<=24 overall"
+    kappa_3: "{6,8,10,12,14,16,18}"
+  contradiction: false
+  endpoint: UNKNOWN
+  conway_99: UNKNOWN
+tests:
+  wave58_hostile_tests: "PASS: 11 tests"
+  wave36_independent_regeneration: "PASS"
+  wave36_independent_tests: "PASS: 12 tests"
+  wave57_advisory_discovery_tests: "PASS: 8 tests"
+  m4_component_census: "216 raw; 50 accepted"
+  m6_component_census: "162000 raw; 34640 accepted"
+  restricted_wave40_masks: "262144 raw; 37378 triangle-free; all [12,24]"
+  memory_floor: "PASS: 15 percent enforced; post-run host above 48 percent free"
+limitations:
+  - "rank(B)=35-kappa and a=18,b=7+kappa are prior verified Wave 36 results, not new"
+  - "the component A_X and residual spectral controls are separate, not a simultaneous B/A_Y"
+  - "the Wave 40 replay is restricted to one canonical rank-11 all-222 quotient"
+  - "m=8 and m=12 component graphs are not exhaustively enumerated"
+  - "no endpoint exclusion, graph construction, improved n3 bound, or Conway-99 resolution follows"

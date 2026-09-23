@@ -1,0 +1,179 @@
+{
+  "bounded_search_status": {
+    "local_search": "UNKNOWN_NON_EVIDENTIARY",
+    "reason": "no SAT model, checked UNSAT proof, exhaustive certificate, or emitted local-search best-state matrix is supplied",
+    "sat": "UNKNOWN_NON_EVIDENTIARY"
+  },
+  "candidate_support": {
+    "aligned_bruteforce_count": 20928,
+    "aligned_discovery_type_4_maps_to_independent_type": 4,
+    "aligned_formula_count": 20928,
+    "aligned_pattern_counts": {
+      "002/020/200": 64,
+      "002/110/110": 784,
+      "002/200/020": 64,
+      "011/011/200": 576,
+      "011/101/110": 2352,
+      "011/110/101": 2352,
+      "011/200/011": 576,
+      "020/002/200": 64,
+      "020/101/101": 784,
+      "020/200/002": 64,
+      "101/011/110": 2352,
+      "101/020/101": 784,
+      "101/101/020": 784,
+      "101/110/011": 2352,
+      "110/002/110": 784,
+      "110/011/101": 2352,
+      "110/101/011": 2352,
+      "110/110/002": 784,
+      "200/002/020": 64,
+      "200/011/011": 576,
+      "200/020/002": 64
+    },
+    "count_distribution": {
+      "15936": 56,
+      "17472": 189,
+      "19008": 63,
+      "19072": 18,
+      "19136": 126,
+      "19168": 72,
+      "19200": 54,
+      "20736": 3,
+      "20800": 72,
+      "20864": 84,
+      "20928": 48,
+      "20976": 12,
+      "20992": 18,
+      "21008": 36,
+      "21040": 32,
+      "21088": 21,
+      "21184": 1,
+      "22592": 18,
+      "22656": 6,
+      "22720": 39,
+      "22784": 3,
+      "22816": 12,
+      "22848": 24,
+      "22880": 30,
+      "22912": 15,
+      "22944": 12,
+      "22976": 12,
+      "24640": 12,
+      "24832": 15,
+      "24896": 12,
+      "24960": 12,
+      "25024": 3,
+      "26688": 3,
+      "27072": 6,
+      "27200": 1
+    },
+    "first_candidate_mask_hex": "300030005",
+    "formal_patterns": 21,
+    "maximum_over_1140": 27200,
+    "minimum_over_1140": 15936,
+    "pattern_classes": {
+      "AAA": 6,
+      "ABB": 9,
+      "BBB": 6
+    },
+    "zero_support_triples": 0
+  },
+  "claim_label": "VERIFIED",
+  "component_classification": {
+    "accepted": 50,
+    "accepted_C4_distribution": {
+      "2": 6,
+      "4": 30,
+      "6": 14
+    },
+    "coordinate_normalized": 216,
+    "fibre_preserving_types": 18
+  },
+  "discovery_manifest": {
+    "entries_checked": 23,
+    "failures": []
+  },
+  "endpoint_status": "UNKNOWN",
+  "f2_filter": {
+    "alternating_target_rank_upper_bound": 30,
+    "conclusion": "REDUNDANT",
+    "kernel_indicator_span_dimension": 5,
+    "rank_B_upper_bound": 31,
+    "rejected_triples": 0,
+    "target_rank_distribution": {
+      "14": 67,
+      "16": 415,
+      "18": 412,
+      "20": 185,
+      "22": 51,
+      "24": 10
+    }
+  },
+  "format": "wave60-c3-incidence-design-independent-verification-v1",
+  "hostile_mutations": {
+    "odd_diagonal_target_rejected_as_nonalternating": true,
+    "triangle_injection_rejected": true,
+    "unsafe_independent_fibre_action_not_used": true,
+    "wrong_fibre_pattern_rejected": true,
+    "zero_gram_pair_rejected": [
+      0,
+      1
+    ]
+  },
+  "limitations": [
+    "No 36 by 60 incidence matrix is constructed.",
+    "No one of the 275 safe coordinate orbits is excluded.",
+    "The F2 rank condition eliminates no component triple.",
+    "Discovery SAT and local-search telemetry remain UNKNOWN.",
+    "No compatible Y graph or full strongly regular graph is constructed."
+  ],
+  "marginal_reduction": {
+    "aligned_ledger_equations": [
+      "x_AAA + x_ABB + x_BBB = 60",
+      "3*x_AAA + x_ABB = 36",
+      "x_ABB = 36 - 3*x_AAA",
+      "x_BBB = 24 + 2*x_AAA",
+      "0 <= x_AAA <= 12"
+    ],
+    "category_target_multiplicities": {
+      "A0": 4,
+      "A1": 4,
+      "A2": 4,
+      "B0": 16,
+      "B1": 16,
+      "B2": 16
+    },
+    "local_pair_target_row_sums": 10,
+    "local_pair_target_sum_per_component": 60,
+    "tested_discovery_ledgers": [
+      0,
+      6,
+      12
+    ]
+  },
+  "safe_coordinate_reduction": {
+    "multisets": 1140,
+    "orbit_size_distribution": {
+      "1": 15,
+      "3": 145,
+      "6": 115
+    },
+    "simultaneous_fibre_orbits": 275,
+    "target_automorphism_assumed": false,
+    "unsafe_independent_fibre_witness": {
+      "safe_orbit_size": 3,
+      "source": [
+        0,
+        1,
+        1
+      ],
+      "unsafe_independent_image": [
+        0,
+        1,
+        11
+      ]
+    }
+  },
+  "scope": "conditional exact component classification, safe coordinate orbit reduction, F2 necessary filter, column support, and marginal reduction"
+}

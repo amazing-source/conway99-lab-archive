@@ -1,0 +1,25 @@
+role: proof_b
+date_utc: 2026-07-28T02:48:29Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: DERIVED
+scope: unrestricted conditional Schur, exterior-compound, generalized-weight, matroid, and orthogonal-orbit consequences of a hypothetical srg(99,14,1,2)
+inputs:
+  - attempts/wave46-f7-code/package-manifest.sha256 sha256 756622d5f40457d188c818a0233ee002b64039548bd51a725ec606b821c60272
+  - verification/wave46-f7-code/package-manifest.sha256 sha256 3624ea9eca399889c048b3f333ae8df12fbac60176fd7bca0924fc06a18fdff0
+  - attempts/wave51-seidel-smith/package-manifest.sha256 sha256 dfb39e94b6837e21959bc2b70a9e296baacc94b4c08cb0b78e04264686685965
+  - verification/wave51-seidel-smith/package-manifest.sha256 sha256 bb191148dac5558d9154ea98dbb6f45da146e0602940297131ca7de211d3274c
+  - attempts/wave80-f7-overlattice-code/package-manifest.sha256 sha256 51d3e709308851ba9c9c63a8897dec4c761ce11e5126633e0cdf67f6e470cba7
+  - verification/wave80-f7-overlattice-code/package-manifest.sha256 sha256 25129c86f97c8f9513eff04ada641c458b924f8edd583e6e6abc76d114c64077
+method: exact finite-field Schur products, Cauchy-Binet exterior powers, prime-adic Smith exponent convolution, SRG pair-intersection counting, generalized-weight matroid bounds, and finite orthogonal group orbit-stabilizer arithmetic
+command: python -B attempts/wave97-f7-exterior-matroid/exact_check.py --verify attempts/wave97-f7-exterior-matroid/exact-results.json; python -B -m unittest discover -s attempts/wave97-f7-exterior-matroid -p "test_*.py" -v
+outputs:
+  - attempts/wave97-f7-exterior-matroid/exact-results.json sha256 806e9f1d8580be977e984c877ffdf4f9eada54f52ff4fc753c695a053fa34e27
+  - attempts/wave97-f7-exterior-matroid/derivation.md sha256 d171d2c3e56e535566c4e85ea27219e70e286c24af89e779050af31a2b710f9b
+  - attempts/wave97-f7-exterior-matroid/exact_check.py sha256 15dcaa9d927a9a9f7b94e8ad55185ae644ed1b8a2a6a02c68f59e5cf2e38ed45
+  - attempts/wave97-f7-exterior-matroid/test_exact_check.py sha256 94c23fda0da00d1620e43b6f98435e346990a9975eb5a03104abe16c5883c116
+limitations:
+  - Discovery cannot verify itself; the package requires a separated verifier.
+  - No graph, code, or 4851 by 4851 compound matrix is constructed.
+  - The exterior Smith form and orbit counts are necessary data, not nonexistence certificates.
+  - The Schur algebra saturates and the generalized-weight intervals retain slack.
+  - Rank 28, a strict n3 upper bound below 4158, Conway-99, and novelty remain UNKNOWN.

@@ -1,0 +1,729 @@
+{
+  "all_odd_types": {
+    "1+1+1+1+1+1": {
+      "CSP_method": "Loop every residual diagonal pivot and its R-mate; MRV-enumerate the full labelled border bijection; exact rank-one pivot equations force every W entry and matching degree.",
+      "complete_candidate_leaves": 0,
+      "coverage_proof": "Any nonzero symmetric rank-one residual has a nonzero diagonal. Choose its least nonzero diagonal as pivot and the actual mate of that fibre vertex in R. The pivot column determines every residual entry, so the CSP branch for that pivot/mate contains the labelled permutation and reconstructs the unique R.",
+      "dense_rank_one_hits": 0,
+      "labelled_R_per_permutation": 10395,
+      "labelled_pairs_covered_by_complete_CSP": 4979221632000,
+      "labelled_permutations_represented": 479001600,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pivot_choices": 12,
+      "pivot_mate_choices_per_pivot": 11,
+      "rank_S": 25,
+      "search_nodes": 5184
+    },
+    "3+1+1+1": {
+      "CSP_method": "Loop every residual diagonal pivot and its R-mate; MRV-enumerate the full labelled border bijection; exact rank-one pivot equations force every W entry and matching degree.",
+      "complete_candidate_leaves": 0,
+      "coverage_proof": "Any nonzero symmetric rank-one residual has a nonzero diagonal. Choose its least nonzero diagonal as pivot and the actual mate of that fibre vertex in R. The pivot column determines every residual entry, so the CSP branch for that pivot/mate contains the labelled permutation and reconstructs the unique R.",
+      "dense_rank_one_hits": 0,
+      "labelled_R_per_permutation": 10395,
+      "labelled_pairs_covered_by_complete_CSP": 4979221632000,
+      "labelled_permutations_represented": 479001600,
+      "partition": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "pivot_choices": 12,
+      "pivot_mate_choices_per_pivot": 11,
+      "rank_S": 25,
+      "search_nodes": 3684
+    },
+    "3+3": {
+      "CSP_method": "Loop every residual diagonal pivot and its R-mate; MRV-enumerate the full labelled border bijection; exact rank-one pivot equations force every W entry and matching degree.",
+      "complete_candidate_leaves": 0,
+      "coverage_proof": "Any nonzero symmetric rank-one residual has a nonzero diagonal. Choose its least nonzero diagonal as pivot and the actual mate of that fibre vertex in R. The pivot column determines every residual entry, so the CSP branch for that pivot/mate contains the labelled permutation and reconstructs the unique R.",
+      "dense_rank_one_hits": 0,
+      "labelled_R_per_permutation": 10395,
+      "labelled_pairs_covered_by_complete_CSP": 4979221632000,
+      "labelled_permutations_represented": 479001600,
+      "partition": [
+        3,
+        3
+      ],
+      "pivot_choices": 12,
+      "pivot_mate_choices_per_pivot": 11,
+      "rank_S": 25,
+      "search_nodes": 1812
+    },
+    "5+1": {
+      "CSP_method": "Loop every residual diagonal pivot and its R-mate; MRV-enumerate the full labelled border bijection; exact rank-one pivot equations force every W entry and matching degree.",
+      "complete_candidate_leaves": 0,
+      "coverage_proof": "Any nonzero symmetric rank-one residual has a nonzero diagonal. Choose its least nonzero diagonal as pivot and the actual mate of that fibre vertex in R. The pivot column determines every residual entry, so the CSP branch for that pivot/mate contains the labelled permutation and reconstructs the unique R.",
+      "dense_rank_one_hits": 0,
+      "labelled_R_per_permutation": 10395,
+      "labelled_pairs_covered_by_complete_CSP": 4979221632000,
+      "labelled_permutations_represented": 479001600,
+      "partition": [
+        5,
+        1
+      ],
+      "pivot_choices": 12,
+      "pivot_mate_choices_per_pivot": 11,
+      "rank_S": 25,
+      "search_nodes": 1992
+    }
+  },
+  "claim_label": "VERIFIED_PRECOMPARISON",
+  "even_types": {
+    "2+1+1+1+1": {
+      "distinct_right_kernels": 2,
+      "even_part_count": 1,
+      "kernel_records": [
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 419126400,
+          "minimum_F_permutations": 40320,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "c2cf4359f694173dc8f9ad057ff6e4f2ae465d0c3102ebd11aa4e9c66d73b0d1"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 419126400,
+          "minimum_F_permutations": 40320,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "54c161dd58e2ee95df1d0fe933e46ca8952723f6b8de417544cc55faa23fdb39"
+        }
+      ],
+      "labelled_R_count": 10395,
+      "labelled_pairs_checked": 838252800,
+      "minimum_F_permutation_count": 80640,
+      "minimum_F_permutation_stream_sha256": "d9d9132d306cb1113d7c58bdaafd2cfb6a4808b6bba56043893a90d9b2fda041",
+      "minimum_F_rank": 1,
+      "minimum_F_search": {
+        "canonical_dimension_e_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "principal_minor_evaluations": 2514758400,
+      "rank_S": 23,
+      "rank_at_most_one_survivors": 0,
+      "target_stream_sha256": "c756f6e354be9701a46e7f67ba5b1bd2ab884527ba01b972b46fb58d141d675a"
+    },
+    "2+2+1+1": {
+      "distinct_right_kernels": 8,
+      "even_part_count": 2,
+      "kernel_records": [
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 249480,
+          "minimum_F_permutations": 24,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "638e986485139794d574757b88d95377633c44995380eb22bcc8dfae3d8153a5"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 249480,
+          "minimum_F_permutations": 24,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "49d0402e0f929f77d2740ba77e33037db672b139e2a600e9c2d997e0e800d4b3"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 249480,
+          "minimum_F_permutations": 24,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "c8fc652703473645543d47df67ef937a0b75afc124cca06e517033b3414327c9"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 249480,
+          "minimum_F_permutations": 24,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "8a0f589d4c05898717cf7b49d44b827cf4f24c585369f3fe95396b9d239f7a9a"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 249480,
+          "minimum_F_permutations": 24,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "16db9171c150bf1a290e7741a5a3664849f5014fcaeb3d2d23f37d10f7ac483e"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 249480,
+          "minimum_F_permutations": 24,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "bf2082f4bfc04f697e6bf640a5444fbb6246f507bfe4271d3ec74df154201211"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 249480,
+          "minimum_F_permutations": 24,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "287d832df1a540881a425294a8ef9bd8d5345ca08873f3261f7c6a90f1c358de"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 249480,
+          "minimum_F_permutations": 24,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "35886ef17a8dbe5ce20c7aada833437066da1787f9b4af80483b1253c08f41be"
+        }
+      ],
+      "labelled_R_count": 10395,
+      "labelled_pairs_checked": 1995840,
+      "minimum_F_permutation_count": 192,
+      "minimum_F_permutation_stream_sha256": "c954c8201443542147486af3eda4ab8bf3c65c74acb5da969176cb4d9c173772",
+      "minimum_F_rank": 2,
+      "minimum_F_search": {
+        "canonical_dimension_e_subspaces": 290,
+        "observed_projective_lines": 28,
+        "winning_subspaces": 8
+      },
+      "partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "principal_minor_evaluations": 6237000,
+      "rank_S": 21,
+      "rank_at_most_one_survivors": 0,
+      "target_stream_sha256": "3b1a3b0090c79aeccdc47b5cecf970f589760b47502e0899a13dc3e338a9b080"
+    },
+    "2+2+2": {
+      "distinct_right_kernels": 32,
+      "even_part_count": 3,
+      "kernel_records": [
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "8d42852c1a32c8ace4996eae00e0c71a1de7834573007fe735c9742d3a5360e5"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "7b67681af8ac6a5103bf9de81fbad9d01133a0b479913bfa7ee03a89d121ec6a"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "77a1047098bd460a8672cd948fd45d18c58f27c1887f4a7613128b4d719bf895"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "616bf16c532dce44ffe7054341cba4366af7b6608337821aff5aa62f3cbf0f72"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "abc43fc22b6eb80c7c6632dfe0cd25b492a1acda93b140296157d0376bd2bce8"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "9639f810b1c0c35eb5707094cb396fb3dd2e0b28bfb34b8c86a21b5daf2aa17d"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "3779aac78e578590905f1b0a09b97bad0fba260a8fcf10d078e834a4f6311573"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "7d0d23822fdc5b487f61c288045ae77be274298859b7ded006ec1df5d14db547"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "a329ce9b6a99c03e619c72f81f3dd13db29f9f8ce8ae739c1202bf079d2e7eb3"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "d5eb2ce9c562c5ea2e4ef0ddb0e6afd12b98cdd70f4c15a1385bb5a9a0a2b91e"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "84291ead9d33e4b8c7dec271e07e1a58eb37bea0a2f22a4dd0c39f3a16208bb9"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "7a972cd36645ee6939e210515559485dfe0cb0cf7ab250cb27156546ba516351"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "633617f46e84526a7fda25431471a8f4d13fac00da7002a0dc18e2d82864d6a3"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "bd076a98317ace4789211ca9f6bcf2e661261824439eb8a9bd016b17d9a4ebed"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "5886a4ff809404f47f4218ab816e8c3ae24cc05904135732bc849285482f04ac"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "f5109007b61a8b4747a86009777e34ed84f2644ace0c0d7227f3eca41d61ccaa"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "129a1158bf90bca7216aedfd9dd4da6e37b056041cf0711ac7f2461fd21f638e"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "86b4aaf0bffe1413b5cd25e8d4723bd1c671a0e9f3c0512d9add1076b61f96be"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "1166db984ebccdddb9a6961bd2468ef41de4602f04cc75b23c7f3451b99807b7"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "2aae405d2459a0682bc265c948e3b330969e14c66e5545cdfb54b7b4959800d2"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "925ae11155ecf76517375d0012f0da44a313e556ff5832666ed62193d5709f0c"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "8dd152dfa89016fdd12b05ed2e9f14c7c4e0fd1629bc6f74c0ed9439b1328c30"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "87bf96e163af22c5c6bed569443162aabb7dd2ed1febad40d54639cd46e4d6a9"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "182aa58394eac29e7ff153ba40a12e18372cccbc7e1a4a212b6394b97696b972"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "65269f8e94e0e847f6d4a089c380a2f6bda360387c515f2892b9c743d2c9c130"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "320284402a4f5fa2d0519ea57ec8689ce85ad9b28b4b1b5e1ec14f54dc442c86"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "9d16ce32461b457329922aa7d19d9730bed5f7aecd18e7b4fc22b66dbefd2974"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "4af335ab0691a3b5b342ccec50d1f6a2bfdd058774fa40a27f40c7bcaa455fd6"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "fc5ff0efae254941cbdb1e5de49eab74e14e366465dbfadfa3bd781d3b0778fe"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "9997d05b9e097ad4f570e639a48f91b911373d9ccf8ceb6f1a6415f120a80515"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "a560cae1f6b64c42d4ecafd8bdc0765d248b1d974e2bdc02cdddd806371f0c64"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 10395,
+          "minimum_F_permutations": 1,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "981fdd25b4b3ba6362c21e65c8b1321e973c6e612d28aae662d82a6a054058d9"
+        }
+      ],
+      "labelled_R_count": 10395,
+      "labelled_pairs_checked": 332640,
+      "minimum_F_permutation_count": 32,
+      "minimum_F_permutation_stream_sha256": "633bc17b0e665016fe2737cb24594360e8bf96a55553e80e57a15e8569823768",
+      "minimum_F_rank": 3,
+      "minimum_F_search": {
+        "canonical_dimension_e_subspaces": 25744,
+        "observed_projective_lines": 66,
+        "winning_subspaces": 32
+      },
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "principal_minor_evaluations": 935550,
+      "rank_S": 19,
+      "rank_at_most_one_survivors": 0,
+      "target_stream_sha256": "8f76373a582f5d3a263ad93648e6453bec949f4602c2df32c66043d19a661440"
+    },
+    "3+2+1": {
+      "distinct_right_kernels": 2,
+      "even_part_count": 1,
+      "kernel_records": [
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 419126400,
+          "minimum_F_permutations": 40320,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "dac08343144e2bc3dfd6df53530f4f6882c6fed1da2f45c133918a18c9ddd542"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 419126400,
+          "minimum_F_permutations": 40320,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "cc0fbf85def5f66284adbfccbf6e8e05275fbafe52376499a223ab28202fa412"
+        }
+      ],
+      "labelled_R_count": 10395,
+      "labelled_pairs_checked": 838252800,
+      "minimum_F_permutation_count": 80640,
+      "minimum_F_permutation_stream_sha256": "a60401206eac58e270361adc7bf58741e2757bdee25f9d34b6b2b437e5e6183b",
+      "minimum_F_rank": 1,
+      "minimum_F_search": {
+        "canonical_dimension_e_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "partition": [
+        3,
+        2,
+        1
+      ],
+      "principal_minor_evaluations": 1397088000,
+      "rank_S": 23,
+      "rank_at_most_one_survivors": 0,
+      "target_stream_sha256": "e9d412156d459420cc75f4793254154551c313af763302694590bffa12c668c2"
+    },
+    "4+1+1": {
+      "distinct_right_kernels": 2,
+      "even_part_count": 1,
+      "kernel_records": [
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 3991680,
+          "minimum_F_permutations": 384,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "6b1ac908a5e10d6868640b6d21405f5befd783932ee0edc75b8d284ed3786c87"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 3991680,
+          "minimum_F_permutations": 384,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "4ebcc0515d9225ff845bc007b6bc626220040dbd56d02154f3d13a2b3df8e03c"
+        }
+      ],
+      "labelled_R_count": 10395,
+      "labelled_pairs_checked": 7983360,
+      "minimum_F_permutation_count": 768,
+      "minimum_F_permutation_stream_sha256": "b8e88cdff1091b0e53d10bd36239ca934fcf38975032bfade98023d7311e462b",
+      "minimum_F_rank": 1,
+      "minimum_F_search": {
+        "canonical_dimension_e_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "partition": [
+        4,
+        1,
+        1
+      ],
+      "principal_minor_evaluations": 17297280,
+      "rank_S": 23,
+      "rank_at_most_one_survivors": 0,
+      "target_stream_sha256": "37f814f177f9e33c6e1608850de9ea4b620bed8322c88f9d2e70c923bca77073"
+    },
+    "4+2": {
+      "distinct_right_kernels": 4,
+      "even_part_count": 2,
+      "kernel_records": [
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 166320,
+          "minimum_F_permutations": 16,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "b11950c7e95e9bc1337cd60d786cdfe8149cc6469cda4e078f6f5c4e9e937473"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 166320,
+          "minimum_F_permutations": 16,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "45e6caafd46f2a712b7998f8b5035672e9d610bdf858fcdb5f091db6a6c2a761"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 166320,
+          "minimum_F_permutations": 16,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "c6b0f31ff9c6eff031531b8c430d0d5a8dbbb51db2be9e1ae41774b272f4622a"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 166320,
+          "minimum_F_permutations": 16,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "7143e777220517b68a2cbf0bccfadcc3f5f1604eb905bc72c6755214eb06909d"
+        }
+      ],
+      "labelled_R_count": 10395,
+      "labelled_pairs_checked": 665280,
+      "minimum_F_permutation_count": 64,
+      "minimum_F_permutation_stream_sha256": "c8ffc0e3774a6c75f605d13c2fb93e25eeca4a99f2a4745243f2dfeb489d2e3e",
+      "minimum_F_rank": 2,
+      "minimum_F_search": {
+        "canonical_dimension_e_subspaces": 290,
+        "observed_projective_lines": 28,
+        "winning_subspaces": 4
+      },
+      "partition": [
+        4,
+        2
+      ],
+      "principal_minor_evaluations": 1995840,
+      "rank_S": 21,
+      "rank_at_most_one_survivors": 0,
+      "target_stream_sha256": "e069cb795e76adbaaedb2d4a35f869f847fc50bfe1dae7b5d6aa9401c2aaf258"
+    },
+    "6": {
+      "distinct_right_kernels": 2,
+      "even_part_count": 1,
+      "kernel_records": [
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 13471920,
+          "minimum_F_permutations": 1296,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "4b45c8f8e24146f017a56c87b4dd5293e75c6a918555d4f2b58b4c9f916f6611"
+        },
+        {
+          "labelled_R_per_permutation": 10395,
+          "labelled_pairs_checked": 13471920,
+          "minimum_F_permutations": 1296,
+          "rank_at_most_one_survivors": 0,
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "2c67fe85c64e99eeed910ae6c8cbb884bba518893f51ab51ea1e46980877dd86"
+        }
+      ],
+      "labelled_R_count": 10395,
+      "labelled_pairs_checked": 26943840,
+      "minimum_F_permutation_count": 2592,
+      "minimum_F_permutation_stream_sha256": "3b62458f7076c8701a165be7fcab5cbe8d062b70f49b18e3ed755a39125a0e13",
+      "minimum_F_rank": 1,
+      "minimum_F_search": {
+        "canonical_dimension_e_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "partition": [
+        6
+      ],
+      "principal_minor_evaluations": 50893920,
+      "rank_S": 23,
+      "rank_at_most_one_survivors": 0,
+      "target_stream_sha256": "13828bd7a38ac5a87bc2d73f393fd92bddd9641ce89363babd20311175ae70dd"
+    }
+  },
+  "format": "wave42-rank27-independent-precomparison-v1",
+  "frozen_inputs": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "verification/2026-07-27-wave41-integration-audit.md": "145951c957055f519cbac8cf3853d42795758bc88b559528495b9f42ff2b16a9",
+    "verification/2026-07-27-wave41-orchestrator.md": "48056d37fb87bf940ff80589c3a3ab2794401a0b7087fad0818e23137c28107e",
+    "verification/wave41-evenpart-equality/audit.md": "47fa605157b756f317a0d8eda4d587791ebc6731b7cdbb97994bb7983ab821fe",
+    "verification/wave41-evenpart-equality/independent-results.json": "ec371dad71c794d57d4e27b21d17b08fac1d17e22167749ef797d950c18299e4",
+    "verification/wave41-evenpart-equality/independent_check.py": "d27d70af72df6f7824a0c32f15fb1f70ba32036564c903e36a991b1d88b0cf81",
+    "verification/wave41-multiedge-rank-packing/audit.md": "8712e068e26cbcb80f77d906e528c3a0ba21986c32e0dc2f3c07ad4f6575598c",
+    "verification/wave41-multiedge-rank-packing/independent-results.json": "20cfac8928e1a9d52a586a833d8e52cc7f64f7998bdd641467ded5121e2da133",
+    "verification/wave41-multiedge-rank-packing/independent_check.py": "b0d71926dbb1bb6988b603a4adf7ea69489866702433e4250034bd8218103747",
+    "verification/wave41-rank26-secondary/README.md": "0d0f377c28b1346c947bf06ce937a770b85f5a6ceb0dc6c3e31efb20acf8804c",
+    "verification/wave41-rank26-secondary/run-report.yaml": "d932b881448ed7f5e910b468a15e6fb4b947bd53ed34c8f69b38cf704367aa19",
+    "verification/wave41-rank26-secondary/secondary-results.json": "6dec058084c3336449cbf4ce29dd837b87f8f1b1af982810d2ca594784e38766",
+    "verification/wave41-rank26-secondary/secondary_check.py": "3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3"
+  },
+  "labelled_R": {
+    "count": 10395,
+    "stream_sha256": "d0774c10297810eeadab5c0d0cf2812c615e88e40ad98ce4dc6ebb155bac6ea3"
+  },
+  "predicate_controls": {
+    "hostile_direct_rank": 3,
+    "hostile_mutation_rejected": true,
+    "rank_one_accepted": true,
+    "rank_one_direct_rank": 1,
+    "zero_accepted": true,
+    "zero_diagonal_hostile_direct_rank": 2,
+    "zero_diagonal_rank_two_rejected": true
+  },
+  "rank_reduction": {
+    "formula": "rank(K39)=rank(S)+2rank(F)+rank(Z^T W_R Z-Z^T U^T X)",
+    "rank_26_iff": "rank(F)=e and the symmetric residual has rank exactly one",
+    "rank_at_most_one_predicate": "all 2x2 minors vanish; implemented by failing principal minors followed by the exact nonzero-diagonal pivot identity"
+  },
+  "role": "verifier",
+  "status_wall": {
+    "conway_99_status": "UNKNOWN",
+    "endpoint_n3_4158_excluded": false,
+    "graph_constructed": false,
+    "novelty_or_priority": "UNKNOWN",
+    "strongest_general_upper_bound": "n3<=4158",
+    "universal_rank_F7_M_lower_bound": 27
+  },
+  "totals": {
+    "all_odd_labelled_pairs_covered_by_CSP": 19916886528000,
+    "distinct_right_kernels": 52,
+    "even_labelled_pairs_explicitly_checked": 1714426560,
+    "local_types": 11,
+    "minimum_F_permutations": 164928,
+    "rank_at_most_one_survivors": 0
+  },
+  "universal_deduction": {
+    "rank_26_excluded": true,
+    "theorem": "rank_F7(M)>=27",
+    "transport": "Principal K39 rank is a lower bound for rank_F7(K), and the verified incidence identities give rank_F7(K)=rank_F7(M)."
+  }
+}

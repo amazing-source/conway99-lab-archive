@@ -1,0 +1,37 @@
+Wave 41 multiedge rank packing verification
+Date UTC: 2026-07-27
+Git commit: 4f1754a28723a8e0e4ea3025312cd264b1b117d2
+
+Independent deterministic regeneration:
+  command: .\.venv\Scripts\python.exe -B verification\wave41-multiedge-rank-packing\independent_check.py --verify verification\wave41-multiedge-rank-packing\independent-results.json
+  result: PASS
+
+Post-freeze discovery comparison and control replay:
+  command: .\.venv\Scripts\python.exe -B verification\wave41-multiedge-rank-packing\comparison_check.py --verify verification\wave41-multiedge-rank-packing\discovery-comparison.json
+  result: PASS
+
+Independent hostile suite:
+  command: .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave41-multiedge-rank-packing -p "test_*.py" -v
+  result: 16 tests passed in 1.369s
+  coverage:
+    - frozen inputs and all 10,395 labelled matchings;
+    - all four all-odd types and exact matching numbers 0,6,10,12;
+    - Konig vertex-cover completeness certificates;
+    - unique 3+3 Schur candidate rejection;
+    - four dense 10,395-matching arithmetic censuses;
+    - direct Schur and core-Laplacian rank identities;
+    - universal three-dimensional compact kernel;
+    - independent rank-28 and triangle-free rank-29 replays;
+    - field arithmetic and rank transport;
+    - hostile universal-floor and even-type status inflation;
+    - malformed matching/permutation rejection;
+    - explicit detection of the discovery five-versus-seven count defect.
+
+Discovery replay:
+  exact-results regeneration: PASS
+  discovery unittest suite: 10 tests passed in 0.351s
+  discovery input-freeze hashes: PASS
+  discovery package-manifest hashes: PASS
+
+Cache audit:
+  verification/wave41-multiedge-rank-packing/**/__pycache__: NONE

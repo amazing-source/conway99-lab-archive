@@ -1,0 +1,50 @@
+role: verifier
+date_utc: 2026-07-29T02:39:38Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: residual-stability strengthening
+  for nonedge-realizing projective short circuits, including exact-one
+  assignment slack, combined raw/residual collision capacity in exact-three
+  companion orbits, the exact master residual slack identity, and the
+  coefficient certificate 6Q>=8C giving Q>=5544.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  agents/2026-07-29-wave190-residual-stability-proof-b.md: 4a9f2f661435f22e097322724eca638ec72767a5465119934ae6b9f9dd5bf39d
+  agents/2026-07-29-wave190-residual-stability-proof-a-audit.md: da485c85b7dee62435d3d472d5b5f67c876c0232dd30ca99c42e870244572a4b
+  attempts/wave190-residual-stability-proof-b/package-manifest.sha256: e66987333e3f7119026520be9680699bcfdcfcddbf8877016d8d817193684a5a
+  verification/wave189-degree7-star-orbit-verifier/package-manifest.sha256: fc17484bd8c32a5886ecdcc65d153903cef5f3b60a3de1c9905ed96697c273c4
+method: >-
+  Clean-room reconstruction of exact-one slack; three-state per-label
+  raw/residual orbit capacity; center-oriented exclusion of type-two orbit
+  mates; low-circuit uniqueness and privacy collision exclusions; an exact
+  five-slack decomposition of delta+3h+3Y>=p3; disjoint-pool counting; and
+  coefficientwise verification of
+  6Q>=4I+n1+2(p2-n2)>=8C. Neither discovery checker was imported or
+  executed during derivation. No graph, cover, code, SAT, configuration,
+  LP, isomorphism, or enumeration search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave190-residual-stability-verifier\independent_check.py
+  --verify
+  verification\wave190-residual-stability-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave190-residual-stability-verifier\test_independent_check.py
+outputs:
+  verification/wave190-residual-stability-verifier/README.md: 2413f2a48265057bee00a2cace272c6082b5672d4767d96756e6c24c702aa1ee
+  verification/wave190-residual-stability-verifier/audit.md: 4721750b306fd298fb900cb64f091aadf57ae2a3632b0e013547a681df76fe4e
+  verification/wave190-residual-stability-verifier/protocol.md: 474d3203b69bebfc774f7faf26181872e0e21acbe003446abfc465235c59bd76
+  verification/wave190-residual-stability-verifier/independent_check.py: 7a343cfb1eb5781ea30481487bc04dbc47ffeabe82f024301d15e9c517eb5b7e
+  verification/wave190-residual-stability-verifier/independent-results.json: 367480e7978c28f40e80b221097acc373189795c645c9581c7b6f6deffea5a4f
+  verification/wave190-residual-stability-verifier/test_independent_check.py: 2713a07fc52b75fb4d442d35836dc8011ab1ca137f0d16d5f8bf4fd58ee136fd
+  verification/wave190-residual-stability-verifier/input-freeze.sha256: 5684b1da7ddf879a324f41c138574adedf485eabaecd9a2790fc0687e96f8d43
+limitations:
+  - The result is conditional on the prism-free rank-11 endpoint model.
+  - The sharp h=1386 row is arithmetic and is not an asserted circuit
+    cover, code, graph, or endpoint.
+  - The theorem supplies no incompatible upper bound and does not exclude
+    rank 11 or endpoint existence.
+  - The circuit-only scalar bound 12474 is weaker than Wave188's 18018
+    all-short-word bound.
+  - Strict n3 improvement is not obtained.
+  - External novelty and Conway-99 remain UNKNOWN.

@@ -1,0 +1,598 @@
+{
+  "brute_force_point_count_checks": [
+    {
+      "count": 0,
+      "determinant_class": 1,
+      "dimension": 1
+    },
+    {
+      "count": 1,
+      "determinant_class": 2,
+      "dimension": 1
+    },
+    {
+      "count": 2,
+      "determinant_class": 1,
+      "dimension": 2
+    },
+    {
+      "count": 1,
+      "determinant_class": 2,
+      "dimension": 2
+    },
+    {
+      "count": 6,
+      "determinant_class": 1,
+      "dimension": 3
+    },
+    {
+      "count": 3,
+      "determinant_class": 2,
+      "dimension": 3
+    },
+    {
+      "count": 12,
+      "determinant_class": 1,
+      "dimension": 4
+    },
+    {
+      "count": 15,
+      "determinant_class": 2,
+      "dimension": 4
+    },
+    {
+      "count": 36,
+      "determinant_class": 1,
+      "dimension": 5
+    },
+    {
+      "count": 45,
+      "determinant_class": 2,
+      "dimension": 5
+    },
+    {
+      "count": 126,
+      "determinant_class": 1,
+      "dimension": 6
+    },
+    {
+      "count": 117,
+      "determinant_class": 2,
+      "dimension": 6
+    },
+    {
+      "count": 378,
+      "determinant_class": 1,
+      "dimension": 7
+    },
+    {
+      "count": 351,
+      "determinant_class": 2,
+      "dimension": 7
+    }
+  ],
+  "conclusion": {
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "novelty": "NOT_ASSESSED",
+    "rank_F3_M_lower_bound": 12,
+    "rank_twelve_surviving_determinant_classes": [
+      "square"
+    ],
+    "upper_bound_improved_below_4158": false
+  },
+  "endpoint": {
+    "distinct_projective_points": true,
+    "false_integer_combination_norm_squared": 450,
+    "forced_antipodal_row_sum": "-15(e_i+e_j)",
+    "forced_equal_row_difference": "-15(e_i-e_j)",
+    "orthogonal_row_combination_norm_squared": 882,
+    "orthogonal_selected_neighbors_per_point": 162,
+    "point_norm": 2,
+    "projective_points": 231
+  },
+  "factorization_lemma": "For symmetric rank-r A over F_3, A=VHV^T with V full column rank and H symmetric nondegenerate.",
+  "frozen_public_head": "697cc02bcbe16b69aaf08822298e03c66329c64c",
+  "limitations": [
+    "The endpoint C, factor configuration, and graph are hypothetical.",
+    "The result is a necessary modular-rank condition, not endpoint exclusion.",
+    "The finite checker accompanies the general transitivity and degenerate-span proof.",
+    "Rank twelve square class and ranks thirteen through forty-four survive this test."
+  ],
+  "point_count_table": [
+    {
+      "dimension": 1,
+      "nonsquare": 1,
+      "square": 0
+    },
+    {
+      "dimension": 2,
+      "nonsquare": 1,
+      "square": 2
+    },
+    {
+      "dimension": 3,
+      "nonsquare": 3,
+      "square": 6
+    },
+    {
+      "dimension": 4,
+      "nonsquare": 15,
+      "square": 12
+    },
+    {
+      "dimension": 5,
+      "nonsquare": 45,
+      "square": 36
+    },
+    {
+      "dimension": 6,
+      "nonsquare": 117,
+      "square": 126
+    },
+    {
+      "dimension": 7,
+      "nonsquare": 351,
+      "square": 378
+    },
+    {
+      "dimension": 8,
+      "nonsquare": 1107,
+      "square": 1080
+    },
+    {
+      "dimension": 9,
+      "nonsquare": 3321,
+      "square": 3240
+    },
+    {
+      "dimension": 10,
+      "nonsquare": 9801,
+      "square": 9882
+    },
+    {
+      "dimension": 11,
+      "nonsquare": 29403,
+      "square": 29646
+    },
+    {
+      "dimension": 12,
+      "nonsquare": 88695,
+      "square": 88452
+    }
+  ],
+  "polar_cases": [
+    {
+      "determinant_class": 1,
+      "dimension": 7,
+      "excluded": true,
+      "k": 117,
+      "lambda": 36,
+      "mixing_bound": {
+        "denominator": 1,
+        "display": "75",
+        "numerator": 75
+      },
+      "mu": 36,
+      "tau": -9,
+      "tau_multiplicity": 195,
+      "theta": 9,
+      "theta_multiplicity": 182,
+      "v": 378
+    },
+    {
+      "determinant_class": 2,
+      "dimension": 7,
+      "excluded": true,
+      "k": 126,
+      "lambda": 45,
+      "mixing_bound": {
+        "denominator": 1,
+        "display": "86",
+        "numerator": 86
+      },
+      "mu": 45,
+      "tau": -9,
+      "tau_multiplicity": 182,
+      "theta": 9,
+      "theta_multiplicity": 168,
+      "v": 351
+    },
+    {
+      "determinant_class": 1,
+      "dimension": 8,
+      "excluded": true,
+      "k": 351,
+      "lambda": 126,
+      "mixing_bound": {
+        "denominator": 10,
+        "display": "963/10",
+        "numerator": 963
+      },
+      "mu": 108,
+      "tau": -9,
+      "tau_multiplicity": 819,
+      "theta": 27,
+      "theta_multiplicity": 260,
+      "v": 1080
+    },
+    {
+      "determinant_class": 2,
+      "dimension": 8,
+      "excluded": true,
+      "k": 378,
+      "lambda": 117,
+      "mixing_bound": {
+        "denominator": 1,
+        "display": "86",
+        "numerator": 86
+      },
+      "mu": 135,
+      "tau": -27,
+      "tau_multiplicity": 287,
+      "theta": 9,
+      "theta_multiplicity": 819,
+      "v": 1107
+    },
+    {
+      "determinant_class": 1,
+      "dimension": 9,
+      "excluded": true,
+      "k": 1107,
+      "lambda": 378,
+      "mixing_bound": {
+        "denominator": 1,
+        "display": "104",
+        "numerator": 104
+      },
+      "mu": 378,
+      "tau": -27,
+      "tau_multiplicity": 1640,
+      "theta": 27,
+      "theta_multiplicity": 1599,
+      "v": 3240
+    },
+    {
+      "determinant_class": 2,
+      "dimension": 9,
+      "excluded": true,
+      "k": 1080,
+      "lambda": 351,
+      "mixing_bound": {
+        "denominator": 41,
+        "display": "4110/41",
+        "numerator": 4110
+      },
+      "mu": 351,
+      "tau": -27,
+      "tau_multiplicity": 1680,
+      "theta": 27,
+      "theta_multiplicity": 1640,
+      "v": 3321
+    },
+    {
+      "determinant_class": 1,
+      "dimension": 10,
+      "excluded": true,
+      "k": 3321,
+      "lambda": 1080,
+      "mixing_bound": {
+        "denominator": 1,
+        "display": "104",
+        "numerator": 104
+      },
+      "mu": 1134,
+      "tau": -81,
+      "tau_multiplicity": 2501,
+      "theta": 27,
+      "theta_multiplicity": 7380,
+      "v": 9882
+    },
+    {
+      "determinant_class": 2,
+      "dimension": 10,
+      "excluded": true,
+      "k": 3240,
+      "lambda": 1107,
+      "mixing_bound": {
+        "denominator": 11,
+        "display": "1710/11",
+        "numerator": 1710
+      },
+      "mu": 1053,
+      "tau": -27,
+      "tau_multiplicity": 7380,
+      "theta": 81,
+      "theta_multiplicity": 2420,
+      "v": 9801
+    },
+    {
+      "determinant_class": 1,
+      "dimension": 11,
+      "excluded": true,
+      "k": 9801,
+      "lambda": 3240,
+      "mixing_bound": {
+        "denominator": 61,
+        "display": "9561/61",
+        "numerator": 9561
+      },
+      "mu": 3240,
+      "tau": -81,
+      "tau_multiplicity": 14883,
+      "theta": 81,
+      "theta_multiplicity": 14762,
+      "v": 29646
+    },
+    {
+      "determinant_class": 2,
+      "dimension": 11,
+      "excluded": true,
+      "k": 9882,
+      "lambda": 3321,
+      "mixing_bound": {
+        "denominator": 1,
+        "display": "158",
+        "numerator": 158
+      },
+      "mu": 3321,
+      "tau": -81,
+      "tau_multiplicity": 14762,
+      "theta": 81,
+      "theta_multiplicity": 14640,
+      "v": 29403
+    },
+    {
+      "determinant_class": 1,
+      "dimension": 12,
+      "excluded": false,
+      "k": 29403,
+      "lambda": 9882,
+      "mixing_bound": {
+        "denominator": 13,
+        "display": "4149/13",
+        "numerator": 4149
+      },
+      "mu": 9720,
+      "tau": -81,
+      "tau_multiplicity": 66429,
+      "theta": 243,
+      "theta_multiplicity": 22022,
+      "v": 88452
+    },
+    {
+      "determinant_class": 2,
+      "dimension": 12,
+      "excluded": true,
+      "k": 29646,
+      "lambda": 9801,
+      "mixing_bound": {
+        "denominator": 1,
+        "display": "158",
+        "numerator": 158
+      },
+      "mu": 9963,
+      "tau": -243,
+      "tau_multiplicity": 22265,
+      "theta": 81,
+      "theta_multiplicity": 66429,
+      "v": 88695
+    }
+  ],
+  "ranks_13_through_44_check": {
+    "all_survive_mixing_test": true,
+    "checked_case_count": 64,
+    "minimum_bound_case": {
+      "bound": {
+        "denominator": 365,
+        "numerator": 116646
+      },
+      "determinant_class": 2,
+      "dimension": 13
+    }
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "conditional n3=4158 ternary polar-graph rank bound",
+  "strong_regularity_proof_data": {
+    "adjacent_complement_class": "epsilon",
+    "degree_complement_class": "2*epsilon",
+    "exhaustive_small_graph_checks": [
+      {
+        "all_adjacent_common_neighbor_counts": [
+          2
+        ],
+        "all_degrees": [
+          3
+        ],
+        "all_nonadjacent_common_neighbor_counts": [
+          0
+        ],
+        "all_nonadjacent_gram_determinants": [
+          0
+        ],
+        "determinant_class": 1,
+        "dimension": 4,
+        "parameters": {
+          "k": 3,
+          "lambda": 2,
+          "mu": 0,
+          "v": 12
+        }
+      },
+      {
+        "all_adjacent_common_neighbor_counts": [
+          1
+        ],
+        "all_degrees": [
+          6
+        ],
+        "all_nonadjacent_common_neighbor_counts": [
+          3
+        ],
+        "all_nonadjacent_gram_determinants": [
+          0
+        ],
+        "determinant_class": 2,
+        "dimension": 4,
+        "parameters": {
+          "k": 6,
+          "lambda": 1,
+          "mu": 3,
+          "v": 15
+        }
+      },
+      {
+        "all_adjacent_common_neighbor_counts": [
+          6
+        ],
+        "all_degrees": [
+          15
+        ],
+        "all_nonadjacent_common_neighbor_counts": [
+          6
+        ],
+        "all_nonadjacent_gram_determinants": [
+          0
+        ],
+        "determinant_class": 1,
+        "dimension": 5,
+        "parameters": {
+          "k": 15,
+          "lambda": 6,
+          "mu": 6,
+          "v": 36
+        }
+      },
+      {
+        "all_adjacent_common_neighbor_counts": [
+          3
+        ],
+        "all_degrees": [
+          12
+        ],
+        "all_nonadjacent_common_neighbor_counts": [
+          3
+        ],
+        "all_nonadjacent_gram_determinants": [
+          0
+        ],
+        "determinant_class": 2,
+        "dimension": 5,
+        "parameters": {
+          "k": 12,
+          "lambda": 3,
+          "mu": 3,
+          "v": 45
+        }
+      },
+      {
+        "all_adjacent_common_neighbor_counts": [
+          12
+        ],
+        "all_degrees": [
+          45
+        ],
+        "all_nonadjacent_common_neighbor_counts": [
+          18
+        ],
+        "all_nonadjacent_gram_determinants": [
+          0
+        ],
+        "determinant_class": 1,
+        "dimension": 6,
+        "parameters": {
+          "k": 45,
+          "lambda": 12,
+          "mu": 18,
+          "v": 126
+        }
+      },
+      {
+        "all_adjacent_common_neighbor_counts": [
+          15
+        ],
+        "all_degrees": [
+          36
+        ],
+        "all_nonadjacent_common_neighbor_counts": [
+          9
+        ],
+        "all_nonadjacent_gram_determinants": [
+          0
+        ],
+        "determinant_class": 2,
+        "dimension": 6,
+        "parameters": {
+          "k": 36,
+          "lambda": 15,
+          "mu": 9,
+          "v": 117
+        }
+      },
+      {
+        "all_adjacent_common_neighbor_counts": [
+          36
+        ],
+        "all_degrees": [
+          117
+        ],
+        "all_nonadjacent_common_neighbor_counts": [
+          36
+        ],
+        "all_nonadjacent_gram_determinants": [
+          0
+        ],
+        "determinant_class": 1,
+        "dimension": 7,
+        "parameters": {
+          "k": 117,
+          "lambda": 36,
+          "mu": 36,
+          "v": 378
+        }
+      },
+      {
+        "all_adjacent_common_neighbor_counts": [
+          45
+        ],
+        "all_degrees": [
+          126
+        ],
+        "all_nonadjacent_common_neighbor_counts": [
+          45
+        ],
+        "all_nonadjacent_gram_determinants": [
+          0
+        ],
+        "determinant_class": 2,
+        "dimension": 7,
+        "parameters": {
+          "k": 126,
+          "lambda": 45,
+          "mu": 45,
+          "v": 351
+        }
+      }
+    ],
+    "hostile_degenerate_span_checks": [
+      {
+        "correct_degenerate_count": 108,
+        "determinant_class": 1,
+        "incorrect_nondegenerate_codim2_count": 126
+      },
+      {
+        "correct_degenerate_count": 135,
+        "determinant_class": 2,
+        "incorrect_nondegenerate_codim2_count": 117
+      }
+    ],
+    "mu_formula": "3*N_(r-3)^epsilon",
+    "nonadjacent_K_determinant_class": "epsilon",
+    "nonadjacent_K_dimension": "r-3",
+    "nonadjacent_complement_model": "<u> direct_sum K",
+    "nonadjacent_gram_determinant": 0,
+    "projective_lifts_per_K_point": 3,
+    "transitivity": "Adjacent pairs have a unique nondegenerate Gram type. For a nonadjacent pair, signs normalize inner product to 1; a canonical H_hyp direct-sum <v> direct-sum K decomposition shows all ordered pairs are isometric."
+  }
+}

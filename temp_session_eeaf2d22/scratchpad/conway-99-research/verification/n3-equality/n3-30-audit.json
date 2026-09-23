@@ -1,0 +1,2037 @@
+{
+  "assumptions": [
+    "n3=30 forces ten active q=2 graph-triangles",
+    "K is the simple cubic complement of the six-regular active L graph",
+    "point sets S_u are K-cliques with edge-disjoint K-edge consumption",
+    "every K3 whose three edges are consumed has one common point",
+    "each active triangle contains exactly three original graph vertices",
+    "d_H(e) is in {0,4,6,8,10,12}",
+    "each nonisolated fixed-side H_T vertex has degree two",
+    "every L-edge is an N3 and therefore has exactly two cross graph-edges",
+    "H is simple and triangle-free"
+  ],
+  "candidate_support_warning": "candidate pairs are upper-bound possibilities, not actual graph edges; actual selection begins only in the exact-two-cover layer",
+  "constraint_stages": [
+    "every L-edge covered exactly twice",
+    "the two cross edges at each L-edge form a matching",
+    "H is simple",
+    "H is triangle-free",
+    "original graph degree capacity is at most 14"
+  ],
+  "cubic_generation": {
+    "class_count_checksum": "each normalized class count equals 43200/|Aut(K)|",
+    "connected_type_count": 19,
+    "disconnected_type_count": 2,
+    "isomorphism_type_count": 21,
+    "normalization": "N_K(0)={1,2,3}",
+    "normalized_labeled_graph_count": 133105
+  },
+  "format": "conway-n3-30-abstract-incidence-audit-v1",
+  "incidence_totals": {
+    "candidate_support_at_least_11_count": 267,
+    "exact_two_cover_solution_count": 0,
+    "internal_and_fixed_side_valid_count": 20624,
+    "point_family_count": 674880,
+    "surviving_pattern_count": 0,
+    "surviving_type_count": 0
+  },
+  "limitations": "This is not a Conway-99 existence or nonexistence certificate; it verifies a conditional necessary count bound.",
+  "scope": "necessary abstract incidence constraints conditional on a putative srg(99,14,1,2)",
+  "script_sha256": "ec463642e2efa5a0b4f25673de1f78e2ef5b5af8bc698791e22c8743d43c1750",
+  "short_proof_cross_check": {
+    "cubic_types_with_every_neighborhood_a_clique": [],
+    "cubic_types_with_one_K4_component": [
+      1,
+      2
+    ],
+    "cubic_types_with_two_K4_components": [],
+    "fixed_point_identity": "sum_{v adjacent u} d_H(uv) = 4 |S_u|",
+    "forced_internal_bound": "d_H(uv)=e_L(S_u,S_v)<=2, hence 0",
+    "no_size_four_integer_solutions_x2_x3": [
+      [
+        15,
+        0
+      ]
+    ],
+    "verdict": "PASS: the classification-free short contradiction closes n3=30"
+  },
+  "types": [
+    {
+      "automorphism_order": 288,
+      "candidate_support_at_least_11_count": 237,
+      "component_sizes": [
+        4,
+        6
+      ],
+      "connected": false,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 150,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I~?GWOD?w",
+      "internal_and_fixed_side_valid_count": 4640,
+      "k4_count": 1,
+      "locally_admissible_support_maximum": 16,
+      "normalized_labeled_count": 150,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 29696,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 6,
+      "type": 1
+    },
+    {
+      "automorphism_order": 1728,
+      "candidate_support_at_least_11_count": 18,
+      "component_sizes": [
+        4,
+        6
+      ],
+      "connected": false,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 25,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I~?GOOF@o",
+      "internal_and_fixed_side_valid_count": 1972,
+      "k4_count": 1,
+      "locally_admissible_support_maximum": 12,
+      "normalized_labeled_count": 25,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 29696,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 4,
+      "type": 2
+    },
+    {
+      "automorphism_order": 32,
+      "candidate_support_at_least_11_count": 4,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 1350,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I}KGGGB?w",
+      "internal_and_fixed_side_valid_count": 1480,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 11,
+      "normalized_labeled_count": 1350,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 30752,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 4,
+      "type": 3
+    },
+    {
+      "automorphism_order": 16,
+      "candidate_support_at_least_11_count": 4,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 2700,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I}GWOGB?w",
+      "internal_and_fixed_side_valid_count": 1424,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 11,
+      "normalized_labeled_count": 2700,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 30752,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 4,
+      "type": 4
+    },
+    {
+      "automorphism_order": 4,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 10800,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I}GOWOD?w",
+      "internal_and_fixed_side_valid_count": 1040,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 8,
+      "normalized_labeled_count": 10800,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 31744,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 3,
+      "type": 5
+    },
+    {
+      "automorphism_order": 8,
+      "candidate_support_at_least_11_count": 4,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 5400,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I}GOOSE@W",
+      "internal_and_fixed_side_valid_count": 1664,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 11,
+      "normalized_labeled_count": 5400,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 31744,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 4,
+      "type": 6
+    },
+    {
+      "automorphism_order": 16,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 2700,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I}GOOOF@o",
+      "internal_and_fixed_side_valid_count": 708,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 7,
+      "normalized_labeled_count": 2700,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 31744,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 2,
+      "type": 7
+    },
+    {
+      "automorphism_order": 2,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 21600,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I{S_gOD?w",
+      "internal_and_fixed_side_valid_count": 742,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 6,
+      "normalized_labeled_count": 21600,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 2,
+      "type": 8
+    },
+    {
+      "automorphism_order": 4,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 10800,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I{S__SE@W",
+      "internal_and_fixed_side_valid_count": 776,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 7,
+      "normalized_labeled_count": 10800,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 2,
+      "type": 9
+    },
+    {
+      "automorphism_order": 4,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 10800,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I{S__OF@o",
+      "internal_and_fixed_side_valid_count": 506,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 4,
+      "normalized_labeled_count": 10800,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 1,
+      "type": 10
+    },
+    {
+      "automorphism_order": 8,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 5400,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I{O_ooE@W",
+      "internal_and_fixed_side_valid_count": 766,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 5,
+      "normalized_labeled_count": 5400,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 2,
+      "type": 11
+    },
+    {
+      "automorphism_order": 12,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 3600,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I{O_w_H@W",
+      "internal_and_fixed_side_valid_count": 716,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 6,
+      "normalized_labeled_count": 3600,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 2,
+      "type": 12
+    },
+    {
+      "automorphism_order": 6,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 7200,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I{O_ogK?w",
+      "internal_and_fixed_side_valid_count": 502,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 5,
+      "normalized_labeled_count": 7200,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 1,
+      "type": 13
+    },
+    {
+      "automorphism_order": 6,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 7200,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I{O_ogI@W",
+      "internal_and_fixed_side_valid_count": 1152,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 9,
+      "normalized_labeled_count": 7200,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 3,
+      "type": 14
+    },
+    {
+      "automorphism_order": 2,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 21600,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "I{O_ogH@g",
+      "internal_and_fixed_side_valid_count": 500,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 5,
+      "normalized_labeled_count": 21600,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 1,
+      "type": 15
+    },
+    {
+      "automorphism_order": 48,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 900,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "IsX___J@o",
+      "internal_and_fixed_side_valid_count": 344,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 3,
+      "normalized_labeled_count": 900,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 0,
+      "type": 16
+    },
+    {
+      "automorphism_order": 20,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 2160,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "IsXP?cI@W",
+      "internal_and_fixed_side_valid_count": 342,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 5,
+      "normalized_labeled_count": 2160,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 0,
+      "type": 17
+    },
+    {
+      "automorphism_order": 4,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 10800,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "IsXP?cH@g",
+      "internal_and_fixed_side_valid_count": 338,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 3,
+      "normalized_labeled_count": 10800,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 0,
+      "type": 18
+    },
+    {
+      "automorphism_order": 20,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 2160,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "IsXP?_J@o",
+      "internal_and_fixed_side_valid_count": 344,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 5,
+      "normalized_labeled_count": 2160,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 0,
+      "type": 19
+    },
+    {
+      "automorphism_order": 8,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "expected_count_43200_over_aut": 5400,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "IsX@?oU@o",
+      "internal_and_fixed_side_valid_count": 336,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 3,
+      "normalized_labeled_count": 5400,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 0,
+      "type": 20
+    },
+    {
+      "automorphism_order": 120,
+      "candidate_support_at_least_11_count": 0,
+      "component_sizes": [
+        10
+      ],
+      "connected": true,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "expected_count_43200_over_aut": 360,
+      "forced_positive_internal_edge_maximum": 0,
+      "graph6": "IsP@PGXD_",
+      "internal_and_fixed_side_valid_count": 332,
+      "k4_count": 0,
+      "locally_admissible_support_maximum": 3,
+      "normalized_labeled_count": 360,
+      "patterns_with_solution_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "point_family_count": 32768,
+      "solution_subsets_by_stage": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "triangle_count": 0,
+      "type": 21
+    }
+  ],
+  "verdict": "VERIFIED ABSTRACT CONTRADICTION FOR n3=30; conditional bound advances to n3>=33"
+}

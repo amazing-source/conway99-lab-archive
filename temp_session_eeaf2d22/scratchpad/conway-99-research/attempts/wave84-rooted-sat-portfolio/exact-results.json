@@ -1,0 +1,95 @@
+{
+  "claim_label": "UNKNOWN",
+  "format": "wave84-rooted-sat-portfolio-v1",
+  "formula": {
+    "clauses": 4323943,
+    "path": "attempts/wave34-rooted-encoding/rooted-complete.cnf",
+    "sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3",
+    "variables": 1233001
+  },
+  "limitations": [
+    "No satisfying assignment was emitted.",
+    "No UNSAT proof was emitted or checked.",
+    "Raw local logs are hash-recorded but not published because they contain absolute host paths.",
+    "Conflict counts and reductions are operational diagnostics, not mathematical evidence.",
+    "Conway-99 and novelty remain UNKNOWN."
+  ],
+  "runs": [
+    {
+      "configuration": "default",
+      "conflicts": 153043,
+      "decisions": 1116116,
+      "exit_code": 142,
+      "log_sha256": "d7a4489de49d3e5314e082a3bbadac69d666420e601bb05dd2812b0baac2a534",
+      "max_rss_mb": "842.55",
+      "model_emitted": false,
+      "process_seconds": "812.99",
+      "proof_emitted": false,
+      "real_seconds": "892.75",
+      "solver": "CaDiCaL 1.7.3",
+      "status": "UNKNOWN",
+      "termination": "SIGALRM"
+    },
+    {
+      "configuration": "--sat",
+      "conflicts": 189417,
+      "decisions": 263967,
+      "exit_code": 142,
+      "log_sha256": "67726a49749be64e0c9bd495d83a22efd51ca804aa225f716602a55bc6d04e0",
+      "max_rss_mb": "839.62",
+      "model_emitted": false,
+      "process_seconds": "812.85",
+      "proof_emitted": false,
+      "real_seconds": "892.74",
+      "solver": "CaDiCaL 1.7.3",
+      "status": "UNKNOWN",
+      "termination": "SIGALRM"
+    },
+    {
+      "configuration": "--unsat",
+      "conflicts": 155936,
+      "decisions": 1817722,
+      "exit_code": 142,
+      "log_sha256": "158243e23d297518e0a83fa02ef25cf6f6504d13de7924c315f9461e660d7030",
+      "max_rss_mb": "841.79",
+      "model_emitted": false,
+      "process_seconds": "864.92",
+      "proof_emitted": false,
+      "real_seconds": "893.85",
+      "solver": "CaDiCaL 1.7.3",
+      "status": "UNKNOWN",
+      "termination": "SIGALRM"
+    },
+    {
+      "configuration": "default",
+      "conflicts": 198792,
+      "decisions": 2304174,
+      "exit_code": 0,
+      "log_sha256": "e4749fc0c223e09385fe1be2ca3d64459672a4d535d64a9a57369943312f3f47",
+      "max_rss_bytes": 423669760,
+      "model_emitted": false,
+      "process_seconds": "878.02",
+      "proof_emitted": false,
+      "solver": "Kissat 4.0.4",
+      "status": "UNKNOWN",
+      "termination": "internal time limit"
+    }
+  ],
+  "solver_provenance": {
+    "cadical": {
+      "binary_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "version": "1.7.3"
+    },
+    "kissat": {
+      "binary_sha256": "fb0cdf006d7ceaa943374496b9f7ad5616d0fd411d4f14e372f1e58d1b397494",
+      "git_commit": "8af8e56f174b778aef3aa45af9f739b2a5f492c2",
+      "version": "4.0.4"
+    }
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "rooted_formula": "UNKNOWN",
+    "strict_upper_bound_improvement": false
+  }
+}
+

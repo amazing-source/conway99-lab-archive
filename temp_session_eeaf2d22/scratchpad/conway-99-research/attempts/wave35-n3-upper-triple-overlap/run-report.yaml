@@ -1,0 +1,27 @@
+role: construction
+date_utc: 2026-07-26T22:12:00Z
+git_commit: 6d98cb5f73c1f56d227e97b1c3e70d363669bf87
+claim_label: CANDIDATE
+scope: "Necessary rooted and one-edge local-extension models under the conditional prism-free endpoint n3=4158"
+inputs:
+  code/root_model.py: "repository baseline"
+  code/sat_model.py: "repository baseline"
+  code/matching_orbits.py: "repository baseline"
+method: "Exact rooted unit reduction, verified-cover intersection, exhaustive local neighborhood-type enumeration, deterministic OPB export, and bounded discovery-only solver scouts"
+command: "python -B -m unittest discover -s code -p \"test_wave35_n3_endpoint_local_extension.py\" -v"
+outputs:
+  code/wave35_n3_endpoint_root_scout.py: 04ef058c3a14ed8790773f015edc16f4ae1da1bcb011e3b795f0d16229f7ff7e
+  code/wave35_n3_endpoint_local_extension.py: 41f3fb71c34bf4cc5b9d539a27f86ad644dbb7d2f86a1bbd77826f655628f580
+  code/test_wave35_n3_endpoint_local_extension.py: 351e81fa0d5509c5851fa3714bc81bb3fa0ceea18944f5265372e28fdf0d4ae3
+  attempts/wave35-n3-upper-triple-overlap/root-endpoint-reduction.json: 7551c7b9d956705e41f9feb42d76d3bb5ab60dab0b46416fa9c0e58e5346a46a
+  attempts/wave35-n3-upper-triple-overlap/root-endpoint-bounded-scout.json: 31535540e66889ac6a17c476bc41b650038c04f73a0566c3738d66684bf4dae1
+  attempts/wave35-n3-upper-triple-overlap/local-extension-bounded-scout.json: 8922fc4d0e5e056c69685d42377f71ed70d0bf17574e4a6a7219ce1ad0794685
+  attempts/wave35-n3-upper-triple-overlap/local-extension/partition-2-2-2.opb: dbd94e3e717189d4e9630a54f51cd8180c923f53311f556066e72b35fe80993e
+  attempts/wave35-n3-upper-triple-overlap/local-extension/partition-2-4.opb: 396c2600759dc12d4d640d5445f9f8f4ef105ba4babd000ef56554f122a9df50
+  attempts/wave35-n3-upper-triple-overlap/local-extension/partition-3-3.opb: f61cf5e5a0a04d10f6ed99391306d818a36e2e657b6d74b614f0bdc876099e77
+  attempts/wave35-n3-upper-triple-overlap/local-extension/partition-6.opb: 32f789c205066d7e47f9a8b0558ea43a4deffc42d4ba1a86f8846ed2c446b84d
+limitations:
+  - "All solver scouts ended by budget or time and have no mathematical evidentiary value."
+  - "The local systems omit adjacencies among the 72 outside vertices."
+  - "The bounded solver records were transcribed from console output and are not raw proof logs."
+  - "No graph, SAT assignment, checked UNSAT proof, endpoint exclusion, or upper-bound improvement is supplied."

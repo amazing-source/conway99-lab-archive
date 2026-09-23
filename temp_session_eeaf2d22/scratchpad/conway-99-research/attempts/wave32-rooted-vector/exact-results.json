@@ -1,0 +1,820 @@
+{
+  "claim_label": "DERIVED_VERIFICATION_PENDING",
+  "final_y_and_outside_census": {
+    "outside_vertex_types": {
+      "no_support_neighbor": 15,
+      "support_edge_completion": 28,
+      "support_nonedge_completion": 42
+    },
+    "root_triangle_vector_y": {
+      "minus_1": 21,
+      "minus_2": 0,
+      "plus_1": 21,
+      "plus_2": 0,
+      "zero": 189
+    },
+    "signed_vertex_support": {
+      "minus_1": 7,
+      "plus_1": 7,
+      "zero": 85
+    },
+    "support_cross_edges": 28,
+    "support_induced_graph": "bipartite complement of the Fano incidence graph",
+    "triangles_disjoint_from_support": 161,
+    "triangles_with_one_support_vertex": {
+      "negative": 21,
+      "positive": 21
+    },
+    "triangles_with_two_opposite_support_vertices": 28
+  },
+  "frozen_inputs": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "verification/2026-07-22-n3-side-incidence-audit.md": "9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787",
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+    "verification/wave28-glue-discriminant/audit.md": "5c1dc7978d571a9471837b45a36663c7c457b6434800776501e4967146956b86",
+    "verification/wave31-sign-commutant/audit.md": "f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0"
+  },
+  "hostile_eigenvalue_minus_three": {
+    "coordinate_bound_abs_values": [
+      0,
+      1,
+      2
+    ],
+    "eigenvalue_magnitude": 3,
+    "proof_inequalities": [
+      "2*positive_mass=sum(abs(k_i))<=sum(k_i^2)=14",
+      "at an entry of magnitude m, 3*m<=positive_mass",
+      "for eigenvalue magnitude q, the neighbor and nonneighbor sums are -q*a and (q-1)*a, so 14-a^2>=(2*q-1)*abs(a)"
+    ],
+    "raw_integer_distribution_count": 12,
+    "surviving_distribution_count": 3,
+    "survivors": [
+      {
+        "-1": 6,
+        "0": 88,
+        "1": 4,
+        "2": 1
+      },
+      {
+        "-1": 7,
+        "0": 85,
+        "1": 7
+      },
+      {
+        "-1": 4,
+        "-2": 1,
+        "0": 88,
+        "1": 6
+      }
+    ]
+  },
+  "hostile_mu_three": {
+    "actual_conclusion": "hostile relaxed-mu control",
+    "canonical_cross_incidence": [
+      [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "canonical_cross_incidence_sha256": "e623df3fcbd7e57057897b118af1f724e1eec536f8a326e3deceffcfdb5f4e63",
+    "column_sums": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "count_rows": [
+      {
+        "common_opposite_neighbors_lower": 42,
+        "lambda_mu_pair_cap": 63,
+        "passes_weak_count": true,
+        "same_sign_edges_t": 0
+      },
+      {
+        "common_opposite_neighbors_lower": 49,
+        "lambda_mu_pair_cap": 61,
+        "passes_weak_count": true,
+        "same_sign_edges_t": 1
+      },
+      {
+        "common_opposite_neighbors_lower": 56,
+        "lambda_mu_pair_cap": 59,
+        "passes_weak_count": true,
+        "same_sign_edges_t": 2
+      },
+      {
+        "common_opposite_neighbors_lower": 63,
+        "lambda_mu_pair_cap": 57,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 3
+      },
+      {
+        "common_opposite_neighbors_lower": 70,
+        "lambda_mu_pair_cap": 55,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 4
+      },
+      {
+        "common_opposite_neighbors_lower": 77,
+        "lambda_mu_pair_cap": 53,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 5
+      },
+      {
+        "common_opposite_neighbors_lower": 84,
+        "lambda_mu_pair_cap": 51,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 6
+      },
+      {
+        "common_opposite_neighbors_lower": 91,
+        "lambda_mu_pair_cap": 49,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 7
+      },
+      {
+        "common_opposite_neighbors_lower": 98,
+        "lambda_mu_pair_cap": 47,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 8
+      },
+      {
+        "common_opposite_neighbors_lower": 105,
+        "lambda_mu_pair_cap": 45,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 9
+      },
+      {
+        "common_opposite_neighbors_lower": 112,
+        "lambda_mu_pair_cap": 43,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 10
+      }
+    ],
+    "mu": 3,
+    "passing_t": [
+      0,
+      1,
+      2
+    ],
+    "row_sums": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "same_side_pair_intersections": [
+      2
+    ]
+  },
+  "hostile_partial_control": {
+    "forced_singleton_triangle_edge_count": 42,
+    "outside_remaining_degree_distribution": {
+      "10": 42,
+      "12": 28,
+      "14": 15
+    },
+    "outside_support_degree_distribution": {
+      "0": 15,
+      "2": 70
+    },
+    "outside_total_degree_distribution": {
+      "0": 15,
+      "2": 28,
+      "4": 42
+    },
+    "outside_type_counts": {
+      "two_per_support_nonedge": 42,
+      "unique_support_edge_completion": 28,
+      "zero_support_neighbors": 15
+    },
+    "partial_edge_count": 210,
+    "partial_edge_list_sha256": "7b6eb50b1be0ec143020cf343128615707ceb352f660a7ec643e75208297a80f",
+    "signed_vector_eigenvalue": -4,
+    "signed_vector_norm_squared": 14,
+    "status": "PARTIAL_LOCAL_CONTROL_NOT_A_GRAPH",
+    "support_degrees": [
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "support_edge_count": 28,
+    "support_nonedge_count_across_signs": 21,
+    "support_pair_common_neighbor_values": {
+      "edge": [
+        1
+      ],
+      "nonedge": [
+        2
+      ]
+    },
+    "support_size": 14,
+    "unfilled_boundary": "outside vertices still need degrees 10, 12, or 14 and all outside-only lambda/mu/triangle constraints",
+    "vertex_count": 99
+  },
+  "integer_minus_four_vector": {
+    "coordinate_bound_abs_values": [
+      0,
+      1
+    ],
+    "eigenvalue_magnitude": 4,
+    "proof_inequalities": [
+      "2*positive_mass=sum(abs(k_i))<=sum(k_i^2)=14",
+      "at an entry of magnitude m, 4*m<=positive_mass",
+      "for eigenvalue magnitude q, the neighbor and nonneighbor sums are -q*a and (q-1)*a, so 14-a^2>=(2*q-1)*abs(a)"
+    ],
+    "raw_integer_distribution_count": 12,
+    "surviving_distribution_count": 1,
+    "survivors": [
+      {
+        "-1": 7,
+        "0": 85,
+        "1": 7
+      }
+    ]
+  },
+  "matrix_only_extreme_fibers": {
+    "definition": "u_i=sign(y_i)*x_i-r for abs(y_i)=2",
+    "maximum_same_sign_fiber_size": 3,
+    "opposite_extreme_frame_products_if_triple": [
+      -2,
+      -2,
+      -2
+    ],
+    "opposite_extreme_inner_products_if_triple": [
+      0,
+      0,
+      0
+    ],
+    "psd_gram_count_by_fiber_size": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 0
+    },
+    "same_sign_pair_alphabet": [
+      -2,
+      -1
+    ],
+    "size_three_frame_products": [
+      1,
+      1,
+      1
+    ],
+    "size_three_gram": [
+      [
+        2,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        2
+      ]
+    ],
+    "size_three_relation": "u1+u2+u3=0"
+  },
+  "mod3_residue_reduction": {
+    "cases": [
+      {
+        "accepted": false,
+        "integer_bound_sum_abs_le_norm_squared": 33,
+        "norm_k_squared": 25,
+        "representation": "z=-1*1+3*k",
+        "residue": -1,
+        "sum_k": 33
+      },
+      {
+        "accepted": true,
+        "integer_bound_sum_abs_le_norm_squared": 0,
+        "norm_k_squared": 14,
+        "representation": "z=0*1+3*k",
+        "residue": 0,
+        "sum_k": 0
+      },
+      {
+        "accepted": false,
+        "integer_bound_sum_abs_le_norm_squared": 33,
+        "norm_k_squared": 25,
+        "representation": "z=1*1+3*k",
+        "residue": 1,
+        "sum_k": -33
+      }
+    ],
+    "conclusion": "z=3k with integral k, sum(k)=0, norm(k)^2=14, A*k=-4*k"
+  },
+  "projector_and_incidence_transport": {
+    "consequence": "all 99 coordinates of z=N*y are congruent mod 3",
+    "identities": [
+      "M*y=21*y",
+      "Gamma*y=0",
+      "z=N*y",
+      "A*z=-4*z",
+      "sum(z)=0",
+      "norm(z)^2=126"
+    ],
+    "minus_four_projector": "(27I-9A+J)/63",
+    "projector_eigenvalues": {
+      "14_on_ones": "0",
+      "3": "0",
+      "minus_4": "1"
+    },
+    "root_vector": "y=X*S*r is in 21L*=M*Z^231",
+    "transport_identity": "N*M=(9I-3A)*N+J_(99x231)",
+    "transport_mod_3": "every column of N*M is the all-ones vector mod 3",
+    "triangle_projector": "E=M/21"
+  },
+  "root_count_patterns": {
+    "actual_incidence_pattern": {
+      "cube_sum": 0,
+      "minus_1": 21,
+      "minus_2": 0,
+      "plus_1": 21,
+      "plus_2": 0,
+      "zero": 189
+    },
+    "counts": {
+      "actual_incidence_filtered": 1,
+      "matrix_only_extreme_filtered": 16,
+      "moment_only": 46,
+      "wave28_tensor_filtered": 32
+    },
+    "matrix_only_patterns": [
+      {
+        "cube_sum": 0,
+        "minus_1": 21,
+        "minus_2": 0,
+        "plus_1": 21,
+        "plus_2": 0,
+        "zero": 189
+      },
+      {
+        "cube_sum": -6,
+        "minus_1": 18,
+        "minus_2": 1,
+        "plus_1": 20,
+        "plus_2": 0,
+        "zero": 192
+      },
+      {
+        "cube_sum": -12,
+        "minus_1": 15,
+        "minus_2": 2,
+        "plus_1": 19,
+        "plus_2": 0,
+        "zero": 195
+      },
+      {
+        "cube_sum": -18,
+        "minus_1": 12,
+        "minus_2": 3,
+        "plus_1": 18,
+        "plus_2": 0,
+        "zero": 198
+      },
+      {
+        "cube_sum": 6,
+        "minus_1": 20,
+        "minus_2": 0,
+        "plus_1": 18,
+        "plus_2": 1,
+        "zero": 192
+      },
+      {
+        "cube_sum": 0,
+        "minus_1": 17,
+        "minus_2": 1,
+        "plus_1": 17,
+        "plus_2": 1,
+        "zero": 195
+      },
+      {
+        "cube_sum": -6,
+        "minus_1": 14,
+        "minus_2": 2,
+        "plus_1": 16,
+        "plus_2": 1,
+        "zero": 198
+      },
+      {
+        "cube_sum": -12,
+        "minus_1": 11,
+        "minus_2": 3,
+        "plus_1": 15,
+        "plus_2": 1,
+        "zero": 201
+      },
+      {
+        "cube_sum": 12,
+        "minus_1": 19,
+        "minus_2": 0,
+        "plus_1": 15,
+        "plus_2": 2,
+        "zero": 195
+      },
+      {
+        "cube_sum": 6,
+        "minus_1": 16,
+        "minus_2": 1,
+        "plus_1": 14,
+        "plus_2": 2,
+        "zero": 198
+      },
+      {
+        "cube_sum": 0,
+        "minus_1": 13,
+        "minus_2": 2,
+        "plus_1": 13,
+        "plus_2": 2,
+        "zero": 201
+      },
+      {
+        "cube_sum": -6,
+        "minus_1": 10,
+        "minus_2": 3,
+        "plus_1": 12,
+        "plus_2": 2,
+        "zero": 204
+      },
+      {
+        "cube_sum": 18,
+        "minus_1": 18,
+        "minus_2": 0,
+        "plus_1": 12,
+        "plus_2": 3,
+        "zero": 198
+      },
+      {
+        "cube_sum": 12,
+        "minus_1": 15,
+        "minus_2": 1,
+        "plus_1": 11,
+        "plus_2": 3,
+        "zero": 201
+      },
+      {
+        "cube_sum": 6,
+        "minus_1": 12,
+        "minus_2": 2,
+        "plus_1": 10,
+        "plus_2": 3,
+        "zero": 204
+      },
+      {
+        "cube_sum": 0,
+        "minus_1": 9,
+        "minus_2": 3,
+        "plus_1": 9,
+        "plus_2": 3,
+        "zero": 207
+      }
+    ]
+  },
+  "root_reflection": {
+    "coordinate_identities": [
+      "H_r^2=I",
+      "H_r^T=H_r",
+      "H_r*X=X-y*r^T",
+      "H_r commutes with E",
+      "H_r*M*H_r=M"
+    ],
+    "coordinate_reflection": "H_r=I-y*y^T/21",
+    "frame_rows": "x_i maps to x_i-y_i*r",
+    "lattice_reflection": "rho_r(v)=v-(v,r)_S*r",
+    "status_wall": "these are changes of frame factorization, not coordinate permutations and not graph automorphisms",
+    "vertex_reflection": "I-z*z^T/63=I-k*k^T/7 on the minus-four space"
+  },
+  "schema_version": 1,
+  "schur_and_a4_constraints": {
+    "A4": {
+      "definition": "A4=M*W*M",
+      "identity": "y^T A4 y=441*H2"
+    },
+    "dimension_constants": {
+      "ambient_dimension": 44,
+      "minimum_trace_lift_norm_factor": "3/(43+2)=1/15",
+      "orthogonal_dimension": 43
+    },
+    "double_contraction": {
+      "corresponding_f": [
+        141,
+        140,
+        139,
+        138,
+        137,
+        136,
+        135,
+        134,
+        133,
+        132
+      ],
+      "f_definition": "number of edges among the 42 outside vertices completing support nonedges",
+      "g": "T(a,a,.)=S^(1/2)X^T p, where a=S^(1/2)r",
+      "harmonic_bound": "23*g2<=1800",
+      "incidence_formula": "g2=1134-8*f",
+      "norm_squared_symbol": "g2=p^T M p",
+      "p": "p=y coordinatewise squared",
+      "possible_g2": [
+        6,
+        14,
+        22,
+        30,
+        38,
+        46,
+        54,
+        62,
+        70,
+        78
+      ]
+    },
+    "first_contraction": {
+      "H": "T(a,.,.)",
+      "congruence": "H2=2 mod 4",
+      "coordinate_form": "H2=(S*r)^T Q (S*r)",
+      "harmonic_bound": "23*H2<=1800",
+      "norm_squared_symbol": "H2=y^T W y",
+      "possible_H2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22,
+        26,
+        30,
+        34,
+        38,
+        42,
+        46,
+        50,
+        54,
+        58,
+        62,
+        66,
+        70,
+        74,
+        78
+      ]
+    },
+    "global_harmonic_cubic": {
+      "norm_squared": 60,
+      "root_line_cubic": 0,
+      "tensor": "T=sum_i (S^(1/2)x_i)^(tensor 3)",
+      "trace_free": true
+    }
+  },
+  "scope": "necessary rooted-vector reduction under the full actual vertex-triangle incidence n3=708 endpoint package",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "root_exclusion": "NOT_OBTAINED",
+    "root_pattern_reduction": "DERIVED_VERIFICATION_PENDING",
+    "rooted_endpoint": "UNKNOWN"
+  },
+  "support_design": {
+    "actual_conclusion": "two independent seven-sets, cross incidence a symmetric 2-(7,4,2) design",
+    "canonical_cross_incidence": [
+      [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "canonical_cross_incidence_sha256": "e623df3fcbd7e57057897b118af1f724e1eec536f8a326e3deceffcfdb5f4e63",
+    "column_sums": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "count_rows": [
+      {
+        "common_opposite_neighbors_lower": 42,
+        "lambda_mu_pair_cap": 42,
+        "passes_weak_count": true,
+        "same_sign_edges_t": 0
+      },
+      {
+        "common_opposite_neighbors_lower": 49,
+        "lambda_mu_pair_cap": 41,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 1
+      },
+      {
+        "common_opposite_neighbors_lower": 56,
+        "lambda_mu_pair_cap": 40,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 2
+      },
+      {
+        "common_opposite_neighbors_lower": 63,
+        "lambda_mu_pair_cap": 39,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 3
+      },
+      {
+        "common_opposite_neighbors_lower": 70,
+        "lambda_mu_pair_cap": 38,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 4
+      },
+      {
+        "common_opposite_neighbors_lower": 77,
+        "lambda_mu_pair_cap": 37,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 5
+      },
+      {
+        "common_opposite_neighbors_lower": 84,
+        "lambda_mu_pair_cap": 36,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 6
+      },
+      {
+        "common_opposite_neighbors_lower": 91,
+        "lambda_mu_pair_cap": 35,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 7
+      },
+      {
+        "common_opposite_neighbors_lower": 98,
+        "lambda_mu_pair_cap": 34,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 8
+      },
+      {
+        "common_opposite_neighbors_lower": 105,
+        "lambda_mu_pair_cap": 33,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 9
+      },
+      {
+        "common_opposite_neighbors_lower": 112,
+        "lambda_mu_pair_cap": 32,
+        "passes_weak_count": false,
+        "same_sign_edges_t": 10
+      }
+    ],
+    "mu": 2,
+    "passing_t": [
+      0
+    ],
+    "row_sums": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "same_side_pair_intersections": [
+      2
+    ]
+  }
+}

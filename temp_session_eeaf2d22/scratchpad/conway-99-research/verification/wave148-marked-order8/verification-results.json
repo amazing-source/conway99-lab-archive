@@ -1,0 +1,121 @@
+{
+  "artifact": {
+    "canonical_bytes": 1685154,
+    "canonical_sha256": "3bdfdafa7e1675bf1fe160f44f1fea0e53792b5c2e87e0bfb529a15bd1cc2a8f",
+    "clean_room_raw_layout_exact_match": false,
+    "clean_room_semantic_normalized_exact_match": true,
+    "clean_room_semantic_normalized_sha256": "4b9a67d3b00db65b486f33172416be72ad740ebfbd1e8dd7180c5dd4e30d3e8f",
+    "discovery_semantic_normalized_sha256": "4b9a67d3b00db65b486f33172416be72ad740ebfbd1e8dd7180c5dd4e30d3e8f",
+    "gzip_bytes": 122626,
+    "gzip_sha256": "e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1",
+    "raw_layout_difference": "row enumeration and row_id assignment only"
+  },
+  "chronology": {
+    "discovery_code_imported_or_executed": false,
+    "discovery_manifest": {
+      "entries_pass": true,
+      "entry_count": 12,
+      "expected_manifest_sha256": "3b937619d251f99999b6c4ebfb6e8a13de869417bbe2b03047efa259aaf71344",
+      "failures": [],
+      "manifest_pass": true,
+      "manifest_sha256": "3b937619d251f99999b6c4ebfb6e8a13de869417bbe2b03047efa259aaf71344"
+    },
+    "preparation_manifest": {
+      "entries_pass": true,
+      "entry_count": 5,
+      "expected_manifest_sha256": "d28805adb6a6353430ab0630832a08b3ba74aa72fece7c6cedd8f2ffd6b9449d",
+      "failures": [],
+      "manifest_pass": true,
+      "manifest_sha256": "d28805adb6a6353430ab0630832a08b3ba74aa72fece7c6cedd8f2ffd6b9449d"
+    },
+    "preparation_preceded_discovery_handoff": true
+  },
+  "claim_label": "VERIFIED",
+  "complete_row_comparison": {
+    "all_4440_ordered_pair_rows_exact_match": true,
+    "all_944_vertex_rows_exact_match": true,
+    "discovery_sequence_checks": {
+      "ordered_pair_rows": {
+        "row_ids_sequential": true,
+        "semantic_keys_unique": true,
+        "source_then_rooted_key_order": true
+      },
+      "vertex_rows": {
+        "row_ids_sequential": true,
+        "semantic_keys_unique": true,
+        "source_then_rooted_key_order": true
+      }
+    },
+    "edge_pair_types": 1670,
+    "every_scalar_and_coefficient_exact_match": true,
+    "nonedge_pair_types": 2770,
+    "ordered_pair_rows": 4440,
+    "pair_lhs_coefficient_sum": 10130,
+    "pair_maximum_term_coefficient": 48,
+    "pair_nonzero_terms": 17782,
+    "row_ids_are_nonsemantic": true,
+    "semantic_row_key_sets_exact_match": true,
+    "vertex_lhs_coefficient_sum": 17490,
+    "vertex_maximum_term_coefficient": 24,
+    "vertex_nonzero_terms": 10872,
+    "vertex_rows": 944,
+    "zero_capacity_pair_rows": 893,
+    "zero_capacity_support_exact_match": true,
+    "zero_rhs_pair_rows": 893
+  },
+  "format": "wave148-independent-marked-order8-verification-v1",
+  "independent_controls": {
+    "all_pair_column_identities_pass": true,
+    "all_vertex_column_identities_pass": true,
+    "column_classes_checked": 916,
+    "micro_controls": {
+      "degree_empty7_to_one_edge8": {
+        "coefficient": 2,
+        "expected": 2,
+        "source_mask7": 0,
+        "target_mask8": 134217728
+      },
+      "edge_CN_one_edge7_to_triangle8": {
+        "coefficient": 6,
+        "expected": 6,
+        "source_mask7": 1,
+        "target_mask8": 234881024
+      },
+      "nonedge_CN_empty7_to_path8": {
+        "coefficient": 2,
+        "expected": 2,
+        "source_mask7": 0,
+        "target_mask8": 201326592
+      }
+    },
+    "rook": {
+      "all_rows_pass": true,
+      "order7_subset_total": 36,
+      "order8_subset_total": 9,
+      "pair_failures": [],
+      "realized_zero_pair_rows": 15,
+      "realized_zero_vertex_rows": 2,
+      "vertex_failures": []
+    },
+    "vertex_left_aggregates_checked": 208
+  },
+  "precommitted_expectations_match": true,
+  "scope": "complete marked vertex-degree and pointwise ordered-pair common-neighbor order-seven-to-eight row artifact",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "combined_Wave147_148_SDP": "NOT_RUN",
+    "external_novelty": "UNKNOWN",
+    "rational_dual_certificate": "NOT_OBTAINED",
+    "strict_n3_upper_bound": "UNKNOWN"
+  },
+  "verdict": {
+    "column_identities": "PASS",
+    "marked_vertex_rows": "PASS",
+    "micro_controls": "PASS",
+    "ordered_pair_rows": "PASS",
+    "overall": "PASS_WITH_SCOPE",
+    "rook_positive_control": "PASS",
+    "row_semantics": "PASS",
+    "zero_capacity_rows": "PASS"
+  }
+}

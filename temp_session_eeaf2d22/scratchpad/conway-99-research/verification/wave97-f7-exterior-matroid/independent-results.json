@@ -1,0 +1,1560 @@
+{
+  "claim_label": "VERIFIED",
+  "components": {
+    "exterior_rank_controls": {
+      "Cauchy_Binet_small_control": true,
+      "endpoint_code_parameters": "[4851,378]_7",
+      "general_rank_formula": "rank_F7(C2(S))=C(rank_F7(S),2)",
+      "passed": true,
+      "rank_controls": [
+        {
+          "compound_rank": 0,
+          "expected": 0,
+          "source_rank": 0
+        },
+        {
+          "compound_rank": 0,
+          "expected": 0,
+          "source_rank": 1
+        },
+        {
+          "compound_rank": 1,
+          "expected": 1,
+          "source_rank": 2
+        },
+        {
+          "compound_rank": 3,
+          "expected": 3,
+          "source_rank": 3
+        },
+        {
+          "compound_rank": 6,
+          "expected": 6,
+          "source_rank": 4
+        }
+      ],
+      "self_orthogonality": "E is symmetric and E^2=0 modulo 7, so its row code is self-orthogonal"
+    },
+    "factor_24010_hostile_control": {
+      "determinantal_divisors_match": true,
+      "hostile_rank_14": {
+        "factor_24010_count": 91,
+        "factor_3430_count": 7,
+        "live_formula_24010_power_98_fails_as_expected": true,
+        "terminal_7_power_4_slots": 91
+      },
+      "passed": true,
+      "raw_products_are_not_the_smith_chain": true,
+      "toy_actual_smith": [
+        7,
+        49,
+        49,
+        3430,
+        3430,
+        24010
+      ],
+      "toy_determinantal_divisors": [
+        1,
+        7,
+        343,
+        16807,
+        57648010,
+        197732674300,
+        4747561509943000
+      ],
+      "toy_raw_compound_diagonal": [
+        7,
+        49,
+        490,
+        343,
+        3430,
+        24010
+      ],
+      "toy_smith_prefix_products": [
+        1,
+        7,
+        343,
+        16807,
+        57648010,
+        197732674300,
+        4747561509943000
+      ],
+      "toy_source_smith": [
+        1,
+        7,
+        49,
+        490
+      ]
+    },
+    "generalized_weights": {
+      "bound": "j+5<=d_j(R^perp)<=j+28",
+      "code": "R^perp=[99,71]_7",
+      "first_weight_refinement": "6<=d_1(R^perp)<=18",
+      "forced_short_word": "C is contained in R^perp and contains a forced word of weight 14, 16, or 18",
+      "girth_lower_bound": 6,
+      "matroid_rank": 28,
+      "passed": true,
+      "proof": "A support of nullity at least j contains a circuit. Girth six makes that circuit rank at least five, so support size rank+nullity is at least j+5.",
+      "rows": [
+        {
+          "j": 1,
+          "lower": 6,
+          "singleton_upper": 29
+        },
+        {
+          "j": 2,
+          "lower": 7,
+          "singleton_upper": 30
+        },
+        {
+          "j": 3,
+          "lower": 8,
+          "singleton_upper": 31
+        },
+        {
+          "j": 4,
+          "lower": 9,
+          "singleton_upper": 32
+        },
+        {
+          "j": 5,
+          "lower": 10,
+          "singleton_upper": 33
+        },
+        {
+          "j": 6,
+          "lower": 11,
+          "singleton_upper": 34
+        },
+        {
+          "j": 7,
+          "lower": 12,
+          "singleton_upper": 35
+        },
+        {
+          "j": 8,
+          "lower": 13,
+          "singleton_upper": 36
+        },
+        {
+          "j": 9,
+          "lower": 14,
+          "singleton_upper": 37
+        },
+        {
+          "j": 10,
+          "lower": 15,
+          "singleton_upper": 38
+        },
+        {
+          "j": 11,
+          "lower": 16,
+          "singleton_upper": 39
+        },
+        {
+          "j": 12,
+          "lower": 17,
+          "singleton_upper": 40
+        },
+        {
+          "j": 13,
+          "lower": 18,
+          "singleton_upper": 41
+        },
+        {
+          "j": 14,
+          "lower": 19,
+          "singleton_upper": 42
+        },
+        {
+          "j": 15,
+          "lower": 20,
+          "singleton_upper": 43
+        },
+        {
+          "j": 16,
+          "lower": 21,
+          "singleton_upper": 44
+        },
+        {
+          "j": 17,
+          "lower": 22,
+          "singleton_upper": 45
+        },
+        {
+          "j": 18,
+          "lower": 23,
+          "singleton_upper": 46
+        },
+        {
+          "j": 19,
+          "lower": 24,
+          "singleton_upper": 47
+        },
+        {
+          "j": 20,
+          "lower": 25,
+          "singleton_upper": 48
+        },
+        {
+          "j": 21,
+          "lower": 26,
+          "singleton_upper": 49
+        },
+        {
+          "j": 22,
+          "lower": 27,
+          "singleton_upper": 50
+        },
+        {
+          "j": 23,
+          "lower": 28,
+          "singleton_upper": 51
+        },
+        {
+          "j": 24,
+          "lower": 29,
+          "singleton_upper": 52
+        },
+        {
+          "j": 25,
+          "lower": 30,
+          "singleton_upper": 53
+        },
+        {
+          "j": 26,
+          "lower": 31,
+          "singleton_upper": 54
+        },
+        {
+          "j": 27,
+          "lower": 32,
+          "singleton_upper": 55
+        },
+        {
+          "j": 28,
+          "lower": 33,
+          "singleton_upper": 56
+        },
+        {
+          "j": 29,
+          "lower": 34,
+          "singleton_upper": 57
+        },
+        {
+          "j": 30,
+          "lower": 35,
+          "singleton_upper": 58
+        },
+        {
+          "j": 31,
+          "lower": 36,
+          "singleton_upper": 59
+        },
+        {
+          "j": 32,
+          "lower": 37,
+          "singleton_upper": 60
+        },
+        {
+          "j": 33,
+          "lower": 38,
+          "singleton_upper": 61
+        },
+        {
+          "j": 34,
+          "lower": 39,
+          "singleton_upper": 62
+        },
+        {
+          "j": 35,
+          "lower": 40,
+          "singleton_upper": 63
+        },
+        {
+          "j": 36,
+          "lower": 41,
+          "singleton_upper": 64
+        },
+        {
+          "j": 37,
+          "lower": 42,
+          "singleton_upper": 65
+        },
+        {
+          "j": 38,
+          "lower": 43,
+          "singleton_upper": 66
+        },
+        {
+          "j": 39,
+          "lower": 44,
+          "singleton_upper": 67
+        },
+        {
+          "j": 40,
+          "lower": 45,
+          "singleton_upper": 68
+        },
+        {
+          "j": 41,
+          "lower": 46,
+          "singleton_upper": 69
+        },
+        {
+          "j": 42,
+          "lower": 47,
+          "singleton_upper": 70
+        },
+        {
+          "j": 43,
+          "lower": 48,
+          "singleton_upper": 71
+        },
+        {
+          "j": 44,
+          "lower": 49,
+          "singleton_upper": 72
+        },
+        {
+          "j": 45,
+          "lower": 50,
+          "singleton_upper": 73
+        },
+        {
+          "j": 46,
+          "lower": 51,
+          "singleton_upper": 74
+        },
+        {
+          "j": 47,
+          "lower": 52,
+          "singleton_upper": 75
+        },
+        {
+          "j": 48,
+          "lower": 53,
+          "singleton_upper": 76
+        },
+        {
+          "j": 49,
+          "lower": 54,
+          "singleton_upper": 77
+        },
+        {
+          "j": 50,
+          "lower": 55,
+          "singleton_upper": 78
+        },
+        {
+          "j": 51,
+          "lower": 56,
+          "singleton_upper": 79
+        },
+        {
+          "j": 52,
+          "lower": 57,
+          "singleton_upper": 80
+        },
+        {
+          "j": 53,
+          "lower": 58,
+          "singleton_upper": 81
+        },
+        {
+          "j": 54,
+          "lower": 59,
+          "singleton_upper": 82
+        },
+        {
+          "j": 55,
+          "lower": 60,
+          "singleton_upper": 83
+        },
+        {
+          "j": 56,
+          "lower": 61,
+          "singleton_upper": 84
+        },
+        {
+          "j": 57,
+          "lower": 62,
+          "singleton_upper": 85
+        },
+        {
+          "j": 58,
+          "lower": 63,
+          "singleton_upper": 86
+        },
+        {
+          "j": 59,
+          "lower": 64,
+          "singleton_upper": 87
+        },
+        {
+          "j": 60,
+          "lower": 65,
+          "singleton_upper": 88
+        },
+        {
+          "j": 61,
+          "lower": 66,
+          "singleton_upper": 89
+        },
+        {
+          "j": 62,
+          "lower": 67,
+          "singleton_upper": 90
+        },
+        {
+          "j": 63,
+          "lower": 68,
+          "singleton_upper": 91
+        },
+        {
+          "j": 64,
+          "lower": 69,
+          "singleton_upper": 92
+        },
+        {
+          "j": 65,
+          "lower": 70,
+          "singleton_upper": 93
+        },
+        {
+          "j": 66,
+          "lower": 71,
+          "singleton_upper": 94
+        },
+        {
+          "j": 67,
+          "lower": 72,
+          "singleton_upper": 95
+        },
+        {
+          "j": 68,
+          "lower": 73,
+          "singleton_upper": 96
+        },
+        {
+          "j": 69,
+          "lower": 74,
+          "singleton_upper": 97
+        },
+        {
+          "j": 70,
+          "lower": 75,
+          "singleton_upper": 98
+        },
+        {
+          "j": 71,
+          "lower": 76,
+          "singleton_upper": 99
+        }
+      ]
+    },
+    "input_integrity": {
+      "discovery_files": 11,
+      "discovery_manifest_entries": 10,
+      "discovery_manifest_sha256": "dd7869bd8f9041014087cac1e1840763794a4e8d52f2c701262d7ec009515bec",
+      "failures": [],
+      "frozen_git_commit": "cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee",
+      "frozen_imports": {
+        "AGENTS.md": {
+          "expected_sha256": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+          "observed_sha256": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+          "passed": true
+        },
+        "attempts/wave46-f7-code/package-manifest.sha256": {
+          "expected_sha256": "756622d5f40457d188c818a0233ee002b64039548bd51a725ec606b821c60272",
+          "observed_sha256": "756622d5f40457d188c818a0233ee002b64039548bd51a725ec606b821c60272",
+          "passed": true
+        },
+        "attempts/wave51-seidel-smith/package-manifest.sha256": {
+          "expected_sha256": "dfb39e94b6837e21959bc2b70a9e296baacc94b4c08cb0b78e04264686685965",
+          "observed_sha256": "dfb39e94b6837e21959bc2b70a9e296baacc94b4c08cb0b78e04264686685965",
+          "passed": true
+        },
+        "attempts/wave80-f7-overlattice-code/package-manifest.sha256": {
+          "expected_sha256": "51d3e709308851ba9c9c63a8897dec4c761ce11e5126633e0cdf67f6e470cba7",
+          "observed_sha256": "51d3e709308851ba9c9c63a8897dec4c761ce11e5126633e0cdf67f6e470cba7",
+          "passed": true
+        },
+        "verification/wave46-f7-code/package-manifest.sha256": {
+          "expected_sha256": "3624ea9eca399889c048b3f333ae8df12fbac60176fd7bca0924fc06a18fdff0",
+          "observed_sha256": "3624ea9eca399889c048b3f333ae8df12fbac60176fd7bca0924fc06a18fdff0",
+          "passed": true
+        },
+        "verification/wave51-seidel-smith/package-manifest.sha256": {
+          "expected_sha256": "bb191148dac5558d9154ea98dbb6f45da146e0602940297131ca7de211d3274c",
+          "observed_sha256": "bb191148dac5558d9154ea98dbb6f45da146e0602940297131ca7de211d3274c",
+          "passed": true
+        },
+        "verification/wave80-f7-overlattice-code/package-manifest.sha256": {
+          "expected_sha256": "25129c86f97c8f9513eff04ada641c458b924f8edd583e6e6abc76d114c64077",
+          "observed_sha256": "25129c86f97c8f9513eff04ada641c458b924f8edd583e6e6abc76d114c64077",
+          "passed": true
+        }
+      },
+      "frozen_utc": "2026-07-28T02:53:32Z",
+      "passed": true
+    },
+    "orthogonal_orbits": {
+      "ambient": "O^-(42,7)",
+      "complement": "O^+(26,7)",
+      "embedding_count": 1857351514670617988235131528172975689550625837169786853495540280691886961751193298225445450156537793063912216562371727971944656805251588808106899305896835144438039004849211656068525082346025670545990485945363625985127642832752996576755743364028301043824334430936282957903013032556552256948781195928495852410557277665354440052324723275052376691191072000,
+      "embedding_count_decimal_digits": 352,
+      "hostile_sign_controls": {
+        "minus_complement_ratio_differs": true,
+        "minus_complement_ratio_integral": true,
+        "plus_ambient_ratio_differs": true,
+        "plus_ambient_ratio_integral": true,
+        "warning": "Order divisibility alone does not certify the orthogonal sign: both hostile ratios are also integers. The imported Witt indices and discriminant types are essential."
+      },
+      "passed": true,
+      "point_orbits": {
+        "isotropic": 791259428114,
+        "nonsquare_anisotropic": 2373781166743,
+        "square_anisotropic": 2373781166743,
+        "total": 5538821761600
+      },
+      "reason": "Witt extension sends any isometry between two nondegenerate minus-type 16-subspaces to an ambient isometry; the setwise stabilizer is O^-(16,7) times O^+(26,7).",
+      "short_classes": {
+        "norm14_self_dot_0": "zero class or nonzero isotropic orbit",
+        "norm16_and_norm18_same_projective_orbit": true,
+        "norm16_norm18_ratio": 4,
+        "norm16_self_dot_4": "square-anisotropic orbit",
+        "norm18_self_dot_1": "square-anisotropic orbit",
+        "ratio_is_square_mod_7": true
+      },
+      "single_orbit": true,
+      "small_dimension_bruteforce_control": {
+        "isotropic": 50,
+        "nonsquare_anisotropic": 175,
+        "square_anisotropic": 175,
+        "total": 400
+      },
+      "small_dimension_formula_control": {
+        "isotropic": 50,
+        "nonsquare_anisotropic": 175,
+        "square_anisotropic": 175,
+        "total": 400
+      },
+      "subspace": "O^-(16,7)"
+    },
+    "projectivity": {
+      "column_independence_import": "every at-most-five columns is independent",
+      "compound_columns_nonzero": true,
+      "compound_columns_pairwise_nonproportional": true,
+      "dual_distance_compound_lower_bound": 3,
+      "dual_distance_import": "d(R^perp)>=6",
+      "passed": true,
+      "reason": "A nonzero decomposable wedge determines its two-plane. Proportional wedges from distinct column pairs would put their union of three or four source columns in one two-plane, contradicting five-column independence.",
+      "small_positive_controls": {
+        "outside_plane_wedges_not_proportional": true,
+        "same_plane_wedges_proportional": true,
+        "three_same_plane_vectors_dependent": true
+      }
+    },
+    "row_geometry": {
+      "adjacent_intersection_classes": [
+        1,
+        12,
+        12,
+        72
+      ],
+      "column_counts": {
+        "diagonal_nonzero": 1,
+        "disjoint_nonzero": 1752,
+        "disjoint_zero": 2904,
+        "overlap_nonzero": 194
+      },
+      "distinguished_projective_lines": 4851,
+      "distinguished_row_weight": 1947,
+      "integral_row_square_norm": 7203,
+      "nonadjacent_intersection_classes": [
+        2,
+        12,
+        12,
+        71
+      ],
+      "passed": true,
+      "ratio_class_sizes_adjacent": [
+        73,
+        24
+      ],
+      "ratio_class_sizes_nonadjacent": [
+        73,
+        24
+      ],
+      "scalar_closed_weight_1947_words": 29106
+    },
+    "schur_hilbert": {
+      "C_schur_square": {
+        "dimension": 99,
+        "identity": "C*C=F7^99",
+        "proof": "R*R=1_perp is contained in C*C. Nondegeneracy of C/R gives c,d with c dot d nonzero, so sum(c*d) is nonzero."
+      },
+      "R_schur_cube": {
+        "coordinate_extraction": "for i!=j, s_j*(e_i-e_j)=S[j,i]e_i and S[j,i] is nonzero",
+        "dimension": 99,
+        "identity": "R*R*R=F7^99"
+      },
+      "R_schur_square": {
+        "dimension": 98,
+        "identity": "R*R=1_perp",
+        "proof": "R is self-orthogonal because S is symmetric and S^2=0; therefore R*R is in 1_perp. The 99 row squares are 1-e_i and span row(J-I)=1_perp because 99=1 mod 7."
+      },
+      "field": 7,
+      "first_differences": [
+        1,
+        27,
+        70,
+        1
+      ],
+      "hilbert_function_degrees_0_to_3": [
+        1,
+        28,
+        98,
+        99
+      ],
+      "order": 99,
+      "order_mod_field": 1,
+      "passed": true,
+      "quadratic_images": {
+        "count": 99,
+        "degree_two_Cayley_Bacharach": true,
+        "every_98_independent": true,
+        "relation_space_dimension": 1,
+        "span_dimension": 98,
+        "unique_relation_coefficients": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "rank_J_minus_I": 98,
+      "rank_R": 28,
+      "symmetric_cube_domain": 4060,
+      "symmetric_cube_kernel": 3961,
+      "symmetric_square_domain": 406,
+      "symmetric_square_kernel": 308
+    },
+    "spectrum": {
+      "SNF_C2_I_plus_J": "diag(1^4753,100^98)",
+      "compound_spectrum": [
+        {
+          "eigenvalue": 490,
+          "multiplicity": 44
+        },
+        {
+          "eigenvalue": -490,
+          "multiplicity": 54
+        },
+        {
+          "eigenvalue": 49,
+          "multiplicity": 2377
+        },
+        {
+          "eigenvalue": -49,
+          "multiplicity": 2376
+        }
+      ],
+      "constant_diagonal_trace": -4851,
+      "determinant_valuations": {
+        "2": 98,
+        "5": 98,
+        "7": 9702
+      },
+      "passed": true,
+      "source_spectrum": [
+        [
+          -70,
+          1
+        ],
+        [
+          7,
+          54
+        ],
+        [
+          -7,
+          44
+        ]
+      ],
+      "square_identity": "C2(S)^2=2401*C2(I+J)",
+      "trace": -4851
+    }
+  },
+  "conditional_scope": "hypothetical srg(99,14,1,2)",
+  "discovery_comparison": {
+    "checks": {
+      "embedding_count": true,
+      "endpoint_smith": true,
+      "fail_closed": true,
+      "generalized_first": true,
+      "point_orbits": true,
+      "rank_rows": true,
+      "row_weight": true,
+      "schur_hilbert": true,
+      "spectrum": true
+    },
+    "mathematical_mismatches": [],
+    "passed": true,
+    "provenance_correction": "The discovery boundary lists the quadratic circuit among new exact reformulations. It is already an immediate consequence of verified Wave51's rank-98 pure-square span and unique all-one relation. R*R=1_perp is likewise prior-implied; only the code-product packaging is new."
+  },
+  "exterior_square": {
+    "all_rank_rows": [
+      {
+        "determinant_valuations": {
+          "2": 98,
+          "5": 98,
+          "7": 9702
+        },
+        "factor_24010_audit": {
+          "raw_pair_products_equal_24010": 27,
+          "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+          "smith_invariant_factors_equal_24010": 98,
+          "terminal_2_adic_slots": 98,
+          "terminal_5_adic_slots": 98,
+          "terminal_7_power_4_slots": 378
+        },
+        "middle_7_primary_multiplicity": 43,
+        "order": 4851,
+        "passed": true,
+        "rank_F7_C2S": 378,
+        "rank_F7_S": 28,
+        "raw_pair_product_counts": {
+          "1": 378,
+          "2401": 351,
+          "24010": 27,
+          "343": 1161,
+          "3430": 43,
+          "49": 1659,
+          "490": 28,
+          "7": 1204
+        },
+        "seven_adic_pair_sum_counts": {
+          "0": 378,
+          "1": 1204,
+          "2": 1687,
+          "3": 1204,
+          "4": 378
+        },
+        "smith_normal_form": [
+          {
+            "factor": 1,
+            "multiplicity": 378
+          },
+          {
+            "factor": 7,
+            "multiplicity": 1204
+          },
+          {
+            "factor": 49,
+            "multiplicity": 1687
+          },
+          {
+            "factor": 343,
+            "multiplicity": 1204
+          },
+          {
+            "factor": 2401,
+            "multiplicity": 280
+          },
+          {
+            "factor": 24010,
+            "multiplicity": 98
+          }
+        ]
+      },
+      {
+        "determinant_valuations": {
+          "2": 98,
+          "5": 98,
+          "7": 9702
+        },
+        "factor_24010_audit": {
+          "raw_pair_products_equal_24010": 29,
+          "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+          "smith_invariant_factors_equal_24010": 98,
+          "terminal_2_adic_slots": 98,
+          "terminal_5_adic_slots": 98,
+          "terminal_7_power_4_slots": 435
+        },
+        "middle_7_primary_multiplicity": 39,
+        "order": 4851,
+        "passed": true,
+        "rank_F7_C2S": 435,
+        "rank_F7_S": 30,
+        "raw_pair_product_counts": {
+          "1": 435,
+          "2401": 406,
+          "24010": 29,
+          "343": 1131,
+          "3430": 39,
+          "49": 1611,
+          "490": 30,
+          "7": 1170
+        },
+        "seven_adic_pair_sum_counts": {
+          "0": 435,
+          "1": 1170,
+          "2": 1641,
+          "3": 1170,
+          "4": 435
+        },
+        "smith_normal_form": [
+          {
+            "factor": 1,
+            "multiplicity": 435
+          },
+          {
+            "factor": 7,
+            "multiplicity": 1170
+          },
+          {
+            "factor": 49,
+            "multiplicity": 1641
+          },
+          {
+            "factor": 343,
+            "multiplicity": 1170
+          },
+          {
+            "factor": 2401,
+            "multiplicity": 337
+          },
+          {
+            "factor": 24010,
+            "multiplicity": 98
+          }
+        ]
+      },
+      {
+        "determinant_valuations": {
+          "2": 98,
+          "5": 98,
+          "7": 9702
+        },
+        "factor_24010_audit": {
+          "raw_pair_products_equal_24010": 31,
+          "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+          "smith_invariant_factors_equal_24010": 98,
+          "terminal_2_adic_slots": 98,
+          "terminal_5_adic_slots": 98,
+          "terminal_7_power_4_slots": 496
+        },
+        "middle_7_primary_multiplicity": 35,
+        "order": 4851,
+        "passed": true,
+        "rank_F7_C2S": 496,
+        "rank_F7_S": 32,
+        "raw_pair_product_counts": {
+          "1": 496,
+          "2401": 465,
+          "24010": 31,
+          "343": 1085,
+          "3430": 35,
+          "49": 1587,
+          "490": 32,
+          "7": 1120
+        },
+        "seven_adic_pair_sum_counts": {
+          "0": 496,
+          "1": 1120,
+          "2": 1619,
+          "3": 1120,
+          "4": 496
+        },
+        "smith_normal_form": [
+          {
+            "factor": 1,
+            "multiplicity": 496
+          },
+          {
+            "factor": 7,
+            "multiplicity": 1120
+          },
+          {
+            "factor": 49,
+            "multiplicity": 1619
+          },
+          {
+            "factor": 343,
+            "multiplicity": 1120
+          },
+          {
+            "factor": 2401,
+            "multiplicity": 398
+          },
+          {
+            "factor": 24010,
+            "multiplicity": 98
+          }
+        ]
+      },
+      {
+        "determinant_valuations": {
+          "2": 98,
+          "5": 98,
+          "7": 9702
+        },
+        "factor_24010_audit": {
+          "raw_pair_products_equal_24010": 33,
+          "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+          "smith_invariant_factors_equal_24010": 98,
+          "terminal_2_adic_slots": 98,
+          "terminal_5_adic_slots": 98,
+          "terminal_7_power_4_slots": 561
+        },
+        "middle_7_primary_multiplicity": 31,
+        "order": 4851,
+        "passed": true,
+        "rank_F7_C2S": 561,
+        "rank_F7_S": 34,
+        "raw_pair_product_counts": {
+          "1": 561,
+          "2401": 528,
+          "24010": 33,
+          "343": 1023,
+          "3430": 31,
+          "49": 1587,
+          "490": 34,
+          "7": 1054
+        },
+        "seven_adic_pair_sum_counts": {
+          "0": 561,
+          "1": 1054,
+          "2": 1621,
+          "3": 1054,
+          "4": 561
+        },
+        "smith_normal_form": [
+          {
+            "factor": 1,
+            "multiplicity": 561
+          },
+          {
+            "factor": 7,
+            "multiplicity": 1054
+          },
+          {
+            "factor": 49,
+            "multiplicity": 1621
+          },
+          {
+            "factor": 343,
+            "multiplicity": 1054
+          },
+          {
+            "factor": 2401,
+            "multiplicity": 463
+          },
+          {
+            "factor": 24010,
+            "multiplicity": 98
+          }
+        ]
+      },
+      {
+        "determinant_valuations": {
+          "2": 98,
+          "5": 98,
+          "7": 9702
+        },
+        "factor_24010_audit": {
+          "raw_pair_products_equal_24010": 35,
+          "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+          "smith_invariant_factors_equal_24010": 98,
+          "terminal_2_adic_slots": 98,
+          "terminal_5_adic_slots": 98,
+          "terminal_7_power_4_slots": 630
+        },
+        "middle_7_primary_multiplicity": 27,
+        "order": 4851,
+        "passed": true,
+        "rank_F7_C2S": 630,
+        "rank_F7_S": 36,
+        "raw_pair_product_counts": {
+          "1": 630,
+          "2401": 595,
+          "24010": 35,
+          "343": 945,
+          "3430": 27,
+          "49": 1611,
+          "490": 36,
+          "7": 972
+        },
+        "seven_adic_pair_sum_counts": {
+          "0": 630,
+          "1": 972,
+          "2": 1647,
+          "3": 972,
+          "4": 630
+        },
+        "smith_normal_form": [
+          {
+            "factor": 1,
+            "multiplicity": 630
+          },
+          {
+            "factor": 7,
+            "multiplicity": 972
+          },
+          {
+            "factor": 49,
+            "multiplicity": 1647
+          },
+          {
+            "factor": 343,
+            "multiplicity": 972
+          },
+          {
+            "factor": 2401,
+            "multiplicity": 532
+          },
+          {
+            "factor": 24010,
+            "multiplicity": 98
+          }
+        ]
+      },
+      {
+        "determinant_valuations": {
+          "2": 98,
+          "5": 98,
+          "7": 9702
+        },
+        "factor_24010_audit": {
+          "raw_pair_products_equal_24010": 37,
+          "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+          "smith_invariant_factors_equal_24010": 98,
+          "terminal_2_adic_slots": 98,
+          "terminal_5_adic_slots": 98,
+          "terminal_7_power_4_slots": 703
+        },
+        "middle_7_primary_multiplicity": 23,
+        "order": 4851,
+        "passed": true,
+        "rank_F7_C2S": 703,
+        "rank_F7_S": 38,
+        "raw_pair_product_counts": {
+          "1": 703,
+          "2401": 666,
+          "24010": 37,
+          "343": 851,
+          "3430": 23,
+          "49": 1659,
+          "490": 38,
+          "7": 874
+        },
+        "seven_adic_pair_sum_counts": {
+          "0": 703,
+          "1": 874,
+          "2": 1697,
+          "3": 874,
+          "4": 703
+        },
+        "smith_normal_form": [
+          {
+            "factor": 1,
+            "multiplicity": 703
+          },
+          {
+            "factor": 7,
+            "multiplicity": 874
+          },
+          {
+            "factor": 49,
+            "multiplicity": 1697
+          },
+          {
+            "factor": 343,
+            "multiplicity": 874
+          },
+          {
+            "factor": 2401,
+            "multiplicity": 605
+          },
+          {
+            "factor": 24010,
+            "multiplicity": 98
+          }
+        ]
+      },
+      {
+        "determinant_valuations": {
+          "2": 98,
+          "5": 98,
+          "7": 9702
+        },
+        "factor_24010_audit": {
+          "raw_pair_products_equal_24010": 39,
+          "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+          "smith_invariant_factors_equal_24010": 98,
+          "terminal_2_adic_slots": 98,
+          "terminal_5_adic_slots": 98,
+          "terminal_7_power_4_slots": 780
+        },
+        "middle_7_primary_multiplicity": 19,
+        "order": 4851,
+        "passed": true,
+        "rank_F7_C2S": 780,
+        "rank_F7_S": 40,
+        "raw_pair_product_counts": {
+          "1": 780,
+          "2401": 741,
+          "24010": 39,
+          "343": 741,
+          "3430": 19,
+          "49": 1731,
+          "490": 40,
+          "7": 760
+        },
+        "seven_adic_pair_sum_counts": {
+          "0": 780,
+          "1": 760,
+          "2": 1771,
+          "3": 760,
+          "4": 780
+        },
+        "smith_normal_form": [
+          {
+            "factor": 1,
+            "multiplicity": 780
+          },
+          {
+            "factor": 7,
+            "multiplicity": 760
+          },
+          {
+            "factor": 49,
+            "multiplicity": 1771
+          },
+          {
+            "factor": 343,
+            "multiplicity": 760
+          },
+          {
+            "factor": 2401,
+            "multiplicity": 682
+          },
+          {
+            "factor": 24010,
+            "multiplicity": 98
+          }
+        ]
+      },
+      {
+        "determinant_valuations": {
+          "2": 98,
+          "5": 98,
+          "7": 9702
+        },
+        "factor_24010_audit": {
+          "raw_pair_products_equal_24010": 41,
+          "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+          "smith_invariant_factors_equal_24010": 98,
+          "terminal_2_adic_slots": 98,
+          "terminal_5_adic_slots": 98,
+          "terminal_7_power_4_slots": 861
+        },
+        "middle_7_primary_multiplicity": 15,
+        "order": 4851,
+        "passed": true,
+        "rank_F7_C2S": 861,
+        "rank_F7_S": 42,
+        "raw_pair_product_counts": {
+          "1": 861,
+          "2401": 820,
+          "24010": 41,
+          "343": 615,
+          "3430": 15,
+          "49": 1827,
+          "490": 42,
+          "7": 630
+        },
+        "seven_adic_pair_sum_counts": {
+          "0": 861,
+          "1": 630,
+          "2": 1869,
+          "3": 630,
+          "4": 861
+        },
+        "smith_normal_form": [
+          {
+            "factor": 1,
+            "multiplicity": 861
+          },
+          {
+            "factor": 7,
+            "multiplicity": 630
+          },
+          {
+            "factor": 49,
+            "multiplicity": 1869
+          },
+          {
+            "factor": 343,
+            "multiplicity": 630
+          },
+          {
+            "factor": 2401,
+            "multiplicity": 763
+          },
+          {
+            "factor": 24010,
+            "multiplicity": 98
+          }
+        ]
+      }
+    ],
+    "endpoint_rank_28": {
+      "determinant_valuations": {
+        "2": 98,
+        "5": 98,
+        "7": 9702
+      },
+      "factor_24010_audit": {
+        "raw_pair_products_equal_24010": 27,
+        "reason": "Smith factors align independently sorted p-adic exponent lists. All 98 v2=v5=1 slots align with the last 98 v7=4 slots because C(r,2)>=98; they are not restricted to the raw products 49*490.",
+        "smith_invariant_factors_equal_24010": 98,
+        "terminal_2_adic_slots": 98,
+        "terminal_5_adic_slots": 98,
+        "terminal_7_power_4_slots": 378
+      },
+      "middle_7_primary_multiplicity": 43,
+      "order": 4851,
+      "passed": true,
+      "rank_F7_C2S": 378,
+      "rank_F7_S": 28,
+      "raw_pair_product_counts": {
+        "1": 378,
+        "2401": 351,
+        "24010": 27,
+        "343": 1161,
+        "3430": 43,
+        "49": 1659,
+        "490": 28,
+        "7": 1204
+      },
+      "seven_adic_pair_sum_counts": {
+        "0": 378,
+        "1": 1204,
+        "2": 1687,
+        "3": 1204,
+        "4": 378
+      },
+      "smith_normal_form": [
+        {
+          "factor": 1,
+          "multiplicity": 378
+        },
+        {
+          "factor": 7,
+          "multiplicity": 1204
+        },
+        {
+          "factor": 49,
+          "multiplicity": 1687
+        },
+        {
+          "factor": 343,
+          "multiplicity": 1204
+        },
+        {
+          "factor": 2401,
+          "multiplicity": 280
+        },
+        {
+          "factor": 24010,
+          "multiplicity": 98
+        }
+      ]
+    },
+    "mod_7_code": {
+      "distinguished_row_weight": 1947,
+      "dual_distance_lower_bound": 3,
+      "parameters": "[4851,378]_7",
+      "projective": true,
+      "self_orthogonal": true
+    },
+    "projectivity": {
+      "column_independence_import": "every at-most-five columns is independent",
+      "compound_columns_nonzero": true,
+      "compound_columns_pairwise_nonproportional": true,
+      "dual_distance_compound_lower_bound": 3,
+      "dual_distance_import": "d(R^perp)>=6",
+      "passed": true,
+      "reason": "A nonzero decomposable wedge determines its two-plane. Proportional wedges from distinct column pairs would put their union of three or four source columns in one two-plane, contradicting five-column independence.",
+      "small_positive_controls": {
+        "outside_plane_wedges_not_proportional": true,
+        "same_plane_wedges_proportional": true,
+        "three_same_plane_vectors_dependent": true
+      }
+    },
+    "row_geometry": {
+      "adjacent_intersection_classes": [
+        1,
+        12,
+        12,
+        72
+      ],
+      "column_counts": {
+        "diagonal_nonzero": 1,
+        "disjoint_nonzero": 1752,
+        "disjoint_zero": 2904,
+        "overlap_nonzero": 194
+      },
+      "distinguished_projective_lines": 4851,
+      "distinguished_row_weight": 1947,
+      "integral_row_square_norm": 7203,
+      "nonadjacent_intersection_classes": [
+        2,
+        12,
+        12,
+        71
+      ],
+      "passed": true,
+      "ratio_class_sizes_adjacent": [
+        73,
+        24
+      ],
+      "ratio_class_sizes_nonadjacent": [
+        73,
+        24
+      ],
+      "scalar_closed_weight_1947_words": 29106
+    },
+    "spectrum": {
+      "SNF_C2_I_plus_J": "diag(1^4753,100^98)",
+      "compound_spectrum": [
+        {
+          "eigenvalue": 490,
+          "multiplicity": 44
+        },
+        {
+          "eigenvalue": -490,
+          "multiplicity": 54
+        },
+        {
+          "eigenvalue": 49,
+          "multiplicity": 2377
+        },
+        {
+          "eigenvalue": -49,
+          "multiplicity": 2376
+        }
+      ],
+      "constant_diagonal_trace": -4851,
+      "determinant_valuations": {
+        "2": 98,
+        "5": 98,
+        "7": 9702
+      },
+      "passed": true,
+      "source_spectrum": [
+        [
+          -70,
+          1
+        ],
+        [
+          7,
+          54
+        ],
+        [
+          -7,
+          44
+        ]
+      ],
+      "square_identity": "C2(S)^2=2401*C2(I+J)",
+      "trace": -4851
+    }
+  },
+  "format": "wave97-f7-exterior-matroid-independent-v1",
+  "limitations": [
+    "All results are conditional necessary consequences.",
+    "No graph or 4851-by-4851 compound matrix is constructed.",
+    "The generalized-weight bounds retain slack.",
+    "Orthogonal orbits discard coordinate weights."
+  ],
+  "orthogonal_orbits": {
+    "ambient": "O^-(42,7)",
+    "complement": "O^+(26,7)",
+    "embedding_count": 1857351514670617988235131528172975689550625837169786853495540280691886961751193298225445450156537793063912216562371727971944656805251588808106899305896835144438039004849211656068525082346025670545990485945363625985127642832752996576755743364028301043824334430936282957903013032556552256948781195928495852410557277665354440052324723275052376691191072000,
+    "embedding_count_decimal_digits": 352,
+    "hostile_sign_controls": {
+      "minus_complement_ratio_differs": true,
+      "minus_complement_ratio_integral": true,
+      "plus_ambient_ratio_differs": true,
+      "plus_ambient_ratio_integral": true,
+      "warning": "Order divisibility alone does not certify the orthogonal sign: both hostile ratios are also integers. The imported Witt indices and discriminant types are essential."
+    },
+    "passed": true,
+    "point_orbits": {
+      "isotropic": 791259428114,
+      "nonsquare_anisotropic": 2373781166743,
+      "square_anisotropic": 2373781166743,
+      "total": 5538821761600
+    },
+    "reason": "Witt extension sends any isometry between two nondegenerate minus-type 16-subspaces to an ambient isometry; the setwise stabilizer is O^-(16,7) times O^+(26,7).",
+    "short_classes": {
+      "norm14_self_dot_0": "zero class or nonzero isotropic orbit",
+      "norm16_and_norm18_same_projective_orbit": true,
+      "norm16_norm18_ratio": 4,
+      "norm16_self_dot_4": "square-anisotropic orbit",
+      "norm18_self_dot_1": "square-anisotropic orbit",
+      "ratio_is_square_mod_7": true
+    },
+    "single_orbit": true,
+    "small_dimension_bruteforce_control": {
+      "isotropic": 50,
+      "nonsquare_anisotropic": 175,
+      "square_anisotropic": 175,
+      "total": 400
+    },
+    "small_dimension_formula_control": {
+      "isotropic": 50,
+      "nonsquare_anisotropic": 175,
+      "square_anisotropic": 175,
+      "total": 400
+    },
+    "subspace": "O^-(16,7)"
+  },
+  "provenance": {
+    "already_implied_by_Wave51_not_new_to_repository": [
+      "R*R=1_perp (by the pure-square result and polarization, or directly)",
+      "the 99 quadratic images form a circuit",
+      "every 98 quadratic images are independent",
+      "the degree-two Cayley-Bacharach property (new terminology only)"
+    ],
+    "correction": "The discovery boundary lists the quadratic circuit among new exact reformulations. It is already an immediate consequence of verified Wave51's rank-98 pure-square span and unique all-one relation. R*R=1_perp is likewise prior-implied; only the code-product packaging is new.",
+    "literature_novelty": "UNKNOWN",
+    "new_to_repository_Wave97_consequences": [
+      "R*R*R=F7^99 and the degree-three Hilbert saturation",
+      "C*C=F7^99",
+      "the projective self-orthogonal second-compound code",
+      "the distinguished compound-row weight and compound spectrum",
+      "the complete second-compound Smith form",
+      "the generalized-weight intervals",
+      "the exact orthogonal embedding count and point-orbit reduction"
+    ],
+    "provenance_correction_required": true,
+    "verified_Wave51_imports": [
+      "S^2=49(I+J)",
+      "SNF(S)=diag(1^r,7^(99-2r),49^(r-1),490)",
+      "corrected spectrum -70^1, 7^54, (-7)^44",
+      "99 quadratic pure-square images have rank 98",
+      "their unique relation is the all-one relation"
+    ],
+    "verified_Wave80_imports": [
+      "d(R^perp)>=6",
+      "at r=28, C/R=O^-(16,7) inside O^-(42,7) with O^+(26,7) complement",
+      "forced short classes have weights 14,16,18 and self-dots 0,4,1"
+    ]
+  },
+  "role": "verifier",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "literature_novelty": "UNKNOWN",
+    "rank_28_excluded": false,
+    "strict_n3_upper_bound_below_4158": false
+  },
+  "verdict": "VERIFIED_WITH_PROVENANCE_CORRECTION"
+}

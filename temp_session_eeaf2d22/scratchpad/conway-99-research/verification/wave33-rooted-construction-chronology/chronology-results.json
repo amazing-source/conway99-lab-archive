@@ -1,0 +1,119 @@
+{
+  "chronology": {
+    "archive_sha256": "d62fc4311577d56cbf34f8bd4e63aefb3b796457b3d020f4322324073d82f7dd",
+    "archive_status": "PASS",
+    "historical_input_count": 8,
+    "historical_structure_sha256": "45640fecaa5834b24063c682c7edd0898f2746253a7708a2c70c3610e4bcb99a",
+    "live_structure_is_not_historical_input": true
+  },
+  "claim_label": "VERIFIED",
+  "freeze_anchors": {
+    "candidate_artifact_manifest_sha256": "0cd192c0182506b3c901806cc96abb9fe53f04dc906b0b5cd73bc9b602558ff4",
+    "candidate_freeze_sha256": "441465c157f28e658afde31e6ca0cff49ccb5841a001150bd3e3af616c5bf63a",
+    "precomparison_manifest_sha256": "4ccbbad9c01eab764d9aa6fb207114e43f8c5a36bec3ec5bf0d161708ce0360d",
+    "status": "UNCHANGED",
+    "verifier_artifact_manifest_sha256": "20c27560bdf9720cd1cf043b11c218130cd2891a2d3c874f9dbc9bce2f27fbbf"
+  },
+  "materialized": {
+    "candidate_artifact_entries": 16,
+    "candidate_freeze_entries": 17,
+    "exact_checker_standard_library_only": true,
+    "historical_input_count": 8,
+    "local_environment_dependency": false,
+    "precomparison_entries": 5,
+    "solver_hash_records_authenticated": 6,
+    "solver_provenance_files_copied": 0,
+    "solver_version_records_authenticated": 3,
+    "verifier_artifact_entries": 14
+  },
+  "replay": {
+    "checkout_outputs_written": 0,
+    "comparison_accepted_summary_core_bound": true,
+    "comparison_execution": {
+      "chronology_owned_projection_sha256": "446beb4ddd2a51194315954d7005cb01d90ff8643a64c78801d93524d65e7818",
+      "hash_pinned_function_calls": true,
+      "historical_only_cli_stdout_sha256": "7025cc30551e219c224fe068d641a202db9f1c7a39e480908933e9a93fe597c5",
+      "local_environment_files_opened": 0,
+      "unchanged_cli_status": "NOT_RUN_BY_DESIGN"
+    },
+    "comparison_results_sha256": "c0476fb877e0e7d6a6fc63b1a4c72bda0d7804a18a4e4b2b6d5a1bcbc4b6b459",
+    "discovery_test_ids_sha256": "1c8b91a4ee799f4c0cb336bc48ffd4a2f2b010a0860a53157dd6adae33adc784",
+    "exact_results_byte_identical": true,
+    "exact_results_sha256": "ba6640eacd041bc8349024a1d3f13e3d74bd67cdad64d2d78c9a94927319c496",
+    "full_verifier_test_ids_sha256": "ab8dea45aa3a32d4df0758dd9fe142c2fa6fecb815693085027e17313202d9e1",
+    "historical_package_tests_passed": 50,
+    "hostile_search_certificate_byte_identical": true,
+    "hostile_search_certificate_sha256": "340e5df716ad63bceba25c745ab04c22ea1a3dca01e939072f09775a5fc5f634",
+    "included_verifier_test_ids_sha256": "185da0159a5f9689b2a60a830d9c78be9ea0d7c14c3535dd9ce992dc69542389",
+    "isolated_python_flags": [
+      "-I",
+      "-B"
+    ],
+    "pycache_created": false,
+    "python_environment_variables_sanitized": true,
+    "status": "PASS",
+    "synthetic_tree_unchanged": true,
+    "unchanged_discovery_tests_passed": 14,
+    "unchanged_verifier_tests_passed": 36,
+    "verifier_test_08": {
+      "composite_test_execution": "NOT_RUN_AS_COMPOSITE",
+      "portable_source_audit_half": {
+        "canonical_result_sha256": "d7f45c6931fe10062321f2349e2c64aec0806e3258f0fdc4368a837bf0c023f5",
+        "exact_checker_import_audit": {
+          "import_roots": [
+            "__future__",
+            "argparse",
+            "collections",
+            "hashlib",
+            "itertools",
+            "json",
+            "pathlib",
+            "typing"
+          ],
+          "source_sha256": "49fc20348a38e378f7e140cbbd7829dff54afe3caf0de3a2c54a82ca10981eec",
+          "standard_library_only": true,
+          "status": "PASS"
+        },
+        "status": "PASS"
+      },
+      "solver_environment_file_half": {
+        "documentary_record_audit": {
+          "document_sha256": "345e5976222b950b7bb9d3805f7cef0836cbbdff9e9abf2ec85454b28eada342",
+          "documentary_hash_record_count": 6,
+          "documentary_hash_records": {
+            ".venv/Lib/site-packages/pysat/card.py": "adabf7fedfe60b36cbc3c48075770e87e3cd6c5b5a013552009ce96f282a890e",
+            ".venv/Lib/site-packages/pysat/solvers.py": "253654d8efabae650a0d136ad2f2e6d30b57206b1fb70846c714197468a28f7e",
+            ".venv/Lib/site-packages/pysolvers.cp313-win_amd64.pyd": "1019bacdbb9400cc54fa89aa39294fefe1c63d5a67fdab35f473364529ec72dd",
+            ".venv/Lib/site-packages/scipy/optimize/_highspy/_core.cp313-win_amd64.pyd": "92d47727b06333f871f57427a6d9800481e3e9feeabd59d31320ded8028c5357",
+            ".venv/Lib/site-packages/scipy/optimize/_highspy/_highs_options.cp313-win_amd64.pyd": "df51a5cdf24f3ff1f06f36ef25c88b0ea41c496f8f7e12bfd40ca840f56d30a5",
+            ".venv/Lib/site-packages/scipy/optimize/_milp.py": "803785ebcc365d1c04967a267650953da01ed285ee8be1c7a66a9fe3dbf75c3c"
+          },
+          "local_environment_files_opened": 0,
+          "observed_environment_hash_count": 0,
+          "status": "AUTHENTICATED_RECORDS_ONLY",
+          "version_record_count": 3,
+          "version_records": {
+            "cadical": "CaDiCaL 1.9.5 wrapper exposed as cadical195",
+            "python_sat": "python-sat 1.9.dev7",
+            "scipy_highs": "SciPy 1.18.0 MILP wrapper over bundled HiGHS"
+          }
+        },
+        "reason": "The six ignored local environment files are absent from a clean clone, and the recorded solver timeout has no evidentiary status.",
+        "status": "NOT_REPLAYED_NONBLOCKING"
+      },
+      "test_id": "test_candidate_comparison.CandidateComparisonTests.test_08_source_and_solver_provenance"
+    }
+  },
+  "role": "verifier",
+  "schema_version": 2,
+  "scope": "Clean-clone-independent historical-byte replay of all 14 unchanged Wave 33 discovery tests and the 36 unchanged verifier tests that do not inspect ignored local solver-environment files.",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "complete_domain_UNSAT_certificate": "NONE",
+    "complete_graph_extension": "UNKNOWN",
+    "full_rooted_endpoint": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "timeout_negative_evidence": false
+  }
+}

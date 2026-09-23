@@ -1,0 +1,140 @@
+{
+  "schema": "wave18-n3-57-independent-check-v1",
+  "date_utc": "2026-07-23T12:49:43Z",
+  "status": {
+    "conditional_n3_57": "EXCLUDED_VERIFIED",
+    "conway_99_target": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "wave17_exclusion_used_as_premise": false
+  },
+  "authenticated_inputs_sha256": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "agents/2026-07-23-wave18-n3-57-structural.md": "fa1dde1f96aaaf2c9a90c73308afbc967fab892fe79246bf7eafa2831fea38f6",
+    "verification/2026-07-23-wave15-global-lift-audit.md": "edda3785d080db464028f10c22bcae5c0bf17f1e61432a8641bfa6ffdccab036",
+    "verification/2026-07-23-wave16-n3-51-structural-audit.md": "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6",
+    "verification/n3-57-structural/preinspection-freeze.md": "2127ca8b3468cfe04d649180f37cc3f4a2a5b283b4988d309ccd3ccc798bf001"
+  },
+  "checker_sha256": "df3539f0161d98e4f9a83e587480f4ed77e584e0ca9d91af80d466417d71596c",
+  "tests_sha256": "13584f2c98fd18f864a89cd064c7b83110afcf821ce24c5d5b8e2fbe9bd101bd",
+  "independent_methods": {
+    "q_enumerator_1": "multiplicity-vector recursion",
+    "q_enumerator_2": "bounded combinations-with-replacement",
+    "crossing_enumerator": "row-by-row degree-0/2 choices with incremental column checks",
+    "point_size_enumerator": "size-count-vector recursion",
+    "actual_neighbors": "explicit presented and physical original-vertex identities",
+    "arithmetic": "integers and fractions.Fraction only",
+    "submitted_code_imported": false
+  },
+  "premises": {
+    "sum_q": 38,
+    "q_active_minimum": 2,
+    "d_K_minimum": 4,
+    "d_K_three_obstruction_assignments": 2,
+    "active_incidence_sum": "3r",
+    "point_size_minimum": 2,
+    "dense_subset_upper": "2e(G[X]) <= 3m + m^2/9",
+    "fixed_point_identity": "sum_{v~u} d_H(uv) = 2 sum_{T in S_u} q(T)"
+  },
+  "q_profile_count": 9,
+  "q_profile_canonical_sha256": "7cf492da86e2fb2ba40ee158e379144a502a746363d2ad81b544ecc99d5416a3",
+  "q_profiles": [
+    {"r": 14, "q": "2^4 3^10", "d_K": "4^10 7^4", "point_cap": 21},
+    {"r": 15, "q": "2^7 3^8", "d_K": "5^8 8^7", "point_cap": 22},
+    {"r": 16, "q": "2^10 3^6", "d_K": "6^6 9^10", "point_cap": 24},
+    {"r": 17, "q": "2^15 4^2", "d_K": "4^2 10^15", "point_cap": 25},
+    {"r": 17, "q": "2^14 3^2 4", "d_K": "4 7^2 10^14", "point_cap": 25},
+    {"r": 17, "q": "2^13 3^4", "d_K": "7^4 10^13", "point_cap": 25},
+    {"r": 18, "q": "2^17 4", "d_K": "5 11^17", "point_cap": 27},
+    {"r": 18, "q": "2^16 3^2", "d_K": "8^2 11^16", "point_cap": 27},
+    {"r": 19, "q": "2^19", "d_K": "12^19", "point_cap": 28}
+  ],
+  "endpoint_crossing_edge_counts": {
+    "disjoint": {
+      "2x2": [0, 4],
+      "2x3": [0, 4],
+      "2x4": [0, 4],
+      "2x5": [0, 4],
+      "3x3": [0, 4, 6],
+      "3x4": [0, 4, 6],
+      "3x5": [0, 4, 6],
+      "4x4": [0, 4, 6, 8],
+      "4x5": [0, 4, 6, 8],
+      "5x5": [0, 4, 6, 8, 10]
+    },
+    "meeting_after_common_label_deletion": {
+      "2x2": [0],
+      "2x3": [0],
+      "2x4": [0],
+      "2x5": [0],
+      "3x3": [0, 4],
+      "3x4": [0, 4],
+      "3x5": [0, 4],
+      "4x4": [0, 4, 6],
+      "4x5": [0, 4, 6],
+      "5x5": [0, 4, 6, 8]
+    },
+    "canonical_sha256": "ea2b1716e3c84771e0075fc93d599f4d27e328bf6cd21f7ebf3ff8ad3d1d969a"
+  },
+  "size_two_local_cases": {
+    "2,2": {"fixed_sum": 8, "positive_neighbors": 2, "minimum_degree": 6},
+    "2,3": {"fixed_sum": 10, "outcome": "impossible"},
+    "2,4": {"fixed_sum": 12, "positive_neighbors": 3, "minimum_degree": 7},
+    "3,3": {"fixed_sum": 12, "positive_neighbors": 3, "minimum_degree": 7},
+    "3,4": {"fixed_sum": 14, "outcome": "impossible"},
+    "4,4": {"fixed_sum": 16, "positive_neighbors": 4, "minimum_degree": 8}
+  },
+  "dense_subset": {
+    "upper_minus_delta6_lower": "m(m-27)/9",
+    "first_feasible_m": 27,
+    "m25_gap": "-50/9",
+    "m27_gap": "0",
+    "equality_semantics": "m=27 is not excluded by the inequality"
+  },
+  "r_at_most_17": {
+    "maximum_point_cap": 25,
+    "minimum_from_delta6_and_spectrum": 27,
+    "outcome": "contradiction"
+  },
+  "r18": {
+    "point_sizes": "2^27",
+    "degree_sum": 162,
+    "induced_graph": "6-regular",
+    "2^16_3^2": "mixed 2,3 point impossible; two q=3 labels cannot have simple cubic degree 3 internally",
+    "2^17_4": "each of three points through q=4 has minimum induced degree 7",
+    "outcome": "contradiction in both profiles"
+  },
+  "r19": {
+    "m27_point_profiles": ["2^26 5", "2^25 3 4", "2^24 3^3"],
+    "m27_point_profile_sha256": "4958b37b00df7b3d62c55d9e34af940edc77926bb918fe5fe331f6f57191695d",
+    "m27": {
+      "2^26_5": "size-5 point has 10 meeting neighbors in a 6-regular graph",
+      "2^25_3_4": "size-4 point has 8 meeting neighbors in a 6-regular graph",
+      "2^24_3^3": "fixed sum 12 exceeds maximum 8 from the other two size-3 meeting points"
+    },
+    "m28_point_profiles": ["2^27 3"],
+    "m28_point_profile_sha256": "d32ab4439fb30af6931d1be1120af2a23674ac8f246e475af5cae2cb0ccf0cb8",
+    "m28": {
+      "size3_meeting_neighbors": 6,
+      "positive_disjoint_actual_neighbors": 3,
+      "size3_minimum_degree": 9,
+      "raw_degree_sum_lower": 171,
+      "parity_adjusted_degree_sum_lower": 172,
+      "spectral_upper": "1540/9",
+      "maximum_even_degree_sum": 170
+    },
+    "outcome": "contradiction in every point-size case"
+  },
+  "semantic_core_sha256": "a1764f8433fc8e3ecbdbd43a71c7c6e7e1e7e1daaef38f51422f7fe332d5c553",
+  "tests": {
+    "independent": "14/14 PASS",
+    "submitted": "10/10 PASS",
+    "submitted_json_replay": "PASS",
+    "hostile_mutations": "24/24 DETECTED"
+  },
+  "limitations": [
+    "conditional on authenticated audited H/L and indexed-point premises",
+    "not a raw 99-by-99 adjacency certificate",
+    "not a global Conway-99 existence or nonexistence proof",
+    "not a novelty certificate"
+  ]
+}

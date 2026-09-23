@@ -1,0 +1,378 @@
+{
+  "active_set_bounds": [
+    {
+      "active_incidence_count": 42,
+      "active_vertex_upper_bound": 21,
+      "q_counts": {
+        "2": 8,
+        "3": 6
+      },
+      "r": 14,
+      "spectral_average_degree_upper": "16/3",
+      "strictly_below_six": true
+    },
+    {
+      "active_incidence_count": 45,
+      "active_vertex_upper_bound": 22,
+      "q_counts": {
+        "2": 11,
+        "3": 4
+      },
+      "r": 15,
+      "spectral_average_degree_upper": "49/9",
+      "strictly_below_six": true
+    },
+    {
+      "active_incidence_count": 48,
+      "active_vertex_upper_bound": 24,
+      "q_counts": {
+        "2": 14,
+        "3": 2
+      },
+      "r": 16,
+      "spectral_average_degree_upper": "17/3",
+      "strictly_below_six": true
+    },
+    {
+      "active_incidence_count": 51,
+      "active_vertex_upper_bound": 25,
+      "q_counts": {
+        "2": 17
+      },
+      "r": 17,
+      "spectral_average_degree_upper": "52/9",
+      "strictly_below_six": true
+    }
+  ],
+  "case": "conditional n3=51 for srg(99,14,1,2)",
+  "claim_status": "DERIVED_PENDING_INDEPENDENT_AUDIT",
+  "contradiction": "all survivors force |X|<=25 and delta(G[X])>=6, but the audited SRG subset bound forces |X|>=27",
+  "conway_99": "UNKNOWN",
+  "dense_subset_threshold": 27,
+  "hostile_mutations": {
+    "extra_profiles_if_degree_three_allowed": [
+      {
+        "k_degree_counts": {
+          "3": 8,
+          "6": 5
+        },
+        "q_counts": {
+          "2": 5,
+          "3": 8
+        },
+        "r": 13
+      },
+      {
+        "k_degree_counts": {
+          "3": 1,
+          "9": 15
+        },
+        "q_counts": {
+          "2": 15,
+          "4": 1
+        },
+        "r": 16
+      }
+    ],
+    "minimum_k_degree_three_survivor_count": 6,
+    "q3_q3_point_size": 2,
+    "q3_q3_size_two_support_degree": 3,
+    "row_only_2_by_3_edge_counts": [
+      0,
+      2,
+      4
+    ],
+    "singleton_points_would_destroy_active_vertex_upper_bound": true,
+    "two_sided_2_by_3_edge_counts": [
+      0,
+      4
+    ],
+    "wave14_identity_d_R_equals_point_size_generalizes": false
+  },
+  "novelty": "UNKNOWN",
+  "point_degree_filter": {
+    "justification": "three non-singleton points give d_K>=3; the audited repeated-degree-three lemma excludes equality",
+    "minimum_k_degree": 4
+  },
+  "raw_profile_count": 16,
+  "raw_profiles": [
+    {
+      "k_degree_counts": {
+        "2": 10,
+        "5": 2
+      },
+      "q_counts": {
+        "2": 2,
+        "3": 10
+      },
+      "r": 12
+    },
+    {
+      "k_degree_counts": {
+        "0": 4,
+        "6": 9
+      },
+      "q_counts": {
+        "2": 9,
+        "4": 4
+      },
+      "r": 13
+    },
+    {
+      "k_degree_counts": {
+        "0": 3,
+        "3": 2,
+        "6": 8
+      },
+      "q_counts": {
+        "2": 8,
+        "3": 2,
+        "4": 3
+      },
+      "r": 13
+    },
+    {
+      "k_degree_counts": {
+        "0": 2,
+        "3": 4,
+        "6": 7
+      },
+      "q_counts": {
+        "2": 7,
+        "3": 4,
+        "4": 2
+      },
+      "r": 13
+    },
+    {
+      "k_degree_counts": {
+        "0": 1,
+        "3": 6,
+        "6": 6
+      },
+      "q_counts": {
+        "2": 6,
+        "3": 6,
+        "4": 1
+      },
+      "r": 13
+    },
+    {
+      "k_degree_counts": {
+        "3": 8,
+        "6": 5
+      },
+      "q_counts": {
+        "2": 5,
+        "3": 8
+      },
+      "r": 13
+    },
+    {
+      "k_degree_counts": {
+        "1": 3,
+        "7": 11
+      },
+      "q_counts": {
+        "2": 11,
+        "4": 3
+      },
+      "r": 14
+    },
+    {
+      "k_degree_counts": {
+        "1": 2,
+        "4": 2,
+        "7": 10
+      },
+      "q_counts": {
+        "2": 10,
+        "3": 2,
+        "4": 2
+      },
+      "r": 14
+    },
+    {
+      "k_degree_counts": {
+        "1": 1,
+        "4": 4,
+        "7": 9
+      },
+      "q_counts": {
+        "2": 9,
+        "3": 4,
+        "4": 1
+      },
+      "r": 14
+    },
+    {
+      "k_degree_counts": {
+        "4": 6,
+        "7": 8
+      },
+      "q_counts": {
+        "2": 8,
+        "3": 6
+      },
+      "r": 14
+    },
+    {
+      "k_degree_counts": {
+        "2": 2,
+        "8": 13
+      },
+      "q_counts": {
+        "2": 13,
+        "4": 2
+      },
+      "r": 15
+    },
+    {
+      "k_degree_counts": {
+        "2": 1,
+        "5": 2,
+        "8": 12
+      },
+      "q_counts": {
+        "2": 12,
+        "3": 2,
+        "4": 1
+      },
+      "r": 15
+    },
+    {
+      "k_degree_counts": {
+        "5": 4,
+        "8": 11
+      },
+      "q_counts": {
+        "2": 11,
+        "3": 4
+      },
+      "r": 15
+    },
+    {
+      "k_degree_counts": {
+        "3": 1,
+        "9": 15
+      },
+      "q_counts": {
+        "2": 15,
+        "4": 1
+      },
+      "r": 16
+    },
+    {
+      "k_degree_counts": {
+        "6": 2,
+        "9": 14
+      },
+      "q_counts": {
+        "2": 14,
+        "3": 2
+      },
+      "r": 16
+    },
+    {
+      "k_degree_counts": {
+        "10": 17
+      },
+      "q_counts": {
+        "2": 17
+      },
+      "r": 17
+    }
+  ],
+  "schema_version": 1,
+  "size_two_crossings": {
+    "conclusion": "an actual edge incident with a size-two active point has H-degree 0 or 4",
+    "disjoint": {
+      "distinct_edge_count_sets": [
+        [
+          0,
+          4
+        ]
+      ],
+      "widths_checked": [
+        2,
+        17
+      ]
+    },
+    "overlap_after_shared_label_deletion": {
+      "distinct_edge_count_sets": [
+        [
+          0
+        ]
+      ],
+      "widths_checked": [
+        0,
+        16
+      ]
+    }
+  },
+  "size_two_point_types": {
+    "q2_q2": {
+      "compatible_with_0_or_4_crossings": true,
+      "fixed_point_sum": 8,
+      "forced_positive_support_neighbors": 2,
+      "induced_degree_lower_bound": 6
+    },
+    "q2_q3": {
+      "compatible_with_0_or_4_crossings": false,
+      "fixed_point_sum": 10
+    },
+    "q3_q3": {
+      "compatible_with_0_or_4_crossings": true,
+      "fixed_point_sum": 12,
+      "forced_positive_support_neighbors": 3,
+      "induced_degree_lower_bound": 7
+    }
+  },
+  "spectral_inequality": "average_degree(G[X]) <= 3+|X|/9",
+  "sum_q": 34,
+  "surviving_profile_count": 4,
+  "surviving_profiles": [
+    {
+      "k_degree_counts": {
+        "4": 6,
+        "7": 8
+      },
+      "q_counts": {
+        "2": 8,
+        "3": 6
+      },
+      "r": 14
+    },
+    {
+      "k_degree_counts": {
+        "5": 4,
+        "8": 11
+      },
+      "q_counts": {
+        "2": 11,
+        "3": 4
+      },
+      "r": 15
+    },
+    {
+      "k_degree_counts": {
+        "6": 2,
+        "9": 14
+      },
+      "q_counts": {
+        "2": 14,
+        "3": 2
+      },
+      "r": 16
+    },
+    {
+      "k_degree_counts": {
+        "10": 17
+      },
+      "q_counts": {
+        "2": 17
+      },
+      "r": 17
+    }
+  ]
+}

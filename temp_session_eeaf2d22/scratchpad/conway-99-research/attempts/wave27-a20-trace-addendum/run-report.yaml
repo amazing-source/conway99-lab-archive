@@ -1,0 +1,42 @@
+role: orchestrator
+date_utc: 2026-07-24T00:48:00Z
+git_commit: 9cc3f1e063ef63954102908c1b852dce7948a84f
+claim_label: DERIVED
+scope: >-
+  Exact A_n rank-one trace identity; exclusion of an orthogonal A20
+  summand at the n3=708 trace-60 endpoint; conditional full-ADE corollary
+  pending independent verification of imported Wave 27 tensor claims.
+inputs:
+  - path: agents/2026-07-23-wave27-general-root-tensor.md
+    sha256: 456a4ad6f27c1c9c09f84b2ff41796473f519b5aaabda36b71022a51bbbe7f38
+  - path: attempts/wave27-general-root-tensor/exact-results.json
+    sha256: 98aba5a30b2f3a83b9f6ce6fd6a20458505b668249d97b0810907de50cae678d
+  - path: verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md
+    sha256: 5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3
+method: >-
+  Exact integral factorization A_n=sum v_i v_i^T; even positive norm
+  floor; complementary positive-integral-determinant AM-GM trace floor;
+  finite coefficient checks for ranks 1 through 44; hostile controls.
+command: |-
+  cd attempts/wave27-a20-trace-addendum
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-24-wave27-a20-trace-addendum.md
+    sha256: 97c7296752e0ef2126bd8da50cdf8b0abe07b3c72a939233d15aae6d7c413659
+  - path: attempts/wave27-a20-trace-addendum/exact_check.py
+    sha256: 7762acf33bf519e3a91f442d4dcae6da34e770d98491b02d995a14550840de7c
+  - path: attempts/wave27-a20-trace-addendum/test_exact_check.py
+    sha256: b5d55c15f01c4f7a5856ebce36646140f90994328b62852b8dfb1d121bed4f82
+  - path: attempts/wave27-a20-trace-addendum/exact-results.json
+    sha256: dc5716cbf2537cd214906f1bf2eae96d4886e4bd88008cd7508c6a64d78f089c
+  - path: attempts/wave27-a20-trace-addendum/input-freeze.sha256
+    sha256: c0a85ebaf10f53b9ab456147b77d021d0e2d4892123c8939c1a15413c09f9679
+  - path: attempts/wave27-a20-trace-addendum/failed-routes.md
+    sha256: 178c8578eebe32d10e6d8c5c8862ba05e5c0a2b661c62813310371db6c9b17b5
+limitations:
+  - Requires an orthogonal integral A20 summand.
+  - Full-ADE conclusion imports other component theorems.
+  - General even scaled-dual lattices remain unclassified.
+  - No projector, Schur certificate, graph, endpoint exclusion, target
+    resolution, formal-kernel proof, or novelty claim.

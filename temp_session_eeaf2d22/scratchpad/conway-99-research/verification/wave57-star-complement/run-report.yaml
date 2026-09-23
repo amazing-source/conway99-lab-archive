@@ -1,0 +1,88 @@
+role: verifier
+date_utc: 2026-07-27T21:03:51Z
+git_commit: 4bb1989e9e286b2ec753a855db58ad584e31f63a
+claim_label: REFUTED
+scope: >-
+  Conditional prism-free n3=4158 endpoint, arbitrary fixed triangle, no
+  automorphism: clean-room verification of Wave57 quotient, supported
+  eigenspaces, projector ranks, star-set intersections, Y moments,
+  four-cycle ledger, all 18 truncated-moment rows and scalar controls,
+  followed by comparison with the already verified Wave36 block transfer.
+inputs:
+  - path: verification/wave57-star-complement/protocol.md
+    sha256: a51c90b8fff05d0650ea98b1233375b4bc2d3627c5c02fb7b7f269989c7f6603
+  - path: verification/wave57-star-complement/preinspection-freeze.sha256
+    sha256: ef89b55835a60edc8cb569ce76b79f2591c08b254815509bb8356b1a17c0f685
+  - path: verification/wave57-star-complement/discovery-freeze.sha256
+    sha256: 9540bf2df640b1c07acac66d63431018360c7e7564aa7f08bab683ecaa5dc429
+  - path: agents/2026-07-27-wave57-star-complement.md
+    sha256: 97819699ba41fb596eb5cd0a10ac763357a7a685753173e53beced10cb20c6f0
+  - path: attempts/wave57-star-complement/exact-results.json
+    sha256: 2b49b0bf3d52c0101cfcd59c3324279c1f153f4d48504c7ae67658e8786e6216
+  - path: attempts/wave57-star-complement/package-manifest.sha256
+    sha256: c32b4e23cd8ba465a969abf538a85da1471f6c7452a0718740f2035ca6ad62f0
+  - path: verification/wave36-block-compatibility/audit.md
+    sha256: 1f3856bc91d4ba7da53fc55e2f90528848683626191b9f8f4091c9c46cea2c96
+  - path: verification/wave36-block-compatibility/independent-results.json
+    sha256: b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4
+method: >-
+  Exact integer and rational rederivation; independent truncated Hausdorff
+  moment enumeration; exact algebraic-integer power-sum replay; cubic
+  four-cycle incidence bound; clean-room replay of the Wave36 rank and trace
+  transfer; and hostile-mutation calibration. Discovery code is not imported.
+command:
+  - >-
+    python -B verification/wave57-star-complement/independent_check.py
+  - >-
+    python -B verification/wave57-star-complement/independent_check.py
+    --verify verification/wave57-star-complement/independent-results.json
+  - >-
+    python -B -m unittest discover -s
+    verification/wave57-star-complement -p "test_*.py" -v
+  - >-
+    python -B -m py_compile
+    verification/wave57-star-complement/independent_check.py
+    verification/wave57-star-complement/test_independent_check.py
+outputs:
+  - path: verification/wave57-star-complement/independent_check.py
+    sha256: a927b6561fbe7dfc64d0bd66c34715daf7a58d4d0552adda627c4e9895d60f68
+  - path: verification/wave57-star-complement/test_independent_check.py
+    sha256: e0f484ebd931e499c5fd86cbb3594f214eeb38e7631e35bafe9a80f80eda9781
+  - path: verification/wave57-star-complement/independent-results.json
+    sha256: 79126ffebaf5726e3f45574e9068c54668d09bf463cdad64f10da1a0e6afb9a5
+  - path: verification/wave57-star-complement/audit.md
+    sha256: a888aa3f2ece8069f0da8a8ddabc15d28f9637b9ac6e217bcc5fa4251bed8ac2
+  - path: verification/wave57-star-complement/README.md
+    sha256: 92fbed5f1e5e8af002da96126e13c1b5f350cc4749349b4f1b8de702e9e2ddc4
+results:
+  verdict: REFUTED_IN_PART
+  independently_reproduced:
+    - quotient and supported 3/-4 eigenspaces
+    - projector block ranks and exact supported dimensions
+    - exact star-set minimum-hit argument
+    - Y order, degree, triangle count, and moments
+    - C4(Y)=171+C4(X) and trace-four formula
+    - all 18 rows of the weaker truncated-moment relaxation
+    - all 18 scalar controls in their stated weaker scope
+  corrections:
+    - "Cubic/SRG incidence gives C4(X)<=27, not merely <=89."
+    - >-
+      Prior verified Wave36 transfer gives mult_Y(3)=18 and
+      mult_Y(-4) in {8,9,10}; only three project-valid rows remain.
+    - >-
+      The strongest project-valid Y star-complement orders are 42 for
+      eigenvalue 3 and 50..52 for eigenvalue -4.
+  verifier_tests: 12
+  verifier_tests_passed: 12
+  discovery_replay_tests: 8
+  discovery_replay_tests_passed: 8
+  minimum_free_physical_memory_percent: 48.84
+  endpoint_excluded: false
+  endpoint_graph_constructed: false
+  conway_99_status: UNKNOWN
+limitations:
+  - All mathematical conclusions are conditional on the prism-free endpoint.
+  - The scalar controls are not graph spectra.
+  - No 60-vertex Y graph, binary reconstruction matrix, or 99-vertex graph is supplied.
+  - No exhaustive star-complement search or nonexistence certificate is supplied.
+  - Novelty outside this repository remains UNKNOWN.

@@ -1,0 +1,87 @@
+{
+  "certificate": {
+    "C": 4158,
+    "K": 3861,
+    "circuit_scalar_words": 15346,
+    "edge_added_projective": 7673,
+    "identity": "Q0-(11*C-K)/6=(2/3)SI+(4/3)S2+(1/6)SE2+(2/3)RA+(1/3)SL+(1/6)SG+a1/6+b3/2+c2/6+W/3",
+    "integer_Q_lower_bound": 6980,
+    "multipliers": {
+      "RA": "2/3",
+      "S2": "4/3",
+      "SE2": "1/6",
+      "SG": "1/6",
+      "SI": "2/3",
+      "SL": "1/3",
+      "W": "1/3",
+      "a1": "1/6",
+      "b3": "1/2",
+      "c2": "1/6"
+    },
+    "rational_Q_target": "13959/2",
+    "rational_null": {
+      "all_other_variables": "0",
+      "all_six_slacks_zero": true,
+      "asserted_object": false,
+      "b1": "198",
+      "n1=a2": "99",
+      "n2=p2": "99",
+      "n3": "1386",
+      "p3=c1": "3663",
+      "r1": "3861",
+      "r2": "99/2",
+      "y": "99"
+    },
+    "reduced_difference": {}
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "conditional_scope": "prism-free rank-11 endpoint and the verified Wave194 pool/slack system",
+  "fixed_center_theorem": {
+    "A_family_pairwise_intersecting": true,
+    "erdos_ko_rado_trivial_cap": 15,
+    "ground_set_size": 7,
+    "hilton_milner_nontrivial_cap": 13,
+    "leaf_to_A_injective": true,
+    "subset_size": 3,
+    "trivial_common_block_neighbor_base": 12,
+    "universal_oriented_label_cap": "j_x<=39"
+  },
+  "global_row": {
+    "K": 3861,
+    "definition": "SG=K-C+n1+2*n2-a3-b3>=0",
+    "lower": "J>=C-n1-2*n2+a3+b3",
+    "upper": "J<=K"
+  },
+  "local_coefficients": {
+    "consequences_at_dual_distance_at_least_4": {
+      "A_family_pairwise_intersecting": true,
+      "leaf_to_A_injective": true
+    },
+    "coordinate_order": "seven center-star blocks, T, T_prime",
+    "disjoint_A_plus_star": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "disjoint_A_plus_star_weight": 3,
+    "equal_A_difference": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "equal_A_difference_weight": 2
+  },
+  "search_scope": "fixed F3 coefficient identities and exact rational extremal-set arithmetic only; no graph, code, cover, SAT, LP, configuration, enumeration, or isomorphism search"
+}

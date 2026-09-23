@@ -1,0 +1,65 @@
+{
+  "claim_label": "VERIFIED_BY_EXACT_REPLAY",
+  "equation_count": 109,
+  "format": "wave143-integral-equality-lattice-v1",
+  "homogeneous_steps_delta_k1": {
+    "minus": {
+      "exactly_reconstructed_and_replayed_by": "lattice_certificate.py",
+      "k": "1",
+      "maximum_decimal_digits": 24206,
+      "nonzero_coordinates": 113,
+      "sha256": "0598ac8da188c03b14504f0d5d76c8417b6f290fe5ea4971714202b23e37e446",
+      "stored_in_full": false
+    },
+    "plus": {
+      "exactly_reconstructed_and_replayed_by": "lattice_certificate.py",
+      "k": "1",
+      "maximum_decimal_digits": 24206,
+      "nonzero_coordinates": 113,
+      "sha256": "4bee91394cc8a3a42017ded0190932c0707a62ff2cabb60cf10d73a4b5bc63a6",
+      "stored_in_full": false
+    }
+  },
+  "limitations": [
+    "The certificate permits negative coefficients.",
+    "It proves the equality-lattice projection only.",
+    "Nonnegativity, lower bounds, and shadow inequalities may remove residues or all points.",
+    "It does not construct a code or graph."
+  ],
+  "matrix_sha256": {
+    "minus": "814eb1f791929e8f213d83b1b193ed30d3ce8d4381eeba0dcb16a477b39222ed",
+    "plus": "71e615ffe53d6bf6cb5611c4a38f9f016f00560804204dd92f4dcef23199cab8"
+  },
+  "nullity": 33,
+  "obstruction": {
+    "equation": "3*M6=sign*2^27*(3*2024484+512*n3)",
+    "modulo_3_coefficient_of_n3": 1,
+    "necessary_residue": "n3 == 0 (mod 3)"
+  },
+  "particular_solutions_k0": {
+    "minus": {
+      "exactly_reconstructed_and_replayed_by": "lattice_certificate.py",
+      "k": "0",
+      "maximum_decimal_digits": 48430,
+      "nonzero_coordinates": 115,
+      "sha256": "14f30ca13668c510f12030c53ab6cafd00abff39e6253418155bab055292681e",
+      "stored_in_full": false
+    },
+    "plus": {
+      "exactly_reconstructed_and_replayed_by": "lattice_certificate.py",
+      "k": "0",
+      "maximum_decimal_digits": 48430,
+      "nonzero_coordinates": 115,
+      "sha256": "5edbd1202d250a1fe1dac21ee8ba06ae045f3cfef935f6facb2bca8582191f21",
+      "stored_in_full": false
+    }
+  },
+  "projection": {
+    "coordinate": "k=n3/3",
+    "exact_admissible_residues_at_equality_layer": "all k in Z, equivalently exactly n3 == 0 (mod 3)",
+    "kernel_projection_gcd": 1
+  },
+  "rank": 109,
+  "scope": "Integral ordinary MacWilliams equality lattice with A_w,D_t,k integral and n3=3k; inequalities and nonnegativity excluded",
+  "unknown_count": 142
+}

@@ -1,0 +1,249 @@
+{
+  "additional_obstruction_search": {
+    "new_obstruction_found": false,
+    "tests": [
+      "Witt-index capacity",
+      "residual orthogonal sign after removing k hyperbolic planes",
+      "nonnegative Smith exponents",
+      "conditional determinant/index compatibility"
+    ]
+  },
+  "conditional_projector": {
+    "B_squared_equals_7B": true,
+    "D_preserves_Lambda": true,
+    "det_H_plus_4I": 2332800,
+    "det_H_plus_4I_mod_7": 1,
+    "global_polynomial_check": {
+      "A": 7,
+      "I": 28,
+      "J": 2
+    },
+    "image_mod_7_totally_isotropic": true,
+    "nullity_B_on_Lambda_over_Q": 32,
+    "rank_B_on_Lambda_over_Q": 42,
+    "rank_R_on_W_mod_7": 1,
+    "rank_R_on_W_over_Q": 1,
+    "reason": "DQ=QE for an exact integral 13 by 13 matrix E"
+  },
+  "format": "wave109-independent-verification-v1",
+  "frozen_discovery_inputs": {
+    "attempts/wave109-c4boxk3-local-projector/README.md": "4d075dff97217f702e1cc6bd1d1958372bac1684087fa8b0f3175fb4e51eb0b3",
+    "attempts/wave109-c4boxk3-local-projector/derivation.md": "6c1a854b2f35c2d6f75819389ddb84fe038f1f28b14f4fcc29407bc04dcfe043",
+    "attempts/wave109-c4boxk3-local-projector/exact-results.json": "7835efcd502e5f85a841af9a93846de4d129e30b04781c54661017c955d2d9cf",
+    "attempts/wave109-c4boxk3-local-projector/exact_check.py": "832293e678d31c8d1a6ce90e1095c829a3b42583317dcf6a10dc9bf67e853e40",
+    "attempts/wave109-c4boxk3-local-projector/failed-routes.md": "74e6197a7c30f9c974d75272df9ff3a5b438d417a67efe8f59e41666e1010391",
+    "attempts/wave109-c4boxk3-local-projector/input-freeze.sha256": "dc175b4f7d22b18d4202c211744979c94399f5af55affd10b41a5e15fefeb28b",
+    "attempts/wave109-c4boxk3-local-projector/package-manifest.sha256": "6d54d48dbb6b1ffd3f7da845792fc12ee490471c02cc8137ebd1b03c21f5347e",
+    "attempts/wave109-c4boxk3-local-projector/protocol.md": "9e2c8e8253b20c5b96ac5cdb15ec24cf596ea1d3b1104e38a729bf8ad16dfc8e",
+    "attempts/wave109-c4boxk3-local-projector/run-report.yaml": "48348664836d564c4d1cc6cdcfd2652f6cc9f19319299d59ebb6420c69e4667f",
+    "attempts/wave109-c4boxk3-local-projector/test_exact_check.py": "7b345750521975d60e19362a420ad61ca9b3571487d6e2467bd3af734ff23237"
+  },
+  "incidence_lattice": {
+    "Lambda_rank": 74,
+    "P_shape": [
+      87,
+      12
+    ],
+    "Q_shape": [
+      87,
+      13
+    ],
+    "det_Lambda": 6191736422400,
+    "det_QtQ": 6191736422400,
+    "factorization": "2^22 * 3^10 * 5^2",
+    "pattern_histogram": {
+      "0": 3,
+      "1": 48,
+      "2": 36
+    },
+    "rank_Q_over_Q": 13,
+    "smith_invariant_factors_Q": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unit_minor_determinant": 1,
+    "unit_minor_rows_found_independently": [
+      0,
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47
+    ]
+  },
+  "orthogonal_space_mod_7": {
+    "determinant_legendre_symbol": 1,
+    "determinant_mod_7": 4,
+    "split_class_legendre_symbol": -1,
+    "split_determinant_class_mod_7": 6,
+    "type": "O^-(74,7)",
+    "witt_index": 36
+  },
+  "rank_transfer": {
+    "formula": "rank_F7(B|Lambda)=r-12",
+    "rows": [
+      {
+        "det_U_times_det_K": "7^32 * 2^22 * 3^10 * 5^2",
+        "excluded": false,
+        "global_rank_r": 28,
+        "index_Lambda_over_U_plus_K": "7^16",
+        "index_U_over_BLambda": "7^26",
+        "local_rank_k": 16,
+        "rank_R_mod_7": 17,
+        "rank_T_mod_7": 29,
+        "residual_space": "O^-(42,7)",
+        "snf_nonzero": {
+          "1": 16,
+          "7": 26
+        },
+        "witt_capacity": 36
+      },
+      {
+        "det_U_times_det_K": "7^36 * 2^22 * 3^10 * 5^2",
+        "excluded": false,
+        "global_rank_r": 30,
+        "index_Lambda_over_U_plus_K": "7^18",
+        "index_U_over_BLambda": "7^24",
+        "local_rank_k": 18,
+        "rank_R_mod_7": 19,
+        "rank_T_mod_7": 31,
+        "residual_space": "O^-(38,7)",
+        "snf_nonzero": {
+          "1": 18,
+          "7": 24
+        },
+        "witt_capacity": 36
+      },
+      {
+        "det_U_times_det_K": "7^40 * 2^22 * 3^10 * 5^2",
+        "excluded": false,
+        "global_rank_r": 32,
+        "index_Lambda_over_U_plus_K": "7^20",
+        "index_U_over_BLambda": "7^22",
+        "local_rank_k": 20,
+        "rank_R_mod_7": 21,
+        "rank_T_mod_7": 33,
+        "residual_space": "O^-(34,7)",
+        "snf_nonzero": {
+          "1": 20,
+          "7": 22
+        },
+        "witt_capacity": 36
+      },
+      {
+        "det_U_times_det_K": "7^44 * 2^22 * 3^10 * 5^2",
+        "excluded": false,
+        "global_rank_r": 34,
+        "index_Lambda_over_U_plus_K": "7^22",
+        "index_U_over_BLambda": "7^20",
+        "local_rank_k": 22,
+        "rank_R_mod_7": 23,
+        "rank_T_mod_7": 35,
+        "residual_space": "O^-(30,7)",
+        "snf_nonzero": {
+          "1": 22,
+          "7": 20
+        },
+        "witt_capacity": 36
+      },
+      {
+        "det_U_times_det_K": "7^48 * 2^22 * 3^10 * 5^2",
+        "excluded": false,
+        "global_rank_r": 36,
+        "index_Lambda_over_U_plus_K": "7^24",
+        "index_U_over_BLambda": "7^18",
+        "local_rank_k": 24,
+        "rank_R_mod_7": 25,
+        "rank_T_mod_7": 37,
+        "residual_space": "O^-(26,7)",
+        "snf_nonzero": {
+          "1": 24,
+          "7": 18
+        },
+        "witt_capacity": 36
+      },
+      {
+        "det_U_times_det_K": "7^52 * 2^22 * 3^10 * 5^2",
+        "excluded": false,
+        "global_rank_r": 38,
+        "index_Lambda_over_U_plus_K": "7^26",
+        "index_U_over_BLambda": "7^16",
+        "local_rank_k": 26,
+        "rank_R_mod_7": 27,
+        "rank_T_mod_7": 39,
+        "residual_space": "O^-(22,7)",
+        "snf_nonzero": {
+          "1": 26,
+          "7": 16
+        },
+        "witt_capacity": 36
+      },
+      {
+        "det_U_times_det_K": "7^56 * 2^22 * 3^10 * 5^2",
+        "excluded": false,
+        "global_rank_r": 40,
+        "index_Lambda_over_U_plus_K": "7^28",
+        "index_U_over_BLambda": "7^14",
+        "local_rank_k": 28,
+        "rank_R_mod_7": 29,
+        "rank_T_mod_7": 41,
+        "residual_space": "O^-(18,7)",
+        "snf_nonzero": {
+          "1": 28,
+          "7": 14
+        },
+        "witt_capacity": 36
+      },
+      {
+        "det_U_times_det_K": "7^60 * 2^22 * 3^10 * 5^2",
+        "excluded": false,
+        "global_rank_r": 42,
+        "index_Lambda_over_U_plus_K": "7^30",
+        "index_U_over_BLambda": "7^12",
+        "local_rank_k": 30,
+        "rank_R_mod_7": 31,
+        "rank_T_mod_7": 43,
+        "residual_space": "O^-(14,7)",
+        "snf_nonzero": {
+          "1": 30,
+          "7": 12
+        },
+        "witt_capacity": 36
+      }
+    ]
+  },
+  "scope": "Conditional algebra assuming a hypothetical srg(99,14,1,2) contains the induced C4 Cartesian K3 motif.",
+  "smith_index_formulas": {
+    "determinant_product": "det(U) det(K)=7^(2k) det(Lambda)",
+    "index_Lambda_over_U_plus_K": "7^k",
+    "index_U_over_BLambda": "7^(42-k)",
+    "justification": "7U is contained in B Lambda, which is contained in U; the map x -> Bx mod 7U has kernel U direct_sum K; U and K are rationally orthogonal.",
+    "nonzero_snf": "1^k, 7^(42-k), then 0^32"
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "full_extension": "UNKNOWN",
+    "literature_novelty": "UNKNOWN",
+    "motif_occurrence": "UNKNOWN",
+    "rank_rows_excluded": []
+  },
+  "verdict": "VERIFIED_SCOPED"
+}

@@ -1,0 +1,30 @@
+{
+  "format": "wave152-exact-nine-cut-replay-v1",
+  "claim_label": "CANDIDATE",
+  "scope": "Exact replay of the simplified ninth mask-12 covariance cut on the eight-cut rational endpoint witness.",
+  "inputs": {
+    "attempts/wave152-four-root-order8/exact-witness-after-eight-cuts.json": "dba1aa5caf8a98a03df61920474a2aeab814d1921c6e62bf4bfeab41d8585ff0",
+    "attempts/wave152-four-root-order8/simplified-mask12-cut.json": "0e9d9dd80fcd016281eaad847deecd6748aa6bfea391b49d0017b4d518a7978e",
+    "attempts/wave152-four-root-order8/zero-face-nine-cuts-highs.json": "3025a5164e6ebbb9eda1ff54a0067503d5aac4eff34af8630f81ae3a47cfa44d"
+  },
+  "simplified_cut_sha256": "ee2a2a08d011a1826a3c8645d801b0e0d2d4ffd3b26a0dcf39f84e43e502f25b",
+  "exact_value": "4877445335571096995366917775406/2619572513456614590392509237",
+  "strictly_positive": true,
+  "retained_cut_count": 9,
+  "exact_witness_support": {
+    "order7": 204,
+    "order8": 886
+  },
+  "conclusion": {
+    "finite_relaxation_after_nine_cuts": "EXACT_RATIONAL_FEASIBLE",
+    "graph_constructed": false,
+    "endpoint_n3_4158": "UNKNOWN",
+    "strict_upper_bound_below_4158": "NOT_PROVED",
+    "Conway_99": "UNKNOWN"
+  },
+  "limitations": [
+    "The exact vector is a rational pseudowitness, not a graph.",
+    "This discovery replay awaits an independent verifier.",
+    "Nine scalar cuts are not the full four-root PSD system."
+  ]
+}

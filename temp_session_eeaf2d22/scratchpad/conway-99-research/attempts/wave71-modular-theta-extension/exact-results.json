@@ -1,0 +1,872 @@
+{
+  "claim_label": "DERIVED",
+  "endpoint": {
+    "all_eight_rows_excluded": false,
+    "conway_status": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "q16_allowed_squared_norms": [
+      14,
+      16,
+      18
+    ],
+    "q16_count_congruence": "N14+N16+N18=2 mod 14",
+    "q16_row_forces_low_norm_eigenvector": true
+  },
+  "format": "wave71-modular-theta-extension-v1",
+  "limitations": [
+    "Wave71 does not validate Wave66; it is conditional on that package.",
+    "Skoruppa's theorem is a cited import, not reproved here.",
+    "A scalar theta-series congruence is necessary but not sufficient for a lattice genus.",
+    "A lattice genus is necessary but not sufficient for the marked 99-vector frame.",
+    "The forced low-norm eigenvector alternatives are not yet excluded."
+  ],
+  "modular_reduction": {
+    "imported_theorem": "Skoruppa 2008 main theorem",
+    "q16_short_coefficient_relation": {
+      "affine_parameterization_q7_q8_q9": {
+        "7": {
+          "constant": 2,
+          "direction_coefficients": [
+            6,
+            6
+          ]
+        },
+        "8": {
+          "constant": 0,
+          "direction_coefficients": [
+            5,
+            6
+          ]
+        },
+        "9": {
+          "constant": 0,
+          "direction_coefficients": [
+            3,
+            2
+          ]
+        }
+      },
+      "basis_monomials": [
+        [
+          1,
+          17
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          19,
+          5
+        ],
+        [
+          22,
+          3
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      "eliminated_relation": "A18 = 2 - A14 - A16 (mod 7)",
+      "parity_strengthening": "A14 + A16 + A18 = 2 (mod 14)",
+      "weight": 106
+    },
+    "rows": [
+      {
+        "basis_monomials": [
+          [
+            1,
+            24
+          ],
+          [
+            4,
+            22
+          ],
+          [
+            7,
+            20
+          ],
+          [
+            10,
+            18
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            16,
+            14
+          ],
+          [
+            19,
+            12
+          ],
+          [
+            22,
+            10
+          ],
+          [
+            25,
+            8
+          ],
+          [
+            28,
+            6
+          ],
+          [
+            31,
+            4
+          ],
+          [
+            34,
+            2
+          ],
+          [
+            37,
+            0
+          ]
+        ],
+        "forced_next_coefficient_mod_7_under_longest_gap": 6,
+        "forced_upper_bound_min_K": 28,
+        "forced_upper_bound_min_L_dual": "28/7",
+        "longest_initial_zero_run_feasible_mod_7": 13,
+        "next_zero_condition_inconsistent": true,
+        "q_discriminant_length_L": 2,
+        "q_rank_F7_Seidel": 42,
+        "required_gap_q1_through_q6_feasible_mod_7": true,
+        "seven_length_K": 42,
+        "skoruppa_level_one_weight": 148
+      },
+      {
+        "basis_monomials": [
+          [
+            1,
+            23
+          ],
+          [
+            4,
+            21
+          ],
+          [
+            7,
+            19
+          ],
+          [
+            10,
+            17
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            16,
+            13
+          ],
+          [
+            19,
+            11
+          ],
+          [
+            22,
+            9
+          ],
+          [
+            25,
+            7
+          ],
+          [
+            28,
+            5
+          ],
+          [
+            31,
+            3
+          ],
+          [
+            34,
+            1
+          ]
+        ],
+        "forced_next_coefficient_mod_7_under_longest_gap": 6,
+        "forced_upper_bound_min_K": 28,
+        "forced_upper_bound_min_L_dual": "28/7",
+        "longest_initial_zero_run_feasible_mod_7": 13,
+        "next_zero_condition_inconsistent": true,
+        "q_discriminant_length_L": 4,
+        "q_rank_F7_Seidel": 40,
+        "required_gap_q1_through_q6_feasible_mod_7": true,
+        "seven_length_K": 40,
+        "skoruppa_level_one_weight": 142
+      },
+      {
+        "basis_monomials": [
+          [
+            1,
+            22
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            7,
+            18
+          ],
+          [
+            10,
+            16
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            16,
+            12
+          ],
+          [
+            19,
+            10
+          ],
+          [
+            22,
+            8
+          ],
+          [
+            25,
+            6
+          ],
+          [
+            28,
+            4
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            34,
+            0
+          ]
+        ],
+        "forced_next_coefficient_mod_7_under_longest_gap": 6,
+        "forced_upper_bound_min_K": 28,
+        "forced_upper_bound_min_L_dual": "28/7",
+        "longest_initial_zero_run_feasible_mod_7": 13,
+        "next_zero_condition_inconsistent": true,
+        "q_discriminant_length_L": 6,
+        "q_rank_F7_Seidel": 38,
+        "required_gap_q1_through_q6_feasible_mod_7": true,
+        "seven_length_K": 38,
+        "skoruppa_level_one_weight": 136
+      },
+      {
+        "basis_monomials": [
+          [
+            1,
+            21
+          ],
+          [
+            4,
+            19
+          ],
+          [
+            7,
+            17
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            16,
+            11
+          ],
+          [
+            19,
+            9
+          ],
+          [
+            22,
+            7
+          ],
+          [
+            25,
+            5
+          ],
+          [
+            28,
+            3
+          ],
+          [
+            31,
+            1
+          ]
+        ],
+        "forced_next_coefficient_mod_7_under_longest_gap": 6,
+        "forced_upper_bound_min_K": 28,
+        "forced_upper_bound_min_L_dual": "28/7",
+        "longest_initial_zero_run_feasible_mod_7": 13,
+        "next_zero_condition_inconsistent": true,
+        "q_discriminant_length_L": 8,
+        "q_rank_F7_Seidel": 36,
+        "required_gap_q1_through_q6_feasible_mod_7": true,
+        "seven_length_K": 36,
+        "skoruppa_level_one_weight": 130
+      },
+      {
+        "basis_monomials": [
+          [
+            1,
+            20
+          ],
+          [
+            4,
+            18
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            10,
+            14
+          ],
+          [
+            13,
+            12
+          ],
+          [
+            16,
+            10
+          ],
+          [
+            19,
+            8
+          ],
+          [
+            22,
+            6
+          ],
+          [
+            25,
+            4
+          ],
+          [
+            28,
+            2
+          ],
+          [
+            31,
+            0
+          ]
+        ],
+        "forced_next_coefficient_mod_7_under_longest_gap": 6,
+        "forced_upper_bound_min_K": 28,
+        "forced_upper_bound_min_L_dual": "28/7",
+        "longest_initial_zero_run_feasible_mod_7": 13,
+        "next_zero_condition_inconsistent": true,
+        "q_discriminant_length_L": 10,
+        "q_rank_F7_Seidel": 34,
+        "required_gap_q1_through_q6_feasible_mod_7": true,
+        "seven_length_K": 34,
+        "skoruppa_level_one_weight": 124
+      },
+      {
+        "basis_monomials": [
+          [
+            1,
+            19
+          ],
+          [
+            4,
+            17
+          ],
+          [
+            7,
+            15
+          ],
+          [
+            10,
+            13
+          ],
+          [
+            13,
+            11
+          ],
+          [
+            16,
+            9
+          ],
+          [
+            19,
+            7
+          ],
+          [
+            22,
+            5
+          ],
+          [
+            25,
+            3
+          ],
+          [
+            28,
+            1
+          ]
+        ],
+        "forced_next_coefficient_mod_7_under_longest_gap": 6,
+        "forced_upper_bound_min_K": 28,
+        "forced_upper_bound_min_L_dual": "28/7",
+        "longest_initial_zero_run_feasible_mod_7": 13,
+        "next_zero_condition_inconsistent": true,
+        "q_discriminant_length_L": 12,
+        "q_rank_F7_Seidel": 32,
+        "required_gap_q1_through_q6_feasible_mod_7": true,
+        "seven_length_K": 32,
+        "skoruppa_level_one_weight": 118
+      },
+      {
+        "basis_monomials": [
+          [
+            1,
+            18
+          ],
+          [
+            4,
+            16
+          ],
+          [
+            7,
+            14
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            13,
+            10
+          ],
+          [
+            16,
+            8
+          ],
+          [
+            19,
+            6
+          ],
+          [
+            22,
+            4
+          ],
+          [
+            25,
+            2
+          ],
+          [
+            28,
+            0
+          ]
+        ],
+        "forced_next_coefficient_mod_7_under_longest_gap": 6,
+        "forced_upper_bound_min_K": 28,
+        "forced_upper_bound_min_L_dual": "28/7",
+        "longest_initial_zero_run_feasible_mod_7": 13,
+        "next_zero_condition_inconsistent": true,
+        "q_discriminant_length_L": 14,
+        "q_rank_F7_Seidel": 30,
+        "required_gap_q1_through_q6_feasible_mod_7": true,
+        "seven_length_K": 30,
+        "skoruppa_level_one_weight": 112
+      },
+      {
+        "basis_monomials": [
+          [
+            1,
+            17
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            7,
+            13
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            13,
+            9
+          ],
+          [
+            16,
+            7
+          ],
+          [
+            19,
+            5
+          ],
+          [
+            22,
+            3
+          ],
+          [
+            25,
+            1
+          ]
+        ],
+        "forced_next_coefficient_mod_7_under_longest_gap": 2,
+        "forced_upper_bound_min_K": 18,
+        "forced_upper_bound_min_L_dual": "18/7",
+        "longest_initial_zero_run_feasible_mod_7": 8,
+        "next_zero_condition_inconsistent": true,
+        "q_discriminant_length_L": 16,
+        "q_rank_F7_Seidel": 28,
+        "required_gap_q1_through_q6_feasible_mod_7": true,
+        "seven_length_K": 28,
+        "skoruppa_level_one_weight": 106
+      }
+    ],
+    "theta_K_initial_shape": "1+0q+...+0q^6+O(q^7)"
+  },
+  "neighbor_construction": {
+    "K": "sqrt(7) L*",
+    "K_determinant": "7^(44-q)",
+    "K_discriminant_group": "(Z/7)^(44-q)",
+    "K_even_level": 7,
+    "L": "M_H=M+Z(3u_0)",
+    "L_determinant": "7^q",
+    "L_discriminant_group": "(Z/7)^q",
+    "L_index_over_M": 3,
+    "isotropic_subgroup": "H=<3 alpha>, |H|=3",
+    "marked_class": "alpha=[u_i] in M*/M",
+    "marked_class_order": 9,
+    "marked_class_quadratic_value": "q(alpha)=14/9=5/9 mod Z",
+    "marked_vectors_in_L": {
+      "adjacent_inner_product": -8,
+      "count": 99,
+      "frame_operator": "sum_i (3u_i)(3u_i)^T=63I",
+      "nonadjacent_inner_product": 1,
+      "norm": 28,
+      "vectors": "3u_i"
+    },
+    "minimum_K_lower_bound": 14
+  },
+  "scope": "conditional on the Wave66 lattice package and Skoruppa's theorem",
+  "short_vector_dictionary": {
+    "L_dual_fractional_parameter": "a is 0, 33, or 66 modulo 99",
+    "bijection": "K vectors of norm n<=18 correspond to integer t with sum(t)=0, At=-4t, and sum(t_i^2)=n",
+    "classification": {
+      "exact_profile_counts": {
+        "14": 3,
+        "16": 8,
+        "18": 8
+      },
+      "excluded_norm18_mixed_profile": {
+        "forced_induced_edge_lower_bound": 36,
+        "profile_up_to_sign": "six +1, eight -1, one +2",
+        "spectral_upper_bound_on_15_vertices": 35
+      },
+      "norm14_forced_design": {
+        "incidence_design": "symmetric 2-(7,4,2), complement of the Fano plane",
+        "outside_15_independent": true,
+        "outside_incidence_design": "2-(15,3,2) on 70 blocks",
+        "outside_partition_sizes": [
+          70,
+          15
+        ],
+        "support_graph": "4-regular bipartite graph on 7+7"
+      },
+      "post_coordinate_and_weight8_elimination": {
+        "14": [
+          "seven +1 and seven -1"
+        ],
+        "16": [
+          "eight +1 and eight -1"
+        ],
+        "18": [
+          "nine +1 and nine -1"
+        ]
+      },
+      "raw_profiles": {
+        "14": [
+          {
+            "+1": 7,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 7,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 14
+          },
+          {
+            "+1": 6,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 4,
+            "-2": 1,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 10
+          },
+          {
+            "+1": 4,
+            "+2": 1,
+            "+3": 0,
+            "+4": 0,
+            "-1": 6,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 10
+          }
+        ],
+        "16": [
+          {
+            "+1": 8,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 8,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 16
+          },
+          {
+            "+1": 7,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 5,
+            "-2": 1,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 12
+          },
+          {
+            "+1": 6,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 2,
+            "-2": 2,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 8
+          },
+          {
+            "+1": 5,
+            "+2": 1,
+            "+3": 0,
+            "+4": 0,
+            "-1": 7,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 12
+          },
+          {
+            "+1": 4,
+            "+2": 1,
+            "+3": 0,
+            "+4": 0,
+            "-1": 4,
+            "-2": 1,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 8
+          },
+          {
+            "+1": 2,
+            "+2": 2,
+            "+3": 0,
+            "+4": 0,
+            "-1": 6,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 8
+          },
+          {
+            "+1": 5,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 2,
+            "-2": 0,
+            "-3": 1,
+            "-4": 0,
+            "odd_support": 8
+          },
+          {
+            "+1": 2,
+            "+2": 0,
+            "+3": 1,
+            "+4": 0,
+            "-1": 5,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 8
+          }
+        ],
+        "18": [
+          {
+            "+1": 9,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 9,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 18
+          },
+          {
+            "+1": 8,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 6,
+            "-2": 1,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 14
+          },
+          {
+            "+1": 7,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 3,
+            "-2": 2,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 10
+          },
+          {
+            "+1": 6,
+            "+2": 1,
+            "+3": 0,
+            "+4": 0,
+            "-1": 8,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 14
+          },
+          {
+            "+1": 5,
+            "+2": 1,
+            "+3": 0,
+            "+4": 0,
+            "-1": 5,
+            "-2": 1,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 10
+          },
+          {
+            "+1": 3,
+            "+2": 2,
+            "+3": 0,
+            "+4": 0,
+            "-1": 7,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 10
+          },
+          {
+            "+1": 6,
+            "+2": 0,
+            "+3": 0,
+            "+4": 0,
+            "-1": 3,
+            "-2": 0,
+            "-3": 1,
+            "-4": 0,
+            "odd_support": 10
+          },
+          {
+            "+1": 3,
+            "+2": 0,
+            "+3": 1,
+            "+4": 0,
+            "-1": 6,
+            "-2": 0,
+            "-3": 0,
+            "-4": 0,
+            "odd_support": 10
+          }
+        ]
+      },
+      "signed_support_edge_bounds": {
+        "14": {
+          "induced_edges": "28+4h",
+          "spectral_bound": "287/9",
+          "surviving_h": [
+            0
+          ]
+        },
+        "16": {
+          "common_neighbor_count_excludes_h": [
+            1
+          ],
+          "induced_edges": "32+4h",
+          "spectral_bound": "344/9",
+          "spectral_survivors_h": [
+            0,
+            1
+          ],
+          "surviving_h": [
+            0
+          ]
+        },
+        "18": {
+          "h2_requires_disjoint_same_sign_edges": true,
+          "induced_edges": "36+4h",
+          "spectral_bound": "45",
+          "surviving_h": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "nonintegral_energy_lower_bound": "sum_i t_i^2 >= 22",
+    "norm_at_most_18_over_7_forces_a_zero": true
+  }
+}

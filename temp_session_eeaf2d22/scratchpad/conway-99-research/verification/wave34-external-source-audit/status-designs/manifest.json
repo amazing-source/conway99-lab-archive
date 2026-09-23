@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "audit_id": "wave34-external-source-audit-status-designs",
+  "generated_at_utc": "2026-07-24T21:42:00Z",
+  "root": "verification/wave34-external-source-audit/status-designs",
+  "manifest_policy": "This manifest lists every audit artifact except itself, avoiding a recursive self-hash.",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "audit.md",
+      "bytes": 8669,
+      "sha256": "998554196853a8608b4c4f07059dc30e9e0c3cbc28d43bd569bba6d3f233aac6",
+      "purpose": "Human-readable independent source audit"
+    },
+    {
+      "path": "results.json",
+      "bytes": 13844,
+      "sha256": "802c6b2c0cf77f4e64cfb4232f21afc10cf3ffe15d5042d0b9ba6eabb51621d3",
+      "purpose": "Machine-readable remote metadata, assessments, caveats, and global status"
+    },
+    {
+      "path": "run-report.yaml",
+      "bytes": 3233,
+      "sha256": "3ca28172a2130e423cbd4b7c30554df39e9a7dad5ccc29159b4a2c47cf506077",
+      "purpose": "AGENTS.md run-report record"
+    },
+    {
+      "path": "recheck_live_sources.ps1",
+      "bytes": 4465,
+      "sha256": "7168f609d7e6555af2beea0306383507eb2ae6480cff27a319a5ed64015dc6e6",
+      "purpose": "In-memory live byte/hash and Rijeka index-count reproduction"
+    },
+    {
+      "path": "validate_results.py",
+      "bytes": 2977,
+      "sha256": "866454c7dd34bf4463fa6f9cba71ba289ed97ed65d7e00d2837baf608e880f71",
+      "purpose": "Offline structural and manifest validator"
+    }
+  ],
+  "remote_payload_files": [],
+  "validation_command": "python verification/wave34-external-source-audit/status-designs/validate_results.py"
+}

@@ -1,0 +1,52 @@
+role: verifier
+date_utc: 2026-07-28T00:18:23Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: VERIFIED
+scope: >-
+  Conditional second verification of the Wave81 verifier-derived
+  graphicality refinement on the previously verified 43+7 outside
+  type-degree histogram domain.
+inputs:
+  - path: verification/wave81-norm16-graphical-refinement/input-freeze.sha256
+    sha256: aecebfac5690ec70fb0248a210dcec8090a4e9243b2b96db15da68de7cc6ee50
+  - path: attempts/wave81-norm16-labeled-design/exact-results.json
+    sha256: b9cde2a059c15c3efe5e0f7cd5508e5a68238869c675189ca479c5d206d33707
+  - path: verification/wave81-norm16-labeled-design/package-manifest.sha256
+    sha256: 311b7a0f8fbb330bf98c9d64d3517b9602ac86c818f830bb10f2bcc09091b0af
+  - path: verification/wave81-norm16-labeled-design/independent-results.json
+    sha256: 348fa25953bcc4df6055cb028ce45aa5f63df2cd2d3a86f3d89bb109f702ea28
+method: >-
+  Freeze the verified histogram domain; audit its two lanes, populations,
+  indexing, and uniqueness; reconstruct all six type-pair degree sequences
+  for every row; apply Erdos-Gallai and Havel-Hakimi independently to
+  induced sequences; apply Gale-Ryser and bipartite Havel-Hakimi
+  independently to cross-type sequences; compare the exact rejection set
+  and survivor counts to the source claim; and exhaust tiny simple and
+  bipartite graphs as hostile algorithm controls.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave81-norm16-graphical-refinement\independent_check.py
+  --verify
+  verification\wave81-norm16-graphical-refinement\independent-results.json ;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave81-norm16-graphical-refinement\test_independent_check.py
+outputs:
+  - path: verification/wave81-norm16-graphical-refinement/independent_check.py
+    sha256: 1f8aa86e64e46a0beb57f5c49a5774818a5d10c73e6a62ac365f588696f19117
+  - path: verification/wave81-norm16-graphical-refinement/independent-results.json
+    sha256: c95952ba6610a44b911268fa175746271794431cbbb2a0a1ed8e97e0acddea44
+  - path: verification/wave81-norm16-graphical-refinement/test_independent_check.py
+    sha256: 6849431a7961a156dfb5dd35c9fb70543e8ab1c243c27e7f9bff806bdc65bb51
+  - path: verification/wave81-norm16-graphical-refinement/derivation.md
+    sha256: 4be6e649eb7875881c6d818d3c3426ea26286c68df751720af0c6acc774995ff
+  - path: verification/wave81-norm16-graphical-refinement/hostile-controls.md
+    sha256: 8823b4187ec7660c9f230f7771d6b6dba2fa5e2cb79bfe93169c1258010a2299
+  - path: verification/wave81-norm16-graphical-refinement/verification-report.md
+    sha256: 0a44da48fe80d94e0ff3b7056c59b8197a64beb9702a50e160e4ed1ced460b82
+limitations:
+  - Conditional on the frozen and previously verified 43+7 histogram domain.
+  - Individual graphicality does not realize the six subgraphs simultaneously.
+  - No vertex-by-vertex common-neighbor system is solved.
+  - No 83-vertex outside graph is constructed.
+  - The norm-16 branch is not excluded.
+  - Conway-99 and novelty remain UNKNOWN.

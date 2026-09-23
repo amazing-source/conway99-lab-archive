@@ -1,0 +1,151 @@
+{
+  "checker_sha256": "73c1e60ab62adfba1cb5db89c156290201f0dab24d9a2c9e9d6d7d30b2da179c",
+  "claim_label": "VERIFIED",
+  "conway_99": "UNKNOWN",
+  "corrections": [],
+  "discovery_audit": {
+    "claim_label": "DERIVED",
+    "endpoint_status_not_inflated": true,
+    "format": "wave53-multi-root-wl-v1",
+    "internal_relation_hashes_valid": true,
+    "path": "attempts/wave53-multi-root-wl/exact-result.json",
+    "relation_comparisons": {
+      "B": {
+        "expanded_order": 323,
+        "intersection_parameter_nonzero_count": 32018,
+        "intersection_tensor_exactly_equivalent_under_color_bijection": true,
+        "stable_2wl_color_count": 584,
+        "stable_2wl_partition_exactly_equivalent": true,
+        "stable_3wl_class_size_multiset_matches": true,
+        "stable_3wl_color_count": 321,
+        "stored_2wl_partition_hash_valid": true,
+        "stored_3wl_tuple_partition_hash_reconstructible_from_envelope": false,
+        "stored_intersection_tensor_hash_valid": true
+      },
+      "C": {
+        "expanded_order": 325,
+        "intersection_parameter_nonzero_count": 12562,
+        "intersection_tensor_exactly_equivalent_under_color_bijection": true,
+        "stable_2wl_color_count": 321,
+        "stable_2wl_partition_exactly_equivalent": true,
+        "stable_3wl_class_size_multiset_matches": true,
+        "stable_3wl_color_count": 240,
+        "stored_2wl_partition_hash_valid": true,
+        "stored_3wl_tuple_partition_hash_reconstructible_from_envelope": false,
+        "stored_intersection_tensor_hash_valid": true
+      },
+      "D": {
+        "expanded_order": 326,
+        "intersection_parameter_nonzero_count": 1600,
+        "intersection_tensor_exactly_equivalent_under_color_bijection": true,
+        "stable_2wl_color_count": 63,
+        "stable_2wl_partition_exactly_equivalent": true,
+        "stable_3wl_class_size_multiset_matches": true,
+        "stable_3wl_color_count": 61,
+        "stored_2wl_partition_hash_valid": true,
+        "stored_3wl_tuple_partition_hash_reconstructible_from_envelope": false,
+        "stored_intersection_tensor_hash_valid": true
+      },
+      "K": {
+        "expanded_order": 319,
+        "intersection_parameter_nonzero_count": 11268,
+        "intersection_tensor_exactly_equivalent_under_color_bijection": true,
+        "stable_2wl_color_count": 285,
+        "stable_2wl_partition_exactly_equivalent": true,
+        "stable_3wl_class_size_multiset_matches": true,
+        "stable_3wl_color_count": 107,
+        "stored_2wl_partition_hash_valid": true,
+        "stored_3wl_tuple_partition_hash_reconstructible_from_envelope": false,
+        "stored_intersection_tensor_hash_valid": true
+      }
+    },
+    "sha256": "d99d89ef56cbd1f603cc8668b340bd7ad20993570899eaf556ee4c9a7f400717"
+  },
+  "endpoint": "UNKNOWN",
+  "format": "wave53-multi-root-wl-independent-v1",
+  "limitations": [
+    "The verified objects are finite two-root local relaxations.",
+    "The exact-two right side is checked separately from the WL token structure.",
+    "The 3-WL computation is the correlated-replacement folklore variant on triangle cores only.",
+    "Discovery omits the triple-color vector, so its stored 3-WL tuple-partition hash is not reconstructible from that JSON alone; independent recomputation verifies the claimed count and class-size multiset.",
+    "Positive controls establish only local cap feasibility.",
+    "No root relation is excluded."
+  ],
+  "relation_record_sha256s": {
+    "B": "d67da706afd87580133ad736a06b5fd78872138ee6a0c3e0810b7e01de93925d",
+    "C": "09a13f0648daa1ef1614de47d4ccf45d784f5308f38f6ad421188439eb849bc5",
+    "D": "c2a103e3093373bc76c5470c275a76a9738a02fdcc33f7820f3e8f66de67473d",
+    "K": "409c8e308bfa16038f5b11cb3ba16d1c609ecd4d3b1d43a0d2e4490f9e1a6178"
+  },
+  "summary": {
+    "B": {
+      "B_matching_and_prism_force_checked": true,
+      "all_candidate_merges_structural": true,
+      "all_caps_size_six": true,
+      "candidate_count": 215,
+      "cap_count": 72,
+      "common_K_neighbor_count": 2,
+      "expanded_order": 323,
+      "forced_true_count": 1,
+      "intersection_parameter_nonzero_count": 32018,
+      "no_arbitrary_completion": true,
+      "positive_control_selected_unique_count": 71,
+      "shared_candidate_count": 1,
+      "stable_2wl_color_count": 584,
+      "stable_3wl_color_count": 321,
+      "triangle_core_order": 36
+    },
+    "C": {
+      "B_matching_and_prism_force_checked": true,
+      "all_candidate_merges_structural": true,
+      "all_caps_size_six": true,
+      "candidate_count": 216,
+      "cap_count": 72,
+      "common_K_neighbor_count": 1,
+      "expanded_order": 325,
+      "forced_true_count": 0,
+      "intersection_parameter_nonzero_count": 12562,
+      "no_arbitrary_completion": true,
+      "positive_control_selected_unique_count": 72,
+      "shared_candidate_count": 0,
+      "stable_2wl_color_count": 321,
+      "stable_3wl_color_count": 240,
+      "triangle_core_order": 37
+    },
+    "D": {
+      "B_matching_and_prism_force_checked": true,
+      "all_candidate_merges_structural": true,
+      "all_caps_size_six": true,
+      "candidate_count": 216,
+      "cap_count": 72,
+      "common_K_neighbor_count": 0,
+      "expanded_order": 326,
+      "forced_true_count": 0,
+      "intersection_parameter_nonzero_count": 1600,
+      "no_arbitrary_completion": true,
+      "positive_control_selected_unique_count": 72,
+      "shared_candidate_count": 0,
+      "stable_2wl_color_count": 63,
+      "stable_3wl_color_count": 61,
+      "triangle_core_order": 38
+    },
+    "K": {
+      "B_matching_and_prism_force_checked": true,
+      "all_candidate_merges_structural": true,
+      "all_caps_size_six": true,
+      "candidate_count": 216,
+      "cap_count": 72,
+      "common_K_neighbor_count": 5,
+      "expanded_order": 319,
+      "forced_true_count": 0,
+      "intersection_parameter_nonzero_count": 11268,
+      "no_arbitrary_completion": true,
+      "positive_control_selected_unique_count": 72,
+      "shared_candidate_count": 0,
+      "stable_2wl_color_count": 285,
+      "stable_3wl_color_count": 107,
+      "triangle_core_order": 31
+    }
+  },
+  "verified_scope": "the four finite two-root cap-incidence templates and their exact 2-WL/triangle-core folklore-3-WL computations"
+}

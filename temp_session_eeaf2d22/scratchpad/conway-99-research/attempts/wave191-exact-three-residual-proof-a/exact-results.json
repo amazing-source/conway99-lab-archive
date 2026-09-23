@@ -1,0 +1,168 @@
+{
+  "capacity": {
+    "joint": "delta+3*h+2*Y>=2*p2+p3",
+    "penalty": "delta/2+h/2+Y>=p2/3+p3/2",
+    "type2_and_unused_exact1": "2*p2<=u+3*h",
+    "type3": "delta+2*Y>=p3",
+    "type3_and_unused_exact1": "p3+u<=delta+Z<=delta+2*Y"
+  },
+  "claim_label": "DERIVED_INDEPENDENT_AUDIT_PASS_PENDING_SEALED_VERIFICATION",
+  "coefficient_certificate": {
+    "C": 4158,
+    "circuit_scalar_words": 13860,
+    "coefficient_row": [
+      18,
+      12,
+      24,
+      16,
+      12
+    ],
+    "edge_added_projective": 6930,
+    "identity": "12Q>=9I+6*(p2-n2)+p2+3*(p3-n3)>=18C",
+    "identity_row": [
+      18,
+      12,
+      24,
+      16,
+      12
+    ],
+    "three_C_over_two": 6237
+  },
+  "local": {
+    "all_equal_gram_product": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "all_equal_word": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "canonical_gram": [
+      [
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "checkerboard_difference_profiles": [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "checkerboard_gram_product": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "checkerboard_kernel": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "leaf": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "owner_center_c4": [
+      2,
+      2,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "owner_center_difference": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "owner_center_difference_profile": [
+      0,
+      6
+    ],
+    "target_c5_difference": [
+      0,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "target_c5_difference_profile": [
+      2,
+      2
+    ]
+  },
+  "null_control": {
+    "A": 2079,
+    "B": 4158,
+    "I": 8316,
+    "counted_Q": 6237,
+    "delta_definition": 1,
+    "raw_capacity": 2079,
+    "residual_capacity": 2078,
+    "row": {
+      "Q": 6237,
+      "Y": 1039,
+      "delta": 1,
+      "h": 0,
+      "n1": 0,
+      "n2": 0,
+      "n3": 2079,
+      "p2": 0,
+      "p3": 2079,
+      "r": 1040,
+      "r1": 1
+    }
+  },
+  "search_scope": "fixed F3 vectors and scalar identities only; no graph, cover, code, SAT, LP, configuration, enumeration, or isomorphism search"
+}

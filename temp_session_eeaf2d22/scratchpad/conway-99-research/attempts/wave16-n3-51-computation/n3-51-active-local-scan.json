@@ -1,0 +1,497 @@
+{
+  "candidate_paths": [
+    "attempts/wave16-n3-51-computation/n3-51-r16-q2x14-q3x2-no-size3-active-local-candidate.json"
+  ],
+  "claim_label": "CANDIDATE",
+  "conditional_n3_51_exclusion": "UNKNOWN",
+  "conflict_budget_per_branch": 30000,
+  "coverage_argument": [
+    "the independently enumerated q-multiset is sorted using arbitrary active-label names",
+    "the exact finite reductions leave the seven listed branches",
+    "an assignment either has no selected triple or has a selected triple of an enumerated q-composition",
+    "equal-q class permutations name one such triple without assuming a completed-graph automorphism"
+  ],
+  "encoded_premises": [
+    "exactly three selected non-singleton point sets pass through each active label",
+    "all selected point sizes are two or three",
+    "the selected point family is linear",
+    "F is exactly the union of selected point-clique edges",
+    "every selected point is a clique in K",
+    "every F-triangle is its selected size-three point",
+    "meeting crossings have two-sided L-degrees in {0,2}: singleton-side crossings are L-empty and 2-by-2 crossings are L-empty or L-complete",
+    "full 2-by-2 L-overlap counts obey the inherited fixed-point upper cap at each selected triple",
+    "every active label has its exact profile-specific K-degree"
+  ],
+  "negative_result_policy": "UNSAT, budget, and timeout returns have no force without an emitted and independently checked proof trace",
+  "novelty": "UNKNOWN",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "python_sat": "1.9.dev7",
+  "results": [
+    {
+      "branch": {
+        "branch_id": "root-q3x0",
+        "normalization": "one selected triple is named using only permutations within the equal-q label classes; no completed-graph automorphism is assumed",
+        "root_point": [
+          0,
+          1,
+          2
+        ],
+        "root_q3_count": 0,
+        "root_q_values": [
+          2,
+          2,
+          2
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 2312884,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 2.3574398999335244,
+        "builder_source": "code/wave16_n3_51_active_sat.py",
+        "builder_source_sha256": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+        "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+        "materialized_clause_count": 2312885,
+        "materialized_dimacs_sha256": "344f3a6f612f8d9953a7dcd987c12915409cc9b5e2b7fc63400cc11f02737945",
+        "profile_source": "code/wave16_n3_51_profiles.py",
+        "profile_source_sha256": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c",
+        "variable_count": 662354
+      },
+      "profile_id": "r17-q2x17",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 6.193622099934146,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 20667,
+          "decisions": 65984,
+          "propagations": 70243975,
+          "restarts": 86
+        },
+        "timer_fired": true,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "TIMEOUT_UNKNOWN",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "no-size3",
+        "normalization": "all selected size-three points are absent",
+        "root_point": null,
+        "root_q3_count": null,
+        "root_q_values": null
+      },
+      "candidate_file_sha256": "96680888b27229819cdc7b59a95558134369f42a32a63925c7653130c28414ef",
+      "candidate_path": "attempts/wave16-n3-51-computation/n3-51-r16-q2x14-q3x2-no-size3-active-local-candidate.json",
+      "candidate_semantic_sha256": "d858ceae9ec4f6722c5b73a103bdc68a6b2c55f34db20295ec57b59864896c82",
+      "evidentiary_status": "POSITIVE_ASSIGNMENT_REQUIRES_EXACT_VALIDATION",
+      "formula": {
+        "base_clause_count": 1645848,
+        "branch_unit_count": 560,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 2.2046828999882564,
+        "builder_source": "code/wave16_n3_51_active_sat.py",
+        "builder_source_sha256": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+        "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+        "materialized_clause_count": 1646408,
+        "materialized_dimacs_sha256": "ec45a872696abb49c6f168294f5ff5f7f60ba1ddcb9d52d1d627e5b46a3f20e3",
+        "profile_source": "code/wave16_n3_51_profiles.py",
+        "profile_source_sha256": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c",
+        "variable_count": 472338
+      },
+      "profile_id": "r16-q2x14-q3x2",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 0.9071306000696495,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 373,
+          "decisions": 8196,
+          "propagations": 1861853,
+          "restarts": 3
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "SAT_CANDIDATE",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x0",
+        "normalization": "one selected triple is named using only permutations within the equal-q label classes; no completed-graph automorphism is assumed",
+        "root_point": [
+          0,
+          1,
+          2
+        ],
+        "root_q3_count": 0,
+        "root_q_values": [
+          2,
+          2,
+          2
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1645848,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 2.2046828999882564,
+        "builder_source": "code/wave16_n3_51_active_sat.py",
+        "builder_source_sha256": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+        "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+        "materialized_clause_count": 1645849,
+        "materialized_dimacs_sha256": "7ad174733bc95b036d1ab34dc537e04f2e22189c79e8d433fe63226f07d518a5",
+        "profile_source": "code/wave16_n3_51_profiles.py",
+        "profile_source_sha256": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c",
+        "variable_count": 472338
+      },
+      "profile_id": "r16-q2x14-q3x2",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 5.912721899920143,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 19788,
+          "decisions": 54167,
+          "propagations": 67931535,
+          "restarts": 110
+        },
+        "timer_fired": true,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "TIMEOUT_UNKNOWN",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x1",
+        "normalization": "one selected triple is named using only permutations within the equal-q label classes; no completed-graph automorphism is assumed",
+        "root_point": [
+          0,
+          1,
+          14
+        ],
+        "root_q3_count": 1,
+        "root_q_values": [
+          2,
+          2,
+          3
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1645848,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 2.2046828999882564,
+        "builder_source": "code/wave16_n3_51_active_sat.py",
+        "builder_source_sha256": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+        "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+        "materialized_clause_count": 1645849,
+        "materialized_dimacs_sha256": "f622aa928be453afd46c3cdb13718f381e0c8063b2094f24ad42f6a138669c58",
+        "profile_source": "code/wave16_n3_51_profiles.py",
+        "profile_source_sha256": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c",
+        "variable_count": 472338
+      },
+      "profile_id": "r16-q2x14-q3x2",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 6.596789599978365,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 23978,
+          "decisions": 51548,
+          "propagations": 94507004,
+          "restarts": 73
+        },
+        "timer_fired": true,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "TIMEOUT_UNKNOWN",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x2",
+        "normalization": "one selected triple is named using only permutations within the equal-q label classes; no completed-graph automorphism is assumed",
+        "root_point": [
+          0,
+          14,
+          15
+        ],
+        "root_q3_count": 2,
+        "root_q_values": [
+          2,
+          3,
+          3
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1645848,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 2.2046828999882564,
+        "builder_source": "code/wave16_n3_51_active_sat.py",
+        "builder_source_sha256": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+        "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+        "materialized_clause_count": 1645849,
+        "materialized_dimacs_sha256": "f0a408306ba86e88a9b2a40d47c7eb2e0e9180acb5cada3dabda7d23b7b65fa0",
+        "profile_source": "code/wave16_n3_51_profiles.py",
+        "profile_source_sha256": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c",
+        "variable_count": 472338
+      },
+      "profile_id": "r16-q2x14-q3x2",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 5.876727299997583,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 24729,
+          "decisions": 53198,
+          "propagations": 103694991,
+          "restarts": 88
+        },
+        "timer_fired": true,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "TIMEOUT_UNKNOWN",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x0",
+        "normalization": "one selected triple is named using only permutations within the equal-q label classes; no completed-graph automorphism is assumed",
+        "root_point": [
+          0,
+          1,
+          2
+        ],
+        "root_q3_count": 0,
+        "root_q_values": [
+          2,
+          2,
+          2
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1159567,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.4226483999518678,
+        "builder_source": "code/wave16_n3_51_active_sat.py",
+        "builder_source_sha256": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+        "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+        "materialized_clause_count": 1159568,
+        "materialized_dimacs_sha256": "9fffa5128566092d63f6195a4fba1e512fc81fdcb8e84888a8c832079193a073",
+        "profile_source": "code/wave16_n3_51_profiles.py",
+        "profile_source_sha256": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c",
+        "variable_count": 337321
+      },
+      "profile_id": "r15-q2x11-q3x4",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 5.896296499995515,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 30136,
+          "decisions": 60860,
+          "propagations": 142137244,
+          "restarts": 106
+        },
+        "timer_fired": true,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "TIMEOUT_UNKNOWN",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x0",
+        "normalization": "one selected triple is named using only permutations within the equal-q label classes; no completed-graph automorphism is assumed",
+        "root_point": [
+          0,
+          1,
+          2
+        ],
+        "root_q3_count": 0,
+        "root_q_values": [
+          2,
+          2,
+          2
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 804058,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.2331695000175387,
+        "builder_source": "code/wave16_n3_51_active_sat.py",
+        "builder_source_sha256": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+        "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+        "materialized_clause_count": 804059,
+        "materialized_dimacs_sha256": "391fe91f002ff3151caafe8a6f9ef760caa838f617f8c4c93635cd7170f6a883",
+        "profile_source": "code/wave16_n3_51_profiles.py",
+        "profile_source_sha256": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c",
+        "variable_count": 239279
+      },
+      "profile_id": "r14-q2x8-q3x6",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 2.199254200095311,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 13770,
+          "decisions": 22186,
+          "propagations": 50507774,
+          "restarts": 46
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "UNSAT_UNVERIFIED",
+      "variant": "full"
+    }
+  ],
+  "schema": "conway99-wave16-n3-51-active-local-scan-v1",
+  "scope": "complete seven-branch cover of the encoded active-local relaxation after the pending-audit finite reductions",
+  "semantic": {
+    "coverage": [
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r17-q2x17"
+      },
+      {
+        "branch_id": "no-size3",
+        "profile_id": "r16-q2x14-q3x2"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r16-q2x14-q3x2"
+      },
+      {
+        "branch_id": "root-q3x1",
+        "profile_id": "r16-q2x14-q3x2"
+      },
+      {
+        "branch_id": "root-q3x2",
+        "profile_id": "r16-q2x14-q3x2"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r15-q2x11-q3x4"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r14-q2x8-q3x6"
+      }
+    ],
+    "results": [
+      {
+        "branch_id": "root-q3x0",
+        "candidate_file_sha256": null,
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "344f3a6f612f8d9953a7dcd987c12915409cc9b5e2b7fc63400cc11f02737945",
+        "profile_id": "r17-q2x17",
+        "status": "TIMEOUT_UNKNOWN"
+      },
+      {
+        "branch_id": "no-size3",
+        "candidate_file_sha256": "96680888b27229819cdc7b59a95558134369f42a32a63925c7653130c28414ef",
+        "candidate_semantic_sha256": "d858ceae9ec4f6722c5b73a103bdc68a6b2c55f34db20295ec57b59864896c82",
+        "formula_sha256": "ec45a872696abb49c6f168294f5ff5f7f60ba1ddcb9d52d1d627e5b46a3f20e3",
+        "profile_id": "r16-q2x14-q3x2",
+        "status": "SAT_CANDIDATE"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "candidate_file_sha256": null,
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "7ad174733bc95b036d1ab34dc537e04f2e22189c79e8d433fe63226f07d518a5",
+        "profile_id": "r16-q2x14-q3x2",
+        "status": "TIMEOUT_UNKNOWN"
+      },
+      {
+        "branch_id": "root-q3x1",
+        "candidate_file_sha256": null,
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "f622aa928be453afd46c3cdb13718f381e0c8063b2094f24ad42f6a138669c58",
+        "profile_id": "r16-q2x14-q3x2",
+        "status": "TIMEOUT_UNKNOWN"
+      },
+      {
+        "branch_id": "root-q3x2",
+        "candidate_file_sha256": null,
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "f0a408306ba86e88a9b2a40d47c7eb2e0e9180acb5cada3dabda7d23b7b65fa0",
+        "profile_id": "r16-q2x14-q3x2",
+        "status": "TIMEOUT_UNKNOWN"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "candidate_file_sha256": null,
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "9fffa5128566092d63f6195a4fba1e512fc81fdcb8e84888a8c832079193a073",
+        "profile_id": "r15-q2x11-q3x4",
+        "status": "TIMEOUT_UNKNOWN"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "candidate_file_sha256": null,
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "391fe91f002ff3151caafe8a6f9ef760caa838f617f8c4c93635cd7170f6a883",
+        "profile_id": "r14-q2x8-q3x6",
+        "status": "UNSAT_UNVERIFIED"
+      }
+    ],
+    "target_n3": 51,
+    "variant": "full"
+  },
+  "semantic_sha256": "006a64613c0d250eb321c1ac06a4056b0b7e970a547983f1e2b6db733bb79c33",
+  "solver_name": "glucose42",
+  "source_provenance": {
+    "attempts/wave16-n3-51-computation/n3-51-profile-census.json": "f16acb933a6d54e3a96e97521cf3e06b6e04bac06dbf72376fb67a462eec0ffe",
+    "code/wave16_n3_51_active_sat.py": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+    "code/wave16_n3_51_profiles.py": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c"
+  },
+  "starting_git_commit": "861cfeb6195b19b08feceff07be88a6ab5093fd4",
+  "target_result": "UNKNOWN",
+  "unencoded_premises": [
+    "inactive point sets and inactive graph vertices",
+    "which disjoint selected points are adjacent original vertices",
+    "fixed support contributed by disjoint point sets",
+    "equality completion of every fixed-point support sum",
+    "the 693-vertex H graph",
+    "a 99-vertex adjacency matrix",
+    "global SRG lambda/mu equations"
+  ],
+  "wall_timeout_seconds_per_branch": 5.0
+}

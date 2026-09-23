@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "field": "seven_vertex_classes",
+      "outcome": "MATCH",
+      "value": 208
+    },
+    {
+      "field": "deletion_equations",
+      "outcome": "MATCH",
+      "value": 62
+    },
+    {
+      "field": "hamiltonian_equations",
+      "outcome": "MATCH",
+      "value": 19
+    },
+    {
+      "field": "full_constraint_sparse_nonzeros",
+      "outcome": "MATCH",
+      "value": 976
+    },
+    {
+      "field": "h11",
+      "outcome": "MATCH",
+      "value": 16632
+    },
+    {
+      "field": "support_size",
+      "outcome": "MATCH",
+      "value": 99
+    },
+    {
+      "field": "zero_count_classes",
+      "outcome": "MATCH",
+      "value": 109
+    },
+    {
+      "field": "seven_subset_total",
+      "outcome": "MATCH",
+      "value": 14887031544
+    },
+    {
+      "field": "prism_containing_class_count",
+      "outcome": "MATCH",
+      "value": 3
+    },
+    {
+      "field": "all_prism_containing_classes_zero",
+      "outcome": "MATCH",
+      "value": true
+    },
+    {
+      "field": "support_sha256",
+      "outcome": "MATCH",
+      "value": "b8217a567509036c84d0cab74d9f3ef57f69f97e9ad909b30446a73134e3c487"
+    },
+    {
+      "field": "support_records",
+      "outcome": "MATCH",
+      "value": "b8217a567509036c84d0cab74d9f3ef57f69f97e9ad909b30446a73134e3c487"
+    },
+    {
+      "field": "order_seven_feasibility",
+      "outcome": "MATCH",
+      "value": "FEASIBLE"
+    }
+  ],
+  "claim_label": "VERIFIED",
+  "discovery_result_sha256": "06b498a736a511a7d6f5912bd4686e5d4eb30f4041477e3ee9cbc1704f1757c8",
+  "format": "wave43-seven-deck-frozen-comparison-v1",
+  "independent_only_recomputations": {
+    "all_19_hamiltonian_residuals_zero": true,
+    "all_62_deck_residuals_zero": true,
+    "deletion_matrix_sha256": "8a969f988a2d2451d6bff472822a5a9c7174cd0ee5f7dab00bbcec135445e5c4",
+    "hamiltonian_counts_sha256": "d5c656dfd4026d680464c2e47388d6cec68d04156ac8197bf0801e4217405c58",
+    "seven_class_stream_sha256": "6d4a9643e0377fabd32f2fad5fb284d48dee9612fc5910f96796ee2dd348f0b6",
+    "six_class_stream_sha256": "eb49cbaa20bfa2c6a64d56a0500a6ed1525727e9fa639d2b577b2862cb7a197a",
+    "six_counts_sha256": "7d8c760db421a1dfd07be1fec83f4c963c79e4c92c4c9985de2b9cdc34f1a66d"
+  },
+  "independent_result_sha256": "e38f369d338fada4a561d48019f306511961dd1fd7816e54a12a9ecb09e69f3b",
+  "scope_wall": "The comparison verifies feasibility of the finite unrooted count relaxation only; it is not a graph realization or endpoint result."
+}

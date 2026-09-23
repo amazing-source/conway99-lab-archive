@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "document_role": "immutable pre-search query plan",
+  "execution_results": "query-results.json",
+  "frozen_before_search_utc": "2026-07-24T02:33:38Z",
+  "search_through_utc": "2026-07-24",
+  "public_base_commit": "d76d030f6d74e2e1b7ca2b2f0f97536241b3a10b",
+  "candidate_independent_terminology": true,
+  "default_status": "UNKNOWN",
+  "queries": [
+    {
+      "id": "G01",
+      "lane": "target_status",
+      "query": "\"srg(99,14,1,2)\"",
+      "purpose": "Exact parameter-set resolution, construction, or nonexistence",
+      "planned_services": ["web_search", "arxiv", "official_graph_catalogues"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "G02",
+      "lane": "target_status",
+      "query": "\"strongly regular graph\" \"99\" \"14\" \"1\" \"2\"",
+      "purpose": "Alternate typography for the exact parameter set",
+      "planned_services": ["web_search", "bibliographic_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "G03",
+      "lane": "target_status",
+      "query": "\"Conway's 99-graph problem\" OR \"Conway 99 graph\"",
+      "purpose": "Named-problem status and later citations",
+      "planned_services": ["web_search", "arxiv"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "G04",
+      "lane": "target_status",
+      "query": "site:arxiv.org (\"99,14,1,2\" OR \"99-graph\")",
+      "purpose": "Current preprints using exact parameters or name",
+      "planned_services": ["web_search", "arxiv"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "G05",
+      "lane": "target_status",
+      "query": "\"99, 14, 1, 2\" graph construction nonexistence",
+      "purpose": "Construction/nonexistence language with spaced parameters",
+      "planned_services": ["web_search", "bibliographic_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "L01",
+      "lane": "scaled_dual_lattices",
+      "query": "\"rank 44\" even lattice \"21\" dual determinant",
+      "purpose": "Classification or examples with the exact rank and scaled dual",
+      "planned_services": ["web_search", "arxiv", "zbmath"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "L02",
+      "lane": "scaled_dual_lattices",
+      "query": "\"21 L^*\" lattice OR \"21L*\" lattice",
+      "purpose": "Exact containment notation",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "L03",
+      "lane": "scaled_dual_lattices",
+      "query": "\"21-modular\" lattice rank 44",
+      "purpose": "Nearby modular/strongly modular theorems and hypothesis check",
+      "planned_services": ["web_search", "arxiv", "bibliographic_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "L04",
+      "lane": "scaled_dual_lattices",
+      "query": "\"3-elementary\" even lattice rank 44 determinant 729",
+      "purpose": "Exact h=729 elementary discriminant row",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "L05",
+      "lane": "scaled_dual_lattices",
+      "query": "\"7-elementary\" even lattice rank 44",
+      "purpose": "Exact 7-primary rank row terminology",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "D01",
+      "lane": "discriminant_glue",
+      "query": "finite quadratic forms odd p elementary discriminant lattice Milgram formula",
+      "purpose": "Primary theorem sources for finite quadratic forms and signature phase",
+      "planned_services": ["web_search", "bibliographic_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "D02",
+      "lane": "discriminant_glue",
+      "query": "Nikulin integral symmetric bilinear forms discriminant forms isotropic subgroup overlattice",
+      "purpose": "Primary source for even overlattice/isotropic-subgroup correspondence",
+      "planned_services": ["web_search", "bibliographic_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "D03",
+      "lane": "discriminant_glue",
+      "query": "root lattice primitive closure rootless complement glue code ADE discriminant form",
+      "purpose": "Prior formulation of the root-closure/glue decomposition",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "D04",
+      "lane": "discriminant_glue",
+      "query": "\"rank 44\" \"Milgram\" discriminant form 3 7 lattice",
+      "purpose": "Exact combined rank/local-prime application",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "T01",
+      "lane": "theta_controls",
+      "query": "Coxeter Todd lattice K12 determinant 729 minimum 4 756",
+      "purpose": "Primary/catalogue support for K12 attributed properties",
+      "planned_services": ["web_search", "author_catalogue", "bibliographic_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "T02",
+      "lane": "theta_controls",
+      "query": "Nebe Sloane K12 lattice catalogue Gram matrix",
+      "purpose": "Canonical matrix source and catalogue field inspection",
+      "planned_services": ["web_search", "author_catalogue"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "T03",
+      "lane": "theta_controls",
+      "query": "Koch Venkov 32 dimensional extremal even unimodular lattice Lambda(F)",
+      "purpose": "Primary paper and attributed rank/minimum/unimodularity",
+      "planned_services": ["web_search", "bibliographic_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "T04",
+      "lane": "theta_controls",
+      "query": "Nebe Sloane KV32F lattice catalogue Gram matrix",
+      "purpose": "Canonical KV32F matrix source and catalogue field inspection",
+      "planned_services": ["web_search", "author_catalogue"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "T05",
+      "lane": "theta_controls",
+      "query": "\"K12\" \"Lambda(F)\" lattice",
+      "purpose": "Exact orthogonal-sum pairing in prior literature",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "T06",
+      "lane": "theta_controls",
+      "query": "\"E6^6\" \"E8\" theta lattice",
+      "purpose": "Exact rooted comparison object in prior literature",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "T07",
+      "lane": "theta_controls",
+      "query": "\"K12\" \"E6^6\" discriminant form",
+      "purpose": "Exact same-Weil-representation comparison",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "N01",
+      "lane": "simultaneous_neighbor",
+      "query": "Kneser 2-neighbor lattice construction even integral lattice",
+      "purpose": "Primary/standard one-lattice neighbor theorem",
+      "planned_services": ["web_search", "bibliographic_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "N02",
+      "lane": "simultaneous_neighbor",
+      "query": "\"simultaneous\" \"2-neighbor\" lattices",
+      "purpose": "Exact simultaneous terminology",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "N03",
+      "lane": "simultaneous_neighbor",
+      "query": "\"Kneser neighbor\" paired quadratic forms",
+      "purpose": "Single basis change preserving a paired form package",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "N04",
+      "lane": "simultaneous_neighbor",
+      "query": "lattice neighbor contragredient quadratic form scaled dual",
+      "purpose": "Dual/contragredient neighbor literature",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "N05",
+      "lane": "simultaneous_neighbor",
+      "query": "\"two-neighbor\" endomorphism lattice Gram matrix",
+      "purpose": "Neighbor transformation of an auxiliary endomorphism package",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "F01",
+      "lane": "marked_frame",
+      "query": "\"231\" \"44\" tight frame lattice",
+      "purpose": "Exact size/dimension frame precedent",
+      "planned_services": ["web_search", "arxiv"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "F02",
+      "lane": "marked_frame",
+      "query": "231 norm four vectors rank 44 lattice",
+      "purpose": "Exact marked shell language",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "F03",
+      "lane": "marked_frame",
+      "query": "projector Gram matrix Schur square cubic moment tight frame lattice",
+      "purpose": "Combined projector/Hadamard-square/cubic framework",
+      "planned_services": ["web_search", "arxiv"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "F04",
+      "lane": "marked_frame",
+      "query": "\"cubic moment tensor\" tight frame spherical design",
+      "purpose": "Standard cubic-moment or spherical-design sources",
+      "planned_services": ["web_search", "arxiv"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "F05",
+      "lane": "marked_frame",
+      "query": "\"Hadamard square\" projector strongly regular graph frame",
+      "purpose": "Schur-square identities linking projectors and SRGs",
+      "planned_services": ["web_search", "arxiv"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "R01",
+      "lane": "root_image_patterns",
+      "query": "\"root image\" \"231\" lattice",
+      "purpose": "Named exact root-image code precedent",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "R02",
+      "lane": "root_image_patterns",
+      "query": "\"squared norm 42\" \"231\" lattice root",
+      "purpose": "Exact numerical root projection constraints",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "R03",
+      "lane": "root_image_patterns",
+      "query": "\"46 patterns\" \"32 patterns\" lattice",
+      "purpose": "Exact 46-to-32 pattern reduction",
+      "planned_services": ["web_search", "full_text_search"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    },
+    {
+      "id": "R04",
+      "lane": "root_image_patterns",
+      "query": "\"sum\" \"norm 42\" \"cubic energy\" root projection",
+      "purpose": "Structural rather than exact-count wording",
+      "planned_services": ["web_search", "arxiv"],
+      "status": "planned",
+      "hits": [],
+      "failures": []
+    }
+  ],
+  "global_failures": [],
+  "conclusion": {
+    "target_status": "UNKNOWN",
+    "n3_708_status": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  }
+}

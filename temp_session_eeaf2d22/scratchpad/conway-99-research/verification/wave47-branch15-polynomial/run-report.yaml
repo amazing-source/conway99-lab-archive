@@ -1,0 +1,54 @@
+role: verifier
+date_utc: 2026-07-27T18:06:48Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: VERIFIED
+scope: >-
+  Seven labelled mate-coordinate window subtheories in frozen branch 15,
+  using exact squarefree degree-2 polynomial calculus over F2, plus the exact
+  degree-four partition of the 34,340 active Wave 43 rows.
+inputs:
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz
+    sha256: 0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e
+  - path: attempts/wave42-endpoint-certificate/branch-15-combined-propagation-certificate.json
+    sha256: ab05feb596c25d0fbb872a0d92978355638218350bdf7606c248ca98ae2469ce
+  - path: attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-delta.opb.gz
+    sha256: 82a13e78e514cf35f27190da665bdedaf4fed28c7a6fa2856e22badf63f32797
+  - path: attempts/wave47-branch15-polynomial/degree2-window-result.json
+    sha256: d4689f7c9e469bf722d7553da700b47d98642c4404c566a0abc5a78149df4a3f
+method: >-
+  Clean-room OPB and propagation replay; complete Hamming-slice kernels over
+  F2; deterministic squarefree degree-two saturation; affine intersection;
+  mutual exact-block-only rowspace reduction; independent regeneration of all
+  sealed catalogue, echelon, RREF, and relation hashes; adversarial tests.
+command: |-
+  python verification\wave47-branch15-polynomial\independent_check.py --compute verification\wave47-branch15-polynomial\independent-result.json
+  python verification\wave47-branch15-polynomial\comparison_check.py --compute verification\wave47-branch15-polynomial\comparison.json
+  python -m unittest verification\wave47-branch15-polynomial\test_independent_check.py -v
+outputs:
+  - path: verification/wave47-branch15-polynomial/independent-result.json
+    sha256: 5cf6b0312274794681456ee7ccb1eb404b2930e4f63d13cfade56ba0c2dcf5f7
+  - path: verification/wave47-branch15-polynomial/comparison.json
+    sha256: 890acb510891eecbcd86210429b48d194612c46f1aa652e39119010b12cb3694
+result:
+  status: VERIFIED_SCOPED
+  input_hashes_match: true
+  propagation_assignments: 830
+  windows: 7
+  new_linear_rank_by_window: [2, 1, 2, 2, 2, 2, 2]
+  new_linear_rank_total: 13
+  new_assignments: 0
+  contradictions: 0
+  exact_blocks_only_mutual_rowspace_equality: true
+  wave43_active_rows: 34340
+  wave43_partition: [4141, 0, 5959, 6060, 6060, 6060, 6060]
+  wave43_all_negative_width_four: true
+  comparison_mismatches: 0
+  documentation_correction_required: true
+limitations:
+  - "The discovery README incorrectly says 24 exact-one plus 24 exact-two blocks; all 48 local full targets are one."
+  - "Zero new assignments is not an all-zero satisfying vector."
+  - "The seven overlapping vertex windows are restricted subtheories."
+  - "Wider, cross-window, and degree-four constraints are omitted from degree two."
+  - "No branch, endpoint, upper-bound, graph-existence, novelty, or Conway-99 claim is verified."

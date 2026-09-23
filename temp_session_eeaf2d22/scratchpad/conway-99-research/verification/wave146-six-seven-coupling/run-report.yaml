@@ -1,0 +1,44 @@
+role: verifier
+date_utc: 2026-07-28T11:12:17Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: VERIFIED
+scope: >-
+  Independent exact verification of the sealed Wave146 one-root
+  six-to-seven rational aggregate witness at n3=4158, plus the fixed repaired
+  profile contradiction. Graph realization and order-eight consistency are
+  excluded.
+inputs:
+  - path: verification/wave146-six-seven-coupling/discovery-final-manifest.frozen.sha256
+    sha256: 6a4f1125d877f4bc1dfcfe522dea66e95216416bd09550fa36aadbcbeb1f2b17
+  - path: attempts/wave146-six-seven-coupling/exact-results.json
+    sha256: f0bbae5b54506a8a08a771e80536fa4f59d5d818872e675cb5b8dd2ce85df50c
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  - path: attempts/wave22-full-seven-deck/exact-results.json
+    sha256: ca5d9d116f6a9d6e355600429652e2bf4474b73dcf281bbcb564420d820acbd2
+  - path: attempts/wave22-full-seven-deck/witness.json
+    sha256: d74453faa91e42abbe2343d428296818ae051be579305277eff6f113fe66c47d
+  - path: attempts/wave141-bivariate-graph-code/exact-results.json
+    sha256: 351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e
+  - path: attempts/wave144-sixset-odd-profile/exact-results.json
+    sha256: 6dbb544494511906ce6452eaa6addb20c8e3f8861abfd67d1a026d94baf2234b
+method: >-
+  Standard-library rebuild of the root filter, 62 local support enumerations,
+  fixed-profile deck identity, all 208-class deletion/root coefficients,
+  endpoint formulas, B/X rows, orbit links, and exact rational sparse-witness
+  replay. No Wave146 Python module was imported.
+command: >-
+  python verification/wave146-six-seven-coupling/independent_verify.py
+  && python -m unittest
+  verification/wave146-six-seven-coupling/test_independent_verify.py -v
+outputs:
+  - path: verification/wave146-six-seven-coupling/verification-results.json
+    sha256: eab5030102714170d7f5f970eef660dcb39290144239f180b66bc0783161e4ad
+  - path: verification/wave146-six-seven-coupling/verification-report.md
+    sha256: b5ae0a4b77009828b4636e2b967f613b6f31f96d1a8561527fb015754202cdf0
+limitations: >-
+  The exact certificate proves rational feasibility only. Aggregate X values
+  need not decompose per individual six-set; order-eight overlap consistency,
+  an adjacency matrix, graph realization, and any stricter n3 bound remain
+  unestablished. Completeness of the 208-class list is inherited from frozen
+  Wave22 upstream evidence, while every coefficient is rebuilt here.

@@ -1,0 +1,109 @@
+{
+  "format": "conway99-wave42-public-checkpoint-v1",
+  "date_utc": "2026-07-27",
+  "research_base_commit": "ef49b60aafd67f9007f6c218c39fd50392453a1b",
+  "branch": "codex/wave39-rank-proof-checkpoint",
+  "target": "existence of srg(99,14,1,2)",
+  "target_status": "UNKNOWN",
+  "publication_classification": "EXPLORATORY_VERIFIED_THEOREM_CHECKPOINT",
+  "verified_universal_result": {
+    "statement": "rank_F7(M)>=27",
+    "previous_floor": 26,
+    "edge_partition_count": 11,
+    "minimum_F_permutations": 164928,
+    "distinct_right_kernels": 52,
+    "explicit_even_labelled_pairs": 1714426560,
+    "implicit_all_odd_labelled_pairs": 19916886528000,
+    "rank_at_most_one_survivors": 0
+  },
+  "conditional_endpoint_arithmetic": {
+    "rank_pair_count": 297,
+    "previous_rank_pair_count": 314,
+    "removed_pairs": 17,
+    "removed_layer": "even r3 with r7=26",
+    "if_r3_equals_12": "r7 is even and at least 28"
+  },
+  "verified_scoped_joint_incidence": {
+    "assumptions": [
+      "n3=4158",
+      "rank_F3(M)=12",
+      "every edge has local type 2+2+2",
+      "canonical rank-33 lift mask 51739 occurs"
+    ],
+    "six_set_filter_counts": [
+      216000,
+      118718,
+      49736,
+      45032
+    ],
+    "column_overlap_counts": [
+      458,
+      1004,
+      308
+    ],
+    "outside_graph_edge_counts_by_overlap": [
+      96,
+      144,
+      0
+    ],
+    "outside_graph_triangles": 32,
+    "outside_graph_four_cycles": 181,
+    "full_B_status": "UNKNOWN",
+    "compatible_H_status": "UNKNOWN"
+  },
+  "verified_scoped_branch15_delta": {
+    "forced_triangle_zero_based": [
+      1,
+      15,
+      17
+    ],
+    "raw_clauses": 64932,
+    "active_clauses": 33778,
+    "active_units": 0,
+    "active_empty_clauses": 0,
+    "branch15_status": "UNKNOWN"
+  },
+  "validation": {
+    "discovery_tests_passed": 37,
+    "independent_tests_passed": 51,
+    "total_tests_passed": 88,
+    "package_manifests": 6,
+    "manifest_entries": 88,
+    "rank_full_deterministic_replay": "PASS",
+    "joint_incidence_exact_replay": "PASS",
+    "branch15_exact_replay": "PASS"
+  },
+  "primary_artifacts": [
+    {
+      "path": "attempts/wave42-rank26-equality/exact-results.json",
+      "sha256": "94473b4c9f35184376765f76ab16646956222112836f49bcb22e950142a863a1"
+    },
+    {
+      "path": "verification/wave42-rank27/independent-results.json",
+      "sha256": "a207b1bcc267aaefdea704c1173e3ed01a81029507d3bc76aa295caccad03be4"
+    },
+    {
+      "path": "verification/wave42-rank27/comparison.json",
+      "sha256": "ca7ca8b2f4e3e103da63a74ca1920790a349ae98baf8e00381a0f9c84fc3b183"
+    },
+    {
+      "path": "verification/wave42-joint-incidence/independent-results.json",
+      "sha256": "4032826b875d8ebadcd4d9b864a9789068546e33705c62970001c9011ba76b13"
+    },
+    {
+      "path": "verification/wave42-branch15-triangle-delta/independent-results.json",
+      "sha256": "5402d5ea9d3a2d8dfaee3077c699e7bc1a0399512c49007d57fe8c6276ab4fbb"
+    }
+  ],
+  "status_wall": {
+    "endpoint_n3_4158": "UNKNOWN",
+    "general_upper_bound": "n3<=4158",
+    "upper_bound_improved": false,
+    "rigorous_interval": "708<=n3<=4158",
+    "endpoint_proof_coverage": "0/33",
+    "graph_certificate": null,
+    "nonexistence_certificate": null,
+    "novelty": "UNKNOWN",
+    "priority": "UNKNOWN"
+  }
+}

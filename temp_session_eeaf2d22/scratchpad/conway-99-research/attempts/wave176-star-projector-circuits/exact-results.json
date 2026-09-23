@@ -1,0 +1,130 @@
+{
+  "adjacent_star_pair": {
+    "columns": 13,
+    "cross_bipartite_degree": 2,
+    "cross_relation_support_bounds": [
+      4,
+      13
+    ],
+    "cycle_types": {
+      "2+2+2": {
+        "cross_relation_quotient_dimension_lower": 1,
+        "cycle_half_lengths": [
+          2,
+          2,
+          2
+        ],
+        "gram_nullity": 4,
+        "gram_rank": 9,
+        "relation_dimension_lower": 3,
+        "span_rank_bounds": [
+          9,
+          10
+        ],
+        "star_intersection_dimension_lower": 2
+      },
+      "3+3": {
+        "cross_relation_quotient_dimension_lower": 2,
+        "cycle_half_lengths": [
+          3,
+          3
+        ],
+        "gram_nullity": 5,
+        "gram_rank": 8,
+        "relation_dimension_lower": 4,
+        "span_rank_bounds": [
+          8,
+          9
+        ],
+        "star_intersection_dimension_lower": 3
+      },
+      "4+2": {
+        "cross_coset": {
+          "gram_kernel_dimension": 3,
+          "minimum_support": 4,
+          "nonstar_words": 18,
+          "support_distribution": {
+            "11": 4,
+            "12": 2,
+            "4": 2,
+            "7": 4,
+            "8": 2,
+            "9": 4
+          }
+        },
+        "cross_relation_quotient_dimension_lower": 1,
+        "cycle_half_lengths": [
+          4,
+          2
+        ],
+        "gram_nullity": 3,
+        "gram_rank": 10,
+        "relation_dimension_lower": 3,
+        "span_rank_bounds": [
+          10,
+          10
+        ],
+        "span_rank_exact": 10,
+        "star_intersection_dimension_exact": 2,
+        "star_intersection_dimension_lower": 2
+      },
+      "6": {
+        "cross_coset": {
+          "gram_kernel_dimension": 3,
+          "minimum_support": 8,
+          "nonstar_words": 18,
+          "support_distribution": {
+            "8": 6,
+            "9": 12
+          }
+        },
+        "cross_relation_quotient_dimension_lower": 1,
+        "cycle_half_lengths": [
+          6
+        ],
+        "gram_nullity": 3,
+        "gram_rank": 10,
+        "relation_dimension_lower": 3,
+        "span_rank_bounds": [
+          10,
+          10
+        ],
+        "span_rank_exact": 10,
+        "star_intersection_dimension_exact": 2,
+        "star_intersection_dimension_lower": 2
+      }
+    }
+  },
+  "ambient_dimension": 11,
+  "conclusion": "every pair of distinct vertex-stars forces a genuinely cross-star dual relation; no endpoint exclusion follows",
+  "field": 3,
+  "nonadjacent_star_pair": {
+    "columns": 14,
+    "cross_relation_quotient_dimension_lower": 1,
+    "cross_relation_support_bounds": [
+      4,
+      14
+    ],
+    "evident_star_relations": 2,
+    "relation_dimension_lower": 3
+  },
+  "star": {
+    "gram": "J_7-I_7",
+    "projector": "P_x=-sum_(T contains x) z_T tensor z_T",
+    "projector_rank": 6,
+    "projector_sum": "sum_x P_x=0",
+    "projector_trace_mod_3": 0,
+    "span_dimension": 6,
+    "vectors": 7
+  },
+  "trace_gram": {
+    "diagonal_entry": 0,
+    "full_row_sum": 756,
+    "graph_edge_integer_entry": 12,
+    "identity": "tr(P_x P_y)=2(B L B^T)_(x,y) mod 3",
+    "nonneighbor_average": 7,
+    "nonneighbor_row_sum": 588,
+    "rank_upper": 65,
+    "triangle_relation_degree": 36
+  }
+}

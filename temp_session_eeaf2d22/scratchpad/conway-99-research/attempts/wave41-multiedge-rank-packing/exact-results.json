@@ -1,0 +1,772 @@
+{
+  "all_odd_rank_equality_obstruction": {
+    "candidate_conclusion": "rank_F7(K39)>=26 for every all-odd edge type",
+    "complete_assignment_checks": 576,
+    "global_candidate_consequence": "If a hypothetical Conway-99 graph contains an all-odd edge type, then rank_F7(M)>=26.",
+    "records": {
+      "1+1+1+1+1+1": {
+        "diagonal_isotropy_allowed_preimage_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "exclusion": "A rank-25 equality would require a zero diagonal Schur target, but at least one F column has no isotropic preimage.",
+        "impossible_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rank_25_equality_possible": false,
+        "rank_P_plus_Q_F7": 12,
+        "representative_q_matching": [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ]
+      },
+      "1+1+1+3": {
+        "diagonal_isotropy_allowed_preimage_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "exclusion": "A rank-25 equality would require a zero diagonal Schur target, but at least one F column has no isotropic preimage.",
+        "impossible_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "partition": [
+          1,
+          1,
+          1,
+          3
+        ],
+        "rank_25_equality_possible": false,
+        "rank_P_plus_Q_F7": 12,
+        "representative_q_matching": [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          8,
+          10,
+          6,
+          11,
+          7,
+          9
+        ]
+      },
+      "1+5": {
+        "diagonal_isotropy_allowed_preimage_counts": [
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "exclusion": "A rank-25 equality would require a zero diagonal Schur target, but at least one F column has no isotropic preimage.",
+        "impossible_columns": [
+          0,
+          1
+        ],
+        "partition": [
+          1,
+          5
+        ],
+        "rank_25_equality_possible": false,
+        "rank_P_plus_Q_F7": 12,
+        "representative_q_matching": [
+          1,
+          0,
+          4,
+          6,
+          2,
+          8,
+          3,
+          10,
+          5,
+          11,
+          7,
+          9
+        ]
+      },
+      "3+3": {
+        "diagonal_isotropy_allowed_preimage_counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "exclusion": "The unique diagonal-isotropic F forces a symmetric zero-diagonal R target with entries 2 and 3, not a zero-one perfect matching.",
+        "forced_R_entry_histogram_F7": {
+          "0": 108,
+          "2": 12,
+          "3": 24
+        },
+        "forced_R_is_perfect_matching": false,
+        "forced_R_rows_F7": [
+          [
+            0,
+            0,
+            2,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0,
+            2,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            2,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            3,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            2,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            3,
+            2,
+            0,
+            0
+          ]
+        ],
+        "forced_inverse_permutation": [
+          5,
+          3,
+          4,
+          1,
+          2,
+          0,
+          11,
+          9,
+          10,
+          7,
+          8,
+          6
+        ],
+        "forced_yz_permutation": [
+          5,
+          3,
+          4,
+          1,
+          2,
+          0,
+          11,
+          9,
+          10,
+          7,
+          8,
+          6
+        ],
+        "impossible_columns": [],
+        "partition": [
+          3,
+          3
+        ],
+        "rank_25_equality_possible": false,
+        "rank_P_plus_Q_F7": 12,
+        "representative_q_matching": [
+          2,
+          4,
+          0,
+          5,
+          1,
+          3,
+          8,
+          10,
+          6,
+          11,
+          7,
+          9
+        ]
+      }
+    },
+    "schur_formula": "rank_F7(K39)=25+rank_F7(P+R-(F^T+3I+P)(P+Q)^(-1)(F+3I+P))",
+    "scope": "Every fully specified 39-point triangle block whose selected base edge has an all-odd alternating partition."
+  },
+  "claim_label": "CANDIDATE",
+  "conclusion": {
+    "candidate_scoped_rank_improvement": "An all-odd edge type forces rank_F7(M)>=26.",
+    "conway_99_status": "UNKNOWN",
+    "endpoint_excluded": false,
+    "new_endpoint_rank_floor_proved": false,
+    "new_general_upper_bound_on_n3": false,
+    "new_universal_rank_floor_proved": false,
+    "novelty": "UNKNOWN",
+    "strongest_exact_obstruction": "Every 39-point triangle block has a 3D compact-support kernel spanned by vertex-star vectors (A+4I)e_v; a naive symmetric-border or overlapping-block sum must quotient it.",
+    "strongest_general_upper_bound_on_n3": 4158
+  },
+  "format": "wave41-multiedge-rank-packing-v1",
+  "git_commit": "4f1754a28723a8e0e4ea3025312cd264b1b117d2",
+  "inputs": {
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "attempts/wave40-exact-coupling-model/exact-results.json": "8613c05c94a9a5f88c45eddbeccbf4c8906c3783aab25747e439f50423bde9ce",
+    "attempts/wave40-exact-coupling-model/full-block-scout-results.json": "9e03c6d3a465bbbebbe0837910732aeaedfe64a3a595da047f1255458d9ddcc3",
+    "attempts/wave40-exact-coupling-model/subspace-certificate.json": "90b8eb3f88424ffe6ae7618a3063620a2dedff604ad2fac10894fb6278f17c9a",
+    "verification/wave40-exact-coupling-model/independent-results.json": "ff7916d0f5c74c47c8d7787c5cbcc84785cbccd3644d8d03d73e47b73908c0f5"
+  },
+  "limitations": [
+    "Discovery cannot verify itself.",
+    "The rank-26 conclusion is conditional on the presence of an all-odd edge type.",
+    "The five even-part edge types are not excluded from rank 25 by this package.",
+    "The two low-rank controls are local relaxations, not 99-vertex graphs.",
+    "The seven-star 49-block route is assessed but not enumerated or closed.",
+    "No endpoint exclusion, upper-bound improvement, graph construction, or novelty claim is made."
+  ],
+  "low_rank_controls": {
+    "consequence": "A proof using only the forced 39-point triangle block cannot claim a universal floor above 28, or a prism-free local floor above 29, without additional outside/global compatibility.",
+    "generic_three_fibre_control": {
+      "K39_rank_F7": 28,
+      "core_component_sizes": [
+        12,
+        12,
+        12
+      ],
+      "core_triangle_count": 6,
+      "laplacian_nullity_F7": 9,
+      "laplacian_rank_F7": 27,
+      "q_matching": [
+        2,
+        3,
+        0,
+        1,
+        6,
+        7,
+        4,
+        5,
+        10,
+        11,
+        8,
+        9
+      ],
+      "r_matching": [
+        2,
+        3,
+        0,
+        1,
+        6,
+        7,
+        4,
+        5,
+        10,
+        11,
+        8,
+        9
+      ],
+      "scope": "Fully specified theorem-forced three-fibre matching data. It is a local relaxation with core triangles and is not a completed 99-vertex graph.",
+      "yz_permutation": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        6,
+        5,
+        7,
+        8,
+        10,
+        9,
+        11
+      ]
+    },
+    "triangle_free_three_fibre_control": {
+      "K39_rank_F7": 29,
+      "core_component_sizes": [
+        18,
+        18
+      ],
+      "core_triangle_count": 0,
+      "laplacian_nullity_F7": 8,
+      "laplacian_rank_F7": 28,
+      "q_matching": [
+        2,
+        4,
+        0,
+        5,
+        1,
+        3,
+        8,
+        10,
+        6,
+        11,
+        7,
+        9
+      ],
+      "r_matching": [
+        2,
+        5,
+        0,
+        4,
+        3,
+        1,
+        8,
+        11,
+        6,
+        10,
+        9,
+        7
+      ],
+      "scope": "Fully specified triangle-free three-fibre matching data, compatible with the one-triangle prism-free condition.  It does not include the 60 outside vertices and is not an endpoint graph or extension certificate.",
+      "yz_permutation": [
+        5,
+        3,
+        4,
+        1,
+        0,
+        2,
+        11,
+        9,
+        10,
+        7,
+        6,
+        8
+      ]
+    }
+  },
+  "matching_normalization": {
+    "alternating_partition_types": 11,
+    "automorphism_warning": "Canonicalizing (P,Q) uses only a local relabelling; F remains an arbitrary permutation and R remains an arbitrary perfect matching.  No completed-graph automorphism is assumed.",
+    "canonical_representatives": {
+      "1+1+1+1+1+1": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4,
+        7,
+        6,
+        9,
+        8,
+        11,
+        10
+      ],
+      "1+1+1+1+2": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4,
+        7,
+        6,
+        10,
+        11,
+        8,
+        9
+      ],
+      "1+1+1+3": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4,
+        8,
+        10,
+        6,
+        11,
+        7,
+        9
+      ],
+      "1+1+2+2": [
+        1,
+        0,
+        3,
+        2,
+        6,
+        7,
+        4,
+        5,
+        10,
+        11,
+        8,
+        9
+      ],
+      "1+1+4": [
+        1,
+        0,
+        3,
+        2,
+        6,
+        8,
+        4,
+        10,
+        5,
+        11,
+        7,
+        9
+      ],
+      "1+2+3": [
+        1,
+        0,
+        4,
+        5,
+        2,
+        3,
+        8,
+        10,
+        6,
+        11,
+        7,
+        9
+      ],
+      "1+5": [
+        1,
+        0,
+        4,
+        6,
+        2,
+        8,
+        3,
+        10,
+        5,
+        11,
+        7,
+        9
+      ],
+      "2+2+2": [
+        2,
+        3,
+        0,
+        1,
+        6,
+        7,
+        4,
+        5,
+        10,
+        11,
+        8,
+        9
+      ],
+      "2+4": [
+        2,
+        3,
+        0,
+        1,
+        6,
+        8,
+        4,
+        10,
+        5,
+        11,
+        7,
+        9
+      ],
+      "3+3": [
+        2,
+        4,
+        0,
+        5,
+        1,
+        3,
+        8,
+        10,
+        6,
+        11,
+        7,
+        9
+      ],
+      "6": [
+        2,
+        4,
+        0,
+        6,
+        1,
+        8,
+        3,
+        10,
+        5,
+        11,
+        7,
+        9
+      ]
+    },
+    "labelled_perfect_matchings": 10395
+  },
+  "role": "proof_a",
+  "scope": "Universal and prism-free multi-edge rank-packing consequences starting from the Wave 40 rank_F7(M)>=25 theorem.",
+  "seven_star_49_block_assessment": {
+    "conditional_endpoint_diagonal_blocks": "Each 7 by 7 star block of M is 4I.",
+    "greedy_independent_set": "A graph of order 99 and maximum degree 14 has an independent set of size at least ceil(99/15)=7.",
+    "obstruction": "The 21 pair blocks cannot be selected independently: their entries reuse graph edges, common-neighbour vertices, and triangle labels, and the assembled matrix must also satisfy M^2=21M.  Wave 35 supplies only one relaxed pair control.  No 49-block enumeration or gluing certificate is available here.",
+    "pairwise_cross_block_data": "For each nonadjacent vertex pair the 7 by 7 cross block has row and column sums (-2,-2,1,1,1,1,1), up to the two common-neighbour labels.",
+    "rank_target": "Since rank_Q(M)=44, the 49 by 49 principal block must have nullity at least five.",
+    "status": "OPEN_COMPATIBILITY_TARGET",
+    "triangle_indices": "The seven 7-triangle vertex stars are pairwise disjoint, giving 49 triangle indices, because independent vertices cannot occur in one graph triangle."
+  },
+  "structural_compact_kernel": {
+    "block_checks": {
+      "1+1+1+1+1+1": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "1+1+1+1+2": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "1+1+1+3": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "1+1+2+2": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "1+1+4": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "1+2+3": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "1+5": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "2+2+2": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "2+4": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "3+3": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      },
+      "6": {
+        "kernel_vector_rank_F7": 3,
+        "kernel_vectors_checked": 3
+      }
+    },
+    "global_kernel_identity_mod_7": "K(A+4I)=0",
+    "global_kernel_identity_over_integers": "(J-I-2A)(A+4I)=14J-7A-28I",
+    "global_span_context": {
+      "K_mod_7": "J-2(A+4I)",
+      "rank_relation": "rank_F7(A+4I)=rank_F7(K)+1; im(K) lies in the augmentation hyperplane, while 1 lies in im(A+4I)."
+    },
+    "outside_column_check": {
+      "integer_total": 14,
+      "one_fibre_contribution": 8,
+      "reason": "An outside vertex is nonadjacent to all three vertices of T and has exactly two neighbours in each twelve-point fibre.",
+      "residue_mod_7": 0,
+      "triangle_contribution": 6
+    },
+    "packing_obstruction": "For any kernel-basis matrix H of the 39-block and its 39 by 60 border U, ker(H^T U) has dimension at least three.  Therefore the symmetric-border lemma cannot make the six-dimensional projection full rank in a minimum-rank block, and overlapping triangle blocks cannot be added without quotienting these globally repeated vertex-star kernel directions.",
+    "support": "For every graph triangle T containing v, supp(h_v) is contained in T union (N(T)-T), the associated 39-point triangle block.",
+    "three_vectors_per_triangle": "The three h_v for v in T are independent because their restriction to T is the 3 by 3 matrix with diagonal 4 and off-diagonal 1, of rank 3 over F_7.",
+    "vector_for_vertex_v": "h_v=(A+4I)e_v: value 4 at v, value 1 on N(v), and 0 elsewhere."
+  }
+}

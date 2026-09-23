@@ -1,0 +1,41 @@
+role: proof_b
+date_utc: 2026-07-29T03:08:51Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free rank-11 endpoint: exclusion of equality in the
+  Wave191 Q>=6237 circuit bound via canonical-C4 signed axis translations
+  and type-three shared-label leaf circuit elimination.
+inputs:
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+  - verification/wave189-degree7-star-orbit-verifier/package-manifest.sha256
+  - verification/wave190-residual-stability-verifier/package-manifest.sha256
+  - attempts/wave191-exact-three-residual-proof-a/package-manifest.sha256
+  - verification/2026-07-29-wave191-refinement-verifier-addendum.md
+  - verification/2026-07-29-wave191-joint-capacity-verifier-addendum.md
+method: >-
+  Equality-slack reconstruction, signed checkerboard-square/star cochains,
+  exact-two uniqueness, ternary circuit elimination, proper-star
+  independence, and private/shared label incidence. No graph, cover, code,
+  SAT, LP, configuration, isomorphism, or exhaustive search.
+command: >-
+  python -B attempts/wave192-c4-cohomology-proof-b/exact_check.py --verify
+  attempts/wave192-c4-cohomology-proof-b/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave192-c4-cohomology-proof-b/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave192-c4-cohomology-proof-b.md
+  - attempts/wave192-c4-cohomology-proof-b/README.md
+  - attempts/wave192-c4-cohomology-proof-b/derivation.md
+  - attempts/wave192-c4-cohomology-proof-b/protocol.md
+  - attempts/wave192-c4-cohomology-proof-b/exact_check.py
+  - attempts/wave192-c4-cohomology-proof-b/exact-results.json
+  - attempts/wave192-c4-cohomology-proof-b/test_exact_check.py
+  - attempts/wave192-c4-cohomology-proof-b/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The result is conditional on the frozen prism-free rank-11 endpoint.
+  - The cohomological language does not assume square-span exactness.
+  - Rank 11, endpoint existence, external novelty, and Conway-99 remain
+    UNKNOWN.

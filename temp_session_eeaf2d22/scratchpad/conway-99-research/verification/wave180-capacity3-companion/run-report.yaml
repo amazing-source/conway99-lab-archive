@@ -1,0 +1,39 @@
+role: verifier
+date_utc: 2026-07-28T23:17:19Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional rank-11 capacity-three nonedge circuit classification,
+  conic/complement companion involution, and lower bounds of 2079
+  nonedge-realizing and 2772 total projective short circuits.
+inputs:
+  - attempts/wave180-capacity3-companion/package-manifest.sha256
+method: >-
+  Independent exact-transversal equality analysis, lambda/mu incidence
+  count, star-projector calculation, explicit two-dimensional local relation
+  algebra, and minimal-cover involution counting. No graph, code, SAT,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave180-capacity3-companion\independent_check.py --verify
+  verification\wave180-capacity3-companion\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave180-capacity3-companion\test_independent_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave180-capacity3-companion\exact_check.py --verify
+  attempts\wave180-capacity3-companion\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave180-capacity3-companion\test_exact_check.py
+outputs:
+  - verification/wave180-capacity3-companion/README.md
+  - verification/wave180-capacity3-companion/audit.md
+  - verification/wave180-capacity3-companion/protocol.md
+  - verification/wave180-capacity3-companion/independent_check.py
+  - verification/wave180-capacity3-companion/independent-results.json
+  - verification/wave180-capacity3-companion/test_independent_check.py
+  - verification/wave180-capacity3-companion/input-freeze.sha256
+limitations:
+  - The companion lower bound does not exclude the endpoint.
+  - Multiplicity-two nonedge circuits remain unclassified.
+  - Rank 11 and global graph existence remain UNKNOWN.
+  - External novelty is UNKNOWN.

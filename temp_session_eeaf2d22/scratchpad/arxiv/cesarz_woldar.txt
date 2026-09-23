@@ -1,0 +1,1208 @@
+ALGEBRAIC
+ COMBINATORICS
+Patrick G. Cesarz & Andrew J. Woldar
+On the automorphism group of a putative Conway 99-graph
+V olume 8, issue 2 (2025), p. 379-398.
+https://doi.org/10.5802/alco.418
+© The author(s), 2025.
+This article is licensed under the
+CREATIVE COMMONS ATTRIBUTION (CC-BY) 4.0 L ICENSE .
+http://creativecommons.org/licenses/by/4.0/
+Algebraic Combinatorics is published by The Combinatorics Consortium
+and is a member of the Centre Mersenne for Open Scientific Publishing
+www.tccpublishing.org www.centre-mersenne.org
+e-ISSN: 2589-5486
+
+Algebraic Combinatorics
+Volume 8, issue 2 (2025), p.379–398
+https://doi.org/10.5802/alco.418
+On the automorphism group of a putative
+Conway 99-graph
+Patrick G. Cesarz & Andrew J. Woldar
+AbstractLet Γ be a Conway 99-graph, that is, a strongly regular graph with parameters
+(99, 14, 1, 2). Existence of such a graph remains an elusive open problem, however various au-
+thors have made significant contributions by analyzing the structure of the automorphism group
+G = Aut(Γ). In this paper we duplicate many results of our predecessors (e.g. Behbahani &
+Lam, Crnković & Maksimović), but crucially, we accomplish this without the aid of a computer.
+Specifically, we give computer-free proofs that divisibility of|G| by 2 implies|G| divides 6 while
+divisibility of|G| by 7 implies G∼= Z7.
+1. Introduction
+The question of existence of a strongly regular graph with parameters(99, 14, 1, 2) is
+a longstanding open problem. Its possible existence was first suggested by Norman
+Biggs in 1969 [2]. According to the account given by Richard Guy in [9], John H.
+Conway worked on this problem as early as 1975. Later, Conway would offer a $1000
+prize to anyone who could solve it (see [6], where it is listed as problem 2 among five
+posed open problems). From that point onward, a strongly regular graph having these
+parameters came to be known colloquially as aConway 99-graph.
+In [6] Conway gave an alternate formulation of the existence problem, which we
+here reproduce:
+Is there a graph with 99 vertices in which every edge (i.e. pair of
+joined vertices) belongs to a unique triangle and every nonedge (pair
+of unjoined vertices) to a unique quadrilateral?
+Famously, A.A. Makhnev and I.M. Minakova proved in [12] that a strongly reg-
+ular graph with parameters (v,k, 1, 2) can only exist ifk = u2 +u + 2 where u∈
+{1, 3, 4, 10, 31}. Such graphs are known to exist foru∈{ 1, 4} but not much is known
+about the remaining cases. Should a Conway 99-graph exist, it would correspond to
+the caseu = 3.
+In [12, Theorem 2.7] it is asserted that the order of the automorphism groupG of
+a Conway 99-graph must divide2· 33· 7· 11. In [11, Corollary 2.4] Makhnev asserts
+the following:
+If G contains an involutiont, then one of the following holds:
+Manuscript received 23rd July 2023, revised 28th May 2024 and 5th April 2025, accepted 19th Jan-
+uary 2025.
+Keywords. Conway 99-graph, strongly regular graph, automorphism group, orbit partition, orbit
+valencies.
+ISSN: 2589-5486 http://algebraic-combinatorics.org/
+Patrick G. Cesarz & Andrew J. Woldar
+(i) If|G| is divided by 7 then|G| divides 42, [O(G),t ] = 1 , and in the case
+|G| = 42 the subgroupO(G) is nonabelian. (HereO(G) denotes the maximal
+odd-order normal subgroup ofG.)
+(ii) |G| divides 6.
+Below we summarize results of various authors on the automorphism group of a
+Conway-99 graph that were obtained since publication of [11, 12] and which were
+brought to our attention by an anonymous referee (see [5, p.16]):
+(a) In [1] Behbahani & Lam showed that any automorphism of prime order must
+have order 2 or 3.
+(b) In [7] Crnković & Maksimović ruled out groups of order 6 or 9.
+In the present paper, we prove the following:
+(1) If 2 divides|G|, then|G| divides 6.
+(2) If|G| is divisible by 7, thenG is isomorphic toZ7.
+Importantly, we stress that results (1) and (2) are obtained without the aid of
+a computer. To the best of our knowledge, this has not been accomplished in any
+previous published work on the problem.
+Our choice of notation and terminology are standard. We refer the reader to [3, 4,
+5, 8, 13] as excellent sources of background material.
+Our paper is organized as follows. In Section 2 we establish a labeling scheme for
+the vertices of a putative Conway 99-graphΓ under the assumption that 7 divides|G|.
+This allows us to embedG in the symmetric group of degree 14.
+In Section 3 we prove thatΓ admits no order 14 automorphisms. This is a crucial
+step toward showing that divisibility by 2 implies|G| divides 6.
+In Section 4 we show that divisibility by 7 impliesG is isomorphic to either Z7
+orFrob (21) (the Frobenius group of order21). Assuming the latter, we are next able
+to construct a unique feasibleG-orbit partition ofV (Γ) which we subsequently show
+cannot exist. As a result, divisibility by 7 impliesG∼= Z7.
+2. Preliminaries
+Throughout this paper, Γ will denote a putative Conway 99-graph, i.e. a strongly
+regular graph with parameters(99, 14, 1, 2). We denote its automorphism group byG.
+Although Γ is not vertex transitive, a result first proved by Wilbrink [14], one can
+always “hang” the graph from any vertexx∈ V (Γ) whereby vertices are grouped
+together in accordance with their distance fromx. This is a property of distance-
+regular graphs in general and strongly regular graphs in particular. In such case, we
+refer tox as the “root vertex”.
+As is customary, we denote by Γ1(x) and Γ2(x) the set of neighbors and non-
+neighbors of x respectively, commonly referred to as the first and second subcon-
+stituents of Γ. When x is understood from context, we will abbreviate these sets
+by Γ1 and Γ2. In Figure 1 we depict the distance distribution diagram forΓ. Note
+that the diagram indicates that|Γ1| = 14 and|Γ2| = 84.
+For the moment we assumex∈V (Γ) is an arbitrary vertex, however in due course
+our choice ofx will carry special significance. We label the 14 neighbors ofx byiX,
+1⩽ i⩽ 7, X∈{ L,R}, see Figure 2. Sinceλ = 1, we may assume without loss of
+generality that{iL,iR} is an edge for every1⩽i⩽ 7.
+Observe that for any{X,Y} ={L,R}, the verticesiX,jY ∈ Γ1 are adjacent if
+and only ifi =j. Asµ = 2, each pair of nonadjacent verticesiX,jY ∈ Γ1 must have
+a unique common neighbor inΓ2. We label this common neighborijXY . As there are(14
+2
+)
+− 7 = 84 pairs of nonadjacent vertices inΓ1, we see that each of the 84 vertices
+in Γ2 receives a unique label, again due toµ = 2.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 380
+On the automorphism group of a Conway 99-graph
+1 14 141 12
+1
+842
+12
+Figure 1. Distance distribution diagram ofΓ
+x
+4L 4R3R 5L3L 5R2R 6L2L 6R1R 7L1L 7R
+Figure 2. A labeling scheme forΓ1
+Lemma 2.1.Supposeg∈G fixes Γ1∪{x} pointwise. Theng fixes Γ2 pointwise, i.e.g
+is the identity automorphism.
+Proof. Evident from our labeling scheme and the fact thatµ = 2. □
+Lemma 2.2.Suppose there existss∈ G with|s| = 7. Then s fixes a unique vertex
+in V (Γ), hence the⟨s⟩-orbit structure on V (Γ) is [1, 714] (i.e. one orbit of size 1
+and 14 orbits of size7).
+Proof. As|V (Γ)| = 99 ≡ 1 (mod 7) we deduce thats must have at least one fixed
+vertex which we may choose to fulfill the role of root vertexx of Γ. This establishes
+that both Γ1 and Γ2 are s-invariant. In particular, the orbit structure of⟨s⟩ on Γ1
+is [72], [17, 7], or [114]. AsiL is a fixed point ofs if and only ifiR is, the number of
+fixed points must be even, i.e. the⟨s⟩-orbit structure is either[72] or [114]. However,
+Lemma 2.1 rules out[114], leaving [72] as the orbit structure onΓ1. Now suppose a
+vertex ijXY ∈ Γ2 is fixed bys. As µ = 2 and|s| is odd, s must fix theµ-graph
+Γ1(x)∩ Γ1(ijXY ) ={iX,jY} vertex-wise, a contradiction. This proves the⟨s⟩-orbit
+structure on Γ2 is [712]. The result follows. □
+Remark 2.3.Note that one consequence of our labeling scheme, together with
+the assumption in Lemma 2.2, is that the automorphism groupAut(Γ) embeds in
+Sym(Γ1)∼= S14. By relabeling the vertices of Γ1, we may assume thats = sLsR
+where sL = (1L, 2L,..., 7L) and sR = (1R, 2R,..., 7R). The two⟨s⟩-orbits on Γ1
+are now transparent. They are{1L, 2L,..., 7L} and{1R, 2R,..., 7R}.
+Lemma 2.4.Every vertex of Γ2 lies on five3-cycles wholly insideΓ2. Thus there are
+140 3-cycles in Γ2.
+Proof. Clearly, every vertex inΓ lies on seven3-cycles. Given a vertexv∈ Γ2 it has
+precisely two Γ1-neighbors u and w. Asλ = 1, each ofvu and vw must be an edge
+in a unique 3-cycle. Moreover, these two 3-cycles cannot coincide. Indeed, this would
+require thatu andw be adjacent, whenceuwx would be a second 3-cycle on the edge
+uw wherex is the root vertex. This proves the remaining five3-cycles onv lie entirely
+inside Γ2. But now we have that the total number of3-cycles in Γ2 is 84·5
+3 = 140 as
+claimed. □
+Algebraic Combinatorics , Vol. 8 #2 (2025) 381
+Patrick G. Cesarz & Andrew J. Woldar
+3. Consequences of divisibility by 2
+In this section, we prove|G| must divide 6 under the assumption that|G| is even. A
+critical role here is played by Theorem 3.11 in which we prove thatG cannot have
+any order 14 automorphisms.
+Lemmas 3.1 and 3.2 set the groundwork for the rest of this section.
+Lemma 3.1.Suppose G contains a cyclic subgroupK of order 14. Then K =⟨st⟩
+wheres = (1L, 2L,..., 7L) (1R, 2R,..., 7R) and t = (1L, 1R) (2L, 2R) ... (7L, 7R).
+Proof. Let CS(s) = (⟨sL⟩×⟨ sR⟩) ⋊⟨t⟩ denote the centralizer ofs in S = Sym(Γ 1).
+There are seven involutions inCS(s) which take the form
+t(sR)i
+= (1L, (1 +i)R) (2L, (2 +i)R)... (7L,iR ),
+0 ⩽ i ⩽ 6, and in each case⟨st(sR)i
+⟩ is a cyclic subgroup of CS(s) of order 14.
+However, sincet(sR)i
+maps 1L to (1 +i)R and 1R to (1−i)L, adjacency is preserved
+only if i = 0. Thust is the unique involution inAut(Γ1) whereby K =⟨st⟩ is the
+unique cyclic subgroup of order 14 inAut(Γ1). □
+Lemma 3.2.K =⟨st⟩ fixes the root vertexx of Γ but has no other fixed points. Thus
+each of the remaining sevenK-orbits on Γ has size 14.
+Proof. Recall from Lemma 2.2 that x is the unique vertex fixed bys ∈ K. As t
+commutes withs we have thatxt is fixed bys, whencext =x. Thusx is the unique
+vertex fixed byK.
+We now considerK-orbits onV (Γ) ∖{x}. Clearly,K fuses the two⟨s⟩-orbits inΓ1
+so we are left to consider the orbit structure ofK on Γ2. Suppose there exists an⟨s⟩-
+orbitO that isK-invariant. Then as|t| = 2 and|O| = 7, there must be a vertexv∈O
+fixed byt. LetiX be aΓ1-neighbor ofv. TheniY = (iX)t must also be aΓ1-neighbor
+ofv. But this violatesλ = 1 asiX andiY are adjacent. We conclude that allK-orbits
+of Γ2 have size14. □
+Remark 3.3.It is easy to see that a set of orbit representatives in the action ofK
+on Γ2 is given by{12LL, 13LL, 14LL, 12LR, 13LR, 14LR}. Moreover, each numeri-
+cal coordinatei occurs exactly four times in each orbit. For example, in the orbit with
+representative 12LL, the coordinate 3 occurs in each of23LL, 34LL, 23RR, 34RR.
+However, these four vertices are distributed evenly into pairs in the sense that23LL,
+34LL are neighbors of3L while 23RR, 34RR are neighbors of3R.
+Consider the equitable partitionπ induced by theK-orbitsO1,O2,..., O6 on Γ2.
+As is customary, we refer toπ as aK-orbit partition. We denote bybij the number of
+Oj-neighbors of any fixed vertex inOi and refer to it as anorbit valency (or simply
+valency) due to what occurs naturally in the quotient graphΓ2/π. Orbit valencies
+for whichi = j will be calledinternal and expressed asbi rather thanbii. All other
+valencies will be referred to asexternal. Pictorially,bij appears as a label of an arc
+fromOi to Oj, however in our case this arc is an edge (i.e.bij =bji for alli,j) since
+all orbitsOi have the same size.
+At present we have thatst is an order 14 automorphism of the subgraph ofΓ
+induced on Γ1∪{x}. We wish to showst cannot extend to an automorphism ofΓ.
+Our first step toward this objective is to count in two ways the cardinality of the set
+S ={uvw :uvw is a 2-path withw∈O i},
+where u is a fixed vertex inOi (see Figure 3).
+Algebraic Combinatorics , Vol. 8 #2 (2025) 382
+On the automorphism group of a Conway 99-graph
+b3 b4
+b5 b6
+b1
+b12
+b14
+b13
+b15
+b16b2
+b24
+b23
+b25
+b26
+b34
+b56
+b45 b36
+b35 b46
+O1 O2
+O3 O4
+O5 O6
+Figure 3. A generalK-orbit partition onΓ2 where K =⟨st⟩∼= Z14
+For each of thebi neighbors ofu inOi there is a unique2-path fromu tow (since
+λ = 1). Similarly, for each of the13−bi non-neighbors ofu inOi there are two 2-paths
+from u to w (since µ = 2). Thus|S| =bi· 1 + (13−bi)· 2 = 26−bi.
+On the other hand, we may condition our count on the location of the intermediate
+vertexv. Forv inOj there arebij (bij−1) such 2-paths. In addition,u has exactly two
+neighbors in Γ1 each of which has a unique neighborw∈O i ∖{u} (cf. Remark 3.3).
+This gives|S| = ∑6
+j=1bij (bij− 1) + 2. Equating these two expressions for|S|, we
+obtain 26−bi =∑6
+j=1bij (bij− 1) + 2. But due to the fact that∑6
+j=1bij = 12, this
+simplifies to
+(1) 36−
+(
+b 2
+i +bi
+)
+=
+∑
+j̸=i
+b 2
+ij
+We divide our analysis into cases based on an assumed value forbi. Once a choice ofbi
+is made, we find all ways of expressing36−
+(
+b 2
+i +bi
+)
+as a sum of five squares while
+maintaining the valency requirement∑6
+j=1bij = 12. Note thatbi⩽ 5 since otherwise
+the value of36−
+(
+b 2
+i +bi
+)
+would be negative.
+All solution sets are provided in the lemma below. Verification of the list is straight-
+forward, so is left to the reader. Note that each solution set is expressed as an ordered
+pair of the form (
+bi,
+{
+a2,a 3,a 4,a 5,a 6
+})
+.
+This is because unlike the internal valency bi which remains fixed, the values
+a2,a 3,...,a 6 may be assigned to the external valenciesbij in any specified manner.
+Thus, there are multiple solutions corresponding to each solution set achieved by
+suitably permuting the members of the multiset
+{
+a2,a 3,a 4,a 5,a 6
+}
+. Below, we list
+these members in decreasing order.
+Lemma 3.4.Forbi∈{ 1, 3, 5} there are no solutions to equation1. For other values
+of bi the solutions are listed as follows:
+(a)
+(
+0,
+{
+4, 3, 3, 1, 1
+})
+and
+(
+0,
+{
+3, 3, 3, 3, 0
+})
+when bi = 0.
+(b)
+(
+2,
+{
+4, 3, 2, 1, 0
+})
+when bi = 2,
+(c)
+(
+4,
+{
+3, 2, 1, 1, 1
+})
+and
+(
+4,
+{
+2, 2, 2, 2, 0
+})
+when bi = 4.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 383
+Patrick G. Cesarz & Andrew J. Woldar
+For future reference, it is convenient to designate these solution sets by type, e.g.
+I.
+(
+0,
+{
+4, 3, 3, 1, 1
+})
+, II.
+(
+0,
+{
+3, 3, 3, 3, 0
+})
+, III.
+(
+2,
+{
+4, 3, 2, 1, 0
+})
+IV.
+(
+4,
+{
+3, 2, 1, 1, 1
+})
+, V.
+(
+4,
+{
+2, 2, 2, 2, 0
+})
+We also extend this terminology to orbits, saying an orbit isof type T if its set of
+valencies correspond to a solution set of typeT∈{ I, II, III, IV, V}.
+We next count in two ways the number of2-paths starting from a fixed vertexu
+inOi and ending at some vertexw inOj, j̸= i. Hereu has exactlybij neighbors
+inOj, and asλ = 1 there exists a unique2-path starting atu and ending atw for
+each neighborw ofu inOj. Similarly,u has 14−bij non-neighbors inOj, and asµ = 2
+there are exactly two2-paths starting atu and ending at each non-neighborw of u
+inOj. Thus in total there arebij· 1 + (14−bij)· 2 = 28−bij such 2-paths fromu
+intoOj when j̸=i.
+For the second count, we focus on the location of an intermediate vertexv in each
+such 2-path. Herev can occur in any of the sixK-orbits onΓ2 as well as inΓ1. In the
+case ofK-orbits on Γ2, there arebik choices forv inOk, and for each suchv there
+arebkj choices forw inOj. This givesbikbkj 2-paths of desired type. In addition, there
+are two choices forv in Γ1 each of which has two neighborsw inOj. This produces
+four more 2-paths. Thus, in total there are precisely∑6
+k=1bikbkj + 4 paths of the
+type in question whenj̸=i.
+Equating these two counts yields28−bij =∑6
+k=1bikbkj + 4, or equivalently
+(2) 24−bij =
+6∑
+k=1
+bikbkj.
+Lemma 3.5.In aK-orbit partition of Γ2 (cf. Figure3) we have the following:
+(a) The number of orbits of type I is at most2.
+(b) The number of orbits of type II is at most1.
+(c) The number of orbits of type III is at most4.
+(d) The number of orbits of type IV is at most4.
+(e) The number of orbits of type V is at most1.
+Proof. (a): Suppose there exist two orbitsOi andOj of type I. Then sincebi =bj = 0,
+equation 2 reduces to 24−bij = ∑
+k̸=i,jbikbkj. Note that this equation is satisfied
+only ifbij = 4, which results in the solution20 = 3 2 + 32 + 12 + 12. As an orbit of
+type I has only one external valency 4, there cannot be a third orbit of this type.
+(b): LetOi andOj be two orbits of type II. Sincebi = bj = 0, equation 2 again
+reduces to 24−bij =∑
+k̸=i,jbikbkj. But regardless of how one choosesbij∈{ 0, 3}
+and reorders the corresponding multisets, this equation is never satisfied. Thus there
+is at most one orbit of type II.
+(c): LetOi andOj be two orbits of type III. Since bi = bj = 2 , equation 2
+becomes 24− 5bij =∑
+k̸=i,jbikbkj. In this case one hasbij∈{ 0, 1, 2, 3, 4}. There are
+no solutions ifbij∈{ 1, 2}, however every remaining choice ofbij works. Specifically,
+if bij = 0 one gets 24 = 4· 1 + 3· 4 + 2· 3 + 1· 2 as a solution. Forbij = 3 one gets
+9 = 4· 0 + 2· 4 + 1· 1 + 0· 2, while forbij = 4 one gets 4 = 3· 0 + 2· 1 + 1· 2 + 0· 3.
+Having only three allowable external valencies adjoining pairs of type III orbits, it is
+not possible to have a fifth orbit of this type.
+(d): Given any two orbitsOi andOj of type IV, we have thatbij ∈ {1, 2, 3}.
+Asb1 =b2 = 4, equation 2 becomes24−9bij =∑
+k̸=i,jbikbkj. Clearlybij = 1 leads to
+a solution, namely15 = 12 + 12 + 22 + 32, but other choices ofbij fail. Since a type IV
+orbit has only three available external valencies equal to 1, there can be at most four
+orbits of this type.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 384
+On the automorphism group of a Conway 99-graph
+I II III IV V
+I 2 0 4 0 0
+II 0 1 4 4 1
+III 2 1 4 2 1
+IV 0 1 4 4 1
+V 0 1 4 4 1
+Table 1. Bounds on the number of orbits of mixed type
+(e): Finally, suppose there are two orbitsOi andOj of type V. Then sincebi =
+bj = 4, equation 2 becomes24− 9bij =∑
+k̸=i,jbikbkj. Herebij∈{ 0, 2} and neither
+choice leads to a solution. This proves there is at most one orbit of type V. □
+In the above, we applied equation 2 to bound the number of orbits of a given
+type that can occur in aK-orbit partition of Γ2. We now do the same for orbits of
+mixed type. Note that we do not strive to obtain sharp bounds at this stage. Our goal
+is simply to eliminate several possibilities in an expedient manner.
+Lemma 3.6.Let Ti, Tj∈{ I, II, III, IV, V}. Then the(Ti, Tj)-entry in Table1 bounds
+from above the number of orbits of typeTj that can coexist with a fixed orbit of typeTi
+in aK-orbit partition of Γ2.
+Proof. Note that the diagonal entries in Table 1 were previously confirmed in
+Lemma 3.5. Moreover, one need not check any entry(Ti, Tj) that is equal to the
+diagonal entry (Tj, Tj) since the latter is the maximum allowable number of orbits
+of type Tj in anyK-orbit partition ofΓ2.
+Case 1. (I, II) = (II , I) = 0 : Clearly, the only option for the shared valency
+is bij = 3. As bi = bj = 0, equation 2 reduces to 21 = ∑
+k̸=i,jbikbkj where bik ∈
+{4, 3, 1, 1} and bkj ∈{ 3, 3, 3, 0}. It is easy to see that no permutation of multisets
+leads to a solution, i.e.(I, II) = 0 . (For (II, I) = 0 , the only change to the above
+is bik∈{ 3, 3, 3, 0} and bkj∈{ 4, 3, 1, 1}.)
+Case 2. (I, IV) = (IV, I) = 0: In this casebi = 0 andbj = 4, so equation 2 reduces
+to 21− 5bij =∑
+k̸=i,jbikbkj. Here there are two options forbij. Ifbij = 1 then we get
+16 =∑
+k̸=i,jbikbkj wherebik∈{ 4, 3, 3, 1} andbkj∈{ 3, 2, 1, 1} and no permutation of
+multisets leads to a solution. For the second optionbij = 3, we get6 =∑
+k̸=i,jbikbkj
+where bik∈{ 4, 3, 1, 1} and bkj∈{ 2, 1, 1, 1}. Again no permutation of multisets gives
+a solution. Thus(I, IV) = (IV, I) = 0.
+Case 3. (I, V) = (V, I) = 0: Here the multisets{4, 3, 3, 1, 1} and{2, 2, 2, 2, 0} are
+disjoint, so there is no possible valency that can adjoin two orbits of these respective
+types.
+Case 4. (III, IV) = 2 : In this case,bi = 2 and bj = 4 so equation 2 becomes
+24− 7bij = ∑
+k̸=i,jbikbkj. There are three choices forbij, namely bij ∈ {3, 2, 1}.
+If bij = 3 the equation reduces to 3 = ∑
+k̸=i,jbikbkj where bik ∈ {4, 2, 1, 0} and
+bkj∈{ 2, 1, 1, 1}, and it is immediate that there is no solution. Ifbij = 2 we obtain
+10 =∑
+k̸=i,jbikbkj wherebik∈{ 4, 3, 1, 0} andbkj∈{ 3, 1, 1, 1}. Here there is a unique
+solution, namely 10 = 4· 1 + 3· 1 + 1· 3 + 0· 1. Finally, ifbij = 1 we obtain 17 =∑
+k̸=i,jbikbkj wherebik∈{ 4, 3, 2, 0} andbkj∈{ 3, 2, 1, 1}. In this case there are three
+solutions, namely17 = 4·3+3·1+2·1+0·2 = 4·1+3·3+2·2+0·1 = 4·2+3·1+2·3+0·1.
+In any case, there are just two possibilities for the valency adjoining an orbit of fixed
+type III to an orbit of type IV. We conclude that(III, IV) = 2.
+As all cases in the lemma statement have been treated, the proof is complete.□
+Algebraic Combinatorics , Vol. 8 #2 (2025) 385
+Patrick G. Cesarz & Andrew J. Woldar
+The reader will note that the relation in Lemma 3.6 is not generally symmetric.
+Let us write [Ia, II b, III c, IV d, V e] to indicate aK-orbit partition of Γ2 having a
+orbits of type I,b orbits of type II, and so on. (If an orbit of specific type does not
+occur in the partition, we simply omit that type from the above partition notation.)
+Lemma 3.7.There is noK-orbit partition of the form[III c, IV 6−c] for anyc.
+Proof. By Lemma 3.5, one has2⩽c⩽ 4. As a type III orbit has a single valency of 4
+and a type IV orbit has none, there arec/2 external valencies of 4 in the partition.
+This meansc must be even. However, by Lemma 3.6 the existence of a type III orbit
+requires that there be at most two type IV orbits. This implies6−c⩽ 2 whencec = 2
+is prohibited. Thusc = 4.
+As shown in the proof of Lemma 3.5, each pair of type III orbits must share an
+external valency of 0, 3 or 4. But as there are four type III orbits, every such valency
+gets used. On the other hand, we showed in Lemma 3.5 that two orbits of type IV
+must share an external valency of 1. This leaves a type IV orbit with an unusable
+valency 3, again a contradiction. □
+One conclusion of Lemma 3.7 is that a viableK-orbit partition ofΓ2 must contain
+an orbit of type I, II or V. By way of the next two lemmas, we narrow this down
+considerably.
+Lemma 3.8.There is noK-orbit partition that contains an orbit of typeI.
+Proof. By Lemma 3.6, the only possible orbit partition containing a type I orbit is
+[I2, III4]. However, we have seen that no pair of type III orbits can share an external
+valency of 2 (cf. proof of Lemma 3.5(c)). As no type I orbit admits such a valency,
+we see that each orbit of type III has an unusable external valency of 2. The result
+follows. □
+Lemma 3.9.A K-orbit partition of Γ2 must be of the form[II, IV4, V].
+Proof. By Lemmas 3.7 and 3.8, aK-orbit partition must contain at least one orbit of
+type II or V. Suppose there exists a type II orbit in the partition. Then by Lemma 3.5
+there cannot be a second orbit of type II, nor can there be more than one orbit of
+type V. Thus the partition is of the form[II, IIIc, IVd, Ve] where c +d +e = 5 and
+0⩽e⩽ 1. Also, as in the proof of Lemma 3.7,c must be even.
+Suppose first thatc = 2. Then by Lemma 3.6 we haved⩽ 2, whence the partition
+must be of the form[II, III2, IV2, V]. In the proof of Lemma 3.6(d), we saw that any
+two orbits of respective types III and IV must be adjoined by a valency of either 1
+or 2. As there are two type IV orbits, both these external valencies get used adjoining
+a type III orbit to these type IV orbits. But this prohibits the existence of a type V
+orbit since such an orbit has four external valencies of 2 and there are no longer any
+valencies of 2 in a type III orbit to accommodate this.
+Forc = 4, the argument is similar. Each pair of two type III orbits must share a
+valency of0, 3 or 4. As there are four type III orbits in this case, every such valency
+gets used adjoining orbits of this type. However, a type II orbit has four external
+valencies of 3. As a type III orbit no longer has a valency of 3 to accommodate this,
+we reach a contradiction This provesc = 0 when a type II orbit is assumed to occur
+in the partition.
+Our only remaining case is to assume a type V orbit occurs in the partition. Here
+the four external valencies of 2 in such an orbit get used adjoining it to four other
+orbits, be they of type III or IV. But this implies there must be an orbit of type II in
+the partition, a case we have already treated. We conclude that aK-orbit partition
+of Γ2 must indeed be of the form[II, IV4, V]. □
+Algebraic Combinatorics , Vol. 8 #2 (2025) 386
+On the automorphism group of a Conway 99-graph
+4 4
+0 4
+4 1
+1
+1
+3
+24
+1
+1
+3
+2
+1
+0
+3 2
+3 2
+IV IV
+IV IV
+II V
+Figure 4. The lone survivingK-orbit partition ofΓ2 (cf. Lemma 3.9)
+We depict theK-orbit partition of type[II, IV4, V] in Figure 4. It too will be shown
+to not exist in due course.
+Lemma 3.10.Neither a typeIV orbit nor a typeV orbit can contain a3-cycle.
+Proof. First observe that type IV and type V orbits have internal valency 4. In any
+orbit of either type we may fix a vertexv and denote its neighbors byvp,v r,v s,v t
+where p,r,s,t ∈K. Howeverv p−1
+,v r−1
+,v s−1
+,v t−1
+must also be neighbors ofv. This
+means, with one exception, the automorphismsp,r,s,t must come in pairs. The one
+exception is if two or four ofp,r,s,t are involutory. However, this cannot be the case
+since K contains a unique involution. Therefore, without loss of generality we may
+assume r =p−1 and t =s−1. Moreover, we know that|r|,|t|∈{ 7, 14}. Three broad
+cases can arise here, namely|r| =|t| = 7,|r| =|t| = 14 and|r| = 7,|t| = 14.
+Case 1. |r| =|t| = 7: In this case the orbit is comprised of two connected com-
+ponents but that won’t affect our argument. SinceK contains a unique subgroup of
+order 7, we must haver = t m for some integerm∈{ 2, 3}. However, both subcases
+violate λ = 1 as depicted in Figure 5. Specifically, ifr = t2 then the edgevtv t 2
+lies
+on two 3-cycles, while ifr = t3 the edgevv t 4
+suffers the same fate. (Note that the
+subcases m = 4, 5 are identical tom = 3, 2 respectively.)
+Case 2. |r| =|t| = 14: Here we haver = t m where m∈{ 3, 5}. Both subcases
+violateµ = 2 as indicated in Figure 6. Specifically, ifr =t 3 then verticesv t 3
+andv t 5
+havev t 2
+, v t 4
+, v t 6
+as common neighbors, whereas ifr = t 5 then verticesv and v t 4
+havev t 5
+, v t 9
+, v t−1
+as common neighbors.
+Case 3. |r| = 7,|t| = 14 : Here there are three subcases to consider, namely
+r ∈ {t2,t 4,t 6} as indicated in Figure 6. The first and last of these subcases lead
+to violations. Specifically,r =t 2 violatesλ = 1 since the edgevv t lies on two 3-cycles
+with respective antipodal verticesv t 2
+and v t −1
+. In contrast,r = t 6 violates µ = 2
+since the verticesv t 4
+and v t 11
+have v t 3
+, v t 10
+, v t 12
+as common neighbors (as well
+as v t 5
+). Curiously, the caser =t 4 does not lead to anyλ or µ violations, however it
+produces no 3-cycles either. This completes the proof of the lemma. □
+Theorem 3.11.G does not contain any order14 elements.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 387
+Patrick G. Cesarz & Andrew J. Woldar
+r =t 2
+v
+v t
+v t 2
+v t 3
+r =t 3
+v
+v t
+v t 3
+v ,t 4
+Figure 5. The case|r| =|t| = 7 of Lemma 3.10
+v
+r = t 3
+vt 6
+vt 5
+vt 4
+vt 3
+vt 2
+v
+r = t 5
+vt −1
+vt 9
+vt 5
+vt 4
+Figure 6. The case|r| =|t| = 14 of Lemma 3.10
+Proof. By way of contradiction, suppose G contains an element of order 14. By
+Lemma 3.1wemayassumethiselementis st,andasusualweset K =⟨st⟩. Lemma 3.9
+now asserts that aK-orbit partition must be of the form[II, IV4, V] as depicted in
+Figure 4. We claim this orbit partition cannot occur.
+For this purpose, it behooves us to restrict the action onV (Γ) from K∼= Z14 to
+⟨s⟩∼= Z7. This latter action yields 15 orbits: one fixed vertex (the rootx) and 14
+orbits of size 7. LetB be the 15× 15 quotient matrix corresponding to this action.
+We compute the trace ofB in two different ways.
+First, letA be the adjacency matrix ofΓ. We know that the characteristic poly-
+nomial of B must divide that of A. Further, we know that the spectrum ofA is
+{14, 3(54),−4(44)}. Since each row sum ofB is 14, we conclude that14 is an eigen-
+value ofB. The spectrum ofB is therefore{14, 3(a),−4(14−a)} for some nonnegative
+integera⩽ 14, and accordingly the trace ofB is 14 + 3a− 4(14−a) = 7a− 42.
+Note that the diagonal entries ofB correspond to the internal valencies of orbits.
+Thus the trace ofB is the sum of these internal valencies. In the action of⟨s⟩ on
+Γ1∪{x}, we have the fixed vertexx (obviously with internal valency zero) and two
+orbits of size7, each having internal valency zero so yielding no contribution to the
+trace. In Γ2 we have 12⟨s⟩-orbits of size 7 which fuse in pairs to form the sixK-
+orbits of Γ2. Five of these sixK-orbits have internal valency4, which, as a direct
+consequence of Lemma 3.10, decompose into pairs of⟨s⟩-orbits each having internal
+valency 2. The sixthK-orbit has internal valency0so contributes nothing to the trace.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 388
+On the automorphism group of a Conway 99-graph
+It follows that the trace ofB is 10(2) = 20. Equating our two computations now yields
+20 = 7a− 42, an obvious contradiction sincea must be integral. We conclude that a
+putative Conway99-graph cannot admit an automorphism of order 14. □
+Proposition 3.12.|G| is not divisible by14.
+Proof. Suppose 14 divides|G|. Then by [12] one has|G|∈{ 14, 42}. Recall from [11]
+that [O(G),t ] = 1 , where O(G) is the maximal odd order normal subgroup ofG
+and t∈ G is an involution. This alone rules outD14, D42, D14× Z3 and Frob (42)
+as possible isomorphism types ofG. The only remaining possibilities areZ14, Z42,
+Z7×S3 and Frob (21)× Z2. However, each of these groups has an element of order
+14 so is ruled out by Theorem 3.11. □
+Corollary 3.13.If 2 divides|G|, then|G| divides 6.
+Proof. This is an immediate consequence of Proposition 3.12 and [11, Corollary 2.4].
+□
+4. Consequences of divisibility by 7
+In this section, we proveG∼= Z7 under the assumption that|G| is divisible by 7.
+Our first step in this direction is to show that|G| must divide 21. This leads to just
+two possible isomorphism types forG, namely Z7 and the Frobenius groupFrob (21).
+Ultimately, we rule outFrob (21) to obtain our desired result.
+Lemma 4.1.Suppose 7 divides|G|, and letP7 be a Sylow7-subgroup ofG. ThenP7
+is normal inG.
+Proof. By[12]andProposition 3.12, |G|mustdivide 33·7·11.BySylow’sTheorem,the
+numbern7 of Sylow7-subgroups must satisfyn7 = [G:NG(P7)] and n7≡ 1 (mod 7).
+It is straightforward to deduce thatP7⊴G for all orders ofG except possibly32·7·11
+and 33· 7· 11. However, in these two cases one hasP11⊴G where P11 is a Sylow 11-
+subgroup ofG. AsP7 does not embed inAut(P11)∼= Z10 it follows that[P7,P 11] = 1.
+But then P11⩽ NG(P7) whence n7 = [G :NG(P7)]∈{ 1, 9, 27}. We now conclude
+from the congruencen7≡ 1 (mod 7) that n7 = 1. HenceP7⊴G as claimed. □
+Proposition 4.2.Divisibility by 7 implies|G| divides 21.
+Proof. By our labeling scheme in Section 2 and Remark 2.3, it is clear thatP7 =⟨s⟩
+wheres = (1L, 2L,..., 7L) (1R, 2R,..., 7R). Furthermore, as⟨s⟩⊴G by Lemma 4.1,
+we have thatG embeds in the normalizerNS(⟨s⟩) where S = Sym(Γ1)∼= S14. Thus
+the order ofG must simultaneously divide|NS(⟨s⟩)| = 22·3·72 and 33·7·11. Obviously
+this implies|G| divides 21. □
+Corollary 4.3.If 7 divides|G|, thenG is isomorphic to eitherZ7 or Frob (21).
+Proof. By Proposition 4.2,|G|∈{ 7, 21}. There are only two groups of order 21 up
+to isomorphism, namely Z21 and Frob (21). But 3 does not divide the order of the
+centralizerCS(s) = (⟨sL⟩×⟨sR⟩) ⋊⟨t⟩∼= (Z7× Z7) ⋊ Z2 whereS = Sym(Γ1). ThusG
+cannot contain an element of order 21, i.e.G̸∼= Z21. □
+In what follows, we gather detailed information about a putative Conway 99-
+graph Γ under the assumption thatG∼=Frob (21). Throughout, we assumeG =⟨s,r⟩
+with|r| = 3. Sincer normalizes⟨s⟩, it is clear thatr fixes the root vertexx whence
+Γ1 and Γ2 are G-invariant. Still, we have yet to pin down the precise structure ofr.
+This is remedied below.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 389
+Patrick G. Cesarz & Andrew J. Woldar
+b1
+LL
+b2
+RR
+b3
+LR
+b4
+RL
+b12
+b13 b24
+b34
+b14 b23
+Figure 7. General form of aG-orbit partition ofΓ2
+Lemma 4.4.With notation as above, we may assume
+r = (1L, 2L, 4L) (3L, 6L, 5L) (1R, 2R, 4R) (3R, 6R, 5R).
+Proof. It is immediate thatr is an element in the normalizerNS(⟨s⟩) inS = Sym(Γ1).
+Applying standard group theoretic arguments, one deduces that there are 98 elements
+of order 3 inNS(⟨s⟩) and these take the form
+((
+(1L, 2L, 4L)(3L, 6L, 5L)
+)(sL)i(
+(1R, 2R, 4R)(3R, 6R, 5R)
+)(sR)j)±1
+where 0⩽i,j ⩽ 6. However, it is easily verified that such an element is an automor-
+phism of Γ1 if and only ifi =j. Thus, the 14 elements of order 3 inG are precisely
+(
+(1L, 2L, 4L) (3L, 6L, 5L) (1R, 2R, 4R) (3R, 6R, 5R)
+)± s i
+from which the result follows. □
+Lemma 4.5.The G-orbit structure onΓ is [1, 72, 214].
+Proof. As 21 does not divide 14, the two⟨s⟩-orbits onΓ1 cannot fuse under the action
+of G. Thus theG-orbit structure onΓ1 is [72].
+Now letO be an arbitraryG-orbit on Γ2. We claimG acts regularly onO from
+which the desired result will follow. To this end, supposeijXY ∈ Ois fixed by
+some g ∈ G, where X,Y ∈ {L,R}. It follows that|g| = 3, since s has no fixed
+points in Γ2. As λ = 1, we have i ̸= j. Thus since µ = 2, g must either fix or
+interchange the twoΓ1-neighbors ofijXY , i.e.{iX g,jY g} ={iX,jY}. But asG has
+odd order, these vertices must be fixed byg, that is,iX g =iX and jY g =jY . Asg
+preserves adjacency, we must also have(iX C)g = iX C and (jY C)g = jY C where
+{X,X C} ={Y,Y C} ={L,R}. In every instance, we obtainiLg =iL and jLg =jL.
+By transitivity of⟨s⟩ on the orbit containingiL, we getjL = iLz for somez∈⟨ s⟩.
+This givesjL[z,g] =iLg −1zg =iLzg =jLg =jL, i.e.jL is a fixed point of[z,g ]. But
+[z,g ]∈⟨s⟩ because⟨s⟩ is normal inG. This implies[z,g ] = 1, a contradiction sinceG
+is nonabelian. We conclude that theG-orbit structure onΓ2 is [214] as claimed. □
+Remark 4.6.Nowthatweunderstandtheorbitstructureof Gon Γ2,itistrivialtode-
+termine a corresponding set of orbit representatives, viz.{12LL, 12RR, 12LR, 12RL}.
+For brevity we shall denote these orbits asLL,RR,LR,RL , respectively. We indicate
+the correspondingG-orbit partition of Γ2 in Figure 7.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 390
+On the automorphism group of a Conway 99-graph
+ForijXY ∈ Γ2, we refer toiX andjY as its coordinates. In the result that follows,
+we demonstrate a manner in which the coordinates of the 12Γ2-neighbors of a fixed
+vertex in Γ2 are balanced.
+Lemma 4.7.Let ijXY be a fixed but arbitrary vertex inΓ2 and consider collectively
+the 24 coordinates appearing among its12 Γ 2-neighbors. Then the following hold:
+(1) Each ofiL,iR,jL,jR appears exactly once.
+(2) Each ofkL,kR appears exactly twice for eachk̸=i,j.
+(3) Each ofL and R appears 12 times, i.e. theΓ2-neighbors of a vertex inΓ2 are
+L/R-balanced.
+Proof. As in Lemmas 3.2 and 4.5 we let{X,X C} ={Y,Y C} ={L,R}. We must
+show that each ofiX,jY andiX C,jY C occurs exactly once as coordinates of theΓ2-
+neighbors ofijXY . We treat the pairiX,jY first. Sinceλ = 1 andijXY is adjacent
+toiX∈ Γ1, there is a unique vertex inΓ2 which is their common neighbor. Evidently
+this vertex is of the formiℓXW for someW∈{L,R} withℓW̸=jY . ThusiX occurs
+exactly once as a coordinate of aΓ2-neighbor ofijXY and by a symmetric argument
+the same holds true forjY .
+We next treat the pairiX C,jY C. Observe that sinceλ = 1, we have thatijXY and
+iX C are nonadjacent. Sinceµ = 2, the verticesijXY and iX C must have a unique
+common neighboriℓX CW∈ Γ2 with iX being their second common neighbor. Thus
+iX C occurs exactly once as a coordinate of aΓ2-neighbor ofijXY with a similar result
+holding forjY C. As{iX,iX C} ={iL,iR} and{jY,jY C} ={jL,jR}, assertion (1)
+is proved.
+Now letk̸= i,j and W∈{ L,R}. Sinceµ = 2 and kW is nonadjacent toijXY ,
+there are exactly two vertices inΓ2 that are common neighbors ofkW and ijXY .
+Obviously,kW appears as a coordinate in each such neighbor, so twice in total. Thus
+assertion (2) is proved. Finally, observe that (3) follows directly from (1) and (2).□
+As a consequence of Lemma 4.7(3), we have the following.
+Lemma 4.8.With notation as in Figure7, b1 =b12 =b2, b13 =b23, andb14 =b24.
+Proof. WeapplyLemma 4.7(3)toverticesin LL,RR,LR,RLinthatorder.Prefatory
+tothis,notethatthecoordinatesofverticesin LRandRLhaveanatural L/R-balance
+built into them. This means we may safely ignore edges that adjoin any vertex inΓ2
+to vertices in either of these two orbits when exploiting the property of balance.
+Letu be a fixed vertex inLL. Asu has valencyb1 inLL, it must haveb1 neighbors
+in RR in order to restoreL/R-balance. This provesb12 =b1. By a similar argument
+based onRR, we haveb12 =b2. Now letu be a vertex inLR. Clearly, every neighbor
+ofu inLL must be reciprocated by a neighbor inRR to maintain balance. This proves
+b13 =b23. Applying this latter argument to vertices inRL yields b14 =b24. □
+To further narrow down possible orbit valencies, we adopt the approach used in
+Section 3. That is to say, we analyze 2-paths between vertices from pairs of orbits.
+Letu be a fixed vertex in the orbitLL. We wish to count in two ways the cardinality
+of the setS given by
+S ={uvw :uvw is a 2-path withw∈RR}.
+Observe that for each of theb1 neighbors ofu in RR there is a unique 2-path inS
+(since λ = 1), while for each of the21−b1 non-neighbors ofu in RR there are two
+such paths (sinceµ = 2). This gives|S| =b1· 1 + (21−b1)· 2 = 42−b1.
+We next condition our count on the location of the intermediate vertexv. Here we
+rely heavily on Lemma 4.8.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 391
+Patrick G. Cesarz & Andrew J. Woldar
+2
+LL
+2
+RR
+b3
+LR
+b3
+RL
+2
+4 4
+4−b3
+4 4
+Figure 8. Narrowing down the valencies of aG-orbit partition ofΓ2
+Ifv lies inLL, there areb1 choices forv followed byb1 independent choices forw.
+This gives a total ofb2
+1 paths inS assuming the intermediate vertexv is inLL. Note
+that for v in RR the count is identical, i.e. there areb2
+1 paths in S assuming v is
+in RR.
+Now supposev is in the orbitLR. Sinceu has b13 neighbors inLR and each such
+vertex hasb13 neighbors inRR, the total number of paths in this case isb2
+13. By a
+similar argument the number of paths withv in RL is b2
+14. Finally, we observe that
+there is no 2-path with intermediate vertexv in Γ1. Indeed, this would require that
+v = iL = jR for somei,j, which is absurd. Thus we obtain|S| = 2b2
+1 +b2
+13 +b2
+14.
+Equating the above two expressions for|S| yields
+(3) 42−b1− 2b2
+1 =b2
+13 +b2
+14.
+The only integral solution to equation 3 isb1 = 2, b13 =b14 = 4 which, by virtue
+of Lemma 4.8, narrows down the orbit valencies to the ones indicated in Figure 8.
+We are nearly at the point of determining the unique orbit structure of G ∼=
+Frob (21) acting on the second subconstituentΓ2 of a putative Conway 99-graphΓ.
+To complete the process, we count in two ways the number of 2-paths originating at
+a fixed vertexu in LR and ending at some vertex inRL.
+On one hand, there are4−b3 edges fromu to some vertexw inRL, and in each case
+thereisaunique2-path uvw sinceλ = 1.Similarly,foreachofthe 21−(4−b3) = 17+b3
+vertices inRL nonadjacent tov there are two distinct 2-paths of required form. This
+gives a total of(4−b3)· 1 + (17 +b3)· 2 = 38 +b3 such 2-paths.
+We next focus our count on the location of the intermediate vertexv. If v is in
+either ofLL or RR, there are4· 4 = 16 such 2-paths, while ifv is in either ofLR or
+RL there are(4−b3)b3 = 4b3−b 2
+3 such 2-paths. Lastly, we considerv∈ Γ1. Sinceu is
+inLR, it has coordinatesijLR for somei̸=j whence its twoΓ1-neighbors areiL and
+jR. Note that the 12 neighbors ofiL in Γ2 are of the formikLL andikLR (=kiRL)
+where k̸=i. Thus six neighbors ofiL lie inLR∪RL. However, these neighbors are
+divided evenly betweenLR andRL, sinceikLR is inLR if and only ifikRL is inRL.
+ThusiL has three neighbors inLR and by a symmetric argument this holds true for
+jR. This gives six more 2-paths starting atu and terminating at some vertex inRL.
+Thus the total number of such 2-paths is2(16) + 2(4b3−b2
+3) + 6 = 38 + 8b3− 2b 2
+3 via
+this second count.
+Equating the two counts yields38 +b3 = 38 + 8b3− 2b 2
+3 which simplifies to2b 2
+3−
+7b3 = 0. Clearly, the only integral solution isb3 = 0 which gives us the following.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 392
+On the automorphism group of a Conway 99-graph
+2
+LL
+2
+RR
+0
+LR
+0
+RL
+2
+4 4
+4
+4 4
+Figure 9. The uniqueG-orbit partition ofΓ2 where G∼=Frob (21)
+Proposition 4.9.AssumeG∼=Frob (21). Then the only feasibleG-orbit partition of
+Γ2 is the one depicted in Figure9.
+Remark 4.10.Observethateachof LR∪{x}andRL∪{x}isacocliqueofsize22.This
+is in fact the largest independence number allowable by the Hoffman Ratio Bound
+(aka Hoffman–Delsarte inequality), see [10]. Further note from Figure 9 that every
+vertex outside ofLR∪{x} (resp.RL∪{x}) has precisely four neighbors inLR∪{x}
+(resp.RL∪{x}).
+Let us call a 3-cycleu1u2u3 of type(X1Y1,X 2Y2,X 3Y3) providedui is in the orbit
+XiYi where Xi,Y i∈{L,R} for 1⩽i⩽ 3.
+Proposition 4.11.Each ofLL and RR consists of seven vertex-disjoint3-cycles.
+Proof. By transitivity of G on its orbits, each orbit of 3-cycles in Γ2 has size 21
+with the exception being 3-cycles of type (LL,LL,LL ) or (RR,RR,RR ). Indeed,
+orbits of 3-cycles of these two types would have to be of size 7 since the 3-cycles
+remain internal to their respective orbits. As there are a total of 140 3-cycles inΓ2
+(cf. Lemma 2.4), their division inton7 orbits of size 7 andn21 orbits of size 21 must
+satisfy 7n7+21n21 = 140. Moreover,0⩽n7⩽ 2 since each ofLL andRR has internal
+valency 2. Since the only integral solution to the above isn7 = 2 and n21 = 6, each
+of LL and RR must contain seven vertex-disjoint 3-cycles as claimed. □
+Our goal is to prove theG-orbit partition depicted in Figure 9 cannot exist. To this
+end we consider the finer⟨s⟩-orbit partition ofΓ2. (Recall thatG =⟨s,r⟩ with r as
+defined in Lemma 4.4.) Observe that each ofLL,RR,LR,RL decomposes into three
+⟨s⟩-orbits. We denote these latter 12 orbits by(XY )i whereXY ∈{LL,RR,LR,RL }
+and 1⩽i⩽ 3. Here, we are obviously requiring that(XY )i⊂XY for alli.
+WewillagainapplythemethodweusedinSection 3todetermineorbitvalencies bij
+by counting 2-paths, only this time our focus will be on the aforementioned⟨s⟩-orbit
+partition. Thus, we begin by counting in two ways the cardinality of the set
+S ={uvw :uvw is a 2-path withw∈ (XY )i},
+where u is a fixed vertex in(XY )i. For each of thebi neighbors ofu in (XY )i there
+is a unique 2-path fromu to w (since λ = 1). Similarly, for each of the6−bi non-
+neighbors ofu in (XY )i there are two 2-paths fromu to w (since µ = 2). This gives
+|S| =bi· 1 + (6−bi)· 2 = 12−bi.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 393
+Patrick G. Cesarz & Andrew J. Woldar
+We next condition our count on the location of the intermediate vertexv. Forv
+in (XY )j there arebij (bij− 1) such 2-paths. Additionally, ifXY ∈{LL,RR} thenu
+has exactly two neighbors inΓ1 each of which has a unique neighborw∈ (XY )i ∖{u}.
+In contrast, ifXY ∈{ LR,RL} there are no such neighbors inΓ1. This gives|S| =∑12
+j=1bij (bij−1)+c, wherec = 2ifXY ∈{LL,RR}andc = 0ifuifXY ∈{LR,RL}.
+Equating these two expressions for|S|, we obtain12−bi =∑12
+j=1bij (bij− 1) +c. But
+due to the fact that∑12
+i=1bij = 12, this simplifies to
+(4) 24−c−
+(
+b 2
+i +bi
+)
+=
+∑
+j̸=i
+b 2
+ij
+We divide our analysis into cases based on an assumed value forbi. Once a choice
+of bi is made, we find all ways of expressing24−c−
+(
+b 2
+i +bi
+)
+as a sum of eleven
+squares while maintaining the valency requirement∑12
+i=1bij = 12.
+Note thatbi⩽ 4 since otherwise the value of24−c−
+(
+b 2
+i +bi
+)
+would be negative.
+It is also clear by the Handshake Lemma that every internal valencybi must be even
+because every⟨s⟩-orbit is of size 7. In addition, we cannot havebi = 4 since this we
+would lead to a violation ofλ = 1. Thusbi∈{ 0, 2}.
+However, recall from the coarserG-orbit partition ofΓ2 that the internal valency
+of LR and RL is 0 while that ofLL and RR is 2. By Proposition 4.11 the internal
+valencies of(LL)i and (RR)i must be zero since no 3-cycle inLL orRR can lie wholly
+within an⟨s⟩-orbit. We conclude that the internal degree of every⟨s⟩-orbit is zero.
+We are now prepared to list all feasible solution to equation 4. Verification of the
+list is straightforward, so left to the reader.
+Lemma 4.12.Solutions for orbits of type(LL)i or (RR)i are listed as follows:
+(a)
+(
+0,
+{
+3, 2, 2, 1, 1, 1, 1, 1, 0, 0, 0
+})
+(b)
+(
+0,
+{
+2, 2, 2, 2, 2, 1, 1, 0, 0, 0, 0
+})
+Solutions for orbits of typeLRi or RLi are listed as follows:
+(c)
+(
+0,
+{
+4, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0
+})
+(d)
+(
+0,
+{
+3, 3, 1, 1, 1, 1, 1, 1, 0, 0, 0
+})
+(e)
+(
+0,
+{
+3, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0
+})
+(f)
+(
+0,
+{
+2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0
+})
+Wecanfairlyquicklyeliminatesequences(c)and(d)fromthislist.Accordingtothe
+G-orbit partition ofΓ2 depicted in Figure 9, the orbitLR has external orbit valency
+of 4 to each ofLL,RR,RL . Assume now that sequence (c) corresponds to an⟨s⟩-orbit
+insideLR, say(LR)1. All three zeros in sequence (c) must be used in adjoining(LR)1
+to (LR)1, (LR)2, (LR)3. This leaves the subsequence{4, 1, 1, 1, 1, 1, 1, 1, 1} to account
+for all external orbit valencies of(LR)1. But as there is no 3-element subset of this
+subsequence that sums to 4, there is no possible way to adjoin(LR)1 to any⟨s⟩-orbit
+outside ofLR. (Of course the argument forRL is entirely symmetric.) This eliminates
+sequence (c) as a possible solution.
+The argument for eliminating sequence (d) is similar. As above, all three zeros
+in sequence (d) are used to adjoin (LR)1 to (LR)1, (LR)2, (LR)3. This leaves the
+subsequence{3, 3, 1, 1, 1, 1, 1, 1} to account for all external orbit valencies of(LR)1.
+But as before, there is no 3-element subset of this subsequence that sums to 4. Hence,
+sequence (d) is ruled out as well.
+For future reference, it is convenient to designate the surviving solution by type,
+e.g.
+I.
+(
+0,
+{
+3, 2, 2, 1, 1, 1, 1, 1, 0, 0, 0
+})
+II.
+(
+0,
+{
+2, 2, 2, 2, 2, 1, 1, 0, 0, 0, 0
+})
+III.
+(
+0,
+{
+3, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0
+})
+IV.
+(
+0,
+{
+2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0
+})
+Algebraic Combinatorics , Vol. 8 #2 (2025) 394
+On the automorphism group of a Conway 99-graph
+In what follows it behooves us to double count 2-paths of the formuvw where u
+is a fixed vertex in(XY )i and w is an arbitrary vertex in(UV )j, UV ̸= XY . For
+convenience we resort to the notationOi (1⩽ i⩽ 12) to represent the⟨s⟩-orbits
+(LL)1, (LL)2, (LL)3, (RR)1, (RR)2, (RR)3, (LR)1, (LR)2, (LR)3, (RL)1, (RL)2, (RL)3
+in that order.
+For the first count, we observe thatu ∈ Oi has bij neighbors inOj, and for
+each such neighborw∈O j there is a unique 2-pathuvw (since λ = 1). Similarly,
+u has 7−bij non-neighbors inOj, and for each such non-neighborw∈O j there
+are exactly two 2-paths of the formuvw (since µ = 2). Thus, there are a total of
+bij· 1 + (7−bij)· 2 = 14−bij 2-paths of required form.
+For our second count, we focus on the location of the intermediate vertexv in each
+2-pathuvw. Herev can occur in any in the twelve orbits ofΓ2 as well as inΓ1. In the
+case of orbits inΓ2, there arebik choices forv∈O k and for each such choice there
+are bkj choices forw∈O j. This givesbikbkj 2-paths of this type. Finally, we denote
+bycij the number of 2-paths that have intermediate vertexv in Γ1.
+Equating these two counts yields
+(5) 14−bij =
+12∑
+k=1
+bikbkj +cij.
+Let C be the 12× 12 quotient matrix corresponding to the action of⟨s⟩∼= Z7
+restricted to Γ2. Consistent with the above, we order the rows and columns ofC
+by (LL)1, (LL)2, (LL)3, (RR)1, (RR)2, (RR)3, (LR)1, (LR)2, (LR)3, (RL)1, (RL)2,
+(RL3).
+Proposition 4.13.Under the assumption thatG∼= Frob (21), there is no⟨s⟩-orbit
+LLi or RRj that has valency3.
+Proof. By way of contradiction, suppose3 occurs as a valency of(LL)i or (RR)j in
+the⟨s⟩-orbit partition ofΓ2. This implies sequence I coincides with the valencies of
+such an orbit. Since the valency between theG-orbitsLL andRR is 2, the valency 3
+in sequence I must be used to adjoin to an⟨s⟩-orbit withinLR or RL. Since all⟨s⟩-
+orbits of Γ2 are of equal size, it follows that all external valencies are bidirectional.
+Thus without loss of generality, sequence III coincides with the valencies of the⟨s⟩-
+orbit (LR)1.
+Our next observation depends solely on the assumption that⟨s⟩ is a proper sub-
+group ofG =⟨s,r⟩∼=Frob (21). Sincer permutes the three⟨s⟩-orbits within a given
+G-orbit, we have that(XY )1, (XY )2, (XY )3 must share the same set of valencies for
+everyXY ∈{LL,RR,LR,RL }. Recalling that theG-orbitsLL andLR are adjoined
+by a valency of4, we may further assume that each(LL)i adjoins (LR)1, (LR)2, (LR)3
+with valencies3, 1, 0 in some order. This leads to the following3× 3 submatrix ofC
+corresponding to the orbit valencies adjoining each of(LL)i to each of(LR)j, where
+1⩽i,j ⩽ 3.
+
+
+3 1 0
+1 0 3
+0 3 1
+
+
+We next consider the four3× 3 submatrices that occur as block diagonals ofC.
+Since LR and RL are independent sets, the block corresponding to the⟨s⟩-orbits
+within each of them is the3× 3 zero matrix. Next recall from Lemma 4.11 that each
+ofLL andRR consists of seven disjoint 3-cycles. As the vertices of such 3-cycles must
+occupy different⟨s⟩-orbits, we obtain the following3× 3 submatrix for the⟨s⟩-orbits
+Algebraic Combinatorics , Vol. 8 #2 (2025) 395
+Patrick G. Cesarz & Andrew J. Woldar
+within LL, as well as for those withinRR.
+
+
+0 1 1
+1 0 1
+1 1 0
+
+
+Finally, recall that in theG-orbit partition, the orbitLL is adjoined toRR and RL
+with orbit valencies of 2 and 4, respectively. This means we must arrange the unused
+portion of sequence I, namely2, 2, 1, 1, 0, 0, into two groups of three that sum to 2
+and 4. Here there are two possibilities:{{1, 1, 0},{2, 2, 0}} and{{2, 0, 0},{2, 1, 1}}.
+We indicate below the two matrices that reflect these possibilities in addition to what
+we have deduced so far.
+C1 =
+
+
+0 1 1 0 1 1 3 1 0 0 2 2
+1 0 1 1 0 1 1 0 3 2 0 2
+1 1 0 1 1 0 0 3 1 2 2 0
+0 1 1 0 1 1
+1 0 1 1 0 1
+1 1 0 1 1 0
+3 1 0 0 0 0
+1 0 3 0 0 0
+0 3 1 0 0 0
+0 2 2 0 0 0
+2 0 2 0 0 0
+2 2 0 0 0 0
+
+
+C2 =
+
+
+0 1 1 2 0 0 3 1 0 2 1 1
+1 0 1 0 2 0 1 0 3 1 2 1
+1 1 0 0 0 2 0 3 1 1 1 2
+2 0 0 0 1 1
+0 2 0 1 0 1
+0 0 2 1 1 0
+3 1 0 0 0 0
+1 0 3 0 0 0
+0 3 1 0 0 0
+2 1 1 0 0 0
+1 2 1 0 0 0
+1 1 2 0 0 0
+
+
+We first consider the matrixC1. We claim this matrix cannot be completed to
+the desired matrixC. To prove this, we attempt to complete its fourth row, i.e. the
+row corresponding to the⟨s⟩-orbit (RR)1. Note that the value 1 already appears four
+times in this row, which dictates that the orbit valencies of(RR)1 must coincide with
+sequence I. In particular, the six unfilled entries in this row must match up with those
+values in sequence I that have yet to be used, viz.3, 2, 2, 1, 0, 0. As the external valency
+that adjoinsRR to each ofLR andRL is 4, the above six values must be partitioned
+into two groups of size 3 each summing to 4. Moreover, as the value 3 cannot occur
+twice in any column, the desired partition is{{2, 2, 0},{3, 1, 0}}.
+We now apply equation 5 to the orbits(LL)2 and (RR)1. Note that in this case
+we haveb24 = 1 and c24 = 0. Further note that the righthand side of equation 5 is
+simply the dot product of the second and fourth rows. For convenience, let us denote
+by a,b,c,d,e,f the six missing entries of row 4 in that order. Then the dot product
+in question is2 +a + 3c + 2d + 2f, an even integer due toa,c∈{ 0, 2}. But this is a
+contradiction since the lefthand side of equation 5 is14−b24 = 13 in this case.
+Wenextturnourattentiontothematrix C2.Again,weclaimthereisnocompatible
+way to complete the fourth row. The argument here is a bit more sophisticated than
+the one provided forC1, but the basic ideas are the same. The only initial difference
+is that the roles of{2, 2, 0} and{3, 1, 0} have been reversed.
+We first apply equation 5 to the first and fourth rows ofC2, noting thatb14 = 2
+and c14 = 0. Thus the lefthand side of equation 5 is14− 2 = 12 while the righthand
+side is 3a +b + 2d +e +f. Thus we obtain
+12 = 3a +b + 2d +e +f = (a +b +c +d +e +f) + (2a−c +d) = 8 + 2a−c +d
+which impliesd is even sincec∈{ 0, 2}. Thusd = 0 because d∈{ 0, 1, 3}.
+Our next step is to apply equation 5 to the second and fourth rows ofC2, noting
+that b24 = 0 and c24 = 0 in this case. Here equation 5 yields
+14 = 4+a+3c+d+2e+f = 4+(a+b+c+d+e+f)+(2c−b+e) = 12+(2c−b+e)
+which impliese is even sinceb∈{ 0, 2}. Thuse = 0 because e∈{ 0, 1, 3}. Together
+we now haved = e = 0 which contradicts the fact that{d,e,f} ={0, 1, 3}. Since
+Algebraic Combinatorics , Vol. 8 #2 (2025) 396
+On the automorphism group of a Conway 99-graph
+neither C1 nor C2 can be completed to the desired quotient matrixC, it follows
+that 3 cannot occur as the valency of any orbit in an⟨s⟩-orbit partition ofΓ2. □
+Proposition 4.14.The G-orbit partition in Figure9 cannot exist.
+Proof. We proceed as in the proof of Proposition 4.13 with the additional knowledge
+that the valencies of all⟨s⟩-orbits (LL)i and (RR)j coincide with sequence II. From
+this, it is an easy matter to arrive at the partially completed matrixC3 below.
+C3 =
+
+
+0 1 1 2 0 0 0 2 2 0 2 2
+1 0 1 0 2 0 2 0 2 2 0 2
+1 1 0 0 0 2 2 2 0 2 2 0
+2 0 0 0 1 1
+0 2 0 1 0 1
+0 0 2 1 1 0
+0 2 2 0 0 0
+2 0 2 0 0 0
+2 2 0 0 0 0
+0 2 2 0 0 0
+2 0 2 0 0 0
+2 2 0 0 0 0
+
+
+Just as in the proof of Proposition 4.13, we claim there is no possible way to complete
+the fourth row ofC3 in a manner that is compatible with rows1, 2, 3.
+We first observe that the missing valencies of(RR)1, denoted bya,b,c,d,e,f for
+notational convenience, must coincide with the remaining portion of sequence II,
+viz. 2, 2, 2, 2, 0, 0. Applying equation 5 to the⟨s⟩-orbits (LL)2 and (RR)1, we obtain
+14 = 4 + 2a + 2c + 2d + 2f where we have used the fact thatb24 =c24 = 0. However,
+this easily simplifies to 5 = a +c +d +f, a contradiction sincea,c,d,f ∈{ 0, 2}.
+Together with Proposition 4.13, this proves there is no possible⟨s⟩-orbit partition
+that fuses to theG-orbit partition in Figure 9. The result follows. □
+Corollary 4.15.If 7 divides|G| then G∼= Z7.
+Proof. The result follows at once from Corollary 3.13 and Propositions 4.9 and 4.14.
+□
+Acknowledgements. The authors wish to thank Jason Williford for helpful discussions.
+We are also grateful to two anonymous referees for their valuable comments.
+References
+[1] Majid Behbahani and Clement Lam,Strongly regular graphs with non-trivial automorphisms,
+Discrete Math. 311 (2011), no. 2-3, 132–144.
+[2] Norman Biggs, Finite groups of automorphisms, London Mathematical Society Lecture Note
+Series, vol. 6, Cambridge University Press, London-New York, 1971.
+[3] NormanBiggs, Algebraic graph theory,second ed.,CambridgeMathematicalLibrary,Cambridge
+University Press, Cambridge, 1993.
+[4] A. E. Brouwer, A. M. Cohen, and A. Neumaier,Distance-regular graphs, Ergebnisse der Math-
+ematik und ihrer Grenzgebiete (3) [Results in Mathematics and Related Areas (3)], vol. 18,
+Springer-Verlag, Berlin, 1989.
+[5] Andries E. Brouwer and H. Van Maldeghem,Strongly regular graphs, Encyclopedia of Mathe-
+matics and its Applications, vol. 182, Cambridge University Press, Cambridge, 2022.
+[6] John H. Conway,Five $1000 Problems, in Proceedings OEIS50–DIMACS Conference, 2014,
+OEIS Foundation Inc., Updated 2017, p. A248380.
+[7] Dean Crnković and Marija Maksimović,Construction of strongly regular graphs having an au-
+tomorphism group of composite order, Contrib. Discrete Math.15 (2020), no. 1, 22–41.
+[8] Chris Godsil and Gordon Royle,Algebraic graph theory, Graduate Texts in Mathematics, vol.
+207, Springer-Verlag, New York, 2001.
+Algebraic Combinatorics , Vol. 8 #2 (2025) 397
+Patrick G. Cesarz & Andrew J. Woldar
+[9] Richard K. Guy,Problems, in Proceedings of a Conference held at Michigan State University,
+1974 (L. M. Kelly, ed.), Lecture Notes in Math., vol. 490, Springer-Verlag, Berlin, 1975, pp. 233–
+244.
+[10] Willem H. Haemers,Hoffman’s ratio bound, Linear Algebra Appl.617 (2021), 215–219.
+[11] A. A. Makhnev,On automorphisms of distance-regular graphs, J. Math. Sci.166 (2010), no. 6,
+733–742.
+[12] A. A. Makhnev and I. M. Minakov,On automorphisms of strongly regular graphs with the
+parametersλ = 1 and µ = 2, Diskret. Mat.16 (2004), no. 1, 95–104.
+[13] Joseph J. Rotman,An introduction to the theory of groups, third ed., Allyn and Bacon, Inc.,
+Boston, MA, 1984.
+[14] H. A. Wilbrink,On the (99, 14, 1, 2) strongly regular graph, in Papers dedicated to J. J. Seidel
+(J. H. van Lint P. J. de Doelder, J. de Graaf, ed.), vol. 84-WSK-03 Tech. Report, Eindhoven
+Univ., 1984, pp. 342–355.
+Patrick G. Cesarz, University of Wyoming, Dept. of Mathematics & Statistics, 1000 E. University
+Ave., Laramie, WY 82071 (USA)
+E-mail : pcesarz@uwyo.edu
+Andrew J. Woldar , Villanova University, Dept. of Mathematics & Statistics, 800 E. Lancaster
+Ave., Villanova, PA (USA)
+E-mail : andrew.woldar@villanova.edu
+Algebraic Combinatorics , Vol. 8 #2 (2025) 398

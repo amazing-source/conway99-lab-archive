@@ -1,0 +1,47 @@
+role: verifier
+date_utc: 2026-07-28T12:03:26Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification of the triangle-root partition, matching-composition
+  prism trace, explicit prism-free witness, and forced 36x36 Gram projection
+  for a hypothetical srg(99,14,1,2).
+inputs:
+  - path: attempts/wave149-terwilliger-triple/package-manifest.sha256
+    sha256: 84bea47182b6a59b69f5df29d4f7a8cdf71bff63cfbc47947b1e65013d09d70f
+  - path: attempts/wave149-terwilliger-triple/exact-results.json
+    sha256: 6fed4da32fbeefce54d1802136dc8c9a328f112bb0f295a86230f0e6175f5ee6
+  - path: verification/wave149-terwilliger-triple/input-freeze.sha256
+    sha256: e64355acc6f2b7e9e5ab0adb0821bacf6ff12c2ec863582680a0f6c53580b980
+method: >-
+  Independently derived the equitable triangle partition and prism fixed-point
+  formula; reconstructed the witness and Gram matrix with standard-library
+  integer arithmetic; proved PSD through exact Klein-four joint characters;
+  cross-checked rank by Fraction row reduction; compared only the final stored
+  candidate data after verifying the sealed discovery package. Discovery code
+  was neither imported nor executed.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave149-terwilliger-triple\independent_verify.py --verify
+  verification\wave149-terwilliger-triple\independent-results.json
+test_command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave149-terwilliger-triple -p "test_*.py" -v
+test_result: "PASS: 9 tests"
+outputs:
+  - path: verification/wave149-terwilliger-triple/independent-results.json
+    sha256: 2fe3f3b912675017125bd98a5c37f0d9af7dbfd4b70cb3f2373f14469ec00cfa
+  - path: verification/wave149-terwilliger-triple/independent_verify.py
+    sha256: c231d4684d08dae0fffd5940bac5820c7f30e74fa676c8a52d02243d97e8ee93
+  - path: verification/wave149-terwilliger-triple/derivation.md
+    sha256: 0550e3907bc2435598d01fdd62c7f36f80ad10feb0a3fd28143efdef280ea7a3
+  - path: verification/wave149-terwilliger-triple/test_independent_verify.py
+    sha256: d915e585cbd75683719720aea71371ba1e514f5f465ab959ccd6552610d5716e
+verdict: >-
+  VERIFIED_SCOPED: the explicit zero-prism matching witness passes the first
+  forced Gram/PSD/rank projection. Therefore that projection alone does not
+  force a rooted prism.
+limitations: >-
+  No binary 36x60 incidence factor, residual 60-vertex adjacency block, global
+  graph, strict upper bound, target resolution, or novelty claim is verified.
+  Those questions remain UNKNOWN.

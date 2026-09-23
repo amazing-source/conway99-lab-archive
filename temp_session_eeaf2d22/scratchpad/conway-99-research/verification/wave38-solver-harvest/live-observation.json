@@ -1,0 +1,32 @@
+{
+  "capture_method": "Read-only Get-CimInstance command-line inspection, Get-Process CPU sample, and Test-Path on the two declared outputs",
+  "claim_label": "UNKNOWN",
+  "evidentiary_value": "NONE",
+  "format": "wave38-independent-live-observation-v1",
+  "outputs": {
+    "attempts/wave36-rooted-branches/refined-100k-minicard-parent4.json": false,
+    "attempts/wave36-rooted-branches/refined-100k.json": false
+  },
+  "sample_ended_utc": "2026-07-27T01:04:32.244Z",
+  "sample_started_utc": "2026-07-27T01:04:27.665Z",
+  "workers": [
+    {
+      "command_scope_matches_snapshot": true,
+      "cpu_delta_seconds": 0.3125,
+      "launcher_pid": 25088,
+      "pid": 27676,
+      "responding": true,
+      "run_id": "full-33-gluecard4",
+      "working_set_bytes": 256950272
+    },
+    {
+      "command_scope_matches_snapshot": true,
+      "cpu_delta_seconds": 0.78125,
+      "launcher_pid": 42444,
+      "pid": 20988,
+      "responding": true,
+      "run_id": "parent4-minicard",
+      "working_set_bytes": 1025175552
+    }
+  ]
+}

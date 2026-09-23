@@ -1,0 +1,215 @@
+{
+  "claim_label": "VERIFIED",
+  "cutoffs": {
+    "10": {
+      "cache_sha256": "2b0435f9cc755a7732ee453ad66bc5d64633314f9e9d1dd5c130b234fe289e49",
+      "candidate_sha256": "78f5ff7f648b27200c320d49f181fec2e953094d3007fc889ad195cc6c90c711",
+      "classification": "VERIFIED_EXACT_RATIONAL_FEASIBLE",
+      "equalities_checked": 282,
+      "failed_equalities": 0,
+      "failed_inequalities": 0,
+      "inequalities_checked": 320,
+      "tight_inequalities": 263,
+      "variables": 239
+    },
+    "12": {
+      "cache_sha256": "e4c144da13cca3ebf650345e41fcd9144b74c54777af9efdf7f19f9294b74a9b",
+      "candidate_sha256": "6a1c6ef4c9751ff137f28dcc34d089b0254019733ef9eb63b80b14921de33281",
+      "classification": "VERIFIED_EXACT_RATIONAL_FEASIBLE",
+      "equalities_checked": 304,
+      "failed_equalities": 0,
+      "failed_inequalities": 0,
+      "inequalities_checked": 436,
+      "tight_inequalities": 300,
+      "variables": 239
+    },
+    "14": {
+      "cache_sha256": "bac0525bf8636a0d09a26aebc3a09d056f85e79b4d3c803e9f3e3d9c8968dc61",
+      "candidate_sha256": "ce9ce071ab97ee25e6be37ac812f067857ff9dfbe344232b723ae9271e95e0f3",
+      "classification": "VERIFIED_EXACT_RATIONAL_FEASIBLE",
+      "equalities_checked": 326,
+      "failed_equalities": 0,
+      "failed_inequalities": 0,
+      "inequalities_checked": 562,
+      "tight_inequalities": 332,
+      "variables": 239
+    },
+    "16": {
+      "cache_sha256": "75200bdaa47b2d98b3be68430933ccd882239eb5c20b648d57629f0665a67b62",
+      "candidate_sha256": "0e8aafd93819c5d7aa9643da1aa7a5c6cfe8f09fe1ed959570189a7595631670",
+      "classification": "VERIFIED_EXACT_RATIONAL_FEASIBLE",
+      "equalities_checked": 346,
+      "failed_equalities": 0,
+      "failed_inequalities": 0,
+      "inequalities_checked": 700,
+      "tight_inequalities": 344,
+      "variables": 239
+    },
+    "18": {
+      "cache_sha256": "7c74f3e2608a4fda3ea9c79d60e02295ac702df4552b35b6002fe5488c35c560",
+      "candidate_sha256": "705d525652fcce1be47f78572c07516d0a2591181eab2adea30097e251cf231e",
+      "classification": "VERIFIED_EXACT_RATIONAL_FEASIBLE",
+      "equalities_checked": 366,
+      "failed_equalities": 0,
+      "failed_inequalities": 0,
+      "inequalities_checked": 846,
+      "tight_inequalities": 381,
+      "variables": 239
+    },
+    "20": {
+      "cache_sha256": "d86a4d0e1cefdcf5a1d9b647955931b2686c306d585da5a63fcd91f1834b3bdb",
+      "candidate_sha256": "3e43084ca53b2c5f211d27d92ea7c9ea2573feb8c4ab5bd922cf6235c86b610d",
+      "classification": "VERIFIED_EXACT_RATIONAL_FEASIBLE",
+      "equalities_checked": 386,
+      "failed_equalities": 0,
+      "failed_inequalities": 0,
+      "inequalities_checked": 1000,
+      "tight_inequalities": 396,
+      "variables": 239
+    },
+    "28": {
+      "affine_free_dimension": 100,
+      "cache_sha256": "21b114efb70b36001524f256d228621cf21847ec36e542a13b09578636ba1c3d",
+      "candidate_sha256": "b5706ee17551ce6943275f1f94764720302e332a347eb7f618e3c0b56cbb62df",
+      "classification": "UNKNOWN",
+      "deduplicated_inequalities": 510,
+      "equalities": 454,
+      "exact_farkas_certificate": false,
+      "exact_primal_certificate": false,
+      "independent_equalities": 139,
+      "inequalities": 1686,
+      "reason": "Floating feasibility plus failed exact recovery proves neither exact feasibility nor infeasibility.",
+      "variables": 239
+    }
+  },
+  "format": "wave127-wave129-independent-audit-v1",
+  "fricke_audit": {
+    "all_cache_truncations_match": true,
+    "block_factor": "h_c = -7^(-3-c) (f_c|W7)",
+    "cross_cache_exact_coefficients_compared": 706322,
+    "exponents_by_c": {
+      "0": -3,
+      "1": -4,
+      "10": -13,
+      "2": -5,
+      "3": -6,
+      "4": -7,
+      "5": -8,
+      "6": -9,
+      "7": -10,
+      "8": -11,
+      "9": -12
+    },
+    "normalized_operator": "(f|W7)(tau)=7^(-w/2) tau^(-w) f(-1/(7 tau))",
+    "q0_exact_comparisons": 3234
+  },
+  "memory": {
+    "floor_percent": 15,
+    "floor_respected": true
+  },
+  "module_audit": {
+    "dimension_formula": "dim M_w(Gamma0(7)) = 1 + 2 floor(w/3)",
+    "raw_product_fricke_involutions_checked": 616,
+    "rows": [
+      {
+        "c": 0,
+        "dimension": 15,
+        "product_rank": 15,
+        "sturm_bound": 14,
+        "weight": 22
+      },
+      {
+        "c": 1,
+        "dimension": 17,
+        "product_rank": 17,
+        "sturm_bound": 16,
+        "weight": 24
+      },
+      {
+        "c": 2,
+        "dimension": 17,
+        "product_rank": 17,
+        "sturm_bound": 17,
+        "weight": 26
+      },
+      {
+        "c": 3,
+        "dimension": 19,
+        "product_rank": 19,
+        "sturm_bound": 18,
+        "weight": 28
+      },
+      {
+        "c": 4,
+        "dimension": 21,
+        "product_rank": 21,
+        "sturm_bound": 20,
+        "weight": 30
+      },
+      {
+        "c": 5,
+        "dimension": 21,
+        "product_rank": 21,
+        "sturm_bound": 21,
+        "weight": 32
+      },
+      {
+        "c": 6,
+        "dimension": 23,
+        "product_rank": 23,
+        "sturm_bound": 22,
+        "weight": 34
+      },
+      {
+        "c": 7,
+        "dimension": 25,
+        "product_rank": 25,
+        "sturm_bound": 24,
+        "weight": 36
+      },
+      {
+        "c": 8,
+        "dimension": 25,
+        "product_rank": 25,
+        "sturm_bound": 25,
+        "weight": 38
+      },
+      {
+        "c": 9,
+        "dimension": 27,
+        "product_rank": 27,
+        "sturm_bound": 26,
+        "weight": 40
+      },
+      {
+        "c": 10,
+        "dimension": 29,
+        "product_rank": 29,
+        "sturm_bound": 28,
+        "weight": 42
+      }
+    ],
+    "total_dimension": 239,
+    "weak_jacobi_decomposition": "direct sum c=0..10 M_(22+2c)(Gamma0(7)) A^c B^(10-c)"
+  },
+  "preinspection": {
+    "wave127-independent-jacobi-certificate": {
+      "entries_checked": 55,
+      "manifest_sha256": "f4a1039928dcbd21e8de81f199265c80631182ec53f51d8c7e657259ee2f5fe4"
+    },
+    "wave129-jacobi-stress": {
+      "entries_checked": 16,
+      "manifest_sha256": "93e1f208faec2187ed3339e131af670d181a63a9518e6fd39ef0939540d79e5b"
+    }
+  },
+  "scope": "Exact feasibility only for the finite rank-28, discriminant-16, level-7 Jacobi necessary-condition relaxations at cutoffs 10,12,14,16,18,20; cutoff 28 remains UNKNOWN.",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "cutoff_28": "UNKNOWN",
+    "graph_constructed": false,
+    "lattice_constructed": false,
+    "literature_novelty": "UNKNOWN",
+    "rank28_excluded": false,
+    "rank28_realized": false
+  }
+}

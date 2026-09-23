@@ -1,0 +1,200 @@
+{
+  "claim_label": "VERIFIED",
+  "discovery_comparison": {
+    "norm16_h0": {
+      "histogram_count_exactly_equal": true,
+      "histograms_exactly_equal": true
+    },
+    "norm18_h0": {
+      "histogram_count_exactly_equal": true,
+      "histograms_exactly_equal": true
+    },
+    "norm18_h1": {
+      "histogram_count_exactly_equal": true,
+      "histograms_exactly_equal": true
+    }
+  },
+  "endpoint": {
+    "all_short_vector_alternatives_excluded": false,
+    "conway_status": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  },
+  "format": "wave78-independent-verification-v1",
+  "lanes": {
+    "norm16_h0": {
+      "histogram_convention": "[n0,n1,...,n7]",
+      "histogram_count": 1,
+      "histograms": [
+        [
+          11,
+          64,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "maximum_d": 2,
+      "outside_incidences_per_side": 80,
+      "outside_pair_incidences": 8,
+      "outside_vertices": 83
+    },
+    "norm18_h0": {
+      "histogram_convention": "[n0,n1,...,n7]",
+      "histogram_count": 7,
+      "histograms": [
+        [
+          3,
+          72,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          69,
+          3,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          66,
+          6,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          63,
+          9,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          60,
+          12,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          57,
+          15,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          54,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "maximum_d": 3,
+      "outside_incidences_per_side": 90,
+      "outside_pair_incidences": 18,
+      "outside_vertices": 81
+    },
+    "norm18_h1": {
+      "histogram_convention": "[n0,n1,...,n7]",
+      "histogram_count": 4,
+      "histograms": [
+        [
+          1,
+          77,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          74,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          71,
+          6,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          68,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "maximum_d": 3,
+      "outside_incidences_per_side": 86,
+      "outside_pair_incidences": 9,
+      "outside_vertices": 81
+    }
+  },
+  "limitations": [
+    "The packing argument is conditional on the imported support reduction.",
+    "The rows are scalar histogram solutions, not incidence matrices.",
+    "The h=1 d=3 endpoint-avoidance rule is not encoded by the scalar histogram.",
+    "No automorphism or transitivity is assumed.",
+    "Conway-99 and novelty remain UNKNOWN."
+  ],
+  "packing": {
+    "norm16_maximum_d": 2,
+    "norm16_minimum_family_count": 0,
+    "norm16_three_block_minimum_union": 9,
+    "norm18_four_block_family_count": 0,
+    "norm18_four_block_union_lower_bound": 10,
+    "norm18_h1_d3_avoids_both_same_edge_endpoints": true,
+    "norm18_maximum_d": 3,
+    "norm18_minimum_family_count": 7560,
+    "norm18_three_block_minimum_union": 9,
+    "triple_equality_rigidity": {
+      "all_union_nine_triples_rigid": true,
+      "linear_triples": 7560,
+      "rigid_union_nine_triples": 7560,
+      "union_nine_triples": 7560
+    }
+  },
+  "scope": "conditional on the Wave 71 signed-unit support reduction and the Wave 74 verified support-incidence equations"
+}

@@ -1,0 +1,50 @@
+{
+  "memory_floor_percent": 15.0,
+  "deferred_preflight": {
+    "free_physical_memory_percent": 14.35,
+    "action": "Computation paused until memory recovered above the floor."
+  },
+  "resume_sample_free_physical_memory_percent": 15.58,
+  "full_verification": {
+    "elapsed_seconds": 26.97949739987962,
+    "minimum_free_physical_memory_percent": 28.563274631813385,
+    "samples": [
+      {
+        "label": "preflight",
+        "free_physical_memory_percent": 28.856278901940964
+      },
+      {
+        "label": "inputs_verified",
+        "free_physical_memory_percent": 28.854660193928467
+      },
+      {
+        "label": "order_6_complete",
+        "free_physical_memory_percent": 28.855330628963493
+      },
+      {
+        "label": "order_7_complete",
+        "free_physical_memory_percent": 28.85718489523154
+      },
+      {
+        "label": "order_8_complete",
+        "free_physical_memory_percent": 28.63799491846483
+      },
+      {
+        "label": "complete",
+        "free_physical_memory_percent": 28.563389390963525
+      },
+      {
+        "label": "payload_compared",
+        "free_physical_memory_percent": 28.563274631813385
+      }
+    ]
+  },
+  "hostile_test_run": {
+    "elapsed_seconds": 26.721,
+    "tests_passed": 10,
+    "tests_total": 10
+  },
+  "free_physical_memory_percent_after_tests": 28.2365,
+  "minimum_admitted_computation_sample_percent": 15.58,
+  "floor_respected_during_computation": true
+}

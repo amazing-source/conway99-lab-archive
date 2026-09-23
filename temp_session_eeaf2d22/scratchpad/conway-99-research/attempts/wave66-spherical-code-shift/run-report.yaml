@@ -1,0 +1,41 @@
+role: proof_b
+date_utc: 2026-07-27T22:44:46Z
+git_commit: 6dba25f93ba8b0375a6d7057eac4c83e58934fb4
+claim_label: CANDIDATE
+scope: >-
+  Conditional spherical-code and even-lattice consequences of a hypothetical
+  srg(99,14,1,2), with S=2A-J+I and no automorphism assumption.
+inputs:
+  - path: STRUCTURE.md
+    sha256: f79ff8dfcd6c2d01ab290cb64e8183e2a504ad5ac2657adff806dd549fd2418c
+  - path: verification/2026-07-22-wave2-audit.md
+    sha256: b438e45544c1675530084a7a16396d2a45d4dab473a04696ddec6a9ce45641c8
+  - path: agents/2026-07-22-wave2-algebra-codes.md
+    sha256: 999cbb0366a984ab6ddf4a2ff084eb680beffaad47c0b8176752a5a6769cc0e9
+  - path: verification/wave51-seidel-smith/audit.md
+    sha256: 449118dc5d2a7fcb0e1bfd40e4d29933f769fd8eacbc7048f5d5fdd487bb0bbd
+method: >-
+  Derive both primitive-idempotent two-distance embeddings; lift the
+  rank-44 embedding to 99 equiangular lines in R^45; center and halve
+  pairings to obtain an even rank-44 difference lattice; use exact frame,
+  modular-rank, saturation, Smith, Milgram/Gauss-sum, binary-code, spectral
+  subset, and coordinate-equation arguments; reproduce all scalar arithmetic
+  with a deterministic standard-library checker.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave66-spherical-code-shift\exact_check.py --verify ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  attempts\wave66-spherical-code-shift\test_exact_check.py
+outputs:
+  - path: attempts/wave66-spherical-code-shift/exact-results.json
+    sha256: dab883b36baebd8f149432d3bf0700a875d851b0627bc31d40cbd1f7b4afa9cb
+  - path: attempts/wave66-spherical-code-shift/derivation.md
+    sha256: befdaf561b442a68f52ff878e72ed31cf2ff58ab9f07075e0e624bcb00b8dd95
+  - path: attempts/wave66-spherical-code-shift/hostile-controls.md
+    sha256: 0f0f24ee8601bf4260be9ecf5660b38c3e1980d379ded4a437f11bef0ec563dd
+limitations: >-
+  Discovery is not independent verification. No graph, equiangular
+  configuration, or lattice is constructed. Milgram leaves eight rank rows.
+  Blichfeldt gives only r>=18, weaker than the imported verified r>=28.
+  No complete level-9/63 modular-form or genus classification is performed.
+  Conway-99 and novelty remain UNKNOWN.

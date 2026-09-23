@@ -1,0 +1,71 @@
+role: construction
+date_utc: 2026-07-24T06:52:13Z
+git_commit: 31bc516a581decb6394bf5e780f07fb05d567274
+claim_label: CANDIDATE
+primary_status: EXACT_FINITE_EVIDENCE_WITH_RESTRICTED_NONHIT
+scope: >-
+  Complete exact T20 norm-four shell and line-pair geometry; exact necessary
+  equations for the 105-row block; exact rational second-moment relaxation
+  witness; and complete exclusion only of one named radius-two exchange
+  neighbourhood. The unrestricted frame and endpoint remain UNKNOWN.
+inputs:
+  - path: attempts/wave30-h729-construction/exact-results.json
+    sha256: 0d3723ba4c185dc7865858d16bfc6ada99fd87b4e21da616ef1b1d1ad6b67e11
+  - path: attempts/wave30-general-h729/exact-results.json
+    sha256: cb0a58195506a51ca6a39aaab197a3592344f7aef8b5b0c2af51770c7069ad6c
+  - path: verification/wave24-n3-708-index/independent-results.json
+    sha256: 726807402388c02909171a689f3a7fe2d8d1b74307c24e322ae013d0a9cd486a
+  - path: verification/wave28-simultaneous-neighbor/independent_check.py
+    sha256: 2c8021769d47faebbcd544b364649a2cb93c066a369f76f725cffab1588982db
+method: >-
+  Complete exact reverse-LDL shell enumeration; canonical antipodal line
+  list with no automorphism quotient; complete pair inner-product scan;
+  exact GF(2) rank; fraction-free Bareiss reconstruction and Fraction
+  verification of a rational box-relaxation witness; and an exhaustive
+  one/two-exchange scan around W31-T20-NEAR-105-001 using a sound linear
+  fingerprint modulo 2^64 with entrywise checking of every collision.
+command: |-
+  cd attempts/wave31-t20-frame
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-24-wave31-t20-construction.md
+    sha256: d6599fdf81f81410eaccde36a35e6ffee567d90b3b5e7020cb64f7a7c4b1ca49
+  - path: attempts/wave31-t20-frame/exact_check.py
+    sha256: 81acefd270caa81900cb319ca0cb9db68d952f80ce3511edee1f23386c982f8e
+  - path: attempts/wave31-t20-frame/test_exact_check.py
+    sha256: 0c36af2f7cee4797b95c1d82b175274ed02f9674599181220900509777b4a365
+  - path: attempts/wave31-t20-frame/solver_scout.py
+    sha256: d362197857cbeddc446bedd7cb04945aff598783fbe2421b86a013212e967144
+  - path: attempts/wave31-t20-frame/exact-results.json
+    sha256: d2592a71e8600a894aa7d87e6ed1c8230010b919488b10f9854710bb77944152
+  - path: attempts/wave31-t20-frame/input-freeze.sha256
+    sha256: 2931d0c8de6e7000112b39aa72232338c5bf14cff54033452bede0842ef92086
+  - path: attempts/wave31-t20-frame/failure-ledger.md
+    sha256: 9c4ad5eb4cc9cd9234c49514a207304e6861799bfd308e2a34e03a629fcf4232
+results:
+  tests_passed: 10
+  norm_four_vectors: 5076
+  antipodal_lines: 2538
+  canonical_lines_sha256: 25af9df21492a5b9022c1888424f4892e0e1cb56d82adee73b49197a536f569e
+  pair_inner_products: "0,+/-1,+/-2 only"
+  absolute_two_edges: 242649
+  rational_relaxation_support: 243
+  rational_unit_weights: 33
+  rational_fractional_weights: 210
+  rational_weight_certificate_sha256: 2e7f5d482685db1c98f99fe239021f87e3f7c27f0506d92611e935a0617af161
+  near_frame_rows: 105
+  near_frame_residual_score: 121
+  radius_two_removal_pairs: 5460
+  radius_two_addition_pairs: 2958528
+  radius_two_exact_repairs: 0
+  global_second_moment_frame: UNKNOWN
+limitations:
+  - The only complete integer nonhit is within two exchanges of one named near-frame.
+  - Selections at distance three or more and all other supports remain unclassified.
+  - MIP, SAT, and oriented-frame timeouts are noncertifying telemetry.
+  - No exact Boolean second-moment row set is supplied.
+  - No orientation, zero-sum frame, Q_A, B_A, A4_A, U24 frame, or coupled endpoint is supplied.
+  - Rooted and integrally indecomposable h=729 forms are outside this lane.
+  - No graph, n3=708 exclusion, Conway-99 resolution, or novelty conclusion follows.
+  - A fresh independent verifier is required before any promotion.

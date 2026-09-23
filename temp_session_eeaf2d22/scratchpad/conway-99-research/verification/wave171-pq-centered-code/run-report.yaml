@@ -1,0 +1,35 @@
+role: verifier
+date_utc: 2026-07-28T20:35:38Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Independent exact audit over F3 of X=K-K^2 for the triangle-block
+  intersection graph of a putative SRG(99,14,1,2), including row composition,
+  point-star kernel, intrinsic incidence recovery, and the relationship to
+  the Wave 35/38/39 centered code.
+inputs:
+  - attempts/wave170-block-profile-ternary-code/derivation.md
+  - verification/wave170-block-profile-ternary-code/verification-report.md
+  - attempts/wave20-global-obstruction/independent-verifier/independent-reconstruction.md
+  - verification/wave35-n3-upper-spectral/audit.md
+  - verification/wave38-higher-order/audit.md
+  - agents/2026-07-27-wave39-simultaneous-bh.md
+method: >-
+  Clean-room finite-field matrix algebra, exact common-neighbor counts,
+  linear-triple-system arguments, spectral-projector interpolation, and
+  elementary kernel/rank analysis.
+command: >-
+  No search or enumeration. Read-only git revision and SHA-256 commands only.
+outputs:
+  - verification/wave171-pq-centered-code/README.md
+  - verification/wave171-pq-centered-code/verification-report.md
+  - verification/wave171-pq-centered-code/protocol.md
+  - verification/wave171-pq-centered-code/input-freeze.sha256
+limitations:
+  - The code is the existing centered Wave 38/39 code up to multiplication by
+    two, not a new independent obstruction.
+  - The projective [231,11]_3 conclusion additionally assumes r3=12 and the
+    endpoint hypotheses.
+  - Intrinsic recovery uses the actual triangle blocks of an SRG with
+    lambda=1, not merely an abstract cospectral graph.
+  - No construction, nonexistence proof, or improved n3 bound follows.

@@ -1,0 +1,61 @@
+{
+  "claim_label": "VERIFIED_SCOPED_CHECKPOINT",
+  "conclusion": {
+    "code_or_graph_construction": false,
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "external_novelty": "UNKNOWN",
+    "rigorous_n3_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  },
+  "corrections": [
+    "Wave142 sizes 86--91 are vetoed; only 92--99 are target-forced.",
+    "Wave143 rational witnesses use a stronger formal dual-distance-15 slice not proved for the target.",
+    "Wave139 collided GF4 lower bounds must be summed rather than maximized.",
+    "Wave139 pure-Y zero rows 8, 10, and 12 are unsupported.",
+    "Wave146 numerical infeasibility records are rejected; only exact rational replay is promoted."
+  ],
+  "date_utc": "2026-07-28T11:20:00Z",
+  "format": "wave147-public-checkpoint-v1",
+  "integration": {
+    "audit": "verification/2026-07-28-wave147-integration-audit.md",
+    "orchestrator": "verification/2026-07-28-wave147-orchestrator.md"
+  },
+  "packages": {
+    "wave135_discovery_manifest_sha256": "6f466d96036d7fe48a1ab3be6590683fa46648a6fae5582913f9e4721e541f1a",
+    "wave135_verifier_manifest_sha256": "85283a01546ca62e420de7d670134ff1ab5a537dfe363178351668ab69f89f79",
+    "wave136_verifier_manifest_sha256": "2d614854ba42805a035fcae42c711709132a826bf7405cdbaffcd31a38c9500b",
+    "wave137_discovery_manifest_sha256": "2175aad6a21216db67b668a3450855592405f584f2490c58b1d21ce6983da02c",
+    "wave137_verifier_manifest_sha256": "5ba56d5c33593bde57106c2bceb0f1020931037fd2dca41d2e16b6cbc36a1e6b",
+    "wave140_discovery_manifest_sha256": "934bbbd1818536af3786b9cb8b2f6bc48481d8bda3824328a266d5b3544ffd58",
+    "wave140_verifier_manifest_sha256": "57ca941e8d413d17f9683461d4eb321e0e441291d756183f4303993144a163c2",
+    "wave141_discovery_manifest_sha256": "75933cca692f2678bdd74190290b91eb13f6492fce52bc88e896ef7485fe06f8",
+    "wave141_verifier_manifest_sha256": "efe8d06f5c1febfb4ac4749f53d33e1b3036a84638cdc1cb9bf3810d175131b7",
+    "wave142_discovery_manifest_sha256": "241cb75308d26942adf6dcdfc3b1c344c3c48fee35df2b9eeb1561fa2b01b443",
+    "wave142_verifier_manifest_sha256": "8deeda5863bd82f8244e1e857b033ea0024bae6739abcee9b17d819bffda6251",
+    "wave143_discovery_manifest_sha256": "91e1053b886f05d8457bb14a5acaf87c02afe73ad087e98203cc779012571a61",
+    "wave143_verifier_manifest_sha256": "fdd1c744be1683cfdfb36e7c0f7c7fb57805c1ae893522f458917e3573a8f512",
+    "wave144_discovery_manifest_sha256": "b5369353ac6959b0662e3f424cf80e48094ac6bcdb79572bf604632c45509436",
+    "wave144_verifier_manifest_sha256": "779a7d926c27f8d1540041b32e4f9732a6cacf793fd789a0239110467c54c153",
+    "wave145_verifier_manifest_sha256": "bd440c441a3e5cb2110802e9e4e96fb238be57d16bddeebef60a6867981e5978",
+    "wave146_discovery_manifest_sha256": "6a4f1125d877f4bc1dfcfe522dea66e95216416bd09550fa36aadbcbeb1f2b17",
+    "wave146_verifier_manifest_sha256": "cc683fa0977c93fde09cdb087c923d0a4927957a5ee6508eb5be197f1296cebf",
+    "wave147_discovery_manifest_sha256": "0c7585f996374246918948eb1537e61e2e165474f815a66eff24bf82e7c8e690",
+    "wave147_verifier_manifest_sha256": "ce892c1af0ccc5c69605513b4d427c1741a1d13e354997b4c56b45a6f1c85400"
+  },
+  "source_commit": "0a15bfe548e301ea98c83e292ba8931322e39945",
+  "target": "Existence of a strongly regular graph with parameters (99,14,1,2)",
+  "wave146": {
+    "equalities": 8981,
+    "maximum_denominator": 4,
+    "positive_rational_coordinates": 2998,
+    "status": "EXACT_RATIONAL_FEASIBLE",
+    "variables": 13973
+  },
+  "wave147": {
+    "edge_flag_basis": 66,
+    "nonedge_flag_basis": 87,
+    "order8_classes": 916,
+    "status": "FINITE_MODEL_VERIFIED_SDP_NOT_RUN"
+  }
+}

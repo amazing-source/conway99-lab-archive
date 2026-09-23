@@ -1,0 +1,2261 @@
+{
+  "classification": "EXACT_RATIONAL_FEASIBLE",
+  "diagnostic": {
+    "exact_reduction": {
+      "deduplicated_inequalities": 290,
+      "independent_equalities": 139,
+      "original_equalities": 366,
+      "original_inequalities": 846
+    },
+    "primal_affine_rank": 139,
+    "primal_free_dimension": 100,
+    "recursive_trace": [
+      {
+        "depth": 0,
+        "dimension": 100,
+        "faces_tried": [
+          {
+            "active": 83,
+            "rank": 82,
+            "subdimension": 18,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290
+      },
+      {
+        "depth": 1,
+        "dimension": 18,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 96,
+            "rank": 11,
+            "subdimension": 7,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 2,
+        "dimension": 7,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-11
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-10
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 3e-09
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 102,
+            "rank": 6,
+            "subdimension": 1,
+            "success": false,
+            "threshold": 1e-08
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 3,
+        "dimension": 1,
+        "faces_tried": [
+          {
+            "active": 84,
+            "rank": 83,
+            "subdimension": 17,
+            "success": true,
+            "threshold": 3e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "no_face_verified"
+      },
+      {
+        "depth": 1,
+        "dimension": 17,
+        "faces_tried": [
+          {
+            "active": 97,
+            "rank": 12,
+            "subdimension": 5,
+            "success": true,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290
+      },
+      {
+        "depth": 2,
+        "dimension": 5,
+        "faces_tried": [
+          {
+            "active": 100,
+            "rank": 3,
+            "subdimension": 2,
+            "success": true,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290
+      },
+      {
+        "depth": 3,
+        "dimension": 2,
+        "faces_tried": [
+          {
+            "active": 101,
+            "rank": 1,
+            "subdimension": 1,
+            "success": true,
+            "threshold": 1e-12
+          }
+        ],
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290
+      },
+      {
+        "depth": 4,
+        "dimension": 1,
+        "float_status": 0,
+        "float_success": true,
+        "inequalities": 290,
+        "outcome": "rational_rounding_verified"
+      }
+    ]
+  },
+  "failed_equalities": [],
+  "failed_inequalities": [],
+  "format": "wave127-exact-rational-candidate-v1",
+  "solution": [
+    "-1463/254803968",
+    "685055075866472454738539221337075954732797460141835279655684340988688627946349855409389163001055628537/78656697546494658022611013090465544921822149971462523886516052267343505120948456599345840480625538493317120",
+    "1772350878636152833817743362012829367589659007889920122862943043669787785785150893919481031442915175/40967029972132634386776569317950804646782369776803397857560443889241408917160654478825958583659134631936",
+    "4154491065332646408582088629971973093381857940972103176578726772874961034718403306091152732675093417387/5462270662951017918236875909060107286237649303573786381008059185232187855621420597176794477821217950924800",
+    "0",
+    "23473159718361659225586735170332132762684140942880493558405533396382696488548983540237800763723459455069/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "19144688315424265689203944289111136497709952231813760511247563142212239187987072440314096068183360128569279/32773623977706107509421255454360643717425895821442718286048355111393127133728523583060766866927307705548800",
+    "3311/573308928",
+    "685055075866472454738539221337075954732797460141835279655684340988688627946349855409389163001055628537/78656697546494658022611013090465544921822149971462523886516052267343505120948456599345840480625538493317120",
+    "1772350878636152833817743362012829367589659007889920122862943043669787785785150893919481031442915175/40967029972132634386776569317950804646782369776803397857560443889241408917160654478825958583659134631936",
+    "4154491065332646408582088629971973093381857940972103176578726772874961034718403306091152732675093417387/5462270662951017918236875909060107286237649303573786381008059185232187855621420597176794477821217950924800",
+    "0",
+    "23473159718361659225586735170332132762684140942880493558405533396382696488548983540237800763723459455069/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "19144688315424265689203944289111136497709952231813760511247563142212239187987072440314096068183360128569279/32773623977706107509421255454360643717425895821442718286048355111393127133728523583060766866927307705548800",
+    "7145607841818711732960369128184026985815112040753654613528096292811491046429876272316715129230151592377199581/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "9625/23887872",
+    "-279695989562888548379301395058796731420394490334363815591180902539945958413578402020505859279460970095/7865669754649465802261101309046554492182214997146252388651605226734350512094845659934584048062553849331712",
+    "116984414266510041803324219678768012385953041978337552869522608583252464089703921785901696149900697907/54622706629510179182368759090601072862376493035737863810080591852321878556214205971767944778212179509248",
+    "1468671094390334945951402206109024981626634957725448983010028372673765505745447420507746593450122433763/68278383286887723977960948863251341077970616294672329762600739815402348195267757464709930972765224386560",
+    "363914382019542557991985255393406520447464429458641512273026971519139420879799924603445274429178463319829/1638681198885305375471062772718032185871294791072135914302417755569656356686426179153038343346365385277440",
+    "23787221845206362402310148994407736680904293730110389852108379844955044907670904616875630895813514533875789/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "9246010832288663808885251246133010382345521913646906444229527580775656746969744762064473482670833995667639/655472479554122150188425109087212874348517916428854365720967102227862542674570471661215337338546154110976",
+    "28304695351741822997407582846497249360342490994716658748586040690065528551149571266254932974177715927201517637/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "114983832178345942076975813446349107870671280563938794883435612456268184888820268160562727509549114132818842569/9832087193311832252826376636308193115227768746432815485814506533417938140118557074918230060078192311664640",
+    "-462385/1146617856",
+    "-279695989562888548379301395058796731420394490334363815591180902539945958413578402020505859279460970095/7865669754649465802261101309046554492182214997146252388651605226734350512094845659934584048062553849331712",
+    "116984414266510041803324219678768012385953041978337552869522608583252464089703921785901696149900697907/54622706629510179182368759090601072862376493035737863810080591852321878556214205971767944778212179509248",
+    "1468671094390334945951402206109024981626634957725448983010028372673765505745447420507746593450122433763/68278383286887723977960948863251341077970616294672329762600739815402348195267757464709930972765224386560",
+    "363914382019542557991985255393406520447464429458641512273026971519139420879799924603445274429178463319829/1638681198885305375471062772718032185871294791072135914302417755569656356686426179153038343346365385277440",
+    "23787221845206362402310148994407736680904293730110389852108379844955044907670904616875630895813514533875789/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "9246010832288663808885251246133010382345521913646906444229527580775656746969744762064473482670833995667639/655472479554122150188425109087212874348517916428854365720967102227862542674570471661215337338546154110976",
+    "-17166593609463222982914865756303600807241837269511341655866674071737972022248882365907412269421068906890290933/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "-1078385/84934656",
+    "1824967488308365329560010302241269894234960143117543537582555331572959588702626303177556925145033295077/1747926612144325733835800290899234331596047777143611641922578939274300113798854591096574232902789744295936",
+    "15895492129323655495141446014284583798049162404798793733961521106056658271632481386899565470620161045/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "4779288919783189381494120475288472210709558253495723164588320176522355709693211662126528874160223395269/24276758502004524081052781818044921272167330238105717248924707489920834913872980431896864345872079781888",
+    "244358047575951870460145045406417991062636524244282393269562076085653210535275546936973150226274485256369/109245413259020358364737518181202145724752986071475727620161183704643757112428411943535889556424359018496",
+    "235506828787984956905091576652996466571641902984602213914486812219666305508515670381551644688916322830012949/8739633060721628669179001454496171657980238885718058209612894696371500568994272955482871164513948721479680",
+    "8898296722214128369557596473405282492866960379918023182997256582378877380012130255305342359114748310631409/13487088056669180045029323232247178484537405687836509582735948605511574952151655795498257969928933212160",
+    "-18542978111269895362254795770994370732852331947257246384369151558693195771871845583255447714174712011190594779/2913211020240542889726333818165390552660079628572686069870964898790500189664757651827623721504649573826560",
+    "808885/63700992",
+    "1824967488308365329560010302241269894234960143117543537582555331572959588702626303177556925145033295077/1747926612144325733835800290899234331596047777143611641922578939274300113798854591096574232902789744295936",
+    "15895492129323655495141446014284583798049162404798793733961521106056658271632481386899565470620161045/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "4779288919783189381494120475288472210709558253495723164588320176522355709693211662126528874160223395269/24276758502004524081052781818044921272167330238105717248924707489920834913872980431896864345872079781888",
+    "244358047575951870460145045406417991062636524244282393269562076085653210535275546936973150226274485256369/109245413259020358364737518181202145724752986071475727620161183704643757112428411943535889556424359018496",
+    "235506828787984956905091576652996466571641902984602213914486812219666305508515670381551644688916322830012949/8739633060721628669179001454496171657980238885718058209612894696371500568994272955482871164513948721479680",
+    "8898296722214128369557596473405282492866960379918023182997256582378877380012130255305342359114748310631409/13487088056669180045029323232247178484537405687836509582735948605511574952151655795498257969928933212160",
+    "35187387291969731146816398598890717926527699841246113373363611797590403928919082319072217706877450851580704379/2913211020240542889726333818165390552660079628572686069870964898790500189664757651827623721504649573826560",
+    "18145410038520333219680466453984180861828239546187545706293311395423486715496320418777650611129184679612068517/145660551012027144486316690908269527633003981428634303493548244939525009483237882591381186075232478691328",
+    "314545/1327104",
+    "4783630161003860298435194608658093800965702444950853312438680755770358631838016489809300756332231235553/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "14395502837350963318379491641568850124329384213919075340137693433648836281582933127670543030091977752745/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "88808569377602554729314482329357134515328315257002584210256411791799780430816463843055451163165012515717/45518922191258482651973965908834227385313744196448219841733826543601565463511838309806620648510149591040",
+    "1199506998477919618787757478307747842953734550451157161092738074870961495228843806872185252723733843597619/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "-115963641128294186632516728045527644436374975138582773035435434828671590772713922492048379022172510141073291/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "600355142336117601201273065738534727965674000525455181385733185534956931203148287954912074506037598326028513/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "756189804706702459431969228048299996094760310644213151548200826595038804441630879915582212957708221567532840089/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "468628010940025507405393253186885357284165572176070446957799524396805193848261572161182880074126835677261225077/819340599442652687735531386359016092935647395536067957151208877784828178343213089576519171673182692638720",
+    "13278122351375428216285029181214314723138502885400486149195674478956204045075864730952828582539571810213267474143/273113533147550895911843795453005364311882465178689319050402959261609392781071029858839723891060897546240",
+    "-22647625/95551488",
+    "4783630161003860298435194608658093800965702444950853312438680755770358631838016489809300756332231235553/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "14395502837350963318379491641568850124329384213919075340137693433648836281582933127670543030091977752745/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "88808569377602554729314482329357134515328315257002584210256411791799780430816463843055451163165012515717/45518922191258482651973965908834227385313744196448219841733826543601565463511838309806620648510149591040",
+    "1199506998477919618787757478307747842953734550451157161092738074870961495228843806872185252723733843597619/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "-115963641128294186632516728045527644436374975138582773035435434828671590772713922492048379022172510141073291/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "600355142336117601201273065738534727965674000525455181385733185534956931203148287954912074506037598326028513/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "5108549086823092675376147305952415689811777908192220452641702537521049538458167351962874303371366909101490939/655472479554122150188425109087212874348517916428854365720967102227862542674570471661215337338546154110976",
+    "767322467076404714871542364954059356531748211487150228223392888170505406452339093296998918830893635624806209703/546227066295101791823687590906010728623764930357378638100805918523218785562142059717679447782121795092480",
+    "-369907615/127401984",
+    "-14308121517712705574892619847025174971851231748831077194977203730293084689935265342413800724310802741289/2621889918216488600753700436348851497394071665715417462883868408911450170698281886644861349354184616443904",
+    "16320044123984632970070897531210650182724762738268222689023956247487732302690106343812985005827626299495/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "13243480505414212623677343725177680988053157554633925518845346813776586597568075866220063566207341103890949/182075688765033930607895863635336909541254976785792879366935306174406261854047353239226482594040598364160",
+    "16072821854928282435587838774161999049740361857708796741327554456745534446343595395416902731354517419323063/45518922191258482651973965908834227385313744196448219841733826543601565463511838309806620648510149591040",
+    "2511131424653139978189887986202326384566189761298617680496271991563088433978060091192361138939735325628616655/2621889918216488600753700436348851497394071665715417462883868408911450170698281886644861349354184616443904",
+    "-14769105327996469030596272488859550025412286258896977840714408133007962541501373566810943748157719208801845617/1092454132590203583647375181812021457247529860714757276201611837046437571124284119435358895564243590184960",
+    "-5341196682615007458431502407259900352984222435641588197698590808312496438009198219606063736342564876412968095939/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "120343933144191601027464628081926178201892400537709622250106019605130130346714042514587800862753127272400497325549/6554724795541221501884251090872128743485179164288543657209671022278625426745704716612153373385461541109760",
+    "135494255788278742163237246098964879894033550776608472752033619955385143872844514654531634683968281589404660560879/1092454132590203583647375181812021457247529860714757276201611837046437571124284119435358895564243590184960",
+    "277431385/95551488",
+    "-14308121517712705574892619847025174971851231748831077194977203730293084689935265342413800724310802741289/2621889918216488600753700436348851497394071665715417462883868408911450170698281886644861349354184616443904",
+    "16320044123984632970070897531210650182724762738268222689023956247487732302690106343812985005827626299495/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "13243480505414212623677343725177680988053157554633925518845346813776586597568075866220063566207341103890949/182075688765033930607895863635336909541254976785792879366935306174406261854047353239226482594040598364160",
+    "16072821854928282435587838774161999049740361857708796741327554456745534446343595395416902731354517419323063/45518922191258482651973965908834227385313744196448219841733826543601565463511838309806620648510149591040",
+    "2511131424653139978189887986202326384566189761298617680496271991563088433978060091192361138939735325628616655/2621889918216488600753700436348851497394071665715417462883868408911450170698281886644861349354184616443904",
+    "-14769105327996469030596272488859550025412286258896977840714408133007962541501373566810943748157719208801845617/1092454132590203583647375181812021457247529860714757276201611837046437571124284119435358895564243590184960",
+    "11511655268367948936732316901542499824278743945632373876096443267162134150411563327957226489965024585819548054211/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "1171501210562780503010141380998337777024946147982307498996496613350476016537581543005384699739591682146985873039/1092454132590203583647375181812021457247529860714757276201611837046437571124284119435358895564243590184960",
+    "240814105631068105347478137369237685471292165287461729047923349174139825770704301186277940511628062993181241718297/546227066295101791823687590906010728623764930357378638100805918523218785562142059717679447782121795092480",
+    "3949781425387677287116389427813323546077679240409291421863731033823374164236768598416684622838156484612427598140693/655472479554122150188425109087212874348517916428854365720967102227862542674570471661215337338546154110976",
+    "16183475/663552",
+    "-160456125136378067981551670109856339796715480586067656938746931967809602612383824097854881725261184424901/10924541325902035836473751818120214572475298607147572762016118370464375711242841194353588955642435901849600",
+    "-46492669931768810541673574257957035584466476181669411497566912966987073643626152006170147362230697466569/34139191643443861988980474431625670538985308147336164881300369907701174097633878732354965486382612193280",
+    "-8733795128933882999082809635280406165622905976187527959236488737971386284121692401684650475411534687843297/75864870318764137753289943181390378975522906994080366402889710906002609105853063849677701080850249318400",
+    "899800023779666277826742716054135679982543427199434116575441201429129779019996693035822357805360960031787201/273113533147550895911843795453005364311882465178689319050402959261609392781071029858839723891060897546240",
+    "59132321839346752682925394827395741217565155732056309198571431131022517390712456713187759599688576362789186047/2184908265180407167294750363624042914495059721429514552403223674092875142248568238870717791128487180369920",
+    "5776708349663551063671795051154905959841354233480067831457122957719224884313188136736525485969499352984347773/60691896255011310202631954545112303180418325595264293122311768724802087284682451079742160864680199454720",
+    "-42153672419747326987806396604786572527208980872433028364995952567378225027026711149848788017946835043576475873367/3641513775300678612157917272706738190825099535715857587338706123488125237080947064784529651880811967283200",
+    "-136980957687846676828163152166865898130602722392607068500865898521555457233722408053728347491683121340896880736339/910378443825169653039479318176684547706274883928964396834676530872031309270236766196132412970202991820800",
+    "82346562602925265799789010574087836428638515368976140204152941053838477256760370165022357270470982797000578159161/28449326369536551657483728693021392115821090122780137401083641589750978414694898943629137905318843494400",
+    "30118888474308719957010446601727689009457266779886244045408590624955375096692688231875810148763254131782273905914793/910378443825169653039479318176684547706274883928964396834676530872031309270236766196132412970202991820800",
+    "-1553614139/63700992",
+    "-160456125136378067981551670109856339796715480586067656938746931967809602612383824097854881725261184424901/10924541325902035836473751818120214572475298607147572762016118370464375711242841194353588955642435901849600",
+    "-46492669931768810541673574257957035584466476181669411497566912966987073643626152006170147362230697466569/34139191643443861988980474431625670538985308147336164881300369907701174097633878732354965486382612193280",
+    "-8733795128933882999082809635280406165622905976187527959236488737971386284121692401684650475411534687843297/75864870318764137753289943181390378975522906994080366402889710906002609105853063849677701080850249318400",
+    "899800023779666277826742716054135679982543427199434116575441201429129779019996693035822357805360960031787201/273113533147550895911843795453005364311882465178689319050402959261609392781071029858839723891060897546240",
+    "59132321839346752682925394827395741217565155732056309198571431131022517390712456713187759599688576362789186047/2184908265180407167294750363624042914495059721429514552403223674092875142248568238870717791128487180369920",
+    "5776708349663551063671795051154905959841354233480067831457122957719224884313188136736525485969499352984347773/60691896255011310202631954545112303180418325595264293122311768724802087284682451079742160864680199454720",
+    "19814297218861483280230187678747553242802070471838786251489508435947205989713682486848226652451501440332575615047/3641513775300678612157917272706738190825099535715857587338706123488125237080947064784529651880811967283200",
+    "94795386115004149922663225742227406567369073354129426554734756033590746508727610524407953819861869012465001866497/1820756887650339306078958636353369095412549767857928793669353061744062618540473532392264825940405983641600",
+    "-3838694784530949640801115825371132320290851937205121137027705376401316090000124160478138018786410328018455495976157/2731135331475508959118437954530053643118824651786893190504029592616093927810710298588397238910608975462400",
+    "-2013943855/14155776",
+    "442788940897169145450128275512775990243217779114159076769714054293969524181975947011622462830872315974391/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "-285932691453579887641600706264810895294724640800045324143709433099464080290458061502182883642892528231433/45518922191258482651973965908834227385313744196448219841733826543601565463511838309806620648510149591040",
+    "-55264398324381939657360069759847590631230751686117924815476928515165171820040576240783474221923572352711603/60691896255011310202631954545112303180418325595264293122311768724802087284682451079742160864680199454720",
+    "-10353879638610777805656049396171734528145548983051051607923357383820876253572286780742029135009440572172611397/273113533147550895911843795453005364311882465178689319050402959261609392781071029858839723891060897546240",
+    "-1447805418004579409118118327865002190204451059228408880250424173170740260116675546125642932506616072729845377357/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "33541313818153800228051890790313686310491371930689943357464648333425032670970628678890446820917524493669087551/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "2595501526143227019424980870723197116828239829799346953422621997222671012801715628221450704664705621653414766440657/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "1118150705378528228475390054206659220405934732305601330883531262744901138190919991234319038199461743586805024437077/6554724795541221501884251090872128743485179164288543657209671022278625426745704716612153373385461541109760",
+    "-7638755144341774897149505474673715398237402572782859584917386643986631935449530198087932503286965517224161999023517/273113533147550895911843795453005364311882465178689319050402959261609392781071029858839723891060897546240",
+    "4090415099853464885337236356751977930221923554263898866663521665501381637838778469616117722865319969056625602256373/25604393732582896491735355823719252904238981110502123660975277430775880573225409049266224114786959144960",
+    "13594121695/95551488",
+    "442788940897169145450128275512775990243217779114159076769714054293969524181975947011622462830872315974391/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "-285932691453579887641600706264810895294724640800045324143709433099464080290458061502182883642892528231433/45518922191258482651973965908834227385313744196448219841733826543601565463511838309806620648510149591040",
+    "-55264398324381939657360069759847590631230751686117924815476928515165171820040576240783474221923572352711603/60691896255011310202631954545112303180418325595264293122311768724802087284682451079742160864680199454720",
+    "-10353879638610777805656049396171734528145548983051051607923357383820876253572286780742029135009440572172611397/273113533147550895911843795453005364311882465178689319050402959261609392781071029858839723891060897546240",
+    "-1447805418004579409118118327865002190204451059228408880250424173170740260116675546125642932506616072729845377357/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "33541313818153800228051890790313686310491371930689943357464648333425032670970628678890446820917524493669087551/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "-2822238943744446503596894959949929828315357245566832786275013515116045398338686633213810509033198824825030237882033/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "-1455489534312160370712935993922803723478616470617096120687488728241164348457328662893296572828748206707589370794433/1092454132590203583647375181812021457247529860714757276201611837046437571124284119435358895564243590184960",
+    "2550451822495021221794204818718997362223466133036623278034842009143538641905927193549232927700985140329849735147707/218490826518040716729475036362404291449505972142951455240322367409287514224856823887071779112848718036992",
+    "-19911705365400843138034889744972019723856319758204890785039122171293019855951629124246992322196631880666335549858707/819340599442652687735531386359016092935647395536067957151208877784828178343213089576519171673182692638720",
+    "32545062278686941239158708431598151004370820772476413242671041399052561841668884808124652636577545172163324725049916553/13109449591082443003768502181744257486970358328577087314419342044557250853491409433224306746770923082219520",
+    "2265686885/3981312",
+    "43597914802637964737392190674428287340788875625192443686847608483617757380194314658988956100600572415737/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "232642315712131522360212049735455088813722886934530348871446820197663221031386710423438796889157104118135/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "-7285157966791112931889952822115119962799392034699609415903362750444911223554489433231839430000468775538535/3034594812750565510131597727255615159020916279763214656115588436240104364234122553987108043234009972736",
+    "-21217055180023021820187518074681792649599900743144036892151233164612249443305558717388592120249036768323371793/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "-11530588632963271979350112879235659938303230658130351600018800137905628079769299582861028912223667041236335740427/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "-1380913458013251885233533165610672435827078957380044668847671048050680592330773456942611564095297744704017938341/68278383286887723977960948863251341077970616294672329762600739815402348195267757464709930972765224386560",
+    "-1249454110250275203699820853153279915943500074335853276523457453333695586666375213777634494764571279059087213531699/655472479554122150188425109087212874348517916428854365720967102227862542674570471661215337338546154110976",
+    "-4668295104931329049365408962228843397623927107509203499264540476547238110996575693777917170392758477208439154827571/819340599442652687735531386359016092935647395536067957151208877784828178343213089576519171673182692638720",
+    "19925034204001630012039900381404167866807873840534231510227099899577998201932027294843440420385812554001431605019261/273113533147550895911843795453005364311882465178689319050402959261609392781071029858839723891060897546240",
+    "-550657682151871151890986396347744685343734760821711396539048885911660449711223437990322824962858992291738906150280843/409670299721326343867765693179508046467823697768033978575604438892414089171606544788259585836591346319360",
+    "1449668734945476041171117095914729153695531775740049045726347901598833530901516654079779785790899538634850402682162727/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "1497435896984401117193754607188832007044923179198708267388940978356662649156174535665222944060578758614099896673487437/11379730547814620662993491477208556846328436049112054960433456635900391365877959577451655162127537397760",
+    "-54376485625/95551488",
+    "43597914802637964737392190674428287340788875625192443686847608483617757380194314658988956100600572415737/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "232642315712131522360212049735455088813722886934530348871446820197663221031386710423438796889157104118135/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "-7285157966791112931889952822115119962799392034699609415903362750444911223554489433231839430000468775538535/3034594812750565510131597727255615159020916279763214656115588436240104364234122553987108043234009972736",
+    "-21217055180023021820187518074681792649599900743144036892151233164612249443305558717388592120249036768323371793/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "-11530588632963271979350112879235659938303230658130351600018800137905628079769299582861028912223667041236335740427/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "-1380913458013251885233533165610672435827078957380044668847671048050680592330773456942611564095297744704017938341/68278383286887723977960948863251341077970616294672329762600739815402348195267757464709930972765224386560",
+    "5632539910668154486119779376099964293481355673566722779571065854615759088790727258597478021294846136477578304623967/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "845798299379267172170881647996066511944081756356151915996380685325105753813200249996735783559476080712751289955431/546227066295101791823687590906010728623764930357378638100805918523218785562142059717679447782121795092480",
+    "-2508256169212322103545921581975541207598241389428400917073124580375656057697810395638856449087120331906730773107523/13655676657377544795592189772650268215594123258934465952520147963080469639053551492941986194553044877312",
+    "172796396533053867993532425125498681771320546581928704918071047237897084776029690521621421167389209880268143152828209/409670299721326343867765693179508046467823697768033978575604438892414089171606544788259585836591346319360",
+    "22723441888097870171349654319056354687806279361914348824119535671054233442642421045411902181120689199645544521061839969/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "-126878465945/84934656",
+    "-127300035641864924058379850983877068259343730793823849169511299426877826195621932897055586685880136120087/1747926612144325733835800290899234331596047777143611641922578939274300113798854591096574232902789744295936",
+    "768309581718632304170719356130132292467315624452111750127048393226289221140554903754149939153112885921999/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "10274720814197505409622345065757402831849092464908413643868458877705411445180241249713658596822652284356889/40461264170007540135087969696741535453612217063509528748207845816534724856454967386494773909786799636480",
+    "-44363256548845883669726051274741712906599380252280940493384590359258438498691983634218573240393325666041552271/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "-17848830875102075863493009332760479249682461245860476170703568447723986484742781038966533925877260926000732321351/1747926612144325733835800290899234331596047777143611641922578939274300113798854591096574232902789744295936",
+    "-38574215316856183309325768825523005244112047723913905201215931498402238063675237991263142408142247583249949520351/242767585020045240810527818180449212721673302381057172489247074899208349138729804318968643458720797818880",
+    "4259382242880137230193899531465763249202350156550901158592580129092462619322257889748009201474641279501491977959485/582642204048108577945266763633078110532015925714537213974192979758100037932951530365524744300929914765312",
+    "7611517932255152110930024758976624645528224300454819817555392475567435807720091034523477274856039720924629835178569/1456605510120271444863166909082695276330039814286343034935482449395250094832378825913811860752324786913280",
+    "-103661228056128684935824092201371550967914493878554782904025520209510736469514077221408337353465473235776978844628881/145660551012027144486316690908269527633003981428634303493548244939525009483237882591381186075232478691328",
+    "1637027163808291976793990068824205680170203118503820885403819726059028216278630751983899853246114645257344204624643837/728302755060135722431583454541347638165019907143171517467741224697625047416189412956905930376162393456640",
+    "-7564882968010116507980375311531134293572058183223732165191963229459212328035269090749083248018454827429719657480148303/8739633060721628669179001454496171657980238885718058209612894696371500568994272955482871164513948721479680",
+    "95158849555/63700992",
+    "-127300035641864924058379850983877068259343730793823849169511299426877826195621932897055586685880136120087/1747926612144325733835800290899234331596047777143611641922578939274300113798854591096574232902789744295936",
+    "768309581718632304170719356130132292467315624452111750127048393226289221140554903754149939153112885921999/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "10274720814197505409622345065757402831849092464908413643868458877705411445180241249713658596822652284356889/40461264170007540135087969696741535453612217063509528748207845816534724856454967386494773909786799636480",
+    "-44363256548845883669726051274741712906599380252280940493384590359258438498691983634218573240393325666041552271/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "-17848830875102075863493009332760479249682461245860476170703568447723986484742781038966533925877260926000732321351/1747926612144325733835800290899234331596047777143611641922578939274300113798854591096574232902789744295936",
+    "-38574215316856183309325768825523005244112047723913905201215931498402238063675237991263142408142247583249949520351/242767585020045240810527818180449212721673302381057172489247074899208349138729804318968643458720797818880",
+    "-26792123657113571422080994360218871689307947665065192256442805579778782323364305470002002846884446487812621097021489/2913211020240542889726333818165390552660079628572686069870964898790500189664757651827623721504649573826560",
+    "-12308935109015904850936830084831104840844594292461903818639892131668144680798689526550746515273048620576793040332663/728302755060135722431583454541347638165019907143171517467741224697625047416189412956905930376162393456640",
+    "54900317883231912430154521848532660923805132145741790458527951582236726758366385449105938867609212372522719820887477/136556766573775447955921897726502682155941232589344659525201479630804696390535514929419861945530448773120",
+    "-15289787999523137766136447952066719870589140718377819170104468701127279196030018256511517726479302279056421882759436899/2184908265180407167294750363624042914495059721429514552403223674092875142248568238870717791128487180369920",
+    "-77181420412110121929254643855953834270192475675870072991516151151208305705504038192027799044524207844576645579728522819/2913211020240542889726333818165390552660079628572686069870964898790500189664757651827623721504649573826560",
+    "73877090159875554588575146862574496360884773372286323581186718119586007047155036242967198849538551579757443043929437953/1092454132590203583647375181812021457247529860714757276201611837046437571124284119435358895564243590184960",
+    "18503109625/7962624",
+    "2300292532003041430101718637191669721187786455416558771403934604160090365997376162180993671309748341720197/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "-9971875040619095482273138053451156878143477407386570851511022448752272000174438068111593542373310350933477/819340599442652687735531386359016092935647395536067957151208877784828178343213089576519171673182692638720",
+    "57930777748073398013116699987558367836826849923162220336138654687661367850844949110488766755586263597262239/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "-61577195822073765253908826427630182806922904622787793752150166789493823862076921958283030243604094807905055249/546227066295101791823687590906010728623764930357378638100805918523218785562142059717679447782121795092480",
+    "-612908738935455088182870129665872179478977651679160093744517646683059252952676975617896274421695212230899843869491/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "-996176405552889860522445913086542020279614673669499439831514353077724104444593572931335723746291674381729647440857/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "-901463455305474259670095504373705762152223911227854570396652419232276333109005662308602124392629502036699173187889771/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "-361375879583528882124152944039241884949021287538411131312716738371406091619343172713846696811386023592715895822480071/9832087193311832252826376636308193115227768746432815485814506533417938140118557074918230060078192311664640",
+    "2068036310400714499357488199288241937652268605151760051449615616451253161918433751365506666299041316426318730682039299/1638681198885305375471062772718032185871294791072135914302417755569656356686426179153038343346365385277440",
+    "-171027052045636696714957300133524661410401563656179635644944441961926071677665519652863583741642217477329761656243428381/9832087193311832252826376636308193115227768746432815485814506533417938140118557074918230060078192311664640",
+    "-559125237570339099450990097627918691615997774475834381081425243699614990344152577801745714326761231366571645340746369957/7865669754649465802261101309046554492182214997146252388651605226734350512094845659934584048062553849331712",
+    "-33169865628827124054078754374679928415328827561841355513715760192927744696156420990945901045486191761107675352818800783/91037844382516965303947931817668454770627488392896439683467653087203130927023676619613241297020299182080",
+    "39921244977823999385751716867603625378939385487066155006919450260322273047858205853646211943723146176471299676066986449029/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "-2664447786385/1146617856",
+    "2300292532003041430101718637191669721187786455416558771403934604160090365997376162180993671309748341720197/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "-9971875040619095482273138053451156878143477407386570851511022448752272000174438068111593542373310350933477/819340599442652687735531386359016092935647395536067957151208877784828178343213089576519171673182692638720",
+    "57930777748073398013116699987558367836826849923162220336138654687661367850844949110488766755586263597262239/27311353314755089591184379545300536431188246517868931905040295926160939278107102985883972389106089754624",
+    "-61577195822073765253908826427630182806922904622787793752150166789493823862076921958283030243604094807905055249/546227066295101791823687590906010728623764930357378638100805918523218785562142059717679447782121795092480",
+    "-612908738935455088182870129665872179478977651679160093744517646683059252952676975617896274421695212230899843869491/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "-996176405552889860522445913086542020279614673669499439831514353077724104444593572931335723746291674381729647440857/3277362397770610750942125545436064371742589582144271828604835511139312713372852358306076686692730770554880",
+    "622182008782960457383835773684897736396952289104389838629495532357409655983225708058116657096159025619037998943407739/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "14975730358758766234144838544549366183494618928554389328806197817421778193836470778174144085262745246558700624844791/6554724795541221501884251090872128743485179164288543657209671022278625426745704716612153373385461541109760",
+    "-1748841958875391213345532978327891376007528721353382212199467853754715461533220823481219115398917145782407151371083249/1092454132590203583647375181812021457247529860714757276201611837046437571124284119435358895564243590184960",
+    "77712235424660543207592671853347279352115063433858985610736940301556047603938257602102325955308654973988462719457479137/9832087193311832252826376636308193115227768746432815485814506533417938140118557074918230060078192311664640",
+    "-632569711224396372774621828835393802235195296430412072747953255465517920014649125678897689555262137004572686704398656767/39328348773247329011305506545232772460911074985731261943258026133671752560474228299672920240312769246658560",
+    "-87636522145356840523811208960303725525614829611884067158003567445477178116187197975725488551983124662139790825003443033/364151377530067861215791727270673819082509953571585758733870612348812523708094706478452965188081196728320",
+    "-1243408966877/764411904",
+    "-5927290351366953606120831243247429088778676098959530646438404223895806068003021146683020526785200378109399/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "103378531017631317916370743967723336243373028976424328576425965455716175418649407434447936109470501779173/22759461095629241325986982954417113692656872098224109920866913271800782731755919154903310324255074795520",
+    "5333512147496968127245168149537853498107057789368878664529589893412523485575256725131327485512590257626828377/5462270662951017918236875909060107286237649303573786381008059185232187855621420597176794477821217950924800",
+    "43926666850326620575103750845065997217478013366267245739646442729228595242708026127627160374883288925240132407/1638681198885305375471062772718032185871294791072135914302417755569656356686426179153038343346365385277440",
+    "-61090385727486404597989370717257411429398624428066536383372815155659501412533683003840200214002227825006405282467/15731339509298931604522202618093108984364429994292504777303210453468701024189691319869168096125107698663424",
+    "-4296653336871591199154202186150773507564489451085546393398285718575933240921080079351405923090383406493869090146187/16386811988853053754710627727180321858712947910721359143024177555696563566864261791530383433463653852774400",
+    "5967099820306618511222377318689735638818005549557006331612865309411139515294211864882432714859019187874932833537064671/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "-3107870670894867253256128468872187715230512820012172486911011285824557915997759696164466222655948040718932569664583437/196641743866236645056527532726163862304555374928656309716290130668358762802371141498364601201563846233292800",
+    "-1115340185898586634736432792136944786171474932965940218685775598994088640539317799933113408948789019808476510997848673/655472479554122150188425109087212874348517916428854365720967102227862542674570471661215337338546154110976",
+    "590438885835527753045667515856317261048924499687696354195132948465829825071636963080944164007257068299958103327020571677/49160435966559161264131883181540965576138843732164077429072532667089690700592785374591150300390961558323200",
+    "-6911858507449129403369260874951443297435578947071821709709808765235227073333375626863530444135392396018240389748228407047/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "-3212903735955507496350758087858840134175710963956994176746688014179907172715718603727612157415428522551563769393063722759/10924541325902035836473751818120214572475298607147572762016118370464375711242841194353588955642435901849600",
+    "-762083180017367477430106402474292188913402910482515225885631093604341432911635074359858976774065184548877562826308311438971/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "932556725177/573308928",
+    "-5927290351366953606120831243247429088778676098959530646438404223895806068003021146683020526785200378109399/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "103378531017631317916370743967723336243373028976424328576425965455716175418649407434447936109470501779173/22759461095629241325986982954417113692656872098224109920866913271800782731755919154903310324255074795520",
+    "5333512147496968127245168149537853498107057789368878664529589893412523485575256725131327485512590257626828377/5462270662951017918236875909060107286237649303573786381008059185232187855621420597176794477821217950924800",
+    "43926666850326620575103750845065997217478013366267245739646442729228595242708026127627160374883288925240132407/1638681198885305375471062772718032185871294791072135914302417755569656356686426179153038343346365385277440",
+    "-61090385727486404597989370717257411429398624428066536383372815155659501412533683003840200214002227825006405282467/15731339509298931604522202618093108984364429994292504777303210453468701024189691319869168096125107698663424",
+    "-4296653336871591199154202186150773507564489451085546393398285718575933240921080079351405923090383406493869090146187/16386811988853053754710627727180321858712947910721359143024177555696563566864261791530383433463653852774400",
+    "-8572290425496166752501915506157797227555401597550126305083075923074447255958082157681349634922522314619852152821021951/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "-1514790890628748343967293276195695004317860488285697624038890385029263692561716713951113160265917464048019242043777127/32773623977706107509421255454360643717425895821442718286048355111393127133728523583060766866927307705548800",
+    "5635271221416423692619707554577146209168275393194128535417715751597618608584822808948465313732526087857253126869351619/3641513775300678612157917272706738190825099535715857587338706123488125237080947064784529651880811967283200",
+    "-811510097382344480207769498847427058321703799251584471115599087835777955657018682930626683381395292387839747163617623551/49160435966559161264131883181540965576138843732164077429072532667089690700592785374591150300390961558323200",
+    "-28561914005431353072312256079304266568678496587954205480515969098511111974070482732224633983713700754430536539517373479633/393283487732473290113055065452327724609110749857312619432580261336717525604742282996729202403127692466585600",
+    "-2121447296413072195198217907911720214703511733083392064269104428523782780096361357341701286337816949088863066108616002943/5462270662951017918236875909060107286237649303573786381008059185232187855621420597176794477821217950924800",
+    "-517690433417047872721985220611093860917760948948175316201817874644743595603316625034977492398932466181098363253863951190569/131094495910824430037685021817442574869703583285770873144193420445572508534914094332243067467709230822195200",
+    "3843806438783845/2"
+  ],
+  "tight_inequalities": [
+    "L:positive:n1:r-6",
+    "L:positive:n1:r-4",
+    "L:positive:n1:r-3",
+    "L:positive:n1:r-2",
+    "L:positive:n1:r-1",
+    "L:positive:n1:r1",
+    "L:positive:n1:r2",
+    "L:positive:n1:r3",
+    "L:positive:n1:r4",
+    "L:positive:n1:r6",
+    "L:positive:n2:r-8",
+    "L:positive:n2:r-6",
+    "L:positive:n2:r-5",
+    "L:positive:n2:r-4",
+    "L:positive:n2:r-3",
+    "L:positive:n2:r-2",
+    "L:positive:n2:r-1",
+    "L:positive:n2:r1",
+    "L:positive:n2:r2",
+    "L:positive:n2:r3",
+    "L:positive:n2:r4",
+    "L:positive:n2:r5",
+    "L:positive:n2:r6",
+    "L:positive:n2:r8",
+    "L:positive:n3:r-10",
+    "L:positive:n3:r-9",
+    "L:positive:n3:r-8",
+    "L:positive:n3:r-7",
+    "L:positive:n3:r-6",
+    "L:positive:n3:r-5",
+    "L:positive:n3:r-3",
+    "L:positive:n3:r-2",
+    "L:positive:n3:r-1",
+    "L:positive:n3:r1",
+    "L:positive:n3:r2",
+    "L:positive:n3:r3",
+    "L:positive:n3:r5",
+    "L:positive:n3:r6",
+    "L:positive:n3:r7",
+    "L:positive:n3:r8",
+    "L:positive:n3:r9",
+    "L:positive:n3:r10",
+    "L:positive:n4:r-12",
+    "L:positive:n4:r-11",
+    "L:positive:n4:r-10",
+    "L:positive:n4:r-9",
+    "L:positive:n4:r-8",
+    "L:positive:n4:r-7",
+    "L:positive:n4:r-6",
+    "L:positive:n4:r-5",
+    "L:positive:n4:r-4",
+    "L:positive:n4:r-3",
+    "L:positive:n4:r-2",
+    "L:positive:n4:r-1",
+    "L:positive:n4:r0",
+    "L:positive:n4:r1",
+    "L:positive:n4:r2",
+    "L:positive:n4:r3",
+    "L:positive:n4:r4",
+    "L:positive:n4:r5",
+    "L:positive:n4:r6",
+    "L:positive:n4:r7",
+    "L:positive:n4:r8",
+    "L:positive:n4:r9",
+    "L:positive:n4:r10",
+    "L:positive:n4:r11",
+    "L:positive:n4:r12",
+    "L:positive:n5:r-14",
+    "L:positive:n5:r-12",
+    "L:positive:n5:r-11",
+    "L:positive:n5:r-9",
+    "L:positive:n5:r-8",
+    "L:positive:n5:r-7",
+    "L:positive:n5:r-6",
+    "L:positive:n5:r-5",
+    "L:positive:n5:r-4",
+    "L:positive:n5:r-3",
+    "L:positive:n5:r-2",
+    "L:positive:n5:r-1",
+    "L:positive:n5:r1",
+    "L:positive:n5:r2",
+    "L:positive:n5:r3",
+    "L:positive:n5:r4",
+    "L:positive:n5:r5",
+    "L:positive:n5:r6",
+    "L:positive:n5:r7",
+    "L:positive:n5:r8",
+    "L:positive:n5:r9",
+    "L:positive:n5:r11",
+    "L:positive:n5:r12",
+    "L:positive:n5:r14",
+    "L:positive:n6:r-14",
+    "L:positive:n6:r-13",
+    "L:positive:n6:r-12",
+    "L:positive:n6:r-11",
+    "L:positive:n6:r-10",
+    "L:positive:n6:r-9",
+    "L:positive:n6:r-8",
+    "L:positive:n6:r-7",
+    "L:positive:n6:r-5",
+    "L:positive:n6:r-4",
+    "L:positive:n6:r-3",
+    "L:positive:n6:r-2",
+    "L:positive:n6:r-1",
+    "L:positive:n6:r1",
+    "L:positive:n6:r2",
+    "L:positive:n6:r3",
+    "L:positive:n6:r4",
+    "L:positive:n6:r5",
+    "L:positive:n6:r7",
+    "L:positive:n6:r8",
+    "L:positive:n6:r9",
+    "L:positive:n6:r10",
+    "L:positive:n6:r11",
+    "L:positive:n6:r12",
+    "L:positive:n6:r13",
+    "L:positive:n6:r14",
+    "L:positive:n7:r-16",
+    "L:positive:n7:r-15",
+    "L:positive:n7:r-14",
+    "L:positive:n7:r-13",
+    "L:positive:n7:r-12",
+    "L:positive:n7:r-11",
+    "L:positive:n7:r-10",
+    "L:positive:n7:r-9",
+    "L:positive:n7:r-8",
+    "L:positive:n7:r-7",
+    "L:positive:n7:r-6",
+    "L:positive:n7:r-5",
+    "L:positive:n7:r-4",
+    "L:positive:n7:r-3",
+    "L:positive:n7:r-2",
+    "L:positive:n7:r-1",
+    "L:positive:n7:r0",
+    "L:positive:n7:r1",
+    "L:positive:n7:r2",
+    "L:positive:n7:r3",
+    "L:positive:n7:r4",
+    "L:positive:n7:r5",
+    "L:positive:n7:r6",
+    "L:positive:n7:r7",
+    "L:positive:n7:r8",
+    "L:positive:n7:r9",
+    "L:positive:n7:r10",
+    "L:positive:n7:r11",
+    "L:positive:n7:r12",
+    "L:positive:n7:r13",
+    "L:positive:n7:r14",
+    "L:positive:n7:r15",
+    "L:positive:n7:r16",
+    "L:positive:n8:r-17",
+    "L:positive:n8:r-16",
+    "L:positive:n8:r-15",
+    "L:positive:n8:r-14",
+    "L:positive:n8:r-13",
+    "L:positive:n8:r-12",
+    "L:positive:n8:r-11",
+    "L:positive:n8:r-10",
+    "L:positive:n8:r-9",
+    "L:positive:n8:r-8",
+    "L:positive:n8:r-7",
+    "L:positive:n8:r-4",
+    "L:positive:n8:r0",
+    "L:positive:n8:r4",
+    "L:positive:n8:r7",
+    "L:positive:n8:r8",
+    "L:positive:n8:r9",
+    "L:positive:n8:r10",
+    "L:positive:n8:r11",
+    "L:positive:n8:r12",
+    "L:positive:n8:r13",
+    "L:positive:n8:r14",
+    "L:positive:n8:r15",
+    "L:positive:n8:r16",
+    "L:positive:n8:r17",
+    "L:positive:n9:r-18",
+    "L:positive:n9:r-17",
+    "L:positive:n9:r-15",
+    "L:positive:n9:r-14",
+    "L:positive:n9:r-13",
+    "L:positive:n9:r-12",
+    "L:positive:n9:r-11",
+    "L:positive:n9:r-10",
+    "L:positive:n9:r-5",
+    "L:positive:n9:r-3",
+    "L:positive:n9:r-1",
+    "L:positive:n9:r1",
+    "L:positive:n9:r3",
+    "L:positive:n9:r5",
+    "L:positive:n9:r10",
+    "L:positive:n9:r11",
+    "L:positive:n9:r12",
+    "L:positive:n9:r13",
+    "L:positive:n9:r14",
+    "L:positive:n9:r15",
+    "L:positive:n9:r17",
+    "L:positive:n9:r18",
+    "L:positive:n10:r-19",
+    "L:positive:n10:r-18",
+    "L:positive:n10:r-17",
+    "L:positive:n10:r-16",
+    "L:positive:n10:r-15",
+    "L:positive:n10:r-13",
+    "L:positive:n10:r-12",
+    "L:positive:n10:r-9",
+    "L:positive:n10:r0",
+    "L:positive:n10:r9",
+    "L:positive:n10:r12",
+    "L:positive:n10:r13",
+    "L:positive:n10:r15",
+    "L:positive:n10:r16",
+    "L:positive:n10:r17",
+    "L:positive:n10:r18",
+    "L:positive:n10:r19",
+    "L:positive:n11:r-19",
+    "L:positive:n11:r-18",
+    "L:positive:n11:r-17",
+    "L:positive:n11:r-16",
+    "L:positive:n11:r-15",
+    "L:positive:n11:r-14",
+    "L:positive:n11:r-13",
+    "L:positive:n11:r-11",
+    "L:positive:n11:r11",
+    "L:positive:n11:r13",
+    "L:positive:n11:r14",
+    "L:positive:n11:r15",
+    "L:positive:n11:r16",
+    "L:positive:n11:r17",
+    "L:positive:n11:r18",
+    "L:positive:n11:r19",
+    "L:positive:n12:r-21",
+    "L:positive:n12:r-19",
+    "L:positive:n12:r-18",
+    "L:positive:n12:r-17",
+    "L:positive:n12:r-16",
+    "L:positive:n12:r-15",
+    "L:positive:n12:r-1",
+    "L:positive:n12:r1",
+    "L:positive:n12:r15",
+    "L:positive:n12:r16",
+    "L:positive:n12:r17",
+    "L:positive:n12:r18",
+    "L:positive:n12:r19",
+    "L:positive:n12:r21",
+    "L:positive:n13:r-22",
+    "L:positive:n13:r-21",
+    "L:positive:n13:r-19",
+    "L:positive:n13:r-18",
+    "L:positive:n13:r-17",
+    "L:positive:n13:r-16",
+    "L:positive:n13:r-5",
+    "L:positive:n13:r5",
+    "L:positive:n13:r16",
+    "L:positive:n13:r17",
+    "L:positive:n13:r18",
+    "L:positive:n13:r19",
+    "L:positive:n13:r21",
+    "L:positive:n13:r22",
+    "L:positive:n14:r-23",
+    "L:positive:n14:r-22",
+    "L:positive:n14:r-21",
+    "L:positive:n14:r-20",
+    "L:positive:n14:r-19",
+    "L:positive:n14:r-18",
+    "L:positive:n14:r-17",
+    "L:positive:n14:r-16",
+    "L:positive:n14:r-15",
+    "L:positive:n14:r15",
+    "L:positive:n14:r16",
+    "L:positive:n14:r17",
+    "L:positive:n14:r18",
+    "L:positive:n14:r19",
+    "L:positive:n14:r20",
+    "L:positive:n14:r21",
+    "L:positive:n14:r22",
+    "L:positive:n14:r23",
+    "L:positive:n15:r-24",
+    "L:positive:n15:r-23",
+    "L:positive:n15:r-22",
+    "L:positive:n15:r-21",
+    "L:positive:n15:r-19",
+    "L:positive:n15:r-18",
+    "L:positive:n15:r18",
+    "L:positive:n15:r19",
+    "L:positive:n15:r21",
+    "L:positive:n15:r22",
+    "L:positive:n15:r23",
+    "L:positive:n15:r24",
+    "L:positive:n16:r-24",
+    "L:positive:n16:r-23",
+    "L:positive:n16:r-22",
+    "L:positive:n16:r-21",
+    "L:positive:n16:r-19",
+    "L:positive:n16:r-17",
+    "L:positive:n16:r17",
+    "L:positive:n16:r19",
+    "L:positive:n16:r21",
+    "L:positive:n16:r22",
+    "L:positive:n16:r23",
+    "L:positive:n16:r24",
+    "L:positive:n17:r-26",
+    "L:positive:n17:r-25",
+    "L:positive:n17:r-23",
+    "L:positive:n17:r-22",
+    "L:positive:n17:r-21",
+    "L:positive:n17:r-20",
+    "L:positive:n17:r20",
+    "L:positive:n17:r21",
+    "L:positive:n17:r22",
+    "L:positive:n17:r23",
+    "L:positive:n17:r25",
+    "L:positive:n17:r26",
+    "L:positive:n18:r-26",
+    "L:positive:n18:r-25",
+    "L:positive:n18:r-24",
+    "L:positive:n18:r-23",
+    "L:positive:n18:r-22",
+    "L:positive:n18:r-21",
+    "L:positive:n18:r-20",
+    "L:positive:n18:r-19",
+    "L:positive:n18:r-15",
+    "L:positive:n18:r15",
+    "L:positive:n18:r19",
+    "L:positive:n18:r20",
+    "L:positive:n18:r21",
+    "L:positive:n18:r22",
+    "L:positive:n18:r23",
+    "L:positive:n18:r24",
+    "L:positive:n18:r25",
+    "L:positive:n18:r26",
+    "K:positive:n8:r-28",
+    "K:positive:n8:r-21",
+    "K:positive:n8:r0",
+    "K:positive:n8:r21",
+    "K:positive:n8:r28",
+    "K:positive:n9:r-7",
+    "K:positive:n9:r7",
+    "K:positive:n10:r-28",
+    "K:positive:n10:r28",
+    "K:positive:n11:r-14",
+    "K:positive:n11:r-7",
+    "K:positive:n11:r7",
+    "K:positive:n11:r14",
+    "K:positive:n12:r-56",
+    "K:positive:n12:r-49",
+    "K:positive:n12:r-42",
+    "K:positive:n12:r-35",
+    "K:positive:n12:r35",
+    "K:positive:n12:r42",
+    "K:positive:n12:r49",
+    "K:positive:n12:r56",
+    "K:positive:n13:r-56",
+    "K:positive:n13:r-49",
+    "K:positive:n13:r49",
+    "K:positive:n13:r56",
+    "K:positive:n14:r-56",
+    "K:positive:n14:r-49",
+    "K:positive:n14:r-42",
+    "K:positive:n14:r42",
+    "K:positive:n14:r49",
+    "K:positive:n14:r56",
+    "K:positive:n15:r-63",
+    "K:positive:n15:r-56",
+    "K:positive:n15:r56",
+    "K:positive:n15:r63",
+    "K:positive:n16:r-63",
+    "K:positive:n16:r-56",
+    "K:positive:n16:r56",
+    "K:positive:n16:r63",
+    "K:positive:n17:r-63",
+    "K:positive:n17:r-56",
+    "K:positive:n17:r-49",
+    "K:positive:n17:r-14",
+    "K:positive:n17:r14",
+    "K:positive:n17:r49",
+    "K:positive:n17:r56",
+    "K:positive:n17:r63",
+    "K:positive:n18:r-70",
+    "K:positive:n18:r-63",
+    "K:positive:n18:r63",
+    "K:positive:n18:r70"
+  ]
+}

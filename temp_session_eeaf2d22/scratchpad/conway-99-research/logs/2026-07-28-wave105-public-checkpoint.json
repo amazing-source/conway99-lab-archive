@@ -1,0 +1,62 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-28T03:50:26Z",
+  "format": "conway99-wave105-public-checkpoint-v1",
+  "git_base_commit": "e671eb056df60edcbf48da6b9fcfe635b2444479",
+  "manifests": {
+    "wave101_discovery": "54d620a8644d7efe5d2e418869b035331127862c2125ef3da325272417307619",
+    "wave101_verification": "79fd0331a936761f2394d58f835df80e41ad855cdf88660a2ccfd5841c5d7aba",
+    "wave102_discovery": "d6f4a06214f2299e8618171d39287a714e4b14c541df39c27e5e90d9b0969d60",
+    "wave102_verification": "ab97e3d38b1a34d30caa6dddf7b5d9a9c76dc629bc5f6b400c225da1097fd242",
+    "wave105_discovery": "b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1",
+    "wave105_verification": "2a24e3e5846558a9e93cd2f103e049816cef7f8dd4a200108643e44cc4c300ae"
+  },
+  "prior_checkpoint": "logs/2026-07-28-wave100-public-checkpoint.json",
+  "results": {
+    "wave101_all_rank_theta": {
+      "parity_rounded_total_bounds": {
+        "q10": 561084,
+        "q12": 189901474,
+        "q14": 1831606638,
+        "q2": 182,
+        "q4": 1584,
+        "q6": 11400,
+        "q8": 80110
+      },
+      "short_shell_null_in_every_row": "N14=N16=N18=0"
+    },
+    "wave102_prism_code": {
+      "general_inequality": "7*N14<=55440-5*n3-O/2",
+      "p1_n14_upper": 4950,
+      "p2_odd_roots_lower": 4,
+      "p3_odd_roots_lower": 4
+    },
+    "wave105_motif_extension": {
+      "forced_type_counts": {
+        "X0": 3,
+        "X1": 48,
+        "X2": 36
+      },
+      "full_extension": "UNKNOWN",
+      "linear_extension": "VERIFIED_FEASIBLE",
+      "linear_witness_failed_nonlinear_rows": 2525,
+      "outside_edges": 549,
+      "sat_branch_results": [
+        "UNKNOWN_TIMEOUT",
+        "UNKNOWN_TIMEOUT",
+        "UNKNOWN_TIMEOUT",
+        "UNKNOWN_TIMEOUT"
+      ]
+    }
+  },
+  "status": "VERIFIED_WITH_SHARPENING_CORRECTIONS_AND_CLARIFICATIONS",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "full_motif_extension": "UNKNOWN",
+    "n16_n18_upper_bound": "NOT_PROVED",
+    "novelty": "UNKNOWN",
+    "rank_f7_28": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

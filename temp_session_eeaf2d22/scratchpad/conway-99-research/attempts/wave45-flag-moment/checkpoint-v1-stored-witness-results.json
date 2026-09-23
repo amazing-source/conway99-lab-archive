@@ -1,0 +1,1420 @@
+{
+  "claim_label": "DERIVED",
+  "coefficient_model": {
+    "families": {
+      "ordered_edge": {
+        "flags": [
+          1,
+          3,
+          7,
+          9,
+          11,
+          13,
+          15,
+          25,
+          27,
+          33,
+          35,
+          39,
+          41,
+          43,
+          45,
+          57
+        ],
+        "free_subsets_per_root": 4656,
+        "matrix_size": 16,
+        "normalization_denominator": 30046173696,
+        "root_embeddings": 1386,
+        "union_orders": [
+          4,
+          5,
+          6
+        ]
+      },
+      "ordered_nonedge": {
+        "flags": [
+          0,
+          2,
+          6,
+          8,
+          10,
+          12,
+          14,
+          24,
+          26,
+          30,
+          32,
+          34,
+          38,
+          40,
+          42,
+          44,
+          46,
+          56,
+          58
+        ],
+        "free_subsets_per_root": 4656,
+        "matrix_size": 19,
+        "normalization_denominator": 180277042176,
+        "root_embeddings": 8316,
+        "union_orders": [
+          4,
+          5,
+          6
+        ]
+      },
+      "vertex": {
+        "flags": [
+          0,
+          1,
+          3,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          24,
+          25,
+          26,
+          27,
+          30,
+          56,
+          57
+        ],
+        "free_subsets_per_root": 152096,
+        "matrix_size": 17,
+        "normalization_denominator": 2290186128384,
+        "root_embeddings": 99,
+        "union_orders": [
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "file": "attempts/wave45-flag-moment/moment-coefficients.json",
+    "payload_sha256": "62698eb6e1c6a624d114510c8606a4f003ebdd86494584c29f79d81667853b48"
+  },
+  "conclusion": {
+    "Conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "entire_wave44_linear_feasible_region_psd_feasibility": "NOT_TESTED",
+    "graph_constructed": false,
+    "one_or_more_stored_witnesses_refuted": true,
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  },
+  "controls": {
+    "hostile_mutations": [
+      {
+        "label": "negative diagonal mutation",
+        "outcome": "REJECTED"
+      },
+      {
+        "label": "one embedding coefficient incremented",
+        "mutated_class": {
+          "canonical_mask": 0,
+          "order": 4
+        },
+        "outcome": "REJECTED"
+      }
+    ],
+    "known_srgs": [
+      {
+        "families": {
+          "ordered_edge": {
+            "direct_equals_unrooted_expansion": true,
+            "exact_psd_reason": "direct sum of integer outer products",
+            "minimum_raw_eigenvalue_float": -1.239178263390463e-13,
+            "raw_matrix_sha256": "00448b999cc34e55d5694b916799c41c2bb6ce53d115f015215c1dfc4c5b9aa2"
+          },
+          "ordered_nonedge": {
+            "direct_equals_unrooted_expansion": true,
+            "exact_psd_reason": "direct sum of integer outer products",
+            "minimum_raw_eigenvalue_float": -1.8843109345772672e-13,
+            "raw_matrix_sha256": "47009713da49f1cfe770d96c26fe7a77e1d4832492a7d946956df2f642ebafaa"
+          },
+          "vertex": {
+            "direct_equals_unrooted_expansion": true,
+            "exact_psd_reason": "direct sum of integer outer products",
+            "minimum_raw_eigenvalue_float": -1.2829884410507405e-12,
+            "raw_matrix_sha256": "544605c50d20c2dd10281dc3051d93243568506e43c25d66099578571dcc9afc"
+          }
+        },
+        "induced_subset_totals": {
+          "4": 210,
+          "5": 252,
+          "6": 210,
+          "7": 120
+        },
+        "name": "Petersen",
+        "srg_parameters": [
+          10,
+          3,
+          0,
+          1
+        ]
+      },
+      {
+        "families": {
+          "ordered_edge": {
+            "direct_equals_unrooted_expansion": true,
+            "exact_psd_reason": "direct sum of integer outer products",
+            "minimum_raw_eigenvalue_float": -1.0405524592570358e-11,
+            "raw_matrix_sha256": "72effb5f49d2d6933bee08d51b1c8042745aebe40e40857be29236aeb9105fe4"
+          },
+          "ordered_nonedge": {
+            "direct_equals_unrooted_expansion": true,
+            "exact_psd_reason": "direct sum of integer outer products",
+            "minimum_raw_eigenvalue_float": -1.7085180564940724e-11,
+            "raw_matrix_sha256": "9aa0a3cea920c29e5a0499e579159120714dedef60256ffaa690b746c54cf077"
+          },
+          "vertex": {
+            "direct_equals_unrooted_expansion": true,
+            "exact_psd_reason": "direct sum of integer outer products",
+            "minimum_raw_eigenvalue_float": -5.266606306740287e-11,
+            "raw_matrix_sha256": "1ff7f27cea546993bee11a7995578dd56c7541d72fd099a864364a98e901b235"
+          }
+        },
+        "induced_subset_totals": {
+          "4": 1820,
+          "5": 4368,
+          "6": 8008,
+          "7": 11440
+        },
+        "name": "Clebsch",
+        "srg_parameters": [
+          16,
+          5,
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  "exact_negative_directions": [
+    {
+      "direction_index": 0,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -2439686160282,
+      "target": "wave43_unrooted",
+      "vector": [
+        5,
+        -3,
+        8,
+        -2,
+        -10,
+        9,
+        0,
+        -8,
+        -2,
+        0,
+        9,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "direction_index": 1,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -642660113620,
+      "target": "wave43_unrooted",
+      "vector": [
+        1,
+        8,
+        -5,
+        -2,
+        -5,
+        -8,
+        0,
+        -9,
+        10,
+        0,
+        1,
+        -5,
+        6,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "direction_index": 2,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -27729959832,
+      "target": "wave43_unrooted",
+      "vector": [
+        1,
+        0,
+        -4,
+        5,
+        -1,
+        2,
+        0,
+        -1,
+        -8,
+        -3,
+        -5,
+        -4,
+        10,
+        3,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "direction_index": 3,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -286352047812,
+      "target": "wave43_unrooted",
+      "vector": [
+        15,
+        26,
+        11,
+        10,
+        -35,
+        20,
+        53,
+        -41,
+        -29,
+        14,
+        -100,
+        6,
+        -47,
+        -67,
+        -44,
+        71,
+        97
+      ]
+    },
+    {
+      "direction_index": 4,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -21295863304,
+      "target": "wave43_unrooted",
+      "vector": [
+        2,
+        -12,
+        -4,
+        17,
+        9,
+        -9,
+        30,
+        -4,
+        3,
+        -22,
+        17,
+        1,
+        1,
+        -8,
+        -7,
+        -17,
+        14
+      ]
+    },
+    {
+      "direction_index": 5,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -18307661814,
+      "target": "wave43_unrooted",
+      "vector": [
+        9,
+        -9,
+        -15,
+        -16,
+        -3,
+        3,
+        75,
+        -18,
+        1,
+        -19,
+        -14,
+        22,
+        -6,
+        -56,
+        100,
+        50,
+        -93
+      ]
+    },
+    {
+      "direction_index": 0,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -3434158925036,
+      "target": "wave44_rooted",
+      "vector": [
+        6,
+        -4,
+        1,
+        0,
+        -10,
+        1,
+        0,
+        3,
+        -1,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "direction_index": 1,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -420407978596,
+      "target": "wave44_rooted",
+      "vector": [
+        2,
+        0,
+        -9,
+        0,
+        0,
+        -10,
+        1,
+        10,
+        8,
+        0,
+        -6,
+        3,
+        -4,
+        -1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "direction_index": 2,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -468970998184,
+      "target": "wave44_rooted",
+      "vector": [
+        2,
+        -5,
+        -16,
+        -71,
+        -7,
+        31,
+        23,
+        -6,
+        25,
+        77,
+        -18,
+        -13,
+        48,
+        -100,
+        49,
+        12,
+        -38
+      ]
+    },
+    {
+      "direction_index": 3,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -46796180000,
+      "target": "wave44_rooted",
+      "vector": [
+        0,
+        17,
+        -17,
+        16,
+        -14,
+        16,
+        4,
+        0,
+        -26,
+        2,
+        -30,
+        11,
+        3,
+        -6,
+        -9,
+        21,
+        5
+      ]
+    },
+    {
+      "direction_index": 4,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -1158870788,
+      "target": "wave44_rooted",
+      "vector": [
+        1,
+        -2,
+        -1,
+        3,
+        1,
+        -2,
+        10,
+        -2,
+        -1,
+        -5,
+        1,
+        0,
+        -1,
+        -5,
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "direction_index": 5,
+      "family": "vertex",
+      "normalized_quadratic_denominator": 2290186128384,
+      "quadratic_numerator": -161364476608,
+      "target": "wave44_rooted",
+      "vector": [
+        8,
+        -34,
+        -31,
+        42,
+        7,
+        37,
+        22,
+        -43,
+        61,
+        -112,
+        11,
+        117,
+        40,
+        90,
+        74,
+        100,
+        -300
+      ]
+    }
+  ],
+  "format": "wave45-exact-finite-flag-moment-v1",
+  "limitations": [
+    "An indefinite stored count witness only refutes that witness.",
+    "The PSD-constrained feasibility problem over all count vectors is not yet certified.",
+    "Floating eigenvalues are diagnostics; only exact integer negative directions are claims.",
+    "No automorphism of a target graph is assumed."
+  ],
+  "parameters": {
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "n": 99,
+    "n3": 4158
+  },
+  "resource_guard": {
+    "minimum_free_memory_percent": 15.0,
+    "samples": [
+      {
+        "available_bytes": 37356187648,
+        "free_percent_floor": 55.08,
+        "label": "wave45-start",
+        "total_bytes": 67815071744
+      },
+      {
+        "available_bytes": 37398167552,
+        "free_percent_floor": 55.14,
+        "label": "after-catalogues",
+        "total_bytes": 67815071744
+      },
+      {
+        "available_bytes": 37384704000,
+        "free_percent_floor": 55.12,
+        "label": "after-coefficients",
+        "total_bytes": 67815071744
+      },
+      {
+        "available_bytes": 37369380864,
+        "free_percent_floor": 55.1,
+        "label": "wave45-finish",
+        "total_bytes": 67815071744
+      }
+    ]
+  },
+  "role": "construction",
+  "scope": "Exact finite Gram-moment tests of the frozen Wave43 and Wave44 n3=4158 aggregate count witnesses.",
+  "targets": {
+    "wave43_unrooted": {
+      "families": {
+        "ordered_edge": {
+          "exact_ldl": {
+            "certificate": {
+              "diagonal": [
+                "6647394600",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "lower_triangle": [
+                [
+                  1,
+                  0,
+                  "122/365"
+                ],
+                [
+                  2,
+                  0,
+                  "2/73"
+                ],
+                [
+                  3,
+                  0,
+                  "122/365"
+                ],
+                [
+                  4,
+                  0,
+                  "2/73"
+                ],
+                [
+                  5,
+                  0,
+                  "22/365"
+                ],
+                [
+                  6,
+                  0,
+                  "2/365"
+                ],
+                [
+                  7,
+                  0,
+                  "2/73"
+                ],
+                [
+                  8,
+                  0,
+                  "2/365"
+                ],
+                [
+                  9,
+                  0,
+                  "61/365"
+                ],
+                [
+                  10,
+                  0,
+                  "22/365"
+                ],
+                [
+                  11,
+                  0,
+                  "1/365"
+                ],
+                [
+                  12,
+                  0,
+                  "22/365"
+                ],
+                [
+                  13,
+                  0,
+                  "2/365"
+                ],
+                [
+                  14,
+                  0,
+                  "2/365"
+                ],
+                [
+                  15,
+                  0,
+                  "1/365"
+                ]
+              ]
+            },
+            "certificate_sha256": "77d247e30c5a77f73eb67b67ff4520714d5fdcff65e4f0f87974e063669db297",
+            "is_psd": true,
+            "rank": 1
+          },
+          "exact_negative_direction": null,
+          "exact_negative_directions": [],
+          "matrix_size": 16,
+          "maximum_normalized_eigenvalue_float": 0.2797919545116378,
+          "minimum_normalized_eigenvalue_float": -3.1118996513944254e-18,
+          "minimum_raw_eigenvalue_float": -9.350067745031876e-08,
+          "normalization_denominator": 30046173696,
+          "numerical_negative_eigenvalue_count": 0,
+          "raw_matrix_sha256": "2001fc812b564e10cdda35c818874e954c3ff7cd6a6764ef264fbc8b4c340fcd",
+          "status": "EXACTLY_PSD"
+        },
+        "ordered_nonedge": {
+          "exact_ldl": {
+            "certificate": {
+              "diagonal": [
+                "37375430400",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "lower_triangle": [
+                [
+                  1,
+                  0,
+                  "73/212"
+                ],
+                [
+                  2,
+                  0,
+                  "61/2120"
+                ],
+                [
+                  3,
+                  0,
+                  "73/212"
+                ],
+                [
+                  4,
+                  0,
+                  "61/1060"
+                ],
+                [
+                  5,
+                  0,
+                  "61/1060"
+                ],
+                [
+                  6,
+                  0,
+                  "11/1060"
+                ],
+                [
+                  7,
+                  0,
+                  "61/2120"
+                ],
+                [
+                  8,
+                  0,
+                  "11/1060"
+                ],
+                [
+                  9,
+                  0,
+                  "1/2120"
+                ],
+                [
+                  10,
+                  0,
+                  "73/424"
+                ],
+                [
+                  11,
+                  0,
+                  "61/1060"
+                ],
+                [
+                  12,
+                  0,
+                  "1/424"
+                ],
+                [
+                  13,
+                  0,
+                  "61/1060"
+                ],
+                [
+                  14,
+                  0,
+                  "1/106"
+                ],
+                [
+                  15,
+                  0,
+                  "11/1060"
+                ],
+                [
+                  16,
+                  0,
+                  "1/1060"
+                ],
+                [
+                  17,
+                  0,
+                  "1/424"
+                ],
+                [
+                  18,
+                  0,
+                  "1/1060"
+                ]
+              ]
+            },
+            "certificate_sha256": "bd5f9e63a928469e54e07d277406cb5aee516a60038b7f06618628a301d10b95",
+            "is_psd": true,
+            "rank": 1
+          },
+          "exact_negative_direction": null,
+          "exact_negative_directions": [],
+          "matrix_size": 19,
+          "maximum_normalized_eigenvalue_float": 0.26580979278114336,
+          "minimum_normalized_eigenvalue_float": -2.6482802573290292e-17,
+          "minimum_raw_eigenvalue_float": -4.7742413164437355e-06,
+          "normalization_denominator": 180277042176,
+          "numerical_negative_eigenvalue_count": 0,
+          "raw_matrix_sha256": "35a2fbc03fb917887e6e9b477508ef4fdaf549d66bece81f3c6c0ef01a0010f7",
+          "status": "EXACTLY_PSD"
+        },
+        "vertex": {
+          "exact_ldl": {
+            "failure": "negative_ldl_pivot",
+            "is_psd": false,
+            "pivot": "-681062645110998210384466833892/337860205643522012663",
+            "pivot_index": 2
+          },
+          "exact_negative_direction": {
+            "normalized_quadratic_denominator": 2290186128384,
+            "quadratic_numerator": -2439686160282,
+            "vector": [
+              5,
+              -3,
+              8,
+              -2,
+              -10,
+              9,
+              0,
+              -8,
+              -2,
+              0,
+              9,
+              -3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "exact_negative_directions": [
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -2439686160282,
+              "vector": [
+                5,
+                -3,
+                8,
+                -2,
+                -10,
+                9,
+                0,
+                -8,
+                -2,
+                0,
+                9,
+                -3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -642660113620,
+              "vector": [
+                1,
+                8,
+                -5,
+                -2,
+                -5,
+                -8,
+                0,
+                -9,
+                10,
+                0,
+                1,
+                -5,
+                6,
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -27729959832,
+              "vector": [
+                1,
+                0,
+                -4,
+                5,
+                -1,
+                2,
+                0,
+                -1,
+                -8,
+                -3,
+                -5,
+                -4,
+                10,
+                3,
+                1,
+                0,
+                -1
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -286352047812,
+              "vector": [
+                15,
+                26,
+                11,
+                10,
+                -35,
+                20,
+                53,
+                -41,
+                -29,
+                14,
+                -100,
+                6,
+                -47,
+                -67,
+                -44,
+                71,
+                97
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -21295863304,
+              "vector": [
+                2,
+                -12,
+                -4,
+                17,
+                9,
+                -9,
+                30,
+                -4,
+                3,
+                -22,
+                17,
+                1,
+                1,
+                -8,
+                -7,
+                -17,
+                14
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -18307661814,
+              "vector": [
+                9,
+                -9,
+                -15,
+                -16,
+                -3,
+                3,
+                75,
+                -18,
+                1,
+                -19,
+                -14,
+                22,
+                -6,
+                -56,
+                100,
+                50,
+                -93
+              ]
+            }
+          ],
+          "matrix_size": 17,
+          "maximum_normalized_eigenvalue_float": 0.24186407123601217,
+          "minimum_normalized_eigenvalue_float": -0.0025217705384230947,
+          "minimum_raw_eigenvalue_float": -5775323906.064022,
+          "normalization_denominator": 2290186128384,
+          "numerical_negative_eigenvalue_count": 6,
+          "raw_matrix_sha256": "6c2e0492e42f02d3bf254d363989793d1231c29c82cd80ebc14caed4c7764931",
+          "status": "EXACTLY_INDEFINITE"
+        }
+      },
+      "input_path": "attempts/wave43-seven-deck-endpoint/exact-results.json",
+      "input_sha256": "06b498a736a511a7d6f5912bd4686e5d4eb30f4041477e3ee9cbc1704f1757c8"
+    },
+    "wave44_rooted": {
+      "families": {
+        "ordered_edge": {
+          "exact_ldl": {
+            "certificate": {
+              "diagonal": [
+                "6647394600",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "lower_triangle": [
+                [
+                  1,
+                  0,
+                  "122/365"
+                ],
+                [
+                  2,
+                  0,
+                  "2/73"
+                ],
+                [
+                  3,
+                  0,
+                  "122/365"
+                ],
+                [
+                  4,
+                  0,
+                  "2/73"
+                ],
+                [
+                  5,
+                  0,
+                  "22/365"
+                ],
+                [
+                  6,
+                  0,
+                  "2/365"
+                ],
+                [
+                  7,
+                  0,
+                  "2/73"
+                ],
+                [
+                  8,
+                  0,
+                  "2/365"
+                ],
+                [
+                  9,
+                  0,
+                  "61/365"
+                ],
+                [
+                  10,
+                  0,
+                  "22/365"
+                ],
+                [
+                  11,
+                  0,
+                  "1/365"
+                ],
+                [
+                  12,
+                  0,
+                  "22/365"
+                ],
+                [
+                  13,
+                  0,
+                  "2/365"
+                ],
+                [
+                  14,
+                  0,
+                  "2/365"
+                ],
+                [
+                  15,
+                  0,
+                  "1/365"
+                ]
+              ]
+            },
+            "certificate_sha256": "77d247e30c5a77f73eb67b67ff4520714d5fdcff65e4f0f87974e063669db297",
+            "is_psd": true,
+            "rank": 1
+          },
+          "exact_negative_direction": null,
+          "exact_negative_directions": [],
+          "matrix_size": 16,
+          "maximum_normalized_eigenvalue_float": 0.2797919545116378,
+          "minimum_normalized_eigenvalue_float": -3.1118996513944254e-18,
+          "minimum_raw_eigenvalue_float": -9.350067745031876e-08,
+          "normalization_denominator": 30046173696,
+          "numerical_negative_eigenvalue_count": 0,
+          "raw_matrix_sha256": "2001fc812b564e10cdda35c818874e954c3ff7cd6a6764ef264fbc8b4c340fcd",
+          "status": "EXACTLY_PSD"
+        },
+        "ordered_nonedge": {
+          "exact_ldl": {
+            "certificate": {
+              "diagonal": [
+                "37375430400",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "lower_triangle": [
+                [
+                  1,
+                  0,
+                  "73/212"
+                ],
+                [
+                  2,
+                  0,
+                  "61/2120"
+                ],
+                [
+                  3,
+                  0,
+                  "73/212"
+                ],
+                [
+                  4,
+                  0,
+                  "61/1060"
+                ],
+                [
+                  5,
+                  0,
+                  "61/1060"
+                ],
+                [
+                  6,
+                  0,
+                  "11/1060"
+                ],
+                [
+                  7,
+                  0,
+                  "61/2120"
+                ],
+                [
+                  8,
+                  0,
+                  "11/1060"
+                ],
+                [
+                  9,
+                  0,
+                  "1/2120"
+                ],
+                [
+                  10,
+                  0,
+                  "73/424"
+                ],
+                [
+                  11,
+                  0,
+                  "61/1060"
+                ],
+                [
+                  12,
+                  0,
+                  "1/424"
+                ],
+                [
+                  13,
+                  0,
+                  "61/1060"
+                ],
+                [
+                  14,
+                  0,
+                  "1/106"
+                ],
+                [
+                  15,
+                  0,
+                  "11/1060"
+                ],
+                [
+                  16,
+                  0,
+                  "1/1060"
+                ],
+                [
+                  17,
+                  0,
+                  "1/424"
+                ],
+                [
+                  18,
+                  0,
+                  "1/1060"
+                ]
+              ]
+            },
+            "certificate_sha256": "bd5f9e63a928469e54e07d277406cb5aee516a60038b7f06618628a301d10b95",
+            "is_psd": true,
+            "rank": 1
+          },
+          "exact_negative_direction": null,
+          "exact_negative_directions": [],
+          "matrix_size": 19,
+          "maximum_normalized_eigenvalue_float": 0.26580979278114336,
+          "minimum_normalized_eigenvalue_float": -2.6482802573290292e-17,
+          "minimum_raw_eigenvalue_float": -4.7742413164437355e-06,
+          "normalization_denominator": 180277042176,
+          "numerical_negative_eigenvalue_count": 0,
+          "raw_matrix_sha256": "35a2fbc03fb917887e6e9b477508ef4fdaf549d66bece81f3c6c0ef01a0010f7",
+          "status": "EXACTLY_PSD"
+        },
+        "vertex": {
+          "exact_ldl": {
+            "failure": "negative_ldl_pivot",
+            "is_psd": false,
+            "pivot": "-251181324122370422841/86127054899",
+            "pivot_index": 1
+          },
+          "exact_negative_direction": {
+            "normalized_quadratic_denominator": 2290186128384,
+            "quadratic_numerator": -3434158925036,
+            "vector": [
+              6,
+              -4,
+              1,
+              0,
+              -10,
+              1,
+              0,
+              3,
+              -1,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "exact_negative_directions": [
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -3434158925036,
+              "vector": [
+                6,
+                -4,
+                1,
+                0,
+                -10,
+                1,
+                0,
+                3,
+                -1,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -420407978596,
+              "vector": [
+                2,
+                0,
+                -9,
+                0,
+                0,
+                -10,
+                1,
+                10,
+                8,
+                0,
+                -6,
+                3,
+                -4,
+                -1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -468970998184,
+              "vector": [
+                2,
+                -5,
+                -16,
+                -71,
+                -7,
+                31,
+                23,
+                -6,
+                25,
+                77,
+                -18,
+                -13,
+                48,
+                -100,
+                49,
+                12,
+                -38
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -46796180000,
+              "vector": [
+                0,
+                17,
+                -17,
+                16,
+                -14,
+                16,
+                4,
+                0,
+                -26,
+                2,
+                -30,
+                11,
+                3,
+                -6,
+                -9,
+                21,
+                5
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -1158870788,
+              "vector": [
+                1,
+                -2,
+                -1,
+                3,
+                1,
+                -2,
+                10,
+                -2,
+                -1,
+                -5,
+                1,
+                0,
+                -1,
+                -5,
+                2,
+                -1,
+                2
+              ]
+            },
+            {
+              "normalized_quadratic_denominator": 2290186128384,
+              "quadratic_numerator": -161364476608,
+              "vector": [
+                8,
+                -34,
+                -31,
+                42,
+                7,
+                37,
+                22,
+                -43,
+                61,
+                -112,
+                11,
+                117,
+                40,
+                90,
+                74,
+                100,
+                -300
+              ]
+            }
+          ],
+          "matrix_size": 17,
+          "maximum_normalized_eigenvalue_float": 0.24189441620864294,
+          "minimum_normalized_eigenvalue_float": -0.008511645783987358,
+          "minimum_raw_eigenvalue_float": -19493253104.206,
+          "normalization_denominator": 2290186128384,
+          "numerical_negative_eigenvalue_count": 6,
+          "raw_matrix_sha256": "a1fba5e866b29d71e593478bff1ef2bbe012933936b8cc1063801fb186db1235",
+          "status": "EXACTLY_INDEFINITE"
+        }
+      },
+      "input_path": "attempts/wave44-rooted-flags/rooted-witness.json",
+      "input_sha256": "9be153b2487c3e07e20bffeb7ee6c890e69caa6e8d6b6e2936fbc5d8927bd5b9"
+    }
+  }
+}

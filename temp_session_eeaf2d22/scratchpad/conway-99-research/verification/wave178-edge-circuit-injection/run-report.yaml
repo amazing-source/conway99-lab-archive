@@ -1,0 +1,40 @@
+role: verifier
+date_utc: 2026-07-28T22:46:24Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional rank-11 endpoint injection from 693 graph edges to distinct
+  projective dual circuits of sizes 4, 6, or 8, the factor-two dual-word
+  bound, and balanced local Gram-kernel profiles.
+inputs:
+  - attempts/wave178-edge-circuit-injection/package-manifest.sha256
+method: >-
+  Direct shared/disjoint endpoint incidence proof using lambda=1; matroid
+  circuit relation uniqueness; and independent periodic-recurrence
+  reconstruction of the four local Gram-kernel profile supersets. No graph,
+  code, SAT, configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave178-edge-circuit-injection\independent_check.py --verify
+  verification\wave178-edge-circuit-injection\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave178-edge-circuit-injection\test_independent_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave178-edge-circuit-injection\exact_check.py --verify
+  attempts\wave178-edge-circuit-injection\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave178-edge-circuit-injection\test_exact_check.py
+outputs:
+  - verification/wave178-edge-circuit-injection/README.md
+  - verification/wave178-edge-circuit-injection/audit.md
+  - verification/wave178-edge-circuit-injection/protocol.md
+  - verification/wave178-edge-circuit-injection/independent_check.py
+  - verification/wave178-edge-circuit-injection/independent-results.json
+  - verification/wave178-edge-circuit-injection/test_independent_check.py
+  - verification/wave178-edge-circuit-injection/input-freeze.sha256
+limitations:
+  - The local Gram kernels are used only as supersets of true relation
+    kernels in the degenerate types.
+  - The circuit-count condition does not exclude the endpoint.
+  - The rank-11 branch and global graph existence remain UNKNOWN.
+  - External novelty is UNKNOWN.

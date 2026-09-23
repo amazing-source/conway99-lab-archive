@@ -1,0 +1,210 @@
+{
+  "D8_equality_space": {
+    "Burnside_traces": {
+      "I": 10000,
+      "P": 0,
+      "R": 0,
+      "R2": 0,
+      "R2P": 0,
+      "R3": 0,
+      "R3P_equals_M": 100,
+      "RP": 100
+    },
+    "D8_order": 8,
+    "combined_output_parity_and_transform_rank": 3725,
+    "generators": {
+      "M": "Swap*(h tensor h)",
+      "P": "I tensor z",
+      "R": "P*M",
+      "exact_relations": [
+        "P^2=M^2=I",
+        "h*z*h=x=[[0,1],[1,0]]",
+        "R^2=x tensor z",
+        "R^4=I",
+        "P*R*P=R^(-1)"
+      ],
+      "h": "2^(-1/2)*[[1,1],[1,-1]]",
+      "z": "[[1,0],[0,-1]]"
+    },
+    "input_complement_reduced_states": 2500,
+    "invariant_dimension": 1275,
+    "output_even_states": 5000,
+    "rank_after_input_complement_reduction": 1225,
+    "raw_bivariate_states": 10000
+  },
+  "claim_label": "DERIVED",
+  "definition": "B[i,j]=#{x in F_2^99: wt(x)=i, wt(Ax)=j}",
+  "elementary_nonnegativity_only_bound": {
+    "derivation": "absolute value of the signed row is at most sum_j B[6,j]=binom(99,6)",
+    "improves_4158": false,
+    "integer_upper": 6553738,
+    "multiple_of_3_upper": 6553737,
+    "rational_upper": "838878579/128"
+  },
+  "exact_low_input_rows": {
+    "0": {
+      "0": 1
+    },
+    "1": {
+      "14": 99
+    },
+    "2": {
+      "24": 4158,
+      "26": 693
+    },
+    "3": {
+      "30": 70686,
+      "32": 41580,
+      "34": 36036,
+      "36": 8547
+    }
+  },
+  "exact_marginals_and_symmetries": {
+    "input": "sum_j B[i,j]=binom(99,i)",
+    "input_complement": "B[i,j]=B[99-i,j], because A*1=0",
+    "krawtchouk_convention": "K_t(w)=sum_h (-1)^h binom(w,h) binom(99-w,t-h)",
+    "output": "sum_i B[i,j]=2^45*A_j, where A_j is the im(A) weight enumerator",
+    "output_even": "B[i,j]=0 for odd j",
+    "transform": "B[i,j]=2^-99 sum_(a,b) K_i(b) K_j(a) B[a,b]"
+  },
+  "format": "wave141-bivariate-graph-code-v1",
+  "frozen_inputs_sha256": {
+    "attempts/wave21-six-vertex-lp/exact-results.json": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b",
+    "attempts/wave21-six-vertex-lp/exact_check.py": "0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3"
+  },
+  "limitations": [
+    "The 1275-dimensional invariant space is a linear equality space, not a nonnegative realization.",
+    "The signed S6 equation aggregates output weights and does not identify individual six-set compositions.",
+    "No bounded numerical solver status is proof of feasibility or infeasibility.",
+    "An exact rational primal or Farkas dual is required for an evidentiary LP claim.",
+    "Discovery does not verify itself."
+  ],
+  "parameters": {
+    "A_one_equals_zero_mod_2": true,
+    "A_squared_equals_A_mod_2": true,
+    "nullity_F2_A": 45,
+    "rank_F2_A": 54,
+    "srg": [
+      99,
+      14,
+      1,
+      2
+    ]
+  },
+  "scope": "Exact identities and equality-space dimension for the formal bivariate table B[i,j]; no formal enumerator, code, graph, upper bound improvement, or Conway-99 resolution",
+  "signed_input_rows_S0_through_S6": [
+    {
+      "constant": "1",
+      "input_weight": "0",
+      "n3_coefficient": "0"
+    },
+    {
+      "constant": "-99",
+      "input_weight": "1",
+      "n3_coefficient": "0"
+    },
+    {
+      "constant": "3465",
+      "input_weight": "2",
+      "n3_coefficient": "0"
+    },
+    {
+      "constant": "-56595",
+      "input_weight": "3",
+      "n3_coefficient": "0"
+    },
+    {
+      "constant": "462924",
+      "input_weight": "4",
+      "n3_coefficient": "0"
+    },
+    {
+      "constant": "-1821204",
+      "input_weight": "5",
+      "n3_coefficient": "0"
+    },
+    {
+      "constant": "2024484",
+      "input_weight": "6",
+      "n3_coefficient": "512/3"
+    }
+  ],
+  "signed_row_derivation": {
+    "class_parity_audits": [
+      {
+        "canonical_class_count": 9,
+        "even_edge_classes": 5,
+        "mapping_is_bijective": true,
+        "odd_edge_classes": 4,
+        "order": 4,
+        "source_class_count": 9
+      },
+      {
+        "canonical_class_count": 21,
+        "even_edge_classes": 11,
+        "mapping_is_bijective": true,
+        "odd_edge_classes": 10,
+        "order": 5,
+        "source_class_count": 21
+      },
+      {
+        "canonical_class_count": 62,
+        "even_edge_classes": 31,
+        "mapping_is_bijective": true,
+        "odd_edge_classes": 31,
+        "order": 6,
+        "source_class_count": 62
+      }
+    ],
+    "polarization": "q(u+v)=q(u)+q(v)+u dot v mod 2",
+    "quadratic_refinement": "q(y)=wt(y)/2 mod 2 on the even code R=im(A)",
+    "row_facts": "q(row_i(A))=14/2=1 mod 2 and row_i dot row_j=A_ij",
+    "subset_identity": "q(A 1_S)=|S|+e(G[S]) mod 2"
+  },
+  "small_exact_transform_unit": {
+    "A_one_equals_zero_mod_2": true,
+    "A_squared_equals_A_mod_2": true,
+    "all_16_transform_rows_pass": true,
+    "matrix": "adjacency(K3)",
+    "table": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "transform_convention": "B[i,j]=2^-n sum_(a,b) K_i(b) K_j(a) B[a,b]"
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "binary_code_realizability": "UNKNOWN",
+    "formal_integral_feasibility": "UNKNOWN",
+    "formal_rational_feasibility": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "strongly_regular_graph_realizability": "UNKNOWN"
+  },
+  "target_n3_equation": {
+    "equation": "sum_(j even) (-1)^(j/2) B[6,j] = 2024484 + (512/3)*n3",
+    "solved_for_n3": "n3=(3/512)*(sum_j (-1)^(j/2)B[6,j]-2024484)",
+    "wave21_replay_exact": true
+  }
+}

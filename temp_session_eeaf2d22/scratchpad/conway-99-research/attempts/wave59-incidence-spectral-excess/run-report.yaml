@@ -1,0 +1,80 @@
+role: proof_b
+date_utc: "2026-07-27T21:14:43Z"
+git_commit: "4bb1989e9e286b2ec753a855db58ad584e31f63a"
+claim_label: DERIVED
+scope: >-
+  Conditional point-triangle incidence spectrum, distance layers,
+  triangle-halved-graph spectral excess, exact defect matrices,
+  pair-neighborhood Gram rank, Ihara-Bass moments, and cage comparison for
+  the prism-free endpoint of a hypothetical srg(99,14,1,2).
+inputs:
+  - path: attempts/wave59-incidence-spectral-excess/input-freeze.sha256
+    sha256: be9bcfe48663ec7135f5f219df3e7044695c18b3c0568fe0b2119d57960887f7
+  - path: attempts/wave53-multi-root-wl/exact-result.json
+    sha256: d99d89ef56cbd1f603cc8668b340bd7ad20993570899eaf556ee4c9a7f400717
+  - path: verification/wave53-multi-root-wl/independent-result.json
+    sha256: c3fdc9d6e29ce64ef0327873364d17985806854475b383ac24e512bd20322862
+  - path: "https://www.combinatorics.org/ojs/index.php/eljc/article/download/v20i3p21/pdf/"
+    sha256: 1ba19437e449bbc75474242ce0f52f24d9934dc02912d67a46c16afb6151c038
+method: >-
+  Derive the point-triangle incidence matrix identities from the SRG
+  parameters; count every rooted distance layer and B/C/D relation without
+  transitivity; use exact rational Gram-Schmidt for the regular triangle
+  graph predistance polynomials; evaluate relation-specific second- and
+  third-walk counts; compute the exact distance-matrix projection defect;
+  build a binary pair-neighborhood Gram matrix; specialize the Ihara-Bass
+  determinant and extract short nonbacktracking cycle counts; and check the
+  hypotheses of the ordinary and semiregular spectral-excess theorems
+  separately.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave59-incidence-spectral-excess\incidence_spectral.py --verify attempts\wave59-incidence-spectral-excess\exact-result.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave59-incidence-spectral-excess -p "test_*.py" -v
+outputs:
+  - path: attempts/wave59-incidence-spectral-excess/incidence_spectral.py
+    sha256: 85bc13d9cca0c4add32393f8c8897980c21172988033a6d01a1db5f1ac165df8
+  - path: attempts/wave59-incidence-spectral-excess/test_incidence_spectral.py
+    sha256: 28df3af5affedfe1fdb23bb6d58eacfd8df8b33d5847b22eaaa1a4da7f1ec629
+  - path: attempts/wave59-incidence-spectral-excess/exact-result.json
+    sha256: 7954daa92f8cb4a400ae8f9f5bfb4d4edb10ad42361872178eb538d35edc1d81
+  - path: attempts/wave59-incidence-spectral-excess/derivation.md
+    sha256: b16212c624c80bddbb67ef4cee3440793fa20aa2b17ef25be068e40fad74d170
+  - path: attempts/wave59-incidence-spectral-excess/failed-routes.md
+    sha256: b203f8d34c9ae54666d697a8ff0e25381eaf20d680a6beebf39d1d5bff566d18
+  - path: attempts/wave59-incidence-spectral-excess/README.md
+    sha256: 38ae30cd722c190a6f0b284010f2616b5068ede1a9e4cc989bba7c0ec6b31fa2
+  - path: attempts/wave59-incidence-spectral-excess/test-results.txt
+    sha256: 4c18d9928fb3597881716dfe98286cf5f389327bcf098d208b337bbac4340320
+  - path: agents/2026-07-27-wave59-incidence-spectral-excess.md
+    sha256: 44462f0755dddba59fdc1a2c2f8387c31f45c147b4dfe45066fcdac3ecca0e4a
+tests:
+  passed: 22
+  failed: 0
+  memory:
+    required_free_percent: 15
+    minimum_observed_free_percent: 42.65
+result:
+  incidence_spectrum: "+/-sqrt(21)^1, +/-sqrt(10)^54, +/-sqrt(3)^44, 0^132"
+  incidence_girth: 8
+  incidence_diameter: 6
+  point_root_distance_regular: true
+  triangle_root_distance_regular: false
+  triangle_line_spectral_excess: 50
+  triangle_line_actual_excess: 32
+  spectral_excess_gap: 18
+  distance_projection_residual_norm_squared: "288/25"
+  pair_neighborhood_gram_rank: 231
+  short_cycle_counts:
+    C8: 2079
+    C10: 33264
+    C12: 250866
+    C14: 2494800
+status:
+  endpoint_excluded: false
+  upper_bound_improved_below_4158: false
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - Discovery cannot verify itself.
+  - Strict spectral-excess inequality proves non-distance-regularity, not nonexistence.
+  - The B/C/D matrices are not assumed to commute or form an association scheme.
+  - No graph, endpoint exclusion, strict n3 upper bound, or novelty claim follows.

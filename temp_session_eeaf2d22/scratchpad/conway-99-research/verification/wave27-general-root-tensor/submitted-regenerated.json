@@ -1,0 +1,1098 @@
+{
+  "ADE_discriminant_screen": {
+    "allowed_irreducible_components": [
+      {
+        "determinant": 3,
+        "rank": 2,
+        "type": "A2"
+      },
+      {
+        "determinant": 7,
+        "rank": 6,
+        "type": "A6"
+      },
+      {
+        "determinant": 21,
+        "rank": 20,
+        "type": "A20"
+      },
+      {
+        "determinant": 3,
+        "rank": 6,
+        "type": "E6"
+      },
+      {
+        "determinant": 1,
+        "rank": 8,
+        "type": "E8"
+      }
+    ],
+    "necessary_integrality": "21*R^-1 is integral",
+    "rank_range_checked": [
+      1,
+      44
+    ],
+    "rejected_component_count": 83,
+    "rejected_components": [
+      "A1",
+      "A3",
+      "A4",
+      "A5",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A17",
+      "A18",
+      "A19",
+      "A21",
+      "A22",
+      "A23",
+      "A24",
+      "A25",
+      "A26",
+      "A27",
+      "A28",
+      "A29",
+      "A30",
+      "A31",
+      "A32",
+      "A33",
+      "A34",
+      "A35",
+      "A36",
+      "A37",
+      "A38",
+      "A39",
+      "A40",
+      "A41",
+      "A42",
+      "A43",
+      "A44",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "D19",
+      "D20",
+      "D21",
+      "D22",
+      "D23",
+      "D24",
+      "D25",
+      "D26",
+      "D27",
+      "D28",
+      "D29",
+      "D30",
+      "D31",
+      "D32",
+      "D33",
+      "D34",
+      "D35",
+      "D36",
+      "D37",
+      "D38",
+      "D39",
+      "D40",
+      "D41",
+      "D42",
+      "D43",
+      "D44",
+      "E7"
+    ]
+  },
+  "base_commit": "2ac11809fafee7ab752965ae49a96e922859b5ee",
+  "claim": {
+    "corollary": "an orthogonal A6 summand is impossible because its local pure-cubic floor is at least 66 while the global trace is 60",
+    "endpoint_status": "UNKNOWN",
+    "full_ADE_conditional": "if the full scaled-dual lattice is an orthogonal ADE root lattice, only h=21 and A20 orthogonal_sum E8^3 survives the current component screen",
+    "label": "DERIVED",
+    "novelty_status": "UNKNOWN",
+    "primary": "a full endpoint projector/Schur origin cannot have an orthogonal E6 summand: its local tensor floor is 24 while the rank-38 complement forces a local upper bound of 22"
+  },
+  "frozen_inputs": {
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+    "verification/wave26-a2-cubic-obstruction/2026-07-23T231001Z-audit.md": "883f48e70336b87955f5c2a115ac8b137169310c6f5ef91fe4581cb1b6c10465",
+    "verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md": "5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3"
+  },
+  "full_rank_44_ADE_screen": {
+    "assumption": "the entire rank-44 scaled-dual form is an orthogonal direct sum of irreducible ADE root lattices",
+    "classified_cases": [
+      {
+        "components": {
+          "A2": 2,
+          "E8": 5
+        },
+        "h": 9,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "E6": 2,
+          "E8": 4
+        },
+        "h": 9,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_E6_LOCAL_FLOOR_24_VS_GLOBAL_CAP_22"
+      },
+      {
+        "components": {
+          "A20": 1,
+          "E8": 3
+        },
+        "h": 21,
+        "local_trace_floor": 48,
+        "status": "SURVIVES_THIS_CONDITIONAL_SCREEN"
+      },
+      {
+        "components": {
+          "A6": 1,
+          "E6": 1,
+          "E8": 4
+        },
+        "h": 21,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A6_CUBIC_FLOOR_66"
+      },
+      {
+        "components": {
+          "A6": 2,
+          "E8": 4
+        },
+        "h": 49,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A6_CUBIC_FLOOR_66"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "E6": 3,
+          "E8": 3
+        },
+        "h": 81,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 3,
+          "E6": 1,
+          "E8": 4
+        },
+        "h": 81,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A20": 1,
+          "E6": 1,
+          "E8": 2
+        },
+        "h": 189,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A6": 1,
+          "E6": 2,
+          "E8": 3
+        },
+        "h": 189,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 3,
+          "A6": 1,
+          "E8": 4
+        },
+        "h": 189,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A20": 1,
+          "A6": 1,
+          "E8": 2
+        },
+        "h": 441,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A6": 2,
+          "E6": 1,
+          "E8": 3
+        },
+        "h": 441,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 2,
+          "E6": 4,
+          "E8": 2
+        },
+        "h": 729,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 4,
+          "E6": 2,
+          "E8": 3
+        },
+        "h": 729,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "A2": 6,
+          "E8": 4
+        },
+        "h": 729,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      },
+      {
+        "components": {
+          "E6": 6,
+          "E8": 1
+        },
+        "h": 729,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_E6_LOCAL_FLOOR_24_VS_GLOBAL_CAP_22"
+      },
+      {
+        "components": {
+          "A2": 1,
+          "A6": 3,
+          "E8": 3
+        },
+        "h": 1029,
+        "local_trace_floor": null,
+        "status": "EXCLUDED_BY_A2_FRAME_CAPACITY"
+      }
+    ],
+    "component_rules": {
+      "A2": "excluded by the 21-versus-18 projector-frame capacity",
+      "A20": "AM-GM even-trace baseline at least 24",
+      "A6": "excluded because its pure-cubic floor is 66 > 60",
+      "E6": "excluded: local tensor floor 24 exceeds the global complement upper bound 22",
+      "E8": "AM-GM baseline at least 8"
+    },
+    "conditional_conclusion": "only h=21 with S isometric to A20 orthogonal_sum E8^3 survives this full-ADE screen",
+    "decompositions": {
+      "1029": [
+        {
+          "A2": 1,
+          "A6": 3,
+          "E8": 3
+        }
+      ],
+      "189": [
+        {
+          "A2": 1,
+          "A20": 1,
+          "E6": 1,
+          "E8": 2
+        },
+        {
+          "A2": 1,
+          "A6": 1,
+          "E6": 2,
+          "E8": 3
+        },
+        {
+          "A2": 3,
+          "A6": 1,
+          "E8": 4
+        }
+      ],
+      "21": [
+        {
+          "A20": 1,
+          "E8": 3
+        },
+        {
+          "A6": 1,
+          "E6": 1,
+          "E8": 4
+        }
+      ],
+      "441": [
+        {
+          "A2": 1,
+          "A20": 1,
+          "A6": 1,
+          "E8": 2
+        },
+        {
+          "A2": 1,
+          "A6": 2,
+          "E6": 1,
+          "E8": 3
+        }
+      ],
+      "49": [
+        {
+          "A6": 2,
+          "E8": 4
+        }
+      ],
+      "729": [
+        {
+          "A2": 2,
+          "E6": 4,
+          "E8": 2
+        },
+        {
+          "A2": 4,
+          "E6": 2,
+          "E8": 3
+        },
+        {
+          "A2": 6,
+          "E8": 4
+        },
+        {
+          "E6": 6,
+          "E8": 1
+        }
+      ],
+      "81": [
+        {
+          "A2": 1,
+          "E6": 3,
+          "E8": 3
+        },
+        {
+          "A2": 3,
+          "E6": 1,
+          "E8": 4
+        }
+      ],
+      "9": [
+        {
+          "A2": 2,
+          "E8": 5
+        },
+        {
+          "E6": 2,
+          "E8": 4
+        }
+      ]
+    },
+    "survivors_of_this_screen": [
+      {
+        "components": {
+          "A20": 1,
+          "E8": 3
+        },
+        "h": 21,
+        "local_trace_floor": 48,
+        "status": "SURVIVES_THIS_CONDITIONAL_SCREEN"
+      }
+    ]
+  },
+  "general_frame_capacity": {
+    "A2_specialization": "42 <= 36 is false because alpha4(A2)=0",
+    "energy_identity": "2*n2 + 4*n4 = 21*rank(R)",
+    "necessary_capacity": "21*rank(R) <= 6*number_of_oriented_roots(R) + 4*alpha4(R)",
+    "norm_four_code": "alpha4(R) is the maximum number of norm-four vectors having all mutual inner products in {-2,-1,0,1}",
+    "root_fiber_bound": "each oriented root supports at most three norm-two projection rows under the off-diagonal alphabet {-2,-1,0,1}",
+    "setup": "R is an orthogonal even root-lattice summand; n2 and n4 count rows whose R-projection has norm two and four",
+    "warning": "for A3 and larger, norm-four projections exist and the A2 incidence count cannot be copied without alpha4(R)"
+  },
+  "hostile_controls": {
+    "naive_E6_algebraic_trace_floor": {
+      "counterexample": {
+        "B_equals_I_plus_8P": [
+          [
+            3,
+            -2,
+            -6,
+            -4,
+            -2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -2,
+            2,
+            7,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            -2,
+            -6,
+            -4,
+            -2,
+            1
+          ]
+        ],
+        "B_mod_2": "identity",
+        "B_spectrum": {
+          "1": 5,
+          "9": 1
+        },
+        "E6_cartan": [
+          [
+            2,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            2,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            -1,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ],
+        "H_equals_E6_inverse": [
+          [
+            "4/3",
+            "5/3",
+            "2",
+            "4/3",
+            "2/3",
+            "1"
+          ],
+          [
+            "5/3",
+            "10/3",
+            "4",
+            "8/3",
+            "4/3",
+            "2"
+          ],
+          [
+            "2",
+            "4",
+            "6",
+            "4",
+            "2",
+            "3"
+          ],
+          [
+            "4/3",
+            "8/3",
+            "4",
+            "10/3",
+            "5/3",
+            "2"
+          ],
+          [
+            "2/3",
+            "4/3",
+            "2",
+            "5/3",
+            "4/3",
+            "1"
+          ],
+          [
+            "1",
+            "2",
+            "3",
+            "2",
+            "1",
+            "2"
+          ]
+        ],
+        "P_squared_equals_P": true,
+        "Q_equals_HB": [
+          [
+            2,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            4,
+            6,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            12,
+            8,
+            4,
+            3
+          ],
+          [
+            0,
+            4,
+            8,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            2,
+            4,
+            3,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            3,
+            2,
+            1,
+            2
+          ]
+        ],
+        "Q_integral_even_positive_definite": true,
+        "det_B": 9,
+        "det_Q": 3,
+        "refutation": "compression trace 14 is below the verified E6 pure-cubic floor 24",
+        "status": "VALID_ALGEBRAIC_BLOCK_BUT_REFUTED_AS_PROJECTOR_SCHUR_ORIGIN",
+        "trace_B": 14,
+        "v": [
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "vT_H_v": "4/3"
+      },
+      "counterexample_trace": 14,
+      "proposed_floor": 18,
+      "status": "REFUTED"
+    },
+    "nonorthogonal_root_subsystem": {
+      "status": "NO_CLAIM",
+      "warning": "projection coordinates can lie in a dual/glue coset and need not satisfy sum z_i z_i^T=21*R^-1"
+    },
+    "norm_four_vectors": {
+      "tensor_parity_method_uses_norm_four_vectors_safely": true,
+      "warning": "A3 and larger root lattices contain norm-four vectors, so the A2 root-only incidence proof does not generalize"
+    },
+    "omit_second_moment": {
+      "status": "FRAME_IDENTITY_IS_ACTIVE",
+      "zero_tensor_allowed": true
+    },
+    "replace_frame_scale_21_by_14_for_A6": {
+      "all_repeated_tensor_parities_even": true,
+      "status": "ODD_SCALE_IS_ACTIVE",
+      "zero_tensor_allowed_by_congruence_relaxation": true
+    },
+    "replace_frame_scale_21_by_18_for_E6": {
+      "all_repeated_tensor_parities_even": true,
+      "status": "ODD_SCALE_IS_ACTIVE",
+      "zero_tensor_allowed_by_congruence_relaxation": true
+    }
+  },
+  "limitations": [
+    "The component theorems require an orthogonal integral summand, not merely a nonorthogonal root subsystem.",
+    "The full-ADE census is conditional on the entire scaled-dual form being an orthogonal sum of irreducible ADE root lattices.",
+    "A20 orthogonal_sum E8^3 survives this screen; no row frame, Schur certificate, primitive embedding, or graph is constructed.",
+    "The parity sphere searches use necessary conditions only. Their empty balls prove lower bounds; a nonempty ball would not by itself construct projected rows.",
+    "No surviving arithmetic h row is excluded without the stated root-lattice decomposition assumptions.",
+    "n3=708, Conway-99 existence, and literature novelty remain UNKNOWN."
+  ],
+  "tensor_component_floors": {
+    "A6": {
+      "actual_energy_floor": 66,
+      "closed_ball_empty": true,
+      "compression_trace_floor": 66,
+      "enumeration": {
+        "accepted_partial_nodes": 105185,
+        "arithmetic": "fractions.Fraction plus exact integer isqrt bounds",
+        "basis_order": "lexicographic combinations_with_replacement",
+        "bound": 60,
+        "complete_leaves": 0,
+        "dimension": 56,
+        "found_tensor_in_closed_ball": false,
+        "gram_sha256": "f1877b7d31e982e0e7bafba7f410ad36d18bb81853efa237c770c2fa0341e7e2",
+        "ldl_reconstruction": "PASS",
+        "ldl_sha256": "5ee224e10d2c243fc50f5032f1fab3f2e705a5f1e52ea90781bbfafcbdccaa8f",
+        "modulus_counts": {
+          "1": 20,
+          "2": 36
+        },
+        "odd_repeated_coordinate_count": 12,
+        "recursion_order": "indices descending",
+        "scale": 21,
+        "second_moment": [
+          [
+            18,
+            15,
+            12,
+            9,
+            6,
+            3
+          ],
+          [
+            15,
+            30,
+            24,
+            18,
+            12,
+            6
+          ],
+          [
+            12,
+            24,
+            36,
+            27,
+            18,
+            9
+          ],
+          [
+            9,
+            18,
+            27,
+            36,
+            24,
+            12
+          ],
+          [
+            6,
+            12,
+            18,
+            24,
+            30,
+            15
+          ],
+          [
+            3,
+            6,
+            9,
+            12,
+            15,
+            18
+          ]
+        ],
+        "witness_norm": null
+      },
+      "global_trace": 60,
+      "orthogonal_A6_summand": "REFUTED",
+      "parity_coset_closed_ball_cap": 60
+    },
+    "E6": {
+      "actual_energy_floor": 24,
+      "closed_ball_empty": true,
+      "compression_trace_floor": 24,
+      "enumeration": {
+        "accepted_partial_nodes": 10011,
+        "arithmetic": "fractions.Fraction plus exact integer isqrt bounds",
+        "basis_order": "lexicographic combinations_with_replacement",
+        "bound": 18,
+        "complete_leaves": 0,
+        "dimension": 56,
+        "found_tensor_in_closed_ball": false,
+        "gram_sha256": "9608fd7ce190259ba86afdb8561525dc698570533aaac5b92eefc382d5477f8b",
+        "ldl_reconstruction": "PASS",
+        "ldl_sha256": "89b34394966b51f6d3d8390ff84f600968da97c9cdb96d46f10d8edd397b4a6d",
+        "modulus_counts": {
+          "1": 20,
+          "2": 36
+        },
+        "odd_repeated_coordinate_count": 10,
+        "recursion_order": "indices descending",
+        "scale": 21,
+        "second_moment": [
+          [
+            28,
+            35,
+            42,
+            28,
+            14,
+            21
+          ],
+          [
+            35,
+            70,
+            84,
+            56,
+            28,
+            42
+          ],
+          [
+            42,
+            84,
+            126,
+            84,
+            42,
+            63
+          ],
+          [
+            28,
+            56,
+            84,
+            70,
+            35,
+            42
+          ],
+          [
+            14,
+            28,
+            42,
+            35,
+            28,
+            21
+          ],
+          [
+            21,
+            42,
+            63,
+            42,
+            21,
+            42
+          ]
+        ],
+        "witness_norm": null
+      },
+      "global_complement_upper_bound": 22,
+      "orthogonal_E6_summand": "REFUTED",
+      "parity_coset_closed_ball_cap": 18
+    },
+    "general_compression": "tr(R*Q_RR) >= ||sum_i z_i^(tensor 3)||^2",
+    "global_complement_budget": "a rank-r orthogonal summand has compression trace at most 60-(44-r)=r+16 because the complementary compression has positive integral determinant and trace at least 44-r",
+    "parity_identity": "P_aab congruent to (21*R^-1)_ab modulo 2",
+    "zero_sum_energy_divisibility": {
+      "all_integer_proof": "k^3-k=k(k-1)(k+1), a product of three consecutive integers and therefore divisible by both 2 and 3",
+      "complete_residue_check_modulo_6": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "conclusion": "every actual local pure-cubic energy is in 6*Z",
+      "congruence": "energy is congruent modulo 6 to ||sum_i z_i||^2",
+      "identity": "||sum_i z_i^(tensor 3)||^2 = sum_(i,j)<z_i,z_j>^3",
+      "projector_zero_sum": "M*1=0 and full column rank imply sum_i z_i=0 on every transported orthogonal summand"
+    }
+  },
+  "trace_14_E6_hostile_block": {
+    "B_equals_I_plus_8P": [
+      [
+        3,
+        -2,
+        -6,
+        -4,
+        -2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        2,
+        7,
+        4,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        -2,
+        -6,
+        -4,
+        -2,
+        1
+      ]
+    ],
+    "B_mod_2": "identity",
+    "B_spectrum": {
+      "1": 5,
+      "9": 1
+    },
+    "E6_cartan": [
+      [
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        2,
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1,
+        2,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        2
+      ]
+    ],
+    "H_equals_E6_inverse": [
+      [
+        "4/3",
+        "5/3",
+        "2",
+        "4/3",
+        "2/3",
+        "1"
+      ],
+      [
+        "5/3",
+        "10/3",
+        "4",
+        "8/3",
+        "4/3",
+        "2"
+      ],
+      [
+        "2",
+        "4",
+        "6",
+        "4",
+        "2",
+        "3"
+      ],
+      [
+        "4/3",
+        "8/3",
+        "4",
+        "10/3",
+        "5/3",
+        "2"
+      ],
+      [
+        "2/3",
+        "4/3",
+        "2",
+        "5/3",
+        "4/3",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "1",
+        "2"
+      ]
+    ],
+    "P_squared_equals_P": true,
+    "Q_equals_HB": [
+      [
+        2,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        4,
+        6,
+        4,
+        2,
+        2
+      ],
+      [
+        0,
+        6,
+        12,
+        8,
+        4,
+        3
+      ],
+      [
+        0,
+        4,
+        8,
+        6,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        4,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        2,
+        1,
+        2
+      ]
+    ],
+    "Q_integral_even_positive_definite": true,
+    "det_B": 9,
+    "det_Q": 3,
+    "refutation": "compression trace 14 is below the verified E6 pure-cubic floor 24",
+    "status": "VALID_ALGEBRAIC_BLOCK_BUT_REFUTED_AS_PROJECTOR_SCHUR_ORIGIN",
+    "trace_B": 14,
+    "v": [
+      -1,
+      0,
+      1,
+      0,
+      0,
+      -1
+    ],
+    "vT_H_v": "4/3"
+  }
+}

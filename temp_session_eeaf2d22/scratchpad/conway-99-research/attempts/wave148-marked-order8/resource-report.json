@@ -1,0 +1,30 @@
+{
+  "format": "wave148-resource-report-v1",
+  "date_utc": "2026-07-28T11:32:55Z",
+  "memory_policy": {
+    "minimum_free_physical_memory_percent": 15.0,
+    "enforced_by_checker": true,
+    "minimum_free_percent_in_recorded_samples": 36.9,
+    "minimum_free_gib_in_recorded_samples": 23.3,
+    "total_physical_gib": 63.2
+  },
+  "generation": {
+    "command": ".\\.venv\\Scripts\\python.exe -B attempts\\wave148-marked-order8\\exact_check.py --output attempts\\wave148-marked-order8\\exact-results.json",
+    "elapsed_seconds": 11.806,
+    "result": "PASS"
+  },
+  "focused_test_replay": {
+    "command": ".\\.venv\\Scripts\\python.exe -B -m unittest attempts.wave148-marked-order8.test_exact_check -v",
+    "tests": 5,
+    "elapsed_seconds": 11.696,
+    "result": "PASS"
+  },
+  "numerical_solver": {
+    "run": false,
+    "status": "NOT_RUN"
+  },
+  "limitations": [
+    "Memory samples were discrete, not continuous peak telemetry.",
+    "The host was shared, so memory changes are not attributed solely to this package."
+  ]
+}

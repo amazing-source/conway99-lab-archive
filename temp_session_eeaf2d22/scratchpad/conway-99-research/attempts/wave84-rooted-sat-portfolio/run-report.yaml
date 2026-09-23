@@ -1,0 +1,26 @@
+role: construction
+date_utc: 2026-07-28T00:25:48Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: UNKNOWN
+scope: >-
+  Four bounded complete-domain SAT runs on the exact Wave 34 rooted
+  srg(99,14,1,2) formula, with no additional target symmetry assumption.
+inputs:
+  - path: attempts/wave34-rooted-encoding/rooted-complete.cnf
+    sha256: 2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3
+method: >-
+  Run CaDiCaL 1.7.3 in default, SAT-targeted, and UNSAT-targeted
+  configurations and independently built Kissat 4.0.4 in its default
+  configuration, each with a 900-second time limit. Require a complete model
+  or independently checkable proof for any terminal mathematical status.
+command: >-
+  See protocol.md for the four exact repository-relative replay commands.
+outputs:
+  - path: attempts/wave84-rooted-sat-portfolio/exact-results.json
+    sha256: 4063df76d2363baa9437da9a6bd15ed44d7c68d6ac56517a8039d66c5b3aedc8
+limitations:
+  - All four runs ended UNKNOWN.
+  - No model, decoded graph, UNSAT proof, or proof-checker result exists.
+  - Raw local transcripts are retained only by SHA-256 because they contain
+    absolute host paths.
+  - Longer continuation processes are outside this checkpoint.

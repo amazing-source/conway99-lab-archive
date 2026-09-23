@@ -1,0 +1,32 @@
+role: proof_a
+date_utc: 2026-07-27T02:18:52Z
+git_commit: 019b78ac9a5170107d105ad4d8fcd27f55dde642
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free endpoint n3=4158: exact simultaneous B/H
+  overlap and edge decomposition, plus the centered characteristic-three
+  rank-twelve equality case.
+inputs:
+  attempts/wave38-higher-order/exact-results.json: 7d3229234e5eda3f432ff88eb07670a18611b37a64ef3a7949f4a505f274c782
+  verification/wave38-higher-order/independent-results.json: c0d56150980fe874ce1fa60eab9423da037400b7dcc17b5593380b2f03b5a0cb
+  attempts/wave36-block-compatibility/exact-results.json: adab814da773e5a4ce2b98b4b8aa20027dbec9d93d446d3e1e85adaa899339a9
+  verification/wave36-block-compatibility/independent-results.json: b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4
+method: >-
+  Exact integral reflection row arithmetic; finite-field centering;
+  coordinate-DP reconstruction of the five-relation oriented isotropic
+  scheme; ternary code support recovery; and exact XX/XY/YY block counting.
+command: |
+  .\.venv\Scripts\python.exe -B attempts\wave39-simultaneous-bh\exact_check.py --verify attempts\wave39-simultaneous-bh\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest -v attempts\wave39-simultaneous-bh\test_exact_check.py
+outputs:
+  attempts/wave39-simultaneous-bh/exact_check.py: 87e116e40672a8f47774db8df46ce09ceb60030bceb8a374d8d2579cc75e5c3a
+  attempts/wave39-simultaneous-bh/test_exact_check.py: 76e68f50ab55f37a11d61eac66a5e2fd439b89398f79e4da501f89c47d9b598d
+  attempts/wave39-simultaneous-bh/exact-results.json: 1aab10ae2bf080d682a22d6c1e66a29f001ab2a889dc6b190b67fe0a0e0ad77d
+  attempts/wave39-simultaneous-bh/README.md: 0ed9309680de2f452d23c60bf1c34a6b9442221d65cec287b7c130690c88018d
+  attempts/wave39-simultaneous-bh/failed-routes.md: 75e79cb75758ab6f3c9f42c862411039fd3e69a63979c20a20b8d2461e007b62
+limitations:
+  - Discovery cannot verify itself; every new claim requires independent reconstruction.
+  - The centered oriented-scheme transforms are all positive and do not exclude rank twelve.
+  - The B/H overlap decomposition assumes a full simultaneous completion and does not construct one.
+  - The frozen rank-ten core remains only a local relaxation.
+  - No endpoint exclusion, improved n3 bound, Conway graph, or novelty claim is made.

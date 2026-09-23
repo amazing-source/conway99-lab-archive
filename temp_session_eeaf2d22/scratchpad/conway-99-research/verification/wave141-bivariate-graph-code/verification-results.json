@@ -1,0 +1,419 @@
+{
+  "N3_output_detail": {
+    "N3_sign_matches": true,
+    "consequence": "Each N3 six-set contributes to B[6,56], so B[6,56]>=n3.",
+    "inside_degree_distribution": {
+      "2": 2,
+      "3": 4
+    },
+    "output_weight_wt_A1S": 56,
+    "outside_neighbor_profile": {
+      "0": 33,
+      "1": 52,
+      "2": 8
+    }
+  },
+  "bivariate_transform": {
+    "D8": {
+      "Burnside_traces": {
+        "axis_reflection_1": 0,
+        "axis_reflection_2": 0,
+        "diagonal_reflection_1": 100,
+        "diagonal_reflection_2": 100,
+        "half_turn": 0,
+        "identity": 10000,
+        "quarter_turn": 0,
+        "three_quarter_turn": 0
+      },
+      "additional_rank_after_input_complement": 1225,
+      "combined_equality_rank": 3725,
+      "input_complement_dimension": 2500,
+      "invariant_dimension": 1275,
+      "output_even_dimension": 5000,
+      "side": 100
+    },
+    "definition": "B[i,j]=#{x: wt(x)=i, wt(Ax)=j}",
+    "marginals_and_symmetries": {
+      "input": "sum_j B[i,j]=binom(n,i)",
+      "input_complement": "B[i,j]=B[n-i,j] when A1=0",
+      "output": "sum_i B[i,j]=2^(n-rank(A))*A_j",
+      "output_even": "B[i,j]=0 for odd j",
+      "transform": "B[i,j]=2^-n sum_(a,b) K_i(b) K_j(a) B[a,b]"
+    },
+    "small_controls": [
+      {
+        "D8_invariant_dimension": 3,
+        "direct_transform_rank_after_complement": 1,
+        "direct_transform_rank_even_output": 5,
+        "even_rows": true,
+        "expected_transform_rank_after_complement": 1,
+        "expected_transform_rank_even_output": 5,
+        "idempotent_mod_2": true,
+        "input_complement_pass": true,
+        "input_marginals_pass": true,
+        "kills_one": true,
+        "matrix": "adjacency(K3)",
+        "order": 3,
+        "output_even_pass": true,
+        "output_marginals_pass": true,
+        "rank": 2,
+        "symmetric": true,
+        "table": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "transform_pass": true
+      },
+      {
+        "D8_invariant_dimension": 6,
+        "direct_transform_rank_after_complement": 3,
+        "direct_transform_rank_even_output": 12,
+        "even_rows": true,
+        "expected_transform_rank_after_complement": 3,
+        "expected_transform_rank_even_output": 12,
+        "idempotent_mod_2": true,
+        "input_complement_pass": true,
+        "input_marginals_pass": true,
+        "kills_one": true,
+        "matrix": "adjacency(K5)",
+        "order": 5,
+        "output_even_pass": true,
+        "output_marginals_pass": true,
+        "rank": 4,
+        "symmetric": true,
+        "table": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "transform_pass": true
+      }
+    ]
+  },
+  "discovery_exact_projection_matches": true,
+  "exact_low_rows": {
+    "exactness_boundary": "Rows 0 through 3 are exact.  For larger subsets, full output weight generally needs embedding/common-neighbor data; only the signed mod-4 shell is derived here.",
+    "rows": {
+      "0": {
+        "0": 1
+      },
+      "1": {
+        "14": 99
+      },
+      "2": {
+        "24": 4158,
+        "26": 693
+      },
+      "3": {
+        "30": 70686,
+        "32": 41580,
+        "34": 36036,
+        "36": 8547
+      }
+    },
+    "triple_derivation": {
+      "independent_total": 98406,
+      "independent_with_common_neighbor": 27720,
+      "induced_paths": 8316,
+      "one_edge_total": 49896,
+      "one_edge_with_common_neighbor": 8316,
+      "triangles": 231
+    }
+  },
+  "format": "wave141-independent-verification-v1",
+  "locally_admissible_alignment": {
+    "N23_repair": {
+      "column": 23,
+      "corrected_column_sum": 6,
+      "row": 7
+    },
+    "N3": {
+      "canonical_mask": 5941,
+      "cross_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "cross_edges_form_matching": true,
+      "edge_count": 8,
+      "signed_shell_sign": 1,
+      "source_index": 3,
+      "triangles": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    "class_counts": {
+      "4": 9,
+      "5": 21,
+      "6": 62
+    },
+    "five_to_six_decks_pass": true,
+    "four_to_five_decks_pass": true,
+    "mapping_bijections": {
+      "4": true,
+      "5": true,
+      "6": true
+    }
+  },
+  "nonnegativity_only_bound": {
+    "improves_known_upper": false,
+    "integer_upper": 6553738,
+    "known_upper": 4158,
+    "multiple_of_3_upper": 6553737,
+    "rational_upper": "838878579/128"
+  },
+  "numerical_scout": {
+    "accepted_as_feasible": false,
+    "accepted_as_infeasible": false,
+    "evidentiary_status": "NONE",
+    "reason": "No exact rational primal or Farkas dual; active-row points violate inactive transform equations and later statuses are floating UNKNOWN."
+  },
+  "scope_boundary": {
+    "Conway_99": "UNKNOWN",
+    "formal_integral_feasibility": "UNKNOWN",
+    "formal_rational_feasibility": "UNKNOWN",
+    "full_output_weight_by_six_vertex_class": "NOT_DERIVED",
+    "graph_realizability": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "signed_output_shell_by_six_vertex_class": "VERIFIED"
+  },
+  "sealed_package": {
+    "entries": [
+      {
+        "actual_sha256": "15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204",
+        "expected_sha256": "15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204",
+        "pass": true,
+        "path": "exact_check.py"
+      },
+      {
+        "actual_sha256": "351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e",
+        "expected_sha256": "351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e",
+        "pass": true,
+        "path": "exact-results.json"
+      },
+      {
+        "actual_sha256": "bbd6da2fa9dd7f27a28d5521d5c91e8b1aea1acb2ed5eb217db37ff935e0c0ba",
+        "expected_sha256": "bbd6da2fa9dd7f27a28d5521d5c91e8b1aea1acb2ed5eb217db37ff935e0c0ba",
+        "pass": true,
+        "path": "input-freeze.sha256"
+      },
+      {
+        "actual_sha256": "0ebefeed03cb7f9f8b602c91f7cda064dab11689133b64aca69ef2463e2a3305",
+        "expected_sha256": "0ebefeed03cb7f9f8b602c91f7cda064dab11689133b64aca69ef2463e2a3305",
+        "pass": true,
+        "path": "numeric_scout.py"
+      },
+      {
+        "actual_sha256": "d2c963f089a5819a297a88c16dbc7edcf0448cb8d9f1b97d9734b9f5b3fae00e",
+        "expected_sha256": "d2c963f089a5819a297a88c16dbc7edcf0448cb8d9f1b97d9734b9f5b3fae00e",
+        "pass": true,
+        "path": "numeric-scout.json"
+      },
+      {
+        "actual_sha256": "a21d2f6a55185bef6db1fc5af517e1c995ff3bb0714ec3e9cddf2d089ee02dd8",
+        "expected_sha256": "a21d2f6a55185bef6db1fc5af517e1c995ff3bb0714ec3e9cddf2d089ee02dd8",
+        "pass": true,
+        "path": "README.md"
+      },
+      {
+        "actual_sha256": "578a95afe32d9bbc68f5a2c74341ed00eb0d210f60974cd881f8fc5d2be24605",
+        "expected_sha256": "578a95afe32d9bbc68f5a2c74341ed00eb0d210f60974cd881f8fc5d2be24605",
+        "pass": true,
+        "path": "run-report.md"
+      },
+      {
+        "actual_sha256": "a88aed33c4cf75f9d312edb6d49dd5b73836f7dd3b6b74251444f80c2c26a179",
+        "expected_sha256": "a88aed33c4cf75f9d312edb6d49dd5b73836f7dd3b6b74251444f80c2c26a179",
+        "pass": true,
+        "path": "search-status.json"
+      },
+      {
+        "actual_sha256": "27876a952dc36ed5c7dde200abfdbe5bb929744cda47ef7a76630ee2a2b4ec95",
+        "expected_sha256": "27876a952dc36ed5c7dde200abfdbe5bb929744cda47ef7a76630ee2a2b4ec95",
+        "pass": true,
+        "path": "test_exact_check.py"
+      }
+    ],
+    "entries_pass": true,
+    "entry_count": 9,
+    "expected_manifest_sha256": "75933cca692f2678bdd74190290b91eb13f6492fce52bc88e896ef7485fe06f8",
+    "manifest_pass": true,
+    "manifest_sha256": "75933cca692f2678bdd74190290b91eb13f6492fce52bc88e896ef7485fe06f8"
+  },
+  "signed_rows": {
+    "N3_source_formula": {
+      "constant": "0",
+      "n3_coefficient": "1",
+      "sign": 1
+    },
+    "affine_cancellation": {
+      "constant_total": "2024484",
+      "negative_constant_sum": "-559252386",
+      "negative_slope_sum": "0",
+      "positive_constant_sum": "561276870",
+      "positive_slope_sum": "512/3",
+      "slope_total": "512/3"
+    },
+    "all_count_totals": {
+      "0": {
+        "coefficient": "0",
+        "constant": "1",
+        "expected_binomial": "1"
+      },
+      "1": {
+        "coefficient": "0",
+        "constant": "99",
+        "expected_binomial": "99"
+      },
+      "2": {
+        "coefficient": "0",
+        "constant": "4851",
+        "expected_binomial": "4851"
+      },
+      "3": {
+        "coefficient": "0",
+        "constant": "156849",
+        "expected_binomial": "156849"
+      },
+      "4": {
+        "coefficient": "0",
+        "constant": "3764376",
+        "expected_binomial": "3764376"
+      },
+      "5": {
+        "coefficient": "0",
+        "constant": "71523144",
+        "expected_binomial": "71523144"
+      },
+      "6": {
+        "coefficient": "0",
+        "constant": "1120529256",
+        "expected_binomial": "1120529256"
+      }
+    },
+    "shells": {
+      "0": {
+        "constant": "1",
+        "n3_coefficient": "0"
+      },
+      "1": {
+        "constant": "-99",
+        "n3_coefficient": "0"
+      },
+      "2": {
+        "constant": "3465",
+        "n3_coefficient": "0"
+      },
+      "3": {
+        "constant": "-56595",
+        "n3_coefficient": "0"
+      },
+      "4": {
+        "constant": "462924",
+        "n3_coefficient": "0"
+      },
+      "5": {
+        "constant": "-1821204",
+        "n3_coefficient": "0"
+      },
+      "6": {
+        "constant": "2024484",
+        "n3_coefficient": "512/3"
+      }
+    },
+    "subset_identity": "q(A 1_S)=|S|+e(G[S]) mod 2"
+  },
+  "verdict": "PASS",
+  "wave21_prerequisite": {
+    "expected": {
+      "exact-results.json": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b",
+      "exact_check.py": "0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3"
+    },
+    "observed": {
+      "exact-results.json": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b",
+      "exact_check.py": "0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3"
+    },
+    "pass": true
+  }
+}

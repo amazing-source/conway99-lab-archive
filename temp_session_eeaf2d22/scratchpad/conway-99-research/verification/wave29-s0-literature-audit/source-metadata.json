@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "audit_date_utc": "2026-07-24",
+  "source_count": 16,
+  "sources": [
+    {
+      "id": "S01",
+      "type": "author-maintained mathematical catalogue",
+      "title": "The Lattice K12",
+      "authors_or_maintainers": ["Gabriele Nebe", "Neil J. A. Sloane"],
+      "year": 2014,
+      "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/K12.html",
+      "supports": "Authoritative catalogue metadata: rank 12, determinant 729, minimum 4, kissing number 756, integral and 3-modular.",
+      "does_not_support": "No Conway-99 endpoint, direct-sum non-realizability, block allocation, or logarithmic obstruction."
+    },
+    {
+      "id": "S02",
+      "type": "author-maintained mathematical catalogue",
+      "title": "The Lattice LAMBDA(F)",
+      "authors_or_maintainers": ["Gabriele Nebe", "Neil J. A. Sloane"],
+      "year": 2014,
+      "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/KV32F.html",
+      "supports": "Authoritative catalogue metadata: rank 32, determinant 1, minimum 4, kissing number 146880, and unimodularity; also provides provenance references.",
+      "does_not_support": "No direct sum with K12 and no Wave-29 endpoint exclusion."
+    },
+    {
+      "id": "S03",
+      "type": "peer-reviewed journal article",
+      "title": "The Coxeter-Todd lattice, the Mitchell group, and related sphere packings",
+      "authors_or_maintainers": ["John H. Conway", "N. J. A. Sloane"],
+      "year": 1983,
+      "venue": "Mathematical Proceedings of the Cambridge Philosophical Society 93, 421-440",
+      "doi": "10.1017/S0305004100060746",
+      "url": "https://doi.org/10.1017/S0305004100060746",
+      "supports": "Primary construction and study of the Coxeter-Todd lattice and its related packings.",
+      "does_not_support": "No searched metadata indicated the exact rank-44 direct-sum endpoint result."
+    },
+    {
+      "id": "S04",
+      "type": "peer-reviewed journal article",
+      "title": "\u00dcber ganzzahlige unimodulare euklidische Gitter",
+      "authors_or_maintainers": ["Helmut Koch", "Boris Venkov"],
+      "year": 1989,
+      "venue": "Journal f\u00fcr die reine und angewandte Mathematik 398, 144-168",
+      "url": "https://eudml.org/doc/153147",
+      "supports": "Primary provenance for integral unimodular Euclidean lattice work associated with the LAMBDA(F) catalogue entry.",
+      "does_not_support": "No direct-sum endpoint exclusion or Wave-29 proof signature was found."
+    },
+    {
+      "id": "S05",
+      "type": "peer-reviewed journal article and institutional preprint record",
+      "title": "\u00dcber gerade unimodulare Gitter der Dimension 32, III",
+      "authors_or_maintainers": ["Helmut Koch", "Boris Venkov"],
+      "year": 1991,
+      "venue": "Mathematische Nachrichten 152, 191-213",
+      "doi": "10.1002/mana.19911520117",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/1916/",
+      "supports": "Primary rank-32 even-unimodular lattice provenance.",
+      "does_not_support": "No K12 direct sum, projector/Schur endpoint, or determinant-log contradiction."
+    },
+    {
+      "id": "S06",
+      "type": "peer-reviewed journal article",
+      "title": "On the automorphism group of a putative Conway 99-graph",
+      "authors_or_maintainers": ["Patrick G. Cesarz", "Andrew J. Woldar"],
+      "year": 2025,
+      "venue": "Algebraic Combinatorics 8(2), 379-398",
+      "doi": "10.5802/alco.418",
+      "url": "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+      "supports": "The publisher abstract explicitly says that existence of an srg(99,14,1,2) remains an elusive open problem, and the article gives automorphism-group restrictions.",
+      "does_not_support": "It does not claim graph existence/nonexistence and does not contain the searched lattice endpoint result in its inspected metadata."
+    },
+    {
+      "id": "S07",
+      "type": "current preprint record",
+      "title": "Approaching the Conway-99 problem using SAT solvers",
+      "authors_or_maintainers": ["Ali Keramatipour"],
+      "year": 2026,
+      "identifier": "arXiv:2604.23037v2",
+      "url": "https://arxiv.org/abs/2604.23037",
+      "supports": "Current primary metadata records SAT experiments and says solvers were incapable of handling the problem in reasonable time.",
+      "does_not_support": "It does not claim a resolution. Search aggregators that listed a coauthor were disregarded in favor of the primary arXiv author record."
+    },
+    {
+      "id": "S08",
+      "type": "preprint record",
+      "title": "The Lower Bound for Number of Hexagons in Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "authors_or_maintainers": ["Reimbay Reimbayev"],
+      "year": 2024,
+      "identifier": "arXiv:2409.10620v1",
+      "url": "https://arxiv.org/abs/2409.10620",
+      "supports": "The abstract treats existence of srg(99,14,1,2) as a decades-old question and proves a hexagon lower bound for the wider family.",
+      "does_not_support": "No graph resolution or Wave-29 lattice endpoint theorem."
+    },
+    {
+      "id": "S09",
+      "type": "preprint record",
+      "title": "The Subgraphs of Order Six of the Family of Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "authors_or_maintainers": ["Reimbay Reimbayev"],
+      "year": 2025,
+      "identifier": "arXiv:2508.03377v2",
+      "url": "https://arxiv.org/abs/2508.03377",
+      "supports": "The abstract establishes order-six subgraphs for the parameter family and notes that existence of many family members is uncertain.",
+      "does_not_support": "No srg(99,14,1,2) resolution or exact lattice exclusion."
+    },
+    {
+      "id": "S10",
+      "type": "preprint record",
+      "title": "On Clique Graphs and Clique Regular Graphs",
+      "authors_or_maintainers": ["Robert R. Petro", "Connor M. Phillips"],
+      "year": 2025,
+      "identifier": "arXiv:2502.17845v1",
+      "url": "https://arxiv.org/abs/2502.17845",
+      "supports": "The abstract develops clique-graph methods and applies them to the Conway-99 existence problem among other examples.",
+      "does_not_support": "No claimed resolution and no match to the endpoint lattice proof signature."
+    },
+    {
+      "id": "S11",
+      "type": "peer-reviewed foundational journal article",
+      "title": "Spherical codes and designs",
+      "authors_or_maintainers": ["Philippe Delsarte", "Jean-Marie Goethals", "Johan J. Seidel"],
+      "year": 1977,
+      "venue": "Geometriae Dedicata 6(3), 363-388",
+      "doi": "10.1007/BF03187604",
+      "url": "https://doi.org/10.1007/BF03187604",
+      "supports": "Standard spherical-code and spherical-design framework relevant to graph eigenspace and lattice-shell embeddings.",
+      "does_not_support": "No exact K12 orthogonal-sum endpoint exclusion."
+    },
+    {
+      "id": "S12",
+      "type": "peer-reviewed journal article",
+      "title": "Finite Normalized Tight Frames",
+      "authors_or_maintainers": ["John J. Benedetto", "Matthew Fickus"],
+      "year": 2003,
+      "venue": "Advances in Computational Mathematics 18, 357-385",
+      "doi": "10.1023/A:1021323312367",
+      "url": "https://doi.org/10.1023/A:1021323312367",
+      "supports": "Standard finite normalized tight-frame theory.",
+      "does_not_support": "No Wave-29 row split, determinant allocation, or final contradiction."
+    },
+    {
+      "id": "S13",
+      "type": "preprint exposition of a classical theorem",
+      "title": "Gauss Sums in Algebra and Topology",
+      "authors_or_maintainers": ["Laurence R. Taylor"],
+      "year": 2022,
+      "identifier": "arXiv:2208.06319v1",
+      "url": "https://arxiv.org/abs/2208.06319",
+      "supports": "An exposition of the Milgram Gauss-sum formula computing the signature modulo 8, which yields the standard rank-divisibility obstruction for positive-definite even unimodular lattices.",
+      "does_not_support": "It is not a source for the candidate's block allocation or endpoint exclusion."
+    },
+    {
+      "id": "S14",
+      "type": "peer-reviewed journal article",
+      "title": "Pseudodeterminants and perfect square spanning tree counts",
+      "authors_or_maintainers": ["Jeremy L. Martin", "Molly Maxwell", "Victor Reiner", "Scott O. Wilson"],
+      "year": 2015,
+      "venue": "Journal of Combinatorics 6(3), 295-325",
+      "identifier": "arXiv:1311.6686",
+      "url": "https://arxiv.org/abs/1311.6686",
+      "supports": "Standard definition of a pseudodeterminant as the last nonzero characteristic-polynomial coefficient, together with general pseudodeterminant identities.",
+      "does_not_support": "No exact pointwise log inequality or 729 determinant cap was found."
+    },
+    {
+      "id": "S15",
+      "type": "peer-reviewed survey",
+      "title": "Boris Venkov's Theory of Lattices and Spherical Designs",
+      "authors_or_maintainers": ["Gabriele Nebe"],
+      "year": 2013,
+      "venue": "Contemporary Mathematics 587, 1-19",
+      "doi": "10.1090/conm/587/11672",
+      "identifier": "arXiv:1201.1834",
+      "url": "https://doi.org/10.1090/conm/587/11672",
+      "supports": "Authoritative survey of the standard connection between lattice minimal vectors, spherical designs, strong perfection, and extremal even-unimodular lattices.",
+      "does_not_support": "No exact Wave-29 direct-sum non-realizability result."
+    },
+    {
+      "id": "S16",
+      "type": "institutional seminar announcement",
+      "title": "Non-existence of the strongly regular graph srg(85,14,3,2)",
+      "authors_or_maintainers": ["Hebei Normal University", "Sergey Shpectorov"],
+      "year": 2026,
+      "url": "https://www.hebtu.edu.cn/a/2026/06/24/AD3624B468444197AA2464C61CBDEE63.html",
+      "supports": "The June 2026 announcement distinguishes the completed srg(85,14,3,2) project from only a possible similar approach to srg(99,14,1,2). This is corroborating current-status metadata, not a theorem source.",
+      "does_not_support": "It does not prove the Conway-99 target open and contains no Wave-29 lattice result."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+role: verifier
+date_utc: 2026-07-24T06:58:18Z
+git_commit: a8b0c34040f6857b3c5ebcc44f108e03a4159088
+claim_label: UNKNOWN
+verdict: PASS_NO_FATAL_GAP
+scope: >-
+  Secondary skeptical audit of the frozen Wave 31 conditional exclusion of
+  every nontrivial rootless integral orthogonal decomposition of the rank-44
+  target-incidence scaled-dual S-form. This report does not itself promote
+  the central claim.
+inputs:
+  verification/wave31-sign-commutant-skeptic/input-freeze.sha256: dd1a32bbc4803563bc01df70b015a4aa4dad1cd7821a024f8cfae6737b50bf74
+method: >-
+  Independently reconstruct the contragredient integral basis change, prove
+  nonempty proper frame-row support, transport the coordinate sign through
+  vertex-triangle incidence, audit the exact spectral commutator and its
+  adjacent entry, then check signed-degree and projector/lattice trace
+  divisibility. Exercise minimum-two, noncommuting D, nonsymmetric K,
+  inconsistent triangle signs, and disconnected-graph countermodels.
+command: |-
+  python -B verification/wave31-sign-commutant-skeptic/skeptic_check.py --output verification/wave31-sign-commutant-skeptic/results.json
+outputs:
+  verification/wave31-sign-commutant-skeptic/audit.md: 781027870b5e38617ea66757cbea403b2117aac8bb4b7543a61235bbb0faa856
+  verification/wave31-sign-commutant-skeptic/skeptic_check.py: 3e99a11b6fc63f034b0ec93c142f02c2f3876bc27513dcce8c80eb67222dc81a
+  verification/wave31-sign-commutant-skeptic/results.json: 0dd057b903da3092528f4e0bc2b9283e8ee6fa3222553b24b219dda732d35007
+  verification/wave31-sign-commutant-skeptic/input-freeze.sha256: dd1a32bbc4803563bc01df70b015a4aa4dad1cd7821a024f8cfae6737b50bf74
+limitations:
+  - Secondary hostile audit only; designated publication verification remains separate.
+  - Actual target vertex-triangle incidence is essential.
+  - Minimum four and an integral orthogonal decomposition are essential.
+  - No graph, endpoint frame, or endpoint lattice is constructed.
+  - Rooted and integrally indecomposable endpoint forms remain untreated.
+  - n3=708, Conway-99 existence or nonexistence, and novelty remain UNKNOWN.
+checks:
+  frozen_candidate_commit: PASS
+  input_hashes: PASS
+  unimodular_basis_transport: PASS
+  row_support_and_block_nonemptiness: PASS
+  incidence_image_equals_minus_four_space: PASS
+  symmetric_invariance_implies_commutation: PASS
+  commutator_signs_and_coefficients: PASS
+  adjacent_entry_complete_sum: PASS
+  connectedness_and_signed_double_count: PASS
+  lattice_block_trace_all_proper_ranks: PASS
+  projector_block_trace_simplification: PASS
+  multiple_blocks_and_complements: PASS
+  exact_hostile_controls: PASS
+  deterministic_json: PASS

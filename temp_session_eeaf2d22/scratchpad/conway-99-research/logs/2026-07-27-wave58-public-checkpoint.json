@@ -1,0 +1,44 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-27T21:24:15Z",
+  "format": "conway99-wave58-public-checkpoint-v1",
+  "git_base_commit": "4bb1989e9e286b2ec753a855db58ad584e31f63a",
+  "manifests": {
+    "wave56_discovery": "911e882f2450690d409558e59777bf828a616bb9487e1be4914e0cda8baec37b",
+    "wave56_verification": "2e5080a94a9d0683cccd986046c83ec1134978bba3dbb064042571be81e69efb",
+    "wave57_discovery": "c32b4e23cd8ba465a969abf538a85da1471f6c7452a0718740f2035ca6ad62f0",
+    "wave57_verification": "61ebd615bdfdfe13977c20868db85544f56bd10f530f121670456e8448b2d9b5",
+    "wave58_discovery": "972a7700b0d9f1596ba42f32811a5b6b5eb66410e4099ae6c8d2d3fd64527a27",
+    "wave58_verification": "ef7dcdc04dab83fec1a8bb61e74c741eca5c2d7b59f5142cc57d145005602f36"
+  },
+  "results": {
+    "closure": {
+      "endpoint_all_4158_nonedges_percolate": true,
+      "local_labeled_profiles": 35,
+      "proper_nonedge_closure": "K3 square K3"
+    },
+    "cross_incidence": {
+      "component_rows": [
+        [18, 8, 1, 34],
+        [18, 9, 2, 33],
+        [18, 10, 3, 32]
+      ],
+      "kappa3_exact_local_C4": [6, 8, 10, 12, 14, 16, 18],
+      "simultaneous_B_A_Y": "UNKNOWN",
+      "universal_C4_X_upper_bound": 27
+    },
+    "wave57": {
+      "corrected_project_live_rows": 3,
+      "discovery_project_live_rows": 18,
+      "verdict": "REFUTED_IN_PART"
+    }
+  },
+  "status": "VERIFIED_SCOPED_WITH_MATERIAL_CORRECTION",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

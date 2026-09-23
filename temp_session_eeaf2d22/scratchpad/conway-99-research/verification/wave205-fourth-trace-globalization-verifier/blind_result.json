@@ -1,0 +1,126 @@
+{
+  "claim_label": "VERIFIED_WITH_SCOPE",
+  "control_summary": {
+    "common_g": [
+      2
+    ],
+    "common_union_gram_rank": [
+      11
+    ],
+    "realized_h": [
+      0,
+      1,
+      2
+    ]
+  },
+  "dimension_ledger": {
+    "dim_Sym2_trace_zero_self_adjoint_End_V": 2145,
+    "dim_V": 11,
+    "dim_self_adjoint_End_V": 66,
+    "dim_self_adjoint_End_wedge2_V": 1540,
+    "dim_trace_zero_self_adjoint_End_V": 65,
+    "dim_trace_zero_self_adjoint_End_wedge2_V": 1539,
+    "dim_wedge2_V": 55
+  },
+  "field": "F_3",
+  "fourth_trace_controls": {
+    "h0": {
+      "cross_rank": 6,
+      "g": 2,
+      "graph_forced_margins": true,
+      "h": 0,
+      "localized_g": 2,
+      "localized_h": 0,
+      "localized_rank": 6,
+      "localized_reconstruction": true,
+      "locally_projectively_distinct": true,
+      "union_gram_rank": 11,
+      "zero_mod3_col_sums": true,
+      "zero_mod3_row_sums": true
+    },
+    "h1": {
+      "cross_rank": 5,
+      "g": 2,
+      "graph_forced_margins": true,
+      "h": 1,
+      "localized_g": 2,
+      "localized_h": 1,
+      "localized_rank": 5,
+      "localized_reconstruction": true,
+      "locally_projectively_distinct": true,
+      "union_gram_rank": 11,
+      "zero_mod3_col_sums": true,
+      "zero_mod3_row_sums": true
+    },
+    "h2": {
+      "cross_rank": 5,
+      "g": 2,
+      "graph_forced_margins": true,
+      "h": 2,
+      "localized_g": 2,
+      "localized_h": 2,
+      "localized_rank": 5,
+      "localized_reconstruction": true,
+      "locally_projectively_distinct": true,
+      "union_gram_rank": 11,
+      "zero_mod3_col_sums": true,
+      "zero_mod3_row_sums": true
+    }
+  },
+  "fourth_trace_identity": {
+    "crossing": 1,
+    "functorial": true,
+    "g": 2,
+    "h": 1,
+    "k": 0,
+    "wedge_formula_h": 1
+  },
+  "gram_radical_hostile_control": {
+    "ambient_rank": 11,
+    "column_span_rank": 10,
+    "gram_kernel_dim": 5,
+    "reconstructs_gram": true,
+    "star_relations_true": true,
+    "true_kernel_dim": 4,
+    "union_gram_rank": 9,
+    "witness_image_is_nonzero_radical": true,
+    "witness_is_gram_kernel": true,
+    "witness_is_true_relation": false
+  },
+  "limitations": [
+    "Controls are local orthogonal-space realizations, not SRGs.",
+    "No 99-star or 231-column global compatibility is constructed.",
+    "No endpoint or Conway-99 status is promoted."
+  ],
+  "local_cross_mask_enumeration": {
+    "edge_count_distribution": {
+      "0": 1,
+      "1": 9,
+      "2": 36,
+      "3": 6
+    },
+    "feasible_count": 52,
+    "prism_free_max_edges": 2,
+    "three_edge_count": 6,
+    "three_edge_perfect_matchings": 6
+  },
+  "rank6_projector_checks": {
+    "idempotent": true,
+    "trace": 0,
+    "wedge_idempotent": true,
+    "wedge_rank": 15,
+    "wedge_trace": 0
+  },
+  "source_blind": true,
+  "statuses": {
+    "Conway_99": "UNKNOWN",
+    "complete_nonedge_classification": "UNKNOWN",
+    "full_fourth_trace_factorization": "VERIFIED",
+    "graph_forced_nonedge_margins": "VERIFIED_WITH_SCOPE",
+    "local_premises_determine_nonedge_h": "REFUTED_WITH_SCOPE",
+    "n3_4158_endpoint": "UNKNOWN",
+    "rank_11_endpoint": "UNKNOWN",
+    "star_pair_localization_and_rank": "VERIFIED",
+    "tensor_dimensions": "VERIFIED"
+  }
+}

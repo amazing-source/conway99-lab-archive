@@ -1,0 +1,78 @@
+role: proof_b
+date_utc: 2026-07-27T15:23:32Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: DERIVED
+scope: >-
+  Complete prism-cut family for every vertex-disjoint pair of
+  coordinate-anchored triangles whose controller variables are unfixed at the
+  frozen Wave 42 branch-15 closure, conditional on n3=4158; exact closure and
+  64 bounded full-formula polarity probes.
+inputs:
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz
+    sha256: 0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e
+  - path: attempts/wave42-endpoint-certificate/branch-15-combined-propagation-certificate.json
+    sha256: ab05feb596c25d0fbb872a0d92978355638218350bdf7606c248ca98ae2469ce
+method: >-
+  Reconstruct all 924 coordinate-anchored triangle candidates and primary edge
+  IDs; retain the 760 controllers unfixed by the Wave 42 closure; exhaust all
+  unordered vertex-disjoint pairs and all six matchings; prove that
+  compatibility requires mate coordinate anchors matched together; export
+  each resulting four-variable all-negative prism cut; simplify exactly by
+  the frozen closure; and replay both polarities of the 32 highest-incidence
+  controllers through the complete Wave 37 OPB, Wave 42 delta, and Wave 43
+  delta.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave43-branch15-two-triangle\coordinate_triangle_cuts.py
+  .\.venv\Scripts\python.exe -B attempts\wave43-branch15-two-triangle\coordinate_triangle_cuts.py --verify
+  .\.venv\Scripts\python.exe -B attempts\wave43-branch15-two-triangle\combined_closure_and_probes.py
+  .\.venv\Scripts\python.exe -B attempts\wave43-branch15-two-triangle\combined_closure_and_probes.py --verify
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave43-branch15-two-triangle -p "test_*.py" -v
+outputs:
+  - path: attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-result.json
+    sha256: 1ab1cc6ad5a3727fec508b8b3f2eb9b52d4034f6aa6768b25feef8f219c45ec8
+  - path: attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-delta.opb.gz
+    sha256: 82a13e78e514cf35f27190da665bdedaf4fed28c7a6fa2856e22badf63f32797
+  - path: attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-active-delta.opb.gz
+    sha256: 858f2a5c66d251497e4c13fb4d633c18fe65afe657937b84444cde55b1a4a631
+  - path: attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-closure.json
+    sha256: a695b65631d5b6c2ce8f22754fb097428101fca10b443e8452061876f508d31f
+  - path: attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-probes.json
+    sha256: 4bf195563e7e40b5dd7b5b1228932ca7a6d36426b690a6c826d2e9d0634bcac4
+limitations:
+  - "This proof-agent package requires independent clean-room replay before promotion."
+  - "The complete family is restricted to two coordinate-anchored triangles unfixed at the frozen Wave 42 closure."
+  - "Prisms involving a triangle without a coordinate anchor remain omitted."
+  - "Exact generalized-unit closure derives no new assignment."
+  - "All 64 bounded polarity probes are noncontradictory and derive no implication."
+  - "Propagation closure alone is not an UNSAT certificate."
+  - "No complete graph or independently checked terminal UNSAT proof was obtained."
+  - "Branch 15 and all 33 endpoint cases remain UNKNOWN."
+tests:
+  discovery_unit_tests: "PASS: 7 tests in 11.760 seconds"
+  exact_clause_regeneration: "PASS_EXACT_REPLAY: 40800 raw and 34340 active constraints"
+  exact_closure_and_probe_regeneration: "PASS_EXACT_REPLAY: 0 new forced variables and 0 candidate implications"
+  source_hashes: PASS
+  memory_floor: "PASS: host remained above 15 percent free physical memory"
+result:
+  coordinate_triangles: 924
+  wave42_true_coordinate_triangles: 7
+  wave42_false_coordinate_triangles: 157
+  wave42_unfixed_coordinate_triangles: 760
+  unordered_unfixed_pairs: 288420
+  vertex_disjoint_pairs: 259499
+  vertex_disjoint_mate_anchor_pairs: 20400
+  perfect_matching_visits: 1556994
+  compatible_matchings: 40800
+  distinct_raw_width_four_clauses: 40800
+  exact_prior_raw_row_overlap: 0
+  satisfied_at_wave42_closure: 6460
+  active_width_four_clauses: 34340
+  new_closure_assignments: 0
+  polarity_probes: 64
+  candidate_implications: 0
+  wave43_sourced_probe_derivations: 0
+  branch_15: UNKNOWN
+  endpoint_cases_closed: 0
+  endpoint_cases_total: 33

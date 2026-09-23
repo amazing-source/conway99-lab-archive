@@ -1,0 +1,37 @@
+role: proof_b
+date_utc: 2026-07-29T03:22:22Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Independent hostile audit of the Wave194 doubled type-two continuation,
+  sharpened U-capacity, and exact Q>=5C/3=6930 certificate.
+inputs:
+  - attempts/wave193-aggregate-proof-b-audit/package-manifest.sha256
+  - attempts/wave192-c4-cohomology-proof-b/package-manifest.sha256
+  - attempts/wave191-exact-three-residual-proof-a/package-manifest.sha256
+  - verification/wave190-residual-stability-verifier/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+method: >-
+  Exact F3 support subtraction, center and dual-distance collision
+  separation, private-label union capacity, and exact rational coefficient
+  expansion. No graph, cover, code, SAT, LP, configuration, isomorphism,
+  or exhaustive search.
+command: >-
+  python -B attempts/wave194-five-thirds-proof-b-audit/exact_check.py
+  --verify attempts/wave194-five-thirds-proof-b-audit/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave194-five-thirds-proof-b-audit/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave194-five-thirds-proof-b-audit.md
+  - attempts/wave194-five-thirds-proof-b-audit/README.md
+  - attempts/wave194-five-thirds-proof-b-audit/derivation.md
+  - attempts/wave194-five-thirds-proof-b-audit/protocol.md
+  - attempts/wave194-five-thirds-proof-b-audit/exact_check.py
+  - attempts/wave194-five-thirds-proof-b-audit/exact-results.json
+  - attempts/wave194-five-thirds-proof-b-audit/test_exact_check.py
+  - attempts/wave194-five-thirds-proof-b-audit/input-freeze.sha256
+limitations:
+  - This proof-B audit is not verifier promotion.
+  - The theorem is conditional on the frozen rank-11 endpoint inputs.
+  - The equality row is arithmetic only.
+  - Rank 11, endpoint existence, novelty, and Conway-99 remain UNKNOWN.

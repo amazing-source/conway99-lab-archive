@@ -1,0 +1,86 @@
+role: verifier
+date_utc: "2026-07-24T21:35:01Z"
+git_commit: "1be9b6f61136763ce77d3927984979205e7fb23a"
+claim_label: UNKNOWN
+scope: >-
+  Lane E2 audit of the Harrison rooted-fiber repository at
+  26b36c540611fa02c95a5a4bd78cd4a582257195: rooted-model bridge,
+  retraction separation, k20-through-k13 orbit and artifact coverage, CNF
+  recipe reconstruction, exact Gram base identities, rational-certificate
+  availability, six non-Gram cores, and the k13 res1 gap.
+inputs:
+  - path: verification/wave34-external-source-audit-protocol.md
+    sha256: 055d6e519a58ad763b6f067ebefd67ab7fb7bd43648226923bbd05f7dda140c6
+  - path: verification/wave34-continuation-protocol.md
+    sha256: 60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4
+  - path: agents/2026-07-24-wave34-current-literature.md
+    sha256: b470c62d657686779f22154872e19d7db002f1abde1bc173ae747f9e2ad86b95
+  - path: attempts/wave34-current-literature/query-ledger.json
+    sha256: ece460c54282b45ce013083756bc421ea2427d91800b65e16f9049734225843d
+  - path: attempts/wave34-current-literature/source-ledger.json
+    sha256: 5fa6f75abcfc8d3033c9715f3977722e99fcb238ca1b74d2db255e759a58b100
+  - path: attempts/wave34-current-literature/audit.md
+    sha256: 1be6c6904314763031968c47dde8b4187caf1118ca4c2a1c9cf5f93d9496abc3
+  - path: attempts/wave34-current-literature/run-report.yaml
+    sha256: fb60da266720ecdb00486948ae3d2e02b599b5c8e02c2308732e1b9e318aead3
+  - repository: https://github.com/harrisonpedrero/conway-99-graph
+    commit: 26b36c540611fa02c95a5a4bd78cd4a582257195
+    checkout: "<external temporary clone>"
+method: >-
+  Cloned without LFS smudging; checked the pin and frozen inputs; re-derived
+  the rooted equations and all-C4 cap bridge; traced the honest builder AST;
+  exhaustively regenerated S7 orbits and leaf-stripping implications; rebuilt
+  the honest CNF and all 830 k>=14 plus 472 k13 formula hashes; checked LFS
+  pointer OIDs/sizes and log markers; re-derived the exact spectral Gram base;
+  and failed closed on every absent CNF, DRAT, LRAT, rational certificate, or
+  checker. After an orchestrator rerun exposed a serialized wall-clock field,
+  removed only that nondeterministic field and reproduced the corrected result
+  byte-identically in two exact isolated-venv runs.
+command: >-
+  <isolated-python>
+  verification/wave34-external-source-audit/harrison/verify_harrison_source.py
+  --clone <external-temporary-clone> --workspace <repository-root>
+outputs:
+  - path: verification/wave34-external-source-audit/harrison/audit.md
+    sha256: 0cbc73426610f4f257b3266ff3d9fcbd5426c961d0cca844e44ee8c1c1487a43
+  - path: verification/wave34-external-source-audit/harrison/results.json
+    sha256: 0d9ea150bb86e33c00f46e72620dec61e0a2b84c130597596299d80ab8e8baf2
+  - path: verification/wave34-external-source-audit/harrison/certificate-ledger.json
+    sha256: 04f37174072d00cd56298d16a6d4222d00605a97a390ee684f6d34be13e0a878
+  - path: verification/wave34-external-source-audit/harrison/gram-certificate-ledger.json
+    sha256: 40b37b2f0ba08ccb48d07fa3117e6b872561363febf8a094bce07af6ad32f454
+  - path: verification/wave34-external-source-audit/harrison/six-non-gram-cores.json
+    sha256: f9d25fd5d9e00103b0a0759ab1a14c504409e6b0c19ebb00781bc0aa5d9dd9aa
+  - path: verification/wave34-external-source-audit/harrison/rung-ledger.csv
+    sha256: efa04c9e4ea5e826ecc12db7616e190779520478b89fe70f1432579a2e2b971a
+  - path: verification/wave34-external-source-audit/harrison/r230-lfs-ledger.csv
+    sha256: 540512a116a38cac49b8cdc4d5c68f32d31a9fa4527b5d6eed7994265c0ec94a
+  - path: verification/wave34-external-source-audit/harrison/verify_harrison_source.py
+    sha256: 44d41e96f6c7d2dfd5281c641ba24bf4203dee74f4a7f99881deb312a88339f0
+  - path: verification/wave34-external-source-audit/harrison/reproducibility-correction.md
+    sha256: 42295c0ca3b1d6871aff2b548c3992cdf80c7831f7e14cae1fd632ac034931eb
+subclaims:
+  rooted_srg_to_honest_equations: VERIFIED
+  honest_builder_avoids_retracted_forced_table: VERIFIED
+  all_c4_to_r204_cap_bridge: VERIFIED
+  s7_orbit_coverage_k20_through_k13: VERIFIED
+  part_a_leaf_stripping: VERIFIED
+  cnf_recipe_hashes: VERIFIED
+  exact_gram_base_identities: VERIFIED
+  exact_gram_certificates_14: UNKNOWN
+  six_non_gram_core_unsat: UNKNOWN
+  r230_cap_unsat: UNKNOWN
+  k_ge_14_exclusion: UNKNOWN
+  k13_exclusion: UNKNOWN
+  conway_99: UNKNOWN
+  n3_708: UNKNOWN
+limitations: >-
+  No theorem-ladder CNF or proof body is tracked. The 14 rational
+  certificates and checker are absent in an ignored working directory. The
+  six non-Gram proof bodies are absent. R230 bodies remained unpulled Git LFS
+  pointers. No solver verdict, log line, manifest entry, pointer, or cloud
+  verdict was promoted to an UNSAT certificate. k13 res1 remains
+  verdict-only. The tracked standalone honest builder has an import-path
+  defect, although the bundled reproducer repairs the path and all recipe
+  hashes match. The first verifier result also serialized wall-clock time;
+  that reproducibility-only failure and its deterministic repair are retained.

@@ -1,0 +1,43 @@
+role: construction
+date_utc: 2026-07-28T10:55:00Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: DERIVED_INCONCLUSIVE
+scope: >-
+  Exact rational feasibility of the complete one-root six-to-seven aggregate
+  endpoint relaxation at n3=4158; no graph realization.
+inputs:
+  attempts/wave21-six-vertex-lp/exact_check.py: 0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3
+  attempts/wave22-full-seven-deck/exact_check.py: e54f6ea9bac5fcc20d0583316051320dfe0dd7247657cf64e7515990a8438a5b
+  attempts/wave43-seven-deck-endpoint/endpoint_deck.py: c1c22443f82a39e8a306abc4776e5649b7838e57c084a77864cf0270c566a13f
+  attempts/wave141-bivariate-graph-code/exact-results.json: 351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e
+  attempts/wave144-sixset-odd-profile/exact-results.json: 6dbb544494511906ce6452eaa6addb20c8e3f8861abfd67d1a026d94baf2234b
+method: >-
+  Filter all 64 outside-neighborhood cells by exact induced order-seven
+  admissibility, aggregate them by six-class/output weight, glue their
+  automorphism-orbit totals to the complete order-seven deletion deck, solve
+  with column-aware scaling, reconstruct denominators at most four, and
+  replay all integer equations exactly.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave146-six-seven-coupling\exact_witness.py --verify attempts\wave146-six-seven-coupling\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave146-six-seven-coupling -p "test_*.py" -v
+outputs:
+  attempts/wave146-six-seven-coupling/exact-results.json: f0bbae5b54506a8a08a771e80536fa4f59d5d818872e675cb5b8dd2ce85df50c
+results:
+  source_classes: 62
+  removed_local_weight_cells: 25
+  surviving_local_weight_cells: 343
+  rooted_orbit_types: 944
+  variables: 13973
+  equalities: 8981
+  matrix_nonzeros: 110269
+  positive_rational_variables: 2998
+  maximum_denominator: 4
+  h11: 16632
+  endpoint_n3: 4158
+  improves_known_bound: false
+limitations:
+  - Aggregate profiles need not decompose over individual six-sets.
+  - Two-root and order-eight overlap compatibility are not imposed.
+  - The witness is not a graph, code, or existence result.
+  - The imported endpoint cap is not reproved.
+  - Discovery cannot verify itself.

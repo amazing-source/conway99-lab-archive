@@ -1,0 +1,412 @@
+{
+  "assumption_profile": {
+    "automorphism_assumed": false,
+    "essential_premises": [
+      "orthogonal_minimum_four_split",
+      "tight_frame_identity",
+      "endpoint_schur_definitions",
+      "row_sum_and_projector_identity",
+      "row_alphabet",
+      "determinant_cap_and_q_congruence",
+      "q_even_positive_integral",
+      "even_unimodular_signature_veto",
+      "total_trace_sixty",
+      "b_equals_i_plus_2c_integral",
+      "positive_form_self_adjointness"
+    ],
+    "finite_search_assumed_complete": false,
+    "full_endpoint_assumed_for_contradiction": true
+  },
+  "claim_label": "DERIVED",
+  "derivation": {
+    "block_traces": {
+      "amgm_necessary_condition": "det(B_J)*rank(J)^rank(J)<=tr(B_J)^rank(J)",
+      "exact_candidates": [
+        {
+          "traceB_K": 24,
+          "traceB_L": 36
+        }
+      ],
+      "positive_multiples_of_six": true,
+      "sum_c_K": 626,
+      "sum_c_L": 1674,
+      "sum_c_total": 2300,
+      "trace_identity": "tr(B_J)=tr(M_J W_J)=sum_(i,j in J) M_ij^3 =sum_(i in J)(60-6c_i)"
+    },
+    "detQ": {
+      "detB_cap": 6525,
+      "detB_equals_detS_times_detQ": true,
+      "detQ": 5,
+      "detQ_candidates": [
+        5
+      ],
+      "detQ_floor": 5,
+      "detQ_mod_4": 1,
+      "detS": 729
+    },
+    "determinant_allocation": {
+      "detB_K": 3645,
+      "detB_L": 1,
+      "pre_veto_allocations": [
+        {
+          "detQ_K": 1,
+          "detQ_L": 5
+        },
+        {
+          "detQ_K": 5,
+          "detQ_L": 1
+        }
+      ],
+      "survivor": {
+        "detQ_K": 5,
+        "detQ_L": 1
+      },
+      "veto": "det(Q_K)=1 would make Q_K even unimodular positive definite of rank/signature 12, impossible because 12 is not divisible by eight."
+    },
+    "frame_split": {
+      "K12_rows": 63,
+      "LAMBDA_F_rows": 168,
+      "no_automorphism_or_search_assumption": true,
+      "norm_four_split": "For x=(u,v) of norm four in an orthogonal sum whose two nonzero minima are four, exactly one of u,v is zero.",
+      "tight_frame_trace_identity": "4*n_J=21*rank(J)",
+      "total_rows": 231
+    },
+    "logarithmic_contradiction": {
+      "C_K": {
+        "G_K_self_adjoint": true,
+        "correct_positivity_statement": "B_K=I+2C_K is G_K-positive; every C_K eigenvalue mu is real and strictly greater than -1/2.",
+        "integral": true,
+        "positive_semidefinite": false,
+        "rank_of_ambient_block": 12,
+        "real_diagonalizable": true,
+        "trace": 6
+      },
+      "characteristic_pseudodeterminant": {
+        "factorization": "char_CK(t)=t^(12-r)*p(t), p monic in Z[t]",
+        "nonzero_eigenvalue_product": "|product(mu_i)|=|p(0)|>=1"
+      },
+      "contradiction": "3645>729",
+      "detB_K_forced": 3645,
+      "detB_K_upper_bound": 729,
+      "log3_exact_bounds": {
+        "lower": "1541989106264611/1403578975518720",
+        "lower_gt_2_over_3": true,
+        "terms": 12,
+        "upper": "3854972776816171/3508947438796800",
+        "upper_lt_2": true
+      },
+      "negative_domain": "For -1/2<x<0, g'(x)=L-2/(1+2x)<L-2<0; g(0)=0 gives g(x)>0, and -(L-2/3)log|x|>0.",
+      "pointwise_inequality": "log(1+2x)<=x*log(3)-(log(3)-2/3)*log|x| for x>-1/2, x!=0",
+      "positive_domain_derivative": {
+        "coefficient_ring": "Q[L], L=log(3)",
+        "direct_coefficients_ascending": [
+          {
+            "L": -1,
+            "rational": "2/3"
+          },
+          {
+            "L": -1,
+            "rational": "-2/3"
+          },
+          {
+            "L": 2,
+            "rational": "0"
+          }
+        ],
+        "factored_coefficients_ascending": [
+          {
+            "L": -1,
+            "rational": "2/3"
+          },
+          {
+            "L": -1,
+            "rational": "-2/3"
+          },
+          {
+            "L": 2,
+            "rational": "0"
+          }
+        ],
+        "identity": "x(1+2x)F'(x)=(x-1)(2Lx+L-2/3)"
+      },
+      "summed_bound": "log(det(B_K))<=6*log(3)"
+    },
+    "matrix_split": {
+      "after_row_permutation": {
+        "B": "diag(S_K Q_K,S_L Q_L)",
+        "M": "diag(M_K,M_L)",
+        "Q": "diag(X_K^T W_K X_K,X_L^T W_L X_L)",
+        "W": "diag(M_K o M_K,M_L o M_L)",
+        "X": "[X_K 0; 0 X_L] (rectangular block form)"
+      },
+      "identities_used": [
+        "M=X S X^T",
+        "W=M o M",
+        "Q=X^T W X",
+        "B=S Q"
+      ]
+    },
+    "row_alphabet": {
+      "K12_support_forces_c_i_at_least": 2,
+      "admissible_table": [
+        {
+          "a_plus_one": 32,
+          "b_minus_one": 36,
+          "c_minus_two": 0,
+          "row_cube_sum": 60,
+          "z_zero": 162
+        },
+        {
+          "a_plus_one": 31,
+          "b_minus_one": 33,
+          "c_minus_two": 1,
+          "row_cube_sum": 54,
+          "z_zero": 165
+        },
+        {
+          "a_plus_one": 30,
+          "b_minus_one": 30,
+          "c_minus_two": 2,
+          "row_cube_sum": 48,
+          "z_zero": 168
+        },
+        {
+          "a_plus_one": 29,
+          "b_minus_one": 27,
+          "c_minus_two": 3,
+          "row_cube_sum": 42,
+          "z_zero": 171
+        },
+        {
+          "a_plus_one": 28,
+          "b_minus_one": 24,
+          "c_minus_two": 4,
+          "row_cube_sum": 36,
+          "z_zero": 174
+        },
+        {
+          "a_plus_one": 27,
+          "b_minus_one": 21,
+          "c_minus_two": 5,
+          "row_cube_sum": 30,
+          "z_zero": 177
+        },
+        {
+          "a_plus_one": 26,
+          "b_minus_one": 18,
+          "c_minus_two": 6,
+          "row_cube_sum": 24,
+          "z_zero": 180
+        },
+        {
+          "a_plus_one": 25,
+          "b_minus_one": 15,
+          "c_minus_two": 7,
+          "row_cube_sum": 18,
+          "z_zero": 183
+        },
+        {
+          "a_plus_one": 24,
+          "b_minus_one": 12,
+          "c_minus_two": 8,
+          "row_cube_sum": 12,
+          "z_zero": 186
+        },
+        {
+          "a_plus_one": 23,
+          "b_minus_one": 9,
+          "c_minus_two": 9,
+          "row_cube_sum": 6,
+          "z_zero": 189
+        },
+        {
+          "a_plus_one": 22,
+          "b_minus_one": 6,
+          "c_minus_two": 10,
+          "row_cube_sum": 0,
+          "z_zero": 192
+        },
+        {
+          "a_plus_one": 21,
+          "b_minus_one": 3,
+          "c_minus_two": 11,
+          "row_cube_sum": -6,
+          "z_zero": 195
+        },
+        {
+          "a_plus_one": 20,
+          "b_minus_one": 0,
+          "c_minus_two": 12,
+          "row_cube_sum": -12,
+          "z_zero": 198
+        }
+      ],
+      "definitions": {
+        "a_i": "number of off-diagonal +1 entries in row i",
+        "b_i": "number of off-diagonal -1 entries in row i",
+        "c_i": "number of off-diagonal -2 entries in row i",
+        "z_i": "number of off-diagonal zero entries in row i"
+      },
+      "equations": [
+        "4+a_i-b_i-2c_i=0",
+        "16+a_i+b_i+4c_i=84",
+        "a_i+c_i=32",
+        "b_i=36-3c_i",
+        "z_i=162+3c_i",
+        "sum_j M_ij^3=60-6c_i"
+      ]
+    }
+  },
+  "frozen_inputs": {
+    "agents/2026-07-24-wave28-orchestrator-brief.md": "6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e",
+    "agents/2026-07-24-wave28-theta-modular.md": "8783be7e730306637ed863b4d9fbe8f4193ad756e7ec86d697c7407688a5423a",
+    "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+    "verification/wave28-theta-modular/audit.md": "adc90e404735ca147bc0a5418974d8af0bde71c4ddc2dc62a8c07dee670dbfeb",
+    "verification/wave28-theta-modular/independent-results.json": "24298ae282c7baa252a39ffe96fc37b7c696cb51f14b9ddea2318a59b4335b7f"
+  },
+  "hostile_controls": {
+    "b_equals_i_plus_2c_integral": {
+      "first_failed_stage": "integral characteristic pseudodeterminant: missing premise b_equals_i_plus_2c_integral",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "determinant_cap_and_q_congruence": {
+      "first_failed_stage": "det(Q) determination: missing premise determinant_cap_and_q_congruence",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "endpoint_schur_definitions": {
+      "first_failed_stage": "M/W/Q/B block split: missing premise endpoint_schur_definitions",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "even_unimodular_signature_veto": {
+      "first_failed_stage": "rank-12 determinant allocation: missing premise even_unimodular_signature_veto",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "explicit_nonintegral_C_control": {
+      "B_positive_self_adjoint": true,
+      "B_spectrum": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "C_spectrum": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "detB": 4096,
+      "exceeds_integral_log_cap_729": true,
+      "traceC": 6,
+      "violated_premise": "C integral"
+    },
+    "orthogonal_minimum_four_split": {
+      "first_failed_stage": "norm-four block split: missing premise orthogonal_minimum_four_split",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "positive_form_self_adjointness": {
+      "first_failed_stage": "positive block traces and AM-GM: missing premise positive_form_self_adjointness",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "q_even_positive_integral": {
+      "first_failed_stage": "positive integral block determinants: missing premise q_even_positive_integral",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "row_alphabet": {
+      "first_failed_stage": "per-row alphabet solution: missing premise row_alphabet",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "row_sum_and_projector_identity": {
+      "first_failed_stage": "per-row linear and quadratic equations: missing premise row_sum_and_projector_identity",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "tight_frame_identity": {
+      "first_failed_stage": "block row counts: missing premise tight_frame_identity",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "total_trace_sixty": {
+      "first_failed_stage": "complementary block traces: missing premise total_trace_sixty",
+      "status": "BLOCKED_AS_REQUIRED"
+    },
+    "without_even_unimodular_veto": {
+      "detB_K": 729,
+      "log_cap": 729,
+      "strict_contradiction": false,
+      "surviving_allocation": {
+        "detQ_K": 1,
+        "detQ_L": 5
+      }
+    },
+    "without_trace_multiple_of_six": {
+      "arithmetic_trace_pair_not_excluded": {
+        "traceB_K": 28,
+        "traceB_L": 32
+      },
+      "contradiction": false,
+      "forced_detB_K": 3645,
+      "generic_log_cap": 6561,
+      "traceC_K": 8
+    }
+  },
+  "local_frozen_baseline_commit": "74b6f3adcee19ca2b0480258bb7bf51198bd085a",
+  "role": "proof_a",
+  "runtime": {
+    "dependencies": "Python standard library only",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "schema": "wave29-s0-frame-exclusion-discovery-v1",
+  "single_lattice_scope": {
+    "K12": {
+      "determinant": 729,
+      "even_integral": true,
+      "minimum": 4,
+      "norm_four_count": 756,
+      "positive_definite": true,
+      "rank": 12
+    },
+    "LAMBDA_F": {
+      "determinant": 1,
+      "even_integral": true,
+      "minimum": 4,
+      "norm_four_count": 146880,
+      "positive_definite": true,
+      "rank": 32
+    },
+    "S0": {
+      "determinant": 729,
+      "minimum": 4,
+      "norm_four_count": 147636,
+      "rank": 44,
+      "root_count": 0,
+      "twenty_one_dual_even_integral": true,
+      "twenty_one_dual_minimum": 28
+    }
+  },
+  "verdict": {
+    "Conway_99": "UNKNOWN",
+    "S0_full_projector_Schur_endpoint_origin": "REFUTED_DERIVED",
+    "all_h_729_lattices": "UNKNOWN",
+    "independent_verification_required": true,
+    "n3_equals_708": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  }
+}

@@ -1,0 +1,26 @@
+role: verifier
+date_utc: 2026-07-27T14:39:14Z
+git_commit: ef49b60aafd67f9007f6c218c39fd50392453a1b
+claim_label: VERIFIED
+scope: "Conditional on n3=4158, r3=12, all edges type 222, and occurrence of canonical Wave 41 mask-51739 rank-33 local lift: exact Gram, component, pair, exhaustive six-set, and necessary outside-H reductions."
+inputs:
+  - "verification/wave41-allquotient-lifts/independent-results.json | sha256 062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b"
+  - "attempts/wave42-joint-incidence/exact-results.json | sha256 40bfee8fd082972d5e7ea0a5ef959be2b1b5c75232076ec8510d42b6c98be9cc | opened only after implementation-freeze"
+method: "Before discovery access, reconstruct the mask-51739 core and rank-33 K39 block; derive BB^T directly from SRG common-neighbour equations; prove component Cauchy equality; enumerate all 216000 fibre-pair triples; verify a distinct complete two-fibre concurrence certificate; derive overlap/H counts. Then compare the frozen result against discovery and run hostile mutation tests."
+command:
+  - ".\\.venv\\Scripts\\python.exe -B verification\\wave42-joint-incidence\\independent_check.py --output verification\\wave42-joint-incidence\\independent-results.json --certificate verification\\wave42-joint-incidence\\two-fibre-certificate.json --verify"
+  - ".\\.venv\\Scripts\\python.exe -B verification\\wave42-joint-incidence\\comparison_check.py --output verification\\wave42-joint-incidence\\comparison.json --verify"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest discover -s verification\\wave42-joint-incidence -p \"test_*.py\" -v"
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave42-joint-incidence\\exact_check.py --verify attempts\\wave42-joint-incidence\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest discover -s attempts\\wave42-joint-incidence -p \"test_*.py\" -v"
+outputs:
+  - "verification/wave42-joint-incidence/independent-results.json | sha256 4032826b875d8ebadcd4d9b864a9789068546e33705c62970001c9011ba76b13"
+  - "verification/wave42-joint-incidence/two-fibre-certificate.json | sha256 c3eea5bfad450af5f5852a36007b6e6440b4d3e955c459689a25814121024650"
+  - "verification/wave42-joint-incidence/comparison.json | sha256 4275129fc6393a9e3c64a96d3cc763ba8a9635df9f5a3e851451d07303c75edc"
+  - "verification/wave42-joint-incidence/implementation-freeze.sha256 | sha256 e41397dd33a50505abd28aee86ab2ea1a571430cadc19f8943c59e07326a2059"
+limitations:
+  - "This verifies one canonical rank-33 local lift, not every rank-33 or triangle-free lift."
+  - "The positive certificates cover only fibres 0 and 1; neither is a full three-fibre B."
+  - "No full B or compatible H was constructed or excluded."
+  - "No endpoint exclusion, strict upper bound below 4158, graph, counterexample, solution, or novelty/priority result is obtained."
+

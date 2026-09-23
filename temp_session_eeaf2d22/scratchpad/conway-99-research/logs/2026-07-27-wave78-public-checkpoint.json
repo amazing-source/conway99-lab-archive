@@ -1,0 +1,43 @@
+{
+  "claim_label": "VERIFIED_WITH_CORRECTION",
+  "date_utc": "2026-07-27T23:40:53Z",
+  "format": "conway99-wave78-public-checkpoint-v1",
+  "git_base_commit": "976098b50ce5194bf4a18aeeceaec1de98a1c5fb",
+  "manifests": {
+    "wave71_discovery": "f0551b070edafc29d4adf5a380769c9bf4793721634e627ec1babd86b3117b39",
+    "wave71_verification": "0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237",
+    "wave74_discovery": "4cb63f21352c2268714f72d55e3b37aab69394939bddbe87bbf06f5b918583e5",
+    "wave74_verification": "eb19bd74e6e6017186f458bcd74390d231bafa9edfa92ad9f7f81e2a1d566612",
+    "wave78_discovery": "5537a48b72733345142b4a6aed2c10110e7a42e4a26efe87a0cf674f41f54c0e",
+    "wave78_verification": "f96134457f81fa7b66d3de73086323f640ec1259f49d134e77584d33056f766b"
+  },
+  "prior_checkpoint": "logs/2026-07-27-wave72-public-checkpoint.json",
+  "results": {
+    "wave71_modular_theta": {
+      "q16_count_congruence": "N14+N16+N18=2 mod 14",
+      "q16_minimum_K_upper_bound": 18,
+      "q_less_than_16_minimum_K_upper_bound": 28,
+      "short_vector_norms": [14, 16, 18],
+      "verifier_corrections": 1
+    },
+    "wave74_short_vector_closure": {
+      "norm18_h2_excluded": true,
+      "norm18_surviving_h": [0, 1]
+    },
+    "wave78_packing": {
+      "norm16_histograms": 1,
+      "norm18_h0_histograms": 7,
+      "norm18_h1_histograms": 4,
+      "norm16_unique_histogram": [11, 64, 8]
+    }
+  },
+  "status": "VERIFIED_WITH_CORRECTION",
+  "status_wall": {
+    "all_short_vector_branches_excluded": false,
+    "conway_99": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rank_f7_28": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

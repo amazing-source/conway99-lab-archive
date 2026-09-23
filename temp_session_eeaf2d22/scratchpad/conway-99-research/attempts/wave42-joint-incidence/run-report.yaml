@@ -1,0 +1,20 @@
+role: construction
+date_utc: 2026-07-27T14:30:00Z
+git_commit: ef49b60aafd67f9007f6c218c39fd50392453a1b
+claim_label: DERIVED
+scope: "Conditional on n3=4158, r3=12, all edges type 222, and canonical Wave 41 rank-33 lift mask 51739: exact no-symmetry reduction of simultaneous B to a 45032-candidate three-way matching, one complete two-fibre positive-control certificate, and forced aggregate H counts."
+inputs:
+  - "verification/wave41-allquotient-lifts/independent-results.json | sha256 062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b"
+method: "Reconstruct the cubic core and exact forced Gram; prove component Cauchy equality; enumerate every nonmatching-pair triple; impose Gram support and pointwise mixed-equation nonnegativity; validate a 60-entry two-fibre concurrence permutation; derive the H overlap, triangle, and four-cycle census."
+command:
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave42-joint-incidence\\exact_check.py --verify attempts\\wave42-joint-incidence\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest discover -s attempts\\wave42-joint-incidence -p \"test_*.py\" -v"
+outputs:
+  - "attempts/wave42-joint-incidence/exact-results.json | sha256 40bfee8fd082972d5e7ea0a5ef959be2b1b5c75232076ec8510d42b6c98be9cc"
+  - "attempts/wave42-joint-incidence/README.md | sha256 73f5622ce899870c732c173eece8167cc6818d2777d13502cd7df4c0642cb358"
+  - "attempts/wave42-joint-incidence/failed-routes.md | sha256 6629003b1e14c09008dad165e684a9da92404b1ad9535209d935b31a149e9de6"
+limitations:
+  - "Discovery cannot verify itself; independent verification is required before promotion."
+  - "The result concerns one canonical rank-33 lift, not all 264 rank-33 masks or all 37378 triangle-free lifts."
+  - "The two-fibre certificate is not a simultaneous three-fibre B."
+  - "No compatible H, graph, endpoint exclusion, improved upper bound, Conway-99 solution, or novelty result is obtained."

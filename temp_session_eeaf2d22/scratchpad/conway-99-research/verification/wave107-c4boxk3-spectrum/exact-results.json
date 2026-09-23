@@ -1,0 +1,119 @@
+{
+  "claim_label": "VERIFIED",
+  "forced_graph_invariants": {
+    "degree_wedges": 6393,
+    "edges": 549,
+    "four_cycles": 1356,
+    "nullity_Q_D": 4,
+    "rank_Q_D_minus_3I": 45,
+    "rank_Q_D_plus_4I": 55,
+    "traces": {
+      "1": 0,
+      "2": 1098,
+      "3": 1002,
+      "4": 37518
+    },
+    "triangles": 167
+  },
+  "format": "wave108-independent-wave107-verification-v1",
+  "incidence_census": {
+    "boundary_incidences": 120,
+    "maximum_outside_motif_degree": 2,
+    "motif_degree_counts": {
+      "0": 3,
+      "1": 48,
+      "2": 36
+    },
+    "outside_degree_counts": {
+      "12": 36,
+      "13": 48,
+      "14": 3
+    },
+    "outside_pair_incidences": 36
+  },
+  "independent_method": {
+    "global_resolvent": "(xI-A)^-1=((x+1)I+A+2J/(x-14))/((x-3)(x+4))",
+    "motif_characteristic_polynomial": "Newton identities from exact adjacency traces",
+    "principal_complement": "Jacobi complementary-minor identity plus the rank-one action of J on the regular motif"
+  },
+  "input_validation": {
+    "entries_valid": true,
+    "entry_count": 9,
+    "manifest_sha256": "7e899602825d3cdf989affade8a1e5a6256f17ba911f6351ea8bfe4a3b05d2b0"
+  },
+  "motif": {
+    "characteristic_coefficients_sha256": "949daabac7465d23456f7b00a534e3168a72480b33d57a23657064421b276962",
+    "characteristic_polynomial": "(x-4)(x-2)^2(x-1)^2*x*(x+1)^4*(x+3)^2",
+    "degree": 4,
+    "edges": 24,
+    "eigenspace_nullities": {
+      "-1": 4,
+      "-3": 2,
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "4": 1
+    },
+    "order": 12,
+    "spectrum": {
+      "-1": 4,
+      "-3": 2,
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "4": 1
+    }
+  },
+  "outside_characteristic_polynomial": {
+    "coefficients_ascending_sha256": "cbf5c3b8007023cf57e585ca200e5dca63e568c786c01a0be20b687f61ab7b3e",
+    "degree": 87,
+    "factorization": "(x-3)^42 (x+4)^32 (x^2-9x-46) (x+3)^2 (x+2)^2 (x+1) x^4 (x-2)^2",
+    "quadratic_discriminant": 265,
+    "quadratic_root_intervals": {
+      "larger": [
+        "25/2",
+        "13"
+      ],
+      "smaller": [
+        "-4",
+        "-7/2"
+      ]
+    }
+  },
+  "perron_and_interlacing": {
+    "D_one": "14*one-s",
+    "D_s": "24*one-5*s",
+    "basis_characteristic_polynomial": "x^2-9x-46",
+    "cauchy_interlacing_passes": true,
+    "invariant_basis_matrix_columns": [
+      [
+        14,
+        24
+      ],
+      [
+        -1,
+        -5
+      ]
+    ],
+    "outside_graph_connected": true,
+    "positive_coordinate_lower_bound": "31/2",
+    "positive_eigenvector": "(rho+5)*one-s",
+    "rho_is_simple": true
+  },
+  "scope": "Conditional spectral and graph-invariant consequences of an induced C4 Cartesian K3 motif in a hypothetical srg(99,14,1,2).",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "literature_novelty": "UNKNOWN",
+    "motif_excluded": false,
+    "motif_extension": "UNKNOWN",
+    "spectral_obstruction_found": false
+  },
+  "verdict": "VERIFIED_SCOPED",
+  "wrong_quadratic_audit": {
+    "difference": 16,
+    "forced_trace_D2": 1098,
+    "variant": "x^2-9x-38",
+    "variant_trace_D2": 1082,
+    "verdict": "REFUTED"
+  }
+}

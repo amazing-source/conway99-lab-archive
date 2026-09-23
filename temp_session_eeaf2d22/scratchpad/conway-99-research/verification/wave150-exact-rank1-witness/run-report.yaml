@@ -1,0 +1,59 @@
+role: verifier
+date_utc: 2026-07-28T12:08:43Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED
+scope: >-
+  Exact rational feasibility of the frozen Wave44+Wave147+Wave148
+  order-eight count relaxation at n3=4158 on both zero-centered-covariance
+  faces.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: attempts/wave150-order8-sdp-scout/package-manifest.sha256
+    sha256: ae831ec52fbaf65b9ddc66dee77c4c076621d65a059ec3205e02a3b76bfafb1d
+  - path: attempts/wave150-order8-sdp-scout/exact-rank1-witness.json
+    sha256: e63afbe9ca36b4b1571b3dde75309d0cce45f3bc862d6e8c08bfe62f78dc130d
+  - path: attempts/wave150-order8-sdp-scout/rank1-selection.json
+    sha256: 0eb21457bfbdc1d8198d46f69d966e4b0f5d0db356d38b6005c7fbed1b19bcf5
+  - path: attempts/wave44-rooted-flags/row-system.json
+    sha256: fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722
+  - path: attempts/wave147-alternative-lane/coefficients.json.gz
+    sha256: a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e
+  - path: attempts/wave148-marked-order8/marked-rows.json.gz
+    sha256: e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1
+  - path: verification/wave44-rooted-flags/independent_check.py
+    sha256: 017f29d5011783836cf525929597ec961781d6d6d0affd468951ac355edc92cd
+  - path: verification/wave148-marked-order8/clean_room_rows.py
+    sha256: 7af432dbbf0d7c1f727944dcc26b63f0e1a54ff52082819a8ddd0fc5beb4544a
+  - path: verification/wave148-marked-order8/package-manifest.sha256
+    sha256: 1d57ec93abd7cfd586fc5b5f24d669603f89349e7042a802e7425d536a8375a0
+method: >-
+  Freeze the 30-entry discovery package; strictly parse the exact witness;
+  rebuild all 170 Wave44 equations; derive order-five and order-six counts
+  by exact deletion; independently enumerate and compare all 2414 Wave147
+  rooted coefficient matrices; reconstruct all 5384 Wave148 marked rows;
+  build both centered finite covariance identities including overlap orders
+  five through eight; replay all 10310 nontrivial equations over Q; and
+  independently reproduce the 874-column modular full-rank selection over
+  F_1000003 without importing or executing discovery code.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification/wave150-exact-rank1-witness/independent_verify.py;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification/wave150-exact-rank1-witness -p "test_*.py" -v
+outputs:
+  - path: verification/wave150-exact-rank1-witness/independent_verify.py
+    sha256: 8fc57dae24e3fcab36422de619bc0781d77a76b6cd84c94cbe38c761cf71a605
+  - path: verification/wave150-exact-rank1-witness/test_independent_verify.py
+    sha256: 07f12ea08c80aabc98189650e7574c527a6569adbb45bf705235a3dc5f9cc7e9
+  - path: verification/wave150-exact-rank1-witness/verification-results.json
+    sha256: 1b151b90a6b2fc7043e9a5f47f13a974f171ea70f6d019aa2f5e26bd253e3540
+limitations:
+  - The exact vector is a feasible aggregate count vector, not a graph.
+  - Arbitrary higher-order overlap compatibility is not represented.
+  - The verified result retires only this finite relaxation as an endpoint
+    exclusion route.
+  - No graph construction, strict n3 bound, Conway-99 resolution, or external
+    novelty claim follows.

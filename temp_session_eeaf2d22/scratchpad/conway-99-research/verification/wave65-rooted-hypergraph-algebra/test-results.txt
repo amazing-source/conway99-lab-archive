@@ -1,0 +1,14 @@
+Command:
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave65-rooted-hypergraph-algebra -p "test_*.py" -v
+
+Result:
+  test_all_averaged_psd_lanes ... ok
+  test_generic_hypergraph_identities ... ok
+  test_manifest ... ok
+  test_positive_control ... ok
+  test_rooted_scaffold ... ok
+  test_scalar_coupling ... ok
+  test_target_and_generic_moments ... ok
+
+  Ran 7 tests in 0.447s
+  OK

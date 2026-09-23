@@ -1,0 +1,30 @@
+role: verifier
+date_utc: 2026-07-28T14:55:00Z
+git_commit: 5447f0a2e2fd83073f906a065ddc71bcd88c9db2
+claim_label: VERIFIED
+scope: >-
+  Independently verify that every hypothetical srg(99,14,1,2) satisfies
+  12*C8 <= 37422+3*P = 41580-n3, conditional only on the separately
+  verified identity n3+3P=4158.
+inputs:
+  - path: attempts/wave165-general-cube-upper/package-manifest.sha256
+    sha256: 9a8e3ef764e0f137c8fb2c6857452a69bf1dd813edc373372306289458f6bad3
+  - path: verification/wave94-general-n3-norm14-bound/package-manifest.sha256
+    sha256: a579aa242fc11583ef38525718cc87954fd86a732032b456939d9904a90603e9
+method: >-
+  Clean-room parameter arithmetic, exact fixed-C4 common-neighbor
+  accounting, marked-square/prism bijection, cube-face double count, and
+  hostile indexing, inducedness, parity, and multiplicity checks.
+command: none; independent paper verification
+outputs:
+  - path: verification/wave165-general-cube-upper/README.md
+    sha256: 36576a6dd52f8b323f01af48aae0b376e421ed820c82af25e182fd6cec7eb51a
+  - path: verification/wave165-general-cube-upper/protocol.md
+    sha256: e4737f7617a73dce7ed704d4007c0e8e9d24e65766648f7664f277ad16f38bf3
+  - path: verification/wave165-general-cube-upper/verification-report.md
+    sha256: 5a0e1a3815ed156f75955418feae51b023b0be0b8ebf4d984c2e8cb2dea9cfe0
+limitations:
+  - The imported identity n3+3P=4158 is separately verified.
+  - No strict n3 upper bound below 4158 follows from this theorem alone.
+  - No lower bound on W8-3*C8 is proved.
+  - Literature novelty and Conway-99 remain UNKNOWN.

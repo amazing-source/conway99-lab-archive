@@ -1,0 +1,140 @@
+{
+  "census": {
+    "hamiltonian_edge_distribution": {
+      "10": 7,
+      "11": 2,
+      "7": 1,
+      "8": 2,
+      "9": 7
+    },
+    "order_6_admissible_labeled": 13174,
+    "order_6_admissible_unlabeled": 62,
+    "order_6_all_unlabeled": 156,
+    "order_7_admissible_labeled": 394020,
+    "order_7_admissible_unlabeled": 208,
+    "order_7_all_unlabeled": 1044,
+    "order_7_hamiltonian_unlabeled": 19
+  },
+  "claim_label": "VERIFIED_SCOPED_COUNT_FEASIBILITY",
+  "conclusion": {
+    "count_system_feasible": true,
+    "graph_construction": false,
+    "new_bound_beyond_n3_705": null,
+    "target_status": "UNKNOWN",
+    "warning": "The witness is an aggregate vector of induced-type counts. It supplies no consistent assignment to overlapping subsets and no 99-vertex adjacency matrix."
+  },
+  "deletion_matrix": {
+    "all_column_sums": 7,
+    "finite_field_ranks": {
+      "11": 62,
+      "2": 48,
+      "3": 57,
+      "5": 61,
+      "7": 61
+    },
+    "shape": [
+      62,
+      208
+    ]
+  },
+  "hamiltonian_alignment": {
+    "distinct_figure_classes": 19,
+    "figure_masks_H0_through_H18": [
+      44336,
+      44337,
+      44340,
+      44339,
+      44341,
+      44348,
+      44466,
+      48692,
+      44472,
+      44404,
+      44467,
+      48756,
+      111980,
+      44412,
+      44474,
+      111988,
+      48824,
+      111989,
+      120568
+    ],
+    "figure_set_equals_independent_census": true,
+    "formula_values_H0_through_H18": [
+      1237530,
+      930270,
+      1013430,
+      163500,
+      163500,
+      81750,
+      160680,
+      78930,
+      321360,
+      160680,
+      1410,
+      2820,
+      4158,
+      1410,
+      2820,
+      1410,
+      1410,
+      3453,
+      0
+    ],
+    "independent_hamiltonian_masks": [
+      44336,
+      44337,
+      44339,
+      44340,
+      44341,
+      44348,
+      44404,
+      44412,
+      44466,
+      44467,
+      44472,
+      44474,
+      48692,
+      48756,
+      48824,
+      111980,
+      111988,
+      111989,
+      120568
+    ]
+  },
+  "parameters": {
+    "h11": 2820,
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "n": 99,
+    "n3": 705
+  },
+  "scope": "Exact feasibility at n3=705,h11=2820 of the 62 order-seven vertex-deletion count equations plus the 19 pinned Hamiltonian type counts; this is not a graph construction.",
+  "source_inputs": {
+    "arxiv_2511_06572v1_archive_sha256": "10f8d9ea09dc72f4ca6bce4e9427ff1df32718d2978bb35a16db1af3c27cc39a",
+    "figure_sha256": "e37f794e7765c947d3ea76104e9c4c61a00517b649d8b7bea9eb67644fe08a2e",
+    "tex_sha256": "0b06fdc1c2951a344592c6af23abd133c4a8a68d717f199e7a0e2d7ceb909d0a",
+    "wave21_exact_results": {
+      "path": "attempts/wave21-six-vertex-lp/exact-results.json",
+      "sha256": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b"
+    },
+    "witness": {
+      "path": "attempts/wave22-full-seven-deck/witness.json",
+      "sha256": "d74453faa91e42abbe2343d428296818ae051be579305277eff6f113fe66c47d"
+    }
+  },
+  "witness_validation": {
+    "class_count": 208,
+    "deletion_rows_passed": 62,
+    "hamiltonian_counts_passed": 19,
+    "maximum_count": 3543649353,
+    "minimum_positive_count": 1,
+    "support_sha256_verifier_format": "5e1283b4db2b1bfc0974f735913e99f8c497a8aaffa0565cb8da033b0d2d6333",
+    "support_size": 105,
+    "total": 14887031544,
+    "zero_class_count": 103
+  }
+}

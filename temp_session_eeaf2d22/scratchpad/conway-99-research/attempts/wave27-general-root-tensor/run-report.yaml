@@ -1,0 +1,76 @@
+role: proof_b
+date_utc: 2026-07-24T00:24:24Z
+git_commit: 2ac11809fafee7ab752965ae49a96e922859b5ee
+claim_label: DERIVED
+scope: >-
+  Exact orthogonal-component theorem for the n3=708 endpoint package:
+  A6 and E6 cannot occur as orthogonal integral summands of the rank-44
+  scaled-dual form. Conditionally, if the entire form is an orthogonal ADE
+  root lattice, only h=21 with A20 orthogonal_sum E8^3 survives this screen.
+inputs:
+  - path: verification/2026-07-23-wave20-global-schur-audit.md
+    sha256: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  - path: verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md
+    sha256: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+  - path: verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md
+    sha256: 5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3
+  - path: verification/wave26-a2-cubic-obstruction/2026-07-23T231001Z-audit.md
+    sha256: 883f48e70336b87955f5c2a115ac8b137169310c6f5ef91fe4581cb1b6c10465
+method: >-
+  Derive frame-forced repeated-index parities for the projected symmetric
+  cubic; construct its exact ordered-tensor Gram matrix; exhaust the
+  corresponding affine lattice with Fraction LDL and exact isqrt interval
+  bounds through norm 18 for E6 and norm 60 for A6; combine empty balls
+  with the all-integer k^3=k mod 6 zero-sum energy congruence; apply the
+  rank-38 complement AM-GM trace budget; and enumerate all rank-44 ADE
+  decompositions at the eight surviving arithmetic indices.
+command: |-
+  cd attempts/wave27-general-root-tensor
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-23-wave27-general-root-tensor.md
+    sha256: 456a4ad6f27c1c9c09f84b2ff41796473f519b5aaabda36b71022a51bbbe7f38
+  - path: attempts/wave27-general-root-tensor/exact_check.py
+    sha256: 107907f610b83ddbb526daddeaa1fe850a0bd73e2dfeeaa386ca578a875bf8d5
+  - path: attempts/wave27-general-root-tensor/test_exact_check.py
+    sha256: 3d9197c959b4624755243d21ecdc10dda95012b083717199f055f19a8872123f
+  - path: attempts/wave27-general-root-tensor/exact-results.json
+    sha256: 98aba5a30b2f3a83b9f6ce6fd6a20458505b668249d97b0810907de50cae678d
+  - path: attempts/wave27-general-root-tensor/input-freeze.sha256
+    sha256: 13c5327b27ad81311e7857460c777db85064141fbdd8b33b5a8906f456647eaa
+  - path: attempts/wave27-general-root-tensor/failed-routes.md
+    sha256: e806127f2140212277651ffa47b24087f79d6ba59c91b5aa290f1d73ac51f1d4
+tests:
+  status: PASS
+  count: 17
+  deterministic_regeneration: PASS_BYTE_IDENTICAL
+exact_searches:
+  E6:
+    dimension: 56
+    cap: 18
+    accepted_partial_nodes: 10011
+    complete_leaves: 0
+    actual_zero_sum_energy_floor: 24
+  A6:
+    dimension: 56
+    cap: 60
+    accepted_partial_nodes: 105185
+    complete_leaves: 0
+    actual_zero_sum_energy_floor: 66
+results:
+  orthogonal_E6_summand: REFUTED_DERIVED_PENDING_VERIFIER
+  orthogonal_A6_summand: REFUTED_DERIVED_PENDING_VERIFIER
+  full_ADE_conditional_survivor: "h=21, A20 orthogonal_sum E8^3"
+  unrestricted_h_rows: UNKNOWN
+  n3_708: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - Orthogonal integral summands only; no nonorthogonal subsystem claim.
+  - Full-ADE census assumes the entire scaled-dual form is an ADE root lattice.
+  - Empty parity balls are one-way necessary-condition evidence.
+  - No A20 or E8 cubic minimum is claimed.
+  - No primitive embedding, projector frame, Schur certificate, graph, endpoint
+    exclusion, formal-kernel proof, or novelty determination is supplied.
+output_commit_status: UNCOMMITTED_NO_GIT_PER_ORCHESTRATOR

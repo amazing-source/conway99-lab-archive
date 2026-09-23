@@ -1,0 +1,52 @@
+role: verifier
+date_utc: 2026-07-27T16:51:41Z
+git_commit: 4636864ffc6310acaa71a41fff239a24e28404fc
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification of finite four-vertex rooted Gram coefficient
+  streams, Petersen and Clebsch controls, exact PSD attacks on the frozen
+  Wave43 and Wave44 count witnesses, and immutable Wave45 checkpoint v1 with
+  17 cuts and 15 witnesses.
+inputs:
+  - path: verification/wave45-flag-moment/protocol-freeze.md
+    sha256: 2665ca56b31721762204a91d6e9412f7977fccea9c84e90d99325c9d221661b3
+  - path: attempts/wave45-flag-moment/checkpoint-v1-manifest.sha256
+    sha256: 9c6eae037eefd2d3d4ae4ed0188ed5b0fae1957a42c42b11b066d59ebb47f791
+  - path: attempts/wave45-flag-moment/checkpoint-v1-seed0-17cuts-15witnesses.json
+    sha256: 96a50f9add4b12b2c86587da29ade8b9da34f88a7b7617c048ffb7139c12b64b
+  - path: attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json
+    sha256: ffcf9f9942446d66c3559d97954217af3ba17c1978ea9417c6e99920d4a45420
+  - path: attempts/wave45-flag-moment/checkpoint-v1-stored-witness-results.json
+    sha256: 2c55b6ab1af9cac7d8f5800466abadb8c0c2603b5f96013d3fd160b6816c24df
+method: >-
+  Freeze definitions before discovery inspection; independently enumerate
+  locally admissible graph and rooted-flag classes; construct every exact
+  overlap coefficient; calibrate by direct outer products on Petersen and
+  Clebsch; reconstruct lower counts and matrices; replay all supplied integer
+  directions; then rebuild every sealed cut and witness using exact arithmetic.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave45-flag-moment\independent_verify.py --verify
+  verification\wave45-flag-moment\independent-results.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave45-flag-moment\compare_discovery.py --verify
+  verification\wave45-flag-moment\comparison-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave45-flag-moment -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  verification\wave45-flag-moment\manifest_check.py
+outputs:
+  - path: verification/wave45-flag-moment/independent-results.json
+    sha256: 8d9a004392e3f642c0aacf272a33f7cce2bc21254e79fe4123bec5a065ae0bac
+  - path: verification/wave45-flag-moment/comparison-results.json
+    sha256: 936fca299c5c0cfb6fd226e0542b07bf744877eab6366a6e840895888cf3daf1
+resource_bounds:
+  background_processes_started: 0
+  minimum_recorded_host_free_memory_percent: 52.83
+limitations:
+  - Exact negative directions refute only the supplied aggregate witnesses.
+  - Immutable checkpoint v1 ends QF_LIA_UNKNOWN because of timeout.
+  - The full PSD cone and the entire PSD-constrained feasible region were not
+    exhausted.
+  - Endpoint n3=4158, a strict upper bound, Conway-99, novelty, and priority
+    remain UNKNOWN.

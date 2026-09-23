@@ -1,0 +1,648 @@
+{
+  "aligned_positive_control": {
+    "Y_Z_permutation": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "Z_matching": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6,
+      9,
+      8,
+      11,
+      10
+    ],
+    "core_component_sizes": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "core_laplacian_rank_F7": 30,
+    "full_39_block_rank_F7": 31,
+    "partition": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scope": "exact relaxed local control; it contains type-1/prism structure and is not a prism-free endpoint or full graph"
+  },
+  "claim_label": "BOUNDED_SCOUT_NON_EVIDENTIARY",
+  "exact_block_rank_identity": {
+    "derivation": "The 36-space splits into the three-dimensional fibre-constant space and ker(R). The cubic equitable quotient is J_3. On ker(R), K_39 is 2(3I-A_core); exact reduction on the six triangle/fibre-constant coordinates has rank 3 while 3I-A_core has quotient rank 2.",
+    "identity": "rank_F7(K_39)=1+rank_F7(3I_36-A_core)",
+    "quotient_audit": {
+      "K39_quotient_rank_F7": 3,
+      "K39_triangle_plus_fibre_constant_matrix_F7": [
+        [
+          0,
+          6,
+          6,
+          2,
+          5,
+          5
+        ],
+        [
+          6,
+          0,
+          6,
+          5,
+          2,
+          5
+        ],
+        [
+          6,
+          6,
+          0,
+          5,
+          5,
+          2
+        ],
+        [
+          6,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        [
+          1,
+          6,
+          1,
+          3,
+          2,
+          3
+        ],
+        [
+          1,
+          1,
+          6,
+          3,
+          3,
+          2
+        ]
+      ],
+      "core_3I_minus_A_quotient_matrix_F7": [
+        [
+          2,
+          6,
+          6
+        ],
+        [
+          6,
+          2,
+          6
+        ],
+        [
+          6,
+          6,
+          2
+        ]
+      ],
+      "core_quotient_rank_F7": 2
+    },
+    "scope": "every three-fibre block with the forced three equal fibres, internal matchings, and pairwise perfect matchings"
+  },
+  "format": "wave40-full-39-block-bounded-scout-v1",
+  "interpretation": "Every sample restores the theorem-forced perfect matching inside Z and uses a bijective Y-Z attachment. The sample is not an exhaustion, and its minima are not rank lower bounds. The aligned rank-31 control is exact and lies outside the random sample.",
+  "limitations": [
+    "Only 512 of 12!*10395 labelled (permutation,Z-matching) pairs are sampled per type.",
+    "No completed-graph automorphism quotient or complete orbit census is claimed.",
+    "The 39-vertex controls need not extend to a 99-vertex SRG.",
+    "The sampled minima cannot improve the proved rank floor."
+  ],
+  "partition_type_count": 11,
+  "proved_floor_from_exact_census": 25,
+  "records": [
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          2,
+          4,
+          9,
+          11,
+          10,
+          6,
+          7,
+          8,
+          1,
+          5,
+          0,
+          3
+        ],
+        "Z_matching": [
+          11,
+          3,
+          10,
+          1,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          2,
+          0
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "partition_key": "1+1+1+1+1+1",
+      "rank_histogram": {
+        "34": 3,
+        "35": 87,
+        "36": 422
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          3,
+          0,
+          1,
+          9,
+          4,
+          5,
+          11,
+          10,
+          7,
+          8,
+          6,
+          2
+        ],
+        "Z_matching": [
+          3,
+          9,
+          11,
+          0,
+          5,
+          4,
+          7,
+          6,
+          10,
+          1,
+          8,
+          2
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "partition_key": "1+1+1+1+2",
+      "rank_histogram": {
+        "34": 8,
+        "35": 68,
+        "36": 436
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          3,
+          9,
+          7,
+          2,
+          0,
+          11,
+          10,
+          5,
+          6,
+          4,
+          1,
+          8
+        ],
+        "Z_matching": [
+          5,
+          6,
+          3,
+          2,
+          11,
+          0,
+          1,
+          9,
+          10,
+          7,
+          8,
+          4
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "partition_key": "1+1+1+3",
+      "rank_histogram": {
+        "34": 1,
+        "35": 60,
+        "36": 451
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          3,
+          9,
+          5,
+          6,
+          4,
+          8,
+          2,
+          10,
+          11,
+          0,
+          1,
+          7
+        ],
+        "Z_matching": [
+          2,
+          4,
+          0,
+          10,
+          1,
+          6,
+          5,
+          11,
+          9,
+          8,
+          3,
+          7
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "partition_key": "1+1+2+2",
+      "rank_histogram": {
+        "34": 4,
+        "35": 82,
+        "36": 426
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 35,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          8,
+          1,
+          7,
+          5,
+          0,
+          2,
+          6,
+          11,
+          4,
+          10,
+          9,
+          3
+        ],
+        "Z_matching": [
+          9,
+          10,
+          4,
+          6,
+          2,
+          8,
+          3,
+          11,
+          5,
+          0,
+          1,
+          7
+        ],
+        "rank_F7": 35
+      },
+      "partition": [
+        1,
+        1,
+        4
+      ],
+      "partition_key": "1+1+4",
+      "rank_histogram": {
+        "35": 62,
+        "36": 450
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          7,
+          5,
+          3,
+          0,
+          11,
+          1,
+          4,
+          8,
+          6,
+          2,
+          10,
+          9
+        ],
+        "Z_matching": [
+          6,
+          2,
+          1,
+          11,
+          5,
+          4,
+          0,
+          8,
+          7,
+          10,
+          9,
+          3
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        1,
+        2,
+        3
+      ],
+      "partition_key": "1+2+3",
+      "rank_histogram": {
+        "34": 2,
+        "35": 70,
+        "36": 440
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          0,
+          1,
+          5,
+          4,
+          2,
+          10,
+          7,
+          3,
+          11,
+          6,
+          8,
+          9
+        ],
+        "Z_matching": [
+          1,
+          0,
+          9,
+          10,
+          7,
+          8,
+          11,
+          4,
+          5,
+          2,
+          3,
+          6
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        1,
+        5
+      ],
+      "partition_key": "1+5",
+      "rank_histogram": {
+        "34": 2,
+        "35": 65,
+        "36": 445
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 35,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          6,
+          8,
+          9,
+          10,
+          0,
+          4,
+          5,
+          3,
+          2,
+          7,
+          11,
+          1
+        ],
+        "Z_matching": [
+          2,
+          5,
+          0,
+          10,
+          9,
+          1,
+          7,
+          6,
+          11,
+          4,
+          3,
+          8
+        ],
+        "rank_F7": 35
+      },
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "partition_key": "2+2+2",
+      "rank_histogram": {
+        "35": 81,
+        "36": 431
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          0,
+          5,
+          10,
+          4,
+          2,
+          6,
+          3,
+          1,
+          7,
+          9,
+          8,
+          11
+        ],
+        "Z_matching": [
+          8,
+          5,
+          7,
+          6,
+          9,
+          1,
+          3,
+          2,
+          0,
+          4,
+          11,
+          10
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        2,
+        4
+      ],
+      "partition_key": "2+4",
+      "rank_histogram": {
+        "34": 2,
+        "35": 76,
+        "36": 434
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          6,
+          1,
+          5,
+          9,
+          2,
+          4,
+          3,
+          0,
+          8,
+          7,
+          10,
+          11
+        ],
+        "Z_matching": [
+          11,
+          3,
+          5,
+          1,
+          9,
+          2,
+          8,
+          10,
+          6,
+          4,
+          7,
+          0
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        3,
+        3
+      ],
+      "partition_key": "3+3",
+      "rank_histogram": {
+        "34": 2,
+        "35": 76,
+        "36": 434
+      },
+      "sample_count": 512
+    },
+    {
+      "minimum_sampled_rank_F7": 34,
+      "minimum_witness": {
+        "Y_Z_permutation": [
+          0,
+          1,
+          7,
+          11,
+          4,
+          9,
+          6,
+          5,
+          3,
+          8,
+          2,
+          10
+        ],
+        "Z_matching": [
+          11,
+          10,
+          4,
+          8,
+          2,
+          9,
+          7,
+          6,
+          3,
+          5,
+          1,
+          0
+        ],
+        "rank_F7": 34
+      },
+      "partition": [
+        6
+      ],
+      "partition_key": "6",
+      "rank_histogram": {
+        "34": 2,
+        "35": 80,
+        "36": 430
+      },
+      "sample_count": 512
+    }
+  ],
+  "samples_per_partition_type": 512,
+  "seed": 20260727
+}

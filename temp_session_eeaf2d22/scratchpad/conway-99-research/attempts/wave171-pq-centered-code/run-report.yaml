@@ -1,0 +1,40 @@
+role: proof_a
+date_utc: 2026-07-28T20:29:51Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Unrestricted ternary block-polynomial reformulation, its exact
+  identification with the centered code, intrinsic recovery of the
+  partial-quadrangle incidence geometry, and a focused primary-source audit.
+inputs:
+  - attempts/wave170-block-profile-ternary-code/package-manifest.sha256
+  - attempts/wave20-global-obstruction/independent-verifier/independent-reconstruction.md
+  - attempts/wave35-n3-upper-spectral/exact-results.json
+  - verification/wave36-ternary-polar-bound/audit.md
+  - attempts/wave39-simultaneous-bh/package-manifest.sha256
+  - attempts/wave131-binary-lcd-enumerator/package-manifest.sha256
+  - https://www.mathnet.ru/eng/al161
+  - https://doi.org/10.5802/alco.183
+method: >-
+  Exact matrix algebra over F_3, pointwise block-codegree counting, a
+  projection/rank argument, clique reconstruction in the block graph, and
+  direct inspection of primary theorem statements. No solver or graph search
+  was used.
+command: >-
+  Paper derivation; Get-FileHash -Algorithm SHA256 on the frozen local inputs
+  and package outputs.
+outputs:
+  - attempts/wave171-pq-centered-code/README.md
+  - attempts/wave171-pq-centered-code/derivation.md
+  - attempts/wave171-pq-centered-code/source-audit.md
+  - attempts/wave171-pq-centered-code/failed-routes.md
+  - attempts/wave171-pq-centered-code/protocol.md
+  - attempts/wave171-pq-centered-code/input-freeze.sha256
+  - attempts/wave171-pq-centered-code/repository-audit.md
+limitations: >-
+  The independent verifier confirmed the derivation after renaming the
+  scaled spectral projector M0=21E0 and removing an unnecessary endpoint
+  restriction. The code is exactly the already studied centered code up to
+  multiplication by two, not a new rank obstruction. No graph, strict n3
+  bound, endpoint exclusion, target resolution, exhaustive literature proof,
+  or novelty claim is supplied.

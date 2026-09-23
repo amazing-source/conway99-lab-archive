@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-28T06:21:51Z
+git_commit: e1484c6564ddfde580191cdcb4a66a8f6ad7f2a2
+claim_label: VERIFIED
+scope: >-
+  Conditional finite-primary discriminant split, seven-primary type,
+  rootlessness, and non-exclusion of k=16,18,...,30 for the Wave 109
+  incidence-kernel eigenlattices under the frozen Wave 105 motif.
+inputs:
+  - path: attempts/wave128-alternative-spaces/package-manifest.sha256
+    sha256: 851df7c40ab2056f6a5f927093707e5e9b578df2b18662e6b95fcf6335033038
+  - path: attempts/wave128-alternative-spaces/exact-results.json
+    sha256: 4c1ba8303f3a525dfbad6990c3dfe1174be87d09ed356d683a5e5f95a75024e9
+method: >-
+  Preinspect all discovery and imported seals; rebuild Q, G, and C without
+  importing discovery code; compute full integer Smith diagonals by Euclidean
+  unimodular reduction; enumerate finite quadratic modules with exact modular
+  lifting and cyclotomic reduction; audit Milgram, seven-adic gluing, both
+  signs of the root argument, and every imported k row.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave128-alternative-spaces\independent_verify.py
+  --verify verification\wave128-alternative-spaces\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s verification\wave128-alternative-spaces -p "test_*.py" -v
+outputs:
+  - path: verification/wave128-alternative-spaces/independent-results.json
+    sha256: f5b45e7e8c6540fe1c21aae5c210f8f2d690025626ad5e0e81d5c91475e79d5a
+  - path: verification/wave128-alternative-spaces/independent_verify.py
+    sha256: e53bb9e50d822d95da4c86d5990d19a2832dd17fa30dc1645053b6e2afc48252
+  - path: verification/wave128-alternative-spaces/package-manifest.sha256
+    sha256: SELF_EXCLUDED
+limitations:
+  - Verification is conditional on the frozen motif and verified Wave 109 identities.
+  - Local discriminant compatibility is not an integral lattice construction.
+  - No rank row or motif is excluded.
+  - No outside graph or strongly regular graph is constructed.
+  - Motif extension, Conway-99, and literature novelty remain UNKNOWN.

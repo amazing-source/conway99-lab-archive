@@ -1,0 +1,83 @@
+{
+  "bound": {
+    "C": 4158,
+    "V": 99,
+    "circuit_scalar_words": 15452,
+    "edge_added_projective": 7726,
+    "integral_Q": 7033,
+    "rational_Q0": "70323/10"
+  },
+  "certificate": {
+    "all_remainder_coefficients_nonnegative": true,
+    "identity_target": "(57*C-263*V)/30",
+    "remainder_coefficients": {
+      "W": "2/5",
+      "a1": "1/10",
+      "b3": "3/5",
+      "c2": "1/5",
+      "g": "4/15"
+    },
+    "slack_weights": {
+      "RA": "7/10",
+      "S10": "1/90",
+      "S2": "6/5",
+      "SE2": "1/5",
+      "SF": "11/30",
+      "SH": "4/45",
+      "SI": "4/5",
+      "SL": "3/10"
+    }
+  },
+  "claim": {
+    "bound": "Q>=7033",
+    "degree": "d(e)<=10",
+    "flag_cap": "1287-n3-h-g>=0",
+    "new_slack": "35640-3*n3-9*p3-10*a3-10*b3>=0"
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "local_incidence": {
+    "S10": "360*V-3*n3-9*p3-10*a3-10*b3>=0",
+    "SF": "13*V-n3-h-g>=0",
+    "SH": "3*h-a3-b3>=0",
+    "flag_supports_per_orientation": 5,
+    "global_flag_cap": 1287,
+    "global_oriented_label_cap": 3564,
+    "selected_exact3_degree_cap": 10,
+    "triangles_blocked_by_common_neighbors": 2,
+    "triangles_through_leaf": 7,
+    "vertices_V": 99
+  },
+  "rational_null_control": {
+    "evaluation": {
+      "I": "8316",
+      "Q0": "70323/10",
+      "RA": "0",
+      "S10": "0",
+      "S2": "0",
+      "S36": "99/5",
+      "SE2": "0",
+      "SF": "0",
+      "SH": "0",
+      "SI": "0",
+      "SL": "0"
+    },
+    "is_object": false,
+    "row": {
+      "C": "4158",
+      "V": "99",
+      "a2": "33/5",
+      "b1": "3036/5",
+      "c1": "3531",
+      "n1": "33/5",
+      "n2": "1518/5",
+      "n3": "1287",
+      "p2": "1518/5",
+      "p3": "3531",
+      "r1": "20691/5",
+      "r2": "33/10",
+      "y": "33/5"
+    },
+    "target": "70323/10"
+  },
+  "search_scope": "exact SRG incidence identities and rational coefficient algebra only; no graph, code, cover, SAT, LP, configuration, enumeration, or isomorphism search"
+}

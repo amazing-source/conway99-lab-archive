@@ -1,0 +1,43 @@
+{
+  "bounded_run": {
+    "elapsed_seconds": 600.163147,
+    "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+    "mip_gap": null,
+    "mip_node_count": null,
+    "node_limit": 1000000,
+    "scipy_status": 1,
+    "success": false,
+    "terminal_negative_certificate": false,
+    "time_limit_seconds": 600.0
+  },
+  "certificate": null,
+  "claim_label": "UNKNOWN",
+  "format": "wave43-joint-completion-milp-v1",
+  "inputs": {
+    "canonical_core_edges_sha256": "b0a9e7cc75d933597d43c9395e0192268b71ad88b93120a82dc662e64585b664",
+    "canonical_mask": 51739,
+    "retained_candidate_sha256": "f796334943793224fb28bc0bcfc40d427bf56892c16386887ca7866a3b9ac963",
+    "verification/wave41-allquotient-lifts/independent-results.json": "062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b"
+  },
+  "limitations": [
+    "A solver infeasibility or timeout status is not nonexistence evidence.",
+    "A feasible incumbent is only a full-B candidate until independently reconstructed.",
+    "Even a verified full B would not provide a compatible outside graph H.",
+    "No endpoint exclusion, strict upper bound, graph, or novelty claim follows automatically."
+  ],
+  "model": {
+    "binary_variables": 45032,
+    "exact_cross_fibre_gram_rows": 432,
+    "exact_pair_partition_rows": 180,
+    "nonzeros": 675480,
+    "total_exact_rows": 612
+  },
+  "role": "construction",
+  "scope": "Conditional canonical mask-51739 full-B problem under n3=4158, rank_F3(M)=12, and all edges type 2+2+2. No automorphism assumed.",
+  "status_wall": {
+    "compatible_H": "NOT_CONSTRUCTED_OR_EXCLUDED",
+    "conway_99_resolved": false,
+    "endpoint_excluded": false,
+    "full_B": "NOT_CONSTRUCTED_OR_EXCLUDED"
+  }
+}

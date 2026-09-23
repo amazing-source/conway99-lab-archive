@@ -1,0 +1,62 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-28T03:09:16Z",
+  "format": "conway99-wave100-public-checkpoint-v1",
+  "git_base_commit": "cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee",
+  "manifests": {
+    "wave90_discovery": "f7dda4995714a4216c8a8c00738d8da070ff4f485fb7ddd4596921b309482f88",
+    "wave90_verification": "87577c23a8b6b3f251de7e3d08b13fcb7a6f30d809c88b35a11d15db5e40201a",
+    "wave94_discovery": "6c6c12690b59c9d86daf25190e3c89b0616aef525498246295974f1d27c30bf8",
+    "wave94_verification": "a579aa242fc11583ef38525718cc87954fd86a732032b456939d9904a90603e9",
+    "wave97_discovery": "dd7869bd8f9041014087cac1e1840763794a4e8d52f2c701262d7ec009515bec",
+    "wave97_verification": "e7cdd56b40a385ffff42dcdf66f0a0f5b54f60af8472d6a9a9718f7209114992",
+    "wave98_unknown_report": "beba870637ccd831963e6bc6a6aa68b70e7a307ce54a86807fde6aa932890f59",
+    "wave99_discovery": "e3a30e37bbf08dcd60e4fff7df6f8f4e51780987ba3446e96ff136954e94a9e6",
+    "wave99_verification": "2d94086a0abef0612a445528319e1db4ef54c1fbb7fa361caef6025739aa654f",
+    "wave100_discovery": "0dedf60c7994f842887c084bae7f6585f8fc98be568c940efb5b5ea90320bc88",
+    "wave100_verification": "a4aaed31aa47c26c3d2894985ae4b9602ed0408abe442d1d407510c2c893f916"
+  },
+  "prior_checkpoint": "logs/2026-07-28-wave86-public-checkpoint.json",
+  "provenance_correction": {
+    "affects_formulas": false,
+    "description": "Wave 51 already implied R*R=1_perp and the quadratic circuit; Wave 97 supplies later Schur-cube, compound, Smith, generalized-weight, and orbit consequences."
+  },
+  "results": {
+    "wave90_endpoint_first_moment": {
+      "n14_upper": 5544,
+      "rank_assumption": false
+    },
+    "wave94_general_first_moment": {
+      "n14_upper_formula": "floor((55440-4*n3)/7)",
+      "rank_assumption": false
+    },
+    "wave97_exterior": {
+      "compound_code": "[4851,378]_7",
+      "rank28_smith": "1^378,7^1204,49^1687,343^1204,2401^280,24010^98",
+      "schur_cube": "F7^99"
+    },
+    "wave98_scalar_probe": {
+      "integral_even_nonnegative_through": 1000,
+      "result": "UNKNOWN"
+    },
+    "wave99_endpoint_pair_moment": {
+      "n14_upper": 4950,
+      "rank28_heavier_shell_inequality": "407*N16+43*N18>=2165002"
+    },
+    "wave100_general_pair_moment": {
+      "compatible_rows_checked": 1387,
+      "n14_upper_formula": "2*floor((55440-5*n3)/14)",
+      "rank_assumption": false
+    }
+  },
+  "status": "VERIFIED_WITH_PROVENANCE_CORRECTION",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "n16_n18_upper_bound": "NOT_PROVED",
+    "novelty": "UNKNOWN",
+    "rank_f7_28": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED",
+    "wave98_scalar_probe": "UNKNOWN"
+  }
+}

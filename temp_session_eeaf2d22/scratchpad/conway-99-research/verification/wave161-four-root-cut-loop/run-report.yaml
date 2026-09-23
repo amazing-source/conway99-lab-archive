@@ -1,0 +1,48 @@
+role: verifier
+date_utc: 2026-07-28T14:01:55Z
+git_commit: 81f1c18c1bb34f487c3e938fb12386ef928e5b7f
+claim_label: VERIFIED
+scope: >-
+  Exact rational feasibility of the finite n3=4158 fifteen-cut
+  pair-root-zero-face count relaxation, plus exact root-mask-3 and
+  root-mask-12 negative covariance directions for that pseudowitness.
+inputs:
+  - path: attempts/wave159-four-root-cut-loop/package-manifest.sha256
+    sha256: 44b76ca9538f5a3ed9d9a1f44ef29373f0cb6e422b0886063153bdff3545ff8b
+  - path: attempts/wave152-four-root-order8/package-manifest.sha256
+    sha256: 1fe84e8e8e52b091293a30e1b09c6772f092123803e1e62362726c6c73d1f38d
+  - path: verification/wave155-four-root-feedback/independent_verify.py
+    sha256: c8aecd00c7da53fa929b53503bf437c0d0714c79a2e85a451168ac2e85b75c88
+  - path: verification/wave161-four-root-cut-loop/preinspection-freeze.sha256
+    sha256: e9e68a4f76f5f674defef31e93f1f1f9feb0390375bcf40f84d21b8100884038
+method: >-
+  Verify exact-byte inventories and Wave152 preservation; use only a
+  SHA256-pinned prior clean-room graph/count engine; independently rebuild
+  the two fresh covariance cuts and two new negative directions from
+  declarative flag vectors; replay all fifteen cut values, every exact count
+  row, the selected modular-rank certificate, and the scaled negative
+  quadratic values. No Wave159/Wave152 discovery Python was imported or
+  executed, and numerical solver status was not used as evidence.
+command: |
+  $env:PYTHONDONTWRITEBYTECODE='1'
+  .\.venv\Scripts\python.exe verification\wave161-four-root-cut-loop\independent_verify.py --verify verification\wave161-four-root-cut-loop\exact-results.json
+  .\.venv\Scripts\python.exe -m unittest verification\wave161-four-root-cut-loop\test_independent_verify.py -v
+outputs:
+  - path: verification/wave161-four-root-cut-loop/exact-results.json
+    sha256: be0f78b4125aec18d221bbb1e36be263bbe4c03457bfb6150e3a2793e8e30782
+  - path: verification/wave161-four-root-cut-loop/resource-report.json
+    sha256: 92b4bb610fbcc45b47dad2e4ff1c1d86b7a835141a9d3ca895c9ac48f187cfa9
+  - path: verification/wave161-four-root-cut-loop/independent_verify.py
+    sha256: dabf4a3952edb0cb200ef745af8516454e3a71188f8e5d54ee996a18e32137fc
+  - path: verification/wave161-four-root-cut-loop/test_independent_verify.py
+    sha256: d73162de6445061855ece5f96cdff42eb675900db35c40bf883b042d4860dd1b
+  - path: verification/wave161-four-root-cut-loop/verification-report.md
+    sha256: 19b0057a0fcc618d835ff0ab1be839b0d060dfee15ba9417abd2130917a22e0e
+  - path: verification/wave161-four-root-cut-loop/README.md
+    sha256: d03f38a8e500c04f4a72b6eeb0b4f73885bca5e3a00b3ab9d57c656a415dff73
+limitations: >-
+  VERIFIED_WITH_SCOPE only. The count vector is a finite-relaxation
+  pseudowitness, not a graph. The seven blocks without negative certificates
+  are not proved positive semidefinite. Endpoint feasibility/exclusion, a
+  strict upper bound below 4158, graph construction, and Conway-99 remain
+  UNKNOWN. The inherited witness metadata saying after two cuts is stale.

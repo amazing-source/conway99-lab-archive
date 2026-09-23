@@ -1,0 +1,254 @@
+{
+  "claim_label": "VERIFIED_WITH_CLARIFICATION",
+  "clarification": "In the mixed m=2 exclusion, a positive unit not adjacent to the -2 vertex already shares at least four negative-unit neighbors with the +2 vertex and violates mu=2. Only after that subcase is rejected may adjacency to -2 be called forced.",
+  "fixed_C4": {
+    "graph_compatible_count_established": false,
+    "norm16_type_compatible_selections": 6148477125000,
+    "outside_partition": [
+      51,
+      20,
+      20,
+      4
+    ]
+  },
+  "format": "wave96-independent-verification-v1",
+  "frozen_discovery_manifest_sha256": "1d1e7d01edfbfcd2871683390b56e16dc36a18cfc899f301f15a0fce3b246a73",
+  "jacobi_continuation": {
+    "coefficient_interpretation": "At q^8 and q^9, summing both alternating Laurent monomials over all C4s counts the oriented norm16/norm18 support-C4 incidences.",
+    "common_index_principal_gram_checked": true,
+    "degree8_harmonic_weights_for_rank44": [
+      22,
+      24,
+      26,
+      28,
+      30
+    ],
+    "route_status": "UNKNOWN",
+    "signed_coefficient_control_established": false,
+    "transformation_law_established": false
+  },
+  "norm20_dictionary": {
+    "alternating_C4_rows": [
+      {
+        "minimum_alternating_C4": 15,
+        "minimum_cross_pair_incidences": 60,
+        "minimum_degree_square_sum": 0,
+        "same_edges": 0,
+        "sign_size": 10
+      },
+      {
+        "minimum_alternating_C4": 23,
+        "minimum_cross_pair_incidences": 68,
+        "minimum_degree_square_sum": 2,
+        "same_edges": 1,
+        "sign_size": 10
+      },
+      {
+        "minimum_alternating_C4": 31,
+        "minimum_cross_pair_incidences": 76,
+        "minimum_degree_square_sum": 4,
+        "same_edges": 2,
+        "sign_size": 10
+      },
+      {
+        "minimum_alternating_C4": 39,
+        "minimum_cross_pair_incidences": 84,
+        "minimum_degree_square_sum": 6,
+        "same_edges": 3,
+        "sign_size": 10
+      }
+    ],
+    "coordinate_magnitude_upper": 2,
+    "exclusions": {
+      "all_mixed_profiles_excluded": true,
+      "m1_negative_neighborhood_intersection_minimum": 3,
+      "m1_plus2_negative_neighbors_minimum": 8,
+      "m1_unit_negative_neighbors_minimum": 4,
+      "m2_mixed_plus2_unit_minimum_common_neighbors": 3,
+      "m2_same_forced_shared_neighbors": 8,
+      "m2_same_pair_is_nonadjacent": true,
+      "m3_neighbor_equation_feasible": false,
+      "srg_limits": {
+        "adjacent": 1,
+        "nonadjacent": 2
+      }
+    },
+    "integer_transfer_valid_below_floor": true,
+    "nonintegral_class_energy_floor": 22,
+    "profiles_after_parity_and_zero_sum": [
+      {
+        "minus_one": 10,
+        "minus_two": 0,
+        "plus_one": 10,
+        "plus_two": 0
+      },
+      {
+        "minus_one": 7,
+        "minus_two": 1,
+        "plus_one": 9,
+        "plus_two": 0
+      },
+      {
+        "minus_one": 4,
+        "minus_two": 2,
+        "plus_one": 8,
+        "plus_two": 0
+      },
+      {
+        "minus_one": 6,
+        "minus_two": 1,
+        "plus_one": 6,
+        "plus_two": 1
+      },
+      {
+        "minus_one": 1,
+        "minus_two": 3,
+        "plus_one": 7,
+        "plus_two": 0
+      },
+      {
+        "minus_one": 3,
+        "minus_two": 2,
+        "plus_one": 5,
+        "plus_two": 1
+      }
+    ],
+    "restricted_edge_bound": "470/9",
+    "same_edges_per_side_upper": 3,
+    "surviving_profile": {
+      "minus_one": 10,
+      "other": 0,
+      "plus_one": 10
+    },
+    "target_norm": 20,
+    "universal_alternating_C4_lower": 15
+  },
+  "projector_relaxation": {
+    "cross_polytope_minimum_squared_distance": "104/5",
+    "cross_polytope_size": 80,
+    "metric_relaxation_proves_cap25": false,
+    "minimum_interpolant_squared_norm": "28/5",
+    "norm16_residual_squared_radius": "52/5",
+    "norm18_residual_squared_radius": "62/5",
+    "principal_gram": [
+      [
+        "4/9",
+        "-8/63",
+        "1/63",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "4/9",
+        "-8/63",
+        "1/63"
+      ],
+      [
+        "1/63",
+        "-8/63",
+        "4/9",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "1/63",
+        "-8/63",
+        "4/9"
+      ]
+    ],
+    "principal_inverse": [
+      [
+        "532/195",
+        "56/65",
+        "77/195",
+        "56/65"
+      ],
+      [
+        "56/65",
+        "532/195",
+        "56/65",
+        "77/195"
+      ],
+      [
+        "77/195",
+        "56/65",
+        "532/195",
+        "56/65"
+      ],
+      [
+        "56/65",
+        "77/195",
+        "56/65",
+        "532/195"
+      ]
+    ],
+    "projector_polynomial_values": {
+      "-4": "1",
+      "14": "0",
+      "3": "0"
+    },
+    "residual_dimension": 40
+  },
+  "rank30_q14": {
+    "cap24_global_oriented_capacity": 99792,
+    "cap24_proved": false,
+    "cap24_would_contradict": true,
+    "forced_one_cycle_antipodal_extensions": 25,
+    "forced_one_cycle_oriented_extensions": 50,
+    "oriented_incidence_lower": 102630,
+    "q14_prefix_lower": 6842
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "N16_upper_bound": null,
+    "N18_upper_bound": null,
+    "cap24": "UNKNOWN",
+    "cap25": "UNKNOWN",
+    "finite_arithmetic": "VERIFIED",
+    "norm20_profile_theorem": "VERIFIED_CONDITIONAL_ON_FROZEN_INPUTS",
+    "novelty": "UNKNOWN",
+    "rank28_excluded": false,
+    "rank30_excluded": false
+  },
+  "weighted_rank28": {
+    "cap25_contradicts": true,
+    "cap25_even_upper": 2115382,
+    "cap25_proved": false,
+    "cap25_rational_upper": "4230765/2",
+    "cap26_contradicts": false,
+    "cap26_even_upper": 2199996,
+    "forced_one_cycle_antipodal_extensions": 26,
+    "forced_total_incidence": 53195,
+    "induced_C4_count": 2079,
+    "maximum_ratio": "407/10",
+    "objective_per_incidence_ratios": {
+      "norm16_h0": "407/10",
+      "norm18_h0": "43/9",
+      "norm18_h1": "43/13"
+    },
+    "shell_rows": {
+      "norm16_h0": {
+        "minimum_alternating_C4": 20,
+        "minimum_cross_pair_incidences": 48,
+        "minimum_degree_square_sum": 0,
+        "same_edges": 0,
+        "sign_size": 8
+      },
+      "norm18_h0": {
+        "minimum_alternating_C4": 18,
+        "minimum_cross_pair_incidences": 54,
+        "minimum_degree_square_sum": 0,
+        "same_edges": 0,
+        "sign_size": 9
+      },
+      "norm18_h1": {
+        "minimum_alternating_C4": 26,
+        "minimum_cross_pair_incidences": 62,
+        "minimum_degree_square_sum": 2,
+        "same_edges": 1,
+        "sign_size": 9
+      }
+    },
+    "weighted_lower": 2165002
+  }
+}

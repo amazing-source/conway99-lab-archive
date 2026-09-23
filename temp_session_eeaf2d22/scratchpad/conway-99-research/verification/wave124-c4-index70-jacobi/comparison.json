@@ -1,0 +1,96 @@
+{
+  "agreement": {
+    "A_power_direction_checks": [
+      {
+        "dimension_agrees": true,
+        "minimum_A_power": 1,
+        "q1_row_agrees": true,
+        "target_agrees": true
+      },
+      {
+        "dimension_agrees": true,
+        "minimum_A_power": 2,
+        "q1_row_agrees": true,
+        "target_agrees": true
+      },
+      {
+        "dimension_agrees": true,
+        "minimum_A_power": 3,
+        "q1_row_agrees": true,
+        "target_agrees": true
+      },
+      {
+        "dimension_agrees": true,
+        "minimum_A_power": 4,
+        "q1_row_agrees": true,
+        "target_agrees": true
+      },
+      {
+        "dimension_agrees": true,
+        "minimum_A_power": 5,
+        "q1_row_agrees": true,
+        "target_agrees": true
+      }
+    ],
+    "Fricke_index70_to_index10_and_twenty_residues": true,
+    "K_divisibility_seven": true,
+    "degree_eight_selector": true,
+    "exact_q7_through_q10_incidence_interpretation": true,
+    "full_level_basis_vectors_exactly_equal": true,
+    "full_level_dimensions": {
+      "cusp": 17,
+      "holomorphic": 18
+    },
+    "oldform_null_for_constants_scalar_and_finite_moments": true,
+    "primitive_norm20_marking_and_indices": true,
+    "tight_frame_second_moments": {
+      "L_forced_coefficient": true,
+      "eigenvalue": true,
+      "matrix": true
+    }
+  },
+  "candidate_followup_not_self_verified": {
+    "claim_label": "CANDIDATE",
+    "constraints": "q^1 coefficients at r=5 and r=6 vanish",
+    "exact_reason_at_A5": "A^5 gives zero even Taylor moments of orders 0,2,4,6,8; after support is restricted to |r|<=4, the Vandermonde matrix on r^2 in {0,1,4,9,16} forces the whole q^1 row to vanish, including r=4",
+    "interpretation": "the graph support zeros plus the fifth even Taylor moment remove the published oldform escape at q_K^7 y_K^28",
+    "rows": [
+      {
+        "cusp_dimension_after_q1_r5_r6_zeros": 14,
+        "minimum_A_power": 1,
+        "q1_r4_functional_nonzero": true
+      },
+      {
+        "cusp_dimension_after_q1_r5_r6_zeros": 12,
+        "minimum_A_power": 2,
+        "q1_r4_functional_nonzero": true
+      },
+      {
+        "cusp_dimension_after_q1_r5_r6_zeros": 11,
+        "minimum_A_power": 3,
+        "q1_r4_functional_nonzero": true
+      },
+      {
+        "cusp_dimension_after_q1_r5_r6_zeros": 9,
+        "minimum_A_power": 4,
+        "q1_r4_functional_nonzero": true
+      },
+      {
+        "cusp_dimension_after_q1_r5_r6_zeros": 7,
+        "minimum_A_power": 5,
+        "q1_r4_functional_nonzero": false
+      }
+    ]
+  },
+  "clarifications": [
+    "The full-level J_22,10 basis is only a subspace of the unknown full Gamma0(7) Jacobi space.",
+    "The oldform direction is signed and does not certify a positive graph-compatible deformation.",
+    "The q^10 incidence statement is valid because the sealed Wave96 norm-20 unit-coordinate classification is imported.",
+    "Neither candidate rank is excluded; Conway-99 and novelty remain UNKNOWN."
+  ],
+  "discovery_manifest_entries_checked": 11,
+  "discovery_manifest_sha256": "fbdaa5071229c921fdf652a91eaa895f57ce1d31f726cb4f465f0356a6dfec55",
+  "format": "wave124-sealed-comparison-v1",
+  "sealed_inventory_files_checked": 12,
+  "verdict": "VERIFIED_WITH_CLARIFICATIONS"
+}

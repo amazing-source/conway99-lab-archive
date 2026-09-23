@@ -1,0 +1,41 @@
+role: verifier
+date_utc: 2026-07-28T00:55:45Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification, conditional on a hypothetical
+  srg(99,14,1,2), the prism-free endpoint P=0 (equivalently imported
+  n3=4158), and the verified complementary-Fano description of norm-14
+  integer -4 eigenvectors, that N14 counts both signs and satisfies
+  N14<=5544. No r=28 hypothesis is used.
+inputs:
+  - path: attempts/wave90-short-vector-count-upper/package-manifest.sha256
+    sha256: f7dda4995714a4216c8a8c00738d8da070ff4f485fb7ddd4596921b309482f88
+  - path: verification/wave64-rooted-transition-design/package-manifest.sha256
+    sha256: dd138310fcaa4e3e2d2989281f9c7487b498ad1d15901403b32919d7018bb905
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+method: >-
+  Freeze all discovery bytes before inspection; independently reconstruct
+  the rooted K14-7K2 scaffold, prism-free transition triples, seed domain,
+  transition extension multiplicity, local perfect-matching cap, and
+  complementary-Fano recovery of both sign sides; then audit the rooted
+  sign/orientation double count. Compare a fixed projection only after the
+  independent canonical result exists.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave90-short-vector-count-upper\independent_verify.py
+  --verify --compare-discovery ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  verification\wave90-short-vector-count-upper\test_independent_verify.py
+outputs:
+  - path: verification/wave90-short-vector-count-upper/independent-results.json
+    sha256: e3e02ecdb280ded357945ad6693cce1fc07f56724ec45f3346214b6e2cedc2f7
+  - path: verification/wave90-short-vector-count-upper/comparison.json
+    sha256: bcd07c75cbefe8548068360d4187fbccc680bca857775dc1e82189842f778c67
+  - path: verification/wave90-short-vector-count-upper/audit.md
+    sha256: 1905613ad22189f4338a05456ae9155ff0cb5ee6cd9b452b2ef519b5f0ab7e06
+limitations: >-
+  The theorem is conditional on P=0 and bounds N14 only. It does not bound
+  N16 or N18, does not itself exclude q=16, and does not prove graph
+  nonexistence or resolve Conway-99. Novelty remains UNKNOWN.

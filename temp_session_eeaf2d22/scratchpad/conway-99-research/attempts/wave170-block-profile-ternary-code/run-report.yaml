@@ -1,0 +1,31 @@
+role: proof_b
+date_utc: 2026-07-28T15:54:19Z
+git_commit: 43c97357471609ea133b1e35a555c54aa6c7517b
+claim_label: DERIVED
+scope: >-
+  Derive exact pointwise and global common-block profiles, recover the
+  n3/prism identity in block space, identify the maximum point-star clique
+  geometry, and derive a ternary point-block Gram rank constraint.
+inputs:
+  - path: verification/wave168-incidence-minor-energy/package-manifest.sha256
+    sha256: 039ce317876a9bc9e1995fb91939e824543a21e96bcf50fa4191f0a82e1ef58b
+method: >-
+  Boundary-incidence and sector-matching double counts, linear-hypergraph
+  clique analysis, exact finite-field SRG algebra, characteristic
+  multiplicities, and fail-closed rank comparison.
+command: none; paper derivation only
+outputs:
+  - path: attempts/wave170-block-profile-ternary-code/README.md
+    sha256: e20ff5085c9c4fa99eb65751ce214207b1ddae66f4944dd8674d5524cce4e965
+  - path: attempts/wave170-block-profile-ternary-code/derivation.md
+    sha256: 67c293ccdff944aeb59b44ad297b7db876a0ceb9df50c876f559cb63ef20123f
+  - path: attempts/wave170-block-profile-ternary-code/failed-routes.md
+    sha256: 4b9e3f73e99e794c961c7f242bfdecdf2d2fba34019868a51fdc00d1e57db633
+  - path: attempts/wave170-block-profile-ternary-code/protocol.md
+    sha256: 1a50b3ade18ae401cadeb66c111439069a1e51ec57f23d6a9a7c07ed6eb6b7bd
+limitations:
+  - The block profile recovers the known identity but does not improve it.
+  - No star-complement or ternary-code classification is supplied.
+  - No strict n3 bound or endpoint exclusion follows.
+  - No heavy computation ran because host memory was below the floor.
+  - Literature novelty and Conway-99 remain UNKNOWN.

@@ -1,0 +1,66 @@
+role: verifier
+date_utc: 2026-07-26T22:49:38Z
+git_commit: 697cc02bcbe16b69aaf08822298e03c66329c64c
+claim_label: VERIFIED
+scope: >-
+  Conditional n3=4158 modular-reflection claims only: reciprocal Smith
+  pairing and full Smith shape from (r3,r7), rank_F3(M)>=8,
+  rank_F7(M)>=11, inherited index parity, and the 629-pair finite census.
+inputs:
+  - path: agents/2026-07-26-wave36-modular-reflection.md
+    sha256: 1a66e4acae92993f547c74745cfe6da7e53dfc185cf37da31d2590edcb6b558c
+  - path: attempts/wave36-modular-reflection/exact_check.py
+    sha256: e31b19e0252f4da323ec123b1b0cc70e9e10dd1cdc2278a7858288aae137289c
+  - path: attempts/wave36-modular-reflection/test_exact_check.py
+    sha256: 28db660565a301a8132b98b62f326f7677a17704931bb0d89cc40dd34cb8e323
+  - path: attempts/wave36-modular-reflection/exact-results.json
+    sha256: 5efcd507565a55fcdc3323448bf123ebec31ddc6eb9506a83258eff3c1468607
+  - path: attempts/wave36-modular-reflection/run-report.yaml
+    sha256: 64f8f8da46c34f070fb5e0fc9122747cf9d438121541ac1b01881612ba1127ed
+  - path: attempts/wave35-n3-upper-spectral/exact-results.json
+    sha256: ca1df07bede11642fb1639a2ae554c1a31ce9a58424d5b3e5031c90ad550a194
+  - path: verification/wave35-n3-upper-spectral/independent-results.json
+    sha256: c704d8fce8f1d5975204b9a06ada0098c66fbdb9e0de8016a1ff89d86e691305
+  - path: verification/wave23-index-pranks/2026-07-23T192952Z-audit.md
+    sha256: bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+method: >-
+  Independent finite-field and integer reconstruction without importing the
+  discovery module: canonical projective enumeration in both ternary
+  determinant classes; direct entrywise cubic checks; a symmetric-tensor
+  dimension audit; reciprocal Smith profiles and determinant checks for all
+  629 rank pairs; hostile threshold and parity tests; then submitted replay
+  and byte-identical regeneration.
+command: |-
+  .\.venv\Scripts\python.exe -B -m unittest -v verification/wave36-modular-reflection/test_independent_check.py
+  .\.venv\Scripts\python.exe -B verification/wave36-modular-reflection/independent_check.py --verify verification/wave36-modular-reflection/independent-results.json
+  .\.venv\Scripts\python.exe -B -m unittest -v attempts/wave36-modular-reflection/test_exact_check.py
+  .\.venv\Scripts\python.exe -B attempts/wave36-modular-reflection/exact_check.py --output verification/wave36-modular-reflection/submitted-regenerated.json
+outputs:
+  - path: verification/wave36-modular-reflection/independent_check.py
+    sha256: 3ecc0fbb52b326f4e496300d02ba97759f0deb738e49b85f0122052d1ca7f243
+  - path: verification/wave36-modular-reflection/test_independent_check.py
+    sha256: bd45721652bd059658e9a63054d7ded05d83d9095ff6fb2eba261b3f32331b78
+  - path: verification/wave36-modular-reflection/independent-results.json
+    sha256: 290d908ba2dbf70a411a432c0384ba98317dbe868c0177c721617bdad52eff23
+  - path: verification/wave36-modular-reflection/submitted-regenerated.json
+    sha256: 5efcd507565a55fcdc3323448bf123ebec31ddc6eb9506a83258eff3c1468607
+  - path: verification/wave36-modular-reflection/input-freeze.sha256
+    sha256: 701764efedbb5ae6bb302d1ed7acfd9c30b5a29f75deeb931d65b29f566fbd0d
+limitations:
+  - The result is conditional on the frozen n3=4158 endpoint premises.
+  - No endpoint matrix, finite-field factor configuration, or graph is constructed.
+  - Exactly 629 means pairs satisfying the displayed floors, ceilings, and parity condition.
+  - The modular floors remain below the rational rank ceiling 44.
+  - No endpoint exclusion, improved upper bound, or literature novelty claim follows.
+verdict: VERIFIED_SCOPED_WITH_SURVIVOR_WORDING_QUALIFIER
+tests:
+  independent: 11 passed
+  submitted_replay: 11 passed
+  submitted_regeneration: BYTE_IDENTICAL
+status:
+  endpoint_excluded: false
+  upper_bound_improved_below_4158: false
+  conway_99: UNKNOWN
+  novelty: NOT_ASSESSED

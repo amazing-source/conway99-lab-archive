@@ -1,0 +1,64 @@
+role: construction
+date_utc: 2026-07-27T23:17:00Z
+git_commit: c4124a78dbf6bdfbb0281fa4709116e7929f9eb9
+claim_label: DERIVED
+scope: >-
+  The order-11 automorphism, semiregular C11 quotient/voltage, vertex-transitive,
+  and Cayley subproblems for a hypothetical srg(99,14,1,2); no automorphism is
+  assumed for the unrestricted target.
+inputs:
+  - path: git:c4124a78dbf6bdfbb0281fa4709116e7929f9eb9:AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: git:c4124a78dbf6bdfbb0281fa4709116e7929f9eb9:CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+method: >-
+  Exact rational C11 representation multiplicities; exhaustive generation of
+  seven quotient row shapes and three trace-compatible diagonals; deterministic
+  standard-library row-by-row enumeration with a proof-grade unpruned tree and
+  a separately canonicalized tree; a fixed-point neighbor-degree double count;
+  orbit-stabilizer and Cauchy for vertex-transitivity; and an independent
+  abelian-character Fourier-inversion obstruction for Cayley graphs.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave69-cyclic-cover-shift\exact_search.py
+  --mode both
+  --output attempts\wave69-cyclic-cover-shift\exact-results.json ;
+  .\.venv\Scripts\python.exe
+  attempts\wave69-cyclic-cover-shift\exact_check.py
+  --full
+  --output attempts\wave69-cyclic-cover-shift\full-check-results.json ;
+  .\.venv\Scripts\python.exe -m unittest discover
+  -s attempts\wave69-cyclic-cover-shift -p "test_*.py" -v
+outputs:
+  - path: attempts/wave69-cyclic-cover-shift/exact-results.json
+    sha256: f6598458a37c32119df4765b44a9ec049b67580c625036c4c827db15510f84c8
+  - path: attempts/wave69-cyclic-cover-shift/exact_search.py
+    sha256: 12575dcc558ef7b4534b7916b136248cabc56a7ba7ceceb8172bc9b8f3f45b45
+  - path: attempts/wave69-cyclic-cover-shift/exact_check.py
+    sha256: eb6922cb15702b1f8eb13964880607530eee8b1bd333320e2235206f4f1d9c20
+  - path: attempts/wave69-cyclic-cover-shift/full-check-results.json
+    sha256: ae820425171987c190d95273cca1f54353491fa603f53b212c64388212b2d12d
+result:
+  disposition: EXACT_RESTRICTED_OBSTRUCTION_PENDING_INDEPENDENT_VERIFICATION
+  row_shapes: 7
+  sorted_diagonal_cases: 3
+  unpruned_search_nodes: 1108533
+  canonical_search_nodes: 8980
+  quotient_candidates: 0
+  cyclic_11_lift_candidates: 0
+  positive_fixed_counts_for_nonidentity_order_11_automorphism: 0
+  order_11_automorphisms: EXCLUDED_DERIVED
+  vertex_transitive_targets: EXCLUDED_DERIVED
+  Cayley_targets: EXCLUDED_DERIVED_INDEPENDENT_FOURIER_ROUTE
+  exact_tests: 8
+  strict_n3_upper_bound: NOT_OBTAINED
+  conway_99: UNKNOWN
+resources:
+  minimum_free_memory_percent_required: 15
+  minimum_free_memory_percent_observed: 40.15
+limitations:
+  - Discovery work cannot self-promote to VERIFIED.
+  - Extending the semiregular quotient obstruction to all order-11 automorphisms depends on the fixed-point lemma.
+  - An arbitrary target with no order-11 automorphism is not excluded.
+  - No unrestricted nonexistence proof, construction, or strict n3 upper bound follows.
+  - Literature novelty and priority remain UNKNOWN.

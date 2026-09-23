@@ -1,0 +1,41 @@
+role: verifier
+date_utc: 2026-07-28T06:49:40Z
+git_commit: e1484c6564ddfde580191cdcb4a66a8f6ad7f2a2
+claim_label: VERIFIED
+scope: >-
+  Conditional symmetric-idempotent/LCD facts, complete image/dual
+  distributions from all vertex subsets of size at most three, and exact
+  rational ordinary MacWilliams feasibility for the sealed Wave131 witness.
+inputs:
+  - path: attempts/wave131-binary-lcd-enumerator/package-manifest.sha256
+    sha256: c305de05df2001d869db3dbfc14f7a2a8c7f305ce43471c56c66dc775e89d576
+  - path: attempts/wave131-binary-lcd-enumerator/rational-witness.json
+    sha256: 5e01ddb62d379464470d4ef9797cd6b83f51a9704dc2d94c8c1fa080e87657dc
+method: >-
+  Preinspect the seal; independently rederive the binary LCD, symplectic,
+  complement, and injection facts; enumerate every graph-subset type
+  through size three; parse all formal coefficients over Q; evaluate 100
+  forward and 100 inverse MacWilliams rows using an independent exact
+  Krawtchouk implementation; and audit the bounded integral status without
+  promoting timeout.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave131-binary-lcd-enumerator\independent_verify.py
+  --verify
+  verification\wave131-binary-lcd-enumerator\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s verification\wave131-binary-lcd-enumerator -p "test_*.py" -v
+outputs:
+  - path: verification/wave131-binary-lcd-enumerator/independent-results.json
+    sha256: 65b365a1779c4e1fcfc6d0d3b0f38abaf9ed98798c7cc0d26a6fa64495149087
+  - path: verification/wave131-binary-lcd-enumerator/independent_verify.py
+    sha256: 10a61f4783bd5cee5095ce966014c050474f9831dc93f59edf1129bbde9da2d3
+  - path: verification/wave131-binary-lcd-enumerator/package-manifest.sha256
+    sha256: SELF_EXCLUDED
+limitations:
+  - The minimum-eight code bounds are imported frozen prerequisites.
+  - The witness is rational and nonintegral.
+  - Ordinary enumerators do not certify LCD or distinguished row intersections.
+  - The integral scout remains UNKNOWN and non-evidentiary.
+  - No code, adjacency matrix, graph, or rank exclusion is constructed.
+  - Conway-99 and literature novelty remain UNKNOWN.

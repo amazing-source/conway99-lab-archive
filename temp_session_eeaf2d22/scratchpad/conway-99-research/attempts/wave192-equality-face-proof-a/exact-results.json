@@ -1,0 +1,183 @@
+{
+  "affine_conic": {
+    "axes_same_support": false,
+    "axis_one": [
+      2,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "axis_one_support": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "axis_two": [
+      0,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "axis_two_support": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "conic": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "conic_contained_in_axis_one": false,
+    "conic_contained_in_axis_two": false,
+    "conic_support": [
+      0,
+      1,
+      7,
+      8
+    ],
+    "profiles": [
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ]
+    ]
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "equality_face": {
+    "formula": "n1=C-2m,n2=p2=0,n3=p3=m,r=2079,r1=t=delta=m,h=u=Y=Z=0",
+    "parameter": "0<=m<=2079",
+    "sample_rows": [
+      {
+        "A": 4158,
+        "B": 4158,
+        "C": 4158,
+        "I": 8316,
+        "Q": 6237,
+        "Y": 0,
+        "Z": 0,
+        "delta": 0,
+        "exact2_raw_circuits": 2079,
+        "h": 0,
+        "n1": 4158,
+        "n2": 0,
+        "n3": 0,
+        "nonprivate_labels": 0,
+        "nonprivate_selected_incidence": 0,
+        "p2": 0,
+        "p3": 0,
+        "r": 2079,
+        "r1": 0,
+        "t": 0,
+        "type1_raw_assignments": 4158,
+        "u": 0
+      },
+      {
+        "A": 4157,
+        "B": 4158,
+        "C": 4158,
+        "I": 8316,
+        "Q": 6237,
+        "Y": 0,
+        "Z": 0,
+        "delta": 1,
+        "exact2_raw_circuits": 2078,
+        "h": 0,
+        "n1": 4156,
+        "n2": 0,
+        "n3": 1,
+        "nonprivate_labels": 1,
+        "nonprivate_selected_incidence": 2,
+        "p2": 0,
+        "p3": 1,
+        "r": 2079,
+        "r1": 1,
+        "t": 1,
+        "type1_raw_assignments": 4156,
+        "u": 0
+      },
+      {
+        "A": 2079,
+        "B": 4158,
+        "C": 4158,
+        "I": 8316,
+        "Q": 6237,
+        "Y": 0,
+        "Z": 0,
+        "delta": 2079,
+        "exact2_raw_circuits": 0,
+        "h": 0,
+        "n1": 0,
+        "n2": 0,
+        "n3": 2079,
+        "nonprivate_labels": 2079,
+        "nonprivate_selected_incidence": 4158,
+        "p2": 0,
+        "p3": 2079,
+        "r": 2079,
+        "r1": 2079,
+        "t": 2079,
+        "type1_raw_assignments": 0,
+        "u": 0
+      }
+    ],
+    "type1_label_pairing": "2*(2079-m) type1 assignments saturate 2079-m canonical tau-pairs",
+    "type3_nonprivate_degree": "m nonprivate labels receive 2m selected incidences, hence degree two each"
+  },
+  "residual_capacity": {
+    "closed_pool": "Y=y+2g,Z<=y+3g,therefore 2Z<=3Y",
+    "equality_consequence": "Y=Z=0 and every type3 raw is exact1",
+    "exact2_residual": "impossible by Wave181 uniqueness"
+  },
+  "search_scope": "fixed F3 vectors and symbolic equality identities only; no graph, code, cover, SAT, LP, configuration, enumeration, or isomorphism search",
+  "strict_bound": {
+    "circuit_scalar_words": 13862,
+    "edge_added_projective": 6931,
+    "nonedge_projective_Q": 6238
+  }
+}

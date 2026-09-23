@@ -1,0 +1,65 @@
+role: proof_b
+date_utc: 2026-07-27T19:19:35Z
+git_commit: 7a77446e8f1aa163170ff91e3b5068482603898b
+claim_label: DERIVED
+scope: >-
+  Completion-free 2-dimensional Weisfeiler-Leman closure of the exact local
+  incidence structure forced by one triangle and its 18 K-neighbors,
+  conditional on a prism-free putative srg(99,14,1,2).
+inputs:
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: STRUCTURE.md
+    sha256: 71b0b404d09d3ca6f84966b0841a7a2f09e9d715e7833e3511174067f7f7c701
+  - path: attempts/wave51-global-triple-tensor/exact-result.json
+    sha256: 8d42c51b5e6b5137466a4adf95442f4d67cf2708c29ac134f7972b8cfbc16d1e
+  - path: verification/wave51-global-triple-tensor/independent-result.json
+    sha256: e119fec0ff61e79539c3f34c2a17119511f9c4d78e399fe37df061d43529fb27
+method: >-
+  Derive the 3K6 root partition and the simple bipartite 2-factor B relation
+  between every two six-petal sectors. Preserve all 108 possible B choices
+  and 36 exactly-two caps in a 163-node incidence template. Run exact
+  ordered-pair 2-WL to stability and reconstruct its integer intersection
+  numbers. Diagnose completion dependence on 64 canonical cycle-profile
+  triples without treating those examples as exhaustive or forced.
+command: |-
+  python -B attempts\wave52-coherent-closure\coherent_closure.py --output attempts\wave52-coherent-closure\exact-result.json
+  python -B attempts\wave52-coherent-closure\coherent_closure.py --verify attempts\wave52-coherent-closure\exact-result.json
+  python -B -m unittest discover -s attempts\wave52-coherent-closure -p "test_*.py" -v
+outputs:
+  - path: attempts/wave52-coherent-closure/coherent_closure.py
+    sha256: 5694c09686747836953aec385d32ca76648de8da90051a19f86578fad6b3115b
+  - path: attempts/wave52-coherent-closure/test_coherent_closure.py
+    sha256: 40d0c2ccf22c1f796db6d013c9b0d94b9b17b2fcc944b0459cb97e46654c1707
+  - path: attempts/wave52-coherent-closure/exact-result.json
+    sha256: 75951c260b3a0dda55c2acc324fc6c60322778a72eabb049445d3a87f982e2e9
+result:
+  exact_contradiction: false
+  partial_19_initial_and_stable_colors: 6
+  constraint_template_order: 163
+  constraint_template_color_trajectory: "26 -> 47 in two proper rounds"
+  constraint_template_diagonal_class_sizes: [1, 18, 36, 108]
+  canonical_completion_profiles_checked: 64
+  distinct_completion_fingerprints: 39
+  completed_closure_color_count_range: [8, 361]
+  positive_local_cap_completions: true
+  endpoint: UNKNOWN
+  conway_99: UNKNOWN
+tests:
+  unit_tests: "PASS: 10 tests in 6.407 seconds"
+  exact_replay: >-
+    PASS_EXACT_REPLAY
+    sha256=75951c260b3a0dda55c2acc324fc6c60322778a72eabb049445d3a87f982e2e9
+  memory_floor: >-
+    PASS: checker enforced at least 20 percent free physical memory;
+    host remained above 56 percent free during the run
+limitations:
+  - "Discovery-agent result; independent replay is required."
+  - "The scope is one root triangle and its 18 K-neighbors."
+  - "2-WL refines cap incidence but does not itself impose Boolean truth values."
+  - "The 64 completed examples are diagnostics, not exhaustive joint labelled completions."
+  - "Completed closure colors depend on arbitrary B/C choices."
+  - "A local cap completion is not evidence for a Conway graph."
+  - "No completed-graph automorphism, transitivity, or association scheme is assumed."
+  - "No endpoint exclusion, graph construction, or improved n3 upper bound follows."
+

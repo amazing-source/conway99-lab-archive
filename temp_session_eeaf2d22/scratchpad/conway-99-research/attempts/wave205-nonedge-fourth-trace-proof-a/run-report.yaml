@@ -1,0 +1,32 @@
+role: proof_a
+date_utc: "2026-07-29T20:11:56Z"
+git_commit: "e6ac24b5728ae8f2dc13b5a6ee0f50e965843b71"
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free rank-11 endpoint: derive the exact nonedge
+  two-star cross-Gram profiles, exhaustively census normalized t=6 and t=7
+  matrices, and test whether pair-local endpoint data determine the fourth
+  trace.
+inputs:
+  attempts/wave205-fourth-trace-globalization/protocol.md: "a1d45fc0a82b9944a9e020ded3945e75944e0e00202eacbb20eb05598e30bf4d"
+  verification/wave171-pq-centered-code/verification-report.md: "1f2ba5ed92ba6bb1ccc05cd753a8e359f208c3ddc7ca85766f26f8869346414f"
+  verification/wave176-star-projector-circuits/audit.md: "f58577409f39e98b06bfbe206221d3d278f0c473bcf5057afc381094d5e65d05"
+  attempts/wave204-projector-fourth-order-proof-b/derivation.md: "2b4ddbec109ff7fba31371709be6616f681ca26ce79339d892f5e30729a060d0"
+  verification/wave204-global-compatibility-verifier/audit.md: "eadad44ea0e7ac653defb7e5431c13b2ef06ae53eced0bbf6412f82fc3244c65"
+method: >-
+  Exact SRG common-neighbor counting, centered-Gram expansion, complete
+  normalized finite enumeration of 5-by-5 integer cores, modular
+  row-reduction and discriminants, explicit 28-vertex adjacency
+  certificates, and exact coordinate/projector reconstruction over F_3.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave205-nonedge-fourth-trace-proof-a\exact_check.py --verify
+  attempts\wave205-nonedge-fourth-trace-proof-a\exact-results.json
+outputs:
+  attempts/wave205-nonedge-fourth-trace-proof-a/exact-results.json: "48a09ca524d62a1d2b2ee352a4d6689dbf3fa3127c70b03e7358edad452e05cc"
+limitations:
+  - The controls contain 28 vertices and two point-stars, not a 99-vertex graph.
+  - Unsaturated local pairs are not simultaneously completed outside the two-center ball.
+  - The complete census covers the exact low-count frontier t=6 and t=7, not all larger t.
+  - Lower-rank Gram-kernel words are not treated as true column relations.
+  - Actual nonedge fourth traces, rank 11, Conway-99, and novelty remain UNKNOWN.

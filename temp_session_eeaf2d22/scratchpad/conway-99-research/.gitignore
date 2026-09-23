@@ -1,0 +1,53 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+*.log
+*.tmp
+*.bak
+*.cnf
+*.drat
+*.lrat
+*.proof
+*.checkpoint
+logs/local/
+dist/
+build/
+
+# Third-party GENREG archive: download from the official host for Wave 12 replay.
+verification/n3-42-equality/14_3_4.scd
+
+# Keep small, intentionally committed fixtures despite broad artifact ignores.
+!verification/fixtures/**/*.cnf
+!verification/fixtures/**/*.lrat
+
+# Wave 48 verifier transcript is checksum-pinned by its public manifest.
+!verification/wave48-conic-moment/reconstruct.stdout.log
+
+# Failed first-launch transcripts; Wave 125's launch2 outputs are canonical.
+attempts/wave125-long-motif-sat/branch0-900s.stderr.txt
+attempts/wave125-long-motif-sat/branch0-900s.stdout.txt
+
+# Unsealed historical work retained locally for possible continuation.
+attempts/wave41-endpoint-evenpart/
+attempts/wave89-rooted-cnf-symmetry/
+attempts/wave126-level7-jacobi-lp/
+attempts/wave160-interlace-motif-comparison/
+
+# Wave 45 publishes only its immutable v1 package; these are mutable sources.
+attempts/wave45-flag-moment/cutting-plane-smoke.json
+attempts/wave45-flag-moment/cutting-plane.json
+attempts/wave45-flag-moment/cutting_plane.py
+attempts/wave45-flag-moment/exact-results.json
+attempts/wave45-flag-moment/exact_check.py
+attempts/wave45-flag-moment/flag_moment.py
+attempts/wave45-flag-moment/input-freeze.sha256
+attempts/wave45-flag-moment/moment-coefficients.json
+attempts/wave45-flag-moment/protocol.md
+attempts/wave45-flag-moment/seal_checkpoint.py
+attempts/wave45-flag-moment/test_flag_moment.py

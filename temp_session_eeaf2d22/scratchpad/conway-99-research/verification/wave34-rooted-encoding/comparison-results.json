@@ -1,0 +1,769 @@
+{
+  "candidate_code_execution_boundary": {
+    "decoder_executed_only_on_verifier_synthetic_models": true,
+    "generator_executed": false,
+    "generator_imported": false,
+    "large_solver_run": false,
+    "proof_checker_run": false,
+    "witness_checker_executed_only_on_hostile_synthetic_graph": true
+  },
+  "candidate_python_static_audit": {
+    "audit_dimacs.py": {
+      "dynamic_execution_calls": [],
+      "sha256": "9ecfb7b06a0d5b078fcd998c926b2e7f4af0ae717855d68dbd047be6c796371a",
+      "syntax": "PASS"
+    },
+    "check_witness.py": {
+      "dynamic_execution_calls": [],
+      "sha256": "127d5965a50f21c441799bc1c48211a6e4cfa206517e660707c772bb60ec2035",
+      "syntax": "PASS"
+    },
+    "decode_model.py": {
+      "dynamic_execution_calls": [],
+      "sha256": "c783572b6922e0297fa731bd767c6823c7f188390f7f285e93c028e9403ab5bd",
+      "syntax": "PASS"
+    },
+    "generate_cnf.py": {
+      "dynamic_execution_calls": [],
+      "sha256": "e976ed971cc1dac0ce439257b9269b7be2298b535025697f860be62a1a467c96",
+      "syntax": "PASS"
+    },
+    "package_cnf.py": {
+      "dynamic_execution_calls": [],
+      "sha256": "b6a771016c433efbf0b2a2bc236b29651e5b750c2b8cd1a7ae3a1deeb2d13994",
+      "syntax": "PASS"
+    },
+    "test_encoding.py": {
+      "dynamic_execution_calls": [],
+      "sha256": "e004c0d5e913e9aa6a2fc6f889b559c893f8be66911bc8a522726624375f7e6b",
+      "syntax": "PASS"
+    }
+  },
+  "canonical_label_binding": {
+    "O_vertex_map_candidate_to_wave33": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "O_vertex_map_sha256": "d2c2d5c2edefa2794401ef6438496c52b6a0c8cd67eaad9d173735c17f437796",
+    "candidate_audit_fixed_hashes_match": true,
+    "candidate_hashes": {
+      "O_labels_dict_sha256": "7b1ce2dc9c31c4399b8116a5b44e10f4376738661bb7f24694eba55bed4d140e",
+      "O_labels_tuple_sha256": "0576e38639ef0c1fd6c0d57b7acdbb83830e1ad9f5b17ebe9c11dadc7ca8fb16",
+      "support_adjacency_sha256": "d9fe824cd6ccdadce6a946a1b042f5c282dbe182edcb7d1accfa55f96c7a8cfd",
+      "support_to_O_incidence_sha256": "58d2724fc989fb19a0be5dd83f64ed5c15ca32e5812bb83a9619af8e69bf8a74"
+    },
+    "candidate_serialized_fixed_data_exact": true,
+    "chosen_line_map_candidate_to_wave33": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "chosen_point_map_candidate_to_wave33": [
+      0,
+      1,
+      3,
+      2,
+      5,
+      6,
+      4
+    ],
+    "fano_isomorphism_count": 168,
+    "incidence_exact_under_map": true,
+    "stage_hashes": {
+      "O_labels_tuple_sha256": "391ca52fb781969d988c8f75eca24da6c131e480f0e6e5a673b83b04ec39bdb1",
+      "support_adjacency_sha256": "8e9df095563e6d7a8166a99d60f51c15c4db6b722080fd233146a2aa6626431d",
+      "support_to_O_incidence_sha256": "8a4e68fd7bfa97917c74bde2a3ae34d9786ca1f7597b0bb0b3c77c110cfe0756"
+    },
+    "support_exact_under_map": true,
+    "support_vertex_map_candidate_to_wave33": [
+      0,
+      1,
+      3,
+      2,
+      5,
+      6,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "claim_label": "VERIFIED",
+  "corrections": [
+    {
+      "finding": "The post-freeze candidate correction-ledger.md is outside both candidate manifests, so the 18-entry manifest is not literally complete after that ledger was added.",
+      "formula_impact": "NONE",
+      "id": "W34-RC-V-001",
+      "severity": "PACKAGING"
+    },
+    {
+      "finding": "The frozen preflight JSON predates the current generator's variable-group contiguous field and is not byte-reproducible by the recorded command with the published generator.",
+      "formula_impact": "NONE; all normalized counts match",
+      "id": "W34-RC-V-002",
+      "severity": "REPRODUCIBILITY"
+    },
+    {
+      "finding": "decode_model.py enforces complete primary assignments only; it neither requires auxiliaries nor evaluates the CNF. Its DECODED_UNCHECKED status and mandatory graph checker preserve the positive-certificate safety boundary.",
+      "formula_impact": "NONE",
+      "id": "W34-RC-V-003",
+      "severity": "DOCUMENTATION"
+    }
+  ],
+  "count_comparison": {
+    "candidate_explicit_primary_variables": 5950,
+    "candidate_gate_clauses": {
+      "hollow_units": 70,
+      "symmetry_binary_clauses": 4830,
+      "total": 4900
+    },
+    "cardinality_auxiliaries_equal": true,
+    "clause_histogram_difference": {
+      "1": 70,
+      "2": 4830,
+      "3": 0
+    },
+    "complete_domain_equivalence": true,
+    "difference_decomposition": {
+      "explicit_D_diagonal_variables": 70,
+      "mirrored_offdiagonal_D_variables": 2415,
+      "total": 2485
+    },
+    "ordered_D_projection": "70 diagonal bits are forced false and each of 2415 mirrored pairs is forced equal; projection to i<j is a bijection",
+    "primary_variable_difference": 2485,
+    "product_auxiliaries_equal": true,
+    "semantic_independent_primary_bits": 3465,
+    "stage1_primary_variables": 3465,
+    "total_clause_difference": 4900,
+    "total_variable_difference": 2485
+  },
+  "formula_reconstruction": {
+    "all_variables_occur": true,
+    "bytes": 89546779,
+    "candidate_generator_executed": false,
+    "clause_length_histogram": {
+      "1": 12154,
+      "2": 1828218,
+      "3": 2483571
+    },
+    "clauses": 4323943,
+    "exact_byte_stream_match": true,
+    "expected_sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3",
+    "families": {
+      "B_row_weight_3": {
+        "clauses": 13930,
+        "semantic_constraints": 70,
+        "variables": 3780
+      },
+      "D_hollow": {
+        "clauses": 70,
+        "semantic_constraints": 70,
+        "variables": 0
+      },
+      "D_row_weight_9": {
+        "clauses": 175210,
+        "semantic_constraints": 70,
+        "variables": 45150
+      },
+      "D_symmetry": {
+        "clauses": 4830,
+        "semantic_constraints": 2415,
+        "variables": 0
+      },
+      "OO_block_diagonal": {
+        "clauses": 277270,
+        "semantic_constraints": 70,
+        "variables": 70980
+      },
+      "OO_block_offdiagonal": {
+        "clauses": 2591757,
+        "semantic_constraints": 2415,
+        "variables": 748335
+      },
+      "OQ_block_DB": {
+        "clauses": 1012200,
+        "semantic_constraints": 1050,
+        "variables": 289800
+      },
+      "QQ_block_column_weight_14": {
+        "clauses": 55455,
+        "semantic_constraints": 15,
+        "variables": 14175
+      },
+      "QQ_block_pair_intersection_2": {
+        "clauses": 101535,
+        "semantic_constraints": 105,
+        "variables": 29085
+      },
+      "SO_block_ASF_plus_FD": {
+        "clauses": 71316,
+        "semantic_constraints": 980,
+        "variables": 20076
+      },
+      "SQ_block_FB_equals_2J": {
+        "clauses": 20370,
+        "semantic_constraints": 210,
+        "variables": 5670
+      },
+      "primary_variables": {
+        "clauses": 0,
+        "semantic_constraints": 0,
+        "variables": 5950
+      }
+    },
+    "independent_generator_imported_candidate_code": false,
+    "maximum_variable": 1233001,
+    "semantic_variable_map_sha256": "263cdb9ab2e54c0d122f8b0df5fad4eb397576a7b55a758dc94936f542857b40",
+    "semantic_variable_records": 1233001,
+    "sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3",
+    "target_distributions": {
+      "B_row_weight_3": [
+        {
+          "count": 70,
+          "scope_size": 15,
+          "target": 3
+        }
+      ],
+      "D_hollow": [
+        {
+          "count": 70,
+          "scope_size": 1,
+          "target": 0
+        }
+      ],
+      "D_row_weight_9": [
+        {
+          "count": 70,
+          "scope_size": 69,
+          "target": 9
+        }
+      ],
+      "OO_block_diagonal": [
+        {
+          "count": 70,
+          "scope_size": 84,
+          "target": 12
+        }
+      ],
+      "OO_block_offdiagonal": [
+        {
+          "count": 21,
+          "scope_size": 84,
+          "target": 0
+        },
+        {
+          "count": 588,
+          "scope_size": 84,
+          "target": 1
+        },
+        {
+          "count": 1806,
+          "scope_size": 84,
+          "target": 2
+        }
+      ],
+      "OQ_block_DB": [
+        {
+          "count": 1050,
+          "scope_size": 70,
+          "target": 2
+        }
+      ],
+      "QQ_block_column_weight_14": [
+        {
+          "count": 15,
+          "scope_size": 70,
+          "target": 14
+        }
+      ],
+      "QQ_block_pair_intersection_2": [
+        {
+          "count": 105,
+          "scope_size": 70,
+          "target": 2
+        }
+      ],
+      "SO_block_ASF_plus_FD": [
+        {
+          "count": 56,
+          "scope_size": 9,
+          "target": 0
+        },
+        {
+          "count": 84,
+          "scope_size": 9,
+          "target": 1
+        },
+        {
+          "count": 504,
+          "scope_size": 10,
+          "target": 1
+        },
+        {
+          "count": 336,
+          "scope_size": 10,
+          "target": 2
+        }
+      ],
+      "SQ_block_FB_equals_2J": [
+        {
+          "count": 210,
+          "scope_size": 10,
+          "target": 2
+        }
+      ]
+    },
+    "variable_groups": {
+      "aux_cardinality": {
+        "contiguous": false,
+        "count": 946806,
+        "first": 5951,
+        "last": 1233001
+      },
+      "aux_product_BB_OO": {
+        "contiguous": false,
+        "count": 36225,
+        "first": 151675,
+        "last": 899941
+      },
+      "aux_product_BB_QQ": {
+        "contiguous": false,
+        "count": 7350,
+        "first": 1203917,
+        "last": 1232794
+      },
+      "aux_product_DB": {
+        "contiguous": false,
+        "count": 72450,
+        "first": 899942,
+        "last": 1189534
+      },
+      "aux_product_DD": {
+        "contiguous": false,
+        "count": 164220,
+        "first": 151607,
+        "last": 899926
+      },
+      "primary_B": {
+        "contiguous": true,
+        "count": 1050,
+        "first": 4901,
+        "last": 5950
+      },
+      "primary_D": {
+        "contiguous": true,
+        "count": 4900,
+        "first": 1,
+        "last": 4900
+      }
+    },
+    "variables": 1233001
+  },
+  "gadget_audit": {
+    "AND_equivalence": true,
+    "AND_truth_table_assignments": 8,
+    "exact_CNF_existential_equivalence": true,
+    "exact_CNF_primary_assignments": 128,
+    "exact_threshold_cases": 1792,
+    "exact_threshold_semantics": true,
+    "threshold_clause_formula_checked": true,
+    "threshold_state_formula_checked": true
+  },
+  "gzip_audit": {
+    "compressed_bytes": 17402973,
+    "compressed_sha256": "6b6beb5d49c7fe75b9b475162cc4bd97de2793389df150dfab9765ba497305f0",
+    "exact_chunkwise_round_trip": true,
+    "gzip_crc_and_size_footer_accepted": true,
+    "header_checks": {
+      "flags_zero_empty_filename": true,
+      "magic_deflate": true,
+      "mtime_zero": true,
+      "os_unknown_255": true,
+      "xfl_level9": true
+    },
+    "header_hex": "1f8b08000000000002ff",
+    "raw_bytes": 89546779,
+    "raw_sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3",
+    "restored_bytes": 89546779,
+    "restored_sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3"
+  },
+  "input_integrity": {
+    "all_named_input_hashes_pass": true,
+    "complete_local_manifest": {
+      "all_entries_pass": true,
+      "entries": [
+        {
+          "bytes": 18673,
+          "path": "agents/2026-07-24-wave34-rooted-encoding.md",
+          "sha256": "120f9709aea2f7010866c2b7d7e2b74cb954bba92c903923c8c81db4a7dcea8c"
+        },
+        {
+          "bytes": 6859,
+          "path": "attempts/wave34-rooted-encoding/audit_dimacs.py",
+          "sha256": "9ecfb7b06a0d5b078fcd998c926b2e7f4af0ae717855d68dbd047be6c796371a"
+        },
+        {
+          "bytes": 5828,
+          "path": "attempts/wave34-rooted-encoding/check_witness.py",
+          "sha256": "127d5965a50f21c441799bc1c48211a6e4cfa206517e660707c772bb60ec2035"
+        },
+        {
+          "bytes": 971,
+          "path": "attempts/wave34-rooted-encoding/compression-audit.json",
+          "sha256": "df6bcc6077480ff5348357a51b471862ad82c2d1088a561d1dabd1c96664746c"
+        },
+        {
+          "bytes": 10061,
+          "path": "attempts/wave34-rooted-encoding/criterion-spec.json",
+          "sha256": "3429a093c682877a3a14848620860f8ffb5e4cc0b0ca70f0fc5a2f85697d1d82"
+        },
+        {
+          "bytes": 3976,
+          "path": "attempts/wave34-rooted-encoding/decode_model.py",
+          "sha256": "c783572b6922e0297fa731bd767c6823c7f188390f7f285e93c028e9403ab5bd"
+        },
+        {
+          "bytes": 1474,
+          "path": "attempts/wave34-rooted-encoding/dimacs-audit.json",
+          "sha256": "da267da5708f50a0eb46f2c511318e99797ef8a6a9c5f4537db91fef5d5ff1ab"
+        },
+        {
+          "bytes": 6015,
+          "path": "attempts/wave34-rooted-encoding/encoding-audit.json",
+          "sha256": "00be08c4da5bccabc54004cd1b70705a6112847f10658fd2fb0976416cbaa826"
+        },
+        {
+          "bytes": 5676,
+          "path": "attempts/wave34-rooted-encoding/encoding-preflight.json",
+          "sha256": "155f2e310238112d36f8eddac635f4b25fe40f4a417fb3efd59f1fbe5afb970a"
+        },
+        {
+          "bytes": 27794,
+          "path": "attempts/wave34-rooted-encoding/generate_cnf.py",
+          "sha256": "e976ed971cc1dac0ce439257b9269b7be2298b535025697f860be62a1a467c96"
+        },
+        {
+          "bytes": 3704,
+          "path": "attempts/wave34-rooted-encoding/package_cnf.py",
+          "sha256": "b6a771016c433efbf0b2a2bc236b29651e5b750c2b8cd1a7ae3a1deeb2d13994"
+        },
+        {
+          "bytes": 5844,
+          "path": "attempts/wave34-rooted-encoding/primary-map.json",
+          "sha256": "d20ae9196012b2bbf512938abd5641b4281c10e05495b19342a3b46e4d9a264c"
+        },
+        {
+          "bytes": 1857,
+          "path": "attempts/wave34-rooted-encoding/publication-manifest.sha256",
+          "sha256": "7cba8a082545cbfcbf01785e6e15a0198bd1cf2357ed0a2b3f353b564a1433e7"
+        },
+        {
+          "bytes": 89546779,
+          "path": "attempts/wave34-rooted-encoding/rooted-complete.cnf",
+          "sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3"
+        },
+        {
+          "bytes": 17402973,
+          "path": "attempts/wave34-rooted-encoding/rooted-complete.cnf.gz",
+          "sha256": "6b6beb5d49c7fe75b9b475162cc4bd97de2793389df150dfab9765ba497305f0"
+        },
+        {
+          "bytes": 7723,
+          "path": "attempts/wave34-rooted-encoding/run-manifest.json",
+          "sha256": "0a25edbaa144bfff76171f4d12ec21fe81e3b10db5baeb8b613b1954d03474cc"
+        },
+        {
+          "bytes": 7109,
+          "path": "attempts/wave34-rooted-encoding/test_encoding.py",
+          "sha256": "e004c0d5e913e9aa6a2fc6f889b559c893f8be66911bc8a522726624375f7e6b"
+        },
+        {
+          "bytes": 1172,
+          "path": "attempts/wave34-rooted-encoding/test-results.txt",
+          "sha256": "98b747fc36cd3e9552af131445d6f596ebc0b7c82cfcca5672bcbdff80e7b99a"
+        }
+      ],
+      "entry_count": 18,
+      "path": "attempts/wave34-rooted-encoding/artifact-manifest.sha256",
+      "sha256": "e96036e97884f0bbc19c30073dbe295852117e9d4d54892cf5e57b20e6f6ec05"
+    },
+    "complete_manifest_additions": [
+      "attempts/wave34-rooted-encoding/publication-manifest.sha256",
+      "attempts/wave34-rooted-encoding/rooted-complete.cnf"
+    ],
+    "precomparison_manifest_sha256": "3f1bdcb0ca2d08ee0380cd1435673fddb499db8c3a8273f6676c18f17ad3550c",
+    "precomparison_manifest_unchanged": true,
+    "publication_is_consistent_subset": true,
+    "publication_manifest": {
+      "all_entries_pass": true,
+      "entries": [
+        {
+          "bytes": 18673,
+          "path": "agents/2026-07-24-wave34-rooted-encoding.md",
+          "sha256": "120f9709aea2f7010866c2b7d7e2b74cb954bba92c903923c8c81db4a7dcea8c"
+        },
+        {
+          "bytes": 6859,
+          "path": "attempts/wave34-rooted-encoding/audit_dimacs.py",
+          "sha256": "9ecfb7b06a0d5b078fcd998c926b2e7f4af0ae717855d68dbd047be6c796371a"
+        },
+        {
+          "bytes": 5828,
+          "path": "attempts/wave34-rooted-encoding/check_witness.py",
+          "sha256": "127d5965a50f21c441799bc1c48211a6e4cfa206517e660707c772bb60ec2035"
+        },
+        {
+          "bytes": 971,
+          "path": "attempts/wave34-rooted-encoding/compression-audit.json",
+          "sha256": "df6bcc6077480ff5348357a51b471862ad82c2d1088a561d1dabd1c96664746c"
+        },
+        {
+          "bytes": 10061,
+          "path": "attempts/wave34-rooted-encoding/criterion-spec.json",
+          "sha256": "3429a093c682877a3a14848620860f8ffb5e4cc0b0ca70f0fc5a2f85697d1d82"
+        },
+        {
+          "bytes": 3976,
+          "path": "attempts/wave34-rooted-encoding/decode_model.py",
+          "sha256": "c783572b6922e0297fa731bd767c6823c7f188390f7f285e93c028e9403ab5bd"
+        },
+        {
+          "bytes": 1474,
+          "path": "attempts/wave34-rooted-encoding/dimacs-audit.json",
+          "sha256": "da267da5708f50a0eb46f2c511318e99797ef8a6a9c5f4537db91fef5d5ff1ab"
+        },
+        {
+          "bytes": 6015,
+          "path": "attempts/wave34-rooted-encoding/encoding-audit.json",
+          "sha256": "00be08c4da5bccabc54004cd1b70705a6112847f10658fd2fb0976416cbaa826"
+        },
+        {
+          "bytes": 5676,
+          "path": "attempts/wave34-rooted-encoding/encoding-preflight.json",
+          "sha256": "155f2e310238112d36f8eddac635f4b25fe40f4a417fb3efd59f1fbe5afb970a"
+        },
+        {
+          "bytes": 27794,
+          "path": "attempts/wave34-rooted-encoding/generate_cnf.py",
+          "sha256": "e976ed971cc1dac0ce439257b9269b7be2298b535025697f860be62a1a467c96"
+        },
+        {
+          "bytes": 3704,
+          "path": "attempts/wave34-rooted-encoding/package_cnf.py",
+          "sha256": "b6a771016c433efbf0b2a2bc236b29651e5b750c2b8cd1a7ae3a1deeb2d13994"
+        },
+        {
+          "bytes": 5844,
+          "path": "attempts/wave34-rooted-encoding/primary-map.json",
+          "sha256": "d20ae9196012b2bbf512938abd5641b4281c10e05495b19342a3b46e4d9a264c"
+        },
+        {
+          "bytes": 17402973,
+          "path": "attempts/wave34-rooted-encoding/rooted-complete.cnf.gz",
+          "sha256": "6b6beb5d49c7fe75b9b475162cc4bd97de2793389df150dfab9765ba497305f0"
+        },
+        {
+          "bytes": 7723,
+          "path": "attempts/wave34-rooted-encoding/run-manifest.json",
+          "sha256": "0a25edbaa144bfff76171f4d12ec21fe81e3b10db5baeb8b613b1954d03474cc"
+        },
+        {
+          "bytes": 7109,
+          "path": "attempts/wave34-rooted-encoding/test_encoding.py",
+          "sha256": "e004c0d5e913e9aa6a2fc6f889b559c893f8be66911bc8a522726624375f7e6b"
+        },
+        {
+          "bytes": 1172,
+          "path": "attempts/wave34-rooted-encoding/test-results.txt",
+          "sha256": "98b747fc36cd3e9552af131445d6f596ebc0b7c82cfcca5672bcbdff80e7b99a"
+        }
+      ],
+      "entry_count": 16,
+      "path": "attempts/wave34-rooted-encoding/publication-manifest.sha256",
+      "sha256": "7cba8a082545cbfcbf01785e6e15a0198bd1cf2357ed0a2b3f353b564a1433e7"
+    }
+  },
+  "limitations": [
+    "No SAT or UNSAT solver run was performed.",
+    "No model, 99-vertex witness, or proof certificate exists.",
+    "The encoding theorem is conditional and graph-scoped.",
+    "The candidate checker has no positive target control because no witness is known."
+  ],
+  "line_ending_audit": {
+    "all_expected_rules_present": true,
+    "expected_rules": [
+      "attempts/wave34-rooted-encoding/compression-audit.json -text -diff",
+      "attempts/wave34-rooted-encoding/dimacs-audit.json -text -diff",
+      "attempts/wave34-rooted-encoding/test-results.txt -text -diff"
+    ],
+    "files": {
+      "compression-audit.json": {
+        "bare_cr_count": 0,
+        "bare_lf_count": 0,
+        "bytes": 971,
+        "contains_crlf": true,
+        "crlf_count": 28,
+        "sha256": "df6bcc6077480ff5348357a51b471862ad82c2d1088a561d1dabd1c96664746c"
+      },
+      "dimacs-audit.json": {
+        "bare_cr_count": 0,
+        "bare_lf_count": 0,
+        "bytes": 1474,
+        "contains_crlf": true,
+        "crlf_count": 42,
+        "sha256": "da267da5708f50a0eb46f2c511318e99797ef8a6a9c5f4537db91fef5d5ff1ab"
+      },
+      "test-results.txt": {
+        "bare_cr_count": 0,
+        "bare_lf_count": 3,
+        "bytes": 1172,
+        "contains_crlf": true,
+        "crlf_count": 12,
+        "sha256": "98b747fc36cd3e9552af131445d6f596ebc0b7c82cfcca5672bcbdff80e7b99a"
+      }
+    },
+    "gitattributes_sha256": "3b5a883d038c4a3377a8b237ed0180e4f1d80423e987d13682dde670c92614bd"
+  },
+  "manifest_scope_note": {
+    "candidate_artifact_manifest_self_hash_omitted": true,
+    "candidate_correction_ledger_in_complete_manifest": false,
+    "candidate_correction_ledger_in_publication_manifest": false,
+    "candidate_correction_ledger_sha256": "6daaa2c49cda2ca9e254210ebe64e493cf66cc66510ed6a711251e40e507ff0d",
+    "complete_manifest_label_after_correction_is_literal": false,
+    "impact": "packaging/provenance only; formula bytes remain covered"
+  },
+  "model_route_audit": {
+    "B_mapping_exact": true,
+    "D_mapping_exact": true,
+    "O_label_metadata_exact": true,
+    "candidate_checker_executed_on_hostile_control": true,
+    "candidate_decoder_executed_on_synthetic_controls": true,
+    "checker_block_failure_counts_match_independent": true,
+    "decoder_checks_dimacs_clauses": false,
+    "decoder_requires_all_auxiliary_variables": false,
+    "decoder_requires_all_primary_variables": true,
+    "fixed_cells_exact": true,
+    "hostile_control_rejected": true,
+    "primary_ids_distinguished": 5950,
+    "safety_boundary": "decoder output is explicitly unchecked; a positive claim still requires the independent full adjacency checker",
+    "signature_models": 13
+  },
+  "no_symmetry_scope": {
+    "all_70x15_B_matrices_enter_before_equations": true,
+    "automorphism_or_orbit_clauses": 0,
+    "exact_stream_has_no_unreconstructed_extra_clauses": true,
+    "fixed_B_design_selection": false,
+    "ordered_D_gate_projection_bijective": true
+  },
+  "preflight_reproducibility": {
+    "current_generator_shape_preflight_bytes": 5877,
+    "current_generator_shape_preflight_sha256": "6b8b5c8be9efd30580f9f5293ca02b2afb611f09747d7a54f264b9deb24372ff",
+    "formula_impact": "NONE",
+    "frozen_preflight_bytes": 5676,
+    "frozen_preflight_sha256": "155f2e310238112d36f8eddac635f4b25fe40f4a417fb3efd59f1fbe5afb970a",
+    "only_normalized_difference": "current emitted audit adds variable-group contiguous metadata",
+    "recorded_preflight_byte_reproducible_by_current_generator": false,
+    "semantic_counts_equal_to_emitted_audit": true
+  },
+  "primary_map_checks": {
+    "B_formula": true,
+    "B_range": true,
+    "B_shape": true,
+    "D_formula": true,
+    "D_range": true,
+    "D_shape": true,
+    "O_labels": true
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "candidate CNF is exactly a complete unrestricted labeled encoding of the Wave 33 six-block graph criterion; no satisfiability claim",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "SAT": "UNKNOWN",
+    "UNSAT": "UNKNOWN",
+    "complete_domain_no_symmetry_mapping": "VERIFIED",
+    "encoding_exact_scope": "VERIFIED",
+    "gzip_round_trip": "VERIFIED",
+    "manifested_formula_bytes": "VERIFIED",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rooted_endpoint": "UNKNOWN",
+    "rooted_graph_extension": "UNKNOWN"
+  },
+  "verdict": "STATIC_AND_BYTE_EXACT_COMPLETE_DOMAIN_ENCODING_PASS_WITH_NONFORMULA_CORRECTIONS"
+}

@@ -1,0 +1,172 @@
+{
+  "claim_label": "DERIVED",
+  "conclusion": "INCONCLUSIVE_ENDPOINT_SURVIVES",
+  "endpoint": {
+    "A4_diagonal_excess_units": 21,
+    "delta": 12,
+    "n3": 705,
+    "sum_q": 470,
+    "trace_A4": 1008
+  },
+  "frobenius": {
+    "minimum_t": 60,
+    "odd_unordered_off_diagonal_count": 3250,
+    "rank_lower_for_t": "576/11",
+    "spectral_relaxation_eigenvalues": "22 copies each of (252+21*sqrt(21))/11 and (252-21*sqrt(21))/11",
+    "t_mod_8": 4,
+    "trace_A4_squared_is_441_t": true,
+    "trace_A4_squared_lower": 26460
+  },
+  "harmonic_cubic_kernel": {
+    "all_ones_mass": 1104,
+    "cauchy_q_max": 10,
+    "centered_q10_diagonal": "272",
+    "centered_q10_off_diagonals": {
+      "-1": "-1103",
+      "-2": "-1240",
+      "0": "-1104",
+      "1": "-1105"
+    },
+    "diagonal": 1376,
+    "formula": "H=23*(M hadamard-cubed)-24*M",
+    "q10_multiplicity_max": 1,
+    "row_sum": "138*(q-2)"
+  },
+  "limitations": [
+    "No matrix A4 realizing a scalar witness is constructed.",
+    "No association scheme, automorphism, or triangle-graph catalog is assumed.",
+    "The target and literature novelty remain UNKNOWN."
+  ],
+  "local_A4": {
+    "endpoint_max_single_diagonal": 88,
+    "endpoint_q_max": 8,
+    "gram_tensor": "S_i=sum_j M_ij*(u_j tensor u_j)",
+    "positive_diagonal_modulus": 4,
+    "rational_lower": "(99/43)*(q-2)^2",
+    "table": [
+      {
+        "a4_integral_lower": 12,
+        "a4_rational_lower": "396/43",
+        "cube_row_sum": -12,
+        "excess_units_over_4": 2,
+        "q": 0
+      },
+      {
+        "a4_integral_lower": 4,
+        "a4_rational_lower": "99/43",
+        "cube_row_sum": -6,
+        "excess_units_over_4": 0,
+        "q": 1
+      },
+      {
+        "a4_integral_lower": 4,
+        "a4_rational_lower": "0",
+        "cube_row_sum": 0,
+        "excess_units_over_4": 0,
+        "q": 2
+      },
+      {
+        "a4_integral_lower": 4,
+        "a4_rational_lower": "99/43",
+        "cube_row_sum": 6,
+        "excess_units_over_4": 0,
+        "q": 3
+      },
+      {
+        "a4_integral_lower": 12,
+        "a4_rational_lower": "396/43",
+        "cube_row_sum": 12,
+        "excess_units_over_4": 2,
+        "q": 4
+      },
+      {
+        "a4_integral_lower": 24,
+        "a4_rational_lower": "891/43",
+        "cube_row_sum": 18,
+        "excess_units_over_4": 5,
+        "q": 5
+      },
+      {
+        "a4_integral_lower": 40,
+        "a4_rational_lower": "1584/43",
+        "cube_row_sum": 24,
+        "excess_units_over_4": 9,
+        "q": 6
+      },
+      {
+        "a4_integral_lower": 60,
+        "a4_rational_lower": "2475/43",
+        "cube_row_sum": 30,
+        "excess_units_over_4": 14,
+        "q": 7
+      },
+      {
+        "a4_integral_lower": 84,
+        "a4_rational_lower": "3564/43",
+        "cube_row_sum": 36,
+        "excess_units_over_4": 20,
+        "q": 8
+      },
+      {
+        "a4_integral_lower": 116,
+        "a4_rational_lower": "4851/43",
+        "cube_row_sum": 42,
+        "excess_units_over_4": 28,
+        "q": 9
+      },
+      {
+        "a4_integral_lower": 148,
+        "a4_rational_lower": "6336/43",
+        "cube_row_sum": 48,
+        "excess_units_over_4": 36,
+        "q": 10
+      },
+      {
+        "a4_integral_lower": 188,
+        "a4_rational_lower": "8019/43",
+        "cube_row_sum": 54,
+        "excess_units_over_4": 46,
+        "q": 11
+      },
+      {
+        "a4_integral_lower": 232,
+        "a4_rational_lower": "9900/43",
+        "cube_row_sum": 60,
+        "excess_units_over_4": 57,
+        "q": 12
+      }
+    ],
+    "traceless_anchor_norm_squared": "172/11"
+  },
+  "novelty_status": "UNKNOWN",
+  "scalar_relaxation": {
+    "aggregate_profile_count": 22113,
+    "simple_diagonal_distribution": {
+      "diagonal_4_count": 210,
+      "diagonal_8_count": 21,
+      "trace": 1008
+    },
+    "simple_survivor": {
+      "b0": 0,
+      "b1": 0,
+      "b2": 223,
+      "b3": 8,
+      "b4": 0,
+      "b5": 0,
+      "b6": 0,
+      "b7": 0,
+      "b8": 0,
+      "minimum_excess_units": 0
+    },
+    "warning": "These are scalar witnesses, not matrix or graph constructions."
+  },
+  "schema_version": 1,
+  "schur_cube_kernel": {
+    "all_ones_mass": 48,
+    "cauchy_q_max": 11,
+    "diagonal": 64,
+    "row_sum": "6*(q-2)"
+  },
+  "scope": "conditional_endpoint_n3_705_local_relaxation",
+  "target_status": "UNKNOWN"
+}

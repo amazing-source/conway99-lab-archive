@@ -1,0 +1,48 @@
+role: verifier
+date_utc: 2026-07-27T05:57:01Z
+git_commit: 4f1754a28723a8e0e4ea3025312cd264b1b117d2
+claim_label: VERIFIED
+scope: >
+  Independently exclude rank 25 for every 39-point block of the seven
+  even-part edge types and compose with the separately clean-room-verified
+  four all-odd types to prove rank_F7(M)>=26 for every hypothetical
+  srg(99,14,1,2).
+inputs:
+  verification/2026-07-27-wave40-integration-audit.md: afc812a8740210c2c181b1bd0775da0a3526aa95e8706437cb918815f4543e10
+  verification/wave40-exact-coupling-model/independent-results.json: ff7916d0f5c74c47c8d7787c5cbcc84785cbccd3644d8d03d73e47b73908c0f5
+  attempts/wave41-evenpart-equality/exact-results.json: 8a9e58aaa1073ae4a87e183f904ce7f43eaa620bbac5a6f5d1f8445dd795dc85
+  verification/wave41-multiedge-rank-packing/independent-results.json: 20cfac8928e1a9d52a586a833d8e52cc7f64f7998bdd641467ded5121e2da133
+method: >
+  Before discovery access, derive the full 39-block singular Schur equality
+  condition and the equivalent cubic-core Laplacian condition; exhaust
+  164,928 minimum-projection permutations, canonicalize 52 right kernels
+  and 164,278 equality targets, and evaluate all 10,395 labelled third-fibre
+  matchings per kernel with exact F7 arithmetic. Freeze the implementation,
+  compare the frozen discovery package, verify the separately finalized
+  all-odd package, and prove that the two disjoint type sets exhaust all
+  eleven positive partitions of six.
+command: |
+  .\.venv\Scripts\python.exe -B verification\wave41-evenpart-equality\independent_check.py --verify verification\wave41-evenpart-equality\independent-results.json
+  .\.venv\Scripts\python.exe -B verification\wave41-evenpart-equality\comparison_check.py --verify verification\wave41-evenpart-equality\discovery-comparison.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave41-evenpart-equality -p "test_*.py" -v
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave41-evenpart-equality -p "test_*.py" -v
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave41-multiedge-rank-packing -p "test_*.py" -v
+outputs:
+  verification/wave41-evenpart-equality/README.md: 966ad7841226e7dec69fa909d3dc04855225824ca650d4768f5d8b360d90422c
+  verification/wave41-evenpart-equality/audit.md: 47fa605157b756f317a0d8eda4d587791ebc6731b7cdbb97994bb7983ab821fe
+  verification/wave41-evenpart-equality/independent_check.py: d27d70af72df6f7824a0c32f15fb1f70ba32036564c903e36a991b1d88b0cf81
+  verification/wave41-evenpart-equality/independent-results.json: ec371dad71c794d57d4e27b21d17b08fac1d17e22167749ef797d950c18299e4
+  verification/wave41-evenpart-equality/test_independent_check.py: dd0670b3d0b987f67a1b21d2cc4fb7365e1efb0f61a286d0b1f33e11827df659
+  verification/wave41-evenpart-equality/comparison_check.py: 35a8d80e751a8ee2bfee58b81d5d10c75edb21dc173032c269b1df91fec53085
+  verification/wave41-evenpart-equality/discovery-comparison.json: 6ece1335fa595e4feed57b45cf63e6229697d0f410b2ebae1c32cde9e1cdcc1c
+  verification/wave41-evenpart-equality/test_comparison_check.py: d1238db8c5b38381db9b0d3862b69183616504f17eb31fc98d94ded5abf64562
+  verification/wave41-evenpart-equality/test-results.txt: ace2fae32097d9887a4949f14c177c10c41c4c14534074df0aab8b6c7937f51f
+  verification/wave41-evenpart-equality/implementation-freeze.sha256: 4e25c930c3389fc0c306caf33632820a11af5ce1b3acf749ad23ccf7440bdae1
+  verification/wave41-evenpart-equality/full-replay.stdout.txt: e6733a9b0dccae8da9978097bfb1d53cac7f79a41724ee83cc247588fb0fb945
+  agents/2026-07-27-wave41-rank26-verifier.md: 78dfad8af116665142795d0a2af75aaeec2b75d82c25864305d00aaf4530066c
+limitations:
+  - Conway-99 existence remains UNKNOWN.
+  - The endpoint n3=4158 remains UNKNOWN.
+  - No general upper-bound improvement below 4158 is proved.
+  - No graph or 99-vertex partial graph is constructed.
+  - Literature novelty and priority remain UNKNOWN.

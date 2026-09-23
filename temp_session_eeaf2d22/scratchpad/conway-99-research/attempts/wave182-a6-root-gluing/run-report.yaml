@@ -1,0 +1,42 @@
+role: proof_a
+date_utc: 2026-07-28T23:45:26Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Under conditional Wave181 equality Q=2079, gluing of the 99 local
+  21-point negative-A6 root systems, 4-regular complement color classes,
+  global root count 231 through 415, and the rigid 231-root incidence
+  boundary.
+inputs:
+  - attempts/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - attempts/wave176-star-projector-circuits/package-manifest.sha256
+  - verification/wave176-star-projector-circuits/package-manifest.sha256
+  - attempts/wave178-edge-circuit-injection/package-manifest.sha256
+  - verification/wave178-edge-circuit-injection/package-manifest.sha256
+  - attempts/wave181-c4-conic-equality/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+method: >-
+  Local simplex-difference root geometry, exact circuit uniqueness,
+  complement color graphs, SRG common-neighbor bounds, edge-local circuit
+  caps, second moments, and projector frames. No graph, code, SAT,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave182-a6-root-gluing\exact_check.py --verify
+  attempts\wave182-a6-root-gluing\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave182-a6-root-gluing\test_exact_check.py
+outputs:
+  - attempts/wave182-a6-root-gluing/README.md
+  - attempts/wave182-a6-root-gluing/derivation.md
+  - attempts/wave182-a6-root-gluing/failed-routes.md
+  - attempts/wave182-a6-root-gluing/protocol.md
+  - attempts/wave182-a6-root-gluing/exact_check.py
+  - attempts/wave182-a6-root-gluing/exact-results.json
+  - attempts/wave182-a6-root-gluing/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - Wave181 equality Q=2079 is not excluded.
+  - The 231-root incidence design survives first spectral and frame tests.
+  - Rank 11, the endpoint, and Conway-99 remain UNKNOWN.

@@ -1,0 +1,58 @@
+role: verifier
+date_utc: 2026-07-29T04:06:05Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: independently verify canonical
+  exact-three flag injection, fixed-center pairwise intersection, the exact
+  (7,3) Hilton--Milner and common-star alternatives, distinct oriented
+  private-label incidence, SG>=0, the exact rational certificate and
+  rounding Q>=6980, rational null boundaries, and failed-route quarantine.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  attempts/wave195-leaf-packet-intersection-proof-a/package-manifest.sha256: 1055402dac438ad8f13e9e3fc91ec71a6da0f936306f379fa8f3deedb5b0c45b
+  attempts/wave195-packet-cohomology-proof-b/package-manifest.sha256: feb5cbd767f8e7f223a012818b6177119a233b3a8bb3cbbb148d52fa7a2706c3
+  verification/wave174-no-weight3-dual/package-manifest.sha256: ac34c8a3b045bec70e3a2080cb4365c0ea43cc732b313ecb3cec355a28f23450
+  verification/wave180-capacity3-companion/package-manifest.sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  verification/wave186-star-translation-cover-verifier/package-manifest.sha256: edb833cbed8706f164199d4ecab8ff26757c54dfc46915819e150e17d73fef76
+  verification/wave188-affine-star-word-amplification-verifier/package-manifest.sha256: e58bd132b1e1579f5e4e6570d7e0b4318a6c5f970342d4b9493e0c35a3c0dc74
+  verification/wave189-degree7-star-orbit-verifier/package-manifest.sha256: fc17484bd8c32a5886ecdcc65d153903cef5f3b60a3de1c9905ed96697c273c4
+  verification/wave191-exact-three-residual-verifier/package-manifest.sha256: a14f43310fb5ead05c4bd50b376f3d9d90ec77a92bc00f8c3b7326013f975ab2
+  verification/wave194-five-thirds-verifier/package-manifest.sha256: 236facbec2539a87e197fd0b2b8ca66bc0d53b12415fdf216acf410064d7ca64
+method: >-
+  Clean-room ternary relation cancellation, exact-multiplicity flag
+  classification, extremal set theory, lambda-one common-neighbor geometry,
+  oriented-label injection, inherited companion-pool separation, exact
+  Fraction coefficient expansion, rational-null replay, and frozen-manifest
+  validation. No graph, code, cover, SAT, LP, configuration, enumeration,
+  isomorphism, or brute-force search in the sealed verifier.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave195-hilton-milner-verifier\independent_check.py
+  --verify-math
+  verification\wave195-hilton-milner-verifier\independent-math-result.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave195-hilton-milner-verifier\independent_check.py --verify
+  verification\wave195-hilton-milner-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave195-hilton-milner-verifier\test_independent_check.py
+outputs:
+  verification/wave195-hilton-milner-verifier/README.md: 3ab1679675be9cd9b3a6435196343a2dc76f4b498c6c0710e5afdf67a9b7a0b9
+  verification/wave195-hilton-milner-verifier/audit.md: 66030a334fd84bb39d556e2df4b72b7c0d84b2dc94da8c8778865abbc7ea8209
+  verification/wave195-hilton-milner-verifier/protocol.md: e816463815765ecd004c87ad5cd12fe29cc259390383177907de9761d9e93686
+  verification/wave195-hilton-milner-verifier/independent_check.py: f103e48331ef17119861cbd9975b29c3ef450e821c82ba28b4811ac10c15fd3c
+  verification/wave195-hilton-milner-verifier/independent-math-result.json: dccdf05ba920b61df542e3c0795a95a1ef515a58138424ea05cd07bc0a4893e7
+  verification/wave195-hilton-milner-verifier/independent-result-freeze.sha256: 403f363d3a91a45035f5b431251b24afc413d6e4bc7200a108db0882b71a93a5
+  verification/wave195-hilton-milner-verifier/independent-results.json: d71e4a740e8bfacb00f9c2eb81b1992cb4eb95ece037529beb392986f180663e
+  verification/wave195-hilton-milner-verifier/test_independent_check.py: fbbb29a2bb9840724a5fbb0808bb73bb7156fee2146ecb98db82c03f2e2592a5
+  verification/wave195-hilton-milner-verifier/input-freeze.sha256: 124ba476c01e6de730eebc6dc1d5f5a950c63e172d7615c30b17044300138a4f
+limitations:
+  - The theorem is conditional on the frozen prism-free rank-11 endpoint.
+  - The primary proof's statement that every label outside U is private is
+    corrected to the sufficient and true selected-low coverage statement.
+  - All rational null rows are arithmetic only.
+  - The failed mixed type-one orientation route remains quarantined.
+  - No endpoint, cover, flag family, circuit system, code, or graph is
+    constructed, and no incompatible upper bound follows.
+  - Rank 11, endpoint existence, strict original n3 improvement, external
+    novelty, and Conway-99 remain UNKNOWN.

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-07-27",
+  "coverage": "Bounded primary-source web search, direct PDF inspection, public GitHub code search, and pinned repository inspection. This is not a complete MathSciNet, zbMATH, Google Scholar, citation-network, language, thesis, proceedings, private-code, or unpublished-manuscript search.",
+  "queries": [
+    {
+      "id": "Q01",
+      "channel": "ranked_web",
+      "query_strings": [
+        "\"99,14,1,2\" \"p-rank\"",
+        "\"Conway's 99-graph\" Smith rank",
+        "\"J-I-2A\" strongly regular rank 7",
+        "\"Conway 99\" \"7-rank\"",
+        "\"Conway 99\" triangle incidence",
+        "\"rank 25\" \"Conway\" graph"
+      ],
+      "disposition": "Located general p-rank theory, Conway Laplacian Smith-form work, triangle-incidence work, and characteristic-5 finite-field frame work; no exact rank-25 equivalent in the returned primary sources."
+    },
+    {
+      "id": "Q02",
+      "channel": "github_code_search",
+      "commands": [
+        "gh search code '\"rank_F7\" \"99,14,1,2\"' --limit 20 --json repository,path,url",
+        "gh search code '\"99,14,1,2\" \"F7\"' --limit 20 --json repository,path,url",
+        "gh search code '\"srg(99,14,1,2)\" rank' --limit 20 --json repository,path,url",
+        "gh search code '\"J-I-2A\" conway' --limit 20 --json repository,path,url",
+        "gh search code '\"99,14,1,2\" \"p-rank\"' --limit 20 --json repository,path,url"
+      ],
+      "result": "All returned empty arrays during this run.",
+      "disposition": "Bounded nonhit only; not evidence of novelty."
+    },
+    {
+      "id": "Q03",
+      "channel": "pinned_notebook_inspection",
+      "source": "https://raw.githubusercontent.com/GrayTaylor/conway99/68a9f2dcade05581986bf98b97cf8d7a5cdd4158/Two%20adjacent%20vertices%20and%20their%20combined%20neighbourhoods.ipynb",
+      "searched_terms": ["rank", "Smith", "Seidel", "mod 7", "F7", "incidence"],
+      "result": "No term hits. The notebook independently records reduction to 11 representatives on the 27-vertex edge-neighborhood.",
+      "disposition": "Exact local-scaffold prior art; no rank-25 overlap located."
+    },
+    {
+      "id": "Q04",
+      "channel": "direct_pdf_text_search",
+      "sources": [
+        "Brouwer and van Eijl 1992",
+        "van Eijl 1991 thesis",
+        "Brouwer and Van Maldeghem 2022",
+        "Petro and Phillips 2025",
+        "Ducey et al. 2021",
+        "Greaves et al. 2022",
+        "Keramatipour 2026",
+        "Selub 2023",
+        "Lou and Murin 2014",
+        "Reimbayev 2024 and 2025",
+        "Dunkel bachelor thesis"
+      ],
+      "aliases": [
+        "(99,14,1,2)",
+        "Conway",
+        "p-rank",
+        "rank",
+        "Smith",
+        "Seidel",
+        "incidence matrix",
+        "J-I-2A",
+        "modulo 7",
+        "F7",
+        "rank 25"
+      ],
+      "disposition": "Classified exact local, general-method, distinct-matrix, distinct-characteristic, and distinct-method overlaps in source-ledger.json."
+    },
+    {
+      "id": "Q05",
+      "channel": "pinned_public_repository_tree_probe",
+      "repositories": [
+        "GrayTaylor/conway99@68a9f2dcade05581986bf98b97cf8d7a5cdd4158",
+        "Kuberwastaken/conway99-c3-orbit-restriction@be7b0ae3394721a4c3a1375008a1dbfca44981fc",
+        "harrisonpedrero/conway-99-graph@26b36c540611fa02c95a5a4bd78cd4a582257195"
+      ],
+      "disposition": "Gray Taylor supplies the exact 27-point/11-type scaffold. The other pinned probes concern distinct restricted/formal or rooted-certificate targets; no exact frozen rank claim was located."
+    }
+  ]
+}

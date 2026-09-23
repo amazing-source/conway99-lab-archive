@@ -1,0 +1,38 @@
+role: orchestrator
+date_utc: 2026-07-29T01:09:11Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint lower bound Q>=3696 for nonedge-realizing
+  projective short circuits, exclusion of the former Q=2079 equality face,
+  and dual short-word lower bound B4+...+B9>=8778.
+inputs:
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave179-global-transversal-circuits/package-manifest.sha256
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+method: >-
+  Symbolic star-translation of the verified multiplicity-two and
+  multiplicity-three relations, proper-star independence, private-label
+  counting in an inclusion-minimal cover, capacity three, and an exact
+  linear inequality. No graph, code, SAT, cover, configuration, or
+  isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave186-star-translation-cover\exact_check.py --verify
+  attempts\wave186-star-translation-cover\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave186-star-translation-cover\test_exact_check.py
+outputs:
+  - attempts/wave186-star-translation-cover/README.md
+  - attempts/wave186-star-translation-cover/derivation.md
+  - attempts/wave186-star-translation-cover/failed-routes.md
+  - attempts/wave186-star-translation-cover/protocol.md
+  - attempts/wave186-star-translation-cover/exact_check.py
+  - attempts/wave186-star-translation-cover/exact-results.json
+  - attempts/wave186-star-translation-cover/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The arithmetic equality profile is not a circuit cover.
+  - No incompatible complete-enumerator upper bound is known.
+  - Rank 11, the endpoint, and Conway-99 remain UNKNOWN.

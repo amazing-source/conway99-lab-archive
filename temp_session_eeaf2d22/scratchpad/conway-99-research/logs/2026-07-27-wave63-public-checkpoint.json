@@ -1,0 +1,52 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-27T22:20:38Z",
+  "format": "conway99-wave63-public-checkpoint-v1",
+  "git_base_commit": "81c8d45426938ea8490af55d81f05b7c2ad99035",
+  "manifests": {
+    "wave60_discovery": "ccf35d05a4125178a7cb065b73972ef310584b14c6a447ea889f3b06a170629b",
+    "wave60_verification": "9bb26011e087e8f127d2a830635ebeecdae3da72d31e69b6e31f73d7513e3f2f",
+    "wave61_discovery": "63343515a1abd1e053e4fed84de0ba88d9c53833994a8ac08d4325520b83c252",
+    "wave61_verification": "f2ffa83a03772af8f8aa3ecf5e17459eaaa24f8c566474c61b81dd004f587cc9",
+    "wave62_discovery": "d62af7171cd825001c8bce4b9b1502970718640f5c441164eb49d4e59ba26401",
+    "wave62_verification": "439bd26e463ae19ce7cbac9989b23a681236d7a1df623005e5a829e5f8957968",
+    "wave63_discovery": "c85f9dcf3d0bdba2a41299c4a3c4fdd8c9802903cff04ab237f40d9840df6018",
+    "wave63_verification": "3c19b9c226e141850a7763467c1eb7e19a15752dac03cdca9f6a4b7cb3dae017"
+  },
+  "prior_checkpoint": "logs/2026-07-27-wave59-public-checkpoint.json",
+  "results": {
+    "wave60_component_design": {
+      "accepted_component_types": 18,
+      "candidate_maximum": 27200,
+      "candidate_minimum": 15936,
+      "eliminated_triples": 0,
+      "safe_coordinate_orbits": 275,
+      "triples": 1140
+    },
+    "wave61_finite_field": {
+      "correction": "cubic margin identity and scalar totals only; integral T feasibility not tested",
+      "full_pair_eliminations": 0,
+      "full_pair_generator_ranks": [438, 442, 446, 450, 454, 458, 462]
+    },
+    "wave62_invariant_sdp": {
+      "averaged_matrices": 1949,
+      "endpoint_parameters_surviving": 43,
+      "exact_scalar_blocks": 23388,
+      "negative_blocks": 0
+    },
+    "wave63_rational_pair_cone": {
+      "exact_pair_equations_replayed": 46620,
+      "integer_designs": 0,
+      "tested_lanes": 74,
+      "witnesses_with_coefficients_at_most_one": 74
+    }
+  },
+  "status": "VERIFIED_SCOPED_WITH_CORRECTIONS",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

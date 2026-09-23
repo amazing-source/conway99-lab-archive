@@ -1,0 +1,42 @@
+role: proof_a
+date_utc: 2026-07-27T14:07:32Z
+git_commit: ef49b60aafd67f9007f6c218c39fd50392453a1b
+claim_label: CANDIDATE
+scope: >-
+  Complete discovery-side classification of rank-26 equality for all eleven
+  edge-local partitions of six, with no automorphism restriction on a
+  completed graph.
+inputs:
+  attempts/wave42-rank26-equality/input-freeze.sha256: 60cf520e9f6c053d48fae2666511e21509d4691a4b7853b2f05ca7b6a1778d59
+  verification/wave41-rank26-secondary/secondary_check.py: 3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3
+method: >-
+  Use the frozen Wave 41 Schur rank decomposition. For seven even-part
+  types, enumerate every minimum-F labelled permutation and all 10,395
+  labelled third-fibre matchings, apply a lossless rank-one diagonal filter,
+  and decide every survivor by the exact pivot identity. For four all-odd
+  types, enumerate every matching and use the unique first nonzero diagonal
+  pivot to convert rank one into a complete pairwise all-different CSP over
+  all 12! labelled border permutations. Recheck any emitted leaf by exact
+  full-block rank.
+command: |
+  $parts = @(
+    '1+1+1+1+1+1', '2+1+1+1+1', '2+2+1+1', '2+2+2',
+    '3+1+1+1', '3+2+1', '3+3', '4+1+1', '4+2', '5+1', '6'
+  )
+  foreach ($part in $parts) {
+    .\.venv\Scripts\python.exe -B attempts\wave42-rank26-equality\exact_check.py --verify "attempts\wave42-rank26-equality\partial-$part.json"
+  }
+  .\.venv\Scripts\python.exe -B attempts\wave42-rank26-equality\compose_results.py --verify attempts\wave42-rank26-equality\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave42-rank26-equality -p "test_*.py" -v
+  .\.venv\Scripts\python.exe -B attempts\wave42-rank26-equality\manifest_check.py
+outputs:
+  attempts/wave42-rank26-equality/exact-results.json: 94473b4c9f35184376765f76ab16646956222112836f49bcb22e950142a863a1
+  attempts/wave42-rank26-equality/exact_check.py: 3584ff44ac9a72ae1a60848f016908f208273080e144eeb1546e09176a5554cc
+  attempts/wave42-rank26-equality/proof.md: 222d18e7f48190d4693210a1d06e26c7c51926d59e46bb489ca461337bbf16fd
+  attempts/wave42-rank26-equality/test_exact_check.py: 29b36202b9aa45cf7d55e37e6dfcfe15e8987847b0ec6d2491db36c660be9a8e
+limitations:
+  - Discovery cannot verify itself.
+  - No graph or global compatibility certificate is constructed.
+  - The endpoint n3=4158 remains UNKNOWN.
+  - No upper bound below n3<=4158 is proved.
+  - Novelty and priority remain UNKNOWN.

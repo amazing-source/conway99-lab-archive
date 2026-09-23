@@ -1,0 +1,327 @@
+* text=auto eol=lf
+
+formal/opb-calibration/*.opb text eol=lf
+formal/opb-calibration/*.pbp text eol=lf
+verification/cyclic-design/*.json text eol=lf
+verification/cyclic-design/*.py text eol=lf
+verification/literature-audit/*.py text eol=lf
+verification/n3-joint-cover/*.json text eol=lf
+verification/n3-joint-cover/*.py text eol=lf
+verification/n3-refined-cover/*.json text eol=lf
+verification/n3-refined-cover/*.py text eol=lf
+verification/n3-count-bound/*.py text eol=lf
+verification/n3-42-equality/*.json text eol=lf
+verification/n3-42-equality/*.py text eol=lf
+
+# Wave 19 verifier logs are checksum-pinned raw Windows process streams.
+# Preserve their exact bytes so clean clones reproduce the audit hashes.
+verification/n3-60-closure/*.log -text -diff
+
+# Wave 34 encoding audits were emitted as checksum-pinned raw Windows streams.
+# Preserve their exact bytes so the published manifests survive clean clones.
+attempts/wave34-rooted-encoding/compression-audit.json -text -diff
+attempts/wave34-rooted-encoding/dimacs-audit.json -text -diff
+attempts/wave34-rooted-encoding/test-results.txt -text -diff
+
+# Wave 43 seven-deck verifier outputs are checksum-pinned raw Windows streams.
+# Preserve their exact bytes so the package manifest survives clean clones.
+verification/wave43-seven-deck-endpoint/comparison.json -text -diff
+verification/wave43-seven-deck-endpoint/independent-result.json -text -diff
+
+# Wave 45 discovery checkpoint payloads are checksum-pinned raw streams.
+attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json -text -diff
+attempts/wave45-flag-moment/checkpoint-v1-stored-witness-results.json -text -diff
+attempts/wave45-flag-moment/replay-v1-results.json -text -diff
+
+# Waves 46--49 exact outputs are checksum-pinned byte streams.
+attempts/wave46-f7-code/*.json -text -diff
+verification/wave46-f7-code/*.json -text -diff
+attempts/wave47-branch15-polynomial/*.json -text -diff
+verification/wave47-branch15-polynomial/*.json -text -diff
+attempts/wave47-three-root-moment/*.json -text -diff
+verification/wave47-three-root-moment/*.json -text -diff
+attempts/wave48-conic-moment/*.json -text -diff
+verification/wave48-conic-moment/*.json -text -diff
+verification/wave48-conic-moment/reconstruct.stdout.log -text -diff
+attempts/wave49-five-root-moment/*.json -text -diff
+verification/wave49-five-root-moment/*.json -text -diff
+
+# Wave 51 exact outputs are checksum-pinned byte streams.
+attempts/wave51-global-triple-tensor/*.json -text -diff
+verification/wave51-global-triple-tensor/*.json -text -diff
+attempts/wave51-seidel-smith/*.json -text -diff
+verification/wave51-seidel-smith/*.json -text -diff
+verification/wave51-rankone-cut-relaxation/*.json -text -diff
+verification/wave51-rankone-cut-relaxation-independent/*.json -text -diff
+
+# Wave 52 coherent-closure outputs are checksum-pinned byte streams.
+attempts/wave52-coherent-closure/*.json -text -diff
+verification/wave52-coherent-closure/*.json -text -diff
+
+# Waves 53--55 exact outputs are checksum-pinned byte streams.
+attempts/wave53-proof-cover/*.json -text -diff
+verification/wave53-proof-cover/*.json -text -diff
+attempts/wave53-multi-root-wl/*.json -text -diff
+verification/wave53-multi-root-wl/*.json -text -diff
+verification/wave53-multi-root-wl/records/*.json -text -diff
+attempts/wave53-exact-cut-loop/*.json -text -diff
+verification/wave53-exact-cut-loop/*.json -text -diff
+attempts/wave54-centered-enumerator/*.json -text -diff
+verification/wave54-centered-enumerator/*.json -text -diff
+attempts/wave55-branch15-remainder-search/*.json -text -diff
+
+# Waves 56--59 exact outputs are checksum-pinned byte streams.
+attempts/wave56-percolation-closure/*.json -text -diff
+verification/wave56-percolation-closure/*.json -text -diff
+attempts/wave57-star-complement/*.json -text -diff
+verification/wave57-star-complement/*.json -text -diff
+attempts/wave58-cross-incidence-rank/*.json -text -diff
+verification/wave58-cross-incidence-rank/*.json -text -diff
+attempts/wave59-incidence-spectral-excess/*.json -text -diff
+verification/wave59-incidence-spectral-excess/*.json -text -diff
+
+# Wave 64 exact outputs are checksum-pinned raw Windows byte streams.
+attempts/wave64-rooted-transition-design/*.json -text -diff
+attempts/wave64-rooted-transition-design/*.md whitespace=-blank-at-eof
+
+# Wave 66 discovery checksums are sealed exact outputs; one input-freeze
+# deliberately carries its generated terminal blank record.
+attempts/wave66-spherical-code-shift/*.sha256 whitespace=-blank-at-eof
+
+# Wave 72 verifier records are checksum-pinned and retain generated terminal
+# blank records where present.
+verification/wave72-order11-automorphism/discovery-inventory-preinspection.tsv whitespace=-blank-at-eof
+verification/wave72-order11-automorphism/protocol.md whitespace=-blank-at-eof
+verification/wave72-order11-automorphism/test_independent_verify.py whitespace=-blank-at-eof
+
+# Waves 82 and 86 contain checksum-pinned generated JSON with retained CRLF.
+verification/wave82-seidel-orthogonal/independent-results.json -text -diff
+attempts/wave86-level7-exact/exact-results.json -text -diff
+
+# Sealed Wave 82 and 84 files deliberately retain generated terminal records.
+attempts/wave82-seidel-orthogonal/README.md whitespace=-blank-at-eof
+attempts/wave82-seidel-orthogonal/derivation.md whitespace=-blank-at-eof
+attempts/wave82-seidel-orthogonal/failed-routes.md whitespace=-blank-at-eof
+attempts/wave82-seidel-orthogonal/input-freeze.sha256 whitespace=-blank-at-eof
+attempts/wave82-seidel-orthogonal/protocol.md whitespace=-blank-at-eof
+attempts/wave82-seidel-orthogonal/strategy-memo.md whitespace=-blank-at-eof
+attempts/wave84-rooted-sat-portfolio/README.md whitespace=-blank-at-eof
+attempts/wave84-rooted-sat-portfolio/exact-results.json whitespace=-blank-at-eof
+attempts/wave84-rooted-sat-portfolio/failed-routes.md whitespace=-blank-at-eof
+attempts/wave84-rooted-sat-portfolio/protocol.md whitespace=-blank-at-eof
+
+# Sealed Wave 90 and 94 discovery files retain their generated terminal
+# blank records; suppress only that whitespace diagnostic without rewriting.
+attempts/wave90-short-vector-count-upper/README.md whitespace=-blank-at-eof
+attempts/wave90-short-vector-count-upper/derivation.md whitespace=-blank-at-eof
+attempts/wave90-short-vector-count-upper/exact_check.py whitespace=-blank-at-eof
+attempts/wave90-short-vector-count-upper/failed-routes.md whitespace=-blank-at-eof
+attempts/wave90-short-vector-count-upper/protocol.md whitespace=-blank-at-eof
+attempts/wave90-short-vector-count-upper/run-report.yaml whitespace=-blank-at-eof
+attempts/wave90-short-vector-count-upper/test_exact_check.py whitespace=-blank-at-eof
+attempts/wave94-general-n3-norm14-bound/README.md whitespace=-blank-at-eof
+attempts/wave94-general-n3-norm14-bound/derivation.md whitespace=-blank-at-eof
+attempts/wave94-general-n3-norm14-bound/exact_check.py whitespace=-blank-at-eof
+attempts/wave94-general-n3-norm14-bound/protocol.md whitespace=-blank-at-eof
+attempts/wave94-general-n3-norm14-bound/run-report.yaml whitespace=-blank-at-eof
+attempts/wave94-general-n3-norm14-bound/test_exact_check.py whitespace=-blank-at-eof
+
+# The sealed Wave 101 verifier retains generated terminal blank records.
+verification/wave101-all-rank-level7-lp/README.md whitespace=-blank-at-eof
+verification/wave101-all-rank-level7-lp/audit.md whitespace=-blank-at-eof
+
+# Waves 96 and 109 contain checksum-pinned generated CRLF byte streams.
+attempts/wave96-norm16-norm18-upper/exact-results.json -text -diff
+attempts/wave96-norm16-norm18-upper/package-manifest.sha256 -text -diff
+verification/wave96-norm16-norm18-upper/independent-results.json -text -diff
+attempts/wave109-c4boxk3-local-projector/exact-results.json -text -diff
+verification/wave109-c4boxk3-local-projector/exact-results.json -text -diff
+
+# Waves 120--125 contain checksum-pinned generated Windows byte streams.
+attempts/wave120-fixedc4-sumdiff/exact-results.json -text -diff
+verification/wave120-fixedc4-sumdiff/independent-results.json -text -diff
+attempts/wave121-vector-theta-orbits/exact-results.json -text -diff
+attempts/wave121-vector-theta-orbits/scalar-jacobi-results.json -text -diff
+verification/wave121-vector-theta-orbits/comparison.json -text -diff
+attempts/wave124-c4-index70-jacobi/exact-results.json -text -diff
+verification/wave124-c4-index70-jacobi/comparison.json -text -diff
+verification/wave124-c4-index70-jacobi/independent-jacobi-results.json -text -diff
+attempts/wave125-long-motif-sat/branch0-900s-launch2.stdout.txt -text -diff
+
+# Waves 123 and 127--131 are sealed, checksum-pinned research packages.
+# Preserve their exact bytes across Windows checkouts; the Jacobi column
+# caches are binary proof inputs and should not receive textual diffs.
+attempts/wave123-fixedc4-threepoint/** -text
+attempts/wave123-fixedc4-threepoint/*.json -diff
+attempts/wave123-fixedc4-threepoint/*.sha256 -diff
+attempts/wave123-fixedc4-threepoint/*.txt -diff
+verification/wave123-fixedc4-threepoint/** -text
+verification/wave123-fixedc4-threepoint/*.json -diff
+verification/wave123-fixedc4-threepoint/*.sha256 -diff
+verification/wave123-fixedc4-threepoint/*.txt -diff
+attempts/wave127-independent-jacobi-certificate/** -text
+attempts/wave127-independent-jacobi-certificate/*.json -diff
+attempts/wave127-independent-jacobi-certificate/*.pkl -diff
+attempts/wave127-independent-jacobi-certificate/*.sha256 -diff
+attempts/wave127-independent-jacobi-certificate/*.txt -diff
+attempts/wave128-alternative-spaces/** -text
+attempts/wave128-alternative-spaces/*.json -diff
+attempts/wave128-alternative-spaces/*.sha256 -diff
+attempts/wave128-alternative-spaces/*.txt -diff
+verification/wave128-alternative-spaces/** -text
+verification/wave128-alternative-spaces/*.json -diff
+verification/wave128-alternative-spaces/*.sha256 -diff
+verification/wave128-alternative-spaces/*.txt -diff
+attempts/wave129-jacobi-stress/** -text
+attempts/wave129-jacobi-stress/*.json -diff
+attempts/wave129-jacobi-stress/*.pkl -diff
+attempts/wave129-jacobi-stress/*.sha256 -diff
+attempts/wave129-jacobi-stress/*.txt -diff
+verification/wave127-wave129-jacobi-audit/** -text
+verification/wave127-wave129-jacobi-audit/*.json -diff
+verification/wave127-wave129-jacobi-audit/*.sha256 -diff
+verification/wave127-wave129-jacobi-audit/*.txt -diff
+attempts/wave131-binary-lcd-enumerator/** -text
+attempts/wave131-binary-lcd-enumerator/*.json -diff
+attempts/wave131-binary-lcd-enumerator/*.sha256 -diff
+attempts/wave131-binary-lcd-enumerator/*.txt -diff
+verification/wave131-binary-lcd-enumerator/** -text
+verification/wave131-binary-lcd-enumerator/*.json -diff
+verification/wave131-binary-lcd-enumerator/*.sha256 -diff
+verification/wave131-binary-lcd-enumerator/*.txt -diff
+
+# Waves 130, 132, and 133 are sealed, checksum-pinned research packages.
+# Preserve their exact mixed-platform bytes so every package manifest replays
+# after a clean checkout.
+attempts/wave130-cdd-exact-lp/** -text
+verification/wave130-cdd-exact-lp/** -text
+attempts/wave132-distinguished-biweight/** -text
+verification/wave132-distinguished-biweight/** -text
+attempts/wave133-triangle-holonomy-topology/** -text
+verification/wave133-triangle-holonomy-topology/** -text
+attempts/wave130-cdd-exact-lp/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave130-cdd-exact-lp/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave132-distinguished-biweight/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave132-distinguished-biweight/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave133-triangle-holonomy-topology/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave133-triangle-holonomy-topology/** whitespace=cr-at-eol,-blank-at-eof
+
+# Wave 134 is another checksum-pinned mixed-platform research package.
+attempts/wave134-z4-symmetrized-enumerator/** -text
+verification/wave134-z4-symmetrized-enumerator/** -text
+attempts/wave134-z4-symmetrized-enumerator/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave134-z4-symmetrized-enumerator/** whitespace=cr-at-eol,-blank-at-eof
+
+# Waves 135--147 are sealed, checksum-pinned mixed-platform research packages.
+# Preserve exact bytes so package manifests replay after a clean checkout.
+attempts/wave135-z4-exact-face/** -text
+verification/wave135-z4-exact-face/** -text
+attempts/wave136-alternative-spaces/** -text
+verification/wave136-alternative-spaces/** -text
+attempts/wave137-z4-arf-branches/** -text
+verification/wave137-arf-krawtchouk/** -text
+attempts/wave139-gf4-n3-bound/** -text
+verification/wave139-gf4-lower-aggregation/** -text
+attempts/wave140-arf-sign-lattice/** -text
+verification/wave140-arf-sign-lattice/** -text
+attempts/wave141-bivariate-graph-code/** -text
+verification/wave141-bivariate-graph-code/** -text
+attempts/wave142-interlace-isotropic/** -text
+verification/wave142-interlace-isotropic/** -text
+attempts/wave143-binary-s6-projection/** -text
+verification/wave143-binary-s6-projection/** -text
+attempts/wave144-sixset-odd-profile/** -text
+verification/wave144-sixset-odd-profile-cleanroom/** -text
+attempts/wave146-six-seven-coupling/** -text
+verification/wave146-six-seven-coupling/** -text
+attempts/wave147-alternative-lane/** -text
+verification/wave147-pair-root-order8/** -text
+
+# CR is part of the sealed Windows byte stream rather than trailing whitespace.
+# Blank terminal lines are likewise retained because changing them breaks hashes.
+attempts/wave135-z4-exact-face/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave135-z4-exact-face/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave136-alternative-spaces/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave136-alternative-spaces/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave137-z4-arf-branches/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave137-arf-krawtchouk/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave139-gf4-n3-bound/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave139-gf4-lower-aggregation/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave140-arf-sign-lattice/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave140-arf-sign-lattice/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave141-bivariate-graph-code/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave141-bivariate-graph-code/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave142-interlace-isotropic/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave142-interlace-isotropic/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave143-binary-s6-projection/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave143-binary-s6-projection/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave144-sixset-odd-profile/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave144-sixset-odd-profile-cleanroom/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave146-six-seven-coupling/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave146-six-seven-coupling/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave147-alternative-lane/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave147-pair-root-order8/** whitespace=cr-at-eol,-blank-at-eof
+
+# Waves 148--157 are sealed, checksum-pinned mixed-platform research packages.
+# Preserve their exact bytes so every manifest survives the Git index and clone.
+attempts/wave148-marked-order8/** -text
+verification/wave148-marked-order8/** -text
+attempts/wave149-terwilliger-triple/** -text
+verification/wave149-terwilliger-triple/** -text
+attempts/wave150-order8-sdp-scout/** -text
+verification/wave150-exact-rank1-witness/** -text
+attempts/wave151-triangle-root-factor/** -text
+verification/wave151-triangle-root-factor/** -text
+attempts/wave152-four-root-order8/** -text
+verification/wave152-four-root-order8/** -text
+attempts/wave153-alternative-compatibility/** -text
+verification/wave153-alternative-compatibility/** -text
+attempts/wave154-triangle-factor-portfolio/** -text
+verification/wave154-triangle-factor-portfolio/** -text
+verification/wave155-four-root-feedback/** -text
+verification/wave156-four-root-late-feedback/** -text
+attempts/wave157-general-cube-wagner/** -text
+verification/wave158-general-cube-wagner/** -text
+attempts/wave159-four-root-cut-loop/** -text
+verification/wave161-four-root-cut-loop/** -text
+attempts/wave162-four-root-facial-reduction/** -text
+
+attempts/wave148-marked-order8/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave148-marked-order8/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave149-terwilliger-triple/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave149-terwilliger-triple/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave150-order8-sdp-scout/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave150-exact-rank1-witness/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave151-triangle-root-factor/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave151-triangle-root-factor/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave152-four-root-order8/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave152-four-root-order8/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave153-alternative-compatibility/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave153-alternative-compatibility/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave154-triangle-factor-portfolio/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave154-triangle-factor-portfolio/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave155-four-root-feedback/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave156-four-root-late-feedback/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave157-general-cube-wagner/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave158-general-cube-wagner/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave159-four-root-cut-loop/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave161-four-root-cut-loop/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave162-four-root-facial-reduction/** whitespace=cr-at-eol,-blank-at-eof
+
+# Waves 163--203 are sealed, checksum-pinned mixed-platform research packages.
+# Preserve exact bytes so every manifest survives the Git index and clone.
+attempts/wave1[6-9]*/** -text
+verification/wave1[6-9]*/** -text
+attempts/wave20[0-3]*/** -text
+verification/wave20[0-3]*/** -text
+verification/wave144-sixset-odd-profile/** -text
+agents/2026-07-*-wave1[7-9]*.md -text
+agents/2026-07-*-wave20[0-3]*.md -text
+
+attempts/wave1[6-9]*/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave1[6-9]*/** whitespace=cr-at-eol,-blank-at-eof
+attempts/wave20[0-3]*/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave20[0-3]*/** whitespace=cr-at-eol,-blank-at-eof
+verification/wave144-sixset-odd-profile/** whitespace=cr-at-eol,-blank-at-eof
+agents/2026-07-*-wave1[7-9]*.md whitespace=cr-at-eol,-blank-at-eof
+agents/2026-07-*-wave20[0-3]*.md whitespace=cr-at-eol,-blank-at-eof

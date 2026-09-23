@@ -1,0 +1,31 @@
+role: proof_a
+date_utc: 2026-07-29T06:50:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Prove multiplicity-weighted four-fiber loss, derive a universal
+  Wave198 certificate budget B>=891, and conclude conditional Q>=7059.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256: eb833bf4ad503fb2243882704492f6bf836525f4b619de8a1979ffc6f0f785c9
+  attempts/wave198-orientation-lift-proof-b/package-manifest.sha256: ba949fa2ededb7a23596fa0b05ca9e2d259f0e6a18c042814e2f3bc87b5b9054
+  attempts/wave198-orientation-lift-proof-a-audit/package-manifest.sha256: 60f5b4a87893fe0e820f05989e666c26abaaa8f30b9a5598a7a7db571740c924
+  attempts/wave200-two-face-gluing-proof-a/package-manifest.sha256: b909a16d3324f76e394322e6058f844bcf3bcc61409d567fdfd6f50ab53aced4
+method: >-
+  Multiplicity-weighted multiset repetition, exact Hilton--Milner
+  baseline subtraction, oriented incidence elimination, and rational
+  coefficient algebra.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave201-multiplicity-weighted-fiber-loss-proof-a\exact_check.py
+  --verify
+  attempts\wave201-multiplicity-weighted-fiber-loss-proof-a\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave201-multiplicity-weighted-fiber-loss-proof-a\test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave201-multiplicity-weighted-fiber-loss-proof-a.md
+  - attempts/wave201-multiplicity-weighted-fiber-loss-proof-a/
+limitations:
+  - Proof-A derivation pending hostile and verifier audits.
+  - Conditional on the prism-free rank-11 endpoint.
+  - No incompatible endpoint upper bound.

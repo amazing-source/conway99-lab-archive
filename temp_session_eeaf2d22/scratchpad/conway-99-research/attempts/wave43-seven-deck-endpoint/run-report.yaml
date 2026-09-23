@@ -1,0 +1,38 @@
+role: construction
+date_utc: 2026-07-27T15:59:00Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: DERIVED
+scope: >-
+  Complete 208-class order-seven vertex-deletion necessary-count system at
+  n3=4158, with all 19 published Hamiltonian counts and h11/4 retained as an
+  integer variable.
+inputs:
+  - path: attempts/wave21-six-vertex-lp/exact_check.py
+    sha256: 0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3
+  - path: attempts/wave22-full-seven-deck/exact_check.py
+    sha256: e54f6ea9bac5fcc20d0583316051320dfe0dd7247657cf64e7515990a8438a5b
+method: >-
+  Reconstruct all locally admissible order-six and order-seven types and
+  deletion columns; specialize the exact order-six and Hamiltonian formulas
+  at n3=4158; use a zero-objective 209-variable integer model only to discover
+  a candidate; and replay the retained support using exact integer arithmetic.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave43-seven-deck-endpoint\endpoint_deck.py --verify
+  attempts\wave43-seven-deck-endpoint\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  attempts\wave43-seven-deck-endpoint -p "test_*.py" -v
+outputs:
+  - path: attempts/wave43-seven-deck-endpoint/exact-results.json
+    sha256: 06b498a736a511a7d6f5912bd4686e5d4eb30f4041477e3ee9cbc1704f1757c8
+result:
+  h11: 16632
+  support_size: 99
+  zero_count_classes: 109
+  prism_containing_classes: 3
+  positive_prism_containing_classes: 0
+  seven_subset_total: 14887031544
+limitations:
+  - Aggregate type counts do not enforce overlapping-subset consistency.
+  - A feasible count vector is not a graph or evidence of graph existence.
+  - The endpoint, upper bound below 4158, Conway-99, novelty, and priority remain UNKNOWN.

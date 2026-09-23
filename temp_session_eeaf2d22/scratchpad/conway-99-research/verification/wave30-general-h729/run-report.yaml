@@ -1,0 +1,73 @@
+role: verifier
+date_utc: 2026-07-24T04:37:36Z
+git_commit: ae8fd70baaeb35302f957653e20ad710e5e77281
+claim_label: VERIFIED
+audit_verdict: >-
+  PASS_SCOPED_CONDITIONAL_MATHEMATICS_WITH_SUBMITTED_REPLAY_FAIL
+publication_gate: FAIL_RECORDED_REPAIR_AND_REVERIFICATION_REQUIRED
+scope: >-
+  Independent adversarial reconstruction of the conditional classification
+  of rootless, even, integral, positive-definite, integrally orthogonally
+  decomposable rank-44 determinant-729 S-forms carrying the frozen full
+  n3=708 projector/Schur endpoint package. Fourteen of fifteen aggregate
+  block types are excluded; only a rank-20 determinant-729 block plus a
+  rank-24 rootless even-unimodular block survives. The submitted discovery
+  package itself fails replay because one frozen prior hash is stale.
+inputs:
+  agents/2026-07-24-wave30-general-h729.md: 1bc63f569600bca88e12c977a0bd94ecdd03aa5f3fd8c4f203d4778fbec78efa
+  attempts/wave30-general-h729/artifact-manifest.sha256: 29cbbdff1ab167b436db725130d830bfd047beb1c4ba834c51b5a33c3aed690a
+  attempts/wave30-general-h729/exact_check.py: ed8edcbb0febde6d6fbd57776b7696402f832421fa11fb1984fcd57c8369eaff
+  attempts/wave30-general-h729/exact-results.json: 93cc1633d0b25d5f3daecd4c49cbc3b2dc3f754576a3cd5c9364c729a79a7698
+  attempts/wave30-general-h729/failed-routes.md: 397f74c75a8ae24bedd26fea41c0fb82d03c6611a87627e86aeb29244a586006
+  attempts/wave30-general-h729/input-freeze.sha256: a07c703b20237441b221e13c68be885d01db180871b8496af5d7204e2587793b
+  attempts/wave30-general-h729/run-report.yaml: 77232c06827c4c62e7dc6f5380cc4ebe2a3c6d5496fe8c3592589986089e416f
+  attempts/wave30-general-h729/test_exact_check.py: 9075d5fd77253850ba09c4655d9cbab135eb32fdd36638dc4aa9051fa49898a2
+  agents/2026-07-24-wave28-orchestrator-brief.md: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+  agents/2026-07-24-wave29-s0-frame-exclusion.md: e6ae61331a54d53f2a98712296ebac855f45b46de32ff2ec4d85018f2d8a5045
+  verification/wave29-s0-frame-exclusion/audit.md: dbdcb88bf309cbfa47a42b9fb63dd7cf483e07cac8b92c475094c96be3723b7d
+method: >-
+  Blind eight-artifact byte/hash freeze; submitted replay attempt; fresh
+  symbolic reconstruction against the current committed prior audit;
+  independent standard-library integer/Fraction implementation; arbitrary
+  many-block partition enumeration; complete fifteen-type determinant and
+  trace census; exact AM-GM comparisons; characteristic-pseudodeterminant
+  logarithmic proof with equality analysis; integral-idempotent signature
+  veto; complement tensor-isometry checks; thirty-two positive and hostile
+  tests; deterministic LF-only JSON regeneration; YAML, manifest, LF, NUL,
+  privacy, and source-independence checks.
+command: |-
+  cd verification/wave30-general-h729
+  python -B -m unittest -v test_independent_check.py test_hostile_controls.py
+  python -B independent_check.py --output independent-results.json
+submitted_replay_command: |-
+  cd attempts/wave30-general-h729
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output <temporary-path>
+submitted_replay_result: >-
+  FAIL: frozen Wave 29 audit hash drift; zero tests ran and the generator
+  stopped before writing output.
+outputs:
+  verification/wave30-general-h729/protocol-freeze.md: bd229c9c95e371b756d6b4a9c69fd09297b0a57b61ae79e9ac3caa2234d6903d
+  verification/wave30-general-h729/independent_check.py: 2ad3594e975853143f7bacf7f97589e10ae18c50fa78747b67cee176e4895cbb
+  verification/wave30-general-h729/test_independent_check.py: 701c2c8af0eb746c735004cc3ff41dd9ab57d9da807e82205acebe97ef01df79
+  verification/wave30-general-h729/test_hostile_controls.py: d7aeea72cea60c345ecd979a5a5771d050c466c6972708b4f94c3e2a29a784dc
+  verification/wave30-general-h729/independent-results.json: 2b948591611e9c984985f7bacc5a77c714332fbe42ed5305b84039c621358416
+  verification/wave30-general-h729/audit.md: ffe5b103d60a9a4d26fc00c7012113adf7e4c0db4e0dea6551bf8a7dc0c95178
+  verification/wave30-general-h729/failure-ledger.md: d8a23aad5e4689157db476027cfc22ce2ff53ce94e1e47c0635d640ece76db09
+limitations:
+  - The theorem is conditional on the frozen full endpoint package.
+  - The unique surviving decomposition type is neither constructed nor excluded.
+  - Tensor counts are necessary conditions, not an M, X, frame, lattice, or graph.
+  - Rooted and integrally indecomposable determinant-729 forms remain untreated.
+  - The submitted package must be repaired in a new revision and re-verified.
+  - n3=708, Conway-99, and novelty remain UNKNOWN.
+tests:
+  independent_unittest_count: 32
+  independent_unittest_status: PASS
+  independent_json_sha256: 2b948591611e9c984985f7bacc5a77c714332fbe42ed5305b84039c621358416
+  independent_json_byte_identical: PASS
+  submitted_unittest_count: 0
+  submitted_unittest_status: FAIL
+  submitted_generator_status: FAIL

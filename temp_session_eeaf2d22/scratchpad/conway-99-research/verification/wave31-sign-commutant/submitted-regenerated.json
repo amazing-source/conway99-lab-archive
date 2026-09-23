@@ -1,0 +1,251 @@
+{
+  "block_involution": {
+    "D": "diag(+1 on block rows R, -1 on the complement)",
+    "K": "N D N^T",
+    "K_commutes_with_P_minus_four": true,
+    "K_preserves_V": true,
+    "K_symmetric": true,
+    "commutation": "DE=ED"
+  },
+  "commutator": {
+    "K_entries": "K=diag(d)+Z, with Z_xy the unique edge-triangle sign",
+    "K_one": "K1=3d",
+    "adjacent_consequence": "3(d_x-d_y)=d_x-d_y",
+    "adjacent_local_cancellation": {
+      "ZA_minus_AZ_xy": 0,
+      "cancels": true,
+      "first_edge_sign": 1,
+      "second_edge_sign": 1
+    },
+    "coefficients": {
+      "K_one_coefficient": 3,
+      "projector_A_coefficient": 9,
+      "reduced_commutator_coefficient": 3
+    },
+    "connected_consequence": "d is constant",
+    "d_definition": "d_x=sum of triangle signs through vertex x",
+    "identity": "3(KA-AK)=d 1^T-1 d^T"
+  },
+  "conclusions": {
+    "Conway_99": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "nontrivial_rootless_integrally_decomposable_endpoint_S": "REFUTED_DERIVED",
+    "novelty": "UNKNOWN",
+    "rooted_endpoint_forms": "UNKNOWN",
+    "rootless_indecomposable_endpoint_forms": "UNKNOWN",
+    "wave30_rank20_plus_rank24_boundary": "REFUTED_DERIVED"
+  },
+  "divisibility": {
+    "consequence": "33 divides |R|",
+    "constant_degree_size_census": [
+      {
+        "block_size": 0,
+        "constant_signed_degree": -7
+      },
+      {
+        "block_size": 33,
+        "constant_signed_degree": -5
+      },
+      {
+        "block_size": 66,
+        "constant_signed_degree": -3
+      },
+      {
+        "block_size": 99,
+        "constant_signed_degree": -1
+      },
+      {
+        "block_size": 132,
+        "constant_signed_degree": 1
+      },
+      {
+        "block_size": 165,
+        "constant_signed_degree": 3
+      },
+      {
+        "block_size": 198,
+        "constant_signed_degree": 5
+      },
+      {
+        "block_size": 231,
+        "constant_signed_degree": 7
+      }
+    ],
+    "double_count": "99d=3(2|R|-231)"
+  },
+  "frozen_input_hashes": {
+    "agents/2026-07-23-wave20-global-schur.md": "64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632",
+    "agents/2026-07-24-wave30-general-h729.md": "fd1f11a2ab5c5dfd2732a4ba1fb8d063dea1ae0e96d417aaf9d45eade4f2281a",
+    "verification/2026-07-22-n3-side-incidence-audit.md": "9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787",
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+    "verification/wave30-general-h729/reverification-audit.md": "523a84e2a490f3626a791fb16f43b77b7631b3f26f2de8dcecc83f5e03f4d2cc"
+  },
+  "hostile_controls": {
+    "arbitrary_size_multiple_of_33": "Divisibility is necessary only and constructs no commuting D.",
+    "different_signs_on_edges_of_one_graph_triangle": {
+      "adjacent_difference_permitted": -3,
+      "conclusion": "The constant-d argument fails if edge signs do not come from one shared triangle sign.",
+      "local": {
+        "ZA_minus_AZ_xy": 2,
+        "cancels": false,
+        "first_edge_sign": 1,
+        "second_edge_sign": -1
+      }
+    },
+    "drop_DE_equals_ED": "D need not preserve im(E), so K need not preserve V.",
+    "drop_K_symmetry": "Preservation of V alone need not imply commutation with its orthogonal projector.",
+    "drop_rootlessness": "A norm-four row may split as two norm-two block components; E need not be coordinate block diagonal."
+  },
+  "limitations": [
+    "The theorem is conditional on a putative target graph.",
+    "Actual vertex-triangle incidence semantics are essential.",
+    "Rooted and integrally indecomposable endpoint forms remain untreated.",
+    "No graph, X, M, S, frame, or Schur package is constructed.",
+    "n3=708, Conway-99 existence, and novelty remain UNKNOWN."
+  ],
+  "projector_transport": {
+    "E": "zero-eigenspace projector of Gamma; M=21E",
+    "V": "minus-four eigenspace of A",
+    "V_dimension": 44,
+    "imE_dimension": 44,
+    "minus_four_projector": "(27I-9A+J)/63",
+    "norm_identity": "||Nu||^2=3||u||^2 for u in im(E)",
+    "projector_eigenspace_values": {
+      "-4": 1,
+      "14": 0,
+      "3": 0
+    }
+  },
+  "public_base_commit": "5652578111999645a9d5427d0716053de79e0902",
+  "rootless_block_trace": {
+    "identity": "4|R|=21 rank(S_R)",
+    "number_of_excluded_proper_ranks": 10,
+    "proper_block_census": [
+      {
+        "block_rank": 4,
+        "block_rows": 21,
+        "rows_mod_33": 21,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 8,
+        "block_rows": 42,
+        "rows_mod_33": 9,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 12,
+        "block_rows": 63,
+        "rows_mod_33": 30,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 16,
+        "block_rows": 84,
+        "rows_mod_33": 18,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 20,
+        "block_rows": 105,
+        "rows_mod_33": 6,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 24,
+        "block_rows": 126,
+        "rows_mod_33": 27,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 28,
+        "block_rows": 147,
+        "rows_mod_33": 15,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 32,
+        "block_rows": 168,
+        "rows_mod_33": 3,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 36,
+        "block_rows": 189,
+        "rows_mod_33": 24,
+        "status": "EXCLUDED_DERIVED"
+      },
+      {
+        "block_rank": 40,
+        "block_rows": 210,
+        "rows_mod_33": 12,
+        "status": "EXCLUDED_DERIVED"
+      }
+    ]
+  },
+  "runtime": {
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "schema": "wave31-projector-block-commutator-discovery-v1",
+  "scope": "Conditional exclusion, under actual target-graph incidence semantics, of every nontrivial rootless integral orthogonal decomposition of the rank-44 scaled-dual endpoint S-form.",
+  "status": "DERIVED_ENDPOINT_REMAINS_UNKNOWN",
+  "superseded_tensor_side_route": {
+    "A4_U": "M_U",
+    "A_sum_q": 216,
+    "U_sum_q": 256,
+    "equivalent_c_profile": {
+      "n_c10": 122,
+      "n_c11": 0,
+      "n_c9": 4
+    },
+    "q_after_graph_gap": [
+      2,
+      3
+    ],
+    "q_before_graph_gap": [
+      1,
+      2,
+      3
+    ],
+    "scope": "necessary aggregate counts only; no M or frame",
+    "status": "DERIVED_BUT_SUPERSEDED_BY_COMMUTATOR",
+    "unique_U_profile": {
+      "n_q2": 122,
+      "n_q3": 4
+    }
+  },
+  "target_data": {
+    "adjacency_eigenvalues": [
+      14,
+      3,
+      -4
+    ],
+    "adjacency_multiplicities": [
+      1,
+      54,
+      44
+    ],
+    "incidence_identities": {
+      "N_N_transpose": "7I_99+A",
+      "N_transpose_N": "3I_231+Gamma"
+    },
+    "triangles": 231,
+    "triangles_per_vertex": 7,
+    "vertices": 99
+  },
+  "wave30_boundary": {
+    "rank20_plus_rank24_rootless_decomposable_type": "EXCLUDED_DERIVED",
+    "rows": {
+      "rank20_A_rows": 105,
+      "rank24_U_rows": 126
+    },
+    "rows_mod_33": {
+      "rank20_A_rows": 6,
+      "rank24_U_rows": 27
+    },
+    "supersedes_wave30_surviving_decomposable_type": true
+  }
+}

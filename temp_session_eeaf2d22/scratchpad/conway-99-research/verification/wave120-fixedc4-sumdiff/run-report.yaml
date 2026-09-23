@@ -1,0 +1,36 @@
+role: verifier
+date_utc: 2026-07-28T04:36:27Z
+git_commit: 127acd31ff7980d3d629009167a2bf7f95150b18
+claim_label: VERIFIED_WITH_CLARIFICATION
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2) and frozen verified
+  dependencies, independently verify Wave120's fixed-C4 projector,
+  integer sum bounds, pairwise intervals, and forty-record formal
+  relaxation witness while preserving all graph-level UNKNOWN statuses.
+inputs:
+  - path: attempts/wave120-fixedc4-sumdiff/package-manifest.sha256
+    sha256: e2e35519158556a1810affdee4bc148a333ee95a63557ea1a1e687dfcd883017
+  - path: verification/wave96-norm16-norm18-upper/package-manifest.sha256
+    sha256: 8b3f9f90de931dc152ccf1b9e0705409492a6c5eb5246643ddce55aad8afe6e9
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+method: >-
+  Clean-room rational projector inversion, symbolic anchor-mass proof,
+  exact pair arithmetic, direct signed-coordinate reconstruction, an
+  all-subsets fixed-sign proof, and fraction-free exact leading-principal
+  determinant checks for the residual Gram.
+command: >-
+  python -B verification/wave120-fixedc4-sumdiff/independent_check.py
+  --verify;
+  python -B -m unittest discover -s
+  verification/wave120-fixedc4-sumdiff -p "test_*.py" -v
+outputs:
+  - path: verification/wave120-fixedc4-sumdiff/independent-results.json
+  - path: verification/wave120-fixedc4-sumdiff/verification-report.md
+  - path: verification/wave120-fixedc4-sumdiff/package-manifest.sha256
+limitations:
+  - The size-40 object is a formal relaxation witness, not an eigenvector family.
+  - The 95 outside eigen-equations and one common adjacency are not encoded.
+  - The abstract residual realization need not preserve signed unit coordinates.
+  - Target kernel-code membership is not established.
+  - Caps 25 and 24, ranks 28 and 30, Conway-99, and novelty remain UNKNOWN.

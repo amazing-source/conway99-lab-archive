@@ -1,0 +1,30 @@
+role: construction
+date_utc: 2026-07-28T09:11:15Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: DERIVED
+scope: >-
+  Exact invariant-space rank and bounded numerical coefficient-max scouts
+  for the verified three-class self-dual additive GF4 graph-state enumerator.
+inputs:
+  - path: verification/wave136-alternative-spaces/independent-results.json
+    sha256: 7129891b17e307dd0d881f759d609dc027a75858647777d7fda7f112acbdf7d3
+  - path: verification/wave136-alternative-spaces/independent_verify.py
+    sha256: 4897d718d01842291a8df1ada2b78188629ed7dcda5bd8121f34253297d31a03
+method: >-
+  Identify the MacWilliams/parity group as the 3D permutation
+  representation of S3; parameterize its degree-99 fixed space by monomial
+  symmetric functions; expand coefficients exactly; then scout the reduced
+  867-variable coefficient LP with row-scaled floating HiGHS.
+command: >-
+  python -B attempts/wave139-gf4-n3-bound/derive_rank.py;
+  python -B -m unittest discover -s
+  attempts/wave139-gf4-n3-bound -p "test_*.py" -v
+outputs:
+  - path: attempts/wave139-gf4-n3-bound/exact-rank.json
+  - path: attempts/wave139-gf4-n3-bound/numeric-scout.json
+  - path: attempts/wave139-gf4-n3-bound/numeric-feasibility-ipm.json
+limitations:
+  - Neither numerical run returned a certificate or usable primal point.
+  - The merged target coefficient can contain inputs of sizes other than six.
+  - No exact rational dual bound or improved n3 upper bound is obtained.
+  - No code, graph, adjacency matrix, or Conway-99 resolution is produced.

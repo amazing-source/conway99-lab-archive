@@ -1,0 +1,48 @@
+role: proof_a
+date_utc: 2026-07-27T00:03:38Z
+git_commit: efbf74e3edf4d11d853d0129634507b01ff7b577
+claim_label: CANDIDATE
+scope: >-
+  Conditional n3=4158 ternary code/design consequences, exact forced
+  degenerate-triple counts, and characteristic-seven rank-eleven projective
+  orthogonality test.
+inputs:
+  - path: agents/2026-07-26-wave36-ternary-polar-bound.md
+    sha256: 062e8b5478b93195dae4d9a571677688cefcd7397cda75246dbd03503f7c9b85
+  - path: attempts/wave36-ternary-polar-bound/exact-results.json
+    sha256: 7d7c15ad99952ee3ca70582a887e771331156b8ef8e50524d296f1dc15f425a1
+  - path: verification/wave36-ternary-polar-bound/independent-results.json
+    sha256: 38ec002886c2a9b38f8d11824dc79e07147b16386dcc3449064633efb630beeb
+  - path: attempts/wave35-n3-upper-spectral/exact-results.json
+    sha256: ca1df07bede11642fb1639a2ae554c1a31ce9a58424d5b3e5031c90ad550a194
+method: >-
+  Finite-field Gram factorization; projective self-orthogonal code
+  consequences; exact Krawtchouk transforms; ternary and
+  characteristic-seven association-scheme intersection algebras;
+  divisibility-refined regular-subgraph moments; and signed-triangle
+  geometry.
+command: |-
+  .\.venv\Scripts\python.exe -B -m unittest -v attempts/wave37-polar-strengthen/test_exact_check.py
+  .\.venv\Scripts\python.exe -B attempts/wave37-polar-strengthen/exact_check.py --output attempts/wave37-polar-strengthen/exact-results.json
+  .\.venv\Scripts\python.exe -B attempts/wave37-polar-strengthen/exact_check.py --verify attempts/wave37-polar-strengthen/exact-results.json
+outputs:
+  - path: attempts/wave37-polar-strengthen/exact_check.py
+    sha256: fb8baf5260931d5ac9eaf6e9fc288c1a1e4f29d7170ae3c4259ee59a8be934f7
+  - path: attempts/wave37-polar-strengthen/test_exact_check.py
+    sha256: 2a3af23ded4deaf506ca741b92c89fdc4d2c999c59f68487978b53f573abdc2d
+  - path: attempts/wave37-polar-strengthen/exact-results.json
+    sha256: 0d5daafca72b43d159db5e799689e8818fa61f25de2f2d06225a4619817cdff9
+  - path: attempts/wave37-polar-strengthen/input-freeze.sha256
+    sha256: 585f56f356ca7bf5d1c8f7328df6216e273165d5d98261ba1a79269fc4d42564
+  - path: attempts/wave37-polar-strengthen/failed-routes.md
+    sha256: 53407cccd3dfdcf6155ab300d7c70c9bc1b6ff7f443a0e644c5ee30dcf5f3e38
+limitations:
+  - "Discovery-side candidates require independent adversarial verification."
+  - "No endpoint reflection, finite-field configuration, or Conway graph is constructed."
+  - "The square ternary rank-twelve case survives every tested exact relaxation."
+  - "Both characteristic-seven rank-eleven determinant classes survive."
+  - "No rank floor, determinant exclusion, or general n3 upper bound is improved."
+  - "The endpoint, Conway-99, and novelty remain UNKNOWN."
+tests:
+  submitted: 13 passed
+  deterministic_regeneration: passed

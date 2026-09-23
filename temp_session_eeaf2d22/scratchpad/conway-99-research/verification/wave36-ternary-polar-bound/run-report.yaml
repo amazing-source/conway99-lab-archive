@@ -1,0 +1,65 @@
+role: verifier
+date_utc: 2026-07-26T23:08:30Z
+git_commit: 697cc02bcbe16b69aaf08822298e03c66329c64c
+claim_label: VERIFIED
+scope: >-
+  Conditional n3=4158 ternary polar-graph proof that rank_F3(M)>=12 and
+  that a rank-twelve factor form must have square determinant class.
+inputs:
+  - path: agents/2026-07-26-wave36-ternary-polar-bound.md
+    sha256: 062e8b5478b93195dae4d9a571677688cefcd7397cda75246dbd03503f7c9b85
+  - path: attempts/wave36-ternary-polar-bound/exact_check.py
+    sha256: 50c943b520a253db4d98838f78e58753570d61b31795dca4d5a49471dd054bf9
+  - path: attempts/wave36-ternary-polar-bound/test_exact_check.py
+    sha256: 6fa0c4b4177c7eabd77ea488fd0eb2f966c8dd7caf249914334b946a917a482b
+  - path: attempts/wave36-ternary-polar-bound/exact-results.json
+    sha256: 7d7c15ad99952ee3ca70582a887e771331156b8ef8e50524d296f1dc15f425a1
+  - path: attempts/wave36-ternary-polar-bound/run-report.yaml
+    sha256: 556143d39b745082c61439065744a26ac3d7bc6b55b8bb60a970fe8ebf0a32d4
+  - path: verification/wave35-n3-upper-spectral/independent-results.json
+    sha256: c704d8fce8f1d5975204b9a06ada0098c66fbdb9e0de8016a1ff89d86e691305
+  - path: verification/wave35-n3-upper-spectral/run-report.yaml
+    sha256: 40ded0143abe9b0edcec1b87146621dd6ee0fae3483d3d522fec0c83417d6c95
+method: >-
+  Independent factor and projective-row reconstruction; coordinate-recurrence
+  and direct point enumeration in both determinant classes; an explicit
+  hyperbolic-plane proof for transitivity and the degenerate nonadjacent
+  span; exhaustive all-pair graph checks in dimensions four through seven;
+  exact SRG spectra and multiplicities through rank forty-four; rational
+  expander-mixing bounds; hostile degenerate-complement controls; then
+  submitted replay and byte-identical regeneration.
+command: |-
+  .\.venv\Scripts\python.exe -B -m unittest -v verification/wave36-ternary-polar-bound/test_independent_check.py
+  .\.venv\Scripts\python.exe -B verification/wave36-ternary-polar-bound/independent_check.py --verify verification/wave36-ternary-polar-bound/independent-results.json
+  .\.venv\Scripts\python.exe -B -m unittest -v attempts/wave36-ternary-polar-bound/test_exact_check.py
+  .\.venv\Scripts\python.exe -B attempts/wave36-ternary-polar-bound/exact_check.py --output verification/wave36-ternary-polar-bound/submitted-regenerated.json
+outputs:
+  - path: verification/wave36-ternary-polar-bound/independent_check.py
+    sha256: 1fafb633e2bc4967f1af8f72239064ebbed627a0899a716e4800fb6e8fd03c49
+  - path: verification/wave36-ternary-polar-bound/test_independent_check.py
+    sha256: 9b6a898667c489384999c4454d8b800e02e8fce6f4f10030903f95159275f259
+  - path: verification/wave36-ternary-polar-bound/independent-results.json
+    sha256: 38ec002886c2a9b38f8d11824dc79e07147b16386dcc3449064633efb630beeb
+  - path: verification/wave36-ternary-polar-bound/submitted-regenerated.json
+    sha256: 7d7c15ad99952ee3ca70582a887e771331156b8ef8e50524d296f1dc15f425a1
+  - path: verification/wave36-ternary-polar-bound/input-freeze.sha256
+    sha256: 48cce8d7726d885b4b4045e9446838b6903a3ed856a91e462d219d2fa8d49673
+limitations:
+  - The proof is conditional on the frozen hypothetical n3=4158 reflection.
+  - No endpoint factor configuration, matrix, or graph is constructed.
+  - Rank twelve square determinant and ranks thirteen through forty-four survive.
+  - The result does not improve the graph-theoretic upper bound below 4158.
+  - No literature novelty claim is assessed.
+verdict: VERIFIED_SCOPED
+tests:
+  independent: 12 passed
+  submitted_replay: 10 passed
+  submitted_regeneration: BYTE_IDENTICAL
+status:
+  rank_F3_M_lower_bound: 12
+  rank_twelve_nonsquare: EXCLUDED
+  rank_twelve_square: SURVIVES
+  endpoint_excluded: false
+  upper_bound_improved_below_4158: false
+  conway_99: UNKNOWN
+  novelty: NOT_ASSESSED

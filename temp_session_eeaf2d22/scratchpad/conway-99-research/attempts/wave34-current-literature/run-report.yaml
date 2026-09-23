@@ -1,0 +1,57 @@
+role: literature
+date_utc: 2026-07-24T19:59:00Z
+git_commit: 1be9b6f61136763ce77d3927984979205e7fb23a
+claim_label: UNKNOWN
+audit_verdict: NO_EXACT_UNRESTRICTED_WAVE34_RESULT_FOUND_IN_SEARCHED_SOURCES
+scope: >-
+  Bounded current-source discovery for the unrestricted Wave 34 rooted
+  six-block and rootless actual-incidence targets; exact scope triage for
+  newly public Conway-99 formalization and certificate packages. No
+  automorphism, selected design, author claim, solver result, or public CI
+  status is imported into the unrestricted target.
+inputs:
+  verification/wave34-continuation-protocol.md:
+    sha256: 60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4
+  agents/2026-07-22-wave10-status-search.md:
+    sha256: 2d22350758916125f9c696a7e5d44c9e2ff4d8841b3f2fbad8a84d8e7f542d0f
+method: >-
+  Search exact target phrases in bounded web windows; search public GitHub
+  repositories; inspect direct primary, institutional, maintained-table, and
+  pinned-repository sources; compare source names against the frozen local
+  ledger; distinguish quoted author scope, public CI, and independent replay;
+  record pinned commits, exact applicability walls, and every negative-search
+  limitation.
+command: |-
+  gh search repos '"Conway 99"' --limit 20 --json fullName,url,description,updatedAt,pushedAt,createdAt
+  rg -n -i "Selub|Kuberwastaken|c3-orbit-restriction|Harrison Pedrero|harrisonpedrero|McKay.*1\.5|2-\(15,3,2\).*1\.5" . --glob '!attempts/wave34-current-literature/**'
+  Exact ranked-web queries and direct inspection URLs are in query-ledger.json.
+outputs:
+  agents/2026-07-24-wave34-current-literature.md:
+    sha256: b470c62d657686779f22154872e19d7db002f1abde1bc173ae747f9e2ad86b95
+  attempts/wave34-current-literature/query-ledger.json:
+    sha256: ece460c54282b45ce013083756bc421ea2427d91800b65e16f9049734225843d
+  attempts/wave34-current-literature/source-ledger.json:
+    sha256: 5fa6f75abcfc8d3033c9715f3977722e99fcb238ca1b74d2db255e759a58b100
+  attempts/wave34-current-literature/audit.md:
+    sha256: 1be6c6904314763031968c47dde8b4187caf1118ca4c2a1c9cf5f93d9496abc3
+search_counts:
+  recorded_batches: 4
+  retained_source_records: 6
+  github_repositories_returned: 11
+status:
+  kuber_lean_formalization: CANDIDATE_SCOPED_FORMALIZATION
+  selub_sat_report: CITED_PRIOR_FRAMEWORK
+  harrison_rooted_fiber_claim: CANDIDATE_PARTIAL_THEOREM
+  unrestricted_rooted_six_block: UNKNOWN
+  rootless_actual_incidence: UNKNOWN
+  n3_708: UNKNOWN
+  global_Conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - A bounded source no-hit cannot establish novelty, priority, openness, or nonexistence.
+  - Search ranking, terminology, access, indexing, language, and posting delays may hide relevant work.
+  - No external repository was independently built in this discovery pass.
+  - No large Git LFS proof body was downloaded or checked.
+  - No complete 2-(15,3,2) design catalogue or complete graph domain was enumerated.
+  - Harrison's exact rooted-model bridge and certificate coverage remain pending independent audit.
+  - Kuber's formal theorem remains conditional on explicit graph-to-matrix certificate fields.

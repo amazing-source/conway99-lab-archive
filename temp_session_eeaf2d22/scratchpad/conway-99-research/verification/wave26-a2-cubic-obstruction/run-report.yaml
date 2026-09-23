@@ -1,0 +1,91 @@
+role: verifier
+date_utc: 2026-07-23T23:11:50Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: VERIFIED
+scope: >-
+  Conditional A2 cubic compression obstruction for a full 231-row
+  projector/Schur realization, and rejection of the full Schur origin of the
+  explicit Wave 24 E8^5 orthogonal-sum A2^2 survivor. This is not an h=9 or
+  n3=708 exclusion.
+inputs:
+  - path: verification/2026-07-23-wave20-global-schur-audit.md
+    sha256: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  - path: verification/wave24-n3-708-index/survivor-certificate.json
+    sha256: a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2
+  - path: verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md
+    sha256: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+  - path: agents/2026-07-23-wave26-a2-cubic-obstruction.md
+    sha256: da701181c9d591498cf112ab8b0342d09d3ada4094396cebebe3e0dd81c44d1a
+  - path: attempts/wave26-a2-cubic-obstruction/exact_check.py
+    sha256: e266fd1189f5f1960093e2991d88b66c220bbbd7bcdc390c04e2d8a8218f3523
+  - path: attempts/wave26-a2-cubic-obstruction/test_exact_check.py
+    sha256: aa9d2a653133b981851faa4cc39528a4572703d7ba2d8db040d7068ccc07cd71
+  - path: attempts/wave26-a2-cubic-obstruction/exact-results.json
+    sha256: acc3ce7298c164bdee1fe32766bf18437fe79770ee69090b759d3dc774640f33
+  - path: attempts/wave26-a2-cubic-obstruction/failed-routes.md
+    sha256: 3ec793e89df22b36bbdd7808a2c5099b472e7a6a41f5f3c9352051bde931671c
+  - path: attempts/wave26-a2-cubic-obstruction/input-freeze.sha256
+    sha256: c6651c004c5c93a4cefe3183c3c49e4982d1b3d386cf61a02ba0ef9bf1f866e1
+  - path: attempts/wave26-a2-cubic-obstruction/run-report.yaml
+    sha256: 008a154f928d64c5c3fbc672ce0aabc1115a84984e9d6d231757016bdb2b2003
+method: >-
+  Blind public-input hash freeze; independent exact ordered-tensor
+  factorization; A2 norm and root-line count reconstruction; odd-imbalance
+  cubic floor; orthogonal compression and cross-block audit; basis,
+  row-column, and symmetric-tensor normalization attacks; exact Wave 24
+  certificate parse; post-freeze discovery comparison and replay.
+command: |-
+  cd verification/wave26-a2-cubic-obstruction
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json
+  cd ../../attempts/wave26-a2-cubic-obstruction
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output ../../verification/wave26-a2-cubic-obstruction/submitted-regenerated.json
+outputs:
+  - path: verification/wave26-a2-cubic-obstruction/preinspection-freeze.md
+    sha256: 8db4a16b1620746e371370ec551d17467a6c84b52e2f075fdffcd7830c3a2b90
+  - path: verification/wave26-a2-cubic-obstruction/precomparison-freeze.sha256
+    sha256: ce65ef66c2412e13f1fcc11b53ce96e5f76560749d33ccde8c3975306b1b49d4
+  - path: verification/wave26-a2-cubic-obstruction/independent_check.py
+    sha256: fe9f661183eb15405d24e5c9d5b330c48b49553cf6de6d577d13f296f3a5dcc2
+  - path: verification/wave26-a2-cubic-obstruction/test_independent_check.py
+    sha256: 4cfbb8e868eefe9bec8efed2844211a2b5e19cbc06e61d4255bbfd436acfda65
+  - path: verification/wave26-a2-cubic-obstruction/independent-results.json
+    sha256: 658b7eb7eec64a4560d20e9c7b272c428168876c43910d9af6e44035dde12352
+  - path: verification/wave26-a2-cubic-obstruction/submitted-regenerated.json
+    sha256: acc3ce7298c164bdee1fe32766bf18437fe79770ee69090b759d3dc774640f33
+  - path: verification/wave26-a2-cubic-obstruction/2026-07-23T231001Z-audit.md
+    sha256: 3086a7b3333818d9fb5f0e9355c632df376463afd2afa839cd64b696a6d58754
+  - path: verification/wave26-a2-cubic-obstruction/verifier-failures.md
+    sha256: 6d52c8b2e3e4defcd154ad22873bec0e964edbf9a7eeeecc5f94cf45fd052fc7
+tests:
+  independent_suite:
+    status: PASS
+    count: 17
+  submitted_suite:
+    status: PASS
+    count: 19
+  submitted_regeneration: PASS_BYTE_IDENTICAL
+  independent_regeneration: PASS_BYTE_IDENTICAL
+  yaml_parse: PASS
+  lf_only: PASS
+result:
+  general_A2_necessary_condition: "tr(A2 Q_AA) >= 18"
+  M1_zero_required_for_numeric_floor: false
+  explicit_survivor_block_trace: 10
+  explicit_survivor_full_projector_schur_origin: REFUTED
+  explicit_survivor_abstract_scope: STILL_VALID
+  all_h9_forms: UNKNOWN
+  n3_708: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - The theorem needs the full tight-frame/projector and Schur-square premises.
+  - No actual 231-row realization or graph exists in the repository.
+  - The auxiliary normalization scout was procedurally contaminated and excluded.
+  - The discovery prose has a nonblocking row-versus-column terminology defect.
+  - No all-h=9 classification or endpoint exclusion is proved.

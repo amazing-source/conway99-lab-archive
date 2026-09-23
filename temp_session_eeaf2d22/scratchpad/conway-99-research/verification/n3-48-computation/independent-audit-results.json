@@ -1,0 +1,585 @@
+{
+  "audit_frozen_utc": "2026-07-23T09:37:49Z",
+  "claim_label": "VERIFIED",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "python_sat": "1.9.dev7",
+    "solver": "glucose42"
+  },
+  "finite_reductions": {
+    "flower_results": {
+      "r14-size4": {
+        "capacity_feasible": 45,
+        "k_degree_survivors": 0
+      },
+      "r15-size4": {
+        "capacity_feasible": 157,
+        "k_degree_survivors": 0
+      },
+      "r15-size5": {
+        "capacity_feasible": 1,
+        "k_degree_survivors": 0
+      },
+      "r16-size4": {
+        "capacity_feasible": 423,
+        "k_degree_survivors": 16,
+        "survivor_words": [
+          [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3,
+            3,
+            2
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            3,
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            2,
+            3,
+            3,
+            2,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            3,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          [
+            2,
+            3,
+            3,
+            2,
+            3,
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            2,
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            3,
+            2,
+            2,
+            3,
+            2,
+            3,
+            3,
+            2
+          ],
+          [
+            3,
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            2,
+            2,
+            3,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ]
+        ]
+      },
+      "r16-size5": {
+        "capacity_feasible": 11,
+        "k_degree_survivors": 0
+      }
+    },
+    "inherited_survivors": [
+      "r16-q2x16",
+      "r15-q2x13-q3x2",
+      "r14-q2x10-q3x4"
+    ],
+    "post_finite_branches": [
+      [
+        "r16-q2x16",
+        "no-size3"
+      ],
+      [
+        "r16-q2x16",
+        "root-q3x0"
+      ],
+      [
+        "r15-q2x13-q3x2",
+        "root-q3x0"
+      ],
+      [
+        "r14-q2x10-q3x4",
+        "root-q3x0"
+      ]
+    ],
+    "r16_size4_crossing_rejections": 16,
+    "r16_size4_survivor_count": 16,
+    "raw_branch_count": 11,
+    "raw_profile_count": 12,
+    "rooted_local_modes": {
+      "r14-q222": {
+        "equal_q_orbits": 1,
+        "labeled": 1
+      },
+      "r14-q223": {
+        "equal_q_orbits": 0,
+        "labeled": 0
+      },
+      "r14-q233": {
+        "equal_q_orbits": 0,
+        "labeled": 0
+      },
+      "r14-q333": {
+        "equal_q_orbits": 0,
+        "labeled": 0
+      },
+      "r15-q222": {
+        "equal_q_orbits": 4,
+        "labeled": 8
+      },
+      "r15-q223": {
+        "equal_q_orbits": 0,
+        "labeled": 0
+      },
+      "r15-q233": {
+        "equal_q_orbits": 0,
+        "labeled": 0
+      },
+      "r16-q222": {
+        "equal_q_orbits": 10,
+        "labeled": 32
+      }
+    },
+    "semantic_sha256": "07eb5c0430458adb4e17a00d27b3635d14031d87c185adb48368f56bfb75bd13",
+    "status": "PASS"
+  },
+  "formula_records": {
+    "r14-q2x10-q3x4|no-size3|full": {
+      "base_clause_count": 780242,
+      "branch_unit_count": 364,
+      "materialized_clause_count": 780606,
+      "materialized_dimacs_sha256": "197aca54f1dc3362e7cc124628ca54842437d5bf06573d168f649866ca0e6042",
+      "variable_count": 227295
+    },
+    "r14-q2x10-q3x4|root-q3x0|full": {
+      "base_clause_count": 780242,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 780243,
+      "materialized_dimacs_sha256": "8483315145c89d24be050391fa40899a4d7272d0a4c38d4726b1c05a90bac784",
+      "variable_count": 227295
+    },
+    "r14-q2x10-q3x4|root-q3x1|full": {
+      "base_clause_count": 780242,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 780243,
+      "materialized_dimacs_sha256": "1f9ebed0748cb0304980639ef5c2584c264bf48bb4afa2d6a294858159bb06da",
+      "variable_count": 227295
+    },
+    "r14-q2x10-q3x4|root-q3x2|full": {
+      "base_clause_count": 780242,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 780243,
+      "materialized_dimacs_sha256": "21b4cacbdf044b18a618eec9f72df71bda29dbbe699867c56d95a93bb986631e",
+      "variable_count": 227295
+    },
+    "r14-q2x10-q3x4|root-q3x3|full": {
+      "base_clause_count": 780242,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 780243,
+      "materialized_dimacs_sha256": "95921cb5b0418a38adef1a49f0288e4cf720e9307d4614d8e439f4817f7659ea",
+      "variable_count": 227295
+    },
+    "r15-q2x13-q3x2|no-size3|full": {
+      "base_clause_count": 1137931,
+      "branch_unit_count": 455,
+      "materialized_clause_count": 1138386,
+      "materialized_dimacs_sha256": "e9d9a23627adaa7d52e630e9477c26ad549b72a9f8057f3d45022821cd7cac78",
+      "variable_count": 326446
+    },
+    "r15-q2x13-q3x2|root-q3x0|full": {
+      "base_clause_count": 1137931,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 1137932,
+      "materialized_dimacs_sha256": "54d2c55fb75c51df00db9900245d0aefce058990f0b214498ffd87bc36d6750f",
+      "variable_count": 326446
+    },
+    "r15-q2x13-q3x2|root-q3x1|full": {
+      "base_clause_count": 1137931,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 1137932,
+      "materialized_dimacs_sha256": "8f4e055f9423431ce3f1aaa9478d534881c681aac97b8deaf5fdf268e06ba514",
+      "variable_count": 326446
+    },
+    "r15-q2x13-q3x2|root-q3x2|full": {
+      "base_clause_count": 1137931,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 1137932,
+      "materialized_dimacs_sha256": "76d1da14f0a1aae3f063d12161baa4a964535e0cdb21be50067f8dca1a69b656",
+      "variable_count": 326446
+    },
+    "r16-q2x16|no-size3|full": {
+      "base_clause_count": 1639520,
+      "branch_unit_count": 560,
+      "materialized_clause_count": 1640080,
+      "materialized_dimacs_sha256": "4f0a295ce08409877efee09f87f1ccaf289ea5fe3014d115a4ef99e3e2b5ebdb",
+      "variable_count": 469160
+    },
+    "r16-q2x16|no-size3|k_degree_upper_control": {
+      "base_clause_count": 1637855,
+      "branch_unit_count": 560,
+      "materialized_clause_count": 1638415,
+      "materialized_dimacs_sha256": "4bf32491072b83a53ff254ee8359e606e3b93d1cbb974ba380ed82f2f7af59ef",
+      "variable_count": 468352
+    },
+    "r16-q2x16|root-q3x0|full": {
+      "base_clause_count": 1639520,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 1639521,
+      "materialized_dimacs_sha256": "010481d24a8870fd5918b748f67a71bae0159aaabed5df4d911f3379c828769d",
+      "variable_count": 469160
+    },
+    "r16-q2x16|root-q3x0|no_common_point_control": {
+      "base_clause_count": 1641761,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 1641762,
+      "materialized_dimacs_sha256": "2c386e58446c3142a6f0d93f8f92f0cd6a085951d82f7214eb9cc9adef2b6d4b",
+      "variable_count": 469720
+    }
+  },
+  "git_commit": "fd02baec74a5cc19dd415277f9d2504e2d022a9f",
+  "input_sha256": {
+    "agents/2026-07-22-wave14-n3-48-computational.md": "54b532035f0ac3c09aaafd1a825600151d6ae55d3a2fcb87f911cfe37dc8b756",
+    "attempts/wave14-computation/n3-48-active-local-scan.json": "4ce53c2fc8a8c0bc005ac1b73dc657ea3c8b7a7f1e3bae1cd73f24de73c539f2",
+    "attempts/wave14-computation/n3-48-independent-validation.json": "20ac2afa64329074677f698331460a27e987ff74527e99ceeee5e5f01fc6d069",
+    "attempts/wave14-computation/n3-48-positive-controls.json": "db6fb90836dc16440a9e0c73ccff420516af9641e60d6775537f7a695e33ae33",
+    "attempts/wave14-computation/n3-48-profile-census.json": "c2acf43d29aa08179869a31327991336ac54559fa5ec4915d9f3ea993de7bb5a",
+    "attempts/wave14-computation/n3-48-r16-q2x16-no-size3-full-candidate.json": "b5873ddca8dd92bbcc50fb91b942472f426010264fcfe5599912e178318f4ad5",
+    "attempts/wave14-computation/n3-48-r16-q2x16-no-size3-k_degree_upper_control-candidate.json": "0cb8644bbd6013dbdb1e00657a3cf6a6e9c3a146ad65a43e7270aee6488c1e37",
+    "attempts/wave14-computation/n3-48-r16-q2x16-root-q3x0-no_common_point_control-candidate.json": "a5f049c7a7651db6ae8ba5d08cd4d5509814fdcc6202a5080a549acefb0fc024",
+    "attempts/wave14-computation/n3-48-run-failures.json": "0a4b82afccf09ed26a5dcd34306243723115ff304bbe6f018286c1de141c57b3",
+    "code/wave14_n3_48_active_sat.py": "84e0dcd6cd11f4742abecfe00e1df1ac96047a8967d94f8f5e735d330b4a2ef2",
+    "code/wave14_n3_48_profiles.py": "fb7c670d0240401929bac609177c83dd618c6baf5969a2e99e6f0dc7ed48f827",
+    "code/wave14_n3_48_test.py": "e29999d7485ef3fefc6a32892d2889fd5c1bf6db69733866ea3803ffed0a28ef",
+    "code/wave14_n3_48_verify.py": "6b2318acc5784290c2f5a32046cd76535bf00db9123b4de4246b882cd2b7c827"
+  },
+  "limitations": [
+    "No Wave14 proof report/artifact and no Wave13 path was inspected.",
+    "No Git command was run; git_commit is the frozen commit declared by the candidate report.",
+    "Seven UNSAT returns have no emitted or checked proof trace and remain non-evidentiary.",
+    "One conflict-budget return and two wall-timeout returns remain UNKNOWN.",
+    "The positive object is only an active-label auxiliary object, not H, not a 99-vertex adjacency matrix, and not a Conway graph or counterexample.",
+    "Conditional n3=48 exclusion, the Conway-99 target, and novelty remain UNKNOWN."
+  ],
+  "mutation_resistance": {
+    "candidate": {
+      "candidate_claim_inflation": "REJECTED",
+      "candidate_deleted_K_edge": "REJECTED",
+      "candidate_deleted_point": "REJECTED",
+      "candidate_duplicate_K_edge": "REJECTED",
+      "candidate_duplicate_point": "REJECTED",
+      "candidate_encoded_premise_forgery": "REJECTED",
+      "candidate_forged_diagnostic": "REJECTED",
+      "candidate_forged_formula_hash": "REJECTED",
+      "candidate_forged_normalization": "REJECTED",
+      "candidate_forged_semantic_hash": "REJECTED",
+      "candidate_novelty_inflation": "REJECTED",
+      "candidate_scope_expansion": "REJECTED",
+      "candidate_symmetry_boundary_forgery": "REJECTED",
+      "candidate_target_inflation": "REJECTED",
+      "candidate_unencoded_premise_forgery": "REJECTED"
+    },
+    "rejected_count": 29,
+    "scan_status_and_provenance": {
+      "scan_candidate_digest_redirect": "REJECTED",
+      "scan_candidate_path_redirect": "REJECTED",
+      "scan_claim_inflation": "REJECTED",
+      "scan_duplicate_branch": "REJECTED",
+      "scan_formula_hash_forgery": "REJECTED",
+      "scan_missing_branch": "REJECTED",
+      "scan_negative_evidence_forgery": "REJECTED",
+      "scan_negative_policy_forgery": "REJECTED",
+      "scan_novelty_inflation": "REJECTED",
+      "scan_proof_checked_forgery": "REJECTED",
+      "scan_semantic_hash_forgery": "REJECTED",
+      "scan_status_promotion": "REJECTED",
+      "scan_target_inflation": "REJECTED",
+      "scan_unencoded_premise_forgery": "REJECTED"
+    }
+  },
+  "negative_solver_results_evidentiary": false,
+  "novelty": "UNKNOWN",
+  "positive_candidate_validations": [
+    {
+      "branch_id": "no-size3",
+      "common_point_Berge_triangle_count": 0,
+      "k_degree_sequence": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "k_edge_count": 72,
+      "meeting_crossings_checked": 48,
+      "point_count": 24,
+      "profile_id": "r16-q2x16",
+      "semantic_sha256": "b533da6c967098ed5ec9afd4d0d4e6166c6082e4bf9de5717f48c7b6835d686a",
+      "size3_point_count": 0,
+      "status": "PASS",
+      "variant": "full"
+    }
+  ],
+  "positive_control_validations": [
+    {
+      "branch_id": "root-q3x0",
+      "common_point_Berge_triangle_count": 11,
+      "k_degree_sequence": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "k_edge_count": 72,
+      "meeting_crossings_checked": 48,
+      "point_count": 22,
+      "profile_id": "r16-q2x16",
+      "semantic_sha256": "00fa2235b5716387a2eb8e57438f078df5361925c83513d767437890285406ff",
+      "size3_point_count": 4,
+      "status": "PASS",
+      "variant": "no_common_point_control"
+    },
+    {
+      "branch_id": "no-size3",
+      "common_point_Berge_triangle_count": 0,
+      "k_degree_sequence": [
+        6,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        8,
+        6,
+        9,
+        5,
+        5,
+        7,
+        9,
+        8,
+        9
+      ],
+      "k_edge_count": 63,
+      "meeting_crossings_checked": 48,
+      "point_count": 24,
+      "profile_id": "r16-q2x16",
+      "semantic_sha256": "e918fe1cad2812f5a9c708df63d95e531e1a015d406ba4607293a940170294b5",
+      "size3_point_count": 0,
+      "status": "PASS",
+      "variant": "k_degree_upper_control"
+    }
+  ],
+  "raw_scan_statuses": [
+    {
+      "branch_id": "no-size3",
+      "profile_id": "r16-q2x16",
+      "status": "SAT_CANDIDATE"
+    },
+    {
+      "branch_id": "root-q3x0",
+      "profile_id": "r16-q2x16",
+      "status": "TIMEOUT_UNKNOWN"
+    },
+    {
+      "branch_id": "no-size3",
+      "profile_id": "r15-q2x13-q3x2",
+      "status": "BUDGET_UNKNOWN"
+    },
+    {
+      "branch_id": "root-q3x0",
+      "profile_id": "r15-q2x13-q3x2",
+      "status": "TIMEOUT_UNKNOWN"
+    },
+    {
+      "branch_id": "root-q3x1",
+      "profile_id": "r15-q2x13-q3x2",
+      "status": "UNSAT_UNVERIFIED"
+    },
+    {
+      "branch_id": "root-q3x2",
+      "profile_id": "r15-q2x13-q3x2",
+      "status": "UNSAT_UNVERIFIED"
+    },
+    {
+      "branch_id": "no-size3",
+      "profile_id": "r14-q2x10-q3x4",
+      "status": "UNSAT_UNVERIFIED"
+    },
+    {
+      "branch_id": "root-q3x0",
+      "profile_id": "r14-q2x10-q3x4",
+      "status": "UNSAT_UNVERIFIED"
+    },
+    {
+      "branch_id": "root-q3x1",
+      "profile_id": "r14-q2x10-q3x4",
+      "status": "UNSAT_UNVERIFIED"
+    },
+    {
+      "branch_id": "root-q3x2",
+      "profile_id": "r14-q2x10-q3x4",
+      "status": "UNSAT_UNVERIFIED"
+    },
+    {
+      "branch_id": "root-q3x3",
+      "profile_id": "r14-q2x10-q3x4",
+      "status": "UNSAT_UNVERIFIED"
+    }
+  ],
+  "role": "verifier",
+  "scan_status_histogram": {
+    "BUDGET_UNKNOWN": 1,
+    "SAT_CANDIDATE": 1,
+    "TIMEOUT_UNKNOWN": 2,
+    "UNSAT_UNVERIFIED": 7
+  },
+  "schema": "conway99-wave14-n3-48-independent-computation-audit-v1",
+  "scope": "Wave14 conditional n3=48 active-local computation lane only",
+  "target_result": "UNKNOWN",
+  "unencoded_global_premises": [
+    "inactive point sets and inactive graph vertices",
+    "which disjoint active point sets represent adjacent original vertices",
+    "fixed support contributed by disjoint point sets",
+    "equality completion of every fixed-point support sum",
+    "the 693-vertex H graph",
+    "a 99-vertex adjacency matrix",
+    "global SRG lambda/mu equations"
+  ],
+  "verdict": "PASS"
+}

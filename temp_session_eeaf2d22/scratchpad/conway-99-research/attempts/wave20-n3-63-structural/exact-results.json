@@ -1,0 +1,2486 @@
+{
+  "claim_label": "DERIVED",
+  "conditional_n3_63": "EXCLUDED_DERIVED_PENDING_INDEPENDENT_AUDIT",
+  "conway_99_target": "UNKNOWN",
+  "crossing_weight_checks": {
+    "size2_disjoint": [
+      0,
+      4
+    ],
+    "size2_meeting": [
+      0
+    ],
+    "size3_size2_disjoint": [
+      0,
+      4
+    ],
+    "size3_size2_meeting": [
+      0
+    ],
+    "size3_size3_disjoint": [
+      0,
+      4,
+      6
+    ],
+    "size3_size3_meeting": [
+      0,
+      4
+    ],
+    "size4_size3_disjoint": [
+      0,
+      4,
+      6
+    ],
+    "size4_size3_meeting": [
+      0,
+      4
+    ],
+    "size_three_fixed_sum_solutions_4a_plus_6b_eq_12": [
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ]
+  },
+  "finite_contradictions": {
+    "r14_through_r17": {
+      "14": {
+        "contradiction": true,
+        "point_count_upper": 21,
+        "q_profile_count": 1,
+        "spectral_point_count_lower": 27
+      },
+      "15": {
+        "contradiction": true,
+        "point_count_upper": 22,
+        "q_profile_count": 1,
+        "spectral_point_count_lower": 27
+      },
+      "16": {
+        "contradiction": true,
+        "point_count_upper": 24,
+        "q_profile_count": 1,
+        "spectral_point_count_lower": 27
+      },
+      "17": {
+        "contradiction": true,
+        "point_count_upper": 25,
+        "q_profile_count": 5,
+        "spectral_point_count_lower": 27
+      }
+    },
+    "r18": {
+      "contradiction": true,
+      "degree_histogram": {
+        "6": 27
+      },
+      "every_profile_has_q_greater_than_2": true,
+      "point_profile": "2^27",
+      "q_profile_count": 4,
+      "size_two_degree_six_forces_q_pair": [
+        2,
+        2
+      ]
+    },
+    "r19": {
+      "m27": {
+        "contradiction": "two labels would co-occur in three linear points",
+        "degree_histogram": {
+          "6": 27
+        },
+        "forced_common_large_points_per_special_label": 3,
+        "large_points": 3,
+        "minimum_special_labels": 2,
+        "point_profile": "2^24 3^3"
+      },
+      "m28": {
+        "contradiction": "one point supplies at most one occurrence of a label",
+        "degree_histogram": {
+          "6": 28
+        },
+        "large_points": 1,
+        "point_profile": "2^27 3",
+        "required_occurrences_per_special_label": 3
+      },
+      "q_profile_count": 3
+    },
+    "r20": {
+      "m27": {
+        "degree_histogram": {
+          "6": 27
+        },
+        "point_profile": "2^21 3^6",
+        "q3_branch_contradiction": "a point with exactly one q=3 has fixed sum 14, not a multiple of the available meeting weight 4; co-locating both q=3 labels in all three occurrences violates linearity",
+        "q4_branch_forced_size_three_positive_degrees": {
+          "contradiction": "odd handshake sum",
+          "degree_3_count": 3,
+          "degree_4_count": 3,
+          "degree_sum": 21
+        }
+      },
+      "m28": {
+        "degree_histogram": {
+          "6": 28
+        },
+        "point_profile": "2^24 3^4",
+        "q3_branch_contradiction": "the same fixed-sum parity forces the two q=3 occurrence sets to coincide in three points, violating linearity",
+        "q4_branch": {
+          "available_other_size_three_vertices": 3,
+          "contradiction": true,
+          "required_positive_size_three_neighbors": 4
+        }
+      },
+      "m29": {
+        "2^27 3^2": {
+          "moment_maximum_degree": 8,
+          "only_compatible_moment_histogram": {
+            "6": 25,
+            "7": 4
+          },
+          "positive_support_degree_sum": 63,
+          "q3_contradiction": "the unique q3-q3 size-two point and both large points would all contain the same label pair, violating linearity",
+          "q4_contradiction": "odd handshake sum",
+          "q4_large_point_degree_lower": 9,
+          "remaining_special_size_two_points": 3
+        },
+        "2^28 4": {
+          "degree_histogram": {
+            "6": 28,
+            "8": 1
+          },
+          "q3_contradiction": "one large point plus forbidden degree-seven size-two points cannot realize either q=3 label",
+          "q4_contradiction": "one large point cannot realize three q=4 occurrences"
+        }
+      },
+      "m30": {
+        "point_profile": "2^30",
+        "q3_contradiction": "two odd labels can share at most one size-two point but each requires three occurrences",
+        "q4_contradiction": "odd handshake sum",
+        "q4_positive_support_degree_sum": 63
+      },
+      "q_profiles": [
+        "2^19 4",
+        "2^18 3^2"
+      ]
+    },
+    "r21": {
+      "m27_m28": {
+        "27": {
+          "contradiction": "odd handshake sum",
+          "degree_sum": 27,
+          "forced_positive_meeting_degree": 3,
+          "size_three_vertices": 9
+        },
+        "28": {
+          "contradiction": "odd handshake sum",
+          "degree_sum": 21,
+          "forced_positive_meeting_degree": 3,
+          "size_three_vertices": 7
+        }
+      },
+      "m29_all_size_three_excess": {
+        "contradiction": true,
+        "moment_cap_on_vertices_of_degree_at_least_8": 1,
+        "possible_weight_six_type_counts_after_cycle_and_parity": [
+          3,
+          5
+        ],
+        "profile": "2^24 3^5",
+        "size_three_weight_solutions": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "m29_size_four": {
+        "available_size_three_vertices": 3,
+        "contradiction": true,
+        "fixed_crossing_sum": 16,
+        "positive_crossing_weight": 4,
+        "profile": "2^25 3^3 4",
+        "required_distinct_size_three_neighbors": 4,
+        "size_four_degree": 8
+      },
+      "m30": {
+        "2^27 3^3": {
+          "all_weight_four_contradiction": "odd handshake sum",
+          "all_weight_four_support_degree_sum": 63,
+          "weight_six_projector_contradiction": {
+            "cauchy_lhs_lower": "25",
+            "cauchy_rhs_upper": "16",
+            "contradiction": true,
+            "oneMone_upper": "4",
+            "psd_matrix": "3I-D+J/9",
+            "special_degree_lower": 8,
+            "special_induced_edges": 3,
+            "special_vertices": 3,
+            "total_degree_sum_lower": 186,
+            "zMone_upper": "-5",
+            "zMz": "4"
+          },
+          "weight_six_residual": "triangle on the three size-three points"
+        },
+        "2^28 3 4": {
+          "contradiction": "odd handshake sum",
+          "positive_support_degree_sum_after_excluding_weight_6": 63,
+          "six_crossing_completion_counts": []
+        },
+        "2^29 5": {
+          "contradiction": "odd handshake sum",
+          "positive_support_degree_sum": 63
+        }
+      },
+      "m31": {
+        "contradiction": "odd handshake sum",
+        "positive_support_degree_sum": 63,
+        "profile": "2^30 3"
+      }
+    }
+  },
+  "frozen_inputs": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "verification/2026-07-23-wave15-algebraic-audit.md": "b0541d05d2c1c359152b86223e2ebbdbd002b2ff42deb699f6a0b21d149a5b45",
+    "verification/2026-07-23-wave16-n3-51-structural-audit.md": "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6",
+    "verification/2026-07-23-wave18-n3-57-structural-audit.md": "8534456ac92fd704ad7b24f5d7d2c262ea31476132018e9d14a8e4779b27ae5d"
+  },
+  "limitations": [
+    "The semantic indexed-point and crossing bridge is imported from audited pre-Wave19 work.",
+    "The finite checker validates arithmetic and case coverage, not the imported graph semantics.",
+    "No Wave19 discovery or audit is an input.",
+    "The first exploratory two-profile census was wrong, is explicitly rejected, and supplies no premise.",
+    "No raw solver status, automorphism restriction, or catalog non-hit is used.",
+    "No target existence/nonexistence or novelty conclusion is claimed."
+  ],
+  "novelty": "UNKNOWN",
+  "point_and_moment_census": {
+    "incidence_54_m_27": {
+      "all_point_size_profile_count": 1,
+      "incidence_sum": 54,
+      "m": 27,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 27
+              },
+              "inside_degree_square_sum": 972,
+              "inside_degree_sum": 162,
+              "outside_count": 72,
+              "outside_degree_square_sum": 648,
+              "outside_degree_sum": 216,
+              "outside_square_maximum": 2976,
+              "outside_square_minimum": 648
+            }
+          ],
+          "sizes": {
+            "2": 27
+          }
+        }
+      ],
+      "r": 18,
+      "spectral_degree_sum_upper": "162"
+    },
+    "incidence_57_m_27": {
+      "all_point_size_profile_count": 3,
+      "incidence_sum": 57,
+      "m": 27,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 27
+              },
+              "inside_degree_square_sum": 972,
+              "inside_degree_sum": 162,
+              "outside_count": 72,
+              "outside_degree_square_sum": 648,
+              "outside_degree_sum": 216,
+              "outside_square_maximum": 2976,
+              "outside_square_minimum": 648
+            }
+          ],
+          "sizes": {
+            "2": 24,
+            "3": 3
+          }
+        }
+      ],
+      "r": 19,
+      "spectral_degree_sum_upper": "162"
+    },
+    "incidence_57_m_28": {
+      "all_point_size_profile_count": 1,
+      "incidence_sum": 57,
+      "m": 28,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 28
+              },
+              "inside_degree_square_sum": 1008,
+              "inside_degree_sum": 168,
+              "outside_count": 71,
+              "outside_degree_square_sum": 728,
+              "outside_degree_sum": 224,
+              "outside_square_maximum": 3136,
+              "outside_square_minimum": 716
+            }
+          ],
+          "sizes": {
+            "2": 27,
+            "3": 1
+          }
+        }
+      ],
+      "r": 19,
+      "spectral_degree_sum_upper": "1540/9"
+    },
+    "incidence_60_m_27": {
+      "all_point_size_profile_count": 11,
+      "incidence_sum": 60,
+      "m": 27,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 27
+              },
+              "inside_degree_square_sum": 972,
+              "inside_degree_sum": 162,
+              "outside_count": 72,
+              "outside_degree_square_sum": 648,
+              "outside_degree_sum": 216,
+              "outside_square_maximum": 2976,
+              "outside_square_minimum": 648
+            }
+          ],
+          "sizes": {
+            "2": 21,
+            "3": 6
+          }
+        }
+      ],
+      "r": 20,
+      "spectral_degree_sum_upper": "162"
+    },
+    "incidence_60_m_28": {
+      "all_point_size_profile_count": 5,
+      "incidence_sum": 60,
+      "m": 28,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 28
+              },
+              "inside_degree_square_sum": 1008,
+              "inside_degree_sum": 168,
+              "outside_count": 71,
+              "outside_degree_square_sum": 728,
+              "outside_degree_sum": 224,
+              "outside_square_maximum": 3136,
+              "outside_square_minimum": 716
+            }
+          ],
+          "sizes": {
+            "2": 24,
+            "3": 4
+          }
+        }
+      ],
+      "r": 20,
+      "spectral_degree_sum_upper": "1540/9"
+    },
+    "incidence_60_m_29": {
+      "all_point_size_profile_count": 2,
+      "incidence_sum": 60,
+      "m": 29,
+      "moment_survivor_profile_count": 2,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1072,
+              "inside_degree_sum": 176,
+              "outside_count": 70,
+              "outside_degree_square_sum": 782,
+              "outside_degree_sum": 230,
+              "outside_square_maximum": 3172,
+              "outside_square_minimum": 770
+            }
+          ],
+          "sizes": {
+            "2": 28,
+            "4": 1
+          }
+        },
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 29
+              },
+              "inside_degree_square_sum": 1044,
+              "inside_degree_sum": 174,
+              "outside_count": 70,
+              "outside_degree_square_sum": 812,
+              "outside_degree_sum": 232,
+              "outside_square_maximum": 3200,
+              "outside_square_minimum": 784
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 2
+              },
+              "inside_degree_square_sum": 1070,
+              "inside_degree_sum": 176,
+              "outside_count": 70,
+              "outside_degree_square_sum": 784,
+              "outside_degree_sum": 230,
+              "outside_square_maximum": 3172,
+              "outside_square_minimum": 770
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1072,
+              "inside_degree_sum": 176,
+              "outside_count": 70,
+              "outside_degree_square_sum": 782,
+              "outside_degree_sum": 230,
+              "outside_square_maximum": 3172,
+              "outside_square_minimum": 770
+            },
+            {
+              "degree_histogram": {
+                "6": 25,
+                "7": 4
+              },
+              "inside_degree_square_sum": 1096,
+              "inside_degree_sum": 178,
+              "outside_count": 70,
+              "outside_degree_square_sum": 756,
+              "outside_degree_sum": 228,
+              "outside_square_maximum": 3152,
+              "outside_square_minimum": 756
+            }
+          ],
+          "sizes": {
+            "2": 27,
+            "3": 2
+          }
+        }
+      ],
+      "r": 20,
+      "spectral_degree_sum_upper": "1624/9"
+    },
+    "incidence_60_m_30": {
+      "all_point_size_profile_count": 1,
+      "incidence_sum": 60,
+      "m": 30,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 30
+              },
+              "inside_degree_square_sum": 1080,
+              "inside_degree_sum": 180,
+              "outside_count": 69,
+              "outside_degree_square_sum": 900,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 852
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "7": 2
+              },
+              "inside_degree_square_sum": 1106,
+              "inside_degree_sum": 182,
+              "outside_count": 69,
+              "outside_degree_square_sum": 872,
+              "outside_degree_sum": 238,
+              "outside_square_maximum": 3332,
+              "outside_square_minimum": 838
+            },
+            {
+              "degree_histogram": {
+                "6": 29,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1108,
+              "inside_degree_sum": 182,
+              "outside_count": 69,
+              "outside_degree_square_sum": 870,
+              "outside_degree_sum": 238,
+              "outside_square_maximum": 3332,
+              "outside_square_minimum": 838
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 4
+              },
+              "inside_degree_square_sum": 1132,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 844,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 2,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1134,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 842,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1136,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 840,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "7": 1,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1138,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 838,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 29
+              },
+              "inside_degree_square_sum": 1144,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 832,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 24,
+                "7": 6
+              },
+              "inside_degree_square_sum": 1158,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 816,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 25,
+                "7": 4,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1160,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 814,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 2,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1162,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 812,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 3,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1164,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 810,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "8": 3
+              },
+              "inside_degree_square_sum": 1164,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 810,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            }
+          ],
+          "sizes": {
+            "2": 30
+          }
+        }
+      ],
+      "r": 20,
+      "spectral_degree_sum_upper": "190"
+    },
+    "incidence_63_m_27": {
+      "all_point_size_profile_count": 30,
+      "incidence_sum": 63,
+      "m": 27,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 27
+              },
+              "inside_degree_square_sum": 972,
+              "inside_degree_sum": 162,
+              "outside_count": 72,
+              "outside_degree_square_sum": 648,
+              "outside_degree_sum": 216,
+              "outside_square_maximum": 2976,
+              "outside_square_minimum": 648
+            }
+          ],
+          "sizes": {
+            "2": 18,
+            "3": 9
+          }
+        }
+      ],
+      "r": 21,
+      "spectral_degree_sum_upper": "162"
+    },
+    "incidence_63_m_28": {
+      "all_point_size_profile_count": 15,
+      "incidence_sum": 63,
+      "m": 28,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 28
+              },
+              "inside_degree_square_sum": 1008,
+              "inside_degree_sum": 168,
+              "outside_count": 71,
+              "outside_degree_square_sum": 728,
+              "outside_degree_sum": 224,
+              "outside_square_maximum": 3136,
+              "outside_square_minimum": 716
+            }
+          ],
+          "sizes": {
+            "2": 21,
+            "3": 7
+          }
+        }
+      ],
+      "r": 21,
+      "spectral_degree_sum_upper": "1540/9"
+    },
+    "incidence_63_m_29": {
+      "all_point_size_profile_count": 7,
+      "incidence_sum": 63,
+      "m": 29,
+      "moment_survivor_profile_count": 2,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1072,
+              "inside_degree_sum": 176,
+              "outside_count": 70,
+              "outside_degree_square_sum": 782,
+              "outside_degree_sum": 230,
+              "outside_square_maximum": 3172,
+              "outside_square_minimum": 770
+            }
+          ],
+          "sizes": {
+            "2": 25,
+            "3": 3,
+            "4": 1
+          }
+        },
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 29
+              },
+              "inside_degree_square_sum": 1044,
+              "inside_degree_sum": 174,
+              "outside_count": 70,
+              "outside_degree_square_sum": 812,
+              "outside_degree_sum": 232,
+              "outside_square_maximum": 3200,
+              "outside_square_minimum": 784
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 2
+              },
+              "inside_degree_square_sum": 1070,
+              "inside_degree_sum": 176,
+              "outside_count": 70,
+              "outside_degree_square_sum": 784,
+              "outside_degree_sum": 230,
+              "outside_square_maximum": 3172,
+              "outside_square_minimum": 770
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1072,
+              "inside_degree_sum": 176,
+              "outside_count": 70,
+              "outside_degree_square_sum": 782,
+              "outside_degree_sum": 230,
+              "outside_square_maximum": 3172,
+              "outside_square_minimum": 770
+            },
+            {
+              "degree_histogram": {
+                "6": 25,
+                "7": 4
+              },
+              "inside_degree_square_sum": 1096,
+              "inside_degree_sum": 178,
+              "outside_count": 70,
+              "outside_degree_square_sum": 756,
+              "outside_degree_sum": 228,
+              "outside_square_maximum": 3152,
+              "outside_square_minimum": 756
+            }
+          ],
+          "sizes": {
+            "2": 24,
+            "3": 5
+          }
+        }
+      ],
+      "r": 21,
+      "spectral_degree_sum_upper": "1624/9"
+    },
+    "incidence_63_m_30": {
+      "all_point_size_profile_count": 3,
+      "incidence_sum": 63,
+      "m": 30,
+      "moment_survivor_profile_count": 3,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 29
+              },
+              "inside_degree_square_sum": 1144,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 832,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            }
+          ],
+          "sizes": {
+            "2": 29,
+            "5": 1
+          }
+        },
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 29,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1108,
+              "inside_degree_sum": 182,
+              "outside_count": 69,
+              "outside_degree_square_sum": 870,
+              "outside_degree_sum": 238,
+              "outside_square_maximum": 3332,
+              "outside_square_minimum": 838
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 2,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1134,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 842,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1136,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 840,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "7": 1,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1138,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 838,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 29
+              },
+              "inside_degree_square_sum": 1144,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 832,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 25,
+                "7": 4,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1160,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 814,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 2,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1162,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 812,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 3,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1164,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 810,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "8": 3
+              },
+              "inside_degree_square_sum": 1164,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 810,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            }
+          ],
+          "sizes": {
+            "2": 28,
+            "3": 1,
+            "4": 1
+          }
+        },
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 30
+              },
+              "inside_degree_square_sum": 1080,
+              "inside_degree_sum": 180,
+              "outside_count": 69,
+              "outside_degree_square_sum": 900,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 852
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "7": 2
+              },
+              "inside_degree_square_sum": 1106,
+              "inside_degree_sum": 182,
+              "outside_count": 69,
+              "outside_degree_square_sum": 872,
+              "outside_degree_sum": 238,
+              "outside_square_maximum": 3332,
+              "outside_square_minimum": 838
+            },
+            {
+              "degree_histogram": {
+                "6": 29,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1108,
+              "inside_degree_sum": 182,
+              "outside_count": 69,
+              "outside_degree_square_sum": 870,
+              "outside_degree_sum": 238,
+              "outside_square_maximum": 3332,
+              "outside_square_minimum": 838
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 4
+              },
+              "inside_degree_square_sum": 1132,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 844,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 2,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1134,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 842,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1136,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 840,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "7": 1,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1138,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 838,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 29
+              },
+              "inside_degree_square_sum": 1144,
+              "inside_degree_sum": 184,
+              "outside_count": 69,
+              "outside_degree_square_sum": 832,
+              "outside_degree_sum": 236,
+              "outside_square_maximum": 3280,
+              "outside_square_minimum": 824
+            },
+            {
+              "degree_histogram": {
+                "6": 24,
+                "7": 6
+              },
+              "inside_degree_square_sum": 1158,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 816,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 25,
+                "7": 4,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1160,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 814,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 2,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1162,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 812,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 3,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1164,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 810,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "8": 3
+              },
+              "inside_degree_square_sum": 1164,
+              "inside_degree_sum": 186,
+              "outside_count": 69,
+              "outside_degree_square_sum": 810,
+              "outside_degree_sum": 234,
+              "outside_square_maximum": 3236,
+              "outside_square_minimum": 810
+            }
+          ],
+          "sizes": {
+            "2": 27,
+            "3": 3
+          }
+        }
+      ],
+      "r": 21,
+      "spectral_degree_sum_upper": "190"
+    },
+    "incidence_63_m_31": {
+      "all_point_size_profile_count": 1,
+      "incidence_sum": 63,
+      "m": 31,
+      "moment_survivor_profile_count": 1,
+      "moment_survivors": [
+        {
+          "degree_moment_states": [
+            {
+              "degree_histogram": {
+                "6": 31
+              },
+              "inside_degree_square_sum": 1116,
+              "inside_degree_sum": 186,
+              "outside_count": 68,
+              "outside_degree_square_sum": 992,
+              "outside_degree_sum": 248,
+              "outside_square_maximum": 3432,
+              "outside_square_minimum": 920
+            },
+            {
+              "degree_histogram": {
+                "6": 29,
+                "7": 2
+              },
+              "inside_degree_square_sum": 1142,
+              "inside_degree_sum": 188,
+              "outside_count": 68,
+              "outside_degree_square_sum": 964,
+              "outside_degree_sum": 246,
+              "outside_square_maximum": 3396,
+              "outside_square_minimum": 906
+            },
+            {
+              "degree_histogram": {
+                "6": 30,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1144,
+              "inside_degree_sum": 188,
+              "outside_count": 68,
+              "outside_degree_square_sum": 962,
+              "outside_degree_sum": 246,
+              "outside_square_maximum": 3396,
+              "outside_square_minimum": 906
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 4
+              },
+              "inside_degree_square_sum": 1168,
+              "inside_degree_sum": 190,
+              "outside_count": 68,
+              "outside_degree_square_sum": 936,
+              "outside_degree_sum": 244,
+              "outside_square_maximum": 3368,
+              "outside_square_minimum": 892
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "7": 2,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1170,
+              "inside_degree_sum": 190,
+              "outside_count": 68,
+              "outside_degree_square_sum": 934,
+              "outside_degree_sum": 244,
+              "outside_square_maximum": 3368,
+              "outside_square_minimum": 892
+            },
+            {
+              "degree_histogram": {
+                "6": 29,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1172,
+              "inside_degree_sum": 190,
+              "outside_count": 68,
+              "outside_degree_square_sum": 932,
+              "outside_degree_sum": 244,
+              "outside_square_maximum": 3368,
+              "outside_square_minimum": 892
+            },
+            {
+              "degree_histogram": {
+                "6": 29,
+                "7": 1,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1174,
+              "inside_degree_sum": 190,
+              "outside_count": 68,
+              "outside_degree_square_sum": 930,
+              "outside_degree_sum": 244,
+              "outside_square_maximum": 3368,
+              "outside_square_minimum": 892
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 30
+              },
+              "inside_degree_square_sum": 1180,
+              "inside_degree_sum": 190,
+              "outside_count": 68,
+              "outside_degree_square_sum": 924,
+              "outside_degree_sum": 244,
+              "outside_square_maximum": 3368,
+              "outside_square_minimum": 892
+            },
+            {
+              "degree_histogram": {
+                "6": 25,
+                "7": 6
+              },
+              "inside_degree_square_sum": 1194,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 908,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 4,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1196,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 906,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 2,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1198,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 904,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 3,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1200,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 902,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 3
+              },
+              "inside_degree_square_sum": 1200,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 902,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "7": 1,
+                "8": 1,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1202,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 900,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 28,
+                "7": 2
+              },
+              "inside_degree_square_sum": 1206,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 896,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "6": 29,
+                "9": 2
+              },
+              "inside_degree_square_sum": 1206,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 896,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 29,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1208,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 894,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "11": 1,
+                "6": 29,
+                "7": 1
+              },
+              "inside_degree_square_sum": 1214,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 888,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "12": 1,
+                "6": 30
+              },
+              "inside_degree_square_sum": 1224,
+              "inside_degree_sum": 192,
+              "outside_count": 68,
+              "outside_degree_square_sum": 878,
+              "outside_degree_sum": 242,
+              "outside_square_maximum": 3348,
+              "outside_square_minimum": 878
+            },
+            {
+              "degree_histogram": {
+                "6": 23,
+                "7": 8
+              },
+              "inside_degree_square_sum": 1220,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 880,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 24,
+                "7": 6,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1222,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 878,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 25,
+                "7": 4,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1224,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 876,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 25,
+                "7": 5,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1226,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 874,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 2,
+                "8": 3
+              },
+              "inside_degree_square_sum": 1226,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 874,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 26,
+                "7": 3,
+                "8": 1,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1228,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 872,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "8": 4
+              },
+              "inside_degree_square_sum": 1228,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 872,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 1,
+                "8": 2,
+                "9": 1
+              },
+              "inside_degree_square_sum": 1230,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 870,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 26,
+                "7": 4
+              },
+              "inside_degree_square_sum": 1232,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 868,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 27,
+                "7": 2,
+                "9": 2
+              },
+              "inside_degree_square_sum": 1232,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 868,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 27,
+                "7": 2,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1234,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 866,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 28,
+                "8": 1,
+                "9": 2
+              },
+              "inside_degree_square_sum": 1234,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 866,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "10": 1,
+                "6": 28,
+                "8": 2
+              },
+              "inside_degree_square_sum": 1236,
+              "inside_degree_sum": 194,
+              "outside_count": 68,
+              "outside_degree_square_sum": 864,
+              "outside_degree_sum": 240,
+              "outside_square_maximum": 3336,
+              "outside_square_minimum": 864
+            },
+            {
+              "degree_histogram": {
+                "6": 21,
+                "7": 10
+              },
+              "inside_degree_square_sum": 1246,
+              "inside_degree_sum": 196,
+              "outside_count": 68,
+              "outside_degree_square_sum": 852,
+              "outside_degree_sum": 238,
+              "outside_square_maximum": 3332,
+              "outside_square_minimum": 850
+            },
+            {
+              "degree_histogram": {
+                "6": 22,
+                "7": 8,
+                "8": 1
+              },
+              "inside_degree_square_sum": 1248,
+              "inside_degree_sum": 196,
+              "outside_count": 68,
+              "outside_degree_square_sum": 850,
+              "outside_degree_sum": 238,
+              "outside_square_maximum": 3332,
+              "outside_square_minimum": 850
+            }
+          ],
+          "sizes": {
+            "2": 30,
+            "3": 1
+          }
+        }
+      ],
+      "r": 21,
+      "spectral_degree_sum_upper": "1798/9"
+    }
+  },
+  "prospective_conditional_induced_C6_lower_bound": 209352,
+  "prospective_conditional_n3_lower_bound": 66,
+  "q_profile_census": {
+    "count": 18,
+    "counts_by_r": {
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 5,
+      "18": 4,
+      "19": 3,
+      "20": 2,
+      "21": 1
+    },
+    "minimum_d_k": 4,
+    "profiles": [
+      {
+        "d_k": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "point_count_upper": 21,
+        "q": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 14
+      },
+      {
+        "d_k": [
+          8,
+          8,
+          8,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "point_count_upper": 22,
+        "q": [
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 15
+      },
+      {
+        "d_k": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "point_count_upper": 24,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 16
+      },
+      {
+        "d_k": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          4,
+          4,
+          4,
+          4
+        ],
+        "point_count_upper": 25,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4
+        ],
+        "r": 17
+      },
+      {
+        "d_k": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          7,
+          7,
+          4,
+          4,
+          4
+        ],
+        "point_count_upper": 25,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        "r": 17
+      },
+      {
+        "d_k": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          7,
+          7,
+          7,
+          7,
+          4,
+          4
+        ],
+        "point_count_upper": 25,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4
+        ],
+        "r": 17
+      },
+      {
+        "d_k": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          4
+        ],
+        "point_count_upper": 25,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "r": 17
+      },
+      {
+        "d_k": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "point_count_upper": 25,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 17
+      },
+      {
+        "d_k": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          5,
+          5,
+          5
+        ],
+        "point_count_upper": 27,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ],
+        "r": 18
+      },
+      {
+        "d_k": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          8,
+          8,
+          5,
+          5
+        ],
+        "point_count_upper": 27,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4
+        ],
+        "r": 18
+      },
+      {
+        "d_k": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          8,
+          8,
+          8,
+          8,
+          5
+        ],
+        "point_count_upper": 27,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "r": 18
+      },
+      {
+        "d_k": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "point_count_upper": 27,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 18
+      },
+      {
+        "d_k": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          6,
+          6
+        ],
+        "point_count_upper": 28,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4
+        ],
+        "r": 19
+      },
+      {
+        "d_k": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          9,
+          9,
+          6
+        ],
+        "point_count_upper": 28,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4
+        ],
+        "r": 19
+      },
+      {
+        "d_k": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          9,
+          9,
+          9,
+          9
+        ],
+        "point_count_upper": 28,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 19
+      },
+      {
+        "d_k": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          7
+        ],
+        "point_count_upper": 30,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "r": 20
+      },
+      {
+        "d_k": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          10,
+          10
+        ],
+        "point_count_upper": 30,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        "r": 20
+      },
+      {
+        "d_k": [
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "point_count_upper": 31,
+        "q": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "r": 21
+      }
+    ],
+    "rejected_initial_census": {
+      "caught_by": "this complete fixed-length partition census",
+      "cause": "an exploratory partition generator propagated a temporary average bound as a permanent maximum",
+      "claim": "only r=14 q=3^14 and r=21 q=2^21 survive",
+      "status": "REJECTED"
+    },
+    "sum_q": 42
+  },
+  "role": "proof_a",
+  "schema_version": 1,
+  "scope": "conditional exclusion of project n3=63 for a putative srg(99,14,1,2), using only authenticated framework through Wave18"
+}

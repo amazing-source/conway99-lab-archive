@@ -1,0 +1,65 @@
+role: construction
+date_utc: 2026-07-27T00:14:03Z
+git_commit: a45592a91a34d2f2bb7ee4c266f3b979e86e399d
+claim_label: CANDIDATE
+scope: >-
+  Exact proof-producing OPB formula for refined branch 15, one of the 33
+  endpoint-compatible normalized cases conditional on n3=4158; formula
+  construction and syntax only, with no satisfiability conclusion.
+inputs:
+  - path: code/sat_model.py
+    sha256: 45f0da74619b31a1a31cc407f702f8e86a0597ee73d29ec268528cd89980aef8
+  - path: code/matching_orbits.py
+    sha256: 1ba68393c385ef296458555b7c48533786ea592a50bec589be675f95fd550240
+  - path: attempts/wave36-rooted-branches/rooted_branch_scout.py
+    sha256: bdb3b0ac06d4926133cf9f9e3a80c58dec82c48dc09bb85696819c826da56397
+method: >-
+  Build the compact native rooted SRG formula; add the 84 endpoint units,
+  universal N3 normalization, refined branch 15, and the six exact
+  fixed-triangle P=0 clause families; export canonical OPB; stream-audit its
+  syntax and metadata binding; package it as deterministic gzip; and submit
+  the raw formula to the pinned Exact parser without solving.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave37-proof-producing-endpoint\export_endpoint_opb.py --refined-branch 15 --opb attempts\wave37-proof-producing-endpoint\branch-15.opb --metadata attempts\wave37-proof-producing-endpoint\branch-15-formula.json
+  .\.venv\Scripts\python.exe -B attempts\wave37-proof-producing-endpoint\audit_opb.py --opb attempts\wave37-proof-producing-endpoint\branch-15.opb --metadata attempts\wave37-proof-producing-endpoint\branch-15-formula.json --output attempts\wave37-proof-producing-endpoint\branch-15-opb-audit.json
+  .\.venv\Scripts\python.exe -B attempts\wave37-proof-producing-endpoint\package_opb.py --source attempts\wave37-proof-producing-endpoint\branch-15.opb --output attempts\wave37-proof-producing-endpoint\branch-15.opb.gz --audit attempts\wave37-proof-producing-endpoint\compression-audit.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave37-proof-producing-endpoint -p "test_*.py" -v
+  "$EXACT" --onlyparse "$FORMULA"
+outputs:
+  - path: attempts/wave37-proof-producing-endpoint/export_endpoint_opb.py
+    sha256: b9cb895625e89709bfef765156a7fa0dd7c842a1d6db41401b83df15e986d902
+  - path: attempts/wave37-proof-producing-endpoint/audit_opb.py
+    sha256: 09f56a300e74e52bf80ca59a72c6e4621d91ce042507fb1a1d240a6ed896256f
+  - path: attempts/wave37-proof-producing-endpoint/package_opb.py
+    sha256: 507eab46db1ad3a94f5f7e83b128da41e50eacdeccda1d7743ac19887521a3d7
+  - path: attempts/wave37-proof-producing-endpoint/test_export_endpoint_opb.py
+    sha256: 84b7dc1cbb5a0e956c54a94e721effa45d1b0a63ef365dae65b4021cbe5a97ed
+  - path: attempts/wave37-proof-producing-endpoint/test_artifact_tools.py
+    sha256: 0ddc9dd04f5a08d78ebf69f722bcadf18c9fc8dae14a18f4b6dd0cd4a465a853
+  - path: attempts/wave37-proof-producing-endpoint/branch-15-formula.json
+    sha256: 3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb
+    sha256: 4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5
+  - path: attempts/wave37-proof-producing-endpoint/branch-15-opb-audit.json
+    sha256: 9830b9a1089d911e8bd676b6e2f18f3deb0af03f2b554ad8870aba02f41ee2f6
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: attempts/wave37-proof-producing-endpoint/compression-audit.json
+    sha256: 155edb45fb4a8d678b31f8ee05e3f87b0f55c39559147b149df6dc2d87c04845
+  - path: attempts/wave37-proof-producing-endpoint/parser-run.json
+    sha256: 8affb03099a96f29b82f8caae5221b15c802390b0845754e370c9fdf01a9d0af
+limitations:
+  - "The formula is one of 33 endpoint-compatible refined cases."
+  - "The fixed-triangle clauses do not enumerate every possible prism."
+  - "Formula export, stream audit, gzip replay, and parser acceptance do not decide satisfiability."
+  - "An UNSAT conclusion requires a retained independently replayed proof."
+  - "A SAT conclusion requires independent full-graph and prism-free checks."
+  - "No graph, endpoint exclusion, upper-bound improvement, or novelty claim is supplied."
+tests:
+  submitted: 5 passed
+  exact_parser: PARSE_ACCEPTED
+status:
+  branch_15: UNKNOWN
+  endpoint_n3_4158: UNKNOWN
+  upper_bound_improved_below_4158: false
+  conway_99: UNKNOWN

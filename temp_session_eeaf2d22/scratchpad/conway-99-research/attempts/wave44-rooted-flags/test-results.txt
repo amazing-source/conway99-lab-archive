@@ -1,0 +1,17 @@
+Wave 44 final local QA
+Date UTC: 2026-07-27
+
+PASS exact regenerated-system replay
+  command: .\.venv\Scripts\python.exe -B attempts\wave44-rooted-flags\exact_check.py --verify attempts\wave44-rooted-flags\exact-results.json
+  exact-results sha256: c41b194d2d4ae8121883d84ba4f5011f48336a58a0dd4f5cebf9ab560ee3ae19
+
+PASS standard-library frozen-system replay
+  command: .\.venv\Scripts\python.exe -B attempts\wave44-rooted-flags\verify_frozen.py
+  exact nonzero residuals: base=0, vertex=0, edge=0, nonedge=0
+  combined row/RHS sha256: 863a75a616c138e750178c93234a92289363318f4bd0775c7b0792e44b7c61cb
+
+PASS unittest suite
+  command: .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave44-rooted-flags -p "test_*.py" -v
+  tests: 11
+  failures: 0
+  errors: 0

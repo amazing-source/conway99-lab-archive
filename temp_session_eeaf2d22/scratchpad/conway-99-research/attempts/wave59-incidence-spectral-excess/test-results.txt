@@ -1,0 +1,12 @@
+Wave 59 exact discovery suite
+command: .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave59-incidence-spectral-excess -p "test_*.py" -v
+result: 22 tests passed, 0 failed
+
+Exact artifact replay
+command: .\.venv\Scripts\python.exe -B attempts\wave59-incidence-spectral-excess\incidence_spectral.py --verify attempts\wave59-incidence-spectral-excess\exact-result.json
+result: VERIFIED
+artifact_sha256: 7954daa92f8cb4a400ae8f9f5bfb4d4edb10ad42361872178eb538d35edc1d81
+
+resource check
+minimum required free RAM: 15 percent
+minimum observed during final checks: 42.65 percent

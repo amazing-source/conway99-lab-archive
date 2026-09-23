@@ -1,0 +1,767 @@
+{
+  "analytic_circuit_theorem": {
+    "Q_lower": 4852,
+    "circuit_specific_scalar_short_word_lower": 11090,
+    "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+    "conway_99_resolved": false,
+    "design_spectral_null_boundary": {
+      "candidate_flags": 13860,
+      "column_degree": 3,
+      "conflict_adjacency_identity": "A=H^T*H-3I",
+      "conflict_degree": 27,
+      "equality_equivalent_to": "a 0-1 vector b with H*b=1",
+      "flags_share_at_most_one_nonedge": true,
+      "hoffman_independence_bound": "1386",
+      "incidence_matrix_shape": [
+        4158,
+        13860
+      ],
+      "least_eigenvalue": -3,
+      "least_eigenvalue_reason": "PSD plus nontrivial kernel because 13860>4158",
+      "row_degree": 10,
+      "status": "TIGHT_NULL_BOUNDARY_NOT_INTEGRAL_FEASIBILITY",
+      "uniform_center_count": 14,
+      "uniform_rational_flag_weight": "1/10",
+      "uniform_triangle_replication": 6,
+      "vertex_triangle_identity": "N*r=3*(28*1-c), hence N*r=0 mod 3"
+    },
+    "endpoint_excluded": false,
+    "equality_saturation_and_weight7_exclusion": {
+      "X_is_all_2079_canonical_checkerboard_conics": true,
+      "all_projective_short_circuit_lower": 5545,
+      "canonical_conic_containment": "the two common-neighbor blocks on both star sides lie in the 3+6 leaf support",
+      "checkerboard_relation": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "contradicts_Q_4851": true,
+      "each_X_circuit_exact_two_with_two_assignments": true,
+      "edge_isolated_projective_circuits": 693,
+      "equality_slacks_force": {
+        "h": 0,
+        "n1": 0,
+        "n2": 0,
+        "n3": 1386,
+        "p2": 0,
+        "p3": 4158,
+        "r": 2079
+      },
+      "excluded_existing_pools": {
+        "checkerboard": "each residual omits two checkerboard coordinates",
+        "other_X": "equality saturates two distinct assignments per exact-two label set",
+        "selected_companion": "privacy, same label triple, and omitted T",
+        "selected_owner": "privacy and omitted leaf triangle T"
+      },
+      "leaf_minus_checkerboard": [
+        1,
+        0,
+        2,
+        0,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "leaf_minus_twice_checkerboard": [
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "leaf_relation": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "proper_star_subsets_force_cross_circuit": true,
+      "residual_side_profiles": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "residual_weights": [
+        7,
+        7
+      ],
+      "scalar_short_circuit_word_lower": 11090,
+      "selected_triples_partition_all_nonedges": true,
+      "strict_Q_lower": 4852
+    },
+    "pool_separation_orbit_closure_and_scalar_identity": {
+      "fractional_bound": {
+        "Q": 4851,
+        "inequality": "12*Q>=14*C"
+      },
+      "nonnegative_remainder_row": [
+        4,
+        -2,
+        3,
+        5,
+        -1
+      ],
+      "orbit_capacity": {
+        "assignment_bound": "A<=2*r+3*h",
+        "closed_pool": "|X|=r+2*h",
+        "consequence": "2*|X|>=A",
+        "raw_assignments": "A=n1+2*p2+p3",
+        "type2_orbit_collision_excluded": "6+2 forces center x, 2+6 forces center y, companions share center"
+      },
+      "pool_separation": {
+        "added_orbit_mates_vs_selected": "privacy and involution",
+        "added_orbit_mates_vs_selected_companions": "involution would make raw extraction selected",
+        "pairwise_disjoint": true,
+        "raw_extractions_vs_selected": "private label and distinct source support",
+        "raw_extractions_vs_selected_companions": "privacy plus own-leaf omission",
+        "selected_vs_companions": "minimality and fixed-point-free involution"
+      },
+      "private_incidence_row": [
+        2,
+        2,
+        3,
+        1,
+        1
+      ],
+      "remainder_decomposition": "4*n1+2*(p2-n2)+(3*n3-p3)+3*p2",
+      "seven_I_row": [
+        14,
+        14,
+        21,
+        7,
+        7
+      ],
+      "sharp_scalar_control": {
+        "h": 0,
+        "n1": 0,
+        "n2": 0,
+        "n3": 1386,
+        "p2": 0,
+        "p3": 4158,
+        "r": 2079
+      },
+      "sharp_scalar_control_is_cover_or_graph": false,
+      "twelve_Q_row": [
+        18,
+        12,
+        24,
+        12,
+        6
+      ],
+      "variable_order": [
+        "n1",
+        "n2",
+        "n3",
+        "p2",
+        "p3"
+      ]
+    },
+    "rank_11_excluded": false,
+    "singleton_majority_translation": {
+      "coefficient_splits_checked": 490,
+      "maximum_of_best_axis_translate_weight": 9,
+      "minimal_subcircuit_crosses_private_label": true,
+      "outside_selected_cover_by_privacy": true,
+      "symbolic_contradiction_if_both_at_least_10": "Mx<=b-3 and My<=a-3 with Mx>=a/2, My>=b/2 imply a+b>=12",
+      "translated_support_has_two_proper_star_sides": true,
+      "worst_case_examples": [
+        [
+          4,
+          4,
+          2,
+          2,
+          9,
+          9
+        ]
+      ]
+    },
+    "status": "VERIFIED_CONDITIONAL_THEOREM",
+    "wave188_all_short_word_lower_remains_stronger": 18018
+  },
+  "boundary": {
+    "conditional_Q_at_least_4852_verified": true,
+    "conditional_theorem_implies_endpoint_exclusion": false,
+    "conway_99": "UNKNOWN",
+    "endpoint_status": "UNKNOWN",
+    "external_novelty": "UNKNOWN",
+    "rank_11_status": "UNKNOWN",
+    "rational_relaxation_feasible": true,
+    "relaxation_feasibility_implies_code_existence": false
+  },
+  "degree7_relaxation": {
+    "complete_macwilliams": {
+      "all_complete_rows_through_degree_seven_nonnegative": true,
+      "degree_four_row": [
+        "0",
+        "0",
+        "1133506211803506205652542142416870583/1288254800187180330519157577595",
+        "0",
+        "0"
+      ],
+      "degree_seven_endpoints": {
+        "B_0_7": "99",
+        "B_7_0": "99"
+      },
+      "degrees_zero_through_seven": {
+        "0": {
+          "coefficients_B_r_degree_minus_r": [
+            "1"
+          ],
+          "negative_count": 0,
+          "zero_count": 0
+        },
+        "1": {
+          "coefficients_B_r_degree_minus_r": [
+            "0",
+            "0"
+          ],
+          "negative_count": 0,
+          "zero_count": 2
+        },
+        "2": {
+          "coefficients_B_r_degree_minus_r": [
+            "0",
+            "0",
+            "0"
+          ],
+          "negative_count": 0,
+          "zero_count": 3
+        },
+        "3": {
+          "coefficients_B_r_degree_minus_r": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "negative_count": 0,
+          "zero_count": 4
+        },
+        "4": {
+          "coefficients_B_r_degree_minus_r": [
+            "0",
+            "0",
+            "1133506211803506205652542142416870583/1288254800187180330519157577595",
+            "0",
+            "0"
+          ],
+          "negative_count": 0,
+          "zero_count": 4
+        },
+        "5": {
+          "coefficients_B_r_degree_minus_r": [
+            "4749879782600368954258619231778932129/6441274000935901652595787887975",
+            "47631880389853396015734357982898658/9542628149534669114956722797",
+            "609921367688497843152591397259871668/143139422243020036724350841955",
+            "609921367688497843152591397259871668/143139422243020036724350841955",
+            "47631880389853396015734357982898658/9542628149534669114956722797",
+            "4749879782600368954258619231778932129/6441274000935901652595787887975"
+          ],
+          "negative_count": 0,
+          "zero_count": 0
+        },
+        "6": {
+          "coefficients_B_r_degree_minus_r": [
+            "444891964496756423284327381813581053987/6441274000935901652595787887975",
+            "7085372691493689955114462334407605084/238565703738366727873918069925",
+            "172967724868342826168339739391036789553/1288254800187180330519157577595",
+            "63945463445198559912206002857678374404/36807280005348009443404502217",
+            "172967724868342826168339739391036789553/1288254800187180330519157577595",
+            "7085372691493689955114462334407605084/238565703738366727873918069925",
+            "444891964496756423284327381813581053987/6441274000935901652595787887975"
+          ],
+          "negative_count": 0,
+          "zero_count": 0
+        },
+        "7": {
+          "coefficients_B_r_degree_minus_r": [
+            "99",
+            "20507369536765954748444236774847553807658/6441274000935901652595787887975",
+            "13955675176695029129515930004637407169643/715697111215100183621754209775",
+            "19746159046202853011358401258557505483698/1288254800187180330519157577595",
+            "19746159046202853011358401258557505483698/1288254800187180330519157577595",
+            "13955675176695029129515930004637407169643/715697111215100183621754209775",
+            "20507369536765954748444236774847553807658/6441274000935901652595787887975",
+            "99"
+          ],
+          "negative_count": 0,
+          "zero_count": 0
+        }
+      },
+      "pair_row_actual_values": {
+        "B_0_14": "24214789087748040289824016841430110546676166231453/614068121422555957547465111986950",
+        "B_12_1": "143645070345642531998777079460985238799008109127/2249333778104600577096941802150",
+        "B_14_0": "24214789087748040289824016841430110546676166231453/614068121422555957547465111986950",
+        "B_1_12": "143645070345642531998777079460985238799008109127/2249333778104600577096941802150",
+        "B_6_6": "10596975107554346833558262834806888834758687975793/6441274000935901652595787887975",
+        "B_7_7": "2073764430199912836255915722499006889917738743256958/2147091333645300550865262629325"
+      },
+      "pair_row_slacks": {
+        "B_0_14_minus_4158": "24214789087745486994575141853758628186740524493353/614068121422555957547465111986950",
+        "B_12_1_minus_693": "143645070345640973210468852972785310618339219177/2249333778104600577096941802150",
+        "B_14_0_minus_4158": "24214789087745486994575141853758628186740524493353/614068121422555957547465111986950",
+        "B_1_12_minus_693": "143645070345640973210468852972785310618339219177/2249333778104600577096941802150",
+        "B_6_6_minus_1386": "10596975107554337905952497537647198336996675242443/6441274000935901652595787887975",
+        "B_7_7_minus_8316": "2073764430199912818400704191904687508922214717790258/2147091333645300550865262629325"
+      },
+      "star_pair_forcing": {
+        "adjacent_star_pairs": {
+          "count": 693,
+          "difference_composition": [
+            6,
+            6
+          ],
+          "lower_rows": {
+            "B_12_1": 693,
+            "B_1_12": 693,
+            "B_6_6": 1386
+          },
+          "sum_compositions": [
+            [
+              12,
+              1
+            ],
+            [
+              1,
+              12
+            ]
+          ]
+        },
+        "distinctness_reason": "support recovers the center or unordered center pair",
+        "no_extra_total_degree_seven_pair_row": true,
+        "nonadjacent_star_pairs": {
+          "count": 4158,
+          "difference_composition": [
+            7,
+            7
+          ],
+          "lower_rows": {
+            "B_0_14": 4158,
+            "B_14_0": 4158,
+            "B_7_7": 8316
+          },
+          "sum_compositions": [
+            [
+              14,
+              0
+            ],
+            [
+              0,
+              14
+            ]
+          ]
+        },
+        "single_stars": {
+          "B_0_7_lower": 99,
+          "B_7_0_lower": 99
+        }
+      }
+    },
+    "endpoint_existence_proved": false,
+    "graph_constructed": false,
+    "linear_code_constructed": false,
+    "local_star_polygon": {
+      "all_lifts_nonnegative_and_exact": true,
+      "allowed_patterns": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "convex_hull_vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "facet_inequalities": [
+        "r+s<=7",
+        "2r+s<=12",
+        "r+2s<=12"
+      ],
+      "oriented_witness_cells_lifted": 23,
+      "primal_scaled_facets": [
+        "a+b<=231",
+        "2a+b<=396",
+        "a+2b<=396"
+      ],
+      "profiles": {
+        "0,114": {
+          "0,0": "14/33",
+          "0,6": "19/33"
+        },
+        "0,120": {
+          "0,0": "13/33",
+          "0,6": "20/33"
+        },
+        "108,111": {
+          "0,0": "4/77",
+          "2,5": "113/231",
+          "5,2": "106/231"
+        },
+        "111,108": {
+          "0,0": "4/77",
+          "2,5": "106/231",
+          "5,2": "113/231"
+        },
+        "111,111": {
+          "0,0": "3/77",
+          "2,5": "37/77",
+          "5,2": "37/77"
+        },
+        "114,0": {
+          "0,0": "14/33",
+          "6,0": "19/33"
+        },
+        "120,0": {
+          "0,0": "13/33",
+          "6,0": "20/33"
+        },
+        "162,36": {
+          "0,0": "1/11",
+          "5,2": "6/11",
+          "6,0": "4/11"
+        },
+        "168,60": {
+          "5,2": "10/11",
+          "6,0": "1/11"
+        },
+        "18,189": {
+          "0,6": "8/11",
+          "2,5": "3/11"
+        },
+        "189,18": {
+          "5,2": "3/11",
+          "6,0": "8/11"
+        },
+        "21,6": {
+          "0,0": "29/33",
+          "5,2": "1/11",
+          "6,0": "1/33"
+        },
+        "3,48": {
+          "0,0": "3/4",
+          "0,6": "9/44",
+          "2,5": "1/22"
+        },
+        "36,162": {
+          "0,0": "1/11",
+          "0,6": "4/11",
+          "2,5": "6/11"
+        },
+        "45,51": {
+          "0,0": "45/77",
+          "2,5": "5/21",
+          "5,2": "41/231"
+        },
+        "48,3": {
+          "0,0": "3/4",
+          "5,2": "1/22",
+          "6,0": "9/44"
+        },
+        "51,45": {
+          "0,0": "45/77",
+          "2,5": "41/231",
+          "5,2": "5/21"
+        },
+        "6,21": {
+          "0,0": "29/33",
+          "0,6": "1/33",
+          "2,5": "1/11"
+        },
+        "60,168": {
+          "0,6": "1/11",
+          "2,5": "10/11"
+        },
+        "75,75": {
+          "0,0": "27/77",
+          "2,5": "25/77",
+          "5,2": "25/77"
+        },
+        "75,78": {
+          "0,0": "26/77",
+          "2,5": "80/231",
+          "5,2": "73/231"
+        },
+        "78,75": {
+          "0,0": "26/77",
+          "2,5": "73/231",
+          "5,2": "80/231"
+        },
+        "78,78": {
+          "0,0": "25/77",
+          "2,5": "26/77",
+          "5,2": "26/77"
+        }
+      }
+    },
+    "masses": {
+      "aggregate_cells": 13,
+      "all_masses_strictly_positive": true,
+      "marked_singular_cell": {
+        "composition": [
+          36,
+          162
+        ],
+        "mass": "231"
+      },
+      "projective_scalar_pair_total": 88573,
+      "type_totals": {
+        "norm_minus": "29403",
+        "norm_plus": "29646",
+        "singular": "29524"
+      },
+      "typed_cells": 16,
+      "typed_scalar_pair_masses": {
+        "norm_minus": {
+          "0,120": "246906431636332574951131748038647/477131407476733455747836139850",
+          "108,111": "2596662164776425133740490435333/9542628149534669114956722797",
+          "18,189": "45076153929327260205645509344698/906549674205793565920888665715",
+          "45,51": "11255851000663540594262153162806/143139422243020036724350841955",
+          "75,75": "82555981974216485422614393790451983/13598245113086903488813329985725",
+          "78,78": "427776412695344432838928992139975/19085256299069338229913445594"
+        },
+        "norm_plus": {
+          "0,114": "4371071297597773098616451861669/1860812489159260477416560945415",
+          "111,111": "149629196671953830109181890067814/1574533644673220403967859261505",
+          "60,168": "9503222436749466474872623889296/238565703738366727873918069925",
+          "75,78": "89985254810156437594770425249185707/3101354148598767462360934909025",
+          "78,78": "259251231196287938560820521790174/524844548224406801322619753835"
+        },
+        "singular": {
+          "3,48": "14411387513622084486137560717167/238565703738366727873918069925",
+          "36,162": "231",
+          "6,21": "151404600678599425990047056072/6816162963953335082111944855",
+          "75,78": "135107001065053933560914945547542/6816162963953335082111944855",
+          "78,78": "2239849573793715820582869720469368/238565703738366727873918069925"
+        }
+      }
+    },
+    "ordinary_macwilliams": {
+      "B0_through_B9": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1133506211803506205652542142416870583/1288254800187180330519157577595",
+        "128695721183467628413491847493859502678/6441274000935901652595787887975",
+        "2838505481185469670092856724737851239748/1288254800187180330519157577595",
+        "4663604609442316344067311937454376126904/61345466675580015739007503695",
+        "1709816449028878689587352739717193500222624/429418266729060110173052525865",
+        "59047773419864449709855906339630440684351204/429418266729060110173052525865"
+      ],
+      "B4_through_B9": "303955951136016513013761953327276372487328891/2147091333645300550865262629325",
+      "all_232_B_rows_at_least_A": true,
+      "all_232_B_rows_nonnegative": true,
+      "minimum_B": "0",
+      "minimum_B_minus_A": "0",
+      "primal_support": {
+        "0": "1",
+        "114": "8742142595195546197232903723338/1860812489159260477416560945415",
+        "120": "246906431636332574951131748038647/238565703738366727873918069925",
+        "150": "165111963948432970845228787580903966/13598245113086903488813329985725",
+        "153": "302917880589511954729973450946634634/3101354148598767462360934909025",
+        "156": "169507716426644346469136811906720961/2624222741122034006613098769175",
+        "198": "462",
+        "207": "90152307858654520411291018689396/906549674205793565920888665715",
+        "219": "5193324329552850267480980870666/9542628149534669114956722797",
+        "222": "299258393343907660218363780135628/1574533644673220403967859261505",
+        "228": "19006444873498932949745247778592/238565703738366727873918069925",
+        "27": "302809201357198851980094112144/6816162963953335082111944855",
+        "51": "28822775027244168972275121434334/238565703738366727873918069925",
+        "96": "22511702001327081188524306325612/143139422243020036724350841955"
+      },
+      "primal_total": "177147",
+      "strictly_exceeds_18018": true
+    },
+    "projective_point_set_constructed": false,
+    "quadratic_geometry": {
+      "class_sizes_S_plus_minus": [
+        29524,
+        29646,
+        29403
+      ],
+      "enumeration_scope": "five canonical quadratic complements, not a graph or code search",
+      "projective_points_enumerated": 88573,
+      "triple_complement_S_plus_minus": {
+        "no_orthogonal_minus": [
+          1120,
+          1080,
+          1080
+        ],
+        "no_orthogonal_plus": [
+          1066,
+          1107,
+          1107
+        ],
+        "one_orthogonal_pair": [
+          1093,
+          1134,
+          1053
+        ],
+        "three_orthogonal_pairs": [
+          1093,
+          1215,
+          972
+        ],
+        "two_orthogonal_pairs": [
+          1093,
+          1134,
+          1053
+        ]
+      }
+    },
+    "status": "VERIFIED_RELAXATION_FEASIBILITY",
+    "typed_moments_and_rational_census": {
+      "all_census_entries_nonnegative": true,
+      "derived_typed_M3": [
+        "15212968663880356644553748079420963812/6816162963953335082111944855",
+        "106939729085464391580886050858889370484/47713140747673345574783613985",
+        "103917586102537843377841862933102768832/47713140747673345574783613985"
+      ],
+      "factorial_moment_order": [
+        "M0",
+        "M1",
+        "M2",
+        "M3"
+      ],
+      "nonintegral_census_classes": [
+        "three_orthogonal_pairs",
+        "two_orthogonal_pairs",
+        "one_orthogonal_pair",
+        "no_orthogonal_plus",
+        "no_orthogonal_minus"
+      ],
+      "orthogonal_pair_incidence": "846384",
+      "orthogonal_wedge_incidence": "114576",
+      "rational_gram_census": {
+        "no_orthogonal_minus": "398058731681237045785655912939722711/429418266729060110173052525865",
+        "no_orthogonal_plus": "151281112285105230584058395337270808/429418266729060110173052525865",
+        "one_orthogonal_pair": "95530879146955891940574034442778796/143139422243020036724350841955",
+        "three_orthogonal_pairs": "7180647277052148633129515561210236/429418266729060110173052525865",
+        "two_orthogonal_pairs": "9219695165864115094599706506625844/143139422243020036724350841955"
+      },
+      "realizable_point_set_asserted": false,
+      "triple_total": "2027795",
+      "typed_factorial_moments": {
+        "norm_minus": [
+          "29403",
+          "2245320",
+          "85771224",
+          "103917586102537843377841862933102768832/47713140747673345574783613985"
+        ],
+        "norm_plus": [
+          "29646",
+          "2301453",
+          "88521741",
+          "106939729085464391580886050858889370484/47713140747673345574783613985"
+        ],
+        "singular": [
+          "29524",
+          "2273271",
+          "87133200",
+          "15212968663880356644553748079420963812/6816162963953335082111944855"
+        ]
+      }
+    }
+  },
+  "format": "wave189-degree7-star-orbit-clean-room-verification-v1",
+  "integrity": {
+    "discovery_checkers_imported_or_executed_by_verifier": false,
+    "failures": [],
+    "files_checked_directly": 16,
+    "nested_source_entries_checked": {
+      "degree7": 10,
+      "orbit": 9
+    },
+    "passed": true,
+    "source_manifest_sha256": {
+      "degree7": "dce4157a05fc20f9b3965ec9830a08f893eeefacdb347b084af13807fa417c90",
+      "orbit": "d62ce505ebbaa7bd3799c05a6f0ac50ed920fdd519044e287bada2cb582e39d2"
+    }
+  },
+  "result_sha256": "d2933fbe3836431f17971ff10807d0a968a8ef85376ea11dce7fda81740e8bdf",
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

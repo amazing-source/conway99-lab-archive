@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "agents/2026-07-23-wave20-n3-63-structural.md": {
+      "bytes": 21905,
+      "sha256": "c24603b3dd00ea9542cfbbd43075060349fc6f5de4cee867c5ce141fb5db1668"
+    },
+    "attempts/wave20-n3-63-structural/exact-results.json": {
+      "bytes": 63099,
+      "sha256": "cd55e820f87501a9e1c6644462aaf114f2b2b8c91438c328146efdf6d8c001da"
+    },
+    "attempts/wave20-n3-63-structural/exact_check.py": {
+      "bytes": 33631,
+      "sha256": "d88213ede4775548dd2670e593de30e04b724de5cb5efcd15f8c295305dafc12"
+    },
+    "attempts/wave20-n3-63-structural/failed-runs.md": {
+      "bytes": 3322,
+      "sha256": "685279b28fcc3479ec08bdc365fdb5ef62423924ee3b848064dd5e664176eb92"
+    },
+    "attempts/wave20-n3-63-structural/test_exact_check.py": {
+      "bytes": 5591,
+      "sha256": "9e1e9876468c4555334e04342be543a60c3b98577fb216b56dcc3d6eee6e3d41"
+    }
+  },
+  "claim_label": "DERIVED",
+  "commands": [
+    ".venv\\Scripts\\python.exe -B -m unittest -v attempts\\wave20-n3-63-structural\\test_exact_check.py",
+    ".venv\\Scripts\\python.exe -B attempts\\wave20-n3-63-structural\\exact_check.py --output attempts\\wave20-n3-63-structural\\exact-results.json",
+    ".venv\\Scripts\\python.exe -B attempts\\wave20-n3-63-structural\\exact_check.py --verify attempts\\wave20-n3-63-structural\\exact-results.json"
+  ],
+  "conditional_n3_63": "EXCLUDED_DERIVED_PENDING_INDEPENDENT_AUDIT",
+  "conway_99_target": "UNKNOWN",
+  "date_utc": "2026-07-23T16:12:28Z",
+  "git_commit": "NO_GIT",
+  "novelty": "UNKNOWN",
+  "q_profiles": 18,
+  "rejected_intermediate_claim": {
+    "claim": "only two q-profiles survive d_K>=4",
+    "status": "REJECTED"
+  },
+  "schema_version": 1,
+  "tests": "14/14 PASS"
+}

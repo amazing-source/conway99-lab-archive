@@ -1,0 +1,482 @@
+% Submission template for CAISc 2026 / arXiv v2.
+% [preamble comment block unchanged]
+
+\documentclass{article}
+
+\PassOptionsToPackage{numbers,compress}{natbib}
+\usepackage[final]{caisc_2026}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{xcolor}
+
+\newtheorem{proposition}{Proposition}
+
+
+\title{A Forced-Structure Reduction and Verifiable Bounds for
+Conway's 99-Graph}
+
+\author{%
+  Aalok Thakkar \\
+  Vachani School of Advanced Computing\\
+  Ashoka University, India\\
+  \texttt{thakkar@ashoka.edu.in} \\
+  \And
+  Simone Severini \\
+  UCL \\
+  \texttt{s.severini@ucl.ac.uk} \\
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Conway's 99-graph problem asks whether a strongly regular graph with parameters
+$\mathrm{srg}(99,14,1,2)$ exists. We develop two complementary lines of
+attack. Fixing one vertex, the conditions $\lambda=1$ and $\mu=2$ force its
+neighbourhood to be a perfect matching and determine every edge between that
+neighbourhood and the remaining vertices. For $(99,14,1,2)$, the unresolved
+part is therefore a constrained $12$-regular graph on $84$ vertices. We encode
+this reduction in CP-SAT and validate it by recovering the unique
+$\mathrm{srg}(9,4,1,2)$. We also prove by exhaustive enumeration that no
+circulant graph on $\mathbb{Z}/99$ satisfies more than $68.0\%$ of the CAISc
+constraints, and we give a validated orbit formulation for prescribed
+automorphisms. We then study the partial-score search problem. Fourteen human-designed search
+configurations reached at most $69.43\%$. Separately, we supplied the scoring
+function to an evolutionary program-search system. It produced a
+degree-preserving $4$-vertex-switch tabu search whose best verified artifact
+scores $70.73\%$. The generated move differs from those used in our own
+searches and crosses a plateau that was stable under them. These results do not resolve the existence problem, but they reduce the exact
+search space and improve the best verified partial construction found in our
+experiments.
+\end{abstract}
+
+\section{Introduction}
+A \emph{strongly regular graph} $\mathrm{srg}(v,k,\lambda,\mu)$ is a
+$k$-regular graph on $v$ vertices in which every adjacent pair has exactly
+$\lambda$ common neighbours and every non-adjacent pair has exactly $\mu$.
+The parameter set $(99,14,1,2)$ was recorded by Biggs in
+1971~\cite{biggs1971}, and Conway later offered \$1000 for either a
+construction or a proof of non-existence~\cite{conway2017,wiki99}. The problem
+remains open. Its parameters satisfy the standard feasibility tests, including
+the eigenvalue, Krein, and absolute-bound conditions~\cite{brouwertab,bcn1989},
+while any solution would have to be non-vertex-transitive~\cite{cesarz2023}.
+
+The CAISc 2026 Verifiable Problems track~\cite{caiscproblem} scores a submitted
+$99\times99$ symmetric $0/1$ matrix by the fraction of graph constraints it
+satisfies. There are $99$ degree constraints and one common-neighbour
+constraint for each unordered pair, giving
+\[
+99+\binom{99}{2}=4950
+\]
+constraints in total. A score of $4950$ is exactly a solution to Conway's
+problem.
+
+We approach the problem in two ways.
+
+First, we use the parameters themselves to reduce the search space. For any
+$\mathrm{srg}(v,k,1,2)$, fixing one vertex forces its neighbourhood to be a
+perfect matching. The outer vertices can then be identified with the
+non-matched pairs in that neighbourhood, which determines all adjacency
+between the inner and outer layers. For $(99,14,1,2)$, the only remaining
+freedom is a constrained $12$-regular graph on $84$ vertices. We encode this
+reduced problem in CP-SAT and validate the construction on
+$\mathrm{srg}(9,4,1,2)$.
+
+We also study restricted symmetry classes. An exhaustive search over circulant
+graphs proves a maximum score of $68.0\%$. We then build an orbit model for
+prescribed automorphisms, covering both fixed-point-free and
+single-fixed-point actions. The model is validated on known strongly regular
+graphs and applied to the open single-fixed-point $\mathbb{Z}_7$ case.
+
+Second, we study the partial-score problem directly. We tested fourteen
+human-designed search configurations using local search, tabu search,
+simulated annealing, evolutionary search, and CP-SAT neighbourhood
+re-optimisation. Their best score was $69.43\%$.
+
+We then ran a separate program-search experiment. The CAISc scoring function
+was supplied as the fitness harness to an evolutionary program-search
+system~\cite{alphaevolve}. It was not given the forced-structure reduction or
+our hand-designed move operators. The generated program used a
+degree-preserving $4$-vertex edge switch together with tabu memory and large
+perturbations, and reached a verified score of $70.73\%$.
+
+The improvement is useful because it shows that the earlier plateau came from
+the search neighbourhoods we were using, not from a known bound on the
+problem. The exact results and the heuristic results should therefore be read
+separately: the circulant bound and structural reduction are proved, while the
+$70.73\%$ result is a verified search artifact.
+
+The exact components use SAT, SMT, and CP-SAT
+solvers~\cite{biere2021handbook,demoura2008z3,perron2024ortools}. All search
+artifacts are evaluated with the same scoring function.
+
+\section{Exact structural results}
+
+\subsection{Problem and scoring metric}
+Let $A$ be the adjacency matrix and let $C=A^2$, so that $C_{ij}$ counts the
+number of common neighbours of vertices $i$ and $j$. The strongly regular
+conditions are equivalent to the matrix identity
+\[
+A^2+A-12I=2J,
+\]
+where $J$ is the all-ones matrix. The CAISc score therefore counts how many of
+the $4950$ scalar instances of this identity are satisfied.
+
+There is an immediate reason that low-order moment arguments do not settle the
+problem. For any $14$-regular graph,
+\[
+\sum_{i<j}C_{ij}
+=\sum_v\binom{\deg v}{2}
+=99\binom{14}{2}
+=9009.
+\]
+The target common-neighbour counts sum to
+\[
+693\cdot1+4158\cdot2=9009,
+\]
+exactly the same value. The feasible spectrum also fixes
+$\sum_{i<j}C_{ij}^2=17325$, again matching the target. Thus neither the first
+nor the second moment yields a contradiction. This also matters
+computationally: once the graph is close to degree $14$, the $\lambda$- and
+$\mu$-constraints are tightly coupled. One cannot improve $\mu$ cheaply in
+isolation, because the total common-neighbour budget is already essentially
+fixed. High partial scores therefore force the graph to look increasingly
+close to strongly regular.
+
+\subsection{An exhaustive bound for circulant graphs}
+A circulant graph on $\mathbb{Z}/99$ is determined by a symmetric connection
+set $S=-S$ with $|S|=14$, so it is automatically $14$-regular. By
+vertex-transitivity, all pairs in the same difference class $\{d,-d\}$ behave
+identically. The score is therefore
+\[
+99+99\cdot(\text{satisfied difference classes}),
+\]
+over the $49$ nonzero difference classes. A class $d$ is satisfied exactly
+when either $d\in S$ and
+\[
+\lambda(d)=|S\cap(S+d)|=1,
+\]
+or $d\notin S$ and $\lambda(d)=2$. A perfect circulant would be a
+$(99,14,1,2)$ partial difference set, which is known not to
+exist~\cite{ma1994}. We therefore ask for the best partial one.
+
+\begin{proposition}[Exhaustive]\label{prop:circ}
+Over all $\binom{49}{7}=85{,}900{,}584$ symmetric connection sets, the maximum
+number of satisfied difference classes is $33$. Hence the best circulant score
+is
+\[
+99+99\cdot33=3366/4950=68.0\%.
+\]
+\end{proposition}
+
+We verified Proposition~\ref{prop:circ} by complete enumeration using batched
+FFT autocorrelation, which takes roughly $100$ seconds on a laptop. One
+optimal connection set is
+\[
+S=\{\pm1,\pm2,\pm4,\pm15,\pm27,\pm36,\pm45\}.
+\]
+It satisfies all $99$ degree constraints, $198/693$ of the $\lambda$
+constraints, and $3069/4158$ of the $\mu$ constraints. The algebra strongly
+concentrates the non-edge common-neighbour counts around $2$: the $\mu$
+success rate is $73.8\%$, compared with roughly $27\%$ for a random regular
+graph. The non-cyclic abelian group of order $99$,
+$\mathbb{Z}_3\times\mathbb{Z}_3\times\mathbb{Z}_{11}$, reaches the same
+$33/49$ ceiling.
+
+\subsection{The forced-structure reduction, validated on \texorpdfstring{$\mathrm{srg}(9,4,1,2)$}{srg(9,4,1,2)}}
+\label{sec:reduction}
+A large part of any $\mathrm{srg}(v,k,1,2)$ is forced once one vertex is fixed.
+Let that vertex be $0$, with neighbourhood
+\[
+N(0)=\{1,\dots,k\}.
+\]
+Because $\lambda=1$, each neighbour of $0$ has exactly one common neighbour
+with $0$. Therefore the subgraph induced by $N(0)$ is a perfect
+matching~\cite{bcn1989}. Without loss of generality, fix this matching as
+\[
+(1,2),(3,4),\dots.
+\]
+
+Now consider a vertex outside $\{0\}\cup N(0)$. Since it is non-adjacent to
+$0$ and $\mu=2$, it must have exactly two neighbours in $N(0)$. Moreover, the
+$\lambda$ and $\mu$ constraints on pairs inside $N(0)$ force the outer
+vertices to be in bijection with the non-matched pairs of neighbours. Thus an
+outer vertex can be labelled by a pair $\{a,b\}$, and its adjacency to the
+inner layer is completely determined: it is adjacent to exactly $a$ and $b$.
+
+The only remaining freedom is the graph induced by the outer vertices. This is
+a $(k-2)$-regular graph on
+\[
+M=\binom{k}{2}-k/2
+\]
+vertices, subject to constraints determined by the pair labels. Let
+$m(2i)=2i+1$ denote the matching partner map, and let $P_u$ be the pair
+label of outer vertex $u$. For two outer vertices $u,v$, let
+$s=|P_u\cap P_v|\in\{0,1\}$. Then:
+if $u\sim v$, the number of common outer neighbours must be $1-s$; if
+$u\not\sim v$, it must be $2-s$. For an inner vertex $a$ and an outer vertex
+$u$, if $a\in P_u$, exactly one outer neighbour of $u$ contains $a$; if
+$a\notin P_u$, then
+\[
+[m(a)\in P_u]
++\#\{\text{outer neighbours of }u\text{ containing }a\}
+=2.
+\]
+
+For $(99,14,1,2)$, the entire problem therefore reduces to a $12$-regular
+graph on $84$ outer vertices.
+
+We encode the reduced problem in CP-SAT and add lex-leader symmetry breaking
+for the group $B_{k/2}$ that permutes the $k/2$ matched pairs and swaps the
+two vertices within each pair. For $k=14$, this group has order
+\[
+2^7\cdot7!=645{,}120,
+\]
+and we use its $13$ natural generators. The full reduced model contains
+$379{,}987$ Boolean variables and $761{,}221$ constraints.
+
+We validated the complete pipeline on the smaller case
+$\mathrm{srg}(9,4,1,2)$, where it recovers the unique graph in milliseconds,
+both with and without symmetry breaking. On the $(99,14,1,2)$ instance, the
+solver neither finds a graph nor proves infeasibility. That is exactly what
+one should expect for an open problem, so we treat the encoding as a validated
+framework rather than as evidence for existence or non-existence.
+
+\subsection{Prescribed automorphisms}
+A natural next step is to ask whether the graph exists under a prescribed
+automorphism. Cesarz and Woldar~\cite{cesarz2023}, building on the
+orbit-matrix method of Behbahani and Lam~\cite{behbahani2011}, show that the
+automorphism group of any putative Conway 99-graph is highly constrained:
+orders $9$ and $11$ are excluded; if $2\mid|G|$, then $|G|\mid6$; and if
+$7\mid|G|$, then $G\cong\mathbb{Z}_7$. Order $7$ is restricted but not ruled
+out, so the existence of a $\mathbb{Z}_7$-symmetric
+$\mathrm{srg}(99,14,1,2)$ remains open.
+
+Because non-fixed vertices under an order-$7$ action lie in $7$-cycles, the
+number of fixed points satisfies
+\[
+f\equiv99\equiv1\pmod7.
+\]
+The smallest possibility is therefore one fixed point together with fourteen
+orbits of size $7$.
+
+We built an orbit-based existence encoding for a prescribed automorphism of
+prime order $p$. With $B=99/p$ orbits, an invariant graph is
+block-circulant: adjacency between $(i,a)$ and $(j,b)$ depends only on
+$(i,j,b-a\bmod p)$. For each pair class, the strongly regular condition
+collapses to
+\[
+\textit{common}+\textit{adjacency}=2,
+\]
+which simultaneously encodes $\lambda=1$ and $\mu=2$.
+
+The framework supports both fixed-point-free actions and actions with a single
+fixed point. In the latter case, the fixed vertex must be adjacent to complete
+orbits; for $p=7$, the degree condition $14=2\cdot7$ forces it to join exactly
+two such orbits. We validated the implementation by reconstructing and
+re-verifying $\mathrm{srg}(9,4,1,2)$ under both a fixed-point-free
+$\mathbb{Z}_3$ action and an order-$2$ action with one fixed point, and by
+recovering the Paley graph $\mathrm{srg}(13,6,2,3)$ under an order-$3$ action
+with one fixed point.
+
+The most interesting open case is the single-fixed-point
+$\mathbb{Z}_7$ model. A satisfying assignment would construct the graph under
+this symmetry; an infeasibility certificate would eliminate the case. In our
+experiments, however, CP-SAT returned \textsc{unknown} even after a
+$48$-hour run on $14$ cores. The fixed-point-free $\mathbb{Z}_3$ model, with
+$33$ orbits, likewise remained \textsc{unknown} within $1800$ seconds.
+
+We regard this as a negative result about the method rather than about the
+graph. Even on a structured subproblem that specialised orbit-matrix methods
+can in principle enumerate, the general-purpose CP-SAT model did not decide
+the instance. The fact that the outcome persisted across a $96\times$ larger
+time budget suggests that the main limitation is structural rather than
+simply insufficient runtime. This points toward more specialised
+orbit-matrix and eigenvalue-interlacing machinery.
+
+\section{Heuristic search and program search}
+\label{sec:heuristic}
+For general asymmetric graphs, we built an $O(\deg)$ incremental search engine
+that maintains the adjacency matrix $A$, the common-neighbour matrix
+$C=A^2$, the squared error
+\[
+\mathrm{SE}=\sum_{i<j}(t_{ij}-C_{ij})^2,
+\]
+where $t_{ij}=1$ for edges and $2$ for non-edges, and the exact-match score.
+This squared-error objective was also used in an earlier evolutionary
+approach~\cite{hutnyk2019}. With these quantities cached, a single edge
+toggle can be updated in roughly $O(14)$ time.
+
+The exact-match score by itself is extremely flat: many local moves leave it
+unchanged, giving little guidance to local search. We therefore optimise a
+blended objective
+\[
+O(A)=\text{real}(A)-\alpha\,\mathrm{SE}(A),
+\]
+where the exact score remains primary and the squared-error term supplies a
+direction across plateaus. We combine this with an island-model evolutionary
+algorithm and degree-preserving crossover.
+
+Across fourteen human-designed configurations
+(Table~\ref{tab:methods}, top block), the best scores fell between
+$68.0\%$ and $69.43\%$. High-scoring solutions consistently sit near
+$\lambda\approx53\%$ and $\mu\approx72\%$. The optimal circulant is a strict
+$2$-opt local maximum, and large-neighbourhood CP-SAT re-optimisation over
+$14$-vertex chunks produces only lateral moves. Starting from the
+$69.43\%$ artifact, a noisier min-conflicts run accepted
+$1.57\times10^6$ moves without gaining even one additional satisfied
+constraint.
+
+\paragraph{An evolutionary-code-search program reaches $70.73\%$.}
+We therefore ran a separate program-search experiment. The CAISc scoring
+function was supplied as the fitness harness to an evolutionary program-search
+system~\cite{alphaevolve}; the system was not given our forced-structure
+reduction or our hand-designed move operators. The generated program produced a
+different search strategy whose best verified artifact scores
+\[
+3501/4950=70.73\%.
+\]
+Every candidate returned by the program search was evaluated by the same
+independent scorer used for the human-designed methods.
+
+Its core move is a degree-preserving $4$-vertex edge switch. Given edges
+$uv$ and $xy$, with $x\neq u,v$, $u\not\sim x$, and $v\not\sim y$, it replaces
+$\{uv,xy\}$ by $\{ux,vy\}$. The search is guided by a penalty gradient derived
+from adjacency and common-neighbour deviations, uses a tabu list of length
+$2000$, and applies a large perturbation of $20$--$40$ random switches after
+$150$ stagnant iterations.
+
+This move differs qualitatively from the $2$-opt edge toggles used in our own
+searches. It preserves $14$-regularity by construction and can jump directly
+between configurations that are not adjacent under the simpler move set. In
+practice, that was enough to escape plateaus on which our min-conflicts and
+blended simulated-annealing runs had stalled.
+
+\begin{table}[t]
+  \caption{Representative results across the fifteen configurations we ran
+  (rows group related methods). The fourteen human-designed methods top out
+  at $69.43\%$; the program-search-generated $4$-vertex switch tabu search
+  reaches $70.73\%$.}
+  \label{tab:methods}
+  \centering\small
+  \begin{tabular}{lll}
+    \toprule
+    Method & character & best score \\
+    \midrule
+    Exhaustive circulant ($\mathbb{Z}/99$) & proven bound & 68.0\% \\
+    Cayley search ($\mathbb{Z}_3{\times}\mathbb{Z}_3{\times}\mathbb{Z}_{11}$) & search & 68.0\% \\
+    Block CP-SAT, $\mathbb{Z}/11,\mathbb{Z}/9,\mathbb{Z}/3$ & exact, symmetric & 68.0\% \\
+    Full MaxSAT ($504{,}504$ vars) & exact & 68.0\% \\
+    Degree-preserving 2-opt SA & heuristic (human) & $\approx56\%$ \\
+    Tabu / ILS & heuristic (human) & 69.3\% \\
+    Min-conflicts; blended SA $+$ island EA & heuristic (human) & 69.43\% \\
+    $4$-vertex switch tabu (program-search) & heuristic (generated) & \textbf{70.73\%} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Table~\ref{tab:methods} summarises the frontier. The best artifact satisfies
+all $99$ degree constraints, $549/693$ of the $\lambda$ constraints, and
+$2853/4158$ of the $\mu$ constraints. The earlier $69.43\%$ plateau was a
+strict local optimum under our own $2$-opt-based move sets, but it was not a
+global bound: the generated heuristic crosses it by $64$ constraints.
+
+This suggests that further progress near the $70\%$ level may depend at least
+as much on the geometry of the move set as on the choice of search
+meta-heuristic. The local-optimum landscape appears to have substantial
+structure, and seemingly small changes in the neighbourhood relation can open
+paths that are invisible to simpler local moves.
+
+To our knowledge, no earlier work reports a partial-credit score under the
+track's exact constraint metric. The evolutionary search of
+Hutnyk~\cite{hutnyk2019}, for example, optimised squared error rather than the
+number of satisfied constraints.
+
+\paragraph{Agent trajectory.}
+The coding agent first attempted a full SMT formulation, then moved to CP-SAT
+after the initial model stalled on global structural constraints. That change
+made the circulant enumeration and block models practical and led to the
+forced-structure and orbit formulations reported above. After checking the
+literature on the open status and automorphism restrictions, we restricted the
+paper's claims to independently verifiable results. The final exact-model
+attempt focused on the single-fixed-point $\mathbb{Z}_7$ case and remained
+\textsc{unknown} after $48$ hours. The evolutionary code-search experiment was
+separate: it received only the scoring function as its fitness harness, and
+the returned program was evaluated by the same verifier used for all other
+artifacts.
+
+\section{Discussion and limitations}
+The exact and heuristic results have different meanings.
+
+The circulant bound is exhaustive, and the forced-structure reduction is exact.
+The prescribed-automorphism formulation is also exact as an encoding, although
+general-purpose CP-SAT does not decide the open cases we tested. In particular,
+the single-fixed-point $\mathbb{Z}_7$ model remained \textsc{unknown} after a
+$48$-hour run on $14$ cores.
+
+The $70.73\%$ artifact is a search result, not a bound and not evidence for or
+against existence. Its main significance is that it improves on a stable
+$69.43\%$ plateau reached by our human-designed searches. The generated
+$4$-vertex switch gives the search access to configurations that our earlier
+move sets did not reach directly.
+
+A perfect score of $4950$ would construct the graph. Any provable global upper
+bound below $4950$ would prove non-existence. For that reason, sufficiently
+strong exact progress on the scoring problem eventually becomes the original
+open problem.
+
+\section{Conclusion}
+We give several verifiable results on Conway's 99-graph. The main structural result reduces the general
+$\mathrm{srg}(99,14,1,2)$ problem to a constrained $12$-regular graph on
+$84$ vertices. We also prove an exhaustive $68.0\%$ upper bound for circulant graphs and give a validated orbit formulation for prescribed automorphisms. On the search side, fourteen human-designed configurations reached at most
+$69.43\%$. An evolutionary program-search system produced a different
+degree-preserving $4$-vertex-switch tabu search and reached a verified
+$70.73\%$. None of these results settles Conway's problem. They do, however, reduce the
+exact search space and show that the partial-score frontier can still improve
+when the search neighbourhood changes.
+
+\begin{ack}
+AT was supported by the Anusandhan National Research Foundation (ANRF),
+Government of India, under the Prime Minister Early Career Research Grant
+ANRF/ECRG/2025/001136/ENS. We thank the AlphaEvolve
+team~\cite{alphaevolve} at Google DeepMind for access to the
+evolutionary code-search system used to generate the $70.73\%$ heuristic.
+\end{ack}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+\sloppy
+\setlength{\emergencystretch}{3em}
+\hbadness=10000
+\begin{thebibliography}{99}
+\bibitem{behbahani2011} M.\ Behbahani, C.\ Lam. Strongly regular graphs with non-trivial automorphisms. \emph{Discrete Math.}, 2011.
+\bibitem{biere2021handbook} A.\ Biere, M.\ Heule, H.\ van Maaren, T.\ Walsh (eds.). \emph{Handbook of Satisfiability}. IOS Press, 2nd ed., 2021.
+\bibitem{biggs1971} N.\,L.\ Biggs. \emph{Finite Groups of Automorphisms}. Cambridge Univ.\ Press, 1971.
+\bibitem{brouwertab} A.\,E.\ Brouwer. Parameters of strongly regular graphs. Eindhoven Univ.\ of Technology.
+\bibitem{bcn1989} A.\,E.\ Brouwer, A.\,M.\ Cohen, A.\ Neumaier. \emph{Distance-Regular Graphs}. Springer, 1989.
+\bibitem{cesarz2023} P.\,G.\ Cesarz, A.\,J.\ Woldar. On the automorphism group of a putative Conway 99-graph. arXiv:2308.02978, 2023.
+\bibitem{conway2017} J.\,H.\ Conway. Five \$1{,}000 problems (update 2017). OEIS A248380.
+\bibitem{demoura2008z3} L.\ de Moura, N.\ Bj{\o}rner. Z3: An Efficient SMT Solver. In \emph{TACAS 2008}, LNCS 4963, 337--340.
+\bibitem{heule2016pythagorean} M.\,J.\,H.\ Heule, O.\ Kullmann, V.\,W.\ Marek. Solving and Verifying the Boolean Pythagorean Triples Problem via Cube-and-Conquer. In \emph{SAT 2016}, LNCS 9710, 228--245.
+\bibitem{hutnyk2019} C.\ Hutnyk. I've got 99 vertices but a solution to Conway's problem ain't one. Directed Reading Program, McGill University, 2019.
+\bibitem{konev2015erdos} B.\ Konev, A.\ Lisitsa. A SAT Attack on the Erd{\H o}s Discrepancy Conjecture. \emph{Theoretical Computer Science}, 574:33--49, 2015.
+\bibitem{ma1994} S.\,L.\ Ma. A survey of partial difference sets. \emph{Des.\ Codes Cryptogr.}, 1994.
+\bibitem{caiscproblem} Siddhartha Mahajan. Conway's 99-Graph. Reviewed by Dr.\ Ankan Pal. CAISc 2026 Verifiable Problems Track, 2026. \url{https://caisc2026.github.io/verifiable-problems/?problem=conways-99-graph}
+\bibitem{perron2024ortools} L.\ Perron, F.\ Didier. CP-SAT. Google OR-Tools. \url{https://developers.google.com/optimization/cp/cp_solver/}, 2024.
+\bibitem{alphaevolve} A.\ Novikov et al. AlphaEvolve: A coding agent for scientific and algorithmic discovery. Google DeepMind, 2025.
+\bibitem{mobius2023} A.\ Thakkar et al. M{\"o}bius: Synthesizing Relational Queries with Recursive and Invented Predicates. \emph{Proc.\ ACM Program.\ Lang.} 7 (OOPSLA), 2023.
+\bibitem{thakkar2021} A.\ Thakkar et al. Example-Guided Synthesis of Relational Queries. In \emph{PLDI 2021}.
+\bibitem{synt2020} A.\ Thakkar et al. Modular Synthesis of Reactive Systems. In \emph{SYNT 2020}.
+\bibitem{wiki99} Wikipedia contributors. Conway's 99-graph problem. \emph{Wikipedia}.
+\end{thebibliography}
+
+\end{document}

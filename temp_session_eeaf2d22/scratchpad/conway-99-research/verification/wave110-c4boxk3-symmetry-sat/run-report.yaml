@@ -1,0 +1,52 @@
+role: verifier
+date_utc: 2026-07-28T04:15:45Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: VERIFIED
+verdict: VERIFIED_WITH_EVIDENCE_BOUNDARY
+scope: >-
+  Independently verify the frozen Wave 110 C4 box K3 conditional extension
+  encoding, lex-CNF, simultaneous same-pattern row-lex theorem, X0 branch
+  coverage, exact submission counts, raw-log provenance, RAM reserve, and
+  fail-closed bounded chronology.
+inputs:
+  - path: attempts/wave110-c4boxk3-symmetry-sat/package-manifest.sha256
+    sha256: 1cef4ea7a81e844f10a56ccb1b5a5e0c4c7414b4efc766c486cdc666de8940ea
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+method: >-
+  Freeze and validate all discovery bytes; reconstruct C4 box K3 incidence
+  data and submission counts independently; truth-table the actual lex-CNF;
+  prove simultaneous completeness with one shared superincreasing orbit
+  potential; exhaust all labelled X0 graphs; verify archived hashes; rerun
+  discovery tests and four sequential 45-second branches.
+command: >-
+  python -B verification/wave110-c4boxk3-symmetry-sat/independent_verify.py
+  && python -B -m unittest discover -s
+  verification/wave110-c4boxk3-symmetry-sat -p "test_*.py" -v
+  && python -B -m unittest discover -s
+  attempts/wave110-c4boxk3-symmetry-sat -p "test_*.py" -v
+outputs:
+  - path: verification/wave110-c4boxk3-symmetry-sat/independent-results.json
+    sha256: fdea51c3e70badc93af0c4c92f7eb3f66b5ebcaa046e5777730620f0ea1fc8e2
+    claim_label: VERIFIED
+  - path: verification/wave110-c4boxk3-symmetry-sat/verification-report.md
+    sha256: c985d1d6ecd6dda818153bac25520f50965f21b0057fa4cb1dcf89bac880a59b
+    claim_label: VERIFIED
+  - path: verification/wave110-c4boxk3-symmetry-sat/rerun-branch0-45s.json
+    sha256: 518232b0a2308ea9157bff0363e459d1f5c5ece257cc7dea618a243166a71e44
+    claim_label: UNKNOWN
+  - path: verification/wave110-c4boxk3-symmetry-sat/rerun-branch1-45s.json
+    sha256: 3217627d66f0846836053283a6af90327a85ec63c77286fef1f954fa114e0c8e
+    claim_label: UNKNOWN
+  - path: verification/wave110-c4boxk3-symmetry-sat/rerun-branch2-45s.json
+    sha256: e6e7f929a09822a479b44400325d803d290ff10f63f2f6131139a330bf162b2c
+    claim_label: UNKNOWN
+  - path: verification/wave110-c4boxk3-symmetry-sat/rerun-branch3-45s.json
+    sha256: 721f55eec49440ba9d528bd4b353408bf5a2b3eb0f24c676594856a82ad897d5
+    claim_label: UNKNOWN
+limitations:
+  - The reduction is conditional on the induced C4 box K3 motif.
+  - Archived RAM values are authenticated self-reported telemetry.
+  - All four archived and all four fresh runs timed out and remain UNKNOWN.
+  - No SAT graph or independently replayable UNSAT certificate exists.
+  - No graph, motif exclusion, Conway-99 resolution, or novelty claim follows.

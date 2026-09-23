@@ -1,0 +1,60 @@
+role: construction
+date_utc: "2026-07-24T00:04:30Z"
+git_commit: "2ac11809fafee7ab752965ae49a96e922859b5ee"
+claim_label: CANDIDATE
+scope: >-
+  Explicit even positive-definite rank-44 determinant-nine S with no
+  orthogonal A2 direct summand, plus complete S,Q,G,B,C matrices satisfying
+  the h=9 n3=708 arithmetic/lattice relaxation. No primitive embedding,
+  projector, Schur-square origin, graph, or target realization is asserted.
+inputs:
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268"
+  verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md: "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8"
+  verification/wave24-n3-708-index/survivor-certificate.json: "a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2"
+  verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md: "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de"
+  verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md: "5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3"
+  verification/wave26-a2-cubic-obstruction/2026-07-23T231001Z-audit.md: "883f48e70336b87955f5c2a115ac8b137169310c6f5ef91fe4581cb1b6c10465"
+method: >-
+  Construct S=E8^4 orthogonal_sum E6^2; completely enumerate its roots by
+  exact reverse-LDL branch and bound; exclude a hidden orthogonal A2 direct
+  summand through root-component sizes; and construct Q with a rank-one
+  E6-dual projector that yields endpoint trace 60.
+restrictions:
+  - "S is fixed to E8^4 orthogonal_sum E6^2."
+  - "Q is block diagonal; no cross-block entries are searched."
+  - "The E6 rank-one seed scan is limited to {-1,0,1}^6 modulo sign."
+  - "The same E6 block is repeated twice."
+  - "No target automorphism is assumed."
+command: |-
+  cd attempts/wave27-a2free-construction
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  attempts/wave27-a2free-construction/exact_check.py: "1bd20f820a5d4467f29860a03a93c4ef3192bb9df4b1c87901080ffa8b793f1e"
+  attempts/wave27-a2free-construction/test_exact_check.py: "7693d905bd142c34e8552f93c87b253621dfc6e6f94e1beec65e8b688eb8568d"
+  attempts/wave27-a2free-construction/exact-results.json: "3b1d30b6110d937f1bd4bb9ff570419625063afc5c0915382baa2466d349946d"
+  attempts/wave27-a2free-construction/input-freeze.sha256: "19beda0a2cfd430bde00d39c9371b9f76df36b7e3ee9ee612b73db21bae43f93"
+  attempts/wave27-a2free-construction/failed-routes.md: "724e2daf4604cd7fb779b686acc9bdf5b6a1398ed020846bcbebc0968482e120"
+test_summary:
+  tests_run: 15
+  failures: 0
+  errors: 0
+  deterministic_regeneration: PASS
+matrix_facts:
+  rank: 44
+  detS_h: 9
+  detQ: 9
+  detB: 81
+  traceB: 60
+  traceC: 8
+  traceC2: 32
+  minimumG: 28
+  orthogonal_A2_direct_summand_in_S: false
+limitations:
+  - "Construction-agent candidate pending a fresh independent verifier."
+  - "Embedded A2 root subsystems occur; only an orthogonal A2 summand is excluded."
+  - "The bounded seed scan is not a classification of forms or Q."
+  - "No primitive embedding or 231-row projector frame is supplied."
+  - "No W=M o M Schur-square origin or cubic tensor is supplied."
+  - "A separate cubic-tensor scout may obstruct the omitted projector origin."
+  - "n3=708 and Conway-99 remain UNKNOWN."

@@ -1,0 +1,306 @@
+{
+  "claim_label": "VERIFIED",
+  "comparison": {
+    "clarifications": [
+      "O^-(k,7) compatibility is only a local necessary condition; it does not construct U, K, D, or a graph.",
+      "Rootlessness uses the ambient coordinate lattice and the zero diagonal/0-1 entries of the unknown adjacency D."
+    ],
+    "corrections": [],
+    "discovery_claims_matched": true
+  },
+  "format": "wave128-independent-verification-v1",
+  "gauss_profiles": {
+    "K": {
+      "2": {
+        "denominator": 8,
+        "distinct_values": 8,
+        "order": 4096,
+        "phase": "+1",
+        "remainder_sha256": "c8e483784b7986c0060e02ced9b58a0783f441339b4a88c4df8e6c795ba2e781"
+      },
+      "3": {
+        "denominator": 9,
+        "distinct_values": 6,
+        "order": 81,
+        "phase": "-1",
+        "remainder_sha256": "f071912aafe500a488e28e899d7e44e09551e4d77c7d7a29e9eb69b7146f6daa"
+      },
+      "5": {
+        "denominator": 1,
+        "distinct_values": 1,
+        "order": 1,
+        "phase": "+1",
+        "remainder_sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+      }
+    },
+    "U": {
+      "2": {
+        "denominator": 512,
+        "distinct_values": 93,
+        "order": 1024,
+        "phase": "-i",
+        "remainder_sha256": "7ccaafd2f9cb24dd6f9e343d6338518aaff8d86b491ffc1d53ba8a3bd297b3b7"
+      },
+      "3": {
+        "denominator": 9,
+        "distinct_values": 9,
+        "order": 729,
+        "phase": "-1",
+        "remainder_sha256": "b167b252e236b3e12ebf7c836c8b1dc29443a64e23619dd39445d8d4b544f90b"
+      },
+      "5": {
+        "denominator": 5,
+        "distinct_values": 5,
+        "order": 25,
+        "phase": "-1",
+        "remainder_sha256": "94f372f6bbbbc5b08916858194b4e68d5562247dff689188247f947c3a36ffb0"
+      }
+    }
+  },
+  "milgram_total_phases": {
+    "K": "+1",
+    "U": "+i"
+  },
+  "nonseven_phases": {
+    "K": "-1",
+    "U": "-i"
+  },
+  "preinspection": {
+    "discovery_entries_checked": 11,
+    "discovery_manifest_sha256": "851df7c40ab2056f6a5f927093707e5e9b578df2b18662e6b95fcf6335033038",
+    "input_manifests_checked": 5
+  },
+  "primary_valuations": {
+    "2": {
+      "K": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "U": [
+        2,
+        8
+      ],
+      "ambient": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        8
+      ]
+    },
+    "3": {
+      "K": [
+        1,
+        1,
+        2
+      ],
+      "U": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "ambient": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    "5": {
+      "K": [],
+      "U": [
+        1,
+        1
+      ],
+      "ambient": [
+        1,
+        1
+      ]
+    },
+    "7": {
+      "K": [],
+      "U": [],
+      "ambient": []
+    }
+  },
+  "reconstruction": {
+    "Lambda_rank": 74,
+    "Q_rank": 13,
+    "det_Lambda": 6191736422400,
+    "det_factorization": "2^22 * 3^10 * 5^2",
+    "pattern_histogram": {
+      "0": 3,
+      "1": 48,
+      "2": 36
+    },
+    "primitive_minor_determinant_abs": 1,
+    "projector_relation_on_discriminant": true,
+    "self_adjointness": true
+  },
+  "rootlessness_audit": {
+    "Lambda_even": true,
+    "chosen_coordinate_values": [
+      0,
+      -1
+    ],
+    "forbidden_eigenvalues": [
+      3,
+      -4
+    ],
+    "min_K_at_least": 4,
+    "min_U_at_least": 4,
+    "norm_two_shape": "+/-(e_i-e_j)"
+  },
+  "rows": [
+    {
+      "O_minus_k_7_exists": true,
+      "det_K": 11025888772659941376,
+      "det_U": 620206243462121702400,
+      "discriminant_length_bounds_hold": true,
+      "excluded": false,
+      "global_rank_r": 28,
+      "k": 16
+    },
+    {
+      "O_minus_k_7_exists": true,
+      "det_K": 540268549860337127424,
+      "det_U": 30390105929643963417600,
+      "discriminant_length_bounds_hold": true,
+      "excluded": false,
+      "global_rank_r": 30,
+      "k": 18
+    },
+    {
+      "O_minus_k_7_exists": true,
+      "det_K": 26473158943156519243776,
+      "det_U": 1489115190552554207462400,
+      "discriminant_length_bounds_hold": true,
+      "excluded": false,
+      "global_rank_r": 32,
+      "k": 20
+    },
+    {
+      "O_minus_k_7_exists": true,
+      "det_K": 1297184788214669442945024,
+      "det_U": 72966644337075156165657600,
+      "discriminant_length_bounds_hold": true,
+      "excluded": false,
+      "global_rank_r": 34,
+      "k": 22
+    },
+    {
+      "O_minus_k_7_exists": true,
+      "det_K": 63562054622518802704306176,
+      "det_U": 3575365572516682652117222400,
+      "discriminant_length_bounds_hold": true,
+      "excluded": false,
+      "global_rank_r": 36,
+      "k": 24
+    },
+    {
+      "O_minus_k_7_exists": true,
+      "det_K": 3114540676503421332511002624,
+      "det_U": 175192913053317449953743897600,
+      "discriminant_length_bounds_hold": true,
+      "excluded": false,
+      "global_rank_r": 38,
+      "k": 26
+    },
+    {
+      "O_minus_k_7_exists": true,
+      "det_K": 152612493148667645293039128576,
+      "det_U": 8584452739612555047733450982400,
+      "discriminant_length_bounds_hold": true,
+      "excluded": false,
+      "global_rank_r": 40,
+      "k": 28
+    },
+    {
+      "O_minus_k_7_exists": true,
+      "det_K": 7478012164284714619358917300224,
+      "det_U": 420638184241015197338939098137600,
+      "discriminant_length_bounds_hold": true,
+      "excluded": false,
+      "global_rank_r": 42,
+      "k": 30
+    }
+  ],
+  "scope": "Conditional necessary discriminant and rootlessness consequences of the frozen Wave 105 motif and verified Wave 109 projector.",
+  "seven_gluing_audit": {
+    "anti_isometric_primary_groups": true,
+    "equal_orders": "7^k",
+    "exponent": 7,
+    "maps": {
+      "K": "(7I-B) Lambda = 7 K* over Z_7",
+      "U": "B Lambda = 7 U* over Z_7"
+    }
+  },
+  "seven_phases": {
+    "K": "-1",
+    "U": "-1"
+  },
+  "seven_types": {
+    "K": "O^-(k,7)",
+    "U": "O^-(k,7)"
+  },
+  "smith_diagonals": {
+    "K": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      8,
+      24,
+      24,
+      72
+    ],
+    "U": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      3,
+      180,
+      11520
+    ],
+    "ambient": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      12,
+      24,
+      24,
+      72,
+      360,
+      11520
+    ]
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "any_rank_row_excluded": false,
+    "literature_novelty": "UNKNOWN",
+    "motif_extension": "UNKNOWN"
+  }
+}

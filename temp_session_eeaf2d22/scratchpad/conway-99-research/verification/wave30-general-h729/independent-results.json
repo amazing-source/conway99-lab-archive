@@ -1,0 +1,923 @@
+{
+  "blind_frozen_discovery_hashes": {
+    "agents/2026-07-24-wave30-general-h729.md": "1bc63f569600bca88e12c977a0bd94ecdd03aa5f3fd8c4f203d4778fbec78efa",
+    "attempts/wave30-general-h729/artifact-manifest.sha256": "29cbbdff1ab167b436db725130d830bfd047beb1c4ba834c51b5a33c3aed690a",
+    "attempts/wave30-general-h729/exact-results.json": "93cc1633d0b25d5f3daecd4c49cbc3b2dc3f754576a3cd5c9364c729a79a7698",
+    "attempts/wave30-general-h729/exact_check.py": "ed8edcbb0febde6d6fbd57776b7696402f832421fa11fb1984fcd57c8369eaff",
+    "attempts/wave30-general-h729/failed-routes.md": "397f74c75a8ae24bedd26fea41c0fb82d03c6611a87627e86aeb29244a586006",
+    "attempts/wave30-general-h729/input-freeze.sha256": "a07c703b20237441b221e13c68be885d01db180871b8496af5d7204e2587793b",
+    "attempts/wave30-general-h729/run-report.yaml": "77232c06827c4c62e7dc6f5380cc4ebe2a3c6d5496fe8c3592589986089e416f",
+    "attempts/wave30-general-h729/test_exact_check.py": "9075d5fd77253850ba09c4655d9cbab135eb32fdd36638dc4aa9051fa49898a2"
+  },
+  "classification_census": [
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 81,
+        "traceC": 4
+      },
+      "R_log_equality_split": {
+        "C_is_integral_idempotent": true,
+        "all_nonzero_C_eigenvalues": 1,
+        "image_Q_even_unimodular_if_nonzero": true,
+        "image_rank": 4,
+        "image_signature_allowed": false,
+        "kernel_Q_even_unimodular_if_nonzero": true,
+        "kernel_rank": 36,
+        "kernel_signature_allowed": false
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 81,
+        "traceC": 4
+      },
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "obstruction": "integral_idempotent_even_unimodular_rank_veto",
+      "rank_A": 4,
+      "rank_R": 40,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 12,
+          "traceB_R": 48
+        }
+      ],
+      "v3_detS_A": 2
+    },
+    {
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "obstruction": "exact_AM_GM_plus_trace_residue",
+      "rank_A": 4,
+      "rank_R": 40,
+      "status": "EXCLUDED",
+      "trace_pairs": [],
+      "v3_detS_A": 4
+    },
+    {
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "obstruction": "exact_AM_GM_plus_trace_residue",
+      "rank_A": 4,
+      "rank_R": 40,
+      "status": "EXCLUDED",
+      "trace_pairs": [],
+      "v3_detS_A": 6
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 27,
+        "traceC": 3
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 243,
+        "traceC": 5
+      },
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "obstruction": "A_characteristic_pseudodeterminant_cap",
+      "rank_A": 12,
+      "rank_R": 32,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 18,
+          "traceB_R": 42
+        }
+      ],
+      "v3_detS_A": 2
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 729,
+        "traceC": 6
+      },
+      "R_log_equality_split": {
+        "C_is_integral_idempotent": true,
+        "all_nonzero_C_eigenvalues": 1,
+        "image_Q_even_unimodular_if_nonzero": true,
+        "image_rank": 2,
+        "image_signature_allowed": false,
+        "kernel_Q_even_unimodular_if_nonzero": true,
+        "kernel_rank": 30,
+        "kernel_signature_allowed": false
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 9,
+        "traceC": 2
+      },
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "obstruction": "integral_idempotent_even_unimodular_rank_veto",
+      "rank_A": 12,
+      "rank_R": 32,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 24,
+          "traceB_R": 36
+        }
+      ],
+      "v3_detS_A": 4
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 729,
+        "traceC": 6
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 9,
+        "traceC": 2
+      },
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "obstruction": "A_characteristic_pseudodeterminant_cap",
+      "rank_A": 12,
+      "rank_R": 32,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 24,
+          "traceB_R": 36
+        }
+      ],
+      "v3_detS_A": 6
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 243,
+        "traceC": 5
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 27,
+        "traceC": 3
+      },
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "obstruction": "R_characteristic_pseudodeterminant_cap",
+      "rank_A": 20,
+      "rank_R": 24,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 30,
+          "traceB_R": 30
+        }
+      ],
+      "v3_detS_A": 2
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 243,
+        "traceC": 5
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 27,
+        "traceC": 3
+      },
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "obstruction": "A_characteristic_pseudodeterminant_cap",
+      "rank_A": 20,
+      "rank_R": 24,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 30,
+          "traceB_R": 30
+        }
+      ],
+      "v3_detS_A": 4
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 6561,
+        "traceC": 8
+      },
+      "R_log_equality_split": {
+        "C_is_integral_idempotent": true,
+        "all_nonzero_C_eigenvalues": 1,
+        "image_Q_even_unimodular_if_nonzero": false,
+        "image_rank": 0,
+        "image_signature_allowed": true,
+        "kernel_Q_even_unimodular_if_nonzero": true,
+        "kernel_rank": 24,
+        "kernel_signature_allowed": true
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 1,
+        "traceC": 0
+      },
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "obstruction": null,
+      "rank_A": 20,
+      "rank_R": 24,
+      "status": "SURVIVES_THIS_REDUCTION",
+      "trace_pairs": [
+        {
+          "traceB_A": 36,
+          "traceB_R": 24
+        }
+      ],
+      "v3_detS_A": 6
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 81,
+        "traceC": 4
+      },
+      "R_log_equality_split": {
+        "C_is_integral_idempotent": true,
+        "all_nonzero_C_eigenvalues": 1,
+        "image_Q_even_unimodular_if_nonzero": true,
+        "image_rank": 4,
+        "image_signature_allowed": false,
+        "kernel_Q_even_unimodular_if_nonzero": true,
+        "kernel_rank": 12,
+        "kernel_signature_allowed": false
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 81,
+        "traceC": 4
+      },
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "obstruction": "integral_idempotent_even_unimodular_rank_veto",
+      "rank_A": 28,
+      "rank_R": 16,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 36,
+          "traceB_R": 24
+        }
+      ],
+      "v3_detS_A": 2
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 81,
+        "traceC": 4
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 81,
+        "traceC": 4
+      },
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "obstruction": "A_characteristic_pseudodeterminant_cap",
+      "rank_A": 28,
+      "rank_R": 16,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 36,
+          "traceB_R": 24
+        }
+      ],
+      "v3_detS_A": 4
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 2187,
+        "traceC": 7
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 3,
+        "traceC": 1
+      },
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "obstruction": "A_characteristic_pseudodeterminant_cap",
+      "rank_A": 28,
+      "rank_R": 16,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 42,
+          "traceB_R": 18
+        }
+      ],
+      "v3_detS_A": 6
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 27,
+        "traceC": 3
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 243,
+        "traceC": 5
+      },
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "obstruction": "A_characteristic_pseudodeterminant_cap",
+      "rank_A": 36,
+      "rank_R": 8,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 42,
+          "traceB_R": 18
+        }
+      ],
+      "v3_detS_A": 2
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 729,
+        "traceC": 6
+      },
+      "R_log_equality_split": {
+        "C_is_integral_idempotent": true,
+        "all_nonzero_C_eigenvalues": 1,
+        "image_Q_even_unimodular_if_nonzero": true,
+        "image_rank": 2,
+        "image_signature_allowed": false,
+        "kernel_Q_even_unimodular_if_nonzero": true,
+        "kernel_rank": 6,
+        "kernel_signature_allowed": false
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 9,
+        "traceC": 2
+      },
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "obstruction": "integral_idempotent_even_unimodular_rank_veto",
+      "rank_A": 36,
+      "rank_R": 8,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 48,
+          "traceB_R": 12
+        }
+      ],
+      "v3_detS_A": 4
+    },
+    {
+      "A_logarithmic_data": {
+        "detB_cap": 729,
+        "traceC": 6
+      },
+      "R_logarithmic_data": {
+        "detB_cap": 9,
+        "traceC": 2
+      },
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "obstruction": "A_characteristic_pseudodeterminant_cap",
+      "rank_A": 36,
+      "rank_R": 8,
+      "status": "EXCLUDED",
+      "trace_pairs": [
+        {
+          "traceB_A": 48,
+          "traceB_R": 12
+        }
+      ],
+      "v3_detS_A": 6
+    }
+  ],
+  "classification_summary": {
+    "excluded": 14,
+    "obstruction_counts": {
+      "A_characteristic_pseudodeterminant_cap": 7,
+      "R_characteristic_pseudodeterminant_cap": 1,
+      "exact_AM_GM_plus_trace_residue": 2,
+      "integral_idempotent_even_unimodular_rank_veto": 4
+    },
+    "surviving": 1,
+    "types": 15
+  },
+  "current_prior_hashes": {
+    "agents/2026-07-24-wave28-orchestrator-brief.md": "6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e",
+    "agents/2026-07-24-wave29-s0-frame-exclusion.md": "e6ae61331a54d53f2a98712296ebac855f45b46de32ff2ec4d85018f2d8a5045",
+    "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+    "verification/wave29-s0-frame-exclusion/audit.md": "dbdcb88bf309cbfa47a42b9fb63dd7cf483e07cac8b92c475094c96be3723b7d"
+  },
+  "endpoint": {
+    "detB_bound": 6525,
+    "detQ_values": [
+      5
+    ],
+    "detS": 729,
+    "frame_scale": 21,
+    "rank": 44,
+    "row_norm": 4,
+    "rows": 231,
+    "traceB": 60
+  },
+  "hostile_controls": {
+    "drop_C_integrality": {
+      "C": "(1/2)*I_12",
+      "cap_violated": true,
+      "claimed_integral_cap": 729,
+      "det_I_plus_2C": 4096,
+      "traceC": 6
+    },
+    "drop_detQ_mod_four": {
+      "additional_integer_candidates_under_bound": [
+        6,
+        7,
+        8
+      ]
+    },
+    "drop_evenness_in_equality_veto": {
+      "odd_unimodular_rank_two_control": "I_2",
+      "signature_rank_veto_fails": true
+    },
+    "drop_self_adjoint_real_spectrum": {
+      "C_block": "[[1,N],[-N,1]]",
+      "complex_eigenvalues": true,
+      "det_I_plus_2C": "9+4*N^2",
+      "nominal_cap": 9
+    },
+    "drop_trace_multiple_six": {
+      "A_cap": 6561,
+      "A_determinant": 3645,
+      "A_traceC": 8,
+      "contradiction_lost": true,
+      "trace_pair": [
+        28,
+        32
+      ],
+      "wave29_type": [
+        12,
+        6
+      ]
+    },
+    "minimum_two": {
+      "mixed_total_norm": 4,
+      "orthogonal_component_norms": [
+        2,
+        2
+      ],
+      "support_split_fails": true
+    },
+    "omit_equality_split": {
+      "survivor_count": 5,
+      "types": [
+        [
+          4,
+          2
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          20,
+          6
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          36,
+          4
+        ]
+      ]
+    },
+    "rational_not_integral_split": {
+      "integral_vector": [
+        1,
+        0
+      ],
+      "projections": [
+        "(1/2,1/2)",
+        "(1/2,-1/2)"
+      ],
+      "rational_orthogonal_lines": [
+        "span(1,1)",
+        "span(1,-1)"
+      ],
+      "rootless_form": "4*I_2",
+      "support_split_fails": true
+    },
+    "use_only_A_cap": {
+      "survivor_count": 6,
+      "types": [
+        [
+          4,
+          2
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          20,
+          6
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          36,
+          4
+        ]
+      ]
+    }
+  },
+  "imported_hypothesis_checks": {
+    "block_inheritance": "Cross blocks of M vanish; entrywise squaring preserves them; Q, B, and C then split exactly.",
+    "block_shell_equation": "4*n_J=21*rank(J)",
+    "determinant_allocation": "Positive integer Q-block determinants multiply to 5.",
+    "equality_split": "An integral self-adjoint idempotent splits Z^s into G-orthogonal image and kernel; Q restricts to even unimodular forms on both nonzero pieces.",
+    "integral_change_of_basis": "A unimodular orthogonal decomposition keeps row coordinates integral and preserves evenness.",
+    "logarithmic_cap": {
+      "c_definition": "c=log(3)-2/3",
+      "c_is_positive": true,
+      "equality_conclusion": "all nonzero eigenvalues of C are 1, hence C^2=C",
+      "log3_series": "2*sum_(k>=0) (1/2)^(2k+1)/(2k+1)",
+      "negative_domain": "for -1/2<x<0, g'(x)<log(3)-2<0 and g(0)=0; the pointwise inequality is strict",
+      "positive_domain_equality_only_at": 1,
+      "positive_domain_identity": "x(1+2x)F'(x)=(x-1)(2*log(3)*x+c)",
+      "strict_rational_bounds": {
+        "implies_log3_gt_2_over_3": true,
+        "implies_log3_lt_2": true,
+        "lower": "1",
+        "upper": "4/3"
+      },
+      "summed_conclusion": "det(I+2C)<=3^trace(C) when C is integral, real diagonalizable, and every eigenvalue is greater than -1/2"
+    },
+    "rank_veto": "Every even positive-definite unimodular Q block has rank divisible by 8.",
+    "row_support": "Every nonzero block component has norm at least 4, so a norm-4 row has exactly one nonzero component.",
+    "trace_residue": "tr(B_J) is a positive multiple of 6 from exact cubic row sums."
+  },
+  "limitations": [
+    "The theorem is conditional on the frozen full endpoint package.",
+    "The one surviving decomposition type is not constructed or excluded.",
+    "The tensor counts are necessary, not an M, X, lattice, or graph.",
+    "No automorphism or finite nonexistence inference is used.",
+    "The submitted package must be repaired and re-verified before publication."
+  ],
+  "multi_block_complements": {
+    "12": [
+      [
+        8,
+        8,
+        8,
+        8
+      ],
+      [
+        8,
+        8,
+        16
+      ],
+      [
+        8,
+        24
+      ],
+      [
+        16,
+        16
+      ],
+      [
+        32
+      ]
+    ],
+    "20": [
+      [
+        8,
+        8,
+        8
+      ],
+      [
+        8,
+        16
+      ],
+      [
+        24
+      ]
+    ],
+    "28": [
+      [
+        8,
+        8
+      ],
+      [
+        16
+      ]
+    ],
+    "36": [
+      [
+        8
+      ]
+    ],
+    "4": [
+      [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      [
+        8,
+        8,
+        8,
+        16
+      ],
+      [
+        8,
+        8,
+        24
+      ],
+      [
+        8,
+        16,
+        16
+      ],
+      [
+        8,
+        32
+      ],
+      [
+        16,
+        24
+      ],
+      [
+        40
+      ]
+    ]
+  },
+  "row_alphabet": [
+    {
+      "cubic_sum": 60,
+      "minus_one": 36,
+      "minus_two": 0,
+      "plus_one": 32,
+      "zero": 162
+    },
+    {
+      "cubic_sum": 54,
+      "minus_one": 33,
+      "minus_two": 1,
+      "plus_one": 31,
+      "zero": 165
+    },
+    {
+      "cubic_sum": 48,
+      "minus_one": 30,
+      "minus_two": 2,
+      "plus_one": 30,
+      "zero": 168
+    },
+    {
+      "cubic_sum": 42,
+      "minus_one": 27,
+      "minus_two": 3,
+      "plus_one": 29,
+      "zero": 171
+    },
+    {
+      "cubic_sum": 36,
+      "minus_one": 24,
+      "minus_two": 4,
+      "plus_one": 28,
+      "zero": 174
+    },
+    {
+      "cubic_sum": 30,
+      "minus_one": 21,
+      "minus_two": 5,
+      "plus_one": 27,
+      "zero": 177
+    },
+    {
+      "cubic_sum": 24,
+      "minus_one": 18,
+      "minus_two": 6,
+      "plus_one": 26,
+      "zero": 180
+    },
+    {
+      "cubic_sum": 18,
+      "minus_one": 15,
+      "minus_two": 7,
+      "plus_one": 25,
+      "zero": 183
+    },
+    {
+      "cubic_sum": 12,
+      "minus_one": 12,
+      "minus_two": 8,
+      "plus_one": 24,
+      "zero": 186
+    },
+    {
+      "cubic_sum": 6,
+      "minus_one": 9,
+      "minus_two": 9,
+      "plus_one": 23,
+      "zero": 189
+    },
+    {
+      "cubic_sum": 0,
+      "minus_one": 6,
+      "minus_two": 10,
+      "plus_one": 22,
+      "zero": 192
+    },
+    {
+      "cubic_sum": -6,
+      "minus_one": 3,
+      "minus_two": 11,
+      "plus_one": 21,
+      "zero": 195
+    },
+    {
+      "cubic_sum": -12,
+      "minus_one": 0,
+      "minus_two": 12,
+      "plus_one": 20,
+      "zero": 198
+    }
+  ],
+  "runtime": {
+    "implementation": "CPython",
+    "python": "3.13.14"
+  },
+  "scope": "Rootless even integral positive-definite rank-44 h=729 S-forms with a nontrivial integral orthogonal decomposition and the full frozen n3=708 projector/Schur endpoint package.",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "all_h729_endpoint_forms": "UNKNOWN",
+    "integrally_indecomposable_h729_forms": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rooted_h729_forms": "UNKNOWN",
+    "surviving_rank20_plus_rank24_type": "UNKNOWN"
+  },
+  "submitted_replay_gate": {
+    "current_applicable_sha256": "dbdcb88bf309cbfa47a42b9fb63dd7cf483e07cac8b92c475094c96be3723b7d",
+    "files_requiring_recorded_repair": [
+      "agents/2026-07-24-wave30-general-h729.md",
+      "attempts/wave30-general-h729/exact_check.py",
+      "attempts/wave30-general-h729/exact-results.json",
+      "attempts/wave30-general-h729/input-freeze.sha256",
+      "attempts/wave30-general-h729/run-report.yaml",
+      "attempts/wave30-general-h729/artifact-manifest.sha256"
+    ],
+    "path": "verification/wave29-s0-frame-exclusion/audit.md",
+    "repair_policy": "Do not overwrite the failed record. Repair the frozen hash and dependent outputs in a new revision, then re-run discovery and independent verification.",
+    "repair_required": true,
+    "status": "FAIL_STALE_FROZEN_INPUT",
+    "submitted_expected_sha256": "4101a394252807fb9de8c39fb32b780bc88410d99e47dfe698da251b49f3e061",
+    "submitted_generator_observation": {
+      "command": "python -B exact_check.py --output <temporary-path>",
+      "output_written": false,
+      "status": "ERROR"
+    },
+    "submitted_unittest_observation": {
+      "command": "python -B -m unittest -v test_exact_check.py",
+      "failure_stage": "setUpClass -> verify_frozen_inputs",
+      "status": "ERROR",
+      "tests_run": 0
+    }
+  },
+  "surviving_boundary": {
+    "decomposition": {
+      "A": {
+        "detB": 3645,
+        "detQ": 5,
+        "detS": 729,
+        "minimum_at_least": 4,
+        "rank": 20,
+        "rows": 105,
+        "traceB": 36
+      },
+      "U": {
+        "B_equals_identity": true,
+        "C_equals_zero": true,
+        "detB": 1,
+        "detQ": 1,
+        "detS": 1,
+        "even_unimodular": true,
+        "minimum_at_least": 4,
+        "rank": 24,
+        "rows": 126,
+        "traceB": 24
+      }
+    },
+    "scalar_hostile_control": {
+      "B_multiplicities": {
+        "1": 13,
+        "3": 6,
+        "5": 1
+      },
+      "C_multiplicities": {
+        "0": 13,
+        "1": 6,
+        "2": 1
+      },
+      "detB": 3645,
+      "scope": "integral scalar-spectrum control, not a lattice or frame",
+      "traceB": 36,
+      "traceC": 8,
+      "traceC2": 10
+    },
+    "tensor_isometry": {
+      "Phi_star_Phi": "I_24",
+      "allowed_minus_two_counts": [
+        9,
+        10,
+        11
+      ],
+      "cauchy_bound_on_absolute_cubic_row_sum": 8,
+      "first_profile": {
+        "n10": 122,
+        "n11": 0,
+        "n9": 4
+      },
+      "internal_directed_totals": {
+        "minus_one": 768,
+        "minus_two": 1256,
+        "plus_one": 2776,
+        "zero": 10950
+      },
+      "last_profile": {
+        "n10": 0,
+        "n11": 61,
+        "n9": 65
+      },
+      "profile_count": 62,
+      "status": "NECESSARY_COUNTS_ONLY",
+      "sum_minus_two_counts": 1256
+    }
+  },
+  "verdict": {
+    "mathematical_implication": "VERIFIED_SCOPED_CONDITIONAL_CLASSIFICATION",
+    "publication_gate": "FAIL_RECORDED_REPAIR_AND_REVERIFICATION_REQUIRED",
+    "submitted_discovery_replay": "FAIL_STALE_FROZEN_INPUT"
+  }
+}

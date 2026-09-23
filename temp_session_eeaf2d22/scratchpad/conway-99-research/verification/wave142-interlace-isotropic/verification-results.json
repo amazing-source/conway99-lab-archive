@@ -1,0 +1,646 @@
+{
+  "IAS_control": {
+    "all_phi_chi_psi_transversals_checked": 27,
+    "formula_pass": true,
+    "matrix": "adjacency(K3)"
+  },
+  "bound_assessment": {
+    "existing_upper": 4158,
+    "improved": false,
+    "ordinary_upper": "156737735",
+    "toggle_upper": "7609140"
+  },
+  "comparison_with_discovery": {
+    "IAS_discovery_8_phi_chi_checks_strengthened_to": 27,
+    "diagonal_toggle_rows_match": true,
+    "local_rows_and_kernel_moment_match": true,
+    "verified_claims": [
+      "four t=6 principal-nullity rows",
+      "six-set kernel-size moment",
+      "ordinary nonnegativity upper 156737735",
+      "all 62x64 diagonal-toggle cells",
+      "toggle upper 7609140",
+      "IAS transversal reduction",
+      "intersection-refined lift requirement in the direct double count"
+    ],
+    "vetoed_claim": "Target-forced principal rank 54 for every subset of sizes 86 through 91; only sizes 92 through 99 are currently supported by the frozen d(im(A))>=8 premise."
+  },
+  "diagonal_toggle_census": {
+    "aggregate_by_nullity": {
+      "0": {
+        "constant": "9983086344",
+        "n3_coefficient": "-64"
+      },
+      "1": {
+        "constant": "22289072652",
+        "n3_coefficient": "272/3"
+      },
+      "2": {
+        "constant": "21890328306",
+        "n3_coefficient": "-16"
+      },
+      "3": {
+        "constant": "12287386650",
+        "n3_coefficient": "-16"
+      },
+      "4": {
+        "constant": "4274538576",
+        "n3_coefficient": "20/3"
+      },
+      "5": {
+        "constant": "888173748",
+        "n3_coefficient": "-5/3"
+      },
+      "6": {
+        "constant": "101286108",
+        "n3_coefficient": "1/3"
+      }
+    },
+    "all_cells_positive_at_4158": true,
+    "denominators_divide_3": true,
+    "per_class_census_sha256": "0fc940a172b8096a88e719a86df4a356db7c71b8ad28e8d7b83dca582017325b",
+    "split_by_psi_count_and_nullity": {
+      "0,0": {
+        "constant": "45845415",
+        "n3_coefficient": "4/3"
+      },
+      "0,2": {
+        "constant": "470213205",
+        "n3_coefficient": "-3"
+      },
+      "0,4": {
+        "constant": "503184528",
+        "n3_coefficient": "4/3"
+      },
+      "0,6": {
+        "constant": "101286108",
+        "n3_coefficient": "1/3"
+      },
+      "1,0": {
+        "constant": "275072490",
+        "n3_coefficient": "8"
+      },
+      "1,1": {
+        "constant": "1230815124",
+        "n3_coefficient": "-8"
+      },
+      "1,2": {
+        "constant": "1590464106",
+        "n3_coefficient": "-10"
+      },
+      "1,3": {
+        "constant": "2247897960",
+        "n3_coefficient": "10"
+      },
+      "1,4": {
+        "constant": "771209208",
+        "n3_coefficient": "-2"
+      },
+      "1,5": {
+        "constant": "607716648",
+        "n3_coefficient": "2"
+      },
+      "2,0": {
+        "constant": "1272826170",
+        "n3_coefficient": "-20"
+      },
+      "2,1": {
+        "constant": "4086929385",
+        "n3_coefficient": "20"
+      },
+      "2,2": {
+        "constant": "5353743780",
+        "n3_coefficient": "17"
+      },
+      "2,3": {
+        "constant": "4092279345",
+        "n3_coefficient": "-25"
+      },
+      "2,4": {
+        "constant": "1726775820",
+        "n3_coefficient": "11"
+      },
+      "2,5": {
+        "constant": "275384340",
+        "n3_coefficient": "-3"
+      },
+      "3,0": {
+        "constant": "2800823256",
+        "n3_coefficient": "-80/3"
+      },
+      "3,1": {
+        "constant": "6999829452",
+        "n3_coefficient": "208/3"
+      },
+      "3,2": {
+        "constant": "7693536312",
+        "n3_coefficient": "-148/3"
+      },
+      "3,3": {
+        "constant": "3800971020",
+        "n3_coefficient": "52/3"
+      },
+      "3,4": {
+        "constant": "1110352320",
+        "n3_coefficient": "-10"
+      },
+      "3,5": {
+        "constant": "5072760",
+        "n3_coefficient": "-2/3"
+      },
+      "4,0": {
+        "constant": "3214909467",
+        "n3_coefficient": "4"
+      },
+      "4,1": {
+        "constant": "6530130684",
+        "n3_coefficient": "-20"
+      },
+      "4,2": {
+        "constant": "5076268659",
+        "n3_coefficient": "39"
+      },
+      "4,3": {
+        "constant": "1826068860",
+        "n3_coefficient": "-27"
+      },
+      "4,4": {
+        "constant": "160561170",
+        "n3_coefficient": "4"
+      },
+      "5,0": {
+        "constant": "1908781182",
+        "n3_coefficient": "-24"
+      },
+      "5,1": {
+        "constant": "2956512636",
+        "n3_coefficient": "32"
+      },
+      "5,2": {
+        "constant": "1546017858",
+        "n3_coefficient": "-18"
+      },
+      "5,3": {
+        "constant": "309410640",
+        "n3_coefficient": "8"
+      },
+      "5,4": {
+        "constant": "2453220",
+        "n3_coefficient": "2"
+      },
+      "6,0": {
+        "constant": "464828364",
+        "n3_coefficient": "-20/3"
+      },
+      "6,1": {
+        "constant": "484855371",
+        "n3_coefficient": "-8/3"
+      },
+      "6,2": {
+        "constant": "160084386",
+        "n3_coefficient": "25/3"
+      },
+      "6,3": {
+        "constant": "10758825",
+        "n3_coefficient": "2/3"
+      },
+      "6,4": {
+        "constant": "2310",
+        "n3_coefficient": "1/3"
+      }
+    },
+    "strongest_nonnegative_upper": {
+      "cell": [
+        3,
+        5
+      ],
+      "upper": "7609140"
+    }
+  },
+  "format": "wave142-independent-verification-v1",
+  "frozen_inputs": {
+    "expected": {
+      "attempts/wave131-binary-lcd-enumerator/exact-results.json": "7d5c32179df697f8ab427d28736f2e1bb91e41f16a0f18f9dc242b7c03091839",
+      "attempts/wave141-bivariate-graph-code/exact-results.json": "351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e",
+      "attempts/wave141-bivariate-graph-code/exact_check.py": "15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204",
+      "attempts/wave21-six-vertex-lp/exact-results.json": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b",
+      "attempts/wave21-six-vertex-lp/exact_check.py": "0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3"
+    },
+    "observed": {
+      "attempts/wave131-binary-lcd-enumerator/exact-results.json": "7d5c32179df697f8ab427d28736f2e1bb91e41f16a0f18f9dc242b7c03091839",
+      "attempts/wave141-bivariate-graph-code/exact-results.json": "351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e",
+      "attempts/wave141-bivariate-graph-code/exact_check.py": "15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204",
+      "attempts/wave21-six-vertex-lp/exact-results.json": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b",
+      "attempts/wave21-six-vertex-lp/exact_check.py": "0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3"
+    },
+    "pass": true
+  },
+  "intersection_refinement": {
+    "B_only_verdict": "The displayed double-counting moment is not a direct coefficient row of B because its summand varies with h inside one B cell.  General symmetric graphs can even have identical full B tables and different interlace tables.  However, the latter collision is outside the target idempotent/even-row subclass, so impossibility of every target-specific B-only elimination remains UNKNOWN.",
+    "K3_plus_K1": {
+      "direct_projection_conclusion": "The summand in the double count is not constant on a B[i,j] fiber, so the displayed moment is not a direct coefficient row in B alone.",
+      "kernel_moment_identity_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "matrix": "adjacency(K3 disjoint_union K1)",
+      "same_B_cell": {
+        "cell": [
+          2,
+          2
+        ],
+        "h0": 3,
+        "h2": 3,
+        "total": 6
+      },
+      "symmetric_idempotent_even_row": true
+    },
+    "general_same_B_different_interlace_control": {
+      "different_interlace_table": true,
+      "first_different_input_size": 3,
+      "left_size3_nullities": [
+        0,
+        18,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "masks": [
+        5782,
+        5872
+      ],
+      "order": 6,
+      "right_size3_nullities": [
+        0,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "same_complete_B_table": true,
+      "target_subclass_limitation": "These controls are symmetric zero-diagonal graphs but do not satisfy the target even-row/idempotent hypotheses."
+    }
+  },
+  "local_interlace": {
+    "alternating_parity_pass": true,
+    "rows": {
+      "0": {
+        "0": {
+          "constant": "1",
+          "n3_coefficient": "0"
+        }
+      },
+      "1": {
+        "1": {
+          "constant": "99",
+          "n3_coefficient": "0"
+        }
+      },
+      "2": {
+        "0": {
+          "constant": "693",
+          "n3_coefficient": "0"
+        },
+        "2": {
+          "constant": "4158",
+          "n3_coefficient": "0"
+        }
+      },
+      "3": {
+        "1": {
+          "constant": "58443",
+          "n3_coefficient": "0"
+        },
+        "3": {
+          "constant": "98406",
+          "n3_coefficient": "0"
+        }
+      },
+      "4": {
+        "0": {
+          "constant": "226611",
+          "n3_coefficient": "0"
+        },
+        "2": {
+          "constant": "2068605",
+          "n3_coefficient": "0"
+        },
+        "4": {
+          "constant": "1469160",
+          "n3_coefficient": "0"
+        }
+      },
+      "5": {
+        "1": {
+          "constant": "16020081",
+          "n3_coefficient": "0"
+        },
+        "3": {
+          "constant": "40833639",
+          "n3_coefficient": "0"
+        },
+        "5": {
+          "constant": "14669424",
+          "n3_coefficient": "0"
+        }
+      },
+      "6": {
+        "0": {
+          "constant": "45845415",
+          "n3_coefficient": "4/3"
+        },
+        "2": {
+          "constant": "470213205",
+          "n3_coefficient": "-3"
+        },
+        "4": {
+          "constant": "503184528",
+          "n3_coefficient": "4/3"
+        },
+        "6": {
+          "constant": "101286108",
+          "n3_coefficient": "1/3"
+        }
+      }
+    },
+    "six_set_kernel_moment": {
+      "constant": "16459961595",
+      "n3_coefficient": "32"
+    },
+    "source_nullities": {
+      "0": [
+        0
+      ],
+      "1": [
+        1
+      ],
+      "2": [
+        2,
+        0
+      ],
+      "3": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "4": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "5": [
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "6": [
+        6,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2
+      ]
+    },
+    "strongest_nonnegative_upper": {
+      "source_nullity": 2,
+      "upper": "156737735"
+    }
+  },
+  "sealed_package": {
+    "entries": [
+      {
+        "actual_sha256": "f8205713998f2922e3c7a44e4f7e9395e007d339ccfcb06f2f33d59c672d201b",
+        "expected_sha256": "f8205713998f2922e3c7a44e4f7e9395e007d339ccfcb06f2f33d59c672d201b",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/derivation.md"
+      },
+      {
+        "actual_sha256": "da9ac1cc62ab7570aa88afb0a0bfc75e33f56bc8716b1f215bf765014a62e67a",
+        "expected_sha256": "da9ac1cc62ab7570aa88afb0a0bfc75e33f56bc8716b1f215bf765014a62e67a",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/exact_check.py"
+      },
+      {
+        "actual_sha256": "96b2d315a1994acd55dd274724c1cddd61bb69543fd52ac6b5d4c07e6f077616",
+        "expected_sha256": "96b2d315a1994acd55dd274724c1cddd61bb69543fd52ac6b5d4c07e6f077616",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/exact-results.json"
+      },
+      {
+        "actual_sha256": "277c22702d02411af5274ba6243da734a885938689855f2331adc905bfcd3172",
+        "expected_sha256": "277c22702d02411af5274ba6243da734a885938689855f2331adc905bfcd3172",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/failed-routes.md"
+      },
+      {
+        "actual_sha256": "d5165644bf831fc310342aa40bee08f8b91506c1e036b3c5d348d9dd38e7dfac",
+        "expected_sha256": "d5165644bf831fc310342aa40bee08f8b91506c1e036b3c5d348d9dd38e7dfac",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/input-freeze.sha256"
+      },
+      {
+        "actual_sha256": "55c87052db1f2da620a5d20a10f8504cae3eec7834c9536da6f0c295601fdedc",
+        "expected_sha256": "55c87052db1f2da620a5d20a10f8504cae3eec7834c9536da6f0c295601fdedc",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/protocol.md"
+      },
+      {
+        "actual_sha256": "be963cdf4bba8caa81e7dc6718fd8cee4972d8750a309cbf6345ca8d79e29fe8",
+        "expected_sha256": "be963cdf4bba8caa81e7dc6718fd8cee4972d8750a309cbf6345ca8d79e29fe8",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/README.md"
+      },
+      {
+        "actual_sha256": "8ef6adee4551afe9f7d2f877c7a101a698efcae591ba0c9415dd1837cdff0b44",
+        "expected_sha256": "8ef6adee4551afe9f7d2f877c7a101a698efcae591ba0c9415dd1837cdff0b44",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/run-report.yaml"
+      },
+      {
+        "actual_sha256": "88dff2401cc0a1d28ad5364563edd9c86be405d62cf6ead4872367b6b78cd02f",
+        "expected_sha256": "88dff2401cc0a1d28ad5364563edd9c86be405d62cf6ead4872367b6b78cd02f",
+        "pass": true,
+        "path": "attempts/wave142-interlace-isotropic/test_exact_check.py"
+      }
+    ],
+    "entries_pass": true,
+    "entry_count": 9,
+    "expected_manifest_sha256": "241cb75308d26942adf6dcdfc3b1c344c3c48fee35df2b9eeb1561fa2b01b443",
+    "manifest_pass": true,
+    "manifest_sha256": "241cb75308d26942adf6dcdfc3b1c344c3c48fee35df2b9eeb1561fa2b01b443"
+  },
+  "status_wall": {
+    "B_only_target_elimination": "UNKNOWN",
+    "Conway_99": "UNKNOWN",
+    "formal_interlace_lift_feasibility": "UNKNOWN",
+    "graph_realizability": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "top_band_86_through_91": "VETO_UNSUPPORTED_PREMISE",
+    "top_band_92_through_99": "VERIFIED"
+  },
+  "top_complement_band": {
+    "conditional_lemma": "If d(im(A))>=14 were independently proved, the discovery's 86-through-99 band argument would be correct.",
+    "discovery_claimed_range": "86<=|S|<=99",
+    "formal_rational_witness_minimum": 14,
+    "formal_rational_witness_realized_code": false,
+    "frozen_verified_image_minimum_lower": 8,
+    "verified_entries": [
+      {
+        "complement_size": 0,
+        "nullity": 45,
+        "rank": 54,
+        "subset_count": 1,
+        "subset_size": 99
+      },
+      {
+        "complement_size": 1,
+        "nullity": 44,
+        "rank": 54,
+        "subset_count": 99,
+        "subset_size": 98
+      },
+      {
+        "complement_size": 2,
+        "nullity": 43,
+        "rank": 54,
+        "subset_count": 4851,
+        "subset_size": 97
+      },
+      {
+        "complement_size": 3,
+        "nullity": 42,
+        "rank": 54,
+        "subset_count": 156849,
+        "subset_size": 96
+      },
+      {
+        "complement_size": 4,
+        "nullity": 41,
+        "rank": 54,
+        "subset_count": 3764376,
+        "subset_size": 95
+      },
+      {
+        "complement_size": 5,
+        "nullity": 40,
+        "rank": 54,
+        "subset_count": 71523144,
+        "subset_size": 94
+      },
+      {
+        "complement_size": 6,
+        "nullity": 39,
+        "rank": 54,
+        "subset_count": 1120529256,
+        "subset_size": 93
+      },
+      {
+        "complement_size": 7,
+        "nullity": 38,
+        "rank": 54,
+        "subset_count": 14887031544,
+        "subset_size": 92
+      }
+    ],
+    "verified_target_range": "92<=|S|<=99",
+    "veto_reason": "The frozen target fact is only d(im(A))>=8.  Minimum 14 belongs to a nonintegral, unrealized rational witness and cannot be promoted to a target premise.",
+    "vetoed_complement_sizes": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "verdict": "PARTIAL_PASS_WITH_TOP_BAND_VETO"
+}

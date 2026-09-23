@@ -1,0 +1,112 @@
+{
+  "format": "conway-99-wave37-public-checkpoint-v1",
+  "date_utc": "2026-07-27T00:26:00Z",
+  "public_base": {
+    "pull_request": "https://github.com/YesterdaysLemon/conway-99-research/pull/2",
+    "merge_commit": "a45592a91a34d2f2bb7ee4c266f3b979e86e399d",
+    "merged": true
+  },
+  "status": {
+    "project": "EXPLORATORY",
+    "target": "UNKNOWN",
+    "n3_4158": "UNKNOWN",
+    "rigorous_interval": {
+      "lower": 708,
+      "upper": 4158
+    },
+    "upper_bound_improved": false,
+    "solver_evidence_promoted": false,
+    "novelty": "UNKNOWN"
+  },
+  "lanes": [
+    {
+      "id": "rooted_fixed_triangle_clauses",
+      "claim_label": "VERIFIED_SCOPED",
+      "parents": [4, 5, 8, 10, 12],
+      "refined_cases": 33,
+      "fixed_triangles_per_parent": 6,
+      "clauses_per_parent": {
+        "total": 282774,
+        "length_3": 606,
+        "length_5": 282168
+      },
+      "solver": {
+        "branch": 4,
+        "status": "BUDGET_UNKNOWN",
+        "conflict_budget": 100000,
+        "mathematical_evidentiary_value": "NONE"
+      },
+      "discovery_report": "agents/2026-07-27-wave36-rooted-branches.md",
+      "attempt": "attempts/wave36-rooted-branches",
+      "verification": "verification/wave37-rooted-branches/audit.md"
+    },
+    {
+      "id": "finite_polar_strengthening",
+      "claim_label": "VERIFIED_SCOPED",
+      "ternary_code": {
+        "parameters": "[231,r3]_3",
+        "projective": true,
+        "self_orthogonal": true,
+        "dual_distance_lower_bound": 3,
+        "weight_69_words_lower_bound": 462
+      },
+      "rank_twelve": {
+        "rank_I_plus_B_upper": 78,
+        "rank_orthogonality_matrix_upper": 79
+      },
+      "signed_geometry": {
+        "independent_balanced_triples_lower_bound": 31416,
+        "rank_one_degenerate_three_spaces_lower_bound": 437,
+        "collinearity_shortcut": "REFUTED"
+      },
+      "characteristic_seven_rank_eleven": {
+        "square_determinant": "SURVIVES",
+        "nonsquare_determinant": "SURVIVES"
+      },
+      "discovery_report": "agents/2026-07-26-wave37-polar-strengthen.md",
+      "attempt": "attempts/wave37-polar-strengthen",
+      "verification": "verification/wave37-polar-strengthen/audit.md"
+    },
+    {
+      "id": "proof_producing_branch_15",
+      "claim_label": "VERIFIED_FORMULA_ARTIFACT_ONLY",
+      "scope": "one of 33 endpoint-compatible refined cases",
+      "refined_branch": 15,
+      "parent_branch": 4,
+      "variables": 289338,
+      "constraints": 574615,
+      "raw_bytes": 29827704,
+      "raw_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5",
+      "gzip_bytes": 3854306,
+      "gzip_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+      "independent_constraint_match": "574615/574615",
+      "exact_parser": "PARSE_ACCEPTED_SYNTAX_ONLY",
+      "satisfiability": "UNKNOWN",
+      "attempt": "attempts/wave37-proof-producing-endpoint",
+      "verification": "verification/wave37-proof-producing-endpoint/audit.md"
+    }
+  ],
+  "tests": {
+    "discovery": {
+      "rooted": 8,
+      "polar": 13,
+      "opb": 5,
+      "total": 26
+    },
+    "independent": {
+      "rooted": 5,
+      "polar": 6,
+      "opb": 5,
+      "total": 16
+    },
+    "grand_total": 42,
+    "status": "PASS"
+  },
+  "excluded_from_claims": [
+    "nonterminal 33-case Gluecard sweep",
+    "nonterminal four-case parent-4 MiniCard sweep",
+    "block-completion lane without a publication-ready result",
+    "any inference from elapsed solver time",
+    "novelty or priority"
+  ]
+}

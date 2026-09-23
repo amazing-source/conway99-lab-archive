@@ -1,0 +1,52 @@
+role: construction
+date_utc: 2026-07-24T10:17:37Z
+git_commit: b2595baa40d50e9c259051751fe27090bee6a449
+claim_label: CANDIDATE
+scope: >-
+  Exact consequences of the labeled Wave 32 Fano-complement support, plus
+  one explicit hostile active-to-Z partial object inside a restricted simple
+  2-(15,3,2) design family. No complete graph extension or UNSAT certificate
+  is claimed.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  CONJECTURE.md: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  STRUCTURE.md: 45640fecaa5834b24063c682c7edd0898f2746253a7708a2c70c3610e4bcb99a
+  agents/2026-07-24-wave32-rooted-proof.md: 04990231e3b42cded363e39ffea771556e52ec66fe03a97164ae99f40ddbefe0
+  verification/wave32-rooted-vector/audit.md: 36d83232d82e30205e0aefa30aedff0a517de1edb0adbaa54575ea68d04ce1a5
+  verification/wave32-rooted-vector/independent-results.json: 4ed239e997e4485abdab4e26a2e28e2a981b6fff069c4d926ccff3d2241dbe6f
+  verification/wave32-rooted-vector/artifact-manifest.sha256: 2607c3000944e6d31ab5491a7d959ae4f97f05ac3e0d754baaf2830efcd085df
+  verification/wave33-continuation-protocol.md: b98b6bb8228b54b67cd949ee1bf6eb05ebd6ebe74f1cbc9e49b041a55e2d2fe6
+method: >-
+  Derive the exact outside-block equations without an outside automorphism,
+  verify their support-side consequences with a standard-library checker,
+  construct a simple 2-(15,3,2) design from two disjoint STS(15)s, search a
+  fixed finite budget for a labeled assignment, and check the retained
+  explicit object independently. Record MILP timeout metadata without using
+  it as a certificate.
+command: |-
+  python attempts/wave33-rooted-construction/search_partial_design.py --output attempts/wave33-rooted-construction/partial-design-certificate.json --restarts 9 --steps 200000 --seed 3301
+  python attempts/wave33-rooted-construction/exact_check.py --partial-certificate attempts/wave33-rooted-construction/partial-design-certificate.json --output attempts/wave33-rooted-construction/exact-results.json
+  python -m unittest -v attempts/wave33-rooted-construction/test_exact_check.py
+  .\.venv\Scripts\python.exe attempts/wave33-rooted-construction/search_relaxation.py --output attempts/wave33-rooted-construction/bounded-relaxation-certificate.json --time-limit 25 --seed 3301 --enforce-active-zero
+outputs:
+  attempts/wave33-rooted-construction/base-results.json: 97f30719cc41bb48c3b562faf5bc7037112cd8cf35c737b3717614217a9c1ea1
+  attempts/wave33-rooted-construction/bounded-search-manifest.json: 64024b16bee8e24d7a3f6b3c9a2d101b7c36f2a1fa5a638cfae476d0d750e955
+  attempts/wave33-rooted-construction/exact_check.py: 49fc20348a38e378f7e140cbbd7829dff54afe3caf0de3a2c54a82ca10981eec
+  attempts/wave33-rooted-construction/exact-results.json: ba6640eacd041bc8349024a1d3f13e3d74bd67cdad64d2d78c9a94927319c496
+  attempts/wave33-rooted-construction/failure-ledger.md: c8ead62ab3f396466db4917c0a3b119c9237d842cf973386d2b44eb3a4ab4a6b
+  attempts/wave33-rooted-construction/partial-design-certificate.json: 340e5df716ad63bceba25c745ab04c22ea1a3dca01e939072f09775a5fc5f634
+  attempts/wave33-rooted-construction/search_partial_design.py: a14fd39cda98674988935429c1115a61e660d585af227504ea5b47f9eff490d7
+  attempts/wave33-rooted-construction/search_relaxation.py: 0e20b4308ba01302862e6942c8e56a128a6085502e1ec51ced839d61832cd665
+  attempts/wave33-rooted-construction/test_exact_check.py: c8d405b530214acd2643d31c4ea1611bf6922e292c21112db5aeaf1e7bf3687c
+limitations:
+  - Discovery cannot self-promote to VERIFIED.
+  - The retained partial object fails ten support-group/point equations.
+  - No active-active edge set is supplied.
+  - The full active-active quadratic SRG block is not checked.
+  - The frozen projector, lattice, tensor, and Schur endpoint layer is not checked.
+  - The MILP encoded a complete restricted assignment domain but timed out
+    without a primal point; the run did not cover that domain.
+  - No timeout, nonhit, solver status, or hostile partial object is evidence
+    of nonexistence.
+  - Complete graph extension, full rooted endpoint, n3=708, Conway-99, and
+    novelty all remain UNKNOWN.

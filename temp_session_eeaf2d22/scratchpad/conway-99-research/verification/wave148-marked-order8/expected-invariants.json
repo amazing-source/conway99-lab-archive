@@ -1,0 +1,92 @@
+{
+  "claim_label": "DERIVED_PROTOCOL_NOT_DISCOVERY_VERIFICATION",
+  "column_identities": {
+    "all_pass": true,
+    "classes_checked": 916,
+    "pair_identity": "sum_tau b(tau,K)=sum_x deg_K(x)*(deg_K(x)-1)",
+    "vertex_identity": "sum_tau a(tau,K)=2*edges(K)"
+  },
+  "conventions": {
+    "automorphism_division": false,
+    "marks_fixed_pointwise": true,
+    "pair_ordered": true,
+    "pair_roots": 2,
+    "target_parameters": [
+      99,
+      14,
+      1,
+      2
+    ],
+    "vertex_roots": 1
+  },
+  "dimensions": {
+    "active_target_pair_rows": 3547,
+    "order7_classes": 208,
+    "order8_classes": 916,
+    "ordered_pair_rooted_types": 4440,
+    "pair_coefficient_nonzero_terms": 17782,
+    "pair_source_multiplicity_total": 8736,
+    "vertex_coefficient_nonzero_terms": 10872,
+    "vertex_rooted_types": 944,
+    "vertex_source_multiplicity_total": 1456,
+    "zero_target_pair_rows": 893
+  },
+  "format": "wave148-clean-room-marked-order8-expected-invariants-v1",
+  "inputs": {
+    "wave147_coefficient_gzip_sha256": "a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e",
+    "wave147_order8_stream_sha256": "c2cf3604abc76a537eca21f1a8ef041697ca40d8ad41668d25eb412b9cd67337",
+    "wave147_payload_sha256": "a7402e77048090ea492c435190aadc1d32bd1df99276e612f6d199aec9e14b08"
+  },
+  "micro_controls": {
+    "degree_empty7_to_one_edge8": {
+      "coefficient": 2,
+      "expected": 2,
+      "source_mask7": 0,
+      "target_mask8": 134217728
+    },
+    "edge_CN_one_edge7_to_triangle8": {
+      "coefficient": 6,
+      "expected": 6,
+      "source_mask7": 1,
+      "target_mask8": 234881024
+    },
+    "nonedge_CN_empty7_to_path8": {
+      "coefficient": 2,
+      "expected": 2,
+      "source_mask7": 0,
+      "target_mask8": 201326592
+    }
+  },
+  "rook_positive_control": {
+    "all_marked_rows_pass": true,
+    "order7_nonzero_classes": 2,
+    "order7_subset_total": 36,
+    "order8_nonzero_classes": 1,
+    "order8_subset_total": 9,
+    "pair_row_failures": [],
+    "pair_zero_residual_rows": 15,
+    "parameters": [
+      9,
+      4,
+      1,
+      2
+    ],
+    "vertex_row_failures": [],
+    "vertex_zero_residual_rows": 2
+  },
+  "scope": "first-principles meanings and expected invariants for marked degree/common-neighbor order-seven-to-eight rows",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "clean_room_protocol": "FROZEN",
+    "strict_n3_upper_bound": "UNKNOWN",
+    "wave148_artifacts_verified": false,
+    "wave148_manifest": "NOT_RECEIVED"
+  },
+  "target_residual_ranges": {
+    "pair_max": 2,
+    "pair_min": 0,
+    "vertex_max": 14,
+    "vertex_min": 8,
+    "zero_pair_rows_have_zero_coefficient_support": true
+  }
+}

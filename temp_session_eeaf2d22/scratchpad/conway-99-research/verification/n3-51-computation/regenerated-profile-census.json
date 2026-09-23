@@ -1,0 +1,1515 @@
+{
+  "claim_label": "DERIVED_PENDING_AUDIT",
+  "conditional_n3_51_exclusion": "UNKNOWN",
+  "encoded_premises": [
+    "sum q(T)=2*n3/3",
+    "active q(T)>=2",
+    "d_L(T)=3*q(T)",
+    "d_K(T)=r-1-3*q(T)",
+    "each active label lies in exactly three non-singleton linear point sets",
+    "every selected point is a K-clique",
+    "three selected points cannot pairwise meet at three different labels",
+    "meeting L-crossings have every row and column degree in {0,2}",
+    "full 2-by-2 L-crossings contribute four to the fixed-point total",
+    "the inherited degree-three obstruction"
+  ],
+  "method": "independent integer partitioning, a crossing-degree large-point incidence inequality, and exhaustive rooted size-three state enumeration",
+  "novelty": "UNKNOWN",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "schema": "conway99-wave16-n3-51-profile-census-v1",
+  "semantic": {
+    "finite_branch_reduction": [
+      {
+        "branch_id": "no-size3",
+        "finite_reduction_certificate": {
+          "modulus": 2,
+          "total_incidence": 51
+        },
+        "finite_reduction_reason": "incidence parity: 3r is odd while size-two points contribute even total incidence",
+        "normalization": "all selected size-three point variables are false",
+        "profile_id": "r17-q2x17",
+        "root_q3_count": null,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x0",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for exact active-local SAT exploration",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r17-q2x17",
+        "root_q3_count": 0,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "no-size3",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for exact active-local SAT exploration",
+        "normalization": "all selected size-three point variables are false",
+        "profile_id": "r16-q2x14-q3x2",
+        "root_q3_count": null,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "root-q3x0",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for exact active-local SAT exploration",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r16-q2x14-q3x2",
+        "root_q3_count": 0,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "root-q3x1",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for exact active-local SAT exploration",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r16-q2x14-q3x2",
+        "root_q3_count": 1,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "root-q3x2",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for exact active-local SAT exploration",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r16-q2x14-q3x2",
+        "root_q3_count": 2,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "no-size3",
+        "finite_reduction_certificate": {
+          "modulus": 2,
+          "total_incidence": 45
+        },
+        "finite_reduction_reason": "incidence parity: 3r is odd while size-two points contribute even total incidence",
+        "normalization": "all selected size-three point variables are false",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": null,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x0",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for exact active-local SAT exploration",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": 0,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "root-q3x1",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 1
+        },
+        "finite_reduction_reason": "the exhaustive rooted size-three local-state census is empty",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": 1,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x2",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 2
+        },
+        "finite_reduction_reason": "the exhaustive rooted size-three local-state census is empty",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": 2,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x3",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 3
+        },
+        "finite_reduction_reason": "the exhaustive rooted size-three local-state census is empty",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": 3,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "no-size3",
+        "finite_reduction_certificate": {
+          "forced_k_degree_lower_bound": 5,
+          "profile_k_degree": 4
+        },
+        "finite_reduction_reason": "at a q=3 label, cubic triangle-free F forces its three neighbours and two new distance-two labels as distinct K-neighbours, so d_K>=5>4",
+        "normalization": "all selected size-three point variables are false",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": null,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x0",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for exact active-local SAT exploration",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": 0,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "root-q3x1",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 1
+        },
+        "finite_reduction_reason": "the exhaustive rooted size-three local-state census is empty",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": 1,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x2",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 2
+        },
+        "finite_reduction_reason": "the exhaustive rooted size-three local-state census is empty",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": 2,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x3",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 3
+        },
+        "finite_reduction_reason": "the exhaustive rooted size-three local-state census is empty",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": 3,
+        "survives_finite_reductions": false
+      }
+    ],
+    "large_point_reductions": {
+      "r14-q2x8-q3x6": {
+        "maximum_root_k_degree_used": 7,
+        "maximum_size_from_expansion": 4,
+        "remaining_point_sizes": [
+          2,
+          3
+        ],
+        "size_obstructions": {
+          "4": {
+            "active_order": 14,
+            "argument": [
+              "two petals occur at each root label",
+              "petal external parts are pairwise disjoint",
+              "a singleton external side has an empty L-crossing",
+              "for external size t>=2, column L-degrees in {0,2} give at most 2t crossing L-edges",
+              "therefore each petal contributes at least s distinct K-incidences from the s root labels"
+            ],
+            "available_external_k_incidence": 16,
+            "forced_external_k_incidence": 32,
+            "internal_root_clique_k_incidence": 12,
+            "minimum_k_incidence_per_petal": 4,
+            "petal_count": 8,
+            "point_size": 4,
+            "root_k_degrees": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "strict_contradiction": true
+          }
+        }
+      },
+      "r15-q2x11-q3x4": {
+        "maximum_root_k_degree_used": 8,
+        "maximum_size_from_expansion": 5,
+        "remaining_point_sizes": [
+          2,
+          3
+        ],
+        "size_obstructions": {
+          "4": {
+            "active_order": 15,
+            "argument": [
+              "two petals occur at each root label",
+              "petal external parts are pairwise disjoint",
+              "a singleton external side has an empty L-crossing",
+              "for external size t>=2, column L-degrees in {0,2} give at most 2t crossing L-edges",
+              "therefore each petal contributes at least s distinct K-incidences from the s root labels"
+            ],
+            "available_external_k_incidence": 20,
+            "forced_external_k_incidence": 32,
+            "internal_root_clique_k_incidence": 12,
+            "minimum_k_incidence_per_petal": 4,
+            "petal_count": 8,
+            "point_size": 4,
+            "root_k_degrees": [
+              8,
+              8,
+              8,
+              8
+            ],
+            "strict_contradiction": true
+          },
+          "5": {
+            "active_order": 15,
+            "argument": [
+              "two petals occur at each root label",
+              "petal external parts are pairwise disjoint",
+              "a singleton external side has an empty L-crossing",
+              "for external size t>=2, column L-degrees in {0,2} give at most 2t crossing L-edges",
+              "therefore each petal contributes at least s distinct K-incidences from the s root labels"
+            ],
+            "available_external_k_incidence": 20,
+            "forced_external_k_incidence": 50,
+            "internal_root_clique_k_incidence": 20,
+            "minimum_k_incidence_per_petal": 5,
+            "petal_count": 10,
+            "point_size": 5,
+            "root_k_degrees": [
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "strict_contradiction": true
+          }
+        }
+      },
+      "r16-q2x14-q3x2": {
+        "maximum_root_k_degree_used": 9,
+        "maximum_size_from_expansion": 5,
+        "remaining_point_sizes": [
+          2,
+          3
+        ],
+        "size_obstructions": {
+          "4": {
+            "active_order": 16,
+            "argument": [
+              "two petals occur at each root label",
+              "petal external parts are pairwise disjoint",
+              "a singleton external side has an empty L-crossing",
+              "for external size t>=2, column L-degrees in {0,2} give at most 2t crossing L-edges",
+              "therefore each petal contributes at least s distinct K-incidences from the s root labels"
+            ],
+            "available_external_k_incidence": 24,
+            "forced_external_k_incidence": 32,
+            "internal_root_clique_k_incidence": 12,
+            "minimum_k_incidence_per_petal": 4,
+            "petal_count": 8,
+            "point_size": 4,
+            "root_k_degrees": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "strict_contradiction": true
+          },
+          "5": {
+            "active_order": 16,
+            "argument": [
+              "two petals occur at each root label",
+              "petal external parts are pairwise disjoint",
+              "a singleton external side has an empty L-crossing",
+              "for external size t>=2, column L-degrees in {0,2} give at most 2t crossing L-edges",
+              "therefore each petal contributes at least s distinct K-incidences from the s root labels"
+            ],
+            "available_external_k_incidence": 25,
+            "forced_external_k_incidence": 50,
+            "internal_root_clique_k_incidence": 20,
+            "minimum_k_incidence_per_petal": 5,
+            "petal_count": 10,
+            "point_size": 5,
+            "root_k_degrees": [
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "strict_contradiction": true
+          }
+        }
+      },
+      "r17-q2x17": {
+        "maximum_root_k_degree_used": 10,
+        "maximum_size_from_expansion": 5,
+        "remaining_point_sizes": [
+          2,
+          3
+        ],
+        "size_obstructions": {
+          "4": {
+            "active_order": 17,
+            "argument": [
+              "two petals occur at each root label",
+              "petal external parts are pairwise disjoint",
+              "a singleton external side has an empty L-crossing",
+              "for external size t>=2, column L-degrees in {0,2} give at most 2t crossing L-edges",
+              "therefore each petal contributes at least s distinct K-incidences from the s root labels"
+            ],
+            "available_external_k_incidence": 28,
+            "forced_external_k_incidence": 32,
+            "internal_root_clique_k_incidence": 12,
+            "minimum_k_incidence_per_petal": 4,
+            "petal_count": 8,
+            "point_size": 4,
+            "root_k_degrees": [
+              10,
+              10,
+              10,
+              10
+            ],
+            "strict_contradiction": true
+          },
+          "5": {
+            "active_order": 17,
+            "argument": [
+              "two petals occur at each root label",
+              "petal external parts are pairwise disjoint",
+              "a singleton external side has an empty L-crossing",
+              "for external size t>=2, column L-degrees in {0,2} give at most 2t crossing L-edges",
+              "therefore each petal contributes at least s distinct K-incidences from the s root labels"
+            ],
+            "available_external_k_incidence": 30,
+            "forced_external_k_incidence": 50,
+            "internal_root_clique_k_incidence": 20,
+            "minimum_k_incidence_per_petal": 5,
+            "petal_count": 10,
+            "point_size": 5,
+            "root_k_degrees": [
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "strict_contradiction": true
+          }
+        }
+      }
+    },
+    "local_size3_mode_census": [
+      {
+        "active_order": 17,
+        "profile_id": "r17-q2x17",
+        "root_compositions": [
+          {
+            "equal_q_coordinate_orbit_count": 21,
+            "labeled_state_count": 75,
+            "root_q3_count": 0,
+            "root_q_values": [
+              2,
+              2,
+              2
+            ],
+            "state_sha256": "39ce6217796655196fec80b344358ef0be36f29868cf4687f872d97e7a93886c"
+          }
+        ]
+      },
+      {
+        "active_order": 16,
+        "profile_id": "r16-q2x14-q3x2",
+        "root_compositions": [
+          {
+            "equal_q_coordinate_orbit_count": 10,
+            "labeled_state_count": 32,
+            "root_q3_count": 0,
+            "root_q_values": [
+              2,
+              2,
+              2
+            ],
+            "state_sha256": "91a0661e2c4e6069f7cdc5cb7eb029af10fead9833199a7f4b0f5319f173cefc"
+          },
+          {
+            "equal_q_coordinate_orbit_count": 2,
+            "labeled_state_count": 3,
+            "root_q3_count": 1,
+            "root_q_values": [
+              2,
+              2,
+              3
+            ],
+            "state_sha256": "a22369b2d93af9b04f80d16801ba0a18d7dc574b657a8c8a39028c97683f7beb"
+          },
+          {
+            "equal_q_coordinate_orbit_count": 1,
+            "labeled_state_count": 1,
+            "root_q3_count": 2,
+            "root_q_values": [
+              2,
+              3,
+              3
+            ],
+            "state_sha256": "195371f3fe712e7eb2bb78fed5e578bbca2ba58b093ae0c0049960d2a6a6997c"
+          }
+        ]
+      },
+      {
+        "active_order": 15,
+        "profile_id": "r15-q2x11-q3x4",
+        "root_compositions": [
+          {
+            "equal_q_coordinate_orbit_count": 4,
+            "labeled_state_count": 8,
+            "root_q3_count": 0,
+            "root_q_values": [
+              2,
+              2,
+              2
+            ],
+            "state_sha256": "8e688c5d5cd5186edb69587bca4ad36fa9bb3fdc209784f267b3d7fe2bfef0b5"
+          },
+          {
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 1,
+            "root_q_values": [
+              2,
+              2,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 2,
+            "root_q_values": [
+              2,
+              3,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 3,
+            "root_q_values": [
+              3,
+              3,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          }
+        ]
+      },
+      {
+        "active_order": 14,
+        "profile_id": "r14-q2x8-q3x6",
+        "root_compositions": [
+          {
+            "equal_q_coordinate_orbit_count": 1,
+            "labeled_state_count": 1,
+            "root_q3_count": 0,
+            "root_q_values": [
+              2,
+              2,
+              2
+            ],
+            "state_sha256": "df9e63ceca3e1efb9486f6cbe16e909a97f498a80f6c868ff978df53df24b0be"
+          },
+          {
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 1,
+            "root_q_values": [
+              2,
+              2,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 2,
+            "root_q_values": [
+              2,
+              3,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 3,
+            "root_q_values": [
+              3,
+              3,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          }
+        ]
+      }
+    ],
+    "post_finite_surviving_branches": [
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r17-q2x17"
+      },
+      {
+        "branch_id": "no-size3",
+        "profile_id": "r16-q2x14-q3x2"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r16-q2x14-q3x2"
+      },
+      {
+        "branch_id": "root-q3x1",
+        "profile_id": "r16-q2x14-q3x2"
+      },
+      {
+        "branch_id": "root-q3x2",
+        "profile_id": "r16-q2x14-q3x2"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r15-q2x11-q3x4"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r14-q2x8-q3x6"
+      }
+    ],
+    "q_sum": 34,
+    "raw_branch_cover": [
+      {
+        "branch_id": "no-size3",
+        "normalization": "all selected size-three point variables are false",
+        "profile_id": "r17-q2x17",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r17-q2x17",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "no-size3",
+        "normalization": "all selected size-three point variables are false",
+        "profile_id": "r16-q2x14-q3x2",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r16-q2x14-q3x2",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r16-q2x14-q3x2",
+        "root_q3_count": 1
+      },
+      {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r16-q2x14-q3x2",
+        "root_q3_count": 2
+      },
+      {
+        "branch_id": "no-size3",
+        "normalization": "all selected size-three point variables are false",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": 1
+      },
+      {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": 2
+      },
+      {
+        "branch_id": "root-q3x3",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r15-q2x11-q3x4",
+        "root_q3_count": 3
+      },
+      {
+        "branch_id": "no-size3",
+        "normalization": "all selected size-three point variables are false",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": 1
+      },
+      {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": 2
+      },
+      {
+        "branch_id": "root-q3x3",
+        "normalization": "choose one selected triple of this q-type and name it using permutations within equal-q classes",
+        "profile_id": "r14-q2x8-q3x6",
+        "root_q3_count": 3
+      }
+    ],
+    "raw_profiles": [
+      {
+        "active_order": 17,
+        "k_degree_histogram": {
+          "10": 17
+        },
+        "k_degrees": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "k_edge_count": 85,
+        "k_handshake_even": true,
+        "profile_id": "r17-q2x17",
+        "q_histogram": {
+          "2": 17
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "survives_degree_three_obstruction": true,
+        "survives_minimum_degree_three": true
+      },
+      {
+        "active_order": 16,
+        "k_degree_histogram": {
+          "3": 1,
+          "9": 15
+        },
+        "k_degrees": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          3
+        ],
+        "k_edge_count": 69,
+        "k_handshake_even": true,
+        "profile_id": "r16-q2x15-q4x1",
+        "q_histogram": {
+          "2": 15,
+          "4": 1
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": true
+      },
+      {
+        "active_order": 16,
+        "k_degree_histogram": {
+          "6": 2,
+          "9": 14
+        },
+        "k_degrees": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          6,
+          6
+        ],
+        "k_edge_count": 69,
+        "k_handshake_even": true,
+        "profile_id": "r16-q2x14-q3x2",
+        "q_histogram": {
+          "2": 14,
+          "3": 2
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        "survives_degree_three_obstruction": true,
+        "survives_minimum_degree_three": true
+      },
+      {
+        "active_order": 15,
+        "k_degree_histogram": {
+          "2": 2,
+          "8": 13
+        },
+        "k_degrees": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          2,
+          2
+        ],
+        "k_edge_count": 54,
+        "k_handshake_even": true,
+        "profile_id": "r15-q2x13-q4x2",
+        "q_histogram": {
+          "2": 13,
+          "4": 2
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 15,
+        "k_degree_histogram": {
+          "2": 1,
+          "5": 2,
+          "8": 12
+        },
+        "k_degrees": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          5,
+          5,
+          2
+        ],
+        "k_edge_count": 54,
+        "k_handshake_even": true,
+        "profile_id": "r15-q2x12-q3x2-q4x1",
+        "q_histogram": {
+          "2": 12,
+          "3": 2,
+          "4": 1
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 15,
+        "k_degree_histogram": {
+          "5": 4,
+          "8": 11
+        },
+        "k_degrees": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k_edge_count": 54,
+        "k_handshake_even": true,
+        "profile_id": "r15-q2x11-q3x4",
+        "q_histogram": {
+          "2": 11,
+          "3": 4
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survives_degree_three_obstruction": true,
+        "survives_minimum_degree_three": true
+      },
+      {
+        "active_order": 14,
+        "k_degree_histogram": {
+          "1": 3,
+          "7": 11
+        },
+        "k_degrees": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          1,
+          1,
+          1
+        ],
+        "k_edge_count": 40,
+        "k_handshake_even": true,
+        "profile_id": "r14-q2x11-q4x3",
+        "q_histogram": {
+          "2": 11,
+          "4": 3
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 14,
+        "k_degree_histogram": {
+          "1": 2,
+          "4": 2,
+          "7": 10
+        },
+        "k_degrees": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          4,
+          4,
+          1,
+          1
+        ],
+        "k_edge_count": 40,
+        "k_handshake_even": true,
+        "profile_id": "r14-q2x10-q3x2-q4x2",
+        "q_histogram": {
+          "2": 10,
+          "3": 2,
+          "4": 2
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 14,
+        "k_degree_histogram": {
+          "1": 1,
+          "4": 4,
+          "7": 9
+        },
+        "k_degrees": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          4,
+          4,
+          4,
+          4,
+          1
+        ],
+        "k_edge_count": 40,
+        "k_handshake_even": true,
+        "profile_id": "r14-q2x9-q3x4-q4x1",
+        "q_histogram": {
+          "2": 9,
+          "3": 4,
+          "4": 1
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 14,
+        "k_degree_histogram": {
+          "4": 6,
+          "7": 8
+        },
+        "k_degrees": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "k_edge_count": 40,
+        "k_handshake_even": true,
+        "profile_id": "r14-q2x8-q3x6",
+        "q_histogram": {
+          "2": 8,
+          "3": 6
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survives_degree_three_obstruction": true,
+        "survives_minimum_degree_three": true
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "0": 4,
+          "6": 9
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "k_edge_count": 27,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x9-q4x4",
+        "q_histogram": {
+          "2": 9,
+          "4": 4
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "0": 3,
+          "3": 2,
+          "6": 8
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3,
+          0,
+          0,
+          0
+        ],
+        "k_edge_count": 27,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x8-q3x2-q4x3",
+        "q_histogram": {
+          "2": 8,
+          "3": 2,
+          "4": 3
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "0": 2,
+          "3": 4,
+          "6": 7
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          3,
+          0,
+          0
+        ],
+        "k_edge_count": 27,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x7-q3x4-q4x2",
+        "q_histogram": {
+          "2": 7,
+          "3": 4,
+          "4": 2
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "0": 1,
+          "3": 6,
+          "6": 6
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          0
+        ],
+        "k_edge_count": 27,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x6-q3x6-q4x1",
+        "q_histogram": {
+          "2": 6,
+          "3": 6,
+          "4": 1
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "3": 8,
+          "6": 5
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "k_edge_count": 27,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x5-q3x8",
+        "q_histogram": {
+          "2": 5,
+          "3": 8
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": true
+      },
+      {
+        "active_order": 12,
+        "k_degree_histogram": {
+          "2": 10,
+          "5": 2
+        },
+        "k_degrees": [
+          5,
+          5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "k_edge_count": 15,
+        "k_handshake_even": true,
+        "profile_id": "r12-q2x2-q3x10",
+        "q_histogram": {
+          "2": 2,
+          "3": 10
+        },
+        "q_sum": 34,
+        "q_values": [
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survives_degree_three_obstruction": false,
+        "survives_minimum_degree_three": false
+      }
+    ],
+    "surviving_profiles": [
+      "r17-q2x17",
+      "r16-q2x14-q3x2",
+      "r15-q2x11-q3x4",
+      "r14-q2x8-q3x6"
+    ],
+    "target_n3": 51
+  },
+  "semantic_sha256": "17413e627975c24b40c01132ea5276e7e533120f00467ca2217b574bf7d9651b",
+  "source_manifest": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "verification/2026-07-22-n3-side-incidence-audit.md": "9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787",
+    "verification/2026-07-22-wave14-n3-48-computation-audit.md": "9a1b3bb8bb0edfdacfac61635b4a2256579fe9a175150589880dadf6a04ae94d"
+  },
+  "starting_git_commit": "861cfeb6195b19b08feceff07be88a6ab5093fd4",
+  "target_result": "UNKNOWN",
+  "unencoded_premises": [
+    "inactive point sets and inactive graph vertices",
+    "fixed support from disjoint selected points",
+    "completion of fixed-point support equalities",
+    "the 693-vertex H graph",
+    "a 99-vertex adjacency matrix",
+    "global SRG lambda/mu equations"
+  ]
+}

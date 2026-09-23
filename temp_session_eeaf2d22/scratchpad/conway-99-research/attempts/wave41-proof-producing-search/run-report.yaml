@@ -1,0 +1,65 @@
+role: construction
+date_utc: 2026-07-27T04:47:00Z
+git_commit: 4f1754a28723a8e0e4ea3025312cd264b1b117d2
+claim_label: CANDIDATE
+scope: >-
+  Proof-producing feasibility audit of the unrestricted Conway-99 target and
+  the exact 33-case n3=4158 endpoint queue; generalized-unit closure and 64
+  bounded polarity probes for refined endpoint branch 15.
+inputs:
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: verification/2026-07-22-veripb-calibration.md
+    sha256: dc16e03bd2d3b3c22d3a50988fcb0508c095ae00a032f4b0997bb0c41db21dba
+  - path: attempts/wave38-solver-harvest/coverage-plan.json
+    sha256: 2de85c3f73d4b12a579b281c10171a47c12e26a323ecdf9617c1a842a81d8bf2
+method: >-
+  Stream and hash-check the frozen 574615-row OPB; apply generalized unit
+  propagation to a fixed point; profile residual slack; test both polarities
+  of the 32 primary variables occurring most often in one-slack constraints;
+  inventory installed solver backends, pinned proof tools, and two untouched
+  pre-existing endpoint scouts. No target solver was launched.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave41-proof-producing-search\propagation_scout.py --output attempts\wave41-proof-producing-search\branch-15-propagation-certificate.json
+  .\.venv\Scripts\python.exe -B attempts\wave41-proof-producing-search\residual_profile.py --closure attempts\wave41-proof-producing-search\branch-15-propagation-certificate.json --top 32 --output attempts\wave41-proof-producing-search\branch-15-residual-profile.json
+  .\.venv\Scripts\python.exe -B attempts\wave41-proof-producing-search\failed_literal_scout.py --closure attempts\wave41-proof-producing-search\branch-15-propagation-certificate.json --variables 13,175,188,178,1727,15,16,17,18,19,20,21,22,23,35,36,37,38,39,40,41,42,43,94,106,189,190,191,192,193,194,195 --output attempts\wave41-proof-producing-search\branch-15-failed-literal-scout.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave41-proof-producing-search -p "test_*.py" -v
+outputs:
+  - path: attempts/wave41-proof-producing-search/branch-15-propagation-certificate.json
+    sha256: 3da90e49e4e9469bdc397af107d877ee7075ad551a6f8df1afbd8d5d1150707f
+  - path: attempts/wave41-proof-producing-search/branch-15-residual-profile.json
+    sha256: 0a3ea3ec36a8a0c63bc100e02a20296edd8e2c09493c2cfa239032a79ca6c606
+  - path: attempts/wave41-proof-producing-search/branch-15-failed-literal-scout.json
+    sha256: bf08994b8709da64684800ede9706e46c8de34ff30b9db2f831d0b0f4c4d37c3
+  - path: attempts/wave41-proof-producing-search/solver-infrastructure.json
+    sha256: 35dd5b27ce134ca74c9686eff3f3dc5cc3a84462183b6008fd310ecbbe1bd6ce
+limitations:
+  - "The discovery-agent propagation certificate requires independent replay."
+  - "The propagation closure is consistent; branch 15 is not closed."
+  - "No tested polarity failed; the 64 fixed points are not SAT witnesses."
+  - "The source formula contains only parent branch 4's six fixed-triangle prism families."
+  - "No complete endpoint case is closed; checked coverage remains 0/33."
+  - "No graph, endpoint exclusion, upper-bound improvement, or novelty claim follows."
+tests:
+  unit_and_live_replay: "PASS: 9 tests in 66.404 seconds"
+  frozen_formula_gzip_sha256: PASS
+  frozen_formula_raw_sha256: PASS
+  deterministic_propagation_replay: PASS
+  fail_closed_archived_status: PASS
+result:
+  total_forced_variables: 830
+  forced_primary_variables: 174
+  positive_primary_variables: 7
+  negative_primary_variables: 167
+  unfixed_primary_variables: 3312
+  residual_open_constraints: 574351
+  residual_slack_one_constraints: 2975
+  tested_primary_variables: 32
+  polarity_probes: 64
+  failed_polarities: 0
+  candidate_new_implications: 0
+  branch_15: UNKNOWN
+  endpoint_cases_closed: 0
+  endpoint_case_total: 33
+  endpoint_n3_4158: UNKNOWN
+  upper_bound_improved_below_4158: false

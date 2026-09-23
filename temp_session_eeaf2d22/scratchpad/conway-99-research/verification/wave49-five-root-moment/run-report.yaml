@@ -1,0 +1,59 @@
+role: verifier
+date_utc: 2026-07-27T18:23:04Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: VERIFIED
+scope: >-
+  Exact finite reconstruction of all 21 canonical five-root one-free moment
+  families, all 683 labelled-root tensors, 2520 S5 coordinate mappings, 42
+  Petersen/Clebsch controls, and 357 matrices/directions on 17 frozen
+  aggregate witnesses.
+inputs:
+  - path: attempts/wave49-five-root-moment/input-freeze.sha256
+    sha256: 782cb97ea314d95c49202f8680b2fc81409d525a5028052845a8ea4880dc356d
+  - path: attempts/wave49-five-root-moment/coefficients.json
+    sha256: 66aeb26175643030770c8060a0550d202c56b6a9636e245ef19866a4a9cf308d
+  - path: attempts/wave49-five-root-moment/results.json
+    sha256: f8604031259a92776b29cda161344fd9b2bdf3ea395c3d8ce53facb82981f8c5
+  - path: attempts/wave49-five-root-moment/combined-sdp-result.json
+    sha256: 1e41b1fd961714b24f69d1c31474f48b91dca88d938f5c97d5aa2424b8aac152
+method: >-
+  Exhaustive labelled graph enumeration and complete permutation orbit
+  removal; raw ordered root injections; exact attachment-coordinate tensors;
+  all S5 coefficient congruences; independent integer Gram controls; exact
+  deletion decks; reconstructed integer witness matrices; and exact replay of
+  every supplied integer negative direction. Numerical SDP output is excluded
+  from the evidence chain.
+command: |-
+  .\.venv\Scripts\python.exe -u verification\wave49-five-root-moment\independent_check.py --compute verification\wave49-five-root-moment\independent-result.json --coefficients verification\wave49-five-root-moment\independent-coefficients.json
+  .\.venv\Scripts\python.exe -u verification\wave49-five-root-moment\comparison_check.py --compute verification\wave49-five-root-moment\comparison.json
+  .\.venv\Scripts\python.exe -m unittest verification\wave49-five-root-moment\test_independent_check.py -v
+outputs:
+  - path: verification/wave49-five-root-moment/independent-result.json
+    sha256: 77fc1e5d6b7d5ca417cdfd61cfef14cdb6d777d85b43cc17f2bad10af2a45930
+  - path: verification/wave49-five-root-moment/independent-coefficients.json
+    sha256: f3f1cd0bca98965a7893a8146ecee8dff755162f3b92eeb24e1dfbc003371d5f
+  - path: verification/wave49-five-root-moment/comparison.json
+    sha256: fc47a8664887ca2043ed701d13cbe9c1284ba1d761029d00036bd0560211bf70
+result:
+  status: VERIFIED_SCOPED
+  coefficient_document_exact_match: true
+  coefficient_payload_sha256: 940ed2820a3501e1b5017a5a3dafce55789ce189a754ef94af01954f28a79511
+  labelled_graph_counts: [683, 13174, 394020]
+  unlabelled_graph_counts: [21, 62, 208]
+  canonical_families: 21
+  labelled_root_tensors: 683
+  s5_mapping_checks: 2520
+  class_tensor_congruence_checks: 680400
+  control_matrices: 42
+  witness_supports: 17
+  witness_matrices: 357
+  exact_candidate_directions_replayed: 357
+  exact_candidate_directions_strictly_negative: 357
+  comparison_mismatches: 0
+  numerical_sdp_used_as_evidence: false
+limitations:
+  - "The discovery directory lacked a package manifest at comparison time."
+  - "Root permutations are coordinate relabellings, not target-graph automorphisms."
+  - "The exact directions reject only 17 supplied aggregate witnesses."
+  - "The full PSD-constrained count region was not searched."
+  - "Endpoint n3=4158, strict upper bound, graph construction, novelty, and Conway-99 remain UNKNOWN or NOT_PROVED."

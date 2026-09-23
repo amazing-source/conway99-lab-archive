@@ -1,0 +1,263 @@
+{
+  "automorphism_policy": "The rooted scaffold is reconstructed exactly. Group averaging is used only for universally valid PSD; no target automorphism is assumed.",
+  "averaged_psd_null_calibration": {
+    "averaged_D_plus_5I_eigenvalue_samples": {
+      "0": [
+        "15",
+        "12/5",
+        "4",
+        "27/5",
+        "5",
+        "26/5"
+      ],
+      "21": [
+        "15",
+        "12/5",
+        "4",
+        "123/20",
+        "11/2",
+        "23/5"
+      ],
+      "42": [
+        "15",
+        "12/5",
+        "4",
+        "69/10",
+        "6",
+        "4"
+      ]
+    },
+    "averaged_T": "(1/10) A_orbital_3",
+    "meaning": "same K7 support, both signs flipped residual-edge count",
+    "minimum_over_all_43_integer_parameters": "12/5",
+    "negative_blocks": 0,
+    "parameter": "integer y in [0,42]",
+    "scope": "Necessary group-averaged PSD only; not a target construction."
+  },
+  "claim_label": "DERIVED",
+  "format": "wave65-rooted-hypergraph-algebra-v1",
+  "generic_hypergraph_consequences": {
+    "D": {
+      "degree": 10,
+      "edges": 420,
+      "identity": "D=ZZ^T-5I",
+      "least_eigenvalue_bound": "lambda_min(D)>=-5",
+      "local_graph": "5K2",
+      "order": 84,
+      "triangles": 140
+    },
+    "D_plus_5I_moments": {
+      "tr(P)": 420,
+      "tr(P^2)": 2940,
+      "tr(P^3)": 23940,
+      "tr(P^4)": "201180+8*c4(R)"
+    },
+    "R": {
+      "definition": "R=Z^T Z-3I",
+      "degree": 12,
+      "least_eigenvalue_bound": "lambda_min(R)>=-3",
+      "local_graph": "3K4",
+      "minus_3_multiplicity_lower_bound": 56,
+      "moments_through_4": {
+        "tr(R)": 0,
+        "tr(R^2)": 1680,
+        "tr(R^3)": 5040,
+        "tr(R^4)": "38640+8*c4(R)"
+      },
+      "order": 140
+    },
+    "T_trace_moments_through_6": {
+      "tr(T)": 0,
+      "tr(T^2)": 168,
+      "tr(T^3)": 0,
+      "tr(T^4)": "504+8*c4(T)",
+      "tr(T^5)": "10*c5(T)",
+      "tr(T^6)": "1680+48*c4(T)+12*c6(T)"
+    },
+    "Z": {
+      "column_sum": 3,
+      "mod_3_reason": "Z^T 1=3*1=0",
+      "rank_upper_bound_mod_3": 83,
+      "rank_upper_bound_over_R": 84,
+      "row_sum": 5,
+      "shape": [
+        84,
+        140
+      ]
+    },
+    "four_cycle_transfer": {
+      "identity": "c4(R)=1260+c4(D)",
+      "necessary_bounds_if_D_subset_B": {
+        "c4(D)": [
+          0,
+          1071
+        ],
+        "c4(R)": [
+          1260,
+          2331
+        ]
+      },
+      "target_c4(B)": 1071
+    },
+    "target_B_trace_moments_through_6": {
+      "1": 0,
+      "2": 1008,
+      "3": 840,
+      "4": 31752,
+      "5": 227640,
+      "6": 3138408
+    }
+  },
+  "limitations": [
+    "This is discovery-agent work and cannot self-promote to VERIFIED.",
+    "The explicit positive control satisfies only the unlabelled local decomposition; it fails the target B moments and is not a graph candidate.",
+    "Averaged PSD feasibility does not lift to compatible 0/1 matrices.",
+    "Finite-field rank statements are necessary conditions, not exclusions.",
+    "No endpoint exclusion, strict upper bound, construction, novelty, or priority claim follows."
+  ],
+  "local_positive_control": {
+    "block_intersection_graph_R": {
+      "degree": 12,
+      "forced_point_clique_four_cycles": 1260,
+      "four_cycles": 1926,
+      "local_graph": "3K4",
+      "order": 140,
+      "triangles": 840
+    },
+    "certificate_sha256": "383f2ce6c88fb227b98473633479204968e72f00d8127affea33fb13f191430d",
+    "disposition": "EXACT_POSITIVE_CONTROL_FOR_LOCAL_DECOMPOSITION_ONLY",
+    "finite_field_ranks_Z": {
+      "2": 84,
+      "3": 83,
+      "5": 84,
+      "7": 84
+    },
+    "gram_D_plus_5I": {
+      "factorization": "D+5I=ZZ^T",
+      "moments_through_4": {
+        "1": 420,
+        "2": 2940,
+        "3": 23940,
+        "4": 216588
+      }
+    },
+    "hypergraph": {
+      "Berge_triangles_outside_point_stars": 0,
+      "blocks": 140,
+      "linear": true,
+      "uniformity": 3,
+      "vertex_degree": 5,
+      "vertices": 84
+    },
+    "local_sum_B": {
+      "degree": 12,
+      "local_graph": "5K2 disjoint union 2K1",
+      "moments_through_6": {
+        "1": 0,
+        "2": 1008,
+        "3": 840,
+        "4": 37248,
+        "5": 215620,
+        "6": 3378180
+      },
+      "target_moment_differences": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 5496,
+        "5": -12020,
+        "6": 239772
+      },
+      "triangles": 140
+    },
+    "point_graph_D": {
+      "degree": 10,
+      "edges": 420,
+      "four_cycles": 666,
+      "triangles": 140
+    },
+    "transition_T": {
+      "cycle_lengths": [
+        84
+      ],
+      "degree": 2,
+      "triangles": 0
+    }
+  },
+  "result": {
+    "conway_99": "UNKNOWN",
+    "disposition": "EXACT_NULL_RESULT_FOR_SCALAR_AND_AVERAGED_ROUTES",
+    "endpoint_n3_4158": "UNKNOWN",
+    "first_missing_invariant": "The noncommutative two-root placement of the 140 columns of Z and the transition 2-factor T relative to the fixed scaffold Q, including the entrywise equation (T+D)^2+(T+D)=10I+2J-Q.",
+    "new_exact_restrictions": [
+      "The block-intersection graph R has local graph 3K4, least eigenvalue at least -3, and eigenvalue -3 with multiplicity at least 56.",
+      "c4(R)=1260+c4(D), hence a target requires 1260<=c4(R)<=2331.",
+      "64/5<=tr(T E_3)<=16, equivalently 5376<=tr(B^3 T)<=5712, with tr(B^4 T)+3tr(B^3 T)=52416."
+    ],
+    "strict_n3_upper_bound": "NOT_OBTAINED"
+  },
+  "role": "proof_b",
+  "rooted_scaffold": {
+    "H": "K_14 minus 7 K_2",
+    "H_degree": 12,
+    "H_edge_count": 84,
+    "H_order": 14,
+    "block_equation": "B^2+B=10I+2J-Q",
+    "block_equation_rhs_row_sum": 156,
+    "endpoint_incidence_shape": [
+      14,
+      84
+    ],
+    "line_graph_degree": 22,
+    "orbital_multiplicities": [
+      1,
+      6,
+      7,
+      14,
+      21,
+      35
+    ],
+    "orbital_valencies": [
+      1,
+      2,
+      1,
+      20,
+      20,
+      40
+    ],
+    "residual_label_count": 84
+  },
+  "scalar_spectral_overlap": {
+    "definition": "w=tr(T E_3), where E_3 is the B-eigenvalue-3 projector",
+    "exact_positive_control": {
+      "tr(B^3 T)": "5502",
+      "tr(B^4 T)": "35910",
+      "tr_(D+5I)_E_lambda": {
+        "-2": "33/2",
+        "-4": "225/4",
+        "0": "105/4",
+        "12": "15",
+        "3": "306"
+      },
+      "tr_T_E_lambda": {
+        "-2": "3/2",
+        "-4": "-105/4",
+        "0": "35/4",
+        "12": "2",
+        "3": "14"
+      },
+      "w": "14"
+    },
+    "integer_mixed_trace_bound": {
+      "identity": "tr(B^4 T)+3 tr(B^3 T)=52416",
+      "tr(B^3 T)_maximum": 5712,
+      "tr(B^3 T)_minimum": 5376
+    },
+    "necessary_interval_from_minus_2I_le_T_le_2I": [
+      "64/5",
+      "16"
+    ],
+    "scope": "Scalar compression only; it does not realize compatible matrices."
+  },
+  "scope": "Prism-free endpoint n3=4158: exact rooted hypergraph/transition decomposition, finite-field ranks, moments, scalar spectral coupling, and a deliberately weaker local positive control."
+}

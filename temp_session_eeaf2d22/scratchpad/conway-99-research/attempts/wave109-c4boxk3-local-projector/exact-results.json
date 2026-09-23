@@ -1,0 +1,221 @@
+{
+  "claim_label": "DERIVED",
+  "format": "wave109-c4boxk3-local-projector-v1",
+  "incidence_lattice": {
+    "Lambda_definition": "ker_Z(Q^T)",
+    "Lambda_gram_determinant": 6191736422400,
+    "Lambda_gram_determinant_factorization": "2^22 * 3^10 * 5^2",
+    "Lambda_rank": 74,
+    "P_shape": [
+      87,
+      12
+    ],
+    "Q_definition": "[one P]",
+    "Q_shape": [
+      87,
+      13
+    ],
+    "primitive_minor_determinant": 1,
+    "primitive_minor_rows_zero_based": [
+      0,
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47
+    ],
+    "rank_Q_mod_7": 13,
+    "rank_Q_over_Q": 13,
+    "smith_invariant_factors_Q": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "input_manifest_sha256": {
+    "attempts/wave105-c4boxk3-extension/package-manifest.sha256": "b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1",
+    "attempts/wave107-c4boxk3-spectrum/package-manifest.sha256": "7e899602825d3cdf989affade8a1e5a6256f17ba911f6351ea8bfe4a3b05d2b0",
+    "attempts/wave66-spherical-code-shift/package-manifest.sha256": "6edc7a5eb2f4a913f9e6af4936984246a75cef8f562167b3d7a99d1a26bbec35",
+    "verification/wave105-c4boxk3-extension/package-manifest.sha256": "2a24e3e5846558a9e93cd2f103e049816cef7f8dd4a200108643e44cc4c300ae",
+    "verification/wave66-spherical-code-shift/package-manifest.sha256": "a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486"
+  },
+  "local_projector": {
+    "B_definition": "B=D+4I on Lambda",
+    "D_preserves_Lambda": true,
+    "identity": "B^2=7B",
+    "image_mod_7_totally_isotropic": true,
+    "motif_block_C": "H+4I",
+    "motif_block_determinant": 2332800,
+    "motif_block_determinant_mod_7": 1,
+    "rational_nullity": 32,
+    "rational_rank": 42
+  },
+  "mod_seven_orthogonal_space": {
+    "correction": "The space is non-split O^-, not split O^+: in dimension 74=2*37 the split determinant class is (-1)^37=-1, which is nonsquare over F_7, while det(Lambda)=4 is square.",
+    "gram_determinant_mod_7": 4,
+    "gram_determinant_square": true,
+    "split_determinant_class": "-1, a nonsquare in F_7",
+    "type": "O^-(74,7)",
+    "witt_index": 36
+  },
+  "rank_transfer": {
+    "global_parameter": "r=rank_F7(2A-J+I)",
+    "identity": "rank_F7(B|Lambda)=r-12",
+    "imported_global_rows": [
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42
+    ],
+    "local_rows": [
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30
+    ],
+    "schur_rank_chain": [
+      "rank_F7(A+4I)=r+1",
+      "rank_F7(A+4I)=12+rank_F7(R)",
+      "rank_F7(R)=1+rank_F7(B|Lambda)"
+    ]
+  },
+  "scope": "Conditional on a hypothetical srg(99,14,1,2) containing the Wave 105 induced C4 Cartesian K3 motif.",
+  "smith_and_index_consequences": {
+    "K_definition": "Lambda intersect ker_Q(B)",
+    "U_definition": "Lambda intersect im_Q(B)",
+    "general_discriminant_relation": "det(U) det(K)=7^(2k) det(Lambda)",
+    "general_gluing_index": "[Lambda:U direct_sum K]=7^k",
+    "general_nonzero_snf": "1^k, 7^(42-k), followed by 0^32",
+    "general_saturated_image_index": "[U:B Lambda]=7^(42-k)",
+    "rows": [
+      {
+        "excluded": false,
+        "global_rank_r": 28,
+        "local_rank_k": 16,
+        "orthogonal_gluing_index_exponent": 16,
+        "residual_orthogonal_space": "O^-(42,7)",
+        "saturated_image_index_exponent": 26,
+        "snf_nonzero_factors": {
+          "1": 16,
+          "7": 26
+        }
+      },
+      {
+        "excluded": false,
+        "global_rank_r": 30,
+        "local_rank_k": 18,
+        "orthogonal_gluing_index_exponent": 18,
+        "residual_orthogonal_space": "O^-(38,7)",
+        "saturated_image_index_exponent": 24,
+        "snf_nonzero_factors": {
+          "1": 18,
+          "7": 24
+        }
+      },
+      {
+        "excluded": false,
+        "global_rank_r": 32,
+        "local_rank_k": 20,
+        "orthogonal_gluing_index_exponent": 20,
+        "residual_orthogonal_space": "O^-(34,7)",
+        "saturated_image_index_exponent": 22,
+        "snf_nonzero_factors": {
+          "1": 20,
+          "7": 22
+        }
+      },
+      {
+        "excluded": false,
+        "global_rank_r": 34,
+        "local_rank_k": 22,
+        "orthogonal_gluing_index_exponent": 22,
+        "residual_orthogonal_space": "O^-(30,7)",
+        "saturated_image_index_exponent": 20,
+        "snf_nonzero_factors": {
+          "1": 22,
+          "7": 20
+        }
+      },
+      {
+        "excluded": false,
+        "global_rank_r": 36,
+        "local_rank_k": 24,
+        "orthogonal_gluing_index_exponent": 24,
+        "residual_orthogonal_space": "O^-(26,7)",
+        "saturated_image_index_exponent": 18,
+        "snf_nonzero_factors": {
+          "1": 24,
+          "7": 18
+        }
+      },
+      {
+        "excluded": false,
+        "global_rank_r": 38,
+        "local_rank_k": 26,
+        "orthogonal_gluing_index_exponent": 26,
+        "residual_orthogonal_space": "O^-(22,7)",
+        "saturated_image_index_exponent": 16,
+        "snf_nonzero_factors": {
+          "1": 26,
+          "7": 16
+        }
+      },
+      {
+        "excluded": false,
+        "global_rank_r": 40,
+        "local_rank_k": 28,
+        "orthogonal_gluing_index_exponent": 28,
+        "residual_orthogonal_space": "O^-(18,7)",
+        "saturated_image_index_exponent": 14,
+        "snf_nonzero_factors": {
+          "1": 28,
+          "7": 14
+        }
+      },
+      {
+        "excluded": false,
+        "global_rank_r": 42,
+        "local_rank_k": 30,
+        "orthogonal_gluing_index_exponent": 30,
+        "residual_orthogonal_space": "O^-(14,7)",
+        "saturated_image_index_exponent": 12,
+        "snf_nonzero_factors": {
+          "1": 30,
+          "7": 12
+        }
+      }
+    ]
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "any_rank_row_excluded": false,
+    "full_extension": "UNKNOWN",
+    "literature_novelty": "UNKNOWN",
+    "motif_excluded": false
+  }
+}

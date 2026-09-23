@@ -1,0 +1,33 @@
+role: proof_b
+date_utc: 2026-07-23T18:34:50Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: UNKNOWN
+scope: >-
+  Independent stronger-than-705 attempt from the audited rank-44 integral
+  Schur-projector structure.
+inputs:
+  agents/2026-07-23-wave20-global-schur.md: 64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+method: >-
+  Primitive projection-lattice duality; integral Schur-lift endomorphism;
+  determinant/index factorization; even-lattice, mod-two, and mod-four
+  constraints; harmonic-cubic Cauchy bounds; and exact q-profile dynamic
+  programming.
+command: |-
+  cd attempts/wave21-lattice-extension
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  agents/2026-07-23-wave21-lattice-extension.md: 264027dc534d57aefd8f4d9037d041af2ca8e462efeb9ef22d07de4c40141b3e
+  attempts/wave21-lattice-extension/exact_check.py: 70111579d83bbd024eadc22e747261a7fa81849b7578b8481cafa595d2f7a5a4
+  attempts/wave21-lattice-extension/test_exact_check.py: 4f2c4a90a007a964e29c8c5f34fdaac31eed0d11b480385c437349bfdf5495fa
+  attempts/wave21-lattice-extension/exact-results.json: 18235cf32229bcdf1616a7560aa2389c830e7e23fa25f0a0fc02377c174dc53b
+  attempts/wave21-lattice-extension/input-freeze.sha256: 55ad0e889fcce5031b70ecdb3f9af6794e9cd8b5b3cd8ca9971473f587e1de25
+  attempts/wave21-lattice-extension/failed-runs.md: 7e90910e77d07896a486f93f75b5f358b5d95c71d4d0c7f7231ef32224132b69
+limitations:
+  - No value or lower bound was proved for h=[L:21L*].
+  - The implication h>=21 excludes n3=705, but its premise is not established.
+  - The classical even-unimodular signature obstruction awaits independent
+    audit in this project.
+  - No graph, nonexistence proof, formal proof, or novelty result is supplied.
+  - The proposed three-point SDP was not run after a dependency tool hung.

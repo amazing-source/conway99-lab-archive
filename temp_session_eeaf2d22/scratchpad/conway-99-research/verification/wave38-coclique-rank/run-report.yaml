@@ -1,0 +1,32 @@
+role: verifier
+date_utc: 2026-07-27T01:22:51Z
+git_commit: 3014f3b1c010cdde1687b8878d4ec58d2bb90f03
+claim_label: VERIFIED
+scope: "Universal 13-coclique implication for a putative srg(99,14,1,2), the resulting rank_F7(M)>=13 incidence-projector bound, and the conditional n3=4158 consequence r3=12 implies even r7>=14"
+inputs:
+  CONJECTURE.md: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  verification/wave31-sign-commutant/audit.md: f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0
+  verification/wave36-modular-reflection/independent-results.json: 290d908ba2dbf70a411a432c0384ba98317dbe868c0177c721617bdad52eff23
+  verification/wave36-modular-reflection/audit.md: 002a44ab3f5a7841e153d9e6317cbd149333b1e034c1fb361bd8ac02d28ad48a
+  verification/wave37-polar-strengthen/independent-results.json: 37e17811baebce967ac7a0adf3e9f840340afc6bc9bfd07ce7912793d0e65734
+  verification/wave37-polar-strengthen/audit.md: 5cebac3f10475e4ac3322c0b6b8796a16be033ace050d9c9809213bd70a9c5c1
+method: "Reconstruct the edge-local graph from the lambda and mu axioms; explicitly attack triangle-mate nonadjacency and cycle parity; normalize the cross matching and exhaust all 10395 pulled-back second-side perfect matchings; derive the incidence-projector identity by singular-value transport and exact spectral interpolation; compute the coclique Gram determinant and rank modulo seven; transfer rank through N_I M N_I^T; then combine C=2M-21I modulo seven with the previously verified endpoint parity. The checker is independently written and neither imports nor executes discovery code."
+command: |
+  .venv\Scripts\python.exe -B verification\wave38-coclique-rank\independent_check.py --output verification\wave38-coclique-rank\independent-results.json
+  .venv\Scripts\python.exe -B verification\wave38-coclique-rank\independent_check.py --verify verification\wave38-coclique-rank\independent-results.json
+  .venv\Scripts\python.exe -B -m unittest discover -s verification\wave38-coclique-rank -p "test_*.py" -v
+outputs:
+  verification/wave38-coclique-rank/independent_check.py: 1816706265ed62e4d7728f63860b34446e8254ddd6149884696d38a07ff257ff
+  verification/wave38-coclique-rank/test_independent_check.py: 4d1b79e940eb52b3f23ee51f673dfc3f6c8b8a6edcaaec77028aeab225680853
+  verification/wave38-coclique-rank/independent-results.json: 5794aaf5860495c475b07c250f709cb07b1ca14d074605fa945c39ae33161e17
+  verification/wave38-coclique-rank/input-freeze.sha256: 9b7f9720ac5d63c1adabd06e563c04a3d2194b35f59b8fbde8f4cddbd3287c7f
+  verification/wave38-coclique-rank/audit.md: 9361afa1ad439da8af5ed38cd16b08dcb9751c3f66e8a5aa11d8b6dac1329d9b
+limitations:
+  - "The finite matching census checks the delicate cycle-parity reduction but does not replace the general combinatorial proof."
+  - "The incidence-projector identities M=21E0 and the endpoint reflection/parity package are frozen previously verified premises."
+  - "The result proves only rank_F7(M)>=13, not equality or a full modular classification."
+  - "The 528 endpoint rank pairs are arithmetic survivors, not realizable matrices."
+  - "The public-prior attribution reported by discovery was not independently researched; no novelty or priority claim is made."
+  - "No graph, endpoint matrix, SAT/UNSAT certificate, endpoint exclusion, or improved upper bound is supplied."
+  - "The endpoint, Conway-99, and novelty remain UNKNOWN; the strongest general upper bound remains n3<=4158."

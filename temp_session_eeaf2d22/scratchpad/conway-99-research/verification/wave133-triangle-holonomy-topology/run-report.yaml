@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-28T07:37:26Z
+git_commit: aef7b93124f8caeb1a7487f58289436bc4118880
+claim_label: VERIFIED
+scope: >-
+  Independent exact verification of sealed Wave133 rooted-triangle
+  holonomy identities, opposite-sign local controls, and the endpoint-scale
+  nonorientable surface-incidence relaxation control.
+inputs:
+  - path: attempts/wave133-triangle-holonomy-topology/package-manifest.sha256
+    sha256: dae34acdfd3a95c99db79567bf9b8ed20aa1423812dcb4dbe7681730b6d9870a
+  - path: attempts/wave133-triangle-holonomy-topology/exact-results.json
+    sha256: 15f37f5e52193b6ecf608df3944c15eaba891e16590867f4b71cbec2ef1f672a
+method: >-
+  Reconstruct the one-factor triangle stars, permutation cycles/signs,
+  common-neighbor caps, forced Gram entries, semidirect-product voltage
+  cover, deterministic balanced partition, quotient graph/faces, normalized
+  vertex links, Euler characteristic, and canonical JSON hashes without
+  importing discovery code or using a solver.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification/wave133-triangle-holonomy-topology/verify_wave133.py
+  --repository .
+  --package attempts/wave133-triangle-holonomy-topology
+  --expected-manifest
+  dae34acdfd3a95c99db79567bf9b8ed20aa1423812dcb4dbe7681730b6d9870a
+  --write
+  verification/wave133-triangle-holonomy-topology/verification.json
+outputs:
+  - path: verification/wave133-triangle-holonomy-topology/verify_wave133.py
+    sha256: 64d550187b41909fb79299730914523e9e1bee13c3d8a7f1c61f83631312f23b
+  - path: verification/wave133-triangle-holonomy-topology/verification.json
+    sha256: 70e156049d63f3889eaaa4335b604add96ac7a9c29288e60d9a9cfbb9064ab2b
+limitations: >-
+  The verified control is an abstract surface incidence system, not a
+  99-vertex graph or SRG. It imposes neither the full B/H completion nor every
+  target N3 intersection law. It does not exclude the endpoint, improve the
+  general upper bound, or resolve Conway-99.

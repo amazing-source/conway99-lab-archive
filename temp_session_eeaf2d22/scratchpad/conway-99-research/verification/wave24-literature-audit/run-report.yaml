@@ -1,0 +1,72 @@
+role: literature
+date_utc: 2026-07-23T20:52:00Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: CITED
+target_result: UNKNOWN
+novelty_status: UNKNOWN
+scope: >
+  Proof-separated, source-first current-status and prior-art audit through
+  2026-07-23 for Conway's srg(99,14,1,2) problem and the Wave 24 conditional
+  n3=708 restriction det(B)<=6561=3^8 with surviving indices
+  h in {9,21,49,81,189,441,729,1029}, including its
+  characteristic-pseudodeterminant/logarithmic method and equivalent
+  projector-lattice concepts.
+inputs:
+  verification/wave24-literature-audit/preinspection-query-plan.md:
+    sha256: 9e4d1cff10092aa1fd171ad0c94dc17e8d4cd08fd6463fbb83bdd2374329ddd1
+  agents/2026-07-23-wave24-n3-708-index-boundary.md:
+    sha256: 461bbcff6399ae18c2764f68ea498b7eebba9780af0032b8e2e8fa18ca26af28
+  attempts/wave24-n3-708-index/exact-results.json:
+    sha256: a4241cdeea64a8f6073037d564e72fb7ef545287d45aca4759cec6c31d26a463
+  third_party_sources:
+    description: >
+      Primary, official, and maintained sources are enumerated in
+      source-query-ledger.json with stable identifiers, URLs, version or
+      publication dates where available, byte lengths, SHA-256 values, and
+      scoped inspection findings. Source bytes were hashed in memory and not
+      retained.
+method: >
+  Froze exact target, endpoint, number-list, determinant/index,
+  characteristic-pseudodeterminant, logarithmic-inequality, and
+  projector-lattice query families before proof inspection. Searched general
+  web, site-qualified bibliographic surfaces, arXiv API, OpenAlex, and
+  Crossref; inspected current primary sources and Brouwer's maintained table;
+  evaluated a located 2022 nonexistence claim at its displayed critical
+  layer-counting step; then opened the Wave 24 report only to transcribe and
+  compare its exact claim. No third-party cache and no Git operation were
+  used.
+command: |
+  Get-Content -LiteralPath verification/wave24-literature-audit/source-query-ledger.json -Raw | ConvertFrom-Json | Out-Null
+  Get-FileHash -Algorithm SHA256 verification/wave24-literature-audit/preinspection-query-plan.md,verification/wave24-literature-audit/source-query-ledger.json,verification/wave24-literature-audit/2026-07-23-wave24-literature-audit.md
+outputs:
+  verification/wave24-literature-audit/source-query-ledger.json:
+    sha256: dc916317ca3930257afb2e93d444f75de97d2bc9fa8cf3be30784ae7d282a244
+  verification/wave24-literature-audit/2026-07-23-wave24-literature-audit.md:
+    sha256: e8a9af0e7cbd72f4e34988a50ce487852e2520e6dcac081db8bf6a020b5a1c8d
+limitations:
+  - >
+    Search engines, bibliographic APIs, and citation trails are incomplete and
+    can lag; exact searches cannot establish global absence, novelty, or
+    priority.
+  - >
+    Current inspected specialized sources treat target existence as open, but
+    existence and nonexistence remain UNKNOWN.
+  - >
+    A 2022 JSAI technical report purports to prove nonexistence, but its
+    displayed equation (88) assumes a common-neighbor layer count that does not
+    follow from the strongly regular parameters. This audit assesses that
+    displayed gap, not every claim in the report.
+  - >
+    Exact numerical and method matches were not located only within the frozen
+    and enumerated queries and inspected sources. This is BOUNDED
+    NON-DISCOVERY.
+  - >
+    General characteristic-pseudodeterminant and rational-idempotent lattice
+    ingredients have older primary-source analogues, so broad method novelty
+    is not supported.
+  - >
+    The literature role did not replay or verify the Wave 24 mathematics and
+    cannot promote its conditional claim.
+  - >
+    Third-party bytes were not retained; hash replay depends on the cited
+    official sources remaining available at identical bytes.

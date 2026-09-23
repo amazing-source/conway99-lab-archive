@@ -1,0 +1,61 @@
+role: verifier
+date_utc: 2026-07-26T22:11:27Z
+git_commit: c3672c43ceb1317dc7fb1d1637800a08e129664a
+claim_label: VERIFIED
+scope: >-
+  Conditional n3=4158 spectral, Smith, Schur, scalar/local-relaxation, and
+  45-principal-minor claims only; endpoint existence and Conway-99 remain
+  UNKNOWN.
+inputs:
+  - path: agents/2026-07-26-wave35-n3-upper-spectral.md
+    sha256: 3b3c10e58996850337b5211fe6855cd1717cc1d47ae2f780dd50b4c01b40d0b9
+  - path: attempts/wave35-n3-upper-spectral/exact_check.py
+    sha256: 9146fd09b3ded2db31a1e9449eee1960b40247e0a4d78e67cadb4554cb4dd591
+  - path: attempts/wave35-n3-upper-spectral/test_exact_check.py
+    sha256: 8256c38aec55fa67ed85559828274cfd7c87d2b53ce24cb7b98e5d70341de8f5
+  - path: attempts/wave35-n3-upper-spectral/exact-results.json
+    sha256: ca1df07bede11642fb1639a2ae554c1a31ce9a58424d5b3e5031c90ad550a194
+  - path: attempts/wave35-n3-upper-spectral/failed-routes.md
+    sha256: bef6dce55d52bac94260c22f6a7710dcad15cd15b555d9331bd778bae9d7f692
+  - path: attempts/wave35-n3-upper-spectral/run-report.yaml
+    sha256: 98a48833b1558684024368098a518a142ab1630f37757fe36d4e208bd50c04f7
+method: >-
+  Independent exact reconstruction from the SRG parameters using integer and
+  rational arithmetic, plus adversarial boundary tests. No discovery-side
+  module or result JSON was imported.
+command: >-
+  python -B -m unittest -v
+  verification/wave35-n3-upper-spectral/test_independent_check.py;
+  python -B verification/wave35-n3-upper-spectral/independent_check.py
+  --verify verification/wave35-n3-upper-spectral/independent-results.json;
+  python -B -m unittest -v
+  attempts/wave35-n3-upper-spectral/test_exact_check.py;
+  python -B attempts/wave35-n3-upper-spectral/exact_check.py
+  --verify attempts/wave35-n3-upper-spectral/exact-results.json
+outputs:
+  - path: verification/wave35-n3-upper-spectral/independent_check.py
+    sha256: 9e6c9912c5f98d8079f546ff98196a398de50bea260997cdbadf9f4bccd66d5c
+  - path: verification/wave35-n3-upper-spectral/test_independent_check.py
+    sha256: 012308d411735bd918606d75b9937c47493cde07a51d92a09928f7140cbab247
+  - path: verification/wave35-n3-upper-spectral/independent-results.json
+    sha256: c704d8fce8f1d5975204b9a06ada0098c66fbdb9e0de8016a1ff89d86e691305
+  - path: verification/wave35-n3-upper-spectral/input-freeze.sha256
+    sha256: 4fc9bdedf7662b2854723e198a13b7d1a595ab6aa0493c0294374c5503f45392
+limitations:
+  - The endpoint matrix was neither constructed nor excluded.
+  - No upper bound below 4158 was proved.
+  - No 45-set satisfying the support-degree-at-most-three condition was found.
+  - The nonadjacent 7-by-7 witness is relaxed, not an incidence realization.
+  - Mixed-Schur and scalar feasibility do not imply existence.
+  - >-
+    The principal-minor condition concerns support degree sum_j |S_ij|, not
+    absolute algebraic row sum.
+verdict: VERIFIED_SCOPED_WITH_WORDING_QUALIFIER
+tests:
+  independent: 10 passed
+  submitted_replay: 14 passed
+status:
+  endpoint_excluded: false
+  endpoint_matrix_constructed: false
+  upper_bound_improved_below_4158: false
+  conway_99: UNKNOWN

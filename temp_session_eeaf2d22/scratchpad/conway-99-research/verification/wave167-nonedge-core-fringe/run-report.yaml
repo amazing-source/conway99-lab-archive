@@ -1,0 +1,29 @@
+role: verifier
+date_utc: 2026-07-28T15:36:08Z
+git_commit: 97fca7b5bd42d867e58e53d518a6bd2c39393004
+claim_label: VERIFIED
+scope: >-
+  Independently audit the P=0 cross graph, 18-core/four-fringe split,
+  mandatory failures, completion uniqueness, global defect identity and
+  endpoint gap, plus the scope of the abstract local-shell obstruction.
+inputs:
+  - path: attempts/wave167-nonedge-core-fringe/package-manifest.sha256
+    sha256: 523e93e0ce5e6ab22d7f48c206d7475053274e93abd001a6f045f39aeb315063
+method: >-
+  Clean-room SRG common-neighbor count, lane inclusion-exclusion, explicit
+  support and multiplicity audit, exact integer arithmetic, and vertex-wise
+  shell reconstruction.
+command: none; independent paper verification
+outputs:
+  - path: verification/wave167-nonedge-core-fringe/README.md
+    sha256: 45a4cd475690ebce25c450482e093a3136ce76828f0c032b9a960deadcc6526b
+  - path: verification/wave167-nonedge-core-fringe/verification-report.md
+    sha256: ccc37253384267dc884894cc03dbedfacabab9dec62181845ffe8b9e374bb825
+  - path: verification/wave167-nonedge-core-fringe/protocol.md
+    sha256: 4c87b557704bc27a948bf791ddb1e907b1d3dc9678458dfe1fc3532609ec2891
+limitations:
+  - The local shell is not a full strongly regular graph.
+  - The sufficient global bound E<=8 remains UNPROVED.
+  - No strict n3 bound or endpoint exclusion is verified.
+  - No computation ran under the host memory floor.
+  - Literature novelty and Conway-99 remain UNKNOWN.

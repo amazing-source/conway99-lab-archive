@@ -1,0 +1,268 @@
+{
+  "a2_arithmetic": {
+    "gram": [
+      [
+        2,
+        -1
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "norm_four_residue_obstruction": {
+      "forbidden_half_norm_residue": 2,
+      "form_modulus": 3,
+      "has_norm_four": false,
+      "represented_residues": [
+        0,
+        1
+      ]
+    },
+    "oriented_root_count": 6,
+    "roots": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "base_commit": "1f22323a2805e3e24f7848d53f2f4813e236fae9",
+  "basis_invariance": {
+    "M_factorization_preserved": true,
+    "original_gram": [
+      [
+        14,
+        7
+      ],
+      [
+        7,
+        14
+      ]
+    ],
+    "original_gram_is_21_s_inverse": true,
+    "transformed_T": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "transformed_Y_gram": [
+      [
+        14,
+        -7
+      ],
+      [
+        -7,
+        14
+      ]
+    ],
+    "transformed_frame_identity": true,
+    "unimodular_change": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "claim": {
+    "label": "VERIFIED",
+    "statement": "A 231-row projector frame with M=YTY^T, Y^TY=21T^-1, diagonal 4, and off-diagonal alphabet {0,1,-1,-2} cannot have T even positive definite with an orthogonal A2 summand.",
+    "verdict": "PASS_SCOPED_A2_FRAME_OBSTRUCTION"
+  },
+  "frame_count": {
+    "a2_energy": 42,
+    "coordinate_second_moment": [
+      [
+        14,
+        7
+      ],
+      [
+        7,
+        14
+      ]
+    ],
+    "fiber_cap_per_oriented_root": 3,
+    "forced_root_rows_exceed_capacity": true,
+    "root_norm": 2,
+    "root_rows_forced": 21,
+    "total_root_capacity": 18
+  },
+  "frozen_input_sha256": {
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+    "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+    "verification/wave24-n3-708-index/survivor-certificate.json": "a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2",
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de"
+  },
+  "hostile_controls": {
+    "allow_plus_two": {
+      "accepted_if_plus_two_added": true,
+      "accepted_originally": false,
+      "off_diagonals": [
+        2
+      ],
+      "row_count_same_oriented_root": 4,
+      "total_gram": [
+        [
+          4,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          4,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          4
+        ]
+      ]
+    },
+    "omit_frame_identity": {
+      "actual_a2_energy": 0,
+      "frame_identity_pass": false,
+      "local_gram": [
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "local_norms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "local_off_diagonals": [
+        0
+      ],
+      "local_projector_row_conditions_pass": true,
+      "required_a2_energy": 42
+    }
+  },
+  "same_oriented_root_fiber": {
+    "cauchy_feasible_residual_inner_products": [
+      -2,
+      -1
+    ],
+    "fiber_cap": 3,
+    "four_vector_sum_norm_upper": -4,
+    "raw_residual_inner_products": [
+      -4,
+      -3,
+      -2,
+      -1
+    ],
+    "same_a2_root_inner_product": 2
+  },
+  "scope": {
+    "abstract_E8_5_orthogonal_A2_2_coordinate_lattice": "PRESERVED",
+    "all_h_equals_9_forms": "UNKNOWN",
+    "arbitrary_primitive_embedding_without_projector_frame": "UNKNOWN",
+    "conway_99": "UNKNOWN",
+    "exact_E8_5_orthogonal_A2_2_projector_frame": "EXCLUDED",
+    "n3_equals_708": "NOT_EXCLUDED",
+    "novelty": "UNKNOWN"
+  },
+  "shared_a2_edge_cases": {
+    "opposite_orientations_must_be_separate_fibers": {
+      "a2_inner": -2,
+      "passes_original_set": true,
+      "residual_inner": 2,
+      "total_inner": 0
+    },
+    "three_same_oriented_roots_are_locally_possible": {
+      "passes_original_set": true,
+      "residual_gram": [
+        [
+          2,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          2,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          2
+        ]
+      ],
+      "total_off_diagonals": [
+        1
+      ]
+    }
+  },
+  "wave24_survivor": {
+    "A2_matches_verifier_convention": true,
+    "S_is_exact_E8_5_orthogonal_A2_2": true,
+    "abstract_coordinate_lattice_preserved": true,
+    "det_A2": 3,
+    "det_E8": 1,
+    "has_orthogonal_A2_summand": true,
+    "projector_frame_realization_excluded": true,
+    "rank": 44
+  }
+}

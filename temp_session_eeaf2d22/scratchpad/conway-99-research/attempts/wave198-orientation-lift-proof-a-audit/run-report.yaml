@@ -1,0 +1,26 @@
+role: proof_a
+date_utc: 2026-07-29T05:55:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Hostile independent audit of the sealed Wave198 orientation-lift row
+  and exact conditional Q>=7037 certificate.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  attempts/wave198-orientation-lift-proof-b/package-manifest.sha256: ba949fa2ededb7a23596fa0b05ca9e2d259f0e6a18c042814e2f3bc87b5b9054
+method: >-
+  Independent oriented-incidence reconstruction, collision attacks,
+  rational coefficient expansion, and null replay.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave198-orientation-lift-proof-a-audit\exact_check.py --verify
+  attempts\wave198-orientation-lift-proof-a-audit\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave198-orientation-lift-proof-a-audit\test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave198-orientation-lift-proof-a-audit.md
+  - attempts/wave198-orientation-lift-proof-a-audit/
+limitations:
+  - Proof-agent audit, not verifier promotion.
+  - Conditional on the prism-free rank-11 endpoint.
+  - Rational null is not an asserted object.

@@ -1,0 +1,31 @@
+role: verifier
+date_utc: 2026-07-23T16:20:37Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+phase: precomparison
+claim_label: DERIVED
+scope: independent reconstruction, checker, results, hostile tests, and retained harness failure before candidate inspection
+method: SHA-256 and byte length recorded after successful independent execution and before opening any submitted Wave 20 content
+candidate_content_inspected_at_freeze: false
+files:
+  - {path: attempts/wave20-global-obstruction/independent-verifier/preinspection-baseline.yaml, sha256: db6211c9ce36113f8160c41b5d534b2ab201cbe3fb1df4172fc48faaba7d95fb, bytes: 2713}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/public-premise-freeze.yaml, sha256: 9ccd6651cf96c155ecf970d5d5c77876ce6a114eec0a757bf95ad24c0b49c6fa, bytes: 2687}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/independent-reconstruction.md, sha256: 175f9cee0ad254130810e3c3951ffea77913239728d7b8d7faa5cde0e395defc, bytes: 8377}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/independent_check.py, sha256: efd00777b38fc180c11434cb452111ae7745109844d68aba763460b219208cfc, bytes: 17371}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/test_independent_check.py, sha256: 3aeb71a4ce6563a8a189770cdb4a3773ae7355ec0325824d0d78a618fdfb9bd0, bytes: 4791}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/independent-results.json, sha256: 575939f9abe19e5578a2efd1155495877c2080944c75cc0db6702c21a9ce2637, bytes: 7498}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/failed-runs.md, sha256: f82a4821c9fcc297659f13a2f64a8a456f5c97c374ef065471c5c10e1af31437, bytes: 1179}
+commands:
+  - >
+    python -B independent_check.py --output independent-results.json
+    (working directory: attempts/wave20-global-obstruction/independent-verifier)
+  - >
+    python -B -m unittest -v test_independent_check.py
+    (working directory: attempts/wave20-global-obstruction/independent-verifier)
+execution:
+  independent_checker: PASS
+  unit_tests: 16/16_PASS
+  hostile_mutations: PASS_ALL_DETECTED
+limitations:
+  - The exact checker accompanies the human proof; it does not instantiate a nonexistent 231-by-231 triangle graph.
+  - Standard spectral, Schur-product, and PSD zero-diagonal lemmas are checked in prose and by their exact hypotheses, not replaced by finite sampling.
+  - Novelty and target resolution remain UNKNOWN.

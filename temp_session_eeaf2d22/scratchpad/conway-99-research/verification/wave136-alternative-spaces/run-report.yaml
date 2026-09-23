@@ -1,0 +1,55 @@
+role: verifier
+date_utc: "2026-07-28T08:46:12Z"
+git_commit: "0a15bfe548e301ea98c83e292ba8931322e39945"
+claim_label: VERIFIED
+scope: >-
+  Conditional exact verification of the Wave136 Arf/Gauss diagnostic and
+  additive-GF(4) graph-state self-duality, symmetrized state counts,
+  MacWilliams transform, binary-axis coupling, and support-at-most-three
+  coefficient lower bounds for a hypothetical srg(99,14,1,2).
+inputs:
+  - path: attempts/wave136-alternative-spaces/strategy-memo.md
+    sha256: "fffa6107edafdce21400d5a3d51bd65756573c848e798aaaf58ab8b45458ac70"
+  - path: attempts/wave136-alternative-spaces/arf-results.json
+    sha256: "17659e6e03d7cd6681b16ca8c213462a12087e97124d93df603c8cdde2f3c9b9"
+  - path: attempts/wave131-binary-lcd-enumerator/rational-witness.json
+    sha256: "5e01ddb62d379464470d4ef9797cd6b83f51a9704dc2d94c8c1fa080e87657dc"
+method: >-
+  Freeze the binary quadratic-form and additive-GF(4) conventions before
+  reading discovery results; reconstruct binary Krawtchouk transforms and
+  Gauss sums over exact rationals; derive the four-symbol character matrix;
+  exhaustively enumerate all simple graph controls through order four; and
+  independently regenerate the support-at-most-three census from the SRG
+  parameters and the local 7K2 neighborhood.
+command: |-
+  python -B verification/wave136-alternative-spaces/independent_verify.py --verify verification/wave136-alternative-spaces/independent-results.json
+  python -B -m unittest discover -s verification/wave136-alternative-spaces -p "test_*.py" -v
+outputs:
+  - path: verification/wave136-alternative-spaces/independent-freeze.md
+    sha256: "a321dfcaba706b28d0035baf9e747d7db67a8a27cd2d4bcc78fddf6f8dbfe0fc"
+  - path: verification/wave136-alternative-spaces/independent_verify.py
+    sha256: "4897d718d01842291a8df1ada2b78188629ed7dcda5bd8121f34253297d31a03"
+  - path: verification/wave136-alternative-spaces/independent-results.json
+    sha256: "7129891b17e307dd0d881f759d609dc027a75858647777d7fda7f112acbdf7d3"
+  - path: verification/wave136-alternative-spaces/test_independent_verify.py
+    sha256: "bb74219fd109f2e77ad7ab559db1019fd12189b54908506ba2a9055a340a2354"
+  - path: verification/wave136-alternative-spaces/verification-report.md
+    sha256: "ef6e7c2ffd98f81131682dcf16252611093a3f7a4bd5664dc053c0bc3d1ec795"
+limitations:
+  - >-
+    The exact rank_F2(A)=54 is an imported previously verified Conway
+    adjacency fact; the mod-two adjacency identity alone does not determine
+    that rank.
+  - >-
+    The Arf derivation forces two signs and does not select a branch.
+  - >-
+    The mixed graph-state coefficients are a new modeled constraint layer,
+    but formal algebraic independence from every Wave134 consequence is
+    UNKNOWN_NOT_PROVED.
+  - >-
+    The quantum-shadow layer was not checked or promoted in this package.
+  - >-
+    No rational enumerator point, Farkas certificate, additive-code
+    realization, adjacency matrix, graph, upper bound, or external novelty
+    result is supplied.
+  - Conway-99 remains UNKNOWN.

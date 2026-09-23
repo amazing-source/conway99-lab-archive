@@ -1,0 +1,4089 @@
+ON STRONGLY  REGULAR  GRAPHS 
+MAJID  BEHBAHANI 
+A THESIS 
+IN 
+THE  DEPARTMENT 
+OF 
+COMPUTER  SCIENCE  &  SOFTWARE  ENGINEERING 
+PRESENTED  IN  PARTIAL  FULFILLMENT  OF  THE  REQUIREMENTS 
+FOR  THE  DEGREE  OF  DOCTOR  OF  PHILOSOPHY  (COMPUTER  SCIENCE  ) 
+CONCORDIA  UNIVERSITY 
+MONTREAL,  QUEBEC,  CANADA 
+MAY  2009 
+© MAJID  BEHBAHANI.  2009 
+1*1 
+Library and Archives Bibliothdque  et 
+Canada Archives  Canada 
+Published Heritage  Direction  du 
+Branch Patrimoine  de l'6dition 
+395 Wellington Street 
+Ottawa ON  K1A  0N4 
+Canada 
+395, rue Wellington 
+Ottawa ON K1A 0N4 
+Canada 
+Your file Votre  reference 
+ISBN: 978-0-494-63369-4 
+Our file Notre  reference 
+ISBN: 978-0-494-63369-4 
+NOTICE: 
+The author has granted a non-
+exclusive license allowing Library and 
+Archives Canada to reproduce, 
+publish, archive, preserve, conserve, 
+communicate to the public by 
+telecommunication or on the Internet, 
+loan, distribute and sell theses 
+worldwide, for commercial or non-
+commercial purposes, in microform, 
+paper, electronic and/or any other 
+formats. 
+AVIS: 
+L'auteur a accorde une licence non exclusive 
+permettant a la Bibliotheque et Archives 
+Canada de reproduire, publier, archiver, 
+sauvegarder, conserver, transmettre au public 
+par telecommunication ou par Nnternet, preter, 
+distribuer et vendre des theses partout dans le 
+monde, a des fins commerciales ou autres, sur 
+support microforme, papier, electronique et/ou 
+autres formats. 
+The author retains copyright 
+ownership and moral rights in this 
+thesis. Neither  the thesis nor 
+substantial extracts from it may be 
+printed or otherwise reproduced 
+without the author's permission. 
+L'auteur conserve la propriete du droit d'auteur 
+et des droits moraux qui protege cette these. Ni 
+la these ni des extraits substantiels de celle-ci 
+ne doivent etre imprimes ou autrement 
+reproduits sans son autorisation. 
+In compliance with the Canadian 
+Privacy Act some supporting forms 
+may have been removed from this 
+thesis. 
+While these forms may be included 
+in the document page count, their 
+removal does not represent any loss 
+of content from the thesis. 
+Conformement a la loi canadienne sur la 
+protection de la vie privee, quelques 
+formulaires secondaires ont ete enleves de 
+cette these. 
+Bien que ces formulaires aient inclus dans 
+la pagination, il n'y aura aucun contenu 
+manquant. 
+Canada 
+Abstract 
+On strongly  regular  graphs 
+Majid  Behbahani,  Ph.D. 
+Concordia  University,  2009 
+Strongly  regular  graphs  are  regular  graphs  with  the  additional  property  that  the 
+number  of common  neighbours  for  two  vertices  depends  only  on whether  the  vertices 
+are adjacent  or  non-adjacent. 
+From an  algebraic  point  of view, a graph  is strongly  regular  if its adjacency  matrix 
+has exactly  three  eigenvalues.  Strongly  regular  graphs  have  very  interesting  algebraic 
+properties  due  to  their  strong  regularity  conditions. 
+Many strongly  regular  graphs  are  known  to  have  large  and  interesting  automor-
+phism groups  [23]. In  [23] it is also conjectured  that  almost  all  strongly  regular  graphs 
+are asymmetric.  Peter  Cameron  in  [7] mentions  that  "Strongly  regular  graphs  lie  on 
+the cusp  between  highly  structured  and  unstructured." 
+Although  strongly  regular  graphs  have  been  studied  extensively  since  they  were 
+introduced,  there  is  very  little  known  about  the  automorphism  group  of an arbitrary 
+strongly  regular  graph  based  on  its  parameters. 
+In this  thesis,  we have developed  theory  for studying  the  automorphisms  of strongly 
+regular  graphs.  Our  study  is  both  mathematical  and  computational.  On  the  com-
+putational  side,  we  introduce  the  notion  of  orbit  matrices.  Using  these  matrices,  we 
+were able  to  show  that  some  strongly  regular  graphs  do  not  admit  an  automorphism 
+of a  certain  order. 
+Given the  size of the  automorphism,  we can generate  all of the  orbit  mat  rices, using 
+a computer  program.  Another  computer  program  is  implemented  that  generates  all 
+the strongly  regular  graphs  from  that  orbit  matrix. 
+iii 
+From a  mathematical  point  of view, we have found  an upper  bound  on  the  number 
+of fixed  points  of  the  automorphisms  of  a  strongly  regular  graph.  This  upper  bound 
+is a new  upper  bound  and  is  obtained  by  algebraic  techniques. 
+iv 
+Acknowledgements 
+I am extremely  grateful  for the support  and  encouragement  from  my Ph.D.  supervisor, 
+Dr. Clement  Lam.  Without  his  guidance,  expertise,  and  dedication  to  my  work, 
+this  thesis  would  not  have  been  possible.  He  provided  me  with  sound  advice,  clear 
+and stimulating  instruction,  and  countless  hours  of  his  time  so  that  I  could  see  the 
+completion  of  my thesis  and  Ph.D.  program. 
+I would  like  to  thank  Dr.  Clement  Lam,  as  well  as  the  Faculty  of  Engineering 
+and Computer  Science,  for  the  support  given  me  financially  since  the  beginning  of 
+my program. 
+I would  also  like  to  express  my  gratitude  to  the  other  members  of  my  thesis 
+committee  for  their  helpful  comments  and  feedback:  Dr.  Gregory  Butler,  Dr.  Jaroslav 
+Opatrny,  Dr.  Hershy  Kisilevsky,  and  Dr.  Eric  Mendelsohn. 
+Over the  years  I have been mentored  by  professors  who helped  me grow and expand 
+my academic  interests.  I  would  like  to  thank  Dr.  Pawel  Gora  for  his  inspirational 
+lectures  on  functional  analysis.  Thanks  also  to  Dr.  Vasek  Chvatal  for  the  thought-
+provoking  lectures  on  "Discrete  Mathematics  of  Paul  Erdos",  and  for  organising  the 
+weekly Concoco  seminars.  I  would  like  to  thank  Dr.  Hadi  Kharaghani,  my  master's 
+supervisor,  for  his continued  friendship,  support,  and  guidance. 
+I am  grateful  to  the  Department  of  Computer  Science  and  Software  Engineering 
+staff members.  I  especially  want  to  thank  Halina  Monkiewicz,  the  Graduate  Pro-
+grams  Advisor,  and  Pauline  Dubois,  the  Laboratory  Coordinator.  They  were  always 
+available  to  answer  my  questions  and  assist  me  in  any  way  possible. 
+I wish  to  thank  my  student,  colleagues,  with  whom,  over  many  years.  I  had  the 
+v 
+pleasure  of  sharing  an  office:  Bahman,  Stephen,  Azam,  Tanbir,  Hiba,  and  Narges. 
+I am  forever  indebted  to  my  parents  for  their  emotional  and  financial  support, 
+and for  the  sacrifices  they  made  so  that  I  could  reach  my  potential.  And  to  my  wife, 
+Evelyn,  thank  you  for your patience,  encouragement  and  love for these  past  few  years. 
+V] 
+Contents 
+1 Introduction  and  statement  of  the  problem  1 
+1.1 Organisation  of  the  thesis  /  1 
+1.2 Basic  definition  of  a  strongly  regular  graph  and  an  example  2 
+1.3 Partial  geometries  and  strongly  regular  graphs  4 
+1.4 Status  of existence  of strongly  regular  graphs  and  partial  geometries  .  7 
+1.4.1 Status  of  existence  of  strongly  regular  graphs  7 
+1.4.2 Status  of  existence  of  partial  geometries  8 
+1.5 Contributions  9 
+1.6 Related  work  9 
+2 Introduction  to  strongly  regular  graphs  12 
+2.1 Basic  concepts  12 
+2.2 Graph  automorphism  14 
+2.3 Algebraic  properties  16 
+2.3.1 The  eigenvalues  of a  strongly  regular  graph  16 
+2.3.2 The  idempotent.  matrices  22 
+2.4 Necessary  conditions  28 
+2.5 Some  combinatorial  constructions  of  strongly  regular  graphs  30 
+2.5.1 Triangular  graph  T(m)  30 
+2.5.2 Strongly  regular  graphs  from  orthogonal  arrays  31 
+2.5.3 Strongly  regular  graphs  obtained  from  a pair  of skew symmetric 
+Hadamard  matrices  35 
+vii 
+2.6 Strongly  regular  graphs  and  partial  geometries  40 
+3 Orbit  matrices  44 
+3.1 Introduction  44 
+3.2 Related  work  44 
+3.3 The  construction  45 
+3.4 Properties  of  orbit  matrices  and  prototypes  49 
+3.5 Upper  bounds  on  the  number  of  fixed  points  53 
+3.6 Computer  construction  of  orbit  matrices  58 
+4 Computer  search  for  strongly  regular  graphs  63 
+4.1 History  of  computer  search  for  strongly  regular  graphs  64 
+4.2 Methodology  64 
+4.3 An  example  66 
+4.4 Correctness  tests  70 
+4.5 Estimations  71 
+4.6 Results  73 
+4.6.1 Results  on  unknown  strongly  regular  graphs  73 
+4.6.2 Results  on  known  strongly  regular  graphs  75 
+5 Partial  geometries  79 
+5.1 Introduction  79 
+5.2 Automorphisms  of partial  geometries  79 
+5.3 Orbit  matrices  for  partial  geometries  80 
+5.4 Methodology  87 
+5.5 Results  88 
+6 Conclusion  89 
+6.1 Contribution  89 
+6.2 Future  work  90 
+vin 
+A Search  for  unknown  strongly  regular  graphs  with  less  that  100  ver-
+tices  96 
+B srg(49,18,7,6)  109 
+IX 
+List of  Tables 
+1 Unknown  strongly  regular  graphs  with  small  parameters  7 
+2 Partial  geometries  with  small  parameters  8 
+3 Results  summarising  the  possible  prime  divisors  of  the  order  of  the 
+unknown  strongly  regular  graphs  10 
+4 Automorphism  group  statistics  of all srg(36.14,4,6)  71 
+5 Results  summery  on  the  automorphism  groups  of  unknown  strongly 
+regular  graphs  76 
+6 Automorphism  group  statistics  of  all  srg(49,18,  7,6)  obtained  from 
+Latin  squares  of order  7  77 
+7 Automorphism  group  size statistics  of all srg(49,18.  7, 6) with automor-
+phism  group  size  divisible  by  5  and  7  obtained  from  the  SRG program.  77 
+8 Computer  run  results  on  the  automorphisms  ofsrg(65,32,15,16).  .  .  97 
+9 Computer  run  results  on  the  automorphisms  of srg(69,20,  7, 5) 98 
+10 Computer  run  results  on  the  automorphisms  of srg(75,32,10,16).  .  .  98 
+11 Computer  run  results  on  the  automorphisms  of srg(76,30,  8,14).  ...  99 
+12 Computer  run  results  on  the  automorphisms  of  srg(76,35,18,14).  .  .  99 
+13 Computer  run  results  on  the  automorphisms  of srg(85,14,  3,2)  100 
+14 Computer  run  results  on  the  automorphisms  of srg(85,30,11,10).  .  .  101 
+15 Computer  run  results  on  the  automorphisms  of srg(85,42,20,  21).  .  .  102 
+16 Computer  run  results  on  the  automorphisms  of  srg(88,27,6.  9). .  .  .  103 
+17 Computer  run  results  on  the  automorphisms  of  srg(95.40,12.  20). .  .  104 
+x 
+18 Computer  run  results  on  the  automorphisms  of  srg(96,35,10,14).  .  .  105 
+19 Computer  run  results  on  the  automorphisms  of  srg(96,38,10,18).  .  .  106 
+20 Computer  run  results  on  the  automorphisms  of  srg(96,45,  24,18).  .  .  106 
+21 Computer  run  results  on  the  automorphisms  of  srg(99,14,1,  2). ...  107 
+22 Computer  run  results  on  the  automorphisms  of  srg(99,42,  21,15)  .  .  108 
+23 srg(49,18,  7,6)  results  summery  109 
+XI 
+List  of  notations 
+r(«S): the  point  graph  of  S. 
+Stf delta  function, 
+, / 1 ifi = -?' 
+dij = < 
+I 0  otherwise. 
+5(G): minimum  degree  of G. 
+<p: the  number  of  fixed orbits  (points). 
+il>: the  number  of non-fixed  orbits. 
+A: incidence  matrix  of  a  partial  geometry. 
+B: adjacency  matrix  of a  strongly  regular  graph. 
+G(V, E):  a  graph  G  with  vertex  set  V  and  edge  set  E. 
+Gc: the  complement  of  the  graph  G. 
+GQ(s,t):  generalised  quadrangle  with  parameters  s  and  t. 
+I: the  identity  matrix. 
+J: the  all  one  matrix. 
+C\ set  of lines. 
+M =  diag(m,i,..., m^). 
+N =  diag(ni...., rib). 
+N(x):  the  neighbourhood  of  a vertex  x. 
+Num: number. 
+V: set  of points. 
+pg(s,  t, a): a  partial  geometry  with  parameters  s,  t,  and  a. 
+PG(2,  n): a  projective  plane  of order  n. 
+M: the  set  of  real  numbers. 
+S: point-line  structure. 
+S* : dual of point-line  structure  S. 
+srg(v. k.  A. //,): a  strongly  regular  graph  with  parameters  u,  k. A,  and /i. 
+T(m): the  triangular  graph  of  order  m. 
+IV = D2 
+xn 
+Chapter  1 
+Introduction  and  statement  of  the 
+problem 
+In this  chapter,  we  summarise  the  basic  definitions  and  theorems  about  strongly 
+regular  graphs  and  partial  geometries  that  we  are  using  in the  thesis.  Some  examples 
+are provided  for  a better  understanding  of  the  theory. 
+1.1 Organisation  of  the  thesis 
+In this  thesis,  we  study  the  existence  of  strongly  regular  graphs  and  their  automor-
+phisms.  For  this  purpose,  we developed  a  computer  program  called  the  SRG program. 
+Given an automorphism  of prime  order  and  the  parameters  of a strongly  regular  graph, 
+the SRG  program  is  able  to  tell  us  whether  or  not  there  is  a  strongly  regular  graph 
+with those  parameters  having  the  given  automorphism. 
+Strongly  regular  graphs  have  many  interesting  algebraic  and  combinatorial  prop-
+erties.  We  study  the  properties  of  strongly  regular  graphs  in  Chapter  2. 
+The SRG  program  uses  the  concept  of orbit  matrices  for  the  generation  of strongly 
+regular  graphs.  In  Chapter  3,  we  will  see  how  orbit  matrices  can  be  generated  for 
+strongly  regular  graphs. 
+In Chapter  4.  we will show how  the  computer  program,  we  developed  for  finding 
+1 
+strongly  regular  graphs,  works.  In  this  chapter,  we  will  also  show  the  results  we 
+obtained  by  running  this  computer  program. 
+In chapter  5,  we  will  show  how  the  orbit  matrices  can  be  obtained  for  partial 
+geometries.  We  also  show  how  partial  geometries  can  be  generated  by  a  computer 
+program. 
+The conclusion  and  future  work can  be  found  in Chapter  6. 
+1.2 Basic  definition  of  a  strongly  regular  graph 
+and an  example 
+We start  by  defining  the  concept  of  a  graph. 
+Definition  1.1  An  undirected  graph  G  consists  of  a  set  of  vertices  V(G):  together 
+with a  set of  edges  E(G) where  an  edge  is an  un-ordered  pair  of  vertices. 
+In this  thesis,  the  vertex  set  is  usually  the  set  {1,2,  ...,y}.  Please  note  that  we 
+sometimes  use  uv  or  (u,  u), to  represent  an  edge  {u.v}.  Two  vertices  u  and  v  are 
+adjacent, if  {u,  ?;} € E.  and  u  is  a  neighbour  of  v,  and  vice  versa.  Since  every  graph 
+in this  thesis  in  undirected,  we  shall  generally  omit  the  adjective  "undirected".  The 
+number  of neighbours  of a vertex  x  is  called  the  degree  of .x. A  graph  is  called regular 
+if all its  vertices  have  the  same  degree.  The  minimum  degree  of a graph  G\  denoted 
+5(G), is  the  minimum  degree  of  all  the  vertices  of  G.  The  adjacency  matrix  B  of  a 
+graph  G(V,  E)  is  the  |  V| x  |V|  matrix  such  that 
+A subgraph  of a  graph  G  is  a graph  H  such  that  V{H)  C  V{G)  and  E{H)  C  E{G). 
+A vertex  induced  subgraph  of  a graph  G  is  a subset  X  of  vertices  of G, along  with 
+all edges  that  have  both  their  endpoints  in  X.  An  edge  indvced subgraph  of  a  graph 
+G is  a subset  Y  of  edges  of G  along  with  all  vertices  that  are  endpoints  of the  edges 
+in Y. 
+0 otherwise. 
+2 
+Definition  1.2  A  strongly  regular  graph svg(v, k, A. /i) is  a graph with v  vertices  such 
+that the  number  of  common  neighbours  of  x and  y is  k, X,  or  n according  to  whether 
+x and  y  are  equal,  adjacent, or  non-adjacent,  respectively. 
+Example  1.  Matrix  B  defined  below is the  adjacency  matrix  of the  Petersen  graph. 
+0 0 0 0 0 0 0 1 1 1 
+0 0 0 0 1 1 0 0 0 1 
+0 0 0 0 0 1 1 1 0 0 
+0 0 0 0 1 0 1 0 1 0 
+0 1 0 1 0 0 0 1 0 0 
+0 1 1 0 0 0 0 0 1 0 
+0 0 1 1 0 0 0 0 0 1 
+1 0 1 0 1 0 0 0 0 0 
+1 0 0 1 0 1 0 0 0 0 
+1 1 0 0 0 0 1 0 0 0 
+One can  verify  that  the  Petersen  graph  is  an  srg(10,  3,0.1)  by  counting  for  each 
+edge, {u,  i'},  the  number  of  common  neighbours  of  u  and  v.  For  example,  {1,2}  ^  E 
+and the  vertex  10  is  the  only  common  neighbour  of  1  and 2,  which  agrees  with  the 
+assertion  that  //, = 1. 
+One can  see  that  by  simultaneously  cyclically  permuting  the  rows  and  columns 
+in these  groups,  group  1  being  {2,3,4},  group  2  being  {5,6,7},  and  group  3  being 
+{8, 9,10},  the  matrix  B  is  unchanged. 
+One can  also  see that  the  matrix  B  is  subdivided  into  9, 3 x 3  cyclic submatrices 
+and one  fixed  row  (column).  This  is  a  result  of  an  automorphism  of  order  3  Avith 
+1 fixed  point.  We  use  the  idea  of  automorphisms  in  order  to  reduce  the  size  of  the 
+search in  the  SRG  program.  The  search  space  is smaller  if we know the  whole  matrix 
+can be  divided  into  cyclic  submatrices.  • 
+3 
+1.3 Partial  geometries  and  strongly  regular  graphs 
+Partial  geometries  are  point-line  structures.  A  point-line  structure  is a triple  S =  (V,  £,  I) 
+where V  is  a  set  of  points,  £  is  a set  of  lines,  and  I  C  (V  x  £)  U  (£ x  V)  is  a  sym-
+metric  incidence  relation.  The  elements  of I are  also called  flags.  If  (P,  /) 6  /,  we  say 
+that  the  point  P  is  on the  line  I  or P  and  I  are  incident. 
+If S is  a point-line  structure,  <S*, the dual  of S, is  a point-line  structure  such  that 
+the points  (lines)  of  S*  are  the  lines  (points)  of  S.  Two  elements  are  incident  in  S* 
+if and  only  if they  are  incident  in  S. 
+The incidence  matrix  A  of  a  point-line  structure  is  defined  as  follows: 
+Definition  1.3  A  partial  linear  space  pls(,s, t) is  a  point-line structure  such  that: 
+(a) any  line  is  incident  with  5  + 1  points, and  any  point with  t  + 1  lines: 
+(b) two  lines  are  incident  with  at  most  one  point  (and  two  points with  at  most  one 
+line); 
+If two  lines  are  incident  with  a  point  they  are  called  concurrent.  If  two  points  are 
+incident  with  a  line  they  are  called  collinear. 
+Definition  1.4  A  partial  geometry  pg(s,  t, a) is  a  pis(s,t)  such that  for every  point 
+P not  incident  with  a  line I.  exactly  a  lines  on  P  are  concurrent with  I. 
+Example  2.  The  following  example  is  the  incidence  matrix  of  a pg(2,2,1). 
+0 otherwise 
+1 if  point  i  is  on line  j 
+4 
+I I I I I I I 1 I I I I I I I 
+1 2 3 4 5 6 7 8 9 ] 1 1 1 1 1 
+0 1 2 3 4 5 
+Pi 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 
+p2 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 
+Pz 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 
+PA 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 
+Ps 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 
+P6 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 
+PT 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 
+Ps 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 
+P9 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 
+P10 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 
+Pn 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 
+P12 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0 
+Pl3 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 
+Pi 4 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 
+Pis 0 0 0 0 0 0 0 0 0 1 1 0 0 1 0 
+The column  sum  in  this  example  corresponds  to  the  number  of  points  on  a  line, 
+which is s+1  =  3.  The  row sum corresponds  to  the  number  of lines incident  on a point, 
+which is  3  since  t  =  2.  To  check  that  it  is  a  partial  geometry,  we  need  to  verify  the 
+Q—condition  stated  in  Definition  1.4  for every point-line  pair  (P,  I) ^ I.  For  example, 
+we take  P  =  P\  and  I  —  I2-  The  set  of  lines  incident  with  is  {i1:  Z3,1-, 1$, Z10, £12}-
+From this  set., only  l\  is  incident,  with  P\.  The  o  condition  can  be  checked  similarly 
+for the  rest  of  the  point-line  pairs.  • 
+Partial  geometries  and  strongly  regular  graphs  are  related  because  the  existence 
+of a  partial  geometry  implies  the  existence  of two  strongly  regular  graphs. 
+The point  graph  of  a point-line  structure  S,  denoted  by r(<S). is a graph  where  the 
+vertices  are  the  points  of S. and  where  two  vertices  are  adjacent  if the  corresponding 
+points  in  S  are  collinear. 
+For example,  the  matrix  B  defined  as  follows: 
+5 
+0 1 0 0 1 1 0 1 0 1 0 0 1 0 0 
+1 0 1 0 0 1 1 0 1 0 0 0 0 1 0 
+0 1 0 1 0 0 1 1 0 1 0 0 0 0 1 
+0 0 1 0 1 1 0 1 1 0 1 0 0 0 0 
+1 0 0 1 0 0 1 0 1 1 0 1 0 0 0 
+1 1 0 1 0 0 0 0 0 0 1 1 0 0 1 
+0 1 1 0 1 0 0 0 0 0 1 1 1 0 0 
+1 0 1 1 0 0 0 0 0 0 0 1 1 1 0 
+0 1 0 1 1 0 0 0 0 0 0 0 1 1 1 
+1 0 1 0 1 0 0 0 0 0 1 0 0 1 1 
+0 0 0 1 0 1 1 0 0 1 0 0 1 1 0 
+0 0 0 0 1 1 1 1 0 0 0 0 0 1 1 
+1 0 0 0 0 0 1 1 1 0 1 0 0 0 1 
+0 1 0 0 0 0 0 1 1 1 1 1 0 0 0 
+0 0 1 0 0 1 0 0 1 1 0 1 1 0 0 
+is the  point  graph  of  the  partial  geometry  pg(2.  2,1),  shown  in  Example  2.  It  is  a 
+strongly  regular  graph  with  parameters  v  = 15,  k  = 6.  A  = 1,  fi  = 2. 
+Another  strongly  regular  graph  besides  the  point  graph  can  be  obtained  from  a 
+partial  geometry.  The  line  graph  of  a  point-line  structure  S  is  a  graph  where  the 
+vertices  are  the  lines  of S,  and  where  two  vertices  are  adjacent  if  the  corresponding 
+lines in  S  are  concurrent.  The  line  graph  of  a  partial  geometry  is  also  strongly 
+regular  because  it  is  the  point  graph  of  its  dual. 
+6 
+1.4 Status  of  existence  of  strongly  regular  graphs 
+and  partial  geometries 
+1.4.1  Status  of  existence  of  strongly  regular  graphs 
+One of the  most  important  problems  about  strongly  regular  graphs  is their  existence. 
+While many  classes  of  strongly  regular  graphs  are  constructed,  and  there  are  some 
+non-existence  results,  for  many  parameter  sets  the  existence  of  a  strongly  regular 
+graph  is  still  unknown. 
+The first  parameter  set,  for  which we are not aware  of the existence  of the  strongly 
+regular  graph,  is  v =  65,  k  = 32,  A  = 15,  fx  = 16. 
+The following  table  extracted  from  the  CRC-handbook  of  combinatorial  designs 
+[10] shows  the  parameters  of  strongly  regular  graphs,  with  100  or  fewer  vertices, 
+whose existence  are  unknown.  Since  the  complement  of  a  strongly  regular  graph  is 
+V k A 
+65 32 15 16 
+69 20 7 5 
+75 32 10 16 
+76 30 8 14 
+76 35 18 14 
+85 14 3 2 
+85 30 11 10 
+85 42 20 21 
+88 27 6 9 
+95 40 12 20 
+96 35 10 14 
+96 38 10 18 
+96 45 24 18 
+99 14 1 2 
+99 42 21 15 
+100 33 8 12 
+Table  1:  Unknown  strongly  regular  graphs  with  small  parameters 
+also strongly  regular  (Lemma  2.3).  Table  1  contains  only  the  parameter  sets  with 
+k <  v/2. 
+Our main  objective  within  this  thesis  is  to  determine  whether  these  unknown 
+strongly  regular  graphs  exist,  if  the  order  of  a non-trivial  automorphism  is  given. 
+1.4.2  Status  of  existence  of  partial  geometries 
+Because  of the  relationship  between  partial  geometries  and  strongly  regular  graphs, 
+one secondary  objective  is to investigate  the  possible  existence  of the unknown  partial 
+geometries.  An  extensive  amount  of  work  has  been  done  on  the  existence  of  partial 
+geometries.  Table  2, obtained  from  the  CRC-handbook  of  combinatorial  designs  [10], 
+shows the  existence  and  non-existence  of  partial  geometries  with  small  parameters. 
+It also  shows the  parameters  of the  associated  point  and  lines  graphs. 
+Partial  Geometry Point  Graph Line Graph 
+s t a Num. V k A P Num. V k A M Num. 
+2 2 1 1 15 6 1 3 1 15 6 1 3 1 
+2 4 1 1 27 10 1 5 1 45 12 3 3 + 
+3 4 2 0 28 15 6 10 4 35 16 6 8 + 
+3 3 1 2 40 12 2 4 28 40 12 2 4 + 
+4 6 3 2 45 28 15 21 1 63 30 13 15 + 
+3 5 1 1 64 18 2 6 167 96 20 4 4 + 
+5 8 4 0 66 45 28 36 1 99 48 22 24 + 
+6 6 4 ? 70 42 23 28 + 70 42 23 28 + 
+4 7 2 ? 75 32 10 16 ? 120 35 10 10 ? 
+3 6 1 0 76 21 2 7 0 133 24 5 4 0 
+5 5 2 + 81 30 9 12 + 81 30 9 12 + 
+4 4 1 1 85 20 3 5 + 85 20 3 5 + 
+6 10 5 ? 91 66 45 55 1 143 70 33 35 + 
+4 9 2 ? 95 40 12 20 ? 190 45 12 10 ? 
+5 6 2 ? 96 35 10 14 ? 112 36 10 12 ? 
+5 9 3 ? 96 50 22 30 ? 160 54 18 18 ? 
+Table 2:  Partial  geometries  with  small  parameters 
+In Table  2, the  column  "Num."  gives  the  exact  number  of non-isomorphic  partial 
+geometries,  or  the  specific  strongly  regular  graph  if the  number  is  known.  Otherwise. 
+8 
+a "+"  denotes  that  one  or  more  combinatorial  object  is  known,  and  a  "?"  denotes 
+that  its  existence  is  unknown. 
+The number  with  the  associated  point  or  line  graph  is  the  number  of  strongly 
+regular  graphs  with  the  specified  parameters,  but  they  may  not  be  the  actual  point 
+or line  graph  of  a partial  geometry. 
+We note  that  for  some  unknown  partial  geometries,  for  example  pg(6,6,4)  and 
+pg(6,10,  5), candidates  for  their  point  and  line  graphs  exist.  For  other  cases,  even  the 
+existence  of candidate  point  and  line  graphs  are  also  unknown. 
+1.5 Contributions 
+In this  thesis,  we  developed  the  theory  of  orbit  matrices  for  strongly  regular  graphs. 
+The theory  gives  an  efficient  method  to  test  the  existence  of a strongly  regular  graph 
+when given  an  automorphism  of  prime  order.  This  method,  implemented  using  a 
+computer  program,  allows  us to eliminate  many  primes  as possible divisors  of the  order 
+of the  automorphism  group  of  the  unknown  strongly  regular  graphs.  The  remaining 
+viable  prime  divisors  are  given  in  Table  3. 
+While testing  the  program,  we  have  also  found  some  new strongly  regular  graphs 
+with parameters  v  = 49.  k  —  18. A  = 7,  //  = 6,  that  are  not  isomorphic  to  the  known 
+srg(49,18,  7,6).  In  addition,  we  have  found  some  new  upper  bounds  on  the  number 
+of fixed  points  that  an  automorphism  of  a  strongly  regular  graph  may  have. 
+We have  also  generalised  the  theory  of  orbit  matrices  to  partial  geometries.  As 
+future  work,  a  computer  program  can  be  written  to  expand  the  orbit  matrix  to  a 
+partial  geometry. 
+1.6 Related  work 
+The main  result  of  a recent  paper  of  Paduchikh  [40]  is that. 
+9 
+possible  primes 
+G {p :  p\\Aut(G)\} 
+srg(65.  32,15,16) 2,3,5 
+srg(69.  20, 7, 5) 2,3 
+srg(75,32,10,16) 2,3 
+srg(76.30,8,14) 2,3 
+srg(76.35,18,14) 2,3,5 
+srg(85,14,  3, 2) 2 
+srg(85.30,11,10) 2,3,5,17 
+srg(85.42,20,21) 2,3,5,7 
+srg(88.  27,6,  9) 2,3,5,11 
+srg(95,40,12,  20) 2,3,5 
+srg(96,35,10,14) 2,3,5 
+srg(96.38,10,18) 2,3,5 
+srg(96,45,  24,18) 2,3,5 
+srg(99,14,1,2) 2,3 
+srg(99,42,  21,15) 2,3,5,7,11 
+srg(100,33,8,12) 2,3,5,11 
+Table 3: Results  summarising  the  possible  prime  divisors  of the  order  of the  unknown 
+strongly  regular  graphs. 
+10 
+Theorem  1.5  (Paduchick  [40])  If  G  =  srg(85,14,  3, 2), p  is  an  automorphism  of 
+G of  prime order  p. and  A  is  the  subgraph  induced  by  the fixed  points of  p, then  one 
+of the  following is  true: 
+(1) p  = 5  or p =  17  and  A  is  the  empty  graph; 
+(2) p  —7  and  A  is  a  1-clique  or  p =  5  and  A  is  a  5-clique; 
+(3) p  = 3. A  is  a  quadrangle or  a 2 x 5 lattice, and  in the  last  case the neighbourhoods 
+of six  vertices of  A contain  exactly  two  maximal  cliques; 
+(4) p  =  2.  the  neighbourhood  of  any  vertex  of  A  is  connected.  A  is  a  union  of  x 
+isolated vertices  and  y  isolated  triangles,  and  either  y  =  1  and  x  {4,  6} or 
+y = 0 and  x  =  5. 
+The proof of Theorem  1.5  is based on the  character  theory  of the Bose-Mesner  algebra 
+of the  graph. 
+One of  the  results  of  this  thesis,  as  seen  in  Table  13,  is  that,  the  only  possible 
+prime  divisor  of  the  size  of  the  automorphism  group  of  srg(85,14.3,  2) is  2,  which 
+implies the  items  1  to 3  of Theorem  1.5  are  not  possible. 
+In [35], Makhnev  and  Minakova,  by  using  the  same  technique  have  shown  that: 
+Theorem  1.6  (Makhnev,  Minakova  [35]  )  If  G  =  srg(99,14.1,2).  p  is  an  auto-
+morphism of  G of  prime order  p. and  A  is  the  subgraph induced  by  the fixed points  of 
+p. then  one  of  the  following is  true: 
+(1) A  is  the  singleton  graph  and  p equals  2 or  7: 
+(2) A  is  the  empty  graph  and  p equals  3 or  11: 
+(3) A  is  the  triangle  graph  and  p =  3. 
+One of the  results  of this  thesis,  as  seen  in  Table  21,  is  that,  the  only  possible  prime 
+divisors of the size of the  automorphism  group  of srg(85,14,3,  2) are 2 and 3. Moreover 
+if p =  3. then  there  are  no  fixed  points. 
+11 
+Chapter  2 
+Introduction  to  strongly  regular 
+graphs 
+2.1 Basic  concepts 
+In 1963.  Bose  [2] introduced  strongly  regular  graphs  and  partial  geometries.  A  com-
+prehensive  survey  about  the  construction,  uniqueness,  non-existence  and  necessary 
+conditions  for  partial  geometries  and  strongly  regular  graphs  is  given by  Brouwer  and 
+van Lint  [3].  We  shall  introduce  the  basic  properties  in  this  section. 
+The following  theorem  shows  the  relationship  of  the  parameters  of  a  strongly 
+regular  graph. 
+Theorem  2.1  If  G  is  an  svg(v. k,  A, //).  then  k(k  —  A  - 1)  = i_t(v  —  k  —  1). 
+Proof  To  show the  above  equality,  we  count,  in  two  different  ways, the  number  of 
+edges {y,  z} where  y  G  N(x) and  2  ^ N(x). 
+First fix  point  .r  and  choose  2.  We  have  v —  k —  1 possibilities  for  since  2  ^ N(.r) 
+and 2  x.  Now.  we  calculate  all  the  possible  choices  for  y.  Any  vertex  that  is 
+adjacent  to  both  x  and  2  is a candidate  for  y therefore,  by  Definition  1.2.  there  are  // 
+options  for  y. Thus  the  number  of  edges  {//.  2} is  equal  to  /i(t>  —  k —  1). 
+Next, we  count  the  number  of  edges  {ij.  2} by  choosing  the  vertex  y  first.  Since 
+12 
+y G N(x), there  are  k possible  choices  for y. Now,  we calculate  the  number  of possible 
+choices for z. Since  2 6 N(y)  and  z fi  N(x)  and  z ^  x,  there  are  k —  A —  1 possible ways 
+of choosing  2.  Therefore  the  number  of  edges  {y,  z} is  k(k —  A —  1) which  completes 
+The following  lemma  stems  directly  from  Definition  1.2. 
+Lemma  2.2  A  symmetric  (0,1  )-matrix B.  with  zero  on the diagonal, is  the adjacency 
+matrix of  srg(e,  k, A, /a) , if  and  only  if 
+Proof  We  know that  BJL] is equal  to  the  number  of  common  neighbours  of vertices 
+% and  j.  Therefore  by the  definition  of a strongly  regular  graph,  the  result  follows.  • 
+The complement  of  a  strongly  regular  graph  is  also  strongly  regular. 
+Lemma  2.3  The  complement  of  an srg(t», k, A, //) is  an srg(v, v —  k, v —  2k+jj, —  2, v — 
+2k + A  - 2). 
+Proof  If  B  is  the  adjacency  matrix  of  a  strongly  regular  graph,  then  J  —  I  —  B is 
+the adjacency  matrix  of  its  complement.  Using  Equation  1,  we can  see  that 
+{J-I-  Bf  =  (k  -  v)I  +  [v  - 2k  + n  -  2)(  J -  I  -  B)  +  {v  - 2k  + A  - 2  )B. 
+Therefore  the  complement  of  an  srg(t>, k. A, f i) is  an  srg(t>, v —  k, v —  2k  + fi —  2.  v — 
+2k + A  - 2).  • 
+If G  =  srg(f,  k, A, fi) is  disconnected,  then  /< -- 0,  because  there  are  at  least  two 
+non-adjacent  vertices  that  have  no common  neighbours.  In  this  case,  G is the  disjoint 
+union of  m complete  graphs  Kn.  A  strongly  regular  graph  that  is  connected,  and  its 
+complement  is  connected  is  called  primitive  To  avoid  the  trivial  case,  throughout 
+this thesis,  all  strongly  regular  graphs  are  considered  to  be  primitive. 
+the proof. • 
+B2 =  kl  +  XB +  /i(J -  /  -  B). (1) 
+13 
+2.2 Graph  automorphism 
+In this  thesis,  we  study  strongly  regular  graphs  with  a  non-trivial  automorphism 
+group. In  this  section,  we  review  the  mathematical  definition  of the  automorphism 
+group  of a  graph  and  its  properties. 
+An automorphism  is  a  permutation  p  on  the  vertices  of  a  graph  G  such  that  for 
+any u.v  G  V(G), (up,vp)  G  E(G) if  and  only  if (u,v)  G  E(G). This  fact  can  also  be 
+expressed  using  the  matrix  notation. 
+If p  is  a  permutation,  then  the  corresponding  permutation  matrix  P  =  [p^]  is 
+obtained  by  permuting  the  rows  of the  identity  matrix  by  permutation  p.  P  can  also 
+be defined  as  follows: 
+1 if  jp =  i 
+0 otherwise. 
+Let A  be  the  adjacency  matrix  of  a  graph  G,  a  permutation  matrix  P  is  an 
+automorphism  of  A  if  and  only  if 
+Pij = 
+PAPt =  A. 
+Example  3.  If 
+A = 
+0 0 0 0 0 0 0 1 1 1 
+0 0 0 0 1 1 0 0 0 1 
+0 0 0 0 0 1 1 1 0 0 
+0 0 0 0 1 0 1 0 1 0 
+0 1 0 1 0 0 0 1 0 0 
+0 1 1 0 0 0 0 0 1 0 
+0 0 1 1 0 0 0 0 0 1 
+1 0 1 0 1 0 0 0 0 0 
+1 0 0 1 0 1 0 0 0 0 
+1 1 0 0 0 0 1 0 0 0 
+14 
+is the  adjacency  matrix  of  a  graph  G,  and 
+1 0 0 0 0 0 0 0 0 0 
+0 0 1 0 0 0 0 0 0 0 
+0 0 0 1 0 0 0 0 0 0 
+0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 1 0 0 0 
+0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 1 0 0 
+we can  see  that 
+PAPt =  A. 
+Therefore  P  is  an  automorphism  of  G. • 
+Let p  and  a  be  automorphisms  of a graph  G.  Let  per denote  the  composition  of  p and 
+a. Both  p  and  a  are  the  members  of the  symmetric  group  on  V(G).  We  have 
+xy G  E(G) &  xpyp  G  E{G) 
+xpoypa G  E(G). 
+Therefore,  the  set  of  automorphisms  of  a  graph  G  under  composition  operation  is 
+closed. Thus  it  forms  a  subgroup  of  the  symmetric  group  on  V(G).  We  call  this 
+subgroup  the  automorphism  group  of G namely  Aut(G). 
+The automorphism  group  of  a  graph  shows  us  the  symmetry  of  the  graph.  For 
+more information  about  the  automorphism  group  of  graphs  please  see  [1]  and  [6]. 
+Frucht. in  [21]  has  shown  that  any  group  can  be  represented  as  the  automorphism 
+group  of  a  graph.  Moreover,  if  the  group  is  finite,  then  the  graph  can  be  taken  as  a 
+finite  graph.  Mendelsohn  in  [39]  has  further  shown  that  for  every (finite)  group  H. 
+15 
+there  is  a  (finite)  strongly  regular  graph  G  such  that  the  automorphism  group  of  G 
+is isomorphic  to  H. 
+If the  automorphism  group  of  a  graph  is  the  identity,  then  the  graph  is  called 
+asymmetric. That  means  the  graph  has  no  non-trivial  automorphism.  It  is  shown 
+in [18] by Erdos  that  almost  all  graphs  are  asymmetric.  It  is  also  conjectured  in  [23] 
+that  almost  all  strongly  regular  graphs  are  asymmetric. 
+On the  other  hand,  Peter  Cameron  in  [7] notes  that  "Strongly  regular  graphs  lie 
+on the  cusp  between  highly  structured  and  unstructured". 
+Even though  strongly  regular  graphs  had  been  studied  extensively  since  they  were 
+introduced,  there  is  not  much  known  about  the  automorphism  group  of an  arbitrary 
+strongly  regular  graph  based  on  its  parameters. 
+For this  reason,  we  are  interested  to  know  more  about  the  automorphisms  of 
+strongly  regular  graphs. 
+2.3 Algebraic  properties 
+2.3.1  The  eigenvalues  of  a  strongly  regular  graph 
+The adjacency  matrix  of a strongly  regular  graph  has  interesting  algebraic  properties. 
+For one,  it  has  exactly  three  eigenvalues. 
+Let B  be  the  adjacency  matrix  of a primitive  srg(t>, k, A, //), and  let  j be  an  all-one 
+vector of  size  v. By  the  definition  of a  strongly  regular  graph,  the  row  (column)  sum 
+of B  is  k;  thus  B]  =  kj.  Therefore,  j  is  an  eigenvector  of  B  and  k  is  one  of  the 
+eigenvalues of B.  We  will see  that  the  multiplicity  of  the  eigenvalue  fc is 1. 
+We need  to  mention  a  few  lemmas  in  order  to  prove  the  above  statement.  We 
+start  with  the  definition  of a  reducible  matrix. 
+Definition  2.4  An  nxn  matrix  M  is  called reducible  if  there is a  permutation matrix 
+P such  that 
+16 
+where M\  and  M2 are  square matrices  of  size  at  least  one. 
+A matrix  is  called  irreducible  if  it  is  not  reducible.  Clearly  the  adjacency  matrix 
+of a  connected  graph  is  irreducible. 
+Eigenvalues of real non-negative  matrices  have  interesting  properties.  The  Perron-
+Frobenius  theorem  characterises  the  properties  of real positive  and  non-negative  ma-
+trices.  We  only  mention  the  parts  of  the  Perron-Frobenius  theorem  that  we  need. 
+Please  refer  to [28] for  the  complete  version  of  the  theorem. 
+Define the spectral  radius  p  of a  matrix  A  to  be  its  largest  eigenvalue: 
+The proof  of the  following  theorem  is  given  in  [28]. 
+Theorem  2.5  (Perron-Frobenius)  Let  A  be  a  real  non-negative irreducible  ma-
+trix. then 
+2. p(A)  is  an  eigenvalue  of  A; 
+3. The  algebraic  multiplicity of  p(A) is  one. 
+Another  fundamental  theorem  that  we  would need  to  use to  conclude  the  main  result 
+is the  Gersgorin  circle  theorem  [22]. 
+For a  square  matrix  A  =  [a.^].  define  the  deleted  absolute  row-sums  of  A as 
+The following  theorem  (Gersgorin  circle  or  disc  theorem)  indicates  that  all  the 
+eigenvalues of A are  inside  the  closed  discs  centred  at  an  with  radius  Rr  in  the  complex 
+plane  C.  For  the  proof  of  this  theorem,  we  refer  the  reader  to  [28]. 
+Theorem  2.6  (Gersgorin)  Let  A  =  [a^]  be  a complex n  x  n  matrix,  and  let 
+p(A) =  max{|Aj(v4)l). 
+1. p(A)  >  0; 
+Di =  {z  e  C  :  [2  -  nii|  <  R,}. 
+17 
+where Ri s  are  the  deleted  absolute  row-sums,  then  all  the  eigenvalues of  A lie  inside 
+the union  of  all  Di "s. 
+The following  lemma  is  related  to  the  eigenvalues  of  a  regular  graph.  For  more 
+information  about  eigenvalues  of regular  graphs  please  see  Brualdi  and  Ryser  [4]. 
+Lemma  2.7  Let  A  be  any real  irreducible non-negative  matrix  of  order  n  with  con-
+stant row  sum k  and  diagonal  zero.  Then  k  is  an  eigenvalue of  A of  multiplicity equal 
+to 1.  Also  if.  A is another  eigenvalue  of  A. then  |A|  <  k. 
+Proof  Let  j  be  an  all  one  vector  of  size  n.  We  have  Aj  =  kj.  Therefore  k  is  an 
+eigenvalue of  A.  Since  the  deleted  absolute  row-sum  of  every  row  of  A  is  k,  and 
+an =  0  for all z, all the  eigenvalues  of A lie inside  the  disk: 
+D =  {z  €  C  :  \z\ <  k}, 
+by using  Gersgorin's  theorem  (Theorem  2.6).  Therefore  no other  eigenvalue  of A has 
+modulus  larger  than  k.  Since  k  is  the  largest  modulus  eigenvalue, 
+p{A) =  k. 
+We assumed  that  A  is  irreducible.  Thus,  we  can  use  the  Perron-Frobenius  theorem 
+(Theorem  2.5),  to  see that  the  multiplicity  of  A is  equal  to  1.  • 
+Since the strongly  regular  graph  is primitive,  it  is connected,  hence  B is  irreducible. 
+Thus  the  above  theorem  applies  and  k  is  an  eigenvalue  of B with  multiplicity  1.  We 
+will see that  B  has  exactly  two  other  eigenvalues.  The  following  lemma  is  a standard 
+result  that  will  help  us  to  find  tbe  other  two  eigenvalues. 
+Lemma  2.8  Let  M  be  any symmetric  real-value  matrix.  Then  the  eigenvectors  cor-
+responding to  different  eigenvalues  of  M are  orthogonal. 
+18 
+Proof  Assume  a  and  (3  are two  different  eigenvalues  of  M  and  x  and  y  are  the 
+corresponding  eigenvectors.  We  have 
+rp rj-1 ay x  =  y  Mx 
+= (xTMy)T 
+= (xTPy)T 
+= PyTx. 
+Since a ^  [5,  we should  have  yTx  =  0  and the  previous  equation  is  satisfied.  • 
+Using Lemma  2.8,  every  other  eigenvector  of i?-should  be  orthogonal  to  j. Let  a  k 
+be another  eigenvalue  of B with  the  corresponding  eigenvector  x. Applying  Equation 
+1, we have 
+B2X +  (n  -  A)Bx  + {[x- k)Ix  -  iiJx  =  0.  (2) 
+Using Lemma  2.8,  we  have 
+Jx =  0. 
+Therefore  Equation  2  simplifies  to 
+a2x +  (/i  —  A)ax  + ([/. —  k)x =  0. 
+Since the  eigenvector  x  ^  0.  we have 
+a2  +  (/x - A)a  + {n  - k)  =  0.  (3) 
+The eigenvalues  of B  must  be  the  zeros  of the  quadratic  equation  (3).  Therefore  B 
+has exactly  two  more  eigenvalues,  which  are  the  solutions  of Equation  3: 
+r =  ^  (A  -/i  +  -  A*)2 + 4(fc -/x))  ,  (4) 
+and 
+s = \(  A-/x-V(A~//)2+4(/c-/*))•  (5) 
+Since k is always greater  than  //, in a  primitive  strongly  regular  graph,  the  expression 
+under the  square  root  in  Equations  4  and  5  is  always  positive.  Therefore  the  two 
+eigenvalues are  always  distinct. 
+19 
+Let /  and  g  be  the  multiplicities  of the  eigenvalues  r  and  s  respectively.  We  have 
+V=l  +  f  +  g. (6) 
+Since the  sum  of  the  eigenvalues  is  equal  to  the  trace  of the  matrix,  we  have 
+k + fr +  gs =  tr(B)  =  0.  (7) 
+Solving Equations  6  and  7  for / and  g,  and  using  the  values  of r and  s  in  Equations 
+4 and  5,  we find 
+2 ^  ^(A  -  v.y  + i{k  - v)) 
+and 
+Using Equations  8  and  9,  and  restricting  /  and  g  to  non-negative  integers,  we 
+have a  very  strong  necessary  condition  on  the  parameter  set  (v.  k, A, //). 
+If (u—!)(//—A)  —  2k 0,  then  the  requirement  that  /  and  g be integers  implies  that 
+\/(A  —  /i)2  + 4(k  —  fi) should  be  a perfect  square.  In  this  case,  ^(A  —  //)2  + 4(k  —  //.) 
+is even,  if and  only  if A  —  /x is even.  Thus,  from  Equations  4  and  5,  the  eigenvalues  r 
+and s  are  integers. 
+If (v  —  l)(ju  —  A) —  2k  =  0,  then  f  =  g  and  r  and  s  need  not  be  integers.  In  this 
+case, the  strongly  regular  graph  is  a conference  graph. 
+The following  lemma shows the  eigenvalues  of the complement  of a strongly  regular 
+graph. 
+Lemma  2.9  Let  G  be  a strongly regular  graph with  parameters (v,  k, A, p) and  eigen-
+values k.  r,  and  s.  Then  Gc  has  eigenvalues  v  —  k—  1.  —r  —  1, and  —  s —  1. Moreover 
+the eigenspaces  of  G' and  G  are  the  same. 
+Proof  Let.  B  be  the  adjacency  matrix  of  G.  then  the  adjacency  matrix  of  Gc  is 
+Bc =  J  —  I —  B. We  know that  k  is  an eigenvalue  of G and  its  eigenspaee  is  the  space 
+of constant  vectors.  Let  .r  be  a  constant  vector,  then,  we  have: 
+Bcx =(./-/-  B).r  =  v.r - r  - k.r  = (r  -  k  - l).r. 
+20 
+Therefore  v  —  k —  1  is  an  eigenvalue  of  Gc,  and  its  eigenspace  is  the  same  as  the 
+eigenspace  of k. 
+Let y  be  an  eigenvector  of  B  corresponding  to  the  eigenvalue  r.  We  know  that  y 
+is orthogonal  to  j.  We  have 
+Bcy =  (J  -  I  -  B)y  =  0  - y  - ry  =  (-1  -  r)y. 
+Therefore  —?•—  1 is an eigenvalue  of Gc, and  its  eigenspace  is the same as the eigenspace 
+of r. 
+We can  show  that  —  1 —  s is  an  eigenvalue  of Gc  in  a  similar  way. • 
+The results  of  this  subsection  are  summarised  in  the  following  theorem: 
+Theorem  2.10  Let  G  be  a  strongly regular  graph  with  parameters  (v.k,X,fi),  then 
+the eigenvalues  of  G have  the  following properties: 
+1. G  has  exactly  three  eigenvalues  which  are  k. r.  and  s  where 
+and 
+s =  I  (A  - //  - v/(A  - /i)2  + 4(k-fi 
+2. The  multiplicity  of  eigenvalue k  is  1  and the  multiplicities ofr  and  s  are  f and 
+g respectively where 
+/=»/„-,+  ("-DO'"A)-2* 
+2 ^  V"(A  - +  4(fc - „) 
+and 
+1 (  (v  - l)(fj  -  A)  - 2k q = -  f  —  1  ^ 2 ^  ^/(A  -/,)2  +  4(A:-/x)/ 
+3. If  (v  —  l)(/i  —  A) —  2k  0.  then  the  eigenvalues  r  and  s  are  integers. On  the 
+other hand  if  (v  —  —  A) —  2k  =  0.  then  f  —  g and  r  and  s  need  not  be 
+integers. The  strongly  regular  graph is  called  a  conference graph  in  this  case. 
+21 
+2.3.2  The  idempotent  matrices 
+In this  subsection,  we  introduce  the  concept  of  idempotent  matrices  for  strongly 
+regular  graphs.  These  matrices  play  a  crucial  role  in  the  study  of  strongly  regular 
+graphs. 
+In order  to  study  these  matrices,  we  need  to  use  some  classical  definitions  and 
+theorems  of linear  algebra. 
+The following  definitions  are  obtained  from  [19] and  [27], with  some  minor  modi-
+fications. Let  V  be  a  vector  space  and  V\....  ,Vm  be  its  subspaces. 
+Definition  2.11  The  sum  ofV\,...,  Vm.  namely  VH  \-Vm  is  the set of  all vectors 
+V\ + H  vm. where  vt  £  Vt  for all  1 < i  <  m. 
+Using the  definition  of vector  spaces,  we  can  see  that  V\  -\ +  Vm  is  a  subspace  of 
+V. 
+Definition  2.12  A  vector  space  V  is  said  to  be  the  direct  sum  of  its  subspaces 
+Vi,..., Vm.  namely 
+V =  Vj  © • • • © Vm 
+if and  only  ifV  =  V\-1  +  14,  and  V\,...  ,Vm  are  independent. 
+We state  the  following  lemma  without  proof. 
+Lemma  2.13  V  =  V\  ©  • • • © Vm  if  and  only  if  every  vector  v  €  V  has  a  unique 
+representation 
+v =  vx  -1 1-  vrn 
+for some  Vi  € Vi. 
+Definition  2.14  A  linear  transformation  E  is  called  a projection  or  idempotent  if 
+E2 =  E. 
+Let V  =  Vi©-  - -©Vm and  let w = hvm,  for  vi € V*, be the  unique  representation 
+of v as  mentioned  in  Lemma  2.13.  Define  EiV = Ei  is  a linear  transformation  and 
+the range  of Ei  is  V*. Since  EiEiV  =  EiVi  = Vi  = E{v,  we have 
+El =  Ei. 
+Therefore  Ei is a projection.  The  linear  transformation  Ei  defined  above  is  called  the 
+projection ofV  onto  Vi. 
+A square  matrix  A  =  [a,j]  with  complex  entries  is  called  Hermitian  if  al3  =  a*,. 
+Here the  superscript  *  is the  complex  conjugate  operation.  A  linear  transformation 
+is called  self-adjoint  if  its  matrix  is  Hermitian. 
+In this  part,  we explain  an  important  theorem  called  the  Spectral theorem.  We  use 
+the Spectral  theorem  to  find  idempotent  matrices  E\  and  E2  for any strongly  regular 
+graph. 
+Spectral  theory  has  been  studied  extensively  in  operator  theory.  The  Spectral 
+theorem  reveals  the  structure  of  normal  operators  on  a  Hilbert  space.  If  N  is  a 
+normal  operator  on  a  finite  dimensional  Hilbert  space  H,  then  the  theorem  states 
+that  the  eigenvectors  of  N  form  an  orthonormal  basis  for  H [12],  [20]. 
+Here, we  only  explain  the  theorem  on  a  finite  dimensional  space  and  refer  the 
+reader  to  [12] for the  general  case.  There  are  different  ways to  prove  the  finite  dimen-
+sional case. 
+In order  to  prove the  Spectral  theorem,  we  need to  use some results  on self-adjoint 
+linear  transformations.  We  state  the  following  theorem without  a  proof.  For  the  proof 
+of this  theorem  please  refer  to  [27,  page  313]. 
+Theorem  2.15  Let  V  be  a  real  finite dimensional  inner  product  space  of  positive 
+dimension and  let  T :  V —>  V  be  a self-adjoint linear  transformation. Then  T  has  a 
+real non-zero eigenvector. 
+The following  theorem  can  be  found  in  [27,  page  314]. 
+23 
+Theorem  2.16  LetV  be  a finite  dimensional  inner  product  vector  space  owerM and 
+let T  :  V —>  V  be  a  self-adjoint linear  transformation.  Then  there  exists  a  set  of 
+eigenvectors ofT,  which  form an  orthogonal  basis  for V. 
+Proof  Proof  by  induction  on  the  dimension  of  V. 
+If dim  V =  1,  then  the  proof  is  trivial.  If  dim  V >  1,  then  by  Theorem  2.15,  T 
+has at  least  one  real  non-zero  eigenvector  xj.  Let  Vi be  the  subspace  of V consisting 
+of all  vectors  orthogonal  to  x\.  We  have  dim  V\ —  dim  V —  1.  By  the  induction 
+hypothesis  V\  has  an  orthogonal  basis  consisting  of eigenvectors  of T.  Call  this  basis 
+{x2..... xn}.  Since  xi.xt =  0,  the  vectors  xt  are  independent  from  X\ for  i > 2  .  Thus 
+{xi,....  Xn} forms  an  orthogonal  basis  for  V.  • 
+Theorem  2.17  (Spectral  Theorem)  Let  V  be  a finite  dimensional  inner  product 
+vector space  over  R  and  let  T  :  V —>•  V  be  a self-adjoint linear  transformation.  Let 
+\i,...,\k be  the distinct  eigenvalues  of  T  and  Vt  's be  their associated  eigenspaces. 
+Let Ei  be  the projection ofV  on  Vi.  Then 
+1. V  =  V!  © • • • © 14: 
+2. Ej  +  --- +  Ek= I; 
+3. T  =  \1E1  +  ---  +  XkE/c-
+Proof  Using  Theorem  2.16,  we  see that  V  =  V\  ^ 1-14-  We will show that  V,  's 
+are independent  in  order  to  prove  part.  (1).  Lemma  2.8  can  be  generalised  to  self-
+adjoint  linear  transformations  using  a  similar  proof.  Therefore  the  eigenvectors  of  T 
+corresponding  to  different  eigenvalues  are  orthogonal.  If  v, £  Vi and v\  H b  i'k =  0, 
+then,  we  have 
+0 =  =  V{Vi  =  112-
+j i 
+Thus  the  subspaces  Vt  are  independent  and 
+V =  r,  ©  • • • © 14. 
+2-1 
+Let a  be  an  arbitrary  vector.  Since  V  =  Vi  © • • • © 14, we have  a =  aH  Van 
+such that  a,  G  V%. Since  Ei s  are  projections  of V on  Vi,  we have  EtQ =  at.  Therefore 
+(Ei +  b  Ek)a =  «H  h  afc 
+—  Q-
+which leads  to 
+Let a  be  an  arbitrary  vector  in  V.  Since  Ei  is  the  projection  of  V  on  Vi,  we  know 
+that 
+on = Eia  e  V. 
+Since Vi is an  eigenspace  of T,  we  have 
+Ton =  XiOi. 
+Yielding 
+TEi<y. = \iEia 
+for any  a  G  V". Hence 
+TEi  =  A  iEi. 
+Since Ei  +  • • • + =  h  we  have 
+T =  TI 
+= T(Ei  +  ---Ek) 
+= TEi  H  TEk 
+= XiEi  +  • • • + A  kEk-
+• 
+A matrix  U  is called  unitary  if 
+U*U = I. 
+25 
+The following  corollary  can  be  deduced  from  the  Spectral  theorem,  but  we  refer  the 
+reader  to  [33] for its proof,  since  it is equivalent  to  the theorem  we have already  proved. 
+Some textbooks  call  Corollary  2.18  the  Spectral  theorem  and  deduce  Theorem  2.17 
+as a  corollary  [42]. 
+Corollary  2.18  Hermitian  matrices  are  unitarily  diagonisable  which  means  if  A  is 
+Hermitian. then 
+A =  U*DU, 
+where the  matrix  U  is  a  unitary matrix 
+( Ai  0  ^ 
+D = 
+\ 1 
+and Ai,....  An are  the  eigenvalues  of  A. 
+Xn 
+Now, we  apply  the  Spectral  theorem  to  the  adjacency  matrix  B  of  G =  srg(t», k, A, //) 
+to find  the  idempotent  matrices  E0,  E\,  and  E2.  Let  V  be  R",  the  v  dimensional 
+real vector  space.  Let  V'o. Vj,  and  V2  be  the  eigenspaces  of  B  corresponding  to  the 
+eigenvalues k,  ?\  and  s  respectively.  Define  Ei  to  be  the  projection  of  V  onto  Vi  for 
+i =  0,1,2.  These  matrices  are  called  minimal  idempotent  matrices.  From  Theorem 
+2.17, we  have  the  following  equations: 
+Eo + Ei +  E2  =  I, 
+B =  kE0  +  rE\ +  sE2, 
+and 
+Bc =  J-B-I  =  (v-k-  1)E0  +  (-r  -  1)^  +  (—s  - 1  )E2. 
+Please  note  that  the  last  equation  comes  from  the  fact  that  J  —  B —  L the  adjacency 
+matrix  of  the  complement  of  G.  has  the  same  eigenspaces  as  B.  After  solving  the 
+above three  sets  of  equations,  we  find: 
+Eo = ~J,  (10) a 
+26 
+El =  -L-  -  si  +  ,  (11) 
+and 
+E2 =  -L-{b-tI  +  —J\.  (12) s - r  \  v  J 
+Definition  2.19  A  Hermitian  n  x  n matrix  A  is  called  positive semidefinite  if  for all 
+non-zero vectors  z  £  C". 
+z*Az >  0.  (13) 
+If the  inequality  in  Equation  13  is  strict  (z*Az  >  0/.  then  the  matrix  A  is  called 
+positive definite. 
+Lemma  2.20  Let  E  be  an idempotent  matrix,  then  E  is  positive semidefinite. 
+Proof  Since  E  is  idempotent,  we  have  E2  =  E.  Let  x  be  an  arbitrary  complex 
+non-zero  vector  and  let  x  =  z*E.  We  have 
+(Ez)* =  x*E*  -  x*E  =  x. 
+Thus 
+x* = Ez. 
+Now. we have 
+z*Ez =  z*E2z  =  (z*E)(Ez)  =  x*x >  0. 
+Therefore  E is  positive  semidefinite.  O 
+Every principal  submatrix  of  a  positive  (semi)  definite  matrix  is  also  positive 
+(semi) definite.  We  use  this  fact  in  our  exhaustive  search  when  the  adjacency  matrix 
+of the  strongly  regular  graph  is  partially  discovered.  The  proof  of  the  following 
+theorem  is  obtained  from  [28] with  some  modification. 
+Theorem  2.21  Let  A  be  a positive semidefinite  matrix  of  size  n.  Then  every  prin-
+cipal submatrix of  A is  positive, scmidefimle as  well. 
+27 
+Proof  Let  S  be  a subset  of {1,2.....  n}  and  let  A'  be  the  principal  submatrix  of  A 
+by deleting  rows  and  columns  i  from  A whenever  i  E  S. Let  2  = [2,;] be an  arbitrary 
+complex non-zero  vector,  such  that  Zi  = 0  whenever  1  E S. 
+Since A  is  positive  semidefinte,  we have 
+Let z'  be  the  vector  obtained  by  removing  the  i-th  entries  of  2  whenever  %  E  S. We 
+have 
+Since z'  can  be  any  arbitrary  non-zero  vector  of  C,  we  conclude  that  A'  is  positive 
+Now, we can apply  Lemma  2.20  to see that  the  matrices  E\  and  E2  in  Equations  11 
+and 12  are positive  semidefinite.  Using  Theorem  2.21,  we can see that  every  principal 
+submatrix  of  E\  and  E2  is  positive  semidefinite. 
+2.4  Necessary  conditions 
+There  exists  some  necessary  conditions  on  the  parameter  set  (v,k.X,fi).  If  these 
+conditions  are  not  satisfied,  there  is  no  srg(t>, k, A, //).  In  this  section,  we  show some 
+of these  necessary  conditions. 
+We obtain  the  first  necessary  condition  from  the  parameter  set  of the  complement 
+of G =  srg(t>, k, A, //). We  know that.  Gc  =  srg(v, v  - k\  v - 2k  + /1 - 2,  v - 2k  + A - 2). 
+Therefore  v -  2k  + /z - 2  > 0  and  c  - 2k  + A - 2  > 0.  Thus 
+z*Az >  0. 
+z'*A'z =  z*Az  >  0. 
+semidefinite.  The  proof  for  positive  definite  is similar. • 
+A, /t >  2k  -  v  + 2. (14) 
+Theorem  2.1  states  that,  if  G  is  an  srg(r.  k. A.//),  then 
+k{k -  A  - 1)  = fi{v  -  k  -  1). (15) 
+28 
+which is  a necessary  condition  on  the  parameters  of a strongly  regular  graph. 
+Rationality  conditions 
+In Section  2.3,  we obtained  Equations  8  and  9  for the  multiplicities  of  the  eigen-
+values r and  s  of an  srg(v,  k, A, p).  The  fact  that  the  multiplicities  /  and  g  should  be 
+non-negative  integers  together  with  Equations  8  and  9,  places  tight  restrictions  on 
+the parameter  set  (v.  k, A. /_i). 
+Any parameter  set  (v.  k, A, /t) that  satisfies  the rationality  condition  and  Equations 
+14 and  15  is called feasible. 
+There  are  several  other  necessary  conditions  on  the  parameter  set  of  strongly 
+regular  graphs.  Among  these,  the  most  important  conditions  are  as  follows: 
+Krein  conditions 
+Scott  in  [43], using  a  result  of  M.G.  Krem  [31], in harmonic  analysis,  showed  that 
+(r + 1  ){k. + r  +  2rs)  <  {k  + r)(.s  + l)2, 
+and 
+(s + l)(k  +  s + 2rs) <  (k  + s)(r  +  l)2. 
+The above  two  inequalities  are  called  Krein  conditions.  The  proof  of  the  Krem  con-
+ditions  is  long and  we  omit  it  in  this  thesis.  We  refer  the  reader  to  [46, page  237] for 
+its proof. 
+It can  be  seen  that,  for  example,  the  parameter  set  v  =  28,  k  =  9,  A  = 0.  //  =  4, 
+is feasible,  but  it  does  not  satisfy  the  Krem  conditions. 
+Absolute  Bound 
+Another  useful  necessary  condition  is  the  so  called  absolute  bound.  Delsate, 
+Goethals,  and  Seidel  [16] introduced  this  bound,  which  is  as  follows: 
+V < \fU  +  3). 
+The proof  of absolute  bound  is  long  and  we  omit  it  in  this  thesis,  we  refer  the  reader 
+to [46,  page  239] for  its  proof. 
+One can  check  that,  the  parameter  set.  v =  50.  k  =  21.  A  =  4.  //.  = 12,  is feasible 
+and satisfies  the  Krem  conditions,  but  it  does  not  satisfy  the  absolute  bound. 
+29 
+2.5 Some  combinatorial  constructions  of  strongly 
+regular  graphs 
+In this  section,  we introduce  some  of the  well-known  constructions  of strongly  regular 
+graphs  and  describe  their  properties. 
+2.5.1  Triangular  graph  T(m) 
+Definition  2.22  The  triangular  graph  T(m)  has  as  vertices  the  2-element  subsets 
+of a  set of  cardinality m.  Two  vertices  are  adjacent  if  and  only  if  their  corresponding 
+subsets are  not disjoint. 
+The  triangular  graph  T(m)  can  also  be  expressed  as  the  line  graph  of  the  complete 
+graph  Km. 
+Property  2.23  T(m)  is  an 
+srg(^m(m  -  1),  2(m - 2),  m - 2,4). 
+Proof  Let  S  be  a set  with  M  elements.  Since  there  are  (™)  2-element  subsets  of S, 
+we have  V = Let  A  =  {ai,  02} be a  subset  of  S.  Adjacent  vertices  to  A  are  the 
+subsets  {«i,  x} and  {y,  0,2}, for  all  x.y  «i  and  x,y  /  a2-  There  are  rn  —  2  choices 
+for x  and  rn,  —  2  choices  for  y,  therefore  k  =  2(m  —  1).  Using  the  same  method  of 
+counting,  we  can see  that  A  = m  —  2 and  /i  = 4. 
+• 
+As an  example,  consider  the  complement  of  the  Petersen  graph  given  in  Example  1. 
+The  complement  of  the  Petersen  graph  is  T(5). 
+It is  shown in  [8]  that  every  strongly  regular  graph  with  the  same  parameters  as 
+T(m) is  isomorphic  to  T(m). 
+30 
+2.5.2  Strongly  regular  graphs  from  orthogonal  arrays 
+Strongly  regular  graphs  can  be obtained  from  orthogonal  arrays.  An  orthogonal  array 
+can be  considered  as  a  generalisation  of  a Latin  square. 
+Definition  2.24  A  Latin  square  is  a  square matrix  of  order  n such  that  its  entries 
+are all  from the  set  of  symbols  {l,...,n}  and  each  symbol  appears  exactly  once  in 
+each row and exactly  once  in  each  column. 
+For any  integer  n,  one  can  easily  find  a  Latin  square  of size n. One  construction  is  as 
+follows: 
+Take 1,  2,...,  n as  the  first  row.  Row  r,  r  >  1  is obtained  by  a  cyclic shift  of the 
+row r —  1  to the  right. 
+Example  4. 
+^1 2  3  4^ 
+4 12  3 
+3 4  12 
+^2 3  4  1j 
+• 
+Latin  squares  have  been  studied  extensively.  For  more  information  on Latin  squares, 
+we refer  the  reader  to  [17] and  [34]. 
+Definition  2.25  An  orthogonal  array  OA(k,  n)  is  a  kxn2 array  of  symbols from the 
+set {1,...,  n}  such  that  for  any  two  rows  r and  s.  all  the ordered  pairs s,).  where 
+1 < i <  n2. are  distinct. 
+It is  not difficult  to see  that  any  Latin  square  of order  n  is  equivalent  to  an  OA(3,  n). 
+For example,  the  Latin  square  in  Example  4  is equivalent  to  the  following  orthogonal 
+array: 
+^1111  2222  3333  4444^ 
+1234  1234  1234  1234 
+^ 1  2  3  4  4123  3412  2  3  4  1  ^ 
+31 
+Given an  orthogonal  array  OA(k,  n),  one  can  define  a graph  G  as  follows: 
+1. The  vertices  of  G  are  the  n2  column  vectors  of OA(k,n). 
+2. Two  vertices  are  connected  if  and  only  if  the  corresponding  vectors  have  the 
+same entry  in  one  of the  coordinates. 
+Theorem  2.26  The  graph  G  defined  above  is an 
+srg(n2,  (n - l)fc,  n - 2  + (k  -  l){k  -  2),  k(k -  1)). 
+Proof  We  use a simple  counting  method  to  prove  the  theorem.  Let  X  =  OA(k, n). 
+Two columns  of X have  at  most  one  common  entry  in  the  same  coordinate.  First,  we 
+calculate  the  degree  of the  vertices.  Let  x  be  a vertex  with  the  corresponding  column 
+(:ri,...,  Xk) in X.  A  vertex  y  with  the  corresponding  column  (yj,...,  yk) is  adjacent 
+to x  if  and  only  if xt  =  yi  for  some  i  and  x3  ^  yj  for  all j ^  i.  There  are  n  —  1  such 
+vertices  y  for  each coordinate  i.  Therefore,  the  total  number  of  vertices  adjacent  to 
+x is  equal  to 
+k(n —  1). 
+Let x  and  y  be  two  adjacent  vertices.  Without  loss  of generality,  we can assume  that 
+the corresponding  columns  of  x  and  y  are  (a,  x2;  -..,  xk) and  (a,  y2,...,  yk) respec-
+tively, where  x,  ^  yl  for  all 2  <  i  <  k.  Let  z  be  a  vertex  adjacent  to  both  x  and  y. 
+Then  the  corresponding  column  of  2  is one  of the  following  two types: 
+(i) (a.  22,...,  2^), where  2,; Xi  and  Zi  y^  for all 2  < i  <  k. 
+(ii) (z\,  22,...,  2^), where  z\  ^  a,  Zi  = xt  and  Zj  =  yj  for  only  two  indices  i  and  j, 
+and for  the  rest  of  the  indices  I,  2/ xt  and  2/  7^ y;. 
+There  are  exactly  n  —  2  columns  of  type  (i),  and  exactly  (k  —  l)(k  —  2) columns  of 
+type  (ii),  therefore  A, the  number  of common  neighbours  to  any  two  adjacent  vertices 
+in G.  is  equal  to 
+n —  2 + (k  —  1)(A" —  2). 
+32 
+A method  of  counting  similar  to  that  used  in  type  (ii),  shows us  that  /i,  the  number 
+of common  neighbours  to  any  two  non-adjacent  vertices  in  G  is  equal  to 
+k{k-l). 
+• 
+One could  also  obtain  the  strongly  regular  graph  directly  from  the  Latin  square 
+as follows: 
+Let L  =  [kj]  be a Latin  square  of order  n.  Define  A =  [a(i.j)(t'.j')], 1  < i,  j, i', j' <  n 
+be a  (0,1)  matrix  of  order  n2  such  that: 
+1 if  i =  i'  or  j =  f  or  /tJ  =  lv 
+0 otherwise. 
+a(i.j)(i'J') -
+Then  A  —  I  is  the  adjacency  matrix  of  an 
+srg(n2,  2(n  - 1),  n, 6). 
+Example  5.  Let 
+U = 
+1 2 3 4 
+4 1 2 3 
+3 4 1 2 
+2 3 4 1 
+33 
+Then the  following  matrix  A  is  the  adjacency  matrix  of the  strongly  regular  graph  G 
+produced  from  h\. 
+\ 
+A = 
+/ 0  1  1  1 
+10  11 
+110  1 
+1110 
+110  0 
+0 110 
+0 0  11 
+10  0  1 
+10  10 
+0 10  1 
+10  10 
+0 10  1 
+10  0  1 
+110  0 
+0 110 
+0 0  11 
+10  0  1 
+110  0 
+.0110 
+0 0  11 
+0 111 
+10  11 
+110  1 
+1110 
+110  0 
+0 110 
+0 0  11 
+10  0  1 
+10  10 
+0 10  1 
+10  10 
+0 10  1 
+10  10 
+0 10  1 
+10  10 
+0 10  1 
+10  0  1 
+110  0 
+0 110 
+0 0  11 
+0 111 
+10  11 
+110  1 
+1110 
+110  0 
+0 110 
+0 0  11 
+10  0  1 
+110  0 
+0 110 
+0 0  11 
+v 1  0  0  1 
+10  10 
+0 10  1 
+10  10 
+0 10  1 
+10  0  1 
+110  0 
+0 110 
+0 0  11 
+0 111 
+10  11 
+110  1 
+1110 
+It can  be  easily  checked  that  the  graph  G  is  an  srg(16,  9,4.6).  The  complement  of 
+G is  called  the  Shrikhande  graph.  It  is  known  that  there  are  exactly  two  strongly 
+regular  graphs  with  parameters  (16,  9,4,6)  up  to  isomorphism.  The  second graph  can 
+be obtained  from  the  following  Latin  square: 
+L2 = 
+^1 2  3  4^ 
+2 14  3 
+3 4  12 
+\4 3  2  1 
+Li and  L>  are the  only  two  Latin  squares  of order  4  up  to  isomorphism. 
+7 
+• 
+34 
+2.5.3  Strongly  regular  graphs  obtained  from  a  pair  of  skew 
+symmetric  Hadamard  matrices 
+Here is  another  method  of  constructing  strongly  regular  graphs.  We  review  this 
+method  because  we  will use  it  in  one  of our  test  cases.  This  method  was  introduced 
+by Pasechnik  in  [41],  In  his  paper  he  uses  the  concept  of  association  schemes,  but 
+to simplify  the  concept,  we  only  use  adjacency  matrices  to  show  the  results.  By 
+this  method  one  could  obtain  a  strongly  regular  graph  from  two  skew  symmetric 
+Hadamard  matrices  of order  4n. 
+Definition  2.27  A  matrix  H  of  order  n  with  ±1  entries  is  called  an  Hadamard 
+matrix if 
+HHt =  nl, 
+where I  is  the  identity  matrix. 
+An Hadamard  matrix  H  is  skew  symmetric  if  H +  HT =  21. 
+It is  not  difficult  to show  that  the  order  of  an  Hadamard  matrix  is  either  1.  2 or 4k. 
+Jacques  Hadamard  in  [24] conjectured  that  there  exists  an  Hadamard  matrix  of order 
+4n for  all integers  n  > 0.  This  conjecture  is  still  open. 
+Example  6.  H,  the  following  matrix,  is  an  Hadamard  matrix  of  order  4: 
+where  "—represents  —1. 
+H = 
+'l  1  1  ^ 
+1 1  -  -
+1 -  1  -
+v1 -  - y 
+• 
+Example  7.  H.  the  following  matrix  is  a  skew  symmetric  Hadamard  matrix: 
+35 
+H = 
+1111 
+-11-
+--11 
+-1-1 
+• 
+A skew  symmetric  Hadamard  matrix  is  called  normalised  if  all  the  entries  of  the 
+first row  are  positive.  The  matrix  in  Example  7,  is  a  normalised  skew  symmetric 
+Hadamard  matrix. 
+Let Hi  and  H2  be  normalised  skew-symmetric  Hadamard  matrices  of  order  An. 
+Let E\  and  E2  be  matrices  obtained  from  II  \ and  H2,  respectively,  by  removing  the 
+first row  and  the  first  column.  For  example,  if  Hi  is  the  matrix  in  Example  7,  then 
+/ 
+Ei = 
+\ 1 1 
+1 1 
+1 -  1 
+Since the  matrices  //,,  i  =  1,2,  are  skew  symmetric  Hadamard  matrices,  we  have 
+V 7 
+EjEf  =  Ani  -  J, (16) 
+and 
+EiEi =  Ei(21 -Ej)  =  J  -  4ni  +  2Eh  (17) 
+Moreover, let  I  be  the  identity  matrix  of  order  4n  —  1  and J  be  the  all  one  matrix  of 
+order An  —  1. Since  the  row  sum  and  column  sum  of the  E,'s  are  equal  to  1,  we have 
+Ei J —  J Ej —  J. 
+Now, we  define  two  matrices  1\  and  T2  as  follows: 
+Ti =^(Ei +  J-  21). 
+(18) 
+Let 
+A =  /',  y  T[  +  Ti >:  T>. 
+36 
+and 
+B =  Tj  <g> T2 + T[  g  T2t, 
+where  the  operator  <gi is the  matrix  Kronecker  product  operator.  Let  X 
+m x  n  matrix  and  Y  be  another  matrix  of  any  size,  then 
+[xij\ be  an 
+= 
+/ 
+V 
+xnY XlnY \ 
+/ 
+The Kronecker  product  has  many  interesting  properties;  however,  we only mention 
+two of  them  here,  since  we  will  use  them  later  in  this  thesis.  Let  X,  Y,  X',  and  Y' 
+be matrices  of  proper  size,  then,  we  have 
+XX' <g> YY' =  {X  ®  Y){X' <8> y'). 
+This  property  is  called  the  mixed  product  property.  We  also  have 
+(X ®  y)T = XT S  YT. 
+Theorem  2.28  The  matrices  A  and  B  defined  above  are the  adjacency  matrices  of 
+two strongly  regular  graphs with  parameters 
+((4n -  l)2,  8n2  -  8n  + 2,4n2  -  6n  + 3,  4n2 -  6n  + 2). 
+Proof  We  will show  that  A  and  B  satisfy  Equation  22  on  page  42.  Before  calcu-
+lating  A2  and  B2,  we  first  calculate  T{Tj  and  T2  since  we will need to  use  them  later. 
+Using the  definition  of Ti and  Equations  16  and  18,  we have: 
+4 T{Ti = (Ei  +  J  -  2I){Ej  +  J -  21) 
+= EiEj  +  EiJ -  2Ei  +  JEj +  J2  -  2J  -  2Ej  -  2J  +  41 
+= -  J  +  4nl +  J  -  2E{  +  J  +  (4n  - 1  )J -  2  J -  2Ej  - 2  J +  4/ 
+= (4n  —  4)  J +  4n.I. 
+37 
+Therefore, 
+T{Tj =  (n-  l)J  +  nI. 
+Using Equation  17,  we have: 
+AT? =  (E  +  J-2I)2 
+= E2  +  EiJ  -  2El  +  J^  +  J2  -  2J  -  2£z  -  2J  +  4/2 
+= £2  +  (4ra - 3)  J -  AEi  + AI 
+= (An  - 2)  J -  2Ei  +  (4  - An)I 
+= 4n  J —  47; —  AnI. 
+(19) 
+Therefore 
+T =  nJ —  Ti —  ni. (20) 
+Using Equation  19,  we can  calculate  A2  as  follows: 
+A2 =  (T1®T?  +  T?®T2)2 
+,2 T = Tt  ®  Tf  +  TiTj* S  T2T2  +  7?  '7\ <g> T2T2J +  Tf  ®  T^ 
+= [nJ  -  Ti  -  n/]  <g> [nJ  -  T2r  - n/]  + [nJ  -  Xf  -  n/]  (8) [nJ -  T2  -  ni] 
++2[(n  -  \)J  +  nJ]  ® [(n - 1)  J +  ni] 
+= (2n2  -  Qn  + 2) J <g> J +  (4n2  - 2n)7  <8> I +  Ti  <8> Tf  +  Tf  <8> T2 
+= [An2-Qn  +  2)J ®J+  (An2-2n)I  ®I  +  A. 
+Using Equation  20,  one  can  calculate  B2  as  well.  We  omit  this  calculation  (it  is 
+similar  to  the  calculation  of  A2)  and  show  the  result  which  is  the  following: 
+B2 =  (4n2  -  6n  + 2)  J ®  J +  (4n2  -  2n)I  <g> I +  A. 
+We see  that  both  A  and  B  satisfy  Equation  22  which  completes  the  proof. • 
+Example  8.  Let 
+EI —  E2  = 
+1 1  -
+- 1  1 
+1 -  1 
+\ 
+38 
+then 
+and 
+A = 
+f° 1 
+= T2 = 0 0 1 
+I1 0 °J 
+;s A and  B, we find 
+0 0 0 0 1 0 1 o\ 
+0 0 0 1 0 0 0 0 1 
+0 0 0 0 1 0 1 0 0 
+0 1 0 0 0 0 0 0 1 
+0 0 1 0 0 0 1 0 0 
+1 0 0 0 0 0 0 1 0 
+0 0 1 0 1 0 0 0 0 
+1 0 0 0 0 1 0 0 0 
+1° 1 0 1 0 0 0 0 
+/ 0 0  0  0  1  0  0  0  1 
+0 0  0  0  0  1  1  0  0 
+0 0  0  1  0  0  0  1  0 
+0 0  1  0  0  0  0  1  0 
+B= 100000001 
+0 1  0  0  0  0  1  0  0 
+0 1  0  0  0  1  0  0  0 
+0 0  1  1  0  0  0  0  0 
+1 0  0  0  1  0  0  0  0 
+One can  check  that  both  A  and  B  are  srg(9,  2,1,0). 
+\ 
+• 
+We are  going  to  show  that  isomorphic  normalised  skew  Hadamard  matrices  gen-
+erate  isomorphic  strongly  regular  graphs.  Let  7]  and  T2  be  two  matrices  obtained 
+from skew  symmetric  Hadamard  matrices  as  mentioned  above.  Let  T[  be  a  matrix 
+isomorphic  to  7\  and  V2  be a  matrix  isomorphic  to  TV Let  us  further  assume  that.  A 
+39 
+and B  are  Pasechnic  strongly  regular  graphs  obtained  from  T\ and  T2, and  A'  and  B' 
+are Pasechnic  strongly  regular  graphs  obtained  from  T[ and  T2. 
+Since T\ is  isomorphic  to  T[ and  T2  is  isomorphic  to  T2,  we have: 
+T[ = P\T\Pl. 
+and 
+n =  P2T2PI 
+Where  P\  and  P2  are  some  permutation  matrices,  define 
+P :=  PI  ®  P2. 
+We can  see  that  P  is  a  permutation  matrix  as  well.  Using  the  properties  of  the 
+Kronecker  product  we  mentioned  on  page  37,  we have: 
+A! =  T[®T'2T  +  T[T <g>7£ 
+= (PITRPF)  ®  (P2T2TP2T)  +  (P^PL)  0  (P2T2P2T) 
+= (PI  ®  P2)(T1  0  T2T)(P1T  ®  P2R)  +  (PI  ®  P2)(T?  (g)  T2)(P1T  8)  P2T) 
+= P(TJ  ®  T2T)PT  +  P(7f  ®  T2)Pt 
+- P(T,  0  7F  +  ®  T2)Pt 
+= PAPT. 
+As a  result  of  the  above  equation,  we  conclude  that  A'  is  isomorphic  to  A. The  same 
+procedure  can  be  followed  to  show  that  B'  is  isomorphic  to  B. 
+2.6 Strongly  regular  graphs  and  partial  geometries 
+A partial  geometry  pg(s,  t, a) with  a  =  1  is  called  a  generalised  quadrangle  and 
+denoted  by  GQ(.s,  /.). A  GQ(1,1)  is  the  usual  quadrangle  with  four  points  and  four 
+edges. 
+The concept  of a partial  geometry  was  introduced  by  Bose [2], A  partial  geometry 
+is a generalisation  of the  concept  of a generalised  quadrangle.  Generalised  quadrangles 
+were introduced  by  Tits  [45] as a  generalisation  of  the  quadrangle  GQ(1,1). 
+40 
+Theorem  2.29  The  point  graph  of  a  pg(s,  t, a) is  an 
+SRG({s  +  1^st  +  a\s(t  +  1),s  -  1  + t(a  -  1),  a{t +  1)).  (21) Q 
+Proof  Since  there  are  t + 1  lines passing  through  a  point  P  and  there  are  s  points 
+other  than  P  on  each of these  lines, we have k = s(t  +1). Let  Pi  and  P2  be  two  points 
+on a  line  Z. There  are  s  —  1 other  points  on  I  which all  are  collinear  with  both  Pi  and 
+P2.  Now,  we  count  the  number  of  points  not  on  Z  which  are  collinear  with  both  Pj 
+and P2.  There  are  t  lines  (li,l2.  •  • •, h) passing  through  P\  other  than  I.  Exactly  a 
+lines on P2  are  concurrent  with  each  Z^, i =  1,2,...,  t, (one  of these  lines is Z, therefore 
+a —  1 points  on  k  are  collinear  with  both  Pi  and  P2  and  are  not  on  I).  Therefore,  we 
+have t,(a —  1) points  not  on  Z, collinear with  both  Pj  and  P2.  Thus  A =  5  —  l + t(a —  1). 
+Using a  similar  argument,  we  can  see  that  //  =  a(t  +  1).  The  value  of v  can  be 
+obtained  using  Theorem  2.1  • 
+A strongly  regular  graph  of  the  form  (21)  is  called  a  psuedogeometric (s,t,a)-graph. 
+Such a  graph  is  geometric  if  it  is  the  point  graph  of  a  pg(s,  f. a). 
+Lemma  2.30  A  psuedogeometric  graph  is  geometric  if  and  only  if  it  is  the  point 
+graph of  a  partial linear  space. 
+Proof  The  following  proof  is  based  on  [9]. 
+Since any  partial  geometry  is  also  a  partial  linear  space,  the  necessary  condition 
+is easily  resolved.  We  shall  now  prove  the  sufficient  condition. 
+Let S  =  pls(,s. i). Because  the  point  graph  is  geometric,  we  have 
+T(S) =  srg({s  +  1){st  +  a\  s(t  +  1), 5 - 1  + t(a -  1),  a(t  +  1)), a 
+for some  integer  a.  It  is  enough  to  show  that  S  =  pg(.s,  t. o).  Fix  a  line  Z. For  a 
+point  P  not  incident  with  Z.  let ap  be  the  number  of  lines  on  P  concurrent  with  Z. 
+41 
+We have: 
+p<£i Mel 
+= E's 
+Mei 
+= (s  +  1  )ts. 
+We also  have: 
+£ 
+Ctp 
+2 
+Therefore: 
+= J]  \{Q£L,M  ~Q,N~Q}\ 
+M.N el 
+M.N el 
+P^/ 
+p^/ p<fi  v  y  P£f 
+ap 
+p<t,i 
+= 0. 
+Thus op  =  Q  for every P  ^  /  and  5  =  pg(s.  I. a). • 
+The adjacency  matrix  of  the  point  graph  can  be  obtained  easily  from  the  incidence 
+matrix  of  the  partial  geometry.  Let  A  be  the  incidence  matrix  of  V  =  pg(s,  t, a) and 
+B be  the  adjacency  matrix  of  the  point  graph  of  V.  The  {i.  j) entry  of  B2  is  the 
+number  of  vertices  adjacent  to  i and  j.  Since  the  point  graph  is  an srg(y.  k, A, fi), we 
+have 
+k if  i =  j 
+(B% A if  Bij  = 1 
+//. if  Bu  =  0. 
+Thus 
+B2 =  (k  -  //)/  +  ,,.J + (A  - i,)B. (22) 
+42 
+Since A  is  the  adjacency  matrix  of  P, we  have 
+1 if  the  points  i  and  j  are  collinear 
+(•AAf)ZJ —  \ 0  if  the  points  i  and  j  are  not  collinear 
+t +  1  if  i=  j. 
+Therefore  by  the  definition  of  a  point  graph. 
+AAT =  B  +  (T  + 1)/. (23) 
+Constructing  a partial  geometry  from  its point  graph  has  been unsuccessful  in most 
+of the  cases,  but  Haemers  in [25] constructed  a  pg(4,17,  2) from  an srg(175,  72, 20, 36). 
+43 
+Chapter  3 
+Orbit matrices 
+3.1 Introduction 
+The  size  of the  search  for  the  unknown  strongly  regular  graphs  we  are  interested  in 
+is very  large.  We  have  to  use  mathematical  techniques  to  reduce  this  size.  One  of 
+the techniques  is  the  use  of  an  automorphism  group.  In  this  chapter,  we  shall  show-
+how the  assumption  of  a non-trivial  automorphism  group  may  enable  us  to  finish  the 
+search in  a  feasible  amount  of  time. 
+Assuming  that  the  strongly  regular  graph  has  a  non-trivial  automorphism  group, 
+in this  chapter  we  develop  the  theory  of  orbit  matrices  for  strongly  regular  graph  for 
+the first, time. 
+3.2  Related  work 
+Rudolf Mathon  in  [37]  introduced  the  concept  of  orbit,  matrices  for  block  designs. 
+In that,  paper,  orbit  matrices  are  referred  to  as  "tactical  decompositions".  Clement. 
+Lam in  [32]  showed  how  to  use  orbit,  matrices  by  the  use  of a  program  called  BDX 
+to construct  block  designs.  Rudolf  Mathon  in  [36]  introduced  the  concept,  of  block 
+valencies for  self-complementary  strongly  regular  graphs.  A  graph  is  called  self-
+complementary  if  there  is  a  permutation  p  on  its  vertices  which  maps  every  edge  to 
+44 
+a non-edge  and  vice  versa.  Block  valencies  are  computed  based  on  the  partitions 
+that  p  induces  on  the  adjacency  matrix  of  the  self-complementary  strongly  regular 
+graph. Using  these,  a  computer  program  was  implemented  in  [36]  to  find  all  self 
+complementary  strongly  regular  graphs  with  less  that  54  vertices. 
+3.3 The  construction 
+Let G(V,E)  be  an  srg(v,  k,  A, /i). Suppose  an  automorphism  of  G  partitions  the  set 
+of vertices  V  into  b  orbits  Oi,  02,...,  Ob- Define  ni =  |Oj|  for 1  < i <  b. 
+Let V1./U2, • . • , vn be  an  ordering  of  the  vertices  of G  that  preserves  the  ordering 
+{0\, O2,  • • .,  Ob)- In other  words,  if i <  j, then  for  all vi E Oi and  vm  G  Oj, I  < m: 
+Using this  ordering,  the  orbits  of  V  divides  the  adjacency  matrix  B  of  G  into 
+submatrices 
+B =  [BZJ], 
+where Bl:j  is  the  adjacency  matrix  of vertices  in  Ol  versus  vertices  in  Oj. 
+As an example,  consider  the  point  graph  of the  partial  geometry  pg(2,  2,1)  shown 
+in Example  2 on page  4. It  is  an srg(15,  6,1,  2). As  a point  graph,  the  vertices  are  the 
+points {Pi,  P2,....  P|5}.  For  simplicity,  we  denote  vertex  Pi  by i.  The  permutation 
+(1,2,3,4,  5)(6,  7,8, 9,10)(11,12,13,14,15)  on  the  vertices  is  an  automorphism  of  the 
+point graph.  This  automorphism  produces  three  orbits  of  size  five,  namely  01  = 
+{1,2,3,4,5},  02  =  {6, 7,8,9,10},  and  03  =  {11,12,13,14,15}. 
+45 
+0 1 0 0 1 1 0 1 0 1 0 0 1 0 0 
+1 0 1 0 0 1 1 0 1 0 0 0 0 1 0 
+0 1 0 1 0 0 1 1 0 1 0 0 0 0 1 
+0 0 1 0 1 1 0 1 1 0 1 0 0 0 0 
+1 0 0 1 0 0 1 0 1 1 0 1 0 0 0 
+1 1 0 1 0 0 0 0 0 0 1 1 0 0 1 
+0 1 1 0 1 0 0 0 0 0 1 1 1 0 0 
+1 0 1 1 0 0 0 0 0 0 0 1 1 1 0 
+0 1 0 1 1 0 0 0 0 0 0 0 1 1 1 
+1 0 1 0 1 0 0 0 0 0 1 0 0 1 1 
+0 0 0 1 0 1 1 0 0 1 0 0 1 1 0 
+0 0 0 0 1 1 1 1 0 0 0 0 0 1 1 
+1 0 0 0 0 0 1 1 1 0 1 0 0 0 1 
+0 1 0 0 0 0 0 1 1 1 1 1 0 0 0 
+0 0 1 0 0 1 0 0 1 1 0 1 1 0 0 
+The row  sum  and  column  sum  of  the  submatrices  Bij  are  extremely  important  in 
+the theory  we  are  developing.  Define  three  matrices  C  =  [%],  R =  [r^],  1  < i.j  <  6, 
+and N  such  that 
+Cij = column  sum  of  B,j, 
+Tij = row  sum  of  BX]. 
+and 
+N =  diag  (ni,n2,...77fc). 
+Note that  R  is  related  to  C  by  the  formula 
+Since the  adjacency  matrix  is  symmetric, 
+R =  CT. 
+46 
+For example,  the  matrices  C  and  R  corresponding  to  the  matrix  B  are: 
+/ 2  3  1  ^ 
+C = 
+and 
+/ 
+3 0  3 
+13  2 
+2 3  1 
+3 0  3 
+1 3  2 
+The orbit  sizes  are  on  the  diagonal  of  the  matrix  N 
+V / 
+/ 5  0  0  ^ 
+N = 0 5  0 
+0 0  5 / 
+The matrix  C  is  the  orbit  matrix  of  the  graph  G.  It  gives  structural  information 
+about  the  adjacency  matrix  B. 
+We next  establish  a  relationship  involving  the  matrices  C,  iV,  and  R.  This  will 
+be our  starting  point  for  a computer  enumeration  of  all the  possible  orbit  matrices  C 
+for a given  orbit  partition  of  the  vertices. 
+Let W  =  B2,  where  Wuv  counts  the  number  of paths  of lengths  2  between  vertices 
+u and  v.  Using  the  same  orbit  partition  of  the  vertices,  W  can  also  be  partitioned  in 
+W =  [ly^-],  where  i  and  j  are  the  indices  of the  orbits. 
+47 
+We continue  our  example  of  srg(15,6,1,2)  and  calculate  W  as  follows: 
+3 3  1  3  3  \ 
+3 3  3  1  3 
+3 3  3  3  1 
+1 3  3  3  3 
+3 13  3  3 
+W =  B2  = 
+f 6 1 3 3 1 1 3 1 3 1 
+1 6 1 3 3 1 1 3 1 3 
+3 1 6 1 3 3 1 1 3 1 
+CO 3 1 6 1 1 3 1 1 3 
+1 3 3 1 6 3 1 3 1 1 
+1 1 3 1 3 6 3 3 3 3 
+CO 1 1 3 1 3 6 3 3 3 
+1 3 1 1 3 3 3 6 3 3 
+3 1 3 1 1 3 3 3 6 3 
+1 3 1 3 1 3 3 3 3 6 
+3 3 3 1 3 1 1 3 3 1 
+3 3 3 3 1 1 1 1 3 3 
+1 3 3 3 3 3 1 1 1 3 
+CO 1 3 3 3 3 3 1 1 1 
+V3 3 1 3 3 1 3 3 1 1 
+113  3  1 
+1113  3 
+3 1113 
+3 3  111 
+13  3  11 
+6 3  113 
+3 6  3  1  1 
+1 3  6  3  1 
+113  6  3 
+3 113  6 
+Define a 6x6  matrix  S  =  [.s?J] such that 
+Sij = sum  of all  the  entries  in  Wl}. 
+Since B2 =  (k—n)I+fiJ+{\—fj)B,  we  have W^ =  n)I  +{X—fj)Bij.  Please 
+note that  in  the  second  equation,  the  dimension  of  I  is  iii x  nl  and  the  dimension  of 
+J is  rii x rij.  We  have 
+Sij = dij(k  -  [i)nj  +  unirij  +  (A  - n)ci:)nr 
+In our  example,  the  matrix  is  calculated  as  follows: 
+(24) 
+( 70  45  65  ^ 
+5 = 45 90  45 
+65 45  70 / 
+The matrix  S  can  also  be  calculated  in  a  different  way. 
+48 
+Lemma  3.1 
+CNR =  S. (25) 
+Proof  Let  a,  be  a  vector  of  size v such  that 
+f 1 if.?  €  Oi, 
+ttiO) =  < 
+I 0  otherwise. 
+The  vectors  are  chosen  such  that  s,j  =  aiB2aJ.  Define  1  <  i  <  6,  to  be  a  row 
+vector  of size i> such  that  ^(A:)  =  c{j  for  k G  Similarly,  define  (3j, 1 < j  <  b,  to be 
+a row  vector  of  size  v such  that  pj(k)  =  rij for  k e  Oi.  We  have 
+SlJ =  ctiB2aJ  =  {aiB)(BaJ) 
+b 
+= r)iPj  =  '^cikrkjnk  =  (CNR)ij. 
+k=I 
+• 
+Continuing  our  example,  we  calculate  ,s]2  for  the  matrix  5,  using  the  previous  proof, 
+we have 
+aj  =  (11111  00000 00000), 
+Q2 =  (00000  11111  00000), 
+= (22222  33333  11111), 
+and 
+fo =  (33333  00000 33333). 
+We can  see  that 
+Si2 = aiB2o2  =  rj\02  =  45. 
+3.4  Properties  of  orbit  matrices  and  prototypes 
+Lemma 3.1 allows  us to derive  a set of integer  equations  for  the possible  entries  in row 
+r of  the  matrix  C.  The  only  information  we  need are  the  parameters  of  the  strongly 
+49 
+regular  graph  G\  therefore,  these  equations  are  independent  of  the  matrix  B.  Solving 
+these  equations  will  help  us  to  find  the  orbit  matrix  C  without  knowing  the  matrix 
+B. 
+Using Equation  25,  we  have 
+t t 
+•Srr = Crkrkrnk  -  clknk-  (26) 
+k=1 1 
+Using Equation  24,  we  have 
+srr =  (k  —  /j,)nr  +  pr?r + (A  —  p)crrnr. (27) 
+For simplicity,  we  restrict  ourself  to  the  case  where  the  orbits  are  either  of  size  one 
+or of size p, a  prime.  Let  ib  be the  number  of  orbits  of size p and  <p  be  the  number  of 
+orbits  of size one.  <p and  -0  satisfy  the  following  equation. 
+<p =  v  —  pip (28) 
+In this  case,  we  have  two  types  of  rows  (columns).  Fixed  rows  (columns)  are  those 
+whose orbit  size  is one  and  non^fixe'd  rows  (columns)  are  those  with  orbit  size  p. 
+Without  taking  into  account  the  ordering  of  the  entries  in  a  row  of  C,  we  first 
+consider  the  distribution  of  such entries.  We  call this  a  prototype  of a row of C.  Each 
+prototype  will  tell  us  the  possible  number  of  occurrences  of each  integer  as  an  entry 
+of a  particular  row  of C. 
+Consider  an  arbitrary  fixed  row  r  of  C.  The  possible  value  of each  entry  of  that 
+row, regardless  of being  a  fixed  column  or  non-fixed  column,  is  either  0  or 1. 
+Let .To and xi  be  the  number  of  zeros  and  ones  respectively  on  the  fixed  columns 
+of row r.  Let  yo and //i  be  the  number  of  zeros and ones  respectively  on  the  non-fixed 
+columns  of  row  r.  Since  the  number  of  fixed  columns  is  we  have  xo  + x\  =  d>. 
+Similarly  we  have  y0  +  yj  =  •</;. Since  the  row  sum  of  the  matrix  B  is  equal  to  k.  we 
+have 
++ Plh  =  k-
+50 
+Thus,  we  have  the  following  set  of  equations: 
+Xo +  Xj  =  (f>, 
+Vo +  yi  =</>,  (29) 
++ pyi  =  k. 
+We define  a Fixed Prototype  as  a  non-negative  integer  solution  of xo, xj, IJQ,  and  y\, 
+satisfying  this  set  of linear  equations. 
+Now consider  an  arbitrary  non-fixed  row r  of  C.  The  possible  values  of the  fixed 
+column entries  of row r are  either  0  or p. The  possible  values of the  non-fixed  column 
+entries  of  row  r  can  be  0.1,...  ,p.  Let  xo  and  xp  be  the  number  of  zeros  and  p  s on 
+the fixed  columns  of  row  r.  Let  i  =  0,1,....  p be  the  number  of  €s  on  the  non-
+fixed columns  of  row  r.  Similar  to  the  situation  with  columns,  we  have  xo  + xp  =  d> 
+and Yli=o Vi = V-'- Also,  since  the  row  sum  of  B  is  equal  to  k,  by  counting,  we  have 
+xp +  Wi  ~ Using  Equation  26,  we have 
+p 
+p2-fp + ^ i2pyi  =  srr. 
+i=1 
+Thus,  we  have  the  following  set  of  equations: 
+XQ +  xp = <p, 
++ Ijp 
++ PVp = k. 
++ p2yP = SRR 
+(30) 
+2/o +  2/i  +  v2  +  2/3  +  •  • 
+xp +  2/i  +  2  y2 +  32/3  +  -• 
+pxp +  2/i  +  4  y2 +  9  2/3 + 
+We define  a  Non-Fixed  Prototype  as  a  non-negative  integer  solution  of  xo,  xp, 
+2/0, • • •, 2/p, satisfying  this  set  of  linear  equations. 
+In the  above  equation,  the  value  of  srr  is  obtained  from  Equation  27.  Using 
+Equation  27,  we  can  generate  a  separate  set  of  equations  for  each  value  of  crr.  The 
+following lemma  puts  a  restriction  on  these  values. 
+Lemma  3.2  If  nr  is  odd.  then  crr  is  even. 
+51 
+Proof  Let  Y  be  the  subgraph  induced  by  Oi.  Brr  is  the  adjacency  matrix  of  Y. 
+Y is  a  regular  graph  of  degree  crr.  By  counting  the  number  of  edges  of  Y  in  two 
+different  ways,  we  have 
+2\E(Y)\ =  nTcTT. 
+Since nr  is  odd,  crr  must,  be  even.  • 
+Since 0  =  v  —  pip. the  smallest  possible  value  for  0  is  z  =  v  mod  p. The  possible 
+values of 0  are  2,  2  + p. z  +  2p,  ....  z  + p The following  two theorems  state p 
+that,  once  we  find  no  fixed  (or  non-fixed)  prototype  for  a  given  0,  then  there  is  no 
+need to  consider  any  larger  0\s  when  0  >  2p. 
+Theorem  3.3  If  there  exists  a  fixed prototype  with  0  fixed  columns  and  0 >  2p.  then 
+there is  a  fixed prototype with  (j)  —  p fixed  rows. 
+Proof  Since  there  exists  a  fixed prototype  with  0  fixed columns,  there  is an integer 
+solution  (zo,  yo,  y\) for  Equation  29.  Consider  the  following  equations  for  a  fixed 
+prototype  with  (j)  —  p fixed  rows: 
+•r'0 +  x'j  =<t>-p, 
+y'o +  y\  +  h  (31) 
+•>'1 +  piA  =  k-
+If XQ >  p, then  x'0  = xo —  p, x\  =  x  , . y'0 = y0  + 1,  and  y\  =  yi  would  be  a  solution  for 
+Equation  31,  and  Xq, X\, y'(],  and y\  are  all  non-negative. 
+If xi  >  p.  then  Xq = .r0,  x'i  =  xi  —  p, y'0  = y0,  and  y\  =  y\  +  1  would be  a  solution 
+for Equation  31,  and  X'j  . y'0, and  y[  are  all  non-negative. 
+Since 0  >  2p.  one  of these  two  cases  has  to  be  true  and  Equation  31  has  a  non-
+negative  integer  solution.  • 
+Theorem  3.4  If  there  exists  a  non-fixed  prototype  with,  o fixed  rows  and  0  >  2p. 
+then there  is  a  non-fixed  prototype  with  0  —  p fixed  rows. 
+52 
+Proof  Since  there  exists  a  non-fixed  prototype  with  4> fixed rows, there  is  a  non-
+negative  integer  solution  (xo,  xpi yo,  yi,...,  yP)  for  the  set  of  Equations  30.  Consider 
+the following  equations  for  a  non-fixed  prototype  with  0  —  p fixed  rows: 
+x'0 +  xp  =(f>-  p, 
+* +  *  +  *  +  *  +  -  +  *  +  (32) 
+x'p +  y[  +  2y'2  +  3y's  +  •••  +  py'p  =  fc, 
+px'p +  y\  +  4  y'2 +  9y'3  +  •••  +  p%  =  srr/p. 
+Since (p  > 2p,  either  xo  >  p  or  xp  >  p.  If  xo  >  p,  then  x'Q  = Xo —  p, x'p  =  xp, 
+Ho = ?/o  + l,  and  y'  =  yt  for  1  <  i  <  p  would  be  a  solution  for  Equation  32,  and 
+xp, y'o,  y'l,..., y'p)  are non-negative. 
+If xp >  p, then  x'0  = xo,  x'p  = xp  —  p., and y\  = y^ for 0 < i  <  p —  1, and y'p  = yp  +1 
+would be  a  solution  for  Equation  32,  and  (x[,,  x'p. y'0. y[,..., y'p)  are  non-negative. 
+Since 0  >  2p,  one  of these  two  cases  has  to  be  true  and  Equation  32  has  a  non-
+negative  integer  solution. 
+• 
+3.5 Upper  bounds  on  the  number  of  fixed  points 
+In this  section,  we introduce  some  new upper  bounds  on q> the  number  of fixed  points 
+of an  automorphism  of  a strongly  regular  graph.  We  need to  use  the  concept  of  orbit 
+matrices  to  derive  some  of these  upper  bounds,  but  some  upper  bounds  are  obtained 
+independently,  without  the  use  of orbit  matrices. 
+Let B  be  the  adjacency  matrix  of  G  =  srg(?>, k, X, //,), having  a  non-trivial  auto-
+morphism.  Let  B'  =  [b'tj]  be  the  adjacency  matrix  of  the  subgraph  of  G, induced  by 
+all the  non-fixed  vertices.  Let  a  =  max(A,  ft). The  following lemma gives a restriction 
+on row-sums  of  B'. 
+Lemma  3.5  Let  G  =  srg(v.  k.  X, p) and  further  assume  that  G  has  a  non-trivial 
+automorphism p.  Let  H  be  the subgraph  of  G. induced  by  all the  non-fixed  vertices  of 
+53 
+G. Then 
+5(H) >  fc-max(A.//). 
+Proof  Let  i  be  a  non-fixed  vertex  of  G  and  let  y  =  xp. Let  2  be  any  fixed  vertex 
+of G adjacent  to  x.  Since  (z,x)  G  E(G), we  have 
+(zp,xp) =  (2, y) G  E(G). 
+Thus any  fixed  vertex  adjacent  to  x  is  adjacent  to  y  as  well.  Since  x  and  y  have 
+at most  max(A./i)  common  neighbours,  there  are  at  most  max  (A, //) fixed  vertices 
+adjacent  to  x.  Since  G  is  a  regular  graph  of  degree  k,  every  non-fixed  vertex  of  G 
+has at  least  k  —  max(A,/i),  non-fixed  neighbours.  Thus 
+8(H) >k  —  max(A./t). 
+• 
+Lemma  3.6  Let  A  =  [a^]  be  an n  x  n  positive  semidefinite  matrix.  Then 
+Y,  -
+i-j 
+Proof  Since  A  is  positive  semidefinite,  we have 
+z'Az >  0, 
+for any  2  G Cn. Take  the  all  one  vector  j as  2, the  result  follows  directly.  • 
+Lemma  3.6 is a special  case  of the  Fejer's  theorem.  For  more  information  about  Fejer's 
+theorem,  refer  to  [28,  page  459]. 
+The  following  theorem  gives  us  an  upper  bound  on  the  number  of  fixed  points. 
+The interesting  fact  about  this  bound  is  that- it  is  independent  from  the  selection  of 
+P-
+Theorem  3.7  Let  r  <  s <  k  be  the eigenvalues  of  an  svg(v, A:, A, /1). then 
+max (A. //.) 
+<£> < —  v. k —  s 
+54 
+Proof  Let  B  be  the  adjacency  matrix  of  the  strongly  regular  graph  and  B'  =  [b'ZJ} 
+be the  principal  submatrix  of  B  corresponding  to  the  non-fixed  vertices. 
+We know  that  the  idempotent  matrix  E\  in  Equation  11  is positive  semidefinite. 
+Therefore,  every  principal  submatrix  of  E\  is  positive  semidefinite.  Let  E[  =  [e^]  be 
+the submatrix  of  E\  corresponding  to  the  non-fixed  vertices.  Let  us  further  assume 
+that  E[  is  of size n. Let  a  =  max(A.  /i). From  Lemma  3.5, we know that  the  row sum 
+of the  matrix  B'  is  at  least  k  —  a. Therefore, 
+By considering  that  r  —  s <  0 and  combining  Equations  11,  33, and  34,  we  have 
+(33) 
+y 
+In order  for  E[ to  be  positive  semidefinite,  using  Lemma  3.6,  we  have 
+(34) 
+> 0. 
+Since r  —  s <  0  and  n  >  0,  we have 
+^ ^ 
+(k —  a) —  s-\ -n  <  0. 
+v 
+After  simplifying,  we get 
+av n> v  —  . 
+k —  s' 
+which implies 
+• 
+As an  example,  consider  an  srg(99,14.1.  2),  using  Theorem  3.7.  we  can  see  that,  an 
+automorphism  of  this  strongly  regular  graph,  can  have  at  most  18  fixed  points. 
+55 
+Theorem  3.8 
+k2 -  k (f> <v ——-  + 2k —  max(A.  u) —  2. max(A, jj.) 
+Proof  Let  a  =  max(A,  //). Let  B  be  the  adjacency  matrix  of  the  strongly  regular 
+graph and  B'  =  \b'tJ]  be  the  principal  submatrix  of  B  corresponding  to  the  non-fixed 
+vertices. Let  n  be  the  size  of B'.  Using  Lemma  3.5,  the  matrix  B'  has  at  least  k  —  a 
+ones in each  column.  Since  any  two  vertices  have  at  most  a  common  neighbours,  we 
+have: 
+Bn <  (k  -  a)I  +  aJ. (35) 
+We count  the  sum  of entries  of B'2  in  two  different  ways. First,  since  B' is  symmetric, 
+we have B'2  =  B'B'T. Let  r  be  an  arbitrary  column  of  B'.  By  Lemma  3.5  there  are 
+at least  k  —  a  ones  on  r.  By  counting  the  number  of  un-ordered  pairs  of l's  on  the 
+column r,  we  have 
+£ b'irb'jr  > {k  —  a)(k —  a —1). 
+1 <i-j<n.ijtj 
+Let s  be  the  sum  of all  the  entries  of B'2.  except  the  ones  on the  diagonal.  In  fact,  s 
+is the  sum  of  inner  products  of  different  rows. We  have 
+n 
+S = ^'jr 
+1 <i.j<n.i^j r—  1 
+n 
+= S  b'"-b'jr 
+r= 1  l<i.j<n.i^j 
+> n(k  —  a)(k —  a —  1). 
+Using Equation  35,  we  have 
+s <  an(n  —  1). 
+Using the  last  two  calculations,  we  have 
+(k —  a){k  —  a  —  1  )n <  an(n  —  1). 
+One could  simplify  the  above  equation  to  see 
+k2 -  k n >  2k  +  a  +  2. 
+c\ 
+56 
+Since n  =  v —  <f>, we have 
+k2 -k <b<v +  2k -  a  -  2. a 
+• 
+As an  example,  again  consider  an  srg(99,14,1,  2),  using  Theorem  3.8,  we can see that, 
+an automorphism  of  this  strongly  regular  graph,  can  have  at  most  32  fixed  points. 
+We have  realised,  in  all  our  test  cases,  Theorem  3.7  gives  a  better  upper  bound 
+than  Theorem  3.8,  but  we  have not  been  able  to  prove  that  the  upper  bound  obtained 
+from  Theorem  3.7  is always  lower than  the  upper  bound  obtained  from  Thorem  3.8. 
+The following  theorem  states  that  when  the  orbit  size  is large  enough,  there  is  no 
+fixed point. 
+Theorem  3.9  If  p >  k  and  /j, 0.  then  0  =  0. 
+Proof  Consider  Equation  29.  Since  p >  k,  the  only  solution  to  the  equation  is  the 
+following: 
+(•'•<). .f). y0,  //i) (o  -  k.  k. i\  0). 
+Let u  be  a  fixed  vertex  and  v  be  a  non-fixed  vertex.  Since  y\  =  0,  we have  Buv  =  0. 
+Consider  an  arbitrary  vertex  x  different  from  u  and  v.  Again,  since  y\  =  0,  if x  is  a 
+fixed vertex,  we  have  Bxv  =  0.  If  x  is  a  non-fixed  vertex,  we  have  Bxu  —  0. In  both 
+cases ,r is not  a  common  neighbour  of  u and  v.  Thus  either  //  =  0  or there  is  no fixed 
+point.  • 
+Corollary  3.10  If  p >  k  and  // ^  0.  then  v  should  be  divisible by  p. 
+The following  theorems  put  some  bound  on  the  number  of  fixed  points  a  strongly 
+regular  graph  can  have. 
+Theorem  3.11  If  6  <  k  -  1  and p  >  max(A, //). then  &  < v/(p +  1). 
+57 
+Proof  Using  Equation  29,  since  X\  <  0  <  k, we  have  pyi >  1.  Therefore,  y\  >  1. 
+Consider the  submatrix  of  C corresponding  to  the  fixed  rows and  non-fixed  columns 
+and call  it  C.  Since  y\  >  1,  there  is  at  least  one  "1"  in  each  row  of  C".  Since 
+C' is  of size  <p  x  ill  there  are  at  least  0  ones  in  C".  If  0  >  ip,  by  the  pigeon  hole 
+principle,  there  is  a  column  of  C  that,  has  more  than  one  1  in it.  Therefore  there 
+are two  fixed  rows,  i  and  j,  and  a  non-fixed  column  k  such that  CikCjk = 1-  But,  we 
+have pCikCjk <  max(A,  fi) since  the  inner  product  of  two  fixed  rows  of B  is  less  than 
+max(A, p), which  contradicts  the  assumption  that  p  >  max(A.  //.). Therefore  0  <  tp-
+Since (p + pip = v,  we  have  0 <  v/(p  +  1).  • 
+3.6 Computer  construction  of  orbit  matrices 
+After  we have  obtained  the  prototypes,  we  can construct  the  matrix  C  by  backtrack-
+ing. The  first  row  can  be  constructed  easily  using  its  prototype.  For  the  first  row  we 
+know the  number  of  occurrences  of  each value.  The  order  of entries  is not. important, 
+for the  first  row  as  the  orbits  of  the  same  type  are  still  free  to  be  permuted  among 
+themselves. 
+The rest, of the  rows  can  be  constructed  recursively.  Assume  that  the  matrix  C  is 
+constructed  up  to  the  row  r —  1. To  construct  row  r,  first  we  consider  the  prototype. 
+Using Equation  24.  for  1  < i  < r,  we  have 
+SiT —  piliTlr + (A —  jx)arnr.  (36) 
+Since i  <  r,  the  value  of  cir  is  already  known.  Hence  the  value  of sir  is  known.  On 
+the other  hand,  using  Equation  25,  we have 
+6 
+Sir = CikCrknr-  (37) 
+fc= 1 
+The new  row  r  has  to  satisfy  Equation  37  for  all  1  < i  <  r.  The  entries  in  row 
+r are  constructed  recursively  starting  from  column  1  and ending  at  column  b.  Since 
+the variables  on  the  right-hand  side  of Equation  37  are  all non-negative,  if  we are  at 
+58 
+a column  b'  < b, Equation  37  can be  replaced  by 
+v 
+Sir CikCrk^r  • (38) 
+k=\ 
+For each  column  b',  we  try  all  possible  values  for  crly.  but  ensuring  that  it  satisfies 
+Equation  38. 
+Since B  is  an  adjacency  matrix,  it  is  symmetrical.  Thus,  for  k  <  r,  c.rk  = 
+<-'kr{nk/nr), which is  already  known. 
+The number  of  candidate  matrices  for  C  can  further  be  reduced  by  isomorph 
+rejection,  since  the  fixed  and  non-fixed  columns  can  permute  among  themselves  re-
+spectively. 
+We finish this  chapter  using  an  example,  to  see how the  orbit  matrices  for  strongly 
+regular  graphs  are  constructed. 
+Example  9.  In  this  example,  we  consider  srg(15.  6,1.3).  Assume  p —  3  and  assume 
+that  there  are  three  orbits  of size  one  and  four  orbits  of size  three.  Therefore  0  =  3, 
+ib = 4,  ni =  ri2  = n3  = 1  and n4  =  r?,5 = iiq  = n7  = 3. 
+First,  we  calculate  the  fixed  prototype  using  Equation  29.  We  have  the  following 
+equations: 
+•T0 +  -TL  =  3, 
+I/o +  VI  —  4,  (39) 
+xi +  3yi  =  6. 
+The only  non-negative  integer  solutions  of the  above  equations  are 
+(xo,xi,yo. yi)e{(0.  3,  3,1),  (3,0,2,2)}. 
+Since the  diagonal  of  B  is  zero.  crr  =  0  when  r  is  a  fixed  row.  Therefore,  there  has 
+to be  at  least  one  zero  in  the  fixed  columns.  Thus  XQ  >  1  and  the  first  solution  is 
+not acceptable,  implying  (.to.  .<"1. yo, y\) =  (3.  0, 2. 2). Now,  we consider  the  non-fixed 
+•59 
+prototype  for  the  non-fixed  rows  of the  incidence  matrix.  Equation  30  gives: 
+x0 +  x3  =  3, 
+Vo +  V\  +  2/2  +  2/3  =  4, (40) 
+x3 +yi  +  22/2  +  3y3  =  6, 
+3^3  +  2/1  +  4y2  +  9^3  =  s„/3. 
+Using Equation  27,  we  have  srr  —  36 —  6crr.  The  possible  values  of crr  are  0,  1,  and 
+2. We  shall  consider  all  these  cases. 
+For crr  =  0,  we have  srr  =  36.  The  solutions  of  Equation  40  are 
+(xo,  xz,  2/0,2/1,2/2,2/3)  G  {  (0,3,1,3,0,0), 
+(1,2,1,2,1,0), 
+(2,1,1,1,2,0), 
+(3,0,1,0,3,0), 
+(3,0,0,3,0,1)  }. 
+Since crr  =  0,  we have  y0  >  0.  Therefore  the  last  solution  is  not  possible. 
+We do  not  need  to  consider  the  case  crr  =  1  using Lemma  3.2. 
+For crr  =  2,  we have srr  =  24.  In  this  case  the  prototype  in 40 has no non-negative 
+integer  solution. 
+Now, we  build  the  matrix  C  row  by  row.  The  first  row  is  a  fixed  row.  Its  only 
+prototype  is  (3,0,  2, 2), meaning  3  zeros for  the  fixed columns,  and  2  zeros and  2  ones 
+among  the  non-fixed  columns.  By  permuting  the  columns,  we  can  assume  that  the 
+first row  is  [000(0011]. 
+Now, we  need  to  construct  the  second  row.  Since  C12 = 0,  Equation  36  implies 
+S12 = 3  —  2C12 = 3. 
+Thus  by  Equation  37,  we  have 
+= 3. 
+A-=I 
+60 
+Since we  already  know  the  first  row of C,  we  have: 
+3C'26 + 3C'27 = 3. (41) 
+The prototype  for  the  second  row  is  (3,0,2,2).  Considering  Equation  41  and,  by 
+permuting  the  columns,  we  can  assume  that  the  second  row  is  [OOOjOlOl]. By  a 
+similar  argument  the  third  row  is  [000|1001] up  to  isomorphism. 
+Consider  the  forth  row.  By  Equation  36,  we have 
+.Si4 =  9  —  6C14 = 9, 
+S24 =  9  -  6c24  =  9. 
+S34 =  9  - 6C34  = 3. 
+Considering  the  values  of sz-4, by Equation  37,  we have: 
+3C46 + 3C47 =  9, 
+3C45 + 3C47 =  9, 
+3C44 + 3C47 =  3. 
+The only  solutions  of  the  above  set  of  equations  are 
+(c44-, C45, C<J6j C47) G  {  (1,3,3,0), 
+(0,2,2,1)  }. 
+The first  solution  does  not  belong  to  any  non-fixed  prototype,  however  the  second 
+solution  does.  Therefore  the  forth  row up  to  isomorphism  is  [003)0221]. 
+Similarly, we  construct  the  rest  of the  rows  of C  by  using  their  prototypes.  Equa-
+tions  36,  37,  and  by  permuting  the  rows  in  order  to  consider  the  symmetry. 
+Finally,  up  to  isomorphism  one  can see  that  there  is only one  possible  solution  for 
+the  column  sum  matrix,  which  is  the  following: 
+61 
+0 0 0 0 0 1 1 
+0 0 0 0 1 0 1 
+0 0 0 1 0 0 1 
+0 0 3 0 2 2 1 
+0 3 0 2 0 2 1 
+3 0 0 2 2 0 1 
+CO 
+3 3 1 1 1 0 
+62 
+Chapter  4 
+Computer  search  for  strongly 
+regular  graphs 
+We have  implemented  a  computer  program  to  search  for  unknown  strongly  regular 
+graphs.  Our  algorithm  is  an  exhaustive  backtrack  search  based  on  orbit  matrices. 
+Throughout  the  thesis  we  call  this  program  the  SRG  program. 
+After  an  orbit  matrix  for  the  desired  strongly  regular  graph  is  obtained,  the  SRG 
+program  tries  to find the  adjacency  matrix  of the  strongly  regular  graph  by  expanding 
+the entries  of the  orbit  matrix  into  blocks  of the  adjacency  matrix. 
+Several combinatorial  and  algebraic  techniques  have  been  used  in  pruning  the 
+backtrack  search  tree. 
+The SRG  program  also  has  the  ability  to  estimate  the  size  of the  search  tree  using 
+a random  probing  method.  This  random  probing  technique  can  be  used  as  well  to 
+perform  a  randomised  search. 
+63 
+4.1 History  of  computer  search  for  strongly  regu-
+lar graphs 
+The existence  or non-existence  of strongly  regular  graphs  has  been studied  using  com-
+puter  searches.  It  was shown in [5] by the  use of a computer  search  that  srg(49,16,  3, 6) 
+does not  exist.  The  uniqueness  of  some  strongly  regular  graphs  up  to  isomorphism 
+was shown  by  the  use  of an exhaustive  search  in  [15]. Complete  classification  of some 
+strongly  regular  graphs  with  small  parameters  has  been  performed  in  [13], [26], [38], 
+and [44], by the  use  of computer  searches.  Corneil  and  Mathon  in [14] describe  several 
+algorithmic  techniques  for  the  construction  of  strongly  regular  graphs  and  other  com-
+binatorial  configurations.  In  this  paper  general  search  techniques  for  combinatorial 
+configurations  such  as  hill-climbing  and  backtracking,  as  well as  specific  techniques 
+for strongly  regular  graphs  such  as  switching  classes  are  introduced.  In  [36], a  com-
+puter  search  was  performed  to  find  all  self-complementary  strongly  regular  graphs 
+with less  than  54  vertices. 
+4.2  Methodology 
+The SRG  program  tries  to  complete  the  adjacency  matrix  of a strongly  regular  graph 
+by expanding  the  entries  of its  orbit  matrix  into  circulant. submatrices.  Let  us  assume 
+that  C  =  [cij\  is the  orbit  matrix  of  the  strongly  regular  graph  corresponding  to  an 
+automorphism  of  order  p,  and  that.  B =  [Bij}  is  the  adjacency  matrix  of the  strongly 
+regular  graph.  The  SRG  program  would  expand  each  non-fixed  upper  triangular 
+entry  cl:t  to  all  the  possible  (cp  ) circulant  matrices  Bjj. 
+After  each  circulant  block  B^  is  placed  into  the  matrix  B,  a  check  would  be 
+applied  to  see that  B  does  not. violate  the  properties  of strongly  regular  graphs.  This 
+is the  pruning  part  of the  algorithm.  We  will discuss  these  checks in more  detail  later. 
+Because the  adjacency  matrix  B  is  symmetric,  the  lower triangular  half  of the  matrix 
+is obtained  by  symmetry. 
+64 
+In order  to  make  the  backtrack  search  flexible  for  each non-fixed  tipper  diagonal 
+entry  of  C,  we  associate  a  time-stamp  in  the  SRG  program.  The  time  stamp  rep-
+resents  the  order  which  the  entries  Cij are  expanded  into  circulant  blocks  Bij  in  the 
+backtrack  search. 
+The program  also  has  the  ability  to  perform  isomorph  rejection  at  a  specific  given 
+time  stamp.  It  means  the  user  is  able  to  specify  at  which  level of the  search  tree  the 
+isomorph  rejection  algorithm  should  be  applied.  We  usually  use  isomorph  rejection  at 
+the  beginning  and  at  the  very end  of the  search.  Isomorph  rejection  is time  consuming 
+and very  costly  when  applied  to  the  middle  level where  there  are  many  cases. 
+Another  pruning  technique  that  is  implemented  into  the  SRG  program  is  the 
+positive  semidefinite  test.  Whenever  a  principal  submatrix  is  completed,  the  SRG 
+program  checks  whether  or  not  the  corresponding  submatrix  is  positive  semidefinite. 
+As we  have  shown  in  Chapter  2,  the  idempotent  matrices  E\  and  E2,  as  defined  in 
+Equations  11  and  12,  are  positive  semidefinite.  Therefore  their  principal  submatrices 
+are positive  semidefinite  as  well.  This  is  a  strong  pruning  technique,  and  has  given 
+us the  ability  to  solve  cases  which  we  were  not  able  to  complete  before  using  this 
+pruning  technique.  The  program  uses  a  maximal  clique  algorithm  to  find  at  w?hich 
+time  stamps  a  new  principal  submatrix  is  completed.  Let  n  be  the  number  of  orbits 
+and let  T}J  represent  the  time  stamp  of  the  i,j  block.  Define  the  graph  G(V,E)  as 
+follows: 
+• V  =  {L...N}; 
+• uv  €  E  iff  Tuu  <  t, Tvv <  t.  and  Tuv  <  t. 
+Each clique  in G  corresponds  to  a  complete  principal  submatrix  at  an  arbitrary  time 
+stamp  t. 
+In order  to  find  all  strongly  regular  graphs  with  parameters  (t», k, A, /z) that  have 
+an automorphism  group  of  size  divisible  by  a  prime  p.  one  should  do  the  following 
+procedure: 
+65 
+1. Find  all  the  orbit  matrices  with  p as  the  non-fixed  orbit  size  for all the  possible 
+fixed points. 
+2. Run  the  SRG  program  for  all orbit  matrices  obtained. 
+3. Run  a  final  isomorphism  test. 
+4.3  An  example 
+In this  section,  we show by an example,  how  the  SRG program  works and the  structure 
+of its  input  file.  We  consider  the  srg(15,  6,1,  3) for  this  example,  with  p  = 5,  and  no 
+fixed points.  After  running  the  orbit  matrix  program,  we  find  that  there  are  exactly 
+two orbit  matrices  as  follows: 
+3 3^ 
+3 0  3, 
+^3 3  Oj 
+and 
+^0 3  3^ 
+3 2  1-
+V3 1  V 
+For this  example,  we  consider  the  second  matrix. 
+The description  of  the  input  file  (Figure  1)  is  as follows: 
+Line 1:  The  parameters  v.  k. A. fi of the  strongly  regular  graph; 
+Line 2:  Prime  p for  the  size  of the  non-fixed  orbits,  and  the  number  of  orbits; 
+Line 3:  Orbit  sizes  (here  we have  three  orbits  of  size 5); 
+Lines 4-6:  The  orbit  matrix: 
+Lines 7-9:  The  time  stamps.  Please  note  that  since  Tij  =  Tji,  only  the  upper  trian-
+gular  part  of  the  matrix  is  required: 
+Line 10:  The  inverse  probability  of  going  into  each  backtrack  level  (this  can  be  used 
+either  for  a random  search  or  estimation): 
+Line 11:  The  stop  time  and  snap  shot, frequency: 
+66 
+1 
+2 
+3 
+15 6  1  3 
+5 3 
+5 5  5 
+4 
+5 
+6 
+0 3  3 
+3 2  1 
+3 12 
+7 
+8 
+9 
+14  6 
+2 5 
+3 
+10 
+11 
+12 
+13 
+14 
+111111 
+0 0 
+1 
+0 1  0  0  0  1 
+0 
+Figure  1:  The  input  file  for  this  example 
+Line 12:  A  boolean  control  variable  to  show  that  we  are  using  manual  isomorph  re-
+jection; 
+Line 13:  An  array  which  indicates  at  which  time  stamp  we  have  isomorph  rejection; 
+Line 14:  A  boolean  control  variable  to  show  whether  or  not,  we  have  a  partial  entry 
+(in this  case  we  do  not). 
+We ran  the  program  to  get  a  snap  shot  at  t  —  2. At  time  stamp  t  =  2, two partial 
+solutions  B\  and  B2  were  found. 
+67 
+0 0 0 0 0 X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+X X X X X 0 1 0 0 1 X X X X X 
+X X X X X 1 0 1 0 0 X X X X X 
+X X X X X 0 1 0 1 0 X X X X X 
+X X X X X 0 0 1 0 ] X X X X X 
+X X X X X 1 0 0 1 0 X X X X X 
+X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+0 0 0 0 0 X X X X X X X X X X 
+X X X X X 0 0 1 1 0 X X X X X 
+X X X X X 0 0 0 1 1 X X X X X 
+X X X X X 1 0 0 0 1 X X X X X 
+X X X X X 1 1 0 0 0 X X X X X 
+X X X X X 0 1 1 1 1 X X X X X 
+X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X 
+Since Bj  is  isomorphic  to  Bo.  and  we  have  isomorph  rejection  at  the  time  stamp 
+t =  2.  the  second  solution  B2  would  be  rejected. 
+We finisher! the  run  to  see  how  many  strongly  regular  graphs  were  found.  This  is 
+a excerpt  of  the  output-  of the  program  for  this  example: 
+aut size of the solution:  autogp  size  =(1)(4)(5) 
+68 
+solution number  1 : 
+00000 11010  11100 
+00000 01101 OHIO 
+00000 10110  00111 
+00000 01011 10011 
+00000 10101 11001 
+10101 01001 00010 
+11010 10100 00001 
+01101 01010 10000 
+10110 00101 01000 
+01011 10010 00100 
+10011 00100 00110 
+11001 00010 00011 
+11100 00001  10001 
+01110  10000  11000 
+00111  01000  01100 
+The number of strongly  regular  graphs  found:1 
+elapsed time = 1.000000  ms 
+Number of nodes visited=  64 
+1: 1-0 
+2: 1  10 
+3: 10  -  -
+4: 25-0 
+5: 25  -  -
+6: 1  24  0 
+69 
+The total estimation  of number  of nodes=  64 
+elapsed time=0.00  seconds 
+elapsed time==0.00  hours 
+Estimated time  = 0.00E+00  days 
+The last  part  of  the  output  shows  the  size  of the  backtrack  search  tree.  From  the 
+output,  we  can  see  that  at  time  stamp  t  =  1  there  is  one  partial  solution,  at  time 
+stamp  t  =  2  there  are  two  solutions,  but  one  is  rejected  by  the  isomorphism  test. 
+At time  stamp  t  =  3  there  are  ten  partial  solutions  and  the  isomorphism  test  is  not 
+performed.  At  time  stamp  t  =  6  there  are  25  solutions,  but  only  1  non-isomorphic 
+solution. 
+4.4  Correctness  tests 
+In order  to  make sure  that  the  SRG  program  works  correctly,  we performed  some tests. 
+The first  test  was  running  the  program  on  a  few  small  cases  that  could  be  verified 
+by hand.  We  also  compared  our  results  with  the  results  from  other  people.  Since 
+the chance  of getting  exactly  the  same  result, from  different  algorithms  and  different, 
+implementations  is  very  small,  we  can  conclude,  with  a  high  level  of confidence,  that 
+the SRG  program  is  correct. 
+One of  the  test  cases  that  we  used  was  the  srg(36.14,4,6).  The  complete  enu-
+meration  of  this  case  has  been  done  by  McKay  and  Spence  in  [38].  There  are  180 
+strongly  regular  graphs  with  the  above  parameters  which  can  be  downloaded  from 
+£'http://www.maths.gla.ac.uk/~es/srgraphs.html''. 
+We ran  the  SRG  program  for  all the  possible  orbit  sizes  to  compare  our  results  to 
+the results  of McKay  and  Spence.  The  SRG  program  found  152  srg(36,14,4,  6) with 
+non-trivial  automorphism  groups. 
+Table 4  shows  the  statistics  on  the  number  of  strongly  regular  graphs  found  by 
+Brendan  McKay  and  Edward  Spence.  and  the  strongly  regular  graphs  found  by  the 
+70 
+Automorphism  group  size Number  of  SRGs Number  of  SRGs 
+McKay program the SRG  program 
+1 28 Not Applicable 
+2 37 37 
+3 14 14 
+4 51 51 
+8 16 16 
+12 5 5 
+16 5 5 
+21 2 2 
+24 9 9 
+32 1 1 
+36 1 1 
+48 5 
+64 1 1 
+72 1 1 
+144 1 1 
+216 1 1 
+432 1 1 
+12096 1 1 
+Table  4:  Automorphism  group  statistics  of  all  srg(36.14,  4.6) 
+SRG program.  The  results  are  exactly  the  same  except  for  the  asymmetric  graphs, 
+which the  SRG  program  is  not  designed  to  find.  Since  it  is  very  unlikely  to  get  the 
+same results  randomly,  this  test  shows  us  that  the  SRG  program  works  correctly 
+Another  test  that  was  done  can  be  found  in  Section  4.6.2. 
+4.5 Estimations 
+Since the  running  time  of most  of  the  combinatorial  search  algorithms,  as  well as  the 
+SRG program,  are  not  polynomial,  it  is  very  important  to  have  an  estimation  of  the 
+running  time  of the  program  before  starting  the  exhaustive  search. 
+Donald Knuth  in  [29], showed,  for  the  first  time,  a  simple  method  for  estimating 
+the size  of the  search  tree  of a  backtrack  algorithm.  Let.  us assume  that  the  level i  in 
+a search  tree  is  the  set  of  all  nodes  with  distance  ?  to the  root.  In  Knuth  s  method. 
+71 
+a random  path  P  =  PQP\  ... PN  from  the  root  of  the  search  tree  to  one  of the  leaves 
+is taken.  Let  Q  be  the  number  of children  of P,  in  the  search  tree.  Then  an  estimate 
+of the  number  of  nodes  at  level  i is calculated  as  follow: 
+Ei —  c'oc'i... c*i_i- (42) 
+An estimate  of the  size of the  search  tree  is  calculated  as  follows: 
+E =  1  + C0  + C0Ci + C0CiC2 H b  C0C1C2 • • • cn_ 1. (43) 
+Under the  assumption  that  all  children  of  a  node  have  equal  probability  of  being 
+chosen, Donald  Knuth  in  [29] proved that  the  expected  value  of E  in  Equation  43  is 
+equal to  the  size  of the  search  tree.  Therefore  if we compute  E  for  various times  and 
+calculate  the  average,  we  can get  a  good  estimation  of the  size of the  backtrack  tree. 
+For more  information  about  backtracking,  backtrack  search  tree,  and  the  Knuth's 
+method,  refer  to  [30]. 
+In the  SRG  program,  we  applied  a  method,  similar  to  the  Knuth's  method,  to 
+estimate  the  size of the search  tree.  This  method  has  some advantages  to  the  Knuth's 
+method  which  will  be  explained  later. 
+We assign the  probabilities  pt  to  each  level of the  backtrack  tree.  In  the  backtrack 
+search, if we are  at  a  node  X at  level I,  we  visit  each  child  of X with  probability  p,-. 
+If all  pi s are  equal  to  1,  we visit  all  the  nodes  of the  backtrack  search  tree,  thus  we 
+do a  complete  exhaustive  search.  Therefore  by  the  choice  of pi, we  can do  either  a 
+complete search,  or  a  random  search  using  the  same  program.  If  we  do  a  random 
+search, we  calculate  the  estimated  number  of  nodes  at  each  level  of  the  backtrack 
+search using  a  recursive  method.  Let  X  be  a  node  of  the  backtrack  search  tree  at. 
+level T that, has  been  visited  in  our random  search.  Let  C(X) be  all the  children  of X 
+that  have  been  visited  in  the  random  search.  Define: 
+1 if i = t. 
+£i(X) =  0 if?' < t. (44) 
+YlveCiX) £I(y)PI  Otherwise. 
+72 
+Define 
+Ei =  £(ROOT), 
+then  Ei  is  the  estimated  number  of  nodes  at  each  level i, and  Yhi  Ei is  the  estimated 
+number  of all the  nodes  of the  backtrack  search. 
+This method  fits  perfectly  into  the  backtrack  program  since  it  is  recursive.  We 
+calculate  £i(X) whenever  we visit a node  X in  the  backtrack  search.  The  proof  of this 
+method  is  similar  to  the  proof  of  the  Knuth's  method.  For  the  proof  of  the  Knuth's 
+method  refer  to  [30, page  117]. 
+If we do the  complete  search,  then  Ei  would  be  the  exact  number  of nodes  at  level 
+i. In  this  method,  we  have  control  over  the  choice  of  the  probabilities  p,.  We  can 
+visit the  nodes  at  some  levels,  especially  the  levels  near  the  root  and  near  the  leaves, 
+more often  than  other  levels  of the  backtrack  search.  This  would  gives  us  a  better 
+estimation  of  the  size of the  backtrack  search. 
+4.6  Results 
+In this  section,  we  provide  all  the  results  of  running  the  genOrbit  and  the  SRG 
+program.  We  divided  the  results  into  two  subsections.  One  section  is  related  to 
+the strongly  regular  graphs  whose  existence  or  non-existence  is  unknown.  The  other 
+section  provides  the  results  about  the  strongly  regular  graphs  whose  existence  is 
+known, but  there  has  not  been  a  complete  classification  performed. 
+4.6.1  Results  on  unknown  strongly  regular  graphs 
+In this  section,  we  are investigating  the  strongly  regular  graphs  whose  existence  is un-
+known.  We  obtained  the  list  of these  strongly  regular  graphs  from  the CRC  handbook 
+of combinatorial  designs  [11]. 
+The details  of  all  the  computer  runs  on  these  graphs  can  be  found  in  Appendix 
+A. 
+73 
+Theorem  4.1  If  an  srg(65,  32,15,16)  exists,  the  only  possible prime devisors  of  the 
+size of  its automorphism  group  are  2, 3,  and  5.  Moreover,  if  it  has an  automorphism 
+of order  5, then  it  can  only have  5  fixed points. 
+Theorem  4.2  If  an  srg(69,  20. 7,5) exists,  the  only  possible  prime  devisors  of  the 
+size of  its automorphism  group  are  2 and  3. 
+Theorem  4.3  If  an  srg(75,  32,10,16)  exists,  the  only  possible prime devisors  of  the 
+size of  its automorphism  group  are  2 and  3. 
+Theorem  4.4  If  an  srg(76,30,  8,14)  exists,  the  only  possible  prime devisors  of  the 
+size of  its automorphism  group  are  2 and  3. 
+Theorem  4.5  If  an  srg(76,  35,18,14)  exists,  the  only  possible  prime devisors  of  the 
+size of  its automorphism  group  are  2. 3,  and  5.  Moreover,  if  it  has  an  automorphism 
+of order  5, then  it  can  only  have  1  fixed point. 
+Theorem  4.6  If  an  srg(85,14,  3,2)  exists,  the  only  possible prime devisor  of  the size 
+of its  automorphism  group  is  2. 
+Theorem  4.7  If  an  srg(85,  30,11,10)  exists,  the  only  possible  prime devisors  of  the 
+size of  its automorphism  group  are  2, 3,  5,  and  17. 
+Theorem  4.8  If  an  srg(85,  42, 20, 21) exists,  the  only  possible  prime devisors  of  the 
+size of  its automorphism  group  are  2, 3,  5,  and  7. 
+Theorem  4.9  If  an  srg(88,  27.6,  9) exists,  the  only  possible  prime  devisors  of  the 
+size of  its automorphism  group  are  2, 3,  5,  and  11. 
+Theorem  4.10  If  an  srg(95,  40,12,20)  exists,  the  only  possible prime devisors  of  the 
+size of  its automorphism  group  are  2. 3.  and  5. 
+Theorem  4.11  If  an  srg(96,  35,10,14)  exists,  the  only  possible prime devisors  of  the 
+size of  its  automorphism  group  are  2. 3,  and  5.  Furthermore,  if  it  has  an  automor-
+phism of  order  5.  then  it  has  no  more  than  one  fixed point. 
+Theorem  4.12  If  an  srg(96,38,10.18)  exists,  the  only  possible prime devisors  of  the 
+size of  its  automorphism  group  are  2. 3,  and  5. 
+Theorem  4.13  If  an  srg(96,45,  24.18)  exists,  the  only possible prime devisors  of  the 
+size of  its automorphism  group  are  2. 3,  and  5. 
+Theorem  4.14  If  an  srg(99,14,1,2)  exists,  the  only  possible  prime  devisors  of  the 
+size of  its  automorphism  group  are  2 and  3.  Moreover,  if  it  has  an  automorphism  of 
+order 3.  then  it  has  no  fixed points. 
+Theorem  4.15  If  an  srg(99,42,  21.15)  exists,  the  only possible prime devisors  of  the 
+size of  its automorphism  group  are  2, 3,  5;  7.  and  11. 
+Theorem  4.16  If  an  srg(100,33,8,12)  exists,  the  only  possible prime devisors  of  the 
+size of  its  automorphism  group  are  2, 3,  5,  and  11. 
+Table 5  summarises  the  results. 
+4.6.2  Results  on  known  strongly  regular  graphs 
+We have  used  the  SRG  program  on  parameter  sets  where  there  is  a strongly  regular 
+graph  known,  for  three  reason: 
+1. To  test  the  SRG  program; 
+2. To  find new strongly  regular  graph  that  are  not  isomorphic  to  any  of the  known 
+ones; 
+3. To  build a  database  of strongly  regular  graphs  with  non-trivial  automorphisms. 
+One of the  strongly  regular  graphs  that  we  have studied  is  srg(49,18,  7, 6). Using 
+our computer  program,  we  have  generated  all  srg(49,18,  7,6)  which  have  automor-
+phisms of order  divisible  by  5  or 7. 
+It is  mentioned  in  [11] that  all  known  srg(49.18,  7,6)  are  either  from  OA(7.  3) or 
+Pasechnik(7). 
+possible primes 
+G {p:p\Aut(G)} 
+srg(65,32,15,16) 2,3,5 
+srg(69,20,  7,5) 2,3 
+srg(75,32,10,16) 2,3 
+srg(76,30,  8,14) 2,3 
+srg(76,35,18,14) 2,3,5 
+srg(85,14,3,2) 2 
+srg(85,30,11,10) 2,3,5,17 
+srg(85,42,  20,21) 2,3,5,7 
+srg(88,27,6,  9) 2,3,5,11 
+srg(95,40,12,20) 2,3,5 
+srg(96,35,10,14) 2,3,5 
+srg(96,38,10,18) 2,3,5 
+srg(96,45,  24,18) 2,3,5 
+srg(99,14,1,  2) 2,3 
+srg(99,42,21,15) 2,3,5,7,11 
+srg(100,33,8,12) 2,3,5,11 
+Table  5:  Results  summery  on  the  automorphism  groups  of unknown  strongly  regular 
+graphs 
+We have  reviewed  both  of  the  above  constructions  in  Chapter  2.  OA(7,  3) is 
+equivalent  to  a  Latin  square  of order  7.  According  to  [11] there  are  exactly  147  Latin 
+squares  of  order  7.  We  have  obtained  all  the  non-isomorphic  Latin  squares  of  order 
+7 from  Professor  Brendan  McKay's  webpage  at 
+<f http://cs.anu.edu.au/~bdm/data/latin.html 
+We generated  all  the  strongly  regular  graphs  obtained  from  these  147  Latin  squares, 
+and compared  them  to  our  own results.  Table  6  shows the  automorphism  group  size 
+statistics  of all  the  strongly  regular  graphs  obtained  from  Latin  squares  of order  7. 
+It is  mentioned  in  [11]  that  all  known  srg(49,18,  7. 6) are  either  obtained  from 
+Latin  squares  or  from  the  Pasechnik  method.  We  wrote  a  computer  program  to  find 
+all Pasechnik  srg(49.  18. 7.6). 
+It can  be  seen  by  hand  calculations  that  there  is  exactly  one  skew  symmetric 
+Hadamard  matrix  of  order  8  up to  isomorphism  which  is  the  following: 
+Automorphism  group  size Number  of  strongly  regular  graphs 
+1 44 
+2 57 
+3 4 
+4 11 
+6 16 
+8 1 
+10 1 
+12 2 
+15 1 
+16 2 
+18 1 
+24 3 
+72 1 
+144 1 
+1008 1 
+1764 1 
+Table 6:  Automorphism  group  statistics  of  all  srg(49.18,  7,6)  obtained  from  Latin 
+squares  of  order  7 
+Automorphism  group  size Number  of  strongly  regular  graphs 
+10 1 
+15 
+21 1 
+30 1 
+63 1 
+126 1 
+1008 1 
+1764 1 
+Table 7: Automorphism  group  size statistics  of all srg(49,18.  7, 6) with  automorphism 
+group  size  divisible  by  5  and  7  obtained  from  the  SRG  program. 
+/ 1  1  1  1  1  1  1  1  \ 
+1111 
+1 1 1 1 
+1111 
+H 
+1 1 1 1 
+1 1 1 1 
+1 1 1 1 
+V-  1  -  1  -  1  -  I) 
+There  are  two  srg(49,18,  7, 6) that  can  be  obtained  from  the  matrix  II  above 
+by the  Pasechnik  method.  We  compared  these  two  graphs  to  the  Latin  square 
+srg(49,18,  7, 6). We  realised  that  the  two  Pasechnik  graphs  are  isomorphic  to  a 
+strongly  regular  graph  with  automorphism  group  of size  1764 which  can  be  obtained 
+from a Latin  square. 
+Table 7  shows  all  the  strongly  regular  graphs  with  automorphism  group  of  size 
+divisible by  5  and  7. 
+We compared  the  output  of  our program  for  p = 5  and p = 7  to all srg(49,18,  7,6) 
+from Latin  squares  of  order  7  and  obtained  the  following  two important  conclusions: 
+• All  Latin  square  srg(49.18,  7, 6) which  had  automorphism  orders  divisible  by  5 
+and 7  were found  by  the  SRG  program,  which  is  a strong  correctness  test  of our 
+program. 
+• We  have  found  6  new strongly  regular  graphs  that  were  not  known  before.  The 
+graphs  can  be  found  in  Appendix  B. 
+78 
+Chapter  5 
+Partial  geometries 
+5.1 Introduction 
+Theorem  2.29  on page  41 shows that  the  point  graph  of a partial  geometry  is  strongly 
+regular.  Since  the  line  graph  of  a  partial  geometry  is  the  point  graph  of  its  dual, 
+the line  graph  is  also  strongly  regular.  Table  2  on  page  8  shows  some  unknown 
+partial  geometries,  and  the  parameters  of  their  associated  point  and  line  graphs. 
+It is  tempting  to  construct,  partial  geometries  from  their  associated  strongly  regular 
+graphs.  In  this  chapter,  we  develop  the  theory  of orbit  matrices  for partial  geometries, 
+and give  some  preliminary  results. 
+5.2 Automorphisms  of  partial  geometries 
+Let A be  the  incidence  matrix  of a partial  geometry  pg(s,  t, a) and  let B  the  adjacency 
+matrix  of  the  associated  point  graph.  Equation  23  gives 
+B =  AAT  -  (t  + 1  )A. 
+An automorphism  of  A  is  a  pair  of  permutation  matrices  P  and  Q  such  that. 
+PAQ =  A. 
+79 
+Here P  permutes  the  rows  (points)  and  Q  the  columns  (lines).  We  have 
+PBPT =  P(AAt  -  (f  +  1  )I)PT 
+= PAATPt  -  [t  +  1)1 
+= PAQQTATPT  -  {T  +  1)/ 
+= AAT-(T  +  l)I 
+= B. 
+Therefore,  P  is  the  automorphism  of  the  point  graph.  Similarly  Q  is  the  automor-
+phism of  the  line  graph.  One  should  note  that  an  automorphism  of  the  point  or  line 
+graph  need  not  be  an  automorphism  of  the  partial  geometry.  For  example,  when 
+a =  5  + 1,  the  partial  geometry  is  a  2  —  (v,  s +  1,1)  design.  The  point  graph  is  a 
+complete  graph  and  any  permutation  is  an automorphism  of  the  complete  graph,  but 
+not necessarily  an  automorphism  of  the  design. 
+We next  see  how  the  assumption  of  the  existence  of a  non-trivial  automorphism 
+can help  to  reduce  the  size of the  search  for  possible  point  and  line  graphs  of a partial 
+geometry.  Later  on,  we  shall  also  see  how  the  automorphism  can  be  used  to  find  a 
+partial  geometry,  given  a  line  graph. 
+5.3 Orbit  matrices  for  partial  geometries 
+Once we  have  an  orbit  matrix  C  for  B,  we  can  find  the  possible  orbit  matrices  of 
+A. Assume  the  columns  of  A  are  in  orbits  of size  mi,  m-2,...,  rn,i. For  simplicity,  we 
+restrict  ourself  again  to  the  case  that  we  only have  column  orbits  of size 1  or a  prime 
+P-
+Let v'  be  the  number  of  columns  of A. Let.  rjp be the  number  of  column-orbits  of 
+size p and  r?i = v'  —  pr\p be  the  number  of column-orbits  of  size 1. 
+Let. CA  =  [u?J]  be  the  b  x d  column-sum  orbit  matrix  of  A  and  CAA  J  —  [t'jj] be 
+the 6x6  column-sum  orbit-  matrix  of  AAT.  Using  Equation  23.  we have 
+CAAT =  C+{t  +  l)J.  (45) 
+80 
+Since the  row  sum  is  t  + 1, we have 
+d 
+= t+  1. (46) 
+Checking the  column  sum,  we  get 
+b 
+J2Uij  =  s  + l.  (47) 
+i=1 
+Let. M  =  diag(mi,  m2,..., ma)-  Using  a  method  similar  to  the  one  in  Lemma  3.1, 
+one can  show  that 
+where the  (i,  j)-th  entry  of  SAAr is  the  sum  of all  the  entries  in  the  («, j)-th  block  of 
+the matrix  AAr.  which  is  in fact,  equal  to  VijUj. Since  M  is  a  diagonal  matrix,  using 
+Equation  48,  we  have 
+d 
+53  UikU]kmk  =  VijUj.  (49) 
+k=l 
+More specifically,  when  i  =  j, Equation  49  implies 
+d 
+53  "m-7"/.- "  (50) 
+k=I 
+Using Equations  46  and  50,  we  define  the  fixed  and  non-fixed  prototypes  for  the 
+matrix  CA  , in a  way  similar  to  the  prototypes  for  the  matrix  C. 
+Consider  an  arbitrary  fixed  row  r  of  CA  . Let  V>Q  and  W\  be  the  number  of  zeros 
+and ones,  respectively,  on  the  fixed  columns  of  row  r.  Let  ,?0  tuid zi  be  the  number 
+of zeros and  ones,  respectively,  on  the  non-fixed  columns  of row  r.  Since  the  number 
+of fixed columns  is  771, we have  w0  + v>i =  rft.  Similarly  we  have  20 + 2:  =  VP- Since 
+the row  sum  of  the  matrix  A  is  equal  to  t  + 1, we have 
+w 1 +  pz\ =  t + 1. 
+Thus,  we  have  the  following  set. of equations: 
+C-AMCTA = SAAT. (48) 
+U'o +  Wi = m-
+z 0 +21  —  rjp. (51) 
++ pz\  =  f  + 1. 
+81 
+We define  a Fixed  Prototype  as  a  non-negative  integer  solution  to  these  linear  equa-
+tions. 
+Now consider  an  arbitrary  non-fixed  row  r of  CA- The  possible  values  of the  fixed 
+column entries  of row r are  either  0  or p. The  possible  values  of the  non-fixed  column 
+entries  of row r can  be  0,1,...,  p. Let  w0  and  wp  be  the  number  of zeros and p's on  the 
+fixed columns  of row  r.  Let  Zi,  i =  0,1,...  be  the  number  of  i's  on  the  non-fixed 
+columns  of row r. Similar  to  the  situation  with  fixed rows,  we have U>q + wp  =  rji  and 
+XX=o zi =  rh-  Also-  since  the  row  sum  of  A  is  equal  to  t  +  1,  by  counting  we  have 
+wp +  izi  =  t + 1. Using  Equation  50,  we have 
+p 
+p2wp +  i2pzi  =  vrrnr  =  pvrr =  p(crr +  t + 1). 
+J=1 
+Thus, we  have  the  following  set of  equations: 
+wo +  wp  =  r/). 
+z0 +  Z!  +  z2  +  z3  +  •••  +  zp  =rjp, (52) 
+wp +  z\  +  2Z2  4-  3z3  +  •  • • +  pzp  =  t,  + 1, 
+pwp +  zj  +  iz2  +  9z3  +  •••  +  p2zp  =  crr  +  t + l. 
+We define  a  Non-Fixed  Prototype  as  a  non-negative  integer  solution  to  those  linear 
+equations. 
+After  calculating  the  prototypes,  the  backtrack  search  for  finding  the  matrix  C'A 
+is similar  to  the  backtrack  algorithm  for  finding  C.  The  only  difference  is that  for  CA 
+we should  also  consider  the  column  sum  which  is  equal  to  s  + 1. 
+After  the  matrix  CA  is found,  one can  then  apply  a  backtrack  search  to  try  to  find 
+the incidence  matrix  A  of  the  partial  geometry. 
+Note that  the  column  orbits  of the  incidence  matrix  ,4 are  the  orbits  of the  vertices 
+of the  line  graph  for  the  partial  geometry.  Thus,  we  only  need  to  consider  those 
+column orbit  sizes  for  which  there  exist  an  orbit  matrix  for  the  line  graph  with  the 
+corresponding  orbit  sizes. 
+Next, we  consider  an  example. 
+82 
+Example  10.  In  this  example,  we  consider  the  pg(2,2,1).  Its  point  graph  is  an 
+srg(15,6.1,3).  Assume  p =  3  and  assume  that,  for  the  point  graph,  there  are  three 
+orbits  of  size  one  and  four  orbits  of  size  three.  Therefore  <p  =  3,  </' = 4,  n\  —  = 
+n3 = 1  and n4  =  n5  =  n6  =  n7  =  3.  We  have  found  the  orbit  matrix  for  the  strongly-
+regular  graph  with  the  same  automorphism  in  Example  9,  which  is  as  follows  up  to 
+isomorphism: 
+/ 
+C = 
+0 0 0 0 0 1 1 
+0 0 0 0 1 0 1 
+0 0 0 1 0 0 1 
+0 0 3 0 2 2 1 
+0 3 0 2 0 2 1 
+3 0 0 2 2 0 1 
+3 3 3 1 1 1 0 
+Using Equation  45,  we  have: 
+CAAT = 
+V 
+CO 
+0 0 0 0 1 1 
+0 3 0 0 1 0 1 
+0 0 3 1 0 0 1 
+0 0 3 3 2 2 1 
+0 3 0 2 3 2 1 
+3 0 0 2 2 3 1 
+3 3 3 1 1 1 3 
+Now, we  try  to  construct  the  orbit  matrix  of  A.  Assume  that  the  desired  partial 
+geometry  has  5  column  orbits  of  size  3,  that  is,  mi  =  m.2  =  m-i  =  ni\  =  m^  =  3. 
+Therefore  r)i =  0  and  773 =  5. 
+Now, we  calculate  the  prototypes  for  CA- First,  we  calculate  the  fixed  prototype 
+83 
+using Equation  51.  We  have  the  following  set of  equations: 
+w0 +  w\  =  0, 
+zo +  21  =5,  (53) 
+w\ +  3zi  =  3. 
+The only  non-negative  integer  solution  to  the  set  of equations  above  is: 
+(u>o,Wi, 20,21) =  (0,0,4,1). 
+So there  are  exactly  four  0's  and  one  1  on each  fixed  row  of the  matrix  CA-
+Now, we  consider  the  non-fixed  prototypes,  we  have: 
+Wo +  W3  =  0, 
+20 +  2a  +  z2  +  23  =  5, (54) 
+w 3 +  z\  +  2z2  +  323  =  3, 
+3U>3 +  ZI  +  4  Z2 +  923  =  Crr  + 3. 
+In this  example,  for  the  non-fixed  rows  r,  crr  =  0.  The  only  non-negative  integer 
+solution  to  the  set  of  equations  above  is: 
+(w0, li'3.  Z0, Z\, z2, 23)  =  (0,  0, 2, 3,0, 0). 
+So there  are  exactly  two  0's  and  three  l's  on  each  non-fixed  row  of the  matrix  CA-
+Now, we try  to  construct  the  matrix  CA  using  the  information  from  the prototypes. 
+The first  row  is  [10000] up  to  isomorphism.  Using  Equation  49.  we can  see  that 
+5 
+T;  UuU2i  =  0. 
+i=1 
+One can  see,  up  to  isomorphism,  the  second  row  is  [01000]; the  third  row  is  [00100]; 
+and so  on.  Therefore,  the  only  possible  choice  for  CA  up  to  isomorphism  is  the 
+84 
+following: 
+/ 1  0  0  0  0  ^ 
+0 10  0  0 
+0 0  10  0 
+CA= 0  0  111 
+0 10  11 
+10  0  11 
+1110  0 
+Using this  orbit  matrix,  a  BDX  backtrack  algorithm  finds the  following  partial  geom-
+etry: 
+V 
+A = 
+'ill 0 0  0 0 0  0 0 0  0 0 0  0 
+0 0  0 1 1  1 0 0  0 0 0  0 0 0  0 
+0 0  0 0 0  0 1 1  1 0 0  0 0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+1 0  0 
+0 1  0 
+0 0  1 
+1 0  0 
+0 1  0 
+0 0  1 
+1 0  0 
+0 1  0 
+0 0  1 
+0 0  0 
+0 0  0 
+0 0  0 
+1 0  0 
+0 1  0 
+0 0  1 
+0 0  0 
+0 0  0 
+0 0  0 
+0 1  0 
+0 0  1 
+1 0  0 
+1 0  0 
+0 1  0 
+0 0  1 
+1 0  0 
+0 1  0 
+0 0  1 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  1 
+1 0  0 
+0 1  0 
+1 0  0 
+0 1  0 
+0 0  1 
+1 0  0 
+0 1  0 
+0 0  1 
+0 0  1 
+1 0  0 
+0 1  0 
+0 1  0 
+0 0  1 
+1 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+0 0  0 
+85 
+3 0 0 0 0 0 0 0 0 1 1 1 1 1 1 
+0 3 0 0 0 0 1 1 1 0 0 0 1 1 1 
+0 0 3 1 1 1 0 0 0 0 0 0 1 1 1 
+0 0 1 3 0 0 1 0 1 1 1 0 0 0 1 
+0 0 1 0 3 0 1 1 0 0 1 1 1 0 0 
+0 0 1 0 0 3 0 1 1 1 0 1 0 1 0 
+0 1 0 1 1 0 3 0 0 1 0 1 0 1 0 
+0 1 0 0 1 1 0 3 0 1 1 0 0 0 1 
+0 1 0 1 0 1 0 0 3 0 1 1 1 0 0 
+1 0 0 1 0 1 1 1 0 3 0 0 1 0 0 
+1 0 0 1 1 0 0 1 1 0 3 0 0 1 0 
+1 0 0 0 1 1 1 0 1 0 0 3 0 0 1 
+1 1 1 0 1 0 0 0 1 1 0 0 3 0 0 
+1 1 1 0 0 1 1 0 0 0 1 0 0 3 0 
+1 1 1 1 0 0 0 1 0 0 0 1 0 0 3 
+Its point  graph  is: 
+0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 
+0 0 0 0 0 0 1 1 1 0 0 0 1 1 1 
+0 0 0 1 1 1 0 0 0 0 0 0 1 1 1 
+0 0 1 0 0 0 1 0 1 1 1 0 0 0 1 
+0 0 1 0 0 0 1 1 0 0 1 1 1 0 0 
+0 0 1 0 0 0 0 1 1 1 0 1 0 1 0 
+0 1 0 1 1 0 0 0 0 1 0 1 0 1 0 
+0 1 0 0 1 1 0 0 0 1 1 0 0 0 1 
+0 1 0 1 0 1 0 0 0 0 1 1 1 0 0 
+1 0 0 1 0 1 1 1 0 0 0 0 1 0 0 
+1 0 0 1 1 0 0 1 1 0 0 0 0 1 0 
+1 0 0 0 1 1 1 0 1 0 0 0 0 0 1 
+1 1 1 0 1 0 0 0 1 1 0 0 0 0 0 
+1 1 1 0 0 1 1 0 0 0 1 0 0 0 0 
+1 1 1 1 0 0 0 1 0 0 0 1 0 0 0 
+86 
+and 
+6 3 3 
+CO 3 3 3 3 3 1 1 1 1 1 
+\ 
+3 6 3 3 3 3 1 1 1 3 3 3 1 1 1 
+3 3 6 1 1 1 3 3 3 3 3 3 1 1 1 
+3 3 1 6 3 3 1 3 1 1 1 3 3 3 1 
+3 3 1 3 6 3 1 1 3 3 1 1 1 3 3 
+3 3 1 3 3 6 3 1 1 1 3 1 3 1 3 
+CO 1 3 1 1 3 6 3 3 1 3 1 3 1 3 
+3 1 3 3 1 1 3 6 3 1 1 3 3 3 1 
+3 1 3 1 3 1 3 3 6 3 1 1 1 3 3 
+1 3 3 1 3 1 1 1 3 6 3 3 1 3 3 
+1 3 3 1 1 3 3 1 1 3 6 3 3 1 3 
+1 3 3 3 1 1 1 3 1 3 3 6 3 3 1 
+1 1 1 3 1 3 3 3 1 1 3 3 6 3 3 
+1 1 1 3 3 1 1 3 3 3 1 3 3 6 3 
+1 1 1 1 3 3 3 1 3 3 3 1 3 3 6 
+• 
+5.4 Methodology 
+When searching  for  partial  geometries,  we  assume  that  the  partial  geometry  has  an 
+automorphism  group  of prime  order  p. 
+Depending  on  the  parameters  of  the  partial  geometry,  the  construction  process 
+will be  one  of the  following  processes,  or  the  combination  of  both. 
+Process  1: 
+1. Construct  the  orbit  matrices  of the  point  and/or  line  graph. 
+2. Construct  the  orbit  matrices  of the  partial  geometry  from  the  orbit  matrices  of 
+the point  graph. 
+3. Construct  the  partial  geometry  from  its  orbit  matrices. 
+Process  2: 
+87 
+1. Construct  the  orbit  matrices  of the  point  and/or  line  graph. 
+2. Construct  the  point  and/or  line  graph. 
+3. Construct  the  partial  geometry  from  its  point  and/or  line  graph. 
+We have  implemented  most  of the  programs  required  for  Process  1  and Process  2. 
+5.5 Results 
+We have  some  preliminary  results  on  pg(6.10.  5). The  point  graph  of a pg(6,10,  5) is 
+an srg(91.66,45,  55),  which  is  the  unique  T(14). 
+It can  be  seen  that  the  automorphism  group  of  T(14)  is  the  symmetric  group 
+514, since  any  permutation  on  the  ground  set  keeps  the  graph  unchanged.  We  are 
+interested  to  know if T(14)  is  geometric  or not.  This  would show whether  a  pg(6,10,5) 
+exists or  does  not  exist.  Using  Lemma  2.30  it would  be  enough  to  check whether  this 
+graph  is  the  point  graph  of  a  pls(6.10)  or  not. 
+The prime  factors  of 14!, the  size of Aut(T(14)),  are  2,3,  5, 7,11, and  13.  We  have 
+finished  the  search  for  p  =  5,7.11  and  13.  and  no  partial  geometry  was  found  for 
+those  group  sizes.  For  p =  11  and  p  =  13  the  computation  time  was  low, about  two 
+hours  CPU  time,  but  for  p =  7  and p =  5  the  amount  of  computation  was  very  large. 
+We used  more  than  100  machines  to  finish  the  task  in  a  reasonable  amount  of  time. 
+88 
+Chapter  6 
+Conclusion 
+In this  chapter  we  summaries  the  contributions  of  this  thesis  and  talk  about  the 
+possible  future  work. 
+6.1  Contribution 
+In this  thesis,  we  studied  the  properties  of  strongly  regular  graphs  and  their  auto-
+morphism  groups. 
+The summary  of  the  contributions  in  this  thesis  is  as  follows: 
+1. We  implemented  the  theory  of  orbit  matrices  for  strongly  regular  graphs  for  the 
+first time  which  is  a new theory  in  this  field.  We  have  implemented  a  computer 
+program  that  generates  all  the  orbit  matrices  for  the  given  parameters  and  an 
+automorphism. 
+2. Using  orbit  matrices  we implemented  an  exhaustive  search  algorithm  for  finding 
+strongly  regular  graphs.  Using  orbit  matrices  in our algorithm  helps  us to reduce 
+the complexity  as  well as  the  required  time  of the  algorithm. 
+3. Using  our  program  we  eliminated  many  primes  as  possible  divisors  of the  order 
+of the  automorphism  group  of  many  unknown  strongly  regular  graphs. 
+89 
+4. We  found  some  new  strongly  regular  graphs  that  are  not  isomorphic  to  any 
+known ones. 
+5. We  found  several  upper  bounds  on  the  number  of  fixed  points  (p of the  auto-
+morphism  of  strongly  regular  graphs. 
+6. We  have  developed  the  theory  of  orbit  matrices  for  partial  geometries. 
+6.2  Future  work 
+We have  run  the  SRG  program  for  several  parameter  sets,  but  because  of  time  limi-
+tation,  we  were  not  able  to  do  the  search  for  other  parameter  sets.  For  future  work, 
+we can  improve  the  program  so  that  it  can  handle  more  parameter  sets. 
+We have  obtained  some  preliminary  results  on  partial  geometries.  We  can  use  the 
+orbit  matrix  program  for  partial  geometries  to  investigate  their  automorphisms  and 
+their  existence. 
+We have  found  some  upper  bounds  on  the  number  of  fixed points  of an  automor-
+phism of  a  strongly  regular  graph.  As  future  work,  we  can  try  to  lower these  upper 
+bounds. 
+90 
+Bibliography 
+[1] L.  BABAI,  Automorphism  groups,  isomorphism,  reconstruction,  in  Handbook  of 
+combinatorics,  Vol.  1,  2, Elsevier,  Amsterdam,  1995,  pp.  1447-1540. 
+[2] R.  C.  BOSE,  Strongly  regular  graphs,  partial  geometries  and  partially  balanced 
+designs, Pacific  J.  Math.,  13  (1963),  pp.  389-419. 
+[3] A.  E.  BROUWER  AND  J.  H.  VAN  LINT,  Strongly  regular  graphs  and  partial 
+geometries, in  Enumeration  and  design  (Waterloo,  Ont.,  1982),  Academic  Press, 
+Toronto,  ON.  1984,  pp.  85-122. 
+[4] R.  A.  BRUALDI  AND  H.  J.  RYSER,  Combinatorial  matrix  theory,  vol.  39  of 
+Encyclopedia  of  Mathematics  and  its  Applications,  Cambridge  University  Press, 
+Cambridge,  1991. 
+[5] F.  C.  BUSSEMAKER,  W.  H.  HAEMERS,  R.  MATHON,  AND  H.  A.  WILBRINK, 
+A (49,16,3,6)  strongly  regular  graph  does  not  exist  European  J.  Combin.,  10 
+(1989), pp.  413-418. 
+[6] P.  J.  CAMERON,  Automorphism  groups  of  graphs, in  Selected  topics  in  graph 
+theory,  2,  Academic  Press,  London,  1983,  pp.  89-127. 
+[7] ,  Random strongly  regular  graphs?.  Discrete  Math.,  273  (2003), pp.  103-114. 
+EuroComb'01  (Barcelona). 
+91 
+[8] P.  J.  CAMERON  AND  J.  H.  VAN  LINT,  Designs,  graphs,  codes  and  their  links, 
+vol. 22  of London  Mathematical  Society  Student  Texts,  Cambridge  University 
+Press,  Cambridge,  1991. 
+[9] A.  M.  COHEN,  A  new  partial  geometry  with  parameters  (s,  t,  a)  =  (7,  8,  4),  J. 
+Geom., 16  (1981),  pp.  181-186. 
+[10] C.  J.  COLBOURN  AND  J.  H.  DINITZ,  eds.,  The  CRC  handbook  of  combinatorial 
+designs, CRC  Press  Series  on  Discrete  Mathematics  and  its  Applications,  CRC 
+Press,  Boca  Raton,  FL,  1996. 
+[11] ,  eds.,  The  CRC  handbook  of  combinatorial  designs,  CRC  Press  Series  on 
+Discrete  Mathematics  and  its  Applications,  CRC  Press,  2006. 
+[12]  J.  B.  CONWAY,  A  course  in  functional  analysis,  vol.  96  of  Graduate  Texts  in 
+Mathematics,  Springer-Verlag,  New  York,  second  ed.,  1990. 
+[13] K.  COOLSAET,  J.  DEGRAER,  AND  E.  SPENCE,  The  strongly  regular  (45.12.3,3) 
+graphs, Electron.  J.  Combin.,  13  (2006),  pp.  Research  Paper  32,  9 pp. (electronic). 
+[14]  D.  G.  CORNEIL  AND  R.  A.  MATHON,  Algorithmic  techniques  for  the  generation 
+and analysis  of  strongly  regular  graphs  and  other  combinatorial  configurations, 
+Ann. Discrete  Math.,  2  (1978),  pp.  1-32.  Algorithmic  aspects  of  combinatorics 
+(Conf.,  Vancouver  Island,  B.C.,  1976). 
+[15] J.  DEGRAER  AND  K.  COOLSAET,  Classification  of  some  strongly  regular  sub-
+graphs of  the  McLaughlin  graph.  Discrete  Math.,  308  (2008),  pp.  395-400. 
+[16] P.  DELSARTE,  J.  M.  GOETHALS,  AND  J.  J.  SEIDEL,  Bounds  for  systems  of 
+lines and  jacobi polynomials,  Philips  Res.  Rept.s.,  30  (1975),  pp.  91*-95*. 
+[17] J.  DENES  AND  A.  D.  KEEDWELL,  Latin  squares  and  their  applications.  Aca-
+demic Press,  New  York,  1974. 
+92 
+[18] P.  ERDOS  AND  A.  RENYI,  Asymmetric  graphs,  Acta  Math.  Acad.  Sci.  Hungar, 
+14 (1963),  pp.  295-315. 
+[19] D.  T.  FINKBEINER,  II,  Introduction  to  matrices  and  linear  transformations, 
+Second edition,  W.  H.  Freeman  and  Co.,  San  Francisco,  Calif.,  1966. 
+[20] A.  FRIEDMAN,  Foundations  of  modern  analysis,  Dover  Publications  Inc.,  New 
+York, 1982.  Reprint  of  the  1970  original. 
+[21]  R.  FRUCHT,  Herstellung  von  Graphen  mit  vorgegebener  abstrakter  Gruppe,  Com-
+posite  Math.,  6  (1939),  pp.  239-250. 
+[22]  S.  GERSGORIN,  Uber  die  abgrenzung  der  eigenwerte  einer  matrix,  Izv.  Akad. 
+Nauk.  USSR  Otd.  Fiz.-Mat.  Nauk,  7  (1931),  pp.  749-754. 
+[23]  C.  GODSIL  AND  G.  ROYLE,  Algebraic  graph  theory,  vol.  207  of  Graduate  Texts 
+in Mathematics,  Springer-Verlag,  New  York,  2001. 
+[24] J.  HADAMARD,  Resolution  d'une  question  relative  aux  determinants,  Bull,  des 
+Sciences Math.,  17  (1893),  pp.  240-246. 
+[25] W.  HAEMERS,  A  new  partial  geometry  constructed  from  the  Hoffman-Singleton 
+graph, in  Finite  geometries  and  designs  (Proc.  Conf.,  Chelwood  Gate.  1980), 
+vol. 49  of London  Math.  Soc.  Lecture  Note  Ser.,  Cambridge  Univ.  Press,  Cam-
+bridge,  1981,  pp.  119-127. 
+[26] W.  H.  HAEMERS  AND  E.  SPENCE,  The  pseudo-geometric graphs  for generalized 
+quadrangles of  order  (3,£),  European  J.  Combin.,  22  (2001),  pp.  839-845. 
+[27] K.  HOFFMAN  AND  R.  KUNZE,  Linear  algebra,  Second  edition,  Prentice-Hall 
+Inc., Englewood  Cliffs,  N.J.,  1971. 
+[28] R.  A.  HORN  AND  C.  R.  JOHNSON,  Matrix  analysis.  Cambridge  University 
+Press,  Cambridge.  1990.  Corrected  reprint  of  the  1985  original. 
+93 
+[29] D.  E.  KNUTH,  Estimating  the  efficiency  of  backtrack  programs. Math.  Comp., 
+29 (1975),  pp.  122-136.  Collection  of articles  dedicated  to  Derrick Henry  Lehmer 
+on the  occasion  of  his  seventieth  birthday. 
+[30] D.  L.  KREHER  AND  D.  R.  STINSON,  Combinatorial  algorithms:  generation, 
+enumeration, and  search,  vol. 30,  ACM,  New  York,  NY,  USA,  1999. 
+[31] M.  G.  KREIN,  Hermitian-positive  kernels  in  homogeneous  spaces.  II,  Ukrain. 
+Nat.  Zurnal,  2  (1950),  pp.  10-59. 
+[32] C.  LAM,  Computer  construction  of  block  designs, in  Surveys  in  combinatorics, 
+1997 (London),  vol.  241  of London  Math.  Soc.  Lecture  Note  Ser.,  Cambridge 
+Univ. Press,  Cambridge,  1997,  pp.  49-64. 
+[33] S.  LANG,  Linear  algebra,  Second  edition,  Addison-Wesley  Publishing  Co.,  Read-
+ing, Mass.-London-Don  Mills,  Ont.,  1971. 
+[34] C.  F.  LAYWINE  AND  G.  L.  MULLEN,  Discrete  mathematics  using  Latin squares, 
+Wiley-Interscience  Series in Discrete  Mathematics  and  Optimization,  John  Wiley 
+& Sons  Inc.,  New  York,  1998.  A  Wiley-Interscience  Publication. 
+[35] A.  A.  MAKHNEV  AND  I.  M.  MINAKOV,  On  automorphisms of  strongly regular 
+graphs with  the  parameters  A  = 1  and  fi  =  2,  Diskret.  Mat..,  16  (2004),  pp.  95-
+104. Translation  in  Discrete  Math.  Appl.  14  (2004),  no.  2,  pp  201-210. 
+[36] R.  MATHON,  On  self-complementary strongly  regular  graphs, Discrete  Math.,  69 
+(1988), pp.  263-281. 
+[37] ,  Computational methods  in  design  theory,  in  Surveys  in combinatorics,  1991 
+(Guildford,  1991),  vol.  166 of London  Math.  Soc.  Lecture  Note  Ser.,  Cambridge 
+Univ. Press,  Cambridge,  1991,  pp.  101-117. 
+[38] B.  D.  MCKAY  AND  E.  SPENCE.  Classification  of  regular two-graphs on  36  and 
+38 vertices,  Australas.  J.  Combin..  24  (2001).  pp.  293-300. 
+94 
+[39] E.  MENDELSOHN,  Every  (finite)  group  is  the  group  of  automorphisms  of  a  (fi-
+nite) strongly  regular  graph, Ars  Combin.,  6  (1978),  pp.  75-86. 
+[40] D.  V.  PADUCHIKH,  On  the  automorphisms  of  strongly  regular  graphs with  the 
+parameters (85,14,3,2),  Discrete  Math.  Appl.,  19  (2009),  pp.  89-111.  Originally 
+published in  Diskretnaya  Matematika  (2009)  21,  No.  1  (in  Russian). 
+[41] D.  V.  PASECHNIK,  Skew-symmetric  association  schemes  with  two  classes  and 
+strongly regular  graphs  of  type  L2n-i(4N  —  1),  Acta  Appl.  Math.,  29  (1992), 
+pp. 129-138.  Interactions  between  algebra  and  combinatorics. 
+[42] D.  J.  S.  ROBINSON,  A  course  in  linear algebra  with applications, World  Scientific 
+Publishing  Co.  Pte.  Ltd.,  Hackensack,  NJ,  second  ed.,  2006. 
+[43] L.  L.  SCOTT,  A  condition  on  higman's  parameters,  Notices  Amer.  Math.  Soc., 
+20 (1973),  pp.  A-97. 
+[44] E.  SPENCE,  The  strongly  regular  (40,12,2,4)  graphs,  Electron.  J.  Combin..  7 
+(2000),  pp.  Research  Paper  22,  4  pp.  (electronic). 
+[45] J.  TITS,  Sur  la  trialite et,  certains groupes  qui  s 'en deduisent, Inst.  Hautes  Etudes 
+Sci. Publ.  Math.,  (1959),  pp.  13-60. 
+[46] J.  H.  VAN  LINT  AND  R.  M.  WILSON,  A  course  in  combinatorics,  Cambridge 
+University  Press,  Cambridge,  second  ed.,  2001. 
+95 
+Appendix  A 
+Search for  unknown  strongly 
+regular  graphs  with  less  that  100 
+vertices 
+In this  appendix,  we  provide  the  details  of  results  of  computer  runs  for  strongly 
+regular  graphs.  There  is  a table  for  each  parameter  set  with  fewer  than  one  hundred 
+vertices. The  first  row  of each  table  corresponds  to  the  smallest  prime  for  which  we 
+were able  to run the  program.  All  subsequent  rows  correspond  to  other  larger  possible 
+primes. The  second  column  corresponds  to  the  number  of  possible  fixed  points  for 
+each prime  p  in  the  first  column.  The  third  column  corresponds  to  the  number  of 
+orbit matrices  found  for the given number  of fixed points.  If  there  exist orbit  matrices, 
+then we  run  the  SRG  program  for  those  orbit  matrices;  the  fourth  column  shows  the 
+number  of  strongly  regular  graphs  found  for  the  orbit  matrices.  If  there  is  a  in 
+the table,  it  means  that  we  have  not  found  any  solutions  and  we  were  not  able  to 
+finish the  program  due  to  time  constraints.  Under  the  note  column,  we  provide  more 
+information  about  the  specific  case.  For  example,  if  we have  done  an  estimation  for 
+the particular  case,  it  would  be  given  in  this  column.  We  have  found  some  upper 
+bounds  in  this  thesis  on  the  number  of  fixed  points  an  automorphism  of  a  strongly 
+regular  graph  can  have.  We  refer  to  these  upper  bounds  in  the  note  column  to  shows 
+96 
+why we do not  need  to  check for  bigger numbers  of fixed points.  If  there  is  an "nnfp" 
+in the  note  column,  it  means  that  there  is  no non-fixed  prototype  for  that  number  of 
+fixed points.  By  Theorem  3.4  there  would  be  no  more  non-fixed  prototypes  for  any 
+larger number  of  fixed  points. 
+V #fix  point #orb  matrix #srg  found note 
+5 0 0 
+5 36 ? estimation  10  million days 
+10 0 
+15 0 nnfp 
+7 2 0 
+9 0 nnfp 
+11 10 0 nnfp 
+13 0 0 
+13 0 nnfp 
+17 14 0 nnfp 
+19 8 0 nnfp 
+23 19 0 nnfp 
+29 7 0 nnfp 
+31 3 0 nnfp 
+Table 8:  Computer  run  results  on  the  automorphisms  of  srg(65,  32,15,16). 
+97 
+p x point #orb  matrix #srg  found note 
+5 4 27 0 
+9 1 0 
+14 0 
+19 0 
+24 0 
+29 0 nnfp 
+7 6 0 
+13 0 
+20 0 nnfp 
+11 3 0 
+14 0 nnfp 
+13 4 0 
+17 0 nnfp 
+17 1 0 
+18 0 nnfp 
+19 12 0 nnfp 
+23 0 2 0 
+Table 9:  Computer  run  results  on  the  automorphisms  of  srg(69,20,  7, 5). 
+P #fix  point #orb  matrix #srg  found note 
+5 0 231 0 
+5 0 
+10 0 
+15 0 
+20 0 nnfp 
+7 5 0 
+12 0 
+19 0 nnfp 
+11 9 0 nnfp 
+13 10 0 nnfp 
+17 7 0 nnfp 
+19 18 0 nnfp 
+23 6 0 nnfp 
+29 17 0 nnfp 
+31 13 0 nnfp 
+Table 10:  Computer  run  results  on  the  automorphisms  of  srg(75.  32.10.16). 
+98 
+p #fix  point #orb  matrix #srg  found note 
+5 1 0 
+6 0 
+11 0 
+16 0 
+21 0 nnfp 
+7 6 0 
+13 0 
+20 0 nnfp 
+11 10 0 nnfp 
+13 11 0 nnfp 
+17 8 0 nnfp 
+19 0 2 0 
+19 0 nnfp 
+23 7 0 nnfp 
+29 18 0 nnfp 
+Table  11:  Computer  run  results  on  the  automorphisms  of  srg(76,  30, 8,14). 
+P #fix  point #oil)  matrix #srg  found note 
+5 1 4409 ? 
+6 0 
+11 0 
+16 0 
+21 0 nnfp 
+7 6 0 
+13 0 
+20 0 nnfp 
+11 10 0 nnfp 
+13 11 0 nnfp 
+17 8 0 nnfp 
+19 0 1 0 
+19 0 nnfp 
+23 19 0 nnfp 
+29 18 0 nnfp 
+31 14 0 nnfp 
+Table  12:  Computer  run  results  on  the  automorphisms  of  srg(76,  35.18.14). 
+99 
+p #fix  point #orb  matrix #srg  found note 
+3 1 0 
+4 2 0 
+7 0 
+10 0 
+13 0 
+16 0 
+19 0 
+22 0 
+25 0 
+28 0 Theorem  3.7 
+5 0 3 0 
+5 1 0 
+10 0 
+15 0 
+20 0 
+25 0 
+30 0 Theorem  3.7 
+7 1 8 0 
+8 0 
+15 0 
+22 0 
+29 0 Theorem  3.7 
+11 8 0 
+19 0 
+30 0 Theorem  3.7 
+13 7 0 
+20 0 
+33 0 Theorem  3.7 
+17 0 2 0 
+Table  13:  Computer  run  results  on  the  automorphisms  of  srg(85.14,3,2). 
+100 
+p #fix  point #orb  matrix #srg  found note 
+5 0 >30000 ? 
+5 236 ? 
+10 3 ? estimation  is  5  x 104  days  for  solution  1 
+15 0 
+20 0 
+25 0 nnfp 
+7 1 0 
+8 0 
+15 0 
+22 0 nnfp 
+11 8 0 
+19 0 nnfp 
+13 7 0 
+20 0 nnfp 
+17 0 2 ? 
+17 0 nnfp 
+19 9 0 nnfp 
+23 16 0 nnfp 
+29 27 0 nnfp 
+Table 14:  Computer  run  results  on  the  automorphisms  of  srg(85,30,11,10). 
+101 
+p #fix  point #orb  matrix #srg  found note 
+5 0 ? 
+5 24994 ? 
+10 0 
+15 0 nnfp 
+7 1 1536 ? 
+8 0 
+15 0 nnfp 
+8 5 0 
+13 nnfp 
+9 4 0 
+13 nnfp 
+11 8 0 nnfp 
+13 7 nnfp 
+17 0 0 
+17 0 nnfp 
+19 9 0 nnfp 
+23 16 0 nnfp 
+29 27 0 nnfp 
+31 23 0 nnfp 
+37 11 0 nnfp 
+39 7 0 nnfp 
+41 3 0 nnfp 
+Table 15:  Computer  run  results  on  the  automorphisms  of  srg(85.  42, 20. 21). 
+102 
+p #fix  point #orb  matrix #srg  found note 
+5 3 138 ? 
+8- 0 
+13 0 
+18 0 
+23 0 
+28 0 nnfp 
+7 4 0 
+11 0 
+18 0 
+25 0 nnfp 
+11 0 5 ? 
+11 0 
+22 0 nnfp 
+13 10 0 
+23 0 nnfp 
+17 3 0 
+20 0 nnfp 
+19 12 0 nnfp 
+23 19 0 nnfp 
+Table  16:  Computer  run  results  on  the  automorphisms  of  srg(88,  27, 6, 9). 
+103 
+V #fix  point #orb  matrix #srg  found note 
+7 4 0 
+11 0 
+18 0 
+25 nnfp 
+11 7 0 
+18 0 nnfp 
+13 4 0 
+17 0 nnfp 
+17 10 0 nnfp 
+19 0 7 0 
+19 0 nnfp 
+23 3 0 
+26 0 nnfp 
+29 8 0 nnfp 
+31 2 0 
+33 0 nnfp 
+37 21 0 nnfp 
+39 17 0 nnfp 
+Table  17:  Computer  run  results  on  the  automorphisms  of  srg(95,40,12,  20). 
+104 
+p #fix  point #orb  matrix #srg  found note 
+5 1 ? 
+6 0 
+11 0 
+16 0 
+21 0 
+26 0 nnfp 
+7 5 0 
+12 0 
+19 0 nnfp 
+11 8 0 
+19 0 nnfp 
+13 5 0 
+18 0 nnfp 
+17 11 0 nnfp 
+19 1 0 
+20 0 nnfp 
+23 4 0 
+27 0 nnfp 
+29 9 0 nnfp 
+31 3 0 nnfp 
+Table  18:  Computer  run  results  on  the  automorphisms  of  srg(96,  35,10,14). 
+105 
+p #fix  point #orb  matrix #srg  found note 
+7 5 0 
+12 0 
+19 0 
+26 0 nnfp 
+11 8 0 
+19 0 nnfp 
+13 5 0 
+18 0 nnfp 
+17 11 0 nnfp 
+19 1 8 0 
+20 0 nnfp 
+23 4 0 
+27 0 nnfp 
+29 9 0 nnfp 
+31 3 0 
+34 0 nnfp 
+Table 19:  Computer  run  results  on the  automorphisms  of  srg(96, 38,10 
+P #fix  point #orb  matrix #srg  found note 
+7 5 0 
+12 0 
+19 0 
+26 0 nnfp 
+11 8 0 
+19 0 nnfp 
+13 5 0 
+18 0 nnfp 
+17 11 0 nnfp 
+19 1 0 
+20 0 nnfp 
+23 4 0 
+27 0 nnfp 
+29 9 0 nnfp 
+31 3 0 
+34 0 nnfp 
+Table 20:  Computer  run  results  on  the  automorphisms  of  srg(96,45,  24 
+106 
+p #fix  point #orb  matrix #srg  found note 
+3 0 ? 
+3 0 
+6 0 
+9 0 
+12 0 
+15 0 
+18 0 
+21 0 Theorem  3.7 
+5 4 0 
+9 0 
+14 0 
+19 0 Theorem  3.7 
+7 1 0 
+8 0 
+15 0 
+22 0 Theorem  3.7 
+11 0 0 
+11 0 
+22 0 Theorem  3.7 
+21: Computer  run  results  on  the  automorphisms  of  srg(99,14,1, 
+107 
+p #fix  point #orb  matrix #srg  found note 
+7 1 21989 ? 
+8 0 
+15 0 
+22 0 
+29 0 nnfp 
+11 0 173 ? 
+11 0 
+22 0 nnfp 
+13 8 0 
+21 0 nnfp 
+17 14 0 nnfp 
+19 4 0 
+23 0 nnfp 
+23 7 0 
+30 0 nnfp 
+29 12 0 , nnfp 
+31 6 0 nnfp 
+37 25 0 nnfp 
+39 21 0 nnfp 
+41 17 0 nnfp 
+Table  22:  Computer  run  results  on  the  automorphisms  of  srg(99,42,  21,15) 
+108 
+Appendix  B 
+srg(49,18,7,6) 
+In this  appendix,  we  provide  the  adjacency  matrix  of all srg(49,18,  7. 6) that  our  SRG 
+program  has  found.  Table  23  shows a  summery  of  all  the  graphs  in  this  appendix. 
+Graph Aut group  size From Latin  square New 
+Ai 10 Yes No 
+a2 15 Yes No 
+a3 30 No Yes 
+a4 15 No Yes 
+A 5 15 No Yes 
+21 No Yes 
+A 7 1764 Yes No 
+63 No Yes 
+1008 Yes No 
+Aw 126 No Yes 
+Table 23:  srg(49,18,  7, 6) results  summery 
+109 
+00000 00000 00000 
+11111 
+11111 11111 00000 11111 00000 
+00000 
+00000 
+00000 
+00000 
+00000 
+01101 
+10110 
+01011 
+10101 
+11010 
+11001 
+11100 
+OHIO 
+00111 
+10011 
+11000 
+01100 
+00110 
+00011 
+10001 
+10001 
+11000 
+01100 
+00110 
+00011 
+01001 
+10100 
+01010 
+00101 
+10010 
+11000 
+01100 
+00110 
+00011 
+10001 
+10100 
+01010 
+00101 
+10010 
+01001 
+01011 
+10101 
+11010 
+01101 
+10110 
+00000 
+00000 
+00000 
+00000 
+00000 
+01011 
+10101 
+11010 
+01101 
+10110 
+11000 
+01100 
+00110 
+00011 
+10001 
+01100 
+00110 
+00011 
+10001 
+11000 
+10100 
+01010 
+00101 
+10010 
+01001 
+10010 
+01001 
+10100 
+01010 
+00101 
+11000 
+01100 
+00110 
+00011 
+10001 
+11001 
+11100 
+OHIO 
+00111 
+10011 
+01101 
+10110 
+01011 
+10101 
+11010 
+00000 
+00000 
+00000 
+00000 
+00000 
+10100 
+01010 
+00101 
+10010 
+01001 
+10010 
+01001 
+10100 
+01010 
+00101 
+00110 
+00011 
+10001 
+11000 
+01100 
+00101 
+10010 
+01001 
+10100 
+01010 
+11000 
+01100 
+00110 
+00011 
+10001 
+10001 
+11000 
+01100 
+00110 
+00011 
+10001 
+11000 
+01100 
+00110 
+00011 
+10010 
+01001 
+10100 
+01010 
+00101 
+01111 
+10111 
+11011 
+11101 
+11110 
+10000 
+01000 
+00100 
+00010 
+00001 
+10000 
+01000 
+00100 
+00010 
+00001 
+10000 
+01000 
+00100 
+00010 
+00001 
+10000 
+01000 
+00100 
+00010 
+00001 
+11000 
+01100 
+00110 
+00011 
+10001 
+00011 
+10001 
+11000 
+01100 
+00110 
+10100 
+01010 
+00101 
+10010 
+01001 
+3 0000 
+01000 
+00100 
+00010 
+00001 
+01111 
+10111 
+11011 
+11101 
+11110 
+10000 
+01000 
+00100 
+00010 
+00001 
+01000 
+00100 
+00010 
+00001 
+10000 
+10010 
+01001 
+10100 
+01010 
+00101 
+01001 
+10100 
+01010 
+00101 
+10010 
+10010 
+01001 
+10100 
+01010 
+00101 
+00110 
+00011 
+10001 
+11000 
+01100 
+10000 
+01000 
+00100 
+00010 
+00001 
+10000 
+01000 
+00100 
+00010 
+00001 
+01111 
+10111 
+11011 
+11101 
+11110 
+11000 
+01100 
+00110 
+00011 
+10001 
+00010 
+00001 
+10000 
+01000 
+00100 
+10001 
+11000 
+01100 
+00110 
+00011 
+10100 
+01010 
+00101 
+10010 
+01001 
+01010 
+00101 
+10010 
+01001 
+10100 
+10000 
+01000 
+00100 
+00010 
+00001 
+00001 
+10000 
+01000 
+00100 
+00010 
+10001 
+11000 
+01100 
+00110 
+00011 
+01111 
+10111 
+11011 
+11101 
+11110 
+00100 
+00010 
+00001 
+10000 
+01000 
+10010 
+01001 
+10100 
+01010 
+00101 
+10001 
+11000 
+01100 
+00110 
+00011 
+10001 
+11000 
+01100 
+00110 
+00011 
+10000 
+01000 
+00100 
+00010 
+00001 
+10100 
+01010 
+00101 
+10010 
+01001 
+00100 
+00010 
+00001 
+10000 
+01000 
+00010 
+00001 
+10000 
+01000 
+00100 
+01111 
+10111 
+11011 
+11101 
+11110 
+10100 
+01010 
+00101 
+10010 
+01001 
+00011 
+10001 
+11000 
+01100 
+00110 
+11000 
+01100 
+00110 
+00011 
+10001 
+10010 
+01001 
+10100 
+01010 
+00101 
+10000 
+01000 
+00100 
+000)0 
+00001 
+00010 
+00001 
+10000 
+01000 
+00100 
+00010 
+00001 
+10000 
+01000 
+00100 
+10000 
+01000 
+00100 
+00010 
+00001 
+autogp size =10 
+Latin square graph. NOT NEW-
+110 
+{0 1 1 1 00000 00000 00000 00000 00000 00000 33111 11111 33133 
+1 0 1 1 00000 00000 00000 00000 11111 11111 00000 00000 33111 
+1 1 0 1 00000 00000 00000 11111 00000 11111 00000 11111 00000 
+] 1 1 0 00000 00000 00000 11111 11111 00000 11111 00000 00000 
+0 0 0 0 00000 03031 10101 11000 11000 11000 10010 01100 10010 
+0 0 0 0 00000 10101 11010 01100 01100 01100 03001 00110 01001 
+0 0 0 0 00000 11010 01101 00110 00110 00110 10100 00031 10100 
+0 0 0 0 00000 01101 10110 00011 00011 00011 01010 10001 01010 
+0 0 0 0 00000 10110 01011 10001 10001 10001 00101 11000 00101 
+0 0 0 0 03303 00000 01011 11000 10100 01010 11000 10001 03 3 00 
+0 0 0 0 30310 00000 10101 01100 01010 00101 01100 11000 00110 
+0 0 0 0 03011 00000 11010 00110 00101 10010 00110 01100 00011 
+0 0 0 0 10303 00000 01101 00011 10010 01001 00011 00110 10001 
+0 0 0 0 11010 00000 10110 10001 01001 10100 10001 00011 11000 
+0 0 0 0 11010 01101 00000 10100 00110 30001 11000 10100 10001 
+0 0 0 0 01101 10110 00000 01010 00011 11000 01100 01010 11000 
+0 0 0 0 10330 01011 00000 00101 10001 01300 00110 00101 01100 
+0 0 0 0 03013 10101 00000 10010 11000 003 30 00011 10010 00110 
+0 0 0 0 30303 11010 00000 01001 01100 00011 10001 01001 00011 
+0 0 1 1 30001 10001 10010 01111 10000 10000 10000 10000 10100 
+0 0 1 I 3 3000 13000 01001 10111 01000 01000 01000 01000 01010 
+0 0 1 1 03 3 00 03 300 30300 11011 00100 00100 00100 00100 00101 
+0 0 1 1 003 3 0 00110 01010 11101 00010 00010 0003 0 00010 10030 
+0 0 1 1 00013 00011 00101 11110 00001 00001 00001 00001 01001 
+0 1 0 1 30003 10010 00110 10000 01113 01000 00010 10100 00300 
+0 1 0 1 3 3 000 01003 00011 01000 30311 00100 00001 01010 00010 
+0 1 0 I 03 300 10100 10001 00100 11011 00030 10000 00303 00001 
+0 1 0 3 00110 01010 11000 00010 11101 00003 01000 30030 10000 
+0 1 0 3 00011 00101 01100 00003 11330 30000 00100 03 003 01000 
+0 1 1 0 10001 00101 11000 3 0000 00001 01111 10100 03000 10000 
+0 1 1 0 11000 10010 01100 03000 30000 10111 01010 00100 01000 
+0 1 1 0 01100 01001 00110 00100 03 000 11011 00101 00030 00100 
+0 1 1 0 003 3 0 10100 00011 00010 00300 11301 10010 00003 00010 
+0 1 1 0 00031 01010 10001 00001 00030 11110 01001 30000 00001 
+1 0 0 3 10300 30001 10003 10000 003 00 10010 01111 00003 10000 
+1 0 0 3 01010 13000 3 3 000 01000 00030 01001 10133 30000 01000 
+1 0 0 3 00101 03100 on oo 00100 00001 10100 33011 03 000 00100 
+1 0 0 3 10010 00110 00110 00010 10000 01010 31101 00100 00010 
+1 0 0 3 01001 00011 00011 00001 01000 00101 13310 00010 00001 
+1 0 1 0 00011 31000 30010 10000 10010 00001 03000 01111 00100 
+1 0 1 0 10001 01100 03001 01000 01001 10000 00100 10111 00010 
+1 0 1 0 13 000 00110 10100 00100 10100 01000 00030 11011 00001 
+1 0 1 0 03 3 00 00011 0303 0 00010 01010 00100 00001 11101 10000 
+1 0 1 0 003 30 10001 00303 00003 00101 00010 10000 11330 01000 
+1 1 0 0 30100 00011 31000 10010 00010 10000 10000 00030 01111 
+1 1 0 0 03030 10001 01100 01001 00001 01000 01000 00001 10311 
+1 1 0 0 00101 11000 00110 10100 10000 00100 00100 30000 11011 
+1 1 0 0 1003 0 01100 00011 01010 01000 00010 00010 03000 11103 
+1 1 0 0 01003 00110 10001 00103 00100 00001 00001 00300 11110 j 
+autogp size = 15 
+Latin square graph. NOT NEW. 
+Ill 
+0 1 1 3 00000 00000 00000 00000 00000 00000 11111 11111 11111 
+1 0 1 1 00000 00000 00000 00000 11111 11111 00000 00000 11111 
+1 1 0 3 00000 00000 00000 11133 00000 11111 00000 11111 00000 
+1 1 3 0 00000 00000 00000 31111 11111 00000 11111 00000 00000 
+0 0 0 0 01331 10000 10000 10000 11000 11100 11010 10100 10000 
+0 0 0 0 10111 01000 01000 01000 01100 01110 01101 01010 01000 
+0 0 0 0 11011 00100 00100 00100 00110 00111 10110 00101 00100 
+0 0 0 0 11101 00010 00010 00010 00011 10011 01011 10010 00010 
+0 0 0 0 11110 00001 00001 00001 10001 11001 10101 01001 00001 
+0 0 0 0 10000 01111 10000 00110 11010 01000 00010 11100 01001 
+0 0 0 0 01000 10111 01000 00011 01101 00100 00001 01130 10100 
+0 0 0 0 00100 11011 00100 10001 10110 00010 10000 00111 01010 
+0 0 0 0 00010 11101 00010 11000 01011 00001 01000 10011 00101 
+0 0 0 0 00001 11310 00001 01100 10101 10000 00100 11001 10010 
+0 0 0 0 10000 10000 01111 10110 00010 10100 11000 01000 11001 
+0 0 0 0 01000 01000 10111 01011 00001 01010 01100 00100 11100 
+0 0 0 0 00100 00100 11011 10101 10000 00101 0013 0 00010 OHIO 
+0 0 0 0 00010 00010 11301 11010 01000 10010 0003 3 00001 00111 
+0 0 0 0 00001 00001 11110 01101 00100 01001 10001 10000 10011 
+0 0 1 3 10000 003 3 0 10110 01001 11000 10100 11000 00011 00000 
+0 0 1 3 01000 0003 3 01011 10100 01100 01010 01100 10001 00000 
+0 0 3 3 00100 30003 10101 01010 00110 00101 00110 11000 00000 
+0 0 1 3 00010 3 3 000 11010 00101 00011 10010 00031 03 300 00000 
+0 0 3 3 00001 03100 01101 10010 10001 01001 10001 00330 00000 
+0 1 0 3 10001 10101 00100 10001 01001 11000 0013 0 00000 01010 
+0 1 0 1 11000 11010 00010 11000 10100 01100 00011 00000 00101 
+0 1 0 3 01100 01101 00001 01100 01010 00110 10003 00000 10010 
+0 1 0 3 00110 10110 10000 00110 00101 00011 11000 00000 01001 
+0 1 0 3 00011 01011 03000 00011 10010 10001 01100 00000 30300 
+0 1 3 0 10011 00001 3003 0 10010 10001 00110 00000 03 003 3 0010 
+0 1 3 0 11001 10000 03003 01001 11000 00011 00000 30300 03003 
+0 1 3 0 11100 01000 30100 10100 01100 10001 00000 03010 10100 
+0 1 3 0 01110 00100 01010 01010 00110 11000 00000 00101 01010 
+0 1 3 0 00111 00010 00101 00101 00011 01100 00000 10010 00101 
+1 0 0 3 10101 00100 10001 10001 00110 00000 01001 00101 10001 
+1 0 0 3 11010 00010 11000 11000 00013 00000 10100 10010 11000 
+1 0 0 3 01301 00001 01100 01100 30003 00000 01010 01001 01100 
+1 0 0 3 10110 10000 00110 00110 3 3000 00000 00101 10100 00110 
+1 0 0 3 01011 01000 00011 00011 03 300 00000 1003 0 0103 0 00011 
+1 0 3 0 10010 10011 00001 01100 00000 01001 03030 00330 10010 
+1 0 3 0 01001 11001 10000 00110 00000 10100 003 03 0003 3 01001 
+1 0 1 0 30100 11100 01000 00011 00000 01010 3003 0 30003 10100 
+1 0 3 0 01010 01110 00100 10001 00000 00101 03003 3 3 000 01010 
+1 0 3 0 00101 00111 00010 11000 00000 10010 30300 01100 00101 
+1 3 0 0 10000 01001 11001 00000 00101 10100 11000 10100 00110 
+1 1 0 0 01000 10100 11100 00000 10010 01010 01100 01010 00011 
+I 1 0 0 00100 01010 01110 00000 01001 00101 00110 00101 10001 
+1 1 0 0 00010 00101 00111 00000 10100 10010 00011 10010 11000 
+1 1 0 0 00001 10010 10011 00000 01010 01001 10001 01001 01100 
+aut.ogp  size  = 30 
+112 
+( 0 1 1 1 00000 00000 00000 00000 00000 00000 31111 11111 11111 \ 
+1 0 1 1 00000 00000 00000 00000 31111 3 3 3 3 1 00000 00000 11113 
+1 1 0 1 00000 00000 00000 11111 00000 11111 00000 11111 00000 
+1 1 1 0 00000 00000 00000 11131 11111 00000 11111 00000 00000 
+0 0 0 0 03331 10000 30000 10000 11000 11100 11010 10100 10000 
+0 0 0 0 10111 01000 01000 01000 01100 01110 01101 01010 01000 
+0 0 0 0 11011 00100 00100 00100 00110 00111 10110 00103 00100 
+0 0 0 0 11101 00010 00010 00010 00011 10011 01011 30010 00010 
+0 0 0 0 11110 00001 00001 00001 10001 11001 10103 01001 00001 
+0 0 0 0 10000 01111 01000 00011 11010 01000 00030 11100 10100 
+0 0 0 0 01000 10111 00100 10001 01101 00100 00003 01110 01010 
+0 0 0 0 00100 11011 00010 11000 10110 00010 30000 00111 00101 
+0 0 0 0 00010 11301 00001 01100 01011 00003 03 000 10011 10010 
+0 0 0 0 00001 11110 10000 00110 10101 30000 00300 11001 01001 
+0 0 0 0 10000 00001 01333 10110 00100 30300 31000 3 0000 11001 
+0 0 0 0 01000 10000 30313 01011 00010 03030 03 3 00 01000 11100 
+0 0 0 0 00300 01000 33033 10101 00001 00303 00110 00100 01110 
+0 0 0 0 00030 00300 3 3301 11010 10000 30030 0003 3 00010 00111 
+0 0 0 0 00001 00010 11110 01101 01000 03 001 10001 00001 10011 
+0 0 1 1 10000 01100 10330 01001 10001 30100 11000 00110 00000 
+0 0 1 3 01000 00110 01011 10100 3 3000 01010 01100 00011 00000 
+0 0 1 1 00300 00011 10101 01010 01100 00101 00110 10001 00000 
+0 0 1 1 00010 10001 11010 00101 00110 10030 00011 11000 00000 
+0 0 1 1 00003 13000 01101 10010 00011 01001 10001 01100 00000 
+0 1 0 1 3 0003 30303 00010 11000 01001 11000 00110 00000 00101 
+0 1 0 1 31000 33030 00001 01100 10100 01100 00011 00000 30030 
+0 1 0 3 01300 03101 10000 00110 01030 00110 10001 00000 01001 
+0 J 0 3 00110 10110 01000 00011 00301 00011 11000 00000 10100 
+0 1 0 1 00011 01011 00300 10001 10010 10001 01100 00000 01010 
+0 1 1 0 10011 00001 30030 10010 10001 00110 00000 01001 10010 
+0 1 1 0 11001 10000 03001 03001 11000 00011 00000 10100 01001 
+0 I 1 0 11100 01000 10100 10100 01100 30001 00000 01010 10100 
+0 1 3 0 OHIO 00100 01010 01010 00130 13 000 00000 00101 01010 
+0 1 1 0 00111 00010 00101 00101 00011 03 300 00000 3 0010 00101 
+1 0 0 1 30101 00100 3 0001 10001 00110 00000 01001 00101 10001 
+1 0 0 3 11010 00010 11000 11000 00011 00000 10100 10010 3 3 000 
+1 0 0 3 01101 00001 01100 01100 10001 00000 0103 0 01001 03 300 
+1 0 0 3 10110 10000 00110 00110 11000 00000 00303 10100 0013 0 
+1 0 0 3 01011 01000 00011 0003 3 01100 00000 30030 01010 00011 
+1 0 1 0 10030 10011 10000 003 30 00000 03003 0303 0 0013 0 01001 
+1 0 3 0 03 001 11001 01000 00011 00000 30300 00303 00031 10100 
+1 0 1 0 10100 31100 00100 30001 00000 03030 30030 10001 01010 
+1 0 1 0 01010 01110 00010 3 3000 00000 003 03 03001 11000 00101 
+3 0 1 0 00101 00111 00001 03 300 00000 3003 0 10100 01100 10010 
+1 1 0 0 10000 10010 11003 00000 01010 30300 11000 01003 003 3 0 
+1 1 0 0 01000 01001 11100 00000 00101 03030 01100 30300 00013 
+1 1 0 0 00100 10100 onio 00000 10010 00303 00110 01030 30003 
+3 1 0 0 0003 0 01010 00111 00000 01003 30030 00011 00301 11000 
+\ I 1 0 0 00003 00303 10011 00000 30300 03 001 30001 10010 03 300 / 
+autogp  size  = 15 
+113 
+0 1 1 1 00000 00000 00000 00000 00000 00000 11111 11111 11311 
+1 0 1 1 00000 00000 00000 00000 11111 11111 00000 00000 11131 
+1 1 0 1 00000 00000 00000 11111 00000 11111 00000 11113 00000 
+1 1 1 0 00000 00000 00000 11111 11111 00000 11111 00000 00000 
+0 0 0 0 01111 10000 10000 10000 11000 11100 11010 30100 10000 
+0 0 0 0 10111 01000 01000 01000 01100 01110 01101 01010 01000 
+0 0 0 0 11011 00100 00100 00100 00110 00111 10110 00101 00100 
+0 0 0 0 11101 00010 00010 00010 00011 10011 01011 10010 00010 
+0 0 0 0 11110 00001 00001 00001 10001 11001 10101 01001 00001 
+0 0 0 0 10000 01111 01000 10100 11010 01000 00010 11100 0003 3 
+0 0 0 0 01000 10111 00100 01010 01101 00100 00001 omo 30003 
+0 0 0 0 00100 11011 00010 00101 10110 00010 10000 00111 3 3000 
+0 0 0 0 00010 11101 00001 10010 01011 00001 01000 10011 03 3 00 
+0 0 0 0 00001 11110 10000 01001 10101 10000 00100 11001 00330 
+0 0 0 0 10000 00001 01111 11001 00100 10100 11000 10000 30330 
+0 0 0 0 01000 10000 10111 11100 00010 01010 01100 01000 03033 
+0 0 0 0 00100 01000 11011 01130 00001 00101 00110 00100 10101 
+0 0 0 0 00010 00100 11101 003 3 3 10000 10010 00011 00010 11030 
+0 0 0 0 00001 00010 11110 3003 3 01000 01001 10001 00001 03303 
+0 0 1 1 10000 10010 11001 00330 01010 10100 11000 03001 00000 
+0 0 1 1 01000 01001 11300 00011 00101 01010 01100 10100 00000 
+0 0 1 1 00100 10100 OHIO 10001 10010 00101 00110 01010 00000 
+0 0 1 1 00010 01010 00111 11000 01001 10010 00011 00101 00000 
+0 0 1 1 00001 00101 10031 01100 10100 01001 10001 10010 00000 
+0 1 0 1 10001 10101 00010 00101 01001 11000 00110 00000 3 3 000 
+0 1 0 1 11000 11010 00001 10010 10100 01100 00011 00000 03300 
+0 ] 0 1 01100 01101 10000 01001 01010 00110 10001 00000 00310 
+0 I 0 1 00110 10110 01000 10100 00101 00011 11000 00000 0003 3 
+0 1 0 I 00011 01011 00300 01010 10010 10001 01100 00000 30003 
+0 1 1 0 10011 00001 30030 10010 10001 00110 00000 01001 30030 
+0 1 1 0 11001 10000 03 001 01001 13000 00011 00000 10100 03001 
+0 1 1 0 11100 01000 10100 10100 03300 10001 00000 01010 10100 
+0 1 1 0 OHIO 00100 01010 01010 00310 11000 00000 00101 0103 0 
+0 1 1 0 00111 00010 00101 00101 00011 01100 00000 10010 00101 
+1 0 0 1 10101 00100 10001 10001 00110 00000 01001 00101 10001 
+1 0 0 1 11010 00010 11000 11000 00011 00000 10100 10010 13 000 
+1 0 0 1 01101 00001 01100 01100 10001 00000 01010 01001 01100 
+1 0 0 1 10110 10000 00110 00110 11000 00000 00101 30300 00110 
+1 0 0 1 01011 01000 00011 00011 01100 00000 10010 01010 00011 
+1 0 1 0 10010 10011 10000 01001 00000 01001 03010 00110 00110 
+1 0 1 0 01001 11001 01000 10100 00000 10100 00101 00011 00011 
+1 0 1 0 10100 11100 00100 01010 00000 01010 10010 10001 10001 
+1 0 1 0 01010 01110 00010 00101 00000 00101 01001 11000 13 000 
+1 0 1 0 00101 00111 00001 10010 00000 10010 10100 01100 03300 
+1 1 0 0 10000 01100 10330 00000 10001 10100 11000 00110 03001 
+1 1 0 0 01000 00110 01011 00000 11000 01010 01100 00011 10100 
+1 1 0 0 003 00 00011 10101 00000 01100 00101 00110 10001 01010 
+1 1 0 0 00010 10001 11010 00000 00110 10010 00011 11000 00101 
+J 1 0 0 00001 11000 01101 00000 00011 01001 10001 01100 10010 
+aut.ogp  size  =35 
+114 
+' 0000000 1110000 1110000 1100100 1300300 1010100 1030300 N 
+0000000 0111000 0111000 0110030 0330030 0101030 0303030 
+0000000 0011100 0011100 0011001 0031001 0030303 0030303 
+0000000 0001110 0001110 1001100 1001100 3003030 3003030 
+0000000 0000111 0000111 0100110 0100110 0300101 0300301 
+0000000 1000011 1000011 0010011 0010011 1010010 3030030 
+0000000 1100001 1100001 3001001 1001001 0101001 0303003 
+1000031 0000000 1100100 1100030 0001011 1010010 0001101 
+1100001 0000000 0110010 0110001 1000101 0101001 1000130 
+1110000 0000000 0011001 1031000 1100010 1010100 0100013 
+0111000 0000000 1001100 0101100 0110001 0101030 3030003 
+0011100 0000000 0100110 0010110 1011000 0010101 3 303 000 
+0001110 0000000 0010011 0001011 0303100 1001010 03 30100 
+0000111 0000000 1001001 1000101 0010110 0100101 0033010 
+1000011 1001001 0000000 1010100 0101001 0100110 1110000 
+1100001 1100100 0000000 0101010 1010100 0010011 0111000 
+1110000 0110010 0000000 0010101 0101010 1001001 0011100 
+0111000 0011001 0000000 1001010 0010101 1100100 0001110 
+0011100 1001100 0000000 0100101 1001030 0110030 0000111 
+0001110 0100110 0000000 1010010 0300303 0033003 1000013 
+0000111 0010011 0000000 0101001 1010010 1001100 3 300001 
+1001001 1010001 1001010 0000000 0101100 0011100 0003031 
+1100100 1101000 0100101 0000000 0010110 0001110 1000101 
+0110010 0110100 1010010 0000000 0001011 0000131 1100010 
+0011001 0011010 0101001 0000000 1000101 100003 3 0110001 
+1001100 0001101 1010100 0000000 3 300030 1100001 1011000 
+0100110 1000110 0101010 0000000 03 30001 1110000 0101100 
+0010011 0100031 0010303 0000000 1011000 0111000 0010130 
+1003001 0110100 0300303 0001101 0000000 1110000 3300030 
+3 3 00300 0011010 1010010 1000110 0000000 0111000 03 30001 
+0110010 0001101 0101001 03 0003 3 0000000 0011100 1033000 
+0011001 1000110 1010300 3030001 0000000 0001110 0303300 
+1001100 0100011 0101010 1103000 0000000 0000111 0030130 
+0100110 1010001 0010101 0330100 0000000 1000011 0003033 
+0010011 1101000 1001030 0013030 0000000 1100001 3000303 
+1003030 1010010 0031001 00033 3 0 1000011 0000000 3003100 
+0100301 0101001 1001100 0000111 1100001 0000000 0100110 
+3030010 1010100 0100110 1000011 13 30000 0000000 001003 3 
+0101001 0101010 0010011 1100001 0131000 0000000 3003003 
+1010100 0030303 1001001 1110000 0011100 0000000 3100100 
+0101010 3003010 1100100 0111000 0001110 0000000 0110030 
+0010101 0300301 0110010 0011100 0000111 0000000 003 3 003 
+1001010 0101100 1000011 0110100 1010001 1001100 0000000 
+0100101 0010330 1100001 0011010 1101000 0100110 0000000 
+1010010 0001011 1110000 0001101 0110100 0010011 0000000 
+0101001 1000101 0111000 1000110 0011010 1001001 0000000 
+1010100 1100010 0011100 0100011 0001101 1100100 0000000 
+0101010 0110001 0001110 1010001 1000110 0110010 0000000 
+^ 0010101 1011000 0000111 1101000 0100011 0013001 0000000  J 
+autogp size = 21 
+115 
+f 0000000 1110000 1110000 1100100 1100100 1010100 1010100 
+0000000 0111000 0111000 0110010 0110010 0101010 0103010 
+0000000 0011100 0011100 0011001 0011001 0010101 0010101 
+0000000 0001110 0001110 1001100 1001100 1001010 1001010 
+0000000 0000111 0000111 0100110 0100110 0100101 0100101 
+0000000 1000011 1000011 0010011 0010011 1010010 1010010 
+0000000 1100001 1100001 1001001 1001001 0101001 0101001 
+1000011 0000000 1010010 1001001 0101010 1110000 0100110 
+1100001 0000000 0101001 1100100 0010101 0111000 0010011 
+1110000 0000000 1010100 0110010 1001010 0011100 1001001 
+0111000 0000000 0101010 0011001 0100101 0001110 1100100 
+0011100 0000000 0010101 1001100 1010010 0000111 0110010 
+0001110 0000000 1001010 0100110 0101001 1000011 0011001 
+0000111 0000000 0100101 0010011 1010100 1100001 1001100 
+1000011 1010010 0000000 0101010 1001001 0100110 1110000 
+1100001 0101001 0000000 0010101 1100100 0010011 0311000 
+1110000 1010100 0000000 1001010 0110010 1001001 0011100 
+0111000 0101010 0000000 0100101 0011001 1100100 0001110 
+0011100 0010101 0000000 1010010 1001100 0110010 0000111 
+0001110 1001010 0000000 0101001 0100110 0011001 1000011 
+0000111 0100101 0000000 1010100 0010011 1001100 1100001 
+1001001 1100100 0010101 0000000 1100001 1001010 0000111 
+1100100 0110010 1001010 0000000 1110000 0100101 1000011 
+0110010 0011001 0100101 0000000 0111000 1010010 1100001 
+0011001 1001100 1010010 0000000 0011100 0101001 1110000 
+1001100 0100110 0101001 0000000 0001110 1010100 0111000 
+0100110 0010011 1010100 0000000 0000111 0101010 0011100 
+0010011 1001001 0101010 0000000 1000011 0010101 0001110 
+1001001 0010101 1100100 1100001 0000000 0000111 1001010 
+1100100 1001010 0110010 1110000 0000000 1000011 0100101 
+0110010 0100101 0011001 0111000 0000000 1100001 1010010 
+0011001 1010010 1001100 0011100 0000000 1110000 0101001 
+1001100 0101001 0100110 0001110 0000000 0111000 1010100 
+0100110 1010100 0010011 0000111 0000000 0011100 0101010 
+0010011 0101010 1001001 1000011 0000000 0001110 0010101 
+1001010 1000011 0011001 1010100 0111000 0000000 1001100 
+0100101 1100001 1001100 0101010 0011100 0000000 0100330 
+1010010 1110000 0100110 0010101 0001110 0000000 003003 3 
+0101001 0111000 0010011 1001010 0000111 0000000 3001001 
+1010100 0011100 1001001 0100101 1000011 0000000 1100100 
+0101010 0001110 1100100 1010010 1100001 0000000 0110010 
+0010101 0000111 0110010 0101001 1110000 0000000 0011001 
+1001010 0011001 1000011 0111000 1010100 1001100 0000000 
+0100101 1001100 1100001 0011100 0101010 0100110 0000000 
+1010010 0100110 1110000 0001110 0010101 0010011 0000000 
+0101001 0010011 0111000 0000111 1001010 1001001 0000000 
+1010100 1001001 0011100 1000011 0100101 1100100 0000000 
+0101010 1100100 0001110 1100001 1010010 0110010 0000000 
+0010101 0110010 0000111 1110000 0101001 0013 001 0000000 
+autogp  size  =  1764 
+Latin  square  graph.  NOT  NEW. 
+116 
+ill 
+' A\3N 
+£9 =  azts  dSojnii 
+0000000 tootoot OOIIOIO onotoo oooottt 011000I toiotoo 
+0000000 ttootoo OOOtlOt OOIIOIO I0000II tottooo OIOIOIO 
+0000000 ottooto toootto 0001 to I tioooot OIOIIOO OOIOIOI 
+0000000 oottoot otooott toootto ittoooo OOIOIIO tooioto 
+0000000 toottoo IOIOOOI OIOOOII outooo OOOIOII otootot 
+0000000 otootto IIOIOOO IOIOOOI ootitoo toootot toiooto 
+0000000 ootoott ottotoo IIOIOOO ooottio ttoooto ototoot 
+I too too 0000000 toooott ottooot I000II0 otototo I1000to 
+otiooto 0000000 1100001 tottooo otoootI OOIOIOI onooot 
+oottoot 0000000 1110000 oionoo totooot tooioto tot 1000 
+too I[00 0000000 outooo OOIOIIO ttotooo OIOOIOI OIOIIOO 
+otootto 0000000 0011100 oootott ottotoo toiooto oototto 
+OOlOOIt 0000000 000II to toootoi OOIIOIO ototoot OOOIOII 
+too toot 0000000 00001 It ttoooto OOOItOt IOIOIOO 1000101 
+0010II0 in oooo 0000000 ttotooo IOIOIOO OOOtlOt UOOIOO 
+oootott 0111000 0000000 otioioo otototo toootto OIIOOIO 
+toootot ootitoo 0000000 OOIIOIO oototot otooott oottoot 
+11000 to 00011 to 0000000 0001 to I tooioto totooot tooI too 
+ottooot oooottt 0000000 toootto OIOOIOI IIOIOOO OlOOIIO 
+tottooo I0000It 0000000 otooot t toiooto ottotoo ootoott 
+otottoo 1100001 0000000 IOIOOOI OIOIOOI OOIIOIO tootoot 
+0001011 OtOOOIt toooiot 0000000 OIIOIOO 0110001 ttotooo 
+toootoi IOIOOOI 11000 to 0000000 OOIIOIO tottooo ottotoo 
+ttoooto tto1000 011000t 0000000 OOOUOI otottoo oottoto 
+ottooot ottotoo IOHOOO 0000000 toootto OOIOIIO OOOItOt 
+tottooo oouoio otottoo 0000000 OIOOOII oootott IOOOIIO 
+otottoo 0001101 oototto 0000000 totooot 1000I0I otooott 
+oototto toootto oootott 0000000 IIOIOOO ttoooto IOIOOOI 
+omooo tottooo IOOIOIO OOOIOII 0000000 I too too ttotooo 
+ootitoo otottoo OIOOIOI toootoi 0000000 otiooto OIIOIOO 
+000it to oototto IOIOOIO ttoooto 0000000 oottoot OOIIOIO 
+oooottt oootott OlOIOOt 0110001 0000000 toottoo OOOItOt 
+10000 It toootot IOIOIOO toitooo 0000000 otoouo IOOOIIO 
+II0000I ttoooto OIOIOIO oiottoo 0000000 ootoott OIOOOII 
+11 too00 ottooot OOIOIOI OOIOIIO 0000000 tooiooi IOIOOOI 
+OlOOOll oototot 0 tot 100 OIOOOII tootoot 0000000 tt10000 
+IOIOOOI toototo oototto IOIOOOI 1100100 0000000 Oil1000 
+ttotooo otootot 000 to 11 IIOIOOO 01 too to 0000000 OOlllOO 
+ottotoo toiooto toooiot OIIOIOO OOIIOOI 0000000 OOOllIO 
+oottoto ototoot ttoooto OOIIOIO 1001 too 0000000 oooottt 
+000 not IOIOIOO ottooot OOOItOt OlOOIIO 0000000 10000II 
+toootto oiototo tottooo I000I10 OOIOOII 0000000 ttoooot 
+toototo IOIOOOI tootoot 1000 to I toootot 10000II 0000000 
+otootot ItOtOOO I too too ttoooto ttoooto Itoooot 0000000 
+toiooto OtlOIOO otiooto otiooot ottooot 1110000 0000000 
+ototoot OOUOIO oottoot tot 1000 toitooo 0111000 0000000 
+toiotoo OOOtlOt toot too oionoo otottoo 0011100 0000000 
+otototo lOOOItO otootto OOIOIIO oototto 000 It to 0000000 
+oototot OIOOOII OOIOOII oootott oootott oooottt 0000000 ) 
+811 
+'A\3M  XOM  wwubs  un«l 
+800 [ = D3OMW 
+0000000 [[OOOOt 0[0[[00 [00[00[ 0[[000[ oottoto [010(00 
+0000000 II10000 oototto [[00[00 [0([000 000[[0[ 0(0(0(0 
+0000000 otttooo 000[0[[ 0[t00(0 0(0  [(00 (OOOttO 00(0t0( 
+0000000 001[[00 [000[0[ 00[[00[ 00t0[(0 0t000[[ tooioto 
+0000000 000[[[0 [[000(0 [00[[00 000[0[[ [0(000( otootot 
+0000000 0000[[[ 0[[000[ otootto [000(0( ttotooo [0(00(0 
+0000000 I0000II 1011000 00[00[[ ([000(0 0t(0[00 0[0(00( 
+I[0000[ 0000000 [00[0[0 [000[[0 0([000t 0(00(10 [(000(0 
+itroooo 0000000 0[00[0[ 0[000[[ [0[[000 00(00(1 0([000t 
+otttooo 0000000 [0[00[0 [0[000[ otouoo too  (00  [ tottooo 
+001  two 0000000 OtOtOOI [[0[000 00(0((0 UOOIOO 0t0((00 
+000[I  to 0000000 [0[0[00 0[[0[00 000[0[[ ottooto 00[0(t0 
+0000[II 0000000 otoroto 00[[0[0 [000(0[ 00[[001 000(0([ 
+[00001t 0000000 00(0[0[ 000[[0[ [[000(0 [00(100 [000[0[ 
+0001I0I [0[0[00 0000000 0000[[[ 0(0[(00 OUOOO[ [[00I00 
+t ooo  no otototo 0000000 IOOOOtI 00(0((0 10(1000 ottooto 
+01000II ooiotot 0000000 ttoooot 000  toil 0(01(00 oottoot 
+totooot toototo 0000000 [[[0000 [000(01 00(0(10 [00[[00 
+[[0[000 0[00[0[ 0000000 otttooo [(000(0 000[0(t 0(00([0 
+0[[0[00 [0[00[0 0000000 ootttoo 0U  000[ toootot ootoott 
+00[[0[0 0[0[00[ 0000000 000[[[0 tot[000 ttoooto tootoot 
+IIOOIOO [01(000 on  [ooo 0000000 000[0(t (00(0(0 [[01000 
+0[(00[0 0[0[[00 ootttoo 0000000 (000(01 0(00[0( ottotoo 
+00[[00[ 00[0[[0 ooottto 0000000 [[000(0 10(00(0 oot(0(0 
+[00  [[00 000[0[[ 0000[[[ 0000000 0[[000[ 0(01001 ooottot 
+0(00[[0 1000[0[ [0000[[ 0000000 [0([000 10(0(00 toootto 
+OOIOOtt U000[0 1100001 0000000 0(0(100 0(01010 OtOOOtt 
+[00[00I 0[[000[ [[[0000 0000000 00(0tt0 00t0(0[ totooot 
+0[000[[ 01000[[ 000[[0[ 0[[0[00 0000000 totooot ttotooo 
+[0[000[ [0[000[ tooono oottoto 0000000 [to1000 0t(0[00 
+t to  [000 t(0(000 0[000It ooottot 0000000 ottotoo 00[[0(0 
+0[[0[00 ottotoo [0[000[ toootto 0000000 oottoto OOOttOt 
+OOttOtO 00[[0[0 [[0[000 0[000[[ 0000000 ooottot toootto 
+000U0[ OOOttO[ 0[[0[00 [0(000[ 0000000 toootto otooott 
+1000[[0 [OOOIIO 00[[0[0 [[0[000 0000000 otooott totooot 
+ooiotto 00[[00t OtOOOtt tototoo ttoooto 0000000 11(0000 
+000t0[[ IOOUOO 1010001 0[0[0[0 onooot 0000000 on  [ooo 
+[00010[ 0(00I10 t[0[000 00[0[0[ tottooo 0000000 ootttoo 
+[[000[0 00[00[[ ottotoo [00t0[0 0(0(100 0000000 00011  to 
+0[[000[ [00[00[ 00[t0t0 0[0010[ 00(0(t0 0000000 oooottt 
+[0[[000 [[00[00 0001  tot IO[OOIO 000toIt 0000000 10000It 
+otottoo 0[[00[0 [000[[0 0[0[00[ [000(0[ 0000000 ttoooot 
+[00[0[0 [0[000[ [00[00[ [000(01 [000101 toooott 0000000 
+0[00[0[ [[0[000 [[00[00 1(000(0 [[00010 ttoooot 0000000 
+[OtOOIO 0[[0[00 onooto 0U000[ onooot IIIOOOO 0000000 
+ototooi 00[[0[0 00[[00[ 101(000 (0(1000 otttooo 0000000 
+[0(0(00 000  I [01 toottoo 0t0[[00 0(0([00 ootttoo 0000000 
+0[0[0[0 [000[[0 otootto 00t0((0 00(0[(0 ooo  mo 0000000 
+ooiotot 0[000[[ OOIOOtt 000(0[( oootou OOOOttI 0000000  j 
+Gil 
+AY3M 
+931 =  azis  dSo-jtiR 
+0000000 too I too IOIOOOI 00It 100 ouooot toootoi IOIOIOO 
+0000000 otootto ttotooo OOOIIIO toitooo IIOOOIO otototo 
+0000000 OOIOOII OIIOIOO OOOOUt 0tot 100 ottooot OOIOIOI 
+0000000 tootoot OOIIOIO 1000011 OOIOIIO IOUOOO tooioto 
+0000000 ttoo too ooouot UOOOOI oootott OIOIIOO otootot 
+0000000 0110010 toootto It10000 toooiot OOIOIIO toiooto 
+0000000 OOIIOOI OIOOOII outooo ttoooto OOOIOtt OlOIOOl 
+IOOIIOO 0000000 00001II IOOOIIO OIIOOOl 010loot ttoooto 
+otootto 0000000 1000011 OlOOOtt tottooo IOIOIOO OIIOOOl 
+OOIOOII 0000000 tI0000I totooot OIOIIOO otototo IOUOOO 
+tooIOOt 0000000 tttoooo ttotooo OOIOIIO oototot OIOIIOO 
+UOOIOO 0000000 0111000 OIIOIOO oootott toototo OOIOIIO 
+01 too10 0000000 ootitoo OOIIOIO 1000101 otootot OOOIOII 
+00tlOOI 0000000 00011 to ooouot 11000 to toiooto IOOOIOI 
+ttoooto otttooo 0000000 IOOIOIO oiotioo IOOOIIO UOOIOO 
+OIIOOOl ootitoo 0000000 otootot OOIOIIO OlOOOtt OltOOlO 
+tottooo 000 u to 0000000 totooto OOOIOII IOIOOOI OOIIOOI 
+otottoo oooottt 0000000 0101001 toootot 1101000 IOOIIOO 
+OOIOItO toooou 0000000 toiotoo ttoooto OUOIOO OtOOIIO 
+ooo ton ttooooi 0000000 otototo ottooot ooitoto OOIOOII 
+toooiot tttoooo 0000000 oototot toitooo ooouot tooioot 
+00011 to iouooo IOIOIOO 0000000 OOOIOII ouooto IIOIOOO 
+oooottt OIOIIOO OIOIOIO 0000000 toootoi OOIIOOI ottotoo 
+1000011 OOIOIIO OOIOIOI 0000000 IIOOOIO IOOIIOO OOIIOIO 
+1100001 OOOIOII 100I0I0 0000000 OIIOOOl otootto ooouot 
+1110000 toootot OIOOIOI 0000000 IOUOOO OOIOOII IOOOIIO 
+otttooo IIOOOIO toiooio 0000000 otottoo tooioot OIOOOII 
+ootitoo OIIOOOl 0101001 0000000 OOIOIIO Itooioo totooot 
+otooott OlOOOtt ooouot ottotoo OOOOOOO IOIOOOI ttotooo 
+totooot totooot IOOOIIO oottoto 0000000 ttotooo OUOIOO 
+IIOIOOO IIOIOOO OIOOOII ooo not OOOOOOO OUOIOO ooitoto 
+OIIOIOO ottotoo totooot toootto OOOOOOO OOIIOIO OOOUOl 
+oo no to oottoto ttotooo OIOOOII OOOOOOO OOOUOl IOOOIIO 
+ooouot OOOItOt ottotoo totooot OOOOOOO IOOOUO OtOOOU 
+IOOOIIO IOOOIIO ooitoto IIOIOOO OOOOOOO OIOOOII IOIOOOI 
+IIOIOOO OIOOIOI tot 1000 ootoott ItOOOIO OOOOOOO nioooo 
+ottotoo I0100I0 otottoo I00100I OIIOOOl OOOOOOO 0111000 
+OOIIOIO ototoot OOIOIIO I tootoo IOUOOO OOOOOOO ootitoo 
+ooouot IOIOIOO OOOIOII 01 too10 otottoo OOOOOOO OOOIIIO 
+toooito OIOIOIO toootot OOIIOOI oototto OOOOOOO OOOOUt 
+otooou oototot ttoooio IOOttoo oootott OOOOOOO 10000 U 
+totooot I00I010 ottooot otootto toooiot OOOOOOO UOOOOI 
+toototo IOIOOOI tooioot lOOOIOt toootot tooootI OOOOOOO 
+OIOOIOI IIOIOOO tiootoo noooto ttoooto UOOOOI OOOOOOO 
+totooto ottotoo otiooto ottooot ottooot tttoooo OOOOOOO 
+0101001 OOIIOIO OOIIOOI iouooo toitooo on tooo OOOOOOO 
+IOIOIOO ooouot tooitoo OIOIIOO oionoo ootitoo OOOOOOO 
+OIOIOIO IOOOIIO OlOOIIO oototto oototio OOOIIIO OOOOOOO 
+OOtOIOt OIOOOII OOIOOII oootott OOOIOII OOOOUt OOOOOOO 
+Index 
+Absolute  bound,  29 
+Adjacent,  2 
+Asymmetric,  16 
+Automorphism  group,  15 
+BDX, 44,  85 
+Collinear,  4 
+Concurrent,  4 
+Degree, 2 
+Direct sum,  22 
+Generalised  quadrangle,  40 
+Gersgorin theorem,  17 
+Graph 
+adjacency  matrix,  2 
+asymmetric,  16 
+automorphism,  14 
+definition,  2 
+induced  subgraph,  2 
+regular,  2 
+self-complementary,  45 
+strongly  regular,  2 
+subgraph,  2 
+triangular  graph.  30 
+vertex  degree.  2 
+Hadamard  matrix 
+definition,  35 
+skew symmetric,  35 
+normalised,  36 
+Hermitian,  23 
+Idempotent,  23 
+Idempotent  matrices,  26 
+Irreducible,  17 
+Knuth's  method,  71 
+Krem conditions,  29 
+Kronecker  product,  37 
+Latin  square,  31 
+Line graph,  6 
+Matrix 
+Hermitian,  23 
+positive definite,  27 
+positive semidefinite,  27 
+unitary,  25 
+Neighbour,  2 
+Orbit  matrix 
+computer  construction.  58 
+definition.  47 
+120 
+properties,  49 
+Orthogonal  array,  31 
+Partial  geometry 
+definition,  4 
+Partial  linear  space,  4 
+Perron-Frobenius  theorem,  17 
+Petersen  graph,  3 
+Point  graph,  5 
+Point-line  structure 
+collinear,, 4 
+concurrent,  4 
+definition,  4 
+dual,  4 
+line graph,  6 
+point  graph,  5 
+Primitive,  13 
+Projection.  23 
+Prototype 
+fixed, 51 
+non-fixed,  51 
+Psuedogeometric,  41 
+rationality  condition,  29 
+reducible,  16 
+Self adjoint,  23 
+Skew symmetric.  35 
+Spectral  radius.  17 
+Spectral  theorem,  24 
+Strongly  regular  graph 
+adjacency  matrix,  13 
+complement,  13 
+conference graph,  20 
+definition,  2 
+eigenvalues, 19 
+feasible, 29 
+idempotent  matrices,  26 
+necessary conditions,  28 
+absolute  bound,  29 
+Krein conditions,  29 
+rationality  conditions,  29 
+primitive,  13 
+Tactical  decomposition,  44 
+Triangular  graph,  30 
+Vector space 
+direct sum,  22 
+sum, 22 
+121 

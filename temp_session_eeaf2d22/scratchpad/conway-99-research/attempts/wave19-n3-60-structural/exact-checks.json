@@ -1,0 +1,1070 @@
+{
+  "crossing_edge_counts": {
+    "disjoint_2x2": [
+      0,
+      4
+    ],
+    "disjoint_3x2": [
+      0,
+      4
+    ],
+    "disjoint_4x2": [
+      0,
+      4
+    ],
+    "hostile_disjoint_3x3": [
+      0,
+      4,
+      6
+    ],
+    "meeting_1x1": [
+      0
+    ],
+    "meeting_1x2": [
+      0
+    ],
+    "meeting_2x1": [
+      0
+    ],
+    "meeting_2x2": [
+      0,
+      4
+    ],
+    "meeting_2x3": [
+      0,
+      4
+    ],
+    "meeting_3x1": [
+      0
+    ]
+  },
+  "eliminated_ranges": {
+    "r18": "all three equality profiles contradicted",
+    "r19": "both profiles contradicted at m=27 and m=28",
+    "r20_m28": "all five point-size profiles contradicted",
+    "r20_m29": {
+      "two_size3": [
+        {
+          "T": 4,
+          "maximum_outside_degree_square_sum": 752,
+          "minimum_U": 8,
+          "minimum_integer_square_sum": 756,
+          "outside_degree_sum": 228
+        },
+        {
+          "T": 6,
+          "maximum_outside_degree_square_sum": 724,
+          "minimum_U": 10,
+          "minimum_integer_square_sum": 742,
+          "outside_degree_sum": 226
+        }
+      ],
+      "unique_size4": {
+        "T": 6,
+        "U": 36,
+        "minimum_integer_square_sum": 742,
+        "sum": 226,
+        "sum_squares": 698,
+        "vertices": 70
+      }
+    },
+    "r_at_most_17": "point cap at most 25 contradicts dense minimum 27"
+  },
+  "frozen_inputs_sha256": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "verification/2026-07-23-wave15-global-lift-audit.md": "edda3785d080db464028f10c22bcae5c0bf17f1e61432a8641bfa6ffdccab036",
+    "verification/2026-07-23-wave16-n3-51-structural-audit.md": "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6"
+  },
+  "limitations": [
+    "arithmetic and small-graph certificate, not a semantic proof certificate",
+    "no global H-degree restriction",
+    "no point-size upper bound",
+    "no Wave 14 residual identity or automorphism",
+    "no Wave 17 catalog and no Wave 18 result",
+    "residual feasibility is not established"
+  ],
+  "q_profile_count": 13,
+  "q_profiles": [
+    {
+      "d_K": "4^12 7^2",
+      "point_count_cap": 21,
+      "q": "2^2 3^12",
+      "r": 14
+    },
+    {
+      "d_K": "5^10 8^5",
+      "point_count_cap": 22,
+      "q": "2^5 3^10",
+      "r": 15
+    },
+    {
+      "d_K": "6^8 9^8",
+      "point_count_cap": 24,
+      "q": "2^8 3^8",
+      "r": 16
+    },
+    {
+      "d_K": "4^3 10^14",
+      "point_count_cap": 25,
+      "q": "2^14 4^3",
+      "r": 17
+    },
+    {
+      "d_K": "4^2 7^2 10^13",
+      "point_count_cap": 25,
+      "q": "2^13 3^2 4^2",
+      "r": 17
+    },
+    {
+      "d_K": "4 7^4 10^12",
+      "point_count_cap": 25,
+      "q": "2^12 3^4 4",
+      "r": 17
+    },
+    {
+      "d_K": "7^6 10^11",
+      "point_count_cap": 25,
+      "q": "2^11 3^6",
+      "r": 17
+    },
+    {
+      "d_K": "5^2 11^16",
+      "point_count_cap": 27,
+      "q": "2^16 4^2",
+      "r": 18
+    },
+    {
+      "d_K": "5 8^2 11^15",
+      "point_count_cap": 27,
+      "q": "2^15 3^2 4",
+      "r": 18
+    },
+    {
+      "d_K": "8^4 11^14",
+      "point_count_cap": 27,
+      "q": "2^14 3^4",
+      "r": 18
+    },
+    {
+      "d_K": "6 12^18",
+      "point_count_cap": 28,
+      "q": "2^18 4",
+      "r": 19
+    },
+    {
+      "d_K": "9^2 12^17",
+      "point_count_cap": 28,
+      "q": "2^17 3^2",
+      "r": 19
+    },
+    {
+      "d_K": "13^20",
+      "point_count_cap": 30,
+      "q": "2^20",
+      "r": 20
+    }
+  ],
+  "r20_m27_residual": {
+    "claim": "FINITE_RESIDUAL_NOT_EXCLUDED",
+    "induced_degree": 6,
+    "induced_edge_count": 81,
+    "meeting_edge_count": 60,
+    "outside_degree_multiset": "3^72",
+    "point_sizes": "2^21 3^6",
+    "positive_disjoint_graph_on_21_size2_points": {
+      "cycle_length_multiset_count": 60,
+      "cycle_length_multisets": [
+        [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3,
+          3,
+          3,
+          6
+        ],
+        [
+          3,
+          3,
+          3,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          3,
+          3,
+          3,
+          9
+        ],
+        [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        [
+          3,
+          3,
+          3,
+          4,
+          8
+        ],
+        [
+          3,
+          3,
+          3,
+          5,
+          7
+        ],
+        [
+          3,
+          3,
+          3,
+          6,
+          6
+        ],
+        [
+          3,
+          3,
+          3,
+          12
+        ],
+        [
+          3,
+          3,
+          4,
+          4,
+          7
+        ],
+        [
+          3,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          3,
+          4,
+          11
+        ],
+        [
+          3,
+          3,
+          5,
+          5,
+          5
+        ],
+        [
+          3,
+          3,
+          5,
+          10
+        ],
+        [
+          3,
+          3,
+          6,
+          9
+        ],
+        [
+          3,
+          3,
+          7,
+          8
+        ],
+        [
+          3,
+          3,
+          15
+        ],
+        [
+          3,
+          4,
+          4,
+          4,
+          6
+        ],
+        [
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        [
+          3,
+          4,
+          4,
+          10
+        ],
+        [
+          3,
+          4,
+          5,
+          9
+        ],
+        [
+          3,
+          4,
+          6,
+          8
+        ],
+        [
+          3,
+          4,
+          7,
+          7
+        ],
+        [
+          3,
+          4,
+          14
+        ],
+        [
+          3,
+          5,
+          5,
+          8
+        ],
+        [
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          5,
+          13
+        ],
+        [
+          3,
+          6,
+          6,
+          6
+        ],
+        [
+          3,
+          6,
+          12
+        ],
+        [
+          3,
+          7,
+          11
+        ],
+        [
+          3,
+          8,
+          10
+        ],
+        [
+          3,
+          9,
+          9
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          5
+        ],
+        [
+          4,
+          4,
+          4,
+          9
+        ],
+        [
+          4,
+          4,
+          5,
+          8
+        ],
+        [
+          4,
+          4,
+          6,
+          7
+        ],
+        [
+          4,
+          4,
+          13
+        ],
+        [
+          4,
+          5,
+          5,
+          7
+        ],
+        [
+          4,
+          5,
+          6,
+          6
+        ],
+        [
+          4,
+          5,
+          12
+        ],
+        [
+          4,
+          6,
+          11
+        ],
+        [
+          4,
+          7,
+          10
+        ],
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          4,
+          17
+        ],
+        [
+          5,
+          5,
+          5,
+          6
+        ],
+        [
+          5,
+          5,
+          11
+        ],
+        [
+          5,
+          6,
+          10
+        ],
+        [
+          5,
+          7,
+          9
+        ],
+        [
+          5,
+          8,
+          8
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          6,
+          6,
+          9
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          7,
+          7,
+          7
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          21
+        ]
+      ],
+      "description": "simple spanning 2-factor",
+      "edge_count": 21
+    },
+    "positive_meeting_graph_on_six_size3_points": {
+      "K3,3": {
+        "adjacency_matrix": [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triangles": []
+      },
+      "triangular_prism": {
+        "adjacency_matrix": [
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ]
+      }
+    }
+  },
+  "r20_m30_residual": {
+    "claim": "FINITE_RESIDUAL_NOT_EXCLUDED",
+    "extra_zero_crossing_graph_Z": "simple graph with at most 3 edges",
+    "meeting_graph": "line graph L(F), 4-regular on 30 points",
+    "point_graph_F": "simple cubic triangle-free on 20 labels",
+    "point_sizes": "2^30",
+    "positive_crossing_graph_R": "spanning simple 2-factor, disjoint from L(F)",
+    "positive_crossing_graph_R_cycle_length_multiset_count": 331,
+    "positive_crossing_graph_R_edge_count": 30,
+    "rejected_moment_cases": [
+      {
+        "T": 8,
+        "maximum_outside_degree_square_sum": 788,
+        "minimum_U": 8,
+        "minimum_integer_square_sum": 796,
+        "outside_degree_sum": 232
+      },
+      {
+        "T": 10,
+        "maximum_outside_degree_square_sum": 760,
+        "minimum_U": 10,
+        "minimum_integer_square_sum": 782,
+        "outside_degree_sum": 230
+      }
+    ],
+    "surviving_Z_topologies": [
+      {
+        "T": 0,
+        "U": 0,
+        "degree_excess_multiset": "empty",
+        "edges": [],
+        "name": "empty",
+        "outside_degree_multiset_count": 1297,
+        "outside_degree_multisets": null,
+        "outside_degree_square_sum": 900,
+        "outside_degree_sum": 240,
+        "outside_vertex_count": 69
+      },
+      {
+        "T": 2,
+        "U": 2,
+        "degree_excess_multiset": "1^2",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "name": "K2",
+        "outside_degree_multiset_count": 354,
+        "outside_degree_multisets": null,
+        "outside_degree_square_sum": 872,
+        "outside_degree_sum": 238,
+        "outside_vertex_count": 69
+      },
+      {
+        "T": 4,
+        "U": 4,
+        "degree_excess_multiset": "1^4",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "name": "2K2",
+        "outside_degree_multiset_count": 69,
+        "outside_degree_multisets": null,
+        "outside_degree_square_sum": 844,
+        "outside_degree_sum": 236,
+        "outside_vertex_count": 69
+      },
+      {
+        "T": 4,
+        "U": 6,
+        "degree_excess_multiset": "1^2 2",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "name": "P3",
+        "outside_degree_multiset_count": 52,
+        "outside_degree_multisets": null,
+        "outside_degree_square_sum": 842,
+        "outside_degree_sum": 236,
+        "outside_vertex_count": 69
+      },
+      {
+        "T": 6,
+        "U": 6,
+        "degree_excess_multiset": "1^6",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "name": "3K2",
+        "outside_degree_multiset_count": 6,
+        "outside_degree_multisets": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              39
+            ],
+            [
+              4,
+              29
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              42
+            ],
+            [
+              4,
+              24
+            ],
+            [
+              5,
+              2
+            ]
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              39
+            ],
+            [
+              4,
+              27
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              36
+            ],
+            [
+              4,
+              30
+            ]
+          ],
+          [
+            [
+              3,
+              44
+            ],
+            [
+              4,
+              24
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              45
+            ],
+            [
+              4,
+              21
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "outside_degree_square_sum": 816,
+        "outside_degree_sum": 234,
+        "outside_vertex_count": 69
+      },
+      {
+        "T": 6,
+        "U": 8,
+        "degree_excess_multiset": "1^4 2",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "name": "P3_plus_K2",
+        "outside_degree_multiset_count": 3,
+        "outside_degree_multisets": [
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              41
+            ],
+            [
+              4,
+              26
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              38
+            ],
+            [
+              4,
+              29
+            ]
+          ],
+          [
+            [
+              3,
+              44
+            ],
+            [
+              4,
+              23
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        ],
+        "outside_degree_square_sum": 814,
+        "outside_degree_sum": 234,
+        "outside_vertex_count": 69
+      },
+      {
+        "T": 6,
+        "U": 10,
+        "degree_excess_multiset": "1^2 2^2",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "name": "P4",
+        "outside_degree_multiset_count": 2,
+        "outside_degree_multisets": [
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              40
+            ],
+            [
+              4,
+              28
+            ]
+          ],
+          [
+            [
+              3,
+              43
+            ],
+            [
+              4,
+              25
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        ],
+        "outside_degree_square_sum": 812,
+        "outside_degree_sum": 234,
+        "outside_vertex_count": 69
+      },
+      {
+        "T": 6,
+        "U": 12,
+        "degree_excess_multiset": "1^3 3",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "name": "K1,3",
+        "outside_degree_multiset_count": 1,
+        "outside_degree_multisets": [
+          [
+            [
+              3,
+              42
+            ],
+            [
+              4,
+              27
+            ]
+          ]
+        ],
+        "outside_degree_square_sum": 810,
+        "outside_degree_sum": 234,
+        "outside_vertex_count": 69
+      },
+      {
+        "T": 6,
+        "U": 12,
+        "degree_excess_multiset": "2^3",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "name": "K3",
+        "outside_degree_multiset_count": 1,
+        "outside_degree_multisets": [
+          [
+            [
+              3,
+              42
+            ],
+            [
+              4,
+              27
+            ]
+          ]
+        ],
+        "outside_degree_square_sum": 810,
+        "outside_degree_sum": 234,
+        "outside_vertex_count": 69
+      }
+    ]
+  },
+  "size_two_q_pair_support_count": {
+    "2,2": 2,
+    "2,3": null,
+    "2,4": 3,
+    "3,3": 3,
+    "3,4": null,
+    "4,4": 4
+  },
+  "status_boundary": {
+    "conditional_n3_60": "UNKNOWN_FINITE_RESIDUAL",
+    "conway_99_target": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  }
+}

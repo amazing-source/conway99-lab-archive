@@ -1,0 +1,43 @@
+role: verifier
+date_utc: 2026-07-28T11:12:33Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: VERIFIED
+scope: >-
+  Independent verification of the sealed Wave147 pair-root order-five flag
+  bases, complete locally admissible order-eight class stream, full artifact
+  hashes/counts and ordinary deletion rows, representative coefficient
+  semantics, N3 carriers, and rook-graph positive control.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: attempts/wave147-alternative-lane/package-manifest.sha256
+    sha256: 0c7585f996374246918948eb1537e61e2e165474f815a66eff24bf82e7c8e690
+  - path: attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json
+    sha256: ffcf9f9942446d66c3559d97954217af3ba17c1978ea9417c6e99920d4a45420
+method: >-
+  Without importing Wave147 code, enumerate rooted flags; extend every frozen
+  order-seven class by all 128 neighborhoods and quotient isomorphism exactly;
+  replay every order-eight deletion; validate the canonical compressed
+  artifact and all record shapes/counts; reconstruct 24 representative class
+  matrices plus complete N3/prism matrices; and directly enumerate rook-graph
+  root vectors and six-subset controls.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification/wave147-pair-root-order8/independent_verify.py;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification/wave147-pair-root-order8 -p "test_*.py" -v
+outputs:
+  - path: verification/wave147-pair-root-order8/independent_verify.py
+    sha256: ee9ea8f8379f2d83c240e65cc67497f4f6744e8aa39eb78ff3a212d4a59f89bc
+  - path: verification/wave147-pair-root-order8/test_independent_verify.py
+    sha256: 5b68db3a236b61560395699572d415e1e87ff9019a8d7e794673ffc1dd2f7eda
+  - path: verification/wave147-pair-root-order8/verification-results.json
+    sha256: a7313af52b86602e2d27278dad0a0beccbacc3634b67cbcb1e15370176104e12
+limitations:
+  - Only 24 representative class coefficient matrices and the complete
+    N3/prism matrices were regenerated; all artifact bytes/counts were checked.
+  - Stronger marked-vertex and marked-pair order-eight extension rows are absent.
+  - No solver was run and no rational SDP dual certificate was obtained.
+  - No strict n3 upper bound, Conway-99 resolution, or novelty claim follows.

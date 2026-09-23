@@ -1,0 +1,41 @@
+{
+  "certificate": {
+    "circuit_scalar_words": 15460,
+    "edge_added_projective": 7730,
+    "identity": "Q0-(76*C-349*V)/40=4SI/5+6S2/5+SE2/5+7RA/10+3SL/10+S5/40+3SH/40+13SF/40+a1/10+3b3/5+c2/5+9g/40+2W/5",
+    "integer_Q_lower_bound": 7037,
+    "rational_null": {
+      "all_eight_slacks_zero": true,
+      "all_other_split_pool_variables": "0",
+      "asserted_object": false,
+      "b1": "6237/10",
+      "n1=a2=y": "297/20",
+      "n2=p2": "6237/20",
+      "n3": "1287",
+      "p3=c1": "13959/4",
+      "r1": "82269/20",
+      "r2": "297/40"
+    },
+    "reduced_difference": {},
+    "target": "281457/40"
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "global_rows": {
+    "H": "36*V=3564",
+    "S5": "5*H-3*n3-4*p3-5*a3-5*b3>=0",
+    "SF": "13*V-n3-h-g>=0",
+    "SH": "3*h-a3-b3>=0"
+  },
+  "orientation_row": {
+    "flags_per_orientation": 5,
+    "full_row": "S5=5*H-3*n3-4*p3-5*a3-5*b3>=0",
+    "orientations_per_nonedge": 2,
+    "private_selected_multiplicity": 1,
+    "private_weight_bonus": 4,
+    "selected_row": "3*n3+4*p3<=5*T",
+    "unordered_capacity": 10,
+    "wave197_active_null_S5": -165,
+    "wave197_relation": "S10=2*S5+(3*n3-p3)"
+  },
+  "search_scope": "fixed orientation incidence and exact rational algebra; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search"
+}

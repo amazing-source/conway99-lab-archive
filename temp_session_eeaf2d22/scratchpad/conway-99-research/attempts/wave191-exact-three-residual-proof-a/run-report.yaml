@@ -1,0 +1,42 @@
+role: proof_a
+date_utc: 2026-07-29T02:53:13Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free rank-11 endpoint: exact-three raw exclusion,
+  orbit-closed residual capacity, coupled exact-one usage, and the exact
+  certificate 12Q>=18C giving Q>=6237.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave180-capacity3-companion/package-manifest.sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  verification/wave181-c4-conic-equality/package-manifest.sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  verification/wave189-degree7-star-orbit-verifier/package-manifest.sha256: fc17484bd8c32a5886ecdcc65d153903cef5f3b60a3de1c9905ed96697c273c4
+  verification/wave190-residual-stability-verifier/package-manifest.sha256: 15686d17472fd60122072b3d679980d90d3cfe12fd87e5359344e52e216f1280
+method: >-
+  Two-star module subtraction, center orientation, proper-star
+  independence, canonical-C4 kernel incompatibility, exact-two uniqueness,
+  orbit-closed residual capacity, coupled exact-one usage, and an exact
+  scalar coefficient identity. No graph, cover, code, SAT, configuration,
+  LP, isomorphism, or enumeration search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave191-exact-three-residual-proof-a\exact_check.py --verify
+  attempts\wave191-exact-three-residual-proof-a\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave191-exact-three-residual-proof-a\test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave191-exact-three-residual-proof-a.md
+  - attempts/wave191-exact-three-residual-proof-a/README.md
+  - attempts/wave191-exact-three-residual-proof-a/derivation.md
+  - attempts/wave191-exact-three-residual-proof-a/protocol.md
+  - attempts/wave191-exact-three-residual-proof-a/exact_check.py
+  - attempts/wave191-exact-three-residual-proof-a/exact-results.json
+  - attempts/wave191-exact-three-residual-proof-a/test_exact_check.py
+  - attempts/wave191-exact-three-residual-proof-a/input-freeze.sha256
+limitations:
+  - An independent append-only audit passed; sealed verifier promotion is
+    pending.
+  - The result is conditional on the prism-free rank-11 endpoint.
+  - The Q=6237 row is an arithmetic null control, not an object.
+  - Rank 11, endpoint existence, external novelty, and Conway-99 remain
+    UNKNOWN.

@@ -1,0 +1,42 @@
+role: proof_b
+date_utc: 2026-07-24T08:30:00Z
+git_commit: f0783b82d9b0260f5461cd68c647f62f646cdd81
+claim_label: UNKNOWN
+scope: >-
+  Exact structural reductions for the rootless integrally indecomposable
+  n3=708 endpoint branch: primitive row generation, equivalence with support
+  connectivity under minimum four, a forbidden {-2,-2,-1} norm-two row
+  motif, and a full-size binary hostile control. No proof that actual
+  incidence forces the motif and no endpoint exclusion.
+inputs:
+  agents/2026-07-24-wave31-survivor-proof.md: 075566744e2622a4dfa402a125d394aef16dfcb3fc53b172176dce88bd951aaa
+  verification/wave31-sign-commutant/audit.md: f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+  agents/2026-07-24-wave28-glue-discriminant.md: 3c1354a04f33602c6e339875c8de4f77d1874bd6e8f83dbcb712b91717d6c1ff
+method: >-
+  Smith/primitivity row-generation argument; rootless norm-four block
+  support; inherited Wave 31 coordinate-block divisibility; exact endpoint
+  pair census; exhaustive signed three-row Gram enumeration; mixed adjacency
+  trace reduction; and an explicit 231-row rank-44 finite-field hostile
+  control.
+command: |-
+  cd attempts/wave32-indecomposable
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  agents/2026-07-24-wave32-indecomposable-proof.md: 5e0e0ce6e33cd8f943d8026c2b9b01b74d9668234d4c9b2c46da6c0c9921b8ef
+  attempts/wave32-indecomposable/exact_check.py: 52bb6a1f9972c981779e9aa9269bd82bb89866cde68a911498e00a4c679dbdae
+  attempts/wave32-indecomposable/test_exact_check.py: a3b46d56b246d557764162aad56be6109b6d9e40cdfdf3c3c9d3b02217cb497d
+  attempts/wave32-indecomposable/exact-results.json: bccde9635d973e030e004800abc08c37089e036faca1edc2bb85ed70ee731472
+  attempts/wave32-indecomposable/input-freeze.sha256: 502207fc5005c8bd60d592e159069fd52dda575c5ecefe9599686f6df0d8a669
+  attempts/wave32-indecomposable/failed-routes.md: 68e4bd7a2ead23e034f2641824b96959e26d28bb4b54c9916965c3ec5fd3fecc
+limitations:
+  - Discovery-agent reductions require fresh independent verification.
+  - Actual graph incidence is required for the inherited 33-divisibility and
+    projector-support connectivity; it is not required for the three-row
+    Gram calculation once X,S,M exist.
+  - The mixed triple trace is not determined by the frozen pair counts.
+  - The binary hostile control is finite-field only.
+  - Rootless indecomposable endpoints, n3=708, Conway-99, and novelty remain
+    UNKNOWN.

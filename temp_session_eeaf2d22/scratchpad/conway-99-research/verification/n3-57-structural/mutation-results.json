@@ -1,0 +1,133 @@
+{
+  "schema": "wave18-n3-57-hostile-mutations-v1",
+  "date_utc": "2026-07-23T12:49:43Z",
+  "status": "24/24 DETECTED",
+  "canonical_sha256": "fc8ea1473ea2c319bbea5ff807ab2c99dae0eeb9dc65f11160ff548218c32fde",
+  "mutations": {
+    "M01": {
+      "change": "sum(q)=38 -> 37",
+      "evidence": "profile count 9 -> 6; profile hash 7cf492da... -> 4cef45a1...",
+      "status": "DETECTED"
+    },
+    "M02": {
+      "change": "sum(q)=38 -> 39",
+      "evidence": "profile hash 7cf492da... -> d6945fbe... even though both counts are 9",
+      "status": "DETECTED"
+    },
+    "M03": {
+      "change": "permit d_K=3",
+      "evidence": "four extra profiles: 2 3^12; 2^13 4^3; 2^12 3^2 4^2; 2^11 3^4 4",
+      "status": "DETECTED"
+    },
+    "M04": {
+      "change": "relax |X| incidence cap by one",
+      "evidence": "r=18 cap changes 27 -> 28 and destroys forced equality",
+      "status": "DETECTED"
+    },
+    "M05": {
+      "change": "strengthen |X| incidence cap by one",
+      "evidence": "r=18 cap changes 27 -> 26 and falsely bypasses equality analysis",
+      "status": "DETECTED"
+    },
+    "M06": {
+      "change": "treat nonpositive dense gap as contradiction",
+      "evidence": "m=27 has exact gap 0 and is an equality case, not a contradiction",
+      "status": "DETECTED"
+    },
+    "M07": {
+      "change": "replace feasible m>=27 by m>27",
+      "evidence": "witness m=27 is silently lost",
+      "status": "DETECTED"
+    },
+    "M08": {
+      "change": "delete one r=18 profile",
+      "evidence": "coverage count changes 2 -> 1",
+      "status": "DETECTED"
+    },
+    "M09": {
+      "change": "duplicate one r=18 profile",
+      "evidence": "canonical sequence hash changes 01e91ade... -> 34d71cce...",
+      "status": "DETECTED"
+    },
+    "M10": {
+      "change": "omit m=27",
+      "evidence": "three required point-size profiles disappear",
+      "status": "DETECTED"
+    },
+    "M11": {
+      "change": "omit m=28",
+      "evidence": "the required 2^27 3 point-size profile disappears",
+      "status": "DETECTED"
+    },
+    "M12": {
+      "change": "add one crossing edge at a size-2 endpoint",
+      "evidence": "five-edge mutant has row degree 3 and column degree 1",
+      "status": "DETECTED"
+    },
+    "M13": {
+      "change": "add one crossing edge at a size-3 endpoint",
+      "evidence": "five-edge mutant has a row and column of degree 1",
+      "status": "DETECTED"
+    },
+    "M14": {
+      "change": "add one crossing edge at a size-4 endpoint",
+      "evidence": "five-edge mutant has a row and column of degree 1",
+      "status": "DETECTED"
+    },
+    "M15": {
+      "change": "add one crossing edge at a size-5 endpoint",
+      "evidence": "five-edge mutant has a row and column of degree 1",
+      "status": "DETECTED"
+    },
+    "M16": {
+      "change": "merge two actual positive neighbors",
+      "evidence": "duplicate presented and physical original-vertex identity rejected",
+      "status": "DETECTED"
+    },
+    "M17": {
+      "change": "split one physical neighbor into two displayed identities",
+      "evidence": "duplicated physical original-vertex identity rejected",
+      "status": "DETECTED"
+    },
+    "M18": {
+      "change": "degree sum +1 at m=27",
+      "evidence": "163 exceeds exact upper 162 and is odd",
+      "status": "DETECTED"
+    },
+    "M19": {
+      "change": "spectral numerator 1540 -> 1541 at m=28",
+      "evidence": "exact formula authentication detects 1541/9; rounded even cap happens to remain 170",
+      "status": "DETECTED"
+    },
+    "M20": {
+      "change": "use floating point near an exact boundary",
+      "evidence": "2^53 and 2^53+1 collapse to the same binary float; Wave18 decisions use Fraction",
+      "status": "DETECTED"
+    },
+    "M21": {
+      "change": "inject Wave17 n3=54 exclusion",
+      "evidence": "frozen assumption whitelist rejects wave17_n3_54_exclusion",
+      "status": "DETECTED"
+    },
+    "M22": {
+      "change": "inject global H-degree {0,4}",
+      "evidence": "whitelist rejection; independent 3x3 crossing enumeration contains legal degree 6",
+      "status": "DETECTED"
+    },
+    "M23": {
+      "change": "inject Wave14 point-size cap",
+      "evidence": "whitelist rejection; size-4 and size-5 cases are handled directly",
+      "status": "DETECTED"
+    },
+    "M24": {
+      "change": "inject nontrivial automorphism",
+      "evidence": "frozen assumption whitelist rejects nontrivial_automorphism",
+      "status": "DETECTED"
+    }
+  },
+  "coverage_notes": {
+    "M19": "The mutation is detected by exact formula identity even though the final maximum-even rounding is unchanged.",
+    "M20": "The actual Wave18 margins are not numerically fragile; the synthetic witness demonstrates why exact arithmetic remains mandatory.",
+    "forbidden_imports": "M21-M24 are provenance mutants and are not mathematical premises in the submitted report."
+  }
+}

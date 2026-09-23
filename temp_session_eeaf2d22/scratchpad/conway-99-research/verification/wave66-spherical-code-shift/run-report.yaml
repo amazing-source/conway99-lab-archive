@@ -1,0 +1,59 @@
+role: verifier
+date_utc: 2026-07-27T23:05:00Z
+git_commit: c4124a78dbf6bdfbb0281fa4709116e7929f9eb9
+claim_label: VERIFIED_WITH_CORRECTION
+scope: >-
+  Conditional spherical-code, even rank-44 difference-lattice,
+  discriminant-form, dual-minimum, and Milgram consequences of a hypothetical
+  srg(99,14,1,2), with S=2A-J+I and no automorphism assumption.
+inputs:
+  - path: attempts/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: 6edc7a5eb2f4a913f9e6af4936984246a75cef8f562167b3d7a99d1a26bbec35
+  - path: attempts/wave66-spherical-code-shift/derivation.md
+    sha256: befdaf561b442a68f52ff878e72ed31cf2ff58ab9f07075e0e624bcb00b8dd95
+  - path: attempts/wave66-spherical-code-shift/exact-results.json
+    sha256: dab883b36baebd8f149432d3bf0700a875d851b0627bc31d40cbd1f7b4afa9cb
+  - path: verification/wave66-spherical-code-shift/discovery-inventory-preinspection.tsv
+    sha256: 09ba034af70c09920479a6491c2c931d5bd77ea067006f0780b1849a7ea9d991
+  - path: verification/2026-07-22-wave2-audit.md
+    sha256: b438e45544c1675530084a7a16396d2a45d4dab473a04696ddec6a9ce45641c8
+  - path: agents/2026-07-22-wave2-algebra-codes.md
+    sha256: 999cbb0366a984ab6ddf4a2ff084eb680beffaad47c0b8176752a5a6769cc0e9
+  - path: verification/wave42-rank27/audit.md
+    sha256: 4d130e774d527b7826f0d14b605477de3ff3e37ed1b3913104d67a63bf0d3304
+  - path: verification/wave43-rank28/audit.md
+    sha256: 12cb622b15d2194b4257ec0e5af175fce569424a9310820460ccc4460d66d963
+  - path: verification/wave51-seidel-smith/audit.md
+    sha256: 449118dc5d2a7fcb0e1bfd40e4d29933f769fd8eacbc7048f5d5fdd487bb0bbd
+method: >-
+  Freeze the complete discovery directory including hidden files before
+  inspection; independently reconstruct the Bose-Mesner, primitive-idempotent,
+  centering, quotient-saturation, determinant, local Smith, denominator,
+  low-norm, finite Gauss-sum, Milgram, and Blichfeldt arguments without
+  importing discovery code; run exact hostile controls; compare selected
+  mathematical fields only after the independent result is sealed.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave66-spherical-code-shift\independent_verify.py --verify
+  --discovery-results
+  attempts\wave66-spherical-code-shift\exact-results.json
+  --comparison-output
+  verification\wave66-spherical-code-shift\comparison.json ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  verification\wave66-spherical-code-shift\test_independent_verify.py
+outputs:
+  - path: verification/wave66-spherical-code-shift/audit.md
+    sha256: cf96f813020e9ed34ffea698b64a571509bf6e13d9b0c0fdd3a989234c27be20
+  - path: verification/wave66-spherical-code-shift/independent-results.json
+    sha256: 3d6689b292fa5605e012da55f94e299926c1762c6ec77b8ef06007c62a65b61f
+  - path: verification/wave66-spherical-code-shift/comparison.json
+    sha256: 6a07fc81bf2c7964f54c349517d20f97db07edc432a8b51cc10725e9c9682023
+  - path: verification/wave66-spherical-code-shift/test-results.txt
+    sha256: 508f7a4845382efd7f91929427648eb97f16e2a24a2180aab279b410e4711811
+limitations: >-
+  Three discovery statements are corrected: the universal imported lower
+  bound is 27 rather than the endpoint-only 28; the weight-eight 0-or-2
+  incidence fact is verified but unused; and only eight, not all 17, rank
+  rows survive Milgram. No graph, lattice realization, norm-14 exclusion,
+  endpoint contradiction, or literature-priority result is supplied.
+  Conway-99 and novelty remain UNKNOWN.

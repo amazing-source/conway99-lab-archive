@@ -1,0 +1,46 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.cnc
+#1 transferring dockerfile: 245B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/satbox:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/library/satbox:latest@sha256:c90feab9de794e6005cb4a518f410c6ed4325dc2412a32f3623da7720fb89057
+#4 resolve docker.io/library/satbox:latest@sha256:c90feab9de794e6005cb4a518f410c6ed4325dc2412a32f3623da7720fb89057 0.0s done
+#4 CACHED
+
+#5 [2/2] RUN git clone --depth 1 https://github.com/marijnheule/CnC /opt/CnC && cd /opt/CnC/march_cu && make CFLAGS="-O3 -fno-strict-aliasing -fcommon -DNDEBUG" && cp march_cu /usr/local/bin/
+#5 0.148 Cloning into '/opt/CnC'...
+#5 0.999 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o march.o march.c
+#5 1.094 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o cube.o cube.c
+#5 1.217 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o distribution.o distribution.c
+#5 1.241 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o doublelook.o doublelook.c
+#5 1.341 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o equivalence.o equivalence.c
+#5 1.617 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o memory.o memory.c
+#5 1.755 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o microsat.o microsat.c
+#5 1.902 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o lookahead.o lookahead.c
+#5 2.225 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o parser.o parser.c
+#5 2.362 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o preselect.o preselect.c
+#5 2.494 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o progressBar.o progressBar.c
+#5 2.535 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o resolvent.o resolvent.c
+#5 2.621 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o solver.o solver.c
+#5 2.979 gcc -c -O3 -fno-strict-aliasing -fcommon -DNDEBUG  -o tree.o tree.c
+#5 3.098 gcc -O3 -fno-strict-aliasing -fcommon -DNDEBUG  *.o -lm -o march_cu
+#5 DONE 3.1s
+
+#6 exporting to image
+#6 exporting layers
+#6 exporting layers 0.3s done
+#6 exporting manifest sha256:191070f54bdb67d0af0c5331dc8d58e704f89c97334f7effcc1a0276b42ef3e3 0.0s done
+#6 exporting config sha256:4adc22c11bd6e459a7112117b6ba02ca25d3525674c7f407f2537093e64a3afb 0.0s done
+#6 exporting attestation manifest sha256:6f4f100ff90a77a4c41cabe34c433853279c8a9f8a680cd825ef91bef7a964b6 0.0s done
+#6 exporting manifest list sha256:a99095a1bbfd7641ada15f49b358df9a3fce143af4e4ed973165dd53c1ab805d 0.0s done
+#6 naming to docker.io/library/satbox-cnc:latest done
+#6 unpacking to docker.io/library/satbox-cnc:latest 0.1s done
+#6 DONE 0.5s

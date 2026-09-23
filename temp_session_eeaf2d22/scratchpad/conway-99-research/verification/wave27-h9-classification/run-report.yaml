@@ -1,0 +1,80 @@
+role: verifier
+date_utc: 2026-07-24T00:20:29Z
+git_commit: 2ac11809fafee7ab752965ae49a96e922859b5ee
+claim_label: VERIFIED
+scope: >-
+  Unrestricted local E6 trace minimum fourteen and its exact equality
+  witness, with a limited independent rank-44 block-arithmetic cross-check.
+  The full root/no-A2 construction certificate belongs to a separate
+  verifier. No projector, Schur-square, graph, endpoint, or novelty claim.
+inputs:
+  - path: agents/2026-07-23-wave27-h9-classification.md
+    sha256: 9b55de17a76cc087e5d83d94f94e8f48338e4d0382b1f18ef03614e0451100db
+  - path: attempts/wave27-h9-classification/exact_check.py
+    sha256: 49e9d60fe536c98d10e2b7f837aaa40574fc3a517436faa9bca017a7d4a7996d
+  - path: attempts/wave27-h9-classification/test_exact_check.py
+    sha256: cb152bf466bf1f82e8f7f9e8c2cf83f91736bceb64afd460fb6355045f13bb2a
+  - path: attempts/wave27-h9-classification/exact-results.json
+    sha256: 377b4edc9498ad71cb655f084970aed234ea809c8413643cb5e9cfd03b75fde2
+  - path: attempts/wave27-h9-classification/run-report.yaml
+    sha256: 8ccacc1f321abc04b1f0768360a210b599edbb138a1bd6c2174308507bbc3549
+  - path: attempts/wave27-h9-classification/failed-routes.md
+    sha256: fa0f06964999c9fb08117e19ad5001004d23564b383532282763a9732fb9c59b
+  - path: attempts/wave27-h9-classification/input-freeze.sha256
+    sha256: ccad8eb65c61f7e66e15cdd26d9766984d1ccff0d04834943446cefaf78a1284
+method: >-
+  Preinspection byte freeze; independent Fraction-arithmetic reconstruction
+  of the local equality witness; proof audit of positive-product
+  diagonalizability, determinant congruence, AM-GM, integral
+  pseudodeterminant, rank-four even-unimodular kernel obstruction,
+  trace-square parity, and exact KKT candidates; limited full block replay
+  and six-matrix digest comparison; submitted replay after comparison.
+command: |-
+  cd verification/wave27-h9-classification
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json
+  cd ../../attempts/wave27-h9-classification
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output ../../verification/wave27-h9-classification/submitted-regenerated.json
+outputs:
+  - path: verification/wave27-h9-classification/input-freeze.sha256
+    sha256: ba471e49c537296ea5a0ff943eebcfb730c2a139b6d88b5fe2e839fa4e6fd99f
+  - path: verification/wave27-h9-classification/independent_check.py
+    sha256: 3a42cf62fa3852eedae05733d0a26f9f2f1cd70b035d1ad8d2fa9de0b14a8010
+  - path: verification/wave27-h9-classification/test_independent_check.py
+    sha256: b608db0cfab60fecbe48e0ae400f4f1d0666ac5642610c6dfcdc299bd6fb1b1d
+  - path: verification/wave27-h9-classification/independent-results.json
+    sha256: 4b0532842e506cb5de4e8d131c48da6d078be7d69b459af50b3207a8900d788a
+  - path: verification/wave27-h9-classification/submitted-regenerated.json
+    sha256: 377b4edc9498ad71cb655f084970aed234ea809c8413643cb5e9cfd03b75fde2
+  - path: verification/wave27-h9-classification/2026-07-24T002029Z-audit.md
+    sha256: 97016014a12e2a691d31d694c1bcac208a3d14d1cdf2956f8edc43c8ec28bb4a
+  - path: verification/wave27-h9-classification/verifier-failures.md
+    sha256: 7bcc90f267e3bb4961c0edc9c4161aefa4ff60c7fc0553664504cf9513c3693a
+tests:
+  independent_suite:
+    status: PASS
+    count: 21
+  submitted_suite:
+    status: PASS
+    count: 16
+  submitted_regeneration: PASS_BYTE_IDENTICAL
+  independent_regeneration: PASS_BYTE_IDENTICAL
+result:
+  unrestricted_local_E6_trace_minimum: 14
+  equality_witness: VERIFIED
+  rank_44_limited_arithmetic_crosscheck: VERIFIED
+  discovery_documentation_defect: >-
+    The prose omits tr(C^2)=tr(C) mod 2 before promoting the square-trace
+    floor from two to four. The theorem remains valid and the omission is
+    explicitly recorded rather than silently repaired.
+  all_h9_forms: UNKNOWN
+  projector_or_Schur_origin: NOT_CONSTRUCTED
+  n3_708: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - The proof does not classify all positive-definite rank-44 determinant-nine forms.
+  - The separate construction verifier owns the full root/no-orthogonal-A2 certificate.
+  - No 231-row frame, projector Gram, Schur square, cubic tensor, or graph is supplied.
+  - Target existence and novelty remain UNKNOWN.

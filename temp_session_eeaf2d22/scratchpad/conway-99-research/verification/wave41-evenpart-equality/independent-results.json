@@ -1,0 +1,3166 @@
+{
+  "claim_label": "VERIFIED_SCOPED",
+  "equality_criterion": {
+    "basis_invariance": "Replacing R by R C congruently transforms the equality core by C^T(-)C; changing X by a kernel-valued solution changes U^T X by a term annihilated between R^T and R.",
+    "core_laplacian_identity": "For the cubic 36-vertex neighbor core A_core, rank_F7(K_39)=1+rank_F7(3I-A_core).",
+    "statement": "For B=H^T U of minimum rank e and R spanning ker(B), solve S X=U R. Then rank([[S,U],[U^T,W]])=25 iff R^T(W R-U^T X)=0."
+  },
+  "field": 7,
+  "format": "wave41-evenpart-equality-independent-v1",
+  "frozen_inputs": {
+    "verification/2026-07-27-wave40-integration-audit.md": "afc812a8740210c2c181b1bd0775da0a3526aa95e8706437cb918815f4543e10",
+    "verification/wave39-edge-local-rank/README.md": "ed749e5788c19a23629cee9f331cce0ef161500d9cb0d939eef3211085c0a405",
+    "verification/wave39-edge-local-rank/independent-results.json": "85b8d36d6ce5ebd638e957e1731864eff75f38405935f5e51ad5b629edea5966",
+    "verification/wave39-edge-local-rank/run-report.yaml": "0c16b53a1015f2aa8cd5e96767a97736c1da5ced6691d8ad4085f6579b44cad1",
+    "verification/wave40-exact-coupling-model/README.md": "33201f7cac66df7c65f254d0c3b054cd17cfa67ae54b67cbc5032bee299b924e",
+    "verification/wave40-exact-coupling-model/independent-results.json": "ff7916d0f5c74c47c8d7787c5cbcc84785cbccd3644d8d03d73e47b73908c0f5",
+    "verification/wave40-exact-coupling-model/independent_check.py": "d87c7a5eb9377cc3095fff21eec7ff17d94445bef911e4adb092f2db6228bc6e",
+    "verification/wave40-exact-coupling-model/run-report.yaml": "128bea1e5f7ff347f13e435888d62a6272ebe0968a5f8dc6a0eb2ba22fb99177"
+  },
+  "labelled_Z_matchings": {
+    "count": 10395,
+    "expected_formula": "(11)!!=10,395",
+    "sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454"
+  },
+  "partition_results": {
+    "2+1+1+1+1": {
+      "direct_rank_samples": 2,
+      "distinct_kernel_target_pairs": 80038,
+      "distinct_right_kernels": 2,
+      "even_part_count": 1,
+      "kernel_target_matching_checks": 20790,
+      "labelled_Z_matching_count": 10395,
+      "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+      "local_kernel_dimension": 4,
+      "local_rank_F7": 23,
+      "minimum_direct_39_block_rank_over_target_samples": 33,
+      "minimum_projection_permutation_count": 80640,
+      "minimum_projection_rank": 1,
+      "minimum_projection_search": {
+        "canonical_dimension_e_subspaces": 6,
+        "observed_projective_lines": 6,
+        "raw_generator_subsets": 6,
+        "subspaces_supporting_permutation": 2
+      },
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_rank_25_mutation_controls": 2,
+      "rank_25_compatible_cases": 0,
+      "right_kernels": [
+        {
+          "core_laplacian_rank": 33,
+          "direct_39_block_rank": 34,
+          "direct_sample_equality_core_rank": 9,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 40019,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "daf4026b5cc5645617ccb620c50b252baf577b91395a7ed81ad91822a4150ffd",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "50913a9b2eb03b21be45cd7f45cbd657d78b2efb7754523d9f2624b26d1883ad",
+          "minimum_projection_permutations": 40320,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "00003195f7e5096fa1b83070b01616c6b7dcd6f6f173ee8207675a4140433361",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            8,
+            5,
+            6,
+            10,
+            4,
+            11,
+            9,
+            7
+          ],
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "be97c6f3846be908068ae4a58d784a1964f8fd474ffff321de2cfb42a23bff0d"
+        },
+        {
+          "core_laplacian_rank": 32,
+          "direct_39_block_rank": 33,
+          "direct_sample_equality_core_rank": 8,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 40019,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "25a06101628a245e68e925bffd4dc65603da689c4cd9cf73721046c767c66446",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "e1e56f2752d4a5f29b91f9a7d33dc39b8657cbe23e7db6ae8a3f37cda9310955",
+          "minimum_projection_permutations": 40320,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "0001d579023630357ffec1681c674c9ba4a4e4c023a31b807d326a48d62a8bba",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            10,
+            5,
+            7,
+            9,
+            4,
+            6,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "ffad7810ccf0f306f7859da3151e660ef91b511a8567edaf18d5e0703cf43272"
+        }
+      ],
+      "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+    },
+    "2+2+1+1": {
+      "direct_rank_samples": 8,
+      "distinct_kernel_target_pairs": 184,
+      "distinct_right_kernels": 8,
+      "even_part_count": 2,
+      "kernel_target_matching_checks": 83160,
+      "labelled_Z_matching_count": 10395,
+      "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+      "local_kernel_dimension": 6,
+      "local_rank_F7": 21,
+      "minimum_direct_39_block_rank_over_target_samples": 31,
+      "minimum_projection_permutation_count": 192,
+      "minimum_projection_rank": 2,
+      "minimum_projection_search": {
+        "canonical_dimension_e_subspaces": 290,
+        "observed_projective_lines": 28,
+        "raw_generator_subsets": 378,
+        "subspaces_supporting_permutation": 8
+      },
+      "partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "positive_rank_25_mutation_controls": 8,
+      "rank_25_compatible_cases": 0,
+      "right_kernels": [
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 23,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "4a983dffdb7db8846504e14ad9901e0559f6047c0497ad38a2d2fcf515362f01",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "0abe661c0da32aaba01a58f2643dd0882344ed061a2493084003254af4e337f2",
+          "minimum_projection_permutations": 24,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "02fa4d88ffa3366e3492b766eb4de7937378b627439915647bc153df3529cdae",
+          "representative_permutation": [
+            6,
+            5,
+            4,
+            7,
+            2,
+            1,
+            0,
+            3,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "0a731e82a6330c3906bbd1e63737e331396f7c4fd30e774b6f84dfec452a724f"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 23,
+          "distinct_matching_cores": 10392,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "f63d272d05c8ec632a91e9b92bc031b0f5a527bb04723e47496d2c055865e614",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "e20acaacedf108abf20ca074fad4bd66fc0270a3b2f53bbbf9d01a5ad17152a7",
+          "minimum_projection_permutations": 24,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "0e061e7ccf062fa7445cc7523a3592b2ca55300eca00e889aed8c8e0745b9e0d",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            4,
+            7,
+            6,
+            5,
+            11,
+            9,
+            10,
+            8
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "97f78091cbcc9da7b4a6ae1637fd9e74728b782c07c82e90f371e2f6f8a0299f"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 23,
+          "distinct_matching_cores": 10392,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "77c64c508fc3d38fcbb289f741e8c27b0140aa155669f5b026fbf83642a646b3",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "dae10d898ed8d4938185070029eba38855f5bd75ab3045778168a3d20524d106",
+          "minimum_projection_permutations": 24,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "0050bc4db60b91dc35d0b6fc875977a1a7ca8cace9338eac627f537b8757a997",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            6,
+            5,
+            4,
+            7,
+            10,
+            8,
+            9,
+            11
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "9db1210de280b5d5ff80c8a92241dd20df550f0f2c1d4bee688a4ec547e91c42"
+        },
+        {
+          "core_laplacian_rank": 32,
+          "direct_39_block_rank": 33,
+          "direct_sample_equality_core_rank": 8,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 23,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "6344038339c830e17d6ed385bdec8d5e73bae7539128bd4ed1d2e24cdc9b133e",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "0bac43114c2bc0610e049bffd06530a294d5eff056411f55ab9f319b8cf88fb6",
+          "minimum_projection_permutations": 24,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "0301b02e52a3455f98df0a03c6e948614ff3846c84c31407230a7f90a3c8c185",
+          "representative_permutation": [
+            4,
+            7,
+            6,
+            5,
+            0,
+            3,
+            2,
+            1,
+            10,
+            8,
+            11,
+            9
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "b5594be9ae1e6a701d4d039b2589ab4b225c37a6916285e6bf8395c313ba0994"
+        },
+        {
+          "core_laplacian_rank": 32,
+          "direct_39_block_rank": 33,
+          "direct_sample_equality_core_rank": 8,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 23,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "f2171003acffd3cc3a409283e2912f56d3214e2fb517a85ecd676ee1f2d04706",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "afd13b6078c283dd58fa1fe8c319c0dcd99b11f26a97a230399c35458d63f60b",
+          "minimum_projection_permutations": 24,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "093beda3b96f7340014f16ec30f64c6b6a7f44a930dd3e927a67b1ec14bbc52f",
+          "representative_permutation": [
+            5,
+            6,
+            7,
+            4,
+            3,
+            0,
+            1,
+            2,
+            11,
+            8,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "b56d36891913b882b162fd3f732c6c7bf3e18b2ac905e1036cdc0762358def0d"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 23,
+          "distinct_matching_cores": 10392,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "d215d1e067e144366ea546384546e1a0e334d380defd4191a519181bd9fc6b55",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "91ccdaacbd6421e4813970bc3de8b51c05de036b8d1ac24fd14ab0521f845cfa",
+          "minimum_projection_permutations": 24,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "095bcd89c73b940a206ac2481b477a6f46041658fb20c9587530ea81486dab32",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            6,
+            5,
+            4,
+            7,
+            8,
+            10,
+            9,
+            11
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "cf4540e1de355ee4fd9e8eeaada6645c02cb2600c487227c2cc1491cefd128cc"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 23,
+          "distinct_matching_cores": 10392,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "4a99c16d75633d6add2086aeadf096ed7155f5f5d7ff72bfb45d5caabf131ef1",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "34886d2f2bdd5185e82378034599bd0f639902d1ffa37621f11c65fcbd130b07",
+          "minimum_projection_permutations": 24,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "02f77f2ebd0d7be0e4d65702e78a0647f155280c1179bb4d6ab6f7ee3899604c",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            4,
+            7,
+            6,
+            5,
+            8,
+            9,
+            11,
+            10
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "e677f23a1768c5f09bead3394e4fb740198490075de330d112be22993bcb6700"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 23,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "031d06f5e5ab12e88e403100c7325ef3258ce7305ece1824afda4a5d7f973fb6",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "e08952ce7bc3013722024186d5df1f1e95f16a15a928418249bbe2ce587020f8",
+          "minimum_projection_permutations": 24,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "088a744ec422357200d235c26bedafce4acd44ffe153c4b076d06bfc7b68d58c",
+          "representative_permutation": [
+            7,
+            4,
+            5,
+            6,
+            1,
+            2,
+            3,
+            0,
+            9,
+            8,
+            10,
+            11
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "eb12fdb021ea0a28badb2901962d1daa54d2f9173f650f612b53dd530c7a77b2"
+        }
+      ],
+      "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+    },
+    "2+2+2": {
+      "direct_rank_samples": 32,
+      "distinct_kernel_target_pairs": 32,
+      "distinct_right_kernels": 32,
+      "even_part_count": 3,
+      "kernel_target_matching_checks": 332640,
+      "labelled_Z_matching_count": 10395,
+      "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+      "local_kernel_dimension": 8,
+      "local_rank_F7": 19,
+      "minimum_direct_39_block_rank_over_target_samples": 31,
+      "minimum_projection_permutation_count": 32,
+      "minimum_projection_rank": 3,
+      "minimum_projection_search": {
+        "canonical_dimension_e_subspaces": 25744,
+        "observed_projective_lines": 66,
+        "raw_generator_subsets": 45760,
+        "subspaces_supporting_permutation": 32
+      },
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "positive_rank_25_mutation_controls": 32,
+      "rank_25_compatible_cases": 0,
+      "right_kernels": [
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "88faddaffea2f01b6c5ef88121d9af4fb6c0ebf02d43d63505d9f84c3064017f",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "08882a3b709dac7149cfbf8c70c308d79885ee46f2ed76476e281b397a5e237f",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "570c9038a9e26995be076835d84e870c7fc25350c482a15ece20168b61b4e7d6",
+          "representative_permutation": [
+            7,
+            4,
+            5,
+            6,
+            1,
+            2,
+            3,
+            0,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "0b0b17ce3ed205a38a1e3b9eb70650c459da4a99351d267a5860930e02083e5f"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10386,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "deba7d078b025e974ef933e10ce9c63bf0f43703ae990e5700e2c1d472e359c5",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "ac80f3293c99857520b2cb75a7c5556f0ca896a1ce1605c2cbca4447e34010ff",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "6341ebae70dd22aa16d300f6d8bcc33f8d6d396a306aa5995ddd7f5dad728ac7",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            6,
+            5,
+            4,
+            7,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "163cab11dfb7aca6b7b7044064598e31cfa132e56d1222caea6a4c65a3129e23"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10386,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "978719c4acd04247d5a28358685fee313f9fd21bcc4c7a18b2def15a15cc6dcf",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "be48e7036b31e29bb4dfb128b196e2bf2eb77204a248e6db772578e4ac1b8403",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "650ae75b753244ed30b81e40a653d897b700302d57662c77ad96fa683cfc55b4",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            6,
+            5,
+            4,
+            7,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "25354f5a4e404c550ef81d937014029acbb4281bbec4a368db264ea8c866bd8b"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10386,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "96820cf5a7dd02172164b3ba459052a85ae85bc68922c64ce58557c903abafe3",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "52986bc3cf5f6b80cd82d4f843f2bb9318b8a33cd28e97e87f059f7e198a0f3e",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "3ea277827a3abde86b408212fcf7859d0aa07183ac510dc5acbd2b92482bad9c",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            6,
+            5,
+            4,
+            7,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "276f3e8946078d05e6abfc55781effe89a3fa374cd8dcff07e3eb739ef133fb5"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "a5bafd6db5604e7bbe62ce13a04bd735fc63b86d05786d9b995f98615195674d",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "48d809d973dfd4465973ae0232f081b65a950f798fd510178428cd3e96b0e3fe",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "feb23dea1de8460e755ea7bb6637b3affa656a621fc17c375023ca928234f076",
+          "representative_permutation": [
+            6,
+            5,
+            4,
+            7,
+            2,
+            1,
+            0,
+            3,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "326ac55a67a0ac346dbf2fd3b4e47b824f70066883b4bd9b7d5b902ac75fdea7"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "ae93d7c5329738c9ae8a33b3bfb1e67ca80de893628e83a79d2a0176f31e2596",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "b79904bc4bc9d1d8b7a008095dc9c285cb6368ffab37c625273e3fad58e8c69f",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "55417edf5efdb29ed696fffd6d5888cb81de7f37de253d441178ce773b16c5f6",
+          "representative_permutation": [
+            8,
+            11,
+            10,
+            9,
+            6,
+            5,
+            4,
+            7,
+            0,
+            3,
+            2,
+            1
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "409c9b532a8944d6c2852ee572e906938aaa36e1d6947f6b06efba9c84270c12"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10386,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "f408d5b63f11e95f7ecb3870bf01533bf5461f005f9f256ae65c1fe13509e7ee",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "f7ab7557f5a8577c1a410fe162a99b597ce9d3be777bff73d330093c0166e6e9",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "a5ed9961801fb9146a2380ccfb4c9fcf3c07d18edbf54484d77be696e18b3724",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            4,
+            7,
+            6,
+            5,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "428dbfa3ff7ce1fac95998c3525605eea1704c8d6aa2d5545ebb29286cb8aea0"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "78426563f41819df129e61d45a8e839b5c0e42c0a373ba4714dad20601ef5d49",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "0a0629a8ed444235cf70b0c6b3b88641cca6512e9878572a81c8e5f4ebbff0d3",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "45ab49e8083332acea620345f2ee740bae738d53366cc69b956dc94f74776817",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            10,
+            9,
+            8,
+            11,
+            6,
+            5,
+            4,
+            7
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "49f2d595db4f4d954bdb9046b67e0e22b733eb504bc4547e3cb382f4883ba65c"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "0d33630da934eda56d09580a6886c08c83d1e25408b4a35203f315730c8fc40a",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "ed13a55176f16770ee27fd30983efcc41cf23063b0817106a66936e5c9a595f3",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "5d5e996bf41bd5ecc92a64b018c9d9d2823fbfdda396409b395183e35fd13d81",
+          "representative_permutation": [
+            11,
+            8,
+            9,
+            10,
+            6,
+            5,
+            4,
+            7,
+            1,
+            2,
+            3,
+            0
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "56841a90d5aaf83859d4edfb66ddc23cecfc49af48b6378ed2706b35c117169d"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "e3f1556f0cb79ac2e1a7d133c07de16f6a4fcd5a2c19eb04c352a28fa068e3b1",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "54511d15485d0ec9bf0ff564bfb7910f32e98b2086e340b82aabd0e5343ee32c",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "406cd422717d5d639f7030f6ba06fa901672732fe37ebbf432bfd63c280f8611",
+          "representative_permutation": [
+            10,
+            9,
+            8,
+            11,
+            6,
+            5,
+            4,
+            7,
+            2,
+            1,
+            0,
+            3
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "5cab2e9a2fb0f70ad2888590d7aff4eccc0650be6696ecb205f9403ebe71f3f5"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "c0386c938c2e7f0d6b2513b18fbad93f997e2b47aa874d5a701c20e19e0e0a89",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "4900283d700e3a22770ae89b3fc0ca0428983f5c8b8be004f39e0442042df89a",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "b7c6114fa332f7bf6568992a44ffd7b3e94df06b6c9b86282c97081145a5ef21",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            9,
+            10,
+            11,
+            8,
+            7,
+            4,
+            5,
+            6
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "684b39d2b702bfb06c70d729bcb7dacd35894fc8df692c1189b03864fe89339c"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "64215c71ef09c729afeb5a03c5ba5642f305d2b208ee16b1a98517855b8f0a2b",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "c4178d75c6d581ce2ab2bf431faf87ea1265d8d5539c632b6dcce37315c1d6c9",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "7c96109842adad0508fa07d042f4e77e6991a08a42472f8ea0548b5d5cd3cc61",
+          "representative_permutation": [
+            6,
+            5,
+            4,
+            7,
+            2,
+            1,
+            0,
+            3,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "7826e179b66cdd7c96def4da4864af62da5c9d545d4d7ee1cc65d04b0871491a"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10386,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "4cf58be6be8c207eedf16285c071eaae57a2fc6bba522c98915a0e0335f950a0",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "3f64054bc739087b8d5393547afaf37bb14a7dcb80f643d5acc7878a10a3b2da",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "2fe008aa7bacdc5db114dedf3706ed95b159ac5cc2995f6a9211b2e0e627e88b",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            6,
+            5,
+            4,
+            7,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "7f15fe29a650a50a97c7025ffc02759e089a39e2dd3d1ac485f645a92ab098e1"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10386,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "f5dceb30f2375f21b7d10e0ca7d4bc8d918e3f3ad6f516d5f6a392c2285b2307",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "8f6bec335e4dd59addb94b7103ba9cf00ca1687f8aa17a3ce5fdf110b4b730df",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "ad8a04c59cf2e95f825d27134ca9dc4263039e49679a911928d24f84ce17dcca",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            4,
+            7,
+            6,
+            5,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "83df7aa1b0ab88e35009fdf1b48a6caf09e48bcc334294cca22249fad4b26828"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "744c0d8b8815f129bdeb88be6c49771a7f91ee95aa330c4926405a156858b2f7",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "3b0cd288bdcdab5599cf693ce5e7319b8cdc14e3290930e0c288bbb3427530e5",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "ae94b6a14e4f48273ae2d0122b182879e417175e454267f325ac349a7c4b831a",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            8,
+            11,
+            10,
+            9,
+            4,
+            7,
+            6,
+            5
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "84b3070a253f0f1733ef1db5e5bf2fcf96f613cafeb80ac3b76895ce50deb608"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "fd1359ad894ef2427c231e463568253eef470cb6c757e6a4ebcd8336234d36e5",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "59ad0f2ed572661b11150028d16d48d6dd9a220493898db150b7866ccb5bba27",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "8ad9f777a953e3984ecd818c566058839dd06f8d691b3d4d008c36f7f3b738ab",
+          "representative_permutation": [
+            9,
+            10,
+            11,
+            8,
+            4,
+            7,
+            6,
+            5,
+            3,
+            0,
+            1,
+            2
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "85d95d62451f1fd46f74c1445ebab9f644848db544dde470f87bdc502efcc72f"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10386,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "7f56d9a1ecc0c31eac293f8812823dd0386b0728051441a0e586a3f27188900a",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "de99b111bd8448d59d11a8f31ee451917547de690fc9681187d34dcc71f6f0e6",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "d05888b0e614e2c54d6b6ef810017bee2177123a716cab048be44be06c0031eb",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            4,
+            7,
+            6,
+            5,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "897b0f2aca8fd233d852c029ebf4279af8b6924250cb7f830e26b06d1b70e90c"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "44cd19d407380c1297678639a83170cdb5c399473760479bd9d8fc5abba27054",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "a167c8a7f8822c0a079b2685f57b125d9a6063d340c40db34ae2ab697d3af478",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "3c40d53b771f4a44bee2b6e305ef1dd7e52bfd67ca15f096860e1d6ce6d47195",
+          "representative_permutation": [
+            10,
+            9,
+            8,
+            11,
+            4,
+            7,
+            6,
+            5,
+            2,
+            1,
+            0,
+            3
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "8aa55ee8b8dc352f5a128944db8ceb495d86db702d215ea37a40bfc79253c563"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "5bb6e18f7b60639dde5bf7468437ada0daabc3cb2dd58469af5fabde5c154fd4",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "279e4e01594dd10baa0829fdb163464f948c6017c5a74e0db628b4cc76bd705a",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "947114685f3b954f5a29b9685e3c1e3518064ebb0a65fbe7497e52fd0721f30e",
+          "representative_permutation": [
+            4,
+            7,
+            6,
+            5,
+            0,
+            3,
+            2,
+            1,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "9850f12ced95d992d4edadafffebdd267a98229e09fb079dd09f4114273c1d1e"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "17e50938f207478a82a25ce88cf2c1e7a6e71a1139518612c394182a8ce820a0",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "2324a0426ecaee54693093b3b196cb37af92f5b90ca504368a8b62d884476d60",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "4f9e0cf8bd49d0beaec3a5ce153bc5eed63091b1d8efff87262a6e9807d82bf7",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            11,
+            8,
+            9,
+            10,
+            5,
+            6,
+            7,
+            4
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "9d20045b6971100f12e5acea7fd48330c90a0a279ac3c84dcf232865b082c066"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "983808b01906eff095dad7cc87ec92a734221f9a97e067f9dfbf6cde28b990fa",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "79c01b5a59454c227cbb79070ebd6bb352f9f913d12bbbb8f3597e180c50b557",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "1a4998f49e6dd1d0e7d02cbc542dd364ae873d7d52882811c78bbb0d85aaedbf",
+          "representative_permutation": [
+            9,
+            10,
+            11,
+            8,
+            6,
+            5,
+            4,
+            7,
+            3,
+            0,
+            1,
+            2
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "a2377e2064f8096ce4d99eb3b88b121a79172875983648f5123c51980406a0f8"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "4d7276d455fb6a1abb8647cb4318f24088b7b7527ff61173bb7675508ae769b0",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "c5a78e7a8cabb01f69f1add24881b71d4650b23b2c2c8a7368033460630b97b3",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "fff5bea5650a6186edd075fb5c9d8e784b4e69f309f03d6697949cfe07fe66f1",
+          "representative_permutation": [
+            5,
+            6,
+            7,
+            4,
+            3,
+            0,
+            1,
+            2,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "a785ef533af7f76701f10de8f7cf981cbc3f76c0b030e045a8254297ef17dafa"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "bfbbffeff0dd37ec3561e2ea9934f54937e5542a6f2df376aff2eb9afd4e160a",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "fcd456546c05180108c7a2df1e47d81eb85f61d4d0dfc0059829902f1f50aeac",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "a3b41bbc4ec83eb236731c46c682df5293d584874b32de52de7251cb89b42757",
+          "representative_permutation": [
+            4,
+            7,
+            6,
+            5,
+            0,
+            3,
+            2,
+            1,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "a8d2b1f7ce0262a9a971c756b64fa91e40cb5c029770f9afd9e73113eea92ca8"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "94c4178e1fdcb7cfb51e69585a24a077a231bd20bf3ef3d0d7f7e7abe389fa93",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "1daf621bacf00503390c14426db03f6223886e252a05cba523e118b4f82b4eb7",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "df5b21d99b32f96d83daa2f10f5c87a75eae5651eba702a93f4e82d6a9c8ff6f",
+          "representative_permutation": [
+            7,
+            4,
+            5,
+            6,
+            1,
+            2,
+            3,
+            0,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "ac8e92663881dcff9ae48e8304159a2b796e338072e8f580acef5dd307ab3092"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "a58e90757f3600673d76497bafbfa9f839736c1aac0a9ad4ab954afe8f64deaa",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "777eebfc6efa8f5e82cb3872dcde47a2690d4d550e91513e383afb60ff6d2e4f",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "16a7ea343f5a261281816107573460ae2045f55ec20b48496a385067ed482ea9",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            11,
+            8,
+            9,
+            10,
+            5,
+            6,
+            7,
+            4
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "ad2ca0ae2b02b0eb707efe06079bd5cb3c2f13707bc23a7261fc0a5121a44af5"
+        },
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10386,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "95951a4049d297fe097c4e8b7abfac60c7eea67fa34a17044d70130b67893c24",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "437ff5c8f108ea845e5c59aa14ed5a3479f776fa8545afdcbe51e3855d168b73",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "516ad1361af0fc5ab65723d583e8be0b85d4a1610bdfbdaf9abe06cf172b8f86",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            4,
+            7,
+            6,
+            5,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "bf364a3fbdb43d53f431d3213220e623f9be0eae84089871cbcad07fa850a8f8"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "09e18d82cd950d948d6eb959e379418734cd30444001f1c9309c42a016e06b47",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "d813f9e1cdf2f784cb6018ba47a4423a041a06f8b333542cd05cc444a93d3b8c",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "aee1f5ee5cace1e7b48a56fb7e88c462d932c96d1a68573be5eb36f76fd79577",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            9,
+            10,
+            11,
+            8,
+            7,
+            4,
+            5,
+            6
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "c239145ed858108614bca0f432cb758201d505fb4b3f4129f97cb7d3de14f865"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "1888dfad9306ff33349e2ea7e3fb7b13b768a404003aa2f6c9d6cd4c7b0c1b5c",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "3fdf7aa6a01830369948a6868cf345409a71602af69abf91dd5d398454abc33e",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "cd5f275ac41d2df40e93393ec957684a778351f037757bd8aa7490e3d00f0914",
+          "representative_permutation": [
+            8,
+            11,
+            10,
+            9,
+            4,
+            7,
+            6,
+            5,
+            0,
+            3,
+            2,
+            1
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "cc6cc553598b137d6d7eff55c0dcee6a957945471116df581ef5bf88c2c2729b"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "174fa5fa3318d11575ea06d6c38ae24a5f670ba139de3e1afcd0ebe9e522cac0",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "3d2e8e26436c8db9d06073e08cfe429a98251ef7d5e947849aef7d32bd9e8cfb",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "9835b16073349a0e56640961636d5fd3d613349331ad9208c9d4f3e9b3d5c16b",
+          "representative_permutation": [
+            5,
+            6,
+            7,
+            4,
+            3,
+            0,
+            1,
+            2,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "d3f6e00e3f72365d76e454551fd8b18deacab88b001514178be6dae8427745bd"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "5803a6ff60a48294bd59dcc5859eb731b1c1fcbe0b83f506343e0f73664d2171",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "a41742d36e936c746e45d85399a6c6b31b5f9f52c15c45f248371bce740b9cb1",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "b96bff2a762f4b968b942dc065e783130bc71486a855f41d30e483620ed8b8ca",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            1,
+            8,
+            11,
+            10,
+            9,
+            4,
+            7,
+            6,
+            5
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "d4c016392561a95fbd1cf35232bb4417e6870fda7ee53d45f4df3820ee5b7407"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "245a888e65de39f53b8a8ea37e24a80ccd902ba8e648c4db82cc041f1a1f021d",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "3e49f56cce0620d9aa97d355285df011082a63d059b81ab0de6a8ae785cbea26",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "28543d1e932b67d8214f7a6cdffad37b161a2dac03f6eb3baf33a081d3e0fcbe",
+          "representative_permutation": [
+            11,
+            8,
+            9,
+            10,
+            4,
+            7,
+            6,
+            5,
+            1,
+            2,
+            3,
+            0
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "f404effd317a1f48e5801c433af664d4958738248f39d38255e4198fe50ff98c"
+        },
+        {
+          "core_laplacian_rank": 31,
+          "direct_39_block_rank": 32,
+          "direct_sample_equality_core_rank": 7,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "970fbcf192f1e7f349d78e6c088c52e5fff19edd872b8977b687ca46470fa69a",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "8d241d2b7c048399ad5744ffc2ce36c1521e36f2a7b6411733892965ae90e03b",
+          "minimum_projection_permutations": 1,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "b8dbc7c22c397f700f9b06d7c06b83154eb853348636f8feefef4f9cf1849483",
+          "representative_permutation": [
+            2,
+            1,
+            0,
+            3,
+            10,
+            9,
+            8,
+            11,
+            6,
+            5,
+            4,
+            7
+          ],
+          "right_kernel_dimension": 9,
+          "right_kernel_sha256": "f81ddf6c2309b67c289018ddb3045b0554c05265262c400e3c2a21f60a75a323"
+        }
+      ],
+      "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+    },
+    "3+2+1": {
+      "direct_rank_samples": 2,
+      "distinct_kernel_target_pairs": 80632,
+      "distinct_right_kernels": 2,
+      "even_part_count": 1,
+      "kernel_target_matching_checks": 20790,
+      "labelled_Z_matching_count": 10395,
+      "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+      "local_kernel_dimension": 4,
+      "local_rank_F7": 23,
+      "minimum_direct_39_block_rank_over_target_samples": 34,
+      "minimum_projection_permutation_count": 80640,
+      "minimum_projection_rank": 1,
+      "minimum_projection_search": {
+        "canonical_dimension_e_subspaces": 6,
+        "observed_projective_lines": 6,
+        "raw_generator_subsets": 6,
+        "subspaces_supporting_permutation": 2
+      },
+      "partition": [
+        3,
+        2,
+        1
+      ],
+      "positive_rank_25_mutation_controls": 2,
+      "rank_25_compatible_cases": 0,
+      "right_kernels": [
+        {
+          "core_laplacian_rank": 33,
+          "direct_39_block_rank": 34,
+          "direct_sample_equality_core_rank": 9,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 40316,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "4d8648d7dce1c9366730c8b4c2f1859e4546d809762dc98bb33909cbdf0de175",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "c9b3072316446ea8dd199f18789f84ea36230e5b0751b151af43689dfe916feb",
+          "minimum_projection_permutations": 40320,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "000251861b28368885d27bb53c94e86eb1ac0b2d411fb4e4c576c6f29d2609c9",
+          "representative_permutation": [
+            2,
+            5,
+            1,
+            0,
+            3,
+            10,
+            6,
+            9,
+            8,
+            7,
+            4,
+            11
+          ],
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "0f19dd64fba52fae2178ec7fb66dd3be30e68311722d773c9669d448edb8749b"
+        },
+        {
+          "core_laplacian_rank": 33,
+          "direct_39_block_rank": 34,
+          "direct_sample_equality_core_rank": 9,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 40316,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "ba35dea93e2bc322f595e9359e32fea7e90be7b8a97316668f2a8a3eb6f0262a",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "086e6257a5ad8a773832c7ddb7b07824f57132780a1eb802fe0f663661809236",
+          "minimum_projection_permutations": 40320,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "0001164b1f8e890094c72670776bd6a191e91d1ac9df1fe49d59513535a9d9ef",
+          "representative_permutation": [
+            3,
+            11,
+            2,
+            0,
+            4,
+            5,
+            8,
+            7,
+            6,
+            9,
+            1,
+            10
+          ],
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "6f6a07158fe08a5fecca74d00f9551e82a50b172edbc2ead02a3703acc1a311c"
+        }
+      ],
+      "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+    },
+    "4+1+1": {
+      "direct_rank_samples": 2,
+      "distinct_kernel_target_pairs": 736,
+      "distinct_right_kernels": 2,
+      "even_part_count": 1,
+      "kernel_target_matching_checks": 20790,
+      "labelled_Z_matching_count": 10395,
+      "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+      "local_kernel_dimension": 4,
+      "local_rank_F7": 23,
+      "minimum_direct_39_block_rank_over_target_samples": 34,
+      "minimum_projection_permutation_count": 768,
+      "minimum_projection_rank": 1,
+      "minimum_projection_search": {
+        "canonical_dimension_e_subspaces": 6,
+        "observed_projective_lines": 6,
+        "raw_generator_subsets": 6,
+        "subspaces_supporting_permutation": 2
+      },
+      "partition": [
+        4,
+        1,
+        1
+      ],
+      "positive_rank_25_mutation_controls": 2,
+      "rank_25_compatible_cases": 0,
+      "right_kernels": [
+        {
+          "core_laplacian_rank": 33,
+          "direct_39_block_rank": 34,
+          "direct_sample_equality_core_rank": 9,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 368,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "dc5b6d16e1e0155e48aed5a9b249cdab5e9edebffb329d0f87a090fe20b99d41",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "cae2539c6f84c64e1f15f9005e8dba32f5176ac226260633a7a992522b5da6d6",
+          "minimum_projection_permutations": 384,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "01244cb23b392c97f7189f83a526a0d23712cc2494d86b601b0f6da7a67883ce",
+          "representative_permutation": [
+            4,
+            3,
+            6,
+            5,
+            0,
+            7,
+            2,
+            1,
+            10,
+            8,
+            11,
+            9
+          ],
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "1f58efb5780f3b76d312c1691d23a8384333537ba042eb999489d363aabf2a47"
+        },
+        {
+          "core_laplacian_rank": 33,
+          "direct_39_block_rank": 34,
+          "direct_sample_equality_core_rank": 9,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 368,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "d1ea1b0ae1300020d05d21a9402c58dd869b4c8d54fab1f48f368332c7c07deb",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "f0d216de6b976c3de791bf435dfebbcd2e0826796074167fe4ee29897090ba44",
+          "minimum_projection_permutations": 384,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "003d3521c40c182ff53941736d70e087e287b5697bdd7f5fb163737b516db44a",
+          "representative_permutation": [
+            6,
+            1,
+            4,
+            3,
+            2,
+            5,
+            0,
+            7,
+            8,
+            11,
+            9,
+            10
+          ],
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "c1251fd866315f52798b5992f2860a314f565304ea45c2a4855218ba8892f881"
+        }
+      ],
+      "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+    },
+    "4+2": {
+      "direct_rank_samples": 4,
+      "distinct_kernel_target_pairs": 64,
+      "distinct_right_kernels": 4,
+      "even_part_count": 2,
+      "kernel_target_matching_checks": 41580,
+      "labelled_Z_matching_count": 10395,
+      "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+      "local_kernel_dimension": 6,
+      "local_rank_F7": 21,
+      "minimum_direct_39_block_rank_over_target_samples": 31,
+      "minimum_projection_permutation_count": 64,
+      "minimum_projection_rank": 2,
+      "minimum_projection_search": {
+        "canonical_dimension_e_subspaces": 290,
+        "observed_projective_lines": 28,
+        "raw_generator_subsets": 378,
+        "subspaces_supporting_permutation": 4
+      },
+      "partition": [
+        4,
+        2
+      ],
+      "positive_rank_25_mutation_controls": 4,
+      "rank_25_compatible_cases": 0,
+      "right_kernels": [
+        {
+          "core_laplacian_rank": 30,
+          "direct_39_block_rank": 31,
+          "direct_sample_equality_core_rank": 6,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 16,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "c81cf4ef2ffc5b01f469a204b14ab9eb1c0c276d42be38eaa5d2dfa74a13a1b8",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "1d27ac771f7ea14876d4f9889495081517e915c5857a1a7c05ac31e6a47c916f",
+          "minimum_projection_permutations": 16,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "253566ee9066003aff6edfd8391b58e0c7d95a7c92b021e1d45f4db12ea1ddf9",
+          "representative_permutation": [
+            2,
+            1,
+            4,
+            3,
+            6,
+            5,
+            0,
+            7,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "7d39c4c74d3201652e3652c74d86145b87ad75fdfb0c0f45ed80c9782db5379a"
+        },
+        {
+          "core_laplacian_rank": 32,
+          "direct_39_block_rank": 33,
+          "direct_sample_equality_core_rank": 8,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 16,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "1e79b017a84e84fec22379c6742b3772a0983bba7b13f3e85e95e28779eb7a46",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "1cc9cd059be2f2297727168561d0dd253f001c99cc40ceb23a0fc6c286e412b2",
+          "minimum_projection_permutations": 16,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "1822a84d107b6b6d44eaad547625261bfd62614cb7123df8b9ab7af7704733f3",
+          "representative_permutation": [
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0,
+            7,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "9bb3bda8e0a3197d05cf85d408561a20a6c31f00cc71c358565ffadd8841f0e7"
+        },
+        {
+          "core_laplacian_rank": 32,
+          "direct_39_block_rank": 33,
+          "direct_sample_equality_core_rank": 8,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 16,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "096c69a39c8e19d443c27b79ebcec60a5abce058a9bdf0e15524865e85ed980b",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "1c0ef5afb894bb19020f8c2a7b8aa64392a4328a1ab9abbae214081852e9d495",
+          "minimum_projection_permutations": 16,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "2292e7b22408957e70c8f7046e7a5c0a1462f96314a9a9ea853974c7bbad54bf",
+          "representative_permutation": [
+            0,
+            3,
+            2,
+            5,
+            4,
+            7,
+            6,
+            1,
+            8,
+            11,
+            10,
+            9
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "9d7d66304f34bc13f6adb73582334e56ec22b27d7c827fe3847e54a56b5f018d"
+        },
+        {
+          "core_laplacian_rank": 32,
+          "direct_39_block_rank": 33,
+          "direct_sample_equality_core_rank": 8,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 16,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "87515ce152592f224da09c200180c9bd911fa12d338d3f6820f874f698a9620d",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "a46b57a6ecd6b2dc058b0577d47e0bfe1861a87f685ab0474fe61b2f37aad200",
+          "minimum_projection_permutations": 16,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "08f1e25a4356031531a17e43400e90bece030f28a686b3848bd1201695e071e0",
+          "representative_permutation": [
+            4,
+            3,
+            2,
+            1,
+            0,
+            7,
+            6,
+            5,
+            10,
+            9,
+            8,
+            11
+          ],
+          "right_kernel_dimension": 10,
+          "right_kernel_sha256": "eabb3f236b8ac2308576747a7f9de578cc9923b2bd46918f898d108eefad5ed9"
+        }
+      ],
+      "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+    },
+    "6": {
+      "direct_rank_samples": 2,
+      "distinct_kernel_target_pairs": 2592,
+      "distinct_right_kernels": 2,
+      "even_part_count": 1,
+      "kernel_target_matching_checks": 20790,
+      "labelled_Z_matching_count": 10395,
+      "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+      "local_kernel_dimension": 4,
+      "local_rank_F7": 23,
+      "minimum_direct_39_block_rank_over_target_samples": 35,
+      "minimum_projection_permutation_count": 2592,
+      "minimum_projection_rank": 1,
+      "minimum_projection_search": {
+        "canonical_dimension_e_subspaces": 6,
+        "observed_projective_lines": 6,
+        "raw_generator_subsets": 6,
+        "subspaces_supporting_permutation": 2
+      },
+      "partition": [
+        6
+      ],
+      "positive_rank_25_mutation_controls": 2,
+      "rank_25_compatible_cases": 0,
+      "right_kernels": [
+        {
+          "core_laplacian_rank": 34,
+          "direct_39_block_rank": 35,
+          "direct_sample_equality_core_rank": 10,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1296,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "b70531bc3f2f8e67e49847788bf59747babad46bd8e53e58f6f8b8f6de60ff04",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "fcc04f81622cb35ce3453be5f11f759605a73454661b46fa834963c919add030",
+          "minimum_projection_permutations": 1296,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "003e4a288769f4d15ea5e3303e8fe64fbbfb70f71ab057fd66725fe10f116521",
+          "representative_permutation": [
+            8,
+            7,
+            6,
+            9,
+            0,
+            11,
+            2,
+            1,
+            4,
+            3,
+            10,
+            5
+          ],
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "80d1c5171a8e2480b1220227668a9ca347867e2bdf92d985c2186d1ec0283e38"
+        },
+        {
+          "core_laplacian_rank": 34,
+          "direct_39_block_rank": 35,
+          "direct_sample_equality_core_rank": 10,
+          "direct_sample_matching": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "distinct_equality_targets": 1296,
+          "distinct_matching_cores": 10395,
+          "equality_compatible_permutation_matching_pairs": 0,
+          "equality_target_multiset_sha256": "c1584e4718d4332d757db4d41bbc1494b3ffe6ad85c9a518253a575fdd979cad",
+          "labelled_Z_matchings_checked": 10395,
+          "matching_core_multiset_sha256": "518084fb8b1ada1ca5d5c6e2750e893a946d461a72121e4dda20e7e18029d51a",
+          "minimum_projection_permutations": 1296,
+          "positive_mutation_39_block_rank": 25,
+          "representative_equality_target_sha256": "002f93c4f3ef268605dcf53c8909f54d3f6ab99fb9ccac6ea225613277073e93",
+          "representative_permutation": [
+            6,
+            5,
+            4,
+            7,
+            10,
+            9,
+            0,
+            11,
+            2,
+            1,
+            8,
+            3
+          ],
+          "right_kernel_dimension": 11,
+          "right_kernel_sha256": "d136d04e45a3dab210b83a3d0626f94f8d399356281c457f22c9c0470bfcb42b"
+        }
+      ],
+      "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+    }
+  },
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "general_upper_bound_below_4158": "NOT_PROVED",
+    "n3_endpoint_excluded": "NO",
+    "novelty": "UNKNOWN",
+    "priority": "UNKNOWN",
+    "seven_even_part_types": "VERIFIED_SCOPED",
+    "universal_rank_F7_M_at_least_26": "REQUIRES_SEPARATE_FROZEN_ALL_ODD_COMPOSITION"
+  },
+  "totals": {
+    "distinct_kernel_target_pairs": 164278,
+    "distinct_right_kernels": 52,
+    "even_types": 7,
+    "kernel_target_matching_checks": 540540,
+    "minimum_projection_permutations": 164928,
+    "rank_25_compatible_cases": 0
+  }
+}

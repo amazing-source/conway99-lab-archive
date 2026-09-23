@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "audit_date_utc": "2026-07-24",
+  "frozen_scope": "The two exhaustive endpoint branches left after Wave 31: rooted even integral rank-44 endpoint S-forms and rootless integrally indecomposable endpoint S-forms, with the actual vertex-triangle incidence layer kept separate from the weaker free-standing matrix/projector/Schur package.",
+  "counts": {
+    "web_search_batches": 17,
+    "exact_query_strings": 68
+  },
+  "limits": {
+    "web_search": "Interactive ranked result windows only. Total result counts were not exposed and are not invented. Snippets were used for discovery, not as theorem certificates.",
+    "source_access": "Primary papers, current preprints, publisher/DOI records, author or institutional copies, and maintained mathematical catalogues were preferred. No raw HTML, PDF, XML, API response, or search payload was retained.",
+    "coverage": "No exhaustive MathSciNet, zbMATH, Google Scholar, citation-network, language, thesis, proceedings, or unpublished-manuscript search was possible.",
+    "negative_inference": "A no-hit in these queries cannot establish novelty, priority, nonexistence, or a complete classification."
+  },
+  "batches": [
+    {
+      "id": "B01",
+      "lane": "exact_target_and_root_projector",
+      "service": "web_search",
+      "queries": [
+        "\"srg(99,14,1,2)\" lattice root projector",
+        "\"Conway 99 graph\" root lattice",
+        "\"231\" \"44\" triangle projector strongly regular graph",
+        "\"n3=708\" Conway graph"
+      ],
+      "disposition": "No root-lattice, rank-44 projector, or n3=708 endpoint theorem appeared. Current Conway-99 work and generic graph/lattice noise appeared."
+    },
+    {
+      "id": "B02",
+      "lane": "roots_and_glue",
+      "service": "web_search",
+      "queries": [
+        "primitive root odd determinant even lattice index two orthogonal complement",
+        "root sublattice primitive closure even lattice glue rootless complement",
+        "root system positive definite integral lattice ADE reflection roots",
+        "indecomposable positive definite integral lattice orthogonal decomposition roots"
+      ],
+      "disposition": "Located standard discriminant/glue and reflective-lattice context. No source classified the frozen partial-root endpoint or its 231-coordinate root-image code."
+    },
+    {
+      "id": "B03",
+      "lane": "rank_44_modularity",
+      "service": "web_search",
+      "queries": [
+        "\"rank 44\" \"21-modular\" lattice",
+        "\"dimension 44\" \"strongly 21-modular\" lattice",
+        "\"level 21\" even lattice \"rank 44\"",
+        "Rains Sloane strongly modular lattices level 21 dimension 44"
+      ],
+      "disposition": "No rank-44 21-modular classification matching the endpoint was found. Returned strongly modular results require similarity or partial-dual hypotheses absent from 21L* subset L."
+    },
+    {
+      "id": "B04",
+      "lane": "modular_lattice_hypotheses",
+      "service": "web_search",
+      "queries": [
+        "Quebbemann \"21-modular\" lattice",
+        "Nebe \"strongly 21-modular\" lattice",
+        "\"21-modular lattices\" mathematics",
+        "\"strongly modular\" 21 lattice theta series"
+      ],
+      "disposition": "Located the standard similarity-based definition, generic level-21 examples, and strongly modular theta/shadow literature. None applies from containment alone or classifies the endpoint determinant rows."
+    },
+    {
+      "id": "B05",
+      "lane": "primitive_idempotents_and_commutants",
+      "service": "web_search",
+      "queries": [
+        "primitive idempotent diagonal commutant association scheme",
+        "strongly regular graph primitive idempotent block diagonal imprimitivity",
+        "signed diagonal matrix commutes primitive idempotent strongly regular graph",
+        "association scheme primitive idempotent coordinate blocks imprimitivity"
+      ],
+      "disposition": "Only general association-scheme and imprimitivity material was found. No source stated the exact diagonal-sign commutant or triangle-sign constancy theorem needed by the endpoint."
+    },
+    {
+      "id": "B06",
+      "lane": "integral_eigenspace_lattices",
+      "service": "web_search",
+      "queries": [
+        "integral eigenspace lattice strongly regular graph primitive idempotent",
+        "Euclidean representation strongly regular graph lattice roots",
+        "graph lattice primitive idempotent integral frame",
+        "triangle graph eigenspace lattice strongly regular"
+      ],
+      "disposition": "Located general Euclidean-representation, clique-complex, and finite-field frame work. No integral rank-44 root/image or Schur endpoint theorem was found."
+    },
+    {
+      "id": "B07",
+      "lane": "current_clique_complex_work",
+      "service": "web_search",
+      "queries": [
+        "site:arxiv.org/abs/2508.05871 \"99\" strongly regular",
+        "\"Clique complexes of strongly regular graphs\" Conway 99",
+        "\"triangle complexes\" \"srg(99,14,1,2)\"",
+        "\"triangle-intersection graph\" \"99\" strongly regular"
+      ],
+      "disposition": "The current clique-complex paper is general and did not expose a target-specific root, lattice, projector, or endpoint result in the inspected metadata and returned text."
+    },
+    {
+      "id": "B08",
+      "lane": "current_target_status",
+      "service": "web_search",
+      "queries": [
+        "2026 \"srg(99,14,1,2)\" existence",
+        "2026 \"Conway 99-graph\" existence open",
+        "2025 \"Conway 99-graph\" strongly regular",
+        "site:homepages.cwi.nl/~aeb/math/srg \"99 14 1 2\""
+      ],
+      "disposition": "Current primary and authoritative records still treated the target as unresolved. A June 2026 seminar notice concerned nonexistence of a different SRG and only proposed a possible analogous approach."
+    },
+    {
+      "id": "B09",
+      "lane": "authoritative_parameter_status",
+      "service": "web_search",
+      "queries": [
+        "Brouwer strongly regular graph table 99 14 1 2 ?",
+        "site:homepages.cwi.nl/~aeb/math/srg/srgtab51-100.html 99 14 1 2",
+        "site:homepages.cwi.nl/~aeb/math/srg \"99\" \"14\" \"1\" \"2\"",
+        "Brouwer van Maldeghem Strongly Regular Graphs 99 14 1 2"
+      ],
+      "disposition": "Located the monograph parameter index and maintained-table context marking (99,14,1,2) unknown. This is current-status evidence, not a proof that no unindexed result exists."
+    },
+    {
+      "id": "B10",
+      "lane": "orthogonal_decomposition_algorithms",
+      "service": "web_search",
+      "queries": [
+        "Plesken Souvignier computing isometries lattice orthogonal decomposition algorithm",
+        "algorithm orthogonal decomposition positive definite integral lattice indecomposable",
+        "canonical decomposition integral lattices orthogonal direct sum algorithm",
+        "classification positive definite lattices fixed rank determinant algorithm Plesken"
+      ],
+      "disposition": "Located algorithms for orthogonal decomposition and lattice isometry, plus classification algorithms in much narrower ranks/settings. These can test a supplied Gram matrix but do not enumerate all frozen rank-44 endpoint forms."
+    },
+    {
+      "id": "B11",
+      "lane": "numeric_root_signatures",
+      "service": "web_search",
+      "queries": [
+        "\"norm 42\" \"231\" lattice root",
+        "\"root image\" \"231\" lattice projector",
+        "\"determinant 1029\" lattice \"rank 44\"",
+        "\"determinant 729\" lattice \"rank 44\" roots"
+      ],
+      "disposition": "No relevant hit. Returned results were unrelated numeric, chemical, biological, or generic lattice material."
+    },
+    {
+      "id": "B12",
+      "lane": "integral_frame_and_schur_signatures",
+      "service": "web_search",
+      "queries": [
+        "\"231 vectors\" \"rank 44\" tight frame lattice",
+        "\"231\" norm-four vectors \"44\" lattice",
+        "\"231 x 44\" integral frame",
+        "\"Schur square\" Gram matrix lattice tight frame roots"
+      ],
+      "disposition": "No exact 231-by-44 integral frame or Schur-square endpoint appeared. Returned results concerned generic frames, codes, and Schur products."
+    },
+    {
+      "id": "B13",
+      "lane": "current_clique_homology_and_target",
+      "service": "web_search",
+      "queries": [
+        "\"On the homology groups of clique complexes of strongly regular graphs\" \"99\"",
+        "arXiv 2606.27328 \"99,14,1,2\"",
+        "\"Conway 99\" clique homology",
+        "\"srg(99,14,1,2)\" homology clique complex"
+      ],
+      "disposition": "No exact target homology or endpoint theorem was found. The current homology preprint studies broad SRG families and does not supply the frozen lattice/root conditions."
+    },
+    {
+      "id": "B14",
+      "lane": "metadata_confirmation",
+      "service": "web_search",
+      "queries": [
+        "arXiv 2605.22867 Connor Phillips Comprehensive Study Clique Graphs Clique Regular Graphs",
+        "\"10.1006/jabr.1996.0155\" Reflective Integral Lattices authors",
+        "\"Incremental Algorithms for Lattice Problems\" Hemkemeier Vallentin publication",
+        "\"On the decomposition of lattices\" Hemkemeier Vallentin"
+      ],
+      "disposition": "Confirmed Phillips's thesis metadata, Blaschke-Scharlau's reflective-lattice article, and Hemkemeier-Vallentin decomposition reports."
+    },
+    {
+      "id": "B15",
+      "lane": "modularity_metadata_confirmation",
+      "service": "web_search",
+      "queries": [
+        "site:link.springer.com \"Additively Indecomposable Positive Definite Integral Lattices\" Wang 2025 DOI",
+        "\"The Shadow Theory of Modular and Unimodular Lattices\" DOI Rains Sloane",
+        "\"Strongly modular lattices with long shadow\" DOI Nebe",
+        "site:math.rwth-aachen.de Nebe Sloane modular lattices definition similarity dual 21"
+      ],
+      "disposition": "Confirmed the similarity-based modular-lattice definition, Rains-Sloane and Nebe metadata, and the scope mismatch of strongly modular results. The first Wang query did not return the desired publisher page and was retried in B16."
+    },
+    {
+      "id": "B16",
+      "lane": "indecomposability_metadata_confirmation",
+      "service": "web_search",
+      "queries": [
+        "\"Additively Indecomposable Positive Definite Integral Lattices\"",
+        "\"s10114-025-2562-6\"",
+        "site:actamath.cjoe.ac.cn \"Additively Indecomposable\" Wang lattices",
+        "\"Positive Definite Integral Lattices\" \"discriminants 2\" \"5\" Wang"
+      ],
+      "disposition": "Confirmed Wang's 2025 article. Its additive indecomposability is stronger/different from orthogonal indecomposability, and its discriminant range 2 through 5 does not cover the frozen endpoint."
+    },
+    {
+      "id": "B17",
+      "lane": "clique_complex_metadata_confirmation",
+      "service": "web_search",
+      "queries": [
+        "\"Clique complexes of strongly regular graphs, their eigenvalues, and cohomology groups\" DOI authors",
+        "site:sciencedirect.com \"Clique complexes of strongly regular graphs\" 730 152 197",
+        "arXiv 2508.05871 authors",
+        "\"On the homology groups of clique complexes of strongly regular graphs\" 2606.27328"
+      ],
+      "disposition": "Confirmed the 2026 journal article and June 2026 homology preprint metadata. Neither inspected record states the frozen target root-image, integral-lattice, or Schur package."
+    }
+  ],
+  "direct_inspection_events": [
+    {
+      "source": "arXiv:2502.17845 and published DOI 10.1016/j.disc.2025.114862",
+      "inspection": "Metadata, abstract, and exact Conway-99 clique-graph spectrum already independently audited in the repository."
+    },
+    {
+      "source": "arXiv:2605.22867",
+      "inspection": "Title, author, submission date, abstract, Conway-99 motivation, and general clique-graph spectral formula."
+    },
+    {
+      "source": "DOI 10.1006/jabr.1996.0155",
+      "inspection": "Publisher metadata and abstract for reflective integral lattices."
+    },
+    {
+      "source": "arXiv:math/0604320 and ECCC TR98-052",
+      "inspection": "Metadata and abstract/scope for incremental and orthogonal-decomposition algorithms."
+    },
+    {
+      "source": "RWTH Nebe-Sloane modular-lattice catalogue",
+      "inspection": "Definition, similarity equations, table scope, and strongly modular level list."
+    },
+    {
+      "source": "DOI 10.5802/jtnb.441 and arXiv:math/0211232",
+      "inspection": "Metadata, abstract, and strongly modular hypotheses."
+    },
+    {
+      "source": "DOI 10.1007/s10114-025-2562-6",
+      "inspection": "Publisher metadata, abstract, terminology, and discriminant scope."
+    },
+    {
+      "source": "arXiv:2508.05871, DOI 10.1016/j.laa.2025.10.013, and arXiv:2606.27328",
+      "inspection": "Metadata and abstracts for current clique-complex and clique-homology work."
+    }
+  ],
+  "failed_or_incomplete_access": [
+    {
+      "resource": "MathSciNet and zbMATH",
+      "result": "No authenticated database connector was available; publisher, arXiv, author, institutional, and maintained-catalogue records were used instead.",
+      "use_as_evidence": false
+    },
+    {
+      "resource": "Search-engine result totals and complete ranked windows",
+      "result": "Not exposed. No total-hit or exhaustive-coverage claim is made.",
+      "use_as_evidence": false
+    },
+    {
+      "resource": "Unpublished talks, private correspondence, and non-indexed manuscripts",
+      "result": "Not comprehensively searchable.",
+      "use_as_evidence": false
+    }
+  ]
+}

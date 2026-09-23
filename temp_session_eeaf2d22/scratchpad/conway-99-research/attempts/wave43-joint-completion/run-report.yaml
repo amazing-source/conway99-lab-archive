@@ -1,0 +1,20 @@
+role: construction
+date_utc: "2026-07-27T15:35:00Z"
+git_commit: "e28f90464d00b98d37672b0b2b23dba15399a6f2"
+claim_label: DERIVED
+scope: "Conditional canonical mask-51739 joint-incidence problem under n3=4158, rank_F3(M)=12, and all edges type 2+2+2: exact no-automorphism compact pairing reduction; no full B or exclusion."
+inputs:
+  - "verification/wave41-allquotient-lifts/independent-results.json sha256=062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b"
+method: "Reconstruct all 45032 Wave 42 legal pair triples; project to three exact perfect matchings; encode exact Gram caps and illegal/legal triple compatibility; independently encode the same problem as a 612-row sparse binary MILP; run bounded solver engines under memory guards."
+command:
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave43-joint-completion\\solve_joint.py --model pairing --variable-seed 0 --describe-only --output attempts\\wave43-joint-completion\\pairing-reduction.json"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest discover -s attempts\\wave43-joint-completion -p \"test_*.py\" -v"
+outputs:
+  - "attempts/wave43-joint-completion/pairing-reduction.json sha256=3adaf3653e2f4e6b43ba59a0b28ff6a877a636bcac543348a3d7901023553b52"
+  - "attempts/wave43-joint-completion/solve-result-pairing-cadical-seed3-c5000000.json sha256=ef21fa60fdbabe1f6139afaff3736485bc9b675119ee4f98da193ba4e0346e30"
+  - "attempts/wave43-joint-completion/solve-result-milp-t600.json sha256=7c55dd27f9ad4840687e22645a8b12a88181a51071e213e48f879be36a95634a"
+limitations:
+  - "The compact reduction is DERIVED pending an independent implementation."
+  - "No full 60-column B or compatible H was constructed or excluded."
+  - "Bounded solver runs and binding crashes are null diagnostics, not evidence."
+  - "No endpoint exclusion, upper-bound improvement, Conway-99 solution, or novelty claim is obtained."

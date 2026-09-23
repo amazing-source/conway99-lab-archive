@@ -1,0 +1,949 @@
+{
+  "aligned_failure_of_obstruction_controls": {
+    "kappa_1": {
+      "A_X_C4": 0,
+      "A_X_components": 1,
+      "A_X_control_source": "verified Wave 36 restricted core",
+      "forced_gram_rank": 34,
+      "wave57_scalar_control": {
+        "C4_X": 0,
+        "a_mult_Y_3": 18,
+        "b_mult_Y_minus4": 8,
+        "graph_realization_claimed": false,
+        "linear_root_counts": {
+          "-1": 4,
+          "-2": 2,
+          "-3": 11,
+          "0": 7,
+          "1": 7,
+          "2": 2
+        },
+        "quadratic_factor": null,
+        "residual_power_sums_p0_to_p4": [
+          33,
+          -30,
+          126,
+          -294,
+          966
+        ],
+        "verified": true
+      }
+    },
+    "kappa_2": {
+      "A_X_control": {
+        "C4_X": 0,
+        "component_sizes": [
+          18,
+          18
+        ],
+        "degree_set": [
+          3
+        ],
+        "edge_list_sha256": "f7d840ce3edec825d39cd03be86b88fcbc836c484d0aedd678af9182e3b1af7f",
+        "maximum_nonedge_codegree": 1,
+        "triangles": 0,
+        "vertices": 36
+      },
+      "wave57_scalar_control": {
+        "C4_X": 0,
+        "a_mult_Y_3": 18,
+        "b_mult_Y_minus4": 9,
+        "graph_realization_claimed": false,
+        "linear_root_counts": {
+          "-1": 4,
+          "-2": 7,
+          "-3": 7,
+          "0": 2,
+          "1": 11,
+          "2": 1
+        },
+        "quadratic_factor": null,
+        "residual_power_sums_p0_to_p4": [
+          32,
+          -26,
+          110,
+          -230,
+          710
+        ],
+        "verified": true
+      }
+    },
+    "kappa_3": {
+      "A_X_control": {
+        "C4_X": 12,
+        "component_sizes": [
+          12,
+          12,
+          12
+        ],
+        "degree_set": [
+          3
+        ],
+        "edge_list_sha256": "35ad33b474e31bb2ff51397926da4cf05888866dfd7926ae8dfd196bcf5d158e",
+        "maximum_nonedge_codegree": 2,
+        "triangles": 0,
+        "vertices": 36
+      },
+      "scalar_control": {
+        "C4_X": 12,
+        "a_mult_Y_3": 18,
+        "b_mult_Y_minus4": 10,
+        "graph_spectrum_claimed": false,
+        "multiplicities": [
+          5,
+          6,
+          8,
+          1,
+          9,
+          2
+        ],
+        "power_sums_0_to_4": [
+          31,
+          -22,
+          94,
+          -166,
+          550
+        ],
+        "roots": [
+          -3,
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    "simultaneous_B_or_A_Y_claimed": false
+  },
+  "claim_label": "DERIVED",
+  "component_structural_reduction": {
+    "component_censuses": {
+      "m4": {
+        "C4_distribution": {
+          "2": 6,
+          "4": 30,
+          "6": 14
+        },
+        "C4_values": [
+          2,
+          4,
+          6
+        ],
+        "accepted_connected_triangle_free_codegree_at_most_2": 50,
+        "canonical_witness_by_C4": {
+          "2": {
+            "cross_12_permutation": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "4": {
+            "cross_12_permutation": [
+              2,
+              3,
+              1,
+              0
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "6": {
+            "cross_12_permutation": [
+              2,
+              3,
+              0,
+              1
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        },
+        "m_per_fibre": 4,
+        "normalization": "fix fibre-0 matching and both cross matchings from fibre 0 by coordinate relabeling only; enumerate both remaining fibre matchings and the cross-12 permutation",
+        "raw_labelled_configurations": 216
+      },
+      "m6": {
+        "C4_distribution": {
+          "0": 288,
+          "1": 576,
+          "2": 3744,
+          "3": 6744,
+          "4": 11520,
+          "5": 7128,
+          "6": 3648,
+          "7": 936,
+          "9": 56
+        },
+        "C4_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9
+        ],
+        "accepted_connected_triangle_free_codegree_at_most_2": 34640,
+        "canonical_witness_by_C4": {
+          "0": {
+            "cross_12_permutation": [
+              3,
+              5,
+              1,
+              4,
+              0,
+              2
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          "1": {
+            "cross_12_permutation": [
+              4,
+              3,
+              5,
+              1,
+              0,
+              2
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          "2": {
+            "cross_12_permutation": [
+              2,
+              3,
+              5,
+              4,
+              0,
+              1
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          "3": {
+            "cross_12_permutation": [
+              3,
+              2,
+              5,
+              4,
+              0,
+              1
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          "4": {
+            "cross_12_permutation": [
+              2,
+              5,
+              0,
+              4,
+              3,
+              1
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          "5": {
+            "cross_12_permutation": [
+              2,
+              3,
+              5,
+              4,
+              0,
+              1
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          "6": {
+            "cross_12_permutation": [
+              2,
+              4,
+              0,
+              5,
+              1,
+              3
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          },
+          "7": {
+            "cross_12_permutation": [
+              2,
+              3,
+              4,
+              5,
+              0,
+              1
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          "9": {
+            "cross_12_permutation": [
+              2,
+              3,
+              4,
+              5,
+              0,
+              1
+            ],
+            "second_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "third_fibre_matching": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          }
+        },
+        "m_per_fibre": 6,
+        "normalization": "fix fibre-0 matching and both cross matchings from fibre 0 by coordinate relabeling only; enumerate both remaining fibre matchings and the cross-12 permutation",
+        "raw_labelled_configurations": 162000
+      }
+    },
+    "kappa1_C4_X_bounds": [
+      0,
+      27
+    ],
+    "kappa2_local_A_X_control": {
+      "C4_X": 0,
+      "component_sizes": [
+        18,
+        18
+      ],
+      "degree_set": [
+        3
+      ],
+      "edge_list_sha256": "f7d840ce3edec825d39cd03be86b88fcbc836c484d0aedd678af9182e3b1af7f",
+      "maximum_nonedge_codegree": 1,
+      "triangles": 0,
+      "vertices": 36
+    },
+    "kappa2_partition_4_plus_8_C4_X_bounds": [
+      2,
+      24
+    ],
+    "kappa2_partition_6_plus_6_C4_X_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18
+    ],
+    "kappa2_union_C4_X_bounds": [
+      0,
+      24
+    ],
+    "kappa3_aligned_scalar_control": {
+      "C4_X": 12,
+      "a_mult_Y_3": 18,
+      "b_mult_Y_minus4": 10,
+      "graph_spectrum_claimed": false,
+      "multiplicities": [
+        5,
+        6,
+        8,
+        1,
+        9,
+        2
+      ],
+      "power_sums_0_to_4": [
+        31,
+        -22,
+        94,
+        -166,
+        550
+      ],
+      "roots": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ]
+    },
+    "kappa3_local_A_X_control": {
+      "C4_X": 12,
+      "component_sizes": [
+        12,
+        12,
+        12
+      ],
+      "degree_set": [
+        3
+      ],
+      "edge_list_sha256": "35ad33b474e31bb2ff51397926da4cf05888866dfd7926ae8dfd196bcf5d158e",
+      "maximum_nonedge_codegree": 2,
+      "triangles": 0,
+      "vertices": 36
+    },
+    "scope": "component-graph and residual-scalar controls are separate; no simultaneous B or A_Y is constructed",
+    "universal_kappa3_C4_X_values": [
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18
+    ],
+    "universal_wedge_bound": {
+      "C4_X_upper_bound": 27,
+      "degree": 3,
+      "four_wedges_per_four_cycle": 4,
+      "maximum_four_cycles_per_wedge": 1,
+      "neighbor_pair_wedges": 108,
+      "reason": "triangle-free neighbor pairs are nonadjacent; mu=2 leaves at most one second common neighbor besides the wedge center",
+      "vertices": 36
+    }
+  },
+  "gram_identities": {
+    "B_B_transpose": "12I-A_X+2J-blockdiag(J12,J12,J12)-A_X^2",
+    "B_B_transpose_entry_cases": {
+      "cross_sector_adjacent": {
+        "meaning": "the adjacent pair's unique common neighbor lies in Y",
+        "rhs": "-1+2-0-0=1"
+      },
+      "cross_sector_nonadjacent": {
+        "meaning": "neither fixed-triangle vertex is common",
+        "rhs": "2-(A_X^2)_{xx'}"
+      },
+      "diagonal": {
+        "meaning": "each X vertex has ten Y neighbors",
+        "rhs": "12+2-1-deg_X=10"
+      },
+      "same_sector_adjacent": {
+        "meaning": "the sector root is the adjacent pair's unique common neighbor",
+        "rhs": "-1+2-1-0=0"
+      },
+      "same_sector_nonadjacent": {
+        "meaning": "one of the two common neighbors is the sector root",
+        "rhs": "1-(A_X^2)_{xx'}"
+      }
+    },
+    "B_transpose_B": "12I-A_Y+2J-A_Y^2",
+    "B_transpose_B_entry_cases": {
+      "adjacent_distinct": {
+        "meaning": "the unique common neighbor minus those already in Y",
+        "rhs": "1-(A_Y^2)_{yz}"
+      },
+      "diagonal": {
+        "meaning": "each Y vertex has six X neighbors",
+        "rhs": "12+2-deg_Y=6"
+      },
+      "nonadjacent_distinct": {
+        "meaning": "the two common neighbors minus those already in Y",
+        "rhs": "2-(A_Y^2)_{yz}"
+      }
+    }
+  },
+  "kernel_and_rank_derivation": {
+    "cubic_spectrum_interval": "[-3,3]",
+    "factor_on_within_sector_zero": "(3I-A_X)(4I+A_X)",
+    "kernel_B_transpose": "two sector-constant sum-zero vectors plus the kappa-1 A_X eigenvalue-3 vectors in the within-sector-zero space",
+    "minus4_cannot_be_A_X_eigenvalue": true,
+    "rows": [
+      {
+        "a_mult_Y_3": 18,
+        "a_plus_b": 26,
+        "b_mult_Y_minus4": 8,
+        "dim_kernel_B": 26,
+        "dim_kernel_B_transpose": 2,
+        "kappa_components": 1,
+        "rank_B": 34,
+        "sector_constant_sum_zero_dimension": 2,
+        "within_sector_zero_A_X_eigenvalue_3_dimension": 0
+      },
+      {
+        "a_mult_Y_3": 18,
+        "a_plus_b": 27,
+        "b_mult_Y_minus4": 9,
+        "dim_kernel_B": 27,
+        "dim_kernel_B_transpose": 3,
+        "kappa_components": 2,
+        "rank_B": 33,
+        "sector_constant_sum_zero_dimension": 2,
+        "within_sector_zero_A_X_eigenvalue_3_dimension": 1
+      },
+      {
+        "a_mult_Y_3": 18,
+        "a_plus_b": 28,
+        "b_mult_Y_minus4": 10,
+        "dim_kernel_B": 28,
+        "dim_kernel_B_transpose": 4,
+        "kappa_components": 3,
+        "rank_B": 32,
+        "sector_constant_sum_zero_dimension": 2,
+        "within_sector_zero_A_X_eigenvalue_3_dimension": 2
+      }
+    ]
+  },
+  "limitations": [
+    "The rank, component, and Y-multiplicity formulas are prior verified Wave 36 results, not Wave 58 novelty.",
+    "The m=4 and m=6 component censuses normalize only by coordinate relabeling, not graph automorphisms.",
+    "The Wave 40 replay is restricted to one canonical rank-11 all-222 quotient.",
+    "The local A_X and scalar residual-spectrum controls are separate and do not construct B or A_Y.",
+    "No component/lift ledger exhausts all endpoint cores or proves nonexistence."
+  ],
+  "resource_guard": {
+    "enforced_during_censuses": true,
+    "minimum_free_physical_memory_percent": 15.0
+  },
+  "result": {
+    "component_specific_C4_X": {
+      "kappa_1": "0..27",
+      "kappa_2": "bounds 0<=C4_X<=24 overall; [6,6] exact values {0,1,...,16,18}; [4,8] bounded 2..24",
+      "kappa_3": "{6,8,10,12,14,16,18}"
+    },
+    "contradiction": false,
+    "conway_99": "UNKNOWN",
+    "endpoint": "UNKNOWN",
+    "kappa2_excluded": false,
+    "kappa3_C4_X_reduction": [
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18
+    ],
+    "kappa3_excluded": false,
+    "surviving_a_b_kappa": [
+      [
+        18,
+        8,
+        1
+      ],
+      [
+        18,
+        9,
+        2
+      ],
+      [
+        18,
+        10,
+        3
+      ]
+    ],
+    "universal_C4_X_upper_bound": 27,
+    "wave57_rows_after": 3,
+    "wave57_rows_before": 18
+  },
+  "role": "proof_b",
+  "schema_version": "wave58-cross-incidence-rank-v1",
+  "scope": "conditional n3=4158 fixed-triangle cross-incidence synthesis; no simultaneous B/A_Y construction",
+  "upstream_novelty_guard": {
+    "rank_and_multiplicity_identities_are_new": false,
+    "source": "STRUCTURE.md Wave 36 one-triangle strengthening and verification/wave36-block-compatibility"
+  },
+  "wave36_independent_replay": {
+    "component_count_values": [
+      1,
+      2,
+      3
+    ],
+    "component_unit_partitions": [
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        12
+      ]
+    ],
+    "mult_Y_3": 18,
+    "mult_Y_minus4": "7+kappa",
+    "rank_B": "35-kappa",
+    "replay_passed": true,
+    "source_claim_label": "VERIFIED"
+  },
+  "wave40_restricted_lift_replay": {
+    "canonical_replay": {
+      "C4_X_distribution": {
+        "10": 3696,
+        "11": 480,
+        "12": 658,
+        "14": 36,
+        "4": 1944,
+        "5": 4320,
+        "6": 7560,
+        "7": 7008,
+        "8": 8172,
+        "9": 3504
+      },
+      "C4_X_range": [
+        4,
+        14
+      ],
+      "component_profile_distribution": {
+        "12+24": 37378
+      },
+      "raw_masks": 262144,
+      "restriction": "one canonical rank-11 all-222 quotient from Wave 40; all 2^18 endpoint-pairing masks; not all endpoint cores",
+      "triangle_free_masks": 37378
+    },
+    "logical_effect": "the canonical restricted all-222/r3=12 lane positively realizes kappa=2 and cannot exclude it; it supplies no universal exclusion of kappa=1 or kappa=3",
+    "normalized_rank_eleven_quotient_count": 8,
+    "source_claim_label": "VERIFIED_SCOPED"
+  },
+  "wave57_row_collapse": {
+    "eliminated_row_count": 15,
+    "input_row_count": 18,
+    "survivor_count": 3,
+    "survivors": [
+      {
+        "a_mult_Y_3": 18,
+        "b_mult_Y_minus4": 8,
+        "kappa_components": 1,
+        "minimum_U_hit_star_set_lambda3": 2,
+        "minimum_U_hit_star_set_lambda_minus4": 2,
+        "residual_degree": 33,
+        "wave57_C4_X_interval": [
+          0,
+          89
+        ]
+      },
+      {
+        "a_mult_Y_3": 18,
+        "b_mult_Y_minus4": 9,
+        "kappa_components": 2,
+        "minimum_U_hit_star_set_lambda3": 3,
+        "minimum_U_hit_star_set_lambda_minus4": 2,
+        "residual_degree": 32,
+        "wave57_C4_X_interval": [
+          0,
+          89
+        ]
+      },
+      {
+        "a_mult_Y_3": 18,
+        "b_mult_Y_minus4": 10,
+        "kappa_components": 3,
+        "minimum_U_hit_star_set_lambda3": 4,
+        "minimum_U_hit_star_set_lambda_minus4": 2,
+        "residual_degree": 31,
+        "wave57_C4_X_interval": [
+          0,
+          89
+        ]
+      }
+    ]
+  }
+}

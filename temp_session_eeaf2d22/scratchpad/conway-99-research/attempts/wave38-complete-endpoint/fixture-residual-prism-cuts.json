@@ -1,0 +1,106 @@
+{
+  "candidate": {
+    "edge_catalog_sha256": "6c1c3b4633fdf846215db51ce1da360ecce167946165d451e2afb1ca5589385a",
+    "edge_count": 9
+  },
+  "claim_label": "CANDIDATE_CUTS",
+  "deduplicated_cut_count": 1,
+  "entries": [
+    {
+      "negative_literals": [
+        -1,
+        -2,
+        -3,
+        -84,
+        -86,
+        -168,
+        -247,
+        -248,
+        -327
+      ],
+      "variable_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "witness": {
+        "matching": [
+          [
+            15,
+            18
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "triangles": [
+          [
+            15,
+            16,
+            17
+          ],
+          [
+            18,
+            19,
+            20
+          ]
+        ],
+        "vertices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    }
+  ],
+  "format": "wave38-prism-cut-catalog-v1",
+  "limitations": [
+    "A zero-prism candidate still requires independent SRG verification.",
+    "Cuts describe one candidate iteration, not a terminal search.",
+    "UNSAT counts only with a retained independently checked proof."
+  ],
+  "prism_witness_count": 1,
+  "scope": "all induced triangular prisms in one decoded 99-vertex candidate",
+  "triangle_count": 2
+}

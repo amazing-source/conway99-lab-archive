@@ -1,0 +1,38 @@
+role: proof_b
+date_utc: 2026-07-29T02:49:53Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint simultaneous-star module theorem:
+  66<=rank_F3(B)<=82, dependency dimension 17..33, and exact dependency
+  radical law.
+inputs:
+  - verification/wave170-block-profile-ternary-code/verification-report.md
+  - verification/wave171-pq-centered-code/verification-report.md
+  - verification/wave175-polar-cap-boundary/audit.md
+  - verification/wave176-star-projector-circuits/audit.md
+  - attempts/wave189-degree7-star-complete/package-manifest.sha256
+method: >-
+  Modular representation decomposition, nondegenerate orthogonal subspace
+  duality, radical dimensions, ternary triangle-line-sum colorings, and
+  deterministic hyperbolic-space controls. No graph, code, configuration,
+  SAT, LP, or isomorphism search.
+command: >-
+  python -B attempts/wave191-global-star-module-proof-b/exact_check.py;
+  python -B -m unittest -v
+  attempts/wave191-global-star-module-proof-b/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave191-global-star-module-proof-b.md
+  - attempts/wave191-global-star-module-proof-b/README.md
+  - attempts/wave191-global-star-module-proof-b/derivation.md
+  - attempts/wave191-global-star-module-proof-b/protocol.md
+  - attempts/wave191-global-star-module-proof-b/exact_check.py
+  - attempts/wave191-global-star-module-proof-b/exact-results.json
+  - attempts/wave191-global-star-module-proof-b/test_exact_check.py
+  - attempts/wave191-global-star-module-proof-b/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - Abstract controls are not incidence matrices or graphs.
+  - The line-sum complete weight enumerator and projector trace tensors are
+    unresolved.
+  - Rank 11, endpoint existence, novelty, and Conway-99 remain UNKNOWN.

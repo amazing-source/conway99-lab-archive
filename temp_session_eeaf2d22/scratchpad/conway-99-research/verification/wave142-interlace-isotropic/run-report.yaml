@@ -1,0 +1,47 @@
+role: verifier
+date_utc: 2026-07-28T09:56:59Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: REFUTED
+scope: >-
+  Independent verification of the sealed Wave142 local t=6 interlace rows,
+  kernel moment, IAS diagonal-toggle census, controls, and bounds; refutation
+  of the target-forced 86-through-91 top complement band because its
+  d(im(A))>=14 premise is not established by the frozen inputs.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: attempts/wave142-interlace-isotropic/package-manifest.sha256
+    sha256: 241cb75308d26942adf6dcdfc3b1c344c3c48fee35df2b9eeb1561fa2b01b443
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  - path: attempts/wave131-binary-lcd-enumerator/exact-results.json
+    sha256: 7d5c32179df697f8ab427d28736f2e1bb91e41f16a0f18f9dc242b7c03091839
+  - path: attempts/wave141-bivariate-graph-code/exact-results.json
+    sha256: 351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e
+method: >-
+  Froze and replayed the nine-entry discovery package and five prerequisites;
+  independently enumerated local graph classes and principal ranks; descended
+  the frozen six-class census; evaluated all 3968 diagonal toggles; checked
+  all 27 K3 IAS transversals; replayed the K3 plus isolate overlap control;
+  constructed a same-B different-interlace general graph pair; and audited
+  every top-band premise against the frozen Wave131 claim labels.
+command: >-
+  python -B attempts/wave142-interlace-isotropic/exact_check.py --verify;
+  python -B -m unittest discover -s
+  attempts/wave142-interlace-isotropic -p "test_*.py" -v; python -B
+  verification/wave142-interlace-isotropic/independent_verify.py; python -B
+  -m unittest discover -s verification/wave142-interlace-isotropic -p
+  "test_*.py" -v
+outputs:
+  - path: verification/wave142-interlace-isotropic/independent_verify.py
+    sha256: 71dd5c59271a24dec31ebd86e726a1f2fec44d36eb71660af737f7db410ea2cf
+  - path: verification/wave142-interlace-isotropic/test_independent_verify.py
+    sha256: 9c8cb2bed432151f71a5f0b5f479282d5c2564fa540db1c46251a6ecdf94cf7b
+  - path: verification/wave142-interlace-isotropic/verification-results.json
+    sha256: 13f491f776b9561bfaafcea6d073411e2ab4ec62a414d82aa221151e93cece6a
+limitations:
+  - Local rows are conditional on the frozen Wave21 induced-subgraph census.
+  - The same-B graph collision is outside the target idempotent/even-row subclass.
+  - No impossibility of every target-specific B-only elimination is proved.
+  - The corrected top band uses only the verified d(im(A))>=8 premise.
+  - No improved n3 bound, graph, Conway-99 resolution, or novelty claim follows.

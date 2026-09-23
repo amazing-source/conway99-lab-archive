@@ -1,0 +1,65 @@
+role: proof_b
+date_utc: 2026-07-27T17:29:17Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: CANDIDATE
+scope: >-
+  Complete squarefree degree-2 F2 polynomial-calculus closure of seven exact
+  276-variable mate-coordinate window subtheories of refined endpoint branch
+  15 after the frozen Wave 42 closure; exact-block-only control and degree
+  barrier census for all active Wave 43 cuts.
+inputs:
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz
+    sha256: 0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e
+  - path: attempts/wave42-endpoint-certificate/branch-15-combined-propagation-certificate.json
+    sha256: ab05feb596c25d0fbb872a0d92978355638218350bdf7606c248ca98ae2469ce
+  - path: attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-delta.opb.gz
+    sha256: 82a13e78e514cf35f27190da665bdedaf4fed28c7a6fa2856e22badf63f32797
+method: >-
+  Work in the squarefree Boolean quotient over F2. For each mate-coordinate
+  pair, retain all 276 primary residual-edge variables among its 24 residual
+  labels; import the complete degree-at-most-two vanishing space of every one
+  of the 48 fully supported exact-count blocks; import each fully supported
+  active clause of residual width at most two; and saturate sparse Gaussian
+  elimination by multiplying every derived linear row by every free window
+  variable. Repeat with exact-count blocks only and compare canonical final
+  linear RREF hashes. Enforce a 20 percent free-physical-memory guard.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave47-branch15-polynomial\degree2_windows.py
+  .\.venv\Scripts\python.exe -B attempts\wave47-branch15-polynomial\degree2_windows.py --verify
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave47-branch15-polynomial -p "test_*.py" -v
+outputs:
+  - path: attempts/wave47-branch15-polynomial/degree2-window-result.json
+    sha256: d4689f7c9e469bf722d7553da700b47d98642c4404c566a0abc5a78149df4a3f
+result:
+  windows: 7
+  free_variables_per_window: 191--252
+  monomial_columns_per_window: 18337--31879
+  macaulay_input_rows_per_window: 8621--14292
+  new_linear_rank_by_window: [2, 1, 2, 2, 2, 2, 2]
+  new_linear_rank_total: 13
+  new_assignments: 0
+  contradictions: 0
+  exact_blocks_only_control_same_linear_space: true
+  wave43_rows_partitioned_by_windows: 34340
+  wave43_rows_all_degree_four: true
+  branch_15: UNKNOWN
+tests:
+  unit_tests: "PASS: 4 tests in 14.482 seconds"
+  exact_replay: >-
+    PASS_EXACT_REPLAY
+    sha256=d4689f7c9e469bf722d7553da700b47d98642c4404c566a0abc5a78149df4a3f
+    windows=7
+  memory_floor: >-
+    PASS: every heavy stage enforced at least 20 percent free physical memory
+limitations:
+  - "This discovery package requires independent clean-room replay."
+  - "The seven calculations are restricted window subtheories, not the full branch."
+  - "Constraints whose complete support leaves a window are omitted."
+  - "Residual clauses above the degree cap are omitted."
+  - "The 13 relations are candidate XOR strengthenings, not verified theorems."
+  - "No contradiction or new variable assignment was derived."
+  - "A null result does not imply satisfiability or graph existence."
+  - "No completed-graph automorphism is assumed."
+  - "Branch 15, the endpoint, the strict upper bound, and Conway-99 remain UNKNOWN."

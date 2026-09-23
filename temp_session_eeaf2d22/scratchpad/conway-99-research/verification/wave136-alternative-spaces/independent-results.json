@@ -1,0 +1,170 @@
+{
+  "additive_gf4": {
+    "allowed_even_nY_states": 2550,
+    "character_matrix": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "forced_odd_nY_zero_states": 2500,
+    "raw_states": 5050,
+    "small_graph_controls": {
+      "exact_transform_evaluations_checked": 300,
+      "graph_count": 75,
+      "graphs_checked_exhaustively_through_order": 4,
+      "isotropic_ordered_pairs_checked": 16932,
+      "orthogonal_candidates_checked": 16932,
+      "triangle_idempotent_axis_control": true
+    },
+    "support_at_most_three_lower_table": [
+      {
+        "count": 99,
+        "input_type": "one_vertex",
+        "nI": 84,
+        "nR": 15,
+        "nY": 0
+      },
+      {
+        "count": 693,
+        "input_type": "edge",
+        "nI": 73,
+        "nR": 24,
+        "nY": 2
+      },
+      {
+        "count": 4158,
+        "input_type": "nonedge",
+        "nI": 73,
+        "nR": 26,
+        "nY": 0
+      },
+      {
+        "count": 70686,
+        "input_type": "independent_c0",
+        "nI": 66,
+        "nR": 33,
+        "nY": 0
+      },
+      {
+        "count": 27720,
+        "input_type": "independent_c1",
+        "nI": 62,
+        "nR": 37,
+        "nY": 0
+      },
+      {
+        "count": 41580,
+        "input_type": "one_edge_c0",
+        "nI": 66,
+        "nR": 31,
+        "nY": 2
+      },
+      {
+        "count": 8316,
+        "input_type": "one_edge_c1",
+        "nI": 62,
+        "nR": 35,
+        "nY": 2
+      },
+      {
+        "count": 8316,
+        "input_type": "induced_path",
+        "nI": 64,
+        "nR": 33,
+        "nY": 2
+      },
+      {
+        "count": 231,
+        "input_type": "triangle",
+        "nI": 60,
+        "nR": 39,
+        "nY": 0
+      }
+    ],
+    "symbol_order": [
+      "I=00",
+      "X=10",
+      "Z=01",
+      "Y=11"
+    ],
+    "symmetrized_transform_I_Y_R": [
+      "u+v+2w",
+      "u+v-2w",
+      "u-v"
+    ],
+    "wave134_order_I_R_Y_transform": [
+      "x+2y+z",
+      "x-z",
+      "x-2y+z"
+    ]
+  },
+  "audit_outcome": {
+    "arf_witness_refutation": "VERIFIED",
+    "external_novelty": "UNKNOWN",
+    "formal_independence_from_all_wave134_constraints": "UNKNOWN_NOT_PROVED",
+    "graph_state_self_duality": "VERIFIED",
+    "ordinary_macwilliams_fixes_ratio_not_magnitude": "VERIFIED",
+    "support_at_most_three_graph_forced_coefficients": "VERIFIED",
+    "symmetrized_state_counts_and_zero_rows": "VERIFIED",
+    "transform_equivalence_to_wave134_after_permutation": "VERIFIED"
+  },
+  "binary_arf": {
+    "ambient_even_gauss_sum": "-562949953421312",
+    "checks": {
+      "all_100_forward_macwilliams_rows": true,
+      "all_100_inverse_macwilliams_rows": true,
+      "ambient_even_gauss_sum": true,
+      "both_arf_branches_have_correct_product": true,
+      "formal_witness_fails_arf_magnitude": true,
+      "ordinary_macwilliams_ratio": true
+    },
+    "forced_branches": [
+      {
+        "G_E": "-4194304",
+        "G_R": "134217728"
+      },
+      {
+        "G_E": "4194304",
+        "G_R": "-134217728"
+      }
+    ],
+    "forward_failure_weights": [],
+    "inverse_failure_weights": [],
+    "witness_G_E": "-7717654218690058855789679355654298504972000/452929323301482718880047428141",
+    "witness_G_R": "246964934998081883385269739380937552159104000/452929323301482718880047428141",
+    "witness_abs_G_R_over_2pow27": "241176694334064339243427479864196828280375/59366352263771942929045576501297152"
+  },
+  "claim_label": "VERIFIED",
+  "format": "wave136-independent-alternative-space-verification-v1",
+  "inputs": {
+    "attempts/wave131-binary-lcd-enumerator/rational-witness.json": "5e01ddb62d379464470d4ef9797cd6b83f51a9704dc2d94c8c1fa080e87657dc"
+  },
+  "scope": "Exact Arf/Gauss witness diagnostic and exact additive-GF(4) graph-state identities and support-at-most-three coefficient lower bounds, conditional on the frozen Conway adjacency facts.",
+  "status_wall": {
+    "additive_gf4_code_realization": "NOT_CONSTRUCTED_OR_EXCLUDED",
+    "adjacency_matrix": "NOT_CONSTRUCTED_OR_EXCLUDED",
+    "conway_99": "UNKNOWN",
+    "formal_graph_state_enumerator": "NOT_SOLVED"
+  }
+}

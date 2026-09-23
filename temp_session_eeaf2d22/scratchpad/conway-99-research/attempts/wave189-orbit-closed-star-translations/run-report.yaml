@@ -1,0 +1,54 @@
+role: proof_a
+date_utc: 2026-07-29T02:22:37Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free rank-11 endpoint: orbit closure of private-label
+  star-translation circuit extractions, the exact bound Q>=4851, complete
+  equality-face analysis, and a local weight-seven relation excluding
+  equality to give Q>=4852 and the circuit-specific consequence
+  B4+...+B9>=11090.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave176-star-projector-circuits/package-manifest.sha256: 2c2b2964d47e235bc1dc3faaf6f6cb870aed9a7595f61d41e8babbd863622c39
+  verification/wave179-global-transversal-circuits/package-manifest.sha256: 0f8dca5c3230861f22f15d7df74d6716623890de2080c5fa5dea29469ce4124c
+  verification/wave180-capacity3-companion/package-manifest.sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  verification/wave181-c4-conic-equality/package-manifest.sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  verification/wave186-star-translation-cover-verifier/package-manifest.sha256: edb833cbed8706f164199d4ecab8ff26757c54dfc46915819e150e17d73fef76
+  verification/wave188-affine-star-word-amplification-verifier/package-manifest.sha256: e58bd132b1e1579f5e4e6570d7e0b4318a6c5f970342d4b9493e0c35a3c0dc74
+method: >-
+  Inclusion-minimal cover and private labels, a self-contained ternary
+  sign-majority singleton translation, separation of selected triple
+  companions from extraction circuits, closure under the exact-three
+  companion involution, endpoint-center classification of the two type-two
+  translations, exact coefficient linear combination, equality design
+  analysis, and subtraction of the canonical checkerboard relation from a
+  containing leaf-translate relation. No graph, cover, code, SAT,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave189-orbit-closed-star-translations\exact_check.py --verify
+  attempts\wave189-orbit-closed-star-translations\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave189-orbit-closed-star-translations\test_exact_check.py
+outputs:
+  - attempts/wave189-orbit-closed-star-translations/derivation.md
+  - attempts/wave189-orbit-closed-star-translations/protocol.md
+  - attempts/wave189-orbit-closed-star-translations/exact_check.py
+  - attempts/wave189-orbit-closed-star-translations/exact-results.json
+  - attempts/wave189-orbit-closed-star-translations/test_exact_check.py
+  - attempts/wave189-orbit-closed-star-translations/test-results.txt
+  - attempts/wave189-orbit-closed-star-translations/README.md
+  - attempts/wave189-orbit-closed-star-translations/run-report.yaml
+  - attempts/wave189-orbit-closed-star-translations/input-freeze.sha256
+  - attempts/wave189-orbit-closed-star-translations/package-manifest.sha256
+limitations:
+  - Independent verification is required before promotion.
+  - All conclusions are conditional on the prism-free rank-11 endpoint.
+  - The scalar replay checks displayed arithmetic and local F3 vectors; it
+    is not a graph or cover existence checker.
+  - The rational uniform equality-design row is a null control, not
+    evidence of integral feasibility.
+  - Wave188 remains the stronger numerical bound on all short dual words.
+  - No rank-11 exclusion, endpoint exclusion, graph construction, strict
+    n3 improvement, external novelty claim, or Conway-99 resolution follows.

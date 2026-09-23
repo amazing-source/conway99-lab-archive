@@ -1,0 +1,745 @@
+{
+  "determinant_consequences": {
+    "audited_cap_45_endpoint_rows": [
+      {
+        "det_B": 5,
+        "det_Q": 5,
+        "h": 1
+      },
+      {
+        "det_B": 9,
+        "det_Q": 9,
+        "h": 1
+      },
+      {
+        "det_B": 13,
+        "det_Q": 13,
+        "h": 1
+      },
+      {
+        "det_B": 17,
+        "det_Q": 17,
+        "h": 1
+      },
+      {
+        "det_B": 21,
+        "det_Q": 21,
+        "h": 1
+      },
+      {
+        "det_B": 25,
+        "det_Q": 25,
+        "h": 1
+      },
+      {
+        "det_B": 29,
+        "det_Q": 29,
+        "h": 1
+      },
+      {
+        "det_B": 33,
+        "det_Q": 33,
+        "h": 1
+      },
+      {
+        "det_B": 37,
+        "det_Q": 37,
+        "h": 1
+      },
+      {
+        "det_B": 41,
+        "det_Q": 41,
+        "h": 1
+      },
+      {
+        "det_B": 45,
+        "det_Q": 45,
+        "h": 1
+      },
+      {
+        "det_B": 45,
+        "det_Q": 5,
+        "h": 9
+      }
+    ],
+    "det_B_positive_integer_mod_4": 1,
+    "integer_candidates_after_det_Q_ge_5": [
+      5,
+      9
+    ],
+    "new_cap_12_endpoint_rows": [
+      {
+        "det_B": 5,
+        "det_Q": 5,
+        "h": 1
+      },
+      {
+        "det_B": 9,
+        "det_Q": 9,
+        "h": 1
+      }
+    ],
+    "strict_upper_bound": 13
+  },
+  "endpoint_conclusion": {
+    "conditional_induced_C6_lower_bound": 209994,
+    "conditional_lower_bound_n3": 708,
+    "n3_equals_705": "REFUTED_PENDING_INDEPENDENT_VERIFICATION",
+    "novelty": "UNKNOWN",
+    "target_existence": "UNKNOWN"
+  },
+  "h_equals_one_obstruction": {
+    "coordinate_consequence": "21G^{-1} is unimodular integral",
+    "even_unimodular_positive_definite_possible": false,
+    "h_equals_1_excluded": true,
+    "inverse_consequence": "G/21 is unimodular integral",
+    "parity_consequence": "G/21 is even because G is even and 21 is odd",
+    "premise": "L=21L*",
+    "rank": 44,
+    "signature_mod_8": 4
+  },
+  "modular_reductions": {
+    "F3": {
+      "exact_identity": "NM=3(3I-A)N+J, hence NM=J mod 3",
+      "limitation": "this does not determine rank(M mod 3)"
+    },
+    "F7": {
+      "limitation": "S^2=0 mod 7 alone does not fix rank(S mod 7)",
+      "rank_M_equals_rank_Seidel_mod_7": true,
+      "rank_N": 99,
+      "reason": "rank(A mod 7)=98 with kernel <1>, but N^T1=3*1 !=0",
+      "seidel_identity": {
+        "R2_equals_7R": true,
+        "R_coefficients_I_A_J": [
+          "3",
+          "-1",
+          "1/9"
+        ],
+        "S2_coefficients_I_A_J": [
+          "49",
+          "0",
+          "49"
+        ],
+        "S_coefficients_I_A_J": [
+          "1",
+          "2",
+          "-1"
+        ],
+        "five_R_equals_S_mod_7": true
+      }
+    }
+  },
+  "near_identity_moment": {
+    "minimum_positive_trace_C2": 2,
+    "minimum_trace_B2": 60,
+    "rank": 44,
+    "trace_B": 48,
+    "trace_C": 2,
+    "trace_C2_mod_2": 0
+  },
+  "scope": "conditional exclusion of the n3=705 endpoint",
+  "smith_index_relations": {
+    "endpoint_rank_pairs_before_new_exclusion": {
+      "h=1": [
+        44,
+        44
+      ],
+      "h=9": [
+        42,
+        44
+      ]
+    },
+    "h_equals_Delta_44_M": true,
+    "h_formula": "3^(44-rank_F3(M))*7^(44-rank_F7(M))",
+    "nonzero_smith_factors": [
+      1,
+      3,
+      7,
+      21
+    ]
+  },
+  "status": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "two_moment_product_certificate": {
+    "all_exact_rational_upper_bounds_lt_13": true,
+    "cases": [
+      {
+        "certificate_sha256": "ed3319e90d50af81d489725d98906ef0b159d7377d32945ac7edcfbda9f277d0",
+        "high_multiplicity": 1,
+        "high_radicand": "903/121",
+        "high_sqrt_floor_at_scale_1e12": 2731814400239,
+        "high_upper_decimal": "3.822723491149",
+        "low_radicand": "21/5203",
+        "low_sqrt_floor_at_scale_1e12": 63530567447,
+        "low_upper_decimal": "1.027378523462",
+        "positive_margin_denominator_digits": 572,
+        "positive_margin_numerator_digits": 572,
+        "product_upper_decimal": "12.211911548904",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "3818bdae374d3d202e0fc66487b57e59b1ee0d35efcdf02e4b6259753bf8cfc4",
+        "high_multiplicity": 2,
+        "high_radicand": "441/121",
+        "high_sqrt_floor_at_scale_1e12": 1909090909090,
+        "high_upper_decimal": "3.000000000000",
+        "low_radicand": "1/121",
+        "low_sqrt_floor_at_scale_1e12": 90909090909,
+        "low_upper_decimal": "1.000000000000",
+        "positive_margin_denominator_digits": 574,
+        "positive_margin_numerator_digits": 575,
+        "product_upper_decimal": "9.000000000034",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "b94df474e9ff9c69923073c925db8e31a67b148ca93404301738248777c9181b",
+        "high_multiplicity": 3,
+        "high_radicand": "287/121",
+        "high_sqrt_floor_at_scale_1e12": 1540097667827,
+        "high_upper_decimal": "2.631006758737",
+        "low_radicand": "63/4961",
+        "low_sqrt_floor_at_scale_1e12": 112690073255,
+        "low_upper_decimal": "0.978219017654",
+        "positive_margin_denominator_digits": 544,
+        "positive_margin_numerator_digits": 545,
+        "product_upper_decimal": "7.383224296392",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "666f8c2f06484bd9b3bbc6bfe113e000e9eacd74ab24cc253a3f5058a8faddfd",
+        "high_multiplicity": 4,
+        "high_radicand": "210/121",
+        "high_sqrt_floor_at_scale_1e12": 1317397886017,
+        "high_upper_decimal": "2.408306976927",
+        "low_radicand": "21/1210",
+        "low_sqrt_floor_at_scale_1e12": 131739788601,
+        "low_upper_decimal": "0.959169302308",
+        "positive_margin_denominator_digits": 573,
+        "positive_margin_numerator_digits": 574,
+        "product_upper_decimal": "6.348311278995",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "3bee131c66d69ef25c6697653a0273292d5da384c5132f20555af292b5760eb3",
+        "high_multiplicity": 5,
+        "high_radicand": "819/605",
+        "high_sqrt_floor_at_scale_1e12": 1163494309510,
+        "high_upper_decimal": "2.254403400420",
+        "low_radicand": "35/1573",
+        "low_sqrt_floor_at_scale_1e12": 149165937116,
+        "low_upper_decimal": "0.941743153793",
+        "positive_margin_denominator_digits": 551,
+        "positive_margin_numerator_digits": 552,
+        "product_upper_decimal": "5.604340969618",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "9aa99fdd97c3b9a115441fe08e11700408e59e997440cd73de873295c0310ec6",
+        "high_multiplicity": 6,
+        "high_radicand": "133/121",
+        "high_sqrt_floor_at_scale_1e12": 1048414781333,
+        "high_upper_decimal": "2.139323872243",
+        "low_radicand": "63/2299",
+        "low_sqrt_floor_at_scale_1e12": 165539176000,
+        "low_upper_decimal": "0.925369914909",
+        "positive_margin_denominator_digits": 424,
+        "positive_margin_numerator_digits": 425,
+        "product_upper_decimal": "5.030874772896",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "a831695d1b477eefce41d952849a6fddf454589502b74b7b4e8f8abbd5daff99",
+        "high_multiplicity": 7,
+        "high_radicand": "111/121",
+        "high_sqrt_floor_at_scale_1e12": 957786704804,
+        "high_upper_decimal": "2.048695795714",
+        "low_radicand": "147/4477",
+        "low_sqrt_floor_at_scale_1e12": 181202890098,
+        "low_upper_decimal": "0.909706200811",
+        "positive_margin_denominator_digits": 558,
+        "positive_margin_numerator_digits": 559,
+        "product_upper_decimal": "4.567568488125",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "58133ba897024e9a04ffc42f6e9a1ad7352c2ccbf6f6b801446e56984c29cf1e",
+        "high_multiplicity": 8,
+        "high_radicand": "189/242",
+        "high_sqrt_floor_at_scale_1e12": 883737367964,
+        "high_upper_decimal": "1.974646458874",
+        "low_radicand": "14/363",
+        "low_sqrt_floor_at_scale_1e12": 196386081769,
+        "low_upper_decimal": "0.894523009140",
+        "positive_margin_denominator_digits": 569,
+        "positive_margin_numerator_digits": 570,
+        "product_upper_decimal": "4.180318621394",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "5a44cee099c17733dde0fb81c20c5d72b11e24faa56430f4be992fa9c1bdfb9e",
+        "high_multiplicity": 9,
+        "high_radicand": "245/363",
+        "high_sqrt_floor_at_scale_1e12": 821541921922,
+        "high_upper_decimal": "1.912451012832",
+        "low_radicand": "27/605",
+        "low_sqrt_floor_at_scale_1e12": 211253637065,
+        "low_upper_decimal": "0.879655453844",
+        "positive_margin_denominator_digits": 550,
+        "positive_margin_numerator_digits": 551,
+        "product_upper_decimal": "3.848166584880",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "94cb2bedcee2aff6ff5b1a45ab4e0f822c72b0bd954dc7f341c38fdfb246d20a",
+        "high_multiplicity": 10,
+        "high_radicand": "357/605",
+        "high_sqrt_floor_at_scale_1e12": 768168369973,
+        "high_upper_decimal": "1.859077460883",
+        "low_radicand": "105/2057",
+        "low_sqrt_floor_at_scale_1e12": 225931873521,
+        "low_upper_decimal": "0.864977217388",
+        "positive_margin_denominator_digits": 571,
+        "positive_margin_numerator_digits": 572,
+        "product_upper_decimal": "3.557407310908",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "f5e31cdd0e8068cef1fdf959c06dc7ccc4c7d2448a7853d64b2cddcd215e8c09",
+        "high_multiplicity": 11,
+        "high_radicand": "63/121",
+        "high_sqrt_floor_at_scale_1e12": 721568539381,
+        "high_upper_decimal": "1.812477630291",
+        "low_radicand": "7/121",
+        "low_sqrt_floor_at_scale_1e12": 240522846460,
+        "low_upper_decimal": "0.850386244449",
+        "positive_margin_denominator_digits": 528,
+        "positive_margin_numerator_digits": 529,
+        "product_upper_decimal": "3.298638200313",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "6c379c60bb76c406e33450ec5eaf96ca068f8fe69bbca2307bf502ceeaa116f1",
+        "high_multiplicity": 12,
+        "high_radicand": "56/121",
+        "high_sqrt_floor_at_scale_1e12": 680301343049,
+        "high_upper_decimal": "1.771210433959",
+        "low_radicand": "63/968",
+        "low_sqrt_floor_at_scale_1e12": 255113003643,
+        "low_upper_decimal": "0.835796087266",
+        "positive_margin_denominator_digits": 554,
+        "positive_margin_numerator_digits": 555,
+        "product_upper_decimal": "3.065156269807",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "1e790a1fa372b7c54a00420197508c3f7c30a57825061d753849db7aad2121d8",
+        "high_multiplicity": 13,
+        "high_radicand": "651/1573",
+        "high_sqrt_floor_at_scale_1e12": 643318636761,
+        "high_upper_decimal": "1.734227727671",
+        "low_radicand": "273/3751",
+        "low_sqrt_floor_at_scale_1e12": 269778783157,
+        "low_upper_decimal": "0.821130307752",
+        "positive_margin_denominator_digits": 570,
+        "positive_margin_numerator_digits": 571,
+        "product_upper_decimal": "2.852030594668",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "0864235a0d1baa3baf991bbf2c2d4d11cd2fac1fc5a8ca0106874c1cf12ca310",
+        "high_multiplicity": 14,
+        "high_radicand": "45/121",
+        "high_sqrt_floor_at_scale_1e12": 609836721136,
+        "high_upper_decimal": "1.700745812046",
+        "low_radicand": "49/605",
+        "low_sqrt_floor_at_scale_1e12": 284590469863,
+        "low_upper_decimal": "0.806318621046",
+        "positive_margin_denominator_digits": 574,
+        "positive_margin_numerator_digits": 575,
+        "product_upper_decimal": "2.655537429772",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "e1dd90439f776636ed398ba3300bdc2e310d2b544c0fd5a0cfa19ce0912e8862",
+        "high_multiplicity": 15,
+        "high_radicand": "203/605",
+        "high_sqrt_floor_at_scale_1e12": 579255720802,
+        "high_upper_decimal": "1.670164811712",
+        "low_radicand": "315/3509",
+        "low_sqrt_floor_at_scale_1e12": 299615028001,
+        "low_upper_decimal": "0.791294062908",
+        "positive_margin_denominator_digits": 574,
+        "positive_margin_numerator_digits": 575,
+        "product_upper_decimal": "2.472801471278",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "8e4d739a4a1f85ed77c9400f0c2e57ee52f7ea3618cc9f69a6c93e291c632a0e",
+        "high_multiplicity": 16,
+        "high_radicand": "147/484",
+        "high_sqrt_floor_at_scale_1e12": 551107075135,
+        "high_upper_decimal": "1.642016166045",
+        "low_radicand": "12/121",
+        "low_sqrt_floor_at_scale_1e12": 314918328648,
+        "low_upper_decimal": "0.775990762261",
+        "positive_margin_denominator_digits": 520,
+        "positive_margin_numerator_digits": 521,
+        "product_upper_decimal": "2.301559950281",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "3d60457ca3d1375dcd51429740b680fb35bb469031fa8ba564f2dcea3f767291",
+        "high_multiplicity": 17,
+        "high_radicand": "567/2057",
+        "high_sqrt_floor_at_scale_1e12": 525018230116,
+        "high_upper_decimal": "1.615927321026",
+        "low_radicand": "119/1089",
+        "low_sqrt_floor_at_scale_1e12": 330567033776,
+        "low_upper_decimal": "0.760342057133",
+        "positive_margin_denominator_digits": 542,
+        "positive_margin_numerator_digits": 543,
+        "product_upper_decimal": "2.140002929614",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "e9b38cc57598833316b1b8c723f380b41abfd9abeb4480d02ece8e57d5609831",
+        "high_multiplicity": 18,
+        "high_radicand": "91/363",
+        "high_sqrt_floor_at_scale_1e12": 500688231571,
+        "high_upper_decimal": "1.591597322481",
+        "low_radicand": "189/1573",
+        "low_sqrt_floor_at_scale_1e12": 346630314164,
+        "low_upper_decimal": "0.744278776745",
+        "positive_margin_denominator_digits": 548,
+        "positive_margin_numerator_digits": 549,
+        "product_upper_decimal": "1.986662582550",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "7f1007500d8079c5b13624c5f9c6839f3a44584958f2a050f74bcdf1b83ceb37",
+        "high_multiplicity": 19,
+        "high_radicand": "525/2299",
+        "high_sqrt_floor_at_scale_1e12": 477870439125,
+        "high_upper_decimal": "1.568779530035",
+        "low_radicand": "399/3025",
+        "low_sqrt_floor_at_scale_1e12": 363181533735,
+        "low_upper_decimal": "0.727727557174",
+        "positive_margin_denominator_digits": 551,
+        "positive_margin_numerator_digits": 552,
+        "product_upper_decimal": "1.840334996401",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "4f073f716fd5e529af84877788d3c4c939a64e73ebf04379601341885a589afd",
+        "high_multiplicity": 20,
+        "high_radicand": "126/605",
+        "high_sqrt_floor_at_scale_1e12": 456360014473,
+        "high_upper_decimal": "1.547269105383",
+        "low_radicand": "35/242",
+        "low_sqrt_floor_at_scale_1e12": 380300012060,
+        "low_upper_decimal": "0.710609078849",
+        "positive_margin_denominator_digits": 537,
+        "positive_margin_numerator_digits": 538,
+        "product_upper_decimal": "1.700024275305",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "2d636e30bba5e195a70facc54e1378f5197a2cb5ae9fd94258670685547fe139",
+        "high_multiplicity": 21,
+        "high_radicand": "23/121",
+        "high_sqrt_floor_at_scale_1e12": 435984683937,
+        "high_upper_decimal": "1.526893774847",
+        "low_radicand": "441/2783",
+        "low_sqrt_floor_at_scale_1e12": 398072972290,
+        "low_upper_decimal": "0.692836118619",
+        "positive_margin_denominator_digits": 545,
+        "positive_margin_numerator_digits": 546,
+        "product_upper_decimal": "1.564902466620",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "63b1bb55c2f4c4f0e7ff6043345199c4a4c26579659a139fd1f19f4ed41bb60e",
+        "high_multiplicity": 22,
+        "high_radicand": "21/121",
+        "high_sqrt_floor_at_scale_1e12": 416597790450,
+        "high_upper_decimal": "1.507506881360",
+        "low_radicand": "21/121",
+        "low_sqrt_floor_at_scale_1e12": 416597790450,
+        "low_upper_decimal": "0.674311300459",
+        "positive_margin_denominator_digits": 537,
+        "positive_margin_numerator_digits": 538,
+        "product_upper_decimal": "1.434281196121",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "d39d21f5a71ffa1d189bf5e4242bbbeffa74a21802f884ecb8cc736a7958a78a",
+        "high_multiplicity": 23,
+        "high_radicand": "441/2783",
+        "high_sqrt_floor_at_scale_1e12": 398072972290,
+        "high_upper_decimal": "1.488982063200",
+        "low_radicand": "23/121",
+        "low_sqrt_floor_at_scale_1e12": 435984683937,
+        "low_upper_decimal": "0.654924406972",
+        "positive_margin_denominator_digits": 574,
+        "positive_margin_numerator_digits": 575,
+        "product_upper_decimal": "1.307592457094",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "61d819aa1225969651b14b7ac2faf81838b2ce7dd9cc81923dac25e6eca7321f",
+        "high_multiplicity": 24,
+        "high_radicand": "35/242",
+        "high_sqrt_floor_at_scale_1e12": 380300012060,
+        "high_upper_decimal": "1.471209102970",
+        "low_radicand": "126/605",
+        "low_sqrt_floor_at_scale_1e12": 456360014473,
+        "low_upper_decimal": "0.634549076436",
+        "positive_margin_denominator_digits": 574,
+        "positive_margin_numerator_digits": 575,
+        "product_upper_decimal": "1.184377118308",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "2e939ebb6d1d384feca5b3a75ca93c7f175556bbc5d25f29f3c0b65bac17791e",
+        "high_multiplicity": 25,
+        "high_radicand": "399/3025",
+        "high_sqrt_floor_at_scale_1e12": 363181533735,
+        "high_upper_decimal": "1.454090624645",
+        "low_radicand": "525/2299",
+        "low_sqrt_floor_at_scale_1e12": 477870439125,
+        "low_upper_decimal": "0.613038651784",
+        "positive_margin_denominator_digits": 512,
+        "positive_margin_numerator_digits": 513,
+        "product_upper_decimal": "1.064280607648",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "ae3bacc1047e603e066a2dea96d27f76cfbc5546fd00abc5c91b6940a0ab95bf",
+        "high_multiplicity": 26,
+        "high_radicand": "189/1573",
+        "high_sqrt_floor_at_scale_1e12": 346630314164,
+        "high_upper_decimal": "1.437539405074",
+        "low_radicand": "91/363",
+        "low_sqrt_floor_at_scale_1e12": 500688231571,
+        "low_upper_decimal": "0.590220859338",
+        "positive_margin_denominator_digits": 556,
+        "positive_margin_numerator_digits": 557,
+        "product_upper_decimal": "0.947056057417",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "316f7a7b4a1fdeac18fbef40e4911a59d37685546bb25a9ccb8c2eda153cf503",
+        "high_multiplicity": 27,
+        "high_radicand": "119/1089",
+        "high_sqrt_floor_at_scale_1e12": 330567033776,
+        "high_upper_decimal": "1.421476124686",
+        "low_radicand": "567/2057",
+        "low_sqrt_floor_at_scale_1e12": 525018230116,
+        "low_upper_decimal": "0.565890860793",
+        "positive_margin_denominator_digits": 564,
+        "positive_margin_numerator_digits": 565,
+        "product_upper_decimal": "0.832576102317",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "3d31e365e1171be6827056787cd7c5635283fa9aa88a593ac37fb6d91ae881e7",
+        "high_multiplicity": 28,
+        "high_radicand": "12/121",
+        "high_sqrt_floor_at_scale_1e12": 314918328648,
+        "high_upper_decimal": "1.405827419558",
+        "low_radicand": "147/484",
+        "low_sqrt_floor_at_scale_1e12": 551107075135,
+        "low_upper_decimal": "0.539802015774",
+        "positive_margin_denominator_digits": 563,
+        "positive_margin_numerator_digits": 564,
+        "product_upper_decimal": "0.720855641814",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "b16ff268ec64a785910cf737a570eb270b4860d858184f18338cc1a1c7fd25ed",
+        "high_multiplicity": 29,
+        "high_radicand": "315/3509",
+        "high_sqrt_floor_at_scale_1e12": 299615028001,
+        "high_upper_decimal": "1.390524118911",
+        "low_radicand": "203/605",
+        "low_sqrt_floor_at_scale_1e12": 579255720802,
+        "low_upper_decimal": "0.511653370107",
+        "positive_margin_denominator_digits": 561,
+        "positive_margin_numerator_digits": 562,
+        "product_upper_decimal": "0.612089380933",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "f32152941bf1ba70532f32be1d3e8dd89844a0bccf9bd64022ddedf9bd9173d0",
+        "high_multiplicity": 30,
+        "high_radicand": "49/605",
+        "high_sqrt_floor_at_scale_1e12": 284590469863,
+        "high_upper_decimal": "1.375499560773",
+        "low_radicand": "45/121",
+        "low_sqrt_floor_at_scale_1e12": 609836721136,
+        "low_upper_decimal": "0.481072369773",
+        "positive_margin_denominator_digits": 530,
+        "positive_margin_numerator_digits": 531,
+        "product_upper_decimal": "0.506710003538",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "19b94cca3878743a3eba0ddca090bb2242ce172d07381625e3e2deb4081e452b",
+        "high_multiplicity": 31,
+        "high_radicand": "273/3751",
+        "high_sqrt_floor_at_scale_1e12": 269778783157,
+        "high_upper_decimal": "1.360687874067",
+        "low_radicand": "651/1573",
+        "low_sqrt_floor_at_scale_1e12": 643318636761,
+        "low_upper_decimal": "0.447590454148",
+        "positive_margin_denominator_digits": 565,
+        "positive_margin_numerator_digits": 566,
+        "product_upper_decimal": "0.405475440564",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "814c12cec3ba006949dcb359181344b377ee54d24321461c3295455d524a0014",
+        "high_multiplicity": 32,
+        "high_radicand": "63/968",
+        "high_sqrt_floor_at_scale_1e12": 255113003643,
+        "high_upper_decimal": "1.346022094553",
+        "low_radicand": "56/121",
+        "low_sqrt_floor_at_scale_1e12": 680301343049,
+        "low_upper_decimal": "0.410607747860",
+        "positive_margin_denominator_digits": 555,
+        "positive_margin_numerator_digits": 556,
+        "product_upper_decimal": "0.309596269826",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "b3fb1bdd0564406b2c9a8c06c766d09acaaeac69b5c546c05349b8ae3a701f9f",
+        "high_multiplicity": 33,
+        "high_radicand": "7/121",
+        "high_sqrt_floor_at_scale_1e12": 240522846460,
+        "high_upper_decimal": "1.331431937370",
+        "low_radicand": "63/121",
+        "low_sqrt_floor_at_scale_1e12": 721568539381,
+        "low_upper_decimal": "0.369340551528",
+        "positive_margin_denominator_digits": 574,
+        "positive_margin_numerator_digits": 575,
+        "product_upper_decimal": "0.220913850717",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "d6adf0f965fa0ec311cc6a2e5b5350fc46739b6da6cec78e1eb4109184dcbe6c",
+        "high_multiplicity": 34,
+        "high_radicand": "105/2057",
+        "high_sqrt_floor_at_scale_1e12": 225931873521,
+        "high_upper_decimal": "1.316840964431",
+        "low_radicand": "357/605",
+        "low_sqrt_floor_at_scale_1e12": 768168369973,
+        "low_upper_decimal": "0.322740720936",
+        "positive_margin_denominator_digits": 564,
+        "positive_margin_numerator_digits": 565,
+        "product_upper_decimal": "0.142125107203",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "65f9049d7366c2ca3051b2146ce5a8c443ebeab3764e0e68ed83c7b0ec08ee75",
+        "high_multiplicity": 35,
+        "high_radicand": "27/605",
+        "high_sqrt_floor_at_scale_1e12": 211253637065,
+        "high_upper_decimal": "1.302162727975",
+        "low_radicand": "245/363",
+        "low_sqrt_floor_at_scale_1e12": 821541921922,
+        "low_upper_decimal": "0.269367168987",
+        "positive_margin_denominator_digits": 561,
+        "positive_margin_numerator_digits": 562,
+        "product_upper_decimal": "0.076981446614",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "ce8d889feec89b9f3901e127d457a6ca231c75d35a6537e2f34bf15b179bb64e",
+        "high_multiplicity": 36,
+        "high_radicand": "14/363",
+        "high_sqrt_floor_at_scale_1e12": 196386081769,
+        "high_upper_decimal": "1.287295172679",
+        "low_radicand": "189/242",
+        "low_sqrt_floor_at_scale_1e12": 883737367964,
+        "low_upper_decimal": "0.207171722945",
+        "positive_margin_denominator_digits": 534,
+        "positive_margin_numerator_digits": 535,
+        "product_upper_decimal": "0.030134007141",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "9aa8e5e7d51e205534955ded72724215c5ddc7bb65dc696ae71c983ce6f3706c",
+        "high_multiplicity": 37,
+        "high_radicand": "147/4477",
+        "high_sqrt_floor_at_scale_1e12": 181202890098,
+        "high_upper_decimal": "1.272111981008",
+        "low_radicand": "111/121",
+        "low_sqrt_floor_at_scale_1e12": 957786704804,
+        "low_upper_decimal": "0.133122386105",
+        "positive_margin_denominator_digits": 570,
+        "positive_margin_numerator_digits": 571,
+        "product_upper_decimal": "0.005460033927",
+        "product_upper_lt_13": true
+      },
+      {
+        "certificate_sha256": "74368e76d939da5f07f5137e6c3403c575d3307ab0ff4fb7058587b15d14e78f",
+        "high_multiplicity": 38,
+        "high_radicand": "63/2299",
+        "high_sqrt_floor_at_scale_1e12": 165539176000,
+        "high_upper_decimal": "1.256448266910",
+        "low_radicand": "133/121",
+        "low_sqrt_floor_at_scale_1e12": 1048414781333,
+        "low_upper_decimal": "0.042494309576",
+        "positive_margin_denominator_digits": 574,
+        "positive_margin_numerator_digits": 575,
+        "product_upper_decimal": "0.000034473065",
+        "product_upper_lt_13": true
+      }
+    ],
+    "largest_certified_upper_case": 1,
+    "largest_certified_upper_decimal": "12.211911548904",
+    "positive_high_multiplicities": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "positive_stationary_case_count": 38,
+    "rank": 44,
+    "square_trace": 60,
+    "trace": 48
+  }
+}

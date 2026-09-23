@@ -1,0 +1,292 @@
+{
+  "assumptions": [
+    "N14 counts both t and -t as distinct nonzero eigenvectors.",
+    "P counts induced triangular prisms.",
+    "n3 counts the two-cross-edge two-triangle configuration.",
+    "No prism-free, rank-28, or automorphism hypothesis is imposed."
+  ],
+  "claim_label": "VERIFIED",
+  "components": {
+    "finite_seed_census": {
+      "candidate_transition_count": 924,
+      "cap_four_is_attained": true,
+      "global_seed_load_cap": 4,
+      "incidence_argument": "There are 8(84-f_o) transition-seed incidences. A seed has three incident labels at each of its four base points, and a local matching selects at most one pair among three, so its load is at most four. Therefore at least 168-2f_o seeds are bad and at most 392+2f_o are transition-free.",
+      "local_matching_exhaustion": {
+        "cap_is_sharp_locally": true,
+        "forbidden_pair_count_census": {
+          "0": 6040,
+          "1": 3264,
+          "2": 900,
+          "3": 160,
+          "4": 30,
+          "6": 1
+        },
+        "maximum_selected_pairs_in_one_local_seed_section": 1,
+        "perfect_matchings_on_twelve": 10395,
+        "three_endpoint_seed_sections": 160
+      },
+      "mate_forbidden_candidate_count": 84,
+      "mate_transition_seed_multiplicities": [
+        0
+      ],
+      "nonmate_candidate_count": 840,
+      "nonmate_transition_seed_multiplicities": [
+        8
+      ],
+      "passed": true,
+      "seed_count": 560,
+      "selected_transition_profile_checks": [
+        {
+          "bad_seed_lower_bound": 168,
+          "bad_seeds": 356,
+          "expected_transition_seed_incidences": 672,
+          "f": 0,
+          "maximum_seed_load": 4,
+          "passed": true,
+          "transition_free_seed_upper_bound": 392,
+          "transition_free_seeds": 204,
+          "transition_seed_incidences": 672
+        },
+        {
+          "bad_seed_lower_bound": 140,
+          "bad_seeds": 308,
+          "expected_transition_seed_incidences": 560,
+          "f": 14,
+          "maximum_seed_load": 4,
+          "passed": true,
+          "transition_free_seed_upper_bound": 420,
+          "transition_free_seeds": 252,
+          "transition_seed_incidences": 560
+        },
+        {
+          "bad_seed_lower_bound": 112,
+          "bad_seeds": 252,
+          "expected_transition_seed_incidences": 448,
+          "f": 28,
+          "maximum_seed_load": 4,
+          "passed": true,
+          "transition_free_seed_upper_bound": 448,
+          "transition_free_seeds": 308,
+          "transition_seed_incidences": 448
+        },
+        {
+          "bad_seed_lower_bound": 84,
+          "bad_seeds": 178,
+          "expected_transition_seed_incidences": 336,
+          "f": 42,
+          "maximum_seed_load": 4,
+          "passed": true,
+          "transition_free_seed_upper_bound": 476,
+          "transition_free_seeds": 382,
+          "transition_seed_incidences": 336
+        },
+        {
+          "bad_seed_lower_bound": 56,
+          "bad_seeds": 112,
+          "expected_transition_seed_incidences": 224,
+          "f": 56,
+          "maximum_seed_load": 4,
+          "passed": true,
+          "transition_free_seed_upper_bound": 504,
+          "transition_free_seeds": 448,
+          "transition_seed_incidences": 224
+        },
+        {
+          "bad_seed_lower_bound": 0,
+          "bad_seeds": 0,
+          "expected_transition_seed_incidences": 0,
+          "f": 84,
+          "maximum_seed_load": 0,
+          "passed": true,
+          "transition_free_seed_upper_bound": 560,
+          "transition_free_seeds": 560,
+          "transition_seed_incidences": 0
+        },
+        {
+          "bad_seed_lower_bound": 102,
+          "bad_seeds": 270,
+          "expected_transition_seed_incidences": 408,
+          "f": 33,
+          "maximum_seed_load": 4,
+          "passed": true,
+          "transition_free_seed_upper_bound": 458,
+          "transition_free_seeds": 290,
+          "transition_seed_incidences": 408
+        }
+      ]
+    },
+    "global_arithmetic": {
+      "N14_counts_both_signs": true,
+      "P_bound": "N14<=floor((38808+12P)/7)",
+      "bound_step_sizes_as_P_increases": [
+        1,
+        2
+      ],
+      "endpoint_rows": {
+        "0": {
+          "N14_upper": 7920,
+          "P": 1386,
+          "numerator_mod_7": 0
+        },
+        "4155": {
+          "N14_upper": 5545,
+          "P": 1,
+          "numerator_mod_7": 5
+        },
+        "4158": {
+          "N14_upper": 5544,
+          "P": 0,
+          "numerator_mod_7": 0
+        },
+        "708": {
+          "N14_upper": 7515,
+          "P": 1150,
+          "numerator_mod_7": 3
+        }
+      },
+      "full_identity_domain_rows_checked": 1387,
+      "global_inequality": "7N14<=38808+12P",
+      "n3_bound": "N14<=floor((55440-4n3)/7)",
+      "orientation_identity": "sum_o a14(o)=7N14",
+      "passed": true,
+      "positive_roots_in_test_sign_pair": [
+        7,
+        7
+      ],
+      "root_bound": "a14(o)<=392+2f_o",
+      "rooted_prism_sum": "sum_o f_o=6P",
+      "test_sign_pair_total": 14
+    },
+    "input_integrity": {
+      "dependency_manifests": {
+        "verification/wave64-rooted-transition-design/package-manifest.sha256": {
+          "actual_sha256": "dd138310fcaa4e3e2d2989281f9c7487b498ad1d15901403b32919d7018bb905",
+          "expected_sha256": "dd138310fcaa4e3e2d2989281f9c7487b498ad1d15901403b32919d7018bb905",
+          "passed": true
+        },
+        "verification/wave71-modular-theta-extension/package-manifest.sha256": {
+          "actual_sha256": "0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237",
+          "expected_sha256": "0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237",
+          "passed": true
+        }
+      },
+      "discovery_files": 10,
+      "discovery_manifest_entries": 9,
+      "failures": [],
+      "frozen_git_commit": "cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee",
+      "frozen_utc": "2026-07-28T02:38:28Z",
+      "package_manifest_sha256": "6c6c12690b59c9d86daf25190e3c89b0616aef525498246295974f1d27c30bf8",
+      "passed": true
+    },
+    "norm14_seed_map": {
+      "common_neighbor_pair_capacity": 42,
+      "complementary_Fano_blocks": 7,
+      "cross_degree": 4,
+      "design_pair_incidences": 42,
+      "other_block_intersections_with_root": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pair_degrees": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "passed": true,
+      "point_degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "root_block_size": 4,
+      "root_pair_saturation": true,
+      "same_sign_edges_forced": 0,
+      "seed_injection": "For positive root o, Q=NcapN(o) is a four-point seed. Each pair in Q has exactly the common positive vertices o and its unique rooted residual label, recovering all of P. The 42 N-to-pairs-of-P incidences saturate the 42 SRG common-neighbor slots, so every vertex outside N meets P at most once; hence N is recovered as the vertices with four neighbors in P.",
+      "support_edge_formula": "e(P union N)=28+4h",
+      "support_spectral_edge_upper": 31,
+      "transition_free": "A selected transition supported by three points of Q would join two recovered positive residual labels, contradicting the forced independence of P.",
+      "unit_sign_class_sizes": [
+        7,
+        7
+      ]
+    },
+    "prism_and_n3_identity": {
+      "C4_count_by_cross_matching_size": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 3
+      },
+      "P_definition": "number of induced six-vertex triangular prisms: two disjoint triangles joined by all three matching cross edges",
+      "global_identity": "n3+3P=4158",
+      "graph_edges": 693,
+      "graph_nonedges": 4158,
+      "induced_C4_count": 2079,
+      "n3_definition": "number of induced six-vertex configurations consisting of two disjoint triangles joined by exactly two matching cross edges",
+      "passed": true,
+      "proof_summary": "Each induced C4 has two pairs of opposite edges. Completing each edge to its unique triangle gives an n3 configuration or a prism. Conversely an n3 configuration contains one such C4 and a prism contains three. A prism has six roots and the rooted opposite vertex is unique, so sum_o f_o=6P.",
+      "rooted_transitions_in_one_prism": 6,
+      "two_times_induced_C4_count": 4158
+    }
+  },
+  "conditional_scope": "hypothetical srg(99,14,1,2)",
+  "discovery_comparison": {
+    "checks": {
+      "bounds": true,
+      "cap": true,
+      "endpoints": true,
+      "multiplicities": true,
+      "rooted_prism_identity": true,
+      "scope": true,
+      "seed_count": true,
+      "transition_counts": true
+    },
+    "comparison_scope": "Post-reconstruction comparison only; discovery code was not imported or used to derive the independent result.",
+    "discovery_claim_label": "DERIVED",
+    "passed": true
+  },
+  "format": "wave94-general-n3-norm14-independent-verifier-v1",
+  "limitations": [
+    "This bounds the norm-14 shell only.",
+    "No upper bound on N16 or N18 follows.",
+    "No strict upper bound on n3 or Conway-99 resolution follows.",
+    "Literature novelty remains UNKNOWN."
+  ],
+  "role": "verifier",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "N16_upper_bound": null,
+    "N18_upper_bound": null,
+    "novelty": "UNKNOWN",
+    "strict_n3_upper_bound": null
+  },
+  "theorem": "N14 <= floor((38808+12P)/7) = floor((55440-4*n3)/7)",
+  "verdict": "VERIFIED"
+}

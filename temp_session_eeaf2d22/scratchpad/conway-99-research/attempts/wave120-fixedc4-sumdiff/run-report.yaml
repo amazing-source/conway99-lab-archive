@@ -1,0 +1,43 @@
+role: proof_a
+date_utc: 2026-07-28T05:00:00Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: DERIVED | REFUTED | UNKNOWN
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2), exploit sums and
+  differences of norm-16, norm-18, and conditionally norm-20 integer
+  -4 eigenvectors sharing one alternating induced C4; test whether the
+  resulting pairwise Gram and code spaces force the local caps 25 or 24.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave74-short-vector-closure/package-manifest.sha256
+    sha256: eb19bd74e6e6017186f458bcd74390d231bafa9edfa92ad9f7f81e2a1d566612
+  - path: verification/wave78-short-vector-packing/package-manifest.sha256
+    sha256: f96134457f81fa7b66d3de73086323f640ec1259f49d134e77584d33056f766b
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+  - path: attempts/wave96-norm16-norm18-upper/package-manifest.sha256
+    sha256: 1d1e7d01edfbfcd2871683390b56e16dc36a18cfc899f301f15a0fce3b246a73
+method: >-
+  Exact inversion of the common C4 projector; an integer-mass sharpening
+  using the four anchor equations and mu=2; exhaustive pairwise norm
+  arithmetic; and an explicit forty-record signed constant-weight witness
+  checked by exact rational LDL^T decomposition.
+command: >-
+  python -B attempts/wave120-fixedc4-sumdiff/exact_check.py;
+  python -B attempts/wave120-fixedc4-sumdiff/exact_check.py --verify;
+  python -B -m unittest discover -s
+  attempts/wave120-fixedc4-sumdiff -p "test_*.py" -v
+outputs:
+  - path: attempts/wave120-fixedc4-sumdiff/exact-results.json
+  - path: attempts/wave120-fixedc4-sumdiff/witness.json
+  - path: attempts/wave120-fixedc4-sumdiff/derivation.md
+  - path: attempts/wave120-fixedc4-sumdiff/failed-routes.md
+limitations:
+  - Independent verification is required.
+  - Wave96 norm-20 classification is still discovery-level.
+  - The size-40 witness is a formal pairwise relaxation, not an eigenvector family.
+  - The outside eigen-equations and one common graph adjacency are not encoded.
+  - The actual caps 25 and 24, both rank rows, Conway-99, and novelty remain UNKNOWN.

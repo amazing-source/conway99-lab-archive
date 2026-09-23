@@ -1,0 +1,548 @@
+{
+  "format": "wave185-local-a6-transition-collapse-independent-verifier-v1",
+  "geometry": {
+    "cell": {
+      "corners": 4,
+      "maximum_internal_degree": 1,
+      "multiplicity_seven_excluded": true,
+      "opposite_corner_pairs_remaining": 2,
+      "shared_endpoint_pairs_excluded": 4,
+      "wave183_shapes": {
+        "5": "4K1",
+        "6": "2K2",
+        "7": "P4"
+      }
+    },
+    "prism": {
+      "cross_edges": 3,
+      "degree_sequence": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "edges": 9,
+      "induced": true,
+      "triangles": 2,
+      "vertices": 6
+    }
+  },
+  "global_status": "UNKNOWN",
+  "incident_capacity_and_companions": {
+    "b_ef_upper": 6,
+    "common_neighbors_if_complete": 3,
+    "global_distinct_companions": 10,
+    "local_distinct_type5_companions": 2,
+    "maximum_per_orientation": 3,
+    "mu": 2,
+    "orientations": 2,
+    "possible_edges_per_orientation": 4,
+    "raw_n5_floor": 11,
+    "support_size": 5,
+    "type5_weighted_degree": 8
+  },
+  "integrity": {
+    "entries_checked": 56,
+    "failures": [],
+    "lists_checked": [
+      {
+        "entries": 9,
+        "path": "attempts/wave181-c4-conic-equality/package-manifest.sha256"
+      },
+      {
+        "entries": 5,
+        "path": "attempts/wave185-local-a6-transition-collapse/input-freeze.sha256"
+      },
+      {
+        "entries": 9,
+        "path": "attempts/wave185-local-a6-transition-collapse/package-manifest.sha256"
+      },
+      {
+        "entries": 8,
+        "path": "verification/wave181-c4-conic-equality/package-manifest.sha256"
+      },
+      {
+        "entries": 8,
+        "path": "verification/wave183-root-support-girth-verifier/package-manifest.sha256"
+      },
+      {
+        "entries": 8,
+        "path": "verification/wave184-root-support-intersections-verifier/package-manifest.sha256"
+      },
+      {
+        "entries": 9,
+        "path": "verification/wave64-rooted-transition-design/package-manifest.sha256"
+      }
+    ],
+    "passed": true,
+    "source_manifest_sha256": "a6739a8964558a7320c710e405e8c9e2708302539ecb7f6a02663b36fa6c7c20"
+  },
+  "limitations": [
+    "Wave181 equality and endpoint prism-freeness are premises.",
+    "The scalar profiles are not graph, root-system, code, or transition constructions.",
+    "Rank 11, endpoint existence, novelty, and Conway-99 remain UNKNOWN."
+  ],
+  "multiplicity": {
+    "congruence_n5_floor": 15,
+    "equation": "5*n5+6*n6=2079",
+    "minimum_n6": 4,
+    "n5_residue_mod6": 3,
+    "parameterization": "(n5,n6)=(15+6u,334-5u)",
+    "profile_count": 67,
+    "profiles": [
+      {
+        "n5": 15,
+        "n6": 334,
+        "roots": 349,
+        "u": 0
+      },
+      {
+        "n5": 21,
+        "n6": 329,
+        "roots": 350,
+        "u": 1
+      },
+      {
+        "n5": 27,
+        "n6": 324,
+        "roots": 351,
+        "u": 2
+      },
+      {
+        "n5": 33,
+        "n6": 319,
+        "roots": 352,
+        "u": 3
+      },
+      {
+        "n5": 39,
+        "n6": 314,
+        "roots": 353,
+        "u": 4
+      },
+      {
+        "n5": 45,
+        "n6": 309,
+        "roots": 354,
+        "u": 5
+      },
+      {
+        "n5": 51,
+        "n6": 304,
+        "roots": 355,
+        "u": 6
+      },
+      {
+        "n5": 57,
+        "n6": 299,
+        "roots": 356,
+        "u": 7
+      },
+      {
+        "n5": 63,
+        "n6": 294,
+        "roots": 357,
+        "u": 8
+      },
+      {
+        "n5": 69,
+        "n6": 289,
+        "roots": 358,
+        "u": 9
+      },
+      {
+        "n5": 75,
+        "n6": 284,
+        "roots": 359,
+        "u": 10
+      },
+      {
+        "n5": 81,
+        "n6": 279,
+        "roots": 360,
+        "u": 11
+      },
+      {
+        "n5": 87,
+        "n6": 274,
+        "roots": 361,
+        "u": 12
+      },
+      {
+        "n5": 93,
+        "n6": 269,
+        "roots": 362,
+        "u": 13
+      },
+      {
+        "n5": 99,
+        "n6": 264,
+        "roots": 363,
+        "u": 14
+      },
+      {
+        "n5": 105,
+        "n6": 259,
+        "roots": 364,
+        "u": 15
+      },
+      {
+        "n5": 111,
+        "n6": 254,
+        "roots": 365,
+        "u": 16
+      },
+      {
+        "n5": 117,
+        "n6": 249,
+        "roots": 366,
+        "u": 17
+      },
+      {
+        "n5": 123,
+        "n6": 244,
+        "roots": 367,
+        "u": 18
+      },
+      {
+        "n5": 129,
+        "n6": 239,
+        "roots": 368,
+        "u": 19
+      },
+      {
+        "n5": 135,
+        "n6": 234,
+        "roots": 369,
+        "u": 20
+      },
+      {
+        "n5": 141,
+        "n6": 229,
+        "roots": 370,
+        "u": 21
+      },
+      {
+        "n5": 147,
+        "n6": 224,
+        "roots": 371,
+        "u": 22
+      },
+      {
+        "n5": 153,
+        "n6": 219,
+        "roots": 372,
+        "u": 23
+      },
+      {
+        "n5": 159,
+        "n6": 214,
+        "roots": 373,
+        "u": 24
+      },
+      {
+        "n5": 165,
+        "n6": 209,
+        "roots": 374,
+        "u": 25
+      },
+      {
+        "n5": 171,
+        "n6": 204,
+        "roots": 375,
+        "u": 26
+      },
+      {
+        "n5": 177,
+        "n6": 199,
+        "roots": 376,
+        "u": 27
+      },
+      {
+        "n5": 183,
+        "n6": 194,
+        "roots": 377,
+        "u": 28
+      },
+      {
+        "n5": 189,
+        "n6": 189,
+        "roots": 378,
+        "u": 29
+      },
+      {
+        "n5": 195,
+        "n6": 184,
+        "roots": 379,
+        "u": 30
+      },
+      {
+        "n5": 201,
+        "n6": 179,
+        "roots": 380,
+        "u": 31
+      },
+      {
+        "n5": 207,
+        "n6": 174,
+        "roots": 381,
+        "u": 32
+      },
+      {
+        "n5": 213,
+        "n6": 169,
+        "roots": 382,
+        "u": 33
+      },
+      {
+        "n5": 219,
+        "n6": 164,
+        "roots": 383,
+        "u": 34
+      },
+      {
+        "n5": 225,
+        "n6": 159,
+        "roots": 384,
+        "u": 35
+      },
+      {
+        "n5": 231,
+        "n6": 154,
+        "roots": 385,
+        "u": 36
+      },
+      {
+        "n5": 237,
+        "n6": 149,
+        "roots": 386,
+        "u": 37
+      },
+      {
+        "n5": 243,
+        "n6": 144,
+        "roots": 387,
+        "u": 38
+      },
+      {
+        "n5": 249,
+        "n6": 139,
+        "roots": 388,
+        "u": 39
+      },
+      {
+        "n5": 255,
+        "n6": 134,
+        "roots": 389,
+        "u": 40
+      },
+      {
+        "n5": 261,
+        "n6": 129,
+        "roots": 390,
+        "u": 41
+      },
+      {
+        "n5": 267,
+        "n6": 124,
+        "roots": 391,
+        "u": 42
+      },
+      {
+        "n5": 273,
+        "n6": 119,
+        "roots": 392,
+        "u": 43
+      },
+      {
+        "n5": 279,
+        "n6": 114,
+        "roots": 393,
+        "u": 44
+      },
+      {
+        "n5": 285,
+        "n6": 109,
+        "roots": 394,
+        "u": 45
+      },
+      {
+        "n5": 291,
+        "n6": 104,
+        "roots": 395,
+        "u": 46
+      },
+      {
+        "n5": 297,
+        "n6": 99,
+        "roots": 396,
+        "u": 47
+      },
+      {
+        "n5": 303,
+        "n6": 94,
+        "roots": 397,
+        "u": 48
+      },
+      {
+        "n5": 309,
+        "n6": 89,
+        "roots": 398,
+        "u": 49
+      },
+      {
+        "n5": 315,
+        "n6": 84,
+        "roots": 399,
+        "u": 50
+      },
+      {
+        "n5": 321,
+        "n6": 79,
+        "roots": 400,
+        "u": 51
+      },
+      {
+        "n5": 327,
+        "n6": 74,
+        "roots": 401,
+        "u": 52
+      },
+      {
+        "n5": 333,
+        "n6": 69,
+        "roots": 402,
+        "u": 53
+      },
+      {
+        "n5": 339,
+        "n6": 64,
+        "roots": 403,
+        "u": 54
+      },
+      {
+        "n5": 345,
+        "n6": 59,
+        "roots": 404,
+        "u": 55
+      },
+      {
+        "n5": 351,
+        "n6": 54,
+        "roots": 405,
+        "u": 56
+      },
+      {
+        "n5": 357,
+        "n6": 49,
+        "roots": 406,
+        "u": 57
+      },
+      {
+        "n5": 363,
+        "n6": 44,
+        "roots": 407,
+        "u": 58
+      },
+      {
+        "n5": 369,
+        "n6": 39,
+        "roots": 408,
+        "u": 59
+      },
+      {
+        "n5": 375,
+        "n6": 34,
+        "roots": 409,
+        "u": 60
+      },
+      {
+        "n5": 381,
+        "n6": 29,
+        "roots": 410,
+        "u": 61
+      },
+      {
+        "n5": 387,
+        "n6": 24,
+        "roots": 411,
+        "u": 62
+      },
+      {
+        "n5": 393,
+        "n6": 19,
+        "roots": 412,
+        "u": 63
+      },
+      {
+        "n5": 399,
+        "n6": 14,
+        "roots": 413,
+        "u": 64
+      },
+      {
+        "n5": 405,
+        "n6": 9,
+        "roots": 414,
+        "u": 65
+      },
+      {
+        "n5": 411,
+        "n6": 4,
+        "roots": 415,
+        "u": 66
+      }
+    ],
+    "raw_n5_floor": 11,
+    "root_interval": [
+      349,
+      415
+    ],
+    "u_interval": [
+      0,
+      66
+    ]
+  },
+  "rainbow_triangles": {
+    "complement_parameters": [
+      99,
+      84,
+      71,
+      72
+    ],
+    "maximum_monochromatic": 4142,
+    "minimum_rainbow": 94264,
+    "monochromatic_formula": "10*n5+8*n6=4158-4*n6",
+    "monochromatic_per_root": {
+      "m5": 10,
+      "m6": 8
+    },
+    "total": 98406,
+    "triangle_color_dichotomy": "monochromatic_or_rainbow"
+  },
+  "role": "verifier",
+  "source_checker_imported_or_executed": false,
+  "transition_rows": {
+    "m5": {
+      "cell_incident_disjoint_total": 8,
+      "cell_transition_total": 8,
+      "incident_disjoint": 2,
+      "incident_transition": 2,
+      "internal": 0,
+      "orthogonal_disjoint": 8,
+      "residual_degree": 12
+    },
+    "m6": {
+      "cell_incident_disjoint_total": 0,
+      "cell_transition_total": 8,
+      "incident_disjoint": 0,
+      "incident_transition": 2,
+      "internal": 1,
+      "orthogonal_disjoint": 9,
+      "residual_degree": 12
+    }
+  },
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

@@ -1,0 +1,60 @@
+role: proof_a
+date_utc: 2026-07-27T20:50:44Z
+git_commit: a4a61658356253fb95cf68252c972a4f79df38fe
+claim_label: DERIVED
+scope: >-
+  Conditional n3=4158 endpoint for srg(99,14,1,2), with an arbitrary
+  fixed triangle and no automorphism assumption: quotient and supported
+  eigenspaces, projector ranks, Y-spectrum moments, star-set intersections,
+  scalar feasibility controls, and a smaller exact compatibility target.
+inputs:
+  - path: attempts/wave35-n3-4158-combinatorial/exact-results.json
+    sha256: 07e1469e7690bd630385e734d387fa13a1eb537f0c578bf31270c3b7b8824b67
+  - path: attempts/wave35-n3-upper-spectral/exact-results.json
+    sha256: ca1df07bede11642fb1639a2ae554c1a31ce9a58424d5b3e5031c90ad550a194
+  - path: verification/wave35-n3-upper-spectral/independent-results.json
+    sha256: c704d8fce8f1d5975204b9a06ada0098c66fbdb9e0de8016a1ff89d86e691305
+  - path: verification/wave35-n3-upper-spectral/audit.md
+    sha256: 5300d965a23846e2549196e9a5c207047ee268579f60e5d3c5133c092d1a287b
+method: >-
+  Exact rational projector algebra, explicit supported eigenvectors,
+  trace and subgraph counts, truncated compact-interval moment localizers,
+  Newton identities, exact algebraic-integer scalar controls, and the
+  star-complement Reconstruction Theorem. The checker uses only the Python
+  standard library and verifies at least 15 percent free physical memory.
+command: >-
+  Set-Location attempts/wave57-star-complement;
+  python exact_check.py;
+  python -m unittest -v test_exact_check.py;
+  python -m py_compile exact_check.py test_exact_check.py
+outputs:
+  - path: attempts/wave57-star-complement/exact-results.json
+    sha256: 2b49b0bf3d52c0101cfcd59c3324279c1f153f4d48504c7ae67658e8786e6216
+  - path: attempts/wave57-star-complement/exact_check.py
+    sha256: bf5e971b0f8f0abd8fc77e680d8672dcee28bcfa40b002411d5387000f9f771d
+  - path: attempts/wave57-star-complement/test_exact_check.py
+    sha256: 7988e5663bdb5d76574c283fdb958a6e8b5d0226852b67c0c8ff19015e6622dd
+  - path: attempts/wave57-star-complement/derivation.md
+    sha256: bb0fef9897088f929b70d99f2f90df118f3093a13337f9521f44bce2b49a8aa4
+  - path: attempts/wave57-star-complement/failed-routes.md
+    sha256: 7f80b1b6bce2d8d0d80a8937df209ba7b97311241fac17821866c67cf64aac7c
+results:
+  quotient_eigenvalues: [14, 3, -4]
+  supported_sector_dimension_each: 2
+  mult_Y_3_range: [18, 20]
+  mult_Y_minus4_range: [8, 13]
+  multiplicity_pair_count: 18
+  C4_X_global_range: [0, 89]
+  scalar_control_count: 18
+  unit_tests: 8
+  unit_tests_passed: 8
+  observed_free_physical_memory_percent_after_qa: 51.49
+  endpoint_excluded: false
+  endpoint_graph_constructed: false
+  conway_99_status: UNKNOWN
+limitations:
+  - This is a discovery-side proof-A report and cannot promote itself to VERIFIED.
+  - The 18 scalar controls are not certified graph spectra.
+  - Truncated moment conditions are necessary but not sufficient.
+  - No binary reconstruction matrix, 60-vertex Y graph, or 99-vertex graph is supplied.
+  - No complete search or nonexistence certificate is supplied.

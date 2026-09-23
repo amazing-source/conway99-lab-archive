@@ -1,0 +1,214 @@
+{
+  "format": "conway-n3-joint-scout-v1",
+  "date_utc": "2026-07-22T23:16:16Z",
+  "source_commit": "b075fdd33c0023cbbbebc63469a87f5430c2da34",
+  "target_result": "UNKNOWN",
+  "evidence_status": "VERIFIED_FORMULA_GENERATION_AND_VERIFIED_NO_CONCLUSION_LOGS",
+  "complete_branch_cover_conditional_on_n3": true,
+  "completed_graph_automorphism_assumed": false,
+  "command": ".venv\\Scripts\\python.exe code\\sat_model.py --pair-count 7 --cardinality native --n3 --n3-branch BRANCH --opb logs\\local\\n3-joint-scout\\branch-BRANCH.opb",
+  "proof_command": "Exact --verbosity=1 --timeout=5 --proof-assumptions=0 --proof-log=branch.pbp branch.opb",
+  "inputs": [
+    {
+      "path": "code/matching_orbits.py",
+      "sha256": "c216d8a0b15fb9a7da501be07f2b631917e383033c142fa5cc9f3979c498ca1f"
+    },
+    {
+      "path": "code/sat_model.py",
+      "sha256": "787fdd808b4a9bfc263cbe820a999612a9ee845f6600b8ddd1bac81a151d5ca5"
+    },
+    {
+      "path": "verification/n3-joint-cover/n3-joint-cover.json",
+      "sha256": "58c4994ff0eef9c5e1702840f791d1400c3da71b445e3c217e3704c5e70de172"
+    }
+  ],
+  "tools": {
+    "exact": {
+      "source_commit": "b921cd1c4e3b6a7b7ba16dfd9c38c419d5e53ee4",
+      "binary_sha256": "842ac70b4e938d24f537a56513ff64ea845206c714ce34da467ce146c5c5c928"
+    },
+    "veripb": {
+      "version": "3.0.2",
+      "binary_sha256": "635b6f2fbd7a7fb98bf7a1f7af038355a1e58438cfdc1ee4e2649979017ace36"
+    },
+    "cakepb": {
+      "source_commit": "904eed45e2cbe9ac26000475bbdd2f99bcbdaad8",
+      "binary_sha256": "5920919642b1c498c2654a849fcd894ea18e7736ebf32919a9a8915861033e46"
+    }
+  },
+  "formula": {
+    "variables": 289338,
+    "constraints": 291756,
+    "lines": 291757,
+    "bytes": 14241485,
+    "fiber_units": 66,
+    "positive_fiber_units": 6,
+    "negative_fiber_units": 60,
+    "common_formula_hash_after_removing_fiber_units": "7a411837b73e323ca0f9f284c3e46964d0009c4034fd61891d0c1f4417ea323e"
+  },
+  "runs": [
+    {
+      "branch": 1,
+      "orbit_size": 1,
+      "positive_literals": [24, 943, 1834, 1947, 2056, 2161],
+      "formula_sha256": "7514f95f4dac05e6b430396c6d41e4d1ee29fa7811297e2289788cb9e927dbfb",
+      "exact_status": "UNKNOWN",
+      "conflicts": 6045,
+      "raw_proof_bytes": 26673618,
+      "raw_proof_sha256": "2b03f8c7310db8b53af3c3232aae1c760c673b55006a853c239fd21aaf57145e",
+      "kernel_bytes": 29188516,
+      "kernel_sha256": "bb797490dcf90b34da7847e59482c2b72e98788074530362a8c23c57d055006b"
+    },
+    {
+      "branch": 2,
+      "orbit_size": 12,
+      "positive_literals": [24, 943, 1834, 1947, 2057, 2110],
+      "formula_sha256": "e2cc79bc2678d5c02804eddb98dfc7b745998150b6ae513d457ab9dd61b61d3d",
+      "exact_status": "UNKNOWN",
+      "conflicts": 3078,
+      "raw_proof_bytes": 18063272,
+      "raw_proof_sha256": "57b52a9aaf9d5992959cedfd0a6654920297f3d47d90d36bd6c4e6f09862f948",
+      "kernel_bytes": 20279258,
+      "kernel_sha256": "6c43abbd86543632309211dd8e5229d3644d68d328a6e34d5dda29be4afdfb71"
+    },
+    {
+      "branch": 3,
+      "orbit_size": 32,
+      "positive_literals": [24, 943, 1834, 1948, 2004, 2110],
+      "formula_sha256": "8fc96ad1cd65a3f5e84b8f9ec78afc541c6036dc8bd18af437dea44f8eac2bdb",
+      "exact_status": "UNKNOWN",
+      "conflicts": 2231,
+      "raw_proof_bytes": 17038619,
+      "raw_proof_sha256": "9794bb767f2370560af24ddfbb2489b1b0989b1f220b914f06f0e99cb70f605f",
+      "kernel_bytes": 19342195,
+      "kernel_sha256": "db5538c4321fbb8c786f6fd60aef824308584e8065e29105f129c4917e956d33"
+    },
+    {
+      "branch": 4,
+      "orbit_size": 12,
+      "positive_literals": [24, 943, 1835, 1892, 2057, 2110],
+      "formula_sha256": "3e975ade479bd08e8025fff0c9569c4c4a3a1f19179c1b3a79f9db5ed7493256",
+      "exact_status": "UNKNOWN",
+      "conflicts": 2319,
+      "raw_proof_bytes": 16954681,
+      "raw_proof_sha256": "f0bc5d9121021e2f02f19ef8c7e60d7983cb5b90c81c6a8e5e43e08e45ae280c",
+      "kernel_bytes": 19297036,
+      "kernel_sha256": "94d3bf9026a2642685041f587cfd91499d629f62f8df53654c9713fedc0a04b4"
+    },
+    {
+      "branch": 5,
+      "orbit_size": 48,
+      "positive_literals": [24, 943, 1835, 1893, 2004, 2110],
+      "formula_sha256": "f097f3649e51140b502f301d5f2de4c4a5e682e8735b67847b2c7b7f8017249e",
+      "exact_status": "UNKNOWN",
+      "conflicts": 3322,
+      "raw_proof_bytes": 18071548,
+      "raw_proof_sha256": "0a910a8b02252b9fee9f7c252e4d616cc8f3aee7f15bf854af0d4a577a4ad308",
+      "kernel_bytes": 20185135,
+      "kernel_sha256": "7422996621eb63f718d1054a04205fa94209e78773a7a6c0f68eeb3cc1d4089a"
+    },
+    {
+      "branch": 6,
+      "orbit_size": 8,
+      "positive_literals": [24, 944, 1777, 1947, 2056, 2161],
+      "formula_sha256": "5093c905da2de07fe5cf9596688ccaf6176643139ab433990f87fb1fcbc99964",
+      "exact_status": "UNKNOWN",
+      "conflicts": 2855,
+      "raw_proof_bytes": 16527317,
+      "raw_proof_sha256": "9c671ff9bd8bbc9a0c4531e0b893189d4f8d6785324a52971f0d7cf3324bf3b2",
+      "kernel_bytes": 18626720,
+      "kernel_sha256": "df3a1c4d4d5fdb11a09f638c5859d2a9f697d374b9db5c2d03939e2ad1049a7f"
+    },
+    {
+      "branch": 7,
+      "orbit_size": 48,
+      "positive_literals": [24, 944, 1777, 1947, 2057, 2110],
+      "formula_sha256": "48b1c7937c90d64c13082a8ceda0ddf30d2d2bd30e2a5ed5b979c06d8946b775",
+      "exact_status": "UNKNOWN",
+      "conflicts": 3148,
+      "raw_proof_bytes": 19613788,
+      "raw_proof_sha256": "f164c9940051f1ed21ead16294707af03babf9db27e1b566408ff9829ac68bb7",
+      "kernel_bytes": 22060898,
+      "kernel_sha256": "33e3d702053a0cf6372bd454820934504df01a14a6b019cf699ed6fa57d3d209"
+    },
+    {
+      "branch": 8,
+      "orbit_size": 64,
+      "positive_literals": [24, 944, 1777, 1948, 2004, 2110],
+      "formula_sha256": "80dff7535ca0075bd158f9c7cc70b020376b34553d8d510bae4887c2d8108909",
+      "exact_status": "UNKNOWN",
+      "conflicts": 6661,
+      "raw_proof_bytes": 29744484,
+      "raw_proof_sha256": "2e80fb731bb64b359f351a539379054872d2a5fb1a5d57e344a60926f695a073",
+      "kernel_bytes": 32533588,
+      "kernel_sha256": "33edd456ffaf663ad4386267f3c8d151ecbf33c63071274cc0e223f3ad765b74"
+    },
+    {
+      "branch": 9,
+      "orbit_size": 48,
+      "positive_literals": [24, 944, 1778, 1892, 2056, 2161],
+      "formula_sha256": "39df03cdeed910b1c79080597ab47738e8d7f7d9d16515aefc6423e4302d3bad",
+      "exact_status": "UNKNOWN",
+      "conflicts": 6656,
+      "raw_proof_bytes": 29865194,
+      "raw_proof_sha256": "b84f0bce761689ccf887de6844926fd9da45dd1d36cd396e415c5992e35365ca",
+      "kernel_bytes": 32571618,
+      "kernel_sha256": "e9fd6cd0f246577c83745e17c2f5272014090fc793cb0f718f7d574a82fdef87"
+    },
+    {
+      "branch": 10,
+      "orbit_size": 96,
+      "positive_literals": [24, 944, 1778, 1892, 2057, 2110],
+      "formula_sha256": "15d014e9388897f49dd2e9af3e050908121ff108de32729e994125a6af554acc",
+      "exact_status": "UNKNOWN",
+      "conflicts": 6656,
+      "raw_proof_bytes": 27146197,
+      "raw_proof_sha256": "c517019381e14c88292dd69b599838397945ecb24821d014a81c1ed8a26a6c9c",
+      "kernel_bytes": 29544093,
+      "kernel_sha256": "2102fb8594cb2fc28e869245129bc6348f3709114d19d6b260790c7d6df5e971"
+    },
+    {
+      "branch": 11,
+      "orbit_size": 192,
+      "positive_literals": [24, 944, 1778, 1893, 2003, 2161],
+      "formula_sha256": "998cc48bfb317de25e497be4585ab4b181cad9aaec9467dc1637297993bb3e70",
+      "exact_status": "UNKNOWN",
+      "conflicts": 6405,
+      "raw_proof_bytes": 26076451,
+      "raw_proof_sha256": "99acaac203a8237c7a7e7d4b0b1c7adf22ff8be0b970dc9e8944e23168f0e41b",
+      "kernel_bytes": 28273695,
+      "kernel_sha256": "adcd3a18f3f11287ef2703df8a56265d27b964d6506ae73769199bf70c12e5b9"
+    },
+    {
+      "branch": 12,
+      "orbit_size": 384,
+      "positive_literals": [24, 944, 1778, 1893, 2004, 2110],
+      "formula_sha256": "420fc2eb89699e61f4cac0120c5350f0405c2d2dc30269c7bd53c9274322dd62",
+      "exact_status": "UNKNOWN",
+      "conflicts": 5601,
+      "raw_proof_bytes": 25178742,
+      "raw_proof_sha256": "a46380498d99840ac3708123ba28a0c9ed9826d771ad12e77aab48c167e4d33d",
+      "kernel_bytes": 27585415,
+      "kernel_sha256": "c8294d86e3f2614b3a2dd6c7469dbe0f76fa08466c40cccd005f166e96906449"
+    }
+  ],
+  "checks": {
+    "raw_veripb": "VERIFIED_NO_CONCLUSION_12_OF_12",
+    "elaboration": "PASS_12_OF_12",
+    "kernel_veripb": "VERIFIED_NO_CONCLUSION_12_OF_12",
+    "cakepb": "VERIFIED_NO_CONCLUSION_12_OF_12",
+    "clean_clone_formula_hashes": "MATCH_12_OF_12"
+  },
+  "artifact_retention": {
+    "formulas_and_proofs_committed": false,
+    "scratch_location_publicly_retrievable": false,
+    "reason": "All logs conclude only NO CONCLUSION; canonical formulas are reproducible from the frozen source commit."
+  },
+  "limitations": [
+    "Every target run ended UNKNOWN; this is non-evidentiary branch scouting.",
+    "A checker accepting a NO CONCLUSION log verifies only that no invalid proof step was used, not SAT or UNSAT.",
+    "Conflict counts and bounded proof hashes can vary with wall-clock scheduling and are recorded only as run provenance.",
+    "Universal N3 occurrence is an upstream DERIVED premise.",
+    "No target graph certificate or complete target UNSAT proof was produced."
+  ]
+}

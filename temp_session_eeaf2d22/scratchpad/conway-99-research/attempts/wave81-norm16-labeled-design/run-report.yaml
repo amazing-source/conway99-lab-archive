@@ -1,0 +1,20 @@
+role: construction
+date_utc: 2026-07-27T23:57:06Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: DERIVED
+scope: conditional exact labelled incidence reduction of the Wave 78 norm-16 branch
+inputs:
+  - verification/wave78-short-vector-packing/independent-results.json sha256=ce1b1b735f6f089700a970642ab46527b931a82181b53bd330e1b9e34aa4af24
+  - verification/wave78-short-vector-packing/verification-report.md sha256=aaf18d3ab9d86c1645b3d1f926d2f0f6317452dd0908fba57a2263182df3be02
+  - attempts/wave71-modular-theta-extension/exact-results.json sha256=b892178b184e15ab7d62a31de0016c1096cb0bc9a8663afcf1ad0d4d5c35b995
+  - verification/wave74-short-vector-closure/independent-results.json sha256=4b3c30a304792af3cfb3628ded41374190c69739ff4687e77845ba553ca2c3d6
+method: complete support-orbit enumeration, exact deficiency coupling, integral local flows, type-degree moment enumeration, and Jacobi principal-minor spectra
+command: .\.venv\Scripts\python.exe -B attempts\wave81-norm16-labeled-design\exact_check.py --verify attempts\wave81-norm16-labeled-design\exact-results.json
+outputs:
+  - attempts/wave81-norm16-labeled-design/exact-results.json
+  - attempts/wave81-norm16-labeled-design/derivation.md
+limitations:
+  - conditional on the imported Wave 71 and verified Wave 78 reductions
+  - surviving incidence rows are not outside graphs or SRG constructions
+  - discovery package requires independent verification
+  - Conway-99 and novelty remain UNKNOWN

@@ -1,0 +1,858 @@
+{
+  "claim_label": "CANDIDATE",
+  "endpoint": {
+    "comparison": "the derived symmetric-square floor r>=14 is weaker than the imported verified floor r>=28",
+    "contradiction_found": false,
+    "imported_verified_interval": [
+      28,
+      44
+    ],
+    "surviving_integer_ranks": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "survivor_count": 17
+  },
+  "fixed_identities": {
+    "absolute_determinant": "4620680728035368559063782527286024015510290284149464858476993330559559228052754371430",
+    "seidel_definition": "S = 2A - J + I",
+    "seidel_spectrum": {
+      "-7": 54,
+      "-70": 1,
+      "7": 44
+    },
+    "seidel_square": "S^2 = 49(I + J)"
+  },
+  "limitations": [
+    "No graph or Seidel matrix was constructed.",
+    "Smith-profile compatibility is not matrix or graph realizability.",
+    "No endpoint rank in 28..44 is excluded.",
+    "This discovery package is not independent verification."
+  ],
+  "modular_jordan_form": {
+    "formula": "J2(0)^r direct_sum J1(0)^(99-2r)",
+    "parameter": "r = rank_F7(S)",
+    "reason": "S^2=0 over F7"
+  },
+  "scope": "conditional consequences for a hypothetical srg(99,14,1,2)",
+  "smith_normal_form": {
+    "all_profiles_pass": true,
+    "cokernel_formula": "(Z/7)^(99-2r) direct_sum (Z/49)^(r-1) direct_sum Z/490",
+    "formula": "diag(1^r, 7^(99-2r), 49^(r-1), 490)",
+    "profiles": [
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 1,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 1,
+        "seven_valuation_counts": {
+          "0": 1,
+          "1": 97,
+          "2": 1
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 2,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 2,
+        "seven_valuation_counts": {
+          "0": 2,
+          "1": 95,
+          "2": 2
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 3,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 3,
+        "seven_valuation_counts": {
+          "0": 3,
+          "1": 93,
+          "2": 3
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 4,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 4,
+        "seven_valuation_counts": {
+          "0": 4,
+          "1": 91,
+          "2": 4
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 5,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 5,
+        "seven_valuation_counts": {
+          "0": 5,
+          "1": 89,
+          "2": 5
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 6,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 6,
+        "seven_valuation_counts": {
+          "0": 6,
+          "1": 87,
+          "2": 6
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 7,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 7,
+        "seven_valuation_counts": {
+          "0": 7,
+          "1": 85,
+          "2": 7
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 8,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 8,
+        "seven_valuation_counts": {
+          "0": 8,
+          "1": 83,
+          "2": 8
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 9,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 9,
+        "seven_valuation_counts": {
+          "0": 9,
+          "1": 81,
+          "2": 9
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 10,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 10,
+        "seven_valuation_counts": {
+          "0": 10,
+          "1": 79,
+          "2": 10
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 11,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 11,
+        "seven_valuation_counts": {
+          "0": 11,
+          "1": 77,
+          "2": 11
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 12,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 12,
+        "seven_valuation_counts": {
+          "0": 12,
+          "1": 75,
+          "2": 12
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 13,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 13,
+        "seven_valuation_counts": {
+          "0": 13,
+          "1": 73,
+          "2": 13
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 14,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 14,
+        "seven_valuation_counts": {
+          "0": 14,
+          "1": 71,
+          "2": 14
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 15,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 15,
+        "seven_valuation_counts": {
+          "0": 15,
+          "1": 69,
+          "2": 15
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 16,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 16,
+        "seven_valuation_counts": {
+          "0": 16,
+          "1": 67,
+          "2": 16
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 17,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 17,
+        "seven_valuation_counts": {
+          "0": 17,
+          "1": 65,
+          "2": 17
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 18,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 18,
+        "seven_valuation_counts": {
+          "0": 18,
+          "1": 63,
+          "2": 18
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 19,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 19,
+        "seven_valuation_counts": {
+          "0": 19,
+          "1": 61,
+          "2": 19
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 20,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 20,
+        "seven_valuation_counts": {
+          "0": 20,
+          "1": 59,
+          "2": 20
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 21,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 21,
+        "seven_valuation_counts": {
+          "0": 21,
+          "1": 57,
+          "2": 21
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 22,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 22,
+        "seven_valuation_counts": {
+          "0": 22,
+          "1": 55,
+          "2": 22
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 23,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 23,
+        "seven_valuation_counts": {
+          "0": 23,
+          "1": 53,
+          "2": 23
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 24,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 24,
+        "seven_valuation_counts": {
+          "0": 24,
+          "1": 51,
+          "2": 24
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 25,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 25,
+        "seven_valuation_counts": {
+          "0": 25,
+          "1": 49,
+          "2": 25
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 26,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 26,
+        "seven_valuation_counts": {
+          "0": 26,
+          "1": 47,
+          "2": 26
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 27,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 27,
+        "seven_valuation_counts": {
+          "0": 27,
+          "1": 45,
+          "2": 27
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 28,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 28,
+        "seven_valuation_counts": {
+          "0": 28,
+          "1": 43,
+          "2": 28
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 29,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 29,
+        "seven_valuation_counts": {
+          "0": 29,
+          "1": 41,
+          "2": 29
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 30,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 30,
+        "seven_valuation_counts": {
+          "0": 30,
+          "1": 39,
+          "2": 30
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 31,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 31,
+        "seven_valuation_counts": {
+          "0": 31,
+          "1": 37,
+          "2": 31
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 32,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 32,
+        "seven_valuation_counts": {
+          "0": 32,
+          "1": 35,
+          "2": 32
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 33,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 33,
+        "seven_valuation_counts": {
+          "0": 33,
+          "1": 33,
+          "2": 33
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 34,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 34,
+        "seven_valuation_counts": {
+          "0": 34,
+          "1": 31,
+          "2": 34
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 35,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 35,
+        "seven_valuation_counts": {
+          "0": 35,
+          "1": 29,
+          "2": 35
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 36,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 36,
+        "seven_valuation_counts": {
+          "0": 36,
+          "1": 27,
+          "2": 36
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 37,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 37,
+        "seven_valuation_counts": {
+          "0": 37,
+          "1": 25,
+          "2": 37
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 38,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 38,
+        "seven_valuation_counts": {
+          "0": 38,
+          "1": 23,
+          "2": 38
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 39,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 39,
+        "seven_valuation_counts": {
+          "0": 39,
+          "1": 21,
+          "2": 39
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 40,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 40,
+        "seven_valuation_counts": {
+          "0": 40,
+          "1": 19,
+          "2": 40
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 41,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 41,
+        "seven_valuation_counts": {
+          "0": 41,
+          "1": 17,
+          "2": 41
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 42,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 42,
+        "seven_valuation_counts": {
+          "0": 42,
+          "1": 15,
+          "2": 42
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 43,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 43,
+        "seven_valuation_counts": {
+          "0": 43,
+          "1": 13,
+          "2": 43
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 44,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 44,
+        "seven_valuation_counts": {
+          "0": 44,
+          "1": 11,
+          "2": 44
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 45,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 45,
+        "seven_valuation_counts": {
+          "0": 45,
+          "1": 9,
+          "2": 45
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 46,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 46,
+        "seven_valuation_counts": {
+          "0": 46,
+          "1": 7,
+          "2": 46
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 47,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 47,
+        "seven_valuation_counts": {
+          "0": 47,
+          "1": 5,
+          "2": 47
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 48,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 48,
+        "seven_valuation_counts": {
+          "0": 48,
+          "1": 3,
+          "2": 48
+        },
+        "seven_valuations_pair_to_two": true
+      },
+      {
+        "all_checks_pass": true,
+        "determinant_matches": true,
+        "divisibility_chain": true,
+        "factor_count": 99,
+        "rank": 49,
+        "rank_mod_2": 98,
+        "rank_mod_5": 98,
+        "rank_mod_7": 49,
+        "seven_valuation_counts": {
+          "0": 49,
+          "1": 1,
+          "2": 49
+        },
+        "seven_valuations_pair_to_two": true
+      }
+    ],
+    "range_checked": [
+      1,
+      49
+    ]
+  },
+  "symmetric_square": {
+    "ambient_dimension": "r(r+1)/2",
+    "derived_floor": 14,
+    "floor_rank_passes": true,
+    "gram_rank_mod_7": 98,
+    "previous_rank_fails": true,
+    "pure_square_gram": "S mod 7 Hadamard-square = J-I",
+    "pure_square_span_rank": 98,
+    "relation": "sum_i (v_i symmetric_tensor v_i) = 0"
+  }
+}

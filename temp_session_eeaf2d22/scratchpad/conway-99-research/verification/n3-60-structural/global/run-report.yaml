@@ -1,0 +1,110 @@
+role: verifier
+date_utc: "2026-07-23T13:37:47Z"
+git_commit: "f16ec3d49e5e7f7fde0a8f20ea324d6f49c5b24c"
+claim_label: DERIVED
+scope: >-
+  Independent construction/check of the conditional n3=60 global reduction:
+  every admissible sum(q)=40 profile, endpoint-local crossing semantics,
+  exclusions through r=19, and the r=20,m=28 and r=20,m=29 exclusions.
+  The r=20,m=27 and r=20,m=30 residual regimes are not resolved here.
+inputs:
+  "verification/n3-60-structural/preinspection-freeze.md":
+    sha256: "983f90c1d150c6e14e5e2bc7a010e1a3809848ddb1e4b825e5fdfac70398d6af"
+  "verification/2026-07-23-wave15-global-lift-audit.md":
+    sha256: "edda3785d080db464028f10c22bcae5c0bf17f1e61432a8641bfa6ffdccab036"
+  "verification/2026-07-23-wave15-algebraic-audit.md":
+    sha256: "b0541d05d2c1c359152b86223e2ebbdbd002b2ff42deb699f6a0b21d149a5b45"
+  "verification/2026-07-23-wave16-n3-51-structural-audit.md":
+    sha256: "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6"
+  "attempts/wave15-global-lift/subset-moment-certificate.json":
+    sha256: "cb02ab80f92d7d2c8ec5140e3be2916354976442aa2e1869524aa728c73bd386"
+  "attempts/wave15-global-lift/verify_subset_moment_certificate.py":
+    sha256: "0429db33fa0a61864ff8456326379fab47a09e7b8ea7234130d12b018cd041c2"
+  "attempts/wave16-n3-51-structural/exact_check.py":
+    sha256: "5aef211ea7d457543fc3f494eea125bbd0fd6fae2533fd566b475ff3f971c5cf"
+  "attempts/wave16-n3-51-structural/exact-checks.json":
+    sha256: "7419a54effd68d6853e787616a82dc618163d472d8969772cd2e6220b336ab24"
+  "agents/2026-07-23-wave19-n3-60-structural.md":
+    sha256: "b2f90af07f34a6525ea35cdf4d392d95aea10fc319633cd17037d00145690744"
+  "attempts/wave19-n3-60-structural/exact_check.py":
+    sha256: "c7564eef0f1c62165c91a36071ab34b494ead891877011e755407ad48adee460"
+  "attempts/wave19-n3-60-structural/exact-checks.json":
+    sha256: "fc884ea131b1b6c926d9e71ddb1f7925e15c39498f1d7b72819a6473b39ab8dd"
+  "attempts/wave19-n3-60-structural/test_exact_check.py":
+    sha256: "1b1d2628d6c2d837dec24ec679d579676b5a0e66962e0266cee2642040bf6165"
+  "attempts/wave19-n3-60-structural/failed-attempts.md":
+    sha256: "62d43cdb66c599c8c1e1618ca54267c1bf08ba20ad175e04883349cf6f876a0e"
+  "attempts/wave19-n3-60-structural/residual-certificates.json":
+    sha256: "3396b3b67b944b86bfd0d51e8beca25dfc9350815269c62cda4fa7c22a7a5c8b"
+method: >-
+  Pinned every inspected premise/artifact before use. Re-derived d_K>=4
+  from the three-point non-singleton/linearity lower bound and an explicit
+  degree-three Berge obstruction. Enumerated q profiles twice, first by
+  fixed-length nondecreasing partitions and then by q-value histogram
+  recursion. Enumerated point profiles twice, by excess partitions and
+  excess histograms. Reconstructed d_H(uv)=e_L(P',Q') crossing semantics
+  from primitive endpoint label sets after common-label deletion, and
+  compared bit-mask enumeration with the structural active-row/active-column
+  formula. Re-derived the spectral and outside
+  moment formulas, checked the latter by direct counting on every subset of
+  C5, and gave a separate dynamic-programming check of each balanced integer
+  square minimum. Covered every finite exclusion case explicitly and ran
+  hostile endpoint, graph, profile, canonicalization, and histogram
+  mutations. Only after the independent derivation was encoded did the
+  checker compare its canonical profile set, crossing rows, and m=29 moments
+  with the submitted Wave19 JSON.
+command: |
+  .venv\Scripts\python.exe -B attempts\wave15-global-lift\verify_subset_moment_certificate.py attempts\wave15-global-lift\subset-moment-certificate.json
+  .venv\Scripts\python.exe -B attempts\wave16-n3-51-structural\exact_check.py --verify attempts\wave16-n3-51-structural\exact-checks.json
+  .venv\Scripts\python.exe -B verification\n3-60-structural\global\independent_global_check.py
+  .venv\Scripts\python.exe -B -m unittest -v verification\n3-60-structural\global\test_independent_global_check.py
+  .venv\Scripts\python.exe -B verification\n3-60-structural\global\independent_global_check.py --output verification\n3-60-structural\global\global-reduction-certificate.json
+  .venv\Scripts\python.exe -B verification\n3-60-structural\global\independent_global_check.py --verify verification\n3-60-structural\global\global-reduction-certificate.json
+  .venv\Scripts\python.exe -B attempts\wave19-n3-60-structural\exact_check.py --verify attempts\wave19-n3-60-structural\exact-checks.json --verify-residual attempts\wave19-n3-60-structural\residual-certificates.json
+  .venv\Scripts\python.exe -B -m unittest -v attempts\wave19-n3-60-structural\test_exact_check.py
+outputs:
+  "verification/n3-60-structural/global/independent_global_check.py":
+    sha256: "d65e61ee7ff21707a665f5ba426e8cf0aa8dbdfb5c95e1e11d9befc85c5e6db6"
+  "verification/n3-60-structural/global/test_independent_global_check.py":
+    sha256: "7c56c9ead846a5364ccc36b164df68fe7d2a90c76519908597474cf86c5bedc7"
+  "verification/n3-60-structural/global/global-reduction-certificate.json":
+    sha256: "2bc0a9bdf21f6b2a087f5df5e5170bc96f455224c06ec9699a80af4a9d84854b"
+  "verification/n3-60-structural/global/failures.md":
+    sha256: "c00f3d91e51f4dfc9f37698d78d0aa61cff08fb236b212a1f1073e909c88af57"
+results:
+  pinned_inputs: "14/14 MATCH"
+  authenticated_prior_replays: "2/2 PASS"
+  independent_tests_final: "16/16 PASS"
+  submitted_wave19_tests: "11/11 PASS"
+  deterministic_certificate_replay: PASS_BYTE_IDENTICAL
+  admissible_q_profiles: 13
+  admissible_q_profiles_through_r19: 12
+  r20_m28_point_profiles_excluded: 5
+  r20_m29_point_profiles_excluded: 2
+  endpoint_mutations_rejected: 10
+  disconnected_cubic_control: RETAINED
+  degree_preserving_triangle_creating_2_switch: REJECTED_BY_TRIANGLE_FREE
+  moment_collision_control: RETAINED
+  suspected_semantic_gap: NONE_FOUND_IN_SCOPE
+  status_boundary: UNKNOWN_FINITE_RESIDUAL
+restrictions:
+  - "No automorphism restriction: sorted q profiles are the proved quotient by arbitrary label relabeling."
+  - "No connectivity assumption: a disconnected double-Petersen cubic graph is explicitly retained."
+  - "F is assumed simple and triangle-free only where these follow from indexed-point linearity and no-Berge."
+  - "Point-size histograms are not treated as realizability certificates."
+  - "Outside first/second moments are only necessary conditions; distinct moment-colliding histograms are retained."
+  - "No solver status or failure to construct is used as evidence."
+  - "No prohibited later-wave file, result, code, or artifact was opened, executed, cited, or imported."
+limitations: >-
+  Conditional on the authenticated Wave15/16 H/L, indexed-point,
+  fixed-point, no-singleton, no-Berge, and target spectral premises rather
+  than a fresh 99-by-99 adjacency derivation. This verifier does not promote
+  its own DERIVED result to VERIFIED. The m=27 and m=30 residual regimes
+  remain outside this subtask and keep the target status at
+  UNKNOWN_FINITE_RESIDUAL. One initial PowerShell hash wrapper failed at
+  parse time, and one auxiliary test fixture initially used 786 instead of
+  the correct 798 for a noncandidate 70-term sum-234 control; both failures
+  are preserved in failures.md. No Git command was run. The full commit
+  value was observed by directly reading .git/HEAD and its referenced file;
+  the shared branch may move, while file hashes above pin the actual inputs
+  and outputs.

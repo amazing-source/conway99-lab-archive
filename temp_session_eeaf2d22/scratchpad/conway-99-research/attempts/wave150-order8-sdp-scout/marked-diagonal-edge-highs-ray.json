@@ -1,0 +1,189 @@
+{
+  "candidate": {
+    "candidate_available": false
+  },
+  "claim_label": "CANDIDATE",
+  "conclusion": {
+    "Conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  },
+  "format": "wave150-order8-endpoint-sdp-scout-v1",
+  "inputs": {
+    "attempts/wave147-alternative-lane/coefficients.json.gz": "a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e",
+    "attempts/wave147-alternative-lane/exact-results.json": "8baea3d7fdf69ff6653ff859d30ea975dcbef44330445ace73ae051c7db1373c",
+    "attempts/wave148-marked-order8/marked-rows.json.gz": "e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1",
+    "attempts/wave44-rooted-flags/row-system.json": "fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722",
+    "attempts/wave45-flag-moment/flag_moment-v1.py": "21ed58592eeced3433fdff0b98ae4f963b269ed0b39be05322f1dac42ce1be70"
+  },
+  "limitations": [
+    "Wave148 marked degree/common-neighbor order-eight rows are included.",
+    "A floating solver status or negative common margin is not a proof.",
+    "A numerical feasible point is not an exact rational witness and is not a graph.",
+    "A strict bound requires an independently replayed exact rational SDP dual certificate."
+  ],
+  "memory": [
+    {
+      "available_physical_gib": 26.02318572998047,
+      "free_physical_memory_percent": 41.2034997433623,
+      "label": "before_load",
+      "total_physical_gib": 63.15770721435547
+    },
+    {
+      "available_physical_gib": 25.93701934814453,
+      "free_physical_memory_percent": 41.06706923371208,
+      "label": "after_load",
+      "total_physical_gib": 63.15770721435547
+    },
+    {
+      "available_physical_gib": 25.93936538696289,
+      "free_physical_memory_percent": 41.070783806203444,
+      "label": "before_solve",
+      "total_physical_gib": 63.15770721435547
+    },
+    {
+      "available_physical_gib": 25.907360076904297,
+      "free_physical_memory_percent": 41.02010858148389,
+      "label": "after_solve",
+      "total_physical_gib": 63.15770721435547
+    }
+  ],
+  "model": {
+    "centered_covariance_diagonal_only": true,
+    "centered_covariance_forced_zero": false,
+    "centered_covariance_psd": true,
+    "deletion_nonzeros": 5333,
+    "deletion_rows": 208,
+    "marked_order8_rows_included": true,
+    "marked_rows": {
+      "order7_nonzeros": 4491,
+      "order8_nonzeros": 28654,
+      "ordered_pair_rows": 4440,
+      "total_rows": 5384,
+      "vertex_rows": 944,
+      "zero_rows": 893
+    },
+    "moment_blocks": {
+      "ordered_edge": {
+        "constant_nonzeros": 1472,
+        "mean_probability_nonzeros": 66,
+        "mean_probability_sum": 1.0000000000000002,
+        "order7_nonzeros": 31718,
+        "order8_nonzeros": 154998,
+        "scale": 30129635289600,
+        "size": 66
+      }
+    },
+    "objective": "maximize a common normalized PSD eigenvalue margin",
+    "order7_density_variables": 208,
+    "order8_density_variables": 916,
+    "selected_moment_families": [
+      "ordered_edge"
+    ],
+    "wave44_rows": 170
+  },
+  "scope": "Numerical common-margin scout for the n3=4158 two-root order-eight relaxation using Wave44 rows, ordinary 7->8 deletion, nonnegativity, both Wave147 PSD blocks, and optionally the Wave148 marked rows.",
+  "solver": {
+    "elapsed_wall_seconds": 9.698619604110718,
+    "eps": 1e-09,
+    "error": null,
+    "infeasibility_dual_ray": {
+      "blocks": [
+        {
+          "available": true,
+          "label": "sum_p7",
+          "maximum": -0.0,
+          "minimum": -0.0,
+          "nonzero_support": [],
+          "shape": []
+        },
+        {
+          "available": true,
+          "label": "sum_p8",
+          "maximum": -0.0,
+          "minimum": -0.0,
+          "nonzero_support": [],
+          "shape": []
+        },
+        {
+          "available": true,
+          "label": "deletion",
+          "maximum": -0.0,
+          "minimum": -0.0,
+          "nonzero_support": [],
+          "shape": [
+            208
+          ]
+        },
+        {
+          "available": true,
+          "label": "wave44",
+          "maximum": -0.0,
+          "minimum": -0.0,
+          "nonzero_support": [],
+          "shape": [
+            170
+          ]
+        },
+        {
+          "available": true,
+          "label": "y_lower",
+          "maximum": -0.0,
+          "minimum": -0.0,
+          "nonzero_support": [],
+          "shape": []
+        },
+        {
+          "available": true,
+          "label": "y_upper",
+          "maximum": -0.0,
+          "minimum": -0.0,
+          "nonzero_support": [],
+          "shape": []
+        },
+        {
+          "available": true,
+          "label": "marked",
+          "maximum": -0.0,
+          "minimum": -0.0,
+          "nonzero_support": [],
+          "shape": [
+            5384
+          ]
+        },
+        {
+          "available": true,
+          "label": "ordered_edge_centered_diagonal",
+          "maximum": -0.0,
+          "minimum": -0.0,
+          "nonzero_support": [],
+          "shape": [
+            66
+          ]
+        }
+      ],
+      "claim_label": "CANDIDATE",
+      "source": "CVXPY mapping of the HiGHS floating dual ray",
+      "total_nonzeros": 0,
+      "zero_threshold": 1e-12
+    },
+    "iterations": null,
+    "max_iters": 1,
+    "name": "HIGHS",
+    "objective_value": null,
+    "setup_time_seconds": null,
+    "solve_time_seconds": 0.14395650010555983,
+    "status": "infeasible",
+    "time_limit_seconds": 180
+  },
+  "target": {
+    "endpoint_equivalence": "n3=4158 iff the induced prism count is zero",
+    "n3": 4158,
+    "srg": [
+      99,
+      14,
+      1,
+      2
+    ]
+  }
+}

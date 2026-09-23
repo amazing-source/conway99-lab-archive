@@ -1,0 +1,167 @@
+{
+  "claim_label": "VERIFIED",
+  "format": "wave90-short-vector-count-upper-independent-v1",
+  "global_count": {
+    "N14_upper_bound": 5544,
+    "antipodal_pair_rooted_positive_incidences": 14,
+    "identity": "7*N14=sum_o #{t:t_o=+1}",
+    "positive_coordinates_per_oriented_vector": 7,
+    "root_count": 99
+  },
+  "injectivity": {
+    "all_roots_reconstruct_both_sign_sides": true,
+    "canonical_fano_rows": [
+      {
+        "negative_side_recovered": true,
+        "positive_side_recovered": true,
+        "root": 0,
+        "seed": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "sign_vector_recovered": true,
+        "six_pair_labels_distinct": true
+      },
+      {
+        "negative_side_recovered": true,
+        "positive_side_recovered": true,
+        "root": 1,
+        "seed": [
+          2,
+          3,
+          6,
+          7
+        ],
+        "sign_vector_recovered": true,
+        "six_pair_labels_distinct": true
+      },
+      {
+        "negative_side_recovered": true,
+        "positive_side_recovered": true,
+        "root": 2,
+        "seed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "sign_vector_recovered": true,
+        "six_pair_labels_distinct": true
+      },
+      {
+        "negative_side_recovered": true,
+        "positive_side_recovered": true,
+        "root": 3,
+        "seed": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "sign_vector_recovered": true,
+        "six_pair_labels_distinct": true
+      },
+      {
+        "negative_side_recovered": true,
+        "positive_side_recovered": true,
+        "root": 4,
+        "seed": [
+          1,
+          3,
+          4,
+          6
+        ],
+        "sign_vector_recovered": true,
+        "six_pair_labels_distinct": true
+      },
+      {
+        "negative_side_recovered": true,
+        "positive_side_recovered": true,
+        "root": 5,
+        "seed": [
+          1,
+          2,
+          5,
+          6
+        ],
+        "sign_vector_recovered": true,
+        "six_pair_labels_distinct": true
+      },
+      {
+        "negative_side_recovered": true,
+        "positive_side_recovered": true,
+        "root": 6,
+        "seed": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "sign_vector_recovered": true,
+        "six_pair_labels_distinct": true
+      }
+    ],
+    "principle": "Q gives the six complementary-Fano pair labels and hence the positive side; saturated mu=2 common-neighbor pairs of positive vertices recover the full negative side",
+    "root_positive_removes_global_sign_ambiguity": true
+  },
+  "limitations": [
+    "The theorem is conditional on the prism-free endpoint.",
+    "The theorem bounds N14 only, not N16 or N18.",
+    "No rank-28 hypothesis is used in this upper bound.",
+    "No graph nonexistence or Conway-99 resolution follows alone."
+  ],
+  "role": "verifier",
+  "rooted_scaffold": {
+    "candidate_transitions_per_base": 60,
+    "local_prism_free_matching_counts": [
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040
+    ],
+    "mate_pairs": 7,
+    "prism_free_transition_candidates": 840,
+    "residual_labels": 84,
+    "seed_count": 560,
+    "seed_formula": "C(7,4)*2^4"
+  },
+  "scope": {
+    "N14_counts_oriented_vectors_both_signs": true,
+    "equivalent_endpoint_value_imported": "n3=4158",
+    "hypothetical_graph": "srg(99,14,1,2)",
+    "requires_prism_free_endpoint_P0": true,
+    "requires_rank_28": false
+  },
+  "transition_count": {
+    "bad_seed_lower_bound": 168,
+    "local_selected_transition_cap": [
+      1
+    ],
+    "rooted_vector_upper_bound": 392,
+    "seed_extensions_per_selected_transition": [
+      8
+    ],
+    "selected_transitions": 84,
+    "selected_transitions_per_seed_cap": 4,
+    "transition_seed_incidences": 672
+  },
+  "verdict": {
+    "Conway_99": "UNKNOWN",
+    "N14_plus_N16_plus_N18_upper_bound": "NOT_PROVED",
+    "N14_upper_bound_5544": "VERIFIED_SCOPED",
+    "novelty": "UNKNOWN",
+    "q16_excluded": false
+  }
+}

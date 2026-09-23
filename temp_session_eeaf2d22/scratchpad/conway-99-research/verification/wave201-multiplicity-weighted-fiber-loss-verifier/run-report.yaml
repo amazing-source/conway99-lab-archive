@@ -1,0 +1,49 @@
+role: verifier
+date_utc: 2026-07-29T04:43:54Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: verify the arbitrary
+  multiplicity local inequality
+  delta_x>=sum_nonprivate_y(m_x(y)-2), including multiple labels in one
+  fibre and m=1, derive SM>=0 and the exact target
+  (19C-85V)/10, and prove Q>=7059.
+inputs:
+  verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256: eb833bf4ad503fb2243882704492f6bf836525f4b619de8a1979ffc6f0f785c9
+  verification/wave198-orientation-lift-verifier/package-manifest.sha256: 9d76bf2a0f5fa1ec2d3d532446c7bd249fd780e96c47de159244ceda790d7432
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/independent-result-freeze.sha256: cf576dfb43a4727f9cfef49668d9318311d8532e2f7ffc6f665c24ed2a07af8d
+  attempts/wave201-multiplicity-weighted-fiber-loss-proof-a/package-manifest.sha256: 36d95b7d1bee4739cc5f33c780d22168fe58bf974904031db86d25da77bce695
+  attempts/wave201-multiplicity-weighted-fiber-loss-proof-b-audit/package-manifest.sha256: d0c98bd36172d010596c2b428e5827438c633e4db9e0ed5783e18d69e2caf97c
+method: >-
+  Source-blind exact leaf-value multiset decomposition, explicit
+  selected-versus-full incidence, separate deficient and
+  Hilton--Milner equality centers, exact Fraction coefficient expansion,
+  rational equality and integer near-equality controls, followed by
+  sealed proof-A and hostile proof-B comparison. No graph,
+  configuration, family, cover, SAT, LP, enumeration, isomorphism, or
+  brute-force search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave201-multiplicity-weighted-fiber-loss-verifier\independent_check.py
+  --verify
+  verification\wave201-multiplicity-weighted-fiber-loss-verifier\independent-math-result.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave201-multiplicity-weighted-fiber-loss-verifier\test_independent_check.py
+outputs:
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/audit.md: ee730787c6ba90790584e8a29ab88b881b9053900e795b01f87270f394727869
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/independent_check.py: c91090ce4a15e7f2fb611d291f2ea053ea883988a7d1b34859cd90aca9a12aa0
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/independent-math-result.json: b2f3bc49fd64d2297464a2a4a35ee3a6d0682dca85c86ae0af98eb638033828c
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/independent-result-freeze.sha256: cf576dfb43a4727f9cfef49668d9318311d8532e2f7ffc6f665c24ed2a07af8d
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/input-freeze.sha256: 6bfa3a72f18a1808537307c5eed3a9821658b18038ec1dd3b43ca1823ad98bd9
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/pre-source-input-freeze.sha256: ed5550e4a30fa33bd12c3352081a5b9d81ec664dab0efab13cbe0bfd076777f1
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/protocol.md: 7d5f7b376434799e6b04925073d38f9ac5d38674c808477dcfc1621b3edb6e9c
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/README.md: 81646f6d435f7d025a3340f1f969ab2e1d430398303158aa182dfa1832ac8d9f
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/test_independent_check.py: 82caba2d8980c92afeb91da037608053ee7669123e1cd727e548714c34af321a
+  verification/wave201-multiplicity-weighted-fiber-loss-verifier/verification-results.json: e5453eb3b971fef7361cef943222ecad5fd5c2b15a461bfe5bc064087430ceb2
+limitations:
+  - Conditional on the frozen prism-free rank-11 endpoint.
+  - Equality and near-equality rows are accounting controls, not graph,
+    flag-family, code, cover, or endpoint objects.
+  - The theorem supplies no incompatible endpoint upper bound.
+  - Rank 11, endpoint existence, strict original n3 improvement,
+    external novelty, and Conway-99 remain UNKNOWN.

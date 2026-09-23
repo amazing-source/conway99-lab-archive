@@ -1,0 +1,40 @@
+role: verifier
+date_utc: 2026-07-24T10:48:16Z
+git_commit: b2595baa40d50e9c259051751fe27090bee6a449
+claim_label: VERIFIED
+scope: >-
+  Frozen candidate bytes, exact one-fixed-design assignment encoding, timeout
+  metadata, and hostile O-Q partial-object arithmetic only. No graph
+  construction or exclusion is verified.
+inputs:
+  precomparison-freeze.sha256: 4ccbbad9c01eab764d9aa6fb207114e43f8c5a36bec3ec5bf0d161708ce0360d
+  input-freeze.sha256: 30325aae271d7da2fd08e80ade17539d9923e9ce04c229638a60ad6cd2b105fc
+  ../wave33-rooted-construction-candidate-freeze.sha256: 441465c157f28e658afde31e6ca0cff49ccb5841a001150bd3e3af616c5bf63a
+  ../../attempts/wave33-rooted-construction/partial-design-certificate.json: 340e5df716ad63bceba25c745ab04c22ea1a3dca01e939072f09775a5fc5f634
+  ../../attempts/wave33-rooted-construction/exact-results.json: ba6640eacd041bc8349024a1d3f13e3d74bd67cdad64d2d78c9a94927319c496
+method: >-
+  Freeze a strict standard-library checker before candidate release; validate
+  all nested manifests; reconstruct B, F, BF, the fixed design, and all MILP
+  assignment rows independently; statically inspect discovery sources; run
+  hostile status/scope/domain tests; independently reimplement the deterministic
+  partial search; then replay the exact checker and bounded MILP only as
+  post-comparison metadata.
+command: |-
+  python -B -m unittest -v test_independent_check.py test_candidate_comparison.py
+  python -B candidate_comparison.py --reproduce-search
+outputs:
+  candidate_comparison.py: c09e957131547f005f70c3b00d82644a0708653fcb51dbd8da78f5edf3660720
+  test_candidate_comparison.py: e4604856a030401ab95be31239a7c326a13346d263e077410ad25df009538697
+  candidate-comparison-results.json: c0476fb877e0e7d6a6fc63b1a4c72bda0d7804a18a4e4b2b6d5a1bcbc4b6b459
+  audit.md: 4312cfa776f85fe6b5fef17d7e2636fd55b3351db7b06a50885edb578ab48f39
+  failed-objections.md: 5063935aace1fc2f87def834361a219d5db5ab8dbec4a79cc7f73eac694a2ace
+  replay-ledger.md: c719b991866a5fb8494fdbc91464875468360d8732b7edb3618773b040a6cfda
+limitations:
+  - The MILP covers all bijections of one fixed simple 2-(15,3,2) design only.
+  - The timeout has no positive or negative mathematical status.
+  - The hostile object fails ten BF=2J equations and supplies no O-O layer.
+  - Empty D is a verifier control, not a search restriction.
+  - The discovery checker has nonblocking scope-metadata and duplicate-key
+    coverage gaps; the clean-room verifier supplies those gates.
+  - Complete graph extension, rooted endpoint, n3=708, Conway-99, and novelty
+    remain UNKNOWN.

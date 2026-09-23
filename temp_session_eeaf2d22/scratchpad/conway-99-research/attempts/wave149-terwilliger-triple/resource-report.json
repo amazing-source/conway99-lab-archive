@@ -1,0 +1,24 @@
+{
+  "date_utc": "2026-07-28T11:35:19Z",
+  "host_free_memory_floor_required_percent": 15,
+  "observed_free_memory_percent_range": [
+    38.0,
+    41.2
+  ],
+  "exact_checker_runtime_seconds": 0.1,
+  "test_count": 3,
+  "bounded_scouts": [
+    {
+      "engine": "scipy.optimize.milp with HiGHS",
+      "seconds": 60,
+      "status": "TIME_LIMIT_NO_INCUMBENT",
+      "certificate_value": "NONE"
+    },
+    {
+      "engine": "Z3 pseudo-Boolean solver",
+      "seconds": 120,
+      "status": "UNKNOWN",
+      "certificate_value": "NONE"
+    }
+  ]
+}

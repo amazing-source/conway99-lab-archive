@@ -1,0 +1,338 @@
+{
+  "claim_label": "VERIFIED_SCOPED_CONDITIONAL_WITH_WORDING_QUALIFIER",
+  "conclusion": {
+    "compatible_H": "UNKNOWN",
+    "endpoint_excluded": false,
+    "fixed_triangle_rank_bridge": "VERIFIED_CONDITIONAL",
+    "frozen_rank_ten_local_relaxation": "VERIFIED",
+    "novelty_or_priority": "UNKNOWN_NOT_AUDITED",
+    "rank_twelve_boundary_excluded": false,
+    "seven_clique_rank_wording": "QUALIFIED: centered Gram rank 6; uncentered Gram rank 7",
+    "signed_four_cycle_imbalance": "VERIFIED_CONDITIONAL",
+    "simultaneous_60_column_B": "UNKNOWN",
+    "target_status": "UNKNOWN",
+    "ternary_centered_rank_drop": "VERIFIED_CONDITIONAL",
+    "upper_bound_improved_below_4158": false
+  },
+  "frozen_commit": "3014f3b1c010cdde1687b8878d4ec58d2bb90f03",
+  "frozen_local_positive_control": {
+    "adjacency_rows_hex": [
+      "800080002",
+      "80001001",
+      "1004008",
+      "100020004",
+      "200002020",
+      "2800010",
+      "40100080",
+      "400010040",
+      "4040200",
+      "10400100",
+      "20200800",
+      "8008400",
+      "2002002",
+      "400001010",
+      "200008004",
+      "20004800",
+      "1020080",
+      "800010008",
+      "8080100",
+      "40040001",
+      "80200040",
+      "4100400",
+      "100800200",
+      "10400020",
+      "2010004",
+      "1001020",
+      "8200100",
+      "4040800",
+      "20800200",
+      "10008400",
+      "80080040",
+      "40100002",
+      "200400008",
+      "100004010",
+      "800002080",
+      "400020001"
+    ],
+    "canonical_upper_triangle_bits_sha256": "b5a5d573b5eb1beba106e5735d5f4e2f71c8b23b036e0e44a1014718f0570984",
+    "component_partition_in_fibre_units": [
+      12
+    ],
+    "connected": true,
+    "degree_set": [
+      3
+    ],
+    "edges": 54,
+    "individual_block_census": {
+      "allowed_pairs_per_fibre": [
+        60,
+        60,
+        60
+      ],
+      "induced_matching_survivors": 183596,
+      "mixed_equation_survivors": 152399,
+      "mixed_survivors_by_internal_X_edges": {
+        "0": 52517,
+        "1": 76540,
+        "2": 22610,
+        "3": 732
+      },
+      "raw_pair_triples": 216000,
+      "scope": "individual six-point columns only; no simultaneous 60-column B"
+    },
+    "local_rank_bridge": {
+      "L_one_is_zero": true,
+      "L_u_equals_one": true,
+      "each_bipartite_block_degree": 2,
+      "global_scope": "D_T is only a principal submatrix of D, so this proves rank(P_T-I)<=rank(D)=r3-1, never equality with the global rank.",
+      "matrix": "P-I over F_3",
+      "one_transpose_u_mod_3": 0,
+      "quotient_degree": 4,
+      "quotient_parts": [
+        6,
+        6,
+        6
+      ],
+      "quotient_vertices": 18,
+      "rank_P_minus_I_F3": 10,
+      "rank_equality_kernel_argument": "For D_T=[[0,1^T],[1,J+L]], kernel equations give 1^T x=0 and Lx=-a1. With Lu=1 and 1^Tu=0, (a,x) maps bijectively to x+a*u in ker(L); hence nullity(D_T)=nullity(L)+1.",
+      "rank_local_19_gram_F3": 10,
+      "witness_u": "2 times the indicator of the first six-point part"
+    },
+    "pair_codegree_histogram": {
+      "cross_fibre_nonedge:0": 296,
+      "cross_fibre_nonedge:1": 92,
+      "cross_fibre_nonedge:2": 8,
+      "edge:0": 54,
+      "same_fibre_nonedge:0": 180
+    },
+    "quotient_contraction": {
+      "cross_edges_by_fibre_pair": {
+        "0-1": 12,
+        "0-2": 12,
+        "1-2": 12
+      },
+      "maximum_quotient_edge_multiplicity": 1,
+      "quotient_bipartite_block_degree_sets": {
+        "0-1": [
+          2
+        ],
+        "0-2": [
+          2
+        ],
+        "1-2": [
+          2
+        ]
+      },
+      "quotient_degree_set": [
+        4
+      ],
+      "within_fibre_matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ]
+      ]
+    },
+    "required_BBt": {
+      "constant_eigenvalue": 60,
+      "diagonal_set": [
+        10
+      ],
+      "entry_histogram": {
+        "0": 52,
+        "1": 616,
+        "10": 36,
+        "2": 592
+      },
+      "entry_maximum": 10,
+      "entry_minimum": 0,
+      "formula": "12I-A_X+2J-RR^T-A_X^2",
+      "kernel_contains_two_fibre_differences": true,
+      "positive_semidefinite": true,
+      "positive_semidefinite_argument": "The fibre-indicator space has eigenvalues 60,0,0 for this Gram. On its 33-dimensional orthogonal complement the Gram equals (3I-A_X)(4I+A_X). A_X is symmetric cubic, so its spectrum lies in [-3,3]; connectedness keeps eigenvalue 3 out of this complement. The product is therefore positive there.",
+      "rational_rank": 34,
+      "row_sum_set": [
+        60
+      ]
+    },
+    "triangle_free": true,
+    "vertices": 36
+  },
+  "limitations": [
+    "All general identities are conditional on the frozen hypothetical n3=4158 endpoint premises.",
+    "The signed four-cycle imbalance is necessary and is not a contradiction.",
+    "The local contraction gives only rank(P_T-I)<=r3-1; it does not identify the global rank.",
+    "The frozen core and individual-column census do not construct sixty compatible columns, H, a 99-vertex graph, or an endpoint.",
+    "No endpoint exclusion, improved n3 bound, or novelty claim is made."
+  ],
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "Conditional prism-free n3=4158 endpoint: signed trace subtraction, ternary centering, fixed-base 19-triangle contraction, and one frozen 36-vertex local relaxation",
+  "signed_cycle_hostile_controls": {
+    "balanced_cycle": {
+      "cycle_product": 1,
+      "expected_simple_contribution": 8,
+      "nonsimple": 24,
+      "simple_contribution": 8,
+      "trace_fourth": 32
+    },
+    "balanced_definition": "edge-sign product +1",
+    "unbalanced_cycle": {
+      "cycle_product": -1,
+      "expected_simple_contribution": -8,
+      "nonsimple": 24,
+      "simple_contribution": -8,
+      "trace_fourth": 16
+    },
+    "unbalanced_definition": "edge-sign product -1"
+  },
+  "signed_higher_order_counts": {
+    "balanced_minus_unbalanced_support_four_cycles": 200277,
+    "balanced_minus_unbalanced_support_triangles": 34034,
+    "nonsimple_closed_signed_walks_length_four": 2120580,
+    "trace_S_cubed": 204204,
+    "trace_S_fourth": 3722796
+  },
+  "submission_comparison": {
+    "matched_fields": [
+      "BBt_rank",
+      "centered_clique_rank",
+      "core_hash",
+      "induced_census",
+      "local_rank",
+      "mixed_census",
+      "signed_four_cycle_imbalance",
+      "signed_non_simple_walks"
+    ],
+    "method": "JSON value comparison only; discovery Python was not imported or executed",
+    "mismatches": {},
+    "source": "attempts/wave38-higher-order/exact-results.json"
+  },
+  "ternary_centering": {
+    "MNt_derivation": {
+      "premises": [
+        "Gamma=N^T N-3I",
+        "N N^T=7I+A",
+        "A^2=12I-A+2J",
+        "M=21I+4Gamma-Gamma^2+J"
+      ],
+      "resulting_values": [
+        4,
+        -2,
+        1
+      ],
+      "simplified_identity": "M N^T=9N^T-3N^T A+J",
+      "vertex_cases_for_number_of_neighbors_in_T": [
+        2,
+        1,
+        0
+      ]
+    },
+    "MNt_integer_values": [
+      4,
+      -2,
+      1
+    ],
+    "centered_gram_shift_mod_3": 1,
+    "centered_row_inner_w_mod_3": 0,
+    "centered_row_norm_mod_3": 0,
+    "common_inner_product_with_vT": 2,
+    "mutual_inner_product_in_star": 0,
+    "rank_drop_lemma": {
+      "argument": "All z_T=v_T-w lie in w-perp. Since v_T=z_T+w span the factor space and w is not in w-perp, the z_T span exactly w-perp. The form restricted to w-perp is nondegenerate, so their Gram matrix D=C+J has rank r3-1.",
+      "conclusion": "rank_F3(C+J)=r3-1",
+      "hypotheses": [
+        "C=V H V^T with V full column rank and H nondegenerate",
+        "the factor rows v_T span the r3-dimensional factor space",
+        "all vertex-star sums have inner product 2 with every v_T",
+        "(w,w)=2, so w is anisotropic"
+      ]
+    },
+    "seven_clique_centered_gram_rank_F3": 6,
+    "seven_clique_uncentered_gram_rank_F3": 7,
+    "star_size": 7,
+    "twice_MNt_mod_3": [
+      2,
+      2,
+      2
+    ],
+    "vertex_star_centered_sum_coefficient_mod_3": 0,
+    "w_norm_mod_3": 2,
+    "wording_qualifier": "The rank-six statement is for the centered z_T Gram D=C+J. The uncentered v_T Gram on a vertex star is 2I_7 and has rank seven."
+  }
+}

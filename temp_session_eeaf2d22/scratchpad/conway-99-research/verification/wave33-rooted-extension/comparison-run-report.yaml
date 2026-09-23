@@ -1,0 +1,58 @@
+role: verifier
+date_utc: 2026-07-24T10:28:37Z
+git_commit: b2595baa40d50e9c259051751fe27090bee6a449
+claim_label: VERIFIED
+scope: >-
+  Static clean-room comparison of the frozen Wave 33 rooted-extension
+  candidate against the byte-preserved precomparison verifier package:
+  release and manifest integrity; S,O,Q quotient and Q independence; simple
+  2-(15,3,2) design; six-block necessary-and-sufficient graph-extension
+  criterion; exact induced-O spectrum; 56 triangles; 294 four-cycles;
+  determinant 2^32*3^29; hostile two-PG(3,2) control; and graph-vs-endpoint
+  status scope. Candidate code was not imported or executed.
+inputs:
+  verification/wave33-rooted-extension-candidate-freeze.sha256: f10119fecdbd226ca5a89180e2c8663b88c8f7d929ed8a619015070e0f637566
+  verification/wave33-rooted-extension/artifact-manifest.sha256: a0cd7d284a23aba5576f2da2a1282c9acb209953c3da5d01e706d793f61d3ea7
+  verification/wave33-rooted-extension/independent-results.json: 66cef570dbbb4a86e2a35f780edcfc1873d0ac2c5266f1c2065c902a8f91e778
+  agents/2026-07-24-wave33-rooted-extension.md: c324dc48f5c7b9524b8b2ac02fae3acb8b9ec342d0a61081ee86ae4771434c0c
+  attempts/wave33-rooted-extension/exact-results.json: 193db8ee0c155cc3a97489b4471c4a82ae09823dd9344d043a81778e1a6ba5a1
+method: >-
+  Validate both frozen manifests and every referenced byte; parse candidate
+  Python only as an inert AST; compare candidate JSON and prose against the
+  precomparison semantic reconstruction under an explicit notation map;
+  independently regenerate the PG(3,2) hostile design, support labeling,
+  exact FB histogram, quadratic spectral moments, determinant, four-cycle
+  formula, and triangle census. Do not import or execute discovery code.
+command: |-
+  cd verification/wave33-rooted-extension
+  python -B -m unittest -v test_static_compare.py
+  python -B static_compare.py --output comparison-results.json
+outputs:
+  verification/wave33-rooted-extension/comparison-input-freeze.sha256: 4c95fb288d9904dc57a82987aac3715bb90160dff86495c09188549ec4534950
+  verification/wave33-rooted-extension/static_compare.py: 36bd0eb00f17cab4f29f6d2bc1eac42a55d3217eaf55ba78284a25b62d653571
+  verification/wave33-rooted-extension/test_static_compare.py: f13b3f26f5ec9f24685b3779412b2845e535419004f063fa48afa04c4a1f5138
+  verification/wave33-rooted-extension/comparison-results.json: 2e36ecade28bca12d35a963a8c6b52777ac7d766a3c4b3267774000fe2e929fd
+  verification/wave33-rooted-extension/comparison-audit.md: fc7abcd53154d4551a5d3d97d38024840b4228195e143559c9e8b46c15644b8a
+runtime:
+  python: "CPython 3.13.14"
+  dependencies: "Python standard library only"
+  comparison_tests: "15/15 PASS"
+verdict:
+  candidate_core_structural_claims: VERIFIED
+  candidate_manifest_and_results_consistency: VERIFIED
+  material_discrepancy: NONE_FOUND
+  binary_criterion_solution: UNKNOWN
+  rooted_graph_extension_or_exclusion: UNKNOWN
+  rooted_endpoint: UNKNOWN
+  n3_708: UNKNOWN
+  Conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - Candidate Python was statically parsed but never imported or executed.
+  - The candidate's reported discovery-suite execution was not reused as
+    verifier evidence.
+  - No binary criterion solution or infeasibility certificate is supplied.
+  - The finite criterion is graph-complete but does not itself discharge
+    projector, lattice, tensor, or Schur endpoint filters.
+  - The result remains conditional on the verified Wave 32 norm-two root
+    support theorem.

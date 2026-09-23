@@ -1,0 +1,31 @@
+role: proof_b
+date_utc: 2026-07-28T00:58:00Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: DERIVED
+scope: >-
+  For a hypothetical srg(99,14,1,2), count both signs and prove
+  N14 <= floor((38808+12P)/7) = floor((55440-4*n3)/7).
+inputs:
+  - path: verification/wave64-rooted-transition-design/package-manifest.sha256
+    sha256: dd138310fcaa4e3e2d2989281f9c7487b498ad1d15901403b32919d7018bb905
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+method: >-
+  Identify mate-forbidden rooted transitions bijectively with prisms through
+  the root, double count the remaining transition-seed incidences, and sum
+  the rooted Fano-seed injection over all vertices.
+command: >-
+  python -B attempts/wave94-general-n3-norm14-bound/exact_check.py ;
+  python -B attempts/wave94-general-n3-norm14-bound/exact_check.py
+  --verify attempts/wave94-general-n3-norm14-bound/exact-results.json ;
+  python -B -m unittest discover
+  -s attempts/wave94-general-n3-norm14-bound -p "test_*.py" -v
+outputs:
+  - path: attempts/wave94-general-n3-norm14-bound/exact-results.json
+  - path: attempts/wave94-general-n3-norm14-bound/test-results.txt
+  - path: attempts/wave94-general-n3-norm14-bound/package-manifest.sha256
+limitations:
+  - discovery does not verify itself
+  - the proof does not bound N16 or N18
+  - no strict n3 upper bound, graph nonexistence, target resolution, or novelty claim follows
+

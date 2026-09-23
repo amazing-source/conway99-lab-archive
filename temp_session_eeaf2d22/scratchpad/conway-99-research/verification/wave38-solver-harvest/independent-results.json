@@ -1,0 +1,90 @@
+{
+  "claim_label": "VERIFIED_QUEUE_AND_NULL_HARVEST_ONLY",
+  "conclusion": {
+    "endpoint_constructed": false,
+    "endpoint_excluded": false,
+    "live_solver_result_verified": false,
+    "proof_coverage": "0/33",
+    "queue_mapping_verified": true,
+    "target_status": "UNKNOWN",
+    "upper_bound_improved_below_4158": false
+  },
+  "coverage": {
+    "artifact_path_count": 231,
+    "case_count": 33,
+    "case_mapping_matches_independent_orbit_reconstruction": true,
+    "casefold_path_collisions": 0,
+    "endpoint_compatible_orbit_weight": 6644,
+    "endpoint_incompatible_orbit_weight": 3751,
+    "parent_case_counts": {
+      "10": 8,
+      "12": 11,
+      "4": 4,
+      "5": 4,
+      "8": 6
+    },
+    "parent_orbit_weights": {
+      "10": 1056,
+      "12": 4224,
+      "4": 132,
+      "5": 528,
+      "8": 704
+    }
+  },
+  "hashes_and_schema": {
+    "all_hashes_match": true,
+    "discovery_input_freeze_entries": 11,
+    "run_report_input_hashes": 11,
+    "run_report_output_hashes": 10
+  },
+  "inputs": {
+    "attempts/wave38-solver-harvest/coverage-plan.json": "2de85c3f73d4b12a579b281c10171a47c12e26a323ecdf9617c1a842a81d8bf2",
+    "attempts/wave38-solver-harvest/input-freeze.sha256": "c0c18edd31f12840fbdc16d9cee12493ed4bfc371c5d3b8455e421cc9e89a790",
+    "attempts/wave38-solver-harvest/process-snapshot.json": "b0515ac9169dcbb74cc7ca243aa6934b4b73eb13f93b9c8110d75af3a960527f",
+    "attempts/wave38-solver-harvest/run-report.yaml": "4c1b42a05c134954cd50ace427cc069da6ab6b9f069e2d7ae74d21e34bb9e1ba",
+    "verification/wave37-rooted-branches/independent_check.py": "2039681ef17eafea7ace392682317d1baf250585d35474fe7dafa35a3cbca3f3",
+    "verification/wave38-solver-harvest/live-observation.json": "62156d0909bb245decd91cca9a4c68cba20ab7e305c4f45fceacf82072cac677"
+  },
+  "limitations": [
+    "The process snapshot is historical and its original CPU sample cannot be replayed.",
+    "Current live-process activity and missing outputs reveal no completed case prefix.",
+    "No proof, terminal result, assignment, or graph exists in the audited scope.",
+    "Branch 15 has only a formula artifact; formula existence contributes zero proof coverage.",
+    "The 33-case queue is conditional on the normalized n3=4158 endpoint setup."
+  ],
+  "path_plan": {
+    "case_owned_artifact_count": 231,
+    "casefold_collisions": 0,
+    "owned_root": "logs/local/wave38-endpoint-33",
+    "published_seed_collision": false,
+    "traversal_or_absolute_paths": 0,
+    "windows_ambiguous_paths": 0
+  },
+  "privacy": {
+    "absolute_user_paths_found": 0,
+    "credential_patterns_found": 0,
+    "sanitized": true,
+    "text_files_inspected": 13
+  },
+  "process_observability": {
+    "activity_evidentiary_value": "NONE",
+    "historical_run_count": 2,
+    "historical_snapshot_replayable": false,
+    "historical_terminal_result_count": 0,
+    "independent_live_outputs_present": 0,
+    "independent_live_worker_count": 2
+  },
+  "proof_boundary": {
+    "independently_checked_endpoint_graphs": 0,
+    "independently_checked_unsat_cases": 0,
+    "package_candidate_graphs_present": 0,
+    "package_proof_files_present": 0,
+    "planned_artifact_count": 231,
+    "planned_artifacts_present": 0,
+    "proof_coverage_denominator": 33,
+    "proof_coverage_numerator": 0
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "independent 33-case queue reconstruction, historical/live absence boundary, path safety, schema, hashes, privacy, and proof coverage"
+}

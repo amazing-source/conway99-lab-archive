@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "claim_label": "DERIVED",
+  "scope": {
+    "criterion": "complete unrestricted labeled Boolean encoding of the Wave 33 six-block graph-extension criterion",
+    "graph_order": 99,
+    "cell_order": [
+      "S",
+      "O",
+      "Q"
+    ],
+    "cell_sizes": [
+      14,
+      70,
+      15
+    ],
+    "target_identity": "A^2 = 12 I - A + 2 J",
+    "coverage": "all labeled D,B assignments",
+    "assumed_automorphism": false,
+    "symmetry_breaking": false,
+    "fixed_O_Q_design": false
+  },
+  "fixed_data": {
+    "support_vertices": "P_0,...,P_6,R_0,...,R_6",
+    "fano_lines_zero_based": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        5,
+        6
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        1,
+        4,
+        6
+      ],
+      [
+        2,
+        3,
+        6
+      ],
+      [
+        2,
+        4,
+        5
+      ]
+    ],
+    "U_semantics": "U[p,7+l]=U[7+l,p]=1 iff point p is not on Fano line l; all within-class and diagonal entries are zero",
+    "O_label_semantics": "(p,l,c), in lexicographic p,l,c order; c=0 only when U[p,7+l]=1 and c in {0,1} when U[p,7+l]=0",
+    "F_semantics": "F[p,(p,l,c)]=F[7+l,(p,l,c)]=1 and every other entry is zero",
+    "support_adjacency_sha256": "8e9df095563e6d7a8166a99d60f51c15c4db6b722080fd233146a2aa6626431d",
+    "support_to_o_sha256": "8a4e68fd7bfa97917c74bde2a3ae34d9786ca1f7597b0bb0b3c77c110cfe0756",
+    "o_labels_sha256": "391ca52fb781969d988c8f75eca24da6c131e480f0e6e5a673b83b04ec39bdb1",
+    "preflight_gates": [
+      "U is 14x14, binary, symmetric, hollow, and 4-regular",
+      "F is 14x70 and binary, with row weight 10 and column weight 2",
+      "U^2 + F F^T = 12 I_14 - U + 2 J_14"
+    ]
+  },
+  "primary_variables": {
+    "total": 3465,
+    "D": {
+      "count": 2415,
+      "domain": "Boolean",
+      "indices": "0 <= i < j < 70",
+      "semantics": "D_{i,j}=D_{j,i}=1 iff labeled O_i and O_j are adjacent",
+      "dimacs_order": "lexicographic i then j",
+      "dimacs_id_range": [
+        1,
+        2415
+      ]
+    },
+    "B": {
+      "count": 1050,
+      "domain": "Boolean",
+      "indices": "0 <= i < 70, 0 <= q < 15",
+      "semantics": "B_{i,q}=1 iff labeled O_i and Q_q are adjacent",
+      "dimacs_order": "lexicographic i then q",
+      "dimacs_id_range": [
+        2416,
+        3465
+      ]
+    },
+    "binary_gate": "DIMACS variables are Boolean",
+    "symmetry_gate": "one D variable represents each unordered pair",
+    "hollow_gate": "D_{i,i} is the fixed constant zero and has no variable",
+    "Q_Q_gate": "the Q-Q adjacency block is the fixed zero matrix",
+    "S_Q_gate": "the S-Q adjacency block is the fixed zero matrix"
+  },
+  "explicit_degree_and_design_counts": [
+    {
+      "family": "D_ROW",
+      "indices": "i in O",
+      "equation": "sum_{j != i} D_{i,j} = 9",
+      "count": 70
+    },
+    {
+      "family": "B_ROW",
+      "indices": "i in O",
+      "equation": "sum_q B_{i,q} = 3",
+      "count": 70
+    },
+    {
+      "family": "B_COLUMN_QQ_DIAGONAL",
+      "indices": "q in Q",
+      "equation": "sum_i B_{i,q} = 14",
+      "count": 15
+    },
+    {
+      "family": "QQ_OFFDIAGONAL",
+      "indices": "q<r in Q",
+      "equation": "sum_i (B_{i,q} AND B_{i,r}) = 2",
+      "count": 105
+    }
+  ],
+  "six_blocks": [
+    {
+      "block": "SS",
+      "matrix_equation": "U^2 + F F^T = 12 I_14 - U + 2 J_14",
+      "encoding": "fixed-data preflight; abort before encoding if false",
+      "variable_equations": 0
+    },
+    {
+      "block": "SO",
+      "matrix_equation": "U F + F D = 2 J_(14x70) - F",
+      "entry_equation": "sum_{j != i:F[s,j]=1} D_{i,j} = 2 - F[s,i] - sum_t U[s,t]F[t,i]",
+      "variable_equations": 980
+    },
+    {
+      "block": "SQ",
+      "matrix_equation": "F B = 2 J_(14x15)",
+      "entry_equation": "sum_{i:F[s,i]=1} B_{i,q} = 2",
+      "variable_equations": 210
+    },
+    {
+      "block": "OO",
+      "matrix_equation": "F^T F + D^2 + B B^T = 12 I_70 - D + 2 J_70",
+      "diagonal_entry_equation": "sum_{j != i} D_{i,j} + sum_q B_{i,q} = 12",
+      "offdiagonal_entry_equation": "sum_{k notin {i,j}} (D_{i,k} AND D_{j,k}) + sum_q (B_{i,q} AND B_{j,q}) + D_{i,j} = 2 - (F^T F)[i,j]",
+      "diagonal_equations": 70,
+      "offdiagonal_equations": 2415,
+      "symmetry_note": "only i<j is encoded because both sides are symmetric"
+    },
+    {
+      "block": "OQ",
+      "matrix_equation": "D B = 2 J_(70x15) - B",
+      "entry_equation": "sum_{j != i} (D_{i,j} AND B_{j,q}) + B_{i,q} = 2",
+      "variable_equations": 1050
+    },
+    {
+      "block": "QQ",
+      "matrix_equation": "B^T B = 12 I_15 + 2 J_15",
+      "diagonal_entry_equation": "sum_i B_{i,q} = 14",
+      "offdiagonal_entry_equation": "sum_i (B_{i,q} AND B_{i,r}) = 2",
+      "diagonal_equations": 15,
+      "offdiagonal_equations": 105,
+      "symmetry_note": "only q<r is encoded off diagonal"
+    }
+  ],
+  "auxiliary_products": [
+    {
+      "kind": "AND_OO_D",
+      "semantics": "z[i,j,k] iff D[i,k] AND D[j,k], for i<j and k notin {i,j}",
+      "count": 164220
+    },
+    {
+      "kind": "AND_OO_B",
+      "semantics": "z[i,j,q] iff B[i,q] AND B[j,q], for i<j",
+      "count": 36225
+    },
+    {
+      "kind": "AND_OQ_DB",
+      "semantics": "z[i,q,j] iff D[i,j] AND B[j,q], for i!=j",
+      "count": 72450
+    },
+    {
+      "kind": "AND_QQ_B",
+      "semantics": "z[q,r,i] iff B[i,q] AND B[i,r], for q<r",
+      "count": 7350
+    }
+  ],
+  "cnf_translation": {
+    "and_equivalence": {
+      "semantics": "z iff x AND y",
+      "clauses": [
+        "not z OR x",
+        "not z OR y",
+        "z OR not x OR not y"
+      ]
+    },
+    "exact_count": {
+      "semantics": "EXACT(literals,k)",
+      "zero_case": "one unit not-x clause per literal",
+      "full_case": "one unit x clause per literal",
+      "general_state": "T(i,j) iff at least j of the first i literals are true, with 1<=j<=min(i,k+1)",
+      "recurrence": "T(i,j) iff T(i-1,j) OR (T(i-1,j-1) AND x_i)",
+      "boundary_constants": "T(i,0)=true; T(0,j)=false for j>0",
+      "recurrence_clauses": [
+        "not a OR y",
+        "not b OR not x OR y",
+        "not y OR a OR b",
+        "not y OR a OR x"
+      ],
+      "terminal_clauses": [
+        "T(n,k)",
+        "not T(n,k+1)"
+      ],
+      "constant_simplification": "tautologies are omitted, false literals are dropped, duplicate literals are merged"
+    },
+    "group_order": [
+      "PRIMARY_D",
+      "PRIMARY_B",
+      "AND_OO_D",
+      "AND_OO_B",
+      "AND_OQ_DB",
+      "AND_QQ_B",
+      "CARD_D_ROW",
+      "CARD_B_ROW",
+      "CARD_B_COLUMN_QQ_DIAGONAL",
+      "CARD_SO",
+      "CARD_SQ",
+      "CARD_OO_DIAGONAL",
+      "CARD_OO_OFFDIAGONAL",
+      "CARD_OQ",
+      "CARD_QQ_OFFDIAGONAL"
+    ],
+    "variable_map": "one JSONL record for each DIMACS id, in id order; CARD_GE records include family, key, prefix, and threshold",
+    "deterministic_implementation": "cleanroom_encoding.py"
+  },
+  "logical_redundancy": {
+    "included": [
+      "D row weight 9",
+      "B row weight 3",
+      "B column weight 14",
+      "OO diagonal sum 12"
+    ],
+    "reason": "the protocol requires explicit degree/row/column gates; redundant exact consequences do not shrink the satisfying D,B domain",
+    "B_row_distinct_clause": "not separately encoded",
+    "B_row_distinct_reason": "if two labeled rows were equal, B row weight 3 and the OO offdiagonal common-neighbor equation, whose right side is at most 2, would contradict each other"
+  },
+  "completeness": {
+    "forward": "every labeled binary D,B satisfying the six matrix blocks and explicit degree counts extends uniquely to satisfying product and threshold auxiliaries",
+    "reverse": "every satisfying CNF assignment decodes to binary symmetric hollow D and binary B satisfying every listed entry equation, hence all six blocks",
+    "assembled_adjacency": "[[U,F,0],[F^T,D,B],[0,B^T,0]]",
+    "graph_conclusion": "the assembled adjacency is a simple labeled graph satisfying A^2=12I-A+2J",
+    "endpoint_conclusion": "none; projector, lattice, tensor, and Schur obligations remain outside this graph criterion"
+  },
+  "status": {
+    "encoding_specification": "DERIVED",
+    "candidate_comparison": "NOT_STARTED",
+    "dimacs_emitted": false,
+    "large_solver_run": false,
+    "binary_solution_or_exclusion": "UNKNOWN",
+    "rooted_graph_extension": "UNKNOWN",
+    "rooted_endpoint": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "Conway_99": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  }
+}

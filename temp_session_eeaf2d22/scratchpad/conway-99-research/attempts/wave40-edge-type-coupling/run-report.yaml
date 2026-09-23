@@ -1,0 +1,57 @@
+role: proof_b
+date_utc: "2026-07-27T03:33:27Z"
+git_commit: "6b28af70c67f062d687251494a047debe70a246f"
+claim_label: CANDIDATE
+scope: >-
+  Conditional prism-free endpoint n3=4158: global edge-type surface
+  identities, an exhaustive normalized all-222 one-triangle quotient census,
+  and the exact 39-vertex Laplacian-rank bridge.
+inputs:
+  - path: attempts/wave40-edge-type-coupling/input-freeze.sha256
+    sha256: 8a69bcfe313ead9e440287dafea934d71f6f9c172e9fc36556bb24b8397c3846
+method: >-
+  Identify E(J) with the N3 relation E(L), glue the edge-local two-factors
+  as face boundaries, identify triangle links with cross-fibre two-factors,
+  enumerate 4,050 normalized all-222 tripartite quotients, eliminate exactly
+  over F3 and F7, derive the 39-block Schur complement, and exhaust all
+  2^18 endpoint-pairing masks for one rank-11 quotient.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  attempts\wave40-edge-type-coupling -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave40-edge-type-coupling\exact_check.py --verify
+  attempts\wave40-edge-type-coupling\exact-results.json
+outputs:
+  - path: attempts/wave40-edge-type-coupling/exact_check.py
+    sha256: 13fb256bb3278dd48c6b246de3a11377507cb272a9680635d6f121b3a62ebe7b
+  - path: attempts/wave40-edge-type-coupling/test_exact_check.py
+    sha256: 1d0c2b0d5674543a35f40747eb4cdd9b379d9952ea3f24d6f8c86e0e557fd1b0
+  - path: attempts/wave40-edge-type-coupling/exact-results.json
+    sha256: 1be5ccadeb5b3273a7f37050e91fc6e37f89b3c7d548e8e02bd6cbbff9e4f062
+  - path: attempts/wave40-edge-type-coupling/README.md
+    sha256: c62a849f93ac6c611b6016f5c53b415cfa792d3d63e10a413c7fee35e4f492ae
+  - path: attempts/wave40-edge-type-coupling/failed-routes.md
+    sha256: 1454f5421bd15dbc55dfc6740c35f43ee3d9935999eb56f20da3e4c3b103a1dc
+  - path: agents/2026-07-27-wave40-edge-type-coupling.md
+    sha256: e297d6499cb72cf198a249cb14eb4660a84ef6ea9491c4967152c745eaefeef7
+tests:
+  passed: 15
+  failed: 0
+result:
+  normalized_all_222_quotients: 4050
+  rank_11_all_222_quotients: 8
+  rank_11_component_profile: "4+8 in fibre units"
+  exact_rank_identity: "rank_F7(K[T union N(T)])=1+rank_F7(3I-A_X)"
+  one_quotient_pairing_masks: 262144
+  one_quotient_triangle_free_lifts: 37378
+  one_quotient_minimum_39_block_rank_F7: 33
+  all_222_excluded: false
+  endpoint_excluded: false
+  strongest_general_upper_bound: "n3<=4158"
+limitations:
+  - Discovery cannot verify itself.
+  - The 4,050 forms cover only normalized all-222 one-triangle quotients.
+  - The 2^18 lift census covers only one of those quotients.
+  - The quotient omits endpoint-pairing data and does not determine the 39-block rank.
+  - No completed-graph automorphism or transitivity is assumed.
+  - No endpoint exclusion, upper-bound improvement, Conway-99 resolution, or novelty claim is made.

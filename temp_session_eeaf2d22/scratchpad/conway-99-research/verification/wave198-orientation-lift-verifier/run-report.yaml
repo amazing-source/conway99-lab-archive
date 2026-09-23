@@ -1,0 +1,43 @@
+role: verifier
+date_utc: 2026-07-29T04:35:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: verify selected oriented-label
+  multiplicity at most five, private p3 orientations, separation
+  T+a3+b3<=J, S5>=0, and the exact certificate Q>=7037.
+inputs:
+  verification/wave194-five-thirds-verifier/package-manifest.sha256: 236facbec2539a87e197fd0b2b8ca66bc0d53b12415fdf216acf410064d7ca64
+  verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256: eb833bf4ad503fb2243882704492f6bf836525f4b619de8a1979ffc6f0f785c9
+  verification/wave197-degree10-flag-cap-verifier/package-manifest.sha256: e958b944800ed8830a68c20bffc7f8f78a5e45cb8ecb5a336624e3a84af6d03d
+  attempts/wave198-orientation-lift-proof-b/package-manifest.sha256: ba949fa2ededb7a23596fa0b05ca9e2d259f0e6a18c042814e2f3bc87b5b9054
+  attempts/wave198-orientation-lift-proof-a-audit/package-manifest.sha256: 60f5b4a87893fe0e820f05989e666c26abaaa8f30b9a5598a7a7db571740c924
+method: >-
+  Clean-room orientation-sensitive flag incidence, private-label
+  weighting, verified pool separation, exact Fraction coefficient
+  expansion, independent integer ceiling control, and sealed source
+  comparison. No graph, configuration, SAT, LP, enumeration, or
+  brute-force search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave198-orientation-lift-verifier\independent_check.py
+  --verify verification\wave198-orientation-lift-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave198-orientation-lift-verifier\test_independent_check.py
+outputs:
+  verification/wave198-orientation-lift-verifier/audit.md: 2811586dbd9a2d13703159c0d1a2a0103b9e211607b726e58f1534f6c64474cc
+  verification/wave198-orientation-lift-verifier/independent_check.py: 08f13a666b3fb45f4187d7ac716cb2770dd8402e112be5197ac344bc96e8b187
+  verification/wave198-orientation-lift-verifier/independent-math-result.json: 07a8d5287a1770fa34aea97c3c879e07642da44d728f6e6c199d2f0b5990f07e
+  verification/wave198-orientation-lift-verifier/independent-result-freeze.sha256: 0d24af7700374d30d45da03951a330a6e90cd36c054c074ef84766cbfc25dc74
+  verification/wave198-orientation-lift-verifier/independent-results.json: 3889cedea689220ae146f0e5206581c571aa00b561d1d398f7b94c007462fada
+  verification/wave198-orientation-lift-verifier/input-freeze.sha256: c4e9d345094917076caefd6a08fa82dcb5c5f55d1c97400078b0c28749adb288
+  verification/wave198-orientation-lift-verifier/protocol.md: 46da62f6e4c84e859e4f2c8c0ee87686edf7ee5f6c84b1d6e781de2a0d327e45
+  verification/wave198-orientation-lift-verifier/README.md: 453e5847d45742820a5bfaddee8041330fd0e48814330a75050adf870a096765
+  verification/wave198-orientation-lift-verifier/test_independent_check.py: 063897bb56cac004b812fb4f4b58574ecf8e81fdca935f54fdf68bf86751123e
+limitations:
+  - Conditional on the frozen rank-11 endpoint.
+  - Rational and integer controls are accounting only.
+  - Hostile generic unittest discovery has a relative-import packaging
+    limitation; its explicit documented command passes 6/6.
+  - Rank 11, endpoint existence, external novelty, and Conway-99 remain
+    UNKNOWN.

@@ -1,0 +1,54 @@
+role: proof_b
+date_utc: 2026-07-23T22:42:45Z
+git_commit: 1f22323a2805e3e24f7848d53f2f4813e236fae9
+claim_label: DERIVED
+scope: >-
+  Exact A2 cubic-tensor obstruction to extending the explicit Wave 24
+  E8^5 direct-sum A2^2 coordinate-lattice survivor to the omitted
+  231-column projector and W=M o M Schur origin.
+inputs:
+  - path: verification/2026-07-23-wave20-global-schur-audit.md
+    sha256: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  - path: verification/wave24-n3-708-index/survivor-certificate.json
+    sha256: a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2
+method: >-
+  Exact norm-four tight-frame conversion, symmetric cubic flattening,
+  A2 root-line second moments, odd signed multiplicities, a sum-of-squares
+  cubic norm identity, and comparison with the exact A2 compression trace.
+command: >-
+  python -B -m unittest -v test_exact_check.py &&
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: attempts/wave26-a2-cubic-obstruction/exact_check.py
+    sha256: e266fd1189f5f1960093e2991d88b66c220bbbd7bcdc390c04e2d8a8218f3523
+  - path: attempts/wave26-a2-cubic-obstruction/test_exact_check.py
+    sha256: aa9d2a653133b981851faa4cc39528a4572703d7ba2d8db040d7068ccc07cd71
+  - path: attempts/wave26-a2-cubic-obstruction/exact-results.json
+    sha256: acc3ce7298c164bdee1fe32766bf18437fe79770ee69090b759d3dc774640f33
+  - path: attempts/wave26-a2-cubic-obstruction/input-freeze.sha256
+    sha256: c6651c004c5c93a4cefe3183c3c49e4982d1b3d386cf61a02ba0ef9bf1f866e1
+  - path: attempts/wave26-a2-cubic-obstruction/failed-routes.md
+    sha256: 3ec793e89df22b36bbdd7808a2c5099b472e7a6a41f5f3c9352051bde931671c
+tests:
+  status: PASS
+  count: 19
+  deterministic_regeneration: PASS_BYTE_IDENTICAL
+hostile_controls:
+  - even root-line counts remove the parity floor
+  - doubled Q block removes the trace gap
+  - wrong even rank-two Gram introduces norm-four vectors
+  - mutated endpoint entry histogram is rejected
+result:
+  explicit_survivor_full_projector_schur_origin: REFUTED
+  explicit_survivor_abstract_scope: STILL_VALID
+  all_h9_packages: UNKNOWN
+  n3_708: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+output_commit_status: UNCOMMITTED_NO_GIT_PER_ORCHESTRATOR
+limitations:
+  - No other h=9 package or remaining index value is excluded.
+  - No primitive embedding, projector matrix, graph, or target resolution is supplied.
+  - Discovery package awaits independent verifier review before promotion.

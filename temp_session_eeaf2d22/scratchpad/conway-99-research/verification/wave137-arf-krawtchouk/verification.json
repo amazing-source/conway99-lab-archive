@@ -1,0 +1,2802 @@
+{
+  "claim_label": "VERIFIED",
+  "cumulative_stage_rank_audit": {
+    "failures": [],
+    "pass": true,
+    "rank_conclusion": "Each signed row t=0..5 raises the exact equality rank by one; plus and minus augmented ranks match the coefficient ranks.",
+    "stages": [
+      {
+        "augmented_rank_for_sign": 17,
+        "coefficient_rank": 17,
+        "filename": "binary-global-minus.json",
+        "sign": -1,
+        "through_signed_degree": 0,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 17,
+        "coefficient_rank": 17,
+        "filename": "binary-global-plus.json",
+        "sign": 1,
+        "through_signed_degree": 0,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 18,
+        "coefficient_rank": 18,
+        "filename": "binary-k1-minus.json",
+        "sign": -1,
+        "through_signed_degree": 1,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 18,
+        "coefficient_rank": 18,
+        "filename": "binary-k1-plus.json",
+        "sign": 1,
+        "through_signed_degree": 1,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 19,
+        "coefficient_rank": 19,
+        "filename": "binary-k2-minus.json",
+        "sign": -1,
+        "through_signed_degree": 2,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 19,
+        "coefficient_rank": 19,
+        "filename": "binary-k2-plus.json",
+        "sign": 1,
+        "through_signed_degree": 2,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 20,
+        "coefficient_rank": 20,
+        "filename": "binary-k3-minus.json",
+        "sign": -1,
+        "through_signed_degree": 3,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 20,
+        "coefficient_rank": 20,
+        "filename": "binary-k3-plus.json",
+        "sign": 1,
+        "through_signed_degree": 3,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 21,
+        "coefficient_rank": 21,
+        "filename": "binary-k4-minus.json",
+        "sign": -1,
+        "through_signed_degree": 4,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 21,
+        "coefficient_rank": 21,
+        "filename": "binary-k4-plus.json",
+        "sign": 1,
+        "through_signed_degree": 4,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 22,
+        "coefficient_rank": 22,
+        "filename": "binary-k5-minus.json",
+        "sign": -1,
+        "through_signed_degree": 5,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 22,
+        "coefficient_rank": 22,
+        "filename": "binary-k5-plus.json",
+        "sign": 1,
+        "through_signed_degree": 5,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 22,
+        "coefficient_rank": 22,
+        "filename": "binary-shadow1-minus.json",
+        "sign": -1,
+        "through_signed_degree": 5,
+        "witness_pass": true
+      },
+      {
+        "augmented_rank_for_sign": 22,
+        "coefficient_rank": 22,
+        "filename": "binary-shadow1-plus.json",
+        "sign": 1,
+        "through_signed_degree": 5,
+        "witness_pass": true
+      }
+    ]
+  },
+  "discovery_manifest_audit": {
+    "entries": [
+      {
+        "expected_sha256": "0b77a2cf41998a36cff364eede61cb07f41c4f41686d0960469f1556db0bc126",
+        "observed_sha256": "0b77a2cf41998a36cff364eede61cb07f41c4f41686d0960469f1556db0bc126",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary_branch.py"
+      },
+      {
+        "expected_sha256": "1652d14571b1f495a0f405bf675d1f146240bf8336cbf6de04b67698094fa7b9",
+        "observed_sha256": "1652d14571b1f495a0f405bf675d1f146240bf8336cbf6de04b67698094fa7b9",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-global-minus.json"
+      },
+      {
+        "expected_sha256": "9c8676f407e6ff77de26f07ec6f4c67782d844f414739f29747884cb4bfd601c",
+        "observed_sha256": "9c8676f407e6ff77de26f07ec6f4c67782d844f414739f29747884cb4bfd601c",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-global-plus.json"
+      },
+      {
+        "expected_sha256": "65040188b1e3a594e97ae56af06708fc0176967b0a6a17d1e64c090cc5641d72",
+        "observed_sha256": "65040188b1e3a594e97ae56af06708fc0176967b0a6a17d1e64c090cc5641d72",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k1-minus.json"
+      },
+      {
+        "expected_sha256": "ee280104416329f565e0d1a39ade36b1da07ca12a6d66a34d0172ce631565249",
+        "observed_sha256": "ee280104416329f565e0d1a39ade36b1da07ca12a6d66a34d0172ce631565249",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k1-plus.json"
+      },
+      {
+        "expected_sha256": "21a5057acac3295e70152cca6050675630732dec05f173ac1854889c7c114acb",
+        "observed_sha256": "21a5057acac3295e70152cca6050675630732dec05f173ac1854889c7c114acb",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k2-minus.json"
+      },
+      {
+        "expected_sha256": "6e61a626fe86c69ebaab44402a041296790cd51852f3baf2c27e3d87eedf3441",
+        "observed_sha256": "6e61a626fe86c69ebaab44402a041296790cd51852f3baf2c27e3d87eedf3441",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k2-plus.json"
+      },
+      {
+        "expected_sha256": "e3ea37df2264aa0a68424e9a7195fb238393e57856f99a4038ea4ab4002b54ce",
+        "observed_sha256": "e3ea37df2264aa0a68424e9a7195fb238393e57856f99a4038ea4ab4002b54ce",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k3-minus.json"
+      },
+      {
+        "expected_sha256": "ef364051791dc679855495afeb394f83bd97d0b00f98aa25c2fccbb222ceeae4",
+        "observed_sha256": "ef364051791dc679855495afeb394f83bd97d0b00f98aa25c2fccbb222ceeae4",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k3-plus.json"
+      },
+      {
+        "expected_sha256": "92dd9a1874fbbfdc87f2c70430f3b27854d0cb57c87ed42130d1156bf1765021",
+        "observed_sha256": "92dd9a1874fbbfdc87f2c70430f3b27854d0cb57c87ed42130d1156bf1765021",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k4-minus.json"
+      },
+      {
+        "expected_sha256": "0d129636610f5f94e9f8f7f57c43b01ece8eb6348760587f071c490dabe42700",
+        "observed_sha256": "0d129636610f5f94e9f8f7f57c43b01ece8eb6348760587f071c490dabe42700",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k4-plus.json"
+      },
+      {
+        "expected_sha256": "5d1f841cafa4e0eb5408b47e396e56700fd54c636442a080d5f30cb8f1640734",
+        "observed_sha256": "5d1f841cafa4e0eb5408b47e396e56700fd54c636442a080d5f30cb8f1640734",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k5-minus.json"
+      },
+      {
+        "expected_sha256": "1089bf2bfb1d6b32602a70fb7c3ca4a6ec2b319949416a713bc973fc5c1748a7",
+        "observed_sha256": "1089bf2bfb1d6b32602a70fb7c3ca4a6ec2b319949416a713bc973fc5c1748a7",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-k5-plus.json"
+      },
+      {
+        "expected_sha256": "9919a367ea393085d310199a4ac3ac23c68fd1bde511c4cf4e01f2d5e81a10bd",
+        "observed_sha256": "9919a367ea393085d310199a4ac3ac23c68fd1bde511c4cf4e01f2d5e81a10bd",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-shadow1-minus.json"
+      },
+      {
+        "expected_sha256": "c3dbc0cee57a5505455202af51cbb5a31ff4c7cf075ddc8f3f8351efe7833092",
+        "observed_sha256": "c3dbc0cee57a5505455202af51cbb5a31ff4c7cf075ddc8f3f8351efe7833092",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary-shadow1-plus.json"
+      },
+      {
+        "expected_sha256": "16b8ce2d3642669c1ed6ea5a7c5ff6641eb2d2f909b03331a162673446a53426",
+        "observed_sha256": "16b8ce2d3642669c1ed6ea5a7c5ff6641eb2d2f909b03331a162673446a53426",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/derivation.md"
+      },
+      {
+        "expected_sha256": "5e94b06d23088c9e9b058c1b84c5a270c13ab32550c122cbfa9ba6e7f6b2c8a0",
+        "observed_sha256": "5e94b06d23088c9e9b058c1b84c5a270c13ab32550c122cbfa9ba6e7f6b2c8a0",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/exact_check.py"
+      },
+      {
+        "expected_sha256": "cf7987dcb0992aaf13d791e46489ab0a68a75348cd98631e61520a7a131ae2f2",
+        "observed_sha256": "cf7987dcb0992aaf13d791e46489ab0a68a75348cd98631e61520a7a131ae2f2",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/failed-routes.md"
+      },
+      {
+        "expected_sha256": "d17228d175125067ca78a6f5fa09612ddfc85e1759dd4ce2d344ca01ebe983b0",
+        "observed_sha256": "d17228d175125067ca78a6f5fa09612ddfc85e1759dd4ce2d344ca01ebe983b0",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/float_scout.py"
+      },
+      {
+        "expected_sha256": "8f60d6488938c487f66d22807b3a990d993aa4ec193cc3a98bf4463035d1af49",
+        "observed_sha256": "8f60d6488938c487f66d22807b3a990d993aa4ec193cc3a98bf4463035d1af49",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/float-scout-minus.json"
+      },
+      {
+        "expected_sha256": "3f16fd1d8d244d2334bc556891ceb5b0423cad4a6339b686d79d5626a61d200d",
+        "observed_sha256": "3f16fd1d8d244d2334bc556891ceb5b0423cad4a6339b686d79d5626a61d200d",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/float-scout-minus-ipm.json"
+      },
+      {
+        "expected_sha256": "43d97fb8daa07dc2240d92fff3293a93007ce58aa1f325b69e5dab1973ee3443",
+        "observed_sha256": "43d97fb8daa07dc2240d92fff3293a93007ce58aa1f325b69e5dab1973ee3443",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/float-scout-plus.json"
+      },
+      {
+        "expected_sha256": "9dfa2d09b1d0a8adcf51ecd46cdbd4e21f1f8d4544abe0229fe0524ce5303dea",
+        "observed_sha256": "9dfa2d09b1d0a8adcf51ecd46cdbd4e21f1f8d4544abe0229fe0524ce5303dea",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/float-scout-plus-ipm.json"
+      },
+      {
+        "expected_sha256": "f15799f319f3ef10769e91de6a7d505d8d524e2bde409c0c8dbc6ac1061eb806",
+        "observed_sha256": "f15799f319f3ef10769e91de6a7d505d8d524e2bde409c0c8dbc6ac1061eb806",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/input-freeze.sha256"
+      },
+      {
+        "expected_sha256": "51b6613863b13ba6bf173a34b24c513acaafabc50be6e0509b6601572e8de37e",
+        "observed_sha256": "51b6613863b13ba6bf173a34b24c513acaafabc50be6e0509b6601572e8de37e",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/protocol.md"
+      },
+      {
+        "expected_sha256": "fcbe5426e58a3fa2ecc154fed538ad1a0384e78dc502ebf5b1fc6f37dbb0ebc9",
+        "observed_sha256": "fcbe5426e58a3fa2ecc154fed538ad1a0384e78dc502ebf5b1fc6f37dbb0ebc9",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/README.md"
+      },
+      {
+        "expected_sha256": "153532fab4c97caaaa899e6ed56901df737d4bd96030f5f02cd28e6c5a71df93",
+        "observed_sha256": "153532fab4c97caaaa899e6ed56901df737d4bd96030f5f02cd28e6c5a71df93",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/row_generate_arf.py"
+      },
+      {
+        "expected_sha256": "cf79a1b293a134cd5b6090c39c9f9664b43de4c4c4c8dc8c720399b535a62899",
+        "observed_sha256": "cf79a1b293a134cd5b6090c39c9f9664b43de4c4c4c8dc8c720399b535a62899",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/run-report.yaml"
+      },
+      {
+        "expected_sha256": "c55f77589121cb134f2c8acd137f8a52eedaa2b702602edfe646d933f6a70308",
+        "observed_sha256": "c55f77589121cb134f2c8acd137f8a52eedaa2b702602edfe646d933f6a70308",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/search-status.json"
+      },
+      {
+        "expected_sha256": "6978dd897ba2a954da6e88ba42b052ae24ec3aa8b3af97bbe9642a3328e09bbf",
+        "observed_sha256": "6978dd897ba2a954da6e88ba42b052ae24ec3aa8b3af97bbe9642a3328e09bbf",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/shadow_bounds.py"
+      },
+      {
+        "expected_sha256": "c452658d0e3abb4a442820945c18a7e41b930d81c1094ec6139fe72e9a051540",
+        "observed_sha256": "c452658d0e3abb4a442820945c18a7e41b930d81c1094ec6139fe72e9a051540",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/shadow-bound-audit.json"
+      },
+      {
+        "expected_sha256": "2b85617a6867148d278b76c1601e229e929834dfcee20a4e67596d09ac44bf07",
+        "observed_sha256": "2b85617a6867148d278b76c1601e229e929834dfcee20a4e67596d09ac44bf07",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/shadow-bound-audit-round1.json"
+      },
+      {
+        "expected_sha256": "2956aa6bd1d8675ee22e55cbced24e9316d3b6e27749a04fb53896bc7b601b69",
+        "observed_sha256": "2956aa6bd1d8675ee22e55cbced24e9316d3b6e27749a04fb53896bc7b601b69",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/test_exact_check.py"
+      }
+    ],
+    "entry_count": 33,
+    "failures": [],
+    "manifest_path": "attempts\\wave137-z4-arf-branches\\package-manifest.sha256",
+    "manifest_sha256": "2175aad6a21216db67b668a3450855592405f584f2490c58b1d21ce6983da02c",
+    "pass": true
+  },
+  "failures": [],
+  "format": "wave137-clean-room-verification-v1",
+  "independent_reconstruction": {
+    "ordinary_model_ranks": {
+      "cumulative_signed_ranks": [
+        {
+          "augmented_rank_minus": 17,
+          "augmented_rank_plus": 17,
+          "rank": 17,
+          "rank_increment": 1,
+          "through_signed_degree": 0
+        },
+        {
+          "augmented_rank_minus": 18,
+          "augmented_rank_plus": 18,
+          "rank": 18,
+          "rank_increment": 1,
+          "through_signed_degree": 1
+        },
+        {
+          "augmented_rank_minus": 19,
+          "augmented_rank_plus": 19,
+          "rank": 19,
+          "rank_increment": 1,
+          "through_signed_degree": 2
+        },
+        {
+          "augmented_rank_minus": 20,
+          "augmented_rank_plus": 20,
+          "rank": 20,
+          "rank_increment": 1,
+          "through_signed_degree": 3
+        },
+        {
+          "augmented_rank_minus": 21,
+          "augmented_rank_plus": 21,
+          "rank": 21,
+          "rank_increment": 1,
+          "through_signed_degree": 4
+        },
+        {
+          "augmented_rank_minus": 22,
+          "augmented_rank_plus": 22,
+          "rank": 22,
+          "rank_increment": 1,
+          "through_signed_degree": 5
+        }
+      ],
+      "eliminated_variable_order": [
+        "A_0",
+        "A_14",
+        "A_16",
+        "A_18",
+        "A_20",
+        "A_22",
+        "A_24",
+        "A_26",
+        "A_28",
+        "A_30",
+        "A_32",
+        "A_34",
+        "A_36",
+        "A_38",
+        "A_40",
+        "A_42",
+        "A_44",
+        "A_46",
+        "A_48",
+        "A_50",
+        "A_52",
+        "A_54",
+        "A_56",
+        "A_58",
+        "A_60",
+        "A_62",
+        "A_64",
+        "A_66",
+        "A_68",
+        "A_70",
+        "A_72",
+        "A_74",
+        "A_76",
+        "A_78",
+        "A_80",
+        "A_82",
+        "A_84",
+        "A_86",
+        "A_88",
+        "A_90",
+        "A_92"
+      ],
+      "ordinary_equality_rank": 16,
+      "ordinary_equality_row_count": 16,
+      "variable_count": 41
+    },
+    "signed_constants": {
+      "derived_constants_t0_t4": {
+        "0": 1,
+        "1": -99,
+        "2": 3465,
+        "3": -56595,
+        "4": 462924
+      },
+      "frozen_exact_t5": -1821204,
+      "identity": "S_t=sum_|T|=t (-1)^(|T|+e(T))=G_R^-1 sum_w (-1)^(w/2) A_w K_t(w)",
+      "triple_extension_terms_for_t4": [
+        {
+          "contribution": 2544696,
+          "count": 70686,
+          "edge_count": 0,
+          "outside_correlation": 36,
+          "type": "independent_c0"
+        },
+        {
+          "contribution": 776160,
+          "count": 27720,
+          "edge_count": 0,
+          "outside_correlation": 28,
+          "type": "independent_c1"
+        },
+        {
+          "contribution": -1496880,
+          "count": 41580,
+          "edge_count": 1,
+          "outside_correlation": 36,
+          "type": "one_edge_c0"
+        },
+        {
+          "contribution": -232848,
+          "count": 8316,
+          "edge_count": 1,
+          "outside_correlation": 28,
+          "type": "one_edge_c1"
+        },
+        {
+          "contribution": 266112,
+          "count": 8316,
+          "edge_count": 2,
+          "outside_correlation": 32,
+          "type": "path"
+        },
+        {
+          "contribution": -5544,
+          "count": 231,
+          "edge_count": 3,
+          "outside_correlation": 24,
+          "type": "triangle"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Rational split-enumerator witnesses do not construct a binary code.",
+    "The four distinguished systems do not impose full genus-two compatibility.",
+    "No Z4 numerical status is accepted as a certificate.",
+    "Conway-99 remains UNKNOWN."
+  ],
+  "scope": "Exact rational Wave132 ordinary/distinguished projection plus Arf and signed Krawtchouk rows t=0..5; not code or graph realization.",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "binary_code_constructed": false,
+    "exact_branch_replay": "PASS",
+    "graph_constructed": false,
+    "novelty": "UNKNOWN"
+  },
+  "witnesses": [
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 38,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 32,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-global-minus.json",
+      "sha256": "1652d14571b1f495a0f405bf675d1f146240bf8336cbf6de04b67698094fa7b9",
+      "signed_krawtchouk": {
+        "G_R": "-134217728",
+        "K1_binomial": "205605131820159557067593297690624/129601640263308725",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": -1,
+        "dual_even_G_E": "4194304",
+        "epsilon": -1,
+        "expected_dual_even_G_E": "4194304",
+        "failures": [],
+        "max_moment": 0,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "-134217728",
+            "normalized_constant": 1,
+            "observed": "-134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "13287555072",
+            "normalized_constant": -99,
+            "observed": "411211985729251534382450970984448/129601640263308725",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "2": {
+            "expected": "-465064427520",
+            "normalized_constant": 3465,
+            "observed": "-38184651241247952410015004884992/25920328052661745",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "3": {
+            "expected": "7596052316160",
+            "normalized_constant": -56595,
+            "observed": "16647513152291687064280068326948864/388804920789926175",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "4": {
+            "expected": "-62132607516672",
+            "normalized_constant": 462924,
+            "observed": "1414381835268355053692288946405376/25920328052661745",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "5": {
+            "expected": "244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "15304014221133166893614875212251136/129601640263308725",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 50,
+            "failures": [],
+            "nonintegral_entry_count": 76,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 50,
+            "failures": [],
+            "nonintegral_entry_count": 76,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 64,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 96,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 38,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 32,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-global-plus.json",
+      "sha256": "9c8676f407e6ff77de26f07ec6f4c67782d844f414739f29747884cb4bfd601c",
+      "signed_krawtchouk": {
+        "G_R": "134217728",
+        "K1_binomial": "205606870234321296638043880423424/129601640263308725",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": 1,
+        "dual_even_G_E": "-4194304",
+        "epsilon": 1,
+        "expected_dual_even_G_E": "-4194304",
+        "failures": [],
+        "max_moment": 0,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "134217728",
+            "normalized_constant": 1,
+            "observed": "134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "-13287555072",
+            "normalized_constant": -99,
+            "observed": "411212018379710173028823385243648/129601640263308725",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "2": {
+            "expected": "465064427520",
+            "normalized_constant": 3465,
+            "observed": "-38184338844548293398180231380992/25920328052661745",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "3": {
+            "expected": "-7596052316160",
+            "normalized_constant": -56595,
+            "observed": "16647505826093885890732777709502464/388804920789926175",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "4": {
+            "expected": "62132607516672",
+            "normalized_constant": 462924,
+            "observed": "1414384989594729290037901662355456/25920328052661745",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "5": {
+            "expected": "-244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "15303970746775830559615841401307136/129601640263308725",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 50,
+            "failures": [],
+            "nonintegral_entry_count": 76,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 50,
+            "failures": [],
+            "nonintegral_entry_count": 76,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 64,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 96,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 40,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 32,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k1-minus.json",
+      "sha256": "65040188b1e3a594e97ae56af06708fc0176967b0a6a17d1e64c090cc5641d72",
+      "signed_krawtchouk": {
+        "G_R": "-134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": -1,
+        "dual_even_G_E": "4194304",
+        "epsilon": -1,
+        "expected_dual_even_G_E": "4194304",
+        "failures": [],
+        "max_moment": 1,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "-134217728",
+            "normalized_constant": 1,
+            "observed": "-134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "13287555072",
+            "normalized_constant": -99,
+            "observed": "13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "-465064427520",
+            "normalized_constant": 3465,
+            "observed": "-145909472918251204216103292919631709208576/11718052486140351807627275",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "3": {
+            "expected": "7596052316160",
+            "normalized_constant": -56595,
+            "observed": "-2295616595462697038550755887070952030208/616739604533702726717225",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "4": {
+            "expected": "-62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-114749067493374031859490448667364321918976/901388652780027062125175",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "5": {
+            "expected": "244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "-2127437550793985175161256032802415478571008/11718052486140351807627275",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 50,
+            "failures": [],
+            "nonintegral_entry_count": 80,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 50,
+            "failures": [],
+            "nonintegral_entry_count": 80,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 64,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 96,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 40,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 32,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k1-plus.json",
+      "sha256": "ee280104416329f565e0d1a39ade36b1da07ca12a6d66a34d0172ce631565249",
+      "signed_krawtchouk": {
+        "G_R": "134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": 1,
+        "dual_even_G_E": "-4194304",
+        "epsilon": 1,
+        "expected_dual_even_G_E": "-4194304",
+        "failures": [],
+        "max_moment": 1,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "134217728",
+            "normalized_constant": 1,
+            "observed": "134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "-13287555072",
+            "normalized_constant": -99,
+            "observed": "-13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "465064427520",
+            "normalized_constant": 3465,
+            "observed": "-145910245739858533400468420620672980484096/11718052486140351807627275",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "3": {
+            "expected": "-7596052316160",
+            "normalized_constant": -56595,
+            "observed": "-2295910429537783309210699416287018221568/616739604533702726717225",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "4": {
+            "expected": "62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-114750434271483946971118384521177827639296/901388652780027062125175",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "5": {
+            "expected": "-244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "-2127483110307054750547792170996232846573568/11718052486140351807627275",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 50,
+            "failures": [],
+            "nonintegral_entry_count": 80,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 50,
+            "failures": [],
+            "nonintegral_entry_count": 80,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 64,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 96,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 40,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 33,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k2-minus.json",
+      "sha256": "21a5057acac3295e70152cca6050675630732dec05f173ac1854889c7c114acb",
+      "signed_krawtchouk": {
+        "G_R": "-134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": -1,
+        "dual_even_G_E": "4194304",
+        "epsilon": -1,
+        "expected_dual_even_G_E": "4194304",
+        "failures": [],
+        "max_moment": 2,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "-134217728",
+            "normalized_constant": 1,
+            "observed": "-134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "13287555072",
+            "normalized_constant": -99,
+            "observed": "13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "-465064427520",
+            "normalized_constant": 3465,
+            "observed": "-465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "7596052316160",
+            "normalized_constant": -56595,
+            "observed": "-107691564532929550324103049641984/17718891494775855",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "4": {
+            "expected": "-62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-45248302836652768765274006487040/1181259432985057",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "5": {
+            "expected": "244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "501201925627752299196693925068800/3543778298955171",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 48,
+            "failures": [],
+            "nonintegral_entry_count": 80,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 48,
+            "failures": [],
+            "nonintegral_entry_count": 80,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 66,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 99,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 40,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 33,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k2-plus.json",
+      "sha256": "6e61a626fe86c69ebaab44402a041296790cd51852f3baf2c27e3d87eedf3441",
+      "signed_krawtchouk": {
+        "G_R": "134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": 1,
+        "dual_even_G_E": "-4194304",
+        "epsilon": 1,
+        "expected_dual_even_G_E": "-4194304",
+        "failures": [],
+        "max_moment": 2,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "134217728",
+            "normalized_constant": 1,
+            "observed": "134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "-13287555072",
+            "normalized_constant": -99,
+            "observed": "-13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "465064427520",
+            "normalized_constant": 3465,
+            "observed": "465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "-7596052316160",
+            "normalized_constant": -56595,
+            "observed": "-35890307414181722311113484271616/5906297164925285",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "4": {
+            "expected": "62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-45233655954412078542095795617792/1181259432985057",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "5": {
+            "expected": "-244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "167087796146315989266418328666112/1181259432985057",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 48,
+            "failures": [],
+            "nonintegral_entry_count": 80,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 48,
+            "failures": [],
+            "nonintegral_entry_count": 80,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 66,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 99,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 42,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 33,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k3-minus.json",
+      "sha256": "e3ea37df2264aa0a68424e9a7195fb238393e57856f99a4038ea4ab4002b54ce",
+      "signed_krawtchouk": {
+        "G_R": "-134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": -1,
+        "dual_even_G_E": "4194304",
+        "epsilon": -1,
+        "expected_dual_even_G_E": "4194304",
+        "failures": [],
+        "max_moment": 3,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "-134217728",
+            "normalized_constant": 1,
+            "observed": "-134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "13287555072",
+            "normalized_constant": -99,
+            "observed": "13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "-465064427520",
+            "normalized_constant": 3465,
+            "observed": "-465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "7596052316160",
+            "normalized_constant": -56595,
+            "observed": "7596052316160",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "4": {
+            "expected": "-62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-2101063142980199659765413969920/29470065658951",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "5": {
+            "expected": "244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "4393421741239840932156552511488/29470065658951",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 48,
+            "failures": [],
+            "nonintegral_entry_count": 84,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 48,
+            "failures": [],
+            "nonintegral_entry_count": 84,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 66,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 99,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 42,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 33,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k3-plus.json",
+      "sha256": "ef364051791dc679855495afeb394f83bd97d0b00f98aa25c2fccbb222ceeae4",
+      "signed_krawtchouk": {
+        "G_R": "134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": 1,
+        "dual_even_G_E": "-4194304",
+        "epsilon": 1,
+        "expected_dual_even_G_E": "-4194304",
+        "failures": [],
+        "max_moment": 3,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "134217728",
+            "normalized_constant": 1,
+            "observed": "134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "-13287555072",
+            "normalized_constant": -99,
+            "observed": "-13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "465064427520",
+            "normalized_constant": 3465,
+            "observed": "465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "-7596052316160",
+            "normalized_constant": -56595,
+            "observed": "-7596052316160",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "4": {
+            "expected": "62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-2102980336918959062871439310848/29470065658951",
+            "pass": false,
+            "required_by_stage": false
+          },
+          "5": {
+            "expected": "-244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "4380412320606701248175721676800/29470065658951",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 48,
+            "failures": [],
+            "nonintegral_entry_count": 84,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 48,
+            "failures": [],
+            "nonintegral_entry_count": 84,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 66,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 99,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 44,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 33,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k4-minus.json",
+      "sha256": "92dd9a1874fbbfdc87f2c70430f3b27854d0cb57c87ed42130d1156bf1765021",
+      "signed_krawtchouk": {
+        "G_R": "-134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": -1,
+        "dual_even_G_E": "4194304",
+        "epsilon": -1,
+        "expected_dual_even_G_E": "4194304",
+        "failures": [],
+        "max_moment": 4,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "-134217728",
+            "normalized_constant": 1,
+            "observed": "-134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "13287555072",
+            "normalized_constant": -99,
+            "observed": "13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "-465064427520",
+            "normalized_constant": 3465,
+            "observed": "-465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "7596052316160",
+            "normalized_constant": -56595,
+            "observed": "7596052316160",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "4": {
+            "expected": "-62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-62132607516672",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "5": {
+            "expected": "244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "36114964260528290910491901952/256106543657",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 52,
+            "failures": [],
+            "nonintegral_entry_count": 88,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 52,
+            "failures": [],
+            "nonintegral_entry_count": 88,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 66,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 99,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 44,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 33,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k4-plus.json",
+      "sha256": "0d129636610f5f94e9f8f7f57c43b01ece8eb6348760587f071c490dabe42700",
+      "signed_krawtchouk": {
+        "G_R": "134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": 1,
+        "dual_even_G_E": "-4194304",
+        "epsilon": 1,
+        "expected_dual_even_G_E": "-4194304",
+        "failures": [],
+        "max_moment": 4,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "134217728",
+            "normalized_constant": 1,
+            "observed": "134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "-13287555072",
+            "normalized_constant": -99,
+            "observed": "-13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "465064427520",
+            "normalized_constant": 3465,
+            "observed": "465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "-7596052316160",
+            "normalized_constant": -56595,
+            "observed": "-7596052316160",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "4": {
+            "expected": "62132607516672",
+            "normalized_constant": 462924,
+            "observed": "62132607516672",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "5": {
+            "expected": "-244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "36014995127505899362191409152/256106543657",
+            "pass": false,
+            "required_by_stage": false
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 52,
+            "failures": [],
+            "nonintegral_entry_count": 88,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 52,
+            "failures": [],
+            "nonintegral_entry_count": 88,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 66,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 34,
+            "failures": [],
+            "nonintegral_entry_count": 99,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 44,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 34,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k5-minus.json",
+      "sha256": "5d1f841cafa4e0eb5408b47e396e56700fd54c636442a080d5f30cb8f1640734",
+      "signed_krawtchouk": {
+        "G_R": "-134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": -1,
+        "dual_even_G_E": "4194304",
+        "epsilon": -1,
+        "expected_dual_even_G_E": "4194304",
+        "failures": [],
+        "max_moment": 5,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "-134217728",
+            "normalized_constant": 1,
+            "observed": "-134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "13287555072",
+            "normalized_constant": -99,
+            "observed": "13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "-465064427520",
+            "normalized_constant": 3465,
+            "observed": "-465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "7596052316160",
+            "normalized_constant": -56595,
+            "observed": "7596052316160",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "4": {
+            "expected": "-62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-62132607516672",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "5": {
+            "expected": "244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "244437863104512",
+            "pass": true,
+            "required_by_stage": true
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 52,
+            "failures": [],
+            "nonintegral_entry_count": 88,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 52,
+            "failures": [],
+            "nonintegral_entry_count": 88,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 35,
+            "failures": [],
+            "nonintegral_entry_count": 68,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 35,
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 44,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 34,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-k5-plus.json",
+      "sha256": "1089bf2bfb1d6b32602a70fb7c3ca4a6ec2b319949416a713bc973fc5c1748a7",
+      "signed_krawtchouk": {
+        "G_R": "134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": false,
+        "all_shadow_violations": [],
+        "claimed_sign": 1,
+        "dual_even_G_E": "-4194304",
+        "epsilon": 1,
+        "expected_dual_even_G_E": "-4194304",
+        "failures": [],
+        "max_moment": 5,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "134217728",
+            "normalized_constant": 1,
+            "observed": "134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "-13287555072",
+            "normalized_constant": -99,
+            "observed": "-13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "465064427520",
+            "normalized_constant": 3465,
+            "observed": "465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "-7596052316160",
+            "normalized_constant": -56595,
+            "observed": "-7596052316160",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "4": {
+            "expected": "62132607516672",
+            "normalized_constant": 462924,
+            "observed": "62132607516672",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "5": {
+            "expected": "-244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "-244437863104512",
+            "pass": true,
+            "required_by_stage": true
+          }
+        },
+        "shadow_rows": {}
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 52,
+            "failures": [],
+            "nonintegral_entry_count": 88,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 52,
+            "failures": [],
+            "nonintegral_entry_count": 88,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 35,
+            "failures": [],
+            "nonintegral_entry_count": 68,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 35,
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 52,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 31,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-shadow1-minus.json",
+      "sha256": "9919a367ea393085d310199a4ac3ac23c68fd1bde511c4cf4e01f2d5e81a10bd",
+      "signed_krawtchouk": {
+        "G_R": "-134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": true,
+        "all_shadow_violations": [],
+        "claimed_sign": -1,
+        "dual_even_G_E": "4194304",
+        "epsilon": -1,
+        "expected_dual_even_G_E": "4194304",
+        "failures": [],
+        "max_moment": 5,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "-134217728",
+            "normalized_constant": 1,
+            "observed": "-134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "13287555072",
+            "normalized_constant": -99,
+            "observed": "13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "-465064427520",
+            "normalized_constant": 3465,
+            "observed": "-465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "7596052316160",
+            "normalized_constant": -56595,
+            "observed": "7596052316160",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "4": {
+            "expected": "-62132607516672",
+            "normalized_constant": 462924,
+            "observed": "-62132607516672",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "5": {
+            "expected": "244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "244437863104512",
+            "pass": true,
+            "required_by_stage": true
+          }
+        },
+        "shadow_rows": {
+          "6": {
+            "absolute_bound": "150394890897850368",
+            "lower_required": true,
+            "observed": "-150394890897850368",
+            "pass": true,
+            "upper_required": false
+          },
+          "93": {
+            "absolute_bound": "150394890897850368",
+            "lower_required": true,
+            "observed": "-150394890897850368",
+            "pass": true,
+            "upper_required": false
+          }
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 54,
+            "failures": [],
+            "nonintegral_entry_count": 104,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 54,
+            "failures": [],
+            "nonintegral_entry_count": 104,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 32,
+            "failures": [],
+            "nonintegral_entry_count": 62,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 32,
+            "failures": [],
+            "nonintegral_entry_count": 93,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "ordinary": {
+        "dual_nonintegral_count": 52,
+        "failures": [],
+        "forward_rows_passed": 100,
+        "image_nonintegral_count": 31,
+        "inverse_rows_passed": 100,
+        "pass": true
+      },
+      "pair_tables": {
+        "expected": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "observed": {
+          "dual_closed_neighborhood_rows": {
+            "15": {
+              "intersection_15": 99
+            },
+            "ordered_distinct": {
+              "intersection_2": 8316,
+              "intersection_3": 1386
+            }
+          },
+          "image_neighborhood_rows": {
+            "14": {
+              "intersection_14": 99
+            },
+            "ordered_distinct": {
+              "intersection_1": 1386,
+              "intersection_2": 8316
+            }
+          },
+          "mixed_neighborhood_closed": {
+            "ordered_diagonal": {
+              "intersection_14": 99
+            },
+            "ordered_off_diagonal": {
+              "intersection_2": 9702
+            }
+          }
+        },
+        "pass": true
+      },
+      "pass": true,
+      "path": "attempts\\wave137-z4-arf-branches\\binary-shadow1-plus.json",
+      "sha256": "c3dbc0cee57a5505455202af51cbb5a31ff4c7cf075ddc8f3f8351efe7833092",
+      "signed_krawtchouk": {
+        "G_R": "134217728",
+        "K1_binomial": "0",
+        "all_shadow_degrees_6_through_99_checked": true,
+        "all_shadow_violations": [],
+        "claimed_sign": 1,
+        "dual_even_G_E": "-4194304",
+        "epsilon": 1,
+        "expected_dual_even_G_E": "-4194304",
+        "failures": [],
+        "max_moment": 5,
+        "pass": true,
+        "rows": {
+          "0": {
+            "expected": "134217728",
+            "normalized_constant": 1,
+            "observed": "134217728",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "1": {
+            "expected": "-13287555072",
+            "normalized_constant": -99,
+            "observed": "-13287555072",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "2": {
+            "expected": "465064427520",
+            "normalized_constant": 3465,
+            "observed": "465064427520",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "3": {
+            "expected": "-7596052316160",
+            "normalized_constant": -56595,
+            "observed": "-7596052316160",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "4": {
+            "expected": "62132607516672",
+            "normalized_constant": 462924,
+            "observed": "62132607516672",
+            "pass": true,
+            "required_by_stage": true
+          },
+          "5": {
+            "expected": "-244437863104512",
+            "normalized_constant": -1821204,
+            "observed": "-244437863104512",
+            "pass": true,
+            "required_by_stage": true
+          }
+        },
+        "shadow_rows": {
+          "6": {
+            "absolute_bound": "150394890897850368",
+            "lower_required": true,
+            "observed": "-150394890897850368",
+            "pass": true,
+            "upper_required": false
+          },
+          "93": {
+            "absolute_bound": "150394890897850368",
+            "lower_required": true,
+            "observed": "-150394890897850368",
+            "pass": true,
+            "upper_required": false
+          }
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "checked_nonzero_shells": 54,
+            "failures": [],
+            "nonintegral_entry_count": 104,
+            "pass": true
+          },
+          "dual_vs_neighborhood": {
+            "checked_nonzero_shells": 54,
+            "failures": [],
+            "nonintegral_entry_count": 104,
+            "pass": true
+          },
+          "image_vs_closed": {
+            "checked_nonzero_shells": 32,
+            "failures": [],
+            "nonintegral_entry_count": 62,
+            "pass": true
+          },
+          "image_vs_neighborhood": {
+            "checked_nonzero_shells": 32,
+            "failures": [],
+            "nonintegral_entry_count": 93,
+            "pass": true
+          }
+        }
+      }
+    }
+  ],
+  "z4_audit": {
+    "artifacts": [
+      {
+        "path": "attempts\\wave137-z4-arf-branches\\float-scout-minus-ipm.json",
+        "sha256": "3f16fd1d8d244d2334bc556891ceb5b0423cad4a6339b686d79d5626a61d200d",
+        "size": 749
+      },
+      {
+        "path": "attempts\\wave137-z4-arf-branches\\float-scout-minus.json",
+        "sha256": "8f60d6488938c487f66d22807b3a990d993aa4ec193cc3a98bf4463035d1af49",
+        "size": 617
+      },
+      {
+        "path": "attempts\\wave137-z4-arf-branches\\float-scout-plus-ipm.json",
+        "sha256": "9dfa2d09b1d0a8adcf51ecd46cdbd4e21f1f8d4544abe0229fe0524ce5303dea",
+        "size": 665
+      },
+      {
+        "path": "attempts\\wave137-z4-arf-branches\\float-scout-plus.json",
+        "sha256": "43d97fb8daa07dc2240d92fff3293a93007ce58aa1f325b69e5dab1973ee3443",
+        "size": 701
+      }
+    ],
+    "exact_z4_branch_certificate_found": false,
+    "mathematical_inference_from_numerical_status": false,
+    "numerical_statuses": [
+      {
+        "path": "attempts\\wave137-z4-arf-branches\\float-scout-minus-ipm.json",
+        "treatment": "INVENTORIED_ONLY_NOT_EVIDENCE"
+      },
+      {
+        "path": "attempts\\wave137-z4-arf-branches\\float-scout-plus.json",
+        "treatment": "INVENTORIED_ONLY_NOT_EVIDENCE"
+      }
+    ]
+  }
+}

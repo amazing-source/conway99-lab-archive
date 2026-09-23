@@ -1,0 +1,31 @@
+{
+  "date_utc": "2026-07-24T01:05:48Z",
+  "independent": {
+    "command": "python -B -m unittest -v test_independent_check.py",
+    "count": 23,
+    "elapsed_seconds": 16.265,
+    "status": "PASS"
+  },
+  "submitted_core": {
+    "command": "python -B -m unittest -v test_exact_check.py",
+    "count": 17,
+    "elapsed_seconds": 22.362,
+    "status": "PASS",
+    "regeneration_command": "python -B exact_check.py --output ../../verification/wave27-general-root-tensor/submitted-regenerated.json",
+    "submitted_result_sha256": "98aba5a30b2f3a83b9f6ce6fd6a20458505b668249d97b0810907de50cae678d",
+    "regenerated_result_sha256": "98aba5a30b2f3a83b9f6ce6fd6a20458505b668249d97b0810907de50cae678d",
+    "bytes": 22396,
+    "byte_identical": true
+  },
+  "submitted_addendum": {
+    "command": "python -B -m unittest -v test_exact_check.py",
+    "count": 8,
+    "elapsed_seconds": 0.222,
+    "status": "PASS",
+    "regeneration_command": "python -B exact_check.py --output ../../verification/wave27-general-root-tensor/addendum-submitted-regenerated.json",
+    "submitted_result_sha256": "dc5716cbf2537cd214906f1bf2eae96d4886e4bd88008cd7508c6a64d78f089c",
+    "regenerated_result_sha256": "dc5716cbf2537cd214906f1bf2eae96d4886e4bd88008cd7508c6a64d78f089c",
+    "bytes": 19966,
+    "byte_identical": true
+  }
+}

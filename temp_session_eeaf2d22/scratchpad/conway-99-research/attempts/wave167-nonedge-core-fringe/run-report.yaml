@@ -1,0 +1,38 @@
+role: proof_a
+date_utc: 2026-07-28T15:32:44Z
+git_commit: 97fca7b5bd42d867e58e53d518a6bd2c39393004
+claim_label: DERIVED
+scope: >-
+  Under P=0, derive the exact 18-core/four-fringe decomposition at every
+  nonedge, prove the four mandatory failures, establish completion
+  uniqueness and the global extra-defect gap, and retain a local shell
+  obstruction to the stronger pointwise inference.
+inputs:
+  - path: attempts/wave166-rooted-wagner-spaces/package-manifest.sha256
+    sha256: 5a51809fdd122fdcef7670794444c4de936ee18fefd421c60eaf61944126dbc9
+  - path: verification/wave166-rooted-wagner-spaces/package-manifest.sha256
+    sha256: 7f83ed780fe44d17d7e8dc0b6f6b731cb4cf7f50dacfd01dc68669538ccb7f65
+  - path: verification/wave165-general-cube-upper/package-manifest.sha256
+    sha256: 1bf571c64ae47e7c3b5973c2d774d217dfeb43ed1f4514798047cc80d1d4b9a6
+  - path: verification/wave158-general-cube-wagner/package-manifest.sha256
+    sha256: ec6b5b912f42301ae734a6ee45574c3e39cf3c57c088765b03afbafe07b37d0b
+method: >-
+  Exact common-neighbor degree count, lane inclusion-exclusion, support
+  audit, Wagner/C5 incidence bijection, integer defect arithmetic, and an
+  explicit abstract cross-shell null model.
+command: none; paper derivation only
+outputs:
+  - path: attempts/wave167-nonedge-core-fringe/README.md
+    sha256: 5bc49ee11695347660047a81ff6e0ad8e43dade7364dd8b6aa214afd5fe0443c
+  - path: attempts/wave167-nonedge-core-fringe/derivation.md
+    sha256: c512b438143ee7f1d8b087b25b783bf8a11bd0320312d5fefd548c7c0735c792
+  - path: attempts/wave167-nonedge-core-fringe/failed-routes.md
+    sha256: d7ae2ddf712b095892eb47e11b20cb82d4a3ce16e05c14e4c5d4cd34fb3222f0
+  - path: attempts/wave167-nonedge-core-fringe/protocol.md
+    sha256: e5238fa678e4266ff007a34834f9e3d38f5993952a154842c6227319624835ed
+limitations:
+  - The abstract shell is not a full strongly regular graph.
+  - No proof of the sufficient bound E<=8 is supplied.
+  - No strict n3 bound or endpoint exclusion follows.
+  - No heavy computation ran because host free memory was below the floor.
+  - Literature novelty and Conway-99 remain UNKNOWN.

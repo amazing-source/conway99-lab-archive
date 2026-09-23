@@ -1,0 +1,29 @@
+role: proof_a
+date_utc: 2026-07-29T07:40:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Hostile independent audit of sealed Wave203 two-center incidence,
+  exact counting consequences, and the no-7060 boundary.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave181-c4-conic-equality/package-manifest.sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256: eb833bf4ad503fb2243882704492f6bf836525f4b619de8a1979ffc6f0f785c9
+  attempts/wave203-two-center-incidence-proof-b/package-manifest.sha256: b412cce1a737b3b50718aabb399978ca2956cea0edbbe1c1f955f8083447d5b8
+method: >-
+  Independent slot reconstruction, finite-field relation addition, exact
+  Gram arithmetic, and selected/full-pool counting audit.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave203-two-center-incidence-proof-a-audit\exact_check.py
+  --verify
+  attempts\wave203-two-center-incidence-proof-a-audit\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave203-two-center-incidence-proof-a-audit\test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave203-two-center-incidence-proof-a-audit.md
+  - attempts/wave203-two-center-incidence-proof-a-audit/
+limitations:
+  - Proof-agent audit, not verifier promotion.
+  - Conditional on the prism-free rank-11 endpoint.
+  - No Q>=7060 implication.

@@ -1,0 +1,79 @@
+{
+  "claim_label": "DERIVED",
+  "format": "wave100-general-pair-moment-v1",
+  "global_formula": {
+    "antipodal_even_rounding": "N14<=2*floor((55440-5*n3)/14)",
+    "compatible_rows_checked": 1387,
+    "floor": "N14<=floor((55440-5*n3)/7)",
+    "raw": "7*N14<=34650+15*P=55440-5*n3",
+    "selected_rows": {
+      "0": {
+        "N14_even_upper": 7920,
+        "N14_floor_upper": 7920,
+        "P": 1386,
+        "n3": 0,
+        "seven_N14_upper": 55440
+      },
+      "4152": {
+        "N14_even_upper": 4954,
+        "N14_floor_upper": 4954,
+        "P": 2,
+        "n3": 4152,
+        "seven_N14_upper": 34680
+      },
+      "4155": {
+        "N14_even_upper": 4952,
+        "N14_floor_upper": 4952,
+        "P": 1,
+        "n3": 4155,
+        "seven_N14_upper": 34665
+      },
+      "4158": {
+        "N14_even_upper": 4950,
+        "N14_floor_upper": 4950,
+        "P": 0,
+        "n3": 4158,
+        "seven_N14_upper": 34650
+      },
+      "708": {
+        "N14_even_upper": 7414,
+        "N14_floor_upper": 7414,
+        "P": 1150,
+        "n3": 708,
+        "seven_N14_upper": 51900
+      }
+    }
+  },
+  "limitations": [
+    "The local pair-moment lemma is imported from unverified Wave 99 discovery.",
+    "This bounds only N14.",
+    "No strict upper bound on n3 follows without controlling N16 and N18."
+  ],
+  "rooted_formula": {
+    "checked_f_values": 85,
+    "maximum": {
+      "f": 84,
+      "nonforbidden_transitions": 0,
+      "valid_seed_upper": 560
+    },
+    "minimum": {
+      "f": 0,
+      "nonforbidden_transitions": 84,
+      "valid_seed_upper": 350
+    },
+    "valid_seed_upper": "350+floor(5*f_o/2)"
+  },
+  "scope": {
+    "N14_counts_both_signs": true,
+    "requires_prism_free": false,
+    "requires_rank_28": false,
+    "target": "hypothetical srg(99,14,1,2)"
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "N16_or_N18_upper_bound": "NOT_PROVED",
+    "depends_on_unverified_wave99_pair_moment": true,
+    "novelty": "UNKNOWN",
+    "strict_n3_upper_bound": "NOT_PROVED"
+  }
+}

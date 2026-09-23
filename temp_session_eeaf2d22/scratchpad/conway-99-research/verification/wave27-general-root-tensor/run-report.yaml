@@ -1,0 +1,130 @@
+role: verifier
+date_utc: 2026-07-24T01:05:48Z
+git_commit: 1c4d6650252ceaa77d7ad4e1bd0d31489edf62da
+claim_label: VERIFIED
+audit_verdict: PASS_CORE_AND_SEPARATE_A20_ADDENDUM
+scope: >-
+  Blind adversarial verification of the Wave 27 orthogonal A6/E6 tensor
+  obstruction, complete rank-44 ADE component and determinant census, and
+  separately frozen later A20 trace addendum. The core package is verified
+  within its stated screen; the later addendum then conditionally excludes
+  the final full-ADE survivor. General even rank-44 forms and the target
+  graph remain unresolved.
+inputs:
+  - path: agents/2026-07-23-wave27-general-root-tensor.md
+    sha256: 456a4ad6f27c1c9c09f84b2ff41796473f519b5aaabda36b71022a51bbbe7f38
+  - path: attempts/wave27-general-root-tensor/exact_check.py
+    sha256: 107907f610b83ddbb526daddeaa1fe850a0bd73e2dfeeaa386ca578a875bf8d5
+  - path: attempts/wave27-general-root-tensor/test_exact_check.py
+    sha256: 3d9197c959b4624755243d21ecdc10dda95012b083717199f055f19a8872123f
+  - path: attempts/wave27-general-root-tensor/exact-results.json
+    sha256: 98aba5a30b2f3a83b9f6ce6fd6a20458505b668249d97b0810907de50cae678d
+  - path: agents/2026-07-24-wave27-a20-trace-addendum.md
+    sha256: 97c7296752e0ef2126bd8da50cdf8b0abe07b3c72a939233d15aae6d7c413659
+  - path: attempts/wave27-a20-trace-addendum/exact_check.py
+    sha256: 7762acf33bf519e3a91f442d4dcae6da34e770d98491b02d995a14550840de7c
+  - path: attempts/wave27-a20-trace-addendum/test_exact_check.py
+    sha256: b5d55c15f01c4f7a5856ebce36646140f90994328b62852b8dfb1d121bed4f82
+  - path: attempts/wave27-a20-trace-addendum/exact-results.json
+    sha256: dc5716cbf2537cd214906f1bf2eae96d4886e4bd88008cd7508c6a64d78f089c
+  - path: verification/2026-07-23-wave20-global-schur-audit.md
+    sha256: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  - path: verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md
+    sha256: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+  - path: verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md
+    sha256: 5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3
+  - path: verification/wave26-a2-cubic-obstruction/2026-07-23T231001Z-audit.md
+    sha256: 883f48e70336b87955f5c2a115ac8b137169310c6f5ef91fe4581cb1b6c10465
+method: >-
+  Preinspection SHA-256 freezes; independent projector-frame, zero-sum,
+  ordered-tensor compression, arbitrary-cross-Q, complement-AM-GM, parity,
+  and mod-six derivations; independent exact symmetric-cubic Gram expansion;
+  a fresh affine-CVP enumeration in x=residue+modulus*y coordinates;
+  complete ADE integrality/evenness and recursive rank/determinant censuses;
+  hostile controls; separate rank-one A_n trace-factorization audit; submitted
+  test replays and byte-identical JSON regeneration.
+command: |-
+  cd verification/wave27-general-root-tensor
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json
+  cd ../../attempts/wave27-general-root-tensor
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output ../../verification/wave27-general-root-tensor/submitted-regenerated.json
+  cd ../wave27-a20-trace-addendum
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output ../../verification/wave27-general-root-tensor/addendum-submitted-regenerated.json
+outputs:
+  - path: verification/wave27-general-root-tensor/intake-freeze.json
+    sha256: 160d0967d59ddacb9a03fdc7866bae4346d3c0177d34edb3a195faaf11fd6d52
+  - path: verification/wave27-general-root-tensor/addendum-intake-freeze.json
+    sha256: 937b0b3d9cbfcdea0e9453c568e8c1a702dce5dd2052163e3c6ee75b612075a3
+  - path: verification/wave27-general-root-tensor/independent_check.py
+    sha256: b9b98f86ffe3e8c7bbe9a5f094175602b115176e4bbd7e02ac01564652e2834b
+  - path: verification/wave27-general-root-tensor/test_independent_check.py
+    sha256: 2aa12224d65cd0ab3f54c8ff6cee2cae080886c347d59e766c5a0289474ec911
+  - path: verification/wave27-general-root-tensor/independent-results.json
+    sha256: 7e87796980a43df199713865fed920bc094778f1828431a673938484c026e6fd
+  - path: verification/wave27-general-root-tensor/submitted-regenerated.json
+    sha256: 98aba5a30b2f3a83b9f6ce6fd6a20458505b668249d97b0810907de50cae678d
+  - path: verification/wave27-general-root-tensor/addendum-submitted-regenerated.json
+    sha256: dc5716cbf2537cd214906f1bf2eae96d4886e4bd88008cd7508c6a64d78f089c
+  - path: verification/wave27-general-root-tensor/replay-summary.json
+    sha256: 9e06eb1054f597bc8e1f813ba6072f6d5ddd6bb1dd4448580bd0501fbc7cd2b4
+  - path: verification/wave27-general-root-tensor/failed-runs.md
+    sha256: 85b5670ec0228cf74150ceef8e1f2c80c9d2719de35484eafb78ed08e8d35ab9
+  - path: verification/wave27-general-root-tensor/2026-07-24T010548Z-audit.md
+    sha256: 68747c2b09a86f10eb58f7bccce6670b4d99856a073a87a3dcae2c0555f37033
+tests:
+  independent:
+    status: PASS
+    count: 23
+  submitted_core:
+    status: PASS
+    count: 17
+    deterministic_regeneration: PASS_BYTE_IDENTICAL
+  submitted_addendum:
+    status: PASS
+    count: 8
+    deterministic_regeneration: PASS_BYTE_IDENTICAL
+exact_counts:
+  E6:
+    cap: 18
+    accepted_partial_nodes: 10011
+    complete_leaves: 0
+    floor_after_zero_sum_mod_6: 24
+    rank_38_complement_cap: 22
+  A6:
+    cap: 60
+    accepted_partial_nodes: 105185
+    complete_leaves: 0
+    floor_after_zero_sum_mod_6: 66
+  ADE_components:
+    checked: 88
+    accepted: 5
+    rejected: 83
+  rank_44_determinant_census:
+    cases: 17
+    core_screen_survivors: 1
+  A20_addendum:
+    local_floor: 42
+    rank_24_complement_floor: 24
+    global_floor: 66
+results:
+  core_A6_summand: VERIFIED_IMPOSSIBLE
+  core_E6_summand: VERIFIED_IMPOSSIBLE
+  core_full_ADE_screen: VERIFIED_UNIQUE_A20_E8_CUBED_SURVIVOR
+  separate_A20_summand_addendum: VERIFIED_IMPOSSIBLE
+  combined_full_ADE_status: VERIFIED_CONDITIONAL_IMPOSSIBLE
+  defects: NONE_FOUND
+  general_even_rank_44_forms: UNKNOWN
+  n3_708: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - Every component theorem requires an orthogonal integral summand.
+  - The combined full-ADE conclusion assumes the entire form is an orthogonal
+    sum of irreducible ADE root lattices.
+  - Empty parity balls prove necessary lower bounds but do not construct rows.
+  - No primitive embedding, projector, Schur certificate, graph, unrestricted
+    endpoint exclusion, formal-kernel proof, or novelty result is supplied.
+  - Two timed-out exploratory verifier mutations are retained as non-evidence.

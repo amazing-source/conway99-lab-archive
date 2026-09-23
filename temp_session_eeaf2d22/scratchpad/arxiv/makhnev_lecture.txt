@@ -1,0 +1,1137 @@
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Symmetric graphs and their automorphisms
+A.A. Makhnev
+Institute of Mathematics and Mechanics UB RAS
+Ekaterinburg, Russia
+makhnev@imm.uran.ru
+Berlin, September 2009
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Amply regular graph
+We consider undirected graphs without loops or multiple edges.
+Let Γ be a graph. For vertexa of Γ the subgraph
+Γi(a) ={b|d(a,b ) =i} is calledi-neighboorhod ofa in Γ. We
+set [a] = Γ1(a), a⊥ ={a}∪ [a].
+The degree of a vertexa of Γ is the number of vertices in[a]. Γ
+is called regular of degreek, if the degree of any its vertex is
+equal k. Γ is called amply regular with parameters(v,k,λ,µ ) if
+Γ is regular of degreek onv vertices, and|[u]∩ [w]| is equalλ, if
+u is adjacent tow, is equalµ, ifd(u,w ) = 2. Amply regular
+graph of diameter 2 is called strongly regular.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Some strongly regular graphs
+Let X be a set of powerm. Triangular graphT (m) has the
+vertex set
+(X
+2
+)
+={{u,w}| u,w∈X,u⁄=w} and{u,w} is
+adjacent to{x,y}, if and only if|{u,w}∩{ x,y}| = 1.
+Let Y be a set of powern. Grid graphm×n has the vertex set
+X×Y and (x1,y 1) is adjacent to(x2,y 2), if and only ifx1 =x2
+or y1 =y2.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Distance-regular graph
+Let u,w∈ Γ such thatd(u,w ) =i. Bybi(u,w ) (byci(u,w )) we
+denote the number of vertices inΓi+1(u)∩ [b] (in Γi−1(u)∩ [b]).
+The graph Γ with diameterd is called distance-regular with
+intersection array{b0,b 1,...,b d−1;c1,...,c d} if for every
+i∈{ 0,...,d} the valuesbi =bi(u,w ) and ci =ci(u,w ) do not
+depend on the choice of verticesu,w at distancei. A
+distance-regular graph with diameter 2 is strongly regular with
+parameters (v,k,λ,µ ), wherev is the number of vertices of the
+graph, k =b0, λ =k−b1− 1 and µ =c2.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Higman method
+Automorphism
+Let g be an automorphism of a graphΓ. Denote byαi(g) the
+number of verticesu such thatd(u,ug) =i and by Fix(g) the
+subgraph{a∈ Γ| ag =a}.
+Intersection numbers
+Let Γ be a distance-regular graph of diameterd on v vertices.
+Let us consider the symmetric association scheme(X,R) with d
+classes, whereX is the set of vertices ofΓ and
+Ri ={(u,w )∈X2| d(u,w ) =i}. For vertexu∈X set
+ki =|Γi(u)|. LetAi be the adjacency matrix of the graphΓi,
+wich is corresponding to the relationRi. ThenAiAj =∑pl
+ijAl
+for some integer numberspl
+ij≥ 0, which are called the
+intersection numbers. Note thatpl
+ij =|Γi(u)∩ Γj(w)| for any
+verticesu,w with d(u,w ) =l.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Eigenmatrices
+Let Pi be the matrix in which in the(j,l ) entry there ispl
+ij.
+Then the eigenvaluesk =p1(0),...,p 1(d) of the matrixP1 are
+eigenvalues ofΓ with multiplicitiesm0 = 1,...,m d. Note that the
+matrix Pi is the value of some integer polynom ofP1, so the
+ordering of eigenvalues of the matrixP1 gives the ordering of
+eigenvalues ofPi. The matricesP and Q with (i,j ) entrypj(i)
+and Qji =mjpi(j)/ki are called the ﬁrst and the second
+eigenmatrix of Γ and PQ =QP =vI holds, whereI is the
+identity matrix of orderd + 1.
+Proposition 1 [1, Theorem 17.12]
+Let uj and wj be the left and the right eigenvectors of matrix
+P1 aﬀording eigenvaluep1(j) and having the ﬁrst coordinate1.
+Then the multiplicitymj of the eigenvaluep1(j) is equal
+v/⟨uj,wj⟩.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Character
+In fact, from the proof of the Theorem 17.12 we have thatwj
+are the columns of the matrixP and mjuj are the rows of the
+matrix Q.
+The permutation representation of the groupG≤ Aut(Γ) on the
+vertex set ofΓ naturally gives the matrix representationψ of G
+in GL(v, C). The spaceCv is the orthogonal direct sum of the
+eigenspaces W0,W 1,...,W d of the adjacency matrixA1 of Γ. For
+everyg∈G we haveψ(g)A1 =A1ψ(g), so the subspaceWi is
+ψ(G)-invariant. Letχi be a character of the representationψWi.
+Then forg∈G we obtain
+[2,§3.7]
+χi(g) =v−1∑d
+j=0Qijαj(g), where αj(g) is the numbers of
+verticesx of X such thatd(x,xg) =j.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Note that the value of character is an integer algebraic number,
+and if the numbersQij are rational thenχi(g) is integer.
+The Higman method was published in [2]. And in [2] this
+method was applied only to involutive automorphisms of
+strongly regular graph with parameters (3250,57,0,1).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Automorphisms of srg
+If g is an automorphism of a strongly regular graphΓ, then
+either Γ has parametersk = 2µ and λ =µ− 1 (a conference
+graph), orχi(g) is integer.
+P. Cameron noted that the main diﬃculte in the Higman
+method is the calculation of parametersαj(g). But in the class
+of graphs without triangles, for every automorphismf of ofder 3
+we obtaineα1(f) = 0. Apart from, the structure of subgraphs of
+ﬁxed points of automorphism is strongly restricted in graphs
+with smallλ and µ. For example, M. Aschbacher noted that
+nonempty subgraph of ﬁxed points of automorphism of strongly
+regular Moore graph (graph withλ = 0 and µ = 1) is Moore
+graph or star.
+The common properties of strongly regular graphs are in
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Lemma 1
+Let Γ be a strongly regular graph with parameters(v,k,λ,µ ).
+Thenv−k− 1 =k(k−λ− 1)/µ and one of the following holds:
+1 k = 2µ, λ =µ− 1 and v = 4µ + 1 is the sum of two squares
+of some integers;
+2 (λ−µ)2 + 4(k−µ) is the square of some positive integern,
+and Γ has spectrumk1,rf,sv−f−1, wherer = (λ−µ +n)/2,
+s = (λ−µ−n)/2 and f = (s + 1)k(s−k)/(nµ).
+J. Seidel poset the following
+Seidel Problem
+Does a strongly regular graph with parameters(99, 14, 1, 2)
+exist?
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Let Γ be a strongly regular graph with parameters(99, 14, 1, 2),
+g be an automorphism ofΓ. Then for every vertexa∈ Γ the
+subgraph [a] is the union of 7 isolated edges,Γ has spectrum
+141, 354,−444, and
+Q =
+
+
+1 1 1
+44 −88/7 11 /7
+54 81 /7 −18/7
+
+.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+So the value of character, obtaining by projection of monomial
+representation on the eigenspaceW2 of the dimension 54 is equal
+χ2(g) = 1
+99(54α0(g) + 81
+7 α1(g)− 18
+7 α2(g) =
+1
+77(42α0(g) + 9α1(g)− 2α2(g).
+By substitutionα2(g) = 99−α0(g)−α1(g) we have
+χ2(g) = (4α0(g) +α1(g)− 18)/7.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Automorphisms of Seidel graph
+Involutive automorphisms
+A. Makhnev and I. Minakova investigated involutive
+automorphisms of strongly regular graph with parameters
+(99, 14, 1, 2).
+Let t be an involutive automorphisms of strongly regular graph
+with parameters (v,k, 1, 2), Ω = Fix(t). Ifa∈ Ω,b∈ Ω−a⊥,
+then [a]∩ [b] ={u,ut} is a 2-coclique. Ifu∈ [a]− Ω and{u,ut}
+is a 2-coclique, then[u]∩ [ut] ={a,b} and b∈ Ω−a⊥. So
+|Ω| = 1 +|Ω(a)| + 2l, wherel /emdash.cyr is the number oft-orbits of size
+2 on the edges in[a].
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Proposition 2
+Let Γ be a strongly regular graph with parameters(99, 14, 1, 2),
+having involutive automorphismt. Then Fix(t) is one of the
+following graphs:
+1 one-vertex graph;
+2 triangle;
+3 three isolated triangles;
+4 vertex and two isolated triangles;
+5 four isolated vertices and triangle;
+6 n-coclique, n = 3, 5 or 7;
+7 3× 3-grid.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Only in the case (1) the valueχ2(t) is integer. Consider, for
+example, the case, whenFix(t) is the union of 4-coclique and
+triangle. Thent has 3 orbits of size 2 on the edges in[a], ifa is
+isolated in Fix(t) and t has 2 orbits of size 2 on the edges in[b],
+if b belongs to triangle ofFix(t), soα1(t) = 4· 2 + 3· 4 = 20 and
+χ2(t) = (28 + 20− 18)/7, a contradiction.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 1 Makhnev A., Minakova I. [3]
+Let Γ be a strongly regular graph with parameters(99, 14, 1, 2),
+g an element of prime orderp from Aut(Γ) and ∆ = Fix(g).
+Then one of the following holds:
+1 ∆ is one vertex graph andp = 2 or 7;
+2 ∆ is empty graph andp = 3 or 11;
+3 ∆ is triangle andp = 3.
+H. Wilbrink [4] proved thatΓ does not admit an automorphism
+of order 11. In particular, the order of the automorphism group
+of strongly regular graph with parameters(99, 14, 1, 2) divides
+2· 33· 7.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Corollary 1
+Let Γ be the strongly regular graph with parameters
+(99, 14, 1, 2), G = Aut(Γ). IfG contains an involutiont, then
+one of the following holds:
+1 |G| is divided by7 and divides 42, [O(G),t ] = 1 and in the
+case|G| = 42 the subgroupO(G) is nonabelian;
+2 |G| divides 6.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Graphs with λ = 0 and µ = 2
+Known srg without triangles
+The known strongly regular graph without triangles are in 3
+classes:
+1 Bipartite graphsKk,k, k≥ 2.
+2 Moore graphs (pentagon, Petersen graph with parameters
+(10,3,0,1) and Hoﬀman-Singleton graph with parameters
+(50,7,0,1)),
+3 Clebsh graph with parameters (16,5,0,2), Gewirtz graph
+with parameters (56,10,0,2), Higman-Sims graph with
+parameters (100,22,0,6), graph with parameters (77,16,0,4)
+(the second neighborhood of vertex in the Higman-Sims
+graph).
+It is old problem in the theory of symmetric graphs.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Problem 2
+Is a strongly regular graph withλ = 0 and µ = 2 the
+quadrangle, Clebsh graph or Gewirtz graph?
+Let Γ be a strongly regular graph with parameters(v,k, 0, 2).
+Then k =w2 + 1 for some integerw, Γ has spectrum
+k1, (w− 1)f,−(w + 1)v−f−1, where
+f =w(w2 + 1)(w2 +w + 2)/(4w), sow is not divided by 4.
+A. Makhnev and V. Nosov investigated automorphisms of
+strongly regular graphΓ with parameters (v,k, 0, 2), where
+v = (w4 + 3w2 + 4)/2, k =w2 + 1. Then
+Q =
+
+
+1 1 1
+(w2+1)(w2−w+2)
+4 −w3+w+2
+4
+w2−w+2
+2w
+(w2+1)(w2+w+2)
+4
+w3+w−2
+4 −w2+w+2)
+2w
+
+.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+So the value of character, obtaining by projection of monomial
+representation on the eigenspaceW1 of the dimension
+(w2 + 1)(w2−w + 2)/4 is equal
+χ1(g) = 1
+v ((w2 + 1)(w2−w + 2)α0(g)/4−
+(w2 +w + 2)α1(g)/4 + (w2−w + 2)α2(g)/(2w)).
+By substitutionα2(g) =v−α0(g)−α1(g) we have
+χ1(g) = 1
+2w((w− 1)α0(g)−α1(g) + (w2−w + 2)).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Proposition 3
+Let Γ be a strongly regular graph with parameters
+((w4 + 3w2 + 4)/2,w 2 + 1, 0, 2), f /emdash.cyr an element of order3 from
+Aut(Γ) and Ω = Fix(f). Then one of the following holds:
+1 Ω is an edge,w is odd and divided by3 (this case is in
+Gewirtz graph);
+2 Ω is strongly regular graph with parameters
+((u4 + 3u2 + 4)/2,u 2 + 1, 0, 2), u2≡w2 (mod 3) and w
+divides (u4 + 3u2)/2.
+N Nakagawa [5] proved that ifΓ is a strongly regular graph with
+parameters (v,q 2 + 1, 0, 2), q =pn, p is odd prime number, and
+G = Aut(Γ) contains the subgroupH =PGL 2(q2), ﬁxing the
+vertexa and is transitive onΓ2(a), thenq = 3 and Γ is Gewirtz
+graph.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Proposition 4
+Let Γ be a strongly regular graph with parameters
+(v,q 2 + 1, 0, 2), t /emdash.cyr an involutive automorphism ofΓ, a∈ Fix(t)
+and t acts on Γ2(a) as an involution ofG =PGL 2(q2) by
+conjugating onzG, wherez is the involution ofG′, thenq = 3
+and Γ is Gewirtz graph.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 2 A. Makhnev, V. Nosov [6]
+Let Γ be a strongly regular graph with parameters
+(352, 26, 0, 2),g be an element of prime orderp from Aut(Γ) and
+Ω = Fix(g). Then one of the following holds:
+1 p = 2, either Ω is the empty graph,14-coclique, connected
+graph of degree6 on 32 vertices, or Ω has four connected
+components, that are isomorphic to a quadrangle;
+2 p = 5 and Ω is the edge;
+3 p = 11 and Ω is an empty graph;
+4 p = 13 and Ω is one vertex graph.
+Theorem 2 implies that the order of the automorphism groupG
+of strongly regular graph with parameters(352, 26, 0, 2) divides
+2l· 52· 11· 13 and G is the solvable group.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Krein graphs
+Krein conditions
+Let strongly regular graphΓ with parameters (v,k,λ,µ ) have
+eigenvaluesk,r,s . If graphsΓ and ¯Γ are connected then the
+next unequalities (Krein conditions) hold:
+(1) (r + 1)(k +r + 2rs)≤ (k +r)(s + 1)2 and
+(2) (s + 1)(k +s + 2rs)≤ (k +s)(r + 1)2.
+Γ is called Krein graph, if we have equality in(1) or in (2). It is
+interesting that in Krein graph the ﬁrst and the second
+neighboorhods of any vertex are strongly regular. Krein graph
+without triangles has parameters
+((r2 + 3r)2,r 3 + 3r2 +r, 0,r 2 +r) and we denote this graph as
+Kre(r). For eachr = 1, 2 there is the unique graphKre(r) /emdash.cyr
+the Clebsh graph and the Higman-Sims graph respectively. By
+[7] graphKre(3) does not exist.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Character ofKre(r)
+Let Γ be a Krein graphKre(r). Then
+P =
+
+
+1 1 1
+r3 + 3r2 +r −(r2 + 2r) r
+r4 + 5r3 + 6r2−r− 1 r2 + 2r− 1 −r− 1
+
+
+andP =Q. So the value of character, obtaining by projection of
+monomial representation on the eigenspaceW1 of the dimension
+r3 + 3r2 +r is equal
+χ1(g) = (r2 +3r)−2((r3 +3r2 +r)α0(g)−(r2 +2r)α1(g)+rα2(g)).
+By substitutionα2(g) =v−α0(g)−α1(g) we have
+χ1(g) = (rα0(g)−α1(g) +r2(r + 3))/(r2 + 3r).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Proposition 5
+Let Γ be a strongly regular graph with parameters
+((r2 + 3r)2,r 3 + 3r2 +r, 0,r 2 +r), g be an automorphism of
+order 3 of Γ and Ω = Fix(g). Then|Ω| is divided byr + 3 and if
+r is not divided by3, then the following hold:
+1 either Ω is a quadrangle andΓ is Clebsh graph, orΩ
+contains 3-coclique and every3-coclique of Ω is subset of[a]
+for some vertexa∈ Ω;
+2 either Γ is Clebsh graph, or degree of every vertex inΩ is
+greater 2;
+3 if Ω contains two nonadjacent vertices, not belonging any
+3-coclique of Ω, then eitherΩ is quadrangle orΩ is
+Kr+3,r+3 without matching andr≡ 0, 2 (mod 3);
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Example 1
+Consider automorphisms of the Higman-Sims graphΓ (Krein
+graph withr = 2). Letg be an automorphism of prime orderp
+of Γ. Then 10 divides2α0(g)−α1(g) and for the graph
+Ω = Fix(g) the following holds:
+a) Ω is an empty graph,|g| = 2 or 5 andα1(g) is
+divided by 10;
+b) Ω ={a} is one vertex graph,|g| = 11 and
+α1(g)− 2 is divided by 10;
+c) Ω is an edge,|g| = 7 and α1(g) = 14;
+d) |g| = 2 and Ω is a 2-coclique extension of Petersen
+graph, 6-coclique or amply regular graph with
+parameters (30, 8, 0, 4);
+e) |g| = 3, Ω is K5,5 without matching andα1(g) = 0;
+f) |g| = 5, g ﬁxes pentagon andα1(g) = 20.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Thus, forG = Aut(Kre(2)) we haveπ(G)⊆{ 2, 3, 5, 7, 11}. In
+fact, G is the automorphism group of the Higman-Sims group
+and|G| = 21032537· 11.
+Theorem 3 A. Gavrilyuk [9]
+Let Γ be a graphKre(4), g be an element of prime orderp of
+Aut(Γ) and Ω = Fix(g). Then eitherp = 2 or p = 7 and Ω is
+empty graph.
+Theorem 4 A. Makhnev, V. Nosov [8]
+Let Γ be a graphKre(5), g be an element of odd prime orderp
+of Aut(Γ) and Ω = Fix(g). Then one of the following holds:
+1 Ω is empty graph andp = 5;
+2 either|Ω| = 1 and p = 41, or Ω is 2-clique andp = 17;
+3 Ω is K8,8 without matching andp = 3.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Generalized poligons
+The incidence system(X,L), whereX is a point set andL is a
+line set, is called near2n-gon of order(s,t ) if every line contains
+s + 1 points, every point belongs tot + 1 lines (distinct lines
+intersect in at most one point), diameter of collinearity graphΓ
+isn and for any pair(a,L )∈ (X,L) the lineL contains a unique
+point with minimal distance ofa in Γ. Near 2n-gon is called
+generalized 2n-gon, if every two pointu,w with dΓ(u,w )<n
+belongs to the unique geodesic way inΓ from u to w.
+Generalized 2n-gon of order(s,t ) is called thick, ifs> 1 and
+t> 1.
+Generalized octagon
+It is known the existence of thick generalized octagon only for
+{s,t} ={q,q 2}, whereq = 22l−1. Apart from, knownGO(q,q 2)
+corresponds to the building of the group2F4(q).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+I. Belousov and A. Makhnev investigated automorphisms of
+distance-regular graph with intersection array
+{10, 8, 8, 8; 1, 1, 1, 5} on 1755 vertices. This graph have spectrum
+101, 5351, 1650,−3675,−578, and is the collinearity graph of
+generalized octagonGO(2, 4) (see [10,chapter 6]).
+An involutiont of the ﬁnite groupG is said to be central, if
+|G :CG(t)| is odd.
+Example 2
+In the caseq = 2 vertices of the graphΓ are central involutions
+of the Tits group2F4(2)′, and two central involutionsu,w are
+adjacent if and only ifuw also is central involution in2F4(2)′.
+Further,d(u,w ) = 2 if and only ifuw is noncentral involution in
+2F4(2)′, d(u,w ) = 3 if and only if|uw| = 4 (and in this case
+(uw)2 is noncentral involution in2F4(2)′), d(u,w ) = 4 if and
+only if|uw| = 5.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Let Γ be a distance-regular graph with intersection array
+{10, 8, 8, 8; 1, 1, 1, 5} on 1755 vertices. Then
+Q =
+
+
+1 1 1 1 1
+351 351 /2 351 /8 0 −351/64
+650 65 −325/4 −65/8 325 /32
+675 −405/2 135 /8 135 /8 −675/64
+78 −39 39 /2 −39/4 39 /8
+
+
+.
+Soχ1(g) = 351/1755(α0(g) +α1(g)/2 +α2(g)/8−α4(g)/64) and
+χ1(g) = (64α0(g) + 32α1(g) + 8α2(g)−α4(g))/(5· 64).
+Further,χ2(g) =
+65/1755(10α0(g) +α1(g) + 5α2(g)/4−α3(g)/8 + 5α4(g)/32). By
+substitution α4(g) = 1755−α0(g)−α1(g)−α2(g)−α3(g), we
+have
+χ2(g) = (35α0(g) + 3α1(g)− 5α2(g)−α3(g))/96 + 325/32.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Also χ3(g) =
+135/1755(5α0(g)− 3α1(g)/2 +α2(g)/8 +α3(g)/8− 5α4(g)/64).
+By substitutionα2(g) +α3(g) = 1755−α0(g)−α1(g)−α4(g),
+we have
+χ3(g) = (24α0(g)− 8α1(g)−α4(g))/64 + 135/8.
+Finally,
+χ4(g) = 39/1755(2α0(g)−α1(g) +α2(g)/2−α3(g)/4 +α4(g)/8).
+By substitutionα4(g) = 1755−α0(g)−α1(g)−α2(g)−α3(g),
+we have
+χ4(g) = (5α0(g)− 3α1(g) +α2(g)−α3(g))/120 + 39/8.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 5 I. Belousov, A. Makhnev [11]
+Let Γ be a distance-regular graph with intersection array
+{10, 8, 8, 8; 1, 1, 1, 5}, g be an element of prime orderp of Aut(Γ)
+and Ω = Fix(g). Then one of the following holds:
+1 p = 3 or 13 and Ω is an empty graph;
+2 p = 5 and Ω is the union of5ω isolated vertices, and
+d(u,w ) = 4 for every two verticesu,w∈ Ω;
+3 p = 2,|Ω| is odd and either
+(i) Ω contains triangle{x,y,z} such that Ω is the union
+of balls with radius1 and centers in{x,y,z};
+(ii) Ω contains the vertexb such that [b]⊂ Ω, Ω is a
+subset of the ball with radius2 and centerb, and there are
+two nonadjacent verticesa,c∈ [b], such thatb⊥ does not
+contain Ω(a) and Ω(c).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Let us prove, for example, that ifFix(g) is an empty graph,
+then p⁄= 5.
+Letp = 5. Thenαi(g) is divided by 5 andα0(g) =α1(g) = 0. As
+χ3(g) = (24α0(g)− 8α1(g)−α4(g))/64 + 135/8 is integer, then
+α4(g) = 40r and 5(r− 3) is divided by 8. Sor = 8r′ + 3 is odd.
+As χ4(g) = (5α0(g)− 3α1(g) +α2(g)−α3(g))/120 + 39/8 is
+integer, thenα2(g) = 5s, α3(g) = 5u, s−u is divided by 3 and
+(s−u)/3− 1 is divided by 8. Sos−u = 3(8y + 1). Further,∑αi(g) = 5s + 5u + 40r = 1755, so
+s +u = 351− 8r = 2u + 24y + 3 and u = 174− 12y− 4r.
+As χ2(g) = (35α0(g) + 3α1(g)− 5α2(g)−α3(g))/96 + 325/32 is
+integer, then (5s +u)/3− 1 = 2u + 40y + 4 is divided by 32.
+Thus,u + 20y + 2 = 176 + 8y− 4r is divided by 16, a
+contradiction withr is odd.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Corollary 2
+Let Γ be a distance-regular graph with intersection array
+{10, 8, 8, 8; 1, 1, 1, 5} and a groupG = Aut(Γ) acts transitively
+on the set of vertices ofΓ. Then Γ is the collinearity graph of
+the generalized octagon of Tits group2F4(2)′.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Generalized hexagon
+I. Belousov and A. Makhnev investigated automorphisms of
+distance-regular graph with intersection array
+{84, 81, 81; 1, 1, 28} on 26572 vertices. This graph is the
+collinearity graph of generalized hexagonGH(3, 27) and does
+not containm-circles for 4≤m≤ 5. It is known the existence of
+thick generalized hexagon only for{s,t} ={q,q} or
+{s,t} ={q,q 3}, whereq =pl, p is a prime number. Apart from,
+GH(q,q ) corresponds to the building of the groupG2(q) and
+GH(q,q 3) corresponds to the building of the group3D4(q).
+It is known (see [12]), that there is a unique generalized hexagon
+GH(2, 8). Let Γ be a distance-regular graph with intersection
+array{q(q3 + 1),q 4,q 4; 1, 1,q 3 + 1} on
+(q3 + 1)(q2 +q + 1)(q4−q2 + 1) vertices.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+This graph has eigenvalues
+q(q3 + 1),q 2 +q− 1,−(q2−q + 1),−(q3 + 1) with multiplicities
+1, 1
+2q3(q3 + 1)2, 1
+2q3(q + 1)2(q4−q2 + 1),q 5−q3 +q respectively,
+and is the collinearity graph ofGH(q,q 3). Further
+χ1(g) = (q2 + 1)(q3 + 1)α0(g) + (q3 +q2 + 1)α1(g) +α2(g)
+2q3(q2 +q + 1) −
+(q3 + 1)2
+2q3 .
+χ2(g) = (q2− 1)(q3 + 1)α0(g)− (q3−q2 + 1)α1(g)−α2(g)
+2q3(q2−q + 1) +
+(q + 1)2(q4−q2 + 1)
+2q3 .
+χ3(g) = (q2−q + 1)α0(g)− (q− 1)α1(g) +α2(g)
+q2(q2−q + 1)(q2 +q + 1) − q4−q2 + 1
+q2 .
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Next two lemmas have independent interest.
+Lemma 2
+Let Γ be a distance-regular graph with intersection array
+{q(q3 + 1),q 4,q 4; 1, 1,q 3 + 1}. If Γ contains proper subgraph∆
+such that ∆ is the collinearity graph of generalized hexagon of
+order (q,t ), thent≤q.
+Proof
+Let Γ contain proper subgraph∆ such that ∆ is the collinearity
+graph of generalized hexagon of order(q,t ). Then the number
+vertices of ∆ is equalv′ = (q + 1)(q2t2 +qt + 1), the degree of
+the graph ∆ isk′ =q(t + 1)and the number of edges between∆
+and Γ− ∆ is equalv′(k−k′) = (q + 1)(q2t2 +qt + 1)q(q3−t).
+As every vertex ofΓ− ∆ is adjacent to at most one vertex of∆,
+then v = (q + 1)(q8 +q4 + 1) and v≥v′ +v′(k−k′), so
+t3−q3t2−q2t +q5 = (t−q)(t +q)(t−q3)≥ 0. Hencet≤q.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Lemma 3
+Let Γ be a distance-regular graph with intersection array
+{q(q3 + 1),q 4,q 4; 1, 1,q 3 + 1}, g be an element of prime orderp
+of Aut(Γ) and Ω = Fix(g) is nonempty subgraph. Then:
+1 if Ω is nonconnected, thenΩ is coclique, and ifp>q , then
+p divides q3 + 1;
+2 if Ω is connected andp>q , then Ω is the collinearity graph
+of generalized hexagon of order(q,t ), and eithert = 1, or
+the numberqt is the square,q≤t3 and t≤q.
+Proof
+Let Ω be a nonconnected subgraph. Then vertices from distinct
+connected components ofΩ are at the distance 3 inΓ. Leta,b
+are adjacent inΩ and c belongs to other connected component
+of Ω. By deﬁnition of generalized hexagon the cliquea⊥∩b⊥
+contains the unique vertexe with d(c,e ) = 2. The contradiction
+with d∈ Ω.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Hence, Ω is a coclique.
+Let p>q . Thenk =q(q3 + 1), sop devides q3 + 1. The
+statement (1) is proved.
+Let Ω be connected andp>q . Consider two adjacent vertices
+a,b. Then the cliqueL =a⊥∩b⊥ is a subset ofΩ. Furtherg
+acts on the set ofq3 maximal cliques fromb⊥ diﬀerent ofL and
+ﬁxes one more cliqueL1 in this set. Forc∈L1−{b} we get the
+maximal cliqueL2 from c⊥, ﬁxed byg.
+Note that every two verticesa,e∈ Ω, that are antipodal inΓ,
+have the same degree inΩ. By connectivityΩ there is the vertex
+b∈ Ω(a)∩ Γ2(e) such that the cliquea⊥∩b⊥ is a subset inΩ
+and contains the unique vertexc with d(c,e ) = 2. Further for
+every vertexb∈ Ω(a)∩ Γ2(e) there is a unique vertexc adjacent
+with b from Ω(d)∩ Γ2(a) and c⊥∩e⊥⊂ Ω. Asµ = 1, so distinct
+verticesb,b′∈ Ω(a)∩ Γ2(e) correspond to distinct verticesc,c′
+and|Ω(a)| =|Ω(e)|.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+We havep1
+33 =q8(q− 1), so for adjacent verticesa,b of Ω there
+is a vertexe∈ Ω such thatd(a,e ) =d(b,e ) = 3. Hence Ω is
+regular graph. ThusΩ is the collinearity graph of near2d-gon
+with d = 3, andc2(Ω) = 1. So Ω is the collinearity graph of
+generalized hexagon of order(q,t ), and by theorem 6.5.1 of [10]
+either t = 1, or the numberqt is the square,q≤t3 and t<q 3.
+By Lemma 2 we havet≤q.
+Theorem 6 I. Belousov, A. Makhnev [11]
+Let Γ be a distance-regular graph with intersection array
+{84, 81, 81; 1, 1, 28}, g be an element of prime orderp of Aut(Γ)
+and Ω = Fix(g). Then one of the following holds:
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+1 p = 7, 13 or 73 and Ω is an empty graph;
+2 p = 7 and Ω consists of 7ω vertices, withd(a,b ) = 3 for
+every two verticesa,b∈ Ω;
+3 p = 13 and Ω is the collinearity graph ofGH(3, 1);
+4 p = 3,|Ω|≡ 1 (mod 3) and either
+(i) Ω is 1-clique or 4-clique, or
+(ii) Ω⊆a⊥ for some vertexa, or
+(iii) Ω is the collinearity graph ofGH(3, 3), or
+(iv) Ω contains 4-clique L, such thatΩ is the subset of
+the union of balls with radius1 and centers inL;
+5 p = 2,|Ω| is even and either
+(i) Ω is 54m + 28-coclique, where 0≤m≤ 5, or
+(ii) Ω is the collinearity graph ofGH(1, 9), or
+(iii) Ω is the collinearity graph ofGH(3, 3), or
+(iv)|Ω| = 116, Ω contains four vertices of degree28 and
+twenty eight4-cliques, whose vertices have degree4 in Ω.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Let Γ /emdash.cyr be a collinearity graph of generalized2n-gon,
+G = Aut(Γ). IfG acts transitively on the set of2n-gons in each
+of graphs: collinearity graph, line graph and ﬂag graph, then
+generalized 2n-gon is classic [12].
+Corollary 3
+Let Γ be a vertex-symmetric distance-regular graph with
+intersection array{84, 81, 81; 1, 1, 28}. Then Γ is the collinearity
+graph of classic generalized hexagonGH(3, 27), aﬀording to the
+Steinberg group 3D4(3).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Lemma 4
+Let Γ be a distance-regular graph with intersection array
+{84, 81, 81; 1, 1, 28} and G = Aut(Γ). Then the following
+statments hold:
+1 G does not contain an element of order49, and 73 does not
+divided|G|;
+2 G does not does not contain an element of order169, and
+133 does not divided|G|;
+3 if G contains an elementf of order 73, thenCG(f) =⟨f⟩.
+Proof of the corollary 3
+Let Γ be a distance-regular graph with intersection array
+{84, 81, 81; 1, 1, 28} and G = Aut(Γ). Then|G| divides
+2β3γ7213273. LetG act transitively on the set of vertices ofΓ.
+Fix the vertexa of Γ and letGa be a stabilizera in G. Then
+|Ga| divides 2β−23γ· 7· 13 and|G :Ga| = 4· 7· 13· 73.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Let P =⟨g⟩ be a Sylow 73-subgroup ofG. We have following
+statements.
+1 The factorgroup ¯G =G/O2(G) has a simple socleT and
+¯G/T is the subgroup of the cyclic group of order72.
+2 Let T be a simple group,|T| devides 2β3γ7213273 and
+devided by 73. IfT does not contain elements of order73p
+for anyp∈{ 2, 3, 7, 13}, thenT is isomorphic to the
+Steinberg group 3D4(3).
+3 O2(G) = 1.
+From (1–3) it is follows thatΓ is the collinearity graph of classic
+generalized hexagonGH(3, 27), aﬀording to the Steinberg group
+3D4(3).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Graphs with block-designs
+A. Gavrilyuk and A. Makhnev investigated amply regular
+graphs with diameterd≥ 3, such that for some vertexa∈ Γ the
+pair (Γd(a), Γd−1(a)) is a 2-(V,K, Λ) design [14]. In this case
+Γd(a) is clique, coclique or strongly regular graph with
+parameters (v′ =V,k′ =k−R,λ′ =λ− Λ,µ′ =µ− Λ).
+For distance-regular graphs with diameterd≥ 3, such that for
+every vertexa∈ Γ the pair (Γd(a), Γd−1(a)) is a 2-design can be
+wright the following.
+Conjecture Σ
+Let Γ be a distance-regular graphs with diameterd, such that
+for every vertexa∈ Γ the pair (Γd(a), Γd−1(a)) is a 2-design,
+then the subgraphΣ = Γd(a) is clique or coclique.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+This Conjecture is based on the fact that in the list of feasible
+arrays in [10] only two arrays{60, 45, 8; 1, 12, 50} and
+{49, 36, 8; 1, 6, 42} correspond to graphs satisfying conditions of
+the Conjecture Σ. In the ﬁrst caseΓ3(a) is 6× 6-grid, and in the
+second case Γ3(a) is the union of seven isolated 8-cliques. It is
+proved in [14] that a distance-regular graph with intersection
+array{60, 45, 8; 1, 12, 50} contains a vertexx such that Γ3(x) is
+not 6× 6-grid. In the second case the pair(Γ3(a), Γ2(a)) is a
+2-(V,K, Λ) design, whereV = 56, K = 8 and Λ = 42· 7/55.
+In [15] it is investigated automorphisms of distance-regular
+graph with intersection array{60, 45, 8; 1, 12, 50}. This graph
+have the spectrum601, 1445, 0207,−1069 and isQ-polinomial.
+Further
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Q =
+
+
+1 1 1 1
+45 21 /2 −1 −25/2
+207 0 −23/5 23
+69 −23/2 23 /5 −23/2
+
+.
+So χ2(g) = 1/322(207α0(g)− 23α2(g)/5 + 23α3(g)) and
+χ2(g) = (45α0(g)−α2(g) + 5α3(g))/70.
+Simirlaly,
+χ3(g) = 1/322(69α0(g)− 23α1(g)/2 + 23α2(g)/5− 23α3(g)/2).
+By substitutionα1(g) +α3(g) = 322−α0(g)−α2(g), we have
+χ3(g) = (5α0(g) +α2(g))/20− 23/2.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 7 A. Gavrilyuk, A. Makhnev [15]
+Let Γ be a distance-regular graph with intersection array
+{60, 45, 8; 1, 12, 50}, g be an element of prime orderp≥ 5 of
+Aut(Γ) and Ω = Fix(g). Then one of the following holds:
+1 p = 7 or 23 and Ω is the empty graph;
+2 p = 5 and either
+(i) Ω ={a,b} and d(a,b ) = 3, or
+(ii)|Ω| = 7 and Γ3(a)∩ Ω is 6-clique for some vertex
+a∈ Ω.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Covers of srg
+Antipodality
+Let Γ be a graph of diameterd. Γ is called antipodal graph, if
+{(u,w )| d(u,w )∈{ 0,d}} is equivalence relation on the vertex
+set of Γ. The graphΓ′ with the set of antipodal classes ofΓ as
+the vertex set andu′ is adjacent tow′ iﬀ there existu∈u′, that
+is adjacent to somew∈w′ in Γ, is called the antipodal quotient
+(folded graph) ofΓ. Then Γ is called antipodal cover ofΓ′, Γ is
+called r-cover if|u′| =r for each antipodal classu′ of Γ.
+Covers of HiS
+The Higman-Sims graph is the unique strongly regular graph
+with parameters (100,22,0,6). The existence of cover with
+diameter 4 of the Higman-Sims graph is unknown. A.Makhnev,
+V. Nosov and D. Paduchikh investigated automorphisms of a
+distance-regular covers of the Higman-Sims graph.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Covers of diameter 5
+Let Γ be an antipodal distance-regular graph with diameterd
+such that folded graphΓ′ is the Higman-Sims graph. Ifd = 5
+then Γ has the intersection array
+{22, 21,t (r− 1), 6, 1; 1, 6,t, 21, 22} andr = 2, 3. In the caser = 3
+we havet∈{ 6, 7, 8} and some eigenvalue ofΓ has nonintegral
+multiplicity. In the caser = 2 by Theorem 4.2.11 [10] the graph
+Γ is bipartite double of the Higman-Sims graph.
+Problem 3
+Does a distance-regular graph of diameter4, which isr-cover of
+the Higman-Sims graph (r∈{ 2, 3, 6}), exist?
+Let Γ be a distance-regular graph with diameter 4, which is
+2-cover of the Higman-Sims graph. Then
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Q =
+
+
+1 1 1 1 1
+50 50
+√
+22/22 0 −50
+√
+22/22 −50
+77 7 −3 7 77
+50 −50
+√
+22/22 0 50
+√
+22/22 −50
+22 −8 2 −8 22
+
+
+.
+So
+χ4(g) = 1/200(22α0(g)− 8α1(g) + 2α2(g)− 8α3(g) + 22α4(g)).
+By substitutionα1(g) +α3(g) = 200−α0(g)−α2(g)−α4(g) we
+have
+χ4(g) = 1/20(3α0(g) +α2(g) + 3α4(g))− 8.
+By substitutionα0(g) +α4(g) = 200−α1(g)−α2(g)−α3(g) we
+haveχ4(g) = 1/20(−3α1(g)− 2α2(g)− 3α3(g)) + 22.
+Similarly
+χ1(g) = (α0(g)−α4(g))/4 +
+√
+22(α1(g)/22−α3(g))/88.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 8 A. Makhnev, D. Paduchikh [16]
+Let Γ be a distance-regular graph with intersection array
+{22, 21, 3, 1; 1, 3, 21, 22}, G = Aut(Γ), g be an element of prime
+order p of G and Ω = Fix(g). Then one of the following holds:
+1 p = 11, Ω is an antipodal class,α2(g) = 154 and
+α1(g) =α3(g) = 22;
+2 p = 7, Ω is the union of two antipodal classes having degree
+1, α1(g) =α3(g) = 14 and α2(g) = 168;
+3 p = 5, Ω is an empty graph,α4(g) = 0 and either
+α1(g) =α3(g) = 0, orα1(g) =α3(g) = 50;
+4 p = 3, Ω is the union of two isolatedK5,5-subgraphs with
+deleted matching andα2(g) = 180;
+5 p = 2, Ω is an empty graph andα4(g) = 200.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 9 A. Makhnev, D. Paduchikh [16]
+Let Γ be a distance-regular graph with intersection array
+{22, 21, 4, 1; 1, 2, 21, 22}, G = Aut(Γ), g be an element of prime
+order p of G and Ω = Fix(g). Then one of the following holds:
+1 p = 11, Ω is an antipodal class,α2(g) = 231 andα1(g) = 66;
+2 p = 7, Ω is the union of two antipodal classes having degree
+1, α1(g) =α3(g)/2 = 14 and α2(g) = 252;
+3 p = 5, Ω is an empty graph,α4(g) = 0 and either
+α2(g) = 300, orα1(g) =α3(g)/2 = 50 and α2(g) = 150;
+4 p = 3, Ω is an empty graph, and eitherα1(g) =α3(g) = 0,
+α4(g) = 300 or α4(g) = 30, α2(g) = 270;
+5 p = 2, Ω is an empty graph,α4(g) = 0, α2(g) = 180 and
+α1(g) =α3(g)/2 = 40.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 10 A. Makhnev, V. Nosov [17]
+Let Γ be a distance-regular graph with intersection array
+{22, 21, 5, 1; 1, 1, 21, 22}, G = Aut(Γ), g be an element of prime
+order p of G and Ω = Fix(g). Thenπ(G)⊆{ 2, 3, 5, 7} and one
+of the following holds:
+1 p = 7, Ω /emdash.cyr a graph of degree1, which is the union of two
+antipodal classes, 5α1(g) =α3(g) = 70 and α2(g) = 504;
+2 p = 5, either Ω is an empty graph,α4(g) = 0 and
+α1(g) =α3(g) = 0, or 5α1(g) =α3(g) = 250, or Ω is
+pentagon, 5α1(g) =α3(g) = 50, α2(g) = 510 and
+α4(g) = 25;
+3 p = 3, Ω is an empty graph, eitherα4(g) = 600, or
+α4(g) = 60 and α2(g) = 540;
+4 p = 2, Ω is an empty graph andα4(g) = 600.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Corollary 4
+Let Γ be a distance-regular graph with diameter4 such thatΓ is
+r-cover (r = 2, 3, 6) of the Higman-Sims graph. Then the group
+G = Aut(Γ) acts intransitively on the set of antipodal classes of
+Γ.
+For the proof of theorems 6.1–6.3 we have very useful
+Lemma 5
+Let Γ be a Higman-Sims graph,G = Aut(Γ), g an element of
+prime orderp of G and Ω = Fix(g). Then the following
+statements hold:
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+1 p = 11,|Ω| = 1, α1(g) = 22, ﬁve⟨g⟩-orbits are regular of
+degree 4, and four /emdash.cyr cocliques;
+2 p = 7,|Ω| = 2, α1(g) = 14, six⟨g⟩-orbits are 7-gon;
+3 p = 5, either Ω is pentagon, orΩ is an empty graph;
+4 p = 3, α1(g) = 0, Ω is K5,5-subgraph without matching;
+5 p = 2, and either
+(i) Ω is an empty graph,α1(g) = 40, or
+(ii) Ω is a 2-coclique extension of Petersen graph,
+α2(g) = 80 and each vertex ofΓ− Ω is adjacent with4
+vertices of Ω, or
+(iii) Ω is 6-coclique (this isµ-subgraph of two
+α2-vertices), eachα2-vertex is adjacent with2 or 6 vertices
+of Ω, or
+(iv) Ω is an amply regular graph with parameters
+(30, 8, 0, 4), α2(g) = 70 and eachα2-vertex is adjacent with
+6 vertices of Ω.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Covers of srg(81,20,1,6)
+Wenbin Guo, A. Makhnev and D. Paduchikh investigated
+automorphisms of a distance-regularr-covers Γ of the strongly
+regular graph with parameters (81,20,1,6). It is known that
+there exists a unique strongly regular graph with this
+parameters. Ifd(Γ) = 5 then Γ has the intersection array
+{20, 18,t (r− 1), 6, 1; 1, 6,t, 18, 20} and
+c2≤t≤ min{b1,a 2}/(r− 1) (parameters a2,b 1,c 2 correspond to
+the strongly regular graph), sor≤ 3. Ifr = 3, thent = 6, 7. If
+r = 2, then 6≤t≤ 14. In any case some eigenvalue ofΓ has
+nonintegral multiplicity.
+Covers with diameter 4
+In the cased(Γ) = 4 by Theorem 4.2.11 [10] the graphΓ has
+feasible intersection array forr∈{ 2, 3, 6}. Ifr = 3 then cover
+exist (it is the graph on the cosets of ternary Goley code).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Let Γ be a distance-regular 2-cover of strongly regular graph
+with parameters (81,20,1,6). Then
+Q =
+
+
+1 1 1 1 1
+36 9 0 −9 −36
+60 6 −3 −6 60
+45 −9 0 9 −45
+20 −7 2 −7 20
+
+
+.
+So
+χ1(g) = 1/18(4α0(g) +α1(g)−α3(g)− 4α4(g)).
+χ2(g) = 1/54(20α0(g) + 3α1(g)−α2(g)− 3α3(g) + 20α4(g)).
+χ3(g) = 1/18(5α0(g)−α1(g)/2 +α3(g)− 5α4(g)).
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 11 Wenbin Guo, A. Makhnev, D. Paduchikh [18]
+Let Γ be a distance-regular graph with intersection array
+{20, 18, 3, 1; 1, 3, 18, 20}, G = Aut(Γ), g be an element of prime
+orderp ofG and Ω = Fix(g). Then|G| divides 18 and one of the
+following holds:
+1 p = 2,|Ω| = 0 and d(u,ug) = 4 for every vertexu∈ Γ;
+2 p = 3, Ω is either an empty graph or the union of two
+triangles, distance between them inΓ is equal 3 and
+α3(g) =α4(g) = 0.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 12 Wenbin Guo, Makhnev A., Paduchikh D. [18]
+Let Γ be a distance-regular graph with intersection array
+{20, 18, 4, 1; 1, 2, 18, 20}, G = Aut(Γ), g be an element of prime
+order p of G and Ω = Fix(g). Then one of the following holds:
+1 p = 5, Ω is an antipodal class,α4(g) = 0, α2(g) = 180 and
+α1(g) =α3(g) = 30;
+2 p = 2, ¯Ω is m-coclique, m∈{ 1, 3, 9} and Ω is n-coclique,
+n∈{ 1, 9, 9} respectively;
+3 p = 3, α3(g) =α4(g) = 0 and either
+(i) α4(g) = 243,
+(ii) α1(g) +α3(g) = 243 and α1(g) is divided by9,
+(iii) α2(g) = 243,
+(iv) α0(g) = 0, α1(g) +α3(g) = 54, α2(g) = 162,
+α4(g) = 27 and α1(g)∈{ 0, 27, 54}, or
+(v) α0(g) = 9, α1(g) +α3(g) = 54, α2(g) = 162,
+α4(g) = 18 and α1(g)∈{ 0, 27, 54}.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 13 Wenbin Guo, A. Makhnev A, D. Paduchikh [18]
+Let Γ be a distance-regular graph with intersection array
+{20, 18, 5, 1; 1, 1, 18, 20}, G = Aut(Γ), g be an element of prime
+order p of G and Ω = Fix(g). Then one of the following holds:
+1 p = 5, Ω is an antipodal class,α1(g) +α3(g) = 120,
+α2(g) = 360;
+2 p = 3 and either
+(i) α4(g) = 486,
+(ii) α1(g) +α3(g) = 486 and α1(g) is divided by9,
+(iii) α2(g) = 486,
+(iv) α0(g) = 0, α1(g) +α3(g) = 108, α2(g) = 324,
+α4(g) = 54 and α1(g) is divided by9, or
+(v) α0(g) = 18, α1(g) +α3(g) = 108, α2(g) = 324,
+α4(g) = 36 and α1(g)− 3 is divided by9.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Corollary 5
+Let Γ be a distance-regular graph with diameter4 such thatΓ is
+r-cover (r = 2, 3, 6) of the strongly regular graph wirh
+parameters (81, 20, 1, 6). If Aut(Γ) acts transitively on the set
+vertices of Γ, thenr = 3.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Terwilliger graphs
+Known graphs
+Noncomplete connected graph is called Terwilliger graph, if for
+every two verticesu,w at distance 2 the subgraph[u]∩ [w] is
+µ-clique for some constantµ. All of known distance-regular
+Terwilliger graph withµ> 1 are locally Moore graphs. A
+connected locally pentagon graph is isomorphic to the
+icosahedron. There are exactly three connected locally Petersen
+graphs [10, theorem 1.16.5]:¯T (7), Conway-Smith graph (the
+unique distance-regular graph with intersection array
+{10, 6, 4, 1; 1, 2, 6, 10}) and Doro graph (the unique
+distance-regular graph with intersection array{10, 6, 4; 1, 2, 5}).
+The existence of locally Hoﬀman-Singleton graphs is unknown.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+A. Gavrilyuk and A. Makhnev [19] classiﬁed connected
+Terwilliger graphs, containing a some vertexu such that [u] is
+Petersen graph.
+Proposition 6
+Let Γ be a Terwilliger graph with vertexu such that [u] is
+Petersen graph. Then one of the following holds:
+1 Γ =u⊥;
+2 Γ is Conway-Smith graph;
+3 Γ is Doro graph.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Locally Ho-Si graphs
+A. Gavrilyuk and A. Makhnev [20] proved that a
+distance-regular locally Hoﬀman-Singleton graph has
+intersection array{50, 42, 1; 1, 2, 50} or{50, 42, 9; 1, 2, 42}.
+A. Gavrilyuk, Wenbin Guo and A. Makhnev investigated
+automorphisms of distance-regular Terwilliger graphs with
+intersection arrays{50, 42, 1; 1, 2, 50} and{50, 42, 9; 1, 2, 42}.
+Let Γ be a distance-regular graph with intersection array
+{50, 42, 1; 1, 2, 50}. Then
+Q =
+
+
+1 1 1 1
+357 357 /5 −17/5 −17
+50 −1 −1 50
+714 −357/5 17 /5 −34
+
+.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+So
+χ1(g) = 1/1122(357α0(g) + 357α1(g)/5− 17α2(g)/5− 17α3(g)).
+As α2(g) = 1122−α0(g)−α1−α3(g), then
+χ1(g) = (53α0(g) + 11α1(g)− 2α3(g))/165− 17/5.
+Further,χ2(g) = 1/1122(50α0(g)−α1(g)−α2(g) + 50α3(g). By
+substitution α1(g) +α2(g) = 1122−α0(g)−α3(g) we have
+χ2(g) = (α0(g) +α3(g))/22− 1.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 14 A. Gavrilyuk, Wenbin Guo, A. Makhnev [21]
+Let Γ be a distance-regular Terwilliger graph with intersection
+array{50, 42, 1; 1, 2, 50}, g be an element of prime orderp of
+Aut(Γ) and Ω = Fix(g). Then one of the following holds:
+1 p = 3, 11 or 17 and Ω is an empty graph;
+2 p = 5, d(a,b ) = 3 for any two verticesa,b∈ Ω and
+|Ω|∈{ 2, 7, 12, 17}.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Let Γ be a distance-regular graph with intersection array
+{50, 42, 9; 1, 2, 42}. Then
+Q =
+
+
+1 1 1 1
+350 77 −1 −14
+390 −39/5 −39/5 182 /5
+585 −351/5 117 /15 −117/5
+
+.
+So χ1(g) = 1/1326(350α0(g) + 77α1(g)−α2(g)− 14α3(g)),
+α2(g) = 1326−α0(g)−α1(g)−α3(g) and
+χ1(g) = (27α0(g) + 6α1(g)−α3(g))/102− 1.
+Further,
+χ2(g) = 1/1326(390α0(g)−39α1(g)/5−39α2(g)/5+182α3(g)/5).
+By substitutionα1(g) +α2(g) = 1326−α0(g)−α3(g), we have
+χ2(g) = (9α0(g) +α3(g))/30− 39/5.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+Theorem 15 A. Gavrilyuk, Wenbin Guo, A. Makhnev [21]
+Let Γ be a distance-regular Terwilliger graph with intersection
+array{50, 42, 9; 1, 2, 42}, g be an element of prime orderp of
+Aut(Γ) and Ω = Fix(g). Then one of the following holds:
+1 p = 3, 13 or 17 and Ω is an empty graph;
+2 p = 7 and Ω is the union of ﬁve isolated2-cliques;
+3 p = 5 and Ω is the one vertex graph.
+Corollary 6
+Distance-regular Terwilliger graphs with intersection arrays
+{50, 42, 1; 1, 2, 50} and{50, 42, 9; 1, 2, 42} are not
+vertex-symmetric.
+Earlier John van Bon has proved that a locally
+Hoﬀman-Singleton graph is not distance-transitive.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+The following proposition has independent interest.
+Proposition 7
+Let Γ be a Terwilliger locally Hoﬀman-Singleton graph,t be an
+automorphism of prime orderp of Γ, having ﬁxed point and
+Ω = Fix(t). Then one of the following holds:
+1 p = 2, any component ofΩ is isomorphic to Conway-Smith
+graph or Doro graph, for any vertexw∈ Γ− Ω we have
+d(w,wt)≥ 2 and w is adjacent to0 or 2 vertices of Ω;
+2 p = 5, any component ofΩ is the one vertex graph or the
+icosahedron graph and the distance between two vertices
+from diﬀerent components is at least3;
+3 p = 7, any component ofΩ is an edge and the distance
+between two vertices from diﬀerent components is at least3.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+References
+1 Cameron P., van Lint J. Graphs, Codes and Designs,
+Cambr. Univ. Press 1991. ->Proposition 1
+2 Cameron P.J. Permutation Groups, Cambridge Univ. Press,
+1999. ->Character
+3 Makhnev, Minakova I.M. On automorphisms of graphs with
+λ = 1,µ = 2, Discret. Matem. 2004, v. 16, 95-104.
+->Theorem 1
+4 Wilbrink H.A. On the (99,14,1,2) strongly regular graph,
+In: P.J. de Doelder, J. de Graaf, J.H. van Lint, Papers
+dedicated to J.J. Seidel, Eindhoven: Technische Hogeschool
+Eindhoven, 1984, 342-355.
+5 Makhnev A.A., Nosov V.V. On automorphisms of strongly
+regular graphs withλ = 0, µ = 2, Matem. Sbornik 2004, v.
+185, N 3, 47-68. ->Theorem 2
+6 Nakagawa N. On strongly regular graphs with parameters
+(k, 0, 2) and their antipodal double cover, Hokkaido Math.
+Soc. 2001, v. 30, 431-450.A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+References
+7 Gavrilyuk A.L., Makhnev A.A. On Krein graphs without
+triangles, Doklady RAN, 2006, v. 403, N 6, 727-730.
+8 Makhnev A.A., Nosov V.V. On automorphisms of strongly
+regular Krein graphs without triangles, Algebra i Logika
+2005, v. 44, N 3, 335-354. ->Theorem 4
+9 Gavrilyuk A.L. On automorphisms of strongly regular
+graphs with parameters(784, 116, 0, 20), Sibirean Electron
+Math. Izv. 2008, v. 5, 80-87. ->Theorem 3
+10 Brouwer A.E., Cohen A.M., Neumaier A. Distance-Regular
+Graphs, Springer-Verlag, 1989.
+11 Belousov I.N., Makhnev A.A. On automorphisms of
+generalized octagon of order (2,4), Doklady RAN 2008, v.
+423, N 2, 151-154. ->Theorem 5
+12 Cohen A., Tits J., On generalized hexagons and a near
+octagon whose lines have three points, Europ. J. Comb.
+1985, v. 6, 13–27.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+References
+13 Belousov I.N., Makhnev A.A. On automorphisms of
+generalized gexagon of order (3,27), Proc. Inst. Math. and
+Mechanics UB RAS 2009, v. 15, N 2, 34-44.->Theorem 6
+14 Gavrilyuk A.L., Makhnev A.A. Amply regular graphs and
+block-designs, Sibirskii Math. J. 2006, v. 47, N 4, 609-619.
+15 Gavrilyuk A.L., Makhnev A.A. On automorphisms of
+distance-regular graph with the intersection array
+{60, 45, 8; 1, 12, 50}, Proc. Inst. Math. and Mechanics UB
+RAS 2007, v. 13, N 2, 41-53. ->Theorem 7
+16 Makhnev A.A., Paduchikh D.V. Covers of the Higman-Sims
+graph and their automorphisms, Doklady RAN 2008, v.
+422, N 1, 26-29. ->Theorem 8
+17 Makhnev A.A., Nosov V.V. On automorphisms of 6-cover
+of the Higman-Sims graph, Doklady RAN 2009, v. 425, N 3,
+584-600.
+A.A. Makhnev Graphs and automorphisms
+t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 11 lit
+References
+18 Guo Wenbin, Makhnev A.A., Paduchikh D.V. On
+automorphisms of covers of strongly regular graph with
+parameters (81,20,1,6), Mathem. notes 2009, v. 86, N 1,
+22-36. ->Theorem 11
+19 Gavrilyuk A.L., Makhnev A.A. Terwilliger graphs, in which
+neighborhood of some vertex is isomorphic to Petersen
+graph, Doklady RAN 2008, v. 421, N 4, 445-448.
+20 Gavrilyuk A.L., Makhnev A.A. Distance-regular graph, in
+which neighborhoods of vertices are isomorphic to
+Hoﬀman-Singleton graph, Doklady RAN 2009, v. 428, N 2,
+445-449.
+21 Gavrilyuk A.L., Guo Wenbin, Makhnev A.A. On
+automorphisms of Terwilliger graphs withµ = 2, Algebra i
+Logika, 2008, v. 47, N 5, 584-600. ->Theorem 14
+A.A. Makhnev Graphs and automorphisms

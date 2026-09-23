@@ -1,0 +1,31 @@
+role: proof_b
+date_utc: 2026-07-27T23:46:05Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: DERIVED
+scope: >-
+  Conditional characteristic-seven evaluation code from the Wave66/Wave71
+  level-seven neighbor; exact hull and orthogonal type; short-vector images;
+  and complete dual-support exclusion through weight five.
+inputs:
+  - path: attempts/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: 6edc7a5eb2f4a913f9e6af4936984246a75cef8f562167b3d7a99d1a26bbec35
+  - path: attempts/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: f0551b070edafc29d4adf5a380769c9bf4793721634e627ec1babd86b3117b39
+method: >-
+  Prove the marked vectors span L modulo seven; identify evaluation dot
+  product and radical; translate the Milgram sign into finite orthogonal
+  type; exhaust every Seidel sign pattern on supports two through four and
+  all 1024 labelled five-vertex graphs with induced lambda/mu and outside
+  incidence controls; test the strength-five Hamming moments exactly.
+command: >-
+  cd attempts/wave80-f7-overlattice-code;
+  python exact_check.py;
+  python -m unittest -v test_exact_check.py
+outputs:
+  - path: attempts/wave80-f7-overlattice-code/exact-results.json
+    sha256: 4705432e0f996df0bf81d3cbf1e12970c0cef86501c03de3cc37915e3900cad6
+limitations:
+  - Wave80 is discovery and does not independently verify Waves66 or 71.
+  - Positive MacWilliams moment slack is not a full formal enumerator.
+  - The non-split quotient permits every forced short-vector self-dot.
+  - No graph, lattice, strict n3 upper bound, or Conway-99 resolution is claimed.

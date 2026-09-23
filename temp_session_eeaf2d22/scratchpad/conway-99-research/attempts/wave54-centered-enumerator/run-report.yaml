@@ -1,0 +1,27 @@
+role: construction
+date_utc: 2026-07-27T19:49:20Z
+git_commit: a4a61658356253fb95cf68252c972a4f79df38fe
+claim_label: CANDIDATE
+scope: >-
+  Ordinary formal weight-enumerator feasibility for the conditional centered
+  projective self-orthogonal ternary [231,11] endpoint code.
+inputs:
+  - path: attempts/wave39-simultaneous-bh/exact-results.json
+    sha256: 1aab10ae2bf080d682a22d6c1e66a29f001ab2a889dc6b190b67fe0a0e0ad77d
+  - path: verification/2026-07-27-wave39-integration-audit.md
+    sha256: 9d22f5ae2ed1f1ec756975508030f2b6b440580d1215604d4f353256bae1483b
+method: >-
+  Exact q=3 Krawtchouk recurrence and arbitrary-precision MacWilliams
+  transform of a seven-weight integral candidate; check projectivity,
+  self-orthogonal enumerator dominance, and all recorded dual lower bounds.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave54-centered-enumerator\exact_check.py --verify attempts\wave54-centered-enumerator\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave54-centered-enumerator -p "test_*.py" -v
+outputs:
+  - path: attempts/wave54-centered-enumerator/exact-results.json
+    sha256: d7f8da8862c74da08e5d122e028f95125051d4e3032287f8e2e7f5490ded3cd8
+limitations:
+  - Discovery cannot verify itself; independent reconstruction is required.
+  - The object is a formal ordinary enumerator, not a realized linear code.
+  - Complete symbol compositions and the 99 distinguished dual stars are not encoded.
+  - No endpoint graph, upper-bound improvement, Conway-99 resolution, or novelty claim follows.

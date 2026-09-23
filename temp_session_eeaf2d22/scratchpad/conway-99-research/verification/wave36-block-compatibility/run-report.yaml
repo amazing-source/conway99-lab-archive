@@ -1,0 +1,39 @@
+role: verifier
+date_utc: 2026-07-26T23:09:48Z
+git_commit: 697cc02bcbe16b69aaf08822298e03c66329c64c
+claim_label: VERIFIED
+scope: >-
+  Conditional endpoint one-triangle block equations, component balance and
+  patterns, spectral transfer, and the frozen restricted-core
+  183980-to-151712 and fixed-pair 3600-to-3266-to-2939 censuses.
+inputs:
+  - "verification/wave36-block-compatibility/input-freeze.sha256"
+method: >-
+  Clean-room block expansion and exact derivation; independent bitset
+  reconstruction and exhaustive enumeration; exhaustive six-vertex control;
+  exact rational rank and trace arithmetic.
+command:
+  - >-
+    .\.venv\Scripts\python.exe -B
+    verification/wave36-block-compatibility/independent_check.py --verify
+    verification/wave36-block-compatibility/independent-results.json
+  - >-
+    .\.venv\Scripts\python.exe -B -m unittest discover -s
+    verification/wave36-block-compatibility -p "test_*.py" -v
+outputs:
+  - "verification/wave36-block-compatibility/audit.md | sha256 1f3856bc91d4ba7da53fc55e2f90528848683626191b9f8f4091c9c46cea2c96"
+  - "verification/wave36-block-compatibility/independent_check.py | sha256 96729237625b774b79ab64b0346b00a4e413ce7b910eae66516e7b17673db2a9"
+  - "verification/wave36-block-compatibility/test_independent_check.py | sha256 2411055879adc3079e79f9bdf973947fb9e9ac75ccc338dd7730bf4f79cb2bee"
+  - "verification/wave36-block-compatibility/independent-results.json | sha256 b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4"
+  - "verification/wave36-block-compatibility/input-freeze.sha256 | sha256 4af2b1ba796c55942e4d79be5607043c9ea62151fe3c40aa31a6cf095ce1f9cc"
+limitations:
+  - >-
+    All general results are conditional on the frozen Wave 35 endpoint
+    premises.
+  - >-
+    The retained target files contain no model builder, solver instance, raw
+    log, LP witness, or certificate, so the historical LP/MILP/SAT executions
+    are not independently reproducible and remain UNKNOWN.
+  - >-
+    No simultaneous B, compatible H, endpoint exclusion, improved n3 bound,
+    or Conway-99 resolution is verified.

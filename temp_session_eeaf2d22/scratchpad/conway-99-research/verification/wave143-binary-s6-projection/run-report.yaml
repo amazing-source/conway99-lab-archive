@@ -1,0 +1,63 @@
+role: verifier
+date_utc: 2026-07-28T10:29:01Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: VERIFIED
+scope: >-
+  Clean-room exact verification of the sealed Wave143 formal rational
+  binary S6 projection, its eight submitted rational points, the elementary
+  weak optimum, all ordinary/split/signed/shadow rows, and the integral
+  equality-lattice projection; with a premise correction separating
+  target-forced distance at least 8 from the formal distance-14/15 slice.
+inputs:
+  discovery_manifest:
+    path: attempts/wave143-binary-s6-projection/package-manifest.sha256
+    sha256: 91e1053b886f05d8457bb14a5acaf87c02afe73ad087e98203cc779012571a61
+  frozen_six_vertex_results:
+    path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  prior_distance_verification:
+    path: verification/wave131-binary-lcd-enumerator/independent-results.json
+    sha256: 65b365a1779c4e1fcfc6d0d3b0f38abaf9ed98798c7cc0d26a6fa64495149087
+method: >-
+  Freeze the final discovery manifest before inspection; independently
+  enumerate and sign all 62 six-vertex classes; rebuild binary Krawtchouk
+  and MacWilliams transforms using Fraction arithmetic; replay every
+  normalization, support, lower-bound, complement, split, pair, Arf, S6,
+  and shadow condition on all eight rational points; prove the weak
+  endpoints by n3 nonnegativity and the active sixth shadow row; rebuild
+  both a reduced column-lattice HNF and the full 109-by-142 A,D,k HNF;
+  reconstruct and replay the enormous particular and homogeneous vectors
+  before comparing their hashes; and run hostile point mutations.
+command: |-
+  .\.venv\Scripts\python.exe -B verification\wave143-binary-s6-projection\independent_verify.py
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave143-binary-s6-projection -p "test_*.py" -v
+  python -B -m unittest discover -s attempts\wave143-binary-s6-projection -p "test_*.py" -v
+outputs:
+  independent_checker:
+    path: verification/wave143-binary-s6-projection/independent_verify.py
+    sha256: 3d1bc04e526c95d3c82e7861758c72870d36403a5bcda6663cdc5415ebdbcc49
+  hostile_tests:
+    path: verification/wave143-binary-s6-projection/test_independent_verify.py
+    sha256: 235500c50a85aa4da59054a84979013e86aa412ecf909c042c0410a1922d687a
+  exact_results:
+    path: verification/wave143-binary-s6-projection/verification-results.json
+    sha256: 727edf062ad09b52827bf7696ba19f779587a6aa77418225400b938f433c0bb2
+  verification_report:
+    path: verification/wave143-binary-s6-projection/verification-report.md
+    sha256: 34096f94bc3ba687d4b25b03d3c8a68509b43f76061078e8acd3b413118e0acc
+  exact_point_replay: "8/8 PASS"
+  ordinary_MacWilliams_rows: "1600/1600 PASS"
+  distinguished_split_systems: "32/32 PASS"
+  signed_rows_M0_through_M6: "56/56 PASS"
+  shadow_rows_t6_through_t99: "752/752 PASS"
+  independent_hostile_tests: "11/11 PASS"
+  discovery_tests: "1/1 PASS"
+  hnf_vector_hashes: "4/4 independently reconstructed and matched"
+limitations: >-
+  The rational witnesses impose the stronger formal conditions
+  d(image)>=14 and d(dual)>=15, while target evidence currently proves only
+  d(im A)>=8 and d(ker A)>=8. Any target implication relying on the stronger
+  distance is vetoed. The full HNF layer omits dual-distance zeros and all
+  inequalities; its vectors may have negative coordinates. Integer
+  nonnegative feasibility, code realization, graph realization, external
+  novelty, and Conway-99 remain UNKNOWN.

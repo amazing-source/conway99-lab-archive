@@ -1,0 +1,214 @@
+{
+  "bound": {
+    "Q0_face_excluded": false,
+    "all_projective_short_circuits": 7752,
+    "conditional_Q_lower": 7059,
+    "conditional_Q_lower_improved": false,
+    "nonzero_scalar_short_circuit_words": 15504
+  },
+  "boundary": {
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "flag_family_constructed": false,
+    "graph_constructed": false,
+    "rank_11_excluded": false,
+    "strict_original_n3_improvement": false
+  },
+  "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+  "face": {
+    "analytic_partition": {
+      "SL_one": "SL=1 and SE2=delta=eta=SM=SF=a1=c2=0",
+      "SL_zero_even_one": "SL=0, SE2+eta+c2=1, delta+SM+SF+a1=1",
+      "SL_zero_even_zero": "SL=0, SE2+eta+c2=0, delta+SM+SF+a1=3",
+      "complete": true
+    },
+    "certificate_face": "3=8*SI+12*S2+2*SE2+7*RA+3*SL+delta+2*eta+SM+SF+a1+6*b3+2*c2+4*W",
+    "forced_zero": [
+      "SI",
+      "S2",
+      "RA",
+      "b3",
+      "W"
+    ],
+    "integrality": "all displayed raw variables are integral for integral free counts and slacks; no hidden half-integrality remains",
+    "nonnegativity_conditions": [
+      "SE2+c2+2*SF<=60",
+      "SF<=30",
+      "a1+SL<=357+SF",
+      "a3+3*n3+SF-SE2>=3801",
+      "a3+3*n3+eta+SM>=3564",
+      "p3>=c2",
+      "0<=g<=1287-n3-SF",
+      "0<=epsilon<=4*q",
+      "delta,eta,SM,SF,SE2,SL,a1,c2>=0"
+    ],
+    "raw_formulas": {
+      "J": "3564-delta",
+      "T": "J-a3-eta",
+      "a2": "60-SE2-c2-2*SF",
+      "b1": "2*n2",
+      "c1": "p3-c2",
+      "delta": "3-2*SE2-3*SL-2*eta-SM-SF-a1-2*c2",
+      "epsilon": "SM-delta+3*q",
+      "h": "1287-n3-SF-g",
+      "n1": "a1+a2+a3",
+      "n2": "357-a1-SL+SF",
+      "p2": "n2",
+      "p3": "7128-delta-2*a3-2*eta-SM-3*n3",
+      "q": "3*n3+a3+eta+SM-3564",
+      "r1": "a1+b1+c1",
+      "r2": "30-SF",
+      "y": "a3+3*n3-3801-SE2+SF"
+    },
+    "reduced_budget": "2*SE2+3*SL+delta+2*eta+SM+SF+a1+2*c2=3",
+    "symbolic_replay": {
+      "3*n3-p3-(5*q-epsilon)": "0",
+      "Q0": "7059",
+      "RA": "0",
+      "S2": "0",
+      "SE2": "SE2",
+      "SF": "SF",
+      "SI": "0",
+      "SL": "SL",
+      "SM": "SM",
+      "T-p3-q": "0",
+      "eta": "eta"
+    }
+  },
+  "format": "wave202-three-unit-face-independent-v1",
+  "local_equality": {
+    "deficient_center": "sigma_x=36-3*c_x+sum_P[gap_P+r_P]",
+    "examples": {
+      "nonbaseline_distinct": {
+        "baseline": 0,
+        "degree": 3,
+        "distinct_full_labels": 3,
+        "local_term": 0,
+        "loss": 0,
+        "selected_gap": 0,
+        "selected_labels": 0,
+        "unselected_repetition": 0,
+        "weighted": 0
+      },
+      "tight_empty_baseline": {
+        "baseline": 1,
+        "degree": 5,
+        "distinct_full_labels": 4,
+        "local_term": 0,
+        "loss": 1,
+        "selected_gap": 0,
+        "selected_labels": 0,
+        "unselected_repetition": 1,
+        "weighted": 0
+      },
+      "tight_selected_m1": {
+        "baseline": 1,
+        "degree": 5,
+        "distinct_full_labels": 4,
+        "local_term": 1,
+        "loss": 1,
+        "selected_gap": 0,
+        "selected_labels": 1,
+        "unselected_repetition": 1,
+        "weighted": -1
+      },
+      "tight_selected_m2": {
+        "baseline": 1,
+        "degree": 5,
+        "distinct_full_labels": 4,
+        "local_term": 0,
+        "loss": 1,
+        "selected_gap": 0,
+        "selected_labels": 1,
+        "unselected_repetition": 0,
+        "weighted": 0
+      },
+      "tight_selected_m3": {
+        "baseline": 1,
+        "degree": 5,
+        "distinct_full_labels": 3,
+        "local_term": 0,
+        "loss": 2,
+        "selected_gap": 0,
+        "selected_labels": 1,
+        "unselected_repetition": 0,
+        "weighted": 1
+      }
+    },
+    "fibre_formula": "local_term=sum_selected(n-m)+sum_unselected(n-1)+r-baseline",
+    "global": "SM=sum_x sigma_x",
+    "slack_at_most_three": [
+      "no center can have c_x<=10",
+      "a c_x=11 center consumes at least three units",
+      "each selected nonprivate label at a c_x=12 center consumes at least one unit",
+      "at a tight center, zero local slack permits selected labels only in degree-five baseline fibres"
+    ],
+    "tight_center": "sigma_x=sum_P[gap_P+r_P-b_P], with b_P=1 on exactly the three degree-five Hilton-Milner pair types",
+    "tight_zero_slack": {
+      "baseline_empty": "exactly one unavoidable repeat among four full labels",
+      "baseline_selected": "exactly one selected label, full multiplicity equals selected multiplicity m in {2,3,4,5}, and every unselected full label has multiplicity one",
+      "multiplicity_one": "impossible at zero local slack; it costs at least one",
+      "nonbaseline": "no selected nonprivate label and no repeated full label"
+    }
+  },
+  "null_control": {
+    "aggregate": {
+      "Q0": 7059,
+      "epsilon": 708,
+      "q": 237,
+      "selected_incidence": 477,
+      "weighted_loss": 3
+    },
+    "asserted_graph_or_flag_family": false,
+    "certificate_partition": "delta=3 and every other term zero",
+    "consequence": "current one-center fibre inequalities do not exclude Q0=7059",
+    "earlier_m1_accounting_profile": {
+      "locally_zero_slack": false,
+      "profile": {
+        "1": 1,
+        "2": 232,
+        "3": 4
+      },
+      "reason": "a selected m=1 label in a tight degree-five fibre costs at least one local SM unit"
+    },
+    "hidden": {
+      "J": 3561,
+      "SE2": 0,
+      "SF": 0,
+      "SL": 0,
+      "SM": 0,
+      "T": 3360,
+      "delta": 3,
+      "epsilon": 708,
+      "eta": 0,
+      "q": 237
+    },
+    "local_distribution": "79 tight centers use their three degree-five baseline fibres; 234 selected labels have m=2 and three have m=3; the other 20 tight centers carry no selected nonprivate label",
+    "local_multiset_rules": "selected m=2 uses full counts (2,1,1,1); selected m=3 uses (3,1,1); empty baselines use (2,1,1,1); nonbaseline full labels are distinct",
+    "locally_compatible_multiplicity_profile": {
+      "2": 234,
+      "3": 3
+    },
+    "raw_row": {
+      "C": 4158,
+      "V": 99,
+      "a2": 60,
+      "a3": 201,
+      "b1": 714,
+      "c1": 3123,
+      "g": 20,
+      "h": 67,
+      "n1": 261,
+      "n2": 357,
+      "n3": 1200,
+      "p2": 357,
+      "p3": 3123,
+      "r1": 3837,
+      "r2": 30
+    }
+  },
+  "search_scope": "symbolic affine elimination, exact fibre identities, and explicit non-object accounting controls only; no graph, configuration, family, cover, SAT, LP, enumeration, isomorphism, or brute-force search",
+  "stopping_point": "the three-unit face is compatible with every current one-center fibre and aggregate identity; exclusion would require a cross-center gluing theorem not presently proved",
+  "verdict": "INDEPENDENTLY_DERIVED_PRE_SOURCE"
+}

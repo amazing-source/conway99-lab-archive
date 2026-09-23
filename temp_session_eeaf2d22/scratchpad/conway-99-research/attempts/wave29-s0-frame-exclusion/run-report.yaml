@@ -1,0 +1,58 @@
+role: proof_a
+date_utc: 2026-07-24T03:13:35Z
+git_commit: 74b6f3adcee19ca2b0480258bb7bf51198bd085a
+claim_label: DERIVED
+scope: >-
+  Exact exclusion of the single frozen lattice
+  S0=K12 orthogonal_sum LAMBDA(F) as the S-form of a full n3=708
+  projector/Schur endpoint package. No other h=729 lattice, endpoint, graph,
+  target, or novelty claim is made.
+inputs:
+  agents/2026-07-24-wave28-orchestrator-brief.md: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  agents/2026-07-24-wave28-theta-modular.md: 8783be7e730306637ed863b4d9fbe8f4193ad756e7ec86d697c7407688a5423a
+  verification/wave28-theta-modular/audit.md: adc90e404735ca147bc0a5418974d8af0bde71c4ddc2dc62a8c07dee670dbfeb
+  verification/wave28-theta-modular/independent-results.json: 24298ae282c7baa252a39ffe96fc37b7c696cb51f14b9ddea2318a59b4335b7f
+  verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+method: >-
+  Exact norm-four support splitting; tight-frame block row counts; inherited
+  Schur blocks; determinant allocation using the rank-12 even-unimodular
+  signature veto; row-alphabet cubic trace residues; exact integer AM-GM;
+  and a fresh rank-12 characteristic-pseudodeterminant logarithmic bound.
+command: |-
+  cd attempts/wave29-s0-frame-exclusion
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  agents/2026-07-24-wave29-s0-frame-exclusion.md: e6ae61331a54d53f2a98712296ebac855f45b46de32ff2ec4d85018f2d8a5045
+  attempts/wave29-s0-frame-exclusion/exact_check.py: 6a31c4ae0b2c994f4c715ba5118e3b25a052e8b3fc99dea88ea794cb7d9d8dce
+  attempts/wave29-s0-frame-exclusion/test_exact_check.py: 26dff5f61d6bc6e3d752f596f5c318baee47358f27552e4a0b7e4c3e8a6a5c4f
+  attempts/wave29-s0-frame-exclusion/exact-results.json: 7a85c5321b5e91365c246dff7bae9264cc82494da5c866b1b351511099f6638c
+  attempts/wave29-s0-frame-exclusion/input-freeze.sha256: 5ddbd25498cf9f7048705e190f81e203d3d21efcc72d1750de2235e419fda1c4
+  attempts/wave29-s0-frame-exclusion/failed-routes.md: bba05cd84c1ac35284c9f8af7d8dd32480f11158ada69195b1bfa61892cad234
+tests:
+  status: PASS
+  count: 18
+results:
+  K12_rows: 63
+  LAMBDA_F_rows: 168
+  detQ: 5
+  detQ_K: 5
+  detQ_L: 1
+  detB_K: 3645
+  detB_L: 1
+  traceB_K: 24
+  traceB_L: 36
+  traceC_K: 6
+  logarithmic_detB_K_cap: 729
+  contradiction: "3645 > 729"
+  S0_full_endpoint_origin: REFUTED_BY_DERIVATION
+  all_h_729_lattices: UNKNOWN
+  n3_equals_708: UNKNOWN
+  Conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - The proof is specific to the frozen orthogonal K12 plus LAMBDA(F) form.
+  - C_K is not claimed positive semidefinite; only B_K positivity and the spectral domain mu>-1/2 are used.
+  - No automorphism, finite-search completeness, embedding, frame construction, graph, or endpoint realization is supplied.
+  - Independent verification is required before any promotion beyond DERIVED.

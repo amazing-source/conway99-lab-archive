@@ -1,0 +1,47 @@
+{
+  "attempts": [
+    {
+      "equality_support": 30,
+      "exact_support_rank": 30,
+      "inequality_support": 0,
+      "negative_inequalities": [],
+      "outcome": "exact_identity_or_sign_failure",
+      "relative_threshold": 1e-07
+    },
+    {
+      "equality_support": 38,
+      "exact_support_rank": 38,
+      "inequality_support": 0,
+      "negative_inequalities": [],
+      "outcome": "exact_identity_or_sign_failure",
+      "relative_threshold": 1e-08
+    },
+    {
+      "equality_support": 56,
+      "exact_support_rank": 53,
+      "inequality_support": 0,
+      "outcome": "dependent_support",
+      "relative_threshold": 1e-09
+    },
+    {
+      "equality_support": 66,
+      "exact_support_rank": 63,
+      "inequality_support": 0,
+      "outcome": "dependent_support",
+      "relative_threshold": 1e-10
+    },
+    {
+      "equality_support": 71,
+      "exact_support_rank": 66,
+      "inequality_support": 0,
+      "outcome": "dependent_support",
+      "relative_threshold": 1e-11
+    }
+  ],
+  "classification": "EXACT_FARKAS_RECOVERY_FAILED",
+  "dual_diagnostic": {
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "status": 0,
+    "success": true
+  }
+}

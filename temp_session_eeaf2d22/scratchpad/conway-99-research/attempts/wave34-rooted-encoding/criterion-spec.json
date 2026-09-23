@@ -1,0 +1,556 @@
+{
+  "certificate_requirements": {
+    "SAT": "full 99x99 graph reconstructed and independently checked",
+    "UNSAT": "proof-producing complete-domain proof checked against the exact CNF and an independently audited mapping"
+  },
+  "claim_label": "CANDIDATE",
+  "domain": {
+    "B_entries_binary": true,
+    "D_diagonal_zero": true,
+    "D_entries_binary": true,
+    "D_symmetric": true,
+    "automorphism_or_orbit_restriction": false,
+    "fixed_B_design": false
+  },
+  "fixed": {
+    "A_S_rows": [
+      "00000000001111",
+      "00000000110011",
+      "00000001010101",
+      "00000000111100",
+      "00000001100110",
+      "00000001101001",
+      "00000001011010",
+      "00101110000000",
+      "01011100000000",
+      "01110010000000",
+      "10010110000000",
+      "10111000000000",
+      "11001010000000",
+      "11100100000000"
+    ],
+    "F_rows": [
+      "1111111111000000000000000000000000000000000000000000000000000000000000",
+      "0000000000111111111100000000000000000000000000000000000000000000000000",
+      "0000000000000000000011111111110000000000000000000000000000000000000000",
+      "0000000000000000000000000000001111111111000000000000000000000000000000",
+      "0000000000000000000000000000000000000000111111111100000000000000000000",
+      "0000000000000000000000000000000000000000000000000011111111110000000000",
+      "0000000000000000000000000000000000000000000000000000000000001111111111",
+      "1100000000110000000010000000001100000000100000000010000000001000000000",
+      "0011000000001000000001100000000010000000010000000001000000000110000000",
+      "0000110000000100000000010000000001000000001100000000110000000001000000",
+      "0000001000000011000000001100000000100000000011000000001000000000100000",
+      "0000000100000000110000000010000000010000000000100000000110000000011000",
+      "0000000010000000001000000001100000001100000000010000000001100000000100",
+      "0000000001000000000100000000010000000011000000001100000000010000000011"
+    ],
+    "Fano_lines": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        6
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        2,
+        3,
+        5
+      ],
+      [
+        3,
+        4,
+        6
+      ]
+    ],
+    "O_labels": [
+      {
+        "copy": 0,
+        "line": 0,
+        "point": 0
+      },
+      {
+        "copy": 1,
+        "line": 0,
+        "point": 0
+      },
+      {
+        "copy": 0,
+        "line": 1,
+        "point": 0
+      },
+      {
+        "copy": 1,
+        "line": 1,
+        "point": 0
+      },
+      {
+        "copy": 0,
+        "line": 2,
+        "point": 0
+      },
+      {
+        "copy": 1,
+        "line": 2,
+        "point": 0
+      },
+      {
+        "copy": 0,
+        "line": 3,
+        "point": 0
+      },
+      {
+        "copy": 0,
+        "line": 4,
+        "point": 0
+      },
+      {
+        "copy": 0,
+        "line": 5,
+        "point": 0
+      },
+      {
+        "copy": 0,
+        "line": 6,
+        "point": 0
+      },
+      {
+        "copy": 0,
+        "line": 0,
+        "point": 1
+      },
+      {
+        "copy": 1,
+        "line": 0,
+        "point": 1
+      },
+      {
+        "copy": 0,
+        "line": 1,
+        "point": 1
+      },
+      {
+        "copy": 0,
+        "line": 2,
+        "point": 1
+      },
+      {
+        "copy": 0,
+        "line": 3,
+        "point": 1
+      },
+      {
+        "copy": 1,
+        "line": 3,
+        "point": 1
+      },
+      {
+        "copy": 0,
+        "line": 4,
+        "point": 1
+      },
+      {
+        "copy": 1,
+        "line": 4,
+        "point": 1
+      },
+      {
+        "copy": 0,
+        "line": 5,
+        "point": 1
+      },
+      {
+        "copy": 0,
+        "line": 6,
+        "point": 1
+      },
+      {
+        "copy": 0,
+        "line": 0,
+        "point": 2
+      },
+      {
+        "copy": 0,
+        "line": 1,
+        "point": 2
+      },
+      {
+        "copy": 1,
+        "line": 1,
+        "point": 2
+      },
+      {
+        "copy": 0,
+        "line": 2,
+        "point": 2
+      },
+      {
+        "copy": 0,
+        "line": 3,
+        "point": 2
+      },
+      {
+        "copy": 1,
+        "line": 3,
+        "point": 2
+      },
+      {
+        "copy": 0,
+        "line": 4,
+        "point": 2
+      },
+      {
+        "copy": 0,
+        "line": 5,
+        "point": 2
+      },
+      {
+        "copy": 1,
+        "line": 5,
+        "point": 2
+      },
+      {
+        "copy": 0,
+        "line": 6,
+        "point": 2
+      },
+      {
+        "copy": 0,
+        "line": 0,
+        "point": 3
+      },
+      {
+        "copy": 1,
+        "line": 0,
+        "point": 3
+      },
+      {
+        "copy": 0,
+        "line": 1,
+        "point": 3
+      },
+      {
+        "copy": 0,
+        "line": 2,
+        "point": 3
+      },
+      {
+        "copy": 0,
+        "line": 3,
+        "point": 3
+      },
+      {
+        "copy": 0,
+        "line": 4,
+        "point": 3
+      },
+      {
+        "copy": 0,
+        "line": 5,
+        "point": 3
+      },
+      {
+        "copy": 1,
+        "line": 5,
+        "point": 3
+      },
+      {
+        "copy": 0,
+        "line": 6,
+        "point": 3
+      },
+      {
+        "copy": 1,
+        "line": 6,
+        "point": 3
+      },
+      {
+        "copy": 0,
+        "line": 0,
+        "point": 4
+      },
+      {
+        "copy": 0,
+        "line": 1,
+        "point": 4
+      },
+      {
+        "copy": 0,
+        "line": 2,
+        "point": 4
+      },
+      {
+        "copy": 1,
+        "line": 2,
+        "point": 4
+      },
+      {
+        "copy": 0,
+        "line": 3,
+        "point": 4
+      },
+      {
+        "copy": 1,
+        "line": 3,
+        "point": 4
+      },
+      {
+        "copy": 0,
+        "line": 4,
+        "point": 4
+      },
+      {
+        "copy": 0,
+        "line": 5,
+        "point": 4
+      },
+      {
+        "copy": 0,
+        "line": 6,
+        "point": 4
+      },
+      {
+        "copy": 1,
+        "line": 6,
+        "point": 4
+      },
+      {
+        "copy": 0,
+        "line": 0,
+        "point": 5
+      },
+      {
+        "copy": 0,
+        "line": 1,
+        "point": 5
+      },
+      {
+        "copy": 0,
+        "line": 2,
+        "point": 5
+      },
+      {
+        "copy": 1,
+        "line": 2,
+        "point": 5
+      },
+      {
+        "copy": 0,
+        "line": 3,
+        "point": 5
+      },
+      {
+        "copy": 0,
+        "line": 4,
+        "point": 5
+      },
+      {
+        "copy": 1,
+        "line": 4,
+        "point": 5
+      },
+      {
+        "copy": 0,
+        "line": 5,
+        "point": 5
+      },
+      {
+        "copy": 1,
+        "line": 5,
+        "point": 5
+      },
+      {
+        "copy": 0,
+        "line": 6,
+        "point": 5
+      },
+      {
+        "copy": 0,
+        "line": 0,
+        "point": 6
+      },
+      {
+        "copy": 0,
+        "line": 1,
+        "point": 6
+      },
+      {
+        "copy": 1,
+        "line": 1,
+        "point": 6
+      },
+      {
+        "copy": 0,
+        "line": 2,
+        "point": 6
+      },
+      {
+        "copy": 0,
+        "line": 3,
+        "point": 6
+      },
+      {
+        "copy": 0,
+        "line": 4,
+        "point": 6
+      },
+      {
+        "copy": 1,
+        "line": 4,
+        "point": 6
+      },
+      {
+        "copy": 0,
+        "line": 5,
+        "point": 6
+      },
+      {
+        "copy": 0,
+        "line": 6,
+        "point": 6
+      },
+      {
+        "copy": 1,
+        "line": 6,
+        "point": 6
+      }
+    ],
+    "Q_Q": "all zero",
+    "S_Q": "all zero",
+    "support_vertex_order": [
+      "P0",
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6"
+    ]
+  },
+  "full_adjacency_block_matrix": [
+    [
+      "A_S",
+      "F",
+      "0_(14x15)"
+    ],
+    [
+      "F^T",
+      "D",
+      "B"
+    ],
+    [
+      "0_(15x14)",
+      "B^T",
+      "0_(15x15)"
+    ]
+  ],
+  "linearization": {
+    "cardinality": "equivalent threshold recurrence plus exact terminal units",
+    "fixed_zero_product_terms_omitted": "only terms containing explicit D[i,i]=0",
+    "product": "fresh y with clauses (-y or x), (-y or z), (-x or -z or y)"
+  },
+  "notation": {
+    "A_S": "fixed 14x14 support adjacency",
+    "B": "unknown binary 70x15 O-Q incidence",
+    "D": "unknown symmetric hollow binary 70x70 O-O adjacency",
+    "F": "fixed 14x70 support-to-O incidence"
+  },
+  "row_and_column_constraints": {
+    "A_S_row_weight": 4,
+    "B_column_weight": 14,
+    "B_row_weight": 3,
+    "D_row_weight": 9,
+    "F_column_weight": 2,
+    "F_row_weight": 10
+  },
+  "schema_version": 1,
+  "scope": "complete unrestricted labeled rooted six-block binary graph-extension criterion",
+  "six_integer_block_equations": [
+    {
+      "block": "SS",
+      "equation": "A_S^2 + F F^T = 12 I_14 - A_S + 2 J_14",
+      "mode": "fixed entrywise generator assertion",
+      "shape": [
+        14,
+        14
+      ]
+    },
+    {
+      "block": "SQ",
+      "equation": "F B = 2 J_(14,15)",
+      "mode": "210 exact-cardinality constraints",
+      "shape": [
+        14,
+        15
+      ]
+    },
+    {
+      "block": "SO",
+      "equation": "A_S F + F D = 2 J_(14,70) - F",
+      "mode": "980 exact-cardinality constraints",
+      "shape": [
+        14,
+        70
+      ]
+    },
+    {
+      "block": "OO",
+      "equation": "F^T F + D^2 + B B^T = 12 I_70 - D + 2 J_70",
+      "mode": "70 diagonal plus 2415 unique off-diagonal constraints",
+      "shape": [
+        70,
+        70
+      ]
+    },
+    {
+      "block": "OQ",
+      "equation": "D B = 2 J_(70,15) - B",
+      "mode": "1050 exact-cardinality constraints",
+      "shape": [
+        70,
+        15
+      ]
+    },
+    {
+      "block": "QQ",
+      "equation": "B^T B = 12 I_15 + 2 J_15",
+      "mode": "15 diagonal plus 105 unique off-diagonal constraints",
+      "shape": [
+        15,
+        15
+      ]
+    }
+  ],
+  "sizes": {
+    "O": 70,
+    "Q": 15,
+    "S": 14,
+    "total": 99
+  }
+}

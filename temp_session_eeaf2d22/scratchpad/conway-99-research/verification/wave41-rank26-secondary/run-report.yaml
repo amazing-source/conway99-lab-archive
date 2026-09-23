@@ -1,0 +1,77 @@
+role: verifier
+date_utc: "2026-07-27T06:18:45Z"
+git_commit: "4f1754a28723a8e0e4ea3025312cd264b1b117d2"
+claim_label: VERIFIED
+scope: >-
+  Secondary clean-room verification that every hypothetical
+  srg(99,14,1,2) satisfies rank_F7(M)>=26.
+inputs:
+  - path: verification/wave41-rank26-secondary/input-freeze.sha256
+    sha256: 31437e078e7599fef93ee2729393a2e479acc2e60a0ab79692bc40934d1efc09
+  - path: verification/wave41-rank26-secondary/precomparison-freeze.sha256
+    sha256: 56bf859847961475dea222eefbb148f96510ba006c94df02d20d5ea4d93b1927
+  - path: attempts/wave41-evenpart-equality/exact-results.json
+    sha256: 8a9e58aaa1073ae4a87e183f904ce7f43eaa620bbac5a6f5d1f8445dd795dc85
+  - path: verification/wave41-evenpart-equality/independent-results.json
+    sha256: ec371dad71c794d57d4e27b21d17b08fac1d17e22167749ef797d950c18299e4
+method: >-
+  Freeze verified Wave 39/40 premises before Wave 41 access; independently
+  reconstruct all 10,395 labelled local matchings and eleven partition
+  types; derive the exact 27+12 singular Schur equality condition; exhaust
+  all 164,928 minimum-F permutations; canonicalize 52 right kernels and
+  164,278 targets; cover every labelled third-fibre matching by pivot-mate
+  reconstruction for rank-one F and exact vectorized scans for ranks two
+  and three; independently obstruct the four all-odd cases; freeze; then
+  compare the specified discovery result and primary verifier.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave41-rank26-secondary -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  verification\wave41-rank26-secondary\secondary_check.py --verify
+  verification\wave41-rank26-secondary\secondary-results.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave41-rank26-secondary\comparison_check.py --verify
+  verification\wave41-rank26-secondary\comparison.json
+outputs:
+  - path: verification/wave41-rank26-secondary/secondary_check.py
+    sha256: 3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3
+  - path: verification/wave41-rank26-secondary/test_secondary_check.py
+    sha256: f1b4a47c13ac5314a5b0b24d1aed4469d6eacd5267ee3012d3ff962686a99c5a
+  - path: verification/wave41-rank26-secondary/secondary-results.json
+    sha256: 6dec058084c3336449cbf4ce29dd837b87f8f1b1af982810d2ca594784e38766
+  - path: verification/wave41-rank26-secondary/comparison_check.py
+    sha256: 3cf20524c8dddd7fc79b8e1b50cde5a06933b16506ed0cb322320649df2a6d41
+  - path: verification/wave41-rank26-secondary/test_comparison_check.py
+    sha256: 0db48bb4f3719cf6bc760f0f2893db2bdb1c4446ec950aed83e41de45989d511
+  - path: verification/wave41-rank26-secondary/comparison.json
+    sha256: 1e0090272504f6eae86738f934145109dd2e8eb386ebcab56af82aeb8cf9c4c0
+  - path: verification/wave41-rank26-secondary/README.md
+    sha256: 0d0f377c28b1346c947bf06ce937a770b85f5a6ceb0dc6c3e31efb20acf8804c
+  - path: verification/wave41-rank26-secondary/hostile-tests.md
+    sha256: 0e06bace57049d2ea614ed34e92d6ffea1f6d8d93bffa61b12741c70fed212b2
+tests:
+  passed: 20
+  failed: 0
+  full_replay_seconds: 91.934
+result:
+  verdict: PASS
+  local_partition_types: 11
+  labelled_local_matching_count: 10395
+  minimum_F_permutations: 164928
+  canonical_right_kernels: 52
+  canonical_targets: 164278
+  rank_25_survivors: 0
+  universal_rank_F7_M_lower_bound: 26
+  discovery_final_sha_verified: true
+  discovery_primary_secondary_discrepancies: 0
+freeze_note: >-
+  The precomparison freeze preserves the independent mathematical checker.
+  After comparison began, only counters exposing already-computed canonical
+  kernel and target cardinalities were added for mechanical comparison; the
+  construction, reduction, search universes, equality tests, and verdict did
+  not change. Final bytes passed all tests and a full replay.
+limitations:
+  - No graph is constructed.
+  - The endpoint n3=4158 remains UNKNOWN.
+  - The general n3 upper bound remains 4158.
+  - Conway-99 existence, novelty, and priority remain UNKNOWN.

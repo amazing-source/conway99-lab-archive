@@ -1,0 +1,40 @@
+role: verifier
+date_utc: 2026-07-27T02:34:07Z
+git_commit: 019b78ac9a5170107d105ad4d8fcd27f55dde642
+claim_label: VERIFIED
+scope: "Refined endpoint branch 15 conjoined with x187=1; one polarity shard only."
+inputs:
+  - path: attempts/wave39-proof-solver/package-manifest.sha256
+    sha256: 72baea5f8143e93fcd1bb900bdb5bdb9b40d723fcee4f40185c5f9de5dab0315
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+method: >-
+  Independently parse the frozen source OPB, reconstruct the four-line
+  generalized-unit contradiction, verify the exact append-unit transform,
+  bind the discovery metadata and proof artifacts, and replay both raw and
+  elaborated-kernel proofs with pinned VeriPB 3.0.2.
+command: |-
+  .\.venv\Scripts\python.exe -B verification\wave39-proof-solver\independent_check.py --run-veripb --output verification\wave39-proof-solver\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave39-proof-solver -p "test_*.py" -v
+outputs:
+  - path: verification/wave39-proof-solver/exact-results.json
+    sha256: 3afc665de9d8d0e5a5a4dab6b600db1e5b726ef1dfba685eeba92c80da1df5e4
+limitations:
+  - "Only branch15 AND x187=1 is excluded; branch15 AND x187=0 remains open."
+  - "No complete endpoint case is closed; checked endpoint coverage remains 0/33."
+  - "CakePB was not replayed and no CakePB conclusion is retained."
+  - "The source formula contains only the parent branch's six fixed-triangle prism families."
+  - "No endpoint exclusion, improved upper bound, graph, or novelty claim follows."
+tests:
+  generalized_unit: PASS
+  exact_append_unit_transform: PASS
+  veripb_raw: VERIFIED_UNSATISFIABLE
+  veripb_kernel: VERIFIED_UNSATISFIABLE
+  cakepb: NO_CONCLUSION_NOT_REPLAYED
+status:
+  positive_x187_shard: VERIFIED_UNSAT
+  branch_15: UNKNOWN
+  endpoint_cases_closed: 0
+  endpoint_case_total: 33
+  endpoint_n3_4158: UNKNOWN
+  upper_bound_improved_below_4158: false

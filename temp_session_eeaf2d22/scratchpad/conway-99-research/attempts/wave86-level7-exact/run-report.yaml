@@ -1,0 +1,34 @@
+role: proof_a
+date_utc: 2026-07-28T00:20:26Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: DERIVED
+scope: >-
+  Conditional q=16 exact scalar theta consequence of the independently
+  verified Wave66 and Wave71 lattice transfer for a hypothetical
+  srg(99,14,1,2).
+inputs:
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+method: >-
+  Build an exact 15-product basis of M_22(Gamma0(7)); derive and validate
+  the rational Fricke involution from normalized quadratic-character
+  Eisenstein series; impose the q=16 theta transfer and six-term gap;
+  eliminate x14 with y0=1; certify an exact positive-coefficient identity;
+  combine its rational bound with the verified Wave71 congruence; and replay
+  an exact formal scalar equality control through q^50.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave86-level7-exact\exact_check.py --verify ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  attempts\wave86-level7-exact\test_exact_check.py
+outputs:
+  - attempts/wave86-level7-exact/exact-results.json
+  - attempts/wave86-level7-exact/derivation.md
+  - attempts/wave86-level7-exact/test_exact_check.py
+limitations: >-
+  Discovery only. The formal modular pair is not a lattice or marked-frame
+  realization. Vector-valued discriminant data and marked harmonic moments
+  are not available. The q=16 row, graph existence, Conway-99, endpoint
+  resolution, and novelty remain UNKNOWN.

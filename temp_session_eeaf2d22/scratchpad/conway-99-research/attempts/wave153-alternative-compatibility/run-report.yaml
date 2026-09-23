@@ -1,0 +1,38 @@
+role: construction
+date_utc: 2026-07-28T12:45:00Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: CANDIDATE
+scope: >-
+  Conditional prism-free n3=4158 and kappa=3 fixed-triangle lane; complete
+  bounded rational pair-column polytope over 275 safe coordinate-orbit
+  representatives, transferring to 1140 unordered component triples.
+inputs:
+  - path: attempts/wave153-alternative-compatibility/input-freeze.sha256
+    sha256: 5b55cb9f338b5b8d21a1ddf0c8ec490f9a33a31f1e10f875d249fa0d43a9e06d
+method: >-
+  Enumerate every profile-preserving allowed six-set; solve the bounded
+  rational pair system with floating LP used only for support selection;
+  exactify with FLINT fmpq Dixon solves; replay all 630 pair equations, 36
+  row margins, total weight 60, unique indices, and coefficient bounds.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave153-alternative-compatibility\correlation_polytope.py batch
+  --start START --stop STOP --output BATCH.json.gz; then
+  correlation_polytope.py merge --inputs batch-000-001.json.gz
+  batch-001-041.json.gz batch-041-071.json.gz batch-071-101.json.gz
+  batch-101-131.json.gz batch-131-161.json.gz batch-161-191.json.gz
+  batch-191-221.json.gz batch-221-251.json.gz batch-251-275.json.gz
+  --output exact-results.json.gz; then correlation_polytope.py verify
+  exact-results.json.gz
+outputs:
+  - path: attempts/wave153-alternative-compatibility/exact-results.json.gz
+    sha256: af3df69fa2542066cd1089f75f09f16582c0583f0304b60df3b9516d0ff035dd
+  - path: attempts/wave153-alternative-compatibility/exact-summary.json
+    sha256: bd366d4268404453d04f20864bae541fc51d1d4bdc58712e9a3cd0f21d6ecbcf
+limitations:
+  - Discovery cannot verify itself; independent verifier requested.
+  - Rational coefficients in the unit interval need not be binary.
+  - Pair-coordinate feasibility does not impose a common integral three-way coupling.
+  - A binary incidence design would still not construct a compatible residual graph.
+  - No endpoint result, strict upper bound, Conway-99 resolution, or novelty claim follows.
+

@@ -1,0 +1,39 @@
+role: proof_a
+date_utc: 2026-07-28T03:09:17Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: DERIVED
+scope: >-
+  Conditional exact scalar theta LPs for all surviving q=2,4,...,14 rows
+  of a hypothetical srg(99,14,1,2), through K-vector norm 28.
+inputs:
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: attempts/wave86-level7-exact/package-manifest.sha256
+    sha256: c6066fd10258578c15e511f3802217e4ff613ffe3d3b3b8f11e804f0316ac75d
+  - path: verification/wave86-level7-exact/package-manifest.sha256
+    sha256: cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2
+method: >-
+  Reuse the frozen complete 15-product M_22(Gamma0(7)) basis and exact
+  rational Fricke involution; impose Theta_L=-7^(11-q/2)(Theta_K|W_7),
+  x1=...=x6=0, and coefficient nonnegativity; eliminate x14 with y0=1;
+  solve exact rational primal and dual seven-variable LP systems for total,
+  prefix, and triangular low-shell objectives; check parity, Wave71 mod-7
+  affine residues, exact zero-prefix controls, and elementary rigorous
+  mod-2 lattice upper bounds.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave101-all-rank-level7-lp\exact_lp.py --verify ;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s attempts\wave101-all-rank-level7-lp -p "test_*.py" -v
+outputs:
+  - attempts/wave101-all-rank-level7-lp/exact-results.json
+  - attempts/wave101-all-rank-level7-lp/derivation.md
+  - attempts/wave101-all-rank-level7-lp/alternative-strategies.md
+  - attempts/wave101-all-rank-level7-lp/failed-routes.md
+limitations: >-
+  Discovery only. Formal scalar LP points are not lattices, marked frames,
+  or graphs. The signed-unit dictionary is not extended beyond norm 18.
+  No rigorous upper bound is contradicted, no row is excluded, and
+  Conway-99 and novelty remain UNKNOWN.

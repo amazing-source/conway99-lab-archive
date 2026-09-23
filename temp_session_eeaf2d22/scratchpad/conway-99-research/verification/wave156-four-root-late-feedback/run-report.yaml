@@ -1,0 +1,36 @@
+role: verifier
+date_utc: 2026-07-28T13:07:48Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED
+scope: >-
+  Late finite four-root covariance feedback: exact reconstruction of the
+  mask-13 principal-minor cut, exact base and retained-cut replay for the
+  five/eight-cut rational witnesses, exact root-mask 3/12/13 negative
+  directions, and two simplified mask-12 inequalities. Not endpoint or graph.
+inputs:
+  - path: verification/wave156-four-root-late-feedback/discovery-freeze.sha256
+    sha256: 6ca4b2f5390d06bbfd2ad9cfab8473e114db6f03f379855eb7f4ecf71a470a51
+  - path: verification/wave156-four-root-late-feedback/supporting-input-freeze.sha256
+    sha256: 1c78f55f38dbaf0226a214486e47910a5329bbd7a92de9c0900d337316beb95f
+method: >-
+  Freeze discovery bytes; independently enumerate admissible graph classes,
+  pointwise-rooted flags, covariance coefficients and principal entries;
+  replay all exact rational witness equalities and modular rank certificates;
+  exclude all numerical solver statuses from proof authority.
+command: >-
+  python verification/wave156-four-root-late-feedback/independent_verify.py
+  --verify verification/wave156-four-root-late-feedback/exact-results.json
+  &&
+  python -m unittest discover -s
+  verification/wave156-four-root-late-feedback -p "test_*.py" -v
+outputs:
+  - path: verification/wave156-four-root-late-feedback/exact-results.json
+    sha256: cfada4efb5ea6c6117dc0002cc4c873d93badf7d8294dcb4cd47607e02675c31
+  - path: verification/wave156-four-root-late-feedback/independent_verify.py
+    sha256: 9d7d065e6126f75666739ef33be6675bd5983f99aec10d96d847c3061ff2d19c
+limitations: >-
+  The second simplified-cut serialization arrived after the freeze and was
+  not inspected; its formula was independently derived from frozen inputs.
+  The certificates concern finite rational pseudowitnesses only. The ten-cut
+  relaxation, endpoint, graph realization, strict bound, and Conway-99 remain
+  UNKNOWN.

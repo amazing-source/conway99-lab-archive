@@ -1,0 +1,679 @@
+{
+  "candidate_paths": [
+    "attempts/wave14-computation/n3-48-r16-q2x16-no-size3-full-candidate.json"
+  ],
+  "claim_label": "CANDIDATE",
+  "conflict_budget_per_branch": 30000,
+  "coverage_argument": [
+    "the q multiset is canonically sorted, using arbitrary active-label names",
+    "an assignment either has no selected size-three point or has at least one",
+    "a selected size-three point has one of the enumerated q=3 multiplicities",
+    "permutations within equal-q classes act transitively on roots of a fixed composition",
+    "no permutation is asserted to extend to an automorphism of a completed graph"
+  ],
+  "encoded_premises": [
+    "exactly three selected non-singleton point sets through each active label",
+    "point sizes are two or three after the finite flower reductions",
+    "point-family linearity",
+    "F is the exact union of selected point-clique edges",
+    "every selected point is a clique in K",
+    "common-point/Berge-triangle rule unless named as the omitted control premise",
+    "exact two-sided degree-{0,2} crossing for every pair of meeting selected points",
+    "fixed-point upper cap on full-L overlaps at every selected size-three point",
+    "profile-specific K degrees, or only upper bounds in the named control"
+  ],
+  "negative_result_policy": "UNSAT and bounded/timeout solver returns are non-evidentiary without emitted and independently checked proof traces",
+  "novelty": "UNKNOWN",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "python_sat": "1.9.dev7",
+  "results": [
+    {
+      "branch": {
+        "branch_id": "no-size3",
+        "normalization": "no label symmetry is fixed; every size-three point is absent",
+        "root_point": null,
+        "root_q3_count": null
+      },
+      "candidate_path": "attempts/wave14-computation/n3-48-r16-q2x16-no-size3-full-candidate.json",
+      "candidate_semantic_sha256": "b533da6c967098ed5ec9afd4d0d4e6166c6082e4bf9de5717f48c7b6835d686a",
+      "evidentiary_status": "positive assignment requires exact validation",
+      "formula": {
+        "base_clause_count": 1639520,
+        "branch_unit_count": 560,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.677974299993366,
+        "materialized_clause_count": 1640080,
+        "materialized_dimacs_sha256": "4f0a295ce08409877efee09f87f1ccaf289ea5fe3014d115a4ef99e3e2b5ebdb",
+        "variable_count": 469160
+      },
+      "profile_id": "r16-q2x16",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 0.9561136999400333,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 168,
+          "decisions": 6088,
+          "propagations": 1441988,
+          "restarts": 3
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "SAT_CANDIDATE",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          0,
+          1,
+          2
+        ],
+        "root_q3_count": 0,
+        "root_q_values": [
+          2,
+          2,
+          2
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1639520,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.677974299993366,
+        "materialized_clause_count": 1639521,
+        "materialized_dimacs_sha256": "010481d24a8870fd5918b748f67a71bae0159aaabed5df4d911f3379c828769d",
+        "variable_count": 469160
+      },
+      "profile_id": "r16-q2x16",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 5.903752400074154,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 16323,
+          "decisions": 44315,
+          "propagations": 47200424,
+          "restarts": 77
+        },
+        "timer_fired": true,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "TIMEOUT_UNKNOWN",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "no-size3",
+        "normalization": "no label symmetry is fixed; every size-three point is absent",
+        "root_point": null,
+        "root_q3_count": null
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1137931,
+        "branch_unit_count": 455,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.3626951000187546,
+        "materialized_clause_count": 1138386,
+        "materialized_dimacs_sha256": "e9d9a23627adaa7d52e630e9477c26ad549b72a9f8057f3d45022821cd7cac78",
+        "variable_count": 326446
+      },
+      "profile_id": "r15-q2x13-q3x2",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 2.532132999971509,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 30041,
+          "decisions": 44339,
+          "propagations": 18580798,
+          "restarts": 146
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "BUDGET_UNKNOWN",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          0,
+          1,
+          2
+        ],
+        "root_q3_count": 0,
+        "root_q_values": [
+          2,
+          2,
+          2
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1137931,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.3626951000187546,
+        "materialized_clause_count": 1137932,
+        "materialized_dimacs_sha256": "54d2c55fb75c51df00db9900245d0aefce058990f0b214498ffd87bc36d6750f",
+        "variable_count": 326446
+      },
+      "profile_id": "r15-q2x13-q3x2",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 5.631304199923761,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 24462,
+          "decisions": 48388,
+          "propagations": 126191014,
+          "restarts": 75
+        },
+        "timer_fired": true,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "TIMEOUT_UNKNOWN",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          0,
+          1,
+          13
+        ],
+        "root_q3_count": 1,
+        "root_q_values": [
+          2,
+          2,
+          3
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1137931,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.3626951000187546,
+        "materialized_clause_count": 1137932,
+        "materialized_dimacs_sha256": "8f4e055f9423431ce3f1aaa9478d534881c681aac97b8deaf5fdf268e06ba514",
+        "variable_count": 326446
+      },
+      "profile_id": "r15-q2x13-q3x2",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 1.3341698999283835,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 2683,
+          "decisions": 5132,
+          "propagations": 20052578,
+          "restarts": 10
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "UNSAT_UNVERIFIED",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          0,
+          13,
+          14
+        ],
+        "root_q3_count": 2,
+        "root_q_values": [
+          2,
+          3,
+          3
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 1137931,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.3626951000187546,
+        "materialized_clause_count": 1137932,
+        "materialized_dimacs_sha256": "76d1da14f0a1aae3f063d12161baa4a964535e0cdb21be50067f8dca1a69b656",
+        "variable_count": 326446
+      },
+      "profile_id": "r15-q2x13-q3x2",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 1.0100937000242993,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 2681,
+          "decisions": 5032,
+          "propagations": 19411360,
+          "restarts": 4
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "UNSAT_UNVERIFIED",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "no-size3",
+        "normalization": "no label symmetry is fixed; every size-three point is absent",
+        "root_point": null,
+        "root_q3_count": null
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 780242,
+        "branch_unit_count": 364,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 0.9844220000086352,
+        "materialized_clause_count": 780606,
+        "materialized_dimacs_sha256": "197aca54f1dc3362e7cc124628ca54842437d5bf06573d168f649866ca0e6042",
+        "variable_count": 227295
+      },
+      "profile_id": "r14-q2x10-q3x4",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 0.47605500009376556,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 2655,
+          "decisions": 5222,
+          "propagations": 1782645,
+          "restarts": 33
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "UNSAT_UNVERIFIED",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          0,
+          1,
+          2
+        ],
+        "root_q3_count": 0,
+        "root_q_values": [
+          2,
+          2,
+          2
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 780242,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 0.9844220000086352,
+        "materialized_clause_count": 780243,
+        "materialized_dimacs_sha256": "8483315145c89d24be050391fa40899a4d7272d0a4c38d4726b1c05a90bac784",
+        "variable_count": 227295
+      },
+      "profile_id": "r14-q2x10-q3x4",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 2.544591599958949,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 14380,
+          "decisions": 25166,
+          "propagations": 50490857,
+          "restarts": 47
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "UNSAT_UNVERIFIED",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          0,
+          1,
+          10
+        ],
+        "root_q3_count": 1,
+        "root_q_values": [
+          2,
+          2,
+          3
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 780242,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 0.9844220000086352,
+        "materialized_clause_count": 780243,
+        "materialized_dimacs_sha256": "1f9ebed0748cb0304980639ef5c2584c264bf48bb4afa2d6a294858159bb06da",
+        "variable_count": 227295
+      },
+      "profile_id": "r14-q2x10-q3x4",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 0.36496520007494837,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 223,
+          "decisions": 541,
+          "propagations": 1191356,
+          "restarts": 2
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "UNSAT_UNVERIFIED",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          0,
+          10,
+          11
+        ],
+        "root_q3_count": 2,
+        "root_q_values": [
+          2,
+          3,
+          3
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 780242,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 0.9844220000086352,
+        "materialized_clause_count": 780243,
+        "materialized_dimacs_sha256": "21b4cacbdf044b18a618eec9f72df71bda29dbbe699867c56d95a93bb986631e",
+        "variable_count": 227295
+      },
+      "profile_id": "r14-q2x10-q3x4",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 0.3787829999346286,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 397,
+          "decisions": 1083,
+          "propagations": 2156572,
+          "restarts": 4
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "UNSAT_UNVERIFIED",
+      "variant": "full"
+    },
+    {
+      "branch": {
+        "branch_id": "root-q3x3",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          10,
+          11,
+          12
+        ],
+        "root_q3_count": 3,
+        "root_q_values": [
+          3,
+          3,
+          3
+        ]
+      },
+      "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+      "formula": {
+        "base_clause_count": 780242,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 0.9844220000086352,
+        "materialized_clause_count": 780243,
+        "materialized_dimacs_sha256": "95921cb5b0418a38adef1a49f0288e4cf720e9307d4614d8e439f4817f7659ea",
+        "variable_count": 227295
+      },
+      "profile_id": "r14-q2x10-q3x4",
+      "solver": {
+        "conflict_budget": 30000,
+        "elapsed_seconds": 0.5217513999668881,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 1018,
+          "decisions": 3133,
+          "propagations": 5336144,
+          "restarts": 3
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 5.0
+      },
+      "status": "UNSAT_UNVERIFIED",
+      "variant": "full"
+    }
+  ],
+  "schema": "conway99-wave14-n3-48-active-local-scan-v1",
+  "scope": "complete branch cover of the encoded active-local relaxation",
+  "semantic": {
+    "coverage": [
+      {
+        "branch_id": "no-size3",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r16-q2x16",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r16-q2x16",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "no-size3",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 1
+      },
+      {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 2
+      },
+      {
+        "branch_id": "no-size3",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 1
+      },
+      {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 2
+      },
+      {
+        "branch_id": "root-q3x3",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 3
+      }
+    ],
+    "results": [
+      {
+        "branch_id": "no-size3",
+        "candidate_semantic_sha256": "b533da6c967098ed5ec9afd4d0d4e6166c6082e4bf9de5717f48c7b6835d686a",
+        "formula_sha256": "4f0a295ce08409877efee09f87f1ccaf289ea5fe3014d115a4ef99e3e2b5ebdb",
+        "profile_id": "r16-q2x16",
+        "status": "SAT_CANDIDATE"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "010481d24a8870fd5918b748f67a71bae0159aaabed5df4d911f3379c828769d",
+        "profile_id": "r16-q2x16",
+        "status": "TIMEOUT_UNKNOWN"
+      },
+      {
+        "branch_id": "no-size3",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "e9d9a23627adaa7d52e630e9477c26ad549b72a9f8057f3d45022821cd7cac78",
+        "profile_id": "r15-q2x13-q3x2",
+        "status": "BUDGET_UNKNOWN"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "54d2c55fb75c51df00db9900245d0aefce058990f0b214498ffd87bc36d6750f",
+        "profile_id": "r15-q2x13-q3x2",
+        "status": "TIMEOUT_UNKNOWN"
+      },
+      {
+        "branch_id": "root-q3x1",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "8f4e055f9423431ce3f1aaa9478d534881c681aac97b8deaf5fdf268e06ba514",
+        "profile_id": "r15-q2x13-q3x2",
+        "status": "UNSAT_UNVERIFIED"
+      },
+      {
+        "branch_id": "root-q3x2",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "76d1da14f0a1aae3f063d12161baa4a964535e0cdb21be50067f8dca1a69b656",
+        "profile_id": "r15-q2x13-q3x2",
+        "status": "UNSAT_UNVERIFIED"
+      },
+      {
+        "branch_id": "no-size3",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "197aca54f1dc3362e7cc124628ca54842437d5bf06573d168f649866ca0e6042",
+        "profile_id": "r14-q2x10-q3x4",
+        "status": "UNSAT_UNVERIFIED"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "8483315145c89d24be050391fa40899a4d7272d0a4c38d4726b1c05a90bac784",
+        "profile_id": "r14-q2x10-q3x4",
+        "status": "UNSAT_UNVERIFIED"
+      },
+      {
+        "branch_id": "root-q3x1",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "1f9ebed0748cb0304980639ef5c2584c264bf48bb4afa2d6a294858159bb06da",
+        "profile_id": "r14-q2x10-q3x4",
+        "status": "UNSAT_UNVERIFIED"
+      },
+      {
+        "branch_id": "root-q3x2",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "21b4cacbdf044b18a618eec9f72df71bda29dbbe699867c56d95a93bb986631e",
+        "profile_id": "r14-q2x10-q3x4",
+        "status": "UNSAT_UNVERIFIED"
+      },
+      {
+        "branch_id": "root-q3x3",
+        "candidate_semantic_sha256": null,
+        "formula_sha256": "95921cb5b0418a38adef1a49f0288e4cf720e9307d4614d8e439f4817f7659ea",
+        "profile_id": "r14-q2x10-q3x4",
+        "status": "UNSAT_UNVERIFIED"
+      }
+    ],
+    "target_n3": 48,
+    "variant": "full"
+  },
+  "semantic_sha256": "de119937479d4f5c8fe75cab3affe275938c32bdfe660410d7443a0348b0fc7a",
+  "solver_name": "glucose42",
+  "target_result": "UNKNOWN",
+  "unencoded_premises": [
+    "inactive point sets and inactive graph vertices",
+    "which disjoint active point sets represent adjacent original vertices",
+    "fixed support contributed by disjoint point sets",
+    "equality completion of every fixed-point support sum",
+    "the 693-vertex H graph",
+    "a 99-vertex adjacency matrix",
+    "global SRG lambda/mu equations"
+  ],
+  "wall_timeout_seconds_per_branch": 5.0
+}

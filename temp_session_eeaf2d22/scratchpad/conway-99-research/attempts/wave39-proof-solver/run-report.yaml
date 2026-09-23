@@ -1,0 +1,66 @@
+role: construction
+date_utc: 2026-07-27T02:29:20Z
+git_commit: 019b78ac9a5170107d105ad4d8fcd27f55dde642
+claim_label: CANDIDATE
+scope: >-
+  Refined endpoint branch 15 conjoined with the primary-edge polarity
+  x187=1; one shard inside one of the 33 endpoint-compatible cases.
+inputs:
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: attempts/wave37-proof-producing-endpoint/branch-15-formula.json
+    sha256: 3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6
+  - path: attempts/wave38-solver-harvest/coverage-plan.json
+    sha256: 2de85c3f73d4b12a579b281c10171a47c12e26a323ecdf9617c1a842a81d8bf2
+  - path: verification/2026-07-22-veripb-calibration.md
+    sha256: dc16e03bd2d3b3c22d3a50988fcb0508c095ae00a032f4b0997bb0c41db21dba
+method: >-
+  Stream the frozen OPB and extract a four-constraint generalized-unit
+  contradiction under x187=1. Independently replay the project-local JSON
+  certificate. Export the exact OPB shard by appending one unit constraint,
+  run pinned Exact with proof logging, strictly replay the raw VeriPB proof,
+  elaborate it, and strictly replay the kernel proof. Attempt CakePB, but
+  retain no conclusion because the invocation was interrupted before output.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave39-proof-solver\generate_certificate.py --output attempts\wave39-proof-solver\branch-15-x187-positive-certificate.json
+  .\.venv\Scripts\python.exe -B attempts\wave39-proof-solver\verify_certificate.py attempts\wave39-proof-solver\branch-15-x187-positive-certificate.json --output attempts\wave39-proof-solver\exact-results.json
+  .\.venv\Scripts\python.exe -B attempts\wave39-proof-solver\export_shard_opb.py --raw attempts\wave39-proof-solver\branch-15-x187-positive.opb --gzip attempts\wave39-proof-solver\branch-15-x187-positive.opb.gz --metadata attempts\wave39-proof-solver\branch-15-x187-positive-formula.json
+  "$EXACT" --proof-assumptions=0 --proof-log=branch-15-x187-positive.raw.pbp branch-15-x187-positive.opb
+  "$VERIPB" --force-checked-deletion branch-15-x187-positive.opb branch-15-x187-positive.raw.pbp
+  "$VERIPB" --force-checked-deletion --elaborate branch-15-x187-positive.kernel.pbp branch-15-x187-positive.opb branch-15-x187-positive.raw.pbp
+  "$VERIPB" --force-checked-deletion branch-15-x187-positive.opb branch-15-x187-positive.kernel.pbp
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave39-proof-solver -p "test_*.py" -v
+outputs:
+  - path: attempts/wave39-proof-solver/branch-15-x187-positive-certificate.json
+    sha256: 5b3119c9429b06398a7628bac2636763f5e29892f770d90dd2cd92910521c1b6
+  - path: attempts/wave39-proof-solver/branch-15-x187-positive.opb.gz
+    sha256: 6a5e88245acb4dece760ce67e39fa9b098e43c958bc0f164bcba9f67e8ea4e2d
+  - path: attempts/wave39-proof-solver/branch-15-x187-positive-formula.json
+    sha256: 12865efcddff73b833e29c04e665266f18ff4671c91d9980755e045d334bb447
+  - path: attempts/wave39-proof-solver/branch-15-x187-positive.raw.pbp
+    sha256: b2fcb06206d8a09ab636535f0358f6013e5daddaf14b7132180698a2f59340d5
+  - path: attempts/wave39-proof-solver/branch-15-x187-positive.kernel.pbp
+    sha256: 5645dded139847ff144e84ddc6dd59e90267a9c585a986f13e20748b773c07a0
+  - path: attempts/wave39-proof-solver/exact-results.json
+    sha256: 07f1af5ac1dae41c8fd1385bc69f7922671e70921e205de9bfee2ecfa0a45c3c
+limitations:
+  - "The CakePB invocation produced no conclusion and was terminated."
+  - "The standard proof chain has not yet been replayed by an independent agent."
+  - "Only branch15 AND x187=1 is excluded; branch15 AND x187=0 remains open."
+  - "No complete endpoint case is closed; checked endpoint coverage remains 0/33."
+  - "The source formula contains only the parent branch's six fixed-triangle prism families."
+  - "No graph, endpoint exclusion, improved upper bound, or novelty claim follows."
+tests:
+  project_local_replay: PASS
+  exact: UNSATISFIABLE
+  veripb_raw: VERIFIED_UNSATISFIABLE
+  veripb_elaboration: VERIFIED_UNSATISFIABLE
+  veripb_kernel: VERIFIED_UNSATISFIABLE
+  cakepb: NO_CONCLUSION_INTERRUPTED
+status:
+  positive_x187_shard: CANDIDATE_UNSAT
+  branch_15: UNKNOWN
+  endpoint_cases_closed: 0
+  endpoint_case_total: 33
+  endpoint_n3_4158: UNKNOWN
+  upper_bound_improved_below_4158: false

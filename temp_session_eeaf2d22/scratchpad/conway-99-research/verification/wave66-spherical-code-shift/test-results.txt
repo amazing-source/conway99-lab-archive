@@ -1,0 +1,46 @@
+Wave 66 independent verifier test record
+Date UTC: 2026-07-27T23:05:00Z
+
+Command:
+.\.venv\Scripts\python.exe verification\wave66-spherical-code-shift\independent_verify.py --output verification\wave66-spherical-code-shift\independent-results.json --discovery-results attempts\wave66-spherical-code-shift\exact-results.json --comparison-output verification\wave66-spherical-code-shift\comparison.json
+
+Result:
+PASS: clean-room exact reconstruction; verdict VERIFIED_WITH_CORRECTION; Conway-99 UNKNOWN
+
+Command:
+.\.venv\Scripts\python.exe verification\wave66-spherical-code-shift\independent_verify.py --verify --discovery-results attempts\wave66-spherical-code-shift\exact-results.json --comparison-output verification\wave66-spherical-code-shift\comparison.json
+
+Result:
+PASS: clean-room exact reconstruction; verdict VERIFIED_WITH_CORRECTION; Conway-99 UNKNOWN
+
+Command:
+.\.venv\Scripts\python.exe -m unittest -v verification\wave66-spherical-code-shift\test_independent_verify.py
+
+Result:
+Ran 14 tests in 0.003s
+OK
+
+Command:
+.\.venv\Scripts\python.exe attempts\wave66-spherical-code-shift\exact_check.py --verify
+
+Result:
+PASS: canonical artifact matches exact recomputation
+
+Command:
+.\.venv\Scripts\python.exe -m unittest -v attempts\wave66-spherical-code-shift\test_exact_check.py
+
+Result:
+Ran 10 tests in 0.002s
+OK
+
+Discovery post-freeze byte comparison:
+PASS: discovery directory unchanged since preinspection freeze
+
+Independent/discovery comparison:
+8 mathematical fields
+0 mathematical mismatches
+3 recorded corrections
+
+Memory snapshots:
+initial free physical memory 52.76%
+post-test free physical memory 51.07%

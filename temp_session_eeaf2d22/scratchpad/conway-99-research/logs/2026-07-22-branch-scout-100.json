@@ -1,0 +1,154 @@
+{
+  "branches": [
+    {
+      "partition": [6],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 101,
+        "decisions": 306466,
+        "propagations": 348346,
+        "restarts": 1
+      },
+      "wall_seconds": 4.637906299903989
+    },
+    {
+      "partition": [5, 1],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 100,
+        "decisions": 27613,
+        "propagations": 117058,
+        "restarts": 0
+      },
+      "wall_seconds": 0.13183379999827594
+    },
+    {
+      "partition": [4, 2],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 101,
+        "decisions": 528,
+        "propagations": 173885,
+        "restarts": 1
+      },
+      "wall_seconds": 0.43393870000727475
+    },
+    {
+      "partition": [4, 1, 1],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 101,
+        "decisions": 401,
+        "propagations": 125888,
+        "restarts": 0
+      },
+      "wall_seconds": 0.20196440001018345
+    },
+    {
+      "partition": [3, 3],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 100,
+        "decisions": 279,
+        "propagations": 47053,
+        "restarts": 0
+      },
+      "wall_seconds": 0.11205770005472004
+    },
+    {
+      "partition": [3, 2, 1],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 101,
+        "decisions": 1073,
+        "propagations": 230870,
+        "restarts": 5
+      },
+      "wall_seconds": 0.15676739998161793
+    },
+    {
+      "partition": [3, 1, 1, 1],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 101,
+        "decisions": 292,
+        "propagations": 89054,
+        "restarts": 0
+      },
+      "wall_seconds": 0.1466206000186503
+    },
+    {
+      "partition": [2, 2, 2],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 100,
+        "decisions": 664,
+        "propagations": 189303,
+        "restarts": 2
+      },
+      "wall_seconds": 0.1291854000883177
+    },
+    {
+      "partition": [2, 2, 1, 1],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 100,
+        "decisions": 1461,
+        "propagations": 296029,
+        "restarts": 7
+      },
+      "wall_seconds": 0.16960719996131957
+    },
+    {
+      "partition": [2, 1, 1, 1, 1],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 100,
+        "decisions": 299,
+        "propagations": 81189,
+        "restarts": 0
+      },
+      "wall_seconds": 0.18685900000855327
+    },
+    {
+      "partition": [1, 1, 1, 1, 1, 1],
+      "result": "UNKNOWN",
+      "solver_stats_delta": {
+        "conflicts": 101,
+        "decisions": 1050,
+        "propagations": 241871,
+        "restarts": 4
+      },
+      "wall_seconds": 0.2500731999753043
+    }
+  ],
+  "branches_planned": 11,
+  "branches_run": 11,
+  "build_seconds": 1.3212073999457061,
+  "configuration": {
+    "conflict_budget_per_branch": 100,
+    "coordinate": 0,
+    "incremental_learned_clauses": true,
+    "pair_count": 7,
+    "solver": "cadical300"
+  },
+  "encoding": {
+    "clauses": 1622502,
+    "full_vertex_count": 99,
+    "named_edge_variables": 3486,
+    "named_wedge_variables": 285852,
+    "pair_count": 7,
+    "residual_vertex_count": 84,
+    "total_variables": 817278,
+    "variant": "compact"
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14",
+    "python_sat": "1.9.dev7"
+  },
+  "evidence_status": "NON_EVIDENTIARY_SCOUT",
+  "format": "conway-branch-scout-v1",
+  "solve_wall_seconds": 7.65517240006011,
+  "warning": "UNKNOWN/timeouts are not evidence; UNSAT requires rerun with branch units and a checked proof."
+}

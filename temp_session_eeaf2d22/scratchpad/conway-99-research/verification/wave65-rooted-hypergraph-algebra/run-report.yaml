@@ -1,0 +1,56 @@
+role: verifier
+date_utc: 2026-07-27T22:37:51Z
+git_commit: 6dba25f93ba8b0375a6d7057eac4c83e58934fb4
+claim_label: VERIFIED
+scope: >-
+  Independent audit of Wave 65 rooted-scaffold and hypergraph-algebra
+  identities, target and transition moments, scalar spectral coupling, all
+  43 scaffold-averaged PSD parameters, and the explicitly unlabelled local
+  positive control. Endpoint and Conway claims are excluded from VERIFIED.
+inputs:
+  - path: attempts/wave65-rooted-hypergraph-algebra/exact-results.json
+    sha256: 6a9409a9742807ac3aee9f052848b2a97c9c60db655ef407b5cda90518a09f0c
+  - path: attempts/wave65-rooted-hypergraph-algebra/positive-control.json
+    sha256: 6b8320f0f355ee7437186908857b78dc4351be4ceea24d606913074061705acf
+  - path: attempts/wave65-rooted-hypergraph-algebra/package-manifest.sha256
+    sha256: 085b2ecae05f7268080b49e2bff8e719d1d693072f4dd4d32a288e9de6b0a02f
+method: >-
+  Clean-room Python reconstruction without importing or executing discovery
+  code; exact integer matrices, Fraction rational arithmetic, exact modular
+  elimination, exact polynomial spectral projectors after numerically
+  proposing integral roots, adversarial orientation and normalization checks,
+  certificate reconstruction, and independent byte-level manifest audit.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s verification\wave65-rooted-hypergraph-algebra -p "test_*.py" -v
+outputs:
+  - path: verification/wave65-rooted-hypergraph-algebra/independent_verify.py
+    sha256: 20334f0aa87a3f8d12ca1565cf8cc77fc40b9f8adc3acabfff10459538301a63
+  - path: verification/wave65-rooted-hypergraph-algebra/test_independent_verify.py
+    sha256: b595fd64bc619150d0f512c6bad6816d5e0b04ad24f1505d793745548566b19b
+  - path: verification/wave65-rooted-hypergraph-algebra/independent-results.json
+    sha256: 076293e960e704799ad1eb68b43aeff7892d83d240c9b3471789aadc9413349d
+  - path: verification/wave65-rooted-hypergraph-algebra/audit.md
+    sha256: b3c5e15fbc252af6d07b9bac640f669ff695ad405c72100147484af0d3c86f42
+  - path: verification/wave65-rooted-hypergraph-algebra/failed-routes.md
+    sha256: 262452c1dc4ef50e63915a8a51a4586d404b9b6c3c66524047132a8932a9fb05
+result:
+  disposition: SCOPED_CLAIMS_INDEPENDENTLY_VERIFIED
+  exact_tests: 7
+  mathematical_mismatches: 0
+  manifest_entries_verified: 11
+  averaged_psd_lanes_checked: 258
+  averaged_psd_negative_lanes: 0
+  positive_control_target_moment_deltas: [0, 0, 0, 5496, -12020, 239772]
+  strict_n3_upper_bound: NOT_OBTAINED
+  endpoint_n3_4158: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+resources:
+  minimum_free_memory_percent_required: 15
+  minimum_free_memory_percent_observed: 38.21
+limitations:
+  - The initial preinspection inventory omitted hidden .gitattributes; the later manifest audit verified it.
+  - The exact scalar and averaged conditions are necessary relaxations, not compatible 0/1 matrix realizations.
+  - The positive control is unlabelled, fails the target moments, and is not a target candidate.
+  - No endpoint exclusion, construction, strict global bound, novelty, or priority claim follows.

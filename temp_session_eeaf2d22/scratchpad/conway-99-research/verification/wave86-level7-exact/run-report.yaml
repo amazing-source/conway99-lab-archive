@@ -1,0 +1,46 @@
+role: verifier
+date_utc: 2026-07-28T00:37:39Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: VERIFIED
+scope: >-
+  Conditional Wave71 q=16 exact scalar-theta consequence for a hypothetical
+  srg(99,14,1,2): N14+N16+N18 >= 5868.
+inputs:
+  - path: attempts/wave86-level7-exact/package-manifest.sha256
+    sha256: c6066fd10258578c15e511f3802217e4ff613ffe3d3b3b8f11e804f0316ac75d
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+method: >-
+  Independently reconstruct dim M_22(Gamma0(7)), a full exact product basis,
+  the normalized Fricke involution, the Poisson theta transfer, the
+  seven-multiplier positive identity, Wave71 congruence rounding, and the
+  q^50 finite scalar null. Correct the cited source usage by deriving the
+  q-normalized Fricke factors from arXiv:2002.09819 Eqs. (2.5) and (2.7),
+  since printed Eq. (2.8) omits the normalization ratio. Attack the result
+  with wrong-phase, wrong-sign, wrong-power, incomplete-basis, fixed-point,
+  and norm-indexing controls.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave86-level7-exact\independent_verify.py ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  verification\wave86-level7-exact\test_independent_verify.py ;
+  .\.venv\Scripts\python.exe
+  attempts\wave86-level7-exact\exact_check.py --verify ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  attempts\wave86-level7-exact\test_exact_check.py
+outputs:
+  - path: verification/wave86-level7-exact/audit.md
+    sha256: 912b740c6ae4ef7da06a5dd95b41efd34578193a1555f0d926f1cc4511ca4ff5
+  - path: verification/wave86-level7-exact/independent-results.json
+    sha256: 625a28ce5fb0ba1da02bb314f2c2c9ebcaee107a0401dd58e01ffd32fd06a11d
+  - path: verification/wave86-level7-exact/independent_verify.py
+    sha256: d8596d81045d29bdf3bd20818d93f943a34c7b29e954443287a374e5112bc1b7
+  - path: verification/wave86-level7-exact/test_independent_verify.py
+    sha256: c7343b7ee5c7da425a4c798fb727bc27c2bb769a812653e93426775e23ee6edc
+limitations: >-
+  Verified only under the imported Wave66/71 conditional lattice transfer.
+  The formal scalar pair is not a lattice, marked frame, graph, or all-orders
+  positivity theorem. The q=16 row is not excluded. Graph existence,
+  Conway-99, and literature novelty remain UNKNOWN.

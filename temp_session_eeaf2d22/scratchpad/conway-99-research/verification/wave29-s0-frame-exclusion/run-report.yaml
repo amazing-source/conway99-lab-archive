@@ -1,0 +1,58 @@
+role: verifier
+date_utc: 2026-07-24T03:26:59Z
+git_commit: 74b6f3adcee19ca2b0480258bb7bf51198bd085a
+claim_label: VERIFIED
+scope: >-
+  Independent exclusion of only S0=K12 orthogonal_sum LAMBDA(F) as
+  the S-form of the frozen full n3=708 projector/Schur endpoint package.
+inputs:
+  agents/2026-07-24-wave29-s0-frame-exclusion.md: e6ae61331a54d53f2a98712296ebac855f45b46de32ff2ec4d85018f2d8a5045
+  attempts/wave29-s0-frame-exclusion/artifact-manifest.sha256: 8cb5b0198ac9e787a8234820e648626dc27f900f53b7511068d5442d06d7a39b
+  agents/2026-07-24-wave28-orchestrator-brief.md: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  agents/2026-07-24-wave28-theta-modular.md: 8783be7e730306637ed863b4d9fbe8f4193ad756e7ec86d697c7407688a5423a
+  verification/wave28-theta-modular/audit.md: adc90e404735ca147bc0a5418974d8af0bde71c4ddc2dc62a8c07dee670dbfeb
+  verification/wave28-theta-modular/independent-results.json: 24298ae282c7baa252a39ffe96fc37b7c696cb51f14b9ddea2318a59b4335b7f
+  verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+method: >-
+  Fresh exact block-splitting and determinant derivation, complete
+  row-alphabet and trace enumeration, integer AM-GM tests, characteristic
+  pseudodeterminant proof, full-domain logarithmic inequality, and hostile
+  premise-deletion controls. Discovery code was neither imported nor executed.
+command: |-
+  cd verification/wave29-s0-frame-exclusion
+  python -B independent_check.py --output independent-results.json
+  python -B -m unittest -v test_independent_check.py
+outputs:
+  verification/wave29-s0-frame-exclusion/protocol-freeze.md: 8ab139038fa6792cd9abad0030a0ee17f8cb5cd6eee749a312e2d13a0abd5e30
+  verification/wave29-s0-frame-exclusion/independent_check.py: f072583e33ef483cc72c29989d58ba2ec2accb91da80f128a7a8b73329205ab0
+  verification/wave29-s0-frame-exclusion/test_independent_check.py: 4761535a50e48d544483096b1de991c81d67f9d4d8062fe081a1c6602109d261
+  verification/wave29-s0-frame-exclusion/independent-results.json: c0418cec88915089d6cc2e29735ca3e7bc425cfcd2b3ce09a78a707e36e0aa04
+  verification/wave29-s0-frame-exclusion/audit.md: dbdcb88bf309cbfa47a42b9fb63dd7cf483e07cac8b92c475094c96be3723b7d
+  verification/wave29-s0-frame-exclusion/failure-ledger.md: 6853c92a09f420e390eed25e5e62fed82d7b61bbdb9dcbaa35a3e1cf63ac0567
+tests:
+  status: PASS
+  count: 27
+results:
+  K12_rows: 63
+  LAMBDA_F_rows: 168
+  detQ: 5
+  detQ_K: 5
+  detQ_L: 1
+  detB_K: 3645
+  detB_L: 1
+  traceB_K: 24
+  traceB_L: 36
+  traceC_K: 6
+  logarithmic_detB_K_cap: 729
+  contradiction: "3645 > 729"
+  S0_full_endpoint_origin: REFUTED_VERIFIED
+  all_other_h_729_lattices: UNKNOWN
+  n3_equals_708: UNKNOWN
+  Conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - The proof is specific to the frozen orthogonal K12 plus LAMBDA(F) lattice.
+  - Earlier independent K12 and LAMBDA(F) block data are frozen inputs.
+  - C_K is not assumed positive semidefinite.
+  - No other determinant-729 form, endpoint exclusion, graph, target resolution, or novelty claim follows.

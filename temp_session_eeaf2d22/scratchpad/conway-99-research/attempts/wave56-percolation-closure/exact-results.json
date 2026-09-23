@@ -1,0 +1,7121 @@
+{
+  "arbitrary_nonedge_early_waves": {
+    "all_labeled_tip_graph_count": 64,
+    "endpoint": {
+      "admissible_tip_graph_count": 1,
+      "allowed_outside_mask_count": 23,
+      "formal_D4_orbit_count": 11,
+      "next_wave_arity_triple_histogram": {
+        "10,0,1": 1,
+        "10,2,0": 16,
+        "13,1,0": 8,
+        "16,0,0": 1,
+        "4,4,0": 1,
+        "7,3,0": 8
+      },
+      "next_wave_profile_count": 35,
+      "next_wave_size_histogram": {
+        "10": 8,
+        "11": 1,
+        "12": 16,
+        "14": 8,
+        "16": 1,
+        "8": 1
+      },
+      "pair_deficit_equation": "x2 + 3*x3 + 6*x4 = 16",
+      "tip_edges": [],
+      "total_infected_after_wave_3_range": [
+        16,
+        24
+      ]
+    },
+    "lambda_mu_admissible_tip_graph_count": 4,
+    "tip_graphs": [
+      {
+        "allowed_outside_mask_arity_histogram": {
+          "2": 14,
+          "3": 8,
+          "4": 1
+        },
+        "allowed_outside_mask_count": 23,
+        "allowed_outside_masks": [
+          {
+            "covered_pair_indices": [
+              14
+            ],
+            "mask": 20,
+            "neighbors": [
+              "c2",
+              "t01"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              18
+            ],
+            "mask": 24,
+            "neighbors": [
+              "c3",
+              "t01"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              4
+            ],
+            "mask": 33,
+            "neighbors": [
+              "c0",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              19
+            ],
+            "mask": 40,
+            "neighbors": [
+              "c3",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22
+            ],
+            "mask": 48,
+            "neighbors": [
+              "t01",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              18,
+              19,
+              22
+            ],
+            "mask": 56,
+            "neighbors": [
+              "c3",
+              "t01",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              5
+            ],
+            "mask": 65,
+            "neighbors": [
+              "c0",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              11
+            ],
+            "mask": 66,
+            "neighbors": [
+              "c1",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              23
+            ],
+            "mask": 80,
+            "neighbors": [
+              "t01",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              25
+            ],
+            "mask": 96,
+            "neighbors": [
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              4,
+              5,
+              25
+            ],
+            "mask": 97,
+            "neighbors": [
+              "c0",
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              23,
+              25
+            ],
+            "mask": 112,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              12
+            ],
+            "mask": 130,
+            "neighbors": [
+              "c1",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              17
+            ],
+            "mask": 132,
+            "neighbors": [
+              "c2",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              24
+            ],
+            "mask": 144,
+            "neighbors": [
+              "t01",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              14,
+              17,
+              24
+            ],
+            "mask": 148,
+            "neighbors": [
+              "c2",
+              "t01",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              26
+            ],
+            "mask": 160,
+            "neighbors": [
+              "t12",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              24,
+              26
+            ],
+            "mask": 176,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              27
+            ],
+            "mask": 192,
+            "neighbors": [
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              11,
+              12,
+              27
+            ],
+            "mask": 194,
+            "neighbors": [
+              "c1",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              23,
+              24,
+              27
+            ],
+            "mask": 208,
+            "neighbors": [
+              "t01",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              25,
+              26,
+              27
+            ],
+            "mask": 224,
+            "neighbors": [
+              "t12",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "mask": 240,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t23",
+              "t30"
+            ]
+          }
+        ],
+        "bits": 0,
+        "bitstring_in_tip_pair_order": "000000",
+        "central_n3_channels": 2,
+        "central_prism_channels": 0,
+        "formal_D4_orbits": [
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 4,
+            "orbit_id": 0
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 1,
+            "orbit_id": 1
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 4,
+            "orbit_id": 2
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 240,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 1,
+            "orbit_id": 3
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 2,
+            "orbit_id": 4
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 8,
+            "orbit_id": 5
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 4,
+            "orbit_id": 6
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 4,
+            "orbit_id": 7
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 2,
+            "orbit_id": 8
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 4,
+            "orbit_id": 9
+          },
+          {
+            "canonical_profile": [
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "labeled_size": 1,
+            "orbit_id": 10
+          }
+        ],
+        "internal_prisms": [],
+        "next_wave_arity_triple_histogram": {
+          "10,0,1": 1,
+          "10,2,0": 16,
+          "13,1,0": 8,
+          "16,0,0": 1,
+          "4,4,0": 1,
+          "7,3,0": 8
+        },
+        "next_wave_profile_count": 35,
+        "next_wave_profiles": [
+          {
+            "arity_counts": {
+              "2": 4,
+              "3": 4,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 10,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 8
+          },
+          {
+            "arity_counts": {
+              "2": 7,
+              "3": 3,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 9,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 10
+          },
+          {
+            "arity_counts": {
+              "2": 7,
+              "3": 3,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 9,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 10
+          },
+          {
+            "arity_counts": {
+              "2": 7,
+              "3": 3,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 7,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 10
+          },
+          {
+            "arity_counts": {
+              "2": 7,
+              "3": 3,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 9,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 10
+          },
+          {
+            "arity_counts": {
+              "2": 7,
+              "3": 3,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 7,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 10
+          },
+          {
+            "arity_counts": {
+              "2": 7,
+              "3": 3,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 9,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 10
+          },
+          {
+            "arity_counts": {
+              "2": 7,
+              "3": 3,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 7,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 10
+          },
+          {
+            "arity_counts": {
+              "2": 7,
+              "3": 3,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 7,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 10
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 0,
+              "4": 1
+            },
+            "formal_D4_orbit_id": 3,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 240,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 11
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 6,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 8,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 5,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 6,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 5,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 6,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 8,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 5,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 5,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 5,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 6,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 5,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 5,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 5,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 4,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 10,
+              "3": 2,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 4,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 12
+          },
+          {
+            "arity_counts": {
+              "2": 13,
+              "3": 1,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 2,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 148,
+                "neighbors": [
+                  "c2",
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 14
+          },
+          {
+            "arity_counts": {
+              "2": 13,
+              "3": 1,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 2,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 56,
+                "neighbors": [
+                  "c3",
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 14
+          },
+          {
+            "arity_counts": {
+              "2": 13,
+              "3": 1,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 2,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 97,
+                "neighbors": [
+                  "c0",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 14
+          },
+          {
+            "arity_counts": {
+              "2": 13,
+              "3": 1,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 0,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 14
+          },
+          {
+            "arity_counts": {
+              "2": 13,
+              "3": 1,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 0,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 14
+          },
+          {
+            "arity_counts": {
+              "2": 13,
+              "3": 1,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 2,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 194,
+                "neighbors": [
+                  "c1",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 14
+          },
+          {
+            "arity_counts": {
+              "2": 13,
+              "3": 1,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 0,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 14
+          },
+          {
+            "arity_counts": {
+              "2": 13,
+              "3": 1,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 0,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 14
+          },
+          {
+            "arity_counts": {
+              "2": 16,
+              "3": 0,
+              "4": 0
+            },
+            "formal_D4_orbit_id": 1,
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 16,
+            "wave_size": 16
+          }
+        ],
+        "next_wave_size_histogram": {
+          "10": 8,
+          "11": 1,
+          "12": 16,
+          "14": 8,
+          "16": 1,
+          "8": 1
+        },
+        "opposite_tip_edge_count": 0,
+        "pair_deficit_histogram": {
+          "0": 14,
+          "1": 12,
+          "2": 2
+        },
+        "pair_deficit_sum": 16,
+        "prism_free_endpoint_admissible": true,
+        "tip_edge_count": 0,
+        "tip_edges": []
+      },
+      {
+        "allowed_outside_mask_arity_histogram": {
+          "2": 10,
+          "3": 4,
+          "4": 1
+        },
+        "allowed_outside_mask_count": 15,
+        "allowed_outside_masks": [
+          {
+            "covered_pair_indices": [
+              4
+            ],
+            "mask": 33,
+            "neighbors": [
+              "c0",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              19
+            ],
+            "mask": 40,
+            "neighbors": [
+              "c3",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22
+            ],
+            "mask": 48,
+            "neighbors": [
+              "t01",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              23
+            ],
+            "mask": 80,
+            "neighbors": [
+              "t01",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              25
+            ],
+            "mask": 96,
+            "neighbors": [
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              23,
+              25
+            ],
+            "mask": 112,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              12
+            ],
+            "mask": 130,
+            "neighbors": [
+              "c1",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              17
+            ],
+            "mask": 132,
+            "neighbors": [
+              "c2",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              24
+            ],
+            "mask": 144,
+            "neighbors": [
+              "t01",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              26
+            ],
+            "mask": 160,
+            "neighbors": [
+              "t12",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              24,
+              26
+            ],
+            "mask": 176,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              27
+            ],
+            "mask": 192,
+            "neighbors": [
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              23,
+              24,
+              27
+            ],
+            "mask": 208,
+            "neighbors": [
+              "t01",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              25,
+              26,
+              27
+            ],
+            "mask": 224,
+            "neighbors": [
+              "t12",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "mask": 240,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t23",
+              "t30"
+            ]
+          }
+        ],
+        "bits": 2,
+        "bitstring_in_tip_pair_order": "010000",
+        "central_n3_channels": 1,
+        "central_prism_channels": 1,
+        "formal_D4_orbits": [],
+        "internal_prisms": [
+          [
+            "c0",
+            "c1",
+            "c2",
+            "c3",
+            "t01",
+            "t23"
+          ]
+        ],
+        "next_wave_arity_triple_histogram": {
+          "11,0,0": 1,
+          "5,0,1": 1,
+          "5,2,0": 1,
+          "8,1,0": 4
+        },
+        "next_wave_profile_count": 7,
+        "next_wave_profiles": [
+          {
+            "arity_counts": {
+              "2": 5,
+              "3": 0,
+              "4": 1
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 240,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 6
+          },
+          {
+            "arity_counts": {
+              "2": 5,
+              "3": 2,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 7
+          },
+          {
+            "arity_counts": {
+              "2": 8,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 9
+          },
+          {
+            "arity_counts": {
+              "2": 8,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 9
+          },
+          {
+            "arity_counts": {
+              "2": 8,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 9
+          },
+          {
+            "arity_counts": {
+              "2": 8,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 9
+          },
+          {
+            "arity_counts": {
+              "2": 11,
+              "3": 0,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 33,
+                "neighbors": [
+                  "c0",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 40,
+                "neighbors": [
+                  "c3",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 130,
+                "neighbors": [
+                  "c1",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 132,
+                "neighbors": [
+                  "c2",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 11
+          }
+        ],
+        "next_wave_size_histogram": {
+          "11": 1,
+          "6": 1,
+          "7": 1,
+          "9": 4
+        },
+        "opposite_tip_edge_count": 1,
+        "pair_deficit_histogram": {
+          "0": 18,
+          "1": 9,
+          "2": 1
+        },
+        "pair_deficit_sum": 11,
+        "prism_free_endpoint_admissible": false,
+        "tip_edge_count": 1,
+        "tip_edges": [
+          [
+            "t01",
+            "t23"
+          ]
+        ]
+      },
+      {
+        "allowed_outside_mask_arity_histogram": {
+          "2": 10,
+          "3": 4,
+          "4": 1
+        },
+        "allowed_outside_mask_count": 15,
+        "allowed_outside_masks": [
+          {
+            "covered_pair_indices": [
+              14
+            ],
+            "mask": 20,
+            "neighbors": [
+              "c2",
+              "t01"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              18
+            ],
+            "mask": 24,
+            "neighbors": [
+              "c3",
+              "t01"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22
+            ],
+            "mask": 48,
+            "neighbors": [
+              "t01",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              5
+            ],
+            "mask": 65,
+            "neighbors": [
+              "c0",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              11
+            ],
+            "mask": 66,
+            "neighbors": [
+              "c1",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              23
+            ],
+            "mask": 80,
+            "neighbors": [
+              "t01",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              25
+            ],
+            "mask": 96,
+            "neighbors": [
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              23,
+              25
+            ],
+            "mask": 112,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              24
+            ],
+            "mask": 144,
+            "neighbors": [
+              "t01",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              26
+            ],
+            "mask": 160,
+            "neighbors": [
+              "t12",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              24,
+              26
+            ],
+            "mask": 176,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              27
+            ],
+            "mask": 192,
+            "neighbors": [
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              23,
+              24,
+              27
+            ],
+            "mask": 208,
+            "neighbors": [
+              "t01",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              25,
+              26,
+              27
+            ],
+            "mask": 224,
+            "neighbors": [
+              "t12",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "mask": 240,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t23",
+              "t30"
+            ]
+          }
+        ],
+        "bits": 16,
+        "bitstring_in_tip_pair_order": "000010",
+        "central_n3_channels": 1,
+        "central_prism_channels": 1,
+        "formal_D4_orbits": [],
+        "internal_prisms": [
+          [
+            "c0",
+            "c1",
+            "c2",
+            "c3",
+            "t12",
+            "t30"
+          ]
+        ],
+        "next_wave_arity_triple_histogram": {
+          "11,0,0": 1,
+          "5,0,1": 1,
+          "5,2,0": 1,
+          "8,1,0": 4
+        },
+        "next_wave_profile_count": 7,
+        "next_wave_profiles": [
+          {
+            "arity_counts": {
+              "2": 5,
+              "3": 0,
+              "4": 1
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 240,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 6
+          },
+          {
+            "arity_counts": {
+              "2": 5,
+              "3": 2,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 7
+          },
+          {
+            "arity_counts": {
+              "2": 8,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 9
+          },
+          {
+            "arity_counts": {
+              "2": 8,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 9
+          },
+          {
+            "arity_counts": {
+              "2": 8,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 9
+          },
+          {
+            "arity_counts": {
+              "2": 8,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 9
+          },
+          {
+            "arity_counts": {
+              "2": 11,
+              "3": 0,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 20,
+                "neighbors": [
+                  "c2",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 24,
+                "neighbors": [
+                  "c3",
+                  "t01"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 65,
+                "neighbors": [
+                  "c0",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 66,
+                "neighbors": [
+                  "c1",
+                  "t23"
+                ]
+              },
+              {
+                "count": 2,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 11,
+            "wave_size": 11
+          }
+        ],
+        "next_wave_size_histogram": {
+          "11": 1,
+          "6": 1,
+          "7": 1,
+          "9": 4
+        },
+        "opposite_tip_edge_count": 1,
+        "pair_deficit_histogram": {
+          "0": 18,
+          "1": 9,
+          "2": 1
+        },
+        "pair_deficit_sum": 11,
+        "prism_free_endpoint_admissible": false,
+        "tip_edge_count": 1,
+        "tip_edges": [
+          [
+            "t12",
+            "t30"
+          ]
+        ]
+      },
+      {
+        "allowed_outside_mask_arity_histogram": {
+          "2": 6,
+          "3": 4,
+          "4": 1
+        },
+        "allowed_outside_mask_count": 11,
+        "allowed_outside_masks": [
+          {
+            "covered_pair_indices": [
+              22
+            ],
+            "mask": 48,
+            "neighbors": [
+              "t01",
+              "t12"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              23
+            ],
+            "mask": 80,
+            "neighbors": [
+              "t01",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              25
+            ],
+            "mask": 96,
+            "neighbors": [
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              23,
+              25
+            ],
+            "mask": 112,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t23"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              24
+            ],
+            "mask": 144,
+            "neighbors": [
+              "t01",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              26
+            ],
+            "mask": 160,
+            "neighbors": [
+              "t12",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              24,
+              26
+            ],
+            "mask": 176,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              27
+            ],
+            "mask": 192,
+            "neighbors": [
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              23,
+              24,
+              27
+            ],
+            "mask": 208,
+            "neighbors": [
+              "t01",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              25,
+              26,
+              27
+            ],
+            "mask": 224,
+            "neighbors": [
+              "t12",
+              "t23",
+              "t30"
+            ]
+          },
+          {
+            "covered_pair_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "mask": 240,
+            "neighbors": [
+              "t01",
+              "t12",
+              "t23",
+              "t30"
+            ]
+          }
+        ],
+        "bits": 18,
+        "bitstring_in_tip_pair_order": "010010",
+        "central_n3_channels": 0,
+        "central_prism_channels": 2,
+        "formal_D4_orbits": [],
+        "internal_prisms": [
+          [
+            "c0",
+            "c1",
+            "c2",
+            "c3",
+            "t01",
+            "t23"
+          ],
+          [
+            "c0",
+            "c1",
+            "c2",
+            "c3",
+            "t12",
+            "t30"
+          ]
+        ],
+        "next_wave_arity_triple_histogram": {
+          "0,0,1": 1,
+          "3,1,0": 4,
+          "6,0,0": 1
+        },
+        "next_wave_profile_count": 6,
+        "next_wave_profiles": [
+          {
+            "arity_counts": {
+              "2": 0,
+              "3": 0,
+              "4": 1
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 240,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 6,
+            "wave_size": 1
+          },
+          {
+            "arity_counts": {
+              "2": 3,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 112,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 6,
+            "wave_size": 4
+          },
+          {
+            "arity_counts": {
+              "2": 3,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 176,
+                "neighbors": [
+                  "t01",
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 6,
+            "wave_size": 4
+          },
+          {
+            "arity_counts": {
+              "2": 3,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 208,
+                "neighbors": [
+                  "t01",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 6,
+            "wave_size": 4
+          },
+          {
+            "arity_counts": {
+              "2": 3,
+              "3": 1,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 224,
+                "neighbors": [
+                  "t12",
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 6,
+            "wave_size": 4
+          },
+          {
+            "arity_counts": {
+              "2": 6,
+              "3": 0,
+              "4": 0
+            },
+            "multiplicities": [
+              {
+                "count": 1,
+                "mask": 48,
+                "neighbors": [
+                  "t01",
+                  "t12"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 80,
+                "neighbors": [
+                  "t01",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 96,
+                "neighbors": [
+                  "t12",
+                  "t23"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 144,
+                "neighbors": [
+                  "t01",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 160,
+                "neighbors": [
+                  "t12",
+                  "t30"
+                ]
+              },
+              {
+                "count": 1,
+                "mask": 192,
+                "neighbors": [
+                  "t23",
+                  "t30"
+                ]
+              }
+            ],
+            "pair_cover_total": 6,
+            "wave_size": 6
+          }
+        ],
+        "next_wave_size_histogram": {
+          "1": 1,
+          "4": 4,
+          "6": 1
+        },
+        "opposite_tip_edge_count": 2,
+        "pair_deficit_histogram": {
+          "0": 22,
+          "1": 6
+        },
+        "pair_deficit_sum": 6,
+        "prism_free_endpoint_admissible": false,
+        "tip_edge_count": 2,
+        "tip_edges": [
+          [
+            "t01",
+            "t23"
+          ],
+          [
+            "t12",
+            "t30"
+          ]
+        ]
+      }
+    ],
+    "tip_pair_order": [
+      [
+        "t01",
+        "t12"
+      ],
+      [
+        "t01",
+        "t23"
+      ],
+      [
+        "t01",
+        "t30"
+      ],
+      [
+        "t12",
+        "t23"
+      ],
+      [
+        "t12",
+        "t30"
+      ],
+      [
+        "t23",
+        "t30"
+      ]
+    ],
+    "wave_0_seed": [
+      "c0",
+      "c2"
+    ],
+    "wave_1_exact": [
+      "c1",
+      "c3"
+    ],
+    "wave_2_exact": [
+      "t01",
+      "t12",
+      "t23",
+      "t30"
+    ]
+  },
+  "claim_label": "DERIVED",
+  "closure_classification": {
+    "derivation": [
+      "A nonedge seed rules out the K3 closure.",
+      "mu=2 rules out the irregular closure in Theorem 4.8.",
+      "The SRG parameter equation gives n'=1+k'^2/2.",
+      "Exact eigenvalue multiplicities leave only k'=4 below k=14.",
+      "Degree completion of the forced eight vertices uniquely adds one vertex adjacent to all four tips."
+    ],
+    "forced_nine_vertex_reconstruction": {
+      "edge_count": 18,
+      "exact_pair_parameters": {
+        "adjacent_common_neighbor_values": [
+          1
+        ],
+        "degree_values": [
+          4
+        ],
+        "nonadjacent_common_neighbor_values": [
+          2
+        ]
+      },
+      "ninth_vertex_neighbors": [
+        "t01",
+        "t12",
+        "t23",
+        "t30"
+      ],
+      "rook_coordinate_map": {
+        "c0": [
+          0,
+          0
+        ],
+        "c1": [
+          0,
+          1
+        ],
+        "c2": [
+          1,
+          1
+        ],
+        "c3": [
+          1,
+          0
+        ],
+        "ninth": [
+          2,
+          2
+        ],
+        "t01": [
+          0,
+          2
+        ],
+        "t12": [
+          2,
+          1
+        ],
+        "t23": [
+          1,
+          2
+        ],
+        "t30": [
+          2,
+          0
+        ]
+      },
+      "tip_edges": [
+        [
+          "t01",
+          "t23"
+        ],
+        [
+          "t12",
+          "t30"
+        ]
+      ]
+    },
+    "nonedge_closure_dichotomy": "all 99 vertices, or the unique srg(9,4,1,2)=K3 square K3",
+    "parameter_census": [
+      {
+        "degree": 2,
+        "eigen_discriminant": 1,
+        "multiplicities": [
+          "0",
+          "2"
+        ],
+        "order": 3,
+        "parameter_feasible": true,
+        "reason": "integral eigenvalue multiplicities",
+        "role": "complete K3 case"
+      },
+      {
+        "degree": 4,
+        "eigen_discriminant": 9,
+        "multiplicities": [
+          "4",
+          "4"
+        ],
+        "order": 9,
+        "parameter_feasible": true,
+        "reason": "integral eigenvalue multiplicities",
+        "role": "proper nonedge closure"
+      },
+      {
+        "degree": 6,
+        "eigen_discriminant": 17,
+        "multiplicities": null,
+        "order": 19,
+        "parameter_feasible": false,
+        "reason": "irrational eigenvalues would have unequal conjugate multiplicities",
+        "role": "excluded"
+      },
+      {
+        "degree": 8,
+        "eigen_discriminant": 25,
+        "multiplicities": [
+          "88/5",
+          "72/5"
+        ],
+        "order": 33,
+        "parameter_feasible": false,
+        "reason": "nonintegral eigenvalue multiplicity",
+        "role": "excluded"
+      },
+      {
+        "degree": 10,
+        "eigen_discriminant": 33,
+        "multiplicities": null,
+        "order": 51,
+        "parameter_feasible": false,
+        "reason": "irrational eigenvalues would have unequal conjugate multiplicities",
+        "role": "excluded"
+      },
+      {
+        "degree": 12,
+        "eigen_discriminant": 41,
+        "multiplicities": null,
+        "order": 73,
+        "parameter_feasible": false,
+        "reason": "irrational eigenvalues would have unequal conjugate multiplicities",
+        "role": "excluded"
+      },
+      {
+        "degree": 14,
+        "eigen_discriminant": 49,
+        "multiplicities": [
+          "54",
+          "44"
+        ],
+        "order": 99,
+        "parameter_feasible": true,
+        "reason": "integral eigenvalue multiplicities",
+        "role": "ambient target"
+      }
+    ],
+    "proper_parameter_feasible_cases": [
+      {
+        "degree": 4,
+        "eigen_discriminant": 9,
+        "multiplicities": [
+          "4",
+          "4"
+        ],
+        "order": 9,
+        "parameter_feasible": true,
+        "reason": "integral eigenvalue multiplicities",
+        "role": "proper nonedge closure"
+      }
+    ]
+  },
+  "global_exact_relations": {
+    "N3_percolation_boundary": {
+      "consequence": "n3>0 implies m(G,2)=2",
+      "each_N3_has_two_central_nonedges": true,
+      "each_central_N3_nonedge_percolates": true,
+      "induced_N3_in_K3_square_K3": 0,
+      "reason": "a nonpercolating closure would be K3 square K3 and would contain the induced N3, but that graph has none"
+    },
+    "endpoint_specialization": {
+      "H": 0,
+      "P": 0,
+      "R": 0,
+      "S": 4158,
+      "every_nonedge_2_percolates": true,
+      "n3": 4158
+    },
+    "equality_condition": "R=3*P (equivalently S=n3) iff every induced triangular prism lies in an induced K3 square K3 closure",
+    "identities": [
+      "n3 + 3*P = 4158",
+      "R = 18*H",
+      "S = 4158 - R"
+    ],
+    "incidence_multiplicities": {
+      "K3_square_K3_containing_a_fixed_nonedge_at_most": 1,
+      "K3_square_K3_containing_a_fixed_prism_at_most": 1,
+      "central_nonedges_per_N3": 2,
+      "central_nonedges_per_triangular_prism": 6,
+      "nonedges_per_K3_square_K3": 18,
+      "triangular_prisms_per_K3_square_K3": 6
+    },
+    "percolation_number": {
+      "H_equals_0_iff": "every nonedge percolates",
+      "m_equals_2_iff": "H<231 (equivalently some nonedge percolates)",
+      "m_equals_3_iff": "H=231 (equivalently R=4158)",
+      "range": [
+        2,
+        3
+      ],
+      "three_set_argument": "if a nonedge closes to a 9-vertex rook graph, adding any outside vertex forces a strictly larger closure, which the closure census allows only at order 99"
+    },
+    "proved_inequalities": [
+      "H <= 231",
+      "6*H <= P",
+      "R <= 3*P = 4158 - n3",
+      "S >= n3"
+    ],
+    "variables": {
+      "H": "number of induced K3 square K3 closures",
+      "P": "number of induced triangular prisms",
+      "R": "number of nonpercolating nonedges",
+      "S": "number of percolating nonedges",
+      "n3": "number of induced N3 copies"
+    }
+  },
+  "limitations": [
+    "Discovery cannot verify itself.",
+    "The 35 endpoint profiles satisfy local pair deficits only; they are not completed graphs.",
+    "Formal D4 grouping is label bookkeeping, not a graph automorphism assumption.",
+    "The source closure lemma is cited; target arithmetic is independently rederived.",
+    "No endpoint contradiction, graph, stricter n3 upper bound, or novelty claim follows."
+  ],
+  "parameters": {
+    "edges": 693,
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "nonedges": 4158,
+    "v": 99
+  },
+  "resources": {
+    "free_memory_floor_passed": true,
+    "minimum_free_memory_percent": 15.0
+  },
+  "role": "proof_b",
+  "rook_graph_control": {
+    "edge_count": 18,
+    "induced_n3_count": 0,
+    "induced_triangular_prism_count": 6,
+    "nonedge_bootstrap_closure_size_histogram": {
+      "9": 18
+    },
+    "nonedge_count": 18,
+    "point_order": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "triangle_count": 6
+  },
+  "schema_version": 1,
+  "scope": "Conditional bootstrap-percolation closure space for a hypothetical prism-free srg(99,14,1,2)",
+  "source": {
+    "metadata_path": "attempts/wave56-percolation-closure/source-metadata.json",
+    "metadata_sha256": "17c72a4e9f97ef4ee8d754f3cbac2185accd8fada0b08693a6ae55fffbf90ef8",
+    "primary_result_used": "Ibrahim-LaFayette-McCall Lemma 4.9",
+    "theorem_4_19_rederived": true
+  },
+  "status": {
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "global_counting_contradiction": "NOT_FOUND",
+    "local_tip_and_profile_census": "DERIVED_PENDING_VERIFIER",
+    "novelty": "UNKNOWN",
+    "smaller_exact_csp": "23 masks and 35 labeled endpoint profiles; 11 formal D4 label-orbits",
+    "upper_bound_improved_below_4158": false
+  }
+}

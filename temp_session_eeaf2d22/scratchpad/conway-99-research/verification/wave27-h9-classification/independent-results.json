@@ -1,0 +1,177 @@
+{
+  "claim_label": "VERIFIED",
+  "defects": [
+    {
+      "effect": "The theorem remains valid; the bridge is elementary, already present in the frozen Wave 25 audit, and is made explicit here rather than silently repaired.",
+      "finding": "The discovery prose omits the parity bridge tr(C^2)=tr(C) mod 2 between excluding value two and claiming the next floor is four.",
+      "severity": "documentation"
+    }
+  ],
+  "frozen_discovery": {
+    "all_match": true,
+    "base_commit": "2ac11809fafee7ab752965ae49a96e922859b5ee",
+    "files": {
+      "agents/2026-07-23-wave27-h9-classification.md": {
+        "actual": "9b55de17a76cc087e5d83d94f94e8f48338e4d0382b1f18ef03614e0451100db",
+        "expected": "9b55de17a76cc087e5d83d94f94e8f48338e4d0382b1f18ef03614e0451100db",
+        "matches": true
+      },
+      "attempts/wave27-h9-classification/exact-results.json": {
+        "actual": "377b4edc9498ad71cb655f084970aed234ea809c8413643cb5e9cfd03b75fde2",
+        "expected": "377b4edc9498ad71cb655f084970aed234ea809c8413643cb5e9cfd03b75fde2",
+        "matches": true
+      },
+      "attempts/wave27-h9-classification/exact_check.py": {
+        "actual": "49e9d60fe536c98d10e2b7f837aaa40574fc3a517436faa9bca017a7d4a7996d",
+        "expected": "49e9d60fe536c98d10e2b7f837aaa40574fc3a517436faa9bca017a7d4a7996d",
+        "matches": true
+      },
+      "attempts/wave27-h9-classification/failed-routes.md": {
+        "actual": "fa0f06964999c9fb08117e19ad5001004d23564b383532282763a9732fb9c59b",
+        "expected": "fa0f06964999c9fb08117e19ad5001004d23564b383532282763a9732fb9c59b",
+        "matches": true
+      },
+      "attempts/wave27-h9-classification/input-freeze.sha256": {
+        "actual": "ccad8eb65c61f7e66e15cdd26d9766984d1ccff0d04834943446cefaf78a1284",
+        "expected": "ccad8eb65c61f7e66e15cdd26d9766984d1ccff0d04834943446cefaf78a1284",
+        "matches": true
+      },
+      "attempts/wave27-h9-classification/run-report.yaml": {
+        "actual": "8ccacc1f321abc04b1f0768360a210b599edbb138a1bd6c2174308507bbc3549",
+        "expected": "8ccacc1f321abc04b1f0768360a210b599edbb138a1bd6c2174308507bbc3549",
+        "matches": true
+      },
+      "attempts/wave27-h9-classification/test_exact_check.py": {
+        "actual": "cb152bf466bf1f82e8f7f9e8c2cf83f91736bceb64afd460fb6355045f13bb2a",
+        "expected": "cb152bf466bf1f82e8f7f9e8c2cf83f91736bceb64afd460fb6355045f13bb2a",
+        "matches": true
+      }
+    }
+  },
+  "local_equality": {
+    "B_Q_self_adjoint": true,
+    "B_equals_display": true,
+    "B_identity_mod_two": true,
+    "B_spectral_polynomial": true,
+    "P_H_self_adjoint": true,
+    "P_idempotent": true,
+    "P_rank": 1,
+    "Q_equals_display": true,
+    "Q_symmetric_even_integral_PD": true,
+    "det_B": 9,
+    "det_E6": 3,
+    "det_Q": 3,
+    "inverse_check": true,
+    "trace_B": 14,
+    "trace_C": 4,
+    "trace_C_squared": 16,
+    "v_H_v": "4/3"
+  },
+  "proof_branches": {
+    "KKT_determinant_bound_at_T_10": {
+      "active_square_sum_boundary": 30,
+      "contradicts_det_B_floor": true,
+      "det_B_upper": 5,
+      "k1_product": "5",
+      "k2_below_5": true,
+      "k2_product": "(4625-1000*sqrt(10))/729",
+      "k3_below_5": true,
+      "k3_product": "125/729",
+      "k4_or_k5_positive_candidate": false,
+      "stationarity_has_at_most_two_positive_values": true
+    },
+    "T_at_most_8_AM_GM_contradiction": true,
+    "conclusion": {
+      "all_excluded": true,
+      "equality_witness_trace": 14,
+      "lower_bound": 14,
+      "minimum": 14,
+      "trace_values_before_14": [
+        2,
+        6,
+        10
+      ]
+    },
+    "det_B_floor": 9,
+    "det_B_mod_4": 1,
+    "positive_eigenvalue_basis": "B=E6*Q is similar to E6^(1/2)*Q*E6^(1/2), hence has six positive real eigenvalues; C=(B-I)/2 is diagonalizable and Q-self-adjoint",
+    "rank_four_kernel_obstruction": {
+      "Q_self_adjoint_forces_orthogonal_eigenspaces": true,
+      "S0_and_Q0_even_integral_positive_definite": true,
+      "even_unimodular_positive_rank_4_forbidden": true,
+      "integral_idempotent_split_is_unimodular": true,
+      "kernel_blocks_obey_S0_Q0_equals_I4": true
+    },
+    "rank_six_even_odd_det_residue_Q_mod_4": 3,
+    "required_trace_square_parity_bridge": {
+      "after_excluding_two_floor_is_four": true,
+      "bridge_valid": true,
+      "identity": "tr(C^2) == tr(C) (mod 2) for integral C",
+      "omitted_from_discovery_prose": true,
+      "trace_C_mod_2": 0
+    },
+    "trace_B_mod_4": 2,
+    "trace_B_squared_floor": 30,
+    "trace_C_square_equals_two": {
+      "all_strictly_below_one": true,
+      "rank_at_least_two_by_Cauchy": true,
+      "rank_three_to_six_pseudodet_bounds": {
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true
+      },
+      "therefore_integral_idempotent": true,
+      "therefore_rank_two_spectrum": [
+        "1",
+        "1"
+      ]
+    },
+    "trace_C_square_floor_two": {
+      "all_strictly_below_one": true,
+      "trace_one_pseudodet_bounds": {
+        "4": true,
+        "5": true,
+        "6": true
+      }
+    }
+  },
+  "rank_44_crosscheck": {
+    "B_identity_mod_two": true,
+    "G_B_equals_21Q": true,
+    "S_G_equals_21I": true,
+    "S_H_identity": true,
+    "S_Q_G_even_integral_PD_by_blocks": true,
+    "S_Q_equals_B": true,
+    "determinants_from_blocks": {
+      "B": 81,
+      "Q": 9,
+      "S": 9
+    },
+    "digests_match_discovery": true,
+    "matrix_digests": {
+      "B": "68311038efd37b47832378622c33526b3b139b59695ca4bcd6c914036b6182d9",
+      "C": "992cb93272b7877063a642d06e88d45ffbb662310420ae1ae04218c0e495d21e",
+      "G": "7a86734adc81c6723e23b212fc5bcae28708cdce2eb350c193f41dab1895907e",
+      "H": "f9ce99f056dd044fa31fbf6858d5d1c09de22f44ae90b027fe2f0fbfed9d013d",
+      "Q": "7ce8e5b2b72eb3d336ac1e6db265aabcac2990d7136a36930f1fa0fe181ccd28",
+      "S": "3b718f9133b61165fe22bcf211e32d417ec403b3eece827976fd4d6f2df7567e"
+    },
+    "rank": 44,
+    "rank_C": 2,
+    "rank_mod_3_S": 42,
+    "scope": "limited arithmetic cross-check; the separate construction verifier owns the full matrix/root certificate",
+    "trace_B": 60,
+    "trace_C": 8,
+    "trace_C_squared": 32
+  },
+  "role": "verifier",
+  "scope": "unrestricted local E6 trace floor and equality witness; limited rank-44 arithmetic cross-check only",
+  "scope_wall": {
+    "Conway_99_status": "UNKNOWN",
+    "all_h9_forms_classified": false,
+    "n3_708_excluded": false,
+    "novelty": "UNKNOWN",
+    "projector_or_Schur_origin_constructed": false
+  }
+}

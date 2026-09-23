@@ -1,0 +1,265 @@
+{
+  "claim_label": "DERIVED",
+  "controls_and_boundaries": {
+    "four_prism_parity_cancellation": {
+      "edges": 24,
+      "induced_prisms": 4,
+      "interlaces_target_interval_minus4_to14": true,
+      "interpretation": "four prisms can cancel every rooted parity using a motif that passes all induced lambda/mu upper-cap and interlacing controls; extendibility to 99 vertices remains unknown",
+      "maximum_internal_common_neighbors_adjacent": 1,
+      "maximum_internal_common_neighbors_nonadjacent": 2,
+      "motif": "Cartesian product C4 box K3",
+      "prisms_through_each_motif_vertex": [
+        2
+      ],
+      "rooted_parity_vector_on_motif": "zero",
+      "spectrum_with_multiplicities": {
+        "-1": 4,
+        "-3": 2,
+        "0": 1,
+        "1": 2,
+        "2": 2,
+        "4": 1
+      },
+      "vertices": 12
+    },
+    "ordinary_adjacency_polynomials": {
+      "adjacency_algebra": "span_Q{I,A,J}",
+      "consequence": "a nonconstant rooted prism vector cannot be recovered as diag(p(A)); ordinary adjacency-polynomial identities see only walk-regular scalar data",
+      "needed_extension": "Hadamard products or explicit triangle/prism incidence tensors",
+      "ordinary_polynomial_diagonal": "constant on all 99 vertices",
+      "single_prism_binary_identity": "(I+A)*chi_S is the indicator of the 60 outside vertices having exactly one neighbor in the prism",
+      "single_prism_external_neighbor_profile": {
+        "one_neighbor": 60,
+        "two_neighbors": 3,
+        "zero_neighbors": 30
+      }
+    }
+  },
+  "format": "wave102-prism-incidence-code-v1",
+  "limitations": [
+    "Discovery cannot certify itself.",
+    "The code theorem constrains f mod 2 but does not force it nonzero in general.",
+    "The 12-vertex cancellation motif is not a full target graph.",
+    "No strict n3 upper bound or graph nonexistence result follows.",
+    "Literature novelty remains UNKNOWN."
+  ],
+  "next_route": "Test whether the locally compatible C4 box K3 parity-cancellation motif or the 3-by-3 rook regular set can extend through the full 99-vertex lambda/mu closure. Incidence-code arguments need the actual binary rank/kernel of B or extra restrictions on the triangle-prism graph beyond its cycle space.",
+  "role": "proof_b",
+  "scope": "hypothetical srg(99,14,1,2)",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "P_equals_1_N14_upper": 4950,
+    "all_even_f_excluded_for_P_at_least_4": "NOT_PROVED",
+    "full_graph_constructed": false,
+    "general_strict_n3_upper_bound": "NOT_PROVED",
+    "novelty": "UNKNOWN"
+  },
+  "theorems": {
+    "binary_incidence_code": {
+      "binary_adjacency_identity": "A^2=A",
+      "binary_characteristic_polynomial": "x^45*(x+1)^54",
+      "boundary": "C0 has at least 44 binary dimensions; these universal code relations alone do not force f mod 2 to be nonzero",
+      "cycle_space_boundary": "D*1 is the odd-degree boundary of the selected edge set in the graph whose vertices are triangles and whose edges are prisms",
+      "dimension_C0_range": [
+        44,
+        98
+      ],
+      "dual_characterization": "C0^perp={x : B^T*x is constant on all 231 triangles}",
+      "dual_locality_boundary": "apart from zero, every universal parity check on f uses at least 36 vertices; the all-ones total-parity check has weight 99",
+      "dual_minimum_distance_lower_bound": 36,
+      "even_triangle_code": "C0={Bz : z in F2^231 and wt(z) even}",
+      "integer_adjacency_identity": "A^2=12I-A+2J",
+      "parity_vector": "f mod 2 = H*1 = B*(D*1) lies in C0",
+      "prism_factorization": "H=B*D, where D is the triangle-versus-prism edge-incidence matrix and H is vertex-versus-prism incidence",
+      "rank_F2_A": 54,
+      "rank_F2_B_range": [
+        45,
+        99
+      ],
+      "rank_F2_I_plus_A": 45,
+      "triangle_count": 231,
+      "triangle_even_check_support": {
+        "condition": "B^T*x=0",
+        "induced_degree_on_support": 7,
+        "nonzero_weight_range": [
+          36,
+          60
+        ],
+        "proof": "restricted eigenvalue bounds applied to chi_S^T*A*chi_S=7*|S|, plus even |S|"
+      },
+      "triangle_incidence_identity": "B*B^T=I+A over F2",
+      "universal_congruences": [
+        "wt(f mod 2) is even",
+        "x dot f = 0 mod 2 whenever every graph triangle has the same x-sum"
+      ]
+    },
+    "distinct_prism_overlap": {
+      "five_vertex_deletion_profiles": [
+        {
+          "degree_multiset": [
+            2,
+            2,
+            2,
+            3,
+            3
+          ],
+          "deleted": 0,
+          "repair_neighbors": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "degree_multiset": [
+            2,
+            2,
+            2,
+            3,
+            3
+          ],
+          "deleted": 1,
+          "repair_neighbors": [
+            0,
+            2,
+            4
+          ]
+        },
+        {
+          "degree_multiset": [
+            2,
+            2,
+            2,
+            3,
+            3
+          ],
+          "deleted": 2,
+          "repair_neighbors": [
+            0,
+            1,
+            5
+          ]
+        },
+        {
+          "degree_multiset": [
+            2,
+            2,
+            2,
+            3,
+            3
+          ],
+          "deleted": 3,
+          "repair_neighbors": [
+            0,
+            4,
+            5
+          ]
+        },
+        {
+          "degree_multiset": [
+            2,
+            2,
+            2,
+            3,
+            3
+          ],
+          "deleted": 4,
+          "repair_neighbors": [
+            1,
+            3,
+            5
+          ]
+        },
+        {
+          "degree_multiset": [
+            2,
+            2,
+            2,
+            3,
+            3
+          ],
+          "deleted": 5,
+          "repair_neighbors": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "maximum_intersection_of_distinct_prism_supports": 4,
+      "overlap_five_cap_compatible_gluings": 0,
+      "overlap_four_cap_compatible_gluings": 36,
+      "proof": "five shared vertices force the two missing vertices to have the same three neighbors, contradicting lambda=1 if adjacent and mu=2 if nonadjacent"
+    },
+    "three_prism_parity_branch": {
+      "all_unions_isomorphic_to_rook_3_by_3": true,
+      "consequence_for_total_P_3": "f mod 2 cannot vanish when the whole graph has exactly three prisms, because the parity-cancelling union already contains six",
+      "equitable_quotient": [
+        [
+          4,
+          10
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "forced_outside_neighbors_per_vertex": 1,
+      "induced_prisms_forced_inside_union": [
+        6
+      ],
+      "interpretation": "the rook motif is locally and spectrally parameter-compatible; it is not a full 99-vertex graph construction",
+      "labelled_cap_compatible_unions": 36,
+      "quotient_eigenvalues": [
+        14,
+        3
+      ],
+      "rook_boundary_edges": 90,
+      "three_even_support_set_partition": "three six-sets with zero symmetric difference partition their nine vertices into three size-three pairwise-intersection blocks",
+      "vertices_outside_rook": 90
+    },
+    "vector_refined_N14_bound": {
+      "antipodal_form": "N14<=2*floor((55440-5*n3-O/2)/14)",
+      "exact_floor_sum_identity": "sum_v floor(5*f_v/2)=15P-O/2",
+      "limitations": "The P=2 overlap theorem sharpens the seven-N14 numerator but not its final even bound. For P>=4, local parity cancellation is parameter-compatible.",
+      "low_prism_rows": {
+        "P=0": {
+          "N14_even_upper": 4950,
+          "O": 0,
+          "P": 0,
+          "n3": 4158,
+          "seven_N14_refined_numerator": 34650,
+          "seven_N14_scalar_numerator": 34650
+        },
+        "P=1_exact_O=6": {
+          "N14_even_upper": 4950,
+          "O": 6,
+          "P": 1,
+          "n3": 4155,
+          "seven_N14_refined_numerator": 34662,
+          "seven_N14_scalar_numerator": 34665
+        },
+        "P=2_O_at_least_4": {
+          "N14_even_upper": 4954,
+          "O": 4,
+          "P": 2,
+          "n3": 4152,
+          "seven_N14_refined_numerator": 34678,
+          "seven_N14_scalar_numerator": 34680
+        },
+        "P=3_O_nonzero_but_only_2_used": {
+          "N14_even_upper": 4956,
+          "O": 2,
+          "P": 3,
+          "n3": 4149,
+          "seven_N14_refined_numerator": 34694,
+          "seven_N14_scalar_numerator": 34695
+        }
+      },
+      "odd_root_definition": "O=#{v : f_v is odd}=wt(f mod 2)",
+      "refined_incidence_inequality": "7*N14<=34650+15P-O/2=55440-5*n3-O/2",
+      "strict_improvement": "If P=1 (n3=4155), N14<=4950 instead of the Wave100 scalar bound 4952."
+    }
+  }
+}

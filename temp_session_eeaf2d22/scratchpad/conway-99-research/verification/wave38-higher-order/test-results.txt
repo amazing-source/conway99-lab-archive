@@ -1,0 +1,28 @@
+Wave 38 higher-order independent verifier
+date_utc: 2026-07-27T01:43:06Z
+git_commit: 3014f3b1c010cdde1687b8878d4ec58d2bb90f03
+
+Command:
+.\.venv\Scripts\python.exe -B -m unittest -v verification\wave38-higher-order\test_independent_check.py
+
+Result:
+Ran 11 tests in 2.422s
+OK
+
+Covered hostile cases:
+- balanced/unbalanced sign convention on an explicit signed C4
+- omitted inclusion-exclusion overlap in non-simple four-walk subtraction
+- centered versus uncentered seven-row Gram rank
+- deleted quotient edge invalidating the local rank lemma hypotheses
+- local principal-submatrix rank versus global rank
+- individual-column census versus simultaneous design
+- endpoint, bound, and novelty status inflation
+
+Exact regeneration:
+.\.venv\Scripts\python.exe -B verification\wave38-higher-order\independent_check.py --output verification\wave38-higher-order\independent-results.json --compare-submission attempts\wave38-higher-order\exact-results.json
+
+Exact drift check:
+.\.venv\Scripts\python.exe -B verification\wave38-higher-order\independent_check.py --verify verification\wave38-higher-order\independent-results.json --compare-submission attempts\wave38-higher-order\exact-results.json
+
+Result:
+PASS (exit code 0 for both commands)

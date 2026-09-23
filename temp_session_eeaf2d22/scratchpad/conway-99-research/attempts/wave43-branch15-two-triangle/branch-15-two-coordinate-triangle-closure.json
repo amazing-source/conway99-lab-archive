@@ -1,0 +1,63 @@
+{
+  "argument": "The SHA-bound Wave 42 assignment is already a fixed point for the base OPB plus seventh-triangle delta. Every new active row has slack three at exactly that assignment. Therefore no old or new row is contradictory or forcing, so the same assignment is the exact generalized-unit fixed point of the union.",
+  "audit": {
+    "active_slack_histogram": {
+      "3": 34340
+    },
+    "active_state_histogram": {
+      "ACTIVE": 34340
+    },
+    "distinct_active_rows": 34340,
+    "raw_active_residual_width_histogram": {
+      "4": 34340
+    },
+    "raw_state_histogram": {
+      "ACTIVE": 34340,
+      "SATISFIED": 6460
+    }
+  },
+  "claim_label": "DERIVED",
+  "format": "wave43-branch15-two-coordinate-triangle-closure-v1",
+  "git_commit": "e28f90464d00b98d37672b0b2b23dba15399a6f2",
+  "limitations": [
+    "The Wave 42 closure is an input and must be replayed independently.",
+    "A noncontradictory propagation fixed point is not a SAT witness.",
+    "No UNSAT proof, branch exclusion, or endpoint exclusion is claimed."
+  ],
+  "result": {
+    "assignments_exactly_wave42_closure": true,
+    "branch15": "UNKNOWN",
+    "contradiction": null,
+    "endpoint_cases_closed": 0,
+    "forced_primary_variables": 174,
+    "new_forced_variables": 0,
+    "status": "DERIVED_PROPAGATION_FIXED_POINT",
+    "total_forced_variables": 830
+  },
+  "role": "proof_b",
+  "rule": "For a unit-weight inequality sum(literals)>=b, contradiction occurs when true plus unassigned is below b; all unassigned literals are forced true exactly when true plus unassigned equals b.",
+  "scope": "exact generalized-unit fixed-point extension for branch 15 after adding the two-unfixed-coordinate-triangle prism cuts",
+  "sources": {
+    "active_delta": {
+      "constraints": 34340,
+      "gzip_sha256": "858f2a5c66d251497e4c13fb4d633c18fe65afe657937b84444cde55b1a4a631",
+      "path": "attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-active-delta.opb.gz",
+      "raw_sha256": "0ed3c553d6323632b0466157f0eb7e18cb7597a16ce8eca6654d086c70314476"
+    },
+    "cut_result": {
+      "path": "attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-result.json",
+      "sha256": "1ab1cc6ad5a3727fec508b8b3f2eb9b52d4034f6aa6768b25feef8f219c45ec8"
+    },
+    "raw_delta": {
+      "constraints": 40800,
+      "gzip_sha256": "82a13e78e514cf35f27190da665bdedaf4fed28c7a6fa2856e22badf63f32797",
+      "path": "attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-delta.opb.gz",
+      "raw_sha256": "23fc3b22b4b235cc631bfd0b53ed2806394273aa1b4c691c883ebe343788d3f1"
+    },
+    "wave42_closure": {
+      "forced_variables": 830,
+      "path": "attempts/wave42-endpoint-certificate/branch-15-combined-propagation-certificate.json",
+      "sha256": "ab05feb596c25d0fbb872a0d92978355638218350bdf7606c248ca98ae2469ce"
+    }
+  }
+}

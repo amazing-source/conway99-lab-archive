@@ -1,0 +1,358 @@
+{
+  "arithmetic": "exact integers and fractions only",
+  "checker": "independent_check.py",
+  "hostile_mutations": {
+    "Delta_3": {
+      "required_trace_floor": 924,
+      "status": "DETECTED",
+      "trace": 252
+    },
+    "Delta_6": {
+      "required_trace_floor": 924,
+      "status": "DETECTED",
+      "trace": 504
+    },
+    "Delta_9": {
+      "required_trace_floor": 924,
+      "status": "DETECTED",
+      "trace": 756
+    },
+    "intersecting_entry_mutated_to_one": {
+      "mutated_cubic_sum": 6,
+      "mutated_row_sum": 18,
+      "status": "DETECTED"
+    },
+    "missing_intersecting_zero_type": {
+      "reason": "M entry classification is incomplete or has extra types",
+      "status": "DETECTED"
+    },
+    "nonzero_D_diagonal_mod2": {
+      "reason": "matrix is not alternating modulo two",
+      "status": "DETECTED",
+      "witness_quadratic_value_mod2": 1,
+      "witness_vector": [
+        1,
+        0
+      ]
+    },
+    "ordered_pair_total_72_without_halving": {
+      "correct_total": 36,
+      "status": "DETECTED"
+    },
+    "wrong_projector_scaling_20": {
+      "reason": "proof requires M=21E0, received scale 20",
+      "status": "DETECTED"
+    }
+  },
+  "imports_submitted_candidate_code": false,
+  "obligations": {
+    "C_combinatorial_and_spectral_entries": {
+      "details": {
+        "diagonal_entry": 0,
+        "disjoint_entries": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "intersecting_entry": 0,
+        "spectrum": {
+          "-18": 44,
+          "-4": 54,
+          "216": 1,
+          "6": 132
+        }
+      },
+      "status": "PASS"
+    },
+    "PSD_diagonal_budget_and_final_translation": {
+      "details": {
+        "first_arithmetically_permitted_delta": 12,
+        "induced_C6_lower_bound": 209991,
+        "minimum_diagonal": 4,
+        "n3_lower_bound": 705,
+        "novelty": "UNKNOWN_OUT_OF_SCOPE",
+        "positive_diagonal_count": 231,
+        "rejected_deltas": [
+          0,
+          3,
+          6,
+          9
+        ],
+        "target_status": "UNKNOWN",
+        "trace_floor": 924
+      },
+      "status": "PASS"
+    },
+    "Schur_trace_and_nonzero_mod2_rows": {
+      "details": {
+        "psd_first_bound": 693,
+        "rows": [
+          {
+            "cubic_sum": -12,
+            "odd_support": 20,
+            "q": 0,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": -6,
+            "odd_support": 24,
+            "q": 1,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 0,
+            "odd_support": 28,
+            "q": 2,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 6,
+            "odd_support": 32,
+            "q": 3,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 12,
+            "odd_support": 36,
+            "q": 4,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 18,
+            "odd_support": 40,
+            "q": 5,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 24,
+            "odd_support": 44,
+            "q": 6,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 30,
+            "odd_support": 48,
+            "q": 7,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 36,
+            "odd_support": 52,
+            "q": 8,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 42,
+            "odd_support": 56,
+            "q": 9,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 48,
+            "odd_support": 60,
+            "q": 10,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 54,
+            "odd_support": 64,
+            "q": 11,
+            "row_sum": 0
+          },
+          {
+            "cubic_sum": 60,
+            "odd_support": 68,
+            "q": 12,
+            "row_sum": 0
+          }
+        ],
+        "trace_formula": "84*(n3-693)"
+      },
+      "status": "PASS"
+    },
+    "exact_projector_and_M": {
+      "details": {
+        "E0_polynomial_numerator_low_to_high": [
+          378,
+          51,
+          -22,
+          1
+        ],
+        "E0_values": {
+          "-3": "0",
+          "0": "1",
+          "18": "0",
+          "7": "0"
+        },
+        "M_entries": {
+          "diagonal": 4,
+          "disjoint_r0": 1,
+          "disjoint_r1": 0,
+          "disjoint_r2": -1,
+          "disjoint_r3": -2,
+          "intersecting": 0
+        },
+        "M_formula": "21I+4Gamma-Gamma^2+J=3I-Gamma-C+J",
+        "M_squared_factor": 21
+      },
+      "status": "PASS"
+    },
+    "fixed_triangle_profiles_and_q_relation": {
+      "details": {
+        "ordered_instances": 72,
+        "profiles": [
+          {
+            "a": [
+              20,
+              180,
+              0,
+              12
+            ],
+            "q": 0
+          },
+          {
+            "a": [
+              21,
+              177,
+              3,
+              11
+            ],
+            "q": 1
+          },
+          {
+            "a": [
+              22,
+              174,
+              6,
+              10
+            ],
+            "q": 2
+          },
+          {
+            "a": [
+              23,
+              171,
+              9,
+              9
+            ],
+            "q": 3
+          },
+          {
+            "a": [
+              24,
+              168,
+              12,
+              8
+            ],
+            "q": 4
+          },
+          {
+            "a": [
+              25,
+              165,
+              15,
+              7
+            ],
+            "q": 5
+          },
+          {
+            "a": [
+              26,
+              162,
+              18,
+              6
+            ],
+            "q": 6
+          },
+          {
+            "a": [
+              27,
+              159,
+              21,
+              5
+            ],
+            "q": 7
+          },
+          {
+            "a": [
+              28,
+              156,
+              24,
+              4
+            ],
+            "q": 8
+          },
+          {
+            "a": [
+              29,
+              153,
+              27,
+              3
+            ],
+            "q": 9
+          },
+          {
+            "a": [
+              30,
+              150,
+              30,
+              2
+            ],
+            "q": 10
+          },
+          {
+            "a": [
+              31,
+              147,
+              33,
+              1
+            ],
+            "q": 11
+          },
+          {
+            "a": [
+              32,
+              144,
+              36,
+              0
+            ],
+            "q": 12
+          }
+        ],
+        "relation": "2*n3=3*sum_q",
+        "unordered_cross_edge_pairs": 36
+      },
+      "status": "PASS"
+    },
+    "mod2_mod4_alternating_form": {
+      "details": {
+        "A_diagonal_mod4": 0,
+        "A_mod2": "M",
+        "D_diagonal": 6,
+        "D_mod2": "symmetric_zero_diagonal",
+        "M_cubed_factor": 441
+      },
+      "status": "PASS"
+    },
+    "triangle_incidence_spectrum": {
+      "details": {
+        "spectrum": {
+          "-3": 132,
+          "0": 44,
+          "18": 1,
+          "7": 54
+        }
+      },
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "conditional_induced_C6_lower_bound": 209991,
+    "conditional_n3_lower_bound": 705,
+    "conway_99": "UNKNOWN",
+    "hostile_mutations": "PASS",
+    "novelty": "UNKNOWN_OUT_OF_SCOPE",
+    "obligations": "PASS"
+  }
+}

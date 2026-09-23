@@ -1,0 +1,116 @@
+{
+  "bound": {
+    "C": 4158,
+    "H": 3564,
+    "circuit_scalar_words": 15444,
+    "edge_added_projective": 7722,
+    "projective_nonedge_Q": 7029
+  },
+  "certificate": {
+    "all_remainder_coefficients_nonnegative": true,
+    "identity_target": "(11*C-H)/6",
+    "remainder_coefficients": {
+      "W": "1/3",
+      "a1": "1/6",
+      "b3": "1/2",
+      "c2": "1/6"
+    },
+    "slack_weights": {
+      "RA": "2/3",
+      "S2": "4/3",
+      "S36": "1/6",
+      "SE2": "1/6",
+      "SI": "2/3",
+      "SL": "1/3"
+    }
+  },
+  "claim": {
+    "bound": "Q>=7029",
+    "global": "J<=3564",
+    "local": "j_x<=36",
+    "new_slack": "3564-C+n1+2*n2-a3-b3>=0"
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "integer_null_control": {
+    "evaluation": {
+      "I": "8316",
+      "Q0": "7029",
+      "RA": "0",
+      "S2": "0",
+      "S36": "0",
+      "SE2": "0",
+      "SI": "0",
+      "SL": "0"
+    },
+    "is_object": false,
+    "row": {
+      "C": "4158",
+      "H": "3564",
+      "b1": "594",
+      "c1": "3564",
+      "n2": "297",
+      "n3": "1287",
+      "p2": "297",
+      "p3": "3564",
+      "r1": "4158"
+    },
+    "target": "7029"
+  },
+  "local_geometry": {
+    "common_star_flag_cap": 12,
+    "fiber_size": 4,
+    "global_flag_cap": 1287,
+    "global_oriented_label_cap_H": 3564,
+    "hilton_milner_equality_templates": {
+      "H": {
+        "forced_fiber_repeats": 3,
+        "leaf_union_cap": 36,
+        "members": 13,
+        "number_pair_degree_five": 3,
+        "pair_degree_five": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "total_pair_incidences": 39
+      },
+      "K": {
+        "forced_fiber_repeats": 3,
+        "leaf_union_cap": 36,
+        "members": 13,
+        "number_pair_degree_five": 3,
+        "pair_degree_five": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "total_pair_incidences": 39
+      }
+    },
+    "new_slack": "S36=H-C+n1+2*n2-a3-b3>=0",
+    "partitioned_nonneighbors": 84,
+    "star_blocks": 7,
+    "two_block_types": 21,
+    "universal_local_flag_cap": 13,
+    "universal_local_oriented_label_cap": 36
+  },
+  "search_scope": "two fixed Hilton-Milner equality templates, exact incidence identities, and rational coefficient algebra only; no graph, code, cover, SAT, LP, configuration, enumeration, or isomorphism search"
+}

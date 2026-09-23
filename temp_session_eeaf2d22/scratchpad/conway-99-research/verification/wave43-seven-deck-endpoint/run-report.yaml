@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-27T16:24:23Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: VERIFIED
+scope: >-
+  Exact feasibility of the specified unrooted order-seven deletion/count
+  relaxation at n3=4158 and h11=16632; excludes graph realization and endpoint
+  evidence.
+inputs:
+  - path: attempts/wave43-seven-deck-endpoint/exact-results.json
+    sha256: 06b498a736a511a7d6f5912bd4686e5d4eb30f4041477e3ee9cbc1704f1757c8
+  - path: verification/wave43-seven-deck-endpoint/protocol-freeze.md
+    sha256: cec9636027fe700b94a820143f0bf598ac3c0111b1f5d8609c7a909102840305
+  - path: verification/wave43-seven-deck-endpoint/input-freeze.sha256
+    sha256: 75309ac708bdaea99c6afba2d7720908196ba8ea1cd7f596c57203e80c20b0b8
+method: >-
+  Clean-room full labelled-universe orbit enumeration for orders six and seven,
+  direct common-neighbor admissibility, independently reconstructed deletion
+  matrix, exact Fraction evaluation of 62 six-count and 19 Hamiltonian formulas,
+  and exact validation of the frozen public sparse witness. Independent output
+  was hashed before a separate mechanical comparison.
+command: >-
+  python verification/wave43-seven-deck-endpoint/independent_check.py &&
+  python verification/wave43-seven-deck-endpoint/compare_frozen.py &&
+  python -m unittest
+  verification/wave43-seven-deck-endpoint/test_independent_check.py -v
+outputs:
+  - path: verification/wave43-seven-deck-endpoint/independent_check.py
+    sha256: 324a4b84c081c8d2ad8a6a11bae45e0327c03ee2158036156c27efa66fcf790b
+  - path: verification/wave43-seven-deck-endpoint/independent-result.json
+    sha256: e38f369d338fada4a561d48019f306511961dd1fd7816e54a12a9ecb09e69f3b
+  - path: verification/wave43-seven-deck-endpoint/comparison.json
+    sha256: fde3a83d28a53b1fdbe56a010605d7aa1a7bee34811d8186e286ac7432ca2c64
+limitations:
+  - The recorded git hash is the worktree base; these verifier artifacts were uncommitted when the report was generated.
+  - Aggregate counts do not enforce overlap consistency among seven-subsets.
+  - No rooted extension consistency or 99-vertex edge assignment is supplied.
+  - Feasibility is not evidence that n3=4158 or a Conway-99 graph exists.

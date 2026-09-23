@@ -1,0 +1,86 @@
+{
+  "claim_label": "DERIVED",
+  "forced_graph_invariants": {
+    "degree_counts": {
+      "12": 36,
+      "13": 48,
+      "14": 3
+    },
+    "edges": 549,
+    "four_cycles": 1356,
+    "nullity_Q_D": 4,
+    "rank_Q_D_minus_3I": 45,
+    "rank_Q_D_plus_4I": 55,
+    "traces": {
+      "1": 0,
+      "2": 1098,
+      "3": 1002,
+      "4": 37518
+    },
+    "triangles": 167
+  },
+  "format": "wave107-c4boxk3-spectrum-v1",
+  "motif": {
+    "degree": 4,
+    "order": 12,
+    "spectrum": {
+      "-1": 4,
+      "-3": 2,
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "4": 1
+    }
+  },
+  "outside_characteristic_polynomial": {
+    "factorization": "(x-3)^42 (x+4)^32 (x^2-9x-46) (x+3)^2 (x+2)^2 (x+1) x^4 (x-2)^2",
+    "forced_trace_D2": 1098,
+    "quadratic_roots": [
+      "(9+sqrt(265))/2",
+      "(9-sqrt(265))/2"
+    ],
+    "wrong_factor_trace_D2": 1082,
+    "wrong_minus_38_factor_refuted": true
+  },
+  "resolvent": {
+    "global_spectrum": {
+      "-4": 44,
+      "14": 1,
+      "3": 54
+    },
+    "jacobi_identity_checked_exactly": true,
+    "principal_block": "((x+1)I+H+2J/(x-14))/((x-3)(x+4))",
+    "q": "(x-3)(x+4)"
+  },
+  "scope": "Conditional on an srg(99,14,1,2) containing the induced C4 Cartesian K3 motif frozen by Wave 105.",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "full_extension": "UNKNOWN",
+    "literature_novelty": "UNKNOWN",
+    "motif_excluded": false,
+    "spectral_obstruction_found": false
+  },
+  "two_main_eigenvalue_structure": {
+    "D_one": "14*one-s",
+    "D_s": "24*one-5*s",
+    "basis_characteristic_polynomial": "x^2-9x-46",
+    "basis_matrix_columns": [
+      [
+        14,
+        24
+      ],
+      [
+        -1,
+        -5
+      ]
+    ],
+    "motif_degree_vector_counts": {
+      "0": 3,
+      "1": 48,
+      "2": 36
+    },
+    "outside_graph_connected": true,
+    "perron_vector": "(rho+5)*one-s",
+    "perron_vector_strictly_positive": true
+  }
+}

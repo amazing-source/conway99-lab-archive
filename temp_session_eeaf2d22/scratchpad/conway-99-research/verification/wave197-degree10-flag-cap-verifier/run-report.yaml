@@ -1,0 +1,55 @@
+role: verifier
+date_utc: 2026-07-29T04:27:21Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: independently verify at most
+  five selected exact-three flags per oriented nonedge, degree at most ten
+  per undirected label, minimal-cover companion exclusion, p3 private
+  degree one, S10/SH/SF, and the exact certificate and rounding Q>=7033.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave180-capacity3-companion/package-manifest.sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  verification/wave194-five-thirds-verifier/package-manifest.sha256: 236facbec2539a87e197fd0b2b8ca66bc0d53b12415fdf216acf410064d7ca64
+  verification/wave195-hilton-milner-verifier/package-manifest.sha256: dec34784c4a5f2226b33052348d7303698c172fafccc188852f6ce6d7f50118b
+  verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256: eb833bf4ad503fb2243882704492f6bf836525f4b619de8a1979ffc6f0f785c9
+  attempts/wave197-degree10-flag-cap-proof-a/package-manifest.sha256: b15af083fa4f106d56ce918b253ead47edbc9040f65b4dc59d6cc3813d2a1509
+  attempts/wave197-ten-flag-capacity-proof-b-audit/package-manifest.sha256: 553c1b9699dc1865679d65a8a7d3f8011d7bb59990b0d7c21322a980ce310a05
+method: >-
+  Clean-room SRG local-triangle incidence, canonical flag uniqueness,
+  inclusion-minimal-cover companion exclusion, weighted hypergraph
+  degree counting with private vertices, Wave196 oriented-label and flag
+  caps, inherited old-pair capacity, exact Fraction coefficient expansion,
+  independent integer rounding control, sealed source comparison, and a
+  non-premise hostile proof-B cross-check.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave197-degree10-flag-cap-verifier\independent_check.py
+  --verify-math
+  verification\wave197-degree10-flag-cap-verifier\independent-math-result.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave197-degree10-flag-cap-verifier\independent_check.py
+  --verify
+  verification\wave197-degree10-flag-cap-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave197-degree10-flag-cap-verifier\test_independent_check.py
+outputs:
+  verification/wave197-degree10-flag-cap-verifier/audit.md: 0eeffb7551ba534510e9580cdc776fa7445b65fe02ac6d9b1bdaee7ade2789af
+  verification/wave197-degree10-flag-cap-verifier/independent_check.py: 606e0ae3e56b9e125b0d81bca1a0fc40058d3180a85a972bd1ab4c007b46d6e7
+  verification/wave197-degree10-flag-cap-verifier/independent-math-result.json: 99f66cdb8da57fb79910c14c28fafb2fbd2749f543387515887e0da48a161040
+  verification/wave197-degree10-flag-cap-verifier/independent-result-freeze.sha256: 260d8c74728bde7730f60a8719f88b0f8eb8d89e0b5c7ec10a3f66e18dca0351
+  verification/wave197-degree10-flag-cap-verifier/independent-results.json: b68c33ad1bb1bf0b379ea4ceafb3232f7735e78aad901ebb22d01eb325844371
+  verification/wave197-degree10-flag-cap-verifier/input-freeze.sha256: 9b818486be04dc535d4483e61c06aade019b84ea6963dfcf7c2748af2d19236c
+  verification/wave197-degree10-flag-cap-verifier/protocol.md: c8197db06901c1bbba0f978c468715a3d7436fe31db105d2927853c0966daefb
+  verification/wave197-degree10-flag-cap-verifier/README.md: 8835822ebb8f5643b478f3c4eebcb1ae7c275bf379b0a6a0f035f3634447ec58
+  verification/wave197-degree10-flag-cap-verifier/test_independent_check.py: 7f2eed5bc349c56aea0c0cb415dee18d07e3aa02ff64b90f9f0bb4a9084507db
+limitations:
+  - The theorem is conditional on the frozen prism-free rank-11 endpoint.
+  - The pre-source freeze split the source S10 into selected-degree and
+    Wave196 headroom slacks; exact recombination was checked.
+  - The source rational null and independent integer control are arithmetic
+    only and do not construct an object.
+  - No endpoint, cover, flag system, circuit system, code, or graph is
+    constructed, and no incompatible upper bound follows.
+  - Rank 11, endpoint existence, strict original n3 improvement, external
+    novelty, and Conway-99 remain UNKNOWN.

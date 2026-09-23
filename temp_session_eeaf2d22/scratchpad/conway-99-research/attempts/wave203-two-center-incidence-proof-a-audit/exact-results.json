@@ -1,0 +1,109 @@
+{
+  "boundary": {
+    "Q0_7059_excluded": false,
+    "b_forced_positive": false,
+    "conditional_Q_lower_bound": 7059
+  },
+  "consequences": {
+    "both_oriented": "epsilon>=5*b",
+    "low_patterns": {
+      "1,1": 8,
+      "1,2": 7,
+      "2,2": 6
+    },
+    "selected_rearranged": "3*n3+4*p3<=5*|U|",
+    "selected_row": "3*n3<=p3+5*(|U|-p3)"
+  },
+  "gram": {
+    "all_equal_image": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "all_equal_in_kernel": false,
+    "checkerboard_image": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "checkerboard_in_kernel": true,
+    "matrix": [
+      [
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "rank_mod3": 3
+  },
+  "paired_relations": {
+    "column_order": [
+      "T",
+      "S",
+      "X_a",
+      "X_b",
+      "Y_a",
+      "Y_b"
+    ],
+    "common_columns_pairwise_distinct": true,
+    "leaf_coefficients": [
+      1,
+      1
+    ],
+    "reverse": [
+      2,
+      1,
+      0,
+      0,
+      2,
+      2
+    ],
+    "source": [
+      1,
+      2,
+      2,
+      2,
+      0,
+      0
+    ],
+    "sum": [
+      0,
+      0,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "search_scope": "finite-field relation arithmetic and analytic incidence only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search",
+  "slots": {
+    "combined_full_capacity": 5,
+    "combined_selected_capacity": 5,
+    "count": 5,
+    "forward": "injective partial image in C_x(y)",
+    "matched_occupancy": "REFUTED",
+    "reverse": "leaf-block domain in C_x(y)"
+  },
+  "verdict": "ACCEPTED_AS_DERIVED"
+}

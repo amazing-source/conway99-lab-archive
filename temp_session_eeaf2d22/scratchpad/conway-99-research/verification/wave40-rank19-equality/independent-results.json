@@ -1,0 +1,218 @@
+{
+  "case_audit": {
+    "conclusion": "n3=4158 implies rank_F7(M)>=22",
+    "r7=19": "Only type 2+2+2 is possible; quotient dimension is zero, but all 144 required Z syndromes are nonzero.",
+    "r7=20": "Only type 2+2+2 is possible; quotient dimension is at most one, but a projective line contains at most four of the twelve distinct perfect-matching patterns.",
+    "r7=21_all_2+2+2": "The quotient dimension is at most two; every relevant generated two-space has bipartite matching number at most eight.",
+    "r7=21_type_2+4": "A type 2+4 block has rank 21, so quotient dimension is zero, but all 144 required Z syndromes are nonzero."
+  },
+  "claim_label": "VERIFIED",
+  "format": "wave40-rank19-equality-independent-v1",
+  "frozen_inputs": {
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "agents/2026-07-27-wave40-rank19-equality.md": "6ae7b91df5d42fd3831b30b02e66d772aa3e56bcff28098ad7aeab8c9e70dcda",
+    "attempts/wave40-rank19-equality/exact-results.json": "631b36c1a3a8693ea193c21ebc0f9fa57aee68bdf5f7c52b28aa469a475e4553",
+    "attempts/wave40-rank19-equality/run-report.yaml": "6782793adbff657cfa3e4aaa8bf3fa53e692144741e573268c67692a46a7471a",
+    "verification/wave39-edge-local-rank/independent-results.json": "85b8d36d6ce5ebd638e957e1731864eff75f38405935f5e51ad5b629edea5966",
+    "verification/wave39-edge-local-rank/run-report.yaml": "0c16b53a1015f2aa8cd5e96767a97736c1da5ced6691d8ad4085f6579b44cad1"
+  },
+  "local_blocks": {
+    "2+2+2": {
+      "cycle_component_lengths": [
+        8,
+        8,
+        8
+      ],
+      "nullity_F7": 8,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "projective_syndromes": {
+        "line_count": 66,
+        "line_pattern_multiplicity_distribution": {
+          "2": 60,
+          "4": 6
+        },
+        "maximum_patterns_on_one_line": 4,
+        "nonzero_scalar_multiples_per_line": 6
+      },
+      "rank_F7": 19,
+      "three_space_boundary": {
+        "canonical_first_witness": {
+          "basis": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              5,
+              4,
+              4
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              2,
+              2,
+              0,
+              2
+            ]
+          ],
+          "contained_pattern_count": 12,
+          "perfect_matching": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              2
+            ]
+          ]
+        },
+        "distinct_generated_three_spaces": 25744,
+        "duplicate_independent_triples_removed": 19812,
+        "raw_independent_line_triples": 45556,
+        "raw_unordered_line_triples": 45760,
+        "spaces_supporting_a_perfect_matching": 32
+      },
+      "two_space_census": {
+        "contained_pattern_count_distribution": {
+          "16": 3,
+          "4": 1536,
+          "6": 336,
+          "8": 48
+        },
+        "distinct_generated_two_spaces": 1923,
+        "duplicate_pair_normalizations_removed": 222,
+        "matching_number_distribution": {
+          "2": 480,
+          "4": 1251,
+          "6": 168,
+          "8": 24
+        },
+        "maximum_matching_number": 8,
+        "pair_span_multiplicity_distribution": {
+          "1": 1884,
+          "15": 3,
+          "6": 36
+        },
+        "raw_unordered_line_pairs": 2145
+      },
+      "z_pattern_count": 144,
+      "z_patterns_in_column_space": 0
+    },
+    "2+4": {
+      "cycle_component_lengths": [
+        8,
+        16
+      ],
+      "nullity_F7": 6,
+      "partition": [
+        2,
+        4
+      ],
+      "rank_F7": 21,
+      "z_pattern_count": 144,
+      "z_patterns_in_column_space": 0
+    }
+  },
+  "local_geometry": {
+    "derivation": [
+      "For an edge xy, its unique common neighbor z completes the triangle.",
+      "X=N(x)-{y,z} and Y=N(y)-{x,z} each have size 12.",
+      "The lambda=1 rule makes each side a perfect matching.",
+      "The mu=2 rule makes the X--Y relation a perfect matching.",
+      "At the prism-free endpoint the needed cycle types are 2+2+2 and 2+4."
+    ],
+    "outside_z_neighbors": {
+      "complete_pattern_universe": 144,
+      "count": 12,
+      "forced_relation": "the twelve choices form a bijection X->Y",
+      "outside_L": true,
+      "pattern_rule": "each chooses exactly one X vertex and exactly one Y vertex"
+    }
+  },
+  "normalization_notes": {
+    "projective_line_definition": "all six nonzero F_7 scalar multiples are included",
+    "three_space_count": "25,744 is the number of distinct dimension-three row spaces generated by observed-line triples, not the raw triple count",
+    "two_space_count": "1,923 is the number of distinct row spaces generated by pairs of the 66 observed lines; 2,145 raw unordered line pairs collapse by canonical RREF"
+  },
+  "quotient_argument": {
+    "bound": "dim(R/col(B))<=rank(K)-rank(B)",
+    "local_block": "B=K[L,L]",
+    "restricted_column_space": "R=col([B C])",
+    "syndrome_kernel": "For symmetric B, col(B)=ker(B)^perp, so kernel dot products identify the quotient class"
+  },
+  "rank_transfer": {
+    "rank_equality": "rank_F7(K)=rank_F7(M)",
+    "reason": "N is injective on im(M) because N^T N M=3M and 3 is invertible in F_7",
+    "transported_matrix_mod_7": "K=N M N^T=J-I-2A"
+  },
+  "role": "verifier",
+  "scope": "Conditional theorem n3=4158 implies rank_F7(M)>=22 for a hypothetical srg(99,14,1,2)",
+  "status_wall": {
+    "conditional_endpoint_rank_floor": 22,
+    "conway_99_status": "UNKNOWN",
+    "endpoint_excluded": false,
+    "general_upper_bound_improved_below_4158": false,
+    "literature_novelty": "UNKNOWN",
+    "rank_22_boundary_meaning": "A local syndrome three-space can support a perfect matching; this only shows that this quotient obstruction stops, not that a global graph or rank-22 completion exists.",
+    "strongest_general_upper_bound": "n3<=4158"
+  }
+}

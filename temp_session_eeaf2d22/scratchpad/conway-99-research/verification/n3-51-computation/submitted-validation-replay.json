@@ -1,0 +1,88 @@
+{
+  "claim_label": "CANDIDATE",
+  "conditional_n3_51_exclusion": "UNKNOWN",
+  "failure_validation": {
+    "file_sha256": "575bc434fa1e891d7b0159a01b6782ac6c10705fe986b457f3d06773918180ae",
+    "final_negative_status_histogram": {
+      "TIMEOUT_UNKNOWN": 5,
+      "UNSAT_UNVERIFIED": 1
+    },
+    "historical_budget_unknown_count": 1,
+    "status": "PASS"
+  },
+  "mutation_validation": {
+    "mutation_count": 20,
+    "mutations": {
+      "candidate_altered_q": "candidate profile id mismatch",
+      "candidate_claim_inflation": "candidate claim inflation",
+      "candidate_conditional_inflation": "candidate conditional_n3_51_exclusion inflation",
+      "candidate_deleted_K_edge": "candidate diagnostics mismatch",
+      "candidate_deleted_point": "candidate diagnostics mismatch",
+      "candidate_duplicate_K_edge": "duplicate K edge",
+      "candidate_duplicate_point": "duplicate selected point",
+      "candidate_forged_diagnostic": "candidate diagnostics mismatch",
+      "candidate_forged_formula_hash": "candidate semantic core mismatch",
+      "candidate_forged_semantic_hash": "candidate semantic digest mismatch",
+      "candidate_forged_symmetry": "candidate branch metadata mismatch",
+      "candidate_novelty_inflation": "candidate novelty inflation",
+      "candidate_premise_deletion": "candidate encoded premises changed",
+      "candidate_scope_inflation": "candidate scope mismatch",
+      "candidate_target_inflation": "candidate target_result inflation",
+      "scan_candidate_redirection": "candidate file hash mismatch",
+      "scan_claim_inflation": "scan claim inflation",
+      "scan_duplicate_branch": "scan branch cover mismatch",
+      "scan_forged_proof_check": "scan forged proof-trace status",
+      "scan_negative_promotion": "scan status vocabulary changed"
+    },
+    "status": "PASS"
+  },
+  "negative_solver_results_evidentiary": false,
+  "novelty": "UNKNOWN",
+  "profile_validation": {
+    "file_sha256": "f16acb933a6d54e3a96e97521cf3e06b6e04bac06dbf72376fb67a462eec0ffe",
+    "post_finite_branch_count": 7,
+    "raw_profile_count": 16,
+    "semantic_sha256": "17413e627975c24b40c01132ea5276e7e533120f00467ca2217b574bf7d9651b",
+    "status": "PASS",
+    "surviving_profile_count": 4
+  },
+  "scan_validation": {
+    "all_formula_streams_rebuilt": true,
+    "branch_count": 7,
+    "file_sha256": "f0345ca8b2ab1591b76b128c4412d35386047b3959e5fcef7a4e7fa2dea16286",
+    "negative_results_evidentiary": false,
+    "semantic_sha256": "006a64613c0d250eb321c1ac06a4056b0b7e970a547983f1e2b6db733bb79c33",
+    "status": "PASS",
+    "status_histogram": {
+      "SAT_CANDIDATE": 1,
+      "TIMEOUT_UNKNOWN": 5,
+      "UNSAT_UNVERIFIED": 1
+    },
+    "validated_candidates": [
+      {
+        "branch_id": "no-size3",
+        "k_edge_count": 69,
+        "point_count": 24,
+        "profile_id": "r16-q2x14-q3x2",
+        "semantic_sha256": "d858ceae9ec4f6722c5b73a103bdc68a6b2c55f34db20295ec57b59864896c82",
+        "size2_point_count": 24,
+        "size3_point_count": 0,
+        "status": "PASS"
+      }
+    ]
+  },
+  "schema": "conway99-wave16-n3-51-discovery-validation-v1",
+  "semantic": {
+    "candidate_semantic_sha256": [
+      "d858ceae9ec4f6722c5b73a103bdc68a6b2c55f34db20295ec57b59864896c82"
+    ],
+    "failure_archive_sha256": "575bc434fa1e891d7b0159a01b6782ac6c10705fe986b457f3d06773918180ae",
+    "formula_stream_count": 7,
+    "mutation_count": 20,
+    "profile_semantic_sha256": "17413e627975c24b40c01132ea5276e7e533120f00467ca2217b574bf7d9651b",
+    "scan_semantic_sha256": "006a64613c0d250eb321c1ac06a4056b0b7e970a547983f1e2b6db733bb79c33"
+  },
+  "semantic_sha256": "ef689c68c4777a0d60210632ecd9b24b0e954faed8c6d7e297cb7fb7387e0e3d",
+  "starting_git_commit": "861cfeb6195b19b08feceff07be88a6ab5093fd4",
+  "target_result": "UNKNOWN"
+}

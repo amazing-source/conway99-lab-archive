@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-28T02:45:43Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: VERIFIED
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2), independently verify
+  N14 <= floor((38808+12P)/7) = floor((55440-4*n3)/7), with N14 counting
+  both signs and with no prism-free, rank-28, or automorphism hypothesis.
+inputs:
+  - path: attempts/wave94-general-n3-norm14-bound/package-manifest.sha256
+    sha256: 6c6c12690b59c9d86daf25190e3c89b0616aef525498246295974f1d27c30bf8
+  - path: verification/wave64-rooted-transition-design/package-manifest.sha256
+    sha256: dd138310fcaa4e3e2d2989281f9c7487b498ad1d15901403b32919d7018bb905
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+method: >-
+  Freeze the discovery package before inspection; reconstruct the induced-C4
+  identity, six-root prism bijection, complementary-Fano seed injection,
+  transition-seed multiplicities, exhaustive local matching cap, orientation
+  convention, floor arithmetic, and every compatible (n3,P) row without
+  importing discovery code; then compare archived fields.
+command: >-
+  python -B verification/wave94-general-n3-norm14-bound/independent_verify.py
+  --verify
+  verification/wave94-general-n3-norm14-bound/independent-results.json ;
+  python -B -m unittest discover
+  -s verification/wave94-general-n3-norm14-bound -p "test_*.py" -v
+outputs:
+  - path: verification/wave94-general-n3-norm14-bound/independent-results.json
+    sha256: 45ab9b6fb4aa17a9a903b6a0f0a13ecb4ab749655e4f7bcacd39215bf1a3f144
+  - path: verification/wave94-general-n3-norm14-bound/test-results.txt
+    sha256: ff209545ec71ebb2854c62dbc9375d392cd31ae9653b3d11281a2b67854e650e
+  - path: verification/wave94-general-n3-norm14-bound/audit.md
+    sha256: ab87d369345a27abb4326915f6c392545573780b4fc7f5d67bc494743c4a2ce6
+limitations:
+  - the theorem bounds N14 only and gives no upper bound for N16 or N18
+  - no strict n3 upper bound, graph construction, or Conway-99 resolution follows
+  - literature novelty remains UNKNOWN

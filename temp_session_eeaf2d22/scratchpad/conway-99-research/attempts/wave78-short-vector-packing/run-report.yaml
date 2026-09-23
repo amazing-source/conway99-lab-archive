@@ -1,0 +1,30 @@
+role: proof_b
+date_utc: 2026-07-27T23:35:00Z
+git_commit: 5f497b545c536de90a1a557c51b53f041fecf7db
+claim_label: DERIVED
+scope: >-
+  Conditional set-packing bounds and exact outside-degree histogram
+  reductions for the Wave 71 norm-16 and norm-18 integer -4 eigenvectors.
+inputs:
+  - path: attempts/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: f0551b070edafc29d4adf5a380769c9bf4793721634e627ec1babd86b3117b39
+  - path: attempts/wave74-short-vector-closure/package-manifest.sha256
+    sha256: 4cb63f21352c2268714f72d55e3b37aab69394939bddbe87bbf06f5b918583e5
+method: >-
+  Inclusion-exclusion for families of four-subsets with pair intersections
+  at most one, exact finite family enumeration, and exhaustive bounded
+  integer histogram enumeration.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave78-short-vector-packing\exact_check.py --verify
+  attempts\wave78-short-vector-packing\exact-results.json ;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s attempts\wave78-short-vector-packing -p "test_*.py" -v
+outputs:
+  - attempts/wave78-short-vector-packing/exact-results.json
+  - attempts/wave78-short-vector-packing/exact_check.py
+  - attempts/wave78-short-vector-packing/test_exact_check.py
+limitations: >-
+  Conditional on unverified-at-freeze Waves 71 and 74. Surviving histograms
+  are necessary aggregate conditions only. No labelled design, graph,
+  endpoint exclusion, strict n3 upper bound, or novelty result is supplied.

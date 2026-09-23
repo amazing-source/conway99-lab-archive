@@ -1,0 +1,45 @@
+role: verifier
+date_utc: 2026-07-28T13:01:41Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED
+scope: >-
+  Complete bounded rational pair-correlation projection on 275 independently
+  reconstructed safe coordinate-orbit representatives covering all 1,140
+  unordered component triples.
+inputs:
+  - path: attempts/wave153-alternative-compatibility/package-manifest.sha256
+    sha256: 31234fe670e26a534d6087515ec969e7ac1b670190da318dd97cbcdae26ee8d0
+  - path: attempts/wave153-alternative-compatibility/exact-results.json.gz
+    sha256: af3df69fa2542066cd1089f75f09f16582c0583f0304b60df3b9516d0ff035dd
+  - path: attempts/wave153-alternative-compatibility/input-freeze.sha256
+    sha256: 5b55cb9f338b5b8d21a1ddf0c8ec490f9a33a31f1e10f875d249fa0d43a9e06d
+  - path: attempts/wave60-c3-incidence-design/component-census.json
+    sha256: 16e124587df5b37b3f4735e14894982750c60a303043125985383101331eb4de
+  - path: attempts/wave60-c3-incidence-design/invariant-results.json
+    sha256: 210fa11c1f9e2184d752cac8a51feebee0d7f5ddbee2b5af6c87df1e23b91b7a
+method: >-
+  Clean-room reconstruction of all component adjacency matrices; canonical
+  S4 x S4 x S4 graph matching under all six fibre permutations; exact orbit
+  partition; exhaustive profile-product enumeration of allowed six-sets; and
+  canonical Fraction replay of every pair total, row margin, total weight,
+  candidate index, and coefficient bound. Discovery code was neither imported
+  nor executed.
+command: >-
+  python verification/wave153-alternative-compatibility/independent_verifier.py
+  && python -m unittest
+  verification/wave153-alternative-compatibility/test_independent_verifier.py
+  -v
+outputs:
+  - path: verification/wave153-alternative-compatibility/independent-results.json
+    sha256: 5c7cbf35304b92958fe7c2aa053bd62898e9b909216d536ceb88fc0e53096bc6
+  - path: verification/wave153-alternative-compatibility/independent_verifier.py
+    sha256: 4c654b5b460ffc2de5fa9d703eedcd322ee7217d84c458644ce6a806a17f5003
+  - path: verification/wave153-alternative-compatibility/test_independent_verifier.py
+    sha256: e8e8cab8b8d153110777bc1dcc3bb596c894d58172b3291b7f997d32349fcfee
+  - path: verification/wave153-alternative-compatibility/verification-report.md
+    sha256: caa2c0fef76f1702e02da8a565ef5ddd854e98f998861e65378eadacdab48935
+limitations: >-
+  VERIFIED_WITH_SCOPE only: this is an exact null witness for the complete
+  safe-orbit bounded rational pair-correlation projection. It is not a binary
+  incidence design, compatible residual graph, endpoint construction or
+  exclusion, strict n3 bound, Conway-99 resolution, or novelty certificate.

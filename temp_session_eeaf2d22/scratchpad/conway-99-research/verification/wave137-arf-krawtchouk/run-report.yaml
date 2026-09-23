@@ -1,0 +1,41 @@
+role: verifier
+date_utc: 2026-07-28T09:06:31Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: VERIFIED
+scope: >-
+  Clean-room exact replay of all fourteen Wave137 binary Arf branch
+  witnesses through the Wave132 ordinary and distinguished-split
+  projection, signed Krawtchouk identities through degree five, and
+  terminal degree-6-through-99 shadow bounds; inventory-only audit of Z4
+  numerical outputs.
+inputs:
+  - path: attempts/wave132-distinguished-biweight/package-manifest.sha256
+    sha256: 0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c
+  - path: attempts/wave137-z4-arf-branches/package-manifest.sha256
+    sha256: 2175aad6a21216db67b668a3450855592405f584f2490c58b1d21ce6983da02c
+  - path: attempts/wave137-z4-arf-branches/binary-shadow1-plus.json
+    sha256: c3dbc0cee57a5505455202af51cbb5a31ff4c7cf075ddc8f3f8351efe7833092
+  - path: attempts/wave137-z4-arf-branches/binary-shadow1-minus.json
+    sha256: 9919a367ea393085d310199a4ac3ac23c68fd1bde511c4cf4e01f2d5e81a10bd
+method: >-
+  Reconstruct binary Krawtchouk coefficients from the direct binomial
+  definition; replay all 100 forward and 100 inverse ordinary rows per
+  witness; reconstruct and replay all four distinguished split systems;
+  derive the cumulative exact equality ranks over Q; replay the frozen
+  signed constants S0 through S5 and every terminal shadow bound; verify
+  the sealed manifest; refuse numerical Z4 statuses as evidence.
+command: >-
+  python -B verification/wave137-arf-krawtchouk/independent_verify.py
+  --discovery-dir attempts/wave137-z4-arf-branches --output
+  verification/wave137-arf-krawtchouk/verification.json; python -B -m
+  unittest discover -s verification/wave137-arf-krawtchouk -p
+  "test_*.py" -v
+outputs:
+  - path: verification/wave137-arf-krawtchouk/verification.json
+    sha256: 7ad3fc8737db087e94795502ad174bd43bf4aaa32c04bebe31f501300a1e4a8c
+limitations:
+  - The accepted witnesses are formal rational projections, not binary codes.
+  - Integral and full genus-two feasibility remain unknown.
+  - No exact Z4 branch certificate was supplied or inferred.
+  - No graph or adjacency matrix is constructed.
+  - Conway-99 and novelty remain UNKNOWN.

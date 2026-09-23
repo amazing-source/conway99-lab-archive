@@ -1,0 +1,624 @@
+{
+  "claim_label": "VERIFIED",
+  "conditional_on": [
+    "a hypothetical srg(99,14,1,2)",
+    "the independently verified Wave66 lattice conclusions",
+    "the independently verified Wave71 short-vector dictionary"
+  ],
+  "corrections": [],
+  "dual_support": {
+    "conclusion_for_code_dual": "d(C^perp)>=6",
+    "conclusion_for_row_space_dual": "d(row_F7(S)^perp)>=6",
+    "five_support": {
+      "all_labelled_graphs": 1024,
+      "isomorphism_classes": [
+        {
+          "canonical_adjacency_bits": "0000001101",
+          "compatible_outside_patterns": 0,
+          "degree_sequence": [
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "edge_count": 3,
+          "labelled_graphs": 60,
+          "projective_relations": 60,
+          "relation_residue_multisets": [
+            [
+              1,
+              1,
+              1,
+              6,
+              6
+            ],
+            [
+              1,
+              1,
+              6,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "canonical_adjacency_bits": "0001010111",
+          "compatible_outside_patterns": 0,
+          "degree_sequence": [
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "edge_count": 5,
+          "labelled_graphs": 60,
+          "projective_relations": 60,
+          "relation_residue_multisets": [
+            [
+              1,
+              1,
+              1,
+              1,
+              6
+            ],
+            [
+              1,
+              6,
+              6,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "canonical_adjacency_bits": "0011101100",
+          "compatible_outside_patterns": 0,
+          "degree_sequence": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "edge_count": 5,
+          "labelled_graphs": 12,
+          "projective_relations": 12,
+          "relation_residue_multisets": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "locally_admissible_graphs": 683,
+      "projective_relations_checked": 132,
+      "relations_with_compatible_outside_pattern": 0,
+      "singular_full_support_graphs": 132
+    },
+    "orthogonal_array_strength": 5,
+    "principal_blocks": {
+      "2": {
+        "determinant_residues_mod_7": [
+          6
+        ],
+        "labelled_blocks": 2,
+        "singular_blocks": 0
+      },
+      "3": {
+        "determinant_residues_mod_7": [
+          2,
+          5
+        ],
+        "labelled_blocks": 8,
+        "singular_blocks": 0
+      },
+      "4": {
+        "determinant_residues_mod_7": [
+          4,
+          5
+        ],
+        "labelled_blocks": 64,
+        "singular_blocks": 0
+      }
+    },
+    "six_support_positive_control": {
+      "compatible_outside_pattern_count": 12,
+      "degree_sequence": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "edge_count": 2,
+      "first_labelled_mask": 36,
+      "projective_kernel_relation": [
+        1,
+        1,
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    "weight_one_exclusion": "a nonzero coefficient times a Seidel column has 98 nonzero outside coordinates"
+  },
+  "endpoint_r28_q16": {
+    "C_mod_hull": {
+      "determinant_legendre_sign": -1,
+      "dimension": 16,
+      "split_determinant_legendre_sign": 1,
+      "type": "minus",
+      "witt_index": 7
+    },
+    "W": {
+      "determinant_legendre_sign": 1,
+      "dimension": 43
+    },
+    "W0": {
+      "determinant_legendre_sign": 1,
+      "dimension": 42,
+      "type": "minus",
+      "witt_index": 20
+    },
+    "code_parameters": "[99,44]_7",
+    "hull_dimension": 28,
+    "orthogonal_complement_in_W0": {
+      "determinant_legendre_sign": -1,
+      "dimension": 26,
+      "type": "plus",
+      "witt_index": 13
+    },
+    "q": 16,
+    "r": 28
+  },
+  "evaluation_code": {
+    "dimension_rows": [
+      {
+        "dim_L_mod_7Lstar": 42,
+        "dim_Lstar_mod_7Lstar": 44,
+        "dim_Lstar_mod_L": 2,
+        "q": 2,
+        "r": 42
+      },
+      {
+        "dim_L_mod_7Lstar": 40,
+        "dim_Lstar_mod_7Lstar": 44,
+        "dim_Lstar_mod_L": 4,
+        "q": 4,
+        "r": 40
+      },
+      {
+        "dim_L_mod_7Lstar": 38,
+        "dim_Lstar_mod_7Lstar": 44,
+        "dim_Lstar_mod_L": 6,
+        "q": 6,
+        "r": 38
+      },
+      {
+        "dim_L_mod_7Lstar": 36,
+        "dim_Lstar_mod_7Lstar": 44,
+        "dim_Lstar_mod_L": 8,
+        "q": 8,
+        "r": 36
+      },
+      {
+        "dim_L_mod_7Lstar": 34,
+        "dim_Lstar_mod_7Lstar": 44,
+        "dim_Lstar_mod_L": 10,
+        "q": 10,
+        "r": 34
+      },
+      {
+        "dim_L_mod_7Lstar": 32,
+        "dim_Lstar_mod_7Lstar": 44,
+        "dim_Lstar_mod_L": 12,
+        "q": 12,
+        "r": 32
+      },
+      {
+        "dim_L_mod_7Lstar": 30,
+        "dim_Lstar_mod_7Lstar": 44,
+        "dim_Lstar_mod_L": 14,
+        "q": 14,
+        "r": 30
+      },
+      {
+        "dim_L_mod_7Lstar": 28,
+        "dim_Lstar_mod_7Lstar": 44,
+        "dim_Lstar_mod_L": 16,
+        "q": 16,
+        "r": 28
+      }
+    ],
+    "evaluation": {
+      "coordinate_sum_zero": true,
+      "dimension": 44,
+      "domain": "L*/7L*",
+      "injective": true,
+      "kernel_test": "<y,v_i>=0 mod 7 for all i implies <y,L> subset 7Z, hence y/7 belongs to L*",
+      "length": 99
+    },
+    "form": {
+      "beta": "7<y,z> mod 7",
+      "beta_well_defined_reason": "7L* subset L",
+      "code_dot": "63<y,z>=9 beta=2 beta mod 7",
+      "radical_preimage": "L/7L*"
+    },
+    "hull": {
+      "identity": "C intersect C^perp=row_F7(S)",
+      "marked_gram_mod_7": "-S",
+      "radical_image": "row_F7(S)"
+    },
+    "marked_span": {
+      "N_definition": "integer span of v_0,...,v_98",
+      "bezout_consequence": "N+7L=L",
+      "facts": [
+        "3M subset N",
+        "v_0=3u_0 belongs to N",
+        "L=M+Z v_0"
+      ],
+      "mod_7_consequence": "the v_i span L/7L",
+      "quotient_consequence": "3(L/N)=0"
+    }
+  },
+  "format": "wave80-independent-verifier-v1",
+  "limitations": [
+    "All conclusions are conditional; no SRG or marked lattice is constructed.",
+    "The imported Wave66 and Wave71 packages are not reverified here.",
+    "The complete search excludes dual supports only through weight five.",
+    "The support-six control is local and is not a global graph fragment.",
+    "OA moment slack is not an integral MacWilliams weight enumerator.",
+    "Finite orthogonal type represents all three forced self-dot values."
+  ],
+  "macwilliams_null_control": {
+    "full_weight_enumerator_constructed": false,
+    "strength_five_OA_moments": [
+      {
+        "degree": 0,
+        "forced_upper_control": 601,
+        "required": 15286700631942576193765185769276826401,
+        "strict_slack": 15286700631942576193765185769276825800
+      },
+      {
+        "degree": 1,
+        "forced_upper_control": 58320,
+        "required": 1297185739339127179870931478135776411742,
+        "strict_slack": 1297185739339127179870931478135776353422
+      },
+      {
+        "degree": 2,
+        "forced_upper_control": 2824200,
+        "required": 54481801052243341554579122081702609293164,
+        "strict_slack": 54481801052243341554579122081702606468964
+      },
+      {
+        "degree": 3,
+        "forced_upper_control": 90349920,
+        "required": 1509924200590744037369764240550043743267688,
+        "strict_slack": 1509924200590744037369764240550043652917768
+      },
+      {
+        "degree": 4,
+        "forced_upper_control": 2145712680,
+        "required": 31061297840723877340178007234172328432935296,
+        "strict_slack": 31061297840723877340178007234172326287222616
+      },
+      {
+        "degree": 5,
+        "forced_upper_control": 40339104624,
+        "required": 505855421977503145254327546385092205907803392,
+        "strict_slack": 505855421977503145254327546385092165568698768
+      }
+    ]
+  },
+  "orthogonal_geometry_rows": [
+    {
+      "C_mod_hull": {
+        "determinant_legendre_sign": 1,
+        "dimension": 2,
+        "split_determinant_legendre_sign": -1,
+        "type": "minus",
+        "witt_index": 0
+      },
+      "W": {
+        "determinant_legendre_sign": 1,
+        "dimension": 15
+      },
+      "W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 14,
+        "type": "minus",
+        "witt_index": 6
+      },
+      "code_parameters": "[99,44]_7",
+      "hull_dimension": 42,
+      "orthogonal_complement_in_W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 12,
+        "type": "plus",
+        "witt_index": 6
+      },
+      "q": 2,
+      "r": 42
+    },
+    {
+      "C_mod_hull": {
+        "determinant_legendre_sign": -1,
+        "dimension": 4,
+        "split_determinant_legendre_sign": 1,
+        "type": "minus",
+        "witt_index": 1
+      },
+      "W": {
+        "determinant_legendre_sign": 1,
+        "dimension": 19
+      },
+      "W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 18,
+        "type": "minus",
+        "witt_index": 8
+      },
+      "code_parameters": "[99,44]_7",
+      "hull_dimension": 40,
+      "orthogonal_complement_in_W0": {
+        "determinant_legendre_sign": -1,
+        "dimension": 14,
+        "type": "plus",
+        "witt_index": 7
+      },
+      "q": 4,
+      "r": 40
+    },
+    {
+      "C_mod_hull": {
+        "determinant_legendre_sign": 1,
+        "dimension": 6,
+        "split_determinant_legendre_sign": -1,
+        "type": "minus",
+        "witt_index": 2
+      },
+      "W": {
+        "determinant_legendre_sign": 1,
+        "dimension": 23
+      },
+      "W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 22,
+        "type": "minus",
+        "witt_index": 10
+      },
+      "code_parameters": "[99,44]_7",
+      "hull_dimension": 38,
+      "orthogonal_complement_in_W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 16,
+        "type": "plus",
+        "witt_index": 8
+      },
+      "q": 6,
+      "r": 38
+    },
+    {
+      "C_mod_hull": {
+        "determinant_legendre_sign": -1,
+        "dimension": 8,
+        "split_determinant_legendre_sign": 1,
+        "type": "minus",
+        "witt_index": 3
+      },
+      "W": {
+        "determinant_legendre_sign": 1,
+        "dimension": 27
+      },
+      "W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 26,
+        "type": "minus",
+        "witt_index": 12
+      },
+      "code_parameters": "[99,44]_7",
+      "hull_dimension": 36,
+      "orthogonal_complement_in_W0": {
+        "determinant_legendre_sign": -1,
+        "dimension": 18,
+        "type": "plus",
+        "witt_index": 9
+      },
+      "q": 8,
+      "r": 36
+    },
+    {
+      "C_mod_hull": {
+        "determinant_legendre_sign": 1,
+        "dimension": 10,
+        "split_determinant_legendre_sign": -1,
+        "type": "minus",
+        "witt_index": 4
+      },
+      "W": {
+        "determinant_legendre_sign": 1,
+        "dimension": 31
+      },
+      "W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 30,
+        "type": "minus",
+        "witt_index": 14
+      },
+      "code_parameters": "[99,44]_7",
+      "hull_dimension": 34,
+      "orthogonal_complement_in_W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 20,
+        "type": "plus",
+        "witt_index": 10
+      },
+      "q": 10,
+      "r": 34
+    },
+    {
+      "C_mod_hull": {
+        "determinant_legendre_sign": -1,
+        "dimension": 12,
+        "split_determinant_legendre_sign": 1,
+        "type": "minus",
+        "witt_index": 5
+      },
+      "W": {
+        "determinant_legendre_sign": 1,
+        "dimension": 35
+      },
+      "W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 34,
+        "type": "minus",
+        "witt_index": 16
+      },
+      "code_parameters": "[99,44]_7",
+      "hull_dimension": 32,
+      "orthogonal_complement_in_W0": {
+        "determinant_legendre_sign": -1,
+        "dimension": 22,
+        "type": "plus",
+        "witt_index": 11
+      },
+      "q": 12,
+      "r": 32
+    },
+    {
+      "C_mod_hull": {
+        "determinant_legendre_sign": 1,
+        "dimension": 14,
+        "split_determinant_legendre_sign": -1,
+        "type": "minus",
+        "witt_index": 6
+      },
+      "W": {
+        "determinant_legendre_sign": 1,
+        "dimension": 39
+      },
+      "W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 38,
+        "type": "minus",
+        "witt_index": 18
+      },
+      "code_parameters": "[99,44]_7",
+      "hull_dimension": 30,
+      "orthogonal_complement_in_W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 24,
+        "type": "plus",
+        "witt_index": 12
+      },
+      "q": 14,
+      "r": 30
+    },
+    {
+      "C_mod_hull": {
+        "determinant_legendre_sign": -1,
+        "dimension": 16,
+        "split_determinant_legendre_sign": 1,
+        "type": "minus",
+        "witt_index": 7
+      },
+      "W": {
+        "determinant_legendre_sign": 1,
+        "dimension": 43
+      },
+      "W0": {
+        "determinant_legendre_sign": 1,
+        "dimension": 42,
+        "type": "minus",
+        "witt_index": 20
+      },
+      "code_parameters": "[99,44]_7",
+      "hull_dimension": 28,
+      "orthogonal_complement_in_W0": {
+        "determinant_legendre_sign": -1,
+        "dimension": 26,
+        "type": "plus",
+        "witt_index": 13
+      },
+      "q": 16,
+      "r": 28
+    }
+  ],
+  "short_vectors": {
+    "bounded_profile_reduction_injective": true,
+    "mapping": "z=sqrt(7)y maps to Phi(y)=3t mod 7",
+    "mapping_uses": "Wave71's verified norm-preserving bijection through norm 18",
+    "orthogonal_type_exclusion": false,
+    "projective_line_count_congruence": "P=1 mod 7",
+    "projective_scalar_guard": "only scalars +1 and -1 preserve the alphabet {0,3,4}",
+    "rows": [
+      {
+        "K_squared_norm": 14,
+        "class_in_C_mod_hull": "zero_or_nonzero_isotropic",
+        "evaluation_word": {
+          "Hamming_weight": 14,
+          "symbol_0": 85,
+          "symbol_3": 7,
+          "symbol_4": 7
+        },
+        "integer_profile": {
+          "minus_one": 7,
+          "plus_one": 7,
+          "zero": 85
+        },
+        "self_dot_mod_7": 0
+      },
+      {
+        "K_squared_norm": 16,
+        "class_in_C_mod_hull": "anisotropic",
+        "evaluation_word": {
+          "Hamming_weight": 16,
+          "symbol_0": 83,
+          "symbol_3": 8,
+          "symbol_4": 8
+        },
+        "integer_profile": {
+          "minus_one": 8,
+          "plus_one": 8,
+          "zero": 83
+        },
+        "self_dot_mod_7": 4
+      },
+      {
+        "K_squared_norm": 18,
+        "class_in_C_mod_hull": "anisotropic",
+        "evaluation_word": {
+          "Hamming_weight": 18,
+          "symbol_0": 81,
+          "symbol_3": 9,
+          "symbol_4": 9
+        },
+        "integer_profile": {
+          "minus_one": 9,
+          "plus_one": 9,
+          "zero": 81
+        },
+        "self_dot_mod_7": 1
+      }
+    ],
+    "scalar_closed_codeword_count_congruence": "6P=6 mod 42",
+    "theta_count_congruence": "N14+N16+N18=2 mod 14"
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "code_constructed": false,
+    "graph_constructed": false,
+    "novelty": "UNKNOWN",
+    "rank_28_excluded": false
+  },
+  "verdict": "VERIFIED"
+}

@@ -1,0 +1,59 @@
+role: verifier
+date_utc: 2026-07-27T05:00:34Z
+git_commit: 4f1754a28723a8e0e4ea3025312cd264b1b117d2
+claim_label: VERIFIED
+scope: >-
+  Conditional on n3=4158, rank_F3(M)=12, and every edge having local type
+  2+2+2: complete normalized one-triangle quotient classification, exact
+  relative endpoint-pairing lifts, 39-block F7 ranks, and the resulting
+  even rank_F7(M)>=34 branch floor.
+inputs:
+  - path: verification/wave41-allquotient-lifts/input-freeze.sha256
+    sha256: 7985e2c582e5a472b33f370c58c35de742908a43636dfdbb8e0bffa0be5c0b7c
+  - path: verification/wave41-allquotient-lifts/implementation-freeze.sha256
+    sha256: cc9d8c939a8e946a0a00cdf7e4474e7d0159c0e42e7a04ac5c2f670b6bfaf03c
+method: >-
+  Clean-room reconstruction from verified Wave 36/38/40 premises; exact
+  4,050-form matching normalization; F3 elimination; exhaustive
+  colour-preserving isomorphism search; derived affine transport of all
+  eighteen endpoint-pairing bits; all 2^18 triangle truth-table checks per
+  boundary quotient; one exact sparse F7 rank census transferred by checked
+  graph isomorphism; dense rank controls; Schur-complement identity; and a
+  structural-kernel attack on rank inflation. The Wave 41 discovery checker
+  and report were not read, imported, or executed.
+command:
+  - >-
+    python -B verification/wave41-allquotient-lifts/independent_check.py
+    --verify verification/wave41-allquotient-lifts/independent-results.json
+  - >-
+    python -B -m unittest discover
+    -s verification/wave41-allquotient-lifts -p "test_*.py" -v
+outputs:
+  - path: verification/wave41-allquotient-lifts/independent-results.json
+    sha256: 062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b
+  - path: verification/wave41-allquotient-lifts/discovery-comparison.json
+    sha256: c877574470eefd3f8267eb30f1d9b1bee2b49e19cd37c33c132de7b954266162
+  - path: verification/wave41-allquotient-lifts/package-manifest.sha256
+    sha256: self_excluded
+limitations: >-
+  This is a conditional one-triangle theorem. The endpoint, r3=12 branch,
+  all-222 hypothesis, simultaneous outside completion, cross-triangle
+  compatibility, graph existence, endpoint exclusion, upper bound below
+  4158, novelty, and priority are not established. Discovery-only
+  rank-12-through-16 lift-count censuses were not independently checked.
+status:
+  normalized_quotients: 4050
+  rank_eleven_quotients: 8
+  strict_fibre_coloured_isomorphism_classes: 1
+  masks_per_quotient: 262144
+  triangle_free_masks_per_rank_eleven_quotient: 37378
+  rank_F7_K39_distribution_per_quotient:
+    33: 264
+    34: 7348
+    35: 29766
+  conditional_r7_floor_before_parity: 33
+  conditional_r7_floor_after_parity: 34
+  endpoint_n3_4158: UNKNOWN
+  upper_bound_below_4158: NOT_PROVED
+  conway_99: UNKNOWN
+  novelty: UNKNOWN

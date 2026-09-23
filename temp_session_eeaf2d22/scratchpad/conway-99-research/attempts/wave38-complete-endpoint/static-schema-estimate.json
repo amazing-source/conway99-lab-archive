@@ -1,0 +1,159 @@
+{
+  "candidate_triangle_type_histogram": {
+    "coordinate_residual_residual": 924,
+    "residual_only": 95284,
+    "root_triangle": 7
+  },
+  "candidate_triangle_variable_edge_histogram": {
+    "0": 7,
+    "1": 924,
+    "3": 95284
+  },
+  "candidate_triangles": 96215,
+  "claim_label": "DERIVED_SIZE_BOUND_ONLY",
+  "endpoint_refined_case_count": 33,
+  "endpoint_refined_cases": [
+    {
+      "parent_branch": 4,
+      "refined_branch": 15
+    },
+    {
+      "parent_branch": 4,
+      "refined_branch": 16
+    },
+    {
+      "parent_branch": 4,
+      "refined_branch": 17
+    },
+    {
+      "parent_branch": 4,
+      "refined_branch": 18
+    },
+    {
+      "parent_branch": 5,
+      "refined_branch": 19
+    },
+    {
+      "parent_branch": 5,
+      "refined_branch": 20
+    },
+    {
+      "parent_branch": 5,
+      "refined_branch": 21
+    },
+    {
+      "parent_branch": 5,
+      "refined_branch": 22
+    },
+    {
+      "parent_branch": 8,
+      "refined_branch": 36
+    },
+    {
+      "parent_branch": 8,
+      "refined_branch": 37
+    },
+    {
+      "parent_branch": 8,
+      "refined_branch": 38
+    },
+    {
+      "parent_branch": 8,
+      "refined_branch": 39
+    },
+    {
+      "parent_branch": 8,
+      "refined_branch": 40
+    },
+    {
+      "parent_branch": 8,
+      "refined_branch": 41
+    },
+    {
+      "parent_branch": 10,
+      "refined_branch": 50
+    },
+    {
+      "parent_branch": 10,
+      "refined_branch": 51
+    },
+    {
+      "parent_branch": 10,
+      "refined_branch": 52
+    },
+    {
+      "parent_branch": 10,
+      "refined_branch": 53
+    },
+    {
+      "parent_branch": 10,
+      "refined_branch": 54
+    },
+    {
+      "parent_branch": 10,
+      "refined_branch": 55
+    },
+    {
+      "parent_branch": 10,
+      "refined_branch": 56
+    },
+    {
+      "parent_branch": 10,
+      "refined_branch": 57
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 68
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 69
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 70
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 71
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 72
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 73
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 74
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 75
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 76
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 77
+    },
+    {
+      "parent_branch": 12,
+      "refined_branch": 78
+    }
+  ],
+  "exact_residual_only_prism_embeddings": 24388892640,
+  "format": "wave38-complete-endpoint-static-size-v1",
+  "full_vertices": 99,
+  "interpretation": [
+    "The residual-only count is an exact subset of the static labelled prism schema, before branch simplification.",
+    "The all-pair value is an upper bound because it includes intersecting triangle pairs and scaffold-incompatible matchings.",
+    "These counts explain why the complete static formula must be streamed and why lazy exact separation is the practical route."
+  ],
+  "naive_all_triangle_pair_matching_upper": 27771690030,
+  "residual_vertices": 84
+}

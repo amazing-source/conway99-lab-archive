@@ -1,0 +1,147 @@
+{
+  "format": "wave41-evenpart-equality-partial-v1",
+  "partition_result": {
+    "direct_rank_samples": 2,
+    "distinct_kernel_target_pairs": 80038,
+    "distinct_right_kernels": 2,
+    "even_part_count": 1,
+    "kernel_target_matching_checks": 20790,
+    "labelled_Z_matching_count": 10395,
+    "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+    "local_kernel_dimension": 4,
+    "local_rank_F7": 23,
+    "minimum_direct_39_block_rank_over_target_samples": 33,
+    "minimum_projection_permutation_count": 80640,
+    "minimum_projection_rank": 1,
+    "minimum_projection_search": {
+      "canonical_dimension_e_subspaces": 6,
+      "observed_projective_lines": 6,
+      "raw_generator_subsets": 6,
+      "subspaces_supporting_permutation": 2
+    },
+    "partition": [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "positive_rank_25_mutation_controls": 2,
+    "rank_25_compatible_cases": 0,
+    "right_kernels": [
+      {
+        "core_laplacian_rank": 33,
+        "direct_39_block_rank": 34,
+        "direct_sample_equality_core_rank": 9,
+        "direct_sample_matching": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "distinct_equality_targets": 40019,
+        "distinct_matching_cores": 10395,
+        "equality_compatible_permutation_matching_pairs": 0,
+        "equality_target_multiset_sha256": "daf4026b5cc5645617ccb620c50b252baf577b91395a7ed81ad91822a4150ffd",
+        "labelled_Z_matchings_checked": 10395,
+        "matching_core_multiset_sha256": "50913a9b2eb03b21be45cd7f45cbd657d78b2efb7754523d9f2624b26d1883ad",
+        "minimum_projection_permutations": 40320,
+        "positive_mutation_39_block_rank": 25,
+        "representative_equality_target_sha256": "00003195f7e5096fa1b83070b01616c6b7dcd6f6f173ee8207675a4140433361",
+        "representative_permutation": [
+          0,
+          3,
+          2,
+          1,
+          8,
+          5,
+          6,
+          10,
+          4,
+          11,
+          9,
+          7
+        ],
+        "right_kernel_dimension": 11,
+        "right_kernel_sha256": "be97c6f3846be908068ae4a58d784a1964f8fd474ffff321de2cfb42a23bff0d"
+      },
+      {
+        "core_laplacian_rank": 32,
+        "direct_39_block_rank": 33,
+        "direct_sample_equality_core_rank": 8,
+        "direct_sample_matching": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "distinct_equality_targets": 40019,
+        "distinct_matching_cores": 10395,
+        "equality_compatible_permutation_matching_pairs": 0,
+        "equality_target_multiset_sha256": "25a06101628a245e68e925bffd4dc65603da689c4cd9cf73721046c767c66446",
+        "labelled_Z_matchings_checked": 10395,
+        "matching_core_multiset_sha256": "e1e56f2752d4a5f29b91f9a7d33dc39b8657cbe23e7db6ae8a3f37cda9310955",
+        "minimum_projection_permutations": 40320,
+        "positive_mutation_39_block_rank": 25,
+        "representative_equality_target_sha256": "0001d579023630357ffec1681c674c9ba4a4e4c023a31b807d326a48d62a8bba",
+        "representative_permutation": [
+          2,
+          1,
+          0,
+          3,
+          10,
+          5,
+          7,
+          9,
+          4,
+          6,
+          8,
+          11
+        ],
+        "right_kernel_dimension": 11,
+        "right_kernel_sha256": "ffad7810ccf0f306f7859da3151e660ef91b511a8567edaf18d5e0703cf43272"
+      }
+    ],
+    "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+  }
+}

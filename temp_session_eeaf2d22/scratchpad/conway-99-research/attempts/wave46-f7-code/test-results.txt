@@ -1,0 +1,21 @@
+Wave 46 final discovery-side QA
+Date UTC: 2026-07-27T17:17:29Z
+
+Command:
+.\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave46-f7-code -p "test_*.py" -v
+
+Result:
+11 tests passed
+Ran in 0.870s
+OK
+
+Command:
+.\.venv\Scripts\python.exe -B attempts\wave46-f7-code\exact_check.py --verify attempts\wave46-f7-code\exact-results.json
+
+Result:
+PASS: Wave46 F7 projector-code null boundary
+
+Resource samples:
+before available physical memory: 56.49 percent
+after exact replay available physical memory: 53.75 percent
+configured abort floor: 20 percent

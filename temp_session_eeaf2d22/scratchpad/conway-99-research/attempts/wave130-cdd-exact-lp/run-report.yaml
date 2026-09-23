@@ -1,0 +1,56 @@
+role: proof_b
+date_utc: 2026-07-28T07:22:43Z
+git_commit: aef7b93124f8caeb1a7487f58289436bc4118880
+claim_label: CANDIDATE
+scope: >-
+  Exact rational feasibility of the rank-28, discriminant-16, level-7
+  index-10/index-70 Jacobi necessary-condition relaxation through Fourier
+  cutoff 28.
+inputs:
+  - path: attempts/wave127-independent-jacobi-certificate/jacobi_lp.py
+    sha256: fcdd72cbff59595697fed64b914adf4f53c78f1f8f72369b260bb9ef07c0a498
+  - path: attempts/wave127-independent-jacobi-certificate/verify_candidate.py
+    sha256: d291c59552e88bcde2c28d0ded8b3fd30e8fcfd9e192adfb89d5b636dde3a3c9
+  - path: attempts/wave129-jacobi-stress/columns-cutoff28.pkl
+    sha256: 21b114efb70b36001524f256d228621cf21847ec36e542a13b09578636ba1c3d
+  - path: attempts/wave129-jacobi-stress/exact-candidate-cutoff20.json
+    sha256: 3e43084ca53b2c5f211d27d92ea7c9ea2573feb8c4ab5bd922cf6235c86b610d
+method: >-
+  Eliminate all equality rows exactly over Q; use exact feasible lower-cutoff
+  points as affine origins; scale each half-space by a positive rational to
+  primitive integer coefficients; solve zero-objective feasibility
+  subproblems with cdd.gmp DUAL_SIMPLEX; replay each rational point against
+  every reduced inequality and add violated rows; reconstruct 239 rational
+  module coordinates; substitute them into every original exact row.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts/wave130-cdd-exact-lp/incremental_cdd_lp.py
+  --cutoff 28
+  --columns-cache
+  attempts/wave129-jacobi-stress/columns-cutoff28.pkl
+  --solver DUAL_SIMPLEX
+  --initial-cutoff -1
+  --batch-size 10
+  --max-iterations 40
+  --warm-candidate
+  attempts/wave130-cdd-exact-lp/result-cutoff24-warm.json
+  --write
+  attempts/wave130-cdd-exact-lp/result-cutoff28-warm.json
+outputs:
+  - path: attempts/wave130-cdd-exact-lp/result-cutoff10-feasibility.json
+    sha256: 436dcaf4891363a23073e060f9d4d90e4f8d6fe92e0b6d1a17ec9cff757ab10c
+  - path: attempts/wave130-cdd-exact-lp/result-cutoff22-warm.json
+    sha256: 91d5ea7b1f91a671deb6414838b33e7af84299f2ca79dc2428c25bd05293caa8
+  - path: attempts/wave130-cdd-exact-lp/result-cutoff24-warm.json
+    sha256: 1970ee0867f150dd962059d03b7ff4fa9f46c135bf44c85d1613730d812f2ad5
+  - path: attempts/wave130-cdd-exact-lp/result-cutoff28-warm.json
+    sha256: 05ad8cf461cc7c79f85300d45492f1f30e3c1030a3c1943a9da3984d5add39a3
+  - path: attempts/wave130-cdd-exact-lp/verification-cutoff28-regenerated.json
+    sha256: 78dcbeedead4700df97e946c3ee6d1b77f964255d064d79646851c0b6cfa6cb6
+limitations: >-
+  The discovery package remains CANDIDATE until a different verifier agent
+  audits the sealed artifact. Exact finite feasibility is a null boundary for
+  this exclusion strategy only. It constructs neither a graph nor a lattice,
+  proves neither rank-28 realizability nor exclusion, does not establish an
+  all-cutoff integral modular object, and leaves Conway-99 UNKNOWN. Capped
+  q18 runs are retained as nonconclusive failed attempts.

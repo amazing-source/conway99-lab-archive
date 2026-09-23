@@ -1,0 +1,128 @@
+{
+  "boundary": {
+    "endpoint_contradiction": false,
+    "extra_circuit_from_low_multiplicity": false,
+    "extra_local_fiber_loss_from_low_multiplicity": false,
+    "extra_private_label_from_low_multiplicity": false,
+    "matched_reverse_flag": "REFUTED"
+  },
+  "candidate_geometry": {
+    "common_slot_identification": "identity bijection",
+    "common_neighbor_blocks_per_center": 2,
+    "matched_reverse_third_block": "T",
+    "opposite_candidate_slots": 5,
+    "star_blocks_per_center": 7,
+    "surjective_on_all_five": false,
+    "third_block_map": "injective partial map",
+    "matched_pair_involution": true
+  },
+  "canonical_quadrilateral": {
+    "all_equal_image": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "all_equal_is_relation": false,
+    "all_equal_word": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "checkerboard_image": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "checkerboard_word": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "gram": [
+      [
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "rank_mod3": 3
+  },
+  "capacity": {
+    "both_oriented_label_deficit": "epsilon_e>=5",
+    "combined_directional_flag_cap": 5,
+    "global_both_oriented_row": "epsilon>=5*b",
+    "low_multiplicity_patterns": {
+      "1,1": 8,
+      "1,2": 7,
+      "2,2": 6
+    },
+    "selected_incidence_row": "3*n3+4*p3<=5*|U|"
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "paired_flag_relation": {
+    "column_order": [
+      "T",
+      "S",
+      "X_a",
+      "X_b",
+      "Y_a",
+      "Y_b"
+    ],
+    "four_common_columns_pairwise_distinct": true,
+    "global_column_normalization": "same frozen z_R columns; each c4 leaf coefficient is 1",
+    "normalized_four_column_word": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "reverse_c4": [
+      2,
+      1,
+      0,
+      0,
+      2,
+      2
+    ],
+    "source_c4": [
+      1,
+      2,
+      2,
+      2,
+      0,
+      0
+    ],
+    "sum": [
+      0,
+      0,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "search_scope": "finite-field relation algebra and analytic incidence only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search"
+}

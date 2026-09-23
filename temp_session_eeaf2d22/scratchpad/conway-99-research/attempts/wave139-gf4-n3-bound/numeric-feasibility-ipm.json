@@ -1,0 +1,31 @@
+{
+  "claim_label": "CANDIDATE",
+  "dimensions": {
+    "allowed_state_inequalities": 2550,
+    "equalities_after_invariant_reduction": 12,
+    "invariant_basis_variables": 867,
+    "raw_states": 5050
+  },
+  "elapsed_seconds": 20.312097300076857,
+  "format": "wave139-gf4-n3-numeric-scout-v1",
+  "limitations": [
+    "Floating-point support scout only.",
+    "No numerical objective or dual vector is an exact upper bound.",
+    "A strict bound requires exact rational dual replay."
+  ],
+  "method": "highs-ipm",
+  "objective": "feasibility",
+  "scipy_message": "(HiGHS Status 4: Solve error)",
+  "scipy_status": 4,
+  "state_order": [
+    "nI",
+    "nY",
+    "nR"
+  ],
+  "success": false,
+  "target_state": [
+    41,
+    4,
+    54
+  ]
+}

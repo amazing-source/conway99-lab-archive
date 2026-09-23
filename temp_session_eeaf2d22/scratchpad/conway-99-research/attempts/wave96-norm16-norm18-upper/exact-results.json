@@ -1,0 +1,254 @@
+{
+  "claim_label": "DERIVED_AND_NULL_BOUNDARY",
+  "continuation": {
+    "equivalent_polynomial": "F(t)=sum_C4 product_{v in C4} t_v^2",
+    "harmonic_weights": [
+      22,
+      24,
+      26,
+      28,
+      30
+    ],
+    "missing_input": "exact rational-characteristic coset transformation and signed harmonic coefficient control",
+    "primary": "aggregate four-variable fixed-C4 Jacobi theta LP with common index matrix"
+  },
+  "fixed_C4": {
+    "anchor_only_fiber_sizes": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "norm16_remaining_per_sign": {
+      "from_type00": 2,
+      "two_from_each_opposite_anchor_fiber": 4
+    },
+    "outside_partition": {
+      "N_only": 20,
+      "P_only": 20,
+      "type00": 51,
+      "type11": 4
+    },
+    "type_only_count_is_not_graph_compatible_count": true,
+    "type_only_selection_count": 6148477125000
+  },
+  "format": "wave96-norm16-norm18-upper-v1",
+  "limitations": [
+    "The cap of 25 antipodal norm16/norm18 extensions is not proved.",
+    "The cap of 24 antipodal extensions through norm20 is not proved.",
+    "The cross-polytope is only a relaxation witness.",
+    "No graph, lattice, or short-vector support is constructed.",
+    "Discovery requires independent verification."
+  ],
+  "norm20_dictionary": {
+    "C4_rows": [
+      {
+        "minimum_alternating_C4": 15,
+        "minimum_cross_pair_codegree_sum": 60,
+        "minimum_degree_square_sum": 0,
+        "same_edges_per_side": 0
+      },
+      {
+        "minimum_alternating_C4": 23,
+        "minimum_cross_pair_codegree_sum": 68,
+        "minimum_degree_square_sum": 2,
+        "same_edges_per_side": 1
+      },
+      {
+        "minimum_alternating_C4": 31,
+        "minimum_cross_pair_codegree_sum": 76,
+        "minimum_degree_square_sum": 4,
+        "same_edges_per_side": 2
+      },
+      {
+        "minimum_alternating_C4": 39,
+        "minimum_cross_pair_codegree_sum": 84,
+        "minimum_degree_square_sum": 6,
+        "same_edges_per_side": 3
+      }
+    ],
+    "coordinate_magnitude_upper": 2,
+    "magnitude_two_upper": 3,
+    "mixed_profiles_excluded": true,
+    "nonintegral_energy_threshold": 22,
+    "odd_support_minimum_weight": 8,
+    "profile_exclusions": {
+      "m1": "negative-unit neighborhood intersection is at least 8+4-9=3",
+      "m2_mixed": "a magnitude-2 coordinate and a same-sign unit share at least 3 neighbors",
+      "m2_same_sign": "two magnitude-2 coordinates would share 8 neighbors",
+      "m3": "opposite signed mass is at most 7 at a magnitude-2 coordinate"
+    },
+    "same_edges_per_side_upper": 3,
+    "surviving_profile": {
+      "minus_one": 10,
+      "other": 0,
+      "plus_one": 10
+    },
+    "universal_alternating_C4_lower": 15,
+    "zero_sum_profiles_up_to_global_sign": [
+      {
+        "magnitude_two": 0,
+        "minus_one": 10,
+        "minus_two": 0,
+        "plus_one": 10,
+        "plus_two": 0
+      },
+      {
+        "magnitude_two": 1,
+        "minus_one": 7,
+        "minus_two": 1,
+        "plus_one": 9,
+        "plus_two": 0
+      },
+      {
+        "magnitude_two": 2,
+        "minus_one": 4,
+        "minus_two": 2,
+        "plus_one": 8,
+        "plus_two": 0
+      },
+      {
+        "magnitude_two": 2,
+        "minus_one": 6,
+        "minus_two": 1,
+        "plus_one": 6,
+        "plus_two": 1
+      },
+      {
+        "magnitude_two": 3,
+        "minus_one": 1,
+        "minus_two": 3,
+        "plus_one": 7,
+        "plus_two": 0
+      },
+      {
+        "magnitude_two": 3,
+        "minus_one": 3,
+        "minus_two": 2,
+        "plus_one": 5,
+        "plus_two": 1
+      }
+    ]
+  },
+  "projector_relaxation": {
+    "C4_principal_gram": [
+      [
+        "4/9",
+        "-8/63",
+        "1/63",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "4/9",
+        "-8/63",
+        "1/63"
+      ],
+      [
+        "1/63",
+        "-8/63",
+        "4/9",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "1/63",
+        "-8/63",
+        "4/9"
+      ]
+    ],
+    "C4_principal_inverse": [
+      [
+        "532/195",
+        "56/65",
+        "77/195",
+        "56/65"
+      ],
+      [
+        "56/65",
+        "532/195",
+        "56/65",
+        "77/195"
+      ],
+      [
+        "77/195",
+        "56/65",
+        "532/195",
+        "56/65"
+      ],
+      [
+        "56/65",
+        "77/195",
+        "56/65",
+        "532/195"
+      ]
+    ],
+    "alternating_pattern": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "cap25_follows_from_projector_and_distance": false,
+    "cross_polytope_is_not_lattice_or_graph": true,
+    "cross_polytope_minimum_squared_distance": "104/5",
+    "cross_polytope_points_norm16": 80,
+    "minimum_interpolant_squared_norm": "28/5",
+    "norm16_residual_squared_radius": "52/5",
+    "norm18_residual_squared_radius": "62/5",
+    "projector_formula": "E=(27I-9A+J)/63",
+    "required_lattice_minimum_squared_distance": 14,
+    "residual_dimension": 40
+  },
+  "rank30_q14": {
+    "dictionary_extension": "x10=N20",
+    "forced_some_C4_antipodal_extensions": 25,
+    "forced_some_C4_oriented_extensions": 50,
+    "local_cap24_proved": false,
+    "oriented_support_C4_incidence_lower": 102630,
+    "sufficient_universal_antipodal_cap": 24,
+    "wave101_prefix": "x7+x8+x9+x10>=6842"
+  },
+  "scope": {
+    "automorphism_assumed": false,
+    "counts_include_both_signs": true,
+    "prism_free_endpoint_required_for_weighted_rank28": true,
+    "rank28_q16_only_for_weighted_target": true,
+    "rank30_target_does_not_require_prism_free_endpoint": true,
+    "target": "hypothetical srg(99,14,1,2)"
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "N16_upper_bound": null,
+    "N18_upper_bound": null,
+    "novelty": "UNKNOWN",
+    "rank28_excluded": false,
+    "rank30_excluded": false
+  },
+  "weighted_rank28": {
+    "C4_per_antipodal_support_lower": {
+      "norm16_h0": 20,
+      "norm18_h0": 18,
+      "norm18_h1": 26
+    },
+    "cap25_even_integer_weighted_upper": 2115382,
+    "cap25_rational_weighted_upper": "4230765/2",
+    "cap25_would_contradict": true,
+    "cap26_rational_weighted_upper": "10999989/5",
+    "cap26_would_contradict": false,
+    "forced_some_C4_antipodal_extensions": 26,
+    "forced_support_C4_incidence_lower": 53195,
+    "forced_weighted_lower": "407*N16+43*N18>=2165002",
+    "induced_C4_count": 2079,
+    "local_cap25_proved": false,
+    "maximum_ratio": "407/10",
+    "objective_per_C4_incidence_ratios": {
+      "norm16_h0": "407/10",
+      "norm18_h0": "43/9",
+      "norm18_h1": "43/13"
+    },
+    "wave86_integer_identity": "2387*N14+407*N16+43*N18>=13980652",
+    "wave99_N14_upper": 4950,
+    "weighted_lower_value": 2165002
+  }
+}

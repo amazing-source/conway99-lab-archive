@@ -1,0 +1,64 @@
+role: verifier
+date_utc: 2026-07-24T20:33:33Z
+git_commit: NOT_QUERIED_NO_GIT_AUTHORIZED
+frozen_public_base_commit_from_protocol: 0fa5b8161baf8b2a5404a67051b7d61cbc906da3
+claim_label: DERIVED
+comparison_status: STAGE_1_FROZEN_NOT_RELEASED
+scope: >-
+  Clean-room exact unrestricted linear-algebra, orthogonal-projector,
+  43-dimensional residual-spectrum, and complete O-pair-state consequences
+  of the independently verified Wave 33 six-block rooted graph criterion.
+  No Wave 34 discovery artifact was inspected.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave34-continuation-protocol.md: 60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4
+  agents/2026-07-24-wave33-rooted-extension.md: c324dc48f5c7b9524b8b2ac02fae3acb8b9ec342d0a61081ee86ae4771434c0c
+  verification/wave33-rooted-extension/comparison-audit.md: fc7abcd53154d4551a5d3d97d38024840b4228195e143559c9e8b46c15644b8a
+  verification/wave33-rooted-extension/comparison-results.json: 2e36ecade28bca12d35a963a8c6b52777ac7d766a3c4b3267774000fe2e929fd
+  verification/wave33-rooted-extension/precomparison-freeze.md: ba479c6b426c17e79aaf4f57258e9b360eb17b81ba35eb7de77ff5104c96bb17
+  verification/wave33-rooted-extension/independent-results.json: 66cef570dbbb4a86e2a35f780edcfc1873d0ac2c5266f1c2065c902a8f91e778
+  verification/wave33-rooted-extension/independent_check.py: 069f1a72f313d7346a3d6bb8c2cf6e9e209a138343966bbbdd0f8624ea11e359
+method: >-
+  Reconstruct the fixed labeled signed-Fano support; form T=F^T F and
+  R=B B^T; derive exact rational projectors for im(F^T), im(B), their
+  constant intersection, and W=ker(F) intersect ker(B^T); derive
+  D=L+K with K^2+K=12E; evaluate residual and global projectors in exact
+  Q(sqrt(2)) arithmetic; and solve the complete full-rank nine-state
+  row-distribution system forced by the O-O identity and TR=12J.
+command: >-
+  python -B -m unittest discover -s
+  verification/wave34-rooted-structural/precomparison -p test_*.py -v
+  && python -B
+  verification/wave34-rooted-structural/precomparison/exact_check.py
+  --output
+  verification/wave34-rooted-structural/precomparison/exact-results.json
+dependencies:
+  python: 3.13.14
+  libraries: standard library only
+  seed: none
+observed_runtime:
+  unittest_internal_seconds: 29.597
+  unittest_count: 13
+  unittest_result: PASS
+  exact_checker_shell_seconds_approx: 6.5
+coverage:
+  automorphism_restriction: false
+  orbit_representative_restriction: false
+  transitivity_restriction: false
+  selected_O_Q_design_restriction: false
+  linear_algebra_domain: complete for every binary pair satisfying all six blocks
+  pair_partition: complete for all 2415 unordered O-pairs
+outputs:
+  verification/wave34-rooted-structural/precomparison/precomparison-freeze.md: 7c20503d4e00d16a4094979a8c92b40914f32096a18198f86b580bdca30d63db
+  verification/wave34-rooted-structural/precomparison/input-freeze.sha256: 38a538d1015c1d62fbb60b1262851c769222a97c37bb2479835929602967d001
+  verification/wave34-rooted-structural/precomparison/derivation.md: 7e84ada91985dd3c58d62991e6bdaf469e6111bb89d17e11d72cfbc195aab8ab
+  verification/wave34-rooted-structural/precomparison/exact_check.py: f6b3dc40e9f1666d787e8a4971050dcdc183588a810f5ea2a5ce56aa248a4c18
+  verification/wave34-rooted-structural/precomparison/test_exact_check.py: 699cd82df4acf3076f22cd55709ae26706389940bcd8b280852af49a8339b862
+  verification/wave34-rooted-structural/precomparison/exact-results.json: 9b4c2e00d50e142b4ae551741b8b5b9afda8ecaad0a3085c3cd549c07975ca60
+  verification/wave34-rooted-structural/precomparison/limitations.md: 9e407b4c3f5a278996cb3a5c1849aaa2e74b215d41d7782e4712d22b95335055
+limitations:
+  - No unseen Wave 34 candidate is certified or compared.
+  - No binary D,B pair or 99-vertex adjacency certificate is produced.
+  - No complete exclusion or proof-producing unsatisfiability certificate is produced.
+  - The 43-dimensional rational residual is not an integral or binary parameterization.
+  - Rooted graph extension, full endpoint, n3=708, Conway-99, and novelty remain UNKNOWN.

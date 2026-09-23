@@ -1,0 +1,366 @@
+{
+  "arithmetic": "exact integers and fractions only",
+  "candidate_commit": "a8b0c34040f6857b3c5ebcc44f108e03a4159088",
+  "schema_version": 1,
+  "sections": {
+    "D_E_commutation_control": {
+      "D": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "DE_minus_ED": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "D_does_not_preserve_im_E": true,
+      "E": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ]
+    },
+    "basis_change": {
+      "M_is_preserved": true,
+      "X_transpose_X_equals_21_S_inverse": true,
+      "contragredient_P_inverse_transpose": [
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "integrality_is_preserved": true,
+      "transformed_S": [
+        [
+          21,
+          21
+        ],
+        [
+          21,
+          42
+        ]
+      ],
+      "transformed_X": [
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "unimodular_P": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "connectivity_control": {
+      "cross_component_mu": 0,
+      "edge_lambda": 1,
+      "global_constancy_fails": true,
+      "graph": "disjoint union of two triangles",
+      "local_edge_cancellation": true,
+      "signed_degrees": [
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "divisibility": {
+      "complement_pairs": [
+        [
+          0,
+          231
+        ],
+        [
+          33,
+          198
+        ],
+        [
+          66,
+          165
+        ],
+        [
+          99,
+          132
+        ]
+      ],
+      "projector_trace_simplification": {
+        "conclusion": "only empty and full coordinate blocks survive",
+        "sizes_also_divisible_by_33": [
+          0,
+          231
+        ],
+        "sizes_with_integral_projector_trace": [
+          0,
+          21,
+          42,
+          63,
+          84,
+          105,
+          126,
+          147,
+          168,
+          189,
+          210,
+          231
+        ],
+        "trace_formula": "rank(E_I)=4*|I|/21"
+      },
+      "proper_block_contradictions": 10,
+      "proper_rootless_lattice_blocks": [
+        {
+          "block_size": 21,
+          "block_size_mod_33": 21,
+          "rank": 4
+        },
+        {
+          "block_size": 42,
+          "block_size_mod_33": 9,
+          "rank": 8
+        },
+        {
+          "block_size": 63,
+          "block_size_mod_33": 30,
+          "rank": 12
+        },
+        {
+          "block_size": 84,
+          "block_size_mod_33": 18,
+          "rank": 16
+        },
+        {
+          "block_size": 105,
+          "block_size_mod_33": 6,
+          "rank": 20
+        },
+        {
+          "block_size": 126,
+          "block_size_mod_33": 27,
+          "rank": 24
+        },
+        {
+          "block_size": 147,
+          "block_size_mod_33": 15,
+          "rank": 28
+        },
+        {
+          "block_size": 168,
+          "block_size_mod_33": 3,
+          "rank": 32
+        },
+        {
+          "block_size": 189,
+          "block_size_mod_33": 24,
+          "rank": 36
+        },
+        {
+          "block_size": 210,
+          "block_size_mod_33": 12,
+          "rank": 40
+        }
+      ],
+      "proper_union_rank_units": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "rank_unit_partitions_of_11": 55,
+      "signed_double_count_solutions": [
+        {
+          "block_size": 0,
+          "signed_degree": -7
+        },
+        {
+          "block_size": 33,
+          "signed_degree": -5
+        },
+        {
+          "block_size": 66,
+          "signed_degree": -3
+        },
+        {
+          "block_size": 99,
+          "signed_degree": -1
+        },
+        {
+          "block_size": 132,
+          "signed_degree": 1
+        },
+        {
+          "block_size": 165,
+          "signed_degree": 3
+        },
+        {
+          "block_size": 198,
+          "signed_degree": 5
+        },
+        {
+          "block_size": 231,
+          "signed_degree": 7
+        }
+      ],
+      "wave30_residues_mod_33": {
+        "105": 6,
+        "126": 27
+      }
+    },
+    "incidence_transport": {
+      "K_one_scale": 3,
+      "N_is_injective_on_im_E": true,
+      "N_maps_im_E_onto_minus_four_eigenspace": true,
+      "commutator_coefficients": {
+        "AK": -9,
+        "JK": 1,
+        "KA": 9,
+        "KJ": -1
+      },
+      "image_dimension": 44,
+      "minus_four_eigenspace_dimension": 44,
+      "projector_eigenspace_values": [
+        {
+          "J_eigenvalue": 99,
+          "adjacency_eigenvalue": 14,
+          "projector_value": 0
+        },
+        {
+          "J_eigenvalue": 0,
+          "adjacency_eigenvalue": 3,
+          "projector_value": 0
+        },
+        {
+          "J_eigenvalue": 0,
+          "adjacency_eigenvalue": -4,
+          "projector_value": 1
+        }
+      ],
+      "reduced_commutator_left_scale": 3
+    },
+    "rootless_support": {
+      "every_norm_four_row_has_one_block_support": true,
+      "every_positive_rank_lattice_block_has_nonempty_row_set": true,
+      "minimum_four_norm_partitions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "minimum_two_countermodel": {
+        "S": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "nonzero_block_components": 2,
+        "row": [
+          1,
+          1
+        ],
+        "row_norm": 4
+      }
+    },
+    "symmetric_invariance": {
+      "all_commute_with_projector": true,
+      "nonsymmetric_countermodel": {
+        "K": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "KP_minus_PK": [
+          [
+            0,
+            -1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "K_preserves_span_e1": true,
+        "P": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "symmetric_preserving_matrices_checked": 25
+    },
+    "triangle_cancellation": {
+      "adjacent_pair": [
+        0,
+        1
+      ],
+      "common_neighbors": [
+        2
+      ],
+      "mutated_ZA_minus_AZ_entry": 2,
+      "no_omitted_summands": true,
+      "triangle_consistent_ZA_minus_AZ_entry": 0
+    }
+  },
+  "status_walls": {
+    "Conway_99": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rooted_endpoint_forms": "UNKNOWN",
+    "rootless_indecomposable_endpoint_forms": "UNKNOWN"
+  },
+  "verdict": "PASS_NO_FATAL_GAP"
+}

@@ -1,0 +1,22 @@
+Wave 45 verifier final local QA
+Date UTC: 2026-07-27
+
+PASS clean-room full reconstruction replay
+  independent-results sha256: 8d9a004392e3f642c0aacf272a33f7cce2bc21254e79fe4123bec5a065ae0bac
+  coefficient records: 484
+  nonzero ordered coefficient entries: 16660
+
+PASS immutable checkpoint comparison replay
+  comparison-results sha256: 936fca299c5c0cfb6fd226e0542b07bf744877eab6366a6e840895888cf3daf1
+  exact cuts replayed: 17
+  exact witnesses replayed: 15
+  stored negative directions replayed: 12
+
+PASS unittest suite
+  tests: 15
+  failures: 0
+  errors: 0
+
+PASS strict JSON
+PASS run-report YAML parse
+

@@ -1,0 +1,462 @@
+{
+  "claim_label": "DERIVED_INCONCLUSIVE",
+  "conclusion": {
+    "conway_99_status": "UNKNOWN",
+    "deck_system_at_n3_705": "FEASIBLE",
+    "graph_construction": false,
+    "new_lower_bound_beyond_n3_705": null,
+    "published_hamiltonian_formulas_at_h11_2820": "COMPATIBLE_WITH_WITNESS",
+    "warning": "An integer subgraph-count witness for necessary equations is not an adjacency matrix and is not evidence that the target strongly regular graph exists."
+  },
+  "deletion_matrix": {
+    "column_sum": 7,
+    "finite_field_ranks": {
+      "11": 62,
+      "2": 48,
+      "3": 57,
+      "5": 61,
+      "7": 61
+    },
+    "real_rank": 62,
+    "real_rank_reason": "rank over F_11 is 62, the number of rows",
+    "shape": [
+      62,
+      208
+    ]
+  },
+  "exact_checks": {
+    "all_19_published_hamiltonian_counts": "PASS",
+    "all_62_deletion_equations": "PASS",
+    "nonnegative_integer_counts": "PASS",
+    "seven_subset_total": 14887031544
+  },
+  "hamiltonian_alignment": {
+    "coordinate_convention": "figure perimeter vertices 0,...,6 clockwise with 0 at top; listed edges are extra chords beyond the perimeter C7",
+    "figure_transcription_covers_independent_hamiltonian_census": true,
+    "source_H_counts": {
+      "0": 1237530,
+      "1": 930270,
+      "10": 1410,
+      "11": 2820,
+      "12": 4158,
+      "13": 1410,
+      "14": 2820,
+      "15": 1410,
+      "16": 1410,
+      "17": 3453,
+      "18": 0,
+      "2": 1013430,
+      "3": 163500,
+      "4": 163500,
+      "5": 81750,
+      "6": 160680,
+      "7": 78930,
+      "8": 321360,
+      "9": 160680
+    },
+    "source_H_records": [
+      {
+        "canonical_mask": 44336,
+        "extra_chords": [],
+        "figure_panel": "omitted bare C7",
+        "published_count": 1237530,
+        "source_index": 0
+      },
+      {
+        "canonical_mask": 44337,
+        "extra_chords": [
+          [
+            6,
+            1
+          ]
+        ],
+        "figure_panel": 1,
+        "published_count": 930270,
+        "source_index": 1
+      },
+      {
+        "canonical_mask": 44340,
+        "extra_chords": [
+          [
+            5,
+            2
+          ]
+        ],
+        "figure_panel": 2,
+        "published_count": 1013430,
+        "source_index": 2
+      },
+      {
+        "canonical_mask": 44339,
+        "extra_chords": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "figure_panel": 3,
+        "published_count": 163500,
+        "source_index": 3
+      },
+      {
+        "canonical_mask": 44341,
+        "extra_chords": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "figure_panel": 4,
+        "published_count": 163500,
+        "source_index": 4
+      },
+      {
+        "canonical_mask": 44348,
+        "extra_chords": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "figure_panel": 5,
+        "published_count": 81750,
+        "source_index": 5
+      },
+      {
+        "canonical_mask": 44466,
+        "extra_chords": [
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "figure_panel": 6,
+        "published_count": 160680,
+        "source_index": 6
+      },
+      {
+        "canonical_mask": 48692,
+        "extra_chords": [
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "figure_panel": 7,
+        "published_count": 78930,
+        "source_index": 7
+      },
+      {
+        "canonical_mask": 44472,
+        "extra_chords": [
+          [
+            6,
+            1
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "figure_panel": 8,
+        "published_count": 321360,
+        "source_index": 8
+      },
+      {
+        "canonical_mask": 44404,
+        "extra_chords": [
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "figure_panel": 9,
+        "published_count": 160680,
+        "source_index": 9
+      },
+      {
+        "canonical_mask": 44467,
+        "extra_chords": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "figure_panel": 10,
+        "published_count": 1410,
+        "source_index": 10
+      },
+      {
+        "canonical_mask": 48756,
+        "extra_chords": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "figure_panel": 11,
+        "published_count": 2820,
+        "source_index": 11
+      },
+      {
+        "canonical_mask": 111980,
+        "extra_chords": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "figure_panel": 12,
+        "published_count": 4158,
+        "source_index": 12
+      },
+      {
+        "canonical_mask": 44412,
+        "extra_chords": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "figure_panel": 13,
+        "published_count": 1410,
+        "source_index": 13
+      },
+      {
+        "canonical_mask": 44474,
+        "extra_chords": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "figure_panel": 14,
+        "published_count": 2820,
+        "source_index": 14
+      },
+      {
+        "canonical_mask": 111988,
+        "extra_chords": [
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "figure_panel": 15,
+        "published_count": 1410,
+        "source_index": 15
+      },
+      {
+        "canonical_mask": 48824,
+        "extra_chords": [
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "figure_panel": 16,
+        "published_count": 1410,
+        "source_index": 16
+      },
+      {
+        "canonical_mask": 111989,
+        "extra_chords": [
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "figure_panel": 17,
+        "published_count": 3453,
+        "source_index": 17
+      },
+      {
+        "canonical_mask": 120568,
+        "extra_chords": [
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "figure_panel": 18,
+        "published_count": 0,
+        "source_index": 18
+      }
+    ],
+    "source_H_to_canonical_mask": {
+      "0": 44336,
+      "1": 44337,
+      "10": 44467,
+      "11": 48756,
+      "12": 111980,
+      "13": 44412,
+      "14": 44474,
+      "15": 111988,
+      "16": 48824,
+      "17": 111989,
+      "18": 120568,
+      "2": 44340,
+      "3": 44339,
+      "4": 44341,
+      "5": 44348,
+      "6": 44466,
+      "7": 48692,
+      "8": 44472,
+      "9": 44404
+    }
+  },
+  "independent_census": {
+    "canonicalization": "least mask over all vertex permutations",
+    "criterion": "inside common-neighbor count <=1 for each edge and <=2 for each nonedge",
+    "hamiltonian_classes": 19,
+    "order_6_unlabeled_classes": 62,
+    "order_7_labeled_masks": 394020,
+    "order_7_unlabeled_classes": 208
+  },
+  "parameters": {
+    "h11": 2820,
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "n": 99,
+    "n3": 705
+  },
+  "schema_version": 1,
+  "scope": "Feasibility at n3=705,h11=2820 of all 62 order-7 vertex-deletion deck equations and all 19 pinned published Hamiltonian-type counts",
+  "source_freeze": {
+    "hamiltonian_archive": {
+      "sha256": "10f8d9ea09dc72f4ca6bce4e9427ff1df32718d2978bb35a16db1af3c27cc39a",
+      "url": "https://export.arxiv.org/e-print/2511.06572v1"
+    },
+    "hamiltonian_figure": {
+      "archive_path": "hamiltonian_7.jpg",
+      "panels": "1-18; H_0 is the omitted bare C7",
+      "sha256": "e37f794e7765c947d3ea76104e9c4c61a00517b649d8b7bea9eb67644fe08a2e"
+    },
+    "hamiltonian_tex": {
+      "archive_path": "Hamiltonian_Subgraphs_of_Order_Seven.tex",
+      "formula_lines": "177-195",
+      "sha256": "0b06fdc1c2951a344592c6af23abd133c4a8a68d717f199e7a0e2d7ceb909d0a"
+    },
+    "six_formula_artifact": {
+      "path": "attempts/wave21-six-vertex-lp/exact-results.json",
+      "sha256": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b"
+    }
+  },
+  "witness": {
+    "deck_rows_passed": 62,
+    "hamiltonian_types_passed": 19,
+    "maximum_count": 3543649353,
+    "minimum_positive_count": 1,
+    "path": "attempts/wave22-full-seven-deck/witness.json",
+    "sha256": "d74453faa91e42abbe2343d428296818ae051be579305277eff6f113fe66c47d",
+    "support_sha256": "cb73fed415067b1e36d6ac20d877c251690a99041da7999ec9100270a490789a",
+    "support_size": 105,
+    "total_count": 14887031544,
+    "zero_count_class_count": 103
+  }
+}

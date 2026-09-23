@@ -1,0 +1,97 @@
+role: verifier
+date_utc: 2026-07-23T17:41:37Z
+git_commit: 74af1fa495971d04c7363ec05aa77ef15857b04a
+claim_label: VERIFIED
+scope: >-
+  Independent reproduction of the Wave 21 encoded necessary-condition
+  exhaustion: all 62 target-specialized six-vertex formulas, all 19
+  Hamiltonian seven-vertex formulas, 4-to-5 and 5-to-6 deletion decks and
+  index alignments, exact feasibility at and above n3=705, and the alleged
+  missing +n23 term in the printed m7(n-5) equation.
+inputs:
+  candidate_report:
+    path: agents/2026-07-23-wave21-six-vertex-lp.md
+    sha256: e4b7c4bbbd8a4faff552cd55a8f94f9949d3232811e6ef5aec139e50e34e55a8
+  candidate_checker:
+    path: attempts/wave21-six-vertex-lp/exact_check.py
+    sha256: 0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3
+  candidate_results:
+    path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  six_source_archive:
+    url: https://export.arxiv.org/e-print/2508.03377v2
+    sha256: f8429d2f839267e2aaf98b04451cb2f0252c0353f75bee6ec6e6947eab0d5834
+  six_source_tex:
+    archive_path: The_Subgraphs_of_Order_Six.tex
+    sha256: 823bcaf636a99f6655af453b2a910b9953338db980480572bca81730cfa1b44f
+  seven_source_archive:
+    url: https://export.arxiv.org/e-print/2511.06572v1
+    sha256: 10f8d9ea09dc72f4ca6bce4e9427ff1df32718d2978bb35a16db1af3c27cc39a
+  seven_source_tex:
+    archive_path: Hamiltonian_Subgraphs_of_Order_Seven.tex
+    sha256: 0b06fdc1c2951a344592c6af23abd133c4a8a68d717f199e7a0e2d7ceb909d0a
+method: >-
+  Freeze the candidate bytes before inspection; independently download and
+  hash the primary sources; parse their arithmetic with an exact local
+  parser; exhaust locally admissible graph masks without assuming a target
+  automorphism; canonicalize under all degree-compatible permutations;
+  reconstruct deletion decks and source-index bijections; preserve the raw
+  printed failure; try every possible one-card correction; derive exact
+  affine integrality and nonnegativity regions; run hostile mutations; and
+  compare with the candidate only after fixing independent results.
+command: |-
+  .venv\Scripts\python.exe -B verification\wave21-six-vertex-lp\independent_check.py --six-tex <six-tex> --seven-tex <seven-tex> --mode raw --output verification\wave21-six-vertex-lp\independent-raw-printed-results.json
+  .venv\Scripts\python.exe -B verification\wave21-six-vertex-lp\independent_check.py --six-tex <six-tex> --seven-tex <seven-tex> --mode corrected --output verification\wave21-six-vertex-lp\independent-corrected-results.json
+  $env:WAVE21_SIX_TEX='<six-tex>'
+  $env:WAVE21_SEVEN_TEX='<seven-tex>'
+  .venv\Scripts\python.exe -B -m unittest -v verification\wave21-six-vertex-lp\test_independent_check.py
+outputs:
+  preinspection_freeze:
+    path: verification/wave21-six-vertex-lp/2026-07-23T172537Z-preinspection-freeze.json
+    sha256: 5b5577393b343d876e868f13cd57b80b543e4c61be5f0b84e4a2e8244087d717
+  independent_checker:
+    path: verification/wave21-six-vertex-lp/independent_check.py
+    sha256: d77a7bf134ab73975171245c004ddc0bc9405d428ed35f60c6ae1f004dc92f24
+  hostile_tests:
+    path: verification/wave21-six-vertex-lp/test_independent_check.py
+    sha256: d99dff439b90d1af4c180397a79bebd1b9de9353f892c3a9255dc856463a7d3d
+  raw_printed_results:
+    path: verification/wave21-six-vertex-lp/independent-raw-printed-results.json
+    sha256: 50129e12b180c4f7ad7655cb4febe229588a855042a04b28817eeb52a3b27fb6
+    process_exit: 1
+    verdict: FAIL_AS_PRINTED
+  corrected_results:
+    path: verification/wave21-six-vertex-lp/independent-corrected-results.json
+    sha256: 1c0cc560206ce388308573f2174a0a6189ae909f83a4acb86093063b5adfeacd
+    process_exit: 0
+    verdict: PASS_EXPLICIT_CORRECTION
+  candidate_comparison:
+    path: verification/wave21-six-vertex-lp/candidate-comparison.json
+    sha256: 99222ab7b48d3c888e1f03684a25b771cc52d8a8e9d9faf0b12664b6b919671f
+  source_manifest:
+    path: verification/wave21-six-vertex-lp/source-manifest.json
+    sha256: ac44ce9120fdad127177bed6925517dfd59529d836d4ea06c3693441441d6465
+  raw_stderr:
+    path: verification/wave21-six-vertex-lp/raw.stderr.log
+    sha256: 086305f7860b7fee49ff5eeaae9bc4bb4efa97be44efe33371bd374c8b05b6d0
+  corrected_stdout:
+    path: verification/wave21-six-vertex-lp/corrected.stdout.log
+    sha256: 2acd33d6d9726e2ee1b0675bbfefbadf90e219525e0ec5e3d4144b7d85c00611
+  test_stderr:
+    path: verification/wave21-six-vertex-lp/test.stderr.log
+    sha256: dbdb433bb80cc04c9a88adc8bdfda92d44c8a49f7d7c30250b696a4cc1fefafe
+  tests: "19/19 PASS"
+  raw_json_replay: PASS_BYTE_IDENTICAL
+  corrected_json_replay: PASS_BYTE_IDENTICAL
+  candidate_freeze_recheck: "0/12 changed"
+  raw_printed_equations: "20/21 zero residuals; m7 residual exactly n23"
+  corrected_equations: "21/21 zero residuals"
+  local_class_census: "9,21,62,19"
+  incumbent_feasible_n3: "705,708,...,4158 (1152 values)"
+limitations: >-
+  The source formulas and local deck identities are necessary conditions, not
+  a construction or nonexistence proof for the target graph. The seven-vertex
+  source covers Hamiltonian types only. Internal source consistency does not
+  re-prove every prose derivation in the papers. The scoped audit makes no
+  Conway-99 resolution or novelty claim, and the verifier has not changed
+  central project status; the orchestrator controls publication labels.

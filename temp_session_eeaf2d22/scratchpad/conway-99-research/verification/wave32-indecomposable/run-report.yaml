@@ -1,0 +1,64 @@
+role: verifier
+date_utc: 2026-07-24T09:11:17Z
+git_commit: NOT_USED_NO_GIT_PER_TASK
+claim_label: VERIFIED
+verifier_status: VERIFIED_SCOPED_WITH_NONBLOCKING_COVERAGE_GAPS
+audit_verdict: PASS_SCOPED_WITH_NONBLOCKING_COVERAGE_GAPS
+scope: >-
+  Independent adversarial verification of necessary reductions for the
+  frozen Wave 32 rootless, integrally indecomposable, rank-44 n3=708
+  endpoint package. Motif forcing, endpoint existence, n3=708,
+  Conway-99, and novelty remain UNKNOWN.
+inputs:
+  freeze_file:
+    path: verification/wave32-indecomposable/input-freeze.sha256
+    sha256: 4f4ea00d14ff22a94d02003e62d0524d03505610373fa1bc91e61e0ca86f8358
+  precomparison_freeze:
+    path: verification/wave32-indecomposable/precomparison-freeze.sha256
+    sha256: 18953de50587877c1f61a913ba4d7e14ba5d6512706601f89316fe597c27d7aa
+method: >-
+  Freeze candidate and upstream premise hashes; independently reconstruct
+  the primitive-row, connectivity, motif, trace, endpoint-count, and
+  finite-field obligations using only the Python standard library; build
+  premise-dropping hostile controls; freeze the first clean-room result;
+  then compare the candidate statically without importing or executing its
+  checker.
+command: >-
+  python -B -m unittest discover -s
+  verification/wave32-indecomposable -p test_independent_check.py -v
+outputs:
+  audit:
+    path: verification/wave32-indecomposable/audit.md
+    sha256: 15285e618b3a38c91c5d2e373dcb859720a2062d9ca108cd79cae12506a53f44
+  failed_objections:
+    path: verification/wave32-indecomposable/failed-objections.md
+    sha256: 0205c59e77af163b4c285693871188ac09bbaba85814d87782a2e8dd9ceef494
+  checker:
+    path: verification/wave32-indecomposable/independent_check.py
+    sha256: cfe20ac8424d45cd6dad3f8ad41e46fe55a4edeb2e24032bea2707ca4d5fd01a
+  results:
+    path: verification/wave32-indecomposable/independent-results.json
+    sha256: 4b90ef54358a14abc92c925c8e0f94ed9510b4f80857fde5aa4e2abf4ba89e2a
+  tests:
+    path: verification/wave32-indecomposable/test_independent_check.py
+    sha256: 0ecd29d4511356b98d0f295126ae69ae00fd2ce500113b6a9bfd313131d308fe
+test_summary:
+  unittest_count: 19
+  status: PASS
+  deterministic_json: PASS
+  candidate_manifests: PASS
+  candidate_executable_replay: NOT_RUN
+verified:
+  - primitive X implies its rows generate Z^44
+  - row-support connectivity is equivalent to integral indecomposability under minimum four
+  - Wave 31 actual-incidence divisibilities force connected support
+  - the switched {-2,-2,-1} triangle is the unique endpoint-alphabet norm-two motif
+  - the mixed-trace normalization factor is exactly two
+  - all ordered and unordered endpoint pair counts
+  - the corrected F3 and F7 ranks and the exact self-orthogonality boundary
+  - a full-size connected 231-row binary hostile control
+limitations:
+  - No target graph, integral endpoint frame, or rootless indecomposable lattice is constructed or excluded.
+  - The exact pair-count hostile graph is not a positive-semidefinite rank-44 endpoint projector.
+  - The binary hostile control does not preserve the endpoint's integral entry multiplicities.
+  - No Git action and no candidate executable replay were performed.

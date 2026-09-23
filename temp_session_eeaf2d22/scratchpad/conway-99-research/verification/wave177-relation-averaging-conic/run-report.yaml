@@ -1,0 +1,40 @@
+role: verifier
+date_utc: 2026-07-28T22:34:38Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional rank-11 endpoint adjacent and nonadjacent true cross-star
+  relation averages and support bounds, adjacent coefficient-sum lift, and
+  the type-4+2 complete-conic frame null control.
+inputs:
+  - attempts/wave177-relation-averaging-conic/package-manifest.sha256
+method: >-
+  Independent full-support code averaging over true coefficient-relation
+  spaces; exact removal of individual-star subcodes; direct reconstruction
+  of the type-4+2 weight-four Gram word; and exact PG(2,3) frame summation.
+  No graph, code, SAT, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave177-relation-averaging-conic\independent_check.py --verify
+  verification\wave177-relation-averaging-conic\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave177-relation-averaging-conic\test_independent_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave177-relation-averaging-conic\exact_check.py --verify
+  attempts\wave177-relation-averaging-conic\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave177-relation-averaging-conic\test_exact_check.py
+outputs:
+  - verification/wave177-relation-averaging-conic/README.md
+  - verification/wave177-relation-averaging-conic/audit.md
+  - verification/wave177-relation-averaging-conic/protocol.md
+  - verification/wave177-relation-averaging-conic/independent_check.py
+  - verification/wave177-relation-averaging-conic/independent-results.json
+  - verification/wave177-relation-averaging-conic/test_independent_check.py
+  - verification/wave177-relation-averaging-conic/input-freeze.sha256
+limitations:
+  - Relations indexed by different vertex pairs are not proved distinct.
+  - The conic frame is a null control, not a local or global endpoint
+    completion.
+  - The endpoint and rank-11 branch remain unexcluded.
+  - External novelty is UNKNOWN.

@@ -1,0 +1,41 @@
+role: construction
+date_utc: 2026-07-27T21:31:58Z
+git_commit: 4bb1989e9e286b2ec753a855db58ad584e31f63a
+claim_label: DERIVED
+scope: >-
+  Conditional kappa=3 one-triangle neighbour-core component classification,
+  exact invariant and candidate-support scans, aligned BB^T enumeration, and
+  bounded construction telemetry.
+inputs:
+  - path: verification/wave36-block-compatibility/independent-results.json
+    sha256: b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4
+  - path: attempts/wave58-cross-incidence-rank/exact-results.json
+    sha256: ec03c32fc72ec75222049a49b194b10bcae6bf1122ac82d9d9943e5b2f63181a
+method: >-
+  Exhaustive coordinate-normalized component enumeration; full
+  fibre-preserving canonicalization; exact integer characteristic
+  polynomials and F2 Gaussian elimination; simultaneous fibre-coordinate
+  orbit reduction; exact six-subset enumeration; sequential-counter PB/SAT;
+  exact-marginal local search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave60-c3-incidence-design\test_exact_check.py
+outputs:
+  - path: attempts/wave60-c3-incidence-design/exact-results.json
+    sha256: 35b6436c7ba5619fcf7e3840cbdacd594461c01df8758686450f5d8eea8e36f3
+  - path: attempts/wave60-c3-incidence-design/component-census.json
+    sha256: 16e124587df5b37b3f4735e14894982750c60a303043125985383101331eb4de
+  - path: attempts/wave60-c3-incidence-design/invariant-results.json
+    sha256: 210fa11c1f9e2184d752cac8a51feebee0d7f5ddbee2b5af6c87df1e23b91b7a
+  - path: attempts/wave60-c3-incidence-design/triple-0580-enumeration.json
+    sha256: 0c1077e44f5bd3995ecb27566bea86abadf9500d0a828150e26033ef62b5ed6d
+  - path: attempts/wave60-c3-incidence-design/triple-0580-glucose-10k.json
+    sha256: 426136bdda61ff051d858cd40322987e5b396f1e90d1dd22fddce098cb2a7e7e
+limitations:
+  - No full 36 by 60 incidence matrix B is supplied.
+  - No UNSAT proof or independently replayable exhaustive exclusion is supplied.
+  - The F2 rank and individual-column-support filters reject no triples.
+  - Local-search null results are not nonexistence evidence.
+  - No compatible Y graph or full SRG is constructed.
+  - Discovery does not verify itself.
+  - The kappa=3 case, prism-free endpoint, and Conway-99 remain UNKNOWN.

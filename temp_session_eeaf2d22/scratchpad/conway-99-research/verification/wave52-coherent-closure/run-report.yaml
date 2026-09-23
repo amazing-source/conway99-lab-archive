@@ -1,0 +1,66 @@
+role: verifier
+date_utc: 2026-07-27T19:27:42Z
+git_commit: 30e8eab5b718bd59a161e6d43dfc1d7671d2f3bb
+claim_label: VERIFIED
+scope: >-
+  Independent exact verification of the one-root completion-free coherent
+  closure conditional on a prism-free putative srg(99,14,1,2). This does not
+  verify the endpoint or construct a graph.
+inputs:
+  - path: attempts/wave52-coherent-closure/package-manifest.sha256
+    sha256: 4b25853eca8ed96f5beea74e4e51ef744259a8436510d23c443b8e3f140692b3
+  - path: attempts/wave52-coherent-closure/exact-result.json
+    sha256: 75951c260b3a0dda55c2acc324fc6c60322778a72eabb049445d3a87f982e2e9
+  - path: agents/2026-07-27-wave52-coherent-closure.md
+    sha256: 756dc49e787c2a74f456a26f9126481fdb8865575ae50d4cdc96827c77538112
+  - path: verification/wave52-coherent-closure/input-freeze.sha256
+    sha256: 9ca7b153776c5924cc6444a9e6b41fb03bbe839fa85e05048ec38b323546f6a4
+method: >-
+  Freeze all discovery inputs, independently derive the rooted arithmetic,
+  rebuild typed 19-node and 163-node colored structures, run exact directed
+  ordered-pair 2-WL without importing discovery code, reconstruct stable
+  intersection tensors, check all 64 canonical factor-profile triples and
+  their exact-two caps, compare all 4096 fingerprint equivalence decisions,
+  and require five hostile mutations to be rejected.
+command: |-
+  python -B verification\wave52-coherent-closure\independent_check.py --verify verification\wave52-coherent-closure\independent-result.json
+  python -B -m unittest discover -s verification\wave52-coherent-closure -p "test_*.py" -v
+outputs:
+  - path: verification/wave52-coherent-closure/independent_check.py
+    sha256: 39b4042715b837fce25279f86055a5ce2e0c6abcddd7b9e73d291d318def2738
+  - path: verification/wave52-coherent-closure/independent-result.json
+    sha256: 1f894c9b001f0b8621f4215fbb1c370c81a4932cdbc774272e25e2c21d1442c6
+  - path: verification/wave52-coherent-closure/test_independent_check.py
+    sha256: f300a1f1c27aed4772abc87b3b7e82ddf5be1bc79de47e11a4a178deaf1e029b
+  - path: verification/wave52-coherent-closure/audit.md
+    sha256: 626cda19a50aefc32b6b562cf7aceda510580cb57fc3749ee01e4d25343438fd
+result:
+  rooted_K_graph: 3K6
+  global_valencies_I_K_D_C_B: [1, 18, 32, 144, 36]
+  per_petal_per_opposite_sector_B_C_D: [2, 4, 0]
+  partial_color_trajectory: [6]
+  constraint_template_color_trajectory: [26, 38, 47]
+  constraint_template_diagonal_classes: [1, 18, 36, 108]
+  canonical_profiles_checked: 64
+  distinct_fingerprints: 39
+  stable_completed_color_range: [8, 361]
+  all_fingerprint_equivalence_comparisons: 4096
+  positive_integral_local_cap_completions: true
+  hostile_mutations_detected: 5
+  new_forced_obstruction: false
+  endpoint: UNKNOWN
+  conway_99: UNKNOWN
+tests:
+  exact_replay: >-
+    PASS_INDEPENDENT_WAVE52_REPLAY
+    sha256=1f894c9b001f0b8621f4215fbb1c370c81a4932cdbc774272e25e2c21d1442c6
+    endpoint=UNKNOWN
+  unit_tests: "PASS: 8 tests in 6.331 seconds"
+  memory_floor: "PASS: enforced 20 percent; host remained above 51 percent free"
+limitations:
+  - "The verified scope is one root triangle and its 18 K-neighbors."
+  - "The 163-node object records cap incidence but does not solve its Boolean CSP."
+  - "The 64 profile triples are canonical diagnostics, not all labelled completions."
+  - "A local cap completion need not extend to a 99-vertex graph."
+  - "No automorphism, transitivity, or association scheme is assumed."
+  - "No endpoint exclusion, graph construction, improved upper bound, or novelty claim follows."

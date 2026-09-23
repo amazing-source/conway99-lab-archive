@@ -1,0 +1,29 @@
+Wave 59 clean-room verification tests
+Date UTC: 2026-07-27T21:25:54Z
+Interpreter: .\.venv\Scripts\python.exe
+
+Command:
+.\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave59-incidence-spectral-excess -p "test_*.py" -v
+
+Result:
+Ran 14 tests in 0.013s
+OK
+
+Covered checks:
+- exact predistance Gram--Schmidt, orthogonality, and normalization
+- exact N/L/K spectral consequences and distance-layer balances
+- relation valencies and K^2/K^3 tables
+- defect, projection, and pair-neighborhood Gram arithmetic
+- independent Ihara--Bass formal-log traces and simple cycles
+- independent C8 count from SRG nonedges
+- biregular Moore-tree arithmetic
+- relation-label order invariance
+- hostile B-valency and predistance-coefficient mutations
+- hash-gated comparison with sealed exact-result.json
+
+Resource check after run:
+FreePhysicalMemory=24965604 KiB
+TotalVisibleMemorySize=66225656 KiB
+FreePhysicalMemoryPercent=37.70
+RequiredMinimumPercent=15.00
+PASS

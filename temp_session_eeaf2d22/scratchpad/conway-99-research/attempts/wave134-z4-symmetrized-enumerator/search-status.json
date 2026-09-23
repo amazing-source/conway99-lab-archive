@@ -1,0 +1,44 @@
+{
+  "claim_label": "UNKNOWN",
+  "format": "wave134-search-status-v1",
+  "integral_scout": {
+    "classification": "UNKNOWN_NOT_RUN_CORRECTED_MODEL",
+    "reason": "The corrected rational model was not run before the package boundary."
+  },
+  "numerical_support_discovery": {
+    "classification": "INVALIDATED_PRESEAL_UNDERCOUNTED_MODEL",
+    "inference": "NONE",
+    "solver": "HiGHS 1.12.0 through scipy.optimize.linprog"
+  },
+  "rational_full_exact": {
+    "classification": "INVALIDATED_PRESEAL_UNDERCOUNTED_MODEL",
+    "hard_wall_seconds": 300,
+    "inference": "NONE",
+    "maximum_observed_working_set_gib": "3.3",
+    "model": {
+      "allowed_dual_orbits": 1118,
+      "forbidden_dual_orbits": 157,
+      "primal_orbits": 1119
+    }
+  },
+  "rational_incremental_exact": {
+    "active_nonnegativity_rows": 8,
+    "classification": "INVALIDATED_PRESEAL_UNDERCOUNTED_MODEL",
+    "hard_wall_seconds": 180,
+    "inference": "NONE",
+    "zero_rows": 157
+  },
+  "corrected_model": {
+    "allowed_dual_orbits": 1114,
+    "classification": "UNKNOWN_NOT_RUN",
+    "dual_expanded_compositions": 44,
+    "dual_forced_words": 4126784,
+    "dual_orbits": 22,
+    "forbidden_dual_orbits": 161,
+    "primal_expanded_compositions": 84,
+    "primal_forced_words": 8557760,
+    "primal_orbits": 42
+  },
+  "recorded_utc": "2026-07-28T07:50:06Z",
+  "scope": "Full symmetrized Z4 MacWilliams relaxation with all nonzero primal and all even-sum dual coefficient patterns through support size three."
+}

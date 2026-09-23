@@ -1,0 +1,290 @@
+{
+  "a2_cubic_floor": {
+    "active_premises": [
+      "orthogonal even A2 summand of S",
+      "231-column row norms x_i^T*S*x_i=4",
+      "sum_i x_i*x_i^T=21*S^-1"
+    ],
+    "cubic_gram": [
+      [
+        8,
+        -1,
+        1
+      ],
+      [
+        -1,
+        8,
+        1
+      ],
+      [
+        1,
+        1,
+        8
+      ]
+    ],
+    "exact_norm_identity": "d^T H d = 6*(d1^2+d2^2+d3^2) +(d1-d2)^2+(d1+d3)^2+(d2+d3)^2",
+    "frame_block_moment": [
+      [
+        14,
+        7
+      ],
+      [
+        7,
+        14
+      ]
+    ],
+    "minimum_pure_A2_cubic_norm_squared": 18,
+    "not_needed_for_floor_but_checked": "M*1=0",
+    "root_line_counts": [
+      7,
+      7,
+      7
+    ],
+    "signed_line_imbalances_are_odd": true,
+    "small_vectors": {
+      "norm_2_vectors": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "norm_4_vectors": [],
+      "norm_form": "2*(a^2-a*b+b^2)",
+      "residues_of_a2_minus_ab_plus_b2_mod_3": [
+        0,
+        1
+      ],
+      "unoriented_root_lines": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "zero_sum_signed_imbalances": [
+      {
+        "imbalance": [
+          -1,
+          -1,
+          1
+        ],
+        "norm_squared": 18
+      },
+      {
+        "imbalance": [
+          1,
+          1,
+          -1
+        ],
+        "norm_squared": 18
+      },
+      {
+        "imbalance": [
+          -3,
+          -3,
+          3
+        ],
+        "norm_squared": 162
+      },
+      {
+        "imbalance": [
+          3,
+          3,
+          -3
+        ],
+        "norm_squared": 162
+      },
+      {
+        "imbalance": [
+          -5,
+          -5,
+          5
+        ],
+        "norm_squared": 450
+      },
+      {
+        "imbalance": [
+          5,
+          5,
+          -5
+        ],
+        "norm_squared": 450
+      },
+      {
+        "imbalance": [
+          -7,
+          -7,
+          7
+        ],
+        "norm_squared": 882
+      },
+      {
+        "imbalance": [
+          7,
+          7,
+          -7
+        ],
+        "norm_squared": 882
+      }
+    ]
+  },
+  "base_commit": "1f22323a2805e3e24f7848d53f2f4813e236fae9",
+  "claim": {
+    "endpoint_status": "UNKNOWN",
+    "label": "DERIVED",
+    "novelty_status": "UNKNOWN",
+    "scope": "The explicit Wave 24 E8^5 direct-sum A2^2 coordinate-lattice survivor cannot have the omitted 231-column projector/Hadamard-Schur origin."
+  },
+  "explicit_survivor_test": {
+    "explicit_blocks": [
+      {
+        "coordinates": [
+          40,
+          41
+        ],
+        "gap": 8,
+        "required_pure_cubic_norm_squared_floor": 18,
+        "trace_of_K_compression": 10,
+        "verdict": "REFUTED_AS_FULL_SCHUR_ORIGIN"
+      },
+      {
+        "coordinates": [
+          42,
+          43
+        ],
+        "gap": 8,
+        "required_pure_cubic_norm_squared_floor": 18,
+        "trace_of_K_compression": 10,
+        "verdict": "REFUTED_AS_FULL_SCHUR_ORIGIN"
+      }
+    ],
+    "explicit_survivor_full_projector_schur_origin": "REFUTED",
+    "general_A2_summand_necessary_condition": "tr(A2*Q_AA)>=18 for every orthogonal A2 summand of S",
+    "scope_guard": {
+      "all_h_equals_9_packages_excluded": false,
+      "conway_99_resolved": false,
+      "explicit_coordinate_lattice_relaxation_still_valid": true,
+      "n3_equals_708_excluded": false
+    },
+    "two_A2_total_compression_floor": 36
+  },
+  "frozen_inputs": [
+    {
+      "bytes": 16979,
+      "path": "verification/2026-07-23-wave20-global-schur-audit.md",
+      "sha256": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3"
+    },
+    {
+      "bytes": 12116,
+      "path": "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md",
+      "sha256": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8"
+    },
+    {
+      "bytes": 112067,
+      "path": "verification/wave24-n3-708-index/survivor-certificate.json",
+      "sha256": "a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2"
+    }
+  ],
+  "hostile_controls": {
+    "double_Q_block": {
+      "required_floor": 18,
+      "status": "TRACE_CONTRADICTION_CORRECTLY_DISAPPEARS",
+      "trace_A2_times_2A2": 20
+    },
+    "ordered_histogram_mutation": {
+      "status": "DETECTED"
+    },
+    "replace_A2_by_diagonal_even_gram": {
+      "example": [
+        -1,
+        -1
+      ],
+      "norm_four_vectors_exist": true,
+      "status": "A2_ROOT_CLASSIFICATION_CORRECTLY_REJECTED"
+    },
+    "scale_18_even_line_counts": {
+      "line_counts": [
+        6,
+        6,
+        6
+      ],
+      "status": "OBSTRUCTION_CORRECTLY_DISAPPEARS",
+      "zero_sum_minimum_cubic_norm_squared": 0
+    }
+  },
+  "limitations": [
+    "This rejects the Schur origin of one explicit abstract survivor, not the abstract coordinate-lattice identities it was designed to satisfy.",
+    "It does not exclude every h=9 lattice package or any of the other seven necessary index values.",
+    "It supplies no primitive embedding, projector matrix, graph, target resolution, or novelty determination."
+  ],
+  "n3_708_frame_moments": {
+    "identities": {
+      "W_row_sum": 84,
+      "sum_M_cubed": "||sum_i u_i^(tensor 3)||^2=60",
+      "sum_M_entries": 0,
+      "sum_M_fourth": "tr((M o M)^2)=102444",
+      "sum_M_squared": "tr(M^2)=21*tr(M)=19404"
+    },
+    "moments": {
+      "1": 0,
+      "2": 19404,
+      "3": 60,
+      "4": 102444
+    },
+    "ordered_entry_histogram": {
+      "-1": 1416,
+      "-2": 2300,
+      "0": 44322,
+      "1": 5092,
+      "4": 231
+    }
+  },
+  "tensor_bridge": {
+    "block_inequality": "For an orthogonal A2 summand A, tr(K compressed to A)>=||proj_(A tensor A tensor A) T||^2",
+    "coordinate_schur_gram": "Q=X^T*W*X",
+    "cubic_tensor": "T=sum_i u_i^(tensor 3)",
+    "flattening": "Phi(v)=contraction_v(T)=sum_i <v,u_i>*u_i tensor u_i",
+    "harmonicity": "trace_2(T)=4*sum_i u_i=0",
+    "hypothetical_integer_basis": "X in Z^(231 x 44), X^T X=G",
+    "integer_cubic_certificate": {
+      "P_abc": "sum_i X_ia*X_ib*X_ic in Z",
+      "Q_factorization": "Q_ab=sum_(c,e,d,f) P_ace*S_cd*S_ef*P_bdf",
+      "trace_free": "sum_(b,c) S_bc*P_abc=0"
+    },
+    "orthogonal_schur_gram": "K=Phi^*Phi=S^(1/2)*Q*S^(1/2)",
+    "projector_gram": "M=X*S*X^T, where S=21*G^-1",
+    "row_vectors": "u_i=S^(1/2)*x_i",
+    "schur_square": "W=M o M",
+    "tight_frame": "sum_i u_i*u_i^T=21*I_44",
+    "trace": "tr(K)=||T||^2=sum_(i,j)<u_i,u_j>^3=60",
+    "zero_sum": "M*1=0 implies sum_i u_i=0"
+  }
+}

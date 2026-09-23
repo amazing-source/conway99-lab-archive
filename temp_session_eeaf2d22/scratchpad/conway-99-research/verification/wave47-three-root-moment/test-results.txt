@@ -1,0 +1,20 @@
+Command:
+  .\.venv\Scripts\python.exe -m unittest verification\wave47-three-root-moment\test_verify.py -v
+
+Result:
+  test_cut_hash_contract ... ok
+  test_existing_full_record_if_present ... ok
+  test_flag_census ... ok
+  test_handoff_hash ... ok
+  test_internal_hostile_examples ... ok
+  test_root_embedding_partition ... ok
+
+  Ran 6 tests in 0.450s
+  OK
+
+Validation command:
+  .\.venv\Scripts\python.exe verification\wave47-three-root-moment\verify.py --validate verification\wave47-three-root-moment\verification-results.json
+
+Validation result:
+  validated verification\wave47-three-root-moment\verification-results.json
+  sha256=1c80d2b70b8e6bef42d4d9df124cc82dc9baf642d36873c61e91e8f2acc99a43

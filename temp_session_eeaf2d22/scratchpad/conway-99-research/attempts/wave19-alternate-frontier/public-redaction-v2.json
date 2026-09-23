@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "revision": "public-hygiene-v2",
+  "supersedes_manifest_sha256": "adc025f3020f992f6077c8d6006031688db424aa9ffbe5f33618679f95cfd37c",
+  "reason": "normalize private local workspace prefixes in retained diagnostic prose and tracebacks before public release",
+  "replacement_policy": "workspace-root prefixes become <workspace>; the launch truncated at the first path space becomes <workspace>\\[truncated-at-first-space]",
+  "normalized_artifacts": {
+    "attempts/wave19-alternate-frontier/failed-runs.md": 1,
+    "attempts/wave19-alternate-frontier/run.stderr.log": 1,
+    "attempts/wave19-alternate-frontier/run2.stderr.log": 7,
+    "attempts/wave19-alternate-frontier/run3.stderr.log": 4,
+    "attempts/wave19-alternate-frontier/run4.stderr.log": 1,
+    "attempts/wave19-alternate-frontier/run5.stderr.log": 4
+  },
+  "preservation": {
+    "failure_meanings_preserved": true,
+    "traceback_line_numbers_preserved": true,
+    "exception_messages_preserved": true,
+    "checker_source_changed": false,
+    "test_source_changed": false,
+    "mathematical_results_changed": false,
+    "dispositions_changed": false,
+    "successful_run_logs_changed": false,
+    "mathematical_replay_required": false
+  },
+  "unchanged_core_sha256": {
+    "attempts/wave19-alternate-frontier/exact_frontier.py": "960b3f85ea2bbdbf940c46875bac7520aa2b514a1068e75d419c8e489dedde7b",
+    "attempts/wave19-alternate-frontier/test_exact_frontier.py": "5271fc8c2358872c435d68b1e0ba9c0274ea509eed261fddd6bd512b0427d427",
+    "attempts/wave19-alternate-frontier/exact-results.json": "3e6c3016572c55aa15acc7b629a6a11b73cfce48f33e61ab1def2ebaf9b6f000",
+    "attempts/wave19-alternate-frontier/connected20-dispositions.txt": "ea4ce3e70e4e3dfc39befd952f633fc680642c5a6285d3ed08232d0d19f43cc6",
+    "attempts/wave19-alternate-frontier/disconnected20-dispositions.json": "491e7dddd7a5d630b546faf3a86d0aedf34e80bf02bf70d9c52112082d5d1c9b",
+    "attempts/wave19-alternate-frontier/run6.stdout.log": "b32e33231a4338c71df29821c36cc2b95c108722ae04a5f8e7cc327645e42be6",
+    "attempts/wave19-alternate-frontier/run6.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempts/wave19-alternate-frontier/run7-verify.stdout.log": "b32e33231a4338c71df29821c36cc2b95c108722ae04a5f8e7cc327645e42be6",
+    "attempts/wave19-alternate-frontier/run7-verify.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "target": "UNKNOWN",
+  "novelty": "UNKNOWN"
+}

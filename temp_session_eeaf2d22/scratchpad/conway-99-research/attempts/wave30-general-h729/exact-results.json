@@ -1,0 +1,707 @@
+{
+  "abstraction": {
+    "Q_allocation": "one block has detQ=5; all others have detQ=1",
+    "block_inheritance": "M,W,Q,B,C split with the row support",
+    "block_rows": "4*n_J=21*rank(J)",
+    "block_trace_residue": "each trace(B_J) is a positive multiple of 6",
+    "exceptional_detS_exponent": [
+      2,
+      4,
+      6
+    ],
+    "exceptional_rank": "the detQ=5 block has rank 4 mod 8",
+    "log_cap": "det(B_J)<=3^trace(C_J)",
+    "log_equality": "equality makes C_J an integral self-adjoint idempotent",
+    "row_support": "minimum-four orthogonal blocks force every norm-four row into one block"
+  },
+  "census_summary": {
+    "candidate_types": 15,
+    "excluded_types": 14,
+    "obstruction_counts": {
+      "blockwise_AM_GM_and_trace_residue": 2,
+      "complement_block_logarithmic_cap": 1,
+      "exceptional_block_logarithmic_cap": 7,
+      "log_equality_integral_split_signature_veto": 4
+    },
+    "surviving_types": 1
+  },
+  "decomposition_census": [
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 12,
+          "traceB_R": 48
+        }
+      ],
+      "complement_log_equality": {
+        "C_R_idempotent": true,
+        "Q_image_even_unimodular": true,
+        "Q_kernel_even_unimodular": true,
+        "both_ranks_divisible_by_8": false,
+        "image_rank": 4,
+        "kernel_rank": 36
+      },
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "first_obstruction": "log_equality_integral_split_signature_veto",
+      "log_cap_A": 81,
+      "log_cap_R": 81,
+      "rank_A": 4,
+      "rank_R": 40,
+      "status": "EXCLUDED",
+      "traceC_A": 4,
+      "traceC_R": 4,
+      "v3_detS_A": 2
+    },
+    {
+      "amgm_trace_pairs": [],
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "first_obstruction": "blockwise_AM_GM_and_trace_residue",
+      "rank_A": 4,
+      "rank_R": 40,
+      "status": "EXCLUDED",
+      "v3_detS_A": 4
+    },
+    {
+      "amgm_trace_pairs": [],
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "first_obstruction": "blockwise_AM_GM_and_trace_residue",
+      "rank_A": 4,
+      "rank_R": 40,
+      "status": "EXCLUDED",
+      "v3_detS_A": 6
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 18,
+          "traceB_R": 42
+        }
+      ],
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "first_obstruction": "exceptional_block_logarithmic_cap",
+      "log_cap_A": 27,
+      "log_cap_R": 243,
+      "rank_A": 12,
+      "rank_R": 32,
+      "status": "EXCLUDED",
+      "traceC_A": 3,
+      "traceC_R": 5,
+      "v3_detS_A": 2
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 24,
+          "traceB_R": 36
+        }
+      ],
+      "complement_log_equality": {
+        "C_R_idempotent": true,
+        "Q_image_even_unimodular": true,
+        "Q_kernel_even_unimodular": true,
+        "both_ranks_divisible_by_8": false,
+        "image_rank": 2,
+        "kernel_rank": 30
+      },
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "first_obstruction": "log_equality_integral_split_signature_veto",
+      "log_cap_A": 729,
+      "log_cap_R": 9,
+      "rank_A": 12,
+      "rank_R": 32,
+      "status": "EXCLUDED",
+      "traceC_A": 6,
+      "traceC_R": 2,
+      "v3_detS_A": 4
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 24,
+          "traceB_R": 36
+        }
+      ],
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "first_obstruction": "exceptional_block_logarithmic_cap",
+      "log_cap_A": 729,
+      "log_cap_R": 9,
+      "rank_A": 12,
+      "rank_R": 32,
+      "status": "EXCLUDED",
+      "traceC_A": 6,
+      "traceC_R": 2,
+      "v3_detS_A": 6
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 30,
+          "traceB_R": 30
+        }
+      ],
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "first_obstruction": "complement_block_logarithmic_cap",
+      "log_cap_A": 243,
+      "log_cap_R": 27,
+      "rank_A": 20,
+      "rank_R": 24,
+      "status": "EXCLUDED",
+      "traceC_A": 5,
+      "traceC_R": 3,
+      "v3_detS_A": 2
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 30,
+          "traceB_R": 30
+        }
+      ],
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "first_obstruction": "exceptional_block_logarithmic_cap",
+      "log_cap_A": 243,
+      "log_cap_R": 27,
+      "rank_A": 20,
+      "rank_R": 24,
+      "status": "EXCLUDED",
+      "traceC_A": 5,
+      "traceC_R": 3,
+      "v3_detS_A": 4
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 36,
+          "traceB_R": 24
+        }
+      ],
+      "complement_log_equality": {
+        "C_R_idempotent": true,
+        "Q_image_even_unimodular": false,
+        "Q_kernel_even_unimodular": true,
+        "both_ranks_divisible_by_8": true,
+        "image_rank": 0,
+        "kernel_rank": 24
+      },
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "first_obstruction": null,
+      "log_cap_A": 6561,
+      "log_cap_R": 1,
+      "rank_A": 20,
+      "rank_R": 24,
+      "status": "SURVIVES_THIS_REDUCTION",
+      "traceC_A": 8,
+      "traceC_R": 0,
+      "v3_detS_A": 6
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 36,
+          "traceB_R": 24
+        }
+      ],
+      "complement_log_equality": {
+        "C_R_idempotent": true,
+        "Q_image_even_unimodular": true,
+        "Q_kernel_even_unimodular": true,
+        "both_ranks_divisible_by_8": false,
+        "image_rank": 4,
+        "kernel_rank": 12
+      },
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "first_obstruction": "log_equality_integral_split_signature_veto",
+      "log_cap_A": 81,
+      "log_cap_R": 81,
+      "rank_A": 28,
+      "rank_R": 16,
+      "status": "EXCLUDED",
+      "traceC_A": 4,
+      "traceC_R": 4,
+      "v3_detS_A": 2
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 36,
+          "traceB_R": 24
+        }
+      ],
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "first_obstruction": "exceptional_block_logarithmic_cap",
+      "log_cap_A": 81,
+      "log_cap_R": 81,
+      "rank_A": 28,
+      "rank_R": 16,
+      "status": "EXCLUDED",
+      "traceC_A": 4,
+      "traceC_R": 4,
+      "v3_detS_A": 4
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 42,
+          "traceB_R": 18
+        }
+      ],
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "first_obstruction": "exceptional_block_logarithmic_cap",
+      "log_cap_A": 2187,
+      "log_cap_R": 3,
+      "rank_A": 28,
+      "rank_R": 16,
+      "status": "EXCLUDED",
+      "traceC_A": 7,
+      "traceC_R": 1,
+      "v3_detS_A": 6
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 42,
+          "traceB_R": 18
+        }
+      ],
+      "detB_A": 45,
+      "detB_R": 81,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 9,
+      "detS_R": 81,
+      "first_obstruction": "exceptional_block_logarithmic_cap",
+      "log_cap_A": 27,
+      "log_cap_R": 243,
+      "rank_A": 36,
+      "rank_R": 8,
+      "status": "EXCLUDED",
+      "traceC_A": 3,
+      "traceC_R": 5,
+      "v3_detS_A": 2
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 48,
+          "traceB_R": 12
+        }
+      ],
+      "complement_log_equality": {
+        "C_R_idempotent": true,
+        "Q_image_even_unimodular": true,
+        "Q_kernel_even_unimodular": true,
+        "both_ranks_divisible_by_8": false,
+        "image_rank": 2,
+        "kernel_rank": 6
+      },
+      "detB_A": 405,
+      "detB_R": 9,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 81,
+      "detS_R": 9,
+      "first_obstruction": "log_equality_integral_split_signature_veto",
+      "log_cap_A": 729,
+      "log_cap_R": 9,
+      "rank_A": 36,
+      "rank_R": 8,
+      "status": "EXCLUDED",
+      "traceC_A": 6,
+      "traceC_R": 2,
+      "v3_detS_A": 4
+    },
+    {
+      "amgm_trace_pairs": [
+        {
+          "traceB_A": 48,
+          "traceB_R": 12
+        }
+      ],
+      "detB_A": 3645,
+      "detB_R": 1,
+      "detQ_A": 5,
+      "detQ_R": 1,
+      "detS_A": 729,
+      "detS_R": 1,
+      "first_obstruction": "exceptional_block_logarithmic_cap",
+      "log_cap_A": 729,
+      "log_cap_R": 9,
+      "rank_A": 36,
+      "rank_R": 8,
+      "status": "EXCLUDED",
+      "traceC_A": 6,
+      "traceC_R": 2,
+      "v3_detS_A": 6
+    }
+  ],
+  "endpoint": {
+    "detB_cap": 6525,
+    "detQ_values": [
+      5
+    ],
+    "detS": 729,
+    "frame_scale": 21,
+    "rank": 44,
+    "row_norm": 4,
+    "rows": 231,
+    "traceB": 60
+  },
+  "frozen_input_hashes": {
+    "agents/2026-07-24-wave28-orchestrator-brief.md": "6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e",
+    "agents/2026-07-24-wave29-s0-frame-exclusion.md": "e6ae61331a54d53f2a98712296ebac855f45b46de32ff2ec4d85018f2d8a5045",
+    "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+    "verification/wave29-s0-frame-exclusion/audit.md": "dbdcb88bf309cbfa47a42b9fb63dd7cf483e07cac8b92c475094c96be3723b7d"
+  },
+  "hostile_controls": {
+    "lower_both_block_minima_to_two": {
+      "component_norms": [
+        2,
+        2
+      ],
+      "mixed_vector_norm": 4,
+      "row_support_split_forced": false
+    },
+    "omit_log_equality_integral_split": {
+      "surviving_type_count": 5,
+      "surviving_types": [
+        [
+          4,
+          2
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          20,
+          6
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          36,
+          4
+        ]
+      ]
+    },
+    "omit_trace_multiple_of_six_in_wave29_type": {
+      "A_log_cap": 6561,
+      "detB_A": 3645,
+      "strict_contradiction": false,
+      "trace_pair": [
+        28,
+        32
+      ],
+      "type": [
+        12,
+        6
+      ]
+    },
+    "remaining_scalar_spectrum": {
+      "B_A_multiplicities": {
+        "1": 13,
+        "3": 6,
+        "5": 1
+      },
+      "C_A_multiplicities": {
+        "0": 13,
+        "1": 6,
+        "2": 1
+      },
+      "detB_A": 3645,
+      "scope": "B_A/C_A scalar spectrum only; no lattice realization",
+      "traceB_A": 36,
+      "traceC_A": 8,
+      "traceC_A_squared": 10
+    },
+    "use_only_exceptional_block_log_cap": {
+      "surviving_type_count": 6,
+      "surviving_types": [
+        [
+          4,
+          2
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          20,
+          6
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          36,
+          4
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "Orthogonal decomposability and minimum at least four are essential.",
+    "The surviving rank-20 plus rank-24 type is not constructed.",
+    "No automorphism, restricted search, or nonexistence inference is used.",
+    "General indecomposable or rooted h=729 forms remain untreated.",
+    "n3=708, Conway-99, and novelty remain UNKNOWN."
+  ],
+  "public_base_commit": "4c4d2cb8dec14c7834984d47a7e5b29991891e60",
+  "row_alphabet": [
+    {
+      "a_plus_one": 32,
+      "b_minus_one": 36,
+      "c_minus_two": 0,
+      "cubic_row_sum": 60,
+      "z_zero": 162
+    },
+    {
+      "a_plus_one": 31,
+      "b_minus_one": 33,
+      "c_minus_two": 1,
+      "cubic_row_sum": 54,
+      "z_zero": 165
+    },
+    {
+      "a_plus_one": 30,
+      "b_minus_one": 30,
+      "c_minus_two": 2,
+      "cubic_row_sum": 48,
+      "z_zero": 168
+    },
+    {
+      "a_plus_one": 29,
+      "b_minus_one": 27,
+      "c_minus_two": 3,
+      "cubic_row_sum": 42,
+      "z_zero": 171
+    },
+    {
+      "a_plus_one": 28,
+      "b_minus_one": 24,
+      "c_minus_two": 4,
+      "cubic_row_sum": 36,
+      "z_zero": 174
+    },
+    {
+      "a_plus_one": 27,
+      "b_minus_one": 21,
+      "c_minus_two": 5,
+      "cubic_row_sum": 30,
+      "z_zero": 177
+    },
+    {
+      "a_plus_one": 26,
+      "b_minus_one": 18,
+      "c_minus_two": 6,
+      "cubic_row_sum": 24,
+      "z_zero": 180
+    },
+    {
+      "a_plus_one": 25,
+      "b_minus_one": 15,
+      "c_minus_two": 7,
+      "cubic_row_sum": 18,
+      "z_zero": 183
+    },
+    {
+      "a_plus_one": 24,
+      "b_minus_one": 12,
+      "c_minus_two": 8,
+      "cubic_row_sum": 12,
+      "z_zero": 186
+    },
+    {
+      "a_plus_one": 23,
+      "b_minus_one": 9,
+      "c_minus_two": 9,
+      "cubic_row_sum": 6,
+      "z_zero": 189
+    },
+    {
+      "a_plus_one": 22,
+      "b_minus_one": 6,
+      "c_minus_two": 10,
+      "cubic_row_sum": 0,
+      "z_zero": 192
+    },
+    {
+      "a_plus_one": 21,
+      "b_minus_one": 3,
+      "c_minus_two": 11,
+      "cubic_row_sum": -6,
+      "z_zero": 195
+    },
+    {
+      "a_plus_one": 20,
+      "b_minus_one": 0,
+      "c_minus_two": 12,
+      "cubic_row_sum": -12,
+      "z_zero": 198
+    }
+  ],
+  "runtime": {
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "scope": "Conditional reduction of rootless integrally orthogonally decomposable h=729 S-forms under the full n3=708 endpoint package; no endpoint or graph resolution.",
+  "status": "DERIVED_REPAIR_PENDING_INDEPENDENT_REVERIFICATION",
+  "surviving_boundary": {
+    "U_tensor_isometry": {
+      "Phi_row_norm_squared": 4,
+      "aggregate_internal_directed_counts": {
+        "minus_one": 768,
+        "minus_two": 1256,
+        "plus_one": 2776,
+        "zero": 10950
+      },
+      "allowed_c_minus_two_counts": [
+        9,
+        10,
+        11
+      ],
+      "cauchy_absolute_cubic_bound": 8,
+      "conclusion": "necessary counts only; no M or frame is constructed",
+      "definition": "Phi(v)=sum_i <v,y_i>*(y_i tensor y_i) on the 126 U rows",
+      "identity": "Phi^* Phi=I_24",
+      "profile_count": 62,
+      "profile_endpoints": [
+        {
+          "n_c10": 122,
+          "n_c11": 0,
+          "n_c9": 4
+        },
+        {
+          "n_c10": 0,
+          "n_c11": 61,
+          "n_c9": 65
+        }
+      ],
+      "rank_one_tensor_norm": 4,
+      "row_norm_squared": 4,
+      "sum_c_over_U_rows": 1256
+    },
+    "decomposition": {
+      "A_20": {
+        "determinant": 729,
+        "minimum_at_least": 4,
+        "rank": 20
+      },
+      "S": "A_20 orthogonal_sum U_24",
+      "U_24": {
+        "classification_as_Leech_used": false,
+        "determinant": 1,
+        "even_unimodular": true,
+        "minimum_at_least": 4,
+        "rank": 24
+      }
+    },
+    "frame": {
+      "A_rows": 105,
+      "U_rows": 126,
+      "total_rows": 231
+    },
+    "scalar_spectral_control": {
+      "B_A_multiplicities": {
+        "1": 13,
+        "3": 6,
+        "5": 1
+      },
+      "C_A_multiplicities": {
+        "0": 13,
+        "1": 6,
+        "2": 1
+      },
+      "detB_A": 3645,
+      "scope": "B_A/C_A scalar spectrum only; no lattice realization",
+      "traceB_A": 36,
+      "traceC_A": 8,
+      "traceC_A_squared": 10
+    },
+    "schur_blocks": {
+      "A": {
+        "detB": 3645,
+        "detQ": 5,
+        "traceB": 36,
+        "traceC": 8
+      },
+      "U": {
+        "B_equals_identity": true,
+        "C_equals_zero": true,
+        "detB": 1,
+        "detQ": 1,
+        "traceB": 24,
+        "traceC": 0
+      }
+    }
+  }
+}

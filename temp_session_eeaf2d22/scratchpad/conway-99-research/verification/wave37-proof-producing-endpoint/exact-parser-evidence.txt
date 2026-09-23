@@ -1,0 +1,15 @@
+Wave 37 independent Exact parser replay
+recorded_utc: 2026-07-27T00:26:00Z
+formula: attempts/wave37-proof-producing-endpoint/branch-15.opb
+formula_sha256: 4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5
+command:
+  "$EXACT" --onlyparse "$FORMULA"
+tool_sha256:
+  842ac70b4e938d24f537a56513ff64ea845206c714ce34da467ce146c5c5c928
+stdout:
+  c Exact - branch main commit b921cd1
+  c Reading input file, expected format is opb
+exit_code: 0
+interpretation: PARSE_ACCEPTED_ONLY
+limitation: This is not a SAT result, an UNSAT result, or a proof check.
+privacy: Literal local tool and workspace paths were replaced by portable variables.

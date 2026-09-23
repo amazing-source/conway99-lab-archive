@@ -1,0 +1,48 @@
+role: proof_a
+date_utc: 2026-07-23T22:40:02Z
+git_commit: 1f22323a2805e3e24f7848d53f2f4813e236fae9
+claim_label: DERIVED
+scope: >-
+  Exact necessary projector-frame obstruction for scaled-dual forms with an
+  orthogonal A2 summand. The frozen Wave 24 E8^5 orthogonal_sum A2^2
+  survivor cannot have the required 231-row origin. Arbitrary primitive
+  embedding, all h=9 lattices, and n3=708 remain unresolved.
+inputs:
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  - path: verification/wave24-n3-708-index/survivor-certificate.json
+    sha256: a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2
+  - path: verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md
+    sha256: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+method: >-
+  Basis-covariant projector identities M=Y*S*Y^T and
+  Y^T*Y=21*S^-1; exact A2 root and norm-four enumeration; the A2 block
+  energy identity 42 forcing 21 incident rows; a positive-semidefinite
+  same-root fiber capacity of three and total capacity 18; explicit
+  plus-two and omitted-frame hostile controls.
+command: |-
+  cd attempts/wave26-a2-frame-obstruction
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-23-wave26-a2-frame-obstruction.md
+    sha256: 2870c4b9195d5569655fded93a7d1b3d4131663e3ef37ce2ef346c03cf8f2925
+  - path: attempts/wave26-a2-frame-obstruction/exact_check.py
+    sha256: 77c4657696ae214196a1abdc30c2baf6c67263fc7c4ed53cc036e58f33b32aa8
+  - path: attempts/wave26-a2-frame-obstruction/test_exact_check.py
+    sha256: 62c3dfeabae4d877ddb556b905869bc6786ab617b604789e39e75ef01c24cb66
+  - path: attempts/wave26-a2-frame-obstruction/exact-results.json
+    sha256: bb2b2ffe33d0ca6a0a1f18be8b36c48060d40aef2fc6e0857fd1d23c18e84bb9
+  - path: attempts/wave26-a2-frame-obstruction/input-freeze.sha256
+    sha256: 653e294646dc5ee74f3da00ddd9458eb04f5a0660a044bb9dcceef3482a160a5
+  - path: attempts/wave26-a2-frame-obstruction/failed-routes.md
+    sha256: 6bfb1ef3e733606006d5986e5adeb8c1da15a1fe6cccbb7cff3e3c500b5a8ad3
+limitations:
+  - Discovery-agent status only; a fresh independent verifier is required.
+  - The conclusion uses the projector diagonal, off-diagonal entry set, and
+    tight-frame identity; primitive embedding alone is not excluded.
+  - No classification of all rank-44 determinant-nine forms is supplied.
+  - The h=9 arithmetic row and the other seven h rows remain.
+  - n3=708, target existence, and literature novelty remain UNKNOWN.

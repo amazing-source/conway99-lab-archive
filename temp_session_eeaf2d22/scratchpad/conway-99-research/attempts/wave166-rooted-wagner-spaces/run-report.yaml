@@ -1,0 +1,37 @@
+role: proof_b
+date_utc: 2026-07-28T15:09:54Z
+git_commit: c270c079ee620ad1a73ef5c8f973827ac7e0adf7
+claim_label: DERIVED
+scope: >-
+  Recast the missing endpoint Wagner lower bound in fixed-C4, fixed-C5, and
+  fixed-nonedge spaces; retain a shell null model and isolate the unproved
+  four-failure lemma sufficient for endpoint exclusion.
+inputs:
+  - path: verification/wave165-general-cube-upper/package-manifest.sha256
+    sha256: 1bf571c64ae47e7c3b5973c2d774d217dfeb43ed1f4514798047cc80d1d4b9a6
+  - path: verification/wave158-general-cube-wagner/package-manifest.sha256
+    sha256: ec6b5b912f42301ae734a6ee45574c3e39cf3c57c088765b03afbafe07b37d0b
+  - path: verification/wave59-incidence-spectral-excess/package-manifest.sha256
+    sha256: a660ede44009ed40c20bb1661d54b0b977f1817269b85983777f04aa4a78c574
+  - path: verification/wave150-exact-rank1-witness/package-manifest.sha256
+    sha256: a5cbcce920ecde54b92dfc2d26f36918464f106045250cf683725e0e3e507ed6
+method: >-
+  Exact common-neighbor equations, abstract shell countermodel,
+  C5/Wagner incidence double count, fixed-nonedge C5 enumeration, exact
+  pseudowitness obstruction, and fail-closed separation of sufficient
+  targets from proved lower bounds.
+command: none; paper derivation only
+outputs:
+  - path: attempts/wave166-rooted-wagner-spaces/README.md
+    sha256: 095b8bb2508c75f3686f8e35ae81b68922b8bbdc55de9b4b248600538174c111
+  - path: attempts/wave166-rooted-wagner-spaces/derivation.md
+    sha256: 9cc38d7474db674658abd07d3d2de5a997daf5023579b547ede019cfe066bf77
+  - path: attempts/wave166-rooted-wagner-spaces/protocol.md
+    sha256: 994c35f87b5bb1d3ad36b9df0edb925b3be4a80af79bec9cea13720f589742b6
+  - path: attempts/wave166-rooted-wagner-spaces/failed-routes.md
+    sha256: 4939541fe83ee6004d4560ede214912ac86d494f58f0c03749deda36c83661d5
+limitations:
+  - The four-failure lemma is unproved.
+  - The shell countermodel is not an SRG completion.
+  - No Wagner lower bound or endpoint exclusion follows yet.
+  - Literature novelty and Conway-99 remain UNKNOWN.

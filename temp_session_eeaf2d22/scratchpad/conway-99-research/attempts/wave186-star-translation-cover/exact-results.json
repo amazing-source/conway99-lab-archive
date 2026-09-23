@@ -1,0 +1,63 @@
+{
+  "conditional_status": "DERIVED",
+  "cover": {
+    "arithmetic_control_not_construction": {
+      "n1": 0,
+      "n2": 0,
+      "n3": 1848,
+      "outside_circuits": 1848,
+      "private_labels": 2772,
+      "selected_label_incidences": 5544
+    },
+    "cover_ratio": "8/9",
+    "covered_nonedges": 4158,
+    "dual_short_word_lower": 8778,
+    "edge_isolated_projective": 693,
+    "inequality_certificate": {
+      "private_assignment": "6*O+8*n1+8*n2+12*n3>=8*C",
+      "sum": "9*(N+O)>=8*C",
+      "triple_companions": "3*O+n1+n2-3*n3>=0"
+    },
+    "nonedge_projective_lower": 3696,
+    "total_projective_lower": 4389
+  },
+  "format": "wave186-star-translation-cover-v1",
+  "former_equality_Q_2079_excluded": true,
+  "global_status": "UNKNOWN",
+  "limitations": [
+    "No graph, code, cover, or configuration was enumerated.",
+    "The arithmetic equality profile is not a circuit cover.",
+    "The rank-11 endpoint and Conway-99 remain UNKNOWN."
+  ],
+  "multiplicity_three": {
+    "companion_translate_intersection": 0,
+    "companion_weight": 5,
+    "conic_translate_intersection": 3,
+    "conic_weight": 4,
+    "contains_T": false,
+    "forced_distinct_circuits_per_private_label": 2,
+    "leaf_translate_profile": [
+      3,
+      6
+    ],
+    "leaf_translate_weight": 9
+  },
+  "multiplicity_two": {
+    "conic_weight": 4,
+    "dual_distance_floor": 4,
+    "forced_distinct_circuits_per_private_label": 2,
+    "translate_weights": [
+      8,
+      8
+    ],
+    "translated_support_intersection": 2,
+    "x_translate_profile": [
+      6,
+      2
+    ],
+    "y_translate_profile": [
+      2,
+      6
+    ]
+  }
+}

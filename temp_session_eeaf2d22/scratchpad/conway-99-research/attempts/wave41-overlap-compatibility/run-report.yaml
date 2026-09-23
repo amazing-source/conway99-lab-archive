@@ -1,0 +1,17 @@
+role: construction
+date_utc: 2026-07-27T05:10:34Z
+git_commit: 4f1754a28723a8e0e4ea3025312cd264b1b117d2
+claim_label: CANDIDATE
+scope: "One exact 19-vertex overlap of two canonical Wave 41 rank-33 all-222 blocks, followed by an exhaustive individual balanced/support-cap border-signature census."
+inputs:
+  - "attempts/wave41-allquotient-lifts/exact-results.json sha256 da8098c5048c9b45ca3625131a98eb5473d29f864ea0c78a3e26d3b091b38e6d"
+method: "Exact F7 Gaussian elimination; explicit induced-subgraph gluing; exhaustive per-vertex balanced support enumeration; dynamic programming over kernel-signature subspaces."
+command: ".\\.venv\\Scripts\\python.exe -B attempts\\wave41-overlap-compatibility\\exact_check.py --verify attempts\\wave41-overlap-compatibility\\exact-results.json"
+outputs:
+  - "attempts/wave41-overlap-compatibility/exact-results.json (hash in package-manifest.sha256)"
+  - "attempts/wave41-overlap-compatibility/README.md (hash in package-manifest.sha256)"
+limitations:
+  - "Discovery cannot verify its own result."
+  - "Only one canonical rank-33 self-overlap class is treated."
+  - "Individual column choices do not impose simultaneous BB^T, BH, B^TB+H^2, or a 99-vertex SRG."
+  - "No endpoint exclusion, strict n3 upper bound, graph, or global proof certificate is produced."

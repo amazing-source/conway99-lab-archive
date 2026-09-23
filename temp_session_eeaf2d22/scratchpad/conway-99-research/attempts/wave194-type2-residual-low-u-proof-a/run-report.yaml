@@ -1,0 +1,44 @@
+role: proof_a
+date_utc: 2026-07-29T03:20:41Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free rank-11 endpoint: type-two exact-three residual,
+  split residual-pool, joint label-union capacity, and exact certificate
+  3Q>=5C, giving Q>=6930.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  verification/wave181-c4-conic-equality/package-manifest.sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  verification/wave188-affine-star-word-amplification-verifier/package-manifest.sha256: e58bd132b1e1579f5e4e6570d7e0b4318a6c5f970342d4b9493e0c35a3c0dc74
+  verification/wave189-degree7-star-orbit-verifier/package-manifest.sha256: fc17484bd8c32a5886ecdcc65d153903cef5f3b60a3de1c9905ed96697c273c4
+  verification/wave191-exact-three-residual-verifier/package-manifest.sha256: a14f43310fb5ead05c4bd50b376f3d9d90ec77a92bc00f8c3b7326013f975ab2
+method: >-
+  Affine circuit elimination in 6+2 and 2+6 supports, exact-two
+  uniqueness, opposite-center residual separation, split companion-closed
+  residual capacity, joint inside/outside label-union counting, and an
+  exact rational dual certificate. No graph, code, cover, SAT, LP,
+  configuration, enumeration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave194-type2-residual-low-u-proof-a\exact_check.py --verify
+  attempts\wave194-type2-residual-low-u-proof-a\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave194-type2-residual-low-u-proof-a\test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave194-type2-residual-low-u-proof-a.md
+  - attempts/wave194-type2-residual-low-u-proof-a/README.md
+  - attempts/wave194-type2-residual-low-u-proof-a/derivation.md
+  - attempts/wave194-type2-residual-low-u-proof-a/protocol.md
+  - attempts/wave194-type2-residual-low-u-proof-a/exact_check.py
+  - attempts/wave194-type2-residual-low-u-proof-a/exact-results.json
+  - attempts/wave194-type2-residual-low-u-proof-a/test_exact_check.py
+  - attempts/wave194-type2-residual-low-u-proof-a/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The theorem is conditional on the prism-free rank-11 endpoint.
+  - Equality-face rows and packets are arithmetic/accounting only.
+  - No globally compatible packet system, endpoint, cover, code, or graph
+    is constructed.
+  - The bound supplies no incompatible upper bound.
+  - Rank 11, endpoint existence, strict original n3 improvement, external
+    novelty, and Conway-99 remain UNKNOWN.

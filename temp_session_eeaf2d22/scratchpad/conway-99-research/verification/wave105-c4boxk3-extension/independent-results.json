@@ -1,0 +1,1093 @@
+{
+  "block_equations": {
+    "linear": "DP=2J-P-PH",
+    "linear_rhs_entries": 1044,
+    "outside_pair": "D_ij+sum_k D_ik D_kj=2-(PP^T)_ij",
+    "top_left": "H^2+P^T P=12I-H+2J"
+  },
+  "bounded_runs": {
+    "interpretation": "chronology only; every timeout remains UNKNOWN",
+    "raw_logs_available": true,
+    "runs": [
+      {
+        "branch_eX0": 0,
+        "claim_label": "UNKNOWN",
+        "elapsed_seconds": 45.018226,
+        "result": "UNKNOWN_TIMEOUT",
+        "sha256": "d96fdc9ced604e9e0c154154d2286bcac53f160ce0fad29f05d26d4727f7832a"
+      },
+      {
+        "branch_eX0": 1,
+        "claim_label": "UNKNOWN",
+        "elapsed_seconds": 45.010242,
+        "result": "UNKNOWN_TIMEOUT",
+        "sha256": "9f010e850bf2e4ffdc04b8b2565213f3aa6a211835dc7ae0a7ccdabd21293191"
+      },
+      {
+        "branch_eX0": 2,
+        "claim_label": "UNKNOWN",
+        "elapsed_seconds": 45.035562,
+        "result": "UNKNOWN_TIMEOUT",
+        "sha256": "969178b35afc137b080b1d646949de07fb71691de6208243f44a05ef9b7fefbd"
+      },
+      {
+        "branch_eX0": 3,
+        "claim_label": "UNKNOWN",
+        "elapsed_seconds": 45.019774,
+        "result": "UNKNOWN_TIMEOUT",
+        "sha256": "c784c686304009402c5b914a28c6dde350431798ca69cb68116c988ab4a0e6ac"
+      }
+    ]
+  },
+  "claim_label": "VERIFIED",
+  "clarifications": [
+    "The discovery write-up did not spell out the triangle-free residual-support argument needed for uniqueness of the forced incidence multiset; the independent verifier supplies and checks it explicitly.",
+    "The archived linear witness actually fails many nonlinear outside-pair rows, so it certifies only linear-layer feasibility.",
+    "The four raw run hashes are reproducible chronology, but timeouts are not solver certificates and remain UNKNOWN."
+  ],
+  "forced_outside_incidence": {
+    "clarification": "The multiset is forced because every outside motif-neighborhood has size at most two: the positive residual-pair support is triangle-free.",
+    "incidences": 120,
+    "pair_incidences": 36,
+    "top_left_block_equation_checked": true,
+    "type_counts": {
+      "X0": 3,
+      "X1": 48,
+      "X2": 36
+    }
+  },
+  "format": "wave105-independent-verification-v1",
+  "limitations": [
+    "The motif is not proved to occur in every hypothetical target.",
+    "The six graphicality tests are separate necessary filters, not simultaneous realizations.",
+    "No SAT model or replayable UNSAT proof was produced.",
+    "No graph construction, graph exclusion, Conway-99 resolution, or novelty claim follows."
+  ],
+  "linear_witness": {
+    "archived_constraint_rows": 1134,
+    "branch_eX0": 0,
+    "degree_histogram": {
+      "12": 36,
+      "13": 48,
+      "14": 3
+    },
+    "distinct_dp_incidence_rows": 1044,
+    "dp_entries_checked": 1044,
+    "first_outside_pair_failure": {
+      "left": 0,
+      "lhs": 3,
+      "rhs": 2,
+      "right": 3
+    },
+    "full_extension_witness": false,
+    "linear_layer_feasible": true,
+    "outside_edges": 549,
+    "outside_pair_equation_failures": 2525,
+    "outside_pair_error_histogram": {
+      "-1": 1047,
+      "-2": 316,
+      "1": 762,
+      "2": 298,
+      "3": 88,
+      "4": 13,
+      "5": 1
+    },
+    "upper_triangle_sha256": "feb948f5d0095b4baaba139fddda02b6ededcb7898e0d1ead3d2c251c6786fde"
+  },
+  "moment_census": {
+    "counts_by_t": {
+      "0": 18,
+      "1": 11,
+      "2": 5,
+      "3": 1
+    },
+    "rejected_rows": [
+      {
+        "all_six_type_graphical": false,
+        "branch_eX0": 2,
+        "six_type_graphical_tests": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "x1_x2_neighbor_histogram": [
+          46,
+          1,
+          0,
+          1
+        ],
+        "x2_x2_neighbor_histogram": [
+          2,
+          34,
+          0,
+          0
+        ]
+      }
+    ],
+    "rows_by_t": {
+      "0": [
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            36,
+            12,
+            0,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            10,
+            24,
+            0,
+            2
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            36,
+            12,
+            0,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            11,
+            21,
+            3,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            36,
+            12,
+            0,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            12,
+            18,
+            6,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            37,
+            10,
+            1,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            10,
+            23,
+            2,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            37,
+            10,
+            1,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            11,
+            20,
+            5,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            38,
+            8,
+            2,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            9,
+            25,
+            1,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            38,
+            8,
+            2,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            10,
+            22,
+            4,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            38,
+            9,
+            0,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            8,
+            27,
+            0,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            38,
+            9,
+            0,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            9,
+            24,
+            3,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            39,
+            6,
+            3,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            8,
+            27,
+            0,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            39,
+            6,
+            3,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            9,
+            24,
+            3,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            39,
+            7,
+            1,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            8,
+            26,
+            2,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            40,
+            4,
+            4,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            8,
+            26,
+            2,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            40,
+            5,
+            2,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            7,
+            28,
+            1,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            40,
+            6,
+            0,
+            2
+          ],
+          "x2_x2_neighbor_histogram": [
+            6,
+            30,
+            0,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            41,
+            2,
+            5,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            7,
+            28,
+            1,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            41,
+            3,
+            3,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            6,
+            30,
+            0,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            42,
+            0,
+            6,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            6,
+            30,
+            0,
+            0
+          ]
+        }
+      ],
+      "1": [
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            40,
+            8,
+            0,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            8,
+            25,
+            2,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            40,
+            8,
+            0,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            9,
+            22,
+            5,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            41,
+            6,
+            1,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            7,
+            27,
+            1,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            41,
+            6,
+            1,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            8,
+            24,
+            4,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            42,
+            4,
+            2,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            6,
+            29,
+            0,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            42,
+            4,
+            2,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            7,
+            26,
+            3,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            42,
+            5,
+            0,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            6,
+            28,
+            2,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            43,
+            2,
+            3,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            6,
+            28,
+            2,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            43,
+            3,
+            1,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            5,
+            30,
+            1,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            44,
+            0,
+            4,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            5,
+            30,
+            1,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            44,
+            1,
+            2,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            4,
+            32,
+            0,
+            0
+          ]
+        }
+      ],
+      "2": [
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            44,
+            4,
+            0,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            4,
+            31,
+            0,
+            1
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            44,
+            4,
+            0,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            5,
+            28,
+            3,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            45,
+            2,
+            1,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            4,
+            30,
+            2,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            46,
+            0,
+            2,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            3,
+            32,
+            1,
+            0
+          ]
+        },
+        {
+          "all_six_type_graphical": false,
+          "six_type_graphical_tests": [
+            true,
+            false,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            46,
+            1,
+            0,
+            1
+          ],
+          "x2_x2_neighbor_histogram": [
+            2,
+            34,
+            0,
+            0
+          ]
+        }
+      ],
+      "3": [
+        {
+          "all_six_type_graphical": true,
+          "six_type_graphical_tests": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "x1_x2_neighbor_histogram": [
+            48,
+            0,
+            0,
+            0
+          ],
+          "x2_x2_neighbor_histogram": [
+            0,
+            36,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "six_graphical_filter_counts_by_t": {
+      "0": 18,
+      "1": 11,
+      "2": 4,
+      "3": 1
+    },
+    "target_order": [
+      "00",
+      "01",
+      "02",
+      "11",
+      "12",
+      "22"
+    ]
+  },
+  "motif": {
+    "degrees": [
+      4
+    ],
+    "edges": 24,
+    "positive_residual_support_triangle_free": true,
+    "residual_pair_capacity_histogram": {
+      "0": 42,
+      "1": 12,
+      "2": 12
+    },
+    "vertices": 12
+  },
+  "outside_type_edges": {
+    "rows_by_t_eX0": {
+      "0": {
+        "00": 0,
+        "01": 12,
+        "02": 30,
+        "11": 156,
+        "12": 300,
+        "22": 51
+      },
+      "1": {
+        "00": 1,
+        "01": 8,
+        "02": 32,
+        "11": 160,
+        "12": 296,
+        "22": 52
+      },
+      "2": {
+        "00": 2,
+        "01": 4,
+        "02": 34,
+        "11": 164,
+        "12": 292,
+        "22": 53
+      },
+      "3": {
+        "00": 3,
+        "01": 0,
+        "02": 36,
+        "11": 168,
+        "12": 288,
+        "22": 54
+      }
+    },
+    "total": 549
+  },
+  "provenance": {
+    "discovery_files_checked": 11,
+    "discovery_manifest_sha256": "b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1",
+    "frozen_inputs_checked": [
+      {
+        "path": "attempts/wave105-c4boxk3-extension/package-manifest.sha256",
+        "sha256": "b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1"
+      },
+      {
+        "path": "verification/wave99-transition-pair-moment/package-manifest.sha256",
+        "sha256": "2d94086a0abef0612a445528319e1db4ef54c1fbb7fa361caef6025739aa654f"
+      },
+      {
+        "path": "verification/wave102-prism-incidence-code/package-manifest.sha256",
+        "sha256": "ab97e3d38b1a34d30caa6dddf7b5d9a9c76dc629bc5f6b400c225da1097fd242"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3"
+      }
+    ]
+  },
+  "sat_encoding_audit": {
+    "branch_coverage": {
+      "complete_up_to_permuting_three_identical_X0_rows": true,
+      "isomorphism_branches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "labelled_assignments_by_branch": {
+        "0": 1,
+        "1": 3,
+        "2": 3,
+        "3": 1
+      },
+      "labelled_x0_graphs_checked": 8
+    },
+    "conditional_domain_complete": true,
+    "counts": {
+      "common_conjunction_variables": 317985,
+      "edge_variables": 3741,
+      "total_variables": 321726
+    },
+    "logical_equivalence": "Each auxiliary y has y iff (D_ik and D_kj); exact D_ij+sum(y)=2-(PP^T)_ij is equation (3) off diagonal.",
+    "no_target_graph_automorphism_assumed": true,
+    "source_audit": {
+      "and_gate_truth_table_complete": true,
+      "exact_cardinality_checks": {
+        "at_least_bound_via_negated_at_most": true,
+        "at_most_bound": true
+      },
+      "fragment_checks": {
+        "all_nonendpoint_centers": true,
+        "all_outside_pairs": true,
+        "canonical_x0_branch": true,
+        "correct_pair_rhs": true,
+        "direct_sat_replay": true,
+        "exact_pair_row": true,
+        "forward_and_clauses": true,
+        "linear_incidence_rows": true,
+        "outside_degree_rows": true,
+        "pair_edge_in_exact_row": true,
+        "reverse_and_clause": true,
+        "skip_pair_endpoints": true,
+        "timeout_fail_closed": true,
+        "unsat_fail_closed": true
+      },
+      "source_sha256": "ac1b23f81c2f200b3f85650e26f7ac7803abe77c6c82d23f2b5fecded78c6103"
+    }
+  },
+  "scope": "Conditional on a hypothetical srg(99,14,1,2) containing the induced C4 box K3 motif.",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "global_construction": false,
+    "global_nonexistence_proof": false,
+    "linear_layer": "FEASIBLE",
+    "literature_novelty": "UNKNOWN",
+    "motif_excluded": false,
+    "motif_extension": "UNKNOWN"
+  },
+  "verdict": "VERIFIED_WITH_CLARIFICATIONS"
+}

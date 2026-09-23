@@ -1,0 +1,59 @@
+role: verifier
+date_utc: 2026-07-24T11:54:20Z
+git_commit: b2595baa40d50e9c259051751fe27090bee6a449
+package_state: UNCOMMITTED_CHRONOLOGY_V2_REPAIR_WITH_GIT_ACTIONS_PROHIBITED
+claim_label: VERIFIED
+scope: >-
+  Clean-clone-independent historical-byte reproducibility of all 14 unchanged
+  Wave 33 rooted-construction discovery tests and the 36 unchanged verifier
+  tests that do not inspect ignored local solver-environment files. This does
+  not verify a graph construction, nonexistence, or broader endpoint claim.
+inputs:
+  verification/wave33-rooted-construction-candidate-freeze.sha256: 441465c157f28e658afde31e6ca0cff49ccb5841a001150bd3e3af616c5bf63a
+  attempts/wave33-rooted-construction/artifact-manifest.sha256: 0cd192c0182506b3c901806cc96abb9fe53f04dc906b0b5cd73bc9b602558ff4
+  verification/wave33-rooted-construction/precomparison-freeze.sha256: 4ccbbad9c01eab764d9aa6fb207114e43f8c5a36bec3ec5bf0d161708ce0360d
+  verification/wave33-rooted-construction/artifact-manifest.sha256: 20c27560bdf9720cd1cf043b11c218130cd2891a2d3c874f9dbc9bce2f27fbbf
+  verification/wave33-rooted-construction-chronology/historical-inputs.json: d62fc4311577d56cbf34f8bd4e63aefb3b796457b3d020f4322324073d82f7dd
+method: >-
+  Authenticate the original four package roots and exact eight-input
+  historical snapshot; materialize a new temporary repository without a
+  .venv; run isolated ID-authenticated 14-test discovery and selected 36-test
+  verifier suites; independently replay the portable source half of verifier
+  test 08; authenticate six documentary hash records and three version lines
+  without opening their local paths; regenerate exact output; invoke only
+  hash-pinned portable comparison functions to reproduce the hostile search;
+  and prove source anchors and the synthetic tree remain unchanged.
+command: |-
+  python -B -m unittest discover -s verification/wave33-rooted-construction-chronology -p "test_*.py" -v
+  python -B verification/wave33-rooted-construction-chronology/chronology_replay.py --output <scratch>/chronology-results.json
+outputs:
+  verification/wave33-rooted-construction-chronology/chronology_replay.py: d8e02931c954dea7a306c268743dc6ac4b79a7aa44e04aa1308f6b0897abda22
+  verification/wave33-rooted-construction-chronology/test_chronology_replay.py: 278706a097e71e5161d664fd4a66c11d63a4f776c17bb3b1974f3e648e81f665
+  verification/wave33-rooted-construction-chronology/chronology-results.json: b2f0b872221a3fd9f41d6a88637be21034b70e8c8129fe57617115548b425957
+  verification/wave33-rooted-construction-chronology/audit.md: 1346992e11db72c4c94018293d3827214e2ee79e074490b8f905028e20fa30f1
+  verification/wave33-rooted-construction-chronology/failed-objections.md: 6849e20cbee26665e8560e07223e8c013681584f36e3ade830ba3c4439b12130
+  current_tree_chronology_tests_passed: 20
+  isolated_historical_discovery_tests_passed: 14
+  isolated_historical_verifier_tests_passed: 36
+  isolated_historical_package_tests_passed: 50
+  separately_replayed_portable_source_gate: PASS
+  solver_environment_file_half: NOT_REPLAYED_NONBLOCKING
+  observed_solver_environment_hashes: 0
+  exact_results_sha256: ba6640eacd041bc8349024a1d3f13e3d74bd67cdad64d2d78c9a94927319c496
+  accepted_comparison_summary_sha256: c0476fb877e0e7d6a6fc63b1a4c72bda0d7804a18a4e4b2b6d5a1bcbc4b6b459
+  chronology_comparison_projection_sha256: 446beb4ddd2a51194315954d7005cb01d90ff8643a64c78801d93524d65e7818
+  reproduced_certificate_sha256: 340e5df716ad63bceba25c745ab04c22ea1a3dca01e939072f09775a5fc5f634
+limitations:
+  - The recorded git_commit is the frozen public input base, not a commit
+    containing this uncommitted package; Git actions were prohibited.
+  - The first detached-clone failure occurred at integration 74c3725 after
+    110 other live tests passed, on missing .venv solver provenance.
+  - Original verifier test 08 is not run as a composite. Its portable source
+    half is independently replayed; only its local environment half is
+    NOT_REPLAYED_NONBLOCKING because the timeout is non-evidentiary.
+  - The unchanged comparison CLI is NOT_RUN_BY_DESIGN. Its prior 7025cc hash
+    is historical metadata, not a new replay result.
+  - The structured snapshot proves exact historical inputs but does not
+    promote any mathematical claim.
+  - No O-O layer, complete graph extension, endpoint, n3=708 conclusion,
+    Conway-99 outcome, or novelty result is supplied.

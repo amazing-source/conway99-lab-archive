@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1429, in <module>
+    main()
+    ~~~~^^
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1413, in main
+    result = build_results(
+        args.connected_dispositions,
+        args.disconnected_dispositions,
+    )
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1345, in build_results
+    zero = petersen_zero_census(petersen_f, base_l, base_r, group)
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1136, in petersen_zero_census
+    raise AssertionError("sole residual orbit changed")
+AssertionError: sole residual orbit changed

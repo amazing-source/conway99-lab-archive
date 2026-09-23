@@ -1,0 +1,71 @@
+{
+  "blind_freeze_manifest_sha256": "88f502d4d49f6866a73bff006097f66cf4eefb36b3cdf0eca24280df1d70f7a2",
+  "blind_to_source_discrepancies": [
+    "V1 blind model checked the headline relaxed counts but did not reconstruct the submitted selected flag-to-leaf multiplicity mechanism.",
+    "V1 blind slot_rows were a generic collision-free five-slot cover, not the submitted Wave203 third-block slot A-P.",
+    "V1 blind nonprivate occurrences were abstract cross-center copies, while the submitted multiplicities are repeated flag occurrences of one directed center-to-target label.",
+    "V1 blind degree-block pairing differs from the submitted seven actual circulant triangles; both partition each 14-neighbor set.",
+    "V2 blind simplices have off-diagonal Gram 2, while the submitted normalized A6 controls have Gram J_7-I_7 with off-diagonal 1.",
+    "V2 blind controls did not impose T=S+X_a+X_b, projective distinctness, or rank-11 span. The post-source JSON replay checks all three submitted conditions.",
+    "V3 local compression and trace detector match the blind derivation. The independent rank-11 counterexample uses different trace/intersection values from the submitted witness but proves the same scoped underdetermination.",
+    "The optional V3 99-projector controls were not independently reconstructed before unsealing; only their sealed source replay and result ledger are accepted, so they remain quarantined as relaxed."
+  ],
+  "manifests": {
+    "v1": {
+      "entries_match": true,
+      "entry_count": 12,
+      "manifest": "attempts/wave204-literature-hostile-controls/package-manifest.sha256",
+      "manifest_sha256": "b725463de29c60e14094de5b4f58c2051e5db5657b3f47772efbbd461cc187a9"
+    },
+    "v2": {
+      "entries_match": true,
+      "entry_count": 10,
+      "manifest": "attempts/wave204-global-slot-holonomy-proof-a/package-manifest.sha256",
+      "manifest_sha256": "e060f0f39c2b66b6b64a20694a2a6505f229cd85c7784374976e39cdba61dd84"
+    },
+    "v3": {
+      "entries_match": true,
+      "entry_count": 10,
+      "manifest": "attempts/wave204-projector-fourth-order-proof-b/package-manifest.sha256",
+      "manifest_sha256": "6074ec95b7a92cdf26626a031c9373fa94ccd3ab47c627d31183a64af0bdc181"
+    }
+  },
+  "schema": "wave204-post-source-independent-json-replay-v1",
+  "v1": {
+    "J": 3561,
+    "b": 0,
+    "certificate_predicates": "VERIFIED",
+    "certificate_sha256": "80ec8fe2bf7dd023b464bdd97343a9df7b2ea06c9214302e25a793ab2ef5136f",
+    "delta": 3,
+    "epsilon": 708,
+    "full_flag_count": 1287,
+    "max_combined_two_orientation_multiplicity": 3,
+    "q": 237,
+    "restricted_force_b_positive_implication": "REFUTED_WITH_SCOPE",
+    "selected_flag_count": 1200,
+    "selected_profile": {"1": 3123, "2": 234, "3": 3}
+  },
+  "v2": {
+    "canonical_total_S5_implication": "REFUTED_WITH_SCOPE",
+    "center_walk_chaining_implication": "REFUTED_WITH_SCOPE",
+    "fixed_column_coboundary": "VERIFIED",
+    "omitted_global_premise_count": 7,
+    "projected_defects": {
+      "3": [0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 2],
+      "4": [0, 0, 1, 1, 1, 1, 1, 2, 1, 0, 2],
+      "5": [0, 1, 1, 2, 1, 1, 1, 2, 1, 0, 1]
+    },
+    "relaxed_rank11_controls": "VERIFIED_SCOPED_RELAXED",
+    "result_sha256": "757df2fbc991bb878e307e243d9087e37eea9138b20e61c4ecbdac590c4ac0c1"
+  },
+  "v3": {
+    "different_ordered_fourth_trace_entries": 3888,
+    "distinct_directions_of_231_labels": 21,
+    "failed_target_premise_count": 7,
+    "local_fourth_order_detector": "VERIFIED",
+    "optional_global_control": "SOURCE_REPLAYED_SCOPED_RELAXED",
+    "optional_global_control_independent_status": "NOT_PROMOTED",
+    "pair_trace_plus_intersection_determines_h": "REFUTED_WITH_SCOPE",
+    "result_sha256": "008b098012807fa98a3874df641575c49e7030e120e4417c8eada153c792b151"
+  }
+}

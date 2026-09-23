@@ -1,0 +1,451 @@
+{
+  "C4_box_K3_motif": {
+    "ambient_spectrum": {
+      "-4": 44,
+      "14": 1,
+      "3": 54
+    },
+    "cross_edge_count": 90,
+    "equitable_partition_consequence": "Every outside vertex has exactly one box neighbor.",
+    "global_extension_status": "UNKNOWN: local cap saturation and compatible interlacing are necessary conditions, not a construction or extension theorem",
+    "graph": "K3 square K3 (the 3 by 3 rook graph)",
+    "induced_prism_count": 6,
+    "interlacing_verdict": "compatible: the quotient eigenvalue 3 is an ambient eigenvalue, and the motif spectrum lies within ambient bounds",
+    "outside_neighbor_cap": "Every outside vertex has at most one neighbor in the box, because every pair in the box has already saturated its lambda=1 or mu=2 common-neighbor allowance internally.",
+    "outside_vertex_count": 90,
+    "parameters": [
+      9,
+      4,
+      1,
+      2
+    ],
+    "quotient_eigenvalues": [
+      14,
+      3
+    ],
+    "quotient_matrix": [
+      [
+        4,
+        10
+      ],
+      [
+        1,
+        13
+      ]
+    ],
+    "spectrum": {
+      "-2": 4,
+      "1": 4,
+      "4": 1
+    }
+  },
+  "incidence_code": {
+    "A_mod2_identity": "A^2=A",
+    "BBT": "B*B^T = I + A over F2",
+    "B_shape": [
+      99,
+      231
+    ],
+    "D_shape": [
+      231,
+      "P"
+    ],
+    "even_triangle_code_dimension": "dim(im(B) intersect 1-perp) = rank(B)-1",
+    "factorization": "f mod 2 = B*D*1 over F2",
+    "nonzero_triangle_parity_check_weight_candidates": [
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60
+    ],
+    "outside_degree_moment_witnesses": {
+      "36": {
+        "4": 63
+      },
+      "40": {
+        "0": 2,
+        "2": 1,
+        "4": 29,
+        "6": 27
+      },
+      "44": {
+        "0": 5,
+        "2": 1,
+        "6": 43,
+        "8": 6
+      },
+      "48": {
+        "0": 5,
+        "6": 16,
+        "8": 30
+      },
+      "52": {
+        "0": 4,
+        "10": 11,
+        "6": 1,
+        "8": 31
+      },
+      "56": {
+        "0": 2,
+        "10": 35,
+        "4": 1,
+        "6": 1,
+        "8": 4
+      },
+      "60": {
+        "10": 24,
+        "12": 15
+      }
+    },
+    "prism_code_dimension_bounds": "rank(BD) <= min(P, rank(B)-1, rank(D)); rank(D)<=230",
+    "rank_A_mod2": 54,
+    "rank_I_plus_A_mod2": 45,
+    "triangle_code_dimension_bounds": [
+      45,
+      99
+    ],
+    "triangle_dual_dimension_bounds": [
+      0,
+      54
+    ],
+    "vertex_prism_incidence_shape": [
+      99,
+      "P"
+    ],
+    "weight_scope": "necessary candidates only; no codeword existence is asserted"
+  },
+  "pair_overlap": {
+    "maximum_distinct_prism_overlap": 4,
+    "proof_scope": "complete labelled induced-prism gluing with necessary lambda/mu common-neighbor caps",
+    "rows": [
+      {
+        "edge_consistent_labelled_pairs": 3600,
+        "lambda_mu_cap_compatible_pairs": 3600,
+        "support_intersection": 0
+      },
+      {
+        "edge_consistent_labelled_pairs": 3600,
+        "lambda_mu_cap_compatible_pairs": 3600,
+        "support_intersection": 1
+      },
+      {
+        "edge_consistent_labelled_pairs": 1872,
+        "lambda_mu_cap_compatible_pairs": 720,
+        "support_intersection": 2
+      },
+      {
+        "edge_consistent_labelled_pairs": 576,
+        "lambda_mu_cap_compatible_pairs": 36,
+        "support_intersection": 3
+      },
+      {
+        "edge_consistent_labelled_pairs": 144,
+        "lambda_mu_cap_compatible_pairs": 24,
+        "support_intersection": 4
+      },
+      {
+        "edge_consistent_labelled_pairs": 60,
+        "lambda_mu_cap_compatible_pairs": 0,
+        "support_intersection": 5
+      },
+      {
+        "edge_consistent_labelled_pairs": 0,
+        "lambda_mu_cap_compatible_pairs": 0,
+        "support_intersection": 6
+      }
+    ]
+  },
+  "parameters": {
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "triangle_count": 231,
+    "v": 99
+  },
+  "parity_defect": {
+    "O_integrality": "O is an integer and is even because O is congruent modulo 2 to sum_v f_v=6P",
+    "P1_exact_O": 6,
+    "P2_minimum_O_from_overlap": 4,
+    "P3_minimum_O_from_exhaustive_gluing": 4,
+    "antipodal_rounding": "N14 <= 2*floor((55440 - 5*n3 - O/2)/14)",
+    "definition": "f_v is the number of induced triangular prisms containing vertex v; O is the Hamming weight of f modulo 2",
+    "finite_rounding_strict_improvement_count": 34459,
+    "floor_sum_identity": "sum_v floor(5 f_v/2) = 15P - O/2",
+    "refined_inequality": "7*N14 <= 55440 - 5*n3 - O/2",
+    "representative_rows": [
+      {
+        "P": 0,
+        "antipodal_even_N14_upper": 4950,
+        "minimum_O_used": 0,
+        "n3": 4158,
+        "ordinary_integer_N14_upper": 4950,
+        "seven_N14_upper": 34650
+      },
+      {
+        "P": 1,
+        "antipodal_even_N14_upper": 4950,
+        "minimum_O_used": 6,
+        "n3": 4155,
+        "ordinary_integer_N14_upper": 4951,
+        "seven_N14_upper": 34662
+      },
+      {
+        "P": 2,
+        "antipodal_even_N14_upper": 4954,
+        "minimum_O_used": 4,
+        "n3": 4152,
+        "ordinary_integer_N14_upper": 4954,
+        "seven_N14_upper": 34678
+      },
+      {
+        "P": 3,
+        "antipodal_even_N14_upper": 4956,
+        "minimum_O_used": 4,
+        "n3": 4149,
+        "ordinary_integer_N14_upper": 4956,
+        "seven_N14_upper": 34693
+      },
+      {
+        "P": 1386,
+        "antipodal_even_N14_upper": 7920,
+        "minimum_O_used": 0,
+        "n3": 0,
+        "ordinary_integer_N14_upper": 7920,
+        "seven_N14_upper": 55440
+      }
+    ],
+    "sum_f": "sum_v f_v = 6P"
+  },
+  "three_prism_gluing": {
+    "O0_isomorphism_type": "3 by 3 rook graph K3 square K3",
+    "O0_labelled_survivor_count": 36,
+    "O0_motif_certificate": {
+      "adjacent_common_neighbor_counts": [
+        1
+      ],
+      "degree_multiset": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "edge_count": 18,
+      "induced_prism_count": 6,
+      "nonadjacent_common_neighbor_counts": [
+        2
+      ]
+    },
+    "O2_survivor_count": 0,
+    "P3_conclusion": "If the global prism count P equals 3, O cannot be 0 because the only local O=0 gluing itself contains six distinct induced prisms; O=2 violates local lambda/mu caps; hence O>=4.",
+    "profile_count_with_O_at_most_2": 11,
+    "profiles": [
+      {
+        "counts_masks_1_through_7": [
+          0,
+          0,
+          2,
+          0,
+          2,
+          2,
+          2
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          4,
+          4,
+          4
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          0,
+          0,
+          3,
+          0,
+          3,
+          3,
+          0
+        ],
+        "odd_weight": 0,
+        "pair_intersections": [
+          3,
+          3,
+          3
+        ],
+        "surviving_forced_graphs": 36
+      },
+      {
+        "counts_masks_1_through_7": [
+          0,
+          0,
+          3,
+          1,
+          2,
+          2,
+          1
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          4,
+          3,
+          3
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          0,
+          0,
+          4,
+          2,
+          2,
+          2,
+          0
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          4,
+          2,
+          2
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          2,
+          1
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          3,
+          4,
+          3
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          0,
+          1,
+          3,
+          1,
+          3,
+          2,
+          0
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          3,
+          3,
+          2
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          0,
+          2,
+          2,
+          0,
+          4,
+          2,
+          0
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          2,
+          4,
+          2
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          1,
+          0,
+          2,
+          0,
+          2,
+          3,
+          1
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          3,
+          3,
+          4
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          1,
+          0,
+          3,
+          1,
+          2,
+          3,
+          0
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          3,
+          2,
+          3
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          1,
+          1,
+          2,
+          0,
+          3,
+          3,
+          0
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          2,
+          3,
+          3
+        ],
+        "surviving_forced_graphs": 0
+      },
+      {
+        "counts_masks_1_through_7": [
+          2,
+          0,
+          2,
+          0,
+          2,
+          4,
+          0
+        ],
+        "odd_weight": 2,
+        "pair_intersections": [
+          2,
+          2,
+          4
+        ],
+        "surviving_forced_graphs": 0
+      }
+    ]
+  },
+  "verdict_scope": "The parity-defect inequality, small-P refinements, incidence factorization, binary rank consequences, and local null-motif classification are independently checked.  No global graph existence or nonexistence claim follows."
+}

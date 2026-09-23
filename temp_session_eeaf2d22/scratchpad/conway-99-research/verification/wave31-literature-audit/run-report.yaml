@@ -1,0 +1,99 @@
+role: literature
+date_utc: 2026-07-24T06:38:04Z
+git_commit: 5652578111999645a9d5427d0716053de79e0902
+claim_label: UNKNOWN
+audit_verdict: NO_EXACT_PRIOR_RESULT_FOUND_IN_SEARCHED_SOURCES
+scope: >-
+  Exact statement freeze and bounded primary/authoritative-source audit for
+  the unrestricted surviving Wave 30 decomposable rootless h=729 endpoint:
+  a rank-20 determinant-729 block plus a rank-24 rootless even-unimodular
+  block carrying the full 231-row integral scale-21 projector, active Schur
+  square, determinant-five Q, B, cubic-tensor, and block identities. The
+  actual-graph q!=1 theorem and its forced U-block q profile are retained as
+  a separate stronger layer, not imported into the narrower matrix problem.
+  A later sign-involution/primitive-idempotent obstruction is recorded in a
+  post-freeze addendum with its decisive constancy lemma explicitly UNKNOWN.
+inputs:
+  verification/wave31-literature-audit/protocol-freeze.md:
+    sha256: 97660bf039223f55d51f498f5743e2ca1779743bbc058f9c5b7e511957e06621
+  SOURCES.bib:
+    sha256_at_audit: 651ec01dbfafff84cb28092943572ac6c2d823a068f55e54eab9111149cc0752
+  verification/wave30-literature-audit/source-metadata.json:
+    sha256: f0e64d73201dfd4c68b52d9f0867fc5622f8637a74cb6402ea0213ee09c77368
+  verification/wave30-literature-audit/audit.md:
+    sha256: 7b852d5be4ee283e2280d7ebc7e5144ec25666c194fe91cbaaf43a745f1de30c
+  verification/wave30-general-h729/reverification-audit.md:
+    sha256: 523a84e2a490f3626a791fb16f43b77b7631b3f26f2de8dcecc83f5e03f4d2cc
+  agents/2026-07-22-wave8-status-search.md:
+    sha256: 31511fd902d2887823174374c8a058c22452bb81950f49a25834e69efcc460ed
+  verification/2026-07-22-n3-side-incidence-audit.md:
+    sha256: 9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787
+method: >-
+  Read the governing protocol and independently verified upstream boundary;
+  freeze every S, G, X, M, W, Q, B, C, frame, tensor, Schur, row, pair, and
+  block identity before searching; distinguish projector-only implications
+  from the graph-local q-gap; search exact numeric fingerprints and alternate
+  frame, lattice-design, eutactic-star, s-integrability, harmonic-cubic,
+  Schur-square, Leech-lattice, and Conway-99 terminology; inspect primary or
+  authoritative metadata and abstracts where accessible; compare every near
+  hit against the full signature; separately freeze and search the later
+  diagonal-sign commutant, signed-triangle, net-regularity,
+  primitive-idempotent-reducibility, and divisibility-33 candidate; retain
+  exact query strings, limits, failures, source boundaries, and hashes;
+  retain no raw source payload.
+command: |-
+  No single computational literature-search command. Exact query strings,
+  service limits, dispositions, and access failures are in query-ledger.json.
+  Validation:
+  Get-Content verification/wave31-literature-audit/query-ledger.json -Raw | ConvertFrom-Json
+  Get-Content verification/wave31-literature-audit/source-metadata.json -Raw | ConvertFrom-Json
+  Get-FileHash verification/wave31-literature-audit/* -Algorithm SHA256
+  Select-String -Path verification/wave31-literature-audit/* -Pattern ([char]0)
+search_counts:
+  batches: 20
+  query_strings: 80
+  web_search_queries: 80
+  direct_metadata_or_abstract_opens: 4
+source_counts:
+  retained_metadata_records: 14
+  retained_raw_pdfs: 0
+  retained_raw_html: 0
+  retained_raw_api_or_search_payloads: 0
+outputs:
+  verification/wave31-literature-audit/protocol-freeze.md:
+    sha256: 97660bf039223f55d51f498f5743e2ca1779743bbc058f9c5b7e511957e06621
+  verification/wave31-literature-audit/protocol-addendum-sign-involution.md:
+    sha256: a9c0ea30cb4431b0218ec547cbc153851cd554fa90e76f8496416f988051425b
+  verification/wave31-literature-audit/query-ledger.json:
+    sha256: 51e3104691e9d52deab3073ed97f88b8cd2ec490f3980dcc24fa07665fd9dbdd
+  verification/wave31-literature-audit/source-metadata.json:
+    sha256: dfe2fb7c1dff6c6cc7095fccdfc1c3fdf92674352b633158e4810acfc495930b
+  verification/wave31-literature-audit/audit.md:
+    sha256: ee5384512debc4e31e0ed28f2a73a00bcca11016749f6cbf9e6f5181934cc5f6
+upstream_provenance:
+  conditional_decomposable_rootless_20_plus_24_reduction: VERIFIED
+  surviving_20_plus_24_realization: UNKNOWN
+  q_not_equal_1_actual_graph_theorem: VERIFIED
+  q_not_equal_1_prior_art: CITED
+  q_not_equal_1_from_projector_package: false
+status:
+  exact_prior_result: NOT_FOUND_IN_SEARCHED_SOURCES
+  matrix_schur_realization: UNKNOWN
+  actual_graph_forced_U_profile: DERIVED_NECESSARY
+  sign_involution_constancy_lemma: UNKNOWN
+  sign_involution_obstruction: UNKNOWN
+  graph_lift: UNKNOWN
+  n3_708: UNKNOWN
+  global_Conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - A finite literature search cannot prove novelty, priority, nonexistence, or global openness.
+  - Search ranking, terminology, language, access, indexing, and posting delays may hide relevant work.
+  - Google Scholar, MathSciNet, zbMATH, and citation networks were not comprehensively audited.
+  - Three DOI direct opens were rejected by the interactive opener and are recorded as access failures.
+  - Niemeier classification identifies U only up to isometry; it supplies no marked frame.
+  - Generic s-integrability, design, tight-frame, and full-Leech-shell results do not imply the exact selected endpoint package.
+  - The graph-local q-gap cannot be silently imposed on a projector-only realization search.
+  - The post-freeze sign-involution route depends on an unproved constancy lemma; general signed-graph literature does not fill that gap.
+  - No complete matrix, lattice, or graph enumeration was performed.
+  - No raw PDF, HTML, API response, or search payload was retained.

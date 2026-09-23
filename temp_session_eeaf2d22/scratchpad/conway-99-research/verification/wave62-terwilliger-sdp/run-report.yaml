@@ -1,0 +1,47 @@
+role: verifier
+date_utc: 2026-07-27T22:02:44Z
+git_commit: 81c8d45426938ea8490af55d81f05b7c2ad99035
+claim_label: VERIFIED
+scope: exact independent verification of the finite Wave 62 signed-edge association scheme, all y=0..42 one-point invariant projector blocks, and the implemented degree-24 Schur family
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: attempts/wave62-terwilliger-sdp/package-manifest.sha256
+    sha256: d62af7171cd825001c8bce4b9b1502970718640f5c441164eb49d4e59ba26401
+  - path: attempts/wave62-terwilliger-sdp/exact-results.json
+    sha256: 319f7e08a1990b49d3c087138c68d31d4e577fae1832fb09bd69f681f4412a2e
+  - path: attempts/wave62-terwilliger-sdp/exact_check.py
+    sha256: 57eb0b34b563fee5295cd3a0d4e26f818b343d5b8e2617e1e91fd5de5a76083d
+method: clean-room exact rational reconstruction of labels, orbitals, intersection numbers, idempotents, incidence eigenspaces, endpoint densities, spectral projectors, and every implemented Schur scalar block; discovery code inspected only after the independent reconstruction
+command: .\.venv\Scripts\python.exe -B verification\wave62-terwilliger-sdp\verify_wave62.py --expect verification\wave62-terwilliger-sdp\exact-verifier-result.json ; .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave62-terwilliger-sdp -p "test_*.py" -v
+outputs:
+  - path: verification/wave62-terwilliger-sdp/exact-verifier-result.json
+    sha256: 2274607a93bc72093f9a9cbe3cdb6a5ee7942c712d54177450003f741104f916
+  - path: verification/wave62-terwilliger-sdp/verify_wave62.py
+    sha256: 30875108054a5643605a32534566893c14f3db0c7c3be3936ef785d96f5c11af
+  - path: verification/wave62-terwilliger-sdp/test_verify_wave62.py
+    sha256: 0759ad547a536d4b4c9fcbbf4819596c959e519235c651fac96e0c5e106ebd17
+result:
+  discovery_manifest_verified: true
+  manifest_records: 10
+  intersection_tensor_sha256: 44574bd2abfb7a909c85b2f52aacd72e9e73c84981d9d48da112a481e299b2ff
+  surviving_integer_y: 43
+  implemented_schur_matrices: 1949
+  endpoint_block_inequalities: 23388
+  positive_blocks: 23316
+  zero_blocks: 72
+  negative_blocks: 0
+  verifier_tests: 8
+  discovery_tests_reproduced: 6
+  documentation_correction: implementation omits the tautological unpowered E_0 although the prose literally describes all 1950 triples; adding it changes no conclusion
+  strict_n3_upper_bound: NOT_OBTAINED
+  endpoint_n3_4158: UNKNOWN
+  conway_99: UNKNOWN
+resources:
+  minimum_free_memory_percent_required: 15
+  minimum_free_memory_percent_observed: 54.7
+limitations:
+  - VERIFIED applies only to the finite one-point averaged relaxation and implemented degree-24 family.
+  - Feasibility is not a graph construction or existence proof.
+  - No nonexistence, strict upper bound, novelty, or priority claim follows.
+  - Two-root and triangle-root compatibility remain outside the model.

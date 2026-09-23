@@ -1,0 +1,215 @@
+{
+  "boundary": {
+    "code_constructed": false,
+    "conditional_theorem_verified": true,
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "graph_constructed": false,
+    "integer_equality_face_realized": false,
+    "rank_11_excluded": false,
+    "strict_n3_improvement": false
+  },
+  "bounds": {
+    "all_projective_short_circuits": 7623,
+    "edge_isolated_projective_short_circuits": 693,
+    "nonedge_projective_short_circuits_Q": 6930,
+    "scalar_short_circuit_words": 15246,
+    "wave188_all_short_word_bound_remains_stronger": 18018
+  },
+  "coefficient_certificate": {
+    "C": 4158,
+    "Q0": "n1+n2+2n3+r1+r2+2h+y+2g+W",
+    "RA": "3h+y+3g-(a2+a3+2b3+c2)",
+    "S2": "p2-n2",
+    "SI": "I-2C",
+    "SL": "n1+2n2+c1+2r2+y+2W-C",
+    "identity": "Q0-5C/3=(2/3)SI+S2+(2/3)RA+SL/3+a1/3+b1/6+b3/2+r2/3+W/3",
+    "lower": "3Q>=5C",
+    "nonedge_projective_Q": 6930,
+    "variable_order_after_split_substitution": [
+      "C",
+      "a1",
+      "a2",
+      "a3",
+      "b1",
+      "b3",
+      "c1",
+      "c2",
+      "n2",
+      "n3",
+      "r2",
+      "h",
+      "y",
+      "g",
+      "W"
+    ]
+  },
+  "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+  "equality_face": {
+    "asserted_to_be_graph_code_cover_or_circuit_family": false,
+    "family": {
+      "Q0": 6930,
+      "a3=n1": "4158-3m",
+      "c1=p3=r1": "3m",
+      "h": "1386-m"
+    },
+    "forced_zero": [
+      "a1",
+      "a2",
+      "b1",
+      "b3",
+      "c2",
+      "n2",
+      "p2",
+      "r2",
+      "y",
+      "g",
+      "W"
+    ],
+    "parameter": "m=n3, integer 0<=m<=1386",
+    "sample_rows": [
+      {
+        "W": 0,
+        "a1": 0,
+        "a2": 0,
+        "a3": 4158,
+        "b1": 0,
+        "b3": 0,
+        "c1": 0,
+        "c2": 0,
+        "g": 0,
+        "h": 1386,
+        "m": 0,
+        "n1": 4158,
+        "n2": 0,
+        "n3": 0,
+        "p2": 0,
+        "p3": 0,
+        "r1": 0,
+        "r2": 0,
+        "y": 0
+      },
+      {
+        "W": 0,
+        "a1": 0,
+        "a2": 0,
+        "a3": 2079,
+        "b1": 0,
+        "b3": 0,
+        "c1": 2079,
+        "c2": 0,
+        "g": 0,
+        "h": 693,
+        "m": 693,
+        "n1": 2079,
+        "n2": 0,
+        "n3": 693,
+        "p2": 0,
+        "p3": 2079,
+        "r1": 2079,
+        "r2": 0,
+        "y": 0
+      },
+      {
+        "W": 0,
+        "a1": 0,
+        "a2": 0,
+        "a3": 0,
+        "b1": 0,
+        "b3": 0,
+        "c1": 4158,
+        "c2": 0,
+        "g": 0,
+        "h": 0,
+        "m": 1386,
+        "n1": 0,
+        "n2": 0,
+        "n3": 1386,
+        "p2": 0,
+        "p3": 4158,
+        "r1": 4158,
+        "r2": 0,
+        "y": 0
+      }
+    ]
+  },
+  "format": "wave194-five-thirds-clean-room-math-v1",
+  "low_target": {
+    "SL": "n1+2n2+c1+2r2+y+2W-C>=0",
+    "U": "union of labels served by selected type3 circuits",
+    "k": "number of chosen U-label targets charged to selected low circuits",
+    "k_cancellation": true,
+    "lower_with_overlap": "|U|>=C-(n1+2n2)+k",
+    "new_W_capacity": "2W",
+    "new_residual_low_capacity": "y",
+    "old_exact1_only_c1": "an exact1 raw target must have the same label; a U-label with a private raw assignment is therefore owned by type3",
+    "old_exact2_capacity": "2r2",
+    "selected_low_label_capacity": "n1+2n2",
+    "target_exact_multiplicity_at_most": 2,
+    "upper_with_targets": "|U|<=k+c1+2r2+y+2W",
+    "why_g_absent": "an exact3 residual cannot be a low leaf target"
+  },
+  "math_result_sha256": "40369617c188b4cf815c01e188bd065e22caa4a572ea914913b4346fc7d3cac6",
+  "pool_collision_audit": {
+    "RA": "3h+y+3g-(a2+a3+2b3+c2)>=0",
+    "exact1_old_raw_collision": "a residual equal to a raw for another label would not be exact1; for the same type2 label, the other translate intersects the source translate in only two coordinates",
+    "exact2_old_raw_collision": "Wave181 uniqueness forces the selected owner, but every residual support omits an owner coordinate",
+    "forced_residual_assignments": "a2+c2+b3",
+    "new_mate_old_collision": "excluded by closure of the old exact3 pool",
+    "new_mate_selected_collision": "excluded by privacy and the fixed-point-free companion involution",
+    "new_pool": {
+      "circuit_count": "y+2g",
+      "exact1_circuits": "y",
+      "exact3_companion_pairs": "g",
+      "label_capacity": "y+3g"
+    },
+    "old_exact3_combined_assignment_count": "a2+a3+2b3+c2",
+    "old_raw_pool": {
+      "circuit_count": "r1+r2+2h",
+      "exact1": "r1=a1+b1+c1",
+      "exact2": "a2+c2<=2r2",
+      "exact3": "a3+b3<=3h"
+    },
+    "other_type2_opposite_companion_collision": "an exact3 residual in one translate has that translate's endpoint as center, whereas the other raw and its mate have the opposite endpoint as center",
+    "other_type2_raw_collision": "the two translate supports intersect in only two coordinates",
+    "raw_split": {
+      "excluded_b2": "Wave181 exact2 uniqueness",
+      "excluded_c3": "Wave191 privacy-free type3 leaf exclusion",
+      "type1": "a1+a2+a3=n1",
+      "type2": "b1+b3=2p2",
+      "type3": "c1+c2=p3"
+    },
+    "selected_collision": "privacy plus omission of the owner coordinate",
+    "selected_companion_collision": "companionship would make the residual a selected circuit",
+    "source_exact3_raw_collision": "the canceled leaf coordinate is absent",
+    "source_opposite_companion_collision": "the opposite companion has the same canceled leaf coordinate"
+  },
+  "type2_exact3_residual": {
+    "dual_distance_lower_bound": 4,
+    "exact3_raw_center": "the endpoint supporting the six-block side of its translate",
+    "residual_construction": "subtract the unique scalar multiple of the exact3 raw relation that cancels its leaf coordinate",
+    "residual_crosses_private_label": "both endpoint-star sides remain proper and nonempty, so a support-minimal circuit meets both sides",
+    "residual_differs_from_selected_exact2_owner": "the translated support already omits an owner coordinate",
+    "residual_differs_from_source_opposite_companion": "both exact3 companions contain the same leaf coordinate",
+    "residual_differs_from_source_raw": "the raw leaf coordinate is absent",
+    "residual_exact_multiplicity": [
+      1,
+      3
+    ],
+    "residual_nonzero": "otherwise the translated relation would equal the strictly smaller raw circuit",
+    "same_label_double_residuals_distinct": "the two residuals lie in the two translate supports; equality would give a circuit of weight at most two",
+    "translate_support_intersection_size": 2,
+    "type2_translate_profiles": [
+      [
+        6,
+        2
+      ],
+      [
+        2,
+        6
+      ]
+    ]
+  },
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

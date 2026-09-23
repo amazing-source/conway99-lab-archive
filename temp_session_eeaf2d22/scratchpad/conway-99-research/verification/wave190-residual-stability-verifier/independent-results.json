@@ -1,0 +1,207 @@
+{
+  "boundary": {
+    "code_constructed": false,
+    "conditional_theorem_verified": true,
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "graph_constructed": false,
+    "rank_11_excluded": false,
+    "sharp_row_realized_by_cover": false,
+    "strict_n3_improvement": false
+  },
+  "bounds": {
+    "all_projective_short_circuits": 6237,
+    "edge_isolated_projective_short_circuits": 693,
+    "nonedge_projective_short_circuits_Q": 5544,
+    "scalar_short_circuit_words": 12474,
+    "wave188_all_short_word_bound_remains_stronger": 18018
+  },
+  "coefficient_certificate": {
+    "base_pool": "B=n1+n2+2*n3",
+    "closed_pool_identity": "2r+3h=A+delta",
+    "disjoint_pool_bound": "Q>=B+r+2h+Y",
+    "final_inequality": "6Q>=4I+n1+2*(p2-n2)>=8C",
+    "four_private_I_row": [
+      8,
+      8,
+      12,
+      4,
+      4
+    ],
+    "nonedge_projective_circuit_lower": 5544,
+    "nonnegative_remainder_row": [
+      1,
+      -2,
+      0,
+      2,
+      0
+    ],
+    "private_incidence": "I>=2*C",
+    "raw_assignments": "A=n1+2*p2+p3",
+    "remainder_decomposition": "n1+2*(p2-n2)",
+    "six_Q_row": [
+      9,
+      6,
+      12,
+      6,
+      4
+    ],
+    "stability_bound": "Q>=B+A/2+p3/6",
+    "variable_order": [
+      "n1",
+      "n2",
+      "n3",
+      "p2",
+      "p3"
+    ]
+  },
+  "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+  "format": "wave190-residual-stability-clean-room-verification-v1",
+  "integrity": {
+    "direct_files_checked": 5,
+    "discovery_checker_imported_or_executed_by_verifier": false,
+    "failures": [],
+    "nested_entries_checked": {
+      "wave189_verifier": 8,
+      "wave190_source": 9
+    },
+    "passed": true,
+    "source_manifest_sha256": "e66987333e3f7119026520be9680699bcfdcfcddbf8877016d8d817193684a5a",
+    "wave189_verifier_manifest_sha256": "fc17484bd8c32a5886ecdcc65d153903cef5f3b60a3de1c9905ed96697c273c4"
+  },
+  "orbit_label_collision_capacity": {
+    "capacity_consequence": "a_H+b_H<=3*h",
+    "companions_share_center": true,
+    "first_support_forces_center": "x",
+    "maximum_combined_raw_residual_uses_per_orbit": 3,
+    "per_label_states": [
+      "none",
+      "raw",
+      "residual"
+    ],
+    "raw_and_residual_mutually_exclusive_per_label": true,
+    "second_support_forces_center": "y",
+    "three_label_state_rows_checked": 27,
+    "two_type2_raw_extractions_cannot_be_orbit_mates": true,
+    "type2_support_profiles": [
+      [
+        6,
+        2
+      ],
+      [
+        2,
+        6
+      ]
+    ]
+  },
+  "residual_slack": {
+    "equivalent_master_inequality": "delta+3h+3Y>=p3",
+    "exact_one_capacity": "A<=2r-r1+3h, so r1<=delta",
+    "low_raw_collision_excluded": {
+      "residual_exact_one": "another raw label would force multiplicity at least two",
+      "residual_exact_two": "Wave181 uniqueness would make it r_e, whose coordinates are omitted"
+    },
+    "nonnegative_slacks": {
+      "all_raw_minus_type3_raw_aH_minus_qH": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "exact_one_delta_minus_r1": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "exact_two_landing_k_minus_p3_plus_r1_plus_qH": [
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "new_residual_capacity_3Y_minus_k_plus_bH": [
+        0,
+        0,
+        0,
+        3,
+        -1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "orbit_labels_3h_minus_aH_minus_bH": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1
+      ]
+    },
+    "selected_and_selected_companion_collisions_excluded_by_privacy": true,
+    "sum_identity": "3Y-p3+delta+3h>=0",
+    "sum_row": [
+      -1,
+      1,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "variable_order": [
+      "p3",
+      "delta",
+      "h",
+      "Y",
+      "k",
+      "bH",
+      "r1",
+      "qH",
+      "aH"
+    ]
+  },
+  "result_sha256": "f70b5e28d22a0e4caf48cb7285289420abf84b38b0e1dd75c02fc1ab9d0ec832",
+  "sharp_arithmetic_control": {
+    "Q": 5544,
+    "Y": 0,
+    "aH": 4158,
+    "all_displayed_scalar_rows_saturated": true,
+    "asserted_to_be_cover_or_graph": false,
+    "bH": 0,
+    "delta": 0,
+    "h": 1386,
+    "k": 0,
+    "n1": 0,
+    "n2": 0,
+    "n3": 1386,
+    "p2": 0,
+    "p3": 4158,
+    "qH": 4158,
+    "r": 0
+  },
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

@@ -1,0 +1,42 @@
+role: literature
+date_utc: "2026-07-23T21:55:02Z"
+git_commit: "7103ddfe755a8c3430ef79e9a76e3323f1e00e1d"
+claim_label: UNKNOWN
+scope: >-
+  Source-first literature and novelty audit for the exact Conway-99 Wave 25
+  refinement at n3=708: integral self-adjoint idempotent splitting,
+  even-unimodular positive-definite rank-36 obstruction, det(B)<=6525, and
+  surviving indices {9,21,49,81,189,441,729,1029}.
+inputs:
+  - path: verification/wave25-literature-audit/preinspection-query-plan.md
+    sha256: 4558915702e5c52f2ce0280d58046d7055bb4037da111c61a665df9b17de2f6a
+non_file_input: independently supplied claim synopsis
+method: >-
+  Froze 30 exact, status, and conceptual-prior-art queries before proof
+  inspection; searched the current web; inspected ten primary or authoritative
+  sources; adjudicated exact target matches separately from conceptual prior
+  art; retained null searches and access failures.
+command: >-
+  web.run search_query for Q01-Q30, followed by web.run open/find calls for
+  source IDs S01-S10; full query strings and inspected URLs are recorded in
+  source-query-ledger.json.
+outputs:
+  - path: verification/wave25-literature-audit/source-query-ledger.json
+    sha256: 9115c80e432d6d834497621f5e9e7238064afc2d02696285a3557f115d4bf053
+  - path: verification/wave25-literature-audit/2026-07-23-wave25-literature-audit.md
+    sha256: 76a839b16d2c7ac3bfe85548e33908943f32859d9a95a67833f02bab38feecbc
+limitations:
+  - Bounded web and source audit; absence of a found match is not proof of novelty.
+  - Search-result counts were not exposed by the engine.
+  - MathSciNet and zbMATH subscription searches were unavailable.
+  - Indexing may omit or lag theses, preprints, and conference manuscripts.
+  - The audit did not inspect or validate the Wave 25 proof.
+  - ScienceDirect full text was access-blocked for one source; an author/arXiv version was used.
+query_count: 30
+inspected_source_count: 10
+exact_target_match_count: 0
+target_status: UNKNOWN
+novelty_status: UNKNOWN
+proof_separation: >-
+  The preinspection plan was created before opening any Wave 25 discovery,
+  verifier, certificate, or test artifact.

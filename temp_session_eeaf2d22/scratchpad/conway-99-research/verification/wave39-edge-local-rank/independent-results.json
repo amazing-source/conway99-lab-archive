@@ -1,0 +1,281 @@
+{
+  "claim_label": "VERIFIED",
+  "completeness": {
+    "matching_count_formula": "11*9*7*5*3*1 = 10395",
+    "normal_form_count": 11,
+    "normal_forms": [
+      {
+        "contains_edge_prism": true,
+        "even_part_count": 0,
+        "labelled_matching_count": 1,
+        "local_nullity_F7": 2,
+        "local_rank_F7": 25,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "representative_block_sha256": "2368a7a951f4f9092fe6d678b4286fcffaaa55b14a8b3b22f38e8a17a17611c0"
+      },
+      {
+        "contains_edge_prism": true,
+        "even_part_count": 1,
+        "labelled_matching_count": 30,
+        "local_nullity_F7": 4,
+        "local_rank_F7": 23,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "representative_block_sha256": "c6e3a93c516e2316ff299cffbf721c877c3c3c474dc657025c943251a5de1e57"
+      },
+      {
+        "contains_edge_prism": true,
+        "even_part_count": 0,
+        "labelled_matching_count": 160,
+        "local_nullity_F7": 2,
+        "local_rank_F7": 25,
+        "partition": [
+          1,
+          1,
+          1,
+          3
+        ],
+        "representative_block_sha256": "a5b7d1b3ee0194d8df70f9e035cab9ce050ebfd773611bbb5850ac52ffae43b8"
+      },
+      {
+        "contains_edge_prism": true,
+        "even_part_count": 2,
+        "labelled_matching_count": 180,
+        "local_nullity_F7": 6,
+        "local_rank_F7": 21,
+        "partition": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "representative_block_sha256": "b8efd150068572670a7fa47ca6d38b81f04f3a3114c806de1d501d322dd323b1"
+      },
+      {
+        "contains_edge_prism": true,
+        "even_part_count": 1,
+        "labelled_matching_count": 720,
+        "local_nullity_F7": 4,
+        "local_rank_F7": 23,
+        "partition": [
+          1,
+          1,
+          4
+        ],
+        "representative_block_sha256": "101cb7d01282bb01a6514166d451e3b4f34fc53b96f43419339016f7b701ea03"
+      },
+      {
+        "contains_edge_prism": true,
+        "even_part_count": 1,
+        "labelled_matching_count": 960,
+        "local_nullity_F7": 4,
+        "local_rank_F7": 23,
+        "partition": [
+          1,
+          2,
+          3
+        ],
+        "representative_block_sha256": "b16b9e807ea8632803a05ce23ed76cb8e5421aafc5a9e1a2979174f16d043e40"
+      },
+      {
+        "contains_edge_prism": true,
+        "even_part_count": 0,
+        "labelled_matching_count": 2304,
+        "local_nullity_F7": 2,
+        "local_rank_F7": 25,
+        "partition": [
+          1,
+          5
+        ],
+        "representative_block_sha256": "c9ce3b3b55a7f7444f491317d95140b93f02e382ae550354ccc9339ae9f6c677"
+      },
+      {
+        "contains_edge_prism": false,
+        "even_part_count": 3,
+        "labelled_matching_count": 120,
+        "local_nullity_F7": 8,
+        "local_rank_F7": 19,
+        "partition": [
+          2,
+          2,
+          2
+        ],
+        "representative_block_sha256": "8feb5c2f106d08c5c56d46fc2e9735979b34dc6218e8eafc5bb898f08dcc73d4"
+      },
+      {
+        "contains_edge_prism": false,
+        "even_part_count": 2,
+        "labelled_matching_count": 1440,
+        "local_nullity_F7": 6,
+        "local_rank_F7": 21,
+        "partition": [
+          2,
+          4
+        ],
+        "representative_block_sha256": "d0393e9c22d094ff5b9964ce5a447afc3f160d3ed9b8005a2b6b724dea8db8a6"
+      },
+      {
+        "contains_edge_prism": false,
+        "even_part_count": 0,
+        "labelled_matching_count": 640,
+        "local_nullity_F7": 2,
+        "local_rank_F7": 25,
+        "partition": [
+          3,
+          3
+        ],
+        "representative_block_sha256": "feb28e44f157e2b263039318e4ce7a2d18fedb765d81c49b9e1754aaa0c0bd37"
+      },
+      {
+        "contains_edge_prism": false,
+        "even_part_count": 1,
+        "labelled_matching_count": 3840,
+        "local_nullity_F7": 4,
+        "local_rank_F7": 23,
+        "partition": [
+          6
+        ],
+        "representative_block_sha256": "b05cf49b0ed4a79e6e586320e4acc56f57fe747fefa2924f9eccc34208f1c5f0"
+      }
+    ],
+    "normalization": "Fix the X matching by relabelling X; pull Y labels through the cross matching; the remaining Y matching is arbitrary.",
+    "pulled_back_matching_count": 10395
+  },
+  "conditional_prism_free_endpoint": {
+    "condition": "n3=4158, equivalently no induced triangular prism",
+    "endpoint_excluded": false,
+    "low_rank_edge_type_consequences": {
+      "r7<=20": "every edge has type 2+2+2",
+      "r7<=22": "every edge has type 2+2+2 or 2+4",
+      "r7<=24": "no edge has type 3+3"
+    },
+    "part_one_equivalence": "A part 1 is a 4-cycle in the three-matching union and, with xy, is exactly an induced triangular prism containing xy.",
+    "rank_pair_arithmetic": {
+      "admissible_pair_count": 429,
+      "count_derivation": "17*13 + 16*13 = 429",
+      "if_r3_equals_12": {
+        "admissible_r7_values": [
+          20,
+          22,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42,
+          44
+        ],
+        "r7_lower_bound": 20,
+        "r7_parity": "even"
+      },
+      "premises": [
+        "12<=r3<=44",
+        "19<=r7<=44",
+        "r3+r7 is even"
+      ]
+    },
+    "surviving_local_table": [
+      {
+        "local_rank_F7": 19,
+        "partition": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "local_rank_F7": 21,
+        "partition": [
+          2,
+          4
+        ]
+      },
+      {
+        "local_rank_F7": 25,
+        "partition": [
+          3,
+          3
+        ]
+      },
+      {
+        "local_rank_F7": 23,
+        "partition": [
+          6
+        ]
+      }
+    ],
+    "upper_bound_improved_below_4158": false
+  },
+  "edge_local_geometry": {
+    "X_and_Y_disjoint": true,
+    "X_internal_degree": 1,
+    "Y_internal_degree": 1,
+    "cross_degree_each_direction": 1,
+    "side_size": 12,
+    "three_relations": [
+      "perfect matching on X",
+      "perfect matching on Y",
+      "perfect matching between X and Y"
+    ],
+    "triangle_mate_degree_into_each_side": 0
+  },
+  "limitations": [
+    "This is a necessary rank condition, not a graph construction.",
+    "No edge-type coupling theorem is proved.",
+    "The prism-free endpoint is not excluded.",
+    "The general upper bound remains n3<=4158.",
+    "Literature novelty and priority are not certified."
+  ],
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "Universal edge-local characteristic-seven rank consequence for a hypothetical srg(99,14,1,2), with conditional prism-free endpoint refinements",
+  "status": {
+    "conway_99": "UNKNOWN",
+    "endpoint": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "strongest_general_upper_bound_on_n3": 4158
+  },
+  "target_parameters": {
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "v": 99
+  },
+  "transport": {
+    "frozen_identity": "N M N^T = 27I - 9A + J",
+    "modulo_seven_block": "27I-9A+J = J-I-2A in F_7",
+    "principal_block_inequality": "rank_F7((NMN^T)[L,L]) <= rank_F7(NMN^T)=rank_F7(M)",
+    "rank_equality": {
+      "conclusion": "rank_F7(M)=rank_F7(NMN^T)",
+      "first_preservation": "rank(NM)=rank(M)",
+      "injectivity": "If v=Mw and Nv=0, then 0=N^T Nv=N^T N Mw=3Mw=3v, so v=0.",
+      "premises": [
+        "M is symmetric",
+        "N^T N M = 3M",
+        "3 is invertible in F_7"
+      ],
+      "right_preservation": "rank(MN^T)=rank((MN^T)^T)=rank(NM)=rank(M), by symmetry of M",
+      "second_preservation": "columns of MN^T lie in im(M), so injectivity of N on im(M) gives rank(NMN^T)=rank(MN^T)"
+    }
+  },
+  "verified_universal_result": {
+    "proof": "Every edge has one of the exhaustive local normal forms; each 27-point principal block has rank at least 19.",
+    "rank_F7_M_lower_bound": 19
+  }
+}

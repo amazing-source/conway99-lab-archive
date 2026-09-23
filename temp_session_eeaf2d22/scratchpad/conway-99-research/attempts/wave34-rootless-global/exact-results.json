@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "role": "proof_a",
+  "claim_label": "UNKNOWN",
+  "scope": "Target I under the frozen n3=708 rootless integrally indecomposable endpoint and trace(A_-1 A_-2^2)=0",
+  "public_base_commit": "0fa5b8161baf8b2a5404a67051b7d61cbc906da3",
+  "inputs": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "STATUS.yaml": "feda17934162602804015e17130c029ffdba7bf0307cdf234f4a7d8979298864",
+    "verification/2026-07-24-wave33-clean-clone.md": "d83e18052114affaed873ddaa7bdc6a26c63afc6432345e1027aeef5bd66d052",
+    "verification/wave33-rootless-motif/comparison-results.json": "8b7b27fd67f12bb82c60eb27c72a62c913d06f2d86f3eb626dcddd6ac75afeb",
+    "verification/wave33-rootless-motif/audit.md": "a761d48419664b3db8605ca2a7dd203c2a1ce6ccd1e96d1ac2c028b1c5209bc9",
+    "verification/wave34-continuation-protocol.md": "60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4"
+  },
+  "derived_lemmas": [
+    {
+      "number": 1,
+      "label": "DERIVED",
+      "name": "actual_incidence_fixed_point_model",
+      "statement": "For a triangle T={t0,t1,t2}, each Xi=N(ti)\\T has size 12 and carries its within-fibre perfect matching gi. The unique cross-fibre neighbour maps fij:Xi->Xj are perfect matchings. After transport to X0, the R3-neighbours of T are exactly the fixed points of sigma=f20*f12*f01."
+    },
+    {
+      "number": 2,
+      "label": "DERIVED",
+      "name": "endpoint_q_and_relation_degrees",
+      "statement": "Writing q(T)=12-fix(sigma), the exact relation degrees are deg_R3(T)=12-q(T), deg_R2(T)=3q(T), deg_R1(T)=180-3q(T), and deg_R0(T)=20+q(T). Hence the frozen 708 unordered R2 pairs imply sum_T q(T)=472."
+    },
+    {
+      "number": 3,
+      "label": "DERIVED",
+      "name": "three_leg_overlap_formula",
+      "statement": "For two fixed points x,y of sigma, their two R3-neighbour triangles have exactly m_T(x,y) cross edges, where m_T(x,y) is the number of the three transported within-fibre matchings that pair x with y. Consequently the forbidden motif count is sum_T #{unordered {x,y} subset Fix(sigma_T):m_T(x,y)=2}, and the frozen mixed trace is twice this sum."
+    },
+    {
+      "number": 4,
+      "label": "DERIVED",
+      "name": "rootless_no_double_overlap_condition",
+      "statement": "Under trace(A_-1 A_-2^2)=0, for every actual triangle T no edge on Fix(sigma_T) belongs to exactly two of the three transported within-fibre matchings. Pairwise intersections of their restricted edge sets therefore equal their common triple intersection."
+    },
+    {
+      "number": 5,
+      "label": "DERIVED",
+      "name": "R3_triangle_uniqueness_from_projector_Gram",
+      "statement": "With M=21P0=J+3N^T N-N^T A N, disjoint triangle pairs with j cross edges have M-entry 1-j. If three marked rows are pairwise R3 then their Gram entries are all -2 and their sum is zero. Thus an R3 edge has at most one common R3 neighbour."
+    },
+    {
+      "number": 6,
+      "label": "DERIVED",
+      "name": "global_triple_overlap_cap",
+      "statement": "At the endpoint there are (231*12-472)/2=1150 unordered R3 edges. Lemma 5 makes the R3 triangles edge-disjoint, so there are at most floor(1150/3)=383 of them and at most 1149 central triple-overlap events in total. This cap does not force a double overlap."
+    }
+  ],
+  "finite_local_control": {
+    "label": "CANDIDATE",
+    "purpose": "attack and delimit the one-centre actual-incidence route; not endpoint evidence",
+    "sigma": "(0 1) with ten fixed points",
+    "q_T": 2,
+    "core_vertices": 39,
+    "core_edges": 93,
+    "completed_partial_vertices": 45,
+    "completed_partial_edges": 129,
+    "R3_neighbours_of_T": 10,
+    "R2_neighbours_of_T": 6,
+    "R2_R3_R3_motifs_with_central_T": 0,
+    "R3_R3_R3_triangles_with_central_T": 0,
+    "within_fibre_factor_indices": [0, 1, 2],
+    "fixed_transversal_pair_matching_multiplicities": {
+      "0": 33,
+      "1": 12,
+      "2": 0,
+      "3": 0
+    },
+    "all_core_edges_have_exact_lambda_after_completion": true,
+    "all_T_to_completion_pairs_have_exact_mu": true,
+    "all_current_lambda_mu_caps_pass": true,
+    "complete_restricted_factor_search": {
+      "domain": "all 11^3 ordered triples of factors from one fixed canonical K12 one-factorization",
+      "triples_checked": 1331,
+      "cap_feasible": 1300,
+      "cap_and_no_double_overlap_feasible": 1000
+    },
+    "completion_neighbourhood_search": {
+      "domain": "all six-neighbour core patterns with exactly two neighbours per fibre, assigned defect endpoints, current lambda/mu caps, and no fixed-transversal closure",
+      "candidate_counts": {
+        "x0_0|x1_0": 2345,
+        "x0_0|x2_1": 2353,
+        "x0_1|x1_1": 2346,
+        "x0_1|x2_0": 2346,
+        "x1_0|x2_0": 2346,
+        "x1_1|x2_1": 2353
+      },
+      "backtracking_nodes_to_first_witness": 31,
+      "witness_found": true
+    }
+  },
+  "commands": [
+    "python -B attempts/wave34-rootless-global/check_local_model.py --max-witnesses 1",
+    "python -B -m unittest discover -s attempts/wave34-rootless-global -p \"test_*.py\" -v"
+  ],
+  "artifacts": [
+    "attempts/wave34-rootless-global/check_local_model.py",
+    "attempts/wave34-rootless-global/test_local_model.py",
+    "attempts/wave34-rootless-global/local-control.json",
+    "attempts/wave34-rootless-global/exact-results.json"
+  ],
+  "dependencies": {
+    "python": "CPython 3.13.14",
+    "third_party_packages": [],
+    "seed": null
+  },
+  "coverage": {
+    "complete": [
+      "the fixed-point and transported-matching derivations for any actual target triangle",
+      "the exact global motif-count identity in those local coordinates",
+      "the stated restricted 11^3 factor search",
+      "the stated six-completion-neighbourhood search for the emitted q(T)=2 control"
+    ],
+    "restricted_or_missing": [
+      "the 45-vertex control does not assign all degrees or all lambda/mu witnesses",
+      "edges among the six completion vertices and all remaining vertices are unset",
+      "the 231 triangle-centred matching systems are not coupled globally",
+      "M^2=21M and the full Schur/projector endpoint package are not checked for the partial control",
+      "no rootless lattice, 99-vertex graph, or complete endpoint is constructed"
+    ]
+  },
+  "strongest_self_objection": "The new no-double-overlap condition is exact but only a reformulation until compatibility among different triangle centres and the full 231-row projector/Schur identities is enforced. The finite control proves that one-centre q(T)=2 incidence, even after closing all six defective cross edges and saturating several lambda/mu equations, does not force the motif; it says nothing about global extendibility.",
+  "target_conclusion": {
+    "trace_positive": "UNKNOWN",
+    "other_complete_contradiction": "NOT_OBTAINED",
+    "complete_rootless_endpoint": "NOT_CONSTRUCTED",
+    "rootless_integrally_indecomposable_endpoint": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "Conway_99": "UNKNOWN"
+  }
+}

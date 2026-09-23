@@ -1,0 +1,49 @@
+role: verifier
+date_utc: 2026-07-27T03:51:58Z
+git_commit: 6b28af70c67f062d687251494a047debe70a246f
+claim_label: VERIFIED
+scope: >-
+  Conditional n3=4158 E(J)-E(L) complex identities, complete normalized
+  all-222 one-triangle quotient enumeration, exhaustive endpoint-pairing
+  masks for one explicit quotient, and the 39-block F7 rank identity.
+inputs:
+  - path: verification/wave40-edge-type-coupling/input-freeze.sha256
+    sha256: 44d94a6ef62f05b152db86c92ee54b2483c9731fa7afed943e4419a3750beeff
+method: >-
+  Clean-room combinatorial reconstruction, complete pairing enumeration,
+  exact Gaussian elimination over F3 and F7, all 2^18 endpoint-pairing masks,
+  direct triangle filtering, Schur-complement proof, canonical positive
+  witness, and thirteen hostile/scope tests. The corresponding discovery
+  package was not read, imported, or executed.
+command:
+  - >-
+    python -B verification/wave40-edge-type-coupling/independent_check.py
+    --verify verification/wave40-edge-type-coupling/independent-results.json
+  - >-
+    python -B -m unittest discover
+    -s verification/wave40-edge-type-coupling -p "test_*.py" -v
+outputs:
+  - path: verification/wave40-edge-type-coupling/independent-results.json
+    sha256: 822f758e04bcf95576cf8c5adc5cff2131ffa13cd286a6924137149de0dc3a9e
+  - path: verification/wave40-edge-type-coupling/package-manifest.sha256
+    sha256: self_excluded
+limitations: >-
+  Conditional on frozen audited endpoint premises. The 4050 records are a
+  complete normalization, not a pairwise-nonisomorphic census. The positive
+  lift is only a one-triangle control. No 60-block completion, cross-triangle
+  compatibility, graph, nonexistence certificate, endpoint contradiction,
+  upper bound below 4158, or novelty conclusion is supplied.
+status:
+  scoped_identities: VERIFIED
+  normalized_quotient_count: 4050
+  rank_eleven_quotients: 8
+  endpoint_pairing_masks: 262144
+  triangle_free_masks: 37378
+  rank_F7_K39_distribution:
+    33: 264
+    34: 7348
+    35: 29766
+  endpoint_n3_4158: UNKNOWN
+  upper_bound_below_4158: NOT_PROVED
+  conway_99: UNKNOWN
+  novelty: UNKNOWN

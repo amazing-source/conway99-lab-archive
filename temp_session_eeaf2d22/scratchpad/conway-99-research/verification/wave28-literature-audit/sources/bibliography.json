@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "audit_accessed_utc_date": "2026-07-24",
+  "retention_policy": {
+    "raw_html_retained": false,
+    "paper_files_retained": false,
+    "response_hashes_are": "SHA-256 of raw HTTP response bodies fetched read-only during this audit",
+    "scope_note": "A response hash establishes the bytes inspected at access time, not long-term source identity."
+  },
+  "sources": [
+    {
+      "id": "CESARZ_WOLDAR_2025",
+      "type": "refereed_article_landing_page",
+      "authors": ["Patrick G. Cesarz", "Andrew J. Woldar"],
+      "title": "On the automorphism group of a putative Conway 99-graph",
+      "publication": "Algebraic Combinatorics 8(2) (2025), 379-398",
+      "doi": "10.5802/alco.418",
+      "url": "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 46202,
+      "response_sha256": "e601f35e30a27f300fa37e12000de36f1062e49f7322718e2932afb64bc8a4d8",
+      "inspected_location": "abstract and article metadata",
+      "supports": [
+        "The exact target is a strongly regular graph with parameters (99,14,1,2).",
+        "The abstract explicitly describes existence as an open problem.",
+        "The paper proves conditional restrictions on the automorphism group, not construction or nonexistence."
+      ],
+      "does_not_support": [
+        "A status theorem later than the access date.",
+        "Any endpoint lattice or Wave 28 novelty claim."
+      ]
+    },
+    {
+      "id": "KERAMATIPOUR_2026",
+      "type": "current_preprint_abstract",
+      "authors": ["Ali Keramatipour"],
+      "title": "Approaching the Conway-99 problem using SAT solvers",
+      "publication": "arXiv:2604.23037v2 (2026)",
+      "url": "https://arxiv.org/abs/2604.23037",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 41489,
+      "response_sha256": "0fab50dfb75ee431ff108e532dac628a6a1165902ca0f1de2c3fc4736b2a9326",
+      "inspected_location": "abstract and submission history",
+      "supports": [
+        "A 2026 SAT study still treats the exact graph as an existence problem.",
+        "Its reported experiments do not solve the SAT instances in reasonable time."
+      ],
+      "does_not_support": [
+        "A complete SAT search.",
+        "Construction or nonexistence of srg(99,14,1,2)."
+      ]
+    },
+    {
+      "id": "REIMBAYEV_2024",
+      "type": "preprint_abstract",
+      "authors": ["Reimbay Reimbayev"],
+      "title": "The Lower Bound for Number of Hexagons in Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "publication": "arXiv:2409.10620v1 (2024)",
+      "url": "https://arxiv.org/abs/2409.10620",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 39661,
+      "response_sha256": "16497adabac8b3f263222d31dcffc425b7dc2146f975ff5644555fe80f7218f6",
+      "inspected_location": "abstract",
+      "supports": [
+        "The exact parameter set is discussed as an existence question.",
+        "The contribution is a lower bound on hexagons and structural relations."
+      ],
+      "does_not_support": [
+        "Construction or nonexistence of the Conway 99-graph."
+      ]
+    },
+    {
+      "id": "K12_CATALOGUE",
+      "type": "author_maintained_lattice_catalogue",
+      "authors": ["Gabriele Nebe", "Neil J. A. Sloane"],
+      "title": "The Lattice K12 (The Coxeter-Todd Lattice)",
+      "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/K12.html",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 8962,
+      "response_sha256": "163e03dfa9a4ab07675daa6e97a371bcfdb38f6195c311c63c699872b3e486c9",
+      "inspected_location": "NAME, DIMENSION, DET, MINIMAL_NORM, KISSING_NUMBER, PROPERTIES, REFERENCES, GRAM, SIMILARITY",
+      "supports": [
+        "Name K12/Coxeter-Todd, dimension 12, determinant 729, minimum 4, kissing number 756.",
+        "Catalogue flags INTEGRAL=1 and MODULAR=3 and supplies Gram and similarity matrices.",
+        "Catalogue attribution to Conway and Sloane (1983)."
+      ],
+      "does_not_support": [
+        "The Wave 28 orthogonal sum with Lambda(F).",
+        "Any claimed 21-scaled-dual minimum or discriminant-form comparison."
+      ]
+    },
+    {
+      "id": "CONWAY_SLOANE_1983",
+      "type": "author_hosted_primary_paper",
+      "authors": ["J. H. Conway", "N. J. A. Sloane"],
+      "title": "The Coxeter-Todd lattice, the Mitchell group, and related sphere packings",
+      "publication": "Mathematical Proceedings of the Cambridge Philosophical Society 93 (1983), 421-440",
+      "doi": "10.1017/S0305004100060746",
+      "url": "https://neilsloane.com/doc/Me107.pdf",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 1184826,
+      "response_sha256": "1dfeed644393ee92fc3f7ae69f7a596ff5d14b874cecaaf603e631ed14ca54bc",
+      "inspected_location": "title, abstract, and catalogue cross-reference",
+      "supports": [
+        "Primary provenance and constructions for the 12-dimensional Coxeter-Todd lattice."
+      ],
+      "does_not_support": [
+        "The exact Wave 28 comparison object or endpoint package."
+      ]
+    },
+    {
+      "id": "KV32F_CATALOGUE",
+      "type": "author_maintained_lattice_catalogue",
+      "authors": ["Gabriele Nebe", "Neil J. A. Sloane"],
+      "title": "The Lattice LAMBDA(F)",
+      "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/KV32F.html",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 18876,
+      "response_sha256": "bb1db4504d7010dc093b24a8bcb00b042ea3879a220d669e8190d02abb6468ac",
+      "inspected_location": "NAME, DIMENSION, GRAM, DET, MINIMAL_NORM, KISSING_NUMBER, PROPERTIES, REFERENCES",
+      "supports": [
+        "Name LAMBDA(F), dimension 32, supplied Gram matrix, determinant 1, minimum 4, kissing number 146880.",
+        "Catalogue flag Unimodular=1 and provenance references to Koch-Venkov papers."
+      ],
+      "does_not_support": [
+        "Evenness as an explicit catalogue property; that is matrix arithmetic or a paper-level attribution.",
+        "The Wave 28 orthogonal sum, discriminant-form isometry, frame, projector, or Schur claims."
+      ]
+    },
+    {
+      "id": "KOCH_VENKOV_1989",
+      "type": "primary_article_record",
+      "authors": ["Helmut Koch", "Boris B. Venkov"],
+      "title": "Uber ganzzahlige unimodulare euklidische Gitter",
+      "publication": "Journal fur die reine und angewandte Mathematik 398 (1989), 144-168",
+      "url": "https://eudml.org/doc/153147",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 35152,
+      "response_sha256": "4fdcc8ca6ea1a91a5ca668a1f5c9b0871915400969172f40b2d803e4bf8696a8",
+      "inspected_location": "bibliographic record; catalogue cross-reference",
+      "supports": [
+        "Primary bibliographic provenance for the Koch-Venkov rank-32 lattice family."
+      ],
+      "does_not_support": [
+        "The exact Wave 28 orthogonal-sum comparison from the record alone."
+      ]
+    },
+    {
+      "id": "KOCH_NEBE_1992",
+      "type": "institutional_preprint_record",
+      "authors": ["H. Koch", "G. Nebe"],
+      "title": "Extremal even unimodular lattices of rank 32 and related codes",
+      "publication": "MPIM Preprint Series 1992 (35)",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2004",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 15365,
+      "response_sha256": "ab969bc6620e9baba7ea3d8fd4e366ffa4fbfa88a2010988ff46acd6a9764b02",
+      "inspected_location": "institutional metadata and preprint title",
+      "supports": [
+        "Primary provenance for extremal even unimodular rank-32 lattices."
+      ],
+      "does_not_support": [
+        "Identification of every catalogue matrix without a separate isometry check.",
+        "The exact Wave 28 comparison."
+      ]
+    },
+    {
+      "id": "NIKULIN_1980",
+      "type": "primary_article_record",
+      "authors": ["V. V. Nikulin"],
+      "title": "Integral symmetric bilinear forms and some of their applications",
+      "publication": "Mathematics of the USSR-Izvestiya 14(1) (1980), 103-167",
+      "doi": "10.1070/IM1980v014n01ABEH001060",
+      "url": "https://www.mathnet.ru/eng/im1677",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "final_url": "https://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=im&paperid=1677&option_lang=eng",
+      "response_bytes": 27880,
+      "response_sha256": "5b718d3079ca2684dfddf07a62ccee31c84138a44fbf6ec7d5bd1b40e9f60aaa",
+      "inspected_location": "bibliographic metadata; propositions checked through exact modern restatements",
+      "supports": [
+        "Discriminant-form technique for even lattices.",
+        "Propositions 1.4.1-1.4.2: even overlattices and isotropic subgroups, with residual discriminant quotient.",
+        "Proposition 1.6.1: opposite discriminant forms for primitive orthogonal complements in an even unimodular lattice.",
+        "Corollary 1.9.4: signature and discriminant form determine the genus."
+      ],
+      "does_not_support": [
+        "Uniqueness of a positive-definite lattice inside its genus without an additional class-number argument.",
+        "The exact Wave 28 rank-44 census or root-image pattern computation."
+      ]
+    },
+    {
+      "id": "TAYLOR_2022",
+      "type": "research_preprint",
+      "authors": ["Laurence R. Taylor"],
+      "title": "Gauss Sums in Algebra and Topology",
+      "publication": "arXiv:2208.06319 (2022)",
+      "url": "https://arxiv.org/abs/2208.06319",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 41156,
+      "response_sha256": "3c3b1326f3f0af8b47dd91627d60f28fdb8e91fbf51ebacf20d7d65cee82200d",
+      "inspected_location": "abstract",
+      "supports": [
+        "A proof route to the Milgram Gauss-sum formula computing signature modulo 8."
+      ],
+      "does_not_support": [
+        "The Wave 28 enumeration of twelve local candidates."
+      ]
+    },
+    {
+      "id": "ZHU_2021",
+      "type": "research_preprint_with_related_journal_doi",
+      "authors": ["Xiao-Jie Zhu"],
+      "title": "Finite quadratic modules and lattices",
+      "publication": "arXiv:2110.06783 (2021); related DOI 10.1080/00927872.2023.2245924",
+      "url": "https://arxiv.org/abs/2110.06783",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 40044,
+      "response_sha256": "c5b6995163b63794a7d1e80d54907cd03d7c4d9da7c5f7e1e0d4b87c66e36ac6",
+      "inspected_location": "abstract",
+      "supports": [
+        "Finite quadratic modules decompose into indecomposable components and can be realized by explicit lattices."
+      ],
+      "does_not_support": [
+        "Realization of a module by a positive-definite rank-44 lattice satisfying the Wave 28 endpoint package."
+      ]
+    },
+    {
+      "id": "NEBE_MODULAR_CATALOGUE",
+      "type": "author_maintained_definition_and_table",
+      "authors": ["Gabriele Nebe", "Neil J. A. Sloane"],
+      "title": "Modular Lattices, Together With A Table of the Best Such Lattices",
+      "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/modular.html",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 27069,
+      "response_sha256": "5237a662c9feccae90e5fd0f06349f83653b501fdb6c499dcb610909bc55e491",
+      "inspected_location": "definition and similarity-matrix equations",
+      "supports": [
+        "An N-modular lattice is integral and similar to its dual.",
+        "The catalogue requires a similarity carrying the dual to the lattice."
+      ],
+      "does_not_support": [
+        "The inference that the weaker containment 21L* subset L makes L 21-modular or strongly modular."
+      ]
+    },
+    {
+      "id": "MARTINET_PARITY",
+      "type": "author_hosted_notes",
+      "authors": ["Jacques Martinet"],
+      "title": "On Parity Classes",
+      "publication": "author-hosted notes; substantially revised in 2003 according to the text",
+      "url": "https://jamartin.perso.math.cnrs.fr/Othertexts/paritylat.pdf",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 263365,
+      "response_sha256": "d86cc6dcd27f74ed90c1ffd9dda44314db0185dca0db5cca983d11da0ee4dd45",
+      "inspected_location": "section 2 definitions and the explicit two-neighbor construction later in the notes",
+      "supports": [
+        "Standard index-two sublattice and neighbor bookkeeping.",
+        "For suitable parity of a lift, the ordinary one-lattice two-neighbor construction."
+      ],
+      "does_not_support": [
+        "A simultaneous transformation of all Wave 28 paired forms and auxiliary endomorphisms."
+      ]
+    },
+    {
+      "id": "NEBE_QF_NOTES",
+      "type": "lecture_notes",
+      "authors": ["Gabriele Nebe"],
+      "title": "Quadratic Forms",
+      "publication": "lecture notes, displayed version dated 2016",
+      "url": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/SummerSchool2023/QFVorl.pdf",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 897615,
+      "response_sha256": "012d95a0fd121efbcb7b16c3eec12790451c297631275fe68789744eee7389b5",
+      "inspected_location": "Definition 14.31 and Theorem 14.32",
+      "supports": [
+        "Definition of p-neighbors by equal index p intersections.",
+        "Standard connectivity statements under stated local/maximality hypotheses."
+      ],
+      "does_not_support": [
+        "The exact simultaneous paired-form Wave 28 package."
+      ]
+    },
+    {
+      "id": "VOIGHT_2024",
+      "type": "research_survey",
+      "authors": ["John Voight"],
+      "title": "Kneser's method of neighbors",
+      "publication": "survey dated 2024-04-30",
+      "url": "https://jvoight.github.io/articles/kneser-033024.pdf",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 410876,
+      "response_sha256": "63aa42642ac03ded34574e49ba7e5854f9c2754f6eef2305839a1b34a21710fc",
+      "inspected_location": "Definition 3.10, Lemma 3.12, Proposition 3.13, and Theorem 3.18",
+      "supports": [
+        "Standard p-neighbor definition, same discriminant/genus result under its hypotheses, explicit construction, and connectivity results."
+      ],
+      "does_not_support": [
+        "A single basis change preserving a Wave 28 tuple of paired forms, a scaled-dual map, and auxiliary matrices."
+      ]
+    },
+    {
+      "id": "APPLEBY_ET_AL_2019",
+      "type": "refereed_article_preprint",
+      "authors": ["Marcus Appleby", "Ingemar Bengtsson", "Steven Flammia", "Dardo Goyeneche"],
+      "title": "Tight Frames, Hadamard Matrices and Zauner's Conjecture",
+      "publication": "Journal of Physics A 52 (2019), 295301; arXiv:1903.06721v2",
+      "doi": "10.1088/1751-8121/ab25ad",
+      "url": "https://arxiv.org/abs/1903.06721",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 43330,
+      "response_sha256": "d3609489c2e9558f01a4c554f1098872db3bc6710a724b9b58ce101f1517d5a4",
+      "inspected_location": "abstract and theorem-level search for projector/Hadamard-square language",
+      "supports": [
+        "Nearby, problem-specific relations among tight frames, projectors, and Hadamard matrices."
+      ],
+      "does_not_support": [
+        "The real integral 231-vector rank-44 marked-frame package.",
+        "The Wave 28 restricted Gram alphabet or cubic-energy equations."
+      ]
+    },
+    {
+      "id": "PACHE_2005",
+      "type": "research_preprint",
+      "authors": ["Claude Pache"],
+      "title": "Shells of selfdual lattices viewed as spherical designs",
+      "publication": "arXiv:math/0502313 (2005)",
+      "url": "https://arxiv.org/abs/math/0502313",
+      "accessed_utc_date": "2026-07-24",
+      "http_status": 200,
+      "response_bytes": 37735,
+      "response_sha256": "76d91e22b0cdb75c238d72825fa406d837c39c5aa099371c8d0c0f9641cb79e8",
+      "inspected_location": "abstract",
+      "supports": [
+        "Theta-series methods for complete lattice shells as spherical designs."
+      ],
+      "does_not_support": [
+        "A selected orientation of 231 antipodal pairs.",
+        "The Wave 28 cubic tensor, projector, Schur-square, or exact 46-to-32 pattern result."
+      ]
+    }
+  ],
+  "failed_or_incomplete_source_access": [
+    {
+      "service": "Brouwer strongly regular graph table",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab1-100.html",
+      "result": "web safe-open failed during this run",
+      "use_as_evidence": false
+    },
+    {
+      "service": "zbMATH",
+      "result": "no direct authenticated database connector was available; web-indexed bibliographic records were used instead",
+      "use_as_evidence": false
+    }
+  ]
+}

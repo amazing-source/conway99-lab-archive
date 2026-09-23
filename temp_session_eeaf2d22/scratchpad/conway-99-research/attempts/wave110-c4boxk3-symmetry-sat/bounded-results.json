@@ -1,0 +1,88 @@
+{
+  "claim_label": "UNKNOWN",
+  "comparison_to_wave105": {
+    "same_45_second_status_by_branch": true,
+    "solver_status_progress": "NONE",
+    "wave105_results": [
+      "UNKNOWN_TIMEOUT",
+      "UNKNOWN_TIMEOUT",
+      "UNKNOWN_TIMEOUT",
+      "UNKNOWN_TIMEOUT"
+    ],
+    "wave110_results": [
+      "UNKNOWN_TIMEOUT",
+      "UNKNOWN_TIMEOUT",
+      "UNKNOWN_TIMEOUT",
+      "UNKNOWN_TIMEOUT"
+    ]
+  },
+  "coverage": {
+    "conditional_on_induced_motif": "C4 box K3",
+    "encoding_symmetry_only": true,
+    "full_motif_extension_domain": true,
+    "target_automorphism_assumed": false,
+    "x0_edge_count_branches": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "format": "wave110-c4boxk3-symmetry-sat-census-v1",
+  "runs": [
+    {
+      "branch_eX0": 0,
+      "elapsed_seconds": 45.016757,
+      "free_memory_fraction_after": 0.5074031731750608,
+      "free_memory_fraction_before": 0.5111997078594435,
+      "raw_log_sha256": "809347a1018ed4dd02cffab2c097e3cee792cd4193ae8118052795a4206e5ae7",
+      "reserve_preserved_after_run": true,
+      "result": "UNKNOWN_TIMEOUT"
+    },
+    {
+      "branch_eX0": 1,
+      "elapsed_seconds": 45.01579,
+      "free_memory_fraction_after": 0.510342940204322,
+      "free_memory_fraction_before": 0.509603226882343,
+      "raw_log_sha256": "2770e671286bfc00cb5b62cf7002eea71afe08b59ed2ee78cc06d3170fa2a3ca",
+      "reserve_preserved_after_run": true,
+      "result": "UNKNOWN_TIMEOUT"
+    },
+    {
+      "branch_eX0": 2,
+      "elapsed_seconds": 45.028973,
+      "free_memory_fraction_after": 0.5099457527457335,
+      "free_memory_fraction_before": 0.5112152909440414,
+      "raw_log_sha256": "f6d21ebd3528b59e64ba6afe2eddead8f183ffdcb4df83d540094d53b4881548",
+      "reserve_preserved_after_run": true,
+      "result": "UNKNOWN_TIMEOUT"
+    },
+    {
+      "branch_eX0": 3,
+      "elapsed_seconds": 45.008926,
+      "free_memory_fraction_after": 0.5240786440831934,
+      "free_memory_fraction_before": 0.5119383943890266,
+      "raw_log_sha256": "8e7359b30b399ab66a4ca8bef8081f3c1b383b7a08bd761f4e55749a346f919c",
+      "reserve_preserved_after_run": true,
+      "result": "UNKNOWN_TIMEOUT"
+    }
+  ],
+  "shared_encoding": {
+    "common_conjunction_variables": 317985,
+    "conjunction_cnf_clauses": 953955,
+    "edge_variables": 3741,
+    "exact_cardinality_rows": 4873,
+    "lex_auxiliary_variables": 4126,
+    "lex_cnf_clauses": 24756,
+    "native_atmost_constraints": 9746,
+    "solver": "PySAT MiniCard 1.9.dev7",
+    "time_limit_seconds_per_branch": 45,
+    "total_cnf_clauses": 978711,
+    "total_variables": 325852
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "motif_extendibility": "UNKNOWN",
+    "nonexistence_claim": false
+  }
+}

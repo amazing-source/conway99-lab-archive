@@ -1,0 +1,42 @@
+role: verifier
+date_utc: 2026-07-27T19:09:30Z
+git_commit: 7a77446e8f1aa163170ff91e3b5068482603898b
+claim_label: VERIFIED
+scope: >-
+  Corrected conditional Smith normal form, mod-7 Jordan type, and
+  symmetric-square rank bound for the Seidel matrix of a hypothetical
+  srg(99,14,1,2). The discovery spectrum statement is separately REFUTED and
+  the graph endpoint remains UNKNOWN.
+inputs:
+  - path: verification/wave51-seidel-smith/input-freeze.sha256
+    sha256: 485d4270541b6b116f0f1ea6e59a28242c27335553f871bdd45bb37439071c46
+  - path: attempts/wave51-seidel-smith/exact-results.json
+    sha256: 10ae5fe8d05776f008fe31ce4b614044680f7cebf9efe482b1aa299f2c5caff6
+method: >-
+  Froze every received input; reconstructed the Seidel identity, rational
+  spectrum, determinant, 7-adic reciprocal Smith pairing, 2- and 5-primary
+  alignment, square-zero Jordan form, and symmetric-square dimension bound;
+  exhaustively checked all 49 abstract rank profiles; compared frozen
+  artifacts; and ran hostile tests against spectrum, unit, and rank-only
+  assumptions.
+command: >-
+  python independent_check.py --verify; python comparison_check.py --verify;
+  python -m unittest -v test_independent_check.py
+outputs:
+  - path: verification/wave51-seidel-smith/independent_check.py
+    sha256: c399237ee7263ca99aa8b3322d2f3caf57b98d05202476e38ff444b24bf4446f
+  - path: verification/wave51-seidel-smith/independent-result.json
+    sha256: 1dda847b1180ac881f2ccce80285a2a50d9cab1f0f910f7dbdf9a6087d53d793
+  - path: verification/wave51-seidel-smith/comparison_check.py
+    sha256: d69b9aa9957f8347499e9cd71dbc5328f84e7868fd56ca2f05a8771716e6249a
+  - path: verification/wave51-seidel-smith/comparison.json
+    sha256: fac9bd8762162c0a710a47d9584184b774249d127e7ea52081ede85868b6aae8
+  - path: verification/wave51-seidel-smith/test_independent_check.py
+    sha256: b2d4f6b033f876d82a59a6c7a2f3b1cefa3f741bb1992e09c54ef768b6991429
+limitations: >-
+  The signed spectrum in discovery is not fully verified: its +7 and -7
+  multiplicities are reversed, although all structural conclusions survive
+  correction. No graph or Seidel matrix was constructed. Smith compatibility
+  is not realizability. Every imported rank 28 through 44 survives, so the
+  endpoint is UNKNOWN.
+

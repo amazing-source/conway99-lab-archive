@@ -1,0 +1,169 @@
+{
+  "actual_incidence_factorization": {
+    "crossing_kernel": "K_D[(T,U),(R,S)]=D[T,R]D[R,U]D[U,S]D[S,T]",
+    "feature_rank_theorem": "rank_F3(U)=99 because for each x any two distinct x-star blocks give a U-column equal to the unit vector e_x",
+    "feature_sum_identity": "sum_x u_x=vec(Q), Q=B^T B over F_3",
+    "full_matrix_identity": "H=U K_D U^T",
+    "hadamard_localizer": "M_x=D S_x D; (H*1)_x=tr((Q o M_x)M_x)",
+    "line_vector_refinement": "for w_TU=B(D_T o D_U), (K_D vec(Q))[(T,U)]=w_TU^T w_TU",
+    "pair_feature": "u_x[(T,U)]=B[x,T] B[x,U] on ordered block pairs",
+    "quadratic_projector_moment": "Omega=sum_x(P_x symmetric-tensor P_x); sum_x P_x=0 does not imply Omega=0",
+    "row_sum_identity": "H*1 is the crossing pairing of P_x symmetric-tensor P_x with Omega",
+    "star_pair_feature_control": {
+      "block_size": 3,
+      "blocks_per_point": 7,
+      "control_adjacent_common_neighbor_distribution": {
+        "1": 66,
+        "3": 264,
+        "4": 264,
+        "5": 66,
+        "7": 33
+      },
+      "control_is_srg_99_14_1_2": false,
+      "control_nonadjacent_common_neighbor_distribution": {
+        "0": 2376,
+        "1": 330,
+        "10": 33,
+        "11": 66,
+        "12": 33,
+        "2": 495,
+        "3": 330,
+        "4": 165,
+        "5": 66,
+        "6": 165,
+        "8": 99
+      },
+      "control_point_degrees": {
+        "14": 99
+      },
+      "linear_triple_system": true,
+      "ordered_distinct_star_pair_coordinates": 4158,
+      "points": 99,
+      "star_pair_feature_rank": 99,
+      "sum_feature_identity": "sum_x u_x=vec(Q), Q=B^T B over F_3",
+      "sum_feature_on_diagonal_pair": 0,
+      "sum_feature_on_distinct_intersecting_pair": 1,
+      "triangle_blocks": 231,
+      "unit_witness_columns": 99,
+      "unit_witness_matrix_rank": 99,
+      "unordered_distinct_star_pair_coordinates": 2079
+    },
+    "star_selector": "S_x=diag(B_x)",
+    "toy_exact_replay": {
+      "direct_equals_U_K_U_transpose": true,
+      "line_vector_norm_identity": true,
+      "localizer_identity": "(H*1)_x=tr((Q o (D S_x D))(D S_x D)), Q=B^T B",
+      "row_sum_factorization": "H*1=U K_D vec(Q)",
+      "row_sums": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "sum_feature_equals_vec_Q": true,
+      "toy_blocks": 7,
+      "toy_points": 7
+    }
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "conclusions": {
+    "conway_99_status": "UNKNOWN",
+    "endpoint_excluded": false,
+    "naive_wedge_or_symmetric_square_rank_bound_below_99": false,
+    "new_full_matrix_identity": "H=U K_D U^T",
+    "newly_named_missing_invariant": "the restriction of the crossing four-Gram kernel K_D to the full-rank 99-dimensional star-pair feature subspace; equivalently the Hadamard localizers Q o (D S_x D), or the norms of w_TU=B(D_T o D_U)",
+    "rank_11_excluded": false,
+    "star_pair_incidence_alone_forces_rank_drop": false,
+    "strict_n3_improvement": false,
+    "sum_projectors_zero_forces_H_row_sums_zero": false
+  },
+  "dimension_ledger": {
+    "Sym2_V_dimension": 66,
+    "V_dimension": 11,
+    "quadratic_feature_Sym2_of_trace_zero_dimension": 2145,
+    "rank_consequence": "all correct operator-coordinate spaces exceed 99; they yield no nontrivial rank bound for a 99-by-99 matrix",
+    "self_adjoint_End_Sym2_V_dimension": 2211,
+    "self_adjoint_End_V_dimension": 66,
+    "self_adjoint_End_wedge2_V_dimension": 1540,
+    "trace_Sym2_projector": 0,
+    "trace_wedge2_projector": 0,
+    "trace_zero_self_adjoint_End_Sym2_V_dimension": 2210,
+    "trace_zero_self_adjoint_End_V_dimension": 65,
+    "trace_zero_self_adjoint_End_wedge2_V_dimension": 1539,
+    "wedge2_V_dimension": 55
+  },
+  "field": 3,
+  "inputs": {
+    "agents/2026-07-29-wave191-global-star-module-proof-b.md": "afe7d35627ec14a9599b427bcca0751e86a3f32b71fb7baf4d91e9e2e335f75f",
+    "verification/2026-07-29-wave204-orchestrator.md": "7760a4c5a4b6a501262bbb3b061828725cd23c6837fd724fada84d94a3124edd",
+    "verification/wave171-pq-centered-code/verification-report.md": "1f2ba5ed92ba6bb1ccc05cd753a8e359f208c3ddc7ca85766f26f8869346414f",
+    "verification/wave176-star-projector-circuits/audit.md": "f58577409f39e98b06bfbe206221d3d278f0c473bcf5057afc381094d5e65d05",
+    "verification/wave203-two-center-incidence-verifier/audit.md": "382d8553457557fe2ecbe0fd1733ecb06b01f5c60be879e65cab56c078edc3d7",
+    "verification/wave204-global-compatibility-verifier/package-manifest.sha256": "48cd018c7f7cebe7f2bc93a6dbd9440422f8dc843bc6c0fa96b29968e440f9c2"
+  },
+  "positive_control": {
+    "ambient_dimension": 11,
+    "ambient_form_diagonal": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "ambient_form_discriminant": 2,
+    "base_distinct_projectors": 12,
+    "conclusion": "sum_x P_x=0 forces the pair-trace Gram row sums to vanish, but does not force sum_x(P_x symmetric-tensor P_x)=0 or H*1=0",
+    "each_projector": {
+      "idempotent": true,
+      "projector_identity": "P=-sum(z tensor z)",
+      "rank": 6,
+      "self_adjoint": true,
+      "seven_singular_simplex_columns": true,
+      "simplex_gram": "J_7-I_7",
+      "simplex_sum_zero": true,
+      "star_space_discriminant": 1,
+      "trace": 0
+    },
+    "failed_target_premises": [
+      "only 12 projector labels are distinct; 87 labels repeat one projector",
+      "the local simplex columns are not glued into 231 projectively distinct global columns",
+      "there is no 99-by-231 linear point-triangle incidence with column degree three",
+      "there is no centered 231-column rank-11 square-zero Gram realization",
+      "the endpoint dual-distance, orthogonality graph, and circuit-cover conditions are absent",
+      "the control is not an srg(99,14,1,2), graph code, or endpoint realization"
+    ],
+    "fourth_trace_diagonal_zero": true,
+    "fourth_trace_matrix_rank": 9,
+    "fourth_trace_row_sum_distribution": {
+      "0": 6,
+      "1": 91,
+      "2": 2
+    },
+    "ordered_entries_where_pair_and_fourth_trace_differ": 740,
+    "pair_trace_matrix_rank": 8,
+    "pair_trace_row_sum_distribution": {
+      "0": 99
+    },
+    "projector_labels": 99,
+    "quadratic_projector_moment_nonzero_coordinates": 302,
+    "satisfied_endpoint_shaped_premises": [
+      "nondegenerate nonsquare 11-space over F_3",
+      "99 rank-six trace-zero self-adjoint idempotents",
+      "every star space has discriminant one",
+      "every projector has a seven-singular-column simplex J_7-I_7",
+      "P=-sum(z tensor z) for every local simplex",
+      "sum of all 99 projectors is zero"
+    ],
+    "sum_projectors_zero": true
+  },
+  "scope": "conditional prism-free n3=4158 centered rank-11 endpoint; global fourth-trace factorization and obstruction boundary"
+}

@@ -1,0 +1,53 @@
+role: verifier
+date_utc: 2026-07-27T23:36:58Z
+git_commit: 5f497b545c536de90a1a557c51b53f041fecf7db
+claim_label: VERIFIED
+scope: >-
+  Conditional verification of Wave78's short-vector set-packing bounds,
+  norm-18 h=1 degree-three endpoint exclusion, equality rigidity, and exact
+  histogram collapse; no verification of Wave71's upstream modular/lattice
+  derivation beyond the verified Wave74 conditional interface.
+inputs:
+  - path: verification/wave78-short-vector-packing/input-freeze.sha256
+    sha256: 451c24e9dc255d2f26403cd0728e49e49dadd2056de30ae26fad1ed29d013ef7
+  - path: attempts/wave78-short-vector-packing/exact-results.json
+    sha256: 4cc6fe0ac67a2f7cd5c844f39f8de879e50158f34aaf7421393ac4e08ef0c4ca
+  - path: attempts/wave78-short-vector-packing/derivation.md
+    sha256: c1698795f803d5a2cad8716244d492732d34caaa595e7705650423df04c67434
+  - path: attempts/wave74-short-vector-closure/package-manifest.sha256
+    sha256: 4cb63f21352c2268714f72d55e3b37aab69394939bddbe87bbf06f5b918583e5
+  - path: attempts/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: f0551b070edafc29d4adf5a380769c9bf4793721634e627ec1babd86b3117b39
+method: >-
+  Freeze every Wave78 discovery file before inspection; derive a point-
+  multiplicity union bound from the SRG common-neighbor budget; characterize
+  the three-block equality case; prove the h=1 degree-five endpoint
+  obstruction; independently backtrack labelled four-subset families;
+  exhaust bounded nonnegative histogram systems; compare all rows to the
+  frozen discovery JSON; and run hostile status controls.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave78-short-vector-packing\independent_check.py --verify
+  --json ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  verification\wave78-short-vector-packing\test_independent_check.py
+outputs:
+  - path: verification/wave78-short-vector-packing/independent_check.py
+    sha256: 9182c943215585ee9bff72a7b9be624fdcda2050218266772f9d6d8ff648aa95
+  - path: verification/wave78-short-vector-packing/independent-results.json
+    sha256: ce1b1b735f6f089700a970642ab46527b931a82181b53bd330e1b9e34aa4af24
+  - path: verification/wave78-short-vector-packing/test_independent_check.py
+    sha256: 25a1bdc6da1ccc9ed3b36e5fb2ead5e53954788ee6972cff1d7d0c75274c8dda
+  - path: verification/wave78-short-vector-packing/derivation.md
+    sha256: c8393ab5c42ba8c6f47cbf7ca4e5db23d8fae05282b8bbad8cfb41f6af33f11e
+  - path: verification/wave78-short-vector-packing/hostile-controls.md
+    sha256: 2172cb4859efed225fb4117fad4b2205207071cd1f7b46d60076a7fd06a19d5a
+  - path: verification/wave78-short-vector-packing/verification-report.md
+    sha256: aaf18d3ab9d86c1645b3d1f926d2f0f6317452dd0908fba57a2263182df3be02
+limitations: >-
+  Conditional on the Wave71 signed-unit support reduction and Wave74
+  support-incidence equations. The 1, 7, and 4 rows are necessary scalar
+  moment solutions, not labelled incidence matrices or graph realizations.
+  The h=1 d=3 endpoint exclusion is extra structure not encoded by a scalar
+  row. Norm14 and remaining norm16/norm18 alternatives survive. No
+  automorphism is assumed. Conway-99 and novelty remain UNKNOWN.

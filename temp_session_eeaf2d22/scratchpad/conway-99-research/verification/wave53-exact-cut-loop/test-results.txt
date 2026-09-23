@@ -1,0 +1,41 @@
+Wave53 independent verifier test record
+Date UTC: 2026-07-27T20:28:34Z
+Git commit: a4a61658356253fb95cf68252c972a4f79df38fe
+
+Command:
+.\.venv\Scripts\python.exe -B -m unittest verification\wave53-exact-cut-loop\test_independent_check.py -v
+
+Result:
+Ran 11 tests in 62.214s
+OK
+
+Coverage:
+- full exact checker replay, deterministic apart from live memory telemetry
+- postinspection comparison replay
+- preinspection freeze integrity
+- strict rational parser attacks
+- four witnesses and raw 174/175/176/177 cut systems
+- three Wave49 cuts and exact selection
+- 128 correct matrix classifications
+- exact reproduction of the Wave45 double-offdiagonal defect
+- baseline and candidate duplicate normalization
+- excluded fourth dense cut and Farkas boundary
+- status wall
+
+Discovery self-replay command:
+.\.venv\Scripts\python.exe -B attempts\wave53-exact-cut-loop\exact_cut_loop.py --validate
+
+Observed:
+PASS_EXACT_REPLAY sha256=092bc95cbc416185adbbffadd25b1435dc6e2ac38204e37c01d8cb0d2516d7ee witnesses=4 matrix_checks=128 new_cuts=3
+
+Discovery stored-result test command:
+.\.venv\Scripts\python.exe -B -m unittest attempts\wave53-exact-cut-loop\test_exact_cut_loop.py -v
+
+Result:
+Ran 6 tests in 0.059s
+OK
+
+Interpretation:
+The discovery checks are self-consistent but do not catch the defect because
+validation reuses the same full-stream double mirroring and stored-result
+tests do not reconstruct correct Wave45 matrices.

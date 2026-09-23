@@ -1,0 +1,32 @@
+{
+  "agreement": {
+    "N14_upper": 4950,
+    "first_moment": 672,
+    "per_transition_coincidence_cap": 18,
+    "rank28_weighted_lower": 2165002,
+    "unordered_pair_moment_upper": 756,
+    "zero_transition_seed_upper": 350
+  },
+  "attempt_manifest_entries_verified": 9,
+  "attempt_manifest_sha256": "e3a30e37bbf08dcd60e4fff7df6f8f4e51780987ba3446e96ff136954e94a9e6",
+  "claim_label": "VERIFIED",
+  "clean_room_seal": {
+    "independent_result_claim_label": "PENDING_DISCOVERY_COMPARISON",
+    "precomparison_hashes": "precomparison.sha256"
+  },
+  "format": "wave99-transition-pair-moment-comparison-v1",
+  "role": "verifier",
+  "scope_audit": {
+    "N14_requires_P0_n3_4158": true,
+    "N14_requires_rank28": false,
+    "scope_mixing_found": false,
+    "weighted_conclusion_requires_P0_and_rank28_q16": true
+  },
+  "status_boundary": {
+    "Conway_99": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "prism_free_rank28_excluded": false,
+    "strict_n3_upper_bound": "NOT_PROVED"
+  },
+  "verdict": "VERIFIED SCOPED: under P=0, N14<=4950; under the additional rank-28/q=16 hypothesis, 407*N16+43*N18>=2165002"
+}

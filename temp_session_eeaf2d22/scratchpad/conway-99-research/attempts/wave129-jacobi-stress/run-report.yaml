@@ -1,0 +1,54 @@
+role: proof_b
+date_utc: 2026-07-28T06:20:01Z
+git_commit: e1484c6564ddfde580191cdcb4a66a8f6ad7f2a2
+claim_label: CANDIDATE
+scope: >-
+  Higher-cutoff stress test of the rank-28, discriminant-16, level-7
+  index-10/index-70 Jacobi necessary-condition relaxation at Fourier
+  cutoffs 18, 20, and 28.
+inputs:
+  - path: attempts/wave127-independent-jacobi-certificate/jacobi_lp.py
+    sha256: fcdd72cbff59595697fed64b914adf4f53c78f1f8f72369b260bb9ef07c0a498
+  - path: attempts/wave129-jacobi-stress/columns-cutoff18.pkl
+    sha256: 7c74f3e2608a4fda3ea9c79d60e02295ac702df4552b35b6002fe5488c35c560
+  - path: attempts/wave129-jacobi-stress/columns-cutoff20.pkl
+    sha256: d86a4d0e1cefdcf5a1d9b647955931b2686c306d585da5a63fcd91f1834b3bdb
+  - path: attempts/wave129-jacobi-stress/columns-cutoff28.pkl
+    sha256: 21b114efb70b36001524f256d228621cf21847ec36e542a13b09578636ba1c3d
+method: >-
+  Reuse the sealed Wave127 exact Jacobi module and Fricke-eigen basis;
+  generate exact Fourier rows at each larger cutoff; reduce equality
+  dependence and positive-proportional half-spaces over Q; recursively
+  parameterize numerical active-face suggestions over Q; and, when a
+  rational point is recovered, substitute it into every original exact row.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts/wave127-independent-jacobi-certificate/jacobi_lp.py
+  --cutoff 28
+  --exact-candidate
+  attempts/wave129-jacobi-stress/exact-candidate-cutoff28.json
+  --columns-cache
+  attempts/wave129-jacobi-stress/columns-cutoff28.pkl
+  --write
+  attempts/wave129-jacobi-stress/cutoff28-candidate-run.json
+outputs:
+  - path: attempts/wave129-jacobi-stress/exact-candidate-cutoff18.json
+    sha256: 705d525652fcce1be47f78572c07516d0a2591181eab2adea30097e251cf231e
+  - path: attempts/wave129-jacobi-stress/verification-cutoff18.json
+    sha256: cceace9b967088792c0be2a37dde6118082e724a7bb116e23130cbfb068dd572
+  - path: attempts/wave129-jacobi-stress/exact-candidate-cutoff20.json
+    sha256: 3e43084ca53b2c5f211d27d92ea7c9ea2573feb8c4ab5bd922cf6235c86b610d
+  - path: attempts/wave129-jacobi-stress/verification-cutoff20.json
+    sha256: 5d8a7710117dc03ca323512caf3dbcfbd5c8bf3e30a054d63ab2568c20b45ccc
+  - path: attempts/wave129-jacobi-stress/exact-candidate-cutoff28.json
+    sha256: b5706ee17551ce6943275f1f94764720302e332a347eb7f618e3c0b56cbb62df
+  - path: attempts/wave129-jacobi-stress/cutoff28-candidate-run.json
+    sha256: 1c73b93bf935d8e9f719242624f0d34b2be38aa22a10f051839340a3490d2fc8
+limitations: >-
+  Discovery has not independently promoted its own claim to VERIFIED.
+  Exact feasibility at cutoffs 18 and 20 is only a finite
+  necessary-condition null result. At cutoff 28, numerical feasibility
+  was not converted into an exact rational point and no exact Farkas
+  certificate was produced, so its status is UNKNOWN. This package
+  constructs neither a graph nor a lattice, proves neither rank-28
+  realizability nor exclusion, and leaves Conway-99 UNKNOWN.

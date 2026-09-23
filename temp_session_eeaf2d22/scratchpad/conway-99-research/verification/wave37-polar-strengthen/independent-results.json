@@ -1,0 +1,563 @@
+{
+  "characteristic_seven": {
+    "I_plus_C_invertible_from_C_squared_zero": true,
+    "factor_rows_projectively_distinct": 231,
+    "hadamard_cube_identity": "C^(o3)=4(I+C) mod 7",
+    "pure_cubes_independent": 231,
+    "rank_eleven_cases": [
+      {
+        "characteristic_polynomial_low_first": [
+          -1341148411930262512808,
+          -837802179659641210,
+          581652412047623,
+          48418563599,
+          -20180405,
+          1
+        ],
+        "common_orthogonal_neighbors_by_relation": [
+          20178004,
+          2883601,
+          2883601,
+          2881200,
+          2883601
+        ],
+        "determinant_class": "square",
+        "excluded": false,
+        "is_strongly_regular": false,
+        "largest_nonprincipal_eigenvalue": "2401*(1+sqrt(2))",
+        "largest_nonprincipal_eigenvalue_above_4802": true,
+        "largest_nonprincipal_eigenvalue_at_least_4802": true,
+        "orthogonality_multiplication_matrix": [
+          [
+            0,
+            20178004,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            2883601,
+            5764800,
+            5762400,
+            5767202
+          ],
+          [
+            0,
+            2883601,
+            5764801,
+            5764801,
+            5764801
+          ],
+          [
+            0,
+            2881200,
+            5762400,
+            5767202,
+            5767202
+          ],
+          [
+            0,
+            2883601,
+            5762400,
+            5767202,
+            5764801
+          ]
+        ],
+        "target_induced_degree": 162,
+        "valencies": [
+          1,
+          20178004,
+          40339200,
+          40356008,
+          40356008
+        ],
+        "vertex_count": 141229221
+      },
+      {
+        "characteristic_polynomial_low_first": [
+          -1340988827397667288806,
+          837835412590210811,
+          581500157888412,
+          -48470446808,
+          -20173202,
+          1
+        ],
+        "common_orthogonal_neighbors_by_relation": [
+          20175603,
+          2881200,
+          2881200,
+          2883601,
+          2881200
+        ],
+        "determinant_class": "nonsquare",
+        "excluded": false,
+        "is_strongly_regular": false,
+        "largest_nonprincipal_eigenvalue": "4802",
+        "largest_nonprincipal_eigenvalue_above_4802": false,
+        "largest_nonprincipal_eigenvalue_at_least_4802": true,
+        "orthogonality_multiplication_matrix": [
+          [
+            0,
+            20175603,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            2881200,
+            5764800,
+            5767202,
+            5762400
+          ],
+          [
+            0,
+            2881200,
+            5764801,
+            5764801,
+            5764801
+          ],
+          [
+            0,
+            2883601,
+            5767202,
+            5762400,
+            5762400
+          ],
+          [
+            0,
+            2881200,
+            5767202,
+            5762400,
+            5764801
+          ]
+        ],
+        "target_induced_degree": 162,
+        "valencies": [
+          1,
+          20175603,
+          40368012,
+          40351206,
+          40351206
+        ],
+        "vertex_count": 141246028
+      }
+    ],
+    "selected_norm": 1,
+    "selected_orthogonality_degree": 162
+  },
+  "claim_label": "VERIFIED_SCOPED_CONDITIONAL_RESTRICTIONS",
+  "conclusion": {
+    "endpoint_excluded": false,
+    "new_determinant_class_exclusion": false,
+    "new_rank_lower_bound": false,
+    "target_status": "UNKNOWN",
+    "upper_bound_improved_below_4158": false
+  },
+  "divisibility_refined_evans": {
+    "divisible_roots": [
+      75,
+      78
+    ],
+    "divisible_sum": 5843880,
+    "excluded": false,
+    "ordinary_roots": [
+      76,
+      77
+    ],
+    "ordinary_sum": 6020322,
+    "outside_count": 88221,
+    "outside_degree_square_sum": 523215693,
+    "outside_degree_sum": 6754671
+  },
+  "input_sha256": {
+    "agents/2026-07-26-wave37-polar-strengthen.md": "625a52471c0cd1c4d603d2a272b9a9c11ebbc013ab956dc20f9da1362cbb2abb",
+    "attempts/wave37-polar-strengthen/exact-results.json": "0d5daafca72b43d159db5e799689e8818fa61f25de2f2d06225a4619817cdff9",
+    "attempts/wave37-polar-strengthen/failed-routes.md": "53407cccd3dfdcf6155ab300d7c70c9bc1b6ff7f443a0e644c5ee30dcf5f3e38"
+  },
+  "limitations": [
+    "All statements are conditional on the hypothetical n3=4158 endpoint reflection.",
+    "No endpoint matrix, finite-field point set, code, or Conway graph is constructed.",
+    "The MacWilliams object is a nonintegral real relaxation, not a code enumerator.",
+    "Both F7 determinant classes at rank eleven survive the audited spectral test.",
+    "Novelty and literature priority are outside this verification scope."
+  ],
+  "macwilliams_real_relaxation": {
+    "A_distribution": {
+      "0": 1,
+      "141": 76965,
+      "153": 288015,
+      "162": 165998,
+      "69": 462
+    },
+    "B_1": 0,
+    "B_2": 0,
+    "all_B_at_least_A": true,
+    "all_transforms_nonnegative": true,
+    "code_constructed": false,
+    "formal_weight_enumerator": false,
+    "nonintegral_orders": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231
+    ],
+    "sum_A": 531441
+  },
+  "rank_boundary": {
+    "if_r3_equals_12": "r7 is even and at least 12",
+    "if_r7_equals_11": "r3 is odd and at least 13",
+    "surviving_pair_count_from_wave36_bounds_and_parity": 561
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "conditional ternary code, exact polar controls, signed degenerate triples, and F7 rank-eleven schemes",
+  "signed_triangle_geometry": {
+    "balanced_minus_unbalanced": 34034,
+    "maximum_collinear_selected_triples": 2618,
+    "minimum_distinct_rank_one_three_spaces": 437,
+    "minimum_independent_balanced_triples": 31416,
+    "rank_one_three_space": {
+      "collinear_triples": 12,
+      "independent_triples": 72,
+      "norm_two_projective_points": 9
+    },
+    "refuted_collinearity_inference": {
+      "ambient_diagonal": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "gram": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "gram_rank": 1,
+      "vector_rank": 3,
+      "vectors": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          1
+        ]
+      ]
+    },
+    "support_degree": 68,
+    "support_edges": 7854,
+    "trace_S_cubed": 204204
+  },
+  "ternary_code": {
+    "code": {
+      "all_one_vector_in_dual": true,
+      "all_word_n1_divisible_by_3": true,
+      "all_word_n2_divisible_by_3": true,
+      "dual_distance_lower_bound": 3,
+      "parameters": "[231,12]_3",
+      "projective": true,
+      "self_orthogonal": true
+    },
+    "distinguished_words": {
+      "composition_n1_n2": [
+        36,
+        33
+      ],
+      "distinct_words_including_negatives": 462,
+      "weight": 69,
+      "weight_enumerator_constraint": "A_69>=462"
+    },
+    "factorization_argument": {
+      "C_one_zero_implies": "V^T 1=0",
+      "C_squared_zero_implies": "V^T V=0",
+      "required_hypotheses": [
+        "C=V H V^T",
+        "V has full column rank",
+        "H is nondegenerate"
+      ]
+    },
+    "schur_square": {
+      "rank_I_plus_B_ceiling": 78,
+      "rank_orthogonality_matrix_ceiling": 79
+    }
+  },
+  "ternary_oriented_scheme": {
+    "delsarte_positivity": [
+      "231",
+      "249/121",
+      "123/121",
+      "4767/7381",
+      "60/61"
+    ],
+    "endpoint_distribution": [
+      1,
+      0,
+      162,
+      36,
+      32
+    ],
+    "excluded": false,
+    "valencies": [
+      1,
+      1,
+      58806,
+      59048,
+      59048
+    ]
+  }
+}

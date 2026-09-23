@@ -1,0 +1,88 @@
+{
+  "edge_projective_weight4_lower": 12,
+  "edge_root_circuit": {
+    "distinct_columns": 4,
+    "dual_distance_lower": 4,
+    "nonzero_coefficients": 4,
+    "projective_root_recoverable": true,
+    "shared_triangle_excluded": true,
+    "weight": 4
+  },
+  "edge_root_circuit_count": "E=3*n6+7*n7",
+  "endpoint_status": "UNKNOWN",
+  "injectivity": {
+    "different_graph_edges": true,
+    "different_roots_same_edge": true,
+    "disjoint_from_canonical_nonedge_conics": true
+  },
+  "mod5_constraint": "n6+2*n7=4 mod 5",
+  "root_incidence_equation": "5*n5+6*n6+7*n7=2079",
+  "scalar_sharpness": {
+    "E": 12,
+    "distribution": {
+      "n5": 411,
+      "n6": 4,
+      "n7": 0
+    },
+    "geometric_construction": false,
+    "root_incidences": 2079
+  },
+  "sub_twelve_candidates": [
+    {
+      "E": 0,
+      "incidence_residue_mod5": 0,
+      "n6": 0,
+      "n7": 0
+    },
+    {
+      "E": 3,
+      "incidence_residue_mod5": 1,
+      "n6": 1,
+      "n7": 0
+    },
+    {
+      "E": 6,
+      "incidence_residue_mod5": 2,
+      "n6": 2,
+      "n7": 0
+    },
+    {
+      "E": 9,
+      "incidence_residue_mod5": 3,
+      "n6": 3,
+      "n7": 0
+    },
+    {
+      "E": 7,
+      "incidence_residue_mod5": 2,
+      "n6": 0,
+      "n7": 1
+    },
+    {
+      "E": 10,
+      "incidence_residue_mod5": 3,
+      "n6": 1,
+      "n7": 1
+    }
+  ],
+  "sub_twelve_valid_residue_count": 0,
+  "support_edge_counts": {
+    "3K2": 3,
+    "5K1": 0,
+    "C7": 7
+  },
+  "support_intersections": {
+    "maximum_for_distinct_roots": 2,
+    "reason": "nonedge uniqueness plus triangle-free supports",
+    "root_pair_identity": "number meeting twice=sum_(xy in E(G)) binom(c_xy,2)",
+    "size_two_type": "graph edge"
+  },
+  "verdict": "VERIFIED_WITH_SCOPE",
+  "weight4_count": {
+    "B4_lower": 4182,
+    "canonical_projective": 2079,
+    "new_edge_projective_lower": 12,
+    "nonzero_scalars_per_projective_class": 2,
+    "total_projective_lower": 2091
+  }
+}

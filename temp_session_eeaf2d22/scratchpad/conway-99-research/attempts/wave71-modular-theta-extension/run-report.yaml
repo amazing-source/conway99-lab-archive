@@ -1,0 +1,43 @@
+role: proof_b
+date_utc: 2026-07-27T23:14:19Z
+git_commit: 5f497b545c536de90a1a557c51b53f041fecf7db
+claim_label: DERIVED
+scope: >-
+  Conditional level-7 neighbor, mod-7 theta reduction, and exact low-norm
+  eigenvector consequences of the Wave66 lattice attached to a hypothetical
+  srg(99,14,1,2), with no automorphism assumption.
+inputs:
+  - path: attempts/wave66-spherical-code-shift/README.md
+    sha256: fb9bab139a5d0da389cba10f4773904a7882efa7f7ed9e330663b528893f400e
+  - path: attempts/wave66-spherical-code-shift/protocol.md
+    sha256: 34bdce36060d66f9e1813e1dd866e035d6576f338c8f21a14a5cef66914416e2
+  - path: attempts/wave66-spherical-code-shift/derivation.md
+    sha256: befdaf561b442a68f52ff878e72ed31cf2ff58ab9f07075e0e624bcb00b8dd95
+  - path: attempts/wave66-spherical-code-shift/exact-results.json
+    sha256: dab883b36baebd8f149432d3bf0700a875d851b0627bc31d40cbd1f7b4afa9cb
+method: >-
+  Identify the marked order-nine discriminant class; pass to the exact
+  index-three isotropic neighbor L and even scaled dual K=sqrt(7)L*; apply
+  Skoruppa's cited mod-7 theta reduction with the elementary-divisor weight;
+  solve the complete level-one coefficient systems over F7 through q^14;
+  translate the q=16 short coefficients into integer -4 eigenvectors; and
+  classify all norm-14/16/18 magnitude and signed-support alternatives by
+  exact code, spectral, and common-neighbor arguments.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave71-modular-theta-extension\exact_check.py --verify ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  attempts\wave71-modular-theta-extension\test_exact_check.py
+outputs:
+  - path: attempts/wave71-modular-theta-extension/exact-results.json
+    sha256: b892178b184e15ab7d62a31de0016c1096cb0bc9a8663afcf1ad0d4d5c35b995
+  - path: attempts/wave71-modular-theta-extension/derivation.md
+    sha256: ea4a2e9ef299a199913593149b265d16af6d51ebab8e23f29aff32edac9524bc
+  - path: attempts/wave71-modular-theta-extension/hostile-controls.md
+    sha256: 3c9a7a8ec0d632abe99061a6ae3b4d1132d854f5ce34b286aa690a80fb507b85
+limitations: >-
+  Discovery only and conditional on Wave66; Skoruppa's theorem is cited, not
+  reproved. The mandatory theta gap excludes no determinant row. The q=16
+  row is narrowed to forced norm-14/16/18 integer eigenvectors, but the
+  surviving finite support structures are not excluded. A lattice genus
+  does not supply the marked frame. Conway-99 and novelty remain UNKNOWN.

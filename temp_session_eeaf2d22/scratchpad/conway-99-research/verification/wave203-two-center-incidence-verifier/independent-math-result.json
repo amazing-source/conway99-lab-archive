@@ -1,0 +1,163 @@
+{
+  "b_zero_control": {
+    "Q0": 7059,
+    "asserted_object": false,
+    "b": 0,
+    "capacity_slack": 708,
+    "epsilon": 708,
+    "interpretation": "aggregate and local-equality arithmetic control only; not a graph, code, cover, flag family, or existence claim",
+    "label_union": 3360,
+    "n3": 1200,
+    "nonprivate_multiplicity_profile": {
+      "2": 234,
+      "3": 3
+    },
+    "p3": 3123,
+    "total_selected_incidence": 3600
+  },
+  "boundary": {
+    "Q_ge_7060_proved": false,
+    "conway_99": "UNKNOWN",
+    "current_conditional_Q_lower": 7059,
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "rank_11_excluded": false
+  },
+  "canonical_c4": {
+    "all_equal": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "all_equal_image": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "all_two_image": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "checkerboard": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "checkerboard_image": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "collision_status": "IMPOSSIBLE",
+    "distinctness_reason": "the two common neighbors are nonadjacent, giving two different blocks at each endpoint; a block through both nonadjacent endpoints cannot be a graph triangle",
+    "four_columns_distinct": true,
+    "gram": [
+      [
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "order": [
+      "X_a",
+      "X_b",
+      "Y_a",
+      "Y_b"
+    ],
+    "rank_mod_3": 3
+  },
+  "claim": {
+    "combined_capacity": "m_(x->y)+m_(y->x)<=5",
+    "status": "VERIFIED_CONDITIONALLY"
+  },
+  "conditional_scope": {
+    "graph_or_flag_enumeration": false,
+    "prism_free_rank_11_endpoint": true,
+    "uses_verified_canonical_flag_relation": true,
+    "uses_verified_wave181_c4_gram": true
+  },
+  "counting_consequences": {
+    "bidirectional_loss": "epsilon>=5b",
+    "orientation_identity": "T=|U|+b",
+    "reason": "the theorem supplies no positive lower bound on b; b=0 is compatible with all currently checked scalar rows",
+    "selected_capacity": "3n3+4p3<=5|U|",
+    "uniform_Q_ge_7060": false
+  },
+  "format": "wave203-two-center-incidence-independent-v1",
+  "global_relation_audit": {
+    "column_order": [
+      "T",
+      "S",
+      "X_a",
+      "X_b",
+      "Y_a",
+      "Y_b"
+    ],
+    "forward": [
+      1,
+      2,
+      2,
+      2,
+      0,
+      0
+    ],
+    "normalization_required": "both equations use the globally fixed z-columns and leaf coefficient 1, star coefficients 2",
+    "reverse": [
+      2,
+      1,
+      0,
+      0,
+      2,
+      2
+    ],
+    "sum_mod_3": [
+      0,
+      0,
+      2,
+      2,
+      2,
+      2
+    ],
+    "surviving_c4_coefficients": [
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "slot_geometry": {
+    "fixed_blocks_for_nonedge_type": 2,
+    "forward_injective_reason": "equal slots give equal A_x sets; fixed-center A-injectivity then gives the same flag",
+    "forward_partial_map": "an x->y flag with leaf T maps to the unique third x-star block S in A_x(T)",
+    "matched_slot_reverse_reason": "S in A_x(T) means j(S,T)=2; since T is a y-star block, T is the reverse flag's third A_y(S) block",
+    "remaining_blocks_each_side": 5,
+    "reverse_injective_reason": "a canonical flag is determined by its center and leaf triangle",
+    "reverse_map": "a y->x flag maps to its leaf triangle S, one of the same five remaining x-star blocks",
+    "star_blocks_per_endpoint": 7
+  }
+}

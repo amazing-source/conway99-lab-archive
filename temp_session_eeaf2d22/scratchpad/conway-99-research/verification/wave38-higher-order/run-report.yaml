@@ -1,0 +1,28 @@
+role: verifier
+date_utc: "2026-07-27T01:43:06Z"
+git_commit: "3014f3b1c010cdde1687b8878d4ec58d2bb90f03"
+claim_label: VERIFIED_SCOPED_CONDITIONAL_WITH_WORDING_QUALIFIER
+scope: "Conditional prism-free n3=4158 signed trace subtraction, ternary centering, fixed-base nineteen-triangle contraction, and one frozen 36-vertex local relaxation"
+inputs:
+  - "verification/wave38-higher-order/input-freeze.sha256 | sha256 c9de80c5eb5c170c3ae88d8ad89c92d9bddb910ed52738fb2097fdd6b6edb1ad"
+  - "attempts/wave38-higher-order/exact-results.json | sha256 7d3229234e5eda3f432ff88eb07670a18611b37a64ef3a7949f4a505f274c782"
+  - "verification/wave35-n3-upper-spectral/independent-results.json | sha256 c704d8fce8f1d5975204b9a06ada0098c66fbdb9e0de8016a1ff89d86e691305"
+  - "verification/wave36-block-compatibility/independent-results.json | sha256 b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4"
+  - "verification/wave37-polar-strengthen/independent-results.json | sha256 37e17811baebce967ac7a0adf3e9f840340afc6bc9bfd07ce7912793d0e65734"
+method: "Clean-room exact arithmetic and proof reconstruction; direct signed-walk inclusion-exclusion; finite-field elimination; independent 36-row graph reconstruction; exact rational Gram rank; exhaustive 60^3 individual-column enumeration; hostile sign, subtraction, rank-hypothesis, local-scope, and status tests. Discovery Python was neither imported nor executed."
+command:
+  - ".\\.venv\\Scripts\\python.exe -B verification\\wave38-higher-order\\independent_check.py --output verification\\wave38-higher-order\\independent-results.json --compare-submission attempts\\wave38-higher-order\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B verification\\wave38-higher-order\\independent_check.py --verify verification\\wave38-higher-order\\independent-results.json --compare-submission attempts\\wave38-higher-order\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest -v verification\\wave38-higher-order\\test_independent_check.py"
+outputs:
+  - "verification/wave38-higher-order/independent_check.py | sha256 b6030afa08d18b092cc4b9893f332c0e39f1cd51d96c83847fb7b1ddc67beade"
+  - "verification/wave38-higher-order/test_independent_check.py | sha256 a046221f6118d3df6b0e346f50437e41b35456d43652f17f174ba37fc8cbdfdc"
+  - "verification/wave38-higher-order/independent-results.json | sha256 c0d56150980fe874ce1fa60eab9423da037400b7dcc17b5593380b2f03b5a0cb"
+  - "verification/wave38-higher-order/audit.md | sha256 d52b331a966339a4102f69c04572ca65eaaffb3dd46570980fedeceb161ddce2"
+  - "verification/wave38-higher-order/test-results.txt | sha256 76fe39feb9e087328959829681206e9c9112c93b6063f1c092958b54b1a5c3a6"
+limitations:
+  - "All general identities remain conditional on the hypothetical n3=4158 endpoint premises."
+  - "The JSON field seven_clique_gram_rank is wording-qualified: rank six is the centered z_T Gram; the uncentered v_T Gram has rank seven."
+  - "The 36-vertex core and 152399-column census do not supply sixty simultaneous columns, compatible H, a 99-vertex graph, or an endpoint construction."
+  - "The local identity yields rank(P_T-I)<=r3-1 only; it does not identify the global rank."
+  - "No endpoint exclusion, improved upper bound, or novelty/priority claim is made; target status is UNKNOWN."

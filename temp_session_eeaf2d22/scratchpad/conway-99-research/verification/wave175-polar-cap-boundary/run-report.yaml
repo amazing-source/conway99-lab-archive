@@ -1,0 +1,33 @@
+role: verifier
+date_utc: 2026-07-28T21:49:34Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional rank-11 finite-polar graph parameters, spectral and
+  divisibility-refined second moments, quadratic-Veronese rank caps, and the
+  inapplicability of the Blokhuis--Moorhouse polar-cap definition.
+inputs:
+  - attempts/wave175-polar-cap-boundary/package-manifest.sha256
+  - SOURCES.bib
+method: >-
+  Independent exact-formula reconstruction, primary-source definition check,
+  manifest validation, archived-result verification, and focused regression
+  tests.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave175-polar-cap-boundary\exact_check.py --verify
+  attempts\wave175-polar-cap-boundary\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave175-polar-cap-boundary\test_exact_check.py
+outputs:
+  - verification/wave175-polar-cap-boundary/README.md
+  - verification/wave175-polar-cap-boundary/audit.md
+  - verification/wave175-polar-cap-boundary/protocol.md
+  - verification/wave175-polar-cap-boundary/input-freeze.sha256
+limitations:
+  - The focused tests are narrow exact-regression tests; formulas were also
+    reconstructed independently.
+  - The primary paper is cited in SOURCES.bib rather than archived in the
+    repository.
+  - Rank 11, the endpoint, and Conway-99 remain unexcluded.
+  - External novelty is UNKNOWN.

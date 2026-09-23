@@ -1,0 +1,18 @@
+role: proof_b
+date_utc: 2026-07-28T00:00:27Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: DERIVED
+scope: unrestricted hypothetical srg(99,14,1,2); equivalent Seidel integral-orthogonal matrix and conditional Smith form
+inputs:
+  - verification/wave66-spherical-code-shift/independent-results.json sha256 3d6689b292fa5605e012da55f94e299926c1762c6ec77b8ef06007c62a65b61f
+  - verification/wave51-seidel-smith/independent-result.json sha256 1dda847b1180ac881f2ccce80285a2a50d9cab1f0f910f7dbdf9a6087d53d793
+method: exact symbolic matrix algebra, p-adic Smith reciprocity, and deterministic invariant-factor checks
+command: python -B attempts/wave82-seidel-orthogonal/exact_check.py --verify attempts/wave82-seidel-orthogonal/exact-results.json
+outputs:
+  - attempts/wave82-seidel-orthogonal/exact-results.json sha256 5cf866e67b1efeb8eb4c829fb31708cff0bc78357c1ce3068fbbda4ba6bda4a4
+  - attempts/wave82-seidel-orthogonal/derivation.md sha256 884d5c1446d3e9f699492cb6d8cdc78a22db4471f587283a2e977b310cf4ba79
+limitations:
+  - discovery-only; independent verification required
+  - no matrix or graph is constructed
+  - all eight imported rank rows survive
+  - no Conway-99 resolution or novelty claim

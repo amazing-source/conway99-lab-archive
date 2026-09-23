@@ -1,0 +1,38 @@
+role: literature
+date_utc: "2026-07-23T14:20:08Z"
+git_commit: "NOT_RUN_NO_GIT"
+claim_label: UNKNOWN
+scope: >-
+  Source status of srg(99,14,1,2); prior art for the conditional n3>=63
+  and induced-C6 endpoint 209349; occurrences of the r=20 all-size-two
+  reduction, N A_R N^T=2 A_L, m=27 K3,3/prism obstruction,
+  cubic-order-20/Petersen residual, and outside Gram decomposition; source
+  status of Baker 2026 and the Fable/Jacobian announcement.
+inputs:
+  - path: attempts/wave19-status-search/query-log.json
+    sha256: c8adda02fc047fd735cf142b31f70ffd59037086309481727433a2f620047882
+  - path: attempts/wave19-status-search/source-matrix.json
+    sha256: 0ac9231104f388b127d2ea3f78ff47967decb7e0883c5a08b747ab7ce1b56dc5
+method: >-
+  Queried exact phrases and structural synonyms with an index-backed web
+  search; directly inspected the live Brouwer catalog, publisher/author-hosted
+  books and PDFs, official journal pages, arXiv records/full text, and the
+  official Auburn conference program. Recorded source type, chronology, exact
+  URL, and page/theorem location. Did not inspect unverified alternate proof
+  artifacts for correctness and did not read Wave17 or Wave18 artifacts.
+command: >-
+  PowerShell: Get-Content -Raw query-log.json | ConvertFrom-Json;
+  Get-Content -Raw source-matrix.json | ConvertFrom-Json;
+  Get-FileHash -Algorithm SHA256 -LiteralPath <each-output>
+outputs:
+  - path: agents/2026-07-23-wave19-status-search.md
+    sha256: 675db20cb28084a9fa593f71e8d142a985aa6461d2b53baa9cc027e8ee2ccbc6
+  - path: attempts/wave19-status-search/negative-results.md
+    sha256: 724729a60b645bbf8f87e73f875066d5071983bc25486b314f38c82fd9321468
+limitations:
+  - Negative web/index searches are not novelty certificates.
+  - MathSciNet, zbMATH, every thesis, every talk recording, private circulation, and correspondence were not exhaustively searched.
+  - Equivalent results may use different notation or graph terminology.
+  - No Baker manuscript or recording was located and no author was contacted.
+  - Quarantined alternate proof claims were recorded only at source-status level and not assessed.
+  - The exact-reduction novelty conclusion therefore remains UNKNOWN.

@@ -1,0 +1,52 @@
+role: verifier
+date_utc: 2026-07-27T16:13:39Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: VERIFIED
+scope: >-
+  Conditional on n3=4158, independently exclude local F7 rank 27 for all
+  endpoint edge types 222, 24, 33, and 6, without a completed-graph
+  automorphism assumption.
+inputs:
+  - path: verification/wave41-rank26-secondary/secondary_check.py
+    sha256: 3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3
+  - path: verification/wave42-rank27/independent-results.json
+    sha256: a207b1bcc267aaefdea704c1173e3ed01a81029507d3bc76aa295caccad03be4
+  - path: attempts/wave43-rank28-motif/exact-results.json
+    sha256: 8878b40898ba9577ef01fb51ab5631632fb0e6bca3394c594b9c399d51385230
+  - path: attempts/wave43-type33-rank2/exact-results.json
+    sha256: f9f023a7f5da0b51df1f825c83a2405de16a6e4d5245965332df4ace46e8bd8d
+method: >-
+  Rebuild the local matrices and quotient independently; enumerate bounded-F
+  endpoint derangements by direct rank-pruned DFS; test all labelled
+  matchings by exact projected forms and batched GF(7) elimination; exhaust
+  type-6 zero residuals with literal kernel-vector mate constraints; and
+  separately exhaust type-33 rank-two residuals by all invertible principal
+  pivots and Schur-complement matching constraints.
+command:
+  - >-
+    .\.venv\Scripts\python.exe -B -m unittest discover -s
+    verification\wave43-rank28 -p "test_*.py" -v
+  - >-
+    .\.venv\Scripts\python.exe -B
+    verification\wave43-rank28\independent_check.py --verify
+    verification\wave43-rank28\independent-results.json --deterministic
+  - >-
+    .\.venv\Scripts\python.exe -B
+    verification\wave43-rank28\comparison_check.py --verify
+    verification\wave43-rank28\comparison.json
+outputs:
+  - path: verification/wave43-rank28/independent-results.json
+    sha256: 4e6bc6a04fb65b6dd2a873c9b446d305d65aaca46fecf8703da2886aa1859025
+  - path: verification/wave43-rank28/comparison.json
+    sha256: 3cc27ac01281d47c238748bda30602fc6fcbe38c19ae48ae073c0f47df5a1f43
+resource_bounds:
+  process_model: single foreground Python process
+  background_workers: 0
+  memory_floor_percent: 15
+  observed_external_free_memory_percent: "at least 63 during final QA"
+limitations:
+  - The result is conditional on the prism-free endpoint n3=4158.
+  - Rank 28 is compatible with the global rank ceiling 44.
+  - No endpoint exclusion, strict general upper-bound improvement, graph,
+    Conway-99 resolution, novelty, or priority result follows.
+

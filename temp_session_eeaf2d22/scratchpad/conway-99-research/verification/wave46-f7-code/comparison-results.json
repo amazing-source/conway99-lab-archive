@@ -1,0 +1,396 @@
+{
+  "complete_moments": {
+    "all_56_nonconstant_symbol_and_pair_checks_strict": true,
+    "basis": "falling ordered-coordinate moments; n_a*(n_a-1) on diagonal",
+    "minimum_first_slack": 15179555705976418712009901,
+    "minimum_second_slack": 498756830339225186222981718,
+    "prefreeze_basis_correction": "The frozen clean result recorded raw n_a*n_b moments. The sealed request uses the conventional falling diagonal n_a*(n_a-1). Both bases have strict slack; the discovery falling-moment value was independently reproduced.",
+    "prefreeze_raw_monomial_minimum_second_slack": 498756830339225186256549252,
+    "rank": 28
+  },
+  "discovery_manifest": {
+    "files": 12,
+    "manifest_sha256": "756622d5f40457d188c818a0233ee002b64039548bd51a725ec606b821c60272",
+    "status": "PASS"
+  },
+  "format": "wave46-clean-room-sealed-comparison-v1",
+  "hostile_mutations": {
+    "endpoint_row_composition": "REJECTED",
+    "prompt_quarantine_false_to_true": "REJECTED",
+    "rank_label_28_to_29": "REJECTED",
+    "schur_inverse_M_coefficient_3_to_2": "REJECTED",
+    "single_projection_entry": {
+      "entry": [
+        0,
+        0
+      ],
+      "new": 0,
+      "old": 1,
+      "outcome": "REJECTED",
+      "rank": 44,
+      "reason": "projection matrix lost row rank"
+    }
+  },
+  "inputs": {
+    "agents/2026-07-27-wave46-f7-code.md": "53528e641216d544d5085569eeeab6bb9b77de2a3028f45ef7f1064b9a12bdd7",
+    "attempts/wave46-f7-code/exact-results.json": "2fe86d07940b2d0e1c2d2812d632f2b43fafe25d7796072345c3753c3717ceb2",
+    "attempts/wave46-f7-code/package-manifest.sha256": "756622d5f40457d188c818a0233ee002b64039548bd51a725ec606b821c60272",
+    "verification/wave46-f7-code/independent-results.json": "d4c3b2ad121ba9390ae648b9bb0e047699c0bfdf8e8267808596256a12ba452d",
+    "verification/wave46-f7-code/independent_algebra.py": "556447eb6c9cf7083ff18bece172c98346d1f25bc8a8785ac7534e27bb504e42"
+  },
+  "limitations": [
+    "The endpoint projector identities are conditional and no endpoint graph is constructed.",
+    "Generic positive controls do not satisfy the endpoint row-composition geometry.",
+    "Degree-two moments do not determine a complete weight enumerator.",
+    "The Schur-cube floor 11 is weaker than the prior endpoint floor 28."
+  ],
+  "positive_controls": {
+    "all_endpoint_scalar_composition_hits_zero": true,
+    "all_projection_matrices_sha256": "9bc5d02ba9c4a522a1ac8355002e3229ead59e166ea7a8fccbddab8ce45342e1",
+    "controls_checked": 17,
+    "inherited_A69_lower_bound": 668653683264,
+    "interpretation": "Valid generic ordinary-code controls, not endpoint projector candidates.",
+    "local_columns_sha256": "c663813eef11abeecae24cb3b1ac48cf774e7037b814d5333d1f307a815037a2",
+    "local_weight_enumerator": {
+      "0": 1,
+      "12": 126,
+      "14": 18,
+      "18": 1470,
+      "19": 756,
+      "21": 30
+    },
+    "rank_interval": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "records": [
+      {
+        "dimension": 28,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "bf2f4c157421e7ed1200b6b2c0c0038944901dc4b135cc104801d2ce8e4f99ad",
+        "generator_rank": 28,
+        "gram_zero": true,
+        "projection_rank": 12,
+        "projection_sha256": "701b1dbfd0aed1852fba527739fd988ebd6011cd2f4581ae3f030a7d5f46f2cb",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 12
+      },
+      {
+        "dimension": 29,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "007fb3308e995339d93fa71461e459b259d5c0eef81df611ee4a8084a8dced15",
+        "generator_rank": 29,
+        "gram_zero": true,
+        "projection_rank": 13,
+        "projection_sha256": "a674961e0107dfc14c95927507d0aef25439b2828dd31f51324944c1c85ecd1a",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 13
+      },
+      {
+        "dimension": 30,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "2ea79e5ad0c2266c93bb9d6e74b945a343da41336ae0a384fd3fa286990596be",
+        "generator_rank": 30,
+        "gram_zero": true,
+        "projection_rank": 14,
+        "projection_sha256": "7454957f4590ff407480f59655ae0d064c5a565e4db1011ff230bc62c3201520",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 14
+      },
+      {
+        "dimension": 31,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "809cd285fc5e4a183c176b851b41c6a5be644ebdb8ac6ad5a77d709fb7453ea3",
+        "generator_rank": 31,
+        "gram_zero": true,
+        "projection_rank": 15,
+        "projection_sha256": "f03f0e2da0768d60113aa7535e5633bda81123f75d94e40d9fb1525cc8803961",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 15
+      },
+      {
+        "dimension": 32,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "7ae470957df75c880c6c4705968a45d08b6b314049d13855048d62c4630b14b1",
+        "generator_rank": 32,
+        "gram_zero": true,
+        "projection_rank": 16,
+        "projection_sha256": "d4a22c4746bdb7d54afbba0f155943870e174b3a8ccf3692314d20ebab22dcf7",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 16
+      },
+      {
+        "dimension": 33,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "64f88f3a396127d2ad0cfa7d40cc21e58f8053a7f93d621b9cb9119abcf2c969",
+        "generator_rank": 33,
+        "gram_zero": true,
+        "projection_rank": 17,
+        "projection_sha256": "6bcc2c60100ce93d862fe7305df9ea54d8d8006b3f7d204a2042031155be3d16",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 17
+      },
+      {
+        "dimension": 34,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "477065541150266df5e9f4f3c684fcfd7110b186d487b64394a4dfb73ed4959c",
+        "generator_rank": 34,
+        "gram_zero": true,
+        "projection_rank": 18,
+        "projection_sha256": "9283480381dad41e4d29ab871b57b65cbeef34db7a92a50c92fb17b167fb201a",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 18
+      },
+      {
+        "dimension": 35,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "fd396a737aa06255621fdc5f73abf657eac6d18d647d6a807f782ce85f88d1e8",
+        "generator_rank": 35,
+        "gram_zero": true,
+        "projection_rank": 19,
+        "projection_sha256": "c44e0f6d762eed21b0ee86adff3f3490cde55bbb4660deb8471d3a050188e740",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 19
+      },
+      {
+        "dimension": 36,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "6ba1699ebb2261ba26b5a806ceb6620bfcd0576864cdfa7da19f439bb1ce2f9f",
+        "generator_rank": 36,
+        "gram_zero": true,
+        "projection_rank": 20,
+        "projection_sha256": "0157dbaf39029393d0b51e63a8fc26edff7b2bdf2da4f3fdd87b4b8fc78ac85f",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 20
+      },
+      {
+        "dimension": 37,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "462a99ed9a8318c70b518d77d2f30ba9ffe2d699ce0d0784b36c434693c5df03",
+        "generator_rank": 37,
+        "gram_zero": true,
+        "projection_rank": 21,
+        "projection_sha256": "0b8574829eb05250dfeb52598cbae85e16719a92ee8d679a3d54bd1bfcac4d61",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 21
+      },
+      {
+        "dimension": 38,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "6f28e144b43d09bcd39d1f60a0a9338c47549bf95ca07f22b60dafb01c5ea0e5",
+        "generator_rank": 38,
+        "gram_zero": true,
+        "projection_rank": 22,
+        "projection_sha256": "04a948c0a58c58c6eacaf3f8bf131ff00808d9ddbcf26f5a467c505e2bf7be20",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 22
+      },
+      {
+        "dimension": 39,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "84da6a91d43b98dc8eaf44e38f127e940f3597b7e53242311b95000754f4e0dd",
+        "generator_rank": 39,
+        "gram_zero": true,
+        "projection_rank": 23,
+        "projection_sha256": "783710af4022342cbc509311ad8e4c5d67ef0b73835dfbd7742e2690edbd77f8",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 23
+      },
+      {
+        "dimension": 40,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "11362939d1b3eb3adf3af15087793b549378a277f9c7bdb6bafd1c7791c8849c",
+        "generator_rank": 40,
+        "gram_zero": true,
+        "projection_rank": 24,
+        "projection_sha256": "e2e6013523ff16218453f6957bfdc4c50ad137050728c9288a98eaae0303894d",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 24
+      },
+      {
+        "dimension": 41,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "ecd12c863ec3ed6f5d73fbe309e43bec02744f8c5666c93830ae947f9e27e815",
+        "generator_rank": 41,
+        "gram_zero": true,
+        "projection_rank": 25,
+        "projection_sha256": "231d25281221d1e14b7bef49978eb12dc9a7b3a8cb89a4ca545fd5c93f527dcc",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 25
+      },
+      {
+        "dimension": 42,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "65b34cde28fbca8d26a49d2f93817c9a87f50bd3948e4026ba042f324a5e4f6a",
+        "generator_rank": 42,
+        "gram_zero": true,
+        "projection_rank": 26,
+        "projection_sha256": "1c6be80b0581942bc10866ed696f2dcea3d20931fca282ee0502581265529657",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 26
+      },
+      {
+        "dimension": 43,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "6838f5ebfba1e2981f1b8a9c0799c2df978cbab8e19d32e6aeabba00d3dee0d1",
+        "generator_rank": 43,
+        "gram_zero": true,
+        "projection_rank": 27,
+        "projection_sha256": "40700ee47fa7fbcf8092a02e2a40e4f51a7b65895cec48ec3f8bb527bedc10b9",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 27
+      },
+      {
+        "dimension": 44,
+        "endpoint_scalar_composition_hits": 0,
+        "generator_column_stream_sha256": "6669951f9bec10fb8d845cbc9b70c0575346a5c9b804b4ff68bc8330998f406b",
+        "generator_rank": 44,
+        "gram_zero": true,
+        "projection_rank": 28,
+        "projection_sha256": "6eaa1c53184eb24c313dd9f6d9f7bde3dff96b2466457d44731071e9e656a505",
+        "projective_columns": 231,
+        "row_sums_zero": true,
+        "tail_projection_dimension": 28
+      }
+    ]
+  },
+  "projector_code": {
+    "A69_lower_bound": 1386,
+    "conditional_identity_derivation": "VERIFIED",
+    "contained_in_one_perp": true,
+    "dual_distance_lower_bound": 3,
+    "endpoint_scalar_compositions": [
+      [
+        162,
+        32,
+        0,
+        0,
+        1,
+        0,
+        36
+      ],
+      [
+        162,
+        1,
+        32,
+        0,
+        0,
+        36,
+        0
+      ],
+      [
+        162,
+        0,
+        0,
+        32,
+        36,
+        1,
+        0
+      ],
+      [
+        162,
+        0,
+        1,
+        36,
+        32,
+        0,
+        0
+      ],
+      [
+        162,
+        0,
+        36,
+        0,
+        0,
+        32,
+        1
+      ],
+      [
+        162,
+        36,
+        0,
+        1,
+        0,
+        0,
+        32
+      ]
+    ],
+    "excluded_weights": [
+      1,
+      2,
+      4
+    ],
+    "projective_columns": 231,
+    "self_orthogonal": true
+  },
+  "prompt_error_quarantine": {
+    "A_plus_3I_order": 99,
+    "determinant_mod_7": 3,
+    "full_F7_99_row_code": true,
+    "shifted_eigenvalues": [
+      [
+        17,
+        1
+      ],
+      [
+        6,
+        54
+      ],
+      [
+        -1,
+        44
+      ]
+    ],
+    "status": "VERIFIED_QUARANTINED",
+    "used_in_live_conclusion": false
+  },
+  "role": "verifier",
+  "schur_cube": {
+    "identity": "VERIFIED",
+    "inverse": "2I+3M",
+    "rank": 231,
+    "rank_floor": 11,
+    "superseded_by_endpoint_floor_28": true
+  },
+  "verdict": {
+    "Conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "generic_positive_controls": "VERIFIED",
+    "low_degree_complete_enumerator_contradiction": false,
+    "novelty": "UNKNOWN",
+    "ordinary_enumerator_contradiction": false,
+    "scoped_derivations": "VERIFIED",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

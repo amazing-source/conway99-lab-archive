@@ -1,0 +1,58 @@
+role: literature
+date_utc: 2026-07-23T20:03:00Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: CITED
+target_result: UNKNOWN
+novelty_status: UNKNOWN
+scope: >
+  Source-first status and prior-art audit through 2026-07-23 for the exact
+  target srg(99,14,1,2), Reimbayev's induced N3 count and induced-C6 identity,
+  prior n3 lower bounds, the Wave23 conditional endpoints n3>=708 and
+  induced_C6>=209994, and the compared determinant/index, eigenvalue-product,
+  and even-unimodular endpoint method.
+inputs:
+  verification/wave23-literature-audit/preinspection-query-plan.md:
+    sha256: 9e75b30797064af8d9dc04ba27afa555fc5ec8214809756ffc7eddba65fb637f
+  agents/2026-07-23-wave23-index-pranks.md:
+    sha256: 7c62f9eb1d61a036c3dc415572a4ada58046410cb40e4455f7ec8256ec9c1a00
+  third_party_sources:
+    description: >
+      Versioned primary/authoritative sources and citation metadata enumerated
+      with URLs, dates, byte lengths, and SHA-256 values in
+      source-query-ledger.json. The local sources tree is disposable cache.
+method: >
+  Froze exact queries and source hierarchy before proof inspection; searched
+  exact target, topology, endpoint-number, determinant/index, projector,
+  Maclaurin/KKT, and even-unimodular formulations; inspected primary PDFs and
+  source TeX; checked arXiv versions, a maintained parameter table, and
+  citation trails; then opened the Wave23 report solely to compare its exact
+  claim and structural route.
+command: |
+  rg -n -i '209991|209994|209,994|n_?\{?3\}?\s*(>=|\\geq|\\ge)\s*708|n_?\{?3\}?\s*(>=|\\geq|\\ge)\s*705|Maclaurin|KKT|even[- ]unimodular|van der Blij|projector lattice|product of eigenvalues' verification/wave23-literature-audit/sources -g '*.tex'
+  Get-FileHash -Algorithm SHA256 verification/wave23-literature-audit/preinspection-query-plan.md,verification/wave23-literature-audit/source-query-ledger.json,verification/wave23-literature-audit/2026-07-23-wave23-literature-audit.md
+outputs:
+  verification/wave23-literature-audit/source-query-ledger.json:
+    sha256: aa28a2a358e9e7243d800ad7229d57441cca561000155f36a47bca55f389c3eb
+  verification/wave23-literature-audit/2026-07-23-wave23-literature-audit.md:
+    sha256: 4a57192cd08e7a7f4d10a8eeb355f189562a414ab3007c10e1075cfb55a1901e
+limitations:
+  - >
+    Literature search and citation indexes cannot establish global absence or
+    novelty; inaccessible, unindexed, newly posted, or private work may exist.
+  - >
+    Current inspected sources treat target existence as open, but target
+    existence and nonexistence remain UNKNOWN.
+  - >
+    Exact numerical and method matches were not located only within the frozen
+    queries, supplemental queries, source trees, and citation trails listed in
+    the ledger; this is BOUNDED NON-DISCOVERY.
+  - >
+    The Makhnev record and indexed abstract scope were inspected, but direct
+    MathNet page opening failed with a Unicode-decoding error; the full text
+    was not machine-readable in this audit.
+  - >
+    The literature role did not verify Wave23 mathematics and cannot promote
+    its claim. Novelty remains UNKNOWN.
+  - >
+    The verification/wave23-literature-audit/sources tree contains
+    third-party disposable cache and is not required for publication.

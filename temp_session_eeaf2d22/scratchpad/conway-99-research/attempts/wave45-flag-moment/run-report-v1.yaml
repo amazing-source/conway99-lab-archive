@@ -1,0 +1,44 @@
+role: construction
+date_utc: 2026-07-27T16:59:22Z
+git_commit: 4636864ffc6310acaa71a41fff239a24e28404fc
+claim_label: DERIVED
+scope: >-
+  Immutable v1 finite flag-moment construction and exact replay at the
+  conditional endpoint n3=4158: two stored witnesses plus 15 fresh exact
+  QF_LIA witnesses are rejected, while the entire endpoint region remains
+  UNKNOWN.
+inputs:
+  - path: attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json
+    sha256: ffcf9f9942446d66c3559d97954217af3ba17c1978ea9417c6e99920d4a45420
+  - path: attempts/wave45-flag-moment/checkpoint-v1-stored-witness-results.json
+    sha256: 2c55b6ab1af9cac7d8f5800466abadb8c0c2603b5f96013d3fd160b6816c24df
+  - path: attempts/wave45-flag-moment/checkpoint-v1-seed0-17cuts-15witnesses.json
+    sha256: 96a50f9add4b12b2c86587da29ade8b9da34f88a7b7617c048ffb7139c12b64b
+  - path: verification/wave43-seven-deck-endpoint/independent_check.py
+    sha256: 324a4b84c081c8d2ad8a6a11bae45e0327c03ee2158036156c27efa66fcf790b
+  - path: attempts/wave44-rooted-flags/exact_check.py
+    sha256: dac369a7cdea1bdd81e3bca689a428664e4cb6f89756e0095bac94d5e1947dfa
+method: >-
+  Construct exact finite Gram matrices from all rooted-flag overlap
+  multiplicities; rationalize every promoted negative eigenvector to an
+  integer direction; add each direction as an exact linear PSD cut to a fresh
+  QF_LIA model of all 170 Wave44 rows; replay every candidate and cut with
+  ordinary Python integer arithmetic.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave45-flag-moment\replay-v1.py
+outputs:
+  - path: attempts/wave45-flag-moment/checkpoint-v1-manifest.sha256
+    sha256: 9c6eae037eefd2d3d4ae4ed0188ed5b0fae1957a42c42b11b066d59ebb47f791
+  - path: attempts/wave45-flag-moment/flag_moment-v1.py
+    sha256: 21ed58592eeced3433fdff0b98ae4f963b269ed0b39be05322f1dac42ce1be70
+  - path: attempts/wave45-flag-moment/replay-v1.py
+    sha256: 506f7750055f233ac24b1001981cb4060e1ac9bf72910fdfa703b44c19bfd43e
+  - path: attempts/wave45-flag-moment/replay-v1-results.json
+    sha256: 39b4ca9bb457693e0744a9a78a9051e8f2c5efb0d251e97097a34590e1508094
+limitations:
+  - The terminal QF_LIA timeout is UNKNOWN and is not an infeasibility proof.
+  - Seventeen rejected aggregate count vectors do not exclude every vector.
+  - A positive-semidefinite aggregate vector would still not construct a graph.
+  - Endpoint n3=4158, a strict upper bound below 4158, and Conway-99 remain UNKNOWN.
+  - The recorded git hash is the worktree base; v1 files were uncommitted when this report was written.

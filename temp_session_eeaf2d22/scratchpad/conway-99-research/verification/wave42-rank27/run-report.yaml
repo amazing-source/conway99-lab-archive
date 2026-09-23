@@ -1,0 +1,65 @@
+role: verifier
+date_utc: "2026-07-27T14:43:16Z"
+git_commit: "ef49b60aafd67f9007f6c218c39fd50392453a1b"
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification that every hypothetical srg(99,14,1,2)
+  satisfies rank_F7(M)>=27, covering all eleven labelled edge-local
+  partition types without a completed-graph automorphism assumption.
+inputs:
+  - path: verification/wave42-rank27/input-freeze.sha256
+    sha256: 3b1637810f2acf70eb1f58208b436cbd1e1f307e3ff28727757af664e94b26fb
+  - path: attempts/wave42-rank26-equality/exact-results.json
+    sha256: 94473b4c9f35184376765f76ab16646956222112836f49bcb22e950142a863a1
+method: >-
+  Independently derive the exact singular 27+12 rank decomposition and
+  rank-26 equality criterion; regenerate all 164,928 minimum-F labelled
+  border permutations and 52 right kernels; exactly check all 10,395
+  labelled R against every even-type permutation; use a structurally
+  independent pivot/mate CSP for complete all-odd coverage; freeze and
+  replay; then compare exact discovery counts and hashes.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave42-rank27 -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  verification\wave42-rank27\independent_check.py --verify
+  verification\wave42-rank27\independent-results.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave42-rank27\comparison_check.py --verify
+  verification\wave42-rank27\comparison.json
+outputs:
+  - path: verification/wave42-rank27/independent-results.json
+    sha256: a207b1bcc267aaefdea704c1173e3ed01a81029507d3bc76aa295caccad03be4
+  - path: verification/wave42-rank27/comparison.json
+    sha256: ca7ca8b2f4e3e103da63a74ca1920790a349ae98baf8e00381a0f9c84fc3b183
+  - path: verification/wave42-rank27/repaired-freeze.sha256
+    sha256: 6a1689268fd972b526bbd34fc3460a1e949ac5a3747310c8492d3fd18ae5bdfc
+tests:
+  independent_passed: 19
+  independent_failed: 0
+  discovery_passed: 10
+  discovery_failed: 0
+  independent_full_replay: PASS
+  discovery_manifest_entries: 21
+  discovery_independent_discrepancies: 0
+result:
+  verdict: PASS
+  local_partition_types: 11
+  minimum_F_permutations: 164928
+  canonical_right_kernels: 52
+  explicit_even_labelled_pairs: 1714426560
+  implicit_all_odd_labelled_pairs: 19916886528000
+  rank_at_most_one_survivors: 0
+  universal_rank_F7_M_lower_bound: 27
+freeze_note: >-
+  The first precomparison mathematical result was independently frozen at
+  bb4c1fa6d8c46343df26caa475895906d22c8f80000e8225e6a1f4bb9eb760eb,
+  but its byte replay failed solely because elapsed_seconds values were
+  serialized. The retained repair removes only nondeterministic timing
+  metadata. Every mathematical field is unchanged, and the repaired result
+  replayed byte-for-byte.
+limitations:
+  - No graph is constructed.
+  - The endpoint n3=4158 remains UNKNOWN.
+  - The general n3 upper bound remains 4158.
+  - Conway-99 existence, novelty, and priority remain UNKNOWN.

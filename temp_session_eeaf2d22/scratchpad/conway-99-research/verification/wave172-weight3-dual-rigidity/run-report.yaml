@@ -1,0 +1,29 @@
+role: verifier
+date_utc: 2026-07-28T20:55:20Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Independent endpoint verification of coefficient and support rigidity for
+  weight-three words in the dual centered ternary block code.
+inputs:
+  - attempts/wave172-weight3-dual-rigidity/package-manifest.sha256
+  - verification/wave35-n3-upper-spectral/audit.md
+  - verification/wave38-higher-order/audit.md
+  - agents/2026-07-27-wave39-simultaneous-bh.md
+  - attempts/wave20-global-obstruction/independent-verifier/independent-reconstruction.md
+method: >-
+  Clean finite-field support elimination, a normalized integer-lift norm
+  contradiction, and pairwise row-distance energy with exact symbol margins.
+command: >-
+  Paper reconstruction and exact integer arithmetic; no graph, code, SAT, or
+  solver search.
+outputs:
+  - verification/wave172-weight3-dual-rigidity/README.md
+  - verification/wave172-weight3-dual-rigidity/verification-report.md
+  - verification/wave172-weight3-dual-rigidity/protocol.md
+  - verification/wave172-weight3-dual-rigidity/input-freeze.sha256
+limitations:
+  - The endpoint entry alphabet is essential.
+  - The result does not require r3=12 or prove that a weight-three word exists.
+  - No construction, endpoint exclusion, improved n3 bound, or target
+    resolution follows.

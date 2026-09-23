@@ -1,0 +1,48 @@
+role: proof_a
+date_utc: 2026-07-23T20:26:17Z
+git_commit: c82f49be256f79fed45b7a4f1458d751d2ec0d9f
+claim_label: DERIVED
+scope: >-
+  Conditional exact index and local restrictions at n3=708 for a putative
+  srg(99,14,1,2), plus an exact coordinate-lattice survivor showing that the
+  current determinant/scaled-dual/endomorphism relaxation does not exclude
+  the endpoint.
+inputs:
+  - path: verification/2026-07-23-wave20-global-schur-audit.md
+    sha256: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave23-index-pranks/2026-07-23T192952Z-audit.md
+    sha256: bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116
+  - path: verification/wave23-endpoint-crosscheck/2026-07-23T200645Z-correction-audit.md
+    sha256: 791d74340c8a84a9993f9a5179c66baf0b2f7e431df5fb7eda2f593195f9bf53
+method: >-
+  Integral characteristic-polynomial pseudodeterminant, exact logarithmic
+  inequality, finite 3,7-smooth index exhaustion, explicit E8/A2 block
+  matrices, and local harmonic/diagonal arithmetic.
+command: |-
+  cd attempts/wave24-n3-708-index
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-23-wave24-n3-708-index-boundary.md
+    sha256: 461bbcff6399ae18c2764f68ea498b7eebba9780af0032b8e2e8fa18ca26af28
+  - path: attempts/wave24-n3-708-index/exact_check.py
+    sha256: 60bec6067383de3d9b6ecf57a5ce2a532deaf4759cc65faf4c63a6b8ce98b709
+  - path: attempts/wave24-n3-708-index/test_exact_check.py
+    sha256: adfa00d30a5db9ec0dc30bbd4d028689edd03bbba154535e05c1b7e4df76ed75
+  - path: attempts/wave24-n3-708-index/exact-results.json
+    sha256: a4241cdeea64a8f6073037d564e72fb7ef545287d45aca4759cec6c31d26a463
+  - path: attempts/wave24-n3-708-index/input-freeze.sha256
+    sha256: 4353375bbbfc58d382b048066aec388dec5d5ff84a41e426ea01dbb10ffbb7af
+  - path: attempts/wave24-n3-708-index/failed-routes.md
+    sha256: 2411d4012cc6bf3f1d2a82d63cdc1538a6ca815ad269604fc46cb72cd4d82efb
+  - path: attempts/wave24-n3-708-index/failed-runs.md
+    sha256: c37aeaad4f3afdbb765fc0233a23f6735b93a904b504a8593c1fe5503a9b8715
+limitations:
+  - Discovery-agent status only; a fresh independent verifier is required.
+  - The exact survivor has no proved primitive embedding in Z^231 and is not
+    a projector Gram matrix, Schur-square realization, or graph.
+  - The eight modular-rank/index cases are necessary arithmetic survivors,
+    not constructions.
+  - Target existence and novelty remain UNKNOWN.

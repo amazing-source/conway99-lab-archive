@@ -1,0 +1,52 @@
+role: verifier
+date_utc: 2026-07-27T17:32:00Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification of the conditional 231-by-231 F7 projector-code
+  consequences, scalar compositions, weight congruences, degree-two complete
+  moments, Schur cube, prompt-error quarantine, and all 17 generic positive
+  controls for ranks 28 through 44.
+inputs:
+  - path: attempts/wave46-f7-code/verifier-request.md
+    sha256: e36bdca9e339340db49b5bd98e6897879e039f510767f5b38d5446ec03528859
+  - path: attempts/wave46-f7-code/exact-results.json
+    sha256: 2fe86d07940b2d0e1c2d2812d632f2b43fafe25d7796072345c3753c3717ceb2
+  - path: attempts/wave46-f7-code/package-manifest.sha256
+    sha256: 756622d5f40457d188c818a0233ee002b64039548bd51a725ec606b821c60272
+  - path: verification/wave46-f7-code/protocol-freeze.md
+    sha256: eda8dfb2d988cdae0e2e24de44f3c94693457a5df80d59a25f66309ee392ed93
+method: >-
+  Freeze protocol and independent F7 implementation before discovery
+  inspection; derive projector-code implications and exact moments; rebuild
+  the affine-line block; apply every archived projection independently;
+  recompute generator ranks, row sums, Gram matrices, projective columns,
+  compositions, enumerators, hashes, Schur algebra, and hostile controls.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave46-f7-code\independent_algebra.py --verify
+  verification\wave46-f7-code\independent-results.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave46-f7-code\compare_sealed.py --verify
+  verification\wave46-f7-code\comparison-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave46-f7-code -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  verification\wave46-f7-code\manifest_check.py
+outputs:
+  - path: verification/wave46-f7-code/independent-results.json
+    sha256: d4c3b2ad121ba9390ae648b9bb0e047699c0bfdf8e8267808596256a12ba452d
+  - path: verification/wave46-f7-code/comparison-results.json
+    sha256: 34421c6b9e17d6acb7e6e4916258d1815bde5e814130ad02afe66aac41ec352f
+resource_bounds:
+  process_model: one foreground Python process
+  background_processes_started: 0
+  abort_floor_free_memory_percent: 20
+  minimum_recorded_host_free_memory_percent: 52.23
+limitations:
+  - The projector identities and row composition are conditional endpoint
+    inputs; no concrete endpoint matrix or graph is constructed.
+  - Generic controls are not endpoint projector candidates.
+  - Complete moments above degree two remain underdetermined.
+  - The Schur rank floor 11 is weaker than the prior endpoint floor 28.
+  - Endpoint n3=4158, a stricter bound, Conway-99, and novelty remain UNKNOWN.

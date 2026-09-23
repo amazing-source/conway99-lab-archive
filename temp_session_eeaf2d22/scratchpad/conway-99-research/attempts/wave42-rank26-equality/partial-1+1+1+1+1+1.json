@@ -1,0 +1,52 @@
+{
+  "claim_label": "CANDIDATE",
+  "format": "wave42-rank26-equality-all-odd-v1",
+  "inputs": {
+    "verification/wave41-rank26-secondary/secondary_check.py": "3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3"
+  },
+  "limitations": [
+    "Discovery cannot verify itself.",
+    "This output covers only the partition types explicitly listed.",
+    "The enormous pair count is covered by an exact rank-one CSP, not by materializing every dense matrix.",
+    "No graph, endpoint exclusion, n3 upper-bound improvement, novelty, or priority claim is made."
+  ],
+  "mathematical_reduction": {
+    "formula": "rank(K39)=25+rank(B)",
+    "pivot_identity": "B_ik B_pp = B_ip B_pk",
+    "rank26_criterion": "rank(B)=1"
+  },
+  "partitions": {
+    "1+1+1+1+1+1": {
+      "backtrack_nodes": 404250,
+      "completeness": "Every labelled R matching is enumerated. Every rank-one residual has a unique first nonzero diagonal pivot; its pivot image is enumerated. The pivot identity converts all remaining rank-one equations into exact unary and pairwise constraints, and the backtracker exhausts every all-different border permutation.",
+      "even_part_count": 0,
+      "exact_rank_one_residual_pairs": 0,
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 4979221632000,
+      "minimum_F_permutations": 479001600,
+      "minimum_F_rank": 0,
+      "nonempty_unary_branches": 103950,
+      "pairing_stream_sha256": "d0774c10297810eeadab5c0d0cf2812c615e88e40ad98ce4dc6ebb155bac6ea3",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pivot_assignment_branches": 1496880,
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 25,
+      "solution_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Complete rank-26 equality classification for the selected all-odd edge-local types.",
+  "totals": {
+    "exact_rank_one_residual_pairs": 0,
+    "minimum_F_R_pairs": 4979221632000,
+    "partition_types": 1,
+    "rank26_exists": false
+  }
+}

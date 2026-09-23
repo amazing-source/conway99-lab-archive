@@ -1,0 +1,63 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-28T00:44:19Z",
+  "format": "conway99-wave86-public-checkpoint-v1",
+  "git_base_commit": "fd88280eb25aecd8c40d9e82f572813f1c850ec5",
+  "literature_correction": {
+    "affects_inequality": false,
+    "description": "The printed combined Fricke formula omits a normalization ratio; the factors used are recovered from the source normalization and preceding transformation equation."
+  },
+  "manifests": {
+    "wave80_discovery": "51d3e709308851ba9c9c63a8897dec4c761ce11e5126633e0cdf67f6e470cba7",
+    "wave80_verification": "25129c86f97c8f9513eff04ada641c458b924f8edd583e6e6abc76d114c64077",
+    "wave81_discovery": "6c05ff8ef0f97b1c9af0a1fbe1106ec07f826e819869660262fe92b9478033bd",
+    "wave81_graphical_verification": "2461dbf6d3169cff5f951f519bfe57a374e00d0d3c05b51f991bb070a1ed7d63",
+    "wave81_verification": "311b7a0f8fbb330bf98c9d64d3517b9602ac86c818f830bb10f2bcc09091b0af",
+    "wave82_discovery": "bc53c1a8f1425e4cbc4c2f78cee036b0e11f364d429cd9adabc55be6956dfaca",
+    "wave82_verification": "71bf5beea4c2a5ae0ddbd3921d59d01b780c74a0985e48791196c32337943085",
+    "wave84_unknown_report": "1373295e05624a039fd5db9a50b6744f6b57d665cdfda1e2531b60775e4bee22",
+    "wave86_discovery": "c6066fd10258578c15e511f3802217e4ff613ffe3d3b3b8f11e804f0316ac75d",
+    "wave86_verification": "cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2"
+  },
+  "prior_checkpoint": "logs/2026-07-27-wave78-public-checkpoint.json",
+  "results": {
+    "wave80_f7_code": {
+      "code_parameters": "[99,44]_7",
+      "dual_minimum_lower_bound": 6,
+      "endpoint_quotient": "O^-(16,7)",
+      "hull": "row_F7(2A-J+I)",
+      "orthogonal_array_strength": 5
+    },
+    "wave81_norm16": {
+      "anchored_supports": 1800,
+      "coupling_multisets": 4985,
+      "degree_rows_t0_after_graphicality": 40,
+      "degree_rows_t1_after_graphicality": 7,
+      "support_orbits": 5
+    },
+    "wave82_integral_orthogonal": {
+      "all_rank_rows_survive": true,
+      "matrix_equation": "T^2=3969I",
+      "off_diagonal_alphabet": [-2, 16]
+    },
+    "wave84_sat": {
+      "complete_domain_runs": 4,
+      "result": "UNKNOWN",
+      "timeout_seconds_each": 900
+    },
+    "wave86_full_level7": {
+      "q16_combined_short_vector_lower_bound": 5868,
+      "sturm_bound": 14,
+      "space_dimension": 15
+    }
+  },
+  "status": "VERIFIED",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rank_f7_28": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED",
+    "wave84_sat": "UNKNOWN"
+  }
+}

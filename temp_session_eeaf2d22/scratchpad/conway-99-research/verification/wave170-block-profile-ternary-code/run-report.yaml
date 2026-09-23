@@ -1,0 +1,27 @@
+role: verifier
+date_utc: 2026-07-28T16:03:35Z
+git_commit: 43c97357471609ea133b1e35a555c54aa6c7517b
+claim_label: VERIFIED
+scope: >-
+  Independently audit pointwise and global block profiles, maximum clique
+  size, and ternary point-block Gram and incidence ranks.
+inputs:
+  - path: attempts/wave170-block-profile-ternary-code/package-manifest.sha256
+    sha256: aec097dfbb5b219cfa20af493c4b175cd3810a920fef25f7108ae0fe7b68aa8b
+method: >-
+  Clean-room incidence double counts, linear-triple clique proof, finite-field
+  SRG algebra, characteristic multiplicities, Jordan-aware image splitting,
+  and rank comparison.
+command: none; independent paper verification
+outputs:
+  - path: verification/wave170-block-profile-ternary-code/README.md
+    sha256: a405846ac6eb2fec1718a80f012fa01c9b3fa656e8e99521ca0e6e43c99aa25f
+  - path: verification/wave170-block-profile-ternary-code/verification-report.md
+    sha256: 2913e74995d320978c913e9831b9dc9f4a2bd50df8f9a11396c2118264ec5a03
+  - path: verification/wave170-block-profile-ternary-code/protocol.md
+    sha256: c2a3efa73f617dc0de4ec5238f2beebe405ba34393fe4d5f45ee4322951fb76b
+limitations:
+  - The profile recovers the known identity but does not improve it.
+  - No star-complement or code classification is verified.
+  - No strict n3 bound or endpoint exclusion follows.
+  - Literature novelty and Conway-99 remain UNKNOWN.

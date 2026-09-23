@@ -1,0 +1,85 @@
+role: proof_b
+date_utc: "2026-07-27T20:37:33Z"
+git_commit: "a4a61658356253fb95cf68252c972a4f79df38fe"
+claim_label: DERIVED
+scope: >-
+  Conditional bootstrap-percolation closure classification, global incidence
+  relations, and exact early-wave profile CSP for a hypothetical prism-free
+  srg(99,14,1,2).
+inputs:
+  - path: attempts/wave56-percolation-closure/input-freeze.sha256
+    sha256: 61cff2eb014ba61baa8d944e88522a74f251741744bc72d705ec9daa4dc3bd93
+  - path: attempts/wave56-percolation-closure/source-metadata.json
+    sha256: 17c72a4e9f97ef4ee8d754f3cbac2185accd8fada0b08693a6ae55fffbf90ef8
+method: >-
+  Use Ibrahim-LaFayette-McCall Lemma 4.9 as the general closure theorem;
+  independently derive the target parameter/eigenvalue census and unique
+  nine-vertex closure; double-count N3/prism channels and closure incidences;
+  exhaust all 64 labeled four-tip graphs; enumerate every six-subset prism,
+  allowable outside neighborhood mask, and exact nonnegative pair-deficit
+  multicover; retain all labeled profiles before formal D4 bookkeeping; and
+  attack tempting but unproved global equalities.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave56-percolation-closure\percolation_closure.py --verify attempts\wave56-percolation-closure\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave56-percolation-closure -p "test_*.py" -v
+outputs:
+  - path: attempts/wave56-percolation-closure/percolation_closure.py
+    sha256: fea2a4043816490638fd07728ff8b76fd67bd952926ef50a63a3eeb716c7ce1e
+  - path: attempts/wave56-percolation-closure/test_percolation_closure.py
+    sha256: c87011c7759bc5bf861552cdec8273b6183178c7d901b7057f80587555e09cfa
+  - path: attempts/wave56-percolation-closure/exact-results.json
+    sha256: 4326daa7222fe3de30fec122238603094285dbae7a48ed41252cceb62c9ccc5b
+  - path: attempts/wave56-percolation-closure/derivation.md
+    sha256: dfd6d0388cfad967cce6cfa277dfbd9c8478ccf14bf5e1818cffea3081d81925
+  - path: attempts/wave56-percolation-closure/failed-routes.md
+    sha256: baecfb3e953352a230b9f9c737d2cff7ba340020170fbafff380167de7e3fac8
+  - path: attempts/wave56-percolation-closure/README.md
+    sha256: d7f7f4dbe911998d4801588d9fd2366780130f210a3cfeaf3743ce796fcaa64e
+  - path: agents/2026-07-27-wave56-percolation-closure.md
+    sha256: 6b2cd21e32228452c260d0b4b0c89887c038379db54667166333175564efe979
+tests:
+  passed: 21
+  failed: 0
+  memory:
+    required_free_percent: 15
+    observed_free_percent: 51.58
+result:
+  nonedge_closure_dichotomy: "all 99 vertices or K3 square K3"
+  identities:
+    - "n3+3P=4158"
+    - "R=18H"
+    - "S=4158-R"
+  inequalities:
+    - "H<=231"
+    - "6H<=P"
+    - "R<=3P=4158-n3"
+    - "S>=n3"
+  endpoint:
+    n3: 4158
+    P: 0
+    H: 0
+    R: 0
+    S: 4158
+    every_nonedge_percolates: true
+  local_csp:
+    labeled_tip_graphs_checked: 64
+    lambda_mu_admissible_tip_graphs: 4
+    endpoint_tip_graphs: 1
+    endpoint_masks: 23
+    endpoint_labeled_profiles: 35
+    formal_D4_label_orbits: 11
+    wave_3_new_vertex_range: [8, 16]
+    exact_equation: "x2+3*x3+6*x4=16"
+status:
+  local_census: DERIVED_PENDING_VERIFIER
+  global_counting_contradiction: NOT_FOUND
+  endpoint_excluded: false
+  upper_bound_improved_below_4158: false
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - Discovery cannot verify itself.
+  - The source supplies the general closure lemma; target arithmetic is a new derivation pending verification.
+  - The 35 profiles are local pair-deficit solutions, not graph completions.
+  - Formal D4 groups labels only and assumes no automorphism of a completed graph.
+  - No endpoint exclusion, graph, stricter n3 upper bound, or novelty claim follows.

@@ -1,0 +1,1756 @@
+{
+  "claim_label": "CANDIDATE",
+  "encoded_premises": [
+    "sum q(T)=2*n3/3",
+    "active q(T)>=2",
+    "d_L(T)=3*q(T)",
+    "K is the simple active-label complement of L",
+    "three non-singleton linear point sets pass through every active label",
+    "every point set is a K-clique",
+    "three points cannot pairwise meet at three distinct labels",
+    "two-sided meeting-crossing degrees lie in {0,2}",
+    "fixed-point overlap contribution is bounded by 2*sum q over the point"
+  ],
+  "method": "standard-library integer partitions, exhaustive flower words, symbolic two-sided crossing rejection, and rooted local-state census",
+  "novelty": "UNKNOWN",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "schema": "conway99-wave14-n3-48-profile-census-v1",
+  "semantic": {
+    "finite_branch_reduction": [
+      {
+        "branch_id": "no-size3",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for PySAT active-local exploration",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r16-q2x16",
+        "root_q3_count": null,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "root-q3x0",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for PySAT active-local exploration",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r16-q2x16",
+        "root_q3_count": 0,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "no-size3",
+        "finite_reduction_certificate": {
+          "modulus": 2,
+          "total_incidence": 45
+        },
+        "finite_reduction_reason": "incidence parity: 3*15 is odd but size-two points contribute an even total",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": null,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x0",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for PySAT active-local exploration",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 0,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "root-q3x1",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 1
+        },
+        "finite_reduction_reason": "the exact rooted size-three local-state census is empty for every root containing q=3",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 1,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x2",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 2
+        },
+        "finite_reduction_reason": "the exact rooted size-three local-state census is empty for every root containing q=3",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 2,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "no-size3",
+        "finite_reduction_certificate": {
+          "additional_distance_two_neighbors": 2,
+          "f_neighbors": 3,
+          "forced_k_degree_lower_bound": 5,
+          "profile_k_degree": 4
+        },
+        "finite_reduction_reason": "at a q=3 label, cubic triangle-free F forces at least 3+2=5 distinct K-neighbours but d_K=4",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": null,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x0",
+        "finite_reduction_certificate": null,
+        "finite_reduction_reason": "retained for PySAT active-local exploration",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 0,
+        "survives_finite_reductions": true
+      },
+      {
+        "branch_id": "root-q3x1",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 1
+        },
+        "finite_reduction_reason": "the exact rooted size-three local-state census is empty for every root containing q=3",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 1,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x2",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 2
+        },
+        "finite_reduction_reason": "the exact rooted size-three local-state census is empty for every root containing q=3",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 2,
+        "survives_finite_reductions": false
+      },
+      {
+        "branch_id": "root-q3x3",
+        "finite_reduction_certificate": {
+          "labeled_local_state_count": 0,
+          "root_q3_count": 3
+        },
+        "finite_reduction_reason": "the exact rooted size-three local-state census is empty for every root containing q=3",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 3,
+        "survives_finite_reductions": false
+      }
+    ],
+    "local_size3_mode_census": [
+      {
+        "active_order": 16,
+        "profile_id": "r16-q2x16",
+        "root_compositions": [
+          {
+            "canonical_orbits": [
+              [
+                [
+                  2,
+                  [
+                    [
+                      1,
+                      0,
+                      5,
+                      1
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      2
+                    ],
+                    [
+                      3,
+                      0,
+                      3,
+                      3
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  3
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      1,
+                      0,
+                      5,
+                      2
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      3
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      3
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  2
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      1,
+                      0,
+                      5,
+                      3
+                    ],
+                    [
+                      1,
+                      0,
+                      5,
+                      3
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      4
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  1
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      1,
+                      0,
+                      5,
+                      3
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      4
+                    ],
+                    [
+                      3,
+                      1,
+                      3,
+                      3
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  2
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      1,
+                      0,
+                      5,
+                      4
+                    ],
+                    [
+                      1,
+                      0,
+                      5,
+                      4
+                    ],
+                    [
+                      1,
+                      0,
+                      5,
+                      4
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  0
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      1,
+                      0,
+                      5,
+                      5
+                    ],
+                    [
+                      1,
+                      0,
+                      5,
+                      5
+                    ],
+                    [
+                      2,
+                      1,
+                      4,
+                      4
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  0
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      2,
+                      0,
+                      4,
+                      2
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      2
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      2
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  3
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      2,
+                      0,
+                      4,
+                      3
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      3
+                    ],
+                    [
+                      3,
+                      1,
+                      3,
+                      2
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  3
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      2,
+                      0,
+                      4,
+                      4
+                    ],
+                    [
+                      2,
+                      0,
+                      4,
+                      4
+                    ],
+                    [
+                      2,
+                      1,
+                      4,
+                      2
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  2
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      2,
+                      0,
+                      4,
+                      4
+                    ],
+                    [
+                      3,
+                      1,
+                      3,
+                      3
+                    ],
+                    [
+                      3,
+                      1,
+                      3,
+                      3
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  3
+                ]
+              ]
+            ],
+            "equal_q_coordinate_orbit_count": 10,
+            "labeled_state_count": 32,
+            "root_q3_count": 0,
+            "root_q_values": [
+              2,
+              2,
+              2
+            ],
+            "state_sha256": "91a0661e2c4e6069f7cdc5cb7eb029af10fead9833199a7f4b0f5319f173cefc"
+          }
+        ]
+      },
+      {
+        "active_order": 15,
+        "profile_id": "r15-q2x13-q3x2",
+        "root_compositions": [
+          {
+            "canonical_orbits": [
+              [
+                [
+                  2,
+                  [
+                    [
+                      1,
+                      0,
+                      4,
+                      2
+                    ],
+                    [
+                      2,
+                      0,
+                      3,
+                      3
+                    ],
+                    [
+                      2,
+                      0,
+                      3,
+                      3
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  2
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      1,
+                      0,
+                      4,
+                      4
+                    ],
+                    [
+                      1,
+                      0,
+                      4,
+                      4
+                    ],
+                    [
+                      1,
+                      0,
+                      4,
+                      4
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  0
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      2,
+                      0,
+                      3,
+                      2
+                    ],
+                    [
+                      2,
+                      0,
+                      3,
+                      2
+                    ],
+                    [
+                      2,
+                      0,
+                      3,
+                      2
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  3
+                ]
+              ],
+              [
+                [
+                  2,
+                  [
+                    [
+                      2,
+                      0,
+                      3,
+                      3
+                    ],
+                    [
+                      2,
+                      0,
+                      3,
+                      3
+                    ],
+                    [
+                      3,
+                      1,
+                      2,
+                      2
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  3
+                ]
+              ]
+            ],
+            "equal_q_coordinate_orbit_count": 4,
+            "labeled_state_count": 8,
+            "root_q3_count": 0,
+            "root_q_values": [
+              2,
+              2,
+              2
+            ],
+            "state_sha256": "8e688c5d5cd5186edb69587bca4ad36fa9bb3fdc209784f267b3d7fe2bfef0b5"
+          },
+          {
+            "canonical_orbits": [],
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 1,
+            "root_q_values": [
+              2,
+              2,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "canonical_orbits": [],
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 2,
+            "root_q_values": [
+              2,
+              3,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          }
+        ]
+      },
+      {
+        "active_order": 14,
+        "profile_id": "r14-q2x10-q3x4",
+        "root_compositions": [
+          {
+            "canonical_orbits": [
+              [
+                [
+                  2,
+                  [
+                    [
+                      2,
+                      0,
+                      2,
+                      2
+                    ],
+                    [
+                      2,
+                      0,
+                      2,
+                      2
+                    ],
+                    [
+                      2,
+                      0,
+                      2,
+                      2
+                    ]
+                  ]
+                ],
+                [
+                  "full_l_crossings",
+                  3
+                ]
+              ]
+            ],
+            "equal_q_coordinate_orbit_count": 1,
+            "labeled_state_count": 1,
+            "root_q3_count": 0,
+            "root_q_values": [
+              2,
+              2,
+              2
+            ],
+            "state_sha256": "df9e63ceca3e1efb9486f6cbe16e909a97f498a80f6c868ff978df53df24b0be"
+          },
+          {
+            "canonical_orbits": [],
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 1,
+            "root_q_values": [
+              2,
+              2,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "canonical_orbits": [],
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 2,
+            "root_q_values": [
+              2,
+              3,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "canonical_orbits": [],
+            "equal_q_coordinate_orbit_count": 0,
+            "labeled_state_count": 0,
+            "root_q3_count": 3,
+            "root_q_values": [
+              3,
+              3,
+              3
+            ],
+            "state_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          }
+        ]
+      }
+    ],
+    "point_size_reductions": {
+      "r14-q2x10-q3x4": {
+        "maximum_size_from_expansion": 4,
+        "remaining_point_sizes": [
+          2,
+          3
+        ],
+        "size4_flower_using_maximum_root_degree_7": {
+          "active_order": 14,
+          "maximum_petal_size": 4,
+          "maximum_root_degree_lower_bound_histogram": {
+            "11": 25,
+            "12": 8,
+            "13": 12
+          },
+          "outside_capacity": 10,
+          "petal_count": 8,
+          "root_k_degrees": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "root_size": 4,
+          "singleton_petal_histogram": {
+            "6": 28,
+            "7": 16,
+            "8": 1
+          },
+          "statistics": {
+            "capacity_feasible": 45,
+            "capacity_rejections": 6516,
+            "k_degree_rejections": 45,
+            "total_words": 6561
+          },
+          "survivor_word_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "survivor_words": null
+        }
+      },
+      "r15-q2x13-q3x2": {
+        "maximum_size_from_expansion": 5,
+        "remaining_point_sizes": [
+          2,
+          3
+        ],
+        "size4_flower_using_maximum_root_degree_8": {
+          "active_order": 15,
+          "maximum_petal_size": 4,
+          "maximum_root_degree_lower_bound_histogram": {
+            "10": 32,
+            "11": 25,
+            "12": 80,
+            "13": 12,
+            "14": 8
+          },
+          "outside_capacity": 11,
+          "petal_count": 8,
+          "root_k_degrees": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "root_size": 4,
+          "singleton_petal_histogram": {
+            "5": 56,
+            "6": 84,
+            "7": 16,
+            "8": 1
+          },
+          "statistics": {
+            "capacity_feasible": 157,
+            "capacity_rejections": 6404,
+            "k_degree_rejections": 157,
+            "total_words": 6561
+          },
+          "survivor_word_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "survivor_words": null
+        },
+        "size5_flower_using_maximum_root_degree_8": {
+          "active_order": 15,
+          "maximum_petal_size": 5,
+          "maximum_root_degree_lower_bound_histogram": {
+            "14": 1
+          },
+          "outside_capacity": 10,
+          "petal_count": 10,
+          "root_k_degrees": [
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "root_size": 5,
+          "singleton_petal_histogram": {
+            "10": 1
+          },
+          "statistics": {
+            "capacity_feasible": 1,
+            "capacity_rejections": 1048575,
+            "k_degree_rejections": 1,
+            "total_words": 1048576
+          },
+          "survivor_word_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "survivor_words": null
+        }
+      },
+      "r16-q2x16": {
+        "maximum_size_from_expansion": 5,
+        "remaining_point_sizes": [
+          2,
+          3
+        ],
+        "size4_crossing_check": {
+          "all_rejected": true,
+          "degree_survivors_checked": 16,
+          "diagnostics": {
+            "two_sided_crossing_rejections": 16
+          },
+          "forced_l_column_degrees": [
+            3,
+            3
+          ],
+          "forced_l_crossing_shape": [
+            3,
+            2
+          ],
+          "forced_l_row_degrees": [
+            2,
+            2,
+            2
+          ],
+          "forced_petal_pair_at_each_root": [
+            2,
+            3
+          ],
+          "two_sided_crossing_rejections": 16
+        },
+        "size4_flower": {
+          "active_order": 16,
+          "maximum_petal_size": 4,
+          "maximum_root_degree_lower_bound_histogram": {
+            "10": 32,
+            "11": 175,
+            "12": 128,
+            "13": 60,
+            "14": 8,
+            "15": 4,
+            "9": 16
+          },
+          "outside_capacity": 12,
+          "petal_count": 8,
+          "root_k_degrees": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "root_size": 4,
+          "singleton_petal_histogram": {
+            "4": 70,
+            "5": 224,
+            "6": 112,
+            "7": 16,
+            "8": 1
+          },
+          "statistics": {
+            "capacity_feasible": 423,
+            "capacity_rejections": 6138,
+            "k_degree_rejections": 407,
+            "k_degree_survivors": 16,
+            "total_words": 6561
+          },
+          "survivor_word_sha256": "f82c08b27c1ba273a70108cb5b85b6c451c7feb9d6a557e6741a26dcff9ed47d",
+          "survivor_words": [
+            [
+              2,
+              3,
+              2,
+              3,
+              2,
+              3,
+              2,
+              3
+            ],
+            [
+              2,
+              3,
+              2,
+              3,
+              2,
+              3,
+              3,
+              2
+            ],
+            [
+              2,
+              3,
+              2,
+              3,
+              3,
+              2,
+              2,
+              3
+            ],
+            [
+              2,
+              3,
+              2,
+              3,
+              3,
+              2,
+              3,
+              2
+            ],
+            [
+              2,
+              3,
+              3,
+              2,
+              2,
+              3,
+              2,
+              3
+            ],
+            [
+              2,
+              3,
+              3,
+              2,
+              2,
+              3,
+              3,
+              2
+            ],
+            [
+              2,
+              3,
+              3,
+              2,
+              3,
+              2,
+              2,
+              3
+            ],
+            [
+              2,
+              3,
+              3,
+              2,
+              3,
+              2,
+              3,
+              2
+            ],
+            [
+              3,
+              2,
+              2,
+              3,
+              2,
+              3,
+              2,
+              3
+            ],
+            [
+              3,
+              2,
+              2,
+              3,
+              2,
+              3,
+              3,
+              2
+            ],
+            [
+              3,
+              2,
+              2,
+              3,
+              3,
+              2,
+              2,
+              3
+            ],
+            [
+              3,
+              2,
+              2,
+              3,
+              3,
+              2,
+              3,
+              2
+            ],
+            [
+              3,
+              2,
+              3,
+              2,
+              2,
+              3,
+              2,
+              3
+            ],
+            [
+              3,
+              2,
+              3,
+              2,
+              2,
+              3,
+              3,
+              2
+            ],
+            [
+              3,
+              2,
+              3,
+              2,
+              3,
+              2,
+              2,
+              3
+            ],
+            [
+              3,
+              2,
+              3,
+              2,
+              3,
+              2,
+              3,
+              2
+            ]
+          ]
+        },
+        "size5_flower": {
+          "active_order": 16,
+          "maximum_petal_size": 5,
+          "maximum_root_degree_lower_bound_histogram": {
+            "14": 1,
+            "15": 10
+          },
+          "outside_capacity": 11,
+          "petal_count": 10,
+          "root_k_degrees": [
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "root_size": 5,
+          "singleton_petal_histogram": {
+            "10": 1,
+            "9": 10
+          },
+          "statistics": {
+            "capacity_feasible": 11,
+            "capacity_rejections": 1048565,
+            "k_degree_rejections": 11,
+            "total_words": 1048576
+          },
+          "survivor_word_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "survivor_words": null
+        }
+      }
+    },
+    "post_finite_surviving_branches": [
+      {
+        "branch_id": "no-size3",
+        "profile_id": "r16-q2x16"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r16-q2x16"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r15-q2x13-q3x2"
+      },
+      {
+        "branch_id": "root-q3x0",
+        "profile_id": "r14-q2x10-q3x4"
+      }
+    ],
+    "q_sum": 32,
+    "raw_profiles": [
+      {
+        "active_order": 16,
+        "k_degree_histogram": {
+          "9": 16
+        },
+        "k_degrees": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "k_edge_count": 72,
+        "k_handshake_even": true,
+        "profile_id": "r16-q2x16",
+        "q_histogram": {
+          "2": 16
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "survives_three_non_singleton_points": true,
+        "survives_verified_degree_three_obstruction": true
+      },
+      {
+        "active_order": 15,
+        "k_degree_histogram": {
+          "2": 1,
+          "8": 14
+        },
+        "k_degrees": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          2
+        ],
+        "k_edge_count": 57,
+        "k_handshake_even": true,
+        "profile_id": "r15-q2x14-q4x1",
+        "q_histogram": {
+          "2": 14,
+          "4": 1
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "survives_three_non_singleton_points": false,
+        "survives_verified_degree_three_obstruction": false
+      },
+      {
+        "active_order": 15,
+        "k_degree_histogram": {
+          "5": 2,
+          "8": 13
+        },
+        "k_degrees": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          5,
+          5
+        ],
+        "k_edge_count": 57,
+        "k_handshake_even": true,
+        "profile_id": "r15-q2x13-q3x2",
+        "q_histogram": {
+          "2": 13,
+          "3": 2
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        "survives_three_non_singleton_points": true,
+        "survives_verified_degree_three_obstruction": true
+      },
+      {
+        "active_order": 14,
+        "k_degree_histogram": {
+          "1": 2,
+          "7": 12
+        },
+        "k_degrees": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        "k_edge_count": 43,
+        "k_handshake_even": true,
+        "profile_id": "r14-q2x12-q4x2",
+        "q_histogram": {
+          "2": 12,
+          "4": 2
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4
+        ],
+        "survives_three_non_singleton_points": false,
+        "survives_verified_degree_three_obstruction": false
+      },
+      {
+        "active_order": 14,
+        "k_degree_histogram": {
+          "1": 1,
+          "4": 2,
+          "7": 11
+        },
+        "k_degrees": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          4,
+          4,
+          1
+        ],
+        "k_edge_count": 43,
+        "k_handshake_even": true,
+        "profile_id": "r14-q2x11-q3x2-q4x1",
+        "q_histogram": {
+          "2": 11,
+          "3": 2,
+          "4": 1
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4
+        ],
+        "survives_three_non_singleton_points": false,
+        "survives_verified_degree_three_obstruction": false
+      },
+      {
+        "active_order": 14,
+        "k_degree_histogram": {
+          "4": 4,
+          "7": 10
+        },
+        "k_degrees": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          4,
+          4,
+          4,
+          4
+        ],
+        "k_edge_count": 43,
+        "k_handshake_even": true,
+        "profile_id": "r14-q2x10-q3x4",
+        "q_histogram": {
+          "2": 10,
+          "3": 4
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survives_three_non_singleton_points": true,
+        "survives_verified_degree_three_obstruction": true
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "0": 3,
+          "6": 10
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          0,
+          0,
+          0
+        ],
+        "k_edge_count": 30,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x10-q4x3",
+        "q_histogram": {
+          "2": 10,
+          "4": 3
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ],
+        "survives_three_non_singleton_points": false,
+        "survives_verified_degree_three_obstruction": false
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "0": 2,
+          "3": 2,
+          "6": 9
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3,
+          0,
+          0
+        ],
+        "k_edge_count": 30,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x9-q3x2-q4x2",
+        "q_histogram": {
+          "2": 9,
+          "3": 2,
+          "4": 2
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4
+        ],
+        "survives_three_non_singleton_points": false,
+        "survives_verified_degree_three_obstruction": false
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "0": 1,
+          "3": 4,
+          "6": 8
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          3,
+          0
+        ],
+        "k_edge_count": 30,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x8-q3x4-q4x1",
+        "q_histogram": {
+          "2": 8,
+          "3": 4,
+          "4": 1
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "survives_three_non_singleton_points": false,
+        "survives_verified_degree_three_obstruction": false
+      },
+      {
+        "active_order": 13,
+        "k_degree_histogram": {
+          "3": 6,
+          "6": 7
+        },
+        "k_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "k_edge_count": 30,
+        "k_handshake_even": true,
+        "profile_id": "r13-q2x7-q3x6",
+        "q_histogram": {
+          "2": 7,
+          "3": 6
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survives_three_non_singleton_points": true,
+        "survives_verified_degree_three_obstruction": false
+      },
+      {
+        "active_order": 12,
+        "k_degree_histogram": {
+          "2": 8,
+          "5": 4
+        },
+        "k_degrees": [
+          5,
+          5,
+          5,
+          5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "k_edge_count": 18,
+        "k_handshake_even": true,
+        "profile_id": "r12-q2x4-q3x8",
+        "q_histogram": {
+          "2": 4,
+          "3": 8
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survives_three_non_singleton_points": false,
+        "survives_verified_degree_three_obstruction": false
+      },
+      {
+        "active_order": 11,
+        "k_degree_histogram": {
+          "1": 10,
+          "4": 1
+        },
+        "k_degrees": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k_edge_count": 7,
+        "k_handshake_even": true,
+        "profile_id": "r11-q2x1-q3x10",
+        "q_histogram": {
+          "2": 1,
+          "3": 10
+        },
+        "q_sum": 32,
+        "q_values": [
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survives_three_non_singleton_points": false,
+        "survives_verified_degree_three_obstruction": false
+      }
+    ],
+    "sat_branch_cover": [
+      {
+        "branch_id": "no-size3",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r16-q2x16",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r16-q2x16",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "no-size3",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 1
+      },
+      {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r15-q2x13-q3x2",
+        "root_q3_count": 2
+      },
+      {
+        "branch_id": "no-size3",
+        "normalization": "all size-three point variables are false",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": null
+      },
+      {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 0
+      },
+      {
+        "branch_id": "root-q3x1",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 1
+      },
+      {
+        "branch_id": "root-q3x2",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 2
+      },
+      {
+        "branch_id": "root-q3x3",
+        "normalization": "choose one selected size-three point of this q-composition; the product of symmetric groups on equal-q labels names it",
+        "profile_id": "r14-q2x10-q3x4",
+        "root_q3_count": 3
+      }
+    ],
+    "surviving_profiles": [
+      "r16-q2x16",
+      "r15-q2x13-q3x2",
+      "r14-q2x10-q3x4"
+    ],
+    "target_n3": 48
+  },
+  "semantic_sha256": "07eb5c0430458adb4e17a00d27b3635d14031d87c185adb48368f56bfb75bd13",
+  "target_result": "UNKNOWN",
+  "unencoded_premises": [
+    "inactive point sets and inactive graph vertices",
+    "fixed support from disjoint active point sets",
+    "completion of every fixed-point support sum",
+    "the 693-vertex H graph",
+    "the 99-vertex adjacency matrix",
+    "global SRG lambda/mu equalities"
+  ]
+}

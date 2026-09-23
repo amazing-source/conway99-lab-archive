@@ -1,0 +1,64 @@
+{
+  "artifacts": {
+    "fixture-cut-pool.json": {
+      "bytes": 1778,
+      "sha256": "5947b56b0a368fe052ae4253ea92e055ee196288afba63b2c743d9b7f9d03c7c"
+    },
+    "fixture-residual-prism-cuts.json": {
+      "bytes": 1770,
+      "sha256": "96458134110b7d85fb528ee3541578531e2364ae108713456c2b97ed7e88d270"
+    },
+    "fixture-residual-prism.json": {
+      "bytes": 358,
+      "sha256": "4a78e63b2d790e8a5b9e9a2ca5d1c0d7178ce45d14075882f1a54b9fbaa95fe3"
+    },
+    "static-schema-estimate.json": {
+      "bytes": 3201,
+      "sha256": "6cf9e7d6c799abf4228e8b428adfa8d6bdac29a90c36d4d85c0b4836283d2195"
+    }
+  },
+  "checks": {
+    "endpoint_refined_case_count": 33,
+    "fixture_catalog_byte_identical": true,
+    "fixture_exact_cuts": 1,
+    "fixture_pool_byte_identical": true,
+    "fixture_prism_witnesses": 1,
+    "frozen_input_count": 6,
+    "static_inventory_byte_identical": true
+  },
+  "claim_label": "DERIVED",
+  "format": "wave38-complete-endpoint-construction-audit-v1",
+  "frozen_inputs": [
+    {
+      "path": "code/sat_model.py",
+      "sha256": "45f0da74619b31a1a31cc407f702f8e86a0597ee73d29ec268528cd89980aef8"
+    },
+    {
+      "path": "code/root_model.py",
+      "sha256": "2a1f074f29f2e00e38437bf81418771d57ab41335605b9f3b9f2cae061a1624e"
+    },
+    {
+      "path": "code/matching_orbits.py",
+      "sha256": "1ba68393c385ef296458555b7c48533786ea592a50bec589be675f95fd550240"
+    },
+    {
+      "path": "code/wave35_n3_endpoint_root_scout.py",
+      "sha256": "04ef058c3a14ed8790773f015edc16f4ae1da1bcb011e3b795f0d16229f7ff7e"
+    },
+    {
+      "path": "attempts/wave36-rooted-branches/rooted_branch_scout.py",
+      "sha256": "bdb3b0ac06d4926133cf9f9e3a80c58dec82c48dc09bb85696819c826da56397"
+    },
+    {
+      "path": "attempts/wave37-proof-producing-endpoint/export_endpoint_opb.py",
+      "sha256": "b9cb895625e89709bfef765156a7fa0dd7c842a1d6db41401b83df15e986d902"
+    }
+  ],
+  "limitations": [
+    "This is a construction replay, not independent verification.",
+    "No target OPB formula was generated or solved.",
+    "No SAT witness or UNSAT proof was produced."
+  ],
+  "role": "construction",
+  "status": "PASS"
+}

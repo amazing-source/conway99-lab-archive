@@ -1,0 +1,136 @@
+{
+  "claim_label": "DERIVED",
+  "first_principles_derivation": [
+    "N is the 20-by-30 active-label/size-two-point incidence matrix.",
+    "An R edge has a positive two-by-two L crossing, hence contributes its full four-entry rectangle to N A_R N^T.",
+    "An L edge joins two active graph triangles by exactly two original cross edges (the audited a_2=d_L=3q definition).",
+    "Each of those two cross edges has a nonempty size-two crossing containing that L edge, so it is an R edge.",
+    "Thus every L entry occurs exactly twice and every non-L entry occurs zero times.",
+    "Z edges have zero crossing and therefore do not occur in A_R or in this product."
+  ],
+  "hostile_coarse_pair": {
+    "F_connected_cubic_triangle_free": true,
+    "R_cycle_length_multiset": [
+      30
+    ],
+    "R_disjoint_from_line_graph_F": true,
+    "R_simple_spanning_2factor": true,
+    "first_violating_label_pair": [
+      0,
+      3,
+      1
+    ],
+    "meaning": "the candidate's cycle-partition/coarse F-R fields accept data that cannot be a positive-crossing system",
+    "mod2_explanation": "F is connected, so nullity(A_R)>=8 is necessary; a single 30-cycle has GF(2) nullity two",
+    "off_diagonal_value_counts": {
+      "0": 104,
+      "1": 57,
+      "2": 24,
+      "3": 5
+    },
+    "rectangle_identity": "FAIL",
+    "rectangle_row_sums": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "restriction": "one explicit F=generalized Petersen G(10,2), Z empty, and one deterministically found 30-cycle R; this is not a complete search"
+  },
+  "identity": "N A_R N^T = 2 A_L",
+  "inputs_sha256": {
+    "agents/2026-07-23-wave19-n3-60-structural.md": "b2f90af07f34a6525ea35cdf4d392d95aea10fc319633cd17037d00145690744",
+    "attempts/wave19-n3-60-structural/residual-certificates.json": "3396b3b67b944b86bfd0d51e8beca25dfc9350815269c62cda4fa7c22a7a5c8b",
+    "verification/2026-07-23-wave15-algebraic-audit.md": "b0541d05d2c1c359152b86223e2ebbdbd002b2ff42deb699f6a0b21d149a5b45",
+    "verification/2026-07-23-wave16-n3-51-structural-audit.md": "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6"
+  },
+  "limitations": [
+    "No search for an F,R pair satisfying the identity was performed.",
+    "Failure of the single hostile coarse pair is not nonexistence evidence.",
+    "The identity is a necessary condition, not an SRG extension certificate."
+  ],
+  "mod2_rank_consequence": {
+    "component_bound": "c(F)<=3 because a simple cubic triangle-free component has >=6 vertices",
+    "connected_F_consequence": "If F is connected, only 147 of the 331 abstract R cycle partitions survive the necessary nullity>=8 test.",
+    "cycle_nullity_formula": "#odd cycles + 2*#even cycles",
+    "derivation": "Over GF(2), N A_R N^T=0. For c components of F, dim im(N^T)=20-c and dim ker(N)=10+c, so A_R maps a (20-c)-space into a (10+c)-space and nullity(A_R)>=10-2c.",
+    "nullity_distribution_over_331_cycle_partitions": {
+      "10": 42,
+      "12": 11,
+      "14": 2,
+      "2": 8,
+      "4": 60,
+      "6": 116,
+      "8": 92
+    },
+    "required_nullity_by_F_component_count": {
+      "1": 8,
+      "2": 6,
+      "3": 4
+    },
+    "surviving_cycle_partition_count_by_F_component_count": {
+      "1": 147,
+      "2": 263,
+      "3": 323
+    },
+    "universally_excluded_cycle_partitions": [
+      [
+        3,
+        27
+      ],
+      [
+        5,
+        25
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        9,
+        21
+      ],
+      [
+        11,
+        19
+      ],
+      [
+        13,
+        17
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        30
+      ]
+    ]
+  },
+  "status_boundary": {
+    "conditional_n3_60": "UNKNOWN_FINITE_RESIDUAL",
+    "conway_99_target": "UNKNOWN",
+    "r20_m30": "UNKNOWN_STRONGER_FINITE_RESIDUAL"
+  },
+  "submitted_artifact_check": {
+    "effect": "omitted stronger necessary compatibility; does not falsify the coarser necessary reduction or close m=30",
+    "residual_json_contains_N_A_R_Nt": false,
+    "residual_json_instantiates_common_labeled_F_R_L": false
+  }
+}

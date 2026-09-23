@@ -1,0 +1,28 @@
+role: construction
+date_utc: 2026-07-28T05:40:22Z
+git_commit: 127acd31ff7980d3d629009167a2bf7f95150b18
+claim_label: UNKNOWN
+scope: >-
+  Wave110 row-lex motif SAT encoding for srg(99,14,1,2), restricted to
+  branch eX0=0, with a 900-second solver limit
+inputs:
+  - path: attempts/wave110-c4boxk3-symmetry-sat/symmetry_sat.py
+    sha256: 0433fd1642041b20cbb7a0ba4dc881543b70919f38a40fa98c716c0609e8930e
+method: >-
+  Build the exact-cardinality and common-conjunction CNF with the safe
+  simultaneous row-lex encoding, then run PySAT MiniCard for at most 900
+  seconds while enforcing a 20% build floor and 15% host reserve.
+command: >-
+  .venv/Scripts/python.exe -u -B
+  attempts/wave110-c4boxk3-symmetry-sat/symmetry_sat.py
+  --solve-seconds 900 --branch-eX0 0
+  --output attempts/wave125-long-motif-sat/branch0-900s.json
+outputs:
+  - path: attempts/wave125-long-motif-sat/branch0-900s.json
+    sha256: 945eb01bf7d56cf19f88b9b7c56412f7cda8a03a432e335386e19a5438ef5877
+  - path: attempts/wave125-long-motif-sat/branch0-900s-launch2.stdout.txt
+    sha256: 2ad415a96eee8a67c2e5c003a21bafeaf72ae3fece4f32a6d1adef5cf23e6df2
+limitations: >-
+  UNKNOWN_TIMEOUT. No SAT model, UNSAT proof, or other certificate was
+  produced. The branch restriction is explicit and the outcome has no
+  implication for the unrestricted graph problem.

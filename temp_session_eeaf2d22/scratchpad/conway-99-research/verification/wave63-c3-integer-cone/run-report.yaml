@@ -1,0 +1,28 @@
+role: verifier
+date_utc: 2026-07-27T22:18:26Z
+git_commit: 81c8d45426938ea8490af55d81f05b7c2ad99035
+claim_label: VERIFIED
+scope: conditional prism-free n3=4158, kappa=3 fixed-triangle lane; exact verification of the fixed 74-lane rational pair-cone certificates only
+inputs:
+  - path: attempts/wave63-c3-integer-cone/package-manifest.sha256
+    sha256: c85f9dcf3d0bdba2a41299c4a3c4fdd8c9802903cff04ab237f40d9840df6018
+  - path: attempts/wave63-c3-integer-cone/exact-results.json
+    sha256: 1c2feed3bf7451540a511d80cfd333c917be7e050315811cd4781f9aaed9cb12
+  - path: attempts/wave60-c3-incidence-design/component-census.json
+    sha256: 16e124587df5b37b3f4735e14894982750c60a303043125985383101331eb4de
+  - path: attempts/wave60-c3-incidence-design/exact-results.json
+    sha256: 35b6436c7ba5619fcf7e3840cbdacd594461c01df8758686450f5d8eea8e36f3
+  - path: attempts/wave61-c3-finite-field/exact-results.json
+    sha256: 936c76b7487d713421ef663aae4cc591f9bcf93f5d6a11f4aae3c0b5d4aa52f6
+  - path: verification/wave36-block-compatibility/independent-results.json
+    sha256: b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4
+method: freeze discovery bytes before inspection; independently rebuild graph targets, all 1140 candidate counts, the 74-lane selection, candidate six-sets, and all rational witness equations with standard-library Fraction arithmetic; attack certificate fields with hostile mutations
+command: .\.venv\Scripts\python.exe -B verification\wave63-c3-integer-cone\independent_check.py ; .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave63-c3-integer-cone -p "test_*.py" -v
+outputs:
+  - path: verification/wave63-c3-integer-cone/independent-results.json
+    sha256: b63221d5b0f00443b0eb565ae83ffbf2bf583fa406e77e988a5ff652995536b4
+  - path: verification/wave63-c3-integer-cone/independent_check.py
+    sha256: 0887f739c2af1c58f64f164174869fea40609d64fa499faeacb185fd7575d8e7
+  - path: verification/wave63-c3-integer-cone/test_independent_check.py
+    sha256: 0d68ef395bba8f7ff2904491f8b9655ebfc3317d02cdbe7f1459506bfc28582a
+limitations: fixed 74-lane subset only; rational witnesses are not binary designs; the 30-second MILP nonhit has no proof certificate and is not negative evidence; no compatible Y graph or full SRG; endpoint, Conway-99, and novelty remain UNKNOWN

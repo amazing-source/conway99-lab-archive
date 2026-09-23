@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-07-24",
+  "record_count": 6,
+  "records": [
+    {
+      "id": "S01",
+      "source_type": "author_maintained_parameter_table",
+      "title": "Strongly regular graphs: parameters 51-100",
+      "author_or_maintainer": "Andries E. Brouwer",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+      "inspected": "Current row for v=99, k=14, lambda=1, mu=2.",
+      "supports": "The maintained table marks the parameter set with '?', consistent with unknown existence.",
+      "does_not_support": "A maintained-table marker cannot prove that no unindexed or unpublished resolution exists.",
+      "status": "CITED_CURRENT_STATUS"
+    },
+    {
+      "id": "S02",
+      "source_type": "public_lean4_repository",
+      "title": "Conway-99 C3 orbit restriction in Lean 4",
+      "author_or_owner": "Kuberwastaken",
+      "url": "https://github.com/Kuberwastaken/conway99-c3-orbit-restriction",
+      "created_at_utc": "2026-07-23T19:12:06Z",
+      "pinned_commit": "be7b0ae3394721a4c3a1375008a1dbfca44981fc",
+      "toolchain": "Lean 4.27.0",
+      "license": "Apache-2.0",
+      "inspected": "Repository metadata, README, workflow result, lake pins, and Conway99C3Orbits/Basic.lean at the pinned commit.",
+      "supports": "A formal arithmetic/matrix implication: under explicitly supplied quotient diagonal, spectral trace and multiplicity, and triangle-action congruence data for a fixed-point-free order-three action, the triangular-orbit count is 6 or 27.",
+      "does_not_support": "The project does not construct the quotient from SimpleGraph (Fin 99) and an automorphism. The graph-to-matrix identities, orbit classification, trace formula, and fixed-triangle congruence remain certificate fields. It does not construct or exclude the graph.",
+      "independent_replay": "PENDING",
+      "status": "CANDIDATE_SCOPED_FORMALIZATION"
+    },
+    {
+      "id": "S03",
+      "source_type": "institutional_reu_report",
+      "title": "Conway's 99-Graph Problem: A Boolean Satisfiability Approach",
+      "author_or_owner": "Nathaniel Selub",
+      "year": 2023,
+      "url": "https://math.uchicago.edu/~may/REU2023/REUPapers/Selub.pdf",
+      "inspected": "Seven-page University of Chicago REU paper, including the CNF framework, symmetry discussion, rooted-neighborhood setup, and Next Steps.",
+      "supports": "An older direct SAT formulation using edge, triangle, and quadrilateral auxiliaries, plus basic rooted symmetry reduction.",
+      "does_not_support": "The report presents proposed next steps rather than a completed full-domain run, SAT witness, UNSAT proof, graph, or nonexistence certificate.",
+      "status": "CITED_PRIOR_FRAMEWORK"
+    },
+    {
+      "id": "S04",
+      "source_type": "public_certificate_repository",
+      "title": "Conway 99-Graph - Certificate Work",
+      "author_or_owner": "Harrison Pedrero",
+      "url": "https://github.com/harrisonpedrero/conway-99-graph",
+      "pinned_commit": "26b36c540611fa02c95a5a4bd78cd4a582257195",
+      "inspected": "Repository metadata, root README, corrected R230 report, Gram/Euclidean certificate report, and adversarial-review correction statement.",
+      "author_claim": "Conditional on its honest rooted counting model, no vertex has at least 14 C4 fibers with all k>=14 rungs reported proof-checked; k=13 retains one residual evidence gap.",
+      "supports": "A potentially strong current rooted partial theorem and an unusually explicit correction trail after retraction of an earlier overclaim.",
+      "does_not_support": "The repository itself says the graph problem remains open, vertices with at most 12 C4 fibers are untouched, and no third-party clean-machine replay has occurred. This repository has not independently checked the rooted-model bridge or all large proof artifacts.",
+      "independent_replay": "PENDING",
+      "status": "CANDIDATE_PARTIAL_THEOREM"
+    },
+    {
+      "id": "S05",
+      "source_type": "research_slides",
+      "title": "Some Examples of Combinatorial Generation",
+      "author_or_owner": "Brendan McKay",
+      "url": "https://45acc.github.io/slides/McKay.pdf",
+      "inspected": "Block-design definition, generation-method slides, and the final scale estimate.",
+      "supports": "The slides estimate about 1.5 x 10^21 nonisomorphic 2-(15,3,2) designs.",
+      "does_not_support": "The displayed quantity is an approximate scale statement, not an exact enumeration certificate and not a Conway-99 theorem. It does show that naive unrestricted design-by-design enumeration is not a credible near-term completeness plan.",
+      "status": "CITED_SCALE_ESTIMATE"
+    },
+    {
+      "id": "S06",
+      "source_type": "institutional_design_data_index",
+      "title": "Combinatorial structures data index",
+      "author_or_owner": "University of Rijeka structure-data maintainers",
+      "url": "https://www.math.uniri.hr/~sanjar/structures/",
+      "inspected": "Top-level index and 0_README_the_content_of_folders_and_references.txt.",
+      "supports": "Folder 2 contains incidence matrices for 2-(15,3,2) designs derived from the Folder-1 2-(71,15,3) designs.",
+      "does_not_support": "Folder 1 is restricted to designs having an automorphism of order 6, so Folder 2 is a derived restricted corpus, not a complete catalogue of all 2-(15,3,2) designs and not a complete rooted-domain search.",
+      "status": "CITED_RESTRICTED_CORPUS"
+    }
+  ]
+}

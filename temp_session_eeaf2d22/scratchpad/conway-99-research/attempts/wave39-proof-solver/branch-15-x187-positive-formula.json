@@ -1,0 +1,37 @@
+{
+  "claim_label": "CANDIDATE_FORMULA_ONLY",
+  "coverage": {
+    "closed_endpoint_cases_before_solving": 0,
+    "total_endpoint_cases": 33
+  },
+  "format": "wave39-branch15-primary-polarity-shard-opb-v1",
+  "limitations": [
+    "Formula export is not a satisfiability conclusion.",
+    "The formula is one polarity shard inside refined branch 15.",
+    "The raw OPB is local-only and regenerated from the published gzip.",
+    "UNSAT promotion requires retained proof and independent replay."
+  ],
+  "opb": {
+    "constraints": 574616,
+    "gzip_bytes": 3854316,
+    "gzip_path": "attempts/wave39-proof-solver/branch-15-x187-positive.opb.gz",
+    "gzip_sha256": "6a5e88245acb4dece760ce67e39fa9b098e43c958bc0f164bcba9f67e8ea4e2d",
+    "raw_bytes": 29827719,
+    "raw_path": "attempts/wave39-proof-solver/branch-15-x187-positive.opb",
+    "raw_sha256": "8ed7ae5b893191ed2c342c681084a8f9f67cab6f1b6728aa8c8f0793e04e1c11",
+    "variables": 289338
+  },
+  "role": "construction",
+  "scope": "refined endpoint branch 15 conjoined with x187=1",
+  "source": {
+    "constraints": 574615,
+    "gzip_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+    "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb.gz",
+    "raw_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5"
+  },
+  "transformation": {
+    "assumption": "x187=1",
+    "constraint": "+1 x187 >= 1 ;",
+    "kind": "append_unit_constraint"
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "claim_label": "CANDIDATE",
+  "conclusion": {
+    "endpoint_excluded": false,
+    "precise_null": "Even after imposing endpoint-scale E/F counts, a simple 36-regular 231-vertex relation quotient, two faces per edge, and six C6 link components at every triangle, an exact nonorientable control realizes product sign +1. Therefore a sign/parity contradiction requires a new theorem forcing orientability or otherwise constraining the edge-twist class.",
+    "stronger_exact_necessary_condition": "The global holonomy-sign product is controlled by the Euler characteristic and face parity, not by derangement alone.",
+    "target_status": "UNKNOWN",
+    "upper_bound_improved": false
+  },
+  "derived_holonomy": {
+    "all_222_orientable_implication": "If every normalized surface component were orientable, chi would be even and product_T sign(h_T) would equal -1.",
+    "cross_graph_between_each_fibre_pair": "perfect_matching",
+    "cross_two_factor_rule": "A holonomy cycle of length k is a cross-fibre cycle of length 3k.",
+    "endpoint_condition": "h_T is a derangement for every graph triangle T",
+    "fibre_sizes": [
+      12,
+      12,
+      12
+    ],
+    "fibres": "X=N(a)-{b,c}, Y=N(b)-{a,c}, Z=N(c)-{a,b}",
+    "gauge_rule": "Fibre relabelling conjugates h_T; reversal inverts it.",
+    "global_surface_sign_identity": "product_T sign(h_T)=(-1)^H=(-1)^(chi+E-F)",
+    "internal_graph_in_each_fibre": "6K2",
+    "link_component_identity": "h(T)=number_of_cycles(h_T)",
+    "normalized_composition": "h_T=m_ZX o m_YZ o m_XY on X",
+    "prism_identity": "induced_prisms_based_at_T = fixed_points(h_T)",
+    "sign_identity_per_triangle": "sign(h_T)=(-1)^h(T), since |X|=12"
+  },
+  "format": "wave133-triangle-holonomy-topology-v1",
+  "frozen_parameters": {
+    "all_222_faces": 2079,
+    "endpoint_n3": 4158,
+    "endpoint_triangular_prisms": 0,
+    "graph_triangles": 231,
+    "hypothetical_graph": "srg(99,14,1,2)",
+    "relation_edges": 4158
+  },
+  "limitations": [
+    "The 39-vertex controls are partial induced-star controls only.",
+    "The surface control is an abstract incidence system, not a graph.",
+    "The balanced quotient is not asserted to satisfy every intersection parameter forced on the true N3 relation.",
+    "No 60-block B system, outside graph H, or 99-vertex adjacency matrix is constructed.",
+    "No automorphism or transitivity assumption is used.",
+    "The constructive finite controls prove survival of stated relaxations only, not endpoint existence.",
+    "Independent verification is required before promotion."
+  ],
+  "local_opposite_sign_controls": [
+    {
+      "certificate_sha256": "6965fb11cdec2d60971aa4428bd3c4c5ce5a462ebcaa497aabc684e49e0e741a",
+      "core_degree": 3,
+      "core_edges": 54,
+      "core_triangle_count": 0,
+      "core_vertices": 36,
+      "cross_two_factor_cycle_type": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "forced_gram_entry_range": [
+        0,
+        10
+      ],
+      "holonomy": [
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "holonomy_cycle_count": 6,
+      "holonomy_cycle_type": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "holonomy_fixed_points": 0,
+      "holonomy_sign": 1,
+      "name": "positive_six_transpositions",
+      "partial_star_common_neighbor_cap_adjacent": 1,
+      "partial_star_common_neighbor_cap_nonadjacent": 2,
+      "partial_star_common_neighbor_histogram": {
+        "adjacent_0_common_0": 288,
+        "adjacent_0_common_1": 288,
+        "adjacent_0_common_2": 72,
+        "adjacent_1_common_0": 36,
+        "adjacent_1_common_1": 57
+      },
+      "partial_star_degree_sequence": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        14,
+        14,
+        14
+      ],
+      "partial_star_vertices": 39,
+      "within_fibre_factor_indices": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "certificate_sha256": "9034c03903f6c498559e1abbded70df68fb2cc9dece9091dbd70043aba3472cf",
+      "core_degree": 3,
+      "core_edges": 54,
+      "core_triangle_count": 0,
+      "core_vertices": 36,
+      "cross_two_factor_cycle_type": [
+        36
+      ],
+      "forced_gram_entry_range": [
+        0,
+        10
+      ],
+      "holonomy": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        0
+      ],
+      "holonomy_cycle_count": 1,
+      "holonomy_cycle_type": [
+        12
+      ],
+      "holonomy_fixed_points": 0,
+      "holonomy_sign": -1,
+      "name": "negative_twelve_cycle",
+      "partial_star_common_neighbor_cap_adjacent": 1,
+      "partial_star_common_neighbor_cap_nonadjacent": 2,
+      "partial_star_common_neighbor_histogram": {
+        "adjacent_0_common_0": 294,
+        "adjacent_0_common_1": 276,
+        "adjacent_0_common_2": 78,
+        "adjacent_1_common_0": 36,
+        "adjacent_1_common_1": 57
+      },
+      "partial_star_degree_sequence": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        14,
+        14,
+        14
+      ],
+      "partial_star_vertices": 39,
+      "within_fibre_factor_indices": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "scope": "Conditional prism-free endpoint: exact rooted-triangle holonomy identities and finite local/topological controls. No SRG construction.",
+  "topological_twist_control": {
+    "balanced_quotient": {
+      "edge_face_multiplicity": 2,
+      "euler_characteristic": -693,
+      "global_holonomy_sign_product": 1,
+      "implied_holonomy_cycle_type_at_every_triangle": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "implied_holonomy_sign_at_every_triangle": 1,
+      "link_component_total_H": 1386,
+      "link_cycle_type_at_every_quotient_vertex": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "orientability": "NONORIENTABLE_FORCED_BY_CONNECTED_ODD_EULER_CHARACTERISTIC",
+      "partition_acceptance_iteration": 957,
+      "partition_seed": 133,
+      "partition_sha256": "2be1d12dc8d41dda6ee40b3cf1b74064343996a7c600c1a05b3e36fe645d5d43",
+      "quadrilateral_faces": 2079,
+      "quotient_certificate_sha256": "9b4c3023795b8717ce9c13bfdc7f19c30e93542c294ece5ca69dabdab53cc8e0",
+      "quotient_degree": 36,
+      "quotient_edges": 4158,
+      "quotient_simple": true,
+      "quotient_vertices": 231,
+      "split_surface_vertices": 1386
+    },
+    "base_surface": {
+      "edges": 6,
+      "euler_characteristic": -1,
+      "faces": 3,
+      "link_cycle_lengths": [
+        6,
+        6
+      ],
+      "side_pairings": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          11
+        ]
+      ],
+      "twist_bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "vertices": 2,
+      "voltages": [
+        [
+          6,
+          0,
+          25
+        ],
+        [
+          1,
+          2,
+          26
+        ],
+        [
+          0,
+          2,
+          11
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          5,
+          1,
+          22
+        ],
+        [
+          3,
+          1,
+          29
+        ]
+      ]
+    },
+    "regular_cover": {
+      "connected": true,
+      "edges": 4158,
+      "faces": 2079,
+      "group": "(C7 semidirect_2 C3) x C33",
+      "one_six_cycle_link_at_every_split_vertex": true,
+      "sheets": 693,
+      "simple_six_regular_bipartite_one_skeleton": true,
+      "vertices": 1386
+    }
+  }
+}

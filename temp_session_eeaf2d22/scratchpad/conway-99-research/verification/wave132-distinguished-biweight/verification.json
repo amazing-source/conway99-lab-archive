@@ -1,0 +1,194 @@
+{
+  "classification": "VERIFIED",
+  "format": "wave132-independent-verification-v1",
+  "full_genus_state_counts": {
+    "C_times_C_even_weight_states": 42925,
+    "GL2_orbits_on_C_times_C_states": 7803,
+    "raw_four_composition_states": 171700,
+    "verified": true
+  },
+  "high_weight_cut": {
+    "A94": "0",
+    "A96": "0",
+    "A98": "0",
+    "derived_integer_bound": 92,
+    "positive_image_weights_above_92": [],
+    "verified": true
+  },
+  "independence": {
+    "discovery_checker_imported": false,
+    "discovery_generator_imported": false,
+    "method": "standard-library Fraction replay with independently implemented Krawtchouk, pair, split, parity, range, and state-count formulas",
+    "solver_used": false
+  },
+  "input_freeze": {
+    "entries": 3,
+    "failures": [],
+    "verified": true
+  },
+  "integral_scout_status_safely_unknown": true,
+  "manifest": {
+    "actual_sha256": "0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c",
+    "entries": 13,
+    "expected_sha256": "0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c",
+    "failures": [],
+    "verified": true
+  },
+  "ordinary_macwilliams": {
+    "all_200_rows_verified": true,
+    "complement_symmetry_failures": [],
+    "dual_minimum_nonzero_weight": 15,
+    "dual_nonintegral_coefficient_count": 36,
+    "dual_size": "35184372088832",
+    "forced_lower_bound_failures": [],
+    "forward_failures": [],
+    "image_minimum_nonzero_weight": 14,
+    "image_nonintegral_coefficient_count": 32,
+    "image_odd_support": [],
+    "image_size": "18014398509481984",
+    "inverse_failures": [],
+    "negative_dual_weights": [],
+    "negative_image_weights": [],
+    "verified": true
+  },
+  "pair_tables": {
+    "expected": {
+      "compositions": {
+        "dual_diagonal": [
+          84,
+          0,
+          0,
+          15
+        ],
+        "dual_edge": [
+          72,
+          12,
+          12,
+          3
+        ],
+        "dual_nonedge": [
+          71,
+          13,
+          13,
+          2
+        ],
+        "image_diagonal": [
+          85,
+          0,
+          0,
+          14
+        ],
+        "image_edge": [
+          72,
+          13,
+          13,
+          1
+        ],
+        "image_nonedge": [
+          73,
+          12,
+          12,
+          2
+        ],
+        "mixed_diagonal": [
+          84,
+          1,
+          0,
+          14
+        ],
+        "mixed_off_diagonal": [
+          72,
+          13,
+          12,
+          2
+        ]
+      },
+      "counts": {
+        "diagonal": 99,
+        "ordered_edges": 1386,
+        "ordered_nonedges": 8316,
+        "ordered_off_diagonal": 9702
+      },
+      "witness_shape": {
+        "dual_closed_neighborhood_rows": {
+          "15": {
+            "intersection_15": 99
+          },
+          "ordered_distinct": {
+            "intersection_2": 8316,
+            "intersection_3": 1386
+          }
+        },
+        "image_neighborhood_rows": {
+          "14": {
+            "intersection_14": 99
+          },
+          "ordered_distinct": {
+            "intersection_1": 1386,
+            "intersection_2": 8316
+          }
+        },
+        "mixed_neighborhood_closed": {
+          "ordered_diagonal": {
+            "intersection_14": 99
+          },
+          "ordered_off_diagonal": {
+            "intersection_2": 9702
+          }
+        }
+      }
+    },
+    "verified": true
+  },
+  "promoted_claims": {
+    "distinguished_pair_compositions": "VERIFIED",
+    "high_weight_image_cut": "VERIFIED",
+    "rational_low_degree_split_feasibility": "VERIFIED"
+  },
+  "role": "verifier",
+  "split_enumerators": {
+    "families": {
+      "dual_vs_closed": {
+        "failures": [],
+        "nonintegral_entry_count": 72,
+        "row_count": 44,
+        "verified": true
+      },
+      "dual_vs_neighborhood": {
+        "failures": [],
+        "nonintegral_entry_count": 72,
+        "row_count": 44,
+        "verified": true
+      },
+      "image_vs_closed": {
+        "failures": [],
+        "nonintegral_entry_count": 64,
+        "row_count": 33,
+        "verified": true
+      },
+      "image_vs_neighborhood": {
+        "failures": [],
+        "nonintegral_entry_count": 96,
+        "row_count": 33,
+        "verified": true
+      }
+    },
+    "pair_lower_failures": [],
+    "verified": true
+  },
+  "unchanged_unknowns": {
+    "Conway_99": "UNKNOWN",
+    "binary_code_realization": "UNKNOWN",
+    "full_genus_two_MacWilliams_feasibility": "UNKNOWN",
+    "graph_realization": "UNKNOWN",
+    "integral_low_degree_split_feasibility": "UNKNOWN"
+  },
+  "wave131_strictness": {
+    "A98": "170562693352378955498780443720005/220411100178756488424348352249856",
+    "A98_matches_published_value": true,
+    "A98_positive": true,
+    "fails_wave132_forced_A98_zero": true,
+    "ordinary_MacWilliams_200_rows_pass": true,
+    "verified": true
+  }
+}

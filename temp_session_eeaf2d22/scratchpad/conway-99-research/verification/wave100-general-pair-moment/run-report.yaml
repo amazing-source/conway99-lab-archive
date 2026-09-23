@@ -1,0 +1,33 @@
+role: verifier
+date_utc: 2026-07-28T03:07:19Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: VERIFIED
+scope: >-
+  For every hypothetical srg(99,14,1,2), verify
+  N14<=2*floor((55440-5*n3)/14), counting both signs and assuming neither
+  P=0 nor rank 28.
+inputs:
+  - path: attempts/wave100-general-pair-moment/package-manifest.sha256
+    sha256: 0dedf60c7994f842887c084bae7f6585f8fc98be568c940efb5b5ea90320bc88
+  - path: verification/wave99-transition-pair-moment/package-manifest.sha256
+    sha256: 2d94086a0abef0612a445528319e1db4ef54c1fbb7fa361caef6025739aa654f
+  - path: verification/wave94-general-n3-norm14-bound/package-manifest.sha256
+    sha256: a579aa242fc11583ef38525718cc87954fd86a732032b456939d9904a90603e9
+method: >-
+  Clean-room reconstruction of the general local matching domain including
+  mate transitions; exact rootwise ceiling/floor audit for all 85 f_o
+  values; six-root prism double count; exact floor-sum parity identity;
+  coefficient substitution; antipodal rounding for all 1387 compatible
+  rows; post-freeze discovery manifest and scope comparison.
+command: >-
+  python -B -m unittest discover -s
+  verification/wave100-general-pair-moment -p "test_*.py" -v
+outputs:
+  - verification/wave100-general-pair-moment/independent-results.json
+  - verification/wave100-general-pair-moment/comparison.json
+  - verification/wave100-general-pair-moment/verification-report.md
+limitations:
+  - The theorem bounds N14 as a function of n3; it does not bound n3.
+  - It gives no N16 or N18 upper bound and no graph nonexistence result.
+  - Scalar floor arithmetic alone cannot improve the bound further.
+  - Novelty and literature priority are not assessed.

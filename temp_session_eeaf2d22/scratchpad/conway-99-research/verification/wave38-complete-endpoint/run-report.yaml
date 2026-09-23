@@ -1,0 +1,71 @@
+role: verifier
+date_utc: "2026-07-27T01:36:15Z"
+git_commit: "3014f3b1c010cdde1687b8878d4ec58d2bb90f03"
+claim_label: VERIFIED
+scope: >-
+  Independent re-audit of the hardened Wave 38 complete all-prism
+  construction, specifically candidate-bound catalog completeness,
+  source-bound pool provenance, strict schema and status validation,
+  pre-write output containment, mathematical inventory, decoded-candidate
+  oracle, and package integrity. This does not verify a target SAT or UNSAT
+  result.
+inputs:
+  - path: verification/wave38-complete-endpoint/input-freeze.sha256
+    sha256: 74229e8ede883650ca82ed9b7171d9f254a19b6ce8493e429669fbf2ee057e55
+method: >-
+  Replayed the independent triangle, prism, lambda-compression, and normalized
+  33-case derivations; exhausted all six-vertex graphs against a separate
+  oracle; attacked the hardened validators through both APIs and public
+  verify-only CLIs with missing candidate/source evidence, omitted witnesses,
+  forged digests/counts/status/scope/limitations, Boolean aliases, altered
+  literals/edges/matchings, duplicate clauses, outside output paths, and
+  colliding output paths; then performed strict manifest, run-report, schema,
+  and privacy checks.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  attempts\wave38-complete-endpoint -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave38-complete-endpoint -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  verification\wave38-complete-endpoint\independent_check.py
+outputs:
+  - path: verification/wave38-complete-endpoint/independent_check.py
+    sha256: f8efe47d4162b267110aaad57db5276654bd8c03342d4f276a60ab91f26fe6a2
+  - path: verification/wave38-complete-endpoint/test_independent_check.py
+    sha256: 9f3c6308500fc426bf658599eff2cceed10800f7f732611db98ab46991c98192
+  - path: verification/wave38-complete-endpoint/independent-results.json
+    sha256: 580fc517f7cf6b9abd662e6a554de29e56a0c42e63471716bc1aafe163428585
+  - path: verification/wave38-complete-endpoint/audit.md
+    sha256: 1591de134a352218b6a4b9d47d505e87f15a3f67337edceea3abd3ee310c337f
+  - path: verification/wave38-complete-endpoint/input-freeze.sha256
+    sha256: 74229e8ede883650ca82ed9b7171d9f254a19b6ce8493e429669fbf2ee057e55
+tests:
+  discovery:
+    passed: 12
+    failed: 0
+  independent:
+    passed: 15
+    failed: 0
+  all_six_vertex_graphs_checked: 32768
+  distinct_labelled_prism_graphs: 60
+  lambda_supergraphs_checked: 64
+  endpoint_refined_cases: 33
+  exact_residual_only_static_clauses: 24388892640
+findings:
+  fixed:
+    - W38-CE-V1
+    - W38-CE-V2
+    - W38-CE-V3
+    - W38-CE-V4
+    - W38-CE-V5
+  open: []
+package_integrity_status: PASS
+formula_status: NOT_GENERATED
+solver_status: NOT_RUN
+certificate_status: NONE
+target_status: UNKNOWN
+limitations:
+  - No target OPB formula was generated or solved.
+  - No SAT witness or UNSAT proof was produced.
+  - No complete lazy cut iteration was performed.
+  - n3=4158, an improved upper bound, Conway-99, and novelty remain UNKNOWN.

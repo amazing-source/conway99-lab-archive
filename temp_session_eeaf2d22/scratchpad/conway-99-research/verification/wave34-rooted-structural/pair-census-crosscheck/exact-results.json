@@ -1,0 +1,376 @@
+{
+  "claim_comparison": {
+    "agreements": {
+      "X11_degree": true,
+      "X11_edges": true,
+      "all_labeled_Pb_columns": true,
+      "duplicate_free_Pb_columns": true,
+      "duplicate_pair_count": true,
+      "excluded_Pb_columns": true,
+      "full_cycle_census": true,
+      "global_distribution": true,
+      "nine_allowed_states": true,
+      "row_distribution": true
+    },
+    "all_claims_reproduce": true,
+    "discrepancies": []
+  },
+  "claim_label": "VERIFIED_SCOPED",
+  "column_cycle_census": {
+    "all_labeled_Pb_columns": 574118037,
+    "columns_excluded_by_duplicate_pair_rule": 125238669,
+    "decomposition_divisibility": {
+      "1+1+1+1+1+1+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "2+1+1+1+1+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "2+2+1+1+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "2+2+2+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "3+1+1+1+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "3+2+1+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "3+2+2": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "3+3+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "4+1+1+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "4+2+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "4+3": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "5+1+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "5+2": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "6+1": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      },
+      "7": {
+        "ordered_labeled_mod_2_to_cycles": 0,
+        "ordered_underlying_mod_2_to_cycles": 0
+      }
+    },
+    "duplicate_free_Pb_columns": 448879368,
+    "duplicate_free_types": [
+      "3+2+2",
+      "4+3",
+      "5+2",
+      "7"
+    ],
+    "labeled_cycle_census": {
+      "1+1+1+1+1+1+1": 24,
+      "2+1+1+1+1+1": 4746,
+      "2+2+1+1+1": 227136,
+      "2+2+2+1": 2148384,
+      "3+1+1+1+1": 69972,
+      "3+2+1+1": 4004196,
+      "3+2+2": 18854388,
+      "3+3+1": 11738034,
+      "4+1+1+1": 920304,
+      "4+2+1": 26163837,
+      "4+3": 76574904,
+      "5+1+1": 9667812,
+      "5+2": 91117740,
+      "6+1": 70294224,
+      "7": 262332336
+    },
+    "method": "sum weighted 7x7 permanents over relative permutations; divide each k-cycle class by 2^k alternating decompositions",
+    "permutation_cycle_type_counts": {
+      "1+1+1+1+1+1+1": 1,
+      "2+1+1+1+1+1": 21,
+      "2+2+1+1+1": 105,
+      "2+2+2+1": 105,
+      "3+1+1+1+1": 70,
+      "3+2+1+1": 420,
+      "3+2+2": 210,
+      "3+3+1": 280,
+      "4+1+1+1": 210,
+      "4+2+1": 630,
+      "4+3": 420,
+      "5+1+1": 504,
+      "5+2": 504,
+      "6+1": 840,
+      "7": 720
+    },
+    "permutations_checked": 5040,
+    "raw_weight_14_columns": 193253756909160,
+    "underlying_capacity_bounded_two_factors": 4946952,
+    "underlying_cycle_census": {
+      "1+1+1+1+1+1+1": 24,
+      "2+1+1+1+1+1": 1050,
+      "2+2+1+1+1": 11592,
+      "2+2+2+1": 28350,
+      "3+1+1+1+1": 7308,
+      "3+2+1+1": 100800,
+      "3+2+2": 132300,
+      "3+3+1": 151200,
+      "4+1+1+1": 46368,
+      "4+2+1": 340200,
+      "4+3": 529200,
+      "5+1+1": 241920,
+      "5+2": 635040,
+      "6+1": 907200,
+      "7": 1814400
+    }
+  },
+  "independence": {
+    "candidate_degree_state_DP_used": false,
+    "column_count_method": "relative permutations plus weighted permanents",
+    "git_used": false,
+    "pair_census_method": "direct triangular elimination",
+    "structural_exact_check_imported_or_executed": false,
+    "structural_static_compare_imported_or_executed": false
+  },
+  "input_integrity": {
+    "all_frozen_inputs_match": true,
+    "checked_manifests": {
+      "verification/wave34-rooted-structural/comparison-artifact-manifest.sha256": {
+        "all_match": true,
+        "entries": 7,
+        "mismatches": {}
+      },
+      "verification/wave34-rooted-structural/precomparison/artifact-manifest.sha256": {
+        "all_match": true,
+        "entries": 8,
+        "mismatches": {}
+      }
+    },
+    "entry_count": 10,
+    "freeze_file_matches_constants": true,
+    "mismatches": {}
+  },
+  "limitations": [
+    "The 448879368 count is for one Pb column after one necessary duplicate-pair rule.",
+    "It does not count compatible 15-column designs.",
+    "It does not impose all pair intersections, D, D^2, projector, or binary compatibility conditions.",
+    "No binary solution or complete-domain exclusion is produced."
+  ],
+  "pair_census": {
+    "X11_graph": {
+      "degree": 6,
+      "disjoint_from_D": true,
+      "disjoint_from_offdiagonal_support_D2": true,
+      "edges": 210,
+      "regular": true,
+      "state": "g1_r1_h0_c0",
+      "vertices": 70
+    },
+    "allowed_states": [
+      "g0_r0_h0_c2",
+      "g0_r0_h1_c1",
+      "g0_r1_h0_c1",
+      "g0_r1_h1_c0",
+      "g0_r2_h0_c0",
+      "g1_r0_h0_c1",
+      "g1_r0_h1_c0",
+      "g1_r1_h0_c0",
+      "g2_r0_h0_c0"
+    ],
+    "constraint_uniqueness": "TRIANGULAR_NINE_PIVOTS",
+    "duplicate_pair_rule": {
+      "B_rows_disjoint": true,
+      "D_nonadjacent": true,
+      "degree": 1,
+      "matching": true,
+      "no_common_O_neighbour": true,
+      "pairs": 21,
+      "state": "g2_r0_h0_c0",
+      "vertices": 42
+    },
+    "global_pair_total": 2415,
+    "global_unordered_pair_distribution": {
+      "g0_r0_h0_c2": 588,
+      "g0_r0_h1_c1": 168,
+      "g0_r1_h0_c1": 840,
+      "g0_r1_h1_c0": 105,
+      "g0_r2_h0_c0": 105,
+      "g1_r0_h0_c1": 336,
+      "g1_r0_h1_c0": 42,
+      "g1_r1_h0_c0": 210,
+      "g2_r0_h0_c0": 21
+    },
+    "row_distribution_by_support_type": {
+      "support_edge": {
+        "g0_r0_h0_c2": 15,
+        "g0_r0_h1_c1": 6,
+        "g0_r1_h0_c1": 24,
+        "g0_r1_h1_c0": 3,
+        "g0_r2_h0_c0": 3,
+        "g1_r0_h0_c1": 12,
+        "g1_r0_h1_c0": 0,
+        "g1_r1_h0_c0": 6,
+        "g2_r0_h0_c0": 0
+      },
+      "support_nonedge_copy": {
+        "g0_r0_h0_c2": 18,
+        "g0_r0_h1_c1": 4,
+        "g0_r1_h0_c1": 24,
+        "g0_r1_h1_c0": 3,
+        "g0_r2_h0_c0": 3,
+        "g1_r0_h0_c1": 8,
+        "g1_r0_h1_c0": 2,
+        "g1_r1_h0_c0": 6,
+        "g2_r0_h0_c0": 1
+      }
+    },
+    "triangular_elimination_order": [
+      "g2_r0_h0_c0",
+      "g0_r2_h0_c0",
+      "g1_r0_h1_c0",
+      "g0_r1_h1_c0",
+      "g1_r1_h0_c0",
+      "g0_r1_h0_c1",
+      "g1_r0_h0_c1",
+      "g0_r0_h1_c1",
+      "g0_r0_h0_c2"
+    ]
+  },
+  "role": "independent_pair_census_cross_verifier",
+  "schema_version": 1,
+  "scope": "Wave 34 Stage-1 rooted O-pair census and its duplicate-free single-Pb-column consequence only",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "X11_graph": "VERIFIED_SCOPED",
+    "binary_D_B_solution": "UNKNOWN",
+    "compatible_15_column_design": "UNKNOWN",
+    "duplicate_free_Pb_column_count": "VERIFIED_SCOPED",
+    "duplicate_pair_rule": "VERIFIED_SCOPED",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "pair_state_census": "VERIFIED_SCOPED",
+    "rooted_endpoint": "UNKNOWN",
+    "rooted_graph_extension_or_exclusion": "UNKNOWN"
+  },
+  "support_reconstruction": {
+    "capacities": [
+      [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1
+      ]
+    ],
+    "capacity_histogram": {
+      "1": 28,
+      "2": 21
+    },
+    "column_degree_set": [
+      2
+    ],
+    "diag_DT_by_type": {
+      "support_cross_nonedge_completion": 2,
+      "support_edge_completion": 0
+    },
+    "g_profiles": {
+      "support_cross_nonedge_completion": {
+        "0": 52,
+        "1": 16,
+        "2": 1
+      },
+      "support_edge_completion": {
+        "0": 51,
+        "1": 18
+      }
+    },
+    "incidence_shape": [
+      14,
+      70
+    ],
+    "row_degree_set": [
+      10
+    ],
+    "type_counts": {
+      "support_cross_nonedge_completion": 42,
+      "support_edge_completion": 28
+    }
+  },
+  "verdict": "PASS"
+}

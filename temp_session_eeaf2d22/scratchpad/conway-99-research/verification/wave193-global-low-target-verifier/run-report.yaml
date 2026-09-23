@@ -1,0 +1,55 @@
+role: verifier
+date_utc: 2026-07-29T03:23:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free rank-11 endpoint: split raw assignments by source
+  and exact multiplicity; force exact-one/exact-three residuals from
+  type-one and type-three exact-two raws; combine exact-three unused-label
+  flow with one privacy-free low leaf target per selected-type-three label;
+  and verify 117Q>=177C, hence Q>=6291.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  attempts/wave193-global-low-target-proof-a/package-manifest.sha256: 0c6262b857d189c61d2ce4a9ea1804fbad4706727af29c4b1e011e44960060be
+  verification/wave181-c4-conic-equality/package-manifest.sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+  verification/wave188-affine-star-word-amplification-verifier/package-manifest.sha256: e58bd132b1e1579f5e4e6570d7e0b4318a6c5f970342d4b9493e0c35a3c0dc74
+  verification/wave189-degree7-star-orbit-verifier/package-manifest.sha256: fc17484bd8c32a5886ecdcc65d153903cef5f3b60a3de1c9905ed96697c273c4
+  verification/wave191-exact-three-residual-verifier/package-manifest.sha256: a14f43310fb5ead05c4bd50b376f3d9d90ec77a92bc00f8c3b7326013f975ab2
+method: >-
+  Clean-room split-variable reconstruction frozen before source inspection;
+  affine circuit elimination in both type-one exact-two branches; Wave181
+  exact-two uniqueness; old exact-three unused-label capacity; companion
+  closure; privacy-free one-target-per-label selection; complete low-circuit
+  inventory; and exact rational coefficient verification. No graph, code,
+  cover, SAT, LP, configuration, enumeration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave193-global-low-target-verifier\independent_check.py
+  --verify-math
+  verification\wave193-global-low-target-verifier\independent-math-result.json;
+  .\.venv\Scripts\python.exe -B
+  verification\wave193-global-low-target-verifier\independent_check.py
+  --verify
+  verification\wave193-global-low-target-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave193-global-low-target-verifier\test_independent_check.py
+outputs:
+  - verification/wave193-global-low-target-verifier/README.md
+  - verification/wave193-global-low-target-verifier/audit.md
+  - verification/wave193-global-low-target-verifier/protocol.md
+  - verification/wave193-global-low-target-verifier/independent_check.py
+  - verification/wave193-global-low-target-verifier/independent-math-result.json
+  - verification/wave193-global-low-target-verifier/independent-result-freeze.sha256
+  - verification/wave193-global-low-target-verifier/independent-results.json
+  - verification/wave193-global-low-target-verifier/test_independent_check.py
+  - verification/wave193-global-low-target-verifier/input-freeze.sha256
+limitations:
+  - The theorem is conditional on the prism-free rank-11 endpoint.
+  - The bound supplies no incompatible upper bound and does not exclude
+    rank 11 or endpoint existence.
+  - The independent and source Q=6291 rows are arithmetic controls only.
+  - No graph, code, cover, or circuit family is constructed.
+  - The circuit-only scalar bound 13968 remains weaker than Wave188's
+    18018 all-short-word bound.
+  - Strict improvement of the original graph parameter n3 is not obtained.
+  - External novelty and Conway-99 remain UNKNOWN.

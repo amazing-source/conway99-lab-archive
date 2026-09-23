@@ -1,0 +1,47 @@
+role: verifier
+date_utc: 2026-07-28T09:45:22Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: VERIFIED
+scope: >-
+  Independent conditional verification of the sealed Wave141 bivariate
+  graph-code marginals, symplectic transform convention, D8 equality
+  dimension and ranks, exact low rows, frozen Wave21 4/5/6 graph/deck
+  alignments, and signed shells S0 through S6; numerical optimization and
+  Conway-99 excluded.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: attempts/wave141-bivariate-graph-code/package-manifest.sha256
+    sha256: 75933cca692f2678bdd74190290b91eb13f6492fce52bc88e896ef7485fe06f8
+  - path: attempts/wave21-six-vertex-lp/exact_check.py
+    sha256: 0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+method: >-
+  Froze and replayed the final nine-entry Wave141 package; proved the
+  symplectic transform independently; exhaustively tested it on K3 and K5;
+  computed small exact equality ranks and the target D8 Burnside traces;
+  statically extracted frozen deck literals without executing supplied code;
+  independently enumerated and aligned all local graph classes and decks;
+  descended the six-class affine census to S0 through S6; derived low rows
+  and attacked numerical and nonnegativity claims.
+command: >-
+  python -B attempts/wave141-bivariate-graph-code/exact_check.py --verify;
+  python -B -m unittest discover -s
+  attempts/wave141-bivariate-graph-code -p "test_*.py" -v; python -B
+  verification/wave141-bivariate-graph-code/independent_verify.py; python
+  -B -m unittest discover -s
+  verification/wave141-bivariate-graph-code -p "test_*.py" -v
+outputs:
+  - path: verification/wave141-bivariate-graph-code/independent_verify.py
+    sha256: 47ba50aa6fca1dc3b4983d6e06166d303ab1286191e0a63daab5512196647fd6
+  - path: verification/wave141-bivariate-graph-code/test_independent_verify.py
+    sha256: a5aed26973678709acd51f83297e6e84159d64a561984bc7ec4e03381ecc4580
+  - path: verification/wave141-bivariate-graph-code/verification-results.json
+    sha256: 87299777cc81f2ea392989c67f36de826cbc5349e010a6771b5fc3f029daf294
+limitations:
+  - S0 through S6 are conditional on the frozen and previously verified Wave21 census.
+  - Full output weights for arbitrary six-vertex classes are not derived.
+  - No exact rational primal or Farkas dual is supplied by the numerical scout.
+  - The equality space is not a nonnegative or integral realization.
+  - Formal feasibility, graph existence, Conway-99, and novelty remain UNKNOWN.

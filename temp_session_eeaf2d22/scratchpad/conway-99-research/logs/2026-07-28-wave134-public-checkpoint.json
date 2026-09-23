@@ -1,0 +1,56 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-28T08:11:06Z",
+  "format": "conway99-wave134-public-checkpoint-v1",
+  "git_base_commit": "aef7b93124f8caeb1a7487f58289436bc4118880",
+  "manifests": {
+    "wave130_discovery": "8b1da27e3acaa059934704a85aaa380e101e1db330925ced6e048330d318e3ae",
+    "wave130_verification": "5d1aed1c539901077a709ca57e759d71676e432fa31dd80cadf990df7d1a9a8e",
+    "wave132_discovery": "0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c",
+    "wave132_verification": "a49d3686fe7ec985f973b198529da97530931b186ca0e166a1f81d73b77a8a26",
+    "wave133_discovery": "dae34acdfd3a95c99db79567bf9b8ed20aa1423812dcb4dbe7681730b6d9870a",
+    "wave133_verification": "96081553148ba8bac3aafdb17a705e2764621e6ffc8aa2373cf77181939f23a9",
+    "wave134_discovery": "581678d37091754f4bf1f197223a120d82f3051020a45b601e84889dfdad81e9",
+    "wave134_verification": "7fc68ba875d7fdc31dd03584d95bd7f80e7ddec01d9c247ce351ac4b4ae6a858"
+  },
+  "prior_checkpoint": "logs/2026-07-27-wave65-public-checkpoint.json",
+  "results": {
+    "wave130_cutoff28_jacobi": {
+      "equalities": 454,
+      "inequalities": 1686,
+      "rational_feasible": true,
+      "tight_inequalities": 506
+    },
+    "wave132_distinguished_binary": {
+      "forced_zero_weights": [94, 96, 98],
+      "full_genus_two_feasibility": "UNKNOWN",
+      "integral_feasibility": "UNKNOWN",
+      "rational_split_feasible": true
+    },
+    "wave133_holonomy": {
+      "endpoint_excluded": false,
+      "global_sign_identity_verified": true,
+      "nonorientable_surface_control_verified": true
+    },
+    "wave134_quaternary": {
+      "allowed_dual_orbits": 1114,
+      "corrected_integral_feasibility": "UNKNOWN_NOT_RUN",
+      "corrected_rational_feasibility": "UNKNOWN_NOT_RUN",
+      "dual_forced_compositions": 44,
+      "dual_forced_words": 4126784,
+      "forbidden_dual_orbits": 161,
+      "primal_forced_compositions": 84,
+      "primal_forced_words": 8557760,
+      "primal_orbits": 1119,
+      "prepublication_verifier_vetoes": 2
+    }
+  },
+  "status": "VERIFIED_SCOPED",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

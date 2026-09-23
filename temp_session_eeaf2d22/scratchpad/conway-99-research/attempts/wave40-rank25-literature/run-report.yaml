@@ -1,0 +1,45 @@
+role: literature
+date_utc: "2026-07-27T03:45:58Z"
+git_commit: "6b28af70c67f062d687251494a047debe70a246f"
+claim_label: UNKNOWN
+scope: >-
+  Bounded primary-source literature and priority audit for the universal
+  necessary condition rank_F7(M)=rank_F7(J-I-2A)>=25 for a hypothetical
+  srg(99,14,1,2), where M=21E0 is the integral triangle-projector matrix.
+inputs:
+  - path: verification/wave40-exact-coupling-model/README.md
+    sha256: 33201f7cac66df7c65f254d0c3b054cd17cfa67ae54b67cbc5032bee299b924e
+  - path: verification/wave40-exact-coupling-model/run-report.yaml
+    sha256: 128bea1e5f7ff347f13e435888d62a6272ebe0968a5f8dc6a0eb2ba22fb99177
+  - path: verification/wave40-exact-coupling-model/independent-results.json
+    sha256: ff7916d0f5c74c47c8d7787c5cbcc84785cbccd3644d8d03d73e47b73908c0f5
+method: >-
+  Froze the exact claim and algebraic/local aliases; searched primary Conway
+  papers, dissertations, SAT work, p-rank and Smith-form literature,
+  triangle-incidence and finite-field Seidel work; inspected pinned public
+  repositories; classified exact and near overlaps conservatively.
+command: >-
+  Exact web queries, GitHub commands, pinned URLs, PDF aliases, and
+  dispositions are recorded in query-log.json.
+outputs:
+  - path: agents/2026-07-27-wave40-rank25-literature.md
+    sha256: 7a53b6bf3fc5dbb9a063812a9749b7d084ad05511cdcbed17ee48d75c4811ebc
+  - path: attempts/wave40-rank25-literature/README.md
+    sha256: d9aa72a4b2ab74081a87367d7e8b140bdebb6dff61c0a4df3d5f9093381a2987
+  - path: attempts/wave40-rank25-literature/source-ledger.json
+    sha256: 0d91c5684cda5aae56b7f29a967cf9e3d546677b965ed725bb1721dc296669d7
+  - path: attempts/wave40-rank25-literature/query-log.json
+    sha256: 9c1349333ed93e12562d0e92e605c98bc887b14c66642bb1c96cdfd1d64d196a
+  - path: attempts/wave40-rank25-literature/input-freeze.sha256
+    sha256: 336c4c820054ed9ea2fd8f72608c6717a1c659d8b33cdcfc41e6b274a4335134
+limitations:
+  - Search ranking, terminology, access, indexing, language, and posting delays may hide relevant work.
+  - No nonhit establishes novelty, priority, openness, or nonexistence.
+  - The Gray Taylor notebook establishes prior art for the local 27-point and 11-type scaffold, so that scaffold cannot be claimed as new.
+  - This audit did not independently verify the Wave 40 mathematics; it audited the already verified statement as frozen input.
+  - Private code, unpublished manuscripts, and unindexed theses were outside the bounded corpus.
+verdict:
+  exact_equivalent_located: false
+  exact_local_scaffold_prior_art: true
+  novelty: UNKNOWN
+  priority: UNKNOWN

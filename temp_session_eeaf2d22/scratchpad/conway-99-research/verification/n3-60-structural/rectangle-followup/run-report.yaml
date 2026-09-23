@@ -1,0 +1,56 @@
+role: verifier
+date_utc: "2026-07-23T13:53:47Z"
+git_commit: "f16ec3d49e5e7f7fde0a8f20ea324d6f49c5b24c"
+claim_label: DERIVED
+scope: >-
+  Independent GF(2) rank/nullity consequences of the m=30 identity
+  N A_R N^T=2A_L, including the component bound, exact R-cycle nullity
+  formula, cycle-type counts, and the nonbipartite necessary refinement.
+inputs:
+  "verification/n3-60-structural/preinspection-freeze.md":
+    sha256: "983f90c1d150c6e14e5e2bc7a010e1a3809848ddb1e4b825e5fdfac70398d6af"
+  "verification/2026-07-23-wave15-global-lift-audit.md":
+    sha256: "edda3785d080db464028f10c22bcae5c0bf17f1e61432a8641bfa6ffdccab036"
+  "verification/2026-07-23-wave16-n3-51-structural-audit.md":
+    sha256: "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6"
+  "agents/2026-07-23-wave19-n3-60-structural.md":
+    sha256: "b2f90af07f34a6525ea35cdf4d392d95aea10fc319633cd17037d00145690744"
+method: >-
+  Used independent dense-row and integer-bitset Gaussian elimination over
+  GF(2). Treated im(N^T) as the cut space, projected its totally isotropic
+  image through the radical of A_R, and enumerated all 331 integer
+  partitions of 30 into cycle lengths at least three. Recomputed each cycle
+  adjacency nullity directly. Checked the all-one cut-space criterion on
+  bipartite K3,3 and nonbipartite Petersen controls.
+command: |
+  .venv\Scripts\python.exe -B verification\n3-60-structural\rectangle-followup\check.py --output verification\n3-60-structural\rectangle-followup\results.json
+  .venv\Scripts\python.exe -B verification\n3-60-structural\rectangle-followup\check.py --verify verification\n3-60-structural\rectangle-followup\results.json
+outputs:
+  "verification/n3-60-structural/rectangle-followup/check.py":
+    sha256: "679f3fdc03a8ae092913731cde4fe77c7aefd1b0cb3cb636ecb72ffede54186a"
+  "verification/n3-60-structural/rectangle-followup/results.json":
+    sha256: "310603bee42385b49e0df434370f03195a04b0d3b6e8d7fe8a8bba427e8802d2"
+results:
+  deterministic_replay: PASS_BYTE_IDENTICAL
+  cycle_types_total: 331
+  necessary_cycle_type_counts:
+    "c=1": 147
+    "c=2": 263
+    "c=3": 323
+  nonbipartite_refinement_counts:
+    "c=1": 55
+    "c=2": 147
+    "c=3": 263
+  base_bound: "nullity(A_R)>=10-2c(F)"
+  nonbipartite_necessary_bound: "nullity(A_R)>=12-2c(F)"
+  maximum_F_component_count: 3
+  m30_status: UNKNOWN
+limitations: >-
+  These are necessary conditions only. Cycle type does not encode the
+  placement of F-edges around R, and no feasibility or nonexistence claim
+  follows. No graph scout, catalog, automorphism restriction, SAT/ILP
+  result, or solver status is evidence here. The m=30 residual and
+  conditional n3=60 remain UNKNOWN and UNKNOWN_FINITE_RESIDUAL respectively.
+  No Git command or prohibited later-wave input was used. The commit value
+  was observed earlier by direct .git/HEAD/ref reading; hashes pin the
+  actual inputs and outputs.

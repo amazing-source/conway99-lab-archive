@@ -1,0 +1,53 @@
+role: verifier
+date_utc: 2026-07-23T21:55:49Z
+git_commit: 7103ddfe755a8c3430ef79e9a76e3323f1e00e1d
+claim_label: VERIFIED
+scope: >-
+  Conditional Wave 25 strictness at n3=708: exclude tr(C^2)=8 via the
+  rank-36 kernel even-unimodular obstruction, prove tr(C^2)>=10 and
+  tr(B^2)>=116, and combine strictness with the frozen index constraints to
+  obtain det(B)<=6525. Preserve the abstract h=9 survivor. Do not exclude
+  n3=708 or resolve the target.
+inputs:
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave23-index-pranks/2026-07-23T192952Z-audit.md
+    sha256: bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116
+  - path: verification/wave23-endpoint-crosscheck/2026-07-23T200645Z-correction-audit.md
+    sha256: 791d74340c8a84a9993f9a5179c66baf0b2f7e431df5fb7eda2f593195f9bf53
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  - path: verification/wave24-n3-708-index/independent-results.json
+    sha256: 726807402388c02909171a689f3a7fe2d8d1b74307c24e322ae013d0a9cd486a
+  - path: verification/wave24-n3-708-index/survivor-certificate.json
+    sha256: a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2
+method: >-
+  Frozen-input hash gate; discovery-independent exact reconstruction;
+  integral-idempotent and G-orthogonal splitting; contragredient scaled-dual
+  basis calculation; rank-36 even-unimodular signature veto; trace parity;
+  complete 3,7-smooth determinant enumeration; four hostile premise
+  relaxations; exact E8/A2 survivor reconstruction; eighteen tests.
+command: |-
+  cd verification/wave25-n3-708-strictness
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json
+outputs:
+  - path: verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md
+    sha256: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+  - path: verification/wave25-n3-708-strictness/preinspection-freeze.sha256
+    sha256: a7d3bc3cdb34bd28ab22953db8891af873c82f42fcccb27fb5d104c45749cd10
+  - path: verification/wave25-n3-708-strictness/independent_check.py
+    sha256: 82c5c3078e34129927971838677fef1cdc54fef37972b4c88d6927506fcbf510
+  - path: verification/wave25-n3-708-strictness/test_independent_check.py
+    sha256: b05ec28acb49f0f6a5667b98a1f0578d98a3f81c7fb6a730c49b5902bed65d93
+  - path: verification/wave25-n3-708-strictness/independent-results.json
+    sha256: 8c147d7b9da422c9d9b3d646015d95d737efc57d81964fabb3b33574a1d69f77
+limitations:
+  - The result is conditional on the six frozen public premise artifacts.
+  - The cap 6525 is a combined arithmetic consequence, not a standalone
+    strengthening of the pointwise logarithmic inequality.
+  - The h=9 survivor is an abstract coordinate-lattice package only.
+  - No primitive embedding, projector/Hadamard, Schur-square, 231-vector, or
+    graph origin is proved.
+  - The endpoint n3=708 remains unexcluded.
+  - Target existence and novelty remain UNKNOWN.

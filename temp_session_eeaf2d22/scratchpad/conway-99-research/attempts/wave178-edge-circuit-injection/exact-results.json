@@ -1,0 +1,113 @@
+{
+  "all_eligible_words_even_and_balanced": true,
+  "conclusion": "edge-local support multiplicity is at most one; the local Gram classification forces even balanced profiles; no endpoint exclusion follows",
+  "cycle_types": {
+    "2+2+2": {
+      "eligible_word_count": 18,
+      "gram_kernel_dimension": 4,
+      "profiles": [
+        {
+          "coefficient_1_count": 2,
+          "coefficient_2_count": 2,
+          "coefficient_sum_mod_3": 0,
+          "left_support": 2,
+          "right_support": 2,
+          "weight": 4,
+          "word_count": 6
+        },
+        {
+          "coefficient_1_count": 4,
+          "coefficient_2_count": 4,
+          "coefficient_sum_mod_3": 0,
+          "left_support": 4,
+          "right_support": 4,
+          "weight": 8,
+          "word_count": 12
+        }
+      ],
+      "vectors_inspected": 81
+    },
+    "3+3": {
+      "eligible_word_count": 52,
+      "gram_kernel_dimension": 5,
+      "profiles": [
+        {
+          "coefficient_1_count": 2,
+          "coefficient_2_count": 2,
+          "coefficient_sum_mod_3": 0,
+          "left_support": 2,
+          "right_support": 2,
+          "weight": 4,
+          "word_count": 12
+        },
+        {
+          "coefficient_1_count": 3,
+          "coefficient_2_count": 3,
+          "coefficient_sum_mod_3": 0,
+          "left_support": 3,
+          "right_support": 3,
+          "weight": 6,
+          "word_count": 4
+        },
+        {
+          "coefficient_1_count": 4,
+          "coefficient_2_count": 4,
+          "coefficient_sum_mod_3": 0,
+          "left_support": 4,
+          "right_support": 4,
+          "weight": 8,
+          "word_count": 36
+        }
+      ],
+      "vectors_inspected": 243
+    },
+    "4+2": {
+      "eligible_word_count": 4,
+      "gram_kernel_dimension": 3,
+      "profiles": [
+        {
+          "coefficient_1_count": 2,
+          "coefficient_2_count": 2,
+          "coefficient_sum_mod_3": 0,
+          "left_support": 2,
+          "right_support": 2,
+          "weight": 4,
+          "word_count": 2
+        },
+        {
+          "coefficient_1_count": 4,
+          "coefficient_2_count": 4,
+          "coefficient_sum_mod_3": 0,
+          "left_support": 4,
+          "right_support": 4,
+          "weight": 8,
+          "word_count": 2
+        }
+      ],
+      "vectors_inspected": 27
+    },
+    "6": {
+      "eligible_word_count": 6,
+      "gram_kernel_dimension": 3,
+      "profiles": [
+        {
+          "coefficient_1_count": 4,
+          "coefficient_2_count": 4,
+          "coefficient_sum_mod_3": 0,
+          "left_support": 4,
+          "right_support": 4,
+          "weight": 8,
+          "word_count": 6
+        }
+      ],
+      "vectors_inspected": 27
+    }
+  },
+  "dual_distance_lower": 4,
+  "dual_word_bound": "B_4+B_6+B_8>=1386",
+  "edge_count": 693,
+  "field": 3,
+  "graph_degree": 14,
+  "graph_vertex_count": 99,
+  "projective_circuit_lower_bound": 693
+}

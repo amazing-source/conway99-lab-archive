@@ -1,0 +1,326 @@
+{
+  "audit": "wave25-literature-audit",
+  "plan_frozen_utc": "2026-07-23T21:49:09Z",
+  "frozen_search_window_utc": {
+    "start": "2026-07-23T21:49:09Z",
+    "end": "2026-07-23T21:52:01Z"
+  },
+  "engine": "OpenAI web search interface",
+  "query_count": 30,
+  "exact_target_matches": 0,
+  "result_counts_exposed": false,
+  "status_labels": {
+    "target_existence": "UNKNOWN",
+    "exact_refinement_novelty": "UNKNOWN"
+  },
+  "queries": [
+    {
+      "id": "Q01",
+      "query": "\"srg(99,14,1,2)\" \"n3\" 708",
+      "candidate_source_ids": ["S03", "S04"],
+      "exact_match_found": false,
+      "note": "Relevant n3 literature appeared, but no 708 occurrence or equality-case mechanism."
+    },
+    {
+      "id": "Q02",
+      "query": "\"strongly regular graph\" \"99,14,1,2\" 708",
+      "candidate_source_ids": ["S01", "S03", "S04"],
+      "exact_match_found": false,
+      "note": "Returned target literature and status sources, not the numerical refinement."
+    },
+    {
+      "id": "Q03",
+      "query": "\"Conway 99 graph\" 708 determinant",
+      "candidate_source_ids": ["S01", "S06"],
+      "exact_match_found": false,
+      "note": "No result connected 708 to a determinant argument."
+    },
+    {
+      "id": "Q04",
+      "query": "\"Conway 99-graph\" \"det(B)\"",
+      "candidate_source_ids": ["S01"],
+      "exact_match_found": false,
+      "note": "No target-context det(B) result."
+    },
+    {
+      "id": "Q05",
+      "query": "\"srg(99,14,1,2)\" \"6525\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant result."
+    },
+    {
+      "id": "Q06",
+      "query": "\"Conway 99 graph\" \"6525\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant result."
+    },
+    {
+      "id": "Q07",
+      "query": "\"det(B) <= 6525\" graph",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "Only unrelated determinant material surfaced."
+    },
+    {
+      "id": "Q08",
+      "query": "\"det B\" 6525 lattice graph",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "Only unrelated lattice and graph material surfaced."
+    },
+    {
+      "id": "Q09",
+      "query": "\"9,21,49,81,189,441,729,1029\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No mathematical source containing the exact eight-value fingerprint."
+    },
+    {
+      "id": "Q10",
+      "query": "\"1029\" \"729\" \"441\" \"strongly regular\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant target-context result."
+    },
+    {
+      "id": "Q11",
+      "query": "\"srg(99,14,1,2)\" \"even unimodular\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No source joined the exact graph target to an even-unimodular argument."
+    },
+    {
+      "id": "Q12",
+      "query": "\"Conway 99 graph\" \"even unimodular\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant result."
+    },
+    {
+      "id": "Q13",
+      "query": "\"99,14,1,2\" \"rank 36\" lattice",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No target-context rank-36 lattice obstruction."
+    },
+    {
+      "id": "Q14",
+      "query": "\"99,14,1,2\" \"integral idempotent\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant result."
+    },
+    {
+      "id": "Q15",
+      "query": "\"Conway 99 graph\" \"integral idempotent\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant result."
+    },
+    {
+      "id": "Q16",
+      "query": "\"Conway 99 graph\" \"orthogonal split\" lattice",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant result."
+    },
+    {
+      "id": "Q17",
+      "query": "\"n3=708\" \"even unimodular\"",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant result."
+    },
+    {
+      "id": "Q18",
+      "query": "\"n_3=708\" strongly regular",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No relevant result."
+    },
+    {
+      "id": "Q19",
+      "query": "\"rank 36\" \"det(B)\" idempotent",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No target-context result."
+    },
+    {
+      "id": "Q20",
+      "query": "\"rank 36\" \"self-adjoint idempotent\" lattice",
+      "candidate_source_ids": [],
+      "exact_match_found": false,
+      "note": "No target-context result."
+    },
+    {
+      "id": "Q21",
+      "query": "\"strongly regular graph (99,14,1,2)\" existence",
+      "candidate_source_ids": ["S01", "S02", "S09"],
+      "exact_match_found": false,
+      "note": "Current sources describe existence as open, unknown, or undecided."
+    },
+    {
+      "id": "Q22",
+      "query": "\"Conway's 99-graph problem\" open",
+      "candidate_source_ids": ["S01", "S02", "S09"],
+      "exact_match_found": false,
+      "note": "Current sources describe the problem as unresolved."
+    },
+    {
+      "id": "Q23",
+      "query": "\"99-graph problem\" Conway strongly regular latest",
+      "candidate_source_ids": ["S01", "S04", "S05", "S09"],
+      "exact_match_found": false,
+      "note": "Recent target papers were found; none contained the Wave 25 fingerprints."
+    },
+    {
+      "id": "Q24",
+      "query": "site:win.tue.nl strongly regular 99 14 1 2",
+      "candidate_source_ids": ["S02"],
+      "exact_match_found": false,
+      "note": "The current Brouwer table marks the parameter set with '?'."
+    },
+    {
+      "id": "Q25",
+      "query": "site:arxiv.org \"99,14,1,2\" strongly regular",
+      "candidate_source_ids": ["S01", "S03", "S04", "S05", "S06"],
+      "exact_match_found": false,
+      "note": "Relevant arXiv records were inspected; no exact refinement match."
+    },
+    {
+      "id": "Q26",
+      "query": "\"integral idempotent\" orthogonal decomposition lattice",
+      "candidate_source_ids": ["S07", "S10"],
+      "exact_match_found": false,
+      "note": "Conceptual lattice/projection literature only; no Conway-99 boundary calculation."
+    },
+    {
+      "id": "Q27",
+      "query": "\"integral self-adjoint idempotent\" lattice",
+      "candidate_source_ids": ["S07", "S10"],
+      "exact_match_found": false,
+      "note": "No exact target use; the splitting implication is standard algebra."
+    },
+    {
+      "id": "Q28",
+      "query": "positive definite even unimodular lattice rank divisible by 8",
+      "candidate_source_ids": ["S08"],
+      "exact_match_found": false,
+      "note": "Conceptual prior art for the rank-divisibility obstruction was found."
+    },
+    {
+      "id": "Q29",
+      "query": "\"rational idempotent\" lattice projector Gram matrix",
+      "candidate_source_ids": ["S07"],
+      "exact_match_found": false,
+      "note": "Bacher-Venkov gives rational-idempotent integral Gram lattice constructions, not the exact target calculation."
+    },
+    {
+      "id": "Q30",
+      "query": "Bacher Venkov rational idempotent lattices",
+      "candidate_source_ids": ["S07"],
+      "exact_match_found": false,
+      "note": "Direct conceptual prior art found; no exact Conway-99 or n3=708 match."
+    }
+  ],
+  "inspected_sources": [
+    {
+      "id": "S01",
+      "tier": "primary_peer_reviewed",
+      "citation": "Patrick G. Cesarz and Andrew J. Woldar, On the automorphism group of a putative Conway 99-graph, Algebraic Combinatorics 8 (2025), 379-398",
+      "url": "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+      "inspected_for": ["current target status", "recent target-specific restrictions"],
+      "finding": "Published online 2025-04-24; explicitly calls existence an elusive open problem; no Wave 25 numerical or lattice fingerprint."
+    },
+    {
+      "id": "S02",
+      "tier": "authoritative_status_table",
+      "citation": "Andries E. Brouwer, Parameters of Strongly Regular Graphs, orders 51-100",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+      "inspected_for": ["current parameter-set status"],
+      "finding": "The row 99,14,1,2 is marked '?', i.e. undecided in the table legend/context."
+    },
+    {
+      "id": "S03",
+      "tier": "primary_peer_reviewed",
+      "citation": "Reimbay Reimbayev, The lower bound for number of hexagons in strongly regular graphs with parameters lambda=1 and mu=2, EJAAM 2024",
+      "url": "https://ejaam.org/articles/2024/10.62780-ejaam-2024-001.pdf",
+      "inspected_for": ["origin and meaning of n3", "closest numerical precursor"],
+      "finding": "Derives hexagon count as a baseline plus n3 and uses only n3>=0; contains no 708, determinant ceiling, idempotent split, or rank-36 obstruction."
+    },
+    {
+      "id": "S04",
+      "tier": "primary_preprint",
+      "citation": "Reimbay Reimbayev, The Subgraphs of Order Six of the Family of Strongly Regular Graphs with Parameters lambda=1 and mu=2, arXiv:2508.03377v2",
+      "url": "https://arxiv.org/pdf/2508.03377",
+      "inspected_for": ["current n3 treatment", "exact fingerprint checks"],
+      "finding": "Uses n3 as a free variable. Full-text searches found no 708, idempotent, unimodular, or determinant occurrence."
+    },
+    {
+      "id": "S05",
+      "tier": "primary_preprint",
+      "citation": "Robert R. Petro and Connor M. Phillips, On Clique Graphs and Clique Regular Graphs, arXiv:2502.17845",
+      "url": "https://arxiv.org/abs/2502.17845",
+      "inspected_for": ["recent Conway-99 application"],
+      "finding": "Gives clique-graph restrictions and still describes the existence question as longstanding; no Wave 25 mechanism."
+    },
+    {
+      "id": "S06",
+      "tier": "primary_peer_reviewed",
+      "citation": "Joshua E. Ducey et al., Critical group structure from the parameters of a strongly regular graph, JCTA 180 (2021), 105424",
+      "url": "https://arxiv.org/abs/1910.07686",
+      "inspected_for": ["target-specific lattice and arithmetic prior art"],
+      "finding": "Computes the putative graph's critical group from its parameters; no n3=708 equality-case argument or determinant ceiling."
+    },
+    {
+      "id": "S07",
+      "tier": "primary_peer_reviewed",
+      "citation": "Roland Bacher and Boris Venkov, Lattices and association schemes: a unimodular example without roots in dimension 28, Annales de l'Institut Fourier 45 (1995), 1163-1176",
+      "url": "https://www.numdam.org/item/10.5802/aif.1490.pdf",
+      "inspected_for": ["rational projector and idempotent lattice prior art"],
+      "finding": "Section 2 constructs integral Gram matrices and lattices from rational minimal idempotents of association schemes; conceptual prior art, not an exact target match."
+    },
+    {
+      "id": "S08",
+      "tier": "primary_author_manuscript",
+      "citation": "Ichiro Shimada, An even extremal lattice of rank 64",
+      "url": "https://home.hiroshima-u.ac.jp/ichiro-shimada/preprints/Extremal64/PaperGQR/shimadaLat64.pdf",
+      "inspected_for": ["even-unimodular rank divisibility theorem"],
+      "finding": "States the standard fact that an even unimodular lattice has rank divisible by 8; this rules out positive-definite rank 36 once such a lattice is rigorously obtained."
+    },
+    {
+      "id": "S09",
+      "tier": "primary_peer_reviewed",
+      "citation": "R. Ibrahim et al., 2-percolation in diameter 2 graphs, Australasian Journal of Combinatorics 93 (2025), 60-89",
+      "url": "https://ajc.maths.uq.edu.au/pdf/93/ajc_v93_p060.pdf",
+      "inspected_for": ["independent recent target status"],
+      "finding": "Explicitly says it is unknown whether an srg(99,14,1,2) exists."
+    },
+    {
+      "id": "S10",
+      "tier": "primary_manuscript",
+      "citation": "Andrew Berget, Andrew Manion, Molly Maxwell, Aaron Potechin, and Victor Reiner, The critical group of a regular line graph",
+      "url": "https://www-users.cse.umn.edu/~reiner/REU/line_crit.pdf",
+      "inspected_for": ["rational orthogonal decomposition and projector-lattice context"],
+      "finding": "Develops rational orthogonal decompositions, projection maps, determinant groups, and integral Gram presentations in graph-lattice settings; conceptual rather than exact target prior art."
+    }
+  ],
+  "access_notes": [
+    "The DOI landing page for the EJAAM article initially returned an internal fetch error; the journal-hosted PDF was subsequently found and inspected.",
+    "The legacy win.tue.nl Brouwer-table URL failed; the current aeb.win.tue.nl URL was opened successfully.",
+    "The ScienceDirect full-text page for the critical-group paper returned HTTP 403; the author/arXiv version and indexed journal record were used.",
+    "Search-result counts were not exposed by the engine and therefore are recorded as null rather than estimated."
+  ],
+  "adjudication": {
+    "exact_match_requirements": [
+      "explicit srg(99,14,1,2) or Conway-99 context",
+      "n3=708 equality boundary or det(B)<=6525 conclusion",
+      "materially matching integral-idempotent/even-unimodular rank-36 mechanism"
+    ],
+    "exact_match_found": false,
+    "novelty_conclusion": "UNKNOWN; thirty frozen searches and ten inspected sources yielded bounded non-discovery only.",
+    "target_status_conclusion": "UNKNOWN; multiple current sources record the existence question as open or undecided, but this audit is not an exhaustive proof of world literature."
+  }
+}

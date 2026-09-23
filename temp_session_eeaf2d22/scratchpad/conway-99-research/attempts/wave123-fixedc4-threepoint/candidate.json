@@ -1,0 +1,41 @@
+{
+  "format": "wave123-fixedc4-projector-candidate-v1",
+  "source_witness": "attempts/wave120-fixedc4-sumdiff/witness.json",
+  "source_witness_sha256": "3569eaa48ec3e99ab988f943492c103f67889c8fadf9a2a15edeac9586220183",
+  "description": "A 26-record subset of the Wave120 formal signed-support code. It is a null control for the diagonal leverage and code-only rooted three-point gates, not a graph or eigenvector-family candidate.",
+  "record_ids_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    11,
+    13,
+    16,
+    17,
+    18,
+    19,
+    22,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    37,
+    39
+  ],
+  "claims": {
+    "diagonal_leverage_at_most_4_over_9": "CANDIDATE_TO_BE_EXACTLY_CHECKED",
+    "rooted_code_three_point_blocks": "CANDIDATE_TO_BE_EXACTLY_CHECKED",
+    "graph_valued_two_by_two_completion": "EXPECTED_TO_FAIL",
+    "common_minus4_eigenspace_family": "NOT_CLAIMED",
+    "graph_realizable": "NOT_CLAIMED"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "claim_label": "PENDING_DISCOVERY_COMPARISON",
+  "coincidence_cap": {
+    "all_possible_centers_partitioned": true,
+    "canonical_fixed_transition": [
+      0,
+      2,
+      4
+    ],
+    "center_partition": {
+      "eight_fourth_points": {
+        "individual_maxima": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "points": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "sum_of_maxima": 8
+      },
+      "fixed_center": {
+        "contribution": 0,
+        "reason": "its matching already pairs the two fixed endpoints"
+      },
+      "other_two_original_centers": {
+        "maximum_with_lambda_guard": 10,
+        "maximum_without_lambda_guard": 16,
+        "profile_types": [
+          [
+            false,
+            0,
+            0
+          ],
+          [
+            false,
+            1,
+            1
+          ],
+          [
+            false,
+            2,
+            2
+          ],
+          [
+            true,
+            0,
+            8
+          ]
+        ]
+      }
+    },
+    "fixed_transition_seed_count": 8,
+    "lambda_triangle_guard": {
+      "all_three_transitions_allowed_together": false,
+      "common_neighbors_of_fixed_adjacent_pair": [
+        "base_shared",
+        "residual_r"
+      ],
+      "first_center_identical_transition": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "fixed_transition": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "reason": "the fixed adjacent residual pair would have both its shared base point and the third residual label as common neighbors",
+      "residual_triangle_edge_count": 3,
+      "second_center_identical_transition": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "target_lambda": 1
+    },
+    "per_transition_coincidence_cap": 18
+  },
+  "format": "wave99-transition-pair-moment-independent-v1",
+  "limitations": [
+    "The N14 theorem is conditional on the prism-free P=0 branch.",
+    "The weighted Wave86 consequence additionally requires r=28 (q=16).",
+    "The pointwise moment distribution is a formal sharpness control, not a graph.",
+    "No graph nonexistence or Conway-99 resolution follows here."
+  ],
+  "moment_certificate": {
+    "extremal_moment_distribution_control": {
+      "interpretation": "formal sharpness for the two recorded moments only",
+      "n0": 350,
+      "n3": 168,
+      "n4": 42,
+      "sum_Cj2_n": 756,
+      "sum_j_n": 672,
+      "sum_n": 560
+    },
+    "first_moment_exact": 672,
+    "four_point_union_pair_multiplicity": 1,
+    "multiplicity_identity": "sum_tau sum_{Q contains tau}(j(Q)-1)=sum_Q j(Q)(j(Q)-1)=2 sum_Q C(j(Q),2)",
+    "ordered_transition_pair_moment_upper": 1512,
+    "pointwise_certificate": [
+      {
+        "certificate_right_side": "1",
+        "indicator_j_zero": "1",
+        "j": 0,
+        "slack": "0"
+      },
+      {
+        "certificate_right_side": "1/2",
+        "indicator_j_zero": "0",
+        "j": 1,
+        "slack": "1/2"
+      },
+      {
+        "certificate_right_side": "1/6",
+        "indicator_j_zero": "0",
+        "j": 2,
+        "slack": "1/6"
+      },
+      {
+        "certificate_right_side": "0",
+        "indicator_j_zero": "0",
+        "j": 3,
+        "slack": "0"
+      },
+      {
+        "certificate_right_side": "0",
+        "indicator_j_zero": "0",
+        "j": 4,
+        "slack": "0"
+      }
+    ],
+    "pointwise_formula": "1[j=0] <= 1 - j/2 + C(j,2)/6 for 0<=j<=4",
+    "same_triple_pair_multiplicity": 8,
+    "seed_count": 560,
+    "seed_transition_count_range": [
+      0,
+      4
+    ],
+    "unordered_pair_moment_upper": 756,
+    "zero_transition_seed_upper_bound": 350
+  },
+  "precomparison_verdict": {
+    "N14_upper_bound_4950": "INDEPENDENTLY_REPRODUCED_SCOPED",
+    "discovery_comparison": "NOT_YET_PERFORMED",
+    "transition_cap_18": "INDEPENDENTLY_REPRODUCED",
+    "weighted_lower_bound": "INDEPENDENTLY_REPRODUCED_INTERSECTION_SCOPE"
+  },
+  "role": "verifier",
+  "rooted_reconstruction": {
+    "local_perfect_matching_count": 6040,
+    "seed_count": 560,
+    "selected_transitions": 84,
+    "transition_candidates": 840,
+    "transition_seed_multiplicity_values": [
+      8
+    ]
+  },
+  "scope": {
+    "N14_bound_requires_prism_free_P0": true,
+    "N14_bound_requires_rank_28": false,
+    "hypothetical_graph": "srg(99,14,1,2)",
+    "weighted_Wave86_conclusion_requires_prism_free_P0": true,
+    "weighted_Wave86_conclusion_requires_rank_28_q16": true
+  },
+  "sign_and_root_conversion": {
+    "N14_counts_both_signs": true,
+    "N14_upper_bound": 4950,
+    "antipodal_pair_rooted_positive_incidences": 14,
+    "identity": "7*N14=sum_o #{t:t_o=+1}",
+    "no_extra_factor_of_two": true,
+    "positive_roots_per_oriented_vector": 7,
+    "root_count": 99,
+    "rooted_positive_vector_upper_bound": 350
+  },
+  "wave86_weighted_rearrangement": {
+    "N14_upper_inserted": 4950,
+    "conclusion": "407*N16+43*N18>=2165002",
+    "integral_form": "2387*N14+407*N16+43*N18>=13980652",
+    "scope_requires_prism_free_P0": true,
+    "scope_requires_rank_28_q16": true,
+    "verified_positive_identity_rearranged": "N14+(407/2387)N16+(43/2387)N18>=1997236/341",
+    "weighted_lower_bound": 2165002
+  }
+}

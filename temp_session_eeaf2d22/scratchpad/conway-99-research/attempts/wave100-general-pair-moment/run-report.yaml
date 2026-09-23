@@ -1,0 +1,19 @@
+role: proof_b
+date_utc: 2026-07-28T02:53:52Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: DERIVED
+scope: candidate general N14 upper bound for every compatible n3 value
+inputs:
+  - path: verification/wave94-general-n3-norm14-bound/package-manifest.sha256
+    sha256: a579aa242fc11583ef38525718cc87954fd86a732032b456939d9904a90603e9
+  - path: attempts/wave99-transition-pair-moment/package-manifest.sha256
+    sha256: e3a30e37bbf08dcd60e4fff7df6f8f4e51780987ba3446e96ff136954e94a9e6
+method: rootwise integer rounding of the transition-pair moment followed by exact prism and antipodal double counts
+command: .\.venv\Scripts\python.exe -B attempts\wave100-general-pair-moment\exact_check.py --verify attempts\wave100-general-pair-moment\exact-results.json
+outputs:
+  - attempts/wave100-general-pair-moment/exact-results.json
+limitations:
+  - depends on unverified Wave 99 discovery
+  - independent verification required
+  - no N16 or N18 upper bound
+  - no strict n3 upper bound

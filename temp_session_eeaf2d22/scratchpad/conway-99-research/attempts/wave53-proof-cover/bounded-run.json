@@ -1,0 +1,105 @@
+{
+  "artifacts": {
+    "attempts/wave53-proof-cover/branch-15-x187-zero-formula.json": {
+      "bytes": 1297,
+      "sha256": "4ab33e12ec1b7c7a16a97561f5b4efcb7a56fbe3f4e53091d13089bb1a0757ee"
+    },
+    "attempts/wave53-proof-cover/branch-15-x187-zero.cakepb.txt": {
+      "bytes": 54,
+      "sha256": "4a9972ebcadaba084fe755d4b0c0e59f296805b963e38f5e1f75941b10d98ea3"
+    },
+    "attempts/wave53-proof-cover/branch-15-x187-zero.kernel.pbp": {
+      "bytes": 83494,
+      "sha256": "251cc6158e9afba4db8e49eb0dcf02ec564bcfaf03de16151b1bbab0c0d968b9"
+    },
+    "attempts/wave53-proof-cover/branch-15-x187-zero.opb.gz": {
+      "bytes": 3854316,
+      "sha256": "5d026ebdd3f4e05c46a494ba357fbcaa7e994f7c518a89b8c7f5dc956ac8ee9c"
+    },
+    "attempts/wave53-proof-cover/branch-15-x187-zero.raw.pbp": {
+      "bytes": 72584,
+      "sha256": "ca94b003b5506bbf7164223db415f5df677381a0a1ec99ccc816508b81d36861"
+    },
+    "attempts/wave53-proof-cover/branch-15-x187-zero.solver.txt": {
+      "bytes": 6366,
+      "sha256": "fa48bf15658b79e4cf70c91804884097d0abe4eb90c828bb595d84283f14508e"
+    },
+    "attempts/wave53-proof-cover/branch-15-x187-zero.veripb-elaborate.txt": {
+      "bytes": 114,
+      "sha256": "4573a235c83bbf666500a4e207c4c4778a114fc64219b60a0c3e19ddc15d6be0"
+    },
+    "attempts/wave53-proof-cover/branch-15-x187-zero.veripb-kernel.txt": {
+      "bytes": 114,
+      "sha256": "4573a235c83bbf666500a4e207c4c4778a114fc64219b60a0c3e19ddc15d6be0"
+    },
+    "attempts/wave53-proof-cover/branch-15-x187-zero.veripb-raw.txt": {
+      "bytes": 114,
+      "sha256": "4573a235c83bbf666500a4e207c4c4778a114fc64219b60a0c3e19ddc15d6be0"
+    }
+  },
+  "claim_label": "CANDIDATE",
+  "commands": [
+    "Exact --timeout=3 --proof-assumptions=0 --proof-log=branch-15-x187-zero.raw.pbp branch-15-x187-zero.opb",
+    "veripb --force-checked-deletion branch-15-x187-zero.opb branch-15-x187-zero.raw.pbp",
+    "veripb --force-checked-deletion --elaborate branch-15-x187-zero.kernel.pbp branch-15-x187-zero.opb branch-15-x187-zero.raw.pbp",
+    "veripb --force-checked-deletion branch-15-x187-zero.opb branch-15-x187-zero.kernel.pbp",
+    "cake_pb branch-15-x187-zero.opb branch-15-x187-zero.kernel.pbp"
+  ],
+  "conclusion": {
+    "branch15_status": "UNKNOWN",
+    "complete_endpoint_cases_closed": 0,
+    "complete_endpoint_cases_total": 33,
+    "endpoint_status": "UNKNOWN",
+    "mathematical_evidence": "NONE",
+    "proof_coverage": "0/33"
+  },
+  "exact": {
+    "conflicts": 0,
+    "cpu_seconds": 3.44779,
+    "decisions": 21,
+    "parse_seconds": 3.34514,
+    "propagations": 912,
+    "result": "UNKNOWN",
+    "solutions": 0,
+    "solve_seconds": 0.102556,
+    "solver_timeout_setting_seconds": 3,
+    "timeout_is_strict_process_wall": false,
+    "unit_literals_derived": 830
+  },
+  "format": "wave53-bounded-proof-run-v1",
+  "formula": {
+    "constraints_declared": 574616,
+    "gzip_path": "attempts/wave53-proof-cover/branch-15-x187-zero.opb.gz",
+    "gzip_sha256": "5d026ebdd3f4e05c46a494ba357fbcaa7e994f7c518a89b8c7f5dc956ac8ee9c",
+    "metadata_path": "attempts/wave53-proof-cover/branch-15-x187-zero-formula.json",
+    "metadata_sha256": "4ab33e12ec1b7c7a16a97561f5b4efcb7a56fbe3f4e53091d13089bb1a0757ee",
+    "raw_sha256": "b1681416ee2860c4b40ce854fb533062af8e1c7a9dc0c423ba0c5f0545677d08"
+  },
+  "limitations": [
+    "The checked proof certifies only that the bounded run made no conclusion.",
+    "Only 0.103 seconds were spent solving after parsing and presolve.",
+    "A retained partial proof is not an UNSAT certificate.",
+    "Historical discovery RAM percentages have no raw monitor transcript and are not mathematical evidence.",
+    "No complete case, endpoint, upper bound, graph, or novelty claim follows."
+  ],
+  "proof_replay": {
+    "elaboration_veripb": "VERIFIED_NO_CONCLUSION",
+    "kernel_cakepb": "VERIFIED_NO_CONCLUSION",
+    "kernel_veripb": "VERIFIED_NO_CONCLUSION",
+    "raw_veripb": "VERIFIED_NO_CONCLUSION"
+  },
+  "resource_guard": {
+    "historical_discovery_reported_free_memory_percent_after": 56.25,
+    "historical_discovery_reported_free_memory_percent_before": 57.46,
+    "historical_guard_status": "SELF_REPORTED_NOT_INDEPENDENTLY_REPLAYABLE",
+    "raw_monitor_transcript_retained": false,
+    "required_free_memory_percent": 20
+  },
+  "role": "proof_a",
+  "scope": "three-second Exact run on branch15 AND x187=0 with retained proof replay",
+  "tool_hashes": {
+    "CakePB": "5920919642b1c498c2654a849fcd894ea18e7736ebf32919a9a8915861033e46",
+    "Exact": "842ac70b4e938d24f537a56513ff64ea845206c714ce34da467ce146c5c5c928",
+    "VeriPB": "635b6f2fbd7a7fb98bf7a1f7af038355a1e58438cfdc1ee4e2649979017ace36"
+  }
+}

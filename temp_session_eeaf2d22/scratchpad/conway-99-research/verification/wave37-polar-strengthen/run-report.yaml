@@ -1,0 +1,25 @@
+role: verifier
+date_utc: 2026-07-27T00:26:00Z
+git_commit: a45592a91a34d2f2bb7ee4c266f3b979e86e399d
+claim_label: VERIFIED
+scope: "Conditional ternary code consequences, signed degenerate-triple floor, ternary hostile controls, and both characteristic-seven rank-eleven projective association schemes"
+inputs:
+  agents/2026-07-26-wave37-polar-strengthen.md: 625a52471c0cd1c4d603d2a272b9a9c11ebbc013ab956dc20f9da1362cbb2abb
+  attempts/wave37-polar-strengthen/exact-results.json: 0d5daafca72b43d159db5e799689e8818fa61f25de2f2d06225a4619817cdff9
+  attempts/wave37-polar-strengthen/failed-routes.md: 53407cccd3dfdcf6155ab300d7c70c9bc1b6ff7f443a0e644c5ee30dcf5f3e38
+method: "Independent finite-field dynamic programming, exact Krawtchouk transforms, association-algebra reconstruction, signed-trace counting, affine-plane census, and explicit rank-three/Gram-rank-one hostile counterexample; discovery checker not imported"
+command: |
+  .\.venv\Scripts\python.exe -B verification\wave37-polar-strengthen\independent_check.py --output verification\wave37-polar-strengthen\independent-results.json
+  .\.venv\Scripts\python.exe -B -m unittest -v verification\wave37-polar-strengthen\test_independent_check.py
+outputs:
+  verification/wave37-polar-strengthen/independent_check.py: 99e4beffcd38c46ac539e40be14080ca22457a93ae0101698ea10f13271fa6be
+  verification/wave37-polar-strengthen/test_independent_check.py: 9534a4807f468baaacbcd21bd58007b7c3b72a97ab0114846422cb6ffef5849b
+  verification/wave37-polar-strengthen/independent-results.json: 37e17811baebce967ac7a0adf3e9f840340afc6bc9bfd07ce7912793d0e65734
+  verification/wave37-polar-strengthen/audit.md: 5cebac3f10475e4ac3322c0b6b8796a16be033ace050d9c9809213bd70a9c5c1
+tests:
+  independent: "6 passed"
+limitations:
+  - "Every claim is conditional on the hypothetical n3=4158 endpoint reflection."
+  - "No endpoint matrix, code, finite-field configuration, or graph is constructed."
+  - "The real MacWilliams survivor is not a formal weight enumerator."
+  - "Both F7 rank-eleven determinant classes survive; no rank floor or upper bound improves."

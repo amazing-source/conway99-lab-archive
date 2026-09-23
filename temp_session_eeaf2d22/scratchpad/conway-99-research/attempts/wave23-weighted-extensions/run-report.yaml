@@ -1,0 +1,62 @@
+role: construction
+date_utc: "2026-07-23T20:02:20Z"
+git_commit: "a6771108ec00bddfcc8ae5b41779760673fef22e"
+claim_label: DERIVED
+scope: >-
+  Complete orbit-refined one-vertex extension systems through order seven for
+  srg(99,14,1,2), at n3=705 and every allowed h11 divisible by four.
+inputs:
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  - path: attempts/wave22-full-seven-deck/exact-results.json
+    sha256: ca5d9d116f6a9d6e355600429652e2bf4474b73dcf281bbcb564420d820acbd2
+method: >-
+  Exhaustively enumerate locally admissible graph classes, compute exact
+  automorphism vertex and pair orbits, build deletion/degree/common-neighbor
+  extension rows, independently force counts through order five and validate
+  the source order-six vector, use normalized SciPy LPs only to discover two
+  adjacent points, and replay the resulting affine family with exact integers.
+command: >-
+  python attempts/wave23-weighted-extensions/exact_check.py --output
+  attempts/wave23-weighted-extensions/exact-results.json
+test_command: >-
+  python -m unittest discover -s attempts/wave23-weighted-extensions -p
+  test_exact_check.py -v
+outputs:
+  - path: attempts/wave23-weighted-extensions/model.py
+    sha256: 8bc0f100772d95d06b60ec672ccc73817af4c30fd7fbf3276700554a87186abf
+  - path: attempts/wave23-weighted-extensions/discover_affine.py
+    sha256: dbb03710f09e6d83468af0eb37fcca147ad35b9a46e84014e407869ea35d34aa
+  - path: attempts/wave23-weighted-extensions/exact_check.py
+    sha256: ab959ded2357af8e5d62e18fc9136af538e302a127838be590baeaa71528f37a
+  - path: attempts/wave23-weighted-extensions/test_exact_check.py
+    sha256: 2985bfe97dc3a88ed4285e2d0df31eb66246370e5a84cd65f4d7a10dbbdae580
+  - path: attempts/wave23-weighted-extensions/affine-witness.json
+    sha256: 16ade54a77589b91478b3426dc3dbe57ebb2a5e0f7d209602ca282e42ac3ec77
+  - path: attempts/wave23-weighted-extensions/exact-results.json
+    sha256: 83a41b78eac02d845650ccdcb5b9782aba80caff9bdb7be983ec3f9e91c65b4c
+  - path: attempts/wave23-weighted-extensions/failed-runs.md
+    sha256: aae3c978dc0e7d148dc73079c9a8d9fc514ca24c55717952cbaa49942e8b504e
+  - path: attempts/wave23-weighted-extensions/failed-routes.md
+    sha256: 400966fae98ccd206b8cadf14ae37b3e95dfebc3754da741409089b8a251daf5
+limitations:
+  - Necessary aggregate subgraph counts do not enforce overlap consistency.
+  - No 99-vertex adjacency matrix is constructed.
+  - The source Hamiltonian panel alignment is a pinned human interpretation.
+  - Discovery and exact replay were produced by the same agent; independent verifier review is pending.
+result:
+  order_seven_matrix_shape: [712, 208]
+  order_seven_rational_rank: 207
+  deletion_rows: 62
+  vertex_orbit_rows: 207
+  edge_pair_orbit_rows: 180
+  nonedge_pair_orbit_rows: 263
+  five_to_six_rows_passed: 171
+  allowed_z_values: 353
+  h11_range: [1412, 2820]
+  exact_affine_family: PASS
+  source_hamiltonian_formulas_compatible: PASS
+  hostile_tests: "18/18 PASS"
+  new_bound_beyond_n3_705: null
+  graph_construction: false
+  target_status: UNKNOWN

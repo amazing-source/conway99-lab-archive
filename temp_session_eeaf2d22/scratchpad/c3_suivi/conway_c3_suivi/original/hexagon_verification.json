@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EXACT_LOCAL_HEXAGON_CERTIFICATE",
+  "arithmetic": "integers and F3, no floating point or SAT solver",
+  "phase_orbit_patterns": 1366,
+  "kernel_compatible_phase_patterns": 352,
+  "cases": [
+    {
+      "holonomy": 0,
+      "forced_residue_mod3": 0,
+      "excluded_by_this_test": false
+    },
+    {
+      "holonomy": 1,
+      "forced_residue_mod3": 2,
+      "excluded_by_this_test": true
+    },
+    {
+      "holonomy": 2,
+      "forced_residue_mod3": 1,
+      "excluded_by_this_test": true
+    }
+  ],
+  "hostile_control": "detected",
+  "scope": "Only nonzero holonomy on the six triangular orbits when their induced orbit graph is C6; C3 is NOT excluded."
+}

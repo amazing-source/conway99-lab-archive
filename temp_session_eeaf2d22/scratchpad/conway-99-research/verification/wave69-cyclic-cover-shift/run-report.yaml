@@ -1,0 +1,80 @@
+role: verifier
+date_utc: 2026-07-27T23:29:37Z
+git_commit: 5f497b545c536de90a1a557c51b53f041fecf7db
+claim_label: VERIFIED
+scope: >-
+  Independently verify the exact semiregular-C11 quotient obstruction and
+  abelian Cayley obstruction for a hypothetical srg(99,14,1,2); import only
+  the separately VERIFIED Wave72 exact-order-11 fixed-point theorem to verify
+  the no-order-11 and non-vertex-transitive consequences.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: verification/wave69-cyclic-cover-shift/discovery-input-freeze.sha256
+    sha256: 8d1279525c9cfd87c3dbad7c2c63a46b79e142c0bc239d9d5a28296fcc3e2a2c
+  - path: attempts/wave69-cyclic-cover-shift/exact-results.json
+    sha256: f6598458a37c32119df4765b44a9ec049b67580c625036c4c827db15510f84c8
+  - path: attempts/wave69-cyclic-cover-shift/package-manifest.sha256
+    sha256: 753904e74d07f5f3495fb79ae08b402147c4cddf023fc428f77e2cd35590ddce
+  - path: verification/wave72-order11-automorphism/run-report.yaml
+    sha256: 968dba49ec327cf5d735218cdfc8b2456134137594d306ee809ca72ed8aa3666
+  - path: verification/wave72-order11-automorphism/independent-results.json
+    sha256: 9976b5af57161c87dc7d63eb6f60c46057feed5731232b452fffa6b7beb4eefc
+  - path: verification/wave72-order11-automorphism/package-manifest.sha256
+    sha256: 1eabfa64e932368ef37e9ab907d8c59b264ee93cfd1b29ed76868f4d8107aa1b
+method: >-
+  Hash-freeze all 17 discovery files before inspection; reconstruct the
+  rational C11 quotient spectrum, seven row multisets, three diagonal cases,
+  and all labeled row assignments without importing discovery code; run a
+  label-complete 9x9 quotient tree with no equal-diagonal canonical pruning
+  and a separate canonical cross-check; compare exact node, branch, rejection,
+  leaf, and transcript hashes only after independent generation; independently
+  audit the order-99 group classification and Fourier inversion; import the
+  separately VERIFIED Wave72 fixed-point theorem; hostile-test mutations,
+  symmetry scope, prerequisite status, and unrestricted-status boundaries.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave69-cyclic-cover-shift\independent_verify.py
+  --output verification\wave69-cyclic-cover-shift\independent-results.json
+  --discovery-results attempts\wave69-cyclic-cover-shift\exact-results.json
+  --comparison-output verification\wave69-cyclic-cover-shift\comparison.json
+  --wave72-results
+  verification\wave72-order11-automorphism\independent-results.json ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  verification\wave69-cyclic-cover-shift\test_independent_verify.py
+outputs:
+  - path: verification/wave69-cyclic-cover-shift/audit.md
+    sha256: b3db33c99882a547477bc79dd4fa05abee7d9201e72fed98704b97e488f47b31
+  - path: verification/wave69-cyclic-cover-shift/independent_verify.py
+    sha256: 1dfde1fea8790728e351780e913844cab64d86ddc50113b9e0e06e98388c0776
+  - path: verification/wave69-cyclic-cover-shift/independent-results.json
+    sha256: 584fc041b089eb0de2cedd33bee3cacbc819519069f659aeb5faf0f64c9709a4
+  - path: verification/wave69-cyclic-cover-shift/comparison.json
+    sha256: 5898d237213c50d691a0f8fe03f890d467a7e18819c06b871bcc1f5a60a4ae70
+  - path: verification/wave69-cyclic-cover-shift/test-results.txt
+    sha256: cfe089d4d65a0a1b79b7e18fa1cc4661d3c3374d385885a11806ef9689a36b39
+result:
+  disposition: VERIFIED_RESTRICTED_SYMMETRY_OBSTRUCTION
+  row_shapes: 7
+  sorted_diagonal_cases: 3
+  label_complete_nodes: 1108533
+  canonical_crosscheck_nodes: 8980
+  quotient_candidates: 0
+  telemetry_comparisons: 11
+  telemetry_mismatches: 0
+  hostile_tests: 13
+  semiregular_order_11_actions: EXCLUDED
+  order_11_automorphisms: EXCLUDED
+  vertex_transitive_realizations: EXCLUDED
+  cayley_realizations: EXCLUDED
+  conway_99: UNKNOWN
+resources:
+  minimum_free_memory_percent_required: 15
+  minimum_free_memory_percent_observed: 57.38
+limitations:
+  - The unrestricted target is not assumed to have any automorphism.
+  - Asymmetric targets and automorphism groups without order-11 elements remain.
+  - No unrestricted nonexistence proof, construction, or strict global n3 upper bound follows.
+  - Literature novelty and priority remain UNKNOWN.

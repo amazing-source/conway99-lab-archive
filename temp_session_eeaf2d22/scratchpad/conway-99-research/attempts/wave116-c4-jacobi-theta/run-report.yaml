@@ -1,0 +1,36 @@
+role: proof_b
+date_utc: 2026-07-28T04:16:29Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: DERIVED
+scope: >-
+  Conditional exact assessment of the four-coordinate C4 theta/Jacobi
+  strategy for the Wave 112 rank-28 short-vector incidence target, without
+  graph automorphisms.
+inputs:
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+method: >-
+  Exact rational reconstruction of the restricted primitive idempotent;
+  lattice-membership and scaling audit for K and L evaluation vectors;
+  exact discriminant-pairing, Fricke-Poisson, and alternating-coefficient
+  normalization checks; and a fail-closed finite-dimensional strategy
+  assessment.
+command: >-
+  python -B attempts/wave116-c4-jacobi-theta/exact_check.py
+  --verify attempts/wave116-c4-jacobi-theta/exact-results.json;
+  python -B -m unittest discover -s
+  attempts/wave116-c4-jacobi-theta -p "test_*.py" -v
+outputs:
+  - path: attempts/wave116-c4-jacobi-theta/exact-results.json
+  - path: attempts/wave116-c4-jacobi-theta/derivation.md
+  - path: attempts/wave116-c4-jacobi-theta/failed-routes.md
+limitations:
+  - Discovery cannot verify itself; independent verification is required.
+  - The ordinary matrix index has more than one billion discriminant classes.
+  - No exact Jacobi basis, finite truncation certificate, or upper-bound dual is produced.
+  - The harmonic interpolation alternative loses coefficientwise positivity.
+  - Rank 28, Conway-99, and literature novelty remain UNKNOWN.

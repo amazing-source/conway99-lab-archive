@@ -1,0 +1,33 @@
+role: proof_b
+date_utc: 2026-07-28T11:35:19Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED_NULL_PROJECTION
+scope: >-
+  Triangle-root Terwilliger/triple-intersection nonnegativity, PSD, and rank
+  projection for a hypothetical srg(99,14,1,2) at the prism-free n3=4158
+  endpoint.
+inputs:
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+method: >-
+  Derive the 12+12+12+60 triangle-root coherent partition from lambda=1 and
+  mu=2; apply A^2=12I-A+2J blockwise; express rooted prisms as fixed points of
+  three cross permutations; construct a fixed-point-free permutation system;
+  and certify its forced 36x36 Gram matrix by exact commuting-involution
+  character determinants.
+command: >-
+  python attempts/wave149-terwilliger-triple/exact_check.py --verify
+  attempts/wave149-terwilliger-triple/exact-results.json &&
+  python -m unittest discover -s attempts/wave149-terwilliger-triple
+  -p "test_*.py" -v
+outputs:
+  - path: attempts/wave149-terwilliger-triple/exact-results.json
+    sha256: 6fed4da32fbeefce54d1802136dc8c9a328f112bb0f295a86230f0e6175f5ee6
+  - path: attempts/wave149-terwilliger-triple/derivation.md
+    sha256: 1873930cc1f6e0e2b6e24190f86ac63af171cb1feaffcbd6ce765f88fe1e69c5
+  - path: attempts/wave149-terwilliger-triple/failed-routes.md
+    sha256: 021291707a58010f324d18bbff950f40125c8b122c1f7090cdc6ddaf4fb989b5
+limitations: >-
+  The exact Gram witness has no certified binary 36x60 incidence factor and
+  no 60-vertex residual adjacency block. It is local to one abstract root
+  triangle, proves no graph realization, and does not improve n3<=4158.

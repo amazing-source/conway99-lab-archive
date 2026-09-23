@@ -1,0 +1,31 @@
+Wave 72 clean-room verification results
+Date UTC: 2026-07-27T23:16:44Z
+
+Retained development failure:
+The first independent run rejected f=0 by enforcing a high-to-low capacity
+constraint when the high-degree class was empty.  The comparison failed and
+2 of 14 hostile tests failed.  The constraint was scoped to nonempty source
+classes; the complete replay below then passed.
+
+Independent generation:
+{"comparison_mismatches": 0, "inventory_files_unchanged": 12, "positive_nonidentity_models": 0, "semantic_sha256": "2e98283a52ab6b7542c750ab011aa2e61e525e2a290d74751efe824ff44bf2db", "status": "PASS"}
+
+Independent deterministic replay:
+{"comparison_mismatches": 0, "inventory_files_unchanged": 12, "positive_nonidentity_models": 0, "semantic_sha256": "2e98283a52ab6b7542c750ab011aa2e61e525e2a290d74751efe824ff44bf2db", "status": "PASS"}
+
+Independent hostile tests:
+Ran 14 tests in 0.082s
+OK
+
+Discovery canonical replay:
+{"nonidentity_positive_fixed_models": 0, "schema": "wave72-order11-fixed-point-v1", "semantic_sha256": "caf1c6d0f3a9e07095ade96aa203759ac3f8abc1893dee83899c3558f9e1e817", "status": "PASS", "surviving_models": 2}
+
+Discovery tests inspected:
+Ran 9 tests in 0.003s
+OK
+
+Mathematical comparison:
+6 fields, 0 mismatches
+
+Discovery post-run inventory:
+12 files unchanged byte-for-byte

@@ -1,0 +1,36 @@
+role: construction
+date_utc: 2026-07-28T11:53:52Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: CANDIDATE
+scope: >-
+  Exact rational feasibility at n3=4158 of the combined Wave44 affine/rooted
+  rows, Wave147 two-root order-eight coefficient/deletion model, Wave148
+  marked rows, count nonnegativity, and zero centered covariance in both
+  ordered-root families.
+inputs:
+  - path: attempts/wave147-alternative-lane/coefficients.json.gz
+    sha256: a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e
+  - path: attempts/wave148-marked-order8/marked-rows.json.gz
+    sha256: e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1
+  - path: attempts/wave44-rooted-flags/row-system.json
+    sha256: fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722
+  - path: attempts/wave150-order8-sdp-scout/marked-rank1-both-highs-explicit.json
+    sha256: 5a7b2e7c56627366c1cd096c6921599ed3b94f108c9b15c2110cf9032112cc4c
+method: >-
+  Use a normalized floating SDP/LP only to identify the Jensen equality face,
+  round and exactly replay the order-seven counts, select an 874-coordinate
+  order-eight support, prove full modular column rank, solve an 874-square
+  subsystem over Q with FLINT, and replay all 10,310 full-system exact equations.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave150-order8-sdp-scout\exact_rank1_witness.py
+  --selection attempts\wave150-order8-sdp-scout\rank1-selection.json
+  --output attempts\wave150-order8-sdp-scout\exact-rank1-witness.json
+outputs:
+  - path: attempts/wave150-order8-sdp-scout/exact-rank1-witness.json
+    sha256: e63afbe9ca36b4b1571b3dde75309d0cce45f3bc862d6e8c08bfe62f78dc130d
+limitations:
+  - Independent verification is required before promotion.
+  - The exact rational count vector is not a graph.
+  - Higher-order overlap consistency is absent.
+  - Endpoint existence, a strict upper bound, Conway-99, and novelty remain UNKNOWN.

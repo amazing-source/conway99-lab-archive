@@ -1,0 +1,3857 @@
+{
+  "certificate_type": "independent_wave19_global_reduction_audit",
+  "claim_label": "DERIVED",
+  "endpoint_crossings": {
+    "formula": "A nonempty crossing support has k active rows and k active columns, each degree two; k=1 is impossible, while every 2<=k<=min(a,b) is realized by an alternating 2k-cycle.",
+    "semantic_harness": {
+      "endpoint_swap_result": "RETAINED_WITH_TRANSPOSED_CROSSING",
+      "hostile_mutations": [
+        {
+          "mutation": "endpoint_counted_twice",
+          "reason": "an actual edge cannot count one endpoint twice",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "endpoint_omitted",
+          "reason": "an endpoint record must name exactly two endpoints",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "inconsistent_endpoint_labels",
+          "reason": "inconsistent endpoint labels",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "crossing_label_flip",
+          "reason": "crossing/noncrossing label mismatch",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "crossing_edge_omitted",
+          "reason": "crossing/noncrossing label mismatch",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "parallel_crossing_edge",
+          "reason": "parallel crossing edge rejected",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "L_loop",
+          "reason": "L loop rejected",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "L_parallel_edge",
+          "reason": "parallel L edge rejected",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "duplicate_n1_omit_n2",
+          "reason": "an endpoint was counted twice",
+          "result": "REJECTED"
+        },
+        {
+          "mutation": "omit_n2",
+          "reason": "an endpoint was omitted or introduced",
+          "result": "REJECTED"
+        }
+      ],
+      "local_to_global_equality": "The fixed-point sum is a ledger over the distinct original neighbors v of u. Each crossing is computed once from the two authenticated endpoint points, so summing the local crossing counts is exactly sum_{v~u} d_H(uv), with no support multiplicity.",
+      "primitive_semantics": "For an actual edge uv, delete the unique common active label from both indexed points; if P' and Q' are the remaining label sets, then d_H(uv)=e_L(P',Q') is the number of L-edges crossing them. Every remaining row and column has degree zero or two.",
+      "valid_ledger_sum": 8,
+      "valid_tiny_cases": [
+        {
+          "column_degrees": [
+            2,
+            2
+          ],
+          "common_labels_deleted_at_both_endpoints": [],
+          "d_H": 4,
+          "endpoints": [
+            "u",
+            "v"
+          ],
+          "remaining_shape": [
+            2,
+            2
+          ],
+          "row_degrees": [
+            2,
+            2
+          ]
+        },
+        {
+          "column_degrees": [
+            2,
+            2
+          ],
+          "common_labels_deleted_at_both_endpoints": [
+            "x"
+          ],
+          "d_H": 4,
+          "endpoints": [
+            "w",
+            "z"
+          ],
+          "remaining_shape": [
+            2,
+            2
+          ],
+          "row_degrees": [
+            2,
+            2
+          ]
+        },
+        {
+          "column_degrees": [
+            2,
+            2
+          ],
+          "common_labels_deleted_at_both_endpoints": [],
+          "d_H": 4,
+          "endpoints": [
+            "v",
+            "u"
+          ],
+          "remaining_shape": [
+            2,
+            2
+          ],
+          "row_degrees": [
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    "shape_rows": [
+      {
+        "bitmask_counts": [
+          0
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          0,
+          0
+        ],
+        "structural_formula_counts": [
+          0
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          1,
+          1
+        ],
+        "structural_formula_counts": [
+          0
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          1,
+          4
+        ],
+        "structural_formula_counts": [
+          0
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          2,
+          1
+        ],
+        "structural_formula_counts": [
+          0
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          2,
+          2
+        ],
+        "structural_formula_counts": [
+          0,
+          4
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          2,
+          3
+        ],
+        "structural_formula_counts": [
+          0,
+          4
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          2,
+          4
+        ],
+        "structural_formula_counts": [
+          0,
+          4
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          3,
+          1
+        ],
+        "structural_formula_counts": [
+          0
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          3,
+          2
+        ],
+        "structural_formula_counts": [
+          0,
+          4
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4,
+          6
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          3,
+          3
+        ],
+        "structural_formula_counts": [
+          0,
+          4,
+          6
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4,
+          6
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          3,
+          4
+        ],
+        "structural_formula_counts": [
+          0,
+          4,
+          6
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          4,
+          2
+        ],
+        "structural_formula_counts": [
+          0,
+          4
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4,
+          6
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          4,
+          3
+        ],
+        "structural_formula_counts": [
+          0,
+          4,
+          6
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4,
+          6,
+          8
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          4,
+          4
+        ],
+        "structural_formula_counts": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          5,
+          1
+        ],
+        "structural_formula_counts": [
+          0
+        ]
+      },
+      {
+        "bitmask_counts": [
+          0,
+          4
+        ],
+        "exact_match": true,
+        "remaining_shape": [
+          6,
+          2
+        ],
+        "structural_formula_counts": [
+          0,
+          4
+        ]
+      }
+    ],
+    "size_two_fixed_sum_table": [
+      {
+        "fixed_sum": 8,
+        "induced_degree_lower": 6,
+        "meeting_neighbors": 4,
+        "positive_disjoint_neighbors": 2,
+        "possible": true,
+        "q_pair": [
+          2,
+          2
+        ]
+      },
+      {
+        "fixed_sum": 10,
+        "possible": false,
+        "q_pair": [
+          2,
+          3
+        ],
+        "reason": "Every actual edge at a size-two endpoint has d_H in {0,4}, so its neighbor sum is divisible by four."
+      },
+      {
+        "fixed_sum": 12,
+        "induced_degree_lower": 7,
+        "meeting_neighbors": 4,
+        "positive_disjoint_neighbors": 3,
+        "possible": true,
+        "q_pair": [
+          2,
+          4
+        ]
+      },
+      {
+        "fixed_sum": 12,
+        "induced_degree_lower": 7,
+        "meeting_neighbors": 4,
+        "positive_disjoint_neighbors": 3,
+        "possible": true,
+        "q_pair": [
+          3,
+          3
+        ]
+      },
+      {
+        "fixed_sum": 14,
+        "possible": false,
+        "q_pair": [
+          3,
+          4
+        ],
+        "reason": "Every actual edge at a size-two endpoint has d_H in {0,4}, so its neighbor sum is divisible by four."
+      },
+      {
+        "fixed_sum": 16,
+        "induced_degree_lower": 8,
+        "meeting_neighbors": 4,
+        "positive_disjoint_neighbors": 4,
+        "possible": true,
+        "q_pair": [
+          4,
+          4
+        ]
+      }
+    ],
+    "two_enumerations_equal": true,
+    "universal_minimum_degree": "A size-two point has four meeting neighbors plus the table's distinct positive disjoint neighbors; a point of size at least three has at least six distinct meeting neighbors. Therefore delta(G[X])>=6."
+  },
+  "exclusions": {
+    "coverage": {
+      "admissible_q_profiles_through_r19": 12,
+      "all_requested_cases_have_explicit_necessary_contradictions": true,
+      "r18_q_rows": 3,
+      "r19_q_by_m_point_rows": 8,
+      "r20_m28_point_rows": 5,
+      "r20_m29_point_rows": 2,
+      "r_at_most_17_q_rows": 7
+    },
+    "r18": [
+      {
+        "F_restrictions": [
+          "simple (linearity forbids duplicate size-two points)",
+          "cubic (each label occurs in exactly three points)",
+          "triangle-free (a triangle would be a Berge triangle)",
+          "connectivity not assumed"
+        ],
+        "m": 27,
+        "point_profiles": [
+          {
+            "incidence_sum": 54,
+            "multiset": "2^27",
+            "point_count": 27,
+            "sizes": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "q": "2^16 4^2",
+        "reason": {
+          "equality_degree": 6,
+          "incident_point_minimum_degree": 7,
+          "q4_label_occurrences_in_points": 6,
+          "type": "q4_point_degree"
+        },
+        "result": "EXCLUDED",
+        "spectral_equality_degree": 6
+      },
+      {
+        "F_restrictions": [
+          "simple (linearity forbids duplicate size-two points)",
+          "cubic (each label occurs in exactly three points)",
+          "triangle-free (a triangle would be a Berge triangle)",
+          "connectivity not assumed"
+        ],
+        "m": 27,
+        "point_profiles": [
+          {
+            "incidence_sum": 54,
+            "multiset": "2^27",
+            "point_count": 27,
+            "sizes": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "q": "2^15 3^2 4",
+        "reason": {
+          "enumerated_cubic_graph_count": 0,
+          "maximum_simple_degree": 1,
+          "odd_label_count": 2,
+          "required_degree_inside_odd_part": 3,
+          "type": "odd_component_too_small"
+        },
+        "result": "EXCLUDED",
+        "spectral_equality_degree": 6
+      },
+      {
+        "F_restrictions": [
+          "simple (linearity forbids duplicate size-two points)",
+          "cubic (each label occurs in exactly three points)",
+          "triangle-free (a triangle would be a Berge triangle)",
+          "connectivity not assumed"
+        ],
+        "m": 27,
+        "point_profiles": [
+          {
+            "incidence_sum": 54,
+            "multiset": "2^27",
+            "point_count": 27,
+            "sizes": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "q": "2^14 3^4",
+        "reason": {
+          "contradiction": "no-Berge premise makes F triangle-free",
+          "enumerated_cubic_graph_count": 1,
+          "forced_triangle_count": 4,
+          "odd_label_count": 4,
+          "type": "odd_component_forces_K4"
+        },
+        "result": "EXCLUDED",
+        "spectral_equality_degree": 6
+      }
+    ],
+    "r19": [
+      {
+        "m": 27,
+        "point_profile": "2^26 5",
+        "q": "2^18 4",
+        "reason": {
+          "equality_degree": 6,
+          "largest_point": 5,
+          "meeting_degree": 10,
+          "type": "meeting_degree_exceeds_equality"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "m": 27,
+        "point_profile": "2^25 3 4",
+        "q": "2^18 4",
+        "reason": {
+          "equality_degree": 6,
+          "largest_point": 4,
+          "meeting_degree": 8,
+          "type": "meeting_degree_exceeds_equality"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "m": 27,
+        "point_profile": "2^24 3^3",
+        "q": "2^18 4",
+        "reason": {
+          "crossing_max_each": 4,
+          "fixed_sum_lower": 12,
+          "other_size3_points": 2,
+          "size2_meeting_crossing_max": 0,
+          "total_crossing_max": 8,
+          "type": "unique_3xsize3_profile"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "m": 28,
+        "point_profile": "2^27 3",
+        "q": "2^18 4",
+        "reason": {
+          "degree_sum_lower_before_parity": 171,
+          "degree_sum_lower_even": 172,
+          "fixed_sum_if_divisible_requires_at_least": 3,
+          "maximum_even_degree_sum": 170,
+          "positive_disjoint_crossing_size": 4,
+          "six_size2_meeting_crossings": 0,
+          "size3_degree_lower": 9,
+          "spectral_upper_fraction": "1540/9",
+          "type": "unique_size3_degree_parity"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "m": 27,
+        "point_profile": "2^26 5",
+        "q": "2^17 3^2",
+        "reason": {
+          "equality_degree": 6,
+          "largest_point": 5,
+          "meeting_degree": 10,
+          "type": "meeting_degree_exceeds_equality"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "m": 27,
+        "point_profile": "2^25 3 4",
+        "q": "2^17 3^2",
+        "reason": {
+          "equality_degree": 6,
+          "largest_point": 4,
+          "meeting_degree": 8,
+          "type": "meeting_degree_exceeds_equality"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "m": 27,
+        "point_profile": "2^24 3^3",
+        "q": "2^17 3^2",
+        "reason": {
+          "crossing_max_each": 4,
+          "fixed_sum_lower": 12,
+          "other_size3_points": 2,
+          "size2_meeting_crossing_max": 0,
+          "total_crossing_max": 8,
+          "type": "unique_3xsize3_profile"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "m": 28,
+        "point_profile": "2^27 3",
+        "q": "2^17 3^2",
+        "reason": {
+          "degree_sum_lower_before_parity": 171,
+          "degree_sum_lower_even": 172,
+          "fixed_sum_if_divisible_requires_at_least": 3,
+          "maximum_even_degree_sum": 170,
+          "positive_disjoint_crossing_size": 4,
+          "six_size2_meeting_crossings": 0,
+          "size3_degree_lower": 9,
+          "spectral_upper_fraction": "1540/9",
+          "type": "unique_size3_degree_parity"
+        },
+        "result": "EXCLUDED"
+      }
+    ],
+    "r20_m28": [
+      {
+        "point_profile": "2^27 6",
+        "reason": {
+          "forced_excess": 6,
+          "spectral_excess_allowance": 2,
+          "type": "meeting_excess"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "point_profile": "2^26 3 5",
+        "reason": {
+          "forced_excess": 4,
+          "spectral_excess_allowance": 2,
+          "type": "meeting_excess"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "point_profile": "2^26 4^2",
+        "reason": {
+          "forced_excess": 4,
+          "spectral_excess_allowance": 2,
+          "type": "meeting_excess"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "point_profile": "2^25 3^2 4",
+        "reason": {
+          "maximum_crossing_each": 4,
+          "maximum_total": 8,
+          "only_other_large_meeting_points": 2,
+          "remaining_excess_allowance": 0,
+          "size3_fixed_sum": 12,
+          "size4_forced_excess": 2,
+          "type": "size3_fixed_sum_shortfall_after_size4_uses_allowance"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "point_profile": "2^24 3^4",
+        "reason": {
+          "dense_graph_lemma": {
+            "all_have_two_triangles_sharing_an_edge": true,
+            "edge_counts": [
+              5,
+              6
+            ],
+            "labeled_graphs_checked": 7,
+            "witnesses": [
+              {
+                "edge_sharing_triangle_pair": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    0,
+                    1,
+                    3
+                  ]
+                ],
+                "edges": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ],
+                "triangle_count": 2
+              },
+              {
+                "edge_sharing_triangle_pair": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    0,
+                    2,
+                    3
+                  ]
+                ],
+                "edges": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    2,
+                    3
+                  ]
+                ],
+                "triangle_count": 2
+              },
+              {
+                "edge_sharing_triangle_pair": [
+                  [
+                    0,
+                    1,
+                    3
+                  ],
+                  [
+                    0,
+                    2,
+                    3
+                  ]
+                ],
+                "edges": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    2,
+                    3
+                  ]
+                ],
+                "triangle_count": 2
+              },
+              {
+                "edge_sharing_triangle_pair": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "edges": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    2,
+                    3
+                  ]
+                ],
+                "triangle_count": 2
+              },
+              {
+                "edge_sharing_triangle_pair": [
+                  [
+                    0,
+                    1,
+                    3
+                  ],
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "edges": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    2,
+                    3
+                  ]
+                ],
+                "triangle_count": 2
+              },
+              {
+                "edge_sharing_triangle_pair": [
+                  [
+                    0,
+                    2,
+                    3
+                  ],
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "edges": [
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    2,
+                    3
+                  ]
+                ],
+                "triangle_count": 2
+              },
+              {
+                "edge_sharing_triangle_pair": [
+                  [
+                    0,
+                    1,
+                    2
+                  ],
+                  [
+                    0,
+                    1,
+                    3
+                  ]
+                ],
+                "edges": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    2
+                  ],
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    2,
+                    3
+                  ]
+                ],
+                "triangle_count": 4
+              }
+            ]
+          },
+          "no_Berge_bridge": "Each edge-sharing triangle of linear meeting points has one common label; the shared point-pair forces the two labels equal, putting one label in four points instead of three.",
+          "positive_disjoint_directed_terms_at_most": 2,
+          "positive_meeting_edges_on_Y_at_least": 5,
+          "positive_terms_per_Y_point": 3,
+          "six_crossing_excluded_because": "one 6 requires a second 6 at that endpoint; the two disjoint Y-edges contribute at least four degree incidences",
+          "total_excess_allowance": 2,
+          "type": "four_size3_no_Berge_contradiction"
+        },
+        "result": "EXCLUDED"
+      }
+    ],
+    "r20_m29": [
+      {
+        "point_profile": "2^28 4",
+        "reason": {
+          "T": 6,
+          "U": 36,
+          "balanced_witness_multiset": "3^54 4^16",
+          "forced_degree": 12,
+          "integer_minimum_square_sum_dp": 742,
+          "integer_minimum_square_sum_formula": 742,
+          "meeting_crossings_to_size2": 0,
+          "meeting_degree": 8,
+          "outside_population": 70,
+          "outside_square_sum": 698,
+          "outside_sum": 226,
+          "positive_disjoint_neighbors_required": 4,
+          "type": "unique_size4_outside_moment"
+        },
+        "result": "EXCLUDED"
+      },
+      {
+        "point_profile": "2^27 3^2",
+        "reason": {
+          "cases": [
+            {
+              "T": 4,
+              "balanced_witness_multiset": "3^52 4^18",
+              "contradiction_gap": 4,
+              "integer_minimum_square_sum": 756,
+              "maximum_outside_square_sum": 752,
+              "minimum_U": 8,
+              "outside_sum": 228
+            },
+            {
+              "T": 6,
+              "balanced_witness_multiset": "3^54 4^16",
+              "contradiction_gap": 18,
+              "integer_minimum_square_sum": 742,
+              "maximum_outside_square_sum": 724,
+              "minimum_U": 10,
+              "outside_sum": 226
+            }
+          ],
+          "local_excess_lemma": "Each size-three point has excess at least two; equality requires the two size-three points to meet with a positive four-edge crossing. Otherwise its excess is at least three.",
+          "spectral_and_parity_cases": [
+            4,
+            6
+          ],
+          "type": "two_size3_outside_moments"
+        },
+        "result": "EXCLUDED"
+      }
+    ],
+    "r_at_most_17": [
+      {
+        "maximum_m_from_non_singletons": 21,
+        "minimum_m_from_delta_6_and_spectrum": 27,
+        "q": "2^2 3^12",
+        "r": 14,
+        "result": "EXCLUDED"
+      },
+      {
+        "maximum_m_from_non_singletons": 22,
+        "minimum_m_from_delta_6_and_spectrum": 27,
+        "q": "2^5 3^10",
+        "r": 15,
+        "result": "EXCLUDED"
+      },
+      {
+        "maximum_m_from_non_singletons": 24,
+        "minimum_m_from_delta_6_and_spectrum": 27,
+        "q": "2^8 3^8",
+        "r": 16,
+        "result": "EXCLUDED"
+      },
+      {
+        "maximum_m_from_non_singletons": 25,
+        "minimum_m_from_delta_6_and_spectrum": 27,
+        "q": "2^14 4^3",
+        "r": 17,
+        "result": "EXCLUDED"
+      },
+      {
+        "maximum_m_from_non_singletons": 25,
+        "minimum_m_from_delta_6_and_spectrum": 27,
+        "q": "2^13 3^2 4^2",
+        "r": 17,
+        "result": "EXCLUDED"
+      },
+      {
+        "maximum_m_from_non_singletons": 25,
+        "minimum_m_from_delta_6_and_spectrum": 27,
+        "q": "2^12 3^4 4",
+        "r": 17,
+        "result": "EXCLUDED"
+      },
+      {
+        "maximum_m_from_non_singletons": 25,
+        "minimum_m_from_delta_6_and_spectrum": 27,
+        "q": "2^11 3^6",
+        "r": 17,
+        "result": "EXCLUDED"
+      }
+    ]
+  },
+  "graph_encoding_hostile_tests": {
+    "K3,3_control": {
+      "component_count": 1,
+      "connectedness_imposed": false,
+      "degree_multiset": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "edge_count": 9,
+      "triangle_count": 0,
+      "vertex_count": 6
+    },
+    "degree_preserving_2_switch": {
+      "degree_only_result": {
+        "component_count": 1,
+        "connectedness_imposed": false,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "edge_count": 9,
+        "triangle_count": 2,
+        "vertex_count": 6
+      },
+      "significance": "degree sequence alone does not enforce no-Berge/triangle-free",
+      "triangle_free_result": {
+        "reason": "triangle-free condition rejected",
+        "result": "REJECTED"
+      }
+    },
+    "disconnected_double_Petersen": {
+      "component_count": 2,
+      "connectedness_imposed": false,
+      "degree_multiset": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "edge_count": 30,
+      "result": "RETAINED",
+      "significance": "connectivity is not imposed anywhere in the reductions",
+      "triangle_count": 0,
+      "vertex_count": 20
+    },
+    "impostors": {
+      "loop": {
+        "reason": "loop rejected",
+        "result": "REJECTED"
+      },
+      "parallel": {
+        "reason": "parallel edge rejected",
+        "result": "REJECTED"
+      }
+    }
+  },
+  "outside_histogram_hostile_tests": {
+    "moment_collision_retained": {
+      "common_population_first_second": [
+        70,
+        207,
+        621
+      ],
+      "histogram_a": {
+        "0": 1,
+        "3": 69
+      },
+      "histogram_b": {
+        "1": 2,
+        "3": 67,
+        "4": 1
+      },
+      "limitation": "first and second moments do not determine a histogram",
+      "result": "RETAINED_AS_TWO_DISTINCT_NECESSARY-MOMENT_WITNESSES"
+    },
+    "mutations": [
+      {
+        "first": 226,
+        "mutation": "correct_population_and_first_wrong_second",
+        "population": 70,
+        "reason": "outside second moment mismatch",
+        "result": "REJECTED",
+        "second": 742
+      },
+      {
+        "first": 56,
+        "mutation": "correct_population_and_second_wrong_first",
+        "population": 70,
+        "reason": "outside first moment mismatch",
+        "result": "REJECTED",
+        "second": 698
+      },
+      {
+        "first": 210,
+        "mutation": "correct_population_wrong_both",
+        "population": 70,
+        "reason": "outside first moment mismatch",
+        "result": "REJECTED",
+        "second": 630
+      }
+    ],
+    "target_impossible_row": {
+      "first": 226,
+      "population": 70,
+      "second": 698,
+      "unrestricted_integer_minimum_second": 742
+    }
+  },
+  "point_profiles": {
+    "r18_m27": {
+      "count": 1,
+      "method_A": "partition the excess 3r-2m over point sizes above two",
+      "method_B": "histogram recursion over positive excess sizes",
+      "method_sets_equal": true,
+      "rows": [
+        {
+          "incidence_sum": 54,
+          "multiset": "2^27",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    "r19_m27": {
+      "count": 3,
+      "method_A": "partition the excess 3r-2m over point sizes above two",
+      "method_B": "histogram recursion over positive excess sizes",
+      "method_sets_equal": true,
+      "rows": [
+        {
+          "incidence_sum": 57,
+          "multiset": "2^26 5",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            5
+          ]
+        },
+        {
+          "incidence_sum": 57,
+          "multiset": "2^25 3 4",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "incidence_sum": 57,
+          "multiset": "2^24 3^3",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    "r19_m28": {
+      "count": 1,
+      "method_A": "partition the excess 3r-2m over point sizes above two",
+      "method_B": "histogram recursion over positive excess sizes",
+      "method_sets_equal": true,
+      "rows": [
+        {
+          "incidence_sum": 57,
+          "multiset": "2^27 3",
+          "point_count": 28,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "r20_m27": {
+      "count": 11,
+      "method_A": "partition the excess 3r-2m over point sizes above two",
+      "method_B": "histogram recursion over positive excess sizes",
+      "method_sets_equal": true,
+      "rows": [
+        {
+          "incidence_sum": 60,
+          "multiset": "2^26 8",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            8
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^25 3 7",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^25 4 6",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^25 5^2",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            5,
+            5
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^24 3^2 6",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            6
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^24 3 4 5",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^24 4^3",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^23 3^3 5",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            5
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^23 3^2 4^2",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^22 3^4 4",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^21 3^6",
+          "point_count": 27,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    "r20_m28": {
+      "count": 5,
+      "method_A": "partition the excess 3r-2m over point sizes above two",
+      "method_B": "histogram recursion over positive excess sizes",
+      "method_sets_equal": true,
+      "rows": [
+        {
+          "incidence_sum": 60,
+          "multiset": "2^27 6",
+          "point_count": 28,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            6
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^26 3 5",
+          "point_count": 28,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^26 4^2",
+          "point_count": 28,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^25 3^2 4",
+          "point_count": 28,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^24 3^4",
+          "point_count": 28,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    "r20_m29": {
+      "count": 2,
+      "method_A": "partition the excess 3r-2m over point sizes above two",
+      "method_B": "histogram recursion over positive excess sizes",
+      "method_sets_equal": true,
+      "rows": [
+        {
+          "incidence_sum": 60,
+          "multiset": "2^28 4",
+          "point_count": 29,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ]
+        },
+        {
+          "incidence_sum": 60,
+          "multiset": "2^27 3^2",
+          "point_count": 29,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    "r20_m30": {
+      "count": 1,
+      "method_A": "partition the excess 3r-2m over point sizes above two",
+      "method_B": "histogram recursion over positive excess sizes",
+      "method_sets_equal": true,
+      "rows": [
+        {
+          "incidence_sum": 60,
+          "multiset": "2^30",
+          "point_count": 30,
+          "sizes": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    }
+  },
+  "post_derivation_wave19_comparison": {
+    "comparison_stage": "after independent derivation was frozen",
+    "crossing_rows_exact_match": true,
+    "limitation": "Agreement with a submitted JSON is corroboration, not a certificate of the semantic proof.",
+    "q_profile_set_exact_match": true,
+    "r20_m29_moment_rows_exact_match": true,
+    "submitted_module_imported": false,
+    "submitted_q_profile_count": 13
+  },
+  "premise_authentication": {
+    "all_match": true,
+    "executed_premise_replays": [
+      {
+        "command": ".venv\\Scripts\\python.exe -B attempts\\wave15-global-lift\\verify_subset_moment_certificate.py attempts\\wave15-global-lift\\subset-moment-certificate.json",
+        "result": "PASS; 9 size profiles; discovery label remained DERIVED"
+      },
+      {
+        "command": ".venv\\Scripts\\python.exe -B attempts\\wave16-n3-51-structural\\exact_check.py --verify attempts\\wave16-n3-51-structural\\exact-checks.json",
+        "result": "PASS; 16 raw profiles and 4 d_K>=4 survivors at sum(q)=34"
+      }
+    ],
+    "files": [
+      {
+        "actual_sha256": "983f90c1d150c6e14e5e2bc7a010e1a3809848ddb1e4b825e5fdfac70398d6af",
+        "bytes": 6571,
+        "expected_sha256": "983f90c1d150c6e14e5e2bc7a010e1a3809848ddb1e4b825e5fdfac70398d6af",
+        "match": true,
+        "path": "verification/n3-60-structural/preinspection-freeze.md"
+      },
+      {
+        "actual_sha256": "edda3785d080db464028f10c22bcae5c0bf17f1e61432a8641bfa6ffdccab036",
+        "bytes": 19795,
+        "expected_sha256": "edda3785d080db464028f10c22bcae5c0bf17f1e61432a8641bfa6ffdccab036",
+        "match": true,
+        "path": "verification/2026-07-23-wave15-global-lift-audit.md"
+      },
+      {
+        "actual_sha256": "b0541d05d2c1c359152b86223e2ebbdbd002b2ff42deb699f6a0b21d149a5b45",
+        "bytes": 17468,
+        "expected_sha256": "b0541d05d2c1c359152b86223e2ebbdbd002b2ff42deb699f6a0b21d149a5b45",
+        "match": true,
+        "path": "verification/2026-07-23-wave15-algebraic-audit.md"
+      },
+      {
+        "actual_sha256": "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6",
+        "bytes": 21339,
+        "expected_sha256": "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6",
+        "match": true,
+        "path": "verification/2026-07-23-wave16-n3-51-structural-audit.md"
+      },
+      {
+        "actual_sha256": "cb02ab80f92d7d2c8ec5140e3be2916354976442aa2e1869524aa728c73bd386",
+        "bytes": 5147,
+        "expected_sha256": "cb02ab80f92d7d2c8ec5140e3be2916354976442aa2e1869524aa728c73bd386",
+        "match": true,
+        "path": "attempts/wave15-global-lift/subset-moment-certificate.json"
+      },
+      {
+        "actual_sha256": "0429db33fa0a61864ff8456326379fab47a09e7b8ea7234130d12b018cd041c2",
+        "bytes": 3736,
+        "expected_sha256": "0429db33fa0a61864ff8456326379fab47a09e7b8ea7234130d12b018cd041c2",
+        "match": true,
+        "path": "attempts/wave15-global-lift/verify_subset_moment_certificate.py"
+      },
+      {
+        "actual_sha256": "5aef211ea7d457543fc3f494eea125bbd0fd6fae2533fd566b475ff3f971c5cf",
+        "bytes": 8816,
+        "expected_sha256": "5aef211ea7d457543fc3f494eea125bbd0fd6fae2533fd566b475ff3f971c5cf",
+        "match": true,
+        "path": "attempts/wave16-n3-51-structural/exact_check.py"
+      },
+      {
+        "actual_sha256": "7419a54effd68d6853e787616a82dc618163d472d8969772cd2e6220b336ab24",
+        "bytes": 6715,
+        "expected_sha256": "7419a54effd68d6853e787616a82dc618163d472d8969772cd2e6220b336ab24",
+        "match": true,
+        "path": "attempts/wave16-n3-51-structural/exact-checks.json"
+      },
+      {
+        "actual_sha256": "b2f90af07f34a6525ea35cdf4d392d95aea10fc319633cd17037d00145690744",
+        "bytes": 17619,
+        "expected_sha256": "b2f90af07f34a6525ea35cdf4d392d95aea10fc319633cd17037d00145690744",
+        "match": true,
+        "path": "agents/2026-07-23-wave19-n3-60-structural.md"
+      },
+      {
+        "actual_sha256": "c7564eef0f1c62165c91a36071ab34b494ead891877011e755407ad48adee460",
+        "bytes": 24615,
+        "expected_sha256": "c7564eef0f1c62165c91a36071ab34b494ead891877011e755407ad48adee460",
+        "match": true,
+        "path": "attempts/wave19-n3-60-structural/exact_check.py"
+      },
+      {
+        "actual_sha256": "fc884ea131b1b6c926d9e71ddb1f7925e15c39498f1d7b72819a6473b39ab8dd",
+        "bytes": 18004,
+        "expected_sha256": "fc884ea131b1b6c926d9e71ddb1f7925e15c39498f1d7b72819a6473b39ab8dd",
+        "match": true,
+        "path": "attempts/wave19-n3-60-structural/exact-checks.json"
+      },
+      {
+        "actual_sha256": "1b1d2628d6c2d837dec24ec679d579676b5a0e66962e0266cee2642040bf6165",
+        "bytes": 4995,
+        "expected_sha256": "1b1d2628d6c2d837dec24ec679d579676b5a0e66962e0266cee2642040bf6165",
+        "match": true,
+        "path": "attempts/wave19-n3-60-structural/test_exact_check.py"
+      },
+      {
+        "actual_sha256": "62d43cdb66c599c8c1e1618ca54267c1bf08ba20ad175e04883349cf6f876a0e",
+        "bytes": 1533,
+        "expected_sha256": "62d43cdb66c599c8c1e1618ca54267c1bf08ba20ad175e04883349cf6f876a0e",
+        "match": true,
+        "path": "attempts/wave19-n3-60-structural/failed-attempts.md"
+      },
+      {
+        "actual_sha256": "3396b3b67b944b86bfd0d51e8beca25dfc9350815269c62cda4fa7c22a7a5c8b",
+        "bytes": 15149,
+        "expected_sha256": "3396b3b67b944b86bfd0d51e8beca25dfc9350815269c62cda4fa7c22a7a5c8b",
+        "match": true,
+        "path": "attempts/wave19-n3-60-structural/residual-certificates.json"
+      }
+    ]
+  },
+  "premise_derivations": {
+    "d_K_degree_three_obstruction": {
+      "conclusion": "d_K=3 is impossible; d_K>=4 is authenticated",
+      "ordered_assignments_checked": [
+        {
+          "forbidden_points": [
+            [
+              "a",
+              "x"
+            ],
+            [
+              "b",
+              "x"
+            ],
+            [
+              "a",
+              "b"
+            ]
+          ],
+          "ordered_external_assignment": [
+            "b",
+            "c"
+          ],
+          "pairwise_intersection_labels": [
+            "a",
+            "b",
+            "x"
+          ],
+          "result": "REJECTED_BY_NO_BERGE_TRIANGLE"
+        },
+        {
+          "forbidden_points": [
+            [
+              "a",
+              "x"
+            ],
+            [
+              "c",
+              "x"
+            ],
+            [
+              "a",
+              "c"
+            ]
+          ],
+          "ordered_external_assignment": [
+            "c",
+            "b"
+          ],
+          "pairwise_intersection_labels": [
+            "a",
+            "c",
+            "x"
+          ],
+          "result": "REJECTED_BY_NO_BERGE_TRIANGLE"
+        }
+      ],
+      "scope": "one active label x with d_K(x)=3",
+      "semantic_steps": [
+        "Each label lies in three non-singleton points; their nonempty external parts are pairwise disjoint K-neighbor sets, so d_K(x)>=3.",
+        "The three non-singleton linear points through x use its three K-neighbors once each.",
+        "For point {x,a}, the two other points through label a have nonempty disjoint external parts.",
+        "After deleting a on the actual meeting edges, the two-sided rule confines those parts to {b,c}.",
+        "The only ordered assignments create {x,a},{x,b},{a,b} or its b/c relabeling."
+      ]
+    },
+    "indexed_incidence": [
+      "each active label occurs in exactly three indexed points",
+      "every nonempty point has size at least two",
+      "sum_u |S_u|=3r and m<=floor(3r/2)"
+    ],
+    "outside_moments": {
+      "derivation": [
+        "sum_out a_z=14m-sum_in d_x",
+        "sum_out C(a_z,2)=2C(m,2)-e(X)-sum_in C(d_x,2)",
+        "therefore sum_out a_z^2=2m^2+12m-sum_in(d_x^2+d_x)",
+        "with d_x=6+s_x: first=8m-T, second=2m^2-30m-13T-U"
+      ],
+      "toy_direct_count": {
+        "all_direct_counts_match": true,
+        "sample_rows": [
+          {
+            "derived": [
+              0,
+              0
+            ],
+            "direct": [
+              0,
+              0
+            ],
+            "m": 0,
+            "mask": 0
+          },
+          {
+            "derived": [
+              2,
+              2
+            ],
+            "direct": [
+              2,
+              2
+            ],
+            "m": 1,
+            "mask": 1
+          },
+          {
+            "derived": [
+              2,
+              2
+            ],
+            "direct": [
+              2,
+              2
+            ],
+            "m": 1,
+            "mask": 2
+          },
+          {
+            "derived": [
+              2,
+              2
+            ],
+            "direct": [
+              2,
+              2
+            ],
+            "m": 2,
+            "mask": 3
+          },
+          {
+            "derived": [
+              2,
+              2
+            ],
+            "direct": [
+              2,
+              2
+            ],
+            "m": 3,
+            "mask": 28
+          },
+          {
+            "derived": [
+              2,
+              4
+            ],
+            "direct": [
+              2,
+              4
+            ],
+            "m": 4,
+            "mask": 29
+          },
+          {
+            "derived": [
+              2,
+              4
+            ],
+            "direct": [
+              2,
+              4
+            ],
+            "m": 4,
+            "mask": 30
+          },
+          {
+            "derived": [
+              0,
+              0
+            ],
+            "direct": [
+              0,
+              0
+            ],
+            "m": 5,
+            "mask": 31
+          }
+        ],
+        "subsets_checked": 32,
+        "toy_srg": "C5 = srg(5,2,0,1)"
+      }
+    },
+    "q_system": [
+      "sum_T q(T)=40",
+      "active q(T)>=2",
+      "d_K(T)=r-1-3q(T)>=4"
+    ],
+    "spectral": {
+      "first_order_compatible_with_minimum_degree_6": 27,
+      "indicator_decomposition": "1_X=(m/99)1+y with y perpendicular to 1; use the largest restricted eigenvalue 3",
+      "restricted_eigenvalues": [
+        -4,
+        3
+      ],
+      "rows_m_27_to_30": [
+        {
+          "baseline_6m": 162,
+          "m": 27,
+          "maximum_even_degree_sum": 162,
+          "maximum_excess_T": 0,
+          "upper_fraction": "162/1"
+        },
+        {
+          "baseline_6m": 168,
+          "m": 28,
+          "maximum_even_degree_sum": 170,
+          "maximum_excess_T": 2,
+          "upper_fraction": "1540/9"
+        },
+        {
+          "baseline_6m": 174,
+          "m": 29,
+          "maximum_even_degree_sum": 180,
+          "maximum_excess_T": 6,
+          "upper_fraction": "1624/9"
+        },
+        {
+          "baseline_6m": 180,
+          "m": 30,
+          "maximum_even_degree_sum": 190,
+          "maximum_excess_T": 10,
+          "upper_fraction": "190/1"
+        }
+      ],
+      "subset_bound": "2e(G[X]) <= 3m+m^2/9",
+      "target_matrix_equation": "A^2=12I-A+2J"
+    }
+  },
+  "q_profiles": {
+    "admissible_count": 13,
+    "canonicalization": {
+      "canonical_relabeling_rows": [
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 91,
+          "q": "2^2 3^12",
+          "r": 14,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 3003,
+          "q": "2^5 3^10",
+          "r": 15,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 12870,
+          "q": "2^8 3^8",
+          "r": 16,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 680,
+          "q": "2^14 4^3",
+          "r": 17,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 14280,
+          "q": "2^13 3^2 4^2",
+          "r": 17,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 30940,
+          "q": "2^12 3^4 4",
+          "r": 17,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 12376,
+          "q": "2^11 3^6",
+          "r": 17,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 153,
+          "q": "2^16 4^2",
+          "r": 18,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 2448,
+          "q": "2^15 3^2 4",
+          "r": 18,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 3060,
+          "q": "2^14 3^4",
+          "r": 18,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 19,
+          "q": "2^18 4",
+          "r": 19,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 171,
+          "q": "2^17 3^2",
+          "r": 19,
+          "tested_relabelings": 3
+        },
+        {
+          "canonical_collision": false,
+          "labeled_orbit_size": 1,
+          "q": "2^20",
+          "r": 20,
+          "tested_relabelings": 3
+        }
+      ],
+      "hostile_automorphism_restriction": {
+        "restricted_multiset_count": 1,
+        "restricted_survivors": [
+          {
+            "q": "2^20",
+            "r": 20
+          }
+        ],
+        "restriction": "force all active labels to have the same q",
+        "result": "REJECTED_AS_SPACE_CHANGING",
+        "unrestricted_multiset_count": 13
+      },
+      "unlabeled_to_labeled_mapping": "Every labeled assignment has exactly one sorted multiset; the orbit size is r!/product(count(q)!)."
+    },
+    "domain": {
+      "filter": "r-1-3q>=4 for every active entry",
+      "raw_entry_lower_bound": 2,
+      "raw_r_range": [
+        1,
+        20
+      ],
+      "weighted_total": 40
+    },
+    "hostile_d_K_weakening": {
+      "d_K_at_least_3_count": 17,
+      "d_K_at_least_4_count": 13,
+      "extra_profiles": [
+        {
+          "q": "2^12 4^4",
+          "r": 16
+        },
+        {
+          "q": "2^11 3^2 4^3",
+          "r": 16
+        },
+        {
+          "q": "2^10 3^4 4^2",
+          "r": 16
+        },
+        {
+          "q": "2^9 3^6 4",
+          "r": 16
+        }
+      ],
+      "result": "SPACE_CHANGED; weakening rejected by degree-three obstruction"
+    },
+    "method_A": "fixed-length nondecreasing partitions then equation filter",
+    "method_B": "q-value histogram recursion on label count and weighted sum",
+    "method_sets_equal": true,
+    "one_unit_histogram_mutations": [
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^2 3^12",
+          "r": 14
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^2 3^12",
+          "r": 14
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^2 3^12",
+          "r": 14
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^5 3^10",
+          "r": 15
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^5 3^10",
+          "r": 15
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^5 3^10",
+          "r": 15
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^8 3^8",
+          "r": 16
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^8 3^8",
+          "r": 16
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^8 3^8",
+          "r": 16
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^14 4^3",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^14 4^3",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=5",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^14 4^3",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^13 3^2 4^2",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^13 3^2 4^2",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^13 3^2 4^2",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^13 3^2 4^2",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=5",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^13 3^2 4^2",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^12 3^4 4",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^12 3^4 4",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^12 3^4 4",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^12 3^4 4",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=5",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^12 3^4 4",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^11 3^6",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^11 3^6",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^11 3^6",
+          "r": 17
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^16 4^2",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^16 4^2",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=5",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^16 4^2",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^15 3^2 4",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^15 3^2 4",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^15 3^2 4",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^15 3^2 4",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=5",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^15 3^2 4",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^14 3^4",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^14 3^4",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^14 3^4",
+          "r": 18
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^18 4",
+          "r": 19
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^18 4",
+          "r": 19
+        }
+      },
+      {
+        "mutation": "one label q=4 -> q=5",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q",
+          "d_K"
+        ],
+        "source": {
+          "q": "2^18 4",
+          "r": 19
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^17 3^2",
+          "r": 19
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=2",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^17 3^2",
+          "r": 19
+        }
+      },
+      {
+        "mutation": "one label q=3 -> q=4",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^17 3^2",
+          "r": 19
+        }
+      },
+      {
+        "mutation": "one label q=2 -> q=3",
+        "preserved_equation": "number of active labels r",
+        "rejected_by": [
+          "sum_q"
+        ],
+        "source": {
+          "q": "2^20",
+          "r": 20
+        }
+      }
+    ],
+    "raw_partition_count_by_r": {
+      "1": 1,
+      "10": 530,
+      "11": 355,
+      "12": 224,
+      "13": 134,
+      "14": 77,
+      "15": 42,
+      "16": 22,
+      "17": 11,
+      "18": 5,
+      "19": 2,
+      "2": 19,
+      "20": 1,
+      "3": 114,
+      "4": 351,
+      "5": 674,
+      "6": 931,
+      "7": 1009,
+      "8": 919,
+      "9": 732
+    },
+    "rows": [
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "4^12 7^2",
+        "d_K_values": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          7,
+          7
+        ],
+        "point_count_cap": 21,
+        "q_multiset": "2^2 3^12",
+        "q_values": [
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 14
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "5^10 8^5",
+        "d_K_values": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "point_count_cap": 22,
+        "q_multiset": "2^5 3^10",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 15
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "6^8 9^8",
+        "d_K_values": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "point_count_cap": 24,
+        "q_multiset": "2^8 3^8",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 16
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "4^3 10^14",
+        "d_K_values": [
+          4,
+          4,
+          4,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "point_count_cap": 25,
+        "q_multiset": "2^14 4^3",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ],
+        "r": 17
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "4^2 7^2 10^13",
+        "d_K_values": [
+          4,
+          4,
+          7,
+          7,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "point_count_cap": 25,
+        "q_multiset": "2^13 3^2 4^2",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4
+        ],
+        "r": 17
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "4 7^4 10^12",
+        "d_K_values": [
+          4,
+          7,
+          7,
+          7,
+          7,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "point_count_cap": 25,
+        "q_multiset": "2^12 3^4 4",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "r": 17
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "7^6 10^11",
+        "d_K_values": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "point_count_cap": 25,
+        "q_multiset": "2^11 3^6",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 17
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "5^2 11^16",
+        "d_K_values": [
+          5,
+          5,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "point_count_cap": 27,
+        "q_multiset": "2^16 4^2",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4
+        ],
+        "r": 18
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "5 8^2 11^15",
+        "d_K_values": [
+          5,
+          8,
+          8,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "point_count_cap": 27,
+        "q_multiset": "2^15 3^2 4",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4
+        ],
+        "r": 18
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "8^4 11^14",
+        "d_K_values": [
+          8,
+          8,
+          8,
+          8,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "point_count_cap": 27,
+        "q_multiset": "2^14 3^4",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3
+        ],
+        "r": 18
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "6 12^18",
+        "d_K_values": [
+          6,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "point_count_cap": 28,
+        "q_multiset": "2^18 4",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "r": 19
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "9^2 12^17",
+        "d_K_values": [
+          9,
+          9,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "point_count_cap": 28,
+        "q_multiset": "2^17 3^2",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        "r": 19
+      },
+      {
+        "checks": {
+          "all_d_K_at_least_4": true,
+          "entry_minimum_2": true,
+          "incidence_cap_formula": true,
+          "sum_q_40": true
+        },
+        "d_K_multiset": "13^20",
+        "d_K_values": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "point_count_cap": 30,
+        "q_multiset": "2^20",
+        "q_values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "r": 20
+      }
+    ]
+  },
+  "restrictions_and_limitations": [
+    "Profiles are unlabeled multisets; sorting is a proved quotient under label relabeling, not an automorphism assumption.",
+    "Point-size lists are incidence histograms only; no realizability or connectivity is inferred.",
+    "The size-two incidence graph F is required to be simple, cubic, and triangle-free, but is not required to be connected.",
+    "Crossing enumeration uses the authenticated labeled L-crossing relation and the two-sided zero-or-two rule after deleting a common label at both endpoints.",
+    "Outside moment contradictions use only necessary integer moments; moment-colliding histograms are explicitly retained.",
+    "No absence-of-construction, solver result, or search exit code is used.",
+    "The r=20,m=27 and r=20,m=30 residual regimes are outside this subtask and remain UNKNOWN.",
+    "No file or result from the prohibited later waves was read, executed, cited, or imported."
+  ],
+  "scope": "sum(q)=40 profiles, endpoint crossing semantics, all exclusions through r=19, and r=20,m=28/29; residual m=27/30 not resolved",
+  "status_boundary": {
+    "conditional_n3_60": "UNKNOWN_FINITE_RESIDUAL",
+    "r20_m27": "UNKNOWN_NOT_AUDITED_IN_THIS_SUBTASK",
+    "r20_m28": "EXCLUDED_DERIVED",
+    "r20_m29": "EXCLUDED_DERIVED",
+    "r20_m30": "UNKNOWN_NOT_AUDITED_IN_THIS_SUBTASK",
+    "r_at_most_19": "EXCLUDED_DERIVED",
+    "self_promotion_to_VERIFIED": false
+  }
+}

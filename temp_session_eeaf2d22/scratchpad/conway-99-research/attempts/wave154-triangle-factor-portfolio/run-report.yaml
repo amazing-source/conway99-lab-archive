@@ -1,0 +1,29 @@
+role: proof_b
+date_utc: 2026-07-28T12:40:50Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED_PORTFOLIO_NULL
+scope: >-
+  Symmetry-diverse Q1 portfolio and joint three-dimensional exact-cover
+  search for the fixed Wave149/Wave151 prism-free 36x60 binary factor.
+inputs:
+  - path: attempts/wave151-triangle-root-factor/package-manifest.sha256
+    sha256: 0e9ea04bad3fb41fda4224684663d828d3d19baea02387303775dd599d34d490
+  - path: attempts/wave151-triangle-root-factor/exact-results.json
+    sha256: 74bc48e2dd0434f3e36a183d724a1ae4a52d7ec9a1e109c92b14f64985da37a4
+method: >-
+  Enumerate the 384-element local centralizer and 69,270 allowed column
+  triples; construct an exact Q1 outside the Wave151 orbit; attack two
+  fixed-Q1 branches and the unrestricted joint exact cover using Z3,
+  native-cardinality SAT, MILP, and a bounded proof-export attempt.
+command: >-
+  python attempts/wave154-triangle-factor-portfolio/exact_check.py --verify
+  attempts/wave154-triangle-factor-portfolio/exact-results.json &&
+  python -m unittest discover -s
+  attempts/wave154-triangle-factor-portfolio -p "test_*.py" -v
+outputs:
+  - path: attempts/wave154-triangle-factor-portfolio/exact-results.json
+    sha256: cca362e926901f626f50ed8a0868e94dd3da6cfdac1713be67a512156013a7fd
+limitations: >-
+  Only two Q1 symmetry orbits are represented. No fixed-branch proof was
+  exported, the unrestricted C factor remains UNKNOWN, D was not reached,
+  and no graph, prism, or stricter n3 bound is established.

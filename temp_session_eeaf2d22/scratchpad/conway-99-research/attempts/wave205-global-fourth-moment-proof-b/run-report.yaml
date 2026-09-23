@@ -1,0 +1,37 @@
+role: proof_b
+date_utc: "2026-07-29T20:04:52Z"
+git_commit: "e6ac24b5728ae8f2dc13b5a6ee0f50e965843b71"
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free n3=4158 and centered rank-11 endpoint: derive the
+  exact full 99-by-99 fourth-trace factorization, audit every tensor
+  coordinate dimension, determine the star-pair feature rank, and isolate
+  the graph-specific second-moment invariant needed for further progress.
+inputs:
+  verification/wave171-pq-centered-code/verification-report.md: "1f2ba5ed92ba6bb1ccc05cd753a8e359f208c3ddc7ca85766f26f8869346414f"
+  verification/wave176-star-projector-circuits/audit.md: "f58577409f39e98b06bfbe206221d3d278f0c473bcf5057afc381094d5e65d05"
+  agents/2026-07-29-wave191-global-star-module-proof-b.md: "afe7d35627ec14a9599b427bcca0751e86a3f32b71fb7baf4d91e9e2e335f75f"
+  verification/wave203-two-center-incidence-verifier/audit.md: "382d8553457557fe2ecbe0fd1733ecb06b01f5c60be879e65cab56c078edc3d7"
+  verification/wave204-global-compatibility-verifier/package-manifest.sha256: "48cd018c7f7cebe7f2bc93a6dbd9440422f8dc843bc6c0fa96b29968e440f9c2"
+  verification/2026-07-29-wave204-orchestrator.md: "7760a4c5a4b6a501262bbb3b061828725cd23c6837fd724fada84d94a3124edd"
+method: >-
+  Exact trace transfer to ordered triangle-pair coordinates, a unit-column
+  rank proof for the point-star pair feature, Hadamard localizer
+  contractions, correct self-adjoint operator-coordinate counts, and a
+  deterministic 99-projector hostile control with exact local star
+  simplexes.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave205-global-fourth-moment-proof-b\exact_check.py --verify
+  attempts\wave205-global-fourth-moment-proof-b\exact-results.json ;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave205-global-fourth-moment-proof-b\test_exact_check.py
+outputs:
+  attempts/wave205-global-fourth-moment-proof-b/exact-results.json: "c2bcba090136d5975bfaac29bf52fdeeec21913f2ea371c1c741cc0de93f85e8"
+  attempts/wave205-global-fourth-moment-proof-b/derivation.md: "28ad3e3d2bd324e9b7cf5c2d2a7284aa938436f1477c1165ecc948b1edf222c4"
+  attempts/wave205-global-fourth-moment-proof-b/failed-routes.md: "516754fa58260f0fa96f2db7fe8709fa0ee6bcec9d5f638efc1ea9bdb836a94a"
+limitations:
+  - The 99-projector control repeats labels and does not glue its local star simplexes into 231 projectively distinct columns.
+  - The 99-point incidence control is linear and 14-regular but is not srg(99,14,1,2).
+  - No nonedge fourth trace is classified.
+  - No rank-11 or endpoint exclusion, strict n3 improvement, graph construction, or Conway-99 resolution follows.

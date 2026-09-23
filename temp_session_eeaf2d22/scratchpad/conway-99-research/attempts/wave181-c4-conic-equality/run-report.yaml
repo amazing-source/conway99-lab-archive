@@ -1,0 +1,41 @@
+role: proof_a
+date_utc: 2026-07-28T23:29:17Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 classification of multiplicity-two nonedge circuits
+  as canonical induced-C4 checkerboard conics and the exact equality face
+  Q=2079 of the Wave180 nonedge circuit lower bound.
+inputs:
+  - attempts/wave171-pq-centered-code/package-manifest.sha256
+  - verification/wave171-pq-centered-code/package-manifest.sha256
+  - attempts/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - attempts/wave179-global-transversal-circuits/package-manifest.sha256
+  - verification/wave179-global-transversal-circuits/package-manifest.sha256
+  - attempts/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+method: >-
+  Shared-center star-projector exclusion, canonical nonedge involution,
+  four-column Gram classification, minimal-cover equality analysis, and
+  signed square--triangle incidence algebra. No graph, code, SAT,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave181-c4-conic-equality\exact_check.py --verify
+  attempts\wave181-c4-conic-equality\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave181-c4-conic-equality\test_exact_check.py
+outputs:
+  - attempts/wave181-c4-conic-equality/README.md
+  - attempts/wave181-c4-conic-equality/derivation.md
+  - attempts/wave181-c4-conic-equality/failed-routes.md
+  - attempts/wave181-c4-conic-equality/protocol.md
+  - attempts/wave181-c4-conic-equality/exact_check.py
+  - attempts/wave181-c4-conic-equality/exact-results.json
+  - attempts/wave181-c4-conic-equality/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The signed incidence rank lower bound 221 is not proved.
+  - The Wave180 numerical lower bound is not made strict.
+  - Rank 11, the endpoint, and Conway-99 remain UNKNOWN.

@@ -1,0 +1,107 @@
+{
+  "claim_label": "UNKNOWN_NUMERICAL",
+  "format": "wave141-bivariate-numeric-scout-v1",
+  "negative_inference_allowed": false,
+  "results": [
+    {
+      "arf_sign": 1,
+      "base_equality_rows": 129,
+      "base_inequality_rows": 246,
+      "elapsed_seconds": 4.281,
+      "free_memory_percent_after": 44.03625688509601,
+      "free_memory_percent_before": 44.09277878651742,
+      "initial_input_rows": 1,
+      "last_point": {
+        "implied_n3": 6553738.8984375,
+        "max_all_transform_residual_q": 10353582664.664267,
+        "max_p": 1.0000000083748513,
+        "min_p": 0.0,
+        "normalized_signed_S6": 1.0,
+        "signed_S6": 1120529256.0
+      },
+      "last_solver": {
+        "status_code": 4,
+        "status_text": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)",
+        "success": false
+      },
+      "limitations": [
+        "Rows are generated; inactive transform equations may still be violated.",
+        "Floating solver status is not an exact primal or dual certificate.",
+        "Very small boundary q-coordinates make this model ill-conditioned."
+      ],
+      "rounds": [
+        {
+          "active_transform_rows": 50,
+          "max_active_transform_residual": 1.2903173405138686e-10,
+          "max_inactive_transform_residual": 10353582664.664267,
+          "normalized_signed_S6": 1.0,
+          "round": 0,
+          "status_code": 0,
+          "status_text": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "success": true
+        },
+        {
+          "active_transform_rows": 80,
+          "round": 1,
+          "status_code": 4,
+          "status_text": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)",
+          "success": false
+        }
+      ],
+      "sense": "max",
+      "solver_method": "highs-ds",
+      "status": "NUMERICAL_TELEMETRY_ONLY"
+    },
+    {
+      "arf_sign": -1,
+      "base_equality_rows": 129,
+      "base_inequality_rows": 246,
+      "elapsed_seconds": 1.661,
+      "free_memory_percent_after": 44.08714350825004,
+      "free_memory_percent_before": 44.06637814203003,
+      "initial_input_rows": 1,
+      "last_point": {
+        "implied_n3": 6553738.8984375,
+        "max_all_transform_residual_q": 10353582664.664463,
+        "max_p": 1.00000000837487,
+        "min_p": 0.0,
+        "normalized_signed_S6": 1.0,
+        "signed_S6": 1120529256.0
+      },
+      "last_solver": {
+        "status_code": 4,
+        "status_text": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)",
+        "success": false
+      },
+      "limitations": [
+        "Rows are generated; inactive transform equations may still be violated.",
+        "Floating solver status is not an exact primal or dual certificate.",
+        "Very small boundary q-coordinates make this model ill-conditioned."
+      ],
+      "rounds": [
+        {
+          "active_transform_rows": 50,
+          "max_active_transform_residual": 1.2903230867818755e-10,
+          "max_inactive_transform_residual": 10353582664.664463,
+          "normalized_signed_S6": 1.0,
+          "round": 0,
+          "status_code": 0,
+          "status_text": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "success": true
+        },
+        {
+          "active_transform_rows": 80,
+          "round": 1,
+          "status_code": 4,
+          "status_text": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)",
+          "success": false
+        }
+      ],
+      "sense": "max",
+      "solver_method": "highs-ds",
+      "status": "NUMERICAL_TELEMETRY_ONLY"
+    }
+  ],
+  "variable_count": 2500,
+  "working_coordinates": "p[i,j]=B[i,j]/C(99,i)"
+}

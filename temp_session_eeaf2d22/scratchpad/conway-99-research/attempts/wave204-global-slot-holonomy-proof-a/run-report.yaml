@@ -1,0 +1,44 @@
+role: proof_a
+date_utc: 2026-07-29T19:00:33Z
+git_commit: e6ac24b5728ae8f2dc13b5a6ee0f50e965843b71
+claim_label: REFUTED
+scope: >-
+  Conditional prism-free n3=4158 and ternary rank-11 endpoint, with the
+  surviving b=0 selected-orientation interface: derive the honest
+  triangle-block gain graph and refute the implication that Wave203
+  edgewise partial injections plus local A6/flag equations induce
+  center-cycle or five-slot permutation holonomy.
+inputs:
+  - AGENTS.md
+  - STATUS.yaml
+  - verification/wave171-pq-centered-code/verification-report.md
+  - verification/wave181-c4-conic-equality/audit.md
+  - verification/wave182-a6-root-gluing-verifier/audit.md
+  - verification/wave185-local-a6-transition-collapse-verifier/audit.md
+  - verification/wave201-multiplicity-weighted-fiber-loss-verifier/audit.md
+  - verification/wave201-multiplicity-weighted-fiber-loss-verifier/independent-math-result.json
+  - verification/wave203-two-center-incidence-verifier/audit.md
+  - verification/wave203-two-center-incidence-verifier/independent-math-result.json
+method: >-
+  Exact F3 coboundary algebra; type-correct block/center incidence audit;
+  canonical-C4 Gram check; explicit singular A6 simplices in the nonsquare
+  eleven-dimensional orthogonal space; and paired S5 extensions of the same
+  partial slot interface. No graph, endpoint code, cover, SAT, LP,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave204-global-slot-holonomy-proof-a\test_exact_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave204-global-slot-holonomy-proof-a\exact_check.py --verify
+  attempts\wave204-global-slot-holonomy-proof-a\exact-results.json
+outputs:
+  - attempts/wave204-global-slot-holonomy-proof-a/exact_check.py
+  - attempts/wave204-global-slot-holonomy-proof-a/test_exact_check.py
+  - attempts/wave204-global-slot-holonomy-proof-a/exact-results.json
+  - attempts/wave204-global-slot-holonomy-proof-a/derivation.md
+limitations:
+  - The controls are relaxed local orthogonal configurations, not an SRG.
+  - They do not realize 99 stars, 231 columns, a global frame, or cover totals.
+  - They refute only the claimed local gluing implication.
+  - Proof A cannot promote its own claims to VERIFIED.
+  - Rank 11, endpoint existence, Q>=7060, and Conway-99 remain UNKNOWN.

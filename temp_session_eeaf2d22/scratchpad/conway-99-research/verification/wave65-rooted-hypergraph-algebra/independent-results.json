@@ -1,0 +1,144 @@
+{
+  "format": "wave65-independent-verifier-summary-v1",
+  "role": "verifier",
+  "claim_label": "VERIFIED",
+  "scope": "Wave 65 exact rooted-scaffold, generic hypergraph identities, necessary scalar and scaffold-averaged relaxations, and the explicitly unlabelled local positive control only.",
+  "discovery_package_manifest": {
+    "entries_checked": 11,
+    "all_hashes_match": true,
+    "all_local_package_files_covered_except_manifest_itself": true
+  },
+  "rooted_scaffold": {
+    "H": "K14 minus 7K2",
+    "H_order": 14,
+    "H_degree": 12,
+    "H_edges": 84,
+    "Q_degree": 22,
+    "Q_spectrum": {
+      "22": 1,
+      "10": 7,
+      "8": 6,
+      "-2": 70
+    },
+    "identity": "B^2+B=10I+2J-Q",
+    "rhs_row_sum": 156
+  },
+  "generic_hypergraph": {
+    "identity_D": "D+5I=ZZ^T",
+    "identity_R": "R+3I=Z^TZ",
+    "R_degree": 12,
+    "R_local_graph": "3K4",
+    "lambda_min_R": "at least -3",
+    "multiplicity_R_minus_3": "at least 56",
+    "moments_D_plus_5I": {
+      "1": 420,
+      "2": 2940,
+      "3": 23940,
+      "4": "201180+8*c4(R)"
+    },
+    "moments_R": {
+      "1": 0,
+      "2": 1680,
+      "3": 5040,
+      "4": "38640+8*c4(R)"
+    },
+    "c4_transfer": "c4(R)=1260+c4(D)",
+    "target_c4_R_interval": [
+      1260,
+      2331
+    ]
+  },
+  "target_and_transition_moments": {
+    "target_B": {
+      "1": 0,
+      "2": 1008,
+      "3": 840,
+      "4": 31752,
+      "5": 227640,
+      "6": 3138408
+    },
+    "target_c4_B": 1071,
+    "generic_triangle_free_T": {
+      "1": "0",
+      "2": "168",
+      "3": "0",
+      "4": "504+8*c4(T)",
+      "5": "10*c5(T)",
+      "6": "1680+48*c4(T)+12*c6(T)"
+    }
+  },
+  "scalar_coupling": {
+    "w_definition": "tr(T E_3)",
+    "w_interval": [
+      "64/5",
+      "16"
+    ],
+    "tr_B3T_interval": [
+      5376,
+      5712
+    ],
+    "identity": "tr(B^4T)+3tr(B^3T)=52416",
+    "exact_scalar_control_w": 14
+  },
+  "averaged_psd": {
+    "integer_parameters_checked": 43,
+    "parameter_range": [
+      0,
+      42
+    ],
+    "joint_lanes_per_parameter": 6,
+    "total_lane_checks": 258,
+    "negative_lanes": 0,
+    "minimum": "12/5",
+    "scope": "universally valid scaffold-group average only; no target automorphism"
+  },
+  "positive_control": {
+    "canonical_certificate_sha256": "383f2ce6c88fb227b98473633479204968e72f00d8127affea33fb13f191430d",
+    "vertices": 84,
+    "blocks": 140,
+    "uniformity": 3,
+    "point_degree": 5,
+    "linear": true,
+    "Berge_triangles_outside_blocks": 0,
+    "R_local_graph": "3K4",
+    "D_c4": 666,
+    "R_c4": 1926,
+    "finite_field_ranks_Z": {
+      "2": 84,
+      "3": 83,
+      "5": 84,
+      "7": 84
+    },
+    "B_moments": {
+      "1": 0,
+      "2": 1008,
+      "3": 840,
+      "4": 37248,
+      "5": 215620,
+      "6": 3378180
+    },
+    "target_moment_deltas": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5496,
+      "5": -12020,
+      "6": 239772
+    },
+    "scope": "unlabelled local relaxation only; not a rooted residual-graph candidate"
+  },
+  "verdict": {
+    "math_mismatches": 0,
+    "discovery_status": "Scoped Wave 65 claims independently reproduced",
+    "strict_n3_upper_bound": "NOT_OBTAINED",
+    "endpoint_n3_4158": "UNKNOWN",
+    "conway_99": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  },
+  "limitations": [
+    "The initial verifier preinspection inventory omitted hidden .gitattributes; the later manifest audit did verify it.",
+    "Necessary PSD and scalar feasibility do not realize compatible 0/1 matrices.",
+    "The positive control fails the target moments and is not a target candidate.",
+    "No endpoint exclusion, construction, global upper-bound improvement, novelty, or priority claim follows."
+  ]
+}

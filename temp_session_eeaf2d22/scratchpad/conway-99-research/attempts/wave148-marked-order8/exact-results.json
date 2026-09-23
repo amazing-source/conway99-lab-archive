@@ -1,0 +1,67 @@
+{
+  "aggregate_controls": {
+    "left_aggregates_checked": 208,
+    "ordered_pair_identity": "sum_w degree_K(w)*(degree_K(w)-1) for every K",
+    "ordered_pair_rhs_columns": 916,
+    "vertex_identity": "sum_w degree_K(w)=2|E(K)| for every K",
+    "vertex_rhs_columns": 916
+  },
+  "claim_label": "DERIVED",
+  "class_streams": {
+    "7": {
+      "count": 208,
+      "sha256": "6d4a9643e0377fabd32f2fad5fb284d48dee9612fc5910f96796ee2dd348f0b6"
+    },
+    "8": {
+      "count": 916,
+      "sha256": "c2cf3604abc76a537eca21f1a8ef041697ca40d8ad41668d25eb412b9cd67337"
+    }
+  },
+  "format": "wave148-marked-order8-summary-v1",
+  "limitations": [
+    "Discovery work is not independent verification.",
+    "These are necessary count rows, not sufficient graph realizability conditions.",
+    "The combined Wave147/Wave148 SDP was not assembled or optimized.",
+    "No bound, endpoint exclusion, construction, target resolution, or novelty claim follows."
+  ],
+  "ordered_pair_rows": {
+    "lhs_coefficient_sum": 10130,
+    "maximum_term_coefficient": 48,
+    "maximum_terms_per_row": 20,
+    "minimum_terms_per_row": 0,
+    "nonzero_terms": 17782,
+    "rows": 4440,
+    "zero_lhs_rows": 893,
+    "zero_rhs_rows": 893
+  },
+  "row_artifact": {
+    "canonical_bytes": 1685154,
+    "canonical_sha256": "3bdfdafa7e1675bf1fe160f44f1fea0e53792b5c2e87e0bfb529a15bd1cc2a8f",
+    "gzip_bytes": 122626,
+    "gzip_sha256": "e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1",
+    "path": "marked-rows.json.gz"
+  },
+  "scope": "hypothetical srg(99,14,1,2), no endpoint or automorphism",
+  "source_hashes": {
+    "wave147_checker": "c49a6c5efb38afc0e33d395ebc1e1110f159132a118039170d4da56a728e6fb9",
+    "wave147_results": "8baea3d7fdf69ff6653ff859d30ea975dcbef44330445ace73ae051c7db1373c"
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "graph_constructed": false,
+    "numerical_feasibility": "UNKNOWN_NOT_RUN",
+    "rational_dual_certificate": "NOT_OBTAINED",
+    "solver_run": "NOT_RUN",
+    "strict_n3_upper_bound": "UNKNOWN"
+  },
+  "vertex_rows": {
+    "lhs_coefficient_sum": 17490,
+    "maximum_term_coefficient": 24,
+    "maximum_terms_per_row": 35,
+    "minimum_terms_per_row": 1,
+    "nonzero_terms": 10872,
+    "rows": 944,
+    "zero_lhs_rows": 0,
+    "zero_rhs_rows": 0
+  }
+}

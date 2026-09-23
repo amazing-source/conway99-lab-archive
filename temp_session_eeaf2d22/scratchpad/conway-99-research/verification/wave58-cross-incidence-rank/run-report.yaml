@@ -1,0 +1,94 @@
+role: verifier
+date_utc: 2026-07-27T21:21:33Z
+git_commit: 4bb1989e9e286b2ec753a855db58ad584e31f63a
+claim_label: VERIFIED
+scope: >-
+  Conditional prism-free n3=4158 fixed-triangle cross-incidence synthesis:
+  clean-room Gram/rank derivation, prior Wave36 chronology replay, universal
+  four-cycle bound, exact coordinate-normalized m=4 and m=6 component
+  censuses, all three surviving local/scalar controls, and one explicitly
+  restricted Wave40 rank-11 all-222/r3=12 lift replay.
+inputs:
+  - path: verification/wave58-cross-incidence-rank/protocol.md
+    sha256: 9515d61cbac80c8b28170da5c0b57d560b57655223783ab3d6aa5c5a9dd00e36
+  - path: verification/wave58-cross-incidence-rank/preinspection-freeze.sha256
+    sha256: 5a263d98f4f47c7f4fb3ea48000b3fdb2ad79b5fc80bd60a3773169a8cf8c6c4
+  - path: verification/wave58-cross-incidence-rank/discovery-freeze.sha256
+    sha256: 07f5df3127e9e6d2556a282e1286bdc00066e6058446c7cc23ea34116a640ea1
+  - path: agents/2026-07-27-wave58-cross-incidence-rank.md
+    sha256: 90e5d3c1d656558a610f6be5c8b15765efa61328341db072020414bc62506dc1
+  - path: attempts/wave58-cross-incidence-rank/exact-results.json
+    sha256: ec03c32fc72ec75222049a49b194b10bcae6bf1122ac82d9d9943e5b2f63181a
+  - path: attempts/wave58-cross-incidence-rank/package-manifest.sha256
+    sha256: 972a7700b0d9f1596ba42f32811a5b6b5eb66410e4099ae6c8d2d3fd64527a27
+  - path: verification/wave36-block-compatibility/independent-results.json
+    sha256: b92ee5cde6a63ba3cce09bc2eae1518979aea09c4f5db39789b65f117b0768c4
+  - path: verification/wave36-block-compatibility/audit.md
+    sha256: 1f3856bc91d4ba7da53fc55e2f90528848683626191b9f8f4091c9c46cea2c96
+  - path: verification/wave40-edge-type-coupling/independent-results.json
+    sha256: 822f758e04bcf95576cf8c5adc5cff2131ffa13cd286a6924137149de0dc3a9e
+  - path: verification/wave40-edge-type-coupling/audit.md
+    sha256: 3ec16bfdb7275ddfde95cf352660ec2440a029f07796f7397ba92d63859a1c79
+method: >-
+  Standard-library integer and rational derivation; independent bitset
+  enumeration of all normalized component presentations; independent replay
+  of all 2^18 masks for the named Wave40 quotient; reconstruction of every
+  stored local witness; exact scalar power-sum checks; chronology and wording
+  audit; and hostile-mutation calibration. No discovery code is imported.
+command:
+  - >-
+    python -B verification/wave58-cross-incidence-rank/independent_check.py
+  - >-
+    python -B verification/wave58-cross-incidence-rank/independent_check.py
+    --verify verification/wave58-cross-incidence-rank/independent-results.json
+  - >-
+    python -B -m unittest discover -s
+    verification/wave58-cross-incidence-rank -p "test_*.py" -v
+  - >-
+    python -B -m unittest discover -s
+    attempts/wave58-cross-incidence-rank -p "test_*.py" -v
+  - >-
+    python -B -m py_compile
+    verification/wave58-cross-incidence-rank/independent_check.py
+    verification/wave58-cross-incidence-rank/test_independent_check.py
+outputs:
+  - path: verification/wave58-cross-incidence-rank/independent_check.py
+    sha256: fb94f6db84ab50d0936c12a3e1072edc0872616dfc8ddd7c6c6cec6a6beb1faf
+  - path: verification/wave58-cross-incidence-rank/test_independent_check.py
+    sha256: b895502dd7b3b05faf07a555020a074628bff411103e14990c380bb762fa2229
+  - path: verification/wave58-cross-incidence-rank/independent-results.json
+    sha256: 4d57b524ab869a73ce5629ac3fb5107e36402ce4929cfaf2ca5a55f5950b77be
+  - path: verification/wave58-cross-incidence-rank/audit.md
+    sha256: d7f44c6295db358ce775e7ea6bc6c3c3f3dea1d3d1dd77c79d1ca444ef373a0a
+  - path: verification/wave58-cross-incidence-rank/README.md
+    sha256: 54591f318ba4075b690ca863abb53d11405f29f30a410a21bbdb2031e527f716
+results:
+  gram_and_rank: VERIFIED
+  wave36_rank_component_multiplicity_chronology: VERIFIED_PRIOR
+  universal_C4_X_upper_bound: 27
+  m4_normalized_census: "216 raw; 50 accepted"
+  m6_normalized_census: "162000 raw; 34640 accepted"
+  kappa_2_6_plus_6_exact_local_C4: "{0,1,...,16,18}"
+  kappa_2_4_plus_8_C4_bound: "[2,24], not an exact set"
+  kappa_2_overall_C4_bound: "[0,24], not an exact set"
+  kappa_3_exact_local_C4: "{6,8,10,12,14,16,18}"
+  surviving_rows:
+    - [18, 8, 1]
+    - [18, 9, 2]
+    - [18, 10, 3]
+  restricted_wave40: "262144 raw; 37378 triangle-free; all component profile 12+24"
+  verifier_tests: 14
+  verifier_tests_passed: 14
+  discovery_tests: 11
+  discovery_tests_passed: 11
+  post_QA_free_physical_memory_percent: 36.52
+  endpoint_excluded: false
+  endpoint_graph_constructed: false
+  conway_99_status: UNKNOWN
+limitations:
+  - All results are conditional on the prism-free endpoint.
+  - Normalized component counts are not graph-isomorphism class counts.
+  - m=8 and m=12 component spaces are not enumerated.
+  - Local A_X and scalar controls are separate; no compatible B/A_Y is supplied.
+  - The Wave40 replay covers one of eight normalized rank-11 quotients only.
+  - No endpoint exclusion, graph construction, improved general n3 upper bound, or novelty claim follows.

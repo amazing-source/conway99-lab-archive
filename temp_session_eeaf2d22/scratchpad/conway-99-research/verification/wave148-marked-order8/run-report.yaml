@@ -1,0 +1,47 @@
+role: verifier
+date_utc: 2026-07-28T11:31:14Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: DERIVED
+scope: >-
+  Clean-room protocol, checker plan, and exact expected invariants for future
+  independent verification of marked vertex-degree and ordered-pair
+  common-neighbor order-seven-to-eight rows. No Wave148 artifact inspected.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: attempts/wave147-alternative-lane/package-manifest.sha256
+    sha256: 0c7585f996374246918948eb1537e61e2e165474f815a66eff24bf82e7c8e690
+  - path: attempts/wave147-alternative-lane/coefficients.json.gz
+    sha256: a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e
+  - path: attempts/wave147-alternative-lane/exact-results.json
+    sha256: 8baea3d7fdf69ff6653ff859d30ea975dcbef44330445ace73ae051c7db1373c
+  - path: verification/wave147-pair-root-order8/package-manifest.sha256
+    sha256: ce892c1af0ccc5c69605513b4d427c1741a1d13e354997b4c56b45a6f1c85400
+method: >-
+  From first principles, fix pointwise rooted isomorphism conventions;
+  enumerate all vertex- and ordered-pair-rooted order-seven types; count
+  deleted-root markings in all 916 order-eight classes; prove per-column
+  oriented-edge and ordered-neighbor-pair identities; derive three small
+  semantic controls; and replay every marked row on the realized 3x3 rook
+  graph with parameters srg(9,4,1,2).
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification/wave148-marked-order8/clean_room_rows.py;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification/wave148-marked-order8 -p "test_*.py" -v
+outputs:
+  - path: verification/wave148-marked-order8/protocol.md
+    sha256: 4a4834f5019a22787e3a4d2fe9a8eb45cda62160d9f03374c48e7f0ac686eb0b
+  - path: verification/wave148-marked-order8/clean_room_rows.py
+    sha256: 7af432dbbf0d7c1f727944dcc26b63f0e1a54ff52082819a8ddd0fc5beb4544a
+  - path: verification/wave148-marked-order8/test_clean_room_rows.py
+    sha256: 5ed74ad4ac4e5851513240f9be3d7f2d6ba15b36ed411c84c066d835efc01141
+  - path: verification/wave148-marked-order8/expected-invariants.json
+    sha256: dec5e480d9ef3e8df1e8cad23caa5756660b8b99c10f2fbe8895fe8692afb467
+limitations:
+  - No attempts/wave148 path or Wave148 discovery artifact was inspected.
+  - This freezes a verification protocol; it verifies no undisclosed package.
+  - Discovery row labels/order will require an explicit semantic translation.
+  - No solver, upper-bound certificate, Conway-99 result, or novelty claim follows.

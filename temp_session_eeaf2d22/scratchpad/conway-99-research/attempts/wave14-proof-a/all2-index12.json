@@ -1,0 +1,147 @@
+{
+  "catalog": "attempts/wave14-proof-a/cubic-trianglefree-16.g6",
+  "catalog_completeness_external_premise": "nauty_2.9.3_geng_-q_-td3D3_16_24:24",
+  "catalog_records": 801,
+  "catalog_sha256": "2df2ebc03d5135f7959f6aa66aba84d44efa5d1dc977d8184c2e1dffcce9569d",
+  "claim_label": "CANDIDATE",
+  "cutoff_count": 0,
+  "cutoffs": [],
+  "limitations": [
+    "all-active-points-restricted-to-size-two",
+    "K-tested-only-through-its-mandatory-subgraph",
+    "geng-completeness-is-external",
+    "no-formal-proof-trace",
+    "not-a-99-vertex-search"
+  ],
+  "mandatory_k_edge_histogram": {
+    "48": 1
+  },
+  "processed_records": 1,
+  "scope": "all-size-two r=16 active-support relaxation",
+  "search_status_histogram": {
+    "SAT": 1
+  },
+  "selected_indices": [
+    12
+  ],
+  "survivor_count": 1,
+  "survivors": [
+    {
+      "catalog_index": 12,
+      "compatible_support_edges": 144,
+      "graph6": "O????B_sD_M?B_BO@W?M?",
+      "mandatory_k_degree_histogram": {
+        "6": 16
+      },
+      "mandatory_k_edges": 48,
+      "search": {
+        "solution": [
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            23
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            20
+          ],
+          [
+            2,
+            18
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            3,
+            22
+          ],
+          [
+            4,
+            16
+          ],
+          [
+            4,
+            19
+          ],
+          [
+            5,
+            18
+          ],
+          [
+            5,
+            21
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            17
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            7,
+            19
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            8,
+            20
+          ],
+          [
+            9,
+            14
+          ],
+          [
+            9,
+            17
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            11,
+            23
+          ]
+        ],
+        "statistics": {
+          "cap_rejections": 214424,
+          "coverage_rejections": 10054,
+          "nodes": 303791,
+          "solutions": 1
+        },
+        "status": "SAT"
+      }
+    }
+  ],
+  "target_result": "UNKNOWN"
+}

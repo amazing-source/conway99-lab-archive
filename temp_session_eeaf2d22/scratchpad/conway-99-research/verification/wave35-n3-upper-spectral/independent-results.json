@@ -1,0 +1,134 @@
+{
+  "endpoint": {
+    "S_off_diagonal_profile": {
+      "+1": 32,
+      "-1": 36,
+      "0": 162
+    },
+    "a_profile": [
+      32,
+      144,
+      36,
+      0
+    ],
+    "gamma_spectrum": {
+      "-3": 132,
+      "0": 44,
+      "18": 1,
+      "7": 54
+    },
+    "n3_upper_from_q_le_12": 4158,
+    "q_per_triangle": 12,
+    "q_sum": 2772,
+    "srg_spectrum": {
+      "-4": 44,
+      "14": 1,
+      "3": 54
+    },
+    "triangle_count": 231
+  },
+  "incidence_frobenius": {
+    "BN_transpose_values": {
+      "adjacent_to_T": 2,
+      "nonadjacent_to_T": "1+2t_x",
+      "on_T": 0,
+      "sum_t": 36,
+      "t_bounds": [
+        0,
+        3
+      ]
+    },
+    "global_square_range": [
+      113652,
+      180180
+    ],
+    "per_row_square_range": [
+      492,
+      780
+    ],
+    "scalar_is_matrix_or_graph": false,
+    "scalar_survivor": {
+      "-3": "46992/5",
+      "0": "44",
+      "7": "8208/5"
+    },
+    "spectral_cauchy_floor": "501732/5"
+  },
+  "local_controls": {
+    "adjacent_all_actual_cycle_types_positive": true,
+    "adjacent_cycle_determinants": {
+      "12": 7300800,
+      "4+4+4": 7077888,
+      "6+6": 7290000,
+      "8+4": 7225344
+    },
+    "nonadjacent_control_actual_incidence_realization": "NOT_CLAIMED",
+    "nonadjacent_relaxed_control_frobenius_square": 13,
+    "nonadjacent_relaxed_control_positive_by_norm_bound": true
+  },
+  "principal_minor": {
+    "absolute_algebraic_row_sum_is_not_sufficient": true,
+    "condition_constructed": false,
+    "degree_four_is_not_sufficient": true,
+    "equivalent_fact": "every 45x45 principal S[X] has eigenvalue -4",
+    "gershgorin_positive_margin": 1,
+    "hostile_switched_K5_max_absolute_algebraic_sum": 2,
+    "hostile_switched_K5_support_degree": 4,
+    "sufficient_condition": "max_i sum_{j in X}|S_ij| <= 3",
+    "universal_fact": "rank(M)=44 implies every 45x45 principal M[X] is singular"
+  },
+  "qualifiers": [
+    "The principal-minor condition uses support degree sum_j |S_ij|, not the absolute algebraic row sum.",
+    "The nonadjacent 7x7 matrix is a relaxation witness, not a locally or globally realized graph block.",
+    "Mixed-Schur nonnegativity and scalar feasibility are failure-of-obstruction results, not existence evidence."
+  ],
+  "role": "verifier",
+  "schema_version": 1,
+  "schur_and_compressions": {
+    "B_cauchy_floor": "126588/25",
+    "B_projector_traces": {
+      "-3": "528/5",
+      "0": "-44",
+      "18": "68",
+      "7": "-648/5"
+    },
+    "B_trace_square": 15708,
+    "B_unallocated_slack": "266112/25",
+    "mixed_negative_count": 0,
+    "mixed_smallest_positive": "1/231",
+    "mixed_triple_count": 40,
+    "mixed_zero_count": 15,
+    "schur_cube_spectrum": {
+      "60": 187,
+      "81": 44
+    },
+    "schur_even_formula": "M^(o k)=W+(4^k-16)I",
+    "schur_odd_formula": "M^(o k)=M+(4^k-4)I"
+  },
+  "scope": "conditional n3=4158 spectral, Smith, Schur, scalar/local-relaxation, and 45-principal-minor claims only",
+  "smith_and_reflection": {
+    "C_definition": "C=2S-13I=2M-21I",
+    "C_identity": "C^2=441I",
+    "C_row_squared_norm": 441,
+    "C_row_sum": -21,
+    "C_spectrum": {
+      "+21": 44,
+      "-21": 187
+    },
+    "S_cokernel_exponent_divides": 68,
+    "S_identity": "S^2=13S+68I",
+    "S_spectrum": {
+      "-4": 187,
+      "17": 44
+    },
+    "rank_F2_S": 44,
+    "snf": "diag(1^44,4^143,68^44)"
+  },
+  "status": {
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "endpoint_matrix_constructed": false,
+    "upper_bound_improved_below_4158": false
+  },
+  "verdict": "VERIFIED_SCOPED_WITH_WORDING_QUALIFIER"
+}

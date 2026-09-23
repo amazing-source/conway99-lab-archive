@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-28T10:14:35Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: VERIFIED_NULL_BOUNDARY
+scope: >-
+  Independent exact replay of the sealed Wave144 local supports, integer
+  z_P witnesses, aggregate endpoint, and Krawtchouk moments; no graph
+  realization.
+inputs:
+  attempts/wave144-sixset-odd-profile/package-manifest.sha256: b5369353ac6959b0662e3f424cf80e48094ac6bcdb79572bf604632c45509436
+  attempts/wave21-six-vertex-lp/exact_check.py: 0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3
+  attempts/wave21-six-vertex-lp/exact-results.json: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  attempts/wave141-bivariate-graph-code/exact_check.py: 15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204
+  attempts/wave141-bivariate-graph-code/exact-results.json: 351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e
+method: >-
+  Clean-room standard-library enumeration of every local support, direct
+  replay of each retained sparse z_P vector, exact integer class-marginal
+  and Krawtchouk arithmetic, and hostile certificate mutations.
+command: |-
+  python -B verification\wave144-sixset-odd-profile\independent_verify.py
+  python -B -m unittest discover -s verification\wave144-sixset-odd-profile -p "test_*.py" -v
+outputs:
+  verification/wave144-sixset-odd-profile/independent_verify.py: 7f17bde2732aaa584cde675e28343b068c937aff8184f14c265733e9998ffccf
+  verification/wave144-sixset-odd-profile/test_independent_verify.py: c417aa230308d968101e7d0143c0224b8823cf6d6b46f3a798462f171b267519
+  verification/wave144-sixset-odd-profile/verification-results.json: 392274acd5c7758a77d79eb2b1f104cc02f247d156783db383e7b22313d89917
+results:
+  verdict: PASS_NULL_BOUNDARY
+  exact_supports_recomputed: 62
+  selected_local_z_witnesses_checked: 66
+  aggregate_integer_cells_checked: 65
+  endpoint_n3: 4158
+  improves_known_bound: false
+  graph_realization: NOT_ESTABLISHED
+limitations:
+  - The certificate does not enforce compatibility across overlapping six-sets.
+  - Only reciprocity moments t=0..3 are checked.
+  - The n3<=4158 cap is imported.
+  - Conway-99 and novelty remain UNKNOWN.

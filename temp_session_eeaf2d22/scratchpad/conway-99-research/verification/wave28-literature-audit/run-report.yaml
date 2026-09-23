@@ -1,0 +1,54 @@
+role: literature
+date_utc: 2026-07-24T02:52:21Z
+git_commit: d76d030f6d74e2e1b7ca2b2f0f97536241b3a10b
+claim_label: UNKNOWN
+scope: >-
+  Proof-separated current literature and status audit through 2026-07-24
+  for srg(99,14,1,2), positive-definite even rank-44 lattices with
+  21L* subset L and the eight frozen determinant rows, elementary 3/7
+  discriminant forms and root glue, the K12/Lambda(F) and E6^6/E8 theta
+  controls, simultaneous paired-form two-neighbors, the marked
+  231-vector frame/Schur/cubic package, and the exact 46-to-32
+  root-image pattern reduction.
+inputs:
+  agents/2026-07-24-wave28-orchestrator-brief.md: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  agents/2026-07-24-wave28-glue-discriminant.md: 3c1354a04f33602c6e339875c8de4f77d1874bd6e8f83dbcb712b91717d6c1ff
+  agents/2026-07-24-wave28-theta-modular.md: 8783be7e730306637ed863b4d9fbe8f4193ad756e7ec86d697c7407688a5423a
+  agents/2026-07-24-wave28-simultaneous-neighbor-freeze.md: 7b8fce3763e2f6d4db2e0f7841e680d01486195d3ea4b6b04c5f59ace768d90a
+method: >-
+  Froze 35 candidate-independent queries before live searching; searched
+  current web, arXiv, journal, institutional, author-maintained catalogue,
+  and primary-paper records; inspected abstracts, catalogue fields,
+  numbered theorem restatements, and page-level definitions; separated
+  exact current-status evidence, standard ingredients, nearby results
+  with unmet hypotheses, and no-direct-match outcomes. Retained only
+  bibliographic metadata, URLs, access dates, source notes, and SHA-256
+  response hashes; no raw HTML or paper copies were retained. Compared
+  literature attributions against the independent Wave 28 verifier's
+  mandatory correction concerning order-21 invariant factors.
+command: |-
+  $plan = Get-Content -Raw verification\wave28-literature-audit\query-ledger.json | ConvertFrom-Json
+  $results = Get-Content -Raw verification\wave28-literature-audit\query-results.json | ConvertFrom-Json
+  $biblio = Get-Content -Raw verification\wave28-literature-audit\sources\bibliography.json | ConvertFrom-Json
+  Compare-Object ($plan.queries.id | Sort-Object) ($results.results.id | Sort-Object)
+  Get-ChildItem -Recurse -File verification\wave28-literature-audit | Get-FileHash -Algorithm SHA256
+outputs:
+  verification/wave28-literature-audit/audit.md: ef18079970e410d114ab24752d4b738bc26ff4e6266a8cc775a4e14813fe1128
+  verification/wave28-literature-audit/protocol-freeze.md: c1982e91aeb31b235a73cc2fac36b9972e7ac4135df9783def6ac0e9bab313a1
+  verification/wave28-literature-audit/query-ledger.json: 0afa288ecbb47f27f7b5ca5a9d7d44ecba2fff046461ff0f38501c287bc23fde
+  verification/wave28-literature-audit/query-results.json: 02e1a0b293d7bd8534597119079f9aec2be9736cc40c387b58a96bccc35af380
+  verification/wave28-literature-audit/sources/bibliography.json: b59946f585b817f751300411fc8e45ebf2c04e7941abfd13ae2e8db75545a427
+  verification/wave28-literature-audit/sources/notes/target-status.md: 6c7c9b162e617aca750069d70131d303568534fa11b972a6c061d90cc59f312c
+  verification/wave28-literature-audit/sources/notes/lattice-discriminant.md: d43b4ae68be6cfc5ea9364afffa7d1f6c9bb1eec9a113fe6dba157568c2b5c7f
+  verification/wave28-literature-audit/sources/notes/theta-controls.md: 898ca403e6246b7e108ddb610859d926d5c023cc6cefd5ce6921cdddb48b6a9f
+  verification/wave28-literature-audit/sources/notes/neighbor-frame-root-patterns.md: d1585fca0150dc82869332b8a65460bd11f1d739fd34758d9ff8245def53fb5a
+limitations:
+  - Web and bibliographic discovery is not a complete proof of the literature universe.
+  - No direct authenticated zbMATH connector was available.
+  - The official Brouwer strongly regular graph table URL failed web safe-open and was not used as evidence.
+  - Source hashes identify the read-only response bodies inspected at access time; they do not make mutable web pages immutable.
+  - The audit verifies source attribution and theorem hypotheses, not the repository's arithmetic computations.
+  - Catalogue fields support only the data they explicitly state; derived matrix properties remain delegated to exact verifiers.
+  - No direct prior-art hit does not establish novelty.
+  - No graph, endpoint lattice, projector frame, or Conway configuration is constructed or excluded.
+  - srg(99,14,1,2), n3=708, and Wave 28 novelty remain UNKNOWN.

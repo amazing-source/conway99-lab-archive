@@ -1,0 +1,110 @@
+role: literature
+date_utc: 2026-07-24T08:05:34Z
+git_commit: f0783b82d9b0260f5461cd68c647f62f646cdd81
+claim_label: UNKNOWN
+audit_verdict: NO_EXACT_SURVIVING_ENDPOINT_PRIOR_RESULT_FOUND_IN_SEARCHED_SOURCES
+scope: >-
+  Pre-search statement freeze and bounded primary/authoritative-source audit
+  for the two exhaustive endpoint branches left after the verified Wave 31
+  actual-incidence obstruction: rooted even integral rank-44 endpoint
+  S-forms and rootless integrally indecomposable endpoint S-forms, across all
+  eight determinant rows. The actual target vertex-triangle incidence layer
+  is kept separate from the weaker free-standing matrix/projector/Schur
+  package. No h=729, automorphism, orbit, root-system type, marking, or
+  catalogue representative is assumed.
+inputs:
+  verification/wave32-literature-audit/protocol-freeze.md:
+    sha256: 3c645dcd4188c9c34ba9e04e2fbd966708d05080a33caa95c720a1fde46283d2
+  verification/wave31-sign-commutant/audit.md:
+    sha256: f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0
+  verification/wave28-glue-discriminant/audit.md:
+    sha256: 5c1dc7978d571a9471837b45a36663c7c457b6434800776501e4967146956b86
+  verification/wave28-theta-modular/audit.md:
+    sha256: adc90e404735ca147bc0a5418974d8af0bde71c4ddc2dc62a8c07dee670dbfeb
+    chronology: >-
+      Existing public independently verified determinant veto located during
+      the chronology pass after the protocol freeze; not claimed as a Wave 32
+      discovery.
+  verification/2026-07-22-n3-side-incidence-audit.md:
+    sha256: 9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787
+  agents/2026-07-24-wave28-orchestrator-brief.md:
+    sha256: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+method: >-
+  Read the governing protocol and independently verified upstream branch
+  boundary; freeze the exact S/G/X/M/W/Q/B package, the stronger actual
+  N/A/Gamma incidence layer, both exhaustive surviving branches, all eight
+  determinants, and mandatory scope walls before searching; search exact
+  target, root-image, frame, determinant, root/glue, decomposability,
+  modularity, primitive-idempotent, diagonal-commutant, integral-eigenspace,
+  clique-complex, and current-status terminology; inspect primary papers,
+  current preprints, publisher or DOI metadata, author/institutional copies,
+  maintained catalogues, and existing independently audited repository source
+  records; preserve every exact query, disposition, source boundary,
+  chronology correction, access limitation, and artifact hash; retain no raw
+  source payload.
+command: |-
+  No single computational literature-search command. Exact query strings,
+  result-window limitations, dispositions, inspection events, and access
+  failures are in query-ledger.json.
+  Validation:
+  Get-Content verification/wave32-literature-audit/query-ledger.json -Raw | ConvertFrom-Json
+  Get-Content verification/wave32-literature-audit/source-metadata.json -Raw | ConvertFrom-Json
+  Get-FileHash verification/wave32-literature-audit/* -Algorithm SHA256
+  Select-String -Path verification/wave32-literature-audit/* -Pattern ([char]0)
+search_counts:
+  web_search_batches: 17
+  exact_query_strings: 68
+source_counts:
+  retained_metadata_records: 15
+  originally_frozen_metadata_records: 14
+  post_verifier_inherited_source_additions: 1
+  retained_raw_pdfs: 0
+  retained_raw_html: 0
+  retained_raw_api_or_search_payloads: 0
+outputs:
+  verification/wave32-literature-audit/protocol-freeze.md:
+    sha256: 3c645dcd4188c9c34ba9e04e2fbd966708d05080a33caa95c720a1fde46283d2
+  verification/wave32-literature-audit/query-ledger.json:
+    sha256: 7e7812a3dbf8c19a31eec58cc43c764aa1b61e7ad0fa1b8147b02fccfadef2c6
+  verification/wave32-literature-audit/source-metadata.json:
+    sha256: 6da7402bc6dbfa9f1b6a7c59d5f1ca74a841bb65e6ad3b0f5595afcf322f890e
+  verification/wave32-literature-audit/audit.md:
+    sha256: 71b6f184cf35bf3407529b42a20be4f0ccb957a39d0bbf294d19200b37bcb02f
+  verification/wave32-literature-audit/correction-ledger.md:
+    sha256: 3d2e10fe8ad8e2fbf24d9d449e69eecda950e40ba7b2f29c81867f2b5600cf4f
+upstream_provenance:
+  rootless_integrally_decomposable_actual_endpoint: VERIFIED_IMPOSSIBLE
+  rooted_single_root_and_glue_reduction: VERIFIED_NECESSARY
+  modularity_determinant_veto: VERIFIED
+  actual_triangle_intersection_spectrum: CITED
+  actual_incidence_transport: VERIFIED
+chronology:
+  strongest_exact_prior_art_hit: >-
+    Petro-Phillips's conditional 231-triangle spectrum was already recorded
+    in the public repository before Wave 32; it is not a Wave 32 novelty
+    claim.
+  wave32_located_nearby_sources: >-
+    Reflective-lattice structure, orthogonal-decomposition/isometry
+    algorithms, additive indecomposability, and current clique-complex work
+    were located or reinspected, but none states either frozen endpoint.
+  post_verifier_metadata_correction: >-
+    The independent source verifier corrected the S06 author order, restored
+    a Hemkemeier-Vallentin input hypothesis, and identified the omitted
+    already-public Keramatipour SAT report. The original 14-record hashes and
+    bounded-search chronology are preserved in correction-ledger.md.
+status:
+  rooted_endpoint: UNKNOWN
+  rootless_integrally_indecomposable_endpoint: UNKNOWN
+  weaker_matrix_schur_realization: UNKNOWN
+  actual_incidence_realization: UNKNOWN
+  n3_708: UNKNOWN
+  global_Conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - A finite literature search cannot prove novelty, priority, nonexistence, or global openness.
+  - Search ranking, terminology, language, access, indexing, and posting delays may hide relevant work.
+  - MathSciNet, zbMATH, Google Scholar, and citation networks were not comprehensively audited.
+  - Generic reflective, modular, indecomposability, isometry, association-scheme, and clique-complex results do not imply the exact frozen endpoint.
+  - The actual-incidence layer cannot be silently imported into a projector-only search.
+  - No complete lattice, frame, matrix, root-code, or graph enumeration was performed.
+  - No raw PDF, HTML, XML, API response, or search payload was retained.

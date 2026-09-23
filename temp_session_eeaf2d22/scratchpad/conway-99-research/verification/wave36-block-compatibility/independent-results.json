@@ -1,0 +1,401 @@
+{
+  "claim_label": "VERIFIED",
+  "format": "wave36-block-compatibility-independent-v1",
+  "general_checks": {
+    "block_equations": {
+      "column_transfer": "d(b)=2*1-(I+A_X)b=Bh_y>=0",
+      "column_transfer_sum": 48,
+      "xx": "BB^T=12I-A_X+2J-RR^T-A_X^2",
+      "xy": "BH=2J-(I+A_X)B=(J/3-I-A_X)B",
+      "yy": "B^TB+H^2=12I-H+2J"
+    },
+    "component_moments": {
+      "component_second": "sum_y z_y^2=15m^2",
+      "component_total": "sum_y z_y=30m",
+      "cross_fibre": "sum_y z_iy*z_jy=2m(m-2)",
+      "equality": "z_y=m/2 for all 60 y",
+      "per_fibre_second": "sum_y z_iy^2=m^2+8m",
+      "per_fibre_total": "sum_y z_iy=10m"
+    },
+    "component_patterns": {
+      "partition_coupling": {
+        "4+4+4": {
+          "all_are_coordinatewise_complements": null,
+          "compatible_oriented_tuples": 21,
+          "kind_counts": {
+            "aligned_ABB": 9,
+            "balanced_AAA": 6,
+            "balanced_BBB": 6
+          }
+        },
+        "4+8": {
+          "all_are_coordinatewise_complements": true,
+          "compatible_oriented_tuples": 6
+        },
+        "6+6": {
+          "all_are_coordinatewise_complements": true,
+          "compatible_oriented_tuples": 7
+        }
+      },
+      "single_component_patterns": {
+        "12": {
+          "per_fibre_counts_z0_z1_z2": [
+            0,
+            0,
+            60
+          ],
+          "possible_oriented_patterns": [
+            [
+              2,
+              2,
+              2
+            ]
+          ],
+          "shape_orientation_counts": {
+            "2,2,2": 1
+          }
+        },
+        "4": {
+          "per_fibre_counts_z0_z1_z2": [
+            24,
+            32,
+            4
+          ],
+          "possible_oriented_patterns": [
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "shape_orientation_counts": {
+            "0,0,2": 3,
+            "0,1,1": 3
+          }
+        },
+        "6": {
+          "per_fibre_counts_z0_z1_z2": [
+            12,
+            36,
+            12
+          ],
+          "possible_oriented_patterns": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "shape_orientation_counts": {
+            "0,1,2": 6,
+            "1,1,1": 1
+          }
+        },
+        "8": {
+          "per_fibre_counts_z0_z1_z2": [
+            4,
+            32,
+            24
+          ],
+          "possible_oriented_patterns": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              0
+            ]
+          ],
+          "shape_orientation_counts": {
+            "0,2,2": 3,
+            "1,1,2": 3
+          }
+        }
+      },
+      "surviving_partitions": [
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          12
+        ]
+      ]
+    },
+    "m_equals_2_exhaustive_control": {
+      "labelled_cubic_triangle_free_graphs": 10,
+      "minimum_over_graphs_of_max_common_neighbors_for_a_nonedge": 3
+    },
+    "spectral_general_form": {
+      "H_connected": true,
+      "H_four_cycles": "171+C4(A_X)",
+      "H_triangles": 32,
+      "charpoly": "chi_H(t)=(-1)^(34-c)(t-8)(t-3)^18(t+4)^(7+c)f(-1-t)"
+    },
+    "spectral_transfer_samples": {
+      "1": {
+        "H_four_cycles": 171,
+        "H_traces_1_to_4": {
+          "1": 0,
+          "2": 480,
+          "3": 192,
+          "4": 8568
+        },
+        "H_triangles": 32,
+        "characteristic_polynomial_degree": 60,
+        "component_count": 1,
+        "f_degree": 33,
+        "gram_rank": 34,
+        "kernel_dimension": 26,
+        "kernel_multiplicities": {
+          "-4": 8,
+          "3": 18
+        },
+        "kernel_traces_1_to_4": {
+          "1": 22,
+          "2": 290,
+          "3": -26,
+          "4": 3506
+        },
+        "transferred_traces_1_to_4": {
+          "1": -22,
+          "2": 190,
+          "3": 218,
+          "4": 5062
+        },
+        "transformed_factor_sign_exponent": 33
+      },
+      "2": {
+        "H_four_cycles": 171,
+        "H_traces_1_to_4": {
+          "1": 0,
+          "2": 480,
+          "3": 192,
+          "4": 8568
+        },
+        "H_triangles": 32,
+        "characteristic_polynomial_degree": 60,
+        "component_count": 2,
+        "f_degree": 32,
+        "gram_rank": 33,
+        "kernel_dimension": 27,
+        "kernel_multiplicities": {
+          "-4": 9,
+          "3": 18
+        },
+        "kernel_traces_1_to_4": {
+          "1": 18,
+          "2": 306,
+          "3": -90,
+          "4": 3762
+        },
+        "transferred_traces_1_to_4": {
+          "1": -18,
+          "2": 174,
+          "3": 282,
+          "4": 4806
+        },
+        "transformed_factor_sign_exponent": 32
+      },
+      "3": {
+        "H_four_cycles": 171,
+        "H_traces_1_to_4": {
+          "1": 0,
+          "2": 480,
+          "3": 192,
+          "4": 8568
+        },
+        "H_triangles": 32,
+        "characteristic_polynomial_degree": 60,
+        "component_count": 3,
+        "f_degree": 31,
+        "gram_rank": 32,
+        "kernel_dimension": 28,
+        "kernel_multiplicities": {
+          "-4": 10,
+          "3": 18
+        },
+        "kernel_traces_1_to_4": {
+          "1": 14,
+          "2": 322,
+          "3": -154,
+          "4": 4018
+        },
+        "transferred_traces_1_to_4": {
+          "1": -14,
+          "2": 158,
+          "3": 346,
+          "4": 4550
+        },
+        "transformed_factor_sign_exponent": 31
+      }
+    }
+  },
+  "limitations": [
+    "All general conclusions are conditional on the frozen endpoint premises.",
+    "The 151712 count is an individual-column census for one normalized core.",
+    "The 2939 count is a residual census for one fixed X0-X1 certificate.",
+    "No simultaneous B, compatible H, endpoint exclusion, or improved n3 bound is proved.",
+    "The historical solver execution metadata cannot be reproduced from retained files."
+  ],
+  "restricted_core": {
+    "adjacency_traces_1_to_4": {
+      "1": 0,
+      "2": 108,
+      "3": 0,
+      "4": 540
+    },
+    "column_census": {
+      "allowed_pairs_per_fibre": [
+        60,
+        60,
+        60
+      ],
+      "new_by_internal_edges": {
+        "0": 52868,
+        "1": 76036,
+        "2": 22104,
+        "3": 704
+      },
+      "new_count": 151712,
+      "old_by_internal_edges": {
+        "0": 68774,
+        "1": 90364,
+        "2": 24138,
+        "3": 704
+      },
+      "old_count": 183980,
+      "raw_triples": 216000,
+      "rejected_by_negative_entry_count": {
+        "1": 30940,
+        "2": 1316,
+        "3": 12
+      },
+      "removed": 32268,
+      "transfer_target_signatures": {
+        "0,24,12": 317,
+        "1,22,13": 3227,
+        "10,4,22": 7,
+        "11,2,23": 2,
+        "2,20,14": 12989,
+        "3,18,15": 29991,
+        "4,16,16": 40658,
+        "5,14,17": 35461,
+        "6,12,18": 20250,
+        "7,10,19": 7232,
+        "8,8,20": 1440,
+        "9,6,21": 138
+      }
+    },
+    "components": 1,
+    "degree_set": [
+      3
+    ],
+    "edges": 54,
+    "fixed_pair_residual_census": {
+      "mixed_cut_choices": 2939,
+      "old_cut_choices": 3266,
+      "pair_certificate_realizes_forced_X0_X1_gram": true,
+      "raw_choices": 3600
+    },
+    "forced_gram_rank_over_Q": 34,
+    "four_cycles": 0,
+    "triangles": 0,
+    "upper_triangle_sha256": "f97aa806e08ddeb789be3f1fc604879a1630a6f1b8a21d899dbcd57772c998c5",
+    "vertices": 36
+  },
+  "scope": "Conditional endpoint one-triangle consequences and one frozen restricted-core census; no simultaneous 60-column object",
+  "solver_scope_audit": {
+    "execution_reproducibility": "Not independently verified: the target directory retains no solver program, CNF/MPS instance, raw log, or solver certificate.",
+    "logical_effect": "A timeout or budget exhaustion proves neither feasibility nor infeasibility, even within the restricted fixed-pair scope.",
+    "status": "UNKNOWN",
+    "verified_scope": "The fixed-pair search concerns one frozen X0-X1 certificate and at most the 2939 independently reproduced mixed-cut choices."
+  }
+}

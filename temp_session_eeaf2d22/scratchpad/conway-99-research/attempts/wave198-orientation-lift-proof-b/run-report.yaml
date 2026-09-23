@@ -1,0 +1,28 @@
+role: proof_b
+date_utc: 2026-07-29T05:43:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Derive the orientation-lifted row S5, exclude the Wave197 saturation
+  row, and prove the exact conditional bound Q>=7037.
+inputs:
+  - AGENTS.md
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave194-five-thirds-verifier/package-manifest.sha256
+  - verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256
+  - attempts/wave197-ten-flag-capacity-proof-b-audit/package-manifest.sha256
+method: >-
+  Orientation-sensitive flag incidence, privacy, verified full-pool
+  separation, and exact rational coefficient algebra.
+command: >-
+  python -B attempts/wave198-orientation-lift-proof-b/exact_check.py
+  --verify attempts/wave198-orientation-lift-proof-b/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave198-orientation-lift-proof-b/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave198-orientation-lift-proof-b.md
+  - attempts/wave198-orientation-lift-proof-b/
+limitations:
+  - Proof-B derivation, not verifier promotion.
+  - Conditional on the prism-free rank-11 endpoint.
+  - The rational null is not an asserted object.

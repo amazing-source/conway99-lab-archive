@@ -1,0 +1,55 @@
+role: proof_a
+date_utc: 2026-07-28T04:38:29Z
+git_commit: 127acd31ff7980d3d629009167a2bf7f95150b18
+claim_label: DERIVED
+scope: >-
+  Conditional q=14, rank_F7(S)=30 orbit-reduced vector theta feasibility
+  through K norm 22, with exact dual coefficients through y77, for a
+  hypothetical srg(99,14,1,2); plus a disjoint rank-28 scalar C4 Jacobi
+  reduction from index 630/90 to 70/10 through q10.
+inputs:
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: verification/wave80-f7-overlattice-code/package-manifest.sha256
+    sha256: 25129c86f97c8f9513eff04ada641c458b924f8edd583e6e6abc76d114c64077
+  - path: verification/wave86-level7-exact/package-manifest.sha256
+    sha256: cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2
+  - path: verification/wave97-f7-exterior-matroid/package-manifest.sha256
+    sha256: e7cdd56b40a385ffff42dcdf66f0a0f5b54f60af8472d6a9a9718f7209114992
+  - path: verification/wave101-all-rank-level7-lp/package-manifest.sha256
+    sha256: 79fd0331a936761f2394d58f835df80e41ad855cdf88660a2ccfd5841c5d7aba
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+  - path: verification/wave116-c4-jacobi-theta/package-manifest.sha256
+    sha256: e44afa352f51c192d6c5ac8584ccd6334dd69a3d11856f4ac0254283829bbfb8
+method: >-
+  Aggregate vector-valued theta components by exact quadratic value in
+  O^-(14,7) and O^-(30,7), without automorphism assumptions; derive the
+  nonzero-isotropic coefficient differences x_(7m)-y_m and y_(7n)-x_n;
+  extend the frozen exact modular basis through y77; replay rational prefix
+  optima, exact restricted dual identities, an even-integral null control,
+  and the abstract quotient-code upper bound. Independently reduce the C4
+  alternating marking to a primitive scalar index-70/index-10 K/L pair,
+  derive its 20-component theta decomposition, and construct a truncated
+  exact coefficient-cone null control.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave121-vector-theta-orbits\exact_check.py --verify ;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s attempts\wave121-vector-theta-orbits -p "test_*.py" -v
+outputs:
+  - attempts/wave121-vector-theta-orbits/exact-results.json
+  - attempts/wave121-vector-theta-orbits/derivation.md
+  - attempts/wave121-vector-theta-orbits/failed-routes.md
+  - attempts/wave121-vector-theta-orbits/exact_check.py
+  - attempts/wave121-vector-theta-orbits/test_exact_check.py
+  - attempts/wave121-vector-theta-orbits/scalar-jacobi-results.json
+  - attempts/wave121-vector-theta-orbits/scalar-jacobi-derivation.md
+  - attempts/wave121-vector-theta-orbits/scalar_jacobi_check.py
+  - attempts/wave121-vector-theta-orbits/test_scalar_jacobi_check.py
+limitations: >-
+  Discovery only. Full orthogonal aggregates do not imply componentwise
+  equality or lifted automorphisms. The exact even-integral prefix is not a
+  lattice or graph. Norm-20/22 coordinate compositions remain unknown. No
+  complete half-integral-weight Jacobi basis or upper dual is constructed.
+  No rank row is excluded; Conway-99 and novelty remain UNKNOWN.

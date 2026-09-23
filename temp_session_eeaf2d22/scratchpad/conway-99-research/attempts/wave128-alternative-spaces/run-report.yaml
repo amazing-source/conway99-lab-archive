@@ -1,0 +1,44 @@
+role: construction
+date_utc: 2026-07-28T05:19:25Z
+git_commit: 127acd31ff7980d3d629009167a2bf7f95150b18
+claim_label: DERIVED
+scope: >-
+  Conditional finite-primary discriminant split of the rank-74 incidence
+  kernel arising from a hypothetical srg(99,14,1,2) containing the frozen
+  Wave 105 induced C4 Cartesian K3 motif.
+inputs:
+  - path: attempts/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1
+  - path: verification/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: 2a24e3e5846558a9e93cd2f103e049816cef7f8dd4a200108643e44cc4c300ae
+  - path: attempts/wave107-c4boxk3-spectrum/package-manifest.sha256
+    sha256: 7e899602825d3cdf989affade8a1e5a6256f17ba911f6351ea8bfe4a3b05d2b0
+  - path: attempts/wave109-c4boxk3-local-projector/package-manifest.sha256
+    sha256: 6d54d48dbb6b1ffd3f7da845792fc12ee490471c02cc8137ebd1b03c21f5347e
+  - path: verification/wave109-c4boxk3-local-projector/package-manifest.sha256
+    sha256: fcbb970eebf0b92cb012f5f2e81ccb8c6315c002c1f228f830cd1b0b082e62cd
+method: >-
+  Rebuild Q and Q^TQ; derive the exact action C from BQ=QC; certify the
+  induced projector relation on Z^13/(Q^TQ)Z^13; compute local Smith
+  profiles of [G|C^T] and [G|7I-C^T] by exact DVR elimination; combine
+  the non-seven split with exact characteristic-corrected quadratic Gauss
+  sums and seven-unimodular orthogonal gluing; apply Milgram to determine
+  the seven-primary type; and exclude norm-two vectors in both rational
+  eigenlattices.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave128-alternative-spaces\exact_check.py
+  --verify attempts\wave128-alternative-spaces\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s attempts\wave128-alternative-spaces -p "test_*.py" -v
+outputs:
+  - path: attempts/wave128-alternative-spaces/exact-results.json
+    sha256: 4c1ba8303f3a525dfbad6990c3dfe1174be87d09ed356d683a5e5f95a75024e9
+  - path: attempts/wave128-alternative-spaces/package-manifest.sha256
+    sha256: SELF_EXCLUDED
+limitations:
+  - Discovery cannot verify itself; independent verification is required.
+  - The calculation is conditional on the motif occurring in a hypothetical target graph.
+  - The finite discriminant groups are necessary data, not lattice or graph constructions.
+  - No rank row or motif is excluded.
+  - The full extension, Conway-99, and literature novelty remain UNKNOWN.

@@ -1,0 +1,101 @@
+{
+  "catalog": "attempts/wave14-proof-a/cubic-trianglefree-16.g6",
+  "catalog_completeness_external_premise": "nauty_2.9.3_geng_-q_-td3D3_16_24:24",
+  "catalog_records": 801,
+  "catalog_sha256": "2df2ebc03d5135f7959f6aa66aba84d44efa5d1dc977d8184c2e1dffcce9569d",
+  "claim_label": "CANDIDATE",
+  "cutoff_count": 3,
+  "cutoffs": [
+    {
+      "catalog_index": 12,
+      "compatible_support_edges": 144,
+      "graph6": "O????B_sD_M?B_BO@W?M?",
+      "mandatory_k_degree_histogram": {
+        "6": 16
+      },
+      "mandatory_k_edges": 48,
+      "search": {
+        "solution": null,
+        "statistics": {
+          "cap_rejections": 70779,
+          "coverage_rejections": 2909,
+          "nodes": 100001
+        },
+        "status": "CUTOFF"
+      }
+    },
+    {
+      "catalog_index": 43,
+      "compatible_support_edges": 144,
+      "graph6": "O???CB?wBACKF?E_Ao?[?",
+      "mandatory_k_degree_histogram": {
+        "6": 8,
+        "7": 8
+      },
+      "mandatory_k_edges": 52,
+      "search": {
+        "solution": null,
+        "statistics": {
+          "cap_rejections": 71060,
+          "coverage_rejections": 4725,
+          "nodes": 100001
+        },
+        "status": "CUTOFF"
+      }
+    },
+    {
+      "catalog_index": 699,
+      "compatible_support_edges": 144,
+      "graph6": "O??CAA_SDODOAgT?Ag?I_",
+      "mandatory_k_degree_histogram": {
+        "7": 16
+      },
+      "mandatory_k_edges": 56,
+      "search": {
+        "solution": null,
+        "statistics": {
+          "cap_rejections": 67967,
+          "coverage_rejections": 5723,
+          "nodes": 100001
+        },
+        "status": "CUTOFF"
+      }
+    }
+  ],
+  "limitations": [
+    "all-active-points-restricted-to-size-two",
+    "K-tested-only-through-its-mandatory-subgraph",
+    "geng-completeness-is-external",
+    "no-formal-proof-trace",
+    "not-a-99-vertex-search"
+  ],
+  "mandatory_k_edge_histogram": {
+    "48": 1,
+    "50": 3,
+    "52": 1,
+    "54": 4,
+    "56": 9,
+    "57": 4,
+    "58": 10,
+    "59": 7,
+    "60": 31,
+    "61": 19,
+    "62": 44,
+    "63": 39,
+    "64": 93,
+    "65": 26,
+    "66": 163,
+    "67": 7,
+    "68": 184,
+    "70": 107,
+    "72": 49
+  },
+  "scope": "all-size-two r=16 active-support relaxation",
+  "search_status_histogram": {
+    "CUTOFF": 3,
+    "UNSAT": 798
+  },
+  "survivor_count": 0,
+  "survivors": [],
+  "target_result": "UNKNOWN"
+}

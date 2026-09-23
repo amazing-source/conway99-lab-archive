@@ -1,0 +1,21 @@
+Wave 56 independent clean-room suite
+command: .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave56-percolation-closure -p "test_*.py" -v
+result: 21 tests passed, 0 failed
+
+Discovery replay suite
+command: .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave56-percolation-closure -p "test_*.py" -v
+result: 21 tests passed, 0 failed
+
+Discovery artifact replay
+command: .\.venv\Scripts\python.exe -B attempts\wave56-percolation-closure\percolation_closure.py --verify attempts\wave56-percolation-closure\exact-results.json
+result: VERIFIED
+artifact_sha256: 4326daa7222fe3de30fec122238603094285dbae7a48ed41252cceb62c9ccc5b
+
+Independent comparison
+result: all 23 selected comparisons passed, including the exact mask list,
+  exact 35-profile list, and exact formal D4 orbit partition
+corrections: none
+
+resource check
+minimum required free RAM: 15 percent
+observed free RAM after the verification runs: 50.63 percent

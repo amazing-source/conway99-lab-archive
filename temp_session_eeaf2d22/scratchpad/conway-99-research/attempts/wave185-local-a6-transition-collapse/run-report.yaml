@@ -1,0 +1,36 @@
+role: proof_a
+date_utc: 2026-07-29T00:45:13Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional on Wave181 equality: prism-free collapse of the local A6
+  four-set transitions, exclusion of root multiplicity seven, exact
+  remaining multiplicity profiles, and root-count interval 349 through 415.
+inputs:
+  - verification/wave64-rooted-transition-design/package-manifest.sha256
+  - attempts/wave181-c4-conic-equality/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+  - verification/wave183-root-support-girth-verifier/package-manifest.sha256
+  - verification/wave184-root-support-intersections-verifier/package-manifest.sha256
+method: >-
+  Induced-prism exclusion, rooted endpoint transition equations, an exact
+  mu=2 pair-capacity argument, nonedge-root uniqueness, and integer
+  congruences. No graph, code, SAT, configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave185-local-a6-transition-collapse\exact_check.py --verify
+  attempts\wave185-local-a6-transition-collapse\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave185-local-a6-transition-collapse\test_exact_check.py
+outputs:
+  - attempts/wave185-local-a6-transition-collapse/README.md
+  - attempts/wave185-local-a6-transition-collapse/derivation.md
+  - attempts/wave185-local-a6-transition-collapse/failed-routes.md
+  - attempts/wave185-local-a6-transition-collapse/protocol.md
+  - attempts/wave185-local-a6-transition-collapse/exact_check.py
+  - attempts/wave185-local-a6-transition-collapse/exact-results.json
+  - attempts/wave185-local-a6-transition-collapse/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - Scalar multiplicity profiles are not constructions.
+  - Equality Q=2079, rank 11, the endpoint, and Conway-99 remain UNKNOWN.

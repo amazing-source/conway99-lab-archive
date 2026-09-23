@@ -1,0 +1,70 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-28T04:29:10Z",
+  "format": "conway99-wave116-public-checkpoint-v1",
+  "git_base_commit": "f07565e59de8b9b5b53280896e85fde3387e4f3e",
+  "manifests": {
+    "wave96_discovery": "1d1e7d01edfbfcd2871683390b56e16dc36a18cfc899f301f15a0fce3b246a73",
+    "wave96_verification": "8b3f9f90de931dc152ccf1b9e0705409492a6c5eb5246643ddce55aad8afe6e9",
+    "wave107_discovery": "7e899602825d3cdf989affade8a1e5a6256f17ba911f6351ea8bfe4a3b05d2b0",
+    "wave107_verification": "48398887ca2f4dbc5283cae851ffef396ea3b4308c16105f894ac6aa5cad4e1d",
+    "wave109_discovery": "6d54d48dbb6b1ffd3f7da845792fc12ee490471c02cc8137ebd1b03c21f5347e",
+    "wave109_verification": "fcbb970eebf0b92cb012f5f2e81ccb8c6315c002c1f228f830cd1b0b082e62cd",
+    "wave110_discovery": "1cef4ea7a81e844f10a56ccb1b5a5e0c4c7414b4efc766c486cdc666de8940ea",
+    "wave110_verification": "57ab8e26f872617ef9faecc7ca303c750ee1051b6455984620b27209f90e0a44",
+    "wave112_discovery": "f343b7d7b0bfb1ca8c7226946bcbe8b1d8c6169249911fea8493611187081c28",
+    "wave112_verification": "56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024",
+    "wave116_discovery": "9c474c8fc6c04e382b7fd506997c7ec81cb5ea5fa38453e6f284271eda933d98",
+    "wave116_verification": "e44afa352f51c192d6c5ac8584ccd6334dd69a3d11856f4ac0254283829bbfb8",
+    "wave118_subjective_estimate": "f6108a370e56bfbb07aaeffcc6edd50988c90032bb148816579dbd33418d03d4"
+  },
+  "prior_checkpoint": "logs/2026-07-28-wave105-public-checkpoint.json",
+  "results": {
+    "c4_incidence": {
+      "antipodal_extensions_forced_on_some_cycle_rank28": 26,
+      "induced_c4_count": 2079,
+      "pointwise_cap_target": 25,
+      "pointwise_cap_status": "NOT_PROVED"
+    },
+    "conditional_motif": {
+      "outside_edges": 549,
+      "outside_four_cycles": 1356,
+      "outside_triangles": 167,
+      "sat_results": [
+        "UNKNOWN_TIMEOUT",
+        "UNKNOWN_TIMEOUT",
+        "UNKNOWN_TIMEOUT",
+        "UNKNOWN_TIMEOUT"
+      ]
+    },
+    "jacobi": {
+      "antipodal_incidence_lower": 52812,
+      "cap25_upper_target": 51975,
+      "large_index_determinant": 1023942465,
+      "small_index": "INVALID",
+      "upper_certificate": "NOT_PROVED"
+    },
+    "norm20": {
+      "alternating_c4_lower": 15,
+      "pointwise_cap_target_rank30": 24,
+      "profile": "10_plus_1_and_10_minus_1"
+    },
+    "strategy_estimate": {
+      "label": "SUBJECTIVE_RESEARCH_ESTIMATE",
+      "central_full_resolution_percent": 1,
+      "central_hard_rank_row_percent": 20,
+      "central_useful_theorem_percent": 55
+    }
+  },
+  "status": "VERIFIED_WITH_CLARIFICATIONS_AND_EVIDENCE_BOUNDARY",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "full_motif_extension": "UNKNOWN",
+    "n16_n18_upper_bound": "NOT_PROVED",
+    "novelty": "UNKNOWN",
+    "rank_f7_28": "UNKNOWN",
+    "rank_f7_30": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

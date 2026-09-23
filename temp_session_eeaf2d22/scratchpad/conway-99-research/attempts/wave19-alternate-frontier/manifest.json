@@ -1,0 +1,295 @@
+{
+  "schema_version": 3,
+  "release_revision": "canonical-newline-v3",
+  "release_frozen": true,
+  "frozen_utc": "2026-07-23T15:28:10Z",
+  "supersedes_manifest_sha256": "558a0cc0450058c6cd58092ac63510ae8fe20c1ac7e1cd0121302494b9c9bfc1",
+  "supersession_reason": "provenance-only CRLF-to-LF normalization; mathematical source and outputs are unchanged",
+  "release_history": [
+    {
+      "revision": "v1",
+      "manifest_sha256": "adc025f3020f992f6077c8d6006031688db424aa9ffbe5f33618679f95cfd37c"
+    },
+    {
+      "revision": "public-hygiene-v2",
+      "manifest_sha256": "558a0cc0450058c6cd58092ac63510ae8fe20c1ac7e1cd0121302494b9c9bfc1"
+    }
+  ],
+  "status": "DERIVED_PENDING_INDEPENDENT_AUDIT",
+  "scope": "conditional exact exclusion of n3=60 for a putative srg(99,14,1,2)",
+  "git_commit_read_without_git": "a562e7e250ab99631a109d66dec62c07e27a22fb",
+  "target": "UNKNOWN",
+  "novelty": "UNKNOWN",
+  "self_hash_policy": "manifest.json is excluded from its own artifact table; its release SHA-256 is reported alongside the package",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1757,
+      "sha256": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3"
+    },
+    {
+      "path": "agents/2026-07-23-wave18-n3-57-structural.md",
+      "bytes": 12523,
+      "sha256": "fa1dde1f96aaaf2c9a90c73308afbc967fab892fe79246bf7eafa2831fea38f6"
+    },
+    {
+      "path": "verification/2026-07-23-wave18-n3-57-structural-audit.md",
+      "bytes": 19035,
+      "sha256": "8534456ac92fd704ad7b24f5d7d2c262ea31476132018e9d14a8e4779b27ae5d"
+    },
+    {
+      "path": "attempts/wave18-n3-57-structural/exact-checks.json",
+      "bytes": 3608,
+      "sha256": "76decce7f0af8e3bf2db483096a10a86321a9d7143e6123ad2081ec17d28604c"
+    }
+  ],
+  "catalogs": {
+    "6": {
+      "url": "https://houseofgraphs.org/data/cubics/cub06.g6",
+      "bytes": 10,
+      "sha256": "49a7391d96ad84fd13c8b5267ef23c215085ed317e6146e479df2bcdfd672949",
+      "records": 2
+    },
+    "8": {
+      "url": "https://houseofgraphs.org/data/cubics/cub08.g6",
+      "bytes": 35,
+      "sha256": "6946d13a0aec85386d47d087ad2a9f2561b05d8580f0ec937414f8d31359d34f",
+      "records": 5
+    },
+    "10": {
+      "url": "https://houseofgraphs.org/data/cubics/cub10.g6",
+      "bytes": 190,
+      "sha256": "0c3182bcbbfdc38fc7b84f3a1ac510834c3064524db00afeac212a3292f17c7b",
+      "records": 19
+    },
+    "12": {
+      "url": "https://houseofgraphs.org/data/cubics/cub12.g6",
+      "bytes": 1105,
+      "sha256": "21bab16fbf7db826928315b9ca1d64684c0b1f7014b02fab0c6f2fb2f247104b",
+      "records": 85
+    },
+    "14": {
+      "url": "https://houseofgraphs.org/data/cubics/cub14.g6",
+      "bytes": 9162,
+      "sha256": "6657f77868567a7e604a2325b5d748e5a04848b4ab75310ffa3ba695d26c66fe",
+      "records": 509
+    },
+    "20": {
+      "url": "https://houseofgraphs.org/data/cubics/cub20.g6",
+      "bytes": 17356626,
+      "sha256": "83e8d235435fb3aab83b0315ae39fe16cf0afdb4699bbdcd6fae31541ea8d458",
+      "records": 510489
+    }
+  },
+  "commands": {
+    "generation": ".venv\\Scripts\\python.exe -B attempts\\wave19-alternate-frontier\\exact_frontier.py --output attempts\\wave19-alternate-frontier\\exact-results.json --connected-dispositions attempts\\wave19-alternate-frontier\\connected20-dispositions.txt --disconnected-dispositions attempts\\wave19-alternate-frontier\\disconnected20-dispositions.json",
+    "byte_identical_verification": ".venv\\Scripts\\python.exe -B attempts\\wave19-alternate-frontier\\exact_frontier.py --verify attempts\\wave19-alternate-frontier\\exact-results.json --connected-dispositions attempts\\wave19-alternate-frontier\\connected20-dispositions.txt --disconnected-dispositions attempts\\wave19-alternate-frontier\\disconnected20-dispositions.json",
+    "focused_tests": ".venv\\Scripts\\python.exe -B -m unittest -v attempts\\wave19-alternate-frontier\\test_exact_frontier.py"
+  },
+  "runs": {
+    "generation": {
+      "status": "PASS",
+      "elapsed_seconds": 311.064,
+      "checkpoints": 4,
+      "stderr_bytes": 0
+    },
+    "byte_identical_verification": {
+      "status": "PASS",
+      "elapsed_seconds": 305.596,
+      "checkpoints": 4,
+      "stderr_bytes": 0,
+      "exact_json_byte_identical": true,
+      "regenerated_dispositions_identical": true
+    },
+    "focused_tests": {
+      "status": "PASS_7_OF_7",
+      "elapsed_seconds": 0.525,
+      "exit_code": 0
+    }
+  },
+  "result_summary": {
+    "q_profiles": 13,
+    "connected_catalog_records": 510489,
+    "connected_triangle_free": 97546,
+    "connected_local_C6_survivors": 298,
+    "connected_symmetric_L_failures": 295,
+    "disconnected_cases": 177,
+    "two_Petersen_L_R_models": 120,
+    "eligible_Z_edges": 165,
+    "Z_subsets_size_one_through_three": 748825,
+    "entrywise_nonnegative_Z_placements": 8935,
+    "entrywise_Z_orbits": 66,
+    "exact_PSD_Z_orbits": 16,
+    "augmented_inconsistent_Gram_orbits": 15,
+    "final_Z": [[0, 23], [1, 22], [2, 17]],
+    "final_Gram_rank": 28,
+    "final_support_count": 232,
+    "final_support_sha256": "19100d7ee88ee7e7a9fb5bbf4546066ee889c131275b275dd96e07486eeac394",
+    "final_Farkas_target_score": -6,
+    "final_Farkas_support_score_histogram": {
+      "0": 211,
+      "1": 18,
+      "2": 3
+    },
+    "final_Z_orbit_images": 10,
+    "sign_mutation_rejected": true,
+    "index_mutation_rejected": true,
+    "conditional_n3_60": "EXCLUDED_DERIVED_PENDING_INDEPENDENT_AUDIT"
+  },
+  "trusted_path": {
+    "python_standard_library_only": true,
+    "scipy_or_numpy_dependency": false,
+    "local_absolute_path_dependency": false,
+    "catalog_completeness_and_pairwise_nonisomorphism": "external premise",
+    "failed_solver_exit_codes_used_as_evidence": false,
+    "withdrawn_scout_coordinates_used": false
+  },
+  "public_hygiene": {
+    "record": "attempts/wave19-alternate-frontier/public-redaction-v2.json",
+    "normalized_artifact_count": 6,
+    "normalized_occurrence_count": 18,
+    "private_workspace_prefix_matches_after_redaction": 0,
+    "mathematical_replay_rerun": false,
+    "unchanged_core_hashes_asserted": true
+  },
+  "canonical_newlines": {
+    "record": "attempts/wave19-alternate-frontier/public-newline-v3.json",
+    "changed_file_count": 10,
+    "declared_text_artifact_CR_bytes": 0,
+    "classification": "provenance-only",
+    "mathematical_replay_rerun": false,
+    "protected_mathematical_core_hashes_asserted": true
+  },
+  "artifacts": [
+    {
+      "path": "agents/2026-07-23-wave19-alternate-frontier.md",
+      "bytes": 16302,
+      "sha256": "ea28f4104bcdd479cf1a2ea59652cb9f541893851a26cef1450755e1d0827dc0"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/exact_frontier.py",
+      "bytes": 54588,
+      "sha256": "960b3f85ea2bbdbf940c46875bac7520aa2b514a1068e75d419c8e489dedde7b"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/test_exact_frontier.py",
+      "bytes": 3898,
+      "sha256": "5271fc8c2358872c435d68b1e0ba9c0274ea509eed261fddd6bd512b0427d427"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/exact-results.json",
+      "bytes": 28820,
+      "sha256": "3e6c3016572c55aa15acc7b629a6a11b73cfce48f33e61ab1def2ebaf9b6f000"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/connected20-dispositions.txt",
+      "bytes": 510490,
+      "sha256": "ea4ce3e70e4e3dfc39befd952f633fc680642c5a6285d3ed08232d0d19f43cc6"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/disconnected20-dispositions.json",
+      "bytes": 19172,
+      "sha256": "491e7dddd7a5d630b546faf3a86d0aedf34e80bf02bf70d9c52112082d5d1c9b"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/failed-runs.md",
+      "bytes": 5053,
+      "sha256": "14ab37c9cfa928c91cf09290c990a89b040bcd56ef47aec98059d821b2e884a5"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run-metadata.json",
+      "bytes": 6913,
+      "sha256": "2e04f0c94ab017e6e36180145cdae0f119a3ce20515966eb29995b6672affd65"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/public-redaction-v2.json",
+      "bytes": 2501,
+      "sha256": "5a4dc89f5d92472e36c9895a12807bc632479165a6b8378cd19813a2f66fe897"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/public-newline-v3.json",
+      "bytes": 5353,
+      "sha256": "7f5f382e4f07ddb7f3e277d217b569c97ac23ebdb607c36134ede0a8a56ce9a6"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run.stderr.log",
+      "bytes": 117,
+      "sha256": "7c3336e0f0c1de68ede56f22c6ac7a42e96abee2baa9b304196c4393231ecc39"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run2.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run2.stderr.log",
+      "bytes": 1544,
+      "sha256": "8756aa414ef2637a3b174403e2138e12648c2156cb0369f4f7f5b2db5af57823"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run3.stdout.log",
+      "bytes": 111,
+      "sha256": "5f322aa1a44d9d68a59c10395feeffcd2bc41fa153bcd19be9d4db2ff31a318c"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run3.stderr.log",
+      "bytes": 740,
+      "sha256": "dfa3d88b550069ae29724a1efb5e044f01d1fe48c475515a9738bbd1970d75ec"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run4.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run4.stderr.log",
+      "bytes": 117,
+      "sha256": "7c3336e0f0c1de68ede56f22c6ac7a42e96abee2baa9b304196c4393231ecc39"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run5.stdout.log",
+      "bytes": 111,
+      "sha256": "5f322aa1a44d9d68a59c10395feeffcd2bc41fa153bcd19be9d4db2ff31a318c"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run5.stderr.log",
+      "bytes": 846,
+      "sha256": "e2b5c0c36c26d46eb178b56d3ad0fb26852282fbea3efb69d7cd52a9a8e0f92d"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run6.stdout.log",
+      "bytes": 154,
+      "sha256": "deaf5ed8d2877e1a9e69d6597a12ad309a7823c3caec34c7c1895487d07129f6"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run6.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run7-verify.stdout.log",
+      "bytes": 154,
+      "sha256": "deaf5ed8d2877e1a9e69d6597a12ad309a7823c3caec34c7c1895487d07129f6"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run7-verify.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/tests-final.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/tests-final.stderr.log",
+      "bytes": 1103,
+      "sha256": "91048326cc6b8b2c6a96711cfb25489797206d96c332adc7d3b1898cc8ad8615"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+role: proof_a
+date_utc: 2026-07-27T22:26:10Z
+git_commit: 81c8d45426938ea8490af55d81f05b7c2ad99035
+claim_label: DERIVED
+scope: rooted transition-system and three-edge-matching-design necessary conditions for the prism-free srg(99,14,1,2) endpoint
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  agents/2026-07-22-wave3-fiber-coupling.md: a53063a2404b3dba3be64752fb707e76e233770b7830e18794e29c3980355dc1
+  verification/2026-07-22-wave3-audit.md: bf4c000b9ee007439672c64a645e223c1f05b139a7da0e3ef699caba52830345
+  attempts/wave35-n3-upper-triple-overlap/root-endpoint-reduction.json: 7551c7b9d956705e41f9feb42d76d3bb5ab60dab0b46416fa9c0e58e5346a46a
+  attempts/wave35-n3-upper-triple-overlap/run-report.yaml: e0d2f881aa5810b1a12d3ea2098c647a0d9c5a051f83921222e106ce11f7b821
+  verification/wave62-terwilliger-sdp/exact-verifier-result.json: 2274607a93bc72093f9a9cbe3cdb6a5ee7942c712d54177450003f741104f916
+  verification/wave62-terwilliger-sdp/verification-report.md: 2503a8b71ddc448cc715738ae164f6ab509d6fadeaf210ce4d04c0a8af04d07e
+  verification/wave62-terwilliger-sdp/package-manifest.sha256: 439bd26e463ae19ce7cbac9989b23a681236d7a1df623005e5a829e5f8957968
+method: exact rooted derivation, exhaustive finite enumeration, integer witness search, exact witness checking, rational arithmetic, and bounded stronger-master search
+command: |
+  .venv\Scripts\python attempts\wave64-rooted-transition-design\transition_design.py census
+  .venv\Scripts\python attempts\wave64-rooted-transition-design\transition_design.py solve-block --time-limit 60 --seed 0 --full-opposite-count 5
+  .venv\Scripts\python attempts\wave64-rooted-transition-design\transition_design.py extend --block-witness block-witness.json --time-limit 30 --seed 0
+  .venv\Scripts\python attempts\wave64-rooted-transition-design\sat_scout.py --time-limit 180
+  .venv\Scripts\python attempts\wave64-rooted-transition-design\check_witness.py
+  .venv\Scripts\python -m unittest attempts\wave64-rooted-transition-design\test_exact_check.py -v
+outputs:
+  attempts/wave64-rooted-transition-design/block-witness.json: e13eb2deb05f4ee001ed65c2b17cd92432f7c1841e59730b9409addf0e11626c
+  attempts/wave64-rooted-transition-design/exact-check-result.json: 8f15bfa8681560aad5b7d7f8a6c800b170198a2c6701e340a41e3d4ef589c9d4
+limitations:
+  - discovery cannot promote its own results to VERIFIED
+  - the integral witness satisfies only the block master
+  - no integral stronger-master witness or exact infeasibility certificate was found
+  - the stronger linear master omits the complete residual-codegree equations
+  - no target graph, nonexistence proof, novelty certification, or improved n3 bound is claimed

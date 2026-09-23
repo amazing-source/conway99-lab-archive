@@ -1,0 +1,18 @@
+role: proof_a
+date_utc: "2026-07-27T01:16:03Z"
+git_commit: "3014f3b1c010cdde1687b8878d4ec58d2bb90f03"
+claim_label: DERIVED
+scope: "Conditional n3=4158 signed four-cycle imbalance, characteristic-three vertex-clique centering, fixed-triangle quotient-rank bridge, and a local rank-ten positive control"
+inputs:
+  - "attempts/wave38-higher-order/input-freeze.sha256 | sha256 7e7f6fd8aa9182a85e1bc5119d0407ac3f6346eb21b6bc6a7f54e53e4043fd49"
+method: "Exact signed closed-walk subtraction, finite-field Gram centering, tripartite quotient contraction, exact rational and finite-field elimination, and exhaustive 60^3 individual-column enumeration for one frozen core"
+command:
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave38-higher-order\\exact_check.py --output attempts\\wave38-higher-order\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave38-higher-order\\exact_check.py --verify attempts\\wave38-higher-order\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest -v attempts\\wave38-higher-order\\test_exact_check.py"
+outputs:
+  - "attempts/wave38-higher-order/exact_check.py | sha256 24897ec7cb87aebb77f374a5a2429fb0d2ecff161ed11c95e4d6b4dd9aff9965"
+  - "attempts/wave38-higher-order/test_exact_check.py | sha256 f64065a36a028deead10fd377b5763bb20c480cc830637a99f8f58fdf06762ff"
+  - "attempts/wave38-higher-order/exact-results.json | sha256 7d3229234e5eda3f432ff88eb07670a18611b37a64ef3a7949f4a505f274c782"
+  - "attempts/wave38-higher-order/failed-routes.md | sha256 834543e67f8f2d1d4e61d46b93ab0044de4a5855dbf06c36557beaf07c5507c0"
+limitations: "Discovery cannot verify itself. The fourth-order count is necessary but not contradictory. The frozen core has no simultaneous 60-column B or compatible H. It is not a 99-vertex graph. No endpoint exclusion, P>=1 theorem, upper-bound improvement, or novelty claim is made."

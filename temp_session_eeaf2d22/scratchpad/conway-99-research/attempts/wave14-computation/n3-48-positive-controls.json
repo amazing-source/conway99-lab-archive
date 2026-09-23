@@ -1,0 +1,118 @@
+{
+  "claim_label": "CANDIDATE",
+  "novelty": "UNKNOWN",
+  "purpose": "positive weakened assignments must violate exactly the named omitted premise while retaining the other encoded families",
+  "results": [
+    {
+      "branch": {
+        "branch_id": "root-q3x0",
+        "normalization": "choose one selected triple with this q-composition and map it to the displayed labels using only permutations within equal-q classes",
+        "root_point": [
+          0,
+          1,
+          2
+        ],
+        "root_q3_count": 0,
+        "root_q_values": [
+          2,
+          2,
+          2
+        ]
+      },
+      "candidate_path": "attempts/wave14-computation/n3-48-r16-q2x16-root-q3x0-no_common_point_control-candidate.json",
+      "candidate_semantic_sha256": "00fa2235b5716387a2eb8e57438f078df5361925c83513d767437890285406ff",
+      "evidentiary_status": "positive assignment requires exact validation",
+      "formula": {
+        "base_clause_count": 1641761,
+        "branch_unit_count": 1,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 1.8267123999539763,
+        "materialized_clause_count": 1641762,
+        "materialized_dimacs_sha256": "2c386e58446c3142a6f0d93f8f92f0cd6a085951d82f7214eb9cc9adef2b6d4b",
+        "variable_count": 469720
+      },
+      "profile_id": "r16-q2x16",
+      "solver": {
+        "conflict_budget": 50000,
+        "elapsed_seconds": 1.0332056999905035,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 1621,
+          "decisions": 24101,
+          "propagations": 4816018,
+          "restarts": 14
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 10.0
+      },
+      "status": "SAT_CANDIDATE",
+      "variant": "no_common_point_control"
+    },
+    {
+      "branch": {
+        "branch_id": "no-size3",
+        "normalization": "no label symmetry is fixed; every size-three point is absent",
+        "root_point": null,
+        "root_q3_count": null
+      },
+      "candidate_path": "attempts/wave14-computation/n3-48-r16-q2x16-no-size3-k_degree_upper_control-candidate.json",
+      "candidate_semantic_sha256": "e918fe1cad2812f5a9c708df63d95e531e1a015d406ba4607293a940170294b5",
+      "evidentiary_status": "positive assignment requires exact validation",
+      "formula": {
+        "base_clause_count": 1637855,
+        "branch_unit_count": 560,
+        "branch_units_are_solver_assumptions": true,
+        "build_seconds": 2.1951022000284865,
+        "materialized_clause_count": 1638415,
+        "materialized_dimacs_sha256": "4bf32491072b83a53ff254ee8359e606e3b93d1cbb974ba380ed82f2f7af59ef",
+        "variable_count": 468352
+      },
+      "profile_id": "r16-q2x16",
+      "solver": {
+        "conflict_budget": 50000,
+        "elapsed_seconds": 1.1058086999692023,
+        "name": "glucose42",
+        "proof_trace_checked": false,
+        "proof_trace_emitted": false,
+        "statistics": {
+          "conflicts": 414,
+          "decisions": 3173,
+          "propagations": 751948,
+          "restarts": 2
+        },
+        "timer_fired": false,
+        "wall_timeout_enforced": true,
+        "wall_timeout_seconds_requested": 10.0
+      },
+      "status": "SAT_CANDIDATE",
+      "variant": "k_degree_upper_control"
+    }
+  ],
+  "schema": "conway99-wave14-n3-48-positive-controls-v1",
+  "semantic": {
+    "controls": [
+      {
+        "branch_id": "root-q3x0",
+        "candidate_semantic_sha256": "00fa2235b5716387a2eb8e57438f078df5361925c83513d767437890285406ff",
+        "formula_sha256": "2c386e58446c3142a6f0d93f8f92f0cd6a085951d82f7214eb9cc9adef2b6d4b",
+        "profile_id": "r16-q2x16",
+        "status": "SAT_CANDIDATE",
+        "variant": "no_common_point_control"
+      },
+      {
+        "branch_id": "no-size3",
+        "candidate_semantic_sha256": "e918fe1cad2812f5a9c708df63d95e531e1a015d406ba4607293a940170294b5",
+        "formula_sha256": "4bf32491072b83a53ff254ee8359e606e3b93d1cbb974ba380ed82f2f7af59ef",
+        "profile_id": "r16-q2x16",
+        "status": "SAT_CANDIDATE",
+        "variant": "k_degree_upper_control"
+      }
+    ],
+    "target_n3": 48
+  },
+  "semantic_sha256": "fb39d2cf7f9b42375eb2bf77f211739c9da61f7f1c1b74d65b12355fc4f89905",
+  "target_result": "UNKNOWN"
+}

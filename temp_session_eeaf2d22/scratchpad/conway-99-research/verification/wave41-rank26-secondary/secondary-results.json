@@ -1,0 +1,3468 @@
+{
+  "all_odd_schur_obstructions": {
+    "1+1+1+1+1+1": {
+      "exact_W_hits_among_10395": 0,
+      "left_degree_sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximum_matching_witness": [],
+      "maximum_zero_diagonal_matching": 0,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank_25_completion_exists": false,
+      "zero_diagonal_allowed_edges": 0,
+      "zero_diagonal_candidates": [],
+      "zero_diagonal_permutation_count": 0
+    },
+    "3+1+1+1": {
+      "exact_W_hits_among_10395": 0,
+      "left_degree_sequence": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximum_matching_witness": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "maximum_zero_diagonal_matching": 6,
+      "partition": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "rank_25_completion_exists": false,
+      "zero_diagonal_allowed_edges": 6,
+      "zero_diagonal_candidates": [],
+      "zero_diagonal_permutation_count": 0
+    },
+    "3+3": {
+      "exact_W_hits_among_10395": 0,
+      "left_degree_sequence": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maximum_matching_witness": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          8
+        ]
+      ],
+      "maximum_zero_diagonal_matching": 12,
+      "partition": [
+        3,
+        3
+      ],
+      "rank_25_completion_exists": false,
+      "zero_diagonal_allowed_edges": 12,
+      "zero_diagonal_candidates": [
+        {
+          "matching_W_hit": false,
+          "off_diagonal_values": [
+            1,
+            2,
+            4
+          ],
+          "off_diagonal_values_outside_W_alphabet": 18,
+          "permutation": [
+            3,
+            4,
+            5,
+            0,
+            1,
+            2,
+            9,
+            10,
+            11,
+            6,
+            7,
+            8
+          ],
+          "target_diagonal": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target_sha256": "7e43b5dd65b12fe0051b63eb9b7673971e2892ff7f65bf9eb0dd8419e655bf9e"
+        }
+      ],
+      "zero_diagonal_permutation_count": 1
+    },
+    "5+1": {
+      "exact_W_hits_among_10395": 0,
+      "left_degree_sequence": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "maximum_matching_witness": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "maximum_zero_diagonal_matching": 10,
+      "partition": [
+        5,
+        1
+      ],
+      "rank_25_completion_exists": false,
+      "zero_diagonal_allowed_edges": 20,
+      "zero_diagonal_candidates": [],
+      "zero_diagonal_permutation_count": 0
+    }
+  },
+  "block_reduction": {
+    "F": "F=H^T U, where rows(H) are a basis of ker(S)",
+    "S_rank": "25-2e for e even parts",
+    "Z": "columns(Z) are the canonical right-kernel basis of F",
+    "block": "K39=[[S,U],[U^T,W_R]] over F7",
+    "direct_positive_controls": [
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 35,
+        "direct_rank_K39": 35,
+        "partition": [
+          6
+        ],
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          11,
+          10,
+          9
+        ],
+        "rank_F": 1,
+        "rank_S": 23,
+        "rank_residual": 10
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 35,
+        "direct_rank_K39": 35,
+        "partition": [
+          5,
+          1
+        ],
+        "permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank_F": 0,
+        "rank_S": 25,
+        "rank_residual": 10
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 33,
+        "direct_rank_K39": 33,
+        "partition": [
+          4,
+          2
+        ],
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          11,
+          10,
+          9
+        ],
+        "rank_F": 2,
+        "rank_S": 21,
+        "rank_residual": 8
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 33,
+        "direct_rank_K39": 33,
+        "partition": [
+          4,
+          1,
+          1
+        ],
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank_F": 1,
+        "rank_S": 23,
+        "rank_residual": 8
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 35,
+        "direct_rank_K39": 35,
+        "partition": [
+          3,
+          3
+        ],
+        "permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank_F": 0,
+        "rank_S": 25,
+        "rank_residual": 10
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 33,
+        "direct_rank_K39": 33,
+        "partition": [
+          3,
+          2,
+          1
+        ],
+        "permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          9,
+          8,
+          7,
+          10,
+          11
+        ],
+        "rank_F": 1,
+        "rank_S": 23,
+        "rank_residual": 8
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 33,
+        "direct_rank_K39": 33,
+        "partition": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank_F": 0,
+        "rank_S": 25,
+        "rank_residual": 8
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 31,
+        "direct_rank_K39": 31,
+        "partition": [
+          2,
+          2,
+          2
+        ],
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          11,
+          10,
+          9
+        ],
+        "rank_F": 3,
+        "rank_S": 19,
+        "rank_residual": 6
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 31,
+        "direct_rank_K39": 31,
+        "partition": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank_F": 2,
+        "rank_S": 21,
+        "rank_residual": 6
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 31,
+        "direct_rank_K39": 31,
+        "partition": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank_F": 1,
+        "rank_S": 23,
+        "rank_residual": 6
+      },
+      {
+        "R": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "decomposition_rank_K39": 31,
+        "direct_rank_K39": 31,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "rank_F": 0,
+        "rank_S": 25,
+        "rank_residual": 6
+      }
+    ],
+    "exact_rank_formula": "rank(K39)=rank(S)+2 rank(F)+rank(Z^T W_R Z-T)",
+    "rank_25_iff": "rank(K39)=25 iff rank(F)=e and Z^T W_R Z=T",
+    "target": "T=Z^T U^T X, where S X=U Z; T is independent of the chosen solution X",
+    "why": "Congruence splits S into an invertible summand and its radical, leaving [[0,F],[F^T,C]]. A second congruence splits 2 rank(F) hyperbolic directions and leaves exactly the restriction of C to ker(F)."
+  },
+  "claim_label": "VERIFIED",
+  "even_partition_audits": {
+    "2+1+1+1+1": {
+      "R_coverage_method": "Every R is assigned to one of 11 branches by the mate of the canonical pivot; each branch contains 9!!=945 matchings. The diagonal kernel-form equations reject every branch.",
+      "R_hit_distribution": {
+        "0": 80640
+      },
+      "R_instances_covered": 838252800,
+      "R_matching_count_per_permutation": 10395,
+      "canonical_kernel_target_stream_sha256": "175498872ea495debb5bec6e97a65053bd6e27cae650ae155e65a6e220567f35",
+      "canonical_right_kernel_dimension": 11,
+      "diagonal_survivor_distribution": {
+        "0": 80640
+      },
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "first_canonical_right_kernel_target": {
+        "F_rank": 1,
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "right_kernel_columns": [
+          [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "right_kernel_sha256": "1975f938d1ee65b96a7a44a9da244a1d137824499a7cbd51b1571ca41fcc593c",
+        "target": [
+          [
+            2,
+            1,
+            3,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          [
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            1,
+            6,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            6,
+            2,
+            3,
+            6,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            0,
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            1,
+            1,
+            6,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            1,
+            1,
+            0,
+            6,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            1,
+            1,
+            1,
+            1,
+            6,
+            0,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            1,
+            1,
+            1,
+            1,
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            6,
+            0
+          ],
+          [
+            6,
+            2,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            6
+          ]
+        ],
+        "target_sha256": "38aeb7423ec4c8d64b03d5a0abb7f4544861f5a81bedce550181f5f0eea44843"
+      },
+      "local_rank_F7": 23,
+      "minimum_F_permutation_count": 80640,
+      "minimum_F_permutation_stream_sha256": "d9d9132d306cb1113d7c58bdaafd2cfb6a4808b6bba56043893a90d9b2fda041",
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank_25_completion_exists": false,
+      "total_rank_25_R_hits": 0,
+      "unique_raw_canonical_kernel_targets": 80038
+    },
+    "2+2+1+1": {
+      "R_coverage_method": "For every minimum-F permutation, vectorize the exact upper triangle of Z^T W_R Z over all 10,395 enumerated R matchings and compare entrywise over F7 with the canonical target.",
+      "R_hit_distribution": {
+        "0": 192
+      },
+      "R_instances_covered": 1995840,
+      "R_matching_count_per_permutation": 10395,
+      "canonical_kernel_target_stream_sha256": "c1e708d88cb6ac51eada79165356b62d0ada4b1889e5c1e661fe42b44269b9b4",
+      "canonical_right_kernel_dimension": 10,
+      "diagonal_survivor_distribution": {},
+      "distinct_canonical_right_kernels": 8,
+      "even_part_count": 2,
+      "first_canonical_right_kernel_target": {
+        "F_rank": 2,
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          9,
+          10,
+          11
+        ],
+        "right_kernel_columns": [
+          [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "right_kernel_sha256": "dc1b091c9cc97f98c6099498bad43069aa942780658134e36a5f939ce15a11f5",
+        "target": [
+          [
+            2,
+            1,
+            3,
+            1,
+            5,
+            4,
+            6,
+            6,
+            6,
+            6
+          ],
+          [
+            1,
+            0,
+            1,
+            5,
+            4,
+            6,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            1,
+            6,
+            4,
+            6,
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            1,
+            5,
+            4,
+            2,
+            1,
+            3,
+            6,
+            6,
+            6,
+            6
+          ],
+          [
+            5,
+            4,
+            6,
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            4,
+            6,
+            2,
+            3,
+            1,
+            6,
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            6,
+            2,
+            3,
+            6,
+            2,
+            3,
+            6,
+            0,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            6,
+            2,
+            3,
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            6,
+            2,
+            3,
+            1,
+            1,
+            6,
+            0
+          ],
+          [
+            6,
+            2,
+            3,
+            6,
+            2,
+            3,
+            1,
+            1,
+            0,
+            6
+          ]
+        ],
+        "target_sha256": "ccbb402b953c06876947b02eb86c28c0b3361c032f2cdf024284006a793d4ff8"
+      },
+      "local_rank_F7": 21,
+      "minimum_F_permutation_count": 192,
+      "minimum_F_permutation_stream_sha256": "c954c8201443542147486af3eda4ab8bf3c65c74acb5da969176cb4d9c173772",
+      "minimum_F_rank": 2,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 290,
+        "observed_projective_lines": 28,
+        "winning_subspaces": 8
+      },
+      "partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "rank_25_completion_exists": false,
+      "total_rank_25_R_hits": 0,
+      "unique_raw_canonical_kernel_targets": 184
+    },
+    "2+2+2": {
+      "R_coverage_method": "For every minimum-F permutation, vectorize the exact upper triangle of Z^T W_R Z over all 10,395 enumerated R matchings and compare entrywise over F7 with the canonical target.",
+      "R_hit_distribution": {
+        "0": 32
+      },
+      "R_instances_covered": 332640,
+      "R_matching_count_per_permutation": 10395,
+      "canonical_kernel_target_stream_sha256": "883fa80a2a360f5e4c7db790030ec24a446af36f05f61962682bb7c29b84da1c",
+      "canonical_right_kernel_dimension": 9,
+      "diagonal_survivor_distribution": {},
+      "distinct_canonical_right_kernels": 32,
+      "even_part_count": 3,
+      "first_canonical_right_kernel_target": {
+        "F_rank": 3,
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          11,
+          10,
+          9
+        ],
+        "right_kernel_columns": [
+          [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        ],
+        "right_kernel_sha256": "7cb85f0b5de6daf79e2212a35c06527dfa1dafb290cab9b3d159dea2763923af",
+        "target": [
+          [
+            2,
+            1,
+            3,
+            1,
+            5,
+            4,
+            1,
+            5,
+            4
+          ],
+          [
+            1,
+            0,
+            1,
+            5,
+            4,
+            6,
+            5,
+            4,
+            6
+          ],
+          [
+            3,
+            1,
+            6,
+            4,
+            6,
+            2,
+            4,
+            6,
+            2
+          ],
+          [
+            1,
+            5,
+            4,
+            2,
+            1,
+            3,
+            1,
+            5,
+            4
+          ],
+          [
+            5,
+            4,
+            6,
+            1,
+            0,
+            1,
+            5,
+            4,
+            6
+          ],
+          [
+            4,
+            6,
+            2,
+            3,
+            1,
+            6,
+            4,
+            6,
+            2
+          ],
+          [
+            1,
+            5,
+            4,
+            1,
+            5,
+            4,
+            2,
+            1,
+            3
+          ],
+          [
+            5,
+            4,
+            6,
+            5,
+            4,
+            6,
+            1,
+            0,
+            1
+          ],
+          [
+            4,
+            6,
+            2,
+            4,
+            6,
+            2,
+            3,
+            1,
+            6
+          ]
+        ],
+        "target_sha256": "effb250ba1ea7a6290cb4f52cdb3e44ca6ec32112b13f289a7f2c9f4c40c3053"
+      },
+      "local_rank_F7": 19,
+      "minimum_F_permutation_count": 32,
+      "minimum_F_permutation_stream_sha256": "633bc17b0e665016fe2737cb24594360e8bf96a55553e80e57a15e8569823768",
+      "minimum_F_rank": 3,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 25744,
+        "observed_projective_lines": 66,
+        "winning_subspaces": 32
+      },
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "rank_25_completion_exists": false,
+      "total_rank_25_R_hits": 0,
+      "unique_raw_canonical_kernel_targets": 32
+    },
+    "3+2+1": {
+      "R_coverage_method": "Every R is assigned to one of 11 branches by the mate of the canonical pivot; each branch contains 9!!=945 matchings. The diagonal kernel-form equations reject every branch.",
+      "R_hit_distribution": {
+        "0": 80640
+      },
+      "R_instances_covered": 838252800,
+      "R_matching_count_per_permutation": 10395,
+      "canonical_kernel_target_stream_sha256": "78e37bd4617c1eb3abb238bf9d8357e9f4d3ebe8ec5e186d52bfd435771fba06",
+      "canonical_right_kernel_dimension": 11,
+      "diagonal_survivor_distribution": {
+        "0": 80640
+      },
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "first_canonical_right_kernel_target": {
+        "F_rank": 1,
+        "permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          9,
+          8,
+          7,
+          10,
+          11
+        ],
+        "right_kernel_columns": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "right_kernel_sha256": "74efdc8e03e6914de5f84fcc660d4bdd96b7a5a5c83bce5362c7b1d73335f828",
+        "target": [
+          [
+            6,
+            0,
+            1,
+            2,
+            1,
+            0,
+            6,
+            2,
+            3,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1,
+            2,
+            1,
+            6,
+            2,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            6,
+            0,
+            1,
+            2,
+            6,
+            2,
+            3,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            0,
+            6,
+            0,
+            1,
+            6,
+            2,
+            3,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            0,
+            6,
+            0,
+            6,
+            2,
+            3,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            2,
+            1,
+            0,
+            6,
+            6,
+            2,
+            3,
+            1,
+            1
+          ],
+          [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            2,
+            1,
+            3,
+            6,
+            6
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            1,
+            6,
+            3,
+            3
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            6,
+            2,
+            3,
+            6,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            6,
+            2,
+            3,
+            0,
+            6
+          ]
+        ],
+        "target_sha256": "01080ababe00fb241ed79d4f572e61d66c1efc9af4b52bc495610e1471412189"
+      },
+      "local_rank_F7": 23,
+      "minimum_F_permutation_count": 80640,
+      "minimum_F_permutation_stream_sha256": "a60401206eac58e270361adc7bf58741e2757bdee25f9d34b6b2b437e5e6183b",
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "partition": [
+        3,
+        2,
+        1
+      ],
+      "rank_25_completion_exists": false,
+      "total_rank_25_R_hits": 0,
+      "unique_raw_canonical_kernel_targets": 80632
+    },
+    "4+1+1": {
+      "R_coverage_method": "Every R is assigned to one of 11 branches by the mate of the canonical pivot; each branch contains 9!!=945 matchings. The diagonal kernel-form equations reject every branch.",
+      "R_hit_distribution": {
+        "0": 768
+      },
+      "R_instances_covered": 7983360,
+      "R_matching_count_per_permutation": 10395,
+      "canonical_kernel_target_stream_sha256": "4e196f9945da7d59d9b8877cbf2e51585dcd6c8c675e81056c9a744e4169156c",
+      "canonical_right_kernel_dimension": 11,
+      "diagonal_survivor_distribution": {
+        "0": 768
+      },
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "first_canonical_right_kernel_target": {
+        "F_rank": 1,
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          9,
+          10,
+          11
+        ],
+        "right_kernel_columns": [
+          [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "right_kernel_sha256": "4b50f3702ea033a83121bf3f782964810752e4e2ab407f4ef98b3502f564475a",
+        "target": [
+          [
+            2,
+            1,
+            3,
+            3,
+            0,
+            2,
+            5,
+            6,
+            6,
+            6,
+            6
+          ],
+          [
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            1,
+            6,
+            4,
+            5,
+            2,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            2,
+            4,
+            3,
+            3,
+            2,
+            4,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            5,
+            3,
+            2,
+            1,
+            3,
+            6,
+            6,
+            6,
+            6
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            5,
+            2,
+            1,
+            4,
+            3,
+            1,
+            6,
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            6,
+            2,
+            3,
+            0,
+            6,
+            2,
+            3,
+            6,
+            0,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            0,
+            6,
+            2,
+            3,
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            6,
+            2,
+            3,
+            0,
+            6,
+            2,
+            3,
+            1,
+            1,
+            6,
+            0
+          ],
+          [
+            6,
+            2,
+            3,
+            0,
+            6,
+            2,
+            3,
+            1,
+            1,
+            0,
+            6
+          ]
+        ],
+        "target_sha256": "200d7c446284ba48c27b37c38e464c8a31d2738618c904513c9a925693e62ef6"
+      },
+      "local_rank_F7": 23,
+      "minimum_F_permutation_count": 768,
+      "minimum_F_permutation_stream_sha256": "b8e88cdff1091b0e53d10bd36239ca934fcf38975032bfade98023d7311e462b",
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "partition": [
+        4,
+        1,
+        1
+      ],
+      "rank_25_completion_exists": false,
+      "total_rank_25_R_hits": 0,
+      "unique_raw_canonical_kernel_targets": 736
+    },
+    "4+2": {
+      "R_coverage_method": "For every minimum-F permutation, vectorize the exact upper triangle of Z^T W_R Z over all 10,395 enumerated R matchings and compare entrywise over F7 with the canonical target.",
+      "R_hit_distribution": {
+        "0": 64
+      },
+      "R_instances_covered": 665280,
+      "R_matching_count_per_permutation": 10395,
+      "canonical_kernel_target_stream_sha256": "d930ee84df3c495ce5e582f468335d40d650b2b8ad1970f7d3306966339b8114",
+      "canonical_right_kernel_dimension": 10,
+      "diagonal_survivor_distribution": {},
+      "distinct_canonical_right_kernels": 4,
+      "even_part_count": 2,
+      "first_canonical_right_kernel_target": {
+        "F_rank": 2,
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          11,
+          10,
+          9
+        ],
+        "right_kernel_columns": [
+          [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        ],
+        "right_kernel_sha256": "7748ebb0667ab242888126583e13a0d9fbe1f925c769beba4dfff58760720466",
+        "target": [
+          [
+            2,
+            1,
+            3,
+            3,
+            0,
+            2,
+            5,
+            1,
+            5,
+            4
+          ],
+          [
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2,
+            5,
+            4,
+            6
+          ],
+          [
+            3,
+            1,
+            6,
+            4,
+            5,
+            2,
+            1,
+            4,
+            6,
+            2
+          ],
+          [
+            3,
+            2,
+            4,
+            3,
+            3,
+            2,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            5,
+            3,
+            2,
+            1,
+            3,
+            1,
+            5,
+            4
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            5,
+            4,
+            6
+          ],
+          [
+            5,
+            2,
+            1,
+            4,
+            3,
+            1,
+            6,
+            4,
+            6,
+            2
+          ],
+          [
+            1,
+            5,
+            4,
+            0,
+            1,
+            5,
+            4,
+            2,
+            1,
+            3
+          ],
+          [
+            5,
+            4,
+            6,
+            0,
+            5,
+            4,
+            6,
+            1,
+            0,
+            1
+          ],
+          [
+            4,
+            6,
+            2,
+            0,
+            4,
+            6,
+            2,
+            3,
+            1,
+            6
+          ]
+        ],
+        "target_sha256": "c7d90d212c54ad90af095d2d96055d41a4a326c95f404c576029e019e96d39f3"
+      },
+      "local_rank_F7": 21,
+      "minimum_F_permutation_count": 64,
+      "minimum_F_permutation_stream_sha256": "c8ffc0e3774a6c75f605d13c2fb93e25eeca4a99f2a4745243f2dfeb489d2e3e",
+      "minimum_F_rank": 2,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 290,
+        "observed_projective_lines": 28,
+        "winning_subspaces": 4
+      },
+      "partition": [
+        4,
+        2
+      ],
+      "rank_25_completion_exists": false,
+      "total_rank_25_R_hits": 0,
+      "unique_raw_canonical_kernel_targets": 64
+    },
+    "6": {
+      "R_coverage_method": "Every R is assigned to one of 11 branches by the mate of the canonical pivot; each branch contains 9!!=945 matchings. The diagonal kernel-form equations reject every branch.",
+      "R_hit_distribution": {
+        "0": 2592
+      },
+      "R_instances_covered": 26943840,
+      "R_matching_count_per_permutation": 10395,
+      "canonical_kernel_target_stream_sha256": "6833316d0cc82a145d2a1ddc64ce4dcfde60696dbd5499c00465ee2a83397224",
+      "canonical_right_kernel_dimension": 11,
+      "diagonal_survivor_distribution": {
+        "0": 2592
+      },
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "first_canonical_right_kernel_target": {
+        "F_rank": 1,
+        "permutation": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8,
+          11,
+          10,
+          9
+        ],
+        "right_kernel_columns": [
+          [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "right_kernel_sha256": "b1438dccd6fc4fe98d5e0633e69e383f09756e15ba83ef762e0d02b797bdb104",
+        "target": [
+          [
+            2,
+            1,
+            3,
+            3,
+            0,
+            2,
+            5,
+            3,
+            0,
+            2,
+            5
+          ],
+          [
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            1,
+            6,
+            4,
+            5,
+            2,
+            1,
+            4,
+            5,
+            2,
+            1
+          ],
+          [
+            3,
+            2,
+            4,
+            3,
+            3,
+            2,
+            4,
+            5,
+            3,
+            2,
+            4
+          ],
+          [
+            0,
+            2,
+            5,
+            3,
+            2,
+            1,
+            3,
+            3,
+            0,
+            2,
+            5
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            5,
+            2,
+            1,
+            4,
+            3,
+            1,
+            6,
+            4,
+            5,
+            2,
+            1
+          ],
+          [
+            3,
+            2,
+            4,
+            5,
+            3,
+            2,
+            4,
+            3,
+            3,
+            2,
+            4
+          ],
+          [
+            0,
+            2,
+            5,
+            3,
+            0,
+            2,
+            5,
+            3,
+            2,
+            1,
+            3
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1
+          ],
+          [
+            5,
+            2,
+            1,
+            4,
+            5,
+            2,
+            1,
+            4,
+            3,
+            1,
+            6
+          ]
+        ],
+        "target_sha256": "98a563f5ae794814dfb845f4f92746d47a561b50736f5c4f135bbd2f0270c883"
+      },
+      "local_rank_F7": 23,
+      "minimum_F_permutation_count": 2592,
+      "minimum_F_permutation_stream_sha256": "3b62458f7076c8701a165be7fcab5cbe8d062b70f49b18e3ed755a39125a0e13",
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "partition": [
+        6
+      ],
+      "rank_25_completion_exists": false,
+      "total_rank_25_R_hits": 0,
+      "unique_raw_canonical_kernel_targets": 2592
+    }
+  },
+  "exhaustive_totals": {
+    "R_instances_covered_for_even_types": 1714426560,
+    "all_odd_partition_types": 4,
+    "distinct_canonical_kernel_targets": 164278,
+    "distinct_canonical_right_kernels": 52,
+    "even_partition_types": 7,
+    "minimum_F_permutations": 164928,
+    "rank_25_R_hits": 0
+  },
+  "format": "wave41-rank26-secondary-v1",
+  "frozen_inputs": {
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "verification/2026-07-27-wave39-orchestrator.md": "094db8281faf23f402f5093a617c43ebe428dae6f8ce1eceae8621472fc37111",
+    "verification/2026-07-27-wave40-integration-audit.md": "afc812a8740210c2c181b1bd0775da0a3526aa95e8706437cb918815f4543e10",
+    "verification/2026-07-27-wave40-orchestrator.md": "a136b971ba4e675a5edfe62780e7754b7c716ff1753507be0201eadf3042dfbf",
+    "verification/wave39-edge-local-rank/README.md": "ed749e5788c19a23629cee9f331cce0ef161500d9cb0d939eef3211085c0a405",
+    "verification/wave39-edge-local-rank/independent-results.json": "85b8d36d6ce5ebd638e957e1731864eff75f38405935f5e51ad5b629edea5966",
+    "verification/wave39-edge-local-rank/run-report.yaml": "0c16b53a1015f2aa8cd5e96767a97736c1da5ced6691d8ad4085f6579b44cad1",
+    "verification/wave40-exact-coupling-model/README.md": "33201f7cac66df7c65f254d0c3b054cd17cfa67ae54b67cbc5032bee299b924e",
+    "verification/wave40-exact-coupling-model/independent-results.json": "ff7916d0f5c74c47c8d7787c5cbcc84785cbccd3644d8d03d73e47b73908c0f5",
+    "verification/wave40-exact-coupling-model/independent_check.py": "d87c7a5eb9377cc3095fff21eec7ff17d94445bef911e4adb092f2db6228bc6e",
+    "verification/wave40-exact-coupling-model/run-report.yaml": "128bea1e5f7ff347f13e435888d62a6272ebe0968a5f8dc6a0eb2ba22fb99177"
+  },
+  "independence": {
+    "automorphism_assumed": false,
+    "discovery_code_imported_or_executed": false,
+    "primary_verifier_code_imported_or_executed": false,
+    "reason": "The eleven local types come from all 10,395 labelled two-matching configurations. Every minimum-F border permutation is enumerated as a labelled permutation, and the complete labelled R universe is checked without orbit division.",
+    "wave41_discovery_read_before_checker_and_tests_frozen": false,
+    "wave41_primary_verifier_read_before_checker_and_tests_frozen": false
+  },
+  "local_types": {
+    "1+1+1+1+1+1": {
+      "component_partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "even_part_count": 0,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank_F7_S": 25
+    },
+    "2+1+1+1+1": {
+      "component_partition": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "even_part_count": 1,
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank_F7_S": 23
+    },
+    "2+2+1+1": {
+      "component_partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "even_part_count": 2,
+      "partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "rank_F7_S": 21
+    },
+    "2+2+2": {
+      "component_partition": [
+        2,
+        2,
+        2
+      ],
+      "even_part_count": 3,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "rank_F7_S": 19
+    },
+    "3+1+1+1": {
+      "component_partition": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "even_part_count": 0,
+      "partition": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "rank_F7_S": 25
+    },
+    "3+2+1": {
+      "component_partition": [
+        3,
+        2,
+        1
+      ],
+      "even_part_count": 1,
+      "partition": [
+        3,
+        2,
+        1
+      ],
+      "rank_F7_S": 23
+    },
+    "3+3": {
+      "component_partition": [
+        3,
+        3
+      ],
+      "even_part_count": 0,
+      "partition": [
+        3,
+        3
+      ],
+      "rank_F7_S": 25
+    },
+    "4+1+1": {
+      "component_partition": [
+        4,
+        1,
+        1
+      ],
+      "even_part_count": 1,
+      "partition": [
+        4,
+        1,
+        1
+      ],
+      "rank_F7_S": 23
+    },
+    "4+2": {
+      "component_partition": [
+        4,
+        2
+      ],
+      "even_part_count": 2,
+      "partition": [
+        4,
+        2
+      ],
+      "rank_F7_S": 21
+    },
+    "5+1": {
+      "component_partition": [
+        5,
+        1
+      ],
+      "even_part_count": 0,
+      "partition": [
+        5,
+        1
+      ],
+      "rank_F7_S": 25
+    },
+    "6": {
+      "component_partition": [
+        6
+      ],
+      "even_part_count": 1,
+      "partition": [
+        6
+      ],
+      "rank_F7_S": 23
+    }
+  },
+  "partition_completeness": {
+    "labelled_matching_count": 10395,
+    "labelled_matching_stream_sha256": "d0774c10297810eeadab5c0d0cf2812c615e88e40ad98ce4dc6ebb155bac6ea3",
+    "partition_census": {
+      "1+1+1+1+1+1": 1,
+      "2+1+1+1+1": 30,
+      "2+2+1+1": 180,
+      "2+2+2": 120,
+      "3+1+1+1": 160,
+      "3+2+1": 960,
+      "3+3": 640,
+      "4+1+1": 720,
+      "4+2": 1440,
+      "5+1": 2304,
+      "6": 3840
+    },
+    "partition_count": 11,
+    "positive_partitions_of_six": [
+      [
+        6
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "sum_partition_census": 10395
+  },
+  "rank_transport": {
+    "conclusion": "rank_F7(K)=rank_F7(M)",
+    "derivation": "Because 3 is invertible in F7, Nv=0 for v in im(M) gives 0=N^T Nv=3v and v=0. Thus N is injective on im(M), so rank(NM)=rank(M); symmetry gives rank(MN^T)=rank(M), and injectivity again gives rank(NMN^T)=rank(M). Any principal rank of K is therefore a lower bound for rank_F7(M).",
+    "premises": [
+      "N M N^T=27I-9A+J, hence K=J-I-2A over F7",
+      "N^T N M=3M",
+      "M is symmetric"
+    ]
+  },
+  "role": "secondary_verifier",
+  "scope": "Universal theorem rank_F7(M)>=26 for every hypothetical srg(99,14,1,2), via one edge, its triangle mate, and the mate's complete 12-vertex neighbor fibre.",
+  "status_wall": {
+    "conway_99_status": "UNKNOWN",
+    "endpoint_n3_4158_excluded": false,
+    "general_upper_bound_improved_below_4158": false,
+    "graph_constructed": false,
+    "novelty_or_priority": "UNKNOWN",
+    "strongest_general_upper_bound": "n3<=4158",
+    "universal_rank_F7_M_lower_bound": 26
+  },
+  "universal_deduction": {
+    "inherited_floor": "rank_F7(M)>=25 (Wave 40 VERIFIED)",
+    "rank_25_excluded": true,
+    "theorem": "rank_F7(M)>=26"
+  },
+  "verdict": "PASS"
+}

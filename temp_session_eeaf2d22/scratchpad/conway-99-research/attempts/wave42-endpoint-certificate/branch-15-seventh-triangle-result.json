@@ -1,0 +1,142 @@
+{
+  "claim_label": "CANDIDATE",
+  "delta": {
+    "clause_catalog_serialization": "compact JSON array of sorted positive-variable-ID arrays",
+    "clause_catalog_sha256": "6a6f00f64305a8be0be94e4f225eee9400ac55cc1ff28e59b08180aa1da9d448",
+    "clause_width_histogram": {
+      "3": 132,
+      "5": 64800
+    },
+    "constraints": 64932,
+    "exact_rows_already_in_source": 0,
+    "gzip_bytes": 341050,
+    "gzip_sha256": "0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e",
+    "new_exact_rows": 64932,
+    "opb_serialization": "canonical header followed by sorted rows '+1 ~xID ... >= 1 ;'",
+    "path": "attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz",
+    "raw_bytes": 3348473,
+    "raw_sha256": "348dc5f4bc9ee99511286a8078d0e4ef79786b57ba39ae572c032e42747be77e",
+    "variables": 289338
+  },
+  "derivation": {
+    "argument": "x2 joins residual vertices 15 and 17, both adjacent to coordinate vertex 1. For every disjoint second triangle and perfect matching to this fixed triangle, P=0 forbids the conjunction of all nonfixed required residual edges.",
+    "full_vertex_triangle": [
+      1,
+      15,
+      17
+    ],
+    "no_completed_graph_automorphism_assumed": true,
+    "primary_edge_numbering": "lexicographic combinations of the 84 residual labels",
+    "refinement_edge": [
+      0,
+      2
+    ],
+    "refinement_endpoint_labels": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "refinement_variable": 2,
+    "shared_coordinate": 0
+  },
+  "enumeration": {
+    "accepted_pattern_visits_before_deduplication": 64932,
+    "matched_vertex_products_visited": 82668,
+    "neighbor_list_sizes": [
+      12,
+      83,
+      83
+    ],
+    "patterns_killed_by_fixed_scaffold_nonedges": 15112,
+    "products_with_repeated_matched_vertices": 2624
+  },
+  "format": "wave42-branch15-seventh-triangle-strengthening-v1",
+  "git_commit": "ef49b60aafd67f9007f6c218c39fd50392453a1b",
+  "limitations": [
+    "This discovery package requires independent replay before promotion.",
+    "The delta strengthens only refined endpoint branch 15.",
+    "The delta still does not enumerate prisms whose two triangles are both unfixed.",
+    "No immediate unit or contradiction follows after the Wave 41 closure.",
+    "No SAT assignment or checked UNSAT proof was obtained.",
+    "No endpoint case is closed and n3=4158 remains unknown.",
+    "No graph, endpoint exclusion, upper-bound improvement, or global Conway result follows."
+  ],
+  "publication": {
+    "method": "same-directory temporary, file fsync, atomic replace",
+    "result_and_delta_regenerated_before_publication": true
+  },
+  "result": {
+    "active_after_wave41_closure": 33778,
+    "branch15_sat": "UNKNOWN",
+    "branch15_unsat": "UNKNOWN",
+    "endpoint_cases_closed": 0,
+    "endpoint_cases_total": 33,
+    "immediate_contradiction": false,
+    "immediate_new_units": 0,
+    "new_branch15_constraints": 64932,
+    "status": "CANDIDATE_STRONGER_REDUCTION"
+  },
+  "role": "construction",
+  "scope": "exact additional prism-blocking family forced by refined branch 15's seventh fixed triangle, conditional on n3=4158",
+  "sources": {
+    "formula": {
+      "constraints": 574615,
+      "exact_delta_clause_overlap_count": 0,
+      "existing_distinct_negative_clause_rows": 282912,
+      "gzip_bytes": 3854306,
+      "gzip_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+      "observed_constraints": 574615,
+      "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb.gz",
+      "raw_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5",
+      "refinement_unit": {
+        "source_line": 286004,
+        "source_line_sha256": "dbe041511085ba55c17be80495ef443dbbe3d3eee2ce42e1f07865d8041d7da5"
+      },
+      "variables": 289338
+    },
+    "formula_metadata": {
+      "parent_triangle_count": 6,
+      "path": "attempts/wave37-proof-producing-endpoint/branch-15-formula.json",
+      "refined_branch": 15,
+      "refinement_triangle_already_listed": false,
+      "sha256": "3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6"
+    },
+    "wave41_closure_diagnostic_only": {
+      "claim_label": "CANDIDATE",
+      "forced_primary_variables": 174,
+      "forced_variables": 830,
+      "path": "attempts/wave41-proof-producing-search/branch-15-propagation-certificate.json",
+      "sha256": "3da90e49e4e9469bdc397af107d877ee7075ad551a6f8df1afbd8d5d1150707f"
+    }
+  },
+  "wave41_closure_simplification": {
+    "active_catalog": {
+      "constraints": 33778,
+      "gzip_bytes": 178598,
+      "gzip_sha256": "63e07c1196c4cfd315f72b311221233fa61f608f0dd856f3d00391bd5f5286b9",
+      "opb_serialization": "canonical header followed by sorted rows '+1 ~xID ... >= 1 ;'",
+      "path": "attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-active-delta.opb.gz",
+      "raw_bytes": 1749337,
+      "raw_sha256": "6ef7d69d217077b30a39cc9a85f65881d9389516201de7fdbcf593f23a6fb2c0",
+      "variables": 289338
+    },
+    "active_clause_catalog_serialization": "compact JSON array of sorted positive-variable-ID arrays",
+    "active_clause_catalog_sha256": "ae423b54df106e4c9f58bde1f92b0c66ff7b8dbe72a267a92fb7d2d599f502d4",
+    "active_width_histogram": {
+      "3": 91,
+      "4": 580,
+      "5": 33107
+    },
+    "distinct_active_clauses": 33778,
+    "empty_residual_contradictions": 0,
+    "immediate_negative_units": 0,
+    "note": "The closure simplification is diagnostic only. The published unsimplified delta is sound without trusting Wave 41's discovery-agent closure.",
+    "satisfied_by_forced_false_variable": 31154,
+    "status": "CANDIDATE_STRONGER_REDUCTION"
+  }
+}

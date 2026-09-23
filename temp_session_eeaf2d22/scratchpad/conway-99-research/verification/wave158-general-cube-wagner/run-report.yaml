@@ -1,0 +1,46 @@
+role: verifier
+date_utc: 2026-07-28T13:31:58Z
+git_commit: 78e4442b9df25c9c96d3b63249322413bd8efe6b
+claim_label: VERIFIED
+scope: >-
+  Exact general root-mask-12 cube/Wagner covariance inequality for every
+  hypothetical srg(99,14,1,2), including source formula, named
+  isomorphisms, root count, gcd scaling, and endpoint specialization.
+inputs:
+  - path: attempts/wave157-general-cube-wagner/package-manifest.sha256
+    sha256: c4082726ff1c4237824982550da6346204c58a91dc932b1f3a2d382b8801e405
+  - path: attempts/wave157-general-cube-wagner/exact-results.json
+    sha256: c52eaca24a9b1fe5e7465dcb51895d90597f249a4decc513d3658af65ec66e0e
+  - path: attempts/wave157-general-cube-wagner/input-freeze.sha256
+    sha256: 26df91df6c8714017ecf2fa277a323adf475d66cd286630d87057180fa1bc53f
+  - path: attempts/wave152-four-root-order8/simplified-mask12-cut-2.json
+    sha256: 8bed853973bb5964a3a9d4f37c8b808e6149701c00fd62c7e607f5e543cdb965
+  - path: verification/wave43-seven-deck-endpoint/independent_check.py
+    sha256: 324a4b84c081c8d2ad8a6a11bae45e0327c03ee2158036156c27efa66fcf790b
+method: >-
+  Clean-room exact enumeration of every signed, oriented, ordered flag-pair
+  covering on union orders six through eight; completion of every unseen
+  edge; local lambda and mu cap checks; full permutation canonicalization;
+  direct root/product coefficient replay; explicit named graph
+  isomorphisms; static AST inspection of the independent six-set source; and
+  integer root-count and gcd arithmetic. The Wave157 discovery Python was
+  neither imported nor executed.
+command: |
+  python verification/wave158-general-cube-wagner/independent_verifier.py
+  python -m unittest verification/wave158-general-cube-wagner/test_independent_verifier.py -v
+outputs:
+  - path: verification/wave158-general-cube-wagner/exact-results.json
+    sha256: c4fcfda3f7128f8b315dea1f6daaad9179836f36a924acbfd6c5c89b0dce2329
+  - path: verification/wave158-general-cube-wagner/independent_verifier.py
+    sha256: 5070bafd05adc6a13d3f105c4a5de2ad027d51c64750dfb258d7d8bf5a040959
+  - path: verification/wave158-general-cube-wagner/test_independent_verifier.py
+    sha256: 02f2060b8fbc9bb13ab7a31f1bcb6d9d743214d9e911bf9a44c7def2927fd7cb
+  - path: verification/wave158-general-cube-wagner/verification-report.md
+    sha256: 039e6f6c27aa32383d0bbbd264323e1c21ff464008c050bacca0eb63db7cc34f
+  - path: verification/wave158-general-cube-wagner/resource-report.json
+    sha256: 64fc34ffbd44218a7da9c384fbb5748fc0791235bf193d6e39696784b611cc77
+limitations: >-
+  VERIFIED_WITH_SCOPE only. Novelty, a strict n3 upper bound below 4158,
+  endpoint existence or exclusion, graph construction, and Conway-99 remain
+  UNKNOWN. The sufficient cube/Wagner comparison for endpoint exclusion is
+  arithmetic only and is not proved here.

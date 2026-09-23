@@ -1,0 +1,50 @@
+role: construction
+date_utc: 2026-07-28T10:12:52Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: DERIVED_INCONCLUSIVE
+scope: >-
+  Exact 64-cell outside-neighborhood profiles for all 62 frozen Wave21
+  six-vertex classes, coupled to class marginals and Wave141 Krawtchouk
+  reciprocity moments t=0..3; no graph realization.
+inputs:
+  attempts/wave21-six-vertex-lp/exact_check.py: 0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3
+  attempts/wave21-six-vertex-lp/exact-results.json: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  attempts/wave141-bivariate-graph-code/exact_check.py: 15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204
+  attempts/wave141-bivariate-graph-code/exact-results.json: 351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e
+method: >-
+  For each class, exhaustively enumerate every size-at-least-three z_P cell
+  within its exact pair budget, then force pair, singleton, and empty cells.
+  Replay an explicit 65-cell nonnegative integral aggregate certificate at
+  n3=4158 against all 62 marginals and the four exact reciprocity moments.
+command: |-
+  python -B attempts\wave144-sixset-odd-profile\exact_check.py --verify
+  python -B -m unittest discover -s attempts\wave144-sixset-odd-profile -p "test_*.py" -v
+outputs:
+  attempts/wave144-sixset-odd-profile/exact_check.py: 5f4d06cbde28d6b3575ddacd09016412c8374245fb83d080018e80c2f5a2d892
+  attempts/wave144-sixset-odd-profile/exact-results.json: 6dbb544494511906ce6452eaa6addb20c8e3f8861abfd67d1a026d94baf2234b
+  attempts/wave144-sixset-odd-profile/test_exact_check.py: 2a9dfeb21ae9f5e89a142ce599145d5de0d0218ff7c9fd3a3cb78d9a839b7ea7
+  attempts/wave144-sixset-odd-profile/derivation.md: 188df50a482b969e308ea3efcdd17ad24adf66b69b466119c3723be1ba7837e1
+  attempts/wave144-sixset-odd-profile/protocol.md: 6fd0445c275488b7439ed5d5258c879d89a31fcb1510272466e530d597069c03
+  attempts/wave144-sixset-odd-profile/README.md: 3f577a1e7a04d25c19f4cc0580a176d4ed0a4d13393ba36d9f8477e99e23931a
+  attempts/wave144-sixset-odd-profile/failed-routes.md: 00991a099aaeda5117d7e2313306718f7777d582a55409b2b80ce0b2fe6c2562
+  attempts/wave144-sixset-odd-profile/input-freeze.sha256: 966b4d66ab1d38660f8af0360fcc6ab1ad8531f2920f6060e316301169ae82ba
+  attempts/wave144-sixset-odd-profile/resource-report.json: 4f49d4abf819fca0996ea901c843ffd417d305fc18462e116d667fedeada2289
+results:
+  exact_source_classes: 62
+  forced_singleton_cells:
+    1: 66
+    3: 56
+    5: 46
+    14: 36
+  aggregate_nonzero_integer_cells: 65
+  endpoint_n3: 4158
+  lifted_optimum_n3_with_imported_cap: 4158
+  improves_known_bound: false
+  host_free_memory_percent: 41.77
+limitations:
+  - The aggregate witness does not enforce overlap consistency between six-sets.
+  - A local integer z_P witness is not a 99-vertex graph.
+  - Only reciprocity moments t=0..3 are imposed.
+  - The known n3<=4158 cap is imported rather than reproved.
+  - No existence, nonexistence, target resolution, or novelty claim is made.
+  - Discovery cannot verify itself.

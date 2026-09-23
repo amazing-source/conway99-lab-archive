@@ -1,0 +1,83 @@
+{
+  "archived_runs": {
+    "all_hashes_match": true,
+    "all_statuses": "UNKNOWN_TIMEOUT",
+    "minimum_archived_free_fraction": 0.5074031731750608,
+    "raw_log_sha256_by_branch": {
+      "0": "809347a1018ed4dd02cffab2c097e3cee792cd4193ae8118052795a4206e5ae7",
+      "1": "2770e671286bfc00cb5b62cf7002eea71afe08b59ed2ee78cc06d3170fa2a3ca",
+      "2": "f6d21ebd3528b59e64ba6afe2eddead8f183ffdcb4df83d540094d53b4881548",
+      "3": "8e7359b30b399ab66a4ca8bef8081f3c1b383b7a08bd761f4e55749a346f919c"
+    }
+  },
+  "claim_label": "VERIFIED",
+  "domain_counts": {
+    "common_conjunction_variables": 317985,
+    "conjunction_cnf_clauses": 953955,
+    "distinct_linear_incidence_rows": 1044,
+    "edge_variables": 3741,
+    "exact_cardinality_rows": 4873,
+    "lex_auxiliary_variables": 4126,
+    "lex_cnf_clauses": 24756,
+    "lex_compared_positions": 4176,
+    "lex_comparisons": 50,
+    "native_atmost_constraints": 9746,
+    "pattern_class_count": 37,
+    "pattern_class_histogram": {
+      "1": 12,
+      "2": 12,
+      "3": 1,
+      "4": 12
+    },
+    "total_cnf_clauses": 978711,
+    "total_variables": 325852
+  },
+  "format": "wave110-independent-verification-v1",
+  "fresh_reruns": {
+    "all_statuses": "UNKNOWN_TIMEOUT",
+    "minimum_free_fraction": 0.5608723604036477,
+    "raw_log_sha256_by_branch": {
+      "0": "518232b0a2308ea9157bff0363e459d1f5c5ece257cc7dea618a243166a71e44",
+      "1": "3217627d66f0846836053283a6af90327a85ec63c77286fef1f954fa114e0c8e",
+      "2": "e6e7f929a09822a479b44400325d803d290ff10f63f2f6131139a330bf162b2c",
+      "3": "721f55eec49440ba9d528bd4b353408bf5a2b3eb0f24c676594856a82ad897d5"
+    }
+  },
+  "input_freeze": {
+    "all_14_manifest_entries_match": true,
+    "package_manifest_sha256": "1cef4ea7a81e844f10a56ccb1b5a5e0c4c7414b4efc766c486cdc666de8940ea"
+  },
+  "lex_cnf": {
+    "base_vector_pairs_checked": 341,
+    "equivalent_to_boolean_lex_leq": true,
+    "max_vector_length_exhaustively_checked": 4
+  },
+  "scope": "Conditional C4 box K3 extension encoding and bounded chronology only.",
+  "shared_potential": {
+    "actual_external_superincreasing_checks": 3132,
+    "all_minimizers_simultaneously_row_lex": true,
+    "formal_swap_identity": "Delta=(w_i-w_j) sum_{k outside C} w_k(D_jk-D_ik)",
+    "small_colored_graphs_exhaustively_checked": 2048,
+    "small_minimizing_labelings_checked": 4992,
+    "target_automorphism_assumed": false,
+    "within_class_columns_omitted": true
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "graph_claim": false,
+    "motif_extendibility": "UNKNOWN",
+    "novelty_claim": false,
+    "unsat_claim": false
+  },
+  "verdict": "VERIFIED_WITH_EVIDENCE_BOUNDARY",
+  "x0_branch_partition": {
+    "canonical_labeling_fixed": false,
+    "edge_count_census": {
+      "0": 1,
+      "1": 3,
+      "2": 3,
+      "3": 1
+    },
+    "partition_is_complete": true
+  }
+}

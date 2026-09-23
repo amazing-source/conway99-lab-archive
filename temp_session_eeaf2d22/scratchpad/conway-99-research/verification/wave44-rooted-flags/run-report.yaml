@@ -1,0 +1,46 @@
+role: verifier
+date_utc: 2026-07-27T16:37:30Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: VERIFIED
+scope: >-
+  Exact feasibility of the frozen 170-row, 209-variable aggregate rooted
+  seven-class relaxation at n3=4158 and y=h11/4=4158.
+inputs:
+  - path: verification/wave44-rooted-flags/protocol-freeze.md
+    sha256: 18316e2d36e981a64f369d852c132c905d695a521388763c24f2362b741668a3
+  - path: verification/wave43-seven-deck-endpoint/independent-result.json
+    sha256: e38f369d338fada4a561d48019f306511961dd1fd7816e54a12a9ecb09e69f3b
+  - path: attempts/wave44-rooted-flags/rooted-witness.json
+    sha256: 9be153b2487c3e07e20bffeb7ee6c890e69caa6e8d6b6e2936fbc5d8927bd5b9
+  - path: attempts/wave44-rooted-flags/exact-results.json
+    sha256: c41b194d2d4ae8121883d84ba4f5011f48336a58a0dd4f5cebf9ab560ee3ae19
+  - path: attempts/wave44-rooted-flags/row-system.json
+    sha256: fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722
+  - path: attempts/wave44-rooted-flags/package-manifest.sha256
+    sha256: 290d23316f09ca9ba6509363de04eb03ad613598333b24ce2183a6038a585ed2
+method: >-
+  Pre-discovery derivation; complete unlabeled-graph orbit enumeration;
+  independent exact deletion, Hamiltonian, vertex-root, ordered-edge-root,
+  and ordered-nonedge-root rows; strict post-freeze comparison of all 35530
+  coefficients and 170 right sides; exact integer witness replay; hostile
+  mutations; non-authoritative SciPy/HiGHS diagnostics.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave44-rooted-flags\independent_check.py --verify
+  verification\wave44-rooted-flags\independent-results.json
+outputs:
+  - path: verification/wave44-rooted-flags/independent-results.json
+    sha256: 545ca76fed3f45aabc21ec2eeec291cc2eb93ab78346b8aaa213f751c6fa29c7
+limitations:
+  - Aggregate rooted rows do not enforce overlapping-subset compatibility.
+  - The witness is not a graph and is not evidence of endpoint existence.
+  - No endpoint exclusion, upper-bound improvement, novelty, or priority follows.
+result:
+  variables: 209
+  exact_rows: 170
+  exact_coefficients_compared: 35530
+  exact_rhs_compared: 170
+  support_size: 91
+  exact_nonzero_residuals: 0
+  scipy_free_milp_status: 2
+  scipy_status_used_as_evidence: false

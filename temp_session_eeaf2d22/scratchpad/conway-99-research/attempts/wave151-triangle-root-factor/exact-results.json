@@ -1,0 +1,430 @@
+{
+  "claim_label": "VERIFIED_PARTIAL_CONSTRUCTION_UNKNOWN_FULL",
+  "conclusion": {
+    "complete_C_factor": "UNKNOWN",
+    "complete_D_factor": "NOT_REACHED",
+    "conway_99": "UNKNOWN",
+    "forces_a_prism": false,
+    "graph_realization": false,
+    "strict_n3_upper_bound": "NOT_IMPROVED"
+  },
+  "exact_partial_factor": {
+    "Q1": [
+      39,
+      54,
+      27,
+      45,
+      46,
+      32,
+      28,
+      55,
+      6,
+      22,
+      58,
+      47,
+      48,
+      24,
+      33,
+      20,
+      18,
+      51,
+      29,
+      37,
+      41,
+      4,
+      19,
+      43,
+      13,
+      50,
+      0,
+      52,
+      5,
+      56,
+      38,
+      59,
+      36,
+      3,
+      14,
+      11,
+      17,
+      34,
+      23,
+      1,
+      49,
+      16,
+      30,
+      10,
+      8,
+      15,
+      53,
+      35,
+      57,
+      21,
+      26,
+      2,
+      9,
+      40,
+      44,
+      7,
+      31,
+      42,
+      12,
+      25
+    ],
+    "all_group_column_sums_2": true,
+    "all_row_sums_10": true,
+    "binary_matrix_sha256": "11dd68b64c237e6d45e221e8910b3da69e9492dd01aeb697555d874fdab9eed5",
+    "diagonal_and_G01_blocks_replayed": true,
+    "edge_columns": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "groups_constructed": 2,
+    "shape": [
+      24,
+      60
+    ]
+  },
+  "finite_problem": {
+    "C_column_ones_per_12_row_group": 2,
+    "C_row_sum": 10,
+    "C_shape": [
+      36,
+      60
+    ],
+    "D_degree": 8,
+    "D_shape": [
+      60,
+      60
+    ],
+    "D_symmetric_zero_diagonal": true,
+    "target_gram_sha256": "1cfd0442e69b621c4a82fbeddeec9e7afbfcd04cd8eb458e29170cfd345c7ffc"
+  },
+  "format": "wave151-triangle-root-binary-factor-v1",
+  "frozen_inputs_sha256": {
+    "attempts/wave149-terwilliger-triple/exact-results.json": "6fed4da32fbeefce54d1802136dc8c9a328f112bb0f295a86230f0e6175f5ee6",
+    "attempts/wave149-terwilliger-triple/package-manifest.sha256": "84bea47182b6a59b69f5df29d4f7a8cdf71bff63cfbc47947b1e65013d09d70f"
+  },
+  "limitations": [
+    "A 24x60 partial factor does not imply a 36x60 factor.",
+    "The Z3 UNSAT status concerns only the displayed Q1 and has no exported proof.",
+    "No solver-negative result is promoted.",
+    "No automorphism of a putative graph is assumed."
+  ],
+  "residual_D_layer": {
+    "mixed_identity": "C_i D=2J-C_i-M_iC_i-F_ijC_j-F_ikC_k",
+    "quadratic_identity": "D^2=12I-D+2J-sum_i C_i^T C_i",
+    "reason": "no complete 36x60 C certificate",
+    "status": "NOT_REACHED"
+  },
+  "role": "proof_b",
+  "scope": "binary factorization of the fixed Wave149 prism-free 36x36 Gram matrix, followed conditionally by the residual 60-vertex block",
+  "third_group_search": {
+    "best_exact_squared_residual": 80,
+    "best_retained_Q2_permutation": [
+      43,
+      28,
+      23,
+      48,
+      11,
+      59,
+      54,
+      21,
+      39,
+      6,
+      50,
+      33,
+      46,
+      51,
+      41,
+      10,
+      38,
+      52,
+      3,
+      25,
+      4,
+      45,
+      56,
+      37,
+      9,
+      55,
+      18,
+      12,
+      57,
+      5,
+      44,
+      8,
+      36,
+      14,
+      27,
+      15,
+      17,
+      7,
+      35,
+      20,
+      31,
+      22,
+      26,
+      29,
+      0,
+      58,
+      16,
+      30,
+      13,
+      40,
+      49,
+      32,
+      34,
+      19,
+      24,
+      47,
+      42,
+      53,
+      1,
+      2
+    ],
+    "fixed_Q1_exact_z3_status": "UNSAT_WITHOUT_EXPORTED_PROOF",
+    "fixed_Q1_status_is_not_global": true,
+    "fixed_Q1_status_used_as_certificate": false,
+    "status": "UNKNOWN",
+    "unrestricted_joint_best_squared_residual": 108
+  }
+}

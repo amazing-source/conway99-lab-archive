@@ -1,0 +1,47 @@
+{
+  "budget_domination": {
+    "B": "40*Q0-(76*C-349*V)",
+    "all_difference_coefficients_nonnegative": true,
+    "difference_coefficients": {
+      "RA": 28,
+      "S2": 48,
+      "SE2": 8,
+      "SF": 4,
+      "SI": 32,
+      "SL": 12,
+      "W": 16,
+      "a1": 4,
+      "b3": 24,
+      "c2": 8,
+      "delta": 4,
+      "eta": 8
+    },
+    "floor": 891
+  },
+  "claim": {
+    "conditional_Q_lower_bound": 7059,
+    "edge_added_projective": 7752,
+    "improved_rational_target": "70587/10",
+    "scalar_words": 15504,
+    "wave198_target": "281457/40"
+  },
+  "claim_label": "DERIVED_PENDING_HOSTILE_AUDIT",
+  "global_elimination": {
+    "derived_row": "9*SF+9*g+3*SH+delta+epsilon-3*eta>=891",
+    "floor": 891,
+    "q_identity": "4*q=297-3*SF-3*g-SH+epsilon+delta+eta"
+  },
+  "local_lemma": {
+    "deficient_center": "delta_x=36-3*c_x+sum_P rho_P>=sum_y(m_y-2)",
+    "global": "delta>=sum_nonprivate(m_y-2)=3*q-epsilon",
+    "same_fiber": {
+      "degree5_after_baseline": "rho-1-sum_y(m_y-2)>=k-1>=0 for k>=1",
+      "degree5_empty_case": "rho-1>=0",
+      "full_repeat": "rho=sum_z(r_z-1)",
+      "selected_charge": "sum_y(m_y-1)"
+    },
+    "tight_center": "delta_x=sum_d5(rho_P-1)+sum_other rho_P>=sum_y(m_y-2)",
+    "tight_center_baselines": 3
+  },
+  "search_scope": "exact multiset repetition and symbolic coefficient algebra only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search"
+}

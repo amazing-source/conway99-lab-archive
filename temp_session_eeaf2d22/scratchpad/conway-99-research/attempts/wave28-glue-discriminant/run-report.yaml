@@ -1,0 +1,74 @@
+role: proof_a
+date_utc: 2026-07-24T02:09:04Z
+git_commit: d76d030f6d74e2e1b7ca2b2f0f97536241b3a10b
+claim_label: DERIVED
+scope: >-
+  Necessary discriminant-form, scaled-dual, single-root, root-projector,
+  and primitive root-closure/glue constraints for unrestricted even
+  positive-definite rank-44 endpoint lattices S with 21S^-1 even integral
+  and determinant in {9,21,49,81,189,441,729,1029}.
+inputs:
+  - path: agents/2026-07-24-wave28-orchestrator-brief.md
+    sha256: 6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  - path: verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md
+    sha256: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+  - path: verification/wave27-general-root-tensor/2026-07-24T010548Z-audit.md
+    sha256: 68747c2b09a86f10eb58f7bccce6670b4d99856a073a87a3dcae2c0555f37033
+method: >-
+  Determine the elementary 3,7 discriminant group and exact level; apply
+  finite-field quadratic-space classification and the signature-44
+  Milgram phase; compare local Jordan blocks of S and G=21S^-1; prove
+  primitive single-root and full root-closure gluing constraints; and
+  enumerate exact one-root projector count patterns before and after the
+  cubic-tensor energy bound.
+command: |-
+  cd attempts/wave28-glue-discriminant
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-24-wave28-glue-discriminant.md
+    sha256: 3c1354a04f33602c6e339875c8de4f77d1874bd6e8f83dbcb712b91717d6c1ff
+  - path: attempts/wave28-glue-discriminant/exact_check.py
+    sha256: 9b58940cf9f3d732593e03bde69974b56145950f28e5012ccc0735082dd2cf51
+  - path: attempts/wave28-glue-discriminant/test_exact_check.py
+    sha256: d2617492eaa41905b72e850e1027db10e32aa04bc92d78e1751271151711676a
+  - path: attempts/wave28-glue-discriminant/exact-results.json
+    sha256: 13a3bb8f83c56ff899991362736089b772114cff840a2cb20d68845e231b3cf1
+  - path: attempts/wave28-glue-discriminant/input-freeze.sha256
+    sha256: 505cf42659e61d9340c6191b9a484c7eb064b02a3ecb1be1f8597a245095b7d2
+  - path: attempts/wave28-glue-discriminant/failed-routes.md
+    sha256: a976651e93ab1b4c9e87735fc5a51d22baa79da2259d99e08dfe4334227dd2d0
+tests:
+  status: PASS
+  count: 13
+  deterministic_lf_json: PASS
+  hostile_eleven_count_rejected: PASS
+  active_cubic_mutation_rejected: PASS
+exact_censuses:
+  determinant_rows: 8
+  formal_discriminant_forms: 12
+  one_root_second_moment_patterns: 46
+  one_root_cubic_filtered_patterns: 32
+results:
+  discriminant_group_and_exact_level: DERIVED_PENDING_VERIFIER
+  formal_milgram_compatible_forms: 12
+  scaled_dual_local_sign_equality: DERIVED_PENDING_VERIFIER
+  single_root_index_two_glue: DERIVED_PENDING_VERIFIER
+  primitive_root_closure_reduction: DERIVED_PENDING_VERIFIER
+  excluded_h_rows: []
+  unrestricted_even_rank_44_forms: UNKNOWN
+  n3_708: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+limitations:
+  - Standard Milgram identity is imported and not reproved by the checker.
+  - Formal finite quadratic modules are not rank-44 lattice realizations.
+  - The 32 root patterns are necessary coordinate counts, not realizations.
+  - Root-preserving isotropic glue and rootless complements remain unclassified.
+  - No primitive embedding, projector frame, Schur certificate, graph, endpoint
+    exclusion, formal-kernel proof, or novelty determination is supplied.
+output_commit_status: UNCOMMITTED_NO_GIT_PER_ORCHESTRATOR

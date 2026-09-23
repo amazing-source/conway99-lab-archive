@@ -1,0 +1,410 @@
+{
+  "schema": "wave20-literature-ledger-v1",
+  "created_utc": "2026-07-23T17:06:12Z",
+  "cutoff_utc": "2026-07-23T17:06:12Z",
+  "role": "literature",
+  "claim_label": "UNKNOWN",
+  "scope": "Status and prior-art search for the exact conditional bound n3 >= 705 and induced-C6 endpoint 209991 in a putative srg(99,14,1,2), including equivalent Schur/Hadamard projector formulations on its 231-vertex triangle graph.",
+  "separation": {
+    "preinspection_path": "verification/global-schur/2026-07-23T162526Z-status-preinspection-freeze.md",
+    "preinspection_sha256": "e8a356a8947d6825c1415c837db099989848681c8affc9cc2cfbfb82141460e0",
+    "excluded_candidate_path": "agents/2026-07-23-wave20-global-schur.md",
+    "excluded_candidate_frozen_sha256": "64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632",
+    "excluded_candidate_opened": false
+  },
+  "verdict": {
+    "target_resolution": "NO RESOLUTION FOUND",
+    "exact_bound_prior_art": "UNKNOWN",
+    "exact_projector_specialization_prior_art": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "proof_certified": false,
+    "interpretation": "No-match results are non-discovery only; they are not evidence of novelty or mathematical truth."
+  },
+  "query_batches": [
+    {
+      "id": "exact_numeric",
+      "engine": "web search",
+      "queries": [
+        "\"n3 >= 705\" strongly regular graph",
+        "\"n_3 \\\\geq 705\" strongly regular graph",
+        "\"209991\" hexagons strongly regular graph",
+        "\"209,991\" hexagons graph",
+        "\"n3>=\" 705 Conway 99 graph",
+        "\"n_3\" 705 \"99,14,1,2\"",
+        "705 \"Conway 99-graph\" hexagons",
+        "705 \"srg(99,14,1,2)\"",
+        "\"n12\" \"209991\" graph",
+        "\"n_{12}\" \"209991\"",
+        "\"p6\" \"209991\" graph",
+        "\"209286+n3\" graph",
+        "\"n3 >= 693\" strongly regular graph",
+        "\"n_3 \\\\geq 693\" graph",
+        "\"209979\" hexagons strongly regular",
+        "\"209991\" \"srg\""
+      ],
+      "result": "No relevant primary source containing the exact or a stronger numerical endpoint was found. Numeric noise and already-known Reimbayev/Cesarz sources were the only target-adjacent results.",
+      "status_effect": "Non-discovery; novelty remains UNKNOWN."
+    },
+    {
+      "id": "exact_spectral_projector",
+      "engine": "web search",
+      "queries": [
+        "\"18\" \"7\" \"0\" \"-3\" \"231\" clique graph strongly regular",
+        "\"-3^{132}\" \"0^{44}\" \"7^{54}\"",
+        "\"231-vertex\" \"triangle graph\" strongly regular",
+        "\"triangle intersection graph\" \"99,14,1,2\"",
+        "\"Gamma^2-5Gamma-18I\" graph",
+        "\"Γ^2 - 5Γ - 18I\" graph",
+        "\"1/7 I\" \"1/21 J\" projector graph",
+        "\"(1/21)J\" \"- (1/21)\" adjacency projector",
+        "Conway 99 \"Schur product\" graph",
+        "Conway 99 Hadamard projector clique graph",
+        "\"Conway 99\" \"primitive idempotent\"",
+        "\"srg(99,14,1,2)\" Schur Hadamard",
+        "Conway 99 \"Hadamard product\"",
+        "\"clique graph\" \"Schur product\" strongly regular",
+        "\"clique graph\" \"Hadamard product\" strongly regular",
+        "\"spectrum\" \"18\" \"7\" \"0\" \"-3\" \"Conway\" graph",
+        "\"Schur square\" \"Conway 99\" graph",
+        "\"Krein parameter\" \"Conway's 99\" graph",
+        "\"entrywise square\" \"triangle graph\" strongly regular",
+        "\"rank 44\" \"Conway 99\" triangle graph",
+        "\"trace\" \"Hadamard\" projector \"strongly regular\" clique graph",
+        "\"Schur product theorem\" \"clique graph\" spectral projector",
+        "\"primitive idempotent\" \"clique graph\" Conway",
+        "\"1/7\" \"1/21\" \"231\" graph projector",
+        "\"1/7 I\" \"1/21 J\" graph",
+        "\"-1/21\" adjacency \"projector\" graph",
+        "\"231\" \"7^54\" \"-3^132\""
+      ],
+      "result": "Petro--Phillips and Phillips's thesis were the closest target sources. Generic Hadamard/Krein/Jordan-algebra papers also surfaced, but no exact projector evaluation or audited endpoint did.",
+      "status_effect": "Generic method prior art is known; exact specialization prior art remains UNKNOWN."
+    },
+    {
+      "id": "exact_topology",
+      "engine": "web search",
+      "queries": [
+        "\"two disjoint triangles\" \"two independent edges\" strongly regular graph",
+        "\"two triangles\" \"matching\" \"Conway 99\" graph",
+        "\"induced six-vertex\" \"n3\" strongly regular graph",
+        "\"six-vertex condition\" \"Conway 99\" n3"
+      ],
+      "result": "No independent source for the exact bound was found. Reimbayev's current six-vertex source bundle supplies the relevant N3 drawing and parameterization.",
+      "status_effect": "Definition is sourced; bound remains UNKNOWN."
+    },
+    {
+      "id": "current_resolution",
+      "engine": "web search",
+      "queries": [
+        "\"srg(99,14,1,2)\" 2026",
+        "\"Conway 99-graph\" 2026 proof nonexistence construction",
+        "\"Conway's 99 graph\" July 2026",
+        "site:arxiv.org \"99,14,1,2\" 2026",
+        "site:arxiv.org/abs/2607 \"strongly regular graph\" Conway",
+        "site:arxiv.org/abs/2606 \"99,14,1,2\"",
+        "site:arxiv.org/abs/2607 \"99-graph\"",
+        "site:arxiv.org/abs/2606 \"Conway 99\""
+      ],
+      "result": "No accepted construction or nonexistence proof was found. April--June 2026 primary/official sources describe unsuccessful SAT work, open-ended clique-graph work, or only possible future approaches.",
+      "status_effect": "NO RESOLUTION FOUND; existence status remains UNKNOWN."
+    },
+    {
+      "id": "baker_conference",
+      "engine": "web search",
+      "queries": [
+        "\"An Induced Subgraph Paradigm for Strongly Regular Constructions\"",
+        "\"An Induced Subgraph Paradigm for Strongly Regular Graph Constructions\"",
+        "\"Ben Baker\" Conway 99 graph 2026",
+        "site:arxiv.org \"Ben Baker\" strongly regular graph"
+      ],
+      "result": "Only the official May 2026 Cumberland Conference program/abstract and an older seminar lead were found; no manuscript, slides, arXiv record, exact N3 inequality, projector formula, or target resolution was located.",
+      "status_effect": "Applicability cannot be assessed; novelty remains UNKNOWN."
+    },
+    {
+      "id": "journal_record",
+      "engine": "web search",
+      "queries": [
+        "\"114862\" \"On Clique Graphs and Clique Regular Graphs\"",
+        "\"10.1016/j.disc.2025.114862\"",
+        "\"On Clique Graphs and Clique Regular Graphs\" Petro Phillips 114862"
+      ],
+      "result": "Confirmed the 2026 Discrete Mathematics record, DOI, issue, and paywalled ScienceDirect page; arXiv v1 supplied the inspectable full text.",
+      "status_effect": "Bibliographic confirmation only."
+    },
+    {
+      "id": "possible_2026_book_noise",
+      "engine": "web search",
+      "queries": [
+        "\"10.1017/9781009709118.007\" \"Conway\"",
+        "\"9781009709118\" \"99,14,1,2\"",
+        "site:cambridge.org/core/books \"Strongly Regular Graphs\" \"Conway\" 2026"
+      ],
+      "result": "No target-relevant 2026 source was identified; results pointed to Brouwer--Van Maldeghem's 2022 book and unrelated records.",
+      "status_effect": "No change."
+    }
+  ],
+  "database_queries": [
+    {
+      "database": "arXiv API",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22Conway+99%22&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "retrieved_utc": "2026-07-23",
+      "http_status": 200,
+      "bytes": 7969,
+      "sha256": "e632f6663be38afa520b1722751f488ab7940cdd6c0aeefc65379121b2778901",
+      "total_results": 5,
+      "relevant_results": [
+        "arXiv:2604.23037v2, Approaching the Conway-99 problem using SAT solvers",
+        "arXiv:2502.17845v1, On Clique Graphs and Clique Regular Graphs",
+        "arXiv:2308.02978v1, On the automorphism group of a putative Conway 99-graph",
+        "arXiv:1910.07686v1, Critical group structure from the parameters of a strongly regular graph"
+      ],
+      "note": "The fifth result is explicitly titled Not Conway's 99-Graph Problem and is not a target resolution."
+    },
+    {
+      "database": "arXiv API",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%2299%2C14%2C1%2C2%22&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "retrieved_utc": "2026-07-23",
+      "http_status": 200,
+      "bytes": 3311,
+      "sha256": "1d653bee0107a3c7fc4d2033d7c4a2ea6b85fffaeb9b52aa7b985be6f4c71d23",
+      "total_results": 2,
+      "relevant_results": [
+        "arXiv:2409.10620v1, The Lower Bound for Number of Hexagons in Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+        "arXiv:2308.02978v1, On the automorphism group of a putative Conway 99-graph"
+      ]
+    },
+    {
+      "database": "Crossref API",
+      "url": "https://api.crossref.org/works?query.bibliographic=%22Conway+99%22+strongly+regular+graph&filter=from-pub-date%3A2020-01-01%2Cuntil-pub-date%3A2026-07-23&rows=100&select=DOI%2Ctitle%2Cauthor%2Cpublished%2CURL%2Ctype",
+      "retrieved_utc": "2026-07-23",
+      "http_status": 200,
+      "bytes": 47963,
+      "sha256": "8c14d42628e7877bb4175aaaf4793da3e16719ff2936fe5123568540c691cd06",
+      "note": "Bibliographic relevance ranking was very noisy. It did confirm DOI 10.5802/alco.418 and surfaced generic Krein/Jordan literature, but did not identify the exact audited claim."
+    },
+    {
+      "database": "OpenAlex API",
+      "url": "https://api.openalex.org/works?search=Conway+99+strongly+regular+graph&filter=from_publication_date%3A2020-01-01%2Cto_publication_date%3A2026-07-23&per-page=100",
+      "retrieved_utc": "2026-07-23",
+      "http_status": 200,
+      "bytes": 3264041,
+      "sha256": "9721947ab2cdc9059310054da16670cd50084cc15beadeb0ce7beda4e7c63352",
+      "note": "Full-text semantic ranking was very noisy. Target-relevant hits included Cesarz--Woldar and Keramatipour; no exact audited claim appeared in the inspected first 100 results."
+    }
+  ],
+  "sources": [
+    {
+      "id": "reimbayev_2024_arxiv",
+      "kind": "primary preprint",
+      "citation": "Reimbay Reimbayev, The Lower Bound for Number of Hexagons in Strongly Regular Graphs with Parameters lambda=1 and mu=2, arXiv:2409.10620v1 (2024).",
+      "url": "https://arxiv.org/pdf/2409.10620v1",
+      "version": "v1, submitted 2024-09-16",
+      "http_status": 200,
+      "bytes": 444509,
+      "sha256": "0d882e787d2bf8b98b28871bf89bf67a1c8fd78feda8ece414c6fe129b9f07ab",
+      "last_modified": "Wed, 18 Sep 2024 00:03:29 GMT",
+      "relevant_location": "printed pp. 9-11; formula at p. 11",
+      "hypotheses": "The paper studies strongly regular graphs with lambda=1 and mu=2.",
+      "supports": "n12 is the induced hexagon count and n12=(1/12)nk(k-2)(2k^2-21k+53)+n3; theorem uses n3>=0.",
+      "does_not_support": "No n3>=705 or exact projector inequality."
+    },
+    {
+      "id": "reimbayev_2024_journal",
+      "kind": "primary journal PDF",
+      "citation": "Reimbay Reimbayev, European Journal of Applied Mathematics and Modelling, DOI 10.62780/ejaam/2024-001.",
+      "url": "https://ejaam.org/articles/2024/10.62780-ejaam-2024-001.pdf",
+      "http_status": 200,
+      "bytes": 372641,
+      "sha256": "484ff4bbcf13ea26d478baa4c24b97f6996ac3fc35ef8459c15fb61b61b98521",
+      "last_modified": "Tue, 28 Jan 2025 16:43:18 GMT",
+      "supports": "Journal version of the induced-hexagon identity.",
+      "does_not_support": "No positive target-specific n3 lower bound located."
+    },
+    {
+      "id": "reimbayev_2025_v2",
+      "kind": "primary preprint",
+      "citation": "Reimbay Reimbayev, The Subgraphs of Order Six of the Family of Strongly Regular Graphs with Parameters lambda=1 and mu=2, arXiv:2508.03377v2.",
+      "url": "https://arxiv.org/pdf/2508.03377v2",
+      "version": "v2, revised 2025-11-03",
+      "http_status": 200,
+      "bytes": 873456,
+      "sha256": "c25d3c989343a7af843ddfaa07187558ecc115c19b100f96d599b296ef203fe9",
+      "last_modified": "Wed, 05 Nov 2025 01:15:12 GMT",
+      "source_bundle_url": "https://export.arxiv.org/e-print/2508.03377v2",
+      "source_bundle_bytes": 536704,
+      "source_bundle_sha256": "f8429d2f839267e2aaf98b04451cb2f0252c0353f75bee6ec6e6947eab0d5834",
+      "relevant_location": "printed pp. 1-5, 16; source image all_six_vertex.jpg",
+      "hypotheses": "The paper studies sufficiently large strongly regular graphs in the lambda=1, mu=2 family and explicitly treats the target family member.",
+      "supports": "N3 topology in the source figure; n3 is a free/unknown variable; repeats n12 identity.",
+      "does_not_support": "No positive lower bound for n3."
+    },
+    {
+      "id": "petro_phillips_2025_v1",
+      "kind": "primary preprint corresponding to 2026 journal article",
+      "citation": "Robert R. Petro and Connor M. Phillips, On Clique Graphs and Clique Regular Graphs, arXiv:2502.17845v1; Discrete Mathematics 349(3), 114862 (2026), DOI 10.1016/j.disc.2025.114862.",
+      "url": "https://arxiv.org/pdf/2502.17845v1",
+      "version": "v1, submitted 2025-02-25",
+      "http_status": 200,
+      "bytes": 3107011,
+      "sha256": "9adb7132b4a40ce87d77b2326fc6ddf1370aa12665f86617aa285b9e824797be",
+      "last_modified": "Wed, 26 Feb 2025 01:25:25 GMT",
+      "relevant_location": "printed pp. 27-28",
+      "hypotheses": "Conditionally assumes the putative graph exists; lambda=1 makes it locally linear and 3-clique regular.",
+      "supports": "Its 3-clique graph has spectrum (-3)^132, 7^54, 18^1, 0^44.",
+      "does_not_support": "No n3 bound or Schur/Hadamard projector evaluation located."
+    },
+    {
+      "id": "phillips_thesis_2026",
+      "kind": "primary thesis preprint",
+      "citation": "Connor Phillips, A Comprehensive Study of Clique Graphs and Clique Regular Graphs, arXiv:2605.22867v1 (2026).",
+      "url": "https://arxiv.org/pdf/2605.22867v1",
+      "version": "v1, submitted 2026-05-19",
+      "http_status": 200,
+      "bytes": 1059251,
+      "sha256": "12247e688b93fae41726ce7e5175d6c496a38b7537f2f5ce0f87f094031f86e9",
+      "last_modified": "Mon, 25 May 2026 00:01:32 GMT",
+      "source_bundle_url": "https://export.arxiv.org/e-print/2605.22867v1",
+      "source_bundle_bytes": 739183,
+      "source_bundle_sha256": "5345e9c360caf0a501de83c8d4a4b552cb06034de3047a4c2e48874d33748b18",
+      "relevant_location": "Chapter 4, especially printed pp. 37-45",
+      "hypotheses": "General clique-regular graph framework; the local tau,rho system is necessary for srg(n,k,1,mu).",
+      "supports": "The separate nonnegative-integer system has solutions for every feasible parameter set tested through k<=50,000,000 and does not eliminate possibilities.",
+      "does_not_support": "No occurrences of n3 or Schur; no target resolution or audited bound."
+    },
+    {
+      "id": "keramatipour_2026_v2",
+      "kind": "primary preprint",
+      "citation": "Ali Keramatipour, Approaching the Conway-99 problem using SAT solvers, arXiv:2604.23037v2.",
+      "url": "https://arxiv.org/pdf/2604.23037v2",
+      "version": "v2, revised 2026-04-28",
+      "http_status": 200,
+      "bytes": 2763608,
+      "sha256": "8fadd666b4b8eaa538874b209c3b4f113704bfdc9d567efdb66e6c8296fe0cc8",
+      "last_modified": "Wed, 29 Apr 2026 00:51:23 GMT",
+      "supports": "The tested SAT approach is incapable of handling the target in reasonable time and better strategies are needed.",
+      "does_not_support": "No construction, UNSAT certificate, proof, n3 bound, or resolution."
+    },
+    {
+      "id": "cesarz_woldar_2025",
+      "kind": "primary peer-reviewed article",
+      "citation": "Patrick G. Cesarz and Andrew J. Woldar, On the automorphism group of a putative Conway 99-graph, Algebraic Combinatorics 8(2) (2025), 379-398, DOI 10.5802/alco.418.",
+      "url": "https://alco.centre-mersenne.org/item/10.5802/alco.418.pdf",
+      "article_url": "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+      "http_status": 200,
+      "bytes": 964747,
+      "sha256": "d88f3832337b949edbd21cadf0836bd0df77bf84bf5c225a1b834d9883ca65a8",
+      "published_online": "2025-04-24",
+      "supports": "Explicitly says existence remains an elusive open problem and proves automorphism-group restrictions.",
+      "does_not_support": "Restrictions do not assume an arbitrary graph has an automorphism and do not imply the audited inequality."
+    },
+    {
+      "id": "baker_cumberland_2026",
+      "kind": "official conference abstract",
+      "citation": "Ben Baker, An Induced Subgraph Paradigm for Strongly Regular Graph Constructions, 34th Cumberland Conference program (May 2026).",
+      "url": "https://www.auburn.edu/cosam/departments/math/cumberland-conference/34th_cumberland_program.pdf",
+      "http_status": 200,
+      "bytes": 411540,
+      "sha256": "ccaeef479f24c2a8e7994ba11220b6846ba7fddb541079c9954152bb6906090d",
+      "last_modified": "Wed, 06 May 2026 05:23:28 GMT",
+      "relevant_location": "printed p. 4",
+      "supports": "Announces general upper/lower induced-subgraph-copy bounds and an application direction for Conway's problem.",
+      "does_not_support": "No full hypotheses, manuscript, exact N3/705/209991 formula, projector argument, or resolution."
+    },
+    {
+      "id": "hebtu_shpectorov_2026",
+      "kind": "official university talk announcement",
+      "citation": "Hebei Normal University announcement for Sergey Shpectorov, Non-existence of the strongly regular graph srg(85,14,3,2), published 2026-06-24.",
+      "url": "https://www.hebtu.edu.cn/a/2026/06/24/AD3624B468444197AA2464C61CBDEE63.html",
+      "http_status": 200,
+      "bytes": 24491,
+      "sha256": "9de956e78febf23483b337a7c1d851363720c55158d1a4164f3249dcb673a57e",
+      "last_modified": "Wed, 24 Jun 2026 08:22:32 GMT",
+      "supports": "The target is described only as a possible similar approach after work on a different SRG.",
+      "does_not_support": "No target theorem or certificate."
+    },
+    {
+      "id": "brouwer_live_table",
+      "kind": "maintained expert parameter table",
+      "citation": "Andries E. Brouwer, Parameters of strongly regular graphs, table for v=51-100.",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+      "http_status": 200,
+      "bytes": 24003,
+      "sha256": "db88468cc47bb5aa9108d488596557de3a68ec80dcf5f7ffea9f2e16d3f60f89",
+      "last_modified": "Mon, 27 Jan 2025 03:20:10 GMT",
+      "supports": "Row (99,14,1,2) remains marked with a question mark.",
+      "does_not_support": "A maintained table is status evidence, not a completeness certificate for all literature."
+    },
+    {
+      "id": "brouwer_van_maldeghem_index",
+      "kind": "scholarly monograph index",
+      "citation": "Andries E. Brouwer and H. Van Maldeghem, Strongly Regular Graphs, Cambridge University Press (2022), parameter index.",
+      "url": "https://assets.cambridge.org/97813165/12036/index/9781316512036_index.pdf",
+      "http_status": 200,
+      "bytes": 113058,
+      "sha256": "dd41d51287da84c74bc362a7b41fec402b16a8c9e3de603958fa766e4fb0d0dc",
+      "last_modified": "Thu, 11 Nov 2021 09:01:07 GMT",
+      "supports": "Defines ? as none is known and marks (99,14,1,2)?.",
+      "does_not_support": "Not current enough alone to establish 2026 status."
+    },
+    {
+      "id": "ishihara_2022",
+      "kind": "primary technical report containing an apparent resolution claim",
+      "citation": "Y. Ishihara, Theory of the pain of humans etc., JSAI Technical Report, SIG-AGI-021-01 (2022), Theorem 28.",
+      "url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/AGI-021/2022_01/_pdf/-char/en",
+      "article_url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/AGI-021/2022_01/_article/-char/en",
+      "http_status": 200,
+      "bytes": 291964,
+      "sha256": "274818e17f4ae2df8cb74d157e2025d18d8b8ca3a6c910586187a1165f143c3b",
+      "relevant_location": "printed pp. 15-16, Theorem 28 and equations (88)-(90)",
+      "claims": "Nonexistence of srg(99,14,1,2).",
+      "audit_finding": "Every L2 nonneighbor of w has at least one common neighbor with w in L2, so the induced L2 is connected from w. Equation (88) then assumes all 71 H2 vertices have two H1 neighbors. Exact root-label counting gives degrees 1^20 and 2^51, so the correct total is 122, not 142. The contradiction does not follow.",
+      "status_effect": "Not an accepted or valid resolution."
+    },
+    {
+      "id": "shpectorov_zhao_2025",
+      "kind": "primary preprint on a different parameter set",
+      "citation": "Sergey Shpectorov and Tianxiao Zhao, arXiv:2504.02449v1.",
+      "url": "https://arxiv.org/pdf/2504.02449v1",
+      "version": "v1",
+      "http_status": 200,
+      "bytes": 772498,
+      "sha256": "a2efe0522cea4133aa955937b042d49de81c369414f75e6b472e668a0898015b",
+      "last_modified": "Fri, 04 Apr 2025 00:39:22 GMT",
+      "supports": "Method-near neighborhood-enumeration/nonexistence work for srg(85,14,3,2).",
+      "does_not_support": "Different parameter set; no target result or audited n3 bound."
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0012365X25004704/pdfft?isDTMRedir=true&download=true",
+      "attempt": "Direct raw-byte retrieval with a browser user agent",
+      "result": "HTTP 403 Forbidden",
+      "mitigation": "Inspected the corresponding arXiv v1 full text and confirmed journal metadata from the DOI/search preview."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0012365X25004704",
+      "attempt": "Direct raw-byte retrieval with a browser user agent",
+      "result": "HTTP 403 Forbidden",
+      "mitigation": "Used the accessible arXiv paper and bibliographic search record."
+    },
+    {
+      "target": "Ben Baker conference work",
+      "attempt": "Exact-title variants, author plus Conway terms, and site:arxiv.org search",
+      "result": "No manuscript or slides located; official abstract only",
+      "mitigation": "Did not infer theorem hypotheses or applicability from the abstract."
+    }
+  ],
+  "hashing": {
+    "algorithm": "SHA-256 over exact raw response bytes",
+    "command_template_powershell": "python -c \"import hashlib,urllib.request,sys; r=urllib.request.Request(sys.argv[1],headers={'User-Agent':'Mozilla/5.0'}); b=urllib.request.urlopen(r,timeout=60).read(); print(len(b),hashlib.sha256(b).hexdigest())\" \"<URL>\"",
+    "note": "Dynamic HTML and API responses may change after retrieval; content hashes bind this audit to the bytes actually inspected."
+  },
+  "coverage_limitations": [
+    "Search-engine and bibliographic indexing can lag behind publication.",
+    "No subscription-only MathSciNet or zbMATH full-record sweep was available.",
+    "Unpublished talks, private correspondence, non-indexed manuscripts, and future revisions are outside the completeness claim.",
+    "Crossref and OpenAlex semantic searches were noisy and were used only as discovery aids.",
+    "No-match search results cannot establish novelty.",
+    "The discovery proof was intentionally excluded and no proof claim was certified."
+  ]
+}

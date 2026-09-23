@@ -1,0 +1,52 @@
+role: proof_a
+date_utc: 2026-07-28T12:43:51Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: DERIVED
+scope: >-
+  Four pointwise-labeled roots plus an unordered free pair, using only
+  order-six through order-eight induced counts at n3=4158; exact separation
+  of stored rational pseudowitnesses and a thirteen-direction cutting-plane
+  feedback loop, plus a candidate symbolic cube-Wagner inequality.
+inputs:
+  - path: attempts/wave150-order8-sdp-scout/exact-rank1-witness.json
+    sha256: e63afbe9ca36b4b1571b3dde75309d0cce45f3bc862d6e8c08bfe62f78dc130d
+  - path: attempts/wave147-alternative-lane/exact_check.py
+    sha256: c49a6c5efb38afc0e33d395ebc1e1110f159132a118039170d4da56a728e6fb9
+  - path: attempts/wave150-order8-sdp-scout/endpoint_sdp.py
+    sha256: 95439e987f314be0f9daaba8c6dbea57719e43551efdc0ee28efcc0c339973a2
+method: >-
+  Enumerate all locally admissible order-six flags for each of nine labeled
+  order-four roots, assemble exact centered covariance matrices from the
+  order-six, order-seven, and order-eight count vectors, extract exact
+  negative integer directions, convert them to primitive linear cuts, solve
+  the retained zero-covariance face numerically, and reconstruct each promoted
+  replacement vector over Q with FLINT before exact replay.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave152-four-root-order8\four_root_scout.py
+outputs:
+  - path: attempts/wave152-four-root-order8/four-root-scout.json
+    sha256: c3633fe3337c1910774e13c9a0841b17bb3f55df1d9800c673979016e877ce95
+  - path: attempts/wave152-four-root-order8/exact-cuts.json
+    sha256: 055b8253636167b85f68e09b1a470d4fe94e2d8bcfbe5eb02ade0e69ad73603d
+  - path: attempts/wave152-four-root-order8/exact-witness-after-five-cuts.json
+    sha256: 0017d9be7ae08eeb405bb1357e54c0da8c9b0ca63ff711d905270ed202bac336
+  - path: attempts/wave152-four-root-order8/exact-witness-after-eight-cuts.json
+    sha256: dba1aa5caf8a98a03df61920474a2aeab814d1921c6e62bf4bfeab41d8585ff0
+  - path: attempts/wave152-four-root-order8/simplified-mask12-cut.json
+    sha256: 0e9d9dd80fcd016281eaad847deecd6748aa6bfea391b49d0017b4d518a7978e
+  - path: attempts/wave152-four-root-order8/exact-nine-cut-replay.json
+    sha256: 64f961e21d6b01a9767588caa691171913bf3c8f4704aa4d38f085cc73fb8b39
+  - path: attempts/wave152-four-root-order8/simplified-mask12-cut-2.json
+    sha256: 8bed853973bb5964a3a9d4f37c8b808e6149701c00fd62c7e607f5e543cdb965
+  - path: attempts/wave152-four-root-order8/exact-witness-after-thirteen-cuts.json
+    sha256: 4a676ca77af60fe0cf925d9b9967c641994897245f9d2322b4f33781c54a7b32
+  - path: attempts/wave152-four-root-order8/four-root-evaluation-after-thirteen-cuts.json
+    sha256: dab774d8d2e7ae6981c4d3540e4063fd61a94661339901c95bcad6043cc2f1f7
+limitations:
+  - The independently verified claim refutes the Wave150 pseudowitness only.
+  - Waves155--156 verify the feedback loop only through the nine-cut survivor.
+  - The thirteen-cut survivor and symbolic all-n3 lift remain discovery claims.
+  - A rational pseudowitness is not an induced-count vector of a graph.
+  - Thirteen scalar directions are not the full nine-block SDP.
+  - No strict upper bound, graph construction, or Conway-99 resolution follows.

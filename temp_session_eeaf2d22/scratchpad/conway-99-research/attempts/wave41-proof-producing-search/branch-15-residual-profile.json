@@ -1,0 +1,371 @@
+{
+  "claim_label": "CANDIDATE_DIAGNOSTIC",
+  "closure": {
+    "forced_variables": 830,
+    "path": "attempts/wave41-proof-producing-search/branch-15-propagation-certificate.json",
+    "sha256": "3da90e49e4e9469bdc397af107d877ee7075ad551a6f8df1afbd8d5d1150707f"
+  },
+  "format": "wave41-branch15-residual-profile-v1",
+  "limitations": [
+    "This is a branching diagnostic, not a SAT or UNSAT result.",
+    "High tight-constraint incidence does not imply either polarity fails.",
+    "No endpoint case, endpoint value, or global Conway claim is decided."
+  ],
+  "open_constraints": 574351,
+  "residual_width_histogram": {
+    "1": 1442,
+    "10": 298,
+    "11": 636,
+    "12": 1348,
+    "2": 26253,
+    "3": 260838,
+    "4": 24772,
+    "5": 255246,
+    "8": 16,
+    "82": 166,
+    "83": 3312,
+    "9": 24
+  },
+  "role": "construction",
+  "scope": "branch 15 after the candidate generalized-unit fixed point",
+  "slack_histogram": {
+    "1": 2975,
+    "10": 848,
+    "2": 288047,
+    "3": 1340,
+    "4": 280828,
+    "7": 16,
+    "8": 5,
+    "9": 292
+  },
+  "source": {
+    "gzip_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+    "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb.gz",
+    "raw_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5"
+  },
+  "tight_slack_one_constraints": 2975,
+  "top_primary_probe_variables": [
+    {
+      "tight_occurrences": 8,
+      "variable": 13
+    },
+    {
+      "tight_occurrences": 8,
+      "variable": 175
+    },
+    {
+      "tight_occurrences": 8,
+      "variable": 188
+    },
+    {
+      "tight_occurrences": 7,
+      "variable": 178
+    },
+    {
+      "tight_occurrences": 7,
+      "variable": 1727
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 15
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 16
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 17
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 18
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 19
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 20
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 21
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 22
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 23
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 35
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 36
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 37
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 38
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 39
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 40
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 41
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 42
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 43
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 94
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 106
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 189
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 190
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 191
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 192
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 193
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 194
+    },
+    {
+      "tight_occurrences": 6,
+      "variable": 195
+    }
+  ],
+  "top_tight_literals": [
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 8,
+      "variable": 13
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 8,
+      "variable": 175
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 8,
+      "variable": 188
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 7,
+      "variable": 178
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 7,
+      "variable": 1727
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 15
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 16
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 17
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 18
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 19
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 20
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 21
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 22
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 23
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 35
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 36
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 37
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 38
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 39
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 40
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 41
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 42
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 43
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 94
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 106
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 189
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 190
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 191
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 192
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 193
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 194
+    },
+    {
+      "literal_value": false,
+      "primary": true,
+      "tight_occurrences": 6,
+      "variable": 195
+    }
+  ]
+}

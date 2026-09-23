@@ -1,0 +1,938 @@
+{
+  "K_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      12
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      1,
+      12
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      2,
+      14
+    ],
+    [
+      2,
+      15
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      4,
+      13
+    ],
+    [
+      4,
+      14
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      5,
+      12
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      6,
+      13
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      7,
+      12
+    ],
+    [
+      7,
+      13
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      9,
+      13
+    ],
+    [
+      9,
+      14
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      10,
+      14
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      11,
+      15
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      14,
+      15
+    ]
+  ],
+  "active_order": 16,
+  "branch": {
+    "branch_id": "no-size3",
+    "normalization": "all selected size-three points are absent",
+    "root_point": null,
+    "root_q3_count": null,
+    "root_q_values": null
+  },
+  "claim_label": "CANDIDATE",
+  "conditional_n3_51_exclusion": "UNKNOWN",
+  "diagnostics": {
+    "common_point_Berge_triangle_count": 0,
+    "common_point_Berge_triangles": [],
+    "full_L_overlap_count": 0,
+    "full_L_overlaps": [],
+    "incidence_degrees": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "k_degree_sequence": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      6,
+      6
+    ],
+    "k_edge_count": 69,
+    "linear_pair_owner_violation_count": 0,
+    "meeting_crossing_violation_count": 0,
+    "meeting_crossing_violations": [],
+    "meeting_crossings_checked": 48,
+    "missing_point_clique_edges": [],
+    "overlap_cap_violation_count": 0,
+    "overlap_cap_violations": [],
+    "point_count": 24,
+    "size2_point_count": 24,
+    "size3_point_count": 0
+  },
+  "encoded_premises": [
+    "exactly three selected non-singleton point sets pass through each active label",
+    "all selected point sizes are two or three",
+    "the selected point family is linear",
+    "F is exactly the union of selected point-clique edges",
+    "every selected point is a clique in K",
+    "every F-triangle is its selected size-three point",
+    "meeting crossings have two-sided L-degrees in {0,2}: singleton-side crossings are L-empty and 2-by-2 crossings are L-empty or L-complete",
+    "full 2-by-2 L-overlap counts obey the inherited fixed-point upper cap at each selected triple",
+    "every active label has its exact profile-specific K-degree"
+  ],
+  "formula": {
+    "base_clause_count": 1645848,
+    "branch_unit_count": 560,
+    "branch_units_are_solver_assumptions": true,
+    "build_seconds": 2.2046828999882564,
+    "builder_source": "code/wave16_n3_51_active_sat.py",
+    "builder_source_sha256": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+    "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+    "materialized_clause_count": 1646408,
+    "materialized_dimacs_sha256": "ec45a872696abb49c6f168294f5ff5f7f60ba1ddcb9d52d1d627e5b46a3f20e3",
+    "profile_source": "code/wave16_n3_51_profiles.py",
+    "profile_source_sha256": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c",
+    "variable_count": 472338
+  },
+  "k_degree_targets": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    6,
+    6
+  ],
+  "novelty": "UNKNOWN",
+  "point_sets": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      14
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      9,
+      13
+    ],
+    [
+      9,
+      14
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      14,
+      15
+    ]
+  ],
+  "profile_id": "r16-q2x14-q3x2",
+  "q_values": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3
+  ],
+  "schema": "conway99-wave16-n3-51-active-local-candidate-v1",
+  "scope": "active-label auxiliary object only",
+  "semantic_core": {
+    "K_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        9,
+        15
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        15
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        14,
+        15
+      ]
+    ],
+    "branch": {
+      "branch_id": "no-size3",
+      "normalization": "all selected size-three points are absent",
+      "root_point": null,
+      "root_q3_count": null,
+      "root_q_values": null
+    },
+    "encoded_premises_sha256": "69cf3f51de1a88015fdd67346f84ce43e0822e51120fd7551bc58b3dd5beee15",
+    "formula_materialized_dimacs_sha256": "ec45a872696abb49c6f168294f5ff5f7f60ba1ddcb9d52d1d627e5b46a3f20e3",
+    "point_sets": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        14,
+        15
+      ]
+    ],
+    "profile_id": "r16-q2x14-q3x2",
+    "q_values": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3
+    ],
+    "source_provenance": {
+      "attempts/wave16-n3-51-computation/n3-51-profile-census.json": "f16acb933a6d54e3a96e97521cf3e06b6e04bac06dbf72376fb67a462eec0ffe",
+      "code/wave16_n3_51_active_sat.py": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+      "code/wave16_n3_51_profiles.py": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c"
+    },
+    "starting_git_commit": "861cfeb6195b19b08feceff07be88a6ab5093fd4"
+  },
+  "semantic_sha256": "d858ceae9ec4f6722c5b73a103bdc68a6b2c55f34db20295ec57b59864896c82",
+  "source_provenance": {
+    "attempts/wave16-n3-51-computation/n3-51-profile-census.json": "f16acb933a6d54e3a96e97521cf3e06b6e04bac06dbf72376fb67a462eec0ffe",
+    "code/wave16_n3_51_active_sat.py": "0cdeab26f21626d4bf6f709e872ce6c3c9df8e4ba6ba48229b7b384e057292da",
+    "code/wave16_n3_51_profiles.py": "2bd7874a1819a0bcdaa529ae876fdc6e15a84aa21baddf655a060c6c004d4d4c"
+  },
+  "starting_git_commit": "861cfeb6195b19b08feceff07be88a6ab5093fd4",
+  "symmetry_boundary": "q labels are sorted; a positive root branch uses only permutations inside equal-q classes; no completed-graph automorphism is assumed",
+  "target_n3": 51,
+  "target_result": "UNKNOWN",
+  "unencoded_premises": [
+    "inactive point sets and inactive graph vertices",
+    "which disjoint selected points are adjacent original vertices",
+    "fixed support contributed by disjoint point sets",
+    "equality completion of every fixed-point support sum",
+    "the 693-vertex H graph",
+    "a 99-vertex adjacency matrix",
+    "global SRG lambda/mu equations"
+  ],
+  "variant": "full"
+}

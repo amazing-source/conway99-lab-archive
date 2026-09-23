@@ -1,0 +1,100 @@
+{
+  "bounds": {
+    "dual_scalar_short_words": 18018,
+    "edge_isolated_projective_short_words": 693,
+    "nonedge_projective_short_words": 8316,
+    "nonedges": 4158,
+    "total_projective_short_words": 9009
+  },
+  "canonical_profiles": {
+    "one_adjacency_projector_square_sum_mod_3": 1,
+    "triple_leaf_all_orbit_weights": [
+      4,
+      5,
+      8,
+      9,
+      10,
+      10,
+      11,
+      13,
+      14
+    ],
+    "triple_leaf_short_weights": [
+      4,
+      5,
+      8,
+      9
+    ],
+    "type_two_all_orbit_weights": [
+      4,
+      8,
+      8,
+      8,
+      8,
+      12,
+      12,
+      12,
+      12
+    ],
+    "type_two_short_weights": [
+      4,
+      8,
+      8,
+      8,
+      8
+    ]
+  },
+  "claim_label": "DERIVED",
+  "disposition": {
+    "conway_99": "UNKNOWN",
+    "endpoint": "UNKNOWN",
+    "independent_verification": "PENDING",
+    "rank_11": "UNKNOWN",
+    "strict_n3_improvement": "NONE"
+  },
+  "format": "wave188-affine-star-word-amplification-v1",
+  "global_inequality": {
+    "coefficient_difference": [
+      0,
+      -1,
+      0,
+      3,
+      0
+    ],
+    "difference_lower_bound_using_p2_ge_n2": "2*n2",
+    "private_lower_coefficients": [
+      2,
+      2,
+      3,
+      1,
+      1
+    ],
+    "variables": [
+      "n1",
+      "n2",
+      "n3",
+      "p2",
+      "p3"
+    ],
+    "word_lower_coefficients": [
+      2,
+      1,
+      3,
+      4,
+      1
+    ]
+  },
+  "orbit": {
+    "minimum_equality_profiles": 36,
+    "minimum_short_orbit_words": 3,
+    "profiles_checked": 438,
+    "short_count_spectrum": {
+      "3": 36,
+      "4": 140,
+      "5": 226,
+      "6": 36
+    }
+  },
+  "result_sha256": "1f8bf24f14f026de7104f026bb72291bbf1c259968b58db91ef627a0eb21794f",
+  "scope": "conditional rank-11 endpoint lower bound on actual projective dual words of weights four through nine"
+}

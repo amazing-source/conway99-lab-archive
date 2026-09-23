@@ -1,0 +1,21 @@
+role: proof_a
+date_utc: 2026-07-28T02:53:52Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: DERIVED
+scope: prism-free endpoint N14 upper bound, with a separate rank-28 weighted-shell corollary
+inputs:
+  - path: attempts/wave90-short-vector-count-upper/package-manifest.sha256
+    sha256: f7dda4995714a4216c8a8c00738d8da070ff4f485fb7ddd4596921b309482f88
+  - path: verification/wave90-short-vector-count-upper/package-manifest.sha256
+    sha256: 87577c23a8b6b3f251de7e3d08b13fcb7a6f30d809c88b35a11d15db5e40201a
+  - path: verification/wave86-level7-exact/package-manifest.sha256
+    sha256: cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2
+method: exact first and pair transition-seed moments, lambda-one triangle exclusion, and a rational two-moment certificate
+command: .\.venv\Scripts\python.exe -B attempts\wave99-transition-pair-moment\exact_check.py --verify attempts\wave99-transition-pair-moment\exact-results.json
+outputs:
+  - attempts/wave99-transition-pair-moment/exact-results.json
+limitations:
+  - independent verification required
+  - N14 theorem assumes n3=4158
+  - weighted corollary additionally assumes r=28
+  - no N16 or N18 upper bound

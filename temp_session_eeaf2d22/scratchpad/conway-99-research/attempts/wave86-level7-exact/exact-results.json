@@ -1,0 +1,190 @@
+{
+  "claim_label": "DERIVED",
+  "coefficient_identity": {
+    "all_right_terms_nonnegative_for_theta_series": true,
+    "forced_integer_lower_bound": 5868,
+    "left": "x7+x8+x9-1997236/341",
+    "rational_lower_bound": "1997236/341",
+    "right_terms": {
+      "x11": "1/2387",
+      "x8": "180/217",
+      "x9": "2344/2387",
+      "y1": "1118523/341",
+      "y2": "134113/341",
+      "y3": "9604/341",
+      "y4": "343/341"
+    },
+    "wave71_congruence": "x7+x8+x9=2 mod 14"
+  },
+  "formal_scalar_control": {
+    "attains_short_sum": 5868,
+    "checked_through_q": 50,
+    "integral_even_nonnegative_through_checked_prefix": true,
+    "not_a_lattice_or_graph": true,
+    "x0_to_x14": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5868,
+      0,
+      0,
+      28852082,
+      26264,
+      582557668,
+      2681235704,
+      12272379984
+    ],
+    "y0_to_y14": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      358916,
+      34393854,
+      600737200,
+      11946196274,
+      132636715536,
+      1237054839912,
+      9122211909000,
+      56682577580992,
+      304577760235536,
+      1443860798777424
+    ]
+  },
+  "format": "wave86-level7-exact-v1",
+  "limitations": [
+    "Conditional on the independently verified Wave66 and Wave71 lattice transfer.",
+    "The exact formal modular pair is not a lattice or marked-frame realization.",
+    "Scalar theta coefficients do not encode the classified signed supports.",
+    "No q=16 exclusion or Conway-99 resolution follows in this package."
+  ],
+  "modular_space": {
+    "basis_products": [
+      [
+        3,
+        "A",
+        19,
+        "A"
+      ],
+      [
+        3,
+        "A",
+        19,
+        "B"
+      ],
+      [
+        3,
+        "B",
+        19,
+        "A"
+      ],
+      [
+        3,
+        "B",
+        19,
+        "B"
+      ],
+      [
+        5,
+        "A",
+        17,
+        "A"
+      ],
+      [
+        5,
+        "A",
+        17,
+        "B"
+      ],
+      [
+        5,
+        "B",
+        17,
+        "A"
+      ],
+      [
+        5,
+        "B",
+        17,
+        "B"
+      ],
+      [
+        7,
+        "A",
+        15,
+        "A"
+      ],
+      [
+        7,
+        "A",
+        15,
+        "B"
+      ],
+      [
+        7,
+        "B",
+        15,
+        "A"
+      ],
+      [
+        7,
+        "B",
+        15,
+        "B"
+      ],
+      [
+        9,
+        "A",
+        13,
+        "A"
+      ],
+      [
+        9,
+        "A",
+        13,
+        "B"
+      ],
+      [
+        9,
+        "B",
+        13,
+        "A"
+      ]
+    ],
+    "dimension": 15,
+    "fricke_involution_exact": true,
+    "fricke_matrix_max_denominator": 678223072849,
+    "space": "M_22(Gamma0(7)) with trivial character",
+    "sturm_bound": 14
+  },
+  "scope": "conditional q=16 row of a hypothetical srg(99,14,1,2)",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "graph": "UNKNOWN",
+    "new_conditional_fact": "N14+N16+N18>=5868 in the q=16 row",
+    "novelty": "UNKNOWN",
+    "q16_excluded": false
+  },
+  "theta_transfer": {
+    "normalization": "Theta=sum_x q^((x,x)/2)",
+    "relation": "Theta_L=-7^3*(Theta_K|W_7)",
+    "x14_elimination": {
+      "coefficients_on_x7_to_x13": [
+        "-288",
+        "35",
+        "91",
+        "-27",
+        "-7",
+        "-4",
+        "5"
+      ],
+      "constant": "1977312182"
+    },
+    "x_initial_gap": "x1=...=x6=0"
+  }
+}

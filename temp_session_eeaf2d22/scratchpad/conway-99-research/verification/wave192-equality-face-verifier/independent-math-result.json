@@ -1,0 +1,231 @@
+{
+  "boundary": {
+    "Q6237_equality_face": "REFUTED",
+    "code_constructed": false,
+    "conditional_theorem_verified": true,
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "graph_constructed": false,
+    "rank_11_excluded": false,
+    "strict_n3_improvement": false
+  },
+  "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+  "equality_face": {
+    "all_type1_raws_fill_exact2_circuits_two_each": true,
+    "all_type3_raws_exact1": true,
+    "formulas": {
+      "Y": "0",
+      "delta": "m",
+      "exact2_raw": "2079-m",
+      "h": "0",
+      "n1": "C-2m",
+      "n2": "0",
+      "n3": "m",
+      "p2": "0",
+      "p3": "m",
+      "r": "2079",
+      "r1": "m",
+      "type1_raw_assignments": "C-2m"
+    },
+    "parameter": "m=n3=p3",
+    "range": [
+      0,
+      2079
+    ],
+    "sample_rows_checked": [
+      {
+        "Q": 6237,
+        "Y": 0,
+        "delta": 0,
+        "exact2_raw": 2079,
+        "h": 0,
+        "m": 0,
+        "n1": 4158,
+        "n2": 0,
+        "n3": 0,
+        "p2": 0,
+        "p3": 0,
+        "r": 2079,
+        "r1": 0
+      },
+      {
+        "Q": 6237,
+        "Y": 0,
+        "delta": 1,
+        "exact2_raw": 2078,
+        "h": 0,
+        "m": 1,
+        "n1": 4156,
+        "n2": 0,
+        "n3": 1,
+        "p2": 0,
+        "p3": 1,
+        "r": 2079,
+        "r1": 1
+      },
+      {
+        "Q": 6237,
+        "Y": 0,
+        "delta": 2078,
+        "exact2_raw": 1,
+        "h": 0,
+        "m": 2078,
+        "n1": 2,
+        "n2": 0,
+        "n3": 2078,
+        "p2": 0,
+        "p3": 2078,
+        "r": 2079,
+        "r1": 2078
+      },
+      {
+        "Q": 6237,
+        "Y": 0,
+        "delta": 2079,
+        "exact2_raw": 0,
+        "h": 0,
+        "m": 2079,
+        "n1": 0,
+        "n2": 0,
+        "n3": 2079,
+        "p2": 0,
+        "p3": 2079,
+        "r": 2079,
+        "r1": 2079
+      }
+    ],
+    "selected_type3_nonprivate_labels_per_flag": 2,
+    "selected_type3_private_labels_per_flag": 1
+  },
+  "format": "wave192-equality-face-clean-room-math-v1",
+  "m0_affine_axis": {
+    "axis_profiles": [
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ]
+    ],
+    "axis_supports_incomparable": true,
+    "axis_weights": [
+      8,
+      8
+    ],
+    "axis_words": [
+      [
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "checkerboard": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "checkerboard_not_contained_in_either_axis_word": true,
+    "checkerboard_weight": 4,
+    "chosen_star": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "contradiction": "the unused nontrivial word on the same affine star axis contains a cross circuit but contains neither c_e nor r_e",
+    "equality_inventory_for_m0": "for each label e, the only old short circuits crossing e are its selected singleton c_e and canonical checkerboard r_e",
+    "m0_branch_verdict": "REFUTED",
+    "saturation_step": "the short translated relation used by the type1 lemma must equal r_e; otherwise removing its unique old circuit leaves another dependent support"
+  },
+  "math_result_sha256": "e1f97dfb396af8f342d953bb8f339093c47e486a481929430232c2dee9b7adf2",
+  "positive_m_nonprivate_leaf": {
+    "both_star_sides_proper": true,
+    "branch": "m>0",
+    "contained_circuit_crosses_leaf_label": true,
+    "contradiction": "the leaf word forces a circuit outside the equality inventory",
+    "leaf_word_profile": [
+      3,
+      6
+    ],
+    "leaf_word_weight": 9,
+    "nonprivate_labels_per_selected_type3": 2,
+    "old_pool_exclusions": {
+      "exact1_type3_raw": "its sole label is private, not the chosen nonprivate leaf",
+      "exact2_type1_raw": "its two labels are singleton private labels in a tau-pair",
+      "exact3_selected_or_companion": "excluded by the verified Wave191 local exact3-in-leaf-word impossibility",
+      "selected_singleton": "its sole label is private, not the chosen nonprivate leaf"
+    },
+    "positive_m_branch_verdict": "REFUTED",
+    "private_labels_per_selected_type3": 1,
+    "selected_type3_exists": true
+  },
+  "strict_bound": {
+    "all_projective_short_circuits": 6931,
+    "edge_isolated_projective_short_circuits": 693,
+    "excluded_equality": 6237,
+    "nonedge_projective_short_circuits_Q": 6238,
+    "scalar_short_circuit_words": 13862,
+    "wave188_all_short_word_bound_remains_stronger": 18018
+  },
+  "tau_pair_saturation": {
+    "assignments_per_exact2_raw": 2,
+    "canonical_nonedge_involution": "tau",
+    "complement_tau_invariant": true,
+    "consequence": "the singleton-label set is a union of exactly 2079-m complete tau-pairs, each served by its unique checkerboard circuit",
+    "exact2_raw_count": "2079-m",
+    "singleton_label_count": "C-2m",
+    "total_tau_pairs": 2079
+  },
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

@@ -1,0 +1,36 @@
+role: construction
+date_utc: 2026-07-27T18:20:31Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: CANDIDATE
+scope: >-
+  Exact five-root one-free attachment Gram matrices for all 21 canonical root
+  types, all S5 coordinate relabellings, two finite graph controls, 17 frozen
+  endpoint witnesses, and a floating Wave48+Wave49 normalized SDP scout.
+inputs:
+  manifest: attempts/wave49-five-root-moment/input-freeze.sha256
+  manifest_sha256: 782cb97ea314d95c49202f8680b2fc81409d525a5028052845a8ea4880dc356d
+method: >-
+  Enumerate admissible labelled graphs through order seven; accumulate exact
+  same-free order-six and ordered-distinct order-seven root tensors; verify S5
+  permutation congruence; compare direct and expanded Petersen/Clebsch
+  matrices; evaluate frozen witnesses with exact inertia and integer negative
+  directions; append normalized matrices to Wave48 for a floating-only scout.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave49-five-root-moment\five_root_moment.py
+outputs:
+  coefficients:
+    path: attempts/wave49-five-root-moment/coefficients.json
+    sha256: 66aeb26175643030770c8060a0550d202c56b6a9636e245ef19866a4a9cf308d
+  exact_results:
+    path: attempts/wave49-five-root-moment/results.json
+    sha256: f8604031259a92776b29cda161344fd9b2bdf3ea395c3d8ce53facb82981f8c5
+  numerical_scout:
+    path: attempts/wave49-five-root-moment/combined-sdp-result.json
+    sha256: 1e41b1fd961714b24f69d1c31474f48b91dca88d938f5c97d5aa2424b8aac152
+limitations:
+  - Discovery has not independently verified its own coefficient package.
+  - The 357 exact negative matrices refute only 17 frozen aggregate witnesses.
+  - Clarabel optimal_inaccurate and floating duals are not certificates.
+  - No exact rational infeasibility dual was extracted.
+  - Endpoint n3=4158 and every global claim remain UNKNOWN.

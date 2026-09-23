@@ -1,0 +1,354 @@
+{
+  "B_gram_and_joint_projectors": {
+    "P_0_formula": "P_0=J/70",
+    "P_B_formula": "P_B=R/12-J/28",
+    "P_B_rank": 15,
+    "P_F_P_B": "P_0",
+    "R_definition": "B B^T",
+    "R_quadratic": "R^2=12R+18J",
+    "R_spectrum": {
+      "0": 55,
+      "12": 14,
+      "42": 1
+    },
+    "T_R_identity": "TR=RT=12J",
+    "W_description": "ker(F) intersect ker(B^T)",
+    "W_dimension": 43,
+    "W_projector": "E=I-P_F-P_B+P_0",
+    "combined_row_space_dimension": 27,
+    "combined_row_space_projector": "P_F+P_B-P_0"
+  },
+  "D_residual_decomposition": {
+    "E_3_expanded": "P_F+(D-T+4I)/7-R/28+3J/140",
+    "E_3_formula": "E_3=(K+4E)/7",
+    "E_minus_4_expanded": "(-D+T+3I)/7-2P_F-R/21+J/35",
+    "E_minus_4_formula": "E_minus_4=(3E-K)/7",
+    "K_eigenvalue_3_multiplicity": 27,
+    "K_eigenvalue_minus_4_multiplicity": 16,
+    "decomposition": "D=L+K",
+    "fixed_action": "L=T-11P_F-P_B+P_0",
+    "projector_diagonal_by_support_type": {
+      "support_edge": {
+        "E": "59/98",
+        "E_3": "39/98",
+        "E_minus_4": "10/49",
+        "K": "37/98",
+        "L": "-37/98",
+        "P_0": "1/70",
+        "P_B": "3/14",
+        "P_F": "97/490"
+      },
+      "support_nonedge_copy": {
+        "E": "61/98",
+        "E_3": "37/98",
+        "E_minus_4": "12/49",
+        "K": "15/98",
+        "L": "-15/98",
+        "P_0": "1/70",
+        "P_B": "3/14",
+        "P_F": "87/490"
+      }
+    },
+    "residual_quadratic": "K^2+K-12E=0",
+    "residual_support": "K=EDE=DE=ED",
+    "trace_K": "17",
+    "trace_L": "-17"
+  },
+  "claim_label": "DERIVED",
+  "comparison_status": "STAGE_1_FROZEN_NOT_RELEASED",
+  "coverage": {
+    "binary_solution_excluded": false,
+    "binary_solution_found": false,
+    "full_99_vertex_certificate": false,
+    "linear_algebra_domain": "complete for every binary six-block pair",
+    "pair_state_partition": "complete for all C(70,2) O-pairs"
+  },
+  "domain": {
+    "B": "arbitrary binary 70x15 matrix",
+    "Cayley_or_circulant_assumed": false,
+    "D": "arbitrary symmetric hollow binary 70x70 matrix",
+    "O_vertices": 70,
+    "Q_vertices": 15,
+    "automorphism_assumed": false,
+    "fixed_O_Q_design_assumed": false,
+    "orbit_representative_assumed": false,
+    "required_equations": "all six Wave 33 blocks",
+    "support_vertices": 14,
+    "transitivity_assumed": false
+  },
+  "fixed_support_linear_algebra": {
+    "P_F_diagonal_by_support_type": {
+      "support_edge": "97/490",
+      "support_nonedge_copy": "87/490"
+    },
+    "P_F_formula": "P_F=T(T^2-40T+498I)/1960",
+    "P_F_rank": 13,
+    "T_annihilating_polynomial": "T(T-20I)(T^2-20T+98I)=0",
+    "T_definition": "F^T F",
+    "T_spectrum": {
+      "0": 57,
+      "10+sqrt(2)": 6,
+      "10-sqrt(2)": 6,
+      "20": 1
+    },
+    "rank_F": 13,
+    "rank_T": 13,
+    "support_overlap_by_type": {
+      "support_edge": {
+        "g0": 51,
+        "g1": 18,
+        "g2": 0
+      },
+      "support_nonedge_copy": {
+        "g0": 52,
+        "g1": 16,
+        "g2": 1
+      }
+    },
+    "trace_T": "140"
+  },
+  "forced_pair_distribution": {
+    "allowed_states": [
+      "g0_r0_h0_c2",
+      "g0_r0_h1_c1",
+      "g0_r1_h0_c1",
+      "g0_r1_h1_c0",
+      "g0_r2_h0_c0",
+      "g1_r0_h0_c1",
+      "g1_r0_h1_c0",
+      "g1_r1_h0_c0",
+      "g2_r0_h0_c0"
+    ],
+    "constraint_matrix_rank": 9,
+    "forced_graphs": {
+      "D_edges_common_neighbor_in_O": {
+        "definition": "g=0,r=0,h=1,c=1",
+        "degree_support_edge": 6,
+        "degree_support_nonedge_copy": 4,
+        "edges": 168,
+        "triangles": 56,
+        "triangles_per_support_edge_vertex": 3,
+        "triangles_per_support_nonedge_copy_vertex": 2
+      },
+      "D_edges_common_neighbor_in_Q": {
+        "consequence": "3-regular spanning subgraph",
+        "definition": "g=0,r=1,h=1,c=0",
+        "degree": 3,
+        "edges": 105,
+        "vertices": 70
+      },
+      "D_edges_common_neighbor_in_S": {
+        "consequence": "2-regular on support-nonedge-copy vertices",
+        "definition": "g=1,r=0,h=1,c=0",
+        "degree": 2,
+        "edges": 42,
+        "vertices": 42
+      },
+      "double_Q_overlap_R2": {
+        "consequence": "3-regular and disjoint from D and D^2 support",
+        "definition": "g=0,r=2,h=0,c=0",
+        "degree": 3,
+        "edges": 105,
+        "vertices": 70
+      },
+      "duplicate_support_label_G2": {
+        "consequence": "fixed matching; paired B rows are disjoint",
+        "definition": "g=2,r=0,h=0,c=0",
+        "degree": 1,
+        "edges": 21,
+        "vertices": 42
+      },
+      "support_and_Q_single_overlap_X11": {
+        "consequence": "D_ij=(D^2)_ij=0 on every X11 edge",
+        "definition": "g=1,r=1,h=0,c=0",
+        "degree": 6,
+        "edges": 210,
+        "vertices": 70
+      }
+    },
+    "global_unordered_pair_distribution": {
+      "g0_r0_h0_c2": 588,
+      "g0_r0_h1_c1": 168,
+      "g0_r1_h0_c1": 840,
+      "g0_r1_h1_c0": 105,
+      "g0_r2_h0_c0": 105,
+      "g1_r0_h0_c1": 336,
+      "g1_r0_h1_c0": 42,
+      "g1_r1_h0_c0": 210,
+      "g2_r0_h0_c0": 21
+    },
+    "row_distribution_by_support_type": {
+      "support_edge": {
+        "g0_r0_h0_c2": 15,
+        "g0_r0_h1_c1": 6,
+        "g0_r1_h0_c1": 24,
+        "g0_r1_h1_c0": 3,
+        "g0_r2_h0_c0": 3,
+        "g1_r0_h0_c1": 12,
+        "g1_r1_h0_c0": 6
+      },
+      "support_nonedge_copy": {
+        "g0_r0_h0_c2": 18,
+        "g0_r0_h1_c1": 4,
+        "g0_r1_h0_c1": 24,
+        "g0_r1_h1_c0": 3,
+        "g0_r2_h0_c0": 3,
+        "g1_r0_h0_c1": 8,
+        "g1_r0_h1_c0": 2,
+        "g1_r1_h0_c0": 6,
+        "g2_r0_h0_c0": 1
+      }
+    }
+  },
+  "global_projector_principal_blocks": {
+    "P3_OO": "(D+4I)/7-2J/77",
+    "P3_OO_diagonal": "6/11",
+    "P3_OO_nullity": 16,
+    "P3_OO_rank": 54,
+    "Pminus4_OO": "(-D+3I)/7+J/63",
+    "Pminus4_OO_diagonal": "4/9",
+    "Pminus4_OO_nullity": 27,
+    "Pminus4_OO_rank": 43
+  },
+  "input_integrity": {
+    "all_hashes_pass": true,
+    "files": {
+      "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+      "agents/2026-07-24-wave33-rooted-extension.md": "c324dc48f5c7b9524b8b2ac02fae3acb8b9ec342d0a61081ee86ae4771434c0c",
+      "verification/wave33-rooted-extension/comparison-audit.md": "fc7abcd53154d4551a5d3d97d38024840b4228195e143559c9e8b46c15644b8a",
+      "verification/wave33-rooted-extension/comparison-results.json": "2e36ecade28bca12d35a963a8c6b52777ac7d766a3c4b3267774000fe2e929fd",
+      "verification/wave33-rooted-extension/independent-results.json": "66cef570dbbb4a86e2a35f780edcfc1873d0ac2c5266f1c2065c902a8f91e778",
+      "verification/wave33-rooted-extension/independent_check.py": "069f1a72f313d7346a3d6bb8c2cf6e9e209a138343966bbbdd0f8624ea11e359",
+      "verification/wave33-rooted-extension/precomparison-freeze.md": "ba479c6b426c17e79aaf4f57258e9b360eb17b81ba35eb7de77ff5104c96bb17",
+      "verification/wave34-continuation-protocol.md": "60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4"
+    }
+  },
+  "limitations": [
+    "Stage 1 is an independent reconstruction and does not label any unseen Wave 34 candidate VERIFIED.",
+    "No binary D,B pair is constructed.",
+    "No complete-domain exclusion or proof-producing solver certificate is supplied.",
+    "The decomposition leaves a 43-dimensional residual operator and does not enumerate its binary-compatible realizations.",
+    "All conclusions are conditional on the verified Wave 33 rooted six-block graph criterion, not the full endpoint package."
+  ],
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "Clean-room exact unrestricted linear-algebra and projector consequences of the independently verified Wave 33 six-block rooted graph-extension criterion.",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rooted_endpoint": "UNKNOWN",
+    "rooted_graph_extension_or_exclusion": "UNKNOWN",
+    "stage_1_reconstruction": "DERIVED",
+    "wave34_candidate_seen": false
+  },
+  "universal_spectral_audit": {
+    "dimension_W": 43,
+    "dimension_row_space_F_plus_B": 27,
+    "nullity_global_P3_OO": 16,
+    "nullity_global_Pminus4_OO": 27,
+    "rank_E_3": "27",
+    "rank_E_minus_4": "16",
+    "rank_global_P3_OO": 54,
+    "rank_global_Pminus4_OO": 43,
+    "summands": [
+      {
+        "D": "9",
+        "E": "0",
+        "E_3": "0",
+        "E_minus_4": "0",
+        "K": "0",
+        "L": "9",
+        "P_B": "1",
+        "P_F": "1",
+        "R": "42",
+        "T": "20",
+        "dimension": 1,
+        "global_P3_O_eigenvalue": "3/77",
+        "global_Pminus4_O_eigenvalue": "16/63",
+        "space": "constant"
+      },
+      {
+        "D": "-1-sqrt(2)",
+        "E": "0",
+        "E_3": "0",
+        "E_minus_4": "0",
+        "K": "0",
+        "L": "-1-sqrt(2)",
+        "P_B": "0",
+        "P_F": "1",
+        "R": "0",
+        "T": "10-sqrt(2)",
+        "dimension": 6,
+        "global_P3_O_eigenvalue": "3/7-1/7*sqrt(2)",
+        "global_Pminus4_O_eigenvalue": "4/7+1/7*sqrt(2)",
+        "space": "F_from_support_+sqrt(2)"
+      },
+      {
+        "D": "-1+sqrt(2)",
+        "E": "0",
+        "E_3": "0",
+        "E_minus_4": "0",
+        "K": "0",
+        "L": "-1+sqrt(2)",
+        "P_B": "0",
+        "P_F": "1",
+        "R": "0",
+        "T": "10+sqrt(2)",
+        "dimension": 6,
+        "global_P3_O_eigenvalue": "3/7+1/7*sqrt(2)",
+        "global_Pminus4_O_eigenvalue": "4/7-1/7*sqrt(2)",
+        "space": "F_from_support_-sqrt(2)"
+      },
+      {
+        "D": "-1",
+        "E": "0",
+        "E_3": "0",
+        "E_minus_4": "0",
+        "K": "0",
+        "L": "-1",
+        "P_B": "1",
+        "P_F": "0",
+        "R": "12",
+        "T": "0",
+        "dimension": 14,
+        "global_P3_O_eigenvalue": "3/7",
+        "global_Pminus4_O_eigenvalue": "4/7",
+        "space": "B_centered"
+      },
+      {
+        "D": "3",
+        "E": "1",
+        "E_3": "1",
+        "E_minus_4": "0",
+        "K": "3",
+        "L": "0",
+        "P_B": "0",
+        "P_F": "0",
+        "R": "0",
+        "T": "0",
+        "dimension": 27,
+        "global_P3_O_eigenvalue": "1",
+        "global_Pminus4_O_eigenvalue": "0",
+        "space": "W_D_eigenvalue_3"
+      },
+      {
+        "D": "-4",
+        "E": "1",
+        "E_3": "0",
+        "E_minus_4": "1",
+        "K": "-4",
+        "L": "0",
+        "P_B": "0",
+        "P_F": "0",
+        "R": "0",
+        "T": "0",
+        "dimension": 16,
+        "global_P3_O_eigenvalue": "0",
+        "global_Pminus4_O_eigenvalue": "1",
+        "space": "W_D_eigenvalue_-4"
+      }
+    ],
+    "trace_K": "17"
+  }
+}

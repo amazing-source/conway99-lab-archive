@@ -1,0 +1,697 @@
+{
+  "Skoruppa_main_theorem": {
+    "conclusion": "theta_L is coefficientwise congruent mod 7 to an integral level-one modular form of weight e(L)/2=154-3q",
+    "hypotheses_checked": {
+      "integral_theta_coefficients": true,
+      "level_is_prime_power": true,
+      "positive_definite_even_integral": true,
+      "prime_at_least_5": true
+    },
+    "normalization": "theta_L=sum_x q^((x,x)/2); e(L) is the sum, not the valuation sum, of the Gram elementary divisors",
+    "primary_source": "Nils-Peter Skoruppa, Reduction mod l of Theta Series of Level l^n, arXiv:0807.4694v1, Main Theorem",
+    "source_url": "https://arxiv.org/abs/0807.4694"
+  },
+  "claim_label": "VERIFIED",
+  "conditional_scope": "hypothetical srg(99,14,1,2)",
+  "format": "wave71-independent-verifier-v1",
+  "lattice_transfer": {
+    "dual_scaled_lattice": {
+      "definition": "K=sqrt(7) L*",
+      "even_integral": true,
+      "exact_level": 7,
+      "minimum_at_least": 14,
+      "rank": 44
+    },
+    "index_three_even_overlattice": {
+      "definition": "L=M+Z(3u_0), so L/M=H",
+      "discriminant": "(Z/7)^q",
+      "exact_level": 7,
+      "index": 3,
+      "marked_frame": {
+        "adjacent_inner_product": -8,
+        "frame_operator": "63I",
+        "nonadjacent_inner_product": 1,
+        "norm": 28,
+        "sum": 0,
+        "vectors": "3u_i, i=0,...,98"
+      },
+      "minimum_at_least": 2,
+      "rank": 44
+    },
+    "marked_class_exact_values": {
+      "H": "<3 alpha>",
+      "H_perp_inside_Z9": "H",
+      "alpha": "[u_i]",
+      "bilinear_self_value_mod_Z": "1/9",
+      "order": 9,
+      "quadratic_value_mod_Z": "5/9"
+    },
+    "marked_three_primary_class": "all u_i have one class alpha in M*/M; q(alpha)=14/9=5/9 mod Z and b(alpha,alpha)=28/9=1/9 mod Z, so alpha has order nine and generates the Z/9 factor; H=<3 alpha> is isotropic",
+    "rows": [
+      {
+        "K_smith_count_1_7": [
+          2,
+          42
+        ],
+        "L_smith_count_1_7": [
+          42,
+          2
+        ],
+        "Skoruppa_level_one_weight": 148,
+        "elementary_divisor_sum": 296,
+        "q": 2,
+        "r": 42
+      },
+      {
+        "K_smith_count_1_7": [
+          4,
+          40
+        ],
+        "L_smith_count_1_7": [
+          40,
+          4
+        ],
+        "Skoruppa_level_one_weight": 142,
+        "elementary_divisor_sum": 284,
+        "q": 4,
+        "r": 40
+      },
+      {
+        "K_smith_count_1_7": [
+          6,
+          38
+        ],
+        "L_smith_count_1_7": [
+          38,
+          6
+        ],
+        "Skoruppa_level_one_weight": 136,
+        "elementary_divisor_sum": 272,
+        "q": 6,
+        "r": 38
+      },
+      {
+        "K_smith_count_1_7": [
+          8,
+          36
+        ],
+        "L_smith_count_1_7": [
+          36,
+          8
+        ],
+        "Skoruppa_level_one_weight": 130,
+        "elementary_divisor_sum": 260,
+        "q": 8,
+        "r": 36
+      },
+      {
+        "K_smith_count_1_7": [
+          10,
+          34
+        ],
+        "L_smith_count_1_7": [
+          34,
+          10
+        ],
+        "Skoruppa_level_one_weight": 124,
+        "elementary_divisor_sum": 248,
+        "q": 10,
+        "r": 34
+      },
+      {
+        "K_smith_count_1_7": [
+          12,
+          32
+        ],
+        "L_smith_count_1_7": [
+          32,
+          12
+        ],
+        "Skoruppa_level_one_weight": 118,
+        "elementary_divisor_sum": 236,
+        "q": 12,
+        "r": 32
+      },
+      {
+        "K_smith_count_1_7": [
+          14,
+          30
+        ],
+        "L_smith_count_1_7": [
+          30,
+          14
+        ],
+        "Skoruppa_level_one_weight": 112,
+        "elementary_divisor_sum": 224,
+        "q": 14,
+        "r": 30
+      },
+      {
+        "K_smith_count_1_7": [
+          16,
+          28
+        ],
+        "L_smith_count_1_7": [
+          28,
+          16
+        ],
+        "Skoruppa_level_one_weight": 106,
+        "elementary_divisor_sum": 212,
+        "q": 16,
+        "r": 28
+      }
+    ],
+    "wave66_import": {
+      "M_discriminant": "Z/9 direct_sum (Z/7)^q",
+      "min_Mdual_at_least": 2,
+      "q_values": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "rank": 44
+    }
+  },
+  "level_one_mod_7": {
+    "no_relation_through_q9_for_q2_to_q14": true,
+    "q16_consequence": "at least one integer -4 eigenvector of squared norm 14, 16, or 18 exists",
+    "q16_relation_mod_14": "N14+N16+N18=2 mod 14",
+    "q16_relation_mod_7": "N14+N16+N18=2 mod 7",
+    "q2_to_q14_stronger_bound": "min(K)<=28",
+    "rows": [
+      {
+        "affine_dimension_after_q0_to_q6": 6,
+        "constraint_rank": 7,
+        "forced_next_coefficient_mod_7": 6,
+        "forced_upper_bound_on_min_K": 28,
+        "integral_basis_dimension": 13,
+        "longest_initial_zero_run": 13,
+        "next_zero_inconsistent": true,
+        "q": 2,
+        "relations_on_coefficients_q7_q8_q9": [],
+        "weight": 148
+      },
+      {
+        "affine_dimension_after_q0_to_q6": 5,
+        "constraint_rank": 7,
+        "forced_next_coefficient_mod_7": 6,
+        "forced_upper_bound_on_min_K": 28,
+        "integral_basis_dimension": 12,
+        "longest_initial_zero_run": 13,
+        "next_zero_inconsistent": true,
+        "q": 4,
+        "relations_on_coefficients_q7_q8_q9": [],
+        "weight": 142
+      },
+      {
+        "affine_dimension_after_q0_to_q6": 5,
+        "constraint_rank": 7,
+        "forced_next_coefficient_mod_7": 6,
+        "forced_upper_bound_on_min_K": 28,
+        "integral_basis_dimension": 12,
+        "longest_initial_zero_run": 13,
+        "next_zero_inconsistent": true,
+        "q": 6,
+        "relations_on_coefficients_q7_q8_q9": [],
+        "weight": 136
+      },
+      {
+        "affine_dimension_after_q0_to_q6": 4,
+        "constraint_rank": 7,
+        "forced_next_coefficient_mod_7": 6,
+        "forced_upper_bound_on_min_K": 28,
+        "integral_basis_dimension": 11,
+        "longest_initial_zero_run": 13,
+        "next_zero_inconsistent": true,
+        "q": 8,
+        "relations_on_coefficients_q7_q8_q9": [],
+        "weight": 130
+      },
+      {
+        "affine_dimension_after_q0_to_q6": 4,
+        "constraint_rank": 7,
+        "forced_next_coefficient_mod_7": 6,
+        "forced_upper_bound_on_min_K": 28,
+        "integral_basis_dimension": 11,
+        "longest_initial_zero_run": 13,
+        "next_zero_inconsistent": true,
+        "q": 10,
+        "relations_on_coefficients_q7_q8_q9": [],
+        "weight": 124
+      },
+      {
+        "affine_dimension_after_q0_to_q6": 3,
+        "constraint_rank": 7,
+        "forced_next_coefficient_mod_7": 6,
+        "forced_upper_bound_on_min_K": 28,
+        "integral_basis_dimension": 10,
+        "longest_initial_zero_run": 13,
+        "next_zero_inconsistent": true,
+        "q": 12,
+        "relations_on_coefficients_q7_q8_q9": [],
+        "weight": 118
+      },
+      {
+        "affine_dimension_after_q0_to_q6": 3,
+        "constraint_rank": 7,
+        "forced_next_coefficient_mod_7": 6,
+        "forced_upper_bound_on_min_K": 28,
+        "integral_basis_dimension": 10,
+        "longest_initial_zero_run": 13,
+        "next_zero_inconsistent": true,
+        "q": 14,
+        "relations_on_coefficients_q7_q8_q9": [],
+        "weight": 112
+      },
+      {
+        "affine_dimension_after_q0_to_q6": 2,
+        "constraint_rank": 7,
+        "forced_next_coefficient_mod_7": 2,
+        "forced_upper_bound_on_min_K": 18,
+        "integral_basis_dimension": 9,
+        "longest_initial_zero_run": 8,
+        "next_zero_inconsistent": true,
+        "q": 16,
+        "relations_on_coefficients_q7_q8_q9": [
+          {
+            "coefficients": [
+              1,
+              1,
+              1
+            ],
+            "constant": 2
+          }
+        ],
+        "weight": 106
+      }
+    ],
+    "theta_initial_shape": "1+0q+...+0q^6+N14 q^7+N16 q^8+N18 q^9+..."
+  },
+  "low_norm_analysis": {
+    "aggregate_cases": [
+      {
+        "aggregate_edge_totals": [],
+        "norm": 14,
+        "profile_abs1_abs2_abs3_abs4": [
+          10,
+          1,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 4,
+          "-2": 1,
+          "1": 6
+        },
+        "spectral_edge_bound": 23,
+        "support_size": 11
+      },
+      {
+        "aggregate_edge_totals": [
+          28
+        ],
+        "norm": 14,
+        "profile_abs1_abs2_abs3_abs4": [
+          14,
+          0,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 7,
+          "1": 7
+        },
+        "spectral_edge_bound": 31,
+        "support_size": 14
+      },
+      {
+        "aggregate_edge_totals": [],
+        "norm": 16,
+        "profile_abs1_abs2_abs3_abs4": [
+          7,
+          0,
+          1,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 2,
+          "-3": 1,
+          "1": 5
+        },
+        "spectral_edge_bound": 15,
+        "support_size": 8
+      },
+      {
+        "aggregate_edge_totals": [],
+        "norm": 16,
+        "profile_abs1_abs2_abs3_abs4": [
+          8,
+          2,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 4,
+          "-2": 1,
+          "1": 4,
+          "2": 1
+        },
+        "spectral_edge_bound": 20,
+        "support_size": 10
+      },
+      {
+        "aggregate_edge_totals": [],
+        "norm": 16,
+        "profile_abs1_abs2_abs3_abs4": [
+          8,
+          2,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 2,
+          "-2": 2,
+          "1": 6
+        },
+        "spectral_edge_bound": 20,
+        "support_size": 10
+      },
+      {
+        "aggregate_edge_totals": [],
+        "norm": 16,
+        "profile_abs1_abs2_abs3_abs4": [
+          12,
+          1,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 5,
+          "-2": 1,
+          "1": 7
+        },
+        "spectral_edge_bound": 28,
+        "support_size": 13
+      },
+      {
+        "aggregate_edge_totals": [
+          32,
+          36
+        ],
+        "norm": 16,
+        "profile_abs1_abs2_abs3_abs4": [
+          16,
+          0,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 8,
+          "1": 8
+        },
+        "spectral_edge_bound": 38,
+        "support_size": 16
+      },
+      {
+        "aggregate_edge_totals": [],
+        "norm": 18,
+        "profile_abs1_abs2_abs3_abs4": [
+          9,
+          0,
+          1,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 3,
+          "-3": 1,
+          "1": 6
+        },
+        "spectral_edge_bound": 20,
+        "support_size": 10
+      },
+      {
+        "aggregate_edge_totals": [],
+        "norm": 18,
+        "profile_abs1_abs2_abs3_abs4": [
+          10,
+          2,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 5,
+          "-2": 1,
+          "1": 5,
+          "2": 1
+        },
+        "spectral_edge_bound": 26,
+        "support_size": 12
+      },
+      {
+        "aggregate_edge_totals": [],
+        "norm": 18,
+        "profile_abs1_abs2_abs3_abs4": [
+          10,
+          2,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 3,
+          "-2": 2,
+          "1": 7
+        },
+        "spectral_edge_bound": 26,
+        "support_size": 12
+      },
+      {
+        "aggregate_edge_totals": [],
+        "norm": 18,
+        "profile_abs1_abs2_abs3_abs4": [
+          14,
+          1,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 6,
+          "-2": 1,
+          "1": 8
+        },
+        "spectral_edge_bound": 35,
+        "support_size": 15
+      },
+      {
+        "aggregate_edge_totals": [
+          36,
+          40,
+          44
+        ],
+        "norm": 18,
+        "profile_abs1_abs2_abs3_abs4": [
+          18,
+          0,
+          0,
+          0
+        ],
+        "signed_value_counts": {
+          "-1": 9,
+          "1": 9
+        },
+        "spectral_edge_bound": 45,
+        "support_size": 18
+      }
+    ],
+    "all_mixed_magnitude_profiles_eliminated": true,
+    "odd_support_import": "the odd support is a nonzero ker_F2(A) word and therefore has size at least 8",
+    "profiles": {
+      "14": [
+        [
+          10,
+          1,
+          0,
+          0
+        ],
+        [
+          14,
+          0,
+          0,
+          0
+        ]
+      ],
+      "16": [
+        [
+          7,
+          0,
+          1,
+          0
+        ],
+        [
+          8,
+          2,
+          0,
+          0
+        ],
+        [
+          12,
+          1,
+          0,
+          0
+        ],
+        [
+          16,
+          0,
+          0,
+          0
+        ]
+      ],
+      "18": [
+        [
+          9,
+          0,
+          1,
+          0
+        ],
+        [
+          10,
+          2,
+          0,
+          0
+        ],
+        [
+          14,
+          1,
+          0,
+          0
+        ],
+        [
+          18,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "remaining_signed_supports": {
+      "norm14": {
+        "external_design": {
+          "block_count": 70,
+          "derivation": "the 15 degree-zero-to-support vertices are independent; their 70 external neighborhoods have sum c=210 and sum C(c,2)=210, so equality in Cauchy forces every block size c=3",
+          "independent_point_set_size": 15,
+          "parameters": "2-(15,3,2)"
+        },
+        "induced_graph": "4-regular bipartite",
+        "outside_degree_moments": {
+          "distribution_d0_to_d7": [
+            15,
+            70,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sum_choose_d_2": 0,
+          "sum_d": 70,
+          "vertices": 85
+        },
+        "sign_class_sizes": [
+          7,
+          7
+        ],
+        "stronger_structure": "the incidence graph of the complementary Fano 2-(7,4,2) design"
+      },
+      "norm16": {
+        "induced_graph": "4-regular bipartite",
+        "outside_degree_moments": {
+          "possible_distributions_d0_to_d7": [
+            [
+              11,
+              64,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10,
+              67,
+              5,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9,
+              70,
+              2,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              72,
+              2,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "sum_choose_d_2": 8,
+          "sum_d": 80,
+          "vertices": 83
+        },
+        "same_sign_edge_case_a1": "impossible: its adjacent endpoints each have five neighbors in an opposite class of size eight, giving at least two common neighbors against lambda=1",
+        "sign_class_sizes": [
+          8,
+          8
+        ]
+      },
+      "norm18": {
+        "case_a0": "4-regular bipartite",
+        "case_a1": "one same-sign edge in each class; its four endpoints have cross-degree five and the other vertices have cross-degree four; each same-sign edge has exactly one common neighbor in the opposite class",
+        "case_a2": "impossible: lambda=1 makes both two-edge same-sign graphs matchings; opposite-class codegrees then saturate every same-class pair, but 82 outside incidences cannot fit into 81 vertices at degree at most one",
+        "sign_class_sizes": [
+          9,
+          9
+        ],
+        "surviving_h": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "role": "verifier",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "graph": "UNKNOWN",
+    "new_conditional_fact": "q=16 (equivalently r=28) forces one of the classified small signed-support configurations",
+    "novelty": "UNKNOWN",
+    "q16_excluded": false,
+    "recorded_correction": "discovery leaves norm-18 h=2 alive; the verifier's exact outside-incidence count excludes it, so only h=0 or h=1 remain at norm 18"
+  },
+  "vector_bijection": {
+    "Ldual_condition": "the marked Z/9 coordinate lies in H, hence 3|b",
+    "bijection": "vectors of norm 14,16,18 in K=sqrt(7)L* correspond bijectively to integer vectors n with (A+4I)n=0 and squared norm 14,16,18, respectively",
+    "coordinate_model": "for y in M*, t_i=<y,u_i>=n_i+b/9, sum(n_i)=-11b, and (A+4I)n=-(2b)1",
+    "fractional_cosets": "the nonintegral possibilities b=3,6 have unconstrained frame energy 22 and cannot occur at energy 14,16,18",
+    "theta_coefficients": "N14,N16,N18 count those integer -4 eigenvectors and are even under n -> -n"
+  },
+  "verdict": "VERIFIED_WITH_CORRECTION"
+}

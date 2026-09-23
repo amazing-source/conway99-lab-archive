@@ -1,0 +1,122 @@
+{
+  "branch": {
+    "assumption": {
+      "value": true,
+      "variable": 187
+    },
+    "assumption_edge": {
+      "residual_indices": [
+        2,
+        24
+      ],
+      "residual_labels": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "complementary_open_shard": {
+      "value": false,
+      "variable": 187
+    },
+    "parent_branch": 4,
+    "refined_branch": 15
+  },
+  "claim_label": "CANDIDATE",
+  "coverage": {
+    "closed_endpoint_cases": 0,
+    "closed_shard": "branch15 AND x187=1",
+    "closed_shards": 1,
+    "exhaustive_polarity_shards": 2,
+    "open_shard": "branch15 AND x187=0",
+    "total_endpoint_cases": 33
+  },
+  "format": "wave39-generalized-unit-shard-certificate-v1",
+  "limitations": [
+    "This closes only one polarity shard inside refined branch 15.",
+    "It does not close refined branch 15 or any complete endpoint case.",
+    "The complete endpoint proof coverage therefore remains 0/33 cases.",
+    "The source formula has only the six fixed-triangle prism families.",
+    "The proof uses an independently replayable project-local rule, not VeriPB or CakePB.",
+    "Independent verification is required before promotion to VERIFIED.",
+    "No graph, endpoint exclusion, upper-bound improvement, or novelty claim follows."
+  ],
+  "logical_summary": {
+    "common_neighbor_capacity": "line 571132 and x2=1 force x3591=0",
+    "entailed_primary_literal": "x187=0",
+    "normalized_edge_unit": "x24=1",
+    "refinement_edge_unit": "x2=1",
+    "wedge_clause": "line 106, x24=1, x187=1, and x3591=0 are inconsistent"
+  },
+  "role": "construction",
+  "scope": "refined endpoint branch 15 conjoined with the primary-edge assumption x187=1",
+  "source": {
+    "constraints": 574615,
+    "gzip_bytes": 3854306,
+    "gzip_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+    "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb.gz",
+    "raw_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5",
+    "variables": 289338
+  },
+  "source_constraints": {
+    "106": {
+      "bound": 1,
+      "line": 106,
+      "sha256": "44049502a153bf887442f3067499639de4544b36ba6d58318645441265ce5275",
+      "term_count": 3
+    },
+    "285938": {
+      "bound": 1,
+      "line": 285938,
+      "sha256": "a8edda1c3f3a2fb5d34444d26c7680557a9dd045af842502e7fe90e291bb5bbb",
+      "term_count": 1
+    },
+    "286004": {
+      "bound": 1,
+      "line": 286004,
+      "sha256": "dbe041511085ba55c17be80495ef443dbbe3d3eee2ce42e1f07865d8041d7da5",
+      "term_count": 1
+    },
+    "571132": {
+      "bound": 82,
+      "line": 571132,
+      "sha256": "0db0c61940a3ef462ced39caad9363d53dd78ca4b4638712fd405d966aa93903",
+      "term_count": 83
+    }
+  },
+  "trace": [
+    {
+      "derive": {
+        "value": true,
+        "variable": 24
+      },
+      "rule": "generalized_unit",
+      "source_line": 285938
+    },
+    {
+      "derive": {
+        "value": true,
+        "variable": 2
+      },
+      "rule": "generalized_unit",
+      "source_line": 286004
+    },
+    {
+      "derive": {
+        "value": false,
+        "variable": 3591
+      },
+      "rule": "generalized_unit",
+      "source_line": 571132
+    },
+    {
+      "rule": "contradiction",
+      "source_line": 106
+    }
+  ]
+}

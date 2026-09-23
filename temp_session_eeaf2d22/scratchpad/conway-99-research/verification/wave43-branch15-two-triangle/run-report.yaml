@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-27T16:15:48Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: VERIFIED
+scope: >-
+  Complete two-coordinate-triangle prism-cut family and 64 bounded polarity
+  probes in frozen branch 15, conditional on n3=4158.
+inputs:
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz
+    sha256: 0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e
+  - path: attempts/wave42-endpoint-certificate/branch-15-combined-propagation-certificate.json
+    sha256: ab05feb596c25d0fbb872a0d92978355638218350bdf7606c248ca98ae2469ce
+method: >-
+  Independent streamed OPB parser and generalized-unit replay; direct rooted
+  scaffold reconstruction; exhaustive pair/matching enumeration; exact
+  normalized-clause comparison; simultaneous independent replay of both
+  polarities for the selected 32 controllers.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave43-branch15-two-triangle\independent_check.py --verify
+  verification\wave43-branch15-two-triangle\independent-results.json
+outputs:
+  - path: verification/wave43-branch15-two-triangle/independent-results.json
+    sha256: 564a8b390b083b0f69361506933c67a566245b3961eec8e2e0649724235be7bc
+limitations:
+  - Completeness covers only coordinate-anchored triangles unfixed at the frozen closure.
+  - Non-coordinate-anchored triangles remain omitted.
+  - A propagation fixed point is not a SAT witness or UNSAT certificate.
+  - Branch 15, all endpoint cases, and Conway-99 remain UNKNOWN.
+result:
+  raw_cuts: 40800
+  active_cuts: 34340
+  probe_count: 64
+  failed_polarities: 0
+  endpoint_cases_closed: 0
+  endpoint_cases_total: 33

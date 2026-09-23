@@ -1,0 +1,37 @@
+role: construction
+date_utc: 2026-07-28T13:44:00Z
+git_commit: 81f1c18c1bb34f487c3e938fb12386ef928e5b7f
+claim_label: CANDIDATE
+scope: >-
+  Exact rational feasibility of the n3=4158 pair-root-zero-face count
+  relaxation after all thirteen retained Wave152 cuts plus fresh exact
+  root-mask-3 and root-mask-12 four-root covariance cuts; followed by
+  reevaluation of all nine four-root blocks on the resulting pseudowitness.
+inputs: >-
+  input-freeze.sha256 and wave152-before.sha256 contain paths and SHA256
+  hashes; the retained cut sequence is 2+2+1+3+1+3+1+2 = 15 cuts.
+method: >-
+  Freeze Wave152; derive two exact covariance cuts from its thirteen-cut
+  witness; scout the fifteen-cut zero face with tight-tolerance HiGHS;
+  reconstruct and replay an exact rational witness; reevaluate all four-root
+  blocks; run a lightweight exact replay and unit tests.
+command: >-
+  See README.md reproduction commands. Heavy commands used the frozen
+  build_exact_cuts.py, cut_feasibility_scout.py,
+  reconstruct_cut_witness.py, and evaluate_exact_witness.py with
+  PYTHONDONTWRITEBYTECODE=1. The reconstruction active hashes were
+  68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240,
+  93c3dcebda9332946cf3391812a4d1f466f7cacc6da4246bc9d625a66879f113,
+  and 8fc952768230bd900febf656bddfa9dd6b4d4c89b5190e0b74e01e55639f525b.
+outputs: >-
+  package-manifest.sha256 contains paths and SHA256 hashes for the sealed
+  Wave159 package. The exact witness has support 204/887, passes 10313 total
+  and 10274 restricted rows, has rank 887/887, and satisfies all 15 cuts.
+  The four-root evaluation has exact negative certificates at roots 3 and 12.
+limitations: >-
+  Same-lane discovery and replay are not independent verification. The
+  pseudowitness is not a graph. HiGHS is diagnostic. Seven blocks lack a
+  negative certificate but are not thereby proved PSD. The inherited witness
+  metadata saying after two cuts is stale. Endpoint n3=4158, a strict upper
+  bound, and Conway-99 remain UNKNOWN. No symmetry or graph automorphism was
+  assumed. No seventeenth-cut solve was attempted.

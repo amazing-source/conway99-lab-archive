@@ -1,0 +1,73 @@
+role: verifier
+date_utc: 2026-07-23T16:27:08Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: DERIVED
+audit_verdict: PASS_WITH_NONBLOCKING_DOCUMENTATION_DEFECT
+scope: >
+  Fresh adversarial audit of the conditional Wave 20 global Schur-projector
+  claim that any putative srg(99,14,1,2) has n3>=705 and therefore at least
+  209991 induced six-cycles.
+inputs:
+  - {path: agents/2026-07-23-wave20-global-schur.md, sha256: 64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632}
+  - {path: attempts/wave20-global-obstruction/exact_check.py, sha256: a3cbe6dfe018965043903c368932f89f9fade30cf301ffe3454cd638966d00c8}
+  - {path: attempts/wave20-global-obstruction/test_exact_check.py, sha256: 597781a740dcc621c448ed7ffaa194e2ed5e004d210630777db8449a8d877231}
+  - {path: attempts/wave20-global-obstruction/exact-checks.json, sha256: 6aea5c4688880a33d358ccc8992ef3aa63d40be70b5c450a8a39bf83b4878dc2}
+  - {path: attempts/wave20-global-obstruction/failed-routes.md, sha256: 23355b845f17dac5b4ef260544d1664c8943999634ee8d02f63d5a6b0ef048b2}
+  - {path: attempts/wave20-global-obstruction/failed-runs.md, sha256: 7ff19bf3dfb9e144447cbd1021165f463b15c8e2c640c0f08110cd705008e610}
+  - {path: attempts/wave20-global-obstruction/run-report.yaml, sha256: 89f9ac63eae81913068b8391eaeb8559b2b5e2b8ce989402946079dffeb7eef2}
+  - {path: CONJECTURE.md, sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58}
+  - {path: STRUCTURE.md, sha256: 7dff67ec4b8796049ed5603b3733d3f4442a1fe607d258f45b835b8a1d7dad5c}
+method: >
+  Candidate-byte freeze before inspection; independent derivation from
+  frozen public premises; separately authored exact checker and tests;
+  hostile mutations of projector scaling, intersecting zeros, ordered-pair
+  scaling, alternating-form diagonal, and Delta=3/6/9; submitted-code replay
+  and byte-identical deterministic JSON regeneration.
+command: |
+  cd attempts/wave20-global-obstruction/independent-verifier
+  python -B independent_check.py --output independent-results.json
+  python -B -m unittest -v test_independent_check.py
+  cd ..
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output independent-verifier/submitted-regenerated.json
+outputs:
+  - {path: verification/2026-07-23-wave20-global-schur-audit.md, sha256: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/preinspection-baseline.yaml, sha256: db6211c9ce36113f8160c41b5d534b2ab201cbe3fb1df4172fc48faaba7d95fb}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/public-premise-freeze.yaml, sha256: 9ccd6651cf96c155ecf970d5d5c77876ce6a114eec0a757bf95ad24c0b49c6fa}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/independent-reconstruction.md, sha256: 175f9cee0ad254130810e3c3951ffea77913239728d7b8d7faa5cde0e395defc}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/independent_check.py, sha256: efd00777b38fc180c11434cb452111ae7745109844d68aba763460b219208cfc}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/test_independent_check.py, sha256: 3aeb71a4ce6563a8a189770cdb4a3773ae7355ec0325824d0d78a618fdfb9bd0}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/independent-results.json, sha256: 575939f9abe19e5578a2efd1155495877c2080944c75cc0db6702c21a9ce2637}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/precomparison-freeze.yaml, sha256: 5f5dc5ebe00c071653f459c2b74946df4f74156dd6573d781629753bcb10be17}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/failed-runs.md, sha256: f82a4821c9fcc297659f13a2f64a8a456f5c97c374ef065471c5c10e1af31437}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/audit-results.json, sha256: 9b24e8f521f0e076c2f55e38c6455d0c6ad6bfbc31e315aef0f044c87ebfc608}
+  - {path: attempts/wave20-global-obstruction/independent-verifier/submitted-regenerated.json, sha256: 6aea5c4688880a33d358ccc8992ef3aa63d40be70b5c450a8a39bf83b4878dc2}
+execution:
+  independent_checker: PASS
+  independent_tests: 16/16_PASS
+  required_hostile_mutations: ALL_DETECTED
+  submitted_tests: 18/18_PASS
+  submitted_JSON_regeneration: PASS_BYTE_IDENTICAL
+  conditional_n3_lower_bound: 705
+  conditional_induced_C6_lower_bound: 209991
+  conway_99: UNKNOWN
+  novelty: UNKNOWN_OUT_OF_SCOPE
+documentation_defect:
+  status: FAIL_NONBLOCKING
+  path: attempts/wave20-global-obstruction/failed-routes.md
+  detail: introductory n3>=699 is stale; operative endpoint is 705
+model_settings:
+  surfaced_identity: Codex agent based on GPT-5
+  exact_deployment_model: NOT_EXPOSED
+  reasoning_effort: NOT_EXPOSED
+  service_tier: NOT_EXPOSED
+  subagent_configuration: inherited from parent without surfaced override
+runtime:
+  python: 3.13.14
+  powershell: 5.1.26100.8875
+  os: Microsoft Windows NT 10.0.26200.0
+limitations:
+  - Conditional necessary bound only; no target construction or nonexistence proof.
+  - Human semantic proof is primary; exact scripts are arithmetic accompaniments.
+  - Submitted git_commit was not checked because the task explicitly prohibited Git.
+  - Novelty and literature status are out of scope and remain UNKNOWN.

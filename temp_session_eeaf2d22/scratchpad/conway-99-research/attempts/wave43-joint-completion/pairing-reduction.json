@@ -1,0 +1,61 @@
+{
+  "bounded_search_boundary": {
+    "classification": "UNKNOWN",
+    "note": "Bounded solver runs are diagnostics only and are summarized in failed-routes.md; they are not nonexistence evidence.",
+    "terminal_model_or_checked_unsat_proof": false
+  },
+  "candidate_enumeration": {
+    "filter_census": [
+      216000,
+      118718,
+      49736,
+      45032
+    ],
+    "retained_candidate_sha256": "f796334943793224fb28bc0bcfc40d427bf56892c16386887ca7866a3b9ac963"
+  },
+  "canonical_sequential_counter_cnf": {
+    "cnf_clauses": 338528,
+    "cnf_variables_including_auxiliary": 82532,
+    "cross_cell_upper_bound_constraints": 412,
+    "illegal_triple_binary_clauses": 96408,
+    "legal_triple_ternary_clauses": 45032,
+    "pairing_variables_01": 2881,
+    "pairing_variables_02": 2881,
+    "pairing_variables_12": 2694,
+    "perfect_matching_exactly_one_constraints": 360,
+    "semantic_pairing_variables": 8456,
+    "variable_numbering_seed": 0
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "equivalence_argument": [
+    "A full B selects sixty legal triples and therefore projects to three perfect matchings satisfying all encoded clauses.",
+    "Conversely, the selected 01 and 02 perfect matchings give one triple for every fibre-0 pair. Illegal triples are forbidden and each legal triple forces its 12 edge.",
+    "The sixty induced 12 edges are distinct because the 01 and 02 relations are bijections. The independently exact-one 12 matching contains sixty edges, so it equals the induced relation and the three matchings define exactly sixty legal six-sets.",
+    "Each cross-fibre matching contributes 240 point-pair incidences. The sum of its Gram-cell upper bounds is also 240, so every upper bound is attained and all 432 concurrence entries, including zeros excluded by support, have their exact target."
+  ],
+  "format": "wave43-joint-pairing-reduction-v1",
+  "input": {
+    "canonical_core_edges_sha256": "b0a9e7cc75d933597d43c9395e0192268b71ad88b93120a82dc662e64585b664",
+    "canonical_mask": 51739,
+    "verification/wave41-allquotient-lifts/independent-results.json": "062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b"
+  },
+  "pairing_projection": {
+    "pairing_combo_counts_01_02_12": [
+      2881,
+      2881,
+      2694
+    ],
+    "pairing_combo_sha256": {
+      "01": "32bd0f807284ab35043090c24b9d2b355254985ee7f8daee6450f94a0ed4371b",
+      "02": "9cfdaf06a75cb325c3aba17fe99aa51ca72283182f5ff81886f842c3892c6e4a",
+      "12": "6d6f4aab27cfc1da1d2f155b0b046e2f55db99a427ad460152c24e5eb49ded30"
+    }
+  },
+  "scope": "Conditional on n3=4158, rank_F3(M)=12, every edge having local type 2+2+2, and occurrence of the canonical rank-33 mask-51739 core. No automorphism is assumed.",
+  "status_wall": {
+    "compatible_H": "NOT_CONSTRUCTED_OR_EXCLUDED",
+    "conway_99_resolved": false,
+    "endpoint_excluded": false,
+    "full_B": "NOT_CONSTRUCTED_OR_EXCLUDED"
+  }
+}

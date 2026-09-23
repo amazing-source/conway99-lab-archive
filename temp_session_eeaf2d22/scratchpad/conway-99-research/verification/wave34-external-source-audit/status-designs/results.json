@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "audit_id": "wave34-external-source-audit-status-designs",
+  "role": "verifier",
+  "date_utc": "2026-07-24",
+  "access_window_utc": {
+    "start": "2026-07-24T21:32:48.487Z",
+    "end": "2026-07-24T21:32:53.154Z"
+  },
+  "immediate_recheck": {
+    "start_utc": "2026-07-24T21:39:46.576Z",
+    "end_utc": "2026-07-24T21:39:51.753Z",
+    "command": "powershell -File verification/wave34-external-source-audit/status-designs/recheck_live_sources.ps1 -CompareRecorded",
+    "resources_checked": 8,
+    "http_200_count": 8,
+    "byte_length_matches": 8,
+    "sha256_matches": 8,
+    "folder1_matrix_links": 146,
+    "folder2_matrix_links": 590
+  },
+  "claim_label": "CITED",
+  "scope": [
+    "Current maintained-table status of strongly regular graph parameters (99,14,1,2).",
+    "Exact wording and context of Brendan McKay's approximate 2-(15,3,2) design count.",
+    "Exact scope and restriction of the University of Rijeka downloadable design corpus."
+  ],
+  "method": {
+    "description": "The verifier compared the local Wave 34 discovery wording with direct maintained, author, publisher, and institutional sources. Each remote resource was fetched into memory, its returned response-body bytes were counted and SHA-256 hashed, and only relevant text or index structure was inspected. No remote PDF, archive, matrix, or HTML response was saved in the workspace.",
+    "directory_count_method": "The two Rijeka directory-index response bodies were searched for exact numbered matrix-link patterns. Folder 1 matched D1.MAT through D146.MAT with no gaps or duplicates; Folder 2 matched d1.mat through d590.mat with no gaps or duplicates.",
+    "independence_boundary": "This audit did not rely on the discovery agent's interpretation as evidence; the discovery files were used only to freeze the claims being tested."
+  },
+  "local_claim_inputs": [
+    {
+      "path": "attempts/wave34-current-literature/source-ledger.json",
+      "bytes": 5438,
+      "sha256": "5fa6f75abcfc8d3033c9715f3977722e99fcb238ca1b74d2db255e759a58b100",
+      "relevant_records": [
+        "S01",
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "path": "attempts/wave34-current-literature/audit.md",
+      "bytes": 5327,
+      "sha256": "1be6c6904314763031968c47dde8b4187caf1118ca4c2a1c9cf5f93d9496abc3",
+      "relevant_sections": [
+        "Design-domain scale and a restricted corpus",
+        "Current-status boundary"
+      ]
+    },
+    {
+      "path": "agents/2026-07-24-wave34-current-literature.md",
+      "bytes": 4606,
+      "sha256": "b470c62d657686779f22154872e19d7db002f1abde1bc173ae747f9e2ad86b95",
+      "relevant_lines": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ]
+    }
+  ],
+  "remote_resources": [
+    {
+      "id": "B01",
+      "owner": "Andries E. Brouwer",
+      "title": "Parameters of Strongly Regular Graphs",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab.html",
+      "source_role": "maintained table key and index",
+      "accessed_at_utc": "2026-07-24T21:32:48.487Z",
+      "http_status": 200,
+      "response_body_bytes": 2388,
+      "response_body_sha256": "a69348ace958a14d7541e69db8d6c8b6186eec0eb7ab883bd518a66acf9ec13c",
+      "content_type": "text/html",
+      "last_modified": "Mon, 27 Jan 2025 03:20:11 GMT",
+      "etag": "W/\"954-62ca78dd570c0\"",
+      "locator": "Opening column description under 'The columns are'",
+      "observed_text": "The first column is 'existence'; the next four columns are v, k, lambda, and mu.",
+      "content_saved_locally": false
+    },
+    {
+      "id": "B02",
+      "owner": "Andries E. Brouwer",
+      "title": "Strongly regular graphs: parameters 51-100",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+      "source_role": "current maintained parameter row",
+      "accessed_at_utc": "2026-07-24T21:32:49.189Z",
+      "http_status": 200,
+      "response_body_bytes": 24003,
+      "response_body_sha256": "db88468cc47bb5aa9108d488596557de3a68ec80dcf5f7ffea9f2e16d3f60f89",
+      "content_type": "text/html",
+      "last_modified": "Mon, 27 Jan 2025 03:20:10 GMT",
+      "etag": "W/\"5dc3-62ca78dc62e80\"",
+      "locator": "Table body, row v=99, k=14, lambda=1, mu=2",
+      "observed_text": "? 99 14 1 2 3^54 -4^44",
+      "content_saved_locally": false
+    },
+    {
+      "id": "B03",
+      "owner": "Cambridge University Press; Andries E. Brouwer and H. Van Maldeghem",
+      "title": "Strongly Regular Graphs - Parameter Index",
+      "url": "https://assets.cambridge.org/97813165/12036/index/9781316512036_index.pdf",
+      "source_role": "authoritative legend corroboration for the question-mark notation",
+      "accessed_at_utc": "2026-07-24T21:32:49.400Z",
+      "http_status": 200,
+      "response_body_bytes": 113058,
+      "response_body_sha256": "dd41d51287da84c74bc362a7b41fec402b16a8c9e3de603958fa766e4fb0d0dc",
+      "content_type": "application/pdf",
+      "last_modified": "Thu, 11 Nov 2021 09:01:07 GMT",
+      "etag": "\"1b9a2-5d07f9542eee8\"",
+      "locator": "PDF page 1 of 12 (printed page 451), Parameter Index opening legend and the (99,14,1,2) entry",
+      "observed_text": "The legend says that a question mark means none is known; the same page prints (99,14,1,2)?.",
+      "content_saved_locally": false
+    },
+    {
+      "id": "M01",
+      "owner": "Brendan McKay",
+      "title": "Some Examples of Combinatorial Generation",
+      "url": "https://45acc.github.io/slides/McKay.pdf",
+      "source_role": "author slide deck",
+      "accessed_at_utc": "2026-07-24T21:32:50.643Z",
+      "http_status": 200,
+      "response_body_bytes": 675232,
+      "response_body_sha256": "49f4652c4ea0617f1294b981047e4b5ab30875392347ee399f1cfedc806009ed",
+      "content_type": "application/pdf",
+      "last_modified": "Sat, 13 Jan 2024 04:07:53 GMT",
+      "etag": "\"65a20c99-a4da0\"",
+      "locators": [
+        {
+          "location": "PDF page 30 of 46, slide footer 'combinatorial generation 18', The project",
+          "observed_text": "The project aims to compile complete lists of nonisomorphic 2-(v,k,lambda) designs."
+        },
+        {
+          "location": "PDF page 31 of 46, slide footer 'combinatorial generation 19', Construction methods",
+          "observed_text": "Partial designs are reduced by isomorphism class."
+        },
+        {
+          "location": "PDF page 46 of 46, slide footer 'combinatorial generation 22', Results",
+          "observed_text": "2-(15,3,2): about 1.5 x 10^21 designs."
+        }
+      ],
+      "content_saved_locally": false
+    },
+    {
+      "id": "R01",
+      "owner": "University of Rijeka structure-data maintainers",
+      "title": "Combinatorial structures data index",
+      "url": "https://www.math.uniri.hr/~sanjar/structures/",
+      "source_role": "institutional top-level directory index",
+      "accessed_at_utc": "2026-07-24T21:32:52.013Z",
+      "http_status": 200,
+      "response_body_bytes": 5648,
+      "response_body_sha256": "2b3233c145ef84a54756e540e74864086eb79ade296a78e078ba8e5f3f77e06e",
+      "content_type": "text/html;charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "locator": "Top-level index entries for README, Folder 1, and Folder 2",
+      "observed_text": "The index links Folder 1 as 2-(71,15,3) designs and Folder 2 as 2-(15,3,2) designs.",
+      "content_saved_locally": false
+    },
+    {
+      "id": "R02",
+      "owner": "University of Rijeka structure-data maintainers",
+      "title": "Content of folders and references",
+      "url": "https://www.math.uniri.hr/~sanjar/structures/0_README_the_content_of_folders_and_references.txt",
+      "source_role": "institutional corpus-scope statement",
+      "accessed_at_utc": "2026-07-24T21:32:52.700Z",
+      "http_status": 200,
+      "response_body_bytes": 7845,
+      "response_body_sha256": "744d9065e93bc157aaa022f2aad0cf3cd5ccf832fc4079ae8fdd79211538f797",
+      "content_type": "text/plain;charset=WINDOWS-1250",
+      "last_modified": "Thu, 10 Apr 2025 19:31:27 GMT",
+      "etag": "\"1ea5-63271a1d24556-gzip\"",
+      "locators": [
+        {
+          "location": "First folder description",
+          "observed_text": "Folder 1 contains 2-(71,15,3) designs having an automorphism of order 6."
+        },
+        {
+          "location": "Second folder description",
+          "observed_text": "Folder 2 contains 2-(15,3,2) designs being derived designs of the Folder 1 designs."
+        }
+      ],
+      "content_saved_locally": false
+    },
+    {
+      "id": "R03",
+      "owner": "University of Rijeka structure-data maintainers",
+      "title": "Folder 1: 2-(71,15,3) designs",
+      "url": "https://www.math.uniri.hr/~sanjar/structures/FOLDER1%202-%2871%2C15%2C3%29%20designs/",
+      "source_role": "institutional downloadable parent-corpus index",
+      "accessed_at_utc": "2026-07-24T21:32:52.944Z",
+      "http_status": 200,
+      "response_body_bytes": 29675,
+      "response_body_sha256": "09b0ab651f6a1bd59b0937ec37c3a32b0b66c17781ea2442dd33a7635455c1e3",
+      "content_type": "text/html;charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "locator": "Directory entries matching D[1-146].MAT",
+      "matrix_link_count": 146,
+      "numbering": {
+        "minimum": 1,
+        "maximum": 146,
+        "complete_sequence": true,
+        "duplicates": 0
+      },
+      "content_saved_locally": false
+    },
+    {
+      "id": "R04",
+      "owner": "University of Rijeka structure-data maintainers",
+      "title": "Folder 2: 2-(15,3,2) designs",
+      "url": "https://www.math.uniri.hr/~sanjar/structures/FOLDER2%202-%2815%2C3%2C2%29%20designs/",
+      "source_role": "institutional downloadable derived-corpus index",
+      "accessed_at_utc": "2026-07-24T21:32:53.154Z",
+      "http_status": 200,
+      "response_body_bytes": 117139,
+      "response_body_sha256": "f9954bfc7f4e283617814e5e75907ef201a1c84bf754cddd441f629a07e67ec9",
+      "content_type": "text/html;charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "locator": "Directory entries matching d[1-590].mat, excluding the bigeodetic-graphs subdirectory",
+      "matrix_link_count": 590,
+      "numbering": {
+        "minimum": 1,
+        "maximum": 590,
+        "complete_sequence": true,
+        "duplicates": 0
+      },
+      "content_saved_locally": false
+    }
+  ],
+  "claim_assessments": [
+    {
+      "id": "C01",
+      "local_source_id": "S01",
+      "claim": "Brouwer's maintained strongly regular graph table currently marks (99,14,1,2) with '?'.",
+      "assessment": "CONFIRMED_MAINTAINED_STATUS",
+      "claim_label": "CITED",
+      "supporting_remote_ids": [
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "reason": "The live maintained row begins with '?' in the table's existence column. Brouwer and Van Maldeghem's publisher-hosted parameter index defines '?' as meaning that none is known and independently prints (99,14,1,2)?.",
+      "bounded_caveat": "This confirms the maintained-source status at the access time. It is not an exhaustive proof that no unindexed, unpublished, or later result exists, and it does not construct or exclude the Conway 99-graph."
+    },
+    {
+      "id": "C02",
+      "local_source_id": "S05",
+      "claim": "McKay's cited slides estimate about 1.5 x 10^21 nonisomorphic 2-(15,3,2) designs.",
+      "assessment": "CONFIRMED_CONTEXTUAL_APPROXIMATE_QUOTE",
+      "claim_label": "CITED",
+      "supporting_remote_ids": [
+        "M01"
+      ],
+      "reason": "The final results slide gives the exact approximate scale 'about 1.5 x 10^21 designs'. Earlier project slides explicitly define the objective as complete lists of nonisomorphic designs and describe reduction by isomorphism class, so the discovery's 'nonisomorphic' reading is supported by the deck's context.",
+      "bounded_caveat": "The numerical line itself says 'designs', not 'nonisomorphic designs'. The deck gives no exact count, derivation, error bar, or enumeration certificate for this estimate on the inspected slides. The evidence supports an approximate contextual scale statement only."
+    },
+    {
+      "id": "C03",
+      "local_source_id": "S06",
+      "claim": "Rijeka Folder 2 is a downloadable 2-(15,3,2) corpus derived from Folder 1, whose 2-(71,15,3) parents are restricted to designs having an automorphism of order 6.",
+      "assessment": "CONFIRMED_RESTRICTED_DERIVED_CORPUS",
+      "claim_label": "CITED",
+      "supporting_remote_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04"
+      ],
+      "reason": "The institutional README states both the order-6 restriction on Folder 1 and the derivation of Folder 2 from Folder 1. The live indexes expose 146 sequential parent matrix links and 590 sequential derived matrix links.",
+      "bounded_caveat": "The README does not say that every Folder 2 derived design itself has an automorphism of order 6. The index does not claim Folder 2 is a complete catalogue of all nonisomorphic 2-(15,3,2) designs, and this audit did not download, parse, deduplicate, or validate the individual matrices."
+    }
+  ],
+  "workspace_artifact_policy": {
+    "remote_content_archived": false,
+    "vendored_third_party_pdfs": 0,
+    "vendored_third_party_archives": 0,
+    "vendored_third_party_matrices": 0,
+    "only_metadata_hashes_and_bounded_excerpts_recorded": true
+  },
+  "global_status": {
+    "Conway_99_existence_or_nonexistence": "UNKNOWN",
+    "n3_equals_708": "UNKNOWN",
+    "non_discovery": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "priority": "UNKNOWN"
+  },
+  "overall_assessment": "PASS_WITH_BOUNDED_CAVEATS",
+  "overall_conclusion": "All three local source-characterization claims are supported at the cited scope. None is a Conway-99 construction, nonexistence certificate, novelty result, non-discovery certificate, or unrestricted design-catalogue completeness result."
+}

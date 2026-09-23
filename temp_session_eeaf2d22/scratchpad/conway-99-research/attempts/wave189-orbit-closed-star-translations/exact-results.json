@@ -1,0 +1,169 @@
+{
+  "format": "wave189-orbit-closed-star-translations-v1",
+  "claim_label": "DERIVED",
+  "constants": {
+    "nonedges": 4158,
+    "edge_isolated_projective_circuits": 693
+  },
+  "coefficient_certificate": {
+    "variable_order": [
+      "n1",
+      "n2",
+      "n3",
+      "p2",
+      "p3"
+    ],
+    "private_row_I": [
+      2,
+      2,
+      3,
+      1,
+      1
+    ],
+    "base_selected_plus_companions": [
+      1,
+      1,
+      2,
+      0,
+      0
+    ],
+    "raw_extraction_assignments": [
+      1,
+      0,
+      0,
+      2,
+      1
+    ],
+    "lhs_12Q": [
+      18,
+      12,
+      24,
+      12,
+      6
+    ],
+    "seven_I": [
+      14,
+      14,
+      21,
+      7,
+      7
+    ],
+    "nonnegative_remainder": [
+      4,
+      -2,
+      3,
+      5,
+      -1
+    ],
+    "remainder_decomposition": "4*n1+2*(p2-n2)+(3*n3-p3)+3*p2"
+  },
+  "orbit_closure": {
+    "raw_assignment_bound": "A<=2*r+3*h",
+    "closed_pool_size": "|X|=r+2*h",
+    "consequence": "2*|X|>=A",
+    "type2_same_label_pair_excluded": true
+  },
+  "fractional_bound": {
+    "inequality": "12*Q>=14*C",
+    "Q_lower_before_strictness": 4851
+  },
+  "equality_face_before_strictness": {
+    "n1": 0,
+    "n2": 0,
+    "n3": 1386,
+    "p2": 0,
+    "p3": 4158,
+    "raw_assignment_incidence": 4158,
+    "selected_plus_companions": 2772,
+    "multiplicity_at_most_two_extraction_circuits": 2079,
+    "exact_three_extraction_orbit_pairs": 0
+  },
+  "design_null_control": {
+    "candidate_flags": 13860,
+    "row_degree": 10,
+    "column_degree": 3,
+    "conflict_graph_degree": 27,
+    "conflict_graph_least_eigenvalue": -3,
+    "hoffman_independence_bound": 1386,
+    "uniform_rational_flag_weight": "1/10",
+    "uniform_center_count": 14,
+    "uniform_triangle_replication": 6
+  },
+  "strict_local_relation": {
+    "coordinate_split": [
+      3,
+      6
+    ],
+    "leaf_word": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "canonical_checkerboard": [
+      1,
+      2,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "leaf_minus_checkerboard": [
+      1,
+      0,
+      2,
+      0,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "leaf_minus_twice_checkerboard": [
+      0,
+      1,
+      2,
+      1,
+      0,
+      2,
+      2,
+      2,
+      2
+    ],
+    "difference_side_weights": [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "difference_weights": [
+      7,
+      7
+    ]
+  },
+  "bounds": {
+    "nonedge_projective_circuits_Q": 4852,
+    "all_projective_short_circuits": 5545,
+    "scalar_short_circuit_words": 11090,
+    "verified_Wave188_all_short_word_bound_remains": 18018
+  },
+  "boundary": {
+    "rank_11_excluded": false,
+    "endpoint_excluded": false,
+    "strict_n3_improvement": false,
+    "conway_99": "UNKNOWN",
+    "independent_verification": "PENDING"
+  }
+}

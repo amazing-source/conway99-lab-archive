@@ -1,0 +1,76 @@
+role: verifier
+date_utc: "2026-07-23T19:11:33Z"
+git_commit: "121a2fda5d9d36d8a16825f2a29d0765d1285eb1"
+claim_label: VERIFIED
+scope: >-
+  Exact feasibility at n3=705,h11=2820 of the 62 order-seven
+  vertex-deletion count equations together with the 19 pinned published
+  Hamiltonian-type counts.
+inputs:
+  - path: agents/2026-07-23-wave22-full-seven-deck.md
+    sha256: 8075166af8bb0b9388888ade55826245441554396318ad8101b617d6aed66112
+  - path: attempts/wave22-full-seven-deck/witness.json
+    sha256: d74453faa91e42abbe2343d428296818ae051be579305277eff6f113fe66c47d
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  - path: arxiv:2511.06572v1/source-archive
+    sha256: 10f8d9ea09dc72f4ca6bce4e9427ff1df32718d2978bb35a16db1af3c27cc39a
+  - path: arxiv:2511.06572v1/Hamiltonian_Subgraphs_of_Order_Seven.tex
+    sha256: 0b06fdc1c2951a344592c6af23abd133c4a8a68d717f199e7a0e2d7ceb909d0a
+  - path: arxiv:2511.06572v1/hamiltonian_7.jpg
+    sha256: e37f794e7765c947d3ea76104e9c4c61a00517b649d8b7bea9eb67644fe08a2e
+method: >-
+  Freeze the candidate before inspection; independently partition every
+  order-six and order-seven labeled graph into exact permutation orbits;
+  apply the lambda<=1/mu<=2 inherited local filter; rebuild every deletion
+  card and the 62x208 matrix; compute modular ranks; enumerate Hamiltonian
+  cycles independently of the source figure; visually transcribe the pinned
+  figure; evaluate the displayed formulas with exact rationals; and replay
+  the frozen witness with strict JSON and integer checks.
+command: >-
+  python verification/wave22-full-seven-deck/independent_verify.py --output
+  verification/wave22-full-seven-deck/independent-results.json
+test_command: >-
+  python -m unittest discover -s verification/wave22-full-seven-deck -p
+  test_independent_verify.py -v
+outputs:
+  - path: verification/wave22-full-seven-deck/preinspection-freeze.tsv
+    sha256: 83af376d375e4a26edf10a629aa085f8d18156fcc0d9d95acf6dc4654987966c
+  - path: verification/wave22-full-seven-deck/independent_verify.py
+    sha256: f058ca21c96d19a6f0784a8bdf4871ff8b4d55b03e4205bafb0a2fa62739857b
+  - path: verification/wave22-full-seven-deck/test_independent_verify.py
+    sha256: 4faccfafee070ceb0f28a9494ec146708d413c0b5189b860a8d34b1c6dc66465
+  - path: verification/wave22-full-seven-deck/independent-results.json
+    sha256: 54a02ffda9fe13293d6732fc6bf51f47e28a876a92ebdece10dea187ae0d020c
+  - path: verification/wave22-full-seven-deck/2026-07-23T191133Z-audit.md
+    sha256: 112a8ac50ad6ccb09033ad6ed880ed0b3b5f97d3b8d0065df73bc4f14c605a55
+limitations:
+  - Aggregate type counts do not enforce consistency on overlapping subsets.
+  - No 99-vertex adjacency matrix or graph is constructed.
+  - The source-N index alignment is inherited from the pinned independently audited Wave-21 artifact.
+  - The pinned source-H panel mapping remains a human visual transcription, independently repeated here.
+  - This audit checks exact compatibility with the displayed Hamiltonian formulas but does not re-prove every derivation in the source paper.
+result:
+  candidate_freeze_unchanged: "10/10"
+  independent_tests: "26/26 PASS"
+  candidate_tests_after_independent_audit: "15/15 PASS"
+  candidate_result_replay_byte_identical: true
+  independent_result_newlines: LF
+  publication_hash_normalization_corrected: true
+  order_6_unlabeled_classes: 62
+  order_7_labeled_masks: 394020
+  order_7_unlabeled_classes: 208
+  deletion_matrix_shape: [62, 208]
+  finite_field_ranks:
+    2: 48
+    3: 57
+    5: 61
+    7: 61
+    11: 62
+  deletion_rows_passed: 62
+  hamiltonian_counts_passed: 19
+  witness_support_size: 105
+  witness_total: 14887031544
+  graph_construction: false
+  new_bound_beyond_n3_705: null
+  target_status: UNKNOWN

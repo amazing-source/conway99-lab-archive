@@ -1,0 +1,55 @@
+role: proof_a
+date_utc: "2026-07-27T03:05:33Z"
+git_commit: "6b28af70c67f062d687251494a047debe70a246f"
+claim_label: CANDIDATE
+scope: >-
+  Conditional exclusion of characteristic-seven ranks at most 21 for a
+  hypothetical srg(99,14,1,2) at n3=4158.
+inputs:
+  - path: attempts/wave40-rank19-equality/input-freeze.sha256
+    sha256: f2144d408cf20a85e310dca398c9187087fcc6fd0b39663cfc8e1867982b2d2b
+method: >-
+  Exact construction of the 2+2+2 and 2+4 edge-local transported blocks;
+  complete enumeration of the 144 z-neighbor and 4,356 non-z-neighbor
+  outside patterns; rank-completion quotient syndromes over F7; exhaustive
+  projective-line, 1,923 two-space, and 25,744 three-space censuses; exact
+  bipartite matching; and hostile mutation tests.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  attempts\wave40-rank19-equality -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave40-rank19-equality\exact_check.py --verify
+  attempts\wave40-rank19-equality\exact-results.json
+outputs:
+  - path: agents/2026-07-27-wave40-rank19-equality.md
+    sha256: 6ae7b91df5d42fd3831b30b02e66d772aa3e56bcff28098ad7aeab8c9e70dcda
+  - path: attempts/wave40-rank19-equality/exact_check.py
+    sha256: a7242388d1a0e1b9e1b2332b7d9acc9a7a0d66718e41fa2dec1cdab7500de02f
+  - path: attempts/wave40-rank19-equality/test_exact_check.py
+    sha256: 17282340b0261ea071650ac47891e54e7ba7a9fd96aab48876b02730151d877e
+  - path: attempts/wave40-rank19-equality/exact-results.json
+    sha256: 631b36c1a3a8693ea193c21ebc0f9fa57aee68bdf5f7c52b28aa469a475e4553
+  - path: attempts/wave40-rank19-equality/README.md
+    sha256: 11ef3e31845d9ea9fdf255a664733c5cce947be038a2a6372c94b297c8fec5b5
+  - path: attempts/wave40-rank19-equality/failed-routes.md
+    sha256: 903312ba7e5537d1a36c447fd083043f4faf4952baa1dcbe8ec8cde681a63b6c
+tests:
+  passed: 13
+  failed: 0
+result:
+  complete_z_neighbor_patterns: 144
+  complete_non_z_neighbor_patterns: 4356
+  rank_19_column_space_survivors: 36
+  rank_20_maximum_patterns_on_one_line: 4
+  rank_21_two_space_count: 1923
+  rank_21_maximum_matching_number: 8
+  rank_22_positive_three_spaces: 32
+  candidate_endpoint_rank_F7_M_lower_bound: 22
+  endpoint_excluded: false
+  general_upper_bound_improved_below_4158: false
+limitations:
+  - Discovery cannot verify itself.
+  - The result is conditional on n3=4158.
+  - Ranks 22 through 44 survive.
+  - No graph, endpoint exclusion, or general upper-bound improvement is proved.
+  - Literature novelty and priority remain UNKNOWN.

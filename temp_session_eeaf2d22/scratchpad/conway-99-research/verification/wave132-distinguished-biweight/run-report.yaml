@@ -1,0 +1,39 @@
+role: verifier
+date_utc: 2026-07-28T07:31:41Z
+git_commit: aef7b93124f8caeb1a7487f58289436bc4118880
+claim_label: VERIFIED
+scope: >-
+  Independent solver-free verification of sealed Wave132 distinguished pair
+  identities, the image-weight upper cut, and the exact rational low-degree
+  split-enumerator witness.
+inputs:
+  - path: attempts/wave132-distinguished-biweight/package-manifest.sha256
+    sha256: 0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c
+  - path: attempts/wave132-distinguished-biweight/joint-witness.json
+    sha256: 5c33563ac7b958822360487c24543a9dda5b7334f26366b12bb7bbf697c8f0db
+method: >-
+  Bind every sealed hash; reconstruct binary Krawtchouk transforms, pair
+  compositions, split row sums, first moments, parity counts, set-theoretic
+  ranges, forced pair lower rows, high-weight inequality, and genus-state
+  counts with independent standard-library exact arithmetic; replay the
+  frozen Wave131 point to prove strictness. Do not import discovery code and
+  do not invoke a solver.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification/wave132-distinguished-biweight/verify_wave132.py
+  --repository .
+  --package attempts/wave132-distinguished-biweight
+  --expected-manifest
+  0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c
+  --write
+  verification/wave132-distinguished-biweight/verification.json
+outputs:
+  - path: verification/wave132-distinguished-biweight/verify_wave132.py
+    sha256: f337206810b5282d4d3adf6f6da6ff1ae1b3f75f15581a4b8ba2fe0abccf9b94
+  - path: verification/wave132-distinguished-biweight/verification.json
+    sha256: c27e129847593d45fe0e4f3a4f5bfa33dff8e177ab817007219ab61839455e25
+limitations: >-
+  Verification promotes only the conditional identities and exact rational
+  low-degree projection. The witness is nonintegral and not a full genus-two
+  enumerator. No binary code, graph, or Conway-99 solution is constructed;
+  integral and full-genus feasibility remain UNKNOWN.

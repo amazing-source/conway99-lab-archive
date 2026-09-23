@@ -1,0 +1,97 @@
+{
+  "format": "wave35-n3-endpoint-root-bounded-scout-v1",
+  "claim_label": "UNKNOWN",
+  "scope": "full rooted compact target model with theorem-forced N3, verified 12-way joint cover, and 84 necessary P=0 units",
+  "provenance": {
+    "record_kind": "console-output-transcription",
+    "raw_log_preserved": false,
+    "git_commit": "6d98cb5f73c1f56d227e97b1c3e70d363669bf87",
+    "command": "$env:PYTHONPATH='code'; inline Python using EncodedRootModel.build(7, variant='compact', cardinality_backend='native'), add 84 endpoint units, add_n3_normalization(), add_n3_joint_branch(branch), solve_model(..., conflict_budget=100000)",
+    "warning": "This record was transcribed from the live console after the bounded run. Re-run the checked-in scout script for a fresh raw record."
+  },
+  "endpoint": {
+    "unit_count": 84,
+    "edge_catalog_sha256": "b03c1a237ddeb06eb29def61cff55763df76e1686f657bd588422cb9d72ea758",
+    "branch_mate_positive_counts": {
+      "1": 4,
+      "2": 2,
+      "3": 1,
+      "4": 0,
+      "5": 0,
+      "6": 3,
+      "7": 1,
+      "8": 0,
+      "9": 2,
+      "10": 0,
+      "11": 1,
+      "12": 0
+    },
+    "immediate_conflict_branches": [1, 2, 3, 6, 7, 9, 11],
+    "solver_branches": [4, 5, 8, 10, 12]
+  },
+  "encoding": {
+    "variant": "compact",
+    "cardinality_backend": "native",
+    "pair_count": 7,
+    "full_vertex_count": 99,
+    "residual_vertex_count": 84,
+    "named_edge_variables": 3486,
+    "named_wedge_variables": 285852,
+    "total_variables": 289338,
+    "clauses_after_endpoint_units": 285936,
+    "native_atmost_constraints": 5838
+  },
+  "results": [
+    {
+      "branch": 4,
+      "status": "BUDGET_UNKNOWN",
+      "solver_time_seconds": 6.28125,
+      "restarts": 255,
+      "conflicts": 100000,
+      "decisions": 734691,
+      "propagations": 97900640
+    },
+    {
+      "branch": 5,
+      "status": "BUDGET_UNKNOWN",
+      "solver_time_seconds": 12.203125,
+      "restarts": 255,
+      "conflicts": 100000,
+      "decisions": 827364,
+      "propagations": 219735597
+    },
+    {
+      "branch": 8,
+      "status": "BUDGET_UNKNOWN",
+      "solver_time_seconds": 10.96875,
+      "restarts": 255,
+      "conflicts": 100000,
+      "decisions": 739267,
+      "propagations": 216085009
+    },
+    {
+      "branch": 10,
+      "status": "BUDGET_UNKNOWN",
+      "solver_time_seconds": 8.03125,
+      "restarts": 255,
+      "conflicts": 100001,
+      "decisions": 713188,
+      "propagations": 111203376
+    },
+    {
+      "branch": 12,
+      "status": "BUDGET_UNKNOWN",
+      "solver_time_seconds": 11.0625,
+      "restarts": 255,
+      "conflicts": 100000,
+      "decisions": 729167,
+      "propagations": 205098601
+    }
+  ],
+  "limitations": [
+    "Every solved branch stopped at the conflict budget.",
+    "BUDGET_UNKNOWN has no mathematical evidentiary value.",
+    "No SAT assignment, UNSAT result, proof trace, or new upper bound was produced.",
+    "The transcribed console record is not a raw solver log."
+  ]
+}

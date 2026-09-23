@@ -1,0 +1,36 @@
+role: proof_a
+date_utc: 2026-07-27T23:11:57Z
+git_commit: c4124a78dbf6bdfbb0281fa4709116e7929f9eb9
+claim_label: DERIVED
+scope: >-
+  For a hypothetical srg(99,14,1,2), prove without transitivity assumptions
+  that every automorphism of permutation order exactly 11 is fixed-point-free;
+  record only conditional consequences of combining this with Wave 69.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+method: >-
+  Analyze prime-order vertex orbits and the induced fixed graph; prove that
+  fixed degrees lie in {3,14}; retain all common-neighbor counts inside the
+  fixed set; derive the exact two-step identity; eliminate every positive
+  fixed count by local degree arithmetic and cross-edge balance; reproduce
+  the integer relaxation with a deterministic standard-library enumerator.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave72-order11-automorphism\exact_check.py --verify ;
+  .\.venv\Scripts\python.exe -m unittest discover -s
+  attempts\wave72-order11-automorphism -p "test_*.py" -v
+outputs:
+  - path: attempts/wave72-order11-automorphism/derivation.md
+    sha256: 018a5264f8608f677cdf882fa118541548dc60b91b45eb1e9dd5a521ef1cca73
+  - path: attempts/wave72-order11-automorphism/exact-results.json
+    sha256: 087791a5f2c30ed4534db8469decd569a4c98e5979285184d0db2fdc3a25923d
+  - path: attempts/wave72-order11-automorphism/exact_check.py
+    sha256: 1f857048122cd179de964f1bca72fc5f6cdbc8c140e92e5b6ef686ed16e27a0c
+limitations: >-
+  Discovery is not independent verification. Wave 69 is not reverified here,
+  so exclusion of all order-11 automorphisms and vertex transitivity remains
+  conditional. No asymmetric target is excluded, and the unrestricted
+  Conway-99 problem remains UNKNOWN.

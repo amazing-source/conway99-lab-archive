@@ -1,0 +1,50 @@
+{
+  "source": {
+    "title": "Conway's 99-Graph Problem: A Boolean Satisfiability Approach",
+    "author": "Nathaniel Selub",
+    "year": 2023,
+    "context": "University of Chicago Mathematics REU 2023 participant paper",
+    "url": "https://math.uchicago.edu/~may/REU2023/REUPapers/Selub.pdf",
+    "pages": 7,
+    "bytes": 289879,
+    "sha256": "e533b92599e0f562e8ee63d5ca7e5ee5e2caaaa28de70fa6a73250cf333470f6"
+  },
+  "scope": {
+    "document_type": "expository/proposal framework",
+    "edge_variables": 4851,
+    "edge_semantics": "e_i,j is true exactly when the undirected edge {i,j} is present.",
+    "triangle_semantics": "For an edge, existence and at-most-one formulas require exactly one common neighbor.",
+    "quadrilateral_semantics": "For a nonedge, existence and at-most-one formulas require exactly two common neighbors, whose pair gives the unique four-cycle through the nonadjacent endpoints.",
+    "symmetry_restriction": "Only symmetries induced by S_n vertex permutations are considered; the paper explicitly says additional CNF symmetries may exist.",
+    "symmetry_generators": "Adjacent transpositions (1,2), (2,3), ..., (n-1,n), with generator-level symmetry-breaking clauses; the paper notes that this does not break all symmetries.",
+    "rooted_preprocessing": "A root and its 14-neighborhood are intended to form seven disjoint edges; each nonedge in the neighborhood receives a distinct outside common neighbor, fixing all edges incident to the resulting 15 labeled vertices.",
+    "rooted_preprocessing_machine_artifact": false
+  },
+  "printed_formula_caveats": [
+    {
+      "pages": "4-5",
+      "finding": "The displayed Q'_{i,j,E} disjoins every quadrilateral auxiliary variable and has no printed restriction tying the opposite pair (a,b) to (i,j). On the printed formula, a quadrilateral anywhere can satisfy every nonedge's existence clause.",
+      "effect": "The claimed equisatisfiability of the displayed quadrilateral CNF conversion is not established as printed.",
+      "claim_label": "UNKNOWN"
+    },
+    {
+      "pages": "6-7",
+      "finding": "The root is introduced as v1, but the neighborhood notation switches to N(v0), while labels v1 through v15 match a root-plus-14-neighbors construction.",
+      "effect": "The intended rooted construction is inferable, but its indices are inconsistent and no machine-readable preprocessing certificate is supplied.",
+      "claim_label": "CITED"
+    }
+  ],
+  "solver_result_audit": {
+    "completed_run_claimed": false,
+    "sat_or_unsat_result_claimed": false,
+    "solver_name_or_version_reported": false,
+    "command_reported": false,
+    "runtime_or_hardware_reported": false,
+    "dimacs_or_instance_hash_reported": false,
+    "proof_or_model_certificate_reported": false,
+    "evidence": "The final section is explicitly Next Steps and describes regularity constraints, improved at-most-one encodings, and future edge-fixing searches."
+  },
+  "proposed_bibtex": "@misc{Selub2023Conway99SAT,\n  author = {Selub, Nathaniel},\n  title = {Conway's 99-Graph Problem: A Boolean Satisfiability Approach},\n  year = {2023},\n  howpublished = {University of Chicago Mathematics REU paper},\n  url = {https://math.uchicago.edu/~may/REU2023/REUPapers/Selub.pdf},\n  note = {Written during the 2023 University of Chicago REU}\n}",
+  "target_status": "UNKNOWN",
+  "novelty_status": "UNKNOWN"
+}

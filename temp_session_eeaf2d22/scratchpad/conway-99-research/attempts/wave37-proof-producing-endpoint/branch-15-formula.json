@@ -1,0 +1,109 @@
+{
+  "branch": {
+    "fixed_triangle_prism_strengthening": {
+      "clause_catalog_sha256": "f675391a81dd817fe45f805a9bc9309dba02910988b42988238b66e6c2f5ae2e",
+      "clause_length_histogram": {
+        "3": 606,
+        "5": 282168
+      },
+      "deduplicated_active_clause_count": 282774,
+      "fixed_triangle_count": 6,
+      "per_triangle": [
+        {
+          "active_after_fixed_units": 47129,
+          "raw_clause_count": 64932,
+          "triangle": [
+            3,
+            15,
+            39
+          ]
+        },
+        {
+          "active_after_fixed_units": 47129,
+          "raw_clause_count": 64932,
+          "triangle": [
+            3,
+            27,
+            40
+          ]
+        },
+        {
+          "active_after_fixed_units": 47129,
+          "raw_clause_count": 64932,
+          "triangle": [
+            3,
+            41,
+            43
+          ]
+        },
+        {
+          "active_after_fixed_units": 47129,
+          "raw_clause_count": 64932,
+          "triangle": [
+            3,
+            42,
+            44
+          ]
+        },
+        {
+          "active_after_fixed_units": 47129,
+          "raw_clause_count": 64932,
+          "triangle": [
+            3,
+            45,
+            47
+          ]
+        },
+        {
+          "active_after_fixed_units": 47129,
+          "raw_clause_count": 64932,
+          "triangle": [
+            3,
+            46,
+            48
+          ]
+        }
+      ]
+    },
+    "refinement_edge": [
+      0,
+      2
+    ],
+    "refinement_literal": 2
+  },
+  "claim_label": "CANDIDATE_FORMULA_ONLY",
+  "completed_graph_automorphism_assumed": false,
+  "encoding": {
+    "cardinality_backend": "native",
+    "clauses": 568777,
+    "full_vertex_count": 99,
+    "named_edge_variables": 3486,
+    "named_wedge_variables": 285852,
+    "native_atmost_constraints": 5838,
+    "pair_count": 7,
+    "residual_vertex_count": 84,
+    "total_variables": 289338,
+    "variant": "compact"
+  },
+  "endpoint_edge_catalog_sha256": "b03c1a237ddeb06eb29def61cff55763df76e1686f657bd588422cb9d72ea758",
+  "endpoint_unit_count": 84,
+  "format": "wave37-proof-producing-prism-free-refined-opb-v1",
+  "git_commit": "efbf74e3edf4d11d853d0129634507b01ff7b577",
+  "limitations": [
+    "The formula is only one refined branch, not the whole endpoint.",
+    "Formula export is not a SAT or UNSAT conclusion.",
+    "An UNSAT result requires a retained independently checked proof.",
+    "A SAT result requires independent decoding and complete graph checks.",
+    "The fixed-triangle clauses do not enumerate every possible prism."
+  ],
+  "opb": {
+    "bytes": 29827704,
+    "constraint_count": 574615,
+    "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb",
+    "sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5"
+  },
+  "parent_branch": 4,
+  "refined_branch": 15,
+  "role": "construction",
+  "scope": "one exact member of the complete refined N3 cover, conditional on n3=4158, with no completed-graph automorphism assumption"
+}

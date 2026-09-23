@@ -1,0 +1,55 @@
+role: proof_b
+date_utc: 2026-07-23T22:02:41Z
+git_commit: 7103ddfe755a8c3430ef79e9a76e3323f1e00e1d
+claim_label: DERIVED
+scope: >-
+  Conditional strict trace-square and determinant refinement at n3=708 for
+  a putative srg(99,14,1,2), plus complete exact h/det(Q) arithmetic
+  enumeration. This does not exclude n3=708 or resolve Conway-99.
+inputs:
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave23-index-pranks/2026-07-23T192952Z-audit.md
+    sha256: bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116
+  - path: verification/wave23-endpoint-crosscheck/2026-07-23T200645Z-correction-audit.md
+    sha256: 791d74340c8a84a9993f9a5179c66baf0b2f7e431df5fb7eda2f593195f9bf53
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  - path: verification/wave24-n3-708-index/independent-results.json
+    sha256: 726807402388c02909171a689f3a7fe2d8d1b74307c24e322ae013d0a9cd486a
+  - path: verification/wave24-n3-708-index/survivor-certificate.json
+    sha256: a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2
+  - path: verification/wave24-n3-708-index/theorem-applicability.md
+    sha256: bea67ef5cac84c34ed7ed336ee947532a25a27b05dda653a50693af52cc4b2d1
+method: >-
+  Exclude the unique tr(C^2)=8 equality spectrum by deriving an integral
+  orthogonal 8+36 split and an even positive-definite unimodular rank-36
+  kernel form, contradicting signature divisibility by eight. Then use
+  trace-square parity, equality analysis in the verified logarithmic bound,
+  and exhaustive 3,7-smooth h/det(Q) enumeration with hostile controls.
+command: |-
+  cd attempts/wave25-n3-708-strictness
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-23-wave25-n3-708-strictness.md
+    sha256: a341323921ad8e6ed5404a701abe9135b9b5c465c76280d80e52cc7daefd69c1
+  - path: attempts/wave25-n3-708-strictness/exact_check.py
+    sha256: 4da24d38e19583c73724a5bf7ed2ee279ad6b31a8b49cbb367b56ed7f7ca81b8
+  - path: attempts/wave25-n3-708-strictness/test_exact_check.py
+    sha256: a431bd0a97e7d670d6cb6fc85c9f81d915a9ce60993b02cf04dec28093a819d4
+  - path: attempts/wave25-n3-708-strictness/exact-results.json
+    sha256: 6da9200adf19a5305913178c271ac584e9825aa4f3594fad20717f9418d2b40e
+  - path: attempts/wave25-n3-708-strictness/input-freeze.sha256
+    sha256: d7b2f8a24e7e481c920bbbc9a5a3af920b48f7540874760f4c9d218c98ebb203
+  - path: attempts/wave25-n3-708-strictness/failed-routes.md
+    sha256: f1b9f4277a2a56b6b1a07332f01a7a7cff897d588e9a01b3f8e6199117c45452
+limitations:
+  - Discovery-agent status only; a fresh independent verifier is required.
+  - The result is conditional on the frozen projector-lattice premises at
+    n3=708.
+  - The exact arithmetic enumeration leaves 323 pairs over eight h values.
+  - The retained h=9, det(B)=81 survivor is an abstract coordinate-lattice
+    package only, with no primitive embedding, projector/Hadamard origin,
+    Schur-square origin, or graph realization.
+  - Target existence and literature novelty remain UNKNOWN.

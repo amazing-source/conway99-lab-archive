@@ -1,0 +1,158 @@
+{
+  "crossing_edge_counts": {
+    "disjoint_size2_size2_2x2": [
+      0,
+      4
+    ],
+    "disjoint_size3_size2_3x2": [
+      0,
+      4
+    ],
+    "hostile_global_3x3": [
+      0,
+      4,
+      6
+    ],
+    "meeting_size2_size2_after_deletion_1x1": [
+      0
+    ],
+    "meeting_size2_size3_after_deletion_1x2": [
+      0
+    ],
+    "meeting_size3_size2_after_deletion_2x1": [
+      0
+    ],
+    "meeting_size3_size3_after_deletion_2x2": [
+      0,
+      4
+    ]
+  },
+  "frozen_inputs_sha256": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "verification/2026-07-23-wave15-global-lift-audit.md": "edda3785d080db464028f10c22bcae5c0bf17f1e61432a8641bfa6ffdccab036",
+    "verification/2026-07-23-wave16-n3-51-structural-audit.md": "99203a15db2646a759edbb2241eb4bd5e6001733ac862952c9db57446c58ead6"
+  },
+  "limitations": [
+    "finite arithmetic accompaniment, not a semantic proof certificate",
+    "no global H-degree restriction",
+    "no point-size upper bound",
+    "no Wave 14 residual cap or support-graph identity",
+    "no Wave 17 premise"
+  ],
+  "prospective_consequence_if_wave17_n3_54_is_separately_accepted": {
+    "induced_C6_lower_bound": 209346,
+    "n3_lower_bound": 60
+  },
+  "q_profile_count": 9,
+  "q_profiles": [
+    {
+      "active_point_cap": 21,
+      "d_K": "4^10 7^4",
+      "q": "2^4 3^10",
+      "r": 14
+    },
+    {
+      "active_point_cap": 22,
+      "d_K": "5^8 8^7",
+      "q": "2^7 3^8",
+      "r": 15
+    },
+    {
+      "active_point_cap": 24,
+      "d_K": "6^6 9^10",
+      "q": "2^10 3^6",
+      "r": 16
+    },
+    {
+      "active_point_cap": 25,
+      "d_K": "4^2 10^15",
+      "q": "2^15 4^2",
+      "r": 17
+    },
+    {
+      "active_point_cap": 25,
+      "d_K": "4 7^2 10^14",
+      "q": "2^14 3^2 4",
+      "r": 17
+    },
+    {
+      "active_point_cap": 25,
+      "d_K": "7^4 10^13",
+      "q": "2^13 3^4",
+      "r": 17
+    },
+    {
+      "active_point_cap": 27,
+      "d_K": "5 11^17",
+      "q": "2^17 4",
+      "r": 18
+    },
+    {
+      "active_point_cap": 27,
+      "d_K": "8^2 11^16",
+      "q": "2^16 3^2",
+      "r": 18
+    },
+    {
+      "active_point_cap": 28,
+      "d_K": "12^19",
+      "q": "2^19",
+      "r": 19
+    }
+  ],
+  "r18": {
+    "active_points": 27,
+    "incidences": 54,
+    "outcome": "contradiction",
+    "point_sizes": [
+      "2^27"
+    ],
+    "profile_2^16_3^2": "mixed parity forbidden; two odd labels cannot form a simple cubic component",
+    "profile_2^17_4": "a point through q=4 has induced degree at least 7",
+    "spectral_equality_degree": 6
+  },
+  "r19": {
+    "incidences": 57,
+    "m27_outcome": "contradiction in every point-size profile",
+    "m27_point_sizes": [
+      "2^26 5",
+      "2^25 3 4",
+      "2^24 3^3"
+    ],
+    "m27_spectral_equality_degree": 6,
+    "m28_maximum_even_degree_sum": 170,
+    "m28_outcome": "contradiction",
+    "m28_point_sizes": [
+      "2^27 3"
+    ],
+    "m28_size3_minimum_induced_degree": 9,
+    "m28_spectral_upper_degree_sum": "1540/9",
+    "q": "2^19"
+  },
+  "r_at_most_17": {
+    "maximum_active_point_count": 25,
+    "outcome": "contradiction",
+    "spectral_minimum_active_point_count_at_delta_6": 27
+  },
+  "size_two_q_pair_minimum_induced_degree": {
+    "2,2": 6,
+    "2,3": null,
+    "2,4": 7,
+    "3,3": 7,
+    "3,4": null,
+    "4,4": 8
+  },
+  "size_two_q_pair_support_count": {
+    "2,2": 2,
+    "2,3": null,
+    "2,4": 3,
+    "3,3": 3,
+    "3,4": null,
+    "4,4": 4
+  },
+  "status_boundary": {
+    "conditional_n3_57": "EXCLUDED_DERIVED_NOT_INDEPENDENTLY_VERIFIED",
+    "conway_99_target": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  }
+}

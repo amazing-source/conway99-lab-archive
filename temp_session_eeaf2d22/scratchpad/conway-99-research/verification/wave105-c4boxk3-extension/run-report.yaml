@@ -1,0 +1,42 @@
+role: verifier
+date_utc: 2026-07-28T03:47:39Z
+git_commit: e671eb056df60edcbf48da6b9fcfe635b2444479
+claim_label: VERIFIED
+verdict: VERIFIED_WITH_CLARIFICATIONS
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2) containing the induced
+  12-vertex C4 box K3 motif, independently verify the forced incidence
+  multiset, exact extension equations, aggregate moment and graphicality
+  census, archived linear witness, complete conditional SAT encoding, and
+  fail-closed bounded status.
+inputs:
+  - path: attempts/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1
+  - path: verification/wave99-transition-pair-moment/package-manifest.sha256
+    sha256: 2d94086a0abef0612a445528319e1db4ef54c1fbb7fa361caef6025739aa654f
+  - path: verification/wave102-prism-incidence-code/package-manifest.sha256
+    sha256: ab97e3d38b1a34d30caa6dddf7b5d9a9c76dc629bc5f6b400c225da1097fd242
+method: >-
+  Freeze and validate discovery provenance; reconstruct the motif and residual
+  support independently; enumerate the block, type-edge, moment, and six
+  graphicality equations; directly replay the linear witness; truth-table and
+  source-audit the complete SAT encoding; prove four-branch X0 coverage; and
+  compare preserved raw logs by SHA-256 while retaining every timeout as
+  UNKNOWN.
+command: >-
+  python -B verification/wave105-c4boxk3-extension/independent_verify.py
+  && python -B -m unittest discover -s
+  verification/wave105-c4boxk3-extension -p "test_*.py" -v
+  && python -B -m unittest discover -s
+  attempts/wave105-c4boxk3-extension -p "test_*.py" -v
+outputs:
+  - path: verification/wave105-c4boxk3-extension/independent-results.json
+    sha256: 529c241d7abcc25cb2c84a8d4c9d0b870347961c2e633c6544745bbe63764d7c
+  - path: verification/wave105-c4boxk3-extension/verification-report.md
+    sha256: c73ca7ef0d53019e22bd6f5d762479a59c7df5bfccd18b2a06f9377c41c261d4
+limitations:
+  - The motif is not proved to occur in every hypothetical target.
+  - The six graphicality checks are separate necessary filters.
+  - The archived linear witness fails 2525 nonlinear outside-pair rows.
+  - No SAT model or independently replayable UNSAT proof was produced.
+  - No construction, exclusion, Conway-99 resolution, or novelty claim follows.

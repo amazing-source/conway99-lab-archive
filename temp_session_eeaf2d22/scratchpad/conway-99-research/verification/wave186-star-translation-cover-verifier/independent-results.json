@@ -1,0 +1,159 @@
+{
+  "classification_scope": {
+    "cross_realization_ceiling": 3,
+    "dual_distance_lower": 4,
+    "multiplicity_three_verified_before_Q_equality": true,
+    "multiplicity_two_verified_before_Q_equality": true,
+    "proper_star_only_relation_has_full_support": true
+  },
+  "cover": {
+    "arithmetic_equality_control_not_construction": {
+      "N": 1848,
+      "O": 1848,
+      "P_priv": 2772,
+      "S": 5544,
+      "n1": 0,
+      "n2": 0,
+      "n3": 1848,
+      "p": 2772
+    },
+    "coefficient_rows_O_n1_n2_n3_C": {
+      "private_assignment": [
+        6,
+        8,
+        8,
+        12,
+        -8
+      ],
+      "sum": [
+        9,
+        9,
+        9,
+        9,
+        -8
+      ],
+      "triple_companion": [
+        3,
+        1,
+        1,
+        -3,
+        0
+      ]
+    },
+    "cover_ratio": "8/9",
+    "covered_nonedges": 4158,
+    "dual_short_word_lower": 8778,
+    "edge_isolated_projective": 693,
+    "nonedge_projective_lower": 3696,
+    "outside_assignment": {
+      "assignments_per_private_label": 2,
+      "inequality": "3*O>=2*p",
+      "maximum_assignments_per_outside_circuit": 3,
+      "repeated_companions_and_translates_allowed": true,
+      "same_circuit_label_double_charge_excluded": true
+    },
+    "private_count": {
+      "covered_once_lower": "P_priv>=2*C-S",
+      "selected_incidences": "S=n1+2*n2+3*n3",
+      "size1_label_private_by_minimality": true,
+      "size2_or_3_private_lower": "p>=2*C-2*n1-2*n2-3*n3"
+    },
+    "ternary_scalars_per_projective_circuit": 2,
+    "total_projective_lower": 4389,
+    "triple_companions": {
+      "distinct_by_companion_involution": true,
+      "inequality": "O>=n3",
+      "may_overlap_private_assignment_pool": true,
+      "outside_by_cover_minimality": true
+    }
+  },
+  "format": "wave186-star-translation-cover-independent-verifier-v1",
+  "former_equality_Q_2079_excluded": true,
+  "global_status": "UNKNOWN",
+  "integrity": {
+    "entries_checked": 42,
+    "failures": [],
+    "lists_checked": [
+      {
+        "entries": 4,
+        "path": "attempts/wave186-star-translation-cover/input-freeze.sha256"
+      },
+      {
+        "entries": 9,
+        "path": "attempts/wave186-star-translation-cover/package-manifest.sha256"
+      },
+      {
+        "entries": 5,
+        "path": "verification/wave174-no-weight3-dual/package-manifest.sha256"
+      },
+      {
+        "entries": 8,
+        "path": "verification/wave179-global-transversal-circuits/package-manifest.sha256"
+      },
+      {
+        "entries": 8,
+        "path": "verification/wave180-capacity3-companion/package-manifest.sha256"
+      },
+      {
+        "entries": 8,
+        "path": "verification/wave181-c4-conic-equality/package-manifest.sha256"
+      }
+    ],
+    "passed": true,
+    "source_manifest_sha256": "a3c16f5f4877877bc27d9c9b3d3dfe92ca3afb7a465f1faf5e5f54b3cc3aeabc"
+  },
+  "limitations": [
+    "All conclusions are conditional on the rank-11 prism-free endpoint model.",
+    "The hostile arithmetic equality control is not a circuit cover.",
+    "No incompatible complete weight-enumerator upper bound is known.",
+    "Rank 11, endpoint existence, novelty, and Conway-99 remain UNKNOWN."
+  ],
+  "multiplicity_three": {
+    "companion_fixed_point_free_involution": true,
+    "companion_translate_intersection": 0,
+    "companion_weights": [
+      4,
+      5
+    ],
+    "conic_translate_intersection": 3,
+    "cross_circuit_forced_by_proper_star_independence": true,
+    "each_side_proper_star_subset": true,
+    "forced_other_circuits_per_label": 2,
+    "leaf_translate_contains_T": false,
+    "leaf_translate_profile": [
+      3,
+      6
+    ],
+    "leaf_translate_weight": 9,
+    "translate_distinct_from_both_companions": true
+  },
+  "multiplicity_two": {
+    "conic_profile": [
+      2,
+      2
+    ],
+    "cross_circuit_forced_by_proper_star_independence": true,
+    "each_side_proper_star_subset": true,
+    "each_translate_excludes_one_conic_coordinate": true,
+    "forced_other_circuits_per_label": 2,
+    "translate_profiles": [
+      [
+        6,
+        2
+      ],
+      [
+        2,
+        6
+      ]
+    ],
+    "translate_weights": [
+      8,
+      8
+    ],
+    "translated_circuits_distinct_by_dual_distance_four": true,
+    "translated_support_intersection": 2
+  },
+  "role": "verifier",
+  "source_checker_imported_or_executed": false,
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

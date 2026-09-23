@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "revision": "canonical-newline-v3",
+  "supersedes_manifest_sha256": "558a0cc0450058c6cd58092ac63510ae8fe20c1ac7e1cd0121302494b9c9bfc1",
+  "reason": "make published working-tree bytes identical to LF-normalizing Git publication bytes",
+  "classification": "provenance-only",
+  "chronology": [
+    {
+      "revision": "v1",
+      "manifest_sha256": "adc025f3020f992f6077c8d6006031688db424aa9ffbe5f33618679f95cfd37c",
+      "note": "initial frozen discovery package"
+    },
+    {
+      "revision": "public-hygiene-v2",
+      "manifest_sha256": "558a0cc0450058c6cd58092ac63510ae8fe20c1ac7e1cd0121302494b9c9bfc1",
+      "ledger": "attempts/wave19-alternate-frontier/public-redaction-v2.json",
+      "note": "workspace-path normalization only"
+    },
+    {
+      "revision": "canonical-newline-v3",
+      "note": "CRLF-to-LF normalization only"
+    }
+  ],
+  "normalization": {
+    "from": "CRLF",
+    "to": "LF",
+    "changed_file_count": 10,
+    "text_and_semantics_preserved": true,
+    "all_declared_text_artifacts_have_zero_CR_bytes": true
+  },
+  "changed_files": [
+    {
+      "path": "attempts/wave19-alternate-frontier/run.stderr.log",
+      "before_bytes": 120,
+      "before_sha256": "1564e3f8856830ef8242e132a643ba0fc2c5362d791c4e95600f7355c301c6aa",
+      "removed_CR_bytes": 3,
+      "after_bytes": 117,
+      "after_sha256": "7c3336e0f0c1de68ede56f22c6ac7a42e96abee2baa9b304196c4393231ecc39"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run2.stderr.log",
+      "before_bytes": 1561,
+      "before_sha256": "9ad7c45c4f8a9c1fc942cdf86e0d178130071d34848fcf0ab23a4db71bf08ca8",
+      "removed_CR_bytes": 17,
+      "after_bytes": 1544,
+      "after_sha256": "8756aa414ef2637a3b174403e2138e12648c2156cb0369f4f7f5b2db5af57823"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run3.stdout.log",
+      "before_bytes": 114,
+      "before_sha256": "74dc57e8068e4eb9a6c8202387aa6c813a363b0f63c10d3c6ba21a082aef8bfd",
+      "removed_CR_bytes": 3,
+      "after_bytes": 111,
+      "after_sha256": "5f322aa1a44d9d68a59c10395feeffcd2bc41fa153bcd19be9d4db2ff31a318c"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run3.stderr.log",
+      "before_bytes": 750,
+      "before_sha256": "c6f7af7497e29a1038614dfba74e5bd7c77a9f7e7ca991d76844f6c2e117143c",
+      "removed_CR_bytes": 10,
+      "after_bytes": 740,
+      "after_sha256": "dfa3d88b550069ae29724a1efb5e044f01d1fe48c475515a9738bbd1970d75ec"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run4.stderr.log",
+      "before_bytes": 120,
+      "before_sha256": "1564e3f8856830ef8242e132a643ba0fc2c5362d791c4e95600f7355c301c6aa",
+      "removed_CR_bytes": 3,
+      "after_bytes": 117,
+      "after_sha256": "7c3336e0f0c1de68ede56f22c6ac7a42e96abee2baa9b304196c4393231ecc39"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run5.stdout.log",
+      "before_bytes": 114,
+      "before_sha256": "74dc57e8068e4eb9a6c8202387aa6c813a363b0f63c10d3c6ba21a082aef8bfd",
+      "removed_CR_bytes": 3,
+      "after_bytes": 111,
+      "after_sha256": "5f322aa1a44d9d68a59c10395feeffcd2bc41fa153bcd19be9d4db2ff31a318c"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run5.stderr.log",
+      "before_bytes": 858,
+      "before_sha256": "d61e4781df4844ac9874fdd3f80dc5eb3ac515cfa4af78f7a78620238ab1340d",
+      "removed_CR_bytes": 12,
+      "after_bytes": 846,
+      "after_sha256": "e2b5c0c36c26d46eb178b56d3ad0fb26852282fbea3efb69d7cd52a9a8e0f92d"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run6.stdout.log",
+      "before_bytes": 158,
+      "before_sha256": "b32e33231a4338c71df29821c36cc2b95c108722ae04a5f8e7cc327645e42be6",
+      "removed_CR_bytes": 4,
+      "after_bytes": 154,
+      "after_sha256": "deaf5ed8d2877e1a9e69d6597a12ad309a7823c3caec34c7c1895487d07129f6"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/run7-verify.stdout.log",
+      "before_bytes": 158,
+      "before_sha256": "b32e33231a4338c71df29821c36cc2b95c108722ae04a5f8e7cc327645e42be6",
+      "removed_CR_bytes": 4,
+      "after_bytes": 154,
+      "after_sha256": "deaf5ed8d2877e1a9e69d6597a12ad309a7823c3caec34c7c1895487d07129f6"
+    },
+    {
+      "path": "attempts/wave19-alternate-frontier/tests-final.stderr.log",
+      "before_bytes": 1115,
+      "before_sha256": "24d8688776d4aecb9348e98ee8417054ef2e10cba6046299ead7ddc126c10d4f",
+      "removed_CR_bytes": 12,
+      "after_bytes": 1103,
+      "after_sha256": "91048326cc6b8b2c6a96711cfb25489797206d96c332adc7d3b1898cc8ad8615"
+    }
+  ],
+  "protected_mathematical_core_sha256": {
+    "attempts/wave19-alternate-frontier/exact_frontier.py": "960b3f85ea2bbdbf940c46875bac7520aa2b514a1068e75d419c8e489dedde7b",
+    "attempts/wave19-alternate-frontier/test_exact_frontier.py": "5271fc8c2358872c435d68b1e0ba9c0274ea509eed261fddd6bd512b0427d427",
+    "attempts/wave19-alternate-frontier/exact-results.json": "3e6c3016572c55aa15acc7b629a6a11b73cfce48f33e61ab1def2ebaf9b6f000",
+    "attempts/wave19-alternate-frontier/connected20-dispositions.txt": "ea4ce3e70e4e3dfc39befd952f633fc680642c5a6285d3ed08232d0d19f43cc6",
+    "attempts/wave19-alternate-frontier/disconnected20-dispositions.json": "491e7dddd7a5d630b546faf3a86d0aedf34e80bf02bf70d9c52112082d5d1c9b"
+  },
+  "mathematical_replay_required": false,
+  "target": "UNKNOWN",
+  "novelty": "UNKNOWN"
+}

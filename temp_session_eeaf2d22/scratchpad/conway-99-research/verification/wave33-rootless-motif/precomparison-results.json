@@ -1,0 +1,691 @@
+{
+  "actual_incidence_board": {
+    "board_columns": [
+      "u0",
+      "u1",
+      "u2"
+    ],
+    "board_rows": [
+      "t0",
+      "t1",
+      "t2"
+    ],
+    "candidate_condition": "one cell in each row and column; the three selected witnesses must additionally induce a graph triangle",
+    "derivation": "entry=lambda or mu minus common neighbors already lying in T union U",
+    "hostile_mu_3": {
+      "multiplicity_board": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          3
+        ]
+      ],
+      "passes_target_count": false,
+      "transversal_candidate_count": 22
+    },
+    "multiplicity_board": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ]
+    ],
+    "normalized_R2_cross_edges": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "transversal_candidate_count": 4,
+    "transversal_candidates": [
+      [
+        "w00",
+        "w11",
+        "w22a"
+      ],
+      [
+        "w00",
+        "w11",
+        "w22b"
+      ],
+      [
+        "w00",
+        "w12",
+        "w21"
+      ],
+      [
+        "w02",
+        "w11",
+        "w20"
+      ]
+    ]
+  },
+  "algebraic_local_nonforcing": {
+    "basis_order": [
+      "I",
+      "J",
+      "Gamma",
+      "C"
+    ],
+    "category_order": [
+      "D",
+      "Gamma",
+      "R0",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "common_R3_counts": [
+      0,
+      1
+    ],
+    "interpretation": "All bilinear contractions from the four-dimensional fused algebra agree, but the R3-R3 cell changes by one.",
+    "limitation": "These are nonnegative integral intersection tables satisfying the fused constraints; neither is asserted realizable by a global triangle configuration.",
+    "pair_scope": {
+      "formal_only": true,
+      "global_existence_of_such_pair": "NOT_PROVED",
+      "q_T": 2,
+      "q_U": 2,
+      "relation": "R2"
+    },
+    "shared_QGamma_contractions": [
+      [
+        0,
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        231,
+        18,
+        216
+      ],
+      [
+        0,
+        18,
+        2,
+        16
+      ],
+      [
+        2,
+        216,
+        16,
+        188
+      ]
+    ],
+    "shared_margins": [
+      1,
+      18,
+      22,
+      174,
+      6,
+      10
+    ],
+    "switch": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -4,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        -3,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    ],
+    "switch_row_sums": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "table_common_R3_one": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        4,
+        5,
+        4
+      ],
+      [
+        0,
+        16,
+        4,
+        149,
+        0,
+        5
+      ],
+      [
+        1,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        5,
+        0,
+        1
+      ]
+    ],
+    "table_common_R3_zero": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        13,
+        0,
+        5,
+        4
+      ],
+      [
+        0,
+        16,
+        0,
+        152,
+        0,
+        6
+      ],
+      [
+        1,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        6,
+        0,
+        0
+      ]
+    ],
+    "trace_contribution_for_unordered_R2_pair": [
+      0,
+      2
+    ]
+  },
+  "claim_label": "DERIVED_PRECOMPARISON",
+  "frozen_public_inputs": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave32-indecomposable/audit.md": "15285e618b3a38c91c5d2e373dcb859720a2062d9ca108cd79cae12506a53f44",
+    "verification/wave32-indecomposable/independent-results.json": "4b90ef54358a14abc92c925c8e0f94ed9510b4f80857fde5aa4e2abf4ba89e2a",
+    "verification/wave33-continuation-protocol.md": "b98b6bb8228b54b67cd949ee1bf6eb05ebd6ebe74f1cbc9e49b041a55e2d2fe6"
+  },
+  "fused_algebra_scope": {
+    "QGamma_entry_form_on_disjoint_pairs": "alpha+beta*r(T,U)",
+    "R2_matrix_in_QGamma": false,
+    "R3_matrix_in_QGamma": false,
+    "common_R3_determined_by_QGamma": false,
+    "common_R3_statistic": "(A_R3^2)_{T,U}",
+    "individual_relation_indicators_affine": {
+      "R0": false,
+      "R1": false,
+      "R2": false,
+      "R3": false
+    },
+    "scope_conclusion": "closure of N^T A^k N in Q[Gamma] cannot by itself determine the forbidden mixed motif"
+  },
+  "gamma_algebra": {
+    "Gamma_spectrum": {
+      "-3": 132,
+      "0": 44,
+      "18": 1,
+      "7": 54
+    },
+    "basis": [
+      "I",
+      "J",
+      "Gamma",
+      "C"
+    ],
+    "basis_evaluation_determinant": 48510,
+    "coefficient_order": [
+      "I",
+      "J",
+      "Gamma",
+      "C"
+    ],
+    "defining_relations": {
+      "C": "Gamma^2-5Gamma-18I",
+      "J": "(Gamma^3-4Gamma^2-21Gamma)/18"
+    },
+    "dimension": 4,
+    "minimal_polynomial": "x(x-18)(x-7)(x+3)",
+    "minimal_polynomial_expanded": "x^4-22x^3+51x^2+378x",
+    "multiplication": {
+      "C*C": [
+        72,
+        216,
+        -16,
+        -14
+      ],
+      "Gamma*C": [
+        -18,
+        18,
+        -2,
+        -1
+      ],
+      "Gamma*Gamma": [
+        18,
+        0,
+        5,
+        1
+      ],
+      "I*C": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "I*Gamma": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "I*I": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "I*J": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "J*C": [
+        0,
+        216,
+        0,
+        0
+      ],
+      "J*Gamma": [
+        0,
+        18,
+        0,
+        0
+      ],
+      "J*J": [
+        0,
+        231,
+        0,
+        0
+      ]
+    }
+  },
+  "hostile_wrong_C_coefficient": {
+    "hostile_Gamma_coefficient": -4,
+    "hostile_intersecting_entry": 1,
+    "hostile_still_represents_cross_edge_count": false,
+    "target_Gamma_coefficient": -5,
+    "target_intersecting_entry": 0
+  },
+  "incidence_transport": {
+    "all_nonnegative_k": "N^T A^k N=(Gamma+3I)(Gamma-4I)^k in Q[Gamma]",
+    "first_nine_exact_reductions": [
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          3,
+          0,
+          1,
+          0
+        ],
+        "k": 0,
+        "reduced_polynomial_coefficients_ascending": [
+          3,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          6,
+          0,
+          4,
+          1
+        ],
+        "k": 1,
+        "reduced_polynomial_coefficients_ascending": [
+          -12,
+          -1,
+          1,
+          0
+        ]
+      },
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          30,
+          18,
+          8,
+          -1
+        ],
+        "k": 2,
+        "reduced_polynomial_coefficients_ascending": [
+          48,
+          -8,
+          -5,
+          1
+        ]
+      },
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          42,
+          234,
+          40,
+          13
+        ],
+        "k": 3,
+        "reduced_polynomial_coefficients_ascending": [
+          -192,
+          -298,
+          -39,
+          13
+        ]
+      },
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          318,
+          3510,
+          56,
+          -25
+        ],
+        "k": 4,
+        "reduced_polynomial_coefficients_ascending": [
+          768,
+          -3914,
+          -805,
+          195
+        ]
+      },
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          186,
+          48690,
+          424,
+          181
+        ],
+        "k": 5,
+        "reduced_polynomial_coefficients_ascending": [
+          -3072,
+          -57286,
+          -10639,
+          2705
+        ]
+      },
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          3630,
+          684918,
+          248,
+          -481
+        ],
+        "k": 6,
+        "reduced_polynomial_coefficients_ascending": [
+          12288,
+          -796418,
+          -152685,
+          38051
+        ]
+      },
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          -1398,
+          9580194,
+          4840,
+          2653
+        ],
+        "k": 7,
+        "reduced_polynomial_coefficients_ascending": [
+          -49152,
+          -11185318,
+          -2126279,
+          532233
+        ]
+      },
+      {
+        "basis_coefficients_I_J_Gamma_C": [
+          44958,
+          134170470,
+          -1864,
+          -8425
+        ],
+        "k": 8,
+        "reduced_polynomial_coefficients_ascending": [
+          196608,
+          -156491954,
+          -29824085,
+          7453915
+        ]
+      }
+    ],
+    "hostile_shift_minus_3": {
+      "correct_shift": -4,
+      "hostile_shift": -3,
+      "passes": false,
+      "premise_balance": "(7I+A)N=N(3I+Gamma)"
+    },
+    "intertwining": "A N=N(Gamma-4I)",
+    "kernel_scope": "the Gamma=-3 eigenspace is killed by N^T N and contributes zero",
+    "limitation": "This covers vertex-walk contractions mediated by N; it does not place arbitrary triple-incidence tensors or individual R2/R3 relation matrices in Q[Gamma].",
+    "premises": [
+      "N N^T=7I+A",
+      "N^T N=3I+Gamma"
+    ]
+  },
+  "independence": {
+    "candidate_code_imported_or_executed": false,
+    "candidate_comparison_performed": false,
+    "candidate_files_inspected": false
+  },
+  "local_incidence_nonforcing": {
+    "conclusion": "the exact 3x3 board supplies four candidates but does not decide which candidate triples induce graph triangles",
+    "one_motif_control": {
+      "R2_pair_trace_contribution": 2,
+      "candidate_triangle_added": true,
+      "common_R3_count": 1,
+      "cross_pair_common_neighbor_board": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "degree_histogram": {
+        "2": 5,
+        "4": 3,
+        "5": 4,
+        "6": 2
+      },
+      "dropped_premises": [
+        "all lambda/mu constraints outside the nine T-U cross pairs",
+        "99-vertex size and degree 14",
+        "global triangle relation margins",
+        "projector, lattice, tensor, and Schur endpoint identities"
+      ],
+      "edge_count": 27,
+      "realized_transversal_triangles": [
+        [
+          "w00",
+          "w12",
+          "w21"
+        ]
+      ],
+      "status": "LOCAL_CROSS_PAIR_CONTROL_NOT_A_TARGET_GRAPH",
+      "vertex_count": 14
+    },
+    "scope": "local non-forcing only; neither control is globally admissible",
+    "shared_exact_cross_pair_lambda_mu": true,
+    "zero_motif_control": {
+      "R2_pair_trace_contribution": 0,
+      "candidate_triangle_added": false,
+      "common_R3_count": 0,
+      "cross_pair_common_neighbor_board": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "degree_histogram": {
+        "2": 8,
+        "5": 4,
+        "6": 2
+      },
+      "dropped_premises": [
+        "all lambda/mu constraints outside the nine T-U cross pairs",
+        "99-vertex size and degree 14",
+        "global triangle relation margins",
+        "projector, lattice, tensor, and Schur endpoint identities"
+      ],
+      "edge_count": 24,
+      "realized_transversal_triangles": [],
+      "status": "LOCAL_CROSS_PAIR_CONTROL_NOT_A_TARGET_GRAPH",
+      "vertex_count": 14
+    }
+  },
+  "role": "clean_room_adversarial_verifier_precomparison",
+  "schema_version": 1,
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "QGamma_multiplication": "INDEPENDENTLY_DERIVED",
+    "actual_R2_multiplicity_board": "INDEPENDENTLY_DERIVED",
+    "formal_table_nonforcing": "INDEPENDENTLY_DERIVED",
+    "four_transversal_candidates": "INDEPENDENTLY_DERIVED",
+    "global_motif_avoidance": "UNKNOWN",
+    "global_motif_forcing": "UNKNOWN",
+    "incidence_transport": "INDEPENDENTLY_DERIVED_WITH_SCOPE_LIMIT",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rootless_endpoint": "UNKNOWN"
+  }
+}

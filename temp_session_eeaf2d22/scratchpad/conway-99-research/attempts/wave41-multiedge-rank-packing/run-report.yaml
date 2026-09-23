@@ -1,0 +1,36 @@
+role: proof_a
+date_utc: 2026-07-27T05:02:46Z
+git_commit: 4f1754a28723a8e0e4ea3025312cd264b1b117d2
+claim_label: CANDIDATE
+scope: >
+  Full 39-point characteristic-seven rank equality for all-odd edge-local
+  types, structural compact-support kernel vectors in overlapping triangle
+  blocks, and bounded low-rank controls.
+inputs:
+  CONJECTURE.md: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  attempts/wave40-exact-coupling-model/exact-results.json: 8613c05c94a9a5f88c45eddbeccbf4c8906c3783aab25747e439f50423bde9ce
+  attempts/wave40-exact-coupling-model/subspace-certificate.json: 90b8eb3f88424ffe6ae7618a3063620a2dedff604ad2fac10894fb6278f17c9a
+  attempts/wave40-exact-coupling-model/full-block-scout-results.json: 9e03c6d3a465bbbebbe0837910732aeaedfe64a3a595da047f1255458d9ddcc3
+  verification/wave40-exact-coupling-model/independent-results.json: ff7916d0f5c74c47c8d7787c5cbcc84785cbccd3644d8d03d73e47b73908c0f5
+method: >
+  Eliminate one invertible matching fibre from the cubic-core Laplacian;
+  exhaust the 576 diagonal-isotropy assignments for the four all-odd
+  alternating types; test the unique surviving 3+3 Schur target; derive
+  K(A+4I)=0 from the SRG polynomial; and construct exact generic and
+  triangle-free three-fibre controls.
+command: |
+  .\.venv\Scripts\python.exe -B attempts\wave41-multiedge-rank-packing\exact_check.py --verify attempts\wave41-multiedge-rank-packing\exact-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave41-multiedge-rank-packing -p "test_*.py" -v
+outputs:
+  attempts/wave41-multiedge-rank-packing/exact_check.py: 787cd80f79517fa455221c0222dfc709b10f15b8524804019e5cc72d1c5b76de
+  attempts/wave41-multiedge-rank-packing/test_exact_check.py: a35fd813d29056f261a70be6cfda0adb3d4d5cd912cc6a4454f46843c0e9fd33
+  attempts/wave41-multiedge-rank-packing/exact-results.json: 0c20f53b056e0b94f14094d46d957b1b4c5ccd5c6c1920de80ea8ce4e49fdac1
+  attempts/wave41-multiedge-rank-packing/README.md: 249ae1cfc99b538709c36f5140470e14e79ba6197b62e508b85458593c7cef56
+  attempts/wave41-multiedge-rank-packing/failed-routes.md: 074ecd2c65ac963c7a9e16d226e013ad382fdf264a8ece0f766c7b7799081a0b
+limitations:
+  - Discovery cannot verify itself.
+  - The rank-26 implication requires an all-odd edge type.
+  - Equality for the seven even-part types remains unresolved.
+  - The low-rank controls are local relaxations and not completed graphs.
+  - The seven-star 49-block was not glued or exhaustively enumerated.
+  - No endpoint exclusion, upper-bound improvement, construction, or novelty claim is made.

@@ -1,0 +1,241 @@
+{
+  "candidate_theorem": {
+    "endpoint_excluded": false,
+    "general_upper_bound_improved_below_4158": false,
+    "new_conditional_floor": 22,
+    "previous_verified_endpoint_floor": 19,
+    "statement": "If n3=4158 for a hypothetical srg(99,14,1,2), then rank_F7(M)>=22."
+  },
+  "case_analysis": {
+    "r7=19": {
+      "contradiction": "All outside columns would lie in col(B), but none of the 144 required z-neighbor columns does.",
+      "forced_edge_types": [
+        "2+2+2"
+      ],
+      "quotient_dimension_at_most": 0
+    },
+    "r7=20": {
+      "contradiction": "The twelve distinct Z patterns would lie on one quotient line, but every line contains at most four patterns.",
+      "forced_edge_types": [
+        "2+2+2"
+      ],
+      "quotient_dimension_at_most": 1
+    },
+    "r7=21": {
+      "all_2+2+2_branch": "Otherwise every edge is 2+2+2. The twelve Z patterns must form a perfect matching inside a quotient subspace of dimension at most two. All 1,923 two-spaces have matching number at most eight.",
+      "possible_edge_types": [
+        "2+2+2",
+        "2+4"
+      ],
+      "type_2+4_branch": "If a 2+4 edge exists, rank(B)=rank(K)=21, yet none of its 144 required z-neighbor columns lies in col(B)."
+    }
+  },
+  "claim_label": "CANDIDATE",
+  "format": "wave40-rank19-equality-v1",
+  "frozen_inputs": {
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "verification/2026-07-27-wave39-orchestrator.md": "094db8281faf23f402f5093a617c43ebe428dae6f8ce1eceae8621472fc37111",
+    "verification/wave39-edge-local-rank/independent-results.json": "85b8d36d6ce5ebd638e957e1731864eff75f38405935f5e51ad5b629edea5966",
+    "verification/wave39-edge-local-rank/run-report.yaml": "0c16b53a1015f2aa8cd5e96767a97736c1da5ced6691d8ad4085f6579b44cad1"
+  },
+  "git_commit": "6b28af70c67f062d687251494a047debe70a246f",
+  "limitations": [
+    "Discovery cannot verify itself; independent verification is required.",
+    "The theorem is conditional on the prism-free endpoint.",
+    "Ranks 22 through 44 are not excluded.",
+    "No graph, endpoint contradiction, or upper bound below 4158 is produced.",
+    "K^2=0 is a frozen consistency identity but is not needed by this obstruction.",
+    "Literature novelty and priority remain UNKNOWN."
+  ],
+  "local_blocks": {
+    "2+2+2": {
+      "column_space_survivors_by_z_flag": {
+        "0": 36
+      },
+      "columns_in_local_column_space": 36,
+      "combined_outside_pattern_count": 4500,
+      "non_z_pattern_count": 4356,
+      "non_z_patterns_passing_visible_lambda_cap": 4116,
+      "nullity_F7": 8,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "quotient_census_for_z_neighbors": {
+        "line_pattern_multiplicity_distribution": {
+          "2": 60,
+          "4": 6
+        },
+        "maximum_matching_in_a_two_space": 8,
+        "maximum_patterns_on_one_line": 4,
+        "projective_line_count": 66,
+        "two_space_count": 1923,
+        "two_space_edge_count_distribution": {
+          "16": 3,
+          "4": 1536,
+          "6": 336,
+          "8": 48
+        },
+        "two_space_matching_number_distribution": {
+          "2": 480,
+          "4": 1251,
+          "6": 168,
+          "8": 24
+        }
+      },
+      "rank_22_positive_control": {
+        "canonical_first_witness": {
+          "basis": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              4,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              3,
+              5,
+              0,
+              5
+            ]
+          ],
+          "contained_edge_count": 12,
+          "perfect_matching": [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              1
+            ]
+          ]
+        },
+        "meaning": "A quotient of dimension three can contain all twelve forced Z patterns, so this local argument does not exclude r7=22.",
+        "three_space_count": 25744,
+        "three_spaces_supporting_a_perfect_matching": 32
+      },
+      "rank_F7": 19,
+      "wrong_adjacency_indicator_survivor_count": 0,
+      "z_neighbor_columns_in_local_column_space": 0,
+      "z_neighbor_pattern_count": 144
+    },
+    "2+4": {
+      "nullity_F7": 6,
+      "partition": [
+        2,
+        4
+      ],
+      "rank_F7": 21,
+      "z_neighbor_columns_in_local_column_space": 0,
+      "z_neighbor_pattern_count": 144
+    }
+  },
+  "novelty_status": "UNKNOWN",
+  "outside_geometry": {
+    "complete_pattern_counts": {
+      "a_z=0": "binom(12,2)^2=4356",
+      "a_z=1": "12*12=144"
+    },
+    "distinctness": "The perfect-matching property already makes the twelve patterns distinct; alternatively, equal patterns would give two vertices at least three common neighbors, contradicting lambda=1 or mu=2.",
+    "forced_perfect_matching": "For each u in X, the nonedge uz has common neighbor x and one further common neighbor in Z; similarly for Y. Hence the twelve Z patterns form a perfect matching X--Y.",
+    "local_set": "L={x,y,z} union X union Y",
+    "outside_vertex_equations": [
+      "w is nonadjacent to x and y",
+      "a_z+|N(w) intersect X|=mu=2",
+      "a_z+|N(w) intersect Y|=mu=2"
+    ],
+    "restricted_column": "K[L,w]=1-2*A[L,w], i.e. 1 on nonedges and 6 on edges",
+    "sizes": {
+      "L": 27,
+      "X": 12,
+      "Y": 12,
+      "outside": 72
+    },
+    "triangle_mate_set": "Z=N(z)-{x,y} has size 12 and lies outside L, because z has no neighbor in X or Y."
+  },
+  "premises": {
+    "endpoint": "n3=4158, equivalently no induced triangular prism",
+    "identities": [
+      "K^2=0",
+      "rank_F7(K)=rank_F7(M)=r7"
+    ],
+    "matrix": "K=N M N^T=J-I-2A over F_7",
+    "verified_endpoint_local_types": {
+      "2+2+2": 19,
+      "2+4": 21,
+      "3+3": 25,
+      "6": 23
+    }
+  },
+  "rank_completion": {
+    "block_form": "K=[[B,C],[C^T,D]] with B=K[L,L]",
+    "dimension_bounds": "col(B) subseteq R and dim(R)<=rank(K)",
+    "equality_case": "If rank(K)=rank(B), every outside restricted column K[L,w] lies in col(B).",
+    "quotient_bound": "dim(R/col(B))<=rank(K)-rank(B)",
+    "restriction_space": "R=col([B,C]) is the restriction to L of the full column space",
+    "syndrome_identification": "Because B is symmetric, col(B)=ker(B)^perp; the eight (or six) kernel dot products identify F_7^L/col(B)."
+  },
+  "role": "proof_a",
+  "scope": "Conditional characteristic-seven equality-regime obstruction at the prism-free endpoint n3=4158",
+  "target_status": "UNKNOWN"
+}

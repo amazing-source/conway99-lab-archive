@@ -1,0 +1,72 @@
+role: literature
+date_utc: "2026-07-23T23:12:22.613Z"
+git_commit: "1f22323a2805e3e24f7848d53f2f4813e236fae9"
+claim_label: UNKNOWN
+scope: >-
+  Literature and novelty audit only for the hypothetical n3 = 708 endpoint,
+  abstract scaled-dual survivor E8^5 orthogonal-sum A2^2, and the claim that
+  additional 231-row projector/Hadamard-square rules exclude any orthogonal
+  A2 summand. Proof validity and endpoint existence were not assessed.
+inputs:
+  - path: "verification/wave26-literature-audit/protocol-freeze.md"
+    sha256: "e18b84021ab9c2c9df7ca21378cde276d614eb728239fec9f3d7d04cfdffcaa9"
+  - path: "agents/2026-07-23-wave26-a2-frame-obstruction.md"
+    sha256: "2870c4b9195d5569655fded93a7d1b3d4131663e3ef37ce2ef346c03cf8f2925"
+  - path: "agents/2026-07-23-wave26-a2-cubic-obstruction.md"
+    sha256: "da701181c9d591498cf112ab8b0342d09d3ada4094396cebebe3e0dd81c44d1a"
+  - path: "verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md"
+    sha256: "5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3"
+  - path: "attempts/wave26-a2-frame-obstruction/run-report.yaml"
+    sha256: "7cd99c1a5a3443bc85a0f372f29685217a4e315d44c9124cd3b003f352317f3e"
+  - path: "attempts/wave26-a2-cubic-obstruction/run-report.yaml"
+    sha256: "008a154f928d64c5c3fbc672ce0aabc1115a84984e9d6d231757016bdb2b2003"
+  - path: "verification/global-schur/2026-07-23T170612Z-status-literature-audit.md"
+    sha256: "b3a7b0a882e7f822ae6e2ed08df4314357d5d554903f788305979e03b08fc651"
+  - path: "verification/global-schur/2026-07-23T170612Z-status-source-query-ledger.json"
+    sha256: "127b5d99e5145291bcb3b307ebcd3047b5b3c891fccfd02fad25af0e5b422dd9"
+method: >-
+  Froze the statement, exact 28-query set, sources, relevance classes, and
+  status rules before artifact inspection. Then used repository artifacts only
+  to disambiguate terminology; attempted every frozen query against Crossref,
+  OpenAlex, zbMATH Open, arXiv, and DuckDuckGo HTML; ran one logged
+  terminology-sharpening web-search round; inspected primary or authoritative
+  source records; and performed one outward citation/reference chase. Applied
+  conservative CITED/UNKNOWN labels and treated scoped non-discovery as neither
+  nonexistence nor novelty evidence.
+command: >-
+  python verification/wave26-literature-audit/collect-search-results.py
+outputs:
+  - path: "verification/wave26-literature-audit/audit-report.md"
+    sha256: "ccb3dbbbb1dcff3b8d6f4278a144d29ea4cfe05596031598b6aecbd731a3a566"
+  - path: "verification/wave26-literature-audit/sources.md"
+    sha256: "9f2ec5a16e67166c8ccdaeafa217e4d8cc12b820bd4c6504ac8b2978be0f8d0b"
+  - path: "verification/wave26-literature-audit/bibliography.bib"
+    sha256: "d31630e438363bf2b6ea137303e787c2fd663c5c4bfb979c3b2a3049b5d81d37"
+  - path: "verification/wave26-literature-audit/query-ledger.json"
+    sha256: "a0f2b2b19848313e676f455ec72e0cc0a5383871e394f7f1f394177582353e0d"
+  - path: "verification/wave26-literature-audit/query-log.md"
+    sha256: "2b1c2742f64e80a0c2578d7f6a5d4aafdf0e1284732ecc506596dd394ad83d5a"
+  - path: "verification/wave26-literature-audit/failures-limitations.md"
+    sha256: "94e26223d42922dfd06f1db951e1024681607f71012f8dd750058ceba9009c98"
+  - path: "verification/wave26-literature-audit/collect-search-results.py"
+    sha256: "45185c3db5e3d586a9ed5c11df967b4110e9f51d776fcb82fb653b956390c931"
+limitations:
+  - >-
+    No direct or near-direct match was found in the scoped search, but global
+    novelty remains UNKNOWN.
+  - >-
+    Crossref rate-limited five requests; DuckDuckGo blocked all automated
+    requests; zbMATH returned its explicit no-results 404 response for all
+    queries; and all services were limited to first-page or first-20 results.
+  - >-
+    Search ranking and indexes are time-dependent, and English/notation-driven
+    queries cannot exhaust unpublished, unindexed, or differently worded work.
+  - >-
+    Generic A2 compatibility with tightness, strong eutaxy, and antipodal odd
+    moments does not adjudicate an obstruction using stronger discrete data.
+  - >-
+    Transient bulk search responses were deleted after compact metadata
+    derivation and are not publication evidence.
+  - >-
+    No Git operation was run; git_commit was copied from inspected Wave 26 run
+    reports and was not independently queried.

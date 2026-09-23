@@ -1,0 +1,279 @@
+{
+  "Fricke_Poisson": {
+    "general_raw": "Phi_K(-1/(7tau),z/(7tau))=-7^(q/2)*tau^22*exp(20*pi*i*z^2/tau)*Phi_L(tau,z)",
+    "index_change": "70 to 10",
+    "rank28_q16_normalized_factor": "-7^-3",
+    "rank28_q16_raw_factor": "-7^8",
+    "rank30_q14_normalized_factor": "-7^-4",
+    "rank30_q14_raw_factor": "-7^7",
+    "z_zero_control": "recovers the verified scalar Fricke relation"
+  },
+  "alternating_vector": {
+    "definition": "d_C=sum epsilon_i*u_i",
+    "divisibility_in_L": 1,
+    "divisibility_reason": "the induced-C4 incidence equations sum k_v=48 and sum binom(k_v,2)=4 for outside vertices, forcing an outside vertex adjacent to exactly one cycle vertex; its frame vector u_v in M subset L pairs +/-1 with d_C",
+    "epsilon": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "gram_times_epsilon": [
+      "5",
+      "-5",
+      "5",
+      "-5"
+    ],
+    "membership": "d_C in M subset L because sum epsilon_i=0",
+    "norm": 20,
+    "pairing_one_witness_counts": {
+      "conclusion": "at least one outside vertex has k_v=1",
+      "external_C4_edges": 48,
+      "external_common_neighbor_pairs": 4
+    },
+    "primitive_in_L": true,
+    "primitivity_reason": "d_C=k*e in even L would require 20/k^2 to be an even integer; no k>1 works"
+  },
+  "claim_label": "VERIFIED_WITH_CLARIFICATIONS",
+  "clarifications": [
+    "The q^10/r=28 incidence interpretation is justified only after importing the independently verified Wave96 norm-20 dictionary.",
+    "The 20-component theta/Fricke reduction is exact, but no spanning modular basis or finite certification bound is supplied.",
+    "The explicit null table satisfies the new second moment but is not an all-orders Jacobi form."
+  ],
+  "coefficient_interpretation": {
+    "antipodal_counting": "one of each antipodal pair contributes at r=28 and the other at r=-28",
+    "ell_C": "sum epsilon_i*t_i",
+    "equivalence": "ell_C=4 iff t_C=(1,-1,1,-1)",
+    "norm20_justification": "verified Wave96: the nonintegral floor is 22 and the only norm-20 profile is ten +1 and ten -1",
+    "norms_with_verified_unit_alphabet": [
+      14,
+      16,
+      18,
+      20
+    ],
+    "pairing": "<sqrt(7)y,b_C>=7*ell_C",
+    "q_exponents_with_exact_alternating_interpretation": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "target_r": 28
+  },
+  "conditional_scope": "primitive scalar C4 Jacobi marking for hypothetical srg(99,14,1,2), using verified rank-28 and rank-30 inputs",
+  "degree_eight_indicator": {
+    "Taylor_weights": [
+      22,
+      24,
+      26,
+      28,
+      30
+    ],
+    "coefficients_low_to_high": [
+      "0",
+      "0",
+      "-1/560",
+      "0",
+      "7/2880",
+      "0",
+      "-1/1440",
+      "0",
+      "1/20160"
+    ],
+    "formula": "product_(j=0)^3 (ell^2-j^2)/(16-j^2)",
+    "selected_values": [
+      -4,
+      4
+    ],
+    "verified_domain": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "evidence_boundary": {
+    "Conway_99": "UNKNOWN",
+    "Jacobi_Sturm_or_valence_bound": false,
+    "cap24": "UNKNOWN",
+    "cap25": "UNKNOWN",
+    "complete_weight43_over2_component_basis": false,
+    "exact_upper_dual": false,
+    "novelty": "UNKNOWN",
+    "rank28_excluded": false,
+    "rank30_excluded": false
+  },
+  "format": "wave124-independent-verification-v1",
+  "frozen_discovery_manifest_sha256": "fbdaa5071229c921fdf652a91eaa895f57ce1d31f726cb4f465f0356a6dfec55",
+  "incidence_targets": {
+    "rank28_q16": {
+      "antipodal_lower": 52812,
+      "cap25_capacity": 51975,
+      "cap25_proved": false,
+      "gap": 837,
+      "q_range": [
+        7,
+        8,
+        9
+      ]
+    },
+    "rank30_q14": {
+      "antipodal_lower": 51315,
+      "cap24_capacity": 49896,
+      "cap24_proved": false,
+      "gap": 1419,
+      "q_range": [
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "markings": {
+    "K": {
+      "Jacobi_index": 70,
+      "definition": "b_C=sqrt(7)*d_C",
+      "divisibility": 7,
+      "membership": "K=sqrt(7)L* because d_C in L subset L*",
+      "norm": 140,
+      "primitive": true
+    },
+    "L": {
+      "Jacobi_index": 10,
+      "definition": "d_C",
+      "divisibility": 1,
+      "norm": 20,
+      "primitive": true
+    },
+    "Wave116_comparison": {
+      "index_reduction_factor": 9,
+      "old_K_index": 630,
+      "old_L_index": 90,
+      "old_marking": "h_C=3*b_C"
+    }
+  },
+  "null_control": {
+    "actual_second_moment": 543435480,
+    "checks": [
+      "nonnegative integral",
+      "r-to-minus-r symmetry",
+      "r divisible by 7",
+      "Jacobi support",
+      "z=0 row sum",
+      "tight-frame second moment"
+    ],
+    "coefficients": {
+      "c(7,-28)": 52812,
+      "c(7,-42)": 130563,
+      "c(7,0)": 11832822,
+      "c(7,28)": 52812,
+      "c(7,42)": 130563
+    },
+    "not_Fricke_complete": true,
+    "not_a_Jacobi_form": true,
+    "required_second_moment": 543435480,
+    "row_sum": 12199572,
+    "scalar_prefix": {
+      "x7": 5868,
+      "x8": 0,
+      "x9": 0
+    },
+    "target_antipodal_incidence": 52812
+  },
+  "support": {
+    "all_target_coefficients_permitted": true,
+    "condition": "4*70*n-r^2>=0",
+    "margins": {
+      "10": 2016,
+      "7": 1176,
+      "8": 1456,
+      "9": 1736
+    },
+    "target_r": 28
+  },
+  "theta_decomposition": {
+    "K_divisibility": 7,
+    "component_Fricke_general": "sqrt(-i*tau/20)*sum_s exp(-pi*i*s*t/10)*H_s(-1/(7tau))=-7^(q/2)*tau^22*G_t(tau)",
+    "component_count": 20,
+    "component_weight": "43/2",
+    "even_component_count": 11,
+    "identity": "theta_(70,7s)(tau,z)=theta_(10,s)(7tau,7z)",
+    "live_K_residues": [
+      0,
+      7,
+      14,
+      21,
+      28,
+      35,
+      42,
+      49,
+      56,
+      63,
+      70,
+      77,
+      84,
+      91,
+      98,
+      105,
+      112,
+      119,
+      126,
+      133
+    ],
+    "ordinary_index70_residues": 140,
+    "theta_S_transform": "theta_(10,s)(-1/tau,z/tau)=sqrt(-i*tau/20)*exp(20*pi*i*z^2/tau)*sum_t exp(-pi*i*s*t/10)*theta_(10,t)(tau,z)"
+  },
+  "tight_frame_second_moment": {
+    "C4_counts": {
+      "cycles_through_edge": 12,
+      "cycles_through_vertex": 84,
+      "cycles_with_nonedge_as_diagonal": 1
+    },
+    "L_frame_operator": "sum_C d_C*d_C^T=945I",
+    "L_identity": "sum_C <x,d_C>^2=1890*n for norm(x)=2n",
+    "coordinate_matrix": "83I-13A+J",
+    "forced_L_coefficient": {
+      "coefficient": [
+        10,
+        20
+      ],
+      "reason": "for each C, norm(x)=norm(d_C)=20 and <x,d_C>=20 imply x=d_C by equality in Cauchy-Schwarz",
+      "value": 2079
+    },
+    "identity_ell": "sum_C ell_C^2=135*||t||^2=270*n",
+    "identity_r": "sum_C r_C^2=49*270*n=13230*n",
+    "minus4_eigenvalue": 135,
+    "shell_rows": {
+      "10": {
+        "K_squared_norm": 20,
+        "sum_C_ell_C_squared_per_vector": 2700,
+        "sum_C_r_C_squared_per_vector": 132300,
+        "target_support_margin": 2016
+      },
+      "7": {
+        "K_squared_norm": 14,
+        "sum_C_ell_C_squared_per_vector": 1890,
+        "sum_C_r_C_squared_per_vector": 92610,
+        "target_support_margin": 1176
+      },
+      "8": {
+        "K_squared_norm": 16,
+        "sum_C_ell_C_squared_per_vector": 2160,
+        "sum_C_r_C_squared_per_vector": 105840,
+        "target_support_margin": 1456
+      },
+      "9": {
+        "K_squared_norm": 18,
+        "sum_C_ell_C_squared_per_vector": 2430,
+        "sum_C_r_C_squared_per_vector": 119070,
+        "target_support_margin": 1736
+      }
+    }
+  }
+}

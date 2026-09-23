@@ -1,0 +1,70 @@
+{
+  "claim_label": "CANDIDATE",
+  "format": "wave42-rank26-equality-even-v1",
+  "inputs": {
+    "verification/wave41-rank26-secondary/secondary_check.py": "3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3"
+  },
+  "limitations": [
+    "Discovery cannot verify itself.",
+    "This output covers only the partition types explicitly listed.",
+    "No graph, endpoint exclusion, n3 upper-bound improvement, novelty, or priority claim is made."
+  ],
+  "mathematical_reduction": {
+    "formula": "rank(K39)=(25-2e)+2 rank(F)+rank(B)",
+    "rank26_criterion": "rank(F)=e and rank(B)=1",
+    "rank_one_diagonal_filter": "nonzero symmetric rank one has a nonzero diagonal pivot and all nonzero diagonal entries in one F7 square class"
+  },
+  "partitions": {
+    "3+2+1": {
+      "completeness": "Every minimum-F labelled permutation from the verified complete Wave 41 subspace cover is grouped by its exact canonical right kernel. For each permutation, every one of the 10,395 labelled third-fibre matchings is tested. The quadratic-character diagonal condition only removes matrices that cannot be symmetric rank one; all survivors receive exact F_7 rank.",
+      "diagonal_candidate_pairs": 154980,
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "exact_rank_one_residual_pairs": 0,
+      "kernel_records": [
+        {
+          "diagonal_candidate_pairs": 77490,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 40320,
+          "right_kernel_sha256": "babb84da6a7ed5e591acc7de61faaa5edf5d87f0ce1322b225ce882621af66ae"
+        },
+        {
+          "diagonal_candidate_pairs": 77490,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 40320,
+          "right_kernel_sha256": "74efdc8e03e6914de5f84fcc660d4bdd96b7a5a5c83bce5362c7b1d73335f828"
+        }
+      ],
+      "kernel_target_stream_sha256": "aba06bd25f09d42e1e03705f6ea6ee96da83f59fb27a70c73a4c3fb25f100053",
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 838252800,
+      "minimum_F_permutations": 80640,
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "pairing_stream_sha256": "163338aaa1b82377f918259aa1d4284cef991064e31e63dc6163bc64c05c4b06",
+      "partition": [
+        3,
+        2,
+        1
+      ],
+      "permutation_stream_sha256": "a60401206eac58e270361adc7bf58741e2757bdee25f9d34b6b2b437e5e6183b",
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 23
+    }
+  },
+  "scope": "Complete rank-26 equality classification for the selected even-part edge-local types.",
+  "totals": {
+    "diagonal_candidate_pairs": 154980,
+    "exact_rank_one_residual_pairs": 0,
+    "minimum_F_R_pairs": 838252800,
+    "partition_types": 1,
+    "rank26_exists": false
+  }
+}

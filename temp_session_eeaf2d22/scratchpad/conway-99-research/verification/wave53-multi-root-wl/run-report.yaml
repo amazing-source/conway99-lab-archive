@@ -1,0 +1,89 @@
+role: verifier
+date_utc: 2026-07-27T20:41:03Z
+git_commit: a4a61658356253fb95cf68252c972a4f79df38fe
+claim_label: VERIFIED
+scope: >-
+  Independent verification of the finite two-root cap-incidence CSPs for root
+  relations K, B, C, and D; exact stable 2-WL partitions and intersection
+  parameters; and folklore 3-WL on the typed triangle cores. The prism-free
+  endpoint and Conway-99 are outside the verified scope and remain UNKNOWN.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: STRUCTURE.md
+    sha256: 71b0b404d09d3ca6f84966b0841a7a2f09e9d715e7833e3511174067f7f7c701
+  - path: attempts/wave53-multi-root-wl/exact-result.json
+    sha256: d99d89ef56cbd1f603cc8668b340bd7ad20993570899eaf556ee4c9a7f400717
+  - path: attempts/wave53-multi-root-wl/multi_root_wl.py
+    sha256: 870cc57ea31ea60dc27046f5c9dce69c2f2e1195ccf5221e874ac5efea5321d3
+  - path: agents/2026-07-27-wave53-multi-root-wl.md
+    sha256: 853442ff2639fe7b6e0b63376a52cf8cd7bb2079eda6bb0819128e038832caa8
+  - path: verification/wave53-multi-root-wl/protocol.md
+    sha256: f188f1e2b2b8c0c886da4cc49e673d8924a97614566767fcac9ff086947343a6
+method: >-
+  Freeze the claim surface; reconstruct both rooted 3K6 systems directly from
+  the srg(99,14,1,2) local equations; merge candidates only by unordered
+  actual-triangle identity; retain and check all 72 exact-two caps; derive the
+  B shared forced truth from lambda=1 and the prism-free scope; run exact
+  canonical 2-WL and correlated-replacement folklore 3-WL; check every stable
+  2-WL color class for constant intersection counters; rerun both closures
+  under nonidentity vertex permutations; compare the stored 2-WL partition and
+  entire intersection tensor under the independently derived node/color
+  bijections; and construct distinct positive local controls post hoc.
+command: |-
+  python -B verification\wave53-multi-root-wl\independent_check.py --discovery attempts\wave53-multi-root-wl\exact-result.json --output-dir verification\wave53-multi-root-wl
+  python -B -m unittest discover -s verification\wave53-multi-root-wl -p "test_*.py" -v
+  python -B -m unittest discover -s attempts\wave53-multi-root-wl -p "test_*.py" -v
+  python -B attempts\wave53-multi-root-wl\multi_root_wl.py --verify attempts\wave53-multi-root-wl\exact-result.json --envelope-only
+outputs:
+  - path: verification/wave53-multi-root-wl/independent_check.py
+    sha256: 73c1e60ab62adfba1cb5db89c156290201f0dab24d9a2c9e9d6d7d30b2da179c
+  - path: verification/wave53-multi-root-wl/test_independent_check.py
+    sha256: 105d38907413f518ea2f9224d0a9d4e9521f4cd4da9fe10c197a57579c28ce94
+  - path: verification/wave53-multi-root-wl/independent-result.json
+    sha256: c3fdc9d6e29ce64ef0327873364d17985806854475b383ac24e512bd20322862
+  - path: verification/wave53-multi-root-wl/records/K.json
+    sha256: 409c8e308bfa16038f5b11cb3ba16d1c609ecd4d3b1d43a0d2e4490f9e1a6178
+  - path: verification/wave53-multi-root-wl/records/B.json
+    sha256: d67da706afd87580133ad736a06b5fd78872138ee6a0c3e0810b7e01de93925d
+  - path: verification/wave53-multi-root-wl/records/C.json
+    sha256: 09a13f0648daa1ef1614de47d4ccf45d784f5308f38f6ad421188439eb849bc5
+  - path: verification/wave53-multi-root-wl/records/D.json
+    sha256: c2a103e3093373bc76c5470c275a76a9738a02fdcc33f7820f3e8f66de67473d
+  - path: verification/wave53-multi-root-wl/execution.log
+    sha256: ec419c4e5db500c80cf83a06dcc51f0d1f446ff0c8a71dc8a2d4b47c11cdcc3d
+result:
+  common_K_neighbor_counts: {K: 5, B: 2, C: 1, D: 0}
+  expanded_orders: {K: 319, B: 323, C: 325, D: 326}
+  stable_2wl_color_counts: {K: 285, B: 584, C: 321, D: 63}
+  stable_3wl_color_counts: {K: 107, B: 321, C: 240, D: 61}
+  nonzero_intersection_counts: {K: 11268, B: 32018, C: 12562, D: 1600}
+  B_shared_candidate_forced_true: true
+  positive_local_controls: [K, B, C, D]
+  numerical_corrections: []
+  root_relations_excluded: []
+  endpoint: UNKNOWN
+  conway_99: UNKNOWN
+tests:
+  independent_hostile_tests: "PASS: 12 tests"
+  discovery_tests_advisory_only: "PASS: 11 tests"
+  discovery_exact_envelope: >-
+    PASS; sha256
+    d99d89ef56cbd1f603cc8668b340bd7ad20993570899eaf556ee4c9a7f400717
+  discovery_manifests: "PASS: every referenced path/hash matches"
+  stable_2wl_partition_comparison: "PASS for K,B,C,D"
+  exact_intersection_tensor_comparison: "PASS for K,B,C,D"
+  permutation_invariance: "PASS for exact 2-WL and 3-WL in K,B,C,D"
+  memory_floor: "PASS: 15 percent enforced; observed checkpoints above 52 percent free"
+limitations:
+  - >-
+    Discovery exact-result.json omits the 3-WL triple-color vector, so its
+    stored tuple-partition hash is not reconstructible from that JSON alone.
+    Independent counts and complete class-size multisets were recomputed and
+    match; independent records retain the full triple-color vectors.
+  - "The verified structures are finite two-root local relaxations."
+  - "The numerical exact-two right side is checked separately from the WL token structure."
+  - "Positive controls prove only local cap feasibility and are not graph constructions."
+  - "No endpoint exclusion, improved n3 bound, or Conway-99 resolution follows."

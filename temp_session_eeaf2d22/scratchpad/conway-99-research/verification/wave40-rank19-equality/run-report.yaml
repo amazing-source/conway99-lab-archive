@@ -1,0 +1,54 @@
+role: verifier
+date_utc: "2026-07-27T03:21:51Z"
+git_commit: "6b28af70c67f062d687251494a047debe70a246f"
+claim_label: VERIFIED
+scope: >-
+  Conditional theorem that n3=4158 implies rank_F7(M)>=22 for a
+  hypothetical srg(99,14,1,2).
+inputs:
+  - path: verification/wave40-rank19-equality/input-freeze.sha256
+    sha256: ca895db53c1f7bb6750f688d6427252865246ef75b7999e107615309970e3456
+method: >-
+  Clean-room reconstruction of the 2+2+2 and 2+4 edge-local blocks from
+  lambda=1 and mu=2; proof that the twelve outside z-neighbors induce a
+  bijection X->Y; exact F7 quotient syndromes for all 144 patterns;
+  projective line, generated two-space, and generated three-space
+  canonicalization; exact bipartite matching; rank-completion proof audit;
+  and hostile mutation tests. No discovery code was imported or executed.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave40-rank19-equality -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  verification\wave40-rank19-equality\independent_check.py --verify
+  verification\wave40-rank19-equality\independent-results.json
+outputs:
+  - path: verification/wave40-rank19-equality/independent_check.py
+    sha256: 1a0bff7acc3b93e68cecb4ab2f90ace5d054b8d8692c965f21698fb493bb5189
+  - path: verification/wave40-rank19-equality/test_independent_check.py
+    sha256: 2e28e59c0b84102d9da6d2276d2f78e717a28fe01f0f38207ff0802d119b15bc
+  - path: verification/wave40-rank19-equality/independent-results.json
+    sha256: b6d555b2937b3d0d93b65ee53a413e692c3f721bd483997bc12bd2757a7850be
+  - path: verification/wave40-rank19-equality/README.md
+    sha256: edf2b4d9629cf3a87bbcd1768b7cc3500bc1475c535df96f77976571fbe2cf9b
+tests:
+  passed: 15
+  failed: 0
+result:
+  conditional_endpoint_rank_F7_M_lower_bound: 22
+  z_neighbor_patterns: 144
+  projective_syndrome_lines: 66
+  maximum_patterns_on_a_line: 4
+  raw_unordered_line_pairs: 2145
+  distinct_generated_two_spaces: 1923
+  maximum_two_space_matching_number: 8
+  distinct_generated_three_spaces: 25744
+  three_spaces_supporting_a_perfect_matching: 32
+  endpoint_excluded: false
+  strongest_general_upper_bound: "n3<=4158"
+limitations:
+  - The theorem is conditional on the prism-free endpoint n3=4158.
+  - Ranks 22 through 44 are not excluded by this verification.
+  - The positive three-space witness is only local quotient compatibility.
+  - No graph construction or endpoint contradiction is proved.
+  - The general upper bound remains n3<=4158.
+  - Literature novelty and priority remain UNKNOWN.

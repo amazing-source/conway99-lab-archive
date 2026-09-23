@@ -1,0 +1,49 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-27T22:44:31Z",
+  "format": "conway99-wave65-public-checkpoint-v1",
+  "git_base_commit": "6dba25f93ba8b0375a6d7057eac4c83e58934fb4",
+  "manifests": {
+    "wave64_discovery": "b3ab03ee16ea80fbda0e4279090a48174797722843e17b890c2aba509b01ff74",
+    "wave64_verification": "dd138310fcaa4e3e2d2989281f9c7487b498ad1d15901403b32919d7018bb905",
+    "wave65_discovery": "085b2ecae05f7268080b49e2bff8e719d1d693072f4dd4d32a288e9de6b0a02f",
+    "wave65_verification": "ed910ace571fee408d5560cf943f125e4c04fe7a9f5fe726e7c7a288f6edf4b5"
+  },
+  "prior_checkpoint": "logs/2026-07-27-wave63-public-checkpoint.json",
+  "results": {
+    "wave64_transition_design": {
+      "allowed_transitions": 840,
+      "block_only_integral_witnesses": 1,
+      "candidate_blocks": 35560,
+      "full_linear_rational_controls": 1,
+      "integral_strong_witnesses": 0,
+      "local_transition_matchings_per_base": 6040,
+      "selected_blocks_in_witness": 140,
+      "transition_triangle_cuts": 280
+    },
+    "wave65_hypergraph_algebra": {
+      "averaged_psd_lanes": 258,
+      "averaged_psd_minimum": "12/5",
+      "block_graph_minus3_multiplicity_floor": 56,
+      "block_graph_target_c4_range": [1260, 2331],
+      "local_control_target_moment_deltas_degrees_1_to_6": [
+        0,
+        0,
+        0,
+        5496,
+        -12020,
+        239772
+      ],
+      "target_objects_constructed": 0
+    }
+  },
+  "status": "VERIFIED_SCOPED",
+  "status_wall": {
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "full_residual_codegree_compatibility": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

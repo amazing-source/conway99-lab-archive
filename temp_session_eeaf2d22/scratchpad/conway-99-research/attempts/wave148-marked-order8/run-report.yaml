@@ -1,0 +1,47 @@
+role: proof_b
+date_utc: 2026-07-28T11:32:55Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: DERIVED
+scope: >-
+  Hypothetical srg(99,14,1,2): exact marked-vertex degree and pointwise
+  ordered-pair common-neighbor consistency rows coupling the frozen Wave147
+  order-seven and order-eight induced-class variables, with no endpoint or
+  graph-automorphism assumption.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: attempts/wave147-alternative-lane/exact_check.py
+    sha256: c49a6c5efb38afc0e33d395ebc1e1110f159132a118039170d4da56a728e6fb9
+  - path: attempts/wave147-alternative-lane/exact-results.json
+    sha256: 8baea3d7fdf69ff6653ff859d30ea975dcbef44330445ace73ae051c7db1373c
+method: >-
+  Exact rooted canonicalization with pointwise-fixed roots; double counting
+  of an order-seven induced copy, marked vertex or ordered pair, and one
+  outside neighbor or common neighbor; direct enumeration in every
+  order-eight class; and independent aggregate degree controls.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave148-marked-order8\exact_check.py --verify
+  attempts\wave148-marked-order8\exact-results.json ;
+  .\.venv\Scripts\python.exe -B -m unittest
+  attempts.wave148-marked-order8.test_exact_check -v
+outputs:
+  - path: attempts/wave148-marked-order8/exact_check.py
+    sha256: 30935d0427b81ac559311b9611645eff13344719bb72e8b86fe7961abca85de0
+  - path: attempts/wave148-marked-order8/test_exact_check.py
+    sha256: 48d01b77743a63f3294ac0fc3059e36e5b8b724c17c610cad5d9c42e160a31e1
+  - path: attempts/wave148-marked-order8/exact-results.json
+    sha256: eb5b03e06d2d825a07f40ae274c92b2cd47325fbc55c7d137477b00a7d805de0
+  - path: attempts/wave148-marked-order8/marked-rows.json.gz
+    sha256: e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1
+  - path: attempts/wave148-marked-order8/derivation.md
+    sha256: 552b6e91da035b31ecbcb2f56a91417dafb0ee2d38097a7b1b9d21fa8166cea2
+  - path: attempts/wave148-marked-order8/resource-report.json
+    sha256: 5dfe7234e1b6e3cd945551635abc10296dde0608799d26a67363f0fd79e68807
+limitations:
+  - Discovery work is not independent verification.
+  - The marked rows are necessary conditions, not a graph realization.
+  - No numerical solver was run and the combined Wave147/148 SDP was not optimized.
+  - No strict n3 upper bound, rational dual, endpoint exclusion, graph, target resolution, or novelty claim follows.

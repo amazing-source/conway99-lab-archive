@@ -1,0 +1,738 @@
+{
+  "atomic_outputs": {
+    "1+1+1+1+1+1": {
+      "path": "attempts/wave42-rank26-equality/partial-1+1+1+1+1+1.json",
+      "sha256": "d6b7f686f3e91153435aeea576167c746a9f3c01b1ba969a518acbac3a89802d"
+    },
+    "2+1+1+1+1": {
+      "path": "attempts/wave42-rank26-equality/partial-2+1+1+1+1.json",
+      "sha256": "477c934cdba686d86a47734b1273e851da27df6838ed0646b1781fca1161aee4"
+    },
+    "2+2+1+1": {
+      "path": "attempts/wave42-rank26-equality/partial-2+2+1+1.json",
+      "sha256": "ae007fb510688b02ae3323945ccfd554fc02e24a63739707c890e2e1cf3f5fed"
+    },
+    "2+2+2": {
+      "path": "attempts/wave42-rank26-equality/partial-2+2+2.json",
+      "sha256": "3592354748d543f8402da3a2e07e11e04d8d46815069c91938fb7d10e3c263fb"
+    },
+    "3+1+1+1": {
+      "path": "attempts/wave42-rank26-equality/partial-3+1+1+1.json",
+      "sha256": "873309d03982e18398152d8ca5fd5ada3b67edd109e78caee4d2e23efe10707a"
+    },
+    "3+2+1": {
+      "path": "attempts/wave42-rank26-equality/partial-3+2+1.json",
+      "sha256": "e8d35092ae609d549b666fc792247df0989e5c8c40ac0091b3097eb25830f11b"
+    },
+    "3+3": {
+      "path": "attempts/wave42-rank26-equality/partial-3+3.json",
+      "sha256": "6d8feb0e0b5f4440b053b79fbc0f8f3558ae76f9a26d1c5209ca2087a12bd841"
+    },
+    "4+1+1": {
+      "path": "attempts/wave42-rank26-equality/partial-4+1+1.json",
+      "sha256": "b2bf01e2af40573648e35b1ec9fb63232f1857158a1f936daa2d85241ef64cce"
+    },
+    "4+2": {
+      "path": "attempts/wave42-rank26-equality/partial-4+2.json",
+      "sha256": "7fbe60daa1521beba9299946c46b238442eb71516b4fc0df17f9bd6cfc3dd971"
+    },
+    "5+1": {
+      "path": "attempts/wave42-rank26-equality/partial-5+1.json",
+      "sha256": "feb629ebc3c8182596bcbd361171c6b748939664c6fab91e6c828ac778c69717"
+    },
+    "6": {
+      "path": "attempts/wave42-rank26-equality/partial-6.json",
+      "sha256": "10d8684f125c2458e80e9451b7d19c44f8c7f2e48dcb1048f852443514ba8b36"
+    }
+  },
+  "candidate_conclusion": {
+    "all_local_K39_rank_F7_at_least": 27,
+    "global_M_rank_F7_at_least": 27,
+    "status": "CANDIDATE"
+  },
+  "claim_label": "CANDIDATE",
+  "coverage": {
+    "all_odd_types": "Every labelled third-fibre matching is explicit; all 12! labelled border permutations are covered by the exact unique-pivot rank-one CSP.",
+    "automorphism_restriction": "none",
+    "even_types": "Every minimum-F labelled permutation and all 10,395 labelled third-fibre matchings are explicitly covered."
+  },
+  "format": "wave42-rank26-equality-v1",
+  "git_commit": "ef49b60aafd67f9007f6c218c39fd50392453a1b",
+  "limitations": [
+    "Discovery cannot verify itself.",
+    "No graph or global compatibility certificate is constructed.",
+    "The endpoint n3=4158 remains UNKNOWN.",
+    "No upper-bound improvement below n3<=4158 is proved.",
+    "Novelty and priority remain UNKNOWN."
+  ],
+  "partition_results": {
+    "1+1+1+1+1+1": {
+      "backtrack_nodes": 404250,
+      "completeness": "Every labelled R matching is enumerated. Every rank-one residual has a unique first nonzero diagonal pivot; its pivot image is enumerated. The pivot identity converts all remaining rank-one equations into exact unary and pairwise constraints, and the backtracker exhausts every all-different border permutation.",
+      "even_part_count": 0,
+      "exact_rank_one_residual_pairs": 0,
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 4979221632000,
+      "minimum_F_permutations": 479001600,
+      "minimum_F_rank": 0,
+      "nonempty_unary_branches": 103950,
+      "pairing_stream_sha256": "d0774c10297810eeadab5c0d0cf2812c615e88e40ad98ce4dc6ebb155bac6ea3",
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pivot_assignment_branches": 1496880,
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 25,
+      "solution_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "2+1+1+1+1": {
+      "completeness": "Every minimum-F labelled permutation from the verified complete Wave 41 subspace cover is grouped by its exact canonical right kernel. For each permutation, every one of the 10,395 labelled third-fibre matchings is tested. The quadratic-character diagonal condition only removes matrices that cannot be symmetric rank one; all survivors receive exact F_7 rank.",
+      "diagonal_candidate_pairs": 1890,
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "exact_rank_one_residual_pairs": 0,
+      "kernel_records": [
+        {
+          "diagonal_candidate_pairs": 945,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 40320,
+          "right_kernel_sha256": "a67aaf5f5ad0d721454e816873ac32c4ed804190a19780ce2ef380526d451fb8"
+        },
+        {
+          "diagonal_candidate_pairs": 945,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 40320,
+          "right_kernel_sha256": "1975f938d1ee65b96a7a44a9da244a1d137824499a7cbd51b1571ca41fcc593c"
+        }
+      ],
+      "kernel_target_stream_sha256": "e1119dbcb37550de8316151b298ce07ced270a41902506a1da44322806867b12",
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 838252800,
+      "minimum_F_permutations": 80640,
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "pairing_stream_sha256": "163338aaa1b82377f918259aa1d4284cef991064e31e63dc6163bc64c05c4b06",
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "permutation_stream_sha256": "d9d9132d306cb1113d7c58bdaafd2cfb6a4808b6bba56043893a90d9b2fda041",
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 23
+    },
+    "2+2+1+1": {
+      "completeness": "Every minimum-F labelled permutation from the verified complete Wave 41 subspace cover is grouped by its exact canonical right kernel. For each permutation, every one of the 10,395 labelled third-fibre matchings is tested. The quadratic-character diagonal condition only removes matrices that cannot be symmetric rank one; all survivors receive exact F_7 rank.",
+      "diagonal_candidate_pairs": 204540,
+      "distinct_canonical_right_kernels": 8,
+      "even_part_count": 2,
+      "exact_rank_one_residual_pairs": 0,
+      "kernel_records": [
+        {
+          "diagonal_candidate_pairs": 51030,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 24,
+          "right_kernel_sha256": "5328de0a14639bcbea4e348c64fa8b38f69c5f76e26142cb913e64bd2f46e982"
+        },
+        {
+          "diagonal_candidate_pairs": 51030,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 24,
+          "right_kernel_sha256": "88939aa9844097e1da902e915c39f19f3bd7d6911d7db2fd223f2f66679b63b1"
+        },
+        {
+          "diagonal_candidate_pairs": 51030,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 24,
+          "right_kernel_sha256": "ddfb0df9c9aac1881f59ed4ae9da301252c99d4c2196bf8c1432a154422d543a"
+        },
+        {
+          "diagonal_candidate_pairs": 51030,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 24,
+          "right_kernel_sha256": "3c49d9382c8a786007a0dc41b1774da7a43b4855fe057a3fb84dcd478bccc7e8"
+        },
+        {
+          "diagonal_candidate_pairs": 105,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 24,
+          "right_kernel_sha256": "dd878c9aad11b3bd490fff98694c6d14413fe184c3b10f4a5667ed1c22157510"
+        },
+        {
+          "diagonal_candidate_pairs": 105,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 24,
+          "right_kernel_sha256": "42e52c8bf1ef94fc2f814baa6dc9010713260c939318c8e8db015b9e4bb5e077"
+        },
+        {
+          "diagonal_candidate_pairs": 105,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 24,
+          "right_kernel_sha256": "25f85410737aaca876b9022d8c6329810f75e04c8b849c41437a88262e7c57c8"
+        },
+        {
+          "diagonal_candidate_pairs": 105,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 24,
+          "right_kernel_sha256": "dc1b091c9cc97f98c6099498bad43069aa942780658134e36a5f939ce15a11f5"
+        }
+      ],
+      "kernel_target_stream_sha256": "9521405bbcbec915fbdecf07dc1b3ea8f9e2414e2876d035a4526d39265c4bbc",
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 1995840,
+      "minimum_F_permutations": 192,
+      "minimum_F_rank": 2,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 290,
+        "observed_projective_lines": 28,
+        "winning_subspaces": 8
+      },
+      "pairing_stream_sha256": "163338aaa1b82377f918259aa1d4284cef991064e31e63dc6163bc64c05c4b06",
+      "partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "permutation_stream_sha256": "c954c8201443542147486af3eda4ab8bf3c65c74acb5da969176cb4d9c173772",
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 21
+    },
+    "2+2+2": {
+      "completeness": "Every minimum-F labelled permutation from the verified complete Wave 41 subspace cover is grouped by its exact canonical right kernel. For each permutation, every one of the 10,395 labelled third-fibre matchings is tested. The quadratic-character diagonal condition only removes matrices that cannot be symmetric rank one; all survivors receive exact F_7 rank.",
+      "diagonal_candidate_pairs": 120,
+      "distinct_canonical_right_kernels": 32,
+      "even_part_count": 3,
+      "exact_rank_one_residual_pairs": 0,
+      "kernel_records": [
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "834cc8e9a08bfd12848a6d6c7729d663bbf84ac4b381d8246d08d276c969c9cc"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "b60e8b0c449c9ff69860ddcd5e861470c99be7981dcba945af78e5914afb6b1f"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "6f0e53973b441d22b90ae329b71c1d890c1fc6e51ec37b9ddcd501c0d5498522"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "1f86d7178f59234bf60051fe5f8f42ea61970149bd6f3715b50faf218003a9a7"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "a2735fe5df9958f6138bf6ccb917bfeea92446e129efbaa5cb23fc8d8ebeac34"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "96ea36f038781085ef41676a44a5a03568c1bebb6c22f0069ea9a2f7be5cdda5"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "c934ee770b3dcfd34443f69baaa9a633f8b9e7ee546bd9e4f26f90069b5962fe"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "2ec2357bc72dd1f43012d327174d1f4da2ec45b62ce5b49a8e4e88a9c8eb864b"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "fd7f6758f33a9e90914fba0c3c2759d2637b4f85d368874fced665a26c0a3f33"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "a575f8964bf4fb4c528ee2246f3bc282c4620f3e954db13f1c918d22ac7db1fb"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "6ed200a170b69a80f19dc9d9d3f71a05917fc4f9b2e40c3243b56cefe1d07450"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "f54a7d1021aa479328df58af1e36832304ea786b943d7ceaae6b488841dc42f5"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "f2838b1cce45574cd023571ae1bb7eac753e567be0d76fadc3502777aac63a98"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "5d0abe21023301e34fff42737b933c32b2ed18eba5c46f7bf51e3a3a6ffe59ff"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "4222d1abb4dbbe44f0ac05920160cb58eff2accbe45cca2bb93127e78bd05697"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "4a1d336a1632c57cfaad3f69c479ffaa931b0331c43ebf816179cd3745d59d8b"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "deb23d030a0739ef5734c3b29f7dc4d0ff4c958da0e694aa62b7d07613ba2c08"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "31bc31ce32661447b0fd351b6fbce0322438062c76fb103c87e2b2c3624e9238"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "72dadf1732f44c242e552e0060256ed384451e0dd07ca41a4ca66148c9134978"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "baf15a140c8eaee994a768a975bffcbf807f9383dea2a65d3372214e3b87ba6b"
+        },
+        {
+          "diagonal_candidate_pairs": 15,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "3eca649ed54beb94ba841b0f6232e08d3fd291201e9da4b754f97925cec68dcc"
+        },
+        {
+          "diagonal_candidate_pairs": 15,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "fccace546c30e9e326035cd01ef5d90f30e1b7905171a30a1e01c6387b52c420"
+        },
+        {
+          "diagonal_candidate_pairs": 15,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "8ff99b71783071de1a2dfe493d608e7df992a11722202ee904da7b8720c98dc6"
+        },
+        {
+          "diagonal_candidate_pairs": 15,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "42642e1f56e3f0c3f4b1b29899de1a02f7240b5e846d21bbbdcf342e3bd8e46b"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "459c10728d661d086fef472f89fc1916d23f797d716be302657ffabfc48f30a3"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "e1292cae8584215a29bcbfb4050c804277c1f1cfa421d904a73b7dd3b1ed5b4f"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "ad20918f11e47d652603dba7c6151a69154d9d35250833a1a20b7c54037fcf01"
+        },
+        {
+          "diagonal_candidate_pairs": 0,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "066cab75ff0a6ec5d018a1b326048485ccc1bddd9133d5fa2876b95982970158"
+        },
+        {
+          "diagonal_candidate_pairs": 15,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "cc899ac4cdaec522f9316b1af123bf93041e61b8cae3ab7802228bbf8d90d89b"
+        },
+        {
+          "diagonal_candidate_pairs": 15,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "a4d047f63da5bdd539dfdbf7aa098ce6713dc3bc762d963dc248f202e3be6af8"
+        },
+        {
+          "diagonal_candidate_pairs": 15,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "c3868feee3e1c75019a9cf8df6551ebcefe0ed333d7414762d9568a13d96ec6b"
+        },
+        {
+          "diagonal_candidate_pairs": 15,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1,
+          "right_kernel_sha256": "7cb85f0b5de6daf79e2212a35c06527dfa1dafb290cab9b3d159dea2763923af"
+        }
+      ],
+      "kernel_target_stream_sha256": "f6fac12f3411ce9536cceb0c9c065b912ceb1d7d11c8f05a633cadc940c50cb2",
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 332640,
+      "minimum_F_permutations": 32,
+      "minimum_F_rank": 3,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 25744,
+        "observed_projective_lines": 66,
+        "winning_subspaces": 32
+      },
+      "pairing_stream_sha256": "163338aaa1b82377f918259aa1d4284cef991064e31e63dc6163bc64c05c4b06",
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "permutation_stream_sha256": "633bc17b0e665016fe2737cb24594360e8bf96a55553e80e57a15e8569823768",
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 19
+    },
+    "3+1+1+1": {
+      "backtrack_nodes": 537495,
+      "completeness": "Every labelled R matching is enumerated. Every rank-one residual has a unique first nonzero diagonal pivot; its pivot image is enumerated. The pivot identity converts all remaining rank-one equations into exact unary and pairwise constraints, and the backtracker exhausts every all-different border permutation.",
+      "even_part_count": 0,
+      "exact_rank_one_residual_pairs": 0,
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 4979221632000,
+      "minimum_F_permutations": 479001600,
+      "minimum_F_rank": 0,
+      "nonempty_unary_branches": 169155,
+      "pairing_stream_sha256": "d0774c10297810eeadab5c0d0cf2812c615e88e40ad98ce4dc6ebb155bac6ea3",
+      "partition": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "pivot_assignment_branches": 1434510,
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 25,
+      "solution_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "3+2+1": {
+      "completeness": "Every minimum-F labelled permutation from the verified complete Wave 41 subspace cover is grouped by its exact canonical right kernel. For each permutation, every one of the 10,395 labelled third-fibre matchings is tested. The quadratic-character diagonal condition only removes matrices that cannot be symmetric rank one; all survivors receive exact F_7 rank.",
+      "diagonal_candidate_pairs": 154980,
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "exact_rank_one_residual_pairs": 0,
+      "kernel_records": [
+        {
+          "diagonal_candidate_pairs": 77490,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 40320,
+          "right_kernel_sha256": "babb84da6a7ed5e591acc7de61faaa5edf5d87f0ce1322b225ce882621af66ae"
+        },
+        {
+          "diagonal_candidate_pairs": 77490,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 40320,
+          "right_kernel_sha256": "74efdc8e03e6914de5f84fcc660d4bdd96b7a5a5c83bce5362c7b1d73335f828"
+        }
+      ],
+      "kernel_target_stream_sha256": "aba06bd25f09d42e1e03705f6ea6ee96da83f59fb27a70c73a4c3fb25f100053",
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 838252800,
+      "minimum_F_permutations": 80640,
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "pairing_stream_sha256": "163338aaa1b82377f918259aa1d4284cef991064e31e63dc6163bc64c05c4b06",
+      "partition": [
+        3,
+        2,
+        1
+      ],
+      "permutation_stream_sha256": "a60401206eac58e270361adc7bf58741e2757bdee25f9d34b6b2b437e5e6183b",
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 23
+    },
+    "3+3": {
+      "backtrack_nodes": 136815,
+      "completeness": "Every labelled R matching is enumerated. Every rank-one residual has a unique first nonzero diagonal pivot; its pivot image is enumerated. The pivot identity converts all remaining rank-one equations into exact unary and pairwise constraints, and the backtracker exhausts every all-different border permutation.",
+      "even_part_count": 0,
+      "exact_rank_one_residual_pairs": 0,
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 4979221632000,
+      "minimum_F_permutations": 479001600,
+      "minimum_F_rank": 0,
+      "nonempty_unary_branches": 58590,
+      "pairing_stream_sha256": "d0774c10297810eeadab5c0d0cf2812c615e88e40ad98ce4dc6ebb155bac6ea3",
+      "partition": [
+        3,
+        3
+      ],
+      "pivot_assignment_branches": 1372140,
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 25,
+      "solution_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "4+1+1": {
+      "completeness": "Every minimum-F labelled permutation from the verified complete Wave 41 subspace cover is grouped by its exact canonical right kernel. For each permutation, every one of the 10,395 labelled third-fibre matchings is tested. The quadratic-character diagonal condition only removes matrices that cannot be symmetric rank one; all survivors receive exact F_7 rank.",
+      "diagonal_candidate_pairs": 2835,
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "exact_rank_one_residual_pairs": 0,
+      "kernel_records": [
+        {
+          "diagonal_candidate_pairs": 945,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 384,
+          "right_kernel_sha256": "e327721f8c033839c010d7fac9c396f365f52037a1c5f7c6d4c65fae301203d1"
+        },
+        {
+          "diagonal_candidate_pairs": 1890,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 384,
+          "right_kernel_sha256": "4b50f3702ea033a83121bf3f782964810752e4e2ab407f4ef98b3502f564475a"
+        }
+      ],
+      "kernel_target_stream_sha256": "ce9734f8e42a64f2418d795ff9ccc9488fe36313c5b37898b2d116b108d7bce1",
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 7983360,
+      "minimum_F_permutations": 768,
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "pairing_stream_sha256": "163338aaa1b82377f918259aa1d4284cef991064e31e63dc6163bc64c05c4b06",
+      "partition": [
+        4,
+        1,
+        1
+      ],
+      "permutation_stream_sha256": "b8e88cdff1091b0e53d10bd36239ca934fcf38975032bfade98023d7311e462b",
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 23
+    },
+    "4+2": {
+      "completeness": "Every minimum-F labelled permutation from the verified complete Wave 41 subspace cover is grouped by its exact canonical right kernel. For each permutation, every one of the 10,395 labelled third-fibre matchings is tested. The quadratic-character diagonal condition only removes matrices that cannot be symmetric rank one; all survivors receive exact F_7 rank.",
+      "diagonal_candidate_pairs": 630,
+      "distinct_canonical_right_kernels": 4,
+      "even_part_count": 2,
+      "exact_rank_one_residual_pairs": 0,
+      "kernel_records": [
+        {
+          "diagonal_candidate_pairs": 105,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 16,
+          "right_kernel_sha256": "7d07f630b3a6deaad0004b57f483ad8753a5e4dbf86a4d9cda8cb0648ffabf90"
+        },
+        {
+          "diagonal_candidate_pairs": 105,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 16,
+          "right_kernel_sha256": "26e9f9c2dc4015fba0dd0ce3cc0255e4cdf6303697e3ac0599f6d57950e55aec"
+        },
+        {
+          "diagonal_candidate_pairs": 210,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 16,
+          "right_kernel_sha256": "02e0a40d8ee77ae34a16caaee1c91ba36daa9b01881fb6658618604a7cdaeca0"
+        },
+        {
+          "diagonal_candidate_pairs": 210,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 16,
+          "right_kernel_sha256": "7748ebb0667ab242888126583e13a0d9fbe1f925c769beba4dfff58760720466"
+        }
+      ],
+      "kernel_target_stream_sha256": "dc4b20e04bd48ed9bdae946a75d8a7c88ddbf6715beee381fca6d1aca7f7011d",
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 665280,
+      "minimum_F_permutations": 64,
+      "minimum_F_rank": 2,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 290,
+        "observed_projective_lines": 28,
+        "winning_subspaces": 4
+      },
+      "pairing_stream_sha256": "163338aaa1b82377f918259aa1d4284cef991064e31e63dc6163bc64c05c4b06",
+      "partition": [
+        4,
+        2
+      ],
+      "permutation_stream_sha256": "c8ffc0e3774a6c75f605d13c2fb93e25eeca4a99f2a4745243f2dfeb489d2e3e",
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 21
+    },
+    "5+1": {
+      "backtrack_nodes": 342300,
+      "completeness": "Every labelled R matching is enumerated. Every rank-one residual has a unique first nonzero diagonal pivot; its pivot image is enumerated. The pivot identity converts all remaining rank-one equations into exact unary and pairwise constraints, and the backtracker exhausts every all-different border permutation.",
+      "even_part_count": 0,
+      "exact_rank_one_residual_pairs": 0,
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 4979221632000,
+      "minimum_F_permutations": 479001600,
+      "minimum_F_rank": 0,
+      "nonempty_unary_branches": 115290,
+      "pairing_stream_sha256": "d0774c10297810eeadab5c0d0cf2812c615e88e40ad98ce4dc6ebb155bac6ea3",
+      "partition": [
+        5,
+        1
+      ],
+      "pivot_assignment_branches": 1288980,
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 25,
+      "solution_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "6": {
+      "completeness": "Every minimum-F labelled permutation from the verified complete Wave 41 subspace cover is grouped by its exact canonical right kernel. For each permutation, every one of the 10,395 labelled third-fibre matchings is tested. The quadratic-character diagonal condition only removes matrices that cannot be symmetric rank one; all survivors receive exact F_7 rank.",
+      "diagonal_candidate_pairs": 6615,
+      "distinct_canonical_right_kernels": 2,
+      "even_part_count": 1,
+      "exact_rank_one_residual_pairs": 0,
+      "kernel_records": [
+        {
+          "diagonal_candidate_pairs": 2835,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1296,
+          "right_kernel_sha256": "a00f69a922361170e00555ccdcf7bbd36a3e8999282261d45ba7ea9027d9468b"
+        },
+        {
+          "diagonal_candidate_pairs": 3780,
+          "exact_rank_one_pairs": 0,
+          "labelled_R_per_permutation": 10395,
+          "minimum_F_permutations": 1296,
+          "right_kernel_sha256": "b1438dccd6fc4fe98d5e0633e69e383f09756e15ba83ef762e0d02b797bdb104"
+        }
+      ],
+      "kernel_target_stream_sha256": "c0a91a892825f4a90705f8783c669cfbb2bcaf6624a5b53dc042736cc2dd77cc",
+      "labelled_R_matchings": 10395,
+      "minimum_F_R_pairs": 26943840,
+      "minimum_F_permutations": 2592,
+      "minimum_F_rank": 1,
+      "minimum_F_subspace_census": {
+        "candidate_subspaces": 6,
+        "observed_projective_lines": 6,
+        "winning_subspaces": 2
+      },
+      "pairing_stream_sha256": "163338aaa1b82377f918259aa1d4284cef991064e31e63dc6163bc64c05c4b06",
+      "partition": [
+        6
+      ],
+      "permutation_stream_sha256": "3b62458f7076c8701a165be7fcab5cbe8d062b70f49b18e3ed755a39125a0e13",
+      "rank26_exists": false,
+      "rank26_witnesses_first_20": [],
+      "rank_F7_S": 23
+    }
+  },
+  "scope": "Complete discovery-side rank-26 equality classification for all eleven edge-local partitions of six.",
+  "totals": {
+    "all_minimum_F_R_pairs": 19918600954560,
+    "all_odd_partition_types": 4,
+    "even_partition_types": 7,
+    "exact_rank_one_residual_pairs": 0,
+    "explicit_even_minimum_F_R_pairs": 1714426560,
+    "implicit_all_odd_F_R_pairs": 19916886528000,
+    "partition_types": 11,
+    "rank26_exists": false
+  }
+}

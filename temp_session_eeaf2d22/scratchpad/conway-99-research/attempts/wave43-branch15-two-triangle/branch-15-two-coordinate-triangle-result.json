@@ -1,0 +1,112 @@
+{
+  "claim_label": "DERIVED",
+  "delta": {
+    "clause_catalog_sha256": "cafd0eddbc8371d59f7fb184b51f6a6facdeee9d1a50bbea7b30b95e2fa2b462",
+    "constraints": 40800,
+    "gzip_bytes": 195882,
+    "gzip_sha256": "82a13e78e514cf35f27190da665bdedaf4fed28c7a6fa2856e22badf63f32797",
+    "path": "attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-delta.opb.gz",
+    "raw_bytes": 1877209,
+    "raw_sha256": "23fc3b22b4b235cc631bfd0b53ed2806394273aa1b4c691c883ebe343788d3f1",
+    "serialization": "canonical sorted all-negative OPB rows and deterministic gzip with mtime zero",
+    "width_histogram": {
+      "4": 40800
+    }
+  },
+  "derivation": {
+    "compatibility_classification": "A compatible matching exists exactly when the coordinate anchors are scaffold mates and are matched to each other. For nonmate anchors, reciprocal coordinate-residual adjacency would require the same residual label {c,d} in both disjoint triangles. For mate anchors, that label is excluded from the rooted residual catalogue, so the anchors must match; the remaining two residual pairs are variable.",
+    "completed_graph_automorphism_assumed": false,
+    "controlling_variable_catalog_sha256": "c7f32c17f52f3e98e60291a51b3740f3665aa91c591118b624918b10931a1fea",
+    "controlling_variable_count": 760,
+    "coordinate_triangle_rule": "For coordinate c and two residual labels containing c, the coordinate-residual edges are fixed true and the residual edge variable is the sole triangle controller.",
+    "four_variable_cut_form": "not(controller_left AND controller_right AND cross_edge_1 AND cross_edge_2)",
+    "individual_clause_soundness_depends_on_selection_rule": false,
+    "prism_rule": "For two vertex-disjoint triangles, each of the six perfect matchings is forbidden at P=0; extra cross edges are impossible in SRG(99,14,1,2) because an adjacent pair has exactly one common neighbor.",
+    "selection_rule": "both triangle-controller variables are absent from the Wave 42 closure assignment catalogue"
+  },
+  "enumeration": {
+    "accepted_matching_visits_before_deduplication": 40800,
+    "accepted_matching_visits_pairing_the_anchors": 40800,
+    "accepted_matching_visits_with_mate_anchors": 40800,
+    "all_coordinate_triangle_count": 924,
+    "distinct_clauses_before_existing_row_removal": 40800,
+    "matchings_killed_by_fixed_scaffold_nonedges": 1516194,
+    "perfect_matching_visits": 1556994,
+    "unordered_eligible_pair_visits": 288420,
+    "vertex_disjoint_eligible_pairs": 259499,
+    "vertex_disjoint_mate_anchor_pairs": 20400,
+    "wave42_forced_false_coordinate_triangles": 157,
+    "wave42_forced_true_coordinate_triangles": 7,
+    "wave42_unfixed_coordinate_triangles": 760
+  },
+  "existing_rows": {
+    "base_all_negative_rows": 282918,
+    "distinct_existing_active_negative_clauses": 290700,
+    "distinct_existing_raw_negative_clauses": 347844,
+    "exact_active_overlap_count": 0,
+    "exact_raw_overlap_count": 0,
+    "wave42_delta_rows": 64932
+  },
+  "format": "wave43-branch15-two-coordinate-triangle-cuts-v1",
+  "git_commit": "e28f90464d00b98d37672b0b2b23dba15399a6f2",
+  "limitations": [
+    "This proof-agent derivation requires independent clean-room replay.",
+    "The completeness scope covers only pairs of coordinate-anchored triangles that are unfixed at the frozen Wave 42 closure.",
+    "Prisms involving a triangle without a coordinate anchor remain omitted.",
+    "A propagation fixed point is neither a SAT witness nor an UNSAT certificate.",
+    "No branch closure counts unless an UNSAT proof is retained and independently checked.",
+    "No endpoint exclusion, strict upper bound, graph, or Conway-99 resolution follows from this export alone."
+  ],
+  "result": {
+    "branch15_sat": "UNKNOWN",
+    "branch15_unsat": "UNKNOWN",
+    "endpoint_cases_closed": 0,
+    "endpoint_cases_total": 33,
+    "immediate_contradiction": false,
+    "immediate_new_units": 0,
+    "status": "CANDIDATE_STRONGER_REDUCTION"
+  },
+  "role": "proof_b",
+  "scope": "complete prism-cut family for vertex-disjoint pairs of coordinate-anchored triangles whose controller variables are unfixed at the SHA-bound Wave 42 branch-15 closure, conditional on n3=4158",
+  "sources": {
+    "base_formula": {
+      "constraints": 574615,
+      "gzip_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+      "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb.gz",
+      "raw_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5"
+    },
+    "wave42_closure": {
+      "contradiction": null,
+      "forced_primary_variables": 174,
+      "forced_variables": 830,
+      "path": "attempts/wave42-endpoint-certificate/branch-15-combined-propagation-certificate.json",
+      "sha256": "ab05feb596c25d0fbb872a0d92978355638218350bdf7606c248ca98ae2469ce"
+    },
+    "wave42_seventh_triangle_delta": {
+      "constraints": 64932,
+      "gzip_sha256": "0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e",
+      "path": "attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz",
+      "raw_sha256": "348dc5f4bc9ee99511286a8078d0e4ef79786b57ba39ae572c032e42747be77e"
+    }
+  },
+  "wave42_closure_simplification": {
+    "active_catalog": {
+      "constraints": 34340,
+      "gzip_bytes": 167184,
+      "gzip_sha256": "858f2a5c66d251497e4c13fb4d633c18fe65afe657937b84444cde55b1a4a631",
+      "path": "attempts/wave43-branch15-two-triangle/branch-15-two-coordinate-triangle-active-delta.opb.gz",
+      "raw_bytes": 1579551,
+      "raw_sha256": "0ed3c553d6323632b0466157f0eb7e18cb7597a16ce8eca6654d086c70314476"
+    },
+    "active_clause_catalog_sha256": "8c8afac5833ce5a2739fa6043d255adae5e3eb52b6bc75799fcd2ce86d297bf8",
+    "active_width_histogram": {
+      "4": 34340
+    },
+    "distinct_active_candidates_before_existing_row_removal": 34340,
+    "empty_residual_contradictions": 0,
+    "existing_active_exact_row_overlap": 0,
+    "immediate_negative_units": 0,
+    "new_active_constraints": 34340,
+    "satisfied_new_raw_clauses": 6460
+  }
+}

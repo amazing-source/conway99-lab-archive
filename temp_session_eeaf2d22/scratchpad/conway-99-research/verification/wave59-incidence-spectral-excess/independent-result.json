@@ -1,0 +1,356 @@
+{
+  "assumptions": {
+    "additional": "No two disjoint graph triangles have three cross edges (prism-free endpoint).",
+    "automorphism_or_transitivity": false,
+    "graph": "finite simple undirected srg(99,14,1,2)"
+  },
+  "base_arithmetic": {
+    "A_spectrum": [
+      {
+        "eigenvalue": 14,
+        "multiplicity": 1
+      },
+      {
+        "eigenvalue": 3,
+        "multiplicity": 54
+      },
+      {
+        "eigenvalue": -4,
+        "multiplicity": 44
+      }
+    ],
+    "edges": 693,
+    "triangles": 231,
+    "triangles_per_point": 7
+  },
+  "cage_comparison": {
+    "biregular_girth_8_edge_root_Moore_bound": {
+      "lines": 91,
+      "points": 39,
+      "total": 130
+    },
+    "contradiction": false,
+    "degree_balance": "7*39=3*91=273",
+    "equality_geometry_order": "(s,t)=(2,6)",
+    "excess_over_bound": 200,
+    "target_total": 330
+  },
+  "claim_label": "VERIFIED",
+  "corrections": [
+    {
+      "discovery": "Miquel Angel Fiol",
+      "effect": "Diacritics only; no mathematical effect.",
+      "field": "source-metadata.json authors[0]",
+      "severity": "metadata-only",
+      "verified": "Miquel \u00c0ngel Fiol"
+    },
+    {
+      "discovery": "Theorem 6, printed pages 6-7",
+      "effect": "Citation-location precision only.",
+      "field": "source-metadata.json relevant_result.location",
+      "severity": "precision",
+      "verified": "The theorem statement is on printed page 6; its proof continues on later pages."
+    }
+  ],
+  "incidence_graph_L": {
+    "bipartition": {
+      "points": 99,
+      "triangles": 231
+    },
+    "connected": true,
+    "degrees": {
+      "point": 7,
+      "triangle": 3
+    },
+    "diameter": 6,
+    "distance_biregular": false,
+    "edges": 693,
+    "girth": 8,
+    "order": 330,
+    "point_root": {
+      "distance_layers": [
+        1,
+        7,
+        14,
+        84,
+        84,
+        140
+      ],
+      "equitable_for_every_point": true,
+      "intersection_array": {
+        "b": [
+          7,
+          2,
+          6,
+          2,
+          5
+        ],
+        "c": [
+          1,
+          1,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "semiregular_spectral_excess_source_check": {
+      "d": 6,
+      "larger_minus_smaller": 132,
+      "m_zero": 132,
+      "ordinary_regular_theorem_applied_to_L": false,
+      "source_case": "c",
+      "theorem": "Fiol (2013), Theorem 6"
+    },
+    "spectrum": "+/-sqrt(21)^1, +/-sqrt(10)^54, +/-sqrt(3)^44, 0^132",
+    "trace_square": 1386,
+    "triangle_root": {
+      "distance_4_predecessors": {
+        "B": 2,
+        "C": 1
+      },
+      "distance_5_average_predecessors": "27/5",
+      "distance_5_average_successors": "8/5",
+      "distance_layers": [
+        1,
+        3,
+        18,
+        36,
+        180,
+        60,
+        32
+      ],
+      "equitable": false
+    },
+    "zero_multiplicity": 132
+  },
+  "incidence_matrix_N": {
+    "identity": "N*N^T=A+7I",
+    "nonzero_squared_singular_values": [
+      {
+        "multiplicity": 1,
+        "value": 21
+      },
+      {
+        "multiplicity": 54,
+        "value": 10
+      },
+      {
+        "multiplicity": 44,
+        "value": 3
+      }
+    ],
+    "rank": 99,
+    "shape": [
+      99,
+      231
+    ]
+  },
+  "nonbacktracking": {
+    "determinant_factorization": "(1-u^2)^363 (1+2u^2)^132 (1-13u^2+12u^4) (1-2u^2+12u^4)^54 (1+5u^2+12u^4)^44",
+    "oriented_edges": 1386,
+    "simple_cycle_counts": {
+      "10": 33264,
+      "12": 250866,
+      "14": 2494800,
+      "8": 2079
+    },
+    "simple_cycle_justification": "For length ell < 2*girth, a tailless nonbacktracking closed walk with a repeated vertex would split into two closed nonbacktracking walks of length at least girth; a repeated traversal also has length at least 2*girth. Thus division by 2*ell counts simple unoriented cycles for ell=8,10,12,14.",
+    "trace_H_powers": {
+      "10": 665280,
+      "12": 6020784,
+      "14": 69854400,
+      "2": 0,
+      "4": 0,
+      "6": 0,
+      "8": 33264
+    }
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "Finite conditional consequences of a prism-free hypothetical srg(99,14,1,2); no existence, nonexistence, endpoint, upper-bound, or novelty promotion.",
+  "sealed_discovery_comparison": {
+    "matched": true,
+    "mismatches": [],
+    "path": "attempts/wave59-incidence-spectral-excess/exact-result.json",
+    "sha256": "7954daa92f8cb4a400ae8f9f5bfb4d4edb10ad42361872178eb538d35edc1d81"
+  },
+  "source_metadata_check": {
+    "author": "Miquel \u00c0ngel Fiol",
+    "doi": "10.37236/3305",
+    "journal": "The Electronic Journal of Combinatorics",
+    "primary_pdf_sha256": "1ba19437e449bbc75474242ce0f52f24d9934dc02912d67a46c16afb6151c038",
+    "published": "2013-08-16",
+    "relevant_result": "Theorem 6, statement on printed page 6",
+    "theorem_case_check": "Case (c): d even and m(0)=n1-n2, with n1=231 and n2=99.",
+    "title": "The Spectral Excess Theorem for Distance-Biregular Graphs.",
+    "volume_issue_article": "20(3), P21"
+  },
+  "triangle_graph_K": {
+    "actual_excess": "32",
+    "connected": true,
+    "defect": {
+      "A_D_norm_squared": "32",
+      "entries": {
+        "B": "-1/2",
+        "C": "1/4",
+        "D": "0",
+        "I": "0",
+        "K": "0"
+      },
+      "identity": "p3(K)-A_D=(A_C-2*A_B)/4",
+      "inner_product_p3_A_D": "32",
+      "normalized_norm_squared": "18",
+      "p3_norm_squared": "50",
+      "signed_form": {
+        "identity": "F=A_C-2*A_B=4*(p3(K)-A_D)",
+        "indefinite": true,
+        "row_sum": 72,
+        "trace": 0,
+        "trace_square": 66528
+      }
+    },
+    "definition": "K=N^T*N-3I",
+    "diameter": 3,
+    "distance_layers": [
+      1,
+      18,
+      180,
+      32
+    ],
+    "distance_matrix_projection": {
+      "angle_cosine": "4/5",
+      "normalized_residual_norm_squared": "288/25",
+      "projection": "16/25*p3(K)"
+    },
+    "distance_regular": false,
+    "minimal_polynomial_identity": "K^3-4K^2-21K=18J",
+    "order": 231,
+    "p2_relation_entries": {
+      "B": "3/2",
+      "C": "3/4",
+      "D": "0",
+      "I": "0",
+      "K": "0"
+    },
+    "p3_relation_entries": {
+      "B": "-1/2",
+      "C": "1/4",
+      "D": "1",
+      "I": "0",
+      "K": "0"
+    },
+    "pair_neighborhood_gram": {
+      "entries": {
+        "B": "1",
+        "C": "0",
+        "D": "0",
+        "I": "153",
+        "K": "10"
+      },
+      "entry_identity": "binom((K^2)_RS,2)",
+      "matrix_identity": "153I+10K+A_B",
+      "positive_definite": true,
+      "rank": 231,
+      "trace": 35343,
+      "trace_square": 5831595,
+      "weyl_lower_bound": 87
+    },
+    "predistance_polynomials_low_to_high": [
+      [
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "-27/2",
+        "-15/4",
+        "3/4"
+      ],
+      [
+        "25/2",
+        "19/12",
+        "-35/36",
+        "1/18"
+      ]
+    ],
+    "spectral_excess": "50",
+    "spectral_excess_theorem_hypotheses": {
+      "conclusion_scope": "Equality of average and spectral excess characterizes distance-regularity; strict inequality is not a nonexistence condition.",
+      "connected": true,
+      "diameter": 3,
+      "distinct_eigenvalues": 4,
+      "regular": true
+    },
+    "spectrum": [
+      {
+        "eigenvalue": 18,
+        "multiplicity": 1
+      },
+      {
+        "eigenvalue": 7,
+        "multiplicity": 54
+      },
+      {
+        "eigenvalue": 0,
+        "multiplicity": 44
+      },
+      {
+        "eigenvalue": -3,
+        "multiplicity": 132
+      }
+    ],
+    "valency": 18,
+    "walk_tables": {
+      "K_cubed": {
+        "B": 26,
+        "C": 22,
+        "D": 18,
+        "I": 90,
+        "K": 59
+      },
+      "K_squared": {
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "I": 18,
+        "K": 5
+      },
+      "N_transpose_A_N": {
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "I": 6,
+        "K": 4
+      }
+    }
+  },
+  "triangle_relations": {
+    "B_count_basis": "For each of the three pairs of 12-point root sectors, mu=2 induces a perfect matching. Prism-freeness prevents the matching-edge triangle from having a third root cross edge, giving 3*12 distinct B triangles.",
+    "cross_edge_incidence_equation": "2*B+C=216",
+    "definitions": {
+      "B": "disjoint with two cross edges",
+      "C": "disjoint with one cross edge",
+      "D": "disjoint with no cross edge",
+      "K": "share one point"
+    },
+    "disjoint_total": 212,
+    "valencies": {
+      "B": 36,
+      "C": 144,
+      "D": 32,
+      "I": 1,
+      "K": 18
+    }
+  },
+  "verdict": {
+    "conway_99": "UNKNOWN",
+    "discovery_code_opened_imported_or_executed": false,
+    "endpoint_excluded": false,
+    "finite_conditional_claims": "VERIFIED",
+    "novelty": "UNKNOWN",
+    "strict_n3_upper_bound": "NOT_OBTAINED"
+  }
+}

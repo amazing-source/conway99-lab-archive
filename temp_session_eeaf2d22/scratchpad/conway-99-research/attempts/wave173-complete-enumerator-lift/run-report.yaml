@@ -1,0 +1,38 @@
+role: proof_a
+date_utc: 2026-07-28T21:20:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Exact nonexistence of a complete ternary weight-enumerator lift of the
+  Wave54 ordinary formal enumerator under the Wave172 mixed-weight-three
+  zero constraints.
+inputs:
+  - attempts/wave54-centered-enumerator/package-manifest.sha256
+  - verification/wave54-centered-enumerator/package-manifest.sha256
+  - attempts/wave172-weight3-dual-rigidity/package-manifest.sha256
+  - verification/wave172-weight3-dual-rigidity/package-manifest.sha256
+  - verification/wave171-pq-centered-code/package-manifest.sha256
+  - agents/2026-07-27-wave39-simultaneous-bh.md
+method: >-
+  Complete MacWilliams coefficients through degree three, scalar-pair
+  moments, and an exact rational extremal inequality. No graph, code, SAT,
+  MILP, or brute-force search is used in the retained proof.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave173-complete-enumerator-lift\exact_check.py --verify
+  attempts\wave173-complete-enumerator-lift\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave173-complete-enumerator-lift\test_exact_check.py
+outputs:
+  - attempts/wave173-complete-enumerator-lift/README.md
+  - attempts/wave173-complete-enumerator-lift/derivation.md
+  - attempts/wave173-complete-enumerator-lift/failed-routes.md
+  - attempts/wave173-complete-enumerator-lift/protocol.md
+  - attempts/wave173-complete-enumerator-lift/exact_check.py
+  - attempts/wave173-complete-enumerator-lift/exact-results.json
+  - attempts/wave173-complete-enumerator-lift/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - Wave54's ordinary formal enumerator is not known to be unique.
+  - No endpoint exclusion, strict n3 bound, graph, or Conway-99 resolution
+    follows.

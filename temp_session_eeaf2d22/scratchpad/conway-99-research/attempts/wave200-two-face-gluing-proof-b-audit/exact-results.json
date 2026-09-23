@@ -1,0 +1,141 @@
+{
+  "claim_label": "AUDIT_PASS_DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "consequence": {
+    "conditional_Q_lower_bound": 7039,
+    "edge_added_projective": 7732,
+    "scalar_words": 15464
+  },
+  "contradictions": {
+    "7037": "57<=s<=1",
+    "7038": "27<=s<=4"
+  },
+  "faces": {
+    "rows": {
+      "7037": {
+        "budget": 23,
+        "delta_upper": 4,
+        "four_s_lower": 228,
+        "s_lower": 57,
+        "s_upper": 1
+      },
+      "7038": {
+        "budget": 63,
+        "delta_upper": 12,
+        "four_s_lower": 108,
+        "s_lower": 27,
+        "s_upper": 4
+      }
+    },
+    "target": "281457/40",
+    "uniform_budget_upper": 63,
+    "uniform_delta_upper": 12,
+    "uniform_s_lower": 27,
+    "uniform_s_upper": 4
+  },
+  "fiber_partition": {
+    "identity": "3*c_x-j_x=sum_P(d_P-u_P)",
+    "nonneighbors_partitioned": 84,
+    "one_leaf_per_contained_pair_per_flag": true,
+    "pair_types": 21,
+    "saturated_type": {
+      "d_P": 5,
+      "distinct_saturated_labels_have_distinct_types": true,
+      "loss": 4,
+      "u_P": 1
+    },
+    "unique_type_per_leaf": true,
+    "vertices_per_fiber": 4
+  },
+  "local_loss": {
+    "deficient_c12_rows": [
+      {
+        "baseline": 0,
+        "c": 12,
+        "delta_lower": 0,
+        "occurrence_loss_lower": 0,
+        "saturated": 0
+      },
+      {
+        "baseline": 0,
+        "c": 12,
+        "delta_lower": 4,
+        "occurrence_loss_lower": 4,
+        "saturated": 1
+      },
+      {
+        "baseline": 0,
+        "c": 12,
+        "delta_lower": 8,
+        "occurrence_loss_lower": 8,
+        "saturated": 2
+      },
+      {
+        "baseline": 0,
+        "c": 12,
+        "delta_lower": 12,
+        "occurrence_loss_lower": 12,
+        "saturated": 3
+      },
+      {
+        "baseline": 0,
+        "c": 12,
+        "delta_lower": 16,
+        "occurrence_loss_lower": 16,
+        "saturated": 4
+      },
+      {
+        "baseline": 0,
+        "c": 12,
+        "delta_lower": 20,
+        "occurrence_loss_lower": 20,
+        "saturated": 5
+      },
+      {
+        "baseline": 0,
+        "c": 12,
+        "delta_lower": 24,
+        "occurrence_loss_lower": 24,
+        "saturated": 6
+      },
+      {
+        "baseline": 0,
+        "c": 12,
+        "delta_lower": 28,
+        "occurrence_loss_lower": 28,
+        "saturated": 7
+      }
+    ],
+    "deficient_formula": "delta_x>=4*s_x",
+    "global_formula": "3*s<=delta<=S5/5<=B/5",
+    "tight_formula": "delta_x>=3*s_x",
+    "tight_rows": [
+      {
+        "delta_lower": 0,
+        "occurrence_loss_lower": 3,
+        "saturated": 0
+      },
+      {
+        "delta_lower": 3,
+        "occurrence_loss_lower": 6,
+        "saturated": 1
+      },
+      {
+        "delta_lower": 6,
+        "occurrence_loss_lower": 9,
+        "saturated": 2
+      },
+      {
+        "delta_lower": 9,
+        "occurrence_loss_lower": 12,
+        "saturated": 3
+      }
+    ]
+  },
+  "search_scope": "exact slack and per-fiber incidence arithmetic only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search",
+  "stopping_point": {
+    "Q0": 7039,
+    "budget": 103,
+    "coarse_four_s_lower": -12,
+    "excluded_by_this_mechanism": false
+  }
+}

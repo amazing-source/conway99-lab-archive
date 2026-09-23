@@ -1,0 +1,41 @@
+role: verifier
+date_utc: 2026-07-28T22:15:47Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional rank-11 star projectors, trace-zero symmetric-square rank cap,
+  adjacent-star cycle classification and Gram ranks, radical-based true
+  relation bounds, and minimum supports 8 and 4 in the two rank-10 cases.
+inputs:
+  - attempts/wave176-star-projector-circuits/package-manifest.sha256
+method: >-
+  Independent simplex-projector reconstruction; exact SRG cross-incidence
+  counting; periodic second-difference derivation of Gram nullities; direct
+  modular rank cross-check; explicit separation of Gram kernels from true
+  coefficient kernels; and tiny rank-10 kernel support enumeration. No graph,
+  code, SAT, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave176-star-projector-circuits\independent_check.py --verify
+  verification\wave176-star-projector-circuits\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave176-star-projector-circuits\test_independent_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave176-star-projector-circuits\exact_check.py --verify
+  attempts\wave176-star-projector-circuits\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave176-star-projector-circuits\test_exact_check.py
+outputs:
+  - verification/wave176-star-projector-circuits/README.md
+  - verification/wave176-star-projector-circuits/audit.md
+  - verification/wave176-star-projector-circuits/protocol.md
+  - verification/wave176-star-projector-circuits/independent_check.py
+  - verification/wave176-star-projector-circuits/independent-results.json
+  - verification/wave176-star-projector-circuits/test_independent_check.py
+  - verification/wave176-star-projector-circuits/input-freeze.sha256
+limitations:
+  - The endpoint and rank-11 branch remain unexcluded.
+  - Gram-kernel supports are promoted only in the rank-10 Gram types, where
+    the radical inequality proves equality with the coefficient kernel.
+  - Global compatibility of all pairwise cross-star relations is UNKNOWN.
+  - External novelty is UNKNOWN.

@@ -1,0 +1,19 @@
+Wave-23 weighted-extension independent hostile test record
+UTC: 2026-07-23T20:21:56Z
+Python: 3.13.14
+
+Command:
+python -m unittest discover -s verification/wave23-weighted-extensions -p test_independent_verifier.py -v
+
+Result:
+20 tests passed; 0 failed; 0 errors.
+Elapsed reported by unittest: 27.727s
+
+Covered mutation families:
+parameters; parameter omission; lower-record omission/reordering/counts/types;
+seven-record omission/reordering; base; kernel delta; row disclosure;
+Hamiltonian input and non-input disclosures; Hamiltonian records; hidden
+fields; Windows and POSIX private paths.
+
+Deterministic independent result SHA-256:
+fecd813402ddb3aabd2434833f020edaf11e82c4392fc6ecc7d1f300b7d97eb4

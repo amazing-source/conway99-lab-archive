@@ -1,0 +1,32 @@
+role: proof_b
+date_utc: 2026-07-29T19:02:43Z
+git_commit: e6ac24b5728ae8f2dc13b5a6ee0f50e965843b71
+claim_label: DERIVED
+scope: >-
+  Conditional prism-free n3=4158, centered ternary rank-11 endpoint:
+  classify the first alternating fourth trace for adjacent star projectors,
+  and test whether pairwise projector traces determine it.
+inputs:
+  verification/wave171-pq-centered-code/verification-report.md: 1f2ba5ed92ba6bb1ccc05cd753a8e359f208c3ddc7ca85766f26f8869346414f
+  verification/wave176-star-projector-circuits/audit.md: f58577409f39e98b06bfbe206221d3d278f0c473bcf5057afc381094d5e65d05
+  agents/2026-07-29-wave191-global-star-module-proof-b.md: afe7d35627ec14a9599b427bcca0751e86a3f32b71fb7baf4d91e9e2e335f75f
+  verification/wave203-two-center-incidence-verifier/audit.md: 382d8553457557fe2ecbe0fd1733ecb06b01f5c60be879e65cab56c078edc3d7
+method: >-
+  Exact 6-by-6 star-pair compression, modular characteristic and minimal
+  polynomials, exterior/symmetric-square Newton traces, and explicit
+  rank-11 finite-field hostile controls. No graph, code, cover, SAT, LP,
+  configuration, enumeration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave204-projector-fourth-order-proof-b\exact_check.py --verify
+  attempts\wave204-projector-fourth-order-proof-b\exact-results.json
+outputs:
+  - attempts/wave204-projector-fourth-order-proof-b/exact-results.json
+  - attempts/wave204-projector-fourth-order-proof-b/derivation.md
+  - attempts/wave204-projector-fourth-order-proof-b/failed-routes.md
+  - attempts/wave204-projector-fourth-order-proof-b/test_exact_check.py
+limitations:
+  - The theorem classifies adjacent pairs only; nonedge fourth traces remain unknown.
+  - No global count of 4+2 edge types is derived.
+  - The positive controls deliberately fail projective distinctness and graph incidence.
+  - Rank 11, endpoint existence, external novelty, and Conway-99 remain UNKNOWN.

@@ -1,0 +1,22 @@
+perfect matchings of L_c: 10395
+types (partition of 6 -> number of matchings):
+    (1, 1, 1, 1, 1, 1) 1
+    (2, 1, 1, 1, 1) 30
+    (2, 2, 1, 1) 180
+    (3, 1, 1, 1) 160
+    (2, 2, 2) 120
+    (3, 2, 1) 960
+    (4, 1, 1) 720
+    (3, 3) 640
+    (4, 2) 1440
+    (5, 1) 2304
+    (6,) 3840
+number of types: 11  sum: 10395
+candidate s=0 triangles (pairwise disjoint labels): 35560
+  per label: min/max 1270 1270
+  disjoint label pairs: 2562  triangles per pair:  [(40, 42), (41, 840), (42, 1680)]
+  sigma-fixed triangles: 0  sigma-orbits: 17780
+  block-disjoint triangles (6 distinct blocks): 6720
+C1 (s=1 triangles) on 20000 random 7-tuples: violating fraction = 0.0999 ; distribution [(0, 18002), (2, 1898), (4, 98), (6, 2)]
+label triangles (3 blocks, one vertex each): 35*8 = 280  expected violations per tuple 280/11^3 = 0.2104
+time 8.5s

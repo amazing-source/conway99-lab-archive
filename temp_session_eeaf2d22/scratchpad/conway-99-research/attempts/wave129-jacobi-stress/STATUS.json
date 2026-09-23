@@ -1,0 +1,42 @@
+{
+  "claim_label": "CANDIDATE",
+  "package_status": "SEALED",
+  "conway_99": "UNKNOWN",
+  "rank28_excluded": false,
+  "rank28_realized": false,
+  "module_dimension": 239,
+  "finite_exact_feasibility": {
+    "18": {
+      "classification": "EXACT_RATIONAL_FEASIBLE",
+      "equalities": 366,
+      "inequalities": 846,
+      "tight_inequalities": 381
+    },
+    "20": {
+      "classification": "EXACT_RATIONAL_FEASIBLE",
+      "equalities": 386,
+      "inequalities": 1000,
+      "tight_inequalities": 396
+    },
+    "28": {
+      "classification": "UNKNOWN",
+      "generator_diagnostic": "EXACT_PRIMAL_RECOVERY_FAILED",
+      "equalities": 454,
+      "inequalities": 1686,
+      "independent_equalities": 139,
+      "deduplicated_inequalities": 510,
+      "affine_free_dimension": 100,
+      "recursive_trace_nodes": 1549,
+      "exact_farkas_certificate": false
+    }
+  },
+  "independent_verifier": "PENDING",
+  "limitations": [
+    "Finite relaxation only",
+    "Cutoff 28 is neither exactly feasible nor exactly infeasible",
+    "No graph construction",
+    "No lattice construction",
+    "No rank-28 exclusion",
+    "No Conway-99 resolution"
+  ]
+}

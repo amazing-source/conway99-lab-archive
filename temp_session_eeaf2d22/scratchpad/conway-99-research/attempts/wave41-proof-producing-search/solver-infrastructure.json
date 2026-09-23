@@ -1,0 +1,122 @@
+{
+  "claim_label": "CANDIDATE_DIAGNOSTIC",
+  "date_utc": "2026-07-27T04:43:02.2946647Z",
+  "git_commit": "4f1754a28723a8e0e4ea3025312cd264b1b117d2",
+  "host_observations": {
+    "active_preexisting_scouts": [
+      {
+        "command_scope": "Gluecard4 all endpoint-compatible parents, 100000 conflict budget per refined case",
+        "cpu_seconds_after": 15377.953125,
+        "cpu_seconds_before": 15376.953125,
+        "output_exists": false,
+        "process_id": 27676,
+        "working_set_bytes_after": 324653056
+      },
+      {
+        "command_scope": "MiniCard parent 4, 100000 conflict budget per refined case",
+        "cpu_seconds_after": 11081.453125,
+        "cpu_seconds_before": 11080.46875,
+        "output_exists": false,
+        "process_id": 20988,
+        "working_set_bytes_after": 1109966848
+      }
+    ],
+    "active_scout_sample_seconds": 2,
+    "native_path_commands_found": [
+      "python",
+      "python3"
+    ],
+    "native_path_commands_not_found": [
+      "kissat",
+      "cadical",
+      "minisat",
+      "glucose",
+      "cryptominisat5",
+      "drat-trim",
+      "lrat-check",
+      "veripb",
+      "scip",
+      "cbc",
+      "glpsol",
+      "highs",
+      "z3",
+      "clingo"
+    ],
+    "wsl_distributions": [
+      {
+        "name": "Ubuntu",
+        "state": "Stopped",
+        "version": 2
+      },
+      {
+        "name": "docker-desktop",
+        "state": "Stopped",
+        "version": 2
+      }
+    ],
+    "wsl_shell_probe_status": "TWO_BOUNDED_PROBES_TIMED_OUT_WITHOUT_TOOL_OUTPUT"
+  },
+  "pinned_proof_chain": {
+    "CakePB": {
+      "expected_path": "/home/researcher/.cache/conway-tools/cakepb/cake_pb",
+      "sha256": "5920919642b1c498c2654a849fcd894ea18e7736ebf32919a9a8915861033e46",
+      "status": "PINNED_PREVIOUSLY_USED_NOT_RECHECKED_CURRENTLY"
+    },
+    "Exact": {
+      "expected_path": "/home/researcher/.cache/conway-tools/exact/build-wave3/Exact",
+      "sha256": "842ac70b4e938d24f537a56513ff64ea845206c714ce34da467ce146c5c5c928",
+      "status": "PINNED_PREVIOUSLY_USED_NOT_RECHECKED_CURRENTLY"
+    },
+    "VeriPB": {
+      "expected_path": "/home/researcher/.cache/conway-tools/veripb-install/bin/veripb",
+      "sha256": "635b6f2fbd7a7fb98bf7a1f7af038355a1e58438cfdc1ee4e2649979017ace36",
+      "status": "PINNED_PREVIOUSLY_USED_NOT_RECHECKED_CURRENTLY"
+    },
+    "calibration": "verification/2026-07-22-veripb-calibration.md"
+  },
+  "python": {
+    "executable": ".venv/Scripts/python.exe",
+    "python_sat_version": "1.9.dev7",
+    "python_version": "3.13.14",
+    "pysat_backends": {
+      "available": [
+        "cadical103",
+        "cadical153",
+        "cadical195",
+        "cadical300",
+        "glucose3",
+        "glucose4",
+        "glucose42",
+        "gluecard3",
+        "gluecard4",
+        "kissat404",
+        "lingeling",
+        "maplechrono",
+        "maplecm",
+        "maplesat",
+        "mergesat3",
+        "minicard",
+        "minisat22",
+        "minisatep",
+        "minisatgh"
+      ],
+      "unavailable": {
+        "cryptosat": "Package pycryptosat is unavailable"
+      }
+    },
+    "scipy_version": "1.18.0"
+  },
+  "scope": "local exact-solver, proof-checker, and live endpoint-scout inventory",
+  "status": {
+    "checked_endpoint_cases": 0,
+    "new_target_solver_started": false,
+    "proof_producing_chain_current_execution": "NOT_RUN_RESOURCE_BOUND",
+    "total_endpoint_cases": 33
+  },
+  "limitations": [
+    "A listed PySAT backend is not an accepted target proof pipeline.",
+    "The WSL timeout does not show that the pinned tools are absent or broken.",
+    "CPU activity and absent output are not SAT, UNSAT, or progress certificates.",
+    "No existing process was attached to, signaled, stopped, or modified."
+  ]
+}

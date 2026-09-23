@@ -1,0 +1,20 @@
+{
+  "claim_label": "UNKNOWN",
+  "failures": [
+    {
+      "command": ".venv\\Scripts\\python.exe code\\wave14_n3_48_active_sat.py --scan --solver cadical195 --conflict-budget 100000 --time-limit 15 --scan-output attempts\\wave14-computation\\n3-48-active-local-scan.json --candidate-dir attempts\\wave14-computation",
+      "failure": "the outer command runner terminated the first launch after its five-second execution limit",
+      "mathematical_status": "NON_EVIDENTIARY",
+      "retained_output": "none"
+    },
+    {
+      "command": ".venv\\Scripts\\python.exe code\\wave14_n3_48_active_sat.py --scan --solver cadical195 --conflict-budget 100000 --time-limit 15 --scan-output attempts\\wave14-computation\\n3-48-active-local-scan.json --candidate-dir attempts\\wave14-computation",
+      "failure": "PySAT 1.9.dev7 CaDiCaL 1.9.5 accepts conflict budgets but interrupt() and clear_interrupt() both raised NotImplementedError; the run stopped after the first SAT branch and during the second branch",
+      "mathematical_status": "NON_EVIDENTIARY",
+      "retained_output": "the transient first-branch candidate was later replaced by the clean Glucose 4.2 scan candidate"
+    }
+  ],
+  "resolution": "the runner now records whether a requested wall timer is actually enforceable; the archived complete scan uses Glucose 4.2, a five-second enforced timer, and a 30000-conflict budget per branch",
+  "schema": "conway99-wave14-n3-48-run-failures-v1",
+  "target_result": "UNKNOWN"
+}

@@ -1,0 +1,151 @@
+{
+  "candidate_union_counts": {
+    "6": 1,
+    "7": 0,
+    "8": 2
+  },
+  "candidate_union_masks": {
+    "6": [
+      1884
+    ],
+    "7": [],
+    "8": [
+      2022000,
+      5683824
+    ]
+  },
+  "claim_label": "DERIVED",
+  "conclusion": {
+    "Conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "graph_constructed": false,
+    "strict_upper_bound_below_4158": "NOT_PROVED",
+    "symbolic_cut": "DERIVED"
+  },
+  "covariance_identity_before_division": "1014552 * (8*N9 + 96*cube8 - 32*wagner8) - 0^2 >= 0",
+  "endpoint_specialization": {
+    "constant_before_extra_endpoint_gcd": 37422,
+    "extra_endpoint_gcd": 2,
+    "integer_form": "37422 + 12*cube8 - 4*wagner8 >= 0",
+    "primitive_constant": 18711,
+    "primitive_form": "18711 + 6*cube8 - 2*wagner8 >= 0"
+  },
+  "first_moment_nonzeros": {
+    "6": {},
+    "7": {},
+    "8": {}
+  },
+  "format": "wave157-general-cube-wagner-symbolic-cut-v1",
+  "inputs": {
+    "attempts/wave152-four-root-order8/simplified-mask12-cut-2.json": "8bed853973bb5964a3a9d4f37c8b808e6149701c00fd62c7e607f5e543cdb965",
+    "verification/wave43-seven-deck-endpoint/independent_check.py": "324a4b84c081c8d2ad8a6a11bae45e0327c03ee2158036156c27efa66fcf790b"
+  },
+  "limitations": [
+    "This discovery package cannot independently verify itself.",
+    "The inequality alone is compatible with the n3=4158 endpoint.",
+    "The order-eight variables are induced class counts, not free graph choices.",
+    "No graph existence or nonexistence result follows."
+  ],
+  "mathematical_certificate_sha256": "541ade20e3238a0e67a02defb22c7ca1912893b20bb7f3232bde5c9d7bf03dc9",
+  "named_order8_masks": {
+    "cube": 2022000,
+    "wagner_mobius_ladder": 5683824
+  },
+  "parameters": {
+    "k": 14,
+    "lambda": 1,
+    "minus_flag_mask": 22708,
+    "mu": 2,
+    "n": 99,
+    "plus_flag_mask": 21812,
+    "root_mask": 12
+  },
+  "quadratic_coefficients_before_division": {
+    "6": {
+      "1884": 8
+    },
+    "7": {},
+    "8": {
+      "2022000": 96,
+      "5683824": -32
+    }
+  },
+  "resource_report": {
+    "elapsed_seconds": 13.942992687225342,
+    "minimum_free_physical_memory_percent": 18.08728025283736,
+    "samples": [
+      {
+        "available_physical_gib": 11.426620483398438,
+        "free_physical_memory_percent": 18.092202816382823,
+        "label": "start",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 11.423511505126953,
+        "free_physical_memory_percent": 18.08728025283736,
+        "label": "fixed_data_derived",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 12.645633697509766,
+        "free_physical_memory_percent": 20.022312802760307,
+        "label": "candidate_unions_enumerated",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 12.621463775634766,
+        "free_physical_memory_percent": 19.984043646166374,
+        "label": "coefficients_derived",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 12.6214599609375,
+        "free_physical_memory_percent": 19.984037606211103,
+        "label": "complete",
+        "total_physical_gib": 63.15770721435547
+      }
+    ]
+  },
+  "result_sha256": "d9fb7e76ab184cce0d55a902ddfa82a1fd78f62980c99d8c360749d826059705",
+  "root_embedding_derivation": {
+    "common_nonneighbors_adjacent_to_unique_common_neighbor": 12,
+    "common_nonneighbors_per_first_edge": 72,
+    "internal_degree_if_adjacent": 11,
+    "internal_degree_if_not_adjacent": 10,
+    "ordered_first_edges": 1386,
+    "ordered_second_edges_per_first_edge": 732,
+    "remaining_common_nonneighbors": 60,
+    "root_embedding_count": 1014552
+  },
+  "scope": "A symbolic four-root covariance inequality for every hypothetical srg(99,14,1,2), expressed through n3 and two order-eight counts.",
+  "six_set_formula": {
+    "canonical_mask": 1884,
+    "constant": 41580,
+    "expanded_formula": "41580 - n3",
+    "n3_coefficient": -1,
+    "source_index_one_based": 9,
+    "static_ast_formula": "A(Q(b, 4), -1)"
+  },
+  "stored_endpoint_comparison": {
+    "matches_recovered_constant": true,
+    "matches_recovered_divisor": true,
+    "matches_recovered_order8_coefficients": true,
+    "stored_cut_sha256": "af86dcfacf59368e773b4818a89c606c2f76bc07661b5eba4f89fb27820ffd53"
+  },
+  "strict_upper_bound_analysis": {
+    "endpoint_zero_assignment_lhs": 37422,
+    "implies_strict_bound_below_4158": false,
+    "reason": "At n3=4158, cube8=0 and wagner8=0 obey the inequality with positive left side 37422. Additional independent count relations would be required.",
+    "sufficient_endpoint_exclusion_condition_using_n3_mod_3": "4*wagner8 - 12*cube8 >= 37424"
+  },
+  "symbolic_inequality": {
+    "N9": "41580 - n3",
+    "coefficient_cube8": 12,
+    "coefficient_n3": -1,
+    "coefficient_wagner8": -4,
+    "constant": 41580,
+    "equivalent_upper_form": "n3 <= 41580 + 12*cube8 - 4*wagner8",
+    "integer_form": "41580 - n3 + 12*cube8 - 4*wagner8 >= 0",
+    "six_count_form": "N9 + 12*cube8 - 4*wagner8 >= 0"
+  }
+}

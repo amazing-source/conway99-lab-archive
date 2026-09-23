@@ -1,0 +1,27 @@
+role: proof_b
+date_utc: 2026-07-29T05:18:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Audit the ten-flag label capacity, weighted private-label row S10,
+  Wave196 coupling, and exact conditional certificate Q>=7033.
+inputs:
+  - AGENTS.md
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave194-five-thirds-verifier/package-manifest.sha256
+  - attempts/wave196-four-fiber-proof-b-audit/package-manifest.sha256
+method: >-
+  SRG triangle incidence, minimum-cover companion exclusion, weighted
+  private-label incidence, and exact rational coefficient expansion.
+command: >-
+  python -B attempts/wave197-ten-flag-capacity-proof-b-audit/exact_check.py
+  --verify attempts/wave197-ten-flag-capacity-proof-b-audit/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave197-ten-flag-capacity-proof-b-audit/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave197-ten-flag-capacity-proof-b-audit.md
+  - attempts/wave197-ten-flag-capacity-proof-b-audit/
+limitations:
+  - Proof-B derivation, not verifier promotion.
+  - Conditional on the prism-free rank-11 endpoint.
+  - The rational null is not an asserted object.

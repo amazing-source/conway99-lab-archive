@@ -1,0 +1,202 @@
+{
+  "certificate_paths": {
+    "SAT": [
+      "complete DIMACS assignment",
+      "decode_model.py emits full 99x99 adjacency JSON",
+      "check_witness.py independently checks fixed partition, six blocks, and A^2=12I-A+2J"
+    ],
+    "UNSAT": [
+      "proof-producing solver runs on the exact SHA-256-pinned DIMACS",
+      "proof artifact must be LRAT or another independently checkable complete proof",
+      "external solver and proof-checker source/version/hash must be recorded before execution",
+      "proof checker must accept the exact formula; solver exit code alone is rejected"
+    ]
+  },
+  "claim_label": "CANDIDATE",
+  "cnf": {
+    "and_encoding": "three-clause Tseitin equivalence y iff (x and z)",
+    "cardinality_encoding": "equivalent threshold recurrence t(i,j) with exact terminal units",
+    "clauses": 4323943,
+    "families": {
+      "B_row_weight_3": {
+        "clauses": 13930,
+        "semantic_constraints": 70,
+        "variables": 3780
+      },
+      "D_hollow": {
+        "clauses": 70,
+        "semantic_constraints": 70,
+        "variables": 0
+      },
+      "D_row_weight_9": {
+        "clauses": 175210,
+        "semantic_constraints": 70,
+        "variables": 45150
+      },
+      "D_symmetry": {
+        "clauses": 4830,
+        "semantic_constraints": 2415,
+        "variables": 0
+      },
+      "OO_block_diagonal": {
+        "clauses": 277270,
+        "semantic_constraints": 70,
+        "variables": 70980
+      },
+      "OO_block_offdiagonal": {
+        "clauses": 2591757,
+        "semantic_constraints": 2415,
+        "variables": 748335
+      },
+      "OQ_block_DB": {
+        "clauses": 1012200,
+        "semantic_constraints": 1050,
+        "variables": 289800
+      },
+      "QQ_block_column_weight_14": {
+        "clauses": 55455,
+        "semantic_constraints": 15,
+        "variables": 14175
+      },
+      "QQ_block_pair_intersection_2": {
+        "clauses": 101535,
+        "semantic_constraints": 105,
+        "variables": 29085
+      },
+      "SO_block_ASF_plus_FD": {
+        "clauses": 71316,
+        "semantic_constraints": 980,
+        "variables": 20076
+      },
+      "SQ_block_FB_equals_2J": {
+        "clauses": 20370,
+        "semantic_constraints": 210,
+        "variables": 5670
+      },
+      "primary_variables": {
+        "clauses": 0,
+        "semantic_constraints": 0,
+        "variables": 5950
+      }
+    },
+    "variable_groups": {
+      "aux_cardinality": {
+        "count": 946806,
+        "first": 5951,
+        "last": 1233001
+      },
+      "aux_product_BB_OO": {
+        "count": 36225,
+        "first": 151675,
+        "last": 899941
+      },
+      "aux_product_BB_QQ": {
+        "count": 7350,
+        "first": 1203917,
+        "last": 1232794
+      },
+      "aux_product_DB": {
+        "count": 72450,
+        "first": 899942,
+        "last": 1189534
+      },
+      "aux_product_DD": {
+        "count": 164220,
+        "first": 151607,
+        "last": 899926
+      },
+      "primary_B": {
+        "count": 1050,
+        "first": 4901,
+        "last": 5950
+      },
+      "primary_D": {
+        "count": 4900,
+        "first": 1,
+        "last": 4900
+      }
+    },
+    "variables": 1233001
+  },
+  "domain": {
+    "coverage": {
+      "B_domain": "all labeled binary 70x15 matrices",
+      "D_domain": "all labeled symmetric hollow binary 70x70 matrices",
+      "automorphism_assumed": false,
+      "fixed_OQ_design_assumed": false,
+      "omitted_zero_terms": "D diagonal products only; D[i,i]=0 is explicitly encoded",
+      "symmetric_matrix_entries_encoded_once": "OO and QQ off-diagonal equations"
+    },
+    "primary_binary_variables": {
+      "B_entries": 1050,
+      "D_ordered_entries": 4900,
+      "total": 5950
+    },
+    "quotient_constraints": {
+      "B_row_weight_3": 70,
+      "D_row_weight_9": 70
+    },
+    "six_blocks": {
+      "OO_diagonal": 70,
+      "OO_offdiagonal_unique": 2415,
+      "OQ_DB_equals_2J_minus_B": 1050,
+      "QQ_diagonal": 15,
+      "QQ_offdiagonal_unique": 105,
+      "SO_ASF_plus_FD_equals_2J_minus_F": 980,
+      "SQ_FB_equals_2J": 210,
+      "SS_fixed_entries_checked": 196
+    },
+    "structural_constraints": {
+      "D_hollow_units": 70,
+      "D_symmetry_pairs": 2415,
+      "Q_Q_fixed_zero_entries": 225,
+      "S_Q_fixed_zero_entries": 210
+    }
+  },
+  "fixed_data": {
+    "FTF_offdiagonal_histogram": {
+      "0": 1806,
+      "1": 588,
+      "2": 21
+    },
+    "OO_exact_total_target_histogram": {
+      "0": 21,
+      "1": 588,
+      "2": 1806
+    },
+    "O_labels_sha256": "7b1ce2dc9c31c4399b8116a5b44e10f4376738661bb7f24694eba55bed4d140e",
+    "SO_case_histogram": {
+      "F=0,AS_F=0,target=2": 336,
+      "F=0,AS_F=1,target=1": 504,
+      "F=1,AS_F=0,target=1": 84,
+      "F=1,AS_F=1,target=0": 56
+    },
+    "SO_target_histogram": {
+      "0": 56,
+      "1": 588,
+      "2": 336
+    },
+    "checks": {
+      "O_labels_unique": true,
+      "fixed_SS_block": true,
+      "incidence_binary": true,
+      "incidence_column_weight_2": true,
+      "incidence_row_weight_10": true,
+      "support_binary": true,
+      "support_hollow": true,
+      "support_row_weight_4": true,
+      "support_symmetric": true
+    },
+    "fixed_SS_entries_checked": 196,
+    "support_adjacency_sha256": "d9fe824cd6ccdadce6a946a1b042f5c282dbe182edcb7d1accfa55f96c7a8cfd",
+    "support_edge_count": 28,
+    "support_to_O_incidence_sha256": "58d2724fc989fb19a0be5dd83f64ed5c15ca32e5812bb83a9619af8e69bf8a74"
+  },
+  "limitations": [
+    "This audit counts an exact formula; it is not a SAT or UNSAT result.",
+    "No symmetry breaking is present.",
+    "No fixed 2-(15,3,2) design is selected."
+  ],
+  "schema_version": 1,
+  "status": "ENCODING_COUNT_AUDIT_ONLY"
+}

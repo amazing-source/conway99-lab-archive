@@ -1,0 +1,143 @@
+{
+  "format": "wave41-evenpart-equality-partial-v1",
+  "partition_result": {
+    "direct_rank_samples": 2,
+    "distinct_kernel_target_pairs": 2592,
+    "distinct_right_kernels": 2,
+    "even_part_count": 1,
+    "kernel_target_matching_checks": 20790,
+    "labelled_Z_matching_count": 10395,
+    "labelled_Z_matchings_sha256": "c7eead842d92f580a258987f78df05c8bb001825f7c3d6f7d493a178b4a7f454",
+    "local_kernel_dimension": 4,
+    "local_rank_F7": 23,
+    "minimum_direct_39_block_rank_over_target_samples": 35,
+    "minimum_projection_permutation_count": 2592,
+    "minimum_projection_rank": 1,
+    "minimum_projection_search": {
+      "canonical_dimension_e_subspaces": 6,
+      "observed_projective_lines": 6,
+      "raw_generator_subsets": 6,
+      "subspaces_supporting_permutation": 2
+    },
+    "partition": [
+      6
+    ],
+    "positive_rank_25_mutation_controls": 2,
+    "rank_25_compatible_cases": 0,
+    "right_kernels": [
+      {
+        "core_laplacian_rank": 34,
+        "direct_39_block_rank": 35,
+        "direct_sample_equality_core_rank": 10,
+        "direct_sample_matching": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "distinct_equality_targets": 1296,
+        "distinct_matching_cores": 10395,
+        "equality_compatible_permutation_matching_pairs": 0,
+        "equality_target_multiset_sha256": "b70531bc3f2f8e67e49847788bf59747babad46bd8e53e58f6f8b8f6de60ff04",
+        "labelled_Z_matchings_checked": 10395,
+        "matching_core_multiset_sha256": "fcc04f81622cb35ce3453be5f11f759605a73454661b46fa834963c919add030",
+        "minimum_projection_permutations": 1296,
+        "positive_mutation_39_block_rank": 25,
+        "representative_equality_target_sha256": "003e4a288769f4d15ea5e3303e8fe64fbbfb70f71ab057fd66725fe10f116521",
+        "representative_permutation": [
+          8,
+          7,
+          6,
+          9,
+          0,
+          11,
+          2,
+          1,
+          4,
+          3,
+          10,
+          5
+        ],
+        "right_kernel_dimension": 11,
+        "right_kernel_sha256": "80d1c5171a8e2480b1220227668a9ca347867e2bdf92d985c2186d1ec0283e38"
+      },
+      {
+        "core_laplacian_rank": 34,
+        "direct_39_block_rank": 35,
+        "direct_sample_equality_core_rank": 10,
+        "direct_sample_matching": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "distinct_equality_targets": 1296,
+        "distinct_matching_cores": 10395,
+        "equality_compatible_permutation_matching_pairs": 0,
+        "equality_target_multiset_sha256": "c1584e4718d4332d757db4d41bbc1494b3ffe6ad85c9a518253a575fdd979cad",
+        "labelled_Z_matchings_checked": 10395,
+        "matching_core_multiset_sha256": "518084fb8b1ada1ca5d5c6e2750e893a946d461a72121e4dda20e7e18029d51a",
+        "minimum_projection_permutations": 1296,
+        "positive_mutation_39_block_rank": 25,
+        "representative_equality_target_sha256": "002f93c4f3ef268605dcf53c8909f54d3f6ab99fb9ccac6ea225613277073e93",
+        "representative_permutation": [
+          6,
+          5,
+          4,
+          7,
+          10,
+          9,
+          0,
+          11,
+          2,
+          1,
+          8,
+          3
+        ],
+        "right_kernel_dimension": 11,
+        "right_kernel_sha256": "d136d04e45a3dab210b83a3d0626f94f8d399356281c457f22c9c0470bfcb42b"
+      }
+    ],
+    "verdict": "VERIFIED_INCOMPATIBLE_WITH_RANK_25"
+  }
+}

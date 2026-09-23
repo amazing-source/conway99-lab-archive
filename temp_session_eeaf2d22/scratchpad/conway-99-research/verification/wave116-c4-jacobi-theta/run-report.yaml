@@ -1,0 +1,53 @@
+role: verifier
+date_utc: 2026-07-28T04:24:23Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: VERIFIED
+scope: >-
+  Conditional on the frozen verified Waves 66, 71, and 112 inputs,
+  independently verify the Wave 116 C4 coordinate Jacobi/theta strategy,
+  including its lattice markings, Fricke normalization, coefficient count,
+  and degree-32 harmonic reformulation.
+inputs:
+  - path: attempts/wave116-c4-jacobi-theta/package-manifest.sha256
+    sha256: 9c474c8fc6c04e382b7fd506997c7ec81cb5ea5fa38453e6f284271eda933d98
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+method: >-
+  Exact rational reconstruction of the restricted projector; lattice
+  membership derivation from the verified discriminant class; finite-field
+  rank audit of the four order-seven classes; independent Poisson exponent
+  and phase calculation; exact Fourier-pattern, antipodal, and threshold
+  arithmetic; and explicit Lagrange cardinal interpolation on {-4,...,4}.
+command: >-
+  python -B
+  verification/wave116-c4-jacobi-theta/independent_verify.py
+  --verify
+  verification/wave116-c4-jacobi-theta/independent-results.json;
+  python -B -m unittest discover -s
+  verification/wave116-c4-jacobi-theta -p "test_*.py" -v
+outputs:
+  - path: verification/wave116-c4-jacobi-theta/independent-results.json
+    sha256: 4eb822ea360efac2bf0d8f0bdd712d868803cd8ebfc72726e5943866750a92dd
+  - path: verification/wave116-c4-jacobi-theta/independent_verify.py
+    sha256: 93562e898de0f33465b7aa8a7cfe0cb2be3b314b32a005b68caf00fff64dafbf
+verdict: VERIFIED_WITH_CLARIFICATIONS
+clarifications:
+  - >-
+    The verified discriminant class proves p_i=u_i/sqrt(7) is outside K*;
+    it is not merely unproved to be in K*.
+  - >-
+    det(G_K)=1023942465 is the raw matrix-index discriminant size, not a
+    proved minimal optimization-basis dimension.
+  - >-
+    Degree-32 interpolation is exact on the target shells but its harmonic
+    theta coefficients are signed and do not supply an upper bound.
+limitations:
+  - No exact Jacobi basis or Sturm truncation theorem is constructed.
+  - No bounded positivity cone or exact dual upper certificate is produced.
+  - The universal cap of 25 antipodal extensions per C4 remains unproved.
+  - Rank 28 is not excluded.
+  - Conway-99 and literature novelty remain UNKNOWN.

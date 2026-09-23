@@ -1,0 +1,105 @@
+{
+  "limitations": [
+    "V1 is only the explicitly formalized relaxed certificate semantics.",
+    "V2 controls omit 99 stars, 231 columns, global frame, SRG incidence, cover totals, and endpoint realization.",
+    "V3 local identities are conditional on the stated Gram blocks.",
+    "No submitted Wave204 source was used to construct this result."
+  ],
+  "parameters_sha256": "e222b3eab9cf84c5bafadb9d92e240dae795f5236de18a14655f9efd10769ed8",
+  "schema": "wave204-independent-source-blind-result-v1",
+  "v1": {
+    "centers": 99,
+    "claim_label": "VERIFIED_SCOPED_RELAXED",
+    "complement_degree": 84,
+    "degree": 14,
+    "degree_edges": 693,
+    "expanded_model_sha256": "1ac630e2e14e69f35e8069f99cd04ba8556beebe652cf022e3748adbf356537e",
+    "leaf_values_per_pair": 4,
+    "local_triples_per_center": 13,
+    "max_combined_two_orientation_occupancy": 3,
+    "nonprivate_multiplicity_histogram": {
+      "2": 234,
+      "3": 3
+    },
+    "slot_deficit": 708
+  },
+  "v2": {
+    "b": 0,
+    "coboundary_claim_label": "VERIFIED",
+    "cycles": [
+      {
+        "length": 3,
+        "projected_nonmatching_defect": [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "true_fixed_column_sum": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "length": 4,
+        "projected_nonmatching_defect": [2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "true_fixed_column_sum": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "length": 5,
+        "projected_nonmatching_defect": [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "true_fixed_column_sum": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    ],
+    "determined_total_S5_implication": "REFUTED_WITH_SCOPE",
+    "edgewise_chaining_implication": "REFUTED_WITH_SCOPE",
+    "form_determinant": 2,
+    "global_relevance_label": "CANDIDATE_ONLY",
+    "model_sha256": "47beb36d4792b6744da41b031622122182e5d73f6ca6bbbea43847da9d216982",
+    "partial_extension_count_exhibited": 2,
+    "simplex_count": 2
+  },
+  "v3": {
+    "global_controls_label": "NOT_TESTED_PRE_SOURCE",
+    "local_cycle_types": [
+      {
+        "cycle_half_lengths": [6],
+        "h": 0,
+        "pair_trace": 0,
+        "sym2_trace": 0,
+        "wedge2_trace": 0
+      },
+      {
+        "cycle_half_lengths": [4, 2],
+        "h": 1,
+        "pair_trace": 0,
+        "sym2_trace": 2,
+        "wedge2_trace": 1
+      },
+      {
+        "cycle_half_lengths": [3, 3],
+        "h": 0,
+        "pair_trace": 0,
+        "sym2_trace": 0,
+        "wedge2_trace": 0
+      },
+      {
+        "cycle_half_lengths": [2, 2, 2],
+        "h": 0,
+        "pair_trace": 0,
+        "sym2_trace": 0,
+        "wedge2_trace": 0
+      }
+    ],
+    "local_detector_claim_label": "VERIFIED",
+    "pair_trace_intersection_determines_h": "REFUTED_WITH_SCOPE",
+    "rank11_counterexample": [
+      {
+        "fourth_trace": 2,
+        "intersection_dimension": 1,
+        "pair_trace": 0,
+        "projector_sha256": "75eb4171abcc3fb7600268573a9112903bee10d66080b26c3710080585b75276",
+        "span_sha256": "85a28c01d1801c0d0fd3f9899f9a3645ebef25321a913c108f4549f670cf3948"
+      },
+      {
+        "fourth_trace": 0,
+        "intersection_dimension": 1,
+        "pair_trace": 0,
+        "projector_sha256": "f1220642ca6e4ed41c7b6e73ead076f1fb61ea069afc8053b8da51ee827cd754",
+        "span_sha256": "83820422418527f252f88c033844ad1480ae0c900387352e07c8b83e54146889"
+      }
+    ]
+  }
+}

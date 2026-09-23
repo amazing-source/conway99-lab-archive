@@ -1,0 +1,35 @@
+role: proof_b
+date_utc: 2026-07-28T22:30:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Exact elimination of every weight-three word in the dual of the centered
+  ternary block code at the prism-free endpoint P=0.
+inputs:
+  - AGENTS.md
+  - attempts/wave171-pq-centered-code/derivation.md
+  - attempts/wave172-weight3-dual-rigidity/derivation.md
+method: >-
+  Partial-quadrangle line-sum coloring, five-cell SRG identities, quotient
+  interlacing, common-neighbor convexity, and a final forbidden-prism
+  argument. No graph, code, SAT, MILP, or brute-force search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave174-no-weight3-dual\exact_check.py --verify
+  attempts\wave174-no-weight3-dual\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave174-no-weight3-dual\test_exact_check.py
+outputs:
+  - attempts/wave174-no-weight3-dual/README.md
+  - attempts/wave174-no-weight3-dual/derivation.md
+  - attempts/wave174-no-weight3-dual/failed-routes.md
+  - attempts/wave174-no-weight3-dual/protocol.md
+  - attempts/wave174-no-weight3-dual/exact_check.py
+  - attempts/wave174-no-weight3-dual/exact-results.json
+  - attempts/wave174-no-weight3-dual/input-freeze.sha256
+limitations:
+  - Independent verification found and repaired the degenerate c=18
+    quotient case; the final verification package is pending.
+  - The theorem does not determine the endpoint ternary rank.
+  - No endpoint exclusion, strict n3 improvement, graph, or Conway-99
+    resolution follows.

@@ -1,0 +1,77 @@
+role: verifier
+date_utc: "2026-07-24T21:55:00Z"
+git_commit: "1be9b6f61136763ce77d3927984979205e7fb23a"
+claim_label: VERIFIED
+scope: >-
+  Independent source audit of Kuber's pinned Lean conditional
+  matrix/arithmetic project and Nathaniel Selub's 2023 University of Chicago
+  REU SAT-framework paper. No graph-level theorem or solver result is
+  imported.
+inputs:
+  verification/wave34-external-source-audit-protocol.md: 055d6e519a58ad763b6f067ebefd67ab7fb7bd43648226923bbd05f7dda140c6
+  verification/wave34-continuation-protocol.md: 60e6c3aba152e924a51bd2503e82de3d05bb39fada258da4a2796e344ae23cd4
+  agents/2026-07-24-wave34-current-literature.md: b470c62d657686779f22154872e19d7db002f1abde1bc173ae747f9e2ad86b95
+  attempts/wave34-current-literature/query-ledger.json: ece460c54282b45ce013083756bc421ea2427d91800b65e16f9049734225843d
+  attempts/wave34-current-literature/source-ledger.json: 5fa6f75abcfc8d3033c9715f3977722e99fcb238ca1b74d2db255e759a58b100
+  Kuber_commit: be7b0ae3394721a4c3a1375008a1dbfca44981fc
+  Selub_PDF_sha256: e533b92599e0f562e8ee63d5ca7e5ee5e2caaaa28de70fa6a73250cf333470f6
+method: >-
+  Cross-checked the Kuber commit through GitHub metadata, codeload bytes, and
+  a clean detached external Git clone; verified every dependency pin and the
+  official Lean toolchain; ran the documented cache command and lake --wfail
+  build; inspected all printed axiom sets and trust-sensitive source tokens;
+  mapped every certificate field to the formal dependency boundary; inspected
+  every Selub page and the institutional metadata; and retained no third-party
+  source payload.
+command: |-
+  <pinned-lake> exe cache get
+  <pinned-lake> --wfail build
+  python -B -m unittest discover -s verification/wave34-external-source-audit/kuber-selub -p test_audit_sources.py -v
+outputs:
+  agent_report:
+    path: agents/2026-07-24-wave34-external-source-verifier-kuber-selub.md
+    sha256: 96c2be51b9515771b2ca08d6ee6d7535e6b50b8607e90a77cccee832b98af4ce
+  audit:
+    path: verification/wave34-external-source-audit/kuber-selub/audit.md
+    sha256: 46fec6dd5adf75e3d537a498f75eac1c5e2e687a2ae6eb523c17d92b9b071dc4
+  results:
+    path: verification/wave34-external-source-audit/kuber-selub/results.json
+    sha256: 103f9816609d94f8ef5516ac601181ec99ab76a713cf62e65f36e40f5b99404c
+  interface_map:
+    path: verification/wave34-external-source-audit/kuber-selub/lean-interface-map.json
+    sha256: ff50c11d7b94f0da48ad3b402dab21e893630b029cc3f180dddbe73d599dc9c6
+  selub_scope:
+    path: verification/wave34-external-source-audit/kuber-selub/selub-scope.json
+    sha256: 315669a319dee3f13ac00513640a9af939c35ab7a047c8ee1403eb6b3a22acb1
+  environment:
+    path: verification/wave34-external-source-audit/kuber-selub/environment.json
+    sha256: e731826aec66bcf8ba64eccb770597aa53d8e63e54c2109bb861604506bb4b5e
+  dependency_ledger:
+    path: verification/wave34-external-source-audit/kuber-selub/dependency-ledger.json
+    sha256: 3a32ddbffa6ed711af9f2e9df1eab070fbf4523edbda1dc9f27a9d242118995a
+  source_ledger:
+    path: verification/wave34-external-source-audit/kuber-selub/source-ledger.json
+    sha256: 5542452c61477ccdce9204e6a9e9656c41222aaa20d030f19fe0e66e59abec72
+  audit_script:
+    path: verification/wave34-external-source-audit/kuber-selub/audit_sources.py
+    sha256: 7f8fa0ba28d6dc82246a61f08eee60d8bb17d5f4d82ad7dde4fca3d07d4b1378
+  test_script:
+    path: verification/wave34-external-source-audit/kuber-selub/test_audit_sources.py
+    sha256: 91e76343380f49fdd6747964cb398d8503460085be7e92396d6a77c277df926a
+  cache_summary:
+    path: verification/wave34-external-source-audit/kuber-selub/cache-get-summary.txt
+    sha256: b233fe5f92ce4caa3147ee45ab12356e8c46180b1f975c9b5a1fa12021c79ec2
+  build_summary:
+    path: verification/wave34-external-source-audit/kuber-selub/lean-build.log
+    sha256: f714237a4f7a6aa98dc27b630f67d8f1f36bd798dfb19fd3ef9855b17b4167dc
+  input_freeze:
+    path: verification/wave34-external-source-audit/kuber-selub/input-freeze.sha256
+    sha256: 7e88a8dad040206afc58a02f4ccd5548acf05b394a9f14a2710d692921c998a9
+limitations:
+  - Kuber's formal theorem does not contain the graph-to-matrix bridge.
+  - Five consumed certificate data or hypotheses are not derived from a graph.
+  - The two unused packaged fields do not repair that boundary.
+  - Selub reports no completed solver run or checked certificate.
+  - Selub's displayed quadrilateral conversion is not verified as printed.
+  - Conway-99, n3=708, unrestricted Wave 34 outcomes, and novelty remain UNKNOWN.
+verdict: PASS_WITH_SCOPED_CORRECTIONS

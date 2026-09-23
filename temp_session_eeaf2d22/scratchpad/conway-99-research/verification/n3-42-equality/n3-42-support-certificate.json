@@ -1,0 +1,3032 @@
+{
+  "all_support_cap_survivors": 0,
+  "catalog": {
+    "connected_graph6_records": 110,
+    "disconnected": [
+      {
+        "component_orders": [
+          6,
+          8
+        ],
+        "graph6": "M???FB_w?wBOD_B_?",
+        "graph6_index": 0,
+        "order6_type": "K3,3",
+        "order8_type": "cube_Q3"
+      },
+      {
+        "component_orders": [
+          6,
+          8
+        ],
+        "graph6": "M??CE?wM@oW_P_@o?",
+        "graph6_index": 17,
+        "order6_type": "K3,3",
+        "order8_type": "Wagner_M8"
+      }
+    ],
+    "graph6_records": 112,
+    "graph6_sha256": "24bfd4964cc4e86554f721ff0f988c5e0bb8fc992b6113f142f09737d3ac90fd",
+    "official_to_graph6_index": [
+      32,
+      2,
+      50,
+      3,
+      55,
+      31,
+      27,
+      68,
+      30,
+      33,
+      26,
+      4,
+      5,
+      29,
+      48,
+      1,
+      35,
+      28,
+      104,
+      34,
+      25,
+      80,
+      7,
+      53,
+      77,
+      46,
+      37,
+      38,
+      76,
+      87,
+      19,
+      74,
+      58,
+      69,
+      57,
+      15,
+      14,
+      52,
+      6,
+      49,
+      10,
+      73,
+      51,
+      54,
+      56,
+      8,
+      102,
+      18,
+      72,
+      9,
+      85,
+      101,
+      83,
+      66,
+      67,
+      44,
+      79,
+      20,
+      109,
+      78,
+      23,
+      98,
+      103,
+      41,
+      106,
+      89,
+      84,
+      81,
+      61,
+      93,
+      82,
+      100,
+      39,
+      22,
+      16,
+      95,
+      42,
+      65,
+      94,
+      40,
+      110,
+      96,
+      86,
+      21,
+      62,
+      59,
+      71,
+      63,
+      92,
+      36,
+      70,
+      91,
+      60,
+      75,
+      43,
+      88,
+      99,
+      45,
+      11,
+      12,
+      64,
+      97,
+      108,
+      24,
+      111,
+      90,
+      47,
+      107,
+      105,
+      13
+    ],
+    "scd_bytes": 871,
+    "scd_records": 110,
+    "scd_sha256": "6f3e9cf2b7e0d85c5df59c1638ab9d2fddbfc9905c49b35da01cc892f847e9a0",
+    "small_labeled_counts": {
+      "order6": 10,
+      "order8": 3360
+    },
+    "small_unlabeled_counts": {
+      "order6": 1,
+      "order8": 2
+    }
+  },
+  "mandatory_degree_survivors": [
+    {
+      "component_orders": [
+        6,
+        8
+      ],
+      "f_edges": [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "graph6": "M???FB_w?wBOD_B_?",
+      "graph6_index": 0,
+      "mandatory_k_degrees": [
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "mandatory_k_edges": 39,
+      "rejection_tree": {
+        "branch_edge": 0,
+        "exclude": {
+          "branch_edge": 12,
+          "exclude": {
+            "branch_edge": 24,
+            "exclude": {
+              "branch_edge": 36,
+              "exclude": {
+                "branch_edge": 48,
+                "exclude": {
+                  "branch_edge": 60,
+                  "exclude": {
+                    "branch_edge": 72,
+                    "exclude": {
+                      "forced": [
+                        {
+                          "edge": 84,
+                          "rule": "degree_needed",
+                          "value": 1,
+                          "vertex": 9
+                        },
+                        {
+                          "edge": 96,
+                          "rule": "degree_needed",
+                          "value": 1,
+                          "vertex": 9
+                        }
+                      ],
+                      "leaf": {
+                        "adjacent": true,
+                        "common": [
+                          6,
+                          9
+                        ],
+                        "kind": "common_neighbour_cap",
+                        "limit": 1,
+                        "pair": [
+                          7,
+                          8
+                        ]
+                      }
+                    },
+                    "forced": [],
+                    "include": {
+                      "forced": [
+                        {
+                          "edge": 73,
+                          "rule": "cap_if_in",
+                          "value": 0
+                        },
+                        {
+                          "edge": 74,
+                          "rule": "cap_if_in",
+                          "value": 0
+                        },
+                        {
+                          "edge": 75,
+                          "rule": "cap_if_in",
+                          "value": 0
+                        },
+                        {
+                          "edge": 76,
+                          "rule": "cap_if_in",
+                          "value": 0
+                        },
+                        {
+                          "edge": 78,
+                          "rule": "cap_if_in",
+                          "value": 0
+                        },
+                        {
+                          "edge": 79,
+                          "rule": "cap_if_in",
+                          "value": 0
+                        },
+                        {
+                          "edge": 84,
+                          "rule": "cap_if_in",
+                          "value": 0
+                        },
+                        {
+                          "edge": 96,
+                          "rule": "degree_needed",
+                          "value": 1,
+                          "vertex": 9
+                        }
+                      ],
+                      "leaf": {
+                        "adjacent": true,
+                        "common": [
+                          7,
+                          9
+                        ],
+                        "kind": "common_neighbour_cap",
+                        "limit": 1,
+                        "pair": [
+                          6,
+                          8
+                        ]
+                      }
+                    }
+                  },
+                  "forced": [],
+                  "include": {
+                    "forced": [
+                      {
+                        "edge": 61,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 62,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 63,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 64,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 66,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 67,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 72,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 84,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 96,
+                        "rule": "degree_needed",
+                        "value": 1,
+                        "vertex": 9
+                      }
+                    ],
+                    "leaf": {
+                      "adjacent": true,
+                      "common": [
+                        2,
+                        9
+                      ],
+                      "kind": "common_neighbour_cap",
+                      "limit": 1,
+                      "pair": [
+                        5,
+                        8
+                      ]
+                    }
+                  }
+                },
+                "forced": [],
+                "include": {
+                  "forced": [
+                    {
+                      "edge": 49,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 50,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 51,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 52,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 54,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 55,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 60,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 72,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 84,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 96,
+                      "rule": "degree_needed",
+                      "value": 1,
+                      "vertex": 9
+                    }
+                  ],
+                  "leaf": {
+                    "adjacent": false,
+                    "common": [
+                      5,
+                      7,
+                      9
+                    ],
+                    "kind": "common_neighbour_cap",
+                    "limit": 2,
+                    "pair": [
+                      4,
+                      8
+                    ]
+                  }
+                }
+              },
+              "forced": [],
+              "include": {
+                "forced": [
+                  {
+                    "edge": 37,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 38,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 39,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 40,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 42,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 43,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 48,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 60,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 72,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 84,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 96,
+                    "rule": "degree_needed",
+                    "value": 1,
+                    "vertex": 9
+                  }
+                ],
+                "leaf": {
+                  "adjacent": false,
+                  "common": [
+                    5,
+                    6,
+                    9
+                  ],
+                  "kind": "common_neighbour_cap",
+                  "limit": 2,
+                  "pair": [
+                    3,
+                    8
+                  ]
+                }
+              }
+            },
+            "forced": [],
+            "include": {
+              "forced": [
+                {
+                  "edge": 25,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 26,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 27,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 28,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 30,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 31,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 36,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 48,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 60,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 72,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 84,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 96,
+                  "rule": "degree_needed",
+                  "value": 1,
+                  "vertex": 9
+                }
+              ],
+              "leaf": {
+                "adjacent": true,
+                "common": [
+                  5,
+                  9
+                ],
+                "kind": "common_neighbour_cap",
+                "limit": 1,
+                "pair": [
+                  2,
+                  8
+                ]
+              }
+            }
+          },
+          "forced": [],
+          "include": {
+            "forced": [
+              {
+                "edge": 13,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 14,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 15,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 16,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 18,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 19,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 24,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 36,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 48,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 60,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 72,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 84,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 96,
+                "rule": "degree_needed",
+                "value": 1,
+                "vertex": 9
+              }
+            ],
+            "leaf": {
+              "adjacent": false,
+              "common": [
+                2,
+                7,
+                9
+              ],
+              "kind": "common_neighbour_cap",
+              "limit": 2,
+              "pair": [
+                1,
+                8
+              ]
+            }
+          }
+        },
+        "forced": [],
+        "include": {
+          "forced": [
+            {
+              "edge": 1,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 2,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 3,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 4,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 6,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 7,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 12,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 24,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 36,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 48,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 60,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 72,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 84,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 96,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 9
+            }
+          ],
+          "leaf": {
+            "adjacent": false,
+            "common": [
+              2,
+              6,
+              9
+            ],
+            "kind": "common_neighbour_cap",
+            "limit": 2,
+            "pair": [
+              0,
+              8
+            ]
+          }
+        }
+      },
+      "search_statistics": {
+        "branches": 7,
+        "forced_in": 9,
+        "forced_out_cap": 70,
+        "forced_out_degree": 0,
+        "leaves_cap": 8,
+        "leaves_degree": 0,
+        "nodes": 15,
+        "survivors": 0
+      },
+      "support_count": 108,
+      "support_edges": [
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          16
+        ],
+        [
+          0,
+          17
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          0,
+          20
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          1,
+          20
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          3,
+          17
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          4,
+          17
+        ],
+        [
+          4,
+          18
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          6,
+          20
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          8,
+          20
+        ]
+      ]
+    },
+    {
+      "component_orders": [
+        14
+      ],
+      "f_edges": [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "graph6": "M???FBOiAgDOD_B_?",
+      "graph6_index": 6,
+      "mandatory_k_degrees": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "mandatory_k_edges": 49,
+      "rejection_tree": {
+        "branch_edge": 4,
+        "exclude": {
+          "forced": [
+            {
+              "edge": 5,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 1
+            },
+            {
+              "edge": 6,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 1
+            }
+          ],
+          "leaf": {
+            "adjacent": true,
+            "common": [
+              1,
+              19
+            ],
+            "kind": "common_neighbour_cap",
+            "limit": 1,
+            "pair": [
+              18,
+              20
+            ]
+          }
+        },
+        "forced": [],
+        "include": {
+          "forced": [
+            {
+              "edge": 1,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 22,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 17
+            },
+            {
+              "edge": 0,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 2,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 0
+            },
+            {
+              "edge": 3,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 0
+            }
+          ],
+          "leaf": {
+            "adjacent": false,
+            "common": [
+              1,
+              6,
+              20
+            ],
+            "kind": "common_neighbour_cap",
+            "limit": 2,
+            "pair": [
+              0,
+              17
+            ]
+          }
+        }
+      },
+      "search_statistics": {
+        "branches": 1,
+        "forced_in": 5,
+        "forced_out_cap": 2,
+        "forced_out_degree": 0,
+        "leaves_cap": 2,
+        "leaves_degree": 0,
+        "nodes": 3,
+        "survivors": 0
+      },
+      "support_count": 35,
+      "support_edges": [
+        [
+          0,
+          16
+        ],
+        [
+          0,
+          17
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          0,
+          20
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          1,
+          20
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          4,
+          18
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          9,
+          14
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          12
+        ]
+      ]
+    },
+    {
+      "component_orders": [
+        14
+      ],
+      "f_edges": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "graph6": "M??CEB_[@oB_B_@o?",
+      "graph6_index": 14,
+      "mandatory_k_degrees": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "mandatory_k_edges": 49,
+      "rejection_tree": {
+        "branch_edge": 0,
+        "exclude": {
+          "forced": [
+            {
+              "edge": 1,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 0
+            },
+            {
+              "edge": 2,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 0
+            }
+          ],
+          "leaf": {
+            "adjacent": true,
+            "common": [
+              0,
+              9
+            ],
+            "kind": "common_neighbour_cap",
+            "limit": 1,
+            "pair": [
+              10,
+              11
+            ]
+          }
+        },
+        "forced": [],
+        "include": {
+          "forced": [
+            {
+              "edge": 1,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 2,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 0
+            }
+          ],
+          "leaf": {
+            "adjacent": true,
+            "common": [
+              0,
+              10
+            ],
+            "kind": "common_neighbour_cap",
+            "limit": 1,
+            "pair": [
+              9,
+              11
+            ]
+          }
+        }
+      },
+      "search_statistics": {
+        "branches": 1,
+        "forced_in": 3,
+        "forced_out_cap": 1,
+        "forced_out_degree": 0,
+        "leaves_cap": 2,
+        "leaves_degree": 0,
+        "nodes": 3,
+        "survivors": 0
+      },
+      "support_count": 35,
+      "support_edges": [
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          9,
+          19
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          10,
+          20
+        ],
+        [
+          12,
+          20
+        ]
+      ]
+    },
+    {
+      "component_orders": [
+        6,
+        8
+      ],
+      "f_edges": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "graph6": "M??CE?wM@oW_P_@o?",
+      "graph6_index": 17,
+      "mandatory_k_degrees": [
+        7,
+        7,
+        5,
+        5,
+        5,
+        7,
+        7,
+        7,
+        5,
+        5,
+        5,
+        7,
+        7,
+        7
+      ],
+      "mandatory_k_edges": 43,
+      "rejection_tree": {
+        "branch_edge": 0,
+        "exclude": {
+          "branch_edge": 1,
+          "exclude": {
+            "branch_edge": 2,
+            "exclude": {
+              "branch_edge": 3,
+              "exclude": {
+                "branch_edge": 4,
+                "exclude": {
+                  "branch_edge": 5,
+                  "exclude": {
+                    "branch_edge": 6,
+                    "exclude": {
+                      "forced": [
+                        {
+                          "edge": 7,
+                          "rule": "degree_needed",
+                          "value": 1,
+                          "vertex": 0
+                        },
+                        {
+                          "edge": 8,
+                          "rule": "degree_needed",
+                          "value": 1,
+                          "vertex": 0
+                        }
+                      ],
+                      "leaf": {
+                        "adjacent": true,
+                        "common": [
+                          0,
+                          12
+                        ],
+                        "kind": "common_neighbour_cap",
+                        "limit": 1,
+                        "pair": [
+                          13,
+                          14
+                        ]
+                      }
+                    },
+                    "forced": [],
+                    "include": {
+                      "forced": [
+                        {
+                          "edge": 7,
+                          "rule": "cap_if_in",
+                          "value": 0
+                        },
+                        {
+                          "edge": 8,
+                          "rule": "degree_needed",
+                          "value": 1,
+                          "vertex": 0
+                        }
+                      ],
+                      "leaf": {
+                        "adjacent": true,
+                        "common": [
+                          0,
+                          13
+                        ],
+                        "kind": "common_neighbour_cap",
+                        "limit": 1,
+                        "pair": [
+                          12,
+                          14
+                        ]
+                      }
+                    }
+                  },
+                  "forced": [],
+                  "include": {
+                    "forced": [
+                      {
+                        "edge": 6,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 7,
+                        "rule": "cap_if_in",
+                        "value": 0
+                      },
+                      {
+                        "edge": 8,
+                        "rule": "degree_needed",
+                        "value": 1,
+                        "vertex": 0
+                      }
+                    ],
+                    "leaf": {
+                      "adjacent": true,
+                      "common": [
+                        0,
+                        8
+                      ],
+                      "kind": "common_neighbour_cap",
+                      "limit": 1,
+                      "pair": [
+                        11,
+                        14
+                      ]
+                    }
+                  }
+                },
+                "forced": [],
+                "include": {
+                  "forced": [
+                    {
+                      "edge": 5,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 6,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 7,
+                      "rule": "cap_if_in",
+                      "value": 0
+                    },
+                    {
+                      "edge": 8,
+                      "rule": "degree_needed",
+                      "value": 1,
+                      "vertex": 0
+                    }
+                  ],
+                  "leaf": {
+                    "adjacent": false,
+                    "common": [
+                      0,
+                      11,
+                      13
+                    ],
+                    "kind": "common_neighbour_cap",
+                    "limit": 2,
+                    "pair": [
+                      10,
+                      14
+                    ]
+                  }
+                }
+              },
+              "forced": [],
+              "include": {
+                "forced": [
+                  {
+                    "edge": 4,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 5,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 6,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 7,
+                    "rule": "cap_if_in",
+                    "value": 0
+                  },
+                  {
+                    "edge": 8,
+                    "rule": "degree_needed",
+                    "value": 1,
+                    "vertex": 0
+                  }
+                ],
+                "leaf": {
+                  "adjacent": false,
+                  "common": [
+                    0,
+                    11,
+                    12
+                  ],
+                  "kind": "common_neighbour_cap",
+                  "limit": 2,
+                  "pair": [
+                    9,
+                    14
+                  ]
+                }
+              }
+            },
+            "forced": [],
+            "include": {
+              "forced": [
+                {
+                  "edge": 3,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 4,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 5,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 6,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 7,
+                  "rule": "cap_if_in",
+                  "value": 0
+                },
+                {
+                  "edge": 8,
+                  "rule": "degree_needed",
+                  "value": 1,
+                  "vertex": 0
+                }
+              ],
+              "leaf": {
+                "adjacent": true,
+                "common": [
+                  0,
+                  11
+                ],
+                "kind": "common_neighbour_cap",
+                "limit": 1,
+                "pair": [
+                  8,
+                  14
+                ]
+              }
+            }
+          },
+          "forced": [],
+          "include": {
+            "forced": [
+              {
+                "edge": 2,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 3,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 4,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 5,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 6,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 7,
+                "rule": "cap_if_in",
+                "value": 0
+              },
+              {
+                "edge": 8,
+                "rule": "degree_needed",
+                "value": 1,
+                "vertex": 0
+              }
+            ],
+            "leaf": {
+              "adjacent": false,
+              "common": [
+                0,
+                8,
+                13
+              ],
+              "kind": "common_neighbour_cap",
+              "limit": 2,
+              "pair": [
+                7,
+                14
+              ]
+            }
+          }
+        },
+        "forced": [],
+        "include": {
+          "forced": [
+            {
+              "edge": 1,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 2,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 3,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 4,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 5,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 6,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 7,
+              "rule": "cap_if_in",
+              "value": 0
+            },
+            {
+              "edge": 8,
+              "rule": "degree_needed",
+              "value": 1,
+              "vertex": 0
+            }
+          ],
+          "leaf": {
+            "adjacent": false,
+            "common": [
+              0,
+              8,
+              12
+            ],
+            "kind": "common_neighbour_cap",
+            "limit": 2,
+            "pair": [
+              6,
+              14
+            ]
+          }
+        }
+      },
+      "search_statistics": {
+        "branches": 7,
+        "forced_in": 9,
+        "forced_out_cap": 28,
+        "forced_out_degree": 0,
+        "leaves_cap": 8,
+        "leaves_degree": 0,
+        "nodes": 15,
+        "survivors": 0
+      },
+      "support_count": 108,
+      "support_edges": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          6,
+          20
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          9,
+          19
+        ],
+        [
+          9,
+          20
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          10,
+          17
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          10,
+          20
+        ],
+        [
+          11,
+          15
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          11,
+          20
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          12,
+          20
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          13,
+          20
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          14,
+          20
+        ]
+      ]
+    }
+  ],
+  "mandatory_max_degree_histogram": {
+    "6": 1,
+    "7": 3,
+    "8": 15,
+    "9": 93
+  },
+  "mu_cap_attack": {
+    "cycles": [
+      [
+        0,
+        16,
+        7,
+        10,
+        13,
+        4,
+        20
+      ],
+      [
+        1,
+        17,
+        6,
+        11,
+        12,
+        5,
+        18
+      ],
+      [
+        2,
+        15,
+        8,
+        9,
+        14,
+        3,
+        19
+      ]
+    ],
+    "first_mu_cap_violation": {
+      "adjacent": false,
+      "common": [
+        1,
+        3,
+        20
+      ],
+      "limit": 2,
+      "pair": [
+        0,
+        4
+      ]
+    },
+    "graph6_index": 6,
+    "lambda_cap": "PASS",
+    "search_nodes": 3,
+    "selected_support_indices": [
+      0,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      11,
+      13,
+      16,
+      17,
+      19,
+      20,
+      22,
+      23,
+      26,
+      27,
+      29,
+      31,
+      33,
+      34
+    ],
+    "selected_support_pairs": [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        20
+      ],
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        19
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        20
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        18
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        17
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        12
+      ]
+    ]
+  },
+  "schema": "conway99-n3-42-support-proof-v1",
+  "scope": "conditional all-size-two n3=42 active-support relaxation; not a 99-vertex existence search",
+  "target_result": "UNKNOWN"
+}

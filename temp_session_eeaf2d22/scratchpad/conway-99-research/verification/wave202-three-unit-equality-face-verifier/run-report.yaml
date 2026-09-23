@@ -1,0 +1,54 @@
+role: verifier
+date_utc: 2026-07-29T04:55:50Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional on the frozen Wave201 theorem and prism-free rank-11 endpoint,
+  characterize the complete Q0=7059 three-unit certificate face, its raw
+  affine consequences and one-center equality conditions, and determine
+  whether those rows alone exclude the face.
+inputs:
+  - path: verification/wave201-multiplicity-weighted-fiber-loss-verifier/package-manifest.sha256
+    sha256: d08624de5a64c4a49ce5a9bd6a7c65cb36eeef17c736f83070a4d12f66473854
+  - path: verification/wave202-three-unit-equality-face-verifier/independent-result-freeze.sha256
+    sha256: e535e69f3a241c5398284cca704cf8c179d32666892ffce6e6f7973ebbed0d63
+  - path: attempts/wave202-three-unit-equality-face-proof-a/package-manifest.sha256
+    sha256: 2fde70a48ece42be075e242aa5e1e6b629624d77eef2a31c4c2b70947fa267a4
+method: >-
+  Source-blind exact affine elimination and integer partition analysis,
+  followed by local fiber-multiset equality analysis.  The independent result
+  was frozen before opening Proof A.  Post-source checks replayed the sealed
+  source and independently verified its additional center-size and
+  multiplicity-one consequences.  No graph search, construction enumeration,
+  SAT, LP, or isomorphism computation was used.
+command:
+  - >-
+    .\.venv\Scripts\python.exe -B
+    verification\wave202-three-unit-equality-face-verifier\independent_check.py
+    --verify
+    verification\wave202-three-unit-equality-face-verifier\independent-math-result.json
+  - >-
+    .\.venv\Scripts\python.exe -B -m unittest -v
+    verification\wave202-three-unit-equality-face-verifier\test_independent_check.py
+  - >-
+    .\.venv\Scripts\python.exe -B
+    verification\wave202-three-unit-equality-face-verifier\source_comparison_check.py
+    --verify
+    verification\wave202-three-unit-equality-face-verifier\source-comparison-results.json
+  - >-
+    .\.venv\Scripts\python.exe -B -m unittest -v
+    verification\wave202-three-unit-equality-face-verifier\test_source_comparison_check.py
+outputs:
+  - path: verification/wave202-three-unit-equality-face-verifier/audit.md
+    sha256: dd14dfce58e4f41a31eadcdd0fbad40450995705c0b95bbb412a4f4a2aaefdff
+  - path: verification/wave202-three-unit-equality-face-verifier/independent-math-result.json
+    sha256: 50be7fba9ab2a56c974e2044d60ac2d448d3556f4eea57e5e4063aed4fd8ed7e
+  - path: verification/wave202-three-unit-equality-face-verifier/source-comparison-results.json
+    sha256: 3a31d1841e5500843d8560667c00a123d366faa45428387ef003a69988286bee
+  - path: verification/wave202-three-unit-equality-face-verifier/verification-results.json
+    sha256: 46fbf170e50dff2964bf7aad5ada57402918f1c6c10d0ac792a2c9184a01b028
+limitations:
+  - Q0=7059 is not excluded; the verified conditional lower bound remains Q>=7059.
+  - The surviving multiplicity profile is an arithmetic and local-equality control, not a graph, flag family, code, cover, or existence claim.
+  - No checked row glues the local fiber multisets consistently across both centers of each pair.
+  - Rank-11 exclusion, endpoint exclusion, Conway-99, global realization, and external novelty remain UNKNOWN.

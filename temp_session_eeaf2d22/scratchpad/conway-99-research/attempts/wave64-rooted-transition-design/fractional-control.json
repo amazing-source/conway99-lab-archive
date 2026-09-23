@@ -1,0 +1,44 @@
+{
+  "assignment": {
+    "all_allowed_transitions": "1/10",
+    "block_type_(0,0,3)": "1/120",
+    "block_type_(0,1,2)": "1/240",
+    "other_block_types": "0"
+  },
+  "claim_label": "DERIVED",
+  "disjoint_pair_load_census": {
+    "0": 42,
+    "1/10": 840,
+    "1/5": 1680
+  },
+  "endpoint_profile_residual_values": [
+    "0"
+  ],
+  "endpoint_profile_value_census": {
+    "0+1=1": 168,
+    "1+0=1": 168,
+    "9/5+1/5=2": 840
+  },
+  "format": "wave64-rooted-transition-design-fractional-control-v1",
+  "label_degree_values": [
+    "5"
+  ],
+  "limitations": [
+    "This is a fractional point, not an integral transition/design.",
+    "It uses a scaffold-invariant assignment only as a relaxation control.",
+    "It assumes no automorphism of a target graph.",
+    "It proves that this linear master cannot have a Farkas infeasibility certificate."
+  ],
+  "local_dichotomy_values": [
+    "2"
+  ],
+  "max_disjoint_pair_load": "1/5",
+  "passed": true,
+  "support_occupancy_values": [
+    "12"
+  ],
+  "transition_degree_values": [
+    "1"
+  ],
+  "transition_triangle_lhs": "3/10"
+}

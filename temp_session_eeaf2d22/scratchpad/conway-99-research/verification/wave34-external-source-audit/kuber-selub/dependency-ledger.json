@@ -1,0 +1,82 @@
+{
+  "source": "Pinned lake-manifest.json files in the Kuber project and Formal Conjectures dependency",
+  "formal_conjectures": {
+    "url": "https://github.com/google-deepmind/formal-conjectures.git",
+    "commit": "e751934294a381afd2d5fc1124c5953c8e25f9fa",
+    "codeload_url": "https://codeload.github.com/google-deepmind/formal-conjectures/zip/e751934294a381afd2d5fc1124c5953c8e25f9fa",
+    "archive_bytes": 2490766,
+    "archive_sha256": "58c718c8d56a287bda33a238eb4565bb08a2310e879b48158409270ec2f91601"
+  },
+  "mathlib": {
+    "url": "https://github.com/leanprover-community/mathlib4",
+    "commit": "a3a10db0e9d66acbebf76c5e6a135066525ac900",
+    "input_revision": "v4.27.0",
+    "codeload_url": "https://codeload.github.com/leanprover-community/mathlib4/zip/a3a10db0e9d66acbebf76c5e6a135066525ac900",
+    "archive_bytes": 27056345,
+    "archive_sha256": "cf5dd035ff779b717dcddc07a79a1a6f1f5220e9550aa7153416e3afd6abc37e"
+  },
+  "mathlib_transitive_packages": [
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "commit": "009dc1e6f2feb2c96c081537d80a0905b2c6498f",
+      "archive_bytes": 58946,
+      "archive_sha256": "5296572f699814b16d65758b17aa68376fd750f3407415f38f285e66a7949173"
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "commit": "5ce7f0a355f522a952a3d678d696bd563bb4fd28",
+      "archive_bytes": 20420,
+      "archive_sha256": "d397b43daa2eb0b5a2117d28e13b95689547d70b276e03b6d16a86cc276bc1f8"
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "commit": "8f497d55985a189cea8020d9dc51260af1e41ad2",
+      "archive_bytes": 119447,
+      "archive_sha256": "4fc98b713b02d83b9ccdf696499a121afa6835ee40f440917ab12378e88dc32d"
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "commit": "c04225ee7c0585effbd933662b3151f01b600e40",
+      "archive_bytes": 355173,
+      "archive_sha256": "2536f48acfa7d028301be1d6f04539fbaf98b682f119167f381aa2df385a427d"
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "commit": "cb837cc26236ada03c81837bebe0acd9c70ced7d",
+      "archive_bytes": 348676,
+      "archive_sha256": "f9aedf7978c2ade59cfc4e259596373d84a5fdc50af7424845475657365ca8dc"
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "commit": "bd58c9efe2086d56ca361807014141a860ddbf8c",
+      "archive_bytes": 45855,
+      "archive_sha256": "6c4d2cf1f87ef3c85d4e0686ed8ff8d860aaa4377c1df2ff4cb63344f1e4c3d0"
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "commit": "b25b36a7caf8e237e7d1e6121543078a06777c8a",
+      "archive_bytes": 457629,
+      "archive_sha256": "f8ed5f5135724a5441006675e2f7989d308969349e7358968a0a294ed47e86b9"
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "commit": "55c37290ff6186e2e965d68cf853a57c0702db82",
+      "archive_bytes": 29451,
+      "archive_sha256": "d6e48c2fcd482f9b25635e27d301eee92a3720afaa7cdaf15b3b0dd0dc438426"
+    }
+  ],
+  "archive_cross_check": {
+    "purpose": "Independent confirmation that each manifest revision resolves to downloadable primary-source bytes",
+    "used_for_terminal_build": false,
+    "terminal_build_route": "Fresh external Git clone plus Lake dependency resolution",
+    "archives_retained_in_workspace": false
+  }
+}

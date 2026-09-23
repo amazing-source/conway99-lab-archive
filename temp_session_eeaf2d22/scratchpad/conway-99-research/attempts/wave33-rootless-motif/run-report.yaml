@@ -1,0 +1,52 @@
+role: proof_b
+date_utc: 2026-07-24T10:06:23Z
+git_commit: b2595baa40d50e9c259051751fe27090bee6a449
+claim_label: UNKNOWN
+scope: >-
+  Exact Wave 33 rootless-motif boundary: derive a local null trade showing
+  that every two-leg contraction from Q[Gamma], including fully contracted
+  vertex-incidence polynomials, fails to determine the common-R3 count of a
+  permitted q=2 R2 pair; and use actual lambda/mu incidence to reduce every
+  R2 pair to an eight-vertex board with four transversal candidates. No
+  proof that full target compatibility closes a candidate.
+inputs:
+  verification/wave33-continuation-protocol.md: b98b6bb8228b54b67cd949ee1bf6eb05ebd6ebe74f1cbc9e49b041a55e2d2fe6
+  agents/2026-07-24-wave32-indecomposable-proof.md: 5e0e0ce6e33cd8f943d8026c2b9b01b74d9668234d4c9b2c46da6c0c9921b8ef
+  attempts/wave32-indecomposable/exact_check.py: 52bb6a1f9972c981779e9aa9269bd82bb89866cde68a911498e00a4c679dbdae
+  attempts/wave32-indecomposable/exact-results.json: bccde9635d973e030e004800abc08c37089e036faca1edc2bb85ed70ee731472
+  verification/wave32-indecomposable/audit.md: 15285e618b3a38c91c5d2e373dcb859720a2062d9ca108cd79cae12506a53f44
+  verification/wave32-indecomposable/independent-results.json: 4b90ef54358a14abc92c925c8e0f94ed9510b4f80857fde5aa4e2abf4ba89e2a
+  agents/2026-07-24-wave31-survivor-proof.md: 075566744e2622a4dfa402a125d394aef16dfcb3fc53b172176dce88bd951aaa
+  verification/wave31-sign-commutant/audit.md: f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0
+  agents/2026-07-23-wave20-global-schur.md: 64352e1d96ed9a924e075c2d0659be8de887751194068a14b096e112a9320632
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  agents/2026-07-24-wave32-rooted-proof.md: 04990231e3b42cded363e39ffea771556e52ec66fe03a97164ae99f40ddbefe0
+  verification/wave32-rooted-vector/audit.md: 36d83232d82e30205e0aefa30aedff0a517de1edb0adbaa54575ea68d04ce1a5
+method: >-
+  Exact four-dimensional adjacency-algebra multiplication, nonnegative
+  integral local relation tables and a signed null trade, incidence
+  contraction through N^T A^k N, direct six-vertex SRG common-neighbor
+  counts, transversal enumeration, and two hostile partial 99-vertex edge
+  assignments.
+command: |-
+  cd attempts/wave33-rootless-motif
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  agents/2026-07-24-wave33-rootless-motif.md: a22b261b49c355296fd4299b3b97da215e16209f00eeae9a2d6d15addfd27c87
+  attempts/wave33-rootless-motif/initial-hypothesis-freeze.md: d5d4854e777968de431af88d1073d479c33a755139eb526380c97f44aa8387e6
+  attempts/wave33-rootless-motif/input-freeze.sha256: 76a7a8615761b884dc19cfb666293a3a5c7649c875b468caa01daf66eb90672b
+  attempts/wave33-rootless-motif/exact_check.py: 7e60df4c53e33fc39b75d46fc04d1318462ac184e78aa3f1d951d19f7eff1fa3
+  attempts/wave33-rootless-motif/test_exact_check.py: 5551a32b211b380ee70e83ff34efc31ac6ee9a347946ef618d1831ef15aaa31a
+  attempts/wave33-rootless-motif/exact-results.json: 2cfb576f2deba7bb82c60eb27c72a62c913d06f2d86f3eb626dcddd6ac75afeb
+  attempts/wave33-rootless-motif/failed-routes.md: 5d48447253501315148f00f143c8a9098a153920be05ed2ea82367a58e90fe9e
+limitations:
+  - Discovery-agent work requires independent adversarial verification.
+  - The local tables match all audited two-leg contractions but do not form
+    a simultaneous global relation tensor or projector.
+  - The q=2 R2 pair is an allowed formal local type, not a proved target pair.
+  - The actual-incidence controls specify only part of the outside-outside
+    edge set and do not construct or exclude an SRG.
+  - Higher uncontracted incidence, global overlap, projector idempotence,
+    and Schur-square origin could still force the mixed trace positive.
+  - Rootless endpoint existence, n3=708, Conway-99, and novelty remain UNKNOWN.

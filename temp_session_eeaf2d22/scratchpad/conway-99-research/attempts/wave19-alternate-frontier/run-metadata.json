@@ -1,0 +1,153 @@
+{
+  "schema_version": 3,
+  "date_utc": "2026-07-23",
+  "release_revision": "canonical-newline-v3",
+  "supersedes_manifest_sha256": "558a0cc0450058c6cd58092ac63510ae8fe20c1ac7e1cd0121302494b9c9bfc1",
+  "supersession_reason": "provenance-only CRLF-to-LF normalization; no checker, test, result, or disposition bytes changed",
+  "release_history": [
+    {
+      "revision": "v1",
+      "manifest_sha256": "adc025f3020f992f6077c8d6006031688db424aa9ffbe5f33618679f95cfd37c"
+    },
+    {
+      "revision": "public-hygiene-v2",
+      "manifest_sha256": "558a0cc0450058c6cd58092ac63510ae8fe20c1ac7e1cd0121302494b9c9bfc1"
+    }
+  ],
+  "git_commit_read_without_git": "a562e7e250ab99631a109d66dec62c07e27a22fb",
+  "status": "DERIVED_PENDING_INDEPENDENT_AUDIT",
+  "scope": "conditional exact exclusion of n3=60 for a putative srg(99,14,1,2)",
+  "commands_use_workspace_relative_paths": true,
+  "runs": {
+    "generation": {
+      "command": ".venv\\Scripts\\python.exe -B attempts\\wave19-alternate-frontier\\exact_frontier.py --output attempts\\wave19-alternate-frontier\\exact-results.json --connected-dispositions attempts\\wave19-alternate-frontier\\connected20-dispositions.txt --disconnected-dispositions attempts\\wave19-alternate-frontier\\disconnected20-dispositions.json",
+      "started_utc": "2026-07-23T15:00:29.3680177Z",
+      "completed_utc": "2026-07-23T15:05:40.4318217Z",
+      "status": "PASS",
+      "completion_evidence": "process exited after all four checkpoint lines; stderr is empty; exact-results.json was materialized",
+      "stdout": {
+        "path": "attempts/wave19-alternate-frontier/run6.stdout.log",
+        "bytes": 154,
+        "sha256": "deaf5ed8d2877e1a9e69d6597a12ad309a7823c3caec34c7c1895487d07129f6",
+        "newline_normalization": "CRLF_TO_LF"
+      },
+      "stderr": {
+        "path": "attempts/wave19-alternate-frontier/run6.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "result": {
+        "path": "attempts/wave19-alternate-frontier/exact-results.json",
+        "bytes": 28820,
+        "sha256": "3e6c3016572c55aa15acc7b629a6a11b73cfce48f33e61ab1def2ebaf9b6f000"
+      }
+    },
+    "byte_identical_verification": {
+      "command": ".venv\\Scripts\\python.exe -B attempts\\wave19-alternate-frontier\\exact_frontier.py --verify attempts\\wave19-alternate-frontier\\exact-results.json --connected-dispositions attempts\\wave19-alternate-frontier\\connected20-dispositions.txt --disconnected-dispositions attempts\\wave19-alternate-frontier\\disconnected20-dispositions.json",
+      "started_utc": "2026-07-23T15:06:39.8273263Z",
+      "completed_utc": "2026-07-23T15:11:45.4231364Z",
+      "status": "PASS",
+      "completion_evidence": "process exited after all four checkpoint lines; stderr is empty; byte comparison raised no assertion; exact-results.json timestamp remained unchanged",
+      "stdout": {
+        "path": "attempts/wave19-alternate-frontier/run7-verify.stdout.log",
+        "bytes": 154,
+        "sha256": "deaf5ed8d2877e1a9e69d6597a12ad309a7823c3caec34c7c1895487d07129f6",
+        "newline_normalization": "CRLF_TO_LF"
+      },
+      "stderr": {
+        "path": "attempts/wave19-alternate-frontier/run7-verify.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "regenerated_dispositions": {
+        "connected_sha256": "ea4ce3e70e4e3dfc39befd952f633fc680642c5a6285d3ed08232d0d19f43cc6",
+        "disconnected_sha256": "491e7dddd7a5d630b546faf3a86d0aedf34e80bf02bf70d9c52112082d5d1c9b",
+        "match_generation_result": true
+      }
+    },
+    "focused_tests": {
+      "command": ".venv\\Scripts\\python.exe -B -m unittest -v attempts\\wave19-alternate-frontier\\test_exact_frontier.py",
+      "started_utc": "2026-07-23T15:12:07.0250526Z",
+      "completed_utc": "2026-07-23T15:12:07.5495570Z",
+      "exit_code": 0,
+      "status": "PASS_7_OF_7",
+      "stdout": {
+        "path": "attempts/wave19-alternate-frontier/tests-final.stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "attempts/wave19-alternate-frontier/tests-final.stderr.log",
+        "bytes": 1103,
+        "sha256": "91048326cc6b8b2c6a96711cfb25489797206d96c332adc7d3b1898cc8ad8615",
+        "note": "unittest -v writes its normal successful transcript to stderr; CRLF was normalized to LF"
+      }
+    }
+  },
+  "deterministic_outputs": {
+    "connected_dispositions": {
+      "path": "attempts/wave19-alternate-frontier/connected20-dispositions.txt",
+      "bytes": 510490,
+      "sha256": "ea4ce3e70e4e3dfc39befd952f633fc680642c5a6285d3ed08232d0d19f43cc6"
+    },
+    "disconnected_dispositions": {
+      "path": "attempts/wave19-alternate-frontier/disconnected20-dispositions.json",
+      "bytes": 19172,
+      "sha256": "491e7dddd7a5d630b546faf3a86d0aedf34e80bf02bf70d9c52112082d5d1c9b"
+    }
+  },
+  "dependency_boundary": {
+    "checker_imports": [
+      "__future__",
+      "argparse",
+      "collections",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib",
+      "typing",
+      "urllib"
+    ],
+    "test_imports": [
+      "__future__",
+      "fractions",
+      "importlib",
+      "pathlib",
+      "unittest"
+    ],
+    "all_imports_are_python_standard_library": true,
+    "scipy_or_numpy_dependency": false,
+    "local_absolute_path_dependency": false,
+    "network_boundary": "only pinned official House of Graphs catalog downloads; URL, byte length, SHA-256, and record count are checked before use"
+  },
+  "failed_runs": {
+    "index": "attempts/wave19-alternate-frontier/failed-runs.md",
+    "bytes": 5053,
+    "sha256": "14ab37c9cfa928c91cf09290c990a89b040bcd56ef47aec98059d821b2e884a5",
+    "policy": "retained as non-evidentiary diagnostics; local workspace prefixes are normalized; no failed solver exit or withdrawn scout coordinate is used by the final checker"
+  },
+  "public_redaction": {
+    "record": "attempts/wave19-alternate-frontier/public-redaction-v2.json",
+    "bytes": 2501,
+    "sha256": "5a4dc89f5d92472e36c9895a12807bc632479165a6b8378cd19813a2f66fe897",
+    "normalized_artifact_count": 6,
+    "normalized_occurrence_count": 18,
+    "traceback_line_numbers_preserved": true,
+    "mathematical_replay_rerun": false,
+    "unchanged_core_hashes_asserted": true
+  },
+  "canonical_newlines": {
+    "record": "attempts/wave19-alternate-frontier/public-newline-v3.json",
+    "bytes": 5353,
+    "sha256": "7f5f382e4f07ddb7f3e277d217b569c97ac23ebdb607c36134ede0a8a56ce9a6",
+    "changed_file_count": 10,
+    "declared_text_artifact_CR_bytes": 0,
+    "classification": "provenance-only",
+    "mathematical_replay_rerun": false,
+    "protected_mathematical_core_hashes_asserted": true
+  },
+  "target": "UNKNOWN",
+  "novelty": "UNKNOWN"
+}

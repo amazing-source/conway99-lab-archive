@@ -1,0 +1,42 @@
+role: proof_b
+date_utc: 2026-07-28T11:03:50Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: DERIVED
+scope: >-
+  General srg(99,14,1,2): exact two-root order-five flag moments reaching
+  order eight, complete locally admissible order-eight class stream, full
+  coefficient tensors, ordinary order-seven-to-eight deletion equations,
+  explicit n3 coefficient, and a known-SRG positive control.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json
+    sha256: ffcf9f9942446d66c3559d97954217af3ba17c1978ea9417c6e99920d4a45420
+  - path: attempts/wave136-alternative-spaces/strategy-memo.md
+    sha256: fffa6107edafdce21400d5a3d51bd65756573c848e798aaaf58ab8b45458ac70
+method: >-
+  Exact enumeration of pair-rooted order-five flags; complete order-eight
+  vertex extension and degree-cell canonicalization; direct integer
+  embedding matrices for all order-five-through-eight classes; exact
+  deletion double counts; and direct Gram construction on the 3x3 rook graph.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest
+  attempts.wave147-alternative-lane.test_exact_check -v
+outputs:
+  - path: attempts/wave147-alternative-lane/exact_check.py
+    sha256: c49a6c5efb38afc0e33d395ebc1e1110f159132a118039170d4da56a728e6fb9
+  - path: attempts/wave147-alternative-lane/test_exact_check.py
+    sha256: 78da3dc2eb956b77781c7a28594a7e4c7e9a1e55f2f34250002603c1114b0d3d
+  - path: attempts/wave147-alternative-lane/exact-results.json
+    sha256: 8baea3d7fdf69ff6653ff859d30ea975dcbef44330445ace73ae051c7db1373c
+  - path: attempts/wave147-alternative-lane/coefficients.json.gz
+    sha256: a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e
+  - path: attempts/wave147-alternative-lane/derivation.md
+    sha256: 56cfa939b4b93cbd34f33bd29e4d9ad577909ce34718f34a1d7d267ae5cddc30
+limitations:
+  - Discovery work cannot verify itself.
+  - The stronger marked-vertex and marked-pair order-eight extension rows are not built.
+  - No numerical SDP was run and no rational dual certificate was obtained.
+  - No strict n3 upper bound, endpoint exclusion, graph, target resolution, or novelty claim follows.

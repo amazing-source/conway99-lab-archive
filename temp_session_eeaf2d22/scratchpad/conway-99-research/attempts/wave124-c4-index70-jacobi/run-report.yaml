@@ -1,0 +1,39 @@
+role: proof_b
+date_utc: 2026-07-28T04:52:24Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: DERIVED_AND_NULL_BOUNDARY
+scope: >-
+  Conditional one-variable index-70/index-10 C4 Jacobi reduction, exact
+  short-shell coefficient semantics through norm 20, C4 tight-frame
+  moments, and a full-level J_22,10 basis/null-control audit.
+inputs:
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: verification/wave96-norm16-norm18-upper/package-manifest.sha256
+    sha256: 8b3f9f90de931dc152ccf1b9e0705409492a6c5eb5246643ddce55aad8afe6e9
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+  - path: verification/wave116-c4-jacobi-theta/package-manifest.sha256
+    sha256: e44afa352f51c192d6c5ac8584ccd6334dd69a3d11856f4ac0254283829bbfb8
+method: >-
+  Exact lattice membership, norm, primitivity, and Poisson calculations;
+  exact SRG C4 incidence algebra and frame moments; exact q-y expansions of
+  E4, E6, phi_-2,1, and phi_0,1; rational polar elimination; and explicit
+  hostile cusp directions.
+command: >-
+  python -B attempts/wave124-c4-index70-jacobi/exact_check.py
+  --verify attempts/wave124-c4-index70-jacobi/exact-results.json;
+  python -B -m unittest discover -s
+  attempts/wave124-c4-index70-jacobi -p "test_*.py" -v;
+  python -B attempts/wave124-c4-index70-jacobi/seal_checkpoint.py --verify
+outputs:
+  - path: attempts/wave124-c4-index70-jacobi/exact-results.json
+  - path: attempts/wave124-c4-index70-jacobi/derivation.md
+  - path: attempts/wave124-c4-index70-jacobi/failed-routes.md
+limitations:
+  - Discovery cannot verify itself; independent verification is required.
+  - The cited weak-ring theorem is not reproved.
+  - The 18-vector basis is full-level, not the whole Gamma0(7) space.
+  - The cusp directions have signed and graph-forbidden coefficients.
+  - No positive feasibility solve or exact dual upper certificate is present.
+  - Rank 28, rank 30, Conway-99, and novelty remain UNKNOWN.

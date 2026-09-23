@@ -1,0 +1,198 @@
+"""Hostile tests for the clean-room Wave 41 all-quotient verifier."""
+
+from __future__ import annotations
+
+import importlib.util
+import unittest
+from pathlib import Path
+
+
+MODULE_PATH = Path(__file__).with_name("independent_check.py")
+SPEC = importlib.util.spec_from_file_location("wave41_cleanroom", MODULE_PATH)
+assert SPEC is not None and SPEC.loader is not None
+CHECK = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(CHECK)
+
+
+class AllQuotientVerifierTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.result = CHECK.build_results()
+
+    def test_normalization_orbits_are_complete(self) -> None:
+        normalized = self.result["normalization"]
+        self.assertEqual(normalized["six_point_pairings"], 15)
+        self.assertEqual(normalized["standard_pairing_stabilizer_order"], 48)
+        self.assertEqual(normalized["relative_orbit_count"], 3)
+        self.assertEqual(
+            normalized["relative_orbit_sizes"], {"111": 1, "12": 6, "3": 8}
+        )
+        self.assertEqual(normalized["normalized_representative_count"], 4050)
+
+    def test_exact_normalized_rank_distribution(self) -> None:
+        normalized = self.result["normalization"]
+        self.assertEqual(
+            normalized["rank_distribution"],
+            {"11": 8, "12": 1, "13": 400, "14": 46, "15": 2616, "16": 979},
+        )
+        self.assertEqual(normalized["rank_eleven_raw_record_count"], 8)
+        self.assertEqual(normalized["rank_eleven_distinct_quotient_count"], 8)
+
+    def test_wrong_ternary_diagonal_changes_boundary_rank(self) -> None:
+        records = self.result["fibre_coloured_isomorphism_classification"][
+            "records"
+        ]
+        target_hash = records[0]["quotient_sha256"]
+        enumeration = CHECK.enumerate_normalized_quotients()
+        graph = next(
+            item["graph"]
+            for item in enumeration["rank_eleven"]
+            if CHECK.quotient_payload(item["graph"])["sha256"] == target_hash
+        )
+        wrong = CHECK.adjacency_matrix(graph)
+        for vertex in range(len(wrong)):
+            wrong[vertex][vertex] = 1
+        self.assertNotEqual(CHECK.dense_rank(wrong, 3), 11)
+
+    def test_all_eight_are_one_strict_fibre_coloured_class(self) -> None:
+        classification = self.result[
+            "fibre_coloured_isomorphism_classification"
+        ]
+        self.assertEqual(
+            classification["fixed_01_coloured_automorphism_group_order"], 384
+        )
+        self.assertEqual(classification["rank_eleven_quotients"], 8)
+        self.assertEqual(classification["isomorphism_classes"], 1)
+        for record in classification["records"]:
+            mapping = record["fibre_coloured_isomorphism"][
+                "vertex_permutation_source_to_target"
+            ]
+            self.assertTrue(
+                all(
+                    vertex // 6 == mapping[vertex] // 6
+                    for vertex in range(18)
+                )
+            )
+
+    def test_affine_transport_is_exhaustive_and_graph_level(self) -> None:
+        records = self.result["fibre_coloured_isomorphism_classification"][
+            "records"
+        ]
+        for record in records:
+            transport = record["fibre_coloured_isomorphism"]
+            self.assertEqual(transport["directed_half_edges_checked"], 72)
+            self.assertEqual(
+                transport["all_masks_triangle_status_checked"], 2**18
+            )
+            self.assertEqual(
+                transport["rank_witness_graph_transports_checked"], 3
+            )
+
+    def test_relative_18_bit_space_is_complete(self) -> None:
+        census = self.result["canonical_exhaustive_lift_census"]
+        self.assertEqual(census["relative_endpoint_bits"], 18)
+        self.assertEqual(census["mask_count"], 2**18)
+        self.assertEqual(census["quotient_triangle_count"], 16)
+
+    def test_triangle_filter_count_and_direct_controls(self) -> None:
+        census = self.result["canonical_exhaustive_lift_census"]
+        self.assertEqual(census["triangle_free_mask_count"], 37378)
+        self.assertGreater(
+            census["rejected_mask_direct_triangle_controls"], 0
+        )
+
+    def test_every_quotient_has_same_exact_lift_count(self) -> None:
+        records = self.result["fibre_coloured_isomorphism_classification"][
+            "records"
+        ]
+        self.assertEqual(len(records), 8)
+        self.assertEqual(
+            {record["lift_census"]["triangle_free_mask_count"] for record in records},
+            {37378},
+        )
+
+    def test_exact_f7_rank_distributions(self) -> None:
+        census = self.result["canonical_exhaustive_lift_census"]
+        self.assertEqual(
+            census["rank_F7_3I_minus_A_core_distribution"],
+            {"32": 264, "33": 7348, "34": 29766},
+        )
+        self.assertEqual(
+            census["rank_F7_K39_distribution"],
+            {"33": 264, "34": 7348, "35": 29766},
+        )
+        records = self.result["fibre_coloured_isomorphism_classification"][
+            "records"
+        ]
+        for record in records:
+            self.assertEqual(
+                record["lift_census"]["rank_F7_K39_distribution"],
+                {"33": 264, "34": 7348, "35": 29766},
+            )
+
+    def test_sparse_rank_and_k39_identity_have_dense_controls(self) -> None:
+        census = self.result["canonical_exhaustive_lift_census"]
+        self.assertGreaterEqual(census["dense_rank_crosschecks"], 12)
+        self.assertGreaterEqual(census["K39_identity_crosschecks"], 7)
+        witness = self.result["rank_identity"]["minimum_witness"]
+        self.assertEqual(witness["rank_F7_3I_minus_A_core"], 32)
+        self.assertEqual(witness["rank_F7_K39"], 33)
+
+    def test_minimum_witness_is_a_genuine_all_222_core(self) -> None:
+        witness = self.result["rank_identity"]["minimum_witness"]
+        self.assertEqual(witness["core_order"], 36)
+        self.assertEqual(witness["core_edge_count"], 54)
+        self.assertEqual(witness["core_degree_set"], [3])
+        self.assertEqual(witness["core_triangle_count"], 0)
+        self.assertEqual(
+            witness["base_edge_types"],
+            {"01": [2, 2, 2], "12": [2, 2, 2], "20": [2, 2, 2]},
+        )
+
+    def test_conditional_implication_and_parity_are_not_reversed(self) -> None:
+        theorem = self.result["conditional_theorem"]
+        self.assertEqual(
+            theorem["conclusion"]["every_base_triangle_K39_rank_at_least"],
+            33,
+        )
+        self.assertEqual(
+            theorem["conclusion"]["conditional_r7_lower_bound_before_parity"],
+            33,
+        )
+        self.assertEqual(
+            theorem["conclusion"]["conditional_r7_lower_bound_after_parity"],
+            34,
+        )
+        self.assertTrue(any("r3-1=11" in step for step in theorem["deduction"]))
+
+    def test_structural_kernel_blocks_false_rank45_promotion(self) -> None:
+        guard = self.result["hostile_scope_guard"]
+        self.assertEqual(guard["rank_F7_K39"], 33)
+        self.assertEqual(guard["K39_nullity"], 6)
+        self.assertEqual(guard["structural_kernel_dimension"], 3)
+        self.assertEqual(
+            guard["legal_outside_column_components_checked"], 198
+        )
+        self.assertEqual(
+            guard["outside_projection_rank_upper_bound_on_full_K39_kernel"],
+            3,
+        )
+        self.assertIn("rank-45", guard["blocked_inflation"])
+
+    def test_status_is_not_inflated(self) -> None:
+        status = self.result["status_wall"]
+        self.assertEqual(
+            status["conditional_all_222_r3_12_rank_floor"], "VERIFIED"
+        )
+        self.assertEqual(status["endpoint_n3_4158"], "UNKNOWN")
+        self.assertEqual(status["all_edges_222"], "ASSUMPTION_NOT_PROVED")
+        self.assertEqual(status["r3_equals_12"], "ASSUMPTION_NOT_PROVED")
+        self.assertFalse(status["endpoint_excluded"])
+        self.assertEqual(
+            status["general_upper_bound_below_4158"], "NOT_PROVED"
+        )
+        self.assertEqual(status["graph_or_counterexample"], "NONE")
+
+
+if __name__ == "__main__":
+    unittest.main()

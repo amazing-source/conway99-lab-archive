@@ -1,0 +1,46 @@
+role: verifier
+date_utc: 2026-07-24T10:30:00Z
+git_commit: b2595baa40d50e9c259051751fe27090bee6a449
+claim_label: DERIVED
+scope: >-
+  Clean-room precomparison reconstruction of the Wave 33 rootless-motif
+  synopsis from public verified premises only: fused triangle algebra,
+  formal local-table non-forcing, exact vertex-incidence transport with
+  scope limits, the actual R2 lambda/mu board, and four transversal
+  candidates. Global motif forcing and avoidance remain unknown.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  CONJECTURE.md: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  verification/wave33-continuation-protocol.md: b98b6bb8228b54b67cd949ee1bf6eb05ebd6ebe74f1cbc9e49b041a55e2d2fe6
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  verification/wave32-indecomposable/audit.md: 15285e618b3a38c91c5d2e373dcb859720a2062d9ca108cd79cae12506a53f44
+  verification/wave32-indecomposable/independent-results.json: 4b90ef54358a14abc92c925c8e0f94ed9510b4f80857fde5aa4e2abf4ba89e2a
+method: >-
+  Exact spectral evaluation of the four-dimensional polynomial algebra;
+  explicit nonnegative integral intersection tables and basis-complete
+  bilinear contraction checks; polynomial reduction of incidence
+  transports; direct lambda/mu common-neighbor subtraction; exhaustive
+  three-by-three transversal enumeration; and two scoped 14-vertex hostile
+  controls.
+command: |-
+  python -B -m unittest discover -s verification/wave33-rootless-motif -p test_*.py -v
+  python -B verification/wave33-rootless-motif/independent_check.py --output verification/wave33-rootless-motif/precomparison-results.json
+outputs:
+  verification/wave33-rootless-motif/public-input-freeze.sha256: cc1296bcd8816a9a6a15f295fec1edf1f60ac745fe9ac380325098ccd753a166
+  verification/wave33-rootless-motif/independent-reconstruction.md: 6a4fd85e0f87ed98cafdd581523f468f17c7818c134dd8aaba5230bd15de1c2c
+  verification/wave33-rootless-motif/independent_check.py: 75b650079a22071de06481682a371bd8c551505fe838b10b391be9367d41428f
+  verification/wave33-rootless-motif/test_independent_check.py: 2fc460a47ce9d598128e8c11a455a5cc46522cada3269f1fc8c7fde04045fde1
+  verification/wave33-rootless-motif/precomparison-results.json: 68911c124a039b32b2eb5fe4c1f9886c033e17129b8b97d7a428c4bda7968253
+runtime:
+  python: "CPython 3.13.14"
+  platform: "Windows-11-10.0.26200-SP0, 64-bit AMD64"
+  dependencies: "Python standard library only"
+  agent_model: "inherited Codex subagent configuration; exact deployment label not exposed"
+limitations:
+  - No Wave 33 rootless candidate byte was inspected before this freeze.
+  - The two 6-by-6 tables are formal fused-algebra controls, not globally
+    realizable triangle configurations.
+  - The 14-vertex controls enforce lambda/mu only on nine T-U cross pairs.
+  - The four transversal candidates are not four realized graph triangles.
+  - No global motif forcing or avoidance is proved.
+  - Rootless endpoint existence, n3=708, Conway-99, and novelty remain UNKNOWN.

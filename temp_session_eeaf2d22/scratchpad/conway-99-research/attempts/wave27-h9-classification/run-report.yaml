@@ -1,0 +1,50 @@
+role: proof_a
+date_utc: 2026-07-24T00:00:14Z
+git_commit: 2ac11809fafee7ab752965ae49a96e922859b5ee
+claim_label: DERIVED
+scope: >-
+  Exact A2-free survivor of the n3=708 h=9 coordinate-lattice and coupled
+  S,Q,G,B identities; exact unrestricted local E6 trace minimum fourteen.
+  No 231-row projector, Schur-square, graph, endpoint exclusion, complete
+  h=9 classification, or novelty claim.
+inputs:
+  - path: verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md
+    sha256: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  - path: verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md
+    sha256: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  - path: verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md
+    sha256: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+  - path: verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md
+    sha256: 5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3
+  - path: verification/wave26-a2-cubic-obstruction/2026-07-23T231001Z-audit.md
+    sha256: 883f48e70336b87955f5c2a115ac8b137169310c6f5ef91fe4581cb1b6c10465
+method: >-
+  Exact Cartan-matrix construction; discriminant-module comparison; Weyl
+  root-orbit enumeration; complete scaled-dual minimum check; an AM-GM,
+  integral-idempotent, even-unimodular, and exact KKT proof of the local
+  E6 trace floor; explicit rank-one equality witness; exact 44-by-44 block
+  assembly; sixteen standard-library tests and deterministic JSON replay.
+command: |-
+  cd attempts/wave27-h9-classification
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  - path: agents/2026-07-23-wave27-h9-classification.md
+    sha256: 9b55de17a76cc087e5d83d94f94e8f48338e4d0382b1f18ef03614e0451100db
+  - path: attempts/wave27-h9-classification/exact_check.py
+    sha256: 49e9d60fe536c98d10e2b7f837aaa40574fc3a517436faa9bca017a7d4a7996d
+  - path: attempts/wave27-h9-classification/test_exact_check.py
+    sha256: cb152bf466bf1f82e8f7f9e8c2cf83f91736bceb64afd460fb6355045f13bb2a
+  - path: attempts/wave27-h9-classification/exact-results.json
+    sha256: 377b4edc9498ad71cb655f084970aed234ea809c8413643cb5e9cfd03b75fde2
+  - path: attempts/wave27-h9-classification/input-freeze.sha256
+    sha256: ccad8eb65c61f7e66e15cdd26d9766984d1ccff0d04834943446cefaf78a1284
+  - path: attempts/wave27-h9-classification/failed-routes.md
+    sha256: fa0f06964999c9fb08117e19ad5001004d23564b383532282763a9732fb9c59b
+limitations:
+  - All h=9 forms and genus classes are not classified.
+  - The package has no primitive embedding in Z^231.
+  - The package has no projector Gram or Schur-square/cubic-tensor origin.
+  - The exact local E6 trace result is arithmetic-only.
+  - n3=708 and Conway-99 remain UNKNOWN.
+  - Novelty remains UNKNOWN.

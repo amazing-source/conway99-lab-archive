@@ -1,0 +1,41 @@
+role: verifier
+date_utc: 2026-07-28T06:33:42Z
+git_commit: e1484c6564ddfde580191cdcb4a66a8f6ad7f2a2
+claim_label: VERIFIED
+scope: >-
+  Exact rational feasibility of the rank-28, discriminant-16, level-7
+  index-10/index-70 Jacobi necessary-condition relaxations at cutoffs
+  10, 12, 14, 16, 18, and 20; cutoff 28 remains UNKNOWN.
+inputs:
+  - path: attempts/wave127-independent-jacobi-certificate/MANIFEST.sha256
+    sha256: f4a1039928dcbd21e8de81f199265c80631182ec53f51d8c7e657259ee2f5fe4
+  - path: attempts/wave129-jacobi-stress/MANIFEST.sha256
+    sha256: 93e1f208faec2187ed3339e131af670d181a63a9518e6fd39ef0939540d79e5b
+method: >-
+  Preinspect both seals; independently reconstruct modular dimensions and
+  exact Eisenstein-product ranks through the Sturm bounds; derive the Fricke
+  factor; audit cache normalization, symmetry, and exact truncation
+  consistency; rebuild every unreduced equality and inequality without
+  importing discovery code; substitute all six rational candidates exactly;
+  and enforce UNKNOWN at cutoff 28 absent a primal or Farkas certificate.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave127-wave129-jacobi-audit\independent_verify.py
+  --verify
+  verification\wave127-wave129-jacobi-audit\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s verification\wave127-wave129-jacobi-audit -p "test_*.py" -v
+outputs:
+  - path: verification/wave127-wave129-jacobi-audit/independent-results.json
+    sha256: 75b2c70698f2f3eb972dc725c149a04b1c6cd0ff00b09087c76b3bd7daa98395
+  - path: verification/wave127-wave129-jacobi-audit/independent_verify.py
+    sha256: de02510f67473d6099af2370f1571b3bf4f5a1a93dc6d40f881d3f85bec9a105
+  - path: verification/wave127-wave129-jacobi-audit/package-manifest.sha256
+    sha256: SELF_EXCLUDED
+limitations:
+  - The verified claims concern finite necessary-condition relaxations only.
+  - Sealed Fourier columns are audited inputs, not independently generated complete theta series.
+  - Cutoff 28 remains UNKNOWN.
+  - No graph or lattice is constructed.
+  - Rank 28 is neither realized nor excluded.
+  - Conway-99 and literature novelty remain UNKNOWN.

@@ -1,0 +1,31 @@
+role: proof_b
+date_utc: 2026-07-29T06:42:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Hostile audit of the Q0=7037,7038 two-face exclusion and the additive
+  local four-fiber loss, deriving conditional Q>=7039.
+inputs:
+  - AGENTS.md
+  - verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256
+  - attempts/wave198-orientation-lift-proof-b/package-manifest.sha256
+  - attempts/wave198-orientation-lift-proof-a-audit/package-manifest.sha256
+  - attempts/wave199-near-face-gluing-proof-b-audit/package-manifest.sha256
+  - attempts/wave200-two-face-gluing-proof-a/package-manifest.sha256
+method: >-
+  Exact integer slack arithmetic and per-pair-fiber leaf-loss
+  decomposition, with fixed Hilton--Milner equality templates only at
+  c_x=13. No search over graphs, flags, configurations, or isomorphisms.
+command: >-
+  python -B attempts/wave200-two-face-gluing-proof-b-audit/exact_check.py
+  --verify attempts/wave200-two-face-gluing-proof-b-audit/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave200-two-face-gluing-proof-b-audit/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave200-two-face-gluing-proof-b-audit.md
+  - attempts/wave200-two-face-gluing-proof-b-audit/
+limitations:
+  - Proof-B hostile audit, not clean-room verifier promotion.
+  - Conditional on the prism-free rank-11 endpoint.
+  - The coarse mechanism stops at Q0=7039.
+  - No endpoint contradiction or external novelty claim.

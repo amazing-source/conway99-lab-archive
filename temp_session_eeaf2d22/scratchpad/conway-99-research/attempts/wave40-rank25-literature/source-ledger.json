@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-07-27",
+  "target": "For every hypothetical srg(99,14,1,2), rank_F7(M)=rank_F7(K)>=25, where M=21E0 and K=NMN^T=J-I-2A modulo 7.",
+  "novelty_status": "UNKNOWN",
+  "priority_status": "UNKNOWN",
+  "exact_equivalent_located": false,
+  "nonhit_warning": "Failure to locate an exact result in this bounded corpus is not evidence of novelty, priority, or absence from the full literature.",
+  "records": [
+    {
+      "id": "S01",
+      "category": "public_code_and_notebook",
+      "title": "conway99: Two adjacent vertices and their combined neighbourhoods",
+      "author_or_owner": "Gray Taylor",
+      "url": "https://github.com/GrayTaylor/conway99",
+      "pinned_commit": "68a9f2dcade05581986bf98b97cf8d7a5cdd4158",
+      "pinned_notebook_blob": "9c9fdefcba58d547261faef40ff7352e0ad66f82",
+      "exact_locations": [
+        "Notebook introduction: the 27 vertices a,b, their common neighbor, and two 12-sets",
+        "Notebook cell 24 output: 19 valid graphs reduced to 11 representatives",
+        "Notebook cell 25: Up to equivalence, we have 11 possibilities"
+      ],
+      "searched_terms": ["rank", "Smith", "Seidel", "mod 7", "F7", "incidence"],
+      "supports": "Exact prior art for the 27-vertex edge-neighborhood scaffold, its internal and cross matchings, and the exhaustive reduction to 11 representatives.",
+      "does_not_support": "No third-fiber border, characteristic-7 rank calculation, integral projector M, K=J-I-2A rank bound, or number 25 was located.",
+      "overlap_class": "EXACT_LOCAL_SCAFFOLD_PRIOR_ART"
+    },
+    {
+      "id": "S02",
+      "category": "author_blog_primary_exposition",
+      "title": "Growing Conway's 99-graph",
+      "author_or_owner": "Gray Taylor",
+      "date": "2020-07-08",
+      "url": "https://maths.straylight.co.uk/archives/1330",
+      "exact_locations": [
+        "Results: only eleven possibilities for the 27-vertex graph",
+        "Searching further: nearly 3 million 33-vertex graphs and a stalled continuation"
+      ],
+      "supports": "Authorial public statement of the eleven local possibilities and the computational boundary beyond them.",
+      "does_not_support": "No modular rank or rank-25 conclusion.",
+      "overlap_class": "EXACT_LOCAL_SCAFFOLD_PRIOR_ART"
+    },
+    {
+      "id": "S03",
+      "category": "journal_article_p_rank",
+      "title": "On the p-Rank of the Adjacency Matrices of Strongly Regular Graphs",
+      "authors": ["A. E. Brouwer", "C. A. van Eijl"],
+      "journal": "Journal of Algebraic Combinatorics 1 (1992), 329-346",
+      "doi": "10.1023/A:1022438616684",
+      "url": "https://emis.muni.cz/journals/JACO/Volume1_4/q1ur742gt117v044.fulltext.pdf",
+      "exact_locations": [
+        "Abstract and Section 1: p-rank and Smith form of aA+bJ+cI",
+        "Section 3, pp. 332-333: p divides r-s is the structure-dependent case",
+        "Section 3.2, p. 334: switching and Smith forms of J-2A+zI"
+      ],
+      "supports": "General p-rank and Smith-form prior art that directly contains K=J-I-2A in its matrix class and identifies p=7 as structure-dependent for restricted eigenvalues 3 and -4.",
+      "does_not_support": "No Conway-specific positive lower bound, local 39-point bordered block, rank 25, or exact equivalent was located.",
+      "overlap_class": "GENERAL_METHOD_PRIOR_ART"
+    },
+    {
+      "id": "S04",
+      "category": "masters_thesis_p_rank",
+      "title": "On the p-rank of the adjacency matrices of strongly regular graphs",
+      "author": "C. A. van Eijl",
+      "year": 1991,
+      "url": "https://www.win.tue.nl/~aeb/preprints/361304.pdf",
+      "exact_locations": ["66-page thesis; precursor cited by Brouwer and van Eijl (1992)"],
+      "searched_terms": ["(99,14,1,2)", "Conway", "J-I-2A", "rank 25"],
+      "supports": "Primary thesis treatment of p-rank and Smith form for strongly regular graph matrices.",
+      "does_not_support": "No exact Conway rank-25 statement or frozen formula was located.",
+      "overlap_class": "GENERAL_METHOD_PRIOR_ART"
+    },
+    {
+      "id": "S05",
+      "category": "journal_article_minimal_p_rank",
+      "title": "Uniqueness of strongly regular graphs having minimal p-rank",
+      "author": "Rene Peeters",
+      "journal": "Linear Algebra and its Applications 226-228 (1995), 9-31",
+      "doi": "10.1016/0024-3795(95)00184-S",
+      "url": "https://research.tilburguniversity.edu/files/572103/uniquene.pdf",
+      "supports": "Structural prior art for minimal p-ranks of A+cI among strongly regular graphs.",
+      "does_not_support": "The abstracted scope is A+cI, and no exact Conway K/M lower bound or number 25 was located.",
+      "overlap_class": "GENERAL_METHOD_PRIOR_ART"
+    },
+    {
+      "id": "S06",
+      "category": "research_monograph",
+      "title": "Strongly Regular Graphs",
+      "authors": ["A. E. Brouwer", "H. Van Maldeghem"],
+      "publisher": "Cambridge University Press",
+      "year": 2022,
+      "url": "https://homepages.cwi.nl/~aeb/math/srg/rk3/srgw.pdf",
+      "exact_locations": [
+        "Section 1.1.17: Conway problem and automorphism history",
+        "Chapter 9: p-ranks"
+      ],
+      "supports": "Modern primary synthesis of the Conway status and SRG p-rank theory.",
+      "does_not_support": "Direct text search did not locate the rank-25 condition or a Conway-specific characteristic-7 lower bound in the p-rank chapter.",
+      "overlap_class": "GENERAL_SURVEY_PRIOR_ART"
+    },
+    {
+      "id": "S07",
+      "category": "preprint_clique_incidence",
+      "title": "On Clique Graphs and Clique Regular Graphs",
+      "authors": ["Patrick Petro", "Isaac Phillips"],
+      "arxiv": "2502.17845v1",
+      "date": "2025-02-25",
+      "url": "https://arxiv.org/pdf/2502.17845",
+      "exact_locations": [
+        "p. 16: vertex-clique incidence matrix R and identities R^T R and RR^T",
+        "p. 27: Conway triangle-clique spectrum 18^1, 7^54, 0^44, (-3)^132"
+      ],
+      "supports": "Conway-specific triangle-incidence and clique-spectrum prior art adjacent to the Wave 40 triangle-space construction.",
+      "does_not_support": "No modular rank, Smith form, M, K, bordered-rank lemma, or number 25 was located.",
+      "overlap_class": "NEAR_HIT_TRIANGLE_INCIDENCE"
+    },
+    {
+      "id": "S08",
+      "category": "journal_article_smith_form",
+      "title": "Critical group structure from the parameters of a strongly regular graph",
+      "authors": ["Joshua E. Ducey", "David L. Duncan", "Wesley J. Engelbrecht", "Jawahar V. Madan", "Eric Piato", "Christina S. Shatford", "Angela Vichitbandha"],
+      "journal": "Journal of Combinatorial Theory, Series A 180 (2021), 105424",
+      "doi": "10.1016/j.jcta.2021.105424",
+      "url": "https://arxiv.org/pdf/1910.07686",
+      "exact_locations": [
+        "Example 3.2, p. 9: critical group of a hypothetical Conway graph"
+      ],
+      "supports": "Conway-specific Smith-form prior art for the Laplacian, yielding (Z/11)^53 + (Z/2)^44 + (Z/9)^43.",
+      "does_not_support": "The matrix is the Laplacian 14I-A, not M or K, and the result supplies no characteristic-7 rank condition.",
+      "overlap_class": "NEAR_HIT_DISTINCT_MATRIX"
+    },
+    {
+      "id": "S09",
+      "category": "journal_preprint_finite_field_frames",
+      "title": "Frames over finite fields: Equiangular lines in orthogonal geometry",
+      "authors": ["Gary R. W. Greaves", "Joseph W. Iverson", "John Jasper", "Dustin G. Mixon"],
+      "arxiv": "2012.13642",
+      "journal": "Linear Algebra and its Applications 639 (2022), 50-80",
+      "doi": "10.1016/j.laa.2021.11.024",
+      "url": "https://arxiv.org/pdf/2012.13642",
+      "exact_locations": [
+        "Example 5.5 and Table 3, p. 21: a Conway graph implies a 100-vector ETF in dimension 45 over F_5"
+      ],
+      "supports": "Conway-specific finite-field Seidel/Gram necessary-condition prior art.",
+      "does_not_support": "The consequence is in characteristic 5 and does not state rank_F7(K), M, or 25.",
+      "overlap_class": "NEAR_HIT_DISTINCT_CHARACTERISTIC"
+    },
+    {
+      "id": "S10",
+      "category": "sat_thesis_preprint",
+      "title": "Approaching the Conway-99 problem using SAT solvers",
+      "author": "Ali Keramatipour",
+      "arxiv": "2604.23037",
+      "date": "2026-04",
+      "url": "https://arxiv.org/pdf/2604.23037",
+      "searched_terms": ["rank", "Smith", "incidence matrix", "triangle mate", "J-I-2A"],
+      "supports": "Current primary SAT encoding, solver experiments, and computational roadmap for Conway-99.",
+      "does_not_support": "No modular-rank or rank-25 result was located.",
+      "overlap_class": "DIRECT_TARGET_DISTINCT_METHOD"
+    },
+    {
+      "id": "S11",
+      "category": "institutional_reu_report",
+      "title": "Conway's 99-Graph Problem: A Boolean Satisfiability Approach",
+      "author": "Nathaniel Selub",
+      "year": 2023,
+      "url": "https://math.uchicago.edu/~may/REU2023/REUPapers/Selub.pdf",
+      "searched_terms": ["rank", "Smith", "Seidel", "incidence matrix", "mod 7", "F7"],
+      "supports": "Primary SAT framework and rooted-neighborhood discussion.",
+      "does_not_support": "No modular rank result, complete solve, or rank-25 statement was located.",
+      "overlap_class": "DIRECT_TARGET_DISTINCT_METHOD"
+    },
+    {
+      "id": "S12",
+      "category": "institutional_research_report",
+      "title": "On the Strongly Regular Graph of Parameters (99,14,1,2)",
+      "authors": ["Suzy Lou", "Max Murin"],
+      "year": 2014,
+      "url": "https://math.mit.edu/research/highschool/primes/materials/2014/Lou-Murin.pdf",
+      "searched_terms": ["rank", "Smith", "Seidel", "incidence matrix", "modulo 7", "F7"],
+      "supports": "Primary Conway-specific work on substructures, triangle decompositions, constructions, and automorphisms.",
+      "does_not_support": "No rank or Smith-form treatment and no rank-25 equivalent was located.",
+      "overlap_class": "DIRECT_TARGET_DISTINCT_METHOD"
+    },
+    {
+      "id": "S13",
+      "category": "preprints_small_subgraphs",
+      "title": "The Lower Bound for Number of Hexagons ...; The Subgraphs of Order Six ...",
+      "author": "Reimbay Reimbayev",
+      "arxiv_ids": ["2409.10620", "2508.03377v2"],
+      "urls": ["https://arxiv.org/pdf/2409.10620", "https://arxiv.org/pdf/2508.03377"],
+      "searched_terms": ["rank", "Smith", "incidence matrix", "J-I-2A", "modulo 7", "F7"],
+      "supports": "Primary structural work for the lambda=1, mu=2 family, including Conway-99.",
+      "does_not_support": "No relevant modular rank statement was located.",
+      "overlap_class": "DIRECT_TARGET_DISTINCT_METHOD"
+    },
+    {
+      "id": "S14",
+      "category": "bachelor_thesis_local_search",
+      "title": "Zur Anwendung des Verfahrens der lokalen Suche auf die Berechnung stark regularer Graphen",
+      "author": "Jakob Dunkel",
+      "url": "https://opendata.uni-halle.de/bitstream/1981185920/120821/1/DunkelJakob_Zur%20Anwendung%20des%20Verfahrens%20der%20lokalen%20Suche%20auf%20die%20Berechnung%20stark%20regul%C3%A4rer%20Graphen.pdf",
+      "searched_terms": ["Rang", "Smith", "modulo", "Seidel"],
+      "supports": "Primary dissertation-style local-search treatment that includes Conway-99 computational experiments.",
+      "does_not_support": "No modular rank or equivalent rank-25 condition was located.",
+      "overlap_class": "DIRECT_TARGET_DISTINCT_METHOD"
+    },
+    {
+      "id": "S15",
+      "category": "original_conway_report",
+      "title": "On the (99,14,1,2) strongly regular graph",
+      "author": "H. A. Wilbrink",
+      "year": 1984,
+      "report": "Technische Hogeschool Eindhoven 84-WSK-03, pp. 342-355",
+      "url": "https://pure.tue.nl/ws/files/1856500/688724168091800.pdf",
+      "supports": "Original primary Conway-specific automorphism restriction, including exclusion of automorphisms of order 11.",
+      "does_not_support": "No p-rank, Smith-form, or rank-25 result was located.",
+      "overlap_class": "DIRECT_TARGET_DISTINCT_METHOD"
+    },
+    {
+      "id": "S16",
+      "category": "journal_article_automorphisms",
+      "title": "On the automorphism group of a putative Conway 99-graph",
+      "authors": ["Patrick G. Cesarz", "Andrew J. Woldar"],
+      "journal": "Algebraic Combinatorics 8 (2025), 379-398",
+      "doi": "10.5802/alco.418",
+      "url": "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+      "supports": "Current primary Conway-specific automorphism restrictions.",
+      "does_not_support": "No characteristic-7 matrix-rank condition or rank-25 conclusion.",
+      "overlap_class": "DIRECT_TARGET_DISTINCT_METHOD"
+    },
+    {
+      "id": "S17",
+      "category": "public_code_bounded_probe",
+      "title": "Current public Conway certificate/formalization repositories",
+      "repositories": [
+        {
+          "url": "https://github.com/Kuberwastaken/conway99-c3-orbit-restriction",
+          "pinned_commit": "be7b0ae3394721a4c3a1375008a1dbfca44981fc"
+        },
+        {
+          "url": "https://github.com/harrisonpedrero/conway-99-graph",
+          "pinned_commit": "26b36c540611fa02c95a5a4bd78cd4a582257195"
+        }
+      ],
+      "inspected": "Pinned repository trees plus exact GitHub code-search queries for the frozen rank/formula aliases.",
+      "supports": "Current public formal and certificate work exists for other restricted or rooted Conway targets.",
+      "does_not_support": "No exact hit for rank_F7(M)>=25, J-I-2A with Conway, or the frozen formula was returned in the bounded probes.",
+      "overlap_class": "PUBLIC_CODE_NONHIT_BOUNDED"
+    }
+  ]
+}

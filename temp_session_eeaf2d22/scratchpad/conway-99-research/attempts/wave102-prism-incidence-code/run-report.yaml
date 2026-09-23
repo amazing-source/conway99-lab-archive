@@ -1,0 +1,37 @@
+role: proof_b
+date_utc: 2026-07-28T03:19:14Z
+git_commit: e671eb056df60edcbf48da6b9fcfe635b2444479
+claim_label: DERIVED
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2), derive binary
+  triangle-incidence constraints on the rooted prism vector and retain the
+  exact odd-coordinate defect in the Wave100 N14 bound.
+inputs:
+  - path: verification/wave100-general-pair-moment/package-manifest.sha256
+    sha256: a4aaed31aa47c26c3d2894985ae4b9602ed0408abe442d1d407510c2c893f916
+  - path: verification/wave99-transition-pair-moment/package-manifest.sha256
+    sha256: 2d94086a0abef0612a445528319e1db4ef54c1fbb7fa361caef6025739aa654f
+  - path: verification/wave94-general-n3-norm14-bound/package-manifest.sha256
+    sha256: a579aa242fc11583ef38525718cc87954fd86a732032b456939d9904a90603e9
+method: >-
+  Factor vertex-prism incidence through the binary triangle code; derive
+  adjacency and code rank bounds; preserve the exact odd-root floor defect;
+  prove the two-prism overlap cap; exhaust labelled three-prism parity
+  cancellation; and construct a hostile four-prism local cancellation
+  motif.
+command: >-
+  python -B -m unittest discover -s
+  attempts/wave102-prism-incidence-code -p "test_*.py" -v
+outputs:
+  - path: attempts/wave102-prism-incidence-code/exact-results.json
+    sha256: 7a3d0222997504aeef80d64f09789f370ddd587de017f6e3c42cb5d8a956ad3c
+  - path: attempts/wave102-prism-incidence-code/derivation.md
+    sha256: df8841bee7f23b444186ab65947f77865ffb243363967dd56340207628f00c6f
+  - path: attempts/wave102-prism-incidence-code/failed-routes.md
+    sha256: 595ee9c55c2b5a6f35a2a84f0c1acbb4c3640aae33c9bbb5b935c962744be753
+limitations:
+  - Independent verification is required.
+  - The general code constraints do not force f mod 2 to be nonzero.
+  - The four-prism cancellation motif is not a full graph construction.
+  - No strict n3 upper bound or Conway-99 resolution follows.
+  - Literature novelty remains UNKNOWN.

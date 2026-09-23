@@ -1,0 +1,392 @@
+{
+  "audit": {
+    "role": "literature",
+    "cutoff_date": "2026-07-23",
+    "retrieval_window_utc": {
+      "start": "2026-07-23T19:39:08Z",
+      "end": "2026-07-23T19:53:37Z"
+    },
+    "target": "existence of srg(99,14,1,2)",
+    "preinspection_query_plan": {
+      "path": "verification/wave23-literature-audit/preinspection-query-plan.md",
+      "sha256": "9e75b30797064af8d9dc04ba27afa555fc5ec8214809756ffc7eddba65fb637f"
+    },
+    "cache_policy": "The entire verification/wave23-literature-audit/sources tree is a disposable audit cache. Publication requires this ledger and the authored report artifacts, not the cached third-party files or extracted trees. The ledger provides provenance and integrity targets for reacquisition; replay depends on the cited sources remaining available at the same bytes."
+  },
+  "verdict_vocabulary": {
+    "CONFIRMED": "Directly supported by an inspected primary or authoritative source.",
+    "BOUNDED_NON_DISCOVERY": "Not located in the enumerated queries and inspected sources; not evidence of global absence.",
+    "UNKNOWN": "Not established by this audit, including global novelty."
+  },
+  "exact_web_queries": [
+    "\"srg(99,14,1,2)\"",
+    "\"SRG(99,14,1,2)\"",
+    "\"strongly regular graph\" \"99,14,1,2\"",
+    "\"Conway's 99-graph problem\"",
+    "\"Conway 99-graph problem\" open",
+    "\"n_3\" \"Conway\" \"99\"",
+    "\"n3\" \"Conway\" \"99-graph\"",
+    "\"n_3\" 705 \"strongly regular\"",
+    "\"n_3\" 708 \"strongly regular\"",
+    "\"n3>=708\" graph",
+    "\"n_3 \\\\geq 708\" graph",
+    "\"209991\" graph",
+    "\"209994\" graph",
+    "\"209,994\" \"6-cycles\"",
+    "\"induced 6-cycles\" \"99\" \"strongly regular\"",
+    "\"determinant\" \"index\" \"srg(99,14,1,2)\"",
+    "\"determinant\" \"Conway's 99-graph\"",
+    "\"even unimodular\" \"Conway 99\"",
+    "\"Maclaurin\" \"Conway 99\"",
+    "\"KKT\" \"Conway 99\"",
+    "\"projector lattice\" \"strongly regular graph\" \"99\"",
+    "\"product of eigenvalues\" \"99-graph\"",
+    "\"lattice\" \"srg(99,14,1,2)\"",
+    "\"Hamiltonian 7-cycles\" \"Conway 99\""
+  ],
+  "supplemental_exact_web_queries": [
+    "\"tr(B^2)\" \"Conway\" graph",
+    "\"det(B)\" \"Conway\" \"99-graph\"",
+    "\"van der Blij\" \"strongly regular graph\"",
+    "\"even unimodular\" \"srg(99,14,1,2)\"",
+    "\"Strongly regular graphs with \u03bb=1\" Makhnev 1988 DOI",
+    "\"BF01158426\" Makhnev",
+    "site:mathnet.ru mzm667 Makhnev strongly regular graphs lambda 1"
+  ],
+  "machine_queries": [
+    {
+      "service": "arXiv API",
+      "query": "search_query=all:\"Conway 99\"&start=0&max_results=100",
+      "artifact": "arxiv-query-conway-99.xml"
+    },
+    {
+      "service": "arXiv API",
+      "query": "search_query=all:\"99,14,1,2\"&start=0&max_results=100",
+      "artifact": "arxiv-query-parameters.xml"
+    },
+    {
+      "service": "Semantic Scholar citation API",
+      "query": "citations of ARXIV:2308.02978",
+      "artifact": "semanticscholar-2308.02978-citations.json"
+    },
+    {
+      "service": "Semantic Scholar citation API",
+      "query": "citations of ARXIV:2409.10620",
+      "artifact": "semanticscholar-2409.10620-citations.json"
+    },
+    {
+      "service": "Semantic Scholar citation API",
+      "query": "citations of ARXIV:2508.03377",
+      "artifact": "semanticscholar-2508.03377-citations.json"
+    },
+    {
+      "service": "Semantic Scholar citation API",
+      "query": "citations of ARXIV:2511.06572",
+      "artifact": "semanticscholar-2511.06572-citations.json"
+    },
+    {
+      "service": "Semantic Scholar citation API",
+      "query": "citations of ARXIV:2604.23037",
+      "artifact": "semanticscholar-2604.23037-citations.json"
+    }
+  ],
+  "in_document_search": {
+    "roots": [
+      "1910.07686v1-source",
+      "2308.02978v1-source",
+      "2409.10620v1-source",
+      "2502.17845v1-source",
+      "2508.03377v2-source",
+      "2511.06569v1-source",
+      "2511.06572v1-source",
+      "2604.23037v2-source",
+      "2605.22867v1-source"
+    ],
+    "terms": [
+      "99,14,1,2",
+      "99-graph",
+      "Conway",
+      "n_3",
+      "n3",
+      "705",
+      "708",
+      "209991",
+      "209994",
+      "six-cycle",
+      "6-cycle",
+      "induced",
+      "determinant",
+      "index",
+      "lattice",
+      "unimodular",
+      "Maclaurin",
+      "KKT",
+      "projector",
+      "eigenvalue",
+      "Hamiltonian"
+    ],
+    "reproducible_command": "rg -n -i '209991|209994|209,994|n_?\\\\{?3\\\\}?\\\\s*(>=|\\\\\\\\geq|\\\\\\\\ge)\\\\s*708|n_?\\\\{?3\\\\}?\\\\s*(>=|\\\\\\\\geq|\\\\\\\\ge)\\\\s*705|Maclaurin|KKT|even[- ]unimodular|van der Blij|projector lattice|product of eigenvalues' verification/wave23-literature-audit/sources -g '*.tex'",
+    "result": "No target occurrence of 705, 708, 209991, 209994, Maclaurin, KKT, an even-unimodular obstruction, a projector lattice, or a product-of-eigenvalues endpoint argument was found in the enumerated source trees."
+  },
+  "primary_and_authoritative_sources": [
+    {
+      "id": "arxiv:2409.10620v1",
+      "title": "The Lower Bound for Number of Hexagons in Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "author": "Reimbay Reimbayev",
+      "version_date_utc": "2024-09-16T18:00:19Z",
+      "urls": [
+        "https://arxiv.org/abs/2409.10620v1",
+        "https://arxiv.org/pdf/2409.10620v1",
+        "https://export.arxiv.org/e-print/2409.10620v1",
+        "https://ejaam.org/articles/2024/10.62780-ejaam-2024-001.pdf"
+      ],
+      "inspection": "Defines n_i as counts of the Figure 6 induced six-vertex types, identifies n_12 as an induced hexagon, proves n_12=(1/12)nk(k-2)(2k^2-21k+53)+n_3, and invokes only n_3>=0 for its lower-bound theorem.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "arxiv:2508.03377v2",
+      "title": "The Subgraphs of Order Six of the Family of Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "author": "Reimbay Reimbayev",
+      "version_date_utc": "2025-11-03T21:34:38Z",
+      "urls": [
+        "https://arxiv.org/abs/2508.03377v2",
+        "https://arxiv.org/pdf/2508.03377v2",
+        "https://export.arxiv.org/e-print/2508.03377v2"
+      ],
+      "inspection": "The current six-vertex classification keeps n_3 as the single free parameter and repeats the n_12 identity. Its N_3 figure is two disjoint triangles joined by exactly two independent cross-edges. No positive lower bound for n_3 is stated.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "arxiv:2511.06572v1",
+      "title": "Hamiltonian Subgraphs of Order Seven in srg(n,k,1,2)",
+      "author": "Reimbay Reimbayev",
+      "version_date_utc": "2025-11-09T23:19:43Z",
+      "urls": [
+        "https://arxiv.org/abs/2511.06572v1",
+        "https://arxiv.org/pdf/2511.06572v1",
+        "https://export.arxiv.org/e-print/2511.06572v1"
+      ],
+      "inspection": "Uses n_3 and h_11 as free parameters and derives 2n_3<=h_11<=4n_3. It does not give a positive lower bound for n_3 and contains none of the Wave23 numerical endpoints or lattice method.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "arxiv:2511.06569v1",
+      "title": "Nonexistence of srg(19,6,1,2): Combinatorial Proof",
+      "author": "Reimbay Reimbayev",
+      "version_date_utc": "2025-11-09",
+      "urls": [
+        "https://arxiv.org/abs/2511.06569v1",
+        "https://arxiv.org/pdf/2511.06569v1",
+        "https://export.arxiv.org/e-print/2511.06569v1"
+      ],
+      "inspection": "Citation-trail paper for a different parameter set; no target n_3 endpoint or Wave23 method.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "doi:10.1007/BF01158426",
+      "title": "Strongly regular graphs with lambda=1",
+      "author": "A. A. Makhnev",
+      "publication": "Mathematical Notes 44 (1988), 847-850; Russian original Matematicheskie Zametki 44(5), 667-672",
+      "urls": [
+        "https://doi.org/10.1007/BF01158426",
+        "https://www.mathnet.ru/eng/mzm4220",
+        "https://www.mathnet.ru/eng/mzm/v44/i5/p667"
+      ],
+      "inspection": "The authoritative MathNet record and indexed abstract scope were inspected; direct page opening failed with a Unicode-decoding error. The indexed result treats the case with no two triangles joined by exactly two edges and excludes the target under that condition. For lambda=1 this is the n_3=0 condition. Together with 3|n_3 from Reimbayev's displayed relation, this yields the derived prior necessary bound n_3>=3 for a putative target, but the paper does not state that bound in n_3 notation.",
+      "verdict": "CONFIRMED",
+      "limitation": "Bibliographic metadata and indexed abstract scope were checked, but the full text was not machine-readable in this audit."
+    },
+    {
+      "id": "arxiv:2308.02978v1 / doi:10.5802/alco.418",
+      "title": "On the automorphism group of a putative Conway 99-graph",
+      "authors": "Patrick G. Cesarz and Andrew J. Woldar",
+      "version_date_utc": "2023-08-06T00:31:47Z",
+      "publication": "Algebraic Combinatorics 8 (2025), no. 2, 379-398; published online 2025-04-24",
+      "urls": [
+        "https://arxiv.org/abs/2308.02978v1",
+        "https://arxiv.org/pdf/2308.02978v1",
+        "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+        "https://alco.centre-mersenne.org/item/10.5802/alco.418.pdf"
+      ],
+      "inspection": "Calls existence an elusive open problem and proves only automorphism-group restrictions. It adds no unrestricted automorphism assumption and gives no target n_3 bound or Wave23 endpoint method.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "arxiv:2604.23037v2",
+      "title": "Approaching the Conway-99 problem using SAT solvers",
+      "author": "Ali Keramatipour",
+      "version_date_utc": "2026-04-28T09:02:53Z",
+      "urls": [
+        "https://arxiv.org/abs/2604.23037v2",
+        "https://arxiv.org/pdf/2604.23037v2",
+        "https://export.arxiv.org/e-print/2604.23037v2"
+      ],
+      "inspection": "Defines Conway-99 as an open problem asking whether an srg(99,14,1,2) exists and reports that the studied SAT approach does not settle it.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "arxiv:2502.17845v1",
+      "title": "On Clique Graphs and Clique Regular Graphs",
+      "authors": "Robert R. Petro and Connor M. Phillips",
+      "version_date_utc": "2025-02-25T04:43:42Z",
+      "urls": [
+        "https://arxiv.org/abs/2502.17845v1",
+        "https://arxiv.org/pdf/2502.17845v1",
+        "https://export.arxiv.org/e-print/2502.17845v1"
+      ],
+      "inspection": "For a putative target, derives the triangle/clique-graph spectrum 18^1, 7^54, 0^44, (-3)^132. It contains no n_3, 705, 708, 209994, or Wave23 determinant/index/Maclaurin endpoint.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "arxiv:2605.22867v1",
+      "title": "A Comprehensive Study of Clique Graphs and Clique Regular Graphs",
+      "author": "Connor Phillips",
+      "version_date_utc": "2026-05-19T20:49:26Z",
+      "urls": [
+        "https://arxiv.org/abs/2605.22867v1",
+        "https://arxiv.org/pdf/2605.22867v1",
+        "https://export.arxiv.org/e-print/2605.22867v1"
+      ],
+      "inspection": "The thesis says the Conway bounty has yet to be claimed, restates the existence question, and expands the clique-graph framework. It contains no Wave23 numerical endpoint or method.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "arxiv:1910.07686v1",
+      "title": "Critical group structure from the parameters of a strongly regular graph",
+      "authors": "Joshua E. Ducey et al.",
+      "version_date_utc": "2019-10-17T02:47:34Z",
+      "urls": [
+        "https://arxiv.org/abs/1910.07686v1",
+        "https://arxiv.org/pdf/1910.07686v1",
+        "https://export.arxiv.org/e-print/1910.07686v1"
+      ],
+      "inspection": "Discusses critical groups, Smith normal forms, and unimodular matrix operations for the target parameters, but not the n_3 bound or the Wave23 endpoint obstruction.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "brouwer-srg-table",
+      "title": "Strongly regular graphs with 51-100 vertices",
+      "maintainer": "A. E. Brouwer",
+      "url": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html",
+      "inspection": "The maintained row for 99,14,1,2 is marked '?' and lists restricted eigenvalues 3^54 and -4^44.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "brouwer-van-maldeghem-book",
+      "title": "Strongly Regular Graphs",
+      "authors": "Andries E. Brouwer and Hendrik Van Maldeghem",
+      "url": "https://homepages.cwi.nl/~aeb/math/srg/rk3/srgw.pdf",
+      "inspection": "Authoritative general reference and status-table context; no located target resolution or Wave23 endpoint.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "id": "cumberland-2026-program",
+      "title": "Cumberland Conference 2026 program",
+      "url": "https://www.auburn.edu/cosam/departments/math/cumberland-conference/34th_cumberland_program.pdf",
+      "inspection": "The inspected Baker abstract announces general induced-subgraph bounds and mentions Conway-99, but supplies no exact N_3 bound, target resolution, manuscript, or Wave23 endpoint argument.",
+      "verdict": "BOUNDED_NON_DISCOVERY"
+    }
+  ],
+  "citation_trail": {
+    "arxiv_2409_10620": [
+      "arXiv:2508.03377",
+      "arXiv:2511.06569",
+      "arXiv:2511.06572"
+    ],
+    "arxiv_2308_02978": [
+      "arXiv:2606.29183 (different missing Moore graph problem)",
+      "Ibrahim-Lafayette-McCall 2025 (percolating sets; no target result)"
+    ],
+    "empty_at_retrieval": [
+      "arXiv:2508.03377",
+      "arXiv:2511.06572",
+      "arXiv:2604.23037"
+    ],
+    "limitation": "Semantic Scholar is a discovery aid, not an authoritative or complete citation index. Each relevant primary paper reached from the trail was inspected separately."
+  },
+  "claim_findings": [
+    {
+      "claim": "The exact target is the existence of srg(99,14,1,2).",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "claim": "Current inspected sources still treat target existence as open.",
+      "verdict": "CONFIRMED",
+      "limitation": "This is a current-source status statement, not a proof that no unindexed resolution exists."
+    },
+    {
+      "claim": "Reimbayev's n_3 is a six-vertex induced-pattern count, not the total number of triangles.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "claim": "For the target, induced_C6=n_12=209286+n_3.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "claim": "The strongest explicit lower bound for n_3 in the inspected published/preprint Reimbayev sources is n_3>=0.",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "claim": "Makhnev's n_3=0 exclusion combined with Reimbayev's relation 3n_1+n_3=4158 yields the prior necessary bound n_3>=3 for a putative target.",
+      "verdict": "CONFIRMED",
+      "classification": "DERIVED_FROM_CITED_PRIMARY_RESULTS",
+      "limitation": "The Makhnev full text was not machine-readable in this audit; its authoritative indexed record/abstract and Reimbayev's description were checked. The numeric n_3>=3 formulation is an audit inference, not a quoted theorem."
+    },
+    {
+      "claim": "A source contains n_3>=708 or induced_C6>=209994.",
+      "verdict": "BOUNDED_NON_DISCOVERY"
+    },
+    {
+      "claim": "A source contains the same determinant/index, exact two-moment eigenvalue-product optimization, and even-unimodular endpoint obstruction as Wave23.",
+      "verdict": "BOUNDED_NON_DISCOVERY"
+    },
+    {
+      "claim": "The Wave23 result or method is novel.",
+      "verdict": "UNKNOWN"
+    }
+  ],
+  "acquisition_failures": [
+    {
+      "target": "arXiv:2511.06572v1 PDF",
+      "failure": "An initial acquisition was observed as a 0-byte file; that failed object was not retained, so no hash is claimed for it.",
+      "mitigation": "A fresh official PDF request succeeded with 467585 bytes and SHA-256 d98d474ef277b6a32fc4125690c75d3808450225b0657dbd46290673b7a014f7. The official e-print/source request independently succeeded with 272578 bytes and SHA-256 10f8d9ea09dc72f4ca6bce4e9427ff1df32718d2978bb35a16db1af3c27cc39a."
+    },
+    {
+      "target": "Reimbayev 2024 publisher PDF",
+      "failure": "The attempted /volumes/... URL returned an 880-byte HTML document, not a PDF; SHA-256 1a85d6a1254fdb12a489ee8d3cf1b0c08c62d3a1582e88a7d039d7662cfabf3f. It was not retained under the final publisher-PDF filename.",
+      "mitigation": "The official /articles/2024/10.62780-ejaam-2024-001.pdf URL succeeded with 372641 bytes and SHA-256 484ff4bbcf13ea26d478baa4c24b97f6996ac3fc35ef8459c15fb61b61b98521."
+    }
+  ],
+  "cache_artifacts": [
+    {"name":"1910.07686v1.pdf","bytes":223053,"sha256":"8d74d42bbcc84aebb2d64d172e4adca2c5c2afa3acb612e5d054b7942575f2c8"},
+    {"name":"1910.07686v1-source.tar","bytes":20309,"sha256":"adf32e1d1679f6d069a075f37b5f68176133a5e77269c45eae7ce0821321fea5"},
+    {"name":"2308.02978v1.pdf","bytes":282211,"sha256":"bc5a6d295601f44122453b299eee8105bd396e02028a19dd6810acad545bb488"},
+    {"name":"2308.02978v1-source.tar","bytes":30593,"sha256":"80029d49b09b68b88b16ab0265b2bbca353517e2e58dad395569020a9f42f098"},
+    {"name":"2409.10620v1.pdf","bytes":444509,"sha256":"0d882e787d2bf8b98b28871bf89bf67a1c8fd78feda8ece414c6fe129b9f07ab"},
+    {"name":"2409.10620v1-source.tar","bytes":127685,"sha256":"9e31eb63e878531124cb20df306698827b93057b4ef9feed207654aea8f31112"},
+    {"name":"2502.17845v1.pdf","bytes":3107011,"sha256":"9adb7132b4a40ce87d77b2326fc6ddf1370aa12665f86617aa285b9e824797be"},
+    {"name":"2502.17845v1-source.tar","bytes":3048776,"sha256":"70184d605bd3cb7732efae8311de44697ee55793be988bd8a880271da283e2c9"},
+    {"name":"2508.03377v2.pdf","bytes":873456,"sha256":"c25d3c989343a7af843ddfaa07187558ecc115c19b100f96d599b296ef203fe9"},
+    {"name":"2508.03377v2-source.tar","bytes":536704,"sha256":"f8429d2f839267e2aaf98b04451cb2f0252c0353f75bee6ec6e6947eab0d5834"},
+    {"name":"2511.06569v1.pdf","bytes":280937,"sha256":"a3a2a799e91120a7b6ccb0ed5a2e9feba8c14612bf7033d9476433b392fad26d"},
+    {"name":"2511.06569v1-source.tar","bytes":80511,"sha256":"5d1a5d22ad0bbde4fc4739fe4187faf13261255946cec57833aca2ccd6b53df3"},
+    {"name":"2511.06572v1.pdf","bytes":467585,"sha256":"d98d474ef277b6a32fc4125690c75d3808450225b0657dbd46290673b7a014f7"},
+    {"name":"2511.06572v1-source.tar","bytes":272578,"sha256":"10f8d9ea09dc72f4ca6bce4e9427ff1df32718d2978bb35a16db1af3c27cc39a"},
+    {"name":"2604.23037v2.pdf","bytes":2763608,"sha256":"8fadd666b4b8eaa538874b209c3b4f113704bfdc9d567efdb66e6c8296fe0cc8"},
+    {"name":"2604.23037v2-source.tar","bytes":3384495,"sha256":"ddd6c002f142c9a3a0b648c28aa0e4d478f314b6af646b86810ec29129bf1caa"},
+    {"name":"2605.22867v1.pdf","bytes":1059251,"sha256":"12247e688b93fae41726ce7e5175d6c496a38b7537f2f5ce0f87f094031f86e9"},
+    {"name":"2605.22867v1-source.tar","bytes":739183,"sha256":"5345e9c360caf0a501de83c8d4a4b552cb06034de3047a4c2e48874d33748b18"},
+    {"name":"arxiv-query-conway-99.xml","bytes":7969,"sha256":"8d1f4c92cc50908bda33b784d4bf1610a9ab997890cbac8b6f7e12e4525baed4"},
+    {"name":"arxiv-query-parameters.xml","bytes":3311,"sha256":"61e540b1d04105916d15dad01eb58f1b76ce3b3791233efd965d6dd760140c78"},
+    {"name":"brouwer-srgtab51-100.html","bytes":24003,"sha256":"db88468cc47bb5aa9108d488596557de3a68ec80dcf5f7ffea9f2e16d3f60f89"},
+    {"name":"brouwer-van-maldeghem-srgw.pdf","bytes":2902008,"sha256":"fa73d72e86bbd8dc3fbfcbca45679cb8f2671d777e91c009eeff0a563fd9289d"},
+    {"name":"cesarz-woldar-2025-publisher.pdf","bytes":964747,"sha256":"d88f3832337b949edbd21cadf0836bd0df77bf84bf5c225a1b834d9883ca65a8"},
+    {"name":"cumberland-2026-program.pdf","bytes":411540,"sha256":"ccaeef479f24c2a8e7994ba11220b6846ba7fddb541079c9954152bb6906090d"},
+    {"name":"reimbayev-2024-publisher.pdf","bytes":372641,"sha256":"484ff4bbcf13ea26d478baa4c24b97f6996ac3fc35ef8459c15fb61b61b98521"},
+    {"name":"semanticscholar-2308.02978-citations.json","bytes":704,"sha256":"69653db5a7fbfa5aa6bc4b5be2a64cfa6307cd11d2bf60f770c07c86eacab070"},
+    {"name":"semanticscholar-2409.10620-citations.json","bytes":917,"sha256":"821d5900fc1fc15742a103a308290b0da9155aa140e45da74209db92ade3e947"},
+    {"name":"semanticscholar-2508.03377-citations.json","bytes":26,"sha256":"b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479"},
+    {"name":"semanticscholar-2511.06572-citations.json","bytes":26,"sha256":"b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479"},
+    {"name":"semanticscholar-2604.23037-citations.json","bytes":26,"sha256":"b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479"}
+  ]
+}

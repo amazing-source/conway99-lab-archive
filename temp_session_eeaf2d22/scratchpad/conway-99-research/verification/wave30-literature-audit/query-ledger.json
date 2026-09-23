@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "audit_date_utc": "2026-07-24",
+  "exact_query_times_retained": false,
+  "frozen_signatures": [
+    "A",
+    "B"
+  ],
+  "scope": "Bounded novelty and current-status search for the two signatures frozen in protocol-freeze.md.",
+  "counts": {
+    "batches": 24,
+    "query_strings": 96,
+    "web_search_queries": 80,
+    "arxiv_api_queries": 8,
+    "openalex_api_queries": 4,
+    "crossref_api_queries": 4
+  },
+  "limits": {
+    "web_search": "Search-engine result ranking was inspected only to the depth returned by the interactive search service; snippets were discovery aids, not evidence.",
+    "arxiv": "Atom API, max_results=5 per query; title and abstract metadata inspected for plausible results.",
+    "openalex": "Works API, per-page=5 per query; metadata only.",
+    "crossref": "Works API, rows=5 per query; metadata only; one query returned HTTP 429.",
+    "general": "No claim of exhaustive bibliographic, language, full-text, citation-network, or theorem-database coverage. No raw response payload was retained."
+  },
+  "batches": [
+    {
+      "id": "B01",
+      "service": "web_search",
+      "queries": [
+        "\"rank 44\" lattice \"determinant 729\" rootless",
+        "\"rank 20\" lattice \"determinant 729\" \"minimum 4\"",
+        "\"105\" \"126\" \"tight frame\" lattice",
+        "\"36\" \"24\" \"3645\" lattice"
+      ],
+      "disposition": "No exact match; results were generic lattice pages or numeric noise."
+    },
+    {
+      "id": "B02",
+      "service": "web_search",
+      "queries": [
+        "\"14 of 15\" lattice \"determinant 729\"",
+        "\"h=729\" lattice \"Conway\"",
+        "\"rank 20\" \"rank 24\" lattice \"determinant 729\"",
+        "\"A20\" \"U24\" lattice \"729\""
+      ],
+      "disposition": "No exact match. A self-published Preprints.org item using the phrase Lyons lattice was excluded as unreliable and internally inconsistent with basic even-unimodular rank constraints."
+    },
+    {
+      "id": "B03",
+      "service": "web_search",
+      "queries": [
+        "\"5076\" lattice",
+        "\"5076\" \"determinant 729\" lattice",
+        "\"5076 minimal vectors\" lattice",
+        "\"kissing number 5076\" lattice"
+      ],
+      "disposition": "No exact match; numeric noise dominated."
+    },
+    {
+      "id": "B04",
+      "service": "web_search",
+      "queries": [
+        "\"K12\" \"E8\" \"2-neighbor\" lattice",
+        "\"Coxeter-Todd\" \"E8\" neighbor lattice",
+        "\"Kneser neighbor\" \"K12\" \"E8\"",
+        "\"240\" \"112\" \"48\" \"20\" \"6\" lattice"
+      ],
+      "disposition": "Found standard neighbor-method and Coxeter-Todd references, but no exact five-neighbor route or root-count fingerprint."
+    },
+    {
+      "id": "B05",
+      "service": "web_search",
+      "queries": [
+        "\"3-modular\" lattice dimension 20 determinant 729 minimum 4",
+        "\"strongly 3-modular\" lattice dimension 20 minimum 4",
+        "\"level 3\" even lattice dimension 20 determinant 729",
+        "\"det 729\" \"min 4\" lattice"
+      ],
+      "disposition": "No exact match. The audit kept separate the stronger 3-modular condition, which in rank 20 would have determinant 3^10, from the observed determinant 3^6 scaled-dual properties."
+    },
+    {
+      "id": "B06",
+      "service": "web_search",
+      "queries": [
+        "\"rank 20\" lattice \"discriminant 3^6\"",
+        "\"dimension 20\" lattice \"determinant 3^6\"",
+        "\"dimension 20\" lattice \"discriminant group\" \"3^6\"",
+        "\"5076\" \"theta series\" lattice"
+      ],
+      "disposition": "No exact match."
+    },
+    {
+      "id": "B07",
+      "service": "web_search",
+      "queries": [
+        "site:math.rwth-aachen.de/~Gabriele.Nebe/LATTICES 5076 lattice",
+        "site:math.rwth-aachen.de/~Gabriele.Nebe 5076 lattice",
+        "site:arxiv.org lattice \"5076\" \"minimum\"",
+        "site:doi.org lattice \"5076\""
+      ],
+      "disposition": "No exact match."
+    },
+    {
+      "id": "B08",
+      "service": "web_search",
+      "queries": [
+        "\"rank 20\" \"3-elementary\" positive definite lattice minimum 4",
+        "\"dimension 20\" \"3-elementary lattice\" positive definite",
+        "\"3-elementary\" \"determinant 729\" lattice",
+        "\"3^6\" \"minimum 4\" lattice dimension 20"
+      ],
+      "disposition": "Found Boecherer-Nebe as conceptually nearby prior art; its exact-level determinant-N^2 setting does not match Signature B."
+    },
+    {
+      "id": "B09",
+      "service": "web_search",
+      "queries": [
+        "\"On theta series attached to maximal lattices and their shadows\"",
+        "site:arxiv.org \"dual-extremal 3-elementary lattice of dimension 20\"",
+        "\"dual-extremal 3-elementary\" \"dimension 20\" lattice",
+        "\"L orthogonal\" \"A2\" \"dual-extremal\" \"dimension 20\" lattice"
+      ],
+      "disposition": "Located the Boecherer-Nebe paper and a rank-20 3-elementary uniqueness statement in a different genus; no exact match."
+    },
+    {
+      "id": "B10",
+      "service": "web_search",
+      "queries": [
+        "Boecherer Nebe \"On theta series attached to maximal lattices and their adjoints\" DOI",
+        "\"On theta series attached to maximal lattices\" Boecherer Nebe journal",
+        "site:zbmath.org \"On theta series attached to maximal lattices and their adjoints\"",
+        "site:crossref.org \"On theta series attached to maximal lattices and their adjoints\""
+      ],
+      "disposition": "Confirmed arXiv:0909.1184 and Journal of the Ramanujan Mathematical Society 25 (2010), 265-284; no DOI was exposed in the inspected metadata."
+    },
+    {
+      "id": "B11",
+      "service": "web_search",
+      "queries": [
+        "\"rank 20\" \"level 3\" lattice minimum 4 determinant",
+        "\"dimension 20\" \"level 3 lattice\" minimum 4",
+        "\"rank 20\" \"3-elementary\" lattice \"5076\"",
+        "\"dimension 20\" lattice \"kissing number\" 5076"
+      ],
+      "disposition": "No exact match."
+    },
+    {
+      "id": "B12",
+      "service": "web_search",
+      "queries": [
+        "\"Conway 99-graph\" 2026",
+        "\"srg(99,14,1,2)\" 2026",
+        "\"Conway-99 problem\" 2026 graph",
+        "\"99,14,1,2\" strongly regular graph 2026"
+      ],
+      "disposition": "Found current primary and institutional records treating existence as unresolved; no construction or nonexistence proof found."
+    },
+    {
+      "id": "B13",
+      "service": "web_search",
+      "queries": [
+        "\"Conway 99\" lattice projector",
+        "\"srg(99,14,1,2)\" \"tight frame\"",
+        "\"Conway 99\" \"Schur square\"",
+        "\"srg(99,14,1,2)\" Euclidean representation lattice"
+      ],
+      "disposition": "No exact match. Greaves-Iverson-Jasper-Mixon was retained as related but distinct finite-field ETF prior art."
+    },
+    {
+      "id": "B14",
+      "service": "web_search",
+      "queries": [
+        "\"M^2=21M\" strongly regular graph",
+        "\"231\" \"44\" \"105\" \"126\" lattice",
+        "\"B_U=I\" lattice frame",
+        "\"det(Q)=5\" \"Conway 99\""
+      ],
+      "disposition": "No exact match."
+    },
+    {
+      "id": "B15",
+      "service": "web_search",
+      "queries": [
+        "\"240 112 48 20 6 0\" \"2-neighbor\"",
+        "\"K12 orthogonal sum E8\" neighbor lattice",
+        "\"rootless\" \"determinant 729\" \"Leech\" lattice",
+        "\"1890fe1973eed47850c307d0975ae393f2a8ab32a9d0b16b35ebcab7012445d6\""
+      ],
+      "disposition": "No exact match, including no hit for the canonical Gram hash. A self-published numerology page was excluded as irrelevant and unreliable."
+    },
+    {
+      "id": "B16",
+      "service": "web_search",
+      "queries": [
+        "Kneser Klassenzahlen definiter quadratischer Formen Nachbarschaftsmethode",
+        "Kneser neighboring lattices original paper DOI",
+        "Kneser p-neighbor method lattices original",
+        "site:ams.org Kneser method of neighbors lattices"
+      ],
+      "disposition": "Located Kneser's 1957 original and Voight's modern survey; neither gives the exact route."
+    },
+    {
+      "id": "B17",
+      "service": "web_search",
+      "queries": [
+        "Plesken Pohst On maximal finite irreducible subgroups of GL(n,Z) I the five and seven dimensional cases DOI",
+        "Plesken Pohst constructive enumeration lattices dimension 20 DOI",
+        "Plesken Pohst lattices dimension 20 minimum 4",
+        "site:ams.org Plesken Pohst lattices rank 20 classification"
+      ],
+      "disposition": "No exact match; these broad and partly misdirected title searches were retained to document the search path."
+    },
+    {
+      "id": "B18",
+      "service": "web_search",
+      "queries": [
+        "Plesken Pohst \"Constructing integral lattices\"",
+        "Plesken Pohst \"On maximal finite irreducible subgroups\" DOI",
+        "Plesken Pohst \"unimodular lattice associated to the rank 20 quaternionic matrix\"",
+        "\"Wilhelm Plesken\" \"Michael Pohst\" lattice 1985"
+      ],
+      "disposition": "Located Constructing integral lattices with prescribed minimum II and catalogue cross-references; no Signature B match."
+    },
+    {
+      "id": "B19",
+      "service": "web_search",
+      "queries": [
+        "\"Frames over finite fields: Equiangular lines in orthogonal geometry\"",
+        "site:arxiv.org \"Frames over finite fields\" \"Conway\" 100 45",
+        "site:doi.org \"Frames over finite fields\" \"Equiangular lines\"",
+        "\"(2,1,4)-ETF\" \"100\" \"45\" Conway"
+      ],
+      "disposition": "Confirmed Greaves-Iverson-Jasper-Mixon and its finite-field conditional Conway example; dimensions and category differ from Signature A."
+    },
+    {
+      "id": "B20",
+      "service": "web_search",
+      "queries": [
+        "\"3-elementary\" lattice \"rank 20\" \"length 6\"",
+        "\"3-elementary lattice\" \"(20,6)\" positive definite",
+        "\"determinant 3^6\" \"rank 20\" even lattice",
+        "\"3-elementary\" \"5076\" lattice"
+      ],
+      "disposition": "No exact match; results were mostly numeric noise."
+    },
+    {
+      "id": "B21",
+      "service": "arxiv_api",
+      "queries": [
+        "all:\"5076\" AND all:lattice",
+        "all:\"determinant 729\" AND all:lattice",
+        "all:\"K12\" AND all:\"E8\" AND all:neighbor",
+        "all:\"rank 20\" AND all:\"level 3\" AND all:lattice"
+      ],
+      "limits": {
+        "max_results_per_query": 5
+      },
+      "result_totals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "disposition": "Index coverage only; zero indexed matches are not evidence of novelty or nonexistence."
+    },
+    {
+      "id": "B22",
+      "service": "arxiv_api",
+      "queries": [
+        "all:\"Conway 99\"",
+        "all:\"Conway-99\"",
+        "all:\"srg(99,14,1,2)\"",
+        "all:\"strongly regular graph\" AND all:\"99,14,1,2\""
+      ],
+      "limits": {
+        "max_results_per_query": 5
+      },
+      "result_totals": [
+        5,
+        5,
+        1,
+        2
+      ],
+      "disposition": "Plausible titles were inspected. Current primary records discussed the open problem or conditional restrictions; no resolution was found."
+    },
+    {
+      "id": "B23",
+      "service": "openalex_api",
+      "queries": [
+        "lattice 5076 determinant 729",
+        "K12 E8 neighbor lattice",
+        "rank 20 level 3 lattice",
+        "Conway 99 lattice tight frame"
+      ],
+      "limits": {
+        "per_page": 5
+      },
+      "result_totals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "disposition": "Index coverage only; zero indexed matches are not evidence of novelty or nonexistence."
+    },
+    {
+      "id": "B24",
+      "service": "crossref_api",
+      "queries": [
+        "lattice 5076 determinant 729",
+        "K12 E8 neighbor lattice",
+        "rank 20 level 3 lattice",
+        "Conway 99 lattice tight frame"
+      ],
+      "limits": {
+        "rows": 5
+      },
+      "result_totals": [
+        266504,
+        null,
+        3786526,
+        1150029
+      ],
+      "http_statuses": [
+        200,
+        429,
+        200,
+        200
+      ],
+      "disposition": "Leading records were generic or numeric noise and supplied no exact match. Large index counts are not evidence; the second query was rate-limited and was not silently treated as a no-hit."
+    }
+  ],
+  "metadata_access_events": [
+    {
+      "kind": "crossref_exact_doi_record",
+      "target": "10.1007/BF01898782",
+      "result": "metadata inspected; raw payload not retained"
+    },
+    {
+      "kind": "crossref_exact_doi_record",
+      "target": "10.1090/S0025-5718-1993-1176715-1",
+      "result": "metadata inspected; raw payload not retained"
+    },
+    {
+      "kind": "crossref_exact_doi_record",
+      "target": "10.1090/S0025-5718-98-00938-7",
+      "result": "metadata inspected; raw payload not retained"
+    },
+    {
+      "kind": "safe_open_failure",
+      "targets": [
+        "DOI resolver for Kneser 1957",
+        "DOI resolver for Plesken-Pohst II",
+        "DOI resolver for Scharlau-Hemkemeier",
+        "DOI resolver and ScienceDirect page for Greaves-Iverson-Jasper-Mixon",
+        "AMS publisher pages for Plesken-Pohst II and Scharlau-Hemkemeier",
+        "an initially mistyped uppercase Leech catalogue URL"
+      ],
+      "result": "Access failures recorded; no claim inferred from them. The Springer Kneser page and corrected catalogue URL were subsequently inspected."
+    }
+  ],
+  "coverage_gaps": [
+    "Google Scholar was not comprehensively audited.",
+    "MathSciNet was not comprehensively audited.",
+    "zbMATH was not comprehensively audited.",
+    "No exhaustive cited-by or citation-network traversal was performed.",
+    "Non-English and non-indexed literature may be missing.",
+    "Search-engine and index posting delays may hide current work."
+  ],
+  "conclusion": {
+    "code": "NO_EXACT_PRIOR_RESULT_FOUND_IN_SEARCHED_SOURCES",
+    "permitted_prose": "No exact prior result was found in the sources searched as of 2026-07-24.",
+    "novelty": "UNKNOWN",
+    "global_conway_99_status": "UNKNOWN"
+  }
+}

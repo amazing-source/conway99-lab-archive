@@ -1,0 +1,1869 @@
+{
+  "candidate_universal_result": {
+    "improvement": 6,
+    "previous_verified_lower_bound": 19,
+    "proof_summary": "For every edge partition, the exact minimum over all third-fibre permutation signatures satisfies rank(S_pi)+2*t_pi=25.",
+    "rank_F7_M_lower_bound": 25
+  },
+  "claim_label": "CANDIDATE",
+  "conditional_endpoint_arithmetic": {
+    "admissible_rank_pair_count_after_candidate": 330,
+    "condition": "n3=4158, equivalently no induced triangular prism",
+    "endpoint_excluded": false,
+    "if_r3_equals_12": {
+      "admissible_r7_values": [
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "r7_lower_bound": 26,
+      "r7_parity": "even"
+    },
+    "previous_wave39_pair_count": 429,
+    "upper_bound_improved_below_4158": false
+  },
+  "finite_census": {
+    "certificate_format": "wave40-projection-subspace-certificate-v1",
+    "certificate_sha256": "90b8eb3f88424ffe6ae7618a3063620a2dedff604ad2fac10894fb6278f17c9a",
+    "partition_type_count": 11,
+    "pulled_perfect_matching_count": 10395,
+    "types": [
+      {
+        "base_27_nullity_F7": 2,
+        "base_27_rank_F7": 25,
+        "base_27_seidel_sha256": "8f1842040dca7f580228899026a2babad76f3120faa8121ee0f89d158d8317ff",
+        "canonical_local_control_rank_F7": 34,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 1,
+        "labelled_pulled_matching_count": 1,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "1+1+1+1+1+1",
+        "projection_catalog_sha256": "5ce6abcef62d0697db48c867d43f6925faab1c9d446b12e71982292bf4191b00",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 12,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "12": 1
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 0,
+          "observed_nonzero_projective_line_count": 0,
+          "rejected_subspace_count": 0,
+          "rejected_subspaces_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "witness": {
+            "basis": [],
+            "permutation": [
+              11,
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "projection_rank": 0,
+            "selected_projection_columns": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "zero_signature_count": 144
+        },
+        "representative_matching_sha256": "21420e69012b16f158d8b8da9ecb0b5d6e04b29cd4299970d0e5b5faadf5df7b",
+        "representative_pulled_y_matching": [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ]
+      },
+      {
+        "base_27_nullity_F7": 4,
+        "base_27_rank_F7": 23,
+        "base_27_seidel_sha256": "5d08720a829a9d8352032afc66b3e882336d30169c15e840f0f3cce185a36158",
+        "canonical_local_control_rank_F7": 33,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 30,
+        "labelled_pulled_matching_count": 30,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "1+1+1+1+2",
+        "projection_catalog_sha256": "2e8cfc7c4dcd73fd912bc1842d018e6a117a1e7cadf178439b895f04945fea7e",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 8,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "8": 1
+              }
+            },
+            {
+              "dimension": 1,
+              "maximum_support_matching": 12,
+              "subspace_count": 6,
+              "support_matching_histogram": {
+                "10": 4,
+                "12": 2
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 1,
+          "observed_nonzero_projective_line_count": 6,
+          "rejected_subspace_count": 1,
+          "rejected_subspaces_sha256": "fd9719fa16b2dd2ef843dc5c0324753859b021c1b778ff2c5a883a23ba8d4559",
+          "witness": {
+            "basis": [
+              [
+                0,
+                1,
+                2,
+                4
+              ]
+            ],
+            "permutation": [
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0,
+              8,
+              10,
+              9,
+              11
+            ],
+            "projection_rank": 1,
+            "selected_projection_columns": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                4,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                6,
+                5
+              ],
+              [
+                0,
+                5,
+                3,
+                6
+              ]
+            ]
+          },
+          "zero_signature_count": 64
+        },
+        "representative_matching_sha256": "0782a1ff1b196765c2837700a37aa54d6809a3b876fd35b41f66c4a12415dc1d",
+        "representative_pulled_y_matching": [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          10,
+          11,
+          8,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 2,
+        "base_27_rank_F7": 25,
+        "base_27_seidel_sha256": "5e8fc3c35b8999b017c06e7afebbfc9f26c1c5bcffedac5d4bc7eaac0431f04e",
+        "canonical_local_control_rank_F7": 36,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 160,
+        "labelled_pulled_matching_count": 160,
+        "partition": [
+          1,
+          1,
+          1,
+          3
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "1+1+1+3",
+        "projection_catalog_sha256": "5ce6abcef62d0697db48c867d43f6925faab1c9d446b12e71982292bf4191b00",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 12,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "12": 1
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 0,
+          "observed_nonzero_projective_line_count": 0,
+          "rejected_subspace_count": 0,
+          "rejected_subspaces_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "witness": {
+            "basis": [],
+            "permutation": [
+              11,
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "projection_rank": 0,
+            "selected_projection_columns": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "zero_signature_count": 144
+        },
+        "representative_matching_sha256": "126d85bcebb332d9dc3e9ad405f110c79f04c7a760d7b06f897019f2e1ef7b05",
+        "representative_pulled_y_matching": [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          8,
+          10,
+          6,
+          11,
+          7,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 6,
+        "base_27_rank_F7": 21,
+        "base_27_seidel_sha256": "994fc2ab21a19d6fb4af5a39c19d66502f5710ac2d87da87581e8d624e749636",
+        "canonical_local_control_rank_F7": 33,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 180,
+        "labelled_pulled_matching_count": 180,
+        "partition": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "1+1+2+2",
+        "projection_catalog_sha256": "ff22d297d021d225e258060692571efbe20b93a839d9375c950dd6bff319d2f6",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 4,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "4": 1
+              }
+            },
+            {
+              "dimension": 1,
+              "maximum_support_matching": 8,
+              "subspace_count": 28,
+              "support_matching_histogram": {
+                "6": 24,
+                "8": 4
+              }
+            },
+            {
+              "dimension": 2,
+              "maximum_support_matching": 12,
+              "subspace_count": 290,
+              "support_matching_histogram": {
+                "10": 24,
+                "12": 8,
+                "6": 96,
+                "8": 162
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 2,
+          "observed_nonzero_projective_line_count": 28,
+          "rejected_subspace_count": 29,
+          "rejected_subspaces_sha256": "4d9ba57f3a10d1fb4aed335c49a6ec6f54bacd31cc1e60d2c56ed731983bc042",
+          "witness": {
+            "basis": [
+              [
+                0,
+                1,
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                0,
+                1,
+                5,
+                2,
+                6
+              ]
+            ],
+            "permutation": [
+              3,
+              2,
+              1,
+              0,
+              10,
+              8,
+              11,
+              9,
+              5,
+              7,
+              4,
+              6
+            ],
+            "projection_rank": 2,
+            "selected_projection_columns": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                6,
+                4,
+                2,
+                0
+              ],
+              [
+                0,
+                6,
+                2,
+                2,
+                2,
+                2
+              ],
+              [
+                0,
+                1,
+                5,
+                5,
+                5,
+                5
+              ],
+              [
+                0,
+                5,
+                1,
+                3,
+                5,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                2,
+                4,
+                6
+              ],
+              [
+                0,
+                0,
+                5,
+                4,
+                3,
+                2
+              ],
+              [
+                0,
+                0,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                5,
+                0,
+                5,
+                3,
+                1
+              ]
+            ]
+          },
+          "zero_signature_count": 16
+        },
+        "representative_matching_sha256": "eccbbe2d579e2f719e2ecdfbc5d6eae8f0858b27c8ad1b1e0540d469fe320a6f",
+        "representative_pulled_y_matching": [
+          1,
+          0,
+          3,
+          2,
+          6,
+          7,
+          4,
+          5,
+          10,
+          11,
+          8,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 4,
+        "base_27_rank_F7": 23,
+        "base_27_seidel_sha256": "a822dc9da91a9e5259cad337d958f5bced1fcf0f804cd4621640f4b198e25eab",
+        "canonical_local_control_rank_F7": 34,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 720,
+        "labelled_pulled_matching_count": 720,
+        "partition": [
+          1,
+          1,
+          4
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "1+1+4",
+        "projection_catalog_sha256": "39d2906765ef0ddabef508167a09a75126e9635b3828134f82ce7236f640940a",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 4,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "4": 1
+              }
+            },
+            {
+              "dimension": 1,
+              "maximum_support_matching": 12,
+              "subspace_count": 6,
+              "support_matching_histogram": {
+                "12": 2,
+                "8": 4
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 1,
+          "observed_nonzero_projective_line_count": 6,
+          "rejected_subspace_count": 1,
+          "rejected_subspaces_sha256": "b823837a0425018cd90c8fd3af461ed79a4cc4ee15fb855ba7bb133fc682f4fb",
+          "witness": {
+            "basis": [
+              [
+                0,
+                1,
+                2,
+                4
+              ]
+            ],
+            "permutation": [
+              3,
+              2,
+              1,
+              0,
+              11,
+              9,
+              10,
+              8,
+              7,
+              5,
+              6,
+              4
+            ],
+            "projection_rank": 1,
+            "selected_projection_columns": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                5,
+                3,
+                6
+              ],
+              [
+                0,
+                3,
+                6,
+                5
+              ],
+              [
+                0,
+                4,
+                1,
+                2
+              ],
+              [
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                4,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                6,
+                5
+              ],
+              [
+                0,
+                5,
+                3,
+                6
+              ]
+            ]
+          },
+          "zero_signature_count": 16
+        },
+        "representative_matching_sha256": "78f4cbe088b36c3856989621f5f9de62d941711dadf125349efbbc1208848de4",
+        "representative_pulled_y_matching": [
+          1,
+          0,
+          3,
+          2,
+          6,
+          8,
+          4,
+          10,
+          5,
+          11,
+          7,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 4,
+        "base_27_rank_F7": 23,
+        "base_27_seidel_sha256": "10c2ea2226f65d18ba9f3b4fea069670732189ea4f652c5c07b64c500f7ce965",
+        "canonical_local_control_rank_F7": 34,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 960,
+        "labelled_pulled_matching_count": 960,
+        "partition": [
+          1,
+          2,
+          3
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "1+2+3",
+        "projection_catalog_sha256": "3582ec6dcf7dad5f48d04463e708531c9a9c9a00918597d924183a389377b9eb",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 8,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "8": 1
+              }
+            },
+            {
+              "dimension": 1,
+              "maximum_support_matching": 12,
+              "subspace_count": 6,
+              "support_matching_histogram": {
+                "10": 4,
+                "12": 2
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 1,
+          "observed_nonzero_projective_line_count": 6,
+          "rejected_subspace_count": 1,
+          "rejected_subspaces_sha256": "fd9719fa16b2dd2ef843dc5c0324753859b021c1b778ff2c5a883a23ba8d4559",
+          "witness": {
+            "basis": [
+              [
+                0,
+                1,
+                2,
+                4
+              ]
+            ],
+            "permutation": [
+              11,
+              10,
+              5,
+              3,
+              4,
+              2,
+              9,
+              8,
+              7,
+              6,
+              1,
+              0
+            ],
+            "projection_rank": 1,
+            "selected_projection_columns": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                1,
+                2,
+                4
+              ],
+              [
+                0,
+                6,
+                5,
+                3
+              ],
+              [
+                0,
+                5,
+                3,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "zero_signature_count": 64
+        },
+        "representative_matching_sha256": "2dba744cc731fb92b6f7ecbf3c861f8e29b39d3bb0ee6b120a81748dbc00dc83",
+        "representative_pulled_y_matching": [
+          1,
+          0,
+          4,
+          5,
+          2,
+          3,
+          8,
+          10,
+          6,
+          11,
+          7,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 2,
+        "base_27_rank_F7": 25,
+        "base_27_seidel_sha256": "8bb45d9d5c54a3d1fdb969883f450cb001c03e11924c87f9a41dd263547b8eb7",
+        "canonical_local_control_rank_F7": 35,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 2304,
+        "labelled_pulled_matching_count": 2304,
+        "partition": [
+          1,
+          5
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "1+5",
+        "projection_catalog_sha256": "5ce6abcef62d0697db48c867d43f6925faab1c9d446b12e71982292bf4191b00",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 12,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "12": 1
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 0,
+          "observed_nonzero_projective_line_count": 0,
+          "rejected_subspace_count": 0,
+          "rejected_subspaces_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "witness": {
+            "basis": [],
+            "permutation": [
+              11,
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "projection_rank": 0,
+            "selected_projection_columns": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "zero_signature_count": 144
+        },
+        "representative_matching_sha256": "35d2515340190cc539319818233d587e4f92b41f0ce0825fc32a34f09250f9cb",
+        "representative_pulled_y_matching": [
+          1,
+          0,
+          4,
+          6,
+          2,
+          8,
+          3,
+          10,
+          5,
+          11,
+          7,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 8,
+        "base_27_rank_F7": 19,
+        "base_27_seidel_sha256": "749dadb13158d8be211ccf3b8b5695eb832e2262ebead01fa38844bab436707f",
+        "canonical_local_control_rank_F7": 32,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 120,
+        "labelled_pulled_matching_count": 120,
+        "partition": [
+          2,
+          2,
+          2
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "2+2+2",
+        "projection_catalog_sha256": "005deca6325a407382fe8c9fc8139383f16ba8eda344dea7b29e3a98a69dca54",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 0,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "0": 1
+              }
+            },
+            {
+              "dimension": 1,
+              "maximum_support_matching": 4,
+              "subspace_count": 66,
+              "support_matching_histogram": {
+                "2": 60,
+                "4": 6
+              }
+            },
+            {
+              "dimension": 2,
+              "maximum_support_matching": 8,
+              "subspace_count": 1923,
+              "support_matching_histogram": {
+                "2": 480,
+                "4": 1251,
+                "6": 168,
+                "8": 24
+              }
+            },
+            {
+              "dimension": 3,
+              "maximum_support_matching": 12,
+              "subspace_count": 25744,
+              "support_matching_histogram": {
+                "10": 144,
+                "12": 32,
+                "2": 912,
+                "4": 11736,
+                "6": 11192,
+                "8": 1728
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 3,
+          "observed_nonzero_projective_line_count": 66,
+          "rejected_subspace_count": 1990,
+          "rejected_subspaces_sha256": "94a7189f97089ba42f5cc590c76ae8c08a98ee9ca46645d6a4e6fdd30335d82c",
+          "witness": {
+            "basis": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                5,
+                2,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                2,
+                2,
+                2,
+                0
+              ]
+            ],
+            "permutation": [
+              10,
+              8,
+              11,
+              9,
+              7,
+              5,
+              6,
+              4,
+              1,
+              3,
+              0,
+              2
+            ],
+            "projection_rank": 3,
+            "selected_projection_columns": [
+              [
+                0,
+                2,
+                6,
+                0,
+                0,
+                4,
+                2,
+                0
+              ],
+              [
+                0,
+                6,
+                2,
+                0,
+                0,
+                2,
+                2,
+                2
+              ],
+              [
+                0,
+                1,
+                5,
+                0,
+                0,
+                5,
+                5,
+                5
+              ],
+              [
+                0,
+                5,
+                1,
+                0,
+                0,
+                3,
+                5,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                4,
+                4,
+                4,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                2,
+                2,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                6,
+                5,
+                5,
+                5,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                3,
+                3,
+                3,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                0,
+                0,
+                2,
+                4,
+                6
+              ],
+              [
+                0,
+                0,
+                5,
+                0,
+                0,
+                4,
+                3,
+                2
+              ],
+              [
+                0,
+                0,
+                2,
+                0,
+                0,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                5,
+                0,
+                0,
+                0,
+                5,
+                3,
+                1
+              ]
+            ]
+          },
+          "zero_signature_count": 0
+        },
+        "representative_matching_sha256": "8c590211bcf4186ce5c8fbe963287310ca2cc9a6dce04788595c8552f2d15c60",
+        "representative_pulled_y_matching": [
+          2,
+          3,
+          0,
+          1,
+          6,
+          7,
+          4,
+          5,
+          10,
+          11,
+          8,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 6,
+        "base_27_rank_F7": 21,
+        "base_27_seidel_sha256": "9e9ef54985823b3f045ab8a302d3621b2f24ad120685459d4ab99ac17c115fff",
+        "canonical_local_control_rank_F7": 33,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 1440,
+        "labelled_pulled_matching_count": 1440,
+        "partition": [
+          2,
+          4
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "2+4",
+        "projection_catalog_sha256": "6fa0064d365cc3c1db2714cc905f761ce17fc9c4ec5fa4eaf06e3f978091064a",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 0,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "0": 1
+              }
+            },
+            {
+              "dimension": 1,
+              "maximum_support_matching": 8,
+              "subspace_count": 28,
+              "support_matching_histogram": {
+                "2": 20,
+                "4": 6,
+                "8": 2
+              }
+            },
+            {
+              "dimension": 2,
+              "maximum_support_matching": 12,
+              "subspace_count": 290,
+              "support_matching_histogram": {
+                "10": 8,
+                "12": 4,
+                "2": 48,
+                "4": 153,
+                "6": 24,
+                "8": 53
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 2,
+          "observed_nonzero_projective_line_count": 28,
+          "rejected_subspace_count": 29,
+          "rejected_subspaces_sha256": "9f258ec75ce3766e2fe730fab8af91665ad17955e3d4df4dc465e44b1f126507",
+          "witness": {
+            "basis": [
+              [
+                0,
+                1,
+                2,
+                0,
+                5,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                2,
+                4
+              ]
+            ],
+            "permutation": [
+              3,
+              1,
+              2,
+              0,
+              11,
+              9,
+              10,
+              8,
+              7,
+              5,
+              6,
+              4
+            ],
+            "projection_rank": 2,
+            "selected_projection_columns": [
+              [
+                0,
+                2,
+                4,
+                4,
+                4,
+                0
+              ],
+              [
+                0,
+                1,
+                2,
+                2,
+                2,
+                0
+              ],
+              [
+                0,
+                6,
+                5,
+                5,
+                5,
+                0
+              ],
+              [
+                0,
+                5,
+                3,
+                3,
+                3,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                3,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                6,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                1,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                1,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                6,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                3,
+                6
+              ]
+            ]
+          },
+          "zero_signature_count": 0
+        },
+        "representative_matching_sha256": "9e8b4902313cf1267fe1b52757bcb8da5ae109f3bcaa53a6362abce7076261f8",
+        "representative_pulled_y_matching": [
+          2,
+          3,
+          0,
+          1,
+          6,
+          8,
+          4,
+          10,
+          5,
+          11,
+          7,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 2,
+        "base_27_rank_F7": 25,
+        "base_27_seidel_sha256": "3b7f14e25d1dea5eedeab60bccc0ffcb49e2dd73049d2e84fc194f960883d63e",
+        "canonical_local_control_rank_F7": 36,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 640,
+        "labelled_pulled_matching_count": 640,
+        "partition": [
+          3,
+          3
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "3+3",
+        "projection_catalog_sha256": "5ce6abcef62d0697db48c867d43f6925faab1c9d446b12e71982292bf4191b00",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 12,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "12": 1
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 0,
+          "observed_nonzero_projective_line_count": 0,
+          "rejected_subspace_count": 0,
+          "rejected_subspaces_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "witness": {
+            "basis": [],
+            "permutation": [
+              11,
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "projection_rank": 0,
+            "selected_projection_columns": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "zero_signature_count": 144
+        },
+        "representative_matching_sha256": "eb88020523b478af1ba57db92b16778ab4bac62388d52baa867093aa7f4767e8",
+        "representative_pulled_y_matching": [
+          2,
+          4,
+          0,
+          5,
+          1,
+          3,
+          8,
+          10,
+          6,
+          11,
+          7,
+          9
+        ]
+      },
+      {
+        "base_27_nullity_F7": 4,
+        "base_27_rank_F7": 23,
+        "base_27_seidel_sha256": "3d777b33344f9bf592b03c87dfbc31bd2dd10274f32b3dacf59bcebaddfe48e6",
+        "canonical_local_control_rank_F7": 35,
+        "control_scope": "one-triangle three-fibre local control only; the canonical Z matching is not asserted to extend to a 99-vertex graph",
+        "coupled_39_rank_lower_bound_F7": 25,
+        "explicit_partition_conjugacy_checks": 3840,
+        "labelled_pulled_matching_count": 3840,
+        "partition": [
+          6
+        ],
+        "partition_complete_invariant": "An explicit permutation centralizing the standard X matching sends every labelled matching of this partition to the retained representative.",
+        "partition_key": "6",
+        "projection_catalog_sha256": "0ea05d0570a6dd27ec51fce39589ef61007985a0f9989e5b5492e79159c09d71",
+        "projection_census": {
+          "levels_through_first_success": [
+            {
+              "dimension": 0,
+              "maximum_support_matching": 0,
+              "subspace_count": 1,
+              "support_matching_histogram": {
+                "0": 1
+              }
+            },
+            {
+              "dimension": 1,
+              "maximum_support_matching": 12,
+              "subspace_count": 6,
+              "support_matching_histogram": {
+                "12": 2,
+                "6": 4
+              }
+            }
+          ],
+          "minimum_projection_rank_over_permutations": 1,
+          "observed_nonzero_projective_line_count": 6,
+          "rejected_subspace_count": 1,
+          "rejected_subspaces_sha256": "ab24b0612fb3af6aae2ef24434952c7490b4d31e802096610e66a94eeec00282",
+          "witness": {
+            "basis": [
+              [
+                0,
+                1,
+                2,
+                4
+              ]
+            ],
+            "permutation": [
+              8,
+              10,
+              9,
+              11,
+              4,
+              6,
+              5,
+              7,
+              0,
+              2,
+              1,
+              3
+            ],
+            "projection_rank": 1,
+            "selected_projection_columns": [
+              [
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                4,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                6,
+                5
+              ],
+              [
+                0,
+                5,
+                3,
+                6
+              ],
+              [
+                0,
+                5,
+                3,
+                6
+              ],
+              [
+                0,
+                3,
+                6,
+                5
+              ],
+              [
+                0,
+                4,
+                1,
+                2
+              ],
+              [
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                2,
+                4,
+                1
+              ],
+              [
+                0,
+                4,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                6,
+                5
+              ],
+              [
+                0,
+                5,
+                3,
+                6
+              ]
+            ]
+          },
+          "zero_signature_count": 0
+        },
+        "representative_matching_sha256": "4263b21208ad63bc1d165b6b8e3440f9897e0c70b59c649ec8d208bae2e2e399",
+        "representative_pulled_y_matching": [
+          2,
+          4,
+          0,
+          6,
+          1,
+          8,
+          3,
+          10,
+          5,
+          11,
+          7,
+          9
+        ]
+      }
+    ]
+  },
+  "format": "wave40-exact-three-fibre-rank-coupling-v1",
+  "git_commit": "6b28af70c67f062d687251494a047debe70a246f",
+  "inputs": {
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "verification/wave39-edge-local-rank/README.md": "ed749e5788c19a23629cee9f331cce0ef161500d9cb0d939eef3211085c0a405",
+    "verification/wave39-edge-local-rank/independent-results.json": "85b8d36d6ce5ebd638e957e1731864eff75f38405935f5e51ad5b629edea5966"
+  },
+  "limitations": [
+    "Discovery cannot verify itself; clean-room verification is required.",
+    "The theorem is a rank restriction, not a graph construction.",
+    "The canonical local controls are relaxations, not 99-vertex graphs.",
+    "No endpoint contradiction or upper bound below n3=4158 follows.",
+    "Literature novelty and priority remain UNKNOWN."
+  ],
+  "rank_congruence_lemma": {
+    "proof": "An invertible congruence sends S to diag(D,0) with D nonsingular. Eliminating the U rows alongside D leaves diag(D, [[0,U0],[U0^T,W']]), where rank(U0)=rank(K^T U). Row and column basis changes expose rank(U0) hyperbolic pairs, so the second block has rank at least 2*rank(U0).",
+    "statement": "For symmetric S and any U,W over a field, if K has columns forming a basis of ker(S), then rank([[S,U],[U^T,W]]) is at least rank(S)+2*rank(K^T U).",
+    "unknown_third_fibre_block": "W may be arbitrary; its entries cannot reduce the displayed lower bound."
+  },
+  "role": "construction",
+  "scope": "universal three-fibre characteristic-seven rank consequence for a hypothetical srg(99,14,1,2)",
+  "status": {
+    "candidate_rank_floor": 25,
+    "conway_99": "UNKNOWN",
+    "endpoint": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "strongest_general_upper_bound_on_n3": 4158
+  },
+  "target_parameters": {
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "v": 99
+  },
+  "three_fibre_geometry": {
+    "base_triangle": [
+      "x",
+      "y",
+      "z"
+    ],
+    "fibre_sizes": [
+      12,
+      12,
+      12
+    ],
+    "fibres": {
+      "X": "N(x)-{y,z}",
+      "Y": "N(y)-{x,z}",
+      "Z": "N(z)-{x,y}"
+    },
+    "normalization_explanation": "Only labels inside the chosen fibres are changed: fix the X matching and pull Y labels through X-Y. Every pulled Y matching is explicitly included in the 10,395 census.",
+    "normalization_uses_completed_graph_automorphism": false,
+    "why_signatures_form_a_permutation": "For c in Z, nonedge (c,x) has common neighbour z and exactly one further common neighbour in X; the same holds for Y. The resulting X-Z and Y-Z relations are perfect matchings. After indexing Z through X-Z, the Y indices are f(i) for a bijection f of twelve points."
+  },
+  "transport": {
+    "frozen_identity": "N M N^T = 27I - 9A + J",
+    "frozen_rank_equality": "rank_F7(M)=rank_F7(NMN^T)",
+    "modulo_seven_matrix": "27I-9A+J = J-I-2A over F_7",
+    "principal_block_use": "Every 39-vertex three-fibre principal block lower-bounds rank_F7(M)."
+  }
+}

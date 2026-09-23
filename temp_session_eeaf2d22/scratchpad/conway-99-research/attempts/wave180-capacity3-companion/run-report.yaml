@@ -1,0 +1,40 @@
+role: proof_a
+date_utc: 2026-07-28T23:11:07Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint classification of every circuit support
+  cross-realizing three nonedges as one member of a weight-4 conic /
+  weight-5 complement pair, and the resulting lower bound of 2772
+  projective circuits of sizes 4 through 9.
+inputs:
+  - attempts/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - attempts/wave176-star-projector-circuits/package-manifest.sha256
+  - verification/wave176-star-projector-circuits/package-manifest.sha256
+  - attempts/wave179-global-transversal-circuits/package-manifest.sha256
+  - verification/wave179-global-transversal-circuits/package-manifest.sha256
+method: >-
+  Exact two-transversal equality classification, finite-polar star
+  projectors, a two-dimensional local relation-space analysis, and an
+  inclusion-minimal-cover companion involution. No graph, code, SAT,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave180-capacity3-companion\exact_check.py --verify
+  attempts\wave180-capacity3-companion\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave180-capacity3-companion\test_exact_check.py
+outputs:
+  - attempts/wave180-capacity3-companion/README.md
+  - attempts/wave180-capacity3-companion/derivation.md
+  - attempts/wave180-capacity3-companion/failed-routes.md
+  - attempts/wave180-capacity3-companion/protocol.md
+  - attempts/wave180-capacity3-companion/exact_check.py
+  - attempts/wave180-capacity3-companion/exact-results.json
+  - attempts/wave180-capacity3-companion/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The short-word lower bound is not an endpoint contradiction.
+  - The endpoint and rank-11 branch survive.
+  - External novelty is UNKNOWN.

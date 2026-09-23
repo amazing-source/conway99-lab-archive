@@ -1,0 +1,50 @@
+role: proof_a
+date_utc: 2026-07-27T15:45:26Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: DERIVED
+scope: >-
+  Complete rank-27 equality exclusion for the three even edge-local
+  partition types 222, 24, and 6, conditional on the prism-free endpoint
+  n3=4158.
+inputs:
+  - path: verification/wave41-rank26-secondary/secondary_check.py
+    sha256: 3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3
+  - path: verification/wave42-rank27/independent-results.json
+    sha256: a207b1bcc267aaefdea704c1173e3ed01a81029507d3bc76aa295caccad03be4
+method: >-
+  Derive the two exact rank-27 mechanisms from the verified singular Schur
+  decomposition; enumerate every low-F endpoint derangement for types 222
+  and 24 by a complete generated-projective-subspace cover and test every
+  labelled R projection; explicitly test all type-6 minimum-F pairs by every
+  3-by-3 minor; and exhaust the type-6 higher-F zero-residual mechanism with
+  a canonical pivot/mate CSP.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave43-rank28-motif\exact_check.py --verify
+  attempts\wave43-rank28-motif\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  attempts\wave43-rank28-motif -p "test_*.py" -v
+outputs:
+  - path: attempts/wave43-rank28-motif/exact-results.json
+    sha256: 8878b40898ba9577ef01fb51ab5631632fb0e6bca3394c594b9c399d51385230
+  - path: attempts/wave43-rank28-motif/exact_check.py
+    sha256: a7978cb660d042fadf759f38b97de1edfe54e8a107950c1ac24f8b314921730d
+  - path: attempts/wave43-rank28-motif/test_exact_check.py
+    sha256: d28914945badaa5cdf64dcbe1b47e3da08001613a58fa030a2aea3c60ea811ea
+resource_bounds:
+  process_model: single foreground Python process
+  background_processes_started: 0
+  designed_working_set: below 2 GiB
+  recorded_full_replay_seconds: 325.41
+  recorded_host_free_memory_before_percent: 62.17
+  recorded_host_free_memory_after_percent: 61.73
+limitations:
+  - Discovery cannot verify itself.
+  - The all-odd endpoint type 3+3 is outside this package.
+  - The result is conditional on n3=4158.
+  - The separate type-33 package is cited for combination but is not imported
+    into this package's self-check.
+  - The combined endpoint rank-28 theorem remains CANDIDATE pending clean-room
+    verification.
+  - No endpoint exclusion, strict general n3 upper bound, graph construction,
+    novelty, priority, or Conway-99 solution is claimed.

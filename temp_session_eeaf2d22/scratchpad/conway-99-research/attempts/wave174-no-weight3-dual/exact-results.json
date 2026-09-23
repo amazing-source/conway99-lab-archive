@@ -1,0 +1,309 @@
+{
+  "c18_empty_cell_test": {
+    "adjacency_quadratic": 1584,
+    "norm": 144,
+    "three_minus_adjacency_quadratic": -1152
+  },
+  "c8_common_neighbor_test": {
+    "cell_size": 8,
+    "convex_lower": 49,
+    "convex_lower_parts": {
+      "O1": 0,
+      "T2": 0,
+      "U": 21,
+      "Z0": 20,
+      "Z3": 8
+    },
+    "degree_totals_by_cell": {
+      "O1": 24,
+      "T2": 0,
+      "U": 24,
+      "Z0": 48,
+      "Z3": 16
+    },
+    "equality": false,
+    "feasible": false,
+    "internal_edges": 8,
+    "srg_exact": 48
+  },
+  "c9_color_sizes": {
+    "one": 27,
+    "two": 36,
+    "zero": 36
+  },
+  "c9_common_neighbor_test": {
+    "cell_size": 9,
+    "convex_lower": 63,
+    "convex_lower_parts": {
+      "O1": 0,
+      "T2": 0,
+      "U": 27,
+      "Z0": 27,
+      "Z3": 9
+    },
+    "degree_totals_by_cell": {
+      "O1": 27,
+      "T2": 0,
+      "U": 27,
+      "Z0": 54,
+      "Z3": 18
+    },
+    "equality": true,
+    "feasible": true,
+    "internal_edges": 9,
+    "srg_exact": 63
+  },
+  "c9_forced_Z3_degrees": {
+    "O1": 1,
+    "T2": 0,
+    "U": 3,
+    "Z0": 2,
+    "Z3": 2
+  },
+  "candidate_Z3_cycle_lengths": [
+    3,
+    6,
+    9
+  ],
+  "candidate_details": [
+    {
+      "c": 8,
+      "gram": {
+        "determinant": 107495424000,
+        "g11": 54328320,
+        "g12": -1140480,
+        "g22": 25920,
+        "psd": true
+      },
+      "t": 48,
+      "triangle_counts": {
+        "T000": 36,
+        "T012": 144,
+        "T111": 8,
+        "T222": 43
+      }
+    },
+    {
+      "c": 9,
+      "gram": {
+        "determinant": 0,
+        "g11": 28697814,
+        "g12": -708588,
+        "g22": 17496,
+        "psd": true
+      },
+      "t": 45,
+      "triangle_counts": {
+        "T000": 39,
+        "T012": 135,
+        "T111": 18,
+        "T222": 39
+      }
+    },
+    {
+      "c": 10,
+      "gram": {
+        "determinant": -34398535680,
+        "g11": 10876032,
+        "g12": -383616,
+        "g22": 10368,
+        "psd": false
+      },
+      "t": 42,
+      "triangle_counts": {
+        "T000": 42,
+        "T012": 126,
+        "T111": 28,
+        "T222": 35
+      }
+    },
+    {
+      "c": 11,
+      "gram": {
+        "determinant": -25348764672,
+        "g11": -497826,
+        "g12": -151956,
+        "g22": 4536,
+        "psd": false
+      },
+      "t": 39,
+      "triangle_counts": {
+        "T000": 45,
+        "T012": 117,
+        "T111": 38,
+        "T222": 31
+      }
+    },
+    {
+      "c": 12,
+      "gram": {
+        "determinant": 0,
+        "g11": -6718464,
+        "g12": 0,
+        "g22": 0,
+        "psd": false
+      },
+      "t": 36,
+      "triangle_counts": {
+        "T000": 48,
+        "T012": 108,
+        "T111": 48,
+        "T222": 27
+      }
+    },
+    {
+      "c": 13,
+      "gram": {
+        "determinant": 21835008000,
+        "g11": -9014490,
+        "g12": 85860,
+        "g22": -3240,
+        "psd": false
+      },
+      "t": 33,
+      "triangle_counts": {
+        "T000": 51,
+        "T012": 99,
+        "T111": 58,
+        "T222": 23
+      }
+    },
+    {
+      "c": 14,
+      "gram": {
+        "determinant": 30098718720,
+        "g11": -8548416,
+        "g12": 119232,
+        "g22": -5184,
+        "psd": false
+      },
+      "t": 30,
+      "triangle_counts": {
+        "T000": 54,
+        "T012": 90,
+        "T111": 68,
+        "T222": 19
+      }
+    },
+    {
+      "c": 15,
+      "gram": {
+        "determinant": 24488801280,
+        "g11": -6416658,
+        "g12": 113724,
+        "g22": -5832,
+        "psd": false
+      },
+      "t": 27,
+      "triangle_counts": {
+        "T000": 57,
+        "T012": 81,
+        "T111": 78,
+        "T222": 15
+      }
+    },
+    {
+      "c": 16,
+      "gram": {
+        "determinant": 12039487488,
+        "g11": -3649536,
+        "g12": 82944,
+        "g22": -5184,
+        "psd": false
+      },
+      "t": 24,
+      "triangle_counts": {
+        "T000": 60,
+        "T012": 72,
+        "T111": 88,
+        "T222": 11
+      }
+    },
+    {
+      "c": 17,
+      "gram": {
+        "determinant": 2284277760,
+        "g11": -1211274,
+        "g12": 40500,
+        "g22": -3240,
+        "psd": false
+      },
+      "t": 21,
+      "triangle_counts": {
+        "T000": 63,
+        "T012": 63,
+        "T111": 98,
+        "T222": 7
+      }
+    },
+    {
+      "c": 18,
+      "gram": {
+        "determinant": 0,
+        "g11": 0,
+        "g12": 0,
+        "g22": 0,
+        "psd": true
+      },
+      "t": 18,
+      "triangle_counts": {
+        "T000": 66,
+        "T012": 54,
+        "T111": 108,
+        "T222": 3
+      }
+    }
+  ],
+  "conclusion": "B1=B2=B3=0 for the endpoint centered-code dual",
+  "cross_color_equation": "t=72-3c",
+  "cycle_label_period_three": true,
+  "cycle_label_sequence": [
+    0,
+    1,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    2
+  ],
+  "distinct_label_Z3_cycle_lengths": [
+    3
+  ],
+  "endpoint_contradiction": "Each Z3 triangle has a perfect matching to each U triangle, so it forms a forbidden triangular prism.",
+  "forced_Z3_graph": "3K3",
+  "identity": "D = B^T*A*B over F3",
+  "nonnegative_candidates": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "outside_neighbor_counts": {
+    "n0": "36-c",
+    "n1": "3c",
+    "n2": "54-3c",
+    "n3": "c"
+  },
+  "psd_survivors": [
+    8,
+    9
+  ],
+  "raw_degenerate_basis_psd_survivors": [
+    8,
+    9,
+    18
+  ],
+  "unique_survivor": {
+    "c": 9,
+    "t": 45
+  }
+}

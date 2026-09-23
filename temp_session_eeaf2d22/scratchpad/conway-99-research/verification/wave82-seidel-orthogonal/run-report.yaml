@@ -1,0 +1,44 @@
+role: verifier
+date_utc: 2026-07-28T00:10:50Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: VERIFIED
+scope: >-
+  Unrestricted hypothetical srg(99,14,1,2); bidirectional equivalence with
+  the order-99 symmetric integral matrix T having diagonal 7,
+  off-diagonal alphabet {-2,16}, row sum 63, and square 3969I; complete
+  conditional Smith form for every verified surviving F7 rank.
+inputs:
+  - path: attempts/wave82-seidel-orthogonal/package-manifest.sha256
+    sha256: bc53c1a8f1425e4cbc4c2f78cee036b0e11f364d429cd9adabc55be6956dfaca
+  - path: verification/wave51-seidel-smith/independent-result.json
+    sha256: 1dda847b1180ac881f2ccce80285a2a50d9cab1f0f910f7dbdf9a6087d53d793
+  - path: verification/wave66-spherical-code-shift/independent-results.json
+    sha256: 3d6689b292fa5605e012da55f94e299926c1762c6ec77b8ef06007c62a65b61f
+method: >-
+  Freeze every discovery file before inspection; independently expand both
+  directions of the matrix map; derive 3-adic Smith reciprocity from
+  T^2=3969I; use T=7J mod 9 to force the middle 3-primary exponents; audit
+  the exact GL_99(Z7) transfer T=S(9I-J/10); align primary factors; check
+  determinant, modular ranks, divisibility, and reciprocal products for
+  all eight ranks; and run explicit hostile matrix and exponent controls.
+command: >-
+  python -B
+  verification/wave82-seidel-orthogonal/independent_verify.py
+  --verify
+  verification/wave82-seidel-orthogonal/independent-results.json ;
+  python -B -m unittest -v
+  verification/wave82-seidel-orthogonal/test_independent_verify.py
+outputs:
+  - path: verification/wave82-seidel-orthogonal/independent-results.json
+    sha256: 1ffcd286723e2188742efe9ec47bf53be9b10c95edd4a06384c884b1a8f845a7
+  - path: verification/wave82-seidel-orthogonal/independent_verify.py
+    sha256: bc7381230430183c16c9233b0da3dbe547793a3debe673b7f06c5794069b0ea8
+  - path: verification/wave82-seidel-orthogonal/test_independent_verify.py
+    sha256: b57e6cf77fddbfc5ee0dfa98d839fcf7817814faaa1c174869b738968923307e
+  - path: verification/wave82-seidel-orthogonal/verification-report.md
+    sha256: 3a4ec12c48322a8ad6565522dbcdb9883b682dd953a313051337f15c947c5819
+limitations: >-
+  Conditional on a hypothetical graph and the verified imported 7-primary
+  Smith profile of S. A Smith profile is necessary, not sufficient. No
+  matrix or graph is constructed; no rank row is removed; no automorphism
+  is assumed. Conway-99 and novelty remain UNKNOWN.

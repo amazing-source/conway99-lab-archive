@@ -1,0 +1,38 @@
+role: orchestrator
+date_utc: 2026-07-29T02:05:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint lower bound of 8316 nonedge-realizing
+  projective dual words of weights four through nine, 9009 total projective
+  short words, and B4+...+B9>=18018.
+inputs:
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave179-global-transversal-circuits/package-manifest.sha256
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+  - verification/wave186-star-translation-cover-verifier/package-manifest.sha256
+method: >-
+  Affine two-star relation-word orbits, support-level cross-realization
+  capacities, one-block projector classification, private-label separation,
+  and an exact linear inequality. No graph, code, SAT, cover,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave188-affine-star-word-amplification\exact_check.py --verify
+  attempts\wave188-affine-star-word-amplification\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave188-affine-star-word-amplification\test_exact_check.py
+outputs:
+  - attempts/wave188-affine-star-word-amplification/README.md
+  - attempts/wave188-affine-star-word-amplification/derivation.md
+  - attempts/wave188-affine-star-word-amplification/failed-routes.md
+  - attempts/wave188-affine-star-word-amplification/protocol.md
+  - attempts/wave188-affine-star-word-amplification/exact_check.py
+  - attempts/wave188-affine-star-word-amplification/exact-results.json
+  - attempts/wave188-affine-star-word-amplification/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The result counts dual words, not circuits.
+  - No incompatible complete weight-enumerator upper bound is known.
+  - Rank 11, endpoint existence, external novelty, and Conway-99 remain UNKNOWN.

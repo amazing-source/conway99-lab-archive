@@ -1,0 +1,348 @@
+{
+  "claim_label": "VERIFIED",
+  "clarifications": [
+    "The symbol q is overloaded in the discovery prose: it is the 7-primary discriminant length in Poisson powers, while q^n also denotes the Fourier variable.",
+    "The 1,023,942,465 count is the discriminant size of the four-variable index lattice G_K, not a proved minimal basis dimension for a useful optimization.",
+    "The degree-32 interpolation is exact only after restricting to the norm-14, norm-16, and norm-18 shells where each integral coordinate lies in {-4,...,4}."
+  ],
+  "conditional_scope": "C4 coordinate Jacobi/theta strategy for a hypothetical srg(99,14,1,2), conditional on verified Waves 66, 71, and 112",
+  "cycle_sum": {
+    "common_gram_without_automorphisms": true,
+    "constant_coefficient": 2079,
+    "dihedral_relabeling_preserves_index": true,
+    "index_discriminant_class_count": 1023942465,
+    "induced_C4_count": 2079,
+    "z_zero_specialization": "2079*Theta_K"
+  },
+  "discriminant_sector": {
+    "closure_warning": "The four generated classes form a nondegenerate subgroup, but this alone does not erase or identify its orthogonal complement in K*/K; no closed 2401-component scalar system has been proved",
+    "determinant_mod_7": 4,
+    "generated_subgroup": "(Z/7)^4",
+    "nondegenerate": true,
+    "pairing_numerator_mod_7": [
+      [
+        0,
+        6,
+        1,
+        6
+      ],
+      [
+        6,
+        0,
+        6,
+        1
+      ],
+      [
+        1,
+        6,
+        0,
+        6
+      ],
+      [
+        6,
+        1,
+        6,
+        0
+      ]
+    ],
+    "rank_mod_7": 4,
+    "subgroup_size": 2401
+  },
+  "format": "wave116-independent-verifier-v1",
+  "harmonic_interpolation": {
+    "clarification": "The interpolation gives an exact finite weighted-theta reformulation on the three target shells, not an upper bound; harmonic components can have signed coefficients",
+    "coefficientwise_positivity_retained": false,
+    "coordinate_domain": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "exact_on_norm_at_most_18": true,
+    "four_coordinate_total_degree": 32,
+    "harmonic_degrees_at_most": 32,
+    "indicator_minus_coefficients": [
+      "0",
+      "-4/5",
+      "4/5",
+      "61/180",
+      "-61/180",
+      "-29/720",
+      "29/720",
+      "1/720",
+      "-1/720"
+    ],
+    "indicator_plus_coefficients": [
+      "0",
+      "4/5",
+      "4/5",
+      "-61/180",
+      "-61/180",
+      "29/720",
+      "29/720",
+      "-1/720",
+      "-1/720"
+    ],
+    "univariate_degree": 8
+  },
+  "incidence": {
+    "antipodal_lower": 52812,
+    "cap_25_total": 51975,
+    "coefficient_sum_counts": "antipodal C4 incidences",
+    "coordinate_pattern": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "fourier_pattern": [
+      21,
+      -21,
+      21,
+      -21
+    ],
+    "gap": 837,
+    "oriented_count_factor": 2,
+    "oriented_lower": 105624,
+    "projected_norm": "28/5",
+    "support_discriminant_margins_2n_minus_projected_norm": {
+      "7": "42/5",
+      "8": "52/5",
+      "9": "62/5"
+    }
+  },
+  "markings": {
+    "K_g": {
+      "definition": "g_i=3sqrt(7)u_i",
+      "determinant": 1023942465,
+      "eigenvalues": [
+        91,
+        315,
+        189,
+        189
+      ],
+      "gram": [
+        [
+          "196",
+          "-56",
+          "7",
+          "-56"
+        ],
+        [
+          "-56",
+          "196",
+          "-56",
+          "7"
+        ],
+        [
+          "7",
+          "-56",
+          "196",
+          "-56"
+        ],
+        [
+          "-56",
+          "7",
+          "-56",
+          "196"
+        ]
+      ],
+      "matrix_index": "G_K/2",
+      "membership": "K"
+    },
+    "L_v": {
+      "definition": "v_i=3u_i",
+      "determinant": 426465,
+      "eigenvalues": [
+        13,
+        45,
+        27,
+        27
+      ],
+      "gram": [
+        [
+          "28",
+          "-8",
+          "1",
+          "-8"
+        ],
+        [
+          "-8",
+          "28",
+          "-8",
+          "1"
+        ],
+        [
+          "1",
+          "-8",
+          "28",
+          "-8"
+        ],
+        [
+          "-8",
+          "1",
+          "-8",
+          "28"
+        ]
+      ],
+      "membership": "L"
+    },
+    "dual_a": {
+      "class_order": 7,
+      "definition": "a_i=3u_i/sqrt(7)",
+      "gram": [
+        [
+          "4",
+          "-8/7",
+          "1/7",
+          "-8/7"
+        ],
+        [
+          "-8/7",
+          "4",
+          "-8/7",
+          "1/7"
+        ],
+        [
+          "1/7",
+          "-8/7",
+          "4",
+          "-8/7"
+        ],
+        [
+          "-8/7",
+          "1/7",
+          "-8/7",
+          "4"
+        ]
+      ],
+      "membership": "K*",
+      "seven_multiple_membership": "7a_i=3sqrt(7)u_i in K"
+    },
+    "naive_p": {
+      "actual_membership": "p_i not in K*",
+      "definition": "p_i=u_i/sqrt(7)",
+      "gram": "E",
+      "ordinary_index_justified": false,
+      "reason": "K*=(1/sqrt(7))L, while [u_i]=alpha has order 9 in M*/M and L/M=<3alpha>; hence u_i is not in L"
+    }
+  },
+  "poisson_fricke": {
+    "complex_phase": "i^(-22)=-1",
+    "index_change": "G_K/2 to G_L/2=G_K/14",
+    "rank": 44,
+    "raw_formula": "Phi_K(-1/(7tau),z/(7tau))=-7^(q/2)tau^22 exp(pi*i*z^T G_L z/tau)Phi_L(tau,z)",
+    "rows": [
+      {
+        "det_K_exponent": 42,
+        "jacobi_slash_factor": "-7^-10",
+        "q": 2,
+        "raw_factor": "-7^1",
+        "solved_scalar_factor": "-7^10"
+      },
+      {
+        "det_K_exponent": 40,
+        "jacobi_slash_factor": "-7^-9",
+        "q": 4,
+        "raw_factor": "-7^2",
+        "solved_scalar_factor": "-7^9"
+      },
+      {
+        "det_K_exponent": 38,
+        "jacobi_slash_factor": "-7^-8",
+        "q": 6,
+        "raw_factor": "-7^3",
+        "solved_scalar_factor": "-7^8"
+      },
+      {
+        "det_K_exponent": 36,
+        "jacobi_slash_factor": "-7^-7",
+        "q": 8,
+        "raw_factor": "-7^4",
+        "solved_scalar_factor": "-7^7"
+      },
+      {
+        "det_K_exponent": 34,
+        "jacobi_slash_factor": "-7^-6",
+        "q": 10,
+        "raw_factor": "-7^5",
+        "solved_scalar_factor": "-7^6"
+      },
+      {
+        "det_K_exponent": 32,
+        "jacobi_slash_factor": "-7^-5",
+        "q": 12,
+        "raw_factor": "-7^6",
+        "solved_scalar_factor": "-7^5"
+      },
+      {
+        "det_K_exponent": 30,
+        "jacobi_slash_factor": "-7^-4",
+        "q": 14,
+        "raw_factor": "-7^7",
+        "solved_scalar_factor": "-7^4"
+      },
+      {
+        "det_K_exponent": 28,
+        "jacobi_slash_factor": "-7^-3",
+        "q": 16,
+        "raw_factor": "-7^8",
+        "solved_scalar_factor": "-7^3"
+      }
+    ],
+    "scalar_solved_formula": "Theta_L=-7^(11-q/2)(Theta_K|_22 W_7)",
+    "slash_formula": "Phi_K||W_7=-7^(q/2-11)Phi_L",
+    "weight": 22
+  },
+  "projector": {
+    "determinant": "65/2401",
+    "eigenvalues_by_mode": {
+      "alternating": "5/7",
+      "constant": "13/63",
+      "zero_a": "3/7",
+      "zero_b": "3/7"
+    },
+    "matrix": [
+      [
+        "4/9",
+        "-8/63",
+        "1/63",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "4/9",
+        "-8/63",
+        "1/63"
+      ],
+      [
+        "1/63",
+        "-8/63",
+        "4/9",
+        "-8/63"
+      ],
+      [
+        "-8/63",
+        "1/63",
+        "-8/63",
+        "4/9"
+      ]
+    ],
+    "positive_definite": true
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "Jacobi_basis_constructed": false,
+    "Sturm_bound_proved": false,
+    "literature_novelty": "UNKNOWN",
+    "rank28_excluded": false,
+    "upper_bound_proved": false,
+    "upper_dual_certificate_constructed": false
+  },
+  "verdict": "VERIFIED_WITH_CLARIFICATIONS"
+}

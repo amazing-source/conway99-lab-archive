@@ -1,0 +1,172 @@
+{
+  "catalogs": {
+    "12": {
+      "compressed_bytes": 55,
+      "compressed_sha256": "c63e83c1b6c27af375c1f44f4dedfb5aa3f4f2abf01b6e68ba131942f72a6226",
+      "decompressed_bytes": 26,
+      "decompressed_sha256": "ddf1582755db62e06d8072b7dfffb48357b56c677c11890eb14d9aeeb1ba55d4",
+      "final_url": "https://houseofgraphs.org/data/cubics/cub12-gir5.g6.gz",
+      "http_status": 200,
+      "record_sequence_sha256": "4cf61a5320deed550f1d854eff6c34548324ded891f36a2bb768c44cf8d0fcc6",
+      "records": 2,
+      "response_headers": {
+        "Content-Length": "55",
+        "Content-Type": "application/octet-stream",
+        "ETag": "\"4c3d5c37-37\"",
+        "Last-Modified": "Wed, 14 Jul 2010 06:41:59 GMT"
+      },
+      "unique_raw_records": 2,
+      "url": "https://houseofgraphs.org/data/cubics/cub12-gir5.g6.gz"
+    },
+    "18": {
+      "compressed_bytes": 2470,
+      "compressed_sha256": "95ff5ca833f3a1361d652e8f585d8aed21af61d73d135abf366570dcbddfcf7e",
+      "decompressed_bytes": 12740,
+      "decompressed_sha256": "39fb8633418927da9f5e3bd9fe81c83070a05ff65bfc532719618471a267f7fd",
+      "final_url": "https://houseofgraphs.org/data/cubics/cub18-gir5.g6.gz",
+      "http_status": 200,
+      "record_sequence_sha256": "b79539ec49c20ee22858ad0706c944c649b27c895f28218ecd453c0eb5797c8b",
+      "records": 455,
+      "response_headers": {
+        "Content-Length": "2470",
+        "Content-Type": "application/octet-stream",
+        "ETag": "\"4c3d5c37-9a6\"",
+        "Last-Modified": "Wed, 14 Jul 2010 06:41:59 GMT"
+      },
+      "unique_raw_records": 455,
+      "url": "https://houseofgraphs.org/data/cubics/cub18-gir5.g6.gz"
+    }
+  },
+  "certificate_checks": {
+    "algorithm_specific_matrix_rref_basis_hashes_matched": true,
+    "connected_rows_exactly_matched": 455,
+    "discovery_result_certificate_hash_matched": true,
+    "mixed_rows_exactly_matched": 2
+  },
+  "claim_label": "VERIFIED",
+  "conditional_n3_54": "EXCLUDED_VERIFIED",
+  "connected_parity_obstruction": {
+    "cases_checked": 455,
+    "degree_two_vectors": 0,
+    "discovery_summary_exact_match": {
+      "connected_rejections": {
+        "EXHAUSTED_PARITY_KERNEL_NO_POINT_DEGREE_TWO_VECTOR": 12,
+        "TRIVIAL_PARITY_KERNEL": 443
+      },
+      "maximum_kernel_vectors_examined": 262144,
+      "mixed_rejections": {
+        "TOO_FEW_INTERNAL_ORDER12_CANDIDATES": 2
+      },
+      "parity_nullity_histogram": {
+        "0": 443,
+        "1": 4,
+        "18": 1,
+        "2": 5,
+        "4": 2
+      },
+      "total_point_degree_two_vectors": 0
+    },
+    "maximum_kernel_vectors_examined": 262144,
+    "maximum_nullity": 18,
+    "nontrivial_kernels_exhausted": 12,
+    "nullity_histogram": {
+      "0": 443,
+      "1": 4,
+      "18": 1,
+      "2": 5,
+      "4": 2
+    },
+    "total_kernel_vectors_examined": 262647,
+    "trivial_kernels": 443
+  },
+  "conway_99": "UNKNOWN",
+  "coverage": {
+    "connected_order18": 455,
+    "excluded_3K3,3_branch_consumed_from_structural_input": true,
+    "mixed_K3,3_plus_order12": 2,
+    "official_catalog_completeness_and_one_per_isomorphism_class": "EXTERNAL_PREMISE",
+    "total_cases": 457
+  },
+  "discovery_artifact_sha256": {
+    "build_certificate.py": "d2add3ff676deeed1b3381f6e22c4da0cdafc38634a2a6f722d5e49ae6a3dc55",
+    "census-results.json": "f81158e9dacbb4b83bdbc3f19724c304b9dc10a550297661f68272f0d83cdeb2",
+    "census.py": "bf0954abed0d6a032aa7dd255a6b73d96f1c166fca5354958aa211ca57f22afc",
+    "exact-certificate.json": "f5c66a2ba6ee0c8b0d4ea4a15411366000faf03fdcb431e19f26747d117ced12",
+    "test_certificate.py": "b6fcfa9c5dfc7c3fd340d15a9d3eeec34d18aa3844f3a9269fb60bba646dba4f",
+    "verification-result.json": "be120ef86f8e58ce3072d085c74101e41165500af00f38db626fd5145ceaf42a",
+    "verify_certificate.py": "175263f8ed89203b86689ee78985232d347b913668c2cb9196d5ccb34ada7265"
+  },
+  "discovery_report": {
+    "path": "agents/2026-07-23-wave17-n3-54-census.md",
+    "sha256": "8ab3521ed116852bfe8f68db5826199c668c29bfec456e69c3a6204c985f1021"
+  },
+  "limitations": [
+    "conditional on the frozen structural F/R reduction",
+    "catalog completeness and isomorphism-class coverage are external premises",
+    "catalog bytes were fetched and validated in memory but not redistributed",
+    "the original SRG target and novelty remain UNKNOWN"
+  ],
+  "mixed_degree_count_obstruction": {
+    "cases": [
+      {
+        "K3,3_point_count": 9,
+        "case_id": "k33-plus-connected12-000",
+        "catalog_index": 0,
+        "compatible_support_count": 163,
+        "cross_component_candidates": 162,
+        "forced_cross_R_edges": 18,
+        "forced_internal_order12_R_edges": 9,
+        "order12_point_count": 18,
+        "record_sha256": "9c8573013f7d043080a811206db9ffbd23dc456d98aaa560440486755b227ea4",
+        "rejection": "TOO_FEW_INTERNAL_ORDER12_CANDIDATES",
+        "within_K3,3_candidates": 0,
+        "within_order12_candidates": 1
+      },
+      {
+        "K3,3_point_count": 9,
+        "case_id": "k33-plus-connected12-001",
+        "catalog_index": 1,
+        "compatible_support_count": 162,
+        "cross_component_candidates": 162,
+        "forced_cross_R_edges": 18,
+        "forced_internal_order12_R_edges": 9,
+        "order12_point_count": 18,
+        "record_sha256": "15bf5b534526f12da06a35ab960097df0f52d1b8a87592ffc4b85fd847149d7a",
+        "rejection": "TOO_FEW_INTERNAL_ORDER12_CANDIDATES",
+        "within_K3,3_candidates": 0,
+        "within_order12_candidates": 0
+      }
+    ],
+    "cases_checked": 2
+  },
+  "novelty": "UNKNOWN",
+  "preinspection_freeze": {
+    "path": "verification/n3-54-census/00-preinspection-freeze.md",
+    "sha256": "fe0277949d9555882d29391395e9bc035d737e5f67056d8e6afd98f7ae34f574"
+  },
+  "prospective_conditional_induced_C6_lower_bound": 209343,
+  "prospective_conditional_n3_lower_bound": 57,
+  "raw_sat_boundary": {
+    "statuses": {
+      "UNSAT_UNVERIFIED": 457
+    },
+    "used_as_evidence": false
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "conditional exclusion of the frozen Wave17 n3=54 F/R residual; not a resolution of SRG(99,14,1,2)",
+  "semantic_manifest_sha256": "9a28f3278fcb6ddd28ecff854603b12b592773026bbd870a9d42431fd45f4b57",
+  "status": "PASS",
+  "structural_input": {
+    "path": "agents/2026-07-23-wave17-n3-54-structural.md",
+    "sha256": "ffae576057617b6d8e32f7df4a1cd9627c63bdfe40fb58f394fd2640d1d82d18",
+    "status_consumed": "DERIVED; audited separately from this census"
+  },
+  "tool_versions": {
+    "external_python_packages_used": [],
+    "openssl": "OpenSSL 3.0.21 9 Jun 2026",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "python_implementation": "CPython"
+  }
+}

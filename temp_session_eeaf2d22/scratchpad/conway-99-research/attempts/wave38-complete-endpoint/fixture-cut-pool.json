@@ -1,0 +1,107 @@
+{
+  "claim_label": "CANDIDATE_CUT_POOL_ONLY",
+  "deduplicated_cut_count": 1,
+  "entries": [
+    {
+      "negative_literals": [
+        -1,
+        -2,
+        -3,
+        -84,
+        -86,
+        -168,
+        -247,
+        -248,
+        -327
+      ],
+      "variable_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "witness": {
+        "matching": [
+          [
+            15,
+            18
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "triangles": [
+          [
+            15,
+            16,
+            17
+          ],
+          [
+            18,
+            19,
+            20
+          ]
+        ],
+        "vertices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    }
+  ],
+  "format": "wave38-prism-cut-pool-v1",
+  "limitations": [
+    "The pool is not a complete formula unless a terminal check is reached.",
+    "UNSAT requires a retained independently checked proof.",
+    "A zero-prism SAT candidate requires independent full-SRG verification."
+  ],
+  "scope": "cumulative exact prism cuts from decoded endpoint candidates",
+  "source_catalogs": [
+    {
+      "deduplicated_cut_count": 1,
+      "prism_witness_count": 1,
+      "sha256": "96458134110b7d85fb528ee3541578531e2364ae108713456c2b97ed7e88d270"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "claim_label": "VERIFIED",
+  "equivalence": {
+    "converse": {
+      "binary_hollow_symmetric": true,
+      "degree": 14,
+      "direct_expansion": "T^2-3969I=324(A^2+A-12I-2J)",
+      "entry_map": "A=(T+2J-9I)/18",
+      "srg_identity": "A^2=12I-A+2J"
+    },
+    "determinant": "63^99",
+    "forward": {
+      "definition": "T=9S+7J=18A-2J+9I",
+      "entry_values": {
+        "diagonal": 7,
+        "edge": 16,
+        "nonedge": -2
+      },
+      "row_sum": 63,
+      "square": "3969I"
+    },
+    "spectrum": {
+      "+63": 55,
+      "-63": 44
+    }
+  },
+  "frozen_inputs": {
+    "attempts/wave82-seidel-orthogonal/package-manifest.sha256": "bc53c1a8f1425e4cbc4c2f78cee036b0e11f364d429cd9adabc55be6956dfaca",
+    "verification/wave51-seidel-smith/independent-result.json": "1dda847b1180ac881f2ccce80285a2a50d9cab1f0f910f7dbdf9a6087d53d793",
+    "verification/wave66-spherical-code-shift/independent-results.json": "3d6689b292fa5605e012da55f94e299926c1762c6ec77b8ef06007c62a65b61f"
+  },
+  "hostile_controls": {
+    "all_nonedge_matrix_rejected_by": "T row sum must be 63",
+    "asymmetric_matrix_rejected_by": "T must be symmetric",
+    "cyclic_14_regular_near_miss": {
+      "congruence_mod_9": "T=7J",
+      "rank_f3": 1,
+      "rejected_by": "T fails T^2=3969I",
+      "required_entry_alphabet": true,
+      "required_row_sum": true
+    },
+    "misaligned_primary_parts": {
+      "rejected_by_divisibility_chain": true,
+      "same_determinant": true
+    },
+    "same_determinant_rank_and_minor_floor_three_profile_rejected_by": "Smith reciprocity fails",
+    "scalar_square_matrix_rejected_by": "T diagonal must be 7"
+  },
+  "limitations": [
+    "The result is conditional on a hypothetical graph and the verified imported 7-primary Smith profile of S.",
+    "A valid abstract Smith profile is necessary, not sufficient.",
+    "No matrix or graph is constructed and no rank row is removed."
+  ],
+  "role": "verifier",
+  "scope": "unrestricted hypothetical srg(99,14,1,2)",
+  "seven_primary": {
+    "conclusion": "T and S have identical 7-primary Smith exponents",
+    "factor_determinant": "-9^99/10",
+    "factor_eigenvalues": {
+      "one_line": "-9/10",
+      "one_perp": "9"
+    },
+    "factor_is_in_GL_99_Z7": true,
+    "factorization": "T=S(9I-J/10)"
+  },
+  "smith_form": {
+    "formula": "diag(1,9^(r-1),63^(99-2r),441^(r-1),3969)",
+    "profiles": [
+      {
+        "counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 27,
+          "63": 43,
+          "9": 27
+        },
+        "determinant": "63^99",
+        "factor_count": 99,
+        "rank_f3": 1,
+        "rank_f7": 28,
+        "reciprocal_pair_product": 3969
+      },
+      {
+        "counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 29,
+          "63": 39,
+          "9": 29
+        },
+        "determinant": "63^99",
+        "factor_count": 99,
+        "rank_f3": 1,
+        "rank_f7": 30,
+        "reciprocal_pair_product": 3969
+      },
+      {
+        "counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 31,
+          "63": 35,
+          "9": 31
+        },
+        "determinant": "63^99",
+        "factor_count": 99,
+        "rank_f3": 1,
+        "rank_f7": 32,
+        "reciprocal_pair_product": 3969
+      },
+      {
+        "counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 33,
+          "63": 31,
+          "9": 33
+        },
+        "determinant": "63^99",
+        "factor_count": 99,
+        "rank_f3": 1,
+        "rank_f7": 34,
+        "reciprocal_pair_product": 3969
+      },
+      {
+        "counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 35,
+          "63": 27,
+          "9": 35
+        },
+        "determinant": "63^99",
+        "factor_count": 99,
+        "rank_f3": 1,
+        "rank_f7": 36,
+        "reciprocal_pair_product": 3969
+      },
+      {
+        "counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 37,
+          "63": 23,
+          "9": 37
+        },
+        "determinant": "63^99",
+        "factor_count": 99,
+        "rank_f3": 1,
+        "rank_f7": 38,
+        "reciprocal_pair_product": 3969
+      },
+      {
+        "counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 39,
+          "63": 19,
+          "9": 39
+        },
+        "determinant": "63^99",
+        "factor_count": 99,
+        "rank_f3": 1,
+        "rank_f7": 40,
+        "reciprocal_pair_product": 3969
+      },
+      {
+        "counts": {
+          "1": 1,
+          "3969": 1,
+          "441": 41,
+          "63": 15,
+          "9": 41
+        },
+        "determinant": "63^99",
+        "factor_count": 99,
+        "rank_f3": 1,
+        "rank_f7": 42,
+        "reciprocal_pair_product": 3969
+      }
+    ]
+  },
+  "status": {
+    "all_eight_survive": true,
+    "conway_99": "UNKNOWN",
+    "matrix_constructed": false,
+    "novelty": "UNKNOWN",
+    "rank_rows_excluded": 0,
+    "surviving_ranks": [
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42
+    ]
+  },
+  "three_primary": {
+    "exponent_counts": {
+      "0": 1,
+      "2": 97,
+      "4": 1
+    },
+    "rank_f3": 1,
+    "reciprocity": "e_i+e_(100-i)=4",
+    "two_minor_floor": 2
+  }
+}

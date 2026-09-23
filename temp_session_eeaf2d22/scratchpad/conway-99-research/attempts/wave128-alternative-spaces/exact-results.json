@@ -1,0 +1,317 @@
+{
+  "claim_label": "DERIVED",
+  "discriminant_action": {
+    "action": "C^T, where BQ=QC and B=D+4I",
+    "presentation": "A_W = Z^13 / (Q^T Q) Z^13",
+    "projector_quotient_integral": true,
+    "projector_quotient_max_abs": 2,
+    "projector_relation": "(C^T)^2-7C^T=0 on A_W",
+    "self_adjoint_certificate": "Q^TQ C = C^T Q^TQ"
+  },
+  "eigenlattices": {
+    "K_definition": "Lambda intersect eig_Q(D,-4)",
+    "U_definition": "Lambda intersect eig_Q(D,3)",
+    "determinant_formulas": {
+      "K": "2^12 * 3^4 * 7^k",
+      "U": "2^10 * 3^6 * 5^2 * 7^k"
+    },
+    "non_seven_discriminant_groups": {
+      "K": "(Z/8)^4 + Z/9 + (Z/3)^2",
+      "U": "Z/256 + Z/4 + (Z/9)^2 + (Z/3)^2 + (Z/5)^2"
+    },
+    "ranks": {
+      "K": 32,
+      "U": 42
+    },
+    "rootless": {
+      "K_minimum_at_least": 4,
+      "U_minimum_at_least": 4,
+      "reason": "Every norm-2 vector of Lambda is +/- (e_i-e_j); the i-coordinate of D(e_i-e_j) is -D_ij in {0,-1}, which is neither 3 nor -4."
+    },
+    "rows": [
+      {
+        "K_7_primary": "(Z/7)^16",
+        "U_7_primary": "(Z/7)^16",
+        "det_K": 11025888772659941376,
+        "det_U": 620206243462121702400,
+        "excluded": false,
+        "global_rank_r": 28,
+        "index_K_over_7IminusB_Lambda": "7^16",
+        "index_U_over_BLambda": "7^26",
+        "local_mod7_rank_k": 16
+      },
+      {
+        "K_7_primary": "(Z/7)^18",
+        "U_7_primary": "(Z/7)^18",
+        "det_K": 540268549860337127424,
+        "det_U": 30390105929643963417600,
+        "excluded": false,
+        "global_rank_r": 30,
+        "index_K_over_7IminusB_Lambda": "7^14",
+        "index_U_over_BLambda": "7^24",
+        "local_mod7_rank_k": 18
+      },
+      {
+        "K_7_primary": "(Z/7)^20",
+        "U_7_primary": "(Z/7)^20",
+        "det_K": 26473158943156519243776,
+        "det_U": 1489115190552554207462400,
+        "excluded": false,
+        "global_rank_r": 32,
+        "index_K_over_7IminusB_Lambda": "7^12",
+        "index_U_over_BLambda": "7^22",
+        "local_mod7_rank_k": 20
+      },
+      {
+        "K_7_primary": "(Z/7)^22",
+        "U_7_primary": "(Z/7)^22",
+        "det_K": 1297184788214669442945024,
+        "det_U": 72966644337075156165657600,
+        "excluded": false,
+        "global_rank_r": 34,
+        "index_K_over_7IminusB_Lambda": "7^10",
+        "index_U_over_BLambda": "7^20",
+        "local_mod7_rank_k": 22
+      },
+      {
+        "K_7_primary": "(Z/7)^24",
+        "U_7_primary": "(Z/7)^24",
+        "det_K": 63562054622518802704306176,
+        "det_U": 3575365572516682652117222400,
+        "excluded": false,
+        "global_rank_r": 36,
+        "index_K_over_7IminusB_Lambda": "7^8",
+        "index_U_over_BLambda": "7^18",
+        "local_mod7_rank_k": 24
+      },
+      {
+        "K_7_primary": "(Z/7)^26",
+        "U_7_primary": "(Z/7)^26",
+        "det_K": 3114540676503421332511002624,
+        "det_U": 175192913053317449953743897600,
+        "excluded": false,
+        "global_rank_r": 38,
+        "index_K_over_7IminusB_Lambda": "7^6",
+        "index_U_over_BLambda": "7^16",
+        "local_mod7_rank_k": 26
+      },
+      {
+        "K_7_primary": "(Z/7)^28",
+        "U_7_primary": "(Z/7)^28",
+        "det_K": 152612493148667645293039128576,
+        "det_U": 8584452739612555047733450982400,
+        "excluded": false,
+        "global_rank_r": 40,
+        "index_K_over_7IminusB_Lambda": "7^4",
+        "index_U_over_BLambda": "7^14",
+        "local_mod7_rank_k": 28
+      },
+      {
+        "K_7_primary": "(Z/7)^30",
+        "U_7_primary": "(Z/7)^30",
+        "det_K": 7478012164284714619358917300224,
+        "det_U": 420638184241015197338939098137600,
+        "excluded": false,
+        "global_rank_r": 42,
+        "index_K_over_7IminusB_Lambda": "7^2",
+        "index_U_over_BLambda": "7^12",
+        "local_mod7_rank_k": 30
+      }
+    ],
+    "seven_primary_certificate": {
+      "K_map": "(7I-B) Lambda = 7 K* over Z_7",
+      "U_map": "B Lambda = 7 U* over Z_7",
+      "equal_orders": "Lambda is 7-unimodular, so A_U,7 and A_K,7 are anti-isometric and both have order 7^k",
+      "gluing_index": "[Lambda:U direct_sum K]=7^k"
+    },
+    "seven_primary_exponent": 7
+  },
+  "finite_quadratic_gauss": {
+    "K": {
+      "2": {
+        "cyclotomic_remainder_sha256": "c8e483784b7986c0060e02ced9b58a0783f441339b4a88c4df8e6c795ba2e781",
+        "distinct_quadratic_values": 8,
+        "normalized_phase": "+1",
+        "order": 4096,
+        "quadratic_denominator": 8
+      },
+      "3": {
+        "cyclotomic_remainder_sha256": "f071912aafe500a488e28e899d7e44e09551e4d77c7d7a29e9eb69b7146f6daa",
+        "distinct_quadratic_values": 6,
+        "normalized_phase": "-1",
+        "order": 81,
+        "quadratic_denominator": 9
+      },
+      "5": {
+        "cyclotomic_remainder_sha256": "acc07b62f23f458923737c4cd4a66bd05d1e71eb4f384003baaf2dcc760d6349",
+        "distinct_quadratic_values": 1,
+        "normalized_phase": "+1",
+        "order": 1,
+        "quadratic_denominator": 1
+      }
+    },
+    "U": {
+      "2": {
+        "cyclotomic_remainder_sha256": "7ccaafd2f9cb24dd6f9e343d6338518aaff8d86b491ffc1d53ba8a3bd297b3b7",
+        "distinct_quadratic_values": 93,
+        "normalized_phase": "-i",
+        "order": 1024,
+        "quadratic_denominator": 512
+      },
+      "3": {
+        "cyclotomic_remainder_sha256": "b167b252e236b3e12ebf7c836c8b1dc29443a64e23619dd39445d8d4b544f90b",
+        "distinct_quadratic_values": 9,
+        "normalized_phase": "-1",
+        "order": 729,
+        "quadratic_denominator": 9
+      },
+      "5": {
+        "cyclotomic_remainder_sha256": "94f372f6bbbbc5b08916858194b4e68d5562247dff689188247f947c3a36ffb0",
+        "distinct_quadratic_values": 5,
+        "normalized_phase": "-1",
+        "order": 25,
+        "quadratic_denominator": 5
+      }
+    },
+    "milgram_forced_seven_phase": {
+      "K": "-1",
+      "U": "-1"
+    },
+    "non_seven_phase": {
+      "K": "-1",
+      "U": "-i"
+    },
+    "seven_determinant_legendre_symbol": "(-1)^(k/2+1)",
+    "seven_primary_type": {
+      "K": "O^-(k,7)",
+      "U": "O^-(k,7)"
+    }
+  },
+  "format": "wave128-alternative-spaces-v1",
+  "incidence_kernel": {
+    "Lambda_definition": "ker_Z(Q^T)",
+    "W_definition": "im_Z(Q)",
+    "det_Lambda_equals_det_QtQ": 6191736422400,
+    "det_factorization": "2^22 * 3^10 * 5^2",
+    "outside_pattern_histogram": {
+      "0": 3,
+      "1": 48,
+      "2": 36
+    },
+    "rank_Lambda": 74,
+    "rank_W": 13
+  },
+  "input_manifest_sha256": {
+    "attempts/wave105-c4boxk3-extension/package-manifest.sha256": "b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1",
+    "attempts/wave107-c4boxk3-spectrum/package-manifest.sha256": "7e899602825d3cdf989affade8a1e5a6256f17ba911f6351ea8bfe4a3b05d2b0",
+    "attempts/wave109-c4boxk3-local-projector/package-manifest.sha256": "6d54d48dbb6b1ffd3f7da845792fc12ee490471c02cc8137ebd1b03c21f5347e",
+    "verification/wave105-c4boxk3-extension/package-manifest.sha256": "2a24e3e5846558a9e93cd2f103e049816cef7f8dd4a200108643e44cc4c300ae",
+    "verification/wave109-c4boxk3-local-projector/package-manifest.sha256": "fcbb970eebf0b92cb012f5f2e81ccb8c6315c002c1f228f830cd1b0b082e62cd"
+  },
+  "primary_split": {
+    "2": {
+      "K_group": {
+        "8": 4
+      },
+      "K_valuations": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "U_group": {
+        "256": 1,
+        "4": 1
+      },
+      "U_valuations": [
+        2,
+        8
+      ],
+      "ambient_group": {
+        "256": 1,
+        "4": 1,
+        "8": 4
+      },
+      "ambient_valuations": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        8
+      ],
+      "valuation_check": true
+    },
+    "3": {
+      "K_group": {
+        "3": 2,
+        "9": 1
+      },
+      "K_valuations": [
+        1,
+        1,
+        2
+      ],
+      "U_group": {
+        "3": 2,
+        "9": 2
+      },
+      "U_valuations": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "ambient_group": {
+        "3": 4,
+        "9": 3
+      },
+      "ambient_valuations": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "valuation_check": true
+    },
+    "5": {
+      "K_group": {},
+      "K_valuations": [],
+      "U_group": {
+        "5": 2
+      },
+      "U_valuations": [
+        1,
+        1
+      ],
+      "ambient_group": {
+        "5": 2
+      },
+      "ambient_valuations": [
+        1,
+        1
+      ],
+      "valuation_check": true
+    },
+    "7": {
+      "K_group": {},
+      "K_valuations": [],
+      "U_group": {},
+      "U_valuations": [],
+      "ambient_group": {},
+      "ambient_valuations": [],
+      "valuation_check": true
+    }
+  },
+  "scope": "Conditional on a hypothetical srg(99,14,1,2) containing the frozen Wave 105 induced C4 Cartesian K3 motif.",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "any_rank_row_excluded": false,
+    "full_extension": "UNKNOWN",
+    "literature_novelty": "UNKNOWN",
+    "motif_excluded": false
+  }
+}

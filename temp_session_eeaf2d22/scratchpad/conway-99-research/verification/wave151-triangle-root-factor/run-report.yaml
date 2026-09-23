@@ -1,0 +1,62 @@
+role: verifier
+date_utc: 2026-07-28T12:27:51Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED_PARTIAL_CONSTRUCTION_UNKNOWN_FULL
+scope: >-
+  Clean-room exact verification of the stored Wave151 24x60 binary factor
+  against the frozen Wave149 G00,G11,G01 blocks, with a strict audit of the
+  fixed-Q1 solver and residual evidence boundaries.
+inputs:
+  - path: attempts/wave151-triangle-root-factor/package-manifest.sha256
+    sha256: 0e9ea04bad3fb41fda4224684663d828d3d19baea02387303775dd599d34d490
+  - path: attempts/wave151-triangle-root-factor/exact-results.json
+    sha256: 74bc48e2dd0434f3e36a183d724a1ae4a52d7ec9a1e109c92b14f64985da37a4
+  - path: attempts/wave151-triangle-root-factor/fixed-q1-q2-scout.json
+    sha256: f8694a6c996afc55d75f35884029918eb9e8028092e8d1216e232f95f73e8c4d
+  - path: attempts/wave149-terwilliger-triple/package-manifest.sha256
+    sha256: 84bea47182b6a59b69f5df29d4f7a8cdf71bff63cfbc47947b1e65013d09d70f
+  - path: attempts/wave149-terwilliger-triple/exact-results.json
+    sha256: 6fed4da32fbeefce54d1802136dc8c9a328f112bb0f295a86230f0e6175f5ee6
+  - path: verification/wave151-triangle-root-factor/input-freeze.sha256
+    sha256: a342644795e31df77999cc49f435f436436364573d4e7c6b8c1349cad075e088
+method: >-
+  Independently formed the 60 edges of K12 minus the fixed perfect matching,
+  built the two vertex-edge incidence groups from Q1, checked exact binary
+  row and group-column sums, and replayed all 576 entries of G00,G11,G01,G10.
+  Replayed the retained Q2 residual exactly. Independently reconstructed the
+  fixed-Q1 pruning count and model dimensions, but did not promote the bare
+  UNSAT status because no proof artifact exists. Discovery code was neither
+  imported nor executed.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave151-triangle-root-factor\independent_verify.py --verify
+  verification\wave151-triangle-root-factor\independent-results.json
+test_command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification\wave151-triangle-root-factor -p "test_*.py" -v
+test_result: "PASS: 11 tests"
+outputs:
+  - path: verification/wave151-triangle-root-factor/independent-results.json
+    sha256: 54f066e06de3d1ace2594cbb2db0367bfe9754e736e4e83904d5c77b5e14d5b4
+  - path: verification/wave151-triangle-root-factor/independent_verify.py
+    sha256: 8ab832c9b0abe10edf7134234e288b70cce576488aec254cc8141862993bdd49
+  - path: verification/wave151-triangle-root-factor/derivation.md
+    sha256: a38f02f952455978af783a0ef7777d7c5f4edd583801772eeee1cb1c662d432d
+  - path: verification/wave151-triangle-root-factor/test_independent_verify.py
+    sha256: 6f16d000d54753fde3b4a019cc4f32d6fe56db947e318d1f68aa654d16af7551
+exact_results:
+  semantic_sha256: 538eae68a2ba247be1d2cf0dde999f20506e73b1e5c557640d7b2a1daca90de3
+  binary_factor_sha256: 11dd68b64c237e6d45e221e8910b3da69e9492dd01aeb697555d874fdab9eed5
+  partial_gram_sha256: 6d3358e61a802bbca3695cf5ddee6a3ce57493b95cd8613d54d1b4641b4babd3
+  retained_Q2_squared_residual: 80
+resource_guard:
+  required_free_memory_percent: 15
+  verifier_minimum_free_memory_percent: 29.40407264519962
+  pre_seal_free_memory_percent: 28.86
+verdict: >-
+  The 24x60 partial binary factor is VERIFIED. The fixed-Q1 UNSAT record is
+  an UNVERIFIED_SOLVER_DIAGNOSTIC. Full 36x60 C remains UNKNOWN and D remains
+  UNKNOWN_NOT_REACHED.
+limitations: >-
+  No full C, residual D, graph realization, Conway-99 resolution, strict
+  bound, or novelty claim follows.

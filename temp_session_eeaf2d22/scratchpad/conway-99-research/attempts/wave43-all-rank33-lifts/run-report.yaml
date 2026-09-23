@@ -1,0 +1,21 @@
+role: proof_a
+date_utc: 2026-07-27T15:19:51Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: DERIVED
+scope: "Conditional on n3=4158, r3=12, all edges type 222, and any of the 264 canonical triangle-free rank-33 lifts: exact no-symmetry BB^T component and candidate-census reduction."
+inputs:
+  - "attempts/wave41-allquotient-lifts/exact_check.py | sha256 9a94a08dfec20a72c335168714a047f92e1aff09ac05bdd827a78ce2deb45e76"
+  - "attempts/wave41-allquotient-lifts/package-manifest.sha256 | sha256 7b3ec7e2745e15f9d18e0439ebde72e289a9264cb81af364dd9bf29c4bae23ac"
+method: "Reconstruct the complete canonical 18-bit triangle-free lift census; retain exactly the 264 K39-rank-33 masks; form the exact forced BB^T matrix for each; classify components, fibre balances, Cauchy moments, Gram entries, four-cycles, and all 216000 pair triples through support, component, and mixed-equation nonnegativity filters."
+command:
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave43-all-rank33-lifts\\exact_check.py --verify attempts\\wave43-all-rank33-lifts\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest discover -s attempts\\wave43-all-rank33-lifts -p \"test_*.py\" -v"
+outputs:
+  - "attempts/wave43-all-rank33-lifts/exact-results.json | sha256 31e2e5d767c02f9e520f33a980584e2ae24df8a4fc1bbd7b381797209b97e198"
+  - "attempts/wave43-all-rank33-lifts/README.md | sha256 fe04db4b0f493c7c03b8b7da7544b82e7ff8362f1fadb03875f9382f2a44b331"
+  - "attempts/wave43-all-rank33-lifts/failed-routes.md | sha256 94687bdae62ecc2aa4357586e48cf6146dabfd337098ac94c2a233c64020b9f3"
+limitations:
+  - "Discovery cannot verify itself; independent reconstruction is required."
+  - "All 264 lifts survive the exact necessary filters."
+  - "The five candidate-census rows are numerical classes, not proved graph-isomorphism classes."
+  - "No complete B, compatible H, endpoint exclusion, upper-bound improvement, target resolution, novelty, or priority result is supplied."

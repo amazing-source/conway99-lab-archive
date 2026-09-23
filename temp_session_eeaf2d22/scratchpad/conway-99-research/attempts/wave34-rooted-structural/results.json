@@ -1,0 +1,237 @@
+{
+  "claim_label": "DERIVED",
+  "domain": {
+    "O_vertices": 70,
+    "Q_vertices": 15,
+    "automorphism_quotient": false,
+    "fixed_O_Q_design": false,
+    "raw_weight_14_columns": 193253756909160,
+    "support_vertices": 14,
+    "two_factor_columns": {
+      "dp_states": 1090,
+      "labeled_binary_columns": 574118037,
+      "underlying_capacity_bounded_multigraphs": 4946952
+    },
+    "two_factor_cycle_census": {
+      "1+1+1+1+1+1+1": 24,
+      "2+1+1+1+1+1": 4746,
+      "2+2+1+1+1": 227136,
+      "2+2+2+1": 2148384,
+      "3+1+1+1+1": 69972,
+      "3+2+1+1": 4004196,
+      "3+2+2": 18854388,
+      "3+3+1": 11738034,
+      "4+1+1+1": 920304,
+      "4+2+1": 26163837,
+      "4+3": 76574904,
+      "5+1+1": 9667812,
+      "5+2": 91117740,
+      "6+1": 70294224,
+      "7": 262332336
+    }
+  },
+  "fixed_support": {
+    "O_labels_sha256": "d663273e32a857a04df28546aa38e1a4056937edd0722dbdea4b76854724a0e8",
+    "SS_block_identity": true,
+    "support_adjacency_sha256": "44c8955608f377f4a22b084198d5da804bb151d5313b9eebd2822611a4e5fc4d",
+    "support_degree_set": [
+      4
+    ],
+    "support_to_O_column_degree_set": [
+      2
+    ],
+    "support_to_O_row_degree_set": [
+      10
+    ],
+    "support_to_O_sha256": "7d33eb77427a4d4f5bd3a24c51ec982e9b795729fef62d80a16012b8c99f61f3"
+  },
+  "integral_projector_numerator": {
+    "annihilators": [
+      "P*L=0",
+      "B^T*L=0"
+    ],
+    "binary_recovery": "H=(C-7*B*B^T-L)/21 is symmetric hollow binary",
+    "definition": "L=C-7*B*B^T-21*H=147*E",
+    "equation": "L^2=147L",
+    "fixed_C_diagonal_distribution": {
+      "51": 28,
+      "57": 42
+    },
+    "fixed_C_off_diagonal_distribution": {
+      "-3": 84,
+      "-6": 21,
+      "0": 336,
+      "12": 252,
+      "3": 168,
+      "6": 714,
+      "9": 840
+    },
+    "fixed_C_sha256": "9bf08bdd279a7c1fc4267e70d4c448afa5063d78e245c0cf970f53ab3c0e9e69",
+    "mod_3": "L=-B*B^T",
+    "mod_7": {
+      "L_equals_fixed_C": true,
+      "fixed_rank": 5,
+      "square_zero": true
+    },
+    "solution_L_diagonal_distribution": {
+      "30": 28,
+      "36": 42
+    },
+    "trace_L": 2352
+  },
+  "kernel_snf": {
+    "kernel_dimension_P": 57,
+    "left_kernel_vector": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "rank_P_over_Q": 13,
+    "snf_nonzero_invariant_factors": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "snf_zero_count": 1,
+    "unit_minor_witness": {
+      "columns": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "deleted_row": 13,
+      "determinant": 1,
+      "o_labels": [
+        {
+          "copy": 0,
+          "incident": true,
+          "line": 0,
+          "point": 0
+        },
+        {
+          "copy": 0,
+          "incident": false,
+          "line": 1,
+          "point": 0
+        },
+        {
+          "copy": 0,
+          "incident": false,
+          "line": 2,
+          "point": 0
+        },
+        {
+          "copy": 0,
+          "incident": false,
+          "line": 3,
+          "point": 0
+        },
+        {
+          "copy": 0,
+          "incident": true,
+          "line": 4,
+          "point": 0
+        },
+        {
+          "copy": 0,
+          "incident": false,
+          "line": 5,
+          "point": 0
+        },
+        {
+          "copy": 0,
+          "incident": true,
+          "line": 6,
+          "point": 0
+        },
+        {
+          "copy": 0,
+          "incident": true,
+          "line": 0,
+          "point": 1
+        },
+        {
+          "copy": 0,
+          "incident": false,
+          "line": 0,
+          "point": 2
+        },
+        {
+          "copy": 0,
+          "incident": true,
+          "line": 0,
+          "point": 3
+        },
+        {
+          "copy": 0,
+          "incident": false,
+          "line": 0,
+          "point": 4
+        },
+        {
+          "copy": 0,
+          "incident": false,
+          "line": 0,
+          "point": 5
+        },
+        {
+          "copy": 0,
+          "incident": false,
+          "line": 0,
+          "point": 6
+        }
+      ]
+    }
+  },
+  "projector_reduction": {
+    "continuous_symmetric_K_block_before_B": 1653,
+    "continuous_symmetric_U_block_after_B": 946,
+    "rank_16_projector_grassmann_dimension": 432,
+    "rank_R": 13,
+    "rank_U_for_every_admissible_B": 43,
+    "rank_W_for_every_admissible_B": 14,
+    "residual_negative_eigenvalue_multiplicity": 16,
+    "residual_positive_eigenvalue_multiplicity": 27,
+    "residual_projector_rank": 16,
+    "trace_H_R": -3
+  },
+  "python": "3.13.14",
+  "schema_version": 1,
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "complete_binary_solution": "UNKNOWN",
+    "complete_exclusion": "UNKNOWN",
+    "rooted_graph_extension": "UNKNOWN"
+  }
+}

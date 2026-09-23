@@ -1,0 +1,35 @@
+role: construction
+date_utc: 2026-07-28T03:38:33Z
+git_commit: e671eb056df60edcbf48da6b9fcfe635b2444479
+claim_label: DERIVED
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2) containing the induced
+  12-vertex C4 box K3 parity-null motif, derive the complete 87-vertex
+  extension equations, construct a checked linear-layer witness, and run
+  bounded complete-domain searches for all four X0 graph branches.
+inputs:
+  - path: verification/wave102-prism-incidence-code/package-manifest.sha256
+    sha256: ab97e3d38b1a34d30caa6dddf7b5d9a9c76dc629bc5f6b400c225da1097fd242
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+method: >-
+  Expand the SRG matrix equation in motif/outside blocks; enumerate the
+  forced incidence multiset and exact type moments; construct and directly
+  verify a sparse 0-1 linear witness; encode every remaining outside-pair
+  common-neighbor equation; and retain all bounded timeouts as UNKNOWN.
+command: >-
+  python -B -m unittest discover -s
+  attempts/wave105-c4boxk3-extension -p "test_*.py" -v
+outputs:
+  - path: attempts/wave105-c4boxk3-extension/exact-results.json
+  - path: attempts/wave105-c4boxk3-extension/linear-witness.json
+    sha256: 7ab9e29e2382f68a9fc524aa446784305d497d4aea65a32720d129fb5aa0b416
+  - path: attempts/wave105-c4boxk3-extension/bounded-results.json
+  - path: attempts/wave105-c4boxk3-extension/derivation.md
+limitations:
+  - Independent verification is required.
+  - The linear witness does not satisfy or test outside pair codegrees.
+  - All four full-extension runs timed out and remain UNKNOWN.
+  - The motif is not proved to occur in every hypothetical target.
+  - No construction, exclusion, or Conway-99 resolution follows.
+  - Literature novelty remains UNKNOWN.

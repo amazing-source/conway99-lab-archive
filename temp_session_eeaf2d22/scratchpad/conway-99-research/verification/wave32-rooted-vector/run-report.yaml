@@ -1,0 +1,49 @@
+role: verifier
+date_utc: 2026-07-24T09:12:03Z
+git_commit: f0783b82d9b0260f5461cd68c647f62f646cdd81
+claim_label: VERIFIED
+scope: >-
+  Independent verification of the corrected v2 Wave 32 necessary
+  rooted-vector reduction under the full actual vertex-triangle incidence
+  and frozen n3=708 endpoint hypotheses, retaining the superseded v1 defect
+  chronology; this is not root exclusion or graph completion.
+inputs:
+  AGENTS.md: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  agents/2026-07-24-wave32-rooted-proof.md: 04990231e3b42cded363e39ffea771556e52ec66fe03a97164ae99f40ddbefe0
+  attempts/wave32-rooted-vector/exact_check.py: c753cbda03f8db54f9ad618040c87084cdafa3ce151a5810f72428815a511642
+  attempts/wave32-rooted-vector/test_exact_check.py: 7f0528ab5485d78c33f24d05d9cd773ed5a5951c44052e4a3489075d33d7c7cc
+  attempts/wave32-rooted-vector/exact-results.json: 9fa31703b5c4721476b1b88f217d7455615c0d92c0d6db7f150abadfc069c2a0
+  attempts/wave32-rooted-vector/input-freeze.sha256: 778473a5e3c872bf2c8d539b165d58d2d1329dd1224b515f6012fd628499b289
+  attempts/wave32-rooted-vector/failed-routes.md: 444b36cb1bd3d1f604687b2a7d3d3c855fa1590689d0cc1ff18f9da288f17c19
+  attempts/wave32-rooted-vector/correction-ledger.md: dd95a3d5af1156bfbdac89f2eac0decd15426b2a2261ff334a115f72ab69a2ce
+  attempts/wave32-rooted-vector/run-report.yaml: 6ca9ddcbc94b23cc64c0bf0ebb2a4a7ecab413a8db579680dc785ebceee3c137
+  attempts/wave32-rooted-vector/artifact-manifest.sha256: ba6c7099e06e24fe2feee4d19021dac9ddf49cbfe99acdd54f905a6c40728b8e
+  verification/2026-07-22-n3-side-incidence-audit.md: 9b6ff3cc9ec8bec13ffd93a8abe0bf0f35398c99f676d00064d6bf5fe6db6787
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/wave28-glue-discriminant/audit.md: 5c1dc7978d571a9471837b45a36663c7c457b6434800776501e4967146956b86
+  verification/wave31-sign-commutant/audit.md: f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0
+method: >-
+  Validated the corrected eight-entry discovery manifest and repair fields,
+  read the v2 proof and upstream premises, independently reconstructed every
+  algebraic and combinatorial bridge, then ran a clean-room standard-library
+  checker with adversarial mutations. Discovery code was neither imported nor
+  executed. V1 hashes and the nonblocking residual-degree defect were retained.
+command: |-
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json
+outputs:
+  verification/wave32-rooted-vector/audit.md: 36d83232d82e30205e0aefa30aedff0a517de1edb0adbaa54575ea68d04ce1a5
+  verification/wave32-rooted-vector/independent_check.py: c947e8d1bb1c9aae9c22370be5453deafffddd5cedce17a3da17a1576750958e
+  verification/wave32-rooted-vector/test_independent_check.py: a8c86b4ea02783a2b52e0a1089d75550bbff9770ad6ba77661c01e3e651ba445
+  verification/wave32-rooted-vector/independent-results.json: 4ed239e997e4485abdab4e26a2e28e2a981b6fff069c4d926ccff3d2241dbe6f
+  verification/wave32-rooted-vector/input-freeze.sha256: 45e3ced2d912077b36b3c5e662b4c88d3b34a285d0204b31e3c59e05274c3dc9
+  verification/wave32-rooted-vector/failed-objections.md: 51b909204f895bac8bdd29c4c0dacebfe3c1f41513d7eede3e470b554a4115c0
+limitations:
+  - >-
+    Superseded v1 incorrectly said one outside class needs degree 8. Corrected
+    v2 and the independent reconstruction both give 10; the historical defect
+    is nonblocking for the necessary reduction.
+  - The partial 99-vertex local control is not an extension certificate.
+  - Root exclusion and rooted endpoint existence remain UNKNOWN.
+  - n3=708, Conway-99 existence/nonexistence, and novelty remain UNKNOWN.

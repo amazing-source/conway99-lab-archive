@@ -1,0 +1,5104 @@
+{
+  "format": "wave143-clean-room-verification-v1",
+  "full_109_by_142_lattice_reconstruction": {
+    "equation_count": 109,
+    "exact_projection": "all k in Z, equivalently n3 in 3Z",
+    "homogeneous_steps_delta_k1": {
+      "minus": {
+        "k": "1",
+        "maximum_decimal_digits": 24206,
+        "nonzero_coordinates": 113,
+        "replay_pass": true,
+        "sha256": "0598ac8da188c03b14504f0d5d76c8417b6f290fe5ea4971714202b23e37e446"
+      },
+      "plus": {
+        "k": "1",
+        "maximum_decimal_digits": 24206,
+        "nonzero_coordinates": 113,
+        "replay_pass": true,
+        "sha256": "4bee91394cc8a3a42017ded0190932c0707a62ff2cabb60cf10d73a4b5bc63a6"
+      }
+    },
+    "kernel_projection_gcd_in_k": 1,
+    "minus": {
+      "canonical_matrix_sha256": "814eb1f791929e8f213d83b1b193ed30d3ce8d4381eeba0dcb16a477b39222ed",
+      "equation_count": 109,
+      "nullity": 33,
+      "particular_k0": {
+        "k": "0",
+        "maximum_decimal_digits": 48430,
+        "nonzero_coordinates": 115,
+        "sha256": "14f30ca13668c510f12030c53ab6cafd00abff39e6253418155bab055292681e"
+      },
+      "particular_replay_pass": true,
+      "rank": 109,
+      "sign": -1,
+      "unknown_count": 142
+    },
+    "nullity": 33,
+    "plus": {
+      "canonical_matrix_sha256": "71e615ffe53d6bf6cb5611c4a38f9f016f00560804204dd92f4dcef23199cab8",
+      "equation_count": 109,
+      "nullity": 33,
+      "particular_k0": {
+        "k": "0",
+        "maximum_decimal_digits": 48430,
+        "nonzero_coordinates": 115,
+        "sha256": "5edbd1202d250a1fe1dac21ee8ba06ae045f3cfef935f6facb2bca8582191f21"
+      },
+      "particular_replay_pass": true,
+      "rank": 109,
+      "sign": 1,
+      "unknown_count": 142
+    },
+    "rank": 109,
+    "scope": "109 equality rows with integral A,D,k and n3=3k; dual-distance zeros, inequalities, and nonnegativity omitted",
+    "submitted_certificate_sha256": "4cf4cb54ca424e25130e22ed99adc5a4b9b7dac7dcf27a86548847bf87558db8",
+    "submitted_hash_and_metadata_comparisons": {
+      "homogeneous_steps_delta_k1_minus_k": true,
+      "homogeneous_steps_delta_k1_minus_maximum_decimal_digits": true,
+      "homogeneous_steps_delta_k1_minus_nonzero_coordinates": true,
+      "homogeneous_steps_delta_k1_minus_sha256": true,
+      "homogeneous_steps_delta_k1_plus_k": true,
+      "homogeneous_steps_delta_k1_plus_maximum_decimal_digits": true,
+      "homogeneous_steps_delta_k1_plus_nonzero_coordinates": true,
+      "homogeneous_steps_delta_k1_plus_sha256": true,
+      "matrix_minus": true,
+      "matrix_plus": true,
+      "particular_solutions_k0_minus_k": true,
+      "particular_solutions_k0_minus_maximum_decimal_digits": true,
+      "particular_solutions_k0_minus_nonzero_coordinates": true,
+      "particular_solutions_k0_minus_sha256": true,
+      "particular_solutions_k0_plus_k": true,
+      "particular_solutions_k0_plus_maximum_decimal_digits": true,
+      "particular_solutions_k0_plus_nonzero_coordinates": true,
+      "particular_solutions_k0_plus_sha256": true
+    },
+    "submitted_hashes_critically_reconstructed": true,
+    "unknown_count": 142
+  },
+  "independent_s6_derivation": {
+    "alignment_bijective": true,
+    "class_count": 62,
+    "constant": "2024484",
+    "identity": "S6=sum_|T|=6 (-1)^(6+e(T))=2024484+(512/3)n3",
+    "n3_coefficient": "512/3",
+    "negative_constant_sum": "-559252386",
+    "positive_constant_sum": "561276870",
+    "wave21_sha256": "5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b"
+  },
+  "input_freeze": {
+    "entries": [
+      {
+        "expected_sha256": "5873b38468e008452307b9e77bdf963ee7e86935008c94acab295b981ecae1bf",
+        "observed_sha256": "5873b38468e008452307b9e77bdf963ee7e86935008c94acab295b981ecae1bf",
+        "pass": true,
+        "path": "attempts/wave132-distinguished-biweight/discover_rational.py"
+      },
+      {
+        "expected_sha256": "347b89017e69a65be5f72f405344ea8bb849c603dfa1795de61064732ba39564",
+        "observed_sha256": "347b89017e69a65be5f72f405344ea8bb849c603dfa1795de61064732ba39564",
+        "pass": true,
+        "path": "attempts/wave132-distinguished-biweight/exact_check.py"
+      },
+      {
+        "expected_sha256": "0b77a2cf41998a36cff364eede61cb07f41c4f41686d0960469f1556db0bc126",
+        "observed_sha256": "0b77a2cf41998a36cff364eede61cb07f41c4f41686d0960469f1556db0bc126",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/binary_branch.py"
+      },
+      {
+        "expected_sha256": "5e94b06d23088c9e9b058c1b84c5a270c13ab32550c122cbfa9ba6e7f6b2c8a0",
+        "observed_sha256": "5e94b06d23088c9e9b058c1b84c5a270c13ab32550c122cbfa9ba6e7f6b2c8a0",
+        "pass": true,
+        "path": "attempts/wave137-z4-arf-branches/exact_check.py"
+      },
+      {
+        "expected_sha256": "15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204",
+        "observed_sha256": "15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204",
+        "pass": true,
+        "path": "attempts/wave141-bivariate-graph-code/exact_check.py"
+      },
+      {
+        "expected_sha256": "351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e",
+        "observed_sha256": "351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e",
+        "pass": true,
+        "path": "attempts/wave141-bivariate-graph-code/exact-results.json"
+      }
+    ],
+    "entry_count": 6,
+    "failures": [],
+    "pass": true,
+    "path": "attempts/wave143-binary-s6-projection/input-freeze.sha256",
+    "sha256": "37e2dc19168f19be691a83b776593756f942fc525ae6789b3eac3d9a5b91e85b"
+  },
+  "integral_equality_lattice": {
+    "-1": {
+      "augmented_variable_rank": 23,
+      "coefficient_rank": 23,
+      "column_lattice_hnf_canonical_json_sha256": "e4510f85af4695a2210f8216779533e782b06f7209a8734b65df09a5be05dda5",
+      "column_lattice_hnf_nonzero_rows": 23,
+      "equation_rows": 23,
+      "exact_projection": "n3 in 3Z",
+      "image_variables": 41,
+      "necessity_proof": "Reducing the cleared S6 equation modulo 3 gives 2^27*512*n3=0 mod 3, hence 3 divides n3.",
+      "residue_membership_mod_3": {
+        "0": true,
+        "1": false,
+        "2": false
+      },
+      "scope": "equalities only; nonnegativity and graph realization omitted",
+      "sign": -1,
+      "sufficiency_proof": "Exact HNF membership certifies the n3=0 right side and the n3-to-n3+3 right-side step in the image-variable column lattice.",
+      "three_step_member": true,
+      "zero_rhs_member": true
+    },
+    "1": {
+      "augmented_variable_rank": 23,
+      "coefficient_rank": 23,
+      "column_lattice_hnf_canonical_json_sha256": "e4510f85af4695a2210f8216779533e782b06f7209a8734b65df09a5be05dda5",
+      "column_lattice_hnf_nonzero_rows": 23,
+      "equation_rows": 23,
+      "exact_projection": "n3 in 3Z",
+      "image_variables": 41,
+      "necessity_proof": "Reducing the cleared S6 equation modulo 3 gives 2^27*512*n3=0 mod 3, hence 3 divides n3.",
+      "residue_membership_mod_3": {
+        "0": true,
+        "1": false,
+        "2": false
+      },
+      "scope": "equalities only; nonnegativity and graph realization omitted",
+      "sign": 1,
+      "sufficiency_proof": "Exact HNF membership certifies the n3=0 right side and the n3-to-n3+3 right-side step in the image-variable column lattice.",
+      "three_step_member": true,
+      "zero_rhs_member": true
+    }
+  },
+  "integral_scout": {
+    "negative_inference_accepted": false,
+    "safely_unknown": true,
+    "sha256": "c95f41147cb6a33ec4487e3e4c73e5c7030659ee745283326c5ff0a1f9d11303"
+  },
+  "manifest": {
+    "entries": [
+      {
+        "expected_sha256": "6b0cb2152d5e18501150da0ec260b79d8dd65bad2f2877d014971facd4fb7528",
+        "observed_sha256": "6b0cb2152d5e18501150da0ec260b79d8dd65bad2f2877d014971facd4fb7528",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/exact_check.py"
+      },
+      {
+        "expected_sha256": "25f414e21b4aef22480ccd3922a4c7abab5409c099e4c02d900960a5f28f7dfc",
+        "observed_sha256": "25f414e21b4aef22480ccd3922a4c7abab5409c099e4c02d900960a5f28f7dfc",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/exact-results.json"
+      },
+      {
+        "expected_sha256": "37e2dc19168f19be691a83b776593756f942fc525ae6789b3eac3d9a5b91e85b",
+        "observed_sha256": "37e2dc19168f19be691a83b776593756f942fc525ae6789b3eac3d9a5b91e85b",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/input-freeze.sha256"
+      },
+      {
+        "expected_sha256": "14c584cdca39010b62d2e8f6ccd161756dbd615a239f367811b24c73bb8cbef9",
+        "observed_sha256": "14c584cdca39010b62d2e8f6ccd161756dbd615a239f367811b24c73bb8cbef9",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/integer_scout.py"
+      },
+      {
+        "expected_sha256": "c95f41147cb6a33ec4487e3e4c73e5c7030659ee745283326c5ff0a1f9d11303",
+        "observed_sha256": "c95f41147cb6a33ec4487e3e4c73e5c7030659ee745283326c5ff0a1f9d11303",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/integer-scout.json"
+      },
+      {
+        "expected_sha256": "ede3b855481ad857be52f2ac0b87b2f0d63a2105cb57cf604f76c560874f2abb",
+        "observed_sha256": "ede3b855481ad857be52f2ac0b87b2f0d63a2105cb57cf604f76c560874f2abb",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/lattice_certificate.py"
+      },
+      {
+        "expected_sha256": "4cf4cb54ca424e25130e22ed99adc5a4b9b7dac7dcf27a86548847bf87558db8",
+        "observed_sha256": "4cf4cb54ca424e25130e22ed99adc5a4b9b7dac7dcf27a86548847bf87558db8",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/lattice-certificate.json"
+      },
+      {
+        "expected_sha256": "536a79aa9ad23020f7d9de11c6de66ceb7dd1c3b05a41ccd335db938678b3c9d",
+        "observed_sha256": "536a79aa9ad23020f7d9de11c6de66ceb7dd1c3b05a41ccd335db938678b3c9d",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/optimize_rational.py"
+      },
+      {
+        "expected_sha256": "fc53664b8e4900b4442ad4c554f624cf74b35756fd0e488fe23f73ce191ae407",
+        "observed_sha256": "fc53664b8e4900b4442ad4c554f624cf74b35756fd0e488fe23f73ce191ae407",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/projection-optimum-minus-max.json"
+      },
+      {
+        "expected_sha256": "6eeed0636ae7fbb99712cefe0f573722f09abe5c2f933ab9f2279d6c40cae0fa",
+        "observed_sha256": "6eeed0636ae7fbb99712cefe0f573722f09abe5c2f933ab9f2279d6c40cae0fa",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/projection-optimum-minus-min.json"
+      },
+      {
+        "expected_sha256": "eab86b9bcbfca10f92eb1fe26045bcb2224dd59d95dfda982ea1894613127669",
+        "observed_sha256": "eab86b9bcbfca10f92eb1fe26045bcb2224dd59d95dfda982ea1894613127669",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/projection-optimum-plus-max.json"
+      },
+      {
+        "expected_sha256": "180c78a37534a4af2d1c95eeff77b12bed170694bb5d0d9fca54dea92d70e473",
+        "observed_sha256": "180c78a37534a4af2d1c95eeff77b12bed170694bb5d0d9fca54dea92d70e473",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/projection-optimum-plus-min.json"
+      },
+      {
+        "expected_sha256": "c0b0bb117413b41b9ea890a1f9361c15e3e444728413041b0603e313d7cae9d1",
+        "observed_sha256": "c0b0bb117413b41b9ea890a1f9361c15e3e444728413041b0603e313d7cae9d1",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/protocol.md"
+      },
+      {
+        "expected_sha256": "89b697611e6a26429e1ceca8e0fb594bdde0799f824b9cf8db3a14616b2f16d7",
+        "observed_sha256": "89b697611e6a26429e1ceca8e0fb594bdde0799f824b9cf8db3a14616b2f16d7",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/README.md"
+      },
+      {
+        "expected_sha256": "271b1b0434fcd0ea87408a29377b1dc79dc69cd60ca54035e4111cfae3632efd",
+        "observed_sha256": "271b1b0434fcd0ea87408a29377b1dc79dc69cd60ca54035e4111cfae3632efd",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/run-report.md"
+      },
+      {
+        "expected_sha256": "732e675228ab8c11b396cd027720a96cad1dba008c555be55a499b3260bd5307",
+        "observed_sha256": "732e675228ab8c11b396cd027720a96cad1dba008c555be55a499b3260bd5307",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/test_exact_check.py"
+      },
+      {
+        "expected_sha256": "c34564f04b7d42d08a99be29da652fbbc511e60fe4643bdaaff6babb46d44800",
+        "observed_sha256": "c34564f04b7d42d08a99be29da652fbbc511e60fe4643bdaaff6babb46d44800",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/witness-minus-n3-4158.json"
+      },
+      {
+        "expected_sha256": "d17d411a2e9425c2cb60be60c827aa191dad53678aade219529690c2772432c6",
+        "observed_sha256": "d17d411a2e9425c2cb60be60c827aa191dad53678aade219529690c2772432c6",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/witness-minus-n3-708.json"
+      },
+      {
+        "expected_sha256": "50959897f715be3975e1ec009c965f7f37ef7dfa0b42d7c5498e8722ffe732b5",
+        "observed_sha256": "50959897f715be3975e1ec009c965f7f37ef7dfa0b42d7c5498e8722ffe732b5",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/witness-plus-n3-4158.json"
+      },
+      {
+        "expected_sha256": "867c18e8fd8c7d5048d3bf84bea33f24916e8eb8e8cdb2591a4d513290bf6ce3",
+        "observed_sha256": "867c18e8fd8c7d5048d3bf84bea33f24916e8eb8e8cdb2591a4d513290bf6ce3",
+        "pass": true,
+        "path": "attempts/wave143-binary-s6-projection/witness-plus-n3-708.json"
+      }
+    ],
+    "entry_count": 20,
+    "expected_manifest_sha256": "91e1053b886f05d8457bb14a5acaf87c02afe73ad087e98203cc779012571a61",
+    "failures": [],
+    "observed_manifest_sha256": "91e1053b886f05d8457bb14a5acaf87c02afe73ad087e98203cc779012571a61",
+    "pass": true
+  },
+  "point_summary": {
+    "all_pass": true,
+    "count": 8,
+    "distinguished_split_systems": 32,
+    "ordinary_MacWilliams_rows": 1600,
+    "shadow_rows_t6_through_t99": 752,
+    "target_endpoint_points": 4,
+    "weak_optimum_points": 4
+  },
+  "points": [
+    {
+      "distinguished_pair_tables_pass": true,
+      "dual_nonintegral_count": 52,
+      "expected_n3": "708",
+      "expected_sign": 1,
+      "failures": [],
+      "forward_rows_checked": 100,
+      "image_nonintegral_count": 31,
+      "inverse_rows_checked": 100,
+      "pass": true,
+      "path": "attempts/wave143-binary-s6-projection/witness-plus-n3-708.json",
+      "role": "target_endpoint",
+      "sha256": "867c18e8fd8c7d5048d3bf84bea33f24916e8eb8e8cdb2591a4d513290bf6ce3",
+      "shadow_row_count": 100,
+      "shadow_rows": {
+        "0": {
+          "absolute_bound": "134217728",
+          "observed": "134217728",
+          "pass": true
+        },
+        "1": {
+          "absolute_bound": "13287555072",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "10": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-878818297436765683712/161",
+          "pass": true
+        },
+        "11": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13565700644885906849792/1127",
+          "pass": true
+        },
+        "12": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1992803454490272333824/161",
+          "pass": true
+        },
+        "13": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96694909117742335393792/1127",
+          "pass": true
+        },
+        "14": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "42096179721770822008832/1127",
+          "pass": true
+        },
+        "15": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89097844073486069268480/1127",
+          "pass": true
+        },
+        "16": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "259011216812774701137920/1127",
+          "pass": true
+        },
+        "17": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30912494192582809616384/23",
+          "pass": true
+        },
+        "18": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "2398485009233014421454848/3381",
+          "pass": true
+        },
+        "19": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58038642871451768586240/23",
+          "pass": true
+        },
+        "2": {
+          "absolute_bound": "651090198528",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "20": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19737918414466094293057536/1127",
+          "pass": true
+        },
+        "21": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53866160834299589078024192/1127",
+          "pass": true
+        },
+        "22": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207881291577581268564443136/1127",
+          "pass": true
+        },
+        "23": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678477884255324276520910848/1127",
+          "pass": true
+        },
+        "24": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297481609064983002148241408/161",
+          "pass": true
+        },
+        "25": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769387198759450492195045376/1127",
+          "pass": true
+        },
+        "26": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759607021630632474735280128/161",
+          "pass": true
+        },
+        "27": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125170092739570073891504128/49",
+          "pass": true
+        },
+        "28": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885108344337374753073397760/1127",
+          "pass": true
+        },
+        "29": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774187040379162661310431232/1127",
+          "pass": true
+        },
+        "3": {
+          "absolute_bound": "21051916419072",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "30": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301965493724229453878394880/1127",
+          "pass": true
+        },
+        "31": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396797285624889450644373504/161",
+          "pass": true
+        },
+        "32": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273413765720355651524231168/1127",
+          "pass": true
+        },
+        "33": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985407056907090979847143424/161",
+          "pass": true
+        },
+        "34": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593179256487959750632275968/1127",
+          "pass": true
+        },
+        "35": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570590742874516755696320512/1127",
+          "pass": true
+        },
+        "36": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845931332014721254706642944/1127",
+          "pass": true
+        },
+        "37": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132774335132535074650226425856/1127",
+          "pass": true
+        },
+        "38": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066774990811691443709542400/161",
+          "pass": true
+        },
+        "39": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098871154264969886547457343488/1127",
+          "pass": true
+        },
+        "4": {
+          "absolute_bound": "505245994057728",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "40": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582060401317867489694056448/161",
+          "pass": true
+        },
+        "41": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408991776102173261702558121984/1127",
+          "pass": true
+        },
+        "42": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569178476095935001332604207104/1127",
+          "pass": true
+        },
+        "43": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059946022914119443302783647744/1127",
+          "pass": true
+        },
+        "44": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685848640981932795934801920/1127",
+          "pass": true
+        },
+        "45": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "538684174449473630802257798758400/483",
+          "pass": true
+        },
+        "46": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523154804443393381377538785280/1127",
+          "pass": true
+        },
+        "47": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362397912640982010774421504/161",
+          "pass": true
+        },
+        "48": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310498640151079223048804499456/1127",
+          "pass": true
+        },
+        "49": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128959115753183323097908903936/1127",
+          "pass": true
+        },
+        "5": {
+          "absolute_bound": "9599673887096832",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "50": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128959115753183323097908903936/1127",
+          "pass": true
+        },
+        "51": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310498640151079223048804499456/1127",
+          "pass": true
+        },
+        "52": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362397912640982010774421504/161",
+          "pass": true
+        },
+        "53": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523154804443393381377538785280/1127",
+          "pass": true
+        },
+        "54": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "538684174449473630802257798758400/483",
+          "pass": true
+        },
+        "55": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685848640981932795934801920/1127",
+          "pass": true
+        },
+        "56": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059946022914119443302783647744/1127",
+          "pass": true
+        },
+        "57": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569178476095935001332604207104/1127",
+          "pass": true
+        },
+        "58": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408991776102173261702558121984/1127",
+          "pass": true
+        },
+        "59": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582060401317867489694056448/161",
+          "pass": true
+        },
+        "6": {
+          "absolute_bound": "150394890897850368",
+          "observed": "287939439362048",
+          "pass": true
+        },
+        "60": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098871154264969886547457343488/1127",
+          "pass": true
+        },
+        "61": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066774990811691443709542400/161",
+          "pass": true
+        },
+        "62": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132774335132535074650226425856/1127",
+          "pass": true
+        },
+        "63": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845931332014721254706642944/1127",
+          "pass": true
+        },
+        "64": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570590742874516755696320512/1127",
+          "pass": true
+        },
+        "65": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593179256487959750632275968/1127",
+          "pass": true
+        },
+        "66": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985407056907090979847143424/161",
+          "pass": true
+        },
+        "67": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273413765720355651524231168/1127",
+          "pass": true
+        },
+        "68": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396797285624889450644373504/161",
+          "pass": true
+        },
+        "69": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301965493724229453878394880/1127",
+          "pass": true
+        },
+        "7": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "676365553152812908544/1127",
+          "pass": true
+        },
+        "70": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774187040379162661310431232/1127",
+          "pass": true
+        },
+        "71": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885108344337374753073397760/1127",
+          "pass": true
+        },
+        "72": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125170092739570073891504128/49",
+          "pass": true
+        },
+        "73": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759607021630632474735280128/161",
+          "pass": true
+        },
+        "74": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769387198759450492195045376/1127",
+          "pass": true
+        },
+        "75": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297481609064983002148241408/161",
+          "pass": true
+        },
+        "76": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678477884255324276520910848/1127",
+          "pass": true
+        },
+        "77": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207881291577581268564443136/1127",
+          "pass": true
+        },
+        "78": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53866160834299589078024192/1127",
+          "pass": true
+        },
+        "79": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19737918414466094293057536/1127",
+          "pass": true
+        },
+        "8": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10829979107039641600/23",
+          "pass": true
+        },
+        "80": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58038642871451768586240/23",
+          "pass": true
+        },
+        "81": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "2398485009233014421454848/3381",
+          "pass": true
+        },
+        "82": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30912494192582809616384/23",
+          "pass": true
+        },
+        "83": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "259011216812774701137920/1127",
+          "pass": true
+        },
+        "84": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89097844073486069268480/1127",
+          "pass": true
+        },
+        "85": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "42096179721770822008832/1127",
+          "pass": true
+        },
+        "86": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96694909117742335393792/1127",
+          "pass": true
+        },
+        "87": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1992803454490272333824/161",
+          "pass": true
+        },
+        "88": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13565700644885906849792/1127",
+          "pass": true
+        },
+        "89": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-878818297436765683712/161",
+          "pass": true
+        },
+        "9": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "8980743429272385880064/3381",
+          "pass": true
+        },
+        "90": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "8980743429272385880064/3381",
+          "pass": true
+        },
+        "91": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10829979107039641600/23",
+          "pass": true
+        },
+        "92": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "676365553152812908544/1127",
+          "pass": true
+        },
+        "93": {
+          "absolute_bound": "150394890897850368",
+          "observed": "287939439362048",
+          "pass": true
+        },
+        "94": {
+          "absolute_bound": "9599673887096832",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "95": {
+          "absolute_bound": "505245994057728",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "96": {
+          "absolute_bound": "21051916419072",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "97": {
+          "absolute_bound": "651090198528",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "98": {
+          "absolute_bound": "13287555072",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "99": {
+          "absolute_bound": "134217728",
+          "observed": "134217728",
+          "pass": true
+        }
+      },
+      "signed_rows": {
+        "0": {
+          "expected": "134217728",
+          "normalized_target": "1",
+          "observed": "134217728",
+          "pass": true
+        },
+        "1": {
+          "expected": "-13287555072",
+          "normalized_target": "-99",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "2": {
+          "expected": "465064427520",
+          "normalized_target": "3465",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "3": {
+          "expected": "-7596052316160",
+          "normalized_target": "-56595",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "4": {
+          "expected": "62132607516672",
+          "normalized_target": "462924",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "5": {
+          "expected": "-244437863104512",
+          "normalized_target": "-1821204",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "6": {
+          "expected": "287939439362048",
+          "normalized_target": "2145316",
+          "observed": "287939439362048",
+          "pass": true
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "dual_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "image_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 62,
+            "pass": true,
+            "row_count": 33
+          },
+          "image_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 93,
+            "pass": true,
+            "row_count": 33
+          }
+        }
+      },
+      "submitted_n3": "708",
+      "submitted_sign": 1
+    },
+    {
+      "distinguished_pair_tables_pass": true,
+      "dual_nonintegral_count": 52,
+      "expected_n3": "4158",
+      "expected_sign": 1,
+      "failures": [],
+      "forward_rows_checked": 100,
+      "image_nonintegral_count": 31,
+      "inverse_rows_checked": 100,
+      "pass": true,
+      "path": "attempts/wave143-binary-s6-projection/witness-plus-n3-4158.json",
+      "role": "target_endpoint",
+      "sha256": "50959897f715be3975e1ec009c965f7f37ef7dfa0b42d7c5498e8722ffe732b5",
+      "shadow_row_count": 100,
+      "shadow_rows": {
+        "0": {
+          "absolute_bound": "134217728",
+          "observed": "134217728",
+          "pass": true
+        },
+        "1": {
+          "absolute_bound": "13287555072",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "10": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-879031157733942362112/161",
+          "pass": true
+        },
+        "11": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13567139249765159534592/1127",
+          "pass": true
+        },
+        "12": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1994147463573824077824/161",
+          "pass": true
+        },
+        "13": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96701192428122110164992/1127",
+          "pass": true
+        },
+        "14": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "42100051827202700869632/1127",
+          "pass": true
+        },
+        "15": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89114834628242602721280/1127",
+          "pass": true
+        },
+        "16": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "259109603098361981829120/1127",
+          "pass": true
+        },
+        "17": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30914500698224285712384/23",
+          "pass": true
+        },
+        "18": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "799543468631673500860416/1127",
+          "pass": true
+        },
+        "19": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58039272858113739325440/23",
+          "pass": true
+        },
+        "2": {
+          "absolute_bound": "651090198528",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "20": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19738723036050521573031936/1127",
+          "pass": true
+        },
+        "21": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53865650569957509527764992/1127",
+          "pass": true
+        },
+        "22": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207880320365628875536859136/1127",
+          "pass": true
+        },
+        "23": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678477953183623610942619648/1127",
+          "pass": true
+        },
+        "24": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297480959740524127435358208/161",
+          "pass": true
+        },
+        "25": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769387980392853827827531776/1127",
+          "pass": true
+        },
+        "26": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759608214645740971101257728/161",
+          "pass": true
+        },
+        "27": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125170159634138828141232128/49",
+          "pass": true
+        },
+        "28": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885124398012535556496424960/1127",
+          "pass": true
+        },
+        "29": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774189097613992592337272832/1127",
+          "pass": true
+        },
+        "3": {
+          "absolute_bound": "21051916419072",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "30": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301923747399002394544046080/1127",
+          "pass": true
+        },
+        "31": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396794815646396177505583104/161",
+          "pass": true
+        },
+        "32": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273380811237201765013127168/1127",
+          "pass": true
+        },
+        "33": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985405843854230034814337024/161",
+          "pass": true
+        },
+        "34": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593314919019098722709536768/1127",
+          "pass": true
+        },
+        "35": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570669088341629399793139712/1127",
+          "pass": true
+        },
+        "36": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845956729424522650157318144/1127",
+          "pass": true
+        },
+        "37": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132774332167188429702594297856/1127",
+          "pass": true
+        },
+        "38": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066731452014360839323648000/161",
+          "pass": true
+        },
+        "39": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098870942317381726453301772288/1127",
+          "pass": true
+        },
+        "4": {
+          "absolute_bound": "505245994057728",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "40": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582068989118646722597224448/161",
+          "pass": true
+        },
+        "41": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408991859106525197139059933184/1127",
+          "pass": true
+        },
+        "42": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569178964958558759785127215104/1127",
+          "pass": true
+        },
+        "43": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059946406563142125182143954944/1127",
+          "pass": true
+        },
+        "44": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685610892949456057972817920/1127",
+          "pass": true
+        },
+        "45": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "179561391446026053583895317708800/161",
+          "pass": true
+        },
+        "46": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523154238757607124646525665280/1127",
+          "pass": true
+        },
+        "47": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362328850997730685436821504/161",
+          "pass": true
+        },
+        "48": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310499062169613175449983123456/1127",
+          "pass": true
+        },
+        "49": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128959581955232093648438951936/1127",
+          "pass": true
+        },
+        "5": {
+          "absolute_bound": "9599673887096832",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "50": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128959581955232093648438951936/1127",
+          "pass": true
+        },
+        "51": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310499062169613175449983123456/1127",
+          "pass": true
+        },
+        "52": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362328850997730685436821504/161",
+          "pass": true
+        },
+        "53": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523154238757607124646525665280/1127",
+          "pass": true
+        },
+        "54": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "179561391446026053583895317708800/161",
+          "pass": true
+        },
+        "55": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685610892949456057972817920/1127",
+          "pass": true
+        },
+        "56": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059946406563142125182143954944/1127",
+          "pass": true
+        },
+        "57": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569178964958558759785127215104/1127",
+          "pass": true
+        },
+        "58": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408991859106525197139059933184/1127",
+          "pass": true
+        },
+        "59": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582068989118646722597224448/161",
+          "pass": true
+        },
+        "6": {
+          "absolute_bound": "150394890897850368",
+          "observed": "366966837608448",
+          "pass": true
+        },
+        "60": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098870942317381726453301772288/1127",
+          "pass": true
+        },
+        "61": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066731452014360839323648000/161",
+          "pass": true
+        },
+        "62": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132774332167188429702594297856/1127",
+          "pass": true
+        },
+        "63": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845956729424522650157318144/1127",
+          "pass": true
+        },
+        "64": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570669088341629399793139712/1127",
+          "pass": true
+        },
+        "65": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593314919019098722709536768/1127",
+          "pass": true
+        },
+        "66": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985405843854230034814337024/161",
+          "pass": true
+        },
+        "67": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273380811237201765013127168/1127",
+          "pass": true
+        },
+        "68": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396794815646396177505583104/161",
+          "pass": true
+        },
+        "69": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301923747399002394544046080/1127",
+          "pass": true
+        },
+        "7": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "676419242391496556544/1127",
+          "pass": true
+        },
+        "70": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774189097613992592337272832/1127",
+          "pass": true
+        },
+        "71": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885124398012535556496424960/1127",
+          "pass": true
+        },
+        "72": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125170159634138828141232128/49",
+          "pass": true
+        },
+        "73": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759608214645740971101257728/161",
+          "pass": true
+        },
+        "74": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769387980392853827827531776/1127",
+          "pass": true
+        },
+        "75": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297480959740524127435358208/161",
+          "pass": true
+        },
+        "76": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678477953183623610942619648/1127",
+          "pass": true
+        },
+        "77": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207880320365628875536859136/1127",
+          "pass": true
+        },
+        "78": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53865650569957509527764992/1127",
+          "pass": true
+        },
+        "79": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19738723036050521573031936/1127",
+          "pass": true
+        },
+        "8": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10821868920294604800/23",
+          "pass": true
+        },
+        "80": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58039272858113739325440/23",
+          "pass": true
+        },
+        "81": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "799543468631673500860416/1127",
+          "pass": true
+        },
+        "82": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30914500698224285712384/23",
+          "pass": true
+        },
+        "83": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "259109603098361981829120/1127",
+          "pass": true
+        },
+        "84": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89114834628242602721280/1127",
+          "pass": true
+        },
+        "85": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "42100051827202700869632/1127",
+          "pass": true
+        },
+        "86": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96701192428122110164992/1127",
+          "pass": true
+        },
+        "87": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1994147463573824077824/161",
+          "pass": true
+        },
+        "88": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13567139249765159534592/1127",
+          "pass": true
+        },
+        "89": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-879031157733942362112/161",
+          "pass": true
+        },
+        "9": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "2993728595044690034688/1127",
+          "pass": true
+        },
+        "90": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "2993728595044690034688/1127",
+          "pass": true
+        },
+        "91": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10821868920294604800/23",
+          "pass": true
+        },
+        "92": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "676419242391496556544/1127",
+          "pass": true
+        },
+        "93": {
+          "absolute_bound": "150394890897850368",
+          "observed": "366966837608448",
+          "pass": true
+        },
+        "94": {
+          "absolute_bound": "9599673887096832",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "95": {
+          "absolute_bound": "505245994057728",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "96": {
+          "absolute_bound": "21051916419072",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "97": {
+          "absolute_bound": "651090198528",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "98": {
+          "absolute_bound": "13287555072",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "99": {
+          "absolute_bound": "134217728",
+          "observed": "134217728",
+          "pass": true
+        }
+      },
+      "signed_rows": {
+        "0": {
+          "expected": "134217728",
+          "normalized_target": "1",
+          "observed": "134217728",
+          "pass": true
+        },
+        "1": {
+          "expected": "-13287555072",
+          "normalized_target": "-99",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "2": {
+          "expected": "465064427520",
+          "normalized_target": "3465",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "3": {
+          "expected": "-7596052316160",
+          "normalized_target": "-56595",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "4": {
+          "expected": "62132607516672",
+          "normalized_target": "462924",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "5": {
+          "expected": "-244437863104512",
+          "normalized_target": "-1821204",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "6": {
+          "expected": "366966837608448",
+          "normalized_target": "2734116",
+          "observed": "366966837608448",
+          "pass": true
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "dual_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "image_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 62,
+            "pass": true,
+            "row_count": 33
+          },
+          "image_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 93,
+            "pass": true,
+            "row_count": 33
+          }
+        }
+      },
+      "submitted_n3": "4158",
+      "submitted_sign": 1
+    },
+    {
+      "distinguished_pair_tables_pass": true,
+      "dual_nonintegral_count": 52,
+      "expected_n3": "708",
+      "expected_sign": -1,
+      "failures": [],
+      "forward_rows_checked": 100,
+      "image_nonintegral_count": 31,
+      "inverse_rows_checked": 100,
+      "pass": true,
+      "path": "attempts/wave143-binary-s6-projection/witness-minus-n3-708.json",
+      "role": "target_endpoint",
+      "sha256": "d17d411a2e9425c2cb60be60c827aa191dad53678aade219529690c2772432c6",
+      "shadow_row_count": 100,
+      "shadow_rows": {
+        "0": {
+          "absolute_bound": "134217728",
+          "observed": "-134217728",
+          "pass": true
+        },
+        "1": {
+          "absolute_bound": "13287555072",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "10": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-876949752681777332224/161",
+          "pass": true
+        },
+        "11": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13615809781758561353728/1127",
+          "pass": true
+        },
+        "12": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1994381180999915536384/161",
+          "pass": true
+        },
+        "13": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96676949210751026855936/1127",
+          "pass": true
+        },
+        "14": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "41947972874990597963776/1127",
+          "pass": true
+        },
+        "15": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89613570830410551656448/1127",
+          "pass": true
+        },
+        "16": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "259036789839821031866368/1127",
+          "pass": true
+        },
+        "17": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30920058436228904648704/23",
+          "pass": true
+        },
+        "18": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "2402089909585011860832256/3381",
+          "pass": true
+        },
+        "19": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58106062413275313733632/23",
+          "pass": true
+        },
+        "2": {
+          "absolute_bound": "651090198528",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "20": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19737700973675609201836032/1127",
+          "pass": true
+        },
+        "21": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53861746210033821099753472/1127",
+          "pass": true
+        },
+        "22": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207874387247378642623266816/1127",
+          "pass": true
+        },
+        "23": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678463297693600019115933696/1127",
+          "pass": true
+        },
+        "24": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297481963983149314688942080/161",
+          "pass": true
+        },
+        "25": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769413413479821173774614528/1127",
+          "pass": true
+        },
+        "26": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759611102090411707537031168/161",
+          "pass": true
+        },
+        "27": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125172097949222659673817088/49",
+          "pass": true
+        },
+        "28": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885096395663319953615880192/1127",
+          "pass": true
+        },
+        "29": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774084288798165633303838720/1127",
+          "pass": true
+        },
+        "3": {
+          "absolute_bound": "21051916419072",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "30": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301876474010094880266649600/1127",
+          "pass": true
+        },
+        "31": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396782094629896496389029888/161",
+          "pass": true
+        },
+        "32": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273448515714452351445106688/1127",
+          "pass": true
+        },
+        "33": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985448422207672413832871936/161",
+          "pass": true
+        },
+        "34": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593398915019763269058428928/1127",
+          "pass": true
+        },
+        "35": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570771258245338462974640128/1127",
+          "pass": true
+        },
+        "36": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845863758659171060503543808/1127",
+          "pass": true
+        },
+        "37": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132773722976976316507845820416/1127",
+          "pass": true
+        },
+        "38": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066711198428472888589811712/161",
+          "pass": true
+        },
+        "39": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098870927370265434870347988992/1127",
+          "pass": true
+        },
+        "4": {
+          "absolute_bound": "505245994057728",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "40": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582073786997643164713484288/161",
+          "pass": true
+        },
+        "41": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408992773590429731319076356096/1127",
+          "pass": true
+        },
+        "42": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569179239685612851090123915264/1127",
+          "pass": true
+        },
+        "43": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059946236931113310028426117120/1127",
+          "pass": true
+        },
+        "44": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685744541513136242300026880/1127",
+          "pass": true
+        },
+        "45": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "538684173901539297688807259766784/483",
+          "pass": true
+        },
+        "46": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523153705824785522479178186752/1127",
+          "pass": true
+        },
+        "47": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362374840423436611143860224/161",
+          "pass": true
+        },
+        "48": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310498758907907489946073563136/1127",
+          "pass": true
+        },
+        "49": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128960428158964945893017518080/1127",
+          "pass": true
+        },
+        "5": {
+          "absolute_bound": "9599673887096832",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "50": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128960428158964945893017518080/1127",
+          "pass": true
+        },
+        "51": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310498758907907489946073563136/1127",
+          "pass": true
+        },
+        "52": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362374840423436611143860224/161",
+          "pass": true
+        },
+        "53": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523153705824785522479178186752/1127",
+          "pass": true
+        },
+        "54": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "538684173901539297688807259766784/483",
+          "pass": true
+        },
+        "55": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685744541513136242300026880/1127",
+          "pass": true
+        },
+        "56": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059946236931113310028426117120/1127",
+          "pass": true
+        },
+        "57": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569179239685612851090123915264/1127",
+          "pass": true
+        },
+        "58": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408992773590429731319076356096/1127",
+          "pass": true
+        },
+        "59": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582073786997643164713484288/161",
+          "pass": true
+        },
+        "6": {
+          "absolute_bound": "150394890897850368",
+          "observed": "-287939439362048",
+          "pass": true
+        },
+        "60": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098870927370265434870347988992/1127",
+          "pass": true
+        },
+        "61": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066711198428472888589811712/161",
+          "pass": true
+        },
+        "62": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132773722976976316507845820416/1127",
+          "pass": true
+        },
+        "63": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845863758659171060503543808/1127",
+          "pass": true
+        },
+        "64": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570771258245338462974640128/1127",
+          "pass": true
+        },
+        "65": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593398915019763269058428928/1127",
+          "pass": true
+        },
+        "66": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985448422207672413832871936/161",
+          "pass": true
+        },
+        "67": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273448515714452351445106688/1127",
+          "pass": true
+        },
+        "68": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396782094629896496389029888/161",
+          "pass": true
+        },
+        "69": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301876474010094880266649600/1127",
+          "pass": true
+        },
+        "7": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "678496593588313391104/1127",
+          "pass": true
+        },
+        "70": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774084288798165633303838720/1127",
+          "pass": true
+        },
+        "71": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885096395663319953615880192/1127",
+          "pass": true
+        },
+        "72": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125172097949222659673817088/49",
+          "pass": true
+        },
+        "73": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759611102090411707537031168/161",
+          "pass": true
+        },
+        "74": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769413413479821173774614528/1127",
+          "pass": true
+        },
+        "75": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297481963983149314688942080/161",
+          "pass": true
+        },
+        "76": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678463297693600019115933696/1127",
+          "pass": true
+        },
+        "77": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207874387247378642623266816/1127",
+          "pass": true
+        },
+        "78": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53861746210033821099753472/1127",
+          "pass": true
+        },
+        "79": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19737700973675609201836032/1127",
+          "pass": true
+        },
+        "8": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10791113963010523136/23",
+          "pass": true
+        },
+        "80": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58106062413275313733632/23",
+          "pass": true
+        },
+        "81": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "2402089909585011860832256/3381",
+          "pass": true
+        },
+        "82": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30920058436228904648704/23",
+          "pass": true
+        },
+        "83": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "259036789839821031866368/1127",
+          "pass": true
+        },
+        "84": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89613570830410551656448/1127",
+          "pass": true
+        },
+        "85": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "41947972874990597963776/1127",
+          "pass": true
+        },
+        "86": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96676949210751026855936/1127",
+          "pass": true
+        },
+        "87": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1994381180999915536384/161",
+          "pass": true
+        },
+        "88": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13615809781758561353728/1127",
+          "pass": true
+        },
+        "89": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-876949752681777332224/161",
+          "pass": true
+        },
+        "9": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "8957453965194963189760/3381",
+          "pass": true
+        },
+        "90": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "8957453965194963189760/3381",
+          "pass": true
+        },
+        "91": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10791113963010523136/23",
+          "pass": true
+        },
+        "92": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "678496593588313391104/1127",
+          "pass": true
+        },
+        "93": {
+          "absolute_bound": "150394890897850368",
+          "observed": "-287939439362048",
+          "pass": true
+        },
+        "94": {
+          "absolute_bound": "9599673887096832",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "95": {
+          "absolute_bound": "505245994057728",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "96": {
+          "absolute_bound": "21051916419072",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "97": {
+          "absolute_bound": "651090198528",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "98": {
+          "absolute_bound": "13287555072",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "99": {
+          "absolute_bound": "134217728",
+          "observed": "-134217728",
+          "pass": true
+        }
+      },
+      "signed_rows": {
+        "0": {
+          "expected": "-134217728",
+          "normalized_target": "1",
+          "observed": "-134217728",
+          "pass": true
+        },
+        "1": {
+          "expected": "13287555072",
+          "normalized_target": "-99",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "2": {
+          "expected": "-465064427520",
+          "normalized_target": "3465",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "3": {
+          "expected": "7596052316160",
+          "normalized_target": "-56595",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "4": {
+          "expected": "-62132607516672",
+          "normalized_target": "462924",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "5": {
+          "expected": "244437863104512",
+          "normalized_target": "-1821204",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "6": {
+          "expected": "-287939439362048",
+          "normalized_target": "2145316",
+          "observed": "-287939439362048",
+          "pass": true
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "dual_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "image_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 62,
+            "pass": true,
+            "row_count": 33
+          },
+          "image_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 93,
+            "pass": true,
+            "row_count": 33
+          }
+        }
+      },
+      "submitted_n3": "708",
+      "submitted_sign": -1
+    },
+    {
+      "distinguished_pair_tables_pass": true,
+      "dual_nonintegral_count": 52,
+      "expected_n3": "4158",
+      "expected_sign": -1,
+      "failures": [],
+      "forward_rows_checked": 100,
+      "image_nonintegral_count": 31,
+      "inverse_rows_checked": 100,
+      "pass": true,
+      "path": "attempts/wave143-binary-s6-projection/witness-minus-n3-4158.json",
+      "role": "target_endpoint",
+      "sha256": "c34564f04b7d42d08a99be29da652fbbc511e60fe4643bdaaff6babb46d44800",
+      "shadow_row_count": 100,
+      "shadow_rows": {
+        "0": {
+          "absolute_bound": "134217728",
+          "observed": "-134217728",
+          "pass": true
+        },
+        "1": {
+          "absolute_bound": "13287555072",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "10": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-876736892384600653824/161",
+          "pass": true
+        },
+        "11": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13614371176879308668928/1127",
+          "pass": true
+        },
+        "12": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1993037171916363792384/161",
+          "pass": true
+        },
+        "13": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96670665900371252084736/1127",
+          "pass": true
+        },
+        "14": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "41944100769558719102976/1127",
+          "pass": true
+        },
+        "15": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89596580275654018203648/1127",
+          "pass": true
+        },
+        "16": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "258938403554233751175168/1127",
+          "pass": true
+        },
+        "17": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30918051930587428552704/23",
+          "pass": true
+        },
+        "18": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "800648170974335259901952/1127",
+          "pass": true
+        },
+        "19": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58105432426613342994432/23",
+          "pass": true
+        },
+        "2": {
+          "absolute_bound": "651090198528",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "20": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19736896352091181921861632/1127",
+          "pass": true
+        },
+        "21": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53862256474375900650012672/1127",
+          "pass": true
+        },
+        "22": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207875358459331035650850816/1127",
+          "pass": true
+        },
+        "23": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678463228765300684694224896/1127",
+          "pass": true
+        },
+        "24": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297482613307608189401825280/161",
+          "pass": true
+        },
+        "25": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769412631846417838142128128/1127",
+          "pass": true
+        },
+        "26": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759609909075303211171053568/161",
+          "pass": true
+        },
+        "27": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125172031054653905424089088/49",
+          "pass": true
+        },
+        "28": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885080341988159150192852992/1127",
+          "pass": true
+        },
+        "29": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774082231563335702276997120/1127",
+          "pass": true
+        },
+        "3": {
+          "absolute_bound": "21051916419072",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "30": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301918220335321939600998400/1127",
+          "pass": true
+        },
+        "31": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396784564608389769527820288/161",
+          "pass": true
+        },
+        "32": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273481470197606237956210688/1127",
+          "pass": true
+        },
+        "33": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985449635260533358865678336/161",
+          "pass": true
+        },
+        "34": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593263252488624296981168128/1127",
+          "pass": true
+        },
+        "35": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570692912778225818877820928/1127",
+          "pass": true
+        },
+        "36": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845838361249369665052868608/1127",
+          "pass": true
+        },
+        "37": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132773725942322961455477948416/1127",
+          "pass": true
+        },
+        "38": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066754737225803492975706112/161",
+          "pass": true
+        },
+        "39": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098871139317853594964503560192/1127",
+          "pass": true
+        },
+        "4": {
+          "absolute_bound": "505245994057728",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "40": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582065199196863931810316288/161",
+          "pass": true
+        },
+        "41": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408992690586077795882574544896/1127",
+          "pass": true
+        },
+        "42": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569178750822989092637600907264/1127",
+          "pass": true
+        },
+        "43": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059945853282090628149065809920/1127",
+          "pass": true
+        },
+        "44": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685982289545612980262010880/1127",
+          "pass": true
+        },
+        "45": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "179561391337644922579793035132928/161",
+          "pass": true
+        },
+        "46": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523154271510571779210191306752/1127",
+          "pass": true
+        },
+        "47": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362443902066687936481460224/161",
+          "pass": true
+        },
+        "48": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310498336889373537544894939136/1127",
+          "pass": true
+        },
+        "49": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128959961956916175342487470080/1127",
+          "pass": true
+        },
+        "5": {
+          "absolute_bound": "9599673887096832",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "50": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128959961956916175342487470080/1127",
+          "pass": true
+        },
+        "51": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310498336889373537544894939136/1127",
+          "pass": true
+        },
+        "52": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362443902066687936481460224/161",
+          "pass": true
+        },
+        "53": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523154271510571779210191306752/1127",
+          "pass": true
+        },
+        "54": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "179561391337644922579793035132928/161",
+          "pass": true
+        },
+        "55": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685982289545612980262010880/1127",
+          "pass": true
+        },
+        "56": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059945853282090628149065809920/1127",
+          "pass": true
+        },
+        "57": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569178750822989092637600907264/1127",
+          "pass": true
+        },
+        "58": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408992690586077795882574544896/1127",
+          "pass": true
+        },
+        "59": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582065199196863931810316288/161",
+          "pass": true
+        },
+        "6": {
+          "absolute_bound": "150394890897850368",
+          "observed": "-366966837608448",
+          "pass": true
+        },
+        "60": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098871139317853594964503560192/1127",
+          "pass": true
+        },
+        "61": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066754737225803492975706112/161",
+          "pass": true
+        },
+        "62": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132773725942322961455477948416/1127",
+          "pass": true
+        },
+        "63": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845838361249369665052868608/1127",
+          "pass": true
+        },
+        "64": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570692912778225818877820928/1127",
+          "pass": true
+        },
+        "65": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593263252488624296981168128/1127",
+          "pass": true
+        },
+        "66": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985449635260533358865678336/161",
+          "pass": true
+        },
+        "67": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273481470197606237956210688/1127",
+          "pass": true
+        },
+        "68": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396784564608389769527820288/161",
+          "pass": true
+        },
+        "69": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301918220335321939600998400/1127",
+          "pass": true
+        },
+        "7": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "678442904349629743104/1127",
+          "pass": true
+        },
+        "70": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774082231563335702276997120/1127",
+          "pass": true
+        },
+        "71": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885080341988159150192852992/1127",
+          "pass": true
+        },
+        "72": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125172031054653905424089088/49",
+          "pass": true
+        },
+        "73": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759609909075303211171053568/161",
+          "pass": true
+        },
+        "74": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769412631846417838142128128/1127",
+          "pass": true
+        },
+        "75": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297482613307608189401825280/161",
+          "pass": true
+        },
+        "76": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678463228765300684694224896/1127",
+          "pass": true
+        },
+        "77": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207875358459331035650850816/1127",
+          "pass": true
+        },
+        "78": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53862256474375900650012672/1127",
+          "pass": true
+        },
+        "79": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19736896352091181921861632/1127",
+          "pass": true
+        },
+        "8": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10799224149755559936/23",
+          "pass": true
+        },
+        "80": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58105432426613342994432/23",
+          "pass": true
+        },
+        "81": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "800648170974335259901952/1127",
+          "pass": true
+        },
+        "82": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30918051930587428552704/23",
+          "pass": true
+        },
+        "83": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "258938403554233751175168/1127",
+          "pass": true
+        },
+        "84": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89596580275654018203648/1127",
+          "pass": true
+        },
+        "85": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "41944100769558719102976/1127",
+          "pass": true
+        },
+        "86": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96670665900371252084736/1127",
+          "pass": true
+        },
+        "87": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1993037171916363792384/161",
+          "pass": true
+        },
+        "88": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13614371176879308668928/1127",
+          "pass": true
+        },
+        "89": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-876736892384600653824/161",
+          "pass": true
+        },
+        "9": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "2985670536444426321920/1127",
+          "pass": true
+        },
+        "90": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "2985670536444426321920/1127",
+          "pass": true
+        },
+        "91": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10799224149755559936/23",
+          "pass": true
+        },
+        "92": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "678442904349629743104/1127",
+          "pass": true
+        },
+        "93": {
+          "absolute_bound": "150394890897850368",
+          "observed": "-366966837608448",
+          "pass": true
+        },
+        "94": {
+          "absolute_bound": "9599673887096832",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "95": {
+          "absolute_bound": "505245994057728",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "96": {
+          "absolute_bound": "21051916419072",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "97": {
+          "absolute_bound": "651090198528",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "98": {
+          "absolute_bound": "13287555072",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "99": {
+          "absolute_bound": "134217728",
+          "observed": "-134217728",
+          "pass": true
+        }
+      },
+      "signed_rows": {
+        "0": {
+          "expected": "-134217728",
+          "normalized_target": "1",
+          "observed": "-134217728",
+          "pass": true
+        },
+        "1": {
+          "expected": "13287555072",
+          "normalized_target": "-99",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "2": {
+          "expected": "-465064427520",
+          "normalized_target": "3465",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "3": {
+          "expected": "7596052316160",
+          "normalized_target": "-56595",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "4": {
+          "expected": "-62132607516672",
+          "normalized_target": "462924",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "5": {
+          "expected": "244437863104512",
+          "normalized_target": "-1821204",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "6": {
+          "expected": "-366966837608448",
+          "normalized_target": "2734116",
+          "observed": "-366966837608448",
+          "pass": true
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "dual_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "image_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 62,
+            "pass": true,
+            "row_count": 33
+          },
+          "image_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 93,
+            "pass": true,
+            "row_count": 33
+          }
+        }
+      },
+      "submitted_n3": "4158",
+      "submitted_sign": -1
+    },
+    {
+      "distinguished_pair_tables_pass": true,
+      "dual_nonintegral_count": 52,
+      "expected_n3": "0",
+      "expected_sign": 1,
+      "failures": [],
+      "forward_rows_checked": 100,
+      "image_nonintegral_count": 31,
+      "inverse_rows_checked": 100,
+      "pass": true,
+      "path": "attempts/wave143-binary-s6-projection/projection-optimum-plus-min.json",
+      "role": "weak_minimum",
+      "sha256": "180c78a37534a4af2d1c95eeff77b12bed170694bb5d0d9fca54dea92d70e473",
+      "shadow_row_count": 100,
+      "shadow_rows": {
+        "0": {
+          "absolute_bound": "134217728",
+          "observed": "134217728",
+          "pass": true
+        },
+        "1": {
+          "absolute_bound": "13287555072",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "10": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-914002201594249428860928/166313",
+          "pass": true
+        },
+        "11": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-295507229255370383818752/23759",
+          "pass": true
+        },
+        "12": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-2114021871897273968885760/166313",
+          "pass": true
+        },
+        "13": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-14409790999144545298415616/166313",
+          "pass": true
+        },
+        "14": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "6261544424151469598441472/166313",
+          "pass": true
+        },
+        "15": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "10797058223683682697216000/166313",
+          "pass": true
+        },
+        "16": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "42216021109421892679237632/166313",
+          "pass": true
+        },
+        "17": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "220725148181793612559810560/166313",
+          "pass": true
+        },
+        "18": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "18669881297590168175247360/23759",
+          "pass": true
+        },
+        "19": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-408225023093918236749594624/166313",
+          "pass": true
+        },
+        "2": {
+          "absolute_bound": "651090198528",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "20": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-2895293273453920131496280064/166313",
+          "pass": true
+        },
+        "21": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "341776644443403352641896448/7231",
+          "pass": true
+        },
+        "22": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "30691921875550929834819452928/166313",
+          "pass": true
+        },
+        "23": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-100266788154778298991935225856/166313",
+          "pass": true
+        },
+        "24": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-307630556463450354395664875520/166313",
+          "pass": true
+        },
+        "25": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "142888681063786783468695846912/23759",
+          "pass": true
+        },
+        "26": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2849446442403096584973151371264/166313",
+          "pass": true
+        },
+        "27": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-7211208786334965165768222703616/166313",
+          "pass": true
+        },
+        "28": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-18576007695516555353529306316800/166313",
+          "pass": true
+        },
+        "29": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "48363260167011932327043869442048/166313",
+          "pass": true
+        },
+        "3": {
+          "absolute_bound": "21051916419072",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "30": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "112797934860439347566553077907456/166313",
+          "pass": true
+        },
+        "31": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-235946461800220698640033070972928/166313",
+          "pass": true
+        },
+        "32": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-71619803203139925396852018511872/23759",
+          "pass": true
+        },
+        "33": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1083622713776671670776171648253952/166313",
+          "pass": true
+        },
+        "34": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "2103685586200347233051244257869824/166313",
+          "pass": true
+        },
+        "35": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-3669842212160303399817166102462464/166313",
+          "pass": true
+        },
+        "36": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-6524133187915960210911033519243264/166313",
+          "pass": true
+        },
+        "37": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "11825270340529227630450555041611776/166313",
+          "pass": true
+        },
+        "38": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "838847236002907203440065671856128/7231",
+          "pass": true
+        },
+        "39": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-4049775342909628884182194477596672/23759",
+          "pass": true
+        },
+        "4": {
+          "absolute_bound": "505245994057728",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "40": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-42522930528614378708481716244185088/166313",
+          "pass": true
+        },
+        "41": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "65139390704494232087586375865466880/166313",
+          "pass": true
+        },
+        "42": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "3911081505721827613388732910010368/7231",
+          "pass": true
+        },
+        "43": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-112015342088672352038013348574396416/166313",
+          "pass": true
+        },
+        "44": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-142564314659874977818399555838803968/166313",
+          "pass": true
+        },
+        "45": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "185486924931817925165409133620363264/166313",
+          "pass": true
+        },
+        "46": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "31106454973468657536020209150722048/23759",
+          "pass": true
+        },
+        "47": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-230661292066449374195647379750780928/166313",
+          "pass": true
+        },
+        "48": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-249883984721793511228747871649005568/166313",
+          "pass": true
+        },
+        "49": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "276862953978898397307576059412086784/166313",
+          "pass": true
+        },
+        "5": {
+          "absolute_bound": "9599673887096832",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "50": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "276862953978898397307576059412086784/166313",
+          "pass": true
+        },
+        "51": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-249883984721793511228747871649005568/166313",
+          "pass": true
+        },
+        "52": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-230661292066449374195647379750780928/166313",
+          "pass": true
+        },
+        "53": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "31106454973468657536020209150722048/23759",
+          "pass": true
+        },
+        "54": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "185486924931817925165409133620363264/166313",
+          "pass": true
+        },
+        "55": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-142564314659874977818399555838803968/166313",
+          "pass": true
+        },
+        "56": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-112015342088672352038013348574396416/166313",
+          "pass": true
+        },
+        "57": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "3911081505721827613388732910010368/7231",
+          "pass": true
+        },
+        "58": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "65139390704494232087586375865466880/166313",
+          "pass": true
+        },
+        "59": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-42522930528614378708481716244185088/166313",
+          "pass": true
+        },
+        "6": {
+          "absolute_bound": "150394890897850368",
+          "observed": "271721642852352",
+          "pass": true
+        },
+        "60": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-4049775342909628884182194477596672/23759",
+          "pass": true
+        },
+        "61": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "838847236002907203440065671856128/7231",
+          "pass": true
+        },
+        "62": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "11825270340529227630450555041611776/166313",
+          "pass": true
+        },
+        "63": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-6524133187915960210911033519243264/166313",
+          "pass": true
+        },
+        "64": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-3669842212160303399817166102462464/166313",
+          "pass": true
+        },
+        "65": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "2103685586200347233051244257869824/166313",
+          "pass": true
+        },
+        "66": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1083622713776671670776171648253952/166313",
+          "pass": true
+        },
+        "67": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-71619803203139925396852018511872/23759",
+          "pass": true
+        },
+        "68": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-235946461800220698640033070972928/166313",
+          "pass": true
+        },
+        "69": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "112797934860439347566553077907456/166313",
+          "pass": true
+        },
+        "7": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "102969103119629986824192/166313",
+          "pass": true
+        },
+        "70": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "48363260167011932327043869442048/166313",
+          "pass": true
+        },
+        "71": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-18576007695516555353529306316800/166313",
+          "pass": true
+        },
+        "72": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-7211208786334965165768222703616/166313",
+          "pass": true
+        },
+        "73": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2849446442403096584973151371264/166313",
+          "pass": true
+        },
+        "74": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "142888681063786783468695846912/23759",
+          "pass": true
+        },
+        "75": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-307630556463450354395664875520/166313",
+          "pass": true
+        },
+        "76": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-100266788154778298991935225856/166313",
+          "pass": true
+        },
+        "77": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "30691921875550929834819452928/166313",
+          "pass": true
+        },
+        "78": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "341776644443403352641896448/7231",
+          "pass": true
+        },
+        "79": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-2895293273453920131496280064/166313",
+          "pass": true
+        },
+        "8": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-78635015072933084135424/166313",
+          "pass": true
+        },
+        "80": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-408225023093918236749594624/166313",
+          "pass": true
+        },
+        "81": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "18669881297590168175247360/23759",
+          "pass": true
+        },
+        "82": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "220725148181793612559810560/166313",
+          "pass": true
+        },
+        "83": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "42216021109421892679237632/166313",
+          "pass": true
+        },
+        "84": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "10797058223683682697216000/166313",
+          "pass": true
+        },
+        "85": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "6261544424151469598441472/166313",
+          "pass": true
+        },
+        "86": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-14409790999144545298415616/166313",
+          "pass": true
+        },
+        "87": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-2114021871897273968885760/166313",
+          "pass": true
+        },
+        "88": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-295507229255370383818752/23759",
+          "pass": true
+        },
+        "89": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-914002201594249428860928/166313",
+          "pass": true
+        },
+        "9": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "459378992530690123235328/166313",
+          "pass": true
+        },
+        "90": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "459378992530690123235328/166313",
+          "pass": true
+        },
+        "91": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-78635015072933084135424/166313",
+          "pass": true
+        },
+        "92": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "102969103119629986824192/166313",
+          "pass": true
+        },
+        "93": {
+          "absolute_bound": "150394890897850368",
+          "observed": "271721642852352",
+          "pass": true
+        },
+        "94": {
+          "absolute_bound": "9599673887096832",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "95": {
+          "absolute_bound": "505245994057728",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "96": {
+          "absolute_bound": "21051916419072",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "97": {
+          "absolute_bound": "651090198528",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "98": {
+          "absolute_bound": "13287555072",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "99": {
+          "absolute_bound": "134217728",
+          "observed": "134217728",
+          "pass": true
+        }
+      },
+      "signed_rows": {
+        "0": {
+          "expected": "134217728",
+          "normalized_target": "1",
+          "observed": "134217728",
+          "pass": true
+        },
+        "1": {
+          "expected": "-13287555072",
+          "normalized_target": "-99",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "2": {
+          "expected": "465064427520",
+          "normalized_target": "3465",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "3": {
+          "expected": "-7596052316160",
+          "normalized_target": "-56595",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "4": {
+          "expected": "62132607516672",
+          "normalized_target": "462924",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "5": {
+          "expected": "-244437863104512",
+          "normalized_target": "-1821204",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "6": {
+          "expected": "271721642852352",
+          "normalized_target": "2024484",
+          "observed": "271721642852352",
+          "pass": true
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 104,
+            "pass": true,
+            "row_count": 58
+          },
+          "dual_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 104,
+            "pass": true,
+            "row_count": 58
+          },
+          "image_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 62,
+            "pass": true,
+            "row_count": 33
+          },
+          "image_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 93,
+            "pass": true,
+            "row_count": 33
+          }
+        }
+      },
+      "submitted_n3": "0",
+      "submitted_sign": 1
+    },
+    {
+      "distinguished_pair_tables_pass": true,
+      "dual_nonintegral_count": 48,
+      "expected_n3": "838878579/128",
+      "expected_sign": 1,
+      "failures": [],
+      "forward_rows_checked": 100,
+      "image_nonintegral_count": 33,
+      "inverse_rows_checked": 100,
+      "pass": true,
+      "path": "attempts/wave143-binary-s6-projection/projection-optimum-plus-max.json",
+      "role": "weak_maximum",
+      "sha256": "eab86b9bcbfca10f92eb1fe26045bcb2224dd59d95dfda982ea1894613127669",
+      "shadow_row_count": 100,
+      "shadow_rows": {
+        "0": {
+          "absolute_bound": "134217728",
+          "observed": "134217728",
+          "pass": true
+        },
+        "1": {
+          "absolute_bound": "13287555072",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "10": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-43321438796862509509049843712/7262067727",
+          "pass": true
+        },
+        "11": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-77069043049471841701296340992/7262067727",
+          "pass": true
+        },
+        "12": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-254127829279606096683086118912/7262067727",
+          "pass": true
+        },
+        "13": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-392449064133299343087561080832/7262067727",
+          "pass": true
+        },
+        "14": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "-62632414705510548452080091136/7262067727",
+          "pass": true
+        },
+        "15": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "913600406811385094451530563584/7262067727",
+          "pass": true
+        },
+        "16": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "3010290574411089887366762987520/7262067727",
+          "pass": true
+        },
+        "17": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "7357201834341968006886224560128/7262067727",
+          "pass": true
+        },
+        "18": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "11358424909383180799341458620416/7262067727",
+          "pass": true
+        },
+        "19": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-27305868554286047081947365113856/7262067727",
+          "pass": true
+        },
+        "2": {
+          "absolute_bound": "651090198528",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "20": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-125174646881947361414393251233792/7262067727",
+          "pass": true
+        },
+        "21": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "347491520228266764069923866017792/7262067727",
+          "pass": true
+        },
+        "22": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "1313105631803128807355371254448128/7262067727",
+          "pass": true
+        },
+        "23": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-4333051942119905690872917711126528/7262067727",
+          "pass": true
+        },
+        "24": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-13418003314314395787303214091599872/7262067727",
+          "pass": true
+        },
+        "25": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "43570080496347175636313492391198720/7262067727",
+          "pass": true
+        },
+        "26": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "124763081801019581007489342967382016/7262067727",
+          "pass": true
+        },
+        "27": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-315515559562107056883109159053033472/7262067727",
+          "pass": true
+        },
+        "28": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-810388341153778700131382701546536960/7262067727",
+          "pass": true
+        },
+        "29": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "11052561118845532311028886925213696/38021297",
+          "pass": true
+        },
+        "3": {
+          "absolute_bound": "21051916419072",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "30": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "4925533527885071299572257613334708224/7262067727",
+          "pass": true
+        },
+        "31": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-10301874053231052536142427928949424128/7262067727",
+          "pass": true
+        },
+        "32": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-21892628368758438520906051567837249536/7262067727",
+          "pass": true
+        },
+        "33": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "47319431432985649876842399625975431168/7262067727",
+          "pass": true
+        },
+        "34": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "91853830772699574691321162503618035712/7262067727",
+          "pass": true
+        },
+        "35": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-160239743399605781751554476187603435520/7262067727",
+          "pass": true
+        },
+        "36": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-284881139965072404863079065235052560384/7262067727",
+          "pass": true
+        },
+        "37": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "516353947610985993907515920966108577792/7262067727",
+          "pass": true
+        },
+        "38": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "842451591686481808163575492139758387200/7262067727",
+          "pass": true
+        },
+        "39": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-1237841890188739890730357169575119814656/7262067727",
+          "pass": true
+        },
+        "4": {
+          "absolute_bound": "505245994057728",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "40": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-1856752254344220530081936216491321982976/7262067727",
+          "pass": true
+        },
+        "41": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "2844295066572247676170846929735766769664/7262067727",
+          "pass": true
+        },
+        "42": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "3927908331144900359948921420679651262464/7262067727",
+          "pass": true
+        },
+        "43": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-4891173546987409930406090186096224763904/7262067727",
+          "pass": true
+        },
+        "44": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-6225079698123896629585730099345400791040/7262067727",
+          "pass": true
+        },
+        "45": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "8099318882491155637777057775612476784640/7262067727",
+          "pass": true
+        },
+        "46": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "9507817727249652604619702633941256110080/7262067727",
+          "pass": true
+        },
+        "47": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-10071793258198805518109390247135761399808/7262067727",
+          "pass": true
+        },
+        "48": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-10911237650523347965171425761658201440256/7262067727",
+          "pass": true
+        },
+        "49": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "12089253222597382561934875334592247627776/7262067727",
+          "pass": true
+        },
+        "5": {
+          "absolute_bound": "9599673887096832",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "50": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "12089253222597382561934875334592247627776/7262067727",
+          "pass": true
+        },
+        "51": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-10911237650523347965171425761658201440256/7262067727",
+          "pass": true
+        },
+        "52": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-10071793258198805518109390247135761399808/7262067727",
+          "pass": true
+        },
+        "53": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "9507817727249652604619702633941256110080/7262067727",
+          "pass": true
+        },
+        "54": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "8099318882491155637777057775612476784640/7262067727",
+          "pass": true
+        },
+        "55": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-6225079698123896629585730099345400791040/7262067727",
+          "pass": true
+        },
+        "56": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-4891173546987409930406090186096224763904/7262067727",
+          "pass": true
+        },
+        "57": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "3927908331144900359948921420679651262464/7262067727",
+          "pass": true
+        },
+        "58": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "2844295066572247676170846929735766769664/7262067727",
+          "pass": true
+        },
+        "59": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-1856752254344220530081936216491321982976/7262067727",
+          "pass": true
+        },
+        "6": {
+          "absolute_bound": "150394890897850368",
+          "observed": "150394890897850368",
+          "pass": true
+        },
+        "60": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-1237841890188739890730357169575119814656/7262067727",
+          "pass": true
+        },
+        "61": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "842451591686481808163575492139758387200/7262067727",
+          "pass": true
+        },
+        "62": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "516353947610985993907515920966108577792/7262067727",
+          "pass": true
+        },
+        "63": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-284881139965072404863079065235052560384/7262067727",
+          "pass": true
+        },
+        "64": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-160239743399605781751554476187603435520/7262067727",
+          "pass": true
+        },
+        "65": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "91853830772699574691321162503618035712/7262067727",
+          "pass": true
+        },
+        "66": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "47319431432985649876842399625975431168/7262067727",
+          "pass": true
+        },
+        "67": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-21892628368758438520906051567837249536/7262067727",
+          "pass": true
+        },
+        "68": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-10301874053231052536142427928949424128/7262067727",
+          "pass": true
+        },
+        "69": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "4925533527885071299572257613334708224/7262067727",
+          "pass": true
+        },
+        "7": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "2884149444504838950736625664/7262067727",
+          "pass": true
+        },
+        "70": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "11052561118845532311028886925213696/38021297",
+          "pass": true
+        },
+        "71": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-810388341153778700131382701546536960/7262067727",
+          "pass": true
+        },
+        "72": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-315515559562107056883109159053033472/7262067727",
+          "pass": true
+        },
+        "73": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "124763081801019581007489342967382016/7262067727",
+          "pass": true
+        },
+        "74": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "43570080496347175636313492391198720/7262067727",
+          "pass": true
+        },
+        "75": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-13418003314314395787303214091599872/7262067727",
+          "pass": true
+        },
+        "76": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-4333051942119905690872917711126528/7262067727",
+          "pass": true
+        },
+        "77": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "1313105631803128807355371254448128/7262067727",
+          "pass": true
+        },
+        "78": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "347491520228266764069923866017792/7262067727",
+          "pass": true
+        },
+        "79": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-125174646881947361414393251233792/7262067727",
+          "pass": true
+        },
+        "8": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "4283406184760173495037460480/7262067727",
+          "pass": true
+        },
+        "80": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-27305868554286047081947365113856/7262067727",
+          "pass": true
+        },
+        "81": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "11358424909383180799341458620416/7262067727",
+          "pass": true
+        },
+        "82": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "7357201834341968006886224560128/7262067727",
+          "pass": true
+        },
+        "83": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "3010290574411089887366762987520/7262067727",
+          "pass": true
+        },
+        "84": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "913600406811385094451530563584/7262067727",
+          "pass": true
+        },
+        "85": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "-62632414705510548452080091136/7262067727",
+          "pass": true
+        },
+        "86": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-392449064133299343087561080832/7262067727",
+          "pass": true
+        },
+        "87": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-254127829279606096683086118912/7262067727",
+          "pass": true
+        },
+        "88": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-77069043049471841701296340992/7262067727",
+          "pass": true
+        },
+        "89": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-43321438796862509509049843712/7262067727",
+          "pass": true
+        },
+        "9": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "9274664873810328793821216768/7262067727",
+          "pass": true
+        },
+        "90": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "9274664873810328793821216768/7262067727",
+          "pass": true
+        },
+        "91": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "4283406184760173495037460480/7262067727",
+          "pass": true
+        },
+        "92": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "2884149444504838950736625664/7262067727",
+          "pass": true
+        },
+        "93": {
+          "absolute_bound": "150394890897850368",
+          "observed": "150394890897850368",
+          "pass": true
+        },
+        "94": {
+          "absolute_bound": "9599673887096832",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "95": {
+          "absolute_bound": "505245994057728",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "96": {
+          "absolute_bound": "21051916419072",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "97": {
+          "absolute_bound": "651090198528",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "98": {
+          "absolute_bound": "13287555072",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "99": {
+          "absolute_bound": "134217728",
+          "observed": "134217728",
+          "pass": true
+        }
+      },
+      "signed_rows": {
+        "0": {
+          "expected": "134217728",
+          "normalized_target": "1",
+          "observed": "134217728",
+          "pass": true
+        },
+        "1": {
+          "expected": "-13287555072",
+          "normalized_target": "-99",
+          "observed": "-13287555072",
+          "pass": true
+        },
+        "2": {
+          "expected": "465064427520",
+          "normalized_target": "3465",
+          "observed": "465064427520",
+          "pass": true
+        },
+        "3": {
+          "expected": "-7596052316160",
+          "normalized_target": "-56595",
+          "observed": "-7596052316160",
+          "pass": true
+        },
+        "4": {
+          "expected": "62132607516672",
+          "normalized_target": "462924",
+          "observed": "62132607516672",
+          "pass": true
+        },
+        "5": {
+          "expected": "-244437863104512",
+          "normalized_target": "-1821204",
+          "observed": "-244437863104512",
+          "pass": true
+        },
+        "6": {
+          "expected": "150394890897850368",
+          "normalized_target": "1120529256",
+          "observed": "150394890897850368",
+          "pass": true
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 96,
+            "pass": true,
+            "row_count": 54
+          },
+          "dual_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 96,
+            "pass": true,
+            "row_count": 54
+          },
+          "image_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 66,
+            "pass": true,
+            "row_count": 35
+          },
+          "image_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 99,
+            "pass": true,
+            "row_count": 35
+          }
+        }
+      },
+      "submitted_n3": "838878579/128",
+      "submitted_sign": 1
+    },
+    {
+      "distinguished_pair_tables_pass": true,
+      "dual_nonintegral_count": 52,
+      "expected_n3": "0",
+      "expected_sign": -1,
+      "failures": [],
+      "forward_rows_checked": 100,
+      "image_nonintegral_count": 31,
+      "inverse_rows_checked": 100,
+      "pass": true,
+      "path": "attempts/wave143-binary-s6-projection/projection-optimum-minus-min.json",
+      "role": "weak_minimum",
+      "sha256": "6eeed0636ae7fbb99712cefe0f573722f09abe5c2f933ab9f2279d6c40cae0fa",
+      "shadow_row_count": 100,
+      "shadow_rows": {
+        "0": {
+          "absolute_bound": "134217728",
+          "observed": "-134217728",
+          "pass": true
+        },
+        "1": {
+          "absolute_bound": "13287555072",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "10": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-876993435316676198400/161",
+          "pass": true
+        },
+        "11": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13616105008498999296000/1127",
+          "pass": true
+        },
+        "12": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1994656995037931372544/161",
+          "pass": true
+        },
+        "13": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96678238655315919765504/1127",
+          "pass": true
+        },
+        "14": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "41948767498366183538688/1127",
+          "pass": true
+        },
+        "15": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89617057587734501130240/1127",
+          "pass": true
+        },
+        "16": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "259056980416689378164736/1127",
+          "pass": true
+        },
+        "17": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30920470206082285830144/23",
+          "pass": true
+        },
+        "18": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "800706582502897702928384/1127",
+          "pass": true
+        },
+        "19": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58106191697494639902720/23",
+          "pass": true
+        },
+        "2": {
+          "absolute_bound": "651090198528",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "20": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19737866096018152539291648/1127",
+          "pass": true
+        },
+        "21": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53861641494916663905091584/1127",
+          "pass": true
+        },
+        "22": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207874187937795368923693056/1127",
+          "pass": true
+        },
+        "23": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678463311838885795571171328/1127",
+          "pass": true
+        },
+        "24": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297481830730477754313080832/161",
+          "pass": true
+        },
+        "25": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769413573884589162652237824/1127",
+          "pass": true
+        },
+        "26": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759611346917860059834744832/161",
+          "pass": true
+        },
+        "27": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125172111677151551850283008/49",
+          "pass": true
+        },
+        "28": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885099690156657301100953600/1127",
+          "pass": true
+        },
+        "29": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774084710978530732192825344/1127",
+          "pass": true
+        },
+        "3": {
+          "absolute_bound": "21051916419072",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "30": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301867906938135240264122368/1127",
+          "pass": true
+        },
+        "31": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396781587747353529031852032/161",
+          "pass": true
+        },
+        "32": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273441752881387727778480128/1127",
+          "pass": true
+        },
+        "33": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985448173268128776417443840/161",
+          "pass": true
+        },
+        "34": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593426755330501353762979840/1127",
+          "pass": true
+        },
+        "35": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570787336097719840371900416/1127",
+          "pass": true
+        },
+        "36": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845868970649356390352551936/1127",
+          "pass": true
+        },
+        "37": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132773722368435613718592618496/1127",
+          "pass": true
+        },
+        "38": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066702263510064173254967296/161",
+          "pass": true
+        },
+        "39": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098870883874934299407547367424/1127",
+          "pass": true
+        },
+        "4": {
+          "absolute_bound": "505245994057728",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "40": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582075549363716120335351808/161",
+          "pass": true
+        },
+        "41": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408992790624366302417349771264/1127",
+          "pass": true
+        },
+        "42": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569179340008725204998641680384/1127",
+          "pass": true
+        },
+        "43": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059946315662564921266277449728/1127",
+          "pass": true
+        },
+        "44": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685695751482123624770437120/1127",
+          "pass": true
+        },
+        "45": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "179561391292893003307302432800768/161",
+          "pass": true
+        },
+        "46": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523153589736224168923944189952/1127",
+          "pass": true
+        },
+        "47": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362360667773169382639796224/161",
+          "pass": true
+        },
+        "48": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310498845513450109743185002496/1127",
+          "pass": true
+        },
+        "49": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128960523831733215327734988800/1127",
+          "pass": true
+        },
+        "5": {
+          "absolute_bound": "9599673887096832",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "50": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "1876128960523831733215327734988800/1127",
+          "pass": true
+        },
+        "51": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-1693310498845513450109743185002496/1127",
+          "pass": true
+        },
+        "52": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-223292362360667773169382639796224/161",
+          "pass": true
+        },
+        "53": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1475523153589736224168923944189952/1127",
+          "pass": true
+        },
+        "54": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "179561391292893003307302432800768/161",
+          "pass": true
+        },
+        "55": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-966068685695751482123624770437120/1127",
+          "pass": true
+        },
+        "56": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-759059946315662564921266277449728/1127",
+          "pass": true
+        },
+        "57": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "609569179340008725204998641680384/1127",
+          "pass": true
+        },
+        "58": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "441408992790624366302417349771264/1127",
+          "pass": true
+        },
+        "59": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-41164582075549363716120335351808/161",
+          "pass": true
+        },
+        "6": {
+          "absolute_bound": "150394890897850368",
+          "observed": "-271721642852352",
+          "pass": true
+        },
+        "60": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-192098870883874934299407547367424/1127",
+          "pass": true
+        },
+        "61": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "18677066702263510064173254967296/161",
+          "pass": true
+        },
+        "62": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "80132773722368435613718592618496/1127",
+          "pass": true
+        },
+        "63": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-44209845868970649356390352551936/1127",
+          "pass": true
+        },
+        "64": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-24868570787336097719840371900416/1127",
+          "pass": true
+        },
+        "65": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "14255593426755330501353762979840/1127",
+          "pass": true
+        },
+        "66": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1048985448173268128776417443840/161",
+          "pass": true
+        },
+        "67": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-3397273441752881387727778480128/1127",
+          "pass": true
+        },
+        "68": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-228396781587747353529031852032/161",
+          "pass": true
+        },
+        "69": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "764301867906938135240264122368/1127",
+          "pass": true
+        },
+        "7": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "678507611553817165824/1127",
+          "pass": true
+        },
+        "70": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "327774084710978530732192825344/1127",
+          "pass": true
+        },
+        "71": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-125885099690156657301100953600/1127",
+          "pass": true
+        },
+        "72": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-2125172111677151551850283008/49",
+          "pass": true
+        },
+        "73": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "2759611346917860059834744832/161",
+          "pass": true
+        },
+        "74": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "6769413573884589162652237824/1127",
+          "pass": true
+        },
+        "75": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-297481830730477754313080832/161",
+          "pass": true
+        },
+        "76": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-678463311838885795571171328/1127",
+          "pass": true
+        },
+        "77": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "207874187937795368923693056/1127",
+          "pass": true
+        },
+        "78": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "53861641494916663905091584/1127",
+          "pass": true
+        },
+        "79": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-19737866096018152539291648/1127",
+          "pass": true
+        },
+        "8": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10789449611643715584/23",
+          "pass": true
+        },
+        "80": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-58106191697494639902720/23",
+          "pass": true
+        },
+        "81": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "800706582502897702928384/1127",
+          "pass": true
+        },
+        "82": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "30920470206082285830144/23",
+          "pass": true
+        },
+        "83": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "259056980416689378164736/1127",
+          "pass": true
+        },
+        "84": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "89617057587734501130240/1127",
+          "pass": true
+        },
+        "85": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "41948767498366183538688/1127",
+          "pass": true
+        },
+        "86": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-96678238655315919765504/1127",
+          "pass": true
+        },
+        "87": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "-1994656995037931372544/161",
+          "pass": true
+        },
+        "88": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-13616105008498999296000/1127",
+          "pass": true
+        },
+        "89": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-876993435316676198400/161",
+          "pass": true
+        },
+        "9": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "2985848248103642071040/1127",
+          "pass": true
+        },
+        "90": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "2985848248103642071040/1127",
+          "pass": true
+        },
+        "91": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-10789449611643715584/23",
+          "pass": true
+        },
+        "92": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "678507611553817165824/1127",
+          "pass": true
+        },
+        "93": {
+          "absolute_bound": "150394890897850368",
+          "observed": "-271721642852352",
+          "pass": true
+        },
+        "94": {
+          "absolute_bound": "9599673887096832",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "95": {
+          "absolute_bound": "505245994057728",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "96": {
+          "absolute_bound": "21051916419072",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "97": {
+          "absolute_bound": "651090198528",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "98": {
+          "absolute_bound": "13287555072",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "99": {
+          "absolute_bound": "134217728",
+          "observed": "-134217728",
+          "pass": true
+        }
+      },
+      "signed_rows": {
+        "0": {
+          "expected": "-134217728",
+          "normalized_target": "1",
+          "observed": "-134217728",
+          "pass": true
+        },
+        "1": {
+          "expected": "13287555072",
+          "normalized_target": "-99",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "2": {
+          "expected": "-465064427520",
+          "normalized_target": "3465",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "3": {
+          "expected": "7596052316160",
+          "normalized_target": "-56595",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "4": {
+          "expected": "-62132607516672",
+          "normalized_target": "462924",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "5": {
+          "expected": "244437863104512",
+          "normalized_target": "-1821204",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "6": {
+          "expected": "-271721642852352",
+          "normalized_target": "2024484",
+          "observed": "-271721642852352",
+          "pass": true
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "dual_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 102,
+            "pass": true,
+            "row_count": 58
+          },
+          "image_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 62,
+            "pass": true,
+            "row_count": 33
+          },
+          "image_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 93,
+            "pass": true,
+            "row_count": 33
+          }
+        }
+      },
+      "submitted_n3": "0",
+      "submitted_sign": -1
+    },
+    {
+      "distinguished_pair_tables_pass": true,
+      "dual_nonintegral_count": 50,
+      "expected_n3": "838878579/128",
+      "expected_sign": -1,
+      "failures": [],
+      "forward_rows_checked": 100,
+      "image_nonintegral_count": 32,
+      "inverse_rows_checked": 100,
+      "pass": true,
+      "path": "attempts/wave143-binary-s6-projection/projection-optimum-minus-max.json",
+      "role": "weak_maximum",
+      "sha256": "fc53664b8e4900b4442ad4c554f624cf74b35756fd0e488fe23f73ce191ae407",
+      "shadow_row_count": 100,
+      "shadow_rows": {
+        "0": {
+          "absolute_bound": "134217728",
+          "observed": "-134217728",
+          "pass": true
+        },
+        "1": {
+          "absolute_bound": "13287555072",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "10": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-640734862233210464501760/202181",
+          "pass": true
+        },
+        "11": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-10809546350675214018281472/1415267",
+          "pass": true
+        },
+        "12": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "1816122315023472987734016/202181",
+          "pass": true
+        },
+        "13": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-79581241666219746873311232/1415267",
+          "pass": true
+        },
+        "14": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "76651812323304423448117248/1415267",
+          "pass": true
+        },
+        "15": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "7797012450118441830973440/83251",
+          "pass": true
+        },
+        "16": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "93848378807664438581133312/1415267",
+          "pass": true
+        },
+        "17": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "217198522137386862319239168/202181",
+          "pass": true
+        },
+        "18": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "474932276948634397550051328/1415267",
+          "pass": true
+        },
+        "19": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-626566327892073402398146560/202181",
+          "pass": true
+        },
+        "2": {
+          "absolute_bound": "651090198528",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "20": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-24338940895895145606134366208/1415267",
+          "pass": true
+        },
+        "21": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "69190492692005153028817551360/1415267",
+          "pass": true
+        },
+        "22": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "264183286609031769210545504256/1415267",
+          "pass": true
+        },
+        "23": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-845431635083111301576407384064/1415267",
+          "pass": true
+        },
+        "24": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-53302327606389403444184088576/28883",
+          "pass": true
+        },
+        "25": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "8498960121643758450644116045824/1415267",
+          "pass": true
+        },
+        "26": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "494906722646680035464369405952/28883",
+          "pass": true
+        },
+        "27": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-61411678332458361137719026909184/1415267",
+          "pass": true
+        },
+        "28": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-158109528873834738323711154192384/1415267",
+          "pass": true
+        },
+        "29": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "411601667849966917222999768694784/1415267",
+          "pass": true
+        },
+        "3": {
+          "absolute_bound": "21051916419072",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "30": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "959795468164755232672030138564608/1415267",
+          "pass": true
+        },
+        "31": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-286803205239463131969633229209600/202181",
+          "pass": true
+        },
+        "32": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-4266149380650305931280021494693888/1415267",
+          "pass": true
+        },
+        "33": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1317308491684126571828665613549568/202181",
+          "pass": true
+        },
+        "34": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "17902002800284333837876259570319360/1415267",
+          "pass": true
+        },
+        "35": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-31229729348160054496056707263758336/1415267",
+          "pass": true
+        },
+        "36": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-55518141716149873614155697140793344/1415267",
+          "pass": true
+        },
+        "37": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "100629097740644859456511294304157696/1415267",
+          "pass": true
+        },
+        "38": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "23454295190125210304445136754442240/202181",
+          "pass": true
+        },
+        "39": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-241234081299589039836969519047245824/1415267",
+          "pass": true
+        },
+        "4": {
+          "absolute_bound": "505245994057728",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "40": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-7384818592896232604862551722819584/28883",
+          "pass": true
+        },
+        "41": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "554314275119996971855954501976457216/1415267",
+          "pass": true
+        },
+        "42": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "765486987278665214188731397312610304/1415267",
+          "pass": true
+        },
+        "43": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-56071450841723212199160573056778240/83251",
+          "pass": true
+        },
+        "44": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-1213172442933657207510069117651517440/1415267",
+          "pass": true
+        },
+        "45": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "225489949356366057501910918766788608/202181",
+          "pass": true
+        },
+        "46": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1852935388222976385174677072665116672/1415267",
+          "pass": true
+        },
+        "47": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-280406627388984764174746459941371904/202181",
+          "pass": true
+        },
+        "48": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-2126429899229041722895247055400206336/1415267",
+          "pass": true
+        },
+        "49": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "2356011151567491421496602540627722240/1415267",
+          "pass": true
+        },
+        "5": {
+          "absolute_bound": "9599673887096832",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "50": {
+          "absolute_bound": "6770703519885409253775638343853277184",
+          "observed": "2356011151567491421496602540627722240/1415267",
+          "pass": true
+        },
+        "51": {
+          "absolute_bound": "6505185734791863792843260369584521216",
+          "observed": "-2126429899229041722895247055400206336/1415267",
+          "pass": true
+        },
+        "52": {
+          "absolute_bound": "6004786832115566578009163418078019584",
+          "observed": "-280406627388984764174746459941371904/202181",
+          "pass": true
+        },
+        "53": {
+          "absolute_bound": "5324999643574181682385484540559753216",
+          "observed": "1852935388222976385174677072665116672/1415267",
+          "pass": true
+        },
+        "54": {
+          "absolute_bound": "4536110807489117729439486830847197184",
+          "observed": "225489949356366057501910918766788608/202181",
+          "pass": true
+        },
+        "55": {
+          "absolute_bound": "3711363387945641778632307407056797696",
+          "observed": "-1213172442933657207510069117651517440/1415267",
+          "pass": true
+        },
+        "56": {
+          "absolute_bound": "2916071233385861397496812962687483904",
+          "observed": "-56071450841723212199160573056778240/83251",
+          "pass": true
+        },
+        "57": {
+          "absolute_bound": "2199843211150737545480051884132663296",
+          "observed": "765486987278665214188731397312610304/1415267",
+          "pass": true
+        },
+        "58": {
+          "absolute_bound": "1592989911522947877761416881613307904",
+          "observed": "554314275119996971855954501976457216/1415267",
+          "pass": true
+        },
+        "59": {
+          "absolute_bound": "1106992989363404457427425290612637696",
+          "observed": "-7384818592896232604862551722819584/28883",
+          "pass": true
+        },
+        "6": {
+          "absolute_bound": "150394890897850368",
+          "observed": "-150394890897850368",
+          "pass": true
+        },
+        "60": {
+          "absolute_bound": "737995326242269638284950193741758464",
+          "observed": "-241234081299589039836969519047245824/1415267",
+          "pass": true
+        },
+        "61": {
+          "absolute_bound": "471833077433582227755951763211943936",
+          "observed": "23454295190125210304445136754442240/202181",
+          "pass": true
+        },
+        "62": {
+          "absolute_bound": "289188015201227817011712371000868864",
+          "observed": "100629097740644859456511294304157696/1415267",
+          "pass": true
+        },
+        "63": {
+          "absolute_bound": "169840580356276654435450122651303936",
+          "observed": "-55518141716149873614155697140793344/1415267",
+          "pass": true
+        },
+        "64": {
+          "absolute_bound": "95535326450405618119940693991358464",
+          "observed": "-31229729348160054496056707263758336/1415267",
+          "pass": true
+        },
+        "65": {
+          "absolute_bound": "51442098857910717449198835226116096",
+          "observed": "17902002800284333837876259570319360/1415267",
+          "pass": true
+        },
+        "66": {
+          "absolute_bound": "26500475169226733231405460571029504",
+          "observed": "1317308491684126571828665613549568/202181",
+          "pass": true
+        },
+        "67": {
+          "absolute_bound": "13052472844544510397557913415581696",
+          "observed": "-4266149380650305931280021494693888/1415267",
+          "pass": true
+        },
+        "68": {
+          "absolute_bound": "6142340162138593128262547489685504",
+          "observed": "-286803205239463131969633229209600/202181",
+          "pass": true
+        },
+        "69": {
+          "absolute_bound": "2759602101830382419944043075076096",
+          "observed": "959795468164755232672030138564608/1415267",
+          "pass": true
+        },
+        "7": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "595977158376674184658944/1415267",
+          "pass": true
+        },
+        "70": {
+          "absolute_bound": "1182686615070163894261732746461184",
+          "observed": "411601667849966917222999768694784/1415267",
+          "pass": true
+        },
+        "71": {
+          "absolute_bound": "483069180803306379346341544329216",
+          "observed": "-158109528873834738323711154192384/1415267",
+          "pass": true
+        },
+        "72": {
+          "absolute_bound": "187860236979063591968021711683584",
+          "observed": "-61411678332458361137719026909184/1415267",
+          "pass": true
+        },
+        "73": {
+          "absolute_bound": "69482553403215301138857345417216",
+          "observed": "494906722646680035464369405952/28883",
+          "pass": true
+        },
+        "74": {
+          "absolute_bound": "24412789033562132832571499741184",
+          "observed": "8498960121643758450644116045824/1415267",
+          "pass": true
+        },
+        "75": {
+          "absolute_bound": "8137596344520710944190499913728",
+          "observed": "-53302327606389403444184088576/28883",
+          "pass": true
+        },
+        "76": {
+          "absolute_bound": "2569767266690750824481210499072",
+          "observed": "-845431635083111301576407384064/1415267",
+          "pass": true
+        },
+        "77": {
+          "absolute_bound": "767592819920613882637244694528",
+          "observed": "264183286609031769210545504256/1415267",
+          "pass": true
+        },
+        "78": {
+          "absolute_bound": "216500538951968018179735683072",
+          "observed": "69190492692005153028817551360/1415267",
+          "pass": true
+        },
+        "79": {
+          "absolute_bound": "57550776177105422554106953728",
+          "observed": "-24338940895895145606134366208/1415267",
+          "pass": true
+        },
+        "8": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-248741189817778047025152/202181",
+          "pass": true
+        },
+        "80": {
+          "absolute_bound": "14387694044276355638526738432",
+          "observed": "-626566327892073402398146560/202181",
+          "pass": true
+        },
+        "81": {
+          "absolute_bound": "3374891195570997001629728768",
+          "observed": "474932276948634397550051328/1415267",
+          "pass": true
+        },
+        "82": {
+          "absolute_bound": "740829774637535927187013632",
+          "observed": "217198522137386862319239168/202181",
+          "pass": true
+        },
+        "83": {
+          "absolute_bound": "151736218901663985086496768",
+          "observed": "93848378807664438581133312/1415267",
+          "pass": true
+        },
+        "84": {
+          "absolute_bound": "28902136933650282873618432",
+          "observed": "7797012450118441830973440/83251",
+          "pass": true
+        },
+        "85": {
+          "absolute_bound": "5100377105938285212991488",
+          "observed": "76651812323304423448117248/1415267",
+          "pass": true
+        },
+        "86": {
+          "absolute_bound": "830293947478325499789312",
+          "observed": "-79581241666219746873311232/1415267",
+          "pass": true
+        },
+        "87": {
+          "absolute_bound": "124066911692163580428288",
+          "observed": "1816122315023472987734016/202181",
+          "pass": true
+        },
+        "88": {
+          "absolute_bound": "16918215230749579149312",
+          "observed": "-10809546350675214018281472/1415267",
+          "pass": true
+        },
+        "89": {
+          "absolute_bound": "2091015365598262591488",
+          "observed": "-640734862233210464501760/202181",
+          "pass": true
+        },
+        "9": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "2665698182296558978990080/1415267",
+          "pass": true
+        },
+        "90": {
+          "absolute_bound": "232335040622029176832",
+          "observed": "2665698182296558978990080/1415267",
+          "pass": true
+        },
+        "91": {
+          "absolute_bound": "22978190830750138368",
+          "observed": "-248741189817778047025152/202181",
+          "pass": true
+        },
+        "92": {
+          "absolute_bound": "1998103550500012032",
+          "observed": "595977158376674184658944/1415267",
+          "pass": true
+        },
+        "93": {
+          "absolute_bound": "150394890897850368",
+          "observed": "-150394890897850368",
+          "pass": true
+        },
+        "94": {
+          "absolute_bound": "9599673887096832",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "95": {
+          "absolute_bound": "505245994057728",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "96": {
+          "absolute_bound": "21051916419072",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "97": {
+          "absolute_bound": "651090198528",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "98": {
+          "absolute_bound": "13287555072",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "99": {
+          "absolute_bound": "134217728",
+          "observed": "-134217728",
+          "pass": true
+        }
+      },
+      "signed_rows": {
+        "0": {
+          "expected": "-134217728",
+          "normalized_target": "1",
+          "observed": "-134217728",
+          "pass": true
+        },
+        "1": {
+          "expected": "13287555072",
+          "normalized_target": "-99",
+          "observed": "13287555072",
+          "pass": true
+        },
+        "2": {
+          "expected": "-465064427520",
+          "normalized_target": "3465",
+          "observed": "-465064427520",
+          "pass": true
+        },
+        "3": {
+          "expected": "7596052316160",
+          "normalized_target": "-56595",
+          "observed": "7596052316160",
+          "pass": true
+        },
+        "4": {
+          "expected": "-62132607516672",
+          "normalized_target": "462924",
+          "observed": "-62132607516672",
+          "pass": true
+        },
+        "5": {
+          "expected": "244437863104512",
+          "normalized_target": "-1821204",
+          "observed": "244437863104512",
+          "pass": true
+        },
+        "6": {
+          "expected": "-150394890897850368",
+          "normalized_target": "1120529256",
+          "observed": "-150394890897850368",
+          "pass": true
+        }
+      },
+      "split_systems": {
+        "failures": [],
+        "pass": true,
+        "systems": {
+          "dual_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 100,
+            "pass": true,
+            "row_count": 56
+          },
+          "dual_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 100,
+            "pass": true,
+            "row_count": 56
+          },
+          "image_vs_closed": {
+            "failures": [],
+            "nonintegral_entry_count": 64,
+            "pass": true,
+            "row_count": 34
+          },
+          "image_vs_neighborhood": {
+            "failures": [],
+            "nonintegral_entry_count": 96,
+            "pass": true,
+            "row_count": 34
+          }
+        }
+      },
+      "submitted_n3": "838878579/128",
+      "submitted_sign": -1
+    }
+  ],
+  "premise_audit": {
+    "equality_lattice_scope_correction": "The 109-by-142 HNF layer omits the D_1=...=D_14=0 conditions as well as all inequalities; it is weaker than the rational Wave143 slice.",
+    "nonimplication": "Failure of this strengthened slice would not by itself refute the target graph unless dual distance at least 15 is separately proved.",
+    "strengthened_formal_slice": [
+      "B_1=...=B_14=0, equivalently formal dual distance at least 15",
+      "all endpoint and optimum witnesses verified here live in that stronger slice"
+    ],
+    "target_forced": [
+      "binary image code im(A) is even and has dimension 54",
+      "dual code ker(A) has dimension 45 and contains 1",
+      "available target arguments prove d(im A)>=8 and d(ker A)>=8",
+      "the S6 signed-shell identity follows conditionally from the frozen six-vertex census"
+    ],
+    "verifier_veto": "Any target-graph or Conway-99 implication that uses the unproved d(ker A)>=15 strengthening is vetoed."
+  },
+  "scope_boundary": {
+    "Conway_99": "UNKNOWN",
+    "binary_code": "UNKNOWN",
+    "formal_integral_equality_projection": "VERIFIED_AS_3Z",
+    "formal_rational_strengthened_projection": "VERIFIED",
+    "graph": "UNKNOWN",
+    "integral_nonnegative_enumerator": "UNKNOWN_HARD_TIMEOUT",
+    "novelty": "UNKNOWN"
+  },
+  "verdict": "PASS_WITH_SCOPE_CORRECTION",
+  "weak_projection_proof": {
+    "binomial_radius": 1120529256,
+    "derivation": "|M6|<=2^27*C(99,6) and M6=epsilon*2^27*(2024484+(512/3)n3)",
+    "exact_n3_max": "838878579/128",
+    "exact_n3_min": "0",
+    "maximum_proof": "the sign-appropriate upper side of the degree-6 shadow row",
+    "minimum_proof": "the formal model explicitly imposes n3>=0",
+    "raw_two_sided_shadow_n3_min": "-841915305/128",
+    "same_for_both_Arf_signs": true,
+    "shadow_degree": 6,
+    "strictly_weaker_than_target_count_interval": true,
+    "target_count_interval": "708<=n3<=4158"
+  }
+}

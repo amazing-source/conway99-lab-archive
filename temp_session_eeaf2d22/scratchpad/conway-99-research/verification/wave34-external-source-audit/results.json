@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "audit_id": "wave34-external-source-audit-consolidated",
+  "date_utc": "2026-07-24",
+  "claim_label": "VERIFIED_SCOPED_AND_CITED",
+  "component_manifests": {
+    "status_designs": {
+      "path": "verification/wave34-external-source-audit/status-designs/manifest.json",
+      "sha256": "1af4bad56405fb24128285fa586e2d1e2b80c82f1bdffdafa7cbdb6053cd6812"
+    },
+    "harrison": {
+      "path": "verification/wave34-external-source-audit/harrison/sha256-manifest.txt",
+      "sha256": "6052d3114a89af378cf412cc3126b60bab9dc9fe249a673188d3369a681db386"
+    },
+    "kuber_selub": {
+      "path": "verification/wave34-external-source-audit/kuber-selub/artifact-manifest.sha256",
+      "sha256": "5053217d6432365b903b787cb53e923996e96feef404904caad89dd7ebd686bc"
+    }
+  },
+  "current_sources": {
+    "brouwer_target_marker": "QUESTION_MARK",
+    "brouwer_status_label": "CITED",
+    "mckay_design_count": "ABOUT_1.5E21_CONTEXTUALLY_NONISOMORPHIC",
+    "mckay_count_exact": false,
+    "rijeka_parent_files": 146,
+    "rijeka_derived_files": 590,
+    "rijeka_parent_restriction": "AUTOMORPHISM_OF_ORDER_6",
+    "rijeka_unrestricted_complete_catalogue": false
+  },
+  "kuber": {
+    "pinned_commit": "be7b0ae3394721a4c3a1375008a1dbfca44981fc",
+    "clean_detached_build": "VERIFIED",
+    "build_jobs": 3068,
+    "principal_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "principal_theorem_scope": "CONDITIONAL_MATRIX_AND_ARITHMETIC_ONLY",
+    "graph_to_matrix_bridge_formalized": false,
+    "graph_level_result_imported": false
+  },
+  "harrison": {
+    "pinned_commit": "26b36c540611fa02c95a5a4bd78cd4a582257195",
+    "arbitrary_root_to_honest_model": "VERIFIED",
+    "honest_builder_avoids_retracted_forced_table": "VERIFIED",
+    "cnf_recipe_hashes_verified": 1302,
+    "tracked_theorem_ladder_proof_bodies": 0,
+    "k_ge_14_exclusion": "UNKNOWN",
+    "k13_exclusion": "UNKNOWN",
+    "r230_unsat": "UNKNOWN"
+  },
+  "selub": {
+    "paper_scope": "HISTORICAL_SAT_FRAMEWORK",
+    "completed_solver_run_reported": false,
+    "machine_certificate_reported": false,
+    "printed_quadrilateral_indexing_gap": true,
+    "printed_cnf_equivalence_status": "NOT_VERIFIED_AS_PRINTED"
+  },
+  "publication_boundary": {
+    "external_graph_result_imported": false,
+    "unrestricted_wave34_branch_changed": false,
+    "n3_708": "UNKNOWN",
+    "conway_99": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "priority": "UNKNOWN"
+  }
+}

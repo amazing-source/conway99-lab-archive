@@ -1,0 +1,43 @@
+role: verifier
+date_utc: 2026-07-23T22:50:15Z
+git_commit: 1f22323a2805e3e24f7848d53f2f4813e236fae9
+claim_label: VERIFIED
+audit_verdict: PASS_SCOPED_A2_FRAME_OBSTRUCTION
+scope: >-
+  Independent verification that a required 231-row projector frame cannot
+  have an even scaled-dual form with an orthogonal A2 summand; application
+  only to the exact Wave 24 E8^5 orthogonal-sum A2^2 survivor. No exclusion
+  of all h=9 forms, n3=708, or Conway-99.
+inputs:
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md: 958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8
+  verification/wave24-n3-708-index/survivor-certificate.json: a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2
+  verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md: 642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de
+method: >-
+  Frozen-input hash gate; independent contragredient basis reconstruction of
+  M=YTY^T and Y^TY=21T^-1; exact A2 root and norm-four arithmetic; energy-42
+  count; same-oriented-root fiber cap from positivity; pigeonhole
+  contradiction; exact Wave 24 block comparison; +2 and missing-frame hostile
+  relaxations.
+command: |-
+  cd verification/wave26-a2-frame-obstruction
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json
+outputs:
+  verification/wave26-a2-frame-obstruction/preinspection-freeze.sha256: c56ad690d4061ec7b8dedd1f78cdd7fe5d62ee6d9df98ab138a9b82b29f82765
+  verification/wave26-a2-frame-obstruction/independent_check.py: 9c6178cec17bd8c83a5d34dee6f3268d6b02949adf8a3a49737ed56779ce4ba2
+  verification/wave26-a2-frame-obstruction/test_independent_check.py: 8a82f73c4cbbcd8f48aaa2614a70617baeab5148c46faf836e5d868d0bfdf73c
+  verification/wave26-a2-frame-obstruction/independent-results.json: b664844d65ab553cfd2277e925f5596193c586378d880dc1a29242cb9ac8f03b
+  verification/wave26-a2-frame-obstruction/2026-07-23T225015Z-audit.md: 5ec6b1924fb9ca2ab9295808178684751b6a90e43315d00cbf232ba8d9fe84a3
+  verification/wave26-a2-frame-obstruction/verifier-failures.md: 6b4634ac98b3ed6649dd8809592084d7e81170b1c8d45362d4952c2ab5e4c015
+  verification/wave26-a2-frame-obstruction/determinant-scout-disposition.md: 862074cab1338e249068a02ad16eeae1e262c640d533c350efef6a6ec6205539
+limitations:
+  - The proof is conditional on the frozen public projector-lattice premises.
+  - It excludes a projector-frame origin, not the abstract coordinate lattice.
+  - It does not classify or exclude every even h=9 scaled-dual form.
+  - It does not prove nonexistence of arbitrary primitive embeddings absent
+    the projector-frame identities.
+  - It does not exclude n3=708 or resolve Conway-99.
+  - The proposed determinant cap 3645 remains UNKNOWN.
+  - No literature-novelty claim is made.

@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-24T20:53:21Z
+git_commit: 79a11c6121c53155ac5a18dea391be7b8bd619b7
+git_commit_provenance: >-
+  Orchestrator-released public candidate commit. Git was not invoked and
+  checkout state was not independently queried.
+claim_label: VERIFIED
+scope: >-
+  Exact complete-domain CNF encoding of the conditional Wave 33 rooted
+  six-block graph criterion only. Satisfiability and all endpoint/global
+  conclusions remain UNKNOWN.
+inputs:
+  verification/wave34-rooted-encoding/precomparison/artifact-manifest.sha256: 3f1bdcb0ca2d08ee0380cd1435673fddb499db8c3a8273f6676c18f17ad3550c
+  verification/wave34-rooted-encoding/candidate-release.md: 023088f9a1e4e21929a9d1c5666f2ce3ac3b757e93491d67a3b37f9a8338fa80
+  attempts/wave34-rooted-encoding/publication-manifest.sha256: 7cba8a082545cbfcbf01785e6e15a0198bd1cf2357ed0a2b3f353b564a1433e7
+  attempts/wave34-rooted-encoding/artifact-manifest.sha256: e96036e97884f0bbc19c30073dbe295852117e9d4d54892cf5e57b20e6f6ec05
+  verification/wave34-rooted-encoding/comparison-input-freeze.sha256: 9d104127dd5c72c5708670efb8011b781c52769188dcd45e27a13a193b10c258
+method: >-
+  Verifier-owned canonical relabeling, full semantic and auxiliary
+  reconstruction, byte-for-byte 4,323,943-clause comparison, gzip round-trip,
+  and 13-model primary-map signature test. Candidate generator neither
+  imported nor executed.
+command: |-
+  python -B verification/wave34-rooted-encoding/independent_compare.py --output verification/wave34-rooted-encoding/comparison-results.json
+  python -B -m unittest discover -s verification/wave34-rooted-encoding -p test_independent_compare.py -v
+outputs:
+  verification/wave34-rooted-encoding/independent_compare.py: 43d118d5bc0583491d6b226828b3f319eae62b9bc27ed0614dcde8ed53489b61
+  verification/wave34-rooted-encoding/test_independent_compare.py: e58eccfc7babe7de36a35208993d0da4035f234906ac30d7e04ae7458c3f801a
+  verification/wave34-rooted-encoding/comparison-results.json: 05bfd6d0d7e5971c8d8ee15bc5f5b2d88260a2288a00963125ae8b1e2f300015
+  verification/wave34-rooted-encoding/correction-ledger.md: 357af11935c1dfd4455f67d7c131e841f1c4e22476aca4bb98e2d7b502daf7e0
+  verification/wave34-rooted-encoding/comparison-input-freeze.sha256: 9d104127dd5c72c5708670efb8011b781c52769188dcd45e27a13a193b10c258
+  verification/wave34-rooted-encoding/test-results.txt: 3c4ebb7b782b319447a46840951c175d401a6b4307f377c81e2aac79673259f4
+limitations:
+  - No solver or proof checker was run.
+  - SAT and UNSAT remain UNKNOWN.
+  - No graph witness or exclusion certificate exists.
+  - The status is conditional, encoding-only, and graph-scoped.
+  - Three non-formula packaging/documentation corrections are retained.

@@ -1,0 +1,217 @@
+{
+  "format": "wave191-exact-three-residual-clean-room-verification-v1",
+  "independent_math_result": {
+    "boundary": {
+      "code_constructed": false,
+      "conditional_theorem_verified": true,
+      "conway_99": "UNKNOWN",
+      "endpoint_excluded": false,
+      "external_novelty": "UNKNOWN",
+      "graph_constructed": false,
+      "local_exact3_type3_raw_branch": "REFUTED",
+      "rank_11_excluded": false,
+      "strict_n3_improvement": false
+    },
+    "bounds": {
+      "all_projective_short_circuits": 6930,
+      "edge_isolated_projective_short_circuits": 693,
+      "nonedge_projective_short_circuits_Q": 6237,
+      "scalar_short_circuit_words": 13860,
+      "wave188_all_short_word_bound_remains_stronger": 18018
+    },
+    "coefficient_certificate": {
+      "base_pool": "B=n1+n2+2*n3",
+      "disjoint_pool_bound": "Q>=B+A/2+delta/2+h/2+Y",
+      "final_inequality": "12Q>=9I+6*(p2-n2)+p2+3*(p3-n3)>=18C",
+      "nine_private_I_row": [
+        18,
+        18,
+        27,
+        9,
+        9
+      ],
+      "nonedge_projective_circuit_lower": 6237,
+      "nonnegative_remainder_row": [
+        0,
+        -6,
+        -3,
+        7,
+        3
+      ],
+      "private_incidence": "I>=2*C",
+      "raw_assignments": "A=n1+2*p2+p3",
+      "remainder_decomposition": "6*(p2-n2)+p2+3*(p3-n3)",
+      "residual_decomposition": "delta/2+h/2+Y=(delta+2Y)/3+(delta+3h+2Y)/6",
+      "residual_lower": "delta/2+h/2+Y>=p2/3+p3/2",
+      "twelve_Q_row": [
+        18,
+        12,
+        24,
+        16,
+        12
+      ],
+      "variable_order": [
+        "n1",
+        "n2",
+        "n3",
+        "p2",
+        "p3"
+      ]
+    },
+    "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+    "format": "wave191-exact-three-residual-clean-room-math-v1",
+    "joint_exact_one_capacity": {
+      "closed_new_capacity": "Z<=2Y",
+      "eliminated_row": "delta+3h+2Y>=2p2+p3",
+      "exact_one_slot_double_charging": false,
+      "first_joint_row": "p3+u<=delta+2Y",
+      "new_residual_incidence_lower": "Z>=(p3-t)-(delta-r1)=p3+u-delta",
+      "split": "r1=t+u",
+      "type2_exact2_status": "both outside translates are non-exact2 because the selected owner is the unique exact2 circuit through the private label",
+      "type2_row": "2p2<=u+3h",
+      "type3_residual_assignments": "p3-t",
+      "unused_old_exact2_orbit_slots": "delta-r1",
+      "weaker_consequence": "delta+2Y>=p3"
+    },
+    "local_exact_three_exclusion": {
+      "all_equal_gram_image": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "canonical_checkerboard_kernel": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "canonical_gram": [
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          0
+        ]
+      ],
+      "checkerboard_gram_image": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_three_type3_raw_extraction_possible": false,
+      "local_branch_verdict": "REFUTED",
+      "only_contained_target_member": "c5",
+      "owner_triangle_membership": "T in A_y",
+      "projective_nonzero_kernel_size": 2,
+      "source_Ax_pair_types": [
+        [
+          "y",
+          "u"
+        ],
+        [
+          "y",
+          "v"
+        ],
+        [
+          "u",
+          "v"
+        ]
+      ],
+      "subtracted_four_word": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "target_cross_edge_count_j_S_T": 2,
+      "unique_pair_type_avoiding_y": [
+        "u",
+        "v"
+      ]
+    },
+    "math_result_sha256": "c2f851341b6006e48ecf20babce459d7282f50f91005651f17bddd06eaa3e9e1",
+    "orbit_closed_new_pool_capacity": {
+      "added_mate_old_pool_collision": "excluded_by_old_orbit_closure",
+      "added_mate_selected_pool_collision": "excluded_by_privacy",
+      "assignment_capacity_row": [
+        2,
+        3
+      ],
+      "capacity": "Z<=2*y+3*g<=2*Y",
+      "closed_pool_size": "Y=y+2*g",
+      "nonnegative_gap": [
+        0,
+        1
+      ],
+      "pool_variables": [
+        "y_low_circuits",
+        "g_exact3_pairs"
+      ],
+      "twice_closed_circuit_count_row": [
+        2,
+        4
+      ]
+    },
+    "verdict": "VERIFIED_WITH_SCOPE"
+  },
+  "integrity": {
+    "direct_files_checked": 7,
+    "discovery_checker_imported_or_executed_before_independent_freeze": false,
+    "failures": [],
+    "independent_result_entries_checked": 1,
+    "passed": true,
+    "premise_entries_checked": {
+      "wave180": 8,
+      "wave181": 8,
+      "wave186": 8,
+      "wave189": 8,
+      "wave190": 8
+    },
+    "source_entries_checked": 9,
+    "source_manifest_sha256": "a0e2697b7e826f5543c2e007a1428633e37fb54e9e8449e73a731a7291f468c4"
+  },
+  "result_sha256": "b74d0421cb28871d2f6dd5701443193ee23925ed5f5c6a4ee3bff2f925752381",
+  "source_comparison": {
+    "claim_matches_independent_bound": true,
+    "coefficient_identity_matches": true,
+    "joint_exact_one_capacity_matches": true,
+    "local_exact3_exclusion_matches": true,
+    "non_theorem_findings": {
+      "affects_Q6237_theorem": false,
+      "null_control_scope": "the displayed Q=6237 row is a null only for the weak displayed scalar inequalities; its capacity-two new residuals do not respect the separately audited exact-two residual exclusion",
+      "stale_boundary_label": "the source report Boundary says 'new Q=5891 arithmetic row'; the theorem and body correctly say Q>=6237"
+    },
+    "orbit_closed_new_capacity_matches": true,
+    "source_exact_results_sha256": "cd244003033d78165dc2aee848d0b23f70aa38967e4f7c75e48cdb3c9b979bf0",
+    "source_report_sha256": "51601df6d335c00c4be734ecc238cfc6d7410b06e713c7ca4ae3bcfaf1d359d8"
+  },
+  "verdict": "VERIFIED_WITH_SCOPE",
+  "wave192_lever": {
+    "conclusion": "such a residual has exact multiplicity one or three",
+    "contradiction_if_residual_exact2": "Wave181 uniqueness would force the residual circuit to equal r_e, but r_e is not contained in the residual support",
+    "premise": "a type3 raw extraction of exact multiplicity two is the unique Wave181 checkerboard circuit r_e through its private label e",
+    "residual_property": "the Wave190 residual crosses e and its support omits coordinates of r_e",
+    "status": "VERIFIED_LEVER_NOT_APPLIED",
+    "used_in_Q6237_certificate": false
+  }
+}

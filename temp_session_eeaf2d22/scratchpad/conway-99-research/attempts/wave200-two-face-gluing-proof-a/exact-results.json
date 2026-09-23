@@ -1,0 +1,37 @@
+{
+  "claim": {
+    "conditional_Q_lower_bound": 7039,
+    "edge_added_projective": 7732,
+    "scalar_words": 15464
+  },
+  "claim_label": "DERIVED_PENDING_HOSTILE_AUDIT",
+  "contradiction": "27<=s<=4",
+  "faces": {
+    "budget_max": 63,
+    "budgets": {
+      "7037": 23,
+      "7038": 63
+    },
+    "relevant_subrow": "S5+3*SH+13*SF+9*g<=B",
+    "target": "281457/40"
+  },
+  "forced_saturation": {
+    "four_s_lower": 108,
+    "q_identity": "4*q=297-3*SF-3*g-SH+epsilon+delta+eta",
+    "s_bound": "4*s>=297-(3*SF+3*g+SH+3*S5)>=297-3*B",
+    "s_lower": 27
+  },
+  "local_loss": {
+    "deficient_center": "delta_x>=4*s_x",
+    "delta_max": 12,
+    "global": "3*s<=delta<=S5/5<=B/5",
+    "s_upper": 4,
+    "tight_center": "delta_x>=3*s_x"
+  },
+  "search_scope": "exact slack arithmetic and additive local fiber loss only; no graph, code, cover, SAT, LP, configuration, enumeration, isomorphism, or brute-force search",
+  "stopping_point": {
+    "Q0": 7039,
+    "budget": 103,
+    "coarse_argument_excludes": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "claim_label": "CANDIDATE",
+  "conditional_n3_51_exclusion": "UNKNOWN",
+  "final_archive": {
+    "active_local_scan_path": "attempts/wave16-n3-51-computation/n3-51-active-local-scan.json",
+    "active_local_scan_sha256": "f0345ca8b2ab1591b76b128c4412d35386047b3959e5fcef7a4e7fa2dea16286",
+    "negative_status_histogram": {
+      "TIMEOUT_UNKNOWN": 5,
+      "UNSAT_UNVERIFIED": 1
+    },
+    "policy": "Every negative return is non-evidentiary because no proof trace was emitted or checked."
+  },
+  "historical_probe_before_final_source_freeze": {
+    "branch_id": "root-q3x0",
+    "builder_source_sha256_at_run": "9969aa555e23fcc37044cbc23a1b5cc145c53babe49137b9beb20a37eb969c39",
+    "command": ".venv\\Scripts\\python.exe code\\wave16_n3_51_active_sat.py --single --profile r14-q2x8-q3x6 --branch root-q3x0 --solver glucose42 --conflict-budget 10000 --time-limit 3",
+    "conflicts": 10086,
+    "elapsed_seconds": 2.1574098999844864,
+    "evidentiary_status": "NON_EVIDENTIARY_NO_CHECKED_PROOF_TRACE",
+    "formula": {
+      "base_clause_count": 804058,
+      "branch_unit_count": 1,
+      "materialized_clause_count": 804059,
+      "materialized_dimacs_sha256": "391fe91f002ff3151caafe8a6f9ef760caa838f617f8c4c93635cd7170f6a883",
+      "variable_count": 239279
+    },
+    "limitation": "The probe used an intermediate source revision. The CNF stream is unchanged in the final source and has the same archived DIMACS digest, but the historical source bytes are not promoted as a current artifact.",
+    "profile_id": "r14-q2x8-q3x6",
+    "proof_trace_checked": false,
+    "proof_trace_emitted": false,
+    "status": "BUDGET_UNKNOWN",
+    "timer_fired": false
+  },
+  "novelty": "UNKNOWN",
+  "schema": "conway99-wave16-n3-51-run-failures-v1",
+  "starting_git_commit": "861cfeb6195b19b08feceff07be88a6ab5093fd4",
+  "target_result": "UNKNOWN"
+}

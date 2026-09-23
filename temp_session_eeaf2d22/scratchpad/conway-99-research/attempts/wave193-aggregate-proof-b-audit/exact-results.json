@@ -1,0 +1,36 @@
+{
+  "audit_verdict": "PASS",
+  "bound": {
+    "C": 4158,
+    "Q": 6291,
+    "edge_added_projective": 6984,
+    "fraction": "245322/39",
+    "reduced_fraction": "81774/13",
+    "scalar_short_circuit_words": 13968
+  },
+  "certificate": {
+    "identity": "Q0-59*C/39=sum(nonnegative multiplier*slack)",
+    "multipliers": [
+      "29/39",
+      "23/39",
+      "3/13",
+      "38/117",
+      "2/117",
+      "76/117",
+      "1/39",
+      "17/39",
+      "5/39",
+      "4/13",
+      "35/117",
+      "37/39"
+    ],
+    "reduced_difference": {}
+  },
+  "claim_label": "DERIVED",
+  "collision_rows": {
+    "SL": "2*n1+4*n2+r1+2*r2+Y+2*W>=C",
+    "SR": "3*h+3*Y/2>=a2+a3+b3+c2"
+  },
+  "search_scope": "exact rational coefficient replay only; no graph, cover, code, SAT, LP, configuration, enumeration, or isomorphism search"
+}
+

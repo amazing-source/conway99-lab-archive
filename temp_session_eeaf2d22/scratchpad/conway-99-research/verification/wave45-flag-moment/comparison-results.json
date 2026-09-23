@@ -1,0 +1,146 @@
+{
+  "coefficient_comparison": {
+    "combined_entrywise_match": true,
+    "converted_combined_stream_sha256": "5eace9a5008e40c8a1a430bec43b23027fd0d564a0d440f354a8ec101fbdd4b9",
+    "discovery_payload_hash": "62698eb6e1c6a624d114510c8606a4f003ebdd86494584c29f79d81667853b48",
+    "families": {
+      "edge": {
+        "converted_stream_sha256": "c4219e7f375f8f5b21e98f66d797d80dfd8183b73e3e7867d1a41ba8f72b69e0",
+        "entrywise_coefficient_match": true,
+        "flags_exact_match": true,
+        "records": 92
+      },
+      "nonedge": {
+        "converted_stream_sha256": "c7ea939d530d1713605f816a06a4acd77db1a77841e76fad89562b5d056d6564",
+        "entrywise_coefficient_match": true,
+        "flags_exact_match": true,
+        "records": 92
+      },
+      "vertex": {
+        "converted_stream_sha256": "020ffe9943ded4adb77c308734fb05031723038d81fb7081cf9efed4352d0d27",
+        "entrywise_coefficient_match": true,
+        "flags_exact_match": true,
+        "records": 300
+      }
+    }
+  },
+  "control_comparison": {
+    "Clebsch": "EXACT_MATRIX_MATCH",
+    "Petersen": "EXACT_MATRIX_MATCH"
+  },
+  "cutting_loop": {
+    "all_cut_streams_reconstructed": true,
+    "all_new_cuts_exactly_reject_source": true,
+    "all_witnesses_pass_original_170_rows": true,
+    "all_witnesses_pass_prior_cuts": true,
+    "cut_count": 17,
+    "final_status": "QF_LIA_UNKNOWN",
+    "immutable_checkpoint_manifest": "PASS",
+    "last_reason_unknown": "timeout",
+    "last_solver_status": "unknown",
+    "minimum_new_cut_value": -627751301904,
+    "resource_samples_in_immutable_checkpoint": false,
+    "solver_unknown_is_not_certificate": true,
+    "witness_count": 15
+  },
+  "format": "wave45-clean-room-discovery-comparison-v1",
+  "inputs": {
+    "attempts/wave43-seven-deck-endpoint/exact-results.json": "06b498a736a511a7d6f5912bd4686e5d4eb30f4041477e3ee9cbc1704f1757c8",
+    "attempts/wave44-rooted-flags/rooted-witness.json": "9be153b2487c3e07e20bffeb7ee6c890e69caa6e8d6b6e2936fbc5d8927bd5b9",
+    "attempts/wave44-rooted-flags/row-system.json": "fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722",
+    "attempts/wave45-flag-moment/checkpoint-v1-manifest.sha256": "9c6eae037eefd2d3d4ae4ed0188ed5b0fae1957a42c42b11b066d59ebb47f791",
+    "attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json": "ffcf9f9942446d66c3559d97954217af3ba17c1978ea9417c6e99920d4a45420",
+    "attempts/wave45-flag-moment/checkpoint-v1-seed0-17cuts-15witnesses.json": "96a50f9add4b12b2c86587da29ade8b9da34f88a7b7617c048ffb7139c12b64b",
+    "attempts/wave45-flag-moment/checkpoint-v1-stored-witness-results.json": "2c55b6ab1af9cac7d8f5800466abadb8c0c2603b5f96013d3fd160b6816c24df",
+    "verification/wave45-flag-moment/independent-results.json": "8d9a004392e3f642c0aacf272a33f7cce2bc21254e79fe4123bec5a065ae0bac",
+    "verification/wave45-flag-moment/independent_verify.py": "4c2615dd43f7dd3c7c09a046802ca6afdf8f49ec7c3aff7dc25a325e187682dd"
+  },
+  "limitations": [
+    "The exact negative directions refute only the supplied aggregate witnesses.",
+    "The 17-cut loop ended solver-unknown and did not exhaust the PSD-feasible region.",
+    "No graph or complete infeasibility certificate was produced."
+  ],
+  "role": "verifier",
+  "target_comparison": {
+    "wave43_unrooted": {
+      "exact_vertex_quadratics": [
+        -2439686160282,
+        -642660113620,
+        -27729959832,
+        -286352047812,
+        -21295863304,
+        -18307661814
+      ],
+      "families": {
+        "edge": {
+          "exact_psd": {
+            "is_psd": true,
+            "rank": 1
+          },
+          "matrix_sha256": "2001fc812b564e10cdda35c818874e954c3ff7cd6a6764ef264fbc8b4c340fcd"
+        },
+        "nonedge": {
+          "exact_psd": {
+            "is_psd": true,
+            "rank": 1
+          },
+          "matrix_sha256": "35a2fbc03fb917887e6e9b477508ef4fdaf549d66bece81f3c6c0ef01a0010f7"
+        },
+        "vertex": {
+          "exact_psd": {
+            "is_psd": false,
+            "negative_pivot_index": 2
+          },
+          "matrix_sha256": "6c2e0492e42f02d3bf254d363989793d1231c29c82cd80ebc14caed4c7764931"
+        }
+      },
+      "lower_order_deck_reconstruction": "PASS",
+      "negative_direction_count": 6
+    },
+    "wave44_rooted": {
+      "exact_vertex_quadratics": [
+        -3434158925036,
+        -420407978596,
+        -468970998184,
+        -46796180000,
+        -1158870788,
+        -161364476608
+      ],
+      "families": {
+        "edge": {
+          "exact_psd": {
+            "is_psd": true,
+            "rank": 1
+          },
+          "matrix_sha256": "2001fc812b564e10cdda35c818874e954c3ff7cd6a6764ef264fbc8b4c340fcd"
+        },
+        "nonedge": {
+          "exact_psd": {
+            "is_psd": true,
+            "rank": 1
+          },
+          "matrix_sha256": "35a2fbc03fb917887e6e9b477508ef4fdaf549d66bece81f3c6c0ef01a0010f7"
+        },
+        "vertex": {
+          "exact_psd": {
+            "is_psd": false,
+            "negative_pivot_index": 1
+          },
+          "matrix_sha256": "a1fba5e866b29d71e593478bff1ef2bbe012933936b8cc1063801fb186db1235"
+        }
+      },
+      "lower_order_deck_reconstruction": "PASS",
+      "negative_direction_count": 6
+    }
+  },
+  "verdict": {
+    "Conway_99": "UNKNOWN",
+    "coefficient_streams": "VERIFIED_EXACT_MATCH",
+    "controls": "VERIFIED_EXACT_MATCH",
+    "endpoint_n3_4158": "UNKNOWN",
+    "finite_cutting_loop": "VERIFIED_INCOMPLETE_UNKNOWN",
+    "stored_wave43_witness": "REFUTED_BY_EXACT_PSD_DIRECTION",
+    "stored_wave44_witness": "REFUTED_BY_EXACT_PSD_DIRECTION",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

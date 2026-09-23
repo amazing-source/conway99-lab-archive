@@ -1,0 +1,37 @@
+role: proof_b
+date_utc: 2026-07-27T23:21:52Z
+git_commit: 5f497b545c536de90a1a557c51b53f041fecf7db
+claim_label: DERIVED
+scope: >-
+  Conditional outside-incidence closure for Wave71's norm-16 and norm-18
+  signed integer -4 eigenvectors, with no automorphism assumption.
+inputs:
+  - path: attempts/wave71-modular-theta-extension/README.md
+    sha256: 026d2c80eb3b7d2feb020da39f9626472eafab70728002d363c549c3c8732356
+  - path: attempts/wave71-modular-theta-extension/derivation.md
+    sha256: ea4a2e9ef299a199913593149b265d16af6d51ebab8e23f29aff32edac9524bc
+  - path: attempts/wave71-modular-theta-extension/exact-results.json
+    sha256: b892178b184e15ab7d62a31de0016c1096cb0bc9a8663afcf1ad0d4d5c35b995
+method: >-
+  Recompute signed-support cross edges and side-to-outside incidences; subtract
+  exact opposite-side common-neighbor incidences from lambda/mu pair
+  capacities; use the zero-coordinate eigenvector equation to identify the
+  two sign-side incidence counts; close norm-18 h=2 by an 82-into-81
+  pigeonhole; and enumerate every bounded outside-incidence histogram for
+  norm16 h=0 and norm18 h=0,1.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave74-short-vector-closure\exact_check.py --verify ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  attempts\wave74-short-vector-closure\test_exact_check.py
+outputs:
+  - path: attempts/wave74-short-vector-closure/exact-results.json
+    sha256: 2b889be64fb2cd155aa2ff6b8bcd4ab70b1b6066b95b055d44e806d5f7af0245
+  - path: attempts/wave74-short-vector-closure/derivation.md
+    sha256: 3dd9a883c3788464ad7ca066f0853cd8729f589277fec56bd8f129bcb9fd8235
+  - path: attempts/wave74-short-vector-closure/hostile-controls.md
+    sha256: ffaf813e6dc5bea51c4f74b311fb0b754823dd3f3f902775717d9d2b2609d6e3
+limitations: >-
+  Discovery only and conditional on Wave71. Necessary moment histograms do
+  not construct outside incidence matrices or graphs. Norm14, norm16, and
+  norm18 h=0,1 remain live. Conway-99 and novelty remain UNKNOWN.

@@ -1,0 +1,29 @@
+role: construction
+date_utc: 2026-07-27T00:10:32Z
+git_commit: 697cc02bcbe16b69aaf08822298e03c66329c64c
+claim_label: DERIVED
+scope: "Exact fixed-triangle prism clauses for normalized rooted branches 4, 5, 8, 10, and 12 under the conditional endpoint n3=4158 (P=0)"
+inputs:
+  code/root_model.py: 2a1f074f29f2e00e38437bf81418771d57ab41335605b9f3b9f2cae061a1624e
+  code/sat_model.py: 45f0da74619b31a1a31cc407f702f8e86a0597ee73d29ec268528cd89980aef8
+  code/matching_orbits.py: 1ba68393c385ef296458555b7c48533786ea592a50bec589be675f95fd550240
+  code/wave35_n3_endpoint_root_scout.py: 04ef058c3a14ed8790773f015edc16f4ae1da1bcb011e3b795f0d16229f7ff7e
+method: "For every one of the six branch-fixed coordinate-2 triangles, enumerate every disjoint second triangle and perfect matching whose required edges are not scaffold-fixed false; use lambda=1 to prove that the six required edges would form an induced triangular prism; filter clauses already satisfied by endpoint and branch units; and hash the deduplicated catalogs. Import the previously verified 33-case oriented-common-neighbor refinement only as a search split."
+command: |
+  $env:PYTHONPATH='code;attempts\wave36-rooted-branches'
+  .venv\Scripts\python -B attempts\wave36-rooted-branches\rooted_branch_scout.py --derive-only --branches 4,5,8,10,12 --mode fixed-triangle-prisms --output attempts\wave36-rooted-branches\derived-clause-catalog.json
+  .venv\Scripts\python -B -m unittest discover -s attempts\wave36-rooted-branches -p "test_*.py" -v
+  .venv\Scripts\python -B attempts\wave36-rooted-branches\rooted_branch_scout.py --branches 4 --mode fixed-triangle-prisms --solver minicard --conflict-budget 100000 --output attempts\wave36-rooted-branches\branch-04-prism-100k.json
+outputs:
+  attempts/wave36-rooted-branches/rooted_branch_scout.py: bdb3b0ac06d4926133cf9f9e3a80c58dec82c48dc09bb85696819c826da56397
+  attempts/wave36-rooted-branches/refined_branch_scout.py: f23cc9b1544b34d14d42455c1f6378195f7375f5bc377ceeb3318cf2e9bdb68d
+  attempts/wave36-rooted-branches/test_rooted_branch_scout.py: f57c630f586740a454fe04a856ebb2dd9fca0e9190d1c9d5695e2fbfaa26d283
+  attempts/wave36-rooted-branches/derived-clause-catalog.json: e6cd8b32fee88fff300ce153c728b7fe82f6aca9c29526d852ff4a4b564f9092
+  attempts/wave36-rooted-branches/branch-04-prism-100k.json: 2da02b1b645dadb4c6cae84533549994cad5b1854fc2785cbbe6af580631f8c6
+  attempts/wave36-rooted-branches/failed-routes.md: 4a0876797a5ba5447428f9e805db655382de18a625ff89275e84d23518c4163a
+limitations:
+  - "The clause families cover prisms whose first triangle is one of six branch-fixed coordinate-2 triangles; they do not encode every possible prism."
+  - "The complete 33-case refinement is imported from an earlier independently verified cover; this construction lane does not certify that cover."
+  - "The completed branch-4 MiniCard scout stopped at 100000 conflicts with BUDGET_UNKNOWN and has no mathematical evidentiary value."
+  - "A longer terminal-buffered 33-case Gluecard sweep was nonterminal at the publication cutoff and is excluded from every output and claim."
+  - "No SAT assignment, graph, UNSAT proof, endpoint exclusion, upper-bound improvement, or novelty conclusion is supplied."

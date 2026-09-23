@@ -1,0 +1,82 @@
+role: verifier
+date_utc: 2026-07-24T00:16:57Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: VERIFIED
+verified_object_label: CANDIDATE
+scope: >-
+  Independent exact verification of the explicit E8^4 orthogonal-sum E6^2
+  abstract coupled arithmetic/lattice package. No primitive embedding,
+  231-row projector, Schur-square origin, graph, all-h=9 classification, or
+  n3=708 exclusion.
+inputs:
+  - path: agents/2026-07-23-wave27-a2free-construction.md
+    sha256: 3e80a13c71f227d394dbbbd5e82d2d9afa781b60a523f7470d6c6d74c3b6dbe9
+  - path: attempts/wave27-a2free-construction/exact_check.py
+    sha256: 1bd20f820a5d4467f29860a03a93c4ef3192bb9df4b1c87901080ffa8b793f1e
+  - path: attempts/wave27-a2free-construction/exact-results.json
+    sha256: 3b1d30b6110d937f1bd4bb9ff570419625063afc5c0915382baa2466d349946d
+  - path: attempts/wave27-a2free-construction/failed-routes.md
+    sha256: 724e2daf4604cd7fb779b686acc9bdf5b6a1398ed020846bcbebc0968482e120
+  - path: attempts/wave27-a2free-construction/input-freeze.sha256
+    sha256: 19beda0a2cfd430bde00d39c9371b9f76df36b7e3ee9ee612b73db21bae43f93
+  - path: attempts/wave27-a2free-construction/run-report.yaml
+    sha256: 249078954019aad3256456470a2a677e4b85f3b7c734bad80c0f29a4effa05d7
+  - path: attempts/wave27-a2free-construction/test_exact_check.py
+    sha256: 7693d905bd142c34e8552f93c87b253621dfc6e6f94e1beec65e8b688eb8568d
+method: >-
+  Preinspection hash freeze; fresh standard-library Cartan and rank-one
+  reconstruction; exact rational elimination and LDL; complete short-vector
+  and root-component enumeration; modular-rank discriminant inference;
+  coupled, spectral, parity, minimum, and scope attacks; submitted replay.
+command: |-
+  cd verification/wave27-a2free-construction
+  python -B independent_check.py --output independent-results.json
+  python -B -m unittest -v test_independent_check.py
+  cd ../../attempts/wave27-a2free-construction
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output ../../verification/wave27-a2free-construction/submitted-regenerated.json
+outputs:
+  - path: verification/wave27-a2free-construction/preinspection-freeze.sha256
+    sha256: a9b7cadd03015b5a0cc9a6335e5f2401a58f7dc33db93925db3e3929a02bfb1f
+  - path: verification/wave27-a2free-construction/independent_check.py
+    sha256: 4c7f0328940fd9df3ba156a5c9c6d538a5aa9a4522f9458c29b1f2c643c24aa1
+  - path: verification/wave27-a2free-construction/test_independent_check.py
+    sha256: 48dff5732e2ccae502dea096379c056410897dc1029163a3dd0d6fe2f7f31de7
+  - path: verification/wave27-a2free-construction/independent-results.json
+    sha256: ee0b100806de66252a9795622881adb5651e5b46f8ae0b5757fc15874257e31f
+  - path: verification/wave27-a2free-construction/submitted-regenerated.json
+    sha256: 3b1d30b6110d937f1bd4bb9ff570419625063afc5c0915382baa2466d349946d
+  - path: verification/wave27-a2free-construction/2026-07-24T001657Z-audit.md
+    sha256: a5c28949832b0b1aadf642f7ab638dd40867b8676132fb49d0ee6139ab76a463
+  - path: verification/wave27-a2free-construction/verifier-failures.md
+    sha256: b7ba79656354aef90332c0d1a8448d92a028ec558bae11153a4cf10613904da5
+tests:
+  independent_suite:
+    status: PASS
+    count: 16
+  submitted_suite:
+    status: PASS
+    count: 15
+  independent_generation: PASS_BYTE_IDENTICAL
+  submitted_regeneration: PASS_BYTE_IDENTICAL
+  submitted_matrix_comparison: PASS_ALL_NINE
+result:
+  audit_verdict: PASS_SCOPED_CANDIDATE
+  S_rank: 44
+  S_determinant: 9
+  S_root_count: 1104
+  S_root_component_sizes: [240, 240, 240, 240, 72, 72]
+  S_has_orthogonal_A2_direct_summand: false
+  E6_dual_minimum: 4/3
+  G_minimum: 28
+  B_spectrum: "1^42,9^2"
+  abstract_coupled_package: VERIFIED_AS_EXPLICIT_OBJECT
+  projector_or_schur_origin: NOT_ESTABLISHED
+  n3_708: UNKNOWN
+  conway_99: UNKNOWN
+  novelty: UNKNOWN
+defects: []
+limitations:
+  - The verified object remains a research CANDIDATE outside this exact scope.
+  - No omitted projector, Schur-square, cubic-tensor, or graph origin is supplied.
+  - No determinant-nine classification or endpoint exclusion is proved.

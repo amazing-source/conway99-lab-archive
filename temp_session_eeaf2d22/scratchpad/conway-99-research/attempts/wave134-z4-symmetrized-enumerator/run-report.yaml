@@ -1,0 +1,36 @@
+role: construction
+date_utc: 2026-07-28T07:50:06Z
+git_commit: aef7b93124f8caeb1a7487f58289436bc4118880
+claim_label: DERIVED
+scope: >-
+  Conditional full-problem Z4 symmetrized weight-enumerator consequences
+  for a hypothetical srg(99,14,1,2), without endpoint or symmetry assumptions.
+inputs:
+  - path: agents/2026-07-22-wave2-algebra-codes.md
+    sha256: 999cbb0366a984ab6ddf4a2ff084eb680beffaad47c0b8176752a5a6769cc0e9
+  - path: verification/2026-07-22-wave2-audit.md
+    sha256: b438e45544c1675530084a7a16396d2a45d4dab473a04696ddec6a9ce45641c8
+  - path: attempts/wave131-binary-lcd-enumerator/package-manifest.sha256
+    sha256: c305de05df2001d869db3dbfc14f7a2a8c7f305ce43471c56c66dc775e89d576
+  - path: attempts/wave132-distinguished-biweight/package-manifest.sha256
+    sha256: 0b99e87b0f39b1c203709d34ffba3f7b5c94f0078c53fe4020dfc3cd03ec510c
+method: >-
+  Replay the Smith invariants and Z4 code types; derive the extra torsion
+  symmetry; factor the full symmetrized MacWilliams transform into exact
+  Krawtchouk factors; enumerate every nonzero primal and every even-sum
+  dual coefficient pattern through support size three. Earlier bounded
+  searches were invalidated after a preseal undercount was found.
+command: >-
+  python -B attempts\wave134-z4-symmetrized-enumerator\exact_check.py
+  --verify attempts\wave134-z4-symmetrized-enumerator\exact-results.json
+outputs:
+  - path: attempts/wave134-z4-symmetrized-enumerator/exact-results.json
+    sha256: 8d3e39c4360341f7d3d6b8ac496853c0ae19e546ab8655cc6939b36edbddb1a2
+  - path: attempts/wave134-z4-symmetrized-enumerator/search-status.json
+    sha256: d5d85b9df1d2664cb808cb9eacfffb069ad6e401e73a6e4cf5e956cbcd02fddb
+limitations:
+  - Corrected exact rational and integral feasibility were not run and remain UNKNOWN.
+  - All provisional searches used an undercounted preseal model and are invalidated.
+  - No Z4 code, adjacency matrix, graph, or Conway-99 resolution is produced.
+  - Novelty remains UNKNOWN.
+  - Two verifier vetoes corrected the full coefficient-pattern table and the dual residue weight-92 shell before final sealing.

@@ -1,0 +1,577 @@
+{
+  "conclusion": {
+    "n3_708_excluded": false,
+    "next_obstruction": "Must use the 231-vector Gram/projector and W=M o M origin or stronger graph-local compatibility; the abstract coordinate-lattice relaxation has an exact h=9 survivor.",
+    "novelty_status": "UNKNOWN",
+    "sharp_current_index_restriction": "h in {9,21,49,81,189,441,729,1029}",
+    "target_status": "UNKNOWN"
+  },
+  "determinant_index": {
+    "candidate_values": [
+      9,
+      21,
+      49,
+      81,
+      189,
+      441,
+      729,
+      1029
+    ],
+    "detB_cap": 6561,
+    "detQ_floor": 5,
+    "h_candidates": [
+      {
+        "detQ_max_congruent_1_mod_4": 729,
+        "detQ_min": 5,
+        "h": 9,
+        "rank_F3_M": 42,
+        "rank_F7_M": 44,
+        "v3_h": 2,
+        "v7_h": 0
+      },
+      {
+        "detQ_max_congruent_1_mod_4": 309,
+        "detQ_min": 5,
+        "h": 21,
+        "rank_F3_M": 43,
+        "rank_F7_M": 43,
+        "v3_h": 1,
+        "v7_h": 1
+      },
+      {
+        "detQ_max_congruent_1_mod_4": 133,
+        "detQ_min": 5,
+        "h": 49,
+        "rank_F3_M": 44,
+        "rank_F7_M": 42,
+        "v3_h": 0,
+        "v7_h": 2
+      },
+      {
+        "detQ_max_congruent_1_mod_4": 81,
+        "detQ_min": 5,
+        "h": 81,
+        "rank_F3_M": 40,
+        "rank_F7_M": 44,
+        "v3_h": 4,
+        "v7_h": 0
+      },
+      {
+        "detQ_max_congruent_1_mod_4": 33,
+        "detQ_min": 5,
+        "h": 189,
+        "rank_F3_M": 41,
+        "rank_F7_M": 43,
+        "v3_h": 3,
+        "v7_h": 1
+      },
+      {
+        "detQ_max_congruent_1_mod_4": 13,
+        "detQ_min": 5,
+        "h": 441,
+        "rank_F3_M": 42,
+        "rank_F7_M": 42,
+        "v3_h": 2,
+        "v7_h": 2
+      },
+      {
+        "detQ_max_congruent_1_mod_4": 9,
+        "detQ_min": 5,
+        "h": 729,
+        "rank_F3_M": 38,
+        "rank_F7_M": 44,
+        "v3_h": 6,
+        "v7_h": 0
+      },
+      {
+        "detQ_max_congruent_1_mod_4": 5,
+        "detQ_min": 5,
+        "h": 1029,
+        "rank_F3_M": 43,
+        "rank_F7_M": 41,
+        "v3_h": 1,
+        "v7_h": 3
+      }
+    ],
+    "h_cap": 1312
+  },
+  "endpoint": {
+    "Delta": 15,
+    "n3": 708,
+    "rank": 44,
+    "traceB": 60,
+    "traceB2_floor": "108/1",
+    "traceC": 8,
+    "traceC2_floor": "8/1",
+    "trace_rank_bounds": [
+      {
+        "cauchy": "64/1",
+        "combined_floor": "64/1",
+        "nonzero_rank": 1,
+        "pseudodeterminant_amgm": "1/1"
+      },
+      {
+        "cauchy": "32/1",
+        "combined_floor": "32/1",
+        "nonzero_rank": 2,
+        "pseudodeterminant_amgm": "2/1"
+      },
+      {
+        "cauchy": "64/3",
+        "combined_floor": "64/3",
+        "nonzero_rank": 3,
+        "pseudodeterminant_amgm": "3/1"
+      },
+      {
+        "cauchy": "16/1",
+        "combined_floor": "16/1",
+        "nonzero_rank": 4,
+        "pseudodeterminant_amgm": "4/1"
+      },
+      {
+        "cauchy": "64/5",
+        "combined_floor": "64/5",
+        "nonzero_rank": 5,
+        "pseudodeterminant_amgm": "5/1"
+      },
+      {
+        "cauchy": "32/3",
+        "combined_floor": "32/3",
+        "nonzero_rank": 6,
+        "pseudodeterminant_amgm": "6/1"
+      },
+      {
+        "cauchy": "64/7",
+        "combined_floor": "64/7",
+        "nonzero_rank": 7,
+        "pseudodeterminant_amgm": "7/1"
+      },
+      {
+        "cauchy": "8/1",
+        "combined_floor": "8/1",
+        "nonzero_rank": 8,
+        "pseudodeterminant_amgm": "8/1"
+      },
+      {
+        "cauchy": "64/9",
+        "combined_floor": "9/1",
+        "nonzero_rank": 9,
+        "pseudodeterminant_amgm": "9/1"
+      },
+      {
+        "cauchy": "32/5",
+        "combined_floor": "10/1",
+        "nonzero_rank": 10,
+        "pseudodeterminant_amgm": "10/1"
+      },
+      {
+        "cauchy": "64/11",
+        "combined_floor": "11/1",
+        "nonzero_rank": 11,
+        "pseudodeterminant_amgm": "11/1"
+      },
+      {
+        "cauchy": "16/3",
+        "combined_floor": "12/1",
+        "nonzero_rank": 12,
+        "pseudodeterminant_amgm": "12/1"
+      },
+      {
+        "cauchy": "64/13",
+        "combined_floor": "13/1",
+        "nonzero_rank": 13,
+        "pseudodeterminant_amgm": "13/1"
+      },
+      {
+        "cauchy": "32/7",
+        "combined_floor": "14/1",
+        "nonzero_rank": 14,
+        "pseudodeterminant_amgm": "14/1"
+      },
+      {
+        "cauchy": "64/15",
+        "combined_floor": "15/1",
+        "nonzero_rank": 15,
+        "pseudodeterminant_amgm": "15/1"
+      },
+      {
+        "cauchy": "4/1",
+        "combined_floor": "16/1",
+        "nonzero_rank": 16,
+        "pseudodeterminant_amgm": "16/1"
+      },
+      {
+        "cauchy": "64/17",
+        "combined_floor": "17/1",
+        "nonzero_rank": 17,
+        "pseudodeterminant_amgm": "17/1"
+      },
+      {
+        "cauchy": "32/9",
+        "combined_floor": "18/1",
+        "nonzero_rank": 18,
+        "pseudodeterminant_amgm": "18/1"
+      },
+      {
+        "cauchy": "64/19",
+        "combined_floor": "19/1",
+        "nonzero_rank": 19,
+        "pseudodeterminant_amgm": "19/1"
+      },
+      {
+        "cauchy": "16/5",
+        "combined_floor": "20/1",
+        "nonzero_rank": 20,
+        "pseudodeterminant_amgm": "20/1"
+      },
+      {
+        "cauchy": "64/21",
+        "combined_floor": "21/1",
+        "nonzero_rank": 21,
+        "pseudodeterminant_amgm": "21/1"
+      },
+      {
+        "cauchy": "32/11",
+        "combined_floor": "22/1",
+        "nonzero_rank": 22,
+        "pseudodeterminant_amgm": "22/1"
+      },
+      {
+        "cauchy": "64/23",
+        "combined_floor": "23/1",
+        "nonzero_rank": 23,
+        "pseudodeterminant_amgm": "23/1"
+      },
+      {
+        "cauchy": "8/3",
+        "combined_floor": "24/1",
+        "nonzero_rank": 24,
+        "pseudodeterminant_amgm": "24/1"
+      },
+      {
+        "cauchy": "64/25",
+        "combined_floor": "25/1",
+        "nonzero_rank": 25,
+        "pseudodeterminant_amgm": "25/1"
+      },
+      {
+        "cauchy": "32/13",
+        "combined_floor": "26/1",
+        "nonzero_rank": 26,
+        "pseudodeterminant_amgm": "26/1"
+      },
+      {
+        "cauchy": "64/27",
+        "combined_floor": "27/1",
+        "nonzero_rank": 27,
+        "pseudodeterminant_amgm": "27/1"
+      },
+      {
+        "cauchy": "16/7",
+        "combined_floor": "28/1",
+        "nonzero_rank": 28,
+        "pseudodeterminant_amgm": "28/1"
+      },
+      {
+        "cauchy": "64/29",
+        "combined_floor": "29/1",
+        "nonzero_rank": 29,
+        "pseudodeterminant_amgm": "29/1"
+      },
+      {
+        "cauchy": "32/15",
+        "combined_floor": "30/1",
+        "nonzero_rank": 30,
+        "pseudodeterminant_amgm": "30/1"
+      },
+      {
+        "cauchy": "64/31",
+        "combined_floor": "31/1",
+        "nonzero_rank": 31,
+        "pseudodeterminant_amgm": "31/1"
+      },
+      {
+        "cauchy": "2/1",
+        "combined_floor": "32/1",
+        "nonzero_rank": 32,
+        "pseudodeterminant_amgm": "32/1"
+      },
+      {
+        "cauchy": "64/33",
+        "combined_floor": "33/1",
+        "nonzero_rank": 33,
+        "pseudodeterminant_amgm": "33/1"
+      },
+      {
+        "cauchy": "32/17",
+        "combined_floor": "34/1",
+        "nonzero_rank": 34,
+        "pseudodeterminant_amgm": "34/1"
+      },
+      {
+        "cauchy": "64/35",
+        "combined_floor": "35/1",
+        "nonzero_rank": 35,
+        "pseudodeterminant_amgm": "35/1"
+      },
+      {
+        "cauchy": "16/9",
+        "combined_floor": "36/1",
+        "nonzero_rank": 36,
+        "pseudodeterminant_amgm": "36/1"
+      },
+      {
+        "cauchy": "64/37",
+        "combined_floor": "37/1",
+        "nonzero_rank": 37,
+        "pseudodeterminant_amgm": "37/1"
+      },
+      {
+        "cauchy": "32/19",
+        "combined_floor": "38/1",
+        "nonzero_rank": 38,
+        "pseudodeterminant_amgm": "38/1"
+      },
+      {
+        "cauchy": "64/39",
+        "combined_floor": "39/1",
+        "nonzero_rank": 39,
+        "pseudodeterminant_amgm": "39/1"
+      },
+      {
+        "cauchy": "8/5",
+        "combined_floor": "40/1",
+        "nonzero_rank": 40,
+        "pseudodeterminant_amgm": "40/1"
+      },
+      {
+        "cauchy": "64/41",
+        "combined_floor": "41/1",
+        "nonzero_rank": 41,
+        "pseudodeterminant_amgm": "41/1"
+      },
+      {
+        "cauchy": "32/21",
+        "combined_floor": "42/1",
+        "nonzero_rank": 42,
+        "pseudodeterminant_amgm": "42/1"
+      },
+      {
+        "cauchy": "64/43",
+        "combined_floor": "43/1",
+        "nonzero_rank": 43,
+        "pseudodeterminant_amgm": "43/1"
+      },
+      {
+        "cauchy": "16/11",
+        "combined_floor": "44/1",
+        "nonzero_rank": 44,
+        "pseudodeterminant_amgm": "44/1"
+      }
+    ]
+  },
+  "explicit_abstract_survivor": {
+    "block_description": {
+      "B": "S*Q = I_40 direct_sum (A2^2) direct_sum (A2^2)",
+      "G": "21*S inverse",
+      "Q": "(E8 inverse)^5 direct_sum A2^2",
+      "S": "E8^5 direct_sum A2^2"
+    },
+    "facts": {
+      "A2_positive_definite": true,
+      "B_congruent_I_mod_2": true,
+      "B_equals_SQ": true,
+      "B_symmetric": true,
+      "E8_inverse_even": true,
+      "E8_inverse_positive_definite": true,
+      "E8_positive_definite": true,
+      "G_B_equals_21Q": true,
+      "G_even": true,
+      "G_minimum_lower_bound": 14,
+      "G_symmetric": true,
+      "Q_even": true,
+      "Q_symmetric": true,
+      "S_G_equals_21I": true,
+      "S_even": true,
+      "S_symmetric": true,
+      "detB": 81,
+      "detG": 1672655330303207857805734110126756703013677578807846676809,
+      "detQ": 9,
+      "detS_h": 9,
+      "rank": 44,
+      "rankC": 2,
+      "traceB": 60,
+      "traceC": 8,
+      "traceC2": 32
+    },
+    "scope": "Exact survivor of the determinant/scaled-dual/endomorphism relaxation; no primitive embedding in Z^231, 231-by-231 projector, Schur-square W, or graph is asserted."
+  },
+  "frozen_inputs": {
+    "verification/2026-07-23-wave20-global-schur-audit.md": {
+      "actual_sha256": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+      "expected_sha256": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+      "matches": true
+    },
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": {
+      "actual_sha256": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+      "expected_sha256": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+      "matches": true
+    },
+    "verification/wave23-endpoint-crosscheck/2026-07-23T200645Z-correction-audit.md": {
+      "actual_sha256": "791d74340c8a84a9993f9a5179c66baf0b2f7e431df5fb7eda2f593195f9bf53",
+      "expected_sha256": "791d74340c8a84a9993f9a5179c66baf0b2f7e431df5fb7eda2f593195f9bf53",
+      "matches": true
+    },
+    "verification/wave23-index-pranks/2026-07-23T192952Z-audit.md": {
+      "actual_sha256": "bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116",
+      "expected_sha256": "bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116",
+      "matches": true
+    }
+  },
+  "local_endpoint": {
+    "diagonal_excess_units": 84,
+    "harmonic_q12": {
+      "excluded": true,
+      "gap_lhs_minus_rhs": 5520,
+      "lhs": 1904400,
+      "rhs": 1898880
+    },
+    "local_diagonal_lower_table": [
+      {
+        "excess_units_over_4": 2,
+        "positive_multiple_of_4_lower": 12,
+        "q": 0,
+        "rational_lower": "396/43"
+      },
+      {
+        "excess_units_over_4": 0,
+        "positive_multiple_of_4_lower": 4,
+        "q": 1,
+        "rational_lower": "99/43"
+      },
+      {
+        "excess_units_over_4": 0,
+        "positive_multiple_of_4_lower": 4,
+        "q": 2,
+        "rational_lower": "0/1"
+      },
+      {
+        "excess_units_over_4": 0,
+        "positive_multiple_of_4_lower": 4,
+        "q": 3,
+        "rational_lower": "99/43"
+      },
+      {
+        "excess_units_over_4": 2,
+        "positive_multiple_of_4_lower": 12,
+        "q": 4,
+        "rational_lower": "396/43"
+      },
+      {
+        "excess_units_over_4": 5,
+        "positive_multiple_of_4_lower": 24,
+        "q": 5,
+        "rational_lower": "891/43"
+      },
+      {
+        "excess_units_over_4": 9,
+        "positive_multiple_of_4_lower": 40,
+        "q": 6,
+        "rational_lower": "1584/43"
+      },
+      {
+        "excess_units_over_4": 14,
+        "positive_multiple_of_4_lower": 60,
+        "q": 7,
+        "rational_lower": "2475/43"
+      },
+      {
+        "excess_units_over_4": 20,
+        "positive_multiple_of_4_lower": 84,
+        "q": 8,
+        "rational_lower": "3564/43"
+      },
+      {
+        "excess_units_over_4": 28,
+        "positive_multiple_of_4_lower": 116,
+        "q": 9,
+        "rational_lower": "4851/43"
+      },
+      {
+        "excess_units_over_4": 36,
+        "positive_multiple_of_4_lower": 148,
+        "q": 10,
+        "rational_lower": "6336/43"
+      },
+      {
+        "excess_units_over_4": 46,
+        "positive_multiple_of_4_lower": 188,
+        "q": 11,
+        "rational_lower": "8019/43"
+      },
+      {
+        "excess_units_over_4": 57,
+        "positive_multiple_of_4_lower": 232,
+        "q": 12,
+        "rational_lower": "9900/43"
+      }
+    ],
+    "q11_centered_diagonal": "1291/5",
+    "scalar_survivor_profile": {
+      "limitation": "Satisfies the scalar q budgets only; no graph or matrix realization is asserted.",
+      "multiplicities": {
+        "2": 221,
+        "3": 10
+      },
+      "sum_q": 472,
+      "sum_q_minus_2": 10,
+      "vertex_count": 231
+    },
+    "sum_q": 472,
+    "sum_q_minus_2": 10,
+    "trace_A4": 1260,
+    "two_q11_excluded": true
+  },
+  "log_inequality_certificate": {
+    "c_positive": true,
+    "derivative_coefficient_check": {
+      "expanded": [
+        [
+          "-1/1",
+          "2/3"
+        ],
+        [
+          "-1/1",
+          "-2/3"
+        ],
+        [
+          "2/1",
+          "0/1"
+        ]
+      ],
+      "factored": [
+        [
+          "-1/1",
+          "2/3"
+        ],
+        [
+          "-1/1",
+          "-2/3"
+        ],
+        [
+          "2/1",
+          "0/1"
+        ]
+      ],
+      "match": true
+    },
+    "log3_lower": "1541989106264611/1403578975518720",
+    "log3_upper": "3854972776816171/3508947438796800",
+    "lower_gt_2_over_3": true,
+    "negative_x_auxiliary_derivative": "log(3)-2/(1+2*x) < log(3)-2 < 0",
+    "positive_x_derivative_numerator_factorization": "(x-1)*(2*log(3)*x + log(3)-2/3)",
+    "upper_lt_2": true
+  },
+  "scope": "Necessary restrictions at n3=708 and an exact survivor of the abstract projector-lattice package; no target resolution.",
+  "status": "DERIVED_EXACT_REPLAY_PENDING_INDEPENDENT_VERIFIER"
+}

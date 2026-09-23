@@ -1,0 +1,54 @@
+{
+  "boundary": {
+    "Q0_7059_excluded": false,
+    "Q_ge_7060_proved": false,
+    "conway_99": "UNKNOWN",
+    "current_conditional_Q_lower": 7059,
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "rank_11_excluded": false
+  },
+  "claim": {
+    "combined_full_flag_capacity": 5,
+    "combined_selected_capacity": 5,
+    "formula": "m_(x->y)+m_(y->x)<=5",
+    "status": "VERIFIED_WITH_SCOPE"
+  },
+  "consequences": {
+    "bidirectional_row": "epsilon>=5b",
+    "selected_row": "3n3+4p3<=5|U|",
+    "strict_bound_requires": "an independent positive lower bound on b"
+  },
+  "format": "wave203-two-center-incidence-verification-v1",
+  "independent": {
+    "freeze_sha256": "43721bc8b667209600dea1aff80a5b930f03b63d02062eb69ff7adf8abe3e2d1",
+    "replay": "PASS",
+    "tests": "11/11 PASS"
+  },
+  "null_control": {
+    "Q0": 7059,
+    "asserted_object": false,
+    "b": 0,
+    "capacity_slack": 708,
+    "epsilon": 708,
+    "nonprivate_profile": {
+      "2": 234,
+      "3": 3
+    }
+  },
+  "sources": {
+    "hostile": {
+      "manifest_sha256": "62019dec2c954b2354279afd4dc114daffafbef0bff3678ddca2fcb61cb1edb8",
+      "replay": "PASS",
+      "tests": "7/7 PASS"
+    },
+    "mathematical_discrepancy": false,
+    "primary": {
+      "manifest_sha256": "b412cce1a737b3b50718aabb399978ca2956cea0edbbe1c1f955f8083447d5b8",
+      "replay": "PASS",
+      "tests": "7/7 PASS"
+    },
+    "source_comparison_tests": "5/5 PASS"
+  },
+  "verdict": "VERIFIED_TWO_CENTER_CAPACITY_NO_BOUND_PROMOTION"
+}

@@ -1,0 +1,28 @@
+role: proof_a
+date_utc: 2026-07-27T20:12:59Z
+git_commit: a4a61658356253fb95cf68252c972a4f79df38fe
+claim_label: UNKNOWN
+scope: bounded proof-producing Exact run on branch15 AND x187=0
+inputs:
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero.opb
+    sha256: b1681416ee2860c4b40ce854fb533062af8e1c7a9dc0c423ba0c5f0545677d08
+  - path: /home/researcher/.cache/conway-tools/exact/build-wave3/Exact
+    sha256: 842ac70b4e938d24f537a56513ff64ea845206c714ce34da467ce146c5c5c928
+method: >-
+  Run the independently verified complementary branch-15 formula with pinned
+  Exact, a 120-second solver timeout setting, proof assumptions disabled, and
+  a retained nonterminal raw proof hash.
+command: >-
+  Exact --timeout=120 --proof-assumptions=0
+  --proof-log=branch15-x187-zero-120s.raw.pbp
+  branch-15-x187-zero.opb
+outputs:
+  - path: attempts/wave55-branch15-remainder-search/solver.txt
+    sha256: c89ef24b102e9c2d0f3006f14f96e0e66321bf39b372d2105df12febce21eec5
+  - path: attempts/wave55-branch15-remainder-search/result.json
+    sha256: 6451828026bcd11f154f483fa7330cf665c704531a30851f4dea9da7d1decd9b
+limitations:
+  - The solver returned UNKNOWN and contributes zero proof coverage.
+  - The 488832021-byte partial proof is nonterminal and excluded from publication.
+  - No terminal proof replay is claimed or needed for the absence of a mathematical claim.
+  - No complete case, endpoint, graph, upper-bound improvement, or novelty claim follows.

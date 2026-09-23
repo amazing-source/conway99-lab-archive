@@ -1,0 +1,71 @@
+{
+  "schema": "conditional-n3-33-census-manifest-v1",
+  "date_utc": "2026-07-23T02:25:06Z",
+  "git_commit": "3d47bb260a71c5c2606347d8bb53e3ad766236e8",
+  "claim_label": "VERIFIED",
+  "scope": "Conditional n3=33 all-q=2 branch under the committed Wave 6-8 premises",
+  "catalog": {
+    "source_page": "https://houseofgraphs.org/meta-directory/quartic",
+    "source_data": "https://houseofgraphs.org/data/quartics/11_4_3.g6.gz",
+    "redistributed_here": false,
+    "sha256_compressed": "05ee6bb0c2b40d63d5c44efc8e89ed1c0a381a170d81a3d052749c8edf6b14fd",
+    "sha256_decompressed": "aadcc58be82382419659d934700924bde7b916059ef47639c9178ef6d0f5a6e7",
+    "connected_type_count": 265,
+    "unique_disconnected_type_count": 1,
+    "total_type_count": 266,
+    "canonical_codes_sha256": "8a7bd946e034575d5396f85ef8438c6db7fbc4283c225802f3022fd20d8b2001"
+  },
+  "implementations": {
+    "primary": {
+      "path": "verification/n3-33-equality/audit_exhaustive.py",
+      "sha256": "6f22d93c5575fea96dd459a1425fddb268408959e3c6f5e1ef21449f6de8ee1f"
+    },
+    "independent_verifier": {
+      "path": "verification/n3-33-equality/verify_exhaustive.py",
+      "sha256": "31d0c9158d471e16c85922c4647e5081ba4510b430eb1228250084b50bb4bb73"
+    }
+  },
+  "profiles": {
+    "A": {"x2": 12, "x3": 3, "x4": 0, "x5": 0, "consumed_K_edges": 21},
+    "B": {"x2": 13, "x3": 1, "x4": 1, "x5": 0, "consumed_K_edges": 22},
+    "C": {"x2": 15, "x3": 1, "x4": 0, "x5": 0, "consumed_K_edges": 18}
+  },
+  "enumeration": {
+    "family_counts_by_profile": {"A": 15, "B": 0, "C": 595},
+    "types_with_profile": {"A": 11, "B": 0, "C": 119},
+    "total_families": 610,
+    "family_core_sha256": "3b48bc37fca98b2ce049a53b6b79d26e55853f76faaa2362576905eb1edd6bc0",
+    "per_type_sha256": "c357c675a516349e6d5890ac9ba97c9cd67b393b541f3b9754dc9156aaa2e56f",
+    "bad_forced_edges_per_family_minimum": 23,
+    "bad_forced_edges_per_family_maximum": 33,
+    "aggregate_bad_forced_degree_histogram": {"1": 14488, "2": 3840},
+    "surviving_families": 0
+  },
+  "independent_replay": {
+    "status": "PASS",
+    "relabeling_checks_per_type": 2,
+    "mutation_checks_rejected": [
+      "drop_failure_record",
+      "alter_witness_degree",
+      "alter_family_digest",
+      "alter_per_type_count"
+    ],
+    "python": "3.13.14",
+    "standard_library_only": true
+  },
+  "archival_run": {
+    "example_certificate_sha256": "44b2e82bd55363437b68c306811c8234055f1b3c30f5b63f313ae5326d1b0dd2",
+    "certificate_committed": false,
+    "note": "The million-byte witness certificate is regenerable from the hashed catalog and primary script. Its timestamp, paths, and runtime make the full-file hash run-specific; deterministic family, type, and canonical-code digests are retained here."
+  },
+  "conclusion": {
+    "status": "EXHAUSTIVE_CONTRADICTION_UNDER_PREMISES",
+    "reason": "Every admissible point-clique family has a forced actual graph edge inside an active triangle with d_H equal to 1 or 2, outside the allowed set.",
+    "support_selection_needed": false
+  },
+  "limitations": [
+    "Connected-catalog completeness relies on the House of Graphs/Meringer genreg source count.",
+    "The external catalog is hashed and attributed but not redistributed in this repository.",
+    "The conclusion remains conditional on the committed Wave 6-8 premises and does not resolve Conway-99."
+  ]
+}

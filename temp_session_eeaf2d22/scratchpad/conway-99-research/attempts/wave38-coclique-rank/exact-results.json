@@ -1,0 +1,184 @@
+{
+  "claim_label": "CANDIDATE",
+  "coclique": {
+    "construction": "choose an edge xy with triangle mate z; the remaining 12 neighbors of x and 12 neighbors of y form an even-cycle 2-regular graph from the two local matchings and the cross matching; take one bipartition class and add z",
+    "guaranteed_size": 13,
+    "matching_union_partition_count": 11,
+    "normal_form_controls": [
+      {
+        "component_sizes": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "component_sizes": [
+          4,
+          4,
+          4,
+          4,
+          8
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "component_sizes": [
+          4,
+          4,
+          4,
+          12
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "component_sizes": [
+          4,
+          4,
+          8,
+          8
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "component_sizes": [
+          4,
+          4,
+          16
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          1,
+          1,
+          4
+        ]
+      },
+      {
+        "component_sizes": [
+          4,
+          8,
+          12
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "component_sizes": [
+          4,
+          20
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          1,
+          5
+        ]
+      },
+      {
+        "component_sizes": [
+          8,
+          8,
+          8
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "component_sizes": [
+          8,
+          16
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          2,
+          4
+        ]
+      },
+      {
+        "component_sizes": [
+          12,
+          12
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          3,
+          3
+        ]
+      },
+      {
+        "component_sizes": [
+          24
+        ],
+        "local_independent_set_size": 12,
+        "partition": [
+          6
+        ]
+      }
+    ]
+  },
+  "format": "wave38-coclique-rank-v1",
+  "limitations": [
+    "The statement is conditional on existence of the target graph.",
+    "It does not construct M, C, or a Conway graph.",
+    "It does not exclude n3=4158 or improve n3<=4158.",
+    "The 13-coclique construction is prior public mathematics; no novelty is claimed.",
+    "The rank argument requires independent adversarial verification."
+  ],
+  "result": {
+    "endpoint_rank_F7_C_lower_bound": 13,
+    "endpoint_reason": "C=2M-21I is congruent to 2M modulo 7",
+    "if_rank_F3_M_is_12_then_rank_F7_M_lower_bound": 14,
+    "parity_reason": "rank_F3(M)+rank_F7(M) is even",
+    "previous_project_lower_bound": 11,
+    "rank_F7_M_lower_bound": 13
+  },
+  "role": "proof_a",
+  "scope": "necessary characteristic-seven rank condition for every hypothetical srg(99,14,1,2)",
+  "triangle_projector": {
+    "coclique_gram": "N_I M N_I^T = 27I_13 + J_13",
+    "definition": "M=21E_0 on the 231 graph triangles",
+    "determinant": 6003785411879964840,
+    "determinant_formula": "27^12*(27+13)",
+    "determinant_mod_7": 5,
+    "incidence_identity": "N M N^T = 27I - 9A + J",
+    "rank_mod_7": 13
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "bound": {
+    "59C_over_39": "245322/39",
+    "C": 4158,
+    "Q": 6291,
+    "circuit_scalar_words": 13968,
+    "edge_added_projective": 6984,
+    "floor": 6290,
+    "remainder": 12
+  },
+  "capacity_rows": {
+    "leaf": "2*n1+4*n2+r1+2*r2+Y+2*W>=C",
+    "residual": "3*h+(3/2)*Y>=a2+a3+b3+c2"
+  },
+  "certificate": {
+    "all_remainder_coefficients_nonnegative": true,
+    "remainder_coefficients": {
+      "W": "37/39",
+      "a1": "17/39",
+      "a2": "17/39",
+      "a3": "5/39",
+      "b1": "4/13",
+      "r2": "35/117"
+    },
+    "scaled": "117*Q>=177*C",
+    "unscaled": "Q>=59*C/39"
+  },
+  "claim_label": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "integer_null": {
+    "I": 8316,
+    "Q0": 6291,
+    "exact3_slack": 1,
+    "is_object": false,
+    "leaf_slack": 1,
+    "residual_slack": "1",
+    "row": {
+      "C": 4158,
+      "W": 0,
+      "Y": 0,
+      "a1": 0,
+      "a2": 0,
+      "a3": 0,
+      "b1": 0,
+      "b3": 1280,
+      "c1": 1599,
+      "c2": 0,
+      "h": 427,
+      "n1": 0,
+      "n2": 640,
+      "n3": 1599,
+      "p2": 640,
+      "p3": 1599,
+      "r1": 1599,
+      "r2": 0
+    }
+  },
+  "search_scope": "fixed rational coefficient identity and one arithmetic row; no graph, code, cover, SAT, LP, configuration, enumeration, or isomorphism search"
+}

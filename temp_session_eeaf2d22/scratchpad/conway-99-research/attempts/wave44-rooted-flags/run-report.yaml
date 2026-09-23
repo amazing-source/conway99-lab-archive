@@ -1,0 +1,48 @@
+role: proof_a
+date_utc: 2026-07-27T16:27:02Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: DERIVED
+scope: >-
+  Conditional endpoint n3=4158: all ordered vertex-, edge-, and
+  nonedge-rooted neighborhood-category equations on the complete 208-class
+  order-seven deck.
+inputs:
+  - path: attempts/wave43-seven-deck-endpoint/endpoint_deck.py
+    sha256: c1c22443f82a39e8a306abc4776e5649b7838e57c084a77864cf0270c566a13f
+  - path: attempts/wave43-seven-deck-endpoint/exact-results.json
+    sha256: 06b498a736a511a7d6f5912bd4686e5d4eb30f4041477e3ee9cbc1704f1757c8
+method: >-
+  Derive exact one-root degree and ordered pair-root neighborhood-category
+  counts from (99,14,1,2); enumerate their coefficients on all 208 unrooted
+  seven-classes; prove exact modular rank increments; attack the prior
+  unrooted witness; discover an integer positive control with Z3; and replay
+  all 170 rows using ordinary Python integer arithmetic.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave44-rooted-flags\exact_check.py --verify
+  attempts\wave44-rooted-flags\exact-results.json;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave44-rooted-flags\verify_frozen.py;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  attempts\wave44-rooted-flags -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave44-rooted-flags\manifest_check.py
+outputs:
+  - path: attempts/wave44-rooted-flags/rooted-witness.json
+    sha256: 9be153b2487c3e07e20bffeb7ee6c890e69caa6e8d6b6e2936fbc5d8927bd5b9
+  - path: attempts/wave44-rooted-flags/exact-results.json
+    sha256: c41b194d2d4ae8121883d84ba4f5011f48336a58a0dd4f5cebf9ab560ee3ae19
+  - path: attempts/wave44-rooted-flags/row-system.json
+    sha256: fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722
+resource_bounds:
+  background_processes_started: 0
+  designed_working_set: below 2 GiB
+  minimum_recorded_host_free_memory_percent: 63.06
+limitations:
+  - Aggregate rooted counts do not impose subset-by-subset overlap consistency.
+  - The exact witness is not a graph or evidence that a graph exists.
+  - No positive-semidefinite joint flag moment matrix is imposed.
+  - The floating SciPy MILP infeasibility status was a false negative and is
+    explicitly not evidence.
+  - The endpoint, a strict upper bound, Conway-99, novelty, and priority remain
+    UNKNOWN.

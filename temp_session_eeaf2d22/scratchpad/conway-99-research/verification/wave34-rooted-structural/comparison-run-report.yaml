@@ -1,0 +1,73 @@
+role: verifier
+date_utc: 2026-07-24T21:00:06Z
+git_commit: NOT_QUERIED_NO_GIT_AUTHORIZED
+public_candidate_commit_supplied_by_orchestrator: 52c94e915927f791d30f680d12181a08567248fb
+claim_label: VERIFIED
+audit_verdict: STATIC_CLEAN_ROOM_COMPARISON_PASS
+scope: >-
+  Exact static comparison of the frozen Wave 34 rooted structural candidate
+  against the byte-frozen Stage-1 reconstruction. Verify the exact Wave33
+  coordinate binding, SNF, full Pb=2*1 single-column census, fixed action,
+  13+14+43 and 27+43 reconciliation, both directions of the rank-16
+  projector/integral-numerator equivalence, diagonal and modular claims,
+  and all graph-only scope walls.
+inputs:
+  manifest: verification/wave34-rooted-structural/comparison-input-freeze.sha256
+  manifest_sha256: 5131897dd4284f7cc8ada8a714ccf0b5340bf6a8d733af48833e19cf41be9772
+  stage1_manifest_sha256: 233a32ac6cb67bcb23b7b269cc6f3f889d943bd5d0714c4f54ead9cbf28c7681
+  candidate_release_sha256: 594ecaec43bb3fdea4dfdd3e866a9591951a01433834a09f2a726518785f5040
+  candidate_report_sha256: 535d237abcb841609835b1b8da11f2193cf17314c3dfe1dc427a3eec0a710246
+  candidate_results_sha256: bd68070b172329e161f46d85e634aecf2348da16de785331e60e4b93a1f4dfc5
+method: >-
+  Parse candidate source as inert AST/text; reconstruct candidate cyclic
+  coordinates and the exact Wave33 arrays separately; enumerate and bind all
+  Fano coordinate isomorphisms; check independent unit minors and rational
+  rank; reproduce the 2-factor totals by a line-side transfer and the full
+  census by ordered pairs of perfect matchings; evaluate P_F, H_R, C_star,
+  and modular ranks exactly over Fraction and finite fields; prove the
+  rank-16 projector/integral-numerator equivalence in both directions by
+  exact symbolic coefficients and invariant-summand checks; and reconcile
+  the Stage-1 pair census without assuming equivalence.
+command: >-
+  python -B -m unittest discover -s
+  verification/wave34-rooted-structural -p test_static_compare.py -v
+  && python -B
+  verification/wave34-rooted-structural/static_compare.py --output
+  verification/wave34-rooted-structural/comparison-results.json
+dependencies:
+  python: 3.13.14
+  libraries: standard library only
+  seed: none
+candidate_code_policy:
+  imported: false
+  executed: false
+  inspection: AST_AND_TEXT_ONLY
+observed_runtime:
+  test_count: 11
+  unittest_internal_seconds: 30.542
+  unittest_result: PASS
+  full_test_plus_result_regeneration_wall_seconds_approx: 62.2
+coverage:
+  candidate_release_hashes: PASS
+  candidate_input_hashes: PASS
+  stage1_bytes_unchanged: PASS
+  coordinate_binding: COMPLETE
+  snf: COMPLETE
+  single_column_census: COMPLETE
+  compatible_15_tuple_enumeration: NOT_PERFORMED
+  rank16_equivalence_directions: BOTH
+  automorphism_restriction: false
+  fixed_O_Q_design_restriction: false
+outputs:
+  verification/wave34-rooted-structural/static_compare.py: 650537d076da943810022aa1c98a2500145efb05dd47bfeb1cfce1c015b44a7c
+  verification/wave34-rooted-structural/test_static_compare.py: 1eb10464d7c920e3a8d90f672c4e82555d335ad4871c2a9a0162ef66ecace04e
+  verification/wave34-rooted-structural/comparison-results.json: d73e302d6af8bbd3df28c80ded5dc922e4e6ea5084234ed15531330646fc26d8
+  verification/wave34-rooted-structural/comparison-audit.md: dc4d9b060ff8bfb9b49ecdba28eebbcc784ebc165d2f399b00f46e0bc7ee5a93
+  verification/wave34-rooted-structural/objections-and-corrections.md: cf7ad3bdcf85d925996b1fdec7e46f2c811530d7aaeba8887b572a79d36c29ad
+  verification/wave34-rooted-structural/comparison-input-freeze.sha256: 5131897dd4284f7cc8ada8a714ccf0b5340bf6a8d733af48833e19cf41be9772
+limitations:
+  - The full census covers individual P-coupled columns, not compatible 15-column tuples.
+  - The 448879368 duplicate-free count is a necessary-rule upper domain, not an extendability count.
+  - No integral rank-16 projector or binary H is constructed.
+  - No complete binary exclusion or proof-producing infeasibility certificate is supplied.
+  - Rooted extension, endpoint, n3=708, Conway-99, and novelty remain UNKNOWN.

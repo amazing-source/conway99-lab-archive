@@ -1,0 +1,1235 @@
+{
+  "border_rank_lemma": {
+    "W_restrictions_used": "none",
+    "proof": "A congruence splits S into an invertible rank(S) block and its radical. Eliminating the border against the invertible block leaves [[0,Q],[Q^T,W']], Q=H^T U. Its kernel has dimension at most (rows(Q)-rank(Q))+(cols(Q)-rank(Q)), so its rank is at least 2*rank(Q).",
+    "statement": "For symmetric S and arbitrary U,W, rank([[S,U],[U^T,W]]) >= rank(S)+2*rank(H^T U), where the columns of H are a basis of ker(S)."
+  },
+  "claim_label": "VERIFIED",
+  "endpoint_arithmetic": {
+    "if_r3_equals_12": "r7 is even and at least 26",
+    "inherited_ranges": "12<=r3<=44 and 25<=r7<=44",
+    "parity": "r3+r7 is even",
+    "remaining_rank_pairs": 330
+  },
+  "format": "wave40-exact-coupling-independent-v1",
+  "frozen_inputs": {
+    "CONJECTURE.md": "7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58",
+    "verification/2026-07-27-wave39-orchestrator.md": "094db8281faf23f402f5093a617c43ebe428dae6f8ce1eceae8621472fc37111",
+    "verification/wave39-edge-local-rank/README.md": "ed749e5788c19a23629cee9f331cce0ef161500d9cb0d939eef3211085c0a405",
+    "verification/wave39-edge-local-rank/independent-results.json": "85b8d36d6ce5ebd638e957e1731864eff75f38405935f5e51ad5b629edea5966",
+    "verification/wave39-edge-local-rank/run-report.yaml": "0c16b53a1015f2aa8cd5e96767a97736c1da5ced6691d8ad4085f6579b44cad1"
+  },
+  "partition_results": {
+    "1+1+1+1+1+1": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 0,
+      "kernel_dimension": 2,
+      "local_rank_F7": 25,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 144,
+          "basis": [],
+          "permutation": [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              0
+            ]
+          ],
+          "selected_projection_rank": 0
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "12": 1
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 1
+          }
+        },
+        "dimensions_exhausted_through": 0,
+        "minimum_over_all_12_factorial_permutations": 0,
+        "observed_nonzero_projective_lines": 0
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "2+1+1+1+1": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 1,
+      "kernel_dimension": 4,
+      "local_rank_F7": 23,
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 68,
+          "basis": [
+            [
+              0,
+              1,
+              2,
+              4
+            ]
+          ],
+          "permutation": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              10,
+              5
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "selected_projection_rank": 1
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "8": 1
+            },
+            "maximum_matching_number": 8,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "1": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "10": 4,
+              "12": 2
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 6,
+            "subspaces": 6,
+            "subspaces_supporting_a_permutation": 2
+          }
+        },
+        "dimensions_exhausted_through": 1,
+        "minimum_over_all_12_factorial_permutations": 1,
+        "observed_nonzero_projective_lines": 6
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "2+2+1+1": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 2,
+      "kernel_dimension": 6,
+      "local_rank_F7": 21,
+      "partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 24,
+          "basis": [
+            [
+              0,
+              1,
+              0,
+              1,
+              3,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              4,
+              6,
+              3
+            ]
+          ],
+          "permutation": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              11,
+              8
+            ]
+          ],
+          "selected_projection_rank": 2
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "4": 1
+            },
+            "maximum_matching_number": 4,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "1": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "6": 24,
+              "8": 4
+            },
+            "maximum_matching_number": 8,
+            "raw_generator_subsets": 28,
+            "subspaces": 28,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "2": {
+            "duplicate_or_dependent_generator_subsets_removed": 88,
+            "matching_number_distribution": {
+              "10": 24,
+              "12": 8,
+              "6": 96,
+              "8": 162
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 378,
+            "subspaces": 290,
+            "subspaces_supporting_a_permutation": 8
+          }
+        },
+        "dimensions_exhausted_through": 2,
+        "minimum_over_all_12_factorial_permutations": 2,
+        "observed_nonzero_projective_lines": 28
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "2+2+2": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 3,
+      "kernel_dimension": 8,
+      "local_rank_F7": 19,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 12,
+          "basis": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              5,
+              4,
+              4
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              2,
+              2,
+              0,
+              2
+            ]
+          ],
+          "permutation": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              2
+            ]
+          ],
+          "selected_projection_rank": 3
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "0": 1
+            },
+            "maximum_matching_number": 0,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "1": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "2": 60,
+              "4": 6
+            },
+            "maximum_matching_number": 4,
+            "raw_generator_subsets": 66,
+            "subspaces": 66,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "2": {
+            "duplicate_or_dependent_generator_subsets_removed": 222,
+            "matching_number_distribution": {
+              "2": 480,
+              "4": 1251,
+              "6": 168,
+              "8": 24
+            },
+            "maximum_matching_number": 8,
+            "raw_generator_subsets": 2145,
+            "subspaces": 1923,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "3": {
+            "duplicate_or_dependent_generator_subsets_removed": 20016,
+            "matching_number_distribution": {
+              "10": 144,
+              "12": 32,
+              "2": 912,
+              "4": 11736,
+              "6": 11192,
+              "8": 1728
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 45760,
+            "subspaces": 25744,
+            "subspaces_supporting_a_permutation": 32
+          }
+        },
+        "dimensions_exhausted_through": 3,
+        "minimum_over_all_12_factorial_permutations": 3,
+        "observed_nonzero_projective_lines": 66
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "3+1+1+1": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 0,
+      "kernel_dimension": 2,
+      "local_rank_F7": 25,
+      "partition": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 144,
+          "basis": [],
+          "permutation": [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              0
+            ]
+          ],
+          "selected_projection_rank": 0
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "12": 1
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 1
+          }
+        },
+        "dimensions_exhausted_through": 0,
+        "minimum_over_all_12_factorial_permutations": 0,
+        "observed_nonzero_projective_lines": 0
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "3+2+1": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 1,
+      "kernel_dimension": 4,
+      "local_rank_F7": 23,
+      "partition": [
+        3,
+        2,
+        1
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 68,
+          "basis": [
+            [
+              0,
+              1,
+              2,
+              4
+            ]
+          ],
+          "permutation": [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              9,
+              7
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              0
+            ]
+          ],
+          "selected_projection_rank": 1
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "8": 1
+            },
+            "maximum_matching_number": 8,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "1": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "10": 4,
+              "12": 2
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 6,
+            "subspaces": 6,
+            "subspaces_supporting_a_permutation": 2
+          }
+        },
+        "dimensions_exhausted_through": 1,
+        "minimum_over_all_12_factorial_permutations": 1,
+        "observed_nonzero_projective_lines": 6
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "3+3": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 0,
+      "kernel_dimension": 2,
+      "local_rank_F7": 25,
+      "partition": [
+        3,
+        3
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 144,
+          "basis": [],
+          "permutation": [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              0
+            ]
+          ],
+          "selected_projection_rank": 0
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "12": 1
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 1
+          }
+        },
+        "dimensions_exhausted_through": 0,
+        "minimum_over_all_12_factorial_permutations": 0,
+        "observed_nonzero_projective_lines": 0
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "4+1+1": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 1,
+      "kernel_dimension": 4,
+      "local_rank_F7": 23,
+      "partition": [
+        4,
+        1,
+        1
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 32,
+          "basis": [
+            [
+              0,
+              1,
+              2,
+              4
+            ]
+          ],
+          "permutation": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              11,
+              8
+            ]
+          ],
+          "selected_projection_rank": 1
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "4": 1
+            },
+            "maximum_matching_number": 4,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "1": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "12": 2,
+              "8": 4
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 6,
+            "subspaces": 6,
+            "subspaces_supporting_a_permutation": 2
+          }
+        },
+        "dimensions_exhausted_through": 1,
+        "minimum_over_all_12_factorial_permutations": 1,
+        "observed_nonzero_projective_lines": 6
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "4+2": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 2,
+      "kernel_dimension": 6,
+      "local_rank_F7": 21,
+      "partition": [
+        4,
+        2
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 20,
+          "basis": [
+            [
+              0,
+              1,
+              2,
+              0,
+              5,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              5
+            ]
+          ],
+          "permutation": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              11,
+              11
+            ]
+          ],
+          "selected_projection_rank": 2
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "0": 1
+            },
+            "maximum_matching_number": 0,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "1": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "2": 20,
+              "4": 6,
+              "8": 2
+            },
+            "maximum_matching_number": 8,
+            "raw_generator_subsets": 28,
+            "subspaces": 28,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "2": {
+            "duplicate_or_dependent_generator_subsets_removed": 88,
+            "matching_number_distribution": {
+              "10": 8,
+              "12": 4,
+              "2": 48,
+              "4": 153,
+              "6": 24,
+              "8": 53
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 378,
+            "subspaces": 290,
+            "subspaces_supporting_a_permutation": 4
+          }
+        },
+        "dimensions_exhausted_through": 2,
+        "minimum_over_all_12_factorial_permutations": 2,
+        "observed_nonzero_projective_lines": 28
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "5+1": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 0,
+      "kernel_dimension": 2,
+      "local_rank_F7": 25,
+      "partition": [
+        5,
+        1
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 144,
+          "basis": [],
+          "permutation": [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              0
+            ]
+          ],
+          "selected_projection_rank": 0
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "12": 1
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 1
+          }
+        },
+        "dimensions_exhausted_through": 0,
+        "minimum_over_all_12_factorial_permutations": 0,
+        "observed_nonzero_projective_lines": 0
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    },
+    "6": {
+      "border_signature_count": 144,
+      "bordered_principal_rank_lower_bound": 25,
+      "even_part_count": 1,
+      "kernel_dimension": 4,
+      "local_rank_F7": 23,
+      "partition": [
+        6
+      ],
+      "projection_search": {
+        "canonical_witness": {
+          "allowed_pattern_count": 36,
+          "basis": [
+            [
+              0,
+              1,
+              1,
+              5
+            ]
+          ],
+          "permutation": [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              9
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              3
+            ]
+          ],
+          "selected_projection_rank": 1
+        },
+        "completeness_reason": "If selected signatures span dimension d, their nonzero members generate an observed-line subspace of dimension d; all such subspaces below and at the first witness dimension were exhausted.",
+        "dimension_censuses": {
+          "0": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "0": 1
+            },
+            "maximum_matching_number": 0,
+            "raw_generator_subsets": 1,
+            "subspaces": 1,
+            "subspaces_supporting_a_permutation": 0
+          },
+          "1": {
+            "duplicate_or_dependent_generator_subsets_removed": 0,
+            "matching_number_distribution": {
+              "12": 2,
+              "6": 4
+            },
+            "maximum_matching_number": 12,
+            "raw_generator_subsets": 6,
+            "subspaces": 6,
+            "subspaces_supporting_a_permutation": 2
+          }
+        },
+        "dimensions_exhausted_through": 1,
+        "minimum_over_all_12_factorial_permutations": 1,
+        "observed_nonzero_projective_lines": 6
+      },
+      "third_fibre_rule": "twelve columns indexed by a permutation X->Y"
+    }
+  },
+  "premises": {
+    "edge_local_normal_forms": "all eleven positive partitions of six",
+    "parameters": [
+      99,
+      14,
+      1,
+      2
+    ],
+    "rank_transfer": "rank_F7(N M N^T)=rank_F7(M)",
+    "transported_matrix": "N M N^T=J-I-2A over F_7"
+  },
+  "role": "verifier",
+  "scope": "Universal theorem rank_F7(M)>=25 for any hypothetical srg(99,14,1,2)",
+  "status_wall": {
+    "construction_produced": false,
+    "conway_99_status": "UNKNOWN",
+    "endpoint_excluded": false,
+    "general_upper_bound_improved_below_4158": false,
+    "literature_novelty": "UNKNOWN",
+    "strongest_general_upper_bound": "n3<=4158",
+    "universal_rank_F7_M_lower_bound": 25
+  },
+  "third_fibre": {
+    "definition": "Z=N(z)-{x,y} for an edge xy with triangle mate z",
+    "forced_border": "lambda=1 and mu=2 force Z--X and Z--Y to be perfect matchings, hence its 12 border signatures are indexed by one permutation X->Y",
+    "individual_signature_universe": 144,
+    "outside_local_block": true,
+    "size": 12
+  },
+  "universal_deduction": {
+    "all_partition_lower_bounds": [
+      25
+    ],
+    "minimum_bordered_principal_rank": 25,
+    "theorem": "rank_F7(M)>=25"
+  }
+}

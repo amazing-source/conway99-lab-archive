@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "all_declared_variables_occur": true,
+    "all_primary_variables_occur": true,
+    "explicit_D_hollow_and_symmetry_prefix": true,
+    "header_clause_count_matches": true,
+    "maximum_variable_matches_header": true,
+    "no_malformed_lines": true,
+    "no_repeated_literals": true,
+    "no_tautological_clauses": true
+  },
+  "header": {
+    "clauses": 4323943,
+    "variables": 1233001
+  },
+  "input": "attempts\\wave34-rooted-encoding\\rooted-complete.cnf",
+  "input_sha256": "2362d15f3a20df0a0d7745eb619a94061cee9911c8dda36c191fb6d728c1c3d3",
+  "limitations": [
+    "This audit checks DIMACS syntax, declared ranges/counts, variable occurrence, and the independently reconstructed explicit D gates.",
+    "The semantic equation-to-CNF mapping is additionally exercised by the generator unit tests and the independent full-graph witness checker.",
+    "This is not a SAT, UNSAT, or proof-checking result."
+  ],
+  "malformed": [],
+  "observed": {
+    "clause_length_histogram": {
+      "1": 12154,
+      "2": 1828218,
+      "3": 2483571
+    },
+    "clauses": 4323943,
+    "explicit_gate_prefix_clauses_checked": 4900,
+    "maximum_variable": 1233001,
+    "missing_declared_variable_count": 0,
+    "missing_primary_variables": [],
+    "repeated_literals": 0,
+    "tautologies": 0
+  },
+  "prefix_mismatches": [],
+  "role": "independent_formula_syntax_and_gate_auditor",
+  "schema_version": 1,
+  "status": "PASS"
+}

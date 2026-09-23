@@ -1,0 +1,52 @@
+role: verifier
+date_utc: 2026-07-23T19:51:58Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: VERIFIED
+audit_verdict: PASS_WITH_NONBLOCKING_HOSTILE_LEDGER_DEFECT
+scope: >-
+  Independent adversarial verification of the complete simpler Wave 23
+  endpoint cross-check, conditional on the frozen audited Wave 20 and
+  Wave 21 premises.
+inputs:
+  agents/2026-07-23-wave23-endpoint-crosscheck.md: 9f148ef34aab03445930ac880a4dbddf938a52e0cc09562057156263e93d31e7
+  attempts/wave23-endpoint-crosscheck/exact_check.py: 90d57665d8b5306ff03f73a09ec36dc2ed619d41a368f2378b630fd82ba93279
+  attempts/wave23-endpoint-crosscheck/test_exact_check.py: 34e08f976b0115c01a2b79f5b486c115d7876257fdbed89a61a8ae8f6ad9c275
+  attempts/wave23-endpoint-crosscheck/exact-results.json: 68fbf3f4e8ee0510b4585a7d455f33c154cb2be173760f86303ae372a8c2db6d
+  attempts/wave23-endpoint-crosscheck/failed-routes.md: 82af026c1883e59cb25afdfa239e7c6faf5ae53fbdb450d98290477b49af59c2
+  attempts/wave23-endpoint-crosscheck/failed-runs.md: b59a45e3f593f49cb0b876bb820cc4b13e96d626985c2db41de42a4fde587987
+  attempts/wave23-endpoint-crosscheck/input-freeze.sha256: 48d7f4a9340f20140e0c83cb49235f523ad87f6fb46057e9a387487293edbce0
+  attempts/wave23-endpoint-crosscheck/run-report.yaml: 9e197a5a0b27207a30626e3806a895ed301f737904f9ba84700a56ac55c0ba8f
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/wave21-lattice-extension/theorem-sources.md: 7f70a36ad124a94d983771274cb7b925a4f2560d835b0f607563045110107f8f
+method: >-
+  Blind preinspection freeze; independent scaled-dual integrality and
+  cofactor-parity proof; trace-square congruence and Cauchy floor; Newton
+  identity and pair-product AM-GM proof of the required Maclaurin case;
+  exact power comparison and determinant/index exhaustion; seventeen
+  independent hostile tests; submitted 25-test replay and byte-identical
+  regeneration; and adversarial review of every hostile witness.
+command: |-
+  cd verification/wave23-endpoint-crosscheck
+  python -B -m unittest -v test_independent_check.py
+  python -B independent_check.py --output independent-results.json
+  cd ../..
+  python -B -m unittest discover -s attempts/wave23-endpoint-crosscheck -p test_exact_check.py -v
+  python -B attempts/wave23-endpoint-crosscheck/exact_check.py --output verification/wave23-endpoint-crosscheck/submitted-regenerated.json
+outputs:
+  verification/wave23-endpoint-crosscheck/2026-07-23T195158Z-audit.md: 56cf0b8c14f9af50a58e60a8a6a273726a79d15782527ff8ea46194e9dea5d8c
+  verification/wave23-endpoint-crosscheck/preinspection-freeze.sha256: d13ef2a2adfafd3ce14be2624e08e2aa3b1f4804567113b143cfa01278578b54
+  verification/wave23-endpoint-crosscheck/postinspection-candidate-check.sha256: d13ef2a2adfafd3ce14be2624e08e2aa3b1f4804567113b143cfa01278578b54
+  verification/wave23-endpoint-crosscheck/independent_check.py: f6130dda5c0c30c6a8f070776637f064f971f6aa556086620b63282ff5813c09
+  verification/wave23-endpoint-crosscheck/test_independent_check.py: 6bd51eb6af3ae2fe0e1cfbc71acad0da71940fef1e314cf81f88d2ec3ba81c0e
+  verification/wave23-endpoint-crosscheck/independent-results.json: 69fc4ee307e45f2f4a4ccf1d41817636d38c92d5094080e938ecad66d7d24693
+  verification/wave23-endpoint-crosscheck/submitted-regenerated.json: 68fbf3f4e8ee0510b4585a7d455f33c154cb2be173760f86303ae372a8c2db6d
+  verification/wave23-endpoint-crosscheck/theorem-applicability.md: da58c273dfc43b8d501463c4994634af052fccfd191567a8ea8825ed896a5b52
+  verification/wave23-endpoint-crosscheck/verifier-failures.md: e738852983c460f41c5655deef2bb9946aa110f93011d98404206897abc11470
+limitations:
+  - The main conclusion is a conditional necessary bound, not target
+    construction or nonexistence.
+  - The submitted hostile witness (9,3,27) is refuted if the frozen
+    det(B)=1 mod 4 constraint is retained; this does not affect the proof.
+  - No actual projector matrix or graph is instantiated.
+  - The candidate Git commit, target status, and novelty were not promoted.

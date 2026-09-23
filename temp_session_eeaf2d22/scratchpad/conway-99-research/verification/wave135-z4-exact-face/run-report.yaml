@@ -1,0 +1,51 @@
+role: verifier
+date_utc: 2026-07-28T08:45:21Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: VERIFIED
+scope: >-
+  Independent verification of the sealed Wave135 exact rational
+  symmetrized-enumerator face, its rank and dependency certificates,
+  torsion-shell tightening, bounded UNKNOWN traces, and explicit logical
+  boundary.
+inputs:
+  - path: attempts/wave134-z4-symmetrized-enumerator/package-manifest.sha256
+    sha256: 581678d37091754f4bf1f197223a120d82f3051020a45b601e84889dfdad81e9
+  - path: attempts/wave134-z4-symmetrized-enumerator/exact-results.json
+    sha256: 8d3e39c4360341f7d3d6b8ac496853c0ae19e546ab8655cc6939b36edbddb1a2
+  - path: attempts/wave135-z4-exact-face/package-manifest.sha256
+    sha256: 6f466d96036d7fe48a1ab3be6590683fa46648a6fae5582913f9e4721e541f1a
+  - path: attempts/wave135-z4-exact-face/face-rank.json
+    sha256: 55cf42ef789b1a3d4c57a9018072e09e49a0b27d766738d8f820e253a0c99af2
+  - path: attempts/wave135-z4-exact-face/search-status.json
+    sha256: 4b1e9603edf933edae664346bb5271e59964a0879c358ad7f2582bd37e1321f1
+  - path: attempts/wave135-z4-exact-face/row-generation.json
+    sha256: 66d79880bd55aebb138e9d7daad0c16cfc33f5e6c308ce62c6e524d023e1b3b9
+  - path: attempts/wave135-z4-exact-face/row-generation-unshifted.json
+    sha256: 4a5de2e24c43cd8ea3044e5195e4360a18f224a8eb0fa6fdf9b278b14a33b87e
+method: >-
+  Reconstruct the 161 by 1119 reduced Krawtchouk matrix from frozen Wave134
+  statements; prove an exact shell-factor rank upper bound and matching
+  nonzero modular minors; replay all sealed dependency vectors and the
+  selected row basis against the independent matrix; verify affine and
+  torsion ranks; and treat bounded search traces strictly as null results.
+command: >-
+  python -B verification\wave135-z4-exact-face\independent_face.py
+  --verify verification\wave135-z4-exact-face\independent-results.json
+outputs:
+  - path: verification/wave135-z4-exact-face/independent_face.py
+    sha256: aae7e17700e47f570bc02b6c498414f166f895f7c6bfe308af43a4a109c23356
+  - path: verification/wave135-z4-exact-face/test_independent_face.py
+    sha256: 9ac8054c6eec7b2e8907cc25fb8922c75a633fe7fd421e062f6e6985192ace82
+  - path: verification/wave135-z4-exact-face/independent-results.json
+    sha256: 40e07b7a72d54ca771c47954b5783e5dbd149d4f371572833b322eb8e3e54f58
+  - path: verification/wave135-z4-exact-face/README.md
+    sha256: c680de364404d942168a9eba502f754df6c0ead332caf8fa12cf88d1c0d50536
+  - path: verification/wave135-z4-exact-face/protocol.md
+    sha256: c272ca0bc513d24f290e73f72d3a216d0db779075591291af3ef188c29b497d7
+  - path: verification/wave135-z4-exact-face/verification-report.md
+    sha256: 287bd1ae9e8de984392c9a3a7dbed66b0f35e5a88d52f1e1bc0254a6c2abf741
+limitations:
+  - Rational feasibility remains UNKNOWN_WALL; neither a primal nor a Farkas certificate was found.
+  - Integral enumerator feasibility and Z4-code realizability remain UNKNOWN.
+  - No adjacency matrix, graph, Conway-99 resolution, or novelty claim is produced.
+  - Integer shell divisibility is separate from rational feasibility.

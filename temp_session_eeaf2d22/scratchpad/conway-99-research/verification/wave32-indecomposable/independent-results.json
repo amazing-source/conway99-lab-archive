@@ -1,0 +1,330 @@
+{
+  "binary_231_row_hostile_control": {
+    "all_rows_quadratically_singular": true,
+    "base_row_count": 99,
+    "conclusion": "mod-2 generation, projector rank/idempotence, and connectivity alone cannot force the signed integral motif",
+    "distinct_row_count": 109,
+    "dropped_premise": "the integral entry multiplicities and positive-semidefinite integer lift are not imposed",
+    "gram": "22 hyperbolic 2x2 blocks",
+    "nonorthogonality_connected": true,
+    "nonzero_row_count": 231,
+    "odd_pair_count": 806,
+    "padding": "66 doubled singular rows, including 10 bridge pairs",
+    "projector_alternating": true,
+    "projector_idempotent": true,
+    "projector_kills_one": true,
+    "projector_rank": 44,
+    "rank_X": 44,
+    "row_count": 231,
+    "row_sum_zero": true
+  },
+  "candidate_manifest_validation": {
+    "all_hashes_match": true,
+    "artifact_manifest_entries": 7,
+    "input_freeze_entries": 5
+  },
+  "claim_label": "VERIFIED_SCOPED_WITH_NONBLOCKING_COVERAGE_GAPS",
+  "connectivity_and_decomposition": {
+    "actual_incidence_consequence": "Wave31 excludes a rootless integral split; therefore an actual rootless endpoint has connected row graph",
+    "decomposable_components": [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "dropped_minimum_mixed_row_norm": 4,
+    "forward_direction": "disconnected row graph plus row generation gives an integral orthogonal direct sum",
+    "indecomposable_components": [
+      [
+        0,
+        1
+      ]
+    ],
+    "indecomposable_rank_two_determinant": 15,
+    "reverse_direction": "under min(S)>=4, every norm-four row in an integral split has exactly one nonzero component",
+    "row_graph_definition": "i~j iff i!=j and x_i^T S x_j is nonzero"
+  },
+  "endpoint_pair_counts": {
+    "n3": 708,
+    "ordered": {
+      "minus_1": 1416,
+      "minus_2": 2300,
+      "plus_1": 5092,
+      "zero": 44322
+    },
+    "ordered_total": 53130,
+    "same_on_all_determinant_rows": [
+      9,
+      21,
+      49,
+      81,
+      189,
+      441,
+      729,
+      1029
+    ],
+    "sum_q": 472,
+    "unordered": {
+      "minus_1": 708,
+      "minus_2": 1150,
+      "plus_1": 2546,
+      "zero": 22161
+    },
+    "unordered_total": 26565
+  },
+  "finite_field_hostile_controls": {
+    "F3_full_rank_X_gram_rank": [
+      1,
+      0
+    ],
+    "F3_nonself_gram": [
+      [
+        1
+      ]
+    ],
+    "F7_full_rank_X_gram_rank": [
+      1,
+      0
+    ],
+    "F7_nonself_gram": [
+      [
+        1
+      ]
+    ],
+    "false_rank_inference": "full column rank of X does not imply rank(X^T X)=rank(X) over finite fields",
+    "false_universal_self_orthogonality": "the endpoint code is self-orthogonal mod p only when rank(G mod p)=0"
+  },
+  "finite_field_rank_table": [
+    {
+      "code_self_orthogonal_mod_3": false,
+      "code_self_orthogonal_mod_7": true,
+      "h": 9,
+      "hull_dimension_mod_3": 42,
+      "hull_dimension_mod_7": 44,
+      "rank_G_mod_3": 2,
+      "rank_G_mod_7": 0,
+      "rank_M_mod_3": 42,
+      "rank_M_mod_7": 44,
+      "rank_S_mod_3": 42,
+      "rank_S_mod_7": 44,
+      "v3": 2,
+      "v7": 0
+    },
+    {
+      "code_self_orthogonal_mod_3": false,
+      "code_self_orthogonal_mod_7": false,
+      "h": 21,
+      "hull_dimension_mod_3": 43,
+      "hull_dimension_mod_7": 43,
+      "rank_G_mod_3": 1,
+      "rank_G_mod_7": 1,
+      "rank_M_mod_3": 43,
+      "rank_M_mod_7": 43,
+      "rank_S_mod_3": 43,
+      "rank_S_mod_7": 43,
+      "v3": 1,
+      "v7": 1
+    },
+    {
+      "code_self_orthogonal_mod_3": true,
+      "code_self_orthogonal_mod_7": false,
+      "h": 49,
+      "hull_dimension_mod_3": 44,
+      "hull_dimension_mod_7": 42,
+      "rank_G_mod_3": 0,
+      "rank_G_mod_7": 2,
+      "rank_M_mod_3": 44,
+      "rank_M_mod_7": 42,
+      "rank_S_mod_3": 44,
+      "rank_S_mod_7": 42,
+      "v3": 0,
+      "v7": 2
+    },
+    {
+      "code_self_orthogonal_mod_3": false,
+      "code_self_orthogonal_mod_7": true,
+      "h": 81,
+      "hull_dimension_mod_3": 40,
+      "hull_dimension_mod_7": 44,
+      "rank_G_mod_3": 4,
+      "rank_G_mod_7": 0,
+      "rank_M_mod_3": 40,
+      "rank_M_mod_7": 44,
+      "rank_S_mod_3": 40,
+      "rank_S_mod_7": 44,
+      "v3": 4,
+      "v7": 0
+    },
+    {
+      "code_self_orthogonal_mod_3": false,
+      "code_self_orthogonal_mod_7": false,
+      "h": 189,
+      "hull_dimension_mod_3": 41,
+      "hull_dimension_mod_7": 43,
+      "rank_G_mod_3": 3,
+      "rank_G_mod_7": 1,
+      "rank_M_mod_3": 41,
+      "rank_M_mod_7": 43,
+      "rank_S_mod_3": 41,
+      "rank_S_mod_7": 43,
+      "v3": 3,
+      "v7": 1
+    },
+    {
+      "code_self_orthogonal_mod_3": false,
+      "code_self_orthogonal_mod_7": false,
+      "h": 441,
+      "hull_dimension_mod_3": 42,
+      "hull_dimension_mod_7": 42,
+      "rank_G_mod_3": 2,
+      "rank_G_mod_7": 2,
+      "rank_M_mod_3": 42,
+      "rank_M_mod_7": 42,
+      "rank_S_mod_3": 42,
+      "rank_S_mod_7": 42,
+      "v3": 2,
+      "v7": 2
+    },
+    {
+      "code_self_orthogonal_mod_3": false,
+      "code_self_orthogonal_mod_7": true,
+      "h": 729,
+      "hull_dimension_mod_3": 38,
+      "hull_dimension_mod_7": 44,
+      "rank_G_mod_3": 6,
+      "rank_G_mod_7": 0,
+      "rank_M_mod_3": 38,
+      "rank_M_mod_7": 44,
+      "rank_S_mod_3": 38,
+      "rank_S_mod_7": 44,
+      "v3": 6,
+      "v7": 0
+    },
+    {
+      "code_self_orthogonal_mod_3": false,
+      "code_self_orthogonal_mod_7": false,
+      "h": 1029,
+      "hull_dimension_mod_3": 43,
+      "hull_dimension_mod_7": 41,
+      "rank_G_mod_3": 1,
+      "rank_G_mod_7": 3,
+      "rank_M_mod_3": 43,
+      "rank_M_mod_7": 41,
+      "rank_S_mod_3": 43,
+      "rank_S_mod_7": 41,
+      "v3": 1,
+      "v7": 3
+    }
+  ],
+  "frozen_inputs": {
+    "AGENTS.md": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+    "agents/2026-07-24-wave28-glue-discriminant.md": "3c1354a04f33602c6e339875c8de4f77d1874bd6e8f83dbcb712b91717d6c1ff",
+    "agents/2026-07-24-wave31-survivor-proof.md": "075566744e2622a4dfa402a125d394aef16dfcb3fc53b172176dce88bd951aaa",
+    "agents/2026-07-24-wave32-indecomposable-proof.md": "5e0e0ce6e33cd8f943d8026c2b9b01b74d9668234d4c9b2c46da6c0c9921b8ef",
+    "attempts/wave32-indecomposable/artifact-manifest.sha256": "451ca652a83b3a93fd11278c25dafe43bafabc3e06e1cac429064d32211d7138",
+    "attempts/wave32-indecomposable/exact-results.json": "bccde9635d973e030e004800abc08c37089e036faca1edc2bb85ed70ee731472",
+    "attempts/wave32-indecomposable/exact_check.py": "52bb6a1f9972c981779e9aa9269bd82bb89866cde68a911498e00a4c679dbdae",
+    "attempts/wave32-indecomposable/failed-routes.md": "68e4bd7a2ead23e034f2641824b96959e26d28bb4b54c9916965c3ec5fd3fecc",
+    "attempts/wave32-indecomposable/input-freeze.sha256": "502207fc5005c8bd60d592e159069fd52dda575c5ecefe9599686f6df0d8a669",
+    "attempts/wave32-indecomposable/run-report.yaml": "f1ec7cb716335a762f189f8032e5e179720d47385c33580ca0b01e6a4432298e",
+    "attempts/wave32-indecomposable/test_exact_check.py": "a3b46d56b246d557764162aad56be6109b6d9e40cdfdf3c3c9d3b02217cb497d",
+    "verification/2026-07-23-wave20-global-schur-audit.md": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+    "verification/wave28-glue-discriminant/audit.md": "5c1dc7978d571a9471837b45a36663c7c457b6434800776501e4967146956b86",
+    "verification/wave31-sign-commutant-skeptic/audit.md": "781027870b5e38617ea66757cbea403b2117aac8bb4b7543a61235bbb0faa856",
+    "verification/wave31-sign-commutant/audit.md": "f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0",
+    "verification/wave32-literature-audit/protocol-freeze.md": "3c645dcd4188c9c34ba9e04e2fbd966708d05080a33caa95c720a1fde46283d2"
+  },
+  "motif_trace": {
+    "factor": 2,
+    "identity": "tr(A_-1 A_-2^2) equals twice the number of unordered {-2,-2,-1} triangles",
+    "one_motif_trace": 2,
+    "rootless_required_trace": 0,
+    "two_motif_trace": 4
+  },
+  "pair_count_hostile_control": {
+    "conclusion": "connectivity and all endpoint pair multiplicities alone do not force the motif",
+    "connected": true,
+    "dropped_premise": "no positive-semidefinite rank-44 projector/frame realization",
+    "motif_count": 0,
+    "motif_trace": 0,
+    "unordered_counts": {
+      "minus_1": 708,
+      "minus_2": 1150,
+      "plus_1": 2546,
+      "zero": 22161
+    },
+    "vertex_count": 231
+  },
+  "primitive_row_generation": {
+    "consequence": "primitive endpoint X implies its 231 rows generate Z^44",
+    "criterion": "for full-column-rank integral X, the row lattice im(X^T) has index equal to the gcd of the maximal minors",
+    "nonprimitive_index": 2,
+    "nonprimitive_missing_vector": [
+      1,
+      0
+    ],
+    "primitive_index": 1,
+    "primitive_rows_generate": true
+  },
+  "root_motif": {
+    "canonical_all_ones_norm": 2,
+    "canonical_determinant": 20,
+    "canonical_gram": [
+      [
+        4,
+        -2,
+        -2
+      ],
+      [
+        -2,
+        4,
+        -1
+      ],
+      [
+        -2,
+        -1,
+        4
+      ]
+    ],
+    "canonical_relation": "two -2 edges and one -1 edge",
+    "positive_one_mutation_norms": [
+      6,
+      10,
+      22
+    ],
+    "raw_count": 3,
+    "raw_ordered_edge_triples": [
+      [
+        -2,
+        -2,
+        -1
+      ],
+      [
+        -2,
+        -1,
+        -2
+      ],
+      [
+        -1,
+        -2,
+        -2
+      ]
+    ],
+    "rootless_consequence": "the canonical switched motif is forbidden",
+    "sign_product_condition": "edge-sign product is negative",
+    "switching_class_count": 1
+  },
+  "schema_version": 1,
+  "scope": "independent necessary checks for a rootless integrally indecomposable rank-44 endpoint form",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "indecomposable_endpoint": "UNKNOWN",
+    "motif_forcing": "UNKNOWN",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  }
+}

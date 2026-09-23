@@ -1,0 +1,75 @@
+role: construction
+date_utc: 2026-07-27T13:59:08Z
+git_commit: ef49b60aafd67f9007f6c218c39fd50392453a1b
+claim_label: CANDIDATE
+scope: >-
+  Exact additional prism-blocking family forced by refined endpoint branch
+  15's seventh fixed triangle, plus combined generalized-unit closure and 64
+  bounded polarity probes, conditional on n3=4158.
+inputs:
+  - path: attempts/wave37-proof-producing-endpoint/branch-15-formula.json
+    sha256: 3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: attempts/wave41-proof-producing-search/branch-15-propagation-certificate.json
+    sha256: 3da90e49e4e9469bdc397af107d877ee7075ad551a6f8df1afbd8d5d1150707f
+  - path: attempts/wave41-proof-producing-search/branch-15-failed-literal-scout.json
+    sha256: bf08994b8709da64684800ede9706e46c8de34ff30b9db2f831d0b0f4c4d37c3
+method: >-
+  Independently reconstruct the 84 residual labels and 3,486 primary edge
+  IDs; derive x2 as the edge between labels (0,2) and (0,4); enumerate every
+  second triangle and matching compatible with the rooted scaffold; publish
+  all exact negative prism clauses atomically; scan the frozen OPB for exact
+  row overlap; simplify diagnostically by the Wave 41 closure; stream the base
+  and delta to a generalized-unit fixed point; replay both polarities of the
+  prior 32 high-pressure variables; retain every derivation source row.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave42-endpoint-certificate\seventh_triangle_strengthen.py
+  .\.venv\Scripts\python.exe -B attempts\wave42-endpoint-certificate\seventh_triangle_strengthen.py --verify
+  .\.venv\Scripts\python.exe -B attempts\wave42-endpoint-certificate\combined_propagation.py
+  .\.venv\Scripts\python.exe -B attempts\wave42-endpoint-certificate\combined_propagation.py --verify
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave42-endpoint-certificate -p "test_*.py" -v
+outputs:
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-result.json
+    sha256: 2faa09eee4217d19fc1e1ac8f9705129e1cd57d47c0016a1d2bc229d87d8b184
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz
+    sha256: 0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-active-delta.opb.gz
+    sha256: 63e07c1196c4cfd315f72b311221233fa61f608f0dd856f3d00391bd5f5286b9
+  - path: attempts/wave42-endpoint-certificate/branch-15-combined-propagation-certificate.json
+    sha256: ab05feb596c25d0fbb872a0d92978355638218350bdf7606c248ca98ae2469ce
+  - path: attempts/wave42-endpoint-certificate/branch-15-combined-failed-literal-scout.json
+    sha256: 41675e22b703b40d571313543ffb731eefa630e0205cf7c6a5bb5d1a7a44bc2e
+limitations:
+  - "The discovery package requires independent replay before promotion."
+  - "The strengthening applies only to refined endpoint branch 15."
+  - "Prisms with two unfixed triangles remain absent from the static formula."
+  - "Combined generalized-unit propagation derives no new assignment."
+  - "All 64 polarity probes are noncontradictory and prove no satisfiability."
+  - "No SAT assignment or checked UNSAT proof was obtained."
+  - "Endpoint proof coverage remains 0/33 and n3=4158 remains UNKNOWN."
+tests:
+  seventh_triangle_tests: "PASS: 11 tests in 14.995 seconds"
+  combined_propagation_tests: "PASS: 7 tests in 98.434 seconds"
+  exact_seventh_triangle_replay: PASS
+  exact_combined_closure_and_probe_replay: PASS
+  frozen_input_hashes: PASS
+  atomic_publication: PASS
+result:
+  raw_new_constraints: 64932
+  raw_width_3: 132
+  raw_width_5: 64800
+  exact_source_row_overlap: 0
+  active_after_wave41_closure: 33778
+  active_width_3: 91
+  active_width_4: 580
+  active_width_5: 33107
+  combined_forced_variables: 830
+  combined_forced_primary_variables: 174
+  delta_sourced_derivations: 0
+  polarity_probes: 64
+  failed_polarities: 0
+  candidate_implications: 0
+  branch_15: UNKNOWN
+  endpoint_cases_closed: 0
+  endpoint_cases_total: 33

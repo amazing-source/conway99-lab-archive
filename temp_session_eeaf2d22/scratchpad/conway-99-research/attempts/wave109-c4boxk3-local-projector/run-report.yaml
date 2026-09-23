@@ -1,0 +1,40 @@
+role: construction
+date_utc: 2026-07-28T03:54:20Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: DERIVED
+scope: >-
+  Conditional local lattice and characteristic-seven projector consequences
+  of a hypothetical srg(99,14,1,2) containing the Wave 105 induced C4
+  Cartesian K3 motif.
+inputs:
+  - path: attempts/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: 6edc7a5eb2f4a913f9e6af4936984246a75cef8f562167b3d7a99d1a26bbec35
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: attempts/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1
+  - path: verification/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: 2a24e3e5846558a9e93cd2f103e049816cef7f8dd4a200108643e44cc4c300ae
+  - path: attempts/wave107-c4boxk3-spectrum/package-manifest.sha256
+    sha256: 7e899602825d3cdf989affade8a1e5a6256f17ba911f6351ea8bfe4a3b05d2b0
+method: >-
+  Independent reconstruction of the forced incidence matrix; explicit
+  primitive kernel basis; exact Bareiss determinants; finite-field rank and
+  discriminant checks; block identities; exact rational and mod-seven Schur
+  complements; and Smith/index deductions from B^2=7B.
+command: >-
+  python -B attempts\wave109-c4boxk3-local-projector\exact_check.py
+  --output attempts\wave109-c4boxk3-local-projector\exact-results.json
+  --verify; python -B -m unittest discover
+  -s attempts\wave109-c4boxk3-local-projector -p "test_*.py" -v
+outputs:
+  - path: attempts/wave109-c4boxk3-local-projector/exact-results.json
+    sha256: 7835efcd502e5f85a841af9a93846de4d129e30b04781c54661017c955d2d9cf
+  - path: attempts/wave109-c4boxk3-local-projector/package-manifest.sha256
+    sha256: SELF_EXCLUDED
+limitations:
+  - Discovery cannot verify itself; independent verification is required.
+  - The derivation is conditional on the motif occurring in a hypothetical target graph.
+  - The imported global rank rows are not rederived here.
+  - No rank row is excluded.
+  - The full extension, Conway-99, and literature novelty remain UNKNOWN.

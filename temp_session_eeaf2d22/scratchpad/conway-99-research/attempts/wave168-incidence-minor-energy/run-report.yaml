@@ -1,0 +1,33 @@
+role: proof_b
+date_utc: 2026-07-28T15:37:02Z
+git_commit: 97fca7b5bd42d867e58e53d518a6bd2c39393004
+claim_label: DERIVED
+scope: >-
+  Recast the target as the partial linear incidence geometry of its unique
+  edge-triangles, translate P=0 to a block-codegree condition, and derive an
+  eight-point incidence-minor energy distinguishing cube and Wagner motifs.
+inputs:
+  - path: STRUCTURE.md
+    sha256: 442892c88342de1cc847de78e883348bfe023db3138bd21be313fcad2ad25de8
+  - path: verification/wave167-nonedge-core-fringe/package-manifest.sha256
+    sha256: 100624255e4e0c68a7ccdd8c5c17fd400d848cb9f5cbf481a1dc382e3579c1c4
+method: >-
+  Exact point-block incidence algebra, spectral transfer, a bijection between
+  block codegree three and induced prisms, Cauchy-Binet, motif determinant
+  evaluation, and neighborhood-triple code construction.
+command: none; paper derivation only
+outputs:
+  - path: attempts/wave168-incidence-minor-energy/README.md
+    sha256: 9ccddedf27f59295d83e8afe1807411a2b71bab517496b4cbe473ad171dd2ad5
+  - path: attempts/wave168-incidence-minor-energy/derivation.md
+    sha256: bee35fdbcbb31e0d09e0f446ec32cafeaa03f72cbf935aa3a073497130dfca05
+  - path: attempts/wave168-incidence-minor-energy/failed-routes.md
+    sha256: 45139d86a16ce650565d9f28ef28193f5fa8d74444f9666a3c2baee42f6c00cc
+  - path: attempts/wave168-incidence-minor-energy/protocol.md
+    sha256: 30059b460cdac43eefe7e0eda77e844a8b16c81735e7433ee5138b3a1ad3f098
+limitations:
+  - No useful sign for all other eight-point types is derived.
+  - The proposed incidence-minor classification is unexecuted.
+  - No strict n3 bound or endpoint exclusion follows.
+  - No heavy computation ran because host free memory was below the floor.
+  - Literature novelty and Conway-99 remain UNKNOWN.

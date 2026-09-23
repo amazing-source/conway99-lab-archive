@@ -1,0 +1,74 @@
+role: proof_b
+date_utc: 2026-07-27T18:11:13Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: CANDIDATE
+scope: >-
+  Combined real SDP scout using the exact Wave44 170-row endpoint count
+  system, nonnegativity, all three Wave45 finite moment families, all eight
+  Wave47 three-root moment families, and exact affine facial reduction.
+inputs:
+  - path: attempts/wave44-rooted-flags/row-system.json
+    sha256: fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722
+  - path: attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json
+    sha256: ffcf9f9942446d66c3559d97954217af3ba17c1978ea9417c6e99920d4a45420
+  - path: attempts/wave45-flag-moment/flag_moment-v1.py
+    sha256: 21ed58592eeced3433fdff0b98ae4f963b269ed0b39be05322f1dac42ce1be70
+  - path: attempts/wave47-three-root-moment/compact-handoff.json
+    sha256: 8b74110bc6ae983e288d448cd1a963f81521f178e8280bbbf5864274a1639a47
+  - path: attempts/wave47-three-root-moment/coefficients.json
+    sha256: 07b55f06ff8f7d5f2de53d92a3222366e122a7306028752ecd31c10962a824b3
+method: >-
+  Scale the 208 seven-class variables by C(99,7) and y=h11/4 by 4158;
+  impose all 170 positively row-scaled equalities, nonnegativity, and
+  1/2 <= y/4158 <= 1; form all eleven probability-normalized affine moment
+  matrices; run CVXPY 1.9.2 with Clarabel 0.11.1 and SCS 3.2.11 as numerical
+  scouts; exactly derive the universal affine kernels by rational row-span
+  checking and certify complementary ranks modulo three primes.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave48-conic-moment\exact_faces.py --verify
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave48-conic-moment -p "test_*.py" -v
+outputs:
+  - path: attempts/wave48-conic-moment/exact-faces.json
+    sha256: 49d157a2c6025f7a7d1149619959e3f488229d619a5c65a03a79e7a71a93f066
+  - path: attempts/wave48-conic-moment/clarabel-result.json
+    sha256: a6a57f68a6c409bc9ad10850cc19b76b168cf854540d0344dfd1e9c9ebbdc966
+  - path: attempts/wave48-conic-moment/scs-result.json
+    sha256: bca05d14a5c907fa6157c287a7f565fc71a6c398ab1646ec68bb0b28e4da4df8
+  - path: attempts/wave48-conic-moment/clarabel-exact-face-result.json
+    sha256: 93b9d0dd3a7f3d840dbc8e8fe4f6520643f2c9e05dd33872d90a79afe107b970
+result:
+  wave44_exact_affine_rank: 93
+  wave44_exact_affine_nullity: 116
+  exact_face_active_rank_nullity:
+    - [1, 15]
+    - [1, 18]
+    - [12, 5]
+    - [58, 6]
+    - [50, 6]
+    - [50, 6]
+    - [36, 6]
+    - [50, 6]
+    - [36, 6]
+    - [36, 6]
+    - [17, 3]
+  exact_feasible_vector: false
+  exact_infeasibility_witness: false
+  numerical_status: UNKNOWN
+  endpoint_n3_4158: UNKNOWN
+tests:
+  exact_face_replay: >-
+    PASS_EXACT_FACE_REPLAY
+    sha256=49d157a2c6025f7a7d1149619959e3f488229d619a5c65a03a79e7a71a93f066
+    families=11
+  unit_tests: "PASS: 5 tests in 0.029 seconds"
+  memory_floor: >-
+    PASS: all controlled stages enforced at least 20 percent free physical memory
+limitations:
+  - "All solver statuses and floating candidates are non-evidentiary."
+  - "No exact feasible vector was retained."
+  - "No exact rational infeasibility dual was obtained."
+  - "The bounded margin-zero/log-det run timed out and emitted no artifact."
+  - "The Wave47 coefficient package is CANDIDATE pending independent verification."
+  - "Aggregate PSD feasibility would not construct a graph."
+  - "No completed-graph automorphism is assumed."
+  - "The endpoint, strict upper bound, and Conway-99 remain UNKNOWN."

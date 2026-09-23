@@ -1,0 +1,92 @@
+{
+  "case_audit": {
+    "f11": {
+      "all_degree3_lhs": 9,
+      "contradiction": true,
+      "degree14_possible_in_simple_graph": false,
+      "required_rhs": 20
+    },
+    "f22": {
+      "cross_edge_equation": "3*degree3_vertices=14*degree14_vertices",
+      "degree14_neighbors_of_degree14": 0,
+      "degree14_neighbors_of_degree3": 3,
+      "integer_partition_solutions": []
+    },
+    "f99": {
+      "excluded_by_exact_order_11_scope": true,
+      "permutation_order": 1,
+      "surviving_model_is_identity": true
+    }
+  },
+  "claim_label": "VERIFIED",
+  "conditional_implication": {
+    "group_steps": [
+      "orbit_stabilizer_makes_11_divide_automorphism_group_order",
+      "cauchy_supplies_an_element_of_order_11"
+    ],
+    "no_order11_automorphism": true,
+    "no_vertex_transitive_realization": true,
+    "premise": "separate_complete_semiregular_C11_exclusion"
+  },
+  "feasible_fixed_degree_models": [
+    {
+      "degree14_neighbors_of_degree14_vertex": 0,
+      "degree14_neighbors_of_degree3_vertex": 0,
+      "degree14_vertices": 0,
+      "degree3_vertices": 0,
+      "f": 0
+    },
+    {
+      "degree14_neighbors_of_degree14_vertex": 14,
+      "degree14_neighbors_of_degree3_vertex": 0,
+      "degree14_vertices": 99,
+      "degree3_vertices": 0,
+      "f": 99
+    }
+  ],
+  "fixed_count_candidates": [
+    0,
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    77,
+    88,
+    99
+  ],
+  "fixed_degree_options": [
+    3,
+    14
+  ],
+  "fixed_free_orbit_count": 9,
+  "identity_scope": {
+    "identity_not_covered_by_primary_theorem": true,
+    "identity_order": 1,
+    "identity_satisfies_g_to_11_equals_identity": true
+  },
+  "limitations": [
+    "wave69_not_verified_here",
+    "conditional_symmetry_exclusion_does_not_exclude_asymmetric_graphs",
+    "unrestricted_conway_99_remains_UNKNOWN",
+    "novelty_not_assessed"
+  ],
+  "parameters": {
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "prime": 11,
+    "v": 99
+  },
+  "positive_nonidentity_models": [],
+  "primary_conclusion": "every_exact_order_11_automorphism_is_fixed_point_free",
+  "schema": "wave72-order11-independent-v1",
+  "semantic_sha256": "2e98283a52ab6b7542c750ab011aa2e61e525e2a290d74751efe824ff44bf2db",
+  "small_common_neighbor_sets_pointwise_fixed": {
+    "adjacent_pair_size": 1,
+    "both_less_than_prime": true,
+    "nonadjacent_pair_size": 2
+  },
+  "two_step_identity": "sum_neighbor_fixed_degrees=2*f-2"
+}

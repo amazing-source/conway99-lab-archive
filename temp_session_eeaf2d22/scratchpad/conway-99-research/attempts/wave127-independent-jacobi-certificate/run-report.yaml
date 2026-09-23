@@ -1,0 +1,50 @@
+role: proof_b
+date_utc: 2026-07-28T06:00:21Z
+git_commit: e1484c6564ddfde580191cdcb4a66a8f6ad7f2a2
+claim_label: CANDIDATE
+scope: >-
+  Rank-28, discriminant-16, level-7 index-10/index-70 Jacobi
+  necessary-condition relaxation through Fourier cutoffs 10, 12, 14,
+  and 16.
+inputs:
+  - path: attempts/wave127-independent-jacobi-certificate/jacobi_lp.py
+    sha256: fcdd72cbff59595697fed64b914adf4f53c78f1f8f72369b260bb9ef07c0a498
+method: >-
+  Independently derive the 239-dimensional weak-Jacobi module and
+  Fricke scaling; construct exact rational coefficient rows; make exact
+  invertible Fricke-eigen Fourier-echelon basis changes; reduce affine
+  equalities and duplicate half-spaces exactly; recursively parameterize
+  solver-suggested active faces over Q; substitute each final rational
+  vector into every unreduced row.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts/wave127-independent-jacobi-certificate/verify_candidate.py
+  --cutoff 16
+  --candidate
+  attempts/wave127-independent-jacobi-certificate/exact-candidate-cutoff16.json
+  --columns-cache
+  attempts/wave127-independent-jacobi-certificate/columns-cutoff16.pkl
+outputs:
+  - path: attempts/wave127-independent-jacobi-certificate/exact-candidate-cutoff10.json
+    sha256: 78f5ff7f648b27200c320d49f181fec2e953094d3007fc889ad195cc6c90c711
+  - path: attempts/wave127-independent-jacobi-certificate/exact-candidate-cutoff12.json
+    sha256: 6a1c6ef4c9751ff137f28dcc34d089b0254019733ef9eb63b80b14921de33281
+  - path: attempts/wave127-independent-jacobi-certificate/exact-candidate-cutoff14.json
+    sha256: ce9ce071ab97ee25e6be37ac812f067857ff9dfbe344232b723ae9271e95e0f3
+  - path: attempts/wave127-independent-jacobi-certificate/exact-candidate-cutoff16.json
+    sha256: 0e8aafd93819c5d7aa9643da1aa7a5c6cfe8f09fe1ed959570189a7595631670
+  - path: attempts/wave127-independent-jacobi-certificate/verification-cutoff10.json
+    sha256: 142fc5abd9d38a77dd14cefbd87f848d380f05ccc1ba1c40397748095deb15e7
+  - path: attempts/wave127-independent-jacobi-certificate/verification-cutoff12.json
+    sha256: 4d0440f565a95e9a8667cf831c3d74321ebe992d606713407215ab10448f3f05
+  - path: attempts/wave127-independent-jacobi-certificate/verification-cutoff14.json
+    sha256: 7860fddb16fd9633fbcb27f3631a9604dc092a82890f694dbb2f3d754063d8b3
+  - path: attempts/wave127-independent-jacobi-certificate/verification-cutoff16.json
+    sha256: efbadcbf4c31b05020dada402b15b26739a1943f547819df3d272e9fa2e4dbc3
+limitations: >-
+  Discovery has not independently promoted its own claim to VERIFIED.
+  The finite feasible points are necessary-condition null results only:
+  they construct neither a graph nor a lattice, do not prove rank-28
+  realizability, do not exclude rank 28, and leave Conway-99 UNKNOWN.
+  Floating statuses are diagnostic only.  Cutoffs above 16 remain
+  untested in this sealed wave.

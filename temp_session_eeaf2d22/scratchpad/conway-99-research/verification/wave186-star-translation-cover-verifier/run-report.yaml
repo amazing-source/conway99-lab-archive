@@ -1,0 +1,47 @@
+role: verifier
+date_utc: 2026-07-29T01:15:28Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Conditional Wave186 star-translation cover amplification:
+  multiplicity-two and multiplicity-three forced circuits, private-label
+  outside assignment, distinct triple companions, Q>=3696, total
+  projective short circuits at least 4389, and B4+...+B9>=8778.
+inputs:
+  - path: attempts/wave186-star-translation-cover/package-manifest.sha256
+    sha256: a3c16f5f4877877bc27d9c9b3d3dfe92ca3afb7a465f1faf5e5f54b3cc3aeabc
+  - path: verification/wave174-no-weight3-dual/package-manifest.sha256
+    sha256: ac34c8a3b045bec70e3a2080cb4365c0ea43cc732b313ecb3cec355a28f23450
+  - path: verification/wave179-global-transversal-circuits/package-manifest.sha256
+    sha256: 0f8dca5c3230861f22f15d7df74d6716623890de2080c5fa5dea29469ce4124c
+  - path: verification/wave180-capacity3-companion/package-manifest.sha256
+    sha256: 28788edf010292a2c17763a744dfcf1a90a6343c5f72981e82e1aeb5853b7bc5
+  - path: verification/wave181-c4-conic-equality/package-manifest.sha256
+    sha256: 889c05b6726a5dcafb5f66203355185d258c7763483bb35d931b4bcf374c76af
+method: >-
+  Clean-room coefficient reconstruction over F3, proper-star circuit
+  extraction, classification-scope audit, private-label incidence
+  counting, capacity-three assignment with maximum overlap, companion
+  involution injection, and exact linear combination. The discovery
+  checker was neither imported nor executed. No graph, code, SAT, cover,
+  configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave186-star-translation-cover-verifier\independent_check.py
+  --verify
+  verification\wave186-star-translation-cover-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave186-star-translation-cover-verifier\test_independent_check.py
+outputs:
+  - verification/wave186-star-translation-cover-verifier/README.md
+  - verification/wave186-star-translation-cover-verifier/audit.md
+  - verification/wave186-star-translation-cover-verifier/protocol.md
+  - verification/wave186-star-translation-cover-verifier/independent_check.py
+  - verification/wave186-star-translation-cover-verifier/independent-results.json
+  - verification/wave186-star-translation-cover-verifier/test_independent_check.py
+  - verification/wave186-star-translation-cover-verifier/input-freeze.sha256
+limitations:
+  - All conclusions are conditional on the rank-11 prism-free endpoint model.
+  - The hostile arithmetic equality control is not a circuit cover.
+  - No incompatible complete weight-enumerator upper bound is known.
+  - Rank 11, endpoint existence, external novelty, and Conway-99 remain UNKNOWN.

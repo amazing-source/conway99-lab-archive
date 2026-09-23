@@ -1,0 +1,99 @@
+{
+  "format": "conway99-wave41-public-checkpoint-v1",
+  "date_utc": "2026-07-27",
+  "research_base_commit": "4f1754a28723a8e0e4ea3025312cd264b1b117d2",
+  "branch": "codex/wave39-rank-proof-checkpoint",
+  "target": "existence of srg(99,14,1,2)",
+  "target_status": "UNKNOWN",
+  "publication_classification": "EXPLORATORY_VERIFIED_THEOREM_CHECKPOINT",
+  "verified_universal_result": {
+    "statement": "rank_F7(M)>=26 for M=21E0",
+    "previous_floor": 25,
+    "edge_partition_count": 11,
+    "even_partition_count": 7,
+    "all_odd_partition_count": 4,
+    "minimum_projection_permutations": 164928,
+    "distinct_right_kernels": 52,
+    "distinct_equality_targets": 164278,
+    "grouped_matching_evaluations": 540540,
+    "rank25_survivors": 0
+  },
+  "conditional_endpoint_arithmetic": {
+    "rank_pair_count": 314,
+    "previous_rank_pair_count": 330,
+    "removed_pairs": 16,
+    "removed_layer": "odd r3 with r7=25"
+  },
+  "verified_scoped_result": {
+    "assumptions": [
+      "n3=4158",
+      "rank_F3(M)=12",
+      "every edge has local type 2+2+2"
+    ],
+    "rank11_quotients": 8,
+    "strict_fibre_coloured_isomorphism_classes": 1,
+    "triangle_free_lifts_per_quotient": 37378,
+    "K39_rank_distribution_per_quotient": {
+      "33": 264,
+      "34": 7348,
+      "35": 29766
+    },
+    "conditional_even_rank_F7_M_lower_bound": 34
+  },
+  "proof_producing_status": {
+    "endpoint_cases_closed": 0,
+    "endpoint_cases_total": 33,
+    "branch15_forced_variables": 830,
+    "branch15_forced_primary_edges": 174,
+    "branch15_unfixed_primary_edges": 3312,
+    "failed_literal_probes": 64,
+    "failed_polarities": 0
+  },
+  "validation": {
+    "discovery_tests_passed": 53,
+    "independent_tests_passed": 75,
+    "total_tests_passed": 128,
+    "package_manifests": 9,
+    "manifest_entries": 110,
+    "primary_full_replay": "PASS",
+    "secondary_full_replay": "PASS",
+    "deterministic_replays": "PASS"
+  },
+  "primary_artifacts": [
+    {
+      "path": "attempts/wave41-evenpart-equality/exact-results.json",
+      "sha256": "8a9e58aaa1073ae4a87e183f904ce7f43eaa620bbac5a6f5d1f8445dd795dc85"
+    },
+    {
+      "path": "verification/wave41-evenpart-equality/independent-results.json",
+      "sha256": "ec371dad71c794d57d4e27b21d17b08fac1d17e22167749ef797d950c18299e4"
+    },
+    {
+      "path": "verification/wave41-evenpart-equality/discovery-comparison.json",
+      "sha256": "6ece1335fa595e4feed57b45cf63e6229697d0f410b2ebae1c32cde9e1cdcc1c"
+    },
+    {
+      "path": "verification/wave41-rank26-secondary/secondary-results.json",
+      "sha256": "6dec058084c3336449cbf4ce29dd837b87f8f1b1af982810d2ca594784e38766"
+    },
+    {
+      "path": "verification/wave41-multiedge-rank-packing/independent-results.json",
+      "sha256": "20cfac8928e1a9d52a586a833d8e52cc7f64f7998bdd641467ded5121e2da133"
+    },
+    {
+      "path": "verification/wave41-allquotient-lifts/independent-results.json",
+      "sha256": "062785a47ddb8f85ddec10a76a663c262ec9c60c133b681be5228639b022260b"
+    }
+  ],
+  "status_wall": {
+    "endpoint_n3_4158": "UNKNOWN",
+    "general_upper_bound": "n3<=4158",
+    "upper_bound_improved": false,
+    "rigorous_interval": "708<=n3<=4158",
+    "endpoint_proof_coverage": "0/33",
+    "graph_certificate": null,
+    "nonexistence_certificate": null,
+    "novelty": "UNKNOWN",
+    "priority": "UNKNOWN"
+  }
+}

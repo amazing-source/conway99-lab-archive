@@ -1,0 +1,210 @@
+{
+  "claim_label": "CANDIDATE_RELAXED_CONTROL",
+  "comparison": {
+    "all_differences_are_nonedges": true,
+    "different_fourth_trace_matrices": true,
+    "different_ordered_edge_fourth_trace_entries": 0,
+    "different_ordered_fourth_trace_entries": 3888,
+    "different_ordered_nonedge_fourth_trace_entries": 3888,
+    "edge_fourth_trace_distributions_unordered": {
+      "A": {
+        "0": 693
+      },
+      "B": {
+        "0": 693
+      }
+    },
+    "fourth_trace_entry_distributions": {
+      "A": {
+        "0": 3321,
+        "1": 1944,
+        "2": 4536
+      },
+      "B": {
+        "0": 3321,
+        "1": 1944,
+        "2": 4536
+      }
+    },
+    "fourth_trace_matrix_rank_over_F3": {
+      "A": 3,
+      "B": 3
+    },
+    "pairwise_trace_entry_distribution": {
+      "0": 3321,
+      "1": 2592,
+      "2": 3888
+    },
+    "projector_coordinate_rank_over_F3": {
+      "A": 3,
+      "B": 3
+    },
+    "same_full_pairwise_projector_trace_matrix": true
+  },
+  "conclusions": {
+    "construction_level_compatibility_blueprint": true,
+    "conway_99_status": "UNKNOWN",
+    "n3_4158_endpoint_excluded": false,
+    "pairwise_and_edge_fourth_data_force_nonedge_fourth_data": false,
+    "rank_11_endpoint_excluded": false,
+    "srg_excluded": false
+  },
+  "correct_universal_rank_ledger": {
+    "bound_is_vacuous_at_99_points": true,
+    "quadratic_lift_symmetric_square_dimension": 2145,
+    "self_adjoint_endomorphism_dimension": 66,
+    "trace_zero_self_adjoint_dimension": 65,
+    "universal_H_rank_bound": "rank(H)<=min(99,2145)=99",
+    "warning": "wedge^2(P_x) is an endomorphism of a 55-dimensional space, not a vector with only 55 operator coordinates",
+    "wedge2_operator_coordinate_dimension": 3025,
+    "wedge2_underlying_space_dimension": 55
+  },
+  "failed_target_premises": [
+    "the 231 labelled singular columns use only 21 projective directions, so projective distinctness and dual distance at least four fail",
+    "the point graph is disconnected with components 27,36,36 and is not srg(99,14,1,2)",
+    "the designated 231 blocks partition the graph edges into triangles, but the graph has extra triangles; edge common-neighbor counts are not lambda=1",
+    "nonedge common-neighbor counts are not uniformly mu=2; cross-component nonedges have zero common neighbors",
+    "the exact 32-regular selected orthogonality graph and endpoint block-relation profiles are not imposed",
+    "outer-cycle types, prism-freeness, n3=4158 as an SRG four-vertex statistic, code endpoint distance, and cover constraints are not imposed",
+    "the controls are not graphs satisfying the Conway target, codes with the endpoint distance, covers, or endpoint configurations"
+  ],
+  "field": 3,
+  "incidence_control": {
+    "all_graph_triangle_count": 1329,
+    "block_count": 231,
+    "column_degree": 3,
+    "connected_component_sizes": [
+      27,
+      36,
+      36
+    ],
+    "designated_block_triangle_count": 231,
+    "each_vertex_sees_each_color_once": true,
+    "edge_common_neighbor_distribution": {
+      "4": 144,
+      "5": 243,
+      "6": 27,
+      "7": 225,
+      "8": 27,
+      "9": 27
+    },
+    "edge_partitioned_by_designated_blocks": true,
+    "extra_graph_triangle_count": 1098,
+    "integer_bbt_identity": "BB^T=A+7I",
+    "linear_triple_system": true,
+    "nonedge_common_neighbor_distribution": {
+      "0": 3240,
+      "2": 144,
+      "4": 180,
+      "5": 27,
+      "6": 315,
+      "7": 27,
+      "8": 225
+    },
+    "parallel_class_count": 7,
+    "point_count": 99,
+    "point_graph_degree": 14,
+    "point_graph_edge_count": 693,
+    "row_degree": 7,
+    "ternary_bbt_identity": "BB^T=A+I over F_3"
+  },
+  "inputs": {
+    "attempts/wave204-projector-fourth-order-proof-b/exact-results.json": "008b098012807fa98a3874df641575c49e7030e120e4417c8eada153c792b151",
+    "attempts/wave204-projector-fourth-order-proof-b/exact_check.py": "2aa6e2560e0e03c41ea202f2c2550bb3c6aa35436a27a0ccaa27becee297dfff",
+    "attempts/wave205-fourth-trace-globalization/protocol.md": "a1d45fc0a82b9944a9e020ded3945e75944e0e00202eacbb20eb05598e30bf4d",
+    "verification/2026-07-29-wave204-orchestrator.md": "7760a4c5a4b6a501262bbb3b061828725cd23c6837fd724fada84d94a3124edd",
+    "verification/wave204-global-compatibility-verifier/package-manifest.sha256": "48cd018c7f7cebe7f2bc93a6dbd9440422f8dc843bc6c0fa96b29968e440f9c2"
+  },
+  "local_objects": {
+    "ambient_dimension": 11,
+    "ambient_form_diagonal": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "each_projector": {
+      "idempotent": true,
+      "projector_identity": "P=-sum(z tensor z)",
+      "rank": 6,
+      "self_adjoint": true,
+      "seven_singular_simplex_columns": true,
+      "simplex_gram": "J_7-I_7",
+      "trace": 0
+    },
+    "projector_types": [
+      "P",
+      "Q1",
+      "Q2"
+    ],
+    "three_star_space_span_rank": 11
+  },
+  "progressive_premise_ladder": [
+    {
+      "level": 0,
+      "satisfied": "actual rank-six self-adjoint idempotents in a nondegenerate 11-space have equal g and separated h"
+    },
+    {
+      "level": 1,
+      "satisfied": "99 labelled projectors, 231 labelled singular columns, rank-11 square-zero centered Gram, sum P_x=0, and exact seven-column star coupling"
+    },
+    {
+      "level": 2,
+      "satisfied": "99x231 binary linear triple incidence with row degree 7, column degree 3, a 14-regular simple point graph, BB^T=A+7I over Z and A+I over F_3"
+    },
+    {
+      "level": 3,
+      "satisfied": "the two controls agree on every point-graph edge and separate h only on nonedges"
+    }
+  ],
+  "realizations": {
+    "A": {
+      "all_block_columns_singular": true,
+      "ambient_column_span_rank": 11,
+      "block_column_count": 231,
+      "centered_gram_rank": 11,
+      "centered_gram_square_zero": true,
+      "distinct_projective_direction_count": 21,
+      "global_column_frame_zero": true,
+      "projective_direction_multiplicity_distribution": {
+        "12": 14,
+        "9": 7
+      },
+      "projector_count": 99,
+      "projector_sum_zero": true,
+      "type_counts": {
+        "P": 27,
+        "Q1": 36,
+        "Q2": 36
+      }
+    },
+    "B": {
+      "all_block_columns_singular": true,
+      "ambient_column_span_rank": 11,
+      "block_column_count": 231,
+      "centered_gram_rank": 11,
+      "centered_gram_square_zero": true,
+      "distinct_projective_direction_count": 21,
+      "global_column_frame_zero": true,
+      "projective_direction_multiplicity_distribution": {
+        "12": 14,
+        "9": 7
+      },
+      "projector_count": 99,
+      "projector_sum_zero": true,
+      "type_counts": {
+        "P": 27,
+        "Q1": 36,
+        "Q2": 36
+      }
+    }
+  },
+  "scope": "exact F_3 controls with endpoint-shaped projector, column, incidence, and edge premises; not an SRG or endpoint"
+}

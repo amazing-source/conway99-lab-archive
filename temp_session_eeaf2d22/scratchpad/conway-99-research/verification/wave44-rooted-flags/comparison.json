@@ -1,0 +1,45 @@
+{
+  "claim_label": "VERIFIED_SCOPED_FEASIBILITY",
+  "discovery_package_manifest_sha256": "290d23316f09ca9ba6509363de04eb03ad613598333b24ce2183a6038a585ed2",
+  "discovery_result_sha256": "c41b194d2d4ae8121883d84ba4f5011f48336a58a0dd4f5cebf9ab560ee3ae19",
+  "discovery_row_system_sha256": "fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722",
+  "discovery_summary_matches": true,
+  "format": "wave44-rooted-flags-post-freeze-comparison-v2",
+  "hash_encoding_note": "The provisional verifier hash used [numeric_rows,rhs]. The published canonical commitment uses {\"rows\":numeric_rows,\"rhs\":rhs}. Exact streams match; the shared canonical hash is now authoritative.",
+  "independent_result_sha256": "545ca76fed3f45aabc21ec2eeec291cc2eb93ab78346b8aaa213f751c6fa29c7",
+  "independent_row_streams": {
+    "all_170_rows_rhs_sha256": "863a75a616c138e750178c93234a92289363318f4bd0775c7b0792e44b7c61cb",
+    "base_rows_rhs_sha256": "4788642cf268145dbcfdca456ef5078f1c2c2edb3626698ecf5c327b1efca359",
+    "edge_rows_rhs_sha256": "255237841b93babdd825fff9c9e2bdd30e8132d9470b9015005a8d660cbac482",
+    "internal_numeric_pair_encoding_sha256": "319d4586c21faa218c577cfed9eb9565fb3b7bae8697ff773e3e1b482305a2c4",
+    "nonedge_rows_rhs_sha256": "9a20e3a28a00f4850d747630348ff4db8f512ba5cb462fd366362165f52d0bec",
+    "vertex_rows_rhs_sha256": "042ec8cf9026fadc1408ab5401f240dd8ae528a9d7dffd9068bd31230194c9d7",
+    "zero_residual_stream_sha256": "dd3388b7233ff3708100650c3dc83592b5b1082159931601b12f294016b144d5"
+  },
+  "matching_fields": {
+    "all_170_exact_integer_rows": "PASS",
+    "finite_field_rank_progression": [
+      81,
+      82,
+      87,
+      93
+    ],
+    "support_sha256": "c5c140194ae3353f581adbcaf3e3e15d8a512eaa76fbd0023fd4f50df2482f17",
+    "support_size": 91,
+    "total_rows": 170,
+    "variables": 209,
+    "y": 4158
+  },
+  "row_stream_comparison": {
+    "canonical_hashes_exact_match": true,
+    "class_stream_exact_ordered_match": true,
+    "coefficients_compared": 35530,
+    "discovery_code_imported": false,
+    "exact_post_freeze_semantic_comparison": "PASS",
+    "family_set_exact_match": true,
+    "rhs_exact_ordered_match": true,
+    "rhs_values_compared": 170,
+    "rows_exact_ordered_match": true
+  },
+  "scope_wall": "Only exact feasibility of the aggregate rooted relaxation is verified. This is not a graph or endpoint evidence."
+}

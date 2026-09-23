@@ -1,0 +1,37 @@
+{
+  "all_corrected_structural_claims_agree": true,
+  "checks": {
+    "absolute_determinant_agrees": true,
+    "all_49_smith_profiles_agree": true,
+    "discovery_spectrum_is_incorrect": true,
+    "endpoint_survivors_agree": true,
+    "jordan_formula_agrees": true,
+    "symmetric_square_floor_agrees": true,
+    "symmetric_square_rank_agrees": true
+  },
+  "claim_label": "VERIFIED",
+  "correction": {
+    "claim_label": "REFUTED",
+    "correct_value": {
+      "-7": 44,
+      "-70": 1,
+      "7": 54
+    },
+    "discovery_value": {
+      "-7": 54,
+      "-70": 1,
+      "7": 44
+    },
+    "field": "fixed_identities.seidel_spectrum",
+    "impact": "the false signed multiplicities do not change the absolute determinant or any checked Smith/Jordan/rank conclusion"
+  },
+  "endpoint": {
+    "claim_label": "UNKNOWN",
+    "contradiction_found": false
+  },
+  "input_hashes": {
+    "attempts/wave51-seidel-smith/exact-results.json": "10ae5fe8d05776f008fe31ce4b614044680f7cebf9efe482b1aa299f2c5caff6",
+    "verification/wave51-seidel-smith/independent-result.json": "1dda847b1180ac881f2ccce80285a2a50d9cab1f0f910f7dbdf9a6087d53d793"
+  },
+  "scope": "comparison of frozen discovery and independent exact artifacts"
+}

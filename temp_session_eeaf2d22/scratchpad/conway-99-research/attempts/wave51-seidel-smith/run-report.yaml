@@ -1,0 +1,38 @@
+role: proof_b
+date_utc: 2026-07-27T19:02:48Z
+git_commit: 7a77446e8f1aa163170ff91e3b5068482603898b
+claim_label: CANDIDATE
+scope: >-
+  Conditional modular Jordan form, integral Smith normal form, and
+  symmetric-square rank obstruction for the Seidel matrix of a hypothetical
+  srg(99,14,1,2).
+inputs:
+  - path: verification/2026-07-22-wave2-audit.md
+    sha256: b438e45544c1675530084a7a16396d2a45d4dab473a04696ddec6a9ce45641c8
+  - path: verification/wave43-rank28/independent-results.json
+    sha256: 4e6bc6a04fb65b6dd2a873c9b446d305d65aaca46fecf8703da2886aa1859025
+  - path: verification/wave23-index-pranks/2026-07-23T192952Z-audit.md
+    sha256: bfd02ebc39515e27e9e2c79d8e286905086f5747a02a310036ce27dd29ff3116
+method: >-
+  Derived S^2=49(I+J); classified the 7-adic Smith exponents using
+  49S^-1=(I+J)^-1S; attached the unique 2- and 5-primary factors using exact
+  modular ranks; and factored S mod 7 through its symmetric-square
+  representation. Rechecked determinant, divisibility, local ranks, Jordan
+  dimensions, and all endpoint values with standard-library exact arithmetic.
+command: >-
+  python exact_check.py --verify && python -m unittest -v test_exact_check.py
+outputs:
+  - path: attempts/wave51-seidel-smith/derivation.md
+    sha256: 6c12d3124634dd24e41a6d77c0621383515d2ebdef50edd887a2e0c9db13041a
+  - path: attempts/wave51-seidel-smith/exact_check.py
+    sha256: 4f93ba20b499c8a583fc0f235d5d74a4edde4009d01930a04e296eaa698f56c2
+  - path: attempts/wave51-seidel-smith/exact-results.json
+    sha256: 10ae5fe8d05776f008fe31ce4b614044680f7cebf9efe482b1aa299f2c5caff6
+  - path: attempts/wave51-seidel-smith/test_exact_check.py
+    sha256: 38bf9422e1303174f764cd7ec71ae83f074b52b8623317116af4f4921b4ba2fa
+limitations: >-
+  Discovery is not independent verification. No graph or Seidel matrix was
+  constructed. The Smith profiles are necessary but not sufficient for
+  realizability. Every endpoint rank 28 through 44 survives, and the new
+  symmetric-square floor r>=14 is weaker than the verified r>=28.
+

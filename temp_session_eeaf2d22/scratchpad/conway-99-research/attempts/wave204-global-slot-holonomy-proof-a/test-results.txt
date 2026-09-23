@@ -1,0 +1,14 @@
+2026-07-29T19:00:33Z
+
+Command:
+.\.venv\Scripts\python.exe -B -m unittest -v attempts/wave204-global-slot-holonomy-proof-a/test_exact_check.py
+
+Result:
+Ran 10 tests in 0.006s
+OK
+
+Replay:
+.\.venv\Scripts\python.exe -B attempts/wave204-global-slot-holonomy-proof-a/exact_check.py --verify attempts/wave204-global-slot-holonomy-proof-a/exact-results.json
+
+Result:
+PASS: canonical exact replay

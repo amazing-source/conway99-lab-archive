@@ -1,0 +1,157 @@
+{
+  "active_incidence_equation": "2*x2 + 3*x3 = 48",
+  "claim_label": "DERIVED",
+  "conditional_n3_48_exclusion": "DERIVED_PENDING_INDEPENDENT_VERIFICATION",
+  "mandatory_internal_degree": {
+    "lower_bound": 6,
+    "size2_reason": "four active-triangle neighbors plus two distinct support neighbors; H-degree-four support cannot be a meeting edge",
+    "size3_reason": "six active-triangle neighbors plus three support neighbors with at most three overlaps"
+  },
+  "moment_identities": {
+    "cauchy_requirement": "(99-m)*outside_square_sum >= outside_incidence_sum^2",
+    "defect_formula": "-2*m*(m-27)*(m-55) + (29*m-1287)*T - (99-m)*U - T^2",
+    "degree_substitution": "d_x=6+s_x, T=sum(s_x), U=sum(s_x^2)",
+    "outside_incidence_sum": "14*m - sum(d_x)",
+    "outside_square_sum": "2*m^2 + 12*m - sum(d_x^2+d_x)"
+  },
+  "novelty": "UNKNOWN",
+  "schema": "wave15-srg-subset-moment-obstruction-v1",
+  "scope": "conditional n3=48 residual after the audited Wave14 reduction; not an unconditional Conway-99 result",
+  "size_profile_rows": [
+    {
+      "T_coefficient": -591,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -75,
+      "active_vertex_count_m": 24,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -4464,
+      "spectral_min_degree_gap_numerator_over_99": 792,
+      "x2": 24,
+      "x3": 0
+    },
+    {
+      "T_coefficient": -620,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -76,
+      "active_vertex_count_m": 23,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -5888,
+      "spectral_min_degree_gap_numerator_over_99": 1012,
+      "x2": 21,
+      "x3": 2
+    },
+    {
+      "T_coefficient": -649,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -77,
+      "active_vertex_count_m": 22,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -7260,
+      "spectral_min_degree_gap_numerator_over_99": 1210,
+      "x2": 18,
+      "x3": 4
+    },
+    {
+      "T_coefficient": -678,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -78,
+      "active_vertex_count_m": 21,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -8568,
+      "spectral_min_degree_gap_numerator_over_99": 1386,
+      "x2": 15,
+      "x3": 6
+    },
+    {
+      "T_coefficient": -707,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -79,
+      "active_vertex_count_m": 20,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -9800,
+      "spectral_min_degree_gap_numerator_over_99": 1540,
+      "x2": 12,
+      "x3": 8
+    },
+    {
+      "T_coefficient": -736,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -80,
+      "active_vertex_count_m": 19,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -10944,
+      "spectral_min_degree_gap_numerator_over_99": 1672,
+      "x2": 9,
+      "x3": 10
+    },
+    {
+      "T_coefficient": -765,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -81,
+      "active_vertex_count_m": 18,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -11988,
+      "spectral_min_degree_gap_numerator_over_99": 1782,
+      "x2": 6,
+      "x3": 12
+    },
+    {
+      "T_coefficient": -794,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -82,
+      "active_vertex_count_m": 17,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -12920,
+      "spectral_min_degree_gap_numerator_over_99": 1870,
+      "x2": 3,
+      "x3": 14
+    },
+    {
+      "T_coefficient": -823,
+      "T_squared_coefficient": -1,
+      "U_coefficient": -83,
+      "active_vertex_count_m": 16,
+      "conclusion": "STRICTLY_NEGATIVE_FOR_ALL_T_U_NONNEGATIVE",
+      "defect_at_T0_U0": -13728,
+      "spectral_min_degree_gap_numerator_over_99": 1936,
+      "x2": 0,
+      "x3": 16
+    }
+  ],
+  "spectral_identities": {
+    "adjacency_equation": "A^2 = 12*I - A + 2*J",
+    "consequence": "m >= 27",
+    "induced_twice_edge_upper_bound": "2*e(X) <= 3*m + 11*m^2/99",
+    "minimum_degree_six_lower_bound": "2*e(X) >= 6*m",
+    "nontrivial_eigenvalues": [
+      3,
+      -4
+    ]
+  },
+  "srg_parameters": {
+    "k": 14,
+    "lambda": 1,
+    "mu": 2,
+    "v": 99
+  },
+  "target_result": "UNKNOWN",
+  "wave14_countermodel_replay": {
+    "active_internal_degree_histogram": {
+      "6": 24
+    },
+    "active_internal_edge_count": 72,
+    "active_vertex_count": 24,
+    "input_path": "attempts/wave14-proof-a/all2-active-countermodel.json",
+    "input_sha256": "5d06ae777fb0ca4450951708bba3ffc85d1f617be1d19c2be210f43df82b8952",
+    "inside_pair_contribution": 360,
+    "integer_square_sum_deficit": 78,
+    "lift_status": "REFUTED_BY_SRG_COMMON_NEIGHBOR_MOMENT",
+    "outside_factorial_second_moment_forced": 120,
+    "outside_incidence_sum": 192,
+    "outside_square_sum_cauchy_denominator": 75,
+    "outside_square_sum_cauchy_numerator": 36864,
+    "outside_square_sum_forced": 432,
+    "outside_square_sum_integer_minimum": 510,
+    "pair_common_neighbor_total": 480
+  }
+}

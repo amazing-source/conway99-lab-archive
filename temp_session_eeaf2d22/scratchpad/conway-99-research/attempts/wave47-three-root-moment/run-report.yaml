@@ -1,0 +1,47 @@
+role: construction
+date_utc: 2026-07-27T17:30:34Z
+git_commit: e4394aa9172fa97a6dafa9158148c2183603a01b
+claim_label: CANDIDATE
+scope: >-
+  Exact discovery-side Gram matrices for all eight pointwise-labelled
+  three-vertex root patterns with locally admissible order-five flags,
+  evaluated on the 17 immutable Wave45-v1 endpoint count witnesses.
+inputs:
+  - path: attempts/wave45-flag-moment/flag_moment-v1.py
+    sha256: 21ed58592eeced3433fdff0b98ae4f963b269ed0b39be05322f1dac42ce1be70
+  - path: attempts/wave45-flag-moment/checkpoint-v1-moment-coefficients.json
+    sha256: ffcf9f9942446d66c3559d97954217af3ba17c1978ea9417c6e99920d4a45420
+  - path: attempts/wave45-flag-moment/checkpoint-v1-seed0-17cuts-15witnesses.json
+    sha256: 96a50f9add4b12b2c86587da29ade8b9da34f88a7b7617c048ffb7139c12b64b
+  - path: attempts/wave45-flag-moment/checkpoint-v1-stored-witness-results.json
+    sha256: 2c55b6ab1af9cac7d8f5800466abadb8c0c2603b5f96013d3fd160b6816c24df
+  - path: attempts/wave43-seven-deck-endpoint/exact-results.json
+    sha256: 06b498a736a511a7d6f5912bd4686e5d4eb30f4041477e3ee9cbc1704f1757c8
+  - path: attempts/wave44-rooted-flags/rooted-witness.json
+    sha256: 9be153b2487c3e07e20bffeb7ee6c890e69caa6e8d6b6e2936fbc5d8927bd5b9
+method: >-
+  Keep three root labels pointwise fixed, quotient only the two free labels,
+  enumerate all ordered pairs of free subsets whose union is the ambient
+  five-, six-, or seven-vertex class, expand each Gram entry in exact induced
+  counts, calibrate against direct Petersen and Clebsch outer-product sums,
+  and rationalize numerical negative modes to exact primitive integer
+  directions whose quadratic values are replayed with integer arithmetic.
+command: >-
+  .\.venv\Scripts\python.exe
+  attempts\wave47-three-root-moment\three_root_moment.py
+outputs:
+  - path: attempts/wave47-three-root-moment/compact-handoff.json
+    sha256: 8b74110bc6ae983e288d448cd1a963f81521f178e8280bbbf5864274a1639a47
+  - path: attempts/wave47-three-root-moment/coefficients.json
+    sha256: 07b55f06ff8f7d5f2de53d92a3222366e122a7306028752ecd31c10962a824b3
+  - path: attempts/wave47-three-root-moment/results.json
+    sha256: a58d04b56ed66094536ffc158b32085e3e940e5c3e42a3983a471e95e99daf37
+  - path: attempts/wave47-three-root-moment/cuts.json
+    sha256: d2ea38ed74a1b9098c9cc8eae52f8d65723c2631335b0acedba647dc16aa313e
+limitations:
+  - Discovery cannot certify itself; independent clean-room verification is pending.
+  - The 2657 distinct cuts refute only the 17 recorded aggregate witnesses.
+  - The full integer count region with all three-root PSD constraints was not searched.
+  - A feasible aggregate moment vector would still not construct a graph.
+  - Endpoint n3=4158, a strict upper bound below 4158, and Conway-99 remain UNKNOWN.
+  - The recorded git hash is the worktree base; Wave47 files were uncommitted.

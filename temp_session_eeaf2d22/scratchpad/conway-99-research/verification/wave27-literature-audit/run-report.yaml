@@ -1,0 +1,54 @@
+role: literature
+date_utc: 2026-07-24T01:03:21Z
+git_commit: 2ac11809fafee7ab752965ae49a96e922859b5ee
+claim_label: CITED
+scope: >-
+  Proof-separated literature and current-status audit for Conway-99, the
+  Wave 27 E6 trace problem, E6/A6 scale-21 frame and cubic-tensor claims,
+  the E8^4+E6^2 versus E8^5+A2^2 comparison, and the separately frozen late
+  A20 trace/orthogonal-summand addendum.
+inputs:
+  verification/wave27-literature-audit/protocol.md: f52683741f227d8e9c4f80b5474e73744a235b5e4383a2996a1439ed4b84742f
+  verification/wave27-literature-audit/protocol-correction.md: 3f59914da8f23386ac85a5f58e3d5c1e205d004c0a245939d1f49e569ce33f55
+  verification/wave27-literature-audit/protocol-a20-addendum.md: ed09b9fa84da60fe6fa782af4bc2e6907a60fe3107946add53a8462086b73a86
+  agents/2026-07-23-wave27-h9-classification.md: 9b55de17a76cc087e5d83d94f94e8f48338e4d0382b1f18ef03614e0451100db
+  agents/2026-07-23-wave27-a2free-construction.md: 3e80a13c71f227d394dbbbd5e82d2d9afa781b60a523f7470d6c6d74c3b6dbe9
+  agents/2026-07-23-wave27-general-root-tensor.md: 456a4ad6f27c1c9c09f84b2ff41796473f519b5aaabda36b71022a51bbbe7f38
+  agents/2026-07-24-wave27-a20-trace-addendum.md: 97c7296752e0ef2126bd8da50cdf8b0abe07b3c72a939233d15aae6d7c413659
+method: >-
+  Froze query wording before artifact inspection; executed the first ten
+  service-default relevance results for all 45 original pairs, five
+  corrective R00 pairs, and six separately frozen A20 pairs; authenticated
+  qualifying candidates against primary or authoritative sources; classified
+  exact, near-direct, conceptual, false-positive, and bounded-non-discovery
+  overlap; then inspected only the named Wave 27 artifacts. The exact
+  endpoints, timestamps or execution windows, response statuses, totals,
+  inspected counts, and qualifying source IDs are in query-log.jsonl.
+command: |-
+  @'
+  import json
+  from pathlib import Path
+  p=Path(r"verification/wave27-literature-audit/query-log.jsonl")
+  rows=[json.loads(x) for x in p.read_text(encoding="utf-8").splitlines()]
+  assert len(rows)==len({r["key"] for r in rows})==56
+  assert sum(r["inspected"] for r in rows)==303
+  n=20
+  A=[[2 if i==j else -1 if abs(i-j)==1 else 0 for j in range(n)] for i in range(n)]
+  vs=[[1 if j==0 else 0 for j in range(n)]] + [[1 if j==i else -1 if j==i+1 else 0 for j in range(n)] for i in range(n-1)] + [[1 if j==n-1 else 0 for j in range(n)]]
+  assert A==[[sum(v[i]*v[j] for v in vs) for j in range(n)] for i in range(n)]
+  print(len(rows), sum(r["inspected"] for r in rows), len(vs), 2*len(vs))
+  '@ | python -
+outputs:
+  verification/wave27-literature-audit/audit.md: 835f4b517ce10bce33570d45656be23f3ae4f8135df345734dfecb59a531ebe2
+  verification/wave27-literature-audit/query-ledger.md: 8ecfa635a5dc82207108b54d986c6bbde449c6a6a5e16a65631851ca32b576ec
+  verification/wave27-literature-audit/query-log.jsonl: 312d2b0fac7b5ebb7a8cfcc03028b8dd9e16b378a62f2c75cdf8b57a25b2c539
+  verification/wave27-literature-audit/sources.md: fa4e81d15c3b89a1f6371b3d956ef283d734cb48a58aa88feb583c82dbc6f7f5
+  verification/wave27-literature-audit/references.bib: a058ffea61b60971afa81829ad2c1f6e0808529a1a0007327658d7bd7898cabb
+  verification/wave27-literature-audit/failures.md: 504f585b492b3257de748e1df5fd6251168dc190865347952dbcb9a14bd7235e
+limitations:
+  - Novelty and priority remain UNKNOWN; bounded non-discovery is not a certificate.
+  - zbMATH returned nine base-query 404 failures and one A20-addendum 404 failure.
+  - Crossref free-text totals are broad corpus counts, not exact-match counts.
+  - The general-web base queries required exact-query replays for attribution.
+  - No raw result-page, abstract, PDF, or full-text corpus was retained.
+  - Literature status does not verify or promote any Wave 27 mathematical claim.

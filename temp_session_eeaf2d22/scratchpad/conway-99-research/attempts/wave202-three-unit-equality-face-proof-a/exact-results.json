@@ -1,0 +1,79 @@
+{
+  "certificate": {
+    "L": "delta-3*q+epsilon",
+    "Q0": 7059,
+    "base": 70587,
+    "coefficient_replay_after_weighted_row": {
+      "RA": 7,
+      "S2": 12,
+      "SE2": 2,
+      "SF": 1,
+      "SI": 8,
+      "SL": 3,
+      "W": 4,
+      "a1": 1,
+      "b3": 6,
+      "c2": 2,
+      "delta": 1,
+      "eta": 2
+    },
+    "forced_zero": [
+      "RA",
+      "S2",
+      "SI",
+      "W",
+      "b3"
+    ],
+    "identity": "10*Q0-(19*C-85*V)=8*SI+12*S2+2*SE2+7*RA+3*SL+L+delta+2*eta+SF+a1+6*b3+2*c2+4*W",
+    "rhs": 3
+  },
+  "claim": {
+    "Q0_7059_excluded": false,
+    "conditional_Q_lower_bound": 7059
+  },
+  "claim_label": "DERIVED_FACE_CHARACTERIZATION_NO_EXCLUSION",
+  "local_slack": {
+    "center_sizes": [
+      12,
+      13
+    ],
+    "deficient": "L_x=3*(12-c_x)+q_x+sum_P e_P",
+    "deficient_zero": "c_x=12,q_x=0,e_P=0 for all P",
+    "e_P": "rho_P-sum_selected(m_y-1)",
+    "m1_bound": "r<=L<=3",
+    "tight": "L_x=q_x-3+sum_P e_P",
+    "tight_zero": "e_P=k_P=0 off d_P=5; e_P+k_P=1 on each of three d_P=5"
+  },
+  "partitions": {
+    "E": "SE2+eta+c2",
+    "U": "L+delta+SF+a1",
+    "classes": {
+      "A": {
+        "E": 0,
+        "SL": 1,
+        "U": 0,
+        "description": "all three units in SL"
+      },
+      "B": {
+        "E": 0,
+        "SL": 0,
+        "U": 3,
+        "description": "unit-weight slacks sum to three"
+      },
+      "C": {
+        "E": 1,
+        "SL": 0,
+        "U": 1,
+        "description": "one even slack and one unit-weight slack"
+      }
+    }
+  },
+  "search_scope": "exact certificate and tiny symbolic slack partition only; no graph, code, cover, SAT, LP, configuration, isomorphism, or brute-force search",
+  "two_center": {
+    "baseline_obstruction_found": false,
+    "global_realization": "UNKNOWN",
+    "m1_forces_opposite_occupied": true,
+    "opposite_may_have_m_at_least_2": true,
+    "parity_obstruction": false
+  }
+}

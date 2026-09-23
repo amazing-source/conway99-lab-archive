@@ -1,0 +1,49 @@
+role: verifier
+date_utc: 2026-07-28T11:40:10Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED
+scope: >-
+  Complete independent verification of the sealed Wave148 marked
+  vertex-degree and pointwise ordered-pair common-neighbor
+  order-seven-to-eight row artifact.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: CONJECTURE.md
+    sha256: 7b4e67a28dbae58dffbf8f06a5fcb0241b12c34807dcb145ef2ff5c70d4c1c58
+  - path: verification/wave148-marked-order8/preparation-manifest.sha256
+    sha256: d28805adb6a6353430ab0630832a08b3ba74aa72fece7c6cedd8f2ffd6b9449d
+  - path: attempts/wave148-marked-order8/package-manifest.sha256
+    sha256: 3b937619d251f99999b6c4ebfb6e8a13de869417bbe2b03047efa259aaf71344
+  - path: attempts/wave148-marked-order8/marked-rows.json.gz
+    sha256: e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1
+  - path: attempts/wave148-marked-order8/exact-results.json
+    sha256: eb5b03e06d2d825a07f40ae274c92b2cd47325fbc55c7d137477b00a7d805de0
+method: >-
+  Validate both chronology manifests; load only the sealed canonical data;
+  independently reconstruct all 944 vertex-rooted and 4440 pointwise
+  ordered-pair-rooted rows through the precommitted clean-room implementation;
+  translate nonsemantic row ordering by the exact source-mask/rooted-key pair;
+  compare every scalar, support key, and integer coefficient; and rerun
+  zero-support, per-column, aggregate, micro, rook-graph, and hostile mutation
+  controls without importing or executing discovery code.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification/wave148-marked-order8/independent_verify.py;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  verification/wave148-marked-order8 -p "test_*.py" -v
+outputs:
+  - path: verification/wave148-marked-order8/independent_verify.py
+    sha256: bdf634ca6f9f91df7c0e62b4c173abe406ab914181b60cb242232a81741e991d
+  - path: verification/wave148-marked-order8/test_independent_verify.py
+    sha256: 85a115cf0d7d05e85ec3f641596f19de64703050c82e21cb5c528fe97390b1e7
+  - path: verification/wave148-marked-order8/verification-results.json
+    sha256: e18007e9fe1119f649437eec12c085f0744a8484b6827af42b3949388e268144
+limitations:
+  - The equations are necessary local consistency conditions, not sufficient
+    graph realizability conditions.
+  - Row enumeration order and sequential row IDs are nonsemantic and differ
+    between the two independent implementations; keyed rows match exactly.
+  - The combined Wave147/Wave148 SDP was not run.
+  - No rational dual certificate, strict n3 bound, Conway-99 resolution, or
+    external novelty claim follows.

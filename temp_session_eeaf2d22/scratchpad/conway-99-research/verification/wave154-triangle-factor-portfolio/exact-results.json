@@ -1,0 +1,63 @@
+{
+  "claim_label": "VERIFIED",
+  "conclusion": {
+    "checkable_UNSAT_proof": false,
+    "complete_C_factor": "UNKNOWN",
+    "complete_D_factor": "NOT_REACHED",
+    "conway_99": "UNKNOWN",
+    "forces_a_prism": false,
+    "graph_realization": false,
+    "strict_n3_upper_bound": "NOT_IMPROVED"
+  },
+  "format": "wave154-triangle-factor-portfolio-cleanroom-v1",
+  "frozen_inputs_sha256": {
+    "attempts/wave149-terwilliger-triple/exact-results.json": "6fed4da32fbeefce54d1802136dc8c9a328f112bb0f295a86230f0e6175f5ee6",
+    "attempts/wave151-triangle-root-factor/exact-results.json": "74bc48e2dd0434f3e36a183d724a1ae4a52d7ec9a1e109c92b14f64985da37a4",
+    "attempts/wave154-triangle-factor-portfolio/exact-results.json": "cca362e926901f626f50ed8a0868e94dd3da6cfdac1713be67a512156013a7fd",
+    "attempts/wave154-triangle-factor-portfolio/package-manifest.sha256": "6107b22050b2f9b3a070cdb031482c67907f7a39f7fea3c08bb543572e8fb311"
+  },
+  "independent_reconstruction": {
+    "allowed_triples": 69270,
+    "allowed_triples_sha256": "abbca3a6ffb9eb344f0ab4af16e4861aed56293464320f7d01c3fe661cd4eed1",
+    "centralizer_order": 384,
+    "constraint_rows": 612,
+    "cross_capacity_rows": 432,
+    "cross_gram_total_each": [
+      240,
+      240,
+      240
+    ],
+    "discovery_manifest": {
+      "failed": 0,
+      "passed": 10
+    },
+    "edge_capacity_rows": 180,
+    "full_gram_sha256": "1cfd0442e69b621c4a82fbeddeec9e7afbfcd04cd8eb458e29170cfd345c7ffc",
+    "integer_matrix_nonzeros": 1039050,
+    "new_matrix_sha256": "3292d6e445c168973f76a8dac1bf7bede704b141ab84388f94585c21ffac0b11",
+    "new_q1_orbit_sha256": "4daeb1f8ff6a1fcb50f1aa7010d45d7495f5fbe8bfbec78fd68bce01205c1069",
+    "new_q1_orbit_size": 384,
+    "old_matrix_sha256": "11dd68b64c237e6d45e221e8910b3da69e9492dd01aeb697555d874fdab9eed5",
+    "old_q1_orbit_sha256": "68dca5883f918f25922832fde91a620fe0d51f1d750ee04e42766a63e3b4cc07",
+    "old_q1_orbit_size": 384,
+    "orbit_intersection_size": 0,
+    "selected_columns_required": 60,
+    "triple_orbit_count": 292,
+    "triple_orbit_size_histogram": {
+      "192": 42,
+      "24": 12,
+      "384": 135,
+      "48": 15,
+      "6": 1,
+      "96": 87
+    }
+  },
+  "protocol_correction": {
+    "discovery_label": "VERIFIED_PORTFOLIO_NULL",
+    "handling": "The discovery agent's self-promotion is not accepted as verification. This clean-room verifier independently promotes only the deterministic finite claims listed here.",
+    "solver_statuses": "DIAGNOSTIC_ONLY"
+  },
+  "role": "verifier",
+  "scope": "The two displayed 24x60 Q1 partial factors, their exact Gram blocks, the explicit 384-element centralizer action, orbit separation, and the finite joint exact-cover dimensions",
+  "verdict": "PASS_WITH_SCOPE"
+}

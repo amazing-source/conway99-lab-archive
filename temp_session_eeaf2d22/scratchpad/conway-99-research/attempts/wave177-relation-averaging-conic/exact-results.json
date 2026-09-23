@@ -1,0 +1,156 @@
+{
+  "adjacent_pair": {
+    "avoids_common_block": true,
+    "coefficient_sum_mod_3": 0,
+    "lifts_to_uncentered_columns": true,
+    "nonstar_average_by_possible_dimension": {
+      "10": "8",
+      "11": "8",
+      "12": "8",
+      "2": "8",
+      "3": "8",
+      "4": "8",
+      "5": "8",
+      "6": "8",
+      "7": "8",
+      "8": "8",
+      "9": "8"
+    },
+    "outer_columns": 12,
+    "relation_dimension_lower": 2,
+    "removed_star_subcode_dimension": 1,
+    "true_relation_support_bounds": [
+      4,
+      8
+    ],
+    "universal_nonstar_average": "8"
+  },
+  "conclusion": "all vertex pairs have a true cross-star relation of weight at most nine, and every edge has one of weight at most eight; the endpoint remains unexcluded",
+  "field": 3,
+  "nonadjacent_pair": {
+    "columns": 14,
+    "nonstar_average_by_possible_dimension": {
+      "10": "28/3",
+      "11": "28/3",
+      "12": "28/3",
+      "13": "28/3",
+      "14": "28/3",
+      "3": "28/3",
+      "4": "28/3",
+      "5": "28/3",
+      "6": "28/3",
+      "7": "28/3",
+      "8": "28/3",
+      "9": "28/3"
+    },
+    "relation_dimension_lower": 3,
+    "removed_star_subcode_dimension": 2,
+    "removed_star_subcode_total_weight": 84,
+    "true_relation_support_bounds": [
+      4,
+      9
+    ],
+    "universal_nonstar_average": "28/3"
+  },
+  "type_4_plus_2": {
+    "conic_frame_operator": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ],
+    "conic_points": 4,
+    "full_plane_frame_operator": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "interpretation": "the weight-four 4+2 relation is the complete conic Q(2,3)",
+    "nonconic_frame_operator": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "nonconic_points": 9,
+    "plane_form": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "projective_points": 13,
+    "switched_gram": [
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "switched_relation": "u_1+u_2+u_3+u_4=0"
+  }
+}

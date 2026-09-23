@@ -1,0 +1,80 @@
+{
+  "bounds": {
+    "N14_upper": 4950,
+    "if_N16_zero_even_N18_lower": 50350,
+    "if_N18_zero_even_N16_lower": 5320,
+    "improvement": 594,
+    "prior_verified_N14_upper": 5544,
+    "rank28_weighted_shell_inequality": "407*N16+43*N18>=2165002"
+  },
+  "canonical_local_check": {
+    "center_a_profile": {
+      "with_identical_count": 604,
+      "with_identical_max": 8,
+      "with_identical_values": [
+        8
+      ],
+      "without_identical_count": 5436,
+      "without_identical_max": 2,
+      "without_identical_values": [
+        0,
+        1,
+        2
+      ]
+    },
+    "center_b_profile": {
+      "with_identical_count": 604,
+      "with_identical_max": 8,
+      "with_identical_values": [
+        8
+      ],
+      "without_identical_count": 5436,
+      "without_identical_max": 2,
+      "without_identical_values": [
+        0,
+        1,
+        2
+      ]
+    },
+    "co_incidence_per_transition_max": 18,
+    "lambda_one_forbids_both_identical_triple_transitions": true,
+    "local_perfect_matchings": 6040,
+    "seed_count": 560,
+    "seed_extensions_per_transition": 8
+  },
+  "claim_label": "DERIVED",
+  "format": "wave99-transition-pair-moment-v1",
+  "limitations": [
+    "Discovery cannot certify itself; independent verification is required.",
+    "The N14 theorem assumes the prism-free endpoint.",
+    "The weighted corollary additionally assumes q=16/r=28.",
+    "No upper bound on N16 or N18 is proved."
+  ],
+  "moments": {
+    "bad_seed_lower": 210,
+    "first_transition_seed_moment": 672,
+    "pair_transition_seed_moment_upper": 756,
+    "pointwise_certificate_slacks": {
+      "1": "1/2",
+      "2": "1/6",
+      "3": "0",
+      "4": "0"
+    },
+    "valid_seed_upper": 350
+  },
+  "scope": {
+    "n14_counts_both_signs": true,
+    "rank_28_used_for_n14_bound": false,
+    "rank_28_used_for_weighted_corollary": true,
+    "requires_n3": 4158,
+    "requires_prism_free_endpoint": true,
+    "target": "hypothetical srg(99,14,1,2)"
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "N16_or_N18_upper_bound": "NOT_PROVED",
+    "novelty": "UNKNOWN",
+    "prism_free_rank28_excluded": false,
+    "strict_n3_upper_bound": "NOT_PROVED"
+  }
+}

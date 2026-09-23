@@ -1,0 +1,284 @@
+{
+  "claim_label": "VERIFIED_WITH_SCOPE",
+  "discovery_replays": {
+    "hostile_control": {
+      "frozen_result_and_certificate_replay": "PASS",
+      "plain_test_functions": "6/6 PASS",
+      "pytest_wrapper": "NOT RUN: pytest is not installed"
+    },
+    "proof_a": {
+      "frozen_result_replay": "PASS",
+      "tests": "13/13 PASS"
+    },
+    "proof_b": {
+      "frozen_result_replay": "PASS",
+      "tests": "12/12 PASS"
+    }
+  },
+  "findings": [],
+  "hostile_control": {
+    "comparison": {
+      "edge_h_differences": 0,
+      "h_differences": 3888,
+      "nonedge_h_differences": 3888,
+      "rank_H_A": 3,
+      "rank_H_B": 3,
+      "same_g": true
+    },
+    "failed_target_premises_count": 7,
+    "incidence": {
+      "blocks": 231,
+      "column_degree": 3,
+      "components": [
+        27,
+        36,
+        36
+      ],
+      "designated_triangles": 231,
+      "edges": 693,
+      "extra_triangles": 1098,
+      "lambda_distribution": {
+        "4": 144,
+        "5": 243,
+        "6": 27,
+        "7": 225,
+        "8": 27,
+        "9": 27
+      },
+      "mu_distribution": {
+        "0": 3240,
+        "2": 144,
+        "4": 180,
+        "5": 27,
+        "6": 315,
+        "7": 27,
+        "8": 225
+      },
+      "point_degree": 14,
+      "points": 99,
+      "row_degree": 7,
+      "triangles": 1329
+    },
+    "local_pair_table": {
+      "P,Q1": {
+        "g": 2,
+        "h": 1
+      },
+      "P,Q2": {
+        "g": 2,
+        "h": 2
+      },
+      "Q1,Q2": {
+        "g": 1,
+        "h": 2
+      }
+    },
+    "realizations": {
+      "A": {
+        "D_square_zero": true,
+        "direction_multiplicities": {
+          "9": 7,
+          "12": 14
+        },
+        "projective_directions": 21,
+        "rank_D": 11,
+        "rank_Z": 11
+      },
+      "B": {
+        "D_square_zero": true,
+        "direction_multiplicities": {
+          "9": 7,
+          "12": 14
+        },
+        "projective_directions": 21,
+        "rank_D": 11,
+        "rank_Z": 11
+      }
+    },
+    "target_failures_preserved": true,
+    "verdict": "VERIFIED_RELAXED_CONTROL"
+  },
+  "limitations": [
+    "Proof-A controls are 28-vertex local controls, not 99-vertex SRGs.",
+    "Proof-B zero-first-moment control repeats projector labels and has no target incidence.",
+    "The hostile 99x231 controls have only 21 projective directions and fail lambda/mu.",
+    "Literature novelty and completeness were not certified by this computational replay."
+  ],
+  "proof_a": {
+    "actual_nonedge_h_classification": "UNKNOWN",
+    "controls": [
+      {
+        "discriminant": 2,
+        "g": 0,
+        "h": 1,
+        "lambda_upper_bound": true,
+        "mu_upper_bound": true,
+        "name": "t6_h1",
+        "opposite_center_mu": true,
+        "t": 6,
+        "true_relation_minimum_weight": 6,
+        "union_gram_rank": 11,
+        "vertices": 28
+      },
+      {
+        "discriminant": 2,
+        "g": 2,
+        "h": 0,
+        "lambda_upper_bound": true,
+        "mu_upper_bound": true,
+        "name": "t7_h0",
+        "opposite_center_mu": true,
+        "t": 7,
+        "true_relation_minimum_weight": 4,
+        "union_gram_rank": 11,
+        "vertices": 28
+      },
+      {
+        "discriminant": 2,
+        "g": 2,
+        "h": 1,
+        "lambda_upper_bound": true,
+        "mu_upper_bound": true,
+        "name": "t7_h1",
+        "opposite_center_mu": true,
+        "t": 7,
+        "true_relation_minimum_weight": 4,
+        "union_gram_rank": 11,
+        "vertices": 28
+      },
+      {
+        "discriminant": 2,
+        "g": 2,
+        "h": 2,
+        "lambda_upper_bound": true,
+        "mu_upper_bound": true,
+        "name": "t7_h2",
+        "opposite_center_mu": true,
+        "t": 7,
+        "true_relation_minimum_weight": 4,
+        "union_gram_rank": 11,
+        "vertices": 28
+      }
+    ],
+    "derived_checks": {
+      "marked_corner": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "nonneighbor_average_t": 7,
+      "ordinary_sum": 6,
+      "pair_trace_formula": "g=2t over F_3",
+      "special_profile": {
+        "ones": 5,
+        "twos": 2,
+        "zeros": 0
+      },
+      "t_lower_bound": 6
+    },
+    "normalized_census": {
+      "6": {
+        "admissible_by_h": {
+          "0": 0,
+          "1": 18,
+          "2": 0
+        },
+        "normalized_matrix_count": 646
+      },
+      "7": {
+        "admissible_by_h": {
+          "0": 297,
+          "1": 324,
+          "2": 144
+        },
+        "normalized_matrix_count": 7886
+      }
+    },
+    "verdict": "VERIFIED_WITH_SCOPE"
+  },
+  "proof_b": {
+    "dimension_ledger": {
+      "dim_Sym2_V": 66,
+      "dim_Sym2_trace_zero_self_adjoint_End_V": 2145,
+      "dim_V": 11,
+      "dim_self_adjoint_End_Sym2_V": 2211,
+      "dim_self_adjoint_End_V": 66,
+      "dim_self_adjoint_End_wedge2_V": 1540,
+      "dim_trace_zero_self_adjoint_End_Sym2_V": 2210,
+      "dim_trace_zero_self_adjoint_End_V": 65,
+      "dim_trace_zero_self_adjoint_End_wedge2_V": 1539,
+      "dim_wedge2_V": 55
+    },
+    "factorization_and_contractions": {
+      "H_equals_U_K_U_transpose": true,
+      "row_localizer": true,
+      "sum_feature_equals_vec_Q": true,
+      "toy_row_sums": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "w_TU_norm_contraction": true
+    },
+    "star_pair_feature": {
+      "blocks": 231,
+      "ordered_distinct_pairs": 4158,
+      "points": 99,
+      "rank_U": 99,
+      "unit_columns": 99
+    },
+    "verdict": "VERIFIED_WITH_SCOPE",
+    "zero_first_moment_control": {
+      "Omega_nonzero_coordinates": 302,
+      "base_distinct_projectors": 12,
+      "fourth_row_sums": {
+        "0": 6,
+        "1": 91,
+        "2": 2
+      },
+      "fourth_trace_rank": 9,
+      "g_h_different_ordered_entries": 740,
+      "pair_row_sums": {
+        "0": 99
+      },
+      "pair_trace_rank": 8,
+      "projector_labels": 99,
+      "sum_projectors_zero": true
+    }
+  },
+  "sealed_manifests": {
+    "wave205-fourth-trace-hostile-controls": {
+      "entries_match": true,
+      "entry_count": 8,
+      "manifest_sha256": "b9700d135bbfdebc34aeaad88eb1264b95732fa0f9da773cf90bd002331cc971"
+    },
+    "wave205-global-fourth-moment-proof-b": {
+      "entries_match": true,
+      "entry_count": 9,
+      "manifest_sha256": "a91a2a1cdbc129fa66e9d63b34031a774d5af78c458d18d9a1aadd7e4be217e7"
+    },
+    "wave205-nonedge-fourth-trace-proof-a": {
+      "entries_match": true,
+      "entry_count": 11,
+      "manifest_sha256": "2c9976b6cb07a3036df07fd0e7ceb7ffce6a339651d604fcecdcf8c0c3da3d96"
+    }
+  },
+  "source_blind_freeze_sha256": "f8fb87d76c5eda2ff2569ec49a935b8bdb4022671f6d51f2752c14e153bcc853",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "Q>=7060": "NOT PROVED",
+    "conditional_Q_bound": "Q>=7059",
+    "n3_4158_endpoint": "UNKNOWN",
+    "rank_11_endpoint": "UNKNOWN",
+    "rigorous_n3_interval": "708<=n3<=4158"
+  }
+}

@@ -1,0 +1,38 @@
+role: proof_b
+date_utc: 2026-07-28T22:30:57Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint universal support bounds for true cross-star
+  relations and the complete-conic interpretation of the type-4+2
+  weight-four word.
+inputs:
+  - attempts/wave176-star-projector-circuits/package-manifest.sha256
+  - verification/wave176-star-projector-circuits/package-manifest.sha256
+  - attempts/wave174-no-weight3-dual/package-manifest.sha256
+  - verification/wave174-no-weight3-dual/package-manifest.sha256
+method: >-
+  Exact average Hamming weight outside the individual-star subcodes of the
+  true ternary relation codes, followed by a three-dimensional orthogonal
+  geometry identification and complete PG(2,3) frame sum. No graph, code,
+  SAT, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave177-relation-averaging-conic\exact_check.py --verify
+  attempts\wave177-relation-averaging-conic\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave177-relation-averaging-conic\test_exact_check.py
+outputs:
+  - attempts/wave177-relation-averaging-conic/README.md
+  - attempts/wave177-relation-averaging-conic/derivation.md
+  - attempts/wave177-relation-averaging-conic/failed-routes.md
+  - attempts/wave177-relation-averaging-conic/protocol.md
+  - attempts/wave177-relation-averaging-conic/exact_check.py
+  - attempts/wave177-relation-averaging-conic/exact-results.json
+  - attempts/wave177-relation-averaging-conic/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - Indexed short relations are not proved distinct across vertex pairs.
+  - The local conic passes the zero-frame divisibility equation.
+  - The endpoint and rank-11 branch remain unexcluded.
+  - External novelty is UNKNOWN.

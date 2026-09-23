@@ -1,0 +1,38 @@
+role: proof_b
+date_utc: 2026-07-28T03:44:11Z
+git_commit: e671eb056df60edcbf48da6b9fcfe635b2444479
+claim_label: DERIVED
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2) containing the induced
+  C4 Cartesian K3 motif frozen by Wave 105, derive and exactly check the
+  characteristic polynomial and immediate graph invariants of the
+  87-vertex principal complement.
+inputs:
+  - path: attempts/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+method: >-
+  Derive the global resolvent in the I,A,J adjacency algebra; apply
+  Jacobi's complementary-minor identity to the motif; check the motif
+  characteristic polynomial and the residual determinant by exact rational
+  evaluations; replay spectral moments; and derive the positive Perron
+  vector from the invariant span of one and the motif-degree vector.
+command: >-
+  python -B attempts/wave107-c4boxk3-spectrum/exact_check.py --verify ;
+  python -B -m unittest discover -s
+  attempts/wave107-c4boxk3-spectrum -p "test_*.py" -v
+outputs:
+  - path: attempts/wave107-c4boxk3-spectrum/exact-results.json
+    sha256: 6e304671493cb7366af80ef9752b1c38cf281506401c53e24871d7f6cfbaa7e4
+  - path: attempts/wave107-c4boxk3-spectrum/derivation.md
+    sha256: 14dc865490d2cd3bbffafbbb2eedf97b4870303909178f79b5d8c228d9576fcf
+  - path: attempts/wave107-c4boxk3-spectrum/failed-routes.md
+    sha256: b0658e36a225dbc67d78c4df1f10e11a87d2380263e40354d04693bfbd68176d
+limitations:
+  - Independent verification is required.
+  - The factor x^2-9x-38 is refuted and replaced by x^2-9x-46.
+  - The corrected spectrum yields no interlacing or arithmetic obstruction.
+  - The motif is not proved to occur in every hypothetical target.
+  - No motif exclusion, full extension, or Conway-99 resolution follows.
+  - Literature novelty remains UNKNOWN.

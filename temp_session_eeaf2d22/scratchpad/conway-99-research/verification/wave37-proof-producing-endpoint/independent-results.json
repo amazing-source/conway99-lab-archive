@@ -1,0 +1,114 @@
+{
+  "claim_label": "VERIFIED_FORMULA_ARTIFACT_ONLY",
+  "compression": {
+    "compressed_bytes": 3854306,
+    "compressed_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+    "gzip_mtime": 0,
+    "gzip_os_byte": 255,
+    "restored_bytes": 29827704,
+    "restored_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5",
+    "round_trip_exact": true,
+    "status": "PASS"
+  },
+  "conclusion": {
+    "endpoint_excluded": false,
+    "formula_artifact_verified": true,
+    "formula_scope": "one refined case out of 33 endpoint-compatible cases",
+    "sat_graph_present": false,
+    "satisfiability_decided": false,
+    "target_status": "UNKNOWN",
+    "unsat_proof_present": false,
+    "upper_bound_improved_below_4158": false
+  },
+  "exact_parser": {
+    "binary_sha256": "842ac70b4e938d24f537a56513ff64ea845206c714ce34da467ce146c5c5c928",
+    "command": "Exact --onlyparse branch-15.opb",
+    "evidence_path": "verification/wave37-proof-producing-endpoint/exact-parser-evidence.txt",
+    "exit_code": 0,
+    "interpretation": "Syntax acceptance only; no SAT or UNSAT conclusion.",
+    "result": "PARSE_ACCEPTED",
+    "source_commit": "b921cd1c4e3b6a7b7ba16dfd9c38c419d5e53ee4",
+    "tool": "Exact"
+  },
+  "formula": {
+    "bytes": 29827704,
+    "completed_graph_automorphism_assumed": false,
+    "constraint_count": 574615,
+    "metadata_binding": "PASS",
+    "parent_branch": 4,
+    "refined_branch": 15,
+    "refinement_edge": [
+      0,
+      2
+    ],
+    "refinement_literal": 2,
+    "sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5"
+  },
+  "input_sha256": {
+    "attempts/wave37-proof-producing-endpoint/branch-15-formula.json": "3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6",
+    "attempts/wave37-proof-producing-endpoint/branch-15.opb": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5",
+    "attempts/wave37-proof-producing-endpoint/branch-15.opb.gz": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+    "attempts/wave37-proof-producing-endpoint/compression-audit.json": "155edb45fb4a8d678b31f8ee05e3f87b0f55c39559147b149df6dc2d87c04845",
+    "attempts/wave37-proof-producing-endpoint/export_endpoint_opb.py": "b9cb895625e89709bfef765156a7fa0dd7c842a1d6db41401b83df15e986d902"
+  },
+  "limitations": [
+    "Only refined branch 15 is represented; the other 32 endpoint-compatible cases are absent.",
+    "Exact --onlyparse validates parser acceptance, not satisfiability.",
+    "No proof log, proof-checker verdict, assignment, decoded graph, or endpoint decision exists.",
+    "The fixed-triangle clauses are a sound partial prism family, not a complete all-prism encoding."
+  ],
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "branch-15 OPB bytes, syntax, exact semantic reconstruction, metadata, deterministic compression, and parser boundary",
+  "semantic_reconstruction": {
+    "every_constraint_byte_identical_to_independent_reconstruction": true,
+    "groups": {
+      "common_neighbor_upper_bounds": {
+        "constraint_count": 3486,
+        "sha256": "cc191eedcafecc79d60a77ccaca17bf5640f23bebfdd65276b93be656e831870"
+      },
+      "coordinate_equalities": {
+        "constraint_count": 2352,
+        "sha256": "299a2c622eb3b04ec7fa0f4ee3bdc1bce2ae326552a01b6b911b9fc9357da3ba"
+      },
+      "endpoint_and_refined_units": {
+        "constraint_count": 151,
+        "sha256": "3c9dc4b41332fa09aba4f4e0db6206be1acec67b855d43e0a5b8575723c4fa54"
+      },
+      "fixed_triangle_prism_clauses": {
+        "constraint_count": 282774,
+        "sha256": "2b513f8b4f2ae4e5373a7eccd9fb08b950bcbdfb318154b9739bcf7dfae73c52"
+      },
+      "wedge_implications": {
+        "constraint_count": 285852,
+        "sha256": "7c05cfb955514322eaeb730603a9434b08138fa9509e27e753a3e3a23b50f99f"
+      }
+    },
+    "header_constraints": 574615,
+    "header_variables": 289338,
+    "status": "PASS"
+  },
+  "syntax": {
+    "complemented_terms": 2287788,
+    "distinct_variables": 289338,
+    "maximum_variable": 289338,
+    "minimum_variable": 1,
+    "rhs_histogram": {
+      "1": 569113,
+      "10": 1008,
+      "11": 168,
+      "2": 840,
+      "81": 2562,
+      "82": 924
+    },
+    "status": "PASS",
+    "term_count_histogram": {
+      "1": 151,
+      "11": 336,
+      "12": 2016,
+      "3": 286458,
+      "5": 282168,
+      "83": 3486
+    }
+  }
+}

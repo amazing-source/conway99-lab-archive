@@ -1,0 +1,305 @@
+{
+  "a2_frame_block": {
+    "frame_block": [
+      [
+        14,
+        7
+      ],
+      [
+        7,
+        14
+      ]
+    ],
+    "root_line_representatives": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "total_nonzero_a2_rows": 21,
+    "unique_unoriented_line_counts": [
+      7,
+      7,
+      7
+    ]
+  },
+  "a2_integral_arithmetic": {
+    "coordinate_bound": 2,
+    "mod_three_obstruction": "a^2-a*b+b^2=(a+b)^2 mod 3 cannot equal 2 mod 3",
+    "norm_at_most_four_vectors": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "norm_four_vectors": [],
+    "norm_two_roots": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "claim_label": "VERIFIED",
+  "conclusions": {
+    "Conway_99_resolved": false,
+    "all_h9_forms_excluded": false,
+    "n3_708_excluded": false,
+    "novelty_status": "UNKNOWN",
+    "trace_A2_Q_AA_minimum": 18,
+    "wave24_survivor_has_full_projector_Schur_origin": false,
+    "wave24_survivor_trace": 10
+  },
+  "cubic_imbalance_floor": {
+    "M1_zero_parameterization": "d=(t,t,-t), t odd",
+    "M1_zero_required_for_bound": false,
+    "all_imbalances_are_odd": true,
+    "cubic_root_line_gram": [
+      [
+        8,
+        -1,
+        1
+      ],
+      [
+        -1,
+        8,
+        1
+      ],
+      [
+        1,
+        1,
+        8
+      ]
+    ],
+    "dropped_M1_example": {
+      "first_moment": [
+        2,
+        2
+      ],
+      "imbalance": [
+        1,
+        1,
+        1
+      ],
+      "pure_cubic_norm": 26
+    },
+    "exact_eigenvalues": [
+      6,
+      9,
+      9
+    ],
+    "imbalance_domain_per_line": [
+      -7,
+      -5,
+      -3,
+      -1,
+      1,
+      3,
+      5,
+      7
+    ],
+    "minimizers_without_M1_zero": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1
+      ]
+    ],
+    "minimum_with_M1_zero": 18,
+    "minimum_without_M1_zero": 18
+  },
+  "hostile_controls": {
+    "drop_M1_zero": "the minimum stays 18; M1=0 is redundant for the numeric floor",
+    "drop_tight_frame": {
+      "M1_zero": true,
+      "all_row_norms": 4,
+      "also_violates_public_off_diagonal_alphabet": true,
+      "column_rank": 4,
+      "description": "antipodal norm-four full-rank rows retain M1=0 but omit the tight frame",
+      "off_diagonal_M_values": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "row_count": 8,
+      "tight_frame_holds": false,
+      "trace_A2_Q_AA": 0
+    }
+  },
+  "projector_identities_not_needed_for_numeric_floor": [
+    "M 1=0",
+    "the off-diagonal alphabet after the row norm and frame consequences are fixed",
+    "n3=708 except as context selecting the frozen survivor"
+  ],
+  "projector_identities_used": [
+    "X has shape 231 x 44 and full column rank",
+    "G=X^T X",
+    "S=21 G^-1",
+    "M=X S X^T",
+    "M_ii=4",
+    "W=M o M",
+    "Q=X^T W X"
+  ],
+  "public_input_hashes": {
+    "verification/2026-07-23-wave20-global-schur-audit.md": {
+      "actual": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+      "expected": "6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3",
+      "match": true
+    },
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": {
+      "actual": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+      "expected": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+      "match": true
+    },
+    "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md": {
+      "actual": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+      "expected": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+      "match": true
+    },
+    "verification/wave24-n3-708-index/survivor-certificate.json": {
+      "actual": "a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2",
+      "expected": "a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2",
+      "match": true
+    },
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": {
+      "actual": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+      "expected": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+      "match": true
+    }
+  },
+  "scope": "conditional full 231-row projector/Schur origin with an orthogonal A2 summand",
+  "tensor_normalization_and_covariance": {
+    "basis_covariance": {
+      "M_unchanged": true,
+      "Q_rule": "Q'=P^-1 Q P^-T",
+      "S_rule": "S'=P^T S P",
+      "trace_unchanged": true
+    },
+    "ordered_tensor_factorization": "Q=C^T(S tensor S)C",
+    "orthogonal_compression": {
+      "AAA_norm": 18,
+      "AAR_norm": 48,
+      "ARA_norm": 48,
+      "ARR_norm": 18,
+      "full_norm": 132,
+      "identity": "full=AAA+AAR+ARA+ARR=AAA+2*AAR+ARR"
+    },
+    "row_orientation": "X is 231-by-44; x_i is the transpose of row i",
+    "symmetric_square_normalization": "normalized mixed basis has coefficient sqrt(2); ordered tensors need no factor",
+    "synthetic_trace": 132
+  },
+  "verdict": "PASS_SCOPED_A2_CUBIC_OBSTRUCTION",
+  "wave24_survivor": {
+    "Q_AA_blocks": [
+      [
+        [
+          2,
+          -1
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      [
+        [
+          2,
+          -1
+        ],
+        [
+          -1,
+          2
+        ]
+      ]
+    ],
+    "S_AA": [
+      [
+        2,
+        -1
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "abstract_coordinate_lattice_certificate": "unchanged and still exact",
+    "certificate_sha256": "a217ec7211128f51e684030a7fe8d3c60ac80935f356ba5193dc34d36d4077a2",
+    "deficit_per_block": [
+      8,
+      8
+    ],
+    "full_projector_Schur_origin_for_this_survivor": false,
+    "orthogonal_A2_block_starts_zero_based": [
+      40,
+      42
+    ],
+    "rank": 44,
+    "required_minimum": 18,
+    "trace_A2_Q_AA": [
+      10,
+      10
+    ]
+  }
+}

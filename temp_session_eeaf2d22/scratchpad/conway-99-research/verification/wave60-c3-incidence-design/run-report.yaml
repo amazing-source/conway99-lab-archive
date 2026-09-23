@@ -1,0 +1,37 @@
+role: verifier
+date_utc: 2026-07-27T21:50:23Z
+git_commit: 81c8d45426938ea8490af55d81f05b7c2ad99035
+claim_label: VERIFIED
+scope: >-
+  Conditional Wave 60 finite component classification, safe simultaneous
+  fibre-coordinate quotient, exact F2 target-rank scan, candidate support,
+  aligned type-4 enumeration, and within-component marginal reduction only.
+inputs:
+  - path: attempts/wave60-c3-incidence-design/package-manifest.sha256
+    sha256: ccf35d05a4125178a7cb065b73972ef310584b14c6a447ea889f3b06a170629b
+  - path: attempts/wave60-c3-incidence-design/exact-results.json
+    sha256: 35b6436c7ba5619fcf7e3840cbdacd594461c01df8758686450f5d8eea8e36f3
+  - path: verification/wave60-c3-incidence-design/preinspection-freeze.sha256
+    sha256: 842cf9365ea7993fb635eb49e0352acc9e446e8ccea431a5c01010f9fc45eca7
+method: >-
+  Clean reconstruction with no discovery imports: exhaustive normalized
+  component enumeration, complete S4^3 canonicalization, simultaneous S3
+  orbit enumeration, direct integer Gram construction, independent bit-packed
+  F2 elimination, category-product support census, direct aligned candidate
+  enumeration, marginal derivation, source-manifest checks, and hostile
+  mutations.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave60-c3-incidence-design\test_independent_verify.py
+outputs:
+  - path: verification/wave60-c3-incidence-design/independent-results.json
+    sha256: 1569d288d0d25167b8e681b748c5671c9929649d85ce8cdfa5e80b527a5e1ebd
+  - path: verification/wave60-c3-incidence-design/audit.md
+    sha256: ce3778ad844f27d8f59650e2f0d78f53529df5a59418a302571204133ce81371
+limitations:
+  - No 36 by 60 incidence matrix B is supplied.
+  - No safe coordinate orbit is excluded.
+  - The exact F2 rank filter rejects zero component triples.
+  - Bounded SAT and local-search telemetry remain UNKNOWN and non-evidentiary.
+  - No compatible Y graph, endpoint contradiction, or full SRG is supplied.
+  - The kappa=3 case, prism-free endpoint, and Conway-99 remain UNKNOWN.

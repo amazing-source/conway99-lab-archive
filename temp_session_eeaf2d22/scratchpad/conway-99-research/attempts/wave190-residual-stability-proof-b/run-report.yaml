@@ -1,0 +1,32 @@
+role: proof_b
+date_utc: 2026-07-29T02:45:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Conditional rank-11 endpoint residual-stability bound Q>=5544 for
+  nonedge-realizing projective short circuits.
+inputs:
+  - attempts/wave189-degree7-star-complete/package-manifest.sha256
+method: >-
+  Combined raw/residual label capacity in exact-three companion orbits,
+  exact-one slack, checkerboard residual extraction, and an exact scalar
+  certificate. No graph, code, SAT, cover, configuration, LP, isomorphism,
+  or enumeration search.
+command: >-
+  python -B attempts/wave190-residual-stability-proof-b/exact_check.py;
+  python -B -m unittest -v
+  attempts/wave190-residual-stability-proof-b/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave190-residual-stability-proof-b.md
+  - attempts/wave190-residual-stability-proof-b/README.md
+  - attempts/wave190-residual-stability-proof-b/derivation.md
+  - attempts/wave190-residual-stability-proof-b/protocol.md
+  - attempts/wave190-residual-stability-proof-b/exact_check.py
+  - attempts/wave190-residual-stability-proof-b/exact-results.json
+  - attempts/wave190-residual-stability-proof-b/test_exact_check.py
+  - attempts/wave190-residual-stability-proof-b/input-freeze.sha256
+limitations:
+  - Independent verification is pending.
+  - The sharp row is not an asserted circuit cover.
+  - The argument inherits the derived Wave187 singleton extraction.
+  - Rank 11, endpoint existence, novelty, and Conway-99 remain UNKNOWN.

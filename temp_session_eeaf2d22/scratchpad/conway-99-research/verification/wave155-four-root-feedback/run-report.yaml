@@ -1,0 +1,63 @@
+role: verifier
+date_utc: 2026-07-28T12:56:43Z
+git_commit: 15ba7b9f5355e1afde2476338823798c30076902
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification of four primitive four-root covariance cuts and
+  exact rational feasibility of the retained finite relaxation after two and
+  four feedback cuts at the frozen n3=4158 endpoint. This does not certify a
+  graph, endpoint feasibility, a strict upper bound, or Conway-99.
+inputs:
+  - path: attempts/wave152-four-root-order8/build_exact_cuts.py
+    sha256: ffc57ca81560e90ac3f0f3cf27f84b5ed9af0e8fffb0c6e32079dfcc9bb73b70
+  - path: attempts/wave152-four-root-order8/exact-cuts.json
+    sha256: 055b8253636167b85f68e09b1a470d4fe94e2d8bcfbe5eb02ade0e69ad73603d
+  - path: attempts/wave152-four-root-order8/iteration2-cuts.json
+    sha256: 3652888b035ba2675cb860dcf59414f0b9e7e353e7f943ecfd1e37646718aa25
+  - path: attempts/wave152-four-root-order8/zero-face-two-cuts-highs.json
+    sha256: 11a06307d898b10f0472a0908c5c775b00260672d9054f67c9adb7b30b6da005
+  - path: attempts/wave152-four-root-order8/zero-face-four-cuts-highs.json
+    sha256: 22dc59c5d78660131bd755855029deab757e236ffc633fa75a4751b30bc86372
+  - path: attempts/wave152-four-root-order8/exact-witness-after-two-cuts.json
+    sha256: b36c592546f5e5b3f9159a82267a3cb7cefaf37e6ee7588b4e2ba0a5c65d07af
+  - path: attempts/wave152-four-root-order8/exact-witness-after-four-cuts.json
+    sha256: 13fcdecd15da2a0c23abb71950fcda58e7f5e91b8caadc99d1e6e352aebeaeb9
+  - path: attempts/wave150-order8-sdp-scout/exact-rank1-witness.json
+    sha256: e63afbe9ca36b4b1571b3dde75309d0cce45f3bc862d6e8c08bfe62f78dc130d
+  - path: attempts/wave44-rooted-flags/row-system.json
+    sha256: fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722
+  - path: attempts/wave148-marked-order8/marked-rows.json.gz
+    sha256: e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1
+  - path: attempts/wave147-alternative-lane/coefficients.json.gz
+    sha256: a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e
+  - path: attempts/wave147-alternative-lane/exact-results.json
+    sha256: 8baea3d7fdf69ff6653ff859d30ea975dcbef44330445ace73ae051c7db1373c
+method: >-
+  Standard-library-only independent reconstruction. Enumerated locally
+  admissible pointwise-labelled four-root flags and covering free-pair
+  products; derived lower counts by deletion; rebuilt all primitive
+  coefficients and canonical hashes; replayed all Wave44, deletion, marked,
+  pair-root-zero, active-cut, sum, and nonnegativity claims in exact rational
+  arithmetic; and established full modular rank from the stored selected
+  rows over F_1000003. Discovery Python was neither imported nor executed.
+command: >-
+  python verification\wave155-four-root-feedback\independent_verify.py
+test_command: >-
+  python -m unittest
+  verification\wave155-four-root-feedback\test_independent_verify.py -v
+outputs:
+  - path: verification/wave155-four-root-feedback/independent_verify.py
+    sha256: c8aecd00c7da53fa929b53503bf437c0d0714c79a2e85a451168ac2e85b75c88
+  - path: verification/wave155-four-root-feedback/test_independent_verify.py
+    sha256: 6cdf50f53165b2967efdd898c6f2deafabaa5a21f1fd1fb1775c45158d9e723a
+  - path: verification/wave155-four-root-feedback/verification-results.json
+    sha256: 77ae6484b926c6586eb8be501b9aa1f6ec8735a15a8e7401d7e46bec50a4e576
+limitations:
+  - Exact feasibility is only for the retained finite count relaxation.
+  - No exact count witness is asserted to arise from a graph.
+  - Solver statuses and floating HiGHS points are diagnostic only.
+  - The after-four artifact contains stale after-two metadata.
+  - Post-freeze five-cut artifacts are outside this protocol.
+resource_floor:
+  required_free_physical_memory_percent: 15.0
+  observed_minimum_free_physical_memory_percent: 27.745108330825744

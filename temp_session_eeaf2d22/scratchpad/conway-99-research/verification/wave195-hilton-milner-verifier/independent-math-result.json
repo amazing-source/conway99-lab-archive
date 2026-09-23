@@ -1,0 +1,166 @@
+{
+  "boundary": {
+    "code_constructed": false,
+    "conditional_theorem_verified": true,
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "graph_constructed": false,
+    "rank_11_excluded": false,
+    "rational_null_realized": false,
+    "strict_n3_improvement": false
+  },
+  "bounds": {
+    "all_projective_short_circuits": 7673,
+    "edge_isolated_projective_short_circuits": 693,
+    "nonedge_projective_short_circuits_Q": 6980,
+    "scalar_short_circuit_words": 15346,
+    "wave188_all_short_word_bound_remains_stronger": 18018
+  },
+  "coefficient_certificate": {
+    "C": 4158,
+    "Q0": "n1+n2+2n3+r1+r2+2h+y+2g+W",
+    "RA": "3h+y+3g-(a2+a3+2b3+c2)",
+    "S2": "p2-n2",
+    "SE2": "2r2-a2-c2",
+    "SG": "n1+2n2-a3-b3-C/14",
+    "SI": "I-2C",
+    "SL": "n1+2n2+c1+2r2+y+2W-C",
+    "exact_rational_lower": "13959/2",
+    "identity": "Q0-47C/28=(2/3)SI+(4/3)S2+(2/3)RA+SL/3+SG/6+SE2/6+a1/6+b3/2+c2/6+W/3",
+    "integer_nonedge_projective_Q": 6980,
+    "lower": "Q>=47C/28",
+    "variable_order_after_split_substitution": [
+      "C",
+      "a1",
+      "a2",
+      "a3",
+      "b1",
+      "b3",
+      "c1",
+      "c2",
+      "n2",
+      "n3",
+      "r2",
+      "h",
+      "y",
+      "g",
+      "W"
+    ]
+  },
+  "common_star": {
+    "c_x_upper": 15,
+    "common_block": "S={x,p,q} belongs to every A_x(T)",
+    "fixed_center_injectivity_bound": "c_x<=C(6,2)=15",
+    "j_x_upper": "12+12+c_x<=39",
+    "p_leaf_options": "at most deg(p)-2=12 after excluding the two neighbors x and q",
+    "q_leaf_options": "at most deg(q)-2=12 after excluding the two neighbors x and p",
+    "remaining_leaf_options": "at most one per flag, hence at most c_x",
+    "six_incidence_simplicity": "the two incidences inside S use p and q separately and have distinct leaf types",
+    "union_logic": "every leaf lies in the p-leaf set, q-leaf set, or the one remaining-leaf choice of its flag",
+    "universal_j_x_upper": 39
+  },
+  "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+  "exact_three_flags": {
+    "A_size": 3,
+    "companion_relation": "z_T+sum_(S in S_x minus A_x(T)) z_S=0",
+    "dual_distance_lower_bound": 4,
+    "flag": "(x,T), where T is a triangle anticomplete to x",
+    "one_flag_one_companion_pair": true,
+    "relation": "z_T+2*sum_(S in A_x(T)) z_S=0",
+    "same_center_same_A_injective": "subtracting the two four-circuit relations would give a weight-two relation z_T-z_Tprime",
+    "star_ground_set_size": 7
+  },
+  "failed_route": {
+    "reason": "the type-one argument guarantees only one chosen short majority translation; it does not guarantee both endpoint translations or both orientations",
+    "route": "mixed type-one endpoint-orientation amplification",
+    "safe_use": "each a3 assignment contributes exactly one oriented private label to J, with no factor two",
+    "status": "QUARANTINED_FAILED_ROUTE",
+    "used_in_certificate": false
+  },
+  "format": "wave195-hilton-milner-clean-room-math-v1",
+  "hilton_milner": {
+    "bound": 13,
+    "calculation": "C(6,2)-C(3,2)+1=15-3+1=13",
+    "formula": "C(n-1,k-1)-C(n-k-1,k-1)+1",
+    "k": 3,
+    "n": 7,
+    "non_common_star_leaf_union_bound": 39,
+    "theorem_hypotheses": {
+      "empty_total_intersection": true,
+      "pairwise_intersecting": true,
+      "range": "n>2k",
+      "uniform_family": "distinct 3-subsets of a 7-set"
+    }
+  },
+  "math_result_sha256": "1d67e30b70681e1ba44a147e0bd82144ca34a85a7795751b23fab26e4e5ae4d6",
+  "oriented_labels": {
+    "J": "number of distinct oriented nonedge labels (center,leaf) in the union of all selected, old, and new exact3 flags",
+    "SG": "n1+2n2-a3-b3-C/14>=0",
+    "U": "undirected label union of selected type3 circuits",
+    "a3_injection": "one exact3 raw orientation for each distinct type1 private label",
+    "b3_injection": "the two type2 endpoint translates of one private undirected label, when exact3, have opposite centers and hence opposite oriented labels",
+    "cover_lower": "|U|>=C-n1-2n2",
+    "different_sources": "different private source labels have different underlying undirected nonedges",
+    "lower": "J>=|U|+a3+b3>=C-n1-2n2+a3+b3",
+    "outside_U": "type1/type2 private labels cannot occur in a selected type3 label set",
+    "selected_type3_contribution": "each distinct undirected label in U supplies at least one oriented label",
+    "upper": "J=sum_x j_x<=99*39=3861=13C/14"
+  },
+  "pairwise_intersection": {
+    "claim": "for distinct exact3 flags with fixed center x, their A_x three-subsets intersect",
+    "contradiction_weight": 3,
+    "disjoint_case": "if A and Aprime are disjoint, let r be the unique star block outside A union Aprime",
+    "dual_distance_lower_bound": 4,
+    "relation_sum": "(z_T+2 sum_A z)+(z_Tprime+sum_(S_x minus Aprime) z)=z_T+z_Tprime+z_r"
+  },
+  "pool_separation": {
+    "all_relevant_exact3_flags_form_one_simple_family": true,
+    "exact3_flag_families": {
+      "new": "g orbit-closed residual pairs",
+      "old": "h orbit-closed raw pairs",
+      "selected": "n3 selected/companion pairs"
+    },
+    "flag_injectivity_across_pools": "one flag determines one companion pair, so disjoint circuit pairs give distinct flags",
+    "new_vs_old": "Wave194 old-pool closure separation",
+    "new_vs_selected": "Wave194 privacy and fixed-point-free companion separation",
+    "old_vs_selected": "Wave189 privacy and orbit-closure separation",
+    "selected_pair_simplicity": "a minimal cover cannot select both members of one companion pair"
+  },
+  "rational_null": {
+    "Q0": "13959/2",
+    "asserted_to_be_graph_code_cover_or_flag_family": false,
+    "derived": {
+      "n1": 297,
+      "p2": 0,
+      "p3": 3564,
+      "r1": 3564
+    },
+    "integral_at_C_4158": false,
+    "row": {
+      "W": 0,
+      "a1": 0,
+      "a2": 297,
+      "a3": 0,
+      "b1": 0,
+      "b3": 0,
+      "c1": 3564,
+      "c2": 0,
+      "g": 0,
+      "h": 99,
+      "n2": 0,
+      "n3": 1386,
+      "r2": "297/2",
+      "y": 0
+    },
+    "zero_certificate_slacks": {
+      "RA": 0,
+      "S2": 0,
+      "SE2": 0,
+      "SG": 0,
+      "SI": 0,
+      "SL": 0
+    }
+  },
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

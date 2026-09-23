@@ -1,0 +1,43 @@
+role: verifier
+date_utc: 2026-07-28T03:01:42Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: VERIFIED
+scope: >-
+  Clean-room audit of the conditional Wave97 Schur, second-compound,
+  Smith, generalized-Hamming-weight, matroid, and finite-orthogonal-orbit
+  claims for a hypothetical srg(99,14,1,2), with explicit prior-versus-new
+  repository provenance.
+inputs:
+  - path: attempts/wave97-f7-exterior-matroid/package-manifest.sha256
+    sha256: dd7869bd8f9041014087cac1e1840763794a4e8d52f2c701262d7ec009515bec
+  - path: verification/wave51-seidel-smith/package-manifest.sha256
+    sha256: bb191148dac5558d9154ea98dbb6f45da146e0602940297131ca7de211d3274c
+  - path: verification/wave80-f7-overlattice-code/package-manifest.sha256
+    sha256: 25129c86f97c8f9513eff04ada641c458b924f8edd583e6e6abc76d114c64077
+method: >-
+  Freeze all discovery bytes before inspection; independently reconstruct
+  the Hadamard Hilbert function, compound functor and modular code, complete
+  local-prime Smith alignment with determinantal-divisor attacks on 24010,
+  row support and rational spectrum, generalized weights, and orthogonal
+  orders/orbits with low-dimensional brute force and hostile sign controls;
+  then compare only selected mathematical fields and audit provenance.
+command: >-
+  python -B verification/wave97-f7-exterior-matroid/independent_verify.py
+  --verify
+  verification/wave97-f7-exterior-matroid/independent-results.json ;
+  python -B -m unittest discover
+  -s verification/wave97-f7-exterior-matroid -p "test_*.py" -v
+outputs:
+  - path: verification/wave97-f7-exterior-matroid/independent-results.json
+    sha256: e0b385812c8532a01091c6f32aa3cc151a5b080282c6e8f62ab8c90f4a6e713b
+  - path: verification/wave97-f7-exterior-matroid/comparison.json
+    sha256: 477695334b72a521d0442dced4c6e732219e6c9fba98e31cf249a8ca958e8922
+  - path: verification/wave97-f7-exterior-matroid/audit.md
+    sha256: 13860fa9f92e3346d9ce54cb015b4978d0c03e7dda1eeb09212efd48654b7422
+  - path: verification/wave97-f7-exterior-matroid/test-results.txt
+    sha256: 1f1bcbe32cf3a7335c0ad7c7411291816bb6164fbd9659b44bb7ba52e05f3fd5
+limitations:
+  - the quadratic circuit and Schur-square equality are prior Wave51 consequences
+  - all compound and orbit formulas are conditional necessary data
+  - rank 28 and a strict n3 upper bound remain unproved
+  - Conway-99 and literature novelty remain UNKNOWN

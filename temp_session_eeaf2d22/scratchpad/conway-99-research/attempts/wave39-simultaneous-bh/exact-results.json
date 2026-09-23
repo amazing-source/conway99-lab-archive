@@ -1,0 +1,433 @@
+{
+  "centered_code_constraints": {
+    "code": {
+      "all_one_vector_in_dual": true,
+      "definition": "W=col(Z) <= F_3^231",
+      "frame_identities": [
+        "Z^T Z=0",
+        "Z^T 1=0",
+        "N Z=0"
+      ],
+      "parameters": "[231,11]_3",
+      "projective": true,
+      "self_orthogonal": true
+    },
+    "collision_control": "The symbol supports recover the one or two original star centers, so the displayed words are distinct up to the explicit sign pairing.",
+    "distinguished_primal_words": {
+      "composition_n1_n2": [
+        162,
+        36
+      ],
+      "including_negatives": 462,
+      "projective_words": 231,
+      "weight": 198,
+      "weight_enumerator_constraint": "A_198>=462"
+    },
+    "dual_low_weight_lower_bounds": {
+      "12": 1386,
+      "13": 1386,
+      "14": 16632,
+      "7": 198
+    },
+    "dual_word_sources": {
+      "weight_12": "differences of adjacent vertex-star rows",
+      "weight_13": "sums of adjacent vertex-star rows",
+      "weight_14": "sums and differences of nonadjacent vertex-star rows",
+      "weight_7": "the 99 vertex-star rows and their negatives"
+    }
+  },
+  "centered_oriented_isotropic_scheme": {
+    "delsarte_transforms": [
+      {
+        "denominator": 1,
+        "display": "231",
+        "numerator": 231
+      },
+      {
+        "denominator": 135,
+        "display": "209/135",
+        "numerator": 209
+      },
+      {
+        "denominator": 27,
+        "display": "13/27",
+        "numerator": 13
+      },
+      {
+        "denominator": 1107,
+        "display": "493/1107",
+        "numerator": 493
+      },
+      {
+        "denominator": 9,
+        "display": "23/9",
+        "numerator": 23
+      }
+    ],
+    "determinant_class": "nonsquare",
+    "dimension": 11,
+    "endpoint_inner_distribution": [
+      1,
+      0,
+      32,
+      162,
+      36
+    ],
+    "excluded": false,
+    "field": 3,
+    "first_eigenmatrix": [
+      [
+        1,
+        1,
+        19680,
+        19683,
+        19683
+      ],
+      [
+        1,
+        1,
+        -164,
+        81,
+        81
+      ],
+      [
+        1,
+        -1,
+        0,
+        -81,
+        81
+      ],
+      [
+        1,
+        1,
+        160,
+        -81,
+        -81
+      ],
+      [
+        1,
+        -1,
+        0,
+        243,
+        -243
+      ]
+    ],
+    "intersection_matrices": [
+      [
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          19680,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          19683,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19683
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          19680,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19683
+        ],
+        [
+          0,
+          0,
+          0,
+          19683,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          6556,
+          6561,
+          6561
+        ],
+        [
+          0,
+          0,
+          6561,
+          6561,
+          6561
+        ],
+        [
+          0,
+          0,
+          6561,
+          6561,
+          6561
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          6560,
+          6560,
+          6560
+        ],
+        [
+          1,
+          0,
+          6560,
+          6642,
+          6480
+        ],
+        [
+          0,
+          1,
+          6560,
+          6480,
+          6642
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          6560,
+          6560,
+          6560
+        ],
+        [
+          0,
+          1,
+          6560,
+          6480,
+          6642
+        ],
+        [
+          1,
+          0,
+          6560,
+          6642,
+          6480
+        ]
+      ]
+    ],
+    "relation_order": [
+      "equal",
+      "antipodal",
+      "inner_0_independent",
+      "inner_1",
+      "inner_2"
+    ],
+    "valencies": [
+      1,
+      1,
+      19680,
+      19683,
+      19683
+    ]
+  },
+  "centered_projective_boundary": {
+    "ambient_determinant_class": "nonsquare",
+    "ambient_dimension": 11,
+    "antipodal_centered_rows_rejection": {
+      "double_plus_coordinates": 73,
+      "forced_integer_sum_norm_squared": 2034,
+      "forced_pair_relation": "C_ij=+2",
+      "mixed_coordinates": 156,
+      "other_coordinate_types": [
+        "(+2,+2)",
+        "(-2,0) in either order"
+      ],
+      "reflection_sum_norm_squared": 882
+    },
+    "centered_gram": "D=C+J over F_3",
+    "centered_projective_points_distinct": true,
+    "centered_rank": 11,
+    "centered_row_norm": 0,
+    "centered_rows": 231,
+    "centered_rows_nonzero": true,
+    "conditional_boundary": "rank_F3(C)=12 with square determinant class",
+    "equal_centered_rows_rejection": {
+      "forced_integer_difference_norm_squared": 450,
+      "reflection_difference_norm_squared": 882
+    },
+    "oriented_inner_distribution": {
+      "antipodal": 0,
+      "equal": 1,
+      "inner_0": 32,
+      "inner_1": 162,
+      "inner_2": 36
+    }
+  },
+  "claim_label": "DERIVED_INCONCLUSIVE",
+  "conclusion": {
+    "compatible_H_excluded": false,
+    "compatible_H_found": false,
+    "endpoint_excluded": false,
+    "new_centered_code_constraints": true,
+    "new_centered_projective_distinctness": true,
+    "new_simultaneous_BH_edge_decomposition": true,
+    "rank_twelve_boundary_excluded": false,
+    "simultaneous_60_column_B_excluded": false,
+    "simultaneous_60_column_B_found": false,
+    "target_status": "UNKNOWN",
+    "upper_bound_improved_below_4158": false
+  },
+  "frozen_commit": "019b78ac9a5170107d105ad4d8fcd27f55dde642",
+  "limitations": [
+    "All general conclusions are conditional on the hypothetical prism-free endpoint.",
+    "The oriented isotropic Delsarte transforms are all nonnegative, so they do not exclude rank twelve.",
+    "The low-weight dual-code lower bounds are necessary conditions, not a code classification.",
+    "The overlap and edge decompositions assume a full simultaneous B and compatible H.",
+    "The frozen rank-ten core is a local relaxation, not a graph or completion.",
+    "No endpoint exclusion, improved n3 bound, construction, or novelty claim is made."
+  ],
+  "schema_version": 1,
+  "scope": "Conditional prism-free endpoint n3=4158: simultaneous B/H overlap decomposition and the centered rank-twelve ternary equality case",
+  "simultaneous_BH_constraints": {
+    "frozen_rank_ten_core_control": {
+      "completion_excluded": false,
+      "completion_found": false,
+      "core_four_cycles": 4,
+      "forced_H_edge_overlap_counts_if_completion_exists": {
+        "0": 96,
+        "1": 144,
+        "2": 0
+      },
+      "forced_H_four_cycles_if_completion_exists": 175,
+      "forced_H_nonedge_overlap_counts_if_completion_exists": {
+        "0": 350,
+        "1": 884,
+        "2": 296
+      },
+      "forced_H_triangles_if_completion_exists": 32,
+      "forced_block_pair_overlap_counts_if_B_exists": {
+        "0": 446,
+        "1": 1028,
+        "2": 296
+      },
+      "required_BBt_unordered_off_diagonal_histogram": {
+        "0": 26,
+        "1": 308,
+        "2": 296
+      },
+      "scope": "36-vertex local relaxation only; no simultaneous B or H"
+    },
+    "full_block_equations": {
+      "xx": "BB^T=12I-A_X+2J-RR^T-A_X^2",
+      "xy": "BH=(J/3-I-A_X)B",
+      "yy": "B^TB+H^2=12I-H+2J"
+    },
+    "general_overlap_formulas": {
+      "block_pair_overlap_counts": {
+        "0": "438+2*c4",
+        "1": "1044-4*c4",
+        "2": "288+2*c4"
+      },
+      "row_pair_concurrence_counts": {
+        "0": "18+2*c4",
+        "1": "324-4*c4",
+        "2": "288+2*c4"
+      }
+    },
+    "simultaneous_H_decomposition": {
+      "overlap_one_edges": "144 edges, none lying in an H triangle",
+      "overlap_zero_edges": "96 edges, exactly the edge-disjoint union of 32 H triangles",
+      "per_block": "If e_y is the number of A_X edges inside b_y, then y lies in 1+e_y H-triangles, has 2+2e_y overlap-zero neighbors, and 6-2e_y overlap-one neighbors.",
+      "point_labeled_matchings": "For each x in X, the ten blocks containing x induce a four-edge matching in H; these 36 matchings partition the 144 overlap-one edges."
+    },
+    "simultaneous_H_edge_overlap_counts": {
+      "0": 96,
+      "1": 144,
+      "2": 0
+    }
+  }
+}

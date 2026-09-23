@@ -1,0 +1,23 @@
+command:
+python -B -m unittest discover -s verification/wave34-rooted-encoding/precomparison -p test_*.py -v
+
+environment:
+Python 3.13.14
+standard library only
+no solver
+no seed
+
+result:
+Ran 9 tests in 12.983s
+OK
+
+coverage summary:
+- exact frozen input hashes
+- fixed signed-Fano support and SS identity
+- exhaustive three-variable AND equivalence
+- existential exhaustive exact-count CNF checks for n=1..4 and every k
+- exact unrestricted 3,465-primary layout
+- all nine constraint families and target distributions
+- frozen full variable/clause counts and DIMACS-body SHA-256
+- machine-readable specification/count snapshot consistency
+- all-zero decoded D,B hostile rejection

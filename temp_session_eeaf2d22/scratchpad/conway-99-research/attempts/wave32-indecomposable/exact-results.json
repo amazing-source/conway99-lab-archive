@@ -1,0 +1,161 @@
+{
+  "binary_hostile_control": {
+    "X_transpose_X": "S_inverse=S, 22 hyperbolic planes",
+    "all_rows_nonzero": true,
+    "all_rows_quadratically_singular": true,
+    "base_rows": 99,
+    "dimension": 44,
+    "padding": "66 duplicate pairs",
+    "projector_idempotent": true,
+    "projector_kills_one": true,
+    "projector_rank": 44,
+    "projector_rows_sha256": "086f2b1d5a938ca42d73e700004bf66ee29e0c7a88141b866f572b3fef1ada02",
+    "projector_symmetric": true,
+    "projector_zero_diagonal": true,
+    "quadratic_form": "22 hyperbolic planes over F2",
+    "rank_X": 44,
+    "row_count": 231,
+    "row_sum_zero": true,
+    "scope": "Finite-field hostile control only. It is not a positive-definite integral lattice, endpoint M alphabet/profile, incidence object, or graph."
+  },
+  "endpoint_pair_counts": {
+    "all_unordered_M_pair_counts": {
+      "+1": 2546,
+      "-1": 708,
+      "-2": 1150,
+      "0": 22161
+    },
+    "degree_sums": {
+      "+1": 5092,
+      "-1": 1416,
+      "-2": 2300,
+      "0": 44322
+    },
+    "intersecting_unordered_M_zero_pairs": 2079,
+    "n3": 708,
+    "ordered_disjoint_pair_counts": {
+      "r0_M_plus_1": 5092,
+      "r1_M_zero": 40164,
+      "r2_M_minus_1": 1416,
+      "r3_M_minus_2": 2300
+    },
+    "sum_q": 472
+  },
+  "forbidden_three_row_motif": {
+    "alphabet": [
+      -2,
+      -1,
+      0,
+      1
+    ],
+    "attained_norms": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22
+    ],
+    "canonical_gram": [
+      [
+        4,
+        -2,
+        -2
+      ],
+      [
+        -2,
+        4,
+        -1
+      ],
+      [
+        -2,
+        -1,
+        4
+      ]
+    ],
+    "canonical_leading_principal_minors": [
+      4,
+      12,
+      20
+    ],
+    "canonical_sum_vector_norm": 2,
+    "graph_class_translation": "For actual target incidence, no r=2 triangle pair may have a common triangle that is r=3 from both endpoints.",
+    "norm_two_hit_count_before_edge_permutation": 3,
+    "rootless_consequence": "No three frame rows may have pairwise M-values -2,-2,-1.",
+    "signed_combinations_checked": 256,
+    "unique_norm_two_edge_multiset": [
+      -2,
+      -2,
+      -1
+    ]
+  },
+  "hostile_premise_controls": {
+    "drop_minimum_four": "A norm-four row may have two orthogonal norm-two components; block support then fails.",
+    "drop_primitivity": {
+      "X": [
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "conclusion": "full column rank alone does not make rows generate",
+      "rank_over_Q": 1,
+      "row_lattice": "2Z, not Z"
+    },
+    "motif_absence": "No current identity proves tr(A_minus1 A_minus2^2)>0; absence cannot be inferred from the positive global pair counts.",
+    "replace_actual_incidence_by_abstract_projector": "The 33-divisibility step and hence support connectivity are lost."
+  },
+  "inputs": {
+    "agents/2026-07-24-wave28-glue-discriminant.md": "3c1354a04f33602c6e339875c8de4f77d1874bd6e8f83dbcb712b91717d6c1ff",
+    "agents/2026-07-24-wave31-survivor-proof.md": "075566744e2622a4dfa402a125d394aef16dfcb3fc53b172176dce88bd951aaa",
+    "verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md": "45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268",
+    "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+    "verification/wave31-sign-commutant/audit.md": "f6145a3c4f4e787b23440a6ea071d606477821abab0ab8e7e5fe52042d6528a0"
+  },
+  "motif_trace_reduction": {
+    "actual_target_value": "UNKNOWN",
+    "identity": "tr(A_minus1 A_minus2^2) equals twice the number of unordered {-2,-2,-1} motifs",
+    "one_motif_hostile_example_trace": 2,
+    "rootless_required_value": 0
+  },
+  "scope": "Exact reductions for the rootless integrally indecomposable n3=708 endpoint branch; no endpoint or target exclusion.",
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "actual_incidence_forces_forbidden_motif": "UNKNOWN",
+    "minus2_minus2_minus1_motif_forbidden_if_rootless": "DERIVED",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rootless_decomposable_actual_endpoint": "IMPOSSIBLE_BY_WAVE31",
+    "rootless_indecomposable_endpoint": "UNKNOWN",
+    "surviving_rootless_endpoint_must_be_indecomposable": "DERIVED"
+  },
+  "support_connectivity": {
+    "consequence": "Under actual target incidence, every surviving rootless endpoint S-form is necessarily integrally indecomposable.",
+    "coordinate_block_divisibility": {
+      "actual_incidence_commutator": "33 divides |I|",
+      "projector_trace": "21 divides |I|",
+      "proper_nonempty_size_exists": false,
+      "simultaneous_sizes_between_0_and_231": [
+        0,
+        231
+      ]
+    },
+    "norm_four_block_support": {
+      "conclusion": "exactly one nonzero orthogonal component per row",
+      "partitions_checked": 15,
+      "premises": "even orthogonal summands, each of minimum at least 4"
+    },
+    "primitive_basis_to_row_generation": "For a primitive rank-44 column lattice X Z^44 in Z^231, Smith normal form has 44 unit invariant factors. The row lattice X^T Z^231 is therefore Z^44.",
+    "support_graph_equivalence": "Because the frame rows generate Z^44, disconnected nonzero support of M=XSX^T gives an integral orthogonal split; conversely a rootless integral split makes every row block-supported and disconnects that support.",
+    "uses_h_729": false
+  },
+  "uses_h_729": false
+}

@@ -1,0 +1,77 @@
+role: construction
+date_utc: "2026-07-27T01:09:08Z"
+git_commit: "3014f3b1c010cdde1687b8878d4ec58d2bb90f03"
+claim_label: CANDIDATE
+scope: >-
+  Exact complete all-prism encoding schema and finite lazy separation procedure
+  for all 33 endpoint-compatible refined cases under n3=4158, without any
+  completed-graph automorphism assumption.
+inputs:
+  - path: code/sat_model.py
+    sha256: 45f0da74619b31a1a31cc407f702f8e86a0597ee73d29ec268528cd89980aef8
+  - path: code/root_model.py
+    sha256: 2a1f074f29f2e00e38437bf81418771d57ab41335605b9f3b9f2cae061a1624e
+  - path: code/matching_orbits.py
+    sha256: 1ba68393c385ef296458555b7c48533786ea592a50bec589be675f95fd550240
+  - path: code/wave35_n3_endpoint_root_scout.py
+    sha256: 04ef058c3a14ed8790773f015edc16f4ae1da1bcb011e3b795f0d16229f7ff7e
+  - path: attempts/wave36-rooted-branches/rooted_branch_scout.py
+    sha256: bdb3b0ac06d4926133cf9f9e3a80c58dec82c48dc09bb85696819c826da56397
+  - path: attempts/wave37-proof-producing-endpoint/export_endpoint_opb.py
+    sha256: b9cb895625e89709bfef765156a7fa0dd7c842a1d6db41401b83df15e986d902
+method: >-
+  Reconstructed every full-graph edge as fixed true, fixed false, or one of
+  the original 3,486 residual variables; enumerated every potential triangle,
+  every disjoint triangle pair, and all six perfect matchings; derived one
+  negative clause from each compatible nine-edge prism pattern; and implemented
+  an exhaustive decoded-candidate prism oracle with candidate-bound catalog
+  completeness, source-bound cumulative-pool provenance, strict integer and
+  status schemas, and pre-write repository containment. The static stream was
+  size-estimated but deliberately not run.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave38-complete-endpoint\export_complete_endpoint.py --inventory
+  --output attempts\wave38-complete-endpoint\static-schema-estimate.json;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave38-complete-endpoint\audit_package.py --output
+  attempts\wave38-complete-endpoint\construction-audit.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  attempts\wave38-complete-endpoint -p "test_*.py" -v
+outputs:
+  - path: attempts/wave38-complete-endpoint/complete_endpoint.py
+    sha256: 94288c41edc9bd8877bcac4ec714e71550bb55700ab8e64ca09ff72b1bba5a32
+  - path: attempts/wave38-complete-endpoint/export_complete_endpoint.py
+    sha256: 4ad6f259651cb77c7455dcaa991d816c2ae622c808070538eabdf858bc52ed20
+  - path: attempts/wave38-complete-endpoint/prism_oracle.py
+    sha256: 17c318cd441e1021c2fa62fbc7f38009a4674eda553722d25d5a5c6f6bce731b
+  - path: attempts/wave38-complete-endpoint/cut_pool.py
+    sha256: 725d72fac24cea60e238e3fcaf9b72ac88434ab339c7b4ba7b8d51cc808d2bac
+  - path: attempts/wave38-complete-endpoint/static-schema-estimate.json
+    sha256: 6cf9e7d6c799abf4228e8b428adfa8d6bdac29a90c36d4d85c0b4836283d2195
+  - path: attempts/wave38-complete-endpoint/construction-audit.json
+    sha256: 8df832ae56c81f5a87632b4bf3591a0b8a5dd72422d4fdc5621c5b404b47b1f5
+  - path: attempts/wave38-complete-endpoint/fixture-residual-prism-cuts.json
+    sha256: 96458134110b7d85fb528ee3541578531e2364ae108713456c2b97ed7e88d270
+  - path: attempts/wave38-complete-endpoint/fixture-cut-pool.json
+    sha256: 5947b56b0a368fe052ae4253ea92e055ee196288afba63b2c743d9b7f9d03c7c
+tests:
+  discovery:
+    passed: 12
+    failed: 0
+  deterministic_replay: PASS
+  fixture_prism_witnesses: 1
+  fixture_exact_cuts: 1
+  endpoint_refined_cases: 33
+  exact_residual_only_static_clauses: 24388892640
+formula_status: NOT_GENERATED_RESOURCE_GUARD
+solver_status: NOT_RUN
+certificate_status: NONE
+limitations:
+  - No target OPB formula was generated or solved.
+  - The complete static schema is computationally impractical at over 24 billion clauses.
+  - A cumulative lazy-cut pool is not complete until a checked terminal result.
+  - Unbound library validation proves individual-cut soundness only; public
+    completeness and provenance modes require candidate and source evidence.
+  - The fixture is not a strongly regular graph and carries no target evidence.
+  - This construction agent cannot verify its own claims.
+  - n3=4158, Conway-99, novelty, and any improved upper bound remain UNKNOWN.

@@ -1,0 +1,168 @@
+{
+  "claim_label": "CANDIDATE",
+  "control_validation": {
+    "control_count": 2,
+    "file_sha256": "db6fb90836dc16440a9e0c73ccff420516af9641e60d6775537f7a695e33ae33",
+    "semantic_sha256": "fb39d2cf7f9b42375eb2bf77f211739c9da61f7f1c1b74d65b12355fc4f89905",
+    "status": "PASS",
+    "target_result": "UNKNOWN",
+    "validated_controls": [
+      {
+        "branch_id": "root-q3x0",
+        "common_point_Berge_triangle_count": 11,
+        "formula_sha256": "2c386e58446c3142a6f0d93f8f92f0cd6a085951d82f7214eb9cc9adef2b6d4b",
+        "k_edge_count": 72,
+        "point_count": 22,
+        "profile_id": "r16-q2x16",
+        "semantic_sha256": "00fa2235b5716387a2eb8e57438f078df5361925c83513d767437890285406ff",
+        "size3_point_count": 4,
+        "status": "PASS",
+        "target_result": "UNKNOWN",
+        "variant": "no_common_point_control"
+      },
+      {
+        "branch_id": "no-size3",
+        "common_point_Berge_triangle_count": 0,
+        "formula_sha256": "4bf32491072b83a53ff254ee8359e606e3b93d1cbb974ba380ed82f2f7af59ef",
+        "k_edge_count": 63,
+        "point_count": 24,
+        "profile_id": "r16-q2x16",
+        "semantic_sha256": "e918fe1cad2812f5a9c708df63d95e531e1a015d406ba4607293a940170294b5",
+        "size3_point_count": 0,
+        "status": "PASS",
+        "target_result": "UNKNOWN",
+        "variant": "k_degree_upper_control"
+      }
+    ]
+  },
+  "mutation_validation": {
+    "mutation_count": 9,
+    "mutations": {
+      "altered_q_profile": {
+        "reason": "q profile mismatch",
+        "result": "REJECTED"
+      },
+      "claim_status_inflation": {
+        "reason": "candidate claim status inflation",
+        "result": "REJECTED"
+      },
+      "deleted_K_edge": {
+        "reason": "diagnostic replay mismatch",
+        "result": "REJECTED"
+      },
+      "duplicate_K_edge": {
+        "reason": "K-edge list order is not canonical",
+        "result": "REJECTED"
+      },
+      "duplicate_point": {
+        "reason": "point list order is not canonical",
+        "result": "REJECTED"
+      },
+      "forged_diagnostic": {
+        "reason": "diagnostic replay mismatch",
+        "result": "REJECTED"
+      },
+      "forged_normalization": {
+        "reason": "branch normalization metadata mismatch",
+        "result": "REJECTED"
+      },
+      "forged_semantic_digest": {
+        "reason": "semantic digest mismatch",
+        "result": "REJECTED"
+      },
+      "target_status_inflation": {
+        "reason": "candidate target status inflation",
+        "result": "REJECTED"
+      }
+    },
+    "status": "PASS"
+  },
+  "negative_solver_results_evidentiary": false,
+  "novelty": "UNKNOWN",
+  "profile_validation": {
+    "file_sha256": "c2acf43d29aa08179869a31327991336ac54559fa5ec4915d9f3ea993de7bb5a",
+    "independent_flower_results": {
+      "r14-size4": [
+        45,
+        0
+      ],
+      "r15-size4": [
+        157,
+        0
+      ],
+      "r15-size5": [
+        1,
+        0
+      ],
+      "r16-size4": [
+        423,
+        16
+      ],
+      "r16-size5": [
+        11,
+        0
+      ]
+    },
+    "independent_local_state_counts": {
+      "r14-q222": 1,
+      "r14-q223": 0,
+      "r14-q233": 0,
+      "r14-q333": 0,
+      "r15-q222": 8,
+      "r15-q223": 0,
+      "r15-q233": 0,
+      "r16-q222": 32
+    },
+    "post_finite_branch_count": 4,
+    "raw_profile_count": 12,
+    "semantic_sha256": "07eb5c0430458adb4e17a00d27b3635d14031d87c185adb48368f56bfb75bd13",
+    "status": "PASS",
+    "surviving_profile_count": 3,
+    "target_result": "UNKNOWN"
+  },
+  "scan_validation": {
+    "branch_count": 11,
+    "file_sha256": "4ce53c2fc8a8c0bc005ac1b73dc657ea3c8b7a7f1e3bae1cd73f24de73c539f2",
+    "negative_results_evidentiary": false,
+    "semantic_sha256": "de119937479d4f5c8fe75cab3affe275938c32bdfe660410d7443a0348b0fc7a",
+    "status": "PASS",
+    "status_histogram": {
+      "BUDGET_UNKNOWN": 1,
+      "SAT_CANDIDATE": 1,
+      "TIMEOUT_UNKNOWN": 2,
+      "UNSAT_UNVERIFIED": 7
+    },
+    "target_result": "UNKNOWN",
+    "validated_positive_candidates": [
+      {
+        "branch_id": "no-size3",
+        "common_point_Berge_triangle_count": 0,
+        "formula_sha256": "4f0a295ce08409877efee09f87f1ccaf289ea5fe3014d115a4ef99e3e2b5ebdb",
+        "k_edge_count": 72,
+        "point_count": 24,
+        "profile_id": "r16-q2x16",
+        "semantic_sha256": "b533da6c967098ed5ec9afd4d0d4e6166c6082e4bf9de5717f48c7b6835d686a",
+        "size3_point_count": 0,
+        "status": "PASS",
+        "target_result": "UNKNOWN",
+        "variant": "full"
+      }
+    ]
+  },
+  "schema": "conway99-wave14-n3-48-independent-validation-v1",
+  "semantic": {
+    "control_semantic_sha256": "fb39d2cf7f9b42375eb2bf77f211739c9da61f7f1c1b74d65b12355fc4f89905",
+    "mutation_count": 9,
+    "profile_semantic_sha256": "07eb5c0430458adb4e17a00d27b3635d14031d87c185adb48368f56bfb75bd13",
+    "scan_semantic_sha256": "de119937479d4f5c8fe75cab3affe275938c32bdfe660410d7443a0348b0fc7a",
+    "validated_candidate_semantic_sha256": [
+      "b533da6c967098ed5ec9afd4d0d4e6166c6082e4bf9de5717f48c7b6835d686a"
+    ],
+    "validated_control_semantic_sha256": [
+      "00fa2235b5716387a2eb8e57438f078df5361925c83513d767437890285406ff",
+      "e918fe1cad2812f5a9c708df63d95e531e1a015d406ba4607293a940170294b5"
+    ]
+  },
+  "semantic_sha256": "965e2457c4b1357ded77b370907e0414e730abd310a94fc02754ef8a4416aefa",
+  "target_result": "UNKNOWN"
+}

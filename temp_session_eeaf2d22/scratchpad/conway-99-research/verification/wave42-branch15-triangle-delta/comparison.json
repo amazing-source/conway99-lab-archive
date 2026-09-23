@@ -1,0 +1,54 @@
+{
+  "active_catalog": {
+    "constraints": 33778,
+    "gzip_sha256": "63e07c1196c4cfd315f72b311221233fa61f608f0dd856f3d00391bd5f5286b9",
+    "normalized_clause_stream_sha256": "fc8925756861e850b28bfb9e18844dd75c525b75f4061f70089df696843ad903",
+    "path": "attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-active-delta.opb.gz",
+    "raw_sha256": "6ef7d69d217077b30a39cc9a85f65881d9389516201de7fdbcf593f23a6fb2c0",
+    "variables": 289338,
+    "widths": {
+      "3": 91,
+      "4": 580,
+      "5": 33107
+    }
+  },
+  "claim_label": "VERIFIED_SCOPED_REDUCTION",
+  "comparison_boundary": "post-clean-room-implementation-freeze",
+  "discovery_result": {
+    "claim_label": "CANDIDATE",
+    "path": "attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-result.json",
+    "sha256": "2faa09eee4217d19fc1e1ac8f9705129e1cd57d47c0016a1d2bc229d87d8b184"
+  },
+  "format": "wave42-branch15-triangle-delta-comparison-v1",
+  "independent_clause_streams": {
+    "active_sha256": "fc8925756861e850b28bfb9e18844dd75c525b75f4061f70089df696843ad903",
+    "raw_sha256": "e82aaa6b6f9cad3d27dbfb36069446a62aafbb2629fabc2a8492d243c1320635"
+  },
+  "limitations": [
+    "The equality is between exact normalized positive-variable clause sets.",
+    "The reduction is conditional on endpoint branch 15 and n3=4158.",
+    "Neither exact catalogue match is a SAT or UNSAT certificate.",
+    "Branch 15, the endpoint, and Conway-99 remain UNKNOWN."
+  ],
+  "raw_catalog": {
+    "constraints": 64932,
+    "gzip_sha256": "0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e",
+    "normalized_clause_stream_sha256": "e82aaa6b6f9cad3d27dbfb36069446a62aafbb2629fabc2a8492d243c1320635",
+    "path": "attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz",
+    "raw_sha256": "348dc5f4bc9ee99511286a8078d0e4ef79786b57ba39ae572c032e42747be77e",
+    "variables": 289338,
+    "widths": {
+      "3": 132,
+      "5": 64800
+    }
+  },
+  "result": {
+    "active_catalog_exact_match": true,
+    "branch_15_closed": false,
+    "conway_99": "UNKNOWN",
+    "endpoint_cases_closed": 0,
+    "endpoint_cases_total": 33,
+    "raw_catalog_exact_match": true
+  },
+  "role": "verifier"
+}

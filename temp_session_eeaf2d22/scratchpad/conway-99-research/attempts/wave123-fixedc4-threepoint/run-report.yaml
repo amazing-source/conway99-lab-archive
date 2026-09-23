@@ -1,0 +1,44 @@
+role: proof_a
+date_utc: 2026-07-28T06:45:00Z
+git_commit: e1484c6564ddfde580191cdcb4a66a8f6ad7f2a2
+claim_label: DERIVED | REFUTED | CANDIDATE | UNKNOWN
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2), test the Wave120
+  same-oriented norm-16 fixed-C4 support code against exact span-projector
+  leverage, graph-valued two-by-two PSD completion, and rooted
+  product-Johnson three-point moment blocks.
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: attempts/wave120-fixedc4-sumdiff/package-manifest.sha256
+    sha256: e2e35519158556a1810affdee4bc148a333ee95a63557ea1a1e687dfcd883017
+  - path: verification/wave96-norm16-norm18-upper/package-manifest.sha256
+    sha256: 8b3f9f90de931dc152ccf1b9e0705409492a6c5eb5246643ddce55aad8afe6e9
+  - path: verification/wave112-c4-short-vector-incidence/package-manifest.sha256
+    sha256: 56845bcdf221c16ec46d40c630a8cdb3d63beed1314dd2683e17bf5c929ff024
+  - path: attempts/wave120-fixedc4-sumdiff/witness.json
+    sha256: 3569eaa48ec3e99ab988f943492c103f67889c8fadf9a2a15edeac9586220183
+method: >-
+  Standard-library exact rational inversion of support Gram matrices;
+  exact W=T(T^T T)^-1T^T leverage and graph-valued two-by-two minor
+  checks; explicit rooted coordinate-feature factorizations for
+  centered endpoint-one and degree-two product-Johnson moment blocks;
+  and a nonexhaustive floating backward-removal candidate search followed
+  by exact certification.
+command: >-
+  python -B attempts/wave123-fixedc4-threepoint/exact_check.py;
+  python -B attempts/wave123-fixedc4-threepoint/exact_check.py --verify
+  attempts/wave123-fixedc4-threepoint/exact-results.json;
+  python -B -m unittest discover -s
+  attempts/wave123-fixedc4-threepoint -p "test_*.py" -v
+outputs:
+  - path: attempts/wave123-fixedc4-threepoint/candidate.json
+  - path: attempts/wave123-fixedc4-threepoint/exact-results.json
+  - path: attempts/wave123-fixedc4-threepoint/derivation.md
+  - path: attempts/wave123-fixedc4-threepoint/failed-routes.md
+limitations:
+  - Independent verification is required.
+  - The explicit diagonal-pass 26-subset fails 352 exact graph-valued two-by-two rows.
+  - The subset search is nonexhaustive and supplies no cap.
+  - Rooted support-code PSD blocks do not encode one common graph adjacency.
+  - Rank 28, rank 30, the local caps, Conway-99, and novelty remain UNKNOWN.

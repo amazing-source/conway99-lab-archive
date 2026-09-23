@@ -1,0 +1,46 @@
+role: construction
+date_utc: 2026-07-27T01:00:00Z
+git_commit: 3014f3b1c010cdde1687b8878d4ec58d2bb90f03
+claim_label: UNKNOWN
+scope: "Read-only audit of two live refined endpoint solver process trees and an exact proof-producing work queue for all 33 endpoint-compatible cases under n3=4158"
+inputs:
+  code/matching_orbits.py: 1ba68393c385ef296458555b7c48533786ea592a50bec589be675f95fd550240
+  code/sat_model.py: 45f0da74619b31a1a31cc407f702f8e86a0597ee73d29ec268528cd89980aef8
+  attempts/wave35-n3-upper-triple-overlap/root-endpoint-reduction.json: 7551c7b9d956705e41f9feb42d76d3bb5ab60dab0b46416fa9c0e58e5346a46a
+  attempts/wave36-rooted-branches/rooted_branch_scout.py: bdb3b0ac06d4926133cf9f9e3a80c58dec82c48dc09bb85696819c826da56397
+  attempts/wave36-rooted-branches/refined_branch_scout.py: f23cc9b1544b34d14d42455c1f6378195f7375f5bc377ceeb3318cf2e9bdb68d
+  attempts/wave37-proof-producing-endpoint/export_endpoint_opb.py: b9cb895625e89709bfef765156a7fa0dd7c842a1d6db41401b83df15e986d902
+  attempts/wave37-proof-producing-endpoint/branch-15-formula.json: 3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6
+  attempts/wave37-proof-producing-endpoint/branch-15.opb.gz: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  verification/n3-refined-cover/n3-refined-cover.json: fd9a14193365bf40d3d7bcbe53d56c6f1ffa8a93ca63d5b68506c3354f3b9f8a
+  verification/n3-refined-cover/verify.py: cbf0b46a4656b54c0f5b6a65a7f0e549286a5cfb68ca7ee54813b43423d1cb9a
+  verification/2026-07-22-veripb-calibration.md: dc16e03bd2d3b3c22d3a50988fcb0508c095ae00a032f4b0997bb0c41db21dba
+method: "Inspect the requested Windows process trees and exact command lines without attaching or signaling; check both terminal output targets; sample worker CPU activity; reconstruct the exact 33-case endpoint subcover by filtering the independently verified 78-orbit certificate with the audited five-parent endpoint survivor list; and enforce fail-closed coverage and status invariants with hostile tests."
+command: |
+  Get-CimInstance Win32_Process | Where-Object ProcessId -in 25088,27676,42444,20988
+  Get-Process -Id 27676,20988
+  Test-Path attempts\wave36-rooted-branches\refined-100k.json
+  Test-Path attempts\wave36-rooted-branches\refined-100k-minicard-parent4.json
+  .venv\Scripts\python.exe -B attempts\wave38-solver-harvest\build_coverage.py
+  .venv\Scripts\python.exe -B attempts\wave38-solver-harvest\verify_harvest.py --output attempts\wave38-solver-harvest\verification-result.json
+  .venv\Scripts\python.exe -B -m unittest discover -s attempts\wave38-solver-harvest -p "test_*.py" -v
+outputs:
+  attempts/wave38-solver-harvest/README.md: 1629caee0b8350322cd8c2ecbf61b8beaf15096dcfa4dff97d8d8089680738c2
+  attempts/wave38-solver-harvest/build_coverage.py: cf100eb676661c067d8183d4991344f21fa1655750944f1233fe989c007cb763
+  attempts/wave38-solver-harvest/continuation-plan.md: 33115c739a96e708911c7600f34657f10eaa981b6a8cdd9770b7d8b2ef396c7a
+  attempts/wave38-solver-harvest/coverage-plan.json: 2de85c3f73d4b12a579b281c10171a47c12e26a323ecdf9617c1a842a81d8bf2
+  attempts/wave38-solver-harvest/failed-routes.md: 099beb5fea1ca97ce65b29076eb86e66046b0682d59b92d2d67e1b51a45e8df0
+  attempts/wave38-solver-harvest/input-freeze.sha256: c0c18edd31f12840fbdc16d9cee12493ed4bfc371c5d3b8455e421cc9e89a790
+  attempts/wave38-solver-harvest/process-snapshot.json: b0515ac9169dcbb74cc7ca243aa6934b4b73eb13f93b9c8110d75af3a960527f
+  attempts/wave38-solver-harvest/test_verify_harvest.py: 6a7ed425411dca96731acca4574c6f410adaf5a60339a64bfe34097edba3f216
+  attempts/wave38-solver-harvest/verification-result.json: 09e38265aa70dd01311f790d0218d7f60a785c1322c107f786c83058b3b836b1
+  attempts/wave38-solver-harvest/verify_harvest.py: 567021894d250dbc4493c73563874f1b677f91e05e7b92c406ebb9eb13014f26
+limitations:
+  - "Both observed solver workers were live and CPU-active, but neither terminal JSON output existed; no case-level result was recoverable."
+  - "The live scout writes only after its complete selected sweep and has no atomic per-case journal."
+  - "Every solver timeout or budget stop has zero mathematical evidentiary value."
+  - "The embedded live solvers retain no independently checkable proof, so even a later UNSAT_UNVERIFIED record cannot eliminate a case."
+  - "The parent formulas include only prism clauses meeting six fixed triangles; they do not encode global prism-freeness."
+  - "The coverage builder imports prior independently verified cover and endpoint-reduction artifacts; this construction lane does not recertify those theorems."
+  - "No new solver was launched because the host was memory-constrained; no live process was stopped, signaled, attached to, or modified."
+  - "No SAT assignment, UNSAT proof, endpoint exclusion, improved upper bound, graph construction, or novelty claim is supplied."

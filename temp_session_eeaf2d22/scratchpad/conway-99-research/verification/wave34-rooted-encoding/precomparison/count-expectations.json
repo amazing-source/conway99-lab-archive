@@ -1,0 +1,227 @@
+{
+  "auxiliary_variables": {
+    "cardinality": 946806,
+    "product": 280245,
+    "total": 1227051
+  },
+  "clause_length_histogram": {
+    "1": 12084,
+    "2": 1823388,
+    "3": 2483571
+  },
+  "dimacs_body_sha256": "5a98d5d6c505cb89d365bbae4f382c9593f53bdcc64b57ed975122461202a61d",
+  "fixed_data": {
+    "o_labels_sha256": "391ca52fb781969d988c8f75eca24da6c131e480f0e6e5a673b83b04ec39bdb1",
+    "o_size": 70,
+    "q_size": 15,
+    "ss_fixed_identity": "PASS",
+    "support_adjacency_sha256": "8e9df095563e6d7a8166a99d60f51c15c4db6b722080fd233146a2aa6626431d",
+    "support_size": 14,
+    "support_to_o_sha256": "8a4e68fd7bfa97917c74bde2a3ae34d9786ca1f7597b0bb0b3c77c110cfe0756"
+  },
+  "groups": {
+    "AND_OO_B": {
+      "clauses": 108675,
+      "first_variable": 167686,
+      "last_variable": 203910,
+      "variables": 36225
+    },
+    "AND_OO_D": {
+      "clauses": 492660,
+      "first_variable": 3466,
+      "last_variable": 167685,
+      "variables": 164220
+    },
+    "AND_OQ_DB": {
+      "clauses": 217350,
+      "first_variable": 203911,
+      "last_variable": 276360,
+      "variables": 72450
+    },
+    "AND_QQ_B": {
+      "clauses": 22050,
+      "first_variable": 276361,
+      "last_variable": 283710,
+      "variables": 7350
+    },
+    "CARD_B_COLUMN_QQ_DIAGONAL": {
+      "clauses": 55455,
+      "first_variable": 332641,
+      "last_variable": 346815,
+      "variables": 14175
+    },
+    "CARD_B_ROW": {
+      "clauses": 13930,
+      "first_variable": 328861,
+      "last_variable": 332640,
+      "variables": 3780
+    },
+    "CARD_D_ROW": {
+      "clauses": 175210,
+      "first_variable": 283711,
+      "last_variable": 328860,
+      "variables": 45150
+    },
+    "CARD_OO_DIAGONAL": {
+      "clauses": 277270,
+      "first_variable": 372562,
+      "last_variable": 443541,
+      "variables": 70980
+    },
+    "CARD_OO_OFFDIAGONAL": {
+      "clauses": 1990422,
+      "first_variable": 443542,
+      "last_variable": 991431,
+      "variables": 547890
+    },
+    "CARD_OQ": {
+      "clauses": 794850,
+      "first_variable": 991432,
+      "last_variable": 1208781,
+      "variables": 217350
+    },
+    "CARD_QQ_OFFDIAGONAL": {
+      "clauses": 79485,
+      "first_variable": 1208782,
+      "last_variable": 1230516,
+      "variables": 21735
+    },
+    "CARD_SO": {
+      "clauses": 71316,
+      "first_variable": 346816,
+      "last_variable": 366891,
+      "variables": 20076
+    },
+    "CARD_SQ": {
+      "clauses": 20370,
+      "first_variable": 366892,
+      "last_variable": 372561,
+      "variables": 5670
+    },
+    "PRIMARY_B": {
+      "clauses": 0,
+      "first_variable": 2416,
+      "last_variable": 3465,
+      "variables": 1050
+    },
+    "PRIMARY_D": {
+      "clauses": 0,
+      "first_variable": 1,
+      "last_variable": 2415,
+      "variables": 2415
+    }
+  },
+  "inventory": {
+    "constraint_counts": {
+      "B_COLUMN_QQ_DIAGONAL": 15,
+      "B_ROW": 70,
+      "D_ROW": 70,
+      "OO_DIAGONAL": 70,
+      "OO_OFFDIAGONAL": 2415,
+      "OQ": 1050,
+      "QQ_OFFDIAGONAL": 105,
+      "SO": 980,
+      "SQ": 210
+    },
+    "constraint_total": 4985,
+    "target_distributions": {
+      "B_COLUMN_QQ_DIAGONAL": [
+        {
+          "count": 15,
+          "scope_size": 70,
+          "target": 14
+        }
+      ],
+      "B_ROW": [
+        {
+          "count": 70,
+          "scope_size": 15,
+          "target": 3
+        }
+      ],
+      "D_ROW": [
+        {
+          "count": 70,
+          "scope_size": 69,
+          "target": 9
+        }
+      ],
+      "OO_DIAGONAL": [
+        {
+          "count": 70,
+          "scope_size": 84,
+          "target": 12
+        }
+      ],
+      "OO_OFFDIAGONAL": [
+        {
+          "count": 21,
+          "scope_size": 84,
+          "target": 0
+        },
+        {
+          "count": 588,
+          "scope_size": 84,
+          "target": 1
+        },
+        {
+          "count": 1806,
+          "scope_size": 84,
+          "target": 2
+        }
+      ],
+      "OQ": [
+        {
+          "count": 1050,
+          "scope_size": 70,
+          "target": 2
+        }
+      ],
+      "QQ_OFFDIAGONAL": [
+        {
+          "count": 105,
+          "scope_size": 70,
+          "target": 2
+        }
+      ],
+      "SO": [
+        {
+          "count": 56,
+          "scope_size": 9,
+          "target": 0
+        },
+        {
+          "count": 84,
+          "scope_size": 9,
+          "target": 1
+        },
+        {
+          "count": 504,
+          "scope_size": 10,
+          "target": 1
+        },
+        {
+          "count": 336,
+          "scope_size": 10,
+          "target": 2
+        }
+      ],
+      "SQ": [
+        {
+          "count": 210,
+          "scope_size": 10,
+          "target": 2
+        }
+      ]
+    }
+  },
+  "primary_variables": {
+    "B_ordered_incidences": 1050,
+    "D_unordered_edges": 2415,
+    "total": 3465
+  },
+  "schema_version": 1,
+  "scope": "unrestricted labeled six-block graph criterion",
+  "total_clauses": 4319043,
+  "total_variables": 1230516
+}

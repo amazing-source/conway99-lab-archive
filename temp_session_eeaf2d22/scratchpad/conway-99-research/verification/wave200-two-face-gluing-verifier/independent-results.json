@@ -1,0 +1,142 @@
+{
+  "boundary": {
+    "conway_99": "UNKNOWN",
+    "endpoint_excluded": false,
+    "external_novelty": "UNKNOWN",
+    "graph_constructed": false,
+    "rank_11_excluded": false,
+    "strict_original_n3_improvement": false
+  },
+  "conditional_setting": "prism-free rank-11 endpoint n3=4158, P=0",
+  "consequence": {
+    "all_projective_short_circuits": 7732,
+    "conditional_Q0_lower": 7039,
+    "conditional_Q_lower": 7039,
+    "nonzero_scalar_short_circuit_words": 15464
+  },
+  "contradiction": {
+    "permitted_s_upper": 4,
+    "required_s_lower": 27,
+    "status": "CONTRADICTION"
+  },
+  "faces": {
+    "budget_subrow": "S5+3*SH+13*SF+9*g<=B",
+    "budgets": {
+      "7037": 23,
+      "7038": 63
+    },
+    "excluded_Q0_values": [
+      7037,
+      7038
+    ],
+    "maximum_budget": 63,
+    "target": "281457/40"
+  },
+  "forced_saturation": {
+    "bound": "4*s>=297-3*B",
+    "coefficientwise_domination_residual": {
+      "SF": 36,
+      "SH": 8,
+      "g": 24
+    },
+    "face_s_lower": {
+      "7037": 57,
+      "7038": 27
+    },
+    "four_s_lower": 108,
+    "penalty": {
+      "S5": 3,
+      "SF": 3,
+      "SH": 1,
+      "g": 3
+    },
+    "s_lower": 27,
+    "three_budget_row": {
+      "S5": 3,
+      "SF": 39,
+      "SH": 9,
+      "g": 27
+    },
+    "unsaturated_count_bound": "q-s<=epsilon"
+  },
+  "format": "wave200-two-face-gluing-independent-v1",
+  "local_fibre_loss": {
+    "deficient_bound": "delta_x>=36-3*c_x+4*s_x>=4*s_x for c_x<=12",
+    "delta_upper": 12,
+    "distinct_saturated_fibres_reason": "one saturated orientation exhausts all five simple triples containing its block pair",
+    "global_bound": "3*s<=delta<=S5/5<=B/5",
+    "hilton_milner_templates": {
+      "exceptional_K": {
+        "degree_five_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "maximum_pair_degree": 5,
+        "members": 13
+      },
+      "standard_H": {
+        "degree_five_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "maximum_pair_degree": 5,
+        "members": 13
+      }
+    },
+    "s_upper": 4,
+    "saturated_orientation_multiplicity": 5,
+    "simple_family_pair_capacity": 5,
+    "tight_bound": "delta_x>=3*s_x",
+    "tight_loss_by_s_x": {
+      "0": 3,
+      "1": 6,
+      "2": 9,
+      "3": 12
+    }
+  },
+  "oriented_identities": {
+    "S5_identity": "S5=5*delta+5*eta+epsilon",
+    "S5_vector": {
+      "delta": 5,
+      "epsilon": 1,
+      "eta": 5
+    },
+    "q_identity": "4*q=297-3*SF-3*g-SH+epsilon+delta+eta",
+    "q_right_vector": {
+      "SF": -3,
+      "SH": -1,
+      "constant": 297,
+      "delta": 1,
+      "epsilon": 1,
+      "eta": 1,
+      "g": -3
+    }
+  },
+  "search_scope": "exact symbolic incidence, two fixed Hilton-Milner formulas, and integer slack arithmetic only; no graph, configuration, cover, SAT, LP, enumeration, isomorphism, or brute-force search",
+  "stopping_point": {
+    "Q0": 7039,
+    "budget": 103,
+    "excluded_by_this_coarse_argument": false
+  },
+  "verdict": "VERIFIED_WITH_SCOPE"
+}

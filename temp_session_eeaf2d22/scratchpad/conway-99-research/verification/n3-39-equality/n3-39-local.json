@@ -1,0 +1,92 @@
+{
+  "claim_label": "UNKNOWN",
+  "combined": {
+    "bytes": 1730729,
+    "records": 8907,
+    "sha256": "452850018ad13362694f5bfff2e4beac03288a113a0391c3456a47cd6fbfe9a1"
+  },
+  "conclusion": {
+    "conditional_global_n3_lower_bound": 42,
+    "conditional_induced_C6_lower_bound": 209328,
+    "conditional_n3_39_survivors": 0,
+    "target_result": "UNKNOWN"
+  },
+  "git_commit": "c299b88fbd956c813ff3379ff236b3123a90d242",
+  "premises": [
+    "active_triangle_count=13",
+    "K_is_simple_complement_of_L_on_distinct_active_triangles",
+    "K_is_6_regular",
+    "each_active_triangle_has_exactly_three_point_sets",
+    "active_point_sets_have_size_at_least_two",
+    "every_active_point_set_is_a_clique_in_K",
+    "point_hypergraph_is_linear",
+    "common_point_Berge_triangle_is_forbidden",
+    "every_labeled_crossing_degree_is_zero_or_two"
+  ],
+  "schema": "conditional-n3-39-local-replay-v1",
+  "scope": "conditional_n3_39_active_triangle_replay",
+  "statistics": {
+    "crossing_matrices_total": 682,
+    "external_collision_pairs": 1546,
+    "root3_feasible_crossing_extensions": 917,
+    "root3_profiles": 64,
+    "root4_feasible_crossing_extensions": 33,
+    "root4_profiles": 6561
+  },
+  "streams": [
+    {
+      "bytes": 512,
+      "name": "premises.jsonl",
+      "records": 1,
+      "sha256": "1c7925ef36a023738279dcf3c7e5fba5ea29055c609f7ca79a24b27a49020100"
+    },
+    {
+      "bytes": 100338,
+      "name": "crossing_matrices.jsonl",
+      "records": 682,
+      "sha256": "58d91ba3cd113431183d29a51e5b43c7580bc9815767df35269cfb0f49ddb304"
+    },
+    {
+      "bytes": 167922,
+      "name": "collision_pairs.jsonl",
+      "records": 1546,
+      "sha256": "2e12039f9a70a27f093cd5dbf8d4b8931138eb1b9db0d75908574459190ba8fc"
+    },
+    {
+      "bytes": 1539,
+      "name": "size_bounds.jsonl",
+      "records": 12,
+      "sha256": "b4948bf52f4b49253003fa2587c63f8f1f4f9d6883de64d78ef4a82db92ae222"
+    },
+    {
+      "bytes": 364,
+      "name": "degree_table.jsonl",
+      "records": 4,
+      "sha256": "752f167eed12daf3e9d12429c6fbe45dd5b9fab22edeb7f75179b212fbc552b9"
+    },
+    {
+      "bytes": 4824,
+      "name": "owner_motifs.jsonl",
+      "records": 36,
+      "sha256": "701c339f54f9305429e388e129d38b9f9fa5f73491b473cb6295355f3830a3ff"
+    },
+    {
+      "bytes": 1433584,
+      "name": "root4_profiles.jsonl",
+      "records": 6561,
+      "sha256": "417ccd654d8938a8cb9436306078d9a99643fc129a96e377b1599d3be6d71225"
+    },
+    {
+      "bytes": 21504,
+      "name": "root3_profiles.jsonl",
+      "records": 64,
+      "sha256": "a2523cf95f35a59cd9e405553ddfa324b7b640ae8ce53888c77896952fc789df"
+    },
+    {
+      "bytes": 142,
+      "name": "parity.jsonl",
+      "records": 1,
+      "sha256": "3db91a9a63245986dd93ddbf99fdb9514257a93cb11091f79906d9abdae32969"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1425, in <module>
+    main()
+    ~~~~^^
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1409, in main
+    result = build_results(
+        args.connected_dispositions,
+        args.disconnected_dispositions,
+    )
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 1333, in build_results
+    disconnected, disconnected_rows, petersen_l, petersen_f = disconnected_census()
+                                                              ~~~~~~~~~~~~~~~~~~~^^
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 503, in disconnected_census
+    for case_id, rows in disconnected_cases():
+                         ~~~~~~~~~~~~~~~~~~^^
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 447, in disconnected_cases
+    order: triangle_free_catalog(order)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 437, in triangle_free_catalog
+    for index, record in enumerate(fetch_catalog(order)):
+                                   ~~~~~~~~~~~~~^^^^^^^
+  File "<workspace>\attempts\wave19-alternate-frontier\exact_frontier.py", line 91, in fetch_catalog
+    raise AssertionError(f"order-{order} catalog bytes changed: {observed}")
+AssertionError: order-12 catalog bytes changed: (1105, '21bab16fbf7db826928315b9ca1d64684c0b1f7014b02fab0c6f2fb2f247104b')

@@ -1,0 +1,56 @@
+role: proof_a
+date_utc: "2026-07-27T01:16:58Z"
+git_commit: "3014f3b1c010cdde1687b8878d4ec58d2bb90f03"
+claim_label: CANDIDATE
+scope: >-
+  Necessary characteristic-seven rank condition for every hypothetical
+  srg(99,14,1,2), with a conditional reflection consequence at n3=4158.
+inputs:
+  - path: agents/2026-07-26-wave36-modular-reflection.md
+    sha256: 1a66e4acae92993f547c74745cfe6da7e53dfc185cf37da31d2590edcb6b558c
+  - path: verification/wave36-modular-reflection/audit.md
+    sha256: 002a44ab3f5a7841e153d9e6317cbd149333b1e034c1fb361bd8ac02d28ad48a
+  - path: attempts/wave36-modular-reflection/exact-results.json
+    sha256: 5efcd507565a55fcdc3323448bf123ebec31ddc6eb9506a83258eff3c1468607
+method: >-
+  Prove an unconditional 13-coclique construction from the local matching
+  structure around an edge; derive N M N^T=27I-9A+J for the integral
+  triangle projector; restrict to the coclique; and compute the determinant
+  and rank of 27I_13+J_13 modulo seven exactly.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave38-coclique-rank\test_exact_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave38-coclique-rank\exact_check.py --output
+  attempts\wave38-coclique-rank\exact-results.json;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave38-coclique-rank\exact_check.py --verify
+  attempts\wave38-coclique-rank\exact-results.json
+outputs:
+  - path: attempts/wave38-coclique-rank/exact_check.py
+    sha256: a0bed8c028cfa94cf80ad4ee6100eafc0209650148ee1bb0fce15b5fb1c998ba
+  - path: attempts/wave38-coclique-rank/test_exact_check.py
+    sha256: dbf5eba598963ed3ea221a48348de0f892f60add08a988e51389f27aa7e1ae43
+  - path: attempts/wave38-coclique-rank/exact-results.json
+    sha256: f5a3eecbe4febd12fdcf02cc1976598b8bb8ab4615142e5bb760f1a3bd02d87d
+  - path: attempts/wave38-coclique-rank/README.md
+    sha256: 3e2e15de4238727cada88a543b3a70eba7e49b85dd4b4a099ea9ccbbe30e11e2
+  - path: attempts/wave38-coclique-rank/failed-routes.md
+    sha256: 47336cb3fc475d58728e64cae3fd7f7c0461a108f14a942151fb762567c12b41
+tests:
+  passed: 8
+  failed: 0
+result:
+  guaranteed_coclique_size: 13
+  rank_F7_M_lower_bound: 13
+  previous_project_rank_F7_M_lower_bound: 11
+  endpoint_rank_F7_C_lower_bound: 13
+  if_rank_F3_M_is_12_rank_F7_M_lower_bound: 14
+  endpoint_excluded: false
+  strongest_general_upper_bound: "n3<=4158"
+limitations:
+  - The 13-coclique construction is prior public mathematics.
+  - The rank argument is discovery-side and requires independent verification.
+  - It does not construct M, C, or a Conway graph.
+  - It does not exclude n3=4158 or improve the general upper bound.
+  - Novelty and priority remain UNKNOWN.

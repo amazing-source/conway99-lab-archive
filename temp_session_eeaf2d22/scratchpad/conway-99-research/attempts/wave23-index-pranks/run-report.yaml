@@ -1,0 +1,31 @@
+role: proof_b
+date_utc: 2026-07-23T19:15:16Z
+git_commit: NOT_USED_PER_TASK_INSTRUCTION
+claim_label: DERIVED
+scope: >
+  Conditional exclusion of the first surviving Wave 20 endpoint n3=705 by
+  strengthening the verified projector-lattice determinant argument.
+inputs:
+  verification/wave21-lattice-extension/2026-07-23T184926Z-audit.md: 45814560f1d5bffb3b00144022a3a1f8d069e71dfe430247a1871822ac08f268
+  verification/2026-07-23-wave20-global-schur-audit.md: 6311a893e1802382bfaaf00f8d366ba7f25ff036cda8032978dc5c6b4fdf35a3
+  agents/2026-07-23-wave21-lattice-extension.md: 264027dc534d57aefd8f4d9037d041af2ca8e462efeb9ef22d07de4c40141b3e
+method: >
+  Exact Smith/rank bookkeeping, modular incidence reductions, an integral
+  near-identity trace-square floor, a rigorous two-moment determinant
+  optimization with all 38 radical cases certified by rational brackets, and
+  an even-unimodular obstruction to h=1.
+command: |
+  cd attempts/wave23-index-pranks
+  python -B -m unittest -v test_exact_check.py
+  python -B exact_check.py --output exact-results.json
+outputs:
+  attempts/wave23-index-pranks/exact_check.py: bc8810043de2f27f52186fc19dfae3a4df5231db5dc7fd591ab0a537d6857048
+  attempts/wave23-index-pranks/test_exact_check.py: 582022f36784f62c3f95e6da8b7b9ba600d73da2d8adcb65222d42efff131c35
+  attempts/wave23-index-pranks/exact-results.json: 64bf8192018376961ec88562d64928f73514697000c73cbf79a4a2a2def923b5
+  attempts/wave23-index-pranks/input-freeze.sha256: 4c0492be4fe1c5a1bd6afdc1303e1457b0c92c43ca7ab22366384e469bfeb8b6
+  attempts/wave23-index-pranks/failed-routes.md: 1371323a35959482a888fd3eaf226995eaae99e05800cde889ad239dcccabc65
+limitations:
+  - This is a discovery-agent derivation pending independent adversarial verification.
+  - No actual 231-by-231 M or 99-vertex graph is instantiated.
+  - Neither rank_F3(M), rank_F7(M), nor h is determined away from the rejected endpoint.
+  - Target existence and literature novelty remain UNKNOWN.

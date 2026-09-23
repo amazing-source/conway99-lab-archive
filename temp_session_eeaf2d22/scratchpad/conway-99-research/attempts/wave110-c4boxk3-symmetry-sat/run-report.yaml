@@ -1,0 +1,47 @@
+role: construction
+date_utc: 2026-07-28T04:05:55Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: UNKNOWN
+scope: >-
+  Full 87-vertex extension of the induced C4 box K3 motif, conditional on
+  the sealed Wave 105 incidence reduction, with safe row-lex encoding
+  symmetry inside identical motif-neighborhood classes.
+inputs:
+  - path: attempts/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: b0fd40eda5a3677d4a835788cea20dfcb9bb3c5764719fc04536893f1b5da4a1
+  - path: verification/wave105-c4boxk3-extension/package-manifest.sha256
+    sha256: 2a24e3e5846558a9e93cd2f103e049816cef7f8dd4a200108643e44cc4c300ae
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+method: >-
+  Retain every Wave 105 block equation. Partition by invariant e(X0), add
+  lexicographic nondecrease of external adjacency rows within each exact
+  motif-pattern class, prove completeness with a shared finite-orbit
+  potential, test the CNF truth table exhaustively through length four, and
+  run all four branches sequentially with RAM gates.
+command: >-
+  .\.venv\Scripts\python.exe -u -B
+  attempts\wave110-c4boxk3-symmetry-sat\symmetry_sat.py
+  --solve-seconds 45 --branch-eX0 BRANCH --output
+  attempts\wave110-c4boxk3-symmetry-sat\raw-logs\wave110-branchBRANCH-45s.json
+outputs:
+  - path: attempts/wave110-c4boxk3-symmetry-sat/domain-audit.json
+    sha256: dbc0cd2d86f690c217063c4c71460c7f1c6a423d079e71290f171607819cfe4d
+    claim_label: DERIVED
+  - path: attempts/wave110-c4boxk3-symmetry-sat/bounded-results.json
+    sha256: abee77be66629beec12265cfe387bbf53e58ab57e4317dbcf42b2ae7eedee3b2
+    claim_label: UNKNOWN
+  - path: attempts/wave110-c4boxk3-symmetry-sat/raw-logs/wave110-branch0-45s.json
+    sha256: 809347a1018ed4dd02cffab2c097e3cee792cd4193ae8118052795a4206e5ae7
+  - path: attempts/wave110-c4boxk3-symmetry-sat/raw-logs/wave110-branch1-45s.json
+    sha256: 2770e671286bfc00cb5b62cf7002eea71afe08b59ed2ee78cc06d3170fa2a3ca
+  - path: attempts/wave110-c4boxk3-symmetry-sat/raw-logs/wave110-branch2-45s.json
+    sha256: f6d21ebd3528b59e64ba6afe2eddead8f183ffdcb4df83d540094d53b4881548
+  - path: attempts/wave110-c4boxk3-symmetry-sat/raw-logs/wave110-branch3-45s.json
+    sha256: 8e7359b30b399ab66a4ca8bef8081f3c1b383b7a08bd761f4e55749a346f919c
+limitations:
+  - All four bounded runs timed out and remain UNKNOWN.
+  - No SAT graph and no independently replayable UNSAT proof was produced.
+  - The reduction is conditional on occurrence of the induced C4 box K3 motif.
+  - No target automorphism is assumed or established.
+  - Literature novelty is UNKNOWN.

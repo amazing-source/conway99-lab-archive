@@ -1,0 +1,136 @@
+{
+  "claim_label": "UNKNOWN",
+  "endpoint": {
+    "branch_mate_positive_counts": {
+      "1": 4,
+      "10": 0,
+      "11": 1,
+      "12": 0,
+      "2": 2,
+      "3": 1,
+      "4": 0,
+      "5": 0,
+      "6": 3,
+      "7": 1,
+      "8": 0,
+      "9": 2
+    },
+    "edge_catalog_sha256": "b03c1a237ddeb06eb29def61cff55763df76e1686f657bd588422cb9d72ea758",
+    "immediate_conflict_branches": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      9,
+      11
+    ],
+    "solver_branches": [
+      4,
+      5,
+      8,
+      10,
+      12
+    ],
+    "unit_count": 84
+  },
+  "format": "wave35-n3-endpoint-root-scout-v1",
+  "limitations": [
+    "a budget stop has no mathematical evidentiary value",
+    "a solver UNSAT needs an exported formula and independently checked proof",
+    "a SAT assignment needs decoding and independent SRG verification"
+  ],
+  "results": [
+    {
+      "branch": 4,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 286002,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "endpoint_unit_count": 84,
+      "solver": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "branch": 5,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 286002,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "endpoint_unit_count": 84,
+      "solver": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "branch": 8,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 286002,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "endpoint_unit_count": 84,
+      "solver": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "branch": 10,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 286002,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "endpoint_unit_count": 84,
+      "solver": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "branch": 12,
+      "encoding": {
+        "cardinality_backend": "native",
+        "clauses": 286002,
+        "full_vertex_count": 99,
+        "named_edge_variables": 3486,
+        "named_wedge_variables": 285852,
+        "native_atmost_constraints": 5838,
+        "pair_count": 7,
+        "residual_vertex_count": 84,
+        "total_variables": 289338,
+        "variant": "compact"
+      },
+      "endpoint_unit_count": 84,
+      "solver": null,
+      "status": "NOT_RUN"
+    }
+  ],
+  "scope": "full rooted compact target model with theorem-forced N3, verified joint branch cover, and the necessary P=0 units"
+}

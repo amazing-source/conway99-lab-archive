@@ -1,0 +1,296 @@
+{
+  "adjacent_vertex_blocks": {
+    "cross_block": "negative incidence matrix of two disjoint perfect matchings; the union is a 2-regular bipartite graph",
+    "cycle_partition_determinants": {
+      "12": 7300800,
+      "4+4+4": 7077888,
+      "6+6": 7290000,
+      "8+4": 7225344
+    },
+    "local_gram_minimum_eigenvalue_lower": 2,
+    "operator_norm_upper": 2,
+    "verdict": "ALL_ADJACENT_LOCAL_BLOCKS_SURVIVE"
+  },
+  "claim_label": "DERIVED_INCONCLUSIVE",
+  "conclusion": {
+    "endpoint_excluded": false,
+    "next_exact_target": "Use global incidence compatibility to force a forbidden 45-row principal block or another nonlocal obstruction.",
+    "strongest_rigorous_general_upper_bound": 4158,
+    "target_status": "UNKNOWN",
+    "upper_bound_improved_below_4158": false
+  },
+  "endpoint_profile": {
+    "intersect_zero": 18,
+    "r0_plus": 32,
+    "r1_zero": 144,
+    "r2_minus": 36,
+    "r3_minus_two": 0
+  },
+  "incidence_support_bounds": {
+    "BN_transpose_local_form": {
+      "adjacent_to_T": 2,
+      "nonadjacent_to_T": "1+2t_x, 0<=t_x<=3",
+      "on_T": 0,
+      "sum_t_x_over_60": 36
+    },
+    "MN_transpose_entry_profile": {
+      "-2": 36,
+      "1": 60,
+      "4": 3
+    },
+    "SN_transpose_entry_profile": {
+      "-2": 36,
+      "0": 3,
+      "1": 60
+    },
+    "gap_to_local_floor": "66528/5",
+    "global_square_range": [
+      113652,
+      180180
+    ],
+    "per_row_square_range": [
+      492,
+      780
+    ],
+    "projector_cauchy_floor": "501732/5",
+    "scalar_energy_control": {
+      "attained_value": 113652,
+      "is_matrix_or_graph": false,
+      "x0": "44",
+      "x7": "8208/5",
+      "x_minus3": "46992/5"
+    },
+    "verdict": "FROBENIUS_ROUTE_HAS_EXACT_SCALAR_SURVIVOR"
+  },
+  "limitations": [
+    "No 231x231 endpoint matrix is constructed.",
+    "No scalar or local control is a graph or partial graph.",
+    "The Smith and reflection identities restrict a putative endpoint but do not exclude it.",
+    "This discovery-side checker does not self-certify its mathematical interpretation."
+  ],
+  "mixed_schur_endpoint": {
+    "e000": "220/147",
+    "e007": "408/245",
+    "negative_count": 0,
+    "smallest_positive": "1/231",
+    "source": "attempts/wave20-global-obstruction/exact-checks.json",
+    "triple_count": 40,
+    "verdict": "ALL_NONNEGATIVE_NO_ENDPOINT_OBSTRUCTION",
+    "zero_count": 15
+  },
+  "nonadjacent_control_block": {
+    "block_gram": "[[4I,C],[C^T,4I]] is positive definite",
+    "column_sums": [
+      -2,
+      -2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "frobenius_squared": 13,
+    "matrix": [
+      [
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "operator_norm_strictly_below": 4,
+    "row_sums": [
+      -2,
+      -2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scope": "This is a local incidence/PSD control only.  It does not satisfy the global M^2=21M equations and is not a partial graph."
+  },
+  "orthogonal_reflection": {
+    "definition": "C=2S-13I=2M-21I",
+    "diagonal": -13,
+    "identity": "C^2=441I",
+    "interpretation": "C/21 is a rational orthogonal involution; this reformulation does not itself exclude the endpoint.",
+    "off_diagonal_profile": {
+      "+2": 32,
+      "-2": 36,
+      "0": 162
+    },
+    "row_squared_norm": 441,
+    "row_sum": -21,
+    "spectrum": {
+      "+21": 44,
+      "-21": 187
+    }
+  },
+  "parameters": {
+    "M_scale": 21,
+    "n3": 4158,
+    "q_per_triangle": 12,
+    "rank_M": 44,
+    "triangle_count": 231
+  },
+  "principal_minor_target": {
+    "status": "TARGET_NOT_CONSTRUCTED",
+    "sufficient_contradiction_target": "Find 45 triangle indices with maximum internal absolute S-degree at most 3; then 4I+S[X] is strictly diagonally dominant and positive definite.",
+    "universal_endpoint_fact": "Every 45x45 principal submatrix M[X] is singular, equivalently S[X] has eigenvalue -4."
+  },
+  "schema_version": 1,
+  "schur_power_collapse": {
+    "checks_1_through_9": {
+      "1": {
+        "eigen_on_im_M": 21,
+        "eigen_on_ker_M": 0,
+        "formula": "M+0I",
+        "positive_semidefinite": true
+      },
+      "2": {
+        "formula": "W+0I",
+        "positive_semidefinite_from_W": true
+      },
+      "3": {
+        "eigen_on_im_M": 81,
+        "eigen_on_ker_M": 60,
+        "formula": "M+60I",
+        "positive_semidefinite": true
+      },
+      "4": {
+        "formula": "W+240I",
+        "positive_semidefinite_from_W": true
+      },
+      "5": {
+        "eigen_on_im_M": 1041,
+        "eigen_on_ker_M": 1020,
+        "formula": "M+1020I",
+        "positive_semidefinite": true
+      },
+      "6": {
+        "formula": "W+4080I",
+        "positive_semidefinite_from_W": true
+      },
+      "7": {
+        "eigen_on_im_M": 16401,
+        "eigen_on_ker_M": 16380,
+        "formula": "M+16380I",
+        "positive_semidefinite": true
+      },
+      "8": {
+        "formula": "W+65520I",
+        "positive_semidefinite_from_W": true
+      },
+      "9": {
+        "eigen_on_im_M": 262161,
+        "eigen_on_ker_M": 262140,
+        "formula": "M+262140I",
+        "positive_semidefinite": true
+      }
+    },
+    "cube": "M^(o3)=M+60I is positive definite",
+    "even_formula": "M^(o k)=W+(4^k-16)I for even k>=2",
+    "odd_formula": "M^(o k)=M+(4^k-4)I for odd k"
+  },
+  "scope": "Exact consequences and failed obstruction routes for the conditional endpoint n3=4158",
+  "signed_matrix": {
+    "absolute_determinant": "53084889658163412752085045951395323863568161866012435053334679764748959903413416009308219978252893327384083731077046470353749326507165226779460512239836781433285771264",
+    "definition": "S=M-4I",
+    "identity": "S^2=13S+68I",
+    "row_profile": {
+      "+1": 32,
+      "-1": 36,
+      "0": 162
+    },
+    "row_squared_norm": 68,
+    "row_sum": -4,
+    "spectrum": {
+      "-4": 187,
+      "17": 44
+    }
+  },
+  "smith_form_S": {
+    "derivation_boundary": "This is forced for any endpoint S; it is not an existence certificate or a contradiction.",
+    "factor_counts": {
+      "1": 44,
+      "4": 143,
+      "68": 44
+    },
+    "identity_implying_exponent": "S(S-13I)=68I",
+    "rank_F2_S": 44,
+    "snf": "diag(1^44,4^143,68^44)"
+  },
+  "support_compression": {
+    "cauchy_frobenius_floor": "126588/25",
+    "definition": "B=M o M-16I=S o S",
+    "edge_count": 7854,
+    "projector_traces": {
+      "-3": "528/5",
+      "0": "-44",
+      "18": "68",
+      "7": "-648/5"
+    },
+    "regular_degree": 68,
+    "trace_B2": 15708,
+    "unallocated_frobenius_slack": "266112/25",
+    "verdict": "TRACE_AND_INTERLACING_RELAXATION_FEASIBLE"
+  }
+}

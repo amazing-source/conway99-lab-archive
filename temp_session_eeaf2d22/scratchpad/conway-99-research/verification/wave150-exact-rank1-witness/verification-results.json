@@ -1,0 +1,188 @@
+{
+  "centered_covariance": {
+    "ordered_edge": {
+      "all_centered_entries_exactly_zero": true,
+      "expected_first_moment_sum": 204351840,
+      "expected_moment_sum": 30129635289600,
+      "first_moment_nonzero_entries": 66,
+      "first_moment_sum": 204351840,
+      "maximum_absolute_centered_residual": 0,
+      "moment_sum": 30129635289600,
+      "root_embeddings": 1386,
+      "size": 66,
+      "upper_entries": 2211
+    },
+    "ordered_nonedge": {
+      "all_centered_entries_exactly_zero": true,
+      "expected_first_moment_sum": 1226111040,
+      "expected_moment_sum": 180777811737600,
+      "first_moment_nonzero_entries": 87,
+      "first_moment_sum": 1226111040,
+      "maximum_absolute_centered_residual": 0,
+      "moment_sum": 180777811737600,
+      "root_embeddings": 8316,
+      "size": 87,
+      "upper_entries": 3828
+    }
+  },
+  "chronology": {
+    "discovery_code_imported_or_executed": false,
+    "false_infeasibility_retained": {
+      "exact_witness_refutes_infeasibility_for_the_exact_system": true,
+      "explicit_inequality_encoding_status": "optimal",
+      "initial_bound_encoding_status": "infeasible",
+      "solver_exit_code_used_as_certificate": false
+    },
+    "sealed_discovery_manifest": {
+      "entries_pass": true,
+      "entry_count": 30,
+      "expected_manifest_sha256": "ae831ec52fbaf65b9ddc66dee77c4c076621d65a059ec3205e02a3b76bfafb1d",
+      "failures": [],
+      "manifest_pass": true,
+      "manifest_sha256": "ae831ec52fbaf65b9ddc66dee77c4c076621d65a059ec3205e02a3b76bfafb1d"
+    }
+  },
+  "claim_label": "VERIFIED",
+  "format": "wave150-independent-exact-rank1-witness-v1",
+  "full_equation_replay": {
+    "all_10310_rows_pass_exactly": true,
+    "equations_before_trivial_removal": 11632,
+    "marked_rows_seen": 5384,
+    "maximum_absolute_rational_residual": "0",
+    "moment_upper_entries": {
+      "ordered_edge": 2211,
+      "ordered_nonedge": 3828
+    },
+    "nontrivial_equations": 10310,
+    "ordinary_deletion_rows": 208,
+    "restricted_nontrivial_equations": 10259
+  },
+  "lower_counts": {
+    "5": {
+      "all_integral": true,
+      "all_nonnegative": true,
+      "support": 21,
+      "total": "71523144"
+    },
+    "6": {
+      "all_integral": true,
+      "all_nonnegative": true,
+      "support": 61,
+      "total": "1120529256"
+    }
+  },
+  "memory": {
+    "after": {
+      "floor_percent": 20.0,
+      "free_gib": 20.966365814208984,
+      "free_percent": 33.19684443744883
+    },
+    "before": {
+      "floor_percent": 20.0,
+      "free_gib": 21.775226593017578,
+      "free_percent": 34.47754447309665
+    },
+    "floor_percent": 20.0
+  },
+  "modular_selection": {
+    "embedded_and_standalone_selection_exact_match_except_elapsed_time": true,
+    "full_column_rank": true,
+    "modulus": 1000003,
+    "rank": 874,
+    "restricted_rows": 10259,
+    "rows_scanned_to_full_rank": 1931,
+    "selected_rows": 874,
+    "stored_874_by_874_subsystem_rank": 874,
+    "stored_selected_indices_exact_match": true,
+    "stored_selected_labels_exact_match": true,
+    "variables": 874
+  },
+  "scope": "exact rational feasibility of the frozen Wave44+Wave147+Wave148 order-eight count relaxation on both zero-centered-covariance faces",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "endpoint_n3_4158_graph_existence": "UNKNOWN",
+    "exact_count_vector_is_a_graph": false,
+    "external_novelty": "UNKNOWN",
+    "higher_order_overlap_consistency": "NOT_REPRESENTED",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  },
+  "verdict": {
+    "Wave147_all_2414_matrices": "PASS",
+    "Wave148_all_5384_rows": "PASS",
+    "Wave44_170_rows": "PASS",
+    "all_10310_full_system_rows": "PASS",
+    "both_centered_covariance_blocks": "PASS",
+    "finite_relaxation_at_n3_4158": "EXACT_RATIONAL_FEASIBLE",
+    "modular_full_rank_selection": "PASS",
+    "ordinary_and_marked_row_replay": "PASS",
+    "overall": "PASS_WITH_SCOPE",
+    "witness_integrity_and_rational_shape": "PASS"
+  },
+  "wave147": {
+    "all_matrix_records_exact_match": true,
+    "class_stream_counts": {
+      "5": 21,
+      "6": 62,
+      "7": 208,
+      "8": 916
+    },
+    "flag_basis_counts": {
+      "ordered_edge": 66,
+      "ordered_nonedge": 87
+    },
+    "full_matrix_records_reconstructed": 2414,
+    "gzip_sha256": "a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e",
+    "nonzero_upper_entries_reconstructed": 272054,
+    "payload_sha256": "a7402e77048090ea492c435190aadc1d32bd1df99276e612f6d199aec9e14b08"
+  },
+  "wave148": {
+    "all_column_identities_pass": true,
+    "all_rows_exact_match_verified_artifact": true,
+    "column_classes_checked": 916,
+    "ordered_pair_rows": 4440,
+    "pair_nonzero_terms": 17782,
+    "total_rows": 5384,
+    "vertex_nonzero_terms": 10872,
+    "vertex_rows": 944,
+    "zero_rows": 893
+  },
+  "wave44": {
+    "all_coefficients_and_rhs_match_published": true,
+    "all_witness_rows_pass": true,
+    "classes": 208,
+    "family_rows": {
+      "base": 81,
+      "edge": 36,
+      "nonedge": 46,
+      "vertex": 7
+    },
+    "maximum_absolute_residual": 0,
+    "rows": 170,
+    "y_h11_over_4": 2079
+  },
+  "witness": {
+    "all_counts_nonnegative": true,
+    "sha256": "e63afbe9ca36b4b1571b3dde75309d0cce45f3bc862d6e8c08bfe62f78dc130d",
+    "target": {
+      "h11": 8316,
+      "n3": 4158,
+      "srg": [
+        99,
+        14,
+        1,
+        2
+      ]
+    },
+    "x7_all_integral": true,
+    "x7_support": 204,
+    "x7_total": 14887031544,
+    "x8_denominator_distribution": {
+      "1": 865,
+      "2": 5,
+      "4": 4
+    },
+    "x8_maximum_denominator": 4,
+    "x8_support": 874,
+    "x8_total": "171200862756"
+  }
+}

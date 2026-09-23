@@ -1,0 +1,495 @@
+{
+  "aggregation": {
+    "all_nonzero_families_pairwise_disjoint": true,
+    "collision_count": 5,
+    "collisions_requiring_sum": [
+      {
+        "correct_sum_lower": 198,
+        "discovery_deficit": 99,
+        "discovery_max_lower": 99,
+        "input_type": "one_vertex",
+        "mixed_lower": 99,
+        "pure_X_kernel_lower": 99,
+        "state": [
+          84,
+          0,
+          15
+        ]
+      },
+      {
+        "correct_sum_lower": 8316,
+        "discovery_deficit": 4158,
+        "discovery_max_lower": 4158,
+        "input_type": "nonedge",
+        "mixed_lower": 4158,
+        "pure_X_kernel_lower": 4158,
+        "state": [
+          73,
+          0,
+          26
+        ]
+      },
+      {
+        "correct_sum_lower": 149688,
+        "discovery_deficit": 70686,
+        "discovery_max_lower": 79002,
+        "input_type": "independent_c0",
+        "mixed_lower": 70686,
+        "pure_X_kernel_lower": 79002,
+        "state": [
+          66,
+          0,
+          33
+        ]
+      },
+      {
+        "correct_sum_lower": 55440,
+        "discovery_deficit": 27720,
+        "discovery_max_lower": 27720,
+        "input_type": "independent_c1",
+        "mixed_lower": 27720,
+        "pure_X_kernel_lower": 27720,
+        "state": [
+          62,
+          0,
+          37
+        ]
+      },
+      {
+        "correct_sum_lower": 462,
+        "discovery_deficit": 231,
+        "discovery_max_lower": 231,
+        "input_type": "triangle",
+        "mixed_lower": 231,
+        "pure_X_kernel_lower": 231,
+        "state": [
+          60,
+          0,
+          39
+        ]
+      }
+    ],
+    "correct_pure_Y_zero_weights": [
+      2,
+      4,
+      6,
+      94,
+      96,
+      98
+    ],
+    "correct_zero_state_lower": 1,
+    "corrected_lower_bound_count": 30,
+    "discovery_pure_Y_zero_weights": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      94,
+      96,
+      98
+    ],
+    "discovery_zero_state_lower": 1,
+    "family_disjointness_checks": [
+      {
+        "input_size": 1,
+        "input_type": "one_vertex",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 14,
+        "state": [
+          84,
+          0,
+          15
+        ]
+      },
+      {
+        "input_size": 2,
+        "input_type": "edge",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 26,
+        "state": [
+          73,
+          2,
+          24
+        ]
+      },
+      {
+        "input_size": 2,
+        "input_type": "nonedge",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 24,
+        "state": [
+          73,
+          0,
+          26
+        ]
+      },
+      {
+        "input_size": 3,
+        "input_type": "independent_c0",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 30,
+        "state": [
+          66,
+          0,
+          33
+        ]
+      },
+      {
+        "input_size": 3,
+        "input_type": "independent_c1",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 34,
+        "state": [
+          62,
+          0,
+          37
+        ]
+      },
+      {
+        "input_size": 3,
+        "input_type": "one_edge_c0",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 32,
+        "state": [
+          66,
+          2,
+          31
+        ]
+      },
+      {
+        "input_size": 3,
+        "input_type": "one_edge_c1",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 36,
+        "state": [
+          62,
+          2,
+          35
+        ]
+      },
+      {
+        "input_size": 3,
+        "input_type": "induced_path",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 34,
+        "state": [
+          64,
+          2,
+          33
+        ]
+      },
+      {
+        "input_size": 3,
+        "input_type": "triangle",
+        "mixed_vs_pure_X_disjoint": true,
+        "mixed_vs_pure_Y_disjoint": true,
+        "output_weight": 36,
+        "state": [
+          60,
+          0,
+          39
+        ]
+      }
+    ],
+    "family_model": {
+      "graph_state_words": "(x,Ax)",
+      "injectivity": "x -> (x,Ax) is injective from its first component",
+      "mixed_support_at_most_three": "(x,Ax), 1<=wt(x)<=3",
+      "pure_X_kernel": "(k,0), k in ker(A)",
+      "pure_Y_image": "(y,y), y in im(A)",
+      "pure_axis_intersection": "only (0,0)"
+    },
+    "support_rows": [
+      {
+        "count": 99,
+        "input_size": 1,
+        "input_type": "one_vertex",
+        "nI": 84,
+        "nR": 15,
+        "nX": 1,
+        "nY": 0,
+        "nZ": 14,
+        "output_weight": 14,
+        "state": [
+          84,
+          0,
+          15
+        ]
+      },
+      {
+        "count": 693,
+        "input_size": 2,
+        "input_type": "edge",
+        "nI": 73,
+        "nR": 24,
+        "nX": 0,
+        "nY": 2,
+        "nZ": 24,
+        "output_weight": 26,
+        "state": [
+          73,
+          2,
+          24
+        ]
+      },
+      {
+        "count": 4158,
+        "input_size": 2,
+        "input_type": "nonedge",
+        "nI": 73,
+        "nR": 26,
+        "nX": 2,
+        "nY": 0,
+        "nZ": 24,
+        "output_weight": 24,
+        "state": [
+          73,
+          0,
+          26
+        ]
+      },
+      {
+        "count": 70686,
+        "input_size": 3,
+        "input_type": "independent_c0",
+        "nI": 66,
+        "nR": 33,
+        "nX": 3,
+        "nY": 0,
+        "nZ": 30,
+        "output_weight": 30,
+        "state": [
+          66,
+          0,
+          33
+        ]
+      },
+      {
+        "count": 27720,
+        "input_size": 3,
+        "input_type": "independent_c1",
+        "nI": 62,
+        "nR": 37,
+        "nX": 3,
+        "nY": 0,
+        "nZ": 34,
+        "output_weight": 34,
+        "state": [
+          62,
+          0,
+          37
+        ]
+      },
+      {
+        "count": 41580,
+        "input_size": 3,
+        "input_type": "one_edge_c0",
+        "nI": 66,
+        "nR": 31,
+        "nX": 1,
+        "nY": 2,
+        "nZ": 30,
+        "output_weight": 32,
+        "state": [
+          66,
+          2,
+          31
+        ]
+      },
+      {
+        "count": 8316,
+        "input_size": 3,
+        "input_type": "one_edge_c1",
+        "nI": 62,
+        "nR": 35,
+        "nX": 1,
+        "nY": 2,
+        "nZ": 34,
+        "output_weight": 36,
+        "state": [
+          62,
+          2,
+          35
+        ]
+      },
+      {
+        "count": 8316,
+        "input_size": 3,
+        "input_type": "induced_path",
+        "nI": 64,
+        "nR": 33,
+        "nX": 1,
+        "nY": 2,
+        "nZ": 32,
+        "output_weight": 34,
+        "state": [
+          64,
+          2,
+          33
+        ]
+      },
+      {
+        "count": 231,
+        "input_size": 3,
+        "input_type": "triangle",
+        "nI": 60,
+        "nR": 39,
+        "nX": 3,
+        "nY": 0,
+        "nZ": 36,
+        "output_weight": 36,
+        "state": [
+          60,
+          0,
+          39
+        ]
+      }
+    ],
+    "unsupported_discovery_zero_weights": [
+      8,
+      10,
+      12
+    ],
+    "zero_is_not_double_counted": true
+  },
+  "claim_label": "REFUTED",
+  "format": "wave145-wave139-gf4-lower-aggregation-audit-v1",
+  "frozen_inputs": {
+    "files": {
+      "AGENTS.md": {
+        "actual_sha256": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+        "expected_sha256": "4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3",
+        "pass": true
+      },
+      "attempts/wave139-gf4-n3-bound/package-manifest.sha256": {
+        "actual_sha256": "fa1d00ddc9ab25d00126bc82f32d7e0c5a703c4a7efe355ed49dc111dda2058d",
+        "expected_sha256": "fa1d00ddc9ab25d00126bc82f32d7e0c5a703c4a7efe355ed49dc111dda2058d",
+        "pass": true
+      },
+      "verification/wave131-binary-lcd-enumerator/independent-results.json": {
+        "actual_sha256": "65b365a1779c4e1fcfc6d0d3b0f38abaf9ed98798c7cc0d26a6fa64495149087",
+        "expected_sha256": "65b365a1779c4e1fcfc6d0d3b0f38abaf9ed98798c7cc0d26a6fa64495149087",
+        "pass": true
+      },
+      "verification/wave131-binary-lcd-enumerator/verification-report.md": {
+        "actual_sha256": "64c0f636c916cb0d3efbb6d0a4899b95b90f65915ca8de963200254ed080c9d8",
+        "expected_sha256": "64c0f636c916cb0d3efbb6d0a4899b95b90f65915ca8de963200254ed080c9d8",
+        "pass": true
+      },
+      "verification/wave136-alternative-spaces/independent-results.json": {
+        "actual_sha256": "7129891b17e307dd0d881f759d609dc027a75858647777d7fda7f112acbdf7d3",
+        "expected_sha256": "7129891b17e307dd0d881f759d609dc027a75858647777d7fda7f112acbdf7d3",
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "pure_Y_zero_audit": {
+    "correct_zero_weights": [
+      2,
+      4,
+      6,
+      94,
+      96,
+      98
+    ],
+    "high_weight_argument": "If y is in im(A), then Ay=y.  Put z=1+y.  Since A1=0, Az=y, while wt(Az)<=14 wt(z).",
+    "high_weight_checks": [
+      {
+        "complement_weight": 5,
+        "contradiction": true,
+        "image_weight": 94,
+        "row_union_upper": 70
+      },
+      {
+        "complement_weight": 3,
+        "contradiction": true,
+        "image_weight": 96,
+        "row_union_upper": 42
+      },
+      {
+        "complement_weight": 1,
+        "contradiction": true,
+        "image_weight": 98,
+        "row_union_upper": 14
+      }
+    ],
+    "minimum_forces_zero": [
+      2,
+      4,
+      6
+    ],
+    "unsupported_from_minimum_eight": [
+      8,
+      10,
+      12
+    ],
+    "verified_image_minimum_lower": 8
+  },
+  "quantum_shadow_audit": {
+    "coset_derivation": "wt(x,Ax)=(1+d mod 2) dot x, and the symplectic product of (0,1+d mod 2) with (x,Ax) equals the same parity",
+    "exhaustive_simple_graph_order_max": 5,
+    "failure_count": 0,
+    "failures": [],
+    "formula_and_normalization_pass": true,
+    "graph_specific_shadow_coset": "(0,1+d mod 2)+{(x,Ax)}; for degree 14 this is (0,1)+{(x,Ax)}",
+    "graphs_checked": 1099,
+    "krawtchouk_definition": "K_j^(4)(t)=[z^j](1+3z)^(n-t)(1-z)^t",
+    "primary_formula": "S_j=2^-n sum_t (-1)^t K_j^(4)(t) H_t",
+    "rains_source": "https://arxiv.org/abs/quant-ph/9611001",
+    "source_location": "Theorem 8 and Theorem 10",
+    "transform_coefficients_checked": 6504,
+    "triangle_control": {
+      "explicit_shadow": [
+        0,
+        3,
+        0,
+        5
+      ],
+      "ordinary": [
+        1,
+        0,
+        3,
+        4
+      ],
+      "transformed_shadow": [
+        0,
+        3,
+        0,
+        5
+      ]
+    }
+  },
+  "scope": "Wave139 lower-bound aggregation, pure-Y zero rows, and the ordinary Hamming quantum-shadow convention",
+  "sealed_discovery_package": {
+    "entries_pass": true,
+    "entry_count": 12,
+    "failures": [],
+    "manifest_pass": true,
+    "manifest_sha256": "fa1d00ddc9ab25d00126bc82f32d7e0c5a703c4a7efe355ed49dc111dda2058d"
+  },
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "adjacency_matrix": "NOT_CONSTRUCTED_OR_EXCLUDED",
+    "corrected_formal_enumerator_feasibility": "UNKNOWN",
+    "exact_rational_upper_bound": "NOT_FOUND",
+    "external_novelty": "UNKNOWN"
+  },
+  "verdict": {
+    "all_audit_checks_pass": true,
+    "corrected_sum_aggregation": "VERIFIED",
+    "pure_Y_zero_8_10_12": "VETO_UNSUPPORTED",
+    "quantum_shadow_formula": "VERIFIED",
+    "wave139_max_aggregation": "REFUTED_UNDERCOUNT"
+  }
+}

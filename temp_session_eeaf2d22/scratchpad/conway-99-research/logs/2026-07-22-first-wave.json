@@ -1,0 +1,110 @@
+{
+  "format": "conway-run-manifest-v1",
+  "created_utc": "2026-07-22T20:02:04Z",
+  "source_commit": "a828bcb1352e6b1eae3cd0f4746aeae18ab06cc1",
+  "branch": "codex/first-research-wave",
+  "claim_label": "VERIFIED_INFRASTRUCTURE_TARGET_UNKNOWN",
+  "scope": "First rooted-model, exact-encoding, branch-coverage, and validator wave",
+  "artifact_hash_scope": "SHA-256 of committed blob bytes",
+  "environment": {
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "python_system": "3.13.14",
+    "python_search_venv": "3.13.14",
+    "python_sat": "1.9.dev7",
+    "powershell": "5.1.26100.8875",
+    "solver": "cadical300 via python-sat 1.9.dev7"
+  },
+  "commands": [
+    {
+      "command": "python -m unittest discover -s verification -p \"test_*.py\" -v",
+      "result": "PASS",
+      "tests": 11
+    },
+    {
+      "command": ".venv\\Scripts\\python -m unittest discover -s code -p \"test_*.py\" -v",
+      "result": "PASS",
+      "tests": 20
+    },
+    {
+      "command": "python verification/check_srg.py candidates/calibration-srg-9.srg.json --vertices 9 --degree 4 --lambda 1 --mu 2",
+      "result": "VALID"
+    },
+    {
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File verification/Check-Srg.ps1 -Certificate candidates/calibration-srg-9.srg.json -Vertices 9 -Degree 4 -AdjacentCommon 1 -NonadjacentCommon 2",
+      "result": "VALID"
+    },
+    {
+      "command": "python code/root_model.py --output logs/local/root-model.json",
+      "result": "PASS",
+      "scaffold_sha256": "aec6cf8008d1dceb93763a4eba45c2042daccb7c8d3890f89d6b638203c38dc7"
+    },
+    {
+      "command": ".venv\\Scripts\\python code/matching_orbits.py --output logs/local/matching-orbits.json",
+      "result": "PASS",
+      "matching_count": 10395,
+      "orbit_count": 11
+    },
+    {
+      "command": ".venv\\Scripts\\python code/scout_branches.py --conflict-budget 100 --output logs/local/branch-scout-100-final.json",
+      "result": "ALL_11_BRANCHES_UNKNOWN",
+      "evidence_status": "NON_EVIDENTIARY_SCOUT"
+    }
+  ],
+  "encoding": {
+    "residual_vertices": 84,
+    "named_edge_variables": 3486,
+    "named_wedge_variables": 285852,
+    "total_variables": 817278,
+    "clauses": 1622502
+  },
+  "artifacts": [
+    {
+      "path": "code/root_model.py",
+      "sha256": "2a1f074f29f2e00e38437bf81418771d57ab41335605b9f3b9f2cae061a1624e"
+    },
+    {
+      "path": "code/matching_orbits.py",
+      "sha256": "941cfa4cd7f8f4e5da88bf4ecd6a1b438d2e07c92305739b3a1013e2e6292fd4"
+    },
+    {
+      "path": "code/sat_model.py",
+      "sha256": "499fa347ab3a65ba21cf3feb2c73a42a36ebf226fb874bca6d696703bc414cf7"
+    },
+    {
+      "path": "code/scout_branches.py",
+      "sha256": "d181010ec18940b8d2b52cb433d5452f32cfff411bfdef8dc5b30792683c7cf3"
+    },
+    {
+      "path": "verification/check_srg.py",
+      "sha256": "2d3f3c3178b946179ff538c8c6952056363025a34d2964b3eb0fcab20f6101b6"
+    },
+    {
+      "path": "verification/Check-Srg.ps1",
+      "sha256": "ab22507a27932bfceee404ca4cf9c96173875c2d017cc57790716fb2cf3aec2f"
+    },
+    {
+      "path": "verification/check_drup.py",
+      "sha256": "ec8b217d23367227842debcccd260106442ce784e2071a0f6b4cfdab8a166e0b"
+    },
+    {
+      "path": "candidates/calibration-srg-9.srg.json",
+      "sha256": "63a7a90f91f08729d233027bcb3f1a7352720c55490972d210c8bffd7836d6e7"
+    },
+    {
+      "path": "logs/2026-07-22-branch-scout-100.json",
+      "sha256": "752368ebfe88c7854d5ed58c40a1fcda23e4fe2deb02edda12ba19059f514b6c"
+    }
+  ],
+  "verdict": {
+    "infrastructure": "PASS_AFTER_ADVERSARIAL_REVIEW",
+    "target": "UNKNOWN",
+    "positive_certificate": null,
+    "negative_certificate": null
+  },
+  "limitations": [
+    "The bounded scout is non-evidentiary; every branch returned UNKNOWN.",
+    "No target-scale proof artifact has been produced or checked.",
+    "The PySAT in-process proof path was disabled after unstable or incomplete traces.",
+    "requirements-search.txt is a prototype dependency pin, not an archival proof lockfile."
+  ]
+}

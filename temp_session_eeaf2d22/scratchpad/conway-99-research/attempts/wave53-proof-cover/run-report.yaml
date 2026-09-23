@@ -1,0 +1,78 @@
+role: proof_a
+date_utc: 2026-07-27T19:44:37Z
+git_commit: a4a61658356253fb95cf68252c972a4f79df38fe
+claim_label: DERIVED
+scope: >-
+  Exact 33-case normalized cover conditional on n3=4158, explicit separation
+  of case coverage from checked UNSAT coverage, and one bounded
+  proof-producing experiment on branch15 AND x187=0.
+inputs:
+  - path: verification/n3-joint-cover/n3-joint-cover.json
+    sha256: 58c4994ff0eef9c5e1702840f791d1400c3da71b445e3c217e3704c5e70de172
+  - path: verification/n3-refined-cover/n3-refined-cover.json
+    sha256: fd9a14193365bf40d3d7bcbe53d56c6f1ffa8a93ca63d5b68506c3354f3b9f8a
+  - path: attempts/wave35-n3-upper-triple-overlap/root-endpoint-reduction.json
+    sha256: 7551c7b9d956705e41f9feb42d76d3bb5ab60dab0b46416fa9c0e58e5346a46a
+  - path: verification/wave37-rooted-branches/independent_check.py
+    sha256: 2039681ef17eafea7ace392682317d1baf250585d35474fe7dafa35a3cbca3f3
+  - path: attempts/wave38-solver-harvest/coverage-plan.json
+    sha256: 2de85c3f73d4b12a579b281c10171a47c12e26a323ecdf9617c1a842a81d8bf2
+  - path: verification/wave38-solver-harvest/independent-results.json
+    sha256: 2aa691682aa434d1166a98bf4af820652187ffe664911b8aa112104831fe8f6c
+  - path: attempts/wave37-proof-producing-endpoint/branch-15-formula.json
+    sha256: 3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: verification/wave39-proof-solver/exact-results.json
+    sha256: 3afc665de9d8d0e5a5a4dab6b600db1e5b726ef1dfba685eeba92c80da1df5e4
+method: >-
+  Reconstruct all 84 endpoint nonedge units, all twelve 66-unit parent
+  definitions, all 78 oriented refinement orbits, and the exact endpoint
+  filter from pinned prior independent code. Freeze all 33 surviving case
+  definitions and orbit weights. Export the complementary branch-15
+  x187=0 polarity by one append-unit transformation, run pinned Exact for
+  three seconds, retain the raw proof, and replay the raw and elaborated
+  kernel proofs with VeriPB and CakePB.
+command: |-
+  .\.venv\Scripts\python.exe -B attempts\wave53-proof-cover\build_coverage.py
+  .\.venv\Scripts\python.exe -B attempts\wave53-proof-cover\check_coverage.py
+  .\.venv\Scripts\python.exe -B attempts\wave53-proof-cover\export_remainder.py --raw attempts\wave53-proof-cover\branch-15-x187-zero.opb --gzip attempts\wave53-proof-cover\branch-15-x187-zero.opb.gz --metadata attempts\wave53-proof-cover\branch-15-x187-zero-formula.json
+  Exact --timeout=3 --proof-assumptions=0 --proof-log=branch-15-x187-zero.raw.pbp branch-15-x187-zero.opb
+  veripb --force-checked-deletion branch-15-x187-zero.opb branch-15-x187-zero.raw.pbp
+  veripb --force-checked-deletion --elaborate branch-15-x187-zero.kernel.pbp branch-15-x187-zero.opb branch-15-x187-zero.raw.pbp
+  veripb --force-checked-deletion branch-15-x187-zero.opb branch-15-x187-zero.kernel.pbp
+  cake_pb branch-15-x187-zero.opb branch-15-x187-zero.kernel.pbp
+  .\.venv\Scripts\python.exe -B attempts\wave53-proof-cover\record_bounded_run.py
+  .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave53-proof-cover -p "test_*.py" -v
+outputs:
+  - path: attempts/wave53-proof-cover/coverage-certificate.json
+    sha256: 9bd38e8fb2911bf9af749ce1c0d5eb72ea1f7503571bbe7e28f8f2edc1ea2aa4
+  - path: attempts/wave53-proof-cover/coverage-check.json
+    sha256: b3e3f61c23f650cc376abfe9ee283819f1212c3e7aed87fbfdbc5c9889875cc1
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero.opb.gz
+    sha256: 5d026ebdd3f4e05c46a494ba357fbcaa7e994f7c518a89b8c7f5dc956ac8ee9c
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero-formula.json
+    sha256: 4ab33e12ec1b7c7a16a97561f5b4efcb7a56fbe3f4e53091d13089bb1a0757ee
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero.raw.pbp
+    sha256: ca94b003b5506bbf7164223db415f5df677381a0a1ec99ccc816508b81d36861
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero.kernel.pbp
+    sha256: 251cc6158e9afba4db8e49eb0dcf02ec564bcfaf03de16151b1bbab0c0d968b9
+  - path: attempts/wave53-proof-cover/bounded-run.json
+    sha256: 39a49bc0dc363d014b64d89541bab76a739988c06ffb75c09c3641abc90e492c
+limitations:
+  - "The checker is in the discovery lane; independent verification remains required."
+  - "Exact case coverage is not a satisfiability or nonexistence result."
+  - "The bounded run and all four proof replays certify NO CONCLUSION only."
+  - "No complete endpoint case is closed; checked proof coverage is 0/33."
+  - "The endpoint n3=4158, a strict upper bound, Conway-99, and novelty remain UNKNOWN."
+tests:
+  exact_case_count: 33
+  exact_endpoint_compatible_orbit_weight: 6644
+  exact_endpoint_incompatible_orbit_weight: 3751
+  unit_tests: "5 passed"
+  exact_bounded_result: UNKNOWN
+  veripb_raw: VERIFIED_NO_CONCLUSION
+  veripb_kernel: VERIFIED_NO_CONCLUSION
+  cakepb_kernel: VERIFIED_NO_CONCLUSION
+  historical_discovery_reported_minimum_free_memory_percent: 56.25
+  historical_resource_telemetry: SELF_REPORTED_NOT_INDEPENDENTLY_REPLAYABLE

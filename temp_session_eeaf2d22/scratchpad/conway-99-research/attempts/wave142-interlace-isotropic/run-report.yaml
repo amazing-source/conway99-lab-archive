@@ -1,0 +1,37 @@
+role: proof_b
+date_utc: 2026-07-28T09:47:24Z
+git_commit: 0a15bfe548e301ea98c83e292ba8931322e39945
+claim_label: DERIVED_INCONCLUSIVE
+scope: >-
+  Conditional vertex-nullity interlace and IAS(G) isotropic-matroid
+  consequences of a hypothetical srg(99,14,1,2), compared exactly with the
+  Wave141 bivariate table; no graph construction or n3 bound improvement.
+inputs:
+  attempts/wave21-six-vertex-lp/exact_check.py: 0dd44ca37ca21aeaa757f3b2d7f7f9639907f22b95da39472ed9d836027a94a3
+  attempts/wave21-six-vertex-lp/exact-results.json: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  attempts/wave131-binary-lcd-enumerator/exact-results.json: 7d5c32179df697f8ab427d28736f2e1bb91e41f16a0f18f9dc242b7c03091839
+  attempts/wave141-bivariate-graph-code/exact_check.py: 15378b9a9f807071de0aae5604c4178af5b3cfa067851230781d67d05f2ca204
+  attempts/wave141-bivariate-graph-code/exact-results.json: 351857e985a871e6d69c5662f90ad5cd6a608f92b1703e84ffb549a753cc8b2e
+method: >-
+  Exact GF(2) principal-rank replay on all frozen four-, five-, and six-vertex
+  classes; all 64 diagonal toggles of each six-vertex type; isotropic
+  transversal rank reduction; double counting of support-disjoint (x,Ax);
+  and a minimum-image-weight proof of the 86-through-99 principal-rank band.
+command: |-
+  python -B attempts/wave142-interlace-isotropic/exact_check.py --verify
+  python -B -m unittest discover -s attempts/wave142-interlace-isotropic -p "test_*.py" -v
+outputs:
+  attempts/wave142-interlace-isotropic/exact_check.py: da9ac1cc62ab7570aa88afb0a0bfc75e33f56bc8716b1f215bf765014a62e67a
+  attempts/wave142-interlace-isotropic/exact-results.json: 96b2d315a1994acd55dd274724c1cddd61bb69543fd52ac6b5d4c07e6f077616
+  attempts/wave142-interlace-isotropic/test_exact_check.py: 88dff2401cc0a1d28ad5364563edd9c86be405d62cf6ead4872367b6b78cd02f
+  attempts/wave142-interlace-isotropic/derivation.md: f8205713998f2922e3c7a44e4f7e9395e007d339ccfcb06f2f33d59c672d201b
+  attempts/wave142-interlace-isotropic/protocol.md: 55c87052db1f2da620a5d20a10f8504cae3eec7834c9536da6f0c295601fdedc
+  attempts/wave142-interlace-isotropic/README.md: be963cdf4bba8caa81e7dc6718fd8cee4972d8750a309cbf6345ca8d79e29fe8
+  attempts/wave142-interlace-isotropic/failed-routes.md: 277c22702d02411af5274ba6243da734a885938689855f2331adc905bfcd3172
+  attempts/wave142-interlace-isotropic/input-freeze.sha256: d5165644bf831fc310342aa40bee08f8b91506c1e036b3c5d348d9dd38e7dfac
+limitations:
+  - The full 99-vertex interlace polynomial is not computed.
+  - The required support-intersection lift is not globally solved.
+  - Local nonnegativity gives only n3<=7609140, weaker than n3<=4158.
+  - No construction, exclusion, target resolution, or novelty claim is made.
+  - Discovery cannot verify itself.

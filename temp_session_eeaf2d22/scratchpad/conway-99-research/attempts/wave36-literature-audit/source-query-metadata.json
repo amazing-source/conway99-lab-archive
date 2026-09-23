@@ -1,0 +1,148 @@
+{
+  "access_date_utc": "2026-07-26",
+  "audit_scope": [
+    "conditional endpoint identity C^2=441I for C=2M-21I",
+    "conditional rank_F3(M)>=12 and the square determinant requirement at equality",
+    "conditional rank_F7(M)>=11 from symmetric cubes",
+    "reciprocal Smith pairing d_i*d_(232-i)=441"
+  ],
+  "exact_target_queries": [
+    {
+      "query": "\"2M-21I\" graph",
+      "relevant_exact_hit": false
+    },
+    {
+      "query": "\"C^2=441I\" graph matrix",
+      "relevant_exact_hit": false
+    },
+    {
+      "query": "\"rank_F3\" \"99\" strongly regular graph",
+      "relevant_exact_hit": false
+    },
+    {
+      "query": "\"rank over F_3\" \"(99,14,1,2)\"",
+      "relevant_exact_hit": false
+    },
+    {
+      "query": "\"Conway 99-graph\" Smith rank finite field",
+      "relevant_exact_hit": false
+    },
+    {
+      "query": "\"Conway 99-graph\" \"Smith normal form\"",
+      "relevant_exact_hit": false
+    },
+    {
+      "query": "\"symmetric cube\" \"Conway 99\"",
+      "relevant_exact_hit": false
+    },
+    {
+      "query": "\"Hadamard cube\" \"Conway 99\"",
+      "relevant_exact_hit": false
+    }
+  ],
+  "sources": [
+    {
+      "authors": "Andries E. Brouwer and Hendrik Van Maldeghem",
+      "title": "Strongly Regular Graphs",
+      "year": 2022,
+      "url": "https://homepages.cwi.nl/~aeb/math/srg/rk3/srgw.pdf",
+      "relevance": "Exact Conway-99 status and standard q=3 finite orthogonal graphs"
+    },
+    {
+      "authors": "Patrick G. Cesarz and Andrew J. Woldar",
+      "title": "On the automorphism group of a putative Conway 99-graph",
+      "year": 2025,
+      "doi": "10.5802/alco.418",
+      "url": "https://alco.centre-mersenne.org/articles/10.5802/alco.418/",
+      "relevance": "Current peer-reviewed exact-problem paper; automorphism scope"
+    },
+    {
+      "authors": "Reimbay Reimbayev",
+      "title": "The Subgraphs of Order Six of the Family of Strongly Regular Graphs with Parameters lambda=1 and mu=2",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2508.03377",
+      "relevance": "Exact six-vertex count literature introducing n3 as a free variable"
+    },
+    {
+      "authors": "Ali Keramatipour",
+      "title": "Approaching the Conway-99 problem using SAT solvers",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2604.23037",
+      "relevance": "Current exact-problem computational literature"
+    },
+    {
+      "authors": "Joshua E. Ducey et al.",
+      "title": "Critical group structure from the parameters of a strongly regular graph",
+      "year": 2019,
+      "url": "https://arxiv.org/abs/1910.07686",
+      "relevance": "Conway-99 Smith form of the graph Laplacian; important non-overlap with C"
+    },
+    {
+      "authors": "Sam Adriaensen and Maarten De Boeck",
+      "title": "Association schemes and orthogonality graphs on anisotropic points of polar spaces",
+      "year": 2025,
+      "doi": "10.1007/s10623-024-01514-7",
+      "url": "https://arxiv.org/abs/2402.05055",
+      "relevance": "General finite orthogonal association schemes and exact spectra"
+    },
+    {
+      "authors": "Rhys J. Evans",
+      "title": "Bounds for regular induced subgraphs of strongly regular graphs",
+      "year": 2023,
+      "doi": "10.1016/j.disc.2022.113154",
+      "url": "https://arxiv.org/abs/2202.03700",
+      "relevance": "Regular adjacency polynomial that exactly reproduces the Wave-36 ternary cutoff after specialization"
+    },
+    {
+      "authors": "Noga Alon and Fan R. K. Chung",
+      "title": "Explicit construction of linear sized tolerant networks",
+      "year": 1988,
+      "doi": "10.1016/0012-365X(88)90189-6",
+      "url": "https://web.math.princeton.edu/~nalon/PDFS/Publications/Explicit%20construction%20of%20linear%20sized%20tolerant%20networks.pdf",
+      "relevance": "Standard induced-density eigenvalue inequality"
+    },
+    {
+      "authors": "Tobias Damm and Nicolas Dietrich",
+      "title": "Hadamard powers and kernel perceptrons",
+      "year": 2023,
+      "doi": "10.1016/j.laa.2023.04.020",
+      "url": "https://arxiv.org/abs/2207.08853",
+      "relevance": "General Hadamard-power and degree-d monomial feature-space rank framework"
+    },
+    {
+      "authors": "Richard P. Stanley",
+      "title": "Smith normal form in combinatorics",
+      "year": 2016,
+      "url": "https://math.mit.edu/~rstan/papers/snf_survey.pdf",
+      "relevance": "Standard Smith existence, uniqueness, invariant factors, and minors"
+    }
+  ],
+  "evans_specialization": {
+    "regular_adjacency_polynomial": "R(x,y,d)=x(x+1)(v-y)-2xyk+(2x+lambda-mu+1)yd+y(y-1)mu-yd^2",
+    "target": {
+      "y": 231,
+      "d": 162
+    },
+    "cases": [
+      {"dimension": 7, "determinant_class": "square", "witness_x": -71, "R": -4857762, "excluded": true},
+      {"dimension": 7, "determinant_class": "nonsquare", "witness_x": -70, "R": -4218732, "excluded": true},
+      {"dimension": 8, "determinant_class": "square", "witness_x": 51, "R": -1814976, "excluded": true},
+      {"dimension": 8, "determinant_class": "nonsquare", "witness_x": 56, "R": -2318148, "excluded": true},
+      {"dimension": 9, "determinant_class": "square", "witness_x": 72, "R": -1560978, "excluded": true},
+      {"dimension": 9, "determinant_class": "nonsquare", "witness_x": 68, "R": -1717920, "excluded": true},
+      {"dimension": 10, "determinant_class": "square", "witness_x": 75, "R": -2244960, "excluded": true},
+      {"dimension": 10, "determinant_class": "nonsquare", "witness_x": 74, "R": -175428, "excluded": true},
+      {"dimension": 11, "determinant_class": "square", "witness_x": 75, "R": -209592, "excluded": true},
+      {"dimension": 11, "determinant_class": "nonsquare", "witness_x": 76, "R": -154308, "excluded": true},
+      {"dimension": 12, "determinant_class": "square", "witness_x": 76, "R": 6020322, "excluded": false},
+      {"dimension": 12, "determinant_class": "nonsquare", "witness_x": 76, "R": -303996, "excluded": true}
+    ],
+    "interpretation": "The published general theorem excludes exactly dimensions at most 11 and the nonsquare dimension-12 case, once the target-specific 231-vertex 162-regular induced-subgraph embedding is supplied."
+  },
+  "limitations": [
+    "This is a bounded search, not an exhaustive literature review.",
+    "Search-engine non-hits do not prove novelty, priority, or absence.",
+    "The Evans specialization is a clean-room arithmetic substitution into a published theorem, not a claim that Evans discussed Conway-99.",
+    "No citation found supplies the target-specific endpoint matrix or graph."
+  ]
+}

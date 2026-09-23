@@ -1,0 +1,132 @@
+{
+  "block_witness": {
+    "label_degree_census": {
+      "5": 84
+    },
+    "local_dichotomy_census": {
+      "2": 84
+    },
+    "max_pair_load": 1,
+    "occupancy_n0_n1_n2": [
+      [
+        32,
+        96,
+        12
+      ],
+      [
+        32,
+        96,
+        12
+      ],
+      [
+        32,
+        96,
+        12
+      ],
+      [
+        32,
+        96,
+        12
+      ],
+      [
+        32,
+        96,
+        12
+      ],
+      [
+        32,
+        96,
+        12
+      ],
+      [
+        32,
+        96,
+        12
+      ]
+    ],
+    "passed": true,
+    "path": "block-witness.json",
+    "relation_counts_union_2_3_4": [
+      5,
+      74,
+      341
+    ],
+    "selected_blocks": 140,
+    "support_occupancies": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "used_disjoint_pairs": 420
+  },
+  "census": {
+    "H_edges": 84,
+    "allowed_transitions": 840,
+    "block_type_counts": {
+      "(0, 0, 3)": 6720,
+      "(0, 1, 2)": 20160,
+      "(0, 2, 1)": 6720,
+      "(0, 3, 0)": 280,
+      "(1, 0, 2)": 1680
+    },
+    "candidate_blocks": 35560,
+    "passed": true,
+    "transition_perfect_matching_counts": [
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040,
+      6040
+    ],
+    "transition_triangle_count": 280
+  },
+  "claim_label": "DERIVED",
+  "endpoint_status": "UNKNOWN",
+  "format": "wave64-rooted-transition-design-exact-check-v1",
+  "fractional_control": {
+    "label_values": [
+      "5"
+    ],
+    "local_values": [
+      "2"
+    ],
+    "pair_value_census": {
+      "0": 42,
+      "1/10": 840,
+      "1/5": 1680
+    },
+    "passed": true,
+    "profile_residuals": [
+      "0"
+    ],
+    "support_values": [
+      "12"
+    ],
+    "transition_triangle_lhs": "3/10"
+  },
+  "limitations": [
+    "Discovery cannot promote its own work to VERIFIED.",
+    "The integral witness satisfies only the block master.",
+    "No integral witness for the stronger master is currently available.",
+    "No solver nonhit is treated as nonexistence evidence.",
+    "The full residual codegree constraints are not encoded here."
+  ],
+  "passed": true,
+  "strong_witness": {
+    "passed": null,
+    "status": "NOT_AVAILABLE"
+  }
+}

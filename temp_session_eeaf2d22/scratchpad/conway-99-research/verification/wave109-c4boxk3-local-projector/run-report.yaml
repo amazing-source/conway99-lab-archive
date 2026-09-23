@@ -1,0 +1,43 @@
+role: verifier
+date_utc: 2026-07-28T04:05:45Z
+git_commit: f07565e59de8b9b5b53280896e85fde3387e4f3e
+claim_label: VERIFIED
+verdict: VERIFIED_SCOPED
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2) containing the induced
+  12-vertex C4 Cartesian K3 motif, independently verify the primitive
+  incidence-kernel lattice, characteristic-seven orthogonal type, local
+  projector, rank transfer for all eight imported rows, and the conditional
+  Smith/index/determinant formulas.
+inputs:
+  - path: attempts/wave109-c4boxk3-local-projector/package-manifest.sha256
+    sha256: 6d54d48dbb6b1ffd3f7da845792fc12ee490471c02cc8137ebd1b03c21f5347e
+  - path: verification/wave109-c4boxk3-local-projector/input-freeze.sha256
+    sha256: 4a36eabbad53930165846a1686c96970945547faacf8dd12bc01ef4adb3afb36
+method: >-
+  Freeze all discovery inputs; reconstruct the motif and incidence multiset
+  from the SRG equations; search row contents independently for a unit
+  maximal minor; build the full integral kernel basis by exact pivot solves;
+  use Bareiss determinants, rational elimination, and finite-field
+  elimination; classify the mod-seven form by its determinant square class;
+  encode DQ=QE; compute the Schur action on span(Q); derive all rational and
+  mod-seven ranks; prove the Smith and index formulas; test residual
+  orthogonal signs; then rerun discovery only after independent passage.
+command: >-
+  python -B verification/wave109-c4boxk3-local-projector/independent_verify.py
+  --output verification/wave109-c4boxk3-local-projector/exact-results.json
+  --verify; python -B -m unittest discover -s
+  verification/wave109-c4boxk3-local-projector -p "test_*.py" -v;
+  python -B attempts/wave109-c4boxk3-local-projector/exact_check.py
+  --verify; python -B -m unittest discover -s
+  attempts/wave109-c4boxk3-local-projector -p "test_*.py" -v
+outputs:
+  - path: verification/wave109-c4boxk3-local-projector/exact-results.json
+    sha256: ca9d01412a28d9dd47561526a9597f081c1c851cc742fa7b81d4f33450032d08
+  - path: verification/wave109-c4boxk3-local-projector/report.md
+    sha256: c2d12b96af3eebf7bfe6d34e4b6bde123389200c81af1d20b73494a3192473ef
+limitations:
+  - The verification is conditional on occurrence of the induced motif.
+  - No outside adjacency matrix D is constructed.
+  - No imported rank row is excluded and no additional obstruction was found.
+  - The motif, a full extension, Conway-99, and literature novelty remain UNKNOWN.

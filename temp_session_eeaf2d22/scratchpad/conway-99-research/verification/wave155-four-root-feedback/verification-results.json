@@ -1,0 +1,390 @@
+{
+  "claim_label": "VERIFIED",
+  "class_streams": {
+    "5": {
+      "count": 21
+    },
+    "6": {
+      "count": 62
+    },
+    "7": {
+      "count": 208
+    },
+    "8": {
+      "count": 916
+    }
+  },
+  "cuts": [
+    {
+      "covariance_validity": "VERIFIED: raw form is R times a sum of v_i*v_j products minus the square of the fixed first moment",
+      "cut_sha256": "e54575aa6912984359c16ed86861758259487a11be2dc45eac990756071b1452",
+      "direction_nonzeros": 24,
+      "discovery_input_raw_value": "-573286381880454936872640",
+      "discovery_input_value": "-8617219544860133130",
+      "flag_count": 155,
+      "order6_quadratic_nonzeros": 12,
+      "order7_nonzeros": 82,
+      "order8_nonzeros": 495,
+      "primitive_divisor": 66528,
+      "projected_first_moment": 61318756244592,
+      "root_embedding_count": 1014552,
+      "root_mask": 3
+    },
+    {
+      "covariance_validity": "VERIFIED: raw form is R times a sum of v_i*v_j products minus the square of the fixed first moment",
+      "cut_sha256": "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240",
+      "direction_nonzeros": 88,
+      "discovery_input_raw_value": "-2151379387063498261824",
+      "discovery_input_value": "-64675907499503916",
+      "flag_count": 178,
+      "order6_quadratic_nonzeros": 21,
+      "order7_nonzeros": 130,
+      "order8_nonzeros": 799,
+      "primitive_divisor": 33264,
+      "projected_first_moment": 108053838989712,
+      "root_embedding_count": 1014552,
+      "root_mask": 12
+    },
+    {
+      "covariance_validity": "VERIFIED: raw form is R times a sum of v_i*v_j products minus the square of the fixed first moment",
+      "cut_sha256": "3162afd8c660f900ab5bd3d91a0f78bf50e2cfb12363b7a3fc2f39c4aad23723",
+      "direction_nonzeros": 46,
+      "discovery_input_raw_value": "-6378315864699078797061622188035520/1142494463827",
+      "discovery_input_value": "-191748312430828487165152182180/1142494463827",
+      "flag_count": 155,
+      "order6_quadratic_nonzeros": 25,
+      "order7_nonzeros": 142,
+      "order8_nonzeros": 813,
+      "primitive_divisor": 33264,
+      "projected_first_moment": -54261171701352,
+      "root_embedding_count": 1014552,
+      "root_mask": 3
+    },
+    {
+      "covariance_validity": "VERIFIED: raw form is R times a sum of v_i*v_j products minus the square of the fixed first moment",
+      "cut_sha256": "d6e6a2437fa028e5bb8fdbe6603c16742da2b2b0b22f0730ecdea61a8ef20835",
+      "direction_nonzeros": 50,
+      "discovery_input_raw_value": "-32411021332746620821342615844396544/1142494463827",
+      "discovery_input_value": "-121794662896624807680009228612/1142494463827",
+      "flag_count": 178,
+      "order6_quadratic_nonzeros": 12,
+      "order7_nonzeros": 79,
+      "order8_nonzeros": 573,
+      "primitive_divisor": 266112,
+      "projected_first_moment": -111180656686176,
+      "root_embedding_count": 1014552,
+      "root_mask": 12
+    }
+  ],
+  "fixed_lower_counts": {
+    "order5_support": 21,
+    "order5_total": "71523144",
+    "order6_support": 61,
+    "order6_total": "1120529256"
+  },
+  "format": "wave155-four-root-feedback-independent-verification-v1",
+  "input_location_note": "The assigned attempts/wave155-four-root-feedback directory was absent; the seven exact named artifacts were found and frozen under attempts/wave152-four-root-order8.",
+  "inputs_sha256": {
+    "attempts/wave147-alternative-lane/coefficients.json.gz": "a46d8a8b6fd3ae339cdf7c9b633a661d917e3481bed762ae6aa70f1b4886cf1e",
+    "attempts/wave147-alternative-lane/exact-results.json": "8baea3d7fdf69ff6653ff859d30ea975dcbef44330445ace73ae051c7db1373c",
+    "attempts/wave148-marked-order8/marked-rows.json.gz": "e7a39699584fe60ff251119063d66d8eed2a14a69d671c183533806cddc92aa1",
+    "attempts/wave150-order8-sdp-scout/exact-rank1-witness.json": "e63afbe9ca36b4b1571b3dde75309d0cce45f3bc862d6e8c08bfe62f78dc130d",
+    "attempts/wave152-four-root-order8/build_exact_cuts.py": "ffc57ca81560e90ac3f0f3cf27f84b5ed9af0e8fffb0c6e32079dfcc9bb73b70",
+    "attempts/wave152-four-root-order8/exact-cuts.json": "055b8253636167b85f68e09b1a470d4fe94e2d8bcfbe5eb02ade0e69ad73603d",
+    "attempts/wave152-four-root-order8/exact-witness-after-four-cuts.json": "13fcdecd15da2a0c23abb71950fcda58e7f5e91b8caadc99d1e6e352aebeaeb9",
+    "attempts/wave152-four-root-order8/exact-witness-after-two-cuts.json": "b36c592546f5e5b3f9159a82267a3cb7cefaf37e6ee7588b4e2ba0a5c65d07af",
+    "attempts/wave152-four-root-order8/iteration2-cuts.json": "3652888b035ba2675cb860dcf59414f0b9e7e353e7f943ecfd1e37646718aa25",
+    "attempts/wave152-four-root-order8/zero-face-four-cuts-highs.json": "22dc59c5d78660131bd755855029deab757e236ffc633fa75a4751b30bc86372",
+    "attempts/wave152-four-root-order8/zero-face-two-cuts-highs.json": "11a06307d898b10f0472a0908c5c775b00260672d9054f67c9adb7b30b6da005",
+    "attempts/wave44-rooted-flags/row-system.json": "fb81601a9c97fc6860702403e56da65c2ba8fd69ee6a61007a0da53cade1d722"
+  },
+  "limitations": [
+    "Exact finite-relaxation feasibility does not construct a graph.",
+    "The retained equality system is only a relaxation of graph existence.",
+    "The HiGHS files are support-selection diagnostics, not certificates.",
+    "No endpoint theorem, strict upper bound, or conjecture resolution follows."
+  ],
+  "metadata_observation": "The after-four witness retains an after-two format/scope/conclusion label.  Its actual inputs, four exact cut values, and two active cut rows establish the after-four finite-relaxation claim.",
+  "resource_report": {
+    "elapsed_seconds": 30.005746603012085,
+    "minimum_free_physical_memory_percent": 27.745108330825744,
+    "samples": [
+      {
+        "available_physical_gib": 18.068336486816406,
+        "free_physical_memory_percent": 28.608284378489206,
+        "label": "start",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 18.06442642211914,
+        "free_physical_memory_percent": 28.602093424336935,
+        "label": "hashes_verified",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.644763946533203,
+        "free_physical_memory_percent": 27.937625865117894,
+        "label": "lower_counts_derived",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 18.0223388671875,
+        "free_physical_memory_percent": 28.53545459783743,
+        "label": "root_3_order8_class_0",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.919086456298828,
+        "free_physical_memory_percent": 28.37197112853061,
+        "label": "root_3_order8_class_128",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.915058135986328,
+        "free_physical_memory_percent": 28.365592935764955,
+        "label": "root_3_order8_class_256",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.878536224365234,
+        "free_physical_memory_percent": 28.30776640400512,
+        "label": "root_3_order8_class_384",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.737499237060547,
+        "free_physical_memory_percent": 28.084457177743925,
+        "label": "root_3_order8_class_512",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.68108367919922,
+        "free_physical_memory_percent": 27.99513227924839,
+        "label": "root_3_order8_class_640",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.646114349365234,
+        "free_physical_memory_percent": 27.939764009283653,
+        "label": "root_3_order8_class_768",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.617958068847656,
+        "free_physical_memory_percent": 27.89518309943204,
+        "label": "root_3_order8_class_896",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.588558197021484,
+        "free_physical_memory_percent": 27.84863316416224,
+        "label": "root_12_order8_class_0",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.523174285888672,
+        "free_physical_memory_percent": 27.745108330825744,
+        "label": "root_12_order8_class_128",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.923080444335938,
+        "free_physical_memory_percent": 28.37829496169883,
+        "label": "root_12_order8_class_256",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.860401153564453,
+        "free_physical_memory_percent": 28.279052456649126,
+        "label": "root_12_order8_class_384",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.835315704345703,
+        "free_physical_memory_percent": 28.239333710790273,
+        "label": "root_12_order8_class_512",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.70657730102539,
+        "free_physical_memory_percent": 28.035497300321193,
+        "label": "root_12_order8_class_640",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.60976791381836,
+        "free_physical_memory_percent": 27.88221531546626,
+        "label": "root_12_order8_class_768",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.554889678955078,
+        "free_physical_memory_percent": 27.795324518944742,
+        "label": "root_12_order8_class_896",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.547630310058594,
+        "free_physical_memory_percent": 27.783830484064968,
+        "label": "cuts_reconstructed",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.639713287353516,
+        "free_physical_memory_percent": 27.92962896433974,
+        "label": "after_two_complete",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.71924591064453,
+        "free_physical_memory_percent": 28.055555991774547,
+        "label": "after_four_complete",
+        "total_physical_gib": 63.15770721435547
+      },
+      {
+        "available_physical_gib": 17.742431640625,
+        "free_physical_memory_percent": 28.09226683990869,
+        "label": "complete",
+        "total_physical_gib": 63.15770721435547
+      }
+    ]
+  },
+  "scope": "Four exact covariance cuts and exact rational feasibility of the retained finite relaxation after the first two and all four cuts.",
+  "separation": {
+    "discovery_python_executed": false,
+    "discovery_python_imported": false,
+    "solver_status_used_as_evidence": false,
+    "verifier_runtime": "Python standard library only"
+  },
+  "tests": {
+    "admissibility_cases": 3,
+    "canonicalization_relabelings": 24,
+    "covering_pair_counts": {
+      "2": 1,
+      "3": 6,
+      "4": 6
+    },
+    "flag_counts": {
+      "12": 178,
+      "3": 155
+    }
+  },
+  "verdict": {
+    "Conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "finite_relaxation_after_four_cuts": "EXACT_RATIONAL_FEASIBLE",
+    "finite_relaxation_after_two_cuts": "EXACT_RATIONAL_FEASIBLE",
+    "four_primitive_covariance_cuts": "VERIFIED",
+    "graph_constructed": false,
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  },
+  "witnesses": {
+    "after_four": {
+      "active_cut_equalities": 2,
+      "active_cut_hashes": [
+        "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240",
+        "3162afd8c660f900ab5bd3d91a0f78bf50e2cfb12363b7a3fc2f39c4aad23723"
+      ],
+      "all_equalities": 10312,
+      "base_nontrivial_equalities": 10310,
+      "claim_label": "VERIFIED",
+      "deletion_equalities": 208,
+      "denominator_statistics": {
+        "distinct": 5,
+        "integer_coordinates": 245,
+        "maximum": 170404771984456964442574301594
+      },
+      "exact_cut_values": {
+        "3162afd8c660f900ab5bd3d91a0f78bf50e2cfb12363b7a3fc2f39c4aad23723": {
+          "active": true,
+          "root_mask": 3,
+          "value": "0"
+        },
+        "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240": {
+          "active": true,
+          "root_mask": 12,
+          "value": "0"
+        },
+        "d6e6a2437fa028e5bb8fdbe6603c16742da2b2b0b22f0730ecdea61a8ef20835": {
+          "active": false,
+          "root_mask": 12,
+          "value": "7605582402052820905297114947634037784224321991/1396760426102106265922740177"
+        },
+        "e54575aa6912984359c16ed86861758259487a11be2dc45eac990756071b1452": {
+          "active": false,
+          "root_mask": 3,
+          "value": "38615112160467992928685088028300287380341411540/1396760426102106265922740177"
+        }
+      },
+      "marked_equalities": 5384,
+      "modular_rank": {
+        "full_column_rank": true,
+        "modulus": 1000003,
+        "rank": 886,
+        "rows_scanned": 10273,
+        "variables": 886
+      },
+      "nonnegative_coordinates": true,
+      "pair_root_upper_entries": {
+        "ordered_edge": 2211,
+        "ordered_nonedge": 3828
+      },
+      "restricted_equalities": 10273,
+      "scope": "exact feasibility of the retained finite linear relaxation",
+      "selected_row_indices_exact_match": true,
+      "wave44_equalities": 170,
+      "x7_support": 204,
+      "x7_total": 14887031544,
+      "x8_support": 886,
+      "x8_total": 171200862756
+    },
+    "after_two": {
+      "active_cut_equalities": 1,
+      "active_cut_hashes": [
+        "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240"
+      ],
+      "all_equalities": 10311,
+      "base_nontrivial_equalities": 10310,
+      "claim_label": "VERIFIED",
+      "deletion_equalities": 208,
+      "denominator_statistics": {
+        "distinct": 3,
+        "integer_coordinates": 360,
+        "maximum": 139384324586894
+      },
+      "exact_cut_values": {
+        "68a099dd942bba0033af474e311d9720f6f15aaf558ee5df575edcb1d8c01240": {
+          "active": true,
+          "root_mask": 12,
+          "value": "0"
+        },
+        "e54575aa6912984359c16ed86861758259487a11be2dc45eac990756071b1452": {
+          "active": false,
+          "root_mask": 3,
+          "value": "33889873517908022283470723685060/1142494463827"
+        }
+      },
+      "marked_equalities": 5384,
+      "modular_rank": {
+        "full_column_rank": true,
+        "modulus": 1000003,
+        "rank": 885,
+        "rows_scanned": 10272,
+        "variables": 885
+      },
+      "nonnegative_coordinates": true,
+      "pair_root_upper_entries": {
+        "ordered_edge": 2211,
+        "ordered_nonedge": 3828
+      },
+      "restricted_equalities": 10272,
+      "scope": "exact feasibility of the retained finite linear relaxation",
+      "selected_row_indices_exact_match": true,
+      "wave44_equalities": 170,
+      "x7_support": 204,
+      "x7_total": 14887031544,
+      "x8_support": 885,
+      "x8_total": 171200862756
+    }
+  }
+}

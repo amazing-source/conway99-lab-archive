@@ -1,0 +1,252 @@
+{
+  "all40": {
+    "diagonal_gate_passes": false,
+    "maximum_coordinate": 24,
+    "maximum_leverage": "154998381711798556753484666134716334/231026319585357084224437520694259587",
+    "rank": 40,
+    "violating_coordinates": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      21,
+      22,
+      24,
+      26,
+      27,
+      35,
+      40,
+      41,
+      42,
+      43,
+      45,
+      47,
+      52,
+      53,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      71,
+      72,
+      75,
+      76,
+      80,
+      81,
+      83,
+      98
+    ]
+  },
+  "claim_label": "VERIFIED",
+  "comparison": {
+    "clarifications": [
+      "The 2x2 failures refute only the displayed explicit 26-record coordinate family.",
+      "Feature-factor PSD blocks are code-geometry constraints, not one common graph-valued projector completion."
+    ],
+    "corrections": [],
+    "discovery_exact_claims_matched": true
+  },
+  "explicit26": {
+    "diagonal": {
+      "diagonal_gate_passes": true,
+      "maximum_coordinate": 72,
+      "maximum_leverage": "1217462828759965373070564/2744155911807689338327015",
+      "rank": 26,
+      "violating_coordinates": []
+    },
+    "record_ids_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10,
+      11,
+      13,
+      16,
+      17,
+      18,
+      19,
+      22,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      37,
+      39
+    ],
+    "rooted_feature_blocks": {
+      "all_psd_by_explicit_F_F_transpose_factorization": true,
+      "centered_endpoint_one": 312,
+      "cross_block_degree_two": 1560,
+      "exact_feature_gram_entry_checks": 1581840,
+      "nonzero_sparse_feature_rows": 25408,
+      "total": 2340,
+      "within_block_degree_two": 468
+    },
+    "three_point": {
+      "displayed_pairwise_collision": {
+        "pair_overlap_tuple": [
+          1,
+          1,
+          4
+        ],
+        "triple_one": [
+          0,
+          6,
+          39
+        ],
+        "triple_zero": [
+          0,
+          3,
+          6
+        ]
+      },
+      "minimum_signed_triple_example": {
+        "coefficients": [
+          1,
+          1,
+          -1
+        ],
+        "record_ids": [
+          0,
+          11,
+          22
+        ]
+      },
+      "minimum_signed_triple_norm": 22,
+      "pair_overlap_tuple_count": 52,
+      "pair_overlap_tuples_with_multiple_triple_intersections": 28,
+      "triple_count": 2600
+    },
+    "two_by_two_completion": {
+      "ambiguous_pair_count": 2863,
+      "forced_edge_count": 135,
+      "forced_nonedge_count": 1501,
+      "invalid_pair_count": 352,
+      "invalid_pair_examples": [
+        [
+          0,
+          56
+        ],
+        [
+          0,
+          68
+        ],
+        [
+          0,
+          72
+        ],
+        [
+          1,
+          72
+        ],
+        [
+          2,
+          56
+        ],
+        [
+          2,
+          68
+        ],
+        [
+          2,
+          72
+        ],
+        [
+          3,
+          72
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          8,
+          24
+        ],
+        [
+          8,
+          27
+        ]
+      ],
+      "passes_every_pair": false
+    }
+  },
+  "first26": {
+    "diagonal_gate_passes": false,
+    "maximum_coordinate": 61,
+    "maximum_leverage": "112186033393421629935249/212474300762886279693908",
+    "rank": 26,
+    "violating_coordinates": [
+      8,
+      18,
+      24,
+      35,
+      61,
+      71
+    ]
+  },
+  "format": "wave123-independent-verification-v1",
+  "memory": {
+    "floor_percent": 15,
+    "floor_respected": true
+  },
+  "nonexhaustive_search_scope": {
+    "exhaustive_certificate_present": false,
+    "negative_inference_allowed": false,
+    "sealed_telemetry_restarts": 30,
+    "sealed_trial_removals": 14070,
+    "telemetry_algorithm_independently_replayed": false,
+    "verifier_conclusion": "The heuristic supplies no upper bound or nonexistence proof."
+  },
+  "preinspection": {
+    "discovery_entries_checked": 10,
+    "discovery_manifest_sha256": "39d680e78bf547c4fb5564048c6b7b1561382fd7d289f54a8a86154cff1a08a7",
+    "source_witness_sha256": "3569eaa48ec3e99ab988f943492c103f67889c8fadf9a2a15edeac9586220183"
+  },
+  "projector_necessity": {
+    "E_minus4": "(27I-9A+J)/63",
+    "condition": "E-W positive semidefinite",
+    "diagonal": "4/9",
+    "edge_entry": "-8/63",
+    "nonedge_entry": "1/63"
+  },
+  "scope": "Exact necessary-condition checks for the displayed Wave120 coordinate families and explicit 26-record subset only.",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "literature_novelty": "UNKNOWN",
+    "local_cap_24": "UNKNOWN",
+    "local_cap_25": "UNKNOWN",
+    "rank28_excluded": false,
+    "rank30_excluded": false,
+    "some_26_word_graph_compatible_family": "UNKNOWN"
+  }
+}

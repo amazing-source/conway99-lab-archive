@@ -1,0 +1,43 @@
+role: proof_b
+date_utc: 2026-07-26T22:59:41Z
+git_commit: 697cc02bcbe16b69aaf08822298e03c66329c64c
+claim_label: CANDIDATE
+scope: >-
+  Conditional n3=4158 lower bound rank_F3(M)>=12 and exclusion of the
+  nonsquare rank-twelve factor form.
+inputs:
+  - path: verification/wave35-n3-upper-spectral/independent-results.json
+    sha256: c704d8fce8f1d5975204b9a06ada0098c66fbdb9e0de8016a1ff89d86e691305
+  - path: verification/wave35-n3-upper-spectral/run-report.yaml
+    sha256: 40ded0143abe9b0edcec1b87146621dd6ee0fae3483d3d522fec0c83417d6c95
+method: >-
+  Factor the endpoint matrix over F_3, interpret its 231 distinct norm-two
+  projective rows as an induced 162-regular subgraph of a finite orthogonal
+  graph, enumerate both quadratic-form determinant classes exactly, and
+  apply the largest nonprincipal eigenvalue mixing bound.
+command: |-
+  .\.venv\Scripts\python.exe -B -m unittest -v attempts/wave36-ternary-polar-bound/test_exact_check.py
+  .\.venv\Scripts\python.exe -B attempts/wave36-ternary-polar-bound/exact_check.py --output attempts/wave36-ternary-polar-bound/exact-results.json
+  .\.venv\Scripts\python.exe -B attempts/wave36-ternary-polar-bound/exact_check.py --verify attempts/wave36-ternary-polar-bound/exact-results.json
+outputs:
+  - path: agents/2026-07-26-wave36-ternary-polar-bound.md
+    sha256: 062e8b5478b93195dae4d9a571677688cefcd7397cda75246dbd03503f7c9b85
+  - path: attempts/wave36-ternary-polar-bound/exact_check.py
+    sha256: 50c943b520a253db4d98838f78e58753570d61b31795dca4d5a49471dd054bf9
+  - path: attempts/wave36-ternary-polar-bound/test_exact_check.py
+    sha256: 6fa0c4b4177c7eabd77ea488fd0eb2f966c8dd7caf249914334b946a917a482b
+  - path: attempts/wave36-ternary-polar-bound/exact-results.json
+    sha256: 7d7c15ad99952ee3ca70582a887e771331156b8ef8e50524d296f1dc15f425a1
+  - path: attempts/wave36-ternary-polar-bound/input-freeze.sha256
+    sha256: b78e5b241c67188c2ea6ab34f5e38800cc394eaa3f3159ebeb2ed1231a24dba9
+  - path: attempts/wave36-ternary-polar-bound/failed-routes.md
+    sha256: f150a99e5eb778d054dfe36840b4bc43c687f4320c6332c9be0a3cf84bdef1cb
+limitations:
+  - Discovery-side candidate requiring independent adversarial verification.
+  - No endpoint matrix, finite-field point configuration, or graph is constructed.
+  - Rank twelve with square discriminant and every rank from 13 through 44 survive.
+  - The endpoint is not excluded and the n3 upper bound remains 4158.
+  - No literature-novelty claim is made.
+tests:
+  submitted: 10 passed
+  deterministic_regeneration: passed

@@ -1,0 +1,43 @@
+{
+  "claim_label": "VERIFIED",
+  "date_utc": "2026-07-27T23:34:54Z",
+  "format": "conway99-wave72-public-checkpoint-v1",
+  "git_base_commit": "5f497b545c536de90a1a557c51b53f041fecf7db",
+  "manifests": {
+    "wave69_discovery": "753904e74d07f5f3495fb79ae08b402147c4cddf023fc428f77e2cd35590ddce",
+    "wave69_verification": "52fb169bd001d4e6016589adbed6359309ecedd08ad6571e80cfc102f13c098a",
+    "wave72_discovery": "cb3c16e26df0430103f74c8bc76d4ba2f97fbc214b5a379788b161b7257c3ece",
+    "wave72_verification": "1eabfa64e932368ef37e9ab907d8c59b264ee93cfd1b29ed76868f4d8107aa1b"
+  },
+  "prior_checkpoint": "logs/2026-07-27-wave66-public-checkpoint.json",
+  "results": {
+    "wave69_order11_quotient": {
+      "canonical_nodes": 8980,
+      "diagonal_cases": 3,
+      "label_complete_nodes": 1108533,
+      "quotient_candidates": 0,
+      "row_shapes": 7,
+      "verifier_comparisons": 11,
+      "verifier_tests_passed": 13
+    },
+    "wave72_fixed_points": {
+      "positive_fixed_counts_for_exact_order_11": 0,
+      "verifier_comparisons": 6,
+      "verifier_tests_passed": 14
+    },
+    "restricted_exclusions": {
+      "automorphism_order_11": true,
+      "cayley": true,
+      "vertex_transitive": true
+    }
+  },
+  "status": "VERIFIED_RESTRICTED",
+  "status_wall": {
+    "asymmetric_targets": "UNKNOWN",
+    "conway_99": "UNKNOWN",
+    "endpoint_n3_4158": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rigorous_interval": "708<=n3<=4158",
+    "strict_upper_bound_below_4158": "NOT_PROVED"
+  }
+}

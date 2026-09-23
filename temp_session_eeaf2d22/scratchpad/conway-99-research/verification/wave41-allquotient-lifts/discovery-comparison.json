@@ -1,0 +1,40 @@
+{
+  "comparison_status": "MATCH_WITH_REPRESENTATION_ONLY_DIFFERENCE",
+  "discovery_artifact": {
+    "path": "attempts/wave41-allquotient-lifts/exact-results.json",
+    "sha256": "da8098c5048c9b45ca3625131a98eb5473d29f864ea0c78a3e26d3b091b38e6d",
+    "read_after_implementation_freeze": true
+  },
+  "implementation_freeze": {
+    "checker_sha256": "5d9c2c01ebe0e134b366a526615b1870647f507f43f68e4cb7145ec5e9ea0261",
+    "tests_sha256": "4d94289aaff949d29c858a1b529b266c40b5821bb88a26f4b2dc1ba4b5d74a61"
+  },
+  "matching_fields": {
+    "normalized_case_count": true,
+    "normalized_rank_distribution": true,
+    "rank_eleven_case_count": true,
+    "rank_eleven_quotient_sha256_set": true,
+    "strict_fibre_coloured_isomorphism_class_count": true,
+    "triangle_free_masks_per_rank_eleven_case": true,
+    "K39_rank_distribution_per_rank_eleven_case": true,
+    "canonical_minimum_mask": true,
+    "canonical_minimum_edge_set": true,
+    "canonical_minimum_core_and_K39_ranks": true,
+    "conditional_rank_33_floor": true,
+    "conditional_even_rank_34_floor": true,
+    "structural_kernel_dimension": true,
+    "outside_column_orthogonality": true
+  },
+  "representation_only_difference": {
+    "field": "canonical minimum witness edge sequence",
+    "verifier_edge_count": 54,
+    "discovery_edge_count": 54,
+    "edge_sets_equal": true,
+    "edge_sequences_equal": false,
+    "reason": "The verifier sorts undirected edges lexicographically; discovery retains a noncanonical adjacency-set iteration order."
+  },
+  "discovery_only_not_verified": [
+    "The extended triangle-free lift-count census for normalized quotient ranks 12 through 16."
+  ],
+  "verdict": "All fields needed for the Wave 41 conditional theorem match independently."
+}

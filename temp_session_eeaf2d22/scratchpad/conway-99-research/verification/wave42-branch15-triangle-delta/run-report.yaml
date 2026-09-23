@@ -1,0 +1,45 @@
+role: verifier
+date_utc: 2026-07-27T14:06:37Z
+git_commit: ef49b60aafd67f9007f6c218c39fd50392453a1b
+claim_label: VERIFIED
+scope: >-
+  Exact clean-room reconstruction and post-freeze catalogue comparison for one
+  additional fixed-triangle prism-clause family inside refined endpoint branch
+  15, conditional on n3=4158.
+inputs:
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-result.json
+    sha256: 2faa09eee4217d19fc1e1ac8f9705129e1cd57d47c0016a1d2bc229d87d8b184
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-delta.opb.gz
+    sha256: 0840524515920a59fd3d0f0666b496f9e639476dd887d0d90df5bb58a9e8904e
+  - path: attempts/wave42-endpoint-certificate/branch-15-seventh-triangle-active-delta.opb.gz
+    sha256: 63e07c1196c4cfd315f72b311221233fa61f608f0dd856f3d00391bd5f5286b9
+method: >-
+  Without importing discovery code, strictly parse and hash the source OPB;
+  replay generalized-unit propagation to a fixed point; reconstruct rooted
+  labels and primary edge IDs; derive the seventh triangle; enumerate every
+  disjoint second triangle and all six cross matchings; simplify against the
+  independent closure; freeze implementation and result; then independently
+  parse both discovery OPB catalogues and compare the complete normalized
+  clause streams.
+command: |-
+  .\.venv\Scripts\python.exe -B verification\wave42-branch15-triangle-delta\independent_check.py --verify verification\wave42-branch15-triangle-delta\independent-results.json
+  .\.venv\Scripts\python.exe -B verification\wave42-branch15-triangle-delta\comparison_check.py --verify verification\wave42-branch15-triangle-delta\comparison.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave42-branch15-triangle-delta -p "test_*.py" -v
+outputs:
+  - path: verification/wave42-branch15-triangle-delta/independent-results.json
+    sha256: 5402d5ea9d3a2d8dfaee3077c699e7bc1a0399512c49007d57fe8c6276ab4fbb
+  - path: verification/wave42-branch15-triangle-delta/comparison.json
+    sha256: f13ec40969d54d08ed14ab3b288468be871aad2c0eacbd6844082a2efd4956d6
+  - path: verification/wave42-branch15-triangle-delta/independent_check.py
+    sha256: ea76e07e87ef8718ba1842e56fd7d31ae23502b4d61d7b347a404d1f20b71041
+  - path: verification/wave42-branch15-triangle-delta/comparison_check.py
+    sha256: d0c637e9a16db78385e8f72f121ac69f9ca5fd89415101df5dc9552761a0b748
+limitations:
+  - "The verified reduction strengthens only refined endpoint branch 15."
+  - "No active unit or empty clause is produced."
+  - "The discovery package's failed-literal probes were not independently replayed."
+  - "Exact clause-set equality is not a SAT or UNSAT certificate."
+  - "Endpoint proof coverage remains 0/33."
+  - "The endpoint, the general upper bound, and Conway-99 remain UNKNOWN."

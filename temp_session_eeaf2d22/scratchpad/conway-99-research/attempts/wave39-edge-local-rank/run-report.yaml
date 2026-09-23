@@ -1,0 +1,51 @@
+role: proof_a
+date_utc: "2026-07-27T02:09:59Z"
+git_commit: "019b78ac9a5170107d105ad4d8fcd27f55dde642"
+claim_label: CANDIDATE
+scope: >-
+  Universal edge-local characteristic-seven rank consequence for a
+  hypothetical srg(99,14,1,2), with conditional prism-free endpoint
+  refinements.
+inputs:
+  - path: attempts/wave39-edge-local-rank/input-freeze.sha256
+    sha256: 73c5b32b22ad9b027ef3624125cb1dd53cb612fbebaa1949aba5aa6b9a032ada
+method: >-
+  Prove that N is injective on im(M) modulo seven and hence
+  rank_F7(M)=rank_F7(NMN^T); construct the exact forced 27-vertex graph
+  around an edge for all eleven positive partitions of six; form the
+  principal Seidel/transport block; perform exact Gaussian elimination over
+  F7; and combine the resulting rank floor with the previously verified
+  endpoint rank ranges and parity.
+command: >-
+  .\.venv\Scripts\python.exe -B -m unittest discover -s
+  attempts\wave39-edge-local-rank -p "test_*.py" -v;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave39-edge-local-rank\exact_check.py --verify
+  attempts\wave39-edge-local-rank\exact-results.json
+outputs:
+  - path: attempts/wave39-edge-local-rank/exact_check.py
+    sha256: b9d03222bd606ad8659a0de8b058e498099f2f43561f4827a6089faad4cbd411
+  - path: attempts/wave39-edge-local-rank/test_exact_check.py
+    sha256: 5377b0d18a6be3b4c65f5ae55aa933a39ddb0720bf58875e12923c0c1dd932d6
+  - path: attempts/wave39-edge-local-rank/exact-results.json
+    sha256: 90afac4d1203048b27715d8b083ef850b59d0d7714d53bf240bbafeaa3ee7172
+  - path: attempts/wave39-edge-local-rank/README.md
+    sha256: 7896e8b273354a7e056fe512d3fbeb41a2889943b089178779c654c80d332bdb
+  - path: attempts/wave39-edge-local-rank/failed-routes.md
+    sha256: 870c08ce1f5a41f53a84de9e9921b8c8d76468dc66de3a6c8ea587c51d2bdf93
+  - path: agents/2026-07-27-wave39-edge-local-rank.md
+    sha256: d77e6a6632857b73473d34e2e03c9410e4e62cd3ab80ba82a1a315962023895d
+tests:
+  passed: 8
+  failed: 0
+result:
+  universal_rank_F7_M_lower_bound: 19
+  previous_verified_lower_bound: 13
+  endpoint_rank_pair_count: 429
+  if_r3_equals_12_rank_F7_M_lower_bound: 20
+  endpoint_excluded: false
+  strongest_general_upper_bound: "n3<=4158"
+limitations:
+  - Discovery cannot verify itself.
+  - The finite rank table is a necessary condition, not a graph or endpoint certificate.
+  - No endpoint exclusion, upper-bound improvement, Conway-99 resolution, or novelty claim is made.

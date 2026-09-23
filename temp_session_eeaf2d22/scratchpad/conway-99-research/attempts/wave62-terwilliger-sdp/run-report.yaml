@@ -1,0 +1,49 @@
+role: proof_b
+date_utc: 2026-07-27T21:49:13Z
+git_commit: 81c8d45426938ea8490af55d81f05b7c2ad99035
+claim_label: DERIVED
+scope: prism-free endpoint n3=4158; exact one-point scaffold-symmetry-averaged residual projector SDP and bounded degree-24 Schur/Terwilliger family
+inputs:
+  - path: AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: STRUCTURE.md
+    sha256: 71b0b404d09d3ca6f84966b0841a7a2f09e9d715e7833e3511174067f7f7c701
+  - path: agents/2026-07-22-wave3-fiber-coupling.md
+    sha256: a53063a2404b3dba3be64752fb707e76e233770b7830e18794e29c3980355dc1
+  - path: attempts/wave45-flag-moment/protocol.md
+    sha256: 09b31a9943252ebb221e2ff9352bd3d0c575d2e3179993c1bcb619058eda1698
+  - path: attempts/wave45-flag-moment/exact-results.json
+    sha256: 2c55b6ab1af9cac7d8f5800466abadb8c0c2603b5f96013d3fd160b6816c24df
+  - path: attempts/wave59-incidence-spectral-excess/derivation.md
+    sha256: b16212c624c80bddbb67ef4cee3440793fa20aa2b17ef25be068e40fad74d170
+  - path: attempts/wave59-incidence-spectral-excess/exact-result.json
+    sha256: 7954daa92f8cb4a400ae8f9f5bfb4d4edb10ad42361872178eb538d35edc1d81
+method: exact reconstruction of the signed-edge association scheme, rational block diagonalization of scaffold-averaged residual spectral projectors, and affine endpoint verification of a bounded Schur-positive family without assuming graph symmetry
+command: .\.venv\Scripts\python.exe -B attempts\wave62-terwilliger-sdp\exact_check.py --verify attempts\wave62-terwilliger-sdp\exact-results.json ; .\.venv\Scripts\python.exe -B -m unittest discover -s attempts\wave62-terwilliger-sdp -p "test_*.py" -v
+outputs:
+  - path: attempts/wave62-terwilliger-sdp/exact-results.json
+    sha256: 319f7e08a1990b49d3c087138c68d31d4e577fae1832fb09bd69f681f4412a2e
+  - path: attempts/wave62-terwilliger-sdp/exact_check.py
+    sha256: 57eb0b34b563fee5295cd3a0d4e26f818b343d5b8e2617e1e91fd5de5a76083d
+  - path: attempts/wave62-terwilliger-sdp/test-results.txt
+    sha256: f2333d9d9c67e74d0713363759d3bf63e25837d7870b814de17d80c9130878f9
+result:
+  disposition: EXACT_NULL_RESULT_FOR_THIS_RELAXATION
+  association_scheme_multiplicities: [1, 6, 7, 14, 21, 35]
+  endpoint_parameter_integer_range: [0, 42]
+  averaged_matrices_checked: 1949
+  endpoint_block_inequalities_checked: 23388
+  negative_exact_blocks: 0
+  strict_n3_upper_bound: NOT_OBTAINED
+  endpoint_n3_4158: UNKNOWN
+  conway_99: UNKNOWN
+resources:
+  minimum_free_memory_percent_required: 15
+  minimum_free_memory_percent_observed: 56.3
+limitations:
+  - This is discovery-agent work and cannot self-promote to VERIFIED.
+  - The orbit-count identity recovered by the spectral calculation is already present in verified Wave 3.
+  - The Hadamard scan is exhaustive only for the declared six-multiplier degree-24 family.
+  - Group-averaged feasibility is not a residual graph or a 99-vertex completion.
+  - Two-root and triangle-root compatibility remain unmodeled.
+  - No endpoint exclusion, strict upper bound, construction, novelty, or priority claim follows.

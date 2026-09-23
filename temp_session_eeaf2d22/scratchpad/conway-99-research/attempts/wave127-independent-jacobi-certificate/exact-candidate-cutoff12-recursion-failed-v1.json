@@ -1,0 +1,50 @@
+{
+  "attempts": [
+    {
+      "active": 143,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-06
+    },
+    {
+      "active": 141,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-07
+    },
+    {
+      "active": 134,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-08
+    },
+    {
+      "active": 133,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-09
+    },
+    {
+      "active": 127,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-10
+    },
+    {
+      "active": 110,
+      "outcome": "active_system_inconsistent",
+      "threshold": 1e-11
+    }
+  ],
+  "classification": "EXACT_PRIMAL_RECOVERY_FAILED",
+  "diagnostic": {
+    "exact_reduction": {
+      "deduplicated_inequalities": 165,
+      "independent_equalities": 132,
+      "original_equalities": 304,
+      "original_inequalities": 436
+    },
+    "primal_affine_rank": 132,
+    "primal_free_dimension": 107,
+    "reduced_balanced_max": 93.04005136371019,
+    "reduced_balanced_min_nonzero": 0.010430474187138205,
+    "reduced_float_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "reduced_float_status": 0,
+    "reduced_float_success": true
+  }
+}

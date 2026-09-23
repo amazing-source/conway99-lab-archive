@@ -1,0 +1,57 @@
+role: verifier
+date_utc: 2026-07-27T23:56:15Z
+git_commit: fd88280eb25aecd8c40d9e82f572813f1c850ec5
+claim_label: VERIFIED
+scope: >-
+  Clean-room verification, conditional on a hypothetical srg(99,14,1,2)
+  and the independently verified Wave66/Wave71 packages, of the Wave80
+  characteristic-seven evaluation map, [99,44]_7 dimension, exact Seidel
+  hull, all surviving finite orthogonal-space types, dual distance at least
+  six and OA strength five, and the norm-14/16/18 short-vector code images.
+inputs:
+  - path: verification/wave66-spherical-code-shift/package-manifest.sha256
+    sha256: a6051ebcfccab0fc9b3f9698f0024cc3284549f5148c9a12a4c6bbe08c786486
+  - path: verification/wave71-modular-theta-extension/package-manifest.sha256
+    sha256: 0eede2ebc625534360dda3f8e62456e582f5184fd18d3820dd44748de95a5237
+  - path: attempts/wave80-f7-overlattice-code/package-manifest.sha256
+    sha256: 51d3e709308851ba9c9c63a8897dec4c761ce11e5126633e0cdf67f6e470cba7
+  - path: verification/wave80-f7-overlattice-code/discovery-inventory-preinspection.tsv
+    sha256: 14f567615aad49ef826633e4ecf102f417baf5e844747cba61ba9e084c2ea126
+method: >-
+  Freeze every discovery byte and validate the advertised manifest before
+  inspection; independently prove marked-vector spanning modulo seven,
+  evaluation injectivity, the scaled dot form and radical, and exact hull
+  equality; classify every orthogonal quotient by determinant square class;
+  enumerate all labelled Seidel blocks through order five with exact
+  lambda/mu and outside-coordinate checks; find a support-six positive
+  control; derive the Wave71 short-vector symbol maps and self-dots; then
+  replay discovery tests and compare selected mathematical fields.
+command: >-
+  .\.venv\Scripts\python.exe
+  verification\wave80-f7-overlattice-code\independent_verify.py --verify
+  --discovery-results
+  attempts\wave80-f7-overlattice-code\exact-results.json
+  --comparison-output
+  verification\wave80-f7-overlattice-code\comparison.json ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  verification\wave80-f7-overlattice-code\test_independent_verify.py ;
+  .\.venv\Scripts\python.exe -m unittest -v
+  attempts\wave80-f7-overlattice-code\test_exact_check.py
+outputs:
+  - path: verification/wave80-f7-overlattice-code/independent-results.json
+    sha256: bf661706dd7ec46c6aad4a374df3272d98e9d47e97b522ef99a8b4da1067b8c8
+  - path: verification/wave80-f7-overlattice-code/audit.md
+    sha256: 7c41a2056627ade08693e62dd87378a3edca4368000ac38fed9b44cb13984602
+  - path: verification/wave80-f7-overlattice-code/comparison.json
+    sha256: 785629dc39ef000a1c37dae8be7918519a08a0f7bc40a86b5eb6ac1cba356aa9
+  - path: verification/wave80-f7-overlattice-code/test-results.txt
+    sha256: d76c247567971cd6467fb4cb390e15a5e6ec1bb3aacc3c50d19a6f68c48d1582
+verdict: VERIFIED
+corrections: []
+limitations: >-
+  Every result is conditional on the imported graph/lattice hypotheses. No
+  code, lattice, marked frame, or SRG is constructed. The complete dual
+  support search stops at weight five, and the support-six object is only a
+  local positive control. OA moment slack is not a full integral MacWilliams
+  enumerator. The orthogonal type excludes none of the three forced short
+  norms. Rank 28, Conway-99, and literature novelty remain UNKNOWN.

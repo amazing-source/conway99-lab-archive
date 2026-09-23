@@ -1,0 +1,33 @@
+{
+  "claim_label": "CANDIDATE",
+  "format": "wave53-branch15-x187-zero-opb-v1",
+  "limitations": [
+    "Formula export is not a satisfiability conclusion.",
+    "This is the complementary remainder after the verified x187=1 shard.",
+    "No complete endpoint case is closed before a checked terminal result."
+  ],
+  "opb": {
+    "constraints": 574616,
+    "gzip_bytes": 3854316,
+    "gzip_path": "attempts/wave53-proof-cover/branch-15-x187-zero.opb.gz",
+    "gzip_sha256": "5d026ebdd3f4e05c46a494ba357fbcaa7e994f7c518a89b8c7f5dc956ac8ee9c",
+    "raw_bytes": 29827720,
+    "raw_path": "attempts/wave53-proof-cover/branch-15-x187-zero.opb",
+    "raw_sha256": "b1681416ee2860c4b40ce854fb533062af8e1c7a9dc0c423ba0c5f0545677d08",
+    "variables": 289338
+  },
+  "role": "proof_a",
+  "scope": "refined endpoint branch 15 conjoined with x187=0",
+  "source": {
+    "constraints": 574615,
+    "gzip_sha256": "7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e",
+    "path": "attempts/wave37-proof-producing-endpoint/branch-15.opb.gz",
+    "raw_sha256": "4c1607f4aef7e20569592ccb4ac20dfe30c1e1d220a8fbc0a202554bed6d84e5"
+  },
+  "status": "CANDIDATE_FORMULA_ONLY",
+  "transformation": {
+    "assumption": "x187=0",
+    "constraint": "+1 ~x187 >= 1 ;",
+    "kind": "append_unit_constraint"
+  }
+}

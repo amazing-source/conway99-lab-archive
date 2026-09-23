@@ -1,0 +1,20 @@
+role: proof_b
+date_utc: 2026-07-27T15:35:21Z
+git_commit: e28f90464d00b98d37672b0b2b23dba15399a6f2
+claim_label: DERIVED
+scope: "Conditional on n3=4158 and edge-local type 3+3: complete no-symmetry exclusion of a rank-two Schur residual, the only remaining mechanism for local F7 rank 27."
+inputs:
+  - "verification/wave41-rank26-secondary/secondary_check.py | sha256 3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3"
+  - "verification/wave41-rank26-secondary/package-manifest.sha256 | sha256 88a0e47d6e7531067d0090735cba5b6b99078d5db99184f0389fa2630b0e885e"
+method: "Prove F=0 for all type-3+3 borders; enumerate every invertible principal 2x2 pivot, deranged pivot image pair, and pivot-mate configuration; derive exact unary and pairwise zero-Schur-complement constraints; jointly backtrack the border permutation and forced perfect matching."
+command:
+  - ".\\.venv\\Scripts\\python.exe -B attempts\\wave43-type33-rank2\\exact_check.py --verify attempts\\wave43-type33-rank2\\exact-results.json"
+  - ".\\.venv\\Scripts\\python.exe -B -m unittest discover -s attempts\\wave43-type33-rank2 -p \"test_*.py\" -v"
+outputs:
+  - "attempts/wave43-type33-rank2/exact-results.json | sha256 f9f023a7f5da0b51df1f825c83a2405de16a6e4d5245965332df4ace46e8bd8d"
+  - "attempts/wave43-type33-rank2/proof.md | sha256 29aa5f5f230fde1a3f785707ea04da11ab633f9d36751e2ebdd227767239773d"
+  - "attempts/wave43-type33-rank2/verifier-protocol.md | sha256 9ed4d19beae6967ca9b0453f093dbbf6bc8ea48a63ff4b74c1027055896a1a03"
+limitations:
+  - "Discovery cannot verify itself; a structurally independent implementation is required."
+  - "The theorem is conditional on the prism-free endpoint and concerns one edge-local model."
+  - "The result does not address residual rank three, construct a graph, exclude the endpoint, improve the unconditional n3 upper bound, or establish novelty."

@@ -1,0 +1,18 @@
+role: proof_b
+date_utc: 2026-07-28T01:15:00Z
+git_commit: cbb91d1fb7e0f55f9d62a124cd4e4bfbfe739fee
+claim_label: UNKNOWN
+scope: exact finite-prefix positivity of the Wave 86 formal scalar modular pair through degree 1000
+inputs:
+  - path: attempts/wave86-level7-exact/package-manifest.sha256
+    sha256: c6066fd10258578c15e511f3802217e4ff613ffe3d3b3b8f11e804f0316ac75d
+  - path: verification/wave86-level7-exact/package-manifest.sha256
+    sha256: cbfafc03db11ad7f103e532e0f5e0b2e85ff6b568ad327b947a2d394a1d1dfa2
+method: exact divisor-sieve reconstruction and integer convolution of all basis and Fricke-image product series
+command: .\.venv\Scripts\python.exe -B attempts\wave98-scalar-positivity-probe\probe.py --precision 1000 --verify attempts\wave98-scalar-positivity-probe\exact-results.json
+outputs:
+  - attempts/wave98-scalar-positivity-probe/exact-results.json
+limitations:
+  - finite positivity is not all-orders positivity
+  - the formal pair is not a lattice or graph
+  - discovery imports preclude independent-verifier status

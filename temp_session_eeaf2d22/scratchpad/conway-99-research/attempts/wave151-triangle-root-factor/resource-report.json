@@ -1,0 +1,27 @@
+{
+  "date_utc": "2026-07-28T12:17:47Z",
+  "host_free_memory_floor_required_percent": 15,
+  "observed_free_memory_percent_range": [
+    32.1,
+    41.2
+  ],
+  "exact_tests": 3,
+  "scouts": [
+    {
+      "method": "single-cross permutation local search plus exact repair",
+      "outcome": "EXACT_Q1_CONSTRUCTION"
+    },
+    {
+      "method": "fixed-Q1 exact Z3 Q2 model",
+      "seconds": 40.46,
+      "outcome": "UNSAT_WITHOUT_EXPORTED_PROOF",
+      "certificate_authority": false
+    },
+    {
+      "method": "unrestricted joint two-permutation local search",
+      "seconds": 240,
+      "best_exact_squared_residual": 108,
+      "certificate_authority": false
+    }
+  ]
+}

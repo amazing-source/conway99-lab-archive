@@ -1,0 +1,1129 @@
+{
+  "claim_label": "VERIFIED_PRECOMPARISON",
+  "controls": {
+    "matching_degree_hostile_rejected": true,
+    "matching_matrix_positive": true,
+    "rank_formula_hostile": {
+      "correct_e1_mechanisms": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "mutated_constant_24_mechanisms": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "type33_planted_rank_two": {
+      "accepted_by_rank_and_pivot_predicates": true,
+      "invertible_principal_minor": 6,
+      "rank": 2
+    },
+    "type33_planted_rank_two_CSP": {
+      "accepted": true,
+      "backtrack_nodes_until_leaf": 11,
+      "branches_until_leaf": 2,
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        0
+      ],
+      "residual_rank": 2
+    },
+    "type6_planted_zero_residual_CSP": {
+      "accepted": true,
+      "backtrack_nodes_until_leaf": 11,
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        0
+      ],
+      "pivot_assignment_branches_until_leaf": 2,
+      "pivot_mate_branches_until_leaf": 92
+    }
+  },
+  "even_types": {
+    "2+2+2": {
+      "bounded_rank": {
+        "count": 332,
+        "first_20": [
+          [
+            1,
+            0,
+            3,
+            2,
+            8,
+            11,
+            10,
+            9,
+            4,
+            7,
+            6,
+            5
+          ],
+          [
+            1,
+            0,
+            3,
+            2,
+            9,
+            10,
+            11,
+            8,
+            7,
+            4,
+            5,
+            6
+          ],
+          [
+            1,
+            0,
+            3,
+            2,
+            10,
+            9,
+            8,
+            11,
+            6,
+            5,
+            4,
+            7
+          ],
+          [
+            1,
+            0,
+            3,
+            2,
+            11,
+            8,
+            9,
+            10,
+            5,
+            6,
+            7,
+            4
+          ],
+          [
+            1,
+            2,
+            3,
+            0,
+            8,
+            11,
+            10,
+            9,
+            4,
+            7,
+            6,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            0,
+            9,
+            10,
+            11,
+            8,
+            7,
+            4,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            3,
+            0,
+            10,
+            9,
+            8,
+            11,
+            6,
+            5,
+            4,
+            7
+          ],
+          [
+            1,
+            2,
+            3,
+            0,
+            11,
+            8,
+            9,
+            10,
+            5,
+            6,
+            7,
+            4
+          ],
+          [
+            1,
+            3,
+            0,
+            2,
+            8,
+            11,
+            10,
+            9,
+            4,
+            7,
+            6,
+            5
+          ],
+          [
+            1,
+            3,
+            0,
+            2,
+            9,
+            10,
+            11,
+            8,
+            7,
+            4,
+            5,
+            6
+          ],
+          [
+            1,
+            3,
+            0,
+            2,
+            10,
+            9,
+            8,
+            11,
+            6,
+            5,
+            4,
+            7
+          ],
+          [
+            1,
+            3,
+            0,
+            2,
+            11,
+            8,
+            9,
+            10,
+            5,
+            6,
+            7,
+            4
+          ],
+          [
+            2,
+            0,
+            3,
+            1,
+            8,
+            11,
+            10,
+            9,
+            4,
+            7,
+            6,
+            5
+          ],
+          [
+            2,
+            0,
+            3,
+            1,
+            9,
+            10,
+            11,
+            8,
+            7,
+            4,
+            5,
+            6
+          ],
+          [
+            2,
+            0,
+            3,
+            1,
+            10,
+            9,
+            8,
+            11,
+            6,
+            5,
+            4,
+            7
+          ],
+          [
+            2,
+            0,
+            3,
+            1,
+            11,
+            8,
+            9,
+            10,
+            5,
+            6,
+            7,
+            4
+          ],
+          [
+            2,
+            3,
+            0,
+            1,
+            8,
+            11,
+            10,
+            9,
+            4,
+            7,
+            6,
+            5
+          ],
+          [
+            2,
+            3,
+            0,
+            1,
+            9,
+            10,
+            11,
+            8,
+            7,
+            4,
+            5,
+            6
+          ],
+          [
+            2,
+            3,
+            0,
+            1,
+            10,
+            9,
+            8,
+            11,
+            6,
+            5,
+            4,
+            7
+          ],
+          [
+            2,
+            3,
+            0,
+            1,
+            11,
+            8,
+            9,
+            10,
+            5,
+            6,
+            7,
+            4
+          ]
+        ],
+        "method": "Direct lexicographic derangement DFS with incremental canonical F-column row space and immediate rank pruning.",
+        "rank_histogram": {
+          "4": 332
+        },
+        "search": {
+          "backtrack_nodes": 133157,
+          "rank_prunes": 512567
+        },
+        "stream_sha256": "56fe8731cccd10813d6ed440b4029574d774906e9ec5a004ebd99e7bc27f4da9"
+      },
+      "even_parts": 3,
+      "zero_residual_scan": {
+        "matchings_per_permutation": 10395,
+        "pairs_tested": 3451140,
+        "permutations": 332,
+        "perturbed_matching_form_rejected": true,
+        "planted_matching_form_accepted": true,
+        "solution_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "zero_residual_pairs": 0
+      }
+    },
+    "4+2": {
+      "bounded_rank": {
+        "count": 1352,
+        "first_20": [
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            9,
+            8,
+            11,
+            10
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            9,
+            10,
+            11,
+            8
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            9,
+            11,
+            8,
+            10
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            10,
+            8,
+            11,
+            9
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            10,
+            11,
+            8,
+            9
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            10,
+            11,
+            9,
+            8
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            11,
+            8,
+            9,
+            10
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            11,
+            10,
+            8,
+            9
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            1,
+            4,
+            3,
+            11,
+            10,
+            9,
+            8
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            8,
+            4,
+            10,
+            1,
+            11,
+            3,
+            9
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            8,
+            9,
+            10,
+            1,
+            11,
+            3,
+            4
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            9,
+            4,
+            11,
+            10,
+            1,
+            8,
+            3
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            9,
+            8,
+            11,
+            10,
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            10,
+            4,
+            8,
+            3,
+            11,
+            1,
+            9
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            10,
+            11,
+            8,
+            3,
+            4,
+            1,
+            9
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            11,
+            4,
+            9,
+            10,
+            3,
+            8,
+            1
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            11,
+            10,
+            9,
+            4,
+            3,
+            8,
+            1
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            8,
+            1,
+            10,
+            3,
+            6,
+            11,
+            4,
+            9
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            8,
+            11,
+            4,
+            9,
+            10,
+            3,
+            6,
+            1
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            8,
+            11,
+            10,
+            9,
+            4,
+            3,
+            6,
+            1
+          ]
+        ],
+        "method": "Direct lexicographic derangement DFS with incremental canonical F-column row space and immediate rank pruning.",
+        "rank_histogram": {
+          "3": 1352
+        },
+        "search": {
+          "backtrack_nodes": 3233712,
+          "rank_prunes": 7855743
+        },
+        "stream_sha256": "57efd0da64f67fd8aa3bf4dfd96c8a3d8f609058c3a9e7c095200406addf55a9"
+      },
+      "even_parts": 2,
+      "zero_residual_scan": {
+        "matchings_per_permutation": 10395,
+        "pairs_tested": 14054040,
+        "permutations": 1352,
+        "perturbed_matching_form_rejected": true,
+        "planted_matching_form_accepted": true,
+        "solution_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "zero_residual_pairs": 0
+      }
+    },
+    "6": {
+      "bounded_rank": {
+        "count": 288,
+        "first_20": [
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            9,
+            4,
+            11,
+            10,
+            1,
+            8,
+            3
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            6,
+            9,
+            8,
+            11,
+            10,
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            10,
+            9,
+            4,
+            11,
+            6,
+            1,
+            8,
+            3
+          ],
+          [
+            2,
+            5,
+            0,
+            7,
+            10,
+            9,
+            8,
+            11,
+            6,
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            5,
+            0,
+            11,
+            6,
+            9,
+            4,
+            3,
+            10,
+            1,
+            8,
+            7
+          ],
+          [
+            2,
+            5,
+            0,
+            11,
+            6,
+            9,
+            8,
+            3,
+            10,
+            1,
+            4,
+            7
+          ],
+          [
+            2,
+            5,
+            0,
+            11,
+            10,
+            9,
+            4,
+            3,
+            6,
+            1,
+            8,
+            7
+          ],
+          [
+            2,
+            5,
+            0,
+            11,
+            10,
+            9,
+            8,
+            3,
+            6,
+            1,
+            4,
+            7
+          ],
+          [
+            2,
+            5,
+            4,
+            7,
+            6,
+            9,
+            0,
+            11,
+            10,
+            1,
+            8,
+            3
+          ],
+          [
+            2,
+            5,
+            4,
+            7,
+            6,
+            9,
+            8,
+            11,
+            10,
+            1,
+            0,
+            3
+          ],
+          [
+            2,
+            5,
+            4,
+            7,
+            10,
+            9,
+            0,
+            11,
+            6,
+            1,
+            8,
+            3
+          ],
+          [
+            2,
+            5,
+            4,
+            7,
+            10,
+            9,
+            8,
+            11,
+            6,
+            1,
+            0,
+            3
+          ],
+          [
+            2,
+            5,
+            4,
+            11,
+            6,
+            9,
+            0,
+            3,
+            10,
+            1,
+            8,
+            7
+          ],
+          [
+            2,
+            5,
+            4,
+            11,
+            6,
+            9,
+            8,
+            3,
+            10,
+            1,
+            0,
+            7
+          ],
+          [
+            2,
+            5,
+            4,
+            11,
+            10,
+            9,
+            0,
+            3,
+            6,
+            1,
+            8,
+            7
+          ],
+          [
+            2,
+            5,
+            4,
+            11,
+            10,
+            9,
+            8,
+            3,
+            6,
+            1,
+            0,
+            7
+          ],
+          [
+            2,
+            5,
+            8,
+            7,
+            6,
+            9,
+            0,
+            11,
+            10,
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            5,
+            8,
+            7,
+            6,
+            9,
+            4,
+            11,
+            10,
+            1,
+            0,
+            3
+          ],
+          [
+            2,
+            5,
+            8,
+            7,
+            10,
+            9,
+            0,
+            11,
+            6,
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            5,
+            8,
+            7,
+            10,
+            9,
+            4,
+            11,
+            6,
+            1,
+            0,
+            3
+          ]
+        ],
+        "method": "Direct lexicographic derangement DFS with incremental canonical F-column row space and immediate rank pruning.",
+        "rank_histogram": {
+          "1": 288
+        },
+        "search": {
+          "backtrack_nodes": 3114,
+          "rank_prunes": 6537
+        },
+        "stream_sha256": "a5d3416cdb79a2bf647e356f1a249f9411076b87f5b6f4d2d2c6d6669b3fb599"
+      },
+      "even_parts": 1,
+      "higher_F_CSP": {
+        "backtrack_nodes": 1058,
+        "complete_leaves": 0,
+        "pivot_assignment_branches": 1014,
+        "pivot_mate_branches": 92274,
+        "solutions": [],
+        "unary_viable_branches": 488
+      },
+      "minimum_scan": {
+        "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "capped_rank_control_results": [
+          0,
+          1,
+          2,
+          3,
+          3
+        ],
+        "matchings_per_permutation": 10395,
+        "minimum_F_derangements": 288,
+        "pairs_tested": 2993760,
+        "rank_at_most_two_pairs": 0,
+        "rank_exactly_two_pairs": 0,
+        "rank_four_nonprincipal_minor_hostile_rejected": true
+      }
+    }
+  },
+  "format": "wave43-rank28-independent-v1",
+  "inputs": {
+    "verification/wave41-rank26-secondary/secondary_check.py": "3dc38b519712916bc410775c2e8c9d7099bae53268834c92fd06505a9cddb7a3",
+    "verification/wave42-rank27/independent-results.json": "a207b1bcc267aaefdea704c1173e3ed01a81029507d3bc76aa295caccad03be4"
+  },
+  "perfect_matching_universe": {
+    "count": 10395,
+    "stream_sha256": "d0774c10297810eeadab5c0d0cf2812c615e88e40ad98ce4dc6ebb155bac6ea3"
+  },
+  "rank27_dichotomy": {
+    "1": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "2": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "3": [
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        0
+      ]
+    ]
+  },
+  "rank_formula": "rank(K39)=(25-2e)+2 rank(F)+rank(D), rank(F)>=e",
+  "resource_guard": {
+    "background_workers": 0,
+    "guard_passed": true,
+    "memory_floor_percent": 15.0,
+    "process_model": "single foreground Python process"
+  },
+  "scope": "Conditional on n3=4158: complete one-edge local rank-27 exclusion for endpoint types 222, 24, 6, and separately 33.",
+  "status_wall": {
+    "conditional_endpoint_rank_F7_floor": 28,
+    "conway_99_resolved": false,
+    "endpoint_excluded": false,
+    "even_endpoint_types_rank_at_least_28": true,
+    "graph_constructed": false,
+    "novelty": "UNKNOWN",
+    "strict_general_upper_bound_improved": false,
+    "type33_endpoint_rank_at_least_28": true
+  },
+  "type33": {
+    "backtrack_nodes": 122922,
+    "branches_visited": 666666,
+    "complete_leaves": 0,
+    "invertible_pivot_branches": 491220,
+    "nonempty_unary_branches": 60306,
+    "principal_pivot_coverage": "A symmetric rank-two matrix over an odd-characteristic field has a nonsingular principal 2x2 minor: in D=X^T H X, choose two independent columns of X, whose principal determinant is det(X_P)^2 det(H), hence nonzero.",
+    "solutions": []
+  }
+}

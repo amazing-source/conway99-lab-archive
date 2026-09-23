@@ -1,0 +1,38 @@
+role: verifier
+date_utc: 2026-07-28T03:32:30Z
+git_commit: e671eb056df60edcbf48da6b9fcfe635b2444479
+claim_label: VERIFIED_WITH_CORRECTIONS
+scope: >-
+  Conditional on a hypothetical srg(99,14,1,2), independently verify the
+  Wave 102 rooted-prism parity defect, binary triangle-incidence algebra,
+  small-P controls, and local null motifs.
+inputs:
+  - path: attempts/wave102-prism-incidence-code/package-manifest.sha256
+    sha256: d6f4a06214f2299e8618171d39287a714e4b14c541df39c27e5e90d9b0969d60
+  - path: verification/wave100-general-pair-moment/package-manifest.sha256
+    sha256: a4aaed31aa47c26c3d2894985ae4b9602ed0408abe442d1d407510c2c893f916
+  - path: verification/wave99-transition-pair-moment/package-manifest.sha256
+    sha256: 2d94086a0abef0612a445528319e1db4ef54c1fbb7fa361caef6025739aa654f
+method: >-
+  Freeze discovery provenance; independently derive the floor identity and
+  binary algebra; exhaust labelled two- and three-prism gluings under
+  necessary lambda/mu caps; check the rook and C4-square-K3 motifs; freeze
+  the independent result; then compare with discovery and rerun both suites.
+command: >-
+  python -B verification/wave102-prism-incidence-code/independent_verify.py
+  && python -B -m unittest discover -s
+  verification/wave102-prism-incidence-code -p "test_*.py" -v
+  && python -B attempts/wave102-prism-incidence-code/exact_check.py --verify
+  && python -B -m unittest discover -s
+  attempts/wave102-prism-incidence-code -p "test_*.py" -v
+outputs:
+  - path: verification/wave102-prism-incidence-code/independent-final-results.json
+    sha256: 8e8d0b16b3f1668c49865f2e2c06d73e0fae6c59e40399ba3a2a6aaf9fef36df
+  - path: verification/wave102-prism-incidence-code/verification-report.md
+    sha256: a2cdab57ea3311e67a17f18bee6d332bfe5f6f6f0564873537295c27463077a8
+limitations:
+  - The P=3 strengthening is conditional on the global total P being three.
+  - Listed triangle-check weights are necessary candidates, not existence claims.
+  - The rook and C4-square-K3 motifs are not certified to extend to 99 vertices.
+  - No strict n3 upper bound, graph exclusion, or construction follows.
+  - Literature novelty remains UNKNOWN.

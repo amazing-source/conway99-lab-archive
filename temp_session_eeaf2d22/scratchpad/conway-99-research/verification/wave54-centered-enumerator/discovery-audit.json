@@ -1,0 +1,139 @@
+{
+  "all_checks_pass": true,
+  "claim_label": "VERIFIED",
+  "comparison": {
+    "all_232_A_coefficients_equal": true,
+    "all_232_B_coefficients_equal": true,
+    "discovery_nonzero_B_count": 230,
+    "dual_sum": 926138713099787670959935798024513966701772293499227988263405269197039529170894882252068039219702299428401,
+    "expected_dual_sum_3^220": 926138713099787670959935798024513966701772293499227988263405269197039529170894882252068039219702299428401,
+    "independent_B_count": 232,
+    "selected_B": {
+      "0": 1,
+      "1": 0,
+      "12": 1185646137004494672,
+      "13": 38435816835634909096,
+      "14": 1155653940391429336216,
+      "198": 23621567634009555191306197510068277786336226653075524126460334545355828941754890110367789520402,
+      "2": 0,
+      "231": 19480428691810750580106083708137499612422891810373801997825474560,
+      "7": 8143116060
+    },
+    "zero_B_indices": [
+      1,
+      2
+    ]
+  },
+  "expected_hash_checks": {
+    "discovery_agent_report_sha256": true,
+    "discovery_exact_results_sha256": true,
+    "discovery_input_manifest_sha256": true,
+    "discovery_package_manifest_sha256": true
+  },
+  "hashes": {
+    "discovery_agent_report_sha256": "531bed27e505a9db18b97ab6062ce1e002a0cf3bc488b01086b89be1ad566e76",
+    "discovery_exact_results_sha256": "d7f8da8862c74da08e5d122e028f95125051d4e3032287f8e2e7f5490ded3cd8",
+    "discovery_input_manifest_sha256": "6d3983f7e67211eff34b08960cd11ef1d0d07514fc23a1dfea2e47f666d61932",
+    "discovery_package_manifest_sha256": "4e6fa530dee3c30be6423d9b08f87e6389a59f20d972a5df999ca97541a2db23"
+  },
+  "input_manifest": {
+    "all_entries_pass": true,
+    "entries": [
+      {
+        "actual_sha256": "1aab10ae2bf080d682a22d6c1e66a29f001ab2a889dc6b190b67fe0a0e0ad77d",
+        "expected_sha256": "1aab10ae2bf080d682a22d6c1e66a29f001ab2a889dc6b190b67fe0a0e0ad77d",
+        "pass": true,
+        "path": "attempts/wave39-simultaneous-bh/exact-results.json"
+      },
+      {
+        "actual_sha256": "9d22f5ae2ed1f1ec756975508030f2b6b440580d1215604d4f353256bae1483b",
+        "expected_sha256": "9d22f5ae2ed1f1ec756975508030f2b6b440580d1215604d4f353256bae1483b",
+        "pass": true,
+        "path": "verification/2026-07-27-wave39-integration-audit.md"
+      }
+    ],
+    "entry_count": 2,
+    "path": "attempts/wave54-centered-enumerator/input-freeze.sha256",
+    "sha256": "6d3983f7e67211eff34b08960cd11ef1d0d07514fc23a1dfea2e47f666d61932"
+  },
+  "package_manifest": {
+    "all_entries_pass": true,
+    "entries": [
+      {
+        "actual_sha256": "9e8f041ed812cb5288282cc6b187de804e96b688d56647fdae181c49fec71863",
+        "expected_sha256": "9e8f041ed812cb5288282cc6b187de804e96b688d56647fdae181c49fec71863",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/.gitattributes"
+      },
+      {
+        "actual_sha256": "d7f8da8862c74da08e5d122e028f95125051d4e3032287f8e2e7f5490ded3cd8",
+        "expected_sha256": "d7f8da8862c74da08e5d122e028f95125051d4e3032287f8e2e7f5490ded3cd8",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/exact-results.json"
+      },
+      {
+        "actual_sha256": "346dd434b235879e364dfa3ed4b62c9f9054abe5d05b7efe945084c4b71bf02d",
+        "expected_sha256": "346dd434b235879e364dfa3ed4b62c9f9054abe5d05b7efe945084c4b71bf02d",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/exact_check.py"
+      },
+      {
+        "actual_sha256": "4b678b537ebeaa623d586ea84d3a7cdebee3beba4a42fb714c25ce6b58d719a7",
+        "expected_sha256": "4b678b537ebeaa623d586ea84d3a7cdebee3beba4a42fb714c25ce6b58d719a7",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/failed-routes.md"
+      },
+      {
+        "actual_sha256": "6d3983f7e67211eff34b08960cd11ef1d0d07514fc23a1dfea2e47f666d61932",
+        "expected_sha256": "6d3983f7e67211eff34b08960cd11ef1d0d07514fc23a1dfea2e47f666d61932",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/input-freeze.sha256"
+      },
+      {
+        "actual_sha256": "0e4228296a8c61aac64a12c84a7ec8b3cb850a40a4c7eb1706cd423a24b279f5",
+        "expected_sha256": "0e4228296a8c61aac64a12c84a7ec8b3cb850a40a4c7eb1706cd423a24b279f5",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/protocol.md"
+      },
+      {
+        "actual_sha256": "ebc6e4781969ce7d2742498a6637a2da6e7e6f499ec924adf30d563741a83058",
+        "expected_sha256": "ebc6e4781969ce7d2742498a6637a2da6e7e6f499ec924adf30d563741a83058",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/README.md"
+      },
+      {
+        "actual_sha256": "8fe22531a18446beae7afbcd07416853294a37d9dc0cf1221d85845c0c07d722",
+        "expected_sha256": "8fe22531a18446beae7afbcd07416853294a37d9dc0cf1221d85845c0c07d722",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/run-report.yaml"
+      },
+      {
+        "actual_sha256": "975f11232d985a524bf40419bc9cfd9a7c7040b6ddd18c3ed1fd767195d0c50a",
+        "expected_sha256": "975f11232d985a524bf40419bc9cfd9a7c7040b6ddd18c3ed1fd767195d0c50a",
+        "pass": true,
+        "path": "attempts/wave54-centered-enumerator/test_exact_check.py"
+      },
+      {
+        "actual_sha256": "531bed27e505a9db18b97ab6062ce1e002a0cf3bc488b01086b89be1ad566e76",
+        "expected_sha256": "531bed27e505a9db18b97ab6062ce1e002a0cf3bc488b01086b89be1ad566e76",
+        "pass": true,
+        "path": "agents/2026-07-27-wave54-centered-enumerator.md"
+      }
+    ],
+    "entry_count": 10,
+    "path": "attempts/wave54-centered-enumerator/package-manifest.sha256",
+    "sha256": "4e6fa530dee3c30be6423d9b08f87e6389a59f20d972a5df999ca97541a2db23"
+  },
+  "role": "verifier",
+  "schema_version": 1,
+  "scope": "Wave54 discovery byte/value comparison only",
+  "status_boundary": {
+    "actual_linear_code": "NOT_CONSTRUCTED",
+    "complete_weight_enumerator": "NOT_CONSTRUCTED",
+    "conway_99": "UNKNOWN",
+    "endpoint": "UNKNOWN",
+    "formal_listed_constraint_feasibility": "VERIFIED",
+    "general_upper_bound_improved": false,
+    "novelty": "UNKNOWN"
+  }
+}

@@ -1,0 +1,33 @@
+role: proof_b
+date_utc: 2026-07-29T07:20:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Independent two-center nonedge theorem: shared five-slot bijection,
+  partial third-block maps,
+  forbidden matched reverse flags, combined directional capacity five,
+  and epsilon>=5 per both-oriented selected label.
+inputs:
+  - AGENTS.md
+  - verification/wave180-capacity3-companion/package-manifest.sha256
+  - verification/wave181-c4-conic-equality/package-manifest.sha256
+  - verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256
+  - verification/wave198-orientation-lift-verifier/package-manifest.sha256
+method: >-
+  Two-center star-block incidence, exact-three leaf types, canonical c4
+  relation addition, and the verified quadrilateral Gram. No graph,
+  flag-family, configuration, or isomorphism search.
+command: >-
+  python -B attempts/wave203-two-center-incidence-proof-b/exact_check.py
+  --verify
+  attempts/wave203-two-center-incidence-proof-b/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave203-two-center-incidence-proof-b/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave203-two-center-incidence-proof-b.md
+  - attempts/wave203-two-center-incidence-proof-b/
+limitations:
+  - No Wave202 proof-A material was opened.
+  - Proof-B derivation pending independent verification.
+  - Conditional on the prism-free rank-11 endpoint.
+  - No endpoint contradiction or external novelty claim.

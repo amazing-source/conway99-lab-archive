@@ -1,0 +1,114 @@
+role: verifier
+date_utc: 2026-07-27T20:07:23Z
+git_commit: a4a61658356253fb95cf68252c972a4f79df38fe
+claim_label: VERIFIED
+scope: >-
+  Independent exact verification of the normalized 33-case endpoint cover,
+  branch15 AND x187=0 byte transformation, and retained/fresh nonterminal
+  Exact, VeriPB, and CakePB statuses; no complete-case UNSAT claim.
+inputs:
+  - path: verification/n3-joint-cover/n3-joint-cover.json
+    sha256: 58c4994ff0eef9c5e1702840f791d1400c3da71b445e3c217e3704c5e70de172
+  - path: verification/n3-refined-cover/n3-refined-cover.json
+    sha256: fd9a14193365bf40d3d7bcbe53d56c6f1ffa8a93ca63d5b68506c3354f3b9f8a
+  - path: attempts/wave35-n3-upper-triple-overlap/root-endpoint-reduction.json
+    sha256: 7551c7b9d956705e41f9feb42d76d3bb5ab60dab0b46416fa9c0e58e5346a46a
+  - path: verification/wave37-rooted-branches/independent_check.py
+    sha256: 2039681ef17eafea7ace392682317d1baf250585d35474fe7dafa35a3cbca3f3
+  - path: attempts/wave38-solver-harvest/coverage-plan.json
+    sha256: 2de85c3f73d4b12a579b281c10171a47c12e26a323ecdf9617c1a842a81d8bf2
+  - path: verification/wave38-solver-harvest/independent-results.json
+    sha256: 2aa691682aa434d1166a98bf4af820652187ffe664911b8aa112104831fe8f6c
+  - path: attempts/wave37-proof-producing-endpoint/branch-15-formula.json
+    sha256: 3a6d4181445a2bdd7859faa0b493376891b4498eb0987989dcdcdc4b8ffe97d6
+  - path: attempts/wave37-proof-producing-endpoint/branch-15.opb.gz
+    sha256: 7683599142bfb51dc2d461d56fc1820bc58c658ed5167b17b5004473b589933e
+  - path: verification/wave39-proof-solver/exact-results.json
+    sha256: 3afc665de9d8d0e5a5a4dab6b600db1e5b726ef1dfba685eeba92c80da1df5e4
+  - path: attempts/wave53-proof-cover/coverage-certificate.json
+    sha256: 9bd38e8fb2911bf9af749ce1c0d5eb72ea1f7503571bbe7e28f8f2edc1ea2aa4
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero-formula.json
+    sha256: 4ab33e12ec1b7c7a16a97561f5b4efcb7a56fbe3f4e53091d13089bb1a0757ee
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero.opb.gz
+    sha256: 5d026ebdd3f4e05c46a494ba357fbcaa7e994f7c518a89b8c7f5dc956ac8ee9c
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero.raw.pbp
+    sha256: ca94b003b5506bbf7164223db415f5df677381a0a1ec99ccc816508b81d36861
+  - path: attempts/wave53-proof-cover/branch-15-x187-zero.kernel.pbp
+    sha256: 251cc6158e9afba4db8e49eb0dcf02ec564bcfaf03de16151b1bbab0c0d968b9
+  - path: attempts/wave53-proof-cover/bounded-run.json
+    sha256: 39a49bc0dc363d014b64d89541bab76a739988c06ffb75c09c3641abc90e492c
+  - path: attempts/wave53-proof-cover/.gitignore
+    sha256: 02a235151ab3fc270261ef947dd1a17ac0097ae3fd12306bc49402947284828f
+  - path: attempts/wave53-proof-cover/correction-ledger.md
+    sha256: fe1f66edf0283562d0eefe5735315db873b7d93da98c5fd49b786ba36aa211e2
+  - path: attempts/wave53-proof-cover/package-manifest.sha256
+    sha256: b6b5c0de2290e1ed68c42f0ca63328025c456655ebe6328896a97100d08a0c38
+  - path: attempts/wave53-proof-cover/run-report.yaml
+    sha256: 28a25723f87d0336a4a5b6c8bd3d3d2a6d5dce730462952d51c0562511c1cf91
+  - path: attempts/wave53-proof-cover/README.md
+    sha256: 40d9bce0fec4d208c9161033eba89e4b63acd86f68b437faa92adeb5904e92b5
+  - path: agents/2026-07-27-wave53-proof-cover.md
+    sha256: 275f865b51563a05b37363546192887230dfe5540b0d4db566827e602b282084
+method: >-
+  Enumerate the full C2 wreath S7 local-scaffold automorphism group and
+  exhaustively filter the exact N3-unit and oriented stabilizers; independently
+  enumerate all matching and refined-state orbits; reconstruct SAT variable
+  numbering, endpoint units, parent units, refinement literals, and weights;
+  compare only after reconstruction; decompress and compare the source and
+  shard OPBs byte-for-byte; audit hashes/manifests/statuses; then run fresh
+  pinned Exact, strict VeriPB raw/elaboration/kernel, and CakePB kernel checks
+  with a 15% free-physical-memory guard.
+command: |-
+  .\.venv\Scripts\python.exe -B verification\wave53-proof-cover\independent_check.py --run-proof-tools --transcript-dir verification\wave53-proof-cover --output verification\wave53-proof-cover\independent-results.json
+  .\.venv\Scripts\python.exe -B -m unittest discover -s verification\wave53-proof-cover -p "test_*.py" -v
+outputs:
+  - path: verification/wave53-proof-cover/protocol.md
+    sha256: 28abbd5c6d98b110783f2d6475d6dd5c5e7f1c27e8ef530ae360fae93ae59a18
+  - path: verification/wave53-proof-cover/independent_check.py
+    sha256: 037198f9eee81e999a657b64f24005301826f33db756eca93200e3fcede6f4e5
+  - path: verification/wave53-proof-cover/independent-results.json
+    sha256: 788bf1e775e069b56c791dbd964bb5ec2be8a9427943a9621c5ff7e422a1ae06
+  - path: verification/wave53-proof-cover/test_independent_check.py
+    sha256: 884cd49b78f059d716914cca000ee35e1976b10525f36e7be3d6eae03f82d682
+  - path: verification/wave53-proof-cover/audit.md
+    sha256: 1bce086cdcb30101932166b461796b73582de2f37309c5f92fdee640b8303acd
+  - path: verification/wave53-proof-cover/fresh-exact.txt
+    sha256: dd00a7fe7f10b016907240045b5477c8be92af3a7269ab4155fa916e075ab55c
+  - path: verification/wave53-proof-cover/fresh-veripb-raw.txt
+    sha256: ce3cd35962b3d04e8248f6ee8666fa2df04cc2feea58d83866adc3f8d525d406
+  - path: verification/wave53-proof-cover/fresh-veripb-elaborate.txt
+    sha256: ce3cd35962b3d04e8248f6ee8666fa2df04cc2feea58d83866adc3f8d525d406
+  - path: verification/wave53-proof-cover/fresh-veripb-kernel.txt
+    sha256: ce3cd35962b3d04e8248f6ee8666fa2df04cc2feea58d83866adc3f8d525d406
+  - path: verification/wave53-proof-cover/fresh-cakepb-kernel.txt
+    sha256: ca6e35d1436e97572b30dd07b14f897e3e4c0fe3d296b7534554e7fc72356927
+limitations:
+  - "The exact cover is conditional on the frozen normalized n3=4158 endpoint."
+  - "No complete case has a checked terminal proof; UNSAT coverage is 0/33."
+  - "VERIFIED NO CONCLUSION contributes zero mathematical case coverage."
+  - "Historical discovery RAM readings are self-reported and lack a separate raw monitor artifact."
+  - "No endpoint exclusion, graph, upper-bound improvement, or novelty claim follows."
+tests:
+  unit_tests: "8 passed"
+  full_scaffold_group_order: 645120
+  parent_stabilizer_order: 768
+  oriented_stabilizer_order: 384
+  normalized_states: 10395
+  refined_orbits: 78
+  endpoint_compatible_cases: 33
+  endpoint_compatible_weight: 6644
+  endpoint_incompatible_orbits: 45
+  endpoint_incompatible_weight: 3751
+  exact_fresh: UNKNOWN
+  veripb_raw_fresh: VERIFIED_NO_CONCLUSION
+  veripb_elaboration_fresh: VERIFIED_NO_CONCLUSION
+  veripb_kernel_fresh: VERIFIED_NO_CONCLUSION
+  cakepb_kernel_fresh: VERIFIED_NO_CONCLUSION
+  minimum_observed_free_memory_percent: 45.61
+  discovery_corrections_resolved: 4
+  discovery_corrections_remaining: 0
+status:
+  conditional_case_coverage: "33/33"
+  complete_case_unsat_coverage: "0/33"
+  branch_15: UNKNOWN
+  endpoint_n3_4158: UNKNOWN

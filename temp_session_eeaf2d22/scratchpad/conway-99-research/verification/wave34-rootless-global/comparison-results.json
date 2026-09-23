@@ -1,0 +1,370 @@
+{
+  "R3_triangle_gram": {
+    "conclusion": "for an R3 edge X,Y, any R3 completion is -(X+Y), hence at most one distinct row",
+    "gram": [
+      [
+        4,
+        -2,
+        -2
+      ],
+      [
+        -2,
+        4,
+        -2
+      ],
+      [
+        -2,
+        -2,
+        4
+      ]
+    ],
+    "kernel": [
+      1,
+      1,
+      1
+    ],
+    "kernel_check": [
+      0,
+      0,
+      0
+    ],
+    "marked_row_injectivity": {
+      "diagonal_entry": 4,
+      "distinct_rows_cannot_equal": true,
+      "maximum_disjoint_off_diagonal_entry": 1,
+      "maximum_one_vertex_overlap_entry": 0,
+      "two_vertex_overlap": "impossible for distinct triangles when lambda=1"
+    }
+  },
+  "claim_label": "VERIFIED_SCOPED_WITH_NONBLOCKING_PROVENANCE_DEFECT",
+  "comparison": {
+    "agreements": {
+      "candidate_control_json_counts": true,
+      "candidate_exact_summary_counts": true,
+      "completion_backtracking": true,
+      "completion_candidate_counts": true,
+      "completion_certificate_witness": true,
+      "control_base_completion_mu": true,
+      "control_core_counts": true,
+      "control_core_lambda": true,
+      "control_current_caps": true,
+      "control_extended_counts": true,
+      "control_fixed_multiplicities": true,
+      "control_no_central_motif": true,
+      "endpoint_R3_edges": true,
+      "endpoint_sum_q": true,
+      "factor_scan_counts": true,
+      "lemma1_fixed_point_model": true,
+      "lemma2_relation_degrees_q2": true,
+      "lemma3_motif_normalization": true,
+      "lemma4_R3_edge_completion_unique": true,
+      "lemma4_R3_triangle_cap": true,
+      "lemma4_central_triple_overlap_cap": true
+    },
+    "all_scoped_mathematical_and_control_claims_reproduce": true,
+    "candidate_status_wall_preserved": {
+      "Conway_99": "UNKNOWN",
+      "complete_rootless_endpoint": "NOT_CONSTRUCTED",
+      "n3_708": "UNKNOWN",
+      "other_complete_contradiction": "NOT_OBTAINED",
+      "rootless_integrally_indecomposable_endpoint": "UNKNOWN",
+      "trace_positive": "UNKNOWN"
+    },
+    "local_control": {
+      "R2_neighbours_of_T": 6,
+      "R3_neighbours_of_T": 10,
+      "as_full_45_vertex_graph": {
+        "degree_histogram": {
+          "14": 3,
+          "4": 18,
+          "5": 5,
+          "6": 14,
+          "7": 5
+        },
+        "is_target_graph": false,
+        "lambda_failure_common_count_histogram": {
+          "0": 24
+        },
+        "lambda_failures": 24,
+        "mu_failure_common_count_histogram": {
+          "0": 368,
+          "1": 345
+        },
+        "mu_failures": 713,
+        "vertices_failing_degree_14": 42
+      },
+      "base_completion_mu_failures": [],
+      "central_motif_closures": [],
+      "certificate_neighbourhoods_match_search_witness": true,
+      "certificate_unset": [
+        "edges among completion vertices",
+        "remaining 54 vertices",
+        "remaining degrees and common-neighbour witnesses",
+        "global 231-triangle consistency",
+        "projector and Schur compatibility"
+      ],
+      "completion_pair_common_core_histogram": {
+        "0": 1,
+        "1": 5,
+        "2": 9
+      },
+      "completion_pairs_forced_nonadjacent_now": 9,
+      "completion_pairs_still_edge_undecided": 6,
+      "completion_search": {
+        "backtracking_nodes": 31,
+        "candidate_counts": {
+          "x0_0|x1_0": 2345,
+          "x0_0|x2_1": 2353,
+          "x0_1|x1_1": 2346,
+          "x0_1|x2_0": 2346,
+          "x1_0|x2_0": 2346,
+          "x1_1|x2_1": 2353
+        },
+        "chosen": {
+          "x0_0|x1_0": [
+            "x0_0",
+            "x0_1",
+            "x1_0",
+            "x1_3",
+            "x2_2",
+            "x2_5"
+          ],
+          "x0_0|x2_1": [
+            "x0_0",
+            "x0_2",
+            "x1_3",
+            "x1_4",
+            "x2_1",
+            "x2_7"
+          ],
+          "x0_1|x1_1": [
+            "x0_1",
+            "x0_2",
+            "x1_1",
+            "x1_3",
+            "x2_4",
+            "x2_6"
+          ],
+          "x0_1|x2_0": [
+            "x0_1",
+            "x0_3",
+            "x1_2",
+            "x1_4",
+            "x2_0",
+            "x2_1"
+          ],
+          "x1_0|x2_0": [
+            "x0_2",
+            "x0_3",
+            "x1_0",
+            "x1_1",
+            "x2_0",
+            "x2_5"
+          ],
+          "x1_1|x2_1": [
+            "x0_4",
+            "x0_5",
+            "x1_1",
+            "x1_2",
+            "x2_1",
+            "x2_6"
+          ]
+        },
+        "found": true
+      },
+      "completion_to_core_edge_lambda_histogram": {
+        "0": 24,
+        "1": 12
+      },
+      "completion_to_core_nonedge_common_histogram": {
+        "0": 95,
+        "1": 74,
+        "2": 29
+      },
+      "core_edge_count": 93,
+      "core_lambda_failures_after_completion": [],
+      "core_vertex_count": 39,
+      "current_upper_cap_findings": [],
+      "extended_present_edge_count": 129,
+      "extended_vertex_count": 45,
+      "factor_indices": [
+        0,
+        1,
+        2
+      ],
+      "fixed_labels": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "fixed_pair_multiplicities": {
+        "0": 33,
+        "1": 12,
+        "2": 0,
+        "3": 0
+      },
+      "q_T": 2,
+      "restricted_factor_scan": {
+        "cap_and_no_double_overlap_feasible": 1000,
+        "cap_feasible": 1300,
+        "triples_checked": 1331
+      },
+      "sigma": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "provenance_discrepancy": {
+      "candidate_claimed_hash": "8b7b27fd67f12bb82c60eb27c72a62c913d06f2d86f3eb626dcddd6ac75afeb",
+      "candidate_report_repeats_claimed_hash": true,
+      "hashes_match": false,
+      "path": "verification/wave33-rootless-motif/comparison-results.json",
+      "severity": "NONBLOCKING_FOR_RECONSTRUCTED_MATHEMATICS_BUT_BLOCKING_FOR_LITERAL_INPUT_PROVENANCE",
+      "stage1_frozen_hash": "8b7b27fd67f12bb82cb6eebf645d0c46324d7227e51bdeb0093fbcdf9d753872"
+    },
+    "scope_qualifiers": {
+      "completion_pair_common_core_histogram": {
+        "0": 1,
+        "1": 5,
+        "2": 9
+      },
+      "control_extendibility": "NOT_ESTABLISHED",
+      "factor_scan_domain": "11^3 ordered triples from one canonical K12 one-factorization only",
+      "full_graph_hostile_check": {
+        "degree_histogram": {
+          "14": 3,
+          "4": 18,
+          "5": 5,
+          "6": 14,
+          "7": 5
+        },
+        "is_target_graph": false,
+        "lambda_failure_common_count_histogram": {
+          "0": 24
+        },
+        "lambda_failures": 24,
+        "mu_failure_common_count_histogram": {
+          "0": 368,
+          "1": 345
+        },
+        "mu_failures": 713,
+        "vertices_failing_degree_14": 42
+      },
+      "new_completion_to_core_edges_with_exact_current_lambda": 12,
+      "new_completion_to_core_edges_with_no_current_lambda_witness": 24,
+      "nine_completion_pairs_forced_nonadjacent": 9,
+      "qualifier_status": "CANDIDATE_PARTIAL_CONTROL_ONLY",
+      "six_completion_pairs_remain_edge_undecided": 6
+    },
+    "stage1_stronger_results_not_contradicted": {
+      "R0_wedge_lower": 6860,
+      "R3_four_cycle_lower": 3041,
+      "all_relation_codegree_caps": {
+        "Gamma": 0,
+        "R0": 5,
+        "R1": 1,
+        "R2": 1,
+        "R3": 1
+      },
+      "q_not_equal_1": "DERIVED"
+    }
+  },
+  "endpoint_arithmetic": {
+    "R3_degree_sum": 2300,
+    "R3_edge_count": 1150,
+    "R3_triangle_cap": 383,
+    "central_triple_overlap_cap": 1149,
+    "relation_degree_formula": {
+      "R0": "20+q",
+      "R1": "180-3q",
+      "R2": "3q",
+      "R3": "12-q"
+    },
+    "sum_q": 472
+  },
+  "independence": {
+    "candidate_checker_executed_by_verifier_code": false,
+    "candidate_checker_imported_by_verifier_code": false,
+    "git_used": false,
+    "stage1_frozen_before_candidate_inspection": true
+  },
+  "provenance": {
+    "all_released_bytes_match": true,
+    "candidate_artifact_manifest_entries": 5,
+    "candidate_artifact_manifest_matches": true,
+    "candidate_input_freeze_matches": true,
+    "precomparison_all_match": true,
+    "precomparison_entries": 7,
+    "precomparison_manifest_sha256": "27c13fb233af677c1619d571bf73820cddd4451172fdd749ace1c9f65f8f3c8d",
+    "precomparison_mismatches": {},
+    "released_entry_count": 8,
+    "released_hashes": {
+      "agents/2026-07-24-wave34-rootless-global.md": "71f5b49622629a65ffafea2636c552bccaecaadc7584326c70d8819f54e997ed",
+      "attempts/wave34-rootless-global/artifact-manifest.sha256": "bda35ed81dcca9918cff3c544956039b8949a61bfa8a232e4e2d40edcd8d5af2",
+      "attempts/wave34-rootless-global/check_local_model.py": "33577962a44241cf3fd9d5a6b5948c35ddd757aed5975bd755c384ded00deed6",
+      "attempts/wave34-rootless-global/exact-results.json": "fd4ff04bd13128a26d9a5ecb4bd1c2a8832d29d0056a592d4d90074747a0c331",
+      "attempts/wave34-rootless-global/local-control.json": "a25d19e3eda3ec77b55065b7f39a68345fa911b80eafbff0e4c37b1857e10301",
+      "attempts/wave34-rootless-global/test_local_model.py": "21d4dc17c19098ee826202af4688611dbbf5982d0ab9216bb87da6839452a378",
+      "verification/wave34-rootless-global/candidate-release.md": "c40c82c96818c1bebdb5de0b073a3b4496d4b238270603bfbd12421c8d6d1041",
+      "verification/wave34-rootless-global/precomparison/artifact-manifest.sha256": "27c13fb233af677c1619d571bf73820cddd4451172fdd749ace1c9f65f8f3c8d"
+    },
+    "released_mismatches": {}
+  },
+  "role": "clean_room_adversarial_verifier_candidate_comparison",
+  "schema_version": 1,
+  "scope": "Static and independently reconstructed comparison of the frozen Wave 34 rootless actual-incidence candidate",
+  "single_motif_trace": 2,
+  "static_candidate_audit": {
+    "candidate_checker_imported_or_executed_by_verifier_module": false,
+    "candidate_tests_import_candidate_checker": true,
+    "checker_imports": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "itertools",
+      "json",
+      "platform",
+      "sys"
+    ],
+    "random_module_used": false,
+    "scope_markers_present": true,
+    "test_imports": [
+      "__future__",
+      "check_local_model",
+      "itertools",
+      "json",
+      "pathlib",
+      "unittest"
+    ]
+  },
+  "status": {
+    "45_vertex_control_arithmetic": "PASS_CANDIDATE_PARTIAL_ONLY",
+    "Conway_99": "UNKNOWN",
+    "actual_motif_forcing": "UNKNOWN",
+    "candidate_input_provenance": "FAIL_ONE_HASH",
+    "candidate_lemmas_1_to_4": "PASS_SCOPED",
+    "endpoint_counts": "PASS",
+    "mixed_trace_normalization": "PASS",
+    "n3_708": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "rootless_endpoint": "UNKNOWN"
+  },
+  "verdict": "PASS_SCOPED_WITH_NONBLOCKING_PROVENANCE_AND_SCOPE_QUALIFIERS"
+}

@@ -1,0 +1,29 @@
+role: verifier
+date_utc: 2026-07-28T15:56:42Z
+git_commit: 43c97357471609ea133b1e35a555c54aa6c7517b
+claim_label: VERIFIED
+scope: >-
+  Independently audit completion order and multiplicity, exact failure
+  thresholds, mandatory versus conditional failures, integral mismatch
+  bookkeeping, and the scope of the five-failure local relaxation model.
+inputs:
+  - path: attempts/wave169-failure-hypergraph/package-manifest.sha256
+    sha256: 8dac948290c19a1a80e814e043abece3716afd080505b5c6ab43edcbe42d3fc7
+method: >-
+  Two clean-room paper audits using exact common-neighbor arithmetic,
+  divisibility, one-hot identities, root-neighborhood degree saturation,
+  cross-shell reconstruction, and hostile global-scope checks.
+command: none; independent paper verification
+outputs:
+  - path: verification/wave169-failure-hypergraph/README.md
+    sha256: 9e4554a752264301391d813a7c18795a6e5ae1917b882d9be704124409492ec2
+  - path: verification/wave169-failure-hypergraph/verification-report.md
+    sha256: feb55713566a1d92b8d0619ffd283d03ce71fe2f9ffd4f982d5c75c609603c0e
+  - path: verification/wave169-failure-hypergraph/protocol.md
+    sha256: e20ccfd9931515b246f357cf7bd019b2e7db461dd826a6339979d370c4333873
+limitations:
+  - The five-failure gadget is not a full SRG or extendability proof.
+  - Only insufficiency of the current pairwise/root-local clauses is verified.
+  - No failure-hypergraph, lifted SOS, or global conic certificate is present.
+  - No strict n3 bound or endpoint exclusion follows.
+  - Literature novelty and Conway-99 remain UNKNOWN.

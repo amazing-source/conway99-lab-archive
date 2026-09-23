@@ -1,0 +1,72 @@
+{
+  "claim_label": "VERIFIED",
+  "cutoff_28": {
+    "candidate_sha256": "05ad8cf461cc7c79f85300d45492f1f30e3c1030a3c1943a9da3984d5add39a3",
+    "classification": "VERIFIED_EXACT_RATIONAL_FEASIBLE",
+    "cutoff": 28,
+    "equalities_checked": 454,
+    "failed_equalities": [],
+    "failed_inequalities": [],
+    "inequalities_checked": 1686,
+    "solution_sha256": "3115657abca466038086de7d4c98eb262156d8655e73a66e3a5cf9266ac209e8",
+    "tight_inequalities": 506,
+    "variables": 239
+  },
+  "format": "wave130-independent-no-cache-verification-v1",
+  "implementation_separation": {
+    "candidate_generator_reused": false,
+    "column_source": "independent theta/Eisenstein/Fricke reconstruction",
+    "discovery_module_imported": false,
+    "discovery_verifier_imported": false,
+    "serialized_column_cache_read": false
+  },
+  "memory": {
+    "floor_percent": 15,
+    "floor_respected": true,
+    "initial_floor_check_passed": true
+  },
+  "module": {
+    "A_q0": [
+      "1",
+      "-2",
+      "1"
+    ],
+    "B_q0": [
+      "1",
+      "10",
+      "1"
+    ],
+    "dimensions_by_c": [
+      15,
+      17,
+      17,
+      19,
+      21,
+      21,
+      23,
+      25,
+      25,
+      27,
+      29
+    ],
+    "total_dimension": 239
+  },
+  "preinspection": {
+    "entries_checked": 34,
+    "manifest_sha256": "8b1da27e3acaa059934704a85aaa380e101e1db330925ced6e048330d318e3ae"
+  },
+  "reconstructed_columns": {
+    "count": 239,
+    "sha256": "3b2b4b2bff82f42e84db73c0ac9cce5bad30104030f3e9f45642e28da99df65a"
+  },
+  "scope": "Exact rational feasibility of the cutoff-28 level-7 index-10/index-70 Jacobi necessary-condition relaxation only.",
+  "status_wall": {
+    "Conway_99": "UNKNOWN",
+    "finite_relaxation": "VERIFIED_EXACT_RATIONAL_FEASIBLE",
+    "graph_constructed": false,
+    "lattice_constructed": false,
+    "novelty": "UNKNOWN",
+    "rank28_excluded": false,
+    "rank28_realized": false
+  }
+}

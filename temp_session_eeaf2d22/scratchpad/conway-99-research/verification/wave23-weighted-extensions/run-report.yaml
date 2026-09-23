@@ -1,0 +1,62 @@
+role: verifier
+date_utc: "2026-07-23T20:21:56Z"
+git_commit: "c82f49be256f79fed45b7a4f1458d751d2ec0d9f"
+claim_label: VERIFIED
+scope: >-
+  Exact feasibility of the encoded orbit-refined one-vertex extension
+  relaxation through order seven at n3=705 for every h11=4z with integer
+  z in 353,...,705.
+inputs:
+  - path: verification/wave23-weighted-extensions/preinspection-freeze.sha256
+    sha256: b100e042a7e1ebba796410b87e592a60dcd26ba85463ff9f14a3634e6afaa427
+  - path: attempts/wave23-weighted-extensions/affine-witness.json
+    sha256: 16ade54a77589b91478b3426dc3dbe57ebb2a5e0f7d209602ca282e42ac3ec77
+  - path: attempts/wave21-six-vertex-lp/exact-results.json
+    sha256: 5e7b6f526985fb719754145944579aacb0e8f38e9e14a54d2075552a3756ff2b
+  - path: attempts/wave22-full-seven-deck/exact-results.json
+    sha256: ca5d9d116f6a9d6e355600429652e2bf4474b73dcf281bbcb564420d820acbd2
+method: >-
+  Freeze before inspection; independently enumerate every labeled locally
+  admissible graph through order seven; partition full permutation orbits;
+  rebuild all deletion, vertex-orbit, and pair-orbit transition rows; verify
+  isomorphism independence and coefficient semantics; reconstruct the
+  Wave-21 source-six vector; replay all exact affine rows; certify ranks over
+  finite fields; compare Hamiltonian formulas post hoc; run hostile tests.
+command: >-
+  python verification/wave23-weighted-extensions/independent_verifier.py
+  --output verification/wave23-weighted-extensions/independent-results.json
+test_command: >-
+  python -m unittest discover -s
+  verification/wave23-weighted-extensions -p
+  test_independent_verifier.py -v
+outputs:
+  - path: verification/wave23-weighted-extensions/independent_verifier.py
+    sha256: 1ea9e69646676016afb9b00494f60724d1e7f35fc8654994398b7c8008ad4a51
+  - path: verification/wave23-weighted-extensions/test_independent_verifier.py
+    sha256: 95bc1ec8d1520b385d3d06ec209dd0a4de6ccb7156c15516a57322ebaec366aa
+  - path: verification/wave23-weighted-extensions/independent-results.json
+    sha256: fecd813402ddb3aabd2434833f020edaf11e82c4392fc6ecc7d1f300b7d97eb4
+  - path: verification/wave23-weighted-extensions/postinspection-candidate.sha256
+    sha256: 0daf8c26e1ed1875e5f0c9da01961ce0b206a80ba590bb07e5f023de7eae176b
+limitations:
+  - This verifies necessary aggregate subgraph-count equations only.
+  - Overlap consistency between subsets is not encoded.
+  - No 99-vertex adjacency matrix is constructed.
+  - The Hamiltonian source-panel alignment remains a cited human transcription.
+result:
+  independent_census_orders_1_through_7: PASS
+  labeled_order_seven: 394020
+  unlabeled_order_seven: 208
+  order_seven_matrix_shape: [712, 208]
+  row_breakdown: [62, 207, 180, 263]
+  five_to_six_rows: 171
+  five_to_six_rank_mod_7: 61
+  five_to_six_rank_with_n3_mod_7: 62
+  order_seven_rank_mod_5: 207
+  order_seven_rank_with_H11_mod_5: 208
+  all_allowed_z_values_checked: 353
+  hostile_tests: "20/20 PASS"
+  deterministic_result_sha256: fecd813402ddb3aabd2434833f020edaf11e82c4392fc6ecc7d1f300b7d97eb4
+  graph_construction: false
+  bound_improvement: null
+  target_status: UNKNOWN

@@ -1,0 +1,199 @@
+{
+  "claim_labels": {
+    "distinguished_pair_compositions": "DERIVED",
+    "full_genus_two_MacWilliams_feasibility": "UNKNOWN",
+    "high_weight_image_cut": "DERIVED",
+    "integral_low_degree_split_feasibility": "UNKNOWN",
+    "rational_low_degree_split_feasibility": "CANDIDATE_EXACT"
+  },
+  "distinguished_identities": {
+    "dot_q_u_q_v": "(I+A)_uv",
+    "dot_r_u_q_v": "0",
+    "dot_r_u_r_v": "A_uv",
+    "dual_shell": {
+      "first_moment": "sum_j j*Q[w,j]=15*w*B_w",
+      "odd_count": "sum_odd_j Q[w,j]=w*B_w",
+      "pair_count": "sum_j Q[w,j]=99*B_w"
+    },
+    "image_shell": {
+      "first_moment": "sum_j j*P[w,j]=14*w*A_w",
+      "odd_count": "sum_odd_j P[w,j]=w*A_w",
+      "pair_count": "sum_j P[w,j]=99*A_w"
+    },
+    "mixed_shells": {
+      "all_intersections_even": true,
+      "dual_vs_neighborhood_first_moment": "14*w*B_w",
+      "image_vs_closed_first_moment": "15*w*A_w"
+    },
+    "q_u": "row_u(I+A), weight 15, in ker(A)",
+    "r_u": "row_u(A), weight 14, in im(A)"
+  },
+  "format": "wave132-distinguished-biweight-v1",
+  "full_genus_two_boundary": {
+    "C_times_C_even_weight_states": 42925,
+    "GL2_orbits_on_C_times_C_states": 7803,
+    "dense_partial_Hadamard_transform_materialized": false,
+    "missing_constraints": [
+      "second and higher intersection moments in each shell",
+      "coupling of different distinguished roots",
+      "full partial-Hadamard transform from CxC to CxD and DxD",
+      "nonnegative genus-two coefficients in every transformed composition"
+    ],
+    "raw_four_composition_states": 171700
+  },
+  "high_weight_cut": {
+    "consequence": "15*w<=1386",
+    "even_image_weight_upper": 92,
+    "forced_zero_weights": [
+      94,
+      96,
+      98
+    ],
+    "inequality": "14*w <= 13*w+14*(99-w)=1386-w"
+  },
+  "integral_scout": {
+    "claim_label": "UNKNOWN",
+    "format": "wave132-integral-split-scout-v1",
+    "hard_wall_seconds": 15,
+    "limitations": [
+      "UNKNOWN or timeout is not evidence of infeasibility.",
+      "The full genus-two partial-Hadamard transform is not encoded.",
+      "An integral split enumerator would not construct a code."
+    ],
+    "negative_inference_allowed": false,
+    "result": {
+      "elapsed_seconds": 15.016,
+      "status": "UNKNOWN_HARD_TIMEOUT"
+    },
+    "scope": "Integral ordinary MacWilliams coefficients plus all four distinguished-row parity/first-moment split systems and the exact forced pair-composition lower rows.",
+    "solver_timeout_ms": 10000
+  },
+  "limitations": [
+    "The witness is a rational low-degree split enumerator, not a full genus-two enumerator.",
+    "The bounded integral scout supplies no infeasibility evidence.",
+    "Aggregate distinguished pair tables do not realize 99 labelled codewords.",
+    "No binary code or graph is constructed.",
+    "Discovery cannot verify itself."
+  ],
+  "pair_table_audit": {
+    "all_equal_99_squared": true,
+    "compositions_n00_n01_n10_n11": {
+      "dual_diagonal_w15_t15": [
+        84,
+        0,
+        0,
+        15
+      ],
+      "dual_ordered_edge_w15_t3": [
+        72,
+        12,
+        12,
+        3
+      ],
+      "dual_ordered_nonedge_w15_t2": [
+        71,
+        13,
+        13,
+        2
+      ],
+      "image_diagonal_w14_t14": [
+        85,
+        0,
+        0,
+        14
+      ],
+      "image_ordered_edge_w14_t1": [
+        72,
+        13,
+        13,
+        1
+      ],
+      "image_ordered_nonedge_w14_t2": [
+        73,
+        12,
+        12,
+        2
+      ],
+      "mixed_diagonal_w14_w15_t14": [
+        84,
+        1,
+        0,
+        14
+      ],
+      "mixed_offdiagonal_w14_w15_t2": [
+        72,
+        13,
+        12,
+        2
+      ]
+    },
+    "dual_ordered_pair_total": 9801,
+    "image_ordered_pair_total": 9801,
+    "mixed_ordered_pair_total": 9801,
+    "ordered_edges": 1386,
+    "ordered_nonedges": 8316
+  },
+  "rational_witness": {
+    "binary_code_realized": false,
+    "formal_integral_split_enumerator": false,
+    "ordinary_audit": {
+      "all_200_MacWilliams_rows_pass": true,
+      "all_coefficients_nonnegative": true,
+      "dual_minimum_nonzero_weight": 15,
+      "dual_nonintegral_coefficient_count": 36,
+      "dual_size": "35184372088832",
+      "forced_zero_image_weights": [
+        94,
+        96,
+        98
+      ],
+      "image_minimum_nonzero_weight": 14,
+      "image_nonintegral_coefficient_count": 32,
+      "image_size": "18014398509481984"
+    },
+    "split_audits": {
+      "dual_vs_closed": {
+        "all_row_sums_first_moments_and_parities_pass": true,
+        "nonintegral_entry_count": 72,
+        "nonzero_weight_rows": 44
+      },
+      "dual_vs_neighborhood": {
+        "all_row_sums_first_moments_and_parities_pass": true,
+        "nonintegral_entry_count": 72,
+        "nonzero_weight_rows": 44
+      },
+      "image_vs_closed": {
+        "all_row_sums_first_moments_and_parities_pass": true,
+        "nonintegral_entry_count": 64,
+        "nonzero_weight_rows": 33
+      },
+      "image_vs_neighborhood": {
+        "all_row_sums_first_moments_and_parities_pass": true,
+        "nonintegral_entry_count": 96,
+        "nonzero_weight_rows": 33
+      }
+    }
+  },
+  "scope": {
+    "automorphism_assumed": false,
+    "full_genus_two_encoded": false,
+    "projection": "ordinary MacWilliams plus exact distinguished pair tables and per-shell split row sums, first moments, intersection parity counts, and range constraints",
+    "target": "hypothetical srg(99,14,1,2)"
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "Wave131_specific_rational_point_survives": false,
+    "binary_code_constructed": false,
+    "full_genus_two": "UNKNOWN",
+    "graph_constructed": false,
+    "integral_projection": "UNKNOWN",
+    "novelty": "UNKNOWN",
+    "stronger_rational_projection_feasible": true
+  },
+  "strictness_over_Wave131": {
+    "Wave131_A98": "170562693352378955498780443720005/220411100178756488424348352249856",
+    "Wave131_fails_distinguished_moment_cut": true,
+    "Wave131_passed_ordinary_MacWilliams": true,
+    "reason": "for an image word of weight w, exactly w neighborhood-row intersections are odd; their total is at most 13*w+14*(99-w)=1386-w but must equal 14*w, so w<=92"
+  }
+}

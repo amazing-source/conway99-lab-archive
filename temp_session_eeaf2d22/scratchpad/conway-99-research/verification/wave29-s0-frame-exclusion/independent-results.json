@@ -1,0 +1,560 @@
+{
+  "frozen_single_lattice_inputs": {
+    "K12": {
+      "determinant": 729,
+      "even_integral": true,
+      "minimum": 4,
+      "positive_definite": true,
+      "rank": 12
+    },
+    "LAMBDA_F": {
+      "determinant": 1,
+      "even_integral": true,
+      "minimum": 4,
+      "positive_definite": true,
+      "rank": 32
+    },
+    "S0": {
+      "decomposition": "K12 orthogonal_sum LAMBDA(F)",
+      "determinant": 729,
+      "minimum": 4,
+      "rank": 44
+    }
+  },
+  "hostile_controls": {
+    "determinant_allocation_swap": {
+      "incorrect_detB_K": 729,
+      "incorrect_detQ_allocation": {
+        "detQ_K": 1,
+        "detQ_L": 5
+      },
+      "result": "no contradiction; caught by rank-12 even-unimodular veto"
+    },
+    "lowered_block_minimum": {
+      "block_minima": [
+        2,
+        2
+      ],
+      "mixed_norm": 4,
+      "row_norm": 4,
+      "support_split_forced": false
+    },
+    "premise_deletions": {
+      "b_equals_i_plus_2c_integral": {
+        "first_failed_stage": "integral characteristic pseudodeterminant",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "determinant_cap_and_q_congruence": {
+        "first_failed_stage": "unique determinant det(Q)=5",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "endpoint_schur_definitions": {
+        "first_failed_stage": "M/W/Q/B block inheritance",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "even_unimodular_signature_veto": {
+        "first_failed_stage": "rank-12 determinant allocation",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "orthogonal_minimum_four_split": {
+        "first_failed_stage": "norm-four row support split",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "positive_form_self_adjointness": {
+        "first_failed_stage": "positive block spectra, trace residues, and AM-GM",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "q_even_positive_integral": {
+        "first_failed_stage": "positive integral block determinants",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "row_alphabet": {
+        "first_failed_stage": "off-diagonal row-count equations",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "row_sum_and_projector_identity": {
+        "first_failed_stage": "linear/quadratic row equations and cubic sums",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "tight_frame_identity": {
+        "first_failed_stage": "63/168 tight-frame row counts",
+        "status": "BLOCKED_AS_REQUIRED"
+      },
+      "total_trace_sixty": {
+        "first_failed_stage": "complementary block traces",
+        "status": "BLOCKED_AS_REQUIRED"
+      }
+    },
+    "without_C_integrality": {
+      "B": "2I_12",
+      "C": "(1/2)I_12",
+      "detB": 4096,
+      "exceeds_integral_cap_729": true,
+      "pseudodeterminant": "1/4096",
+      "pseudodeterminant_ge_1": false,
+      "traceC": 6
+    },
+    "without_rank12_veto": {
+      "allocation": {
+        "detQ_K": 1,
+        "detQ_L": 5
+      },
+      "detB_K": 729,
+      "log_cap": 729,
+      "strict_contradiction": false
+    },
+    "without_trace_multiple_of_six": {
+      "amgm_K": true,
+      "amgm_L": true,
+      "forced_detB_K": 3645,
+      "log_cap": 6561,
+      "strict_contradiction": false,
+      "traceC_K": 8,
+      "trace_pair": {
+        "traceB_K": 28,
+        "traceB_L": 32
+      }
+    }
+  },
+  "independence": {
+    "discovery_code_executed": false,
+    "discovery_code_imported": false,
+    "frozen_prior_input_hashes": {
+      "agents/2026-07-24-wave28-orchestrator-brief.md": "6a15446551b78822706a8e005bef49a411b904cf05f9459b6b3350239839ee1e",
+      "agents/2026-07-24-wave28-theta-modular.md": "8783be7e730306637ed863b4d9fbe8f4193ad756e7ec86d697c7407688a5423a",
+      "verification/wave24-n3-708-index/2026-07-23T204222Z-audit.md": "958b9b2d13d697c281ba490d21b170f453d059bfaa952f8e92a9709b6c8d3cd8",
+      "verification/wave25-n3-708-strictness/2026-07-23T215549Z-audit.md": "642255098bf424654e1a3a8c926a924ae8bf068cd422f0f367f64f9e402648de",
+      "verification/wave28-theta-modular/audit.md": "adc90e404735ca147bc0a5418974d8af0bde71c4ddc2dc62a8c07dee670dbfeb",
+      "verification/wave28-theta-modular/independent-results.json": "24298ae282c7baa252a39ffe96fc37b7c696cb51f14b9ddea2318a59b4335b7f"
+    },
+    "implementation": "fresh Python standard-library checker",
+    "preinspection_discovery_hashes": {
+      "agents/2026-07-24-wave29-s0-frame-exclusion.md": "e6ae61331a54d53f2a98712296ebac855f45b46de32ff2ec4d85018f2d8a5045",
+      "attempts/wave29-s0-frame-exclusion/artifact-manifest.sha256": "8cb5b0198ac9e787a8234820e648626dc27f900f53b7511068d5442d06d7a39b",
+      "attempts/wave29-s0-frame-exclusion/exact-results.json": "7a85c5321b5e91365c246dff7bae9264cc82494da5c866b1b351511099f6638c",
+      "attempts/wave29-s0-frame-exclusion/exact_check.py": "6a31c4ae0b2c994f4c715ba5118e3b25a052e8b3fc99dea88ea794cb7d9d8dce",
+      "attempts/wave29-s0-frame-exclusion/failed-routes.md": "bba05cd84c1ac35284c9f8af7d8dd32480f11158ada69195b1bfa61892cad234",
+      "attempts/wave29-s0-frame-exclusion/input-freeze.sha256": "5ddbd25498cf9f7048705e190f81e203d3d21efcc72d1750de2235e419fda1c4",
+      "attempts/wave29-s0-frame-exclusion/run-report.yaml": "91fba9dad3bb9d906eb69c06ca97be82ff804296dcb010be3f6749e67beba286",
+      "attempts/wave29-s0-frame-exclusion/test_exact_check.py": "26dff5f61d6bc6e3d752f596f5c318baee47358f27552e4a0b7e4c3e8a6a5c4f"
+    }
+  },
+  "proof": {
+    "C_K": {
+      "G_K_self_adjoint": true,
+      "ambient_rank": 12,
+      "integral": true,
+      "positive_semidefinite_assumed": false,
+      "spectral_domain": "real eigenvalues mu>-1/2 because B_K=I+2C_K is positive",
+      "trace": 6
+    },
+    "aggregate_block_coupling_attack": {
+      "blocks": {
+        "K12": {
+          "all_internal_directed_counts_even": true,
+          "directed_internal_total": 3906,
+          "expected_directed_internal_total": 3906,
+          "forced_cross_zeros": 10584,
+          "minimum_c_per_row_from_cross_zeros": 2,
+          "other_block_rows": 168,
+          "rows": 63,
+          "sum_a": 1390,
+          "sum_b": 390,
+          "sum_c": 626,
+          "sum_z_global": 12084,
+          "sum_z_internal": 1500
+        },
+        "LAMBDA_F": {
+          "all_internal_directed_counts_even": true,
+          "directed_internal_total": 28056,
+          "expected_directed_internal_total": 28056,
+          "forced_cross_zeros": 10584,
+          "minimum_c_per_row_from_cross_zeros": 0,
+          "other_block_rows": 63,
+          "rows": 168,
+          "sum_a": 3702,
+          "sum_b": 1026,
+          "sum_c": 1674,
+          "sum_z_global": 32238,
+          "sum_z_internal": 21654
+        }
+      },
+      "limitation": "These checks do not assert that a symmetric row-pattern matrix exists; they only attack immediate size, parity, and double-count couplings used or implied by the proof.",
+      "status": "NO_ADDITIONAL_AGGREGATE_CONTRADICTION"
+    },
+    "block_traces": {
+      "K_trace_18_fails": {
+        "left": 32499186133893120,
+        "right": 1156831381426176
+      },
+      "K_trace_24_passes_necessary_test": {
+        "left": 32499186133893120,
+        "right": 36520347436056576
+      },
+      "L_trace_30_fails": {
+        "left": 1461501637330902918203684832716283019655932542976,
+        "right": 185302018885184100000000000000000000000000000000
+      },
+      "exact_candidates": [
+        {
+          "traceB_K": 24,
+          "traceB_L": 36
+        }
+      ],
+      "sum_c": {
+        "K12": 626,
+        "LAMBDA_F": 1674
+      }
+    },
+    "characteristic_pseudodeterminant": {
+      "consequence": "|product(nonzero eigenvalues)|=|p(0)|>=1",
+      "diagonalizability_use": "positive-form self-adjointness identifies n-r with nullity",
+      "exact_examples": [
+        {
+          "abs_p0": 2,
+          "charpoly": [
+            1,
+            -2,
+            0
+          ],
+          "matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "nonzero_factor": [
+            1,
+            -2
+          ]
+        },
+        {
+          "G": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "abs_p0": 2,
+          "charpoly": [
+            1,
+            0,
+            -2
+          ],
+          "matrix": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "nonzero_factor": [
+            1,
+            0,
+            -2
+          ]
+        }
+      ],
+      "lemma": "char_C(t)=t^(n-r)p(t), p monic in Z[t], p(0) nonzero integer"
+    },
+    "detQ_candidates": [
+      5
+    ],
+    "determinant_allocation": {
+      "determinant_factor_check": {
+        "detB_K": 3645,
+        "detB_L": 1,
+        "detB_total": 3645,
+        "detS_K": 729,
+        "detS_L": 1,
+        "detS_times_detQ": 3645
+      },
+      "pre_veto_allocations": [
+        {
+          "detQ_K": 1,
+          "detQ_L": 5
+        },
+        {
+          "detQ_K": 5,
+          "detQ_L": 1
+        }
+      ],
+      "rank_12_even_unimodular_allowed": false,
+      "survivor": {
+        "detQ_K": 5,
+        "detQ_L": 1
+      }
+    },
+    "final_contradiction": {
+      "detB_K_forced": 3645,
+      "detB_K_upper_bound": 729,
+      "display": "3645 > 729",
+      "strict": true
+    },
+    "frame_split": {
+      "block_minima": [
+        4,
+        4
+      ],
+      "mixed_nonzero_norm_lower_bound": 8,
+      "row_counts": {
+        "K12": 63,
+        "LAMBDA_F": 168
+      },
+      "row_norm": 4,
+      "row_support": "exactly_one_block",
+      "tight_frame_identity": "4*n_J=21*rank(J)"
+    },
+    "matrix_split": {
+      "B": [
+        [
+          648,
+          0
+        ],
+        [
+          0,
+          50176
+        ]
+      ],
+      "M": [
+        [
+          2,
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          12
+        ],
+        [
+          0,
+          0,
+          12,
+          36
+        ]
+      ],
+      "Q": [
+        [
+          324,
+          0
+        ],
+        [
+          0,
+          12544
+        ]
+      ],
+      "W": [
+        [
+          4,
+          16,
+          0,
+          0
+        ],
+        [
+          16,
+          64,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          144
+        ],
+        [
+          0,
+          0,
+          144,
+          1296
+        ]
+      ],
+      "interpretation": "A direct exact control of the four defining operations; the general block-zero conclusion follows entrywise from the same multiplication identities.",
+      "test_dimensions": {
+        "coordinates": 2,
+        "row_split": 2,
+        "rows": 4
+      }
+    },
+    "pointwise_logarithmic_inequality": {
+      "L": "log(3)",
+      "c": "log(3)-2/3",
+      "negative_interval": {
+        "conclusion": "the pointwise inequality is strict",
+        "derivative": "g'(x)=L-2/(1+2x)<L-2<0",
+        "domain": "-1/2<x<0",
+        "extra_term": "-c*log|x|>0 because c>0 and |x|<1",
+        "g": "x*L-log(1+2x)",
+        "orientation": "g decreases to g(0)=0, hence g(x)>0 for x<0"
+      },
+      "pointwise": "log(1+2x)<=x*L-c*log|x| for x>-1/2 and x!=0",
+      "positive_interval": {
+        "F": "x*L-c*log(x)-log(1+2*x)",
+        "derivative_identity": "x(1+2x)F'(x)=(x-1)(2Lx+L-2/3)",
+        "direct_coefficients": [
+          {
+            "L": -1,
+            "rational": "2/3"
+          },
+          {
+            "L": -1,
+            "rational": "-2/3"
+          },
+          {
+            "L": 2,
+            "rational": "0"
+          }
+        ],
+        "factored_coefficients": [
+          {
+            "L": -1,
+            "rational": "2/3"
+          },
+          {
+            "L": -1,
+            "rational": "-2/3"
+          },
+          {
+            "L": 2,
+            "rational": "0"
+          }
+        ],
+        "minimum": "F(1)=0",
+        "second_factor_positive": "2Lx+c>0 for x>0"
+      },
+      "rational_bounds": {
+        "lower": "1541989106264611/1403578975518720",
+        "lower_gt_2_over_3": true,
+        "terms": 12,
+        "upper": "3854972776816171/3508947438796800",
+        "upper_lt_2": true
+      }
+    },
+    "row_alphabet": [
+      {
+        "a": 32,
+        "b": 36,
+        "c": 0,
+        "cube_sum": 60,
+        "z": 162
+      },
+      {
+        "a": 31,
+        "b": 33,
+        "c": 1,
+        "cube_sum": 54,
+        "z": 165
+      },
+      {
+        "a": 30,
+        "b": 30,
+        "c": 2,
+        "cube_sum": 48,
+        "z": 168
+      },
+      {
+        "a": 29,
+        "b": 27,
+        "c": 3,
+        "cube_sum": 42,
+        "z": 171
+      },
+      {
+        "a": 28,
+        "b": 24,
+        "c": 4,
+        "cube_sum": 36,
+        "z": 174
+      },
+      {
+        "a": 27,
+        "b": 21,
+        "c": 5,
+        "cube_sum": 30,
+        "z": 177
+      },
+      {
+        "a": 26,
+        "b": 18,
+        "c": 6,
+        "cube_sum": 24,
+        "z": 180
+      },
+      {
+        "a": 25,
+        "b": 15,
+        "c": 7,
+        "cube_sum": 18,
+        "z": 183
+      },
+      {
+        "a": 24,
+        "b": 12,
+        "c": 8,
+        "cube_sum": 12,
+        "z": 186
+      },
+      {
+        "a": 23,
+        "b": 9,
+        "c": 9,
+        "cube_sum": 6,
+        "z": 189
+      },
+      {
+        "a": 22,
+        "b": 6,
+        "c": 10,
+        "cube_sum": 0,
+        "z": 192
+      },
+      {
+        "a": 21,
+        "b": 3,
+        "c": 11,
+        "cube_sum": -6,
+        "z": 195
+      },
+      {
+        "a": 20,
+        "b": 0,
+        "c": 12,
+        "cube_sum": -12,
+        "z": 198
+      }
+    ]
+  },
+  "public_base_commit": "74b6f3adcee19ca2b0480258bb7bf51198bd085a",
+  "role": "verifier",
+  "schema": "wave29-s0-frame-exclusion-independent-v1",
+  "scope_wall": "Only S0=K12 orthogonal_sum LAMBDA(F) is excluded as the S-form of the frozen full endpoint package. No other determinant-729 form, endpoint, graph, global target, or novelty claim follows.",
+  "verdict": {
+    "Conway_99": "UNKNOWN",
+    "S0_full_projector_Schur_endpoint_origin": "REFUTED",
+    "all_other_h_729_lattices": "UNKNOWN",
+    "claim_label": "VERIFIED",
+    "n3_equals_708": "UNKNOWN",
+    "novelty": "UNKNOWN"
+  },
+  "verification_date_utc": "2026-07-24T03:20:27Z"
+}

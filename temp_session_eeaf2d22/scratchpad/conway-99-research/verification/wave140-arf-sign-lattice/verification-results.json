@@ -1,0 +1,422 @@
+{
+  "ambient": {
+    "E2_count": 25,
+    "H2_count": 24,
+    "bilinear_rank": 98,
+    "dimension": 98,
+    "epsilon": -1,
+    "expected_gauss_sum": -562949953421312,
+    "gauss_sum": -562949953421312,
+    "gram_determinant": 99,
+    "gram_determinant_unit_mod_8": 3,
+    "plane_count": 49
+  },
+  "bridge": {
+    "assumptions": [
+      "U is an even unimodular Z_2 lattice.",
+      "The binary q is the reduction of (x,x)/2 modulo 2.",
+      "The determinant is its odd unit square class modulo 8."
+    ],
+    "exhaustive_plane_count_check": true,
+    "statement": "epsilon(U)=(2/det(U))"
+  },
+  "control_hashes_match_discovery": true,
+  "controls": [
+    {
+      "U": {
+        "E_planes": 4,
+        "H_planes": 23,
+        "determinant_unit_mod_8": 7,
+        "epsilon": 1,
+        "epsilon_matches_chi_two": true,
+        "rank": 54
+      },
+      "W": {
+        "E_planes": 21,
+        "H_planes": 1,
+        "determinant_unit_mod_8": 5,
+        "epsilon": -1,
+        "rank": 44
+      },
+      "binary_projection": {
+        "idempotent_mod_2": true,
+        "integer_row_sums_all_14": false,
+        "integer_srg_identity": false,
+        "kills_one_mod_2": true,
+        "packed_sha256": "032135b7bc1d86b8cae4efcb3d468edd5bed3b63abb73a04dc33707c4c2040e9",
+        "rank": 54,
+        "row_weight_distribution": {
+          "0": 6,
+          "10": 2,
+          "12": 2,
+          "14": 2,
+          "16": 2,
+          "18": 2,
+          "2": 2,
+          "20": 2,
+          "22": 2,
+          "24": 2,
+          "26": 2,
+          "28": 2,
+          "30": 2,
+          "32": 2,
+          "34": 2,
+          "36": 2,
+          "38": 2,
+          "4": 2,
+          "54": 17,
+          "56": 2,
+          "58": 2,
+          "6": 2,
+          "60": 2,
+          "62": 2,
+          "64": 2,
+          "66": 2,
+          "68": 2,
+          "70": 2,
+          "72": 2,
+          "74": 2,
+          "76": 2,
+          "78": 2,
+          "8": 2,
+          "80": 2,
+          "82": 2,
+          "84": 2,
+          "86": 2,
+          "88": 2,
+          "90": 2,
+          "92": 2
+        },
+        "symmetric": true,
+        "zero_diagonal_mod_2": true
+      },
+      "local_operator": {
+        "polynomial_on_K": true,
+        "polynomial_on_one_line": true,
+        "scale_16_form_determinant_unit_mod_8": 5,
+        "spectrum": {
+          "-4": 44,
+          "14": 1,
+          "3": 54
+        },
+        "trace": 0,
+        "two_primary_discriminant_group": {
+          "Z/16": 44,
+          "Z/4": 1
+        },
+        "two_primary_smith_exponents": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "name": "epsilon_plus"
+    },
+    {
+      "U": {
+        "E_planes": 3,
+        "H_planes": 24,
+        "determinant_unit_mod_8": 3,
+        "epsilon": -1,
+        "epsilon_matches_chi_two": true,
+        "rank": 54
+      },
+      "W": {
+        "E_planes": 22,
+        "H_planes": 0,
+        "determinant_unit_mod_8": 1,
+        "epsilon": 1,
+        "rank": 44
+      },
+      "binary_projection": {
+        "idempotent_mod_2": true,
+        "integer_row_sums_all_14": false,
+        "integer_srg_identity": false,
+        "kills_one_mod_2": true,
+        "packed_sha256": "1897329cc50f14acba9fb363ef98f05530b3c00f70f463589135cbf6306f60e3",
+        "rank": 54,
+        "row_weight_distribution": {
+          "0": 2,
+          "10": 2,
+          "12": 2,
+          "14": 2,
+          "16": 2,
+          "18": 2,
+          "2": 2,
+          "20": 2,
+          "22": 2,
+          "24": 2,
+          "26": 2,
+          "28": 2,
+          "30": 2,
+          "32": 2,
+          "34": 2,
+          "36": 2,
+          "38": 2,
+          "4": 2,
+          "40": 2,
+          "42": 2,
+          "54": 13,
+          "56": 2,
+          "58": 2,
+          "6": 2,
+          "60": 2,
+          "62": 2,
+          "64": 2,
+          "66": 2,
+          "68": 2,
+          "70": 2,
+          "72": 2,
+          "74": 2,
+          "76": 2,
+          "78": 2,
+          "8": 2,
+          "80": 2,
+          "82": 2,
+          "84": 2,
+          "86": 2,
+          "88": 2,
+          "90": 2,
+          "92": 2,
+          "94": 2,
+          "96": 2
+        },
+        "symmetric": true,
+        "zero_diagonal_mod_2": true
+      },
+      "local_operator": {
+        "polynomial_on_K": true,
+        "polynomial_on_one_line": true,
+        "scale_16_form_determinant_unit_mod_8": 1,
+        "spectrum": {
+          "-4": 44,
+          "14": 1,
+          "3": 54
+        },
+        "trace": 0,
+        "two_primary_discriminant_group": {
+          "Z/16": 44,
+          "Z/4": 1
+        },
+        "two_primary_smith_exponents": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "name": "epsilon_minus"
+    }
+  ],
+  "discriminant_boundary": {
+    "convention": "For the even lattice L=A Z_2^99, use q_L(x+L)=(x,x)/2 mod Z_2.  The exponent-16 Jordan block is 4W and retains det(W) modulo odd squares.",
+    "forms_separated_by_unit_square_class": true,
+    "groups_equal": true,
+    "scale_16_form_units": [
+      5,
+      1
+    ]
+  },
+  "format": "wave140-independent-verification-v1",
+  "frozen_package": {
+    "entries": [
+      {
+        "actual_sha256": "a188453a5eca2be23c0247674c145ae7268d68fab9f8bf67c0e7eedb5619fb2b",
+        "expected_sha256": "a188453a5eca2be23c0247674c145ae7268d68fab9f8bf67c0e7eedb5619fb2b",
+        "pass": true,
+        "path": "attempts/wave140-arf-sign-lattice/derivation.md"
+      },
+      {
+        "actual_sha256": "343399084fe43ec7e811ea07679338dbbfbe5d586f89dca0789f2b39f083c004",
+        "expected_sha256": "343399084fe43ec7e811ea07679338dbbfbe5d586f89dca0789f2b39f083c004",
+        "pass": true,
+        "path": "attempts/wave140-arf-sign-lattice/exact_check.py"
+      },
+      {
+        "actual_sha256": "0fb5b5ace9a2b774ff532aa1aef6cc0a15969b75617147bb56b31bd7672d5067",
+        "expected_sha256": "0fb5b5ace9a2b774ff532aa1aef6cc0a15969b75617147bb56b31bd7672d5067",
+        "pass": true,
+        "path": "attempts/wave140-arf-sign-lattice/exact-results.json"
+      },
+      {
+        "actual_sha256": "c84cfcb978b1579e538c031117cad9b6f268582b194842dbf7a115b8a91025d2",
+        "expected_sha256": "c84cfcb978b1579e538c031117cad9b6f268582b194842dbf7a115b8a91025d2",
+        "pass": true,
+        "path": "attempts/wave140-arf-sign-lattice/failed-routes.md"
+      },
+      {
+        "actual_sha256": "89807d4dc5df4cb6af7c65a8f0a51f96b0889a73794928ddc704c9fffe6e01ad",
+        "expected_sha256": "89807d4dc5df4cb6af7c65a8f0a51f96b0889a73794928ddc704c9fffe6e01ad",
+        "pass": true,
+        "path": "attempts/wave140-arf-sign-lattice/protocol.md"
+      },
+      {
+        "actual_sha256": "5d28fce747b2cbfba5884130efb2b833ce87320fa7265136815f195b55d28e17",
+        "expected_sha256": "5d28fce747b2cbfba5884130efb2b833ce87320fa7265136815f195b55d28e17",
+        "pass": true,
+        "path": "attempts/wave140-arf-sign-lattice/README.md"
+      },
+      {
+        "actual_sha256": "7aeb41d7eb4ad50358c840cb19eea36b01c60eee73817f8094ce39521f7c8506",
+        "expected_sha256": "7aeb41d7eb4ad50358c840cb19eea36b01c60eee73817f8094ce39521f7c8506",
+        "pass": true,
+        "path": "attempts/wave140-arf-sign-lattice/run-report.yaml"
+      },
+      {
+        "actual_sha256": "4beded73462a16bdc6e824dd5ef90d772949c69487d97d8f4f882d7aeae6be58",
+        "expected_sha256": "4beded73462a16bdc6e824dd5ef90d772949c69487d97d8f4f882d7aeae6be58",
+        "pass": true,
+        "path": "attempts/wave140-arf-sign-lattice/test_exact_check.py"
+      }
+    ],
+    "entries_pass": true,
+    "entry_count": 8,
+    "expected_manifest_sha256": "934bbbd1818536af3786b9cb8b2f6bc48481d8bda3824328a266d5b3544ffd58",
+    "manifest_pass": true,
+    "manifest_sha256": "934bbbd1818536af3786b9cb8b2f6bc48481d8bda3824328a266d5b3544ffd58"
+  },
+  "hostile_scope_checks": {
+    "binary_controls_are_not_14_regular": true,
+    "binary_controls_fail_integral_srg_identity": true,
+    "controls_do_not_refute": "a proof using an actual integral 0/1, zero-diagonal, 14-regular SRG adjacency, or unconstructed global odd-primary discriminant-form compatibility",
+    "controls_refute": "determination by the matched binary projection and local 2-adic coarse invariants",
+    "integral_zero_one_adjacency_supplied": false
+  },
+  "plane_models": {
+    "E2": {
+      "det_mod_8": 3,
+      "epsilon": -1,
+      "gauss_sum": -2,
+      "gram": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "H2": {
+      "det_mod_8": 7,
+      "epsilon": 1,
+      "gauss_sum": 2,
+      "gram": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    }
+  },
+  "smith_reconstruction": {
+    "all_divide_84": true,
+    "counts": {
+      "1": 45,
+      "12": 43,
+      "3": 9,
+      "6": 1,
+      "84": 1
+    },
+    "modular_ranks": {
+      "2": 54,
+      "3": 45,
+      "7": 98
+    },
+    "product_matches_spectrum": true
+  },
+  "status": {
+    "Conway_99": "UNKNOWN",
+    "integral_graph": "NOT_CONSTRUCTED",
+    "target_epsilon": "UNKNOWN"
+  },
+  "verdict": "PASS_WITH_SCOPE_CORRECTION"
+}

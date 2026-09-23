@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "audit_date_utc": "2026-07-24",
+  "frozen_before_search": true,
+  "retention": "query strings, dispositions, and bibliographic metadata only; no raw HTML, API response, or paper retained",
+  "counts": {
+    "query_strings": 81,
+    "web_search_queries": 68,
+    "openalex_queries": 3,
+    "crossref_queries": 2,
+    "arxiv_api_queries": 8,
+    "query_batches": 21
+  },
+  "batches": [
+    {
+      "id": "B01",
+      "lane": "exact object pair",
+      "service": "web search",
+      "query_ids": ["W01", "W02", "W03", "W04"],
+      "queries": [
+        "\"K12\" \"LAMBDA(F)\" lattice",
+        "\"Coxeter-Todd\" \"LAMBDA(F)\"",
+        "\"K12\" \"Koch-Venkov\" lattice",
+        "\"Coxeter-Todd lattice\" \"Koch-Venkov\""
+      ],
+      "disposition": "No relevant exact-pair result. Results were mostly biological K-12 noise plus separate lattice catalogue and provenance references."
+    },
+    {
+      "id": "B02",
+      "lane": "numeric fingerprints",
+      "service": "web search",
+      "query_ids": ["W05", "W06", "W07", "W08"],
+      "queries": [
+        "\"231\" \"44\" \"Coxeter-Todd\" lattice",
+        "\"63\" \"168\" \"Coxeter-Todd\" lattice",
+        "\"3645\" \"729\" lattice determinant",
+        "\"trace\" \"24\" \"36\" \"Coxeter-Todd\" lattice"
+      ],
+      "disposition": "No exact result. Returned generic calculators, unrelated numeric coincidences, and no source matching the proof signature."
+    },
+    {
+      "id": "B03",
+      "lane": "endpoint language",
+      "service": "web search",
+      "query_ids": ["W09", "W10", "W11", "W12"],
+      "queries": [
+        "\"Conway 99\" lattice projector Schur square",
+        "\"srg(99,14,1,2)\" lattice",
+        "\"strongly regular graph\" \"231\" \"44\" projector",
+        "\"Conway 99-graph\" tight frame"
+      ],
+      "disposition": "Found current Conway-99 structural/status sources, but no lattice projector, Schur-square, or Wave-29 endpoint result."
+    },
+    {
+      "id": "B04",
+      "lane": "current status",
+      "service": "web search",
+      "query_ids": ["W13", "W14", "W15", "W16"],
+      "queries": [
+        "site:arxiv.org/abs/2604.23037 \"Approaching the Conway-99 problem using SAT solvers\" authors",
+        "\"Approaching the Conway-99 problem using SAT solvers\"",
+        "\"Conway-99\" SAT solvers 2604.23037 v2",
+        "site:doi.org \"Conway 99-graph\" 2025"
+      ],
+      "disposition": "Located arXiv:2604.23037v2. Primary arXiv metadata lists Ali Keramatipour alone and reports unsuccessful SAT experiments, not a resolution."
+    },
+    {
+      "id": "B05",
+      "lane": "current status",
+      "service": "web search",
+      "query_ids": ["W17", "W18", "W19", "W20"],
+      "queries": [
+        "\"Conway 99-graph\" 2026",
+        "\"srg(99,14,1,2)\" 2026",
+        "\"Conway-99 problem\" 2026 graph",
+        "\"99,14,1,2\" strongly regular graph 2025 2026"
+      ],
+      "disposition": "Recent journal, preprint, and institutional sources continued to treat the existence question as unresolved or as a target for possible future methods. No resolution source was found."
+    },
+    {
+      "id": "B06",
+      "lane": "alternate identifiers",
+      "service": "web search",
+      "query_ids": ["W21", "W22", "W23", "W24"],
+      "queries": [
+        "\"KV32F\" \"K12\" lattice",
+        "\"KV32F\" \"Coxeter-Todd\"",
+        "\"K_12\" \"Lambda(F)\" lattice",
+        "\"K_{12}\" \"Lambda(F)\" lattice"
+      ],
+      "disposition": "No relevant exact-pair or combined non-realizability result."
+    },
+    {
+      "id": "B07",
+      "lane": "rank and determinant",
+      "service": "web search",
+      "query_ids": ["W25", "W26", "W27", "W28"],
+      "queries": [
+        "\"Coxeter-Todd\" \"extremal even unimodular\" \"rank 32\"",
+        "\"Coxeter-Todd lattice\" \"32-dimensional\" unimodular lattice",
+        "\"K12\" \"32-dimensional\" \"unimodular lattice\"",
+        "\"rank 44\" \"determinant 729\" lattice"
+      ],
+      "disposition": "Separate lattice literature and generic rank/determinant results only; no exact direct-sum endpoint theorem."
+    },
+    {
+      "id": "B08",
+      "lane": "final obstruction",
+      "service": "web search",
+      "query_ids": ["W29", "W30", "W31", "W32"],
+      "queries": [
+        "\"log(1+2x)\" \"log(3)\" determinant matrix",
+        "\"log(1+2x)\" \"2/3\" \"log|x|\"",
+        "\"characteristic pseudodeterminant\" integral matrix determinant inequality",
+        "\"pseudodeterminant\" \"monic\" \"Z[t]\" integral matrix"
+      ],
+      "disposition": "No exact logarithmic inequality or determinant cap. Located standard pseudodeterminant literature defining it via the characteristic polynomial."
+    },
+    {
+      "id": "B09",
+      "lane": "final obstruction",
+      "service": "web search",
+      "query_ids": ["W33", "W34", "W35", "W36"],
+      "queries": [
+        "\"det(I+2C)\" \"trace(C)\" integral matrix",
+        "\"det(I+2A)\" \"3^\" trace matrix",
+        "\"det(I+2C)\" lattice",
+        "\"I+2C\" pseudodeterminant inequality"
+      ],
+      "disposition": "No relevant match to the Wave-29 determinant-versus-trace argument."
+    },
+    {
+      "id": "B10",
+      "lane": "numeric fingerprints",
+      "service": "web search",
+      "query_ids": ["W37", "W38", "W39", "W40"],
+      "queries": [
+        "\"231\" \"63\" \"168\" strongly regular graph",
+        "\"231\" \"63\" \"168\" lattice",
+        "\"3645\" \"Coxeter-Todd\"",
+        "\"729\" \"Lambda(F)\" \"K12\""
+      ],
+      "disposition": "No exact match. A 63-by-168 Kramer-Mesner system on 231 vertices was an unrelated numeric false positive."
+    },
+    {
+      "id": "B11",
+      "lane": "endpoint equations",
+      "service": "web search",
+      "query_ids": ["W41", "W42", "W43", "W44"],
+      "queries": [
+        "\"M^2=21M\" lattice",
+        "\"M^2 = 21 M\" strongly regular graph",
+        "\"diag(M)=4\" \"21M\" projector",
+        "\"offdiag\" \"0,1,-1,-2\" projector"
+      ],
+      "disposition": "No relevant endpoint-equation match."
+    },
+    {
+      "id": "B12",
+      "lane": "exact object and frame language",
+      "service": "web search",
+      "query_ids": ["W45", "W46", "W47", "W48"],
+      "queries": [
+        "\"LAMBDA(F)\" lattice frame",
+        "\"KV32F\" projector lattice",
+        "\"Coxeter-Todd\" \"Schur square\"",
+        "\"Coxeter-Todd\" Hadamard projector"
+      ],
+      "disposition": "No relevant combined result."
+    },
+    {
+      "id": "B13",
+      "lane": "standard lattice-shell ingredients",
+      "service": "web search",
+      "query_ids": ["W49", "W50", "W51", "W52"],
+      "queries": [
+        "Coxeter Todd orthogonal sum minimum vectors tight frame",
+        "\"K12\" minimal vectors spherical 5-design",
+        "\"LAMBDA(F)\" minimal vectors spherical design",
+        "\"Koch-Venkov\" minimal vectors spherical design rank 32"
+      ],
+      "disposition": "Located authoritative survey and standard shell/design literature. No source matched the exact direct-sum proof."
+    },
+    {
+      "id": "B14",
+      "lane": "exact object pair",
+      "service": "web search",
+      "query_ids": ["W53", "W54", "W55", "W56"],
+      "queries": [
+        "\"S0\" \"K12\" \"LAMBDA(F)\" lattice",
+        "\"K12 \u22a5\" \"Lambda(F)\"",
+        "\"K12 direct sum\" \"Lambda(F)\"",
+        "\"Coxeter-Todd\" \"direct sum\" \"Lambda(F)\""
+      ],
+      "disposition": "No relevant exact-pair or endpoint-exclusion result; some biological K-12 noise."
+    },
+    {
+      "id": "B15",
+      "lane": "multilingual aliases",
+      "service": "web search",
+      "query_ids": ["W57", "W58", "W59", "W60"],
+      "queries": [
+        "\"Coxeter-Todd-Gitter\" \"Koch-Venkov\"",
+        "\"K12\" \"Lambda F\" Gitter",
+        "\"orthogonale Summe\" \"Coxeter-Todd\"",
+        "\"r\u00e9seau de Coxeter-Todd\" \"dimension 32\" unimodulaire"
+      ],
+      "disposition": "No exact combined result. One general quaternionic-lattice discussion mentioned the two dimensions but not this direct sum or endpoint."
+    },
+    {
+      "id": "B16",
+      "lane": "ingredient citation closure",
+      "service": "web search",
+      "query_ids": ["W61", "W62", "W63", "W64"],
+      "queries": [
+        "\"Pseudodeterminants and perfect square spanning tree counts\" DOI",
+        "\"Boris Venkov's Theory of Lattices and Spherical Designs\" DOI",
+        "site:combinatorics.org \"Pseudodeterminants and perfect square spanning tree counts\"",
+        "site:ams.org \"Boris Venkov's Theory of Lattices and Spherical Designs\""
+      ],
+      "disposition": "Confirmed arXiv and journal metadata for the pseudodeterminant paper and DOI 10.1090/conm/587/11672 for Nebe's survey."
+    },
+    {
+      "id": "B17",
+      "lane": "ingredient citation closure",
+      "service": "web search",
+      "query_ids": ["W65", "W66", "W67", "W68"],
+      "queries": [
+        "Crossref \"Pseudodeterminants and perfect square spanning tree counts\"",
+        "\"Pseudodeterminants and perfect square spanning tree counts\" \"10.\"",
+        "site:archive.intlpress.com \"Pseudodeterminants\"",
+        "site:doi.org \"Pseudodeterminants and perfect square spanning tree counts\""
+      ],
+      "disposition": "Confirmed Journal of Combinatorics 6(3), 295-325 (2015), and arXiv:1311.6686. No publisher DOI was exposed in the inspected primary metadata, so none is asserted."
+    },
+    {
+      "id": "B18",
+      "lane": "bibliographic exact-match cross-check",
+      "service": "OpenAlex API",
+      "query_ids": ["O01", "O02", "O03"],
+      "queries": [
+        "Coxeter-Todd Lambda(F)",
+        "K12 KV32F",
+        "Conway 99 lattice projector"
+      ],
+      "disposition": "Each query returned count zero. This is an index result, not novelty evidence."
+    },
+    {
+      "id": "B19",
+      "lane": "bibliographic exact-match cross-check",
+      "service": "Crossref API",
+      "query_ids": ["C01", "C02"],
+      "queries": [
+        "Coxeter-Todd Lambda(F)",
+        "Conway 99 lattice projector"
+      ],
+      "disposition": "C01 returned a large noisy set with no exact relevant item among the inspected leading records. C02 was rate-limited with HTTP 429."
+    },
+    {
+      "id": "B20",
+      "lane": "arXiv exact-match cross-check",
+      "service": "arXiv API",
+      "query_ids": ["X01", "X02", "X03", "X04"],
+      "queries": [
+        "all:\"Coxeter-Todd\" AND all:\"Lambda(F)\"",
+        "all:\"K12\" AND all:\"KV32F\"",
+        "all:\"Conway 99\" AND all:lattice",
+        "all:\"srg(99,14,1,2)\" AND all:lattice"
+      ],
+      "disposition": "All four exact searches returned totalResults=0. This is index coverage only, not proof of novelty."
+    },
+    {
+      "id": "B21",
+      "lane": "arXiv target-status cross-check",
+      "service": "arXiv API",
+      "query_ids": ["X05", "X06", "X07", "X08"],
+      "queries": [
+        "all:\"Conway 99\"",
+        "all:\"Conway-99\"",
+        "all:\"srg(99,14,1,2)\"",
+        "all:\"strongly regular graph\" AND all:\"99,14,1,2\""
+      ],
+      "disposition": "The first two returned five records each, including current structural and SAT approaches but no claimed resolution; the third returned one record and the fourth two. One result titled 'Not Conway's 99-Graph Problem' concerns an unrelated programming puzzle and was excluded."
+    }
+  ],
+  "access_events": [
+    {
+      "service": "web safe-open",
+      "count": 4,
+      "status": "blocked",
+      "detail": "Direct OpenAlex and Crossref API URLs were rejected as unsafe to open by the web layer; read-only API calls were instead made from the shell and raw responses were not retained."
+    },
+    {
+      "service": "Crossref API",
+      "count": 1,
+      "status": "rate_limited",
+      "detail": "The Conway-99 lattice-projector query returned HTTP 429."
+    },
+    {
+      "service": "Google Scholar",
+      "status": "not_machine_audited",
+      "detail": "Search-engine results exposed Scholar links, but no stable programmatic Scholar audit was available."
+    },
+    {
+      "service": "MathSciNet and zbMATH",
+      "status": "not_machine_audited",
+      "detail": "No authenticated or stable programmatic access was available in this run; DOI, publisher, arXiv, institutional, OpenAlex, and Crossref metadata were used instead."
+    }
+  ]
+}

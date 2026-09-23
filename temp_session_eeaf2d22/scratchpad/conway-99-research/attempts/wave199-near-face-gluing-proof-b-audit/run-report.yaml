@@ -1,0 +1,31 @@
+role: proof_b
+date_utc: 2026-07-29T06:22:00Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: DERIVED
+scope: >-
+  Clean-room hostile audit of the Q0=7037 near-face exclusion and the
+  conditional consequence Q>=7038.
+inputs:
+  - AGENTS.md
+  - verification/wave196-four-fiber-hilton-milner-verifier/package-manifest.sha256
+  - attempts/wave198-orientation-lift-proof-b/package-manifest.sha256
+  - attempts/wave198-orientation-lift-proof-a-audit/package-manifest.sha256
+  - attempts/wave199-near-face-gluing-proof-a/package-manifest.sha256
+  - attempts/wave199-near-face-gluing-proof-b-audit/independent-result-freeze.sha256
+method: >-
+  Independent integer slack arithmetic, oriented multiplicity deficits,
+  four-fiber repetition, Hilton--Milner equality templates, and sealed
+  source comparison.
+command: >-
+  python -B attempts/wave199-near-face-gluing-proof-b-audit/exact_check.py
+  --verify attempts/wave199-near-face-gluing-proof-b-audit/exact-results.json;
+  python -B -m unittest -v
+  attempts/wave199-near-face-gluing-proof-b-audit/test_exact_check.py
+outputs:
+  - agents/2026-07-29-wave199-near-face-gluing-proof-b-audit.md
+  - attempts/wave199-near-face-gluing-proof-b-audit/
+limitations:
+  - Proof-B hostile audit, not verifier promotion.
+  - Conditional on the prism-free rank-11 endpoint.
+  - The Wave198 generic unittest-discovery relative-import failure is
+    non-mathematical and no sealed source was modified.

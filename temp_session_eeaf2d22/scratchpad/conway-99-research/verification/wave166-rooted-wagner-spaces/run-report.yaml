@@ -1,0 +1,28 @@
+role: verifier
+date_utc: 2026-07-28T15:17:32Z
+git_commit: c270c079ee620ad1a73ef5c8f973827ac7e0adf7
+claim_label: VERIFIED
+scope: >-
+  Independently audit the fixed-C4, fixed-C5, and fixed-nonedge Wagner
+  reductions, shell null model, conditional endpoint implication, and exact
+  boundary separating proved facts from the unproved four-failure lemma.
+inputs:
+  - path: attempts/wave166-rooted-wagner-spaces/package-manifest.sha256
+    sha256: 5a51809fdd122fdcef7670794444c4de936ee18fefd421c60eaf61944126dbc9
+method: >-
+  Clean-room common-neighbor arithmetic, shell-pattern reconstruction,
+  explicit shift-set audit, nonedge-root double counts, Wagner isomorphism,
+  and hostile scope and multiplicity checks.
+command: none; independent paper verification
+outputs:
+  - path: verification/wave166-rooted-wagner-spaces/README.md
+    sha256: 99801c1108e5b0b1633387f547a5253e4fa7f8da6fab7b1bd072b48db298d475
+  - path: verification/wave166-rooted-wagner-spaces/protocol.md
+    sha256: 193108fdc1380618baa181b059773c9b20c8d290d003503439e0ee1210739488
+  - path: verification/wave166-rooted-wagner-spaces/verification-report.md
+    sha256: eaca26fb0db8a7c65afef30251e5b4e7a3d1d841faf83e34254a36fd86379c15
+limitations:
+  - The four-failure lemma remains UNPROVED.
+  - No Wagner lower bound or endpoint exclusion follows.
+  - No computation was run under the host memory floor.
+  - Literature novelty and Conway-99 remain UNKNOWN.

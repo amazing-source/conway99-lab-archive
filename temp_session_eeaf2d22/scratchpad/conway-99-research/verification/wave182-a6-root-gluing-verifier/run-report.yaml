@@ -1,0 +1,39 @@
+role: verifier
+date_utc: 2026-07-28T23:51:01Z
+git_commit: 6de5cb7cae6fe53ded33e1bd4915ed4f578058b2
+claim_label: VERIFIED
+scope: >-
+  Under conditional Wave181 equality Q=2079, exact gluing of 99 local
+  21-point projective A6 root systems, support and global root bounds, and
+  the 231-root incidence equality boundary.
+inputs:
+  - attempts/wave182-a6-root-gluing/package-manifest.sha256
+method: >-
+  Independent local simplex-difference reconstruction, circuit uniqueness,
+  complement-color support analysis, shared-triangle exclusion, projective
+  edge-cap conversion, exact moments, and extremal spectral/frame checks. No
+  graph, code, SAT, configuration, or isomorphism search.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave182-a6-root-gluing-verifier\independent_check.py --verify
+  verification\wave182-a6-root-gluing-verifier\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  verification\wave182-a6-root-gluing-verifier\test_independent_check.py;
+  .\.venv\Scripts\python.exe -B
+  attempts\wave182-a6-root-gluing\exact_check.py --verify
+  attempts\wave182-a6-root-gluing\exact-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest -v
+  attempts\wave182-a6-root-gluing\test_exact_check.py
+outputs:
+  - verification/wave182-a6-root-gluing-verifier/README.md
+  - verification/wave182-a6-root-gluing-verifier/audit.md
+  - verification/wave182-a6-root-gluing-verifier/protocol.md
+  - verification/wave182-a6-root-gluing-verifier/independent_check.py
+  - verification/wave182-a6-root-gluing-verifier/independent-results.json
+  - verification/wave182-a6-root-gluing-verifier/test_independent_check.py
+  - verification/wave182-a6-root-gluing-verifier/input-freeze.sha256
+limitations:
+  - Wave181 equality Q=2079 is not excluded.
+  - The 231-root incidence design survives first spectral and frame tests.
+  - Rank 11, the endpoint, and global graph existence remain UNKNOWN.
+  - External novelty is UNKNOWN.

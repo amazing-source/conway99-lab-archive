@@ -1,0 +1,40 @@
+role: verifier
+date_utc: 2026-07-28T06:42:20Z
+git_commit: e1484c6564ddfde580191cdcb4a66a8f6ad7f2a2
+claim_label: VERIFIED
+scope: >-
+  Exact projector leverage, graph-valued two-by-two completion, and rooted
+  product-Johnson feature-Gram checks for the displayed Wave120 40/first26
+  families and the sealed alternate 26-record subset.
+inputs:
+  - path: attempts/wave123-fixedc4-threepoint/package-manifest.sha256
+    sha256: 39d680e78bf547c4fb5564048c6b7b1561382fd7d289f54a8a86154cff1a08a7
+  - path: attempts/wave120-fixedc4-sumdiff/witness.json
+    sha256: 3569eaa48ec3e99ab988f943492c103f67889c8fadf9a2a15edeac9586220183
+method: >-
+  Preinspect the sealed package; independently embed all support vectors;
+  invert support Grams over Q; verify exact span projectors; classify every
+  graph-valued two-by-two row; rebuild all rooted feature matrices as
+  explicit F F^T factorizations; enumerate every triple and signed norm; and
+  audit the nonexhaustive search scope without importing discovery code.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  verification\wave123-fixedc4-threepoint\independent_verify.py
+  --verify
+  verification\wave123-fixedc4-threepoint\independent-results.json;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s verification\wave123-fixedc4-threepoint -p "test_*.py" -v
+outputs:
+  - path: verification/wave123-fixedc4-threepoint/independent-results.json
+    sha256: cc1776f8dda6e9b8f5847c6984486ac2c8a3be32dbf8b0b99b312212e6b7bf68
+  - path: verification/wave123-fixedc4-threepoint/independent_verify.py
+    sha256: a44d7717c35605b10167a2b62df8bd1eeca6991d7bad1e702154627b4e64f351
+  - path: verification/wave123-fixedc4-threepoint/package-manifest.sha256
+    sha256: SELF_EXCLUDED
+limitations:
+  - The retained subset search is nonexhaustive and was not independently replayed.
+  - The explicit 26-record subset fails 352 two-by-two completion rows.
+  - Rooted feature PSD is code geometry, not a common graph completion.
+  - The local caps and existence of another graph-compatible 26-word family remain UNKNOWN.
+  - Ranks 28 and 30 are not excluded.
+  - Conway-99 and literature novelty remain UNKNOWN.

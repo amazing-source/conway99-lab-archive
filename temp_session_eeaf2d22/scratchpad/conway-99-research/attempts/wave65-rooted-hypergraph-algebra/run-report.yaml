@@ -1,0 +1,53 @@
+role: proof_b
+date_utc: 2026-07-27T22:29:22Z
+git_commit: 81c8d45426938ea8490af55d81f05b7c2ad99035
+claim_label: DERIVED
+scope: >-
+  Prism-free endpoint n3=4158; exact rooted hypergraph/transition
+  decomposition, finite-field ranks, trace moments, one-point averaged PSD,
+  scalar spectral coupling, and a deliberately weaker local positive control.
+inputs:
+  - path: git:81c8d45426938ea8490af55d81f05b7c2ad99035:AGENTS.md
+    sha256: 4d3e4590a8634cafaf5d87f288be211497f60a8f5ab40094a83f555724e469b3
+  - path: git:81c8d45426938ea8490af55d81f05b7c2ad99035:STRUCTURE.md
+    sha256: 71b0b404d09d3ca6f84966b0841a7a2f09e9d715e7833e3511174067f7f7c701
+method: >-
+  Standard-library exact reconstruction of H=K14-7K2 and its six scaffold
+  orbitals; integer Gram identities D+5I=ZZ^T and R+3I=Z^TZ; exact modular
+  Gaussian elimination; trace moments through degree four for the hypergraph
+  Gram and degree six for B and T; all-parameter rational averaged PSD;
+  exact scalar projector traces; and certificate checking of an explicit
+  unlabelled local positive control.
+command: >-
+  .\.venv\Scripts\python.exe -B
+  attempts\wave65-rooted-hypergraph-algebra\exact_check.py
+  --verify attempts\wave65-rooted-hypergraph-algebra\exact-results.json ;
+  .\.venv\Scripts\python.exe -B -m unittest discover
+  -s attempts\wave65-rooted-hypergraph-algebra -p "test_*.py" -v
+outputs:
+  - path: attempts/wave65-rooted-hypergraph-algebra/exact-results.json
+    sha256: 6a9409a9742807ac3aee9f052848b2a97c9c60db655ef407b5cda90518a09f0c
+  - path: attempts/wave65-rooted-hypergraph-algebra/exact_check.py
+    sha256: 54fd1657ae3b7b6d5975c49ebe595f9edd0d6bf4e9898611d5c99cd105311c05
+  - path: attempts/wave65-rooted-hypergraph-algebra/positive-control.json
+    sha256: 6b8320f0f355ee7437186908857b78dc4351be4ceea24d606913074061705acf
+result:
+  disposition: EXACT_NULL_RESULT_FOR_SCALAR_AND_AVERAGED_ROUTES
+  exact_tests: 6
+  block_graph_minus_3_multiplicity_lower_bound: 56
+  target_block_graph_c4_interval: [1260, 2331]
+  tr_T_E3_interval: [64/5, 16]
+  averaged_psd_negative_blocks: 0
+  local_positive_control: EXACT_BUT_NOT_A_TARGET_CANDIDATE
+  strict_n3_upper_bound: NOT_OBTAINED
+  endpoint_n3_4158: UNKNOWN
+  conway_99: UNKNOWN
+resources:
+  minimum_free_memory_percent_required: 15
+  minimum_free_memory_percent_observed: 48.65
+limitations:
+  - This is discovery-agent work and cannot self-promote to VERIFIED.
+  - The positive control is unlabelled and local; it fails the target B moments.
+  - Averaged and scalar feasibility do not realize compatible 0/1 matrices.
+  - Finite-field ranks are necessary conditions and exclude no endpoint.
+  - No endpoint exclusion, strict upper bound, construction, novelty, or priority claim follows.
